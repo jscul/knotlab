@@ -1,0 +1,1034 @@
+{
+  "ancestry": {
+    "E": "Prior held 5-by-2 dimensions with three interior stem columns",
+    "F": "Prior held 4-by-4 dimensions with the mirror of the earlier stem offset",
+    "diagnostic": "Exact previous public query and key records at (1,1), ordered L at q3 then T at q2",
+    "training": "Exact previous varied stream and training key, in their original presentation order"
+  },
+  "anchor": {
+    "definition": "Zero-based top-left position of the normalized rotated bounding box",
+    "held_rule": "(row + col) % 2 == 0",
+    "row_col_indices": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  "audit": {
+    "blind_bitmap_overlap": 0,
+    "blind_bitmaps": 1024,
+    "blind_d4_orbits": 16,
+    "blind_d4_overlap": 0,
+    "blind_ink_counts": {
+      "6": 512,
+      "7": 512
+    },
+    "diagnostic_bitmaps": 2,
+    "earlier_bitmaps": 2240,
+    "earlier_d4_orbits": 54,
+    "training_bitmaps": 64,
+    "translations_per_style_label_turn_position_stratum": 8
+  },
+  "bitmap": {
+    "encoding": "row-major ASCII bits",
+    "height": 8,
+    "lit_pixels": [
+      6,
+      7
+    ],
+    "width": 8
+  },
+  "blind_counts": {
+    "combined": {
+      "L": 128,
+      "T": 128
+    },
+    "familiar": {
+      "L": 128,
+      "T": 128
+    },
+    "orientation": {
+      "L": 128,
+      "T": 128
+    },
+    "position": {
+      "L": 128,
+      "T": 128
+    }
+  },
+  "conditions": {
+    "combined": "Held position and turn",
+    "familiar": "Familiar position and turn",
+    "orientation": "Familiar position and held turn",
+    "position": "Held position and familiar turn"
+  },
+  "designs": {
+    "E-relative-1": {
+      "T_stem_col": 1,
+      "bar_steps": [
+        -1,
+        1,
+        0,
+        -1
+      ],
+      "base_style": "E",
+      "bend": "horizontal",
+      "diagonal_bar_steps": 3,
+      "diagonal_stem_steps": 0,
+      "normalized_upright_paths": {
+        "L": {
+          "bar": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              0,
+              4
+            ]
+          ],
+          "junction": [
+            1,
+            0
+          ],
+          "stem": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ]
+        },
+        "T": {
+          "bar": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              0,
+              4
+            ]
+          ],
+          "junction": [
+            0,
+            1
+          ],
+          "stem": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        }
+      },
+      "stem_steps": [
+        0
+      ],
+      "width_height": [
+        5,
+        2
+      ]
+    },
+    "E-relative-2": {
+      "T_stem_col": 1,
+      "bar_steps": [
+        -1,
+        0,
+        1,
+        -1
+      ],
+      "base_style": "E",
+      "bend": "horizontal",
+      "diagonal_bar_steps": 3,
+      "diagonal_stem_steps": 0,
+      "normalized_upright_paths": {
+        "L": {
+          "bar": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              0,
+              4
+            ]
+          ],
+          "junction": [
+            1,
+            0
+          ],
+          "stem": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ]
+        },
+        "T": {
+          "bar": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              0,
+              4
+            ]
+          ],
+          "junction": [
+            0,
+            1
+          ],
+          "stem": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        }
+      },
+      "stem_steps": [
+        0
+      ],
+      "width_height": [
+        5,
+        2
+      ]
+    },
+    "E-relative-3": {
+      "T_stem_col": 2,
+      "bar_steps": [
+        0,
+        -1,
+        1,
+        -1
+      ],
+      "base_style": "E",
+      "bend": "horizontal",
+      "diagonal_bar_steps": 3,
+      "diagonal_stem_steps": 0,
+      "normalized_upright_paths": {
+        "L": {
+          "bar": [
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              0,
+              4
+            ]
+          ],
+          "junction": [
+            1,
+            0
+          ],
+          "stem": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ]
+        },
+        "T": {
+          "bar": [
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              0,
+              4
+            ]
+          ],
+          "junction": [
+            0,
+            2
+          ],
+          "stem": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              2
+            ]
+          ]
+        }
+      },
+      "stem_steps": [
+        0
+      ],
+      "width_height": [
+        5,
+        2
+      ]
+    },
+    "E-relative-4": {
+      "T_stem_col": 3,
+      "bar_steps": [
+        0,
+        -1,
+        0,
+        0
+      ],
+      "base_style": "E",
+      "bend": "horizontal",
+      "diagonal_bar_steps": 1,
+      "diagonal_stem_steps": 0,
+      "normalized_upright_paths": {
+        "L": {
+          "bar": [
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              0,
+              4
+            ]
+          ],
+          "junction": [
+            1,
+            0
+          ],
+          "stem": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ]
+        },
+        "T": {
+          "bar": [
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              0,
+              4
+            ]
+          ],
+          "junction": [
+            0,
+            3
+          ],
+          "stem": [
+            [
+              0,
+              3
+            ],
+            [
+              1,
+              3
+            ]
+          ]
+        }
+      },
+      "stem_steps": [
+        0
+      ],
+      "width_height": [
+        5,
+        2
+      ]
+    },
+    "F-relative-1": {
+      "T_stem_col": 2,
+      "bar_steps": [
+        0,
+        0,
+        0
+      ],
+      "base_style": "F",
+      "bend": "vertical",
+      "diagonal_bar_steps": 0,
+      "diagonal_stem_steps": 2,
+      "normalized_upright_paths": {
+        "L": {
+          "bar": [
+            [
+              3,
+              0
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              3,
+              3
+            ]
+          ],
+          "junction": [
+            3,
+            0
+          ],
+          "stem": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              3,
+              0
+            ]
+          ]
+        },
+        "T": {
+          "bar": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              3
+            ]
+          ],
+          "junction": [
+            0,
+            2
+          ],
+          "stem": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              3,
+              0
+            ]
+          ]
+        }
+      },
+      "stem_steps": [
+        0,
+        -1,
+        -1
+      ],
+      "width_height": [
+        4,
+        4
+      ]
+    },
+    "F-relative-2": {
+      "T_stem_col": 2,
+      "bar_steps": [
+        0,
+        -1,
+        0
+      ],
+      "base_style": "F",
+      "bend": "horizontal",
+      "diagonal_bar_steps": 1,
+      "diagonal_stem_steps": 0,
+      "normalized_upright_paths": {
+        "L": {
+          "bar": [
+            [
+              3,
+              0
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              2,
+              3
+            ]
+          ],
+          "junction": [
+            3,
+            0
+          ],
+          "stem": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              3,
+              0
+            ]
+          ]
+        },
+        "T": {
+          "bar": [
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              3
+            ]
+          ],
+          "junction": [
+            0,
+            2
+          ],
+          "stem": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              2
+            ]
+          ]
+        }
+      },
+      "stem_steps": [
+        0,
+        0,
+        0
+      ],
+      "width_height": [
+        4,
+        4
+      ]
+    },
+    "F-relative-3": {
+      "T_stem_col": 2,
+      "bar_steps": [
+        -1,
+        0,
+        1
+      ],
+      "base_style": "F",
+      "bend": "compound",
+      "diagonal_bar_steps": 2,
+      "diagonal_stem_steps": 1,
+      "normalized_upright_paths": {
+        "L": {
+          "bar": [
+            [
+              3,
+              0
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              3
+            ]
+          ],
+          "junction": [
+            3,
+            0
+          ],
+          "stem": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              3,
+              0
+            ]
+          ]
+        },
+        "T": {
+          "bar": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              3
+            ]
+          ],
+          "junction": [
+            0,
+            2
+          ],
+          "stem": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              3,
+              1
+            ]
+          ]
+        }
+      },
+      "stem_steps": [
+        0,
+        -1,
+        0
+      ],
+      "width_height": [
+        4,
+        4
+      ]
+    },
+    "F-relative-4": {
+      "T_stem_col": 2,
+      "bar_steps": [
+        -1,
+        -1,
+        1
+      ],
+      "base_style": "F",
+      "bend": "compound",
+      "diagonal_bar_steps": 3,
+      "diagonal_stem_steps": 1,
+      "normalized_upright_paths": {
+        "L": {
+          "bar": [
+            [
+              3,
+              0
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              3
+            ]
+          ],
+          "junction": [
+            3,
+            0
+          ],
+          "stem": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              3,
+              0
+            ]
+          ]
+        },
+        "T": {
+          "bar": [
+            [
+              2,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              3
+            ]
+          ],
+          "junction": [
+            0,
+            2
+          ],
+          "stem": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              3,
+              1
+            ]
+          ]
+        }
+      },
+      "stem_steps": [
+        0,
+        -1,
+        0
+      ],
+      "width_height": [
+        4,
+        4
+      ]
+    }
+  },
+  "files": {
+    "diagnostic.jsonl": {
+      "rows": 2,
+      "sha256": "68e0f63ef1a3be1a02a62c1d4c43681bf3253c2dbaf48d37a44bfb334824afb5"
+    },
+    "diagnostic_key.jsonl": {
+      "rows": 2,
+      "sha256": "d3297028861cd59c8d15b9c2179ee0bea8913a4a8afbbb39df2e3ceeea50cb83"
+    },
+    "queries.jsonl": {
+      "rows": 1024,
+      "sha256": "4eb39aa117749c1f12b581452db0203f7088b0b582a146e493a052d41f0df262"
+    },
+    "scorer_key.jsonl": {
+      "rows": 1024,
+      "sha256": "f6b440c97b0ac178a72ef556c1256ff60a24dbdca212ccf563f547ebe2f28e75"
+    },
+    "train.jsonl": {
+      "rows": 64,
+      "sha256": "93e18b6c560952fe54aa1aa240c7db9b9deb25710d5cfadaf5c69ee40daa1be1"
+    },
+    "training_key.jsonl": {
+      "rows": 64,
+      "sha256": "5a09eae8dd63aa8a24c27a2a750a0998c6a2aa55df7be65ddd9062a0b85a9dba"
+    }
+  },
+  "generator": {
+    "path": "../panel.py",
+    "sha256": "8bb588891a338073ee9f5a2798e6baee2659e697f9cc8ad8cf2047ddfe655b0e"
+  },
+  "geometry": {
+    "admissible_pair_counts_by_base_and_stem": {
+      "E:1": {
+        "compound": 0,
+        "horizontal": 3,
+        "vertical": 0
+      },
+      "E:2": {
+        "compound": 0,
+        "horizontal": 1,
+        "vertical": 0
+      },
+      "E:3": {
+        "compound": 0,
+        "horizontal": 3,
+        "vertical": 0
+      },
+      "F:2": {
+        "compound": 14,
+        "horizontal": 3,
+        "vertical": 3
+      }
+    },
+    "candidates": "With fixed width and height, a bar advances one column at each step and a stem advances one row. Each step adds a perpendicular displacement chosen from -1, 0, +1. Paired L and T use identical step lists.",
+    "connectivity": "A nonzero perpendicular step is diagonal and uses eight-neighbor continuity. The intended attachments are defined by ordered paths and their shared pixel. Nearby pixels on those paths can supply additional neighbor pairs in the full bitmap.",
+    "design_order_salt": "relative-pixel-read-20261122-v1-design:",
+    "gates": "Match exact ink and bounding-box dimensions, require four different normalized turns per drawing, and exclude earlier and selected drawing identities under all translations, rotations and reflections.",
+    "geometry_limits": "The wider common-shear probe at the earlier centered 5-by-2 base left one admissible fresh pair. Shared ordered stroke steps and three interior stem positions allow four six-ink horizontal-bend pairs.",
+    "junctions": "L attaches the last stem point to the first bar point. T attaches the first stem point to the specified interior bar point. The paths meet in exactly that point. T's next stem column remains strictly between the two ends of its bar.",
+    "quota_slots_by_base": {
+      "E": [
+        [
+          1,
+          "horizontal"
+        ],
+        [
+          1,
+          "horizontal"
+        ],
+        [
+          2,
+          "horizontal"
+        ],
+        [
+          3,
+          "horizontal"
+        ]
+      ],
+      "F": [
+        [
+          2,
+          "vertical"
+        ],
+        [
+          2,
+          "horizontal"
+        ],
+        [
+          2,
+          "compound"
+        ],
+        [
+          2,
+          "compound"
+        ]
+      ]
+    },
+    "selection": "Rank candidates by SHA-256 of the ASCII salt concatenated with compact JSON [base, T stem column, bar steps, stem steps], breaking ties lexicographically by step lists. Within each base, stem column and bend keep the first representative of each ordered pair of D4 shape orbits. In E then F quota order, take the first complete assignment with disjoint orbits."
+  },
+  "id": "Lowercase hexadecimal SHA-256 of the ASCII bit string",
+  "ordering": {
+    "diagnostic_keys": "Original predecessor records, retaining their original condition and style stratum",
+    "queries": "Ascending SHA-256 of ASCII (salt + bit string), then id for ties",
+    "query_salt": "relative-pixel-read-20261122-v1-query:",
+    "scorer_key": "Ascending id"
+  },
+  "predecessor_key_hashes": {
+    "scorer_key.jsonl": "d0328fcf97df0e39c584002ee8331307f3bbbc8d69bec22b8d861876dca543a7",
+    "training_key_varied.jsonl": "5a09eae8dd63aa8a24c27a2a750a0998c6a2aa55df7be65ddd9062a0b85a9dba"
+  },
+  "predecessors": {
+    "LEARNED-PATCH-GROUPS-20261122-001": {
+      "file_sha256": {
+        "queries.jsonl": "db76bc20bec41935e65c51ccfc02e00db4b608f5170e3ce463d8a94f8f9bbd70",
+        "train.jsonl": "de105f38fbd599d53ae8a69993dc8ad712b80c844be13054805553ba52946d34"
+      },
+      "unique_bitmaps": 768
+    },
+    "PIXEL-LETTERS-20261122-001": {
+      "file_sha256": {
+        "queries.jsonl": "52594f1b1ffcbbb94c13c605a46988689d320e2a777ef73a54b1626933f6bcd9",
+        "train.jsonl": "68ee66a52191de03bcdf4782c3d99a77aa8094417b1c69a4abc5cd6b123ffe65"
+      },
+      "unique_bitmaps": 400
+    },
+    "VARIED-LETTER-DRAWINGS-20261122-001": {
+      "file_sha256": {
+        "queries.jsonl": "5bbf9a27867f9bb479a02b2e069758c4da2c4839576fffd26953c0c5caa1bc58",
+        "train_narrow.jsonl": "de105f38fbd599d53ae8a69993dc8ad712b80c844be13054805553ba52946d34",
+        "train_varied.jsonl": "93e18b6c560952fe54aa1aa240c7db9b9deb25710d5cfadaf5c69ee40daa1be1"
+      },
+      "unique_bitmaps": 1136
+    }
+  },
+  "schema_version": 1,
+  "turns": {
+    "definition": "q clockwise quarter-turns before translation",
+    "fit_q": [
+      0,
+      1
+    ],
+    "held_q": [
+      2,
+      3
+    ]
+  }
+}

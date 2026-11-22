@@ -1,0 +1,100 @@
+{
+  "acquisition": {
+    "backends": [
+      "parity",
+      "nae",
+      "integer"
+    ],
+    "conventions": [
+      "ordinary",
+      "opposite"
+    ],
+    "per_letter_turn": 16,
+    "presentations_per_fit": 64,
+    "readers": [
+      "position",
+      "window_tree",
+      "window_group"
+    ],
+    "reward": "Own guess compared with the convention in force. One bit per presentation, no extra feedback.",
+    "turns_clockwise_degrees": [
+      0,
+      90
+    ]
+  },
+  "artifact_id": "RELATIVE-PIXEL-READ-20261122-001-E001",
+  "assumptions": [
+    "A205",
+    "A207",
+    "A208",
+    "A209"
+  ],
+  "blind_images": 1024,
+  "branch": "training",
+  "comparators_or_controls": "Same tree on window counts, exact historical grouped count learner, fair guessing and cleared state; opposite-reward donors, reciprocal word swap, sham, clear, restoration and independent conventional counterpart.",
+  "decision_rule": "Each ordinary fitted law/reader passes transfer only if all eight designs x two true letters x two held turns x two anchor strata score strictly over 4/8. A sensor-specific transfer advantage also requires the matched tree fail and greater paired drawing gains than losses. Report the equivalent contrast with the historical reader separately.",
+  "evidence_stage": "confirmatory",
+  "first_executable_signal": "The last study exhibited an opposite-class sensor collision. First measure sensor equality before fitting, then fit and diagnose, then issue fresh actions and score both laws.",
+  "forbidden_inputs": "No angle labels, built-in rotation/reflection equivalence, hand-tied rotated features, known pixel clue, stored letter prototype, external encoding, generator metadata or held-turn augmentation in any learner.",
+  "inputs": "64 row-major pixels, and during acquisition one own action and its correctness bit.",
+  "kind": "experiment",
+  "mapping": "Compare all oriented occupancies relative to minimum occupied row and column versus 16 counts of padded 2x2 words with identical greedy positive weighted-Gini trees. Maximum three tests on a path, lower feature then lower observed threshold for ties, majority defaults to zero. Also refit exact earlier window-group method.",
+  "nonclaims": "The source of translation invariance is supplied. Finite matched imagery includes diagonal pen strokes and shares a restricted parametric ancestry. Repeated translations and distinct implementations of one rule are not independent training cohorts.",
+  "outputs": "One binary action. Three separate outcomes are sensor separation, correct public-pair actions and blind unseen-turn transfer.",
+  "population": "Eight paired reserved 6/7-ink stroke designs, four turns, two letters and sixteen translations. The public pair and 2,240 historical bitmaps are excluded from the fresh shape orbits.",
+  "preregistration": "research/RELATIVE-PIXEL-READ-20261122-001/preregistration.md",
+  "primary_observable": "Independent verdicts on sensor code equality, both public pair guesses, and each blind true letter and turn. Report duplicate translation multiplicity and distinct drawing/letter/turn units.",
+  "question": "Can a reward-fitted tree read aligned occupied positions to resolve an earlier public collision, and can it recognize both letters at both held turns on new drawings?",
+  "resource_budget": "18 fits each use the same single stream of 64 presentations. Each fresh input and each public diagnostic gets 48 issued actions from the frozen states. CPU, no search over alternative fitting specifications.",
+  "reviews": "Astra Max R0 on exact proposed bytes before freeze; R1 on detached freeze before sense; R2 independent replay after score; scientific referee handoff follows.",
+  "schema_version": 1,
+  "source_dependencies": [
+    "VARIED-LETTER-DRAWINGS-20261122-001"
+  ],
+  "source_sha256": {
+    "artifacts/VARIED-LETTER-DRAWINGS-20261122-001/VARIED-LETTER-DRAWINGS-20261122-001-E001_drawings/fit/varied-integer-opposite.json": "fae0ece41cc7ef6cb90e6fd7a350d7e11fa13cb2b9e57423c8387478de40dfe1",
+    "artifacts/VARIED-LETTER-DRAWINGS-20261122-001/VARIED-LETTER-DRAWINGS-20261122-001-E001_drawings/fit/varied-integer-ordinary.json": "2d2cc2129c7fb16067be6b51d708aa52bacf7c74023a2ad1ad82133c3972508b",
+    "artifacts/VARIED-LETTER-DRAWINGS-20261122-001/VARIED-LETTER-DRAWINGS-20261122-001-E001_drawings/fit/varied-nae-opposite.json": "b9a955ca75e99591bc17def9a742503d4093fc23a2f4fd49270626a7ebf63c84",
+    "artifacts/VARIED-LETTER-DRAWINGS-20261122-001/VARIED-LETTER-DRAWINGS-20261122-001-E001_drawings/fit/varied-nae-ordinary.json": "8684ebab537adbab6510e3cc9b6c99b0b2b44c2d497095c33da9453c5205a0f7",
+    "artifacts/VARIED-LETTER-DRAWINGS-20261122-001/VARIED-LETTER-DRAWINGS-20261122-001-E001_drawings/fit/varied-parity-opposite.json": "a91c4aaf545e9787495fa863b2a75d78be728f90a4b5032e273dd1be99f18844",
+    "artifacts/VARIED-LETTER-DRAWINGS-20261122-001/VARIED-LETTER-DRAWINGS-20261122-001-E001_drawings/fit/varied-parity-ordinary.json": "3fa05367f2acbffb0436f4aa710c3b29967227994c2efabc81e81e537cdee9a1",
+    "experiments/LEARNED-PATCH-GROUPS-20261122-001/LEARNED-PATCH-GROUPS-20261122-001-E001_groups/learner.py": "b288174511517fe44712ca03e0415fa0485abce145c180c1dda5bb4f81212945",
+    "experiments/LEARNED-PATCH-GROUPS-20261122-001/LEARNED-PATCH-GROUPS-20261122-001-E001_groups/ordinary.py": "5a09cfecf63b35768a01fa0d2deb810740a3f49d8e239a9ffc9648e027c0b0c3",
+    "experiments/LEARNED-PATCH-GROUPS-20261122-001/LEARNED-PATCH-GROUPS-20261122-001-E001_groups/panel/queries.jsonl": "db76bc20bec41935e65c51ccfc02e00db4b608f5170e3ce463d8a94f8f9bbd70",
+    "experiments/LEARNED-PATCH-GROUPS-20261122-001/LEARNED-PATCH-GROUPS-20261122-001-E001_groups/panel/train.jsonl": "de105f38fbd599d53ae8a69993dc8ad712b80c844be13054805553ba52946d34",
+    "experiments/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/learner.py": "d6ba981be69486f6c1fca16e1d55c520478f2eba438228746364cc0c3a364145",
+    "experiments/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/panel/queries.jsonl": "52594f1b1ffcbbb94c13c605a46988689d320e2a777ef73a54b1626933f6bcd9",
+    "experiments/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/panel/train.jsonl": "68ee66a52191de03bcdf4782c3d99a77aa8094417b1c69a4abc5cd6b123ffe65",
+    "experiments/RELATIVE-PIXEL-READ-20261122-001/RELATIVE-PIXEL-READ-20261122-001-E001_relative/check_knots.py": "a2feac8455cbac8bd62d219c28bc5447d56dd995da71e3ae6c3e6f6f4a6d26ff",
+    "experiments/RELATIVE-PIXEL-READ-20261122-001/RELATIVE-PIXEL-READ-20261122-001-E001_relative/identity.json": "4b27619f6df8784cdf7ccad82f351f9a5e81c2d6d1767175750f8f2ec9a18018",
+    "experiments/RELATIVE-PIXEL-READ-20261122-001/RELATIVE-PIXEL-READ-20261122-001-E001_relative/ordinary.py": "7de29524e4af82167d278aff35d3e0775fb88340fabda5e0118a35540529e095",
+    "experiments/RELATIVE-PIXEL-READ-20261122-001/RELATIVE-PIXEL-READ-20261122-001-E001_relative/panel.py": "8bb588891a338073ee9f5a2798e6baee2659e697f9cc8ad8cf2047ddfe655b0e",
+    "experiments/RELATIVE-PIXEL-READ-20261122-001/RELATIVE-PIXEL-READ-20261122-001-E001_relative/panel/diagnostic.jsonl": "68e0f63ef1a3be1a02a62c1d4c43681bf3253c2dbaf48d37a44bfb334824afb5",
+    "experiments/RELATIVE-PIXEL-READ-20261122-001/RELATIVE-PIXEL-READ-20261122-001-E001_relative/panel/diagnostic_key.jsonl": "d3297028861cd59c8d15b9c2179ee0bea8913a4a8afbbb39df2e3ceeea50cb83",
+    "experiments/RELATIVE-PIXEL-READ-20261122-001/RELATIVE-PIXEL-READ-20261122-001-E001_relative/panel/manifest.json": "bdf6ea0b87eb1e9c954b6359b060d8a55e63be303fbebf2763fe8710ee15da2b",
+    "experiments/RELATIVE-PIXEL-READ-20261122-001/RELATIVE-PIXEL-READ-20261122-001-E001_relative/panel/queries.jsonl": "4eb39aa117749c1f12b581452db0203f7088b0b582a146e493a052d41f0df262",
+    "experiments/RELATIVE-PIXEL-READ-20261122-001/RELATIVE-PIXEL-READ-20261122-001-E001_relative/panel/scorer_key.jsonl": "f6b440c97b0ac178a72ef556c1256ff60a24dbdca212ccf563f547ebe2f28e75",
+    "experiments/RELATIVE-PIXEL-READ-20261122-001/RELATIVE-PIXEL-READ-20261122-001-E001_relative/panel/train.jsonl": "93e18b6c560952fe54aa1aa240c7db9b9deb25710d5cfadaf5c69ee40daa1be1",
+    "experiments/RELATIVE-PIXEL-READ-20261122-001/RELATIVE-PIXEL-READ-20261122-001-E001_relative/panel/training_key.jsonl": "5a09eae8dd63aa8a24c27a2a750a0998c6a2aa55df7be65ddd9062a0b85a9dba",
+    "experiments/RELATIVE-PIXEL-READ-20261122-001/RELATIVE-PIXEL-READ-20261122-001-E001_relative/reader.py": "94ea8470a0c95e44d839e70eafcb68f52b425765179a68521c44b232be0c7640",
+    "experiments/RELATIVE-PIXEL-READ-20261122-001/RELATIVE-PIXEL-READ-20261122-001-E001_relative/scoring.py": "30dab8be824666a9a3aabbf7a7caa294801d450e39155fdd561e3df418fecc79",
+    "experiments/RELATIVE-PIXEL-READ-20261122-001/RELATIVE-PIXEL-READ-20261122-001-E001_relative/study.py": "7c6981b77b2cde0c8942a95011b0fb2be9c690fa51b7665cbc49a670c1397596",
+    "experiments/VARIED-LETTER-DRAWINGS-20261122-001/VARIED-LETTER-DRAWINGS-20261122-001-E001_drawings/panel.py": "5071f100d6e6696f0c71681b06f93ed20812e0d15e6ca9cc7d6afcc38410d281",
+    "experiments/VARIED-LETTER-DRAWINGS-20261122-001/VARIED-LETTER-DRAWINGS-20261122-001-E001_drawings/panel/queries.jsonl": "5bbf9a27867f9bb479a02b2e069758c4da2c4839576fffd26953c0c5caa1bc58",
+    "experiments/VARIED-LETTER-DRAWINGS-20261122-001/VARIED-LETTER-DRAWINGS-20261122-001-E001_drawings/panel/scorer_key.jsonl": "d0328fcf97df0e39c584002ee8331307f3bbbc8d69bec22b8d861876dca543a7",
+    "experiments/VARIED-LETTER-DRAWINGS-20261122-001/VARIED-LETTER-DRAWINGS-20261122-001-E001_drawings/panel/train_narrow.jsonl": "de105f38fbd599d53ae8a69993dc8ad712b80c844be13054805553ba52946d34",
+    "experiments/VARIED-LETTER-DRAWINGS-20261122-001/VARIED-LETTER-DRAWINGS-20261122-001-E001_drawings/panel/train_varied.jsonl": "93e18b6c560952fe54aa1aa240c7db9b9deb25710d5cfadaf5c69ee40daa1be1",
+    "experiments/VARIED-LETTER-DRAWINGS-20261122-001/VARIED-LETTER-DRAWINGS-20261122-001-E001_drawings/panel/training_key_narrow.jsonl": "aa6e578f222835631f6bc3a735b72758daf36562cf0fbfe7ee107dd96517d2f1",
+    "experiments/VARIED-LETTER-DRAWINGS-20261122-001/VARIED-LETTER-DRAWINGS-20261122-001-E001_drawings/panel/training_key_varied.jsonl": "5a09eae8dd63aa8a24c27a2a750a0998c6a2aa55df7be65ddd9062a0b85a9dba",
+    "experiments/VARIED-LETTER-DRAWINGS-20261122-001/VARIED-LETTER-DRAWINGS-20261122-001-E001_drawings/study.py": "3da5d429ac99d5e7c89698142eb420b8d05efb50b305022305fef7706fe75aee",
+    "research/RELATIVE-PIXEL-READ-20261122-001/advisor.json": "219fd74f2a58d137d30132cb1f0fca652ebf217426ffab02796c8eca78f9fb97",
+    "research/RELATIVE-PIXEL-READ-20261122-001/audit/attack_plan.md": "1e0d9f6a4cf7a4bb42526e6bef7b041c812227372511a440227be643273f02a5",
+    "research/RELATIVE-PIXEL-READ-20261122-001/custody.py": "656fcb133aa92ff832260aab6cfad88bdfede0e52f679e563dc41585fa8b2acb",
+    "research/RELATIVE-PIXEL-READ-20261122-001/design_review/pre_freeze_advice.md": "3f8fcdaf2281cdf00dab93af71ec1b86978789c1e1cd2b41ffdf8e64f960e24f",
+    "research/RELATIVE-PIXEL-READ-20261122-001/preregistration.md": "20c2f6db78fc047d714423f7a98738ed7e66b6f388fe9548be64a516cfd93f65",
+    "research/RELATIVE-PIXEL-READ-20261122-001/reproduce.py": "33206fefebaf6f4d9f61d9cfc92c202b1efb73f6a1213c8a3efa204a672e8671"
+  },
+  "status": "Proposed",
+  "stop_rule": "Run every law and all stages despite a failed public check. Compare exact finite scores, retain negative evidence, and make a GO/STOP decision without retuning on the new data.",
+  "ticket": "RELATIVE-PIXEL-READ-20261122-001"
+}

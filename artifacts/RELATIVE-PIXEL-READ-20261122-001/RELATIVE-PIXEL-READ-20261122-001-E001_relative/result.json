@@ -1,0 +1,220 @@
+{
+  "artifact_id": "RELATIVE-PIXEL-READ-20261122-001-E001",
+  "associated_goal": "G15",
+  "challengeable_default": "A209 (Assumed)",
+  "cue_route": {
+    "both_dark_action": "T",
+    "fresh_held_drawing_units_L_T": [
+      8,
+      7
+    ],
+    "training_L_T": [
+      0,
+      18
+    ],
+    "uniquely_best_tests": [
+      true,
+      true
+    ],
+    "zero_based_offsets": [
+      [
+        2,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ]
+  },
+  "evidence": "Computed",
+  "fresh_held": {
+    "position": {
+      "nae": {
+        "cell_majorities_out_of_64": 24,
+        "correct_by_letter_turn_out_of_8_designs": {
+          "q2/L": 0,
+          "q2/T": 7,
+          "q3/L": 3,
+          "q3/T": 2
+        },
+        "distinct_correct_out_of_32": 12,
+        "positions_correct_out_of_512": 192
+      },
+      "parity": {
+        "cell_majorities_out_of_64": 24,
+        "correct_by_letter_turn_out_of_8_designs": {
+          "q2/L": 0,
+          "q2/T": 7,
+          "q3/L": 3,
+          "q3/T": 2
+        },
+        "distinct_correct_out_of_32": 12,
+        "positions_correct_out_of_512": 192
+      }
+    },
+    "window_group": {
+      "nae": {
+        "cell_majorities_out_of_64": 32,
+        "correct_by_letter_turn_out_of_8_designs": {
+          "q2/L": 0,
+          "q2/T": 8,
+          "q3/L": 2,
+          "q3/T": 6
+        },
+        "distinct_correct_out_of_32": 16,
+        "positions_correct_out_of_512": 256
+      },
+      "parity": {
+        "cell_majorities_out_of_64": 32,
+        "correct_by_letter_turn_out_of_8_designs": {
+          "q2/L": 0,
+          "q2/T": 8,
+          "q3/L": 2,
+          "q3/T": 6
+        },
+        "distinct_correct_out_of_32": 16,
+        "positions_correct_out_of_512": 256
+      }
+    },
+    "window_tree": {
+      "nae": {
+        "cell_majorities_out_of_64": 30,
+        "correct_by_letter_turn_out_of_8_designs": {
+          "q2/L": 3,
+          "q2/T": 3,
+          "q3/L": 3,
+          "q3/T": 6
+        },
+        "distinct_correct_out_of_32": 15,
+        "positions_correct_out_of_512": 240
+      },
+      "parity": {
+        "cell_majorities_out_of_64": 30,
+        "correct_by_letter_turn_out_of_8_designs": {
+          "q2/L": 3,
+          "q2/T": 3,
+          "q3/L": 3,
+          "q3/T": 6
+        },
+        "distinct_correct_out_of_32": 15,
+        "positions_correct_out_of_512": 240
+      }
+    }
+  },
+  "input_scope": "Raw pixel layout, minimum-row/minimum-column alignment, positive Gini gain, three-test depth, supplied tie order and action readout. Finite stroke grammar, no rotated augmentation or held-angle tuning.",
+  "matched_correct_by_condition": {
+    "position": {
+      "combined": 96,
+      "familiar": 176,
+      "orientation": 96,
+      "position": 176
+    },
+    "window_group": {
+      "combined": 128,
+      "familiar": 184,
+      "orientation": 128,
+      "position": 184
+    },
+    "window_tree": {
+      "combined": 120,
+      "familiar": 168,
+      "orientation": 120,
+      "position": 168
+    }
+  },
+  "preregistered_gate": "Strict majority for every design, letter, held turn and anchor stratum. 64 balanced cells per law and reader.",
+  "public_pair": {
+    "aligned_differing_offsets": [
+      2,
+      3,
+      9,
+      11,
+      17,
+      18
+    ],
+    "identity_order": [
+      "270-degree L",
+      "180-degree T"
+    ],
+    "ordinary_calls_both_laws": {
+      "position": [
+        "T",
+        "T"
+      ],
+      "window_group": [
+        "T",
+        "T"
+      ],
+      "window_tree": [
+        "L",
+        "L"
+      ]
+    },
+    "window_codes_equal": true
+  },
+  "reproducible_payloads": 26,
+  "resources": {
+    "blind": 3.550549,
+    "fit": 0.74631,
+    "pair": 0.10112,
+    "scored": 0.261953,
+    "sense": 0.06734
+  },
+  "round": "STOP",
+  "scientific_referee": "pending",
+  "scientific_transfer_gate": "failed for both laws and all readers",
+  "source_sha256": {
+    "artifacts/RELATIVE-PIXEL-READ-20261122-001/RELATIVE-PIXEL-READ-20261122-001-E001_relative/blind/release.json": "e58e50dcf389a59e7b74e1560476cd148f2ca77579a5ea31690864e6370a8ad2",
+    "artifacts/RELATIVE-PIXEL-READ-20261122-001/RELATIVE-PIXEL-READ-20261122-001-E001_relative/fit/release.json": "9fa21f6d2c9adb207ee0fdc105ec7907885a9d75f05d75e0b3b6bc6bf9f21563",
+    "artifacts/RELATIVE-PIXEL-READ-20261122-001/RELATIVE-PIXEL-READ-20261122-001-E001_relative/interpretation.json": "4d560911064f2c4fcafbcc95c239bc109f1455bc7c803f69e36461817067ed40",
+    "artifacts/RELATIVE-PIXEL-READ-20261122-001/RELATIVE-PIXEL-READ-20261122-001-E001_relative/pair/release.json": "5f024e1c045638b289466113fb4a60a5f45f761a6e22b774675c39cae4a06ee2",
+    "artifacts/RELATIVE-PIXEL-READ-20261122-001/RELATIVE-PIXEL-READ-20261122-001-E001_relative/scored/release.json": "0ad3982e02f4874b2f5f5f716e41f9b61fe68049099e1b32627dfd65285456d0",
+    "artifacts/RELATIVE-PIXEL-READ-20261122-001/RELATIVE-PIXEL-READ-20261122-001-E001_relative/scored/scores.json": "f4cc21fc124bf9a53575ca3d018816837991ed81b6659958e77d1c4f0cbaf162",
+    "artifacts/RELATIVE-PIXEL-READ-20261122-001/RELATIVE-PIXEL-READ-20261122-001-E001_relative/sense/release.json": "5ee51e253318df1868b26a61bb5315c9c8668de83d9c41fca06a81670e839ae0",
+    "experiments/RELATIVE-PIXEL-READ-20261122-001/RELATIVE-PIXEL-READ-20261122-001-E001_relative/contract.json": "d7196d74789fa4bca1896bcffdfaf1983c3ab8863a6419115a4c3eb017c77147",
+    "experiments/RELATIVE-PIXEL-READ-20261122-001/RELATIVE-PIXEL-READ-20261122-001-E001_relative/proposed_contract.json": "92eaa14f228ea351140bc0de0b1a74a081fdbb0632b1c916296f2996ba2fe090",
+    "research/RELATIVE-PIXEL-READ-20261122-001/audit/R1/red_team_report.json": "71b4f06eb46597b9807ba1a254c85e0c73671f2d1a71140daff4076157f970c2",
+    "research/RELATIVE-PIXEL-READ-20261122-001/audit/R2/red_team_report.json": "11ddc857b3ac53f669ea7e0d686a7ba5efc66fa2af265704bb823d638722b9ef",
+    "research/RELATIVE-PIXEL-READ-20261122-001/audit/replay_result.json": "755f01a7c05c37e9dbefb246a1d8f87463c0994f2bc592df2e4eb74c801dc45f",
+    "research/RELATIVE-PIXEL-READ-20261122-001/decision.md": "3c4b65340e044d5d6c52ba144f993c0728766fbf61c88a562688fb5f08b6c1d3",
+    "research/RELATIVE-PIXEL-READ-20261122-001/design_review/red_team_report.json": "fc4a3a2e451b959931cdb5ab5a123cd20fc2a3538d12b5d55a33c4eeb31724a2",
+    "research/RELATIVE-PIXEL-READ-20261122-001/drawings.png": "6ec220dd662313352b20d81aa92fed423bccfd6b772576c2ed069a0b33fea6f2",
+    "research/RELATIVE-PIXEL-READ-20261122-001/interpret.py": "70cd0b41667a2ceb6106e267f57a63cad396474ab318c5ddc4c79eca34e5080d",
+    "research/RELATIVE-PIXEL-READ-20261122-001/knot_checks.json": "62c811c0763ea7c78060fcdb0e2b737fab0ff5c64b6bb0077c70159dea1c2fe3",
+    "research/RELATIVE-PIXEL-READ-20261122-001/phase_anchors.jsonl": "f8c218dec800566ecb1846e5df4ba9a882bb08cd3be6b046901b3e4927ec6094",
+    "research/RELATIVE-PIXEL-READ-20261122-001/preregistration.md": "20c2f6db78fc047d714423f7a98738ed7e66b6f388fe9548be64a516cfd93f65",
+    "research/RELATIVE-PIXEL-READ-20261122-001/referee_handoff.md": "6bea87df6af7e135fe9758cc52b878850f155edc315ed34330dbe12550a485df",
+    "research/RELATIVE-PIXEL-READ-20261122-001/replay_one.py": "d211c4aac50d3ebc02cbe114c45499af8adb419e6eee5d1a6a5ab35de947cb05"
+  },
+  "state_checks": {
+    "authentic_external_digests": {
+      "blind": "e58e50dcf389a59e7b74e1560476cd148f2ca77579a5ea31690864e6370a8ad2",
+      "fit": "9fa21f6d2c9adb207ee0fdc105ec7907885a9d75f05d75e0b3b6bc6bf9f21563",
+      "pair": "5f024e1c045638b289466113fb4a60a5f45f761a6e22b774675c39cae4a06ee2",
+      "scored": "0ad3982e02f4874b2f5f5f716e41f9b61fe68049099e1b32627dfd65285456d0",
+      "sense": "5ee51e253318df1868b26a61bb5315c9c8668de83d9c41fca06a81670e839ae0"
+    },
+    "fitted_states": 18,
+    "fresh_actions": 49152,
+    "physical_prefix_digests": 1536,
+    "public_pair_actions": 96,
+    "states_per_issued_panel": 48,
+    "train_decisions_and_rewards": 1152,
+    "train_receipts": 64
+  },
+  "state_controls": "Each of the two swaps reversed all 1024 fresh calls per law and reader. Shams and restored words preserved all decisions and blank always gave L. Ordinary implementations matched all original and opposite-reward decisions.",
+  "ticket": "RELATIVE-PIXEL-READ-20261122-001",
+  "training": {
+    "degrees": [
+      0,
+      90
+    ],
+    "fitted_models": 18,
+    "slots_per_model": 64,
+    "true_letters": {
+      "L": 32,
+      "T": 32
+    }
+  }
+}

@@ -1,0 +1,363 @@
+{
+  "holding_count": 4450,
+  "laws": {
+    "nae": {
+      "fit_swap_clear_restore": true,
+      "full_depth_round_trip": true,
+      "learned_feature": {
+        "address": 4227,
+        "verdict": {
+          "allowed": [
+            "001",
+            "010",
+            "011",
+            "100",
+            "101",
+            "110"
+          ],
+          "binding": true,
+          "coexistence": true,
+          "contact": "read",
+          "erasure": "forgetting",
+          "invisible_in_parts": true,
+          "is_knot": true,
+          "loops": [
+            "mark",
+            "dock"
+          ],
+          "loss_on_erasure": true,
+          "minimum_width": 3,
+          "notes": [],
+          "pairwise_definable": false,
+          "variables": [
+            "mark",
+            "dock",
+            "read"
+          ]
+        }
+      },
+      "learned_tag": {
+        "address": 4225,
+        "verdict": {
+          "allowed": [
+            "001",
+            "010",
+            "011",
+            "100",
+            "101",
+            "110"
+          ],
+          "binding": true,
+          "coexistence": true,
+          "contact": "read",
+          "erasure": "forgetting",
+          "invisible_in_parts": true,
+          "is_knot": true,
+          "loops": [
+            "mark",
+            "dock"
+          ],
+          "loss_on_erasure": true,
+          "minimum_width": 3,
+          "notes": [],
+          "pairwise_definable": false,
+          "variables": [
+            "mark",
+            "dock",
+            "read"
+          ]
+        }
+      },
+      "learned_threshold": {
+        "address": 4233,
+        "verdict": {
+          "allowed": [
+            "001",
+            "010",
+            "011",
+            "100",
+            "101",
+            "110"
+          ],
+          "binding": true,
+          "coexistence": true,
+          "contact": "read",
+          "erasure": "forgetting",
+          "invisible_in_parts": true,
+          "is_knot": true,
+          "loops": [
+            "mark",
+            "dock"
+          ],
+          "loss_on_erasure": true,
+          "minimum_width": 3,
+          "notes": [],
+          "pairwise_definable": false,
+          "variables": [
+            "mark",
+            "dock",
+            "read"
+          ]
+        }
+      },
+      "prepared_only": {
+        "allowed": [
+          "001",
+          "110"
+        ],
+        "binding": true,
+        "coexistence": true,
+        "contact": "read",
+        "erasure": "forgetting",
+        "invisible_in_parts": false,
+        "is_knot": false,
+        "loops": [
+          "mark",
+          "dock"
+        ],
+        "loss_on_erasure": false,
+        "minimum_width": 2,
+        "notes": [
+          "with mark forgotten, dock=0, read=0 is still excluded, so a binding survives without that loop",
+          "with dock forgotten, mark=0, read=0 is still excluded, so a binding survives without that loop",
+          "with the contact read forgotten, mark=0, dock=1 is still excluded, so the loops are tied without it"
+        ],
+        "pairwise_definable": true,
+        "variables": [
+          "mark",
+          "dock",
+          "read"
+        ]
+      },
+      "received_bitmap": {
+        "address": 95,
+        "verdict": {
+          "allowed": [
+            "001",
+            "010",
+            "011",
+            "100",
+            "101",
+            "110"
+          ],
+          "binding": true,
+          "coexistence": true,
+          "contact": "read",
+          "erasure": "forgetting",
+          "invisible_in_parts": true,
+          "is_knot": true,
+          "loops": [
+            "mark",
+            "dock"
+          ],
+          "loss_on_erasure": true,
+          "minimum_width": 3,
+          "notes": [],
+          "pairwise_definable": false,
+          "variables": [
+            "mark",
+            "dock",
+            "read"
+          ]
+        }
+      },
+      "same_raw_receipts_both_sensors": true,
+      "shape_rejections": true
+    },
+    "parity": {
+      "fit_swap_clear_restore": true,
+      "full_depth_round_trip": true,
+      "learned_feature": {
+        "address": 4227,
+        "verdict": {
+          "allowed": [
+            "000",
+            "011",
+            "101",
+            "110"
+          ],
+          "binding": true,
+          "coexistence": true,
+          "contact": "read",
+          "erasure": "forgetting",
+          "invisible_in_parts": true,
+          "is_knot": true,
+          "loops": [
+            "mark",
+            "dock"
+          ],
+          "loss_on_erasure": true,
+          "minimum_width": 3,
+          "notes": [],
+          "pairwise_definable": false,
+          "variables": [
+            "mark",
+            "dock",
+            "read"
+          ]
+        }
+      },
+      "learned_tag": {
+        "address": 4225,
+        "verdict": {
+          "allowed": [
+            "000",
+            "011",
+            "101",
+            "110"
+          ],
+          "binding": true,
+          "coexistence": true,
+          "contact": "read",
+          "erasure": "forgetting",
+          "invisible_in_parts": true,
+          "is_knot": true,
+          "loops": [
+            "mark",
+            "dock"
+          ],
+          "loss_on_erasure": true,
+          "minimum_width": 3,
+          "notes": [],
+          "pairwise_definable": false,
+          "variables": [
+            "mark",
+            "dock",
+            "read"
+          ]
+        }
+      },
+      "learned_threshold": {
+        "address": 4233,
+        "verdict": {
+          "allowed": [
+            "000",
+            "011",
+            "101",
+            "110"
+          ],
+          "binding": true,
+          "coexistence": true,
+          "contact": "read",
+          "erasure": "forgetting",
+          "invisible_in_parts": true,
+          "is_knot": true,
+          "loops": [
+            "mark",
+            "dock"
+          ],
+          "loss_on_erasure": true,
+          "minimum_width": 3,
+          "notes": [],
+          "pairwise_definable": false,
+          "variables": [
+            "mark",
+            "dock",
+            "read"
+          ]
+        }
+      },
+      "prepared_only": {
+        "allowed": [
+          "011",
+          "110"
+        ],
+        "binding": true,
+        "coexistence": true,
+        "contact": "read",
+        "erasure": "forgetting",
+        "invisible_in_parts": false,
+        "is_knot": false,
+        "loops": [
+          "mark",
+          "dock"
+        ],
+        "loss_on_erasure": false,
+        "minimum_width": 2,
+        "notes": [
+          "with mark forgotten, dock=0, read=0 is still excluded, so a binding survives without that loop",
+          "with dock forgotten, mark=0, read=0 is still excluded, so a binding survives without that loop",
+          "with the contact read forgotten, mark=0, dock=0 is still excluded, so the loops are tied without it"
+        ],
+        "pairwise_definable": true,
+        "variables": [
+          "mark",
+          "dock",
+          "read"
+        ]
+      },
+      "received_bitmap": {
+        "address": 95,
+        "verdict": {
+          "allowed": [
+            "000",
+            "011",
+            "101",
+            "110"
+          ],
+          "binding": true,
+          "coexistence": true,
+          "contact": "read",
+          "erasure": "forgetting",
+          "invisible_in_parts": true,
+          "is_knot": true,
+          "loops": [
+            "mark",
+            "dock"
+          ],
+          "loss_on_erasure": true,
+          "minimum_width": 3,
+          "notes": [],
+          "pairwise_definable": false,
+          "variables": [
+            "mark",
+            "dock",
+            "read"
+          ]
+        }
+      },
+      "same_raw_receipts_both_sensors": true,
+      "shape_rejections": true
+    }
+  },
+  "synthetic_checks": {
+    "depth": 3,
+    "exact_split_and_threshold_ties": true,
+    "preserved_relative_orientation": true,
+    "row_column_minima_and_padding": true,
+    "zero_gain_leaf": true
+  },
+  "unconstrained_negative": {
+    "allowed": [
+      "000",
+      "001",
+      "010",
+      "011",
+      "100",
+      "101",
+      "110",
+      "111"
+    ],
+    "binding": false,
+    "coexistence": true,
+    "contact": "read",
+    "erasure": "forgetting",
+    "invisible_in_parts": true,
+    "is_knot": false,
+    "loops": [
+      "mark",
+      "dock"
+    ],
+    "loss_on_erasure": true,
+    "minimum_width": 0,
+    "notes": [
+      "the relation allows every joint state, so nothing binds"
+    ],
+    "pairwise_definable": true,
+    "variables": [
+      "mark",
+      "dock",
+      "read"
+    ]
+  }
+}

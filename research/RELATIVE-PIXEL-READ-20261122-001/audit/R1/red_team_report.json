@@ -1,0 +1,408 @@
+{
+  "attack_plan_frozen_before_results": true,
+  "attacks": [
+    {
+      "category": "scope_and_authority",
+      "claim_at_risk": "A single prospectively fixed sensor and decoder comparison",
+      "contract_change_required": false,
+      "evidence_paths": [
+        "../../../../experiments/RELATIVE-PIXEL-READ-20261122-001/RELATIVE-PIXEL-READ-20261122-001-E001_relative/contract.json",
+        "../../../../experiments/RELATIVE-PIXEL-READ-20261122-001/RELATIVE-PIXEL-READ-20261122-001-E001_relative/proposed_contract.json",
+        "../../design_review/red_team_report.json",
+        "../../preregistration.md",
+        "../fresh_panel_census.json",
+        "../synthetic_tree.json"
+      ],
+      "id": "R1-scope_and_authority",
+      "method": "Verified the detached freeze and passing R0 agree exactly with the proposal, plan and all 41 frozen sources. Every official stage directory was absent before R1. Independent structural audit and synthetic fixtures read neither public-pair sensor output nor fresh features or outcomes.",
+      "required_action": "",
+      "severity": "high",
+      "status": "pass"
+    },
+    {
+      "category": "information_leakage",
+      "claim_at_risk": "Only 64 raw pixels and binary correctness enter the three learners",
+      "contract_change_required": false,
+      "evidence_paths": [
+        "../../../../experiments/RELATIVE-PIXEL-READ-20261122-001/RELATIVE-PIXEL-READ-20261122-001-E001_relative/study.py",
+        "../phase_fixture.json",
+        "../fresh_panel_census.json",
+        "../../../../experiments/RELATIVE-PIXEL-READ-20261122-001/RELATIVE-PIXEL-READ-20261122-001-E001_relative/reader.py"
+      ],
+      "id": "R1-information_leakage",
+      "method": "Traced source: frame normalization uses only occupied row and column minima. The learner receives a bit tuple, its guess and correctness. Schedule, label, pose, pair key and fresh key remain outside the learner. Sense sees only public pair pixels and no fitted words. Diagnose issues only that pair after fit and before fresh prediction. Score reaches the private key only after both external commitments and all upstream digest guards.",
+      "required_action": "",
+      "severity": "critical",
+      "status": "pass"
+    },
+    {
+      "category": "split_integrity",
+      "claim_at_risk": "Training, public diagnosis and fresh evaluation have exact independent cohort boundaries",
+      "contract_change_required": false,
+      "evidence_paths": [
+        "../fresh_panel_census.json",
+        "../fresh_panel_census.py",
+        "../../../../experiments/RELATIVE-PIXEL-READ-20261122-001/RELATIVE-PIXEL-READ-20261122-001-E001_relative/panel/manifest.json"
+      ],
+      "id": "R1-split_integrity",
+      "method": "Verified exact byte reuse of the 64 prior varied acquisitions and reward keys with q0 and q1 only, the two known predecessor query/key records byte for byte at anchor 1,1, and all 1024 fresh inputs and keys. Independently regenerated the ordered geometric candidates from common stroke steps, hashed selection, and all final bitmaps. Fresh styles occupy 16 separate translation, quarter-turn and reflection orbits, excluding 54 earlier orbits. Pair, fitted and fresh IDs are disjoint.",
+      "required_action": "",
+      "severity": "critical",
+      "status": "pass"
+    },
+    {
+      "category": "comparator_fairness",
+      "claim_at_risk": "Sensors differ while the depth-three fitting procedure and exposure are held fixed",
+      "contract_change_required": false,
+      "evidence_paths": [
+        "../../../../experiments/RELATIVE-PIXEL-READ-20261122-001/RELATIVE-PIXEL-READ-20261122-001-E001_relative/study.py",
+        "../../../../experiments/RELATIVE-PIXEL-READ-20261122-001/RELATIVE-PIXEL-READ-20261122-001-E001_relative/reader.py",
+        "../../../../experiments/RELATIVE-PIXEL-READ-20261122-001/RELATIVE-PIXEL-READ-20261122-001-E001_relative/ordinary.py",
+        "../synthetic_tree.json",
+        "../../preregistration.md"
+      ],
+      "id": "R1-comparator_fairness",
+      "method": "Checked exact same weighted Gini, candidate threshold, positive gain, lower-index tie, leaf majority and acquisition rules for both tree sensors and their independent numeric twins. The grouped comparator imports and matches prior archived state by exact checkpoint content. All 18 fits share one 64-receipt sequence and both arms of each reward convention. Sensor dimensions differ as declared and grant no runtime equivalence claim.",
+      "required_action": "",
+      "severity": "high",
+      "status": "pass"
+    },
+    {
+      "category": "artifact_and_checker",
+      "claim_at_risk": "Run order and answer-key custody are enforced by actual phase checks",
+      "contract_change_required": false,
+      "evidence_paths": [
+        "../../../../experiments/RELATIVE-PIXEL-READ-20261122-001/RELATIVE-PIXEL-READ-20261122-001-E001_relative/study.py",
+        "../phase_fixture.json",
+        "../../custody.py"
+      ],
+      "id": "R1-artifact_and_checker",
+      "method": "Inspected exclusive directory and file creation, exact artifacts and parent digests for all five stages and separate fit/blind anchors. Synthetic early score, early fit, early diagnose, bad chronology, changed blind bytes and two overwrite attempts reject. Valid scratch anchors passed. Payload scope in sense, diagnosis, prediction and scoring is verified by source.",
+      "required_action": "",
+      "severity": "critical",
+      "status": "pass"
+    },
+    {
+      "category": "identifiability",
+      "claim_at_risk": "Sensor injectivity, actual rule fit, pair action and fresh transfer have distinct outcomes",
+      "contract_change_required": false,
+      "evidence_paths": [
+        "../../preregistration.md",
+        "../fresh_panel_census.json",
+        "../synthetic_tree.json",
+        "../tree_oracle.py"
+      ],
+      "id": "R1-identifiability",
+      "method": "The aligned occupied array determines the original support up to translation. The geometry audit fixes the public collision identities without evaluating their features. The design tests first sensor equality without learned state, then actual frozen actions on those names, separately from fresh evaluation. Synthetic equal-Gini feature and threshold ties, a zero-gain case and majority-zero ties match in three implementations.",
+      "required_action": "",
+      "severity": "high",
+      "status": "pass"
+    },
+    {
+      "category": "resource_fairness",
+      "claim_at_risk": "One training sequence and matched depth budget with explicit physical state",
+      "contract_change_required": false,
+      "evidence_paths": [
+        "../../../../experiments/RELATIVE-PIXEL-READ-20261122-001/RELATIVE-PIXEL-READ-20261122-001-E001_relative/reader.py",
+        "../../../../experiments/RELATIVE-PIXEL-READ-20261122-001/RELATIVE-PIXEL-READ-20261122-001-E001_relative/study.py",
+        "../synthetic_tree.json",
+        "../../../../experiments/RELATIVE-PIXEL-READ-20261122-001/RELATIVE-PIXEL-READ-20261122-001-E001_relative/contract.json"
+      ],
+      "id": "R1-resource_fairness",
+      "method": "Each fit has 64 reward events, tree depth at most three, exactly 4,450 ternary holdings in a physical tree, and 40,494 for the archived grouped reader. Receipt words are deleted to prepared zeros at deployment. One public pair and 1024 fresh images each issue 48 conditions per row. Accounting records resource use separately by stage, with no fitted spec search.",
+      "required_action": "",
+      "severity": "medium",
+      "status": "pass"
+    },
+    {
+      "category": "statistical_validity",
+      "claim_at_risk": "Frozen strict held cells and exact underlying-unit weighting",
+      "contract_change_required": false,
+      "evidence_paths": [
+        "../../preregistration.md",
+        "../../../../experiments/RELATIVE-PIXEL-READ-20261122-001/RELATIVE-PIXEL-READ-20261122-001-E001_relative/scoring.py",
+        "../fresh_panel_census.json"
+      ],
+      "id": "R1-statistical_validity",
+      "method": "The fresh panel has 64 drawing-letter-turn units, 32 at held turns, and two disjoint eight-placement regimes per unit. A cell passes only above four of eight. Paired comparisons are registered against both controls; relative sensor attribution also requires the matched count-tree to fail and greater paired gains. The disclosed pair is outside the fresh denominators and repeated translations do not establish independent shape populations.",
+      "required_action": "",
+      "severity": "high",
+      "status": "pass"
+    },
+    {
+      "category": "representation_robustness",
+      "claim_at_risk": "Relative occupancies preserve orientation, unlike labels or folded turn codes",
+      "contract_change_required": false,
+      "evidence_paths": [
+        "../../../../experiments/RELATIVE-PIXEL-READ-20261122-001/RELATIVE-PIXEL-READ-20261122-001-E001_relative/reader.py",
+        "../../../../experiments/RELATIVE-PIXEL-READ-20261122-001/RELATIVE-PIXEL-READ-20261122-001-E001_relative/ordinary.py",
+        "../synthetic_tree.json",
+        "../fresh_panel_census.json"
+      ],
+      "id": "R1-representation_robustness",
+      "method": "Independent sensor fixtures reproduce both implementations on six invented arrays, including different extrema and no clipping. A translated support has the same aligned occupancy and a quarter-turned asymmetric support can differ. The fixed read has no geometry metadata from the panel. The count comparator provides the earlier fully padded sensor without additional pooling.",
+      "required_action": "",
+      "severity": "high",
+      "status": "pass"
+    },
+    {
+      "category": "causal_alternatives",
+      "claim_at_risk": "The supplied open-law holdings physically contain the deployed reader state",
+      "contract_change_required": false,
+      "evidence_paths": [
+        "../../../../experiments/RELATIVE-PIXEL-READ-20261122-001/RELATIVE-PIXEL-READ-20261122-001-E001_relative/reader.py",
+        "../../../../experiments/RELATIVE-PIXEL-READ-20261122-001/RELATIVE-PIXEL-READ-20261122-001-E001_relative/study.py",
+        "../synthetic_tree.json",
+        "../phase_fixture.json"
+      ],
+      "id": "R1-causal_alternatives",
+      "method": "Verified K1-K3 executable support on six realized addresses per law and sensor, and rehearsed 256 synthetic acquisition prefixes and exact fitted words, memory-only restore and twenty malformed state mutations. The runner hashes ordinary/opposite checkpoint states at each swap, sham, clear and restoration before and after reads. Those fixed-pixel comparisons test control by the deployed state, with independent arithmetic twins testing numerical equivalence.",
+      "required_action": "",
+      "severity": "critical",
+      "status": "pass"
+    }
+  ],
+  "audit_utc": "2026-11-22T18:30:36.718222+00:00",
+  "experiment_id": "RELATIVE-PIXEL-READ-20261122-001-E001",
+  "gate": "run_authorization",
+  "input_digests": [
+    {
+      "path": "../../../../experiments/RELATIVE-PIXEL-READ-20261122-001/RELATIVE-PIXEL-READ-20261122-001-E001_relative/contract.json",
+      "sha256": "d7196d74789fa4bca1896bcffdfaf1983c3ab8863a6419115a4c3eb017c77147"
+    },
+    {
+      "path": "../../../../experiments/RELATIVE-PIXEL-READ-20261122-001/RELATIVE-PIXEL-READ-20261122-001-E001_relative/proposed_contract.json",
+      "sha256": "92eaa14f228ea351140bc0de0b1a74a081fdbb0632b1c916296f2996ba2fe090"
+    },
+    {
+      "path": "../../design_review/red_team_report.json",
+      "sha256": "fc4a3a2e451b959931cdb5ab5a123cd20fc2a3538d12b5d55a33c4eeb31724a2"
+    },
+    {
+      "path": "../../preregistration.md",
+      "sha256": "20c2f6db78fc047d714423f7a98738ed7e66b6f388fe9548be64a516cfd93f65"
+    },
+    {
+      "path": "../../../../artifacts/VARIED-LETTER-DRAWINGS-20261122-001/VARIED-LETTER-DRAWINGS-20261122-001-E001_drawings/fit/varied-integer-opposite.json",
+      "sha256": "fae0ece41cc7ef6cb90e6fd7a350d7e11fa13cb2b9e57423c8387478de40dfe1"
+    },
+    {
+      "path": "../../../../artifacts/VARIED-LETTER-DRAWINGS-20261122-001/VARIED-LETTER-DRAWINGS-20261122-001-E001_drawings/fit/varied-integer-ordinary.json",
+      "sha256": "2d2cc2129c7fb16067be6b51d708aa52bacf7c74023a2ad1ad82133c3972508b"
+    },
+    {
+      "path": "../../../../artifacts/VARIED-LETTER-DRAWINGS-20261122-001/VARIED-LETTER-DRAWINGS-20261122-001-E001_drawings/fit/varied-nae-opposite.json",
+      "sha256": "b9a955ca75e99591bc17def9a742503d4093fc23a2f4fd49270626a7ebf63c84"
+    },
+    {
+      "path": "../../../../artifacts/VARIED-LETTER-DRAWINGS-20261122-001/VARIED-LETTER-DRAWINGS-20261122-001-E001_drawings/fit/varied-nae-ordinary.json",
+      "sha256": "8684ebab537adbab6510e3cc9b6c99b0b2b44c2d497095c33da9453c5205a0f7"
+    },
+    {
+      "path": "../../../../artifacts/VARIED-LETTER-DRAWINGS-20261122-001/VARIED-LETTER-DRAWINGS-20261122-001-E001_drawings/fit/varied-parity-opposite.json",
+      "sha256": "a91c4aaf545e9787495fa863b2a75d78be728f90a4b5032e273dd1be99f18844"
+    },
+    {
+      "path": "../../../../artifacts/VARIED-LETTER-DRAWINGS-20261122-001/VARIED-LETTER-DRAWINGS-20261122-001-E001_drawings/fit/varied-parity-ordinary.json",
+      "sha256": "3fa05367f2acbffb0436f4aa710c3b29967227994c2efabc81e81e537cdee9a1"
+    },
+    {
+      "path": "../../../../experiments/LEARNED-PATCH-GROUPS-20261122-001/LEARNED-PATCH-GROUPS-20261122-001-E001_groups/learner.py",
+      "sha256": "b288174511517fe44712ca03e0415fa0485abce145c180c1dda5bb4f81212945"
+    },
+    {
+      "path": "../../../../experiments/LEARNED-PATCH-GROUPS-20261122-001/LEARNED-PATCH-GROUPS-20261122-001-E001_groups/ordinary.py",
+      "sha256": "5a09cfecf63b35768a01fa0d2deb810740a3f49d8e239a9ffc9648e027c0b0c3"
+    },
+    {
+      "path": "../../../../experiments/LEARNED-PATCH-GROUPS-20261122-001/LEARNED-PATCH-GROUPS-20261122-001-E001_groups/panel/queries.jsonl",
+      "sha256": "db76bc20bec41935e65c51ccfc02e00db4b608f5170e3ce463d8a94f8f9bbd70"
+    },
+    {
+      "path": "../../../../experiments/LEARNED-PATCH-GROUPS-20261122-001/LEARNED-PATCH-GROUPS-20261122-001-E001_groups/panel/train.jsonl",
+      "sha256": "de105f38fbd599d53ae8a69993dc8ad712b80c844be13054805553ba52946d34"
+    },
+    {
+      "path": "../../../../experiments/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/learner.py",
+      "sha256": "d6ba981be69486f6c1fca16e1d55c520478f2eba438228746364cc0c3a364145"
+    },
+    {
+      "path": "../../../../experiments/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/panel/queries.jsonl",
+      "sha256": "52594f1b1ffcbbb94c13c605a46988689d320e2a777ef73a54b1626933f6bcd9"
+    },
+    {
+      "path": "../../../../experiments/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/panel/train.jsonl",
+      "sha256": "68ee66a52191de03bcdf4782c3d99a77aa8094417b1c69a4abc5cd6b123ffe65"
+    },
+    {
+      "path": "../../../../experiments/RELATIVE-PIXEL-READ-20261122-001/RELATIVE-PIXEL-READ-20261122-001-E001_relative/check_knots.py",
+      "sha256": "a2feac8455cbac8bd62d219c28bc5447d56dd995da71e3ae6c3e6f6f4a6d26ff"
+    },
+    {
+      "path": "../../../../experiments/RELATIVE-PIXEL-READ-20261122-001/RELATIVE-PIXEL-READ-20261122-001-E001_relative/identity.json",
+      "sha256": "4b27619f6df8784cdf7ccad82f351f9a5e81c2d6d1767175750f8f2ec9a18018"
+    },
+    {
+      "path": "../../../../experiments/RELATIVE-PIXEL-READ-20261122-001/RELATIVE-PIXEL-READ-20261122-001-E001_relative/ordinary.py",
+      "sha256": "7de29524e4af82167d278aff35d3e0775fb88340fabda5e0118a35540529e095"
+    },
+    {
+      "path": "../../../../experiments/RELATIVE-PIXEL-READ-20261122-001/RELATIVE-PIXEL-READ-20261122-001-E001_relative/panel.py",
+      "sha256": "8bb588891a338073ee9f5a2798e6baee2659e697f9cc8ad8cf2047ddfe655b0e"
+    },
+    {
+      "path": "../../../../experiments/RELATIVE-PIXEL-READ-20261122-001/RELATIVE-PIXEL-READ-20261122-001-E001_relative/panel/diagnostic.jsonl",
+      "sha256": "68e0f63ef1a3be1a02a62c1d4c43681bf3253c2dbaf48d37a44bfb334824afb5"
+    },
+    {
+      "path": "../../../../experiments/RELATIVE-PIXEL-READ-20261122-001/RELATIVE-PIXEL-READ-20261122-001-E001_relative/panel/diagnostic_key.jsonl",
+      "sha256": "d3297028861cd59c8d15b9c2179ee0bea8913a4a8afbbb39df2e3ceeea50cb83"
+    },
+    {
+      "path": "../../../../experiments/RELATIVE-PIXEL-READ-20261122-001/RELATIVE-PIXEL-READ-20261122-001-E001_relative/panel/manifest.json",
+      "sha256": "bdf6ea0b87eb1e9c954b6359b060d8a55e63be303fbebf2763fe8710ee15da2b"
+    },
+    {
+      "path": "../../../../experiments/RELATIVE-PIXEL-READ-20261122-001/RELATIVE-PIXEL-READ-20261122-001-E001_relative/panel/queries.jsonl",
+      "sha256": "4eb39aa117749c1f12b581452db0203f7088b0b582a146e493a052d41f0df262"
+    },
+    {
+      "path": "../../../../experiments/RELATIVE-PIXEL-READ-20261122-001/RELATIVE-PIXEL-READ-20261122-001-E001_relative/panel/scorer_key.jsonl",
+      "sha256": "f6b440c97b0ac178a72ef556c1256ff60a24dbdca212ccf563f547ebe2f28e75"
+    },
+    {
+      "path": "../../../../experiments/RELATIVE-PIXEL-READ-20261122-001/RELATIVE-PIXEL-READ-20261122-001-E001_relative/panel/train.jsonl",
+      "sha256": "93e18b6c560952fe54aa1aa240c7db9b9deb25710d5cfadaf5c69ee40daa1be1"
+    },
+    {
+      "path": "../../../../experiments/RELATIVE-PIXEL-READ-20261122-001/RELATIVE-PIXEL-READ-20261122-001-E001_relative/panel/training_key.jsonl",
+      "sha256": "5a09eae8dd63aa8a24c27a2a750a0998c6a2aa55df7be65ddd9062a0b85a9dba"
+    },
+    {
+      "path": "../../../../experiments/RELATIVE-PIXEL-READ-20261122-001/RELATIVE-PIXEL-READ-20261122-001-E001_relative/reader.py",
+      "sha256": "94ea8470a0c95e44d839e70eafcb68f52b425765179a68521c44b232be0c7640"
+    },
+    {
+      "path": "../../../../experiments/RELATIVE-PIXEL-READ-20261122-001/RELATIVE-PIXEL-READ-20261122-001-E001_relative/scoring.py",
+      "sha256": "30dab8be824666a9a3aabbf7a7caa294801d450e39155fdd561e3df418fecc79"
+    },
+    {
+      "path": "../../../../experiments/RELATIVE-PIXEL-READ-20261122-001/RELATIVE-PIXEL-READ-20261122-001-E001_relative/study.py",
+      "sha256": "7c6981b77b2cde0c8942a95011b0fb2be9c690fa51b7665cbc49a670c1397596"
+    },
+    {
+      "path": "../../../../experiments/VARIED-LETTER-DRAWINGS-20261122-001/VARIED-LETTER-DRAWINGS-20261122-001-E001_drawings/panel.py",
+      "sha256": "5071f100d6e6696f0c71681b06f93ed20812e0d15e6ca9cc7d6afcc38410d281"
+    },
+    {
+      "path": "../../../../experiments/VARIED-LETTER-DRAWINGS-20261122-001/VARIED-LETTER-DRAWINGS-20261122-001-E001_drawings/panel/queries.jsonl",
+      "sha256": "5bbf9a27867f9bb479a02b2e069758c4da2c4839576fffd26953c0c5caa1bc58"
+    },
+    {
+      "path": "../../../../experiments/VARIED-LETTER-DRAWINGS-20261122-001/VARIED-LETTER-DRAWINGS-20261122-001-E001_drawings/panel/scorer_key.jsonl",
+      "sha256": "d0328fcf97df0e39c584002ee8331307f3bbbc8d69bec22b8d861876dca543a7"
+    },
+    {
+      "path": "../../../../experiments/VARIED-LETTER-DRAWINGS-20261122-001/VARIED-LETTER-DRAWINGS-20261122-001-E001_drawings/panel/train_narrow.jsonl",
+      "sha256": "de105f38fbd599d53ae8a69993dc8ad712b80c844be13054805553ba52946d34"
+    },
+    {
+      "path": "../../../../experiments/VARIED-LETTER-DRAWINGS-20261122-001/VARIED-LETTER-DRAWINGS-20261122-001-E001_drawings/panel/train_varied.jsonl",
+      "sha256": "93e18b6c560952fe54aa1aa240c7db9b9deb25710d5cfadaf5c69ee40daa1be1"
+    },
+    {
+      "path": "../../../../experiments/VARIED-LETTER-DRAWINGS-20261122-001/VARIED-LETTER-DRAWINGS-20261122-001-E001_drawings/panel/training_key_narrow.jsonl",
+      "sha256": "aa6e578f222835631f6bc3a735b72758daf36562cf0fbfe7ee107dd96517d2f1"
+    },
+    {
+      "path": "../../../../experiments/VARIED-LETTER-DRAWINGS-20261122-001/VARIED-LETTER-DRAWINGS-20261122-001-E001_drawings/panel/training_key_varied.jsonl",
+      "sha256": "5a09eae8dd63aa8a24c27a2a750a0998c6a2aa55df7be65ddd9062a0b85a9dba"
+    },
+    {
+      "path": "../../../../experiments/VARIED-LETTER-DRAWINGS-20261122-001/VARIED-LETTER-DRAWINGS-20261122-001-E001_drawings/study.py",
+      "sha256": "3da5d429ac99d5e7c89698142eb420b8d05efb50b305022305fef7706fe75aee"
+    },
+    {
+      "path": "../../advisor.json",
+      "sha256": "219fd74f2a58d137d30132cb1f0fca652ebf217426ffab02796c8eca78f9fb97"
+    },
+    {
+      "path": "../attack_plan.md",
+      "sha256": "1e0d9f6a4cf7a4bb42526e6bef7b041c812227372511a440227be643273f02a5"
+    },
+    {
+      "path": "../../custody.py",
+      "sha256": "656fcb133aa92ff832260aab6cfad88bdfede0e52f679e563dc41585fa8b2acb"
+    },
+    {
+      "path": "../../design_review/pre_freeze_advice.md",
+      "sha256": "3f8fcdaf2281cdf00dab93af71ec1b86978789c1e1cd2b41ffdf8e64f960e24f"
+    },
+    {
+      "path": "../../reproduce.py",
+      "sha256": "33206fefebaf6f4d9f61d9cfc92c202b1efb73f6a1213c8a3efa204a672e8671"
+    },
+    {
+      "path": "../fresh_panel_census.py",
+      "sha256": "a471b9e72173e1eb4821b38fde37e70928172ea4a7c6a3e1ed10320c30afa5a6"
+    },
+    {
+      "path": "../fresh_panel_census.json",
+      "sha256": "667747781aa5bca04b296c7155b683f6b3df3fc8260bbf969e3e2a25dfa10e18"
+    },
+    {
+      "path": "../tree_oracle.py",
+      "sha256": "b505127ddfd45f33e59dd294027407926032a75b22ee09d617b12ea226bb4e89"
+    },
+    {
+      "path": "../synthetic_tree.py",
+      "sha256": "09a3b36d03b618f9cff04dbfbf98dc64dc9ca6c67945dc3c821b0cf219aec51e"
+    },
+    {
+      "path": "../synthetic_tree.json",
+      "sha256": "a14fa526a87ed5922f2cf2c1aa7090e69b6e791bcff3b86e9989dd0ff1d5c1a5"
+    },
+    {
+      "path": "../phase_fixture.py",
+      "sha256": "5d176a03d92bfdb7b06f0070cd2c5f7ef613dc567b2b4d49e23be550199b50ab"
+    },
+    {
+      "path": "../phase_fixture.json",
+      "sha256": "fa2b3037fda48dc4c65e052c9ac402447d705c539f628c0771cd0656536a8889"
+    },
+    {
+      "path": "../../../LEARNED-PATCH-GROUPS-20261122-001/audit/panel_census.py",
+      "sha256": "7639c2bea1b90504163672c676e3221799de0007251e0e92e58cda82d2edf1cf"
+    },
+    {
+      "path": "../../../LEARNED-PATCH-GROUPS-20261122-001/audit/pixel_counts.py",
+      "sha256": "03197115b37c1463bc38a45fd85887a3999b024b974faed6782dc604c0915d46"
+    },
+    {
+      "path": "../../../LEARNED-PATCH-GROUPS-20261122-001/audit/replay.py",
+      "sha256": "325ee31692c7fdcb183cc0b41421f8b73fef159b1a1f59d4f9bf4e606babf32c"
+    },
+    {
+      "path": "../../../LEARNED-PATCH-GROUPS-20261122-001/audit/R2/red_team_report.json",
+      "sha256": "ca01ea92abf0abdce7d8bc61e63dfee984accf3eb2b7b9e3b483781e9ffe6d9f"
+    },
+    {
+      "path": "../../../VARIED-LETTER-DRAWINGS-20261122-001/audit/panel_audit.py",
+      "sha256": "7661c48754ae6b61353d2e514d934a6348f15cfc1ebd75d91a6595f9b89fd7f4"
+    },
+    {
+      "path": "../../../VARIED-LETTER-DRAWINGS-20261122-001/audit/R2/red_team_report.json",
+      "sha256": "ffd44286501edaca23fca5a03fabb9f40decaf535f8194c167869c84ae67c612"
+    }
+  ],
+  "nonclaims": [
+    "Run authorization supplies no result. Public sensor measurement occurs after this gate.",
+    "Alignment, binary feedback, Gini, category order, physical writes, depth and voting are supplied.",
+    "The finite paired comparison has shared drawing ancestry and no font-population sampling. Scientific referee remains separate."
+  ],
+  "required_actions": [],
+  "reviewer_independence": "separate_implementation_lane",
+  "schema_version": 1,
+  "tier": "R1",
+  "verdict": "PASS"
+}

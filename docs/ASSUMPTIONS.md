@@ -239,6 +239,8 @@ evidence: results and their status come from the records each entry links.
 | [A181](#a181--a-joint-sign-measurement-must-preserve-everything-its-answer-leaves-open) | A joint sign measurement must preserve everything its answer leaves open | scaffold | Assumed |
 | [A182](#a182--lawful-individual-access-to-a-supplied-split-knot-weighting) | Lawful individual access to a supplied split-knot weighting | scaffold | Assumed |
 | [A183](#a183--a-complete-three-sign-reading-at-two-retained-keeper-banks) | A complete three-sign reading at two retained keeper banks | scaffold | Assumed |
+| [A184](#a184--an-unread-companion-stays-in-the-holding-throughout-a-split-knot-read) | An unread companion stays in the holding throughout a split-knot read | scaffold | Assumed |
+| [A185](#a185--compare-three-ordinary-weightings-on-the-same-lawful-support-and-growth-history) | Compare three ordinary weightings on the same lawful support and growth history | scaffold | Assumed |
 
 ## Entries
 
@@ -3671,6 +3673,7 @@ evidence: results and their status come from the records each entry links.
 - **Rests on it.** The numerical four-context tables and whether conditional marginals hide a setting. [Study definitions](../research/ENTANGLEMENT-READ-20261120-001/preregistration.md).
 - **Challenge.** Repeat with all three weightings. A future native rule would have to derive weights and their behavior under extension, as well as how settings are supplied.
 - **History.**
+  - 2026-11-21 · On ordinary parity growth the three named ways of distributing weight agree from a uniform start. On a not-all-equal source they can give different old marked probabilities and different fixed-order probabilities on the same support. A positive coherent source and the dephased control can also share all the same ordinary probabilities yet give different sign capacities. [The unread companion and three ordinary weightings](../research/UNREAD-COMPANION-AND-ORDER-FREE-WEIGHTING-20261121-001/decision.md)
   - 2026-11-20 · Under not-all-equal the uniform grown weighting changes the distribution on retained old marks in 221 of 233 grown placements. The equally lifted weighting preserves it in all 233. All common weights obey the external-settings bound.
   - 2026-11-20 · Recorded for the comparison of separated readings.
 
@@ -4446,6 +4449,7 @@ evidence: results and their status come from the records each entry links.
 - **Rests on it.** The operational reading of positive and dephased weights on a split lawful knot.
 - **Challenge.** Compare separate offers with a synchronized offer, coherent with dephased preparations, and parity with not-all-equal.
 - **History.**
+  - 2026-11-21 · At a joined source, serial lawful access persists at every step even with supplied amplitudes and private storage. The two-place reader may read and retain the common value to free the other two bits. At the one-place reader the same physical value prevents an entangling return. [The unread companion and three ordinary weightings](../research/UNREAD-COMPANION-AND-ORDER-FREE-WEIGHTING-20261121-001/decision.md)
   - 2026-11-21 · Varied the original law, full and partial dephasing, safety on actually reached words versus on arbitrary ancillary inputs, measurement versus a guessed label and a synchronized joint offer. The separate parity optimum is zero, the separate not-all-equal optimum is 1/3 and the synchronized parity construction succeeds with certainty. This concerns the supplied coherent preparations and operational access. [The split-knot meter and the three closing signs](../research/SPLIT-KNOT-METER-AND-CLOSING-TRIPLE-20261121-001/decision.md)
   - 2026-11-21 · Registered prospectively for the two studies. [Design and decision](../research/SPLIT-KNOT-METER-AND-CLOSING-TRIPLE-20261121-001/decision.md)
 
@@ -4460,3 +4464,27 @@ evidence: results and their status come from the records each entry links.
 - **History.**
   - 2026-11-21 · Varied the number of shared coherent pairs, source and meter records, the presence and direction of messages, the order of local offers, and which parts of a damaged keeper a reader can access. The complete closing reading costs two pairs. A third pair verifies the already determined third sign. Each bank needs the other reader's two messages for a local complete record. [The split-knot meter and the three closing signs](../research/SPLIT-KNOT-METER-AND-CLOSING-TRIPLE-20261121-001/decision.md)
   - 2026-11-21 · Registered prospectively for the two studies. [Design and decision](../research/SPLIT-KNOT-METER-AND-CLOSING-TRIPLE-20261121-001/decision.md)
+
+### A184 · An unread companion stays in the holding throughout a split-knot read
+
+**Assumed** · 2026-11-21 · scaffold
+
+- **Statement.** Use the positive coherent state or diagonal state on the complete holding of two triples sharing one distinction. The readers may access only the first triple and their private registers. Every individual change must preserve both knots on reached histories.
+- **Why.** An unread distinction can still preserve a physical record of alternatives.
+- **Rests on it.** The per-launch capacity to supply both exact sign projections from this joined holding.
+- **Challenge.** Vary the placement, both knot laws, coherent and diagonal sources, and state what resolving an unread word adds.
+- **History.**
+  - 2026-11-21 · Compared both placements of the shared name, all four pairings of the ordinary laws, positive and fully dephased preparations, and the effect of giving the readers an additional observation on the companion. With the companion inaccessible the coherent not-all-equal optimum changes from zero to 1−√5/3 depending on placement. A fully projecting unread holding attached through that one name gives the same bound when each value has an exclusive unread completion. [The unread companion and three ordinary weightings](../research/UNREAD-COMPANION-AND-ORDER-FREE-WEIGHTING-20261121-001/decision.md)
+  - 2026-11-21 · Declared before the two studies ran. [Design and decision](../research/UNREAD-COMPANION-AND-ORDER-FREE-WEIGHTING-20261121-001/decision.md)
+
+### A185 · Compare three ordinary weightings on the same lawful support and growth history
+
+**Assumed** · 2026-11-21 · scaffold
+
+- **Statement.** At a stage compare uniform present words with fair branching on each newly revealed binary distinction whenever both values have a full lawful extension. Across a fixed growth event compare uniform present words and uniform sharing among a parent's lawful extensions, beginning from a stated weighting.
+- **Why.** A local coin, present-state counting and preserving an old word's chance express distinct choices.
+- **Rests on it.** Any claim that a binary law forces agreement of the three weighting procedures.
+- **Challenge.** Test every reveal order, nonuniform starting weights, nonconstant extension counts, the canonical knot test, and both ordinary knot laws.
+- **History.**
+  - 2026-11-21 · Established the all-size, every-order affine classification with the uniform initial prior and the separate condition at each onto growth event. A fixed order, randomized order, nonuniform prior, attributed histories or unsupported old word can have a different verdict. The not-all-equal family changes the old pair under present-uniform weights while transport preserves it. Feasibility queries and count-biased coins require different information. [The unread companion and three ordinary weightings](../research/UNREAD-COMPANION-AND-ORDER-FREE-WEIGHTING-20261121-001/decision.md)
+  - 2026-11-21 · Declared before the two studies ran. [Design and decision](../research/UNREAD-COMPANION-AND-ORDER-FREE-WEIGHTING-20261121-001/decision.md)

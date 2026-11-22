@@ -1,0 +1,8 @@
+# Frozen B308 comparison
+
+The [single reviewed design](design_candidate.md), SHA-256 `e0b646ef6772d11eae82fa98ad9896bf4e4da507d791494b611a015dc0e9409f`, governs both the enumeration and the argument. The [independent Astra Max review](advisor_receipt.json) approved it before measurements. The open-setting test is the preservation of the three original loose distinctions and their full four- or seven-word conditional support, not the added quantum reading of those settings. F’s word is used only for matching and stratification. The newborn A must be present and capable of an indicated local answer under both arms. All physically unselected starts stay in the full confusion table. No new candidate is authorized.
+
+## Prior work in the program
+
+`python3 -B scripts/track.py objects 'three sibling paid values new recorder focal before settings local event interruption' --until 2026-11-22 --exclude THREE-SIBLING-PAID-EVENT-20261122-001 --limit 4` found `SIBLING-CHANGE-ANNOUNCEMENTS-20261121-001`, `REPEATED-SENDS-20261122-001`, `HIDDEN-SENDER-MARKS-20261122-001` and `SIBLING-ANNOUNCEMENTS-AND-RECEIVER-BIRTHS-20261121-001`. The completed [keeper study](../TWO-SENDS-AND-GROWN-KEEPERS-20261122-001B/results.md) already shows that one or two separate keeper words admit both paid values while all three focal choices remain available. It also records the isolated four-place founder as an ordinary control. The [separate guarded writer](../SIBLING-CHANGE-ANNOUNCEMENTS-20261121-001D/results.md) required preparation and external offers. The old theorem about two observed words does not decide whether a particular observable event involving all three payments causally changes a new record conditional on matched preparations.
+

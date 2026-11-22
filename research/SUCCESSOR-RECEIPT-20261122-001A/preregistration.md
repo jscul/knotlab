@@ -1,0 +1,7 @@
+# Frozen successor-receipt comparison
+
+The [prospective design](design_candidate.md) fixes three actual paying successors, cause and effect of later original I/T, the anonymous and separately calibrated full-H reads, exact whole-word support, and the distinct future-source control. The [independent adviser](advisor_receipt.json) approved the exact SHA-256 `e1820a8666d742875d713c6f09ffffe9c0ab7e90de42e35e600ddaaac9a84f25` before measurement.
+
+## Prior work in the program
+
+`python3 -B scripts/track.py objects 'successor first receipt repeat sender paid held marks' --until 2026-11-22 --exclude SUCCESSOR-RECEIPT-20261122-001 --limit 3` returned `REPEATED-SENDS-20261122-001`, `LAST-DISTINCTION-AND-PRIVATE-PULSES-20261121-001` and `ACTIVE-ANCESTOR-RECEIPT-20261121-001`. `python3 -B scripts/track.py objects 'fresh receiver inherited paid value calibrated' --until 2026-11-22 --exclude SUCCESSOR-RECEIPT-20261122-001 --limit 3` returned `SIBLING-CHANGE-ANNOUNCEMENTS-20261121-001`, `SIBLING-ANNOUNCEMENTS-AND-RECEIVER-BIRTHS-20261121-001` and `JOINT-PARENTS-AND-ERASURE-20261120-001`. The [single receipt](../HIDDEN-SENDER-MARKS-20261122-001/decision.md), [repeated original requests](../REPEATED-SENDS-20261122-001/decision.md) and [earlier prepared relay](../TWO-SENDS-AND-GROWN-KEEPERS-20261122-001A/results.md) define the prior comparison. The new stop concerns each *actual immediate successor* with complete local values and a possible paid continuation, rather than further rereads at old fixed R.

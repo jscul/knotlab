@@ -1,0 +1,53 @@
+# Can a successor keep an earlier receipt and register a later send?
+
+For an actual later action on the original two marks, no newly grown recipient can receive additional information. In the separate control a genuinely live different sender acts after the first receiver has finished. The later knot can identify a feature of the first receipt and the new action together under a known preparation.
+
+The [first receipt](../HIDDEN-SENDER-MARKS-20261122-001/decision.md) was ambiguous about its sender. The [fixed receiver](../REPEATED-SENDS-20261122-001/decision.md) finished only once and had no loose distinctions left. This follow-up enrolled all three children it actually paid, each separately. A role-free reading preserves the continuity of each local distinction and equality of partners, without identifying which parent supplied a track. A second reading gives a designated paid distinction a known parent role. The strongest prospective [design objection](../SUCCESSOR-RECEIPT-20261122-001A/advisor_receipt.json) was confusing this supplied role with ordinary local recognition, or mistaking two simultaneous incoming payments for two events witnessed in succession by the same knot. The [probability review](../SUCCESSOR-RECEIPT-20261122-001B/advisor_receipt.json) required a separate baseline within each prepared population and a joint guess of the two answers. Both froze before their respective runs.
+
+## The two interventions
+
+Each child receives exactly one of the first receiver’s three bits W and a bit from another parent. It is born at the event at which the original R finishes. It can recognize a subsequent local payment of all of its own fresh distinctions, under either sender action. On every one of the 36 law, course, first-send and individual-child combinations, all eight W paired with either value of that other input are attainable on one matched original start. With an anonymous mixed input its whole local word can therefore fit all eight W. An oriented contact reads the particular W bit for certain, leaving four possible W. Taking all three bits would require combining three separate holders. [Study](../SUCCESSOR-RECEIPT-20261122-001A/results.md) · [Independent projection](direct_retention.json)
+
+Hold the complete history through R’s finish fixed. An original late private swap is no longer an available ordinary source action. Under the extra global guard an admitted not-all-equal transposition changes only the two already-paid names. No future birth can take those names, so choose exactly the same fresh word at each subsequent real birth under both source actions. This couples every later local history with its counterpart on the very same prefix. A genuine subsequent finish or another read of the inherited mark leaves the late-request guessing rate at 1/2 under equal odds. Where the original parity swap must be refused, a comparison conditional on an actual late swap is undefined. [All-continuations proof](../../proofs/SUCCESSOR-RECEIPT-20261122-001B/SUCCESSOR-RECEIPT-20261122-001B-P001_future_payments/proof.md)
+
+One fourth-cut birth, auditor 1595, instead receives 4381 from the first successor, 631, and 4384 from a still-live sender, 632. These are different from R’s already-paid 1754 and from the two original sender marks. Source 632’s two private distinctions can actually be exchanged before this next payment. There were eight ordered candidate enrollments across six two-parent births. One excluded three-parent birth took payments from two of the first successors. The chosen later knot senses its own three new marks acquiring distinct coholders in the next funded cut of 2,782 births. No spectator label or pooled log enters its decisions. [Paired local replay including the original and new sources](decisive_replay.json)
+
+With a ready 01 pair at that sender alone, neither law gives a certificate of both the earlier bit and the new action. Not-all-equal does permit a small statistical gain for the earlier bit from anonymous inputs, from 51.70% in the ready population to 52.64%. Under parity that bit stays at 50%. Adding a known zero background at the first successor leaves a parity relation that forces its forwarded bit to equal the earlier bit. For not-all-equal, a forwarded zero forces an earlier one, while a forwarded one permits either. If the later receiver is also supplied the two incoming roles, the calibrated joint is always recoverable under parity and optimally guessed with 68.96% accuracy under not-all-equal. The first sender's action was held fixed in this different-source control. Neither the full three-bit word nor that earlier choice was transmitted as a second message.
+
+The two inputs arrive together at the later knot’s birth. Its own subsequent finish gives it an internally recognizable end. Fixing one complete state and varying the new sender’s action changes the paid bit even when W is fixed. Varying W while keeping the new action fixed tests actual retention. Supplying the known zero preparation is essential for the stated certificates. If the sender’s two private marks have their original unconstrained orientation under the birth weighting, swapping them preserves the joint law. Later-born readers have identical probabilities under the two requests. The postulated encoder or physical orientation that could break that symmetry remains open.
+
+A separate calculation enumerated the nine contributing ancestors, priced the preparations per original launch, and checked each earlier W separately. A second implementation checked all 128 joint cells and 64 guessing scores and certification masses. The decisive outcome keeps all shared causes. [Exact tables](later_source_joint.json) · [Independent calculation](../SUCCESSOR-RECEIPT-20261122-001B/independent/verification.json) · [Referee instructions](../SUCCESSOR-RECEIPT-20261122-001A/referee_handoff.md)
+
+Run `python3 -B research/SUCCESSOR-RECEIPT-20261122-001/weigh_successor.py`, `python3 -B research/SUCCESSOR-RECEIPT-20261122-001/check_direct_retention.py` and `python3 -B research/SUCCESSOR-RECEIPT-20261122-001/replay_examples.py` from the repository root. The [complete physical experiment](../SUCCESSOR-RECEIPT-20261122-001A/referee_handoff.md) records the two intervention arms including refusals and the underlying full words. The correction from two excluded births to one birth paid twice concerns their enumeration and does not alter any inference.
+
+**Basket:** B155, learning which distinction to share, and B308, a local trigger for writing a sibling payment, ask about other apparatus. Neither supplies an ordinary second action on the already-paid source marks.
+
+## Final report as sent
+
+Recorded 2026-11-22.
+
+**With the original sender, no under either law.** Each of the first receiver’s three bits passes to a different successor knot through an actual shared distinction. All three successors reach a new local finish. By then the sender’s original marks have already been paid, and ordinary growth cannot pay them again. Parity forbids exchanging their values. Under not-all-equal, even when a supplied whole-state check permits a genuine exchange, every later receiver can have exactly the same history as when the sender holds them in place. At equal odds its best guess of the second request stays at **50%**. [Proof and matched histories](/home/jscul/p-vs-np-contact-first/proofs/SUCCESSOR-RECEIPT-20261122-001B/SUCCESSOR-RECEIPT-20261122-001B-P001_future_payments/proof.md)
+
+A direct successor knows its inherited bit when its two incoming values agree. When they differ, all eight earlier three-bit receipts fit its complete local record. Even giving it the parent roles leaves four possible receipts. No direct successor can identify the first sender’s choice with certainty. [Complete local comparisons](/home/jscul/p-vs-np-contact-first/research/SUCCESSOR-RECEIPT-20261122-001/direct_retention.json)
+
+**A different, prepared sender gives a positive control.** After the first receipt finishes, this sender can hold or exchange two still-private marks. A later knot receives one payment from it and one from the first successor **in the same birth**, then recognizes when its own fresh marks are paid. Given a ready sender pair and a known zero background at the first successor, two incoming zeros certify that the new sender **held**. They also certify that the earlier bit was **0 under parity** or **1 under not-all-equal**. [Decisive continuous replays](/home/jscul/p-vs-np-contact-first/research/SUCCESSOR-RECEIPT-20261122-001/decisive_replay.json)
+
+| Law | Original launches meeting the preparation | Both earlier bit and new action certain within that preparation | Best joint guess before → after the local read |
+| --- | ---: | ---: | ---: |
+| Parity | 1/32 | 50% | 25% → 75% |
+| Not-all-equal | 2.63% | 15.52% | 31.04% → 53.44% |
+
+Across all original launches, the prepared cases with a certain answer account for **1/64 under parity** and **0.409% under not-all-equal**. The weighting gives equal odds to the new sender’s actions and uniform weight to lawful completions at each birth, counting shared causes once. The later knot cannot tell for itself that the calibration was present. With an unprepared sender pair, holding and exchanging give identical observation probabilities. [Exact joint tables](/home/jscul/p-vs-np-contact-first/research/SUCCESSOR-RECEIPT-20261122-001/later_source_joint.json)
+
+**Next step:** Research directions — No next action selected.
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+| --- | --- | --- | --- | --- | --- |
+| 1 | Establish a reference at a new sender through ordinary events | 3/3 | 1/3 | Identify a local event that distinguishes its two private marks before payment | Alternative · deferred |
+
+**STOP.** The obstruction covers every ordinary continuation from the tested original sender. The prepared control carries one feature of the first receipt and one later action from a different sender.  
+**Corrections:** Not a block. Two excluded payments went to one three-parent birth. [Correction record](/home/jscul/p-vs-np-contact-first/docs/CORRECTIONS.md)  
+**Goals:** G5, G15 and G17. Independent Astra Max reviewed both designs before freeze. [Scientific referee handoff, pending](/home/jscul/p-vs-np-contact-first/research/SUCCESSOR-RECEIPT-20261122-001A/referee_handoff.md)  
+**Assumptions:** A204 and A206 record the successor reading and the source comparison.  
+**Scaffolds:** The experiment supplied the enrollment, readout, weighting and calibrations. Ordinary growth supplied the shared distinctions, births and local finishes.
+

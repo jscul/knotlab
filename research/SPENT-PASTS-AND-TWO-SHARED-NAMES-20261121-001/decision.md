@@ -17,7 +17,7 @@ An isolated three-place not-all-equal knot scores **3**. Its first funded round 
 
 The meter starts from a supplied pair of knots. Ordinary growth gives a newborn only one name per parent, so it cannot create this pair with two shared names. In the successful measurement each reader holds one shared name. Two individually forbidden contributions cancel. Two accessible records announce success with probability **(7 − √13)/90** per launch, counting every refusal. The best rate under this changed rule remains open. [Complete records](https://github.com/jscul/knotlab/blob/main/research/SPENT-PASTS-AND-TWO-SHARED-NAMES-20261121-001B/results.md)
 
-Two calculations agreed on **4,352 probabilities across 42 built stages and law choices**. Nine numerical scores on the largest not-all-equal start exceeded the frozen count limit. The theorem bounds eight below two. The ninth uses three different knots and remains open. Each study had its own Astra Max design review and passed its scoped checks. Both scientific referees are pending. A repository-wide policy check still flags unrelated wording in a research skill. [Spent-past handoff](https://github.com/jscul/knotlab/blob/main/research/SPENT-PASTS-AND-TWO-SHARED-NAMES-20261121-001A/referee_handoff.md) · [Two-name meter handoff](https://github.com/jscul/knotlab/blob/main/research/SPENT-PASTS-AND-TWO-SHARED-NAMES-20261121-001B/referee_handoff.md)
+Two calculations agreed on **4,352 probabilities across 42 built stages and law choices**. Nine numerical scores on the largest not-all-equal start exceeded the frozen count limit. The theorem bounds eight below two. The ninth uses three different knots and remains open. Each study had its own Astra Max design review and passed its scoped checks. Both scientific referees are pending. The public meter replay accounts for one guide title renamed in the checker’s source. A repository-wide policy check still flags unrelated wording in a research skill. [Spent-past handoff](https://github.com/jscul/knotlab/blob/main/research/SPENT-PASTS-AND-TWO-SHARED-NAMES-20261121-001A/referee_handoff.md) · [Meter handoff and public replay](https://github.com/jscul/knotlab/blob/main/research/SPENT-PASTS-AND-TWO-SHARED-NAMES-20261121-001/referee_handoff.md#replaying-the-meter-from-the-public-record)
 
 **Next step:** Research directions — selected: #1
 
@@ -41,7 +41,7 @@ Two calculations agreed on **4,352 probabilities across 42 built stages and law 
 
 ## Final report as sent
 
-2026-11-21 17:12 PST
+2026-11-21 17:15 PST
 
 **B252.** Even when indistinguishable pasts are added as amplitudes, the three-reader score on a single newborn knot stays below two under both laws.
 
@@ -60,7 +60,7 @@ An isolated three-place not-all-equal knot scores **3**. Its first funded round 
 
 The meter starts from a supplied pair of knots. Ordinary growth gives a newborn only one name per parent, so it cannot create this pair with two shared names. In the successful measurement each reader holds one shared name. Two individually forbidden contributions cancel. Two accessible records announce success with probability **(7 − √13)/90** per launch, counting every refusal. The best rate under this changed rule remains open. [Complete records](https://github.com/jscul/knotlab/blob/main/research/SPENT-PASTS-AND-TWO-SHARED-NAMES-20261121-001B/results.md)
 
-Two calculations agreed on **4,352 probabilities across 42 built stages and law choices**. Nine numerical scores on the largest not-all-equal start exceeded the frozen count limit. The theorem bounds eight below two. The ninth uses three different knots and remains open. Each study had its own Astra Max design review and passed its scoped checks. Both scientific referees are pending. A repository-wide policy check still flags unrelated wording in a research skill. [Spent-past handoff](https://github.com/jscul/knotlab/blob/main/research/SPENT-PASTS-AND-TWO-SHARED-NAMES-20261121-001A/referee_handoff.md) · [Two-name meter handoff](https://github.com/jscul/knotlab/blob/main/research/SPENT-PASTS-AND-TWO-SHARED-NAMES-20261121-001B/referee_handoff.md)
+Two calculations agreed on **4,352 probabilities across 42 built stages and law choices**. Nine numerical scores on the largest not-all-equal start exceeded the frozen count limit. The theorem bounds eight below two. The ninth uses three different knots and remains open. Each study had its own Astra Max design review and passed its scoped checks. Both scientific referees are pending. The public meter replay accounts for one guide title renamed in the checker’s source. A repository-wide policy check still flags unrelated wording in a research skill. [Spent-past handoff](https://github.com/jscul/knotlab/blob/main/research/SPENT-PASTS-AND-TWO-SHARED-NAMES-20261121-001A/referee_handoff.md) · [Meter handoff and public replay](https://github.com/jscul/knotlab/blob/main/research/SPENT-PASTS-AND-TWO-SHARED-NAMES-20261121-001/referee_handoff.md#replaying-the-meter-from-the-public-record)
 
 **Next step:** Research directions — selected: #1
 

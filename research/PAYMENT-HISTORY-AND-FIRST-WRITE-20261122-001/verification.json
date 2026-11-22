@@ -1,0 +1,710 @@
+{
+  "canonical_support_types": {
+    "nae-3": [
+      "001",
+      "010",
+      "011",
+      "100",
+      "101",
+      "110"
+    ],
+    "nae-4": [
+      "0001",
+      "0010",
+      "0011",
+      "0100",
+      "0101",
+      "0110",
+      "0111",
+      "1000",
+      "1001",
+      "1010",
+      "1011",
+      "1100",
+      "1101",
+      "1110"
+    ],
+    "parity-3": [
+      "000",
+      "011",
+      "101",
+      "110"
+    ]
+  },
+  "cases": {
+    "nae-lex": {
+      "counts_by_joint_support_size": [
+        {
+          "27": 6
+        },
+        {
+          "2": 48
+        },
+        {
+          "2": 48
+        }
+      ],
+      "example": {
+        "all_old_parity_words_projected_on_closing_paid_set": null,
+        "first": {
+          "allowed_banks": [
+            [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                0
+              ],
+              [
+                1,
+                1
+              ]
+            ]
+          ],
+          "fresh": [
+            [
+              3,
+              4
+            ],
+            [
+              5,
+              6
+            ],
+            [
+              7,
+              8
+            ]
+          ],
+          "fresh_reference": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "inherited": [
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ]
+          ],
+          "joint_support_size": 27,
+          "paid": [
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              2
+            ]
+          ]
+        },
+        "second": {
+          "allowed_banks": [
+            [
+              [
+                1
+              ]
+            ],
+            [
+              [
+                1
+              ]
+            ],
+            [
+              [
+                0
+              ],
+              [
+                1
+              ]
+            ]
+          ],
+          "fresh": [
+            [
+              9
+            ],
+            [
+              10
+            ],
+            [
+              11
+            ]
+          ],
+          "fresh_reference": [
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ]
+          ],
+          "inherited": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "joint_support_size": 2,
+          "paid": [
+            [
+              3,
+              5
+            ],
+            [
+              4,
+              7
+            ],
+            [
+              6,
+              8
+            ]
+          ]
+        },
+        "third": {
+          "allowed_banks": [
+            [
+              [
+                0
+              ],
+              [
+                1
+              ]
+            ]
+          ],
+          "fresh": [
+            [
+              12
+            ]
+          ],
+          "fresh_reference": [
+            [
+              0
+            ]
+          ],
+          "inherited": [
+            [
+              1,
+              1,
+              0
+            ]
+          ],
+          "joint_support_size": 2,
+          "paid": [
+            [
+              9,
+              10,
+              11
+            ]
+          ]
+        }
+      }
+    },
+    "nae-opposite": {
+      "counts_by_joint_support_size": [
+        {
+          "27": 6
+        },
+        {
+          "4": 48
+        },
+        {
+          "2": 48
+        }
+      ],
+      "example": {
+        "all_old_parity_words_projected_on_closing_paid_set": null,
+        "first": {
+          "allowed_banks": [
+            [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                0
+              ],
+              [
+                1,
+                1
+              ]
+            ]
+          ],
+          "fresh": [
+            [
+              3,
+              4
+            ],
+            [
+              5,
+              6
+            ],
+            [
+              7,
+              8
+            ]
+          ],
+          "fresh_reference": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "inherited": [
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ]
+          ],
+          "joint_support_size": 27,
+          "paid": [
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              2
+            ]
+          ]
+        },
+        "second": {
+          "allowed_banks": [
+            [
+              [
+                1
+              ]
+            ],
+            [
+              [
+                0
+              ],
+              [
+                1
+              ]
+            ],
+            [
+              [
+                0
+              ],
+              [
+                1
+              ]
+            ]
+          ],
+          "fresh": [
+            [
+              9
+            ],
+            [
+              10
+            ],
+            [
+              11
+            ]
+          ],
+          "fresh_reference": [
+            [
+              1
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ]
+          ],
+          "inherited": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "joint_support_size": 4,
+          "paid": [
+            [
+              3,
+              5
+            ],
+            [
+              4,
+              7
+            ],
+            [
+              6,
+              8
+            ]
+          ]
+        },
+        "third": {
+          "allowed_banks": [
+            [
+              [
+                0
+              ],
+              [
+                1
+              ]
+            ]
+          ],
+          "fresh": [
+            [
+              12
+            ]
+          ],
+          "fresh_reference": [
+            [
+              0
+            ]
+          ],
+          "inherited": [
+            [
+              1,
+              0,
+              0
+            ]
+          ],
+          "joint_support_size": 2,
+          "paid": [
+            [
+              9,
+              10,
+              11
+            ]
+          ]
+        }
+      }
+    },
+    "parity-zero": {
+      "counts_by_joint_support_size": [
+        {
+          "8": 6
+        },
+        {
+          "1": 48
+        },
+        {
+          "1": 48
+        }
+      ],
+      "example": {
+        "all_old_parity_words_projected_on_closing_paid_set": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            1,
+            1,
+            0
+          ]
+        ],
+        "first": {
+          "allowed_banks": [
+            [
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                1
+              ]
+            ],
+            [
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                1
+              ]
+            ],
+            [
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                1
+              ]
+            ]
+          ],
+          "fresh": [
+            [
+              3,
+              4
+            ],
+            [
+              5,
+              6
+            ],
+            [
+              7,
+              8
+            ]
+          ],
+          "fresh_reference": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "inherited": [
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ]
+          ],
+          "joint_support_size": 8,
+          "paid": [
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              2
+            ]
+          ]
+        },
+        "second": {
+          "allowed_banks": [
+            [
+              [
+                0
+              ]
+            ],
+            [
+              [
+                0
+              ]
+            ],
+            [
+              [
+                0
+              ]
+            ]
+          ],
+          "fresh": [
+            [
+              9
+            ],
+            [
+              10
+            ],
+            [
+              11
+            ]
+          ],
+          "fresh_reference": [
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ]
+          ],
+          "inherited": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "joint_support_size": 1,
+          "paid": [
+            [
+              3,
+              5
+            ],
+            [
+              4,
+              7
+            ],
+            [
+              6,
+              8
+            ]
+          ]
+        },
+        "third": {
+          "allowed_banks": [
+            [
+              []
+            ]
+          ],
+          "fresh": [
+            []
+          ],
+          "fresh_reference": [
+            []
+          ],
+          "inherited": [
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "joint_support_size": 1,
+          "paid": [
+            [
+              9,
+              10,
+              11
+            ]
+          ]
+        }
+      }
+    }
+  },
+  "method": "Full-board SAT with every old value and exact physical binding fixed; compare the full new truth table with the product of lawful local banks.",
+  "projected_full_board_knot_supports": {
+    "nae": 745,
+    "parity": 745
+  }
+}

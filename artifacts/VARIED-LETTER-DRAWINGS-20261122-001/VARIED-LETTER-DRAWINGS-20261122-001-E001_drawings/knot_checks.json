@@ -1,0 +1,321 @@
+{
+  "capacity_guard": true,
+  "laws": {
+    "nae": {
+      "class_total": {
+        "allowed": [
+          "001",
+          "010",
+          "011",
+          "100",
+          "101",
+          "110"
+        ],
+        "binding": true,
+        "coexistence": true,
+        "contact": "read",
+        "erasure": "forgetting",
+        "invisible_in_parts": true,
+        "is_knot": true,
+        "loops": [
+          "mark",
+          "dock"
+        ],
+        "loss_on_erasure": true,
+        "minimum_width": 3,
+        "notes": [],
+        "pairwise_definable": false,
+        "variables": [
+          "mark",
+          "dock",
+          "read"
+        ]
+      },
+      "partition_flag": {
+        "allowed": [
+          "001",
+          "010",
+          "011",
+          "100",
+          "101",
+          "110"
+        ],
+        "binding": true,
+        "coexistence": true,
+        "contact": "read",
+        "erasure": "forgetting",
+        "invisible_in_parts": true,
+        "is_knot": true,
+        "loops": [
+          "mark",
+          "dock"
+        ],
+        "loss_on_erasure": true,
+        "minimum_width": 3,
+        "notes": [],
+        "pairwise_definable": false,
+        "variables": [
+          "mark",
+          "dock",
+          "read"
+        ]
+      },
+      "prepared_only": {
+        "allowed": [
+          "001",
+          "110"
+        ],
+        "binding": true,
+        "coexistence": true,
+        "contact": "read",
+        "erasure": "forgetting",
+        "invisible_in_parts": false,
+        "is_knot": false,
+        "loops": [
+          "mark",
+          "dock"
+        ],
+        "loss_on_erasure": false,
+        "minimum_width": 2,
+        "notes": [
+          "with mark forgotten, dock=0, read=0 is still excluded, so a binding survives without that loop",
+          "with dock forgotten, mark=0, read=0 is still excluded, so a binding survives without that loop",
+          "with the contact read forgotten, mark=0, dock=1 is still excluded, so the loops are tied without it"
+        ],
+        "pairwise_definable": true,
+        "variables": [
+          "mark",
+          "dock",
+          "read"
+        ]
+      },
+      "receipt": {
+        "allowed": [
+          "001",
+          "010",
+          "011",
+          "100",
+          "101",
+          "110"
+        ],
+        "binding": true,
+        "coexistence": true,
+        "contact": "read",
+        "erasure": "forgetting",
+        "invisible_in_parts": true,
+        "is_knot": true,
+        "loops": [
+          "mark",
+          "dock"
+        ],
+        "loss_on_erasure": true,
+        "minimum_width": 3,
+        "notes": [],
+        "pairwise_definable": false,
+        "variables": [
+          "mark",
+          "dock",
+          "read"
+        ]
+      }
+    },
+    "parity": {
+      "class_total": {
+        "allowed": [
+          "000",
+          "011",
+          "101",
+          "110"
+        ],
+        "binding": true,
+        "coexistence": true,
+        "contact": "read",
+        "erasure": "forgetting",
+        "invisible_in_parts": true,
+        "is_knot": true,
+        "loops": [
+          "mark",
+          "dock"
+        ],
+        "loss_on_erasure": true,
+        "minimum_width": 3,
+        "notes": [],
+        "pairwise_definable": false,
+        "variables": [
+          "mark",
+          "dock",
+          "read"
+        ]
+      },
+      "partition_flag": {
+        "allowed": [
+          "000",
+          "011",
+          "101",
+          "110"
+        ],
+        "binding": true,
+        "coexistence": true,
+        "contact": "read",
+        "erasure": "forgetting",
+        "invisible_in_parts": true,
+        "is_knot": true,
+        "loops": [
+          "mark",
+          "dock"
+        ],
+        "loss_on_erasure": true,
+        "minimum_width": 3,
+        "notes": [],
+        "pairwise_definable": false,
+        "variables": [
+          "mark",
+          "dock",
+          "read"
+        ]
+      },
+      "prepared_only": {
+        "allowed": [
+          "011",
+          "110"
+        ],
+        "binding": true,
+        "coexistence": true,
+        "contact": "read",
+        "erasure": "forgetting",
+        "invisible_in_parts": false,
+        "is_knot": false,
+        "loops": [
+          "mark",
+          "dock"
+        ],
+        "loss_on_erasure": false,
+        "minimum_width": 2,
+        "notes": [
+          "with mark forgotten, dock=0, read=0 is still excluded, so a binding survives without that loop",
+          "with dock forgotten, mark=0, read=0 is still excluded, so a binding survives without that loop",
+          "with the contact read forgotten, mark=0, dock=0 is still excluded, so the loops are tied without it"
+        ],
+        "pairwise_definable": true,
+        "variables": [
+          "mark",
+          "dock",
+          "read"
+        ]
+      },
+      "receipt": {
+        "allowed": [
+          "000",
+          "011",
+          "101",
+          "110"
+        ],
+        "binding": true,
+        "coexistence": true,
+        "contact": "read",
+        "erasure": "forgetting",
+        "invisible_in_parts": true,
+        "is_knot": true,
+        "loops": [
+          "mark",
+          "dock"
+        ],
+        "loss_on_erasure": true,
+        "minimum_width": 3,
+        "notes": [],
+        "pairwise_definable": false,
+        "variables": [
+          "mark",
+          "dock",
+          "read"
+        ]
+      }
+    }
+  },
+  "physical_holdings": 40494,
+  "search": {
+    "canonical_relabeling": true,
+    "complement_votes_match": true,
+    "independent_partitions": 32767,
+    "masks": [
+      286,
+      310,
+      1302,
+      4374,
+      27614,
+      27638,
+      28630,
+      31702
+    ],
+    "midpoint_abstains": true,
+    "rank": [
+      121,
+      65
+    ]
+  },
+  "synthetic": {
+    "nae": {
+      "deployed_read_rejects_unprepared_open_flag": true,
+      "fixtures": 4,
+      "infinite_rank_ties": [
+        1,
+        2,
+        4,
+        16,
+        256
+      ],
+      "receipt_words_erased": true,
+      "same_size_and_erased_controls_touch_only_flags": true,
+      "separate_reversed_fit_matches_physical_swap": true,
+      "zero_signal_empty_family": true
+    },
+    "parity": {
+      "deployed_read_rejects_unprepared_open_flag": true,
+      "fixtures": 4,
+      "infinite_rank_ties": [
+        1,
+        2,
+        4,
+        16,
+        256
+      ],
+      "receipt_words_erased": true,
+      "same_size_and_erased_controls_touch_only_flags": true,
+      "separate_reversed_fit_matches_physical_swap": true,
+      "zero_signal_empty_family": true
+    }
+  },
+  "unconstrained_negative": {
+    "allowed": [
+      "000",
+      "001",
+      "010",
+      "011",
+      "100",
+      "101",
+      "110",
+      "111"
+    ],
+    "binding": false,
+    "coexistence": true,
+    "contact": "read",
+    "erasure": "forgetting",
+    "invisible_in_parts": true,
+    "is_knot": false,
+    "loops": [
+      "mark",
+      "dock"
+    ],
+    "loss_on_erasure": true,
+    "minimum_width": 0,
+    "notes": [
+      "the relation allows every joint state, so nothing binds"
+    ],
+    "pairwise_definable": true,
+    "variables": [
+      "mark",
+      "dock",
+      "read"
+    ]
+  }
+}

@@ -1,0 +1,133 @@
+{
+  "acquisition": {
+    "arms": [
+      "narrow",
+      "varied"
+    ],
+    "backends": [
+      "parity",
+      "nae",
+      "integer"
+    ],
+    "class_counts_per_fit": {
+      "L": 32,
+      "T": 32
+    },
+    "conventions": [
+      "ordinary",
+      "opposite"
+    ],
+    "narrow_designs": 4,
+    "paired_fields": [
+      "true letter",
+      "slot order",
+      "q",
+      "row",
+      "col",
+      "ink",
+      "bounding width",
+      "bounding height"
+    ],
+    "replaced_slots": 48,
+    "shared_slots": 16,
+    "slots_per_fit": 64,
+    "turns_clockwise_degrees": [
+      0,
+      90
+    ],
+    "varied_designs": 16
+  },
+  "approved_candidate_sha256": "1d11141dd5ee6396b464fd45604055ebe867eed85a30b4bac292258cfa9366a6",
+  "artifact_id": "VARIED-LETTER-DRAWINGS-20261122-001-E001",
+  "branch": "training",
+  "comparators_or_controls": "Direct paired narrow reproduction, 50% fair guess, blank state, ordinary same-rule twins, reciprocal independently trained opposite-label full state transplants, sham/clear/restore, flag erasure, cross-arm whole words and both flag-only calibrations. Count individual votes/ties.",
+  "decision_rule": "Pass separately per arm/law iff each of 8 reserved designs x 2 true letters x 2 held angles x 2 position conditions has strictly more than 4/8 correct. Attribute successful acquisition to this change of drawings only if varied passes, narrow fails and varied improves more paired decisions than it loses on the common 512 held images. Other results are descriptive. Repeat for both laws regardless.",
+  "design_review_sha256": "371279a0c9d4aa3e25d35e97f1070424845bbce397ed77fa25af6ea796df5dd8",
+  "evidence_stage": "confirmatory",
+  "first_executable_signal": "Predecessor reproducibly yielded 240 equally best groups and retained two. The reportable direct signal for the new question is the frozen common test. Before fit use geometry, archival training reproduction and invented inputs only.",
+  "forbidden_inputs": "Angle, rotations, coordinates, design ID, pose, class strings, generator derivatives, templates, rotated examples from held turns, manual ties of rotated patterns, earlier group clue and external image embeddings.",
+  "frozen_utc": "2026-11-22T18:03:20.890837+00:00",
+  "inputs": "64 binary row-major pixels. Each issued training action receives exactly one correctness bit. Matched narrow and varied slots use identical letter/action meanings.",
+  "kind": "experiment",
+  "mapping": "Use the byte-identical earlier KnotLearner and NumericGroups. All 32,767 unordered anonymous partitions compete. Maximize squared separation of the two rewarded class means relative to summed within-class variance. Keep the smallest side at a tied rank and all final ties. Vote by nearest class mean; midpoint abstains and tied committee defaults to action 0. Physical reader retains only its ternary holdings and fixed configuration.",
+  "nonclaims": "The finite panel has two reserved base families and related typographic construction. Position sharing, stroke grammar, selection criterion, writes and vote are supplied. No claim of arbitrary rotation or font recognition, independent placement replicates or a special advantage for knot storage.",
+  "outputs": "One action per image under its recipient convention. Decision counts by class, angle, design and familiar/new position plus both law-specific control traces.",
+  "preregistration": "research/VARIED-LETTER-DRAWINGS-20261122-001/preregistration.md",
+  "primary_observable": "Correct/total per true letter, held turn, design and position regime. Paired gains/losses at the bitmap and design-letter-turn level; frozen fitted group selections and ambiguity before the smaller-side preference.",
+  "question": "Do matched, more varied stroke drawings at 0 and 90 degrees teach the unchanged reader the L/T distinction at 180 and 270 degrees?",
+  "resource_budget": "12 x 64 presentations; all classifiers use one CPU pass over their assigned stream. Record one common 1,024-bitmap census, including 512 held-turn queries. No tuning or outcome-guided redesign.",
+  "reviews": "Astra Max R0 binds proposal/preregistration before detached freeze, R1 verifies frozen contract before training, R2 independently replays actual fits and blind results. Scientific referee handoff follows.",
+  "schema_version": 1,
+  "source_dependencies": [
+    "LEARNED-PATCH-GROUPS-20261122-001"
+  ],
+  "source_sha256": {
+    "experiments/LEARNED-PATCH-GROUPS-20261122-001/LEARNED-PATCH-GROUPS-20261122-001-E001_groups/check_knots.py": "b091b395ec43e9df9788352104179e7f21343b5eb4c96f10cd8388d98834367a",
+    "experiments/LEARNED-PATCH-GROUPS-20261122-001/LEARNED-PATCH-GROUPS-20261122-001-E001_groups/contract.json": "fb105cc7d5a938237460c580e4caf993a25a2c02a650b48c57782811616f3957",
+    "experiments/LEARNED-PATCH-GROUPS-20261122-001/LEARNED-PATCH-GROUPS-20261122-001-E001_groups/learner.py": "b288174511517fe44712ca03e0415fa0485abce145c180c1dda5bb4f81212945",
+    "experiments/LEARNED-PATCH-GROUPS-20261122-001/LEARNED-PATCH-GROUPS-20261122-001-E001_groups/ordinary.py": "5a09cfecf63b35768a01fa0d2deb810740a3f49d8e239a9ffc9648e027c0b0c3",
+    "experiments/LEARNED-PATCH-GROUPS-20261122-001/LEARNED-PATCH-GROUPS-20261122-001-E001_groups/panel.py": "48a6b7cb0ec867db4773d8b781e2411ab901c8c6dcb9ce902cf744b658fda81f",
+    "experiments/LEARNED-PATCH-GROUPS-20261122-001/LEARNED-PATCH-GROUPS-20261122-001-E001_groups/panel/manifest.json": "a450c4793cbac6725aaa2efec8553e9bbab044d4a091b51bbcf23df3cc084013",
+    "experiments/LEARNED-PATCH-GROUPS-20261122-001/LEARNED-PATCH-GROUPS-20261122-001-E001_groups/panel/queries.jsonl": "db76bc20bec41935e65c51ccfc02e00db4b608f5170e3ce463d8a94f8f9bbd70",
+    "experiments/LEARNED-PATCH-GROUPS-20261122-001/LEARNED-PATCH-GROUPS-20261122-001-E001_groups/panel/scorer_key.jsonl": "d13000ac940539b2d94238ff4ea899d8c95b23693b6dca0975af0d4ed6b3d876",
+    "experiments/LEARNED-PATCH-GROUPS-20261122-001/LEARNED-PATCH-GROUPS-20261122-001-E001_groups/panel/train.jsonl": "de105f38fbd599d53ae8a69993dc8ad712b80c844be13054805553ba52946d34",
+    "experiments/LEARNED-PATCH-GROUPS-20261122-001/LEARNED-PATCH-GROUPS-20261122-001-E001_groups/panel/training_key.jsonl": "642ee2dba0a23e1617e035eb57de1aab1c84bb9f258c81b51134946f928dca00",
+    "experiments/LEARNED-PATCH-GROUPS-20261122-001/LEARNED-PATCH-GROUPS-20261122-001-E001_groups/study.py": "749fc5685e745b05f81bca667025ffe02c04500bfcd6c53c1ed05b6d4605c7f3",
+    "experiments/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/learner.py": "d6ba981be69486f6c1fca16e1d55c520478f2eba438228746364cc0c3a364145",
+    "experiments/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/panel.py": "cbe71eaae30b9f69bf54353f64cc236c6ef13bf7cb752d4605ad1ca4516c411b",
+    "experiments/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/panel/queries.jsonl": "52594f1b1ffcbbb94c13c605a46988689d320e2a777ef73a54b1626933f6bcd9",
+    "experiments/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/panel/train.jsonl": "68ee66a52191de03bcdf4782c3d99a77aa8094417b1c69a4abc5cd6b123ffe65",
+    "experiments/VARIED-LETTER-DRAWINGS-20261122-001/VARIED-LETTER-DRAWINGS-20261122-001-E001_drawings/diagnostics.py": "c3b26aab4c0d96a8f01872d65bece2d258c1be2aff64349f723afd0dfea0345d",
+    "experiments/VARIED-LETTER-DRAWINGS-20261122-001/VARIED-LETTER-DRAWINGS-20261122-001-E001_drawings/identity.json": "0cdd25695e2433576693acc90c16e2eb42302e6ac782b28155788e6f86c49169",
+    "experiments/VARIED-LETTER-DRAWINGS-20261122-001/VARIED-LETTER-DRAWINGS-20261122-001-E001_drawings/panel.py": "5071f100d6e6696f0c71681b06f93ed20812e0d15e6ca9cc7d6afcc38410d281",
+    "experiments/VARIED-LETTER-DRAWINGS-20261122-001/VARIED-LETTER-DRAWINGS-20261122-001-E001_drawings/panel/manifest.json": "b43949edd096991ec3bed12a91fa4069b6545a47f28c71f520b478da603e3141",
+    "experiments/VARIED-LETTER-DRAWINGS-20261122-001/VARIED-LETTER-DRAWINGS-20261122-001-E001_drawings/panel/queries.jsonl": "5bbf9a27867f9bb479a02b2e069758c4da2c4839576fffd26953c0c5caa1bc58",
+    "experiments/VARIED-LETTER-DRAWINGS-20261122-001/VARIED-LETTER-DRAWINGS-20261122-001-E001_drawings/panel/scorer_key.jsonl": "d0328fcf97df0e39c584002ee8331307f3bbbc8d69bec22b8d861876dca543a7",
+    "experiments/VARIED-LETTER-DRAWINGS-20261122-001/VARIED-LETTER-DRAWINGS-20261122-001-E001_drawings/panel/train_narrow.jsonl": "de105f38fbd599d53ae8a69993dc8ad712b80c844be13054805553ba52946d34",
+    "experiments/VARIED-LETTER-DRAWINGS-20261122-001/VARIED-LETTER-DRAWINGS-20261122-001-E001_drawings/panel/train_varied.jsonl": "93e18b6c560952fe54aa1aa240c7db9b9deb25710d5cfadaf5c69ee40daa1be1",
+    "experiments/VARIED-LETTER-DRAWINGS-20261122-001/VARIED-LETTER-DRAWINGS-20261122-001-E001_drawings/panel/training_key_narrow.jsonl": "aa6e578f222835631f6bc3a735b72758daf36562cf0fbfe7ee107dd96517d2f1",
+    "experiments/VARIED-LETTER-DRAWINGS-20261122-001/VARIED-LETTER-DRAWINGS-20261122-001-E001_drawings/panel/training_key_varied.jsonl": "5a09eae8dd63aa8a24c27a2a750a0998c6a2aa55df7be65ddd9062a0b85a9dba",
+    "experiments/VARIED-LETTER-DRAWINGS-20261122-001/VARIED-LETTER-DRAWINGS-20261122-001-E001_drawings/scoring.py": "28c985fd691332b81781d1e1b8ccc6243c9e660d003ea202f239bb000c06b108",
+    "experiments/VARIED-LETTER-DRAWINGS-20261122-001/VARIED-LETTER-DRAWINGS-20261122-001-E001_drawings/study.py": "3da5d429ac99d5e7c89698142eb420b8d05efb50b305022305fef7706fe75aee",
+    "research/LEARNED-PATCH-GROUPS-20261122-001/audit/group_oracle.py": "5c416ed80d40f52004097fdf0b4d34d6937150c298b94589e2e87f7dc69f0d9c",
+    "research/LEARNED-PATCH-GROUPS-20261122-001/audit/pixel_counts.py": "03197115b37c1463bc38a45fd85887a3999b024b974faed6782dc604c0915d46",
+    "research/LEARNED-PATCH-GROUPS-20261122-001/audit/postscore_rank_support.json": "930d11c11920213b26ccdb00236446743945a3b68cf986e4aab21f9b50621f91",
+    "research/LEARNED-PATCH-GROUPS-20261122-001/audit/subsets.py": "8c1cd4b153660982c9176747ede980afddd837f8cedc1ba51861dae39eb7f266",
+    "research/VARIED-LETTER-DRAWINGS-20261122-001/advisor.json": "aab84a5d4247e00cc90e647059521a7afdea91718fad4772487bf2d13ae466af",
+    "research/VARIED-LETTER-DRAWINGS-20261122-001/design_review/pre_freeze_advice.md": "4f616543896577e47da63ff0857317e3aa69e8b53864a1d4582a04505832ce12",
+    "research/VARIED-LETTER-DRAWINGS-20261122-001/inspect_groups.py": "b88a9216c02549950c4d494274bae21ffa44d0c629afb14a9d74d71c94af561e",
+    "research/VARIED-LETTER-DRAWINGS-20261122-001/preregistration.md": "bf1be6d44e37535a400959084803b9ddd5e77b61b50d9f9b042b14a76f65e490"
+  },
+  "status": "Frozen",
+  "stop_rule": "Finish this one frozen narrow/varied comparison under both laws, preserve the first observed limitation or transfer, then record a GO or STOP supported by the evidence.",
+  "test": {
+    "base_dimensions": [
+      [
+        5,
+        2
+      ],
+      [
+        4,
+        4
+      ]
+    ],
+    "blind_designs": 8,
+    "earlier_panel_sizes": [
+      400,
+      768
+    ],
+    "familiar_clockwise_degrees": [
+      0,
+      90
+    ],
+    "held_clockwise_degrees": [
+      180,
+      270
+    ],
+    "positions_per_regime": 8,
+    "queries_per_letter_turn_and_position_regime": 64,
+    "shared_unique_queries": 1024,
+    "train_turn_augmentation": false
+  },
+  "ticket": "VARIED-LETTER-DRAWINGS-20261122-001"
+}

@@ -1,0 +1,2529 @@
+{
+  "anchors": {
+    "coordinates": "Zero-based top-left index of the normalized rotated bounding box",
+    "held_out_rule": "(row + col) % 2 == 0",
+    "indices": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  "audit": {
+    "bitmap_counts": {
+      "blind": 1024,
+      "narrow": 64,
+      "union": 1136,
+      "varied": 64
+    },
+    "blind_bitmap_overlap_previous_or_training": 0,
+    "blind_dihedral_overlap_previous_or_training": 0,
+    "dihedral_orbit_counts": {
+      "blind": 16,
+      "narrow": 6,
+      "varied": 30
+    },
+    "previous_dihedral_orbit_count": 14,
+    "previous_unique_bitmaps": 1168,
+    "straight_bitmaps_shared_in_same_training_slots": 16,
+    "varied_bitmap_overlap_previous": 16,
+    "varied_dihedral_overlap_previous": 6
+  },
+  "base_ancestry": {
+    "blind_E": "Predecessor E width, height and L skeleton, with a centered T stem",
+    "blind_F": "Predecessor F width, height and skeletons",
+    "fit": "A through D are the predecessor's straight training bases"
+  },
+  "base_dimensions_and_t_stem_col": {
+    "A": [
+      3,
+      4,
+      1
+    ],
+    "B": [
+      4,
+      3,
+      2
+    ],
+    "C": [
+      3,
+      5,
+      1
+    ],
+    "D": [
+      5,
+      3,
+      2
+    ],
+    "E": [
+      5,
+      2,
+      2
+    ],
+    "F": [
+      4,
+      4,
+      1
+    ]
+  },
+  "bitmap": {
+    "cols": 8,
+    "encoding": "row-major ASCII bits",
+    "lit_pixels": [
+      6,
+      7
+    ],
+    "rows": 8
+  },
+  "blind_conditions": {
+    "combined": "Held-out anchor and q",
+    "familiar": "Seen anchor and familiar q",
+    "orientation": "Seen anchor and held-out q",
+    "position": "Held-out anchor and familiar q"
+  },
+  "blind_counts": {
+    "combined": {
+      "L": 128,
+      "T": 128
+    },
+    "familiar": {
+      "L": 128,
+      "T": 128
+    },
+    "orientation": {
+      "L": 128,
+      "T": 128
+    },
+    "position": {
+      "L": 128,
+      "T": 128
+    }
+  },
+  "files": {
+    "queries.jsonl": {
+      "rows": 1024,
+      "sha256": "5bbf9a27867f9bb479a02b2e069758c4da2c4839576fffd26953c0c5caa1bc58"
+    },
+    "scorer_key.jsonl": {
+      "rows": 1024,
+      "sha256": "d0328fcf97df0e39c584002ee8331307f3bbbc8d69bec22b8d861876dca543a7"
+    },
+    "train_narrow.jsonl": {
+      "rows": 64,
+      "sha256": "de105f38fbd599d53ae8a69993dc8ad712b80c844be13054805553ba52946d34"
+    },
+    "train_varied.jsonl": {
+      "rows": 64,
+      "sha256": "93e18b6c560952fe54aa1aa240c7db9b9deb25710d5cfadaf5c69ee40daa1be1"
+    },
+    "training_key_narrow.jsonl": {
+      "rows": 64,
+      "sha256": "aa6e578f222835631f6bc3a735b72758daf36562cf0fbfe7ee107dd96517d2f1"
+    },
+    "training_key_varied.jsonl": {
+      "rows": 64,
+      "sha256": "5a09eae8dd63aa8a24c27a2a750a0998c6a2aa55df7be65ddd9062a0b85a9dba"
+    }
+  },
+  "generator": {
+    "path": "../panel.py",
+    "sha256": "5071f100d6e6696f0c71681b06f93ed20812e0d15e6ca9cc7d6afcc38410d281"
+  },
+  "geometry": {
+    "admissible_distinct_pairs_by_base_and_bend": {
+      "A": {
+        "compound": 6,
+        "horizontal": 1,
+        "vertical": 2
+      },
+      "B": {
+        "compound": 7,
+        "horizontal": 3,
+        "vertical": 0
+      },
+      "C": {
+        "compound": 12,
+        "horizontal": 2,
+        "vertical": 5
+      },
+      "D": {
+        "compound": 14,
+        "horizontal": 4,
+        "vertical": 3
+      },
+      "E": {
+        "compound": 2,
+        "horizontal": 4,
+        "vertical": 0
+      },
+      "F": {
+        "compound": 9,
+        "horizontal": 2,
+        "vertical": 4
+      }
+    },
+    "bend_quota_basis": "The transformed vertical path, bar or both actually bend in both letters",
+    "candidates": "Every nonempty proper contiguous row or column interval with amount -1 or +1, singly or one of each in either order",
+    "distinct_turns": "Require all four normalized turns of each individual drawing to be different",
+    "geometry_limits": {
+      "B": "Zero admissible vertical-only pairs",
+      "E": "Zero admissible vertical-only pairs. Two admissible compound pairs share a dihedral orbit across labels, so the proposed two horizontal and two compound pairs became three horizontal and one compound before fitting."
+    },
+    "junctions": "The exact end intersection of L or the interior bar intersection of T survives, and T's next stem column remains strictly within the bar span",
+    "moves": "Each [axis,start,stop,amount] shifts the other coordinate by amount in [start,stop) measured in current coordinates",
+    "orbit_exclusion": "All previous and selected deformed drawings under translation, quarter-turn and reflection",
+    "quota_slots_by_base": {
+      "A": [
+        "vertical",
+        "horizontal",
+        "compound"
+      ],
+      "B": [
+        "horizontal",
+        "compound",
+        "compound"
+      ],
+      "C": [
+        "vertical",
+        "horizontal",
+        "compound"
+      ],
+      "D": [
+        "vertical",
+        "horizontal",
+        "compound"
+      ],
+      "E": [
+        "horizontal",
+        "horizontal",
+        "horizontal",
+        "compound"
+      ],
+      "F": [
+        "vertical",
+        "horizontal",
+        "compound",
+        "compound"
+      ]
+    },
+    "selection": "For each base and bend, salt-sort compact JSON [base,moves], then moves for hash ties. Keep the first representative of each ordered pair of dihedral support orbits. Fill the quotas of A through D against earlier panels and fix their training slots. Then fill E and F against earlier panels and the fixed training designs. Each pass takes the first complete disjoint assignment in base and quota order. Different unordered bounding dimensions are solved independently since their orbits cannot coincide.",
+    "selection_salt": "varied-letter-drawings-20261122-v1-design:",
+    "strokes": "Matched ink and dimensions, one-step progress along each stroke's main axis and cross-step at most one"
+  },
+  "id": "Lowercase hexadecimal SHA-256 of the ASCII bit string",
+  "ordering": {
+    "narrow_training": "Exact presentation order from the predecessor training file",
+    "queries": "Ascending salted bitmap SHA-256, then id for ties",
+    "query_salt": "varied-letter-drawings-20261122-v1-query:",
+    "scorer_key": "Ascending id",
+    "training_keys": "Same order as public training rows, slots 0 through 63",
+    "varied_anchor_salt": "varied-letter-drawings-20261122-v1-anchor:",
+    "varied_training": "Reuse narrow slots. For each base and q, order the four narrow anchors by salted compact JSON [base,q,row,col], then by anchor for ties. Assign straight then the three variants in style-number order, preserving both letters in each paired allocation."
+  },
+  "predecessors": {
+    "LEARNED-PATCH-GROUPS-20261122-001": {
+      "bitmaps": 768,
+      "file_sha256": {
+        "queries.jsonl": "db76bc20bec41935e65c51ccfc02e00db4b608f5170e3ce463d8a94f8f9bbd70",
+        "train.jsonl": "de105f38fbd599d53ae8a69993dc8ad712b80c844be13054805553ba52946d34"
+      }
+    },
+    "PIXEL-LETTERS-20261122-001": {
+      "bitmaps": 400,
+      "file_sha256": {
+        "queries.jsonl": "52594f1b1ffcbbb94c13c605a46988689d320e2a777ef73a54b1626933f6bcd9",
+        "train.jsonl": "68ee66a52191de03bcdf4782c3d99a77aa8094417b1c69a4abc5cd6b123ffe65"
+      }
+    }
+  },
+  "rotation": {
+    "definition": "q clockwise quarter-turns, normalized before translation to the anchor",
+    "fit_q": [
+      0,
+      1
+    ],
+    "held_out_q": [
+      2,
+      3
+    ]
+  },
+  "schema_version": 1,
+  "style_designs": {
+    "A": {
+      "base_style": "A",
+      "bend": "straight",
+      "moves": [],
+      "upright_strokes": {
+        "L": {
+          "bar": [
+            [
+              3,
+              0
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              3,
+              2
+            ]
+          ],
+          "junction": [
+            3,
+            0
+          ],
+          "vertical": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              3,
+              0
+            ]
+          ]
+        },
+        "T": {
+          "bar": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ]
+          ],
+          "junction": [
+            0,
+            1
+          ],
+          "vertical": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              3,
+              1
+            ]
+          ]
+        }
+      }
+    },
+    "A-varied-1": {
+      "base_style": "A",
+      "bend": "vertical",
+      "moves": [
+        [
+          "row",
+          0,
+          2,
+          1
+        ]
+      ],
+      "upright_strokes": {
+        "L": {
+          "bar": [
+            [
+              3,
+              0
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              3,
+              2
+            ]
+          ],
+          "junction": [
+            3,
+            0
+          ],
+          "vertical": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              3,
+              0
+            ]
+          ]
+        },
+        "T": {
+          "bar": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ]
+          ],
+          "junction": [
+            0,
+            1
+          ],
+          "vertical": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              3,
+              0
+            ]
+          ]
+        }
+      }
+    },
+    "A-varied-2": {
+      "base_style": "A",
+      "bend": "horizontal",
+      "moves": [
+        [
+          "col",
+          1,
+          2,
+          -1
+        ]
+      ],
+      "upright_strokes": {
+        "L": {
+          "bar": [
+            [
+              3,
+              0
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              3,
+              2
+            ]
+          ],
+          "junction": [
+            3,
+            0
+          ],
+          "vertical": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              3,
+              0
+            ]
+          ]
+        },
+        "T": {
+          "bar": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "junction": [
+            0,
+            1
+          ],
+          "vertical": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              3,
+              1
+            ]
+          ]
+        }
+      }
+    },
+    "A-varied-3": {
+      "base_style": "A",
+      "bend": "compound",
+      "moves": [
+        [
+          "col",
+          1,
+          2,
+          -1
+        ],
+        [
+          "row",
+          1,
+          4,
+          -1
+        ]
+      ],
+      "upright_strokes": {
+        "L": {
+          "bar": [
+            [
+              3,
+              0
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              3,
+              2
+            ]
+          ],
+          "junction": [
+            3,
+            0
+          ],
+          "vertical": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              3,
+              0
+            ]
+          ]
+        },
+        "T": {
+          "bar": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "junction": [
+            0,
+            1
+          ],
+          "vertical": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              3,
+              0
+            ]
+          ]
+        }
+      }
+    },
+    "B": {
+      "base_style": "B",
+      "bend": "straight",
+      "moves": [],
+      "upright_strokes": {
+        "L": {
+          "bar": [
+            [
+              2,
+              0
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              2,
+              3
+            ]
+          ],
+          "junction": [
+            2,
+            0
+          ],
+          "vertical": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              0
+            ]
+          ]
+        },
+        "T": {
+          "bar": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              3
+            ]
+          ],
+          "junction": [
+            0,
+            2
+          ],
+          "vertical": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              2
+            ]
+          ]
+        }
+      }
+    },
+    "B-varied-1": {
+      "base_style": "B",
+      "bend": "horizontal",
+      "moves": [
+        [
+          "col",
+          1,
+          3,
+          -1
+        ]
+      ],
+      "upright_strokes": {
+        "L": {
+          "bar": [
+            [
+              2,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              3
+            ]
+          ],
+          "junction": [
+            2,
+            0
+          ],
+          "vertical": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              0
+            ]
+          ]
+        },
+        "T": {
+          "bar": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              3
+            ]
+          ],
+          "junction": [
+            0,
+            2
+          ],
+          "vertical": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              2
+            ]
+          ]
+        }
+      }
+    },
+    "B-varied-2": {
+      "base_style": "B",
+      "bend": "compound",
+      "moves": [
+        [
+          "col",
+          0,
+          2,
+          1
+        ],
+        [
+          "row",
+          0,
+          2,
+          1
+        ]
+      ],
+      "upright_strokes": {
+        "L": {
+          "bar": [
+            [
+              2,
+              0
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              3
+            ]
+          ],
+          "junction": [
+            2,
+            0
+          ],
+          "vertical": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              0
+            ]
+          ]
+        },
+        "T": {
+          "bar": [
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              3
+            ]
+          ],
+          "junction": [
+            0,
+            2
+          ],
+          "vertical": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              1
+            ]
+          ]
+        }
+      }
+    },
+    "B-varied-3": {
+      "base_style": "B",
+      "bend": "compound",
+      "moves": [
+        [
+          "row",
+          2,
+          3,
+          -1
+        ],
+        [
+          "col",
+          1,
+          3,
+          -1
+        ]
+      ],
+      "upright_strokes": {
+        "L": {
+          "bar": [
+            [
+              2,
+              0
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              3
+            ]
+          ],
+          "junction": [
+            2,
+            0
+          ],
+          "vertical": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              0
+            ]
+          ]
+        },
+        "T": {
+          "bar": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              3
+            ]
+          ],
+          "junction": [
+            0,
+            2
+          ],
+          "vertical": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              1
+            ]
+          ]
+        }
+      }
+    },
+    "C": {
+      "base_style": "C",
+      "bend": "straight",
+      "moves": [],
+      "upright_strokes": {
+        "L": {
+          "bar": [
+            [
+              4,
+              0
+            ],
+            [
+              4,
+              1
+            ],
+            [
+              4,
+              2
+            ]
+          ],
+          "junction": [
+            4,
+            0
+          ],
+          "vertical": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              3,
+              0
+            ],
+            [
+              4,
+              0
+            ]
+          ]
+        },
+        "T": {
+          "bar": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ]
+          ],
+          "junction": [
+            0,
+            1
+          ],
+          "vertical": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              4,
+              1
+            ]
+          ]
+        }
+      }
+    },
+    "C-varied-1": {
+      "base_style": "C",
+      "bend": "vertical",
+      "moves": [
+        [
+          "row",
+          3,
+          4,
+          1
+        ]
+      ],
+      "upright_strokes": {
+        "L": {
+          "bar": [
+            [
+              4,
+              0
+            ],
+            [
+              4,
+              1
+            ],
+            [
+              4,
+              2
+            ]
+          ],
+          "junction": [
+            4,
+            0
+          ],
+          "vertical": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              4,
+              0
+            ]
+          ]
+        },
+        "T": {
+          "bar": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ]
+          ],
+          "junction": [
+            0,
+            1
+          ],
+          "vertical": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              4,
+              1
+            ]
+          ]
+        }
+      }
+    },
+    "C-varied-2": {
+      "base_style": "C",
+      "bend": "horizontal",
+      "moves": [
+        [
+          "col",
+          1,
+          2,
+          -1
+        ]
+      ],
+      "upright_strokes": {
+        "L": {
+          "bar": [
+            [
+              4,
+              0
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              4,
+              2
+            ]
+          ],
+          "junction": [
+            4,
+            0
+          ],
+          "vertical": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              3,
+              0
+            ],
+            [
+              4,
+              0
+            ]
+          ]
+        },
+        "T": {
+          "bar": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "junction": [
+            0,
+            1
+          ],
+          "vertical": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              4,
+              1
+            ]
+          ]
+        }
+      }
+    },
+    "C-varied-3": {
+      "base_style": "C",
+      "bend": "compound",
+      "moves": [
+        [
+          "col",
+          1,
+          2,
+          -1
+        ],
+        [
+          "row",
+          1,
+          2,
+          1
+        ]
+      ],
+      "upright_strokes": {
+        "L": {
+          "bar": [
+            [
+              4,
+              0
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              4,
+              2
+            ]
+          ],
+          "junction": [
+            4,
+            0
+          ],
+          "vertical": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              3,
+              0
+            ],
+            [
+              4,
+              0
+            ]
+          ]
+        },
+        "T": {
+          "bar": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "junction": [
+            0,
+            1
+          ],
+          "vertical": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              4,
+              1
+            ]
+          ]
+        }
+      }
+    },
+    "D": {
+      "base_style": "D",
+      "bend": "straight",
+      "moves": [],
+      "upright_strokes": {
+        "L": {
+          "bar": [
+            [
+              2,
+              0
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              4
+            ]
+          ],
+          "junction": [
+            2,
+            0
+          ],
+          "vertical": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              0
+            ]
+          ]
+        },
+        "T": {
+          "bar": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              0,
+              4
+            ]
+          ],
+          "junction": [
+            0,
+            2
+          ],
+          "vertical": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              2
+            ]
+          ]
+        }
+      }
+    },
+    "D-varied-1": {
+      "base_style": "D",
+      "bend": "vertical",
+      "moves": [
+        [
+          "row",
+          1,
+          3,
+          -1
+        ]
+      ],
+      "upright_strokes": {
+        "L": {
+          "bar": [
+            [
+              2,
+              0
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              4
+            ]
+          ],
+          "junction": [
+            2,
+            0
+          ],
+          "vertical": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              0
+            ]
+          ]
+        },
+        "T": {
+          "bar": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              0,
+              4
+            ]
+          ],
+          "junction": [
+            0,
+            2
+          ],
+          "vertical": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              1
+            ]
+          ]
+        }
+      }
+    },
+    "D-varied-2": {
+      "base_style": "D",
+      "bend": "horizontal",
+      "moves": [
+        [
+          "col",
+          0,
+          2,
+          1
+        ]
+      ],
+      "upright_strokes": {
+        "L": {
+          "bar": [
+            [
+              2,
+              0
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              1,
+              4
+            ]
+          ],
+          "junction": [
+            2,
+            0
+          ],
+          "vertical": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              0
+            ]
+          ]
+        },
+        "T": {
+          "bar": [
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              0,
+              4
+            ]
+          ],
+          "junction": [
+            0,
+            2
+          ],
+          "vertical": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              2
+            ]
+          ]
+        }
+      }
+    },
+    "D-varied-3": {
+      "base_style": "D",
+      "bend": "compound",
+      "moves": [
+        [
+          "row",
+          0,
+          1,
+          1
+        ],
+        [
+          "col",
+          0,
+          2,
+          1
+        ]
+      ],
+      "upright_strokes": {
+        "L": {
+          "bar": [
+            [
+              2,
+              0
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              1,
+              4
+            ]
+          ],
+          "junction": [
+            2,
+            0
+          ],
+          "vertical": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              0
+            ]
+          ]
+        },
+        "T": {
+          "bar": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              0,
+              4
+            ]
+          ],
+          "junction": [
+            0,
+            2
+          ],
+          "vertical": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              1
+            ]
+          ]
+        }
+      }
+    },
+    "E-blind-1": {
+      "base_style": "E",
+      "bend": "horizontal",
+      "moves": [
+        [
+          "col",
+          1,
+          4,
+          -1
+        ]
+      ],
+      "upright_strokes": {
+        "L": {
+          "bar": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              1,
+              4
+            ]
+          ],
+          "junction": [
+            1,
+            0
+          ],
+          "vertical": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ]
+        },
+        "T": {
+          "bar": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              1,
+              4
+            ]
+          ],
+          "junction": [
+            0,
+            2
+          ],
+          "vertical": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              2
+            ]
+          ]
+        }
+      }
+    },
+    "E-blind-2": {
+      "base_style": "E",
+      "bend": "horizontal",
+      "moves": [
+        [
+          "col",
+          1,
+          3,
+          -1
+        ]
+      ],
+      "upright_strokes": {
+        "L": {
+          "bar": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              1,
+              4
+            ]
+          ],
+          "junction": [
+            1,
+            0
+          ],
+          "vertical": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ]
+        },
+        "T": {
+          "bar": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              1,
+              4
+            ]
+          ],
+          "junction": [
+            0,
+            2
+          ],
+          "vertical": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              2
+            ]
+          ]
+        }
+      }
+    },
+    "E-blind-3": {
+      "base_style": "E",
+      "bend": "horizontal",
+      "moves": [
+        [
+          "col",
+          2,
+          3,
+          -1
+        ]
+      ],
+      "upright_strokes": {
+        "L": {
+          "bar": [
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              1,
+              4
+            ]
+          ],
+          "junction": [
+            1,
+            0
+          ],
+          "vertical": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ]
+        },
+        "T": {
+          "bar": [
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              1,
+              4
+            ]
+          ],
+          "junction": [
+            0,
+            2
+          ],
+          "vertical": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              2
+            ]
+          ]
+        }
+      }
+    },
+    "E-blind-4": {
+      "base_style": "E",
+      "bend": "compound",
+      "moves": [
+        [
+          "row",
+          0,
+          1,
+          1
+        ],
+        [
+          "col",
+          2,
+          5,
+          -1
+        ]
+      ],
+      "upright_strokes": {
+        "L": {
+          "bar": [
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              0,
+              4
+            ]
+          ],
+          "junction": [
+            1,
+            0
+          ],
+          "vertical": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ]
+          ]
+        },
+        "T": {
+          "bar": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              1,
+              4
+            ]
+          ],
+          "junction": [
+            0,
+            2
+          ],
+          "vertical": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        }
+      }
+    },
+    "F-blind-1": {
+      "base_style": "F",
+      "bend": "vertical",
+      "moves": [
+        [
+          "row",
+          1,
+          3,
+          1
+        ]
+      ],
+      "upright_strokes": {
+        "L": {
+          "bar": [
+            [
+              3,
+              0
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              3,
+              3
+            ]
+          ],
+          "junction": [
+            3,
+            0
+          ],
+          "vertical": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              3,
+              0
+            ]
+          ]
+        },
+        "T": {
+          "bar": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              3
+            ]
+          ],
+          "junction": [
+            0,
+            1
+          ],
+          "vertical": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              1
+            ]
+          ]
+        }
+      }
+    },
+    "F-blind-2": {
+      "base_style": "F",
+      "bend": "horizontal",
+      "moves": [
+        [
+          "col",
+          1,
+          2,
+          -1
+        ]
+      ],
+      "upright_strokes": {
+        "L": {
+          "bar": [
+            [
+              3,
+              0
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              3,
+              3
+            ]
+          ],
+          "junction": [
+            3,
+            0
+          ],
+          "vertical": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              3,
+              0
+            ]
+          ]
+        },
+        "T": {
+          "bar": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              3
+            ]
+          ],
+          "junction": [
+            0,
+            1
+          ],
+          "vertical": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              3,
+              1
+            ]
+          ]
+        }
+      }
+    },
+    "F-blind-3": {
+      "base_style": "F",
+      "bend": "compound",
+      "moves": [
+        [
+          "col",
+          1,
+          2,
+          -1
+        ],
+        [
+          "row",
+          1,
+          2,
+          1
+        ]
+      ],
+      "upright_strokes": {
+        "L": {
+          "bar": [
+            [
+              3,
+              0
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              3,
+              3
+            ]
+          ],
+          "junction": [
+            3,
+            0
+          ],
+          "vertical": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              3,
+              0
+            ]
+          ]
+        },
+        "T": {
+          "bar": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              3
+            ]
+          ],
+          "junction": [
+            0,
+            1
+          ],
+          "vertical": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              1
+            ]
+          ]
+        }
+      }
+    },
+    "F-blind-4": {
+      "base_style": "F",
+      "bend": "compound",
+      "moves": [
+        [
+          "col",
+          1,
+          2,
+          -1
+        ],
+        [
+          "row",
+          2,
+          4,
+          -1
+        ]
+      ],
+      "upright_strokes": {
+        "L": {
+          "bar": [
+            [
+              3,
+              0
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              3,
+              3
+            ]
+          ],
+          "junction": [
+            3,
+            0
+          ],
+          "vertical": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              3,
+              0
+            ]
+          ]
+        },
+        "T": {
+          "bar": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              3
+            ]
+          ],
+          "junction": [
+            0,
+            1
+          ],
+          "vertical": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              3,
+              0
+            ]
+          ]
+        }
+      }
+    }
+  }
+}

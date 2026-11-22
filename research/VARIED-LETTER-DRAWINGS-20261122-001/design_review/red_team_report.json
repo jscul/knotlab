@@ -1,0 +1,174 @@
+{
+  "schema_version": 1,
+  "experiment_id": "VARIED-LETTER-DRAWINGS-20261122-001-E001",
+  "tier": "R0",
+  "gate": "contract_freeze",
+  "reviewer_independence": "same_task",
+  "reviewer_model": "gpt-6.2-astra",
+  "reviewer_reasoning_effort": "max",
+  "review_basis": "Prospective design review by the established Astra Max reviewer, separate from production, registered execution audit, replay and subsequent scientific refereeing. The only relevant outcomes used were those of the already completed predecessor. Source review used no follow-up fit, fresh image, label association, prediction, or scored output. Manifest files are fingerprinted as opaque bytes.",
+  "attack_plan_frozen_before_results": true,
+  "input_digests": [
+    {
+      "path": "../../../experiments/VARIED-LETTER-DRAWINGS-20261122-001/VARIED-LETTER-DRAWINGS-20261122-001-E001_drawings/proposed_contract.json",
+      "sha256": "1d11141dd5ee6396b464fd45604055ebe867eed85a30b4bac292258cfa9366a6"
+    },
+    {
+      "path": "../preregistration.md",
+      "sha256": "bf1be6d44e37535a400959084803b9ddd5e77b61b50d9f9b042b14a76f65e490"
+    }
+  ],
+  "source_commitments": 35,
+  "attacks": [
+    {
+      "id": "paired-intervention",
+      "category": "scope_and_authority",
+      "status": "pass",
+      "severity": "high",
+      "claim_at_risk": "A success could be attributed to diversity in general, extra exposure, stronger feedback, or a changed reader.",
+      "method": "Compare the current ticket, predecessor-bound reader and paired training slots against the exact claim, predicted contrasts and stopping condition.",
+      "evidence_paths": [
+        "../../../experiments/VARIED-LETTER-DRAWINGS-20261122-001/VARIED-LETTER-DRAWINGS-20261122-001-E001_drawings/proposed_contract.json",
+        "../preregistration.md",
+        "pre_freeze_advice.md",
+        "../../../experiments/VARIED-LETTER-DRAWINGS-20261122-001/VARIED-LETTER-DRAWINGS-20261122-001-E001_drawings/panel.py",
+        "../../../experiments/VARIED-LETTER-DRAWINGS-20261122-001/VARIED-LETTER-DRAWINGS-20261122-001-E001_drawings/study.py",
+        "../../../experiments/LEARNED-PATCH-GROUPS-20261122-001/LEARNED-PATCH-GROUPS-20261122-001-E001_groups/learner.py"
+      ],
+      "finding": "Only the 64 provided drawings can differ within a paired training history. Sixteen slots keep the same straight bitmap and 48 use controlled pen deformations. The two cohorts match order, letter, initial base, position, turn, ink and bounding dimensions. Their numbers of distinct drawings and their repetition frequencies differ by design. The causal comparison applies to these two fixed cohorts and this learner, with 0° and 90° offered during training.",
+      "required_action": "",
+      "contract_change_required": false
+    },
+    {
+      "id": "no-held-selection",
+      "category": "information_leakage",
+      "status": "pass",
+      "severity": "critical",
+      "claim_at_risk": "Blind angle information, past successful features or test correlations might shape the varied training corpus or fitted rule.",
+      "method": "Trace the two geometry allocations in source, the imported learner and admitted model arguments. Inspect the phase-specific keys and release conditions without opening any new data rows or results.",
+      "evidence_paths": [
+        "../preregistration.md",
+        "../../../experiments/VARIED-LETTER-DRAWINGS-20261122-001/VARIED-LETTER-DRAWINGS-20261122-001-E001_drawings/proposed_contract.json",
+        "../../../experiments/VARIED-LETTER-DRAWINGS-20261122-001/VARIED-LETTER-DRAWINGS-20261122-001-E001_drawings/panel.py",
+        "../../../experiments/VARIED-LETTER-DRAWINGS-20261122-001/VARIED-LETTER-DRAWINGS-20261122-001-E001_drawings/study.py",
+        "../../../experiments/LEARNED-PATCH-GROUPS-20261122-001/LEARNED-PATCH-GROUPS-20261122-001-E001_groups/learner.py"
+      ],
+      "finding": "Training shapes and their anchor assignments are completed from A–D, the prior straight stream and permitted geometric exclusions before E/F allocation starts. The second allocation can exclude training shapes and cannot backtrack into the first. Salt ordering and shape quotas use pen paths, ancestry and distinct supports. The fitter receives only raw pixels, its own guess and correctness. No held query, diagnostic feature or angle feeds that calculation. Program custody and detached phase hashes enforce this boundary in the trusted workspace.",
+      "required_action": "",
+      "contract_change_required": false
+    },
+    {
+      "id": "shape-validity-novelty",
+      "category": "split_integrity",
+      "status": "pass",
+      "severity": "high",
+      "claim_at_risk": "Moving or recoding an earlier glyph could be counted as a new drawing, or an arbitrary added pixel could pass as handwriting variation.",
+      "method": "Inspect ordered stroke-path, topology, matched ink and extent checks, the rotation/reflection canonicalization, paired design quotas, and the disclosed relationship to previous skeletons.",
+      "evidence_paths": [
+        "../../../experiments/VARIED-LETTER-DRAWINGS-20261122-001/VARIED-LETTER-DRAWINGS-20261122-001-E001_drawings/proposed_contract.json",
+        "../preregistration.md",
+        "../../../experiments/VARIED-LETTER-DRAWINGS-20261122-001/VARIED-LETTER-DRAWINGS-20261122-001-E001_drawings/panel.py",
+        "../../../experiments/VARIED-LETTER-DRAWINGS-20261122-001/VARIED-LETTER-DRAWINGS-20261122-001-E001_drawings/panel/manifest.json"
+      ],
+      "finding": "Each moved stroke progresses one step on its main axis and at most one orthogonal step. Both letters receive the same geometric displacement and bend type. Ordered strokes meet at the L endpoint or inside the T crossbar, with a single common pixel. The eight unseen designs have new rendered supports after translations, reflections and four rotations, against both training arms and both previous panels. Their two base dimension pairs are absent from current training. The short wide design has earlier L ancestry and the square design reuses an earlier straight skeleton. The E bend quota changed before freeze after two geometric candidates collided under these equivalences.",
+      "required_action": "",
+      "contract_change_required": false
+    },
+    {
+      "id": "equal-information",
+      "category": "comparator_fairness",
+      "status": "pass",
+      "severity": "high",
+      "claim_at_risk": "Any advantage could reflect extra labeled examples, other rules or inconsistent scoring across arms or encodings.",
+      "method": "Inspect equal presentation and action budgets, the common query roster, inherited physical and ordinary sources, training feedback coupling, endpoint and full-state controls.",
+      "evidence_paths": [
+        "../preregistration.md",
+        "../../../experiments/VARIED-LETTER-DRAWINGS-20261122-001/VARIED-LETTER-DRAWINGS-20261122-001-E001_drawings/proposed_contract.json",
+        "../../../experiments/VARIED-LETTER-DRAWINGS-20261122-001/VARIED-LETTER-DRAWINGS-20261122-001-E001_drawings/study.py",
+        "../../../experiments/VARIED-LETTER-DRAWINGS-20261122-001/VARIED-LETTER-DRAWINGS-20261122-001-E001_drawings/scoring.py",
+        "../../../experiments/LEARNED-PATCH-GROUPS-20261122-001/LEARNED-PATCH-GROUPS-20261122-001-E001_groups/learner.py",
+        "../../../experiments/LEARNED-PATCH-GROUPS-20261122-001/LEARNED-PATCH-GROUPS-20261122-001-E001_groups/ordinary.py"
+      ],
+      "finding": "The twelve fits comprise the two training arms crossed with ordinary and opposite teaching under two physical laws and a matched arithmetic reader. Each fit receives 64 presentations and one binary correctness bit per guess. Under a fixed convention the paired majority acquisition policy gives identical action and correctness sequences, which the driver checks. All fits see the same 1,024 reserved inputs. The rank, tie handling, sparsity preference, readout and storage scheme are inherited. The arithmetic twin tests implementation agreement.",
+      "required_action": "",
+      "contract_change_required": false
+    },
+    {
+      "id": "locked-data-and-words",
+      "category": "artifact_and_checker",
+      "status": "pass",
+      "severity": "critical",
+      "claim_at_risk": "An unreviewed code revision, early label join or explanatory score could determine a supposedly blind action.",
+      "method": "Inspect digest-validated loading of the previous learner, the preflight bindings, physical checkpoint restoration, phase records and independently owned replay obligations.",
+      "evidence_paths": [
+        "../../../experiments/VARIED-LETTER-DRAWINGS-20261122-001/VARIED-LETTER-DRAWINGS-20261122-001-E001_drawings/proposed_contract.json",
+        "../preregistration.md",
+        "../../../experiments/VARIED-LETTER-DRAWINGS-20261122-001/VARIED-LETTER-DRAWINGS-20261122-001-E001_drawings/study.py",
+        "../../../experiments/VARIED-LETTER-DRAWINGS-20261122-001/VARIED-LETTER-DRAWINGS-20261122-001-E001_drawings/scoring.py",
+        "../../../experiments/VARIED-LETTER-DRAWINGS-20261122-001/VARIED-LETTER-DRAWINGS-20261122-001-E001_drawings/diagnostics.py",
+        "../../../experiments/LEARNED-PATCH-GROUPS-20261122-001/LEARNED-PATCH-GROUPS-20261122-001-E001_groups/learner.py"
+      ],
+      "finding": "The plan binds the proposed scientific package before freeze. The runner checks that later freeze metadata accounts for every difference and requires an R1 approval of the final contract, proposal and R0. Fit and blind phase hashes must be independently anchored before the next stage. Frozen words reproduce the readout and remain unchanged after prediction. The scorer opens the answer key after the blind release check. The previous full-law K1–K3 checks and the preparation control are repeated before promotion.",
+      "required_action": "",
+      "contract_change_required": false
+    },
+    {
+      "id": "group-calibration-and-ties",
+      "category": "causal_alternatives",
+      "status": "pass",
+      "severity": "high",
+      "claim_at_risk": "Whole-word or opposite-reward exchanges alone might confuse altered class calibration with changed group choice.",
+      "method": "Check the reciprocal ordinary narrow/varied word and flag transplants, physical integrity tests, opposite-convention swaps and exact ties.",
+      "evidence_paths": [
+        "../preregistration.md",
+        "../../../experiments/VARIED-LETTER-DRAWINGS-20261122-001/VARIED-LETTER-DRAWINGS-20261122-001-E001_drawings/study.py",
+        "../../../experiments/VARIED-LETTER-DRAWINGS-20261122-001/VARIED-LETTER-DRAWINGS-20261122-001-E001_drawings/scoring.py",
+        "../../../experiments/LEARNED-PATCH-GROUPS-20261122-001/LEARNED-PATCH-GROUPS-20261122-001-E001_groups/learner.py"
+      ],
+      "finding": "The two ordinary fits and the two reciprocal flag-only interventions form the full crossing of narrow/varied selection and narrow/varied class calibration on identical inputs. Flag exchanges preserve all other physical words, and restore validates the donor groups and recipient class factors. Sham, clear, erased flags, reciprocal opposite-convention swaps and restoration provide additional controls. Exact midpoint abstentions, votes for each action and the fixed default are distinguishable. Opposite-reward reversal alone demonstrates control by the decision state.",
+      "required_action": "",
+      "contract_change_required": false
+    },
+    {
+      "id": "strict-both-classes",
+      "category": "statistical_validity",
+      "status": "pass",
+      "severity": "high",
+      "claim_at_risk": "Good pooled accuracy could hide failure at one held turn or for one letter, and translated repeats could inflate the effective amount of evidence.",
+      "method": "Derive the relation between the per-cell gate, paired discordances, shape-level weighting and the equal numbers of placements.",
+      "evidence_paths": [
+        "../../../experiments/VARIED-LETTER-DRAWINGS-20261122-001/VARIED-LETTER-DRAWINGS-20261122-001-E001_drawings/proposed_contract.json",
+        "../preregistration.md",
+        "../../../experiments/VARIED-LETTER-DRAWINGS-20261122-001/VARIED-LETTER-DRAWINGS-20261122-001-E001_drawings/scoring.py"
+      ],
+      "finding": "For each arm and law, each of 64 cells must exceed one half, with blind design, true class, held turn and seen/held placement kept separate. Each has eight translations. Since the padded sensor preserves each translated histogram, success requires correct classification of all 32 design–letter–turn combinations before any further signature coincidences. The varied-training claim additionally requires varied to pass, narrow to fail, and more paired gains than losses. Ties, net gains despite overall failure, and changes in either direction remain reportable. Each arm and law reaches the full common test.",
+      "required_action": "",
+      "contract_change_required": false
+    },
+    {
+      "id": "rank-and-observation-ambiguity",
+      "category": "identifiability",
+      "status": "pass",
+      "severity": "medium",
+      "claim_at_risk": "A lower score for an old singleton could be presented as a solution to transfer, or an apparent shape-level failure could originate in indistinguishable sensor observations.",
+      "method": "Trace post-release diagnostics for the pre-sparsity maximizers, class-wise rank changes, concrete training witnesses, held vote conflicts and observational ceilings.",
+      "evidence_paths": [
+        "../preregistration.md",
+        "../../../experiments/VARIED-LETTER-DRAWINGS-20261122-001/VARIED-LETTER-DRAWINGS-20261122-001-E001_drawings/diagnostics.py",
+        "pre_freeze_advice.md"
+      ],
+      "finding": "The acquisition analysis reconstructs the complete pre- and post-sparsity maximizing sets only after release. When a formerly class-constant count varies, a same-class witness identifies the loss of zero within-class variance. That observation, rank preference, and held accuracy are distinct checks. Held diagnostic comparisons distinguish identical full 16-bin histograms from identical selected-group readings and can bound the maximum correctness available at either representation. Such hindsight never substitutes a different issued prediction.",
+      "required_action": "",
+      "contract_change_required": false
+    }
+  ],
+  "verdict": "PASS",
+  "required_actions": [],
+  "nonclaims": [
+    "The verdict covers the proposed scientific design before its detached freeze. R1 authorizes the actual training and blind evaluation.",
+    "The treatment replaces 48 drawings across one matched pair of training cohorts. Generalization to a population of possible fonts, writers or training sets requires independent sampling beyond these cohorts.",
+    "The eight held designs are new deformed pixel supports derived from two reserved base families with disclosed historical ancestry. Results apply to these specific generated shapes and the two held turns.",
+    "The quarter-turn table is available to the generator and post-release diagnostic interpretation. Training retains the same anonymous-bin reader, supplied grouping search, size preference, physical encoding, translation sharing and decision rule.",
+    "A conditional transplant effect concerns the executed readout at the specified recipient calibration. It does not by itself identify a uniquely rotation-invariant learned abstraction."
+  ]
+}

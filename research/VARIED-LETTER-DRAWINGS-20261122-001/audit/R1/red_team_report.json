@@ -1,0 +1,370 @@
+{
+  "attack_plan_frozen_before_results": true,
+  "attacks": [
+    {
+      "category": "scope_and_authority",
+      "claim_at_risk": "One prospective fixed learner and paired training substitution",
+      "contract_change_required": false,
+      "evidence_paths": [
+        "../../../../experiments/VARIED-LETTER-DRAWINGS-20261122-001/VARIED-LETTER-DRAWINGS-20261122-001-E001_drawings/contract.json",
+        "../../../../experiments/VARIED-LETTER-DRAWINGS-20261122-001/VARIED-LETTER-DRAWINGS-20261122-001-E001_drawings/proposed_contract.json",
+        "../../design_review/red_team_report.json",
+        "../../preregistration.md",
+        "../../../../experiments/VARIED-LETTER-DRAWINGS-20261122-001/VARIED-LETTER-DRAWINGS-20261122-001-E001_drawings/study.py"
+      ],
+      "id": "R1-scope_and_authority",
+      "method": "Revalidated the detached contract, its exact passing R0/proposal, 35 source digests, and absence of official fit, blind and scored artifacts. No fresh count vectors, label relations, fits or predictions entered this gate. The new experiment imports unchanged archived learner and numeric code.",
+      "required_action": "",
+      "severity": "high",
+      "status": "pass"
+    },
+    {
+      "category": "information_leakage",
+      "claim_at_risk": "Only row-major pixels and correctness are exposed to devices",
+      "contract_change_required": false,
+      "evidence_paths": [
+        "../../../../experiments/VARIED-LETTER-DRAWINGS-20261122-001/VARIED-LETTER-DRAWINGS-20261122-001-E001_drawings/study.py",
+        "../phase_io.json",
+        "../../../../experiments/LEARNED-PATCH-GROUPS-20261122-001/LEARNED-PATCH-GROUPS-20261122-001-E001_groups/learner.py"
+      ],
+      "id": "R1-information_leakage",
+      "method": "Traced actor predict/learn calls and source access for each phase. Acquisition loops package only 64 binary pixels and the learner's own action and derived correctness. Schedule, key, metadata, earlier clues and slot fields stay outside the device. The blind process reads sealed checkpoint words and queries with no scoring key. The score phase verifies both releases, parent hashes and external anchors before calling the scorer-key byte reader. Synthetic early calls fail before opening pixels or keys.",
+      "required_action": "",
+      "severity": "critical",
+      "status": "pass"
+    },
+    {
+      "category": "split_integrity",
+      "claim_at_risk": "Match scheduled slots and keep held drawings and turns outside the fit",
+      "contract_change_required": false,
+      "evidence_paths": [
+        "../panel_audit.json",
+        "../panel_audit.py",
+        "../../../../experiments/VARIED-LETTER-DRAWINGS-20261122-001/VARIED-LETTER-DRAWINGS-20261122-001-E001_drawings/panel/manifest.json"
+      ],
+      "id": "R1-split_integrity",
+      "method": "Independently performed geometry-only selection, first fixing A-D then selecting E/F, and recreated all 1,152 scheduled and blind images with exact ordered identities and keys. Narrow acquisition is byte-identical to the preceding 64 images. Match 64 slots on label, q, temporal order, anchor, base, ink and dimensions with 16 exact overlaps. Each of 16 blind letter/drawing orbits is disjoint from fitting and both earlier panels even under reflection. Both fit arms use only q0 and q1.",
+      "required_action": "",
+      "severity": "critical",
+      "status": "pass"
+    },
+    {
+      "category": "comparator_fairness",
+      "claim_at_risk": "The observed paired contrast can be traced to the fixed acquisition replacement",
+      "contract_change_required": false,
+      "evidence_paths": [
+        "../../../../experiments/VARIED-LETTER-DRAWINGS-20261122-001/VARIED-LETTER-DRAWINGS-20261122-001-E001_drawings/study.py",
+        "../../preregistration.md",
+        "../panel_audit.json"
+      ],
+      "id": "R1-comparator_fairness",
+      "method": "Verified two fitted arms by two reward conventions with the same physical laws and integer implementation. Learner code, update budget, criterion, class/pose sequence and common scored population are fixed. Both conventions have one externally generated per-guess correctness bit. The exact program enforces matched guess/reward prefixes at each slot. Framing is a contrast of these two cohorts, not a population effect of diversity.",
+      "required_action": "",
+      "severity": "high",
+      "status": "pass"
+    },
+    {
+      "category": "artifact_and_checker",
+      "claim_at_risk": "Only pre-authorized byte-identical artifacts can enter the sealed phases",
+      "contract_change_required": false,
+      "evidence_paths": [
+        "../../../../experiments/VARIED-LETTER-DRAWINGS-20261122-001/VARIED-LETTER-DRAWINGS-20261122-001-E001_drawings/study.py",
+        "../phase_io.json",
+        "../attack_plan.md"
+      ],
+      "id": "R1-artifact_and_checker",
+      "method": "Examined authenticating R0/R1 bindings, content-checked module loading, phase-local source reads, exact file rosters, exclusive creation and zero-mutation inference. A synthetic I/O suite rejects malformed inputs, out-of-order scoring with and without the blind anchor, forged anchor chronology and modified blind output. The next stages require separate fit and blind anchors recorded before their successors.",
+      "required_action": "",
+      "severity": "critical",
+      "status": "pass"
+    },
+    {
+      "category": "identifiability",
+      "claim_at_risk": "Reward identifies earned action and all maximizing groups are retained at the selected size",
+      "contract_change_required": false,
+      "evidence_paths": [
+        "../unchanged_reader_fixtures.json",
+        "../../../../experiments/LEARNED-PATCH-GROUPS-20261122-001/LEARNED-PATCH-GROUPS-20261122-001-E001_groups/learner.py",
+        "../../../../experiments/LEARNED-PATCH-GROUPS-20261122-001/LEARNED-PATCH-GROUPS-20261122-001-E001_groups/ordinary.py"
+      ],
+      "id": "R1-identifiability",
+      "method": "The fixed training guess and correctness determine the earned binary action without a class input. Re-ran archived synthetic checks of independent complete subset census, finite score, infinite ties, empty signal, midpoint abstention and ID permutation. Exact physical and integer search preserve the rule and category anonymity. R2 will re-establish the archived 240 equal-score narrow partitions and compute the varied ambiguity from the released receipts.",
+      "required_action": "",
+      "severity": "high",
+      "status": "pass"
+    },
+    {
+      "category": "resource_fairness",
+      "claim_at_risk": "One fixed 64-slot fit per recipient and one common 1,024-query census",
+      "contract_change_required": false,
+      "evidence_paths": [
+        "../../../../experiments/VARIED-LETTER-DRAWINGS-20261122-001/VARIED-LETTER-DRAWINGS-20261122-001-E001_drawings/study.py",
+        "../../../../experiments/VARIED-LETTER-DRAWINGS-20261122-001/VARIED-LETTER-DRAWINGS-20261122-001-E001_drawings/contract.json",
+        "../../../../experiments/LEARNED-PATCH-GROUPS-20261122-001/LEARNED-PATCH-GROUPS-20261122-001-E001_groups/learner.py"
+      ],
+      "id": "R1-resource_fairness",
+      "method": "Twelve fitted devices each receive exactly 64 actions and rewards, with one exhaustive search over 32,767 partitions per device. Each physical reader's fixed state has 40,494 ternary holdings and erases acquisition words at deployment. The 44 reported channels include fixed state interventions and do not add a learning budget. Releases record elapsed time, process high-water RSS and coverage. No equal-memory or speed claim is made.",
+      "required_action": "",
+      "severity": "medium",
+      "status": "pass"
+    },
+    {
+      "category": "statistical_validity",
+      "claim_at_risk": "Primary transfer and attribution are separately prospectively decided",
+      "contract_change_required": false,
+      "evidence_paths": [
+        "../../preregistration.md",
+        "../../../../experiments/VARIED-LETTER-DRAWINGS-20261122-001/VARIED-LETTER-DRAWINGS-20261122-001-E001_drawings/scoring.py",
+        "../panel_audit.json"
+      ],
+      "id": "R1-statistical_validity",
+      "method": "Independently checked eight per drawing, letter, turn and anchor regime. Primary transfer requires strictly above four of eight in each of 64 held-quarter-turn cells. Attribution also requires varied pass, narrow failure and more paired held gains than losses under the same law. Exact bitmap statistics and design-letter-turn weighting retain repeated-translation multiplicity.",
+      "required_action": "",
+      "severity": "high",
+      "status": "pass"
+    },
+    {
+      "category": "representation_robustness",
+      "claim_at_risk": "Fixed anonymous bins and exact geometric novelty serve different roles",
+      "contract_change_required": false,
+      "evidence_paths": [
+        "../panel_audit.json",
+        "../unchanged_reader_fixtures.json",
+        "../../../../experiments/VARIED-LETTER-DRAWINGS-20261122-001/VARIED-LETTER-DRAWINGS-20261122-001-E001_drawings/panel.py",
+        "../../../../experiments/LEARNED-PATCH-GROUPS-20261122-001/LEARNED-PATCH-GROUPS-20261122-001-E001_groups/learner.py"
+      ],
+      "id": "R1-representation_robustness",
+      "method": "Checked source identity of the padded 81-window reading and reused an independent synthetic arbitrary-ID recoding check against both fitted procedures. Audited that the panel builder and split audit select using path integrity, dimensions, ink, salts and exact transformed supports. A-D are fixed before E/F selection, and the blind candidate class shares the disclosed stroke ancestry without sharing any held support up to a rigid move or reflection.",
+      "required_action": "",
+      "severity": "high",
+      "status": "pass"
+    },
+    {
+      "category": "causal_alternatives",
+      "claim_at_risk": "Checkpoint and membership transfers preserve recipient convention and unaffected calibration",
+      "contract_change_required": false,
+      "evidence_paths": [
+        "../phase_io.json",
+        "../unchanged_reader_fixtures.json",
+        "../reference.py",
+        "../../../../experiments/VARIED-LETTER-DRAWINGS-20261122-001/VARIED-LETTER-DRAWINGS-20261122-001-E001_drawings/study.py"
+      ],
+      "id": "R1-causal_alternatives",
+      "method": "All 40 physical read-time states and 200 issued bits on five invented bitmaps match independent reconstruction, including opposite donor, arm donor, flag-only crossing both ways, sham, clear, restore and flag erasure. Opposite conventions fit separately. Cross-armed membership changes leave calibrated prefix words intact. Revalidated both actual open-law supports, all K1-K3 projections, and ten malformed state rejections on unchanged code.",
+      "required_action": "",
+      "severity": "critical",
+      "status": "pass"
+    }
+  ],
+  "audit_utc": "2026-11-22T18:03:33.113957+00:00",
+  "experiment_id": "VARIED-LETTER-DRAWINGS-20261122-001-E001",
+  "gate": "run_authorization",
+  "input_digests": [
+    {
+      "path": "../../../../experiments/VARIED-LETTER-DRAWINGS-20261122-001/VARIED-LETTER-DRAWINGS-20261122-001-E001_drawings/contract.json",
+      "sha256": "6c2bcbd04d566b8d15905c7845c08a257f4419e6b8aa2fa020160d2436dba365"
+    },
+    {
+      "path": "../../../../experiments/VARIED-LETTER-DRAWINGS-20261122-001/VARIED-LETTER-DRAWINGS-20261122-001-E001_drawings/proposed_contract.json",
+      "sha256": "1d11141dd5ee6396b464fd45604055ebe867eed85a30b4bac292258cfa9366a6"
+    },
+    {
+      "path": "../../design_review/red_team_report.json",
+      "sha256": "371279a0c9d4aa3e25d35e97f1070424845bbce397ed77fa25af6ea796df5dd8"
+    },
+    {
+      "path": "../../../../experiments/LEARNED-PATCH-GROUPS-20261122-001/LEARNED-PATCH-GROUPS-20261122-001-E001_groups/check_knots.py",
+      "sha256": "b091b395ec43e9df9788352104179e7f21343b5eb4c96f10cd8388d98834367a"
+    },
+    {
+      "path": "../../../../experiments/LEARNED-PATCH-GROUPS-20261122-001/LEARNED-PATCH-GROUPS-20261122-001-E001_groups/contract.json",
+      "sha256": "fb105cc7d5a938237460c580e4caf993a25a2c02a650b48c57782811616f3957"
+    },
+    {
+      "path": "../../../../experiments/LEARNED-PATCH-GROUPS-20261122-001/LEARNED-PATCH-GROUPS-20261122-001-E001_groups/learner.py",
+      "sha256": "b288174511517fe44712ca03e0415fa0485abce145c180c1dda5bb4f81212945"
+    },
+    {
+      "path": "../../../../experiments/LEARNED-PATCH-GROUPS-20261122-001/LEARNED-PATCH-GROUPS-20261122-001-E001_groups/ordinary.py",
+      "sha256": "5a09cfecf63b35768a01fa0d2deb810740a3f49d8e239a9ffc9648e027c0b0c3"
+    },
+    {
+      "path": "../../../../experiments/LEARNED-PATCH-GROUPS-20261122-001/LEARNED-PATCH-GROUPS-20261122-001-E001_groups/panel.py",
+      "sha256": "48a6b7cb0ec867db4773d8b781e2411ab901c8c6dcb9ce902cf744b658fda81f"
+    },
+    {
+      "path": "../../../../experiments/LEARNED-PATCH-GROUPS-20261122-001/LEARNED-PATCH-GROUPS-20261122-001-E001_groups/panel/manifest.json",
+      "sha256": "a450c4793cbac6725aaa2efec8553e9bbab044d4a091b51bbcf23df3cc084013"
+    },
+    {
+      "path": "../../../../experiments/LEARNED-PATCH-GROUPS-20261122-001/LEARNED-PATCH-GROUPS-20261122-001-E001_groups/panel/queries.jsonl",
+      "sha256": "db76bc20bec41935e65c51ccfc02e00db4b608f5170e3ce463d8a94f8f9bbd70"
+    },
+    {
+      "path": "../../../../experiments/LEARNED-PATCH-GROUPS-20261122-001/LEARNED-PATCH-GROUPS-20261122-001-E001_groups/panel/scorer_key.jsonl",
+      "sha256": "d13000ac940539b2d94238ff4ea899d8c95b23693b6dca0975af0d4ed6b3d876"
+    },
+    {
+      "path": "../../../../experiments/LEARNED-PATCH-GROUPS-20261122-001/LEARNED-PATCH-GROUPS-20261122-001-E001_groups/panel/train.jsonl",
+      "sha256": "de105f38fbd599d53ae8a69993dc8ad712b80c844be13054805553ba52946d34"
+    },
+    {
+      "path": "../../../../experiments/LEARNED-PATCH-GROUPS-20261122-001/LEARNED-PATCH-GROUPS-20261122-001-E001_groups/panel/training_key.jsonl",
+      "sha256": "642ee2dba0a23e1617e035eb57de1aab1c84bb9f258c81b51134946f928dca00"
+    },
+    {
+      "path": "../../../../experiments/LEARNED-PATCH-GROUPS-20261122-001/LEARNED-PATCH-GROUPS-20261122-001-E001_groups/study.py",
+      "sha256": "749fc5685e745b05f81bca667025ffe02c04500bfcd6c53c1ed05b6d4605c7f3"
+    },
+    {
+      "path": "../../../../experiments/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/learner.py",
+      "sha256": "d6ba981be69486f6c1fca16e1d55c520478f2eba438228746364cc0c3a364145"
+    },
+    {
+      "path": "../../../../experiments/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/panel.py",
+      "sha256": "cbe71eaae30b9f69bf54353f64cc236c6ef13bf7cb752d4605ad1ca4516c411b"
+    },
+    {
+      "path": "../../../../experiments/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/panel/queries.jsonl",
+      "sha256": "52594f1b1ffcbbb94c13c605a46988689d320e2a777ef73a54b1626933f6bcd9"
+    },
+    {
+      "path": "../../../../experiments/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/panel/train.jsonl",
+      "sha256": "68ee66a52191de03bcdf4782c3d99a77aa8094417b1c69a4abc5cd6b123ffe65"
+    },
+    {
+      "path": "../../../../experiments/VARIED-LETTER-DRAWINGS-20261122-001/VARIED-LETTER-DRAWINGS-20261122-001-E001_drawings/diagnostics.py",
+      "sha256": "c3b26aab4c0d96a8f01872d65bece2d258c1be2aff64349f723afd0dfea0345d"
+    },
+    {
+      "path": "../../../../experiments/VARIED-LETTER-DRAWINGS-20261122-001/VARIED-LETTER-DRAWINGS-20261122-001-E001_drawings/identity.json",
+      "sha256": "0cdd25695e2433576693acc90c16e2eb42302e6ac782b28155788e6f86c49169"
+    },
+    {
+      "path": "../../../../experiments/VARIED-LETTER-DRAWINGS-20261122-001/VARIED-LETTER-DRAWINGS-20261122-001-E001_drawings/panel.py",
+      "sha256": "5071f100d6e6696f0c71681b06f93ed20812e0d15e6ca9cc7d6afcc38410d281"
+    },
+    {
+      "path": "../../../../experiments/VARIED-LETTER-DRAWINGS-20261122-001/VARIED-LETTER-DRAWINGS-20261122-001-E001_drawings/panel/manifest.json",
+      "sha256": "b43949edd096991ec3bed12a91fa4069b6545a47f28c71f520b478da603e3141"
+    },
+    {
+      "path": "../../../../experiments/VARIED-LETTER-DRAWINGS-20261122-001/VARIED-LETTER-DRAWINGS-20261122-001-E001_drawings/panel/queries.jsonl",
+      "sha256": "5bbf9a27867f9bb479a02b2e069758c4da2c4839576fffd26953c0c5caa1bc58"
+    },
+    {
+      "path": "../../../../experiments/VARIED-LETTER-DRAWINGS-20261122-001/VARIED-LETTER-DRAWINGS-20261122-001-E001_drawings/panel/scorer_key.jsonl",
+      "sha256": "d0328fcf97df0e39c584002ee8331307f3bbbc8d69bec22b8d861876dca543a7"
+    },
+    {
+      "path": "../../../../experiments/VARIED-LETTER-DRAWINGS-20261122-001/VARIED-LETTER-DRAWINGS-20261122-001-E001_drawings/panel/train_narrow.jsonl",
+      "sha256": "de105f38fbd599d53ae8a69993dc8ad712b80c844be13054805553ba52946d34"
+    },
+    {
+      "path": "../../../../experiments/VARIED-LETTER-DRAWINGS-20261122-001/VARIED-LETTER-DRAWINGS-20261122-001-E001_drawings/panel/train_varied.jsonl",
+      "sha256": "93e18b6c560952fe54aa1aa240c7db9b9deb25710d5cfadaf5c69ee40daa1be1"
+    },
+    {
+      "path": "../../../../experiments/VARIED-LETTER-DRAWINGS-20261122-001/VARIED-LETTER-DRAWINGS-20261122-001-E001_drawings/panel/training_key_narrow.jsonl",
+      "sha256": "aa6e578f222835631f6bc3a735b72758daf36562cf0fbfe7ee107dd96517d2f1"
+    },
+    {
+      "path": "../../../../experiments/VARIED-LETTER-DRAWINGS-20261122-001/VARIED-LETTER-DRAWINGS-20261122-001-E001_drawings/panel/training_key_varied.jsonl",
+      "sha256": "5a09eae8dd63aa8a24c27a2a750a0998c6a2aa55df7be65ddd9062a0b85a9dba"
+    },
+    {
+      "path": "../../../../experiments/VARIED-LETTER-DRAWINGS-20261122-001/VARIED-LETTER-DRAWINGS-20261122-001-E001_drawings/scoring.py",
+      "sha256": "28c985fd691332b81781d1e1b8ccc6243c9e660d003ea202f239bb000c06b108"
+    },
+    {
+      "path": "../../../../experiments/VARIED-LETTER-DRAWINGS-20261122-001/VARIED-LETTER-DRAWINGS-20261122-001-E001_drawings/study.py",
+      "sha256": "3da5d429ac99d5e7c89698142eb420b8d05efb50b305022305fef7706fe75aee"
+    },
+    {
+      "path": "../../../LEARNED-PATCH-GROUPS-20261122-001/audit/group_oracle.py",
+      "sha256": "5c416ed80d40f52004097fdf0b4d34d6937150c298b94589e2e87f7dc69f0d9c"
+    },
+    {
+      "path": "../../../LEARNED-PATCH-GROUPS-20261122-001/audit/pixel_counts.py",
+      "sha256": "03197115b37c1463bc38a45fd85887a3999b024b974faed6782dc604c0915d46"
+    },
+    {
+      "path": "../../../LEARNED-PATCH-GROUPS-20261122-001/audit/postscore_rank_support.json",
+      "sha256": "930d11c11920213b26ccdb00236446743945a3b68cf986e4aab21f9b50621f91"
+    },
+    {
+      "path": "../../../LEARNED-PATCH-GROUPS-20261122-001/audit/subsets.py",
+      "sha256": "8c1cd4b153660982c9176747ede980afddd837f8cedc1ba51861dae39eb7f266"
+    },
+    {
+      "path": "../../advisor.json",
+      "sha256": "aab84a5d4247e00cc90e647059521a7afdea91718fad4772487bf2d13ae466af"
+    },
+    {
+      "path": "../../design_review/pre_freeze_advice.md",
+      "sha256": "4f616543896577e47da63ff0857317e3aa69e8b53864a1d4582a04505832ce12"
+    },
+    {
+      "path": "../../inspect_groups.py",
+      "sha256": "b88a9216c02549950c4d494274bae21ffa44d0c629afb14a9d74d71c94af561e"
+    },
+    {
+      "path": "../../preregistration.md",
+      "sha256": "bf1be6d44e37535a400959084803b9ddd5e77b61b50d9f9b042b14a76f65e490"
+    },
+    {
+      "path": "../attack_plan.md",
+      "sha256": "ccf563f76466a895091d568ef38b08c5754a3e2c79a454ee0701ec0a6abebeb1"
+    },
+    {
+      "path": "../reference.py",
+      "sha256": "0a3722b2ad53483e29d96df6d4cd88820cf8a8c47fea37c227ffad0515559b27"
+    },
+    {
+      "path": "../panel_audit.py",
+      "sha256": "7661c48754ae6b61353d2e514d934a6348f15cfc1ebd75d91a6595f9b89fd7f4"
+    },
+    {
+      "path": "../panel_audit.json",
+      "sha256": "8f923e031f0c68bb07ed095e1a908fb2193f9392b86312208a6ae032b8608b62"
+    },
+    {
+      "path": "../phase_io.py",
+      "sha256": "fcf61d71a0951e0d7a7615badb185f6eaab23ef9b3ba13bf1c0d19aeb052e364"
+    },
+    {
+      "path": "../phase_io.json",
+      "sha256": "bc27b821b5e2c7a8e9035d3eda3da2bfe6cc666caafee29752dc0b60ee3b4c7d"
+    },
+    {
+      "path": "../unchanged_reader_fixtures.json",
+      "sha256": "9a27cbb68bcb4b59a15470cfb4f47f0d9d4aac4f33f6029d5b63deeaf3ff956f"
+    },
+    {
+      "path": "../../../LEARNED-PATCH-GROUPS-20261122-001/audit/replay.py",
+      "sha256": "325ee31692c7fdcb183cc0b41421f8b73fef159b1a1f59d4f9bf4e606babf32c"
+    },
+    {
+      "path": "../../../LEARNED-PATCH-GROUPS-20261122-001/audit/panel_census.py",
+      "sha256": "7639c2bea1b90504163672c676e3221799de0007251e0e92e58cda82d2edf1cf"
+    },
+    {
+      "path": "../../../LEARNED-PATCH-GROUPS-20261122-001/audit/synthetic.py",
+      "sha256": "aab364668aa6b410db62f5724788d2ff48ef4d6af4c0f1c64d20be68dd4abef3"
+    },
+    {
+      "path": "../../../LEARNED-PATCH-GROUPS-20261122-001/audit/R2/red_team_report.json",
+      "sha256": "ca01ea92abf0abdce7d8bc61e63dfee984accf3eb2b7b9e3b483781e9ffe6d9f"
+    }
+  ],
+  "nonclaims": [
+    "The gate authorizes a single sealed run. No fresh learner result was computed for this gate.",
+    "Stroke grammar, addressing, histogram, ranking and votes are supplied.",
+    "The fixed paired acquisition supports a finite comparison. The scientific referee remains separate from this in-task audit."
+  ],
+  "required_actions": [],
+  "reviewer_independence": "separate_implementation_lane",
+  "schema_version": 1,
+  "tier": "R1",
+  "verdict": "PASS"
+}

@@ -254,6 +254,7 @@ evidence: results and their status come from the records each entry links.
 | [A196](#a196--finite-intrinsic-readings-for-recognizing-four-recorded-constructions) | Finite intrinsic readings for recognizing four recorded constructions | scaffold | Assumed |
 | [A197](#a197--count-newly-reproduced-later-behaviors-under-a-charged-search) | Count newly reproduced later behaviors under a charged search | scaffold | Assumed |
 | [A198](#a198--give-a-moving-reader-rations-energy-and-a-local-food-bit) | Give a moving reader rations, energy and a local food bit | scaffold | Assumed |
+| [A199](#a199--remember-a-consumed-ration-by-the-feeders-public-menu) | Remember a consumed ration by the feeder's public menu | scaffold | Assumed |
 
 ## Entries
 
@@ -4664,3 +4665,14 @@ evidence: results and their status come from the records each entry links.
 - **Challenge.** Blind the sensor, compare a blind bot that moves first then tries one meal per arrival, compare the sensing script and learned policy on exactly matched starts, and recode the names. Other energy prices, ration placement and growth schedules would define different games.
 - **History.**
   - 2026-11-21 · Opened for the [seeded survival game](../research/KNOT-RATION-GAME-20261121-001/preregistration.md).
+
+### A199 · Remember a consumed ration by the feeder's public menu
+
+**Assumed** · 2026-11-21 · scaffold
+
+- **Statement.** Every newly grown feeder carries a permanent local signal and one consumable ration. The bot has one action distinction. Its off value uses the ordinary game movement control. Its observations include energy, the local menu, previous action and realized outward ports. The preparation weights, renamings, finite action-prefix census and disjoint survival sample are supplied. A separate prepared memory knot, action knot and coupling knot receive the observer's public bits by a supplied writer and schedule. The memory stores the last successful meal's one-control or multiple-control type. The readout and actuator reset are supplied. The action bit is read from the action knot.
+- **Why.** Removing the direct ration signal makes some current visits look identical. A reciprocal exchange before the game advances can test whether a particular physical memory changes the next actual action.
+- **Rests on it.** Information certificates use the public rules for birth, consumption, retained contacts and energy. Correct guesses and lifetimes depend on this menu address, the movement tie, energy costs and the finite source weighting. The world and every controlled keeper exchange are checked under both laws.
+- **Challenge.** Compare immediate and complete public records including equal complete histories with opposite stock. Retain repeated menu types, failed eats, refusals, order variations and growth stalls. Sham, equal-memory, disconnected writer and disconnected readout controls compare the same prepared game. Ordinary growth does not by itself install the keeper or its coupling.
+- **History.**
+  - 2026-11-21 · Opened for [the feeder memory test](../research/FEEDER-MEMORY-20261121-001/preregistration.md) as a change to A198's supplied sensor.

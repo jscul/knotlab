@@ -2612,11 +2612,107 @@ its readings is a theorem.
 
 ## Chapter 8. How a law grows
 
-This chapter states in plain words the picture that the growth studies of 17
-to 19 November 2026 support. A law is applied to a few knots that share
-distinctions and left to build. The chapter asks what kinds of growth come
-out, how a growth that blows up is to be read, and how much of what grows its
-distances carry. It builds on lessons 2.4 (distance), 4.6 (dimension, read
+**What the program is building.** On 23 November 2026 the owner was asked
+whether the program looks for purely Boolean pieces that, combined, could
+explain how atoms interact or why gravity exists. The answer is a fair
+introduction to the program and to this chapter: "The combined part is the
+challenging part because you need to know how the emergent thing can be
+effectively joined with other things (think joining the X axis and Y axis on
+a cartesian plane). These are like rules. But you also need to take 'logic'
+to infinities, so there's a statistical/irrational part of it." The owner then
+showed pictures of growth like the ones the web edition of this guide shows
+under this introduction. The paragraphs below take the owner's points in turn.
+They are the owner's picture, an interpretation, except where a result is
+cited.
+
+**A structure relative to itself.** A start is a few knots that share
+distinctions (lesson 8.1). One fixed rule, applied everywhere at once in
+rounds, adds a knot wherever open distinctions can join, and nothing else
+decides where knots go. Of the growing eddy in one picture the owner said:
+"It's a spatial structure, but not yet like a circle or ring in 'space'. Like
+we're spatial creatures so we think of these things in 'space', but it's not
+really, it's just a structure that's relative to itself." What a growth holds
+is which knots share which distinctions. The levels and bearings of the
+pictures are drawing choices, and the distances inside a growth are bond
+distances counted from its own knots (lesson 2.4), not lengths in a space
+brought from outside. Building space out of such counts is the program's goal,
+not its starting point.
+
+**Some growth ends, some never does.** "Some growth is infinite, and some is
+deterministic, like this cube." One knot with three open distinctions closes
+after three rounds into eight knots, each sharing its three distinctions with
+three others; the pictures draw them at the corners of a cube (the
+literature's 3-cube) (proved, refereed,
+[FRESH-COUNT-20261118-001](research/FRESH-COUNT-20261118-001/fresh_count.md)).
+Two three-place knots that share a distinction never stop: the knots made by
+round t number about t², a count of dimension two in the sense of lesson 8.2
+(proved, refereed,
+[FIRST-KNOT-20261118-001](research/FIRST-KNOT-20261118-001/first_knot.md)).
+Every growth here is fixed by its start and the rule, the endless ones as much
+as the one that closes. Chance enters through the start alone: nothing chooses
+a meeting pattern, so a start is one sample (lesson 7.3).
+
+**Joining is the hard part.** The owner's two axes are a question about
+joining. One axis can grow from rules with nothing drawn: a rule that grows
+only at knots holding two loose ends makes an endless chain, the literature's
+number line (lesson 4.6, proved). Two endless chains in one connected part of
+a growth give dimension two (lesson 8.2, proved, refereed). But a join can also
+make what neither part has: two rings joined together grow at a rate of a new
+kind, not at the product of their own (lesson 8.2). And no tested law yet
+chooses its own dimension; every board of dimension two measured so far was
+given its neighbours in advance (lesson 4.6, reading).
+
+**Taking logic to infinity.** An endless growth is read the way any unlimited
+structure is: by its rates, and by samples. The rates are irrational numbers
+fixed by small equations: the golden ratio, 1.618…, for the eddy below;
+1.0970, the root above one of x⁸ = x + 1, for a ring of seven with a hung
+knot; 2.3830 for an eleven-knot start built around two dead knots (lesson
+8.2). That such counts blow up is expected rather than a fault, and the
+unlimited structure is read by sampling it (assumption A110, lesson 8.3). A
+claim about what growth typically does names its weighting, the chances its
+random process gives each start (lesson 7.3). That is the statistical part.
+
+**The golden-ratio eddy.** Five knots in a ring, each keeping one leftover
+distinction, make 5, 10, 15, 25, 40, 65, … knots in successive rounds: each
+round as many as the two before it together, five times the Fibonacci
+numbers. So the count grows by the golden ratio a round, and no ring of live
+knots within five places grows faster (proved, refereed,
+[RING-CORES-20261119-001](research/RING-CORES-20261119-001/ring_cores.md)).
+The owner wondered where such a structure might serve: "if you 'met' this
+logical structure with something like a plant's DNA sequence and physical
+biology, it could use this for efficiency in growth." The golden ratio does
+turn up in the literature on how plants set their leaves (phyllotaxis). The
+link is a speculation outside the program: nothing here tests it, and the
+guide makes no claim about living things.
+
+**Starts without symmetry.** "And some structures are asymmetrical, like knots
+on a branch." A start's symmetries, the renamings of its knots that leave it
+unchanged, carry through every round, because the rule reads only which knots
+share which distinctions. The pictures of a lone knot, two touching knots and
+the eddy are symmetric for that reason. A ring of seven knots with an eighth
+hung from one of them is kept only by the renaming that reverses the ring, and
+adding one leftover distinction two knots along gives a start that no renaming
+keeps; both are drawn lopsided. Yet on a ring the rate depends only on how many
+hung knots and leftover distinctions it carries, not on where they sit (proved,
+refereed, RING-CORES). Moving that leftover distinction one knot further
+changes the first rounds and not the rate, 1.1903 a round (computed from the
+proved formula).
+
+**Quantum, and bases.** "And I think some growth is quantum, but I'm not quite
+there yet on that one." Lesson 8.5 sets out how far the likeness to quantum
+mechanics goes: it is one of structure, not of physics, and the question is
+open. The owner's bet for the whole program is the last step: "My bet is that
+there's some way to combine several different starting structures, meet them
+using some sort of meeting pattern to create base-realities (our reality, a
+number line, Cartesian plane)." In the guide's words the aim is a base built
+from knots alone, in which space, distance and dimension are earned from
+counts rather than assumed. No such base has been built yet.
+
+The lessons below state in plain words the picture that the growth studies of
+17 to 19 November 2026 support. A law is applied to a few knots that share
+distinctions and left to build. The lessons ask what kinds of growth come out,
+how a growth that blows up is to be read, and how much of what grows its
+distances carry. They build on lessons 2.4 (distance), 4.6 (dimension, read
 from how fast balls grow) and 7.3 (samples and weightings). Each claim says
 whether it is proved, computed or open, and a result is given as settled only
 once its referee has confirmed it.

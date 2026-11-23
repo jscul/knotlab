@@ -3891,6 +3891,7 @@ evidence: results and their status come from the records each entry links.
 - **Rests on it.** The addressed whole-stage funding comparison. The observer supplies the setting and the reading. [Frozen definitions](../research/WHOLE-STAGE-SETTINGS-20261120-001/preregistration.md).
 - **Challenge.** Compare fixed addresses with the ordinary local instruction to supply the visibly deficient holder. The signalling capacities of these two input interfaces can differ.
 - **History.**
+  - 2026-11-23 · Compared fixed addresses with locally informed edits under ordinary growth. A choice sensitive to an old mark exposes a signal even without knowing its holder’s readiness. [Frozen study](../research/LOCAL-EDIT-POLICIES-20261123-001/preregistration.md).
   - 2026-11-20 · Recorded for the ordinary two-setting study, G18. Independent referee pending.
 
 ### A137 · Independent preparation choices may set the ordinary connections between detector marks
@@ -3913,6 +3914,7 @@ evidence: results and their status come from the records each entry links.
 - **Rests on it.** The zero total variation verdict on the declared endpoint data. [Frozen definitions](../research/WHOLE-STAGE-SETTINGS-20261120-001/preregistration.md).
 - **Challenge.** Reveal the preparation, enlarge the observation to include an internal interchange, or allow the holder choices to depend on known local readiness. Any fixed finite observation range may be tested with longer unchanged connections.
 - **History.**
+  - 2026-11-23 · Compared a blind controller, old mark, detector triple, the exposed guard and the two holders that reveal readiness. The full local preparation can hide the deficit and still support a signal from an old mark. [Frozen study](../research/LOCAL-EDIT-POLICIES-20261123-001/preregistration.md).
   - 2026-11-20 · Recorded for the ordinary two-setting study, G18. Independent referee pending.
 
 ### A139 · An added loose distinction can carry the pre-settings state through a local edit

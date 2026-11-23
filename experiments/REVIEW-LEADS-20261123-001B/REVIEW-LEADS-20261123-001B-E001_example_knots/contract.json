@@ -1,0 +1,21 @@
+{
+ "artifact_id": "REVIEW-LEADS-20261123-001B-E001",
+ "kind": "experiment",
+ "branch": "training",
+ "evidence_stage": "exploratory",
+ "status": "Frozen",
+ "question": "In the letter and feeder studies an ordinary program learned and the knots stored its numbers. Here the rewarded examples are the knots: the memory is a set of two-valued distinctions, each rewarded image adds one knot over them, and a new image is answered only when the knots force its answer. Does such a learner answer correctly where it answers, does it know when its distinctions are not enough, and does the knot law matter?",
+ "inputs": "The recorded structures, engines and panels named in the pre-registration; the seeds it fixes.",
+ "forbidden_inputs": "Any definition changed after a value is seen; any outcome of this study before the freeze; for the learner, labels of test items, orientation, letter templates and the three-lit-pixel clue.",
+ "primary_observable": "The tables named under 'Runs and stop rule' of the pre-registration.",
+ "comparators_or_controls": "The gates and controls of the predictions table (row G) and the control arms named in the definitions.",
+ "resource_budget": "Each run under ten minutes and 12 GB on one CPU process; no long-running job.",
+ "first_executable_signal": "The gate row G of the predictions table.",
+ "decision_rule": "Each prediction is judged by its 'Fails when' column; nothing is tuned after values are seen.",
+ "stop_rule": "One script builds and hashes the panel; one runs every learner and arm once and writes right, wrong and unanswered counts by arm, learner, condition, letter and turn, with coverage. The study stops when every arm is scored once.",
+ "nonclaims": "An exploratory study on named populations and classes. A finite census proves no all-size statement. Every reading, weighting and start named under 'What is supplied' is a scaffold.",
+ "preregistration": "research/REVIEW-LEADS-20261123-001B/preregistration.md",
+ "preregistration_sha256": "f5e0c8132082da0efa0255a2593b725e812fe612e346915799cffa85e3eef94c",
+ "design_advisor": "research/REVIEW-LEADS-20261123-001/advisor/answer.json",
+ "frozen_utc": "2026-11-23T20:04:29.467434+00:00"
+}

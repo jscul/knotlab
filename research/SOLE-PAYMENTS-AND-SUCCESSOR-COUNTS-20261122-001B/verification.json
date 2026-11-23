@@ -1,0 +1,847 @@
+{
+  "frozen_sha256": "da74be90b918eb5cff969aaa999f5412e8311dc45a40a21c040a6203dfcfdbf7",
+  "source": "artifacts/QUIET-RETURNS-AND-SIGNAL-FRACTIONS-20261122-001B/QUIET-RETURNS-AND-SIGNAL-FRACTIONS-20261122-001B-E001_receipts/results.json",
+  "source_sha256": "b5c63d798dd3ac89a65ef6a1056bbaabcbd37b812aa5ca97195b7f017591a228",
+  "laws": {
+    "nae": {
+      "complete_fresh_bank_support": {
+        "00": [
+          "01",
+          "10",
+          "11"
+        ],
+        "01": [
+          "00",
+          "01",
+          "10",
+          "11"
+        ],
+        "10": [
+          "00",
+          "01",
+          "10",
+          "11"
+        ],
+        "11": [
+          "00",
+          "01",
+          "10"
+        ]
+      },
+      "next_payment_of_first_return": {
+        "quiet_parent": {
+          "fresh": [
+            66,
+            67
+          ],
+          "knot": 29,
+          "paid": [
+            55,
+            57
+          ],
+          "parents": [
+            23,
+            24
+          ],
+          "paid_values": "00",
+          "fresh_values": "11"
+        },
+        "quiet_child": {
+          "fresh": [
+            76,
+            77
+          ],
+          "knot": 34,
+          "paid": [
+            65,
+            67
+          ],
+          "parents": [
+            28,
+            29
+          ],
+          "paid_values": "11",
+          "fresh_values": "00"
+        },
+        "one_step_isomorphism_mark_swaps": [
+          [
+            57,
+            66
+          ]
+        ],
+        "holders_in_one_step": [
+          28,
+          29,
+          34
+        ],
+        "earlier_inputs_recognized_at_two_steps": [
+          55,
+          57
+        ],
+        "branches": {
+          "other_child": {
+            "parent": {
+              "fresh": [
+                66,
+                67
+              ],
+              "knot": 29,
+              "paid": [
+                55,
+                57
+              ],
+              "parents": [
+                23,
+                24
+              ],
+              "paid_values": "01",
+              "fresh_values": "01"
+            },
+            "outside_payer": {
+              "fresh": [
+                64,
+                65
+              ],
+              "knot": 28,
+              "paid": [
+                53,
+                56
+              ],
+              "parents": [
+                22,
+                24
+              ],
+              "paid_values": "00",
+              "fresh_values": "11"
+            },
+            "next_enrolled": {
+              "fresh": [
+                76,
+                77
+              ],
+              "knot": 34,
+              "paid": [
+                65,
+                67
+              ],
+              "parents": [
+                28,
+                29
+              ],
+              "paid_values": "11",
+              "fresh_values": "00"
+            },
+            "both_actual_payments": [
+              {
+                "to": 33,
+                "mark": 66,
+                "value": "0"
+              },
+              {
+                "to": 34,
+                "mark": 67,
+                "value": "1"
+              }
+            ],
+            "whole_words_at_cuts_4_5_6": [
+              "1011110000000000001111111111000000000011111111110000000001",
+              "10111100000000000011111111110000000000111111111100000000011111111101",
+              "101111000000000000111111111100000000001111111111000000000111111111010000000000"
+            ]
+          },
+          "enrolled_child": {
+            "parent": {
+              "fresh": [
+                66,
+                67
+              ],
+              "knot": 29,
+              "paid": [
+                55,
+                57
+              ],
+              "parents": [
+                23,
+                24
+              ],
+              "paid_values": "01",
+              "fresh_values": "10"
+            },
+            "outside_payer": {
+              "fresh": [
+                64,
+                65
+              ],
+              "knot": 28,
+              "paid": [
+                53,
+                56
+              ],
+              "parents": [
+                22,
+                24
+              ],
+              "paid_values": "00",
+              "fresh_values": "11"
+            },
+            "next_enrolled": {
+              "fresh": [
+                76,
+                77
+              ],
+              "knot": 34,
+              "paid": [
+                65,
+                67
+              ],
+              "parents": [
+                28,
+                29
+              ],
+              "paid_values": "10",
+              "fresh_values": "00"
+            },
+            "both_actual_payments": [
+              {
+                "to": 33,
+                "mark": 66,
+                "value": "1"
+              },
+              {
+                "to": 34,
+                "mark": 67,
+                "value": "0"
+              }
+            ],
+            "whole_words_at_cuts_4_5_6": [
+              "1011110000000000001111111111000000000011111111110000000001",
+              "10111100000000000011111111110000000000111111111100000000011111111110",
+              "101111000000000000111111111100000000001111111111000000000111111111100000000000"
+            ]
+          }
+        }
+      },
+      "identical_later_receipt_and_next_payment": {
+        "recovered_streams_through_six_returns": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "whole_present_recount_after_renaming": true,
+        "permanently_different_old_marks": {
+          "57": [
+            24,
+            29
+          ]
+        },
+        "first_common_fresh_cohort_after_first_signal": 5,
+        "matched_receipts": {
+          "10": {
+            "same_complete_receipt": {
+              "fresh": [
+                108,
+                109
+              ],
+              "knot": 50,
+              "paid": [
+                98,
+                100
+              ],
+              "parents": [
+                45,
+                46
+              ],
+              "paid_values": "11",
+              "fresh_values": "00"
+            },
+            "first_contact_budget_with_named_difference": 5,
+            "whole_presentation_signal_totals": [
+              0,
+              1
+            ],
+            "two_payments_identical_in_both_histories": [
+              {
+                "to": 55,
+                "mark": 108,
+                "value": "0"
+              },
+              {
+                "to": 56,
+                "mark": 109,
+                "value": "0"
+              }
+            ]
+          },
+          "11": {
+            "same_complete_receipt": {
+              "fresh": [
+                118,
+                119
+              ],
+              "knot": 55,
+              "paid": [
+                108,
+                110
+              ],
+              "parents": [
+                50,
+                51
+              ],
+              "paid_values": "00",
+              "fresh_values": "11"
+            },
+            "first_contact_budget_with_named_difference": 6,
+            "whole_presentation_signal_totals": [
+              0,
+              1
+            ]
+          },
+          "30": {
+            "same_complete_receipt": {
+              "fresh": [
+                308,
+                309
+              ],
+              "knot": 150,
+              "paid": [
+                298,
+                300
+              ],
+              "parents": [
+                145,
+                146
+              ],
+              "paid_values": "11",
+              "fresh_values": "00"
+            },
+            "first_contact_budget_with_named_difference": 25,
+            "whole_presentation_signal_totals": [
+              0,
+              1
+            ]
+          }
+        }
+      },
+      "several_early_signals": {
+        "all_three_return_patterns": [
+          {
+            "earlier_signals": [
+              0,
+              0,
+              0
+            ],
+            "sum": 0
+          },
+          {
+            "earlier_signals": [
+              0,
+              0,
+              1
+            ],
+            "sum": 1
+          },
+          {
+            "earlier_signals": [
+              0,
+              1,
+              0
+            ],
+            "sum": 1
+          },
+          {
+            "earlier_signals": [
+              0,
+              1,
+              1
+            ],
+            "sum": 2
+          },
+          {
+            "earlier_signals": [
+              1,
+              0,
+              0
+            ],
+            "sum": 1
+          },
+          {
+            "earlier_signals": [
+              1,
+              0,
+              1
+            ],
+            "sum": 2
+          },
+          {
+            "earlier_signals": [
+              1,
+              1,
+              0
+            ],
+            "sum": 2
+          },
+          {
+            "earlier_signals": [
+              1,
+              1,
+              1
+            ],
+            "sum": 3
+          }
+        ],
+        "identical_fourth_return_and_next_child_within_three_steps": true
+      },
+      "deliberate_writing_control": {
+        "requested_test_stream": [
+          1,
+          1,
+          0,
+          1,
+          0,
+          1
+        ],
+        "actual_signals": 4,
+        "consecutive_deliveries_checked_through_handoff": 30,
+        "writer_supplied_phase_roles_and_prospective_binding": true
+      }
+    },
+    "parity": {
+      "complete_fresh_bank_support": {
+        "00": [
+          "00",
+          "11"
+        ],
+        "01": [
+          "01",
+          "10"
+        ],
+        "10": [
+          "01",
+          "10"
+        ],
+        "11": [
+          "00",
+          "11"
+        ]
+      },
+      "next_payment_of_first_return": {
+        "quiet_parent": {
+          "fresh": [
+            66,
+            67
+          ],
+          "knot": 29,
+          "paid": [
+            55,
+            57
+          ],
+          "parents": [
+            23,
+            24
+          ],
+          "paid_values": "00",
+          "fresh_values": "11"
+        },
+        "quiet_child": {
+          "fresh": [
+            76,
+            77
+          ],
+          "knot": 34,
+          "paid": [
+            65,
+            67
+          ],
+          "parents": [
+            28,
+            29
+          ],
+          "paid_values": "11",
+          "fresh_values": "00"
+        },
+        "one_step_isomorphism_mark_swaps": [
+          [
+            57,
+            66
+          ],
+          [
+            56,
+            64
+          ]
+        ],
+        "holders_in_one_step": [
+          28,
+          29,
+          34
+        ],
+        "earlier_inputs_recognized_at_two_steps": [
+          55,
+          57
+        ],
+        "branches": {
+          "other_child": {
+            "parent": {
+              "fresh": [
+                66,
+                67
+              ],
+              "knot": 29,
+              "paid": [
+                55,
+                57
+              ],
+              "parents": [
+                23,
+                24
+              ],
+              "paid_values": "01",
+              "fresh_values": "01"
+            },
+            "outside_payer": {
+              "fresh": [
+                64,
+                65
+              ],
+              "knot": 28,
+              "paid": [
+                53,
+                56
+              ],
+              "parents": [
+                22,
+                24
+              ],
+              "paid_values": "01",
+              "fresh_values": "01"
+            },
+            "next_enrolled": {
+              "fresh": [
+                76,
+                77
+              ],
+              "knot": 34,
+              "paid": [
+                65,
+                67
+              ],
+              "parents": [
+                28,
+                29
+              ],
+              "paid_values": "11",
+              "fresh_values": "00"
+            },
+            "both_actual_payments": [
+              {
+                "to": 33,
+                "mark": 66,
+                "value": "0"
+              },
+              {
+                "to": 34,
+                "mark": 67,
+                "value": "1"
+              }
+            ],
+            "whole_words_at_cuts_4_5_6": [
+              "1011110000000000001111111111000000000011111111110000000011",
+              "10111100000000000011111111110000000000111111111100000000111111110101",
+              "101111000000000000111111111100000000001111111111000000001111111101010000010100"
+            ]
+          },
+          "enrolled_child": {
+            "parent": {
+              "fresh": [
+                66,
+                67
+              ],
+              "knot": 29,
+              "paid": [
+                55,
+                57
+              ],
+              "parents": [
+                23,
+                24
+              ],
+              "paid_values": "01",
+              "fresh_values": "10"
+            },
+            "outside_payer": {
+              "fresh": [
+                64,
+                65
+              ],
+              "knot": 28,
+              "paid": [
+                53,
+                56
+              ],
+              "parents": [
+                22,
+                24
+              ],
+              "paid_values": "01",
+              "fresh_values": "01"
+            },
+            "next_enrolled": {
+              "fresh": [
+                76,
+                77
+              ],
+              "knot": 34,
+              "paid": [
+                65,
+                67
+              ],
+              "parents": [
+                28,
+                29
+              ],
+              "paid_values": "10",
+              "fresh_values": "01"
+            },
+            "both_actual_payments": [
+              {
+                "to": 33,
+                "mark": 66,
+                "value": "1"
+              },
+              {
+                "to": 34,
+                "mark": 67,
+                "value": "0"
+              }
+            ],
+            "whole_words_at_cuts_4_5_6": [
+              "1011110000000000001111111111000000000011111111110000000011",
+              "10111100000000000011111111110000000000111111111100000000111111110110",
+              "101111000000000000111111111100000000001111111111000000001111111101100000010001"
+            ]
+          }
+        }
+      },
+      "identical_later_receipt_and_next_payment": {
+        "recovered_streams_through_six_returns": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "whole_present_recount_after_renaming": true,
+        "permanently_different_old_marks": {
+          "56": [
+            24,
+            28
+          ],
+          "57": [
+            24,
+            29
+          ],
+          "65": [
+            28,
+            34
+          ],
+          "67": [
+            29,
+            34
+          ]
+        },
+        "first_common_fresh_cohort_after_first_signal": 6,
+        "matched_receipts": {
+          "10": {
+            "same_complete_receipt": {
+              "fresh": [
+                108,
+                109
+              ],
+              "knot": 50,
+              "paid": [
+                98,
+                100
+              ],
+              "parents": [
+                45,
+                46
+              ],
+              "paid_values": "11",
+              "fresh_values": "00"
+            },
+            "first_contact_budget_with_named_difference": 4,
+            "whole_presentation_signal_totals": [
+              0,
+              1
+            ],
+            "two_payments_identical_in_both_histories": [
+              {
+                "to": 55,
+                "mark": 108,
+                "value": "0"
+              },
+              {
+                "to": 56,
+                "mark": 109,
+                "value": "0"
+              }
+            ]
+          },
+          "11": {
+            "same_complete_receipt": {
+              "fresh": [
+                118,
+                119
+              ],
+              "knot": 55,
+              "paid": [
+                108,
+                110
+              ],
+              "parents": [
+                50,
+                51
+              ],
+              "paid_values": "00",
+              "fresh_values": "11"
+            },
+            "first_contact_budget_with_named_difference": 5,
+            "whole_presentation_signal_totals": [
+              0,
+              1
+            ]
+          },
+          "30": {
+            "same_complete_receipt": {
+              "fresh": [
+                308,
+                309
+              ],
+              "knot": 150,
+              "paid": [
+                298,
+                300
+              ],
+              "parents": [
+                145,
+                146
+              ],
+              "paid_values": "11",
+              "fresh_values": "00"
+            },
+            "first_contact_budget_with_named_difference": 24,
+            "whole_presentation_signal_totals": [
+              0,
+              1
+            ]
+          }
+        }
+      },
+      "several_early_signals": {
+        "all_three_return_patterns": [
+          {
+            "earlier_signals": [
+              0,
+              0,
+              0
+            ],
+            "sum": 0
+          },
+          {
+            "earlier_signals": [
+              0,
+              0,
+              1
+            ],
+            "sum": 1
+          },
+          {
+            "earlier_signals": [
+              0,
+              1,
+              0
+            ],
+            "sum": 1
+          },
+          {
+            "earlier_signals": [
+              0,
+              1,
+              1
+            ],
+            "sum": 2
+          },
+          {
+            "earlier_signals": [
+              1,
+              0,
+              0
+            ],
+            "sum": 1
+          },
+          {
+            "earlier_signals": [
+              1,
+              0,
+              1
+            ],
+            "sum": 2
+          },
+          {
+            "earlier_signals": [
+              1,
+              1,
+              0
+            ],
+            "sum": 2
+          },
+          {
+            "earlier_signals": [
+              1,
+              1,
+              1
+            ],
+            "sum": 3
+          }
+        ],
+        "identical_fourth_return_and_next_child_within_three_steps": true
+      },
+      "deliberate_writing_control": {
+        "requested_test_stream": [
+          1,
+          1,
+          0,
+          1,
+          0,
+          1
+        ],
+        "actual_signals": 4,
+        "consecutive_deliveries_checked_through_handoff": 30,
+        "writer_supplied_phase_roles_and_prospective_binding": true
+      }
+    }
+  }
+}

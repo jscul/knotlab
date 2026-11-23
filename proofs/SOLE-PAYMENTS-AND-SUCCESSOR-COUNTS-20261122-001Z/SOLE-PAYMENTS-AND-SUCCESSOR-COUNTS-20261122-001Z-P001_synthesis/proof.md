@@ -1,0 +1,3 @@
+# Two tests of one continuing receiver
+
+The [forced-payment study](../../SOLE-PAYMENTS-AND-SUCCESSOR-COUNTS-20261122-001A/SOLE-PAYMENTS-AND-SUCCESSOR-COUNTS-20261122-001A-P001_sole_payments/proof.md) and [successor-count study](../../SOLE-PAYMENTS-AND-SUCCESSOR-COUNTS-20261122-001B/SOLE-PAYMENTS-AND-SUCCESSOR-COUNTS-20261122-001B-P001_successor_tally/proof.md) support the [joint report](../../../research/SOLE-PAYMENTS-AND-SUCCESSOR-COUNTS-20261122-001/decision.md) and [referee handoffs](../../../research/SOLE-PAYMENTS-AND-SUCCESSOR-COUNTS-20261122-001/referee_handoff.md). This synthesis contributes zero new scientific claims.

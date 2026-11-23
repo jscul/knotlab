@@ -9,7 +9,7 @@
 | Not-all-equal | Signals through stalling | Fixed-address CHSH is **1.50000193028**. The largest complete-record change under the same compulsory edits is **0.0000160101**. Every stall counts under both laws. |
 | G18 · Comparing growth laws | Obstruction learned | When the local answer is its old bit on a common gain and zero on a stall, equal fixed-address gain probabilities turn any CHSH excess of δ into a signal of at least δ in **each direction**. |
 
-Parity attains the theorem’s bound. If the sender may withhold the spare, the other observer’s birth probability changes from 1/4 to zero under either law. Withholding and local information together raise the parity optimum to 3/8. [Proof and scope](https://github.com/jscul/knotlab/blob/main/proofs/LOCAL-EDIT-POLICIES-20261123-001A/LOCAL-EDIT-POLICIES-20261123-001A-P001_policy_test/proof.md)
+Parity attains the theorem’s bound. Its three perfect correlations also rule out a quantum realization of the measured fourth correlation. If the sender may withhold the spare, the other observer’s birth probability changes from 1/4 to zero under either law. Withholding and local information together raise the parity optimum to 3/8. [Proof and scope](https://github.com/jscul/knotlab/blob/main/proofs/LOCAL-EDIT-POLICIES-20261123-001A/LOCAL-EDIT-POLICIES-20261123-001A-P001_policy_test/proof.md)
 
 **Next step:** Research directions — No next action selected.
 
@@ -65,3 +65,33 @@ On the concealed-demand preparation, withholding the spare forces a stall. Compa
 A supplied control makes the remaining distinction precise. Conceal the two marked values until after the addresses and supply quantum-realizable conditional pair correlations (1, 1/2, 1/2, −1/2) on a funded trial. Mixing this branch with the common stall gives CHSH 17/8, including every trial. No compulsory local policy on the declared pre-edit information signals. The pair law and timing of disclosure were supplied. Giving either party the right to withhold its spare restores a readable funding signal of 1/4. Concealment of a shortage, concealment of an outcome and freedom to withhold are three separately tested choices. This study establishes an obstruction for the stated ordinary mechanism. [Exact control and quantum realization](../../proofs/LOCAL-EDIT-POLICIES-20261123-001A/LOCAL-EDIT-POLICIES-20261123-001A-P001_policy_test/proof.md)
 
 The four-correlation bound and the common joint-distribution criterion are established mathematics. Prior work on causal models also explains why an observed marginal equality can conceal causal dependence. This study adds an explicit ordinary edit, a sharp lower bound for the resulting message, and exact tests using everything available to each local controller. [Clauser, Horne, Shimony and Holt (1969)](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.23.880) · [Fine (1982)](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.48.291) · [Wood and Spekkens (2015)](https://arxiv.org/abs/1208.4119)
+
+## Final report as sent
+
+2026-11-23 10:53 PST
+
+**Even with the shortage hidden, an observer can send a message under ordinary growth.** Bob always adds one spare. For one message he uses the address named by his old bit. For the other he uses the opposite address. Alice keeps her address fixed. Her marked distinction gains a holder on exactly 1/4 of trials for either message. But her old bit differs from that gain on **5/8 versus 3/8** of trials. She can guess a fair message correctly **5/8 of the time**. The same works with Alice sending. Independent referee pending. [Study and exact tables](https://github.com/jscul/knotlab/blob/main/research/LOCAL-EDIT-POLICIES-20261123-001/decision.md)
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| Conceal the shortage | **Successful** | On four equally weighted ordinary starts, neither observer’s full pre-edit record improves its 1/2 chance of identifying which knot needs the spare. |
+| Compulsory one-spare edits | **A usable signal** | Parity gives CHSH **9/4** and zero marginal change at four fixed addresses. Once either address may depend on an old reading, the largest change in a complete local record is exactly **1/4**. |
+| Not-all-equal | Signals through stalling | Fixed-address CHSH is **1.50000193028**. The largest complete-record change under the same compulsory edits is **0.0000160101**. Every stall counts under both laws. |
+| G18 · Comparing growth laws | Obstruction learned | When the local answer is its old bit on a common gain and zero on a stall, equal fixed-address gain probabilities turn any CHSH excess of δ into a signal of at least δ in **each direction**. |
+
+Parity attains the theorem’s bound. Its three perfect correlations also rule out a quantum realization of the measured fourth correlation. If the sender may withhold the spare, the other observer’s birth probability changes from 1/4 to zero under either law. Withholding and local information together raise the parity optimum to 3/8. [Proof and scope](https://github.com/jscul/knotlab/blob/main/proofs/LOCAL-EDIT-POLICIES-20261123-001A/LOCAL-EDIT-POLICIES-20261123-001A-P001_policy_test/proof.md)
+
+**Next step:** Research directions — No next action selected.
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+| --- | --- | --- | --- | --- | --- |
+| 1 | Two shared distinctions with settings read from the state (B239) | 2/3 — Substantial | 2/3 — Testable | Count completions → a private excess or a bound of two | Alternative · deferred |
+| 2 | Reduce the 62-knot preparation | 1/3 — Incremental | 3/3 — Ready | Remove a guard → concealment or the message fails | Alternative · deferred |
+
+**STOP** this common-funding test. The first alternative concerns a different source of settings. The second could simplify the witness, but its size cannot remove the proved signal.
+
+**Corrections:** None. The earlier four-fixed-address result stands.  
+**Goals:** G18 gained a sharp limit on what ordinary stalling can supply. The general entanglement question remains open.  
+**Assumptions:** A212–A214 record the control policy, concealed demand and delayed-reading comparison. Their public register rows await the five earlier entries A207–A211. The study itself is published.  
+**Scaffolds:** The preparation, weighting and local access were supplied. A supplied comparison reached 17/8 when its bits were revealed only after compulsory edits. Astra reviewed the freeze. The separate Fable consultation reached its usage limit.  
+**Basket:** B237 taken and settled for this reading. B239 remains separate.

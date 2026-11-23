@@ -13,7 +13,7 @@ Read the two binary message tables in the order (receiver's old bit, observed ga
 | Not-all-equal | Signals through stalling | Fixed-address CHSH is **1.50000193028**. The largest complete-record change under the same compulsory edits is **0.0000160101**. Every stall counts under both laws. |
 | G18 · Comparing growth laws | Obstruction learned | When the local answer is its old bit on a common gain and zero on a stall, equal fixed-address gain probabilities turn any CHSH excess of δ into a signal of at least δ in **each direction**. |
 
-Parity attains the theorem’s bound. If the sender may withhold the spare, the other observer’s birth probability changes from 1/4 to zero under either law. Withholding and local information together raise the parity optimum to 3/8. [Proof and scope](https://github.com/jscul/knotlab/blob/main/proofs/LOCAL-EDIT-POLICIES-20261123-001A/LOCAL-EDIT-POLICIES-20261123-001A-P001_policy_test/proof.md)
+Parity attains the theorem’s bound. Its three perfect correlations also rule out a quantum realization of the measured fourth correlation. If the sender may withhold the spare, the other observer’s birth probability changes from 1/4 to zero under either law. Withholding and local information together raise the parity optimum to 3/8. [Proof and scope](https://github.com/jscul/knotlab/blob/main/proofs/LOCAL-EDIT-POLICIES-20261123-001A/LOCAL-EDIT-POLICIES-20261123-001A-P001_policy_test/proof.md)
 
 **Next step:** Research directions — No next action selected.
 
@@ -26,6 +26,6 @@ Parity attains the theorem’s bound. If the sender may withhold the spare, the 
 
 **Corrections:** None. The earlier four-fixed-address result stands.  
 **Goals:** G18 gained a sharp limit on what ordinary stalling can supply. The general entanglement question remains open.  
-**Assumptions:** A212–A214 record the control policy, concealed demand and delayed-reading comparison.  
+**Assumptions:** A212–A214 record the control policy, concealed demand and delayed-reading comparison. Their public register rows await the five earlier entries A207–A211. The study itself is published.  
 **Scaffolds:** The preparation, weighting and local access were supplied. A supplied comparison reached 17/8 when its bits were revealed only after compulsory edits. Astra reviewed the freeze. The separate Fable consultation reached its usage limit.  
 **Basket:** B237 taken and settled for this reading. B239 remains separate.

@@ -1,0 +1,961 @@
+{
+ "T3": {
+  "class": "staggered (recorded first asks 1 and 6), marked original with the spare",
+  "s0": {
+   "donor": 0,
+   "donor_loose": 6,
+   "guarded": {
+    "births": 400,
+    "cap": {
+     "births": 400,
+     "planned_in_step": 269,
+     "step_in_progress": 6,
+     "written_in_step": 19
+    },
+    "stall": null,
+    "steps_completed": 6,
+    "ticks": {
+     "X tick 10": {
+      "status": "not reached within the caps"
+     },
+     "X tick 6": {
+      "birth": 382,
+      "status": "made",
+      "step": 6
+     },
+     "Y tick 10": {
+      "birth": 227,
+      "status": "made",
+      "step": 5
+     },
+     "Y tick 6": {
+      "birth": 1,
+      "status": "made",
+      "step": 1
+     }
+    }
+   },
+   "recompute": {
+    "joins_first": {
+     "certificates_by_choice_sequences": [],
+     "choice_sequences": 1,
+     "contested_at_start": false,
+     "distinct_leaves": 1,
+     "donor_loose": 6,
+     "enabled_proposals_through_donor": [
+      {
+       "parents": [
+        0,
+        59,
+        63
+       ],
+       "role_of": [],
+       "side": "Y"
+      },
+      {
+       "parents": [
+        0,
+        2
+       ],
+       "role_of": [
+        [
+         "X",
+         6
+        ],
+        [
+         "X",
+         10
+        ]
+       ],
+       "side": "X"
+      },
+      {
+       "parents": [
+        0,
+        6
+       ],
+       "role_of": [
+        [
+         "X",
+         6
+        ],
+        [
+         "X",
+         10
+        ]
+       ],
+       "side": "X"
+      },
+      {
+       "parents": [
+        0,
+        64
+       ],
+       "role_of": [
+        [
+         "Y",
+         10
+        ]
+       ],
+       "side": "Y"
+      },
+      {
+       "parents": [
+        0,
+        65
+       ],
+       "role_of": [
+        [
+         "Y",
+         6
+        ]
+       ],
+       "side": "Y"
+      }
+     ],
+     "examples": {
+      "X keeps, Y keeps": {
+       "certificates": [
+        {},
+        {}
+       ],
+       "choice_sequence": [],
+       "classification": [
+        {
+         "10": {
+          "status": "open",
+          "tick_age": 10
+         },
+         "6": {
+          "search": "exhausted",
+          "search_states": 745,
+          "status": "open",
+          "tick_age": 6
+         }
+        },
+        {
+         "10": {
+          "status": "open",
+          "tick_age": 10
+         },
+         "6": {
+          "completion_births": [
+           [
+            73,
+            [
+             0,
+             65
+            ],
+            2
+           ]
+          ],
+          "how": "firing completion found",
+          "search_states": 2,
+          "status": "made",
+          "tick_age": 6
+         }
+        }
+       ]
+      }
+     },
+     "outcome_by_choice_sequences": {
+      "X keeps, Y keeps": 1
+     },
+     "outcome_by_choice_sequences_by_tick": {
+      "X [t6:open/t10:open], Y [t6:made/t10:open]": 1
+     },
+     "outcome_by_distinct_leaves": {
+      "X keeps, Y keeps": 1
+     },
+     "policy": "joins_first",
+     "sampled": false,
+     "seconds": 0.2,
+     "starved_proposals_by_choice_sequences": [
+      {
+       "choice_sequences": 1,
+       "starved": []
+      }
+     ],
+     "tree_states_expanded": 1
+    },
+    "unrestricted": {
+     "certificates_by_choice_sequences": [],
+     "choice_sequences": 1,
+     "contested_at_start": false,
+     "distinct_leaves": 1,
+     "donor_loose": 6,
+     "enabled_proposals_through_donor": [
+      {
+       "parents": [
+        0,
+        59,
+        63
+       ],
+       "role_of": [],
+       "side": "Y"
+      },
+      {
+       "parents": [
+        0,
+        2
+       ],
+       "role_of": [
+        [
+         "X",
+         6
+        ],
+        [
+         "X",
+         10
+        ]
+       ],
+       "side": "X"
+      },
+      {
+       "parents": [
+        0,
+        6
+       ],
+       "role_of": [
+        [
+         "X",
+         6
+        ],
+        [
+         "X",
+         10
+        ]
+       ],
+       "side": "X"
+      },
+      {
+       "parents": [
+        0,
+        64
+       ],
+       "role_of": [
+        [
+         "Y",
+         10
+        ]
+       ],
+       "side": "Y"
+      },
+      {
+       "parents": [
+        0,
+        65
+       ],
+       "role_of": [
+        [
+         "Y",
+         6
+        ]
+       ],
+       "side": "Y"
+      }
+     ],
+     "examples": {
+      "X keeps, Y keeps": {
+       "certificates": [
+        {},
+        {}
+       ],
+       "choice_sequence": [],
+       "classification": [
+        {
+         "10": {
+          "status": "open",
+          "tick_age": 10
+         },
+         "6": {
+          "completion_births": [
+           [
+            8,
+            [
+             0,
+             2
+            ],
+            3
+           ],
+           [
+            9,
+            [
+             0,
+             6
+            ],
+            4
+           ],
+           [
+            12,
+            [
+             2,
+             4
+            ],
+            4
+           ],
+           [
+            14,
+            [
+             4,
+             6
+            ],
+            5
+           ],
+           [
+            16,
+            [
+             0
+            ],
+            4
+           ],
+           [
+            19,
+            [
+             70,
+             74
+            ],
+            1
+           ],
+           [
+            18,
+            [
+             70,
+             72
+            ],
+            2
+           ],
+           [
+            21,
+            [
+             71,
+             74
+            ],
+            2
+           ],
+           [
+            20,
+            [
+             71,
+             73
+            ],
+            2
+           ],
+           [
+            25,
+            [
+             72,
+             73
+            ],
+            2
+           ],
+           [
+            30,
+            [
+             75,
+             76
+            ],
+            3
+           ],
+           [
+            31,
+            [
+             76,
+             79
+            ],
+            4
+           ],
+           [
+            32,
+            [
+             77,
+             78
+            ],
+            3
+           ],
+           [
+            33,
+            [
+             78,
+             79
+            ],
+            5
+           ],
+           [
+            43,
+            [
+             80,
+             81
+            ],
+            1
+           ],
+           [
+            45,
+            [
+             82,
+             83
+            ],
+            1
+           ],
+           [
+            44,
+            [
+             81,
+             83
+            ],
+            2
+           ],
+           [
+            57,
+            [
+             84,
+             86
+            ],
+            3
+           ],
+           [
+            58,
+            [
+             85,
+             86
+            ],
+            4
+           ],
+           [
+            73,
+            [
+             87,
+             88
+            ],
+            1
+           ]
+          ],
+          "how": "firing completion found",
+          "search_states": 305,
+          "status": "made",
+          "tick_age": 6
+         }
+        },
+        {
+         "10": {
+          "status": "open",
+          "tick_age": 10
+         },
+         "6": {
+          "completion_births": [
+           [
+            73,
+            [
+             0,
+             65
+            ],
+            2
+           ]
+          ],
+          "how": "firing completion found",
+          "search_states": 2,
+          "status": "made",
+          "tick_age": 6
+         }
+        }
+       ]
+      }
+     },
+     "outcome_by_choice_sequences": {
+      "X keeps, Y keeps": 1
+     },
+     "outcome_by_choice_sequences_by_tick": {
+      "X [t6:made/t10:open], Y [t6:made/t10:open]": 1
+     },
+     "outcome_by_distinct_leaves": {
+      "X keeps, Y keeps": 1
+     },
+     "policy": "unrestricted",
+     "sampled": false,
+     "seconds": 0.1,
+     "starved_proposals_by_choice_sequences": [
+      {
+       "choice_sequences": 1,
+       "starved": []
+      }
+     ],
+     "tree_states_expanded": 1
+    }
+   }
+  },
+  "s1": {
+   "donor": 0,
+   "donor_loose": 5,
+   "guarded": {
+    "births": 400,
+    "cap": {
+     "births": 400,
+     "planned_in_step": 169,
+     "step_in_progress": 6,
+     "written_in_step": 124
+    },
+    "stall": null,
+    "steps_completed": 6,
+    "ticks": {
+     "X tick 10": {
+      "certificate": {
+       "kind": "exhausted_parent",
+       "parent_is_donor": true,
+       "parent_knot": 0,
+       "spending_birth_parents": [
+        0,
+        59,
+        63
+       ],
+       "spending_event": 11,
+       "unmade_role_parents": [
+        0
+       ]
+      },
+      "status": "lost"
+     },
+     "X tick 6": {
+      "certificate": {
+       "kind": "exhausted_parent",
+       "parent_is_donor": true,
+       "parent_knot": 0,
+       "spending_birth_parents": [
+        0,
+        59,
+        63
+       ],
+       "spending_event": 11,
+       "unmade_role_parents": [
+        0
+       ]
+      },
+      "status": "lost"
+     },
+     "Y tick 10": {
+      "birth": 175,
+      "status": "made",
+      "step": 5
+     },
+     "Y tick 6": {
+      "birth": 1,
+      "status": "made",
+      "step": 1
+     }
+    }
+   },
+   "recompute": {
+    "joins_first": {
+     "certificates_by_choice_sequences": [
+      {
+       "certificate": {
+        "kind": "exhausted_parent",
+        "parent_is_donor": true,
+        "parent_knot": 0,
+        "source": "X",
+        "spending_birth_parents": [
+         0,
+         65
+        ],
+        "tick": 10,
+        "unmade_role_parents": [
+         0
+        ]
+       },
+       "choice_sequences": 1
+      },
+      {
+       "certificate": {
+        "kind": "exhausted_parent",
+        "parent_is_donor": true,
+        "parent_knot": 0,
+        "source": "X",
+        "spending_birth_parents": [
+         0,
+         65
+        ],
+        "tick": 6,
+        "unmade_role_parents": [
+         0
+        ]
+       },
+       "choice_sequences": 1
+      }
+     ],
+     "choice_sequences": 1,
+     "contested_at_start": false,
+     "distinct_leaves": 1,
+     "donor_loose": 5,
+     "enabled_proposals_through_donor": [
+      {
+       "parents": [
+        0,
+        59,
+        63
+       ],
+       "role_of": [],
+       "side": "Y"
+      },
+      {
+       "parents": [
+        0,
+        2
+       ],
+       "role_of": [
+        [
+         "X",
+         6
+        ],
+        [
+         "X",
+         10
+        ]
+       ],
+       "side": "X"
+      },
+      {
+       "parents": [
+        0,
+        6
+       ],
+       "role_of": [
+        [
+         "X",
+         6
+        ],
+        [
+         "X",
+         10
+        ]
+       ],
+       "side": "X"
+      },
+      {
+       "parents": [
+        0,
+        64
+       ],
+       "role_of": [
+        [
+         "Y",
+         10
+        ]
+       ],
+       "side": "Y"
+      },
+      {
+       "parents": [
+        0,
+        65
+       ],
+       "role_of": [
+        [
+         "Y",
+         6
+        ]
+       ],
+       "side": "Y"
+      }
+     ],
+     "examples": {
+      "X lost, Y keeps": {
+       "certificates": [
+        {
+         "10": {
+          "kind": "exhausted_parent",
+          "parent_is_donor": true,
+          "parent_knot": 0,
+          "spending_birth_parents": [
+           0,
+           65
+          ],
+          "spending_event": 5,
+          "unmade_role_parents": [
+           0
+          ]
+         },
+         "6": {
+          "kind": "exhausted_parent",
+          "parent_is_donor": true,
+          "parent_knot": 0,
+          "spending_birth_parents": [
+           0,
+           65
+          ],
+          "spending_event": 5,
+          "unmade_role_parents": [
+           0
+          ]
+         }
+        },
+        {}
+       ],
+       "choice_sequence": [],
+       "classification": [
+        {
+         "10": {
+          "status": "lost",
+          "tick_age": 10
+         },
+         "6": {
+          "search": "exhausted",
+          "search_states": 745,
+          "status": "lost",
+          "tick_age": 6
+         }
+        },
+        {
+         "10": {
+          "status": "open",
+          "tick_age": 10
+         },
+         "6": {
+          "completion_births": [
+           [
+            73,
+            [
+             0,
+             65
+            ],
+            2
+           ]
+          ],
+          "how": "firing completion found",
+          "search_states": 2,
+          "status": "made",
+          "tick_age": 6
+         }
+        }
+       ]
+      }
+     },
+     "outcome_by_choice_sequences": {
+      "X lost, Y keeps": 1
+     },
+     "outcome_by_choice_sequences_by_tick": {
+      "X [t6:lost/t10:lost], Y [t6:made/t10:open]": 1
+     },
+     "outcome_by_distinct_leaves": {
+      "X lost, Y keeps": 1
+     },
+     "policy": "joins_first",
+     "sampled": false,
+     "seconds": 0.2,
+     "starved_proposals_by_choice_sequences": [
+      {
+       "choice_sequences": 1,
+       "starved": []
+      }
+     ],
+     "tree_states_expanded": 1
+    },
+    "unrestricted": {
+     "certificates_by_choice_sequences": [
+      {
+       "certificate": {
+        "kind": "exhausted_parent",
+        "parent_is_donor": true,
+        "parent_knot": 0,
+        "source": "X",
+        "spending_birth_parents": [
+         0,
+         65
+        ],
+        "tick": 10,
+        "unmade_role_parents": [
+         0
+        ]
+       },
+       "choice_sequences": 1
+      },
+      {
+       "certificate": {
+        "kind": "exhausted_parent",
+        "parent_is_donor": true,
+        "parent_knot": 0,
+        "source": "X",
+        "spending_birth_parents": [
+         0,
+         65
+        ],
+        "tick": 6,
+        "unmade_role_parents": [
+         0
+        ]
+       },
+       "choice_sequences": 1
+      }
+     ],
+     "choice_sequences": 1,
+     "contested_at_start": false,
+     "distinct_leaves": 1,
+     "donor_loose": 5,
+     "enabled_proposals_through_donor": [
+      {
+       "parents": [
+        0,
+        59,
+        63
+       ],
+       "role_of": [],
+       "side": "Y"
+      },
+      {
+       "parents": [
+        0,
+        2
+       ],
+       "role_of": [
+        [
+         "X",
+         6
+        ],
+        [
+         "X",
+         10
+        ]
+       ],
+       "side": "X"
+      },
+      {
+       "parents": [
+        0,
+        6
+       ],
+       "role_of": [
+        [
+         "X",
+         6
+        ],
+        [
+         "X",
+         10
+        ]
+       ],
+       "side": "X"
+      },
+      {
+       "parents": [
+        0,
+        64
+       ],
+       "role_of": [
+        [
+         "Y",
+         10
+        ]
+       ],
+       "side": "Y"
+      },
+      {
+       "parents": [
+        0,
+        65
+       ],
+       "role_of": [
+        [
+         "Y",
+         6
+        ]
+       ],
+       "side": "Y"
+      }
+     ],
+     "examples": {
+      "X lost, Y keeps": {
+       "certificates": [
+        {
+         "10": {
+          "kind": "exhausted_parent",
+          "parent_is_donor": true,
+          "parent_knot": 0,
+          "spending_birth_parents": [
+           0,
+           65
+          ],
+          "spending_event": 5,
+          "unmade_role_parents": [
+           0
+          ]
+         },
+         "6": {
+          "kind": "exhausted_parent",
+          "parent_is_donor": true,
+          "parent_knot": 0,
+          "spending_birth_parents": [
+           0,
+           65
+          ],
+          "spending_event": 5,
+          "unmade_role_parents": [
+           0
+          ]
+         }
+        },
+        {}
+       ],
+       "choice_sequence": [],
+       "classification": [
+        {
+         "10": {
+          "status": "lost",
+          "tick_age": 10
+         },
+         "6": {
+          "search": "exhausted",
+          "search_states": 745,
+          "status": "lost",
+          "tick_age": 6
+         }
+        },
+        {
+         "10": {
+          "status": "open",
+          "tick_age": 10
+         },
+         "6": {
+          "completion_births": [
+           [
+            73,
+            [
+             0,
+             65
+            ],
+            2
+           ]
+          ],
+          "how": "firing completion found",
+          "search_states": 2,
+          "status": "made",
+          "tick_age": 6
+         }
+        }
+       ]
+      }
+     },
+     "outcome_by_choice_sequences": {
+      "X lost, Y keeps": 1
+     },
+     "outcome_by_choice_sequences_by_tick": {
+      "X [t6:lost/t10:lost], Y [t6:made/t10:open]": 1
+     },
+     "outcome_by_distinct_leaves": {
+      "X lost, Y keeps": 1
+     },
+     "policy": "unrestricted",
+     "sampled": false,
+     "seconds": 0.2,
+     "starved_proposals_by_choice_sequences": [
+      {
+       "choice_sequences": 1,
+       "starved": []
+      }
+     ],
+     "tree_states_expanded": 1
+    }
+   }
+  },
+  "x": "R0m",
+  "y": "R5"
+ },
+ "addendum_sha256": "245a07ebaf79ee6dcc3ef88f6fdc54f5efe61d00aba290283192e067894f3be1"
+}

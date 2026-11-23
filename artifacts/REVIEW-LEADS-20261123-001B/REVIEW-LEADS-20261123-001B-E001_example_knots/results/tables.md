@@ -1,0 +1,225 @@
+
+### Counts right / wrong / unanswered (coverage), labels: true
+
+
+Arm **narrow**; test items per condition: a=0, b=64, c=512
+
+| learner | condition a | condition b | condition c |
+| --- | --- | --- | --- |
+| L1 | 0/0/0 | 8/0/56 (12% answered) | 136/104/272 (47% answered) |
+| L1+ | 0/0/0 | 8/0/56 (12% answered) | 136/104/272 (47% answered) |
+| L2 | 0/0/0 | 0/0/64 (0% answered) | 0/0/512 (0% answered) |
+| C1 | 0/0/0 | 32/32/0 (100% answered) | 328/184/0 (100% answered) |
+| C1@L1 | 0/0/0 | 0/8/56 (12% answered) | 168/72/272 (47% answered) |
+| C1m@L1 | 0/0/0 | 8/0/56 (12% answered) | 200/40/272 (47% answered) |
+| C1@L1+ | 0/0/0 | 0/8/56 (12% answered) | 168/72/272 (47% answered) |
+| C1m@L1+ | 0/0/0 | 8/0/56 (12% answered) | 200/40/272 (47% answered) |
+
+Arm **varied**; test items per condition: a=192, b=256, c=512
+
+| learner | condition a | condition b | condition c |
+| --- | --- | --- | --- |
+| L1 | 0/0/192 (0% answered) | 0/0/256 (0% answered) | 0/0/512 (0% answered) |
+| L1+ | 192/0/0 (100% answered) | 0/0/256 (0% answered) | 0/0/512 (0% answered) |
+| L2 | 0/0/192 (0% answered) | 0/0/256 (0% answered) | 0/0/512 (0% answered) |
+| C1 | 144/48/0 (100% answered) | 152/104/0 (100% answered) | 272/240/0 (100% answered) |
+| C1@L1 | 0/0/192 (0% answered) | 0/0/256 (0% answered) | 0/0/512 (0% answered) |
+| C1m@L1 | 0/0/192 (0% answered) | 0/0/256 (0% answered) | 0/0/512 (0% answered) |
+| C1@L1+ | 144/48/0 (100% answered) | 0/0/256 (0% answered) | 0/0/512 (0% answered) |
+| C1m@L1+ | 144/48/0 (100% answered) | 0/0/256 (0% answered) | 0/0/512 (0% answered) |
+
+### Counts right / wrong / unanswered (coverage), labels: shuffled
+
+
+Arm **narrow**; test items per condition: a=0, b=64, c=512
+
+| learner | condition a | condition b | condition c |
+| --- | --- | --- | --- |
+| L1 | 0/0/0 | 0/0/64 (0% answered) | 0/0/512 (0% answered) |
+| L1+ | 0/0/0 | 0/0/64 (0% answered) | 0/0/512 (0% answered) |
+| L2 | 0/0/0 | 0/0/64 (0% answered) | 0/0/512 (0% answered) |
+| C1 | 0/0/0 | 32/32/0 (100% answered) | 264/248/0 (100% answered) |
+| C1@L1 | 0/0/0 | 0/0/64 (0% answered) | 0/0/512 (0% answered) |
+| C1m@L1 | 0/0/0 | 0/0/64 (0% answered) | 0/0/512 (0% answered) |
+| C1@L1+ | 0/0/0 | 0/0/64 (0% answered) | 0/0/512 (0% answered) |
+| C1m@L1+ | 0/0/0 | 0/0/64 (0% answered) | 0/0/512 (0% answered) |
+
+Arm **varied**; test items per condition: a=192, b=256, c=512
+
+| learner | condition a | condition b | condition c |
+| --- | --- | --- | --- |
+| L1 | 0/0/192 (0% answered) | 0/0/256 (0% answered) | 0/0/512 (0% answered) |
+| L1+ | 0/0/192 (0% answered) | 0/0/256 (0% answered) | 0/0/512 (0% answered) |
+| L2 | 0/0/192 (0% answered) | 0/0/256 (0% answered) | 0/0/512 (0% answered) |
+| C1 | 90/102/0 (100% answered) | 128/128/0 (100% answered) | 312/200/0 (100% answered) |
+| C1@L1 | 0/0/192 (0% answered) | 0/0/256 (0% answered) | 0/0/512 (0% answered) |
+| C1m@L1 | 0/0/192 (0% answered) | 0/0/256 (0% answered) | 0/0/512 (0% answered) |
+| C1@L1+ | 0/0/192 (0% answered) | 0/0/256 (0% answered) | 0/0/512 (0% answered) |
+| C1m@L1+ | 0/0/192 (0% answered) | 0/0/256 (0% answered) | 0/0/512 (0% answered) |
+
+### By condition, letter and turn (true labels; right/wrong/unanswered)
+
+
+Arm **narrow**, condition b
+
+| learner | L q0 | L q1 | L q2 | L q3 | T q0 | T q1 | T q2 | T q3 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| L1 | - | - | 8/0/8 (50% answered) | 0/0/16 (0% answered) | - | - | 0/0/16 (0% answered) | 0/0/16 (0% answered) |
+| L1+ | - | - | 8/0/8 (50% answered) | 0/0/16 (0% answered) | - | - | 0/0/16 (0% answered) | 0/0/16 (0% answered) |
+| C1@L1+ | - | - | 0/8/8 (50% answered) | 0/0/16 (0% answered) | - | - | 0/0/16 (0% answered) | 0/0/16 (0% answered) |
+| C1m@L1+ | - | - | 0/0/16 (0% answered) | 0/0/16 (0% answered) | - | - | 0/0/16 (0% answered) | 8/0/8 (50% answered) |
+| C1 | - | - | 8/8/0 (100% answered) | 0/16/0 (100% answered) | - | - | 16/0/0 (100% answered) | 8/8/0 (100% answered) |
+
+Arm **narrow**, condition c
+
+| learner | L q0 | L q1 | L q2 | L q3 | T q0 | T q1 | T q2 | T q3 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| L1 | 24/8/32 (50% answered) | 16/0/48 (25% answered) | 0/16/48 (25% answered) | 32/8/24 (62% answered) | 32/8/24 (62% answered) | 8/24/32 (50% answered) | 8/16/40 (38% answered) | 16/24/24 (62% answered) |
+| L1+ | 24/8/32 (50% answered) | 16/0/48 (25% answered) | 0/16/48 (25% answered) | 32/8/24 (62% answered) | 32/8/24 (62% answered) | 8/24/32 (50% answered) | 8/16/40 (38% answered) | 16/24/24 (62% answered) |
+| C1@L1+ | 32/0/32 (50% answered) | 16/0/48 (25% answered) | 8/8/48 (25% answered) | 24/16/24 (62% answered) | 32/8/24 (62% answered) | 24/8/32 (50% answered) | 16/8/40 (38% answered) | 16/24/24 (62% answered) |
+| C1m@L1+ | 56/0/8 (88% answered) | 48/0/16 (75% answered) | 8/8/48 (25% answered) | 24/0/40 (38% answered) | 16/0/48 (25% answered) | 32/0/32 (50% answered) | 8/8/48 (25% answered) | 8/24/32 (50% answered) |
+| C1 | 64/0/0 (100% answered) | 56/8/0 (100% answered) | 24/40/0 (100% answered) | 40/24/0 (100% answered) | 40/24/0 (100% answered) | 48/16/0 (100% answered) | 32/32/0 (100% answered) | 24/40/0 (100% answered) |
+
+Arm **varied**, condition a
+
+| learner | L q0 | L q1 | L q2 | L q3 | T q0 | T q1 | T q2 | T q3 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| L1 | 0/0/48 (0% answered) | 0/0/48 (0% answered) | - | - | 0/0/48 (0% answered) | 0/0/48 (0% answered) | - | - |
+| L1+ | 48/0/0 (100% answered) | 48/0/0 (100% answered) | - | - | 48/0/0 (100% answered) | 48/0/0 (100% answered) | - | - |
+| C1@L1+ | 30/18/0 (100% answered) | 42/6/0 (100% answered) | - | - | 36/12/0 (100% answered) | 36/12/0 (100% answered) | - | - |
+| C1m@L1+ | 30/18/0 (100% answered) | 42/6/0 (100% answered) | - | - | 36/12/0 (100% answered) | 36/12/0 (100% answered) | - | - |
+| C1 | 30/18/0 (100% answered) | 42/6/0 (100% answered) | - | - | 36/12/0 (100% answered) | 36/12/0 (100% answered) | - | - |
+
+Arm **varied**, condition b
+
+| learner | L q0 | L q1 | L q2 | L q3 | T q0 | T q1 | T q2 | T q3 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| L1 | - | - | 0/0/64 (0% answered) | 0/0/64 (0% answered) | - | - | 0/0/64 (0% answered) | 0/0/64 (0% answered) |
+| L1+ | - | - | 0/0/64 (0% answered) | 0/0/64 (0% answered) | - | - | 0/0/64 (0% answered) | 0/0/64 (0% answered) |
+| C1@L1+ | - | - | 0/0/64 (0% answered) | 0/0/64 (0% answered) | - | - | 0/0/64 (0% answered) | 0/0/64 (0% answered) |
+| C1m@L1+ | - | - | 0/0/64 (0% answered) | 0/0/64 (0% answered) | - | - | 0/0/64 (0% answered) | 0/0/64 (0% answered) |
+| C1 | - | - | 32/32/0 (100% answered) | 24/40/0 (100% answered) | - | - | 48/16/0 (100% answered) | 48/16/0 (100% answered) |
+
+Arm **varied**, condition c
+
+| learner | L q0 | L q1 | L q2 | L q3 | T q0 | T q1 | T q2 | T q3 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| L1 | 0/0/64 (0% answered) | 0/0/64 (0% answered) | 0/0/64 (0% answered) | 0/0/64 (0% answered) | 0/0/64 (0% answered) | 0/0/64 (0% answered) | 0/0/64 (0% answered) | 0/0/64 (0% answered) |
+| L1+ | 0/0/64 (0% answered) | 0/0/64 (0% answered) | 0/0/64 (0% answered) | 0/0/64 (0% answered) | 0/0/64 (0% answered) | 0/0/64 (0% answered) | 0/0/64 (0% answered) | 0/0/64 (0% answered) |
+| C1@L1+ | 0/0/64 (0% answered) | 0/0/64 (0% answered) | 0/0/64 (0% answered) | 0/0/64 (0% answered) | 0/0/64 (0% answered) | 0/0/64 (0% answered) | 0/0/64 (0% answered) | 0/0/64 (0% answered) |
+| C1m@L1+ | 0/0/64 (0% answered) | 0/0/64 (0% answered) | 0/0/64 (0% answered) | 0/0/64 (0% answered) | 0/0/64 (0% answered) | 0/0/64 (0% answered) | 0/0/64 (0% answered) | 0/0/64 (0% answered) |
+| C1 | 24/40/0 (100% answered) | 40/24/0 (100% answered) | 8/56/0 (100% answered) | 0/64/0 (100% answered) | 48/16/0 (100% answered) | 56/8/0 (100% answered) | 56/8/0 (100% answered) | 40/24/0 (100% answered) |
+
+### Feature family reached by L1+, coverage, and the memory
+
+| arm | labels | L1 (F0) has an allowed word | L1 rank of 16 | L1+ family | features | rank | families tried (name, allowed word, rank, features) | L2 allowed words of 65,536 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| narrow | true | True | 8 | F0 | 16 | 8 | [('F0', True, 8, 16)] | 63880 |
+| narrow | shuffled | False | 8 | None | None | None | [('F0', False, 8, 16), ('F1', False, 8, 30), ('F2', False, 8, 156), ('F3', False, 8, 667)] | 62878 |
+| varied | true | False | 9 | F2 | 156 | 32 | [('F0', False, 9, 16), ('F1', False, 13, 30), ('F2', True, 32, 156)] | 56380 |
+| varied | shuffled | False | 9 | None | None | None | [('F0', False, 9, 16), ('F1', False, 13, 30), ('F2', False, 32, 156), ('F3', False, 32, 667)] | 52984 |
+
+### Example knots with fewer than three memory distinctions (training knots; the constant counts as one distinction)
+
+| arm | family level | knots | below three | below three without the constant | of size 1 | of size 2 | smallest size | largest size | distinct knots (by odd-feature set) |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| narrow | up to F0 | 64 | 0 | 0 | 0 | 0 | 7 | 10 | 8 |
+| narrow | up to F1 | 64 | 0 | 0 | 0 | 0 | 15 | 15 | 8 |
+| narrow | up to F2 | 64 | 0 | 0 | 0 | 0 | 40 | 47 | 8 |
+| narrow | up to F3 | 64 | 0 | 0 | 0 | 0 | 60 | 71 | 8 |
+| varied | up to F0 | 64 | 0 | 0 | 0 | 0 | 5 | 11 | 31 |
+| varied | up to F1 | 64 | 0 | 0 | 0 | 0 | 9 | 18 | 31 |
+| varied | up to F2 | 64 | 0 | 0 | 0 | 0 | 32 | 47 | 32 |
+| varied | up to F3 | 64 | 0 | 0 | 0 | 0 | 50 | 71 | 32 |
+
+### Prediction verdicts (computed from the counts above)
+
+```json
+{
+ "P1": {
+  "narrow": {
+   "applicable": true,
+   "a": [
+    0,
+    0,
+    0
+   ],
+   "b": [
+    8,
+    0,
+    56
+   ],
+   "wrong_in_a_and_b": 0,
+   "answered_in_a_and_b": 8
+  },
+  "varied": {
+   "applicable": false,
+   "note": "no allowed memory word for L1 at F0"
+  }
+ },
+ "P3": {
+  "narrow": {
+   "L1+_family": "F0",
+   "L1+_b": [
+    8,
+    0,
+    56
+   ],
+   "C1_same_items_b": [
+    0,
+    8,
+    56
+   ],
+   "C1_matched_b": [
+    8,
+    0,
+    56
+   ],
+   "answered": 8,
+   "L1+_wrong_share": 0.0,
+   "C1_same_items_wrong_share": 1.0,
+   "holds": true
+  },
+  "varied": {
+   "L1+_family": "F2",
+   "L1+_b": [
+    0,
+    0,
+    256
+   ],
+   "C1_same_items_b": [
+    0,
+    0,
+    256
+   ],
+   "C1_matched_b": [
+    0,
+    0,
+    256
+   ],
+   "answered": 0,
+   "L1+_wrong_share": null,
+   "C1_same_items_wrong_share": null,
+   "holds": false
+  }
+ },
+ "P4": {
+  "narrow": {
+   "word_allowed": false,
+   "holds": true,
+   "note": "no allowed memory word with shuffled labels"
+  },
+  "varied": {
+   "word_allowed": false,
+   "holds": true,
+   "note": "no allowed memory word with shuffled labels"
+  }
+ },
+ "P2": {
+  "L1_allows_no_word_in_varied_arm": true,
+  "holds": true,
+  "L1_rank": 9,
+  "knots_contradicting_on_arrival": 22
+ }
+}
+```

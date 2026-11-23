@@ -1,0 +1,286 @@
+{
+ "G1": {
+  "fail_equals_admit_everywhere": true,
+  "mismatches": [],
+  "pass": true,
+  "patterns": 173,
+  "pauli_solution_vs_recorded_disagreements": 0,
+  "recorded_admit": 115
+ },
+ "G2": {
+  "checked": {
+   "atlas_simple_graphs_seven_knots": 1043,
+   "atlas_simple_graphs_up_to_six_knots": 202,
+   "census_at_most_six_knots": 23,
+   "census_seven_knots": 150,
+   "hypergraph_incidence": 61
+  },
+  "disagreements": [],
+  "pass": true,
+  "seconds": 6.3
+ },
+ "G3": {
+  "benchmark": {
+   "bounded_bond:1": {
+    "max_holders": 3,
+    "mutant_passes": true,
+    "real_passes": true
+   },
+   "bounded_bond:2": {
+    "max_holders": 6,
+    "mutant_passes": false,
+    "real_passes": false
+   },
+   "bounded_bond:3": {
+    "max_holders": 6,
+    "mutant_passes": false,
+    "real_passes": false
+   },
+   "bounded_bond:4": {
+    "max_holders": 6,
+    "mutant_passes": false,
+    "real_passes": false
+   },
+   "cubic:0": {
+    "max_holders": 1,
+    "mutant_passes": true,
+    "real_passes": true
+   },
+   "cubic:1": {
+    "max_holders": 2,
+    "mutant_passes": true,
+    "real_passes": true
+   },
+   "cubic:2": {
+    "max_holders": 2,
+    "mutant_passes": true,
+    "real_passes": true
+   },
+   "cubic:3": {
+    "max_holders": 2,
+    "mutant_passes": true,
+    "real_passes": true
+   },
+   "cubic:4": {
+    "max_holders": 2,
+    "mutant_passes": true,
+    "real_passes": false
+   },
+   "cubic:5": {
+    "max_holders": 2,
+    "mutant_passes": true,
+    "real_passes": false
+   },
+   "periodic:1": {
+    "max_holders": 2,
+    "mutant_passes": true,
+    "real_passes": true
+   },
+   "periodic:2": {
+    "max_holders": 2,
+    "mutant_passes": true,
+    "real_passes": true
+   },
+   "periodic:3": {
+    "max_holders": 2,
+    "mutant_passes": true,
+    "real_passes": true
+   },
+   "periodic:4": {
+    "max_holders": 2,
+    "mutant_passes": true,
+    "real_passes": true
+   },
+   "periodic:5": {
+    "max_holders": 2,
+    "mutant_passes": true,
+    "real_passes": true
+   },
+   "periodic:6": {
+    "max_holders": 2,
+    "mutant_passes": true,
+    "real_passes": true
+   },
+   "pinwheel:1": {
+    "max_holders": 2,
+    "mutant_passes": true,
+    "real_passes": true
+   },
+   "pinwheel:2": {
+    "max_holders": 2,
+    "mutant_passes": true,
+    "real_passes": true
+   },
+   "pinwheel:3": {
+    "max_holders": 2,
+    "mutant_passes": true,
+    "real_passes": true
+   },
+   "pinwheel:4": {
+    "max_holders": 2,
+    "mutant_passes": true,
+    "real_passes": true
+   }
+  },
+  "engine_stages": {
+   "mutant_passes": 13,
+   "of": 13,
+   "real_fail": 11
+  },
+  "literal_mutant_passes_every_pattern_including_bounded_bond": false,
+  "note": "The bounded-bond constructions have distinctions with up to six holders; unlinking only the second holder leaves the others, so the literal mutant is reported separately for them: {\"bounded_bond:1\": true, \"bounded_bond:2\": false, \"bounded_bond:3\": false, \"bounded_bond:4\": false}",
+  "pass": true,
+  "recorded_patterns": {
+   "mutant_passes": 173,
+   "of": 173,
+   "real_fail": 115
+  }
+ },
+ "G4_first_two": {
+  "five_knot_closure": {
+   "agree": true,
+   "allowed_words": 64,
+   "answer_words": 1024,
+   "counting_rule_evaluated_by": "words.counts_table (and the transform form, equal)",
+   "distinctions": 10,
+   "knots": 5,
+   "largest_difference": "0",
+   "support_of_counted": 16
+  },
+  "pass": true,
+  "two_split_three_place_knots": {
+   "agree": true,
+   "allowed_words": 4,
+   "answer_words": 16,
+   "counting_rule_evaluated_by": "words.counts_table (and the transform form, equal)",
+   "distinctions": 4,
+   "knots": 2,
+   "largest_difference": "0",
+   "support_of_counted": 4
+  }
+ },
+ "S1": {
+  "five_founder_clock": {
+   "distinctions": 18,
+   "knots": 5
+  },
+  "knots21_two_clocks": {
+   "distinctions": 60,
+   "knots": 21,
+   "recorded": [
+    21,
+    60
+   ]
+  },
+  "nine_knot_drawn": {
+   "distinctions": 39,
+   "knots": 9,
+   "recorded": [
+    9,
+    39
+   ]
+  },
+  "pass": true,
+  "seven_knot": {
+   "distinctions": 25,
+   "knots": 7,
+   "recorded": [
+    7,
+    25
+   ]
+  },
+  "start-00": {
+   "counts_equal": true,
+   "driver_cumulative": [
+    6,
+    14,
+    26,
+    41,
+    56,
+    70
+   ],
+   "recorded_cumulative": [
+    6,
+    14,
+    26,
+    41,
+    56,
+    70
+   ],
+   "supports_equal_recorded_literal_supports": true
+  },
+  "start-04": {
+   "counts_equal": true,
+   "driver_cumulative": [
+    6,
+    16,
+    32,
+    58,
+    95,
+    158
+   ],
+   "recorded_cumulative": [
+    6,
+    16,
+    32,
+    58,
+    95,
+    158
+   ],
+   "supports_equal_recorded_literal_supports": true
+  },
+  "start-13": {
+   "counts_equal": true,
+   "driver_cumulative": [
+    7,
+    22,
+    49,
+    105,
+    220,
+    500
+   ],
+   "recorded_cumulative": [
+    7,
+    22,
+    49,
+    105,
+    220,
+    500
+   ],
+   "supports_equal_recorded_literal_supports": true
+  }
+ },
+ "S2": {
+  "pass": true
+ },
+ "S2_census": {
+  "euler_shortcut_disagreements": 0,
+  "patterns": 173
+ },
+ "S2_p1": {
+  "disagreements": 0,
+  "patterns": 20
+ },
+ "S2_stages": {
+  "disagreements": 0,
+  "stages": 995
+ },
+ "S3": {
+  "compared": 80,
+  "differences": [],
+  "pass": true,
+  "same": 80
+ },
+ "gate_row_G_parts_run_here": {
+  "G1": true,
+  "G2": true,
+  "G3": true,
+  "G4_first_two": true
+ },
+ "seconds": 10.3,
+ "supporting_checks": {
+  "S1": true,
+  "S2": true,
+  "S3": true
+ }
+}

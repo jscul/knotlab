@@ -1,0 +1,2501 @@
+{
+ "T1": {
+  "class": "staggered (recorded first asks 1 and 6)",
+  "s0": {
+   "donor": 4,
+   "donor_loose": 5,
+   "guarded": {
+    "births": 400,
+    "cap": {
+     "births": 400,
+     "planned_in_step": 228,
+     "step_in_progress": 6,
+     "written_in_step": 81
+    },
+    "stall": null,
+    "steps_completed": 6,
+    "ticks": {
+     "X tick 10": {
+      "status": "not reached within the caps"
+     },
+     "X tick 6": {
+      "birth": 320,
+      "status": "made",
+      "step": 6
+     },
+     "Y tick 10": {
+      "birth": 193,
+      "status": "made",
+      "step": 5
+     },
+     "Y tick 6": {
+      "birth": 1,
+      "status": "made",
+      "step": 1
+     }
+    }
+   },
+   "recompute": {
+    "joins_first": {
+     "certificates_by_choice_sequences": [],
+     "choice_sequences": 1,
+     "contested_at_start": false,
+     "distinct_leaves": 1,
+     "donor_loose": 5,
+     "enabled_proposals_through_donor": [
+      {
+       "parents": [
+        4,
+        59,
+        63
+       ],
+       "role_of": [],
+       "side": "Y"
+      },
+      {
+       "parents": [
+        2,
+        4
+       ],
+       "role_of": [
+        [
+         "X",
+         6
+        ],
+        [
+         "X",
+         10
+        ]
+       ],
+       "side": "X"
+      },
+      {
+       "parents": [
+        4,
+        6
+       ],
+       "role_of": [
+        [
+         "X",
+         6
+        ],
+        [
+         "X",
+         10
+        ]
+       ],
+       "side": "X"
+      },
+      {
+       "parents": [
+        4,
+        64
+       ],
+       "role_of": [
+        [
+         "Y",
+         10
+        ]
+       ],
+       "side": "Y"
+      },
+      {
+       "parents": [
+        4,
+        65
+       ],
+       "role_of": [
+        [
+         "Y",
+         6
+        ]
+       ],
+       "side": "Y"
+      }
+     ],
+     "examples": {
+      "X keeps, Y keeps": {
+       "certificates": [
+        {},
+        {}
+       ],
+       "choice_sequence": [],
+       "classification": [
+        {
+         "10": {
+          "status": "open",
+          "tick_age": 10
+         },
+         "6": {
+          "search": "exhausted",
+          "search_states": 1003,
+          "status": "open",
+          "tick_age": 6
+         }
+        },
+        {
+         "10": {
+          "status": "open",
+          "tick_age": 10
+         },
+         "6": {
+          "completion_births": [
+           [
+            73,
+            [
+             4,
+             65
+            ],
+            2
+           ]
+          ],
+          "how": "firing completion found",
+          "search_states": 2,
+          "status": "made",
+          "tick_age": 6
+         }
+        }
+       ]
+      }
+     },
+     "outcome_by_choice_sequences": {
+      "X keeps, Y keeps": 1
+     },
+     "outcome_by_choice_sequences_by_tick": {
+      "X [t6:open/t10:open], Y [t6:made/t10:open]": 1
+     },
+     "outcome_by_distinct_leaves": {
+      "X keeps, Y keeps": 1
+     },
+     "policy": "joins_first",
+     "sampled": false,
+     "seconds": 0.4,
+     "starved_proposals_by_choice_sequences": [
+      {
+       "choice_sequences": 1,
+       "starved": []
+      }
+     ],
+     "tree_states_expanded": 1
+    },
+    "unrestricted": {
+     "certificates_by_choice_sequences": [],
+     "choice_sequences": 1,
+     "contested_at_start": false,
+     "distinct_leaves": 1,
+     "donor_loose": 5,
+     "enabled_proposals_through_donor": [
+      {
+       "parents": [
+        4,
+        59,
+        63
+       ],
+       "role_of": [],
+       "side": "Y"
+      },
+      {
+       "parents": [
+        2,
+        4
+       ],
+       "role_of": [
+        [
+         "X",
+         6
+        ],
+        [
+         "X",
+         10
+        ]
+       ],
+       "side": "X"
+      },
+      {
+       "parents": [
+        4,
+        6
+       ],
+       "role_of": [
+        [
+         "X",
+         6
+        ],
+        [
+         "X",
+         10
+        ]
+       ],
+       "side": "X"
+      },
+      {
+       "parents": [
+        4,
+        64
+       ],
+       "role_of": [
+        [
+         "Y",
+         10
+        ]
+       ],
+       "side": "Y"
+      },
+      {
+       "parents": [
+        4,
+        65
+       ],
+       "role_of": [
+        [
+         "Y",
+         6
+        ]
+       ],
+       "side": "Y"
+      }
+     ],
+     "examples": {
+      "X keeps, Y keeps": {
+       "certificates": [
+        {},
+        {}
+       ],
+       "choice_sequence": [],
+       "classification": [
+        {
+         "10": {
+          "status": "open",
+          "tick_age": 10
+         },
+         "6": {
+          "completion_births": [
+           [
+            8,
+            [
+             0,
+             2
+            ],
+            3
+           ],
+           [
+            9,
+            [
+             0,
+             6
+            ],
+            4
+           ],
+           [
+            12,
+            [
+             2,
+             4
+            ],
+            4
+           ],
+           [
+            14,
+            [
+             4,
+             6
+            ],
+            5
+           ],
+           [
+            16,
+            [
+             0
+            ],
+            4
+           ],
+           [
+            19,
+            [
+             70,
+             74
+            ],
+            1
+           ],
+           [
+            18,
+            [
+             70,
+             72
+            ],
+            2
+           ],
+           [
+            21,
+            [
+             71,
+             74
+            ],
+            1
+           ],
+           [
+            20,
+            [
+             71,
+             73
+            ],
+            2
+           ],
+           [
+            25,
+            [
+             72,
+             73
+            ],
+            3
+           ],
+           [
+            30,
+            [
+             75,
+             76
+            ],
+            3
+           ],
+           [
+            31,
+            [
+             76,
+             79
+            ],
+            4
+           ],
+           [
+            32,
+            [
+             77,
+             78
+            ],
+            3
+           ],
+           [
+            33,
+            [
+             78,
+             79
+            ],
+            5
+           ],
+           [
+            43,
+            [
+             80,
+             81
+            ],
+            1
+           ],
+           [
+            44,
+            [
+             81,
+             83
+            ],
+            2
+           ],
+           [
+            45,
+            [
+             82,
+             83
+            ],
+            2
+           ],
+           [
+            57,
+            [
+             84,
+             85
+            ],
+            3
+           ],
+           [
+            58,
+            [
+             85,
+             86
+            ],
+            4
+           ],
+           [
+            73,
+            [
+             87,
+             88
+            ],
+            1
+           ]
+          ],
+          "how": "firing completion found",
+          "search_states": 379,
+          "status": "made",
+          "tick_age": 6
+         }
+        },
+        {
+         "10": {
+          "status": "open",
+          "tick_age": 10
+         },
+         "6": {
+          "completion_births": [
+           [
+            73,
+            [
+             4,
+             65
+            ],
+            2
+           ]
+          ],
+          "how": "firing completion found",
+          "search_states": 2,
+          "status": "made",
+          "tick_age": 6
+         }
+        }
+       ]
+      }
+     },
+     "outcome_by_choice_sequences": {
+      "X keeps, Y keeps": 1
+     },
+     "outcome_by_choice_sequences_by_tick": {
+      "X [t6:made/t10:open], Y [t6:made/t10:open]": 1
+     },
+     "outcome_by_distinct_leaves": {
+      "X keeps, Y keeps": 1
+     },
+     "policy": "unrestricted",
+     "sampled": false,
+     "seconds": 0.1,
+     "starved_proposals_by_choice_sequences": [
+      {
+       "choice_sequences": 1,
+       "starved": []
+      }
+     ],
+     "tree_states_expanded": 1
+    }
+   }
+  },
+  "s1": {
+   "donor": 4,
+   "donor_loose": 4,
+   "guarded": {
+    "births": 0,
+    "cap": null,
+    "stall": {
+     "births_before": 0,
+     "shortages": [
+      [
+       4,
+       1
+      ]
+     ],
+     "step": 1
+    },
+    "steps_completed": 0,
+    "ticks": {
+     "X tick 10": {
+      "at_step": 1,
+      "shortages": [
+       [
+        4,
+        1
+       ]
+      ],
+      "status": "stalled"
+     },
+     "X tick 6": {
+      "at_step": 1,
+      "shortages": [
+       [
+        4,
+        1
+       ]
+      ],
+      "status": "stalled"
+     },
+     "Y tick 10": {
+      "at_step": 1,
+      "shortages": [
+       [
+        4,
+        1
+       ]
+      ],
+      "status": "stalled"
+     },
+     "Y tick 6": {
+      "at_step": 1,
+      "shortages": [
+       [
+        4,
+        1
+       ]
+      ],
+      "status": "stalled"
+     }
+    }
+   },
+   "recompute": {
+    "joins_first": {
+     "certificates_by_choice_sequences": [
+      {
+       "certificate": {
+        "kind": "exhausted_parent",
+        "parent_is_donor": true,
+        "parent_knot": 4,
+        "source": "X",
+        "spending_birth_parents": [
+         2,
+         4
+        ],
+        "tick": 10,
+        "unmade_role_parents": [
+         4,
+         6
+        ]
+       },
+       "choice_sequences": 6
+      },
+      {
+       "certificate": {
+        "kind": "exhausted_parent",
+        "parent_is_donor": true,
+        "parent_knot": 4,
+        "source": "X",
+        "spending_birth_parents": [
+         2,
+         4
+        ],
+        "tick": 6,
+        "unmade_role_parents": [
+         4,
+         6
+        ]
+       },
+       "choice_sequences": 6
+      },
+      {
+       "certificate": {
+        "kind": "exhausted_parent",
+        "parent_is_donor": true,
+        "parent_knot": 4,
+        "source": "X",
+        "spending_birth_parents": [
+         4,
+         59,
+         63
+        ],
+        "tick": 10,
+        "unmade_role_parents": [
+         2,
+         4
+        ]
+       },
+       "choice_sequences": 6
+      },
+      {
+       "certificate": {
+        "kind": "exhausted_parent",
+        "parent_is_donor": true,
+        "parent_knot": 4,
+        "source": "X",
+        "spending_birth_parents": [
+         4,
+         59,
+         63
+        ],
+        "tick": 10,
+        "unmade_role_parents": [
+         4,
+         6
+        ]
+       },
+       "choice_sequences": 6
+      },
+      {
+       "certificate": {
+        "kind": "exhausted_parent",
+        "parent_is_donor": true,
+        "parent_knot": 4,
+        "source": "X",
+        "spending_birth_parents": [
+         4,
+         59,
+         63
+        ],
+        "tick": 6,
+        "unmade_role_parents": [
+         2,
+         4
+        ]
+       },
+       "choice_sequences": 6
+      },
+      {
+       "certificate": {
+        "kind": "exhausted_parent",
+        "parent_is_donor": true,
+        "parent_knot": 4,
+        "source": "X",
+        "spending_birth_parents": [
+         4,
+         59,
+         63
+        ],
+        "tick": 6,
+        "unmade_role_parents": [
+         4,
+         6
+        ]
+       },
+       "choice_sequences": 6
+      },
+      {
+       "certificate": {
+        "kind": "exhausted_parent",
+        "parent_is_donor": true,
+        "parent_knot": 4,
+        "source": "X",
+        "spending_birth_parents": [
+         4,
+         64
+        ],
+        "tick": 10,
+        "unmade_role_parents": [
+         2,
+         4
+        ]
+       },
+       "choice_sequences": 6
+      },
+      {
+       "certificate": {
+        "kind": "exhausted_parent",
+        "parent_is_donor": true,
+        "parent_knot": 4,
+        "source": "X",
+        "spending_birth_parents": [
+         4,
+         64
+        ],
+        "tick": 10,
+        "unmade_role_parents": [
+         4,
+         6
+        ]
+       },
+       "choice_sequences": 6
+      },
+      {
+       "certificate": {
+        "kind": "exhausted_parent",
+        "parent_is_donor": true,
+        "parent_knot": 4,
+        "source": "X",
+        "spending_birth_parents": [
+         4,
+         64
+        ],
+        "tick": 6,
+        "unmade_role_parents": [
+         2,
+         4
+        ]
+       },
+       "choice_sequences": 6
+      },
+      {
+       "certificate": {
+        "kind": "exhausted_parent",
+        "parent_is_donor": true,
+        "parent_knot": 4,
+        "source": "X",
+        "spending_birth_parents": [
+         4,
+         64
+        ],
+        "tick": 6,
+        "unmade_role_parents": [
+         4,
+         6
+        ]
+       },
+       "choice_sequences": 6
+      },
+      {
+       "certificate": {
+        "kind": "exhausted_parent",
+        "parent_is_donor": true,
+        "parent_knot": 4,
+        "source": "X",
+        "spending_birth_parents": [
+         4,
+         65
+        ],
+        "tick": 10,
+        "unmade_role_parents": [
+         2,
+         4
+        ]
+       },
+       "choice_sequences": 6
+      },
+      {
+       "certificate": {
+        "kind": "exhausted_parent",
+        "parent_is_donor": true,
+        "parent_knot": 4,
+        "source": "X",
+        "spending_birth_parents": [
+         4,
+         65
+        ],
+        "tick": 10,
+        "unmade_role_parents": [
+         4,
+         6
+        ]
+       },
+       "choice_sequences": 6
+      },
+      {
+       "certificate": {
+        "kind": "exhausted_parent",
+        "parent_is_donor": true,
+        "parent_knot": 4,
+        "source": "X",
+        "spending_birth_parents": [
+         4,
+         65
+        ],
+        "tick": 6,
+        "unmade_role_parents": [
+         2,
+         4
+        ]
+       },
+       "choice_sequences": 6
+      },
+      {
+       "certificate": {
+        "kind": "exhausted_parent",
+        "parent_is_donor": true,
+        "parent_knot": 4,
+        "source": "X",
+        "spending_birth_parents": [
+         4,
+         65
+        ],
+        "tick": 6,
+        "unmade_role_parents": [
+         4,
+         6
+        ]
+       },
+       "choice_sequences": 6
+      },
+      {
+       "certificate": {
+        "kind": "exhausted_parent",
+        "parent_is_donor": true,
+        "parent_knot": 4,
+        "source": "X",
+        "spending_birth_parents": [
+         4,
+         6
+        ],
+        "tick": 10,
+        "unmade_role_parents": [
+         2,
+         4
+        ]
+       },
+       "choice_sequences": 6
+      },
+      {
+       "certificate": {
+        "kind": "exhausted_parent",
+        "parent_is_donor": true,
+        "parent_knot": 4,
+        "source": "X",
+        "spending_birth_parents": [
+         4,
+         6
+        ],
+        "tick": 6,
+        "unmade_role_parents": [
+         2,
+         4
+        ]
+       },
+       "choice_sequences": 6
+      },
+      {
+       "certificate": {
+        "kind": "exhausted_parent",
+        "parent_is_donor": true,
+        "parent_knot": 4,
+        "source": "Y",
+        "spending_birth_parents": [
+         2,
+         4
+        ],
+        "tick": 10,
+        "unmade_role_parents": [
+         64,
+         4
+        ]
+       },
+       "choice_sequences": 6
+      },
+      {
+       "certificate": {
+        "kind": "exhausted_parent",
+        "parent_is_donor": true,
+        "parent_knot": 4,
+        "source": "Y",
+        "spending_birth_parents": [
+         2,
+         4
+        ],
+        "tick": 6,
+        "unmade_role_parents": [
+         4,
+         65
+        ]
+       },
+       "choice_sequences": 6
+      },
+      {
+       "certificate": {
+        "kind": "exhausted_parent",
+        "parent_is_donor": true,
+        "parent_knot": 4,
+        "source": "Y",
+        "spending_birth_parents": [
+         4,
+         59,
+         63
+        ],
+        "tick": 10,
+        "unmade_role_parents": [
+         64,
+         4
+        ]
+       },
+       "choice_sequences": 6
+      },
+      {
+       "certificate": {
+        "kind": "exhausted_parent",
+        "parent_is_donor": true,
+        "parent_knot": 4,
+        "source": "Y",
+        "spending_birth_parents": [
+         4,
+         59,
+         63
+        ],
+        "tick": 6,
+        "unmade_role_parents": [
+         4,
+         65
+        ]
+       },
+       "choice_sequences": 6
+      },
+      {
+       "certificate": {
+        "kind": "exhausted_parent",
+        "parent_is_donor": true,
+        "parent_knot": 4,
+        "source": "Y",
+        "spending_birth_parents": [
+         4,
+         64
+        ],
+        "tick": 6,
+        "unmade_role_parents": [
+         4,
+         65
+        ]
+       },
+       "choice_sequences": 6
+      },
+      {
+       "certificate": {
+        "kind": "exhausted_parent",
+        "parent_is_donor": true,
+        "parent_knot": 4,
+        "source": "Y",
+        "spending_birth_parents": [
+         4,
+         65
+        ],
+        "tick": 10,
+        "unmade_role_parents": [
+         64,
+         4
+        ]
+       },
+       "choice_sequences": 6
+      },
+      {
+       "certificate": {
+        "kind": "exhausted_parent",
+        "parent_is_donor": true,
+        "parent_knot": 4,
+        "source": "Y",
+        "spending_birth_parents": [
+         4,
+         6
+        ],
+        "tick": 10,
+        "unmade_role_parents": [
+         64,
+         4
+        ]
+       },
+       "choice_sequences": 6
+      },
+      {
+       "certificate": {
+        "kind": "exhausted_parent",
+        "parent_is_donor": true,
+        "parent_knot": 4,
+        "source": "Y",
+        "spending_birth_parents": [
+         4,
+         6
+        ],
+        "tick": 6,
+        "unmade_role_parents": [
+         4,
+         65
+        ]
+       },
+       "choice_sequences": 6
+      }
+     ],
+     "choice_sequences": 120,
+     "contested_at_start": true,
+     "distinct_leaves": 120,
+     "donor_loose": 4,
+     "enabled_proposals_through_donor": [
+      {
+       "parents": [
+        4,
+        59,
+        63
+       ],
+       "role_of": [],
+       "side": "Y"
+      },
+      {
+       "parents": [
+        2,
+        4
+       ],
+       "role_of": [
+        [
+         "X",
+         6
+        ],
+        [
+         "X",
+         10
+        ]
+       ],
+       "side": "X"
+      },
+      {
+       "parents": [
+        4,
+        6
+       ],
+       "role_of": [
+        [
+         "X",
+         6
+        ],
+        [
+         "X",
+         10
+        ]
+       ],
+       "side": "X"
+      },
+      {
+       "parents": [
+        4,
+        64
+       ],
+       "role_of": [
+        [
+         "Y",
+         10
+        ]
+       ],
+       "side": "Y"
+      },
+      {
+       "parents": [
+        4,
+        65
+       ],
+       "role_of": [
+        [
+         "Y",
+         6
+        ]
+       ],
+       "side": "Y"
+      }
+     ],
+     "examples": {
+      "X keeps, Y keeps": {
+       "certificates": [
+        {},
+        {}
+       ],
+       "choice_sequence": [
+        [
+         2,
+         4
+        ],
+        [
+         4,
+         6
+        ],
+        [
+         4,
+         64
+        ],
+        [
+         4,
+         65
+        ]
+       ],
+       "classification": [
+        {
+         "10": {
+          "status": "open",
+          "tick_age": 10
+         },
+         "6": {
+          "search": "exhausted",
+          "search_states": 128,
+          "status": "open",
+          "tick_age": 6
+         }
+        },
+        {
+         "10": {
+          "status": "open",
+          "tick_age": 10
+         },
+         "6": {
+          "how": "already written at the leaf",
+          "status": "made",
+          "tick_age": 6
+         }
+        }
+       ]
+      },
+      "X keeps, Y lost": {
+       "certificates": [
+        {},
+        {
+         "6": {
+          "kind": "exhausted_parent",
+          "parent_is_donor": true,
+          "parent_knot": 4,
+          "spending_birth_parents": [
+           4,
+           64
+          ],
+          "spending_event": 4,
+          "unmade_role_parents": [
+           4,
+           65
+          ]
+         }
+        }
+       ],
+       "choice_sequence": [
+        [
+         4,
+         59,
+         63
+        ],
+        [
+         2,
+         4
+        ],
+        [
+         4,
+         6
+        ],
+        [
+         4,
+         64
+        ]
+       ],
+       "classification": [
+        {
+         "10": {
+          "status": "open",
+          "tick_age": 10
+         },
+         "6": {
+          "search": "exhausted",
+          "search_states": 128,
+          "status": "open",
+          "tick_age": 6
+         }
+        },
+        {
+         "10": {
+          "status": "open",
+          "tick_age": 10
+         },
+         "6": {
+          "search": "exhausted",
+          "search_states": 1,
+          "status": "lost",
+          "tick_age": 6
+         }
+        }
+       ]
+      },
+      "X lost, Y keeps": {
+       "certificates": [
+        {
+         "10": {
+          "kind": "exhausted_parent",
+          "parent_is_donor": true,
+          "parent_knot": 4,
+          "spending_birth_parents": [
+           4,
+           65
+          ],
+          "spending_event": 4,
+          "unmade_role_parents": [
+           4,
+           6
+          ]
+         },
+         "6": {
+          "kind": "exhausted_parent",
+          "parent_is_donor": true,
+          "parent_knot": 4,
+          "spending_birth_parents": [
+           4,
+           65
+          ],
+          "spending_event": 4,
+          "unmade_role_parents": [
+           4,
+           6
+          ]
+         }
+        },
+        {}
+       ],
+       "choice_sequence": [
+        [
+         4,
+         59,
+         63
+        ],
+        [
+         2,
+         4
+        ],
+        [
+         4,
+         64
+        ],
+        [
+         4,
+         65
+        ]
+       ],
+       "classification": [
+        {
+         "10": {
+          "status": "lost",
+          "tick_age": 10
+         },
+         "6": {
+          "search": "exhausted",
+          "search_states": 1,
+          "status": "lost",
+          "tick_age": 6
+         }
+        },
+        {
+         "10": {
+          "status": "open",
+          "tick_age": 10
+         },
+         "6": {
+          "how": "already written at the leaf",
+          "status": "made",
+          "tick_age": 6
+         }
+        }
+       ]
+      }
+     },
+     "outcome_by_choice_sequences": {
+      "X keeps, Y keeps": 24,
+      "X keeps, Y lost": 48,
+      "X lost, Y keeps": 48
+     },
+     "outcome_by_choice_sequences_by_tick": {
+      "X [t6:lost/t10:lost], Y [t6:made/t10:open]": 48,
+      "X [t6:open/t10:open], Y [t6:lost/t10:open]": 24,
+      "X [t6:open/t10:open], Y [t6:made/t10:lost]": 24,
+      "X [t6:open/t10:open], Y [t6:made/t10:open]": 24
+     },
+     "outcome_by_distinct_leaves": {
+      "X keeps, Y keeps": 24,
+      "X keeps, Y lost": 48,
+      "X lost, Y keeps": 48
+     },
+     "policy": "joins_first",
+     "sampled": false,
+     "seconds": 2.5,
+     "starved_proposals_by_choice_sequences": [
+      {
+       "choice_sequences": 24,
+       "starved": [
+        [
+         "Y",
+         [
+          4,
+          65
+         ],
+         [
+          [
+           "Y",
+           6
+          ]
+         ]
+        ]
+       ]
+      },
+      {
+       "choice_sequences": 24,
+       "starved": [
+        [
+         "Y",
+         [
+          4,
+          64
+         ],
+         [
+          [
+           "Y",
+           10
+          ]
+         ]
+        ]
+       ]
+      },
+      {
+       "choice_sequences": 24,
+       "starved": [
+        [
+         "X",
+         [
+          4,
+          6
+         ],
+         [
+          [
+           "X",
+           6
+          ],
+          [
+           "X",
+           10
+          ]
+         ]
+        ]
+       ]
+      },
+      {
+       "choice_sequences": 24,
+       "starved": [
+        [
+         "X",
+         [
+          2,
+          4
+         ],
+         [
+          [
+           "X",
+           6
+          ],
+          [
+           "X",
+           10
+          ]
+         ]
+        ]
+       ]
+      },
+      {
+       "choice_sequences": 24,
+       "starved": [
+        [
+         "Y",
+         [
+          4,
+          59,
+          63
+         ],
+         []
+        ]
+       ]
+      }
+     ],
+     "tree_states_expanded": 206
+    },
+    "unrestricted": {
+     "certificates_by_choice_sequences": [
+      {
+       "certificate": {
+        "kind": "exhausted_parent",
+        "parent_is_donor": true,
+        "parent_knot": 4,
+        "source": "X",
+        "spending_birth_parents": [
+         2,
+         4
+        ],
+        "tick": 10,
+        "unmade_role_parents": [
+         4,
+         6
+        ]
+       },
+       "choice_sequences": 6
+      },
+      {
+       "certificate": {
+        "kind": "exhausted_parent",
+        "parent_is_donor": true,
+        "parent_knot": 4,
+        "source": "X",
+        "spending_birth_parents": [
+         2,
+         4
+        ],
+        "tick": 6,
+        "unmade_role_parents": [
+         4,
+         6
+        ]
+       },
+       "choice_sequences": 6
+      },
+      {
+       "certificate": {
+        "kind": "exhausted_parent",
+        "parent_is_donor": true,
+        "parent_knot": 4,
+        "source": "X",
+        "spending_birth_parents": [
+         4,
+         59,
+         63
+        ],
+        "tick": 10,
+        "unmade_role_parents": [
+         2,
+         4
+        ]
+       },
+       "choice_sequences": 6
+      },
+      {
+       "certificate": {
+        "kind": "exhausted_parent",
+        "parent_is_donor": true,
+        "parent_knot": 4,
+        "source": "X",
+        "spending_birth_parents": [
+         4,
+         59,
+         63
+        ],
+        "tick": 10,
+        "unmade_role_parents": [
+         4,
+         6
+        ]
+       },
+       "choice_sequences": 6
+      },
+      {
+       "certificate": {
+        "kind": "exhausted_parent",
+        "parent_is_donor": true,
+        "parent_knot": 4,
+        "source": "X",
+        "spending_birth_parents": [
+         4,
+         59,
+         63
+        ],
+        "tick": 6,
+        "unmade_role_parents": [
+         2,
+         4
+        ]
+       },
+       "choice_sequences": 6
+      },
+      {
+       "certificate": {
+        "kind": "exhausted_parent",
+        "parent_is_donor": true,
+        "parent_knot": 4,
+        "source": "X",
+        "spending_birth_parents": [
+         4,
+         59,
+         63
+        ],
+        "tick": 6,
+        "unmade_role_parents": [
+         4,
+         6
+        ]
+       },
+       "choice_sequences": 6
+      },
+      {
+       "certificate": {
+        "kind": "exhausted_parent",
+        "parent_is_donor": true,
+        "parent_knot": 4,
+        "source": "X",
+        "spending_birth_parents": [
+         4,
+         64
+        ],
+        "tick": 10,
+        "unmade_role_parents": [
+         2,
+         4
+        ]
+       },
+       "choice_sequences": 6
+      },
+      {
+       "certificate": {
+        "kind": "exhausted_parent",
+        "parent_is_donor": true,
+        "parent_knot": 4,
+        "source": "X",
+        "spending_birth_parents": [
+         4,
+         64
+        ],
+        "tick": 10,
+        "unmade_role_parents": [
+         4,
+         6
+        ]
+       },
+       "choice_sequences": 6
+      },
+      {
+       "certificate": {
+        "kind": "exhausted_parent",
+        "parent_is_donor": true,
+        "parent_knot": 4,
+        "source": "X",
+        "spending_birth_parents": [
+         4,
+         64
+        ],
+        "tick": 6,
+        "unmade_role_parents": [
+         2,
+         4
+        ]
+       },
+       "choice_sequences": 6
+      },
+      {
+       "certificate": {
+        "kind": "exhausted_parent",
+        "parent_is_donor": true,
+        "parent_knot": 4,
+        "source": "X",
+        "spending_birth_parents": [
+         4,
+         64
+        ],
+        "tick": 6,
+        "unmade_role_parents": [
+         4,
+         6
+        ]
+       },
+       "choice_sequences": 6
+      },
+      {
+       "certificate": {
+        "kind": "exhausted_parent",
+        "parent_is_donor": true,
+        "parent_knot": 4,
+        "source": "X",
+        "spending_birth_parents": [
+         4,
+         65
+        ],
+        "tick": 10,
+        "unmade_role_parents": [
+         2,
+         4
+        ]
+       },
+       "choice_sequences": 6
+      },
+      {
+       "certificate": {
+        "kind": "exhausted_parent",
+        "parent_is_donor": true,
+        "parent_knot": 4,
+        "source": "X",
+        "spending_birth_parents": [
+         4,
+         65
+        ],
+        "tick": 10,
+        "unmade_role_parents": [
+         4,
+         6
+        ]
+       },
+       "choice_sequences": 6
+      },
+      {
+       "certificate": {
+        "kind": "exhausted_parent",
+        "parent_is_donor": true,
+        "parent_knot": 4,
+        "source": "X",
+        "spending_birth_parents": [
+         4,
+         65
+        ],
+        "tick": 6,
+        "unmade_role_parents": [
+         2,
+         4
+        ]
+       },
+       "choice_sequences": 6
+      },
+      {
+       "certificate": {
+        "kind": "exhausted_parent",
+        "parent_is_donor": true,
+        "parent_knot": 4,
+        "source": "X",
+        "spending_birth_parents": [
+         4,
+         65
+        ],
+        "tick": 6,
+        "unmade_role_parents": [
+         4,
+         6
+        ]
+       },
+       "choice_sequences": 6
+      },
+      {
+       "certificate": {
+        "kind": "exhausted_parent",
+        "parent_is_donor": true,
+        "parent_knot": 4,
+        "source": "X",
+        "spending_birth_parents": [
+         4,
+         6
+        ],
+        "tick": 10,
+        "unmade_role_parents": [
+         2,
+         4
+        ]
+       },
+       "choice_sequences": 6
+      },
+      {
+       "certificate": {
+        "kind": "exhausted_parent",
+        "parent_is_donor": true,
+        "parent_knot": 4,
+        "source": "X",
+        "spending_birth_parents": [
+         4,
+         6
+        ],
+        "tick": 6,
+        "unmade_role_parents": [
+         2,
+         4
+        ]
+       },
+       "choice_sequences": 6
+      },
+      {
+       "certificate": {
+        "kind": "exhausted_parent",
+        "parent_is_donor": true,
+        "parent_knot": 4,
+        "source": "Y",
+        "spending_birth_parents": [
+         2,
+         4
+        ],
+        "tick": 10,
+        "unmade_role_parents": [
+         64,
+         4
+        ]
+       },
+       "choice_sequences": 6
+      },
+      {
+       "certificate": {
+        "kind": "exhausted_parent",
+        "parent_is_donor": true,
+        "parent_knot": 4,
+        "source": "Y",
+        "spending_birth_parents": [
+         2,
+         4
+        ],
+        "tick": 6,
+        "unmade_role_parents": [
+         4,
+         65
+        ]
+       },
+       "choice_sequences": 6
+      },
+      {
+       "certificate": {
+        "kind": "exhausted_parent",
+        "parent_is_donor": true,
+        "parent_knot": 4,
+        "source": "Y",
+        "spending_birth_parents": [
+         4,
+         59,
+         63
+        ],
+        "tick": 10,
+        "unmade_role_parents": [
+         64,
+         4
+        ]
+       },
+       "choice_sequences": 6
+      },
+      {
+       "certificate": {
+        "kind": "exhausted_parent",
+        "parent_is_donor": true,
+        "parent_knot": 4,
+        "source": "Y",
+        "spending_birth_parents": [
+         4,
+         59,
+         63
+        ],
+        "tick": 6,
+        "unmade_role_parents": [
+         4,
+         65
+        ]
+       },
+       "choice_sequences": 6
+      },
+      {
+       "certificate": {
+        "kind": "exhausted_parent",
+        "parent_is_donor": true,
+        "parent_knot": 4,
+        "source": "Y",
+        "spending_birth_parents": [
+         4,
+         64
+        ],
+        "tick": 6,
+        "unmade_role_parents": [
+         4,
+         65
+        ]
+       },
+       "choice_sequences": 6
+      },
+      {
+       "certificate": {
+        "kind": "exhausted_parent",
+        "parent_is_donor": true,
+        "parent_knot": 4,
+        "source": "Y",
+        "spending_birth_parents": [
+         4,
+         65
+        ],
+        "tick": 10,
+        "unmade_role_parents": [
+         64,
+         4
+        ]
+       },
+       "choice_sequences": 6
+      },
+      {
+       "certificate": {
+        "kind": "exhausted_parent",
+        "parent_is_donor": true,
+        "parent_knot": 4,
+        "source": "Y",
+        "spending_birth_parents": [
+         4,
+         6
+        ],
+        "tick": 10,
+        "unmade_role_parents": [
+         64,
+         4
+        ]
+       },
+       "choice_sequences": 6
+      },
+      {
+       "certificate": {
+        "kind": "exhausted_parent",
+        "parent_is_donor": true,
+        "parent_knot": 4,
+        "source": "Y",
+        "spending_birth_parents": [
+         4,
+         6
+        ],
+        "tick": 6,
+        "unmade_role_parents": [
+         4,
+         65
+        ]
+       },
+       "choice_sequences": 6
+      }
+     ],
+     "choice_sequences": 120,
+     "contested_at_start": true,
+     "distinct_leaves": 120,
+     "donor_loose": 4,
+     "enabled_proposals_through_donor": [
+      {
+       "parents": [
+        4,
+        59,
+        63
+       ],
+       "role_of": [],
+       "side": "Y"
+      },
+      {
+       "parents": [
+        2,
+        4
+       ],
+       "role_of": [
+        [
+         "X",
+         6
+        ],
+        [
+         "X",
+         10
+        ]
+       ],
+       "side": "X"
+      },
+      {
+       "parents": [
+        4,
+        6
+       ],
+       "role_of": [
+        [
+         "X",
+         6
+        ],
+        [
+         "X",
+         10
+        ]
+       ],
+       "side": "X"
+      },
+      {
+       "parents": [
+        4,
+        64
+       ],
+       "role_of": [
+        [
+         "Y",
+         10
+        ]
+       ],
+       "side": "Y"
+      },
+      {
+       "parents": [
+        4,
+        65
+       ],
+       "role_of": [
+        [
+         "Y",
+         6
+        ]
+       ],
+       "side": "Y"
+      }
+     ],
+     "examples": {
+      "X keeps, Y keeps": {
+       "certificates": [
+        {},
+        {}
+       ],
+       "choice_sequence": [
+        [
+         2,
+         4
+        ],
+        [
+         4,
+         6
+        ],
+        [
+         4,
+         64
+        ],
+        [
+         4,
+         65
+        ]
+       ],
+       "classification": [
+        {
+         "10": {
+          "status": "open",
+          "tick_age": 10
+         },
+         "6": {
+          "completion_births": [
+           [
+            8,
+            [
+             0,
+             2
+            ],
+            4
+           ],
+           [
+            16,
+            [
+             0
+            ],
+            3
+           ],
+           [
+            19,
+            [
+             74,
+             75
+            ],
+            1
+           ],
+           [
+            18,
+            [
+             70,
+             74
+            ],
+            2
+           ],
+           [
+            25,
+            [
+             70,
+             71
+            ],
+            2
+           ],
+           [
+            9,
+            [
+             0,
+             6
+            ],
+            6
+           ],
+           [
+            21,
+            [
+             75,
+             79
+            ],
+            1
+           ],
+           [
+            20,
+            [
+             71,
+             79
+            ],
+            2
+           ],
+           [
+            30,
+            [
+             76,
+             77
+            ],
+            3
+           ],
+           [
+            31,
+            [
+             77,
+             78
+            ],
+            4
+           ],
+           [
+            32,
+            [
+             80,
+             81
+            ],
+            3
+           ],
+           [
+            33,
+            [
+             78,
+             81
+            ],
+            5
+           ],
+           [
+            43,
+            [
+             82,
+             83
+            ],
+            1
+           ],
+           [
+            45,
+            [
+             84,
+             85
+            ],
+            1
+           ],
+           [
+            44,
+            [
+             83,
+             85
+            ],
+            2
+           ],
+           [
+            57,
+            [
+             86,
+             88
+            ],
+            3
+           ],
+           [
+            58,
+            [
+             87,
+             88
+            ],
+            4
+           ],
+           [
+            73,
+            [
+             89,
+             90
+            ],
+            1
+           ]
+          ],
+          "how": "firing completion found",
+          "search_states": 740,
+          "status": "made",
+          "tick_age": 6
+         }
+        },
+        {
+         "10": {
+          "status": "open",
+          "tick_age": 10
+         },
+         "6": {
+          "how": "already written at the leaf",
+          "status": "made",
+          "tick_age": 6
+         }
+        }
+       ]
+      },
+      "X keeps, Y lost": {
+       "certificates": [
+        {},
+        {
+         "6": {
+          "kind": "exhausted_parent",
+          "parent_is_donor": true,
+          "parent_knot": 4,
+          "spending_birth_parents": [
+           4,
+           64
+          ],
+          "spending_event": 4,
+          "unmade_role_parents": [
+           4,
+           65
+          ]
+         }
+        }
+       ],
+       "choice_sequence": [
+        [
+         4,
+         59,
+         63
+        ],
+        [
+         2,
+         4
+        ],
+        [
+         4,
+         6
+        ],
+        [
+         4,
+         64
+        ]
+       ],
+       "classification": [
+        {
+         "10": {
+          "status": "open",
+          "tick_age": 10
+         },
+         "6": {
+          "completion_births": [
+           [
+            8,
+            [
+             0,
+             2
+            ],
+            4
+           ],
+           [
+            16,
+            [
+             0
+            ],
+            3
+           ],
+           [
+            19,
+            [
+             74,
+             75
+            ],
+            1
+           ],
+           [
+            18,
+            [
+             71,
+             74
+            ],
+            2
+           ],
+           [
+            25,
+            [
+             71,
+             72
+            ],
+            2
+           ],
+           [
+            9,
+            [
+             0,
+             6
+            ],
+            6
+           ],
+           [
+            21,
+            [
+             75,
+             79
+            ],
+            1
+           ],
+           [
+            20,
+            [
+             72,
+             79
+            ],
+            2
+           ],
+           [
+            30,
+            [
+             76,
+             77
+            ],
+            3
+           ],
+           [
+            31,
+            [
+             77,
+             78
+            ],
+            4
+           ],
+           [
+            32,
+            [
+             80,
+             81
+            ],
+            3
+           ],
+           [
+            33,
+            [
+             78,
+             81
+            ],
+            5
+           ],
+           [
+            43,
+            [
+             82,
+             83
+            ],
+            1
+           ],
+           [
+            45,
+            [
+             84,
+             85
+            ],
+            1
+           ],
+           [
+            44,
+            [
+             83,
+             85
+            ],
+            2
+           ],
+           [
+            57,
+            [
+             86,
+             88
+            ],
+            3
+           ],
+           [
+            58,
+            [
+             87,
+             88
+            ],
+            4
+           ],
+           [
+            73,
+            [
+             89,
+             90
+            ],
+            1
+           ]
+          ],
+          "how": "firing completion found",
+          "search_states": 740,
+          "status": "made",
+          "tick_age": 6
+         }
+        },
+        {
+         "10": {
+          "status": "open",
+          "tick_age": 10
+         },
+         "6": {
+          "search": "exhausted",
+          "search_states": 1,
+          "status": "lost",
+          "tick_age": 6
+         }
+        }
+       ]
+      },
+      "X lost, Y keeps": {
+       "certificates": [
+        {
+         "10": {
+          "kind": "exhausted_parent",
+          "parent_is_donor": true,
+          "parent_knot": 4,
+          "spending_birth_parents": [
+           4,
+           65
+          ],
+          "spending_event": 4,
+          "unmade_role_parents": [
+           4,
+           6
+          ]
+         },
+         "6": {
+          "kind": "exhausted_parent",
+          "parent_is_donor": true,
+          "parent_knot": 4,
+          "spending_birth_parents": [
+           4,
+           65
+          ],
+          "spending_event": 4,
+          "unmade_role_parents": [
+           4,
+           6
+          ]
+         }
+        },
+        {}
+       ],
+       "choice_sequence": [
+        [
+         4,
+         59,
+         63
+        ],
+        [
+         2,
+         4
+        ],
+        [
+         4,
+         64
+        ],
+        [
+         4,
+         65
+        ]
+       ],
+       "classification": [
+        {
+         "10": {
+          "status": "lost",
+          "tick_age": 10
+         },
+         "6": {
+          "search": "exhausted",
+          "search_states": 1,
+          "status": "lost",
+          "tick_age": 6
+         }
+        },
+        {
+         "10": {
+          "status": "open",
+          "tick_age": 10
+         },
+         "6": {
+          "how": "already written at the leaf",
+          "status": "made",
+          "tick_age": 6
+         }
+        }
+       ]
+      }
+     },
+     "outcome_by_choice_sequences": {
+      "X keeps, Y keeps": 24,
+      "X keeps, Y lost": 48,
+      "X lost, Y keeps": 48
+     },
+     "outcome_by_choice_sequences_by_tick": {
+      "X [t6:lost/t10:lost], Y [t6:made/t10:open]": 48,
+      "X [t6:made/t10:open], Y [t6:lost/t10:open]": 24,
+      "X [t6:made/t10:open], Y [t6:made/t10:lost]": 24,
+      "X [t6:made/t10:open], Y [t6:made/t10:open]": 24
+     },
+     "outcome_by_distinct_leaves": {
+      "X keeps, Y keeps": 24,
+      "X keeps, Y lost": 48,
+      "X lost, Y keeps": 48
+     },
+     "policy": "unrestricted",
+     "sampled": false,
+     "seconds": 13.7,
+     "starved_proposals_by_choice_sequences": [
+      {
+       "choice_sequences": 24,
+       "starved": [
+        [
+         "Y",
+         [
+          4,
+          65
+         ],
+         [
+          [
+           "Y",
+           6
+          ]
+         ]
+        ]
+       ]
+      },
+      {
+       "choice_sequences": 24,
+       "starved": [
+        [
+         "Y",
+         [
+          4,
+          64
+         ],
+         [
+          [
+           "Y",
+           10
+          ]
+         ]
+        ]
+       ]
+      },
+      {
+       "choice_sequences": 24,
+       "starved": [
+        [
+         "X",
+         [
+          4,
+          6
+         ],
+         [
+          [
+           "X",
+           6
+          ],
+          [
+           "X",
+           10
+          ]
+         ]
+        ]
+       ]
+      },
+      {
+       "choice_sequences": 24,
+       "starved": [
+        [
+         "X",
+         [
+          2,
+          4
+         ],
+         [
+          [
+           "X",
+           6
+          ],
+          [
+           "X",
+           10
+          ]
+         ]
+        ]
+       ]
+      },
+      {
+       "choice_sequences": 24,
+       "starved": [
+        [
+         "Y",
+         [
+          4,
+          59,
+          63
+         ],
+         []
+        ]
+       ]
+      }
+     ],
+     "tree_states_expanded": 206
+    }
+   }
+  },
+  "x": "R0",
+  "y": "R5"
+ },
+ "addendum_sha256": "245a07ebaf79ee6dcc3ef88f6fdc54f5efe61d00aba290283192e067894f3be1"
+}

@@ -1,0 +1,1067 @@
+{
+ "structure": "seven",
+ "sources": {
+  "fixtures": "b4b4fe62f796ec138a48e08e1264e37264b0a964be44c8423c6890d888b50c49",
+  "phase_clocks": "50ec776eb7120867a78b035027e9a3a48f4cb71a226a38054a99a3fedccf09e9",
+  "preregistration": "59cb60d8f25af312545849616b7a7928e60bb9ab1879089effe9350d2e62ba3f"
+ },
+ "counting_null_sha256": "ba0c4aaf441ebcda4e7321262ea48eedbb384282127a52df82359e25330576d0",
+ "founders": 7,
+ "distinctions": 25,
+ "shared_distinctions": 9,
+ "loose_per_founder": [
+  3,
+  0,
+  3,
+  3,
+  3,
+  2,
+  2
+ ],
+ "founder_arities": [
+  6,
+  3,
+  5,
+  5,
+  7,
+  4,
+  4
+ ],
+ "step_cap": 8,
+ "knot_cap": 300,
+ "horizon_parent_steps": 6,
+ "knots_by_step_through_first_step_over_cap": [
+  7,
+  15,
+  27,
+  46,
+  78,
+  134,
+  235,
+  420
+ ],
+ "stalls_through_horizon": null,
+ "both_laws_give_same_births": true,
+ "layers": [
+  {
+   "parent_step": 1,
+   "births": 8,
+   "knots": 15,
+   "parents": {
+    "2": 8
+   },
+   "fresh": {
+    "3": 7,
+    "4": 1
+   },
+   "arity": {
+    "5": 7,
+    "6": 1
+   }
+  },
+  {
+   "parent_step": 2,
+   "births": 12,
+   "knots": 27,
+   "parents": {
+    "2": 11,
+    "3": 1
+   },
+   "fresh": {
+    "3": 6,
+    "4": 6
+   },
+   "arity": {
+    "5": 5,
+    "6": 7
+   }
+  },
+  {
+   "parent_step": 3,
+   "births": 19,
+   "knots": 46,
+   "parents": {
+    "2": 15,
+    "3": 4
+   },
+   "fresh": {
+    "3": 3,
+    "4": 14,
+    "5": 2
+   },
+   "arity": {
+    "5": 1,
+    "6": 14,
+    "7": 4
+   }
+  },
+  {
+   "parent_step": 4,
+   "births": 32,
+   "knots": 78,
+   "parents": {
+    "2": 21,
+    "3": 11
+   },
+   "fresh": {
+    "3": 1,
+    "4": 18,
+    "5": 13
+   },
+   "arity": {
+    "6": 11,
+    "7": 19,
+    "8": 2
+   }
+  },
+  {
+   "parent_step": 5,
+   "births": 56,
+   "knots": 134,
+   "parents": {
+    "2": 29,
+    "3": 26,
+    "4": 1
+   },
+   "fresh": {
+    "4": 14,
+    "5": 39,
+    "6": 3
+   },
+   "arity": {
+    "6": 2,
+    "7": 36,
+    "8": 17,
+    "9": 1
+   }
+  },
+  {
+   "parent_step": 6,
+   "births": 101,
+   "knots": 235,
+   "parents": {
+    "2": 40,
+    "3": 55,
+    "4": 6
+   },
+   "fresh": {
+    "4": 6,
+    "5": 69,
+    "6": 26
+   },
+   "arity": {
+    "7": 28,
+    "8": 59,
+    "9": 14
+   }
+  }
+ ],
+ "arities_met": {
+  "founders": {
+   "3": 1,
+   "4": 2,
+   "5": 2,
+   "6": 1,
+   "7": 1
+  },
+  "newborns": {
+   "5": 13,
+   "6": 35,
+   "7": 87,
+   "8": 78,
+   "9": 15
+  }
+ },
+ "allowed_ones_by_arity": {
+  "3": {
+   "rule": [
+    2
+   ],
+   "parity": [
+    0,
+    2
+   ],
+   "nae": [
+    1,
+    2
+   ]
+  },
+  "4": {
+   "rule": [
+    2
+   ],
+   "parity": [
+    0,
+    2,
+    4
+   ],
+   "nae": [
+    1,
+    2,
+    3
+   ]
+  },
+  "5": {
+   "rule": [
+    2,
+    4
+   ],
+   "parity": [
+    0,
+    2,
+    4
+   ],
+   "nae": [
+    1,
+    2,
+    3,
+    4
+   ]
+  },
+  "6": {
+   "rule": [
+    2,
+    4
+   ],
+   "parity": [
+    0,
+    2,
+    4,
+    6
+   ],
+   "nae": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ]
+  },
+  "7": {
+   "rule": [
+    2,
+    4,
+    6
+   ],
+   "parity": [
+    0,
+    2,
+    4,
+    6
+   ],
+   "nae": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ]
+  },
+  "8": {
+   "rule": [
+    2,
+    4,
+    6
+   ],
+   "parity": [
+    0,
+    2,
+    4,
+    6,
+    8
+   ],
+   "nae": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ]
+  },
+  "9": {
+   "rule": [
+    2,
+    4,
+    6,
+    8
+   ],
+   "parity": [
+    0,
+    2,
+    4,
+    6,
+    8
+   ],
+   "nae": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+   ]
+  }
+ },
+ "arms": {
+  "rule": {
+   "lawful_valued_starts": 92312,
+   "selection": "drawn",
+   "starts_used": 1024,
+   "raw_draws_for_selection": 364372,
+   "starts_sha256": "6b21645fc74486efd37467ff9e74e3059ea4e8c407706632aecaf7b853eb39e1",
+   "distinct_carried_vectors_among_starts": 345,
+   "lawful_carried_vectors": 712,
+   "sat_instances": [
+    {
+     "depth": 1,
+     "variables": 70,
+     "clauses": 152
+    },
+    {
+     "depth": 2,
+     "variables": 236,
+     "clauses": 649
+    },
+    {
+     "depth": 3,
+     "variables": 530,
+     "clauses": 1544
+    },
+    {
+     "depth": 4,
+     "variables": 1086,
+     "clauses": 3262
+    },
+    {
+     "depth": 5,
+     "variables": 2185,
+     "clauses": 6700
+    },
+    {
+     "depth": 6,
+     "variables": 4418,
+     "clauses": 13778
+    }
+   ],
+   "survivors_by_step": [
+    1024,
+    1024,
+    1024,
+    1024,
+    1024,
+    1024,
+    1024
+   ],
+   "all_lawful_starts_surviving_by_step": [
+    92312,
+    92312,
+    92312,
+    92312,
+    92312,
+    92312,
+    92312
+   ],
+   "lawful_starts_without_survivor_at_horizon": 0,
+   "horizon_history_uniqueness_over_drawn_starts": {
+    "no_history": 0,
+    "exactly_one_history": 0,
+    "at_least_two_histories": 1024
+   },
+   "horizon_history_uniqueness_over_all_lawful_starts": {
+    "False": 92312
+   },
+   "max_frontier_knots_by_depth": {
+    "1": 6,
+    "2": 9
+   },
+   "counting_stopped_at_depth": 3,
+   "counting_stop_reason": "state cap",
+   "distinct_carried_vectors_finished_at_stop_depth": 0,
+   "memo_states_at_stop": 3000002,
+   "max_frontier_knots_at_stop_depth": 12,
+   "counted_through_depth": 2,
+   "prefix_removal_at_step_2_over_all_step_1_budgets": {
+    "space": 81920,
+    "dead_vectors": 0,
+    "examples": []
+   },
+   "histories_per_start_by_depth": {
+    "1": {
+     "starts_with_a_history": 1024,
+     "value_flow": {
+      "n": 1024,
+      "min": "48",
+      "median": "7680",
+      "max": "46208",
+      "distinct": 172,
+      "unique_history_starts": 0
+     },
+     "labelled_founder_distinctions": {
+      "n": 1024,
+      "min": "32256",
+      "median": "474624",
+      "max": "1327104",
+      "distinct": 167,
+      "unique_history_starts": 0
+     }
+    },
+    "2": {
+     "starts_with_a_history": 1024,
+     "value_flow": {
+      "n": 1024,
+      "min": "205222976",
+      "median": "13835694528",
+      "max": "58859996160",
+      "distinct": 235,
+      "unique_history_starts": 0
+     },
+     "labelled_founder_distinctions": {
+      "n": 1024,
+      "min": "320884310016",
+      "median": "822079540224",
+      "max": "1198077640704",
+      "distinct": 233,
+      "unique_history_starts": 0
+     }
+    }
+   },
+   "carried_count_by_stage": {
+    "1": {
+     "values_reached": [
+      2,
+      4,
+      6,
+      8,
+      10,
+      12,
+      14,
+      16,
+      18,
+      20,
+      22,
+      24
+     ],
+     "histories_by_carried_count": {
+      "2": "12736",
+      "4": "35732992",
+      "6": "6749852736",
+      "8": "198410440128",
+      "10": "1659941113728",
+      "12": "5268955848896",
+      "14": "7134929257088",
+      "16": "4286599009024",
+      "18": "1125008104448",
+      "20": "119402168832",
+      "22": "4262164480",
+      "24": "32313344"
+     }
+    },
+    "2": {
+     "values_reached": [
+      0,
+      2,
+      4,
+      6,
+      8,
+      10,
+      12,
+      14,
+      16,
+      18,
+      20,
+      22,
+      24,
+      26,
+      28,
+      30,
+      32,
+      34,
+      36,
+      38,
+      40,
+      42
+     ],
+     "histories_by_carried_count": {
+      "0": "1497",
+      "2": "528878",
+      "4": "27817841",
+      "6": "563711519",
+      "8": "6069679262",
+      "10": "40575668279",
+      "12": "183950707208",
+      "14": "597238102854",
+      "16": "1438249230688",
+      "18": "2627660789587",
+      "20": "3692409291969",
+      "22": "4017689974093",
+      "24": "3386922707772",
+      "26": "2199615161099",
+      "28": "1086686336652",
+      "30": "399656464120",
+      "32": "105715235709",
+      "34": "19037795559",
+      "36": "2129380850",
+      "38": "124807462",
+      "40": "2619768",
+      "42": "5766"
+     }
+    },
+    "0": {
+     "values_reached": [
+      2,
+      4,
+      6,
+      8,
+      10,
+      12,
+      14
+     ],
+     "starts_by_carried_count": {
+      "2": 4,
+      "4": 41,
+      "6": 231,
+      "8": 422,
+      "10": 275,
+      "12": 50,
+      "14": 1
+     }
+    }
+   },
+   "seconds": 47.4
+  },
+  "parity": {
+   "lawful_valued_starts": 262144,
+   "selection": "drawn",
+   "starts_used": 1024,
+   "raw_draws_for_selection": 131646,
+   "starts_sha256": "7350e6b80d9282c36d1eccf7ce23d79884511ed8cefd0681de524278e5a09ac4",
+   "distinct_carried_vectors_among_starts": 482,
+   "lawful_carried_vectors": 1152,
+   "sat_instances": [
+    {
+     "depth": 1,
+     "variables": 70,
+     "clauses": 152
+    },
+    {
+     "depth": 2,
+     "variables": 236,
+     "clauses": 640
+    },
+    {
+     "depth": 3,
+     "variables": 530,
+     "clauses": 1516
+    },
+    {
+     "depth": 4,
+     "variables": 1086,
+     "clauses": 3201
+    },
+    {
+     "depth": 5,
+     "variables": 2185,
+     "clauses": 6594
+    },
+    {
+     "depth": 6,
+     "variables": 4418,
+     "clauses": 13597
+    }
+   ],
+   "survivors_by_step": [
+    1024,
+    1024,
+    1024,
+    1024,
+    1024,
+    1024,
+    1024
+   ],
+   "all_lawful_starts_surviving_by_step": [
+    262144,
+    262144,
+    262144,
+    262144,
+    262144,
+    262144,
+    262144
+   ],
+   "lawful_starts_without_survivor_at_horizon": 0,
+   "horizon_history_uniqueness_over_drawn_starts": {
+    "no_history": 0,
+    "exactly_one_history": 0,
+    "at_least_two_histories": 1024
+   },
+   "max_frontier_knots_by_depth": {
+    "1": 6,
+    "2": 9
+   },
+   "counting_stopped_at_depth": 3,
+   "counting_stop_reason": "state cap",
+   "distinct_carried_vectors_finished_at_stop_depth": 0,
+   "memo_states_at_stop": 3000004,
+   "max_frontier_knots_at_stop_depth": 12,
+   "counted_through_depth": 2,
+   "prefix_removal_at_step_2_over_all_step_1_budgets": {
+    "space": 81920,
+    "dead_vectors": 0,
+    "examples": []
+   },
+   "histories_per_start_by_depth": {
+    "1": {
+     "starts_with_a_history": 1024,
+     "value_flow": {
+      "n": 1024,
+      "min": "256",
+      "median": "18432",
+      "max": "105984",
+      "distinct": 46,
+      "unique_history_starts": 0
+     },
+     "labelled_founder_distinctions": {
+      "n": 1024,
+      "min": "1327104",
+      "median": "1695744",
+      "max": "1990656",
+      "distinct": 6,
+      "unique_history_starts": 0
+     }
+    },
+    "2": {
+     "starts_with_a_history": 1024,
+     "value_flow": {
+      "n": 1024,
+      "min": "2048000000",
+      "median": "110592000000",
+      "max": "663552000000",
+      "distinct": 15,
+      "unique_history_starts": 0
+     },
+     "labelled_founder_distinctions": {
+      "n": 1024,
+      "min": "10616832000000",
+      "median": "10616832000000",
+      "max": "10616832000000",
+      "distinct": 1,
+      "unique_history_starts": 0
+     }
+    }
+   },
+   "carried_count_by_stage": {
+    "1": {
+     "values_reached": [
+      0,
+      2,
+      4,
+      6,
+      8,
+      10,
+      12,
+      14,
+      16,
+      18,
+      20,
+      22,
+      24
+     ],
+     "histories_by_carried_count": {
+      "0": "33499008",
+      "2": "7229336832",
+      "4": "230172355008",
+      "6": "2581452918848",
+      "8": "13407071227392",
+      "10": "36569355894400",
+      "12": "55687521581376",
+      "14": "48438103166208",
+      "16": "23884340877632",
+      "18": "6411663618688",
+      "20": "857766031872",
+      "22": "47714657472",
+      "24": "710835264"
+     }
+    },
+    "2": {
+     "values_reached": [
+      0,
+      2,
+      4,
+      6,
+      8,
+      10,
+      12,
+      14,
+      16,
+      18,
+      20,
+      22,
+      24,
+      26,
+      28,
+      30,
+      32,
+      34,
+      36,
+      38,
+      40,
+      42
+     ],
+     "histories_by_carried_count": {
+      "0": "5878848",
+      "2": "458550144",
+      "4": "7989354432",
+      "6": "69582044928",
+      "8": "383436103104",
+      "10": "1492457262912",
+      "12": "4364286268608",
+      "14": "9958633298496",
+      "16": "18168955990272",
+      "18": "26919956332608",
+      "20": "32695806915648",
+      "22": "32695806915648",
+      "24": "26919956332608",
+      "26": "18168955990272",
+      "28": "9958633298496",
+      "30": "4364286268608",
+      "32": "1492457262912",
+      "34": "383436103104",
+      "36": "69582044928",
+      "38": "7989354432",
+      "40": "458550144",
+      "42": "5878848"
+     }
+    },
+    "0": {
+     "values_reached": [
+      2,
+      4,
+      6,
+      8,
+      10,
+      12,
+      14
+     ],
+     "starts_by_carried_count": {
+      "2": 5,
+      "4": 61,
+      "6": 246,
+      "8": 388,
+      "10": 269,
+      "12": 51,
+      "14": 4
+     }
+    }
+   },
+   "seconds": 48.2
+  },
+  "nae": {
+   "lawful_valued_starts": 16316976,
+   "selection": "drawn",
+   "starts_used": 1024,
+   "raw_draws_for_selection": 2013,
+   "starts_sha256": "6f17acd18c6b5cd27038a0fc7279dd3419fb6b92cb37d3ab4f2f912a4c2c92dc",
+   "distinct_carried_vectors_among_starts": 582,
+   "lawful_carried_vectors": 2304,
+   "sat_instances": [
+    {
+     "depth": 1,
+     "variables": 70,
+     "clauses": 152
+    },
+    {
+     "depth": 2,
+     "variables": 236,
+     "clauses": 632
+    },
+    {
+     "depth": 3,
+     "variables": 530,
+     "clauses": 1496
+    },
+    {
+     "depth": 4,
+     "variables": 1086,
+     "clauses": 3158
+    },
+    {
+     "depth": 5,
+     "variables": 2185,
+     "clauses": 6498
+    },
+    {
+     "depth": 6,
+     "variables": 4418,
+     "clauses": 13390
+    }
+   ],
+   "survivors_by_step": [
+    1024,
+    1024,
+    1024,
+    1024,
+    1024,
+    1024,
+    1024
+   ],
+   "all_lawful_starts_surviving_by_step": [
+    16316976,
+    16316976,
+    16316976,
+    16316976,
+    16316976,
+    16316976,
+    16316976
+   ],
+   "lawful_starts_without_survivor_at_horizon": 0,
+   "horizon_history_uniqueness_over_drawn_starts": {
+    "no_history": 0,
+    "exactly_one_history": 0,
+    "at_least_two_histories": 1024
+   },
+   "max_frontier_knots_by_depth": {
+    "1": 6,
+    "2": 9
+   },
+   "counting_stopped_at_depth": 3,
+   "counting_stop_reason": "state cap",
+   "distinct_carried_vectors_finished_at_stop_depth": 0,
+   "memo_states_at_stop": 3000001,
+   "max_frontier_knots_at_stop_depth": 12,
+   "counted_through_depth": 2,
+   "prefix_removal_at_step_2_over_all_step_1_budgets": {
+    "space": 81920,
+    "dead_vectors": 0,
+    "examples": []
+   },
+   "histories_per_start_by_depth": {
+    "1": {
+     "starts_with_a_history": 1024,
+     "value_flow": {
+      "n": 1024,
+      "min": "25920",
+      "median": "1966599",
+      "max": "9659840",
+      "distinct": 308,
+      "unique_history_starts": 0
+     },
+     "labelled_founder_distinctions": {
+      "n": 1024,
+      "min": "80621568",
+      "median": "150664416",
+      "max": "300810240",
+      "distinct": 308,
+      "unique_history_starts": 0
+     }
+    },
+    "2": {
+     "starts_with_a_history": 1024,
+     "value_flow": {
+      "n": 1024,
+      "min": "320018252122800",
+      "median": "20340413316481482",
+      "max": "111207224789189796",
+      "distinct": 317,
+      "unique_history_starts": 0
+     },
+     "labelled_founder_distinctions": {
+      "n": 1024,
+      "min": "1348684382493539280",
+      "median": "1765208963173373376",
+      "max": "2403458221021691904",
+      "distinct": 317,
+      "unique_history_starts": 0
+     }
+    }
+   },
+   "carried_count_by_stage": {
+    "1": {
+     "values_reached": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25
+     ],
+     "histories_by_carried_count": {
+      "0": "18841559040",
+      "1": "922166166528",
+      "2": "20259385984512",
+      "3": "266634443841408",
+      "4": "2367334116381456",
+      "5": "15135174427209132",
+      "6": "72592282654840824",
+      "7": "268513969313479176",
+      "8": "780946183488708081",
+      "9": "1810635826323738020",
+      "10": "3379301235821117231",
+      "11": "5111002450402572151",
+      "12": "6290591726698427285",
+      "13": "6313683647455771411",
+      "14": "5168058656947389483",
+      "15": "3443665526620532792",
+      "16": "1860530754969026233",
+      "17": "809791881977776175",
+      "18": "281248692499351200",
+      "19": "76891704164205288",
+      "20": "16231266723395136",
+      "21": "2572806489609456",
+      "22": "293693927260608",
+      "23": "22574703939840",
+      "24": "1033271396352",
+      "25": "20940705792"
+     }
+    },
+    "2": {
+     "values_reached": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42
+     ],
+     "histories_by_carried_count": {
+      "0": "68911134846",
+      "1": "1121049250508",
+      "2": "9452849735867",
+      "3": "55079111142612",
+      "4": "248954940773319",
+      "5": "928265937723827",
+      "6": "2964580579098773",
+      "7": "8315073357296992",
+      "8": "20847737682335647",
+      "9": "47336226862613800",
+      "10": "98301457641325289",
+      "11": "188143314215394515",
+      "12": "333894910231024902",
+      "13": "552106679354009870",
+      "14": "853919163851980619",
+      "15": "1239227285950714807",
+      "16": "1691674560352265312",
+      "17": "2176608311682446434",
+      "18": "2643710124250518020",
+      "19": "3034725710054942962",
+      "20": "3294919734087262010",
+      "21": "3385277737534356001",
+      "22": "3291810788818387024",
+      "23": "3028993099497283669",
+      "24": "2636204190278794771",
+      "25": "2168343797618139637",
+      "26": "1683612889522464010",
+      "27": "1232104119169149554",
+      "28": "848156640077693974",
+      "29": "547816639342525958",
+      "30": "330950415695570414",
+      "31": "186280960879445446",
+      "32": "97218524590066079",
+      "33": "46759685608764979",
+      "34": "20568429721582764",
+      "35": "8192996906968849",
+      "36": "2917011417017893",
+      "37": "912011792631036",
+      "38": "244199761520349",
+      "39": "53930526318377",
+      "40": "9237125789388",
+      "41": "1092936088608",
+      "42": "67000834899"
+     }
+    },
+    "0": {
+     "values_reached": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+     ],
+     "starts_by_carried_count": {
+      "2": 1,
+      "3": 6,
+      "4": 26,
+      "5": 70,
+      "6": 132,
+      "7": 206,
+      "8": 199,
+      "9": 168,
+      "10": 116,
+      "11": 68,
+      "12": 24,
+      "13": 8
+     }
+    }
+   },
+   "seconds": 37.4
+  }
+ },
+ "seconds": 133.2
+}

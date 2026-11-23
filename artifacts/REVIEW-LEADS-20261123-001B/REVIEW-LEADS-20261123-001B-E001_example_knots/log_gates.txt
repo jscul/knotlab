@@ -1,0 +1,156 @@
+panel manifest sha256 a6512c8bd43fd9cdfe7df368ba4221d29496eeb346f019992148ff2c2523376d | files verified: 11 | mismatches: []
+== GATES ==
+{
+ "second_implementation": {
+  "items_compared_dense": 4608,
+  "mismatches_dense": 0,
+  "items_compared_enum": 3648,
+  "mismatches_enum": 0,
+  "detail": [
+   {
+    "arm": "narrow",
+    "regime": "true",
+    "learner": "L1",
+    "level": "F0",
+    "dense_mismatch": 0,
+    "answered": 248,
+    "enum_mismatch": 0,
+    "allowed_words_by_enumeration": 256
+   },
+   {
+    "arm": "narrow",
+    "regime": "true",
+    "learner": "L1+",
+    "level": "F0",
+    "dense_mismatch": 0,
+    "answered": 248,
+    "enum_mismatch": 0,
+    "allowed_words_by_enumeration": 256
+   },
+   {
+    "arm": "narrow",
+    "regime": "shuffled",
+    "learner": "L1",
+    "level": "F0",
+    "dense_mismatch": 0,
+    "answered": 0,
+    "enum_mismatch": 0,
+    "allowed_words_by_enumeration": 0
+   },
+   {
+    "arm": "varied",
+    "regime": "true",
+    "learner": "L1",
+    "level": "F0",
+    "dense_mismatch": 0,
+    "answered": 0,
+    "enum_mismatch": 0,
+    "allowed_words_by_enumeration": 0
+   },
+   {
+    "arm": "varied",
+    "regime": "true",
+    "learner": "L1+",
+    "level": "F2",
+    "dense_mismatch": 0,
+    "answered": 192
+   },
+   {
+    "arm": "varied",
+    "regime": "shuffled",
+    "learner": "L1",
+    "level": "F0",
+    "dense_mismatch": 0,
+    "answered": 0,
+    "enum_mismatch": 0,
+    "allowed_words_by_enumeration": 0
+   }
+  ]
+ },
+ "exchange_clearing": [
+  {
+   "arm": "narrow",
+   "regime": "true",
+   "learner": "L1",
+   "applicable": true,
+   "level": "F0",
+   "answered_before": 248,
+   "exchange_reverses_every_answer_A": true,
+   "exchange_reverses_every_answer_B": true,
+   "opposite_meaning_learner_is_reversed_copy": true,
+   "cleared_answered": 0
+  },
+  {
+   "arm": "narrow",
+   "regime": "true",
+   "learner": "L1+",
+   "applicable": true,
+   "level": "F0",
+   "answered_before": 248,
+   "exchange_reverses_every_answer_A": true,
+   "exchange_reverses_every_answer_B": true,
+   "opposite_meaning_learner_is_reversed_copy": true,
+   "cleared_answered": 0
+  },
+  {
+   "arm": "narrow",
+   "regime": "shuffled",
+   "learner": "L1",
+   "applicable": false
+  },
+  {
+   "arm": "narrow",
+   "regime": "shuffled",
+   "learner": "L1+",
+   "applicable": false
+  },
+  {
+   "arm": "varied",
+   "regime": "true",
+   "learner": "L1",
+   "applicable": false
+  },
+  {
+   "arm": "varied",
+   "regime": "true",
+   "learner": "L1+",
+   "applicable": true,
+   "level": "F2",
+   "answered_before": 192,
+   "exchange_reverses_every_answer_A": true,
+   "exchange_reverses_every_answer_B": true,
+   "opposite_meaning_learner_is_reversed_copy": true,
+   "cleared_answered": 0
+  },
+  {
+   "arm": "varied",
+   "regime": "shuffled",
+   "learner": "L1",
+   "applicable": false
+  },
+  {
+   "arm": "varied",
+   "regime": "shuffled",
+   "learner": "L1+",
+   "applicable": false
+  }
+ ],
+ "exchange_clearing_ok": true,
+ "planted_rule": {
+  "planted_word_hex": "0xaf2f",
+  "examples": 20,
+  "consistent": true,
+  "rank_of_examples": 11,
+  "rank_of_all_2020_images": 11,
+  "fresh": 2000,
+  "answered": 2000,
+  "right": 2000,
+  "wrong": 0,
+  "dense_agrees": true,
+  "enum_agrees": true,
+  "allowed_words_by_enumeration": 32,
+  "pass": true
+ },
+ "second_implementation_ok": true,
+ "all_pass": true
+}

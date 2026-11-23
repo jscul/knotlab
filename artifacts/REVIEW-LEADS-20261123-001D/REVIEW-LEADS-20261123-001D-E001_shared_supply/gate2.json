@@ -1,0 +1,947 @@
+{
+ "addendum_sha256": "245a07ebaf79ee6dcc3ef88f6fdc54f5efe61d00aba290283192e067894f3be1",
+ "gate2_ok_for_every_start": true,
+ "stage": 2,
+ "starts": {
+  "S1": {
+   "class": "same-step (recorded first asks 1 and 1), original donors",
+   "engine_vs_archived_states": {
+    "joins_first": 80,
+    "unrestricted": 80
+   },
+   "guarded": {
+    "births": 400,
+    "cap": {
+     "births": 400,
+     "planned_in_step": 320,
+     "step_in_progress": 6,
+     "written_in_step": 6
+    },
+    "stall": null,
+    "steps_completed": 6,
+    "ticks": {
+     "X tick 6": {
+      "birth": 395,
+      "step": 6
+     },
+     "Y tick 6": {
+      "birth": 396,
+      "step": 6
+     }
+    }
+   },
+   "ordinary": {
+    "every_recorded_role_realized_at_its_step": {
+     "X": {
+      "all_realized": true,
+      "fresh_count_joint_vs_alone": {
+       "equal": 7,
+       "joint_more": 104
+      },
+      "roles_checked": 111,
+      "roles_realized": 111
+     },
+     "Y": {
+      "all_realized": true,
+      "fresh_count_joint_vs_alone": {
+       "equal": 7,
+       "joint_more": 104
+      },
+      "roles_checked": 111,
+      "roles_realized": 111
+     }
+    },
+    "expected_joint_step": {
+     "X tick 10": 10,
+     "X tick 6": 6,
+     "Y tick 10": 10,
+     "Y tick 6": 6
+    },
+    "gate_ok": true,
+    "seconds": 1.2,
+    "steps_run": [
+     {
+      "archived_literal_turn_agrees": true,
+      "births": 22,
+      "cumulative": 22,
+      "live_after": 22,
+      "status": "extend",
+      "step": 1
+     },
+     {
+      "archived_literal_turn_agrees": true,
+      "births": 36,
+      "cumulative": 58,
+      "live_after": 36,
+      "status": "extend",
+      "step": 2
+     },
+     {
+      "archived_literal_turn_agrees": true,
+      "births": 59,
+      "cumulative": 117,
+      "live_after": 59,
+      "status": "extend",
+      "step": 3
+     },
+     {
+      "births": 101,
+      "cumulative": 218,
+      "live_after": 101,
+      "status": "extend",
+      "step": 4
+     },
+     {
+      "births": 176,
+      "cumulative": 394,
+      "live_after": 176,
+      "status": "extend",
+      "step": 5
+     },
+     {
+      "births": 320,
+      "cumulative": 714,
+      "live_after": 320,
+      "status": "extend",
+      "step": 6
+     },
+     {
+      "births": 595,
+      "cumulative": 1309,
+      "live_after": 595,
+      "status": "extend",
+      "step": 7
+     },
+     {
+      "births": 1117,
+      "cumulative": 2426,
+      "live_after": 1117,
+      "status": "extend",
+      "step": 8
+     },
+     {
+      "births": 2126,
+      "cumulative": 4552,
+      "live_after": 2126,
+      "status": "extend",
+      "step": 9
+     },
+     {
+      "births": 4102,
+      "cumulative": 8654,
+      "live_after": 4102,
+      "status": "extend",
+      "step": 10
+     }
+    ],
+    "ticks_made_at_joint_step": {
+     "X tick 10": 10,
+     "X tick 6": 6,
+     "Y tick 10": 10,
+     "Y tick 6": 6
+    },
+    "ticks_not_reached_by_the_gate": []
+   },
+   "recompute": {
+    "joins_first": {
+     "classification": [
+      {
+       "10": {
+        "status": "open",
+        "tick_age": 10
+       },
+       "6": {
+        "search": "exhausted",
+        "search_states": 1003,
+        "status": "open",
+        "tick_age": 6
+       }
+      },
+      {
+       "10": {
+        "status": "open",
+        "tick_age": 10
+       },
+       "6": {
+        "search": "exhausted",
+        "search_states": 1003,
+        "status": "open",
+        "tick_age": 6
+       }
+      }
+     ],
+     "contested_births": 0
+    },
+    "unrestricted": {
+     "classification": [
+      {
+       "10": {
+        "status": "open",
+        "tick_age": 10
+       },
+       "6": {
+        "how": "firing completion found",
+        "search_states": 379,
+        "status": "made",
+        "tick_age": 6
+       }
+      },
+      {
+       "10": {
+        "status": "open",
+        "tick_age": 10
+       },
+       "6": {
+        "how": "firing completion found",
+        "search_states": 379,
+        "status": "made",
+        "tick_age": 6
+       }
+      }
+     ],
+     "contested_births": 0
+    }
+   }
+  },
+  "S2": {
+   "class": "same-step (recorded first asks 6 and 6), first parents of tick 6",
+   "engine_vs_archived_states": {
+    "joins_first": 80,
+    "unrestricted": 80
+   },
+   "guarded": {
+    "births": 400,
+    "cap": {
+     "births": 400,
+     "planned_in_step": 172,
+     "step_in_progress": 5,
+     "written_in_step": 150
+    },
+    "stall": null,
+    "steps_completed": 5,
+    "ticks": {
+     "X tick 10": {
+      "birth": 251,
+      "step": 5
+     },
+     "X tick 6": {
+      "birth": 1,
+      "step": 1
+     },
+     "Y tick 10": {
+      "birth": 252,
+      "step": 5
+     },
+     "Y tick 6": {
+      "birth": 2,
+      "step": 1
+     }
+    }
+   },
+   "ordinary": {
+    "every_recorded_role_realized_at_its_step": {
+     "X": {
+      "all_realized": true,
+      "fresh_count_joint_vs_alone": {
+       "equal": 40,
+       "joint_more": 36
+      },
+      "roles_checked": 76,
+      "roles_realized": 76
+     },
+     "Y": {
+      "all_realized": true,
+      "fresh_count_joint_vs_alone": {
+       "equal": 40,
+       "joint_more": 36
+      },
+      "roles_checked": 76,
+      "roles_realized": 76
+     }
+    },
+    "expected_joint_step": {
+     "X tick 10": 5,
+     "X tick 6": 1,
+     "Y tick 10": 5,
+     "Y tick 6": 1
+    },
+    "gate_ok": true,
+    "seconds": 0.0,
+    "steps_run": [
+     {
+      "archived_literal_turn_agrees": true,
+      "births": 30,
+      "cumulative": 30,
+      "live_after": 30,
+      "status": "extend",
+      "step": 1
+     },
+     {
+      "archived_literal_turn_agrees": true,
+      "births": 43,
+      "cumulative": 73,
+      "live_after": 43,
+      "status": "extend",
+      "step": 2
+     },
+     {
+      "archived_literal_turn_agrees": true,
+      "births": 68,
+      "cumulative": 141,
+      "live_after": 68,
+      "status": "extend",
+      "step": 3
+     },
+     {
+      "births": 109,
+      "cumulative": 250,
+      "live_after": 109,
+      "status": "extend",
+      "step": 4
+     },
+     {
+      "births": 172,
+      "cumulative": 422,
+      "live_after": 172,
+      "status": "extend",
+      "step": 5
+     }
+    ],
+    "ticks_made_at_joint_step": {
+     "X tick 10": 5,
+     "X tick 6": 1,
+     "Y tick 10": 5,
+     "Y tick 6": 1
+    },
+    "ticks_not_reached_by_the_gate": []
+   },
+   "recompute": {
+    "joins_first": {
+     "classification": [
+      {
+       "10": {
+        "status": "open",
+        "tick_age": 10
+       },
+       "6": {
+        "how": "firing completion found",
+        "search_states": 2,
+        "status": "made",
+        "tick_age": 6
+       }
+      },
+      {
+       "10": {
+        "status": "open",
+        "tick_age": 10
+       },
+       "6": {
+        "how": "firing completion found",
+        "search_states": 2,
+        "status": "made",
+        "tick_age": 6
+       }
+      }
+     ],
+     "contested_births": 0
+    },
+    "unrestricted": {
+     "classification": [
+      {
+       "10": {
+        "status": "open",
+        "tick_age": 10
+       },
+       "6": {
+        "how": "firing completion found",
+        "search_states": 2,
+        "status": "made",
+        "tick_age": 6
+       }
+      },
+      {
+       "10": {
+        "status": "open",
+        "tick_age": 10
+       },
+       "6": {
+        "how": "firing completion found",
+        "search_states": 2,
+        "status": "made",
+        "tick_age": 6
+       }
+      }
+     ],
+     "contested_births": 0
+    }
+   }
+  },
+  "T1": {
+   "class": "staggered (recorded first asks 1 and 6)",
+   "engine_vs_archived_states": {
+    "joins_first": 80,
+    "unrestricted": 80
+   },
+   "guarded": {
+    "births": 400,
+    "cap": {
+     "births": 400,
+     "planned_in_step": 228,
+     "step_in_progress": 6,
+     "written_in_step": 81
+    },
+    "stall": null,
+    "steps_completed": 6,
+    "ticks": {
+     "X tick 6": {
+      "birth": 320,
+      "step": 6
+     },
+     "Y tick 10": {
+      "birth": 193,
+      "step": 5
+     },
+     "Y tick 6": {
+      "birth": 1,
+      "step": 1
+     }
+    }
+   },
+   "ordinary": {
+    "every_recorded_role_realized_at_its_step": {
+     "X": {
+      "all_realized": true,
+      "fresh_count_joint_vs_alone": {
+       "equal": 7,
+       "joint_more": 104
+      },
+      "roles_checked": 111,
+      "roles_realized": 111
+     },
+     "Y": {
+      "all_realized": true,
+      "fresh_count_joint_vs_alone": {
+       "equal": 40,
+       "joint_more": 36
+      },
+      "roles_checked": 76,
+      "roles_realized": 76
+     }
+    },
+    "expected_joint_step": {
+     "X tick 10": 10,
+     "X tick 6": 6,
+     "Y tick 10": 5,
+     "Y tick 6": 1
+    },
+    "gate_ok": true,
+    "seconds": 0.9,
+    "steps_run": [
+     {
+      "archived_literal_turn_agrees": true,
+      "births": 24,
+      "cumulative": 24,
+      "live_after": 24,
+      "status": "extend",
+      "step": 1
+     },
+     {
+      "archived_literal_turn_agrees": true,
+      "births": 33,
+      "cumulative": 57,
+      "live_after": 33,
+      "status": "extend",
+      "step": 2
+     },
+     {
+      "archived_literal_turn_agrees": true,
+      "births": 49,
+      "cumulative": 106,
+      "live_after": 49,
+      "status": "extend",
+      "step": 3
+     },
+     {
+      "births": 80,
+      "cumulative": 186,
+      "live_after": 80,
+      "status": "extend",
+      "step": 4
+     },
+     {
+      "births": 133,
+      "cumulative": 319,
+      "live_after": 133,
+      "status": "extend",
+      "step": 5
+     },
+     {
+      "births": 228,
+      "cumulative": 547,
+      "live_after": 228,
+      "status": "extend",
+      "step": 6
+     },
+     {
+      "births": 412,
+      "cumulative": 959,
+      "live_after": 412,
+      "status": "extend",
+      "step": 7
+     },
+     {
+      "births": 777,
+      "cumulative": 1736,
+      "live_after": 777,
+      "status": "extend",
+      "step": 8
+     },
+     {
+      "births": 1495,
+      "cumulative": 3231,
+      "live_after": 1495,
+      "status": "extend",
+      "step": 9
+     },
+     {
+      "births": 2879,
+      "cumulative": 6110,
+      "live_after": 2879,
+      "status": "extend",
+      "step": 10
+     }
+    ],
+    "ticks_made_at_joint_step": {
+     "X tick 10": 10,
+     "X tick 6": 6,
+     "Y tick 10": 5,
+     "Y tick 6": 1
+    },
+    "ticks_not_reached_by_the_gate": []
+   },
+   "recompute": {
+    "joins_first": {
+     "classification": [
+      {
+       "10": {
+        "status": "open",
+        "tick_age": 10
+       },
+       "6": {
+        "search": "exhausted",
+        "search_states": 1003,
+        "status": "open",
+        "tick_age": 6
+       }
+      },
+      {
+       "10": {
+        "status": "open",
+        "tick_age": 10
+       },
+       "6": {
+        "how": "firing completion found",
+        "search_states": 2,
+        "status": "made",
+        "tick_age": 6
+       }
+      }
+     ],
+     "contested_births": 0
+    },
+    "unrestricted": {
+     "classification": [
+      {
+       "10": {
+        "status": "open",
+        "tick_age": 10
+       },
+       "6": {
+        "how": "firing completion found",
+        "search_states": 379,
+        "status": "made",
+        "tick_age": 6
+       }
+      },
+      {
+       "10": {
+        "status": "open",
+        "tick_age": 10
+       },
+       "6": {
+        "how": "firing completion found",
+        "search_states": 2,
+        "status": "made",
+        "tick_age": 6
+       }
+      }
+     ],
+     "contested_births": 0
+    }
+   }
+  },
+  "T2": {
+   "class": "staggered (recorded first asks 6 and 10)",
+   "engine_vs_archived_states": {
+    "joins_first": 80,
+    "unrestricted": 80
+   },
+   "guarded": {
+    "births": 400,
+    "cap": {
+     "births": 400,
+     "planned_in_step": 265,
+     "step_in_progress": 5,
+     "written_in_step": 48
+    },
+    "stall": null,
+    "steps_completed": 5,
+    "ticks": {
+     "X tick 10": {
+      "birth": 353,
+      "step": 5
+     },
+     "X tick 6": {
+      "birth": 1,
+      "step": 1
+     },
+     "Y tick 10": {
+      "birth": 7,
+      "step": 1
+     }
+    }
+   },
+   "ordinary": {
+    "every_recorded_role_realized_at_its_step": {
+     "X": {
+      "all_realized": true,
+      "fresh_count_joint_vs_alone": {
+       "equal": 40,
+       "joint_more": 36
+      },
+      "roles_checked": 76,
+      "roles_realized": 76
+     },
+     "Y": {
+      "all_realized": true,
+      "fresh_count_joint_vs_alone": {
+       "equal": 16,
+       "joint_more": 4
+      },
+      "roles_checked": 20,
+      "roles_realized": 20
+     }
+    },
+    "expected_joint_step": {
+     "X tick 10": 5,
+     "X tick 6": 1,
+     "Y tick 10": 1
+    },
+    "gate_ok": true,
+    "seconds": 0.1,
+    "steps_run": [
+     {
+      "archived_literal_turn_agrees": true,
+      "births": 39,
+      "cumulative": 39,
+      "live_after": 39,
+      "status": "extend",
+      "step": 1
+     },
+     {
+      "archived_literal_turn_agrees": true,
+      "births": 57,
+      "cumulative": 96,
+      "live_after": 57,
+      "status": "extend",
+      "step": 2
+     },
+     {
+      "archived_literal_turn_agrees": true,
+      "births": 95,
+      "cumulative": 191,
+      "live_after": 95,
+      "status": "extend",
+      "step": 3
+     },
+     {
+      "births": 161,
+      "cumulative": 352,
+      "live_after": 161,
+      "status": "extend",
+      "step": 4
+     },
+     {
+      "births": 265,
+      "cumulative": 617,
+      "live_after": 265,
+      "status": "extend",
+      "step": 5
+     }
+    ],
+    "ticks_made_at_joint_step": {
+     "X tick 10": 5,
+     "X tick 6": 1,
+     "Y tick 10": 1
+    },
+    "ticks_not_reached_by_the_gate": []
+   },
+   "recompute": {
+    "joins_first": {
+     "classification": [
+      {
+       "10": {
+        "status": "open",
+        "tick_age": 10
+       },
+       "6": {
+        "how": "firing completion found",
+        "search_states": 2,
+        "status": "made",
+        "tick_age": 6
+       }
+      },
+      {
+       "10": {
+        "how": "firing completion found",
+        "search_states": 2,
+        "status": "made",
+        "tick_age": 10
+       }
+      }
+     ],
+     "contested_births": 0
+    },
+    "unrestricted": {
+     "classification": [
+      {
+       "10": {
+        "status": "open",
+        "tick_age": 10
+       },
+       "6": {
+        "how": "firing completion found",
+        "search_states": 2,
+        "status": "made",
+        "tick_age": 6
+       }
+      },
+      {
+       "10": {
+        "how": "firing completion found",
+        "search_states": 2,
+        "status": "made",
+        "tick_age": 10
+       }
+      }
+     ],
+     "contested_births": 0
+    }
+   }
+  },
+  "T3": {
+   "class": "staggered (recorded first asks 1 and 6), marked original with the spare",
+   "engine_vs_archived_states": {
+    "joins_first": 80,
+    "unrestricted": 80
+   },
+   "guarded": {
+    "births": 400,
+    "cap": {
+     "births": 400,
+     "planned_in_step": 269,
+     "step_in_progress": 6,
+     "written_in_step": 19
+    },
+    "stall": null,
+    "steps_completed": 6,
+    "ticks": {
+     "X tick 6": {
+      "birth": 382,
+      "step": 6
+     },
+     "Y tick 10": {
+      "birth": 227,
+      "step": 5
+     },
+     "Y tick 6": {
+      "birth": 1,
+      "step": 1
+     }
+    }
+   },
+   "ordinary": {
+    "every_recorded_role_realized_at_its_step": {
+     "X": {
+      "all_realized": true,
+      "fresh_count_joint_vs_alone": {
+       "equal": 3,
+       "joint_more": 108
+      },
+      "roles_checked": 111,
+      "roles_realized": 111
+     },
+     "Y": {
+      "all_realized": true,
+      "fresh_count_joint_vs_alone": {
+       "equal": 40,
+       "joint_more": 36
+      },
+      "roles_checked": 76,
+      "roles_realized": 76
+     }
+    },
+    "expected_joint_step": {
+     "X tick 10": 10,
+     "X tick 6": 6,
+     "Y tick 10": 5,
+     "Y tick 6": 1
+    },
+    "gate_ok": true,
+    "seconds": 1.5,
+    "steps_run": [
+     {
+      "archived_literal_turn_agrees": true,
+      "births": 24,
+      "cumulative": 24,
+      "live_after": 24,
+      "status": "extend",
+      "step": 1
+     },
+     {
+      "archived_literal_turn_agrees": true,
+      "births": 36,
+      "cumulative": 60,
+      "live_after": 36,
+      "status": "extend",
+      "step": 2
+     },
+     {
+      "archived_literal_turn_agrees": true,
+      "births": 60,
+      "cumulative": 120,
+      "live_after": 60,
+      "status": "extend",
+      "step": 3
+     },
+     {
+      "births": 100,
+      "cumulative": 220,
+      "live_after": 100,
+      "status": "extend",
+      "step": 4
+     },
+     {
+      "births": 161,
+      "cumulative": 381,
+      "live_after": 161,
+      "status": "extend",
+      "step": 5
+     },
+     {
+      "births": 269,
+      "cumulative": 650,
+      "live_after": 269,
+      "status": "extend",
+      "step": 6
+     },
+     {
+      "births": 494,
+      "cumulative": 1144,
+      "live_after": 494,
+      "status": "extend",
+      "step": 7
+     },
+     {
+      "births": 974,
+      "cumulative": 2118,
+      "live_after": 974,
+      "status": "extend",
+      "step": 8
+     },
+     {
+      "births": 1940,
+      "cumulative": 4058,
+      "live_after": 1940,
+      "status": "extend",
+      "step": 9
+     },
+     {
+      "births": 3777,
+      "cumulative": 7835,
+      "live_after": 3777,
+      "status": "extend",
+      "step": 10
+     }
+    ],
+    "ticks_made_at_joint_step": {
+     "X tick 10": 10,
+     "X tick 6": 6,
+     "Y tick 10": 5,
+     "Y tick 6": 1
+    },
+    "ticks_not_reached_by_the_gate": []
+   },
+   "recompute": {
+    "joins_first": {
+     "classification": [
+      {
+       "10": {
+        "status": "open",
+        "tick_age": 10
+       },
+       "6": {
+        "search": "exhausted",
+        "search_states": 745,
+        "status": "open",
+        "tick_age": 6
+       }
+      },
+      {
+       "10": {
+        "status": "open",
+        "tick_age": 10
+       },
+       "6": {
+        "how": "firing completion found",
+        "search_states": 2,
+        "status": "made",
+        "tick_age": 6
+       }
+      }
+     ],
+     "contested_births": 0
+    },
+    "unrestricted": {
+     "classification": [
+      {
+       "10": {
+        "status": "open",
+        "tick_age": 10
+       },
+       "6": {
+        "how": "firing completion found",
+        "search_states": 305,
+        "status": "made",
+        "tick_age": 6
+       }
+      },
+      {
+       "10": {
+        "status": "open",
+        "tick_age": 10
+       },
+       "6": {
+        "how": "firing completion found",
+        "search_states": 2,
+        "status": "made",
+        "tick_age": 6
+       }
+      }
+     ],
+     "contested_births": 0
+    }
+   }
+  }
+ }
+}

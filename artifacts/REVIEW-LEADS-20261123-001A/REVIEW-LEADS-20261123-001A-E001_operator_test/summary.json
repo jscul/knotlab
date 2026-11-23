@@ -1,0 +1,498 @@
+{
+ "P1": {
+  "checks": {
+   "bounded-bond fails from window 2": true,
+   "cubic passes to depth 3 and fails from depth 4": true,
+   "pinwheel passes at every depth": true,
+   "polygonal control passes at every depth": true
+  },
+  "depths_reached": {
+   "bounded_bond": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "cubic": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "periodic": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+   ],
+   "pinwheel": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ]
+  }
+ },
+ "P2_loop_rank": {
+  "least_failing_rank": {
+   "P1/-": 26,
+   "P2/nae": 9,
+   "P2/parity": 9,
+   "P3/nae": 5,
+   "P3/parity": 5
+  },
+  "mixed_ranks": [
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12,
+   13,
+   14,
+   15,
+   16,
+   17,
+   18,
+   19,
+   20,
+   21,
+   22,
+   23,
+   24,
+   25,
+   26,
+   27,
+   28,
+   29,
+   30,
+   31,
+   32,
+   33,
+   34,
+   35,
+   36,
+   37,
+   38,
+   39,
+   40,
+   41,
+   42,
+   43,
+   44,
+   45,
+   46,
+   47,
+   48,
+   49,
+   50,
+   51,
+   52,
+   53,
+   54,
+   55,
+   56,
+   57,
+   58,
+   59,
+   60,
+   61,
+   62,
+   63,
+   64,
+   65,
+   66,
+   67,
+   68,
+   69,
+   70,
+   71,
+   72,
+   73,
+   74,
+   75,
+   76,
+   77,
+   78,
+   79,
+   80,
+   82,
+   83,
+   84,
+   85,
+   86,
+   87,
+   89,
+   90,
+   91,
+   92,
+   96,
+   98,
+   102,
+   104,
+   110,
+   111,
+   113,
+   116,
+   119,
+   120,
+   121,
+   123,
+   134,
+   143,
+   145,
+   149,
+   157,
+   168
+  ],
+  "prediction_holds": true
+ },
+ "P3": {
+  "by_cell": {
+   "both/0": [
+    138,
+    138
+   ],
+   "both/1": [
+    58,
+    58
+   ],
+   "both/2": [
+    97,
+    99
+   ],
+   "both/3": [
+    149,
+    149
+   ],
+   "both/all": [
+    442,
+    444
+   ],
+   "nae/0": [
+    69,
+    69
+   ],
+   "nae/1": [
+    29,
+    29
+   ],
+   "nae/2": [
+    57,
+    58
+   ],
+   "nae/3": [
+    98,
+    98
+   ],
+   "nae/all": [
+    253,
+    254
+   ],
+   "parity/0": [
+    69,
+    69
+   ],
+   "parity/1": [
+    29,
+    29
+   ],
+   "parity/2": [
+    40,
+    41
+   ],
+   "parity/3": [
+    51,
+    51
+   ],
+   "parity/all": [
+    189,
+    190
+   ]
+  },
+  "censored_code": [
+   442,
+   444
+  ],
+  "earlier_than_median": {
+   "equal": 21,
+   "start earlier than median": 2,
+   "start later than median": 421
+  },
+  "exceptions": [
+   {
+    "arm": 2,
+    "draw": 180,
+    "law": "nae",
+    "n_at": [
+     7,
+     10,
+     14,
+     19,
+     25,
+     32,
+     40,
+     49,
+     59,
+     70,
+     82,
+     95,
+     109
+    ],
+    "rewirings_first_failing_step": [
+     4,
+     2,
+     4,
+     1,
+     1,
+     1,
+     2,
+     1
+    ],
+    "start_first_failing_step": 1,
+    "steps": 12
+   },
+   {
+    "arm": 2,
+    "draw": 180,
+    "law": "parity",
+    "n_at": [
+     7,
+     10,
+     14,
+     19,
+     25,
+     32,
+     40,
+     49,
+     59,
+     70,
+     82,
+     95,
+     109
+    ],
+    "rewirings_first_failing_step": [
+     4,
+     2,
+     4,
+     1,
+     1,
+     1,
+     2,
+     1
+    ],
+    "start_first_failing_step": 1,
+    "steps": 12
+   }
+  ],
+  "holds": true,
+  "lower_median": [
+   444,
+   444
+  ],
+  "primary": [
+   442,
+   444
+  ],
+  "qualifying_categories": {
+   "start fails; 5 of 8 rewirings fail": 1,
+   "start fails; 8 of 8 rewirings fail": 65,
+   "start passes; 1 of 8 rewirings fail": 5,
+   "start passes; 6 of 8 rewirings fail": 6,
+   "start passes; 7 of 8 rewirings fail": 2,
+   "start passes; 8 of 8 rewirings fail": 365
+  },
+  "rewirings_of_funded": 4480,
+  "rewirings_with_shortfall": 70,
+  "share": 0.9954954954954955
+ },
+ "P4": {
+  "admit_and_fail": 1,
+  "checked": 91,
+  "closed_parts": 91,
+  "disagreements": 0,
+  "holds": true
+ },
+ "bounded_that_fail": {
+  "bounded_histories": 182,
+  "examples": [
+   [
+    "P2",
+    "parity",
+    "five_founder_clock",
+    1
+   ],
+   [
+    "P2",
+    "nae",
+    "five_founder_clock",
+    1
+   ],
+   [
+    "P3",
+    "nae",
+    [
+     0,
+     72
+    ],
+    3
+   ],
+   [
+    "P3",
+    "nae",
+    [
+     0,
+     165
+    ],
+    3
+   ],
+   [
+    "P3",
+    "nae",
+    [
+     0,
+     244
+    ],
+    3
+   ],
+   [
+    "P3",
+    "nae",
+    [
+     1,
+     0
+    ],
+    3
+   ],
+   [
+    "P3",
+    "nae",
+    [
+     1,
+     37
+    ],
+    3
+   ],
+   [
+    "P3",
+    "nae",
+    [
+     2,
+     40
+    ],
+    3
+   ],
+   [
+    "P3",
+    "nae",
+    [
+     3,
+     162
+    ],
+    1
+   ],
+   [
+    "P3",
+    "parity",
+    [
+     0,
+     72
+    ],
+    3
+   ]
+  ],
+  "failing": 17
+ },
+ "counts": {
+  "P2_histories": 14,
+  "P3_histories": 2048,
+  "stage_rows": {
+   "P1": 24,
+   "P2": 164,
+   "P3": 7936
+  }
+ },
+ "cross_table": {
+  "P2/nae/bounded": [
+   1,
+   1
+  ],
+  "P2/nae/growing": [
+   6,
+   6
+  ],
+  "P2/nae/stalled": [
+   0,
+   0
+  ],
+  "P2/parity/bounded": [
+   1,
+   1
+  ],
+  "P2/parity/growing": [
+   6,
+   6
+  ],
+  "P2/parity/stalled": [
+   0,
+   0
+  ],
+  "P3/nae/bounded": [
+   51,
+   7
+  ],
+  "P3/nae/growing": [
+   229,
+   26
+  ],
+  "P3/nae/stalled": [
+   744,
+   0
+  ],
+  "P3/parity/bounded": [
+   129,
+   8
+  ],
+  "P3/parity/growing": [
+   151,
+   25
+  ],
+  "P3/parity/stalled": [
+   744,
+   0
+  ]
+ },
+ "gates": {
+  "G1": true,
+  "G2": true,
+  "G3_literal_all_patterns": false,
+  "G3_two_holder": true,
+  "G4": true
+ },
+ "removal_bounds_P3": {
+  "comparison": {
+   "lower<=upper": 66,
+   "lower<upper": 66
+  },
+  "failing": 66,
+  "upper_max": 6,
+  "upper_min": 1
+ },
+ "settled_by_construction": {
+  "histories_with_a_failure_followed_by_a_pass": 0,
+  "histories_with_only_one_parent_births": 21,
+  "of_which_fail": 0,
+  "of_which_failing": 0,
+  "stages_with_loop_rank_below_4": 2471
+ }
+}

@@ -1,0 +1,973 @@
+{
+ "forbidden_names_read_by_group_functions": {
+  "groups_from_adjacency": [],
+  "holders_of": [],
+  "lookahead_demand": [],
+  "loose_of": [],
+  "neighbours_of": [],
+  "proposed_groups": [],
+  "reference._maximal_groups": [],
+  "reference._proposals": [],
+  "reference.from_stars": [],
+  "reference.neighbors": [],
+  "reference.proposals": []
+ },
+ "parent_rosters_equal_under_both_laws": {
+  "equal": 61,
+  "total": 61
+ },
+ "reading": {
+  "groups_from_adjacency": {
+   "attributes_read": [
+    "Graph",
+    "add_edges_from",
+    "add_nodes_from",
+    "append",
+    "edges",
+    "find_cliques",
+    "intersection",
+    "sort"
+   ],
+   "names_read": [
+    "big",
+    "block",
+    "clique",
+    "combinations",
+    "covered",
+    "e",
+    "edge_sets",
+    "graph",
+    "group",
+    "len",
+    "nodes",
+    "nx",
+    "p",
+    "pair",
+    "pairs",
+    "set",
+    "sorted",
+    "tuple",
+    "witnesses_of"
+   ],
+   "parameters": [
+    "nodes",
+    "edge_sets",
+    "witnesses_of"
+   ],
+   "reads_forbidden_names": []
+  },
+  "holders_of": {
+   "attributes_read": [
+    "append",
+    "items"
+   ],
+   "names_read": [
+    "d",
+    "defaultdict",
+    "enumerate",
+    "hs",
+    "knot",
+    "len",
+    "list",
+    "owners",
+    "row",
+    "set",
+    "stars"
+   ],
+   "parameters": [
+    "stars"
+   ],
+   "reads_forbidden_names": []
+  },
+  "lookahead_demand": {
+   "attributes_read": [
+    "add",
+    "values"
+   ],
+   "names_read": [
+    "Counter",
+    "count",
+    "defaultdict",
+    "enumerate",
+    "g",
+    "groups",
+    "groups_from_adjacency",
+    "i",
+    "len",
+    "p",
+    "parent_sets",
+    "ps",
+    "range",
+    "set",
+    "siblings",
+    "tuple"
+   ],
+   "parameters": [
+    "parent_sets"
+   ],
+   "reads_forbidden_names": []
+  },
+  "loose_of": {
+   "attributes_read": [],
+   "names_read": [
+    "d",
+    "enumerate",
+    "holders_of",
+    "k",
+    "len",
+    "owners",
+    "row",
+    "sorted",
+    "stars"
+   ],
+   "parameters": [
+    "stars",
+    "owners"
+   ],
+   "reads_forbidden_names": []
+  },
+  "neighbours_of": {
+   "attributes_read": [
+    "add",
+    "values"
+   ],
+   "names_read": [
+    "a",
+    "b",
+    "holders_of",
+    "hs",
+    "len",
+    "nbrs",
+    "owners",
+    "set",
+    "stars"
+   ],
+   "parameters": [
+    "stars",
+    "owners"
+   ],
+   "reads_forbidden_names": []
+  },
+  "plan_round": {
+   "group_call_line": 13,
+   "lines_using_law_after_groups": [
+    24
+   ],
+   "lines_using_veto": [
+    0,
+    1,
+    14,
+    15
+   ]
+  },
+  "proposed_groups": {
+   "attributes_read": [
+    "items"
+   ],
+   "names_read": [
+    "blocks",
+    "groups_from_adjacency",
+    "holders_of",
+    "k",
+    "len",
+    "live",
+    "loose",
+    "loose_of",
+    "nbrs",
+    "neighbours_of",
+    "owners",
+    "p",
+    "range",
+    "row",
+    "stars"
+   ],
+   "parameters": [
+    "stars",
+    "owners",
+    "loose",
+    "nbrs"
+   ],
+   "reads_forbidden_names": []
+  },
+  "reference._maximal_groups": {
+   "attributes_read": [
+    "add",
+    "append",
+    "pop",
+    "remove"
+   ],
+   "names_read": [
+    "any",
+    "blocks",
+    "frozenset",
+    "graph",
+    "group",
+    "held",
+    "k",
+    "knot",
+    "len",
+    "map",
+    "max",
+    "pivot",
+    "possible",
+    "previous",
+    "row",
+    "set",
+    "sorted",
+    "stack",
+    "tuple"
+   ],
+   "parameters": [
+    "graph",
+    "blocks"
+   ],
+   "reads_forbidden_names": []
+  },
+  "reference._proposals": {
+   "attributes_read": [
+    "append",
+    "blocks",
+    "update"
+   ],
+   "names_read": [
+    "_Cap",
+    "_maximal_groups",
+    "a",
+    "b",
+    "big",
+    "cap",
+    "combinations",
+    "covered",
+    "end",
+    "graph",
+    "group",
+    "len",
+    "neighbors",
+    "pairs",
+    "set",
+    "sorted",
+    "tuple"
+   ],
+   "parameters": [
+    "end",
+    "cap"
+   ],
+   "reads_forbidden_names": []
+  },
+  "reference.from_stars": {
+   "attributes_read": [
+    "add",
+    "append",
+    "extend",
+    "keys",
+    "update",
+    "values"
+   ],
+   "names_read": [
+    "Counter",
+    "End",
+    "ValueError",
+    "a",
+    "b",
+    "defaultdict",
+    "distinction",
+    "enumerate",
+    "graph",
+    "holders",
+    "knot",
+    "len",
+    "list",
+    "opens",
+    "row",
+    "seen",
+    "set",
+    "stars",
+    "support",
+    "todo",
+    "tuple",
+    "unseen",
+    "v"
+   ],
+   "parameters": [
+    "stars"
+   ],
+   "reads_forbidden_names": []
+  },
+  "reference.neighbors": {
+   "attributes_read": [
+    "add",
+    "blocks",
+    "opens"
+   ],
+   "names_read": [
+    "a",
+    "b",
+    "block",
+    "combinations",
+    "end",
+    "graph",
+    "k",
+    "set"
+   ],
+   "parameters": [
+    "end"
+   ],
+   "reads_forbidden_names": []
+  },
+  "reference.proposals": {
+   "attributes_read": [],
+   "names_read": [
+    "_proposals",
+    "end"
+   ],
+   "parameters": [
+    "end"
+   ],
+   "reads_forbidden_names": []
+  }
+ },
+ "reference_operator_proposals_equal_on_stages": {
+  "agree": 61,
+  "total": 61
+ },
+ "rows": [
+  {
+   "allocations": {
+    "allocation_histories": 8,
+    "stages": 48,
+    "stages_with_other_groups": 0
+   },
+   "history": "seven_knot_source",
+   "knots_end": 235,
+   "law": "parity",
+   "renaming": {
+    "groups": 413,
+    "stages": 7,
+    "stages_not_covariant": 0
+   },
+   "spare_edit_at_a_live_knot": {
+    "edits": 28,
+    "edits_changing_status": 0,
+    "edits_leaving_groups_unchanged": 28
+   },
+   "stages": 7,
+   "valued_version": {
+    "stages": 7,
+    "stages_with_other_groups": 0
+   },
+   "veto_control_versions_with_other_groups_of_64": 64
+  },
+  {
+   "allocations": {
+    "allocation_histories": 8,
+    "stages": 48,
+    "stages_with_other_groups": 0
+   },
+   "history": "seven_knot_source",
+   "knots_end": 235,
+   "law": "nae",
+   "renaming": {
+    "groups": 413,
+    "stages": 7,
+    "stages_not_covariant": 0
+   },
+   "spare_edit_at_a_live_knot": {
+    "edits": 28,
+    "edits_changing_status": 0,
+    "edits_leaving_groups_unchanged": 28
+   },
+   "stages": 7,
+   "valued_version": {
+    "stages": 7,
+    "stages_with_other_groups": 0
+   },
+   "veto_control_versions_with_other_groups_of_64": 64
+  },
+  {
+   "allocations": {
+    "allocation_histories": 8,
+    "stages": 64,
+    "stages_with_other_groups": 0
+   },
+   "history": "five_founder_clock",
+   "knots_end": 45,
+   "law": "parity",
+   "renaming": {
+    "groups": 45,
+    "stages": 9,
+    "stages_not_covariant": 0
+   },
+   "spare_edit_at_a_live_knot": {
+    "edits": 36,
+    "edits_changing_status": 0,
+    "edits_leaving_groups_unchanged": 36
+   },
+   "stages": 9,
+   "valued_version": {
+    "stages": 9,
+    "stages_with_other_groups": 0
+   },
+   "veto_control_versions_with_other_groups_of_64": 64
+  },
+  {
+   "allocations": {
+    "allocation_histories": 8,
+    "stages": 64,
+    "stages_with_other_groups": 0
+   },
+   "history": "five_founder_clock",
+   "knots_end": 45,
+   "law": "nae",
+   "renaming": {
+    "groups": 45,
+    "stages": 9,
+    "stages_not_covariant": 0
+   },
+   "spare_edit_at_a_live_knot": {
+    "edits": 36,
+    "edits_changing_status": 0,
+    "edits_leaving_groups_unchanged": 36
+   },
+   "stages": 9,
+   "valued_version": {
+    "stages": 9,
+    "stages_with_other_groups": 0
+   },
+   "veto_control_versions_with_other_groups_of_64": 64
+  },
+  {
+   "allocations": {
+    "allocation_histories": 8,
+    "stages": 64,
+    "stages_with_other_groups": 0
+   },
+   "history": "explosive_00",
+   "knots_end": 108,
+   "law": "parity",
+   "renaming": {
+    "groups": 118,
+    "stages": 9,
+    "stages_not_covariant": 0
+   },
+   "spare_edit_at_a_live_knot": {
+    "edits": 36,
+    "edits_changing_status": 0,
+    "edits_leaving_groups_unchanged": 36
+   },
+   "stages": 9,
+   "valued_version": {
+    "stages": 9,
+    "stages_with_other_groups": 0
+   },
+   "veto_control_versions_with_other_groups_of_64": 64
+  },
+  {
+   "allocations": {
+    "allocation_histories": 8,
+    "stages": 64,
+    "stages_with_other_groups": 0
+   },
+   "history": "explosive_00",
+   "knots_end": 108,
+   "law": "nae",
+   "renaming": {
+    "groups": 118,
+    "stages": 9,
+    "stages_not_covariant": 0
+   },
+   "spare_edit_at_a_live_knot": {
+    "edits": 36,
+    "edits_changing_status": 0,
+    "edits_leaving_groups_unchanged": 36
+   },
+   "stages": 9,
+   "valued_version": {
+    "stages": 9,
+    "stages_with_other_groups": 0
+   },
+   "veto_control_versions_with_other_groups_of_64": 64
+  },
+  {
+   "allocations": {
+    "allocation_histories": 8,
+    "stages": 48,
+    "stages_with_other_groups": 0
+   },
+   "history": "explosive_04",
+   "knots_end": 285,
+   "law": "parity",
+   "renaming": {
+    "groups": 1288,
+    "stages": 7,
+    "stages_not_covariant": 0
+   },
+   "spare_edit_at_a_live_knot": {
+    "edits": 28,
+    "edits_changing_status": 0,
+    "edits_leaving_groups_unchanged": 28
+   },
+   "stages": 7,
+   "valued_version": {
+    "stages": 7,
+    "stages_with_other_groups": 0
+   },
+   "veto_control_versions_with_other_groups_of_64": 64
+  },
+  {
+   "allocations": {
+    "allocation_histories": 8,
+    "stages": 48,
+    "stages_with_other_groups": 0
+   },
+   "history": "explosive_04",
+   "knots_end": 285,
+   "law": "nae",
+   "renaming": {
+    "groups": 1288,
+    "stages": 7,
+    "stages_not_covariant": 0
+   },
+   "spare_edit_at_a_live_knot": {
+    "edits": 28,
+    "edits_changing_status": 0,
+    "edits_leaving_groups_unchanged": 28
+   },
+   "stages": 7,
+   "valued_version": {
+    "stages": 7,
+    "stages_with_other_groups": 0
+   },
+   "veto_control_versions_with_other_groups_of_64": 64
+  },
+  {
+   "allocations": {
+    "allocation_histories": 8,
+    "stages": 32,
+    "stages_with_other_groups": 0
+   },
+   "history": "explosive_13",
+   "knots_end": 220,
+   "law": "parity",
+   "renaming": {
+    "groups": 485,
+    "stages": 5,
+    "stages_not_covariant": 0
+   },
+   "spare_edit_at_a_live_knot": {
+    "edits": 20,
+    "edits_changing_status": 0,
+    "edits_leaving_groups_unchanged": 20
+   },
+   "stages": 5,
+   "valued_version": {
+    "stages": 5,
+    "stages_with_other_groups": 0
+   },
+   "veto_control_versions_with_other_groups_of_64": 64
+  },
+  {
+   "allocations": {
+    "allocation_histories": 8,
+    "stages": 32,
+    "stages_with_other_groups": 0
+   },
+   "history": "explosive_13",
+   "knots_end": 220,
+   "law": "nae",
+   "renaming": {
+    "groups": 485,
+    "stages": 5,
+    "stages_not_covariant": 0
+   },
+   "spare_edit_at_a_live_knot": {
+    "edits": 20,
+    "edits_changing_status": 0,
+    "edits_leaving_groups_unchanged": 20
+   },
+   "stages": 5,
+   "valued_version": {
+    "stages": 5,
+    "stages_with_other_groups": 0
+   },
+   "veto_control_versions_with_other_groups_of_64": 64
+  },
+  {
+   "allocations": {
+    "allocation_histories": 8,
+    "stages": 0,
+    "stages_with_other_groups": 0
+   },
+   "history": "stall_00",
+   "knots_end": 5,
+   "law": "parity",
+   "renaming": {
+    "groups": 5,
+    "stages": 1,
+    "stages_not_covariant": 0
+   },
+   "spare_edit_at_a_live_knot": {
+    "edits": 4,
+    "edits_changing_status": 0,
+    "edits_leaving_groups_unchanged": 4
+   },
+   "stages": 1,
+   "valued_version": {
+    "stages": 1,
+    "stages_with_other_groups": 0
+   },
+   "veto_control_versions_with_other_groups_of_64": 63
+  },
+  {
+   "allocations": {
+    "allocation_histories": 8,
+    "stages": 0,
+    "stages_with_other_groups": 0
+   },
+   "history": "stall_00",
+   "knots_end": 5,
+   "law": "nae",
+   "renaming": {
+    "groups": 5,
+    "stages": 1,
+    "stages_not_covariant": 0
+   },
+   "spare_edit_at_a_live_knot": {
+    "edits": 4,
+    "edits_changing_status": 0,
+    "edits_leaving_groups_unchanged": 4
+   },
+   "stages": 1,
+   "valued_version": {
+    "stages": 1,
+    "stages_with_other_groups": 0
+   },
+   "veto_control_versions_with_other_groups_of_64": 64
+  },
+  {
+   "allocations": {
+    "allocation_histories": 8,
+    "stages": 0,
+    "stages_with_other_groups": 0
+   },
+   "history": "stall_01",
+   "knots_end": 5,
+   "law": "parity",
+   "renaming": {
+    "groups": 5,
+    "stages": 1,
+    "stages_not_covariant": 0
+   },
+   "spare_edit_at_a_live_knot": {
+    "edits": 4,
+    "edits_changing_status": 1,
+    "edits_leaving_groups_unchanged": 4
+   },
+   "stages": 1,
+   "valued_version": {
+    "stages": 1,
+    "stages_with_other_groups": 0
+   },
+   "veto_control_versions_with_other_groups_of_64": 64
+  },
+  {
+   "allocations": {
+    "allocation_histories": 8,
+    "stages": 0,
+    "stages_with_other_groups": 0
+   },
+   "history": "stall_01",
+   "knots_end": 5,
+   "law": "nae",
+   "renaming": {
+    "groups": 5,
+    "stages": 1,
+    "stages_not_covariant": 0
+   },
+   "spare_edit_at_a_live_knot": {
+    "edits": 4,
+    "edits_changing_status": 1,
+    "edits_leaving_groups_unchanged": 4
+   },
+   "stages": 1,
+   "valued_version": {
+    "stages": 1,
+    "stages_with_other_groups": 0
+   },
+   "veto_control_versions_with_other_groups_of_64": 64
+  },
+  {
+   "allocations": {
+    "allocation_histories": 8,
+    "stages": 64,
+    "stages_with_other_groups": 0
+   },
+   "history": "stall_11",
+   "knots_end": 45,
+   "law": "parity",
+   "renaming": {
+    "groups": 45,
+    "stages": 9,
+    "stages_not_covariant": 0
+   },
+   "spare_edit_at_a_live_knot": {
+    "edits": 36,
+    "edits_changing_status": 0,
+    "edits_leaving_groups_unchanged": 36
+   },
+   "stages": 9,
+   "valued_version": {
+    "stages": 9,
+    "stages_with_other_groups": 0
+   },
+   "veto_control_versions_with_other_groups_of_64": 64
+  },
+  {
+   "allocations": {
+    "allocation_histories": 8,
+    "stages": 64,
+    "stages_with_other_groups": 0
+   },
+   "history": "stall_11",
+   "knots_end": 45,
+   "law": "nae",
+   "renaming": {
+    "groups": 45,
+    "stages": 9,
+    "stages_not_covariant": 0
+   },
+   "spare_edit_at_a_live_knot": {
+    "edits": 36,
+    "edits_changing_status": 0,
+    "edits_leaving_groups_unchanged": 36
+   },
+   "stages": 9,
+   "valued_version": {
+    "stages": 9,
+    "stages_with_other_groups": 0
+   },
+   "veto_control_versions_with_other_groups_of_64": 64
+  },
+  {
+   "allocations": {
+    "allocation_histories": 8,
+    "stages": 64,
+    "stages_with_other_groups": 0
+   },
+   "history": "closing_11",
+   "knots_end": 55,
+   "law": "parity",
+   "renaming": {
+    "groups": 37,
+    "stages": 9,
+    "stages_not_covariant": 0
+   },
+   "spare_edit_at_a_live_knot": {
+    "edits": 34,
+    "edits_changing_status": 0,
+    "edits_leaving_groups_unchanged": 34
+   },
+   "stages": 9,
+   "valued_version": {
+    "stages": 9,
+    "stages_with_other_groups": 0
+   },
+   "veto_control_versions_with_other_groups_of_64": 61
+  },
+  {
+   "allocations": {
+    "allocation_histories": 8,
+    "stages": 64,
+    "stages_with_other_groups": 0
+   },
+   "history": "closing_11",
+   "knots_end": 55,
+   "law": "nae",
+   "renaming": {
+    "groups": 37,
+    "stages": 9,
+    "stages_not_covariant": 0
+   },
+   "spare_edit_at_a_live_knot": {
+    "edits": 34,
+    "edits_changing_status": 0,
+    "edits_leaving_groups_unchanged": 34
+   },
+   "stages": 9,
+   "valued_version": {
+    "stages": 9,
+    "stages_with_other_groups": 0
+   },
+   "veto_control_versions_with_other_groups_of_64": 64
+  },
+  {
+   "allocations": {
+    "allocation_histories": 8,
+    "stages": 64,
+    "stages_with_other_groups": 0
+   },
+   "history": "closing_01",
+   "knots_end": 68,
+   "law": "parity",
+   "renaming": {
+    "groups": 50,
+    "stages": 9,
+    "stages_not_covariant": 0
+   },
+   "spare_edit_at_a_live_knot": {
+    "edits": 32,
+    "edits_changing_status": 0,
+    "edits_leaving_groups_unchanged": 32
+   },
+   "stages": 9,
+   "valued_version": {
+    "stages": 9,
+    "stages_with_other_groups": 0
+   },
+   "veto_control_versions_with_other_groups_of_64": 59
+  },
+  {
+   "allocations": {
+    "allocation_histories": 8,
+    "stages": 64,
+    "stages_with_other_groups": 0
+   },
+   "history": "closing_01",
+   "knots_end": 68,
+   "law": "nae",
+   "renaming": {
+    "groups": 50,
+    "stages": 9,
+    "stages_not_covariant": 0
+   },
+   "spare_edit_at_a_live_knot": {
+    "edits": 32,
+    "edits_changing_status": 0,
+    "edits_leaving_groups_unchanged": 32
+   },
+   "stages": 9,
+   "valued_version": {
+    "stages": 9,
+    "stages_with_other_groups": 0
+   },
+   "veto_control_versions_with_other_groups_of_64": 62
+  },
+  {
+   "allocations": {
+    "allocation_histories": 8,
+    "stages": 64,
+    "stages_with_other_groups": 0
+   },
+   "history": "concealed_type_00_funded",
+   "knots_end": 108,
+   "law": "parity",
+   "renaming": {
+    "groups": 36,
+    "stages": 9,
+    "stages_not_covariant": 0
+   },
+   "spare_edit_at_a_live_knot": {
+    "edits": 32,
+    "edits_changing_status": 0,
+    "edits_leaving_groups_unchanged": 32
+   },
+   "stages": 9,
+   "valued_version": {
+    "stages": 9,
+    "stages_with_other_groups": 0
+   },
+   "veto_control_versions_with_other_groups_of_64": 64
+  },
+  {
+   "allocations": {
+    "allocation_histories": 8,
+    "stages": 64,
+    "stages_with_other_groups": 0
+   },
+   "history": "concealed_type_00_funded",
+   "knots_end": 108,
+   "law": "nae",
+   "renaming": {
+    "groups": 36,
+    "stages": 9,
+    "stages_not_covariant": 0
+   },
+   "spare_edit_at_a_live_knot": {
+    "edits": 32,
+    "edits_changing_status": 0,
+    "edits_leaving_groups_unchanged": 32
+   },
+   "stages": 9,
+   "valued_version": {
+    "stages": 9,
+    "stages_with_other_groups": 0
+   },
+   "veto_control_versions_with_other_groups_of_64": 64
+  },
+  {
+   "allocations": {
+    "allocation_histories": 8,
+    "stages": 64,
+    "stages_with_other_groups": 0
+   },
+   "history": "concealed_type_11_funded",
+   "knots_end": 108,
+   "law": "parity",
+   "renaming": {
+    "groups": 36,
+    "stages": 9,
+    "stages_not_covariant": 0
+   },
+   "spare_edit_at_a_live_knot": {
+    "edits": 32,
+    "edits_changing_status": 0,
+    "edits_leaving_groups_unchanged": 32
+   },
+   "stages": 9,
+   "valued_version": {
+    "stages": 9,
+    "stages_with_other_groups": 0
+   },
+   "veto_control_versions_with_other_groups_of_64": 64
+  },
+  {
+   "allocations": {
+    "allocation_histories": 8,
+    "stages": 64,
+    "stages_with_other_groups": 0
+   },
+   "history": "concealed_type_11_funded",
+   "knots_end": 108,
+   "law": "nae",
+   "renaming": {
+    "groups": 36,
+    "stages": 9,
+    "stages_not_covariant": 0
+   },
+   "spare_edit_at_a_live_knot": {
+    "edits": 32,
+    "edits_changing_status": 0,
+    "edits_leaving_groups_unchanged": 32
+   },
+   "stages": 9,
+   "valued_version": {
+    "stages": 9,
+    "stages_with_other_groups": 0
+   },
+   "veto_control_versions_with_other_groups_of_64": 64
+  }
+ ],
+ "summary": {
+  "allocation_stages_replayed": 1152,
+  "allocation_stages_with_other_groups": 0,
+  "reading_flags": {},
+  "renaming_stages_not_covariant": 0,
+  "seconds": 18.7,
+  "spare_edits_changing_status": 2,
+  "spare_edits_leaving_groups_unchanged": 644,
+  "spare_edits_tested": 644,
+  "stages_replayed": 168,
+  "valued_stages_with_other_groups": 0,
+  "veto_control_caught": 24,
+  "veto_control_rows": 24
+ }
+}

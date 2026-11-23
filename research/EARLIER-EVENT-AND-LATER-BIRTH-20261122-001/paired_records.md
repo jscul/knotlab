@@ -1,0 +1,35 @@
+# A paid distinction that matters at the next birth
+
+Two newborns, called R and S in the replay, are identified by the sole original payments of two different founders. Their alternate recipients R′ and S′ have their own founder payments throughout. A fifth recipient always receives a payment from a particular older knot. Its presence lets R and S each keep exactly two available distinctions in every direct comparison. The founder markers, these roles, the initial lawful word and the choice of pair to follow are supplied. Ordinary growth determines all proposed groups and all payments. A complete birth compares actual holdings under either law.
+
+| Earlier payment by the same donor | Immediately after its birth, R holds | At the next funding, the two enrolled families have this joint child | Complete births at the three successive cuts |
+| --- | --- | --- | --- |
+| To R and S | Two shared, two loose | R with S | 5, 7, 7 |
+| To R′ and S | One shared, two loose | R′ with S | 5, 7, 7 |
+| To R and S′ | Two shared, two loose | R with S′ | 5, 7, 7 |
+| To R′ and S′ | One shared, two loose | R′ with S′ | 5, 7, 7 |
+
+The table holds under parity and not-all-equal. In the first row R receives marks 58 and 63 and S receives 60 and 64. Mark 63 remains shared between R and the donor, and 64 between S and the same donor. Each has two actual holders. There is exactly one older knot witnessing R and S together. All three donor recipients are witnessed together by that donor, which excludes a new group of three under the ordinary rule. Each of the three remaining pairs makes its own child. R and S pay new marks 66 and 68 to their joint child, which later pays mark 76 onward. The original attachments and the new payments can be distinguished in the full holdings.
+
+In the second row 58 still enrolls R and the same 60 and 64 still enroll and reach S. The donor's 63 reached R′. The complete older parent sets of R and S now have empty intersection. The donor witnesses R′ together with S. While R′ and S jointly pay, R pays both of its loose marks to two one-parent children. In the third row R keeps its entire original receipt and the target disappears when S's donor payment is diverted. In all four rows R, S and their alternates each pay both of their available marks. Diverting a single named mark among the three already prescribed payees leaves the actual groups intact in all six possible allocations. The intervention producing different parentage was made in the founder holdings before either R or S existed. No reached payment was revoked.
+
+The match can be made on the old and new values as well. Hold the identity of each anchor’s two new slots fixed across arms. Fill both slots with 1 in every first-born knot. All incoming bits are 0, and this one filling is lawful in every direct arm under both laws. In the first diversion R then retains exactly the same marked values apart from the missing zero-valued 63, and S retains its entire valued holding. The [independent value check](readback.json) extended both histories through all three actual cuts. This common filling witnesses a sharper match. The result on parentage holds for every lawful filling.
+
+## Can R decide by looking only at its own values and counts?
+
+In the second family either of two real donors can reach R and S. An additional payment can change R's own count while its later partner stays fixed. Conversely there are two preparations in which R's complete unlabelled local record, including ordinary values, agrees although its partner changes. Here the notation separates the values on shared marks from the value on the loose mark.
+
+| Law | R in both receipts | S's retained payments in both | Later joint child in the two preparations |
+| --- | --- | --- | --- |
+| Parity | Shared 00, loose 0 | 84 from its enrolling founder and 87 from the first donor | R with S, then R with S′ |
+| Not-all-equal | Shared 00, loose 1 | 84 from its enrolling founder and 87 from the first donor | R with S, then R with S′ |
+
+In the first preparation, R retains 82 and 86. The latter and S's 87 come from the first donor. In the other, R retains 82 and 88, with 88 from the second donor. In both preparations R and S's loose marks are 92 and 93. They pay together in the first. In the second they pay two different joint children. All four enrolled newborns participate in real joint births under both choices. Each full run makes four, two and two births. The earlier enrollment and actual coholder distinguish these situations. Counting and reading absolute values at R alone cannot do so throughout this second family.
+
+There were four direct founder configurations with all six donor allocations and eight two-donor configurations with all four allocations per law. These 56 histories per law are an exhaustive allocation comparison on the frozen family. The [physical replay](../../artifacts/EARLIER-EVENT-AND-LATER-BIRTH-20261122-001B/EARLIER-EVENT-AND-LATER-BIRTH-20261122-001B-E001_matched_replay/results.json) also covers neutral marker multiplicities, a coherent renaming and a different lawful word. There are no sampled rates.
+
+## Reconstructing the result without parent labels
+
+The [independent readback](readback.py) takes just the final physical holdings from each tagged run. The supplied founders have repeated sharings. Each ordinary child takes a single mark from each of its actual parents, and later growth never joins two existing holders on a new mark. Thus the founders are exactly the holders in a repeated sharing. Removing younger holders temporarily for the read reconstructs the loose and shared counts of the original preparation. The founder markers distinguish the anchors. At positive age every new shared distinction joins consecutive cohorts. Starting at the founders, the least number of successive coholdings therefore recovers each cohort in these histories. The readback recovers R and S from their founders' actual children, and tests the complete payer set of each later child before consulting switch settings. All 112 donor-allocation histories, their reversed names and holder list order, and the stored renamed and alternate-word controls reproduce the outcome. This reconstruction establishes the audit identities. R's immediate count uses only its own holding. [Readback results](readback.json)
+
+The registered physical mechanism is relative. R keeps an actual contact. A later birth uses it jointly with what S keeps. Identity of the old token within one donor is interchangeable, and the old contact is never spent again. At any identical complete ordinary founder in the scope of the growing-end theorem, the possible older values and allocations of interchangeable loose distinctions leave the structural birth roster and grants fixed, up to the matching of indistinguishable children. The proof distinguishes following an address on a particular mark from changing which parent groups give birth. [Proof](../../proofs/EARLIER-EVENT-AND-LATER-BIRTH-20261122-001A/EARLIER-EVENT-AND-LATER-BIRTH-20261122-001A-P001_retained_holding/proof.md)

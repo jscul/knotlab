@@ -1,0 +1,21 @@
+{
+ "artifact_id": "THIRD-HOLDER-20261123-001B-E001",
+ "kind": "experiment",
+ "branch": "code_analysis",
+ "evidence_stage": "exploratory",
+ "status": "Frozen",
+ "question": "Two holders per distinction gave no hidden excess in the classes searched. The 18-knot structure uses distinctions held three and four times. How small can a structure with a hidden excess be, is a third holder enough, and how much smaller does it get if an observer's own distinction may already be shared when the birth takes it?",
+ "inputs": "The structures and seeds the pre-registration fixes; the code of REVIEW-LEADS-20261123-001C.",
+ "forbidden_inputs": "Any definition changed after a value is seen; any outcome of this study before the freeze.",
+ "primary_observable": "The items named under 'Runs and stop rule' of the pre-registration.",
+ "comparators_or_controls": "The code checks of row G; the control weighting; the two-holder census of the earlier study.",
+ "resource_budget": "Each run under ten minutes and 12 GB on one CPU process.",
+ "first_executable_signal": "Row G of the predictions table.",
+ "decision_rule": "Each prediction is judged by its 'Fails when' column.",
+ "stop_rule": "One script lists sides, one pairs them, one reduces, one searches. The study stops when the census, both reductions and the seeded search are done. It reports the smallest structure found in each class as a list of knots, verified by full enumeration, with its knots and extra holders, and the lower bound the census gives.",
+ "nonclaims": "An exploratory study of structures ordinary growth never makes. The excess is produced by the supplied weighting; a census is finite and proves no all-size statement.",
+ "preregistration": "research/THIRD-HOLDER-20261123-001B/preregistration.md",
+ "preregistration_sha256": "534945c44988533a7b99d1eb8ef5aeaa4646806b30bcab06a942b7c2dac452a2",
+ "design_advisor": "research/THIRD-HOLDER-20261123-001/advisor/answer.json",
+ "frozen_utc": "2026-11-23T22:20:07.805181+00:00"
+}

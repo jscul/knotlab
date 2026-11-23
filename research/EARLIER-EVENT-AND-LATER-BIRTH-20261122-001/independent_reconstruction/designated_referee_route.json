@@ -1,0 +1,47 @@
+{
+  "study": "EARLIER-EVENT-AND-LATER-BIRTH-20261122-001",
+  "formal_verdict": "pending",
+  "formal_queue_entry_created": false,
+  "formal_referee_title": "Referee research results in background",
+  "provider": "Claude Code 2.1.310, signed-in first-party Claude service",
+  "routing_authority": "The owner’s 2026-11-12 referee-thread-arrangement and referee-handoff-thread notes assign R1 to the designated background referee. Its preserved referee-results note and native session identify this same local session as the designated referee. The active-session list contained no running instance of the designated identity when it was resumed.",
+  "host_workflow_notes": [
+    "referee-thread-arrangement.md",
+    "referee-handoff-thread.md",
+    "referee-2026-11-16.md"
+  ],
+  "invocation": "Claude Code resume by previously verified saved session, first on its default model, then on Sonnet.",
+  "handoff": "../referee_handoff.md",
+  "request": "Adjudicate the intact case, two independent diversions, funding, matched counterpart, balanced and identical-founder controls, and prior-work check under both laws.",
+  "attempts": [
+    {
+      "observed_utc": "2026-11-23T04:38:32+00:00",
+      "requested_model_selection": "saved session default",
+      "process_exit_code": 1,
+      "api_error_status": 429,
+      "api_error": "usage_limit_reached",
+      "api_error_origin": "first_party",
+      "terminal_reason": "api_error",
+      "new_input_tokens": 0,
+      "new_output_tokens": 0,
+      "service_message": "You've hit your weekly limit · resets 11am (America/Los_Angeles)",
+      "provider_receipt_sha256": "8238e5eb4cc57da596a535acb50ec89bb2610b42d0bf0d2726a5dde9e5237405"
+    },
+    {
+      "observed_utc": "2026-11-23T04:39:18+00:00",
+      "requested_model_selection": "sonnet",
+      "process_exit_code": 1,
+      "api_error_status": 429,
+      "api_error": "usage_limit_reached",
+      "api_error_origin": "first_party",
+      "terminal_reason": "api_error",
+      "new_input_tokens": 0,
+      "new_output_tokens": 0,
+      "service_message": "You've hit your weekly limit · resets 11am (America/Los_Angeles)",
+      "provider_receipt_sha256": "ed7ed7bdecb23f0264d7004cfd801e0e2960e8cf8fb681f000b6cf7700d823ba"
+    }
+  ],
+  "resume_condition": "The provider reports a weekly usage reset at 11 a.m. Pacific. Its receipt gives no date. Resume the actual referee when quota is available.",
+  "independent_reconstruction": "report.md",
+  "saved_session_sha256": "225c1134decf21db863099bade6865134cdb97bb1c2b27e3a0cfb340ca217826"
+}

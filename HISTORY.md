@@ -3,6 +3,10 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 22 November 2026 · Which distinction satisfies a payment
+
+**Wording correction.** The earlier-payment study fixes which knots pay a child and how many distinctions are owed. With the same founders, a donor can exchange the destinations of its two named marks 63 and 64. The later joint child forms under either allocation and both knot laws. [Correction and original comparison](research/EARLIER-EVENT-AND-LATER-BIRTH-20261122-001/decision.md#correction-on-22-november-2026)
+
 ## 20 November 2026 · Which states the disagreement counts recover
 
 **Narrowing of the public summary.** With four or more distinctions, the pair

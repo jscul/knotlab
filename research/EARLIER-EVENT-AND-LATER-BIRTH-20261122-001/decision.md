@@ -6,6 +6,10 @@ An independent Astra Max advisor reviewed the exact prospective design. The stro
 
 The unchanged numerical-bit test and the interchangeable-spare result already settled their respective controls. This study traced a different input to the ordinary rule, a shared distinction with a particular real payer. See the [prior-work record](prior_work.md). The owner selected this direction directly. The postulates basket also contains separate directions about ties and new distinctions at older knots. Those require different operations. Scientific referee pending.
 
+## Correction on 22 November 2026
+
+The opening of the paired record says ordinary growth determines “all payments.” Growth determines which knots pay a child and how many distinctions each owes. When a donor has several loose distinctions, the award of a particular named distinction to a particular child remains free. In the intact comparison marks 63 and 64 can exchange recipients between R and S under either law. The two children still share the same donor and subsequently pay their joint child. This wording correction arose in the independent reconstruction. The sealed proof and the original allocation controls already distinguish these two claims. [Original comparison and allocations](paired_records.md) · [Independent reconstruction and referee availability](independent_reconstruction/report.md)
+
 ## Final report as sent
 
 2026-11-22 20:20 PST

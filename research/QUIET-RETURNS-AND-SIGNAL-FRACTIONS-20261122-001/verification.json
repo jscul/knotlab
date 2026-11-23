@@ -1,0 +1,218 @@
+{
+  "laws": {
+    "nae": {
+      "periodic": {
+        "first_ten_positive_live_words": [
+          682,
+          682,
+          682,
+          682,
+          682,
+          682,
+          682,
+          682,
+          682,
+          682
+        ],
+        "four_distinct_returns": [
+          {
+            "display_cut": 5,
+            "high_paid": [
+              0,
+              1
+            ],
+            "quiet_paid": [
+              0,
+              0
+            ]
+          },
+          {
+            "display_cut": 10,
+            "high_paid": [
+              0,
+              1
+            ],
+            "quiet_paid": [
+              1,
+              1
+            ]
+          },
+          {
+            "display_cut": 15,
+            "high_paid": [
+              0,
+              1
+            ],
+            "quiet_paid": [
+              0,
+              0
+            ]
+          },
+          {
+            "display_cut": 20,
+            "high_paid": [
+              0,
+              1
+            ],
+            "quiet_paid": [
+              1,
+              1
+            ]
+          }
+        ],
+        "period_after_first_write": 1
+      },
+      "prescribed_six_return_words": 64,
+      "quotient": {
+        "one_step_choices_histogram": {
+          "243": 32,
+          "324": 160,
+          "432": 320,
+          "576": 320,
+          "768": 160,
+          "1024": 32
+        },
+        "reachable": 1024,
+        "states_with_both_readings_available_after_one_bank_write": 1024,
+        "terminal_states": 0,
+        "transitions": 537824
+      }
+    },
+    "parity": {
+      "periodic": {
+        "first_ten_positive_live_words": [
+          768,
+          384,
+          288,
+          264,
+          258,
+          768,
+          384,
+          288,
+          264,
+          258
+        ],
+        "four_distinct_returns": [
+          {
+            "display_cut": 5,
+            "high_paid": [
+              0,
+              1
+            ],
+            "quiet_paid": [
+              0,
+              0
+            ]
+          },
+          {
+            "display_cut": 10,
+            "high_paid": [
+              0,
+              1
+            ],
+            "quiet_paid": [
+              1,
+              1
+            ]
+          },
+          {
+            "display_cut": 15,
+            "high_paid": [
+              0,
+              1
+            ],
+            "quiet_paid": [
+              0,
+              0
+            ]
+          },
+          {
+            "display_cut": 20,
+            "high_paid": [
+              0,
+              1
+            ],
+            "quiet_paid": [
+              1,
+              1
+            ]
+          }
+        ],
+        "period_after_first_write": 5
+      },
+      "prescribed_six_return_words": 64,
+      "quotient": {
+        "one_step_choices_histogram": {
+          "32": 512
+        },
+        "reachable": 512,
+        "states_with_both_readings_available_after_one_bank_write": 512,
+        "terminal_states": 0,
+        "transitions": 16384
+      }
+    }
+  },
+  "normalization": "one outcome per actual positive phase return, no odds",
+  "quiet_start": {
+    "exact_founder_word": [
+      1,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "exact_rows": [
+      [
+        0,
+        1,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      [
+        0,
+        1,
+        2,
+        10,
+        11
+      ],
+      [
+        2,
+        3,
+        12,
+        13
+      ],
+      [
+        3,
+        4,
+        14,
+        15
+      ],
+      [
+        4,
+        5,
+        6,
+        7,
+        16,
+        17
+      ]
+    ],
+    "live_period": 2,
+    "shared_law_history": "unique alternating live values; every recorded pair agrees"
+  }
+}

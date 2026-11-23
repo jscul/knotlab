@@ -5,7 +5,7 @@
   "proof": "LOCAL-EDIT-POLICIES-20261123-001A-P001",
   "ticket": "LOCAL-EDIT-POLICIES-20261123-001A",
   "kind": "proof",
-  "status": "Partial",
+  "status": "Proved",
   "title": "All locally available edit policies and a visible ordinary funding decision",
   "claim": "Derive the policy criterion, its scope and the size of a signal carried by old marked outcomes.",
   "standard_statement": "Operational conditional independence under endogenous local choices with exogenous free messages.",
@@ -19,12 +19,10 @@
     "WHOLE-STAGE-SETTINGS-20261120-001C",
     "WHOLE-STAGE-SETTINGS-20261120-001Z"
   ],
-  "remaining_obligations": [
-    "Derive the policy criterion, its scope and the size of a signal carried by old marked outcomes."
-  ],
+  "remaining_obligations": [],
   "validation": {
-    "level": "V0",
-    "status": "Design frozen; independent referee pending.",
+    "level": "V1",
+    "status": "Exact finite checks, independent in-task reconstruction and two literal ordinary implementations. Independent referee pending.",
     "external_review": false,
     "trusted_kernel": false
   },
@@ -84,5 +82,11 @@
       "external-calibration-or-interpretation"
     ]
   },
-  "source_contribution": "Determine when a change in remote policy is detectable without knowledge of a shortage."
+  "source_contribution": "Determine when a change in remote policy is detectable without knowledge of a shortage.",
+  "evidence_bindings": {
+    "research/LOCAL-EDIT-POLICIES-20261123-001/preregistration.md": "a12a5a3f567cf79639d61e16920b8096979d87ff60fee3dbe2a4c4aff119f389",
+    "proofs/LOCAL-EDIT-POLICIES-20261123-001A/LOCAL-EDIT-POLICIES-20261123-001A-P001_policy_test/proof.md": "bbe595507380529ac4b6516305f667ab9608dd11398eb6954f4338f647cea0f1",
+    "proofs/LOCAL-EDIT-POLICIES-20261123-001A/LOCAL-EDIT-POLICIES-20261123-001A-P001_policy_test/check.py": "3a3745c6a98deee3e5576181e730fb8f4bef82f75b9cae0cceececc2318d468e",
+    "proofs/LOCAL-EDIT-POLICIES-20261123-001A/LOCAL-EDIT-POLICIES-20261123-001A-P001_policy_test/result.json": "9e2e7037b0bae032d9aeb6099aa21abed339bd3b4ba780e233030c2a7176ee4f"
+  }
 }

@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**402 current results** and 5 superseded ones, from 619 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**403 current results** and 5 superseded ones, from 619 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -24,7 +24,7 @@ How to read an entry:
 - [Composing like cycles: the algebra of knots](#composing-like-cycles-the-algebra-of-knots): 14 results
 - [Native complexity: hubs, counting and approximation](#native-complexity-hubs-counting-and-approximation): 56 results
 - [Three-fold spaces and counting on them](#three-fold-spaces-and-counting-on-them): 32 results
-- [Native creation, genus and selection](#native-creation-genus-and-selection): 117 results
+- [Native creation, genus and selection](#native-creation-genus-and-selection): 118 results
 - [Space from a law: moves, signs, gaskets, rulers and circles](#space-from-a-law-moves-signs-gaskets-rulers-and-circles): 38 results
 - [Tori, twists and direction](#tori-twists-and-direction): 14 results
 - [Counting maps from three-manifold groups](#counting-maps-from-three-manifold-groups): 31 results
@@ -954,6 +954,9 @@ What a removal creates in the knot's spaces, how far it reaches, and how selecti
 - **2026-11-21 · Independent starts reproduce more kinds of later growth at equal cost** (`GROWTH-STATISTICS-20261121-001-D001`).
   On the tested weighting of four to six starting knots, independent draws reproduced more kinds of later behavior per run at the same CPU allowance than retaining distinct early readings and editing their starts. Under parity and not-all-equal, both searches eventually recovered the same set of kinds.
   [experiment E001](experiments/GROWTH-STATISTICS-20261121-001B/GROWTH-STATISTICS-20261121-001B-E001_search/result.md), [epic closure](proofs/GROWTH-STATISTICS-20261121-001Z/GROWTH-STATISTICS-20261121-001Z-P001_synthesis/proof.md)
+- **2026-11-23 · A visible old mark turns a CHSH excess from common funding into a usable message** (`LOCAL-EDIT-POLICIES-20261123-001-D001`).
+  For local outputs that equal an old marked bit on a common gain and zero on every stall, a positive CHSH excess guarantees an ordinary bit-dependent message in either direction when fixed-address funding marginals agree. At a suitable receiver address the resulting total variation is at least the excess above two, even when neither observer can infer which edit repairs its shortage.
+  [proof P001](proofs/LOCAL-EDIT-POLICIES-20261123-001A/LOCAL-EDIT-POLICIES-20261123-001A-P001_policy_test/proof.md), [epic closure](proofs/LOCAL-EDIT-POLICIES-20261123-001Z/LOCAL-EDIT-POLICIES-20261123-001Z-P001_synthesis/proof.md)
 
 ## Space from a law: moves, signs, gaskets, rulers and circles
 
@@ -1967,5 +1970,5 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-22 | Can a receiver distinguish two sends, and can growth supply a working keeper? (`TWO-SENDS-AND-GROWN-KEEPERS-20261122-001`) | [closure](proofs/TWO-SENDS-AND-GROWN-KEEPERS-20261122-001Z/TWO-SENDS-AND-GROWN-KEEPERS-20261122-001Z-P001_synthesis/proof.md) | [folder](research/TWO-SENDS-AND-GROWN-KEEPERS-20261122-001/) |
 | 2026-11-22 | Can varied drawings teach an unseen letter rotation? (`VARIED-LETTER-DRAWINGS-20261122-001`) | — | [folder](research/VARIED-LETTER-DRAWINGS-20261122-001/) |
 | 2026-11-22 | Can a freshly recorded bit block a later join? (`WRITTEN-BIT-AND-JOIN-VETO-20261122-001`) | [closure](proofs/WRITTEN-BIT-AND-JOIN-VETO-20261122-001Z/WRITTEN-BIT-AND-JOIN-VETO-20261122-001Z-P001_synthesis/proof.md) | [folder](research/WRITTEN-BIT-AND-JOIN-VETO-20261122-001/) |
-| 2026-11-23 | Can ordinary growth hide a free choice among all locally available edits? (`LOCAL-EDIT-POLICIES-20261123-001`) | — | [folder](research/LOCAL-EDIT-POLICIES-20261123-001/) |
+| 2026-11-23 | Can ordinary growth hide a free choice among all locally available edits? (`LOCAL-EDIT-POLICIES-20261123-001`) | [closure](proofs/LOCAL-EDIT-POLICIES-20261123-001Z/LOCAL-EDIT-POLICIES-20261123-001Z-P001_synthesis/proof.md) | [folder](research/LOCAL-EDIT-POLICIES-20261123-001/) |
 

@@ -1,0 +1,332 @@
+{
+  "proof": "LOCAL-EDIT-POLICIES-20261123-001A-P001",
+  "ticket": "LOCAL-EDIT-POLICIES-20261123-001A",
+  "status": "Proved",
+  "referee": "pending",
+  "claim": "Exact conditional-record criterion for every local address policy. Sharp signalling bounds for visible old marks and a common gain. A supplied post-only quantum control. Ordinary optional additions on separated persistent live components admit a common model even for newly revealed inputs if their visible common funding decision has invariant marginals.",
+  "validation": "V1 finite exact policy enumeration, direct conditional comparison and independent signed-sum maximization; separate in-task reconstruction for the sharp calibration and broader bounds. The physical growth source is tested separately.",
+  "source_sha256": {
+    "research/LOCAL-EDIT-POLICIES-20261123-001/preregistration.md": "a12a5a3f567cf79639d61e16920b8096979d87ff60fee3dbe2a4c4aff119f389",
+    "proofs/LOCAL-EDIT-POLICIES-20261123-001A/LOCAL-EDIT-POLICIES-20261123-001A-P001_policy_test/proof.md": "bbe595507380529ac4b6516305f667ab9608dd11398eb6954f4338f647cea0f1",
+    "proofs/LOCAL-EDIT-POLICIES-20261123-001A/LOCAL-EDIT-POLICIES-20261123-001A-P001_policy_test/check.py": "3a3745c6a98deee3e5576181e730fb8f4bef82f75b9cae0cceececc2318d468e"
+  },
+  "proof_sha256": "bbe595507380529ac4b6516305f667ab9608dd11398eb6954f4338f647cea0f1",
+  "checks": {
+    "policy_criterion": {
+      "directed_menu_tests": 1024,
+      "private": 128,
+      "signalling": 896,
+      "source_weights": [
+        1,
+        3,
+        2,
+        4
+      ],
+      "mark_message_identities": 1024
+    },
+    "marked_bits": {
+      "nominal_privacy": {
+        "raw": [
+          [
+            28,
+            0,
+            0,
+            4
+          ],
+          [
+            28,
+            0,
+            0,
+            4
+          ],
+          [
+            28,
+            0,
+            0,
+            4
+          ],
+          [
+            24,
+            4,
+            4,
+            0
+          ]
+        ],
+        "denominators": [
+          32,
+          32,
+          32,
+          32
+        ],
+        "correlations": [
+          "1",
+          "1",
+          "1",
+          "1/2"
+        ],
+        "signed": "5/2",
+        "maximum": "5/2"
+      },
+      "optimal_each_direction": "1/2",
+      "xor_mark_messages": [
+        [
+          {
+            "gain": "0",
+            "bit": "0",
+            "decoder": "0",
+            "constant_gain": "0"
+          },
+          {
+            "gain": "0",
+            "bit": "1/4",
+            "decoder": "-1/2",
+            "constant_gain": "0"
+          }
+        ],
+        [
+          {
+            "gain": "0",
+            "bit": "0",
+            "decoder": "0",
+            "constant_gain": "0"
+          },
+          {
+            "gain": "0",
+            "bit": "1/4",
+            "decoder": "-1/2",
+            "constant_gain": "0"
+          }
+        ]
+      ],
+      "unequal_funding_sharpness": [
+        {
+          "mixing_weight": "1/4",
+          "score": "5/2",
+          "policy_TV": [
+            "1/4",
+            "1/4"
+          ]
+        },
+        {
+          "mixing_weight": "1/2",
+          "score": "3",
+          "policy_TV": [
+            "1/2",
+            "1/2"
+          ]
+        },
+        {
+          "mixing_weight": "3/4",
+          "score": "7/2",
+          "policy_TV": [
+            "3/4",
+            "3/4"
+          ]
+        },
+        {
+          "mixing_weight": "1",
+          "score": "4",
+          "policy_TV": [
+            "1",
+            "1"
+          ]
+        }
+      ]
+    },
+    "information_and_action_controls": {
+      "post_only_quantum": {
+        "raw": [
+          [
+            28,
+            0,
+            0,
+            4
+          ],
+          [
+            27,
+            1,
+            1,
+            3
+          ],
+          [
+            27,
+            1,
+            1,
+            3
+          ],
+          [
+            25,
+            3,
+            3,
+            1
+          ]
+        ],
+        "denominators": [
+          32,
+          32,
+          32,
+          32
+        ],
+        "correlations": [
+          "1",
+          "7/8",
+          "7/8",
+          "5/8"
+        ],
+        "signed": "17/8",
+        "maximum": "17/8"
+      },
+      "quantum_branch_correlations": [
+        "1",
+        "1/2",
+        "1/2",
+        "-1/2"
+      ],
+      "post_only_compulsory_TV": 0,
+      "earlier_payload_TV": "1/4",
+      "new_veto_TV": "1/4",
+      "hidden_funding_bit": {
+        "flag_only": [
+          "0",
+          "0"
+        ],
+        "revealed_after": [
+          "1",
+          "0"
+        ]
+      },
+      "address_dependent_negative_control": {
+        "score": 4,
+        "each_TV": "1/2"
+      }
+    },
+    "arbitrary_readings": {
+      "nominal_agreement": {
+        "complete_detector_pairs": 65536,
+        "optimal_score": "4",
+        "policy_TV": [
+          "1",
+          "1"
+        ]
+      },
+      "one_hidden_selector": {
+        "complete_detector_pairs": 65536,
+        "optimal_score": "4",
+        "policy_TV": [
+          "1/2",
+          "1/2"
+        ]
+      },
+      "irregular": {
+        "complete_detector_pairs": 65536,
+        "optimal_score": "21/8",
+        "policy_TV": [
+          "5/8",
+          "5/8"
+        ]
+      }
+    },
+    "ordinary_two_components": {
+      "parity": {
+        "old_solutions": 128,
+        "old_projections": [
+          4,
+          4,
+          4,
+          4,
+          16,
+          16
+        ],
+        "canonical_support_arities": [
+          3,
+          5
+        ],
+        "both_z_values_at_joint_prestates": 16,
+        "arms": {
+          "00": {
+            "old_input_patterns": 16,
+            "fresh_per_birth": [
+              1,
+              1
+            ]
+          },
+          "01": {
+            "old_input_patterns": 32,
+            "fresh_per_birth": [
+              1,
+              1,
+              2
+            ]
+          },
+          "10": {
+            "old_input_patterns": 32,
+            "fresh_per_birth": [
+              1,
+              1,
+              2
+            ]
+          },
+          "11": {
+            "old_input_patterns": 64,
+            "fresh_per_birth": [
+              1,
+              1,
+              2,
+              2
+            ]
+          }
+        }
+      },
+      "not_all_equal": {
+        "old_solutions": 2450,
+        "old_projections": [
+          6,
+          6,
+          6,
+          6,
+          30,
+          30
+        ],
+        "canonical_support_arities": [
+          3,
+          5
+        ],
+        "both_z_values_at_joint_prestates": 36,
+        "arms": {
+          "00": {
+            "old_input_patterns": 16,
+            "fresh_per_birth": [
+              1,
+              1
+            ]
+          },
+          "01": {
+            "old_input_patterns": 32,
+            "fresh_per_birth": [
+              1,
+              1,
+              2
+            ]
+          },
+          "10": {
+            "old_input_patterns": 32,
+            "fresh_per_birth": [
+              1,
+              1,
+              2
+            ]
+          },
+          "11": {
+            "old_input_patterns": 64,
+            "fresh_per_birth": [
+              1,
+              1,
+              2,
+              2
+            ]
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+ "artifact_id": "REVIEW-LEADS-20261123-001G-E001",
+ "kind": "experiment",
+ "branch": "code_analysis",
+ "evidence_stage": "exploratory",
+ "status": "Frozen",
+ "question": "Is failing the operator test tied to being a source or only to growing?",
+ "inputs": "Ticket A's code; the recorded edits, draws and verdicts of the reads-holders-sources study, part C.",
+ "forbidden_inputs": "Any recomputed release verdict; any definition changed after a value is seen.",
+ "primary_observable": "Cross-table of recorded verdict against the test by growth kind; knots at first failure; parents of the breaking birth.",
+ "comparators_or_controls": "Starts of growing kind that are not proved sources; the gate row G.",
+ "resource_budget": "Each run under ten minutes and 12 GB.",
+ "first_executable_signal": "Gate row G.",
+ "decision_rule": "The reading fixed in the pre-registration (90% and 50% bars) and each prediction's 'Fails when' column.",
+ "stop_rule": "Both populations read once.",
+ "nonclaims": "An exploratory study on two recorded populations with about six independent sources; no all-size statement.",
+ "preregistration": "research/REVIEW-LEADS-20261123-001G/preregistration.md",
+ "preregistration_sha256": "f31600daa2669b576595cbc6d922223cb898ea805b2e67f2315d3aa57b174ca4",
+ "design_advisor": "research/REVIEW-LEADS-20261123-001/advisor/answer_g.json",
+ "frozen_utc": "2026-11-23T20:59:18.230743+00:00"
+}

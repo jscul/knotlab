@@ -1,0 +1,221 @@
+{
+ "engine": {
+  "group_rule_vs_naive": {
+   "agree": true,
+   "groups_of_three_or_more_seen": 1618,
+   "trials": 4000
+  },
+  "induced_vs_R_rounds": {
+   "cases": [
+    {
+     "R": 2,
+     "law": "two",
+     "same": true,
+     "start": "D2(5,3)"
+    },
+    {
+     "R": 5,
+     "law": "two",
+     "same": true,
+     "start": "D2(5,3)"
+    },
+    {
+     "R": 6,
+     "law": "two",
+     "same": true,
+     "start": "D2(5,3)"
+    },
+    {
+     "R": 2,
+     "law": "three",
+     "same": true,
+     "start": "Ring(5,3)"
+    },
+    {
+     "R": 5,
+     "law": "three",
+     "same": true,
+     "start": "Ring(5,3)"
+    },
+    {
+     "R": 6,
+     "law": "three",
+     "same": true,
+     "start": "Ring(5,3)"
+    },
+    {
+     "R": 2,
+     "law": "two",
+     "same": true,
+     "start": "D2(4,3)"
+    },
+    {
+     "R": 5,
+     "law": "two",
+     "same": true,
+     "start": "D2(4,3)"
+    },
+    {
+     "R": 6,
+     "law": "two",
+     "same": true,
+     "start": "D2(4,3)"
+    }
+   ],
+   "pass": true
+  },
+  "matcher_vs_networkx": {
+   "agree": 600,
+   "trials": 600
+  },
+  "met_sets_vs_naive": {
+   "agree": true,
+   "trials": 3000
+  },
+  "part_round_all_in_turn_vs_complete_rounds": {
+   "cases": [
+    {
+     "law": "two",
+     "start": "Ring(5,3)",
+     "structures_same": true,
+     "trace_equal": true
+    },
+    {
+     "law": "three",
+     "start": "Ring(5,3)",
+     "structures_same": true,
+     "trace_equal": true
+    },
+    {
+     "law": "two",
+     "start": "D2(4,3)",
+     "structures_same": true,
+     "trace_equal": true
+    },
+    {
+     "law": "three",
+     "start": "D2(4,3)",
+     "structures_same": true,
+     "trace_equal": true
+    },
+    {
+     "law": "two",
+     "start": "D2(5,3)",
+     "structures_same": true,
+     "trace_equal": true
+    },
+    {
+     "law": "three",
+     "start": "D2(5,3)",
+     "structures_same": true,
+     "trace_equal": true
+    },
+    {
+     "law": "two",
+     "start": "DW(5,3)",
+     "structures_same": true,
+     "trace_equal": true
+    },
+    {
+     "law": "three",
+     "start": "DW(5,3)",
+     "structures_same": true,
+     "trace_equal": true
+    },
+    {
+     "law": "two",
+     "start": "D2(6,3)",
+     "structures_same": true,
+     "trace_equal": true
+    },
+    {
+     "law": "three",
+     "start": "D2(6,3)",
+     "structures_same": true,
+     "trace_equal": true
+    },
+    {
+     "law": "two",
+     "start": "Ring(7,3)",
+     "structures_same": true,
+     "trace_equal": true
+    },
+    {
+     "law": "three",
+     "start": "Ring(7,3)",
+     "structures_same": true,
+     "trace_equal": true
+    }
+   ],
+   "pass": true
+  },
+  "sameness": {
+   "pass": true,
+   "rosters": [
+    {
+     "changed_h_rejected": true,
+     "members": 10,
+     "renamed_accepted": 5,
+     "renamed_trials": 5,
+     "roster": "D2(5,3) two after 1 rounds"
+    },
+    {
+     "changed_h_rejected": true,
+     "members": 5,
+     "renamed_accepted": 5,
+     "renamed_trials": 5,
+     "roster": "D2(5,3) two after 0 rounds"
+    },
+    {
+     "changed_h_rejected": true,
+     "members": 15,
+     "renamed_accepted": 5,
+     "renamed_trials": 5,
+     "roster": "Ring(5,3) three after 2 rounds"
+    }
+   ],
+   "structures": [
+    {
+     "knots": 195,
+     "moved_rejected": 10,
+     "moved_trials": 10,
+     "renamed_accepted": 5,
+     "renamed_trials": 5,
+     "structure": "D2(5,3) two after 6 rounds"
+    },
+    {
+     "knots": 65,
+     "moved_rejected": 10,
+     "moved_trials": 10,
+     "renamed_accepted": 5,
+     "renamed_trials": 5,
+     "structure": "Ring(5,3) three after 5 rounds"
+    },
+    {
+     "knots": 76,
+     "moved_rejected": 10,
+     "moved_trials": 10,
+     "renamed_accepted": 5,
+     "renamed_trials": 5,
+     "structure": "D2(4,3) three after 7 rounds"
+    },
+    {
+     "knots": 275,
+     "moved_rejected": 10,
+     "moved_trials": 10,
+     "renamed_accepted": 5,
+     "renamed_trials": 5,
+     "structure": "Ring(5,3) two after 7 rounds"
+    },
+    {
+     "knots": 7,
+     "moved_rejected": 10,
+     "moved_trials": 10,
+     "renamed_accepted": 5,
+     "renamed_trials": 5,
+     "structure": "seven-knot generator"
+    }
+   ]
+  }
+ }
+}

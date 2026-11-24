@@ -1,0 +1,240 @@
+Birth-by-birth law on D2(4,3): DEAD, RATION-3, waiting, BY-GENERATION with offshoots first, seed 0
+(run identity as in C2). Knots 0-3 are the members, 4-7 the dead knots w_0..w_3 (w_i meets members
+i and i+1). Before every move: every member with its generation, h, open groups and whether it is
+short, and the moves of least generation. Printed through generation 1, that is until no move of
+generation 1 or less is left.
+
+state after 0 moves (8 knots):
+    member   0  gen 0  h 3  open groups [[0, 1], [0, 3]]  
+    member   1  gen 0  h 3  open groups [[0, 1], [1, 2]]  
+    member   2  gen 0  h 3  open groups [[1, 2], [2, 3]]  
+    member   3  gen 0  h 3  open groups [[0, 3], [2, 3]]  
+    least move generation 0; its moves: [('J', (0, 1)), ('J', (0, 3)), ('J', (1, 2)), ('J', (2, 3)), ('O', (0,)), ('O', (1,)), ('O', (2,)), ('O', (3,))]
+  move 1: offshoot of [1] (move generation 0) -> knot 8, generation 1, 3 fresh
+
+state after 1 moves (9 knots):
+    member   0  gen 0  h 3  open groups [[0, 1], [0, 3]]  
+    member   1  gen 0  h 2  open groups [[0, 1], [1, 2]]  
+    member   2  gen 0  h 3  open groups [[1, 2], [2, 3]]  
+    member   3  gen 0  h 3  open groups [[0, 3], [2, 3]]  
+    member   8  gen 1  h 3  open groups []  
+    least move generation 0; its moves: [('J', (0, 1)), ('J', (0, 3)), ('J', (1, 2)), ('J', (2, 3)), ('O', (0,)), ('O', (2,)), ('O', (3,))]
+  move 2: offshoot of [3] (move generation 0) -> knot 9, generation 1, 3 fresh
+
+state after 2 moves (10 knots):
+    member   0  gen 0  h 3  open groups [[0, 1], [0, 3]]  
+    member   1  gen 0  h 2  open groups [[0, 1], [1, 2]]  
+    member   2  gen 0  h 3  open groups [[1, 2], [2, 3]]  
+    member   3  gen 0  h 2  open groups [[0, 3], [2, 3]]  
+    member   8  gen 1  h 3  open groups []  
+    member   9  gen 1  h 3  open groups []  
+    least move generation 0; its moves: [('J', (0, 1)), ('J', (0, 3)), ('J', (1, 2)), ('J', (2, 3)), ('O', (0,)), ('O', (2,))]
+  move 3: offshoot of [2] (move generation 0) -> knot 10, generation 1, 3 fresh
+
+state after 3 moves (11 knots):
+    member   0  gen 0  h 3  open groups [[0, 1], [0, 3]]  
+    member   1  gen 0  h 2  open groups [[0, 1], [1, 2]]  
+    member   2  gen 0  h 2  open groups [[1, 2], [2, 3]]  
+    member   3  gen 0  h 2  open groups [[0, 3], [2, 3]]  
+    member   8  gen 1  h 3  open groups []  
+    member   9  gen 1  h 3  open groups []  
+    member  10  gen 1  h 3  open groups []  
+    least move generation 0; its moves: [('J', (0, 1)), ('J', (0, 3)), ('J', (1, 2)), ('J', (2, 3)), ('O', (0,))]
+  move 4: offshoot of [0] (move generation 0) -> knot 11, generation 1, 3 fresh
+
+state after 4 moves (12 knots):
+    member   0  gen 0  h 2  open groups [[0, 1], [0, 3]]  
+    member   1  gen 0  h 2  open groups [[0, 1], [1, 2]]  
+    member   2  gen 0  h 2  open groups [[1, 2], [2, 3]]  
+    member   3  gen 0  h 2  open groups [[0, 3], [2, 3]]  
+    member   8  gen 1  h 3  open groups []  
+    member   9  gen 1  h 3  open groups []  
+    member  10  gen 1  h 3  open groups []  
+    member  11  gen 1  h 3  open groups []  
+    least move generation 0; its moves: [('J', (0, 1)), ('J', (0, 3)), ('J', (1, 2)), ('J', (2, 3))]
+  move 5: join of [0, 3] (move generation 0) -> knot 12, generation 1, 3 fresh
+
+state after 5 moves (13 knots):
+    member   0  gen 0  h 1  open groups [[0, 1]]  
+    member   1  gen 0  h 2  open groups [[0, 1], [1, 2]]  
+    member   2  gen 0  h 2  open groups [[1, 2], [2, 3]]  
+    member   3  gen 0  h 1  open groups [[2, 3]]  
+    member   8  gen 1  h 3  open groups []  
+    member   9  gen 1  h 3  open groups []  
+    member  10  gen 1  h 3  open groups []  
+    member  11  gen 1  h 3  open groups []  
+    member  12  gen 1  h 3  open groups []  
+    least move generation 0; its moves: [('J', (0, 1)), ('J', (1, 2)), ('J', (2, 3))]
+  move 6: join of [0, 1] (move generation 0) -> knot 13, generation 1, 3 fresh
+
+state after 6 moves (14 knots):
+    member   1  gen 0  h 1  open groups [[1, 2]]  
+    member   2  gen 0  h 2  open groups [[1, 2], [2, 3]]  
+    member   3  gen 0  h 1  open groups [[2, 3]]  
+    member   8  gen 1  h 3  open groups []  
+    member   9  gen 1  h 3  open groups []  
+    member  10  gen 1  h 3  open groups []  
+    member  11  gen 1  h 3  open groups [[11, 12], [11, 13]]  
+    member  12  gen 1  h 3  open groups [[11, 12], [12, 13]]  
+    member  13  gen 1  h 3  open groups [[11, 13], [12, 13]]  
+    least move generation 0; its moves: [('J', (1, 2)), ('J', (2, 3))]
+  move 7: join of [2, 3] (move generation 0) -> knot 14, generation 1, 3 fresh
+
+state after 7 moves (15 knots):
+    member   1  gen 0  h 1  open groups [[1, 2]]  
+    member   2  gen 0  h 1  open groups [[1, 2]]  
+    member   8  gen 1  h 3  open groups []  
+    member   9  gen 1  h 3  open groups [[9, 12], [9, 14]]  
+    member  10  gen 1  h 3  open groups []  
+    member  11  gen 1  h 3  open groups [[11, 12], [11, 13]]  
+    member  12  gen 1  h 3  open groups [[9, 12], [11, 12], [12, 13], [12, 14]]  SHORT
+    member  13  gen 1  h 3  open groups [[11, 13], [12, 13]]  
+    member  14  gen 1  h 3  open groups [[9, 14], [12, 14]]  
+    least move generation 0; its moves: [('J', (1, 2))]
+  move 8: join of [1, 2] (move generation 0) -> knot 15, generation 1, 3 fresh
+
+state after 8 moves (16 knots):
+    member   8  gen 1  h 3  open groups [[8, 13], [8, 15]]  
+    member   9  gen 1  h 3  open groups [[9, 12], [9, 14]]  
+    member  10  gen 1  h 3  open groups [[10, 14], [10, 15]]  
+    member  11  gen 1  h 3  open groups [[11, 12], [11, 13]]  
+    member  12  gen 1  h 3  open groups [[9, 12], [11, 12], [12, 13], [12, 14]]  SHORT
+    member  13  gen 1  h 3  open groups [[8, 13], [11, 13], [12, 13], [13, 15]]  SHORT
+    member  14  gen 1  h 3  open groups [[9, 14], [10, 14], [12, 14], [14, 15]]  SHORT
+    member  15  gen 1  h 3  open groups [[8, 15], [10, 15], [13, 15], [14, 15]]  SHORT
+    least move generation 1; its moves: [('O', (8,)), ('O', (9,)), ('O', (10,)), ('O', (11,))]
+  move 9: offshoot of [9] (move generation 1) -> knot 16, generation 2, 3 fresh
+
+state after 9 moves (17 knots):
+    member   8  gen 1  h 3  open groups [[8, 13], [8, 15]]  
+    member   9  gen 1  h 2  open groups [[9, 12], [9, 14]]  
+    member  10  gen 1  h 3  open groups [[10, 14], [10, 15]]  
+    member  11  gen 1  h 3  open groups [[11, 12], [11, 13]]  
+    member  12  gen 1  h 3  open groups [[9, 12], [11, 12], [12, 13], [12, 14]]  SHORT
+    member  13  gen 1  h 3  open groups [[8, 13], [11, 13], [12, 13], [13, 15]]  SHORT
+    member  14  gen 1  h 3  open groups [[9, 14], [10, 14], [12, 14], [14, 15]]  SHORT
+    member  15  gen 1  h 3  open groups [[8, 15], [10, 15], [13, 15], [14, 15]]  SHORT
+    member  16  gen 2  h 3  open groups []  
+    least move generation 1; its moves: [('O', (8,)), ('O', (9,)), ('O', (10,)), ('O', (11,))]
+  move 10: offshoot of [11] (move generation 1) -> knot 17, generation 2, 3 fresh
+
+state after 10 moves (18 knots):
+    member   8  gen 1  h 3  open groups [[8, 13], [8, 15]]  
+    member   9  gen 1  h 2  open groups [[9, 12], [9, 14]]  
+    member  10  gen 1  h 3  open groups [[10, 14], [10, 15]]  
+    member  11  gen 1  h 2  open groups [[11, 12], [11, 13]]  
+    member  12  gen 1  h 3  open groups [[9, 12], [11, 12], [12, 13], [12, 14]]  SHORT
+    member  13  gen 1  h 3  open groups [[8, 13], [11, 13], [12, 13], [13, 15]]  SHORT
+    member  14  gen 1  h 3  open groups [[9, 14], [10, 14], [12, 14], [14, 15]]  SHORT
+    member  15  gen 1  h 3  open groups [[8, 15], [10, 15], [13, 15], [14, 15]]  SHORT
+    member  16  gen 2  h 3  open groups []  
+    member  17  gen 2  h 3  open groups []  
+    least move generation 1; its moves: [('O', (8,)), ('O', (9,)), ('O', (10,)), ('O', (11,))]
+  move 11: offshoot of [11] (move generation 1) -> knot 18, generation 2, 3 fresh
+
+state after 11 moves (19 knots):
+    member   8  gen 1  h 3  open groups [[8, 13], [8, 15]]  
+    member   9  gen 1  h 2  open groups [[9, 12], [9, 14]]  
+    member  10  gen 1  h 3  open groups [[10, 14], [10, 15]]  
+    member  11  gen 1  h 1  open groups [[11, 12], [11, 13]]  SHORT
+    member  12  gen 1  h 3  open groups [[9, 12], [11, 12], [12, 13], [12, 14]]  SHORT
+    member  13  gen 1  h 3  open groups [[8, 13], [11, 13], [12, 13], [13, 15]]  SHORT
+    member  14  gen 1  h 3  open groups [[9, 14], [10, 14], [12, 14], [14, 15]]  SHORT
+    member  15  gen 1  h 3  open groups [[8, 15], [10, 15], [13, 15], [14, 15]]  SHORT
+    member  16  gen 2  h 3  open groups []  
+    member  17  gen 2  h 3  open groups []  
+    member  18  gen 2  h 3  open groups []  
+    least move generation 1; its moves: [('O', (8,)), ('O', (9,)), ('O', (10,))]
+  move 12: offshoot of [10] (move generation 1) -> knot 19, generation 2, 3 fresh
+
+state after 12 moves (20 knots):
+    member   8  gen 1  h 3  open groups [[8, 13], [8, 15]]  
+    member   9  gen 1  h 2  open groups [[9, 12], [9, 14]]  
+    member  10  gen 1  h 2  open groups [[10, 14], [10, 15]]  
+    member  11  gen 1  h 1  open groups [[11, 12], [11, 13]]  SHORT
+    member  12  gen 1  h 3  open groups [[9, 12], [11, 12], [12, 13], [12, 14]]  SHORT
+    member  13  gen 1  h 3  open groups [[8, 13], [11, 13], [12, 13], [13, 15]]  SHORT
+    member  14  gen 1  h 3  open groups [[9, 14], [10, 14], [12, 14], [14, 15]]  SHORT
+    member  15  gen 1  h 3  open groups [[8, 15], [10, 15], [13, 15], [14, 15]]  SHORT
+    member  16  gen 2  h 3  open groups []  
+    member  17  gen 2  h 3  open groups []  
+    member  18  gen 2  h 3  open groups []  
+    member  19  gen 2  h 3  open groups []  
+    least move generation 1; its moves: [('O', (8,)), ('O', (9,)), ('O', (10,))]
+  move 13: offshoot of [10] (move generation 1) -> knot 20, generation 2, 3 fresh
+
+state after 13 moves (21 knots):
+    member   8  gen 1  h 3  open groups [[8, 13], [8, 15]]  
+    member   9  gen 1  h 2  open groups [[9, 12], [9, 14]]  
+    member  10  gen 1  h 1  open groups [[10, 14], [10, 15]]  SHORT
+    member  11  gen 1  h 1  open groups [[11, 12], [11, 13]]  SHORT
+    member  12  gen 1  h 3  open groups [[9, 12], [11, 12], [12, 13], [12, 14]]  SHORT
+    member  13  gen 1  h 3  open groups [[8, 13], [11, 13], [12, 13], [13, 15]]  SHORT
+    member  14  gen 1  h 3  open groups [[9, 14], [10, 14], [12, 14], [14, 15]]  SHORT
+    member  15  gen 1  h 3  open groups [[8, 15], [10, 15], [13, 15], [14, 15]]  SHORT
+    member  16  gen 2  h 3  open groups []  
+    member  17  gen 2  h 3  open groups []  
+    member  18  gen 2  h 3  open groups []  
+    member  19  gen 2  h 3  open groups []  
+    member  20  gen 2  h 3  open groups []  
+    least move generation 1; its moves: [('O', (8,)), ('O', (9,))]
+  move 14: offshoot of [8] (move generation 1) -> knot 21, generation 2, 3 fresh
+
+state after 14 moves (22 knots):
+    member   8  gen 1  h 2  open groups [[8, 13], [8, 15]]  
+    member   9  gen 1  h 2  open groups [[9, 12], [9, 14]]  
+    member  10  gen 1  h 1  open groups [[10, 14], [10, 15]]  SHORT
+    member  11  gen 1  h 1  open groups [[11, 12], [11, 13]]  SHORT
+    member  12  gen 1  h 3  open groups [[9, 12], [11, 12], [12, 13], [12, 14]]  SHORT
+    member  13  gen 1  h 3  open groups [[8, 13], [11, 13], [12, 13], [13, 15]]  SHORT
+    member  14  gen 1  h 3  open groups [[9, 14], [10, 14], [12, 14], [14, 15]]  SHORT
+    member  15  gen 1  h 3  open groups [[8, 15], [10, 15], [13, 15], [14, 15]]  SHORT
+    member  16  gen 2  h 3  open groups []  
+    member  17  gen 2  h 3  open groups []  
+    member  18  gen 2  h 3  open groups []  
+    member  19  gen 2  h 3  open groups []  
+    member  20  gen 2  h 3  open groups []  
+    member  21  gen 2  h 3  open groups []  
+    least move generation 1; its moves: [('O', (8,)), ('O', (9,))]
+  move 15: offshoot of [8] (move generation 1) -> knot 22, generation 2, 3 fresh
+
+state after 15 moves (23 knots):
+    member   8  gen 1  h 1  open groups [[8, 13], [8, 15]]  SHORT
+    member   9  gen 1  h 2  open groups [[9, 12], [9, 14]]  
+    member  10  gen 1  h 1  open groups [[10, 14], [10, 15]]  SHORT
+    member  11  gen 1  h 1  open groups [[11, 12], [11, 13]]  SHORT
+    member  12  gen 1  h 3  open groups [[9, 12], [11, 12], [12, 13], [12, 14]]  SHORT
+    member  13  gen 1  h 3  open groups [[8, 13], [11, 13], [12, 13], [13, 15]]  SHORT
+    member  14  gen 1  h 3  open groups [[9, 14], [10, 14], [12, 14], [14, 15]]  SHORT
+    member  15  gen 1  h 3  open groups [[8, 15], [10, 15], [13, 15], [14, 15]]  SHORT
+    member  16  gen 2  h 3  open groups []  
+    member  17  gen 2  h 3  open groups []  
+    member  18  gen 2  h 3  open groups []  
+    member  19  gen 2  h 3  open groups []  
+    member  20  gen 2  h 3  open groups []  
+    member  21  gen 2  h 3  open groups []  
+    member  22  gen 2  h 3  open groups []  
+    least move generation 1; its moves: [('O', (9,))]
+  move 16: offshoot of [9] (move generation 1) -> knot 23, generation 2, 3 fresh
+
+state after 16 moves (24 knots):
+    member   8  gen 1  h 1  open groups [[8, 13], [8, 15]]  SHORT
+    member   9  gen 1  h 1  open groups [[9, 12], [9, 14]]  SHORT
+    member  10  gen 1  h 1  open groups [[10, 14], [10, 15]]  SHORT
+    member  11  gen 1  h 1  open groups [[11, 12], [11, 13]]  SHORT
+    member  12  gen 1  h 3  open groups [[9, 12], [11, 12], [12, 13], [12, 14]]  SHORT
+    member  13  gen 1  h 3  open groups [[8, 13], [11, 13], [12, 13], [13, 15]]  SHORT
+    member  14  gen 1  h 3  open groups [[9, 14], [10, 14], [12, 14], [14, 15]]  SHORT
+    member  15  gen 1  h 3  open groups [[8, 15], [10, 15], [13, 15], [14, 15]]  SHORT
+    member  16  gen 2  h 3  open groups []  
+    member  17  gen 2  h 3  open groups []  
+    member  18  gen 2  h 3  open groups []  
+    member  19  gen 2  h 3  open groups []  
+    member  20  gen 2  h 3  open groups []  
+    member  21  gen 2  h 3  open groups []  
+    member  22  gen 2  h 3  open groups []  
+    member  23  gen 2  h 3  open groups []  
+    least move generation 2; its moves: [('O', (16,)), ('O', (17,)), ('O', (18,)), ('O', (19,)), ('O', (20,)), ('O', (21,)), ('O', (22,)), ('O', (23,))]
+
+moves made by move generation: {0: {'O': 4, 'J': 4}, 1: {'O': 8}}
+jams recorded (generation: first record): {1: {'move': 16, 'made_J': 0, 'made_O': 8, 'no_move_at_all': False}}

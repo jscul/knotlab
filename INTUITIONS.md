@@ -3092,6 +3092,20 @@ Taking the rounds away shows what they were doing (computed, refereed):
   round has not gone: the law replays it from the record of parents. What has
   gone is the need for anyone to keep it
   ([LOCAL-ROUND-20261123-001](research/LOCAL-ROUND-20261123-001/decision.md)).
+- **What the record of parents is for (computed, referee pending).** Two
+  follow-ups. Under the cap of three, as the ring that returns was recorded
+  (lesson 8.7), the same guard holds. Where knots hold what they do not use
+  it fails: a knot's children are then no longer all made in one round, so
+  the knots made alongside one another are no longer one round
+  ([GUARD-CAP-AND-HOLD-20261124-001](research/GUARD-CAP-AND-HOLD-20261124-001/decision.md)).
+  And the record cannot in general be read back from what is built. In the
+  half-built states of births made one at a time, a knot and its offshoot can
+  look exactly alike; the smallest case has two knots. One finished structure
+  of 16 knots keeps no trace of which knot was first. On structures built by
+  complete rounds, two steps out are enough where a short knot retires and
+  leaves a barred place, and no fixed distance is enough where it makes
+  offshoots
+  ([PARENTS-FROM-HOLDERS-20261124-001](research/PARENTS-FROM-HOLDERS-20261124-001/decision.md)).
 - **The growth lives where parts are joined.** Counted by size, each part of a
   joined start keeps exactly the growth it has alone, and 97% to 99.9% of the
   junctions of size 10 or more span the join.
@@ -3957,8 +3971,9 @@ interpretation that no result settles.
 **What is open.** The ring that returns and the parts that copy themselves
 each have a frozen study behind them, with referees pending. Whether the knots
 of one part have to read together now has an answer, in lesson 8.1: not if
-each birth records its parents. Three things are open. Whether that record
-can be done without (B325, under goal G5). A first "fold of emergence": since
+each birth records its parents, and that record cannot be read back from what
+is built. Three things are open. How little of that record has to be written
+(B325, under goal G5). A first "fold of emergence": since
 parts that have come apart never meet again under these rules, a made pattern
 that reads another needs a law under which they can (B317, under G15; a study
 of it opened on 24 November 2026). And proofs

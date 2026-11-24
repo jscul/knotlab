@@ -2855,6 +2855,11 @@ Taking the rounds away shows what they were doing (computed, refereed):
   junctions will join which. It trades the tick for knowledge of the map, and
   it equals the rounds only inside the theorem's class. A law that reads only
   what is built and needs no tick is not yet known.
+- **A round for each part (computed under added rules, referee pending).**
+  Under the rules of lesson 8.7 the round need not be one for the whole: the
+  separate parts of what is still growing can take their rounds in any order,
+  and the same structure is built. Making one birth at a time, with every knot
+  reading again after each, jams.
 - **The growth lives where parts are joined.** Counted by size, each part of a
   joined start keeps exactly the growth it has alone, and 97% to 99.9% of the
   junctions of size 10 or more span the join.
@@ -3464,7 +3469,7 @@ growing. It does not mean two independent objects."
   fresh distinction, so it has a successor, and the only endings are the whole
   growth closing or stalling.
 
-**Balance (computed under added rules, not refereed).** Told of that limit, the
+**Balance (computed under added rules, referee pending).** Told of that limit, the
 owner wrote on 23 November 2026: "We need to break this limit. I'm imagining a
 system of balance. Similar to life and death cycles." The limit counts packets
 that last, so a thing that ends is not counted by it. And ordinary growth
@@ -3490,11 +3495,15 @@ the law.
   rounds without end, so the live roster has 1, 1, 6, 6, 11, 11, 16, …
   separate parts. Each time the same finite thing comes apart from the ring,
   which ordinary growth cannot do. The same holds for every ring of an odd
-  number of knots from five up; a ring of four or of six does not return.
+  number of knots from five up, and for an even number from eight up as two
+  halves that each return; a ring of three, four or six does not return.
 - **Scarcity makes the difference.** Under the ordinary law the same start is
   the eddy: each join receives all four distinctions it is asked for, every
   join is made, and the count grows by the golden ratio. With at most three,
-  the ring holds itself back and gives parts off.
+  the ring holds itself back and gives parts off. The number three is not
+  special: with at most four, five, six or seven the ring also returns, one
+  round later for each step. Its knots then hold that many each, and the parts
+  that come apart have 5, 9, 14 and 20 knots.
 - **Not yet a balance.** Under the two rules each part that came apart is the
   two-ended growth that ordinary growth gives two such knots: it gains one
   knot a round (computed for 40 rounds), so the live roster still grows.
@@ -3505,18 +3514,98 @@ the law.
   makes nothing more. Counting the knots that can still make something, the
   whole pattern repeats every two rounds from round 1 on: over each two rounds
   as many of them stop as start.
-- **What is ours here, and not earned.** All three rules were added by hand
-  (assumption A224, a scaffold). The result is an argument for every such
-  ring, checked by two independent programs, and it is not refereed. In the
-  pilot's search of 56 combinations of ways to ration fresh distinctions and
-  to treat a knot that cannot pay, a pattern that returns and gives off parts
-  appeared in three, all with waiting, and in none did the parts end. The
-  third rule was added for that, and under it no start of the pilot kept
-  growing, an endless chain included. The knots that stop under it still hold
-  a loose distinction that is never used, so in the glossary's sense they stay
-  live. Whether every knot made under these rules passes the knot test in the
-  whole structure, and what not-all-equal does, are not yet checked. The limit
-  above is a theorem about ordinary growth, and it stands.
+- **Checked on real knots (computed, referee pending).** A frozen study
+  repeated the pilot with a program written from its text alone, on knots with
+  their distinctions
+  ([RING-IN-BALANCE-20261123-001](research/RING-IN-BALANCE-20261123-001/decision.md)).
+  It agrees with the pilot's two programs round by round, on rings of 5 to 15
+  knots. Every knot made passes the knot test in the whole structure: under
+  parity by an argument, since a rule with a place of its own is the only
+  constraint on its places, checked on 62,280 knots; and under not-all-equal
+  on 1,848 knots through round 6, with the same births.
+- **What the return needs.** Three things, each tested by swapping it.
+  Waiting: if the whole round stalls instead, the ring stalls, and if the
+  short knot makes offshoots or gives up, the growth goes on with no ring
+  coming back. Release: a knot that is not short spends on offshoots the
+  distinctions its cancelled joins would have taken; if it holds them instead,
+  the ring jams for good. Offshoots: without them nothing comes apart. The cap
+  is the one thing it does not need in any exact form.
+- **Small parts that copy themselves (not predicted).** When a new knot
+  receives only enough for three places, and a short knot's joins are
+  cancelled, a part of two knots comes back after two rounds beside a copy of
+  itself, with no knot waiting. Under one such law the knots that can still
+  make something number 10, 15, 25, 40, 65, …, five times the Fibonacci
+  numbers, in separate small parts. The literature's name for a pattern that
+  copies itself is a replicator. These turned up in the table of swapped rules
+  and have not been studied.
+- **What is ours here, and not earned.** Every rule here was added by hand
+  (assumption A224, a scaffold), the release included. The pilot's search of
+  56 combinations of ways to ration fresh distinctions and to treat a knot
+  that cannot pay found the return in three, all with waiting. The frozen
+  study narrows that: a part the size of the ring returns only with waiting,
+  but the small parts above return under other laws, some without. The third
+  rule was added to make the parts end, and no other rule that does so is
+  known; under it no start of the pilot kept growing, an endless chain
+  included. The knots that stop under it still hold a loose distinction that
+  is never used, so in the glossary's sense they stay live. The limit above is
+  a theorem about ordinary growth, and it stands.
+
+**Anchors and time (the owner's questions; computed, referee pending).** On 23
+November 2026 the owner asked two more things of the ring that returns. "What
+if some emergent patterns need anchor points, or like a reference. … I think a
+structure like this would just make it easier to join things, but I'm not
+sure." And: "what if 'time' is a device or pattern just like the other ones?
+… I feel like it's not really like a sequencer, but more like a priority
+system, if that makes sense. How often updates happen given some property
+(maybe mass impacts that). … Then places with nothing going on need less
+simulation." The same frozen study took both up. His pictures are recorded as
+assumptions A228 and A229, interpretations that no result settles.
+
+- **Every join already has a reference.** Two knots can join only when some
+  knot meets both (lesson 8.1). A dead knot is the pure case: it makes nothing
+  and others join through it. In a start where every knot is live, each knot
+  has to be both a partner in joins and the knot its neighbours join through,
+  which is why a cycle of pairs that can join is a ring only for an odd number
+  of knots. A dead knot lifts that.
+- **A dead knot makes returning easier, modestly.** Of all 86,032 starts of up
+  to six knots that meet in single distinctions, each counted once, 227 have a
+  part that returns giving parts off under the added rules, and none under
+  ordinary growth. The share is 0.06% of five-knot starts with no dead knot
+  and 0.97% with one; at six knots 0.17%, 0.23% and 0.58% with none, one and
+  two. With a dead knot four live knots are enough, where five are needed
+  without. No start with three or more dead knots returns. The shares are
+  under that one weighting.
+- **What lasts.** At the rounds where the ring has n knots it is exactly the
+  knots that waited, the only knots under these rules that can still make
+  something in two successive rounds. Half a period later the same pattern has
+  2n knots, all new. So the pattern passes through lasting knots; it is not
+  made of them.
+- **A knot can carry the round, sometimes.** The owner asked whether "a certain
+  point of the Fibonacci sequence can be sampled to determine growth rate at a
+  particular point". In the golden-ratio eddy a knot made in round r with p
+  parents and f fresh distinctions has r = f + 2p − 3, − 5 or − 7 (from lesson
+  8.1's theorem; checked on 44,333 knots). So one sampled knot gives its round
+  to within three values, and with it the growth factor there. Where only some
+  knots keep a leftover distinction the window widens, and on a bare ring every
+  knot holds the same and carries no round.
+- **The round can belong to a part.** The complete round has every knot of
+  every part read at one moment (lesson 8.1). Under the added rules that is
+  more than is needed. If the separate parts take their rounds one at a time,
+  in any order, the same structure is built (726 runs, with an argument), and
+  a knot's count of its own part's rounds is its round.
+- **How often is a matter of the order.** Counted in births, the ring returns
+  more and more slowly under orders that serve every part alike, as the parts
+  it has given off pile up and keep growing. It returns every 4n births when
+  the largest part is always served first, the small parts then never being
+  served at all. And it returns steadily under the third rule, where the parts
+  end. The orders were supplied, and nothing in the growth counts births.
+- **Inside a part the round is still supplied.** If one birth is made at a
+  time and every knot reads again after each, an offshoot that may release
+  three distinctions has released two when it reads again, finds itself short
+  and stops, and the ring never frees itself. That happens in every order (all
+  101,606,400 of them on a cycle of four live knots joined through dead ones).
+  Whether some law lets the knots of one part read at different moments is
+  open.
 
 **Using the golden ratio.** The golden ratio can be had on purpose, and there
 is a gadget for it, but nothing that carries it from one part to another.
@@ -3622,13 +3711,15 @@ interpretation that no result settles.
   minds. The owner's words name what a base would have to grow before such a
   question could be asked of it.
 
-**What is open.** Three leads were recorded with this lesson. The first is a
-law with a reason of its own under which a ring returns, gives off one fixed
-thing and the things end, with the knot test checked at every birth (B315,
-under goal G18). The second is a proof that one leftover distinction on every
-knot turns rate x into the x′ of x′² = x(x′ + 1) (B316, under G17). The third
-is a first "fold of emergence": one growth in which a made pattern's course
-depends on what a second made pattern is (B317, under G15).
+**What is open.** The ring that returns now has a frozen study behind it,
+with its referee pending. Four things are open. Whether a law exists in which
+the knots of one part need not read together (B323, under goal G5). What the
+small parts that copy themselves are. A first "fold of emergence": since parts
+that have come apart never meet again under these rules, a made pattern that
+reads another needs a law under which they can (B317, under G15). And proofs
+of what is so far argued or computed: the return for every odd ring, the sizes
+of the parts under each cap, and that one leftover distinction on every knot
+turns rate x into the x′ of x′² = x(x′ + 1) (B316, under G17).
 
 ## Glossary
 
@@ -4098,7 +4189,9 @@ that earlier records used in two senses.
   joins that will take from it in the next round, and enough to make it a knot
   of at least three places (lesson 8.1; `FRESH-COUNT-20261118-001`,
   assumptions A104 and A108). It was studied under parity; under not-all-equal
-  the same rule gives the same counts (`NAE-GROWTH-20261119-001`).
+  the same rule gives the same counts wherever parity does not close, and
+  where parity closes it goes on in two endless chains
+  (`NAE-GROWTH-20261119-001`).
 - **Group of three.** A join of the cheapest growth that takes one loose
   distinction from each of three junctions (lesson 8.1). A first group of
   three is three knots joined in pairs through three different knots, with no

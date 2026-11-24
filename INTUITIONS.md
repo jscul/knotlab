@@ -19,10 +19,10 @@ the later lessons on distance and dimension hang from it.
 
 The page is written as a textbook, to be read in order. Its eight chapters are
 divided into lessons, and each lesson builds on the ones before it. Each
-chapter opens with an index: its lessons, a line or two on each, and under
-them the chapter's intuition in one paragraph. Chapter 1 sets up bits, rules
-and the notation, including how to read A, B → c, before anything is built
-from them.
+chapter opens with a lesson numbered 0, its introduction: an index of the
+chapter's lessons, a line or two on each, and under it the chapter's
+intuition in one paragraph. Chapter 1 sets up bits, rules and the notation,
+including how to read A, B → c, before anything is built from them.
 
 **A note on words.** The program is trying to build space, so it cannot yet
 use words that take space for granted. Triangle, torus, sphere, plane, surface,
@@ -62,6 +62,7 @@ PYTHONPATH=tools python3 -m knotlab demo
 ## Contents
 
 - [Chapter 1. Bits and rules](#chapter-1-bits-and-rules)
+  - [1.0 Introduction](#10-introduction)
   - [1.1 Distinctions and states](#11-distinctions-and-states)
   - [1.2 Rules and what they allow](#12-rules-and-what-they-allow)
   - [1.3 Emergence in the Game of Life](#13-emergence-in-the-game-of-life)
@@ -70,16 +71,19 @@ PYTHONPATH=tools python3 -m knotlab demo
   - [1.6 Forgetting a variable](#16-forgetting-a-variable)
   - [1.7 What rules make](#17-what-rules-make)
 - [Chapter 2. The knot test](#chapter-2-the-knot-test)
+  - [2.0 Introduction](#20-introduction)
   - [2.1 The knot test](#21-the-knot-test)
   - [2.2 Knots on the cube](#22-knots-on-the-cube)
   - [2.3 What a knot hides](#23-what-a-knot-hides)
   - [2.4 Distance is the only form of information](#24-distance-is-the-only-form-of-information)
 - [Chapter 3. Pairs and three places](#chapter-3-pairs-and-three-places)
+  - [3.0 Introduction](#30-introduction)
   - [3.1 Two-place rules and the majority vote](#31-two-place-rules-and-the-majority-vote)
   - [3.2 Pairs cannot make a knot; three places can](#32-pairs-cannot-make-a-knot-three-places-can)
   - [3.3 The free complex of a system](#33-the-free-complex-of-a-system)
   - [3.4 Holes and knots](#34-holes-and-knots)
 - [Chapter 4. How bindings behave](#chapter-4-how-bindings-behave)
+  - [4.0 Introduction](#40-introduction)
   - [4.1 Easy and hard questions](#41-easy-and-hard-questions)
   - [4.2 Requirement and choice](#42-requirement-and-choice)
   - [4.3 Knots from competing pairs](#43-knots-from-competing-pairs)
@@ -89,14 +93,17 @@ PYTHONPATH=tools python3 -m knotlab demo
   - [4.7 Knots alone](#47-knots-alone)
   - [4.8 How does one level bind another?](#48-how-does-one-level-bind-another)
 - [Chapter 5. Depth](#chapter-5-depth)
+  - [5.0 Introduction](#50-introduction)
   - [5.1 Proving that nothing is allowed](#51-proving-that-nothing-is-allowed)
   - [5.2 How deep a hole is](#52-how-deep-a-hole-is)
   - [5.3 Forcing in rounds and phases](#53-forcing-in-rounds-and-phases)
 - [Chapter 6. Counting](#chapter-6-counting)
+  - [6.0 Introduction](#60-introduction)
   - [6.1 Counting worlds](#61-counting-worlds)
   - [6.2 The worlds of not-all-equal knots](#62-the-worlds-of-not-all-equal-knots)
   - [6.3 Counting on classical 3-manifolds](#63-counting-on-classical-3-manifolds)
 - [Chapter 7. Sources and questions](#chapter-7-sources-and-questions)
+  - [7.0 Introduction](#70-introduction)
   - [7.1 What is classical and what is ours](#71-what-is-classical-and-what-is-ours)
   - [7.2 Open questions](#72-open-questions)
   - [7.3 Every meeting pattern, none chosen](#73-every-meeting-pattern-none-chosen)
@@ -112,6 +119,10 @@ PYTHONPATH=tools python3 -m knotlab demo
 - [Glossary](#glossary)
 
 ## Chapter 1. Bits and rules
+
+### 1.0 Introduction
+
+**The lessons.** What each lesson of this chapter is about:
 
 - [1.1 Distinctions and states](#11-distinctions-and-states): a distinction
   is one bit, and nothing else is assumed. Three of them have eight joint
@@ -584,6 +595,10 @@ here is a claim about minds or biology.
 
 ## Chapter 2. The knot test
 
+### 2.0 Introduction
+
+**The lessons.** What each lesson of this chapter is about:
+
 - [2.1 The knot test](#21-the-knot-test): a relation is a knot when it is
   constrained as a whole, forgetting any one variable leaves the rest
   unconstrained, and some state is allowed. Knots overlap by sharing
@@ -1004,6 +1019,10 @@ the question it leads to.
 
 ## Chapter 3. Pairs and three places
 
+### 3.0 Introduction
+
+**The lessons.** What each lesson of this chapter is about:
+
 - [3.1 Two-place rules and the majority vote](#31-two-place-rules-and-the-majority-vote):
   whenever a system of two-place rules allows three states, it allows their
   majority. No knot on three variables does.
@@ -1183,6 +1202,10 @@ PYTHONPATH=tools python3 -m knotlab space
 ```
 
 ## Chapter 4. How bindings behave
+
+### 4.0 Introduction
+
+**The lessons.** What each lesson of this chapter is about:
 
 - [4.1 Easy and hard questions](#41-easy-and-hard-questions): the words for
   how hard a question is: linear time, polynomial time, NP-complete.
@@ -2003,6 +2026,10 @@ fifth level, so constant over four levels is not constant.
 
 ## Chapter 5. Depth
 
+### 5.0 Introduction
+
+**The lessons.** What each lesson of this chapter is about:
+
 - [5.1 Proving that nothing is allowed](#51-proving-that-nothing-is-allowed):
   a refutation proves that a system allows no state. Its degree says how much
   one step has to hold at once.
@@ -2211,6 +2238,10 @@ patterns, and how little rejoining the program's random families contain.
 
 ## Chapter 6. Counting
 
+### 6.0 Introduction
+
+**The lessons.** What each lesson of this chapter is about:
+
 - [6.1 Counting worlds](#61-counting-worlds): the words for counting. Counting
   worlds can be hard where deciding is easy, and the graphs the literature
   calls planar are the classical exception.
@@ -2341,6 +2372,10 @@ test cannot tell hard groups from easy ones: every group law, read as the
 relation x·y = z, is constrained as a whole and free in every pair.
 
 ## Chapter 7. Sources and questions
+
+### 7.0 Introduction
+
+**The lessons.** What each lesson of this chapter is about:
 
 - [7.1 What is classical and what is ours](#71-what-is-classical-and-what-is-ours):
   which results are classical, which readings are the program's, and which
@@ -2749,10 +2784,12 @@ its readings is a theorem.
 
 ## Chapter 8. How a law grows
 
-- [8.0 What the program is building](#80-what-the-program-is-building): the
-  owner's picture of growth, in his words. A structure relative to itself,
-  growth that ends and growth that never does, why joining is the hard part,
-  and where the irrational rates come from.
+### 8.0 What the program is building
+
+**The lessons.** What each lesson of this chapter is about. This lesson is
+the chapter's introduction: after the index and the intuition it gives the
+owner's picture of growth, in his words.
+
 - [8.1 Growing in rounds](#81-growing-in-rounds): a start is a few knots that
   share distinctions. One rule adds a knot wherever open distinctions can
   join, everywhere at once, round by round. Where the lesson's theorem holds,
@@ -2794,8 +2831,6 @@ The lessons state in plain words the picture that the growth studies of 17 to
 Each claim says whether it is proved, computed or open, and a result is given
 as settled only once its referee has confirmed it.
 
-### 8.0 What the program is building
-
 **What the program is building.** On 23 November 2026 the owner was asked
 whether the program looks for purely Boolean pieces that, combined, could
 explain how atoms interact or why gravity exists. The answer is a fair
@@ -2806,10 +2841,9 @@ a cartesian plane). These are like rules. But you also need to take 'logic'
 to infinities, so there's a statistical/irrational part of it." The owner then
 showed pictures of growth like the ones the web edition of this guide shows
 in this lesson. The paragraphs below take the owner's points in turn. They are
-the owner's picture, an interpretation, except where a result is cited. The
-lesson is an overview, numbered 8.0 because it comes before the chapter's
-first lesson: the words it takes from lessons 8.1 and 8.2 each point to their
-lesson, and the glossary has them all.
+the owner's picture, an interpretation, except where a result is cited. They
+are an overview: the words they take from lessons 8.1 and 8.2 each point to
+their lesson, and the glossary has them all.
 
 **A structure relative to itself.** A start is a few knots that share
 distinctions (lesson 8.1). One fixed rule, applied everywhere at once in

@@ -2853,8 +2853,16 @@ Taking the rounds away shows what they were doing (computed, refereed):
   the only before and after left is that a junction comes after its parents.
   But this law reads the whole map of joins in advance, and the map says which
   junctions will join which. It trades the tick for knowledge of the map, and
-  it equals the rounds only inside the theorem's class. A law that reads only
-  what is built and needs no tick is not yet known.
+  it equals the rounds only inside the theorem's class.
+- **A law that reads only what is built (proved in its scope, referee
+  pending).** A later study found one for ordinary growth: finish the births
+  of the least unfinished depth first, working out from what is already built
+  what the round at that depth would make. Every order of its own moves then
+  builds what the rounds build, with no map and no stored date, on starts
+  whose first knots can be recognised
+  ([SERIAL-REPAIRS-20261120-001](research/SERIAL-REPAIRS-20261120-001/decision.md)).
+  It reads the whole of what is built. Whether a knot can do with reading a
+  few steps around itself is argued there and not yet run.
 - **A round for each part (computed under added rules, referee pending).**
   Under the rules of lesson 8.7 the round need not be one for the whole: the
   separate parts of what is still growing can take their rounds in any order,

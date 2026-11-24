@@ -1,0 +1,21 @@
+{
+ "artifact_id": "ONE-PARENT-REREAD-20261123-001A-E001",
+ "kind": "experiment",
+ "branch": "code_analysis",
+ "evidence_stage": "exploratory",
+ "status": "Frozen",
+ "question": "The re-read epic found that growth supplies weight and no tie, and that a part with at most two holders per distinction that sits at exactly 2 gains a hidden excess from one not-all-equal birth on a loose distinction and a shared one of the same knot. Rule R of that epic re-reads only when a knot is short and never makes that birth. State the least law that makes it, a one-parent birth also takes a distinction its parent shares, and ask three things. With one law for every newborn, so that no law is handed to a birth, does a part gain a hidden excess? Does any part gain that one added knot could not lift? And what does the rule do to growth where one-parent births are common: how many holders arise, and does growth go on?",
+ "inputs": "The recorded growth operator, sources and draws the pre-registration names; the re-read epic's engine (rlaw.py, sha256 29aa3d9112d4a12b2d7970756c455e11dd3ed7abaef99b85daa64f4c4222d8f8), its parts, targets and tables, and its census of one added knot; the recorded scorer; the seeds the pre-registration fixes.",
+ "forbidden_inputs": "Any definition changed after a value is seen; any outcome of this study before the freeze.",
+ "primary_observable": "The items named under 'Runs and stop rule' of the pre-registration.",
+ "comparators_or_controls": "Ordinary growth on the same sources, draws and parts; the control that removes the shared input; the code checks of row G.",
+ "resource_budget": "Each run under ten minutes and 12 GB on one CPU process.",
+ "first_executable_signal": "Row G of the predictions table.",
+ "decision_rule": "Each prediction is judged by its 'Fails when' column.",
+ "stop_rule": "One script per test and one for the checks. The study stops when the three tests are done. It reports, beside the predictions: for each source which rounds have re-reading births and whether its knots per stage change; for the draws the counts by outcome and growth kind under each rule, with the weighting named (the sparse draws of the review-leads epic); for the census the numbers of parts, histories and tables, how many choices were enumerated in full and how many drawn, the gains by arm, round, choice and number of fresh distinctions of the re-reading births, and the smallest gain of each arm in full, verified by word-by-word enumeration. Every run stays under ten minutes and under 12 GB; work is split into runs and nothing is stopped by the clock. Nothing is tuned after values are seen; a changed definition is reported with both versions. Deviations go in `deviations.md` in the experiment family. Results are referee pending.",
+ "nonclaims": "An exploratory study on named samples and bounded sizes. A rival growth law is a scaffold and not the model; a census is finite and proves no all-size statement; a null on drawn choices or assignments is a sample.",
+ "preregistration": "research/ONE-PARENT-REREAD-20261123-001A/preregistration.md",
+ "preregistration_sha256": "36ecc92c446ec48780220039f68a0ce810e9a3977ebdd50059ffe86be6d76e8c",
+ "design_advisor": "research/ONE-PARENT-REREAD-20261123-001/advisor/answer.json",
+ "frozen_utc": "2026-11-24T04:58:41.443212+00:00"
+}

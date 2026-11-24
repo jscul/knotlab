@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**403 current results** and 5 superseded ones, from 628 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**403 current results** and 5 superseded ones, from 630 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -31,7 +31,7 @@ How to read an entry:
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 26 results
 - [Notes](#notes): 6 self-contained notes
-- [Epics](#epics): all 628 epics with their closures
+- [Epics](#epics): all 630 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -1979,5 +1979,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-23 | A ring in balance: a ring of knots that returns and gives parts off, its references, and its clock (`RING-IN-BALANCE-20261123-001`) | [closure](proofs/RING-IN-BALANCE-20261123-001Z/RING-IN-BALANCE-20261123-001Z-P001_synthesis/proof.md) | [folder](research/RING-IN-BALANCE-20261123-001/) |
 | 2026-11-23 | Both setting births as births the rule makes (`SETTING-AS-REREAD-20261123-001`) | [closure](proofs/SETTING-AS-REREAD-20261123-001Z/SETTING-AS-REREAD-20261123-001Z-P001_synthesis/proof.md) | [folder](research/SETTING-AS-REREAD-20261123-001/) |
 | 2026-11-23 | What a third holder gives (`THIRD-HOLDER-20261123-001`) | [closure](proofs/THIRD-HOLDER-20261123-001Z/THIRD-HOLDER-20261123-001Z-P001_synthesis/proof.md) | [folder](research/THIRD-HOLDER-20261123-001/) |
+| 2026-11-24 | The guard of births made one at a time, under the cap of three and under holding (`GUARD-CAP-AND-HOLD-20261124-001`) | — | [folder](research/GUARD-CAP-AND-HOLD-20261124-001/) |
+| 2026-11-24 | Can a knot tell its parents from its children by what is built around it? (`PARENTS-FROM-HOLDERS-20261124-001`) | — | [folder](research/PARENTS-FROM-HOLDERS-20261124-001/) |
 | 2026-11-24 | Parts that meet again: does what one part builds depend on whether another part is there? (`PARTS-MEET-AGAIN-20261124-001`) | — | [folder](research/PARTS-MEET-AGAIN-20261124-001/) |
 

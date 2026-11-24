@@ -1,0 +1,409 @@
+Trace of one two-knot part through two rounds (rounds 3 and 4; rounds 5 and 6 added for the line of the
+join j), Ring(5, 3), each treatment, RELEASE, parity.  Written by gate.py of COPYING-PARTS-20261123-001A-
+E001 with ticket A's engine (unchanged).  "short in round t+1" is read from the record of round t+1.
+Checks: deviations.md C14 (the pre-registration's first settled statement).
+
+====================================================================================================
+Ring(5, 3) under FLOOR0/CANCEL-RETIRE/RELEASE
+Traced part Y after round 2: members [15, 16]; h, k: [(15, 2, 0), (16, 2, 0)]; met sets [[15, 16]] (common knots [[10]]); past its start: True
+-- round 3 (members of Y's line before it: [15, 16], with h: [(15, 2), (16, 2)])
+   groups containing them: [[15, 16]]
+   short: []   cancelled groups: []   waiting: []   retired: []
+   birth 25: join     parents [15, 16]   taken [35, 37]     D=2 f=1 usable=1 barred=0   short in round 4: yes
+   birth 30: offshoot parents [15]       taken [36]         D=1 f=2 usable=2 barred=0   short in round 4: no
+   birth 31: offshoot parents [16]       taken [38]         D=1 f=2 usable=2 barred=0   short in round 4: no
+   after round 3, parts of Y's line: [25, 30, 31] h=[1, 2, 2] k=[0, 0, 0] met sets [[25, 30], [25, 31]] common knots [[15], [16]]
+-- round 4 (members of Y's line before it: [25, 30, 31], with h: [(25, 1), (30, 2), (31, 2)])
+   groups containing them: [[25, 30], [25, 31]]
+   short: [25]   cancelled groups: [[25, 30], [25, 31]]   waiting: []   retired: [25]
+   birth 40: offshoot parents [30]       taken [60]         D=1 f=2 usable=2 barred=0   short in round 5: no
+   birth 41: offshoot parents [30]       taken [61]         D=1 f=2 usable=2 barred=0   short in round 5: no
+   birth 42: offshoot parents [31]       taken [62]         D=1 f=2 usable=2 barred=0   short in round 5: no
+   birth 43: offshoot parents [31]       taken [63]         D=1 f=2 usable=2 barred=0   short in round 5: no
+   after round 4, parts of Y's line: [40, 41] h=[2, 2] k=[0, 0] met sets [[40, 41]] common knots [[30]] [two-knot part]; [42, 43] h=[2, 2] k=[0, 0] met sets [[42, 43]] common knots [[31]] [two-knot part]
+-- round 5 (members of Y's line before it: [40, 41, 42, 43], with h: [(40, 2), (41, 2), (42, 2), (43, 2)])
+   groups containing them: [[40, 41], [42, 43]]
+   short: []   cancelled groups: []   waiting: []   retired: []
+   birth 60: join     parents [40, 41]   taken [80, 82]     D=2 f=1 usable=1 barred=0   short in round 6: yes
+   birth 61: join     parents [42, 43]   taken [84, 86]     D=2 f=1 usable=1 barred=0   short in round 6: yes
+   birth 70: offshoot parents [40]       taken [81]         D=1 f=2 usable=2 barred=0   short in round 6: no
+   birth 71: offshoot parents [41]       taken [83]         D=1 f=2 usable=2 barred=0   short in round 6: no
+   birth 72: offshoot parents [42]       taken [85]         D=1 f=2 usable=2 barred=0   short in round 6: no
+   birth 73: offshoot parents [43]       taken [87]         D=1 f=2 usable=2 barred=0   short in round 6: no
+   after round 5, parts of Y's line: [60, 70, 71] h=[1, 2, 2] k=[0, 0, 0] met sets [[60, 70], [60, 71]] common knots [[40], [41]]; [61, 72, 73] h=[1, 2, 2] k=[0, 0, 0] met sets [[61, 72], [61, 73]] common knots [[42], [43]]
+-- round 6 (members of Y's line before it: [60, 61, 70, 71, 72, 73], with h: [(60, 1), (61, 1), (70, 2), (71, 2), (72, 2), (73, 2)])
+   groups containing them: [[60, 70], [60, 71], [61, 72], [61, 73]]
+   short: [60, 61]   cancelled groups: [[60, 70], [60, 71], [61, 72], [61, 73]]   waiting: []   retired: [60, 61]
+   birth 90: offshoot parents [70]       taken [130]        D=1 f=2 usable=2 barred=0   short in round 7: no
+   birth 91: offshoot parents [70]       taken [131]        D=1 f=2 usable=2 barred=0   short in round 7: no
+   birth 92: offshoot parents [71]       taken [132]        D=1 f=2 usable=2 barred=0   short in round 7: no
+   birth 93: offshoot parents [71]       taken [133]        D=1 f=2 usable=2 barred=0   short in round 7: no
+   birth 94: offshoot parents [72]       taken [134]        D=1 f=2 usable=2 barred=0   short in round 7: no
+   birth 95: offshoot parents [72]       taken [135]        D=1 f=2 usable=2 barred=0   short in round 7: no
+   birth 96: offshoot parents [73]       taken [136]        D=1 f=2 usable=2 barred=0   short in round 7: no
+   birth 97: offshoot parents [73]       taken [137]        D=1 f=2 usable=2 barred=0   short in round 7: no
+   after round 6, parts of Y's line: [90, 91] h=[2, 2] k=[0, 0] met sets [[90, 91]] common knots [[70]] [two-knot part]; [92, 93] h=[2, 2] k=[0, 0] met sets [[92, 93]] common knots [[71]] [two-knot part]; [94, 95] h=[2, 2] k=[0, 0] met sets [[94, 95]] common knots [[72]] [two-knot part]; [96, 97] h=[2, 2] k=[0, 0] met sets [[96, 97]] common knots [[73]] [two-knot part]
+   checks: s+1: three births: PASS, s+1: one join of both members, D=2, f=1: PASS, s+1: one offshoot of each member, D=1, f=2: PASS, s+2: j short: PASS, s+2: both groups of j cancelled, and only those: PASS, s+2: each offshoot makes two offshoots, a two-knot part joinable only through it: PASS, retire: j retires in s+2: PASS, retire: j makes nothing then or later (to round 10): PASS, retire: j not a member after s+2: PASS
+====================================================================================================
+Ring(5, 3) under FLOOR0/CANCEL-OFFSHOOT/RELEASE
+Traced part Y after round 2: members [20, 21]; h, k: [(20, 2, 0), (21, 2, 0)]; met sets [[20, 21]] (common knots [[10]]); past its start: True
+-- round 3 (members of Y's line before it: [20, 21], with h: [(20, 2), (21, 2)])
+   groups containing them: [[20, 21]]
+   short: []   cancelled groups: []   waiting: []   retired: []
+   birth 30: join     parents [20, 21]   taken [45, 47]     D=2 f=1 usable=1 barred=0   short in round 4: yes
+   birth 45: offshoot parents [20]       taken [46]         D=1 f=2 usable=2 barred=0   short in round 4: no
+   birth 46: offshoot parents [21]       taken [48]         D=1 f=2 usable=2 barred=0   short in round 4: no
+   after round 3, parts of Y's line: [30, 45, 46] h=[1, 2, 2] k=[0, 0, 0] met sets [[30, 45], [30, 46]] common knots [[20], [21]]
+-- round 4 (members of Y's line before it: [30, 45, 46], with h: [(30, 1), (45, 2), (46, 2)])
+   groups containing them: [[30, 45], [30, 46]]
+   short: [30]   cancelled groups: [[30, 45], [30, 46]]   waiting: []   retired: []
+   birth 60: offshoot parents [30]       taken [65]         D=0 f=2 usable=2 barred=0   short in round 5: no
+   birth 75: offshoot parents [45]       taken [90]         D=1 f=2 usable=2 barred=0   short in round 5: no
+   birth 76: offshoot parents [45]       taken [91]         D=1 f=2 usable=2 barred=0   short in round 5: no
+   birth 77: offshoot parents [46]       taken [92]         D=1 f=2 usable=2 barred=0   short in round 5: no
+   birth 78: offshoot parents [46]       taken [93]         D=1 f=2 usable=2 barred=0   short in round 5: no
+   after round 4, parts of Y's line: [60] h=[2] k=[0] met sets [] common knots []; [75, 76] h=[2, 2] k=[0, 0] met sets [[75, 76]] common knots [[45]] [two-knot part]; [77, 78] h=[2, 2] k=[0, 0] met sets [[77, 78]] common knots [[46]] [two-knot part]
+-- round 5 (members of Y's line before it: [60, 75, 76, 77, 78], with h: [(60, 2), (75, 2), (76, 2), (77, 2), (78, 2)])
+   groups containing them: [[75, 76], [77, 78]]
+   short: []   cancelled groups: []   waiting: []   retired: []
+   birth 95: join     parents [75, 76]   taken [145, 147]   D=2 f=1 usable=1 barred=0   short in round 6: yes
+   birth 96: join     parents [77, 78]   taken [149, 151]   D=2 f=1 usable=1 barred=0   short in round 6: yes
+   birth 110: offshoot parents [60]       taken [115]        D=1 f=2 usable=2 barred=0   short in round 6: no
+   birth 111: offshoot parents [60]       taken [116]        D=1 f=2 usable=2 barred=0   short in round 6: no
+   birth 140: offshoot parents [75]       taken [146]        D=1 f=2 usable=2 barred=0   short in round 6: no
+   birth 141: offshoot parents [76]       taken [148]        D=1 f=2 usable=2 barred=0   short in round 6: no
+   birth 142: offshoot parents [77]       taken [150]        D=1 f=2 usable=2 barred=0   short in round 6: no
+   birth 143: offshoot parents [78]       taken [152]        D=1 f=2 usable=2 barred=0   short in round 6: no
+   after round 5, parts of Y's line: [95, 140, 141] h=[1, 2, 2] k=[0, 0, 0] met sets [[95, 140], [95, 141]] common knots [[75], [76]]; [96, 142, 143] h=[1, 2, 2] k=[0, 0, 0] met sets [[96, 142], [96, 143]] common knots [[77], [78]]; [110, 111] h=[2, 2] k=[0, 0] met sets [[110, 111]] common knots [[60]] [two-knot part]
+-- round 6 (members of Y's line before it: [95, 96, 110, 111, 140, 141, 142, 143], with h: [(95, 1), (96, 1), (110, 2), (111, 2), (140, 2), (141, 2), (142, 2), (143, 2)])
+   groups containing them: [[95, 140], [95, 141], [96, 142], [96, 143], [110, 111]]
+   short: [95, 96]   cancelled groups: [[95, 140], [95, 141], [96, 142], [96, 143]]   waiting: []   retired: []
+   birth 160: join     parents [110, 111] taken [205, 207]   D=2 f=1 usable=1 barred=0   short in round 7: yes
+   birth 175: offshoot parents [95]       taken [185]        D=0 f=2 usable=2 barred=0   short in round 7: no
+   birth 176: offshoot parents [96]       taken [186]        D=0 f=2 usable=2 barred=0   short in round 7: no
+   birth 195: offshoot parents [110]      taken [206]        D=1 f=2 usable=2 barred=0   short in round 7: no
+   birth 196: offshoot parents [111]      taken [208]        D=1 f=2 usable=2 barred=0   short in round 7: no
+   birth 225: offshoot parents [140]      taken [265]        D=1 f=2 usable=2 barred=0   short in round 7: no
+   birth 226: offshoot parents [140]      taken [266]        D=1 f=2 usable=2 barred=0   short in round 7: no
+   birth 227: offshoot parents [141]      taken [267]        D=1 f=2 usable=2 barred=0   short in round 7: no
+   birth 228: offshoot parents [141]      taken [268]        D=1 f=2 usable=2 barred=0   short in round 7: no
+   birth 229: offshoot parents [142]      taken [269]        D=1 f=2 usable=2 barred=0   short in round 7: no
+   birth 230: offshoot parents [142]      taken [270]        D=1 f=2 usable=2 barred=0   short in round 7: no
+   birth 231: offshoot parents [143]      taken [271]        D=1 f=2 usable=2 barred=0   short in round 7: no
+   birth 232: offshoot parents [143]      taken [272]        D=1 f=2 usable=2 barred=0   short in round 7: no
+   after round 6, parts of Y's line: [160, 195, 196] h=[1, 2, 2] k=[0, 0, 0] met sets [[160, 195], [160, 196]] common knots [[110], [111]]; [175] h=[2] k=[0] met sets [] common knots []; [176] h=[2] k=[0] met sets [] common knots []; [225, 226] h=[2, 2] k=[0, 0] met sets [[225, 226]] common knots [[140]] [two-knot part]; [227, 228] h=[2, 2] k=[0, 0] met sets [[227, 228]] common knots [[141]] [two-knot part]; [229, 230] h=[2, 2] k=[0, 0] met sets [[229, 230]] common knots [[142]] [two-knot part]; [231, 232] h=[2, 2] k=[0, 0] met sets [[231, 232]] common knots [[143]] [two-knot part]
+   checks: s+1: three births: PASS, s+1: one join of both members, D=2, f=1: PASS, s+1: one offshoot of each member, D=1, f=2: PASS, s+2: j short: PASS, s+2: both groups of j cancelled, and only those: PASS, s+2: each offshoot makes two offshoots, a two-knot part joinable only through it: PASS, offshoot: j makes one offshoot in s+2: PASS, offshoot: it is a part of one member after s+2: PASS, offshoot: it makes a two-knot part in s+3: PASS
+====================================================================================================
+Ring(5, 3) under FLOOR0/CANCEL-WAIT/RELEASE
+Traced part Y after round 2: members [15, 16]; h, k: [(15, 2, 0), (16, 2, 0)]; met sets [[15, 16]] (common knots [[10]]); past its start: True
+-- round 3 (members of Y's line before it: [15, 16], with h: [(15, 2), (16, 2)])
+   groups containing them: [[15, 16]]
+   short: []   cancelled groups: []   waiting: []   retired: []
+   birth 25: join     parents [15, 16]   taken [35, 37]     D=2 f=1 usable=1 barred=0   short in round 4: yes
+   birth 30: offshoot parents [15]       taken [36]         D=1 f=2 usable=2 barred=0   short in round 4: no
+   birth 31: offshoot parents [16]       taken [38]         D=1 f=2 usable=2 barred=0   short in round 4: no
+   after round 3, parts of Y's line: [25, 30, 31] h=[1, 2, 2] k=[0, 0, 0] met sets [[25, 30], [25, 31]] common knots [[15], [16]]
+-- round 4 (members of Y's line before it: [25, 30, 31], with h: [(25, 1), (30, 2), (31, 2)])
+   groups containing them: [[25, 30], [25, 31]]
+   short: [25]   cancelled groups: [[25, 30], [25, 31]]   waiting: [25]   retired: []
+   birth 40: offshoot parents [30]       taken [60]         D=1 f=2 usable=2 barred=0   short in round 5: no
+   birth 41: offshoot parents [30]       taken [61]         D=1 f=2 usable=2 barred=0   short in round 5: no
+   birth 42: offshoot parents [31]       taken [62]         D=1 f=2 usable=2 barred=0   short in round 5: no
+   birth 43: offshoot parents [31]       taken [63]         D=1 f=2 usable=2 barred=0   short in round 5: no
+   after round 4, parts of Y's line: [25] h=[1] k=[0] met sets [] common knots []; [40, 41] h=[2, 2] k=[0, 0] met sets [[40, 41]] common knots [[30]] [two-knot part]; [42, 43] h=[2, 2] k=[0, 0] met sets [[42, 43]] common knots [[31]] [two-knot part]
+-- round 5 (members of Y's line before it: [25, 40, 41, 42, 43], with h: [(25, 1), (40, 2), (41, 2), (42, 2), (43, 2)])
+   groups containing them: [[40, 41], [42, 43]]
+   short: []   cancelled groups: []   waiting: []   retired: []
+   birth 60: join     parents [40, 41]   taken [80, 82]     D=2 f=1 usable=1 barred=0   short in round 6: yes
+   birth 61: join     parents [42, 43]   taken [84, 86]     D=2 f=1 usable=1 barred=0   short in round 6: yes
+   birth 70: offshoot parents [25]       taken [55]         D=0 f=2 usable=2 barred=0   short in round 6: no
+   birth 75: offshoot parents [40]       taken [81]         D=1 f=2 usable=2 barred=0   short in round 6: no
+   birth 76: offshoot parents [41]       taken [83]         D=1 f=2 usable=2 barred=0   short in round 6: no
+   birth 77: offshoot parents [42]       taken [85]         D=1 f=2 usable=2 barred=0   short in round 6: no
+   birth 78: offshoot parents [43]       taken [87]         D=1 f=2 usable=2 barred=0   short in round 6: no
+   after round 5, parts of Y's line: [60, 75, 76] h=[1, 2, 2] k=[0, 0, 0] met sets [[60, 75], [60, 76]] common knots [[40], [41]]; [61, 77, 78] h=[1, 2, 2] k=[0, 0, 0] met sets [[61, 77], [61, 78]] common knots [[42], [43]]; [70] h=[2] k=[0] met sets [] common knots []
+-- round 6 (members of Y's line before it: [60, 61, 70, 75, 76, 77, 78], with h: [(60, 1), (61, 1), (70, 2), (75, 2), (76, 2), (77, 2), (78, 2)])
+   groups containing them: [[60, 75], [60, 76], [61, 77], [61, 78]]
+   short: [60, 61]   cancelled groups: [[60, 75], [60, 76], [61, 77], [61, 78]]   waiting: [60, 61]   retired: []
+   birth 95: offshoot parents [70]       taken [130]        D=1 f=2 usable=2 barred=0   short in round 7: no
+   birth 96: offshoot parents [70]       taken [131]        D=1 f=2 usable=2 barred=0   short in round 7: no
+   birth 105: offshoot parents [75]       taken [140]        D=1 f=2 usable=2 barred=0   short in round 7: no
+   birth 106: offshoot parents [75]       taken [141]        D=1 f=2 usable=2 barred=0   short in round 7: no
+   birth 107: offshoot parents [76]       taken [142]        D=1 f=2 usable=2 barred=0   short in round 7: no
+   birth 108: offshoot parents [76]       taken [143]        D=1 f=2 usable=2 barred=0   short in round 7: no
+   birth 109: offshoot parents [77]       taken [144]        D=1 f=2 usable=2 barred=0   short in round 7: no
+   birth 110: offshoot parents [77]       taken [145]        D=1 f=2 usable=2 barred=0   short in round 7: no
+   birth 111: offshoot parents [78]       taken [146]        D=1 f=2 usable=2 barred=0   short in round 7: no
+   birth 112: offshoot parents [78]       taken [147]        D=1 f=2 usable=2 barred=0   short in round 7: no
+   after round 6, parts of Y's line: [60] h=[1] k=[0] met sets [] common knots []; [61] h=[1] k=[0] met sets [] common knots []; [95, 96] h=[2, 2] k=[0, 0] met sets [[95, 96]] common knots [[70]] [two-knot part]; [105, 106] h=[2, 2] k=[0, 0] met sets [[105, 106]] common knots [[75]] [two-knot part]; [107, 108] h=[2, 2] k=[0, 0] met sets [[107, 108]] common knots [[76]] [two-knot part]; [109, 110] h=[2, 2] k=[0, 0] met sets [[109, 110]] common knots [[77]] [two-knot part]; [111, 112] h=[2, 2] k=[0, 0] met sets [[111, 112]] common knots [[78]] [two-knot part]
+   checks: s+1: three births: PASS, s+1: one join of both members, D=2, f=1: PASS, s+1: one offshoot of each member, D=1, f=2: PASS, s+2: j short: PASS, s+2: both groups of j cancelled, and only those: PASS, s+2: each offshoot makes two offshoots, a two-knot part joinable only through it: PASS, wait: j waits in s+2: PASS, wait: j in no group in s+3 (asked for nothing), not short: PASS, wait: j makes one offshoot in s+3: PASS, wait: it is a part of one member after s+3: PASS, wait: it makes a two-knot part in s+4: PASS
+
+Same checks under FLOOR1 and ONE-FEWER (trace printed too):
+====================================================================================================
+Ring(5, 3) under FLOOR1/CANCEL-RETIRE/RELEASE
+Traced part Y after round 2: members [15, 16]; h, k: [(15, 2, 0), (16, 2, 0)]; met sets [[15, 16]] (common knots [[10]]); past its start: True
+-- round 3 (members of Y's line before it: [15, 16], with h: [(15, 2), (16, 2)])
+   groups containing them: [[15, 16]]
+   short: []   cancelled groups: []   waiting: []   retired: []
+   birth 25: join     parents [15, 16]   taken [35, 37]     D=2 f=1 usable=1 barred=0   short in round 4: yes
+   birth 30: offshoot parents [15]       taken [36]         D=1 f=2 usable=2 barred=0   short in round 4: no
+   birth 31: offshoot parents [16]       taken [38]         D=1 f=2 usable=2 barred=0   short in round 4: no
+   after round 3, parts of Y's line: [25, 30, 31] h=[1, 2, 2] k=[0, 0, 0] met sets [[25, 30], [25, 31]] common knots [[15], [16]]
+-- round 4 (members of Y's line before it: [25, 30, 31], with h: [(25, 1), (30, 2), (31, 2)])
+   groups containing them: [[25, 30], [25, 31]]
+   short: [25]   cancelled groups: [[25, 30], [25, 31]]   waiting: []   retired: [25]
+   birth 40: offshoot parents [30]       taken [60]         D=1 f=2 usable=2 barred=0   short in round 5: no
+   birth 41: offshoot parents [30]       taken [61]         D=1 f=2 usable=2 barred=0   short in round 5: no
+   birth 42: offshoot parents [31]       taken [62]         D=1 f=2 usable=2 barred=0   short in round 5: no
+   birth 43: offshoot parents [31]       taken [63]         D=1 f=2 usable=2 barred=0   short in round 5: no
+   after round 4, parts of Y's line: [40, 41] h=[2, 2] k=[0, 0] met sets [[40, 41]] common knots [[30]] [two-knot part]; [42, 43] h=[2, 2] k=[0, 0] met sets [[42, 43]] common knots [[31]] [two-knot part]
+-- round 5 (members of Y's line before it: [40, 41, 42, 43], with h: [(40, 2), (41, 2), (42, 2), (43, 2)])
+   groups containing them: [[40, 41], [42, 43]]
+   short: []   cancelled groups: []   waiting: []   retired: []
+   birth 60: join     parents [40, 41]   taken [80, 82]     D=2 f=1 usable=1 barred=0   short in round 6: yes
+   birth 61: join     parents [42, 43]   taken [84, 86]     D=2 f=1 usable=1 barred=0   short in round 6: yes
+   birth 70: offshoot parents [40]       taken [81]         D=1 f=2 usable=2 barred=0   short in round 6: no
+   birth 71: offshoot parents [41]       taken [83]         D=1 f=2 usable=2 barred=0   short in round 6: no
+   birth 72: offshoot parents [42]       taken [85]         D=1 f=2 usable=2 barred=0   short in round 6: no
+   birth 73: offshoot parents [43]       taken [87]         D=1 f=2 usable=2 barred=0   short in round 6: no
+   after round 5, parts of Y's line: [60, 70, 71] h=[1, 2, 2] k=[0, 0, 0] met sets [[60, 70], [60, 71]] common knots [[40], [41]]; [61, 72, 73] h=[1, 2, 2] k=[0, 0, 0] met sets [[61, 72], [61, 73]] common knots [[42], [43]]
+-- round 6 (members of Y's line before it: [60, 61, 70, 71, 72, 73], with h: [(60, 1), (61, 1), (70, 2), (71, 2), (72, 2), (73, 2)])
+   groups containing them: [[60, 70], [60, 71], [61, 72], [61, 73]]
+   short: [60, 61]   cancelled groups: [[60, 70], [60, 71], [61, 72], [61, 73]]   waiting: []   retired: [60, 61]
+   birth 90: offshoot parents [70]       taken [130]        D=1 f=2 usable=2 barred=0   short in round 7: no
+   birth 91: offshoot parents [70]       taken [131]        D=1 f=2 usable=2 barred=0   short in round 7: no
+   birth 92: offshoot parents [71]       taken [132]        D=1 f=2 usable=2 barred=0   short in round 7: no
+   birth 93: offshoot parents [71]       taken [133]        D=1 f=2 usable=2 barred=0   short in round 7: no
+   birth 94: offshoot parents [72]       taken [134]        D=1 f=2 usable=2 barred=0   short in round 7: no
+   birth 95: offshoot parents [72]       taken [135]        D=1 f=2 usable=2 barred=0   short in round 7: no
+   birth 96: offshoot parents [73]       taken [136]        D=1 f=2 usable=2 barred=0   short in round 7: no
+   birth 97: offshoot parents [73]       taken [137]        D=1 f=2 usable=2 barred=0   short in round 7: no
+   after round 6, parts of Y's line: [90, 91] h=[2, 2] k=[0, 0] met sets [[90, 91]] common knots [[70]] [two-knot part]; [92, 93] h=[2, 2] k=[0, 0] met sets [[92, 93]] common knots [[71]] [two-knot part]; [94, 95] h=[2, 2] k=[0, 0] met sets [[94, 95]] common knots [[72]] [two-knot part]; [96, 97] h=[2, 2] k=[0, 0] met sets [[96, 97]] common knots [[73]] [two-knot part]
+   checks: s+1: three births: PASS, s+1: one join of both members, D=2, f=1: PASS, s+1: one offshoot of each member, D=1, f=2: PASS, s+2: j short: PASS, s+2: both groups of j cancelled, and only those: PASS, s+2: each offshoot makes two offshoots, a two-knot part joinable only through it: PASS, retire: j retires in s+2: PASS, retire: j makes nothing then or later (to round 10): PASS, retire: j not a member after s+2: PASS
+====================================================================================================
+Ring(5, 3) under FLOOR1/CANCEL-OFFSHOOT/RELEASE
+Traced part Y after round 2: members [20, 21]; h, k: [(20, 2, 0), (21, 2, 0)]; met sets [[20, 21]] (common knots [[10]]); past its start: True
+-- round 3 (members of Y's line before it: [20, 21], with h: [(20, 2), (21, 2)])
+   groups containing them: [[20, 21]]
+   short: []   cancelled groups: []   waiting: []   retired: []
+   birth 30: join     parents [20, 21]   taken [45, 47]     D=2 f=1 usable=1 barred=0   short in round 4: yes
+   birth 45: offshoot parents [20]       taken [46]         D=1 f=2 usable=2 barred=0   short in round 4: no
+   birth 46: offshoot parents [21]       taken [48]         D=1 f=2 usable=2 barred=0   short in round 4: no
+   after round 3, parts of Y's line: [30, 45, 46] h=[1, 2, 2] k=[0, 0, 0] met sets [[30, 45], [30, 46]] common knots [[20], [21]]
+-- round 4 (members of Y's line before it: [30, 45, 46], with h: [(30, 1), (45, 2), (46, 2)])
+   groups containing them: [[30, 45], [30, 46]]
+   short: [30]   cancelled groups: [[30, 45], [30, 46]]   waiting: []   retired: []
+   birth 60: offshoot parents [30]       taken [65]         D=0 f=2 usable=2 barred=0   short in round 5: no
+   birth 75: offshoot parents [45]       taken [90]         D=1 f=2 usable=2 barred=0   short in round 5: no
+   birth 76: offshoot parents [45]       taken [91]         D=1 f=2 usable=2 barred=0   short in round 5: no
+   birth 77: offshoot parents [46]       taken [92]         D=1 f=2 usable=2 barred=0   short in round 5: no
+   birth 78: offshoot parents [46]       taken [93]         D=1 f=2 usable=2 barred=0   short in round 5: no
+   after round 4, parts of Y's line: [60] h=[2] k=[0] met sets [] common knots []; [75, 76] h=[2, 2] k=[0, 0] met sets [[75, 76]] common knots [[45]] [two-knot part]; [77, 78] h=[2, 2] k=[0, 0] met sets [[77, 78]] common knots [[46]] [two-knot part]
+-- round 5 (members of Y's line before it: [60, 75, 76, 77, 78], with h: [(60, 2), (75, 2), (76, 2), (77, 2), (78, 2)])
+   groups containing them: [[75, 76], [77, 78]]
+   short: []   cancelled groups: []   waiting: []   retired: []
+   birth 95: join     parents [75, 76]   taken [145, 147]   D=2 f=1 usable=1 barred=0   short in round 6: yes
+   birth 96: join     parents [77, 78]   taken [149, 151]   D=2 f=1 usable=1 barred=0   short in round 6: yes
+   birth 110: offshoot parents [60]       taken [115]        D=1 f=2 usable=2 barred=0   short in round 6: no
+   birth 111: offshoot parents [60]       taken [116]        D=1 f=2 usable=2 barred=0   short in round 6: no
+   birth 140: offshoot parents [75]       taken [146]        D=1 f=2 usable=2 barred=0   short in round 6: no
+   birth 141: offshoot parents [76]       taken [148]        D=1 f=2 usable=2 barred=0   short in round 6: no
+   birth 142: offshoot parents [77]       taken [150]        D=1 f=2 usable=2 barred=0   short in round 6: no
+   birth 143: offshoot parents [78]       taken [152]        D=1 f=2 usable=2 barred=0   short in round 6: no
+   after round 5, parts of Y's line: [95, 140, 141] h=[1, 2, 2] k=[0, 0, 0] met sets [[95, 140], [95, 141]] common knots [[75], [76]]; [96, 142, 143] h=[1, 2, 2] k=[0, 0, 0] met sets [[96, 142], [96, 143]] common knots [[77], [78]]; [110, 111] h=[2, 2] k=[0, 0] met sets [[110, 111]] common knots [[60]] [two-knot part]
+-- round 6 (members of Y's line before it: [95, 96, 110, 111, 140, 141, 142, 143], with h: [(95, 1), (96, 1), (110, 2), (111, 2), (140, 2), (141, 2), (142, 2), (143, 2)])
+   groups containing them: [[95, 140], [95, 141], [96, 142], [96, 143], [110, 111]]
+   short: [95, 96]   cancelled groups: [[95, 140], [95, 141], [96, 142], [96, 143]]   waiting: []   retired: []
+   birth 160: join     parents [110, 111] taken [205, 207]   D=2 f=1 usable=1 barred=0   short in round 7: yes
+   birth 175: offshoot parents [95]       taken [185]        D=0 f=2 usable=2 barred=0   short in round 7: no
+   birth 176: offshoot parents [96]       taken [186]        D=0 f=2 usable=2 barred=0   short in round 7: no
+   birth 195: offshoot parents [110]      taken [206]        D=1 f=2 usable=2 barred=0   short in round 7: no
+   birth 196: offshoot parents [111]      taken [208]        D=1 f=2 usable=2 barred=0   short in round 7: no
+   birth 225: offshoot parents [140]      taken [265]        D=1 f=2 usable=2 barred=0   short in round 7: no
+   birth 226: offshoot parents [140]      taken [266]        D=1 f=2 usable=2 barred=0   short in round 7: no
+   birth 227: offshoot parents [141]      taken [267]        D=1 f=2 usable=2 barred=0   short in round 7: no
+   birth 228: offshoot parents [141]      taken [268]        D=1 f=2 usable=2 barred=0   short in round 7: no
+   birth 229: offshoot parents [142]      taken [269]        D=1 f=2 usable=2 barred=0   short in round 7: no
+   birth 230: offshoot parents [142]      taken [270]        D=1 f=2 usable=2 barred=0   short in round 7: no
+   birth 231: offshoot parents [143]      taken [271]        D=1 f=2 usable=2 barred=0   short in round 7: no
+   birth 232: offshoot parents [143]      taken [272]        D=1 f=2 usable=2 barred=0   short in round 7: no
+   after round 6, parts of Y's line: [160, 195, 196] h=[1, 2, 2] k=[0, 0, 0] met sets [[160, 195], [160, 196]] common knots [[110], [111]]; [175] h=[2] k=[0] met sets [] common knots []; [176] h=[2] k=[0] met sets [] common knots []; [225, 226] h=[2, 2] k=[0, 0] met sets [[225, 226]] common knots [[140]] [two-knot part]; [227, 228] h=[2, 2] k=[0, 0] met sets [[227, 228]] common knots [[141]] [two-knot part]; [229, 230] h=[2, 2] k=[0, 0] met sets [[229, 230]] common knots [[142]] [two-knot part]; [231, 232] h=[2, 2] k=[0, 0] met sets [[231, 232]] common knots [[143]] [two-knot part]
+   checks: s+1: three births: PASS, s+1: one join of both members, D=2, f=1: PASS, s+1: one offshoot of each member, D=1, f=2: PASS, s+2: j short: PASS, s+2: both groups of j cancelled, and only those: PASS, s+2: each offshoot makes two offshoots, a two-knot part joinable only through it: PASS, offshoot: j makes one offshoot in s+2: PASS, offshoot: it is a part of one member after s+2: PASS, offshoot: it makes a two-knot part in s+3: PASS
+====================================================================================================
+Ring(5, 3) under FLOOR1/CANCEL-WAIT/RELEASE
+Traced part Y after round 2: members [15, 16]; h, k: [(15, 2, 0), (16, 2, 0)]; met sets [[15, 16]] (common knots [[10]]); past its start: True
+-- round 3 (members of Y's line before it: [15, 16], with h: [(15, 2), (16, 2)])
+   groups containing them: [[15, 16]]
+   short: []   cancelled groups: []   waiting: []   retired: []
+   birth 25: join     parents [15, 16]   taken [35, 37]     D=2 f=1 usable=1 barred=0   short in round 4: yes
+   birth 30: offshoot parents [15]       taken [36]         D=1 f=2 usable=2 barred=0   short in round 4: no
+   birth 31: offshoot parents [16]       taken [38]         D=1 f=2 usable=2 barred=0   short in round 4: no
+   after round 3, parts of Y's line: [25, 30, 31] h=[1, 2, 2] k=[0, 0, 0] met sets [[25, 30], [25, 31]] common knots [[15], [16]]
+-- round 4 (members of Y's line before it: [25, 30, 31], with h: [(25, 1), (30, 2), (31, 2)])
+   groups containing them: [[25, 30], [25, 31]]
+   short: [25]   cancelled groups: [[25, 30], [25, 31]]   waiting: [25]   retired: []
+   birth 40: offshoot parents [30]       taken [60]         D=1 f=2 usable=2 barred=0   short in round 5: no
+   birth 41: offshoot parents [30]       taken [61]         D=1 f=2 usable=2 barred=0   short in round 5: no
+   birth 42: offshoot parents [31]       taken [62]         D=1 f=2 usable=2 barred=0   short in round 5: no
+   birth 43: offshoot parents [31]       taken [63]         D=1 f=2 usable=2 barred=0   short in round 5: no
+   after round 4, parts of Y's line: [25] h=[1] k=[0] met sets [] common knots []; [40, 41] h=[2, 2] k=[0, 0] met sets [[40, 41]] common knots [[30]] [two-knot part]; [42, 43] h=[2, 2] k=[0, 0] met sets [[42, 43]] common knots [[31]] [two-knot part]
+-- round 5 (members of Y's line before it: [25, 40, 41, 42, 43], with h: [(25, 1), (40, 2), (41, 2), (42, 2), (43, 2)])
+   groups containing them: [[40, 41], [42, 43]]
+   short: []   cancelled groups: []   waiting: []   retired: []
+   birth 60: join     parents [40, 41]   taken [80, 82]     D=2 f=1 usable=1 barred=0   short in round 6: yes
+   birth 61: join     parents [42, 43]   taken [84, 86]     D=2 f=1 usable=1 barred=0   short in round 6: yes
+   birth 70: offshoot parents [25]       taken [55]         D=0 f=2 usable=2 barred=0   short in round 6: no
+   birth 75: offshoot parents [40]       taken [81]         D=1 f=2 usable=2 barred=0   short in round 6: no
+   birth 76: offshoot parents [41]       taken [83]         D=1 f=2 usable=2 barred=0   short in round 6: no
+   birth 77: offshoot parents [42]       taken [85]         D=1 f=2 usable=2 barred=0   short in round 6: no
+   birth 78: offshoot parents [43]       taken [87]         D=1 f=2 usable=2 barred=0   short in round 6: no
+   after round 5, parts of Y's line: [60, 75, 76] h=[1, 2, 2] k=[0, 0, 0] met sets [[60, 75], [60, 76]] common knots [[40], [41]]; [61, 77, 78] h=[1, 2, 2] k=[0, 0, 0] met sets [[61, 77], [61, 78]] common knots [[42], [43]]; [70] h=[2] k=[0] met sets [] common knots []
+-- round 6 (members of Y's line before it: [60, 61, 70, 75, 76, 77, 78], with h: [(60, 1), (61, 1), (70, 2), (75, 2), (76, 2), (77, 2), (78, 2)])
+   groups containing them: [[60, 75], [60, 76], [61, 77], [61, 78]]
+   short: [60, 61]   cancelled groups: [[60, 75], [60, 76], [61, 77], [61, 78]]   waiting: [60, 61]   retired: []
+   birth 95: offshoot parents [70]       taken [130]        D=1 f=2 usable=2 barred=0   short in round 7: no
+   birth 96: offshoot parents [70]       taken [131]        D=1 f=2 usable=2 barred=0   short in round 7: no
+   birth 105: offshoot parents [75]       taken [140]        D=1 f=2 usable=2 barred=0   short in round 7: no
+   birth 106: offshoot parents [75]       taken [141]        D=1 f=2 usable=2 barred=0   short in round 7: no
+   birth 107: offshoot parents [76]       taken [142]        D=1 f=2 usable=2 barred=0   short in round 7: no
+   birth 108: offshoot parents [76]       taken [143]        D=1 f=2 usable=2 barred=0   short in round 7: no
+   birth 109: offshoot parents [77]       taken [144]        D=1 f=2 usable=2 barred=0   short in round 7: no
+   birth 110: offshoot parents [77]       taken [145]        D=1 f=2 usable=2 barred=0   short in round 7: no
+   birth 111: offshoot parents [78]       taken [146]        D=1 f=2 usable=2 barred=0   short in round 7: no
+   birth 112: offshoot parents [78]       taken [147]        D=1 f=2 usable=2 barred=0   short in round 7: no
+   after round 6, parts of Y's line: [60] h=[1] k=[0] met sets [] common knots []; [61] h=[1] k=[0] met sets [] common knots []; [95, 96] h=[2, 2] k=[0, 0] met sets [[95, 96]] common knots [[70]] [two-knot part]; [105, 106] h=[2, 2] k=[0, 0] met sets [[105, 106]] common knots [[75]] [two-knot part]; [107, 108] h=[2, 2] k=[0, 0] met sets [[107, 108]] common knots [[76]] [two-knot part]; [109, 110] h=[2, 2] k=[0, 0] met sets [[109, 110]] common knots [[77]] [two-knot part]; [111, 112] h=[2, 2] k=[0, 0] met sets [[111, 112]] common knots [[78]] [two-knot part]
+   checks: s+1: three births: PASS, s+1: one join of both members, D=2, f=1: PASS, s+1: one offshoot of each member, D=1, f=2: PASS, s+2: j short: PASS, s+2: both groups of j cancelled, and only those: PASS, s+2: each offshoot makes two offshoots, a two-knot part joinable only through it: PASS, wait: j waits in s+2: PASS, wait: j in no group in s+3 (asked for nothing), not short: PASS, wait: j makes one offshoot in s+3: PASS, wait: it is a part of one member after s+3: PASS, wait: it makes a two-knot part in s+4: PASS
+====================================================================================================
+Ring(5, 3) under ONE-FEWER/CANCEL-RETIRE/RELEASE
+Traced part Y after round 2: members [15, 16]; h, k: [(15, 2, 0), (16, 2, 0)]; met sets [[15, 16]] (common knots [[10]]); past its start: True
+-- round 3 (members of Y's line before it: [15, 16], with h: [(15, 2), (16, 2)])
+   groups containing them: [[15, 16]]
+   short: []   cancelled groups: []   waiting: []   retired: []
+   birth 25: join     parents [15, 16]   taken [45, 47]     D=2 f=1 usable=1 barred=0   short in round 4: yes
+   birth 30: offshoot parents [15]       taken [46]         D=1 f=2 usable=2 barred=0   short in round 4: no
+   birth 31: offshoot parents [16]       taken [48]         D=1 f=2 usable=2 barred=0   short in round 4: no
+   after round 3, parts of Y's line: [25, 30, 31] h=[1, 2, 2] k=[0, 0, 0] met sets [[25, 30], [25, 31]] common knots [[15], [16]]
+-- round 4 (members of Y's line before it: [25, 30, 31], with h: [(25, 1), (30, 2), (31, 2)])
+   groups containing them: [[25, 30], [25, 31]]
+   short: [25]   cancelled groups: [[25, 30], [25, 31]]   waiting: []   retired: [25]
+   birth 40: offshoot parents [30]       taken [70]         D=1 f=2 usable=2 barred=0   short in round 5: no
+   birth 41: offshoot parents [30]       taken [71]         D=1 f=2 usable=2 barred=0   short in round 5: no
+   birth 42: offshoot parents [31]       taken [72]         D=1 f=2 usable=2 barred=0   short in round 5: no
+   birth 43: offshoot parents [31]       taken [73]         D=1 f=2 usable=2 barred=0   short in round 5: no
+   after round 4, parts of Y's line: [40, 41] h=[2, 2] k=[0, 0] met sets [[40, 41]] common knots [[30]] [two-knot part]; [42, 43] h=[2, 2] k=[0, 0] met sets [[42, 43]] common knots [[31]] [two-knot part]
+-- round 5 (members of Y's line before it: [40, 41, 42, 43], with h: [(40, 2), (41, 2), (42, 2), (43, 2)])
+   groups containing them: [[40, 41], [42, 43]]
+   short: []   cancelled groups: []   waiting: []   retired: []
+   birth 60: join     parents [40, 41]   taken [90, 92]     D=2 f=1 usable=1 barred=0   short in round 6: yes
+   birth 61: join     parents [42, 43]   taken [94, 96]     D=2 f=1 usable=1 barred=0   short in round 6: yes
+   birth 70: offshoot parents [40]       taken [91]         D=1 f=2 usable=2 barred=0   short in round 6: no
+   birth 71: offshoot parents [41]       taken [93]         D=1 f=2 usable=2 barred=0   short in round 6: no
+   birth 72: offshoot parents [42]       taken [95]         D=1 f=2 usable=2 barred=0   short in round 6: no
+   birth 73: offshoot parents [43]       taken [97]         D=1 f=2 usable=2 barred=0   short in round 6: no
+   after round 5, parts of Y's line: [60, 70, 71] h=[1, 2, 2] k=[0, 0, 0] met sets [[60, 70], [60, 71]] common knots [[40], [41]]; [61, 72, 73] h=[1, 2, 2] k=[0, 0, 0] met sets [[61, 72], [61, 73]] common knots [[42], [43]]
+-- round 6 (members of Y's line before it: [60, 61, 70, 71, 72, 73], with h: [(60, 1), (61, 1), (70, 2), (71, 2), (72, 2), (73, 2)])
+   groups containing them: [[60, 70], [60, 71], [61, 72], [61, 73]]
+   short: [60, 61]   cancelled groups: [[60, 70], [60, 71], [61, 72], [61, 73]]   waiting: []   retired: [60, 61]
+   birth 90: offshoot parents [70]       taken [140]        D=1 f=2 usable=2 barred=0   short in round 7: no
+   birth 91: offshoot parents [70]       taken [141]        D=1 f=2 usable=2 barred=0   short in round 7: no
+   birth 92: offshoot parents [71]       taken [142]        D=1 f=2 usable=2 barred=0   short in round 7: no
+   birth 93: offshoot parents [71]       taken [143]        D=1 f=2 usable=2 barred=0   short in round 7: no
+   birth 94: offshoot parents [72]       taken [144]        D=1 f=2 usable=2 barred=0   short in round 7: no
+   birth 95: offshoot parents [72]       taken [145]        D=1 f=2 usable=2 barred=0   short in round 7: no
+   birth 96: offshoot parents [73]       taken [146]        D=1 f=2 usable=2 barred=0   short in round 7: no
+   birth 97: offshoot parents [73]       taken [147]        D=1 f=2 usable=2 barred=0   short in round 7: no
+   after round 6, parts of Y's line: [90, 91] h=[2, 2] k=[0, 0] met sets [[90, 91]] common knots [[70]] [two-knot part]; [92, 93] h=[2, 2] k=[0, 0] met sets [[92, 93]] common knots [[71]] [two-knot part]; [94, 95] h=[2, 2] k=[0, 0] met sets [[94, 95]] common knots [[72]] [two-knot part]; [96, 97] h=[2, 2] k=[0, 0] met sets [[96, 97]] common knots [[73]] [two-knot part]
+   checks: s+1: three births: PASS, s+1: one join of both members, D=2, f=1: PASS, s+1: one offshoot of each member, D=1, f=2: PASS, s+2: j short: PASS, s+2: both groups of j cancelled, and only those: PASS, s+2: each offshoot makes two offshoots, a two-knot part joinable only through it: PASS, retire: j retires in s+2: PASS, retire: j makes nothing then or later (to round 10): PASS, retire: j not a member after s+2: PASS
+====================================================================================================
+Ring(5, 3) under ONE-FEWER/CANCEL-OFFSHOOT/RELEASE
+Traced part Y after round 2: members [30, 31]; h, k: [(30, 2, 0), (31, 2, 0)]; met sets [[30, 31]] (common knots [[10]]); past its start: True
+-- round 3 (members of Y's line before it: [30, 31], with h: [(30, 2), (31, 2)])
+   groups containing them: [[30, 31]]
+   short: []   cancelled groups: []   waiting: []   retired: []
+   birth 55: join     parents [30, 31]   taken [75, 77]     D=2 f=1 usable=1 barred=0   short in round 4: yes
+   birth 60: offshoot parents [30]       taken [76]         D=1 f=2 usable=2 barred=0   short in round 4: no
+   birth 61: offshoot parents [31]       taken [78]         D=1 f=2 usable=2 barred=0   short in round 4: no
+   after round 3, parts of Y's line: [55, 60, 61] h=[1, 2, 2] k=[0, 0, 0] met sets [[55, 60], [55, 61]] common knots [[30], [31]]
+-- round 4 (members of Y's line before it: [55, 60, 61], with h: [(55, 1), (60, 2), (61, 2)])
+   groups containing them: [[55, 60], [55, 61]]
+   short: [55]   cancelled groups: [[55, 60], [55, 61]]   waiting: []   retired: []
+   birth 75: offshoot parents [55]       taken [110]        D=0 f=2 usable=2 barred=0   short in round 5: no
+   birth 80: offshoot parents [60]       taken [115]        D=1 f=2 usable=2 barred=0   short in round 5: no
+   birth 81: offshoot parents [60]       taken [116]        D=1 f=2 usable=2 barred=0   short in round 5: no
+   birth 82: offshoot parents [61]       taken [117]        D=1 f=2 usable=2 barred=0   short in round 5: no
+   birth 83: offshoot parents [61]       taken [118]        D=1 f=2 usable=2 barred=0   short in round 5: no
+   after round 4, parts of Y's line: [75] h=[2] k=[0] met sets [] common knots []; [80, 81] h=[2, 2] k=[0, 0] met sets [[80, 81]] common knots [[60]] [two-knot part]; [82, 83] h=[2, 2] k=[0, 0] met sets [[82, 83]] common knots [[61]] [two-knot part]
+-- round 5 (members of Y's line before it: [75, 80, 81, 82, 83], with h: [(75, 2), (80, 2), (81, 2), (82, 2), (83, 2)])
+   groups containing them: [[80, 81], [82, 83]]
+   short: []   cancelled groups: []   waiting: []   retired: []
+   birth 100: join     parents [80, 81]   taken [145, 147]   D=2 f=1 usable=1 barred=0   short in round 6: yes
+   birth 101: join     parents [82, 83]   taken [149, 151]   D=2 f=1 usable=1 barred=0   short in round 6: yes
+   birth 110: offshoot parents [75]       taken [135]        D=1 f=2 usable=2 barred=0   short in round 6: no
+   birth 111: offshoot parents [75]       taken [136]        D=1 f=2 usable=2 barred=0   short in round 6: no
+   birth 120: offshoot parents [80]       taken [146]        D=1 f=2 usable=2 barred=0   short in round 6: no
+   birth 121: offshoot parents [81]       taken [148]        D=1 f=2 usable=2 barred=0   short in round 6: no
+   birth 122: offshoot parents [82]       taken [150]        D=1 f=2 usable=2 barred=0   short in round 6: no
+   birth 123: offshoot parents [83]       taken [152]        D=1 f=2 usable=2 barred=0   short in round 6: no
+   after round 5, parts of Y's line: [100, 120, 121] h=[1, 2, 2] k=[0, 0, 0] met sets [[100, 120], [100, 121]] common knots [[80], [81]]; [101, 122, 123] h=[1, 2, 2] k=[0, 0, 0] met sets [[101, 122], [101, 123]] common knots [[82], [83]]; [110, 111] h=[2, 2] k=[0, 0] met sets [[110, 111]] common knots [[75]] [two-knot part]
+-- round 6 (members of Y's line before it: [100, 101, 110, 111, 120, 121, 122, 123], with h: [(100, 1), (101, 1), (110, 2), (111, 2), (120, 2), (121, 2), (122, 2), (123, 2)])
+   groups containing them: [[100, 120], [100, 121], [101, 122], [101, 123], [110, 111]]
+   short: [100, 101]   cancelled groups: [[100, 120], [100, 121], [101, 122], [101, 123]]   waiting: []   retired: []
+   birth 140: join     parents [110, 111] taken [195, 197]   D=2 f=1 usable=1 barred=0   short in round 7: yes
+   birth 145: offshoot parents [100]      taken [185]        D=0 f=2 usable=2 barred=0   short in round 7: no
+   birth 146: offshoot parents [101]      taken [186]        D=0 f=2 usable=2 barred=0   short in round 7: no
+   birth 155: offshoot parents [110]      taken [196]        D=1 f=2 usable=2 barred=0   short in round 7: no
+   birth 156: offshoot parents [111]      taken [198]        D=1 f=2 usable=2 barred=0   short in round 7: no
+   birth 165: offshoot parents [120]      taken [215]        D=1 f=2 usable=2 barred=0   short in round 7: no
+   birth 166: offshoot parents [120]      taken [216]        D=1 f=2 usable=2 barred=0   short in round 7: no
+   birth 167: offshoot parents [121]      taken [217]        D=1 f=2 usable=2 barred=0   short in round 7: no
+   birth 168: offshoot parents [121]      taken [218]        D=1 f=2 usable=2 barred=0   short in round 7: no
+   birth 169: offshoot parents [122]      taken [219]        D=1 f=2 usable=2 barred=0   short in round 7: no
+   birth 170: offshoot parents [122]      taken [220]        D=1 f=2 usable=2 barred=0   short in round 7: no
+   birth 171: offshoot parents [123]      taken [221]        D=1 f=2 usable=2 barred=0   short in round 7: no
+   birth 172: offshoot parents [123]      taken [222]        D=1 f=2 usable=2 barred=0   short in round 7: no
+   after round 6, parts of Y's line: [140, 155, 156] h=[1, 2, 2] k=[0, 0, 0] met sets [[140, 155], [140, 156]] common knots [[110], [111]]; [145] h=[2] k=[0] met sets [] common knots []; [146] h=[2] k=[0] met sets [] common knots []; [165, 166] h=[2, 2] k=[0, 0] met sets [[165, 166]] common knots [[120]] [two-knot part]; [167, 168] h=[2, 2] k=[0, 0] met sets [[167, 168]] common knots [[121]] [two-knot part]; [169, 170] h=[2, 2] k=[0, 0] met sets [[169, 170]] common knots [[122]] [two-knot part]; [171, 172] h=[2, 2] k=[0, 0] met sets [[171, 172]] common knots [[123]] [two-knot part]
+   checks: s+1: three births: PASS, s+1: one join of both members, D=2, f=1: PASS, s+1: one offshoot of each member, D=1, f=2: PASS, s+2: j short: PASS, s+2: both groups of j cancelled, and only those: PASS, s+2: each offshoot makes two offshoots, a two-knot part joinable only through it: PASS, offshoot: j makes one offshoot in s+2: PASS, offshoot: it is a part of one member after s+2: PASS, offshoot: it makes a two-knot part in s+3: PASS
+====================================================================================================
+Ring(5, 3) under ONE-FEWER/CANCEL-WAIT/RELEASE
+Traced part Y after round 2: members [15, 16]; h, k: [(15, 2, 0), (16, 2, 0)]; met sets [[15, 16]] (common knots [[10]]); past its start: True
+-- round 3 (members of Y's line before it: [15, 16], with h: [(15, 2), (16, 2)])
+   groups containing them: [[15, 16]]
+   short: []   cancelled groups: []   waiting: []   retired: []
+   birth 30: join     parents [15, 16]   taken [45, 47]     D=2 f=1 usable=1 barred=0   short in round 4: yes
+   birth 40: offshoot parents [15]       taken [46]         D=1 f=2 usable=2 barred=0   short in round 4: no
+   birth 41: offshoot parents [16]       taken [48]         D=1 f=2 usable=2 barred=0   short in round 4: no
+   after round 3, parts of Y's line: [30, 40, 41] h=[1, 2, 2] k=[0, 0, 0] met sets [[30, 40], [30, 41]] common knots [[15], [16]]
+-- round 4 (members of Y's line before it: [30, 40, 41], with h: [(30, 1), (40, 2), (41, 2)])
+   groups containing them: [[30, 40], [30, 41]]
+   short: [30]   cancelled groups: [[30, 40], [30, 41]]   waiting: [30]   retired: []
+   birth 60: offshoot parents [40]       taken [95]         D=1 f=2 usable=2 barred=0   short in round 5: no
+   birth 61: offshoot parents [40]       taken [96]         D=1 f=2 usable=2 barred=0   short in round 5: no
+   birth 62: offshoot parents [41]       taken [97]         D=1 f=2 usable=2 barred=0   short in round 5: no
+   birth 63: offshoot parents [41]       taken [98]         D=1 f=2 usable=2 barred=0   short in round 5: no
+   after round 4, parts of Y's line: [30] h=[1] k=[0] met sets [] common knots []; [60, 61] h=[2, 2] k=[0, 0] met sets [[60, 61]] common knots [[40]] [two-knot part]; [62, 63] h=[2, 2] k=[0, 0] met sets [[62, 63]] common knots [[41]] [two-knot part]
+-- round 5 (members of Y's line before it: [30, 60, 61, 62, 63], with h: [(30, 1), (60, 2), (61, 2), (62, 2), (63, 2)])
+   groups containing them: [[60, 61], [62, 63]]
+   short: []   cancelled groups: []   waiting: []   retired: []
+   birth 90: join     parents [60, 61]   taken [135, 137]   D=2 f=1 usable=1 barred=0   short in round 6: yes
+   birth 91: join     parents [62, 63]   taken [139, 141]   D=2 f=1 usable=1 barred=0   short in round 6: yes
+   birth 105: offshoot parents [30]       taken [80]         D=0 f=2 usable=2 barred=0   short in round 6: no
+   birth 120: offshoot parents [60]       taken [136]        D=1 f=2 usable=2 barred=0   short in round 6: no
+   birth 121: offshoot parents [61]       taken [138]        D=1 f=2 usable=2 barred=0   short in round 6: no
+   birth 122: offshoot parents [62]       taken [140]        D=1 f=2 usable=2 barred=0   short in round 6: no
+   birth 123: offshoot parents [63]       taken [142]        D=1 f=2 usable=2 barred=0   short in round 6: no
+   after round 5, parts of Y's line: [90, 120, 121] h=[1, 2, 2] k=[0, 0, 0] met sets [[90, 120], [90, 121]] common knots [[60], [61]]; [91, 122, 123] h=[1, 2, 2] k=[0, 0, 0] met sets [[91, 122], [91, 123]] common knots [[62], [63]]; [105] h=[2] k=[0] met sets [] common knots []
+-- round 6 (members of Y's line before it: [90, 91, 105, 120, 121, 122, 123], with h: [(90, 1), (91, 1), (105, 2), (120, 2), (121, 2), (122, 2), (123, 2)])
+   groups containing them: [[90, 120], [90, 121], [91, 122], [91, 123]]
+   short: [90, 91]   cancelled groups: [[90, 120], [90, 121], [91, 122], [91, 123]]   waiting: [90, 91]   retired: []
+   birth 150: offshoot parents [105]      taken [215]        D=1 f=2 usable=2 barred=0   short in round 7: no
+   birth 151: offshoot parents [105]      taken [216]        D=1 f=2 usable=2 barred=0   short in round 7: no
+   birth 180: offshoot parents [120]      taken [245]        D=1 f=2 usable=2 barred=0   short in round 7: no
+   birth 181: offshoot parents [120]      taken [246]        D=1 f=2 usable=2 barred=0   short in round 7: no
+   birth 182: offshoot parents [121]      taken [247]        D=1 f=2 usable=2 barred=0   short in round 7: no
+   birth 183: offshoot parents [121]      taken [248]        D=1 f=2 usable=2 barred=0   short in round 7: no
+   birth 184: offshoot parents [122]      taken [249]        D=1 f=2 usable=2 barred=0   short in round 7: no
+   birth 185: offshoot parents [122]      taken [250]        D=1 f=2 usable=2 barred=0   short in round 7: no
+   birth 186: offshoot parents [123]      taken [251]        D=1 f=2 usable=2 barred=0   short in round 7: no
+   birth 187: offshoot parents [123]      taken [252]        D=1 f=2 usable=2 barred=0   short in round 7: no
+   after round 6, parts of Y's line: [90] h=[1] k=[0] met sets [] common knots []; [91] h=[1] k=[0] met sets [] common knots []; [150, 151] h=[2, 2] k=[0, 0] met sets [[150, 151]] common knots [[105]] [two-knot part]; [180, 181] h=[2, 2] k=[0, 0] met sets [[180, 181]] common knots [[120]] [two-knot part]; [182, 183] h=[2, 2] k=[0, 0] met sets [[182, 183]] common knots [[121]] [two-knot part]; [184, 185] h=[2, 2] k=[0, 0] met sets [[184, 185]] common knots [[122]] [two-knot part]; [186, 187] h=[2, 2] k=[0, 0] met sets [[186, 187]] common knots [[123]] [two-knot part]
+   checks: s+1: three births: PASS, s+1: one join of both members, D=2, f=1: PASS, s+1: one offshoot of each member, D=1, f=2: PASS, s+2: j short: PASS, s+2: both groups of j cancelled, and only those: PASS, s+2: each offshoot makes two offshoots, a two-knot part joinable only through it: PASS, wait: j waits in s+2: PASS, wait: j in no group in s+3 (asked for nothing), not short: PASS, wait: j makes one offshoot in s+3: PASS, wait: it is a part of one member after s+3: PASS, wait: it makes a two-knot part in s+4: PASS

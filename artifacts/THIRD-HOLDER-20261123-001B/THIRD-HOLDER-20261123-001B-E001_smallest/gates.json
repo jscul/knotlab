@@ -1,0 +1,444 @@
+{
+ "part1_two_holders": {
+  "cut1": {
+   "tables": 596,
+   "expected_tables": 596,
+   "hidden_pairs": 130427,
+   "max_hidden": "2",
+   "above2": 0,
+   "ok": true
+  },
+  "cut2": {
+   "tables": 3018,
+   "expected_tables": 3018,
+   "hidden_pairs": 2962619,
+   "max_hidden": "2",
+   "above2": 0,
+   "ok": true
+  }
+ },
+ "part2_brute_force_third_holder": {
+  "pairs": 100,
+  "joint_mismatch": 0,
+  "table_mismatch": 0,
+  "eval_mismatch": 0,
+  "by_pool": {
+   "L_c1_k4_i5_h3": {
+    "pairs": 25,
+    "draws": 25
+   },
+   "L_c2_k4_i5_h3": {
+    "pairs": 25,
+    "draws": 25
+   },
+   "S_c1_k4_i5_h3": {
+    "pairs": 25,
+    "draws": 25
+   },
+   "S_c2_k4_i5_h3": {
+    "pairs": 25,
+    "draws": 25
+   }
+  },
+  "ok": true
+ },
+ "part3_lemma_vs_full": {
+  "pairs_L_c1_k3_i3_h2__L_c1_k3_i3_h2_full_summary.json": {
+   "hidden_full": 130427,
+   "hidden_lemma": 130427,
+   "max_full": "2",
+   "max_lemma": null,
+   "above2_full": 0,
+   "above2_lemma": 0,
+   "ok": true
+  },
+  "pairs_L_c1_k3_i3_h3__L_c1_k3_i3_h3_full_summary.json": {
+   "hidden_full": 691311,
+   "hidden_lemma": 691311,
+   "max_full": "2",
+   "max_lemma": null,
+   "above2_full": 0,
+   "above2_lemma": 0,
+   "ok": true
+  },
+  "pairs_L_c2_k3_i3_h2__L_c2_k3_i3_h2_full_summary.json": {
+   "hidden_full": 2962619,
+   "hidden_lemma": 2962619,
+   "max_full": "2",
+   "max_lemma": "2",
+   "above2_full": 0,
+   "above2_lemma": 0,
+   "ok": true
+  },
+  "pairs_L_c2_k3_i3_h3__L_c2_k3_i3_h3_full_summary.json": {
+   "hidden_full": 6970674,
+   "hidden_lemma": 6970674,
+   "max_full": "2",
+   "max_lemma": "2",
+   "above2_full": 0,
+   "above2_lemma": 0,
+   "ok": true
+  }
+ },
+ "part3b_compiled_lemma_vs_full": {
+  "mixS": {
+   "excess_full": 145,
+   "excess_lemma": 145,
+   "same_old_tables_scores_and_sizes": true,
+   "pairs_full": 247779081,
+   "pairs_lemma": 965199,
+   "max_full": "20/9",
+   "max_lemma": "20/9"
+  },
+  "search_L_c2": {
+   "excess_full": 0,
+   "excess_lemma": 0,
+   "same_old_tables_scores_and_sizes": true,
+   "pairs_full": 214739716,
+   "pairs_lemma": 292044,
+   "max_full": "at most 2 (52498 old tables within 1e-9 of 2, none above)",
+   "max_lemma": "at most 2 (125 old tables within 1e-9 of 2, none above)"
+  },
+  "search_S_c2": {
+   "excess_full": 0,
+   "excess_lemma": 0,
+   "same_old_tables_scores_and_sizes": true,
+   "pairs_full": 218862436,
+   "pairs_lemma": 351548,
+   "max_full": "at most 2 (118425 old tables within 1e-9 of 2, none above)",
+   "max_lemma": "at most 2 (684 old tables within 1e-9 of 2, none above)"
+  }
+ },
+ "part2b_search_tables": {
+  "checked": 200,
+  "mismatches": 0,
+  "ok": true
+ },
+ "part4_starts": {
+  "eighteen": {
+   "knots": [
+    "even(x1,a,b)",
+    "even(c1,a,b)",
+    "even(k1,a,b)",
+    "even(x2,d,e)",
+    "odd(x3,d,e)",
+    "even(c2,d,e)",
+    "odd(c3,d,e)",
+    "nae(c1,c2,n2)",
+    "nae(k1,c3,n1)",
+    "even(n2,g,h)",
+    "odd(s2,g,h)",
+    "even(n1,u,v)",
+    "odd(s1,u,v)",
+    "even(y1,p,q)",
+    "even(s1,p,q)",
+    "even(y2,r,t)",
+    "even(s2,r,t)",
+    "odd(y3,r,t)"
+   ],
+   "measures": {
+    "knots": 18,
+    "knots_A": 13,
+    "knots_B": 5,
+    "extra_holders": 8,
+    "max_holders": 4,
+    "max_holders_internal": 4,
+    "cls": "L",
+    "observer_holders": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "shared": [
+     "s1",
+     "s2"
+    ],
+    "n_internal": 18
+   },
+   "hidden": true,
+   "hidden_A": true,
+   "hidden_B": true,
+   "score": "20/9",
+   "score_float": 2.2222222222222223,
+   "change": "0",
+   "agrees_with_side_tables": true,
+   "old_words": 512,
+   "finished_words": [
+    1152,
+    1152,
+    1152,
+    1152
+   ],
+   "finished_distinctions": 28,
+   "shared": [
+    "s1",
+    "s2"
+   ],
+   "T_A": [
+    [
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     16,
+     0,
+     16,
+     0
+    ],
+    [
+     16,
+     16,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     16,
+     16
+    ],
+    [
+     0,
+     16,
+     0,
+     16
+    ],
+    [
+     0,
+     0,
+     0,
+     0
+    ]
+   ],
+   "T_B": [
+    [
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     4,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     4,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     4,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     4
+    ],
+    [
+     0,
+     0,
+     0,
+     0
+    ]
+   ],
+   "control": 2.0,
+   "seconds": 80.7
+  },
+  "pencil": {
+   "knots": [
+    "nae(x1,x2,n2)",
+    "nae(x1,x3,n1)",
+    "even(x2,d,e)",
+    "odd(x3,d,e)",
+    "even(y1,p,q)",
+    "odd(n1,p,q)",
+    "even(y2,r,t)",
+    "odd(n2,r,t)",
+    "odd(y3,r,t)"
+   ],
+   "measures": {
+    "knots": 9,
+    "knots_A": 4,
+    "knots_B": 5,
+    "extra_holders": 2,
+    "max_holders": 3,
+    "max_holders_internal": 3,
+    "cls": "S",
+    "observer_holders": [
+     2,
+     2,
+     2,
+     1,
+     1,
+     1
+    ],
+    "shared": [
+     "n1",
+     "n2"
+    ],
+    "n_internal": 6
+   },
+   "hidden": true,
+   "hidden_A": true,
+   "hidden_B": true,
+   "score": "20/9",
+   "score_float": 2.2222222222222223,
+   "change": "0",
+   "agrees_with_side_tables": true,
+   "old_words": 64,
+   "finished_words": [
+    144,
+    144,
+    144,
+    144
+   ],
+   "finished_distinctions": 16,
+   "shared": [
+    "n1",
+    "n2"
+   ],
+   "T_A": [
+    [
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     2,
+     0,
+     2
+    ],
+    [
+     0,
+     0,
+     2,
+     2
+    ],
+    [
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     2,
+     2,
+     0,
+     0
+    ],
+    [
+     2,
+     0,
+     2,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0
+    ]
+   ],
+   "T_B": [
+    [
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     4
+    ],
+    [
+     0,
+     0,
+     4,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     4,
+     0,
+     0
+    ],
+    [
+     4,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0
+    ]
+   ],
+   "control": 2.0,
+   "seconds": 0.0
+  }
+ },
+ "eighteen_reproduces_20_9_hidden": true,
+ "P4_pencil_20_9_hidden": true,
+ "row_G_pass": true,
+ "seconds": 87.0
+}

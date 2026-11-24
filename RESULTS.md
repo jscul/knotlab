@@ -1972,5 +1972,5 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-22 | Can a freshly recorded bit block a later join? (`WRITTEN-BIT-AND-JOIN-VETO-20261122-001`) | [closure](proofs/WRITTEN-BIT-AND-JOIN-VETO-20261122-001Z/WRITTEN-BIT-AND-JOIN-VETO-20261122-001Z-P001_synthesis/proof.md) | [folder](research/WRITTEN-BIT-AND-JOIN-VETO-20261122-001/) |
 | 2026-11-23 | Can ordinary growth hide a free choice among all locally available edits? (`LOCAL-EDIT-POLICIES-20261123-001`) | [closure](proofs/LOCAL-EDIT-POLICIES-20261123-001Z/LOCAL-EDIT-POLICIES-20261123-001Z-P001_synthesis/proof.md) | [folder](research/LOCAL-EDIT-POLICIES-20261123-001/) |
 | 2026-11-23 | Six leads from the review of 23 November (`REVIEW-LEADS-20261123-001`) | [closure](proofs/REVIEW-LEADS-20261123-001Z/REVIEW-LEADS-20261123-001Z-P001_synthesis/proof.md) | [folder](research/REVIEW-LEADS-20261123-001/) |
-| 2026-11-23 | What a third holder gives (`THIRD-HOLDER-20261123-001`) | — | [folder](research/THIRD-HOLDER-20261123-001/) |
+| 2026-11-23 | What a third holder gives (`THIRD-HOLDER-20261123-001`) | [closure](proofs/THIRD-HOLDER-20261123-001Z/THIRD-HOLDER-20261123-001Z-P001_synthesis/proof.md) | [folder](research/THIRD-HOLDER-20261123-001/) |
 

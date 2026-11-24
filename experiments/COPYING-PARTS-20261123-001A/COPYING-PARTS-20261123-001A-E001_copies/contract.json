@@ -1,0 +1,23 @@
+{
+ "artifact_id": "COPYING-PARTS-20261123-001A-E001",
+ "kind": "experiment",
+ "branch": "code_analysis",
+ "evidence_stage": "exploratory",
+ "status": "Frozen",
+ "question": "Under the rations FLOOR0, FLOOR1 and ONE-FEWER with a short knot's joins cancelled, a part of two knots returns after two rounds beside a copy of itself. On real knots: what is the cycle, how do the copies count under each treatment of the short knot, does every knot made pass the canonical knot test under both knot laws, which supplied rules does the copying need, and what makes it stop?",
+ "inputs": "The two small starts, the ring of five and the census of starts of up to five knots named in the pre-registration; the definitions and the engine of RING-IN-BALANCE-20261123-001, unchanged.",
+ "forbidden_inputs": "Any definition changed after a value is seen; any outcome of this study before the freeze; any change to the earlier study's engine.",
+ "primary_observable": "The number of two-knot parts after every round, every return of such a part with the parts that came apart, and the verdict of the knot test for every knot, as listed for runs 1 to 6 of the pre-registration.",
+ "comparators_or_controls": "The counts disclosed from the earlier study; the rations ORD, CAP-2, CAP-3 and RATION-2, under which no copying is predicted; the knot test on the ring of five under the three rations, where they differ.",
+ "resource_budget": "Each run under ten minutes and 4 GB on one process; run 5 on up to eight processes, through the shared runner only if it would take longer than ten minutes.",
+ "first_executable_signal": "The gate row of the predictions table.",
+ "decision_rule": "Each prediction is judged by its 'Fails when' column.",
+ "stop_rule": "The study stops when runs 1 to 6 are done and each prediction has a verdict.",
+ "nonclaims": "An exploratory study of laws changed by hand (assumption A224) on starts built by hand; every run and the census are finite and prove no all-round statement; the copies cannot combine or read one another under these laws; no claim about ordinary growth and none about living things.",
+ "preregistration": "research/COPYING-PARTS-20261123-001A/preregistration.md",
+ "preregistration_sha256": "cb02eb0cd77f397af947dfebcd4a63ec3dc6fa54d591e2f9126d91dadfe06303",
+ "definitions": "research/RING-IN-BALANCE-20261123-001/definitions.md",
+ "definitions_sha256": "e7c001a446d16565181d5805c73c68bbcaff82022b37412463b545e95cb52648",
+ "design_advisor": "research/COPYING-PARTS-20261123-001/advisor/answer.json",
+ "frozen_utc": "2026-11-24T06:27:04.072158+00:00"
+}

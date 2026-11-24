@@ -2861,13 +2861,27 @@ Taking the rounds away shows what they were doing (computed, refereed):
   builds what the rounds build, with no map and no stored date, on starts
   whose first knots can be recognised
   ([SERIAL-REPAIRS-20261120-001](research/SERIAL-REPAIRS-20261120-001/decision.md)).
-  It reads the whole of what is built. Whether a knot can do with reading a
-  few steps around itself is argued there and not yet run.
+  It reads the whole of what is built, and where a knot has to wait it stops
+  early.
 - **A round for each part (computed under added rules, referee pending).**
   Under the rules of lesson 8.7 the round need not be one for the whole: the
   separate parts of what is still growing can take their rounds in any order,
   and the same structure is built. Making one birth at a time, with every knot
   reading again after each, jams.
+- **One birth at a time, reading a few steps (computed, referee pending).** A
+  later study made the births of one part one at a time. Each birth records
+  its parents. A knot is weaned when its parents have finished giving, and its
+  brood is every knot made alongside it. A knot that waits until its whole
+  brood is weaned, and then works out from the brood as it was at birth what
+  the round would have had it do, builds what the rounds build in every order
+  searched: where knots wait, where none does, and under ordinary growth. On
+  cycles through dead knots it is enough to read four steps out, whatever the
+  size of the cycle. Each further time a knot has to wait reaches a step
+  further, so no fixed distance serves every case. Laws that read what is
+  there now, and not the brood as it was made, fail within a few births. The
+  round has not gone: the law replays it from the record of parents. What has
+  gone is the need for anyone to keep it
+  ([LOCAL-ROUND-20261123-001](research/LOCAL-ROUND-20261123-001/decision.md)).
 - **The growth lives where parts are joined.** Counted by size, each part of a
   joined start keeps exactly the growth it has alone, and 97% to 99.9% of the
   junctions of size 10 or more span the join.
@@ -3731,11 +3745,13 @@ interpretation that no result settles.
   question could be asked of it.
 
 **What is open.** The ring that returns and the parts that copy themselves
-each have a frozen study behind them, with referees pending. Three things are
-open. Whether a law exists in which the knots of one part need not read
-together (B323, under goal G5). A first "fold of emergence": since parts that
-have come apart never meet again under these rules, a made pattern that reads
-another needs a law under which they can (B317, under G15). And proofs
+each have a frozen study behind them, with referees pending. Whether the knots
+of one part have to read together now has an answer, in lesson 8.1: not if
+each birth records its parents. Three things are open. Whether that record
+can be done without (B325, under goal G5). A first "fold of emergence": since
+parts that have come apart never meet again under these rules, a made pattern
+that reads another needs a law under which they can (B317, under G15; a study
+of it opened on 24 November 2026). And proofs
 of what is so far argued or computed: the return for every odd ring, the sizes
 of the parts under each cap, and that one leftover distinction on every knot
 turns rate x into the x′ of x′² = x(x′ + 1) (B316, under G17).
@@ -4281,6 +4297,12 @@ that earlier records used in two senses.
   instance in which a made pattern does the reading (lesson 8.7). It is not the
   two-fold of a two-fold weave, which counts knots, and the guide makes no
   claim about living things.
+- **Weaned; brood.** In the laws that make one birth at a time (lesson 8.1),
+  a knot is weaned when none of its parents is still in the live roster: its
+  parents have finished giving. The **brood** of a knot is the smallest set
+  that holds it and, with each knot in it, every child of each of that knot's
+  parents: the knots made alongside it. The intuition: a brood is one part's
+  round, seen from the knots that round made.
 - **Live roster.** What one round of the law reads: which junctions hold a
   loose distinction, how many, and which sets of them one junction meets
   (lesson 8.4). The growth records call it the growing end.

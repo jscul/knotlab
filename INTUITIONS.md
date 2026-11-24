@@ -18,9 +18,11 @@ the guide's words, once the knot it speaks of has been defined, and shows how
 the later lessons on distance and dimension hang from it.
 
 The page is written as a textbook, to be read in order. Its eight chapters are
-divided into lessons, and each lesson builds on the ones before it. Chapter 1
-sets up bits, rules and the notation, including how to read A, B → c, before
-anything is built from them.
+divided into lessons, and each lesson builds on the ones before it. Each
+chapter opens with an index: its lessons, a line or two on each, and under
+them the chapter's intuition in one paragraph. Chapter 1 sets up bits, rules
+and the notation, including how to read A, B → c, before anything is built
+from them.
 
 **A note on words.** The program is trying to build space, so it cannot yet
 use words that take space for granted. Triangle, torus, sphere, plane, surface,
@@ -99,6 +101,7 @@ PYTHONPATH=tools python3 -m knotlab demo
   - [7.2 Open questions](#72-open-questions)
   - [7.3 Every meeting pattern, none chosen](#73-every-meeting-pattern-none-chosen)
 - [Chapter 8. How a law grows](#chapter-8-how-a-law-grows)
+  - [8.0 What the program is building](#80-what-the-program-is-building)
   - [8.1 Growing in rounds](#81-growing-in-rounds)
   - [8.2 Four kinds of growth](#82-four-kinds-of-growth)
   - [8.3 Reading a blow-up by sampling](#83-reading-a-blow-up-by-sampling)
@@ -110,10 +113,35 @@ PYTHONPATH=tools python3 -m knotlab demo
 
 ## Chapter 1. Bits and rules
 
-Everything later is built from bits and from rules about them. This chapter
-sets up that vocabulary and its notation, reads the Game of Life as such rules,
-states the picture the program starts from, reads the smallest rule that binds
-two loops, and ends with what rules make.
+- [1.1 Distinctions and states](#11-distinctions-and-states): a distinction
+  is one bit, and nothing else is assumed. Three of them have eight joint
+  states, drawn as the cube of states.
+- [1.2 Rules and what they allow](#12-rules-and-what-they-allow): a rule rules
+  out joint states, and a system is read only through the states it allows.
+  The symbols, and what makes a set of variables free.
+- [1.3 Emergence in the Game of Life](#13-emergence-in-the-game-of-life):
+  Life's famous patterns are allowed states of one system of rules. Only its
+  grid is drawn in advance.
+- [1.4 The picture](#14-the-picture): a chain only orders its members, and a
+  loop collapses to one free bit, its open distinction. What is real lies
+  between bound loops: two loops, A and B, and a contact c.
+- [1.5 Reading A, B → c](#15-reading-a-b--c): the atom, "A and B together
+  demand c", forbids exactly one state. Every pair stays free while the three
+  together are constrained.
+- [1.6 Forgetting a variable](#16-forgetting-a-variable): forgetting a
+  variable keeps each state of the others that some value of it completes.
+  What remains is the system's shadow on them.
+- [1.7 What rules make](#17-what-rules-make): rules make structures, and some
+  run on forever. The owner calls them shapes; the guide says meeting pattern
+  for which knots share which distinctions.
+
+**The intuition.** Everything is built from one material, the distinction,
+and from rules that rule out joint states. A system is known by the states it
+allows and by nothing else: not by how it is written, and not by a board,
+unless one is drawn. What behaves like an object, as a glider does in the Game
+of Life, is a pattern among allowed states. The smallest rule that binds two
+loops already shows what the guide is after: it constrains three distinctions
+as a whole and leaves every pair free.
 
 ### 1.1 Distinctions and states
 
@@ -556,10 +584,28 @@ here is a claim about minds or biology.
 
 ## Chapter 2. The knot test
 
-Lesson 1.5 found a rule that lives in the whole and in no pair. This chapter
-turns that into a test, draws the test on the cube of states, counts every
-knot on three variables, and ends with the owner's founding premise, that
-distance is the only form of information.
+- [2.1 The knot test](#21-the-knot-test): a relation is a knot when it is
+  constrained as a whole, forgetting any one variable leaves the rest
+  unconstrained, and some state is allowed. Knots overlap by sharing
+  distinctions, and which knots share which is their meeting pattern.
+- [2.2 Knots on the cube](#22-knots-on-the-cube): on three variables every
+  pair is free exactly when no two excluded states are neighbours on the cube
+  of states.
+- [2.3 What a knot hides](#23-what-a-knot-hides): the whole holds information
+  that no pair holds, and never more than one bit. Two loops and a contact
+  have 34 knots in five classes; parity hides the most and the atom the least.
+- [2.4 Distance is the only form of information](#24-distance-is-the-only-form-of-information):
+  the owner's founding premise. A knot's touch is the first distance, and
+  distance is all the information there is. What hangs from it, and its open
+  test.
+
+**The intuition.** Lesson 1.5 found a rule that lives in the whole and in no
+pair. A knot is exactly that: erase any one variable and the binding is gone.
+The test says so on allowed states, the cube of states turns it into a
+picture, and counting shows how little a knot hides, at most one bit. On the
+owner's premise the touch a knot makes between its loops is the first
+distance, and distance is the only form of information. The premise is his
+interpretation, not a result, and it is under test.
 
 ### 2.1 The knot test
 
@@ -958,9 +1004,25 @@ the question it leads to.
 
 ## Chapter 3. Pairs and three places
 
-Which rules can build a knot? Rules on two variables never can, and rules on
-three variables always can. The chapter then collects what a system leaves
-free into its free complex, and finds the knots among the complex's holes.
+- [3.1 Two-place rules and the majority vote](#31-two-place-rules-and-the-majority-vote):
+  whenever a system of two-place rules allows three states, it allows their
+  majority. No knot on three variables does.
+- [3.2 Pairs cannot make a knot; three places can](#32-pairs-cannot-make-a-knot-three-places-can):
+  a system of two-place rules is known from its pairs, and a knot shows
+  nothing in any pair. Three-place rules bind any number of loops.
+- [3.3 The free complex of a system](#33-the-free-complex-of-a-system):
+  collect every set of variables a system leaves free into its free complex.
+  The gaps in it are holes.
+- [3.4 Holes and knots](#34-holes-and-knots): a knot is the smallest kind of
+  hole, a set whose every part is free but which is not free itself.
+  Two-place rules make holes but never a hollow triple.
+
+**The intuition.** Which rules can build a knot? Whatever a two-place rule
+says, it says about a pair, and a knot shows nothing in any pair. So rules on
+two variables never build one, and rules on three variables always can: three
+places are where binding starts. Collecting what a system leaves free shows
+where its knots sit, as the smallest holes. Logic allows every free complex,
+so it selects no space; whatever space there is has to come from a law.
 
 ### 3.1 Two-place rules and the majority vote
 
@@ -1122,15 +1184,45 @@ PYTHONPATH=tools python3 -m knotlab space
 
 ## Chapter 4. How bindings behave
 
-Knots can be read as requirements or as choices, can come from rules that
-compete, and can be joined into rings and networks. They also space
-distinctions apart, so that rules alone can set a distance and a dimension:
-first on a board that is given (lesson 4.6), then on knots alone, with only
-their meeting pattern given (lesson 4.7). When knots join levels of a
-pattern, how many distinctions does it take to see what two levels bind
-together? Lesson 4.8 starts with just two knots.
-The chapter first fixes the words for easy and hard questions, which these
-behaviours are measured by.
+- [4.1 Easy and hard questions](#41-easy-and-hard-questions): the words for
+  how hard a question is: linear time, polynomial time, NP-complete.
+  Expressing a knot and deciding a system of knots are different questions.
+- [4.2 Requirement and choice](#42-requirement-and-choice): read 1 as
+  "exists". A requirement forces one least world and a choice leaves
+  alternatives, and a knot can be the one under one reading and the other
+  under another. Knots never select.
+- [4.3 Knots from competing pairs](#43-knots-from-competing-pairs): three
+  distinctions asked to differ pairwise cannot all do so. The states that
+  break one preference form the not-all-equal knot, the only kind competing
+  pairs make without hidden variables.
+- [4.4 Which knots remember a loop](#44-which-knots-remember-a-loop): join
+  copies of a knot into a ring and forget the witnesses. Only parity carries
+  the loop at full strength at every length; other knots fade.
+- [4.5 What networks of loops remember](#45-what-networks-of-loops-remember):
+  contacts that act freely record each loop separately. Contacts with fixed
+  points bind loops together, into atoms.
+- [4.6 Dimensions from rules](#46-dimensions-from-rules): bond distance and
+  dimension are read from the allowed states alone. An endless chain grows
+  with nothing drawn, but every board of dimension two so far was given its
+  neighbours in advance.
+- [4.7 Knots alone](#47-knots-alone): take the board away. On the endless
+  six-regular weave the not-all-equal law gives the meeting pattern back and
+  measures it with an exact ruler. The meeting pattern itself is still put in.
+- [4.8 How does one level bind another?](#48-how-does-one-level-bind-another):
+  two knots that share one bit already bind four bits. Across the levels of a
+  pattern with no cycle of knots, the smallest bond gains one member per level
+  along a chain of knots.
+
+**The intuition.** Knots behave in a few ways that the later chapters lean
+on. A knot can be read as a requirement or as a choice, and it never selects.
+Pairs that compete make a knot where pairs that must all hold cannot. Around
+a ring only parity keeps the record of a loop at full strength, while atoms
+bind loops together. And knots space distinctions apart: the smallest bond
+that holds two distinctions gives a distance read from the allowed states
+alone, and how fast its balls grow gives a dimension. What no tested law does
+yet is supply its own meeting pattern: a board, or which knots share which
+distinctions, is still put in. The chapter first fixes the words for easy and
+hard questions, which these behaviours are measured by.
 
 ### 4.1 Easy and hard questions
 
@@ -1911,10 +2003,24 @@ fifth level, so constant over four levels is not constant.
 
 ## Chapter 5. Depth
 
-A knot pattern can allow nothing while every small window of it looks
-consistent. This chapter asks how much of the pattern a proof has to hold at
-once to see that nothing is allowed, and then how many stages forcing needs
-when it works on as much as it can at once.
+- [5.1 Proving that nothing is allowed](#51-proving-that-nothing-is-allowed):
+  a refutation proves that a system allows no state. Its degree says how much
+  one step has to hold at once.
+- [5.2 How deep a hole is](#52-how-deep-a-hole-is): a pattern of parity knots
+  with an odd total charge allows nothing, yet every small window of it looks
+  consistent. Seeing the hole takes the width of the pattern's best order,
+  unless the reasoning works mod 2.
+- [5.3 Forcing in rounds and phases](#53-forcing-in-rounds-and-phases):
+  forcing counted two ways, in rounds and in phases. It has to wait only
+  where an atom is used as a knot, with both its loops still open.
+
+**The intuition.** A hidden bit has a depth: how much an observer must hold
+at once to carry it to where it shows. A pattern of parity knots can allow
+nothing while every small window of it looks consistent, and then a proof has
+to hold as much as the pattern is wide, unless it reasons mod 2. Forcing
+shows the same thing from the other side: every two-place remainder can be
+followed at once, and the order that cannot be avoided sits where a knot is
+used as a knot.
 
 ### 5.1 Proving that nothing is allowed
 
@@ -2105,9 +2211,24 @@ patterns, and how little rejoining the program's random families contain.
 
 ## Chapter 6. Counting
 
-Deciding asks whether a knot pattern allows any world; counting asks how many
-worlds it allows. This chapter sets up the words for counting, then reports
-where counting turns hard.
+- [6.1 Counting worlds](#61-counting-worlds): the words for counting. Counting
+  worlds can be hard where deciding is easy, and the graphs the literature
+  calls planar are the classical exception.
+- [6.2 The worlds of not-all-equal knots](#62-the-worlds-of-not-all-equal-knots):
+  patterns of not-all-equal knots with every distinction in three knots. In
+  the class the note studies, counting their worlds stays polynomial under
+  twists that do not branch and turns #P-hard once they do.
+- [6.3 Counting on classical 3-manifolds](#63-counting-on-classical-3-manifolds):
+  a result about the literature's objects, not the program's. Counting the
+  labellings of a classical knot's closed paths by a solvable group is hard,
+  already for S₄.
+
+**The intuition.** Deciding asks whether a knot pattern allows any world;
+counting asks how many worlds it allows. Counting can turn hard where
+deciding stays easy, and two notes find where it turns. In the second,
+everything pairwise stays countable and hardness enters exactly where three
+things are joined at once. That echoes the knot test, but it is a statement
+about counting, not about logical knots.
 
 ### 6.1 Counting worlds
 
@@ -2221,8 +2342,23 @@ relation x·y = z, is constrained as a whole and free in every pair.
 
 ## Chapter 7. Sources and questions
 
-What the guide takes from classical mathematics, what it adds, what
-remains open, and the owner's picture of what the program's bases are part of.
+- [7.1 What is classical and what is ours](#71-what-is-classical-and-what-is-ours):
+  which results are classical, which readings are the program's, and which
+  results are new as far as we found.
+- [7.2 Open questions](#72-open-questions): four questions. Which law gives a
+  space, whether loops are processes, whether a limit rule is needed, and
+  whether competition counts.
+- [7.3 Every meeting pattern, none chosen](#73-every-meeting-pattern-none-chosen):
+  the owner's picture of what the program's bases are part of. Nothing
+  chooses a meeting pattern, so one written down is one sample; how a growing
+  pattern ends, what harmonies do, and the tests on each part.
+
+**The intuition.** Most of the mathematics so far is classical. What is the
+program's is the reading, and a few results. The questions left open ask
+which law, not written on a space in advance, makes a space. The owner's
+picture changes how they are asked: nothing chooses a meeting pattern, so
+each pattern the record writes down is one sample, and a claim about what is
+typical has to name its weighting.
 
 ### 7.1 What is classical and what is ours
 
@@ -2613,6 +2749,53 @@ its readings is a theorem.
 
 ## Chapter 8. How a law grows
 
+- [8.0 What the program is building](#80-what-the-program-is-building): the
+  owner's picture of growth, in his words. A structure relative to itself,
+  growth that ends and growth that never does, why joining is the hard part,
+  and where the irrational rates come from.
+- [8.1 Growing in rounds](#81-growing-in-rounds): a start is a few knots that
+  share distinctions. One rule adds a knot wherever open distinctions can
+  join, everywhere at once, round by round. Where the lesson's theorem holds,
+  the rounds count size, not time.
+- [8.2 Four kinds of growth](#82-four-kinds-of-growth): what grows stalls or
+  closes, grows in a fixed dimension, feeds itself as an eddy at a fixed rate,
+  or explodes where cycles overlap.
+- [8.3 Reading a blow-up by sampling](#83-reading-a-blow-up-by-sampling): a
+  blow-up is expected, and an unlimited structure is read by sampling it.
+  What a sample shows depends on the weighting.
+- [8.4 What distance carries of what grows](#84-what-distance-carries-of-what-grows):
+  two arrangements can agree in every pair's bond distance and differ one
+  round later. Three-way distances tell apart every case found.
+- [8.5 Locality before space](#85-locality-before-space): here logic comes
+  before space. A whole can hold what no pair holds, but ordinary locality
+  and a largest speed have not come out of it.
+- [8.6 Structure and state](#86-structure-and-state): the structure grows,
+  and its distinctions have a state. Patterns of state travel and loops store
+  one, under rules of motion added by hand; the growth law never reads the
+  state.
+- [8.7 Generators and folds of emergence](#87-generators-and-folds-of-emergence):
+  ordinary growth has generators of its own kind, though none makes one fixed
+  pattern again and again. Under rules added by hand a ring returns and gives
+  parts off, and small parts copy themselves.
+
+**The intuition.** Take a few knots that share distinctions and one fixed
+rule, and let it build. Nobody places a knot: which knots share distinctions
+decides where the next one goes. Some growth ends, some goes on in a fixed
+dimension, and some blows up: it multiplies at a fixed rate such as the
+golden ratio, or explodes where cycles overlap. A blow-up is expected, and it
+is read by sampling. The chapter then asks what such a structure carries: how
+much its distances say of the next round, whether locality and motion come
+out of it, and whether it makes things that last, give parts off or copy
+themselves.
+
+The lessons state in plain words the picture that the growth studies of 17 to
+24 November 2026 support. They build on lessons 2.4 (distance), 4.6
+(dimension, read from how fast balls grow) and 7.3 (samples and weightings).
+Each claim says whether it is proved, computed or open, and a result is given
+as settled only once its referee has confirmed it.
+
+### 8.0 What the program is building
+
 **What the program is building.** On 23 November 2026 the owner was asked
 whether the program looks for purely Boolean pieces that, combined, could
 explain how atoms interact or why gravity exists. The answer is a fair
@@ -2622,9 +2805,11 @@ effectively joined with other things (think joining the X axis and Y axis on
 a cartesian plane). These are like rules. But you also need to take 'logic'
 to infinities, so there's a statistical/irrational part of it." The owner then
 showed pictures of growth like the ones the web edition of this guide shows
-under this introduction. The paragraphs below take the owner's points in turn.
-They are the owner's picture, an interpretation, except where a result is
-cited.
+in this lesson. The paragraphs below take the owner's points in turn. They are
+the owner's picture, an interpretation, except where a result is cited. The
+lesson is an overview, numbered 8.0 because it comes before the chapter's
+first lesson: the words it takes from lessons 8.1 and 8.2 each point to their
+lesson, and the glossary has them all.
 
 **A structure relative to itself.** A start is a few knots that share
 distinctions (lesson 8.1). One fixed rule, applied everywhere at once in
@@ -2674,10 +2859,11 @@ claim about what growth typically does names its weighting, the chances its
 random process gives each start (lesson 7.3). That is the statistical part.
 
 **The golden-ratio eddy.** Five knots in a ring, each keeping one leftover
-distinction, make 5, 10, 15, 25, 40, 65, … knots in successive rounds: each
-round as many as the two before it together, five times the Fibonacci
-numbers. So the count grows by the golden ratio a round, and no ring of live
-knots within five places grows faster (proved, refereed,
+distinction, an open distinction beyond what its joins use (lesson 8.1), make
+5, 10, 15, 25, 40, 65, … knots in successive rounds: each round as many as
+the two before it together, five times the Fibonacci numbers. So the count
+grows by the golden ratio a round, and no ring of live knots within five
+places grows faster (proved, refereed,
 [RING-CORES-20261119-001](research/RING-CORES-20261119-001/ring_cores.md)).
 The owner wondered where such a structure might serve: "if you 'met' this
 logical structure with something like a plant's DNA sequence and physical
@@ -2708,16 +2894,6 @@ using some sort of meeting pattern to create base-realities (our reality, a
 number line, Cartesian plane)." In the guide's words the aim is a base built
 from knots alone, in which space, distance and dimension are earned from
 counts rather than assumed. No such base has been built yet.
-
-The lessons below state in plain words the picture that the growth studies of
-17 to 19 November 2026 support. A law is applied to a few knots that share
-distinctions and left to build. The lessons ask what kinds of growth come out,
-how a growth that blows up is to be read, and how much of what grows its
-distances carry. They build on lessons 2.4 (distance), 4.6 (dimension, read
-from how fast balls grow) and 7.3 (samples and weightings). Each claim says
-whether it is proved, computed or open, and a result is given as settled only
-once its referee has confirmed it. Lesson 8.7 adds the generator studies of 20
-to 23 November.
 
 ### 8.1 Growing in rounds
 
@@ -3392,7 +3568,7 @@ November he asked again, and wider: "have we made generators yet? Like
 structures that output other structures that either die, or live, or combine
 with other patterns? This is like logic of cellular biology where you have
 machines printing stuff, and cells reproducing to receive and send signals".
-Of the golden-ratio eddy of this chapter's introduction he asked: "Is there a
+Of the golden-ratio eddy of lesson 8.0 he asked: "Is there a
 way to actually use the golden ratio currently as a means of growth? Like is
 there a 'connector' or 'gadget' of sorts we could use?" This lesson says what
 the record holds on each question and what it lacks. Its last part records the
@@ -3438,7 +3614,7 @@ not recomputed, and the nested case not checked).
   every knot can be reconstructed from the start (lesson 8.1's theorem);
   outside that class the fewest is open
   ([the generator's note](research/GENERATORS-20261120-001/source.md)). The web edition
-  shows this start among the growths at the head of the chapter. Its first
+  shows this start among the growths of lesson 8.0. Its first
   release lies far past what can be drawn there.
 - **Packets can combine while both go on.** In a start of 21 knots two packets
   are released in round 15 and make a shared knot in round 16, while each still
@@ -3675,9 +3851,9 @@ is a gadget for it, but nothing that carries it from one part to another.
   on the golden ring of five raises the rate to 1.7292. The ring's own line of
   knots keeps its counts exactly, 5, 10, 15, 25, 40, …; the knots that descend
   from the hung knot grow at the higher rate and are 70% of the births by round
-  16. Alone, that three-place knot closes after three rounds (this chapter's
-  introduction). Hung on a bare ring of five its line grows by 1.1347 a round,
-  the rate of x⁶ = x + 1. So a part that would finish alone is kept going by a
+  16. Alone, that three-place knot closes after three rounds (lesson 8.0).
+  Hung on a bare ring of five its line grows by 1.1347 a round, the rate of
+  x⁶ = x + 1. So a part that would finish alone is kept going by a
   ring, at a rate the ring sets.
 - **No connector.** Joining does not hand the golden ratio on, and rates do
   not multiply. Two golden rings of five joined by one shared distinction grow

@@ -9,7 +9,7 @@ paths and spaces, without assuming a space to start from.
 The repository has two layers:
 
 - **The introduction.** [INTUITIONS.md](INTUITIONS.md) teaches the program's
-  intuitions plainly, as a textbook whose seven chapters start from bits and
+  intuitions plainly, as a textbook whose eight chapters start from bits and
   rules. [THEORY.md](THEORY.md) states the thesis and the main
   claims, each labelled by how it is supported and linked to its evidence.
   [FINDINGS.md](FINDINGS.md) lists eleven findings we packaged for outside

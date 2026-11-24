@@ -4513,6 +4513,17 @@ that earlier records used in two senses.
   that holds it and, with each knot in it, every child of each of that knot's
   parents: the knots made alongside it. The intuition: a brood is one part's
   round, seen from the knots that round made.
+- **Ancestral common knot; ancestor-taking.** A common knot of two members
+  that is also a recorded ancestor of both and not the parent of both: the
+  knot through which two sets of descendants are joined. The owner's phrase
+  for it was "axis point", and afterwards perhaps "access point" (24 November
+  2026, assumption A241). **Ancestor-taking** is a law under which a birth
+  also takes a distinction that an ancestor of one of its parents holds, so
+  that the distinction gains a holder. Under the laws of lesson 8.1 a shared
+  distinction has two holders; where a birth may take a distinction that is
+  already shared, shared means held by two or more. A study of such laws was
+  frozen on 24 November 2026 and has no result yet
+  ([the request it answers](research/PARTS-MEET-AGAIN-20261124-001/owner_request.md)).
 - **Live roster.** What one round of the law reads: which junctions hold a
   loose distinction, how many, and which sets of them one junction meets
   (lesson 8.4). The growth records call it the growing end.

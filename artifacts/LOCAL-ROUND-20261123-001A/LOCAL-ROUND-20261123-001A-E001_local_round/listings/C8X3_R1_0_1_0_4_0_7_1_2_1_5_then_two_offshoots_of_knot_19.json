@@ -1,0 +1,164 @@
+{
+ "name": "C8X3 R1: (0,1) (0,4) (0,7) (1,2) (1,5), then two offshoots of knot 19",
+ "start": "C8X3",
+ "law_family": [
+  "RATION-3",
+  "CANCEL-WAIT"
+ ],
+ "cutoff": 1,
+ "law": "R1",
+ "order_images": [
+  [
+   0,
+   1
+  ],
+  [
+   0,
+   4
+  ],
+  [
+   0,
+   7
+  ],
+  [
+   1,
+   2
+  ],
+  [
+   1,
+   5
+  ],
+  [
+   19
+  ],
+  [
+   19
+  ]
+ ],
+ "listing": [
+  {
+   "birth": 1,
+   "run_knot": 19,
+   "parents_run": [
+    0,
+    1
+   ],
+   "parents_images": [
+    0,
+    1
+   ],
+   "fresh": 3,
+   "closing_bit": false,
+   "matches_reference_knot": 19,
+   "reference_round": 1,
+   "kind": "join"
+  },
+  {
+   "birth": 2,
+   "run_knot": 20,
+   "parents_run": [
+    0,
+    4
+   ],
+   "parents_images": [
+    0,
+    4
+   ],
+   "fresh": 3,
+   "closing_bit": false,
+   "matches_reference_knot": 20,
+   "reference_round": 1,
+   "kind": "join"
+  },
+  {
+   "birth": 3,
+   "run_knot": 21,
+   "parents_run": [
+    0,
+    7
+   ],
+   "parents_images": [
+    0,
+    7
+   ],
+   "fresh": 3,
+   "closing_bit": false,
+   "matches_reference_knot": 21,
+   "reference_round": 1,
+   "kind": "join"
+  },
+  {
+   "birth": 4,
+   "run_knot": 22,
+   "parents_run": [
+    1,
+    2
+   ],
+   "parents_images": [
+    1,
+    2
+   ],
+   "fresh": 3,
+   "closing_bit": false,
+   "matches_reference_knot": 22,
+   "reference_round": 1,
+   "kind": "join"
+  },
+  {
+   "birth": 5,
+   "run_knot": 23,
+   "parents_run": [
+    1,
+    5
+   ],
+   "parents_images": [
+    1,
+    5
+   ],
+   "fresh": 3,
+   "closing_bit": false,
+   "matches_reference_knot": 23,
+   "reference_round": 1,
+   "kind": "join"
+  },
+  {
+   "birth": 6,
+   "run_knot": 24,
+   "parents_run": [
+    19
+   ],
+   "parents_images": [
+    19
+   ],
+   "fresh": 3,
+   "closing_bit": false,
+   "matches_reference_knot": 84,
+   "reference_round": 4,
+   "kind": "offshoot"
+  },
+  {
+   "birth": 7,
+   "run_knot": 25,
+   "parents_run": [
+    19
+   ],
+   "parents_images": [
+    19
+   ],
+   "fresh": 3,
+   "closing_bit": false,
+   "matches_reference_knot": null,
+   "reference_round": null,
+   "kind": "offshoot",
+   "reference_children_with_these_parents": [
+    {
+     "knot": 84,
+     "fresh": 3,
+     "round": 4,
+     "already_image": true
+    }
+   ]
+  }
+ ],
+ "ends": "mismatch at birth 7"
+}

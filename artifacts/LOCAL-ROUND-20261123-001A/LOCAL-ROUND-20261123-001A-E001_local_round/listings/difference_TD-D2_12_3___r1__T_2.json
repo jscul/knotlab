@@ -1,0 +1,164 @@
+{
+ "run": "TD-D2(12,3)__r1__T(2)",
+ "disclosed": 24,
+ "difference": "least 7, disclosed 24",
+ "least_differing_order": {
+  "births": 7,
+  "exact": true,
+  "order": [
+   [
+    0
+   ],
+   [
+    0,
+    1
+   ],
+   [
+    0,
+    11
+   ],
+   [
+    1
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    24
+   ],
+   [
+    24
+   ]
+  ],
+  "event": [
+   "birth",
+   [
+    24
+   ],
+   3
+  ],
+  "listing": [
+   {
+    "birth": 1,
+    "run_knot": 24,
+    "parents_run": [
+     0
+    ],
+    "parents_images": [
+     0
+    ],
+    "fresh": 3,
+    "closing_bit": false,
+    "matches_reference_knot": 36,
+    "reference_round": 1,
+    "kind": "offshoot"
+   },
+   {
+    "birth": 2,
+    "run_knot": 25,
+    "parents_run": [
+     0,
+     1
+    ],
+    "parents_images": [
+     0,
+     1
+    ],
+    "fresh": 3,
+    "closing_bit": false,
+    "matches_reference_knot": 24,
+    "reference_round": 1,
+    "kind": "join"
+   },
+   {
+    "birth": 3,
+    "run_knot": 26,
+    "parents_run": [
+     0,
+     11
+    ],
+    "parents_images": [
+     0,
+     11
+    ],
+    "fresh": 3,
+    "closing_bit": false,
+    "matches_reference_knot": 25,
+    "reference_round": 1,
+    "kind": "join"
+   },
+   {
+    "birth": 4,
+    "run_knot": 27,
+    "parents_run": [
+     1
+    ],
+    "parents_images": [
+     1
+    ],
+    "fresh": 3,
+    "closing_bit": false,
+    "matches_reference_knot": 37,
+    "reference_round": 1,
+    "kind": "offshoot"
+   },
+   {
+    "birth": 5,
+    "run_knot": 28,
+    "parents_run": [
+     1,
+     2
+    ],
+    "parents_images": [
+     1,
+     2
+    ],
+    "fresh": 3,
+    "closing_bit": false,
+    "matches_reference_knot": 26,
+    "reference_round": 1,
+    "kind": "join"
+   },
+   {
+    "birth": 6,
+    "run_knot": 29,
+    "parents_run": [
+     25
+    ],
+    "parents_images": [
+     24
+    ],
+    "fresh": 3,
+    "closing_bit": false,
+    "matches_reference_knot": 132,
+    "reference_round": 3,
+    "kind": "offshoot"
+   },
+   {
+    "birth": 7,
+    "run_knot": 30,
+    "parents_run": [
+     25
+    ],
+    "parents_images": [
+     24
+    ],
+    "fresh": 3,
+    "closing_bit": false,
+    "matches_reference_knot": null,
+    "reference_round": null,
+    "kind": "offshoot",
+    "reference_children_with_these_parents": [
+     {
+      "knot": 132,
+      "fresh": 3,
+      "round": 3,
+      "already_image": true
+     }
+    ]
+   }
+  ],
+  "waiter_surplus_offshoot": true
+ }
+}

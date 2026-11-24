@@ -1,0 +1,21 @@
+{
+ "artifact_id": "SETTING-AS-REREAD-20261123-001A-E001",
+ "kind": "experiment",
+ "branch": "code_analysis",
+ "evidence_stage": "exploratory",
+ "status": "Frozen",
+ "question": "In every structure with a hidden excess so far, the two setting births were knots added by hand. Rule Q of the last epic makes a birth of exactly that form: a one-parent birth takes its parent's loose distinction and one distinction the parent shares, and the rule does not say which. Is there a structure on which one round of rule Q makes exactly the two observers' setting births, so that the setting is which shared distinction each birth takes, and the excess stays hidden? The thread built one by hand. This study checks it with an independent implementation and measures what the claim contains: what depends on the far choice, what is left when the old words' distribution is held fixed, and whether any knot can be left out.",
+ "inputs": "The structure written in the pre-registration; rule Q as frozen in ONE-PARENT-REREAD-20261123-001A and that ticket's engine; the recorded scorer; the recorded driver and sparse draws for the code check.",
+ "forbidden_inputs": "Any definition changed after a value is seen; the thread's own check scripts as code (they may be read only after the implementer's numbers are written).",
+ "primary_observable": "The tables of checks (a) to (f) of the pre-registration.",
+ "comparators_or_controls": "The old words' distribution held fixed at one choice; the structure with knots left out; the sign assignments of the parity knots.",
+ "resource_budget": "Each run under ten minutes and 12 GB on one CPU process.",
+ "first_executable_signal": "Row G of the predictions table.",
+ "decision_rule": "Each prediction is judged by its 'Fails when' column.",
+ "stop_rule": "One script for the checks and one for the report. The study stops when checks (a) to (f) are done. It reports every table of (b) to (f) in full. Every run stays under ten minutes and under 12 GB. Nothing is tuned after values are seen; a changed definition is reported with both versions. Deviations go in `deviations.md` in the experiment family. Results are referee pending.",
+ "nonclaims": "An exploratory check of one hand-built structure. The structure, the reading of an open choice as a setting, and the weighting are scaffolds; nothing here says a growth law makes the structure.",
+ "preregistration": "research/SETTING-AS-REREAD-20261123-001A/preregistration.md",
+ "preregistration_sha256": "2fe6c5101d0fdcd92fa24ed9507abad7104872c66139e4d73c9b4ecb34540cd9",
+ "design_advisor": "research/SETTING-AS-REREAD-20261123-001/advisor/answer.json",
+ "frozen_utc": "2026-11-24T06:49:11.209448+00:00"
+}

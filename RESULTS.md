@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**403 current results** and 5 superseded ones, from 625 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**403 current results** and 5 superseded ones, from 626 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -31,7 +31,7 @@ How to read an entry:
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 26 results
 - [Notes](#notes): 6 self-contained notes
-- [Epics](#epics): all 625 epics with their closures
+- [Epics](#epics): all 626 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -1976,5 +1976,6 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-23 | Births that take a shared distinction, and both laws in one growth (`REREAD-BIRTHS-AND-MIXED-LAWS-20261123-001`) | [closure](proofs/REREAD-BIRTHS-AND-MIXED-LAWS-20261123-001Z/REREAD-BIRTHS-AND-MIXED-LAWS-20261123-001Z-P001_synthesis/proof.md) | [folder](research/REREAD-BIRTHS-AND-MIXED-LAWS-20261123-001/) |
 | 2026-11-23 | Six leads from the review of 23 November (`REVIEW-LEADS-20261123-001`) | [closure](proofs/REVIEW-LEADS-20261123-001Z/REVIEW-LEADS-20261123-001Z-P001_synthesis/proof.md) | [folder](research/REVIEW-LEADS-20261123-001/) |
 | 2026-11-23 | A ring in balance: a ring of knots that returns and gives parts off, its references, and its clock (`RING-IN-BALANCE-20261123-001`) | [closure](proofs/RING-IN-BALANCE-20261123-001Z/RING-IN-BALANCE-20261123-001Z-P001_synthesis/proof.md) | [folder](research/RING-IN-BALANCE-20261123-001/) |
+| 2026-11-23 | Both setting births as births the rule makes (`SETTING-AS-REREAD-20261123-001`) | — | [folder](research/SETTING-AS-REREAD-20261123-001/) |
 | 2026-11-23 | What a third holder gives (`THIRD-HOLDER-20261123-001`) | [closure](proofs/THIRD-HOLDER-20261123-001Z/THIRD-HOLDER-20261123-001Z-P001_synthesis/proof.md) | [folder](research/THIRD-HOLDER-20261123-001/) |
 

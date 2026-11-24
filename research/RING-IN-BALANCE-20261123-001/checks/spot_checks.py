@@ -26,3 +26,22 @@ for shortage in ("CANCEL-WAIT", "CANCEL-BUD", "CANCEL-END"):
         st = t.state
         out.append(collections.Counter(len(p) for p in R.parts(st)).get(2, 0))
     print(f"FLOOR0 with {shortage} (the pilot's names): two-member parts after rounds 1 to 10: {out}")
+
+# (3) two census starts of ticket B, in the thread's own program under the two added rules: when is a part of six
+# members holding three each, joinable in one cycle, present?
+print()
+own = {"CAP": 3}; exec(compile(src, "own_cap", "exec"), own)
+for label, stars in (("five knots, one dead (the smallest start with a dead knot that returns)", [[0, 6, 7, 8], [0, 1, 2, 3, 9], [1, 4, 5], [2, 4, 10, 11, 12], [3, 5, 13, 14, 15]]),
+                     ("six knots, every knot live, a tree", [[0, 1, 2, 5], [0, 6, 7, 8], [1, 9, 10, 11], [2, 3, 4, 12, 13, 14], [3, 15, 16], [4, 17, 18]])):
+    holders = collections.defaultdict(list)
+    for k, star in enumerate(stars):
+        for d in star: holders[d].append(k)
+    w = own["World"](); ids = [w.knot(sum(len(holders[d]) == 1 for d in star)) for star in stars]
+    for d, hs in holders.items():
+        if len(hs) == 2: w.join(ids[hs[0]], ids[hs[1]])
+    live = [k for k in ids if w.use[k] > 0]; seen = []; counts = []
+    for r in range(1, 10):
+        live = own["step"](w, live, "CAP")
+        ps = own["parts"](w, live); counts.append(f"{len(live)}/{len(ps)}")
+        if any(p == (6, (3,) * 6, 6) for p in ps): seen.append(r)
+    print(f"{label}: members/parts after rounds 1 to 9: {' '.join(counts)}; a cycle of six holding three each after rounds {seen}")

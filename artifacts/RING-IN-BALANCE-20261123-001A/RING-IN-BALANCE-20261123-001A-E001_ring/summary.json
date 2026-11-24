@@ -1,0 +1,1020 @@
+{
+ "resources": {
+  "a1": {
+   "peak_rss_mb": 52.5,
+   "seconds": 4.4
+  },
+  "a2": {
+   "peak_rss_mb": 48.5,
+   "seconds": 2.9
+  },
+  "a3": {
+   "peak_rss_mb": 53.0,
+   "seconds": 1.3
+  },
+  "a4": {
+   "peak_rss_mb": 85.1,
+   "seconds": 42.1
+  },
+  "a5": {
+   "peak_rss_mb": 38.5,
+   "seconds": 0.6
+  },
+  "a6": {
+   "peak_rss_mb": 33.1,
+   "seconds": 0.0
+  },
+  "a7": {
+   "peak_rss_mb": 177.9,
+   "seconds": 9.7
+  },
+  "gate": {
+   "peak_rss_mb": 51.7,
+   "seconds": 1.8
+  },
+  "traces": {
+   "peak_rss_mb": 49.4,
+   "seconds": 1.8
+  }
+ },
+ "verdicts": {
+  "G": {
+   "numbers": "all items computed by this engine pass (9 gate items; self-checks pass: 4051 rounds vs naive implementation, 305 structures vs brute force); the comparison with the pilot programs is left to the thread (a1_trace.json)",
+   "verdict": "HOLDS"
+  },
+  "P1": {
+   "numbers": "36 (n, t) pairs checked, n = 5..15 odd, t = 2..12 even; failures: none",
+   "verdict": "HOLDS"
+  },
+  "P10": {
+   "numbers": "Ring(5,3): jammed, waited knots of round 2 short in rounds 3..12: True, return giving parts off: False; Ring(7,3): jammed, waited knots of round 2 short in rounds 3..12: True, return giving parts off: False; Ring(9,3): jammed, waited knots of round 2 short in rounds 3..12: True, return giving parts off: False; failures: none",
+   "verdict": "HOLDS"
+  },
+  "P11": {
+   "numbers": "Ring(5,3)|CAP-3 from s=2, 6 returns, off [2]; Ring(5,3)|CAP-4 from s=3, 6 returns, off [5]; Ring(5,3)|CAP-5 from s=4, 4 returns, off [9] (cut off at round 13 of 18); Ring(5,3)|CAP-6 from s=5, 3 returns, off [14] (cut off at round 12 of 20); Ring(5,3)|CAP-7 from s=6, 2 returns, off [20] (cut off at round 11 of 22); Ring(7,3)|CAP-3 from s=2, 6 returns, off [2]; Ring(7,3)|CAP-4 from s=3, 6 returns, off [5]; Ring(7,3)|CAP-5 from s=4, 4 returns, off [9] (cut off at round 13 of 18); Ring(7,3)|CAP-6 from s=5, 3 returns, off [14] (cut off at round 11 of 20); Ring(7,3)|CAP-7 from s=6, 2 returns, off [20] (cut off at round 11 of 22); failures: none",
+   "verdict": "HOLDS"
+  },
+  "P2": {
+   "numbers": "30 (n, t) pairs checked (t = 2..10; t = 12 needs round 14 > R, D8: 6 not checkable); each gave n + 1 parts, one the same as the waited part, n parts of two members h = 2 in one met set; failures: none",
+   "verdict": "HOLDS"
+  },
+  "P3": {
+   "literal_reading_b": {
+    "failures": [
+     [
+      "Ring(5,3)|two",
+      0,
+      [
+       2,
+       3
+      ],
+      false
+     ],
+     [
+      "Ring(5,3)|two",
+      1,
+      [
+       3,
+       4
+      ],
+      false
+     ],
+     [
+      "Ring(5,3)|two",
+      2,
+      [
+       4,
+       5
+      ],
+      false
+     ],
+     [
+      "Ring(5,3)|two",
+      3,
+      [
+       5,
+       6
+      ],
+      false
+     ],
+     [
+      "Ring(5,3)|two",
+      4,
+      [
+       6,
+       7
+      ],
+      false
+     ],
+     [
+      "Ring(5,3)|two",
+      5,
+      [
+       7,
+       8
+      ],
+      false
+     ],
+     [
+      "Ring(5,3)|two",
+      6,
+      [
+       8,
+       9
+      ],
+      false
+     ],
+     [
+      "Ring(5,3)|two",
+      7,
+      [
+       9,
+       10
+      ],
+      false
+     ],
+     [
+      "Ring(5,3)|two",
+      8,
+      [
+       10,
+       11
+      ],
+      false
+     ],
+     [
+      "Ring(5,3)|two",
+      9,
+      [
+       12
+      ],
+      true
+     ],
+     [
+      "Ring(7,3)|two",
+      0,
+      [
+       2,
+       3
+      ],
+      false
+     ],
+     [
+      "Ring(7,3)|two",
+      1,
+      [
+       3,
+       4
+      ],
+      false
+     ],
+     [
+      "Ring(7,3)|two",
+      2,
+      [
+       4,
+       5
+      ],
+      false
+     ],
+     [
+      "Ring(7,3)|two",
+      3,
+      [
+       5,
+       6
+      ],
+      false
+     ],
+     [
+      "Ring(7,3)|two",
+      4,
+      [
+       6,
+       7
+      ],
+      false
+     ],
+     [
+      "Ring(7,3)|two",
+      5,
+      [
+       7,
+       8
+      ],
+      false
+     ],
+     [
+      "Ring(7,3)|two",
+      6,
+      [
+       8,
+       9
+      ],
+      false
+     ],
+     [
+      "Ring(7,3)|two",
+      7,
+      [
+       9,
+       10
+      ],
+      false
+     ],
+     [
+      "Ring(7,3)|two",
+      8,
+      [
+       10,
+       11
+      ],
+      false
+     ],
+     [
+      "Ring(7,3)|two",
+      9,
+      [
+       12
+      ],
+      true
+     ],
+     [
+      "Ring(9,3)|two",
+      0,
+      [
+       2,
+       3
+      ],
+      false
+     ],
+     [
+      "Ring(9,3)|two",
+      1,
+      [
+       3,
+       4
+      ],
+      false
+     ],
+     [
+      "Ring(9,3)|two",
+      2,
+      [
+       4,
+       5
+      ],
+      false
+     ],
+     [
+      "Ring(9,3)|two",
+      3,
+      [
+       5,
+       6
+      ],
+      false
+     ],
+     [
+      "Ring(9,3)|two",
+      4,
+      [
+       6,
+       7
+      ],
+      false
+     ],
+     [
+      "Ring(9,3)|two",
+      5,
+      [
+       7,
+       8
+      ],
+      false
+     ],
+     [
+      "Ring(9,3)|two",
+      6,
+      [
+       8,
+       9
+      ],
+      false
+     ],
+     [
+      "Ring(9,3)|two",
+      7,
+      [
+       9,
+       10
+      ],
+      false
+     ],
+     [
+      "Ring(9,3)|two",
+      8,
+      [
+       10,
+       11
+      ],
+      false
+     ],
+     [
+      "Ring(9,3)|two",
+      9,
+      [
+       12
+      ],
+      true
+     ]
+    ],
+    "verdict": "FAILS"
+   },
+   "numbers": "reading P3-a (D7): Ring(5,3): 30 parts followed (a), s = 0..10; Ring(7,3): 42 parts followed (a), s = 0..10; Ring(9,3): 54 parts followed (a), s = 0..10; failures: none",
+   "verdict": "HOLDS"
+  },
+  "P4": {
+   "numbers": "in balance from round 1 with period 2 through round 20, 2n members in 1 part after odd rounds and 3n in n + 1 parts after even rounds, every part that came apart made exactly one knot with no usable distinction and ended (Ring(11,3) 88+11 ended parts; Ring(13,3) 104+13 ended parts; Ring(15,3) 120+15 ended parts; Ring(5,3) 40+5 ended parts; Ring(7,3) 56+7 ended parts; Ring(9,3) 72+9 ended parts); failures: none",
+   "verdict": "HOLDS"
+  },
+  "P5": {
+   "numbers": "Ring(3,3): grows to the bound with no return found (no prediction); Ring(4,3): 0 returns giving parts off; Ring(6,3): 0 returns giving parts off; Ring(8,3): 2 parts after round 2 return every two rounds through 12 giving 4 off; Ring(10,3): 2 parts after round 2 return every two rounds through 12 giving 5 off; Ring(12,3): 2 parts after round 2 return every two rounds through 12 giving 6 off; Ring(14,3): 2 parts after round 2 return every two rounds through 12 giving 7 off; Ring(16,3): 2 parts after round 2 return every two rounds through 12 giving 8 off; failures: none",
+   "verdict": "HOLDS"
+  },
+  "P6": {
+   "numbers": "12 runs, 62280 knot tests by each method (rounds 0..12), 144 round extensions; failures: none",
+   "verdict": "HOLDS"
+  },
+  "P7": {
+   "numbers": "4 runs: closing exception never applied; births equal to parity at rounds 1..12; 1848 knot tests not-all-equal (rounds 0..6), 28032 SAT calls, all pass; failures: none",
+   "verdict": "HOLDS"
+  },
+  "P8": {
+   "a_counterexamples": [
+    [
+     "Ring(5,3)|FLOOR0/CANCEL-OFFSHOOT/RELEASE",
+     [
+      1,
+      2,
+      3
+     ],
+     {
+      "n_off": 2,
+      "off_sizes": [
+       1,
+       2
+      ],
+      "part_size": 2,
+      "period": 2,
+      "s": 2,
+      "t": 4
+     }
+    ],
+    [
+     "Ring(5,3)|FLOOR0/CANCEL-RETIRE/RELEASE",
+     [
+      2,
+      3
+     ],
+     {
+      "n_off": 1,
+      "off_sizes": [
+       2
+      ],
+      "part_size": 2,
+      "period": 2,
+      "s": 2,
+      "t": 4
+     }
+    ],
+    [
+     "Ring(5,3)|FLOOR1/CANCEL-OFFSHOOT/RELEASE",
+     [
+      1,
+      2,
+      3
+     ],
+     {
+      "n_off": 2,
+      "off_sizes": [
+       1,
+       2
+      ],
+      "part_size": 2,
+      "period": 2,
+      "s": 2,
+      "t": 4
+     }
+    ],
+    [
+     "Ring(5,3)|FLOOR1/CANCEL-RETIRE/RELEASE",
+     [
+      2,
+      3
+     ],
+     {
+      "n_off": 1,
+      "off_sizes": [
+       2
+      ],
+      "part_size": 2,
+      "period": 2,
+      "s": 2,
+      "t": 4
+     }
+    ],
+    [
+     "Ring(5,3)|ONE-FEWER/CANCEL-OFFSHOOT/RELEASE",
+     [
+      1,
+      2,
+      3
+     ],
+     {
+      "n_off": 2,
+      "off_sizes": [
+       1,
+       2
+      ],
+      "part_size": 2,
+      "period": 2,
+      "s": 2,
+      "t": 4
+     }
+    ],
+    [
+     "Ring(5,3)|ONE-FEWER/CANCEL-RETIRE/RELEASE",
+     [
+      2,
+      3
+     ],
+     {
+      "n_off": 1,
+      "off_sizes": [
+       2
+      ],
+      "part_size": 2,
+      "period": 2,
+      "s": 2,
+      "t": 4
+     }
+    ],
+    [
+     "Ring(5,3)|RATION-4/CANCEL-OFFSHOOT/RELEASE",
+     [
+      7,
+      9
+     ],
+     {
+      "n_off": 12,
+      "off_sizes": [
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       7,
+       7,
+       7,
+       7,
+       7,
+       10
+      ],
+      "part_size": 7,
+      "period": 2,
+      "s": 3,
+      "t": 5
+     }
+    ],
+    [
+     "Ring(5,3)|RATION-4/CANCEL-RETIRE/RELEASE",
+     [
+      7,
+      9
+     ],
+     {
+      "n_off": 5,
+      "off_sizes": [
+       7,
+       7,
+       7,
+       7,
+       7
+      ],
+      "part_size": 7,
+      "period": 2,
+      "s": 3,
+      "t": 5
+     }
+    ],
+    [
+     "Ring(7,3)|FLOOR0/CANCEL-OFFSHOOT/RELEASE",
+     [
+      1,
+      2,
+      3
+     ],
+     {
+      "n_off": 2,
+      "off_sizes": [
+       1,
+       2
+      ],
+      "part_size": 2,
+      "period": 2,
+      "s": 2,
+      "t": 4
+     }
+    ],
+    [
+     "Ring(7,3)|FLOOR0/CANCEL-RETIRE/RELEASE",
+     [
+      2,
+      3
+     ],
+     {
+      "n_off": 1,
+      "off_sizes": [
+       2
+      ],
+      "part_size": 2,
+      "period": 2,
+      "s": 2,
+      "t": 4
+     }
+    ],
+    [
+     "Ring(7,3)|FLOOR1/CANCEL-OFFSHOOT/RELEASE",
+     [
+      1,
+      2,
+      3
+     ],
+     {
+      "n_off": 2,
+      "off_sizes": [
+       1,
+       2
+      ],
+      "part_size": 2,
+      "period": 2,
+      "s": 2,
+      "t": 4
+     }
+    ],
+    [
+     "Ring(7,3)|FLOOR1/CANCEL-RETIRE/RELEASE",
+     [
+      2,
+      3
+     ],
+     {
+      "n_off": 1,
+      "off_sizes": [
+       2
+      ],
+      "part_size": 2,
+      "period": 2,
+      "s": 2,
+      "t": 4
+     }
+    ],
+    [
+     "Ring(7,3)|ONE-FEWER/CANCEL-OFFSHOOT/RELEASE",
+     [
+      1,
+      2,
+      3
+     ],
+     {
+      "n_off": 2,
+      "off_sizes": [
+       1,
+       2
+      ],
+      "part_size": 2,
+      "period": 2,
+      "s": 2,
+      "t": 4
+     }
+    ],
+    [
+     "Ring(7,3)|ONE-FEWER/CANCEL-RETIRE/RELEASE",
+     [
+      2,
+      3
+     ],
+     {
+      "n_off": 1,
+      "off_sizes": [
+       2
+      ],
+      "part_size": 2,
+      "period": 2,
+      "s": 2,
+      "t": 4
+     }
+    ],
+    [
+     "Ring(7,3)|RATION-4/CANCEL-OFFSHOOT/RELEASE",
+     [
+      7,
+      9
+     ],
+     {
+      "n_off": 12,
+      "off_sizes": [
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       7,
+       7,
+       7,
+       7,
+       7,
+       10
+      ],
+      "part_size": 7,
+      "period": 2,
+      "s": 3,
+      "t": 5
+     }
+    ],
+    [
+     "Ring(7,3)|RATION-4/CANCEL-RETIRE/RELEASE",
+     [
+      7,
+      9
+     ],
+     {
+      "n_off": 5,
+      "off_sizes": [
+       7,
+       7,
+       7,
+       7,
+       7
+      ],
+      "part_size": 7,
+      "period": 2,
+      "s": 3,
+      "t": 5
+     }
+    ],
+    [
+     "Ring(9,3)|FLOOR0/CANCEL-OFFSHOOT/RELEASE",
+     [
+      1,
+      2,
+      3
+     ],
+     {
+      "n_off": 2,
+      "off_sizes": [
+       1,
+       2
+      ],
+      "part_size": 2,
+      "period": 2,
+      "s": 2,
+      "t": 4
+     }
+    ],
+    [
+     "Ring(9,3)|FLOOR0/CANCEL-RETIRE/RELEASE",
+     [
+      2,
+      3
+     ],
+     {
+      "n_off": 1,
+      "off_sizes": [
+       2
+      ],
+      "part_size": 2,
+      "period": 2,
+      "s": 2,
+      "t": 4
+     }
+    ],
+    [
+     "Ring(9,3)|FLOOR1/CANCEL-OFFSHOOT/RELEASE",
+     [
+      1,
+      2,
+      3
+     ],
+     {
+      "n_off": 2,
+      "off_sizes": [
+       1,
+       2
+      ],
+      "part_size": 2,
+      "period": 2,
+      "s": 2,
+      "t": 4
+     }
+    ],
+    [
+     "Ring(9,3)|FLOOR1/CANCEL-RETIRE/RELEASE",
+     [
+      2,
+      3
+     ],
+     {
+      "n_off": 1,
+      "off_sizes": [
+       2
+      ],
+      "part_size": 2,
+      "period": 2,
+      "s": 2,
+      "t": 4
+     }
+    ],
+    [
+     "Ring(9,3)|ONE-FEWER/CANCEL-OFFSHOOT/RELEASE",
+     [
+      1,
+      2,
+      3
+     ],
+     {
+      "n_off": 2,
+      "off_sizes": [
+       1,
+       2
+      ],
+      "part_size": 2,
+      "period": 2,
+      "s": 2,
+      "t": 4
+     }
+    ],
+    [
+     "Ring(9,3)|ONE-FEWER/CANCEL-RETIRE/RELEASE",
+     [
+      2,
+      3
+     ],
+     {
+      "n_off": 1,
+      "off_sizes": [
+       2
+      ],
+      "part_size": 2,
+      "period": 2,
+      "s": 2,
+      "t": 4
+     }
+    ],
+    [
+     "Ring(9,3)|RATION-4/CANCEL-OFFSHOOT/RELEASE",
+     [
+      7,
+      9
+     ],
+     {
+      "n_off": 12,
+      "off_sizes": [
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       7,
+       7,
+       7,
+       7,
+       7,
+       10
+      ],
+      "part_size": 7,
+      "period": 2,
+      "s": 3,
+      "t": 5
+     }
+    ],
+    [
+     "Ring(9,3)|RATION-4/CANCEL-RETIRE/RELEASE",
+     [
+      7,
+      9
+     ],
+     {
+      "n_off": 5,
+      "off_sizes": [
+       7,
+       7,
+       7,
+       7,
+       7
+      ],
+      "part_size": 7,
+      "period": 2,
+      "s": 3,
+      "t": 5
+     }
+    ]
+   ],
+   "b_counterexamples": [
+    [
+     "Ring(5,3)|FLOOR0/CANCEL-WAIT/RELEASE",
+     "expected none",
+     [
+      1,
+      2,
+      3
+     ],
+     {
+      "n_off": 2,
+      "off_sizes": [
+       1,
+       2
+      ],
+      "part_size": 2,
+      "period": 2,
+      "s": 2,
+      "t": 4
+     }
+    ],
+    [
+     "Ring(5,3)|FLOOR1/CANCEL-WAIT/RELEASE",
+     "expected none",
+     [
+      1,
+      2,
+      3
+     ],
+     {
+      "n_off": 2,
+      "off_sizes": [
+       1,
+       2
+      ],
+      "part_size": 2,
+      "period": 2,
+      "s": 2,
+      "t": 4
+     }
+    ],
+    [
+     "Ring(7,3)|FLOOR0/CANCEL-WAIT/RELEASE",
+     "expected none",
+     [
+      1,
+      2,
+      3
+     ],
+     {
+      "n_off": 2,
+      "off_sizes": [
+       1,
+       2
+      ],
+      "part_size": 2,
+      "period": 2,
+      "s": 2,
+      "t": 4
+     }
+    ],
+    [
+     "Ring(7,3)|FLOOR1/CANCEL-WAIT/RELEASE",
+     "expected none",
+     [
+      1,
+      2,
+      3
+     ],
+     {
+      "n_off": 2,
+      "off_sizes": [
+       1,
+       2
+      ],
+      "part_size": 2,
+      "period": 2,
+      "s": 2,
+      "t": 4
+     }
+    ],
+    [
+     "Ring(9,3)|FLOOR0/CANCEL-WAIT/RELEASE",
+     "expected none",
+     [
+      1,
+      2,
+      3
+     ],
+     {
+      "n_off": 2,
+      "off_sizes": [
+       1,
+       2
+      ],
+      "part_size": 2,
+      "period": 2,
+      "s": 2,
+      "t": 4
+     }
+    ],
+    [
+     "Ring(9,3)|FLOOR1/CANCEL-WAIT/RELEASE",
+     "expected none",
+     [
+      1,
+      2,
+      3
+     ],
+     {
+      "n_off": 2,
+      "off_sizes": [
+       1,
+       2
+      ],
+      "part_size": 2,
+      "period": 2,
+      "s": 2,
+      "t": 4
+     }
+    ]
+   ],
+   "ext_fail": [
+    [
+     "Ring(5,3)|ONE-FEWER/CANCEL-OFFSHOOT/RELEASE",
+     4
+    ],
+    [
+     "Ring(7,3)|ONE-FEWER/CANCEL-OFFSHOOT/RELEASE",
+     4
+    ],
+    [
+     "Ring(9,3)|ONE-FEWER/CANCEL-OFFSHOOT/RELEASE",
+     4
+    ]
+   ],
+   "knot_fail": [
+    [
+     "Ring(5,3)|ONE-FEWER/CANCEL-OFFSHOOT/RELEASE",
+     4,
+     true
+    ],
+    [
+     "Ring(7,3)|ONE-FEWER/CANCEL-OFFSHOOT/RELEASE",
+     4,
+     true
+    ],
+    [
+     "Ring(9,3)|ONE-FEWER/CANCEL-OFFSHOOT/RELEASE",
+     4,
+     true
+    ]
+   ],
+   "numbers": "(a) 24 of 180 runs with STALL / CANCEL-OFFSHOOT / CANCEL-RETIRE / NO-OFFSHOOT have a part returning giving parts off; (b) 6 stated CANCEL-WAIT cases come out otherwise",
+   "ration4": [
+    [
+     "Ring(5,3)|RATION-4/CANCEL-WAIT/RELEASE",
+     true,
+     [
+      3,
+      5,
+      7,
+      9,
+      15
+     ]
+    ],
+    [
+     "Ring(7,3)|RATION-4/CANCEL-WAIT/RELEASE",
+     true,
+     [
+      3,
+      7,
+      9,
+      21
+     ]
+    ],
+    [
+     "Ring(9,3)|RATION-4/CANCEL-WAIT/RELEASE",
+     true,
+     [
+      7,
+      9,
+      27
+     ]
+    ]
+   ],
+   "verdict": "FAILS"
+  },
+  "P9": {
+   "numbers": "Ring(5,2), Ring(7,2) under both laws: the same roster after every round from 1 on, one part of n members with h = 2; failures: none.  Reported: {'Ring(5,4)|three': 'returns giving parts off', 'Ring(5,4)|two': 'returns giving parts off', 'Ring(5,5)|three': 'jammed', 'Ring(5,5)|two': 'jammed', 'Ring(7,4)|three': 'returns giving parts off', 'Ring(7,4)|two': 'returns giving parts off', 'Ring(7,5)|three': 'jammed', 'Ring(7,5)|two': 'jammed'}",
+   "verdict": "HOLDS"
+  }
+ }
+}

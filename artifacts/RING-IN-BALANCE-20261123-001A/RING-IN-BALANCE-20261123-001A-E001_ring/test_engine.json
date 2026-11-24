@@ -1,0 +1,67 @@
+{
+ "_all_ok": true,
+ "_seconds": 6.3,
+ "closed structure: rank and cut (reading D1) agree, both pass": {
+  "cut_fail": [],
+  "ok": true,
+  "rank_fail": []
+ },
+ "determinism: same run twice, identical output (in process)": {
+  "ok": true,
+  "runs": 5
+ },
+ "group rule vs subset enumeration (random met-set families)": {
+  "mismatches": 0,
+  "ok": true,
+  "trials": 3000
+ },
+ "knot tests vs brute-force allowed states (parity x3, NAE, ext.)": {
+  "knots": 1145,
+  "mismatches": [],
+  "ok": true,
+  "parity_failing_knots_seen": 82,
+  "structures": 305
+ },
+ "one full round vs naive implementation (named small cases)": {
+  "mismatches": [],
+  "ok": true,
+  "rounds_compared": 32
+ },
+ "one full round vs naive implementation (random starts, laws)": {
+  "distinct_laws": 460,
+  "mismatches": [],
+  "ok": true,
+  "rounds_compared": 4019
+ },
+ "planted failing parity knot: both methods fail it and agree": {
+  "brute": [
+   false,
+   false,
+   true
+  ],
+  "cut_fail": [
+   0,
+   1
+  ],
+  "disagree": [],
+  "ok": true,
+  "rank_fail": [
+   0,
+   1
+  ]
+ },
+ "roster sameness: exact on a 6-cycle vs two 3-cycles": {
+  "ok": true
+ },
+ "small not-all-equal case that fails": {
+  "brute": [
+   true,
+   false,
+   true
+  ],
+  "ok": true,
+  "sat_fail": [
+   1
+  ]
+ }
+}

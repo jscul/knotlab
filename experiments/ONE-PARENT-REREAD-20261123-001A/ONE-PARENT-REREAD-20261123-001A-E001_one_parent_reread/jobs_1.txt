@@ -1,0 +1,34 @@
+q_sources.py --law nae
+q_draws.py --law nae --arm 0
+q_draws.py --law nae --arm 1
+q_draws.py --law nae --arm 2
+q_draws.py --law nae --arm 3
+q_draws.py --law parity --arm 0
+q_draws.py --law parity --arm 1
+q_draws.py --law parity --arm 2
+q_draws.py --law parity --arm 3
+q_census.py --lo 0 --hi 1000
+q_census.py --lo 1000 --hi 2000
+q_census.py --lo 2000 --hi 3000
+q_census.py --lo 3000 --hi 4000
+q_census.py --lo 4000 --hi 5000
+q_census.py --lo 5000 --hi 6000
+q_rowg.py --part off --law nae --what sources
+q_rowg.py --part off --law parity --what sources
+q_rowg.py --part off --law nae --what draws --arm 0
+q_rowg.py --part off --law nae --what draws --arm 1
+q_rowg.py --part off --law nae --what draws --arm 2
+q_rowg.py --part off --law nae --what draws --arm 3
+q_rowg.py --part off --law parity --what draws --arm 0
+q_rowg.py --part off --law parity --what draws --arm 1
+q_rowg.py --part off --law parity --what draws --arm 2
+q_rowg.py --part off --law parity --what draws --arm 3
+q_rowg.py --part stalled
+q_rowg.py --part parts500 --lo 0 --hi 250
+q_rowg.py --part parts500 --lo 250 --hi 500
+q_rowg.py --part reduction --lo 0 --hi 120
+q_rowg.py --part reduction --lo 120 --hi 227
+q_rowg.py --part addedknot --lo 0 --hi 1500
+q_rowg.py --part addedknot --lo 1500 --hi 3000
+q_rowg.py --part addedknot --lo 3000 --hi 4500
+q_rowg.py --part addedknot --lo 4500 --hi 6000

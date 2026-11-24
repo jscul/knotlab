@@ -1,0 +1,21 @@
+{
+ "artifact_id": "REREAD-BIRTHS-AND-MIXED-LAWS-20261123-001C-E001",
+ "kind": "experiment",
+ "branch": "code_analysis",
+ "evidence_stage": "exploratory",
+ "status": "Frozen",
+ "question": "Ticket B found that ordinary growth changes how much each old word counts and never which old words are allowed, and that every start it lifted to a hidden excess already held a distinction with three holders. Ticket A stated the re-reading move as a growth law, rule R: a knot that owes more loose distinctions than it holds pays the rest with shared ones. Two questions. Under rule R, does any part of a structure with a hidden excess gain one, and is the gain owed to a birth that took a shared distinction? And which single added knots, each with a fresh distinction so that no old word is forbidden, lift a part with at most two holders per distinction to a hidden excess?",
+ "inputs": "Ticket B's founder starts, targets and tables; ticket A's engine for rule R as it stands at this freeze (rlaw.py, sha256 29aa3d9112d4a12b2d7970756c455e11dd3ed7abaef99b85daa64f4c4222d8f8); the recorded scorer; the seeds the pre-registration fixes.",
+ "forbidden_inputs": "Any definition changed after a value is seen; any outcome of this study before the freeze.",
+ "primary_observable": "The items named under 'Runs and stop rule' of the pre-registration.",
+ "comparators_or_controls": "Ordinary growth on the same starts (ticket B); the gain with every paying birth changed to even parity; the code checks of row G.",
+ "resource_budget": "Each run under ten minutes and 12 GB on one CPU process.",
+ "first_executable_signal": "Row G of the predictions table.",
+ "decision_rule": "Each prediction is judged by its 'Fails when' column.",
+ "stop_rule": "One script per arm and one for the checks. The study stops when both arms are done. It reports: for arm 1, residual stalls at round 1 by class, histories and tables tested, gains by class, in full enumeration or drawn, through a payment or not, and the share of stalled three-holder starts that grow and gain beside ticket B's 34 of 7,957 under ordinary growth; for arm 2, the number of starts, sets and gains by each class of T, the least T that works, the largest score, and the smallest gain in full. Every run stays under ten minutes and under 12 GB; work is split into runs and nothing is stopped by the clock. Nothing is tuned after values are seen; a changed definition is reported with both versions. Deviations go in `deviations.md` in the experiment family. Results are referee pending.",
+ "nonclaims": "An exploratory study on named starts and bounded sizes. A rival growth law and an added knot are scaffolds and not the model; a census is finite and proves no all-size statement; a null on drawn choices or assignments is a sample.",
+ "preregistration": "research/REREAD-BIRTHS-AND-MIXED-LAWS-20261123-001C/preregistration.md",
+ "preregistration_sha256": "4887595485b99cce143b80da11c45a5e4a14e5f779f12dbc9dc4601f478f065a",
+ "design_advisor": "research/REREAD-BIRTHS-AND-MIXED-LAWS-20261123-001/advisor/answer_c.json",
+ "frozen_utc": "2026-11-24T02:57:57.306383+00:00"
+}

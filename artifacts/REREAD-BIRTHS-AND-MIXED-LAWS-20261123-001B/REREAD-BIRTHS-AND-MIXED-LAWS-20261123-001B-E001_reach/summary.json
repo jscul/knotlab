@@ -1,0 +1,2417 @@
+{
+ "build": {
+  "targets": 292,
+  "starts_grown": 49961,
+  "skipped": {
+   "no_observer": 1049680,
+   "not_connected": 102975
+  },
+  "seconds": 31.8,
+  "by_target_size": {
+   "7": 10,
+   "8": 139,
+   "9": 22,
+   "10": 20,
+   "11": 20,
+   "12": 31,
+   "13": 26,
+   "14": 16,
+   "15": 7,
+   "18": 1
+  },
+  "table_brute_equal": 292,
+  "table_brute_not_run": 0,
+  "starts_with_three_holders": 37814,
+  "starts_without_nae": 0,
+  "starts_D0_over_20": 8844,
+  "tags": {
+   "seven": [
+    0
+   ],
+   "pencil": [
+    291
+   ],
+   "eighteen": [
+    290
+   ]
+  }
+ },
+ "gates": {
+  "part1_targets_whole": {
+   "targets": 292,
+   "score_equal": 292,
+   "hidden": 292,
+   "recorded_M_compared": 290,
+   "recorded_M_equal": 290,
+   "evaluate_hidden": 292,
+   "evaluate_score_close": 292,
+   "ok": true
+  },
+  "part2_brute_force": {
+   "stages": 100,
+   "agree": 100,
+   "tried": 704,
+   "D": {
+    "min": 13,
+    "max": 24,
+    "mean": 20.74
+   },
+   "ok": true
+  },
+  "E1_from_stars": {
+   "compared": 12147,
+   "equal": 12147,
+   "ok": true
+  },
+  "E2_batch": {
+   "stages": 20,
+   "assignments": 880,
+   "equal": 880,
+   "ok": true
+  },
+  "E3_evaluator": {
+   "tables": 2004,
+   "hidden_equal": 2004,
+   "score_close": 2004,
+   "hidden": 1499,
+   "ok": true
+  },
+  "all_ok": true,
+  "seconds": 419.7
+ },
+ "sign_check": {
+  "tids": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   291
+  ],
+  "histories": 153,
+  "skipped_too_many_newborns": 32,
+  "stages": 361,
+  "stages_same_set": 253,
+  "stages_three_has_more": 108,
+  "stages_two_has_more": 0,
+  "stages_same_hidden_set": 293,
+  "excess_two": 0,
+  "excess_three": 0,
+  "best_hidden_two": 1.5000000000000002,
+  "best_hidden_three": 1.5000000000000002,
+  "examples": [
+   {
+    "si": 2,
+    "tid": 0,
+    "mask": 75,
+    "t": 2,
+    "two": 47,
+    "three": 84,
+    "only_three": 37
+   },
+   {
+    "si": 2,
+    "tid": 0,
+    "mask": 75,
+    "t": 3,
+    "two": 158,
+    "three": 455,
+    "only_three": 297
+   },
+   {
+    "si": 3,
+    "tid": 0,
+    "mask": 78,
+    "t": 2,
+    "two": 32,
+    "three": 48,
+    "only_three": 16
+   },
+   {
+    "si": 4,
+    "tid": 0,
+    "mask": 79,
+    "t": 2,
+    "two": 19,
+    "three": 28,
+    "only_three": 9
+   },
+   {
+    "si": 4,
+    "tid": 0,
+    "mask": 79,
+    "t": 3,
+    "two": 69,
+    "three": 176,
+    "only_three": 107
+   }
+  ],
+  "stages_by_t": {
+   "0": 153,
+   "1": 100,
+   "2": 88,
+   "3": 20
+  },
+  "three_has_more_by_t": {
+   "2": 88,
+   "3": 20
+  },
+  "seconds": 135.7,
+  "brute_force_confirmation": {
+   "example": {
+    "si": 2,
+    "tid": 0,
+    "mask": 75,
+    "t": 2,
+    "two": 47,
+    "three": 84,
+    "only_three": 37
+   },
+   "two_choice_tables": 47,
+   "three_only_found": {
+    "assignment": [
+     "even",
+     "even",
+     "odd",
+     "nae",
+     "nae",
+     "even",
+     "nae"
+    ],
+    "knots": [
+     "nae(x1,x2,s1)",
+     "nae(x1,x3,s2)",
+     "odd(x3,Ah1,Ah2)",
+     "odd(y1,y2,y3,s2)",
+     "even(s1,Ah2,f10)",
+     "even(x2,y3,f11,f12)",
+     "odd(Ah1,y2,f13,f14)",
+     "nae(y1,f15,f16)",
+     "nae(f10,f12,f14,f17)",
+     "even(f11,f16,f18)",
+     "nae(f13,f15,f19)"
+    ],
+    "table": [
+     32,
+     0,
+     0,
+     31,
+     0,
+     31,
+     32,
+     0,
+     31,
+     31,
+     32,
+     32,
+     32,
+     32,
+     31,
+     31,
+     63,
+     0,
+     0,
+     63,
+     0,
+     63,
+     63,
+     0,
+     63,
+     63,
+     63,
+     63,
+     63,
+     63,
+     63,
+     63,
+     63,
+     63,
+     63,
+     63,
+     63,
+     63,
+     63,
+     63,
+     0,
+     63,
+     63,
+     0,
+     63,
+     0,
+     0,
+     63,
+     31,
+     31,
+     32,
+     32,
+     32,
+     32,
+     31,
+     31,
+     0,
+     32,
+     31,
+     0,
+     31,
+     0,
+     0,
+     32
+    ]
+   }
+  }
+ },
+ "t1_c2": {
+  "histories": 49961,
+  "stages": 67303,
+  "grown_stages": 17342,
+  "tables": 2029891,
+  "grown_tables": 1979930,
+  "modes": {
+   "all": 49935,
+   "drawn": 26
+  },
+  "outcomes": {
+   "distinctions": 21398,
+   "rounds": 651,
+   "stall": 27887,
+   "closed": 25
+  },
+  "newborns_max": 13,
+  "histories_with_growth": 13205,
+  "support_shrinks": 0,
+  "support_changes": 0,
+  "starts_support_equal_to_target": 649,
+  "stage_tables_support_equal": 13035,
+  "proportional_tables": 3574,
+  "proportional_tables_grown": 3377,
+  "starts_already_proportional": 197,
+  "histories_reaching_only_by_growth": 34,
+  "targets_reached_only_by_growth": 32,
+  "reaching_histories_start_without_excess": 10,
+  "grown_stages_that_are_the_target": 30,
+  "histories_growing_the_target_itself": 30,
+  "targets_grown_exactly": 30,
+  "starts_with_excess": 630,
+  "excess_tables": 13052,
+  "grown_tables_from_excess_starts": 12782,
+  "grown_excess_tables_from_excess_starts": 12068,
+  "new_excess_tables": 354,
+  "histories_with_new_excess": 34,
+  "targets_with_new_excess": 28,
+  "smallest_new_excess": [
+   8,
+   12,
+   2236,
+   79,
+   239,
+   1
+  ],
+  "best_hidden_grown_from_starts_without_excess": [
+   2.037037037037037,
+   "55/27",
+   2566
+  ],
+  "best_hidden_grown_any": [
+   2.148148148148148,
+   "58/27",
+   1060
+  ],
+  "verified_by_full_enumeration": 322,
+  "verified_all_hidden_excess": true,
+  "verified_all_agree": true,
+  "separate_enumeration_checked": 254,
+  "separate_enumeration_equal": 254,
+  "not_enumerated": {
+   "32": 32
+  },
+  "verified_D": {
+   "12": 20,
+   "14": 41,
+   "18": 161,
+   "16": 2,
+   "20": 12,
+   "15": 1,
+   "17": 2,
+   "21": 14,
+   "19": 1,
+   "23": 4,
+   "24": 12,
+   "25": 4,
+   "26": 16,
+   "27": 16,
+   "29": 16
+  },
+  "new_excess_by_score": {
+   "55/27": 44,
+   "109/54": 237,
+   "757/378": 2,
+   "541/270": 3,
+   "1765/882": 4,
+   "127/63": 4,
+   "631/315": 4,
+   "883/441": 8,
+   "2059/1029": 16
+  },
+  "seven_knot_starts": 19,
+  "seven_knot_support_equal": 0,
+  "seven_knot_any_excess": 0,
+  "seven_knot_best_hidden": 1.4444444444444449,
+  "smallest_new_excess_in_full": {
+   "target": [
+    "nae(x1,x2,s1)",
+    "nae(x1,x3,s2)",
+    "even(x2,Ah1,Ah2)",
+    "odd(x3,Ah1,Ah2)",
+    "nae(y1,y2,Bh1)",
+    "even(y1,y3,Bh2)",
+    "odd(y2,s2,Bh2)",
+    "odd(y3,s1,Bh2)"
+   ],
+   "target_score": "55/27",
+   "start": [
+    "nae(x1,x2,s1)",
+    "nae(x1,x3,s2)",
+    "even(x2,Ah1,Ah2)",
+    "odd(x3,Ah1,Ah2)",
+    "even(y1,y3,Bh2)",
+    "odd(y2,s2,Bh2)",
+    "odd(y3,s1,Bh2)"
+   ],
+   "n_at": [
+    7,
+    8,
+    9,
+    11
+   ],
+   "D_at": [
+    11,
+    12,
+    14,
+    18
+   ],
+   "births": [
+    [
+     [
+      2,
+      1
+     ]
+    ],
+    [
+     [
+      1,
+      2
+     ]
+    ],
+    [
+     [
+      1,
+      2
+     ],
+     [
+      1,
+      2
+     ]
+    ]
+   ],
+   "stage": 1,
+   "stages": [
+    {
+     "D": 11,
+     "best_hidden_exact": "2",
+     "best_hidden_float": 2.0,
+     "distinct_tables": 1,
+     "excess": 0,
+     "hidden": 1,
+     "knots": 7,
+     "new_excess": 0,
+     "proportional": 0,
+     "support_equal": 1,
+     "support_size": [
+      16
+     ],
+     "t": 0,
+     "tables": 1
+    },
+    {
+     "D": 12,
+     "best_hidden_exact": "55/27",
+     "best_hidden_float": 2.037037037037037,
+     "distinct_tables": 2,
+     "excess": 1,
+     "hidden": 2,
+     "knots": 8,
+     "new_excess": 1,
+     "proportional": 1,
+     "support_equal": 2,
+     "support_size": [
+      16
+     ],
+     "t": 1,
+     "tables": 2
+    },
+    {
+     "D": 14,
+     "best_hidden_exact": "55/27",
+     "best_hidden_float": 2.037037037037037,
+     "distinct_tables": 2,
+     "excess": 2,
+     "hidden": 4,
+     "knots": 9,
+     "new_excess": 2,
+     "proportional": 2,
+     "support_equal": 4,
+     "support_size": [
+      16
+     ],
+     "t": 2,
+     "tables": 4
+    },
+    {
+     "D": 18,
+     "best_hidden_exact": "55/27",
+     "best_hidden_float": 2.037037037037037,
+     "distinct_tables": 2,
+     "excess": 8,
+     "hidden": 16,
+     "knots": 11,
+     "new_excess": 8,
+     "proportional": 8,
+     "support_equal": 16,
+     "support_size": [
+      16
+     ],
+     "t": 3,
+     "tables": 16
+    }
+   ],
+   "rows": [
+    {
+     "D": 12,
+     "eval_contraction": [
+      true,
+      true,
+      2.037037037037037,
+      "55/27"
+     ],
+     "full_enumeration": {
+      "arg": [
+       2,
+       8,
+       8,
+       14,
+       0
+      ],
+      "change": "0",
+      "distinctions_finished": 14,
+      "hidden": true,
+      "joint_equals_table": true,
+      "score": "55/27",
+      "score_equals_contraction": true,
+      "words": [
+       120,
+       108,
+       120,
+       108
+      ]
+     },
+     "kind": "proportional",
+     "knots": [
+      "nae(x1,x2,s1)",
+      "nae(x1,x3,s2)",
+      "even(x2,Ah1,Ah2)",
+      "odd(x3,Ah1,Ah2)",
+      "even(y1,y3,Bh2)",
+      "odd(y2,s2,Bh2)",
+      "odd(y3,s1,Bh2)",
+      "nae(y1,y2,f11)"
+     ],
+     "mask": 239,
+     "newborn_laws": [
+      "nae"
+     ],
+     "same_structure_as_target": true,
+     "separate_enumeration_equal": true,
+     "si": 2236,
+     "t": 1,
+     "tid": 79
+    }
+   ]
+  }
+ },
+ "t1_c3": {
+  "histories": 49961,
+  "stages": 67303,
+  "grown_stages": 17342,
+  "tables": 15631067,
+  "grown_tables": 15581106,
+  "modes": {
+   "drawn": 2111,
+   "all": 47850
+  },
+  "outcomes": {
+   "distinctions": 21398,
+   "rounds": 651,
+   "stall": 27887,
+   "closed": 25
+  },
+  "newborns_max": 13,
+  "histories_with_growth": 13205,
+  "support_shrinks": 0,
+  "support_changes": 0,
+  "starts_support_equal_to_target": 649,
+  "stage_tables_support_equal": 97619,
+  "proportional_tables": 24344,
+  "proportional_tables_grown": 24147,
+  "starts_already_proportional": 197,
+  "histories_reaching_only_by_growth": 34,
+  "targets_reached_only_by_growth": 32,
+  "reaching_histories_start_without_excess": 10,
+  "grown_stages_that_are_the_target": 30,
+  "histories_growing_the_target_itself": 30,
+  "targets_grown_exactly": 30,
+  "starts_with_excess": 630,
+  "excess_tables": 99894,
+  "grown_tables_from_excess_starts": 103537,
+  "grown_excess_tables_from_excess_starts": 98052,
+  "new_excess_tables": 1212,
+  "histories_with_new_excess": 34,
+  "targets_with_new_excess": 28,
+  "smallest_new_excess": [
+   8,
+   12,
+   2236,
+   79,
+   239,
+   1
+  ],
+  "best_hidden_grown_from_starts_without_excess": [
+   2.037037037037037,
+   "55/27",
+   2566
+  ],
+  "best_hidden_grown_any": [
+   2.148148148148148,
+   "58/27",
+   1060
+  ],
+  "verified_by_full_enumeration": 857,
+  "verified_all_hidden_excess": true,
+  "verified_all_agree": true,
+  "separate_enumeration_checked": 0,
+  "separate_enumeration_equal": 0,
+  "not_enumerated": {
+   "29": 50,
+   "32": 50
+  },
+  "verified_D": {
+   "12": 20,
+   "14": 61,
+   "18": 541,
+   "16": 3,
+   "20": 33,
+   "15": 1,
+   "17": 3,
+   "21": 36,
+   "19": 1,
+   "23": 9,
+   "24": 36,
+   "25": 9,
+   "26": 50,
+   "27": 54
+  },
+  "new_excess_by_score": {
+   "55/27": 124,
+   "109/54": 672,
+   "757/378": 3,
+   "541/270": 4,
+   "1765/882": 9,
+   "127/63": 9,
+   "631/315": 9,
+   "883/441": 27
+  },
+  "seven_knot_starts": 19,
+  "seven_knot_support_equal": 0,
+  "seven_knot_any_excess": 0,
+  "seven_knot_best_hidden": 1.4444444444444449,
+  "smallest_new_excess_in_full": {
+   "target": [
+    "nae(x1,x2,s1)",
+    "nae(x1,x3,s2)",
+    "even(x2,Ah1,Ah2)",
+    "odd(x3,Ah1,Ah2)",
+    "nae(y1,y2,Bh1)",
+    "even(y1,y3,Bh2)",
+    "odd(y2,s2,Bh2)",
+    "odd(y3,s1,Bh2)"
+   ],
+   "target_score": "55/27",
+   "start": [
+    "nae(x1,x2,s1)",
+    "nae(x1,x3,s2)",
+    "even(x2,Ah1,Ah2)",
+    "odd(x3,Ah1,Ah2)",
+    "even(y1,y3,Bh2)",
+    "odd(y2,s2,Bh2)",
+    "odd(y3,s1,Bh2)"
+   ],
+   "n_at": [
+    7,
+    8,
+    9,
+    11
+   ],
+   "D_at": [
+    11,
+    12,
+    14,
+    18
+   ],
+   "births": [
+    [
+     [
+      2,
+      1
+     ]
+    ],
+    [
+     [
+      1,
+      2
+     ]
+    ],
+    [
+     [
+      1,
+      2
+     ],
+     [
+      1,
+      2
+     ]
+    ]
+   ],
+   "stage": 1,
+   "stages": [
+    {
+     "D": 11,
+     "best_hidden_exact": "2",
+     "best_hidden_float": 2.0,
+     "distinct_tables": 1,
+     "excess": 0,
+     "hidden": 1,
+     "knots": 7,
+     "new_excess": 0,
+     "proportional": 0,
+     "support_equal": 1,
+     "support_size": [
+      16
+     ],
+     "t": 0,
+     "tables": 1
+    },
+    {
+     "D": 12,
+     "best_hidden_exact": "55/27",
+     "best_hidden_float": 2.037037037037037,
+     "distinct_tables": 2,
+     "excess": 1,
+     "hidden": 3,
+     "knots": 8,
+     "new_excess": 1,
+     "proportional": 1,
+     "support_equal": 3,
+     "support_size": [
+      16
+     ],
+     "t": 1,
+     "tables": 3
+    },
+    {
+     "D": 14,
+     "best_hidden_exact": "55/27",
+     "best_hidden_float": 2.037037037037037,
+     "distinct_tables": 2,
+     "excess": 3,
+     "hidden": 9,
+     "knots": 9,
+     "new_excess": 3,
+     "proportional": 3,
+     "support_equal": 9,
+     "support_size": [
+      16
+     ],
+     "t": 2,
+     "tables": 9
+    },
+    {
+     "D": 18,
+     "best_hidden_exact": "55/27",
+     "best_hidden_float": 2.037037037037037,
+     "distinct_tables": 2,
+     "excess": 27,
+     "hidden": 81,
+     "knots": 11,
+     "new_excess": 27,
+     "proportional": 27,
+     "support_equal": 81,
+     "support_size": [
+      16
+     ],
+     "t": 3,
+     "tables": 81
+    }
+   ],
+   "rows": [
+    {
+     "D": 12,
+     "eval_contraction": [
+      true,
+      true,
+      2.037037037037037,
+      "55/27"
+     ],
+     "full_enumeration": {
+      "arg": [
+       2,
+       8,
+       8,
+       14,
+       0
+      ],
+      "change": "0",
+      "distinctions_finished": 14,
+      "hidden": true,
+      "joint_equals_table": true,
+      "score": "55/27",
+      "score_equals_contraction": true,
+      "words": [
+       120,
+       108,
+       120,
+       108
+      ]
+     },
+     "kind": "proportional",
+     "knots": [
+      "nae(x1,x2,s1)",
+      "nae(x1,x3,s2)",
+      "even(x2,Ah1,Ah2)",
+      "odd(x3,Ah1,Ah2)",
+      "even(y1,y3,Bh2)",
+      "odd(y2,s2,Bh2)",
+      "odd(y3,s1,Bh2)",
+      "nae(y1,y2,f11)"
+     ],
+     "mask": 239,
+     "newborn_laws": [
+      "nae"
+     ],
+     "same_structure_as_target": true,
+     "si": 2236,
+     "t": 1,
+     "tid": 79
+    }
+   ]
+  }
+ },
+ "t2_c2": {
+  "targets": {
+   "stages": 22817,
+   "distinct_structures": 18667,
+   "stages_with_a_tie": 16692,
+   "stages_with_two_disjoint_ties": 5857,
+   "stages_with_two_ties_no_common_knot": 2408,
+   "choices_tested": 85090,
+   "choices_ordered": 680720,
+   "hidden": 78252,
+   "excess": 12,
+   "sym_checked": 2073,
+   "sym_equal": 2073,
+   "closing_stages": 0
+  },
+  "targets_by_t": {
+   "0": 14563,
+   "1": 7702,
+   "2": 552
+  },
+  "draws": {
+   "stages": 1812,
+   "distinct_structures": 1373,
+   "stages_with_a_tie": 229,
+   "stages_with_two_disjoint_ties": 6,
+   "stages_with_two_ties_no_common_knot": 0,
+   "choices_tested": 0,
+   "choices_ordered": 0,
+   "hidden": 0,
+   "excess": 0,
+   "sym_checked": 0,
+   "sym_equal": 0,
+   "closing_stages": 61,
+   "draws": 1024,
+   "funded": {
+    "parity": 280,
+    "nae": 280
+   },
+   "by_t": {
+    "0": 512,
+    "1": 1300
+   },
+   "closing_implied_constant": 61,
+   "parity_rule_same_as_nae": 219,
+   "parity_rule_compared": 219
+  },
+  "best_hidden": [
+   2.2222222222222223,
+   "20/9"
+  ],
+  "verify": {
+   "tag": "c2",
+   "stage_hits": 12,
+   "excess_choices_written": 12,
+   "all_agree": true,
+   "grown": 4,
+   "grown_inherited": 4,
+   "grown_new": 0,
+   "smallest": {
+    "key": {
+     "laws": [],
+     "mask": 1013,
+     "si": 6375,
+     "t": 0,
+     "tid": 176
+    },
+    "knots": [
+     "even(x2,x3,Ah6)",
+     "odd(x2,Ah3,Ah6)",
+     "nae(x1,x3,s2)",
+     "nae(x1,s1,Ah3)",
+     "even(s2,Bh1,Bh2)",
+     "even(y1,Bh1,Bh2)",
+     "odd(y1,y2,y3,s1)",
+     "odd(y3,Bh1,Bh2)"
+    ],
+    "knots_n": 8,
+    "distinctions": 12,
+    "observers": [
+     "x1",
+     "Ah3",
+     "x3",
+     "y2",
+     "y1",
+     "y3"
+    ],
+    "score_t2": "20/9",
+    "full_enumeration": {
+     "hidden": true,
+     "score": "20/9",
+     "change": "0",
+     "words": [
+      72,
+      72,
+      72,
+      72
+     ],
+     "distinctions_finished": 14
+    },
+    "agrees": true,
+    "inherited_from_stage0": null
+   },
+   "smallest_grown": {
+    "key": {
+     "laws": [
+      "even"
+     ],
+     "mask": 1013,
+     "si": 6375,
+     "t": 1,
+     "tid": 176
+    },
+    "knots": [
+     "even(x2,x3,Ah6)",
+     "odd(x2,Ah3,Ah6)",
+     "nae(x1,x3,s2)",
+     "nae(x1,s1,Ah3)",
+     "even(s2,Bh1,Bh2)",
+     "even(y1,Bh1,Bh2)",
+     "odd(y1,y2,y3,s1)",
+     "odd(y3,Bh1,Bh2)",
+     "even(y2,f12,f13)"
+    ],
+    "knots_n": 9,
+    "distinctions": 14,
+    "observers": [
+     "x1",
+     "Ah3",
+     "x3",
+     "y2",
+     "y1",
+     "y3"
+    ],
+    "score_t2": "20/9",
+    "full_enumeration": {
+     "hidden": true,
+     "score": "20/9",
+     "change": "0",
+     "words": [
+      144,
+      144,
+      144,
+      144
+     ],
+     "distinctions_finished": 16
+    },
+    "agrees": true,
+    "inherited_from_stage0": true
+   },
+   "seconds": 0.1
+  }
+ },
+ "t2_c3": {
+  "targets": {
+   "stages": 43549,
+   "distinct_structures": 30653,
+   "stages_with_a_tie": 32387,
+   "stages_with_two_disjoint_ties": 10064,
+   "stages_with_two_ties_no_common_knot": 4360,
+   "choices_tested": 153102,
+   "choices_ordered": 1224816,
+   "hidden": 141516,
+   "excess": 14,
+   "sym_checked": 2073,
+   "sym_equal": 2073,
+   "closing_stages": 0
+  },
+  "targets_by_t": {
+   "0": 14563,
+   "1": 27726,
+   "2": 1260
+  },
+  "draws": {
+   "stages": 4777,
+   "distinct_structures": 3597,
+   "stages_with_a_tie": 447,
+   "stages_with_two_disjoint_ties": 18,
+   "stages_with_two_ties_no_common_knot": 0,
+   "choices_tested": 0,
+   "choices_ordered": 0,
+   "hidden": 0,
+   "excess": 0,
+   "sym_checked": 0,
+   "sym_equal": 0,
+   "closing_stages": 61,
+   "draws": 1024,
+   "funded": {
+    "parity": 280,
+    "nae": 280
+   },
+   "by_t": {
+    "0": 512,
+    "1": 4265
+   },
+   "closing_implied_constant": 61,
+   "parity_rule_same_as_nae": 219,
+   "parity_rule_compared": 219
+  },
+  "best_hidden": [
+   2.2222222222222223,
+   "20/9"
+  ],
+  "verify": {
+   "tag": "c3",
+   "stage_hits": 14,
+   "excess_choices_written": 14,
+   "all_agree": true,
+   "grown": 6,
+   "grown_inherited": 6,
+   "grown_new": 0,
+   "smallest": {
+    "key": {
+     "laws": [],
+     "mask": 1013,
+     "si": 6375,
+     "t": 0,
+     "tid": 176
+    },
+    "knots": [
+     "even(x2,x3,Ah6)",
+     "odd(x2,Ah3,Ah6)",
+     "nae(x1,x3,s2)",
+     "nae(x1,s1,Ah3)",
+     "even(s2,Bh1,Bh2)",
+     "even(y1,Bh1,Bh2)",
+     "odd(y1,y2,y3,s1)",
+     "odd(y3,Bh1,Bh2)"
+    ],
+    "knots_n": 8,
+    "distinctions": 12,
+    "observers": [
+     "x1",
+     "Ah3",
+     "x3",
+     "y2",
+     "y1",
+     "y3"
+    ],
+    "score_t2": "20/9",
+    "full_enumeration": {
+     "hidden": true,
+     "score": "20/9",
+     "change": "0",
+     "words": [
+      72,
+      72,
+      72,
+      72
+     ],
+     "distinctions_finished": 14
+    },
+    "agrees": true,
+    "inherited_from_stage0": null
+   },
+   "smallest_grown": {
+    "key": {
+     "laws": [
+      "even"
+     ],
+     "mask": 1013,
+     "si": 6375,
+     "t": 1,
+     "tid": 176
+    },
+    "knots": [
+     "even(x2,x3,Ah6)",
+     "odd(x2,Ah3,Ah6)",
+     "nae(x1,x3,s2)",
+     "nae(x1,s1,Ah3)",
+     "even(s2,Bh1,Bh2)",
+     "even(y1,Bh1,Bh2)",
+     "odd(y1,y2,y3,s1)",
+     "odd(y3,Bh1,Bh2)",
+     "even(y2,f12,f13)"
+    ],
+    "knots_n": 9,
+    "distinctions": 14,
+    "observers": [
+     "x1",
+     "Ah3",
+     "x3",
+     "y2",
+     "y1",
+     "y3"
+    ],
+    "score_t2": "20/9",
+    "full_enumeration": {
+     "hidden": true,
+     "score": "20/9",
+     "change": "0",
+     "words": [
+      144,
+      144,
+      144,
+      144
+     ],
+     "distinctions_finished": 16
+    },
+    "agrees": true,
+    "inherited_from_stage0": true
+   },
+   "seconds": 0.1
+  }
+ },
+ "seven_reasons": {
+  "target": [
+   "nae(x1,x2,s1)",
+   "nae(x1,x3,s2)",
+   "even(x2,Ah1,Ah2)",
+   "odd(x3,Ah1,Ah2)",
+   "even(y2,Bh1,Bh2)",
+   "odd(s1,Bh1,Bh2)",
+   "odd(y1,y2,y3,s2)"
+  ],
+  "knot_facts": [
+   {
+    "knot": "nae(x1,x2,s1)",
+    "own_distinctions": [],
+    "shares_two_with": []
+   },
+   {
+    "knot": "nae(x1,x3,s2)",
+    "own_distinctions": [],
+    "shares_two_with": []
+   },
+   {
+    "knot": "even(x2,Ah1,Ah2)",
+    "own_distinctions": [],
+    "shares_two_with": [
+     "odd(x3,Ah1,Ah2)"
+    ]
+   },
+   {
+    "knot": "odd(x3,Ah1,Ah2)",
+    "own_distinctions": [],
+    "shares_two_with": [
+     "even(x2,Ah1,Ah2)"
+    ]
+   },
+   {
+    "knot": "even(y2,Bh1,Bh2)",
+    "own_distinctions": [],
+    "shares_two_with": [
+     "odd(s1,Bh1,Bh2)"
+    ]
+   },
+   {
+    "knot": "odd(s1,Bh1,Bh2)",
+    "own_distinctions": [],
+    "shares_two_with": [
+     "even(y2,Bh1,Bh2)"
+    ]
+   },
+   {
+    "knot": "odd(y1,y2,y3,s2)",
+    "own_distinctions": [
+     "y1",
+     "y3"
+    ],
+    "shares_two_with": []
+   }
+  ],
+  "starts": 19,
+  "start_support_sizes": {
+   "48": 9,
+   "24": 7,
+   "36": 3
+  },
+  "all_lack_support": true,
+  "rows": [
+   {
+    "mask": 67,
+    "founders": [
+     "nae(x1,x2,s1)",
+     "nae(x1,x3,s2)",
+     "odd(y1,y2,y3,s2)"
+    ],
+    "left_out": [
+     "even(x2,Ah1,Ah2)",
+     "odd(x3,Ah1,Ah2)",
+     "even(y2,Bh1,Bh2)",
+     "odd(s1,Bh1,Bh2)"
+    ],
+    "start_support": 48,
+    "target_support": 16,
+    "superset": true,
+    "n_at": [
+     3,
+     8,
+     15
+    ],
+    "D_at": [
+     8,
+     19,
+     33
+    ],
+    "outcome": "distinctions",
+    "assignments": 4096,
+    "proportional_any": false,
+    "excess_any": false,
+    "best_hidden": 0.6666666666666669,
+    "left_out_facts": [
+     {
+      "knot": "even(x2,Ah1,Ah2)",
+      "own_distinctions": [],
+      "shares_two_with": [
+       "odd(x3,Ah1,Ah2)"
+      ],
+      "start_knots_it_meets": [
+       "nae(x1,x2,s1)"
+      ],
+      "of_them_live": 1,
+      "all_met_are_live": true,
+      "live_ones_pairwise_adjacent": true
+     },
+     {
+      "knot": "odd(x3,Ah1,Ah2)",
+      "own_distinctions": [],
+      "shares_two_with": [
+       "even(x2,Ah1,Ah2)"
+      ],
+      "start_knots_it_meets": [
+       "nae(x1,x3,s2)"
+      ],
+      "of_them_live": 1,
+      "all_met_are_live": true,
+      "live_ones_pairwise_adjacent": true
+     },
+     {
+      "knot": "even(y2,Bh1,Bh2)",
+      "own_distinctions": [],
+      "shares_two_with": [
+       "odd(s1,Bh1,Bh2)"
+      ],
+      "start_knots_it_meets": [
+       "odd(y1,y2,y3,s2)"
+      ],
+      "of_them_live": 1,
+      "all_met_are_live": true,
+      "live_ones_pairwise_adjacent": true
+     },
+     {
+      "knot": "odd(s1,Bh1,Bh2)",
+      "own_distinctions": [],
+      "shares_two_with": [
+       "even(y2,Bh1,Bh2)"
+      ],
+      "start_knots_it_meets": [
+       "nae(x1,x2,s1)"
+      ],
+      "of_them_live": 1,
+      "all_met_are_live": true,
+      "live_ones_pairwise_adjacent": true
+     }
+    ],
+    "reason": [
+     "the start already lacks the support: 48 observer words allowed, the target 16 (a superset); growth keeps the support",
+     "left-out knot(s) that no ordinary birth can make: even(x2,Ah1,Ah2) (no distinction of its own, shares two distinctions with odd(x3,Ah1,Ah2)); odd(x3,Ah1,Ah2) (no distinction of its own, shares two distinctions with even(x2,Ah1,Ah2)); even(y2,Bh1,Bh2) (no distinction of its own, shares two distinctions with odd(s1,Bh1,Bh2)); odd(s1,Bh1,Bh2) (no distinction of its own, shares two distinctions with even(y2,Bh1,Bh2))"
+    ]
+   },
+   {
+    "mask": 71,
+    "founders": [
+     "nae(x1,x2,s1)",
+     "nae(x1,x3,s2)",
+     "even(x2,Ah1,Ah2)",
+     "odd(y1,y2,y3,s2)"
+    ],
+    "left_out": [
+     "odd(x3,Ah1,Ah2)",
+     "even(y2,Bh1,Bh2)",
+     "odd(s1,Bh1,Bh2)"
+    ],
+    "start_support": 48,
+    "target_support": 16,
+    "superset": true,
+    "n_at": [
+     4,
+     9,
+     14
+    ],
+    "D_at": [
+     10,
+     19,
+     25
+    ],
+    "outcome": "distinctions",
+    "assignments": 1024,
+    "proportional_any": false,
+    "excess_any": false,
+    "best_hidden": 0.6798029556650247,
+    "left_out_facts": [
+     {
+      "knot": "odd(x3,Ah1,Ah2)",
+      "own_distinctions": [],
+      "shares_two_with": [
+       "even(x2,Ah1,Ah2)"
+      ],
+      "start_knots_it_meets": [
+       "nae(x1,x3,s2)",
+       "even(x2,Ah1,Ah2)"
+      ],
+      "of_them_live": 2,
+      "all_met_are_live": true,
+      "live_ones_pairwise_adjacent": true
+     },
+     {
+      "knot": "even(y2,Bh1,Bh2)",
+      "own_distinctions": [],
+      "shares_two_with": [
+       "odd(s1,Bh1,Bh2)"
+      ],
+      "start_knots_it_meets": [
+       "odd(y1,y2,y3,s2)"
+      ],
+      "of_them_live": 1,
+      "all_met_are_live": true,
+      "live_ones_pairwise_adjacent": true
+     },
+     {
+      "knot": "odd(s1,Bh1,Bh2)",
+      "own_distinctions": [],
+      "shares_two_with": [
+       "even(y2,Bh1,Bh2)"
+      ],
+      "start_knots_it_meets": [
+       "nae(x1,x2,s1)"
+      ],
+      "of_them_live": 1,
+      "all_met_are_live": true,
+      "live_ones_pairwise_adjacent": true
+     }
+    ],
+    "reason": [
+     "the start already lacks the support: 48 observer words allowed, the target 16 (a superset); growth keeps the support",
+     "left-out knot(s) that no ordinary birth can make: odd(x3,Ah1,Ah2) (no distinction of its own, shares two distinctions with even(x2,Ah1,Ah2)); even(y2,Bh1,Bh2) (no distinction of its own, shares two distinctions with odd(s1,Bh1,Bh2)); odd(s1,Bh1,Bh2) (no distinction of its own, shares two distinctions with even(y2,Bh1,Bh2))"
+    ]
+   },
+   {
+    "mask": 75,
+    "founders": [
+     "nae(x1,x2,s1)",
+     "nae(x1,x3,s2)",
+     "odd(x3,Ah1,Ah2)",
+     "odd(y1,y2,y3,s2)"
+    ],
+    "left_out": [
+     "even(x2,Ah1,Ah2)",
+     "even(y2,Bh1,Bh2)",
+     "odd(s1,Bh1,Bh2)"
+    ],
+    "start_support": 48,
+    "target_support": 16,
+    "superset": true,
+    "n_at": [
+     4,
+     8,
+     11,
+     12
+    ],
+    "D_at": [
+     10,
+     17,
+     20,
+     21
+    ],
+    "outcome": "rounds",
+    "assignments": 256,
+    "proportional_any": false,
+    "excess_any": false,
+    "best_hidden": 0.6835443037974684,
+    "left_out_facts": [
+     {
+      "knot": "even(x2,Ah1,Ah2)",
+      "own_distinctions": [],
+      "shares_two_with": [
+       "odd(x3,Ah1,Ah2)"
+      ],
+      "start_knots_it_meets": [
+       "nae(x1,x2,s1)",
+       "odd(x3,Ah1,Ah2)"
+      ],
+      "of_them_live": 2,
+      "all_met_are_live": true,
+      "live_ones_pairwise_adjacent": true
+     },
+     {
+      "knot": "even(y2,Bh1,Bh2)",
+      "own_distinctions": [],
+      "shares_two_with": [
+       "odd(s1,Bh1,Bh2)"
+      ],
+      "start_knots_it_meets": [
+       "odd(y1,y2,y3,s2)"
+      ],
+      "of_them_live": 1,
+      "all_met_are_live": true,
+      "live_ones_pairwise_adjacent": true
+     },
+     {
+      "knot": "odd(s1,Bh1,Bh2)",
+      "own_distinctions": [],
+      "shares_two_with": [
+       "even(y2,Bh1,Bh2)"
+      ],
+      "start_knots_it_meets": [
+       "nae(x1,x2,s1)"
+      ],
+      "of_them_live": 1,
+      "all_met_are_live": true,
+      "live_ones_pairwise_adjacent": true
+     }
+    ],
+    "reason": [
+     "the start already lacks the support: 48 observer words allowed, the target 16 (a superset); growth keeps the support",
+     "left-out knot(s) that no ordinary birth can make: even(x2,Ah1,Ah2) (no distinction of its own, shares two distinctions with odd(x3,Ah1,Ah2)); even(y2,Bh1,Bh2) (no distinction of its own, shares two distinctions with odd(s1,Bh1,Bh2)); odd(s1,Bh1,Bh2) (no distinction of its own, shares two distinctions with even(y2,Bh1,Bh2))"
+    ]
+   },
+   {
+    "mask": 78,
+    "founders": [
+     "nae(x1,x3,s2)",
+     "even(x2,Ah1,Ah2)",
+     "odd(x3,Ah1,Ah2)",
+     "odd(y1,y2,y3,s2)"
+    ],
+    "left_out": [
+     "nae(x1,x2,s1)",
+     "even(y2,Bh1,Bh2)",
+     "odd(s1,Bh1,Bh2)"
+    ],
+    "start_support": 24,
+    "target_support": 16,
+    "superset": true,
+    "n_at": [
+     4,
+     8,
+     12
+    ],
+    "D_at": [
+     9,
+     16,
+     21
+    ],
+    "outcome": "distinctions",
+    "assignments": 256,
+    "proportional_any": false,
+    "excess_any": false,
+    "best_hidden": 1.333333333333334,
+    "left_out_facts": [
+     {
+      "knot": "nae(x1,x2,s1)",
+      "own_distinctions": [],
+      "shares_two_with": [],
+      "start_knots_it_meets": [
+       "nae(x1,x3,s2)",
+       "even(x2,Ah1,Ah2)"
+      ],
+      "of_them_live": 2,
+      "all_met_are_live": true,
+      "live_ones_pairwise_adjacent": true
+     },
+     {
+      "knot": "even(y2,Bh1,Bh2)",
+      "own_distinctions": [],
+      "shares_two_with": [
+       "odd(s1,Bh1,Bh2)"
+      ],
+      "start_knots_it_meets": [
+       "odd(y1,y2,y3,s2)"
+      ],
+      "of_them_live": 1,
+      "all_met_are_live": true,
+      "live_ones_pairwise_adjacent": true
+     },
+     {
+      "knot": "odd(s1,Bh1,Bh2)",
+      "own_distinctions": [],
+      "shares_two_with": [
+       "even(y2,Bh1,Bh2)"
+      ],
+      "start_knots_it_meets": [],
+      "of_them_live": 0,
+      "all_met_are_live": true,
+      "live_ones_pairwise_adjacent": true
+     }
+    ],
+    "reason": [
+     "the start already lacks the support: 24 observer words allowed, the target 16 (a superset); growth keeps the support",
+     "left-out knot(s) that no ordinary birth can make: nae(x1,x2,s1) (no distinction of its own); even(y2,Bh1,Bh2) (no distinction of its own, shares two distinctions with odd(s1,Bh1,Bh2)); odd(s1,Bh1,Bh2) (no distinction of its own, shares two distinctions with even(y2,Bh1,Bh2))"
+    ]
+   },
+   {
+    "mask": 79,
+    "founders": [
+     "nae(x1,x2,s1)",
+     "nae(x1,x3,s2)",
+     "even(x2,Ah1,Ah2)",
+     "odd(x3,Ah1,Ah2)",
+     "odd(y1,y2,y3,s2)"
+    ],
+    "left_out": [
+     "even(y2,Bh1,Bh2)",
+     "odd(s1,Bh1,Bh2)"
+    ],
+    "start_support": 24,
+    "target_support": 16,
+    "superset": true,
+    "n_at": [
+     5,
+     8,
+     11,
+     12
+    ],
+    "D_at": [
+     10,
+     16,
+     19,
+     20
+    ],
+    "outcome": "rounds",
+    "assignments": 128,
+    "proportional_any": false,
+    "excess_any": false,
+    "best_hidden": 1.3845731984719032,
+    "left_out_facts": [
+     {
+      "knot": "even(y2,Bh1,Bh2)",
+      "own_distinctions": [],
+      "shares_two_with": [
+       "odd(s1,Bh1,Bh2)"
+      ],
+      "start_knots_it_meets": [
+       "odd(y1,y2,y3,s2)"
+      ],
+      "of_them_live": 1,
+      "all_met_are_live": true,
+      "live_ones_pairwise_adjacent": true
+     },
+     {
+      "knot": "odd(s1,Bh1,Bh2)",
+      "own_distinctions": [],
+      "shares_two_with": [
+       "even(y2,Bh1,Bh2)"
+      ],
+      "start_knots_it_meets": [
+       "nae(x1,x2,s1)"
+      ],
+      "of_them_live": 1,
+      "all_met_are_live": true,
+      "live_ones_pairwise_adjacent": true
+     }
+    ],
+    "reason": [
+     "the start already lacks the support: 24 observer words allowed, the target 16 (a superset); growth keeps the support",
+     "left-out knot(s) that no ordinary birth can make: even(y2,Bh1,Bh2) (no distinction of its own, shares two distinctions with odd(s1,Bh1,Bh2)); odd(s1,Bh1,Bh2) (no distinction of its own, shares two distinctions with even(y2,Bh1,Bh2))"
+    ]
+   },
+   {
+    "mask": 83,
+    "founders": [
+     "nae(x1,x2,s1)",
+     "nae(x1,x3,s2)",
+     "even(y2,Bh1,Bh2)",
+     "odd(y1,y2,y3,s2)"
+    ],
+    "left_out": [
+     "even(x2,Ah1,Ah2)",
+     "odd(x3,Ah1,Ah2)",
+     "odd(s1,Bh1,Bh2)"
+    ],
+    "start_support": 48,
+    "target_support": 16,
+    "superset": true,
+    "n_at": [
+     4,
+     9,
+     15
+    ],
+    "D_at": [
+     10,
+     19,
+     30
+    ],
+    "outcome": "distinctions",
+    "assignments": 2048,
+    "proportional_any": false,
+    "excess_any": false,
+    "best_hidden": 0.6666666666666669,
+    "left_out_facts": [
+     {
+      "knot": "even(x2,Ah1,Ah2)",
+      "own_distinctions": [],
+      "shares_two_with": [
+       "odd(x3,Ah1,Ah2)"
+      ],
+      "start_knots_it_meets": [
+       "nae(x1,x2,s1)"
+      ],
+      "of_them_live": 1,
+      "all_met_are_live": true,
+      "live_ones_pairwise_adjacent": true
+     },
+     {
+      "knot": "odd(x3,Ah1,Ah2)",
+      "own_distinctions": [],
+      "shares_two_with": [
+       "even(x2,Ah1,Ah2)"
+      ],
+      "start_knots_it_meets": [
+       "nae(x1,x3,s2)"
+      ],
+      "of_them_live": 1,
+      "all_met_are_live": true,
+      "live_ones_pairwise_adjacent": true
+     },
+     {
+      "knot": "odd(s1,Bh1,Bh2)",
+      "own_distinctions": [],
+      "shares_two_with": [
+       "even(y2,Bh1,Bh2)"
+      ],
+      "start_knots_it_meets": [
+       "nae(x1,x2,s1)",
+       "even(y2,Bh1,Bh2)"
+      ],
+      "of_them_live": 2,
+      "all_met_are_live": true,
+      "live_ones_pairwise_adjacent": false
+     }
+    ],
+    "reason": [
+     "the start already lacks the support: 48 observer words allowed, the target 16 (a superset); growth keeps the support",
+     "left-out knot(s) that no ordinary birth can make: even(x2,Ah1,Ah2) (no distinction of its own, shares two distinctions with odd(x3,Ah1,Ah2)); odd(x3,Ah1,Ah2) (no distinction of its own, shares two distinctions with even(x2,Ah1,Ah2)); odd(s1,Bh1,Bh2) (no distinction of its own, shares two distinctions with even(y2,Bh1,Bh2), the start knots it meets are not pairwise adjacent)"
+    ]
+   },
+   {
+    "mask": 87,
+    "founders": [
+     "nae(x1,x2,s1)",
+     "nae(x1,x3,s2)",
+     "even(x2,Ah1,Ah2)",
+     "even(y2,Bh1,Bh2)",
+     "odd(y1,y2,y3,s2)"
+    ],
+    "left_out": [
+     "odd(x3,Ah1,Ah2)",
+     "odd(s1,Bh1,Bh2)"
+    ],
+    "start_support": 48,
+    "target_support": 16,
+    "superset": true,
+    "n_at": [
+     5
+    ],
+    "D_at": [
+     12
+    ],
+    "outcome": "stall",
+    "assignments": 1,
+    "proportional_any": false,
+    "excess_any": false,
+    "best_hidden": 0.6666666666666669,
+    "left_out_facts": [
+     {
+      "knot": "odd(x3,Ah1,Ah2)",
+      "own_distinctions": [],
+      "shares_two_with": [
+       "even(x2,Ah1,Ah2)"
+      ],
+      "start_knots_it_meets": [
+       "nae(x1,x3,s2)",
+       "even(x2,Ah1,Ah2)"
+      ],
+      "of_them_live": 2,
+      "all_met_are_live": true,
+      "live_ones_pairwise_adjacent": true
+     },
+     {
+      "knot": "odd(s1,Bh1,Bh2)",
+      "own_distinctions": [],
+      "shares_two_with": [
+       "even(y2,Bh1,Bh2)"
+      ],
+      "start_knots_it_meets": [
+       "nae(x1,x2,s1)",
+       "even(y2,Bh1,Bh2)"
+      ],
+      "of_them_live": 2,
+      "all_met_are_live": true,
+      "live_ones_pairwise_adjacent": false
+     }
+    ],
+    "reason": [
+     "the start already lacks the support: 48 observer words allowed, the target 16 (a superset); growth keeps the support",
+     "left-out knot(s) that no ordinary birth can make: odd(x3,Ah1,Ah2) (no distinction of its own, shares two distinctions with even(x2,Ah1,Ah2)); odd(s1,Bh1,Bh2) (no distinction of its own, shares two distinctions with even(y2,Bh1,Bh2), the start knots it meets are not pairwise adjacent)"
+    ]
+   },
+   {
+    "mask": 91,
+    "founders": [
+     "nae(x1,x2,s1)",
+     "nae(x1,x3,s2)",
+     "odd(x3,Ah1,Ah2)",
+     "even(y2,Bh1,Bh2)",
+     "odd(y1,y2,y3,s2)"
+    ],
+    "left_out": [
+     "even(x2,Ah1,Ah2)",
+     "odd(s1,Bh1,Bh2)"
+    ],
+    "start_support": 48,
+    "target_support": 16,
+    "superset": true,
+    "n_at": [
+     5,
+     10,
+     14
+    ],
+    "D_at": [
+     12,
+     19,
+     26
+    ],
+    "outcome": "distinctions",
+    "assignments": 512,
+    "proportional_any": false,
+    "excess_any": false,
+    "best_hidden": 0.6666666666666669,
+    "left_out_facts": [
+     {
+      "knot": "even(x2,Ah1,Ah2)",
+      "own_distinctions": [],
+      "shares_two_with": [
+       "odd(x3,Ah1,Ah2)"
+      ],
+      "start_knots_it_meets": [
+       "nae(x1,x2,s1)",
+       "odd(x3,Ah1,Ah2)"
+      ],
+      "of_them_live": 2,
+      "all_met_are_live": true,
+      "live_ones_pairwise_adjacent": true
+     },
+     {
+      "knot": "odd(s1,Bh1,Bh2)",
+      "own_distinctions": [],
+      "shares_two_with": [
+       "even(y2,Bh1,Bh2)"
+      ],
+      "start_knots_it_meets": [
+       "nae(x1,x2,s1)",
+       "even(y2,Bh1,Bh2)"
+      ],
+      "of_them_live": 2,
+      "all_met_are_live": true,
+      "live_ones_pairwise_adjacent": false
+     }
+    ],
+    "reason": [
+     "the start already lacks the support: 48 observer words allowed, the target 16 (a superset); growth keeps the support",
+     "left-out knot(s) that no ordinary birth can make: even(x2,Ah1,Ah2) (no distinction of its own, shares two distinctions with odd(x3,Ah1,Ah2)); odd(s1,Bh1,Bh2) (no distinction of its own, shares two distinctions with even(y2,Bh1,Bh2), the start knots it meets are not pairwise adjacent)"
+    ]
+   },
+   {
+    "mask": 94,
+    "founders": [
+     "nae(x1,x3,s2)",
+     "even(x2,Ah1,Ah2)",
+     "odd(x3,Ah1,Ah2)",
+     "even(y2,Bh1,Bh2)",
+     "odd(y1,y2,y3,s2)"
+    ],
+    "left_out": [
+     "nae(x1,x2,s1)",
+     "odd(s1,Bh1,Bh2)"
+    ],
+    "start_support": 24,
+    "target_support": 16,
+    "superset": true,
+    "n_at": [
+     5
+    ],
+    "D_at": [
+     11
+    ],
+    "outcome": "stall",
+    "assignments": 1,
+    "proportional_any": false,
+    "excess_any": false,
+    "best_hidden": 1.0,
+    "left_out_facts": [
+     {
+      "knot": "nae(x1,x2,s1)",
+      "own_distinctions": [],
+      "shares_two_with": [],
+      "start_knots_it_meets": [
+       "nae(x1,x3,s2)",
+       "even(x2,Ah1,Ah2)"
+      ],
+      "of_them_live": 2,
+      "all_met_are_live": true,
+      "live_ones_pairwise_adjacent": true
+     },
+     {
+      "knot": "odd(s1,Bh1,Bh2)",
+      "own_distinctions": [],
+      "shares_two_with": [
+       "even(y2,Bh1,Bh2)"
+      ],
+      "start_knots_it_meets": [
+       "even(y2,Bh1,Bh2)"
+      ],
+      "of_them_live": 1,
+      "all_met_are_live": true,
+      "live_ones_pairwise_adjacent": true
+     }
+    ],
+    "reason": [
+     "the start already lacks the support: 24 observer words allowed, the target 16 (a superset); growth keeps the support",
+     "left-out knot(s) that no ordinary birth can make: nae(x1,x2,s1) (no distinction of its own); odd(s1,Bh1,Bh2) (no distinction of its own, shares two distinctions with even(y2,Bh1,Bh2))"
+    ]
+   },
+   {
+    "mask": 95,
+    "founders": [
+     "nae(x1,x2,s1)",
+     "nae(x1,x3,s2)",
+     "even(x2,Ah1,Ah2)",
+     "odd(x3,Ah1,Ah2)",
+     "even(y2,Bh1,Bh2)",
+     "odd(y1,y2,y3,s2)"
+    ],
+    "left_out": [
+     "odd(s1,Bh1,Bh2)"
+    ],
+    "start_support": 24,
+    "target_support": 16,
+    "superset": true,
+    "n_at": [
+     6,
+     10,
+     15
+    ],
+    "D_at": [
+     12,
+     19,
+     28
+    ],
+    "outcome": "distinctions",
+    "assignments": 512,
+    "proportional_any": false,
+    "excess_any": false,
+    "best_hidden": 1.4444444444444449,
+    "left_out_facts": [
+     {
+      "knot": "odd(s1,Bh1,Bh2)",
+      "own_distinctions": [],
+      "shares_two_with": [
+       "even(y2,Bh1,Bh2)"
+      ],
+      "start_knots_it_meets": [
+       "nae(x1,x2,s1)",
+       "even(y2,Bh1,Bh2)"
+      ],
+      "of_them_live": 2,
+      "all_met_are_live": true,
+      "live_ones_pairwise_adjacent": false
+     }
+    ],
+    "reason": [
+     "the start already lacks the support: 24 observer words allowed, the target 16 (a superset); growth keeps the support",
+     "left-out knot(s) that no ordinary birth can make: odd(s1,Bh1,Bh2) (no distinction of its own, shares two distinctions with even(y2,Bh1,Bh2), the start knots it meets are not pairwise adjacent)"
+    ]
+   },
+   {
+    "mask": 99,
+    "founders": [
+     "nae(x1,x2,s1)",
+     "nae(x1,x3,s2)",
+     "odd(s1,Bh1,Bh2)",
+     "odd(y1,y2,y3,s2)"
+    ],
+    "left_out": [
+     "even(x2,Ah1,Ah2)",
+     "odd(x3,Ah1,Ah2)",
+     "even(y2,Bh1,Bh2)"
+    ],
+    "start_support": 48,
+    "target_support": 16,
+    "superset": true,
+    "n_at": [
+     4,
+     9,
+     14
+    ],
+    "D_at": [
+     10,
+     19,
+     25
+    ],
+    "outcome": "distinctions",
+    "assignments": 1024,
+    "proportional_any": false,
+    "excess_any": false,
+    "best_hidden": 0.7266739846322725,
+    "left_out_facts": [
+     {
+      "knot": "even(x2,Ah1,Ah2)",
+      "own_distinctions": [],
+      "shares_two_with": [
+       "odd(x3,Ah1,Ah2)"
+      ],
+      "start_knots_it_meets": [
+       "nae(x1,x2,s1)"
+      ],
+      "of_them_live": 1,
+      "all_met_are_live": true,
+      "live_ones_pairwise_adjacent": true
+     },
+     {
+      "knot": "odd(x3,Ah1,Ah2)",
+      "own_distinctions": [],
+      "shares_two_with": [
+       "even(x2,Ah1,Ah2)"
+      ],
+      "start_knots_it_meets": [
+       "nae(x1,x3,s2)"
+      ],
+      "of_them_live": 1,
+      "all_met_are_live": true,
+      "live_ones_pairwise_adjacent": true
+     },
+     {
+      "knot": "even(y2,Bh1,Bh2)",
+      "own_distinctions": [],
+      "shares_two_with": [
+       "odd(s1,Bh1,Bh2)"
+      ],
+      "start_knots_it_meets": [
+       "odd(s1,Bh1,Bh2)",
+       "odd(y1,y2,y3,s2)"
+      ],
+      "of_them_live": 2,
+      "all_met_are_live": true,
+      "live_ones_pairwise_adjacent": false
+     }
+    ],
+    "reason": [
+     "the start already lacks the support: 48 observer words allowed, the target 16 (a superset); growth keeps the support",
+     "left-out knot(s) that no ordinary birth can make: even(x2,Ah1,Ah2) (no distinction of its own, shares two distinctions with odd(x3,Ah1,Ah2)); odd(x3,Ah1,Ah2) (no distinction of its own, shares two distinctions with even(x2,Ah1,Ah2)); even(y2,Bh1,Bh2) (no distinction of its own, shares two distinctions with odd(s1,Bh1,Bh2), the start knots it meets are not pairwise adjacent)"
+    ]
+   },
+   {
+    "mask": 103,
+    "founders": [
+     "nae(x1,x2,s1)",
+     "nae(x1,x3,s2)",
+     "even(x2,Ah1,Ah2)",
+     "odd(s1,Bh1,Bh2)",
+     "odd(y1,y2,y3,s2)"
+    ],
+    "left_out": [
+     "odd(x3,Ah1,Ah2)",
+     "even(y2,Bh1,Bh2)"
+    ],
+    "start_support": 48,
+    "target_support": 16,
+    "superset": true,
+    "n_at": [
+     5
+    ],
+    "D_at": [
+     12
+    ],
+    "outcome": "stall",
+    "assignments": 1,
+    "proportional_any": false,
+    "excess_any": false,
+    "best_hidden": 0.6666666666666669,
+    "left_out_facts": [
+     {
+      "knot": "odd(x3,Ah1,Ah2)",
+      "own_distinctions": [],
+      "shares_two_with": [
+       "even(x2,Ah1,Ah2)"
+      ],
+      "start_knots_it_meets": [
+       "nae(x1,x3,s2)",
+       "even(x2,Ah1,Ah2)"
+      ],
+      "of_them_live": 2,
+      "all_met_are_live": true,
+      "live_ones_pairwise_adjacent": true
+     },
+     {
+      "knot": "even(y2,Bh1,Bh2)",
+      "own_distinctions": [],
+      "shares_two_with": [
+       "odd(s1,Bh1,Bh2)"
+      ],
+      "start_knots_it_meets": [
+       "odd(s1,Bh1,Bh2)",
+       "odd(y1,y2,y3,s2)"
+      ],
+      "of_them_live": 2,
+      "all_met_are_live": true,
+      "live_ones_pairwise_adjacent": false
+     }
+    ],
+    "reason": [
+     "the start already lacks the support: 48 observer words allowed, the target 16 (a superset); growth keeps the support",
+     "left-out knot(s) that no ordinary birth can make: odd(x3,Ah1,Ah2) (no distinction of its own, shares two distinctions with even(x2,Ah1,Ah2)); even(y2,Bh1,Bh2) (no distinction of its own, shares two distinctions with odd(s1,Bh1,Bh2), the start knots it meets are not pairwise adjacent)"
+    ]
+   },
+   {
+    "mask": 107,
+    "founders": [
+     "nae(x1,x2,s1)",
+     "nae(x1,x3,s2)",
+     "odd(x3,Ah1,Ah2)",
+     "odd(s1,Bh1,Bh2)",
+     "odd(y1,y2,y3,s2)"
+    ],
+    "left_out": [
+     "even(x2,Ah1,Ah2)",
+     "even(y2,Bh1,Bh2)"
+    ],
+    "start_support": 48,
+    "target_support": 16,
+    "superset": true,
+    "n_at": [
+     5
+    ],
+    "D_at": [
+     12
+    ],
+    "outcome": "stall",
+    "assignments": 1,
+    "proportional_any": false,
+    "excess_any": false,
+    "best_hidden": 0.6666666666666669,
+    "left_out_facts": [
+     {
+      "knot": "even(x2,Ah1,Ah2)",
+      "own_distinctions": [],
+      "shares_two_with": [
+       "odd(x3,Ah1,Ah2)"
+      ],
+      "start_knots_it_meets": [
+       "nae(x1,x2,s1)",
+       "odd(x3,Ah1,Ah2)"
+      ],
+      "of_them_live": 2,
+      "all_met_are_live": true,
+      "live_ones_pairwise_adjacent": true
+     },
+     {
+      "knot": "even(y2,Bh1,Bh2)",
+      "own_distinctions": [],
+      "shares_two_with": [
+       "odd(s1,Bh1,Bh2)"
+      ],
+      "start_knots_it_meets": [
+       "odd(s1,Bh1,Bh2)",
+       "odd(y1,y2,y3,s2)"
+      ],
+      "of_them_live": 2,
+      "all_met_are_live": true,
+      "live_ones_pairwise_adjacent": false
+     }
+    ],
+    "reason": [
+     "the start already lacks the support: 48 observer words allowed, the target 16 (a superset); growth keeps the support",
+     "left-out knot(s) that no ordinary birth can make: even(x2,Ah1,Ah2) (no distinction of its own, shares two distinctions with odd(x3,Ah1,Ah2)); even(y2,Bh1,Bh2) (no distinction of its own, shares two distinctions with odd(s1,Bh1,Bh2), the start knots it meets are not pairwise adjacent)"
+    ]
+   },
+   {
+    "mask": 111,
+    "founders": [
+     "nae(x1,x2,s1)",
+     "nae(x1,x3,s2)",
+     "even(x2,Ah1,Ah2)",
+     "odd(x3,Ah1,Ah2)",
+     "odd(s1,Bh1,Bh2)",
+     "odd(y1,y2,y3,s2)"
+    ],
+    "left_out": [
+     "even(y2,Bh1,Bh2)"
+    ],
+    "start_support": 24,
+    "target_support": 16,
+    "superset": true,
+    "n_at": [
+     6,
+     11
+    ],
+    "D_at": [
+     12,
+     22
+    ],
+    "outcome": "distinctions",
+    "assignments": 32,
+    "proportional_any": false,
+    "excess_any": false,
+    "best_hidden": 1.3333333333333333,
+    "left_out_facts": [
+     {
+      "knot": "even(y2,Bh1,Bh2)",
+      "own_distinctions": [],
+      "shares_two_with": [
+       "odd(s1,Bh1,Bh2)"
+      ],
+      "start_knots_it_meets": [
+       "odd(s1,Bh1,Bh2)",
+       "odd(y1,y2,y3,s2)"
+      ],
+      "of_them_live": 2,
+      "all_met_are_live": true,
+      "live_ones_pairwise_adjacent": false
+     }
+    ],
+    "reason": [
+     "the start already lacks the support: 24 observer words allowed, the target 16 (a superset); growth keeps the support",
+     "left-out knot(s) that no ordinary birth can make: even(y2,Bh1,Bh2) (no distinction of its own, shares two distinctions with odd(s1,Bh1,Bh2), the start knots it meets are not pairwise adjacent)"
+    ]
+   },
+   {
+    "mask": 115,
+    "founders": [
+     "nae(x1,x2,s1)",
+     "nae(x1,x3,s2)",
+     "even(y2,Bh1,Bh2)",
+     "odd(s1,Bh1,Bh2)",
+     "odd(y1,y2,y3,s2)"
+    ],
+    "left_out": [
+     "even(x2,Ah1,Ah2)",
+     "odd(x3,Ah1,Ah2)"
+    ],
+    "start_support": 36,
+    "target_support": 16,
+    "superset": true,
+    "n_at": [
+     5,
+     8,
+     12
+    ],
+    "D_at": [
+     10,
+     15,
+     22
+    ],
+    "outcome": "distinctions",
+    "assignments": 128,
+    "proportional_any": false,
+    "excess_any": false,
+    "best_hidden": null,
+    "left_out_facts": [
+     {
+      "knot": "even(x2,Ah1,Ah2)",
+      "own_distinctions": [],
+      "shares_two_with": [
+       "odd(x3,Ah1,Ah2)"
+      ],
+      "start_knots_it_meets": [
+       "nae(x1,x2,s1)"
+      ],
+      "of_them_live": 1,
+      "all_met_are_live": true,
+      "live_ones_pairwise_adjacent": true
+     },
+     {
+      "knot": "odd(x3,Ah1,Ah2)",
+      "own_distinctions": [],
+      "shares_two_with": [
+       "even(x2,Ah1,Ah2)"
+      ],
+      "start_knots_it_meets": [
+       "nae(x1,x3,s2)"
+      ],
+      "of_them_live": 1,
+      "all_met_are_live": true,
+      "live_ones_pairwise_adjacent": true
+     }
+    ],
+    "reason": [
+     "the start already lacks the support: 36 observer words allowed, the target 16 (a superset); growth keeps the support",
+     "left-out knot(s) that no ordinary birth can make: even(x2,Ah1,Ah2) (no distinction of its own, shares two distinctions with odd(x3,Ah1,Ah2)); odd(x3,Ah1,Ah2) (no distinction of its own, shares two distinctions with even(x2,Ah1,Ah2))"
+    ]
+   },
+   {
+    "mask": 119,
+    "founders": [
+     "nae(x1,x2,s1)",
+     "nae(x1,x3,s2)",
+     "even(x2,Ah1,Ah2)",
+     "even(y2,Bh1,Bh2)",
+     "odd(s1,Bh1,Bh2)",
+     "odd(y1,y2,y3,s2)"
+    ],
+    "left_out": [
+     "odd(x3,Ah1,Ah2)"
+    ],
+    "start_support": 36,
+    "target_support": 16,
+    "superset": true,
+    "n_at": [
+     6,
+     10,
+     15
+    ],
+    "D_at": [
+     12,
+     19,
+     28
+    ],
+    "outcome": "distinctions",
+    "assignments": 512,
+    "proportional_any": false,
+    "excess_any": false,
+    "best_hidden": null,
+    "left_out_facts": [
+     {
+      "knot": "odd(x3,Ah1,Ah2)",
+      "own_distinctions": [],
+      "shares_two_with": [
+       "even(x2,Ah1,Ah2)"
+      ],
+      "start_knots_it_meets": [
+       "nae(x1,x3,s2)",
+       "even(x2,Ah1,Ah2)"
+      ],
+      "of_them_live": 2,
+      "all_met_are_live": true,
+      "live_ones_pairwise_adjacent": true
+     }
+    ],
+    "reason": [
+     "the start already lacks the support: 36 observer words allowed, the target 16 (a superset); growth keeps the support",
+     "left-out knot(s) that no ordinary birth can make: odd(x3,Ah1,Ah2) (no distinction of its own, shares two distinctions with even(x2,Ah1,Ah2))"
+    ]
+   },
+   {
+    "mask": 123,
+    "founders": [
+     "nae(x1,x2,s1)",
+     "nae(x1,x3,s2)",
+     "odd(x3,Ah1,Ah2)",
+     "even(y2,Bh1,Bh2)",
+     "odd(s1,Bh1,Bh2)",
+     "odd(y1,y2,y3,s2)"
+    ],
+    "left_out": [
+     "even(x2,Ah1,Ah2)"
+    ],
+    "start_support": 36,
+    "target_support": 16,
+    "superset": true,
+    "n_at": [
+     6
+    ],
+    "D_at": [
+     12
+    ],
+    "outcome": "stall",
+    "assignments": 1,
+    "proportional_any": false,
+    "excess_any": false,
+    "best_hidden": null,
+    "left_out_facts": [
+     {
+      "knot": "even(x2,Ah1,Ah2)",
+      "own_distinctions": [],
+      "shares_two_with": [
+       "odd(x3,Ah1,Ah2)"
+      ],
+      "start_knots_it_meets": [
+       "nae(x1,x2,s1)",
+       "odd(x3,Ah1,Ah2)"
+      ],
+      "of_them_live": 2,
+      "all_met_are_live": true,
+      "live_ones_pairwise_adjacent": true
+     }
+    ],
+    "reason": [
+     "the start already lacks the support: 36 observer words allowed, the target 16 (a superset); growth keeps the support",
+     "left-out knot(s) that no ordinary birth can make: even(x2,Ah1,Ah2) (no distinction of its own, shares two distinctions with odd(x3,Ah1,Ah2))"
+    ]
+   },
+   {
+    "mask": 125,
+    "founders": [
+     "nae(x1,x2,s1)",
+     "even(x2,Ah1,Ah2)",
+     "odd(x3,Ah1,Ah2)",
+     "even(y2,Bh1,Bh2)",
+     "odd(s1,Bh1,Bh2)",
+     "odd(y1,y2,y3,s2)"
+    ],
+    "left_out": [
+     "nae(x1,x3,s2)"
+    ],
+    "start_support": 24,
+    "target_support": 16,
+    "superset": true,
+    "n_at": [
+     6,
+     10,
+     14
+    ],
+    "D_at": [
+     12,
+     19,
+     24
+    ],
+    "outcome": "distinctions",
+    "assignments": 256,
+    "proportional_any": false,
+    "excess_any": false,
+    "best_hidden": 1.3333333333333337,
+    "left_out_facts": [
+     {
+      "knot": "nae(x1,x3,s2)",
+      "own_distinctions": [],
+      "shares_two_with": [],
+      "start_knots_it_meets": [
+       "nae(x1,x2,s1)",
+       "odd(x3,Ah1,Ah2)",
+       "odd(y1,y2,y3,s2)"
+      ],
+      "of_them_live": 3,
+      "all_met_are_live": true,
+      "live_ones_pairwise_adjacent": false
+     }
+    ],
+    "reason": [
+     "the start already lacks the support: 24 observer words allowed, the target 16 (a superset); growth keeps the support",
+     "left-out knot(s) that no ordinary birth can make: nae(x1,x3,s2) (no distinction of its own, the start knots it meets are not pairwise adjacent)"
+    ]
+   },
+   {
+    "mask": 126,
+    "founders": [
+     "nae(x1,x3,s2)",
+     "even(x2,Ah1,Ah2)",
+     "odd(x3,Ah1,Ah2)",
+     "even(y2,Bh1,Bh2)",
+     "odd(s1,Bh1,Bh2)",
+     "odd(y1,y2,y3,s2)"
+    ],
+    "left_out": [
+     "nae(x1,x2,s1)"
+    ],
+    "start_support": 24,
+    "target_support": 16,
+    "superset": true,
+    "n_at": [
+     6,
+     9,
+     12
+    ],
+    "D_at": [
+     12,
+     16,
+     21
+    ],
+    "outcome": "distinctions",
+    "assignments": 64,
+    "proportional_any": false,
+    "excess_any": false,
+    "best_hidden": 1.333333333333334,
+    "left_out_facts": [
+     {
+      "knot": "nae(x1,x2,s1)",
+      "own_distinctions": [],
+      "shares_two_with": [],
+      "start_knots_it_meets": [
+       "nae(x1,x3,s2)",
+       "even(x2,Ah1,Ah2)",
+       "odd(s1,Bh1,Bh2)"
+      ],
+      "of_them_live": 3,
+      "all_met_are_live": true,
+      "live_ones_pairwise_adjacent": false
+     }
+    ],
+    "reason": [
+     "the start already lacks the support: 24 observer words allowed, the target 16 (a superset); growth keeps the support",
+     "left-out knot(s) that no ordinary birth can make: nae(x1,x2,s1) (no distinction of its own, the start knots it meets are not pairwise adjacent)"
+    ]
+   }
+  ]
+ }
+}

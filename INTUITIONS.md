@@ -3530,14 +3530,25 @@ the law.
   distinctions its cancelled joins would have taken; if it holds them instead,
   the ring jams for good. Offshoots: without them nothing comes apart. The cap
   is the one thing it does not need in any exact form.
-- **Small parts that copy themselves (not predicted).** When a new knot
-  receives only enough for three places, and a short knot's joins are
-  cancelled, a part of two knots comes back after two rounds beside a copy of
-  itself, with no knot waiting. Under one such law the knots that can still
-  make something number 10, 15, 25, 40, 65, …, five times the Fibonacci
-  numbers, in separate small parts. The literature's name for a pattern that
-  copies itself is a replicator. These turned up in the table of swapped rules
-  and have not been studied.
+- **Small parts that copy themselves (computed, referee pending).** When a new
+  knot receives only enough for three places, and a short knot's joins are
+  cancelled, a part of two knots becomes two of the same every two rounds,
+  with no knot waiting. The two join; their join receives one distinction
+  where two will be asked of it; and each of their offshoots makes two
+  offshoots of its own. How fast the copies multiply depends on what the short
+  join then does. If it gives up, they double every two rounds. If it makes an
+  offshoot, one more copy follows a round later and the count grows by the
+  golden ratio a round; on the ring of five the counts are five times the
+  Fibonacci numbers. If it waits, the counts from one such part are the Pell
+  numbers, 1, 2, 5, 12, 29, …. Every knot made passes the knot test under
+  both knot laws on the small starts tested, and under the simplest such
+  ration a part copies itself in 85 to 97 of every hundred starts of up to
+  five knots, each counted once
+  ([COPYING-PARTS-20261123-001](research/COPYING-PARTS-20261123-001/decision.md)).
+  The copies never meet again, so this is a population with a fixed rule of
+  descent, like the literature's Fibonacci rabbits, and not a machine: nothing
+  here combines or reads. Nobody predicted these parts; they turned up in the
+  table of swapped rules.
 - **What is ours here, and not earned.** Every rule here was added by hand
   (assumption A224, a scaffold), the release included. The pilot's search of
   56 combinations of ways to ration fresh distinctions and to treat a knot
@@ -3711,12 +3722,12 @@ interpretation that no result settles.
   minds. The owner's words name what a base would have to grow before such a
   question could be asked of it.
 
-**What is open.** The ring that returns now has a frozen study behind it,
-with its referee pending. Four things are open. Whether a law exists in which
-the knots of one part need not read together (B323, under goal G5). What the
-small parts that copy themselves are. A first "fold of emergence": since parts
-that have come apart never meet again under these rules, a made pattern that
-reads another needs a law under which they can (B317, under G15). And proofs
+**What is open.** The ring that returns and the parts that copy themselves
+each have a frozen study behind them, with referees pending. Three things are
+open. Whether a law exists in which the knots of one part need not read
+together (B323, under goal G5). A first "fold of emergence": since parts that
+have come apart never meet again under these rules, a made pattern that reads
+another needs a law under which they can (B317, under G15). And proofs
 of what is so far argued or computed: the return for every odd ring, the sizes
 of the parts under each cap, and that one leftover distinction on every knot
 turns rate x into the x′ of x′² = x(x′ + 1) (B316, under G17).

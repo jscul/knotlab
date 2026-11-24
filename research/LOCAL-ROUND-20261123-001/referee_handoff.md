@@ -23,7 +23,7 @@ Things a referee should know.
   the distance needed there (10) was wrong; the runs give 6. Its account of the mechanism is right except for which reading
   first goes wrong.
 - **Unfinished searches.** 67 of the searches over every order did not finish: 21 at their cap on states and 46 at a time
-  budget that the thread added and the pre-registration did not have. Three are being run again to the registered cap (long-running check `LOCALROUND-P7-CAP`). No
+  budget that the thread added and the pre-registration did not have. Three were run again to the registered cap (long-running check `LOCALROUND-P7-CAP`), with no mismatch. No
   unfinished search found a mismatch for a law predicted to match.
 - **What a sampled order is.** At each step a uniform choice among the allowed sets of parents; a member's several offshoots
   count as one choice. Shares of sampled orders are under that choice only.

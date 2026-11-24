@@ -47,7 +47,7 @@ allowed births at every step; "x-last" means one order for each knot, which serv
 | P4 | Holds | R3L fails on the cycle of n through dead knots at exactly 2n + 4 births (12, 14, 16 for n = 4, 5, 6). |
 | P5 | Holds | With no waiting (a short knot retires, or makes offshoots), R1, R2 and R3 match in every order on the two-knot and three-knot starts, through round 3 (and through round 4 where the search finished). |
 | P6 | Holds | R3L fails at 3, 3, 6 and 17 births on the four starts named, and does not fail on the three-knot start when the short knot retires. |
-| P7 | Holds in part | Under ordinary growth R1, R2 and R3 match in every order on the cycle of four through round 2 (about 1.05 million states), the two-knot start through round 3 and the lone four-place knot through round 4, where the closing bit fires once in every order, at the reference's closing birth. On the ring of five through round 2 every order was searched without a mismatch to 35 of 50 births (about 7.2 million states), where a time budget stopped it; all sampled and x-last orders match. A rerun to the registered cap of ten million states is pending (below). |
+| P7 | Holds in part | Under ordinary growth R1, R2 and R3 match in every order on the cycle of four through round 2 (about 1.05 million states), the two-knot start through round 3 and the lone four-place knot through round 4, where the closing bit fires once in every order, at the reference's closing birth. On the ring of five through round 2 every order was searched without a mismatch to 36 of 50 births, where the registered cap of ten million states was reached (11.6 to 11.8 million states, the cap being checked at the end of a level); all sampled and x-last orders match. |
 | P8 | Holds | On the start-clause counterexample every law but the control fails at 2 births, and the control underbuilds. |
 | P9 | Holds in part | The control underbuilds in every order wherever a knot waits (a check), and never mismatches. With no waiting it matches in every order at every cutoff searched, except that on the ring of five under ordinary growth the search reached its cap at 36 of 50 births. |
 | P10 | Holds | R0 fails on every start, at 1 to 3 births. |
@@ -111,9 +111,9 @@ The prototype was written by the drafter of the definitions and is independent o
 
 - **Time budgets were added to the caps (the thread's doing).** The pre-registration caps a search by its number of states.
   The thread's brief to the engine's author also set a time budget, so 46 of the 67 unfinished searches stopped on time
-  before their cap. For P7, the one prediction where this mattered, the three searches on the ring of five are being run
-  again to the registered cap of ten million states (long-running check `LOCALROUND-P7-CAP`, stress test pending). The
-  numbers above are the first runs'; the rerun's will be added here.
+  before their cap. For P7, the one prediction where this mattered, the three searches on the ring of five were run again
+  to the registered cap of ten million states (long-running check `LOCALROUND-P7-CAP`, 28 to 29 minutes each). Those are
+  the numbers given above; the first runs had stopped at 35 births.
 - **A prediction without a run.** P4 predicted the cycle of six, which no registered run covered. The engine's author ran it
   as an extra, recorded before the run.
 - **A table and a rule disagreed.** The ring of five was listed with one cutoff for the search and another for the samples;

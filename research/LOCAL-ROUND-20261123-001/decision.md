@@ -75,7 +75,7 @@ clause with the rule for a second reading).
 Finite and computed: twenty pairs of start and law; with waiting, to round 1 on the cycles and rings and in sampled orders to
 round 3; of 193 registered searches over every order, 126 finished. That the brood guard is exact at every round rests on an
 argument in the definitions, written for the referee and not proved. The thread set a time budget that the pre-registration
-did not have; the one prediction it touched is being run again to the registered cap (stress test pending).
+did not have; the one prediction it touched was run again to the registered cap, with no mismatch.
 
 ## Final report as sent (2026-11-24 19:08 UTC)
 

@@ -10,5 +10,5 @@ Taken together ([decision](../../../research/LOCAL-ROUND-20261123-001/decision.m
 from whom, a knot that waits until every knot made alongside it has parents that have finished giving, and then replays the
 round on that record, builds one birth at a time what the complete rounds build, in every order searched. Four holder steps
 suffice on cycles through dead knots; each further wait of a knot reaches further. The round is replayed from the record,
-not done without, and the record, the rule for start knots and the rule for a second reading are supplied. One search over
-every order is being run again to its registered cap (stress test pending).
+not done without, and the record, the rule for start knots and the rule for a second reading are supplied. The one
+search that a time budget had cut short was run again to its registered cap, with no mismatch.

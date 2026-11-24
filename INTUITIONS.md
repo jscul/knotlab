@@ -105,6 +105,7 @@ PYTHONPATH=tools python3 -m knotlab demo
   - [8.4 What distance carries of what grows](#84-what-distance-carries-of-what-grows)
   - [8.5 Locality before space](#85-locality-before-space)
   - [8.6 Structure and state](#86-structure-and-state)
+  - [8.7 Generators and folds of emergence](#87-generators-and-folds-of-emergence)
 - [Glossary](#glossary)
 
 ## Chapter 1. Bits and rules
@@ -2715,7 +2716,8 @@ how a growth that blows up is to be read, and how much of what grows its
 distances carry. They build on lessons 2.4 (distance), 4.6 (dimension, read
 from how fast balls grow) and 7.3 (samples and weightings). Each claim says
 whether it is proved, computed or open, and a result is given as settled only
-once its referee has confirmed it.
+once its referee has confirmed it. Lesson 8.7 adds the generator studies of 20
+to 23 November.
 
 ### 8.1 Growing in rounds
 
@@ -2947,7 +2949,8 @@ list balances, W(1/x) = 1.
   on where they sit. For a ring of seven with one hung knot the balance is
   x^8 = x + 1, which gives 1.0970: about 10% more junctions each round. No
   such ring grows faster than the golden ratio, 1.618, which a ring whose every
-  knot carries a leftover distinction reaches at any length
+  knot carries a leftover distinction reaches at five knots and at seven or
+  more; rings of three, four and six are outside the class
   ([RING-CORES-20261119-001](research/RING-CORES-20261119-001/ring_cores.md)).
 - **With dead knots, still within five places (proved, refereed).** The kind
   of growth of each connected part of the map is set by its number of
@@ -2993,7 +2996,7 @@ overlap one another, and the unrolled map no longer says what grows.
   its growth, the 9 junctions left join in every way once, and it ends
   ([EXPLOSIVE-20261119-001](research/EXPLOSIVE-20261119-001/explosive.md)). One
   more ends the same way, through a block of 781; the other 14 could not be
-  followed far enough (MERGE-BURST, referee pending), and followed one or two
+  followed far enough (MERGE-BURST, refereed), and followed one or two
   rounds further they were still unread at the WALL-READ stopping point.
   The original sampling rule included two jumping descriptions with an extra
   constraint inside a starting junction. Checking every original draw gives
@@ -3002,7 +3005,7 @@ overlap one another, and the unrolled map no longer says what grows.
   points. The retained starts include an example with exponentially growing
   births and others that end after a finite burst.
   [Source counts and growth proofs](research/HEAVY-GROWTH-20261119-001/decision.md)
-- **One kind that never ends (proved, referee pending).** Let the live knots
+- **One kind that never ends (proved, refereed).** Let the live knots
   come in partner pairs, each able to join every knot but its partner, with the
   open distinctions that needs. Every round keeps that form, and the count runs
   6, 8, 10, 24, 4,086, then 2^2043 − 24: each about two to the power of half
@@ -3349,7 +3352,283 @@ program's reading, state feeding back into growth is where behaviour like
 gravity would have to come from: structure that changes where there is
 activity.
 Nobody has built that, and it is the first of the leads recorded with this
-lesson (backlog B210 to B213, under goal G17).
+lesson (backlog B210 to B213, under goal G17). Since then it has been built
+only by adding a rule by hand, and for ordinary growth a stored value is
+proved, referee pending, to steer nothing (lesson 8.7).
+
+### 8.7 Generators and folds of emergence
+
+**The owner's questions.** On 20 November 2026 the owner wrote: "there are
+underlying rules that can exist that don't destroy each other but can create
+things. This is kind of like a generator in conway's game of life." On 23
+November he asked again, and wider: "have we made generators yet? Like
+structures that output other structures that either die, or live, or combine
+with other patterns? This is like logic of cellular biology where you have
+machines printing stuff, and cells reproducing to receive and send signals".
+Of the golden-ratio eddy of this chapter's introduction he asked: "Is there a
+way to actually use the golden ratio currently as a means of growth? Like is
+there a 'connector' or 'gadget' of sorts we could use?" This lesson says what
+the record holds on each question and what it lacks. Its last part records the
+picture he asked to have written down, of DNA and intelligence as "folds of
+emergence".
+
+**The literature's picture.** Conway's Life (lesson 1.3) has the best-known
+generator, the literature's glider gun (Gosper, 1970): 36 live cells that come
+back to the same shape every 30 steps, having made one new glider each time.
+What a gun makes can go on, end or combine. A glider travels on unchanged. A
+glider that meets the literature's eater is destroyed, and the eater is left
+as it was. Two gliders that meet can leave nothing, or a new pattern that
+stays.
+A pattern can also copy itself: under the neighbouring rule HighLife (found by
+Thompson and described by Bell, 1994) the literature's replicator becomes two
+copies of itself every 12 steps, and where two copies would land on one place
+both vanish, so after 12k steps there are two to the power of the number of
+ones in k, written in binary, copies. Machines that build copies of themselves
+go back to von Neumann's self-reproducing automata (1966). All of this happens
+on a board drawn in advance, with a clock that steps every cell at once. The
+program gives itself no board (lesson 1.3), and its rounds turn out to be
+bookkeeping, not a clock (lesson 8.1). So the question is how much of the
+picture the growth of lesson 8.1 has without them.
+
+**A generator in ordinary growth (proved; refereed in part).** Ordinary growth,
+the cheapest growth of lesson 8.1 with nothing added, has generators of its
+own kind
+([GENERATORS-20261120-001](research/GENERATORS-20261120-001/decision.md); its
+referee regrew the start below and the verdict stands, with the meeting read,
+not recomputed, and the nested case not checked).
+
+- **Packets and release.** A **packet** is a finite set of knots made in one
+  round whose later members take every parent from the packet's own earlier
+  members. It is **released** in the round from which that holds. Release is
+  about parents; it does not mean that a distinction becomes loose. A packet
+  **lasts** when it has members in every later round. A start is a
+  **generator** when it releases infinitely many packets that last and share
+  no member.
+- **The smallest one known.** Seven knots holding 25 distinctions, one of the
+  knots dead, release a packet in rounds 15, 23 and 31 and in every eighth
+  round after (the record counts cluster sizes, one more than the round).
+  Seven knots, and then 25 distinctions, are the fewest in the class where
+  every knot can be reconstructed from the start (lesson 8.1's theorem);
+  outside that class the fewest is open
+  ([the generator's note](research/GENERATORS-20261120-001/source.md)). The web edition
+  shows this start among the growths at the head of the chapter. Its first
+  release lies far past what can be drawn there.
+- **Packets can combine while both go on.** In a start of 21 knots two packets
+  are released in round 15 and make a shared knot in round 16, while each still
+  supplies all its own parents, and descendants of the shared knot can take a
+  distinction from one of them at every later round. In a matched start that keeps
+  the two apart the shared knot is never made, and a corresponding knot
+  receives 15 fresh distinctions where it had received 18.
+- **A packet can be a generator.** One packet released in that start keeps
+  releasing packets of its own.
+- **One ring is not enough.** A ring, however it is decorated, is no
+  generator: each of its walks carries at most one packet that lasts, so an
+  odd ring carries at most one and an even ring at most two. That includes the
+  golden-ratio eddy, for all its births. In this class a generator needs two independent
+  cycles of the map of joins in one connected part.
+
+All of this holds under parity and under not-all-equal, with no values, no rule
+of motion and no clock supplied.
+
+**What counts as a thing is a reading.** The births, their parents and their
+fresh distinctions come from the growth alone. Calling some of them a packet is
+a reading of the whole structure, dead knots included, and the reading was
+chosen (assumption A125, a scaffold). A reading that returns whole connected
+parts of the live roster finds no release at all, because those parts never
+come apart (below). A packet is also not independent in a stronger sense: grown
+alone from its own holdings it changes its fresh counts at once. In the
+referee's words, "'both survive' means two lineage-closed families keep
+growing. It does not mean two independent objects."
+
+**Where this falls short of a gun.**
+
+- **Each release is larger than the last.** No fixed pattern is made twice.
+- **No packet of fixed width forever (proved; the referee read this proof in
+  outline).** From a finite start in the class above, only finitely many
+  packets that last can be released with at most w knots apiece, for every w
+  and under every reading. Each lasting packet has to keep its own repeating
+  line of parents or its own endless chain, and a finite start has finitely
+  many of them at each width. The seven-knot
+  generator keeps none narrower than four knots and at most two of width four
+  ([COPIES-AND-MEETINGS-20261120-001](research/COPIES-AND-MEETINGS-20261120-001/bounded.md)).
+  Beyond that class the proof covers packets of one knot and packets that stay
+  at three knots or fewer; the rest is open.
+- **Holdings grow.** On the seven-knot generator a knot made in round t holds
+  at least (t + 9)/5 fresh distinctions, so no pattern with fixed holdings
+  comes back at later and later rounds (same note).
+- **Nothing is given off (proved).** A gun sheds what it makes. In ordinary
+  growth the connected parts of the live roster neither come apart nor merge
+  (the literature's components;
+  [note](research/GENERATORS-20261120-001/components.md)). And no part ends
+  while another goes on: every knot made after the start receives at least one
+  fresh distinction, so it has a successor, and the only endings are the whole
+  growth closing or stalling.
+
+**Balance (computed under added rules, not refereed).** Told of that limit, the
+owner wrote on 23 November 2026: "We need to break this limit. I'm imagining a
+system of balance. Similar to life and death cycles." The limit counts packets
+that last, so a thing that ends is not counted by it. And ordinary growth
+already has one kind of balance: in the live roster every knot is live for
+exactly one round, so on a bare ring of five, five knots leave the live roster
+and five join it, in the same holdings, round after round. What it lacks is the
+giving off and the ending. A pilot on the same day looked for them by changing
+the law.
+
+- **Two added rules give a ring that returns and gives off parts.** First, a
+  new knot receives at most three fresh distinctions. Second, a knot that owes
+  more loose distinctions than it holds makes none of its joins: it waits,
+  keeping what it holds, where the ordinary law stalls the whole round, and
+  the other parents of those joins make offshoots with the distinctions the
+  joins would have taken. Start from a ring of five knots, each sharing a
+  distinction with the next and holding three loose distinctions: the start of
+  the golden-ratio eddy. Round 1 makes five joins and five offshoots, and each
+  join is asked for by four joins of round 2 while holding three distinctions.
+  So in round 2 no join is made: the five knots that round 1's joins made
+  wait, and each offshoot makes two knots of its own. The live roster is then
+  the start's again, exactly, with the waiting knots in the ring's place,
+  together with five separate parts of two knots. This repeats every two
+  rounds without end, so the live roster has 1, 1, 6, 6, 11, 11, 16, …
+  separate parts. Each time the same finite thing comes apart from the ring,
+  which ordinary growth cannot do. The same holds for every ring of an odd
+  number of knots from five up; a ring of four or of six does not return.
+- **Scarcity makes the difference.** Under the ordinary law the same start is
+  the eddy: each join receives all four distinctions it is asked for, every
+  join is made, and the count grows by the golden ratio. With at most three,
+  the ring holds itself back and gives parts off.
+- **Not yet a balance.** Under the two rules each part that came apart is the
+  two-ended growth that ordinary growth gives two such knots: it gains one
+  knot a round (computed for 40 rounds), so the live roster still grows.
+- **A third rule gives one.** Let a fresh distinction that a knot receives only
+  to make up three places, or as its least of one, and that no join of the
+  next round asks for, never be used. Then each part that came apart makes one
+  joint knot in the next round, which holds nothing it may spend, and the part
+  makes nothing more. Counting the knots that can still make something, the
+  whole pattern repeats every two rounds from round 1 on: over each two rounds
+  as many of them stop as start.
+- **What is ours here, and not earned.** All three rules were added by hand
+  (assumption A224, a scaffold). The result is an argument for every such
+  ring, checked by two independent programs, and it is not refereed. In the
+  pilot's search of 56 combinations of ways to ration fresh distinctions and
+  to treat a knot that cannot pay, a pattern that returns and gives off parts
+  appeared in three, all with waiting, and in none did the parts end. The
+  third rule was added for that, and under it no start of the pilot kept
+  growing, an endless chain included. The knots that stop under it still hold
+  a loose distinction that is never used, so in the glossary's sense they stay
+  live. Whether every knot made under these rules passes the knot test in the
+  whole structure, and what not-all-equal does, are not yet checked. The limit
+  above is a theorem about ordinary growth, and it stands.
+
+**Using the golden ratio.** The golden ratio can be had on purpose, and there
+is a gadget for it, but nothing that carries it from one part to another.
+
+- **The gadget (proved for rings, refereed).** On a ring the lap weight is a
+  product of factors (lesson 8.2): y for each knot on the walk, 1 + y for each
+  leftover distinction, and 1 + y(1 + y)^b for each hung knot with b leftover
+  distinctions. One leftover distinction on every knot turns each knot's factor
+  into y(1 + y), and y(1 + y) = 1 is x² = x + 1, the golden ratio's equation. A
+  ring of n such knots makes exactly n times the Fibonacci numbers, n, 2n, 3n,
+  5n, 8n, …, from the start on, for five knots and for seven or more (rings
+  of three, four and six are outside the proved class)
+  ([RING-CORES-20261119-001](research/RING-CORES-20261119-001/ring_cores.md);
+  recomputed on 23 November 2026 for n = 5, 7, 8, 9, 10 and 11 on two
+  independent growth programs).
+- **A dial.** On a ring of an odd number n of knots, five or more, with k
+  knots keeping a leftover distinction, the rate solves x^(n+k) = (x + 1)^k
+  (the proved lap weight, rewritten). It depends only on the share k/n, and
+  runs from 1 with none to the golden ratio with all; where the leftover
+  distinctions sit changes the first rounds only. Lesson 8.2's ring of seven
+  with one hung knot sits on the dial at k = 1, since a hung knot with no
+  leftover distinction brings the same factor 1 + y.
+- **The same gadget on other starts (computed, not refereed).** Take a start
+  in the class of lesson 8.1's theorem and give every knot one leftover
+  distinction. By that theorem each knot of the
+  new growth is a knot of the old one together with any choice of its leftover
+  distinctions, so the new counts are read off the old ones, and a growth of
+  rate x becomes a growth of rate x′ with x′² = x(x′ + 1). A bare ring, rate 1,
+  becomes the golden ratio. A ring of five with a hung knot goes from 1.1347 to
+  1.7743, and two bare rings of five joined by a shared distinction go from
+  2.6075 to 3.3792. Two growth programs agree with the rule on every round
+  they reached of the five starts tried.
+- **What hangs on the eddy (computed, not refereed).** A three-place knot hung
+  on the golden ring of five raises the rate to 1.7292. The ring's own line of
+  knots keeps its counts exactly, 5, 10, 15, 25, 40, …; the knots that descend
+  from the hung knot grow at the higher rate and are 70% of the births by round
+  16. Alone, that three-place knot closes after three rounds (this chapter's
+  introduction). Hung on a bare ring of five its line grows by 1.1347 a round,
+  the rate of x⁶ = x + 1. So a part that would finish alone is kept going by a
+  ring, at a rate the ring sets.
+- **No connector.** Joining does not hand the golden ratio on, and rates do
+  not multiply. Two golden rings of five joined by one shared distinction grow
+  at 3.3792, not at 1.618² = 2.618. The 2.6075 of two bare rings joined that
+  way (lesson 8.2's "about 2.61") is not 2.618 either. Joining by spending the
+  ring's own leftover distinctions lowers the rate, to 1.3854 in the case
+  tried.
+- **With state (a supplied rule).** Under a rule added by hand, in which a
+  knot's state can add a fresh distinction, switching on a whole bare ring
+  changes its growth factor from one to the golden ratio
+  ([STATE-FEEDS-GROWTH-20261119-001](research/STATE-FEEDS-GROWTH-20261119-001/selection.md);
+  a result about the added rule, read by its referee and not recomputed).
+  Ordinary growth has no such switch (next part).
+
+**Readers and signals so far.**
+
+- **A value steers nothing in ordinary growth (proved, referee pending).** A
+  stored value can change which values a later knot may hold. With the same
+  holdings, groups and payments it cannot make a knot keep a distinction, pay
+  a different child or make a different birth
+  ([STORED-BIT-AND-NEXT-ACTION-20261122-001](research/STORED-BIT-AND-NEXT-ACTION-20261122-001/decision.md)).
+  The state changes what grows only under rules added by hand (lesson 8.6).
+- **Influence inside one growth is shared descent (proved, refereed).** While
+  the growth stays funded, two packets first share a descendant after exactly
+  as many parent steps as there were steps between them at release. In the
+  seven-knot generator two packets released in round 158 first share one in
+  round 307 (computed from the proved map). Its referee calls this a
+  pace of shared descent, not a limit on all influence
+  ([COPIES-AND-MEETINGS-20261120-001](research/COPIES-AND-MEETINGS-20261120-001/decision.md)).
+- **A signal that is chosen exists only between two prepared starts.** Under
+  parity, one extra loose distinction in one place of a start can decide
+  between closing and growing forever in another (refereed,
+  [ORDINARY-DYNAMICS-20261120-001](research/ORDINARY-DYNAMICS-20261120-001/decision.md)).
+  Nothing inside one growth has been shown to choose it.
+- **Every reader was supplied.** The sensors, rewards and rules of every
+  reader, learner and agent in the record so far were written by hand. Making
+  the one who reads out of the growth itself is open (goal G15).
+
+**"Folds of emergence" (the owner's picture; an interpretation).** On 23
+November 2026 the owner asked for this to be recorded: "I'd like to record DNA
+as something like 'intelligence' as an emergent structure/pattern. So things
+like DNA are kind of like patterns that observe a different pattern but also
+have their own growing patterns. This is generalized, so maybe DNA has some
+access to things like the golden ratios, and can output structures based on
+that." And: "structures like DNA or intelligence should maybe be exceptional,
+almost considered folds of emergence." It is recorded as assumption A223, an
+interpretation that no result settles.
+
+- **Read in the program's terms.** A "fold of emergence" would be a pattern
+  with three properties: the rules make it and nobody places it; what it makes
+  depends on another pattern; and it makes a pattern of its own. Emergence is
+  then folded once more: something that emerged reads something that emerged.
+- **What the record has of each.** Packets are made by the growth, and a
+  packet can release packets of its own. Whether two packets are joined or
+  kept apart changes what a knot receives, 18 fresh distinctions against 15.
+  And a part hung on an eddy grows at a rate the eddy sets, which is the
+  nearest thing in the record to the access to the golden ratio that the
+  owner pictures.
+- **What is missing.** The reading. In each of those cases the dependence is a
+  comparison that we make between two starts. No pattern in one growth has
+  been shown to take one course or another according to what a second pattern
+  is. That is the first test of this picture, and it is open.
+- **No claim about living things.** The guide says nothing about DNA, cells or
+  minds. The owner's words name what a base would have to grow before such a
+  question could be asked of it.
+
+**What is open.** Three leads were recorded with this lesson. The first is a
+law with a reason of its own under which a ring returns, gives off one fixed
+thing and the things end, with the knot test checked at every birth (B315,
+under goal G18). The second is a proof that one leftover distinction on every
+knot turns rate x into the x′ of x′² = x(x′ + 1) (B316, under G17). The third
+is a first "fold of emergence": one growth in which a made pattern's course
+depends on what a second made pattern is (B317, under G15).
 
 ## Glossary
 
@@ -3869,6 +4148,27 @@ that earlier records used in two senses.
   octahedron). Runaway growth: each round's count is about two to the power of
   half the one before (the literature's iterated exponential), as in a start
   whose live knots are partnered (lesson 8.2).
+- **Generator; packet; release.** The owner's word generator (20 and 23
+  November 2026): a start that keeps making separate things. In the record's
+  test (assumption A125) a **packet** is a finite set of knots made in one
+  round whose later members take every parent from the packet's own earlier
+  members; it is **released** in the round from which that holds, which is
+  about parents and not about a distinction becoming loose; a packet lasts
+  when it has members in every later round; and a start is a generator when it
+  releases infinitely many packets that last and share no member (lesson
+  8.7). The growth records call the generator a source and a packet a
+  product or a family. The literature's picture is the glider gun of Conway's
+  Life, which makes one fixed pattern each time; under ordinary growth no start
+  is known to keep releasing lasting packets of one fixed width, and in the
+  class where every knot can be reconstructed from the start none can.
+- **Fold of emergence.** The owner's phrase (23 November 2026, assumption
+  A223), always written in full and in his words: a pattern that the rules make,
+  where what it makes depends on another pattern, and that makes a pattern of
+  its own,
+  as he pictures DNA and intelligence. An interpretation; the record has no
+  instance in which a made pattern does the reading (lesson 8.7). It is not the
+  two-fold of a two-fold weave, which counts knots, and the guide makes no
+  claim about living things.
 - **Live roster.** What one round of the law reads: which junctions hold a
   loose distinction, how many, and which sets of them one junction meets
   (lesson 8.4). The growth records call it the growing end.
@@ -4034,7 +4334,8 @@ that earlier records used in two senses.
   | two-sided | (none) | orientable |
   | side | (only in the owner's words: "the continuous edge of the loop", open to any number of others, lesson 7.3) | an edge of a drawn knot: the literature's; knots or bases "side by side": overlapping, or stitched (lesson 7.3), never side by side |
   | thread | (a thread of work, not used in the guide) | an endless chain of atoms: chain |
-  | fold | (the owner's folded, compressed structure, in his words) | the direction the law does not lengthen: unlengthened shift |
+  | fold | (only in the owner's words: his folded, compressed structure, and his "fold of emergence" of lesson 8.7, written in full; never the two-fold of a two-fold weave) | the direction the law does not lengthen: unlengthened shift |
+  | source, product | (a source: where a citation or a distinction comes from; a product: of numbers) | a start that keeps releasing packets (the growth records' source): generator; what it releases (the records' product or family): packet |
   | ladder | (the literature's only, such as the n × 2 ladder graph) | three consecutive distinctions and every second one after them (ACROSS-FOLD-20261112-001's pre-registration): heddle; its rungs: the heddle's members after the three |
   | row, column | (a row: a sequence, as in steps apart and chain) | the indices of base 16's drawn frame: across-count, along-count |
   | spare | of a distinction of a block, in distinction substitution (lesson 7.3) | an open distinction a knot keeps beyond what its joins use (the growth records' spare): leftover distinction |

@@ -1,0 +1,23 @@
+{
+ "artifact_id": "RING-IN-BALANCE-20261123-001C-E001",
+ "kind": "experiment",
+ "branch": "code_analysis",
+ "evidence_stage": "exploratory",
+ "status": "Frozen",
+ "question": "With no complete round supplied, making one birth at a time under laws that read nothing of a next round, does the ring that returns still return: in every order, or under a priority read from the structure whatever way ties are broken; and does it return more slowly in births as the parts it has given off pile up?",
+ "inputs": "The registered starts, serial laws, priorities and seeds; the shared definitions; ticket A's engine for the complete rounds.",
+ "forbidden_inputs": "Any definition changed after a value is seen; any outcome of this study before the freeze; for the engine's author, the pilot's programs.",
+ "primary_observable": "Whether each run builds the same to depths 1, 2 and 3 as the complete rounds; its returns and the moves between them.",
+ "comparators_or_controls": "The cohort law; ROUND-FREE's present-state law and its order effect; the complete rounds of ticket A.",
+ "resource_budget": "The grid of 19,200 runs through the shared runner, at most 16 GB and one row in the long-running index; everything else under ten minutes.",
+ "first_executable_signal": "Row G of the predictions table.",
+ "decision_rule": "Each prediction is judged by its 'Fails when' column.",
+ "stop_rule": "The study stops when its registered runs are done and each prediction has a verdict.",
+ "nonclaims": "An exploratory study of laws changed by hand (assumption A224) and of starts built by hand; every census and sample is finite and proves no all-size statement; no claim about ordinary growth beyond the cited records, and none about time, minds or living things.",
+ "preregistration": "research/RING-IN-BALANCE-20261123-001C/preregistration.md",
+ "preregistration_sha256": "b0cce047bca699b35309f863970ed0874cddd733ea93a078f20f2aed33eab20c",
+ "definitions": "research/RING-IN-BALANCE-20261123-001/definitions.md",
+ "definitions_sha256": "e7c001a446d16565181d5805c73c68bbcaff82022b37412463b545e95cb52648",
+ "design_advisor": "research/RING-IN-BALANCE-20261123-001/advisor/answer.json",
+ "frozen_utc": "2026-11-24T02:29:16.665162+00:00"
+}

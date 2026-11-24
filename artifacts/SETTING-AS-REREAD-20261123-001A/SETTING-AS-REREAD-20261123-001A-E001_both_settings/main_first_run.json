@@ -1,0 +1,6611 @@
+{
+ "a": {
+  "births": [
+   {
+    "index": 0,
+    "loose_taken": "x1",
+    "options": [
+     "x2",
+     "x3",
+     "c"
+    ],
+    "parent_knots": [
+     "even(x1,x2,x3,c)"
+    ],
+    "parents": [
+     0
+    ]
+   },
+   {
+    "index": 1,
+    "loose_taken": "y1",
+    "options": [
+     "y2",
+     "y3",
+     "t"
+    ],
+    "parent_knots": [
+     "even(y1,y2,y3,t)"
+    ],
+    "parents": [
+     5
+    ]
+   }
+  ],
+  "choices": [
+   {
+    "choice": {
+     "0": "x2",
+     "1": "y2"
+    },
+    "demand": [
+     0,
+     0
+    ],
+    "engines_equal": true,
+    "fresh": [
+     1,
+     1
+    ],
+    "inputs": [
+     [
+      "x1",
+      "x2"
+     ],
+     [
+      "y1",
+      "y2"
+     ]
+    ]
+   },
+   {
+    "choice": {
+     "0": "x2",
+     "1": "y3"
+    },
+    "demand": [
+     0,
+     0
+    ],
+    "engines_equal": true,
+    "fresh": [
+     1,
+     1
+    ],
+    "inputs": [
+     [
+      "x1",
+      "x2"
+     ],
+     [
+      "y1",
+      "y3"
+     ]
+    ]
+   },
+   {
+    "choice": {
+     "0": "x2",
+     "1": "t"
+    },
+    "demand": [
+     0,
+     0
+    ],
+    "engines_equal": true,
+    "fresh": [
+     1,
+     1
+    ],
+    "inputs": [
+     [
+      "x1",
+      "x2"
+     ],
+     [
+      "y1",
+      "t"
+     ]
+    ]
+   },
+   {
+    "choice": {
+     "0": "x3",
+     "1": "y2"
+    },
+    "demand": [
+     0,
+     0
+    ],
+    "engines_equal": true,
+    "fresh": [
+     1,
+     1
+    ],
+    "inputs": [
+     [
+      "x1",
+      "x3"
+     ],
+     [
+      "y1",
+      "y2"
+     ]
+    ]
+   },
+   {
+    "choice": {
+     "0": "x3",
+     "1": "y3"
+    },
+    "demand": [
+     0,
+     0
+    ],
+    "engines_equal": true,
+    "fresh": [
+     1,
+     1
+    ],
+    "inputs": [
+     [
+      "x1",
+      "x3"
+     ],
+     [
+      "y1",
+      "y3"
+     ]
+    ]
+   },
+   {
+    "choice": {
+     "0": "x3",
+     "1": "t"
+    },
+    "demand": [
+     0,
+     0
+    ],
+    "engines_equal": true,
+    "fresh": [
+     1,
+     1
+    ],
+    "inputs": [
+     [
+      "x1",
+      "x3"
+     ],
+     [
+      "y1",
+      "t"
+     ]
+    ]
+   },
+   {
+    "choice": {
+     "0": "c",
+     "1": "y2"
+    },
+    "demand": [
+     0,
+     0
+    ],
+    "engines_equal": true,
+    "fresh": [
+     1,
+     1
+    ],
+    "inputs": [
+     [
+      "x1",
+      "c"
+     ],
+     [
+      "y1",
+      "y2"
+     ]
+    ]
+   },
+   {
+    "choice": {
+     "0": "c",
+     "1": "y3"
+    },
+    "demand": [
+     0,
+     0
+    ],
+    "engines_equal": true,
+    "fresh": [
+     1,
+     1
+    ],
+    "inputs": [
+     [
+      "x1",
+      "c"
+     ],
+     [
+      "y1",
+      "y3"
+     ]
+    ]
+   },
+   {
+    "choice": {
+     "0": "c",
+     "1": "t"
+    },
+    "demand": [
+     0,
+     0
+    ],
+    "engines_equal": true,
+    "fresh": [
+     1,
+     1
+    ],
+    "inputs": [
+     [
+      "x1",
+      "c"
+     ],
+     [
+      "y1",
+      "t"
+     ]
+    ]
+   }
+  ],
+  "convention_N_takes": [
+   "c",
+   "t"
+  ],
+  "convention_O_takes": [
+   "x2",
+   "y2"
+  ],
+  "engines_equal_every_choice": true,
+  "groups": [],
+  "live_knots": {
+   "0": 1,
+   "5": 1
+  },
+  "n_births": 2,
+  "one_parent_births": 2,
+  "status": "extend"
+ },
+ "b": [
+  {
+   "hidden": {
+    "A": {
+     "hidden": true,
+     "largest_change": "0",
+     "per_own_choice": {
+      "0": true,
+      "1": true
+     }
+    },
+    "B": {
+     "hidden": true,
+     "largest_change": "0",
+     "per_own_choice": {
+      "0": true,
+      "1": true
+     }
+    },
+    "both": true
+   },
+   "hidden_excess": true,
+   "hidden_excess_ii": true,
+   "hidden_excess_iii": true,
+   "pair_A": [
+    "x2",
+    "x3"
+   ],
+   "pair_B": [
+    "y2",
+    "y3"
+   ],
+   "record_A": [
+    "x1",
+    "x2",
+    "x3",
+    "zA"
+   ],
+   "record_B": [
+    "y1",
+    "y2",
+    "y3",
+    "zB"
+   ],
+   "score_i": "20/9",
+   "score_i_brute": "20/9",
+   "score_i_detail": {
+    "A": [
+     [
+      1,
+      1,
+      1,
+      1,
+      -1,
+      -1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      -1,
+      1,
+      1,
+      1
+     ],
+     [
+      1,
+      1,
+      -1,
+      -1,
+      1,
+      -1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ]
+    ],
+    "B": [
+     [
+      1,
+      1,
+      1,
+      1,
+      -1,
+      -1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      -1,
+      1,
+      1,
+      1
+     ],
+     [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      -1,
+      1,
+      -1,
+      -1,
+      1,
+      1
+     ]
+    ],
+    "E": {
+     "00": "-5/9",
+     "01": "5/9",
+     "10": "5/9",
+     "11": "5/9"
+    },
+    "enumerated": "B",
+    "merged": [
+     4,
+     4
+    ],
+    "placement": [
+     0,
+     0
+    ]
+   },
+   "score_ii": "20/9",
+   "score_ii_detail": {
+    "masks_A": [
+     2,
+     8
+    ],
+    "masks_B": [
+     2,
+     14
+    ],
+    "placement": [
+     0,
+     0
+    ]
+   },
+   "score_ii_with_constant": "20/9",
+   "score_iii": "20/9",
+   "score_iii_brute": "20/9",
+   "score_iii_detail": {
+    "A": [
+     [
+      1,
+      1,
+      -1,
+      1,
+      1,
+      1,
+      -1,
+      1
+     ],
+     [
+      1,
+      -1,
+      -1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ]
+    ],
+    "B": [
+     [
+      1,
+      1,
+      -1,
+      1,
+      1,
+      1,
+      -1,
+      1
+     ],
+     [
+      1,
+      1,
+      1,
+      1,
+      1,
+      -1,
+      -1,
+      1
+     ]
+    ],
+    "E": {
+     "00": "-5/9",
+     "01": "5/9",
+     "10": "5/9",
+     "11": "5/9"
+    },
+    "enumerated": "B",
+    "merged": [
+     4,
+     4
+    ],
+    "placement": [
+     0,
+     0
+    ]
+   },
+   "status": "ok",
+   "words": {
+    "00": 144,
+    "01": 144,
+    "10": 144,
+    "11": 144
+   }
+  },
+  {
+   "hidden": {
+    "A": {
+     "hidden": true,
+     "largest_change": "0",
+     "per_own_choice": {
+      "0": true,
+      "1": true
+     }
+    },
+    "B": {
+     "hidden": true,
+     "largest_change": "0",
+     "per_own_choice": {
+      "0": true,
+      "1": true
+     }
+    },
+    "both": true
+   },
+   "hidden_excess": true,
+   "hidden_excess_ii": true,
+   "hidden_excess_iii": true,
+   "pair_A": [
+    "x2",
+    "x3"
+   ],
+   "pair_B": [
+    "y2",
+    "t"
+   ],
+   "record_A": [
+    "x1",
+    "x2",
+    "x3",
+    "zA"
+   ],
+   "record_B": [
+    "y1",
+    "y2",
+    "t",
+    "zB"
+   ],
+   "score_i": "19/9",
+   "score_i_brute": "19/9",
+   "score_i_detail": {
+    "A": [
+     [
+      1,
+      1,
+      1,
+      1,
+      -1,
+      -1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      -1,
+      1,
+      1,
+      1
+     ],
+     [
+      1,
+      1,
+      -1,
+      -1,
+      1,
+      -1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ]
+    ],
+    "B": [
+     [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      -1,
+      -1,
+      1,
+      1,
+      1,
+      1,
+      -1,
+      1,
+      1,
+      1
+     ],
+     [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      -1,
+      -1,
+      1,
+      1,
+      -1,
+      -1,
+      1,
+      1
+     ]
+    ],
+    "E": {
+     "00": "-5/9",
+     "01": "2/3",
+     "10": "5/9",
+     "11": "1/3"
+    },
+    "enumerated": "B",
+    "merged": [
+     4,
+     4
+    ],
+    "placement": [
+     0,
+     0
+    ]
+   },
+   "score_ii": "19/9",
+   "score_ii_detail": {
+    "masks_A": [
+     2,
+     8
+    ],
+    "masks_B": [
+     4,
+     8
+    ],
+    "placement": [
+     0,
+     0
+    ]
+   },
+   "score_ii_with_constant": "19/9",
+   "score_iii": "19/9",
+   "score_iii_brute": "19/9",
+   "score_iii_detail": {
+    "A": [
+     [
+      1,
+      1,
+      -1,
+      1,
+      1,
+      1,
+      -1,
+      1
+     ],
+     [
+      1,
+      -1,
+      -1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ]
+    ],
+    "B": [
+     [
+      1,
+      1,
+      1,
+      -1,
+      1,
+      1,
+      -1,
+      1
+     ],
+     [
+      1,
+      1,
+      1,
+      1,
+      -1,
+      1,
+      -1,
+      1
+     ]
+    ],
+    "E": {
+     "00": "-5/9",
+     "01": "2/3",
+     "10": "5/9",
+     "11": "1/3"
+    },
+    "enumerated": "B",
+    "merged": [
+     4,
+     4
+    ],
+    "placement": [
+     0,
+     0
+    ]
+   },
+   "status": "ok",
+   "words": {
+    "00": 144,
+    "01": 192,
+    "10": 144,
+    "11": 192
+   }
+  },
+  {
+   "hidden": {
+    "A": {
+     "hidden": true,
+     "largest_change": "0",
+     "per_own_choice": {
+      "0": true,
+      "1": true
+     }
+    },
+    "B": {
+     "hidden": true,
+     "largest_change": "0",
+     "per_own_choice": {
+      "0": true,
+      "1": true
+     }
+    },
+    "both": true
+   },
+   "hidden_excess": true,
+   "hidden_excess_ii": true,
+   "hidden_excess_iii": true,
+   "pair_A": [
+    "x2",
+    "x3"
+   ],
+   "pair_B": [
+    "y3",
+    "t"
+   ],
+   "record_A": [
+    "x1",
+    "x2",
+    "x3",
+    "zA"
+   ],
+   "record_B": [
+    "y1",
+    "y3",
+    "t",
+    "zB"
+   ],
+   "score_i": "19/9",
+   "score_i_brute": "19/9",
+   "score_i_detail": {
+    "A": [
+     [
+      1,
+      1,
+      1,
+      -1,
+      -1,
+      -1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     [
+      1,
+      1,
+      1,
+      1,
+      1,
+      -1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      -1,
+      -1,
+      1,
+      1
+     ]
+    ],
+    "B": [
+     [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      -1,
+      -1,
+      1,
+      1,
+      1,
+      1,
+      -1,
+      1,
+      1,
+      1
+     ],
+     [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      -1,
+      -1,
+      1,
+      1,
+      -1,
+      -1,
+      1,
+      1
+     ]
+    ],
+    "E": {
+     "00": "-5/9",
+     "01": "2/3",
+     "10": "5/9",
+     "11": "1/3"
+    },
+    "enumerated": "B",
+    "merged": [
+     4,
+     4
+    ],
+    "placement": [
+     0,
+     0
+    ]
+   },
+   "score_ii": "19/9",
+   "score_ii_detail": {
+    "masks_A": [
+     2,
+     14
+    ],
+    "masks_B": [
+     2,
+     4
+    ],
+    "placement": [
+     0,
+     0
+    ]
+   },
+   "score_ii_with_constant": "19/9",
+   "score_iii": "19/9",
+   "score_iii_brute": "19/9",
+   "score_iii_detail": {
+    "A": [
+     [
+      1,
+      -1,
+      -1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     [
+      1,
+      1,
+      -1,
+      1,
+      1,
+      1,
+      -1,
+      1
+     ]
+    ],
+    "B": [
+     [
+      1,
+      1,
+      1,
+      -1,
+      1,
+      1,
+      -1,
+      1
+     ],
+     [
+      1,
+      1,
+      1,
+      1,
+      -1,
+      1,
+      -1,
+      1
+     ]
+    ],
+    "E": {
+     "00": "-5/9",
+     "01": "2/3",
+     "10": "5/9",
+     "11": "1/3"
+    },
+    "enumerated": "B",
+    "merged": [
+     4,
+     4
+    ],
+    "placement": [
+     0,
+     0
+    ]
+   },
+   "status": "ok",
+   "words": {
+    "00": 144,
+    "01": 192,
+    "10": 144,
+    "11": 192
+   }
+  },
+  {
+   "hidden": {
+    "A": {
+     "hidden": true,
+     "largest_change": "0",
+     "per_own_choice": {
+      "0": true,
+      "1": true
+     }
+    },
+    "B": {
+     "hidden": true,
+     "largest_change": "0",
+     "per_own_choice": {
+      "0": true,
+      "1": true
+     }
+    },
+    "both": true
+   },
+   "hidden_excess": true,
+   "hidden_excess_ii": true,
+   "hidden_excess_iii": true,
+   "pair_A": [
+    "x2",
+    "c"
+   ],
+   "pair_B": [
+    "y2",
+    "y3"
+   ],
+   "record_A": [
+    "x1",
+    "x2",
+    "c",
+    "zA"
+   ],
+   "record_B": [
+    "y1",
+    "y2",
+    "y3",
+    "zB"
+   ],
+   "score_i": "19/9",
+   "score_i_brute": "19/9",
+   "score_i_detail": {
+    "A": [
+     [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      -1,
+      -1,
+      1,
+      1,
+      1,
+      1,
+      -1,
+      1,
+      1,
+      1
+     ],
+     [
+      1,
+      1,
+      -1,
+      -1,
+      1,
+      1,
+      -1,
+      -1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ]
+    ],
+    "B": [
+     [
+      1,
+      1,
+      1,
+      1,
+      -1,
+      -1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      -1,
+      1,
+      1,
+      1
+     ],
+     [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      -1,
+      1,
+      -1,
+      -1,
+      1,
+      1
+     ]
+    ],
+    "E": {
+     "00": "-5/9",
+     "01": "5/9",
+     "10": "1/3",
+     "11": "2/3"
+    },
+    "enumerated": "B",
+    "merged": [
+     4,
+     4
+    ],
+    "placement": [
+     0,
+     0
+    ]
+   },
+   "score_ii": "19/9",
+   "score_ii_detail": {
+    "masks_A": [
+     2,
+     14
+    ],
+    "masks_B": [
+     8,
+     2
+    ],
+    "placement": [
+     0,
+     0
+    ]
+   },
+   "score_ii_with_constant": "19/9",
+   "score_iii": "19/9",
+   "score_iii_brute": "19/9",
+   "score_iii_detail": {
+    "A": [
+     [
+      1,
+      1,
+      1,
+      -1,
+      1,
+      1,
+      -1,
+      1
+     ],
+     [
+      1,
+      -1,
+      1,
+      -1,
+      1,
+      1,
+      1,
+      1
+     ]
+    ],
+    "B": [
+     [
+      1,
+      1,
+      -1,
+      1,
+      1,
+      1,
+      -1,
+      1
+     ],
+     [
+      1,
+      1,
+      1,
+      1,
+      1,
+      -1,
+      -1,
+      1
+     ]
+    ],
+    "E": {
+     "00": "-5/9",
+     "01": "5/9",
+     "10": "1/3",
+     "11": "2/3"
+    },
+    "enumerated": "B",
+    "merged": [
+     4,
+     4
+    ],
+    "placement": [
+     0,
+     0
+    ]
+   },
+   "status": "ok",
+   "words": {
+    "00": 144,
+    "01": 144,
+    "10": 192,
+    "11": 192
+   }
+  },
+  {
+   "hidden": {
+    "A": {
+     "hidden": true,
+     "largest_change": "0",
+     "per_own_choice": {
+      "0": true,
+      "1": true
+     }
+    },
+    "B": {
+     "hidden": true,
+     "largest_change": "0",
+     "per_own_choice": {
+      "0": true,
+      "1": true
+     }
+    },
+    "both": true
+   },
+   "hidden_excess": true,
+   "hidden_excess_ii": true,
+   "hidden_excess_iii": true,
+   "pair_A": [
+    "x2",
+    "c"
+   ],
+   "pair_B": [
+    "y2",
+    "t"
+   ],
+   "record_A": [
+    "x1",
+    "x2",
+    "c",
+    "zA"
+   ],
+   "record_B": [
+    "y1",
+    "y2",
+    "t",
+    "zB"
+   ],
+   "score_i": "37/18",
+   "score_i_brute": "37/18",
+   "score_i_detail": {
+    "A": [
+     [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      -1,
+      -1,
+      1,
+      1,
+      1,
+      1,
+      -1,
+      1,
+      1,
+      1
+     ],
+     [
+      1,
+      1,
+      -1,
+      -1,
+      1,
+      1,
+      -1,
+      -1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ]
+    ],
+    "B": [
+     [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      -1,
+      -1,
+      1,
+      1,
+      1,
+      1,
+      -1,
+      1,
+      1,
+      1
+     ],
+     [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      -1,
+      -1,
+      1,
+      1,
+      -1,
+      -1,
+      1,
+      1
+     ]
+    ],
+    "E": {
+     "00": "-5/9",
+     "01": "2/3",
+     "10": "1/3",
+     "11": "1/2"
+    },
+    "enumerated": "B",
+    "merged": [
+     4,
+     4
+    ],
+    "placement": [
+     0,
+     0
+    ]
+   },
+   "score_ii": "37/18",
+   "score_ii_detail": {
+    "masks_A": [
+     2,
+     14
+    ],
+    "masks_B": [
+     2,
+     4
+    ],
+    "placement": [
+     0,
+     0
+    ]
+   },
+   "score_ii_with_constant": "37/18",
+   "score_iii": "37/18",
+   "score_iii_brute": "37/18",
+   "score_iii_detail": {
+    "A": [
+     [
+      1,
+      1,
+      1,
+      -1,
+      1,
+      1,
+      -1,
+      1
+     ],
+     [
+      1,
+      -1,
+      1,
+      -1,
+      1,
+      1,
+      1,
+      1
+     ]
+    ],
+    "B": [
+     [
+      1,
+      1,
+      1,
+      -1,
+      1,
+      1,
+      -1,
+      1
+     ],
+     [
+      1,
+      1,
+      1,
+      1,
+      -1,
+      1,
+      -1,
+      1
+     ]
+    ],
+    "E": {
+     "00": "-5/9",
+     "01": "2/3",
+     "10": "1/3",
+     "11": "1/2"
+    },
+    "enumerated": "B",
+    "merged": [
+     4,
+     4
+    ],
+    "placement": [
+     0,
+     0
+    ]
+   },
+   "status": "ok",
+   "words": {
+    "00": 144,
+    "01": 192,
+    "10": 192,
+    "11": 256
+   }
+  },
+  {
+   "hidden": {
+    "A": {
+     "hidden": true,
+     "largest_change": "0",
+     "per_own_choice": {
+      "0": true,
+      "1": true
+     }
+    },
+    "B": {
+     "hidden": true,
+     "largest_change": "0",
+     "per_own_choice": {
+      "0": true,
+      "1": true
+     }
+    },
+    "both": true
+   },
+   "hidden_excess": true,
+   "hidden_excess_ii": true,
+   "hidden_excess_iii": true,
+   "pair_A": [
+    "x2",
+    "c"
+   ],
+   "pair_B": [
+    "y3",
+    "t"
+   ],
+   "record_A": [
+    "x1",
+    "x2",
+    "c",
+    "zA"
+   ],
+   "record_B": [
+    "y1",
+    "y3",
+    "t",
+    "zB"
+   ],
+   "score_i": "37/18",
+   "score_i_brute": "37/18",
+   "score_i_detail": {
+    "A": [
+     [
+      1,
+      1,
+      1,
+      -1,
+      1,
+      1,
+      -1,
+      -1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      -1,
+      -1,
+      1,
+      1,
+      1,
+      1,
+      -1,
+      -1,
+      1,
+      1
+     ]
+    ],
+    "B": [
+     [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      -1,
+      -1,
+      1,
+      1,
+      1,
+      1,
+      -1,
+      1,
+      1,
+      1
+     ],
+     [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      -1,
+      -1,
+      1,
+      1,
+      -1,
+      -1,
+      1,
+      1
+     ]
+    ],
+    "E": {
+     "00": "-5/9",
+     "01": "2/3",
+     "10": "1/3",
+     "11": "1/2"
+    },
+    "enumerated": "B",
+    "merged": [
+     4,
+     4
+    ],
+    "placement": [
+     0,
+     0
+    ]
+   },
+   "score_ii": "37/18",
+   "score_ii_detail": {
+    "masks_A": [
+     2,
+     4
+    ],
+    "masks_B": [
+     4,
+     8
+    ],
+    "placement": [
+     0,
+     0
+    ]
+   },
+   "score_ii_with_constant": "37/18",
+   "score_iii": "37/18",
+   "score_iii_brute": "37/18",
+   "score_iii_detail": {
+    "A": [
+     [
+      1,
+      -1,
+      1,
+      -1,
+      1,
+      1,
+      1,
+      1
+     ],
+     [
+      1,
+      1,
+      1,
+      -1,
+      1,
+      1,
+      -1,
+      1
+     ]
+    ],
+    "B": [
+     [
+      1,
+      1,
+      1,
+      -1,
+      1,
+      1,
+      -1,
+      1
+     ],
+     [
+      1,
+      1,
+      1,
+      1,
+      -1,
+      1,
+      -1,
+      1
+     ]
+    ],
+    "E": {
+     "00": "-5/9",
+     "01": "2/3",
+     "10": "1/3",
+     "11": "1/2"
+    },
+    "enumerated": "B",
+    "merged": [
+     4,
+     4
+    ],
+    "placement": [
+     0,
+     0
+    ]
+   },
+   "status": "ok",
+   "words": {
+    "00": 144,
+    "01": 192,
+    "10": 192,
+    "11": 256
+   }
+  },
+  {
+   "hidden": {
+    "A": {
+     "hidden": true,
+     "largest_change": "0",
+     "per_own_choice": {
+      "0": true,
+      "1": true
+     }
+    },
+    "B": {
+     "hidden": true,
+     "largest_change": "0",
+     "per_own_choice": {
+      "0": true,
+      "1": true
+     }
+    },
+    "both": true
+   },
+   "hidden_excess": true,
+   "hidden_excess_ii": true,
+   "hidden_excess_iii": true,
+   "pair_A": [
+    "x3",
+    "c"
+   ],
+   "pair_B": [
+    "y2",
+    "y3"
+   ],
+   "record_A": [
+    "x1",
+    "x3",
+    "c",
+    "zA"
+   ],
+   "record_B": [
+    "y1",
+    "y2",
+    "y3",
+    "zB"
+   ],
+   "score_i": "19/9",
+   "score_i_brute": "19/9",
+   "score_i_detail": {
+    "A": [
+     [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      -1,
+      -1,
+      1,
+      1,
+      -1,
+      1,
+      1,
+      1
+     ],
+     [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      -1,
+      -1,
+      1,
+      1,
+      1,
+      1,
+      -1,
+      -1,
+      1,
+      1
+     ]
+    ],
+    "B": [
+     [
+      1,
+      1,
+      1,
+      1,
+      -1,
+      -1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      -1,
+      1,
+      1,
+      1
+     ],
+     [
+      1,
+      1,
+      -1,
+      -1,
+      1,
+      -1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ]
+    ],
+    "E": {
+     "00": "-5/9",
+     "01": "5/9",
+     "10": "2/3",
+     "11": "1/3"
+    },
+    "enumerated": "B",
+    "merged": [
+     4,
+     4
+    ],
+    "placement": [
+     0,
+     0
+    ]
+   },
+   "score_ii": "19/9",
+   "score_ii_detail": {
+    "masks_A": [
+     2,
+     14
+    ],
+    "masks_B": [
+     2,
+     8
+    ],
+    "placement": [
+     0,
+     0
+    ]
+   },
+   "score_ii_with_constant": "19/9",
+   "score_iii": "19/9",
+   "score_iii_brute": "19/9",
+   "score_iii_detail": {
+    "A": [
+     [
+      1,
+      1,
+      1,
+      1,
+      -1,
+      1,
+      -1,
+      1
+     ],
+     [
+      1,
+      1,
+      1,
+      -1,
+      1,
+      1,
+      -1,
+      1
+     ]
+    ],
+    "B": [
+     [
+      1,
+      1,
+      -1,
+      1,
+      1,
+      1,
+      -1,
+      1
+     ],
+     [
+      1,
+      -1,
+      -1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ]
+    ],
+    "E": {
+     "00": "-5/9",
+     "01": "5/9",
+     "10": "2/3",
+     "11": "1/3"
+    },
+    "enumerated": "B",
+    "merged": [
+     4,
+     4
+    ],
+    "placement": [
+     0,
+     0
+    ]
+   },
+   "status": "ok",
+   "words": {
+    "00": 144,
+    "01": 144,
+    "10": 192,
+    "11": 192
+   }
+  },
+  {
+   "hidden": {
+    "A": {
+     "hidden": true,
+     "largest_change": "0",
+     "per_own_choice": {
+      "0": true,
+      "1": true
+     }
+    },
+    "B": {
+     "hidden": true,
+     "largest_change": "0",
+     "per_own_choice": {
+      "0": true,
+      "1": true
+     }
+    },
+    "both": true
+   },
+   "hidden_excess": true,
+   "hidden_excess_ii": true,
+   "hidden_excess_iii": true,
+   "pair_A": [
+    "x3",
+    "c"
+   ],
+   "pair_B": [
+    "y2",
+    "t"
+   ],
+   "record_A": [
+    "x1",
+    "x3",
+    "c",
+    "zA"
+   ],
+   "record_B": [
+    "y1",
+    "y2",
+    "t",
+    "zB"
+   ],
+   "score_i": "37/18",
+   "score_i_brute": "37/18",
+   "score_i_detail": {
+    "A": [
+     [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      -1,
+      -1,
+      1,
+      1,
+      -1,
+      1,
+      1,
+      1
+     ],
+     [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      -1,
+      -1,
+      1,
+      1,
+      1,
+      1,
+      -1,
+      -1,
+      1,
+      1
+     ]
+    ],
+    "B": [
+     [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      -1,
+      -1,
+      1,
+      1,
+      1,
+      1,
+      -1,
+      1,
+      1,
+      1
+     ],
+     [
+      1,
+      1,
+      -1,
+      -1,
+      1,
+      1,
+      -1,
+      -1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ]
+    ],
+    "E": {
+     "00": "-5/9",
+     "01": "1/3",
+     "10": "2/3",
+     "11": "1/2"
+    },
+    "enumerated": "B",
+    "merged": [
+     4,
+     4
+    ],
+    "placement": [
+     0,
+     0
+    ]
+   },
+   "score_ii": "37/18",
+   "score_ii_detail": {
+    "masks_A": [
+     2,
+     14
+    ],
+    "masks_B": [
+     4,
+     2
+    ],
+    "placement": [
+     0,
+     0
+    ]
+   },
+   "score_ii_with_constant": "37/18",
+   "score_iii": "37/18",
+   "score_iii_brute": "37/18",
+   "score_iii_detail": {
+    "A": [
+     [
+      1,
+      1,
+      1,
+      1,
+      -1,
+      1,
+      -1,
+      1
+     ],
+     [
+      1,
+      1,
+      1,
+      -1,
+      1,
+      1,
+      -1,
+      1
+     ]
+    ],
+    "B": [
+     [
+      1,
+      1,
+      1,
+      -1,
+      1,
+      1,
+      -1,
+      1
+     ],
+     [
+      1,
+      -1,
+      1,
+      -1,
+      1,
+      1,
+      1,
+      1
+     ]
+    ],
+    "E": {
+     "00": "-5/9",
+     "01": "1/3",
+     "10": "2/3",
+     "11": "1/2"
+    },
+    "enumerated": "B",
+    "merged": [
+     4,
+     4
+    ],
+    "placement": [
+     0,
+     0
+    ]
+   },
+   "status": "ok",
+   "words": {
+    "00": 144,
+    "01": 192,
+    "10": 192,
+    "11": 256
+   }
+  },
+  {
+   "hidden": {
+    "A": {
+     "hidden": true,
+     "largest_change": "0",
+     "per_own_choice": {
+      "0": true,
+      "1": true
+     }
+    },
+    "B": {
+     "hidden": true,
+     "largest_change": "0",
+     "per_own_choice": {
+      "0": true,
+      "1": true
+     }
+    },
+    "both": true
+   },
+   "hidden_excess": true,
+   "hidden_excess_ii": true,
+   "hidden_excess_iii": true,
+   "pair_A": [
+    "x3",
+    "c"
+   ],
+   "pair_B": [
+    "y3",
+    "t"
+   ],
+   "record_A": [
+    "x1",
+    "x3",
+    "c",
+    "zA"
+   ],
+   "record_B": [
+    "y1",
+    "y3",
+    "t",
+    "zB"
+   ],
+   "score_i": "37/18",
+   "score_i_brute": "37/18",
+   "score_i_detail": {
+    "A": [
+     [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      -1,
+      -1,
+      1,
+      1,
+      1,
+      1,
+      -1,
+      1,
+      1,
+      1
+     ],
+     [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      -1,
+      -1,
+      1,
+      1,
+      -1,
+      -1,
+      1,
+      1
+     ]
+    ],
+    "B": [
+     [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      -1,
+      -1,
+      1,
+      1,
+      1,
+      1,
+      -1,
+      1,
+      1,
+      1
+     ],
+     [
+      1,
+      1,
+      -1,
+      -1,
+      1,
+      1,
+      -1,
+      -1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ]
+    ],
+    "E": {
+     "00": "-5/9",
+     "01": "1/3",
+     "10": "2/3",
+     "11": "1/2"
+    },
+    "enumerated": "B",
+    "merged": [
+     4,
+     4
+    ],
+    "placement": [
+     0,
+     0
+    ]
+   },
+   "score_ii": "37/18",
+   "score_ii_detail": {
+    "masks_A": [
+     2,
+     4
+    ],
+    "masks_B": [
+     2,
+     14
+    ],
+    "placement": [
+     0,
+     0
+    ]
+   },
+   "score_ii_with_constant": "37/18",
+   "score_iii": "37/18",
+   "score_iii_brute": "37/18",
+   "score_iii_detail": {
+    "A": [
+     [
+      1,
+      1,
+      1,
+      -1,
+      1,
+      1,
+      -1,
+      1
+     ],
+     [
+      1,
+      1,
+      1,
+      1,
+      -1,
+      1,
+      -1,
+      1
+     ]
+    ],
+    "B": [
+     [
+      1,
+      1,
+      1,
+      -1,
+      1,
+      1,
+      -1,
+      1
+     ],
+     [
+      1,
+      -1,
+      1,
+      -1,
+      1,
+      1,
+      1,
+      1
+     ]
+    ],
+    "E": {
+     "00": "-5/9",
+     "01": "1/3",
+     "10": "2/3",
+     "11": "1/2"
+    },
+    "enumerated": "B",
+    "merged": [
+     4,
+     4
+    ],
+    "placement": [
+     0,
+     0
+    ]
+   },
+   "status": "ok",
+   "words": {
+    "00": 144,
+    "01": 192,
+    "10": 192,
+    "11": 256
+   }
+  }
+ ],
+ "c": {
+  "fixed": {
+   "old structure (beside)": {
+    "hidden": {
+     "A": {
+      "hidden": true,
+      "largest_change": "0",
+      "per_own_choice": {
+       "0": true,
+       "1": true
+      }
+     },
+     "B": {
+      "hidden": true,
+      "largest_change": "0",
+      "per_own_choice": {
+       "0": true,
+       "1": true
+      }
+     },
+     "both": true
+    },
+    "hidden_excess": false,
+    "hidden_excess_ii": false,
+    "hidden_excess_iii": false,
+    "reference": "old structure (beside)",
+    "score_i": "2",
+    "score_i_brute": "2",
+    "score_i_detail": {
+     "A": [
+      [
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1
+      ],
+      [
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1
+      ]
+     ],
+     "B": [
+      [
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1
+      ],
+      [
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1
+      ]
+     ],
+     "E": {
+      "00": "1",
+      "01": "1",
+      "10": "1",
+      "11": "1"
+     },
+     "enumerated": "B",
+     "merged": [
+      4,
+      4
+     ],
+     "placement": [
+      0,
+      0
+     ]
+    },
+    "score_ii": "2",
+    "score_ii_detail": {
+     "masks_A": [
+      1,
+      6
+     ],
+     "masks_B": [
+      6,
+      6
+     ],
+     "placement": [
+      0,
+      0
+     ]
+    },
+    "score_ii_with_constant": "2",
+    "score_iii": "2",
+    "score_iii_brute": "2",
+    "score_iii_detail": {
+     "A": [
+      [
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1
+      ],
+      [
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1
+      ]
+     ],
+     "B": [
+      [
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1
+      ],
+      [
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1
+      ]
+     ],
+     "E": {
+      "00": "1",
+      "01": "1",
+      "10": "1",
+      "11": "1"
+     },
+     "enumerated": "B",
+     "merged": [
+      4,
+      4
+     ],
+     "placement": [
+      0,
+      0
+     ]
+    },
+    "status": "ok",
+    "words": {
+     "00": 256,
+     "01": 256,
+     "10": 256,
+     "11": 256
+    }
+   },
+   "x2|y2": {
+    "hidden": {
+     "A": {
+      "hidden": true,
+      "largest_change": "0",
+      "per_own_choice": {
+       "0": true,
+       "1": true
+      }
+     },
+     "B": {
+      "hidden": true,
+      "largest_change": "0",
+      "per_own_choice": {
+       "0": true,
+       "1": true
+      }
+     },
+     "both": true
+    },
+    "hidden_excess": false,
+    "hidden_excess_ii": false,
+    "hidden_excess_iii": false,
+    "reference": "x2|y2",
+    "score_i": "2",
+    "score_i_brute": "2",
+    "score_i_detail": {
+     "A": [
+      [
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1
+      ],
+      [
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1
+      ]
+     ],
+     "B": [
+      [
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1
+      ],
+      [
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1
+      ]
+     ],
+     "E": {
+      "00": "1",
+      "01": "1",
+      "10": "1",
+      "11": "1"
+     },
+     "enumerated": "B",
+     "merged": [
+      4,
+      4
+     ],
+     "placement": [
+      0,
+      0
+     ]
+    },
+    "score_ii": "2",
+    "score_ii_detail": {
+     "masks_A": [
+      1,
+      6
+     ],
+     "masks_B": [
+      6,
+      6
+     ],
+     "placement": [
+      0,
+      0
+     ]
+    },
+    "score_ii_with_constant": "2",
+    "score_iii": "2",
+    "score_iii_brute": "2",
+    "score_iii_detail": {
+     "A": [
+      [
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1
+      ],
+      [
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1
+      ]
+     ],
+     "B": [
+      [
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1
+      ],
+      [
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1
+      ]
+     ],
+     "E": {
+      "00": "1",
+      "01": "1",
+      "10": "1",
+      "11": "1"
+     },
+     "enumerated": "B",
+     "merged": [
+      4,
+      4
+     ],
+     "placement": [
+      0,
+      0
+     ]
+    },
+    "status": "ok",
+    "words": {
+     "00": 576,
+     "01": 576,
+     "10": 576,
+     "11": 576
+    }
+   },
+   "x2|y3": {
+    "hidden": {
+     "A": {
+      "hidden": true,
+      "largest_change": "0",
+      "per_own_choice": {
+       "0": true,
+       "1": true
+      }
+     },
+     "B": {
+      "hidden": true,
+      "largest_change": "0",
+      "per_own_choice": {
+       "0": true,
+       "1": true
+      }
+     },
+     "both": true
+    },
+    "hidden_excess": false,
+    "hidden_excess_ii": false,
+    "hidden_excess_iii": false,
+    "reference": "x2|y3",
+    "score_i": "2",
+    "score_i_brute": "2",
+    "score_i_detail": {
+     "A": [
+      [
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1
+      ],
+      [
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1
+      ]
+     ],
+     "B": [
+      [
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1
+      ],
+      [
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1
+      ]
+     ],
+     "E": {
+      "00": "1",
+      "01": "1",
+      "10": "1",
+      "11": "1"
+     },
+     "enumerated": "B",
+     "merged": [
+      4,
+      4
+     ],
+     "placement": [
+      0,
+      0
+     ]
+    },
+    "score_ii": "2",
+    "score_ii_detail": {
+     "masks_A": [
+      1,
+      6
+     ],
+     "masks_B": [
+      6,
+      6
+     ],
+     "placement": [
+      0,
+      0
+     ]
+    },
+    "score_ii_with_constant": "2",
+    "score_iii": "2",
+    "score_iii_brute": "2",
+    "score_iii_detail": {
+     "A": [
+      [
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1
+      ],
+      [
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1
+      ]
+     ],
+     "B": [
+      [
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1
+      ],
+      [
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1
+      ]
+     ],
+     "E": {
+      "00": "1",
+      "01": "1",
+      "10": "1",
+      "11": "1"
+     },
+     "enumerated": "B",
+     "merged": [
+      4,
+      4
+     ],
+     "placement": [
+      0,
+      0
+     ]
+    },
+    "status": "ok",
+    "words": {
+     "00": 576,
+     "01": 576,
+     "10": 576,
+     "11": 576
+    }
+   },
+   "x3|y2": {
+    "hidden": {
+     "A": {
+      "hidden": true,
+      "largest_change": "0",
+      "per_own_choice": {
+       "0": true,
+       "1": true
+      }
+     },
+     "B": {
+      "hidden": true,
+      "largest_change": "0",
+      "per_own_choice": {
+       "0": true,
+       "1": true
+      }
+     },
+     "both": true
+    },
+    "hidden_excess": false,
+    "hidden_excess_ii": false,
+    "hidden_excess_iii": false,
+    "reference": "x3|y2",
+    "score_i": "2",
+    "score_i_brute": "2",
+    "score_i_detail": {
+     "A": [
+      [
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1
+      ],
+      [
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1
+      ]
+     ],
+     "B": [
+      [
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1
+      ],
+      [
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1
+      ]
+     ],
+     "E": {
+      "00": "1",
+      "01": "1",
+      "10": "1",
+      "11": "1"
+     },
+     "enumerated": "B",
+     "merged": [
+      4,
+      4
+     ],
+     "placement": [
+      0,
+      0
+     ]
+    },
+    "score_ii": "2",
+    "score_ii_detail": {
+     "masks_A": [
+      1,
+      6
+     ],
+     "masks_B": [
+      6,
+      6
+     ],
+     "placement": [
+      0,
+      0
+     ]
+    },
+    "score_ii_with_constant": "2",
+    "score_iii": "2",
+    "score_iii_brute": "2",
+    "score_iii_detail": {
+     "A": [
+      [
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1
+      ],
+      [
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1
+      ]
+     ],
+     "B": [
+      [
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1
+      ],
+      [
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1
+      ]
+     ],
+     "E": {
+      "00": "1",
+      "01": "1",
+      "10": "1",
+      "11": "1"
+     },
+     "enumerated": "B",
+     "merged": [
+      4,
+      4
+     ],
+     "placement": [
+      0,
+      0
+     ]
+    },
+    "status": "ok",
+    "words": {
+     "00": 576,
+     "01": 576,
+     "10": 576,
+     "11": 576
+    }
+   },
+   "x3|y3": {
+    "hidden": {
+     "A": {
+      "hidden": true,
+      "largest_change": "0",
+      "per_own_choice": {
+       "0": true,
+       "1": true
+      }
+     },
+     "B": {
+      "hidden": true,
+      "largest_change": "0",
+      "per_own_choice": {
+       "0": true,
+       "1": true
+      }
+     },
+     "both": true
+    },
+    "hidden_excess": false,
+    "hidden_excess_ii": false,
+    "hidden_excess_iii": false,
+    "reference": "x3|y3",
+    "score_i": "2",
+    "score_i_brute": "2",
+    "score_i_detail": {
+     "A": [
+      [
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1
+      ],
+      [
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1
+      ]
+     ],
+     "B": [
+      [
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1
+      ],
+      [
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1
+      ]
+     ],
+     "E": {
+      "00": "1",
+      "01": "1",
+      "10": "1",
+      "11": "1"
+     },
+     "enumerated": "B",
+     "merged": [
+      4,
+      4
+     ],
+     "placement": [
+      0,
+      0
+     ]
+    },
+    "score_ii": "2",
+    "score_ii_detail": {
+     "masks_A": [
+      1,
+      6
+     ],
+     "masks_B": [
+      6,
+      6
+     ],
+     "placement": [
+      0,
+      0
+     ]
+    },
+    "score_ii_with_constant": "2",
+    "score_iii": "2",
+    "score_iii_brute": "2",
+    "score_iii_detail": {
+     "A": [
+      [
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1
+      ],
+      [
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1
+      ]
+     ],
+     "B": [
+      [
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1
+      ],
+      [
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1
+      ]
+     ],
+     "E": {
+      "00": "1",
+      "01": "1",
+      "10": "1",
+      "11": "1"
+     },
+     "enumerated": "B",
+     "merged": [
+      4,
+      4
+     ],
+     "placement": [
+      0,
+      0
+     ]
+    },
+    "status": "ok",
+    "words": {
+     "00": 576,
+     "01": 576,
+     "10": 576,
+     "11": 576
+    }
+   }
+  },
+  "own_distinctions": {
+   "A": {
+    "depends_on_far_choice": true,
+    "names": [
+     "x1",
+     "x2",
+     "x3",
+     "c",
+     "s1",
+     "s2",
+     "h1",
+     "h2",
+     "zA"
+    ],
+    "per_own_choice": {
+     "x2": {
+      "change": "1/3",
+      "same": false
+     },
+     "x3": {
+      "change": "1/3",
+      "same": false
+     }
+    }
+   },
+   "B": {
+    "depends_on_far_choice": false,
+    "names": [
+     "y1",
+     "y2",
+     "y3",
+     "t",
+     "m1",
+     "m2",
+     "s1",
+     "k1",
+     "k2",
+     "s2",
+     "zB"
+    ],
+    "per_own_choice": {
+     "y2": {
+      "change": "0",
+      "same": true
+     },
+     "y3": {
+      "change": "0",
+      "same": true
+     }
+    }
+   }
+  },
+  "s1s2": {
+   "x2|y2": {
+    "00": "1/6",
+    "01": "1/3",
+    "10": "1/3",
+    "11": "1/6"
+   },
+   "x2|y3": {
+    "00": "1/3",
+    "01": "1/6",
+    "10": "1/6",
+    "11": "1/3"
+   },
+   "x3|y2": {
+    "00": "1/6",
+    "01": "1/3",
+    "10": "1/3",
+    "11": "1/6"
+   },
+   "x3|y3": {
+    "00": "1/3",
+    "01": "1/6",
+    "10": "1/6",
+    "11": "1/3"
+   }
+  },
+  "s1s2_same_for_alice_choice_given_bob": {
+   "y2": true,
+   "y3": true
+  },
+  "s1s2_same_for_bob_choice_given_alice": {
+   "x2": false,
+   "x3": false
+  }
+ },
+ "d": {
+  "all_nine_hidden": true,
+  "hidden": {
+   "A": {
+    "hidden": true,
+    "largest_change": "0",
+    "per_own_choice": {
+     "c": true,
+     "x2": true,
+     "x3": true
+    }
+   },
+   "B": {
+    "hidden": true,
+    "largest_change": "0",
+    "per_own_choice": {
+     "t": true,
+     "y2": true,
+     "y3": true
+    }
+   },
+   "both": true
+  },
+  "largest_score_i": "20/9",
+  "largest_score_i_hidden_subtests": "20/9",
+  "per_choice": {
+   "c|t": {
+    "alice_same_for_every_far_choice": true,
+    "bob_same_for_every_far_choice": true
+   },
+   "c|y2": {
+    "alice_same_for_every_far_choice": true,
+    "bob_same_for_every_far_choice": true
+   },
+   "c|y3": {
+    "alice_same_for_every_far_choice": true,
+    "bob_same_for_every_far_choice": true
+   },
+   "x2|t": {
+    "alice_same_for_every_far_choice": true,
+    "bob_same_for_every_far_choice": true
+   },
+   "x2|y2": {
+    "alice_same_for_every_far_choice": true,
+    "bob_same_for_every_far_choice": true
+   },
+   "x2|y3": {
+    "alice_same_for_every_far_choice": true,
+    "bob_same_for_every_far_choice": true
+   },
+   "x3|t": {
+    "alice_same_for_every_far_choice": true,
+    "bob_same_for_every_far_choice": true
+   },
+   "x3|y2": {
+    "alice_same_for_every_far_choice": true,
+    "bob_same_for_every_far_choice": true
+   },
+   "x3|y3": {
+    "alice_same_for_every_far_choice": true,
+    "bob_same_for_every_far_choice": true
+   }
+  },
+  "record_A": [
+   "x1",
+   "x2",
+   "x3",
+   "c",
+   "zA"
+  ],
+  "record_B": [
+   "y1",
+   "y2",
+   "y3",
+   "t",
+   "zB"
+  ],
+  "subtests": [
+   {
+    "hidden": {
+     "A": {
+      "hidden": true,
+      "largest_change": "0",
+      "per_own_choice": {
+       "0": true,
+       "1": true
+      }
+     },
+     "B": {
+      "hidden": true,
+      "largest_change": "0",
+      "per_own_choice": {
+       "0": true,
+       "1": true
+      }
+     },
+     "both": true
+    },
+    "hidden_excess": true,
+    "hidden_excess_ii": true,
+    "hidden_excess_iii": true,
+    "pair_A": [
+     "x2",
+     "x3"
+    ],
+    "pair_B": [
+     "y2",
+     "y3"
+    ],
+    "score_i": "20/9",
+    "score_i_brute": "20/9",
+    "score_i_detail": {
+     "A": [
+      [
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       -1,
+       -1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       -1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1
+      ],
+      [
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       -1,
+       -1,
+       1,
+       1,
+       1,
+       -1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1
+      ]
+     ],
+     "B": [
+      [
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       -1,
+       -1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       -1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1
+      ],
+      [
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       -1,
+       1,
+       1,
+       1,
+       -1,
+       -1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1
+      ]
+     ],
+     "E": {
+      "00": "-5/9",
+      "01": "5/9",
+      "10": "5/9",
+      "11": "5/9"
+     },
+     "enumerated": "B",
+     "merged": [
+      4,
+      4
+     ],
+     "placement": [
+      0,
+      0
+     ]
+    },
+    "score_ii": "20/9",
+    "score_ii_detail": {
+     "masks_A": [
+      2,
+      4
+     ],
+     "masks_B": [
+      2,
+      8
+     ],
+     "placement": [
+      0,
+      0
+     ]
+    },
+    "score_ii_with_constant": "20/9",
+    "score_iii": "20/9",
+    "score_iii_brute": "20/9",
+    "score_iii_detail": {
+     "A": [
+      [
+       1,
+       1,
+       1,
+       1,
+       1,
+       -1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       -1,
+       1,
+       1,
+       1
+      ],
+      [
+       1,
+       1,
+       1,
+       -1,
+       1,
+       -1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1
+      ]
+     ],
+     "B": [
+      [
+       1,
+       1,
+       1,
+       1,
+       1,
+       -1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       -1,
+       1,
+       1,
+       1
+      ],
+      [
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       -1,
+       1,
+       -1,
+       1,
+       1,
+       1
+      ]
+     ],
+     "E": {
+      "00": "-5/9",
+      "01": "5/9",
+      "10": "5/9",
+      "11": "5/9"
+     },
+     "enumerated": "B",
+     "merged": [
+      4,
+      4
+     ],
+     "placement": [
+      0,
+      0
+     ]
+    },
+    "status": "ok",
+    "words": {
+     "00": 144,
+     "01": 144,
+     "10": 144,
+     "11": 144
+    }
+   },
+   {
+    "hidden": {
+     "A": {
+      "hidden": true,
+      "largest_change": "0",
+      "per_own_choice": {
+       "0": true,
+       "1": true
+      }
+     },
+     "B": {
+      "hidden": true,
+      "largest_change": "0",
+      "per_own_choice": {
+       "0": true,
+       "1": true
+      }
+     },
+     "both": true
+    },
+    "hidden_excess": true,
+    "hidden_excess_ii": true,
+    "hidden_excess_iii": true,
+    "pair_A": [
+     "x2",
+     "x3"
+    ],
+    "pair_B": [
+     "y2",
+     "t"
+    ],
+    "score_i": "19/9",
+    "score_i_brute": "19/9",
+    "score_i_detail": {
+     "A": [
+      [
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       -1,
+       -1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       -1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1
+      ],
+      [
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       -1,
+       -1,
+       1,
+       1,
+       1,
+       -1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1
+      ]
+     ],
+     "B": [
+      [
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       -1,
+       -1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       -1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1
+      ],
+      [
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       -1,
+       -1,
+       1,
+       1,
+       -1,
+       -1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1
+      ]
+     ],
+     "E": {
+      "00": "-5/9",
+      "01": "2/3",
+      "10": "5/9",
+      "11": "1/3"
+     },
+     "enumerated": "B",
+     "merged": [
+      4,
+      4
+     ],
+     "placement": [
+      0,
+      0
+     ]
+    },
+    "score_ii": "19/9",
+    "score_ii_detail": {
+     "masks_A": [
+      2,
+      4
+     ],
+     "masks_B": [
+      2,
+      8
+     ],
+     "placement": [
+      0,
+      0
+     ]
+    },
+    "score_ii_with_constant": "19/9",
+    "score_iii": "19/9",
+    "score_iii_brute": "19/9",
+    "score_iii_detail": {
+     "A": [
+      [
+       1,
+       1,
+       1,
+       1,
+       1,
+       -1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       -1,
+       1,
+       1,
+       1
+      ],
+      [
+       1,
+       1,
+       1,
+       -1,
+       1,
+       -1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1
+      ]
+     ],
+     "B": [
+      [
+       1,
+       1,
+       1,
+       1,
+       1,
+       -1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       -1,
+       1,
+       1,
+       1
+      ],
+      [
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       -1,
+       1,
+       -1,
+       1,
+       1,
+       1
+      ]
+     ],
+     "E": {
+      "00": "-5/9",
+      "01": "2/3",
+      "10": "5/9",
+      "11": "1/3"
+     },
+     "enumerated": "B",
+     "merged": [
+      4,
+      4
+     ],
+     "placement": [
+      0,
+      0
+     ]
+    },
+    "status": "ok",
+    "words": {
+     "00": 144,
+     "01": 192,
+     "10": 144,
+     "11": 192
+    }
+   },
+   {
+    "hidden": {
+     "A": {
+      "hidden": true,
+      "largest_change": "0",
+      "per_own_choice": {
+       "0": true,
+       "1": true
+      }
+     },
+     "B": {
+      "hidden": true,
+      "largest_change": "0",
+      "per_own_choice": {
+       "0": true,
+       "1": true
+      }
+     },
+     "both": true
+    },
+    "hidden_excess": true,
+    "hidden_excess_ii": true,
+    "hidden_excess_iii": true,
+    "pair_A": [
+     "x2",
+     "x3"
+    ],
+    "pair_B": [
+     "y3",
+     "t"
+    ],
+    "score_i": "19/9",
+    "score_i_brute": "19/9",
+    "score_i_detail": {
+     "A": [
+      [
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       -1,
+       -1,
+       1,
+       1,
+       -1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1
+      ],
+      [
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       -1,
+       -1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       -1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1
+      ]
+     ],
+     "B": [
+      [
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       -1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       -1,
+       -1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1
+      ],
+      [
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       -1,
+       -1,
+       1,
+       1,
+       -1,
+       -1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1
+      ]
+     ],
+     "E": {
+      "00": "-5/9",
+      "01": "2/3",
+      "10": "5/9",
+      "11": "1/3"
+     },
+     "enumerated": "B",
+     "merged": [
+      4,
+      4
+     ],
+     "placement": [
+      0,
+      0
+     ]
+    },
+    "score_ii": "19/9",
+    "score_ii_detail": {
+     "masks_A": [
+      2,
+      8
+     ],
+     "masks_B": [
+      4,
+      14
+     ],
+     "placement": [
+      0,
+      0
+     ]
+    },
+    "score_ii_with_constant": "19/9",
+    "score_iii": "19/9",
+    "score_iii_brute": "19/9",
+    "score_iii_detail": {
+     "A": [
+      [
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       -1,
+       1,
+       -1,
+       1,
+       1,
+       1
+      ],
+      [
+       1,
+       1,
+       1,
+       -1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       -1,
+       1,
+       1,
+       1,
+       1,
+       1
+      ]
+     ],
+     "B": [
+      [
+       1,
+       1,
+       1,
+       1,
+       1,
+       -1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       -1,
+       1,
+       1,
+       1
+      ],
+      [
+       1,
+       1,
+       1,
+       -1,
+       1,
+       -1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1
+      ]
+     ],
+     "E": {
+      "00": "-5/9",
+      "01": "2/3",
+      "10": "5/9",
+      "11": "1/3"
+     },
+     "enumerated": "B",
+     "merged": [
+      4,
+      4
+     ],
+     "placement": [
+      0,
+      0
+     ]
+    },
+    "status": "ok",
+    "words": {
+     "00": 144,
+     "01": 192,
+     "10": 144,
+     "11": 192
+    }
+   },
+   {
+    "hidden": {
+     "A": {
+      "hidden": true,
+      "largest_change": "0",
+      "per_own_choice": {
+       "0": true,
+       "1": true
+      }
+     },
+     "B": {
+      "hidden": true,
+      "largest_change": "0",
+      "per_own_choice": {
+       "0": true,
+       "1": true
+      }
+     },
+     "both": true
+    },
+    "hidden_excess": true,
+    "hidden_excess_ii": true,
+    "hidden_excess_iii": true,
+    "pair_A": [
+     "x2",
+     "c"
+    ],
+    "pair_B": [
+     "y2",
+     "y3"
+    ],
+    "score_i": "19/9",
+    "score_i_brute": "19/9",
+    "score_i_detail": {
+     "A": [
+      [
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       -1,
+       -1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       -1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1
+      ],
+      [
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       -1,
+       -1,
+       1,
+       1,
+       -1,
+       -1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1
+      ]
+     ],
+     "B": [
+      [
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       -1,
+       -1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       -1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1
+      ],
+      [
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       -1,
+       1,
+       1,
+       1,
+       -1,
+       -1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1
+      ]
+     ],
+     "E": {
+      "00": "-5/9",
+      "01": "5/9",
+      "10": "1/3",
+      "11": "2/3"
+     },
+     "enumerated": "B",
+     "merged": [
+      4,
+      4
+     ],
+     "placement": [
+      0,
+      0
+     ]
+    },
+    "score_ii": "19/9",
+    "score_ii_detail": {
+     "masks_A": [
+      2,
+      4
+     ],
+     "masks_B": [
+      2,
+      8
+     ],
+     "placement": [
+      0,
+      0
+     ]
+    },
+    "score_ii_with_constant": "19/9",
+    "score_iii": "19/9",
+    "score_iii_brute": "19/9",
+    "score_iii_detail": {
+     "A": [
+      [
+       1,
+       1,
+       1,
+       1,
+       1,
+       -1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       -1,
+       1,
+       1,
+       1
+      ],
+      [
+       1,
+       1,
+       1,
+       -1,
+       1,
+       -1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1
+      ]
+     ],
+     "B": [
+      [
+       1,
+       1,
+       1,
+       1,
+       1,
+       -1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       -1,
+       1,
+       1,
+       1
+      ],
+      [
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       -1,
+       1,
+       -1,
+       1,
+       1,
+       1
+      ]
+     ],
+     "E": {
+      "00": "-5/9",
+      "01": "5/9",
+      "10": "1/3",
+      "11": "2/3"
+     },
+     "enumerated": "B",
+     "merged": [
+      4,
+      4
+     ],
+     "placement": [
+      0,
+      0
+     ]
+    },
+    "status": "ok",
+    "words": {
+     "00": 144,
+     "01": 144,
+     "10": 192,
+     "11": 192
+    }
+   },
+   {
+    "hidden": {
+     "A": {
+      "hidden": true,
+      "largest_change": "0",
+      "per_own_choice": {
+       "0": true,
+       "1": true
+      }
+     },
+     "B": {
+      "hidden": true,
+      "largest_change": "0",
+      "per_own_choice": {
+       "0": true,
+       "1": true
+      }
+     },
+     "both": true
+    },
+    "hidden_excess": true,
+    "hidden_excess_ii": true,
+    "hidden_excess_iii": true,
+    "pair_A": [
+     "x2",
+     "c"
+    ],
+    "pair_B": [
+     "y2",
+     "t"
+    ],
+    "score_i": "37/18",
+    "score_i_brute": "37/18",
+    "score_i_detail": {
+     "A": [
+      [
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       -1,
+       -1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       -1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1
+      ],
+      [
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       -1,
+       -1,
+       1,
+       1,
+       -1,
+       -1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1
+      ]
+     ],
+     "B": [
+      [
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       -1,
+       -1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       -1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1
+      ],
+      [
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       -1,
+       -1,
+       1,
+       1,
+       -1,
+       -1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1
+      ]
+     ],
+     "E": {
+      "00": "-5/9",
+      "01": "2/3",
+      "10": "1/3",
+      "11": "1/2"
+     },
+     "enumerated": "B",
+     "merged": [
+      4,
+      4
+     ],
+     "placement": [
+      0,
+      0
+     ]
+    },
+    "score_ii": "37/18",
+    "score_ii_detail": {
+     "masks_A": [
+      2,
+      4
+     ],
+     "masks_B": [
+      2,
+      8
+     ],
+     "placement": [
+      0,
+      0
+     ]
+    },
+    "score_ii_with_constant": "37/18",
+    "score_iii": "37/18",
+    "score_iii_brute": "37/18",
+    "score_iii_detail": {
+     "A": [
+      [
+       1,
+       1,
+       1,
+       1,
+       1,
+       -1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       -1,
+       1,
+       1,
+       1
+      ],
+      [
+       1,
+       1,
+       1,
+       -1,
+       1,
+       -1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1
+      ]
+     ],
+     "B": [
+      [
+       1,
+       1,
+       1,
+       1,
+       1,
+       -1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       -1,
+       1,
+       1,
+       1
+      ],
+      [
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       -1,
+       1,
+       -1,
+       1,
+       1,
+       1
+      ]
+     ],
+     "E": {
+      "00": "-5/9",
+      "01": "2/3",
+      "10": "1/3",
+      "11": "1/2"
+     },
+     "enumerated": "B",
+     "merged": [
+      4,
+      4
+     ],
+     "placement": [
+      0,
+      0
+     ]
+    },
+    "status": "ok",
+    "words": {
+     "00": 144,
+     "01": 192,
+     "10": 192,
+     "11": 256
+    }
+   },
+   {
+    "hidden": {
+     "A": {
+      "hidden": true,
+      "largest_change": "0",
+      "per_own_choice": {
+       "0": true,
+       "1": true
+      }
+     },
+     "B": {
+      "hidden": true,
+      "largest_change": "0",
+      "per_own_choice": {
+       "0": true,
+       "1": true
+      }
+     },
+     "both": true
+    },
+    "hidden_excess": true,
+    "hidden_excess_ii": true,
+    "hidden_excess_iii": true,
+    "pair_A": [
+     "x2",
+     "c"
+    ],
+    "pair_B": [
+     "y3",
+     "t"
+    ],
+    "score_i": "37/18",
+    "score_i_brute": "37/18",
+    "score_i_detail": {
+     "A": [
+      [
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       -1,
+       -1,
+       1,
+       1,
+       -1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1
+      ],
+      [
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       -1,
+       -1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       -1,
+       -1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1
+      ]
+     ],
+     "B": [
+      [
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       -1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       -1,
+       -1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1
+      ],
+      [
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       -1,
+       -1,
+       1,
+       1,
+       -1,
+       -1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1
+      ]
+     ],
+     "E": {
+      "00": "-5/9",
+      "01": "2/3",
+      "10": "1/3",
+      "11": "1/2"
+     },
+     "enumerated": "B",
+     "merged": [
+      4,
+      4
+     ],
+     "placement": [
+      0,
+      0
+     ]
+    },
+    "score_ii": "37/18",
+    "score_ii_detail": {
+     "masks_A": [
+      2,
+      8
+     ],
+     "masks_B": [
+      4,
+      14
+     ],
+     "placement": [
+      0,
+      0
+     ]
+    },
+    "score_ii_with_constant": "37/18",
+    "score_iii": "37/18",
+    "score_iii_brute": "37/18",
+    "score_iii_detail": {
+     "A": [
+      [
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       -1,
+       1,
+       -1,
+       1,
+       1,
+       1
+      ],
+      [
+       1,
+       1,
+       1,
+       -1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       -1,
+       1,
+       1,
+       1,
+       1,
+       1
+      ]
+     ],
+     "B": [
+      [
+       1,
+       1,
+       1,
+       1,
+       1,
+       -1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       -1,
+       1,
+       1,
+       1
+      ],
+      [
+       1,
+       1,
+       1,
+       -1,
+       1,
+       -1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1
+      ]
+     ],
+     "E": {
+      "00": "-5/9",
+      "01": "2/3",
+      "10": "1/3",
+      "11": "1/2"
+     },
+     "enumerated": "B",
+     "merged": [
+      4,
+      4
+     ],
+     "placement": [
+      0,
+      0
+     ]
+    },
+    "status": "ok",
+    "words": {
+     "00": 144,
+     "01": 192,
+     "10": 192,
+     "11": 256
+    }
+   },
+   {
+    "hidden": {
+     "A": {
+      "hidden": true,
+      "largest_change": "0",
+      "per_own_choice": {
+       "0": true,
+       "1": true
+      }
+     },
+     "B": {
+      "hidden": true,
+      "largest_change": "0",
+      "per_own_choice": {
+       "0": true,
+       "1": true
+      }
+     },
+     "both": true
+    },
+    "hidden_excess": true,
+    "hidden_excess_ii": true,
+    "hidden_excess_iii": true,
+    "pair_A": [
+     "x3",
+     "c"
+    ],
+    "pair_B": [
+     "y2",
+     "y3"
+    ],
+    "score_i": "19/9",
+    "score_i_brute": "19/9",
+    "score_i_detail": {
+     "A": [
+      [
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       -1,
+       1,
+       1,
+       1,
+       -1,
+       -1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1
+      ],
+      [
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       -1,
+       -1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       -1,
+       -1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1
+      ]
+     ],
+     "B": [
+      [
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       -1,
+       -1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       -1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1
+      ],
+      [
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       -1,
+       -1,
+       1,
+       1,
+       1,
+       -1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1
+      ]
+     ],
+     "E": {
+      "00": "-5/9",
+      "01": "5/9",
+      "10": "2/3",
+      "11": "1/3"
+     },
+     "enumerated": "B",
+     "merged": [
+      4,
+      4
+     ],
+     "placement": [
+      0,
+      0
+     ]
+    },
+    "score_ii": "19/9",
+    "score_ii_detail": {
+     "masks_A": [
+      2,
+      8
+     ],
+     "masks_B": [
+      4,
+      14
+     ],
+     "placement": [
+      0,
+      0
+     ]
+    },
+    "score_ii_with_constant": "19/9",
+    "score_iii": "19/9",
+    "score_iii_brute": "19/9",
+    "score_iii_detail": {
+     "A": [
+      [
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       -1,
+       1,
+       -1,
+       1,
+       1,
+       1
+      ],
+      [
+       1,
+       1,
+       1,
+       -1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       -1,
+       1,
+       1,
+       1,
+       1,
+       1
+      ]
+     ],
+     "B": [
+      [
+       1,
+       1,
+       1,
+       1,
+       1,
+       -1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       -1,
+       1,
+       1,
+       1
+      ],
+      [
+       1,
+       1,
+       1,
+       -1,
+       1,
+       -1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1
+      ]
+     ],
+     "E": {
+      "00": "-5/9",
+      "01": "5/9",
+      "10": "2/3",
+      "11": "1/3"
+     },
+     "enumerated": "B",
+     "merged": [
+      4,
+      4
+     ],
+     "placement": [
+      0,
+      0
+     ]
+    },
+    "status": "ok",
+    "words": {
+     "00": 144,
+     "01": 144,
+     "10": 192,
+     "11": 192
+    }
+   },
+   {
+    "hidden": {
+     "A": {
+      "hidden": true,
+      "largest_change": "0",
+      "per_own_choice": {
+       "0": true,
+       "1": true
+      }
+     },
+     "B": {
+      "hidden": true,
+      "largest_change": "0",
+      "per_own_choice": {
+       "0": true,
+       "1": true
+      }
+     },
+     "both": true
+    },
+    "hidden_excess": true,
+    "hidden_excess_ii": true,
+    "hidden_excess_iii": true,
+    "pair_A": [
+     "x3",
+     "c"
+    ],
+    "pair_B": [
+     "y2",
+     "t"
+    ],
+    "score_i": "37/18",
+    "score_i_brute": "37/18",
+    "score_i_detail": {
+     "A": [
+      [
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       -1,
+       1,
+       1,
+       1,
+       -1,
+       -1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1
+      ],
+      [
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       -1,
+       -1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       -1,
+       -1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1
+      ]
+     ],
+     "B": [
+      [
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       -1,
+       -1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       -1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1
+      ],
+      [
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       -1,
+       -1,
+       1,
+       1,
+       -1,
+       -1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1
+      ]
+     ],
+     "E": {
+      "00": "-5/9",
+      "01": "1/3",
+      "10": "2/3",
+      "11": "1/2"
+     },
+     "enumerated": "B",
+     "merged": [
+      4,
+      4
+     ],
+     "placement": [
+      0,
+      0
+     ]
+    },
+    "score_ii": "37/18",
+    "score_ii_detail": {
+     "masks_A": [
+      2,
+      8
+     ],
+     "masks_B": [
+      4,
+      14
+     ],
+     "placement": [
+      0,
+      0
+     ]
+    },
+    "score_ii_with_constant": "37/18",
+    "score_iii": "37/18",
+    "score_iii_brute": "37/18",
+    "score_iii_detail": {
+     "A": [
+      [
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       -1,
+       1,
+       -1,
+       1,
+       1,
+       1
+      ],
+      [
+       1,
+       1,
+       1,
+       -1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       -1,
+       1,
+       1,
+       1,
+       1,
+       1
+      ]
+     ],
+     "B": [
+      [
+       1,
+       1,
+       1,
+       1,
+       1,
+       -1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       -1,
+       1,
+       1,
+       1
+      ],
+      [
+       1,
+       1,
+       1,
+       -1,
+       1,
+       -1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1
+      ]
+     ],
+     "E": {
+      "00": "-5/9",
+      "01": "1/3",
+      "10": "2/3",
+      "11": "1/2"
+     },
+     "enumerated": "B",
+     "merged": [
+      4,
+      4
+     ],
+     "placement": [
+      0,
+      0
+     ]
+    },
+    "status": "ok",
+    "words": {
+     "00": 144,
+     "01": 192,
+     "10": 192,
+     "11": 256
+    }
+   },
+   {
+    "hidden": {
+     "A": {
+      "hidden": true,
+      "largest_change": "0",
+      "per_own_choice": {
+       "0": true,
+       "1": true
+      }
+     },
+     "B": {
+      "hidden": true,
+      "largest_change": "0",
+      "per_own_choice": {
+       "0": true,
+       "1": true
+      }
+     },
+     "both": true
+    },
+    "hidden_excess": true,
+    "hidden_excess_ii": true,
+    "hidden_excess_iii": true,
+    "pair_A": [
+     "x3",
+     "c"
+    ],
+    "pair_B": [
+     "y3",
+     "t"
+    ],
+    "score_i": "37/18",
+    "score_i_brute": "37/18",
+    "score_i_detail": {
+     "A": [
+      [
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       -1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       -1,
+       -1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1
+      ],
+      [
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       -1,
+       -1,
+       1,
+       1,
+       -1,
+       -1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1
+      ]
+     ],
+     "B": [
+      [
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       -1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       -1,
+       -1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1
+      ],
+      [
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       -1,
+       -1,
+       1,
+       1,
+       -1,
+       -1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1
+      ]
+     ],
+     "E": {
+      "00": "-5/9",
+      "01": "1/3",
+      "10": "2/3",
+      "11": "1/2"
+     },
+     "enumerated": "B",
+     "merged": [
+      4,
+      4
+     ],
+     "placement": [
+      0,
+      0
+     ]
+    },
+    "score_ii": "37/18",
+    "score_ii_detail": {
+     "masks_A": [
+      2,
+      4
+     ],
+     "masks_B": [
+      2,
+      8
+     ],
+     "placement": [
+      0,
+      0
+     ]
+    },
+    "score_ii_with_constant": "37/18",
+    "score_iii": "37/18",
+    "score_iii_brute": "37/18",
+    "score_iii_detail": {
+     "A": [
+      [
+       1,
+       1,
+       1,
+       1,
+       1,
+       -1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       -1,
+       1,
+       1,
+       1
+      ],
+      [
+       1,
+       1,
+       1,
+       -1,
+       1,
+       -1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1
+      ]
+     ],
+     "B": [
+      [
+       1,
+       1,
+       1,
+       1,
+       1,
+       -1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       -1,
+       1,
+       1,
+       1
+      ],
+      [
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       -1,
+       1,
+       -1,
+       1,
+       1,
+       1
+      ]
+     ],
+     "E": {
+      "00": "-5/9",
+      "01": "1/3",
+      "10": "2/3",
+      "11": "1/2"
+     },
+     "enumerated": "B",
+     "merged": [
+      4,
+      4
+     ],
+     "placement": [
+      0,
+      0
+     ]
+    },
+    "status": "ok",
+    "words": {
+     "00": 144,
+     "01": 192,
+     "10": 192,
+     "11": 256
+    }
+   }
+  ],
+  "words": {
+   "c|t": 256,
+   "c|y2": 192,
+   "c|y3": 192,
+   "x2|t": 192,
+   "x2|y2": 144,
+   "x2|y3": 144,
+   "x3|t": 192,
+   "x3|y2": 144,
+   "x3|y3": 144
+  }
+ },
+ "g2": {
+  "all_agree": true,
+  "rows": [
+   {
+    "agree": true,
+    "agree_hidden": true,
+    "agree_score": true,
+    "mine_hidden": true,
+    "mine_score_ii": "20/9",
+    "pair_A": [
+     "x2",
+     "x3"
+    ],
+    "pair_B": [
+     "y2",
+     "y3"
+    ],
+    "scorer_hidden": true,
+    "scorer_largest_change": "0",
+    "scorer_score": 2.2222222222222223
+   },
+   {
+    "agree": true,
+    "agree_hidden": true,
+    "agree_score": true,
+    "mine_hidden": true,
+    "mine_score_ii": "19/9",
+    "pair_A": [
+     "x2",
+     "x3"
+    ],
+    "pair_B": [
+     "y2",
+     "t"
+    ],
+    "scorer_hidden": true,
+    "scorer_largest_change": "0",
+    "scorer_score": 2.111111111111111
+   },
+   {
+    "agree": true,
+    "agree_hidden": true,
+    "agree_score": true,
+    "mine_hidden": true,
+    "mine_score_ii": "19/9",
+    "pair_A": [
+     "x2",
+     "x3"
+    ],
+    "pair_B": [
+     "y3",
+     "t"
+    ],
+    "scorer_hidden": true,
+    "scorer_largest_change": "0",
+    "scorer_score": 2.111111111111111
+   },
+   {
+    "agree": true,
+    "agree_hidden": true,
+    "agree_score": true,
+    "mine_hidden": true,
+    "mine_score_ii": "19/9",
+    "pair_A": [
+     "x2",
+     "c"
+    ],
+    "pair_B": [
+     "y2",
+     "y3"
+    ],
+    "scorer_hidden": true,
+    "scorer_largest_change": "0",
+    "scorer_score": 2.111111111111111
+   },
+   {
+    "agree": true,
+    "agree_hidden": true,
+    "agree_score": true,
+    "mine_hidden": true,
+    "mine_score_ii": "37/18",
+    "pair_A": [
+     "x2",
+     "c"
+    ],
+    "pair_B": [
+     "y2",
+     "t"
+    ],
+    "scorer_hidden": true,
+    "scorer_largest_change": "0",
+    "scorer_score": 2.055555555555556
+   },
+   {
+    "agree": true,
+    "agree_hidden": true,
+    "agree_score": true,
+    "mine_hidden": true,
+    "mine_score_ii": "37/18",
+    "pair_A": [
+     "x2",
+     "c"
+    ],
+    "pair_B": [
+     "y3",
+     "t"
+    ],
+    "scorer_hidden": true,
+    "scorer_largest_change": "0",
+    "scorer_score": 2.055555555555556
+   },
+   {
+    "agree": true,
+    "agree_hidden": true,
+    "agree_score": true,
+    "mine_hidden": true,
+    "mine_score_ii": "19/9",
+    "pair_A": [
+     "x3",
+     "c"
+    ],
+    "pair_B": [
+     "y2",
+     "y3"
+    ],
+    "scorer_hidden": true,
+    "scorer_largest_change": "0",
+    "scorer_score": 2.111111111111111
+   },
+   {
+    "agree": true,
+    "agree_hidden": true,
+    "agree_score": true,
+    "mine_hidden": true,
+    "mine_score_ii": "37/18",
+    "pair_A": [
+     "x3",
+     "c"
+    ],
+    "pair_B": [
+     "y2",
+     "t"
+    ],
+    "scorer_hidden": true,
+    "scorer_largest_change": "0",
+    "scorer_score": 2.055555555555556
+   },
+   {
+    "agree": true,
+    "agree_hidden": true,
+    "agree_score": true,
+    "mine_hidden": true,
+    "mine_score_ii": "37/18",
+    "pair_A": [
+     "x3",
+     "c"
+    ],
+    "pair_B": [
+     "y3",
+     "t"
+    ],
+    "scorer_hidden": true,
+    "scorer_largest_change": "0",
+    "scorer_score": 2.055555555555556
+   }
+  ]
+ },
+ "inputs": {
+  "lib": "c2bfbfd88aad35907fb4010bc43ab0454cbc53446145323050f697b831a9ae21",
+  "preregistration": "2fe6c5101d0fdcd92fa24ed9507abad7104872c66139e4d73c9b4ecb34540cd9",
+  "qlaw": "457abaa5a05e05785282b31dcd5f58a5eb6181f0a1a7adf7df81d4867c747942",
+  "rlaw": "29aa3d9112d4a12b2d7970756c455e11dd3ed7abaef99b85daa64f4c4222d8f8",
+  "scorer": "ec55774ae031b2d72f07a3cddc086d9d2f562b808fb5514d339f4621714b4194"
+ },
+ "knots": [
+  "even(x1,x2,x3,c)",
+  "nae(c,x2,s1)",
+  "nae(c,x3,s2)",
+  "even(x2,h1,h2)",
+  "odd(x3,h1,h2)",
+  "even(y1,y2,y3,t)",
+  "even(t,m1,m2)",
+  "even(s1,m1,m2)",
+  "even(y2,k1,k2)",
+  "odd(y3,k1,k2)",
+  "odd(s2,k1,k2)"
+ ],
+ "names": [
+  "x1",
+  "x2",
+  "x3",
+  "c",
+  "s1",
+  "s2",
+  "h1",
+  "h2",
+  "y1",
+  "y2",
+  "y3",
+  "t",
+  "m1",
+  "m2",
+  "k1",
+  "k2"
+ ],
+ "old_words": 64,
+ "part": "main",
+ "seconds": 0.8,
+ "stage1": {
+  "c|t": {
+   "completions": {
+    "4": 64
+   },
+   "knots": [
+    "nae(x1,c,zA)",
+    "nae(y1,t,zB)"
+   ],
+   "words": 256
+  },
+  "c|y2": {
+   "completions": {
+    "2": 32,
+    "4": 32
+   },
+   "knots": [
+    "nae(x1,c,zA)",
+    "nae(y1,y2,zB)"
+   ],
+   "words": 192
+  },
+  "c|y3": {
+   "completions": {
+    "2": 32,
+    "4": 32
+   },
+   "knots": [
+    "nae(x1,c,zA)",
+    "nae(y1,y3,zB)"
+   ],
+   "words": 192
+  },
+  "x2|t": {
+   "completions": {
+    "2": 32,
+    "4": 32
+   },
+   "knots": [
+    "nae(x1,x2,zA)",
+    "nae(y1,t,zB)"
+   ],
+   "words": 192
+  },
+  "x2|y2": {
+   "completions": {
+    "1": 16,
+    "2": 32,
+    "4": 16
+   },
+   "knots": [
+    "nae(x1,x2,zA)",
+    "nae(y1,y2,zB)"
+   ],
+   "words": 144
+  },
+  "x2|y3": {
+   "completions": {
+    "1": 16,
+    "2": 32,
+    "4": 16
+   },
+   "knots": [
+    "nae(x1,x2,zA)",
+    "nae(y1,y3,zB)"
+   ],
+   "words": 144
+  },
+  "x3|t": {
+   "completions": {
+    "2": 32,
+    "4": 32
+   },
+   "knots": [
+    "nae(x1,x3,zA)",
+    "nae(y1,t,zB)"
+   ],
+   "words": 192
+  },
+  "x3|y2": {
+   "completions": {
+    "1": 16,
+    "2": 32,
+    "4": 16
+   },
+   "knots": [
+    "nae(x1,x3,zA)",
+    "nae(y1,y2,zB)"
+   ],
+   "words": 144
+  },
+  "x3|y3": {
+   "completions": {
+    "1": 16,
+    "2": 32,
+    "4": 16
+   },
+   "knots": [
+    "nae(x1,x3,zA)",
+    "nae(y1,y3,zB)"
+   ],
+   "words": 144
+  }
+ }
+}

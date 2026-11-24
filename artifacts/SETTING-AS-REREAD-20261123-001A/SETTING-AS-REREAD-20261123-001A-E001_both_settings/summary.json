@@ -1,0 +1,175 @@
+{
+ "f": {
+  "classes": {
+   "x2!=x3:False y2!=y3:False": {
+    "('ok', True, True, '2', '2', '2')": 128
+   },
+   "x2!=x3:False y2!=y3:True": {
+    "('ok', False, True, '194/91', '194/91', '194/91')": 64,
+    "('ok', False, True, '23/10', '23/10', '23/10')": 64
+   },
+   "x2!=x3:True y2!=y3:False": {
+    "('ok', True, True, '2', '2', '2')": 128
+   },
+   "x2!=x3:True y2!=y3:True": {
+    "('ok', True, True, '20/9', '20/9', '20/9')": 128
+   }
+  },
+  "hidden_excess_i": 128,
+  "hidden_excess_ii": 128,
+  "hidden_excess_iii": 128,
+  "n": 512,
+  "no_word": 0,
+  "outcomes": {
+   "(False, '194/91')": 64,
+   "(False, '23/10')": 64,
+   "(True, '2')": 256,
+   "(True, '20/9')": 128
+  }
+ },
+ "inputs": {
+  "lib": "c2bfbfd88aad35907fb4010bc43ab0454cbc53446145323050f697b831a9ae21",
+  "preregistration": "2fe6c5101d0fdcd92fa24ed9507abad7104872c66139e4d73c9b4ecb34540cd9",
+  "qlaw": "457abaa5a05e05785282b31dcd5f58a5eb6181f0a1a7adf7df81d4867c747942",
+  "rlaw": "29aa3d9112d4a12b2d7970756c455e11dd3ed7abaef99b85daa64f4c4222d8f8",
+  "scorer": "ec55774ae031b2d72f07a3cddc086d9d2f562b808fb5514d339f4621714b4194"
+ },
+ "runs": [
+  "part=main status=0",
+  "part=g_draws status=0",
+  "part=e status=1",
+  "part=f status=0",
+  "part=e (rerun) status=0",
+  "part=main (rerun, deviations B4) status=0"
+ ],
+ "verdicts": {
+  "G": {
+   "draws": {
+    "engine_equals_recorded": 280,
+    "funded": 280,
+    "planner_QN_equals_qgrowth_round1": 280,
+    "planner_QO_equals_qgrowth_round1": 280,
+    "planner_off_equals_end_operator_round1": 280,
+    "planner_off_equals_qgrowth_round1": 280,
+    "reread_births_round1_N": 598,
+    "reread_births_round1_O": 598,
+    "rounds_compared": 3360
+   },
+   "holds": true,
+   "scorer_all_agree": true,
+   "scorer_rows": 9
+  },
+  "P1": {
+   "births": true,
+   "holds": true,
+   "main_pair": true,
+   "options": true,
+   "other_eight": true
+  },
+  "P2": {
+   "fixed_scores_at_most_2": true,
+   "holds": true,
+   "s1s2_not_on_alice": true,
+   "s1s2_on_bob_for_every_alice_choice": true,
+   "s1s2_on_bob_for_some_alice_choice": true
+  },
+  "P3": {
+   "holds": true,
+   "largest_subtest_score_i": "20/9"
+  },
+  "P4": {
+   "beside_loose_hidden_excess": [
+    [
+     8
+    ],
+    [
+     9
+    ]
+   ],
+   "beside_loose_met": [
+    [
+     8
+    ],
+    [
+     9
+    ],
+    [
+     1,
+     6
+    ],
+    [
+     1,
+     7
+    ],
+    [
+     1,
+     8
+    ],
+    [
+     1,
+     9
+    ],
+    [
+     2,
+     8
+    ],
+    [
+     2,
+     9
+    ],
+    [
+     2,
+     10
+    ],
+    [
+     3,
+     4
+    ]
+   ],
+   "beside_two_one_parent_hidden_excess": [],
+   "beside_two_one_parent_met": [
+    [
+     1,
+     8
+    ],
+    [
+     1,
+     9
+    ],
+    [
+     2,
+     8
+    ],
+    [
+     2,
+     9
+    ],
+    [
+     2,
+     10
+    ],
+    [
+     3,
+     4
+    ]
+   ],
+   "holds": true,
+   "strict_hidden_excess": [],
+   "strict_met": [
+    [
+     2,
+     10
+    ],
+    [
+     3,
+     4
+    ]
+   ]
+  },
+  "P5": {
+   "holds": true,
+   "score_i": "20/9",
+   "score_iii": "20/9"
+  }
+ }
+}

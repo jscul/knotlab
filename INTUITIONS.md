@@ -4746,9 +4746,8 @@ run was not run, cut at the hour, and is not a negative
   between the run with the second growing and the run with it barred, and in
   none of the 16 pairs asked with what the second is.
 - [10.4 Two studies in design: a made copier and a made count of returns](#104-two-studies-in-design-a-made-copier-and-a-made-count-of-returns):
-  two studies in design, one asking for each. The first has frozen its claim,
-  predicts that every registered claim fails and has made no registered run;
-  the second is not frozen. Neither has a result.
+  two studies, one asking for each. The first has run two of its tickets and
+  found no copier; the second has run and found no made count of returns.
 - [10.5 What is open](#105-what-is-open): the open sub-goals, one by one.
 
 **The intuition.** The record has no fold of emergence. A growth that only
@@ -5072,10 +5071,10 @@ makes." The register holds this as assumption A244, a working premise
 (sub-goal B327, under goal G15). A copier would meet a second pattern and
 leave two of the second; the part that copies itself leaves two of itself.
 
-**The claim, frozen and not yet run.** The study of a made copier,
-MADE-COPIER-20261125-001, froze its first ticket on the evening of 24 November
-2026 (Pacific time; 25 November in UTC), before its code was written, so no
-registered run has been made
+**The first ticket: no copier (computed, referee pending).** The study of a
+made copier, MADE-COPIER-20261125-001, froze its first ticket on the evening
+of 24 November 2026 (Pacific time; 25 November in UTC), before its code was
+written
 ([its claim](research/MADE-COPIER-20261125-001/claim.md);
 [its pre-registration](research/MADE-COPIER-20261125-001A/preregistration.md)).
 The law is fixed before any pattern: the taking rule that takes from a knot the
@@ -5086,15 +5085,15 @@ form small classes set out in advance. His three readings of "two of it", "the
 same form, the same built structure, or the same values", become two parts the
 same as the second pattern; two sets of made knots each a renaming of the
 second pattern's knots; and two usable loose made distinctions each tied to
-one place of the second pattern (glossary, "Tie class"). Two things are
-settled by argument before any run: under its taking rules with the ration
-"just enough for three places" no part with a member holding two loose
-distinctions is made except by offshoots of start knots, so the form reading
-is tested under other base laws; and under not-all-equal, from a start with no
-tie, no made distinction is ever tied to another, so the values reading is
-claimed under parity only. Every registered claim is predicted to fail; a
-failure would speak of that one first pattern, those rules and those classes
-only.
+one place of the second pattern (glossary, "Tie class"). The run found no
+copier in any of the three readings, for any registered class, law and
+convention. Under not-all-equal no made distinction is ever tied to another
+from these starts. Under parity two made distinctions tied to one place of the
+second pattern appear once under a stated convention, and that one case is
+gone when the start is renumbered. The first pattern's course does differ with
+which second pattern is there, in 367 of 2,304 pairs of runs, under rules that
+choose by name
+([the first ticket's result](research/MADE-COPIER-20261125-001A/results.md)).
 
 **Consume and output two.** Later the same evening, before the freeze, the
 owner wrote: "I have a trick maybe. What if instead of 'copying', we consume
@@ -5102,9 +5101,19 @@ and output 2?" (24 November 2026, Pacific time; the record's tickets carry 25
 November). It changes what counts as two. The two patterns would become one
 part, births with a parent in each would use up the second pattern's loose
 distinctions, the second pattern's own descendants would end, and the two
-afterwards would descend from both patterns; the frozen claim counts only two
+afterwards would descend from both patterns; the first ticket counts only two
 whose members descend from the first pattern alone. A second ticket of the
-same study is being designed for it; nothing of it is frozen or run.
+same study tested it (computed, referee pending). Where the start supplies the
+meeting and no birth takes a shared distinction, two parts of the second
+pattern's form, each descended from both, do appear, in 100 runs; in every one
+the second pattern alone leaves two of itself as well, so the first pattern is
+not what makes two. Where a birth may take a distinction held by a knot its
+parent meets, no run leaves two such parts; 2,718 of that arm's 18,432 runs
+on its larger set of starts were not run, cut at the hour, and are not
+negatives
+([the second ticket's result](research/MADE-COPIER-20261125-001B/results.md)).
+A third ticket, which samples many starts with nothing built or picked, is
+running.
 
 **An inkling that no copier is general.** "the interesting fact here is that
 it's actually impossible to generalize a 'copier' for all logic structures. It
@@ -5115,8 +5124,9 @@ premise kept apart from the evidence. The frozen claim registers it as a
 reading (its section 6): no first pattern, law and stated rule leaves two of
 every member of a registered class; since the classes are finite, failures
 would only support it, and one pattern that works for a whole class would
-overturn it for that class. "Over-write the instructions" and "break out" stay
-in his words.
+overturn it for that class. The first two tickets found no pattern that works
+for a class, which supports his first sentence on those classes and cannot
+prove it. "Over-write the instructions" and "break out" stay in his words.
 
 **What a made count would be.** A made count of returns would be a pattern the
 growth builds whose births follow another pattern's returns; "made" speaks of
@@ -5183,10 +5193,12 @@ made a pattern of its own from what it met.
   computed, referee pending). The first step as filed: fix the taken
   distinction by something the structure holds, and compare with the supplied
   conventions on the same starts.
-- **B327 and B329.** Taken by the two studies of lesson 10.4. B329's study
-  has run and found no made count of returns (lesson 9.6). What it leaves
-  open: a law under which a second part's own knots keep a fixed number for
-  each tick, and a reading at each return that survives every numbering.
+- **B327 and B329.** Taken by the two studies of lesson 10.4. B327's first
+  two tickets have run and found no copier; its third, by sampling, is
+  running. B329's study has run and found no made count of returns (lesson
+  9.6). What it leaves open: a law under which a second part's own knots keep
+  a fixed number for each tick, and a reading at each return that survives
+  every numbering.
 - **B328, where it bears (goal G5, dynamics).** The rules that take from one
   or two parent steps from a parent read the record of births, which each
   birth writes and the study lists as supplied; the rule that takes from a

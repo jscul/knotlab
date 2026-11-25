@@ -3,6 +3,10 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 25 November 2026 · Which taking rule reaches further
+
+**A correction to a next step named in a probe's report, published the same day.** The report of [the probe of a part that meets two others](research/WHAT-A-BIRTH-CARRIES-20261125-001/checks/two_by_two/README.md) named "a take within one holder step" as the first rule to try for bringing parts of different descent to meet. That rule looks less far than the take of a sole candidate already in use, which draws from the knots a parent meets. The rules that reach further draw from the knots that those knots meet. The direction was run with those, in [a second probe](research/WHAT-A-BIRTH-CARRIES-20261125-001/checks/reach_further/README.md). No result changes.
+
 ## 25 November 2026 · What exists at one round: of degree 2 on four starts, not "degree 1 in every run"
 
 **Narrowing of a result published the same day, and of the guide.** The study of knots within reach, and lesson 8.2 of the guide, said that under the recorded laws the live knots within r steps of one of them number about a multiple of r in every run read, and that nothing at one round grows faster. That was concluded from the study's registered labels, 283 of which were "undecided". The counts behind those labels, in the study's own records, show that on four small starts, under the ordinary count and under the cap of three with short knots retiring or making offshoots, the live knots are one part whose count within r steps is exactly 3r² + 3r + 1, the count of a six-regular pattern, through as many as 20 steps after 66 rounds. The registered reading could not decide them because the part is still too small for the range it asks for. So what exists at one round is of degree 2 on those starts. The study's result and decision carry a dated correction, and the lesson is reworded. Its other findings stand. [The check](research/KNOTS-WITHIN-REACH-20261125-001/checks/README.md) · [the study's decision](research/KNOTS-WITHIN-REACH-20261125-001/decision.md)

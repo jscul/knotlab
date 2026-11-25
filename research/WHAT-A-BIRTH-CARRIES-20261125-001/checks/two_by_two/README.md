@@ -137,3 +137,8 @@ Direction 1 moves the fold of emergence (G15): it is the first setting in which 
 **Assumptions:** none added or changed. A244 (a law is not a reader) is borne out again.
 **Scaffolds:** none added. Relied on: ticket B's take of a sole candidate and its owing ration. Swapped: the ration (ten forms), the treatment of short knots (four), the starts (rings and census), the knot law (on the ring starts). What survived: how many and never which, under the owing ration and its plain form. Under the capped forms and the recorded rations the first part does not respond at all.
 **Basket:** direction 1 is recorded on B335; directions 2 and 3 are in this report only.
+
+> **Correction, 25 November 2026, later the same day.** Direction 1's first step above names "a take within one holder
+> step". That rule looks less far than the take of a sole candidate, not farther: the take in use already draws from
+> the knots a parent meets. The rules that reach further draw from the knots that those knots meet. The direction was
+> run with those: [the second probe](../reach_further/README.md).

@@ -5258,10 +5258,24 @@ made a pattern of its own from what it met.
   which: the parts that meet through made knots are branches of one knot,
   alike, and they all meet in the round after they separate (5,091 triples;
   6,525 pairs of second parts on 196 census starts, every pair alike). Where
-  the second parts are not alike, the first part does not respond. What is
-  open (a sub-goal under G15): a law without names under which parts that do
-  not descend from one knot come to meet, so that a count cannot be the whole
-  difference.
+  the second parts are not alike, the first part does not respond. A second
+  probe tried seven taking rules without names that reach further or choose
+  differently
+  ([the second probe](research/WHAT-A-BIRTH-CARRIES-20261125-001/checks/reach_further/README.md)).
+  One of them, drawing from the knots that a parent's met knots meet and
+  taking the candidate with the most holders when exactly one has the most,
+  does make parts of different descent meet through made knots. Where the
+  link is wholly the growth's (1,120 tests on 123 rings of five knots) the
+  first part's course still tells only how many, now through two values at
+  two births, and never which. On the census starts every such link runs
+  through a distinction a start knot holds; there, in 11 of 127 tests, the
+  course does differ with which second part is barred, and in the cases
+  read birth by birth that is which one arrives first, or a count at one
+  birth and a join at another. No test holds the place fixed and changes
+  the form of the second part, so whether a course can respond to what a
+  second part is stays open (a sub-goal under G15). The study of parts that
+  meet again had found the same with one second part: what crosses is
+  whether the other part is there.
 - **B326, an index made by the growth (G15).** The owner, by 24 November 2026
   (Pacific time): "This is why we may need 'function-like' logical operations
   where we can reference/sample logic. These are basically meeting patterns

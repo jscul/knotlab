@@ -5545,11 +5545,22 @@ that earlier records used in two senses.
   rounds, in births or, in lesson 7.3, in moves; every count names its unit.
   Not the process line's "born" and "birth rule" for bands and cells of a
   network of rings of cells (9 November 2026), kept in that record's words.
-- **Junction; parent.** In parity growth by the cubic study's joining rule
-  (`CUBIC-FROM-A-KNOT-20261117-001`), a junction is one of the growth's
-  parity knots, each placed by the rule on loose distinctions of earlier
-  junctions and some fresh ones; its parents are the junctions it took a
-  distinction from.
+- **Junction; parent.** The growth records' word for a knot of a growing
+  structure: the knots of the start and every knot a growth law makes are its
+  junctions, and lesson 8.1 says "a junction is simply a knot". In the growth
+  lessons the two words name the same things, and the owner has kept both (24
+  November 2026, Pacific time). "Junction" is the older word, from parity
+  growth by the cubic study's joining rule (`CUBIC-FROM-A-KNOT-20261117-001`),
+  where each junction is placed by the rule on loose distinctions of earlier
+  junctions and some fresh ones; lesson 8.1 and the entries below keep it, and
+  the lessons from 8.7 on say "knot". One difference is worth knowing. A law
+  makes a junction as a parity or a not-all-equal rule on the distinctions it
+  holds, and whether that rule is a knot in the sense of lesson 2.1,
+  constrained as a whole and free in every part within the whole structure,
+  is tested and not assumed: the studies of lesson 8.7 and after test every
+  one and name any that fails. A junction's parents are the junctions it
+  took a distinction from (see Birth for the laws under which a birth also
+  takes a distinction that none of its parents holds).
 - **Parent step; holder step.** A parent step goes from a knot to one of its
   parents. A holder step goes from a knot to a knot that shares a distinction
   with it, across that distinction. Every parent step is a holder step; which
@@ -5906,6 +5917,7 @@ that earlier records used in two senses.
   | open | of a distinction, free on its own (lesson 1.4) | the unjoined end of a chain or string: loose end; an open chain: chain |
   | atom | the knot ¬A ∨ ¬B ∨ c (lesson 1.5) | an end piece of a three-regular contradiction: Fano piece; a closed knot space less a point, grown in place of a line (the learning line's torus or Fano atom): piece |
   | knot | a relation constrained as a whole and free in every part (lesson 2.1) | a knotted rope: classical knot |
+  | junction | a knot of a growing structure, the start's knots included: the growth records' word, kept beside "knot" as a second word for the same things in the growth lessons (lesson 8.1; glossary, "Junction; parent") | (no other sense) |
   | law | a rule put everywhere in a pattern (lesson 4.6) | a regularity the allowed states force: bond |
   | smallest bond | the bond with the fewest distinctions (lesson 4.6) | the knot that excludes the fewest states: weakest bond |
   | bond distance | read from the allowed states (lesson 4.6) | a count of knots or co-knotted pairs in a chain: steps apart (bases within bases and nesting by substitution, 12 November 2026, corrected) |

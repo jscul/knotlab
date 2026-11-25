@@ -3,6 +3,10 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 25 November 2026 · What the copier study's frozen text disclosed from its prototype
+
+**Narrowing of a disclosure; no result changes.** The frozen pre-registration of the copier study's first ticket disclosed three things from the drafter's prototype that the study's own engine and an independent check did not bear out as worded. The prototype's counts of histories "stopped at the guard" under the cap of three (4,867, 5,000 and 5,000) were of a trial round it grew to list candidate takes, not of the histories' own rounds; read as the definitions say, none of 20,000 histories of each design stops. Its counts of drawn histories were made under another seed than the one the definitions register, so they are of other histories. And the definitions say in two places, differently, at which round a comparison is made, which decides two counts of the owner's arm (359 against the disclosed 357; 64 against 62). The result note gives each with its replay. [The first ticket's result](research/MADE-COPIER-20261125-001A/results.md)
+
 ## 25 November 2026 · What the study of parts that meet again showed, said more exactly
 
 **Narrowing of the public summary.** Intuitions lessons 8.7 and 9.6 and the glossary's "Ancestral common knot" summarised that study more broadly than its results. The recorded rules keep apart parts that share nothing, even through a third part, not every pair that came apart. One part's course differs with the other barred, the other staying built. In 72 pairs a birth has a parent in each part; what was not found is anything built from what the other part is. An ancestral common knot was among the common knots of the two parts for 62 pairs and the only one for 6. For 38 of the 216 pairs the difference went through a third part. Lesson 9.6 no longer says that a made count of returns has the form of a fold of emergence; that is left open. The new Chapter 10 gives the study with these scopes. [Parts that meet again](research/PARTS-MEET-AGAIN-20261124-001A/results.md)

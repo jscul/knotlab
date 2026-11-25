@@ -24,5 +24,5 @@ The [discovery disposition](discovery_disposition.json) adds five records under 
 
 **Corrections:** Narrowing for the two dense size formulas and finite-part saturation. Block for the non-ancestral contact reading.  
 **Goals:** B334 substantiated. G1, G2, G5, G15 and G18 checkpointed.  
-**Assumptions:** A257 challenged. A259–A266 record the complete-holder reading and seven new taking rules.  
+**Assumptions:** A257 challenged. A259–A266 record the complete-holder reading and seven new taking rules. [Full entries](assumptions.md)  
 **Scaffolds:** One-place and full-record readings, two knot laws and nine two-step selectors were compared on their stated populations.

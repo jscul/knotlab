@@ -1,0 +1,4081 @@
+{
+ "attribution_records": [
+  {
+   "equal": true,
+   "expected": {
+    "class": "through the meeting",
+    "first_differing": "step6/birth1"
+   },
+   "got": {
+    "class": "through the meeting",
+    "first_differing": "step6/birth1"
+   },
+   "name": "through the meeting (the demand of X's round-2 join)"
+  },
+  {
+   "equal": true,
+   "expected": {
+    "class": "a third part (a start knot)",
+    "first_differing": "step5p/birth1"
+   },
+   "got": {
+    "class": "a third part (a start knot)",
+    "first_differing": "step5p/birth1"
+   },
+   "name": "a third part (a start knot): one more candidate supplied by the second pattern's start knot"
+  },
+  {
+   "equal": true,
+   "expected": {
+    "class": "round-wide",
+    "first_differing": "step7/birth2"
+   },
+   "got": {
+    "class": "round-wide",
+    "first_differing": "step7/birth2"
+   },
+   "name": "round-wide: an implied flag"
+  },
+  {
+   "equal": true,
+   "expected": {
+    "class": "unclassified",
+    "first_differing": "step1/group1"
+   },
+   "got": {
+    "class": "unclassified",
+    "first_differing": "step1/group1"
+   },
+   "name": "unclassified: the differing members are all from X only"
+  }
+ ],
+ "gate_listing": {
+  "diffs": [],
+  "equal": true,
+  "got": [
+   "=== made-4, a = 4 (Y members left usable: those whose input is among [3, 4, 5, 6]), ORD/CANCEL-RETIRE/MET(OLDEST), not-all-equal",
+   " round 1: 0 groups []; short []; retired []",
+   "   knot 2 offshoot parents [0] inputs [1] (taken []) D=1 p=1 f=2",
+   "   knot 3 offshoot parents [0] inputs [2] (taken []) D=1 p=1 f=2",
+   "   knot 4 offshoot parents [1] inputs [3] (taken []) D=3 p=1 f=3",
+   "   knot 5 offshoot parents [1] inputs [4] (taken []) D=3 p=1 f=3",
+   "   knot 6 offshoot parents [1] inputs [5] (taken []) D=3 p=1 f=3",
+   "   knot 7 offshoot parents [1] inputs [6] (taken []) D=3 p=1 f=3",
+   " round 2: 7 groups [[2, 3], [4, 5], [4, 6], [4, 7], [5, 6], [5, 7], [6, 7]]; short []; retired []",
+   "   knot 8 join parents [2, 3] inputs [7, 9, 0] (taken [0]) D=8 p=3 f=8",
+   "   knot 9 join parents [4, 5] inputs [11, 14, 0] (taken [0]) D=8 p=3 f=8",
+   "   knot 10 join parents [4, 6] inputs [12, 17, 0] (taken [0]) D=8 p=3 f=8",
+   "   knot 11 join parents [4, 7] inputs [13, 20, 0] (taken [0]) D=8 p=3 f=8",
+   "   knot 12 join parents [5, 6] inputs [15, 18, 0] (taken [0]) D=8 p=3 f=8",
+   "   knot 13 join parents [5, 7] inputs [16, 21, 0] (taken [0]) D=8 p=3 f=8",
+   "   knot 14 join parents [6, 7] inputs [19, 22, 0] (taken [0]) D=8 p=3 f=8",
+   "   knot 15 offshoot parents [2] inputs [8, 0] (taken [0]) D=8 p=2 f=8",
+   "   knot 16 offshoot parents [3] inputs [10, 0] (taken [0]) D=8 p=2 f=8",
+   " round 3: 36 groups; short []; retired []",
+   "   36 births; (kind, parents, taken, D, f): [(('join', 2, (1,), 35, 35), 36)]",
+   " knot test: 80 verdicts, 0 failing",
+   "=== made-4, a = 1 (Y members left usable: those whose input is among [3]), ORD/CANCEL-RETIRE/MET(OLDEST), not-all-equal",
+   " round 1: 0 groups []; short []; retired []",
+   "   knot 2 offshoot parents [0] inputs [1] (taken []) D=1 p=1 f=2",
+   "   knot 3 offshoot parents [0] inputs [2] (taken []) D=1 p=1 f=2",
+   "   knot 4 offshoot parents [1] inputs [3] (taken []) D=3 p=1 f=3",
+   "   knot 5 offshoot parents [1] inputs [4] (taken []) D=3 p=1 f=3",
+   "   knot 6 offshoot parents [1] inputs [5] (taken []) D=3 p=1 f=3",
+   "   knot 7 offshoot parents [1] inputs [6] (taken []) D=3 p=1 f=3",
+   " round 2: 1 groups [[2, 3]]; short []; retired []",
+   "   knot 8 join parents [2, 3] inputs [7, 9, 0] (taken [0]) D=5 p=3 f=5",
+   "   knot 9 offshoot parents [2] inputs [8, 0] (taken [0]) D=5 p=2 f=5",
+   "   knot 10 offshoot parents [3] inputs [10, 0] (taken [0]) D=5 p=2 f=5",
+   "   knot 11 offshoot parents [4] inputs [11, 0] (taken [0]) D=5 p=2 f=5",
+   "   knot 12 offshoot parents [4] inputs [12, 0] (taken [0]) D=5 p=2 f=5",
+   "   knot 13 offshoot parents [4] inputs [13, 0] (taken [0]) D=5 p=2 f=5",
+   " round 3: 15 groups; short []; retired []",
+   "   15 births; (kind, parents, taken, D, f): [(('join', 2, (1,), 14, 14), 15)]",
+   " knot test: 53 verdicts, 0 failing"
+  ],
+  "lines_compared": 39,
+  "registered_bounds_runs": {
+   "a=1": {
+    "guard": null,
+    "rounds_read": 4,
+    "stop": null
+   },
+   "a=4": {
+    "guard": {
+     "round": 4,
+     "value": 197506,
+     "what": "pairs",
+     "where": "demand"
+    },
+    "rounds_read": 3,
+    "stop": "guard"
+   }
+  }
+ },
+ "seconds": 9.8,
+ "symmetric_pairs": [
+  {
+   "choice": "NEWEST",
+   "h": 4,
+   "i": 0,
+   "identical": true,
+   "knot_law": "nae",
+   "nu": 78,
+   "same_named_start": true,
+   "stars": [
+    [
+     0,
+     2,
+     3,
+     5,
+     6
+    ],
+    [
+     0,
+     1,
+     4
+    ]
+   ],
+   "stars_listed": [
+    [
+     0,
+     6,
+     5,
+     3,
+     2
+    ],
+    [
+     0,
+     1,
+     4
+    ]
+   ],
+   "usable": [
+    2
+   ]
+  },
+  {
+   "choice": "OLDEST",
+   "h": 4,
+   "i": 1,
+   "identical": true,
+   "knot_law": "parity",
+   "nu": 97,
+   "same_named_start": true,
+   "stars": [
+    [
+     0,
+     3,
+     4
+    ],
+    [
+     0,
+     1,
+     2,
+     5,
+     6
+    ]
+   ],
+   "stars_listed": [
+    [
+     0,
+     4,
+     3
+    ],
+    [
+     0,
+     5,
+     1,
+     2,
+     6
+    ]
+   ],
+   "usable": [
+    2,
+    5,
+    6
+   ]
+  },
+  {
+   "choice": "OLDEST",
+   "h": 3,
+   "i": 2,
+   "identical": true,
+   "knot_law": "parity",
+   "nu": 28,
+   "same_named_start": true,
+   "stars": [
+    [
+     0,
+     1,
+     4
+    ],
+    [
+     2,
+     3,
+     4,
+     5
+    ]
+   ],
+   "stars_listed": [
+    [
+     0,
+     1,
+     4
+    ],
+    [
+     5,
+     2,
+     4,
+     3
+    ]
+   ],
+   "usable": [
+    3,
+    5
+   ]
+  },
+  {
+   "choice": "OLDEST",
+   "h": 4,
+   "i": 3,
+   "identical": true,
+   "knot_law": "parity",
+   "nu": 29,
+   "same_named_start": true,
+   "stars": [
+    [
+     0,
+     1,
+     2,
+     5,
+     6
+    ],
+    [
+     1,
+     3,
+     4
+    ]
+   ],
+   "stars_listed": [
+    [
+     6,
+     1,
+     5,
+     2,
+     0
+    ],
+    [
+     1,
+     4,
+     3
+    ]
+   ],
+   "usable": [
+    0,
+    2,
+    5,
+    6
+   ]
+  },
+  {
+   "choice": "OLDEST",
+   "h": 4,
+   "i": 4,
+   "identical": true,
+   "knot_law": "parity",
+   "nu": 12,
+   "same_named_start": true,
+   "stars": [
+    [
+     0,
+     1,
+     2,
+     3,
+     5
+    ],
+    [
+     4,
+     5,
+     6
+    ]
+   ],
+   "stars_listed": [
+    [
+     0,
+     3,
+     1,
+     2,
+     5
+    ],
+    [
+     6,
+     5,
+     4
+    ]
+   ],
+   "usable": [
+    0,
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "choice": "OLDEST",
+   "h": 3,
+   "i": 5,
+   "identical": true,
+   "knot_law": "parity",
+   "nu": 5,
+   "same_named_start": true,
+   "stars": [
+    [
+     0,
+     1,
+     2,
+     3
+    ],
+    [
+     2,
+     4,
+     5
+    ]
+   ],
+   "stars_listed": [
+    [
+     3,
+     0,
+     2,
+     1
+    ],
+    [
+     2,
+     4,
+     5
+    ]
+   ],
+   "usable": [
+    1,
+    3
+   ]
+  },
+  {
+   "choice": "NEWEST",
+   "h": 3,
+   "i": 6,
+   "identical": true,
+   "knot_law": "parity",
+   "nu": 62,
+   "same_named_start": true,
+   "stars": [
+    [
+     0,
+     3,
+     4,
+     5
+    ],
+    [
+     1,
+     2,
+     4
+    ]
+   ],
+   "stars_listed": [
+    [
+     3,
+     0,
+     4,
+     5
+    ],
+    [
+     1,
+     2,
+     4
+    ]
+   ],
+   "usable": []
+  },
+  {
+   "choice": "OLDEST",
+   "h": 3,
+   "i": 7,
+   "identical": true,
+   "knot_law": "parity",
+   "nu": 9,
+   "same_named_start": true,
+   "stars": [
+    [
+     0,
+     1,
+     2,
+     4
+    ],
+    [
+     2,
+     3,
+     5
+    ]
+   ],
+   "stars_listed": [
+    [
+     1,
+     4,
+     2,
+     0
+    ],
+    [
+     2,
+     5,
+     3
+    ]
+   ],
+   "usable": [
+    0
+   ]
+  },
+  {
+   "choice": "NEWEST",
+   "h": 4,
+   "i": 8,
+   "identical": true,
+   "knot_law": "parity",
+   "nu": 160,
+   "same_named_start": true,
+   "stars": [
+    [
+     1,
+     3,
+     5
+    ],
+    [
+     0,
+     1,
+     2,
+     4,
+     6
+    ]
+   ],
+   "stars_listed": [
+    [
+     1,
+     3,
+     5
+    ],
+    [
+     4,
+     1,
+     0,
+     2,
+     6
+    ]
+   ],
+   "usable": [
+    2,
+    4
+   ]
+  },
+  {
+   "choice": "NEWEST",
+   "h": 3,
+   "i": 9,
+   "identical": true,
+   "knot_law": "nae",
+   "nu": 92,
+   "same_named_start": true,
+   "stars": [
+    [
+     1,
+     3,
+     4
+    ],
+    [
+     0,
+     2,
+     3,
+     5
+    ]
+   ],
+   "stars_listed": [
+    [
+     4,
+     3,
+     1
+    ],
+    [
+     2,
+     5,
+     3,
+     0
+    ]
+   ],
+   "usable": [
+    5
+   ]
+  },
+  {
+   "choice": "NEWEST",
+   "h": 4,
+   "i": 10,
+   "identical": true,
+   "knot_law": "parity",
+   "nu": 97,
+   "same_named_start": true,
+   "stars": [
+    [
+     0,
+     3,
+     4
+    ],
+    [
+     0,
+     1,
+     2,
+     5,
+     6
+    ]
+   ],
+   "stars_listed": [
+    [
+     0,
+     4,
+     3
+    ],
+    [
+     0,
+     1,
+     6,
+     5,
+     2
+    ]
+   ],
+   "usable": [
+    1,
+    5,
+    6
+   ]
+  },
+  {
+   "choice": "NEWEST",
+   "h": 4,
+   "i": 11,
+   "identical": true,
+   "knot_law": "parity",
+   "nu": 136,
+   "same_named_start": true,
+   "stars": [
+    [
+     1,
+     2,
+     3,
+     5,
+     6
+    ],
+    [
+     0,
+     4,
+     5
+    ]
+   ],
+   "stars_listed": [
+    [
+     2,
+     6,
+     3,
+     5,
+     1
+    ],
+    [
+     4,
+     0,
+     5
+    ]
+   ],
+   "usable": [
+    1,
+    2
+   ]
+  },
+  {
+   "choice": "OLDEST",
+   "h": 3,
+   "i": 12,
+   "identical": true,
+   "knot_law": "nae",
+   "nu": 114,
+   "same_named_start": true,
+   "stars": [
+    [
+     2,
+     4,
+     5
+    ],
+    [
+     0,
+     1,
+     2,
+     3
+    ]
+   ],
+   "stars_listed": [
+    [
+     2,
+     4,
+     5
+    ],
+    [
+     3,
+     0,
+     2,
+     1
+    ]
+   ],
+   "usable": [
+    0,
+    1,
+    3
+   ]
+  },
+  {
+   "choice": "OLDEST",
+   "h": 3,
+   "i": 13,
+   "identical": true,
+   "knot_law": "parity",
+   "nu": 12,
+   "same_named_start": true,
+   "stars": [
+    [
+     0,
+     1,
+     2,
+     5
+    ],
+    [
+     1,
+     3,
+     4
+    ]
+   ],
+   "stars_listed": [
+    [
+     2,
+     1,
+     0,
+     5
+    ],
+    [
+     1,
+     3,
+     4
+    ]
+   ],
+   "usable": [
+    0
+   ]
+  },
+  {
+   "choice": "OLDEST",
+   "h": 4,
+   "i": 14,
+   "identical": true,
+   "knot_law": "nae",
+   "nu": 166,
+   "same_named_start": true,
+   "stars": [
+    [
+     1,
+     4,
+     5
+    ],
+    [
+     0,
+     1,
+     2,
+     3,
+     6
+    ]
+   ],
+   "stars_listed": [
+    [
+     1,
+     5,
+     4
+    ],
+    [
+     3,
+     1,
+     2,
+     0,
+     6
+    ]
+   ],
+   "usable": [
+    2,
+    6
+   ]
+  },
+  {
+   "choice": "NEWEST",
+   "h": 4,
+   "i": 15,
+   "identical": true,
+   "knot_law": "nae",
+   "nu": 13,
+   "same_named_start": true,
+   "stars": [
+    [
+     0,
+     1,
+     2,
+     3,
+     6
+    ],
+    [
+     0,
+     4,
+     5
+    ]
+   ],
+   "stars_listed": [
+    [
+     0,
+     6,
+     2,
+     1,
+     3
+    ],
+    [
+     0,
+     5,
+     4
+    ]
+   ],
+   "usable": [
+    1
+   ]
+  },
+  {
+   "choice": "NEWEST",
+   "h": 3,
+   "i": 16,
+   "identical": true,
+   "knot_law": "parity",
+   "nu": 87,
+   "same_named_start": true,
+   "stars": [
+    [
+     1,
+     2,
+     4,
+     5
+    ],
+    [
+     0,
+     3,
+     5
+    ]
+   ],
+   "stars_listed": [
+    [
+     4,
+     2,
+     1,
+     5
+    ],
+    [
+     3,
+     0,
+     5
+    ]
+   ],
+   "usable": [
+    1,
+    4
+   ]
+  },
+  {
+   "choice": "NEWEST",
+   "h": 3,
+   "i": 17,
+   "identical": true,
+   "knot_law": "parity",
+   "nu": 101,
+   "same_named_start": true,
+   "stars": [
+    [
+     1,
+     4,
+     5
+    ],
+    [
+     0,
+     1,
+     2,
+     3
+    ]
+   ],
+   "stars_listed": [
+    [
+     1,
+     4,
+     5
+    ],
+    [
+     3,
+     1,
+     0,
+     2
+    ]
+   ],
+   "usable": [
+    0
+   ]
+  },
+  {
+   "choice": "OLDEST",
+   "h": 4,
+   "i": 18,
+   "identical": true,
+   "knot_law": "nae",
+   "nu": 119,
+   "same_named_start": true,
+   "stars": [
+    [
+     0,
+     5,
+     6
+    ],
+    [
+     1,
+     2,
+     3,
+     4,
+     6
+    ]
+   ],
+   "stars_listed": [
+    [
+     5,
+     0,
+     6
+    ],
+    [
+     1,
+     3,
+     2,
+     4,
+     6
+    ]
+   ],
+   "usable": [
+    4
+   ]
+  },
+  {
+   "choice": "NEWEST",
+   "h": 3,
+   "i": 19,
+   "identical": true,
+   "knot_law": "nae",
+   "nu": 42,
+   "same_named_start": true,
+   "stars": [
+    [
+     0,
+     2,
+     3,
+     4
+    ],
+    [
+     1,
+     4,
+     5
+    ]
+   ],
+   "stars_listed": [
+    [
+     2,
+     0,
+     3,
+     4
+    ],
+    [
+     1,
+     4,
+     5
+    ]
+   ],
+   "usable": [
+    0
+   ]
+  },
+  {
+   "choice": "NEWEST",
+   "h": 3,
+   "i": 20,
+   "identical": true,
+   "knot_law": "parity",
+   "nu": 98,
+   "same_named_start": true,
+   "stars": [
+    [
+     1,
+     3,
+     5
+    ],
+    [
+     0,
+     1,
+     2,
+     4
+    ]
+   ],
+   "stars_listed": [
+    [
+     1,
+     3,
+     5
+    ],
+    [
+     2,
+     1,
+     0,
+     4
+    ]
+   ],
+   "usable": [
+    0
+   ]
+  },
+  {
+   "choice": "NEWEST",
+   "h": 3,
+   "i": 21,
+   "identical": true,
+   "knot_law": "parity",
+   "nu": 25,
+   "same_named_start": true,
+   "stars": [
+    [
+     0,
+     1,
+     3,
+     5
+    ],
+    [
+     2,
+     4,
+     5
+    ]
+   ],
+   "stars_listed": [
+    [
+     1,
+     3,
+     0,
+     5
+    ],
+    [
+     4,
+     2,
+     5
+    ]
+   ],
+   "usable": [
+    0,
+    1,
+    3
+   ]
+  },
+  {
+   "choice": "NEWEST",
+   "h": 4,
+   "i": 22,
+   "identical": true,
+   "knot_law": "parity",
+   "nu": 107,
+   "same_named_start": true,
+   "stars": [
+    [
+     0,
+     3,
+     5
+    ],
+    [
+     1,
+     2,
+     4,
+     5,
+     6
+    ]
+   ],
+   "stars_listed": [
+    [
+     3,
+     0,
+     5
+    ],
+    [
+     4,
+     6,
+     1,
+     5,
+     2
+    ]
+   ],
+   "usable": [
+    6
+   ]
+  },
+  {
+   "choice": "NEWEST",
+   "h": 3,
+   "i": 23,
+   "identical": true,
+   "knot_law": "parity",
+   "nu": 86,
+   "same_named_start": true,
+   "stars": [
+    [
+     1,
+     2,
+     4,
+     5
+    ],
+    [
+     0,
+     3,
+     4
+    ]
+   ],
+   "stars_listed": [
+    [
+     1,
+     5,
+     4,
+     2
+    ],
+    [
+     0,
+     3,
+     4
+    ]
+   ],
+   "usable": [
+    1
+   ]
+  },
+  {
+   "choice": "NEWEST",
+   "h": 4,
+   "i": 24,
+   "identical": true,
+   "knot_law": "nae",
+   "nu": 52,
+   "same_named_start": true,
+   "stars": [
+    [
+     0,
+     1,
+     4
+    ],
+    [
+     1,
+     2,
+     3,
+     5,
+     6
+    ]
+   ],
+   "stars_listed": [
+    [
+     4,
+     1,
+     0
+    ],
+    [
+     1,
+     2,
+     3,
+     5,
+     6
+    ]
+   ],
+   "usable": [
+    2,
+    3
+   ]
+  },
+  {
+   "choice": "OLDEST",
+   "h": 4,
+   "i": 25,
+   "identical": true,
+   "knot_law": "nae",
+   "nu": 139,
+   "same_named_start": true,
+   "stars": [
+    [
+     1,
+     2,
+     4
+    ],
+    [
+     0,
+     2,
+     3,
+     5,
+     6
+    ]
+   ],
+   "stars_listed": [
+    [
+     1,
+     2,
+     4
+    ],
+    [
+     0,
+     2,
+     3,
+     6,
+     5
+    ]
+   ],
+   "usable": [
+    0,
+    5
+   ]
+  },
+  {
+   "choice": "NEWEST",
+   "h": 3,
+   "i": 26,
+   "identical": true,
+   "knot_law": "nae",
+   "nu": 60,
+   "same_named_start": true,
+   "stars": [
+    [
+     0,
+     3,
+     4,
+     5
+    ],
+    [
+     0,
+     1,
+     2
+    ]
+   ],
+   "stars_listed": [
+    [
+     0,
+     4,
+     3,
+     5
+    ],
+    [
+     0,
+     1,
+     2
+    ]
+   ],
+   "usable": [
+    3,
+    4
+   ]
+  },
+  {
+   "choice": "NEWEST",
+   "h": 4,
+   "i": 27,
+   "identical": true,
+   "knot_law": "nae",
+   "nu": 16,
+   "same_named_start": true,
+   "stars": [
+    [
+     0,
+     1,
+     2,
+     3,
+     6
+    ],
+    [
+     3,
+     4,
+     5
+    ]
+   ],
+   "stars_listed": [
+    [
+     0,
+     1,
+     2,
+     3,
+     6
+    ],
+    [
+     3,
+     5,
+     4
+    ]
+   ],
+   "usable": [
+    2
+   ]
+  },
+  {
+   "choice": "OLDEST",
+   "h": 4,
+   "i": 28,
+   "identical": true,
+   "knot_law": "parity",
+   "nu": 184,
+   "same_named_start": true,
+   "stars": [
+    [
+     2,
+     3,
+     5
+    ],
+    [
+     0,
+     1,
+     3,
+     4,
+     6
+    ]
+   ],
+   "stars_listed": [
+    [
+     2,
+     3,
+     5
+    ],
+    [
+     4,
+     6,
+     3,
+     0,
+     1
+    ]
+   ],
+   "usable": [
+    0,
+    1,
+    4
+   ]
+  },
+  {
+   "choice": "OLDEST",
+   "h": 3,
+   "i": 29,
+   "identical": true,
+   "knot_law": "nae",
+   "nu": 69,
+   "same_named_start": true,
+   "stars": [
+    [
+     0,
+     4,
+     5
+    ],
+    [
+     1,
+     2,
+     3,
+     5
+    ]
+   ],
+   "stars_listed": [
+    [
+     4,
+     0,
+     5
+    ],
+    [
+     1,
+     2,
+     3,
+     5
+    ]
+   ],
+   "usable": [
+    3
+   ]
+  },
+  {
+   "choice": "OLDEST",
+   "h": 3,
+   "i": 30,
+   "identical": true,
+   "knot_law": "parity",
+   "nu": 90,
+   "same_named_start": true,
+   "stars": [
+    [
+     1,
+     2,
+     5
+    ],
+    [
+     0,
+     3,
+     4,
+     5
+    ]
+   ],
+   "stars_listed": [
+    [
+     2,
+     1,
+     5
+    ],
+    [
+     4,
+     0,
+     3,
+     5
+    ]
+   ],
+   "usable": []
+  },
+  {
+   "choice": "OLDEST",
+   "h": 3,
+   "i": 31,
+   "identical": true,
+   "knot_law": "nae",
+   "nu": 5,
+   "same_named_start": true,
+   "stars": [
+    [
+     0,
+     1,
+     2,
+     3
+    ],
+    [
+     2,
+     4,
+     5
+    ]
+   ],
+   "stars_listed": [
+    [
+     0,
+     3,
+     2,
+     1
+    ],
+    [
+     2,
+     4,
+     5
+    ]
+   ],
+   "usable": [
+    3
+   ]
+  },
+  {
+   "choice": "OLDEST",
+   "h": 4,
+   "i": 32,
+   "identical": true,
+   "knot_law": "nae",
+   "nu": 198,
+   "same_named_start": true,
+   "stars": [
+    [
+     3,
+     4,
+     5
+    ],
+    [
+     0,
+     1,
+     2,
+     3,
+     6
+    ]
+   ],
+   "stars_listed": [
+    [
+     3,
+     4,
+     5
+    ],
+    [
+     2,
+     0,
+     6,
+     3,
+     1
+    ]
+   ],
+   "usable": [
+    2,
+    6
+   ]
+  },
+  {
+   "choice": "OLDEST",
+   "h": 3,
+   "i": 33,
+   "identical": true,
+   "knot_law": "parity",
+   "nu": 67,
+   "same_named_start": true,
+   "stars": [
+    [
+     0,
+     4,
+     5
+    ],
+    [
+     0,
+     1,
+     2,
+     3
+    ]
+   ],
+   "stars_listed": [
+    [
+     0,
+     5,
+     4
+    ],
+    [
+     0,
+     2,
+     3,
+     1
+    ]
+   ],
+   "usable": [
+    1
+   ]
+  },
+  {
+   "choice": "OLDEST",
+   "h": 3,
+   "i": 34,
+   "identical": true,
+   "knot_law": "nae",
+   "nu": 57,
+   "same_named_start": true,
+   "stars": [
+    [
+     0,
+     3,
+     4
+    ],
+    [
+     0,
+     1,
+     2,
+     5
+    ]
+   ],
+   "stars_listed": [
+    [
+     0,
+     4,
+     3
+    ],
+    [
+     0,
+     2,
+     1,
+     5
+    ]
+   ],
+   "usable": [
+    5
+   ]
+  },
+  {
+   "choice": "NEWEST",
+   "h": 3,
+   "i": 35,
+   "identical": true,
+   "knot_law": "nae",
+   "nu": 115,
+   "same_named_start": true,
+   "stars": [
+    [
+     2,
+     4,
+     5
+    ],
+    [
+     0,
+     1,
+     3,
+     4
+    ]
+   ],
+   "stars_listed": [
+    [
+     5,
+     4,
+     2
+    ],
+    [
+     3,
+     1,
+     0,
+     4
+    ]
+   ],
+   "usable": [
+    3
+   ]
+  },
+  {
+   "choice": "NEWEST",
+   "h": 4,
+   "i": 36,
+   "identical": true,
+   "knot_law": "parity",
+   "nu": 24,
+   "same_named_start": true,
+   "stars": [
+    [
+     0,
+     1,
+     2,
+     4,
+     6
+    ],
+    [
+     1,
+     3,
+     5
+    ]
+   ],
+   "stars_listed": [
+    [
+     2,
+     1,
+     4,
+     6,
+     0
+    ],
+    [
+     1,
+     5,
+     3
+    ]
+   ],
+   "usable": [
+    0,
+    4
+   ]
+  },
+  {
+   "choice": "NEWEST",
+   "h": 4,
+   "i": 37,
+   "identical": true,
+   "knot_law": "nae",
+   "nu": 81,
+   "same_named_start": true,
+   "stars": [
+    [
+     0,
+     2,
+     3,
+     5,
+     6
+    ],
+    [
+     1,
+     4,
+     5
+    ]
+   ],
+   "stars_listed": [
+    [
+     6,
+     2,
+     3,
+     5,
+     0
+    ],
+    [
+     4,
+     1,
+     5
+    ]
+   ],
+   "usable": [
+    0,
+    6
+   ]
+  },
+  {
+   "choice": "OLDEST",
+   "h": 3,
+   "i": 38,
+   "identical": true,
+   "knot_law": "parity",
+   "nu": 98,
+   "same_named_start": true,
+   "stars": [
+    [
+     1,
+     3,
+     5
+    ],
+    [
+     0,
+     1,
+     2,
+     4
+    ]
+   ],
+   "stars_listed": [
+    [
+     1,
+     5,
+     3
+    ],
+    [
+     4,
+     1,
+     0,
+     2
+    ]
+   ],
+   "usable": [
+    2,
+    4
+   ]
+  },
+  {
+   "choice": "OLDEST",
+   "h": 4,
+   "i": 39,
+   "identical": true,
+   "knot_law": "parity",
+   "nu": 62,
+   "same_named_start": true,
+   "stars": [
+    [
+     0,
+     1,
+     6
+    ],
+    [
+     0,
+     2,
+     3,
+     4,
+     5
+    ]
+   ],
+   "stars_listed": [
+    [
+     0,
+     6,
+     1
+    ],
+    [
+     0,
+     3,
+     5,
+     4,
+     2
+    ]
+   ],
+   "usable": [
+    3,
+    4,
+    5
+   ]
+  },
+  {
+   "choice": "OLDEST",
+   "h": 4,
+   "i": 40,
+   "identical": true,
+   "knot_law": "parity",
+   "nu": 111,
+   "same_named_start": true,
+   "stars": [
+    [
+     0,
+     4,
+     5
+    ],
+    [
+     0,
+     1,
+     2,
+     3,
+     6
+    ]
+   ],
+   "stars_listed": [
+    [
+     0,
+     4,
+     5
+    ],
+    [
+     0,
+     6,
+     1,
+     2,
+     3
+    ]
+   ],
+   "usable": [
+    2
+   ]
+  },
+  {
+   "choice": "NEWEST",
+   "h": 4,
+   "i": 41,
+   "identical": true,
+   "knot_law": "nae",
+   "nu": 202,
+   "same_named_start": true,
+   "stars": [
+    [
+     3,
+     4,
+     6
+    ],
+    [
+     0,
+     1,
+     2,
+     4,
+     5
+    ]
+   ],
+   "stars_listed": [
+    [
+     6,
+     4,
+     3
+    ],
+    [
+     5,
+     0,
+     2,
+     4,
+     1
+    ]
+   ],
+   "usable": [
+    1,
+    2,
+    5
+   ]
+  },
+  {
+   "choice": "OLDEST",
+   "h": 3,
+   "i": 42,
+   "identical": true,
+   "knot_law": "parity",
+   "nu": 81,
+   "same_named_start": true,
+   "stars": [
+    [
+     1,
+     2,
+     4
+    ],
+    [
+     0,
+     1,
+     3,
+     5
+    ]
+   ],
+   "stars_listed": [
+    [
+     1,
+     2,
+     4
+    ],
+    [
+     5,
+     1,
+     3,
+     0
+    ]
+   ],
+   "usable": [
+    5
+   ]
+  },
+  {
+   "choice": "NEWEST",
+   "h": 3,
+   "i": 43,
+   "identical": true,
+   "knot_law": "parity",
+   "nu": 39,
+   "same_named_start": true,
+   "stars": [
+    [
+     0,
+     2,
+     3,
+     4
+    ],
+    [
+     0,
+     1,
+     5
+    ]
+   ],
+   "stars_listed": [
+    [
+     0,
+     3,
+     2,
+     4
+    ],
+    [
+     0,
+     1,
+     5
+    ]
+   ],
+   "usable": [
+    4
+   ]
+  },
+  {
+   "choice": "NEWEST",
+   "h": 4,
+   "i": 44,
+   "identical": true,
+   "knot_law": "nae",
+   "nu": 152,
+   "same_named_start": true,
+   "stars": [
+    [
+     1,
+     3,
+     4
+    ],
+    [
+     0,
+     1,
+     2,
+     5,
+     6
+    ]
+   ],
+   "stars_listed": [
+    [
+     1,
+     3,
+     4
+    ],
+    [
+     5,
+     1,
+     2,
+     0,
+     6
+    ]
+   ],
+   "usable": [
+    0
+   ]
+  },
+  {
+   "choice": "OLDEST",
+   "h": 3,
+   "i": 45,
+   "identical": true,
+   "knot_law": "parity",
+   "nu": 31,
+   "same_named_start": true,
+   "stars": [
+    [
+     0,
+     1,
+     4,
+     5
+    ],
+    [
+     2,
+     3,
+     4
+    ]
+   ],
+   "stars_listed": [
+    [
+     1,
+     0,
+     4,
+     5
+    ],
+    [
+     2,
+     3,
+     4
+    ]
+   ],
+   "usable": []
+  },
+  {
+   "choice": "NEWEST",
+   "h": 4,
+   "i": 46,
+   "identical": true,
+   "knot_law": "nae",
+   "nu": 45,
+   "same_named_start": true,
+   "stars": [
+    [
+     0,
+     1,
+     3,
+     4,
+     6
+    ],
+    [
+     2,
+     5,
+     6
+    ]
+   ],
+   "stars_listed": [
+    [
+     3,
+     4,
+     0,
+     1,
+     6
+    ],
+    [
+     2,
+     5,
+     6
+    ]
+   ],
+   "usable": [
+    0,
+    1,
+    3,
+    4
+   ]
+  },
+  {
+   "choice": "OLDEST",
+   "h": 3,
+   "i": 47,
+   "identical": true,
+   "knot_law": "parity",
+   "nu": 44,
+   "same_named_start": true,
+   "stars": [
+    [
+     0,
+     2,
+     3,
+     5
+    ],
+    [
+     1,
+     2,
+     4
+    ]
+   ],
+   "stars_listed": [
+    [
+     3,
+     2,
+     0,
+     5
+    ],
+    [
+     1,
+     2,
+     4
+    ]
+   ],
+   "usable": []
+  },
+  {
+   "choice": "OLDEST",
+   "h": 3,
+   "i": 48,
+   "identical": true,
+   "knot_law": "parity",
+   "nu": 117,
+   "same_named_start": true,
+   "stars": [
+    [
+     3,
+     4,
+     5
+    ],
+    [
+     0,
+     1,
+     2,
+     3
+    ]
+   ],
+   "stars_listed": [
+    [
+     3,
+     5,
+     4
+    ],
+    [
+     2,
+     1,
+     0,
+     3
+    ]
+   ],
+   "usable": [
+    1,
+    2
+   ]
+  },
+  {
+   "choice": "NEWEST",
+   "h": 4,
+   "i": 49,
+   "identical": true,
+   "knot_law": "nae",
+   "nu": 147,
+   "same_named_start": true,
+   "stars": [
+    [
+     1,
+     2,
+     5
+    ],
+    [
+     0,
+     2,
+     3,
+     4,
+     6
+    ]
+   ],
+   "stars_listed": [
+    [
+     5,
+     2,
+     1
+    ],
+    [
+     6,
+     2,
+     0,
+     3,
+     4
+    ]
+   ],
+   "usable": [
+    0,
+    3
+   ]
+  },
+  {
+   "choice": "OLDEST",
+   "h": 3,
+   "i": 50,
+   "identical": true,
+   "knot_law": "parity",
+   "nu": 0,
+   "same_named_start": true,
+   "stars": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     0,
+     3,
+     4,
+     5
+    ]
+   ],
+   "stars_listed": [
+    [
+     0,
+     2,
+     1
+    ],
+    [
+     0,
+     5,
+     3,
+     4
+    ]
+   ],
+   "usable": [
+    4,
+    5
+   ]
+  },
+  {
+   "choice": "OLDEST",
+   "h": 3,
+   "i": 51,
+   "identical": true,
+   "knot_law": "nae",
+   "nu": 53,
+   "same_named_start": true,
+   "stars": [
+    [
+     0,
+     2,
+     4,
+     5
+    ],
+    [
+     1,
+     3,
+     5
+    ]
+   ],
+   "stars_listed": [
+    [
+     2,
+     4,
+     0,
+     5
+    ],
+    [
+     1,
+     3,
+     5
+    ]
+   ],
+   "usable": [
+    2,
+    4
+   ]
+  },
+  {
+   "choice": "NEWEST",
+   "h": 4,
+   "i": 52,
+   "identical": true,
+   "knot_law": "parity",
+   "nu": 141,
+   "same_named_start": true,
+   "stars": [
+    [
+     1,
+     2,
+     4,
+     5,
+     6
+    ],
+    [
+     0,
+     1,
+     3
+    ]
+   ],
+   "stars_listed": [
+    [
+     1,
+     2,
+     5,
+     6,
+     4
+    ],
+    [
+     3,
+     1,
+     0
+    ]
+   ],
+   "usable": [
+    2
+   ]
+  },
+  {
+   "choice": "NEWEST",
+   "h": 3,
+   "i": 53,
+   "identical": true,
+   "knot_law": "nae",
+   "nu": 107,
+   "same_named_start": true,
+   "stars": [
+    [
+     2,
+     3,
+     4,
+     5
+    ],
+    [
+     0,
+     1,
+     2
+    ]
+   ],
+   "stars_listed": [
+    [
+     2,
+     4,
+     3,
+     5
+    ],
+    [
+     1,
+     0,
+     2
+    ]
+   ],
+   "usable": [
+    3,
+    5
+   ]
+  },
+  {
+   "choice": "OLDEST",
+   "h": 3,
+   "i": 54,
+   "identical": true,
+   "knot_law": "nae",
+   "nu": 65,
+   "same_named_start": true,
+   "stars": [
+    [
+     0,
+     3,
+     5
+    ],
+    [
+     1,
+     2,
+     3,
+     4
+    ]
+   ],
+   "stars_listed": [
+    [
+     0,
+     3,
+     5
+    ],
+    [
+     4,
+     2,
+     3,
+     1
+    ]
+   ],
+   "usable": [
+    1,
+    2,
+    4
+   ]
+  },
+  {
+   "choice": "OLDEST",
+   "h": 3,
+   "i": 55,
+   "identical": true,
+   "knot_law": "nae",
+   "nu": 36,
+   "same_named_start": true,
+   "stars": [
+    [
+     0,
+     2,
+     3
+    ],
+    [
+     0,
+     1,
+     4,
+     5
+    ]
+   ],
+   "stars_listed": [
+    [
+     0,
+     2,
+     3
+    ],
+    [
+     0,
+     4,
+     1,
+     5
+    ]
+   ],
+   "usable": [
+    1,
+    4,
+    5
+   ]
+  },
+  {
+   "choice": "OLDEST",
+   "h": 4,
+   "i": 56,
+   "identical": true,
+   "knot_law": "nae",
+   "nu": 94,
+   "same_named_start": true,
+   "stars": [
+    [
+     0,
+     2,
+     6
+    ],
+    [
+     0,
+     1,
+     3,
+     4,
+     5
+    ]
+   ],
+   "stars_listed": [
+    [
+     0,
+     6,
+     2
+    ],
+    [
+     0,
+     3,
+     1,
+     5,
+     4
+    ]
+   ],
+   "usable": [
+    3,
+    4,
+    5
+   ]
+  },
+  {
+   "choice": "NEWEST",
+   "h": 4,
+   "i": 57,
+   "identical": true,
+   "knot_law": "nae",
+   "nu": 187,
+   "same_named_start": true,
+   "stars": [
+    [
+     2,
+     3,
+     6
+    ],
+    [
+     0,
+     1,
+     3,
+     4,
+     5
+    ]
+   ],
+   "stars_listed": [
+    [
+     6,
+     3,
+     2
+    ],
+    [
+     1,
+     0,
+     3,
+     4,
+     5
+    ]
+   ],
+   "usable": [
+    4,
+    5
+   ]
+  },
+  {
+   "choice": "OLDEST",
+   "h": 3,
+   "i": 58,
+   "identical": true,
+   "knot_law": "nae",
+   "nu": 23,
+   "same_named_start": true,
+   "stars": [
+    [
+     0,
+     1,
+     3,
+     5
+    ],
+    [
+     1,
+     2,
+     4
+    ]
+   ],
+   "stars_listed": [
+    [
+     5,
+     1,
+     3,
+     0
+    ],
+    [
+     1,
+     4,
+     2
+    ]
+   ],
+   "usable": [
+    3,
+    5
+   ]
+  },
+  {
+   "choice": "NEWEST",
+   "h": 4,
+   "i": 59,
+   "identical": true,
+   "knot_law": "nae",
+   "nu": 111,
+   "same_named_start": true,
+   "stars": [
+    [
+     0,
+     4,
+     5
+    ],
+    [
+     0,
+     1,
+     2,
+     3,
+     6
+    ]
+   ],
+   "stars_listed": [
+    [
+     0,
+     4,
+     5
+    ],
+    [
+     0,
+     3,
+     6,
+     1,
+     2
+    ]
+   ],
+   "usable": [
+    1,
+    2
+   ]
+  },
+  {
+   "choice": "NEWEST",
+   "h": 4,
+   "i": 60,
+   "identical": true,
+   "knot_law": "nae",
+   "nu": 64,
+   "same_named_start": true,
+   "stars": [
+    [
+     0,
+     1,
+     6
+    ],
+    [
+     2,
+     3,
+     4,
+     5,
+     6
+    ]
+   ],
+   "stars_listed": [
+    [
+     0,
+     1,
+     6
+    ],
+    [
+     3,
+     2,
+     4,
+     5,
+     6
+    ]
+   ],
+   "usable": [
+    3
+   ]
+  },
+  {
+   "choice": "NEWEST",
+   "h": 4,
+   "i": 61,
+   "identical": true,
+   "knot_law": "parity",
+   "nu": 62,
+   "same_named_start": true,
+   "stars": [
+    [
+     0,
+     1,
+     6
+    ],
+    [
+     0,
+     2,
+     3,
+     4,
+     5
+    ]
+   ],
+   "stars_listed": [
+    [
+     0,
+     6,
+     1
+    ],
+    [
+     0,
+     5,
+     4,
+     3,
+     2
+    ]
+   ],
+   "usable": []
+  },
+  {
+   "choice": "OLDEST",
+   "h": 4,
+   "i": 62,
+   "identical": true,
+   "knot_law": "parity",
+   "nu": 20,
+   "same_named_start": true,
+   "stars": [
+    [
+     0,
+     1,
+     2,
+     4,
+     5
+    ],
+    [
+     2,
+     3,
+     6
+    ]
+   ],
+   "stars_listed": [
+    [
+     0,
+     1,
+     2,
+     5,
+     4
+    ],
+    [
+     2,
+     6,
+     3
+    ]
+   ],
+   "usable": [
+    0,
+    1,
+    4
+   ]
+  },
+  {
+   "choice": "NEWEST",
+   "h": 4,
+   "i": 63,
+   "identical": true,
+   "knot_law": "parity",
+   "nu": 182,
+   "same_named_start": true,
+   "stars": [
+    [
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    [
+     0,
+     1,
+     6
+    ]
+   ],
+   "stars_listed": [
+    [
+     3,
+     4,
+     2,
+     5,
+     6
+    ],
+    [
+     0,
+     1,
+     6
+    ]
+   ],
+   "usable": [
+    2,
+    3
+   ]
+  },
+  {
+   "choice": "NEWEST",
+   "h": 4,
+   "i": 64,
+   "identical": true,
+   "knot_law": "nae",
+   "nu": 99,
+   "same_named_start": true,
+   "stars": [
+    [
+     0,
+     3,
+     4
+    ],
+    [
+     1,
+     2,
+     4,
+     5,
+     6
+    ]
+   ],
+   "stars_listed": [
+    [
+     0,
+     3,
+     4
+    ],
+    [
+     5,
+     6,
+     4,
+     1,
+     2
+    ]
+   ],
+   "usable": [
+    1,
+    6
+   ]
+  },
+  {
+   "choice": "OLDEST",
+   "h": 4,
+   "i": 65,
+   "identical": true,
+   "knot_law": "parity",
+   "nu": 138,
+   "same_named_start": true,
+   "stars": [
+    [
+     1,
+     2,
+     4
+    ],
+    [
+     0,
+     1,
+     3,
+     5,
+     6
+    ]
+   ],
+   "stars_listed": [
+    [
+     1,
+     4,
+     2
+    ],
+    [
+     0,
+     1,
+     5,
+     6,
+     3
+    ]
+   ],
+   "usable": [
+    3,
+    6
+   ]
+  },
+  {
+   "choice": "NEWEST",
+   "h": 4,
+   "i": 66,
+   "identical": true,
+   "knot_law": "nae",
+   "nu": 65,
+   "same_named_start": true,
+   "stars": [
+    [
+     0,
+     2,
+     3
+    ],
+    [
+     0,
+     1,
+     4,
+     5,
+     6
+    ]
+   ],
+   "stars_listed": [
+    [
+     0,
+     2,
+     3
+    ],
+    [
+     0,
+     4,
+     1,
+     6,
+     5
+    ]
+   ],
+   "usable": [
+    6
+   ]
+  },
+  {
+   "choice": "OLDEST",
+   "h": 4,
+   "i": 67,
+   "identical": true,
+   "knot_law": "parity",
+   "nu": 182,
+   "same_named_start": true,
+   "stars": [
+    [
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    [
+     0,
+     1,
+     6
+    ]
+   ],
+   "stars_listed": [
+    [
+     5,
+     3,
+     4,
+     2,
+     6
+    ],
+    [
+     1,
+     0,
+     6
+    ]
+   ],
+   "usable": [
+    2,
+    3
+   ]
+  },
+  {
+   "choice": "OLDEST",
+   "h": 3,
+   "i": 68,
+   "identical": true,
+   "knot_law": "parity",
+   "nu": 57,
+   "same_named_start": true,
+   "stars": [
+    [
+     0,
+     3,
+     4
+    ],
+    [
+     0,
+     1,
+     2,
+     5
+    ]
+   ],
+   "stars_listed": [
+    [
+     0,
+     4,
+     3
+    ],
+    [
+     0,
+     5,
+     1,
+     2
+    ]
+   ],
+   "usable": [
+    2
+   ]
+  },
+  {
+   "choice": "NEWEST",
+   "h": 3,
+   "i": 69,
+   "identical": true,
+   "knot_law": "nae",
+   "nu": 104,
+   "same_named_start": true,
+   "stars": [
+    [
+     2,
+     3,
+     4
+    ],
+    [
+     0,
+     1,
+     2,
+     5
+    ]
+   ],
+   "stars_listed": [
+    [
+     2,
+     4,
+     3
+    ],
+    [
+     1,
+     5,
+     2,
+     0
+    ]
+   ],
+   "usable": [
+    0,
+    1,
+    5
+   ]
+  },
+  {
+   "choice": "OLDEST",
+   "h": 4,
+   "i": 70,
+   "identical": true,
+   "knot_law": "nae",
+   "nu": 156,
+   "same_named_start": true,
+   "stars": [
+    [
+     1,
+     3,
+     4,
+     5,
+     6
+    ],
+    [
+     0,
+     2,
+     3
+    ]
+   ],
+   "stars_listed": [
+    [
+     6,
+     3,
+     1,
+     5,
+     4
+    ],
+    [
+     0,
+     2,
+     3
+    ]
+   ],
+   "usable": [
+    1,
+    4,
+    5,
+    6
+   ]
+  },
+  {
+   "choice": "NEWEST",
+   "h": 3,
+   "i": 71,
+   "identical": true,
+   "knot_law": "parity",
+   "nu": 28,
+   "same_named_start": true,
+   "stars": [
+    [
+     0,
+     1,
+     4
+    ],
+    [
+     2,
+     3,
+     4,
+     5
+    ]
+   ],
+   "stars_listed": [
+    [
+     0,
+     1,
+     4
+    ],
+    [
+     2,
+     5,
+     4,
+     3
+    ]
+   ],
+   "usable": []
+  },
+  {
+   "choice": "NEWEST",
+   "h": 4,
+   "i": 72,
+   "identical": true,
+   "knot_law": "parity",
+   "nu": 95,
+   "same_named_start": true,
+   "stars": [
+    [
+     0,
+     2,
+     6
+    ],
+    [
+     1,
+     2,
+     3,
+     4,
+     5
+    ]
+   ],
+   "stars_listed": [
+    [
+     0,
+     2,
+     6
+    ],
+    [
+     5,
+     2,
+     3,
+     1,
+     4
+    ]
+   ],
+   "usable": [
+    3
+   ]
+  },
+  {
+   "choice": "OLDEST",
+   "h": 3,
+   "i": 73,
+   "identical": true,
+   "knot_law": "nae",
+   "nu": 117,
+   "same_named_start": true,
+   "stars": [
+    [
+     3,
+     4,
+     5
+    ],
+    [
+     0,
+     1,
+     2,
+     3
+    ]
+   ],
+   "stars_listed": [
+    [
+     3,
+     5,
+     4
+    ],
+    [
+     0,
+     1,
+     2,
+     3
+    ]
+   ],
+   "usable": [
+    0
+   ]
+  },
+  {
+   "choice": "OLDEST",
+   "h": 4,
+   "i": 74,
+   "identical": true,
+   "knot_law": "parity",
+   "nu": 15,
+   "same_named_start": true,
+   "stars": [
+    [
+     0,
+     1,
+     2,
+     3,
+     6
+    ],
+    [
+     2,
+     4,
+     5
+    ]
+   ],
+   "stars_listed": [
+    [
+     0,
+     3,
+     2,
+     1,
+     6
+    ],
+    [
+     2,
+     4,
+     5
+    ]
+   ],
+   "usable": [
+    0
+   ]
+  },
+  {
+   "choice": "OLDEST",
+   "h": 3,
+   "i": 75,
+   "identical": true,
+   "knot_law": "parity",
+   "nu": 113,
+   "same_named_start": true,
+   "stars": [
+    [
+     2,
+     3,
+     5
+    ],
+    [
+     0,
+     1,
+     4,
+     5
+    ]
+   ],
+   "stars_listed": [
+    [
+     2,
+     3,
+     5
+    ],
+    [
+     4,
+     0,
+     1,
+     5
+    ]
+   ],
+   "usable": [
+    1
+   ]
+  },
+  {
+   "choice": "OLDEST",
+   "h": 4,
+   "i": 76,
+   "identical": true,
+   "knot_law": "nae",
+   "nu": 175,
+   "same_named_start": true,
+   "stars": [
+    [
+     2,
+     3,
+     4
+    ],
+    [
+     0,
+     1,
+     2,
+     5,
+     6
+    ]
+   ],
+   "stars_listed": [
+    [
+     2,
+     4,
+     3
+    ],
+    [
+     6,
+     0,
+     2,
+     5,
+     1
+    ]
+   ],
+   "usable": [
+    1
+   ]
+  },
+  {
+   "choice": "OLDEST",
+   "h": 4,
+   "i": 77,
+   "identical": true,
+   "knot_law": "parity",
+   "nu": 135,
+   "same_named_start": true,
+   "stars": [
+    [
+     1,
+     2,
+     3,
+     5,
+     6
+    ],
+    [
+     0,
+     3,
+     4
+    ]
+   ],
+   "stars_listed": [
+    [
+     6,
+     5,
+     3,
+     1,
+     2
+    ],
+    [
+     0,
+     3,
+     4
+    ]
+   ],
+   "usable": [
+    5
+   ]
+  },
+  {
+   "choice": "OLDEST",
+   "h": 3,
+   "i": 78,
+   "identical": true,
+   "knot_law": "parity",
+   "nu": 47,
+   "same_named_start": true,
+   "stars": [
+    [
+     0,
+     2,
+     4
+    ],
+    [
+     0,
+     1,
+     3,
+     5
+    ]
+   ],
+   "stars_listed": [
+    [
+     0,
+     4,
+     2
+    ],
+    [
+     0,
+     1,
+     3,
+     5
+    ]
+   ],
+   "usable": [
+    5
+   ]
+  },
+  {
+   "choice": "OLDEST",
+   "h": 4,
+   "i": 79,
+   "identical": true,
+   "knot_law": "parity",
+   "nu": 72,
+   "same_named_start": true,
+   "stars": [
+    [
+     0,
+     2,
+     3,
+     4,
+     5
+    ],
+    [
+     1,
+     5,
+     6
+    ]
+   ],
+   "stars_listed": [
+    [
+     2,
+     3,
+     4,
+     0,
+     5
+    ],
+    [
+     6,
+     5,
+     1
+    ]
+   ],
+   "usable": [
+    4
+   ]
+  },
+  {
+   "choice": "OLDEST",
+   "h": 4,
+   "i": 80,
+   "identical": true,
+   "knot_law": "nae",
+   "nu": 17,
+   "same_named_start": true,
+   "stars": [
+    [
+     0,
+     1,
+     2,
+     3,
+     6
+    ],
+    [
+     4,
+     5,
+     6
+    ]
+   ],
+   "stars_listed": [
+    [
+     3,
+     0,
+     1,
+     2,
+     6
+    ],
+    [
+     5,
+     4,
+     6
+    ]
+   ],
+   "usable": [
+    0,
+    1
+   ]
+  },
+  {
+   "choice": "NEWEST",
+   "h": 3,
+   "i": 81,
+   "identical": true,
+   "knot_law": "parity",
+   "nu": 45,
+   "same_named_start": true,
+   "stars": [
+    [
+     0,
+     2,
+     3,
+     5
+    ],
+    [
+     1,
+     3,
+     4
+    ]
+   ],
+   "stars_listed": [
+    [
+     5,
+     0,
+     3,
+     2
+    ],
+    [
+     4,
+     3,
+     1
+    ]
+   ],
+   "usable": []
+  },
+  {
+   "choice": "NEWEST",
+   "h": 4,
+   "i": 82,
+   "identical": true,
+   "knot_law": "parity",
+   "nu": 12,
+   "same_named_start": true,
+   "stars": [
+    [
+     0,
+     1,
+     2,
+     3,
+     5
+    ],
+    [
+     4,
+     5,
+     6
+    ]
+   ],
+   "stars_listed": [
+    [
+     0,
+     2,
+     1,
+     3,
+     5
+    ],
+    [
+     6,
+     5,
+     4
+    ]
+   ],
+   "usable": [
+    0,
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "choice": "NEWEST",
+   "h": 3,
+   "i": 83,
+   "identical": true,
+   "knot_law": "nae",
+   "nu": 51,
+   "same_named_start": true,
+   "stars": [
+    [
+     0,
+     2,
+     4,
+     5
+    ],
+    [
+     1,
+     2,
+     3
+    ]
+   ],
+   "stars_listed": [
+    [
+     0,
+     2,
+     5,
+     4
+    ],
+    [
+     1,
+     2,
+     3
+    ]
+   ],
+   "usable": [
+    0,
+    4,
+    5
+   ]
+  },
+  {
+   "choice": "NEWEST",
+   "h": 3,
+   "i": 84,
+   "identical": true,
+   "knot_law": "parity",
+   "nu": 72,
+   "same_named_start": true,
+   "stars": [
+    [
+     1,
+     2,
+     3
+    ],
+    [
+     0,
+     3,
+     4,
+     5
+    ]
+   ],
+   "stars_listed": [
+    [
+     2,
+     1,
+     3
+    ],
+    [
+     5,
+     3,
+     0,
+     4
+    ]
+   ],
+   "usable": [
+    0
+   ]
+  },
+  {
+   "choice": "NEWEST",
+   "h": 3,
+   "i": 85,
+   "identical": true,
+   "knot_law": "parity",
+   "nu": 14,
+   "same_named_start": true,
+   "stars": [
+    [
+     0,
+     1,
+     2,
+     5
+    ],
+    [
+     3,
+     4,
+     5
+    ]
+   ],
+   "stars_listed": [
+    [
+     1,
+     0,
+     2,
+     5
+    ],
+    [
+     4,
+     3,
+     5
+    ]
+   ],
+   "usable": [
+    2
+   ]
+  },
+  {
+   "choice": "OLDEST",
+   "h": 4,
+   "i": 86,
+   "identical": true,
+   "knot_law": "parity",
+   "nu": 109,
+   "same_named_start": true,
+   "stars": [
+    [
+     0,
+     3,
+     6
+    ],
+    [
+     1,
+     2,
+     3,
+     4,
+     5
+    ]
+   ],
+   "stars_listed": [
+    [
+     6,
+     3,
+     0
+    ],
+    [
+     1,
+     5,
+     3,
+     2,
+     4
+    ]
+   ],
+   "usable": [
+    2,
+    4
+   ]
+  },
+  {
+   "choice": "OLDEST",
+   "h": 3,
+   "i": 87,
+   "identical": true,
+   "knot_law": "nae",
+   "nu": 4,
+   "same_named_start": true,
+   "stars": [
+    [
+     0,
+     1,
+     2,
+     3
+    ],
+    [
+     1,
+     4,
+     5
+    ]
+   ],
+   "stars_listed": [
+    [
+     3,
+     1,
+     2,
+     0
+    ],
+    [
+     1,
+     5,
+     4
+    ]
+   ],
+   "usable": []
+  },
+  {
+   "choice": "NEWEST",
+   "h": 4,
+   "i": 88,
+   "identical": true,
+   "knot_law": "nae",
+   "nu": 186,
+   "same_named_start": true,
+   "stars": [
+    [
+     2,
+     3,
+     6
+    ],
+    [
+     0,
+     1,
+     2,
+     4,
+     5
+    ]
+   ],
+   "stars_listed": [
+    [
+     2,
+     6,
+     3
+    ],
+    [
+     1,
+     4,
+     2,
+     5,
+     0
+    ]
+   ],
+   "usable": []
+  },
+  {
+   "choice": "OLDEST",
+   "h": 4,
+   "i": 89,
+   "identical": true,
+   "knot_law": "parity",
+   "nu": 17,
+   "same_named_start": true,
+   "stars": [
+    [
+     0,
+     1,
+     2,
+     3,
+     6
+    ],
+    [
+     4,
+     5,
+     6
+    ]
+   ],
+   "stars_listed": [
+    [
+     1,
+     0,
+     3,
+     2,
+     6
+    ],
+    [
+     4,
+     5,
+     6
+    ]
+   ],
+   "usable": [
+    1
+   ]
+  },
+  {
+   "choice": "NEWEST",
+   "h": 3,
+   "i": 90,
+   "identical": true,
+   "knot_law": "nae",
+   "nu": 34,
+   "same_named_start": true,
+   "stars": [
+    [
+     0,
+     1,
+     5
+    ],
+    [
+     1,
+     2,
+     3,
+     4
+    ]
+   ],
+   "stars_listed": [
+    [
+     5,
+     1,
+     0
+    ],
+    [
+     1,
+     2,
+     3,
+     4
+    ]
+   ],
+   "usable": [
+    3
+   ]
+  },
+  {
+   "choice": "OLDEST",
+   "h": 4,
+   "i": 91,
+   "identical": true,
+   "knot_law": "parity",
+   "nu": 123,
+   "same_named_start": true,
+   "stars": [
+    [
+     1,
+     2,
+     3,
+     4,
+     5
+    ],
+    [
+     0,
+     1,
+     6
+    ]
+   ],
+   "stars_listed": [
+    [
+     1,
+     4,
+     5,
+     2,
+     3
+    ],
+    [
+     6,
+     1,
+     0
+    ]
+   ],
+   "usable": [
+    4,
+    5
+   ]
+  },
+  {
+   "choice": "OLDEST",
+   "h": 3,
+   "i": 92,
+   "identical": true,
+   "knot_law": "parity",
+   "nu": 41,
+   "same_named_start": true,
+   "stars": [
+    [
+     0,
+     2,
+     3,
+     4
+    ],
+    [
+     1,
+     3,
+     5
+    ]
+   ],
+   "stars_listed": [
+    [
+     0,
+     4,
+     3,
+     2
+    ],
+    [
+     5,
+     3,
+     1
+    ]
+   ],
+   "usable": [
+    0,
+    4
+   ]
+  },
+  {
+   "choice": "NEWEST",
+   "h": 4,
+   "i": 93,
+   "identical": true,
+   "knot_law": "parity",
+   "nu": 141,
+   "same_named_start": true,
+   "stars": [
+    [
+     1,
+     2,
+     4,
+     5,
+     6
+    ],
+    [
+     0,
+     1,
+     3
+    ]
+   ],
+   "stars_listed": [
+    [
+     1,
+     5,
+     4,
+     2,
+     6
+    ],
+    [
+     0,
+     1,
+     3
+    ]
+   ],
+   "usable": [
+    4,
+    5
+   ]
+  },
+  {
+   "choice": "OLDEST",
+   "h": 3,
+   "i": 94,
+   "identical": true,
+   "knot_law": "parity",
+   "nu": 80,
+   "same_named_start": true,
+   "stars": [
+    [
+     1,
+     2,
+     3,
+     5
+    ],
+    [
+     0,
+     4,
+     5
+    ]
+   ],
+   "stars_listed": [
+    [
+     1,
+     2,
+     3,
+     5
+    ],
+    [
+     4,
+     0,
+     5
+    ]
+   ],
+   "usable": [
+    3
+   ]
+  },
+  {
+   "choice": "OLDEST",
+   "h": 3,
+   "i": 95,
+   "identical": true,
+   "knot_law": "parity",
+   "nu": 90,
+   "same_named_start": true,
+   "stars": [
+    [
+     1,
+     2,
+     5
+    ],
+    [
+     0,
+     3,
+     4,
+     5
+    ]
+   ],
+   "stars_listed": [
+    [
+     2,
+     1,
+     5
+    ],
+    [
+     3,
+     4,
+     0,
+     5
+    ]
+   ],
+   "usable": [
+    3
+   ]
+  },
+  {
+   "choice": "OLDEST",
+   "h": 4,
+   "i": 96,
+   "identical": true,
+   "knot_law": "parity",
+   "nu": 92,
+   "same_named_start": true,
+   "stars": [
+    [
+     0,
+     2,
+     5
+    ],
+    [
+     1,
+     2,
+     3,
+     4,
+     6
+    ]
+   ],
+   "stars_listed": [
+    [
+     5,
+     2,
+     0
+    ],
+    [
+     6,
+     2,
+     4,
+     3,
+     1
+    ]
+   ],
+   "usable": [
+    1,
+    4,
+    6
+   ]
+  },
+  {
+   "choice": "OLDEST",
+   "h": 3,
+   "i": 97,
+   "identical": true,
+   "knot_law": "parity",
+   "nu": 57,
+   "same_named_start": true,
+   "stars": [
+    [
+     0,
+     3,
+     4
+    ],
+    [
+     0,
+     1,
+     2,
+     5
+    ]
+   ],
+   "stars_listed": [
+    [
+     0,
+     3,
+     4
+    ],
+    [
+     0,
+     1,
+     5,
+     2
+    ]
+   ],
+   "usable": [
+    1,
+    2,
+    5
+   ]
+  },
+  {
+   "choice": "OLDEST",
+   "h": 3,
+   "i": 98,
+   "identical": true,
+   "knot_law": "parity",
+   "nu": 115,
+   "same_named_start": true,
+   "stars": [
+    [
+     2,
+     4,
+     5
+    ],
+    [
+     0,
+     1,
+     3,
+     4
+    ]
+   ],
+   "stars_listed": [
+    [
+     5,
+     4,
+     2
+    ],
+    [
+     3,
+     0,
+     1,
+     4
+    ]
+   ],
+   "usable": [
+    0,
+    3
+   ]
+  },
+  {
+   "choice": "NEWEST",
+   "h": 4,
+   "i": 99,
+   "identical": true,
+   "knot_law": "nae",
+   "nu": 30,
+   "same_named_start": true,
+   "stars": [
+    [
+     0,
+     1,
+     2,
+     5,
+     6
+    ],
+    [
+     2,
+     3,
+     4
+    ]
+   ],
+   "stars_listed": [
+    [
+     1,
+     6,
+     2,
+     0,
+     5
+    ],
+    [
+     2,
+     3,
+     4
+    ]
+   ],
+   "usable": [
+    0,
+    1,
+    5,
+    6
+   ]
+  }
+ ]
+}

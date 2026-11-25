@@ -1982,5 +1982,5 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-24 | The guard of births made one at a time, under the cap of three and under holding (`GUARD-CAP-AND-HOLD-20261124-001`) | [closure](proofs/GUARD-CAP-AND-HOLD-20261124-001Z/GUARD-CAP-AND-HOLD-20261124-001Z-P001_synthesis/proof.md) | [folder](research/GUARD-CAP-AND-HOLD-20261124-001/) |
 | 2026-11-24 | The least record: how little has to be written for a knot to find its parents (`LEAST-RECORD-20261124-001`) | — | [folder](research/LEAST-RECORD-20261124-001/) |
 | 2026-11-24 | Can a knot tell its parents from its children by what is built around it? (`PARENTS-FROM-HOLDERS-20261124-001`) | [closure](proofs/PARENTS-FROM-HOLDERS-20261124-001Z/PARENTS-FROM-HOLDERS-20261124-001Z-P001_synthesis/proof.md) | [folder](research/PARENTS-FROM-HOLDERS-20261124-001/) |
-| 2026-11-24 | Parts that meet again: does what one part builds depend on whether another part is there? (`PARTS-MEET-AGAIN-20261124-001`) | — | [folder](research/PARTS-MEET-AGAIN-20261124-001/) |
+| 2026-11-24 | Parts that meet again: does what one part builds depend on whether another part is there? (`PARTS-MEET-AGAIN-20261124-001`) | [closure](proofs/PARTS-MEET-AGAIN-20261124-001Z/PARTS-MEET-AGAIN-20261124-001Z-P001_synthesis/proof.md) | [folder](research/PARTS-MEET-AGAIN-20261124-001/) |
 

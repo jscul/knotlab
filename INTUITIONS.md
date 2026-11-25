@@ -3964,6 +3964,21 @@ interpretation that no result settles.
   comparison that we make between two starts. No pattern in one growth has
   been shown to take one course or another according to what a second pattern
   is. That is the first test of this picture, and it is open.
+- **Parts that meet again (computed under added rules, referee pending).** A
+  first step was run on 24 November 2026. Under every law above, and under the
+  recorded rules in which a birth takes a distinction that is already shared,
+  parts that have come apart never meet again; for those rules there is a
+  reason: a birth that takes only what its own parents hold can reach nothing
+  its parents did not already meet. Under rules added by hand that reach a
+  little further, a birth also taking a distinction from a knot its parent
+  meets or from one or two steps back along its own descent, parts that came
+  apart do become one part again, and the first then builds differently
+  according to whether the second is there. In some cases the knot they come
+  back through is one both descend from, the owner's "axis point" (glossary,
+  "Ancestral common knot"). What crosses is only whether the other part is
+  there, not what it is; each case needs its own ration and a supplied choice
+  of which distinction is taken; and nothing is yet built from another part
+  ([PARTS-MEET-AGAIN-20261124-001](research/PARTS-MEET-AGAIN-20261124-001/decision.md)).
 - **No claim about living things.** The guide says nothing about DNA, cells or
   minds. The owner's words name what a base would have to grow before such a
   question could be asked of it.
@@ -3973,10 +3988,11 @@ each have a frozen study behind them, with referees pending. Whether the knots
 of one part have to read together now has an answer, in lesson 8.1: not if
 each birth records its parents, and that record cannot be read back from what
 is built. Three things are open. How little of that record has to be written
-(B325, under goal G5). A first "fold of emergence": since
-parts that have come apart never meet again under these rules, a made pattern
-that reads another needs a law under which they can (B317, under G15; a study
-of it opened on 24 November 2026). And proofs
+(B325, under goal G5). A first "fold of emergence": under added rules
+parts that came apart can now meet again, and one part's course then depends
+on whether another is there, but not on what it is, and nothing is built from
+it (B317, under G15; a made pattern that leaves two of what it meets is the
+next step, B327). And proofs
 of what is so far argued or computed: the return for every odd ring, the sizes
 of the parts under each cap, and that one leftover distinction on every knot
 turns rate x into the x′ of x′² = x(x′ + 1) (B316, under G17).
@@ -4536,9 +4552,10 @@ that earlier records used in two senses.
   also takes a distinction that an ancestor of one of its parents holds, so
   that the distinction gains a holder. Under the laws of lesson 8.1 a shared
   distinction has two holders; where a birth may take a distinction that is
-  already shared, shared means held by two or more. A study of such laws was
-  frozen on 24 November 2026 and has no result yet
-  ([the request it answers](research/PARTS-MEET-AGAIN-20261124-001/owner_request.md)).
+  already shared, shared means held by two or more. In the study of such laws
+  ([PARTS-MEET-AGAIN-20261124-001](research/PARTS-MEET-AGAIN-20261124-001/decision.md),
+  computed, referee pending) parts that came apart became one part again
+  through such a knot in 62 cases, always a start knot.
 - **Live roster.** What one round of the law reads: which junctions hold a
   loose distinction, how many, and which sets of them one junction meets
   (lesson 8.4). The growth records call it the growing end.

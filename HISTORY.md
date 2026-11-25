@@ -3,6 +3,10 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 25 November 2026 · Whether a part's course depends on which part it meets
+
+**Narrowing of two sentences of the guide.** Lesson 8.7 and the glossary's "Fold of emergence" said that one part's course differs with another part barred "but not with what it is". That was found on the 16 pairs the study of parts that meet again asked. In the copier study's first ticket the first pattern's course differs with which second pattern is there in 367 of 2,304 pairs of runs, under rules that choose which distinction to take by name and from starts that supply the second pattern; whether those differences go through the two patterns' meeting was not tested. Both sentences now give both counts with their scopes. Still not found: a part that makes a pattern of its own from the other, or a made pattern that leaves two of what it meets. [The first ticket's result](research/MADE-COPIER-20261125-001A/results.md)
+
 ## 25 November 2026 · What the copier study's frozen text disclosed from its prototype
 
 **Narrowing of a disclosure; no result changes.** The frozen pre-registration of the copier study's first ticket disclosed three things from the drafter's prototype that the study's own engine and an independent check did not bear out as worded. The prototype's counts of histories "stopped at the guard" under the cap of three (4,867, 5,000 and 5,000) were of a trial round it grew to list candidate takes, not of the histories' own rounds; read as the definitions say, none of 20,000 histories of each design stops. Its counts of drawn histories were made under another seed than the one the definitions register, so they are of other histories. And the definitions say in two places, differently, at which round a comparison is made, which decides two counts of the owner's arm (359 against the disclosed 357; 64 against 62). The result note gives each with its replay. [The first ticket's result](research/MADE-COPIER-20261125-001A/results.md)

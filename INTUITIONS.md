@@ -4029,9 +4029,14 @@ is built, though three values on each knot can stand in for it. Three things
 are open. Whether the structure can hold such a count itself (B328, under goal
 G5). A first "fold of emergence": under added rules
 parts that came apart can now meet again, and one part's course then differs
-with another barred, but not with what it is, and no part has built anything
-from what the other is (B317, under G15; a made pattern that leaves two of what
-it meets is the next step, B327, whose claim is now frozen; lesson 10.5). And
+with another barred. In the 16 pairs first asked it did not differ with what
+the other is; in the copier study's first ticket the first pattern's course
+differs with which second pattern is there in 367 of 2,304 pairs of runs,
+under rules that choose by name and from starts that supply the second
+pattern, and whether that goes through their meeting was not tested there. No
+part has built anything from what the other is, and no made pattern leaves two
+of what it meets under the laws tried (B317 and B327, under G15; lesson 10.5).
+And
 proofs
 of what is so far argued or computed: the return for every odd ring, the sizes
 of the parts under each cap, and that one leftover distinction on every knot
@@ -5669,9 +5674,11 @@ that earlier records used in two senses.
   its own,
   as he pictures DNA and intelligence. An interpretation. Under laws added by
   hand the record has cases in which what one made part builds differs between
-  a run with another made part growing and a run with it barred, but none in
-  which it differs with what the other is, or in which a part makes a pattern
-  of its own from the other (lessons 8.7, 9.6, 10.1 and 10.3). It is not the
+  a run with another made part growing and a run with it barred. It has runs
+  in which a part's course differs with which other part is there, under rules
+  that choose by name and not shown to go through their meeting, and none in
+  which a part makes a pattern of its own from the other (lessons 8.7, 9.6,
+  10.1 and 10.3). It is not the
   two-fold of a two-fold weave, which counts knots, and the guide makes no
   claim about living things.
 - **Copier.** The owner's word (24 November 2026: "a copier is a pattern the

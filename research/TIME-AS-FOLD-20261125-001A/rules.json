@@ -1,0 +1,281 @@
+{
+ "about": "The registered taking rules of TIME-AS-FOLD-20261125-001A with their cost: FD 3.3's vector and one component added here, kinds of birth treated differently (1 = every birth treated alike, 2 = joins against offshoots, 3 = offshoots also treated differently by the kind of their parent: of joins, of offshoots). The number of the parent's parents lies within the first parent step, which STEPS-k already looks at, so the rules by the kind of the parent add only that component. Equivalences, by construction: STEPS-k for offshoots of start knots takes nothing (a start knot has no ancestor), so the STEPS family by the kind of the parent has three members for each k (offshoots of joins; of offshoots; both, which is STEPS-k); MET with neither clause is the control.",
+ "rules": [
+  {
+   "id": "none",
+   "arm": "control",
+   "text": "no taking rule (FD 3.1, \"With no taking rule\")",
+   "cost": {
+    "holder_steps": 0,
+    "record_parent_steps": 0,
+    "whole_roster": false,
+    "choice_supplied_by": "none",
+    "kinds_of_birth_treated_differently": 1
+   }
+  },
+  {
+   "id": "Q",
+   "arm": "rules of the study of parts that meet again",
+   "text": "rule Q (FD 3.2): every offshoot whose parent holds an eligible distinction also takes one, by the choice",
+   "cost": {
+    "holder_steps": 1,
+    "record_parent_steps": 0,
+    "whole_roster": false,
+    "choice_supplied_by": "the choice",
+    "kinds_of_birth_treated_differently": 2
+   }
+  },
+  {
+   "id": "MET",
+   "arm": "primary under CAP-3 (L2); rule of the study of parts that meet again under FLOOR1",
+   "text": "MET (FD 3.3), both clauses",
+   "cost": {
+    "holder_steps": 2,
+    "record_parent_steps": 0,
+    "whole_roster": false,
+    "choice_supplied_by": "the choice",
+    "kinds_of_birth_treated_differently": 2
+   }
+  },
+  {
+   "id": "STEPS-1",
+   "arm": "primary under FLOOR1 (L1); rule of the study of parts that meet again under CAP-3",
+   "text": "STEPS-1 (FD 3.3)",
+   "cost": {
+    "holder_steps": 2,
+    "record_parent_steps": 1,
+    "whole_roster": false,
+    "choice_supplied_by": "the choice",
+    "kinds_of_birth_treated_differently": 2
+   }
+  },
+  {
+   "id": "STEPS-2",
+   "arm": "rule of the study of parts that meet again",
+   "text": "STEPS-2 (FD 3.3)",
+   "cost": {
+    "holder_steps": 3,
+    "record_parent_steps": 2,
+    "whole_roster": false,
+    "choice_supplied_by": "the choice",
+    "kinds_of_birth_treated_differently": 2
+   }
+  },
+  {
+   "id": "UP-TO-2",
+   "arm": "rule of the study of parts that meet again",
+   "text": "UP-TO-2 (FD 3.3)",
+   "cost": {
+    "holder_steps": 3,
+    "record_parent_steps": 2,
+    "whole_roster": false,
+    "choice_supplied_by": "the choice",
+    "kinds_of_birth_treated_differently": 2
+   }
+  },
+  {
+   "id": "STEPS-1",
+   "arm": "ladder (RING-LAW, ring starts)",
+   "text": "FD 3.3's STEPS-k taken for k = 1",
+   "cost": {
+    "holder_steps": 2,
+    "record_parent_steps": 1,
+    "whole_roster": false,
+    "choice_supplied_by": "the choice",
+    "kinds_of_birth_treated_differently": 2
+   }
+  },
+  {
+   "id": "STEPS-2",
+   "arm": "ladder (RING-LAW, ring starts)",
+   "text": "FD 3.3's STEPS-k taken for k = 2",
+   "cost": {
+    "holder_steps": 3,
+    "record_parent_steps": 2,
+    "whole_roster": false,
+    "choice_supplied_by": "the choice",
+    "kinds_of_birth_treated_differently": 2
+   }
+  },
+  {
+   "id": "STEPS-3",
+   "arm": "ladder (RING-LAW, ring starts)",
+   "text": "FD 3.3's STEPS-k taken for k = 3",
+   "cost": {
+    "holder_steps": 4,
+    "record_parent_steps": 3,
+    "whole_roster": false,
+    "choice_supplied_by": "the choice",
+    "kinds_of_birth_treated_differently": 2
+   }
+  },
+  {
+   "id": "STEPS-4",
+   "arm": "ladder (RING-LAW, ring starts)",
+   "text": "FD 3.3's STEPS-k taken for k = 4",
+   "cost": {
+    "holder_steps": 5,
+    "record_parent_steps": 4,
+    "whole_roster": false,
+    "choice_supplied_by": "the choice",
+    "kinds_of_birth_treated_differently": 2
+   }
+  },
+  {
+   "id": "STEPS-5",
+   "arm": "ladder (RING-LAW, ring starts)",
+   "text": "FD 3.3's STEPS-k taken for k = 5",
+   "cost": {
+    "holder_steps": 6,
+    "record_parent_steps": 5,
+    "whole_roster": false,
+    "choice_supplied_by": "the choice",
+    "kinds_of_birth_treated_differently": 2
+   }
+  },
+  {
+   "id": "STEPS-6",
+   "arm": "ladder (RING-LAW, ring starts)",
+   "text": "FD 3.3's STEPS-k taken for k = 6",
+   "cost": {
+    "holder_steps": 7,
+    "record_parent_steps": 6,
+    "whole_roster": false,
+    "choice_supplied_by": "the choice",
+    "kinds_of_birth_treated_differently": 2
+   }
+  },
+  {
+   "id": "STEPS-7",
+   "arm": "ladder (RING-LAW, ring starts)",
+   "text": "FD 3.3's STEPS-k taken for k = 7",
+   "cost": {
+    "holder_steps": 8,
+    "record_parent_steps": 7,
+    "whole_roster": false,
+    "choice_supplied_by": "the choice",
+    "kinds_of_birth_treated_differently": 2
+   }
+  },
+  {
+   "id": "STEPS-8",
+   "arm": "ladder (RING-LAW, ring starts)",
+   "text": "FD 3.3's STEPS-k taken for k = 8",
+   "cost": {
+    "holder_steps": 9,
+    "record_parent_steps": 8,
+    "whole_roster": false,
+    "choice_supplied_by": "the choice",
+    "kinds_of_birth_treated_differently": 2
+   }
+  },
+  {
+   "id": "MET:offshoot",
+   "arm": "second arm (family)",
+   "text": "MET's offshoot clause alone: no join takes",
+   "cost": {
+    "holder_steps": 2,
+    "record_parent_steps": 0,
+    "whole_roster": false,
+    "choice_supplied_by": "the choice",
+    "kinds_of_birth_treated_differently": 2
+   }
+  },
+  {
+   "id": "MET:join",
+   "arm": "second arm (family); candidate, chosen after the census",
+   "text": "MET's join clause alone: no offshoot takes; IN-TURN equals OLDEST for joins, so three distinct choices",
+   "cost": {
+    "holder_steps": 2,
+    "record_parent_steps": 0,
+    "whole_roster": false,
+    "choice_supplied_by": "the choice",
+    "kinds_of_birth_treated_differently": 2
+   }
+  },
+  {
+   "id": "STEPS-1:join",
+   "arm": "second arm (family)",
+   "text": "STEPS-1 for offshoots of joins: only an offshoot whose parent has two or more parents takes",
+   "cost": {
+    "holder_steps": 2,
+    "record_parent_steps": 1,
+    "whole_roster": false,
+    "choice_supplied_by": "the choice",
+    "kinds_of_birth_treated_differently": 3
+   }
+  },
+  {
+   "id": "STEPS-1:offshoot",
+   "arm": "second arm (family); fitted control, added by hand after the census",
+   "text": "STEPS-1 for offshoots of offshoots: only an offshoot whose parent has exactly one parent takes",
+   "cost": {
+    "holder_steps": 2,
+    "record_parent_steps": 1,
+    "whole_roster": false,
+    "choice_supplied_by": "the choice",
+    "kinds_of_birth_treated_differently": 3
+   }
+  },
+  {
+   "id": "STEPS-2:join",
+   "arm": "second arm (family)",
+   "text": "STEPS-2 for offshoots of joins: only an offshoot whose parent has two or more parents takes",
+   "cost": {
+    "holder_steps": 3,
+    "record_parent_steps": 2,
+    "whole_roster": false,
+    "choice_supplied_by": "the choice",
+    "kinds_of_birth_treated_differently": 3
+   }
+  },
+  {
+   "id": "STEPS-2:offshoot",
+   "arm": "second arm (family); fitted control, added by hand after the census",
+   "text": "STEPS-2 for offshoots of offshoots: only an offshoot whose parent has exactly one parent takes",
+   "cost": {
+    "holder_steps": 3,
+    "record_parent_steps": 2,
+    "whole_roster": false,
+    "choice_supplied_by": "the choice",
+    "kinds_of_birth_treated_differently": 3
+   }
+  },
+  {
+   "id": "STEPS-3:join",
+   "arm": "second arm (family)",
+   "text": "STEPS-3 for offshoots of joins: only an offshoot whose parent has two or more parents takes",
+   "cost": {
+    "holder_steps": 4,
+    "record_parent_steps": 3,
+    "whole_roster": false,
+    "choice_supplied_by": "the choice",
+    "kinds_of_birth_treated_differently": 3
+   }
+  },
+  {
+   "id": "STEPS-3:offshoot",
+   "arm": "second arm (family); fitted control, added by hand after the census",
+   "text": "STEPS-3 for offshoots of offshoots: only an offshoot whose parent has exactly one parent takes",
+   "cost": {
+    "holder_steps": 4,
+    "record_parent_steps": 3,
+    "whole_roster": false,
+    "choice_supplied_by": "the choice",
+    "kinds_of_birth_treated_differently": 3
+   }
+  }
+ ],
+ "choices": [
+  "OLDEST",
+  "NEWEST",
+  "IN-TURN",
+  "BY-COUNT"
+ ],
+ "base_laws": {
+  "RING-LAW": "CAP-3, CANCEL-WAIT, RELEASE",
+  "RING-LAW+FILLERS": "CAP-3, CANCEL-WAIT, RELEASE, FILLERS",
+  "COPY-LAW(t)": "FLOOR1, t, RELEASE for t in CANCEL-RETIRE, CANCEL-OFFSHOOT, CANCEL-WAIT",
+  "CAP-3(t)": "CAP-3, t, RELEASE for t in CANCEL-RETIRE, CANCEL-OFFSHOOT (CAP-3 with CANCEL-WAIT is RING-LAW)"
+ }
+}

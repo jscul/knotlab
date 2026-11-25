@@ -1,0 +1,351 @@
+{
+ "note": "Hand-written records: a unit test of attribution (definitions, RD 4.3). Each record gives, for two runs A and B under one underlying numbering, the values used at X's births in one round, already in the order of RD 3.3 (step-major; birth order within a step; groups in FD 2.1 order) and already aligned by the answers rule (RD 3.2): entries with the same \"at\" answer one another. A set-valued entry lists the knots it was formed from, each with its answer (an id shared by answering knots), its descent and whether it is a start knot; a candidates entry lists each candidate distinction with the knot that supplies it. The engine's attribution must return \"expected\".",
+ "records": [
+  {
+   "name": "through the meeting (the demand of X's round-2 join)",
+   "round": 2,
+   "A": [
+    {
+     "at": "step1/group1",
+     "kind": "group",
+     "size": 2,
+     "members": [
+      {
+       "id": "x1",
+       "descent": "X only"
+      },
+      {
+       "id": "x2",
+       "descent": "X only"
+      }
+     ]
+    },
+    {
+     "at": "step5p/birth1",
+     "kind": "candidates",
+     "value": [
+      {
+       "d": "e",
+       "supplier": {
+        "id": "k0",
+        "descent": "neither",
+        "start": true
+       }
+      }
+     ]
+    },
+    {
+     "at": "step6/birth1",
+     "kind": "demand",
+     "value": 8,
+     "members": [
+      {
+       "id": "o1",
+       "descent": "X only"
+      },
+      {
+       "id": "o2",
+       "descent": "X only"
+      },
+      {
+       "id": "y1",
+       "descent": "Y only"
+      },
+      {
+       "id": "y2",
+       "descent": "Y only"
+      },
+      {
+       "id": "y3",
+       "descent": "Y only"
+      },
+      {
+       "id": "y4",
+       "descent": "Y only"
+      },
+      {
+       "id": "y5",
+       "descent": "Y only"
+      },
+      {
+       "id": "y6",
+       "descent": "Y only"
+      }
+     ]
+    }
+   ],
+   "B": [
+    {
+     "at": "step1/group1",
+     "kind": "group",
+     "size": 2,
+     "members": [
+      {
+       "id": "x1",
+       "descent": "X only"
+      },
+      {
+       "id": "x2",
+       "descent": "X only"
+      }
+     ]
+    },
+    {
+     "at": "step5p/birth1",
+     "kind": "candidates",
+     "value": [
+      {
+       "d": "e",
+       "supplier": {
+        "id": "k0",
+        "descent": "neither",
+        "start": true
+       }
+      }
+     ]
+    },
+    {
+     "at": "step6/birth1",
+     "kind": "demand",
+     "value": 5,
+     "members": [
+      {
+       "id": "o1",
+       "descent": "X only"
+      },
+      {
+       "id": "o2",
+       "descent": "X only"
+      },
+      {
+       "id": "y7",
+       "descent": "Y only"
+      },
+      {
+       "id": "y8",
+       "descent": "Y only"
+      },
+      {
+       "id": "y9",
+       "descent": "Y only"
+      }
+     ]
+    }
+   ],
+   "expected": {
+    "first_differing": "step6/birth1",
+    "class": "through the meeting"
+   }
+  },
+  {
+   "name": "a third part (a start knot): one more candidate supplied by the second pattern's start knot",
+   "round": 3,
+   "A": [
+    {
+     "at": "step5p/birth1",
+     "kind": "candidates",
+     "value": [
+      {
+       "d": "c1",
+       "supplier": {
+        "id": "k1",
+        "descent": "neither",
+        "start": true
+       }
+      },
+      {
+       "d": "c2",
+       "supplier": {
+        "id": "k1",
+        "descent": "neither",
+        "start": true
+       }
+      },
+      {
+       "d": "c3",
+       "supplier": {
+        "id": "k1",
+        "descent": "neither",
+        "start": true
+       }
+      },
+      {
+       "d": "c4",
+       "supplier": {
+        "id": "k1",
+        "descent": "neither",
+        "start": true
+       }
+      },
+      {
+       "d": "c5",
+       "supplier": {
+        "id": "k1",
+        "descent": "neither",
+        "start": true
+       }
+      }
+     ]
+    }
+   ],
+   "B": [
+    {
+     "at": "step5p/birth1",
+     "kind": "candidates",
+     "value": [
+      {
+       "d": "c1",
+       "supplier": {
+        "id": "k1",
+        "descent": "neither",
+        "start": true
+       }
+      },
+      {
+       "d": "c2",
+       "supplier": {
+        "id": "k1",
+        "descent": "neither",
+        "start": true
+       }
+      },
+      {
+       "d": "c3",
+       "supplier": {
+        "id": "k1",
+        "descent": "neither",
+        "start": true
+       }
+      },
+      {
+       "d": "c4",
+       "supplier": {
+        "id": "k1",
+        "descent": "neither",
+        "start": true
+       }
+      },
+      {
+       "d": "c5",
+       "supplier": {
+        "id": "k1",
+        "descent": "neither",
+        "start": true
+       }
+      },
+      {
+       "d": "c6",
+       "supplier": {
+        "id": "k1",
+        "descent": "neither",
+        "start": true
+       }
+      }
+     ]
+    }
+   ],
+   "expected": {
+    "first_differing": "step5p/birth1",
+    "class": "a third part (a start knot)"
+   }
+  },
+  {
+   "name": "round-wide: an implied flag",
+   "round": 4,
+   "A": [
+    {
+     "at": "step6/birth2",
+     "kind": "demand",
+     "value": 2,
+     "members": [
+      {
+       "id": "o1",
+       "descent": "X only"
+      },
+      {
+       "id": "o2",
+       "descent": "X only"
+      }
+     ]
+    },
+    {
+     "at": "step7/birth2",
+     "kind": "implied",
+     "value": true
+    }
+   ],
+   "B": [
+    {
+     "at": "step6/birth2",
+     "kind": "demand",
+     "value": 2,
+     "members": [
+      {
+       "id": "o1",
+       "descent": "X only"
+      },
+      {
+       "id": "o2",
+       "descent": "X only"
+      }
+     ]
+    },
+    {
+     "at": "step7/birth2",
+     "kind": "implied",
+     "value": false
+    }
+   ],
+   "expected": {
+    "first_differing": "step7/birth2",
+    "class": "round-wide"
+   }
+  },
+  {
+   "name": "unclassified: the differing members are all from X only",
+   "round": 3,
+   "A": [
+    {
+     "at": "step1/group1",
+     "kind": "group",
+     "size": 3,
+     "members": [
+      {
+       "id": "x1",
+       "descent": "X only"
+      },
+      {
+       "id": "x2",
+       "descent": "X only"
+      },
+      {
+       "id": "x3",
+       "descent": "X only"
+      }
+     ]
+    }
+   ],
+   "B": [
+    {
+     "at": "step1/group1",
+     "kind": "group",
+     "size": 2,
+     "members": [
+      {
+       "id": "x1",
+       "descent": "X only"
+      },
+      {
+       "id": "x2",
+       "descent": "X only"
+      }
+     ]
+    }
+   ],
+   "expected": {
+    "first_differing": "step1/group1",
+    "class": "unclassified"
+   }
+  }
+ ]
+}

@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**403 current results** and 5 superseded ones, from 635 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**403 current results** and 5 superseded ones, from 636 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -31,7 +31,7 @@ How to read an entry:
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 26 results
 - [Notes](#notes): 6 self-contained notes
-- [Epics](#epics): all 635 epics with their closures
+- [Epics](#epics): all 636 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -1987,4 +1987,5 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-25 | A made copier: a pattern that, on meeting a second pattern, leaves two of the second (`MADE-COPIER-20261125-001`) | — | [folder](research/MADE-COPIER-20261125-001/) |
 | 2026-11-25 | Time as a fold: a made pattern that counts another pattern's returns (`TIME-AS-FOLD-20261125-001`) | — | [folder](research/TIME-AS-FOLD-20261125-001/) |
 | 2026-11-25 | Which weighting "it's random" means: both countings side by side, and whether a growth law fixes one (`TWO-COUNTINGS-20261125-001`) | — | [folder](research/TWO-COUNTINGS-20261125-001/) |
+| 2026-11-25 | What a birth must carry for a made pattern to read what it meets (`WHAT-A-BIRTH-CARRIES-20261125-001`) | — | [folder](research/WHAT-A-BIRTH-CARRIES-20261125-001/) |
 

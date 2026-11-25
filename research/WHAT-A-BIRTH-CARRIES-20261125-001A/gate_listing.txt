@@ -1,0 +1,39 @@
+=== made-4, a = 4 (Y members left usable: those whose input is among [3, 4, 5, 6]), ORD/CANCEL-RETIRE/MET(OLDEST), not-all-equal
+ round 1: 0 groups []; short []; retired []
+   knot 2 offshoot parents [0] inputs [1] (taken []) D=1 p=1 f=2
+   knot 3 offshoot parents [0] inputs [2] (taken []) D=1 p=1 f=2
+   knot 4 offshoot parents [1] inputs [3] (taken []) D=3 p=1 f=3
+   knot 5 offshoot parents [1] inputs [4] (taken []) D=3 p=1 f=3
+   knot 6 offshoot parents [1] inputs [5] (taken []) D=3 p=1 f=3
+   knot 7 offshoot parents [1] inputs [6] (taken []) D=3 p=1 f=3
+ round 2: 7 groups [[2, 3], [4, 5], [4, 6], [4, 7], [5, 6], [5, 7], [6, 7]]; short []; retired []
+   knot 8 join parents [2, 3] inputs [7, 9, 0] (taken [0]) D=8 p=3 f=8
+   knot 9 join parents [4, 5] inputs [11, 14, 0] (taken [0]) D=8 p=3 f=8
+   knot 10 join parents [4, 6] inputs [12, 17, 0] (taken [0]) D=8 p=3 f=8
+   knot 11 join parents [4, 7] inputs [13, 20, 0] (taken [0]) D=8 p=3 f=8
+   knot 12 join parents [5, 6] inputs [15, 18, 0] (taken [0]) D=8 p=3 f=8
+   knot 13 join parents [5, 7] inputs [16, 21, 0] (taken [0]) D=8 p=3 f=8
+   knot 14 join parents [6, 7] inputs [19, 22, 0] (taken [0]) D=8 p=3 f=8
+   knot 15 offshoot parents [2] inputs [8, 0] (taken [0]) D=8 p=2 f=8
+   knot 16 offshoot parents [3] inputs [10, 0] (taken [0]) D=8 p=2 f=8
+ round 3: 36 groups; short []; retired []
+   36 births; (kind, parents, taken, D, f): [(('join', 2, (1,), 35, 35), 36)]
+ knot test: 80 verdicts, 0 failing
+=== made-4, a = 1 (Y members left usable: those whose input is among [3]), ORD/CANCEL-RETIRE/MET(OLDEST), not-all-equal
+ round 1: 0 groups []; short []; retired []
+   knot 2 offshoot parents [0] inputs [1] (taken []) D=1 p=1 f=2
+   knot 3 offshoot parents [0] inputs [2] (taken []) D=1 p=1 f=2
+   knot 4 offshoot parents [1] inputs [3] (taken []) D=3 p=1 f=3
+   knot 5 offshoot parents [1] inputs [4] (taken []) D=3 p=1 f=3
+   knot 6 offshoot parents [1] inputs [5] (taken []) D=3 p=1 f=3
+   knot 7 offshoot parents [1] inputs [6] (taken []) D=3 p=1 f=3
+ round 2: 1 groups [[2, 3]]; short []; retired []
+   knot 8 join parents [2, 3] inputs [7, 9, 0] (taken [0]) D=5 p=3 f=5
+   knot 9 offshoot parents [2] inputs [8, 0] (taken [0]) D=5 p=2 f=5
+   knot 10 offshoot parents [3] inputs [10, 0] (taken [0]) D=5 p=2 f=5
+   knot 11 offshoot parents [4] inputs [11, 0] (taken [0]) D=5 p=2 f=5
+   knot 12 offshoot parents [4] inputs [12, 0] (taken [0]) D=5 p=2 f=5
+   knot 13 offshoot parents [4] inputs [13, 0] (taken [0]) D=5 p=2 f=5
+ round 3: 15 groups; short []; retired []
+   15 births; (kind, parents, taken, D, f): [(('join', 2, (1,), 14, 14), 15)]
+ knot test: 53 verdicts, 0 failing

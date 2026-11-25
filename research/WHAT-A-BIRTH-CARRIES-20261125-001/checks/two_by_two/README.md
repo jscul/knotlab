@@ -64,6 +64,9 @@ apart after the round at which the parts are chosen, the four runs are grown and
    exchanged by any renaming. So the four runs can show a difference by which. Ticket B's reading m calls every one of
    them "handed in one value". **A planted case that needs two values was not built**, so the stop written for B335
    is met only in its first half.
+   The program's label "which, at equal count" means only that the course differs with which one is barred, the
+   number barred being equal. With second parts that are not alike, that can still be a count of the second part's
+   births.
 
 ## What it says
 
@@ -93,3 +96,44 @@ that do not descend from one knot come to meet, without names.
 - **No knot test** was run on the barred runs of this probe.
 - **Finite**: rounds to 7 or 9, starts of three and four knots and five rings.
 - Nothing here is about living things, minds or physics.
+
+## Report as sent (2026-11-25, about 21:25 UTC)
+
+**Direction 1 has reached its stop for the laws we have: a made part's course tells how many of the parts it meets were there, and never which.** This was my own probe, not a registered study, and half of the planned stop is unmet: I did not build the planted case that needs two values.
+
+What the runs show, all under laws that use no names:
+
+- **A count, with as many values as there are second parts.** Take a first part that meets two second parts through knots the growth made. Its course is the same whichever one is barred, different with neither barred, and different again with both: on 5,091 of the 5,091 triples where it responds at all. A separate recount with up to three second parts barred gave four different courses, the same for every choice of which.
+- **Where the first part responds, the second parts are alike.** They are branches of one made knot. All 6,525 pairs on the 196 census starts run can be mapped onto each other by a renaming that fixes the first part, so barring one or the other gives the same run and "which" has no test.
+- **Where the second parts are not alike, the first part does not respond.** With short knots waiting, 420 pairs that are not alike were tested, and the first part's course changed in none.
+- **Everything arrives at one birth.** Parts that separate either meet in the very next round or not at all (1,120 runs, read to round 9), and the meetings two rounds later are all inside one part's own descent (26,214 of 26,214).
+- **The control shows "which" but not "two values".** Under the rule that looks at parts, the course differs with which second part is barred on 1,602 triples. No case in any run needs more than one value at one birth.
+
+So the obstruction is specific. Under the rule that a birth takes a shared distinction only when exactly one is on offer, a made part only ever meets the other branches of the knot it came from, and only once. Anything more than a count needs parts of different descent to meet, or the same parts to meet twice.
+
+Not run: 23 of the 219 census starts in the scan (over the time limit), the census starts after the first 71 in the first sweep, and barring more than three second parts.
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt — the probe of a part that meets two others (sub-goal B335) | **Status:** Partially successful | The class is built and run: how many, never which. The planted case that needs two values was not built. |
+| Local direction — more than a count under the listed laws without names | Practically exhausted | The parts that meet are branches of one knot, alike, and meet once; more runs of these laws would repeat it. |
+| Broader exploration — the owner's fold of emergence | Known alternatives | A law without names that lets parts of different descent meet; the third property; the copier study, whose third ticket is running. |
+| Long-term goal — G15 Learning: a point in a learned knot pattern, with G18 Comparing growth laws | Obstruction learned | Under these laws a made part hears only from its own sibling branches, once, as one number. |
+
+**Next step:** Research directions — selected: #1
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+| --- | --- | --- | --- | --- | --- |
+| 1 | A law without names under which parts of different descent come to meet | 3/3 — the one way left to "which" | 2/3 — engine, four runs and scan exist; the rule is named, not built | Add a take within one holder step to ticket B's engine and scan the ring starts → a first part whose course differs with which of two unlike second parts is barred, or none on the ring and small census starts | Selected · awaiting go-ahead |
+| 2 | The third property on the case in hand: does a part whose course changed make a part of its own that it otherwise would not? | 2/3 — completes the owner's three properties on one case | 3/3 — the recount already shows 17 against 14 knots in round 7 | Read the parts made from the first part only, in the four runs, to round 9 → a part form in one run and not another, or the same forms | Alternative · deferred |
+| 3 | Build the planted case that needs two values | 1/3 — checks the reading, says nothing about the growth | 3/3 — a rule that looks at parts, as in the control | Hand two values at two births by a rule that looks at parts → the reading returns two, or the reading is wrong | Alternative · deferred |
+
+Direction 1 moves the fold of emergence (G15): it is the first setting in which "which" could show, and the uncertainty is whether any rule without names brings parts of different descent within reach, since ticket B's two takes by parent steps gave no meeting at all. It adds a rule by hand and deserves a registered study, so it waits for your word. Direction 2 is cheap and finishes the picture on the one case we have, but cannot turn a count into more. Direction 3 only completes the stop as written.
+
+**STOP** for this line under the listed laws. Settled, for what was read: one number at one birth, from sibling branches only. Open: whether a law without names can make strangers meet. What would reopen it: such a law, or a start on which parts of different descent meet under the present rules.
+
+**Corrections:** none.
+**Goals:** no checkpoint row (no study closed); B335 carries a note with the probe and what the sub-goal now needs.
+**Assumptions:** none added or changed. A244 (a law is not a reader) is borne out again.
+**Scaffolds:** none added. Relied on: ticket B's take of a sole candidate and its owing ration. Swapped: the ration (ten forms), the treatment of short knots (four), the starts (rings and census), the knot law (on the ring starts). What survived: how many and never which, under the owing ration and its plain form. Under the capped forms and the recorded rations the first part does not respond at all.
+**Basket:** direction 1 is recorded on B335; directions 2 and 3 are in this report only.

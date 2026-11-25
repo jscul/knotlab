@@ -4060,8 +4060,10 @@ turns rate x into the x′ of x′² = x(x′ + 1) (B316, under G17).
 - [9.3 Births one at a time: the order that is left](#93-births-one-at-a-time-the-order-that-is-left):
   with the rounds gone, what is left is that a knot comes after its parents. It
   cannot always be recovered from what is built; three values on each knot
-  sufficed wherever the knots that join were made together, and one start needs
-  five.
+  sufficed wherever the knots that join were made together, and fail on 510 of
+  3,348 small starts under a law in which short knots wait. A ration can write
+  the same count into a knot's own places, which moves the supplied record
+  into the law and does not remove it.
 - [9.4 Clocks made by the growth](#94-clocks-made-by-the-growth): patterns in
   which an event recurs, and what has been counted against them. Whatever
   counts their ticks has so far been supplied.
@@ -4071,8 +4073,8 @@ turns rate x into the x′ of x′² = x(x′ + 1) (B316, under G17).
   it changed what is built.
 - [9.6 Is time a fold of emergence?](#96-is-time-a-fold-of-emergence): the
   owner's question. An order, a clock and a made count of returns are kept
-  apart. Only the last takes anything from another pattern, and the record
-  has none yet.
+  apart. Only the last takes anything from another pattern, and the one study
+  that looked for it found none.
 
 **The intuition.** This chapter makes no claim about physical time. The
 program's foundation holds that an order of formation alone is not physical
@@ -4624,14 +4626,33 @@ record is supplied (lesson 9.4). And the patterns in which an event recurs come
 from laws under which parts that come apart never meet again, while the first
 two laws tried that keep would-be parts joined undo the ring. Whether one law
 can hold both a pattern that returns and a second pattern that meets it at each
-return has not yet been tested.
+return was then tested, in the study below.
 
 **Where it is taken up.** Sub-goal B329, under G5 with G15 and G18, files the
-question, and a study now being designed takes it up
-(TIME-AS-FOLD-20261125-001). As filed, its first step is a census of which
-patterns still return under the law of least cost that lets parts meet, with
-both of its rations. It has no result. Lesson 10.4 sets it beside the other
-study in design, a made copier.
+question, and one study took it up (TIME-AS-FOLD-20261125-001; the record's
+identifier, its "fold" short for the owner's phrase). It fixed its laws first,
+the two of least cost that let parts meet and a registered family of others,
+and then asked of every made clock and every second part wholly apart from it
+whether the second part counts the clock's ticks. Lesson 10.4 sets it beside
+the study of a made copier.
+
+**No made count of returns was found (computed, referee pending).** A count
+was asked for in a form a program can decide: the second part makes the same
+number of knots of its own in each of four periods, and makes no more once the
+clock is barred. In 88,299 tests, under every law run, that fails, each test
+decided. Under the two laws of least cost no clock gives parts off at four
+ticks at all; under the first of them this is argued for every start, given
+one supplied rule (a birth's fresh distinctions are counted by its distinct
+inputs). The weaker thing, a second part whose course differs when the clock
+is barred after each of three returns, was found in 78 tests, all under rules
+that take from a recorded ancestor and choose by name; every such case is lost
+under some renumbering of its start, so each is a case under a supplied
+numbering, and in each the second part's own knots grow from period to period,
+so there is no fixed number for each tick. Every period is measured in rounds,
+which are supplied. The study reaches neither side of its stop: no made count,
+and no reason that no law of this kind can hold one. About half of its main
+run was not run, cut at the hour, and is not a negative
+([the study's decision](research/TIME-AS-FOLD-20261125-001/decision.md)).
 
 ## Chapter 10. Folds of emergence
 
@@ -5051,8 +5072,9 @@ need a course that depends on what it meets, and in the 16 pairs of lesson
 **The study of a made count.** TIME-AS-FOLD-20261125-001 (the record's
 identifier; its "fold" is short for the owner's phrase) takes sub-goal B329,
 under goal G5, dynamics, with G15 and goal G18, comparing growth laws: whether
-a pattern the growth makes can count another pattern's returns. It is not
-frozen and has no result.
+a pattern the growth makes can count another pattern's returns. It has run,
+and found none: lesson 9.6, "No made count of returns was found", gives the
+result (computed, referee pending).
 
 ### 10.5 What is open
 
@@ -5094,8 +5116,10 @@ made a pattern of its own from what it met.
   computed, referee pending). The first step as filed: fix the taken
   distinction by something the structure holds, and compare with the supplied
   conventions on the same starts.
-- **B327 and B329.** Taken by the two studies of lesson 10.4: the first frozen
-  and not run, the second not frozen.
+- **B327 and B329.** Taken by the two studies of lesson 10.4. B329's study
+  has run and found no made count of returns (lesson 9.6). What it leaves
+  open: a law under which a second part's own knots keep a fixed number for
+  each tick, and a reading at each return that survives every numbering.
 - **B328, where it bears (goal G5, dynamics).** The rules that take from one
   or two parent steps from a parent read the record of births, which each
   birth writes and the study lists as supplied; the rule that takes from a

@@ -3362,7 +3362,21 @@ them after 66 rounds, so what exists at one round grows as the square of r.
 The study's registered reading had labelled those counts undecided, the part
 being too small after 66 rounds for the range it asks for, and its first
 summary said that nothing at one round grows faster than r; that was corrected
-the same day from the study's own records. Read over every knot ever made, the
+the same day from the study's own records. A probe then read the count from
+every live knot on the 23 starts whose births grow fastest (a probe by the
+thread, not a registered study; its headline stages were grown again with a
+second engine). Nine starts have the six-regular count, under every law read.
+On four starts of four or five knots, under the ordinary count, the live
+knots with the most neighbours have twelve within one step, and the count within
+r steps is 1, 13, 55, 147, 309, 561, 923, 1415, which is
+(2r + 1)(5r² + 5r + 3)/3, the count of the literature's face-centred cubic
+packing: it grows as the cube of r, at one round, on a range that lengthens
+with the rounds (through 7 steps after 30 rounds). Under a cap of three those
+parts break into pieces whose count is 2r + 1. The other ten starts hold one
+part whose count is an exact quadratic. No argument for any of this is
+written yet, and the ranges are finite
+([the probe](research/KNOTS-WITHIN-REACH-20261125-001/checks/roster_probe/README.md)).
+Read over every knot ever made, the
 count grows as the square of r from every knot examined in 54 runs at the
 longer of the two lengths grown; one of those two powers is the rounds
 themselves, as a bare ring shows exactly. Under the test as it was registered,

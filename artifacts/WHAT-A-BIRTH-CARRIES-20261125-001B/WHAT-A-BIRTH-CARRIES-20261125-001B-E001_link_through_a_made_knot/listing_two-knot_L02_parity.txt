@@ -1,0 +1,144 @@
+=== two-knot, FLOOR1/CANCEL-WAIT/RELEASE/MET-SOLE/parity (L02), rounds 1..7; stop None
+ round 1: groups []; short []; owing {}; retired []; waiting []
+   knot 2 offshoot parents [0] inputs [1] (taken []) D=1 p=1 f=2
+   knot 3 offshoot parents [0] inputs [2] (taken []) D=1 p=1 f=2
+   knot 4 offshoot parents [1] inputs [3] (taken []) D=1 p=1 f=2
+   knot 5 offshoot parents [1] inputs [4] (taken []) D=1 p=1 f=2
+   candidates: []
+ round 2: groups [[2, 3], [4, 5]]; short []; owing {2: 1, 3: 1, 4: 1, 5: 1}; retired []; waiting []
+   knot 6 join parents [2, 3] inputs [5, 7, 0] (taken [0]) D=3 p=3 f=1
+   knot 7 join parents [4, 5] inputs [9, 11, 0] (taken [0]) D=3 p=3 f=1
+   knot 8 offshoot parents [2] inputs [6] (taken []) D=1 p=1 f=2
+   knot 9 offshoot parents [3] inputs [8] (taken []) D=1 p=1 f=2
+   knot 10 offshoot parents [4] inputs [10] (taken []) D=1 p=1 f=2
+   knot 11 offshoot parents [5] inputs [12] (taken []) D=1 p=1 f=2
+   candidates: [(6, [0]), (7, [0]), (8, [0, 2]), (9, [0, 1]), (10, [0, 4]), (11, [0, 3])]
+ round 3: groups [[6, 7], [6, 8], [6, 9], [7, 10], [7, 11]]; short [6, 7]; owing {6: 3, 7: 3, 8: 1, 9: 1, 10: 1, 11: 1}; retired []; waiting [6, 7]
+   knot 12 offshoot parents [8] inputs [15] (taken []) D=1 p=1 f=2
+   knot 13 offshoot parents [8] inputs [16] (taken []) D=1 p=1 f=2
+   knot 14 offshoot parents [9] inputs [17] (taken []) D=1 p=1 f=2
+   knot 15 offshoot parents [9] inputs [18] (taken []) D=1 p=1 f=2
+   knot 16 offshoot parents [10] inputs [19] (taken []) D=1 p=1 f=2
+   knot 17 offshoot parents [10] inputs [20] (taken []) D=1 p=1 f=2
+   knot 18 offshoot parents [11] inputs [21] (taken []) D=1 p=1 f=2
+   knot 19 offshoot parents [11] inputs [22] (taken []) D=1 p=1 f=2
+   candidates: [(12, [1, 5]), (13, [1, 5]), (14, [2, 7]), (15, [2, 7]), (16, [3, 9]), (17, [3, 9]), (18, [4, 11]), (19, [4, 11])]
+ round 4: groups [[6, 7], [12, 13], [14, 15], [16, 17], [18, 19]]; short []; owing {6: 1, 7: 1, 12: 1, 13: 1, 14: 1, 15: 1, 16: 1, 17: 1, 18: 1, 19: 1}; retired []; waiting []
+   knot 20 join parents [6, 7] inputs [13, 14] (taken []) D=0 p=2 f=1
+   knot 21 join parents [12, 13] inputs [23, 25, 6] (taken [6]) D=2 p=3 f=1
+   knot 22 join parents [14, 15] inputs [27, 29, 8] (taken [8]) D=2 p=3 f=1
+   knot 23 join parents [16, 17] inputs [31, 33, 10] (taken [10]) D=2 p=3 f=1
+   knot 24 join parents [18, 19] inputs [35, 37, 12] (taken [12]) D=2 p=3 f=1
+   knot 25 offshoot parents [12] inputs [24] (taken []) D=1 p=1 f=2
+   knot 26 offshoot parents [13] inputs [26] (taken []) D=1 p=1 f=2
+   knot 27 offshoot parents [14] inputs [28] (taken []) D=1 p=1 f=2
+   knot 28 offshoot parents [15] inputs [30] (taken []) D=1 p=1 f=2
+   knot 29 offshoot parents [16] inputs [32] (taken []) D=1 p=1 f=2
+   knot 30 offshoot parents [17] inputs [34] (taken []) D=1 p=1 f=2
+   knot 31 offshoot parents [18] inputs [36] (taken []) D=1 p=1 f=2
+   knot 32 offshoot parents [19] inputs [38] (taken []) D=1 p=1 f=2
+   candidates: [(20, [1, 2, 3, 4]), (21, [6]), (22, [8]), (23, [10]), (24, [12]), (25, [6, 16]), (26, [6, 15]), (27, [8, 18]), (28, [8, 17]), (29, [10, 20]), (30, [10, 19]), (31, [12, 22]), (32, [12, 21])]
+ round 5: groups [[21, 25], [21, 26], [22, 27], [22, 28], [23, 29], [23, 30], [24, 31], [24, 32]]; short [21, 22, 23, 24]; owing {21: 2, 22: 2, 23: 2, 24: 2, 25: 1, 26: 1, 27: 1, 28: 1, 29: 1, 30: 1, 31: 1, 32: 1}; retired []; waiting [21, 22, 23, 24]
+   knot 33 offshoot parents [20] inputs [39] (taken []) D=0 p=1 f=2
+   knot 34 offshoot parents [25] inputs [44] (taken []) D=1 p=1 f=2
+   knot 35 offshoot parents [25] inputs [45] (taken []) D=1 p=1 f=2
+   knot 36 offshoot parents [26] inputs [46] (taken []) D=1 p=1 f=2
+   knot 37 offshoot parents [26] inputs [47] (taken []) D=1 p=1 f=2
+   knot 38 offshoot parents [27] inputs [48] (taken []) D=1 p=1 f=2
+   knot 39 offshoot parents [27] inputs [49] (taken []) D=1 p=1 f=2
+   knot 40 offshoot parents [28] inputs [50] (taken []) D=1 p=1 f=2
+   knot 41 offshoot parents [28] inputs [51] (taken []) D=1 p=1 f=2
+   knot 42 offshoot parents [29] inputs [52] (taken []) D=1 p=1 f=2
+   knot 43 offshoot parents [29] inputs [53] (taken []) D=1 p=1 f=2
+   knot 44 offshoot parents [30] inputs [54] (taken []) D=1 p=1 f=2
+   knot 45 offshoot parents [30] inputs [55] (taken []) D=1 p=1 f=2
+   knot 46 offshoot parents [31] inputs [56] (taken []) D=1 p=1 f=2
+   knot 47 offshoot parents [31] inputs [57] (taken []) D=1 p=1 f=2
+   knot 48 offshoot parents [32] inputs [58] (taken []) D=1 p=1 f=2
+   knot 49 offshoot parents [32] inputs [59] (taken []) D=1 p=1 f=2
+   candidates: [(33, [0, 5, 7, 9, 11]), (34, [15, 23]), (35, [15, 23]), (36, [16, 25]), (37, [16, 25]), (38, [17, 27]), (39, [17, 27]), (40, [18, 29]), (41, [18, 29]), (42, [19, 31]), (43, [19, 31]), (44, [20, 33]), (45, [20, 33]), (46, [21, 35]), (47, [21, 35]), (48, [22, 37]), (49, [22, 37])]
+ round 6: groups [[34, 35], [36, 37], [38, 39], [40, 41], [42, 43], [44, 45], [46, 47], [48, 49]]; short []; owing {34: 1, 35: 1, 36: 1, 37: 1, 38: 1, 39: 1, 40: 1, 41: 1, 42: 1, 43: 1, 44: 1, 45: 1, 46: 1, 47: 1, 48: 1, 49: 1}; retired []; waiting []
+   knot 50 join parents [34, 35] inputs [62, 64, 24] (taken [24]) D=2 p=3 f=1
+   knot 51 join parents [36, 37] inputs [66, 68, 26] (taken [26]) D=2 p=3 f=1
+   knot 52 join parents [38, 39] inputs [70, 72, 28] (taken [28]) D=2 p=3 f=1
+   knot 53 join parents [40, 41] inputs [74, 76, 30] (taken [30]) D=2 p=3 f=1
+   knot 54 join parents [42, 43] inputs [78, 80, 32] (taken [32]) D=2 p=3 f=1
+   knot 55 join parents [44, 45] inputs [82, 84, 34] (taken [34]) D=2 p=3 f=1
+   knot 56 join parents [46, 47] inputs [86, 88, 36] (taken [36]) D=2 p=3 f=1
+   knot 57 join parents [48, 49] inputs [90, 92, 38] (taken [38]) D=2 p=3 f=1
+   knot 58 offshoot parents [21] inputs [40] (taken []) D=0 p=1 f=2
+   knot 59 offshoot parents [22] inputs [41] (taken []) D=0 p=1 f=2
+   knot 60 offshoot parents [23] inputs [42] (taken []) D=0 p=1 f=2
+   knot 61 offshoot parents [24] inputs [43] (taken []) D=0 p=1 f=2
+   knot 62 offshoot parents [33] inputs [60] (taken []) D=1 p=1 f=2
+   knot 63 offshoot parents [33] inputs [61] (taken []) D=1 p=1 f=2
+   knot 64 offshoot parents [34] inputs [63] (taken []) D=1 p=1 f=2
+   knot 65 offshoot parents [35] inputs [65] (taken []) D=1 p=1 f=2
+   knot 66 offshoot parents [36] inputs [67] (taken []) D=1 p=1 f=2
+   knot 67 offshoot parents [37] inputs [69] (taken []) D=1 p=1 f=2
+   knot 68 offshoot parents [38] inputs [71] (taken []) D=1 p=1 f=2
+   knot 69 offshoot parents [39] inputs [73] (taken []) D=1 p=1 f=2
+   knot 70 offshoot parents [40] inputs [75] (taken []) D=1 p=1 f=2
+   knot 71 offshoot parents [41] inputs [77] (taken []) D=1 p=1 f=2
+   knot 72 offshoot parents [42] inputs [79] (taken []) D=1 p=1 f=2
+   knot 73 offshoot parents [43] inputs [81] (taken []) D=1 p=1 f=2
+   knot 74 offshoot parents [44] inputs [83] (taken []) D=1 p=1 f=2
+   knot 75 offshoot parents [45] inputs [85] (taken []) D=1 p=1 f=2
+   knot 76 offshoot parents [46] inputs [87] (taken []) D=1 p=1 f=2
+   knot 77 offshoot parents [47] inputs [89] (taken []) D=1 p=1 f=2
+   knot 78 offshoot parents [48] inputs [91] (taken []) D=1 p=1 f=2
+   knot 79 offshoot parents [49] inputs [93] (taken []) D=1 p=1 f=2
+   candidates: [(50, [24]), (51, [26]), (52, [28]), (53, [30]), (54, [32]), (55, [34]), (56, [36]), (57, [38]), (58, [1, 5, 15, 16, 24, 26]), (59, [2, 7, 17, 18, 28, 30]), (60, [3, 9, 19, 20, 32, 34]), (61, [4, 11, 21, 22, 36, 38]), (62, [13, 14]), (63, [13, 14]), (64, [24, 45]), (65, [24, 44]), (66, [26, 47]), (67, [26, 46]), (68, [28, 49]), (69, [28, 48]), (70, [30, 51]), (71, [30, 50]), (72, [32, 53]), (73, [32, 52]), (74, [34, 55]), (75, [34, 54]), (76, [36, 57]), (77, [36, 56]), (78, [38, 59]), (79, [38, 58])]
+ round 7: groups [[50, 64], [50, 65], [51, 66], [51, 67], [52, 68], [52, 69], [53, 70], [53, 71], [54, 72], [54, 73], [55, 74], [55, 75], [56, 76], [56, 77], [57, 78], [57, 79], [62, 63]]; short [50, 51, 52, 53, 54, 55, 56, 57]; owing {50: 2, 51: 2, 52: 2, 53: 2, 54: 2, 55: 2, 56: 2, 57: 2, 62: 1, 63: 1, 64: 1, 65: 1, 66: 1, 67: 1, 68: 1, 69: 1, 70: 1, 71: 1, 72: 1, 73: 1, 74: 1, 75: 1, 76: 1, 77: 1, 78: 1, 79: 1}; retired []; waiting [50, 51, 52, 53, 54, 55, 56, 57]
+   knot 80 join parents [62, 63] inputs [110, 112, 39] (taken [39]) D=2 p=3 f=1
+   knot 81 offshoot parents [58] inputs [102] (taken []) D=1 p=1 f=2
+   knot 82 offshoot parents [58] inputs [103] (taken []) D=1 p=1 f=2
+   knot 83 offshoot parents [59] inputs [104] (taken []) D=1 p=1 f=2
+   knot 84 offshoot parents [59] inputs [105] (taken []) D=1 p=1 f=2
+   knot 85 offshoot parents [60] inputs [106] (taken []) D=1 p=1 f=2
+   knot 86 offshoot parents [60] inputs [107] (taken []) D=1 p=1 f=2
+   knot 87 offshoot parents [61] inputs [108] (taken []) D=1 p=1 f=2
+   knot 88 offshoot parents [61] inputs [109] (taken []) D=1 p=1 f=2
+   knot 89 offshoot parents [62] inputs [111] (taken []) D=1 p=1 f=2
+   knot 90 offshoot parents [63] inputs [113] (taken []) D=1 p=1 f=2
+   knot 91 offshoot parents [64] inputs [114] (taken []) D=1 p=1 f=2
+   knot 92 offshoot parents [64] inputs [115] (taken []) D=1 p=1 f=2
+   knot 93 offshoot parents [65] inputs [116] (taken []) D=1 p=1 f=2
+   knot 94 offshoot parents [65] inputs [117] (taken []) D=1 p=1 f=2
+   knot 95 offshoot parents [66] inputs [118] (taken []) D=1 p=1 f=2
+   knot 96 offshoot parents [66] inputs [119] (taken []) D=1 p=1 f=2
+   knot 97 offshoot parents [67] inputs [120] (taken []) D=1 p=1 f=2
+   knot 98 offshoot parents [67] inputs [121] (taken []) D=1 p=1 f=2
+   knot 99 offshoot parents [68] inputs [122] (taken []) D=1 p=1 f=2
+   knot 100 offshoot parents [68] inputs [123] (taken []) D=1 p=1 f=2
+   knot 101 offshoot parents [69] inputs [124] (taken []) D=1 p=1 f=2
+   knot 102 offshoot parents [69] inputs [125] (taken []) D=1 p=1 f=2
+   knot 103 offshoot parents [70] inputs [126] (taken []) D=1 p=1 f=2
+   knot 104 offshoot parents [70] inputs [127] (taken []) D=1 p=1 f=2
+   knot 105 offshoot parents [71] inputs [128] (taken []) D=1 p=1 f=2
+   knot 106 offshoot parents [71] inputs [129] (taken []) D=1 p=1 f=2
+   knot 107 offshoot parents [72] inputs [130] (taken []) D=1 p=1 f=2
+   knot 108 offshoot parents [72] inputs [131] (taken []) D=1 p=1 f=2
+   knot 109 offshoot parents [73] inputs [132] (taken []) D=1 p=1 f=2
+   knot 110 offshoot parents [73] inputs [133] (taken []) D=1 p=1 f=2
+   knot 111 offshoot parents [74] inputs [134] (taken []) D=1 p=1 f=2
+   knot 112 offshoot parents [74] inputs [135] (taken []) D=1 p=1 f=2
+   knot 113 offshoot parents [75] inputs [136] (taken []) D=1 p=1 f=2
+   knot 114 offshoot parents [75] inputs [137] (taken []) D=1 p=1 f=2
+   knot 115 offshoot parents [76] inputs [138] (taken []) D=1 p=1 f=2
+   knot 116 offshoot parents [76] inputs [139] (taken []) D=1 p=1 f=2
+   knot 117 offshoot parents [77] inputs [140] (taken []) D=1 p=1 f=2
+   knot 118 offshoot parents [77] inputs [141] (taken []) D=1 p=1 f=2
+   knot 119 offshoot parents [78] inputs [142] (taken []) D=1 p=1 f=2
+   knot 120 offshoot parents [78] inputs [143] (taken []) D=1 p=1 f=2
+   knot 121 offshoot parents [79] inputs [144] (taken []) D=1 p=1 f=2
+   knot 122 offshoot parents [79] inputs [145] (taken []) D=1 p=1 f=2
+   candidates: [(80, [39]), (81, [6, 23, 25]), (82, [6, 23, 25]), (83, [8, 27, 29]), (84, [8, 27, 29]), (85, [10, 31, 33]), (86, [10, 31, 33]), (87, [12, 35, 37]), (88, [12, 35, 37]), (89, [39, 61]), (90, [39, 60]), (91, [44, 62]), (92, [44, 62]), (93, [45, 64]), (94, [45, 64]), (95, [46, 66]), (96, [46, 66]), (97, [47, 68]), (98, [47, 68]), (99, [48, 70]), (100, [48, 70]), (101, [49, 72]), (102, [49, 72]), (103, [50, 74]), (104, [50, 74]), (105, [51, 76]), (106, [51, 76]), (107, [52, 78]), (108, [52, 78]), (109, [53, 80]), (110, [53, 80]), (111, [54, 82]), (112, [54, 82]), (113, [55, 84]), (114, [55, 84]), (115, [56, 86]), (116, [56, 86]), (117, [57, 88]), (118, [57, 88]), (119, [58, 90]), (120, [58, 90]), (121, [59, 92]), (122, [59, 92])]
+ s = 1: parts [[2, 3], [4, 5]]; classes [0, 1]
+   parts 0 and 1 (wholly apart: True) meet at round 2 by demand group; linking [(0, 0, 'start knot, no recorded ancestor of both'), (1, 0, 'start knot, no recorded ancestor of both')]; through a start knot
+ s = 2: parts [[6, 7, 8, 9, 10, 11]]; classes [0]
+   no pair of these parts meets by round 7
+ s = 3: parts [[6, 7], [12, 13], [14, 15], [16, 17], [18, 19]]; classes [0, 1, 2, 3, 4]
+   no pair of these parts meets by round 7
+ s = 4: parts [[20], [21, 25, 26], [22, 27, 28], [23, 29, 30], [24, 31, 32]]; classes [0, 1, 2, 3, 4]
+   no pair of these parts meets by round 7

@@ -3,6 +3,10 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 25 November 2026 · How many histories tried every choice
+
+**Narrowing.** The study of parts that meet again reported "1.94 million histories with every choice tried" for its check that two rules never rejoin parts that share nothing. Every choice was tried in 268 of its 285 enumerations, 239,866 histories; in the other 17 the frozen text's cap applied and 100,000 histories each were taken at random under a fixed seed. Nothing against the argument was found in either kind, and the argument does not rest on the enumeration. The study's results carry a dated note. [Parts that meet again](research/PARTS-MEET-AGAIN-20261124-001A/results.md)
+
 ## 25 November 2026 · How far a knot's rule reads on cycles, and what "by count" uses
 
 **Wording corrections.** Intuitions lesson 8.1 said that on cycles through dead knots it is enough to read four steps out "whatever the size of the cycle". The study ran cycles of 4, 6, 8 and 12 live knots joined through dead ones, and the lesson now names them. The study of parts that meet again said that its "by count" way of choosing which shared distinction a birth takes "uses the structure only". The count is in the structure, but it is used as a position among the candidates sorted by name, so all four ways of choosing use the supplied names. No verdict changes: reversing the start's names was a registered swap, run on every case. The study's results carry a dated note. [Reading a round locally](research/LOCAL-ROUND-20261123-001A/results.md) · [Parts that meet again](research/PARTS-MEET-AGAIN-20261124-001A/results.md)

@@ -184,3 +184,15 @@ four ways of choosing use the supplied names, and none uses the structure only. 
 start's names was a registered swap and was run on every case, the "by count" cases among them, and "None is made by the
 growth" already covered all four. The frozen definitions keep their text. Found independently by the advisor reviewing
 the design of the study that follows this one, and by the survey for the Intuitions guide's chapter on time.
+
+## Correction of 25 November 2026: not every history tried every choice
+
+**Narrowing** (logged in the program's corrections log, `docs/CORRECTIONS.md`). The verdict on P1 above says "so far 1.94
+million histories with every choice tried". The frozen text allowed an enumeration of more than 100,000 histories to be
+replaced by 100,000 taken at random under a fixed seed, and that happened in 17 of the 285 enumerations done so far. So
+every choice was tried in 268 enumerations (239,866 histories), and 1,700,000 histories, 88% of the total, were taken at
+random, 100,000 in each of the other 17. Nothing was found against the argument in either kind, and the argument does
+not rest on the enumeration; but for those 17 the runs show what a sample shows, not that no choice does it. The same
+holds for the decision note's "in every choice of distinction tried so far" and for "285 of 360 parts done" wherever
+this record says "trying every choice". Found by the independent fact-check of the Intuitions guide's chapter on folds
+of emergence.

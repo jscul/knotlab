@@ -1089,8 +1089,11 @@ the question it leads to.
   whenever a system of two-place rules allows three states, it allows their
   majority. No knot on three variables does.
 - [3.2 Pairs cannot make a knot; three places can](#32-pairs-cannot-make-a-knot-three-places-can):
-  a system of two-place rules is known from its pairs, and a knot shows
-  nothing in any pair. Three-place rules bind any number of loops.
+  a pair here is two distinctions in one rule, not two loops. The smallest
+  knot has two loops and three places, the loops' two distinctions and their
+  contact, and rules that each name only two of the three cannot make it. A
+  system of two-place rules is known from its pairs, and a knot shows nothing
+  in any pair. Three-place rules bind any number of loops.
 - [3.3 The free complex of a system](#33-the-free-complex-of-a-system):
   collect every set of variables a system leaves free into its free complex.
   The gaps in it are holes.
@@ -1138,6 +1141,17 @@ three variables. The next lesson states the general theorem, and its positive
 counterpart for three-place rules.
 
 ### 3.2 Pairs cannot make a knot; three places can
+
+**Two loops, three places.** A pair here means two distinctions named in one
+rule. It does not mean two loops. The smallest knot does bind two loops, and
+it has three places: the two distinctions the loops bring, A and B, and the
+contact c that binds them (lesson 2.1). In the owner's picture of lesson 1.1
+the two bits are the two loops, and the choice between 00/11 and 01/10 is the
+third place. This lesson is about how such a knot can be written down. Rules
+that each name only two of the three places can never make it, however many
+of them there are; a rule that names all three at once can. So "pairs cannot"
+and "two loops can" say the same thing from two sides: two loops are bound
+only by a rule that holds both of them and their contact together.
 
 **The intuition.** Whatever a two-place rule says, it says about a pair. A
 system of two-place rules that must all hold is therefore known from its

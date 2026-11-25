@@ -3299,6 +3299,26 @@ overlap one another, and the unrolled map no longer says what grows.
   sample allowed
   ([WALL-READ-20261119-001](research/WALL-READ-20261119-001/wall_read.md)).
 
+**Within reach of a knot (computed, referee pending).** The counts above are by
+round. A second count asks what lies near one knot: how many knots are within r
+steps of it, a step going from a knot to a knot that shares a distinction with
+it. Read on what exists after one round, under each of three laws that cap a
+birth at three fresh distinctions, the live knots of a part within r steps of
+one of them number about a multiple of r (1,700 readings; in 169 more the whole
+part is within reach, and 283 are undecided); none grows as the square of r or
+faster. Read over every knot ever made, the count does grow as the square of r
+from every knot examined, in 54 runs at the longer of the two lengths grown.
+One of those two powers is the rounds themselves, as a bare ring shows exactly,
+so the square says no more than the first count does. Under the test as it was
+registered, no run gives the square or more from every knot examined on a range
+that lengthens as the rounds double; under looser thresholds 111 runs do, so
+that answer rests on thresholds the study supplied. Among the newest knots, how
+strongly a loose distinction of one and a loose distinction of another are
+related is graded, but it does not keep the order of how many steps apart the
+knots are, from a structure of seven knots up. The study counts knots and
+names nothing by space
+([the study of knots within reach](research/KNOTS-WITHIN-REACH-20261125-001/decision.md)).
+
 ### 8.3 Reading a blow-up by sampling
 
 **Blow-up is expected.** A growth **blows up** when its count grows faster than

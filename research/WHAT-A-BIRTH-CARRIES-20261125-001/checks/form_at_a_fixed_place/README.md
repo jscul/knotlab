@@ -188,3 +188,13 @@ Direction 1 moves G15 and is ready to freeze; its main uncertainty is whether an
 **Assumptions:** one scaffold entered, A258 (starts built from two seeds joined by one link distinction). The study of parts that meet again said that in no case did a part's course depend on what the other part is; that stands for its own class and is no longer the whole picture.
 **Scaffolds:** added: the built starts (A258). Swapped: the first seed (ten), the family of second seeds (three), the ration (three), the treatment of short knots (three), with and without the take of a sole candidate. What survived: what the first seed's descent makes differs with the form of the second seed. What did not: which forms are told apart, which changes with the first seed and the law.
 **Basket:** directions 1 and 2 are recorded on B335; direction 3 is in this report only.
+
+> **Correction, 25 November 2026, later the same day (narrowing; raised by the advisor's review of the registered
+> study).** "Ends" above counts births descended from the first seed and from none of the second. A birth with a
+> parent of each descent leaves that count. With no taking rule on the mixed family, every line that reads as ended
+> (372 runs, the example of the full ring of three among them) is **taken up**: births with a first-seed ancestor go
+> on, each also of the second seed. Lines with no births at all occur with the take of a sole candidate (370 runs on
+> that family) and on the second family (109 runs with no taking rule). The registered study splits the two:
+> [its definitions](../../../FOLLOWS-THE-FORM-20261125-001/definitions.md), FF 7. Also from that review: a pair first
+> told apart in round 2 can be one round-1 count held in a knot of both descents, so "through made knots alone" says
+> little; about half of those pairs still differ when every round-1 birth with a first-seed ancestor is the same.

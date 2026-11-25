@@ -5279,14 +5279,18 @@ made a pattern of its own from what it met.
   ([the third probe](research/WHAT-A-BIRTH-CARRIES-20261125-001/checks/form_at_a_fixed_place/README.md)).
   There what the first seed's own descent makes does follow the form, under
   every law tried and with no taking rule at all: its births fall into 4 to
-  23 classes, and its line ends, idles at one birth a round or grows
-  according to what it is attached to. Some forms are told apart only in
-  rounds 2 to 7, and where short knots retire that later difference reaches
-  it through made knots alone. It sees the near end of the second seed in
-  detail and, with the take of a sole candidate, its length to five knots;
-  it does not read the whole form. The meeting there is supplied by the
-  start. What is open (a sub-goal under G15): the same between two parts
-  the growth made, meeting through a knot the growth made.
+  23 classes, and its own line is taken up by the second seed's, idles at
+  one birth a round or grows according to what it is attached to. Some
+  forms are told apart only in rounds 2 to 7, and about half of those still
+  differ when every round-1 birth with a first-seed ancestor is the same.
+  It sees the near end of the second seed in detail and, with the take of a
+  sole candidate, its length to five knots; it does not read the whole
+  form. With the two seeds in one start and not linked, nothing differs.
+  The meeting there is supplied by the start. A registered study of this is
+  frozen and running
+  ([its claim](research/FOLLOWS-THE-FORM-20261125-001/claim.md)). What is
+  open (a sub-goal under G15): the same between two parts the growth made,
+  meeting through a knot the growth made.
 - **B326, an index made by the growth (G15).** The owner, by 24 November 2026
   (Pacific time): "This is why we may need 'function-like' logical operations
   where we can reference/sample logic. These are basically meeting patterns

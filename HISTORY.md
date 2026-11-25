@@ -3,6 +3,10 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 25 November 2026 · "Its line ends" was a line taken up
+
+**Narrowing of a probe's report and of the guide, published the same day.** [The third probe of sub-goal B335](research/WHAT-A-BIRTH-CARRIES-20261125-001/checks/form_at_a_fixed_place/README.md) and lesson 10.5 said that a first seed's own line "ends, idles or grows" with the form of the second seed. The probe counted births descended from the first seed and from none of the second, and a birth with a parent of each descent leaves that count. With no taking rule, on the probe's mixed family, every line that read as ended (372 runs) is taken up: births with a first-seed ancestor go on, each also of the second seed. Lines with no births at all occur with the take of a sole candidate and on the probe's second family. The registered study that followed splits the two ([its definitions](research/FOLLOWS-THE-FORM-20261125-001/definitions.md), FF 7). That what the first seed's descent makes differs with the form stands.
+
 ## 25 November 2026 · Which taking rule reaches further
 
 **A correction to a next step named in a probe's report, published the same day.** The report of [the probe of a part that meets two others](research/WHAT-A-BIRTH-CARRIES-20261125-001/checks/two_by_two/README.md) named "a take within one holder step" as the first rule to try for bringing parts of different descent to meet. That rule looks less far than the take of a sole candidate already in use, which draws from the knots a parent meets. The rules that reach further draw from the knots that those knots meet. The direction was run with those, in [a second probe](research/WHAT-A-BIRTH-CARRIES-20261125-001/checks/reach_further/README.md). No result changes.

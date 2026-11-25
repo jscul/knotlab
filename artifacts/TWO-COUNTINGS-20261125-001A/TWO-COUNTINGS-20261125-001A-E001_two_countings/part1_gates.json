@@ -1,0 +1,462 @@
+{
+ "part": 1,
+ "checks": [
+  {
+   "check": "structures.json finished structures = start + the TD 4.1 setting knots",
+   "pass": true
+  },
+  {
+   "check": "allowed states, backtracking = knot-by-knot (numpy) = brute force: eleven (start)",
+   "pass": true,
+   "n": 64,
+   "distinctions": 16
+  },
+  {
+   "check": "allowed states, backtracking = knot-by-knot (numpy) = brute force: eleven + settings 00",
+   "pass": true,
+   "n": 144,
+   "distinctions": 18
+  },
+  {
+   "check": "allowed states, backtracking = knot-by-knot (numpy) = brute force: eleven + settings 01",
+   "pass": true,
+   "n": 144,
+   "distinctions": 18
+  },
+  {
+   "check": "allowed states, backtracking = knot-by-knot (numpy) = brute force: eleven + settings 10",
+   "pass": true,
+   "n": 144,
+   "distinctions": 18
+  },
+  {
+   "check": "allowed states, backtracking = knot-by-knot (numpy) = brute force: eleven + settings 11",
+   "pass": true,
+   "n": 144,
+   "distinctions": 18
+  },
+  {
+   "check": "allowed states, backtracking = knot-by-knot (numpy) = brute force: smallest gain: part",
+   "pass": true,
+   "n": 64,
+   "distinctions": 12
+  },
+  {
+   "check": "allowed states, backtracking = knot-by-knot (numpy) = brute force: smallest gain: part + rule-Q round 1",
+   "pass": true,
+   "n": 160,
+   "distinctions": 14
+  },
+  {
+   "check": "allowed states, backtracking = knot-by-knot (numpy) = brute force: smallest gain finished 00",
+   "pass": true,
+   "n": 576,
+   "distinctions": 16
+  },
+  {
+   "check": "allowed states, backtracking = knot-by-knot (numpy) = brute force: smallest gain finished 01",
+   "pass": true,
+   "n": 480,
+   "distinctions": 16
+  },
+  {
+   "check": "allowed states, backtracking = knot-by-knot (numpy) = brute force: smallest gain finished 10",
+   "pass": true,
+   "n": 432,
+   "distinctions": 16
+  },
+  {
+   "check": "allowed states, backtracking = knot-by-knot (numpy) = brute force: smallest gain finished 11",
+   "pass": true,
+   "n": 360,
+   "distinctions": 16
+  },
+  {
+   "check": "history eleven x2-x3/y2-y3 00: A(S_j), completions and counting from the start = brute force",
+   "pass": true,
+   "stages": 2,
+   "final": 144
+  },
+  {
+   "check": "history eleven x2-x3/y2-y3 01: A(S_j), completions and counting from the start = brute force",
+   "pass": true,
+   "stages": 2,
+   "final": 144
+  },
+  {
+   "check": "history eleven x2-x3/y2-y3 10: A(S_j), completions and counting from the start = brute force",
+   "pass": true,
+   "stages": 2,
+   "final": 144
+  },
+  {
+   "check": "history eleven x2-x3/y2-y3 11: A(S_j), completions and counting from the start = brute force",
+   "pass": true,
+   "stages": 2,
+   "final": 144
+  },
+  {
+   "check": "history smallest gain 00: A(S_j), completions and counting from the start = brute force",
+   "pass": true,
+   "stages": 3,
+   "final": 576
+  },
+  {
+   "check": "history smallest gain 01: A(S_j), completions and counting from the start = brute force",
+   "pass": true,
+   "stages": 3,
+   "final": 480
+  },
+  {
+   "check": "history smallest gain 10: A(S_j), completions and counting from the start = brute force",
+   "pass": true,
+   "stages": 3,
+   "final": 432
+  },
+  {
+   "check": "history smallest gain 11: A(S_j), completions and counting from the start = brute force",
+   "pass": true,
+   "stages": 3,
+   "final": 360
+  },
+  {
+   "check": "score: merged = unmerged = every f and g enumerated, on 60 drawn small tables",
+   "pass": true
+  },
+  {
+   "check": "score merged = unmerged: eleven x2-x3/y2-y3 from the start",
+   "pass": true,
+   "merged": "2",
+   "unmerged": "2"
+  },
+  {
+   "check": "parity score = every choice enumerated directly: eleven x2-x3/y2-y3 from the start",
+   "pass": true,
+   "fast": "2",
+   "direct": "2"
+  },
+  {
+   "check": "score merged = unmerged: eleven x2-x3/y2-y3 from the finish",
+   "pass": true,
+   "merged": "20/9",
+   "unmerged": "20/9"
+  },
+  {
+   "check": "parity score = every choice enumerated directly: eleven x2-x3/y2-y3 from the finish",
+   "pass": true,
+   "fast": "20/9",
+   "direct": "20/9"
+  },
+  {
+   "check": "score merged = unmerged: smallest gain from the start",
+   "pass": true,
+   "merged": "2",
+   "unmerged": "2"
+  },
+  {
+   "check": "parity score = every choice enumerated directly: smallest gain from the start",
+   "pass": true,
+   "fast": "2",
+   "direct": "2"
+  },
+  {
+   "check": "score merged = unmerged: smallest gain from the finish",
+   "pass": true,
+   "merged": "61/30",
+   "unmerged": "61/30"
+  },
+  {
+   "check": "parity score = every choice enumerated directly: smallest gain from the finish",
+   "pass": true,
+   "fast": "61/30",
+   "direct": "61/30"
+  },
+  {
+   "check": "Known 1: 11-knot (x2,x3)/(y2,y3) from the finish 20/9 hidden",
+   "pass": true,
+   "score": "20/9",
+   "parity": "20/9"
+  },
+  {
+   "check": "Known 1: 11-knot (x2,x3)/(y2,y3) from the start 2 hidden",
+   "pass": true,
+   "score": "2",
+   "parity": "2"
+  },
+  {
+   "check": "Known 1: the other eight pairs 19/9 or 37/18 from the finish, hidden; 2 from the start, hidden",
+   "pass": true,
+   "finish": [
+    "19/9",
+    "37/18"
+   ],
+   "start": [
+    "2"
+   ]
+  },
+  {
+   "check": "Known 1: (s1,s2) moves by 1/3 from the finish under the second observer, 0 from the start",
+   "pass": true,
+   "finish": "1/3",
+   "start": "0"
+  },
+  {
+   "check": "Known 2: smallest gain 2 hidden from the part and from after the rule-Q round; 61/30 hidden from the finish",
+   "pass": true,
+   "part": "2",
+   "after_round": "2",
+   "finish": "61/30",
+   "finish_parity": "61/30"
+  },
+  {
+   "check": "Known 3: seven from the finish 19/9 hidden, from the start 2 hidden",
+   "pass": true,
+   "finish": "19/9",
+   "finish_parity": "19/9",
+   "start": "2"
+  },
+  {
+   "check": "Known 3: eight from the finish 20/9 hidden, from the start 2 hidden",
+   "pass": true,
+   "finish": "20/9",
+   "finish_parity": "20/9",
+   "start": "2"
+  },
+  {
+   "check": "Known 3: nine from the finish 20/9 hidden, from the start 2 hidden",
+   "pass": true,
+   "finish": "20/9",
+   "finish_parity": "20/9",
+   "start": "2"
+  }
+ ],
+ "known": {
+  "eleven x2-x3/y2-y3": {
+   "finish": [
+    "20/9",
+    true,
+    "20/9"
+   ],
+   "start": [
+    "2",
+    true,
+    "2"
+   ],
+   "allowed": {
+    "(0, 0)": 144,
+    "(0, 1)": 144,
+    "(1, 0)": 144,
+    "(1, 1)": 144
+   }
+  },
+  "eleven (s1,s2)": {
+   "(s1,s2) from the start": {
+    "change under the second observer's setting": "0",
+    "change under the first observer's setting": "0"
+   },
+   "(s1,s2) from the finish": {
+    "change under the second observer's setting": "1/3",
+    "change under the first observer's setting": "0"
+   }
+  },
+  "eleven x2-x3/y2-t": {
+   "finish": [
+    "19/9",
+    true,
+    "19/9"
+   ],
+   "start": [
+    "2",
+    true,
+    "2"
+   ],
+   "allowed": {
+    "(0, 0)": 144,
+    "(0, 1)": 192,
+    "(1, 0)": 144,
+    "(1, 1)": 192
+   }
+  },
+  "eleven x2-x3/y3-t": {
+   "finish": [
+    "19/9",
+    true,
+    "19/9"
+   ],
+   "start": [
+    "2",
+    true,
+    "2"
+   ],
+   "allowed": {
+    "(0, 0)": 144,
+    "(0, 1)": 192,
+    "(1, 0)": 144,
+    "(1, 1)": 192
+   }
+  },
+  "eleven x2-c/y2-y3": {
+   "finish": [
+    "19/9",
+    true,
+    "19/9"
+   ],
+   "start": [
+    "2",
+    true,
+    "2"
+   ],
+   "allowed": {
+    "(0, 0)": 144,
+    "(0, 1)": 144,
+    "(1, 0)": 192,
+    "(1, 1)": 192
+   }
+  },
+  "eleven x2-c/y2-t": {
+   "finish": [
+    "37/18",
+    true,
+    "37/18"
+   ],
+   "start": [
+    "2",
+    true,
+    "2"
+   ],
+   "allowed": {
+    "(0, 0)": 144,
+    "(0, 1)": 192,
+    "(1, 0)": 192,
+    "(1, 1)": 256
+   }
+  },
+  "eleven x2-c/y3-t": {
+   "finish": [
+    "37/18",
+    true,
+    "37/18"
+   ],
+   "start": [
+    "2",
+    true,
+    "2"
+   ],
+   "allowed": {
+    "(0, 0)": 144,
+    "(0, 1)": 192,
+    "(1, 0)": 192,
+    "(1, 1)": 256
+   }
+  },
+  "eleven x3-c/y2-y3": {
+   "finish": [
+    "19/9",
+    true,
+    "19/9"
+   ],
+   "start": [
+    "2",
+    true,
+    "2"
+   ],
+   "allowed": {
+    "(0, 0)": 144,
+    "(0, 1)": 144,
+    "(1, 0)": 192,
+    "(1, 1)": 192
+   }
+  },
+  "eleven x3-c/y2-t": {
+   "finish": [
+    "37/18",
+    true,
+    "37/18"
+   ],
+   "start": [
+    "2",
+    true,
+    "2"
+   ],
+   "allowed": {
+    "(0, 0)": 144,
+    "(0, 1)": 192,
+    "(1, 0)": 192,
+    "(1, 1)": 256
+   }
+  },
+  "eleven x3-c/y3-t": {
+   "finish": [
+    "37/18",
+    true,
+    "37/18"
+   ],
+   "start": [
+    "2",
+    true,
+    "2"
+   ],
+   "allowed": {
+    "(0, 0)": 144,
+    "(0, 1)": 192,
+    "(1, 0)": 192,
+    "(1, 1)": 256
+   }
+  },
+  "smallest gain": {
+   "from the start": [
+    "2",
+    true,
+    "2"
+   ],
+   "from stage 1": [
+    "2",
+    true,
+    "2"
+   ],
+   "from the finish": [
+    "61/30",
+    true,
+    "61/30"
+   ]
+  },
+  "seven": {
+   "from the start": [
+    "2",
+    true,
+    "2"
+   ],
+   "from the finish": [
+    "19/9",
+    true,
+    "19/9"
+   ]
+  },
+  "eight": {
+   "from the start": [
+    "2",
+    true,
+    "2"
+   ],
+   "from the finish": [
+    "20/9",
+    true,
+    "20/9"
+   ]
+  },
+  "nine": {
+   "from the start": [
+    "2",
+    true,
+    "2"
+   ],
+   "from the finish": [
+    "20/9",
+    true,
+    "20/9"
+   ]
+  }
+ },
+ "failed": [],
+ "wall_s": 18.5
+}

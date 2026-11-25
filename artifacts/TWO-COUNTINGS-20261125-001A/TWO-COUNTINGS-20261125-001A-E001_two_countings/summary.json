@@ -1,0 +1,7085 @@
+{
+ "study": "TWO-COUNTINGS-20261125-001A-E001",
+ "referee": "pending",
+ "parts": {},
+ "predictions": [
+  {
+   "id": "P1",
+   "prediction": "Counting from the finish reproduces every recorded number of parts 2 and 3",
+   "verdict": "held",
+   "numbers": "Known 1-3 (part 1 gates): yes; 894 records of part 2 (ONE-PARENT-REREAD 680, rule R 214): the recorded finish value: yes; the 10-knot 55/27 per history (and 109/54 for the pairs with c): yes; the 18-knot 20/9 hidden, 1,152 allowed states per finished structure, 512 start states: yes; the 8/3 case: 8/3, not hidden, largest record change 1/6: yes; the 18-knot keyed setting: 2/9 between two keyings, 1/9 against a fixed setting (finish, pooled): yes; Known 4: 128 of 512 sign assignments at 20/9 hidden (finish): yes; Known 5: the 11-knot keyed setting, up to 2/9 from the finish (pooled), 0 from the start: yes"
+  },
+  {
+   "id": "P2",
+   "prediction": "Every structure of parts 2 and 3 that meets the hypotheses scores at most 2 for both outcome classes (exactly 2 over all two-valued functions) with both records hidden; the unmeasured structures meet them",
+   "verdict": "held",
+   "numbers": "1816 lemma verdicts in part 2 (every counting from a common stage before the settings, every structure, variant and record): {'hypotheses met and at most 2 (exactly 2 over all two-valued functions), both records hidden': 1816}; part 3: all 512 at exactly 2, hidden, from the start; pooled 10-knot rows from the start at 2, hidden: True"
+  },
+  {
+   "id": "P3",
+   "prediction": "Each example E1-E7 gives a score above 2 or a record changed by the other\u2019s setting",
+   "verdict": "held",
+   "numbers": "E1 20/9 (changes 0, 0); E2 104/45 (changes 0, 0); E3 7/3 (changes 0, 1/6); E4 17/6 (changes 1/3, 1/3); E5 11/4 (changes 1/4, 0); E6 5/2 (changes 1/4, 0); E7 5/2 (changes 1/4, 0)"
+  },
+  {
+   "id": "P4",
+   "prediction": "Every order in C5\u2019s class scores 2 and is hidden",
+   "verdict": "held",
+   "numbers": "eleven_registered_400: 104 in the class, 104 at 2 hidden; eleven_new_400: 92 in the class, 92 at 2 hidden; smallest_gain_400: 133 in the class, 133 at 2 hidden"
+  },
+  {
+   "id": "P6a",
+   "prediction": "Under Q-OLDEST or Q-NEWEST some renumbered start grows a different finished structure",
+   "verdict": "held",
+   "numbers": "smallest gain: part: Q-OLDEST 34 of 48 different, Q-NEWEST 34 of 48 different; census 30: Q-OLDEST 53 of 60 different, Q-NEWEST 53 of 60 different; census 59: Q-OLDEST 0 of 52 different, Q-NEWEST 0 of 52 different; census 82: Q-OLDEST 57 of 64 different, Q-NEWEST 57 of 64 different; census 84: Q-OLDEST 55 of 64 different, Q-NEWEST 55 of 64 different; census 105: Q-OLDEST 46 of 56 different, Q-NEWEST 46 of 56 different; census 112: Q-OLDEST 51 of 60 different, Q-NEWEST 51 of 60 different; census 114: Q-OLDEST 45 of 52 different, Q-NEWEST 45 of 52 different; census 120: Q-OLDEST 58 of 64 different, Q-NEWEST 58 of 64 different; census 125: Q-OLDEST 0 of 52 different, Q-NEWEST 0 of 52 different; census 146: Q-OLDEST 0 of 60 different, Q-NEWEST 0 of 60 different"
+  },
+  {
+   "id": "P6b",
+   "prediction": "Where the finished structures are the same, counting from the start gives the same weighting carried back; where they differ, \"no comparison\"",
+   "verdict": "held",
+   "numbers": "0 weightings differ on the same structure; 356 same by enumeration, 110 same by the renaming of the whole history (too large to enumerate), 0 not decided"
+  },
+  {
+   "id": "P7",
+   "prediction": "The 10-knot 55/27 becomes 2 counted from the start, per history and pooled",
+   "verdict": "held",
+   "numbers": "{\"ten A x2-x3/y3-t\": {\"per history, from the start\": [\"2\", \"2\"], \"per history, hidden\": [true, true], \"pooled, from the start\": \"2\", \"per history, from the finish\": [\"55/27\", \"55/27\"], \"pooled from the finish (TD 3.5)\": \"2\", \"pooled from the finish (nu uniform)\": \"2\"}, \"ten B x2-x3/y2-t\": {\"per history, from the start\": [\"2\", \"2\"], \"per history, hidden\": [true, true], \"pooled, from the start\": \"2\", \"per history, from the finish\": [\"55/27\", \"55/27\"], \"pooled from the finish (TD 3.5)\": \"2\", \"pooled from the finish (nu uniform)\": \"2\"}}"
+  },
+  {
+   "id": "P8",
+   "prediction": "The two four-place rules of the 11-knot structure fail K2 in all 512 sign assignments, and the 128 at 20/9 are exactly those whose ties are inequalities",
+   "verdict": "held",
+   "numbers": "K2 fails for both in all 512 (start and the four finished structures each): True; 128 at 20/9 = the 128 with both ties inequalities: True; no other rule fails in any of the 512: True; finish values {\"('2', True)\": 256, \"('20/9', True)\": 128, \"('194/91', False)\": 64, \"('23/10', False)\": 64}"
+  },
+  {
+   "id": "P9",
+   "prediction": "The counting-from-the-start pair tables decide the next birth count on all 194 not-all-equal types",
+   "verdict": "held",
+   "numbers": "194 types (183 connected, 11 disconnected); 194 distinct tables under renaming; groups sharing a table: named 0, under renaming 0; gates (finish pair counts and totals equal the archive; start tables equal enumeration up to width 20): True"
+  }
+ ],
+ "table": [
+  {
+   "id": "T01",
+   "statement": "hidden score, options (x2,x3) against (y2,y3), 11-knot structure",
+   "from the finish": "20/9 hidden",
+   "from the start": "2 hidden",
+   "verdict here": "changed by 2/9",
+   "verdict in table.json": "changed by 2/9",
+   "knots in the whole": "fails: even(x1,x2,x3,c) (K2); even(y1,y2,y3,t) (K2) [canonical: agrees]",
+   "source": "recomputed here",
+   "record": "research/SETTING-AS-REREAD-20261123-001A/result.md:26-28"
+  },
+  {
+   "id": "T02",
+   "statement": "the other eight option pairs",
+   "from the finish": "19/9 or 37/18 hidden",
+   "from the start": "2 hidden (all eight)",
+   "verdict here": "changed by 1/9 or 1/18",
+   "verdict in table.json": "changed by 1/9 or 1/18",
+   "knots in the whole": "fails: even(x1,x2,x3,c) (K2); even(y1,y2,y3,t) (K2); nae(x1,c,za) (K2); nae(y1,t,zb) (K2) [canonical: agrees]",
+   "source": "recomputed here",
+   "record": "research/SETTING-AS-REREAD-20261123-001A/result.md:29-31"
+  },
+  {
+   "id": "T03",
+   "statement": "the second observer's choice moves (s1,s2)",
+   "from the finish": "TV 1/3",
+   "from the start": "0",
+   "verdict here": "changed by 1/3",
+   "verdict in table.json": "changed by 1/3",
+   "knots in the whole": "fails: even(x1,x2,x3,c) (K2); even(y1,y2,y3,t) (K2) [canonical: agrees]",
+   "source": "recomputed here",
+   "record": "research/SETTING-AS-REREAD-20261123-001A/result.md:32-34"
+  },
+  {
+   "id": "T04",
+   "statement": "128 of 512 sign assignments give the hidden 20/9",
+   "from the finish": "128 of 512 at 20/9 (hidden)",
+   "from the start": "0 of 512 above 2; 512 at 2, hidden",
+   "verdict here": "changed: 128 to 0",
+   "verdict in table.json": "changed: 128 to 0",
+   "knots in the whole": "fails (the two four-place rules, K2, in all 512; projection)",
+   "source": "recomputed here",
+   "record": "research/SETTING-AS-REREAD-20261123-001A/result.md:40-41"
+  },
+  {
+   "id": "T05",
+   "statement": "two 10-knot structures with three one-parent births",
+   "from the finish": "55/27 hidden per history; pooled 2 (TD 3.5) and 2 (nu uniform)",
+   "from the start": "2 hidden, per history and pooled",
+   "verdict here": "changed by 1/27 (per history)",
+   "verdict in table.json": "to compute in the ticket (part 2)",
+   "knots in the whole": "fails: even(x1,x2,x3,c) (K2) [canonical: agrees]; the starts: fails: even(x1,x2,x3,c) (K2) [canonical: agrees]",
+   "source": "recomputed here",
+   "record": "research/SETTING-AS-REREAD-20261123-001A/result.md:37-39"
+  },
+  {
+   "id": "T06",
+   "statement": "smallest gain: part, one rule-Q round, setting births",
+   "from the finish": "61/30 hidden",
+   "from the start": "2 hidden (from the part), 2 hidden (after round 1)",
+   "verdict here": "changed by 1/30",
+   "verdict in table.json": "changed by 1/30",
+   "knots in the whole": "fails: nae(x1,x2,za) (K2) [canonical: agrees]",
+   "source": "recomputed here",
+   "record": "research/ONE-PARENT-REREAD-20261123-001A/result.md:41-43"
+  },
+  {
+   "id": "T07",
+   "statement": "the other 7 gaining parts (61/30 or 31/15) and the 27 parts with laws handed out (109/54, 55/27)",
+   "from the finish": "109/54, 61/30, 55/27, 31/15 hidden (680 records reproduced)",
+   "from the start": "2 hidden in all 680 (from the part and after the round)",
+   "verdict here": "changed by 1/54, 1/30, 1/27, 1/15",
+   "verdict in table.json": "to compute in the ticket (part 2)",
+   "knots in the whole": "fails: nae(x1,x2,za) (K2) [canonical check not run (cut) | canonical: agrees]",
+   "source": "recomputed here",
+   "record": "research/ONE-PARENT-REREAD-20261123-001A/result.md:22-27"
+  },
+  {
+   "id": "T08",
+   "statement": "negative: the remaining 5,710 parts never pass 1.692 (parity outcomes)",
+   "from the finish": "\u2264 1.692",
+   "from the start": "\u2264 2 by the lemma (parity outcomes: at most 2)",
+   "verdict here": "bound by argument only",
+   "verdict in table.json": "bound by argument only",
+   "knots in the whole": "not tested",
+   "source": "from table.json (not recomputed here)",
+   "record": "research/ONE-PARENT-REREAD-20261123-001A/result.md:34-35"
+  },
+  {
+   "id": "T09",
+   "statement": "smallest structure: 7 knots",
+   "from the finish": "19/9 hidden",
+   "from the start": "2 hidden",
+   "verdict here": "changed by 1/9",
+   "verdict in table.json": "changed by 1/9",
+   "knots in the whole": "all [canonical: agrees]",
+   "source": "recomputed here",
+   "record": "research/THIRD-HOLDER-20261123-001B/result.md:19-21"
+  },
+  {
+   "id": "T10",
+   "statement": "8 knots",
+   "from the finish": "20/9 hidden",
+   "from the start": "2 hidden",
+   "verdict here": "changed by 2/9",
+   "verdict in table.json": "changed by 2/9",
+   "knots in the whole": "fails: even(y1,y2,y3,s1) (K2) [canonical: agrees | not run (more than 20 distinctions; projection only, as registered)]",
+   "source": "recomputed here",
+   "record": "research/THIRD-HOLDER-20261123-001B/results_draft.md:78-79"
+  },
+  {
+   "id": "T11",
+   "statement": "the pencil 9-knot structure",
+   "from the finish": "20/9 hidden",
+   "from the start": "2 hidden",
+   "verdict here": "changed by 2/9",
+   "verdict in table.json": "changed by 2/9",
+   "knots in the whole": "all [canonical: agrees]",
+   "source": "recomputed here",
+   "record": "research/THIRD-HOLDER-20261123-001B/results_draft.md:65"
+  },
+  {
+   "id": "T12",
+   "statement": "negative and search winner: none with 6 or fewer knots; 7 is the minimum (census under counting from the finish)",
+   "from the finish": "minimum 7 knots",
+   "from the start": "no structure of any size has a hidden excess under the lemma's hypotheses: the search has no winner",
+   "verdict here": "changed: the question is empty",
+   "verdict in table.json": "changed: the question is empty",
+   "knots in the whole": "all",
+   "source": "from table.json (not recomputed here)",
+   "record": "research/THIRD-HOLDER-20261123-001B/result.md:19-21"
+  },
+  {
+   "id": "T13",
+   "statement": "18-knot structure, one birth per setting",
+   "from the finish": "20/9 hidden",
+   "from the start": "2 hidden (recomputed)",
+   "verdict here": "changed by 2/9",
+   "verdict in table.json": "changed by 2/9",
+   "knots in the whole": "all [not run (more than 20 distinctions; projection only, as registered)]",
+   "source": "recomputed here",
+   "record": "research/THIRD-HOLDER-20261123-001A/result.md:8-10,17-22"
+  },
+  {
+   "id": "T14",
+   "statement": "two and three births per setting",
+   "from the finish": "68/25, 260/81 hidden",
+   "from the start": "2 (record control, results_draft.md:83)",
+   "verdict here": "changed by 18/25, 98/81 (the record's control; recomputed in part 2 for k = 1 only)",
+   "verdict in table.json": "changed by 18/25, 98/81 (the record's control; recomputed in part 2 for k = 1 only)",
+   "knots in the whole": "not tested",
+   "source": "from table.json (not recomputed here)",
+   "record": "research/THIRD-HOLDER-20261123-001A/result.md:23-32"
+  },
+  {
+   "id": "T15",
+   "statement": "a keyed setting changes the other record",
+   "from the finish": "2/9 between keyings (pooled), 18-knot and 11-knot",
+   "from the start": "0 (both structures)",
+   "verdict here": "changed by 2/9",
+   "verdict in table.json": "changed by 2/9",
+   "knots in the whole": "all [not run (more than 20 distinctions; projection only, as registered)]; 11-knot: fails: even(x1,x2,x3,c) (K2); even(y1,y2,y3,t) (K2) [canonical: agrees]",
+   "source": "recomputed here",
+   "record": "research/THIRD-HOLDER-20261123-001A/result.md:33-36"
+  },
+  {
+   "id": "T16",
+   "statement": "the ceiling 4(1+\u03c1\u00b2)/(1+\u03c1)\u00b2",
+   "from the finish": "the formula",
+   "from the start": "2 (\u03c1 = 1)",
+   "verdict here": "consistent",
+   "verdict in table.json": "consistent",
+   "knots in the whole": "not applicable (no settings-line structure)",
+   "source": "from table.json (not recomputed here)",
+   "record": "research/THIRD-HOLDER-20261123-001A/result.md:38-44"
+  },
+  {
+   "id": "T17",
+   "statement": "census of two-holder sides: largest hidden 2; 8/3 unhidden",
+   "from the finish": "the 8/3 case: 8/3, not hidden (change 1/6)",
+   "from the start": "the 8/3 case: 2, hidden",
+   "verdict here": "changed: 8/3 not hidden to 2 hidden (the census rows not recomputed)",
+   "verdict in table.json": "to compute in the ticket (part 2)",
+   "knots in the whole": "fails: even(x2,h1,h2,h3) (K2); even(y2,k1,k2,k3) (K2); nae(x1,x2,za) (K2); nae(y1,y2,zb) (K2) [canonical: agrees]",
+   "source": "recomputed here",
+   "record": "research/REVIEW-LEADS-20261123-001C/result.md:28-29"
+  },
+  {
+   "id": "T18",
+   "statement": "rule R: seven three-holder parts gain (smallest 10 knots)",
+   "from the finish": "6175/3087, 5293/2646, 1135/567, 973/486, 127/63, 11162/5535, 109/54 hidden (214 records reproduced)",
+   "from the start": "2 hidden in all 214 (from the start and after the round)",
+   "verdict here": "changed by 1/3087, 1/2646, 1/567, 1/486, 1/63, 92/5535, 1/54",
+   "verdict in table.json": "to compute in the ticket (part 2)",
+   "knots in the whole": "fails: even(Bh1,Bh2,Bh3,Bh4) (K2); even(y2,s1,Bh1) (K2); odd(y3,s2,Bh1) (K2) [not run (more than 20 distinctions; projection only, as registered)]",
+   "source": "recomputed here",
+   "record": "research/REREAD-BIRTHS-AND-MIXED-LAWS-20261123-001C/result.md:10-12"
+  },
+  {
+   "id": "T19",
+   "statement": "34 round-1 gains (smallest 7 knots: 2 to 55/27)",
+   "from the finish": "55/27",
+   "from the start": "to compute",
+   "verdict here": "not recomputed (not registered in part 2; at most 2 by the lemma where its hypotheses hold)",
+   "verdict in table.json": "not recomputed (not registered in part 2; at most 2 by the lemma where its hypotheses hold)",
+   "knots in the whole": "not tested",
+   "source": "from table.json (not recomputed here)",
+   "record": "research/REREAD-BIRTHS-AND-MIXED-LAWS-20261123-001B/result.md"
+  },
+  {
+   "id": "T20",
+   "statement": "parity CHSH from all-or-none funding, both complete records hidden",
+   "from the finish": "9/4 (parity: the same)",
+   "from the start": "9/4 (its primary weighting, preregistration.md:21)",
+   "verdict here": "outside both countings (its cause is all-or-none funding; the same under both)",
+   "verdict in table.json": "outside both countings (its cause is all-or-none funding; the same under both)",
+   "knots in the whole": "not tested",
+   "source": "from table.json (not recomputed here)",
+   "record": "research/WHOLE-STAGE-SETTINGS-20261120-001/decision.md:3,27,33"
+  },
+  {
+   "id": "T21",
+   "statement": "smallest NAE closing control",
+   "from the finish": "TV 12/689 at the first observer's low setting",
+   "from the start": "0",
+   "verdict here": "changed by 12/689",
+   "verdict in table.json": "changed by 12/689",
+   "knots in the whole": "not applicable (no settings-line structure)",
+   "source": "from table.json (not recomputed here)",
+   "record": "research/WHOLE-STAGE-SETTINGS-20261120-001/decision.md:23"
+  },
+  {
+   "id": "T22",
+   "statement": "NAE version of the funding construction",
+   "from the finish": "not computed",
+   "from the start": "about 1.500001965, hidden",
+   "verdict here": "not recomputed (the finish value needs counts over about 7.5e23 states; low worth, near 1.5)",
+   "verdict in table.json": "not recomputed (the finish value needs counts over about 7.5e23 states; low worth, near 1.5)",
+   "knots in the whole": "not tested",
+   "source": "from table.json (not recomputed here)",
+   "record": "research/WHOLE-STAGE-SETTINGS-20261120-001/decision.md:35"
+  },
+  {
+   "id": "T23",
+   "statement": "hidden-address construction",
+   "from the finish": "parity: the same (theorem); NAE not computed",
+   "from the start": "parity 9/4, TV 1/4; NAE about 1.50000193",
+   "verdict here": "parity unchanged; NAE not recomputed",
+   "verdict in table.json": "parity unchanged; NAE not recomputed",
+   "knots in the whole": "not tested",
+   "source": "from table.json (not recomputed here)",
+   "record": "experiments/LOCAL-EDIT-POLICIES-20261123-001C/LOCAL-EDIT-POLICIES-20261123-001C-E001_hidden_demand/result.md:19,28"
+  },
+  {
+   "id": "T24",
+   "statement": "panel maxima, four readings",
+   "from the finish": "NAE uniform stage 122/285, 22/19, 163/410, 2; lifted start 4/9, 32/27, 146/273, 2; parity 0,1,0,1 under both",
+   "from the start": "see record",
+   "verdict here": "changed as recorded",
+   "verdict in table.json": "changed as recorded",
+   "knots in the whole": "not applicable (no settings-line structure)",
+   "source": "from table.json (not recomputed here)",
+   "record": "research/ENTANGLEMENT-READ-20261120-001/decision.md:45-51"
+  },
+  {
+   "id": "T25",
+   "statement": "old-mark distributions moved by growth",
+   "from the finish": "221/233 NAE under counting 1; 0/233 under counting 2; 0/233 parity",
+   "from the start": "see record",
+   "verdict here": "changed as recorded",
+   "verdict in table.json": "changed as recorded",
+   "knots in the whole": "not applicable (no settings-line structure)",
+   "source": "from table.json (not recomputed here)",
+   "record": "research/ENTANGLEMENT-READ-20261120-001/decision.md:53"
+  },
+  {
+   "id": "T26",
+   "statement": "central pair at two, three, four meetings",
+   "from the finish": "234/635 to 351/953; 3064/8057 to 1533/4031; 38682/102203 to 58059/153401 (counting 1); unchanged (counting 2)",
+   "from the start": "see record",
+   "verdict here": "changed as recorded",
+   "verdict in table.json": "changed as recorded",
+   "knots in the whole": "not applicable (no settings-line structure)",
+   "source": "from table.json (not recomputed here)",
+   "record": "research/UNREAD-COMPANION-AND-ORDER-FREE-WEIGHTING-20261121-001B/results.md:14"
+  },
+  {
+   "id": "T27",
+   "statement": "all 378 pair rates of a reached stage",
+   "from the finish": "1109423/1936070 against 172/343 at the old inputs",
+   "from the start": "see record",
+   "verdict here": "changed as recorded",
+   "verdict in table.json": "changed as recorded",
+   "knots in the whole": "not applicable (no settings-line structure)",
+   "source": "from table.json (not recomputed here)",
+   "record": "research/STATE-DISTANCE-AND-REACHED-GROWTH-20261120-001B/results.md:11"
+  },
+  {
+   "id": "T28",
+   "statement": "disagreement rates of 406 named pairs",
+   "from the finish": "416/801 against 78/155 (366 of 406 differ)",
+   "from the start": "see record",
+   "verdict here": "changed as recorded",
+   "verdict in table.json": "changed as recorded",
+   "knots in the whole": "not applicable (no settings-line structure)",
+   "source": "from table.json (not recomputed here)",
+   "record": "research/LOOSE-NAMES-AND-SPENT-JOINS-20261120-001A/results.md:23"
+  },
+  {
+   "id": "T29",
+   "statement": "rates on a 601,181,310-word stage",
+   "from the finish": "462 of 465 differ; 136 of 136 old pairs kept only by counting 2",
+   "from the start": "see record",
+   "verdict here": "changed as recorded",
+   "verdict in table.json": "changed as recorded",
+   "knots in the whole": "not applicable (no settings-line structure)",
+   "source": "from table.json (not recomputed here)",
+   "record": "research/NEWEST-KNOTS-AND-LOCAL-JOINS-20261120-001A/results.md:30"
+  },
+  {
+   "id": "T30",
+   "statement": "a distant birth changes matched newborns",
+   "from the finish": "1486832/2981835 against 3962383/7946541 (counting 1); equal under counting 2",
+   "from the start": "see record",
+   "verdict here": "changed as recorded",
+   "verdict in table.json": "changed as recorded",
+   "knots in the whole": "not applicable (no settings-line structure)",
+   "source": "from table.json (not recomputed here)",
+   "record": "research/SPENT-PASTS-AND-TWO-SHARED-NAMES-20261121-001A/results.md:20"
+  },
+  {
+   "id": "T31",
+   "statement": "best guess of the focal orientation",
+   "from the finish": "",
+   "from the start": "see record",
+   "verdict here": "changed as recorded",
+   "verdict in table.json": "changed as recorded",
+   "knots in the whole": "not applicable (no settings-line structure)",
+   "source": "from table.json (not recomputed here)",
+   "record": "research/SIBLING-ANNOUNCEMENTS-AND-RECEIVER-BIRTHS-20261121-001B/results.md:16"
+  },
+  {
+   "id": "T32",
+   "statement": "a supplied two-offer writer",
+   "from the finish": "",
+   "from the start": "see record",
+   "verdict here": "unchanged (equal)",
+   "verdict in table.json": "unchanged (equal)",
+   "knots in the whole": "not applicable (no settings-line structure)",
+   "source": "from table.json (not recomputed here)",
+   "record": "research/TWO-SENDS-AND-GROWN-KEEPERS-20261122-001/decision.md:24"
+  },
+  {
+   "id": "T33",
+   "statement": "completed fresh-only records",
+   "from the finish": "to compute",
+   "from the start": "67/588, 37/336, 789/1568, 5/784",
+   "verdict here": "not recomputed (no registered definition)",
+   "verdict in table.json": "not recomputed (no registered definition)",
+   "knots in the whole": "not applicable (no settings-line structure)",
+   "source": "from table.json (not recomputed here)",
+   "record": "research/HIDDEN-SENDER-MARKS-20261122-001/decision.md:29,48"
+  },
+  {
+   "id": "T34",
+   "statement": "a later zero payment",
+   "from the finish": "to compute",
+   "from the start": "1/3 to 1/2; 1/4",
+   "verdict here": "not recomputed (no registered definition)",
+   "verdict in table.json": "not recomputed (no registered definition)",
+   "knots in the whole": "not applicable (no settings-line structure)",
+   "source": "from table.json (not recomputed here)",
+   "record": "research/STORED-BIT-AND-NEXT-ACTION-20261122-001/paid_bit.md:27"
+  },
+  {
+   "id": "T35",
+   "statement": "receipt rates",
+   "from the finish": "to compute",
+   "from the start": "1/64; 0.409%; 51.70 to 52.64%; 68.96%",
+   "verdict here": "not recomputed (no registered definition)",
+   "verdict in table.json": "not recomputed (no registered definition)",
+   "knots in the whole": "not applicable (no settings-line structure)",
+   "source": "from table.json (not recomputed here)",
+   "record": "research/SUCCESSOR-RECEIPT-20261122-001/decision.md:15,40"
+  },
+  {
+   "id": "T36",
+   "statement": "the disagreement table of a reached stage decides the next birth count (194 of 194 NAE types); a rate with no weighting word (\"fraction of complete allowed words\")",
+   "from the finish": "194 of 194 (the record)",
+   "from the start": "194 of 194: no two types share a table",
+   "verdict here": "unchanged",
+   "verdict in table.json": "to compute in the ticket (P9, part 5)",
+   "knots in the whole": "not applicable (no settings-line structure)",
+   "source": "recomputed here",
+   "record": "research/FREEDOM-CLOCKS-AND-BIRTHS-20261120-001C/results.md:3,7"
+  },
+  {
+   "id": "T37",
+   "statement": "tables from observations",
+   "from the finish": "2,166 tables from 2,245 NAE observations; parity 67/114",
+   "from the start": "to compute",
+   "verdict here": "not recomputed (no registered definition)",
+   "verdict in table.json": "not recomputed (no registered definition)",
+   "knots in the whole": "not applicable (no settings-line structure)",
+   "source": "from table.json (not recomputed here)",
+   "record": "research/CALIBRATIONS-CLOCKS-AND-WIDER-KNOTS-20261120-001C/results.md:3,35,41"
+  },
+  {
+   "id": "T38",
+   "statement": "first children of the lone four-place NAE knot",
+   "from the finish": "1/2; 1/4802; 12/7",
+   "from the start": "the same: one-parent births, every old state 7^4 completions",
+   "verdict here": "unchanged by argument",
+   "verdict in table.json": "unchanged by argument",
+   "knots in the whole": "not applicable (no settings-line structure)",
+   "source": "from table.json (not recomputed here)",
+   "record": "research/NEWBORN-TABLES-AND-THREE-DONOR-RETURNS-20261121-001A/results.md"
+  },
+  {
+   "id": "T39",
+   "statement": "violating ternaries at the first funded stage (trees 65/134, extra meeting 27/70); flagged by the classification as a weighting of states inside an amplitude row",
+   "from the finish": "65/134, 27/70",
+   "from the start": "to compute",
+   "verdict here": "not recomputed (no registered definition)",
+   "verdict in table.json": "not recomputed (no registered definition)",
+   "knots in the whole": "not applicable (no settings-line structure)",
+   "source": "from table.json (not recomputed here)",
+   "record": "research/THREE-READERS-AND-GROWTH-20261120-001A/results.md"
+  },
+  {
+   "id": "T40",
+   "statement": "weightings of meeting patterns",
+   "from the finish": "no weighting of states",
+   "from the start": "no weighting of states",
+   "verdict here": "unchanged",
+   "verdict in table.json": "unchanged",
+   "knots in the whole": "not applicable (no settings-line structure)",
+   "source": "from table.json (not recomputed here)",
+   "record": "publication/knotlab/INTUITIONS.md:2577-2590 (lesson 7.3)"
+  },
+  {
+   "id": "T41",
+   "statement": "a history is one allowed state; every later update forced",
+   "from the finish": "one completion per start",
+   "from the start": "the same",
+   "verdict here": "unchanged (they coincide when every start has one completion)",
+   "verdict in table.json": "unchanged (they coincide when every start has one completion)",
+   "knots in the whole": "not applicable (no settings-line structure)",
+   "source": "from table.json (not recomputed here)",
+   "record": "publication/knotlab/INTUITIONS.md:4105-4114 (lesson 9.1)"
+  },
+  {
+   "id": "T42",
+   "statement": "\"disagreement rate\": a share of the allowed states (a rate with no weighting word)",
+   "from the finish": "by definition",
+   "from the start": "differs on grown NAE structures (rows of STATE-DISTANCE, LOOSE-NAMES, NEWEST-KNOTS above)",
+   "verdict here": "the definition is counting from the finish",
+   "verdict in table.json": "the definition is counting from the finish",
+   "knots in the whole": "not applicable (no settings-line structure)",
+   "source": "from table.json (not recomputed here)",
+   "record": "publication/knotlab/INTUITIONS.md:5281-5283 (glossary)"
+  },
+  {
+   "id": "T43",
+   "statement": "disagreement counts of grown structures and whether they decide the allowed states",
+   "from the finish": "counts (support)",
+   "from the start": "counts (support)",
+   "verdict here": "unchanged: counts, not rates",
+   "verdict in table.json": "unchanged: counts, not rates",
+   "knots in the whole": "not applicable (no settings-line structure)",
+   "source": "from table.json (not recomputed here)",
+   "record": "publication/knotlab/INTUITIONS.md:3373-3460 (lesson 8.4)"
+  },
+  {
+   "id": "T44",
+   "statement": "chances from squared amplitudes of coherent preparations",
+   "from the finish": "not a counting of states",
+   "from the start": "not a counting of states",
+   "verdict here": "outside both countings",
+   "verdict in table.json": "outside both countings",
+   "knots in the whole": "not applicable",
+   "source": "from table.json (not recomputed here)",
+   "record": "the 44 tracker objects classified as squared amplitudes or signs (e.g. research/SPLIT-KNOT-METER-AND-CLOSING-TRIPLE-20261121-001A/results.md)"
+  }
+ ],
+ "knot table (33)": [
+  {
+   "structure": "eleven (start)",
+   "rule": "even(x1,x2,x3,c)",
+   "induced": [
+    "0011",
+    "0101",
+    "1010",
+    "1100"
+   ],
+   "K1": true,
+   "K2": false,
+   "K3": true,
+   "whole": false,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "eleven (start)",
+   "rule": "nae(c,x2,s1)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "eleven (start)",
+   "rule": "nae(c,x3,s2)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "eleven (start)",
+   "rule": "even(x2,h1,h2)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "eleven (start)",
+   "rule": "odd(x3,h1,h2)",
+   "induced": [
+    "001",
+    "010",
+    "100",
+    "111"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "eleven (start)",
+   "rule": "even(y1,y2,y3,t)",
+   "induced": [
+    "0011",
+    "0101",
+    "1010",
+    "1100"
+   ],
+   "K1": true,
+   "K2": false,
+   "K3": true,
+   "whole": false,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "eleven (start)",
+   "rule": "even(t,m1,m2)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "eleven (start)",
+   "rule": "even(s1,m1,m2)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "eleven (start)",
+   "rule": "even(y2,k1,k2)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "eleven (start)",
+   "rule": "odd(y3,k1,k2)",
+   "induced": [
+    "001",
+    "010",
+    "100",
+    "111"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "eleven (start)",
+   "rule": "odd(s2,k1,k2)",
+   "induced": [
+    "001",
+    "010",
+    "100",
+    "111"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "smallest gain: part",
+   "rule": "nae(x1,x3,s1)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "smallest gain: part",
+   "rule": "even(x1,h1,h2)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "smallest gain: part",
+   "rule": "nae(x2,x3,s2)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "smallest gain: part",
+   "rule": "odd(x2,h1,h2)",
+   "induced": [
+    "001",
+    "010",
+    "100",
+    "111"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "smallest gain: part",
+   "rule": "even(y1,k1,k2)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "smallest gain: part",
+   "rule": "odd(s1,k1,k2)",
+   "induced": [
+    "001",
+    "010",
+    "100",
+    "111"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "smallest gain: part",
+   "rule": "even(y1,y2,y3,s2)",
+   "induced": [
+    "0000",
+    "0011",
+    "0101",
+    "0110",
+    "1001",
+    "1010",
+    "1100",
+    "1111"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "smallest gain: part + rule-Q round 1",
+   "rule": "nae(x1,x3,s1)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "smallest gain: part + rule-Q round 1",
+   "rule": "even(x1,h1,h2)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "smallest gain: part + rule-Q round 1",
+   "rule": "nae(x2,x3,s2)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "smallest gain: part + rule-Q round 1",
+   "rule": "odd(x2,h1,h2)",
+   "induced": [
+    "001",
+    "010",
+    "100",
+    "111"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "smallest gain: part + rule-Q round 1",
+   "rule": "even(y1,k1,k2)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "smallest gain: part + rule-Q round 1",
+   "rule": "odd(s1,k1,k2)",
+   "induced": [
+    "001",
+    "010",
+    "100",
+    "111"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "smallest gain: part + rule-Q round 1",
+   "rule": "even(y1,y2,y3,s2)",
+   "induced": [
+    "0000",
+    "0011",
+    "0101",
+    "0110",
+    "1001",
+    "1010",
+    "1100",
+    "1111"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "smallest gain: part + rule-Q round 1",
+   "rule": "nae(y3,s2,f)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "smallest gain: part + rule-Q round 1",
+   "rule": "nae(y2,y1,g)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "seven (start)",
+   "rule": "nae(x1,x2,s1)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "seven (start)",
+   "rule": "nae(x1,x3,s2)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "seven (start)",
+   "rule": "even(x2,Ah1,Ah2)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "seven (start)",
+   "rule": "odd(x3,Ah1,Ah2)",
+   "induced": [
+    "001",
+    "010",
+    "100",
+    "111"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "seven (start)",
+   "rule": "even(y2,Bh1,Bh2)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "seven (start)",
+   "rule": "odd(s1,Bh1,Bh2)",
+   "induced": [
+    "001",
+    "010",
+    "100",
+    "111"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "seven (start)",
+   "rule": "odd(y1,y2,y3,s2)",
+   "induced": [
+    "0001",
+    "0010",
+    "0100",
+    "0111",
+    "1000",
+    "1011",
+    "1101",
+    "1110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "eight (start)",
+   "rule": "nae(x1,x2,s1)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "eight (start)",
+   "rule": "nae(x1,x3,s2)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "eight (start)",
+   "rule": "even(x2,Ah1,Ah2)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "eight (start)",
+   "rule": "odd(x3,Ah1,Ah2)",
+   "induced": [
+    "001",
+    "010",
+    "100",
+    "111"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "eight (start)",
+   "rule": "even(y2,Bh1,Bh2)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "eight (start)",
+   "rule": "odd(y3,Bh1,Bh2)",
+   "induced": [
+    "001",
+    "010",
+    "100",
+    "111"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "eight (start)",
+   "rule": "odd(s2,Bh1,Bh2)",
+   "induced": [
+    "001",
+    "010",
+    "100",
+    "111"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "eight (start)",
+   "rule": "even(y1,y2,y3,s1)",
+   "induced": [
+    "0011",
+    "0101",
+    "1010",
+    "1100"
+   ],
+   "K1": true,
+   "K2": false,
+   "K3": true,
+   "whole": false,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "nine, the pencil (start)",
+   "rule": "nae(x1,x2,n2)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "nine, the pencil (start)",
+   "rule": "nae(x1,x3,n1)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "nine, the pencil (start)",
+   "rule": "even(x2,d,e)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "nine, the pencil (start)",
+   "rule": "odd(x3,d,e)",
+   "induced": [
+    "001",
+    "010",
+    "100",
+    "111"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "nine, the pencil (start)",
+   "rule": "even(y1,p,q)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "nine, the pencil (start)",
+   "rule": "odd(n1,p,q)",
+   "induced": [
+    "001",
+    "010",
+    "100",
+    "111"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "nine, the pencil (start)",
+   "rule": "even(y2,r,t)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "nine, the pencil (start)",
+   "rule": "odd(n2,r,t)",
+   "induced": [
+    "001",
+    "010",
+    "100",
+    "111"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "nine, the pencil (start)",
+   "rule": "odd(y3,r,t)",
+   "induced": [
+    "001",
+    "010",
+    "100",
+    "111"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "ten A: eleven less even(y2,k1,k2) (start)",
+   "rule": "even(x1,x2,x3,c)",
+   "induced": [
+    "0011",
+    "0101",
+    "1010",
+    "1100"
+   ],
+   "K1": true,
+   "K2": false,
+   "K3": true,
+   "whole": false,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "ten A: eleven less even(y2,k1,k2) (start)",
+   "rule": "nae(c,x2,s1)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "ten A: eleven less even(y2,k1,k2) (start)",
+   "rule": "nae(c,x3,s2)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "ten A: eleven less even(y2,k1,k2) (start)",
+   "rule": "even(x2,h1,h2)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "ten A: eleven less even(y2,k1,k2) (start)",
+   "rule": "odd(x3,h1,h2)",
+   "induced": [
+    "001",
+    "010",
+    "100",
+    "111"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "ten A: eleven less even(y2,k1,k2) (start)",
+   "rule": "even(y1,y2,y3,t)",
+   "induced": [
+    "0000",
+    "0011",
+    "0101",
+    "0110",
+    "1001",
+    "1010",
+    "1100",
+    "1111"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "ten A: eleven less even(y2,k1,k2) (start)",
+   "rule": "even(t,m1,m2)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "ten A: eleven less even(y2,k1,k2) (start)",
+   "rule": "even(s1,m1,m2)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "ten A: eleven less even(y2,k1,k2) (start)",
+   "rule": "odd(y3,k1,k2)",
+   "induced": [
+    "001",
+    "010",
+    "100",
+    "111"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "ten A: eleven less even(y2,k1,k2) (start)",
+   "rule": "odd(s2,k1,k2)",
+   "induced": [
+    "001",
+    "010",
+    "100",
+    "111"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "ten B: eleven less odd(y3,k1,k2) (start)",
+   "rule": "even(x1,x2,x3,c)",
+   "induced": [
+    "0011",
+    "0101",
+    "1010",
+    "1100"
+   ],
+   "K1": true,
+   "K2": false,
+   "K3": true,
+   "whole": false,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "ten B: eleven less odd(y3,k1,k2) (start)",
+   "rule": "nae(c,x2,s1)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "ten B: eleven less odd(y3,k1,k2) (start)",
+   "rule": "nae(c,x3,s2)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "ten B: eleven less odd(y3,k1,k2) (start)",
+   "rule": "even(x2,h1,h2)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "ten B: eleven less odd(y3,k1,k2) (start)",
+   "rule": "odd(x3,h1,h2)",
+   "induced": [
+    "001",
+    "010",
+    "100",
+    "111"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "ten B: eleven less odd(y3,k1,k2) (start)",
+   "rule": "even(y1,y2,y3,t)",
+   "induced": [
+    "0000",
+    "0011",
+    "0101",
+    "0110",
+    "1001",
+    "1010",
+    "1100",
+    "1111"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "ten B: eleven less odd(y3,k1,k2) (start)",
+   "rule": "even(t,m1,m2)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "ten B: eleven less odd(y3,k1,k2) (start)",
+   "rule": "even(s1,m1,m2)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "ten B: eleven less odd(y3,k1,k2) (start)",
+   "rule": "even(y2,k1,k2)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "ten B: eleven less odd(y3,k1,k2) (start)",
+   "rule": "odd(s2,k1,k2)",
+   "induced": [
+    "001",
+    "010",
+    "100",
+    "111"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "eighteen (start)",
+   "rule": "even(x1,a,b)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "not run (more than 20 distinctions; projection only, as registered)"
+  },
+  {
+   "structure": "eighteen (start)",
+   "rule": "even(c1,a,b)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "not run (more than 20 distinctions; projection only, as registered)"
+  },
+  {
+   "structure": "eighteen (start)",
+   "rule": "even(k1,a,b)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "not run (more than 20 distinctions; projection only, as registered)"
+  },
+  {
+   "structure": "eighteen (start)",
+   "rule": "even(x2,d,e)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "not run (more than 20 distinctions; projection only, as registered)"
+  },
+  {
+   "structure": "eighteen (start)",
+   "rule": "odd(x3,d,e)",
+   "induced": [
+    "001",
+    "010",
+    "100",
+    "111"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "not run (more than 20 distinctions; projection only, as registered)"
+  },
+  {
+   "structure": "eighteen (start)",
+   "rule": "even(c2,d,e)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "not run (more than 20 distinctions; projection only, as registered)"
+  },
+  {
+   "structure": "eighteen (start)",
+   "rule": "odd(c3,d,e)",
+   "induced": [
+    "001",
+    "010",
+    "100",
+    "111"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "not run (more than 20 distinctions; projection only, as registered)"
+  },
+  {
+   "structure": "eighteen (start)",
+   "rule": "nae(c1,c2,n2)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "not run (more than 20 distinctions; projection only, as registered)"
+  },
+  {
+   "structure": "eighteen (start)",
+   "rule": "nae(k1,c3,n1)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "not run (more than 20 distinctions; projection only, as registered)"
+  },
+  {
+   "structure": "eighteen (start)",
+   "rule": "even(n2,g,h)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "not run (more than 20 distinctions; projection only, as registered)"
+  },
+  {
+   "structure": "eighteen (start)",
+   "rule": "odd(s2,g,h)",
+   "induced": [
+    "001",
+    "010",
+    "100",
+    "111"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "not run (more than 20 distinctions; projection only, as registered)"
+  },
+  {
+   "structure": "eighteen (start)",
+   "rule": "even(n1,u,v)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "not run (more than 20 distinctions; projection only, as registered)"
+  },
+  {
+   "structure": "eighteen (start)",
+   "rule": "odd(s1,u,v)",
+   "induced": [
+    "001",
+    "010",
+    "100",
+    "111"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "not run (more than 20 distinctions; projection only, as registered)"
+  },
+  {
+   "structure": "eighteen (start)",
+   "rule": "even(y1,p,q)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "not run (more than 20 distinctions; projection only, as registered)"
+  },
+  {
+   "structure": "eighteen (start)",
+   "rule": "even(s1,p,q)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "not run (more than 20 distinctions; projection only, as registered)"
+  },
+  {
+   "structure": "eighteen (start)",
+   "rule": "even(y2,r,t)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "not run (more than 20 distinctions; projection only, as registered)"
+  },
+  {
+   "structure": "eighteen (start)",
+   "rule": "even(s2,r,t)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "not run (more than 20 distinctions; projection only, as registered)"
+  },
+  {
+   "structure": "eighteen (start)",
+   "rule": "odd(y3,r,t)",
+   "induced": [
+    "001",
+    "010",
+    "100",
+    "111"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "not run (more than 20 distinctions; projection only, as registered)"
+  },
+  {
+   "structure": "eleven + settings 00",
+   "rule": "even(x1,x2,x3,c)",
+   "induced": [
+    "0011",
+    "0101",
+    "1010",
+    "1100"
+   ],
+   "K1": true,
+   "K2": false,
+   "K3": true,
+   "whole": false,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "eleven + settings 00",
+   "rule": "nae(c,x2,s1)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "eleven + settings 00",
+   "rule": "nae(c,x3,s2)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "eleven + settings 00",
+   "rule": "even(x2,h1,h2)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "eleven + settings 00",
+   "rule": "odd(x3,h1,h2)",
+   "induced": [
+    "001",
+    "010",
+    "100",
+    "111"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "eleven + settings 00",
+   "rule": "even(y1,y2,y3,t)",
+   "induced": [
+    "0011",
+    "0101",
+    "1010",
+    "1100"
+   ],
+   "K1": true,
+   "K2": false,
+   "K3": true,
+   "whole": false,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "eleven + settings 00",
+   "rule": "even(t,m1,m2)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "eleven + settings 00",
+   "rule": "even(s1,m1,m2)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "eleven + settings 00",
+   "rule": "even(y2,k1,k2)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "eleven + settings 00",
+   "rule": "odd(y3,k1,k2)",
+   "induced": [
+    "001",
+    "010",
+    "100",
+    "111"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "eleven + settings 00",
+   "rule": "odd(s2,k1,k2)",
+   "induced": [
+    "001",
+    "010",
+    "100",
+    "111"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "eleven + settings 00",
+   "rule": "nae(x1,x2,za)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "eleven + settings 00",
+   "rule": "nae(y1,y2,zb)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "smallest gain finished 00",
+   "rule": "nae(x1,x3,s1)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "smallest gain finished 00",
+   "rule": "even(x1,h1,h2)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "smallest gain finished 00",
+   "rule": "nae(x2,x3,s2)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "smallest gain finished 00",
+   "rule": "odd(x2,h1,h2)",
+   "induced": [
+    "001",
+    "010",
+    "100",
+    "111"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "smallest gain finished 00",
+   "rule": "even(y1,k1,k2)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "smallest gain finished 00",
+   "rule": "odd(s1,k1,k2)",
+   "induced": [
+    "001",
+    "010",
+    "100",
+    "111"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "smallest gain finished 00",
+   "rule": "even(y1,y2,y3,s2)",
+   "induced": [
+    "0000",
+    "0011",
+    "0101",
+    "0110",
+    "1001",
+    "1010",
+    "1100",
+    "1111"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "smallest gain finished 00",
+   "rule": "nae(y3,s2,f)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "smallest gain finished 00",
+   "rule": "nae(y2,y1,g)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "smallest gain finished 00",
+   "rule": "nae(x1,x2,za)",
+   "induced": [
+    "010",
+    "011",
+    "100",
+    "101"
+   ],
+   "K1": true,
+   "K2": false,
+   "K3": true,
+   "whole": false,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "smallest gain finished 00",
+   "rule": "nae(y1,y2,zb)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "seven + settings 00",
+   "rule": "nae(x1,x2,s1)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "seven + settings 00",
+   "rule": "nae(x1,x3,s2)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "seven + settings 00",
+   "rule": "even(x2,Ah1,Ah2)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "seven + settings 00",
+   "rule": "odd(x3,Ah1,Ah2)",
+   "induced": [
+    "001",
+    "010",
+    "100",
+    "111"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "seven + settings 00",
+   "rule": "even(y2,Bh1,Bh2)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "seven + settings 00",
+   "rule": "odd(s1,Bh1,Bh2)",
+   "induced": [
+    "001",
+    "010",
+    "100",
+    "111"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "seven + settings 00",
+   "rule": "odd(y1,y2,y3,s2)",
+   "induced": [
+    "0001",
+    "0010",
+    "0100",
+    "0111",
+    "1000",
+    "1011",
+    "1101",
+    "1110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "seven + settings 00",
+   "rule": "nae(x1,x2,za)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "seven + settings 00",
+   "rule": "nae(y1,y2,zb)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "eight + settings 00",
+   "rule": "nae(x1,x2,s1)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "eight + settings 00",
+   "rule": "nae(x1,x3,s2)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "eight + settings 00",
+   "rule": "even(x2,Ah1,Ah2)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "eight + settings 00",
+   "rule": "odd(x3,Ah1,Ah2)",
+   "induced": [
+    "001",
+    "010",
+    "100",
+    "111"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "eight + settings 00",
+   "rule": "even(y2,Bh1,Bh2)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "eight + settings 00",
+   "rule": "odd(y3,Bh1,Bh2)",
+   "induced": [
+    "001",
+    "010",
+    "100",
+    "111"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "eight + settings 00",
+   "rule": "odd(s2,Bh1,Bh2)",
+   "induced": [
+    "001",
+    "010",
+    "100",
+    "111"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "eight + settings 00",
+   "rule": "even(y1,y2,y3,s1)",
+   "induced": [
+    "0011",
+    "0101",
+    "1010",
+    "1100"
+   ],
+   "K1": true,
+   "K2": false,
+   "K3": true,
+   "whole": false,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "eight + settings 00",
+   "rule": "nae(x1,x2,za)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "eight + settings 00",
+   "rule": "nae(y1,y2,zb)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "nine + settings 00",
+   "rule": "nae(x1,x2,n2)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "nine + settings 00",
+   "rule": "nae(x1,x3,n1)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "nine + settings 00",
+   "rule": "even(x2,d,e)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "nine + settings 00",
+   "rule": "odd(x3,d,e)",
+   "induced": [
+    "001",
+    "010",
+    "100",
+    "111"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "nine + settings 00",
+   "rule": "even(y1,p,q)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "nine + settings 00",
+   "rule": "odd(n1,p,q)",
+   "induced": [
+    "001",
+    "010",
+    "100",
+    "111"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "nine + settings 00",
+   "rule": "even(y2,r,t)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "nine + settings 00",
+   "rule": "odd(n2,r,t)",
+   "induced": [
+    "001",
+    "010",
+    "100",
+    "111"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "nine + settings 00",
+   "rule": "odd(y3,r,t)",
+   "induced": [
+    "001",
+    "010",
+    "100",
+    "111"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "nine + settings 00",
+   "rule": "nae(x1,x2,za)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "nine + settings 00",
+   "rule": "nae(y1,y2,zb)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "eighteen + settings 00",
+   "rule": "even(x1,a,b)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "not run (more than 20 distinctions; projection only, as registered)"
+  },
+  {
+   "structure": "eighteen + settings 00",
+   "rule": "even(c1,a,b)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "not run (more than 20 distinctions; projection only, as registered)"
+  },
+  {
+   "structure": "eighteen + settings 00",
+   "rule": "even(k1,a,b)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "not run (more than 20 distinctions; projection only, as registered)"
+  },
+  {
+   "structure": "eighteen + settings 00",
+   "rule": "even(x2,d,e)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "not run (more than 20 distinctions; projection only, as registered)"
+  },
+  {
+   "structure": "eighteen + settings 00",
+   "rule": "odd(x3,d,e)",
+   "induced": [
+    "001",
+    "010",
+    "100",
+    "111"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "not run (more than 20 distinctions; projection only, as registered)"
+  },
+  {
+   "structure": "eighteen + settings 00",
+   "rule": "even(c2,d,e)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "not run (more than 20 distinctions; projection only, as registered)"
+  },
+  {
+   "structure": "eighteen + settings 00",
+   "rule": "odd(c3,d,e)",
+   "induced": [
+    "001",
+    "010",
+    "100",
+    "111"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "not run (more than 20 distinctions; projection only, as registered)"
+  },
+  {
+   "structure": "eighteen + settings 00",
+   "rule": "nae(c1,c2,n2)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "not run (more than 20 distinctions; projection only, as registered)"
+  },
+  {
+   "structure": "eighteen + settings 00",
+   "rule": "nae(k1,c3,n1)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "not run (more than 20 distinctions; projection only, as registered)"
+  },
+  {
+   "structure": "eighteen + settings 00",
+   "rule": "even(n2,g,h)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "not run (more than 20 distinctions; projection only, as registered)"
+  },
+  {
+   "structure": "eighteen + settings 00",
+   "rule": "odd(s2,g,h)",
+   "induced": [
+    "001",
+    "010",
+    "100",
+    "111"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "not run (more than 20 distinctions; projection only, as registered)"
+  },
+  {
+   "structure": "eighteen + settings 00",
+   "rule": "even(n1,u,v)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "not run (more than 20 distinctions; projection only, as registered)"
+  },
+  {
+   "structure": "eighteen + settings 00",
+   "rule": "odd(s1,u,v)",
+   "induced": [
+    "001",
+    "010",
+    "100",
+    "111"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "not run (more than 20 distinctions; projection only, as registered)"
+  },
+  {
+   "structure": "eighteen + settings 00",
+   "rule": "even(y1,p,q)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "not run (more than 20 distinctions; projection only, as registered)"
+  },
+  {
+   "structure": "eighteen + settings 00",
+   "rule": "even(s1,p,q)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "not run (more than 20 distinctions; projection only, as registered)"
+  },
+  {
+   "structure": "eighteen + settings 00",
+   "rule": "even(y2,r,t)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "not run (more than 20 distinctions; projection only, as registered)"
+  },
+  {
+   "structure": "eighteen + settings 00",
+   "rule": "even(s2,r,t)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "not run (more than 20 distinctions; projection only, as registered)"
+  },
+  {
+   "structure": "eighteen + settings 00",
+   "rule": "odd(y3,r,t)",
+   "induced": [
+    "001",
+    "010",
+    "100",
+    "111"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "not run (more than 20 distinctions; projection only, as registered)"
+  },
+  {
+   "structure": "eighteen + settings 00",
+   "rule": "nae(x1,x2,za)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "not run (more than 20 distinctions; projection only, as registered)"
+  },
+  {
+   "structure": "eighteen + settings 00",
+   "rule": "nae(y1,y2,zb)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "not run (more than 20 distinctions; projection only, as registered)"
+  },
+  {
+   "structure": "eleven + settings 01",
+   "rule": "even(x1,x2,x3,c)",
+   "induced": [
+    "0011",
+    "0101",
+    "1010",
+    "1100"
+   ],
+   "K1": true,
+   "K2": false,
+   "K3": true,
+   "whole": false,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "eleven + settings 01",
+   "rule": "nae(c,x2,s1)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "eleven + settings 01",
+   "rule": "nae(c,x3,s2)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "eleven + settings 01",
+   "rule": "even(x2,h1,h2)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "eleven + settings 01",
+   "rule": "odd(x3,h1,h2)",
+   "induced": [
+    "001",
+    "010",
+    "100",
+    "111"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "eleven + settings 01",
+   "rule": "even(y1,y2,y3,t)",
+   "induced": [
+    "0011",
+    "0101",
+    "1010",
+    "1100"
+   ],
+   "K1": true,
+   "K2": false,
+   "K3": true,
+   "whole": false,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "eleven + settings 01",
+   "rule": "even(t,m1,m2)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "eleven + settings 01",
+   "rule": "even(s1,m1,m2)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "eleven + settings 01",
+   "rule": "even(y2,k1,k2)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "eleven + settings 01",
+   "rule": "odd(y3,k1,k2)",
+   "induced": [
+    "001",
+    "010",
+    "100",
+    "111"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "eleven + settings 01",
+   "rule": "odd(s2,k1,k2)",
+   "induced": [
+    "001",
+    "010",
+    "100",
+    "111"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "eleven + settings 01",
+   "rule": "nae(x1,x2,za)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "eleven + settings 01",
+   "rule": "nae(y1,y3,zb)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "smallest gain finished 01",
+   "rule": "nae(x1,x3,s1)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "smallest gain finished 01",
+   "rule": "even(x1,h1,h2)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "smallest gain finished 01",
+   "rule": "nae(x2,x3,s2)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "smallest gain finished 01",
+   "rule": "odd(x2,h1,h2)",
+   "induced": [
+    "001",
+    "010",
+    "100",
+    "111"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "smallest gain finished 01",
+   "rule": "even(y1,k1,k2)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "smallest gain finished 01",
+   "rule": "odd(s1,k1,k2)",
+   "induced": [
+    "001",
+    "010",
+    "100",
+    "111"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "smallest gain finished 01",
+   "rule": "even(y1,y2,y3,s2)",
+   "induced": [
+    "0000",
+    "0011",
+    "0101",
+    "0110",
+    "1001",
+    "1010",
+    "1100",
+    "1111"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "smallest gain finished 01",
+   "rule": "nae(y3,s2,f)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "smallest gain finished 01",
+   "rule": "nae(y2,y1,g)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "smallest gain finished 01",
+   "rule": "nae(x1,x2,za)",
+   "induced": [
+    "010",
+    "011",
+    "100",
+    "101"
+   ],
+   "K1": true,
+   "K2": false,
+   "K3": true,
+   "whole": false,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "smallest gain finished 01",
+   "rule": "nae(y1,y3,zb)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "seven + settings 01",
+   "rule": "nae(x1,x2,s1)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "seven + settings 01",
+   "rule": "nae(x1,x3,s2)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "seven + settings 01",
+   "rule": "even(x2,Ah1,Ah2)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "seven + settings 01",
+   "rule": "odd(x3,Ah1,Ah2)",
+   "induced": [
+    "001",
+    "010",
+    "100",
+    "111"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "seven + settings 01",
+   "rule": "even(y2,Bh1,Bh2)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "seven + settings 01",
+   "rule": "odd(s1,Bh1,Bh2)",
+   "induced": [
+    "001",
+    "010",
+    "100",
+    "111"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "seven + settings 01",
+   "rule": "odd(y1,y2,y3,s2)",
+   "induced": [
+    "0001",
+    "0010",
+    "0100",
+    "0111",
+    "1000",
+    "1011",
+    "1101",
+    "1110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "seven + settings 01",
+   "rule": "nae(x1,x2,za)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "seven + settings 01",
+   "rule": "nae(y1,y3,zb)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "eight + settings 01",
+   "rule": "nae(x1,x2,s1)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "eight + settings 01",
+   "rule": "nae(x1,x3,s2)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "eight + settings 01",
+   "rule": "even(x2,Ah1,Ah2)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "eight + settings 01",
+   "rule": "odd(x3,Ah1,Ah2)",
+   "induced": [
+    "001",
+    "010",
+    "100",
+    "111"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "eight + settings 01",
+   "rule": "even(y2,Bh1,Bh2)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "eight + settings 01",
+   "rule": "odd(y3,Bh1,Bh2)",
+   "induced": [
+    "001",
+    "010",
+    "100",
+    "111"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "eight + settings 01",
+   "rule": "odd(s2,Bh1,Bh2)",
+   "induced": [
+    "001",
+    "010",
+    "100",
+    "111"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "eight + settings 01",
+   "rule": "even(y1,y2,y3,s1)",
+   "induced": [
+    "0011",
+    "0101",
+    "1010",
+    "1100"
+   ],
+   "K1": true,
+   "K2": false,
+   "K3": true,
+   "whole": false,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "eight + settings 01",
+   "rule": "nae(x1,x2,za)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "eight + settings 01",
+   "rule": "nae(y1,y3,zb)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "nine + settings 01",
+   "rule": "nae(x1,x2,n2)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "nine + settings 01",
+   "rule": "nae(x1,x3,n1)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "nine + settings 01",
+   "rule": "even(x2,d,e)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "nine + settings 01",
+   "rule": "odd(x3,d,e)",
+   "induced": [
+    "001",
+    "010",
+    "100",
+    "111"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "nine + settings 01",
+   "rule": "even(y1,p,q)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "nine + settings 01",
+   "rule": "odd(n1,p,q)",
+   "induced": [
+    "001",
+    "010",
+    "100",
+    "111"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "nine + settings 01",
+   "rule": "even(y2,r,t)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "nine + settings 01",
+   "rule": "odd(n2,r,t)",
+   "induced": [
+    "001",
+    "010",
+    "100",
+    "111"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "nine + settings 01",
+   "rule": "odd(y3,r,t)",
+   "induced": [
+    "001",
+    "010",
+    "100",
+    "111"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "nine + settings 01",
+   "rule": "nae(x1,x2,za)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "nine + settings 01",
+   "rule": "nae(y1,y3,zb)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "eighteen + settings 01",
+   "rule": "even(x1,a,b)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "not run (more than 20 distinctions; projection only, as registered)"
+  },
+  {
+   "structure": "eighteen + settings 01",
+   "rule": "even(c1,a,b)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "not run (more than 20 distinctions; projection only, as registered)"
+  },
+  {
+   "structure": "eighteen + settings 01",
+   "rule": "even(k1,a,b)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "not run (more than 20 distinctions; projection only, as registered)"
+  },
+  {
+   "structure": "eighteen + settings 01",
+   "rule": "even(x2,d,e)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "not run (more than 20 distinctions; projection only, as registered)"
+  },
+  {
+   "structure": "eighteen + settings 01",
+   "rule": "odd(x3,d,e)",
+   "induced": [
+    "001",
+    "010",
+    "100",
+    "111"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "not run (more than 20 distinctions; projection only, as registered)"
+  },
+  {
+   "structure": "eighteen + settings 01",
+   "rule": "even(c2,d,e)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "not run (more than 20 distinctions; projection only, as registered)"
+  },
+  {
+   "structure": "eighteen + settings 01",
+   "rule": "odd(c3,d,e)",
+   "induced": [
+    "001",
+    "010",
+    "100",
+    "111"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "not run (more than 20 distinctions; projection only, as registered)"
+  },
+  {
+   "structure": "eighteen + settings 01",
+   "rule": "nae(c1,c2,n2)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "not run (more than 20 distinctions; projection only, as registered)"
+  },
+  {
+   "structure": "eighteen + settings 01",
+   "rule": "nae(k1,c3,n1)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "not run (more than 20 distinctions; projection only, as registered)"
+  },
+  {
+   "structure": "eighteen + settings 01",
+   "rule": "even(n2,g,h)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "not run (more than 20 distinctions; projection only, as registered)"
+  },
+  {
+   "structure": "eighteen + settings 01",
+   "rule": "odd(s2,g,h)",
+   "induced": [
+    "001",
+    "010",
+    "100",
+    "111"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "not run (more than 20 distinctions; projection only, as registered)"
+  },
+  {
+   "structure": "eighteen + settings 01",
+   "rule": "even(n1,u,v)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "not run (more than 20 distinctions; projection only, as registered)"
+  },
+  {
+   "structure": "eighteen + settings 01",
+   "rule": "odd(s1,u,v)",
+   "induced": [
+    "001",
+    "010",
+    "100",
+    "111"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "not run (more than 20 distinctions; projection only, as registered)"
+  },
+  {
+   "structure": "eighteen + settings 01",
+   "rule": "even(y1,p,q)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "not run (more than 20 distinctions; projection only, as registered)"
+  },
+  {
+   "structure": "eighteen + settings 01",
+   "rule": "even(s1,p,q)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "not run (more than 20 distinctions; projection only, as registered)"
+  },
+  {
+   "structure": "eighteen + settings 01",
+   "rule": "even(y2,r,t)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "not run (more than 20 distinctions; projection only, as registered)"
+  },
+  {
+   "structure": "eighteen + settings 01",
+   "rule": "even(s2,r,t)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "not run (more than 20 distinctions; projection only, as registered)"
+  },
+  {
+   "structure": "eighteen + settings 01",
+   "rule": "odd(y3,r,t)",
+   "induced": [
+    "001",
+    "010",
+    "100",
+    "111"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "not run (more than 20 distinctions; projection only, as registered)"
+  },
+  {
+   "structure": "eighteen + settings 01",
+   "rule": "nae(x1,x2,za)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "not run (more than 20 distinctions; projection only, as registered)"
+  },
+  {
+   "structure": "eighteen + settings 01",
+   "rule": "nae(y1,y3,zb)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "not run (more than 20 distinctions; projection only, as registered)"
+  },
+  {
+   "structure": "eleven + settings 10",
+   "rule": "even(x1,x2,x3,c)",
+   "induced": [
+    "0011",
+    "0101",
+    "1010",
+    "1100"
+   ],
+   "K1": true,
+   "K2": false,
+   "K3": true,
+   "whole": false,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "eleven + settings 10",
+   "rule": "nae(c,x2,s1)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "eleven + settings 10",
+   "rule": "nae(c,x3,s2)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "eleven + settings 10",
+   "rule": "even(x2,h1,h2)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "eleven + settings 10",
+   "rule": "odd(x3,h1,h2)",
+   "induced": [
+    "001",
+    "010",
+    "100",
+    "111"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "eleven + settings 10",
+   "rule": "even(y1,y2,y3,t)",
+   "induced": [
+    "0011",
+    "0101",
+    "1010",
+    "1100"
+   ],
+   "K1": true,
+   "K2": false,
+   "K3": true,
+   "whole": false,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "eleven + settings 10",
+   "rule": "even(t,m1,m2)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "eleven + settings 10",
+   "rule": "even(s1,m1,m2)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "eleven + settings 10",
+   "rule": "even(y2,k1,k2)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "eleven + settings 10",
+   "rule": "odd(y3,k1,k2)",
+   "induced": [
+    "001",
+    "010",
+    "100",
+    "111"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "eleven + settings 10",
+   "rule": "odd(s2,k1,k2)",
+   "induced": [
+    "001",
+    "010",
+    "100",
+    "111"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "eleven + settings 10",
+   "rule": "nae(x1,x3,za)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "eleven + settings 10",
+   "rule": "nae(y1,y2,zb)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "smallest gain finished 10",
+   "rule": "nae(x1,x3,s1)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "smallest gain finished 10",
+   "rule": "even(x1,h1,h2)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "smallest gain finished 10",
+   "rule": "nae(x2,x3,s2)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "smallest gain finished 10",
+   "rule": "odd(x2,h1,h2)",
+   "induced": [
+    "001",
+    "010",
+    "100",
+    "111"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "smallest gain finished 10",
+   "rule": "even(y1,k1,k2)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "smallest gain finished 10",
+   "rule": "odd(s1,k1,k2)",
+   "induced": [
+    "001",
+    "010",
+    "100",
+    "111"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "smallest gain finished 10",
+   "rule": "even(y1,y2,y3,s2)",
+   "induced": [
+    "0000",
+    "0011",
+    "0101",
+    "0110",
+    "1001",
+    "1010",
+    "1100",
+    "1111"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "smallest gain finished 10",
+   "rule": "nae(y3,s2,f)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "smallest gain finished 10",
+   "rule": "nae(y2,y1,g)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "smallest gain finished 10",
+   "rule": "nae(x1,x3,za)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "smallest gain finished 10",
+   "rule": "nae(y1,y2,zb)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "seven + settings 10",
+   "rule": "nae(x1,x2,s1)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "seven + settings 10",
+   "rule": "nae(x1,x3,s2)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "seven + settings 10",
+   "rule": "even(x2,Ah1,Ah2)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "seven + settings 10",
+   "rule": "odd(x3,Ah1,Ah2)",
+   "induced": [
+    "001",
+    "010",
+    "100",
+    "111"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "seven + settings 10",
+   "rule": "even(y2,Bh1,Bh2)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "seven + settings 10",
+   "rule": "odd(s1,Bh1,Bh2)",
+   "induced": [
+    "001",
+    "010",
+    "100",
+    "111"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "seven + settings 10",
+   "rule": "odd(y1,y2,y3,s2)",
+   "induced": [
+    "0001",
+    "0010",
+    "0100",
+    "0111",
+    "1000",
+    "1011",
+    "1101",
+    "1110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "seven + settings 10",
+   "rule": "nae(x1,x3,za)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "seven + settings 10",
+   "rule": "nae(y1,y2,zb)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "eight + settings 10",
+   "rule": "nae(x1,x2,s1)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "eight + settings 10",
+   "rule": "nae(x1,x3,s2)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "eight + settings 10",
+   "rule": "even(x2,Ah1,Ah2)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "eight + settings 10",
+   "rule": "odd(x3,Ah1,Ah2)",
+   "induced": [
+    "001",
+    "010",
+    "100",
+    "111"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "eight + settings 10",
+   "rule": "even(y2,Bh1,Bh2)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "eight + settings 10",
+   "rule": "odd(y3,Bh1,Bh2)",
+   "induced": [
+    "001",
+    "010",
+    "100",
+    "111"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "eight + settings 10",
+   "rule": "odd(s2,Bh1,Bh2)",
+   "induced": [
+    "001",
+    "010",
+    "100",
+    "111"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "eight + settings 10",
+   "rule": "even(y1,y2,y3,s1)",
+   "induced": [
+    "0011",
+    "0101",
+    "1010",
+    "1100"
+   ],
+   "K1": true,
+   "K2": false,
+   "K3": true,
+   "whole": false,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "eight + settings 10",
+   "rule": "nae(x1,x3,za)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "eight + settings 10",
+   "rule": "nae(y1,y2,zb)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "nine + settings 10",
+   "rule": "nae(x1,x2,n2)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "nine + settings 10",
+   "rule": "nae(x1,x3,n1)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "nine + settings 10",
+   "rule": "even(x2,d,e)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "nine + settings 10",
+   "rule": "odd(x3,d,e)",
+   "induced": [
+    "001",
+    "010",
+    "100",
+    "111"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "nine + settings 10",
+   "rule": "even(y1,p,q)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "nine + settings 10",
+   "rule": "odd(n1,p,q)",
+   "induced": [
+    "001",
+    "010",
+    "100",
+    "111"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "nine + settings 10",
+   "rule": "even(y2,r,t)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "nine + settings 10",
+   "rule": "odd(n2,r,t)",
+   "induced": [
+    "001",
+    "010",
+    "100",
+    "111"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "nine + settings 10",
+   "rule": "odd(y3,r,t)",
+   "induced": [
+    "001",
+    "010",
+    "100",
+    "111"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "nine + settings 10",
+   "rule": "nae(x1,x3,za)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "nine + settings 10",
+   "rule": "nae(y1,y2,zb)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "eighteen + settings 10",
+   "rule": "even(x1,a,b)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "not run (more than 20 distinctions; projection only, as registered)"
+  },
+  {
+   "structure": "eighteen + settings 10",
+   "rule": "even(c1,a,b)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "not run (more than 20 distinctions; projection only, as registered)"
+  },
+  {
+   "structure": "eighteen + settings 10",
+   "rule": "even(k1,a,b)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "not run (more than 20 distinctions; projection only, as registered)"
+  },
+  {
+   "structure": "eighteen + settings 10",
+   "rule": "even(x2,d,e)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "not run (more than 20 distinctions; projection only, as registered)"
+  },
+  {
+   "structure": "eighteen + settings 10",
+   "rule": "odd(x3,d,e)",
+   "induced": [
+    "001",
+    "010",
+    "100",
+    "111"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "not run (more than 20 distinctions; projection only, as registered)"
+  },
+  {
+   "structure": "eighteen + settings 10",
+   "rule": "even(c2,d,e)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "not run (more than 20 distinctions; projection only, as registered)"
+  },
+  {
+   "structure": "eighteen + settings 10",
+   "rule": "odd(c3,d,e)",
+   "induced": [
+    "001",
+    "010",
+    "100",
+    "111"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "not run (more than 20 distinctions; projection only, as registered)"
+  },
+  {
+   "structure": "eighteen + settings 10",
+   "rule": "nae(c1,c2,n2)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "not run (more than 20 distinctions; projection only, as registered)"
+  },
+  {
+   "structure": "eighteen + settings 10",
+   "rule": "nae(k1,c3,n1)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "not run (more than 20 distinctions; projection only, as registered)"
+  },
+  {
+   "structure": "eighteen + settings 10",
+   "rule": "even(n2,g,h)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "not run (more than 20 distinctions; projection only, as registered)"
+  },
+  {
+   "structure": "eighteen + settings 10",
+   "rule": "odd(s2,g,h)",
+   "induced": [
+    "001",
+    "010",
+    "100",
+    "111"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "not run (more than 20 distinctions; projection only, as registered)"
+  },
+  {
+   "structure": "eighteen + settings 10",
+   "rule": "even(n1,u,v)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "not run (more than 20 distinctions; projection only, as registered)"
+  },
+  {
+   "structure": "eighteen + settings 10",
+   "rule": "odd(s1,u,v)",
+   "induced": [
+    "001",
+    "010",
+    "100",
+    "111"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "not run (more than 20 distinctions; projection only, as registered)"
+  },
+  {
+   "structure": "eighteen + settings 10",
+   "rule": "even(y1,p,q)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "not run (more than 20 distinctions; projection only, as registered)"
+  },
+  {
+   "structure": "eighteen + settings 10",
+   "rule": "even(s1,p,q)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "not run (more than 20 distinctions; projection only, as registered)"
+  },
+  {
+   "structure": "eighteen + settings 10",
+   "rule": "even(y2,r,t)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "not run (more than 20 distinctions; projection only, as registered)"
+  },
+  {
+   "structure": "eighteen + settings 10",
+   "rule": "even(s2,r,t)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "not run (more than 20 distinctions; projection only, as registered)"
+  },
+  {
+   "structure": "eighteen + settings 10",
+   "rule": "odd(y3,r,t)",
+   "induced": [
+    "001",
+    "010",
+    "100",
+    "111"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "not run (more than 20 distinctions; projection only, as registered)"
+  },
+  {
+   "structure": "eighteen + settings 10",
+   "rule": "nae(x1,x3,za)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "not run (more than 20 distinctions; projection only, as registered)"
+  },
+  {
+   "structure": "eighteen + settings 10",
+   "rule": "nae(y1,y2,zb)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "not run (more than 20 distinctions; projection only, as registered)"
+  },
+  {
+   "structure": "eleven + settings 11",
+   "rule": "even(x1,x2,x3,c)",
+   "induced": [
+    "0011",
+    "0101",
+    "1010",
+    "1100"
+   ],
+   "K1": true,
+   "K2": false,
+   "K3": true,
+   "whole": false,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "eleven + settings 11",
+   "rule": "nae(c,x2,s1)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "eleven + settings 11",
+   "rule": "nae(c,x3,s2)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "eleven + settings 11",
+   "rule": "even(x2,h1,h2)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "eleven + settings 11",
+   "rule": "odd(x3,h1,h2)",
+   "induced": [
+    "001",
+    "010",
+    "100",
+    "111"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "eleven + settings 11",
+   "rule": "even(y1,y2,y3,t)",
+   "induced": [
+    "0011",
+    "0101",
+    "1010",
+    "1100"
+   ],
+   "K1": true,
+   "K2": false,
+   "K3": true,
+   "whole": false,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "eleven + settings 11",
+   "rule": "even(t,m1,m2)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "eleven + settings 11",
+   "rule": "even(s1,m1,m2)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "eleven + settings 11",
+   "rule": "even(y2,k1,k2)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "eleven + settings 11",
+   "rule": "odd(y3,k1,k2)",
+   "induced": [
+    "001",
+    "010",
+    "100",
+    "111"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "eleven + settings 11",
+   "rule": "odd(s2,k1,k2)",
+   "induced": [
+    "001",
+    "010",
+    "100",
+    "111"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "eleven + settings 11",
+   "rule": "nae(x1,x3,za)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "eleven + settings 11",
+   "rule": "nae(y1,y3,zb)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "smallest gain finished 11",
+   "rule": "nae(x1,x3,s1)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "smallest gain finished 11",
+   "rule": "even(x1,h1,h2)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "smallest gain finished 11",
+   "rule": "nae(x2,x3,s2)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "smallest gain finished 11",
+   "rule": "odd(x2,h1,h2)",
+   "induced": [
+    "001",
+    "010",
+    "100",
+    "111"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "smallest gain finished 11",
+   "rule": "even(y1,k1,k2)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "smallest gain finished 11",
+   "rule": "odd(s1,k1,k2)",
+   "induced": [
+    "001",
+    "010",
+    "100",
+    "111"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "smallest gain finished 11",
+   "rule": "even(y1,y2,y3,s2)",
+   "induced": [
+    "0000",
+    "0011",
+    "0101",
+    "0110",
+    "1001",
+    "1010",
+    "1100",
+    "1111"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "smallest gain finished 11",
+   "rule": "nae(y3,s2,f)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "smallest gain finished 11",
+   "rule": "nae(y2,y1,g)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "smallest gain finished 11",
+   "rule": "nae(x1,x3,za)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "smallest gain finished 11",
+   "rule": "nae(y1,y3,zb)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "seven + settings 11",
+   "rule": "nae(x1,x2,s1)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "seven + settings 11",
+   "rule": "nae(x1,x3,s2)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "seven + settings 11",
+   "rule": "even(x2,Ah1,Ah2)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "seven + settings 11",
+   "rule": "odd(x3,Ah1,Ah2)",
+   "induced": [
+    "001",
+    "010",
+    "100",
+    "111"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "seven + settings 11",
+   "rule": "even(y2,Bh1,Bh2)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "seven + settings 11",
+   "rule": "odd(s1,Bh1,Bh2)",
+   "induced": [
+    "001",
+    "010",
+    "100",
+    "111"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "seven + settings 11",
+   "rule": "odd(y1,y2,y3,s2)",
+   "induced": [
+    "0001",
+    "0010",
+    "0100",
+    "0111",
+    "1000",
+    "1011",
+    "1101",
+    "1110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "seven + settings 11",
+   "rule": "nae(x1,x3,za)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "seven + settings 11",
+   "rule": "nae(y1,y3,zb)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "eight + settings 11",
+   "rule": "nae(x1,x2,s1)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "eight + settings 11",
+   "rule": "nae(x1,x3,s2)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "eight + settings 11",
+   "rule": "even(x2,Ah1,Ah2)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "eight + settings 11",
+   "rule": "odd(x3,Ah1,Ah2)",
+   "induced": [
+    "001",
+    "010",
+    "100",
+    "111"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "eight + settings 11",
+   "rule": "even(y2,Bh1,Bh2)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "eight + settings 11",
+   "rule": "odd(y3,Bh1,Bh2)",
+   "induced": [
+    "001",
+    "010",
+    "100",
+    "111"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "eight + settings 11",
+   "rule": "odd(s2,Bh1,Bh2)",
+   "induced": [
+    "001",
+    "010",
+    "100",
+    "111"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "eight + settings 11",
+   "rule": "even(y1,y2,y3,s1)",
+   "induced": [
+    "0011",
+    "0101",
+    "1010",
+    "1100"
+   ],
+   "K1": true,
+   "K2": false,
+   "K3": true,
+   "whole": false,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "eight + settings 11",
+   "rule": "nae(x1,x3,za)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "eight + settings 11",
+   "rule": "nae(y1,y3,zb)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "nine + settings 11",
+   "rule": "nae(x1,x2,n2)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "nine + settings 11",
+   "rule": "nae(x1,x3,n1)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "nine + settings 11",
+   "rule": "even(x2,d,e)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "nine + settings 11",
+   "rule": "odd(x3,d,e)",
+   "induced": [
+    "001",
+    "010",
+    "100",
+    "111"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "nine + settings 11",
+   "rule": "even(y1,p,q)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "nine + settings 11",
+   "rule": "odd(n1,p,q)",
+   "induced": [
+    "001",
+    "010",
+    "100",
+    "111"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "nine + settings 11",
+   "rule": "even(y2,r,t)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "nine + settings 11",
+   "rule": "odd(n2,r,t)",
+   "induced": [
+    "001",
+    "010",
+    "100",
+    "111"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "nine + settings 11",
+   "rule": "odd(y3,r,t)",
+   "induced": [
+    "001",
+    "010",
+    "100",
+    "111"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "nine + settings 11",
+   "rule": "nae(x1,x3,za)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "nine + settings 11",
+   "rule": "nae(y1,y3,zb)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "agrees"
+  },
+  {
+   "structure": "eighteen + settings 11",
+   "rule": "even(x1,a,b)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "not run (more than 20 distinctions; projection only, as registered)"
+  },
+  {
+   "structure": "eighteen + settings 11",
+   "rule": "even(c1,a,b)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "not run (more than 20 distinctions; projection only, as registered)"
+  },
+  {
+   "structure": "eighteen + settings 11",
+   "rule": "even(k1,a,b)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "not run (more than 20 distinctions; projection only, as registered)"
+  },
+  {
+   "structure": "eighteen + settings 11",
+   "rule": "even(x2,d,e)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "not run (more than 20 distinctions; projection only, as registered)"
+  },
+  {
+   "structure": "eighteen + settings 11",
+   "rule": "odd(x3,d,e)",
+   "induced": [
+    "001",
+    "010",
+    "100",
+    "111"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "not run (more than 20 distinctions; projection only, as registered)"
+  },
+  {
+   "structure": "eighteen + settings 11",
+   "rule": "even(c2,d,e)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "not run (more than 20 distinctions; projection only, as registered)"
+  },
+  {
+   "structure": "eighteen + settings 11",
+   "rule": "odd(c3,d,e)",
+   "induced": [
+    "001",
+    "010",
+    "100",
+    "111"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "not run (more than 20 distinctions; projection only, as registered)"
+  },
+  {
+   "structure": "eighteen + settings 11",
+   "rule": "nae(c1,c2,n2)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "not run (more than 20 distinctions; projection only, as registered)"
+  },
+  {
+   "structure": "eighteen + settings 11",
+   "rule": "nae(k1,c3,n1)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "not run (more than 20 distinctions; projection only, as registered)"
+  },
+  {
+   "structure": "eighteen + settings 11",
+   "rule": "even(n2,g,h)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "not run (more than 20 distinctions; projection only, as registered)"
+  },
+  {
+   "structure": "eighteen + settings 11",
+   "rule": "odd(s2,g,h)",
+   "induced": [
+    "001",
+    "010",
+    "100",
+    "111"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "not run (more than 20 distinctions; projection only, as registered)"
+  },
+  {
+   "structure": "eighteen + settings 11",
+   "rule": "even(n1,u,v)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "not run (more than 20 distinctions; projection only, as registered)"
+  },
+  {
+   "structure": "eighteen + settings 11",
+   "rule": "odd(s1,u,v)",
+   "induced": [
+    "001",
+    "010",
+    "100",
+    "111"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "not run (more than 20 distinctions; projection only, as registered)"
+  },
+  {
+   "structure": "eighteen + settings 11",
+   "rule": "even(y1,p,q)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "not run (more than 20 distinctions; projection only, as registered)"
+  },
+  {
+   "structure": "eighteen + settings 11",
+   "rule": "even(s1,p,q)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "not run (more than 20 distinctions; projection only, as registered)"
+  },
+  {
+   "structure": "eighteen + settings 11",
+   "rule": "even(y2,r,t)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "not run (more than 20 distinctions; projection only, as registered)"
+  },
+  {
+   "structure": "eighteen + settings 11",
+   "rule": "even(s2,r,t)",
+   "induced": [
+    "000",
+    "011",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "not run (more than 20 distinctions; projection only, as registered)"
+  },
+  {
+   "structure": "eighteen + settings 11",
+   "rule": "odd(y3,r,t)",
+   "induced": [
+    "001",
+    "010",
+    "100",
+    "111"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "not run (more than 20 distinctions; projection only, as registered)"
+  },
+  {
+   "structure": "eighteen + settings 11",
+   "rule": "nae(x1,x3,za)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "not run (more than 20 distinctions; projection only, as registered)"
+  },
+  {
+   "structure": "eighteen + settings 11",
+   "rule": "nae(y1,y3,zb)",
+   "induced": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "K1": true,
+   "K2": true,
+   "K3": true,
+   "whole": true,
+   "own": true,
+   "canonical": "not run (more than 20 distinctions; projection only, as registered)"
+  }
+ ],
+ "beyond the 33": [
+  {
+   "source": "ONE-PARENT-REREAD uniform",
+   "histories": 16,
+   "with a failing rule": 8,
+   "rules": {
+    "nae(x1,x2,za) at (0, 0)": 8,
+    "nae(x1,x2,za) at (0, 1)": 8
+   },
+   "finish scores of the histories whose every rule passes": {
+    "31/15": 4,
+    "61/30": 4
+   },
+   "canonical": {
+    "canonical: agrees": 64
+   }
+  },
+  {
+   "source": "ONE-PARENT-REREAD mixed",
+   "histories": 664,
+   "with a failing rule": 272,
+   "rules": {
+    "nae(x1,x2,za) at (0, 0)": 272,
+    "nae(x1,x2,za) at (0, 1)": 272
+   },
+   "finish scores of the histories whose every rule passes": {
+    "55/27": 96,
+    "31/15": 4,
+    "109/54": 288,
+    "61/30": 4
+   },
+   "canonical": {
+    "canonical: agrees": 1098,
+    "canonical check not run (cut)": 1558
+   }
+  },
+  {
+   "source": "REREAD-BIRTHS rule R",
+   "histories": 214,
+   "with a failing rule": 33,
+   "rules": {
+    "even(Bh1,Bh2,Bh3,Bh4) at (0, 0)": 33,
+    "odd(y3,s2,Bh1) at (0, 0)": 33,
+    "even(y2,s1,Bh1) at (0, 0)": 33,
+    "even(Bh1,Bh2,Bh3,Bh4) at (0, 1)": 33,
+    "odd(y3,s2,Bh1) at (0, 1)": 33,
+    "even(y2,s1,Bh1) at (0, 1)": 33,
+    "even(Bh1,Bh2,Bh3,Bh4) at (1, 0)": 33,
+    "odd(y3,s2,Bh1) at (1, 0)": 33,
+    "even(y2,s1,Bh1) at (1, 0)": 33,
+    "even(Bh1,Bh2,Bh3,Bh4) at (1, 1)": 33,
+    "odd(y3,s2,Bh1) at (1, 1)": 33,
+    "even(y2,s1,Bh1) at (1, 1)": 33
+   },
+   "finish scores of the histories whose every rule passes": {
+    "1135/567": 27,
+    "127/63": 50,
+    "6175/3087": 36,
+    "973/486": 5,
+    "109/54": 8,
+    "11162/5535": 1,
+    "5293/2646": 54
+   },
+   "canonical": {
+    "not run (more than 20 distinctions; projection only, as registered)": 856
+   }
+  }
+ ],
+ "walls": {
+  "part 1": 18.5,
+  "part 8 early": 15.8,
+  "part 2": 298.2,
+  "part 3": 15.5,
+  "part 4": 0.9,
+  "part 5": 52.6,
+  "part 6": 13.9,
+  "part 7": 11.4,
+  "part 8 remainder": 1190.0,
+  "part 9": 406.5
+ }
+}

@@ -1,0 +1,1631 @@
+{
+ "part": 4,
+ "examples": [
+  {
+   "example": "E0",
+   "breaks (TD 8.2)": "none",
+   "counting": "from the start",
+   "score_all": "2",
+   "score_parity": "2",
+   "score_parity_abs": "2",
+   "change_first": "0",
+   "change_second": "0",
+   "hidden": true,
+   "kept": {
+    "(0, 0)": "1",
+    "(0, 1)": "1",
+    "(1, 0)": "1",
+    "(1, 1)": "1"
+   },
+   "hypotheses (counting from the start)": {
+    "h0": true,
+    "h1p": {
+     "old places held in S_s": true,
+     "same fresh for both settings": true,
+     "fresh held by no knot of the other side": true
+    },
+    "weight lost at the setting stage": false,
+    "weight lost at a later stage": false,
+    "lost-weight rule": true,
+    "h2": true,
+    "h3p": {
+     "fresh sets disjoint": true,
+     "no later knot holds fresh of both": true
+    },
+    "h4": {
+     "no later loss (or the lost-weight rule)": true,
+     "records hold only S_s and own setting-fresh": true
+    },
+    "fails": [],
+    "met": true
+   },
+   "P3: a score above 2 or a record changed": false,
+   "all rows": {
+    "name": "E0",
+    "variants": [
+     {
+      "label": "only",
+      "info": {
+       "allowed at the finish": {
+        "(0, 0)": 144,
+        "(0, 1)": 144,
+        "(1, 0)": 144,
+        "(1, 1)": 144
+       },
+       "allowed at S_s": 64,
+       "distinctions": 18,
+       "knots at the finish": {
+        "(0, 0)": 13,
+        "(0, 1)": 13,
+        "(1, 0)": 13,
+        "(1, 1)": 13
+       }
+      },
+      "finished": {
+       "(0, 0)": [
+        "even(x1,x2,x3,c)",
+        "nae(c,x2,s1)",
+        "nae(c,x3,s2)",
+        "even(x2,h1,h2)",
+        "odd(x3,h1,h2)",
+        "even(y1,y2,y3,t)",
+        "even(t,m1,m2)",
+        "even(s1,m1,m2)",
+        "even(y2,k1,k2)",
+        "odd(y3,k1,k2)",
+        "odd(s2,k1,k2)",
+        "nae(x1,x2,za)",
+        "nae(y1,y2,zb)"
+       ],
+       "(0, 1)": [
+        "even(x1,x2,x3,c)",
+        "nae(c,x2,s1)",
+        "nae(c,x3,s2)",
+        "even(x2,h1,h2)",
+        "odd(x3,h1,h2)",
+        "even(y1,y2,y3,t)",
+        "even(t,m1,m2)",
+        "even(s1,m1,m2)",
+        "even(y2,k1,k2)",
+        "odd(y3,k1,k2)",
+        "odd(s2,k1,k2)",
+        "nae(x1,x2,za)",
+        "nae(y1,y3,zb)"
+       ],
+       "(1, 0)": [
+        "even(x1,x2,x3,c)",
+        "nae(c,x2,s1)",
+        "nae(c,x3,s2)",
+        "even(x2,h1,h2)",
+        "odd(x3,h1,h2)",
+        "even(y1,y2,y3,t)",
+        "even(t,m1,m2)",
+        "even(s1,m1,m2)",
+        "even(y2,k1,k2)",
+        "odd(y3,k1,k2)",
+        "odd(s2,k1,k2)",
+        "nae(x1,x3,za)",
+        "nae(y1,y2,zb)"
+       ],
+       "(1, 1)": [
+        "even(x1,x2,x3,c)",
+        "nae(c,x2,s1)",
+        "nae(c,x3,s2)",
+        "even(x2,h1,h2)",
+        "odd(x3,h1,h2)",
+        "even(y1,y2,y3,t)",
+        "even(t,m1,m2)",
+        "even(s1,m1,m2)",
+        "even(y2,k1,k2)",
+        "odd(y3,k1,k2)",
+        "odd(s2,k1,k2)",
+        "nae(x1,x3,za)",
+        "nae(y1,y3,zb)"
+       ]
+      },
+      "rows": {
+       "from the start": {
+        "score_all": "2",
+        "score_parity": "2",
+        "score_parity_abs": "2",
+        "change_first": "0",
+        "change_second": "0",
+        "hidden": true,
+        "kept": {
+         "(0, 0)": "1",
+         "(0, 1)": "1",
+         "(1, 0)": "1",
+         "(1, 1)": "1"
+        },
+        "hypotheses": {
+         "h0": true,
+         "h1p": {
+          "old places held in S_s": true,
+          "same fresh for both settings": true,
+          "fresh held by no knot of the other side": true
+         },
+         "weight lost at the setting stage": false,
+         "weight lost at a later stage": false,
+         "lost-weight rule": true,
+         "h2": true,
+         "h3p": {
+          "fresh sets disjoint": true,
+          "no later knot holds fresh of both": true
+         },
+         "h4": {
+          "no later loss (or the lost-weight rule)": true,
+          "records hold only S_s and own setting-fresh": true
+         },
+         "fails": [],
+         "met": true
+        },
+        "verdict": "hypotheses met and at most 2 (exactly 2 over all two-valued functions), both records hidden"
+       },
+       "from the finish": {
+        "score_all": "20/9",
+        "score_parity": "20/9",
+        "score_parity_abs": "20/9",
+        "change_first": "0",
+        "change_second": "0",
+        "hidden": true,
+        "kept": {
+         "(0, 0)": "1",
+         "(0, 1)": "1",
+         "(1, 0)": "1",
+         "(1, 1)": "1"
+        }
+       },
+       "mixed stage (the first observer first)": {
+        "score_all": "2",
+        "score_parity": "2",
+        "score_parity_abs": "2",
+        "change_first": "0",
+        "change_second": "0",
+        "hidden": true,
+        "kept": {
+         "(0, 0)": "1",
+         "(0, 1)": "1",
+         "(1, 0)": "1",
+         "(1, 1)": "1"
+        }
+       },
+       "mixed stage (the second observer first)": {
+        "score_all": "2",
+        "score_parity": "2",
+        "score_parity_abs": "2",
+        "change_first": "0",
+        "change_second": "0",
+        "hidden": true,
+        "kept": {
+         "(0, 0)": "1",
+         "(0, 1)": "1",
+         "(1, 0)": "1",
+         "(1, 1)": "1"
+        }
+       }
+      }
+     }
+    ]
+   }
+  },
+  {
+   "example": "E1",
+   "breaks (TD 8.2)": "the premise (no start before the settings)",
+   "counting": "from the finish",
+   "score_all": "20/9",
+   "score_parity": "20/9",
+   "score_parity_abs": "20/9",
+   "change_first": "0",
+   "change_second": "0",
+   "hidden": true,
+   "kept": {
+    "(0, 0)": "1",
+    "(0, 1)": "1",
+    "(1, 0)": "1",
+    "(1, 1)": "1"
+   },
+   "hypotheses (counting from the start)": {
+    "h0": true,
+    "h1p": {
+     "old places held in S_s": true,
+     "same fresh for both settings": true,
+     "fresh held by no knot of the other side": true
+    },
+    "weight lost at the setting stage": false,
+    "weight lost at a later stage": false,
+    "lost-weight rule": true,
+    "h2": true,
+    "h3p": {
+     "fresh sets disjoint": true,
+     "no later knot holds fresh of both": true
+    },
+    "h4": {
+     "no later loss (or the lost-weight rule)": true,
+     "records hold only S_s and own setting-fresh": true
+    },
+    "fails": [],
+    "met": true
+   },
+   "P3: a score above 2 or a record changed": true,
+   "all rows": {
+    "name": "E1",
+    "variants": [
+     {
+      "label": "only",
+      "info": {
+       "allowed at the finish": {
+        "(0, 0)": 144,
+        "(0, 1)": 144,
+        "(1, 0)": 144,
+        "(1, 1)": 144
+       },
+       "allowed at S_s": 64,
+       "distinctions": 18,
+       "knots at the finish": {
+        "(0, 0)": 13,
+        "(0, 1)": 13,
+        "(1, 0)": 13,
+        "(1, 1)": 13
+       }
+      },
+      "finished": {
+       "(0, 0)": [
+        "even(x1,x2,x3,c)",
+        "nae(c,x2,s1)",
+        "nae(c,x3,s2)",
+        "even(x2,h1,h2)",
+        "odd(x3,h1,h2)",
+        "even(y1,y2,y3,t)",
+        "even(t,m1,m2)",
+        "even(s1,m1,m2)",
+        "even(y2,k1,k2)",
+        "odd(y3,k1,k2)",
+        "odd(s2,k1,k2)",
+        "nae(x1,x2,za)",
+        "nae(y1,y2,zb)"
+       ],
+       "(0, 1)": [
+        "even(x1,x2,x3,c)",
+        "nae(c,x2,s1)",
+        "nae(c,x3,s2)",
+        "even(x2,h1,h2)",
+        "odd(x3,h1,h2)",
+        "even(y1,y2,y3,t)",
+        "even(t,m1,m2)",
+        "even(s1,m1,m2)",
+        "even(y2,k1,k2)",
+        "odd(y3,k1,k2)",
+        "odd(s2,k1,k2)",
+        "nae(x1,x2,za)",
+        "nae(y1,y3,zb)"
+       ],
+       "(1, 0)": [
+        "even(x1,x2,x3,c)",
+        "nae(c,x2,s1)",
+        "nae(c,x3,s2)",
+        "even(x2,h1,h2)",
+        "odd(x3,h1,h2)",
+        "even(y1,y2,y3,t)",
+        "even(t,m1,m2)",
+        "even(s1,m1,m2)",
+        "even(y2,k1,k2)",
+        "odd(y3,k1,k2)",
+        "odd(s2,k1,k2)",
+        "nae(x1,x3,za)",
+        "nae(y1,y2,zb)"
+       ],
+       "(1, 1)": [
+        "even(x1,x2,x3,c)",
+        "nae(c,x2,s1)",
+        "nae(c,x3,s2)",
+        "even(x2,h1,h2)",
+        "odd(x3,h1,h2)",
+        "even(y1,y2,y3,t)",
+        "even(t,m1,m2)",
+        "even(s1,m1,m2)",
+        "even(y2,k1,k2)",
+        "odd(y3,k1,k2)",
+        "odd(s2,k1,k2)",
+        "nae(x1,x3,za)",
+        "nae(y1,y3,zb)"
+       ]
+      },
+      "rows": {
+       "from the start": {
+        "score_all": "2",
+        "score_parity": "2",
+        "score_parity_abs": "2",
+        "change_first": "0",
+        "change_second": "0",
+        "hidden": true,
+        "kept": {
+         "(0, 0)": "1",
+         "(0, 1)": "1",
+         "(1, 0)": "1",
+         "(1, 1)": "1"
+        },
+        "hypotheses": {
+         "h0": true,
+         "h1p": {
+          "old places held in S_s": true,
+          "same fresh for both settings": true,
+          "fresh held by no knot of the other side": true
+         },
+         "weight lost at the setting stage": false,
+         "weight lost at a later stage": false,
+         "lost-weight rule": true,
+         "h2": true,
+         "h3p": {
+          "fresh sets disjoint": true,
+          "no later knot holds fresh of both": true
+         },
+         "h4": {
+          "no later loss (or the lost-weight rule)": true,
+          "records hold only S_s and own setting-fresh": true
+         },
+         "fails": [],
+         "met": true
+        },
+        "verdict": "hypotheses met and at most 2 (exactly 2 over all two-valued functions), both records hidden"
+       },
+       "from the finish": {
+        "score_all": "20/9",
+        "score_parity": "20/9",
+        "score_parity_abs": "20/9",
+        "change_first": "0",
+        "change_second": "0",
+        "hidden": true,
+        "kept": {
+         "(0, 0)": "1",
+         "(0, 1)": "1",
+         "(1, 0)": "1",
+         "(1, 1)": "1"
+        }
+       },
+       "mixed stage (the first observer first)": {
+        "score_all": "2",
+        "score_parity": "2",
+        "score_parity_abs": "2",
+        "change_first": "0",
+        "change_second": "0",
+        "hidden": true,
+        "kept": {
+         "(0, 0)": "1",
+         "(0, 1)": "1",
+         "(1, 0)": "1",
+         "(1, 1)": "1"
+        }
+       },
+       "mixed stage (the second observer first)": {
+        "score_all": "2",
+        "score_parity": "2",
+        "score_parity_abs": "2",
+        "change_first": "0",
+        "change_second": "0",
+        "hidden": true,
+        "kept": {
+         "(0, 0)": "1",
+         "(0, 1)": "1",
+         "(1, 0)": "1",
+         "(1, 1)": "1"
+        }
+       }
+      }
+     }
+    ]
+   }
+  },
+  {
+   "example": "E2",
+   "breaks (TD 8.2)": "h1\u2032, and h4's first clause as a consequence",
+   "counting": "from the start (nothing), renormalised",
+   "order": [
+    8,
+    11,
+    3,
+    1,
+    12,
+    9,
+    2,
+    6,
+    5,
+    10,
+    7,
+    4,
+    0
+   ],
+   "in class": false,
+   "class detail": {
+    "first setting knot": false,
+    "second setting knot": false
+   },
+   "score_all": "104/45",
+   "score_parity": "104/45",
+   "score_parity_abs": "104/45",
+   "change_first": "0",
+   "change_second": "0",
+   "hidden": true,
+   "weight lost": {
+    "(0, 0)": "35/36",
+    "(0, 1)": "71/72",
+    "(1, 0)": "139/144",
+    "(1, 1)": "283/288"
+   },
+   "P3: a score above 2 or a record changed": true
+  },
+  {
+   "example": "E3",
+   "breaks (TD 8.2)": "h2 (renormalised)",
+   "counting": "from the start",
+   "score_all": "7/3",
+   "score_parity": "7/3",
+   "score_parity_abs": "7/3",
+   "change_first": "0",
+   "change_second": "1/6",
+   "hidden": false,
+   "kept": {
+    "(0, 0)": "3/4",
+    "(0, 1)": "3/4",
+    "(1, 0)": "1/2",
+    "(1, 1)": "1/2"
+   },
+   "hypotheses (counting from the start)": {
+    "h0": true,
+    "h1p": {
+     "old places held in S_s": true,
+     "same fresh for both settings": true,
+     "fresh held by no knot of the other side": true
+    },
+    "weight lost at the setting stage": true,
+    "weight lost at a later stage": false,
+    "lost-weight rule": false,
+    "h2": false,
+    "h3p": {
+     "fresh sets disjoint": true,
+     "no later knot holds fresh of both": true
+    },
+    "h4": {
+     "no later loss (or the lost-weight rule)": true,
+     "records hold only S_s and own setting-fresh": true
+    },
+    "fails": [
+     "h2"
+    ],
+    "met": false
+   },
+   "P3: a score above 2 or a record changed": true,
+   "all rows": {
+    "name": "E3",
+    "variants": [
+     {
+      "label": "only",
+      "info": {
+       "allowed at the finish": {
+        "(0, 0)": 80,
+        "(0, 1)": 64,
+        "(1, 0)": 48,
+        "(1, 1)": 48
+       },
+       "allowed at S_s": 64,
+       "distinctions": 17,
+       "knots at the finish": {
+        "(0, 0)": 13,
+        "(0, 1)": 13,
+        "(1, 0)": 13,
+        "(1, 1)": 13
+       }
+      },
+      "finished": {
+       "(0, 0)": [
+        "even(x1,x2,x3,c)",
+        "nae(c,x2,s1)",
+        "nae(c,x3,s2)",
+        "even(x2,h1,h2)",
+        "odd(x3,h1,h2)",
+        "even(y1,y2,y3,t)",
+        "even(t,m1,m2)",
+        "even(s1,m1,m2)",
+        "even(y2,k1,k2)",
+        "odd(y3,k1,k2)",
+        "odd(s2,k1,k2)",
+        "nae(x1,x2,s1)",
+        "nae(y1,y2,zb)"
+       ],
+       "(0, 1)": [
+        "even(x1,x2,x3,c)",
+        "nae(c,x2,s1)",
+        "nae(c,x3,s2)",
+        "even(x2,h1,h2)",
+        "odd(x3,h1,h2)",
+        "even(y1,y2,y3,t)",
+        "even(t,m1,m2)",
+        "even(s1,m1,m2)",
+        "even(y2,k1,k2)",
+        "odd(y3,k1,k2)",
+        "odd(s2,k1,k2)",
+        "nae(x1,x2,s1)",
+        "nae(y1,y3,zb)"
+       ],
+       "(1, 0)": [
+        "even(x1,x2,x3,c)",
+        "nae(c,x2,s1)",
+        "nae(c,x3,s2)",
+        "even(x2,h1,h2)",
+        "odd(x3,h1,h2)",
+        "even(y1,y2,y3,t)",
+        "even(t,m1,m2)",
+        "even(s1,m1,m2)",
+        "even(y2,k1,k2)",
+        "odd(y3,k1,k2)",
+        "odd(s2,k1,k2)",
+        "nae(x1,x3,s1)",
+        "nae(y1,y2,zb)"
+       ],
+       "(1, 1)": [
+        "even(x1,x2,x3,c)",
+        "nae(c,x2,s1)",
+        "nae(c,x3,s2)",
+        "even(x2,h1,h2)",
+        "odd(x3,h1,h2)",
+        "even(y1,y2,y3,t)",
+        "even(t,m1,m2)",
+        "even(s1,m1,m2)",
+        "even(y2,k1,k2)",
+        "odd(y3,k1,k2)",
+        "odd(s2,k1,k2)",
+        "nae(x1,x3,s1)",
+        "nae(y1,y3,zb)"
+       ]
+      },
+      "rows": {
+       "from the start": {
+        "score_all": "7/3",
+        "score_parity": "7/3",
+        "score_parity_abs": "7/3",
+        "change_first": "0",
+        "change_second": "1/6",
+        "hidden": false,
+        "kept": {
+         "(0, 0)": "3/4",
+         "(0, 1)": "3/4",
+         "(1, 0)": "1/2",
+         "(1, 1)": "1/2"
+        },
+        "hypotheses": {
+         "h0": true,
+         "h1p": {
+          "old places held in S_s": true,
+          "same fresh for both settings": true,
+          "fresh held by no knot of the other side": true
+         },
+         "weight lost at the setting stage": true,
+         "weight lost at a later stage": false,
+         "lost-weight rule": false,
+         "h2": false,
+         "h3p": {
+          "fresh sets disjoint": true,
+          "no later knot holds fresh of both": true
+         },
+         "h4": {
+          "no later loss (or the lost-weight rule)": true,
+          "records hold only S_s and own setting-fresh": true
+         },
+         "fails": [
+          "h2"
+         ],
+         "met": false
+        },
+        "verdict": "a hypothesis fails (h2), score 7/3"
+       },
+       "from the finish": {
+        "score_all": "44/15",
+        "score_parity": "44/15",
+        "score_parity_abs": "44/15",
+        "change_first": "1/3",
+        "change_second": "1/6",
+        "hidden": false,
+        "kept": {
+         "(0, 0)": "1",
+         "(0, 1)": "1",
+         "(1, 0)": "1",
+         "(1, 1)": "1"
+        }
+       },
+       "mixed stage (the first observer first)": {
+        "score_all": "7/3",
+        "score_parity": "7/3",
+        "score_parity_abs": "7/3",
+        "change_first": "0",
+        "change_second": "1/6",
+        "hidden": false,
+        "kept": {
+         "(0, 0)": "1",
+         "(0, 1)": "1",
+         "(1, 0)": "1",
+         "(1, 1)": "1"
+        }
+       },
+       "mixed stage (the second observer first)": {
+        "score_all": "44/15",
+        "score_parity": "44/15",
+        "score_parity_abs": "44/15",
+        "change_first": "1/3",
+        "change_second": "1/6",
+        "hidden": false,
+        "kept": {
+         "(0, 0)": "5/6",
+         "(0, 1)": "2/3",
+         "(1, 0)": "1/2",
+         "(1, 1)": "1/2"
+        }
+       }
+      }
+     }
+    ]
+   }
+  },
+  {
+   "example": "E4",
+   "breaks (TD 8.2)": "h3\u2032",
+   "counting": "from the start",
+   "score_all": "17/6",
+   "score_parity": "17/6",
+   "score_parity_abs": "17/6",
+   "change_first": "1/3",
+   "change_second": "1/3",
+   "hidden": false,
+   "kept": {
+    "(0, 0)": "3/4",
+    "(0, 1)": "1",
+    "(1, 0)": "3/4",
+    "(1, 1)": "3/4"
+   },
+   "hypotheses (counting from the start)": {
+    "h0": true,
+    "h1p": {
+     "old places held in S_s": true,
+     "same fresh for both settings": true,
+     "fresh held by no knot of the other side": false
+    },
+    "weight lost at the setting stage": true,
+    "weight lost at a later stage": false,
+    "lost-weight rule": false,
+    "h2": false,
+    "h3p": {
+     "fresh sets disjoint": false,
+     "no later knot holds fresh of both": true
+    },
+    "h4": {
+     "no later loss (or the lost-weight rule)": true,
+     "records hold only S_s and own setting-fresh": true
+    },
+    "fails": [
+     "h1\u2032",
+     "h2",
+     "h3\u2032"
+    ],
+    "met": false
+   },
+   "P3: a score above 2 or a record changed": true,
+   "all rows": {
+    "name": "E4",
+    "variants": [
+     {
+      "label": "only",
+      "info": {
+       "allowed at the finish": {
+        "(0, 0)": 64,
+        "(0, 1)": 80,
+        "(1, 0)": 64,
+        "(1, 1)": 64
+       },
+       "allowed at S_s": 64,
+       "distinctions": 17,
+       "knots at the finish": {
+        "(0, 0)": 13,
+        "(0, 1)": 13,
+        "(1, 0)": 13,
+        "(1, 1)": 13
+       }
+      },
+      "finished": {
+       "(0, 0)": [
+        "even(x1,x2,x3,c)",
+        "nae(c,x2,s1)",
+        "nae(c,x3,s2)",
+        "even(x2,h1,h2)",
+        "odd(x3,h1,h2)",
+        "even(y1,y2,y3,t)",
+        "even(t,m1,m2)",
+        "even(s1,m1,m2)",
+        "even(y2,k1,k2)",
+        "odd(y3,k1,k2)",
+        "odd(s2,k1,k2)",
+        "nae(x1,x2,z)",
+        "nae(y1,y2,z)"
+       ],
+       "(0, 1)": [
+        "even(x1,x2,x3,c)",
+        "nae(c,x2,s1)",
+        "nae(c,x3,s2)",
+        "even(x2,h1,h2)",
+        "odd(x3,h1,h2)",
+        "even(y1,y2,y3,t)",
+        "even(t,m1,m2)",
+        "even(s1,m1,m2)",
+        "even(y2,k1,k2)",
+        "odd(y3,k1,k2)",
+        "odd(s2,k1,k2)",
+        "nae(x1,x2,z)",
+        "nae(y1,y3,z)"
+       ],
+       "(1, 0)": [
+        "even(x1,x2,x3,c)",
+        "nae(c,x2,s1)",
+        "nae(c,x3,s2)",
+        "even(x2,h1,h2)",
+        "odd(x3,h1,h2)",
+        "even(y1,y2,y3,t)",
+        "even(t,m1,m2)",
+        "even(s1,m1,m2)",
+        "even(y2,k1,k2)",
+        "odd(y3,k1,k2)",
+        "odd(s2,k1,k2)",
+        "nae(x1,x3,z)",
+        "nae(y1,y2,z)"
+       ],
+       "(1, 1)": [
+        "even(x1,x2,x3,c)",
+        "nae(c,x2,s1)",
+        "nae(c,x3,s2)",
+        "even(x2,h1,h2)",
+        "odd(x3,h1,h2)",
+        "even(y1,y2,y3,t)",
+        "even(t,m1,m2)",
+        "even(s1,m1,m2)",
+        "even(y2,k1,k2)",
+        "odd(y3,k1,k2)",
+        "odd(s2,k1,k2)",
+        "nae(x1,x3,z)",
+        "nae(y1,y3,z)"
+       ]
+      },
+      "rows": {
+       "from the start": {
+        "score_all": "17/6",
+        "score_parity": "17/6",
+        "score_parity_abs": "17/6",
+        "change_first": "1/3",
+        "change_second": "1/3",
+        "hidden": false,
+        "kept": {
+         "(0, 0)": "3/4",
+         "(0, 1)": "1",
+         "(1, 0)": "3/4",
+         "(1, 1)": "3/4"
+        },
+        "hypotheses": {
+         "h0": true,
+         "h1p": {
+          "old places held in S_s": true,
+          "same fresh for both settings": true,
+          "fresh held by no knot of the other side": false
+         },
+         "weight lost at the setting stage": true,
+         "weight lost at a later stage": false,
+         "lost-weight rule": false,
+         "h2": false,
+         "h3p": {
+          "fresh sets disjoint": false,
+          "no later knot holds fresh of both": true
+         },
+         "h4": {
+          "no later loss (or the lost-weight rule)": true,
+          "records hold only S_s and own setting-fresh": true
+         },
+         "fails": [
+          "h1\u2032",
+          "h2",
+          "h3\u2032"
+         ],
+         "met": false
+        },
+        "verdict": "a hypothesis fails (h1\u2032, h2, h3\u2032), score 17/6"
+       },
+       "from the finish": {
+        "score_all": "13/5",
+        "score_parity": "13/5",
+        "score_parity_abs": "13/5",
+        "change_first": "1/4",
+        "change_second": "1/4",
+        "hidden": false,
+        "kept": {
+         "(0, 0)": "1",
+         "(0, 1)": "1",
+         "(1, 0)": "1",
+         "(1, 1)": "1"
+        }
+       },
+       "mixed stage (the first observer first)": {
+        "score_all": "13/5",
+        "score_parity": "13/5",
+        "score_parity_abs": "13/5",
+        "change_first": "1/4",
+        "change_second": "1/4",
+        "hidden": false,
+        "kept": {
+         "(0, 0)": "2/3",
+         "(0, 1)": "5/6",
+         "(1, 0)": "2/3",
+         "(1, 1)": "2/3"
+        }
+       },
+       "mixed stage (the second observer first)": {
+        "score_all": "13/5",
+        "score_parity": "13/5",
+        "score_parity_abs": "13/5",
+        "change_first": "1/4",
+        "change_second": "1/4",
+        "hidden": false,
+        "kept": {
+         "(0, 0)": "2/3",
+         "(0, 1)": "5/6",
+         "(1, 0)": "2/3",
+         "(1, 1)": "2/3"
+        }
+       }
+      }
+     }
+    ]
+   }
+  },
+  {
+   "example": "E5",
+   "breaks (TD 8.2)": "h4, first clause (renormalised)",
+   "counting": "from the start",
+   "score_all": "11/4",
+   "score_parity": "5/2",
+   "score_parity_abs": "5/2",
+   "change_first": "1/4",
+   "change_second": "0",
+   "hidden": false,
+   "kept": {
+    "(0, 0)": "1/2",
+    "(0, 1)": "1/2",
+    "(1, 0)": "1/2",
+    "(1, 1)": "1/2"
+   },
+   "hypotheses (counting from the start)": {
+    "h0": true,
+    "h1p": {
+     "old places held in S_s": true,
+     "same fresh for both settings": true,
+     "fresh held by no knot of the other side": true
+    },
+    "weight lost at the setting stage": false,
+    "weight lost at a later stage": true,
+    "lost-weight rule": false,
+    "h2": true,
+    "h3p": {
+     "fresh sets disjoint": true,
+     "no later knot holds fresh of both": false
+    },
+    "h4": {
+     "no later loss (or the lost-weight rule)": false,
+     "records hold only S_s and own setting-fresh": true
+    },
+    "fails": [
+     "h3\u2032",
+     "h4"
+    ],
+    "met": false
+   },
+   "P3: a score above 2 or a record changed": true,
+   "all rows": {
+    "name": "E5",
+    "variants": [
+     {
+      "label": "only",
+      "info": {
+       "allowed at the finish": {
+        "(0, 0)": 72,
+        "(0, 1)": 72,
+        "(1, 0)": 72,
+        "(1, 1)": 72
+       },
+       "allowed at S_s": 64,
+       "distinctions": 18,
+       "knots at the finish": {
+        "(0, 0)": 14,
+        "(0, 1)": 14,
+        "(1, 0)": 14,
+        "(1, 1)": 14
+       }
+      },
+      "finished": {
+       "(0, 0)": [
+        "even(x1,x2,x3,c)",
+        "nae(c,x2,s1)",
+        "nae(c,x3,s2)",
+        "even(x2,h1,h2)",
+        "odd(x3,h1,h2)",
+        "even(y1,y2,y3,t)",
+        "even(t,m1,m2)",
+        "even(s1,m1,m2)",
+        "even(y2,k1,k2)",
+        "odd(y3,k1,k2)",
+        "odd(s2,k1,k2)",
+        "nae(x1,x2,za)",
+        "nae(y1,y2,zb)",
+        "even(za,zb,x1)"
+       ],
+       "(0, 1)": [
+        "even(x1,x2,x3,c)",
+        "nae(c,x2,s1)",
+        "nae(c,x3,s2)",
+        "even(x2,h1,h2)",
+        "odd(x3,h1,h2)",
+        "even(y1,y2,y3,t)",
+        "even(t,m1,m2)",
+        "even(s1,m1,m2)",
+        "even(y2,k1,k2)",
+        "odd(y3,k1,k2)",
+        "odd(s2,k1,k2)",
+        "nae(x1,x2,za)",
+        "nae(y1,y3,zb)",
+        "even(za,zb,x1)"
+       ],
+       "(1, 0)": [
+        "even(x1,x2,x3,c)",
+        "nae(c,x2,s1)",
+        "nae(c,x3,s2)",
+        "even(x2,h1,h2)",
+        "odd(x3,h1,h2)",
+        "even(y1,y2,y3,t)",
+        "even(t,m1,m2)",
+        "even(s1,m1,m2)",
+        "even(y2,k1,k2)",
+        "odd(y3,k1,k2)",
+        "odd(s2,k1,k2)",
+        "nae(x1,x3,za)",
+        "nae(y1,y2,zb)",
+        "even(za,zb,x1)"
+       ],
+       "(1, 1)": [
+        "even(x1,x2,x3,c)",
+        "nae(c,x2,s1)",
+        "nae(c,x3,s2)",
+        "even(x2,h1,h2)",
+        "odd(x3,h1,h2)",
+        "even(y1,y2,y3,t)",
+        "even(t,m1,m2)",
+        "even(s1,m1,m2)",
+        "even(y2,k1,k2)",
+        "odd(y3,k1,k2)",
+        "odd(s2,k1,k2)",
+        "nae(x1,x3,za)",
+        "nae(y1,y3,zb)",
+        "even(za,zb,x1)"
+       ]
+      },
+      "rows": {
+       "from the start": {
+        "score_all": "11/4",
+        "score_parity": "5/2",
+        "score_parity_abs": "5/2",
+        "change_first": "1/4",
+        "change_second": "0",
+        "hidden": false,
+        "kept": {
+         "(0, 0)": "1/2",
+         "(0, 1)": "1/2",
+         "(1, 0)": "1/2",
+         "(1, 1)": "1/2"
+        },
+        "hypotheses": {
+         "h0": true,
+         "h1p": {
+          "old places held in S_s": true,
+          "same fresh for both settings": true,
+          "fresh held by no knot of the other side": true
+         },
+         "weight lost at the setting stage": false,
+         "weight lost at a later stage": true,
+         "lost-weight rule": false,
+         "h2": true,
+         "h3p": {
+          "fresh sets disjoint": true,
+          "no later knot holds fresh of both": false
+         },
+         "h4": {
+          "no later loss (or the lost-weight rule)": false,
+          "records hold only S_s and own setting-fresh": true
+         },
+         "fails": [
+          "h3\u2032",
+          "h4"
+         ],
+         "met": false
+        },
+        "verdict": "a hypothesis fails (h3\u2032, h4), score 11/4"
+       },
+       "from the finish": {
+        "score_all": "22/9",
+        "score_parity": "22/9",
+        "score_parity_abs": "22/9",
+        "change_first": "2/9",
+        "change_second": "0",
+        "hidden": false,
+        "kept": {
+         "(0, 0)": "1",
+         "(0, 1)": "1",
+         "(1, 0)": "1",
+         "(1, 1)": "1"
+        }
+       },
+       "mixed stage (the first observer first)": {
+        "score_all": "8/3",
+        "score_parity": "8/3",
+        "score_parity_abs": "8/3",
+        "change_first": "1/3",
+        "change_second": "0",
+        "hidden": false,
+        "kept": {
+         "(0, 0)": "1/2",
+         "(0, 1)": "1/2",
+         "(1, 0)": "1/2",
+         "(1, 1)": "1/2"
+        }
+       },
+       "mixed stage (the second observer first)": {
+        "score_all": "5/2",
+        "score_parity": "7/3",
+        "score_parity_abs": "7/3",
+        "change_first": "1/6",
+        "change_second": "0",
+        "hidden": false,
+        "kept": {
+         "(0, 0)": "1/2",
+         "(0, 1)": "1/2",
+         "(1, 0)": "1/2",
+         "(1, 1)": "1/2"
+        }
+       }
+      }
+     }
+    ]
+   }
+  },
+  {
+   "example": "E6",
+   "breaks (TD 8.2)": "h4, record clause",
+   "counting": "from the start",
+   "score_all": "5/2",
+   "score_parity": "5/2",
+   "score_parity_abs": "5/2",
+   "change_first": "1/4",
+   "change_second": "0",
+   "hidden": false,
+   "kept": {
+    "(0, 0)": "1",
+    "(0, 1)": "1",
+    "(1, 0)": "1",
+    "(1, 1)": "1"
+   },
+   "hypotheses (counting from the start)": {
+    "h0": true,
+    "h1p": {
+     "old places held in S_s": true,
+     "same fresh for both settings": true,
+     "fresh held by no knot of the other side": true
+    },
+    "weight lost at the setting stage": false,
+    "weight lost at a later stage": false,
+    "lost-weight rule": true,
+    "h2": true,
+    "h3p": {
+     "fresh sets disjoint": true,
+     "no later knot holds fresh of both": true
+    },
+    "h4": {
+     "no later loss (or the lost-weight rule)": true,
+     "records hold only S_s and own setting-fresh": false
+    },
+    "fails": [
+     "h4"
+    ],
+    "met": false
+   },
+   "P3: a score above 2 or a record changed": true,
+   "all rows": {
+    "name": "E6",
+    "variants": [
+     {
+      "label": "only",
+      "info": {
+       "allowed at the finish": {
+        "(0, 0)": 144,
+        "(0, 1)": 144,
+        "(1, 0)": 144,
+        "(1, 1)": 144
+       },
+       "allowed at S_s": 64,
+       "distinctions": 18,
+       "knots at the finish": {
+        "(0, 0)": 13,
+        "(0, 1)": 13,
+        "(1, 0)": 13,
+        "(1, 1)": 13
+       }
+      },
+      "finished": {
+       "(0, 0)": [
+        "even(x1,x2,x3,c)",
+        "nae(c,x2,s1)",
+        "nae(c,x3,s2)",
+        "even(x2,h1,h2)",
+        "odd(x3,h1,h2)",
+        "even(y1,y2,y3,t)",
+        "even(t,m1,m2)",
+        "even(s1,m1,m2)",
+        "even(y2,k1,k2)",
+        "odd(y3,k1,k2)",
+        "odd(s2,k1,k2)",
+        "nae(x1,x2,za)",
+        "nae(y1,y2,zb)"
+       ],
+       "(0, 1)": [
+        "even(x1,x2,x3,c)",
+        "nae(c,x2,s1)",
+        "nae(c,x3,s2)",
+        "even(x2,h1,h2)",
+        "odd(x3,h1,h2)",
+        "even(y1,y2,y3,t)",
+        "even(t,m1,m2)",
+        "even(s1,m1,m2)",
+        "even(y2,k1,k2)",
+        "odd(y3,k1,k2)",
+        "odd(s2,k1,k2)",
+        "nae(x1,x2,za)",
+        "nae(y1,y3,zb)"
+       ],
+       "(1, 0)": [
+        "even(x1,x2,x3,c)",
+        "nae(c,x2,s1)",
+        "nae(c,x3,s2)",
+        "even(x2,h1,h2)",
+        "odd(x3,h1,h2)",
+        "even(y1,y2,y3,t)",
+        "even(t,m1,m2)",
+        "even(s1,m1,m2)",
+        "even(y2,k1,k2)",
+        "odd(y3,k1,k2)",
+        "odd(s2,k1,k2)",
+        "nae(x1,x3,za)",
+        "nae(y1,y2,zb)"
+       ],
+       "(1, 1)": [
+        "even(x1,x2,x3,c)",
+        "nae(c,x2,s1)",
+        "nae(c,x3,s2)",
+        "even(x2,h1,h2)",
+        "odd(x3,h1,h2)",
+        "even(y1,y2,y3,t)",
+        "even(t,m1,m2)",
+        "even(s1,m1,m2)",
+        "even(y2,k1,k2)",
+        "odd(y3,k1,k2)",
+        "odd(s2,k1,k2)",
+        "nae(x1,x3,za)",
+        "nae(y1,y3,zb)"
+       ]
+      },
+      "rows": {
+       "from the start": {
+        "score_all": "5/2",
+        "score_parity": "5/2",
+        "score_parity_abs": "5/2",
+        "change_first": "1/4",
+        "change_second": "0",
+        "hidden": false,
+        "kept": {
+         "(0, 0)": "1",
+         "(0, 1)": "1",
+         "(1, 0)": "1",
+         "(1, 1)": "1"
+        },
+        "hypotheses": {
+         "h0": true,
+         "h1p": {
+          "old places held in S_s": true,
+          "same fresh for both settings": true,
+          "fresh held by no knot of the other side": true
+         },
+         "weight lost at the setting stage": false,
+         "weight lost at a later stage": false,
+         "lost-weight rule": true,
+         "h2": true,
+         "h3p": {
+          "fresh sets disjoint": true,
+          "no later knot holds fresh of both": true
+         },
+         "h4": {
+          "no later loss (or the lost-weight rule)": true,
+          "records hold only S_s and own setting-fresh": false
+         },
+         "fails": [
+          "h4"
+         ],
+         "met": false
+        },
+        "verdict": "a hypothesis fails (h4), score 5/2"
+       },
+       "from the finish": {
+        "score_all": "22/9",
+        "score_parity": "22/9",
+        "score_parity_abs": "22/9",
+        "change_first": "2/9",
+        "change_second": "0",
+        "hidden": false,
+        "kept": {
+         "(0, 0)": "1",
+         "(0, 1)": "1",
+         "(1, 0)": "1",
+         "(1, 1)": "1"
+        }
+       },
+       "mixed stage (the first observer first)": {
+        "score_all": "8/3",
+        "score_parity": "8/3",
+        "score_parity_abs": "8/3",
+        "change_first": "1/3",
+        "change_second": "0",
+        "hidden": false,
+        "kept": {
+         "(0, 0)": "1",
+         "(0, 1)": "1",
+         "(1, 0)": "1",
+         "(1, 1)": "1"
+        }
+       },
+       "mixed stage (the second observer first)": {
+        "score_all": "7/3",
+        "score_parity": "7/3",
+        "score_parity_abs": "7/3",
+        "change_first": "1/6",
+        "change_second": "0",
+        "hidden": false,
+        "kept": {
+         "(0, 0)": "1",
+         "(0, 1)": "1",
+         "(1, 0)": "1",
+         "(1, 1)": "1"
+        }
+       }
+      }
+     }
+    ]
+   }
+  },
+  {
+   "example": "E7",
+   "breaks (TD 8.2)": "h4, record clause",
+   "counting": "from the start",
+   "score_all": "5/2",
+   "score_parity": "5/2",
+   "score_parity_abs": "5/2",
+   "change_first": "1/4",
+   "change_second": "0",
+   "hidden": false,
+   "kept": {
+    "(0, 0)": "1",
+    "(0, 1)": "1",
+    "(1, 0)": "1",
+    "(1, 1)": "1"
+   },
+   "hypotheses (counting from the start)": {
+    "h0": true,
+    "h1p": {
+     "old places held in S_s": true,
+     "same fresh for both settings": true,
+     "fresh held by no knot of the other side": true
+    },
+    "weight lost at the setting stage": false,
+    "weight lost at a later stage": false,
+    "lost-weight rule": true,
+    "h2": true,
+    "h3p": {
+     "fresh sets disjoint": true,
+     "no later knot holds fresh of both": true
+    },
+    "h4": {
+     "no later loss (or the lost-weight rule)": true,
+     "records hold only S_s and own setting-fresh": false
+    },
+    "fails": [
+     "h4"
+    ],
+    "met": false
+   },
+   "P3: a score above 2 or a record changed": true,
+   "all rows": {
+    "name": "E7",
+    "variants": [
+     {
+      "label": "only",
+      "info": {
+       "allowed at the finish": {
+        "(0, 0)": 144,
+        "(0, 1)": 144,
+        "(1, 0)": 144,
+        "(1, 1)": 144
+       },
+       "allowed at S_s": 64,
+       "distinctions": 19,
+       "knots at the finish": {
+        "(0, 0)": 14,
+        "(0, 1)": 14,
+        "(1, 0)": 14,
+        "(1, 1)": 14
+       }
+      },
+      "finished": {
+       "(0, 0)": [
+        "even(x1,x2,x3,c)",
+        "nae(c,x2,s1)",
+        "nae(c,x3,s2)",
+        "even(x2,h1,h2)",
+        "odd(x3,h1,h2)",
+        "even(y1,y2,y3,t)",
+        "even(t,m1,m2)",
+        "even(s1,m1,m2)",
+        "even(y2,k1,k2)",
+        "odd(y3,k1,k2)",
+        "odd(s2,k1,k2)",
+        "nae(x1,x2,za)",
+        "nae(y1,y2,zb)",
+        "even(zb,w,x1)"
+       ],
+       "(0, 1)": [
+        "even(x1,x2,x3,c)",
+        "nae(c,x2,s1)",
+        "nae(c,x3,s2)",
+        "even(x2,h1,h2)",
+        "odd(x3,h1,h2)",
+        "even(y1,y2,y3,t)",
+        "even(t,m1,m2)",
+        "even(s1,m1,m2)",
+        "even(y2,k1,k2)",
+        "odd(y3,k1,k2)",
+        "odd(s2,k1,k2)",
+        "nae(x1,x2,za)",
+        "nae(y1,y3,zb)",
+        "even(zb,w,x1)"
+       ],
+       "(1, 0)": [
+        "even(x1,x2,x3,c)",
+        "nae(c,x2,s1)",
+        "nae(c,x3,s2)",
+        "even(x2,h1,h2)",
+        "odd(x3,h1,h2)",
+        "even(y1,y2,y3,t)",
+        "even(t,m1,m2)",
+        "even(s1,m1,m2)",
+        "even(y2,k1,k2)",
+        "odd(y3,k1,k2)",
+        "odd(s2,k1,k2)",
+        "nae(x1,x3,za)",
+        "nae(y1,y2,zb)",
+        "even(zb,w,x1)"
+       ],
+       "(1, 1)": [
+        "even(x1,x2,x3,c)",
+        "nae(c,x2,s1)",
+        "nae(c,x3,s2)",
+        "even(x2,h1,h2)",
+        "odd(x3,h1,h2)",
+        "even(y1,y2,y3,t)",
+        "even(t,m1,m2)",
+        "even(s1,m1,m2)",
+        "even(y2,k1,k2)",
+        "odd(y3,k1,k2)",
+        "odd(s2,k1,k2)",
+        "nae(x1,x3,za)",
+        "nae(y1,y3,zb)",
+        "even(zb,w,x1)"
+       ]
+      },
+      "rows": {
+       "from the start": {
+        "score_all": "5/2",
+        "score_parity": "5/2",
+        "score_parity_abs": "5/2",
+        "change_first": "1/4",
+        "change_second": "0",
+        "hidden": false,
+        "kept": {
+         "(0, 0)": "1",
+         "(0, 1)": "1",
+         "(1, 0)": "1",
+         "(1, 1)": "1"
+        },
+        "hypotheses": {
+         "h0": true,
+         "h1p": {
+          "old places held in S_s": true,
+          "same fresh for both settings": true,
+          "fresh held by no knot of the other side": true
+         },
+         "weight lost at the setting stage": false,
+         "weight lost at a later stage": false,
+         "lost-weight rule": true,
+         "h2": true,
+         "h3p": {
+          "fresh sets disjoint": true,
+          "no later knot holds fresh of both": true
+         },
+         "h4": {
+          "no later loss (or the lost-weight rule)": true,
+          "records hold only S_s and own setting-fresh": false
+         },
+         "fails": [
+          "h4"
+         ],
+         "met": false
+        },
+        "verdict": "a hypothesis fails (h4), score 5/2"
+       },
+       "from the finish": {
+        "score_all": "22/9",
+        "score_parity": "22/9",
+        "score_parity_abs": "22/9",
+        "change_first": "2/9",
+        "change_second": "0",
+        "hidden": false,
+        "kept": {
+         "(0, 0)": "1",
+         "(0, 1)": "1",
+         "(1, 0)": "1",
+         "(1, 1)": "1"
+        }
+       },
+       "mixed stage (the first observer first)": {
+        "score_all": "8/3",
+        "score_parity": "8/3",
+        "score_parity_abs": "8/3",
+        "change_first": "1/3",
+        "change_second": "0",
+        "hidden": false,
+        "kept": {
+         "(0, 0)": "1",
+         "(0, 1)": "1",
+         "(1, 0)": "1",
+         "(1, 1)": "1"
+        }
+       },
+       "mixed stage (the second observer first)": {
+        "score_all": "7/3",
+        "score_parity": "7/3",
+        "score_parity_abs": "7/3",
+        "change_first": "1/6",
+        "change_second": "0",
+        "hidden": false,
+        "kept": {
+         "(0, 0)": "1",
+         "(0, 1)": "1",
+         "(1, 0)": "1",
+         "(1, 1)": "1"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "beside": [
+  {
+   "example": "E2 read as the 11th order (index 10), beside, not judged",
+   "order": [
+    0,
+    3,
+    4,
+    12,
+    7,
+    11,
+    9,
+    1,
+    8,
+    6,
+    2,
+    10,
+    5
+   ],
+   "in class": false,
+   "score_all": "2",
+   "hidden": true,
+   "weight lost": {
+    "(0, 0)": "61/64",
+    "(0, 1)": "29/32",
+    "(1, 0)": "61/64",
+    "(1, 1)": "29/32"
+   }
+  },
+  {
+   "example": "other h2 candidate nae(x1, x2 or x3, h1), beside (Known 7), not judged",
+   "score_all": "2",
+   "hidden": true,
+   "change_first": "0",
+   "change_second": "0",
+   "kept": {
+    "(0, 0)": "3/4",
+    "(0, 1)": "3/4",
+    "(1, 0)": "3/4",
+    "(1, 1)": "3/4"
+   },
+   "hypotheses": {
+    "h0": true,
+    "h1p": {
+     "old places held in S_s": true,
+     "same fresh for both settings": true,
+     "fresh held by no knot of the other side": true
+    },
+    "weight lost at the setting stage": true,
+    "weight lost at a later stage": false,
+    "lost-weight rule": false,
+    "h2": false,
+    "h3p": {
+     "fresh sets disjoint": true,
+     "no later knot holds fresh of both": true
+    },
+    "h4": {
+     "no later loss (or the lost-weight rule)": true,
+     "records hold only S_s and own setting-fresh": true
+    },
+    "fails": [
+     "h2"
+    ],
+    "met": false
+   }
+  },
+  {
+   "example": "other h2 candidate nae(x1, x2 or x3, h2), beside (Known 7), not judged",
+   "score_all": "2",
+   "hidden": true,
+   "change_first": "0",
+   "change_second": "0",
+   "kept": {
+    "(0, 0)": "3/4",
+    "(0, 1)": "3/4",
+    "(1, 0)": "3/4",
+    "(1, 1)": "3/4"
+   },
+   "hypotheses": {
+    "h0": true,
+    "h1p": {
+     "old places held in S_s": true,
+     "same fresh for both settings": true,
+     "fresh held by no knot of the other side": true
+    },
+    "weight lost at the setting stage": true,
+    "weight lost at a later stage": false,
+    "lost-weight rule": false,
+    "h2": false,
+    "h3p": {
+     "fresh sets disjoint": true,
+     "no later knot holds fresh of both": true
+    },
+    "h4": {
+     "no later loss (or the lost-weight rule)": true,
+     "records hold only S_s and own setting-fresh": true
+    },
+    "fails": [
+     "h2"
+    ],
+    "met": false
+   }
+  }
+ ],
+ "P3 holds": true,
+ "wall_s": 0.9
+}

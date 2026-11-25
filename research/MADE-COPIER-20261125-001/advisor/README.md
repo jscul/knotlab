@@ -23,5 +23,18 @@ For ticket B (the owner's second addition, "consume and output 2"), two more pas
 
 Ticket B's frozen pre-registration ends with its own summary.
 
+For ticket C (the owner's third addition, "What if we need to statistically hit a 'copier' like DNA and primordial
+soup?"), two more passes on 25 November 2026 (UTC):
+
+- `question_c.md` and `answer_c.json`: the cold review of the first drafts ("freeze after listed changes", thirteen
+  required). `changes_c_after_first_pass.md` is the drafter's account of what it then changed, with the sizes brought
+  under the owner's rule on compute of the same day.
+- `question_c2.md` and `answer_c2.json`: the last pass ("freeze with listed fixes; no further round", twelve
+  required), which also accepted the thread's split into main and conditional runs. `changes_c_after_second_pass.md`
+  is the drafter's account of applying them, with three places where it did not apply the advisor's wording and why
+  (the chance of the planted case, the level of the test for "not of the others", and the mark on one prediction).
+
+Ticket C's frozen pre-registration ends with its own summary.
+
 Links inside the questions and accounts point into the workspace or name the drafter's scratch files, and may not
 resolve in the public copy.

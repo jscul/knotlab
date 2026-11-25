@@ -116,3 +116,23 @@ How the thread reads it:
   it is made again among what comes out.
 - **It becomes a named arm of the study**, with its own claim stated before any registered run, its own class and its
   own prediction.
+
+## The owner's third addition, the same evening
+
+24 November 2026, Pacific time; the record's tickets carry 25 November, its date in UTC. The two tickets of the study
+were frozen and waiting for their engine. Everything between the rules is the owner's text, unchanged.
+
+---
+
+What if we need to statistically hit a "copier" like DNA and primordial soup?
+
+---
+
+How the thread reads it:
+
+- **It is his idea, recorded as his** (assumption A249), and it changes the method, not the question: from building a
+  first pattern and trying it on a small class, to sampling very many growths and asking how often a copier is made.
+- **What can be sampled,** each under a named weighting: starts; laws; and histories, by drawing at random which shared
+  distinction each birth takes in place of a supplied rule.
+- **DNA and a primordial soup are his pictures.** No claim is made about living things.
+- **It becomes a third ticket of the study,** with its claim stated before any registered run.

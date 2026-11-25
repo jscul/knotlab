@@ -14,6 +14,20 @@ start knot waits while a knot it meets acts; there five values are enough. The s
 the order of descent cut down to three values: the result says how small the record can be, not that the growth supplies
 it.**
 
+> **Correction, 25 November 2026 (narrowing; the registered verdicts below are unchanged).** "The one place it fails is
+> the start built so that a start knot waits" is true of the twenty registered pairs of a start and a law, and too
+> narrow as a statement about this study's laws. On the census of 3,348 starts of up to five knots (each counted once up
+> to renaming, 8 rounds or 3,000 knots), under the fixed three with waiting, some birth has parents at different
+> generations on 510 starts, and the three-valued stamp is wrong somewhere on each of them; under the other three laws
+> on none. Counting in fives is right on 501 of the 510, and a difference of three generations between a child and a
+> parent occurs, so no fixed count is known to be enough. Under holding the stated limit of P9 is met off the
+> registered runs: parents differ on 48, 48, 369 and 462 census starts under the four holding laws, where the condition
+> of P1 holds; P1 is a statement about laws without holding. Smallest witness under the fixed three with waiting: the
+> start `[[0,1,2],[0,3,5],[1,3,4,6],[2,4,7,8]]`, whose round 3 joins a start knot with a knot one generation on. Counted
+> by two programs and a third time with the round this study's runs were checked against:
+> [the later study's result](../DESCENT-HELD-20261125-001A/results.md) ·
+> [the third count](../DESCENT-HELD-20261125-001/checks/README.md).
+
 ## What was done
 
 A **stamp** is one value written on each knot. Ten stamps were tried, from two values to the full generation, each added

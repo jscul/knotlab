@@ -8,6 +8,15 @@ go-ahead of 24 November. One frozen study, computed, scientific referee pending.
 
 ## The answer
 
+> **Correction, 25 November 2026 (narrowing; the study's verdicts are unchanged).** Item 3 below, "on the one start
+> built so", is true of the twenty registered pairs and too narrow as a statement about the laws. On the census of
+> 3,348 starts of up to five knots, under the fixed three with waiting, a birth has parents at different generations
+> on 510 starts; under the other three laws on none; under the four holding laws on 48, 48, 369 and 462. Counting in
+> fives repairs 501 of the 510, and no fixed count is known to be enough. A later study also shows the same count
+> written by a ration in a knot's own places, from a start supplied with its meeting knots agreeing: the record is
+> moved into the law, not removed. [The later study's decision](../DESCENT-HELD-20261125-001/decision.md) ·
+> [its result](../DESCENT-HELD-20261125-001A/results.md).
+
 The parents of a knot cannot be found from what is built alone. The question was how little has to be written for them to
 be found.
 

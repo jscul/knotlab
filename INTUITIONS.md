@@ -4026,8 +4026,10 @@ each have a frozen study behind them, with referees pending. Whether the knots
 of one part have to read together now has an answer, in lesson 8.1: not if
 each birth records its parents, and that record cannot be read back from what
 is built, though three values on each knot can stand in for it. Three things
-are open. Whether the structure can hold such a count itself (B328, under goal
-G5). A first "fold of emergence": under added rules
+are open. Whether a law with no count of the parents among its inputs shows
+the order of births when every start is a lone knot (lesson 9.3: the structure
+shows such a count only where a ration writes it; goal G5). A first "fold of
+emergence": under added rules
 parts that came apart can now meet again, and one part's course then differs
 with another barred. In the 16 pairs first asked it did not differ with what
 the other is; in the copier study's first ticket the first pattern's course
@@ -4326,13 +4328,38 @@ writes one of three values, one on from its parents' value (assumption A247, a
 scaffold), a knot distinguishes its parents from its children by comparing
 values across one shared distinction. This gave every parent on every structure
 reached, unfinished ones included, under four laws, wherever the knots that
-join were made together; on the one start built so that a start knot waits
-while a knot it meets makes its births, it fails, and five values repair it
-there. No two-valued version tried works under every law. The value is the
+join were made together. On the twenty pairs of a start and a law that study
+registered, it fails only on the start built so that a start knot waits while a
+knot it meets makes its births, and five values repair it there. It fails more
+widely than that: on a census of 3,348 starts of up to five knots, under that
+study's law with waiting, some birth has parents at different numbers of parent
+steps on 510, and the three values are wrong somewhere on each; five values
+repair 501 of them, and no fixed number is known to be enough
+([the study of descent held by the structure](research/DESCENT-HELD-20261125-001/decision.md)).
+No two-valued version tried works under every law. The value is the
 number of parent steps from the start counted in threes, the literature's
 counter modulo three, written by hand
 ([the study of the least record](research/LEAST-RECORD-20261124-001/decision.md);
 lesson 8.1).
+
+**The same count, written by the ration (argued, checked by a run, referee
+pending).** Can the structure hold that count itself? Only where a rule writes
+it. Give each new knot 0, 1 or 2 further fresh distinctions so that its number
+of places is one more, counted in threes, than its parents'. Then the two
+holders of a shared distinction show which is the parent by their counts. This
+was right at every shared distinction on all 20,677 runs where its conditions
+hold: the start's knots that share a distinction already agree in their
+counts, and every birth's parents are equally many parent steps from the
+start, counted in threes. With the added distinctions barred from further
+births, no birth changes; that the rule can be deleted without changing a
+birth shows it is the written value again, in another place. So the supplied
+record is moved into the law, not removed, and it is relative to a start
+supplied with its knots agreeing (133 of the 3,348 census starts). Under the
+recorded laws, with no such rule, nothing the structure shows can give the
+order on any collection that holds one structure both as grown and as a start:
+the same shared distinction leads to a parent in one history and joins two
+start knots in the other. The census holds 515 such structures
+([the study of descent held by the structure](research/DESCENT-HELD-20261125-001/decision.md)).
 
 **An order written as distinctions (proved).** An earlier study wrote the order
 of a growth into the system as distinctions of their own
@@ -4351,11 +4378,14 @@ which orders build the same thing, what has to be written, and how many holder
 steps a knot's rule must read. Forcing keeps its own order where an atom is
 used as a knot, both loops still open (lesson 5.3).
 
-**Open about the order.** Whether the structure can hold such a count itself,
-in a knot's own places or in how they are shared, is sub-goal B328, under goal
-G5; no construction is known. A guard for knots that keep back, and a rule for
-a start knot that makes its births while one it meets waits, are open. That the
-brood guard is exact at every round rests on an argument not yet refereed.
+**Open about the order.** The structure shows such a count only where a ration
+writes it (above; sub-goal B328, under goal G5, is closed by that study). What
+is open is narrower: whether a law with no count of the parents among its
+inputs shows the order when every start is a lone knot, so that no structure
+it reaches can also be handed in as a start. A guard for knots that keep back,
+and a rule for a start knot that makes its births while one it meets waits,
+are open. That the brood guard is exact at every round rests on an argument
+not yet refereed.
 
 ### 9.4 Clocks made by the growth
 
@@ -5073,9 +5103,10 @@ made a pattern of its own from what it met.
   values on each knot stood in for the record of parents wherever the knots
   that join were made together (lesson 8.1; assumption A247, a scaffold); this
   was not tested for these laws. Whether the structure itself can hold such a
-  count of descent is B328. (reading) If it can, ancestor-taking would need no
-  written record of descent; which distinction it takes would still go by the
-  supplied names.
+  count of descent was B328: it can show one only where a ration writes it
+  (lesson 9.3). (reading) Ancestor-taking could then use a count the law
+  wrote in place of a record written beside the structure; which distinction
+  it takes would still go by the supplied names.
 - **Referee and run.** The argument for the laws that take only from parents,
   and every computed result of lesson 10.3, await their referee. That study
   froze 19 predictions: 16 hold, two fail in one clause each, both in

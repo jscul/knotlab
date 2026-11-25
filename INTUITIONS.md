@@ -5271,11 +5271,22 @@ made a pattern of its own from what it met.
   through a distinction a start knot holds; there, in 11 of 127 tests, the
   course does differ with which second part is barred, and in the cases
   read birth by birth that is which one arrives first, or a count at one
-  birth and a join at another. No test holds the place fixed and changes
-  the form of the second part, so whether a course can respond to what a
-  second part is stays open (a sub-goal under G15). The study of parts that
-  meet again had found the same with one second part: what crosses is
-  whether the other part is there.
+  birth and a join at another. The study of parts that meet again had
+  found the same with one second part: what crosses is whether the other
+  part is there. A third probe then held the place fixed and changed the
+  form, on starts built by hand: one first seed, one link, and a second
+  seed running over 50 forms
+  ([the third probe](research/WHAT-A-BIRTH-CARRIES-20261125-001/checks/form_at_a_fixed_place/README.md)).
+  There what the first seed's own descent makes does follow the form, under
+  every law tried and with no taking rule at all: its births fall into 4 to
+  23 classes, and its line ends, idles at one birth a round or grows
+  according to what it is attached to. Some forms are told apart only in
+  rounds 2 to 7, and where short knots retire that later difference reaches
+  it through made knots alone. It sees the near end of the second seed in
+  detail and, with the take of a sole candidate, its length to five knots;
+  it does not read the whole form. The meeting there is supplied by the
+  start. What is open (a sub-goal under G15): the same between two parts
+  the growth made, meeting through a knot the growth made.
 - **B326, an index made by the growth (G15).** The owner, by 24 November 2026
   (Pacific time): "This is why we may need 'function-like' logical operations
   where we can reference/sample logic. These are basically meeting patterns

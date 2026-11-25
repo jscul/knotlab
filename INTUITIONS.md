@@ -4799,8 +4799,9 @@ that earlier records used in two senses.
 - **Harmony.** The owner's word, read as assumption A70 (open to challenge):
   a base periodic along one shift all of whose allowed states repeat, so that
   it has finitely many states up to shifting; the literature's finite
-  subshift. Not the harmony of proof theory. The **period** of a state is the
-  least shift that returns it to itself, which is not the period of the base;
+  subshift. Not the harmony of proof theory. The period of a state (see Return;
+  period) is the least shift that returns it to itself, which is not the period
+  of the base;
   an **orbit** (the literature's word) is a repeating state with all its
   shifts; a state is **antiperiodic** (the literature's word) when flipping
   every value is the same as shifting it by half its period. The intuition: a

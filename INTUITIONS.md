@@ -140,8 +140,10 @@ PYTHONPATH=tools python3 -m knotlab demo
 **The lessons.** What each lesson of this chapter is about:
 
 - [1.1 Distinctions and states](#11-distinctions-and-states): a distinction
-  is one bit, and nothing else is assumed. Three of them have eight joint
-  states, drawn as the cube of states.
+  is one bit: of two options, one holds. In the owner's words it is a choice
+  between 00/11 and 01/10, two things going together or going opposite.
+  Nothing else is assumed. Three distinctions have eight joint states, drawn
+  as the cube of states.
 - [1.2 Rules and what they allow](#12-rules-and-what-they-allow): a rule rules
   out joint states, and a system is read only through the states it allows.
   The symbols, and what makes a set of variables free.
@@ -175,6 +177,29 @@ as a whole and leaves every pair free.
 distinction: two alternatives of which exactly one holds. A distinction is one
 bit, and its two alternatives are written 0 and 1. Nothing else is assumed.
 There is no space, no order and no number beyond the two values.
+
+**"It's a choice."** The owner's way of saying what a distinction is (25
+November 2026): "it's a choice" between 00/11 and 01/10, "a choice between the
+two options, where the 2 options are the loops of the logical knot". Put two
+bits side by side. Their four joint states fall into two pairs:
+
+```text
+00  11     the two go together
+01  10     the two go opposite
+```
+
+One distinction is the choice between those two pairs. Nothing is said to make
+the choice: one option holds, and the other could have. The picture needs two
+bits because a lone bit's 0 and 1 are only names for its two options, and the
+names say nothing about what the options are. Here they are something: two
+ways that two things can stand to each other. Each option is itself a pair of
+opposite states, 00 with 11 or 01 with 10, and a pair of opposite states is
+all that a loop shows (lesson 1.4), so each option is a loop: the one in which
+the two bits are equal, and the one in which they are unequal. Lesson 2.1
+finds this picture exactly in one knot, parity, where every one of the three
+distinctions is this choice for the other two. The guide keeps "choice" for
+his sense in his words only, since lesson 4.2 uses the word for a kind of
+rule; in its own words a distinction is two alternatives of which one holds.
 
 **Words for space.** Because no space is assumed, the guide does not call its
 objects triangles, tori, spheres, planes, surfaces, edges or faces: those words
@@ -681,6 +706,25 @@ The first command reports a knot. The second reports a hub, and explains which
 binding survives each erasure. *Proved (Lean):* `ForgettingKernel.lean`
 (`atom_isKnot`, `parity_isKnot`, `hub_not_knot`, `tied_not_knot`).
 
+**Parity is the owner's choice, from every side.** Lesson 1.1 gave the owner's
+picture of a distinction: a choice between 00/11 and 01/10. In the parity knot
+the contact is exactly that choice. With c = 0 the two loops' distinctions A
+and B can be 00 or 11, and with c = 1 they can be 01 or 10:
+
+```text
+c = 0:   A B = 00  or  11     (allowed states 000 and 110)
+c = 1:   A B = 01  or  10     (allowed states 011 and 101)
+```
+
+The knot has no preferred side. A is the same choice for B and c, and B for A
+and c: fix any one of the three, and the other two are left as one loop, a
+pair of opposite states with one distinction still open (lesson 1.4), equal in
+one option and unequal in the other. Which option is written 0 is only a name.
+The other knots of the table do less than this. With c = 0 the atom rules out
+only 11 for A and B, and not-all-equal only 00; neither sorts the four states
+into the two pairs. That is the difference lesson 2.3 measures: parity holds
+one full bit in the whole and none in any part, the atom about a fifth of one.
+
 **Knots that overlap.** Knots **overlap** when they share a distinction, and
 nothing says how: one knot may share distinctions with every other knot and
 another with only a few, and nothing makes knots meet "along their sides", one
@@ -857,6 +901,9 @@ its own, as a value it carries; it has it only in its distance from what it is
 told apart from. That continues the owner's stance of 22 October 2026 that
 "everything is relational", that there are no values, only relations
 ([TWIST-RELATIONS-20261022-001](research/TWIST-RELATIONS-20261022-001/twist_relations.md)).
+His picture of a distinction as a choice between 00/11 and 01/10 (lesson 1.1)
+says the same in bits: the two options are ways that two things stand to each
+other, together or opposite, and not values that one thing carries.
 A lone distinction, though, stands apart from nothing. The program's
 foundation says that before emergence logical things "may be themselves, but
 they do not yet exist relative to one another"
@@ -5176,7 +5223,11 @@ that earlier records used in two senses.
 - **Distinction.** Two alternatives of which exactly one holds: one bit
   (lesson 1.1). A distinction is open when it is free on its own, taking
   both values; each loop brings an open distinction to a knot. The intuition:
-  the least thing that could be otherwise. Everything in the guide is built
+  the least thing that could be otherwise. In the owner's words (25 November
+  2026) "it's a choice" between 00/11 and 01/10: of two things, whether they
+  go together or go opposite. Each option is a pair of opposite states, which
+  is what a loop shows, and in the parity knot every distinction is this
+  choice for the other two (lessons 1.1 and 2.1). Everything in the guide is built
   from distinctions and from rules about them, and nothing else is assumed,
   not even a place to put them. The owner's founding premise, in his words (17
   November 2026): "Distance is the only form of information. That's the entire
@@ -6026,7 +6077,7 @@ that earlier records used in two senses.
   | clock | anything in which a named event recurs and against which other changes are counted: supplied or made, always said (lesson 9.4) | the process line's "own clock" and "conformal clock", a count of a supplied clock's ticks rescaled by doublings (assumption A56): a rescaled count of the automaton's updates |
   | step | (never alone as a unit of count; always a named kind) | co-knotted pairs between distinctions: steps apart (lesson 4.7); from a cell to a neighbouring cell: a board's step (lesson 4.6); from a knot to a parent: parent step; from a knot to a knot sharing a distinction with it: holder step; one update of every cell of an automaton: an update, a tick of its supplied clock; one birth or one part's round, or nothing: move |
   | lag | the shift of a stitch's member, counted up to a common addend (Stitch) | the process line's count of an automaton's updates since its first row (lesson 2.4's networks of rings of cells; assumptions A40, A41, A56): updates |
-  | choice | a rule saying that when something exists, one of several things must (lesson 4.2) | which already shared distinction a birth takes (the study of parts that meet again's "the choice"; assumptions A231, A236, A245): which distinction a birth takes |
+  | choice | a rule saying that when something exists, one of several things must (lesson 4.2) | which already shared distinction a birth takes (the study of parts that meet again's "the choice"; assumptions A231, A236, A245): which distinction a birth takes; the owner's "it's a choice" for a distinction (lesson 1.1), kept in his own words only: two alternatives of which one holds |
 - **Older records.** Records written before 11 November 2026 use the older
   words, and a record whose checksum another record pins (a manifest, a result
   or a discovery) is never edited, so it keeps them. Read such a record with the

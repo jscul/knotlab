@@ -17,7 +17,7 @@ interpretation, not a result, and it is under test. Lesson 2.4 states it in
 the guide's words, once the knot it speaks of has been defined, and shows how
 the later lessons on distance and dimension hang from it.
 
-The page is written as a textbook, to be read in order. Its nine chapters are
+The page is written as a textbook, to be read in order. Its ten chapters are
 divided into lessons, and each lesson builds on the ones before it. Each
 chapter opens with a lesson numbered 0, its introduction: an index of the
 chapter's lessons, a line or two on each, and under it the chapter's
@@ -124,6 +124,13 @@ PYTHONPATH=tools python3 -m knotlab demo
   - [9.4 Clocks made by the growth](#94-clocks-made-by-the-growth)
   - [9.5 Priority: which birth is made first](#95-priority-which-birth-is-made-first)
   - [9.6 Is time a fold of emergence?](#96-is-time-a-fold-of-emergence)
+- [Chapter 10. Folds of emergence](#chapter-10-folds-of-emergence)
+  - [10.0 Introduction](#100-introduction)
+  - [10.1 What a fold of emergence would be, and the nearest things in the record](#101-what-a-fold-of-emergence-would-be-and-the-nearest-things-in-the-record)
+  - [10.2 The with-and-without test: whether one part's course depends on another](#102-the-with-and-without-test-whether-one-parts-course-depends-on-another)
+  - [10.3 Parts that meet again, under laws added by hand](#103-parts-that-meet-again-under-laws-added-by-hand)
+  - [10.4 Two studies in design: a made copier and a made count of returns](#104-two-studies-in-design-a-made-copier-and-a-made-count-of-returns)
+  - [10.5 What is open](#105-what-is-open)
 - [Glossary](#glossary)
 
 ## Chapter 1. Bits and rules
@@ -3121,7 +3128,7 @@ Taking the rounds away shows what they were doing (computed, refereed):
 - **Three values are enough (computed, referee pending).** If every new knot
   writes one of three values, one step on from its parents' value, a knot can
   tell its parents from its children by comparing values with the knots it
-  meets, looking one step. This gave every parent on every structure tried,
+  meets, looking one holder step. This gave every parent on every structure tried,
   half-built ones included, wherever the knots that join were made together.
   No two-valued version that was tried does. The value is the order of
   descent cut down to three values, and it is written by hand: the growth does
@@ -3995,18 +4002,21 @@ interpretation that no result settles.
 - **Parts that meet again (computed under added rules, referee pending).** A
   first step was run on 24 November 2026. Under every law above, and under the
   recorded rules in which a birth takes a distinction that is already shared,
-  parts that have come apart never meet again; for those rules there is a
-  reason: a birth that takes only what its own parents hold can reach nothing
-  its parents did not already meet. Under rules added by hand that reach a
-  little further, a birth also taking a distinction from a knot its parent
-  meets or from one or two steps back along its own descent, parts that came
-  apart do become one part again, and the first then builds differently
-  according to whether the second is there. In some cases the knot they come
-  back through is one both descend from, the owner's "axis point" (glossary,
-  "Ancestral common knot"). What crosses is only whether the other part is
-  there, not what it is; each case needs its own ration and a supplied choice
-  of which distinction is taken; and nothing is yet built from another part
+  parts that have come apart and share nothing, even through a third part,
+  never become one part again; for those rules there is a reason: a birth that
+  takes only what its own parents hold can reach nothing its parents did not
+  already meet. Under rules added by hand that reach a little further, a birth
+  also taking a distinction from a knot its parent meets or from one or two
+  steps back along its own descent, parts that came apart do become one part
+  again, and the first then builds differently with the second barred than
+  with it growing. In some cases a knot both descend from is among the common
+  knots of their members, the owner's "axis point" (glossary, "Ancestral
+  common knot"). What crosses is only whether the other part grows or is
+  barred, not what it is; each case needs its own ration and a supplied
+  convention for which distinction a birth takes; and no part has yet built
+  anything from what another part is
   ([PARTS-MEET-AGAIN-20261124-001](research/PARTS-MEET-AGAIN-20261124-001/decision.md)).
+  Lesson 10.3 gives the study, and lesson 10.2 the test it ran.
 - **No claim about living things.** The guide says nothing about DNA, cells or
   minds. The owner's words name what a base would have to grow before such a
   question could be asked of it.
@@ -4018,10 +4028,11 @@ each birth records its parents, and that record cannot be read back from what
 is built, though three values on each knot can stand in for it. Three things
 are open. Whether the structure can hold such a count itself (B328, under goal
 G5). A first "fold of emergence": under added rules
-parts that came apart can now meet again, and one part's course then depends
-on whether another is there, but not on what it is, and nothing is built from
-it (B317, under G15; a made pattern that leaves two of what it meets is the
-next step, B327). And proofs
+parts that came apart can now meet again, and one part's course then differs
+with another barred, but not with what it is, and no part has built anything
+from what the other is (B317, under G15; a made pattern that leaves two of what
+it meets is the next step, B327, whose claim is now frozen; lesson 10.5). And
+proofs
 of what is so far argued or computed: the return for every odd ring, the sizes
 of the parts under each cap, and that one leftover distinction on every knot
 turns rate x into the x′ of x′² = x(x′ + 1) (B316, under G17).
@@ -4053,8 +4064,8 @@ turns rate x into the x′ of x′² = x(x′ + 1) (B316, under G17).
   it changed what is built.
 - [9.6 Is time a fold of emergence?](#96-is-time-a-fold-of-emergence): the
   owner's question. An order, a clock and a made count of returns are kept
-  apart. Only the last has the form of a fold of emergence, and the record has
-  none yet.
+  apart. Only the last takes anything from another pattern, and the record
+  has none yet.
 
 **The intuition.** This chapter makes no claim about physical time. The
 program's foundation holds that an order of formation alone is not physical
@@ -4499,7 +4510,7 @@ which a short knot gives its births distinctions it already shares, taking the
 oldest or the newest gave different births per round on 478 (parity) and 471
 (not-all-equal) of the 744 starts that stall at once under ordinary growth
 ([the study of a short knot that gives shared distinctions](research/REREAD-BIRTHS-AND-MIXED-LAWS-20261123-001A/result.md)).
-In the study of parts that meet again (lesson 8.7), changing which distinction
+In the study of parts that meet again (lesson 10.3), changing which distinction
 one part's births take makes that part's dependence on the other appear or go.
 All four ways tried pick from the eligible distinctions in the order of their
 names: the oldest, the newest, the next in turn among one parent's offshoots,
@@ -4550,19 +4561,24 @@ the history of A228. No claim is made about living things or minds.
   orders (lesson 9.5); in the case tried, two copies of one clock, the order
   alone decided which lost its tick.
 - **A made count of returns.** A pattern whose births follow another pattern's
-  returns, A228's reading of "time is a pattern". That has the form of a fold
-  of emergence: what it makes depends on another pattern, and it makes
-  something of its own, the count. It would ask little of a fold: from the
-  other pattern it needs only whether it has come round again.
+  returns, A228's reading of "time is a pattern". What it makes would depend
+  on another pattern, and it would make something of its own, the count. At
+  each return it would need from the other pattern only whether it has
+  returned, one yes-or-no. Whether that is enough for the second property of
+  a fold of emergence, which the register asks for in a fuller sense (lesson
+  10.1), is not settled: a count that follows returns would differ between two
+  clocks of different periods, and no such comparison has been run.
 
 **What one part has read of another (computed under added rules, referee
-pending).** In the study of parts that meet again (lesson 8.7), under laws
+pending).** In the study of parts that meet again (lesson 10.3), under laws
 added by hand in which a birth also takes a distinction none of its parents
-holds, one part's course depended on whether another part was there in 216
-confirmed cases, and in none on what the other part was (16 pairs asked). That
-dependence came about where two parts that had come apart met again. Under rule
-R and rule Q (in which a one-parent birth also takes a distinction its parent
-shares), parts that have come apart and share nothing never become one part
+holds, one part's course differed between the run with another part growing
+and the run with it barred for 216 pairs that passed the study's checks, and
+in none of the 16 pairs asked with what the other part was. That dependence
+came about where two parts that had come apart were one part again, directly
+or through a third part. Under rule R and rule Q (in which a one-parent birth
+also takes a distinction its parent shares), parts that have come apart and
+share nothing, even through a third part, never become one part
 again, by an argument, and from round 1 the ring never returns and nothing
 copies itself
 ([the study of parts that meet again](research/PARTS-MEET-AGAIN-20261124-001/decision.md)).
@@ -4577,8 +4593,498 @@ return has not yet been tested.
 
 **Where it is taken up.** Sub-goal B329, under G5 with G15 and G18, files the
 question, and a study now being designed takes it up
-(TIME-AS-FOLD-20261125-001), starting from a census of which patterns still
-return under the laws that let parts meet. It has no result.
+(TIME-AS-FOLD-20261125-001). As filed, its first step is a census of which
+patterns still return under the law of least cost that lets parts meet, with
+both of its rations. It has no result. Lesson 10.4 sets it beside the other
+study in design, a made copier.
+
+## Chapter 10. Folds of emergence
+
+### 10.0 Introduction
+
+**The lessons.** What each lesson of this chapter is about:
+
+- [10.1 What a fold of emergence would be, and the nearest things in the record](#101-what-a-fold-of-emergence-would-be-and-the-nearest-things-in-the-record):
+  the owner's picture in his words, the three properties the program takes
+  from it, and what a test of them can show. The nearest things in the record
+  each lack a property: a generator's packets, a made clock, the part that
+  copies itself, and the studies in which a rule written by hand acts on what
+  is taken.
+- [10.2 The with-and-without test: whether one part's course depends on another](#102-the-with-and-without-test-whether-one-parts-course-depends-on-another):
+  the owner's test as one study measured it. A start is grown, and grown again
+  with a second part barred, and further runs check whether a difference went
+  through the two parts meeting. It asks whether, never what.
+- [10.3 Parts that meet again, under laws added by hand](#103-parts-that-meet-again-under-laws-added-by-hand):
+  where a birth takes only what its parents hold, parts that share nothing,
+  even through a third part, are never one part again, by an argument. Under
+  laws added by hand under which a birth takes a distinction none of its
+  parents holds, in
+  some of one study's cases they are, and the first part's course then differs
+  between the run with the second growing and the run with it barred, and in
+  none of the 16 pairs asked with what the second is.
+- [10.4 Two studies in design: a made copier and a made count of returns](#104-two-studies-in-design-a-made-copier-and-a-made-count-of-returns):
+  two studies in design, one asking for each. The first has frozen its claim,
+  predicts that every registered claim fails and has made no registered run;
+  the second is not frozen. Neither has a result.
+- [10.5 What is open](#105-what-is-open): the open sub-goals, one by one.
+
+**The intuition.** The record has no fold of emergence. A growth that only
+repeats or multiplies makes more of what it already is. The owner pictures a
+pattern of a further kind, with three properties (lesson 10.1), and calls it a
+fold of emergence (assumption A223, an interpretation), with DNA and
+intelligence as his pictures of it. The guide makes no claim about living
+things or minds in this chapter: the phrase and the pictures are his, and the
+properties are the program's reading of them. The program checks the second
+property, that what the pattern makes depends on another pattern, by a
+comparison: what is built with the other pattern growing against what is built
+with it barred. That comparison, the owner's test, settles whether, not what.
+Under ordinary growth the connected parts of the live roster (lesson 8.7)
+neither come apart nor merge, and under the rules added for the ring that
+returns the parts that come apart act alone, so nothing one part makes can
+depend on another (lesson 8.7; the register's notes under A223). The chapter
+goes through the record from that obstacle to laws added by hand under which,
+in some of one study's cases, parts that came apart are one part again, and
+says what is still missing.
+
+**No new result.** Every statement stands in a record; where an earlier lesson
+gives it, the chapter names that lesson.
+
+**The growth's words used here.** A start knot is a knot of the start, and a
+member is a live knot of the live roster (lessons 8.1 and 8.4). A part of the
+live roster is a largest set of members any two of which are connected by a
+chain of members in which one knot meets each member and the next (lesson
+8.7). A part comes apart when the members descended from it lie in two or more
+parts. Two parts share nothing when no member of one holds a distinction a
+member of the other holds, and are wholly apart when no chain of parts, each
+sharing a distinction with the next, joins them. A ration says how many fresh
+distinctions a new knot receives (lesson 9.4). A short knot owes more loose
+distinctions than it holds; a law says whether it retires, waits or makes
+offshoots, and whether a knot that is not short releases to offshoots what its
+cancelled joins would have taken or holds it (lesson 8.7). A barred
+distinction is one no birth may take; a usable one is loose and not barred. A
+knot's ancestors are the knots reached from it by parent steps. A taking rule
+is a rule added to a growth law under which a birth also takes one distinction
+that is already shared, by a supplied convention for which: under rule R a
+short knot gives its births distinctions it already shares, and under rule Q a
+one-parent birth also takes a distinction its parent shares (lessons 9.5 and
+9.6).
+
+### 10.1 What a fold of emergence would be, and the nearest things in the record
+
+**The picture he asked to record.** On 23 November 2026 the owner asked for a
+picture to be recorded, given in full in lesson 8.7. In it things like DNA
+"are kind of like patterns that observe a different pattern but also have
+their own growing patterns", and "structures like DNA or intelligence should
+maybe be exceptional, almost considered folds of emergence." The register
+holds it as assumption A223, an interpretation on which no result rests.
+
+**Three properties (reading).** Lesson 8.7 gives them in one sentence (A223).
+Here each is given with what would show it:
+
+1. The rules make it and nobody places it: it grows from a supplied start
+  under a stated law, and nothing is placed by hand after the start.
+2. What it makes depends on another pattern. The register asks for the fuller
+  sense: it takes one course or another according to what a second made
+  pattern is (A223, "Challenge"; sub-goal B317), not only whether it is
+  barred.
+3. It makes a pattern of its own from the other pattern (A223; B317).
+
+**What the properties can show.** The record has no fold of emergence. The
+properties speak of patterns and the test of lesson 10.2 of parts of the live
+roster, so the test applies only to a pattern that is such a part. The first
+two properties can be tested, the second by comparing runs. The record has no
+registered test for the third, so a new pattern can be shown not to be a fold
+of emergence, by failing the first or the second, but cannot yet be shown to
+be one.
+
+**The nearest things in the record.** Four kinds of thing come close. Each
+lacks at least one property, and the record says what was supplied in each.
+
+- **A generator's packets (proved; refereed in part).** Under ordinary growth,
+  from a supplied start, a generator keeps releasing packets that last, and a
+  packet can release packets of its own (lesson 8.7): they are made, and they
+  make more. After release every parent of a later member comes from its own
+  packet, and once each packet has taken all its parents from its own members
+  for one round, no later birth has a parent in two packets. Where what a
+  packet makes differs with another packet (a knot receiving 18 fresh
+  distinctions where two packets are joined and 15 where they are kept apart),
+  the difference lies between two prepared starts
+  ([the generator study](research/GENERATORS-20261120-001/decision.md)).
+  Which knots count as
+  a packet is set by a scaffold (assumption A125).
+- **A made clock (lesson 9.4).** A pattern the growth builds from a supplied
+  start, in which a named event recurs. The ring that returns takes nothing
+  from another pattern (lesson 9.6): past the start a part acts alone
+  ([the ring study without a supplied round](research/RING-IN-BALANCE-20261123-001C/results.md),
+  argued, and its
+  consequence checked on 726 runs, referee pending). In the start with two
+  clocks no release of one enters the other's packet
+  ([the study of two clocks](research/FREEDOM-CLOCKS-AND-BIRTHS-20261120-001/decision.md),
+  proved, referee pending); where two copies of one clock share a short knot,
+  which one lost its tick was decided by the order of births, which is
+  supplied (lesson 9.5). The study's check that a tick has happened, and
+  whatever counts the ticks, is supplied.
+- **The part that copies itself (computed under added rules, referee
+  pending).** It is made and makes two of itself every two rounds under
+  rations and treatments added by hand (lesson 8.7; assumption A224, a
+  scaffold), taking nothing from another pattern. In its record's words, "The
+  copies never meet again", and "Nothing reads the count of copies; the one
+  who runs the growth counts them"
+  ([the study](research/COPYING-PARTS-20261123-001/decision.md)).
+
+- **The stored bit, the receiver and the learning line (written by hand).** In
+  none is the rule for acting on what is taken made by the growth (lesson
+  8.7); where the pattern itself is made, as a receiver is, what counts as its
+  receipt was supplied. Each study lists what it supplied:
+  - the stored-bit study (proved, referee pending): a stored value steers no
+    ordinary birth (lesson 8.7); supplied were "the marked preparation,
+    payment allocation, local read and probability weighting"
+    ([its decision](research/STORED-BIT-AND-NEXT-ACTION-20261122-001/decision.md));
+  - the receiver study of lesson 9.4 (proved, referee pending): a receiver is
+    a made clock, its tick counts were compared between supplied starts, and
+    "The clock frames, sending phase, receiving family, ports and tick reading
+    were also supplied"
+    ([its decision](research/SIGN-RECORDS-AND-RECEIVER-TICKS-20261120-001/decision.md));
+  - two studies of the learning line under goal G15, learning in a knot
+    pattern (computed, referee pending): in a game played on knots that
+    ordinary growth makes, "Food, hunger, the sensor, the cursor, its
+    controls, reward and policies are supplied game rules"
+    ([the game](research/KNOT-RATION-GAME-20261121-001/decision.md));
+    in sorting two
+    letters from pixels, "Image layout, patch grouping, translation sharing,
+    reward update, binary storage code and mean comparison were supplied"
+    ([the letters](research/PIXEL-LETTERS-20261122-001/decision.md)).
+
+**The second property, untested before.** Before the study of lesson 10.3 the
+record had no case in which what one made part builds differs between a run
+with another made part growing and a run with it barred, with nothing placed
+by hand after the start (the register's notes under A223). The owner gave a
+test for that property.
+
+### 10.2 The with-and-without test: whether one part's course depends on another
+
+**The test in his words.** By 24 November 2026 (Pacific time) the owner had
+set it: "run each start twice, once with the second part present and once
+without it. A part reads another when its course differs between the two
+runs." This is the guide's one sense of "reads" for a part, and it is his. The
+study of parts that meet again (lesson 10.3) fixed how to run it before
+running anything
+([its definitions](research/PARTS-MEET-AGAIN-20261124-001/definitions.md),
+sections
+1 and 5), and its records call it the paired test. The register keeps the test
+as run as a measure, assumption A246, and the study lists every part of it
+among what it supplied by hand.
+
+**When two parts meet.** Two parts meet at a round when one knot meets a
+member of each, so that those two members can join through it; parts that came
+apart are then one part again, in the study's words, as they can also be
+through a third part. "Meet again" is the owner's phrase.
+
+**Three runs, and a fourth.**
+
+- Run A grows the start under the law.
+- For a round s after which two parts X and Y are wholly apart, a second run
+  repeats run A through round s and then bars every usable loose distinction
+  of Y's members: Y stays built and makes no birth, and the same law goes on.
+  Removing Y with its fresh distinctions is the registered alternative,
+  defined only where it leaves a well-formed structure. Of the 302 pairs of
+  lesson 10.3 it was defined for 182, and gave the same result for every one
+
+  ([the study's decision](research/PARTS-MEET-AGAIN-20261124-001/decision.md)).
+
+- The comparison is of X's course, round by round: each birth whose parents
+  all lie in X or its descendants, with its parents, what it takes and the
+  number of its fresh distinctions, and which sets of their members one knot
+  meets, up to a renaming of the knots made after round s. A birth's demand is
+  recorded separately and is not part of the course; counted in, the course
+  differs a round earlier for 114 of the 302 pairs (A246).
+- A masked run repeats run A with no member of X or its descendants able to
+  join a member of Y or its descendants from round s + 1. It is the study's
+  check of whether a difference went through the two parts meeting: it did
+  when X's course there equals its course with Y barred. If not, a fourth run,
+  in which Y and its descendants can join nothing, checks whether it went
+  through a third part. A difference passes the study's check by either run.
+
+**Four things recorded for each pair.** The study's "marks", facts about run A
+and comparisons and not a scale: the first round at which X and Y are one part
+again; the first birth with a parent from each; the first round at which X's
+course differs with Y barred; and whether X's course differs with what Y is,
+between two runs from starts that differ only in the holdings of the start
+knot (a knot of the start) that Y descends from. A control asks whether it
+matters which distinction a birth takes: only the births of X and its
+descendants take by another convention, and the course is compared again.
+
+**Three questions for each difference.** Did it go through the two parts
+meeting, or through a third part? At the round they are one part again, is the
+common knot of their members one the growth made, or a start knot? And did the
+rule that made the difference act on a whole round, read the parts of the
+roster to find the other, or join by the record of births alone? The answer is
+one of four: through a knot the growth made; through a start knot; by the rule
+itself, for those three rules; or, in the study's word, "unconfirmed". In
+every case the law's taking rule, its convention for which distinction a birth
+takes, any record it reads, the base law, the start and the complete round are
+supplied: "made by the growth" means made by births under a stated law, not
+that the law is the model's
+([the pre-registration](research/PARTS-MEET-AGAIN-20261124-001A/preregistration.md)).
+
+
+**What the test cannot show.**
+
+- What the other part is. A difference with Y barred is a difference between Y
+  growing and Y barred, one yes-or-no. Only the fourth thing recorded asks
+  what Y is, and it compares two prepared starts, the comparison the
+  with-and-without test otherwise avoids.
+- How often parts meet. That needs a weighting over laws and starts, and the
+  study, whose laws and starts were set by hand, has none: it can say which of
+  its cases meet and how each fares when a scaffold is swapped, not how often
+  meeting happens (the register's notes under A241). The owner said the same
+  day that he did not "expect these to be common or trivial".
+- Whether another measure would agree. The register names three to try:
+  removal throughout, demand counted in the course, and dependence on what the
+  other part is (A246).
+- (reading) It is still a comparison of two runs, both run by whoever runs the
+  study. Against the comparisons of lesson 8.7 it gains this: the two runs
+  share one start and the same births through round s, so the difference lies
+  between the other part growing and the other part barred, not between two
+  prepared starts.
+
+### 10.3 Parts that meet again, under laws added by hand
+
+**The study and its question.** By 24 November 2026 (Pacific time) the owner
+had asked whether some growth law lets parts that have come apart meet again.
+Before the design was frozen he added: "There's no way it wouldn't work. It
+might just cost complexity. Programming is a thing in our reality, there
+should be a way to reference information like joining 2 different clusters of
+child logic from the parent via something like an 'axis point'. So we can
+essentially reference chunks of logic." The register keeps this as his
+conviction, not as evidence (assumption A241). In the guide's words (glossary)
+the knot is an ancestral common knot, "a common knot of two members that is
+also a recorded ancestor of both and not the parent of both", and the law is
+ancestor-taking, "a law under which a birth also takes a distinction that an
+ancestor of one of its parents holds"; "axis point", and afterwards "access
+point", stay his phrases; he chose "ancestral common knot for the definition",
+and his later "Root" was not adopted (the study's definitions). The study is
+one frozen study, computed, a second program agreeing on every pair; referee
+pending
+([PARTS-MEET-AGAIN-20261124-001](research/PARTS-MEET-AGAIN-20261124-001/decision.md);
+[its results](research/PARTS-MEET-AGAIN-20261124-001A/results.md)).
+
+**Taking only from parents (an argument, not yet refereed).** Under rule R
+(A230), rule Q (A235) and the move of A225 taken as a law, a birth takes only
+what its parents hold, and whatever a parent holds is already met by
+everything the parent meets; so such a birth can rejoin only what is still
+joined. No run contradicts it: no two parts that share nothing, even through a
+third part, were one part again in 504 runs, in about 1,600 pairs got by
+switching the rule on after the copies are made, or in 1.94 million histories
+so far: in 268 enumerations every possibility for which distinction each birth
+takes, and in each of 17 others 100,000 histories taken at random under a
+fixed seed. Rules R and Q also undo the ring that returns and the part that
+copies itself (lesson 9.6).
+
+**Taking what no parent holds (computed under added rules, referee pending).**
+Here a birth also takes such a distinction (assumption A245, a scaffold): one
+held by a knot its parent meets, or by a recorded ancestor one or two parent
+steps from its parent. Taking from a knot the parent meets reads within two
+holder steps and no record of births; in the study's order of costs it was
+least under the cap of three, on the ring of five, and the rule taking from
+one parent step under "just enough for three places", a ranking that turns on
+a reading the frozen text left open (its prediction P11). Each needs a
+supplied convention for which distinction a birth takes; the four tried all go
+by the names (lesson 9.5), and changing it for the first part alone makes the
+dependence appear or go. Distinctions gain holders: within eight rounds one
+reached 182 under the rule taking from a knot the parent meets, 114 under that
+from two parent steps and 128 under rule Q itself, against 2 with no taking
+rule.
+
+**What was found.** Counting both knot laws together, 302 pairs of parts that
+came apart show the first part's course differing with the second barred. For
+216 pairs the difference passed the study's checks, going through births that
+made the two one part again: for 178 through the two parts meeting, for 38
+through a third part. Of the 216, 180 are through a knot the growth made and
+36 through a start knot, a split that can change with the supplied names, as
+the smallest case shows. Another 80 are by the rule itself, all under a
+control rule that reads the parts of the roster to find the other, and 6 are
+"unconfirmed". Of the 216, for 62 an ancestral common knot, always a start
+knot, is among the common knots of the two parts' members, and for 6 it is the
+only one. For 72, a third, a birth is then made with a parent in each part;
+for the rest the meeting only leaves knots short. In none of the 16 pairs
+asked does the course differ with what the other part is. The register moved
+A241 to Confirmed, with stated limits: under supplied laws, with the ancestral
+common knot always a start knot, and not sturdily.
+
+**The smallest case.** Twenty knots: the three-knot start, the ration "just
+enough for three places", a short knot retiring, and the oldest distinction
+taken from two parent steps from the parent. The two members join in round 1
+and each makes an offshoot. In round 2 the join, short, retires and each
+offshoot makes two, leaving two parts of two knots that share nothing. In
+round 3 their offshoots take distinctions that the start knot each part
+descends from shares with the start's dead knot, which then meets all four:
+one part again. In round 4 the four, short, retire; with the second part
+barred or removed, the first makes a join of three parents instead. Every knot
+passes the knot test under both knot laws through round 8. Their common knot
+is the start's dead knot, which neither part descends from; with the start
+renamed, it is the retired join of round 1, a knot the growth made.
+
+**What swapping the scaffolds leaves.** Each case, a taking rule with its
+convention, a base law and a start with a pair that passed the study's checks,
+80 in all (33 of parts that came apart and 47 of the two-knot start's halves,
+never one part), was rerun with each supplied rule swapped. Swapping the
+ration on the same start removes all 33, though each ration has cases
+elsewhere; under the cap of three the smallest case's two parts never come
+apart. Holding instead of release removes 24, reversed names 12, the demand
+counted before the takes 9, a reversed order of births 5, fresh distinctions
+counted by parents 4, and the knot law none. The one case that remains under
+every swap joins the two-knot start's halves. In the study's words, "nothing
+here is yet a property of the model".
+
+### 10.4 Two studies in design: a made copier and a made count of returns
+
+**A copier is a pattern.** On 24 November 2026 the owner wrote: "copying would
+not be a law. Laws are for how the knots interact. A copy function, like other
+functions, would be a logical structure that has a meeting pattern with other
+things. And we would need to prove that the copy/paste pattern can be
+generalized." He asked that two things be kept apart in everything written
+about it: "a law is the rule the growth follows (which knots join, what a new
+knot receives, what a short knot does); a copier is a pattern the growth
+makes." The register holds this as assumption A244, a working premise
+(sub-goal B327, under goal G15). A copier would meet a second pattern and
+leave two of the second; the part that copies itself leaves two of itself.
+
+**The claim, frozen and not yet run.** The study of a made copier,
+MADE-COPIER-20261125-001, froze its first ticket on the evening of 24 November
+2026 (Pacific time; 25 November in UTC), before its code was written, so no
+registered run has been made
+([its claim](research/MADE-COPIER-20261125-001/claim.md);
+[its pre-registration](research/MADE-COPIER-20261125-001A/preregistration.md)).
+The law is fixed before any pattern: the taking rule that takes from a knot the
+parent meets, with the rule taking from one parent step as a second, under
+stated base laws and each of the four conventions for which distinction a
+birth takes. The first pattern is the part of two knots; the second patterns
+form small classes set out in advance. His three readings of "two of it", "the
+same form, the same built structure, or the same values", become two parts the
+same as the second pattern; two sets of made knots each a renaming of the
+second pattern's knots; and two usable loose made distinctions each tied to
+one place of the second pattern (glossary, "Tie class"). Two things are
+settled by argument before any run: under its taking rules with the ration
+"just enough for three places" no part with a member holding two loose
+distinctions is made except by offshoots of start knots, so the form reading
+is tested under other base laws; and under not-all-equal, from a start with no
+tie, no made distinction is ever tied to another, so the values reading is
+claimed under parity only. Every registered claim is predicted to fail; a
+failure would speak of that one first pattern, those rules and those classes
+only.
+
+**Consume and output two.** Later the same evening, before the freeze, the
+owner wrote: "I have a trick maybe. What if instead of 'copying', we consume
+and output 2?" (24 November 2026, Pacific time; the record's tickets carry 25
+November). It changes what counts as two. The two patterns would become one
+part, births with a parent in each would use up the second pattern's loose
+distinctions, the second pattern's own descendants would end, and the two
+afterwards would descend from both patterns; the frozen claim counts only two
+whose members descend from the first pattern alone. A second ticket of the
+same study is being designed for it; nothing of it is frozen or run.
+
+**An inkling that no copier is general.** "the interesting fact here is that
+it's actually impossible to generalize a 'copier' for all logic structures. It
+might be the case that some logic models are able to over-write the
+instructions of the copier and break out." (24 November 2026, Pacific time;
+the record's dates carry 25 November.) It is assumption A248, a working
+premise kept apart from the evidence. The frozen claim registers it as a
+reading (its section 6): no first pattern, law and stated rule leaves two of
+every member of a registered class; since the classes are finite, failures
+would only support it, and one pattern that works for a whole class would
+overturn it for that class. "Over-write the instructions" and "break out" stay
+in his words.
+
+**What a made count would be.** A made count of returns would be a pattern the
+growth builds whose births follow another pattern's returns; "made" speaks of
+the pattern only, as for a made clock (glossary, "Clock; tick"). Lesson 9.6
+keeps it apart from an order and a clock, and says what it still lacks. At
+each return it would need only whether the other pattern has returned, one
+yes-or-no. Whether that is enough for the second property in its fuller sense
+is not settled (reading): a count that follows returns would differ between
+two clocks of different periods, which is a difference with what the other
+pattern is, and no such comparison has been run. Whether a part has returned
+is also a different yes-or-no from whether it is barred, and the study of
+lesson 10.3 did not ask it.
+
+**What each would ask of the other pattern (reading).** A count needs one
+yes-or-no at each return. A copier that leaves two of two different second
+patterns would, as the register records the copier study's reading (A248),
+need a course that depends on what it meets, and in the 16 pairs of lesson
+10.3 no course depended on what the other part is.
+
+**The study of a made count.** TIME-AS-FOLD-20261125-001 (the record's
+identifier; its "fold" is short for the owner's phrase) takes sub-goal B329,
+under goal G5, dynamics, with G15 and goal G18, comparing growth laws: whether
+a pattern the growth makes can count another pattern's returns. It is not
+frozen and has no result.
+
+### 10.5 What is open
+
+**The plain answer.** The record has no fold of emergence. In the study of
+lesson 10.3 the parts are made one part again by births with nothing placed
+after the start, under taking rules, conventions for which distinction a birth
+takes, rations and starts that are all supplied. What one part then builds
+differs between the run with the other growing and the run with it barred; in
+none of the 16 pairs asked does it differ with what the other is; and no part
+made a pattern of its own from what it met.
+
+**Open, by sub-goal.**
+
+- **B317's remainder (goal G15).** A part whose course depends on what the
+  other part is, and that makes a pattern of its own from it; neither was
+  found (B317's note of 25 November). Two directions the study deferred bear
+  on it: vary the second part more widely under the rule that takes from a
+  knot the parent meets, stopping at one such dependence or at a reason that
+  only whether the other grows can matter; and find a base law under which
+  parts come apart under both rations, for a case that remains under a change
+  of ration.
+- **B326, an index made by the growth (G15).** The owner, by 24 November 2026
+  (Pacific time): "This is why we may need 'function-like' logical operations
+  where we can reference/sample logic. These are basically meeting patterns
+  that are complex in nature. Maybe even so complex as to the indexing
+  operation being logic based iterators rather than incremental. So like maybe
+  intelligence as a fold has access to something like 'the golden ratio', but
+  it needs to index what part of the golden ratio it's looking at?" (his
+  picture, on which the guide makes no claim; the register's notes under
+  A241). In the program's terms what is needed is which part of the other
+  pattern is taken (his "indexing"), made by the growth and not kept from
+  outside. In the laws of lesson 10.3 that is which distinction a birth takes,
+  and every convention for it is supplied. One of them, by count, takes a
+  number from the structure but uses it as a position in the list of eligible
+  distinctions sorted by the supplied names (the study's results, dated note
+  of 25 November). In the golden-ratio eddy a knot's own holdings already give
+  the round it was made in to within three values, and no rule reads them
+  ([what a reference is](research/RING-IN-BALANCE-20261123-001B/results.md),
+  computed, referee pending). The first step as filed: fix the taken
+  distinction by something the structure holds, and compare with the supplied
+  conventions on the same starts.
+- **B327 and B329.** Taken by the two studies of lesson 10.4: the first frozen
+  and not run, the second not frozen.
+- **B328, where it bears (goal G5, dynamics).** The rules that take from one
+  or two parent steps from a parent read the record of births, which each
+  birth writes and the study lists as supplied; the rule that takes from a
+  knot the parent meets reads no record. For births made one at a time, three
+  values on each knot stood in for the record of parents wherever the knots
+  that join were made together (lesson 8.1; assumption A247, a scaffold); this
+  was not tested for these laws. Whether the structure itself can hold such a
+  count of descent is B328. (reading) If it can, ancestor-taking would need no
+  written record of descent; which distinction it takes would still go by the
+  supplied names.
+- **Referee and run.** The argument for the laws that take only from parents,
+  and every computed result of lesson 10.3, await their referee. That study
+  froze 19 predictions: 16 hold, two fail in one clause each, both in
+  controls, and one turns on a reading. It ran six starts for eight rounds,
+  about 1,500 knots a run, under laws set by hand, and one registered
+  enumeration was still running when its results were written.
+
+**What would answer it (reading).** By the register's own test, a first
+instance would be "one growth in which a made pattern takes one course or
+another according to what a second made pattern is, with nothing read or
+chosen from outside" (A223), with the masked run of lesson 10.2 showing that
+the difference went through the two parts meeting. A fold of emergence would
+then also need the third property, for which no test is registered.
 
 ## Glossary
 
@@ -5013,7 +5519,7 @@ that earlier records used in two senses.
   The outcome belongs to the growth, in its order, not to the pattern it
   reaches. The intuition: the owner's combinations that "resolve to nothing",
   "go for a while then die" and "go on forever".
-- **History.** One whole course of a process or a growth with nothing left
+- **History.** One whole run of a process or a growth with nothing left
   open. For a process whose updates are given: the value of every cell at
   every update (lesson 1.3). For a growth: one run, with its order of births
   and which distinction each birth takes fixed. A history of the first kind is
@@ -5152,12 +5658,26 @@ that earlier records used in two senses.
   where what it makes depends on another pattern, and that makes a pattern of
   its own,
   as he pictures DNA and intelligence. An interpretation. Under laws added by
-  hand the record has cases in which what one made part builds depends on
-  whether another is there, but none in which it depends on what the other
-  is, or in which a part makes a pattern of its own from what it meets
-  (lessons 8.7 and 9.6). It is not the
+  hand the record has cases in which what one made part builds differs between
+  a run with another made part growing and a run with it barred, but none in
+  which it differs with what the other is, or in which a part makes a pattern
+  of its own from the other (lessons 8.7, 9.6, 10.1 and 10.3). It is not the
   two-fold of a two-fold weave, which counts knots, and the guide makes no
   claim about living things.
+- **Copier.** The owner's word (24 November 2026: "a copier is a pattern the
+  growth makes", assumption A244 and sub-goal B327; and "a 'copier'" in his
+  inkling of the same evening, assumption A248). In the guide: a pattern the
+  growth makes that meets a second made pattern and leaves two of the second.
+  A copier is a pattern, never a law: the law (which knots join, what a new
+  knot receives, what a short knot does) is supplied and named separately. A
+  claim of a copier names the class of second patterns and, in the owner's
+  words, whether "two of it" means "the same form, the same built structure,
+  or the same values". The record has none. Not the part that copies itself
+  (lesson 8.7), which takes nothing from another pattern and leaves two of
+  itself, though its record's heading calls it "the copier"; and not the
+  literature's replicator under HighLife, which also copies itself. The
+  owner's inkling that no copier can be general is A248, a working premise
+  (lesson 10.4).
 - **Weaned; brood.** In the laws that make one birth at a time (lesson 8.1),
   a knot is weaned when none of its parents is still in the live roster: its
   parents have finished giving. The **brood** of a knot is the smallest set
@@ -5168,14 +5688,39 @@ that earlier records used in two senses.
   that is also a recorded ancestor of both and not the parent of both: the
   knot through which two sets of descendants are joined. The owner's phrase
   for it was "axis point", and afterwards perhaps "access point" (24 November
-  2026, assumption A241). **Ancestor-taking** is a law under which a birth
+  2026, assumption A241). A **taking rule** is a rule added to a growth law
+  under which a birth also takes a distinction that is already shared, by a
+  supplied convention for which: rules R and Q take only what a parent holds,
+  and the rule that takes from a knot the parent meets takes from no ancestor
+  (lessons 10.0 and 10.3). **Ancestor-taking** is a law under which a birth
   also takes a distinction that an ancestor of one of its parents holds, so
   that the distinction gains a holder. Under the laws of lesson 8.1 a shared
   distinction has two holders; where a birth may take a distinction that is
   already shared, shared means held by two or more. In the study of such laws
   ([PARTS-MEET-AGAIN-20261124-001](research/PARTS-MEET-AGAIN-20261124-001/decision.md),
-  computed, referee pending) parts that came apart became one part again
-  through such a knot in 62 cases, always a start knot.
+  computed, referee pending) such a knot was among the common knots of the
+  members of two parts that had come apart and were one part again for 62
+  pairs, and the only one for 6; it was always a start knot (lesson 10.3).
+- **Course of a part; with-and-without test.** The **course** of a part X of
+  the live roster after round s is what X and its descendants build, round by
+  round: each birth whose parents all lie among them, with its parents, what
+  it takes and the number of its fresh distinctions, and which sets of their
+  members one knot meets, up to a renaming of the knots made after round s. A
+  birth's demand is recorded separately and is not part of the course. The
+  **with-and-without test** is the owner's test (by 24 November 2026, Pacific
+  time: "run each start twice, once with the second part present and once
+  without it. A part reads another when its course differs between the two
+  runs") as one study measured it (assumption A246, a measure; the records'
+  "paired test"). One start is grown under one law, and grown again with every
+  usable loose distinction of a second part Y barred from round s, so that Y
+  stays built and makes no birth, and X's course is compared between the two
+  runs. Removing Y is the registered alternative, used only where it is
+  defined; in the study of lesson 10.3 it was defined for 182 of 302 pairs and
+  gave the same result for each. A masked run, in which no member of X or its
+  descendants can join a member of Y or its descendants, is the study's check
+  of whether a difference went through the two parts meeting (lesson 10.2).
+  The test shows whether X's course differs with Y barred; it says nothing of
+  what Y is. A course is not a history, which is one whole run.
 - **Clock; tick.** A clock is anything in which one named event recurs and
   against which other changes are counted; each recurrence is a tick (lesson
   9.4). The guide always says which kind. A **supplied clock** is given by
@@ -5377,7 +5922,8 @@ that earlier records used in two senses.
   | two-sided | (none) | orientable |
   | side | (only in the owner's words: "the continuous edge of the loop", open to any number of others, lesson 7.3) | an edge of a drawn knot: the literature's; knots or bases "side by side": overlapping, or stitched (lesson 7.3), never side by side |
   | thread | (a thread of work, not used in the guide) | an endless chain of atoms: chain |
-  | fold | (only in the owner's words: his folded, compressed structure, and his "fold of emergence" of lesson 8.7, written in full; never the two-fold of a two-fold weave) | the direction the law does not lengthen: unlengthened shift |
+  | fold | (only in the owner's words: his folded, compressed structure, and his "fold of emergence" of lessons 8.7, 10.1 and 10.3, written in full; never the two-fold of a two-fold weave) | the direction the law does not lengthen: unlengthened shift |
+  | copier | the owner's word: a made pattern that meets a second made pattern and leaves two of the second (lesson 10.4) | the two-knot part that makes two of itself (COPYING-PARTS-20261123-001's heading "The copier"): the part that copies itself |
   | source, product | (a source: where a citation or a distinction comes from; a product: of numbers) | a start that keeps releasing packets (the growth records' source): generator; what it releases (the records' product or family): packet |
   | ladder | (the literature's only, such as the n × 2 ladder graph) | three consecutive distinctions and every second one after them (ACROSS-FOLD-20261112-001's pre-registration): heddle; its rungs: the heddle's members after the three |
   | row, column | (a row: a sequence, as in steps apart and chain) | the indices of base 16's drawn frame: across-count, along-count |

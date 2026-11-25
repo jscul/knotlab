@@ -3,6 +3,10 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 25 November 2026 · What the study of parts that meet again showed, said more exactly
+
+**Narrowing of the public summary.** Intuitions lessons 8.7 and 9.6 and the glossary's "Ancestral common knot" summarised that study more broadly than its results. The recorded rules keep apart parts that share nothing, even through a third part, not every pair that came apart. One part's course differs with the other barred, the other staying built. In 72 pairs a birth has a parent in each part; what was not found is anything built from what the other part is. An ancestral common knot was among the common knots of the two parts for 62 pairs and the only one for 6. For 38 of the 216 pairs the difference went through a third part. Lesson 9.6 no longer says that a made count of returns has the form of a fold of emergence; that is left open. The new Chapter 10 gives the study with these scopes. [Parts that meet again](research/PARTS-MEET-AGAIN-20261124-001A/results.md)
+
 ## 25 November 2026 · How many histories tried every choice
 
 **Narrowing.** The study of parts that meet again reported "1.94 million histories with every choice tried" for its check that two rules never rejoin parts that share nothing. Every choice was tried in 268 of its 285 enumerations, 239,866 histories; in the other 17 the frozen text's cap applied and 100,000 histories each were taken at random under a fixed seed. Nothing against the argument was found in either kind, and the argument does not rest on the enumeration. The study's results carry a dated note. [Parts that meet again](research/PARTS-MEET-AGAIN-20261124-001A/results.md)

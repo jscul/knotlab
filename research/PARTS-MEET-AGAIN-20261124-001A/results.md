@@ -196,3 +196,13 @@ not rest on the enumeration; but for those 17 the runs show what a sample shows,
 holds for the decision note's "in every choice of distinction tried so far" and for "285 of 360 parts done" wherever
 this record says "trying every choice". Found by the independent fact-check of the Intuitions guide's chapter on folds
 of emergence.
+
+## Update of 25 November 2026: the enumeration at 358 of 360 parts
+
+The registered run that goes through the possibilities for which distinction each birth takes, under rules Q and R with
+the swaps, has now done 358 of its 360 parts: 3,571,746 histories, with every possibility tried in 326 parts (371,746
+histories) and, where the frozen text's cap applied, 100,000 histories taken at random under a fixed seed in each of
+the other 32. In none are two parts that share nothing one part again, and in none does a birth have a parent in each.
+The last two parts are still running and are expected to need about forty hours; this note will be followed by one
+more when they end. The counts above replace "285 of 360" and "1.94 million" in the verdict on P1, in "One registered
+run is not finished" and in the correction of the same day.

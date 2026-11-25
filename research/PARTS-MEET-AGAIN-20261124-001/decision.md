@@ -116,3 +116,10 @@ Of 19 predictions, 16 hold. Two fail in one clause each, both in controls, becau
 **Basket:** direction #1 (B327) taken; B317's remainder (3/3, 1/3), direction #3 (2/3, 2/3) and B326 (3/3, 1/3) deferred.
 
 One registered run is not finished: trying every choice under rules R and Q with the swaps is 285 of 360 parts done, with nothing against the argument. Most of the rest should end today; two parts need forty hours or more. I'll add them to the record when they end.
+
+## Update of 25 November 2026
+
+The enumeration that was unfinished at the close has done 358 of its 360 parts: 3,571,746 histories, every possibility
+tried in 326 parts and 100,000 histories taken at random in each of the other 32 (the earlier wording, "every choice
+tried", was corrected the same day). Nothing against the argument. The last two parts are still running.
+

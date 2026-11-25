@@ -25,3 +25,7 @@ Things a referee should know.
   nothing placed by hand after the start. The law and its way of choosing are supplied in every case.
 - **Words.** "Ancestral common knot" and "ancestor-taking" were chosen with the advisor and approved by the owner; his own
   phrases for the first were "axis point" and "access point".
+
+**Update of 25 November 2026.** The unfinished enumeration has done 358 of its 360 parts (3,571,746 histories: every
+possibility in 326 parts, 100,000 taken at random in each of 32). Nothing against the argument; two parts still running.
+

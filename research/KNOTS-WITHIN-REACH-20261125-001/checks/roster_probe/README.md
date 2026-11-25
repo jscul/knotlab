@@ -81,19 +81,22 @@ the ranges read. The count over the whole history has one degree more, which is 
 
 ## How it was checked
 
-- **A second growth engine.** Six stages (census 19 after rounds 10 and 20; 177 after 10 and 15; 218 after 10; 178
-  after 20) were grown again with the round of the study of births one at a time, and the members, their meetings
-  and the counts recomputed without any code of the reach study: the same knots, members, neighbour counts and
-  counts at every r.
-- **The knot test.** The reach study tested every knot of its runs of twelve of these starts (the nine of three and
-  four knots, and census 1964, 2236 and 2694) under the ordinary count and the cap of three, to the same bounds, with
-  no failing knot. The other eleven five-knot starts were not knot-tested; two of the four starts of the second row
-  (census 3195 and 3288) are among them.
+- **A second growth engine, on every start.** All 23 starts were grown again under the ordinary count with the round
+  of the study of births one at a time, and the members, their one-step relation and the counts recomputed with no
+  code of the reach study, after rounds 10, 15 and 20: the same knots, members, neighbour counts and counts at every
+  r on 69 of 69 stages (on two of them the probe had read a sample of the members, and only the knots and members
+  are compared). [The check](confirm.py) · [its output](confirm_second.json)
+- **The knot test, on every run.** The reach study's own routine, unchanged, on the 92 probe runs of the 23 starts
+  under four laws: the start knots and a seeded sample of 200 made knots of each run, by two methods under each knot
+  law. 18,820 knots tested under not-all-equal and the same under parity, none failing, none untested, the methods
+  never disagreeing; no run closes under parity. [Its output](confirm_ktest.json)
+- **The matching** of the first two rows with their description is exact on all 25 stages tried (above).
 
 ## Limits, said plainly
 
-- **A probe.** No pre-registration, no independent program for the whole table, no referee. The formulas were found
+- **A probe.** No pre-registration and no referee, and both engines were run by the thread. The formulas were found
   by looking at the counts.
+- **The knot test is of a sample**: the start knots and 200 made knots of each run, not every knot.
 - **Finite ranges.** An exact match through 7 or 13 steps on a part of a few thousand members is a count. It is not a
   proof that the part is a piece of an unbounded pattern, and no limit is taken.
 - **The argument is sketched, not written.** For the first two rows it follows the earlier proposition, and the

@@ -129,3 +129,44 @@ unequal knots (246 rings: five knots holding 2 to 5 loose distinctions each, six
   that sense was not examined.
 - **Finite**: 7 rounds, starts of three to five knots, and rings of five to seven.
 - Nothing here is about living things, minds or physics.
+
+## Report as sent (2026-11-25, about 22:20 UTC)
+
+**Direction 1, run with rules that do reach further: parts of different descent can be made to meet through knots the growth made, under a rule that uses no names. Where that link is wholly the growth's, the first part's course still tells only how many second parts are there, never which.** This was a second probe of my own, not a registered study.
+
+First the correction. The rule I named for this direction, "a take within one holder step", reaches less far than the rule already in use, so it could never have done this. I ran the direction with rules that draw from one step further out. It is logged (Not a block).
+
+What the runs show:
+
+- **Seven new taking rules, none using a name; six give nothing new.** I varied how far a birth draws from (the knots its parent meets, or also the knots those meet) and which candidate it takes (the only one, all, the one with fewest holders, the one with most). Six of the seven either almost never take, or pile everything through the start, or behave like the old rule.
+- **One works: draw from further and take the candidate with the most holders, when exactly one has the most.** Under it a first part meets second parts that are not branches of its own knot, through made knots that are an ancestor of neither.
+- **Through links that are wholly the growth's: how many, through two births, never which.** On 123 rings of five knots with unequal knots, 1,120 tests: the course is the same whichever second part is barred. It does take two values at two births to tell the cases apart, which is new, but they are two copies of one count. I expected rings with no symmetry to show "which", wrote that down first, and was wrong.
+- **On the census starts, "which" does appear, but through the start.** In 11 of 127 tests the course differs with which second part is barred. Every one of those links runs through a distinction a start knot holds. In the cases I read birth by birth the cause is which second part arrives first, or a count at one birth and a join at another.
+- **Whether anything responds to what a second part is stays open.** No test holds the place fixed and changes the form. The study of parts that meet again had already found, with one second part, that what crosses is whether the other part is there; this agrees with it.
+
+Checks: the engine is ticket B's with five recorded changes and reproduces it on 73 of 73 runs; every take was recomputed from the rule's words (7,105 of 7,105 births); renumbering changes nothing (240 of 240); the five-knot starts and the rings were run once, after the rule was fixed. Not run: 148 of 27,837 runs passed their time limit, and the knot test was run on two cases only.
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt — the second probe of sub-goal B335: takes that reach further | **Status:** Partially successful | Parts of different descent meet through made knots under a rule without names; a course that differs with which second part is barred shows only through a distinction the start holds. |
+| Local direction — more than a count by changing the taking rule | Practically exhausted | Seven rules; under the one that works, 1,120 of 1,120 tests through the growth's own links tell how many. |
+| Broader exploration — the owner's fold of emergence | Known alternatives | A test that fixes the place and changes the form; the third property; the copier study, whose third ticket has reported. |
+| Long-term goal — G15 Learning: a point in a learned knot pattern, with G18 Comparing growth laws | Capability gained | A rule without names under which made parts of different descent meet, and a first course that needs two values at two births. What crosses is still presence and counts. |
+
+**Next step:** Research directions — selected: #1
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+| --- | --- | --- | --- | --- | --- |
+| 1 | A test that fixes the place and changes the form: the same first part, with a second part of one form or another in the same place | 3/3 — it is the question the fold asks | 1/3 — no start or rule in hand gives it | Design pairs of starts that swap two forms between two places, as a registered study with an advisor's review → a course that follows the form, or one that follows the place on every pair | Selected · awaiting go-ahead |
+| 2 | Are the links under the new rule contacts or common hubs? | 2/3 — the rule seeks the most-held distinction, and a hub is not a contact | 2/3 — the knot test exists; the hub reading of a link must be written | Read the linking distinctions of the 1,120 ring tests for their holders → links that pass as contacts, or hubs throughout | Alternative · deferred |
+| 3 | The third property on a case in hand: does a part whose course changed make a part of its own that it otherwise would not? | 2/3 — completes the owner's three properties on one case | 3/3 — the cases and the four runs exist | Read the parts made from the first part only in the four runs to round 9 → a part form in one run and not another, or the same forms | Alternative · deferred |
+
+Direction 1 moves G15's open question directly, and its weakness is that nobody has yet shown such a pair of starts exists; it needs a design, not another sweep, so it waits for your word. Direction 2 guards the one positive against being the wrong kind of link. Direction 3 is cheap and finishes the picture on what we have.
+
+**STOP** for changing the taking rule. Settled, for what was read: a rule without names can make parts of different descent meet, and through the growth's own links only a count crosses, at as many births as there are second parts. Open: whether a course can follow the form of what it meets. What would reopen this line: a rule that reaches as far without seeking the most-held distinction.
+
+**Corrections:** one, logged (Not a block): the rule first named for this direction reaches less far than the one in use. One expectation written before a run failed (rings with no symmetry would show "which"); that is a result.
+**Goals:** no checkpoint row (no study closed). B335 carries both probes; its concreteness is re-rated 1/3.
+**Assumptions:** one scaffold entered, A257 (a birth may take the most-held distinction within two holder steps of knots). A244 (a law is not a reader) is borne out again.
+**Scaffolds:** added: seven taking rules, one of them entered as A257. Swapped: how far a birth draws from, which candidate it takes, the ration (five), the treatment of short knots (three), the starts (rings, census starts of three to five knots, 246 rings with unequal knots). What survived: how many, through the growth's own links. What did not: any "which", which appears only where a start knot holds the linking distinction.
+**Basket:** direction 1 is recorded on B335; directions 2 and 3 are in this report only.

@@ -3,6 +3,10 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 25 November 2026 · How far a knot's rule reads on cycles, and what "by count" uses
+
+**Wording corrections.** Intuitions lesson 8.1 said that on cycles through dead knots it is enough to read four steps out "whatever the size of the cycle". The study ran cycles of 4, 6, 8 and 12 live knots joined through dead ones, and the lesson now names them. The study of parts that meet again said that its "by count" way of choosing which shared distinction a birth takes "uses the structure only". The count is in the structure, but it is used as a position among the candidates sorted by name, so all four ways of choosing use the supplied names. No verdict changes: reversing the start's names was a registered swap, run on every case. The study's results carry a dated note. [Reading a round locally](research/LOCAL-ROUND-20261123-001A/results.md) · [Parts that meet again](research/PARTS-MEET-AGAIN-20261124-001A/results.md)
+
 ## 22 November 2026 · Which distinction satisfies a payment
 
 **Wording correction.** The earlier-payment study fixes which knots pay a child and how many distinctions are owed. With the same founders, a donor can exchange the destinations of its two named marks 63 and 64. The later joint child forms under either allocation and both knot laws. [Correction and original comparison](research/EARLIER-EVENT-AND-LATER-BIRTH-20261122-001/decision.md#correction-on-22-november-2026)

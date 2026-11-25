@@ -17,7 +17,7 @@ interpretation, not a result, and it is under test. Lesson 2.4 states it in
 the guide's words, once the knot it speaks of has been defined, and shows how
 the later lessons on distance and dimension hang from it.
 
-The page is written as a textbook, to be read in order. Its eight chapters are
+The page is written as a textbook, to be read in order. Its nine chapters are
 divided into lessons, and each lesson builds on the ones before it. Each
 chapter opens with a lesson numbered 0, its introduction: an index of the
 chapter's lessons, a line or two on each, and under it the chapter's
@@ -116,6 +116,14 @@ PYTHONPATH=tools python3 -m knotlab demo
   - [8.5 Locality before space](#85-locality-before-space)
   - [8.6 Structure and state](#86-structure-and-state)
   - [8.7 Generators and folds of emergence](#87-generators-and-folds-of-emergence)
+- [Chapter 9. Time](#chapter-9-time)
+  - [9.0 Introduction](#90-introduction)
+  - [9.1 A history is one allowed state](#91-a-history-is-one-allowed-state)
+  - [9.2 What the rounds count](#92-what-the-rounds-count)
+  - [9.3 Births one at a time: the order that is left](#93-births-one-at-a-time-the-order-that-is-left)
+  - [9.4 Clocks made by the growth](#94-clocks-made-by-the-growth)
+  - [9.5 Priority: which birth is made first](#95-priority-which-birth-is-made-first)
+  - [9.6 Is time a fold of emergence?](#96-is-time-a-fold-of-emergence)
 - [Glossary](#glossary)
 
 ## Chapter 1. Bits and rules
@@ -296,7 +304,7 @@ published by Gardner in 1970.
 - **A history is an allowed state.** Stack the steps in layers, with one
   variable for each cell in each layer. Together, the rules of every cell
   allow exactly the possible histories: the first layer can be anything, and
-  every later layer is forced.
+  every later layer is forced. Lesson 9.1 comes back to this.
 - **The famous patterns are solutions.** A still life, such as the block, is a
   state that the rules carry to itself, so it is an allowed state of the rules
   with the next layer equal to the present one. An oscillator, such as the
@@ -2460,7 +2468,8 @@ typical has to name its weighting.
    sample, and the question becomes which meeting patterns are typical and
    which rare (lesson 7.3).
 2. **Dynamics.** Are loops better modelled as processes whose outputs over
-   time are the data, and does the static test survive that change?
+   time are the data, and does the static test survive that change? Lesson
+   9.1 gives what the record has found.
 3. **Limits.** No set of finite clauses binds infinitely many loops into one
    contact (by compactness). Does the program need a limit rule that does?
    The owner also sees a limit where a growing knot pattern nears its end
@@ -3050,7 +3059,8 @@ Taking the rounds away shows what they were doing (computed, refereed):
 
 - **One join at a time.** Laws that make one join at a time, reading only
   what is already built, built different things in different orders in 12 of
-  14 cases, and never what the rounds build (0 of 280 orders). The order can
+  14 cases, and none of 280 orders matched the rounds even through round 3.
+  The order can
   even decide whether a growth goes on: two three-place knots sharing a
   distinction grow forever in rounds and stopped in 4 of 20 random orders,
   while a lone four-place knot, which closes in rounds, kept growing in 19 of
@@ -3066,9 +3076,10 @@ Taking the rounds away shows what they were doing (computed, refereed):
   it equals the rounds only inside the theorem's class.
 - **A law that reads only what is built (proved in its scope, referee
   pending).** A later study found one for ordinary growth: finish the births
-  of the least unfinished depth first, working out from what is already built
-  what the round at that depth would make. Every order of its own moves then
-  builds what the rounds build, with no map and no stored date, on starts
+  of the earliest unfinished round first, a knot's round found as its fewest
+  holder steps to the start knots, working out from what is already built
+  what that round would make. Every order of its own moves then builds what
+  the rounds build, with no map and no stored round, on starts
   whose first knots can be recognised
   ([SERIAL-REPAIRS-20261120-001](research/SERIAL-REPAIRS-20261120-001/decision.md)).
   It reads the whole of what is built, and where a knot has to wait it stops
@@ -3085,9 +3096,10 @@ Taking the rounds away shows what they were doing (computed, refereed):
   brood is weaned, and then works out from the brood as it was at birth what
   the round would have had it do, builds what the rounds build in every order
   searched: where knots wait, where none does, and under ordinary growth. On
-  cycles through dead knots it is enough to read four steps out, whatever the
-  size of the cycle. Each further time a knot has to wait reaches a step
-  further, so no fixed distance serves every case. Laws that read what is
+  the cycles through dead knots that were tried, of 4, 6, 8 and 12 live knots,
+  it is enough to read within four holder steps. Each further time a knot has
+  to wait needs one holder step more, so no fixed number serves every case.
+  Laws that read what is
   there now, and not the brood as it was made, fail within a few births. The
   round has not gone: the law replays it from the record of parents. What has
   gone is the need for anyone to keep it
@@ -3098,13 +3110,13 @@ Taking the rounds away shows what they were doing (computed, refereed):
   it fails: a knot's children are then no longer all made in one round, so
   the knots made alongside one another are no longer one round
   ([GUARD-CAP-AND-HOLD-20261124-001](research/GUARD-CAP-AND-HOLD-20261124-001/decision.md)).
-  And the record cannot in general be read back from what is built. In the
-  half-built states of births made one at a time, a knot and its offshoot can
-  look exactly alike; the smallest case has two knots. One finished structure
-  of 16 knots keeps no trace of which knot was first. On structures built by
-  complete rounds, two steps out are enough where a short knot retires and
-  leaves a barred place, and no fixed distance is enough where it makes
-  offshoots
+  And the record cannot always be recovered from what is built. In the
+  unfinished structures of births made one at a time, a knot and its offshoot
+  can look exactly alike; the smallest case has two knots. One finished
+  structure of 16 knots does not show which knot came first. On structures
+  built by complete rounds, two holder steps are enough where a short knot
+  retires and leaves a barred place, and where it makes offshoots the holder
+  steps needed are one fewer than the round, so no fixed number is enough
   ([PARENTS-FROM-HOLDERS-20261124-001](research/PARENTS-FROM-HOLDERS-20261124-001/decision.md)).
 - **Three values are enough (computed, referee pending).** If every new knot
   writes one of three values, one step on from its parents' value, a knot can
@@ -3131,7 +3143,8 @@ whether a growth ends asks whether the whole structure is finite.
 The owner asked, on 19 November 2026, "The structure changes over time? Like
 it adds more logic to itself?", and accepted this reading: "This makes sense,
 yes" (assumption A110). It rests on the theorem's class; for the explosive
-starts of lesson 8.2 it is open.
+starts of lesson 8.2 it is open. Chapter 9 gathers what the record holds on
+time, from these rounds to the order of births and the clocks of lesson 8.7.
 
 ### 8.2 Four kinds of growth
 
@@ -3579,7 +3592,8 @@ Codex's motion-law study
 ([MOTION-LAW-20261119-001](research/MOTION-LAW-20261119-001/what_is_forced.md),
 referee pending) asked what the owner's "Time doesn't have ticks" can mean for
 a rule of motion. With no clock, it says that the order of local changes
-should not matter, and that can be meant at three strengths.
+should not matter, and that can be meant at three strengths. Lesson 9.2 sets
+them beside what else the record has on time.
 
 - **Full strength: every two local changes can happen in either order.** Then
   nothing moves. A compact change on a quiet background stays where it began,
@@ -3706,8 +3720,10 @@ growing. It does not mean two independent objects."
 - **No packet of fixed width forever (proved; the referee read this proof in
   outline).** From a finite start in the class above, only finitely many
   packets that last can be released with at most w knots apiece, for every w
-  and under every reading. Each lasting packet has to keep its own repeating
-  line of parents or its own endless chain, and a finite start has finitely
+  and under every reading. Each lasting packet has to keep its own endless
+  sequence of knots, each a parent of the next, along which the start's knots
+  recur in a fixed repeating order, or its own endless chain, and a finite
+  start has finitely
   many of them at each width. The seven-knot
   generator keeps none narrower than four knots and at most two of width four
   ([COPIES-AND-MEETINGS-20261120-001](research/COPIES-AND-MEETINGS-20261120-001/bounded.md)).
@@ -3825,7 +3841,9 @@ sure." And: "what if 'time' is a device or pattern just like the other ones?
 system, if that makes sense. How often updates happen given some property
 (maybe mass impacts that). … Then places with nothing going on need less
 simulation." The same frozen study took both up. His pictures are recorded as
-assumptions A228 and A229, interpretations that no result settles.
+assumptions A228 and A229, interpretations that no result settles. Chapter 9
+takes up both, with what the record has found since; lesson 9.6 takes up his
+later question, whether time is itself a fold of emergence.
 
 - **Every join already has a reference.** Two knots can join only when some
   knot meets both (lesson 8.1). A dead knot is the pure case: it makes nothing
@@ -3852,7 +3870,7 @@ assumptions A228 and A229, interpretations that no result settles.
   parents and f fresh distinctions has r = f + 2p − 3, − 5 or − 7 (from lesson
   8.1's theorem; checked on 44,333 knots). So one sampled knot gives its round
   to within three values, and with it the growth factor there. Where only some
-  knots keep a leftover distinction the window widens, and on a bare ring every
+  knots keep a leftover distinction more values of the round fit, and on a bare ring every
   knot holds the same and carries no round.
 - **The round can belong to a part.** The complete round has every knot of
   every part read at one moment (lesson 8.1). Under the added rules that is
@@ -3870,8 +3888,8 @@ assumptions A228 and A229, interpretations that no result settles.
   three distinctions has released two when it reads again, finds itself short
   and stops, and the ring never frees itself. That happens in every order (all
   101,606,400 of them on a cycle of four live knots joined through dead ones).
-  Whether some law lets the knots of one part read at different moments is
-  open.
+  A later study found a law that lets the knots of one part read at different
+  moments, given a record of each birth's parents (lesson 8.1).
 
 **Using the golden ratio.** The golden ratio can be had on purpose, and there
 is a gadget for it, but nothing that carries it from one part to another.
@@ -3905,9 +3923,10 @@ is a gadget for it, but nothing that carries it from one part to another.
   2.6075 to 3.3792. Two growth programs agree with the rule on every round
   they reached of the five starts tried.
 - **What hangs on the eddy (computed, not refereed).** A three-place knot hung
-  on the golden ring of five raises the rate to 1.7292. The ring's own line of
-  knots keeps its counts exactly, 5, 10, 15, 25, 40, …; the knots that descend
-  from the hung knot grow at the higher rate and are 70% of the births by round
+  on the golden ring of five raises the rate to 1.7292. The knots that descend
+  from the ring's knots and not from the hung knot keep their counts exactly,
+  5, 10, 15, 25, 40, …; the knots that descend from the hung knot grow at the
+  higher rate and are 70% of the births by round
   16. Alone, that three-place knot closes after three rounds (lesson 8.0).
   Hung on a bare ring of five its line grows by 1.1347 a round, the rate of
   x⁶ = x + 1. So a part that would finish alone is kept going by a
@@ -4006,6 +4025,560 @@ next step, B327). And proofs
 of what is so far argued or computed: the return for every odd ring, the sizes
 of the parts under each cap, and that one leftover distinction on every knot
 turns rate x into the x′ of x′² = x(x′ + 1) (B316, under G17).
+
+## Chapter 9. Time
+
+### 9.0 Introduction
+
+**The lessons.** What each lesson of this chapter is about:
+
+- [9.1 A history is one allowed state](#91-a-history-is-one-allowed-state): a
+  process whose updates are given, written out update by update, is one system
+  of rules, and each of its histories is one state that system allows. Knots
+  join later updates to earlier ones.
+- [9.2 What the rounds count](#92-what-the-rounds-count): the rounds, as run,
+  are a supplied clock. Where lesson 8.1's theorem holds, a knot's round counts
+  its size, and the growth does not need them.
+- [9.3 Births one at a time: the order that is left](#93-births-one-at-a-time-the-order-that-is-left):
+  with the rounds gone, what is left is that a knot comes after its parents. It
+  cannot always be recovered from what is built; three values on each knot
+  sufficed wherever the knots that join were made together, and one start needs
+  five.
+- [9.4 Clocks made by the growth](#94-clocks-made-by-the-growth): patterns in
+  which an event recurs, and what has been counted against them. Whatever
+  counts their ticks has so far been supplied.
+- [9.5 Priority: which birth is made first](#95-priority-which-birth-is-made-first):
+  the owner's priority among updates, and what the record has on the order of
+  births: where it changed only how many births lie between returns, and where
+  it changed what is built.
+- [9.6 Is time a fold of emergence?](#96-is-time-a-fold-of-emergence): the
+  owner's question. An order, a clock and a made count of returns are kept
+  apart. Only the last has the form of a fold of emergence, and the record has
+  none yet.
+
+**The intuition.** This chapter makes no claim about physical time. The
+program's foundation holds that an order of formation alone is not physical
+time ([docs/COMMON_VERBIAGE.md](docs/COMMON_VERBIAGE.md)), and every before and
+after below is a relation in an allowed state or in the record of a growth. The
+program's logic is given no clock. A system is known by the states it allows
+(lesson 1.2), so a whole history of a process whose updates are given is one
+allowed state, and before and after are relations inside it. Every round, tick
+and order of changes in the program's simulations is supplied by whoever runs
+them (assumption A228), and the chapter asks which of them the growth can do
+without. Where lesson 8.1's theorem holds, the rounds count size; with the
+rounds gone, what is left of before and after is that a knot comes after its
+parents, and for births made one at a time that order has to be written down.
+On the owner's picture (A228) a clock would then be one more pattern, one in
+which an event recurs, and time what one pattern counts of another's returns.
+The record has such patterns. Whatever counts them is, so far, supplied.
+
+**The owner's words on time.** By 18 November 2026 (Pacific time; the register
+carries 19 November, the date in UTC of the first record that quotes it) the
+owner had put it as "Time doesn't have ticks". On 23 November he asked: "Also,
+what if 'time' is a device or pattern just like the other ones? Are we able to
+simulate things 'over time'? So logic is prior to time as well as space." The
+register holds this as his interpretation, assumption A228, the sibling of
+A112, which says the same of space (lesson 8.5). The same evening he refined it
+into a priority among updates, assumption A229 (lesson 9.5). On 24 November
+2026 (Pacific time; the record's tickets carry 25 November, its date in UTC) he
+asked for this chapter, and whether time is itself a fold of emergence (lesson
+9.6). All of these are interpretations, and no result settles them.
+
+**What this chapter adds.** No new result. Every statement stands in a record.
+Where an earlier lesson gives it (lessons 1.3, 2.4, 5.3, 7.3, 8.1, 8.6 and
+8.7), the chapter points to that lesson; otherwise it links the study. It also
+says what is open.
+
+### 9.1 A history is one allowed state
+
+**A history in the Game of Life.** Lesson 1.3 treats Conway's game as one
+system of rules. Each cell at each update is a distinction, and the rules of
+every cell, over every update, allow exactly the possible histories: the cells
+at the start can be anything, and every later update is forced. An oscillator
+such as the blinker, which comes back to itself after two updates, is an
+allowed state of the same rules with the updates closed into a cycle, and a
+spaceship is one closed into a cycle and shifted (classical: Conway's game,
+published by Gardner in 1970). Before and after are then relations among the
+distinctions of one state. What is supplied is the grid of cells, drawn in
+advance, and the update of every cell at once, a tick of Life's supplied clock.
+
+**The static test applied to a process (reading).** Lesson 7.2 asks, as its
+question 2, whether loops are better modelled as processes whose outputs over
+time are the data, and whether the static test survives that change. For one
+process the record's answer is yes: written as its law over every update, a
+process is a static law on its histories, and the knot test K1–K3 applies to it
+unchanged
+([the study of knots across time](research/TIME-KNOTS-20261107-001/time_knots.md)).
+What that study proves, for processes in which each cell's next value is a
+fixed rule of earlier ones (the literature's cellular automata):
+
+- **Knots across time are the minimal deciding sets (proved).** A knot that
+  joins a cell's value after T updates to its start is exactly a set of
+  starting cells that, set suitably, decides the later value while no smaller
+  set does, together with that value, when the set holds two or more cells; a
+  single deciding cell gives a tie, not a knot. Checked against a direct search
+  on the 88 elementary rules (Wolfram, 1983) at one and two updates, and on 300
+  rules drawn uniformly from all rules of five inputs and of six, 150 of each.
+- **When memory of the start is only pairwise (proved, narrowed).** A later
+  value that is not constant has no knot with the start exactly when it is a
+  single "and", or a single "or", of starting values, each possibly negated.
+  The study takes this to be the boundary between two places and three of
+  Chapter 3, across time (reading). A narrowing the same day: such a process
+  can still knot later updates together, with no starting cell in the knot.
+  Rule 128, each cell the "and" of three, does, because it never makes the
+  pattern 1 0 1.
+- **What some processes keep (proved).** A linear rule keeps one knot of fixed
+  size with its start at every number of updates that is a power of two (the
+  literature's Frobenius identity over GF(2)); for rule 60 the knot after T
+  updates has 2^w + 1 places, w the number of ones in T written in binary
+  (Lucas's theorem). One update of Life knots a cell's next value only to sets
+  of four of its neighbours, all 70 of them, and never to the cell's own
+  present value (proved by exhaustion).
+
+**Counted length across time.** Lesson 2.4 gives the record's other use of
+time. In networks of rings of cells, each ring running the literature's rule
+60, the record takes a count of contacts along a route as a magnitude, by the
+owner's ruling of 8 November 2026: "I think yes, length can count as magnitude"
+(assumption A40, confirmed by a test frozen before it ran). The glossary calls
+it counted length. From it the record built two exact forms, proved for every
+network of that kind: the most disjoint cuts that separate two rings of cells,
+which equal the literature's graph distance between them, and what the study
+calls a time of flight, which runs one way round each ring
+([the study of lengths across time](research/DISTANCE-20261108-001/distance.md)).
+Both are found through freezes (assumption A41); without them, the first update
+at which a contact needs a ring can break the literature's triangle inequality.
+The automaton's updates are given in advance, as every round, tick and order of
+changes in the program's simulations is supplied (A228).
+
+**Open for histories.** Life was examined at one update only, and knots that
+run through the updates between were counted only for the linear rules. More
+basic: every history here has its updates given, as the updates of a board or
+of an automaton. Whether a growth of knots, with no update given, is one
+allowed state in the same way is the question of the rest of this chapter;
+lesson 9.3 gives one case, an order written as distinctions of its own.
+
+### 9.2 What the rounds count
+
+**The rounds as run.** The cheapest growth adds a knot wherever open
+distinctions can join, everywhere at once, round by round (lesson 8.1). As run,
+the rounds are a supplied clock (glossary, "Clock; tick"): whoever runs the
+growth applies its rule to every live knot at once. Lesson 8.1's "Rounds are
+not a clock" means that, inside its theorem's class, the growth does not need
+them. The glossary uses "round" in the same way for forcing (lesson 5.3), where
+the count of rounds is the height of the shallowest derivation. In both, the
+count is fixed by the structure.
+
+**What the rounds supplied (computed, refereed).** The cheapest growth's count
+of fresh distinctions has to know, when a knot is made, how many joins will
+later take from it, and those partners may not exist yet; making every partner
+at once supplies that. Laws that make one join at a time instead read that
+count from what is there now, one round too early, and they built different
+things in different orders in 12 of 14 cases; none of 280 orders matched the
+rounds even through round 3, and the order could decide whether a growth goes
+on at all
+([the study of growth without rounds](research/ROUND-FREE-20261119-001/round_free.md);
+lesson 8.1 gives the counts).
+
+**A knot's round counts its size (proved, refereed).** Wherever lesson 8.1's
+theorem holds, each knot is one cluster of the unrolled map, and its round is
+its cluster's size less one. So the rounds count size, and a growth's rate is
+the ratio between the numbers of knots of size k + 1 and of size k, with no
+round needed: the golden ratio of the eddy of lesson 8.0, for one. Counted by
+size, each part of a joined start keeps exactly the growth it has alone, and
+97% to 99.9% of the knots of size 10 or more have clusters with members of two
+or more of the joined parts (computed, and refereed for two of the three
+joins; same study).
+
+**One fixed structure, smallest pieces first (reading).** The owner asked on 19
+November 2026: "The structure changes over time? Like it adds more logic to
+itself?" On the reading he accepted, "This makes sense, yes" (assumption A110),
+nothing has to change over time: the rounds go through one fixed structure,
+perhaps unlimited, by size, smallest pieces first. The start is the piece taken
+first, and a round is how much of it has been gone through (lesson 8.1, "One
+structure, read outward"). The reading rests on the theorem's class. For the
+explosive starts of lesson 8.2 it is open.
+
+**Rounds taken part by part (computed under added rules, referee pending).**
+Under the rules added by hand for the ring that returns (lesson 8.7), the
+separate parts of the live roster can take their rounds one at a time, in seven
+orders supplied by the study (assumption A237, a scaffold;
+[the study of a ring in balance](research/RING-IN-BALANCE-20261123-001/decision.md),
+its third ticket). In all 726 runs, the knots made while their part had taken
+at most R rounds are the same, up to renaming and round by round, as R complete
+rounds build, where R is the fewest rounds taken by any part still able to make
+a birth (from 2 to 25 over the runs); an argument written for the referee says
+why. Under the two orders that always give its round first to the part with
+the most members, or with the most loose distinctions, the parts given off
+never take another round, so the check there covers only the rounds they had
+taken. So under these rules, in the orders tried, no round had to update every
+part at once. Inside one part, a law
+that makes one birth at a time, with every knot reading what is built again
+after each birth, jams: no birth can be made, and knots that owe more than they
+hold remain. It jams in every order, all 101,606,400 of them on a cycle of four
+live knots joined through dead ones. Lesson 9.3 says what can take the round's
+place there.
+
+**What one knot's holdings give (computed, referee pending).** On rings of
+knots where every knot keeps a leftover distinction, the golden-ratio eddy
+among them, a knot made in round r with p parents and f fresh distinctions has
+r = f + 2p − 3, − 5 or − 7, on all 44,333 knots checked. One knot's holdings
+then give its round to within three values. Where only some knots keep a
+leftover distinction more values of the round fit, and on a bare ring every
+knot holds the same and gives no round (lesson 8.7, "A knot can carry the
+round, sometimes").
+
+**Three strengths of no ticks (proved and computed, referee pending).** For
+rules of motion added by hand, lesson 8.6 takes "Time doesn't have ticks" to
+mean that the order of local changes should not matter. If every two local
+changes can come in either order, nothing moves. If two changes that are both
+ready can, things move, and no largest speed holds across rules. If every fair
+order reaches the same end, the strength that fits on the program's reading, a
+stored state can be switched between two rings of knots in every order
+([the motion-law study](research/MOTION-LAW-20261119-001/what_is_forced.md)).
+Where two moving patterns meet, different orders can end differently, and with
+no ticks nothing fixes the order (lesson 8.6).
+
+**Open about rounds.** Whether the explosive starts can be taken by size, as
+the theorem's class is. The argument that parts may take their rounds in any
+order, which is not yet refereed. And whether anything in the growth, rather
+than a check we supply, can find a knot's round from what it holds: so far the
+holdings give it to within three values only where every knot keeps a leftover
+distinction, and more loosely elsewhere.
+
+### 9.3 Births one at a time: the order that is left
+
+**The order that is left (argued, confirmed by its referee).** Take the rounds
+away, and make the knot for a cluster as soon as all its parents exist. Every
+fair order then reaches the same completed structure, and in the referee's
+words "Only a partial order is left": a knot comes after its parents, and
+nothing else is ordered
+([the referee's report](research/ROUND-FREE-20261119-001/referee-R1/report.md)).
+The law reads the whole map of joins in advance, so it trades the tick for
+knowledge of the map; it equals the rounds only inside the theorem's class; and
+the order must be fair to every birth that keeps coming ready
+([the fairness qualification](research/ROUND-FREE-20261119-001/round_free.md#fairness-qualification-20-november-2026)).
+
+**Earliest round first (proved in its scope, referee pending).** Take ordinary
+growth: the cheapest growth with no rule added by hand, its births made in
+complete rounds or one at a time. Lesson 8.1 gives a law for it that finishes
+the births of the earliest unfinished round first, each knot's round found from
+what is built; every order of its own births builds what the rounds build, with
+no map, on starts whose start knots can be recognised (lesson 8.1, "A law that
+reads only what is built";
+[the study of serial repairs](research/SERIAL-REPAIRS-20261120-001/decision.md)).
+It reads the whole of what is built.
+
+**The brood guard (computed, referee pending).** Inside a part, lesson 8.1
+gives a law that makes one birth at a time, each birth recording its parents
+(assumption A242, a scaffold). Under the **brood guard** a knot waits until
+every knot made alongside it has parents that have finished giving, then works
+out from that brood what the round would have had it do. It built what the
+rounds build in every order searched (lesson 8.1, "One birth at a time, reading
+a few steps";
+[the study of a round read locally](research/LOCAL-ROUND-20261123-001/decision.md)):
+126 of 193 searches over all orders finished, and the other orders were chosen
+uniformly among the allowed births or held each knot's births back as long as
+possible; with waiting, full searches reach round 1 and the others round 3. On
+the cycles tried, of 4, 6, 8 and 12 live knots joined through dead ones, the
+guard's rule needed to read only within four holder steps (a holder step goes
+from a knot to a knot sharing a distinction with it), and each further wait
+needs one more. In the cases searched nothing outside the knots keeps the
+round; the record of parents, which each birth writes, takes its place.
+
+**Where a brood stops being one round (computed, referee pending).** Under
+lesson 8.7's cap of three, a new knot receiving at most three fresh
+distinctions, the brood guard still works. Where a knot keeps back what its
+cancelled joins would have taken (the study's "holding"), it fails, because a
+knot then gives in more than one round and a brood is no longer one round
+([the study of the guard under the cap and under holding](research/GUARD-CAP-AND-HOLD-20261124-001/decision.md)).
+
+**The order is not recovered from what is built (computed, referee pending).**
+The two holders of a shared distinction do not say which is the parent. In the
+unfinished structures that births made one at a time pass through, a place
+leading to a parent and a place leading to a child are exchanged by a renaming
+of the whole structure, under every law tried; the smallest case has two knots.
+One finished structure of 16 knots does not show which knot came first. On
+structures built by complete rounds two holder steps recover every parent where
+a short knot (one that owes more loose distinctions than it holds) retires, and
+where it makes offshoots the holder steps needed are one fewer than the round
+(proved by hand, confirmed to round twelve). So, for births one at a time under
+every law tried, the order cannot always be recovered from what is built
+([the search for parents in what is built](research/PARENTS-FROM-HOLDERS-20261124-001/decision.md)).
+
+**Three values handed down (computed, referee pending).** If every new knot
+writes one of three values, one on from its parents' value (assumption A247, a
+scaffold), a knot distinguishes its parents from its children by comparing
+values across one shared distinction. This gave every parent on every structure
+reached, unfinished ones included, under four laws, wherever the knots that
+join were made together; on the one start built so that a start knot waits
+while a knot it meets makes its births, it fails, and five values repair it
+there. No two-valued version tried works under every law. The value is the
+number of parent steps from the start counted in threes, the literature's
+counter modulo three, written by hand
+([the study of the least record](research/LEAST-RECORD-20261124-001/decision.md);
+lesson 8.1).
+
+**An order written as distinctions (proved).** An earlier study wrote the order
+of a growth into the system as distinctions of their own
+([the study of growth as a law](research/GROWTH-LAW-20261107-001/growth_law.md)).
+On a fixed knot pattern, for a growth rule that reads only the law, the order
+and the states are independent, so no knot joins them. Which of two
+neighbouring knots came first is a two-place matter; that the order never comes
+back to where it began is, on every cycle of knots, one not-all-equal knot over
+the cycle's pairs of neighbours (the literature's acyclic orientations).
+
+**The literature's names for this.** Logical clocks (Lamport, 1978) order
+events by what depends on what; traces (Mazurkiewicz, 1977) take orders of
+independent events as one; a synchronizer (Awerbuch, 1985) runs a rule of
+rounds by local waiting. What the record adds is the growth law's own case:
+which orders build the same thing, what has to be written, and how many holder
+steps a knot's rule must read. Forcing keeps its own order where an atom is
+used as a knot, both loops still open (lesson 5.3).
+
+**Open about the order.** Whether the structure can hold such a count itself,
+in a knot's own places or in how they are shared, is sub-goal B328, under goal
+G5; no construction is known. A guard for knots that keep back, and a rule for
+a start knot that makes its births while one it meets waits, are open. That the
+brood guard is exact at every round rests on an argument not yet refereed.
+
+### 9.4 Clocks made by the growth
+
+**Made and supplied clocks.** In the glossary a clock is anything in which one
+named event recurs and against which other changes are counted; each recurrence
+is a tick. A supplied clock is given by whoever runs a system, as the update of
+every cell of the Game of Life at once, or the complete rounds (lesson 9.2). A
+made clock is a pattern the growth builds from a supplied start in which the
+named event, a return or a release, recurs; the study names the event
+(assumption A150, a scaffold). "Made" speaks of the pattern only. On the
+owner's picture (A228) such a pattern is "a device or pattern just like the
+other ones", and time is what one pattern counts of another.
+
+**Patterns in which an event recurs.** The record has several, each with its
+own standing:
+
+- **In Life (classical).** The blinker returns every two updates (lesson 1.3),
+  against Life's supplied clock.
+- **A pattern of state on a ring of knots (proved and computed, referee
+  pending).** Under a rule of motion added by hand, a pattern of ten
+  distinctions passes every knot of a ring of 31 and returns to exactly the
+  same state after 124 changes, and so on for ever; each change is decided
+  where the pattern is (lesson 8.6).
+- **A generator's releases (proved, refereed in part).** Under ordinary growth
+  the smallest known generator, seven knots holding 25 distinctions, releases a
+  packet in rounds 15, 23 and 31 and every eighth round after. Each packet is
+  larger than the last, so the release recurs and nothing returns (lesson 8.7).
+- **The ring that returns (computed under added rules, referee pending).**
+  Under two rules added by hand, a ring of five knots returns to its own live
+  roster every two rounds while parts of two knots come apart from it (computed
+  for odd rings of 5 to 15 knots, argued for every odd ring from five); a third
+  rule, under which the parts given off end, puts the whole live roster in
+  balance. At each return the ring is exactly the knots that waited, and half a
+  period later the same pattern is made of new knots: the pattern is not a
+  fixed set of knots (lesson 8.7).
+- **Parts that copy (computed under added rules, referee pending).** Under
+  rations that give a new knot only enough for three places (a ration is lesson
+  8.7's rule for how many fresh distinctions a new knot receives), and with a
+  short knot's joins cancelled, a part of two knots becomes two of the same
+  every two rounds (lesson 8.7).
+
+**Two clocks in one growth (proved, referee pending).** In one connected
+supplied start of 21 knots under ordinary growth, under both knot laws, two
+lasting packets keep releasing packets of their own. With a release counted as
+a tick, one ticks every 16 parent steps and the other every 24 (a parent step
+goes from a knot to one of its parents), so after the start every 48 parent
+steps add three ticks to the first and two to the second. Lengthening the
+start's unmarked cycle of knots from four to five changes the periods to 18 and
+28 and the limiting ratio of the counts to 14/9. A release never enters an
+intact member of the other clock; its first common descendant with that clock's
+members is a separate birth
+([the study of two clocks](research/FREEDOM-CLOCKS-AND-BIRTHS-20261120-001/decision.md)).
+
+**Intervals counted in a receiver's ticks (proved, referee pending).** In these
+studies a receiver is a made clock whose own ticks are counted, in a supplied
+start chosen so that a send can reach it; a send is one release of a clock; its
+receipt is the first birth of the receiver with a parent that carries the send;
+and the passage is the knots of the start that link the two (the record's
+"middle"). The study counted, in a receiver's ticks: four ticks fell between
+send and receipt through a shorter passage and five through the reference
+passage, and four again through an equally short passage of knots whose
+descendants come to an end
+([the receiver study](research/SIGN-RECORDS-AND-RECEIVER-TICKS-20261120-001/decision.md)).
+In another study a receiver's tick is a birth in its descent at which the same
+start knot comes up again (assumption A169). Between the same two receipts it
+counted three such ticks in one supplied start and one in another, the two
+differing in which start knots could come up in the receiver's descent
+([the study of what changes a receiver's count](research/TICK-BIRTHS-AND-SCARCITY-20261121-001/decision.md)).
+
+**Births per tick (proved, referee pending).** Under a rule that makes births
+one at a time and finishes first the oldest births that can be made, one of two
+such rules supplied by the study (assumption A168, a scaffold), the clock is a
+ring of eight knots, one keeping a leftover distinction, whose tick is a birth
+with two parents that comes again every four parent steps. It does so alone and
+with one more start knot hung on it. Four parent steps took 81 births alone,
+253 when the hung knot's descendants take distinctions from the tick's own
+parents, and 141 when they take none there (same study). Counted in births the
+clock with a hung knot is slower; counted in parent steps it is not. The guide
+draws no reading from this.
+
+**What says a tick has happened.** In every case above, the study's check that
+a return or a release has happened, and whatever counts the ticks, was
+supplied. In the words of the ring study: "The reader that says 'the ring has
+returned' is ours: nothing in the growth reads it." No pattern made by the
+growth has been shown to count another's returns.
+
+**Open about clocks.** The clocks of the clock studies are in structures that
+keep growing; the ring that returns is the one whose own part keeps the same
+number of knots. With no round supplied, births made one at a time under the
+brood guard build what the rounds build on the ring of five, its first return
+included, in every order tried through round 3, given the record of parents
+(lesson 9.3); later returns are untested. A clock that no one supplies, counted
+by a pattern that no one supplies, is lesson 9.6's question.
+
+### 9.5 Priority: which birth is made first
+
+**The owner's picture of priority.** On 23 November 2026 the owner wrote:
+"Also, for the time thing, I feel like it's not really like a sequencer, but
+more like a priority system, if that makes sense. How often updates happen
+given some property (maybe mass impacts that). In fact, it's kind of like black
+holes are the limit of the compute, or the place that absorbs information, like
+a reader. It's almost like the distribution of black holes is a statistical way
+of getting a sample of the universe. Please record this idea. Then places with
+nothing going on need less simulation." The register holds it as his
+interpretation, assumption A229: nothing updates every part at once, each part
+is updated as often as some property of it sets, and a part with nothing going
+on is not updated. No claim is made about mass, black holes or physics. In the
+guide a priority says which of the parts or births that are ready goes first
+(glossary, "Priority").
+
+**His question of 24 November.** On 24 November 2026 (Pacific time; the
+record's tickets carry 25 November, its date in UTC) the owner asked: "Wait so
+these computations themselves can have prioritization, and that's essentially
+the same thing as time? Just like prioritization?" The record's cases come
+first, and the reading given to him after them.
+
+**Where the order changed only the births between returns (computed, referee
+pending).** Under the rules of the ring that returns, the four orders of the
+parts that give every part its rounds (in turn, by chance, or the part with the
+fewest rounds first) build the rounds' structure as far as every part has gone,
+while the ring returns after more and more births as the parts given off grow
+in number; under the third rule, where those parts end, it returns every 16 to
+25 births on the starts tried
+([the ring study's third ticket](research/RING-IN-BALANCE-20261123-001C/results.md)).
+Under the brood
+guard every order of the allowed births that was searched builds the same thing
+(A229; lesson 9.3). Separately, the serial clock study held one priority fixed,
+the oldest births first, and hung a knot on the clock: the births between ticks
+rose because of the hung knot, not because of any order, and the parent steps
+between them stayed four (proved, referee pending; lesson 9.4).
+
+**Where the order changed what is built (proved and computed, referee
+pending).** Where births compete, the order decides which are made. Under the
+supplied rule that works out everything again after each birth, a different
+birth made first can rule out a clock's tick for good, by taking a loose
+distinction the tick's parents need, or by already having both of them among
+its parents while each still holds two loose distinctions (proved; the study of
+what changes a receiver's count). Under the same rule, join two copies of a
+clock on one knot that holds one loose distinction fewer than the births of
+both take from it: one of those births cannot be made, the last in the order,
+so in the case tried the order alone decided which clock lost its tick
+([the study of two clocks on one short knot](research/REVIEW-LEADS-20261123-001D/result.md)).
+Two other cases have causes of their own: the first one-join-at-a-time laws read from what is there
+now how many joins will take from a new knot (lesson 9.2, refereed), and under
+holding a brood is no longer one round (lesson 9.3). Orders that never make
+some births change what is built for that reason alone: under the two that
+always give the largest part its round first, the parts given off never take
+another round and the ring returns every 4n births, n the knots of the start;
+under the order that gives the smallest part its round first, each part given
+off takes rounds until it has more members than the ring, and then never again
+(same ticket).
+
+**Which distinction a birth takes (computed, referee pending).** This is not a
+priority: it says what a birth takes, not when. A law added by hand that lets a
+birth also take an already shared distinction must say which. Under rule R, in
+which a short knot gives its births distinctions it already shares, taking the
+oldest or the newest gave different births per round on 478 (parity) and 471
+(not-all-equal) of the 744 starts that stall at once under ordinary growth
+([the study of a short knot that gives shared distinctions](research/REREAD-BIRTHS-AND-MIXED-LAWS-20261123-001A/result.md)).
+In the study of parts that meet again (lesson 8.7), changing which distinction
+one part's births take makes that part's dependence on the other appear or go.
+All four ways tried pick from the eligible distinctions in the order of their
+names: the oldest, the newest, the next in turn among one parent's offshoots,
+or the one at a count of the parent's places. None is made by the growth
+([the study of parts that meet again](research/PARTS-MEET-AGAIN-20261124-001/decision.md)).
+
+**The reading given to the owner (reading).** The guide takes the cases above
+as two kinds of order of births. Where every birth is made in the end, the
+order changed how many births lie between returns and not what was made; that
+is the kind his question is about. Where births compete, or an order never
+makes some births, the order changed what was made. Lesson 7.3 has something
+alike for growth one knot at a time: there an outcome belongs to the growth in
+its order, not to the pattern it reaches.
+
+**Places with nothing going on.** Growth makes births only at live knots, so a
+part with nothing loose has none; this is the record's nearest case to the
+owner's "places with nothing going on" (A229). Every priority in the record so
+far was supplied, and the candidates for one found from the structure, filed
+with sub-goal B320 under G5, are a knot's places, its loose distinctions and
+the knots within its bond ball. The owner's idea of a sample has no counterpart
+in the record.
+
+**Open about priority.** A priority found from the structure, under which what
+is built does not depend on how ties are broken, and under which a part's
+births per tick rise as more is joined to it (B320). None is known.
+
+### 9.6 Is time a fold of emergence?
+
+**His question.** On 24 November 2026 (Pacific time; the record's tickets carry
+25 November, its date in UTC) the owner asked: "Is time itself a fold like
+intelligence/life through DNA?" A fold of
+emergence, his phrase of 23 November 2026 (assumption A223; lesson 8.7), would
+be a pattern with three properties: the rules make it and nobody places it;
+what it makes depends on another pattern; and it makes a pattern of its own.
+The answer below is a reading, set against the record; the register keeps it in
+the history of A228. No claim is made about living things or minds.
+
+**Three things kept apart (reading).**
+
+- **An order.** A knot comes after its parents. That is kept in the record of
+  births, which the births write; it is not a pattern, and it cannot always be
+  recovered from what is built (lesson 9.3). It makes nothing, so it is no fold
+  of emergence.
+- **A clock.** A pattern in which an event recurs (lesson 9.4). The ring that
+  returns, under two rules added by hand, takes nothing in: past the start its
+  parts grow alone. Clocks inside one connected growth can lose a tick when
+  another birth takes a shared knot's last loose distinction, under supplied
+  orders (lesson 9.5); in the case tried, two copies of one clock, the order
+  alone decided which lost its tick.
+- **A made count of returns.** A pattern whose births follow another pattern's
+  returns, A228's reading of "time is a pattern". That has the form of a fold
+  of emergence: what it makes depends on another pattern, and it makes
+  something of its own, the count. It would ask little of a fold: from the
+  other pattern it needs only whether it has come round again.
+
+**What one part has read of another (computed under added rules, referee
+pending).** In the study of parts that meet again (lesson 8.7), under laws
+added by hand in which a birth also takes a distinction none of its parents
+holds, one part's course depended on whether another part was there in 216
+confirmed cases, and in none on what the other part was (16 pairs asked). That
+dependence came about where two parts that had come apart met again. Under rule
+R and rule Q (in which a one-parent birth also takes a distinction its parent
+shares), parts that have come apart and share nothing never become one part
+again, by an argument, and from round 1 the ring never returns and nothing
+copies itself
+([the study of parts that meet again](research/PARTS-MEET-AGAIN-20261124-001/decision.md)).
+A made count of returns would need such a meeting at every return (reading).
+
+**What a made count still lacks.** Two things. Every count of ticks in the
+record is supplied (lesson 9.4). And the patterns in which an event recurs come
+from laws under which parts that come apart never meet again, while the first
+two laws tried that keep would-be parts joined undo the ring. Whether one law
+can hold both a pattern that returns and a second pattern that meets it at each
+return has not yet been tested.
+
+**Where it is taken up.** Sub-goal B329, under G5 with G15 and G18, files the
+question, and a study now being designed takes it up
+(TIME-AS-FOLD-20261125-001), starting from a census of which patterns still
+return under the laws that let parts meet. It has no result.
 
 ## Glossary
 
@@ -4212,7 +4785,7 @@ that earlier records used in two senses.
   distinction with the next, has d pairs (lesson 4.7): the literature's graph
   distance. It is a count on the meeting pattern, given with it, and the ruler
   of lesson 4.7 is the theorem that bond distance measures it. On a board, a
-  step is a move from a cell to a neighbour (lesson 4.6).
+  step goes from a cell to a neighbouring cell (lesson 4.6).
 - **Faithful.** A law reads a knot pattern faithfully when its allowed states
   freeze no distinction, tie no pair, and leave no hollow triple except the
   pattern's own knots, so that the knots can be read back from the allowed
@@ -4439,15 +5012,45 @@ that earlier records used in two senses.
   The outcome belongs to the growth, in its order, not to the pattern it
   reaches. The intuition: the owner's combinations that "resolve to nothing",
   "go for a while then die" and "go on forever".
-- **Move.** One step of a growth: it adds one knot, or nothing when the
-  process has nothing left to add (lesson 7.3). Growth is counted in moves,
-  never in steps, which belong to steps apart. The **horizon** is the number
-  of moves computed.
+- **History.** One whole course of a process or a growth with nothing left
+  open. For a process whose updates are given: the value of every cell at
+  every update (lesson 1.3). For a growth: one run, with its order of births
+  and which distinction each birth takes fixed. A history of the first kind is
+  one allowed state of the process's rules (lessons 1.3 and 9.1); a growth's
+  order, written as distinctions of its own, has been treated the same way on
+  fixed knot patterns (lesson 9.3), and for a growth with no update given the
+  question is open (lesson 9.1). Runs that differ only in the order of births
+  are different histories, even when they build the same structure.
+- **Move.** One action of a growth that goes one piece at a time, as that
+  growth defines it: in the random processes of lesson 7.3, one knot added, or
+  nothing when there is nothing left to add; in the laws that make one birth
+  at a time, one birth (lesson 9.3); in the part-round law of the study of a
+  ring in balance, one part's complete round (lesson 9.2). The processes of
+  lesson 7.3 are counted in moves, and the **horizon** is the number of moves
+  computed. A count of moves is never called a count of steps (see the row
+  for "step").
+- **Birth.** The making of one knot by a growth law, in a round or alone
+  (lessons 8.1 and 8.7). Its parents are the members it is made from: the
+  members of a join's group, or an offshoot's one member (see Junction;
+  parent); under some laws added by hand it also takes a distinction that none
+  of its parents holds (see Ancestral common knot; ancestor-taking). Its fresh
+  distinctions are those it alone holds when it is made. Growth is counted in
+  rounds, in births or, in lesson 7.3, in moves; every count names its unit.
+  Not the process line's "born" and "birth rule" for bands and cells of a
+  network of rings of cells (9 November 2026), kept in that record's words.
 - **Junction; parent.** In parity growth by the cubic study's joining rule
   (`CUBIC-FROM-A-KNOT-20261117-001`), a junction is one of the growth's
   parity knots, each placed by the rule on loose distinctions of earlier
   junctions and some fresh ones; its parents are the junctions it took a
   distinction from.
+- **Parent step; holder step.** A parent step goes from a knot to one of its
+  parents. A holder step goes from a knot to a knot that shares a distinction
+  with it, across that distinction. Every parent step is a holder step; which
+  holder steps are parent steps cannot always be recovered from what is built
+  (lesson 9.3). Counts of parent steps count descent (lessons 8.7 and 9.4);
+  counts of holder steps say how much of what is built a law's rule at a knot
+  reads (lessons 8.1 and 9.3). Neither is steps apart, which counts
+  co-knotted pairs of distinctions.
 - **Offshoot.** A junction with exactly one parent: the rule gives a loose
   distinction no join wants a junction of its own
   (`FRESH-COUNT-20261118-001`). The literature's join-irreducible element.
@@ -4486,7 +5089,10 @@ that earlier records used in two senses.
 - **Stall; close.** A growth stalls when a round cannot be made, because some
   junction has too few loose distinctions, and it closes when no loose
   distinction is left (lesson 8.1). The intuition: the first of the four kinds
-  of growth of lesson 8.2, in which nothing new forms.
+  of growth of lesson 8.2, in which nothing new forms. A growth jams when
+  knots remain that owe more loose distinctions than they hold and no birth
+  can be made, under a law in which a short knot does not stop the whole round
+  (lessons 8.7 and 9.2).
 - **Map of joins; unrolled map; cluster.** The map of joins of a growth has
   one member for each live knot, with the live knots that share a distinction
   with one knot grouped together, as the ones that can join through it, and one
@@ -4544,8 +5150,11 @@ that earlier records used in two senses.
   A223), always written in full and in his words: a pattern that the rules make,
   where what it makes depends on another pattern, and that makes a pattern of
   its own,
-  as he pictures DNA and intelligence. An interpretation; the record has no
-  instance in which a made pattern does the reading (lesson 8.7). It is not the
+  as he pictures DNA and intelligence. An interpretation. Under laws added by
+  hand the record has cases in which what one made part builds depends on
+  whether another is there, but none in which it depends on what the other
+  is, or in which a part makes a pattern of its own from what it meets
+  (lessons 8.7 and 9.6). It is not the
   two-fold of a two-fold weave, which counts knots, and the guide makes no
   claim about living things.
 - **Weaned; brood.** In the laws that make one birth at a time (lesson 8.1),
@@ -4566,6 +5175,42 @@ that earlier records used in two senses.
   ([PARTS-MEET-AGAIN-20261124-001](research/PARTS-MEET-AGAIN-20261124-001/decision.md),
   computed, referee pending) parts that came apart became one part again
   through such a knot in 62 cases, always a start knot.
+- **Clock; tick.** A clock is anything in which one named event recurs and
+  against which other changes are counted; each recurrence is a tick (lesson
+  9.4). The guide always says which kind. A **supplied clock** is given by
+  whoever runs a system: the update of every cell of the Game of Life at once
+  (lesson 1.3), or a round applied to every live knot at once (lesson 8.1). A
+  **made clock** is a pattern the growth builds from a supplied start in which
+  the named event, a return or a release, recurs; the study names the event
+  (assumption A150, a scaffold). "Made" speaks of the pattern only: the law,
+  the start and whatever counts the ticks are named separately, and in the
+  record so far whatever counts a made clock's ticks is supplied. A tick is
+  the event, not the count of it. The owner's words: "Time doesn't have ticks"
+  (by 18 November 2026, Pacific time); "what if 'time' is a device or pattern
+  just like the other ones?" (23 November 2026, assumption A228).
+- **Return; period.** A part of the live roster returns at a later round when
+  the members then descending from it, a member that waits counting as its own
+  descendant, include a part that is the same as it: the same up to a renaming
+  that keeps each member's loose distinctions, usable and never used, and
+  which sets of members one knot meets (lesson 8.7). It may be made of the
+  same knots, which waited, or of new knots, and the study says which. A state
+  returns when every distinction or cell again has its earlier value (lessons
+  1.3 and 8.6). The **period** is the count from one return to the next,
+  always with its unit: rounds, births, parent steps, updates or changes; a
+  state of a harmony has its period in shifts (see Harmony). A release that
+  recurs while each packet is larger than the last is not a return. Not the
+  foundation's "native return artifact" and "causal return handoff", written
+  in full, which are a runner's return of control.
+- **Priority.** The owner's word (23 November 2026, assumption A229): "not
+  really like a sequencer, but more like a priority system ... How often
+  updates happen given some property". In the guide: a rule that says which of
+  the parts or births that are ready goes first, by a named property of them
+  (a part's number of members, the loose distinctions its members hold, the
+  rounds its members have taken, a birth's age or kind), by stated chances, or
+  in turn (lesson 9.5). One order of births taken by itself, as in a search
+  over every order, is an order of births, not a priority. Which distinction a
+  birth takes is not a priority. Every priority in the record so far is
+  supplied.
 - **Live roster.** What one round of the law reads: which junctions hold a
   loose distinction, how many, and which sets of them one junction meets
   (lesson 8.4). The growth records call it the growing end.
@@ -4724,7 +5369,7 @@ that earlier records used in two senses.
   | distance | (unqualified, only in the owner's words: his founding premise, lesson 2.4, whose reach he has yet to settle) | the one touch of a knot: minimal contact-distance; read from the allowed states: bond distance; a count on the meeting pattern: steps apart; contacts along a route across time: counted length (A40), not the quantity THEORY.md's claim "Counted length" (1 November 2026) names, the logarithm of a count of states, read as a count; between states: Hamming distance, the literature's; along paths, or a metric: not yet built |
   | place | an argument position, as in three-place (lesson 3.2) | where a board holds a value: cell; the index of a stitch's members: lag (unlagged stitch, formerly "stitch at one place"); a block's position: its distinction (spare distinction, formerly "loose place") |
   | point | the owner's moving point, a state with a charge-like strength (his picture of learning), and otherwise the literature's | a variable: distinction |
-  | line | (only in the owner's words and the literature's names, such as the number line and a Fano line) | a three-place knot: knot; an open chain: chain |
+  | line | (only in the owner's words, in the literature's names, such as the number line and a Fano line, and in a line of work, such as the process line and the learning line) | a three-place knot: knot; an open chain: chain; knots each a parent of the next: descent |
   | face | (the literature's only: a face of a map) | a knot of a weave: knot; a cycle a law closes: declared cycle |
   | flat | (only in the owner's "flat structure") | six knots at every distinction: six-regular; drawable without crossings: planar, the literature's |
   | balanced | (the doubling line's balanced stages, not used in the guide) | six knots at every distinction: six-regular |
@@ -4738,6 +5383,10 @@ that earlier records used in two senses.
   | spare | of a distinction of a block, in distinction substitution (lesson 7.3) | an open distinction a knot keeps beyond what its joins use (the growth records' spare): leftover distinction |
   | round | one step of forcing (lesson 5.3) or of growth (lesson 8.1), everything at once | going once around a cycle (the growth records' round-weight): lap weight |
   | growing end | (not used in the guide) | what one round of the growth law reads (the growth records' word): live roster |
+  | clock | anything in which a named event recurs and against which other changes are counted: supplied or made, always said (lesson 9.4) | the process line's "own clock" and "conformal clock", a count of a supplied clock's ticks rescaled by doublings (assumption A56): a rescaled count of the automaton's updates |
+  | step | (never alone as a unit of count; always a named kind) | co-knotted pairs between distinctions: steps apart (lesson 4.7); from a cell to a neighbouring cell: a board's step (lesson 4.6); from a knot to a parent: parent step; from a knot to a knot sharing a distinction with it: holder step; one update of every cell of an automaton: an update, a tick of its supplied clock; one birth or one part's round, or nothing: move |
+  | lag | the shift of a stitch's member, counted up to a common addend (Stitch) | the process line's count of an automaton's updates since its first row (lesson 2.4's networks of rings of cells; assumptions A40, A41, A56): updates |
+  | choice | a rule saying that when something exists, one of several things must (lesson 4.2) | which already shared distinction a birth takes (the study of parts that meet again's "the choice"; assumptions A231, A236, A245): which distinction a birth takes |
 - **Older records.** Records written before 11 November 2026 use the older
   words, and a record whose checksum another record pins (a manifest, a result
   or a discovery) is never edited, so it keeps them. Read such a record with the

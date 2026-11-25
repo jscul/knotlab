@@ -173,3 +173,14 @@ runs of one law, and, under the two rations that can give a join nothing, where 
   agreeing; one argument (that taking only what a parent holds cannot rejoin parts that share nothing).
 - **Scaffolds:** every taking rule, every way of choosing, the late start, the birth placed by hand, the base laws and the
   starts. All were swapped; the summary above says what survived.
+
+## Correction of 25 November 2026: "by count" also uses the names
+
+**Not a block** (logged in the program's corrections log, `docs/CORRECTIONS.md`). The sentence above, that "by count"
+"uses the number of places the parent has, which is in the structure", and the definitions' "It uses the structure only",
+say more than the rule does. The count is in the structure. It is then used as a position in the list of candidates
+sorted by name, "counting from the oldest at zero", and for a join it is the count of the first parent by name. So all
+four ways of choosing use the supplied names, and none uses the structure only. No verdict changes: reversing the
+start's names was a registered swap and was run on every case, the "by count" cases among them, and "None is made by the
+growth" already covered all four. The frozen definitions keep their text. Found independently by the advisor reviewing
+the design of the study that follows this one, and by the survey for the Intuitions guide's chapter on time.

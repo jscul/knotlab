@@ -1,0 +1,174 @@
+{
+ "note": "Laws of DESCENT-HELD-20261125-001A. SD = research/RING-IN-BALANCE-20261123-001/definitions.md. Two holders, no taking rule, each run under a named knot law. \"adds\" names the assumptions of the record. lone_knot_rations: the ten cases of M1 (ration: the numbers a of places of the lone start knot).",
+ "recorded": [
+  {
+   "name": "R3W",
+   "ration": "RATION-3",
+   "treatment": "CANCEL-WAIT",
+   "release": "RELEASE",
+   "extras": [],
+   "base": true,
+   "adds": "A104 complete rounds; A224 ration and treatment"
+  },
+  {
+   "name": "F1O",
+   "ration": "FLOOR1",
+   "treatment": "CANCEL-OFFSHOOT",
+   "release": "RELEASE",
+   "extras": [],
+   "base": true,
+   "adds": "A104; A224"
+  },
+  {
+   "name": "F1R",
+   "ration": "FLOOR1",
+   "treatment": "CANCEL-RETIRE",
+   "release": "RELEASE",
+   "extras": [],
+   "base": true,
+   "adds": "A104; A224"
+  },
+  {
+   "name": "ORD",
+   "ration": "ORD",
+   "treatment": "STALL",
+   "release": "RELEASE",
+   "extras": [],
+   "base": true,
+   "adds": "A104 (ordinary growth)"
+  },
+  {
+   "name": "C3W",
+   "ration": "CAP-3",
+   "treatment": "CANCEL-WAIT",
+   "release": "RELEASE",
+   "extras": [],
+   "base": true,
+   "adds": "A224: the two added rules"
+  },
+  {
+   "name": "C3WF",
+   "ration": "CAP-3",
+   "treatment": "CANCEL-WAIT",
+   "release": "RELEASE",
+   "extras": [
+    "FILLERS"
+   ],
+   "base": true,
+   "adds": "A224: the three added rules"
+  },
+  {
+   "name": "F1W",
+   "ration": "FLOOR1",
+   "treatment": "CANCEL-WAIT",
+   "release": "RELEASE",
+   "extras": [],
+   "base": true,
+   "adds": "A224"
+  },
+  {
+   "name": "ORDW",
+   "ration": "ORD",
+   "treatment": "CANCEL-WAIT",
+   "release": "RELEASE",
+   "extras": [],
+   "base": false,
+   "adds": "A224"
+  },
+  {
+   "name": "OFW",
+   "ration": "ONE-FEWER",
+   "treatment": "CANCEL-WAIT",
+   "release": "RELEASE",
+   "extras": [],
+   "base": false,
+   "adds": "A224"
+  },
+  {
+   "name": "R4W",
+   "ration": "RATION-4",
+   "treatment": "CANCEL-WAIT",
+   "release": "RELEASE",
+   "extras": [],
+   "base": false,
+   "adds": "A224"
+  }
+ ],
+ "holding": [
+  {
+   "name": "H-C3W",
+   "ration": "CAP-3",
+   "treatment": "CANCEL-WAIT",
+   "release": "HOLD",
+   "base": true
+  },
+  {
+   "name": "H-R3W",
+   "ration": "RATION-3",
+   "treatment": "CANCEL-WAIT",
+   "release": "HOLD",
+   "base": true
+  },
+  {
+   "name": "H-F1R",
+   "ration": "FLOOR1",
+   "treatment": "CANCEL-RETIRE",
+   "release": "HOLD",
+   "base": true
+  },
+  {
+   "name": "H-F1O",
+   "ration": "FLOOR1",
+   "treatment": "CANCEL-OFFSHOOT",
+   "release": "HOLD",
+   "base": true
+  }
+ ],
+ "lone_knot_rations": {
+  "ORD": [
+   3,
+   4,
+   5
+  ],
+  "CAP-3": [
+   3,
+   4
+  ],
+  "RATION-3": [
+   4
+  ],
+  "RATION-4": [
+   5
+  ],
+  "FLOOR1": [
+   3
+  ],
+  "FLOOR0": [
+   3
+  ],
+  "ONE-FEWER": [
+   3
+  ]
+ },
+ "values": {
+  "NEXT3-PLACES (usable)": "count = number of places, counted in threes; the s added distinctions usable",
+  "NEXT3-PLACES (barred)": "count = number of places, counted in threes; the s added distinctions barred at birth",
+  "NEXT3-BARRED": "count = number of barred places, counted in threes; the s added distinctions barred at birth",
+  "NEXT5-BARRED": "stated variant, not registered: counts in fives (definitions, 3.3)"
+ },
+ "swaps": {
+  "parents_differ": [
+   "NOTHING-ADDED (registered)",
+   "TWO-COUNTS-C-AND-C+1-GIVE-C+2"
+  ],
+  "closing_birth_under_parity": [
+   "RECEIVES-NOTHING (registered)",
+   "RECEIVES-F_B-AND-S (fails the parity knot test)"
+  ],
+  "stopping": [
+   "A-ROUND-THAT-CHANGES-NOTHING (registered)",
+   "A-ROUND-WITH-NO-BIRTH"
+  ]
+ },
+ "lone_knot_cases": 10
+}

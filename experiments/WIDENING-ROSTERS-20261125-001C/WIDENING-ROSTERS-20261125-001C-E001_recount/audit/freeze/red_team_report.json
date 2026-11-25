@@ -1,0 +1,99 @@
+{
+  "schema_version": 1,
+  "experiment_id": "WIDENING-ROSTERS-20261125-001C-E001",
+  "gate": "contract_freeze",
+  "tier": "R0",
+  "reviewer_independence": "same_task",
+  "attack_plan_frozen_before_results": true,
+  "input_digests": [
+    {
+      "path": "../../contract.json",
+      "sha256": "cc721c680d57966e32b0e14e30f694c5320cef3c54f32481aa3c834956d3d255"
+    },
+    {
+      "path": "../../cases.json",
+      "sha256": "6591e0dd656a11da646d95e6be650da08ee979b541225ab85304b63ab6c2496d"
+    },
+    {
+      "path": "../../pre_run_predictions.md",
+      "sha256": "98df433750b4eb782ea03790be1e8270b78a85def6449236e6eeeb2e0f710088"
+    },
+    {
+      "path": "../../../../../research/WIDENING-ROSTERS-20261125-001/advisor/freeze-review.txt",
+      "sha256": "d8f5a278a57275d67615a34e9466927e01a05b8b15d5cacff14cdf90b243a6f3"
+    }
+  ],
+  "attacks": [
+    {
+      "id": "scope_and_authority",
+      "category": "scope_and_authority",
+      "status": "pass",
+      "severity": "high",
+      "claim_at_risk": "scope and authority",
+      "method": "The probe informs the predictions; specify exact rounds, boundary conventions and the consequence of any failed knot.",
+      "evidence_paths": [
+        "../../contract.json"
+      ],
+      "required_action": "",
+      "contract_change_required": false
+    },
+    {
+      "id": "information_leakage",
+      "category": "information_leakage",
+      "status": "pass",
+      "severity": "high",
+      "claim_at_risk": "information leakage",
+      "method": "Separate two growth codes; their only joint inputs are the contract, catalog and law. Original cases are disclosed.",
+      "evidence_paths": [
+        "../../contract.json"
+      ],
+      "required_action": "",
+      "contract_change_required": false
+    },
+    {
+      "id": "split_integrity",
+      "category": "split_integrity",
+      "status": "pass",
+      "severity": "high",
+      "claim_at_risk": "split integrity",
+      "method": "New five-knot cases follow the first 1000 of the immutable shuffled order; all old widening starts are identified separately.",
+      "evidence_paths": [
+        "../../contract.json"
+      ],
+      "required_action": "",
+      "contract_change_required": false
+    },
+    {
+      "id": "comparator_fairness",
+      "category": "comparator_fairness",
+      "status": "pass",
+      "severity": "high",
+      "claim_at_risk": "comparator fairness",
+      "method": "Both implementations receive the same starts, knot laws, rounds and all-member reach definition.",
+      "evidence_paths": [
+        "../../contract.json"
+      ],
+      "required_action": "",
+      "contract_change_required": false
+    },
+    {
+      "id": "artifact_and_checker",
+      "category": "artifact_and_checker",
+      "status": "pass",
+      "severity": "high",
+      "claim_at_risk": "artifact and checker",
+      "method": "Compare full per-member count spectra and audit projections in the complete stage; a finite spectrum alone cannot prove an isomorphism.",
+      "evidence_paths": [
+        "../../contract.json"
+      ],
+      "required_action": "",
+      "contract_change_required": false
+    }
+  ],
+  "verdict": "PASS",
+  "required_actions": [],
+  "nonclaims": [
+    "No count has yet been accepted.",
+    "Finite confirmations do not establish the uniform theorem."
+  ]
+}

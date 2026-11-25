@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "case_records": "results.jsonl",
+  "case_record_adapter": "Use the result object of each shared-runner record with status ok.",
+  "trajectory_key": [
+    "case",
+    "rule",
+    "kl"
+  ],
+  "primary_rule": "MOST",
+  "paths_relative_to_manifest": true,
+  "hash_rule": "SHA-256 of the exact decompressed UTF-8 JSONL bytes, including newlines.",
+  "support_path_field": "support_file",
+  "support_hash_field": "support_sha256",
+  "support_rows": [
+    "round",
+    "knots",
+    "distinctions",
+    "supports",
+    "barred",
+    "births"
+  ],
+  "support_row_semantics": "New supports in holder ID order. Concatenate through t for the post-round prefix.",
+  "events_path_field": "events_file",
+  "events_hash_field": "events_sha256",
+  "event_key": [
+    "s",
+    "t",
+    "X",
+    "Y"
+  ],
+  "minimum_event_fields": [
+    "s",
+    "t",
+    "X",
+    "Y",
+    "meeting_types",
+    "routes"
+  ],
+  "route_key": [
+    "route",
+    "w",
+    "u",
+    "v"
+  ],
+  "minimum_route_fields": [
+    "route",
+    "w",
+    "u",
+    "v",
+    "contacts",
+    "x_arms",
+    "y_arms",
+    "a",
+    "b"
+  ],
+  "take_route_fields": [
+    "recipient",
+    "pre_holder",
+    "near_eligible"
+  ],
+  "endpoint_roles": "X < Y in member ID order, u from X and v from Y exclusively with respect to this pair.",
+  "job_sha256": "ad61c70ba6e4b8e0bc80b8b20b1061ea59d21afe85c82204677b28a861bbb215",
+  "engine_sha256": "7d6990c0b5ed1e069ed1a7d24be420164d520fb709199bbd166fe127f4c5d369",
+  "contract_sha256": "6e133cde21ee3dd369cc96c6dfe93bf01d7c385d7d9ccde43d011b8c22136bdf"
+}

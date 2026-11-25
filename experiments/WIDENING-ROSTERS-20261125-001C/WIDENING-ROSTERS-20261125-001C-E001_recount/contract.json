@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "experiment_id": "WIDENING-ROSTERS-20261125-001C-E001",
+  "status": "frozen",
+  "ticket": "WIDENING-ROSTERS-20261125-001C",
+  "question": "Which witnessed rosters, finite counts, and whole-stage knots survive the independent recount?",
+  "groups": [
+    [
+      19,
+      164,
+      172,
+      214,
+      1350,
+      2086,
+      2216,
+      2772,
+      3075
+    ],
+    [
+      177,
+      218,
+      3195,
+      3288
+    ],
+    [
+      178,
+      179,
+      219,
+      1382,
+      2218,
+      2231,
+      2694,
+      3077
+    ],
+    [
+      1964,
+      2236
+    ]
+  ],
+  "laws": {
+    "L0": "ORD/STALL",
+    "L1": "CAP-3/CANCEL-WAIT",
+    "L6": "CAP-3/CANCEL-RETIRE",
+    "L7": "CAP-3/CANCEL-OFFSHOOT",
+    "L9": "ORD/CANCEL-RETIRE",
+    "L11": "CAP-4/CANCEL-RETIRE"
+  },
+  "knot_laws": [
+    "nae",
+    "parity"
+  ],
+  "cases": "cases.json",
+  "inputs": {
+    "research/KNOTS-WITHIN-REACH-20261125-001A/census_starts.json": "bb6c3456a573af80e8657013ab9f8103851694d285145ecefa3911cb3cfa45ed",
+    "research/KNOTS-WITHIN-REACH-20261125-001A/five_knot_order.json": "a3df5e1410f306b534601b463d57af7cd40b0cf2276d025ff64603639cf44fbf",
+    "research/KNOTS-WITHIN-REACH-20261125-001/checks/roster_probe/README.md": "c2dedc25c8c52d9df0d07566b35ca8cf24b373315cf29cc2060778ecf92aeebb",
+    "research/KNOTS-WITHIN-REACH-20261125-001/checks/roster_probe/model_check.json": "aee9016048ff78446545f06aaae63b056f1f8e5e192c41c14b962587a829b350",
+    "research/KNOTS-WITHIN-REACH-20261125-001/checks/roster_probe/probe_runs.jsonl.gz": "0451d16c803812482ec1c42f59b8769ac32268f8ce9a153201e2d1bbb87490d0",
+    "experiments/WIDENING-ROSTERS-20261125-001C/WIDENING-ROSTERS-20261125-001C-E001_recount/cases.json": "6591e0dd656a11da646d95e6be650da08ee979b541225ab85304b63ab6c2496d",
+    "research/WIDENING-ROSTERS-20261125-001/advisor/freeze-review.txt": "d8f5a278a57275d67615a34e9466927e01a05b8b15d5cacff14cdf90b243a6f3"
+  },
+  "weighting": "Enumerate all 23 old starts for all 6 laws. Four mutually sharing starts. First 12 starts after position 1,000 of the archived shuffled five-knot catalog, unconditional on outcome. This is a test panel, with no estimate for other starts.",
+  "observable": "Members hold at least one unbarred loose distinction. Two distinct members are one step apart if a third knot shares a distinction with both, in the stage prefix. For every member count the members within 0 through r_max witnessed steps, saturating by part. Take the largest count separately at each r over all members. Empty roster gives zero throughout.",
+  "predictions": [
+    "For each mutually sharing start, m>=3, after t>=1: m extra members and all m-term weak compositions of t-1, with unit-transfer steps and one extra neighbor on each pure sum; at t=1 all m attach to the sole sum. m=6, t=13 predicts 6194 members (=C(17,5)+6) and a largest one-step count of 31. Round zero is an explicit control outside this range.",
+    "Group one, t>=2: t(t+1)/2+3 members under all six laws, with best count 3r²+3r+1 through 3r<=t-1. Group two, t>=2: C(t+2,3)+4 members under L0/L9/L11; best count (2r+1)(5r²+5r+3)/3 for 4r<=t-1. Test t=1 separately and report any counterexample, including a different early roster.",
+    "Under each cap of three, group two splits after the cap acts. Test four or five parts and a best count min(2r+1, largest part size) from t>=2, retaining waiting and offshoot exceptions.",
+    "Group three L0/L9: predict best count 12r²+2 for 1<=r<=floor((t-2)/3) on the late panel t>=20 (at 41 predict 2030 at r=13). Group four L0/L9: 48r²−48r+24 for 2<=r<=floor((t-4)/3), t>=20 (at 31 predict 3480 at r=9). For each capped law test a loss of this whole roster. Report actual breakpoints and the first failure, including earlier or larger r as descriptive.",
+    "Heldout cases: no prediction that all widen. Predict agreement of all roster counts and every individual whole-stage knot under both knot laws as a falsifiable claim. Any failure of a knot is retained, and limits the interpretation of its roster."
+  ],
+  "methods": [
+    "Independently grow every start under both knot laws and the designated fresh-count law, including genuine parity closing. Producer and recount share only the registered inputs, not implementation or outputs.",
+    "Per reached scheduled stage compare knots, members, unique pairs, descending part sizes, degree histogram, cumulative reach maxima and SHA256 of compact JSON of sorted per-member vectors. Spectra equality supports counts; an isomorphism claim needs its own proof or exact map.",
+    "Check every start and made knot projected from the whole stage by existentially removing all other distinctions. Check both knot laws, including exact closure or projection failure, retaining unclassified results. A last-stage extension certificate covers an earlier knot only when justified by monotonicity. Pass K1, K2 and K3 on actual allowed relations, with canonical knotlab CLI and exact independent bookkeeping."
+  ],
+  "controls": [
+    "round 0, round 1 common sum, capped variants, new five-knot starts, NAE vs parity, and remove the witnessed steps in a model control: this must change the counts.",
+    "For a failed knot report its table or a certificate; never erase a failed knot from the measured roster. Label the physical-incidence count and the count of valid knots."
+  ],
+  "resources": "Post-round knot bound 75000; retain first complete round exceeding bound, then stop. A guard discards an incomplete round. No imputation after stall/end. Rehearse each exact configuration with timing, no outcome used for selection; each runner under memory cap. Shared long-runner for extended batches; if projected longer than about one hour per run, file a pre-run resource deviation for the longest affordable prefix in cases.json order and retained stages. No negative from omitted cells. Raw traces may be deterministically regenerated.",
+  "decision": "Report agreement only for completed matching cells. An unmatched number is never a finding. Report first differences, all unrun cells and limitations separately. Experiments do not prove the uniform statement."
+}

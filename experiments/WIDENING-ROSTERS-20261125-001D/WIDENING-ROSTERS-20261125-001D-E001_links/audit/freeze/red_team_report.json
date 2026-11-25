@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "experiment_id": "WIDENING-ROSTERS-20261125-001D-E001",
+  "gate": "contract_freeze",
+  "tier": "R0",
+  "reviewer_independence": "same_task",
+  "attack_plan_frozen_before_results": true,
+  "input_digests": [
+    {
+      "path": "../../contract.json",
+      "sha256": "6e133cde21ee3dd369cc96c6dfe93bf01d7c385d7d9ccde43d011b8c22136bdf"
+    },
+    {
+      "path": "../../cases.json",
+      "sha256": "a3d17ce289ab6b10f029a094dc745b866242db43689ab6f494fe5e3764c4b163"
+    },
+    {
+      "path": "../../../../../research/WIDENING-ROSTERS-20261125-001/advisor/freeze-review.txt",
+      "sha256": "d8f5a278a57275d67615a34e9466927e01a05b8b15d5cacff14cdf90b243a6f3"
+    }
+  ],
+  "attacks": [
+    {
+      "id": "scope_and_authority",
+      "category": "scope_and_authority",
+      "status": "pass",
+      "severity": "high",
+      "claim_at_risk": "scope and authority",
+      "method": "A historical positive cohort is being replayed. No claim of prevalence, intervention, native recurrence from a part label, or place versus form.",
+      "evidence_paths": [
+        "../../contract.json"
+      ],
+      "required_action": "",
+      "contract_change_required": false
+    },
+    {
+      "id": "information_leakage",
+      "category": "information_leakage",
+      "status": "pass",
+      "severity": "high",
+      "claim_at_risk": "information leakage",
+      "method": "Archive outcomes informed the predictions. The four source lists, cases, routes, two knot laws, readout and alternate rules were fixed before the independent run. The two implementations exchange schemas only.",
+      "evidence_paths": [
+        "../../contract.json"
+      ],
+      "required_action": "",
+      "contract_change_required": false
+    },
+    {
+      "id": "split_integrity",
+      "category": "split_integrity",
+      "status": "pass",
+      "severity": "high",
+      "claim_at_risk": "split integrity",
+      "method": "Use each archived split in its original case and the first meeting of every wholly apart pair. Interleave original sources. The second population includes every selected case, even a case with no meeting.",
+      "evidence_paths": [
+        "../../contract.json"
+      ],
+      "required_action": "",
+      "contract_change_required": false
+    },
+    {
+      "id": "comparator_fairness",
+      "category": "comparator_fairness",
+      "status": "pass",
+      "severity": "high",
+      "claim_at_risk": "comparator fairness",
+      "method": "All four rules share the same full two-step offer, ordinary growth, ration, treatment, cases and guard. Preserve oversize/guard stops under each rule.",
+      "evidence_paths": [
+        "../../contract.json"
+      ],
+      "required_action": "",
+      "contract_change_required": false
+    },
+    {
+      "id": "artifact_and_checker",
+      "category": "artifact_and_checker",
+      "status": "pass",
+      "severity": "high",
+      "claim_at_risk": "artifact and checker",
+      "method": "Test the exact existential projection after a meeting. Controls with free literal triples, proper two-sided attachments, and genuine ternary bindings forbid substituting frequency or a pair of separate witnesses for one shared distinction.",
+      "evidence_paths": [
+        "../../contract.json"
+      ],
+      "required_action": "",
+      "contract_change_required": false
+    }
+  ],
+  "verdict": "PASS",
+  "required_actions": [],
+  "nonclaims": [
+    "Positive historical configuration selection limits generality.",
+    "No measured link conclusion at authorization. A common distinction alone cannot identify a logical contact."
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "schema_version": 3,
+  "proof_id": "WIDENING-ROSTERS-20261125-001A-P001",
+  "ticket": "WIDENING-ROSTERS-20261125-001A",
+  "status": "Proved",
+  "standard_statement": "Determine the fixed-rank adjacency graph of a growing family of finite ideals extended by m singleton continuations. Identify adjacency, finite-radius counts, scope over starting incidence systems, and failure under bounded supply.",
+  "nearest_known_result": "FIRST-KNOT-20261118-001A Proposition 4 and FRESH-COUNT-20261118-001A Theorem 4. Classical unrestricted type A counts are background (Baake and Grimm 1997).",
+  "novelty": "candidate-local-delta",
+  "delta": "The accepted proofs identify growth through all rounds. We seek adjacency and boundary terms at one rank and exact census equivalence.",
+  "dependencies": [
+    "FIRST-KNOT-20261118-001A",
+    "FRESH-COUNT-20261118-001A",
+    "KNOTS-WITHIN-REACH-20261125-001Z"
+  ],
+  "proof": "WIDENING-ROSTERS-20261125-001A-P001",
+  "decision_rule": "Prove directly from the stated law. Keep exact hypotheses, initial and saturation cases. A failed generalization gives its first witness or remains an open obligation.",
+  "artifact_id": "WIDENING-ROSTERS-20261125-001A-P001",
+  "canonical_id": "WIDENING-ROSTERS-20261125-001A-P001",
+  "kind": "proof",
+  "claim": "Every admitted m and t, census reductions and cap-three parts, including the finite cutoff and the m=2 counterexample.",
+  "source_contribution": 0,
+  "remaining_obligations": [],
+  "evidence_bindings": {
+    "proofs/WIDENING-ROSTERS-20261125-001A/WIDENING-ROSTERS-20261125-001A-P001_unit_transfers/best_member_count.md": "f2a98baeaccce0c66e719bcabb406c8a376e88266a950a42d4b92f7b7072f7ab",
+    "proofs/WIDENING-ROSTERS-20261125-001A/WIDENING-ROSTERS-20261125-001A-P001_unit_transfers/proof.md": "89f3d72b012dc378c80d3ab2669e9aa1617e7c635ad6f4631a2a26bf48b86a17"
+  },
+  "paths": {
+    "manifest": "proofs/WIDENING-ROSTERS-20261125-001A/WIDENING-ROSTERS-20261125-001A-P001_unit_transfers/manifest.json",
+    "proof": "proofs/WIDENING-ROSTERS-20261125-001A/WIDENING-ROSTERS-20261125-001A-P001_unit_transfers/proof.md",
+    "result": "proofs/WIDENING-ROSTERS-20261125-001A/WIDENING-ROSTERS-20261125-001A-P001_unit_transfers/result.json"
+  },
+  "validation": {
+    "level": "V2",
+    "independence": "Separate same-task mathematical reviewer, two independent growth/count implementations, explicit third finite model. No external referee.",
+    "novelty": "candidate-local-delta",
+    "authority": "symbolic, uniform at fixed input assumptions"
+  }
+}

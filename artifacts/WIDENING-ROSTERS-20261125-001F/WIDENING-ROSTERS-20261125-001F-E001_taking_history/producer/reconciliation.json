@@ -1,0 +1,912 @@
+{
+  "producer_results_sha256": "dccad660f3aa369cfe37b3da93cc0b05e758ccf51b710f07e12e87874f17557c",
+  "referee_results_sha256": "baa08909b5d0fbdd254f1b335a2b041eee23917caddce909871da4539ef1b0ab",
+  "trajectories": 2050,
+  "raw_event_digest_differences": 268,
+  "raw_event_field_differences": {
+    "strict": 768
+  },
+  "first_raw_difference": {
+    "trajectory": "ringk-3--EVER--nae",
+    "event_key": [
+      3,
+      5,
+      [
+        19,
+        20,
+        21,
+        33,
+        34,
+        35
+      ],
+      [
+        22,
+        23,
+        24
+      ]
+    ],
+    "producer": {
+      "X": [
+        19,
+        20,
+        21,
+        33,
+        34,
+        35
+      ],
+      "Y": [
+        22,
+        23,
+        24
+      ],
+      "direct_outer": true,
+      "direct_outer_any": true,
+      "meeting_types": [
+        "demand",
+        "take"
+      ],
+      "s": 3,
+      "start_knot_holds_linking_distinction": true,
+      "strict": true,
+      "t": 5
+    },
+    "referee": {
+      "s": 3,
+      "t": 5,
+      "X": [
+        19,
+        20,
+        21,
+        33,
+        34,
+        35
+      ],
+      "Y": [
+        22,
+        23,
+        24
+      ],
+      "meeting_types": [
+        "demand",
+        "take"
+      ],
+      "strict": false,
+      "start_knot_holds_linking_distinction": true,
+      "direct_outer": true,
+      "direct_outer_any": true
+    }
+  },
+  "strict_normalization": "The producer raw flag marks a nonempty set of made linking knots. The referee flag also requires that no start knot holds a linking distinction. Before the common digest, replace the producer event strict by strict AND NOT start_knot_holds_linking_distinction.",
+  "event_key_and_order": "Lexical (s,t,X,Y), checked separately for both artifact streams.",
+  "normalized_event_digest_matches": 2050,
+  "normalized_event_disagreements": [],
+  "matching_scalar_or_count_fields": {
+    "case": 2050,
+    "rule": 2050,
+    "kl": 2050,
+    "start": 2050,
+    "knots": 2050,
+    "rounds_read": 2050,
+    "outer_take_count": 2050,
+    "stop": 2050,
+    "split_coverage": 2050,
+    "take_count": 2050,
+    "meetings_count": 2050,
+    "only_made_count": 2050,
+    "strict_count": 2050,
+    "strict_direct_outer_count": 2050,
+    "strict_direct_outer_any_count": 2050,
+    "same_choice": 2050,
+    "most_only": 2050,
+    "both_abstain": 2050,
+    "selected_below_maximum": 2050,
+    "experimental_rule_only_or_differs": 2050
+  },
+  "scalar_disagreements": [],
+  "producer_elapsed_seconds": 33.793,
+  "referee_elapsed_seconds": 32.075,
+  "producer_peak_aggregate_mib": 1381.3125,
+  "referee_peak_aggregate_mib": 273.294921875,
+  "rule_law_totals": {
+    "EVER/nae": {
+      "trajectories": 205,
+      "takes": 6455,
+      "outer_takes": 4640,
+      "meetings": 2921,
+      "all_linkers_made_meetings": 1448,
+      "strict_meetings": 1250,
+      "trajectories_with_strict_meetings": 125,
+      "strict_direct_outer_pure": 0,
+      "strict_direct_outer_any": 0,
+      "strict_winners_with_some_outer": 125,
+      "strict_winners_with_lower_choice": 0,
+      "strict_winners_with_lower_choice_than_unique_max": 0,
+      "strict_meetings_with_lower_choice_on_pure_route": 0
+    },
+    "EVER/parity": {
+      "trajectories": 205,
+      "takes": 6455,
+      "outer_takes": 4640,
+      "meetings": 2921,
+      "all_linkers_made_meetings": 1448,
+      "strict_meetings": 1250,
+      "trajectories_with_strict_meetings": 125,
+      "strict_direct_outer_pure": 0,
+      "strict_direct_outer_any": 0,
+      "strict_winners_with_some_outer": 125,
+      "strict_winners_with_lower_choice": 0,
+      "strict_winners_with_lower_choice_than_unique_max": 0,
+      "strict_meetings_with_lower_choice_on_pure_route": 0
+    },
+    "LAST_USE/nae": {
+      "trajectories": 205,
+      "takes": 6776,
+      "outer_takes": 4982,
+      "meetings": 3129,
+      "all_linkers_made_meetings": 1436,
+      "strict_meetings": 1250,
+      "trajectories_with_strict_meetings": 125,
+      "strict_direct_outer_pure": 0,
+      "strict_direct_outer_any": 0,
+      "strict_winners_with_some_outer": 125,
+      "strict_winners_with_lower_choice": 0,
+      "strict_winners_with_lower_choice_than_unique_max": 0,
+      "strict_meetings_with_lower_choice_on_pure_route": 0
+    },
+    "LAST_USE/parity": {
+      "trajectories": 205,
+      "takes": 6776,
+      "outer_takes": 4982,
+      "meetings": 3129,
+      "all_linkers_made_meetings": 1436,
+      "strict_meetings": 1250,
+      "trajectories_with_strict_meetings": 125,
+      "strict_direct_outer_pure": 0,
+      "strict_direct_outer_any": 0,
+      "strict_winners_with_some_outer": 125,
+      "strict_winners_with_lower_choice": 0,
+      "strict_winners_with_lower_choice_than_unique_max": 0,
+      "strict_meetings_with_lower_choice_on_pure_route": 0
+    },
+    "NEWEST/nae": {
+      "trajectories": 205,
+      "takes": 24402,
+      "outer_takes": 2027,
+      "meetings": 0,
+      "all_linkers_made_meetings": 0,
+      "strict_meetings": 0,
+      "trajectories_with_strict_meetings": 0,
+      "strict_direct_outer_pure": 0,
+      "strict_direct_outer_any": 0,
+      "strict_winners_with_some_outer": 0,
+      "strict_winners_with_lower_choice": 0,
+      "strict_winners_with_lower_choice_than_unique_max": 0,
+      "strict_meetings_with_lower_choice_on_pure_route": 0
+    },
+    "NEWEST/parity": {
+      "trajectories": 205,
+      "takes": 24402,
+      "outer_takes": 2027,
+      "meetings": 0,
+      "all_linkers_made_meetings": 0,
+      "strict_meetings": 0,
+      "trajectories_with_strict_meetings": 0,
+      "strict_direct_outer_pure": 0,
+      "strict_direct_outer_any": 0,
+      "strict_winners_with_some_outer": 0,
+      "strict_winners_with_lower_choice": 0,
+      "strict_winners_with_lower_choice_than_unique_max": 0,
+      "strict_meetings_with_lower_choice_on_pure_route": 0
+    },
+    "SOLE_MADE/nae": {
+      "trajectories": 205,
+      "takes": 6902,
+      "outer_takes": 651,
+      "meetings": 0,
+      "all_linkers_made_meetings": 0,
+      "strict_meetings": 0,
+      "trajectories_with_strict_meetings": 0,
+      "strict_direct_outer_pure": 0,
+      "strict_direct_outer_any": 0,
+      "strict_winners_with_some_outer": 0,
+      "strict_winners_with_lower_choice": 0,
+      "strict_winners_with_lower_choice_than_unique_max": 0,
+      "strict_meetings_with_lower_choice_on_pure_route": 0
+    },
+    "SOLE_MADE/parity": {
+      "trajectories": 205,
+      "takes": 6902,
+      "outer_takes": 651,
+      "meetings": 0,
+      "all_linkers_made_meetings": 0,
+      "strict_meetings": 0,
+      "trajectories_with_strict_meetings": 0,
+      "strict_direct_outer_pure": 0,
+      "strict_direct_outer_any": 0,
+      "strict_winners_with_some_outer": 0,
+      "strict_winners_with_lower_choice": 0,
+      "strict_winners_with_lower_choice_than_unique_max": 0,
+      "strict_meetings_with_lower_choice_on_pure_route": 0
+    },
+    "THREE/nae": {
+      "trajectories": 205,
+      "takes": 2452,
+      "outer_takes": 2009,
+      "meetings": 2587,
+      "all_linkers_made_meetings": 1250,
+      "strict_meetings": 1250,
+      "trajectories_with_strict_meetings": 125,
+      "strict_direct_outer_pure": 0,
+      "strict_direct_outer_any": 0,
+      "strict_winners_with_some_outer": 125,
+      "strict_winners_with_lower_choice": 0,
+      "strict_winners_with_lower_choice_than_unique_max": 0,
+      "strict_meetings_with_lower_choice_on_pure_route": 0
+    },
+    "THREE/parity": {
+      "trajectories": 205,
+      "takes": 2452,
+      "outer_takes": 2009,
+      "meetings": 2587,
+      "all_linkers_made_meetings": 1250,
+      "strict_meetings": 1250,
+      "trajectories_with_strict_meetings": 125,
+      "strict_direct_outer_pure": 0,
+      "strict_direct_outer_any": 0,
+      "strict_winners_with_some_outer": 125,
+      "strict_winners_with_lower_choice": 0,
+      "strict_winners_with_lower_choice_than_unique_max": 0,
+      "strict_meetings_with_lower_choice_on_pure_route": 0
+    }
+  },
+  "physical_examples": {
+    "EVER/nae": {
+      "trajectory": "rings-19--EVER--nae",
+      "start": "Ring(5,3)+1",
+      "meeting": {
+        "s": 2,
+        "t": 5,
+        "X": [
+          16,
+          17,
+          18
+        ],
+        "Y": [
+          19,
+          20,
+          21
+        ],
+        "meeting_types": [
+          "demand"
+        ],
+        "link_verdict": "only through made knots",
+        "start_knot_holds_linking_distinction": false,
+        "linking_knots": [
+          {
+            "knot": 85,
+            "made": 4,
+            "how": [
+              "met set"
+            ],
+            "class": "made, no ancestor of both",
+            "linking_distinctions": [
+              {
+                "d": 159,
+                "first_holder_round": 4,
+                "holders": [
+                  [
+                    85,
+                    4,
+                    "neither",
+                    "join"
+                  ],
+                  [
+                    94,
+                    5,
+                    "X only",
+                    "join"
+                  ]
+                ]
+              },
+              {
+                "d": 160,
+                "first_holder_round": 4,
+                "holders": [
+                  [
+                    85,
+                    4,
+                    "neither",
+                    "join"
+                  ],
+                  [
+                    95,
+                    5,
+                    "Y only",
+                    "join"
+                  ]
+                ]
+              }
+            ]
+          }
+        ],
+        "route": {
+          "route": "demand",
+          "w": 85,
+          "u": 94,
+          "v": 95,
+          "contacts": [],
+          "x_arms": [
+            159
+          ],
+          "y_arms": [
+            160
+          ],
+          "a": [
+            154,
+            159,
+            171,
+            172
+          ],
+          "b": [
+            155,
+            160,
+            173,
+            174
+          ],
+          "u_roles": [
+            0,
+            3
+          ],
+          "v_roles": [
+            1,
+            3
+          ],
+          "w_roles": [
+            3
+          ]
+        },
+        "offer": null
+      }
+    },
+    "EVER/parity": {
+      "trajectory": "rings-19--EVER--parity",
+      "start": "Ring(5,3)+1",
+      "meeting": {
+        "s": 2,
+        "t": 5,
+        "X": [
+          16,
+          17,
+          18
+        ],
+        "Y": [
+          19,
+          20,
+          21
+        ],
+        "meeting_types": [
+          "demand"
+        ],
+        "link_verdict": "only through made knots",
+        "start_knot_holds_linking_distinction": false,
+        "linking_knots": [
+          {
+            "knot": 85,
+            "made": 4,
+            "how": [
+              "met set"
+            ],
+            "class": "made, no ancestor of both",
+            "linking_distinctions": [
+              {
+                "d": 159,
+                "first_holder_round": 4,
+                "holders": [
+                  [
+                    85,
+                    4,
+                    "neither",
+                    "join"
+                  ],
+                  [
+                    94,
+                    5,
+                    "X only",
+                    "join"
+                  ]
+                ]
+              },
+              {
+                "d": 160,
+                "first_holder_round": 4,
+                "holders": [
+                  [
+                    85,
+                    4,
+                    "neither",
+                    "join"
+                  ],
+                  [
+                    95,
+                    5,
+                    "Y only",
+                    "join"
+                  ]
+                ]
+              }
+            ]
+          }
+        ],
+        "route": {
+          "route": "demand",
+          "w": 85,
+          "u": 94,
+          "v": 95,
+          "contacts": [],
+          "x_arms": [
+            159
+          ],
+          "y_arms": [
+            160
+          ],
+          "a": [
+            154,
+            159,
+            171,
+            172
+          ],
+          "b": [
+            155,
+            160,
+            173,
+            174
+          ],
+          "u_roles": [
+            0,
+            3
+          ],
+          "v_roles": [
+            1,
+            3
+          ],
+          "w_roles": [
+            3
+          ]
+        },
+        "offer": null
+      }
+    },
+    "LAST_USE/nae": {
+      "trajectory": "rings-19--LAST_USE--nae",
+      "start": "Ring(5,3)+1",
+      "meeting": {
+        "s": 2,
+        "t": 5,
+        "X": [
+          16,
+          17,
+          18
+        ],
+        "Y": [
+          19,
+          20,
+          21
+        ],
+        "meeting_types": [
+          "demand"
+        ],
+        "link_verdict": "only through made knots",
+        "start_knot_holds_linking_distinction": false,
+        "linking_knots": [
+          {
+            "knot": 85,
+            "made": 4,
+            "how": [
+              "met set"
+            ],
+            "class": "made, no ancestor of both",
+            "linking_distinctions": [
+              {
+                "d": 159,
+                "first_holder_round": 4,
+                "holders": [
+                  [
+                    85,
+                    4,
+                    "neither",
+                    "join"
+                  ],
+                  [
+                    94,
+                    5,
+                    "X only",
+                    "join"
+                  ]
+                ]
+              },
+              {
+                "d": 160,
+                "first_holder_round": 4,
+                "holders": [
+                  [
+                    85,
+                    4,
+                    "neither",
+                    "join"
+                  ],
+                  [
+                    95,
+                    5,
+                    "Y only",
+                    "join"
+                  ]
+                ]
+              }
+            ]
+          }
+        ],
+        "route": {
+          "route": "demand",
+          "w": 85,
+          "u": 94,
+          "v": 95,
+          "contacts": [],
+          "x_arms": [
+            159
+          ],
+          "y_arms": [
+            160
+          ],
+          "a": [
+            154,
+            159,
+            171,
+            172
+          ],
+          "b": [
+            155,
+            160,
+            173,
+            174
+          ],
+          "u_roles": [
+            0,
+            3
+          ],
+          "v_roles": [
+            1,
+            3
+          ],
+          "w_roles": [
+            3
+          ]
+        },
+        "offer": null
+      }
+    },
+    "LAST_USE/parity": {
+      "trajectory": "rings-19--LAST_USE--parity",
+      "start": "Ring(5,3)+1",
+      "meeting": {
+        "s": 2,
+        "t": 5,
+        "X": [
+          16,
+          17,
+          18
+        ],
+        "Y": [
+          19,
+          20,
+          21
+        ],
+        "meeting_types": [
+          "demand"
+        ],
+        "link_verdict": "only through made knots",
+        "start_knot_holds_linking_distinction": false,
+        "linking_knots": [
+          {
+            "knot": 85,
+            "made": 4,
+            "how": [
+              "met set"
+            ],
+            "class": "made, no ancestor of both",
+            "linking_distinctions": [
+              {
+                "d": 159,
+                "first_holder_round": 4,
+                "holders": [
+                  [
+                    85,
+                    4,
+                    "neither",
+                    "join"
+                  ],
+                  [
+                    94,
+                    5,
+                    "X only",
+                    "join"
+                  ]
+                ]
+              },
+              {
+                "d": 160,
+                "first_holder_round": 4,
+                "holders": [
+                  [
+                    85,
+                    4,
+                    "neither",
+                    "join"
+                  ],
+                  [
+                    95,
+                    5,
+                    "Y only",
+                    "join"
+                  ]
+                ]
+              }
+            ]
+          }
+        ],
+        "route": {
+          "route": "demand",
+          "w": 85,
+          "u": 94,
+          "v": 95,
+          "contacts": [],
+          "x_arms": [
+            159
+          ],
+          "y_arms": [
+            160
+          ],
+          "a": [
+            154,
+            159,
+            171,
+            172
+          ],
+          "b": [
+            155,
+            160,
+            173,
+            174
+          ],
+          "u_roles": [
+            0,
+            3
+          ],
+          "v_roles": [
+            1,
+            3
+          ],
+          "w_roles": [
+            3
+          ]
+        },
+        "offer": null
+      }
+    },
+    "THREE/nae": {
+      "trajectory": "rings-19--THREE--nae",
+      "start": "Ring(5,3)+1",
+      "meeting": {
+        "s": 2,
+        "t": 5,
+        "X": [
+          16,
+          17,
+          18
+        ],
+        "Y": [
+          19,
+          20,
+          21
+        ],
+        "meeting_types": [
+          "demand"
+        ],
+        "link_verdict": "only through made knots",
+        "start_knot_holds_linking_distinction": false,
+        "linking_knots": [
+          {
+            "knot": 85,
+            "made": 4,
+            "how": [
+              "met set"
+            ],
+            "class": "made, no ancestor of both",
+            "linking_distinctions": [
+              {
+                "d": 159,
+                "first_holder_round": 4,
+                "holders": [
+                  [
+                    85,
+                    4,
+                    "neither",
+                    "join"
+                  ],
+                  [
+                    94,
+                    5,
+                    "X only",
+                    "join"
+                  ]
+                ]
+              },
+              {
+                "d": 160,
+                "first_holder_round": 4,
+                "holders": [
+                  [
+                    85,
+                    4,
+                    "neither",
+                    "join"
+                  ],
+                  [
+                    95,
+                    5,
+                    "Y only",
+                    "join"
+                  ]
+                ]
+              }
+            ]
+          }
+        ],
+        "route": {
+          "route": "demand",
+          "w": 85,
+          "u": 94,
+          "v": 95,
+          "contacts": [],
+          "x_arms": [
+            159
+          ],
+          "y_arms": [
+            160
+          ],
+          "a": [
+            154,
+            159,
+            171,
+            172
+          ],
+          "b": [
+            155,
+            160,
+            173,
+            174
+          ],
+          "u_roles": [
+            0,
+            3
+          ],
+          "v_roles": [
+            1,
+            3
+          ],
+          "w_roles": [
+            3
+          ]
+        },
+        "offer": null
+      }
+    },
+    "THREE/parity": {
+      "trajectory": "rings-19--THREE--parity",
+      "start": "Ring(5,3)+1",
+      "meeting": {
+        "s": 2,
+        "t": 5,
+        "X": [
+          16,
+          17,
+          18
+        ],
+        "Y": [
+          19,
+          20,
+          21
+        ],
+        "meeting_types": [
+          "demand"
+        ],
+        "link_verdict": "only through made knots",
+        "start_knot_holds_linking_distinction": false,
+        "linking_knots": [
+          {
+            "knot": 85,
+            "made": 4,
+            "how": [
+              "met set"
+            ],
+            "class": "made, no ancestor of both",
+            "linking_distinctions": [
+              {
+                "d": 159,
+                "first_holder_round": 4,
+                "holders": [
+                  [
+                    85,
+                    4,
+                    "neither",
+                    "join"
+                  ],
+                  [
+                    94,
+                    5,
+                    "X only",
+                    "join"
+                  ]
+                ]
+              },
+              {
+                "d": 160,
+                "first_holder_round": 4,
+                "holders": [
+                  [
+                    85,
+                    4,
+                    "neither",
+                    "join"
+                  ],
+                  [
+                    95,
+                    5,
+                    "Y only",
+                    "join"
+                  ]
+                ]
+              }
+            ]
+          }
+        ],
+        "route": {
+          "route": "demand",
+          "w": 85,
+          "u": 94,
+          "v": 95,
+          "contacts": [],
+          "x_arms": [
+            159
+          ],
+          "y_arms": [
+            160
+          ],
+          "a": [
+            154,
+            159,
+            171,
+            172
+          ],
+          "b": [
+            155,
+            160,
+            173,
+            174
+          ],
+          "u_roles": [
+            0,
+            3
+          ],
+          "v_roles": [
+            1,
+            3
+          ],
+          "w_roles": [
+            3
+          ]
+        },
+        "offer": null
+      }
+    }
+  }
+}

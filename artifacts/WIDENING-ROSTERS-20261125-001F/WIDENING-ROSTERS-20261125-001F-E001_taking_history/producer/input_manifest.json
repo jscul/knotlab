@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "job_sha256": "012e045e344940e6b50f85609c4777cd2b255a314fcab8fb20aee6bd05bdea7a",
+  "engine_sha256": "3f47707c1682388e01c761c120fcf053be31fe8be88e20d0dedb3c1380941caf",
+  "contract_sha256": "4b094dad5fc297d44d34d7459e62813c6175d0742dd2aeb08c2ccc6dbd1054d5",
+  "cases_sha256": "a3d17ce289ab6b10f029a094dc745b866242db43689ab6f494fe5e3764c4b163",
+  "case_records": "results.jsonl",
+  "case_record_adapter": "Use the result object of each shared-runner record with status ok.",
+  "trajectory_key": [
+    "case",
+    "rule",
+    "kl"
+  ],
+  "hash_rule": "SHA-256 of exact decompressed UTF-8 JSONL bytes, including newlines.",
+  "paths_relative_to_manifest": true,
+  "event_key": [
+    "s",
+    "t",
+    "X",
+    "Y"
+  ],
+  "event_fields": [
+    "s",
+    "t",
+    "X",
+    "Y",
+    "meeting_types",
+    "strict",
+    "start_knot_holds_linking_distinction",
+    "direct_outer",
+    "direct_outer_any"
+  ],
+  "meeting_types": [
+    "demand",
+    "met",
+    "take"
+  ],
+  "event_order": "Lexical by (s,t,X,Y). IDs are local to the recorded run.",
+  "direct_outer": "A cross take outside the near offer from a pure opposite endpoint holder in the first meeting round.",
+  "direct_outer_any": "A cross take outside the near offer at that first meeting, including mixed lineage.",
+  "events_path_field": "events_file",
+  "events_hash_field": "events_sha256",
+  "supports_path_field": "support_file",
+  "supports_hash_field": "support_sha256",
+  "support_fields": [
+    "round",
+    "knots",
+    "distinctions",
+    "supports",
+    "barred",
+    "births"
+  ],
+  "support_row_semantics": "New supports in holder ID order. Concatenate through t for the post-round prefix.",
+  "samples_fields": [
+    "meeting_samples",
+    "plural_offer_samples"
+  ]
+}

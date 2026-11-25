@@ -1,0 +1,263 @@
+{
+  "schema_version": 1,
+  "experiment_id": "WIDENING-ROSTERS-20261125-001C-E001",
+  "gate": "promotion",
+  "tier": "R2",
+  "reviewer_independence": "separate_implementation_lane",
+  "attack_plan_frozen_before_results": true,
+  "input_digests": [
+    {
+      "path": "../../contract.json",
+      "sha256": "cc721c680d57966e32b0e14e30f694c5320cef3c54f32481aa3c834956d3d255"
+    },
+    {
+      "path": "../../cases.json",
+      "sha256": "6591e0dd656a11da646d95e6be650da08ee979b541225ab85304b63ab6c2496d"
+    },
+    {
+      "path": "../../../../../artifacts/WIDENING-ROSTERS-20261125-001C/WIDENING-ROSTERS-20261125-001C-E001_recount/analysis/comparison.json",
+      "sha256": "c19a9eea1e07ada1574c83882961c0d410c56055a8fbd6d1e7a6cabfd7c0395f"
+    },
+    {
+      "path": "../../../../../artifacts/WIDENING-ROSTERS-20261125-001C/WIDENING-ROSTERS-20261125-001C-E001_recount/producer/replay_comparison.json",
+      "sha256": "4c3b1a249366d848c6d58118dc384c8f055faa415aebbab6146cedfe74349b04"
+    },
+    {
+      "path": "../../../../../artifacts/WIDENING-ROSTERS-20261125-001C/WIDENING-ROSTERS-20261125-001C-E001_recount/referee/runtime.json",
+      "sha256": "5124f32daeb0ecfa83152389fa98b07c89bad12eabeba9b5999f17490eceafa5"
+    },
+    {
+      "path": "../../../../../artifacts/WIDENING-ROSTERS-20261125-001C/WIDENING-ROSTERS-20261125-001C-E001_recount/knot_test/summary.json",
+      "sha256": "a81219aface573b9cf7d826f01d8e3b0416efe3e5447ba801c96dde1f8a8d731"
+    }
+  ],
+  "attacks": [
+    {
+      "id": "scope_and_authority",
+      "category": "scope_and_authority",
+      "status": "pass",
+      "severity": "high",
+      "claim_at_risk": "scope and authority",
+      "method": "Evaluate only the registered finite panel. Proof is filed separately.",
+      "evidence_paths": [
+        "../../contract.json",
+        "../../../../../artifacts/WIDENING-ROSTERS-20261125-001C/WIDENING-ROSTERS-20261125-001C-E001_recount/analysis/comparison.json",
+        "../../../../../artifacts/WIDENING-ROSTERS-20261125-001C/WIDENING-ROSTERS-20261125-001C-E001_recount/producer/replay_comparison.json",
+        "../../../../../artifacts/WIDENING-ROSTERS-20261125-001C/WIDENING-ROSTERS-20261125-001C-E001_recount/referee/runtime.json",
+        "../../../../../artifacts/WIDENING-ROSTERS-20261125-001C/WIDENING-ROSTERS-20261125-001C-E001_recount/knot_test/summary.json"
+      ],
+      "required_action": "",
+      "contract_change_required": false
+    },
+    {
+      "id": "information_leakage",
+      "category": "information_leakage",
+      "status": "pass",
+      "severity": "high",
+      "claim_at_risk": "information leakage",
+      "method": "The second counter uses distinct growth, witness construction and BFS; input catalog and law identities are public.",
+      "evidence_paths": [
+        "../../contract.json",
+        "../../../../../artifacts/WIDENING-ROSTERS-20261125-001C/WIDENING-ROSTERS-20261125-001C-E001_recount/analysis/comparison.json",
+        "../../../../../artifacts/WIDENING-ROSTERS-20261125-001C/WIDENING-ROSTERS-20261125-001C-E001_recount/producer/replay_comparison.json",
+        "../../../../../artifacts/WIDENING-ROSTERS-20261125-001C/WIDENING-ROSTERS-20261125-001C-E001_recount/referee/runtime.json",
+        "../../../../../artifacts/WIDENING-ROSTERS-20261125-001C/WIDENING-ROSTERS-20261125-001C-E001_recount/knot_test/summary.json"
+      ],
+      "required_action": "",
+      "contract_change_required": false
+    },
+    {
+      "id": "split_integrity",
+      "category": "split_integrity",
+      "status": "pass",
+      "severity": "high",
+      "claim_at_risk": "split integrity",
+      "method": "The twelve inputs at positions 1001\u20131012 were selected before timing. Case order digest is fixed.",
+      "evidence_paths": [
+        "../../contract.json",
+        "../../../../../artifacts/WIDENING-ROSTERS-20261125-001C/WIDENING-ROSTERS-20261125-001C-E001_recount/analysis/comparison.json",
+        "../../../../../artifacts/WIDENING-ROSTERS-20261125-001C/WIDENING-ROSTERS-20261125-001C-E001_recount/producer/replay_comparison.json",
+        "../../../../../artifacts/WIDENING-ROSTERS-20261125-001C/WIDENING-ROSTERS-20261125-001C-E001_recount/referee/runtime.json",
+        "../../../../../artifacts/WIDENING-ROSTERS-20261125-001C/WIDENING-ROSTERS-20261125-001C-E001_recount/knot_test/summary.json"
+      ],
+      "required_action": "",
+      "contract_change_required": false
+    },
+    {
+      "id": "comparator_fairness",
+      "category": "comparator_fairness",
+      "status": "pass",
+      "severity": "high",
+      "claim_at_risk": "comparator fairness",
+      "method": "Both counters enumerate from all members, both actual knot laws, signed round and guard conventions.",
+      "evidence_paths": [
+        "../../contract.json",
+        "../../../../../artifacts/WIDENING-ROSTERS-20261125-001C/WIDENING-ROSTERS-20261125-001C-E001_recount/analysis/comparison.json",
+        "../../../../../artifacts/WIDENING-ROSTERS-20261125-001C/WIDENING-ROSTERS-20261125-001C-E001_recount/producer/replay_comparison.json",
+        "../../../../../artifacts/WIDENING-ROSTERS-20261125-001C/WIDENING-ROSTERS-20261125-001C-E001_recount/referee/runtime.json",
+        "../../../../../artifacts/WIDENING-ROSTERS-20261125-001C/WIDENING-ROSTERS-20261125-001C-E001_recount/knot_test/summary.json"
+      ],
+      "required_action": "",
+      "contract_change_required": false
+    },
+    {
+      "id": "artifact_and_checker",
+      "category": "artifact_and_checker",
+      "status": "pass",
+      "severity": "high",
+      "claim_at_risk": "artifact and checker",
+      "method": "Rehearsal ran genuine growth and spectra on 12 configurations. The paired control distinguishes a two-knot start. A mismatch or missing stage is retained.",
+      "evidence_paths": [
+        "../../contract.json",
+        "../../../../../artifacts/WIDENING-ROSTERS-20261125-001C/WIDENING-ROSTERS-20261125-001C-E001_recount/analysis/comparison.json",
+        "../../../../../artifacts/WIDENING-ROSTERS-20261125-001C/WIDENING-ROSTERS-20261125-001C-E001_recount/producer/replay_comparison.json",
+        "../../../../../artifacts/WIDENING-ROSTERS-20261125-001C/WIDENING-ROSTERS-20261125-001C-E001_recount/referee/runtime.json",
+        "../../../../../artifacts/WIDENING-ROSTERS-20261125-001C/WIDENING-ROSTERS-20261125-001C-E001_recount/knot_test/summary.json"
+      ],
+      "required_action": "",
+      "contract_change_required": false
+    },
+    {
+      "id": "identifiability",
+      "category": "identifiability",
+      "status": "pass",
+      "severity": "high",
+      "claim_at_risk": "identifiability",
+      "method": "A matching size is insufficient. Retain unique pairs and per-member spectra. For the claimed roster use the separate uniform proof.",
+      "evidence_paths": [
+        "../../contract.json",
+        "../../../../../artifacts/WIDENING-ROSTERS-20261125-001C/WIDENING-ROSTERS-20261125-001C-E001_recount/analysis/comparison.json",
+        "../../../../../artifacts/WIDENING-ROSTERS-20261125-001C/WIDENING-ROSTERS-20261125-001C-E001_recount/producer/replay_comparison.json",
+        "../../../../../artifacts/WIDENING-ROSTERS-20261125-001C/WIDENING-ROSTERS-20261125-001C-E001_recount/referee/runtime.json",
+        "../../../../../artifacts/WIDENING-ROSTERS-20261125-001C/WIDENING-ROSTERS-20261125-001C-E001_recount/knot_test/summary.json"
+      ],
+      "required_action": "",
+      "contract_change_required": false
+    },
+    {
+      "id": "resource_fairness",
+      "category": "resource_fairness",
+      "status": "pass",
+      "severity": "high",
+      "claim_at_risk": "resource fairness",
+      "method": "Producer 12 actual configurations at four workers with 3 GiB/case, 14 GiB batch. Independent dry assay of each case under 5 GiB batch; authorize each program conditional on the frozen limits.",
+      "evidence_paths": [
+        "../../contract.json",
+        "../../../../../artifacts/WIDENING-ROSTERS-20261125-001C/WIDENING-ROSTERS-20261125-001C-E001_recount/analysis/comparison.json",
+        "../../../../../artifacts/WIDENING-ROSTERS-20261125-001C/WIDENING-ROSTERS-20261125-001C-E001_recount/producer/replay_comparison.json",
+        "../../../../../artifacts/WIDENING-ROSTERS-20261125-001C/WIDENING-ROSTERS-20261125-001C-E001_recount/referee/runtime.json",
+        "../../../../../artifacts/WIDENING-ROSTERS-20261125-001C/WIDENING-ROSTERS-20261125-001C-E001_recount/knot_test/summary.json"
+      ],
+      "required_action": "",
+      "contract_change_required": false
+    },
+    {
+      "id": "statistical_validity",
+      "category": "statistical_validity",
+      "status": "pass",
+      "severity": "high",
+      "claim_at_risk": "statistical validity",
+      "method": "Deterministic finite census, full roster enumeration without uncertainty estimates or extrapolation.",
+      "evidence_paths": [
+        "../../contract.json",
+        "../../../../../artifacts/WIDENING-ROSTERS-20261125-001C/WIDENING-ROSTERS-20261125-001C-E001_recount/analysis/comparison.json",
+        "../../../../../artifacts/WIDENING-ROSTERS-20261125-001C/WIDENING-ROSTERS-20261125-001C-E001_recount/producer/replay_comparison.json",
+        "../../../../../artifacts/WIDENING-ROSTERS-20261125-001C/WIDENING-ROSTERS-20261125-001C-E001_recount/referee/runtime.json",
+        "../../../../../artifacts/WIDENING-ROSTERS-20261125-001C/WIDENING-ROSTERS-20261125-001C-E001_recount/knot_test/summary.json"
+      ],
+      "required_action": "",
+      "contract_change_required": false
+    },
+    {
+      "id": "representation_robustness",
+      "category": "representation_robustness",
+      "status": "pass",
+      "severity": "high",
+      "claim_at_risk": "representation robustness",
+      "method": "Reach SHA sorts all member vectors without identifiers. Removing attachments from the explicit finite model changes the record.",
+      "evidence_paths": [
+        "../../contract.json",
+        "../../../../../artifacts/WIDENING-ROSTERS-20261125-001C/WIDENING-ROSTERS-20261125-001C-E001_recount/analysis/comparison.json",
+        "../../../../../artifacts/WIDENING-ROSTERS-20261125-001C/WIDENING-ROSTERS-20261125-001C-E001_recount/producer/replay_comparison.json",
+        "../../../../../artifacts/WIDENING-ROSTERS-20261125-001C/WIDENING-ROSTERS-20261125-001C-E001_recount/referee/runtime.json",
+        "../../../../../artifacts/WIDENING-ROSTERS-20261125-001C/WIDENING-ROSTERS-20261125-001C-E001_recount/knot_test/summary.json"
+      ],
+      "required_action": "",
+      "contract_change_required": false
+    },
+    {
+      "id": "causal_alternatives",
+      "category": "causal_alternatives",
+      "status": "pass",
+      "severity": "high",
+      "claim_at_risk": "causal alternatives",
+      "method": "Cap-three and four comparisons can retain the same member count while changing witnessed pairs. Include both treatments and both knot laws.",
+      "evidence_paths": [
+        "../../contract.json",
+        "../../../../../artifacts/WIDENING-ROSTERS-20261125-001C/WIDENING-ROSTERS-20261125-001C-E001_recount/analysis/comparison.json",
+        "../../../../../artifacts/WIDENING-ROSTERS-20261125-001C/WIDENING-ROSTERS-20261125-001C-E001_recount/producer/replay_comparison.json",
+        "../../../../../artifacts/WIDENING-ROSTERS-20261125-001C/WIDENING-ROSTERS-20261125-001C-E001_recount/referee/runtime.json",
+        "../../../../../artifacts/WIDENING-ROSTERS-20261125-001C/WIDENING-ROSTERS-20261125-001C-E001_recount/knot_test/summary.json"
+      ],
+      "required_action": "",
+      "contract_change_required": false
+    },
+    {
+      "id": "independent_replay",
+      "category": "independent_replay",
+      "status": "pass",
+      "severity": "high",
+      "claim_at_risk": "independent replay",
+      "method": "Two independent growth and count programs agree stage by stage, and the first replayed all exact configurations.",
+      "evidence_paths": [
+        "../../contract.json",
+        "../../../../../artifacts/WIDENING-ROSTERS-20261125-001C/WIDENING-ROSTERS-20261125-001C-E001_recount/analysis/comparison.json",
+        "../../../../../artifacts/WIDENING-ROSTERS-20261125-001C/WIDENING-ROSTERS-20261125-001C-E001_recount/producer/replay_comparison.json",
+        "../../../../../artifacts/WIDENING-ROSTERS-20261125-001C/WIDENING-ROSTERS-20261125-001C-E001_recount/referee/runtime.json",
+        "../../../../../artifacts/WIDENING-ROSTERS-20261125-001C/WIDENING-ROSTERS-20261125-001C-E001_recount/knot_test/summary.json"
+      ],
+      "required_action": "",
+      "contract_change_required": false
+    },
+    {
+      "id": "adversarial_mutation",
+      "category": "adversarial_mutation",
+      "status": "pass",
+      "severity": "high",
+      "claim_at_risk": "adversarial mutation",
+      "method": "Removing model attachments changes spectra. Two starting knots exhibit a real failure. Nine projection controls include stronger whole-stage restrictions.",
+      "evidence_paths": [
+        "../../contract.json",
+        "../../../../../artifacts/WIDENING-ROSTERS-20261125-001C/WIDENING-ROSTERS-20261125-001C-E001_recount/analysis/comparison.json",
+        "../../../../../artifacts/WIDENING-ROSTERS-20261125-001C/WIDENING-ROSTERS-20261125-001C-E001_recount/producer/replay_comparison.json",
+        "../../../../../artifacts/WIDENING-ROSTERS-20261125-001C/WIDENING-ROSTERS-20261125-001C-E001_recount/referee/runtime.json",
+        "../../../../../artifacts/WIDENING-ROSTERS-20261125-001C/WIDENING-ROSTERS-20261125-001C-E001_recount/knot_test/summary.json"
+      ],
+      "required_action": "",
+      "contract_change_required": false
+    },
+    {
+      "id": "claim_scope",
+      "category": "claim_scope",
+      "status": "pass",
+      "severity": "high",
+      "claim_at_risk": "claim scope",
+      "method": "Forty unreached later stages explicitly omitted. A width-15 adapter computes the full canonical verdicts; affordable-width receipts agree with the stock CLI.",
+      "evidence_paths": [
+        "../../contract.json",
+        "../../../../../artifacts/WIDENING-ROSTERS-20261125-001C/WIDENING-ROSTERS-20261125-001C-E001_recount/analysis/comparison.json",
+        "../../../../../artifacts/WIDENING-ROSTERS-20261125-001C/WIDENING-ROSTERS-20261125-001C-E001_recount/producer/replay_comparison.json",
+        "../../../../../artifacts/WIDENING-ROSTERS-20261125-001C/WIDENING-ROSTERS-20261125-001C-E001_recount/referee/runtime.json",
+        "../../../../../artifacts/WIDENING-ROSTERS-20261125-001C/WIDENING-ROSTERS-20261125-001C-E001_recount/knot_test/summary.json"
+      ],
+      "required_action": "",
+      "contract_change_required": false
+    }
+  ],
+  "verdict": "PASS",
+  "required_actions": [],
+  "nonclaims": [
+    "Finite spectra do not alone identify arbitrary graphs.",
+    "The independent recount shares the frozen scientific inputs and took place in the same task."
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "experiment_id": "WIDENING-ROSTERS-20261125-001F-E001",
+  "status": "frozen",
+  "evidence_stage": "confirmatory",
+  "question": "Can a taking rule using the history of a place, without ranking holder counts, reproduce the made-only first meetings of different descents?",
+  "basis": "The prior full positive cohort and the earlier two candidate rules informed this choice. Success on the same cases is a new intervention, not a new sample of starts. No growth under these five rules has been run before this freeze.",
+  "cases": "experiments/WIDENING-ROSTERS-20261125-001D/WIDENING-ROSTERS-20261125-001D-E001_links/cases.json",
+  "knot_laws": [
+    "nae",
+    "parity"
+  ],
+  "rules": {
+    "EVER": "Of the offered places, exactly one has ever been taken as an extra in a strictly earlier completed round.",
+    "LAST_USE": "Among offered places previously taken as extras, take the unique place with the latest round of such a take. If none are marked or the latest round ties, abstain.",
+    "NEWEST": "Take the sole candidate with the latest round of creation. Every distinction in the start has round zero. A tie abstains.",
+    "SOLE_MADE": "Take only if precisely one offered place was created after the start.",
+    "THREE": "Take only if precisely one offered place has exactly three holders before the round. This final comparator reads a fixed holder count and can choose a place with fewer holders than another."
+  },
+  "common": "Use the very same two-step eligibility and growth as the four preceding rules. All five take a sole eligible candidate regardless of marker; all abstain on an empty offer. Apply selection above only to plural offers. No name tie-breaking. Marks synchronous and updated on completed rounds only. No most-holder selection in any rule.",
+  "prediction": "At least one rule without any reading of holder multiplicities beyond the base shared-place eligibility makes a wholly made first meeting on a matched positive setting, with no start-held linking distinction. The fixed-three comparator is secondary. Report actual further-reaching takes and strict made-only meetings, and whether a two-step-only take serves that very meeting. Failure of the strict test still permits success on the shared offer or the observed weaker meeting.",
+  "population": "All 205 original positive start/ration/treatment configurations, their original sorted split rounds, both laws, 7 attempted rounds and the 1500-knot guard. Original interleaved order. Report paired comparable case-by-case results for the previous four selectors and in particular the rings; report exact archive-event matches if extractable.",
+  "stopping": "All five rules once under both laws and independent counts. Report matched first-meeting counts and at least one reproducing physical case if present. No open-ended search of parameter thresholds. If cost exceeds an hour per program, prerecord and use the leading interleaved prefix. No failure inferred beyond completed stages.",
+  "second_program": "Implement selection and recompute first meetings with the independent referee engine and compare separately with the producer. Common immutable ordinary-growth base is disclosed. No literal tables are needed for a claim about which physical meetings occur.",
+  "inputs": {
+    "experiments/WIDENING-ROSTERS-20261125-001D/WIDENING-ROSTERS-20261125-001D-E001_links/contract.json": "6e133cde21ee3dd369cc96c6dfe93bf01d7c385d7d9ccde43d011b8c22136bdf",
+    "experiments/WIDENING-ROSTERS-20261125-001D/WIDENING-ROSTERS-20261125-001D-E001_links/cases.json": "a3d17ce289ab6b10f029a094dc745b866242db43689ab6f494fe5e3764c4b163",
+    "experiments/WIDENING-ROSTERS-20261125-001D/WIDENING-ROSTERS-20261125-001D-E001_links/producer/job.py": "ad61c70ba6e4b8e0bc80b8b20b1061ea59d21afe85c82204677b28a861bbb215",
+    "research/WIDENING-ROSTERS-20261125-001D/alternative_rule.md": "49fb6c550d9d7dded270c3458507d20efb391eb9c696c1ec6fd1b9ad6d62a3a4"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "schema_version": 3,
+  "proof_id": "WIDENING-ROSTERS-20261125-001B-P001",
+  "ticket": "WIDENING-ROSTERS-20261125-001B",
+  "status": "Proved",
+  "standard_statement": "Identify the two fixed-rank graphs of a growth rule on specified finite incidence systems and count the elements reachable in a bounded number of steps.",
+  "nearest_known_result": "FIRST-KNOT-20261118-001A Proposition 4 and FRESH-COUNT-20261118-001A Theorem 4. Classical unrestricted type A counts are background (Baake and Grimm 1997).",
+  "novelty": "candidate-local-delta",
+  "delta": "The older proofs of independent chains do not identify these starts or the finite-size range of the two polynomials.",
+  "dependencies": [
+    "FIRST-KNOT-20261118-001A",
+    "FRESH-COUNT-20261118-001A",
+    "KNOTS-WITHIN-REACH-20261125-001Z"
+  ],
+  "proof": "WIDENING-ROSTERS-20261125-001B-P001",
+  "decision_rule": "Prove directly from the stated law. Keep exact hypotheses, initial and saturation cases. A failed generalization gives its first witness or remains an open obligation.",
+  "artifact_id": "WIDENING-ROSTERS-20261125-001B-P001",
+  "canonical_id": "WIDENING-ROSTERS-20261125-001B-P001",
+  "kind": "proof",
+  "claim": "Three unbounded entries plus two or four once-only entries give both denser counts and their exact finite cutoffs; the cap splits all ten starts in round two.",
+  "source_contribution": 0,
+  "remaining_obligations": [],
+  "evidence_bindings": {
+    "proofs/WIDENING-ROSTERS-20261125-001B/WIDENING-ROSTERS-20261125-001B-P001_dense_rosters/proof.md": "91795399b911880cb5ccecd8daeb42a86f035d39ad6a9bf525d5ca53082a2e2d"
+  },
+  "paths": {
+    "manifest": "proofs/WIDENING-ROSTERS-20261125-001B/WIDENING-ROSTERS-20261125-001B-P001_dense_rosters/manifest.json",
+    "proof": "proofs/WIDENING-ROSTERS-20261125-001B/WIDENING-ROSTERS-20261125-001B-P001_dense_rosters/proof.md",
+    "result": "proofs/WIDENING-ROSTERS-20261125-001B/WIDENING-ROSTERS-20261125-001B-P001_dense_rosters/result.json"
+  },
+  "validation": {
+    "level": "V2",
+    "independence": "Separate same-task mathematical reviewer, two independent growth/count implementations, explicit third finite model. No external referee.",
+    "novelty": "candidate-local-delta",
+    "authority": "symbolic, uniform at fixed input assumptions"
+  }
+}

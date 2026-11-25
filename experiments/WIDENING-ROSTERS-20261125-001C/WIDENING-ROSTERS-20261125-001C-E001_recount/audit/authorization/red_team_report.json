@@ -1,0 +1,187 @@
+{
+  "schema_version": 1,
+  "experiment_id": "WIDENING-ROSTERS-20261125-001C-E001",
+  "gate": "run_authorization",
+  "tier": "R1",
+  "reviewer_independence": "same_task",
+  "attack_plan_frozen_before_results": true,
+  "input_digests": [
+    {
+      "path": "../../contract.json",
+      "sha256": "cc721c680d57966e32b0e14e30f694c5320cef3c54f32481aa3c834956d3d255"
+    },
+    {
+      "path": "../../cases.json",
+      "sha256": "6591e0dd656a11da646d95e6be650da08ee979b541225ab85304b63ab6c2496d"
+    },
+    {
+      "path": "../../analysis/finite_model.py",
+      "sha256": "5fa64fa0b54c036a5fc33a995632172cc46aac59ff5675109b1c2dbe678820e3"
+    },
+    {
+      "path": "../../analysis/boundary_control.py",
+      "sha256": "034eeb49240f341cd615118cd58f8c3df7289073a3e4de4a02385de48d51e46b"
+    },
+    {
+      "path": "../../producer/job.py",
+      "sha256": "c94ba2a5eb8a42b68e43f8a7eb629d176e41e45d38fd1b3aec2a8b18115533dc"
+    },
+    {
+      "path": "../../producer/count_reach.cpp",
+      "sha256": "36881dd95fed600de13bc51ae402ce8c873cbeaf728291d58dfd9a3212e14eff"
+    },
+    {
+      "path": "../../referee/recount.py",
+      "sha256": "b802aa6dcd7a62fcf2ad58b3a75ee3bf3c13e2cd83cb95500d1757771897a488"
+    },
+    {
+      "path": "../../referee/reach.cpp",
+      "sha256": "3c1112e10afde7816633170c0d8128fb0ada58bfcd37878449e09063dbc0a30f"
+    },
+    {
+      "path": "../../../../../artifacts/WIDENING-ROSTERS-20261125-001C/WIDENING-ROSTERS-20261125-001C-E001_recount/analysis/boundary_control.json",
+      "sha256": "0e556510f168e0e2dc57417225afd0f2f5654a815726a32ea28f51eeba57e659"
+    },
+    {
+      "path": "../../../../../artifacts/WIDENING-ROSTERS-20261125-001C/WIDENING-ROSTERS-20261125-001C-E001_recount/producer/rehearsal.json",
+      "sha256": "6b67e653a59ba3b07b3f7959e861579cda70ee96bcca01b27a484a1d60999b50"
+    }
+  ],
+  "attacks": [
+    {
+      "id": "scope_and_authority",
+      "category": "scope_and_authority",
+      "status": "pass",
+      "severity": "high",
+      "claim_at_risk": "scope and authority",
+      "method": "Evaluate only the registered finite panel. Proof is filed separately.",
+      "evidence_paths": [
+        "../../contract.json"
+      ],
+      "required_action": "",
+      "contract_change_required": false
+    },
+    {
+      "id": "information_leakage",
+      "category": "information_leakage",
+      "status": "pass",
+      "severity": "high",
+      "claim_at_risk": "information leakage",
+      "method": "The second counter uses distinct growth, witness construction and BFS; input catalog and law identities are public.",
+      "evidence_paths": [
+        "../../contract.json"
+      ],
+      "required_action": "",
+      "contract_change_required": false
+    },
+    {
+      "id": "split_integrity",
+      "category": "split_integrity",
+      "status": "pass",
+      "severity": "high",
+      "claim_at_risk": "split integrity",
+      "method": "The twelve inputs at positions 1001\u20131012 were selected before timing. Case order digest is fixed.",
+      "evidence_paths": [
+        "../../contract.json"
+      ],
+      "required_action": "",
+      "contract_change_required": false
+    },
+    {
+      "id": "comparator_fairness",
+      "category": "comparator_fairness",
+      "status": "pass",
+      "severity": "high",
+      "claim_at_risk": "comparator fairness",
+      "method": "Both counters enumerate from all members, both actual knot laws, signed round and guard conventions.",
+      "evidence_paths": [
+        "../../contract.json"
+      ],
+      "required_action": "",
+      "contract_change_required": false
+    },
+    {
+      "id": "artifact_and_checker",
+      "category": "artifact_and_checker",
+      "status": "pass",
+      "severity": "high",
+      "claim_at_risk": "artifact and checker",
+      "method": "Rehearsal ran genuine growth and spectra on 12 configurations. The paired control distinguishes a two-knot start. A mismatch or missing stage is retained.",
+      "evidence_paths": [
+        "../../contract.json"
+      ],
+      "required_action": "",
+      "contract_change_required": false
+    },
+    {
+      "id": "identifiability",
+      "category": "identifiability",
+      "status": "pass",
+      "severity": "high",
+      "claim_at_risk": "identifiability",
+      "method": "A matching size is insufficient. Retain unique pairs and per-member spectra. For the claimed roster use the separate uniform proof.",
+      "evidence_paths": [
+        "../../contract.json"
+      ],
+      "required_action": "",
+      "contract_change_required": false
+    },
+    {
+      "id": "resource_fairness",
+      "category": "resource_fairness",
+      "status": "pass",
+      "severity": "high",
+      "claim_at_risk": "resource fairness",
+      "method": "Producer 12 actual configurations at four workers with 3 GiB/case, 14 GiB batch. Independent dry assay of each case under 5 GiB batch; authorize each program conditional on the frozen limits.",
+      "evidence_paths": [
+        "../../contract.json"
+      ],
+      "required_action": "",
+      "contract_change_required": false
+    },
+    {
+      "id": "statistical_validity",
+      "category": "statistical_validity",
+      "status": "pass",
+      "severity": "high",
+      "claim_at_risk": "statistical validity",
+      "method": "Deterministic finite census, full roster enumeration without uncertainty estimates or extrapolation.",
+      "evidence_paths": [
+        "../../contract.json"
+      ],
+      "required_action": "",
+      "contract_change_required": false
+    },
+    {
+      "id": "representation_robustness",
+      "category": "representation_robustness",
+      "status": "pass",
+      "severity": "high",
+      "claim_at_risk": "representation robustness",
+      "method": "Reach SHA sorts all member vectors without identifiers. Removing attachments from the explicit finite model changes the record.",
+      "evidence_paths": [
+        "../../contract.json"
+      ],
+      "required_action": "",
+      "contract_change_required": false
+    },
+    {
+      "id": "causal_alternatives",
+      "category": "causal_alternatives",
+      "status": "pass",
+      "severity": "high",
+      "claim_at_risk": "causal alternatives",
+      "method": "Cap-three and four comparisons can retain the same member count while changing witnessed pairs. Include both treatments and both knot laws.",
+      "evidence_paths": [
+        "../../contract.json"
+      ],
+      "required_action": "",
+      "contract_change_required": false
+    }
+  ],
+  "verdict": "PASS",
+  "required_actions": [],
+  "nonclaims": [
+    "Producer release is bound to its final timed software; independent execution and knot audit each additionally require their timed authorization."
+  ]
+}

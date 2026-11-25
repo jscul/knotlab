@@ -1,0 +1,3 @@
+# Boundary controls registered before reading either program
+
+At round zero all initially usable knots are still present. The round-one prediction has its stated domain m ≥ 3. To test the unrestricted wording, run the two independent growth laws on two three-place knots holding one common distinction and two loose distinctions each. In the first round the start has no third knot to witness a pair, so the written rule predicts four offshoots. The proposed zero sum with two extra members would have three members. Use not-all-equal and parity as separate controls. One knot of two places is outside the definition of a starting knot in this study. These controls do not enter the registered panel or change its order.

@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**403 current results** and 5 superseded ones, from 638 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**408 current results** and 5 superseded ones, from 639 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -24,14 +24,14 @@ How to read an entry:
 - [Composing like cycles: the algebra of knots](#composing-like-cycles-the-algebra-of-knots): 14 results
 - [Native complexity: hubs, counting and approximation](#native-complexity-hubs-counting-and-approximation): 56 results
 - [Three-fold spaces and counting on them](#three-fold-spaces-and-counting-on-them): 32 results
-- [Native creation, genus and selection](#native-creation-genus-and-selection): 118 results
+- [Native creation, genus and selection](#native-creation-genus-and-selection): 123 results
 - [Space from a law: moves, signs, gaskets, rulers and circles](#space-from-a-law-moves-signs-gaskets-rulers-and-circles): 38 results
 - [Tori, twists and direction](#tori-twists-and-direction): 14 results
 - [Counting maps from three-manifold groups](#counting-maps-from-three-manifold-groups): 31 results
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 26 results
 - [Notes](#notes): 6 self-contained notes
-- [Epics](#epics): all 638 epics with their closures
+- [Epics](#epics): all 639 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -957,6 +957,21 @@ What a removal creates in the knot's spaces, how far it reaches, and how selecti
 - **2026-11-23 · A visible old mark turns a CHSH excess from common funding into a usable message** (`LOCAL-EDIT-POLICIES-20261123-001-D001`).
   For local outputs that equal an old marked bit on a common gain and zero on every stall, a positive CHSH excess guarantees an ordinary bit-dependent message in either direction when fixed-address funding marginals agree. At a suitable receiver address the resulting total variation is at least the excess above two, even when neither observer can infer which edit repairs its shortage.
   [proof P001](proofs/LOCAL-EDIT-POLICIES-20261123-001A/LOCAL-EDIT-POLICIES-20261123-001A-P001_policy_test/proof.md), [epic closure](proofs/LOCAL-EDIT-POLICIES-20261123-001Z/LOCAL-EDIT-POLICIES-20261123-001Z-P001_synthesis/proof.md)
+- **2026-11-25 · The first join explains the four widening families** (`WIDENING-ROSTERS-20261125-001-CENSUS-FAMILIES`).
+  The offshoot counts at a single first join identify unbounded terms and once-only terms and explain the four observed widening families. A cap of three breaks the four-unbounded-term family into bounded parts.
+  [proof P001](proofs/WIDENING-ROSTERS-20261125-001B/WIDENING-ROSTERS-20261125-001B-P001_dense_rosters/proof.md), [epic closure](proofs/WIDENING-ROSTERS-20261125-001Z/WIDENING-ROSTERS-20261125-001Z-P001_synthesis/proof.md)
+- **2026-11-25 · The wholly made first meetings used two places of a common ancestor** (`WIDENING-ROSTERS-20261125-001-COMMON-ANCESTOR`).
+  In all 1,250 first meetings per knot law without a start-held linking distinction, one made knot was an ancestor of both endpoints and their witnessed arms used two distinct places. Those arms supply no single contact.
+  [experiment E001](experiments/WIDENING-ROSTERS-20261125-001D/WIDENING-ROSTERS-20261125-001D-E001_links/result.md), [epic closure](proofs/WIDENING-ROSTERS-20261125-001Z/WIDENING-ROSTERS-20261125-001Z-P001_synthesis/proof.md)
+- **2026-11-25 · A lasting take mark reproduces the wholly made meetings** (`WIDENING-ROSTERS-20261125-001-LASTING-MARK`).
+  On all 125 settings with a wholly made first meeting under the most-held rule, choosing the sole previously taken distinction on a plural offer reproduced the same strict first meetings under both knot laws.
+  [experiment E001](experiments/WIDENING-ROSTERS-20261125-001F/WIDENING-ROSTERS-20261125-001F-E001_taking_history/result.md), [epic closure](proofs/WIDENING-ROSTERS-20261125-001Z/WIDENING-ROSTERS-20261125-001Z-P001_synthesis/proof.md)
+- **2026-11-25 · All single-place links factor on both complete holder records** (`WIDENING-ROSTERS-20261125-001-TWO-SIDED-HUBS`).
+  In the registered most-held cohort, every physical shared-place first-meeting relation on the two complete exclusive holder records was a proper common hub. Every separate binary reading of those records still factors conditional on the shared distinction.
+  [experiment E001](experiments/WIDENING-ROSTERS-20261125-001E/WIDENING-ROSTERS-20261125-001E-E001_all_private_records/result.md), [epic closure](proofs/WIDENING-ROSTERS-20261125-001Z/WIDENING-ROSTERS-20261125-001Z-P001_synthesis/proof.md)
+- **2026-11-25 · Every witnessed step at a fixed round** (`WIDENING-ROSTERS-20261125-001-UNIT-TRANSFERS`).
+  At each round of the mutually sharing start with at least three knots, the single-round roster consists of ordered sums with one extra member for each starting knot. A witnessed step transfers one unit between terms or reaches one of the extra members.
+  [proof P001](proofs/WIDENING-ROSTERS-20261125-001A/WIDENING-ROSTERS-20261125-001A-P001_unit_transfers/proof.md), [epic closure](proofs/WIDENING-ROSTERS-20261125-001Z/WIDENING-ROSTERS-20261125-001Z-P001_synthesis/proof.md)
 
 ## Space from a law: moves, signs, gaskets, rulers and circles
 
@@ -1990,4 +2005,5 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-25 | Time as a fold: a made pattern that counts another pattern's returns (`TIME-AS-FOLD-20261125-001`) | [closure](proofs/TIME-AS-FOLD-20261125-001Z/TIME-AS-FOLD-20261125-001Z-P001_synthesis/proof.md) | [folder](research/TIME-AS-FOLD-20261125-001/) |
 | 2026-11-25 | Which weighting "it's random" means: both countings side by side, and whether a growth law fixes one (`TWO-COUNTINGS-20261125-001`) | [closure](proofs/TWO-COUNTINGS-20261125-001Z/TWO-COUNTINGS-20261125-001Z-P001_synthesis/proof.md) | [folder](research/TWO-COUNTINGS-20261125-001/) |
 | 2026-11-25 | What a birth must carry for a made pattern to read what it meets (`WHAT-A-BIRTH-CARRIES-20261125-001`) | [closure](proofs/WHAT-A-BIRTH-CARRIES-20261125-001Z/WHAT-A-BIRTH-CARRIES-20261125-001Z-P001_synthesis/proof.md) | [folder](research/WHAT-A-BIRTH-CARRIES-20261125-001/) |
+| 2026-11-25 | The rosters that widen (`WIDENING-ROSTERS-20261125-001`) | [closure](proofs/WIDENING-ROSTERS-20261125-001Z/WIDENING-ROSTERS-20261125-001Z-P001_synthesis/proof.md) | [folder](research/WIDENING-ROSTERS-20261125-001/) |
 

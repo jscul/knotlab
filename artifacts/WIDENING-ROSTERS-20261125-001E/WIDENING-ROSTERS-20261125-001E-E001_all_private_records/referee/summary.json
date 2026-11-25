@@ -1,0 +1,130 @@
+{
+  "requests": 52494,
+  "checked": 52494,
+  "failures": [],
+  "by_law": {
+    "nae": {
+      "111": {
+        "unique": 26247,
+        "occurrences": 264016
+      }
+    },
+    "parity": {
+      "111": {
+        "unique": 26247,
+        "occurrences": 264016
+      }
+    }
+  },
+  "by_method": {
+    "two_holder_reverse_extension": 26247,
+    "hidden_column_elimination": 26247
+  },
+  "first_examples": {
+    "nae/111": {
+      "law": "nae",
+      "system": "00e0e6265bfe22de39ca9275af072e69957df0fe8cef30f4ad1911cef43af321",
+      "u": 17,
+      "v": 28,
+      "c": 1,
+      "count": 1,
+      "width": 6,
+      "outcome": "111",
+      "product": true,
+      "proper_a": true,
+      "proper_b": true,
+      "coherent": true,
+      "c_open": true,
+      "method": "two_holder_reverse_extension",
+      "core_rows": 2,
+      "a_width": 2,
+      "b_width": 3,
+      "extra_shared_width": 0,
+      "example": [
+        "five-34",
+        2,
+        3,
+        [
+          17,
+          18
+        ],
+        [
+          21,
+          22
+        ],
+        "take",
+        17,
+        17,
+        28,
+        1
+      ]
+    },
+    "parity/111": {
+      "law": "parity",
+      "system": "00e0e6265bfe22de39ca9275af072e69957df0fe8cef30f4ad1911cef43af321",
+      "u": 17,
+      "v": 28,
+      "c": 1,
+      "count": 1,
+      "width": 6,
+      "outcome": "111",
+      "product": true,
+      "proper_a": true,
+      "proper_b": true,
+      "coherent": true,
+      "c_open": true,
+      "method": "hidden_column_elimination",
+      "core_rows": 2,
+      "a_width": 2,
+      "b_width": 3,
+      "extra_shared_width": 0,
+      "dimensions": {
+        "a": 2,
+        "b": 3,
+        "c": 1,
+        "ac": 2,
+        "bc": 3,
+        "abc": 4
+      },
+      "example": [
+        "five-34",
+        2,
+        3,
+        [
+          17,
+          18
+        ],
+        [
+          21,
+          22
+        ],
+        "take",
+        17,
+        17,
+        28,
+        1
+      ]
+    }
+  },
+  "raw_records_sha256": "afd7566b8fc3081b47635db436e34e1f725e742c258297e2c43ab62ba2c47950",
+  "compressed_records_sha256": "027d1a7f463a882c349d2c2424a7747ef428723570e068cbb50a99aea1572425",
+  "runtime": {
+    "wall_seconds": 4.522,
+    "peak_runner_rss_mib": 162.783203125,
+    "status": {
+      "ok": 232,
+      "error": 0,
+      "timeout": 0,
+      "memory": 0,
+      "crashed": 0
+    },
+    "settings": {
+      "workers": 4,
+      "cpu_quota": "400%",
+      "mem_max": "5G",
+      "case_timeout": 60.0,
+      "case_mem": "1G",
+      "job_sha": "2d52287332330c2f81bd34b51978444676deb897806ad953a7414372bbdcd6fa"
+    }
+  }
+}

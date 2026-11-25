@@ -4731,7 +4731,6 @@ lacks at least one property, and the record says what was supplied in each.
   copies never meet again", and "Nothing reads the count of copies; the one
   who runs the growth counts them"
   ([the study](research/COPYING-PARTS-20261123-001/decision.md)).
-
 - **The stored bit, the receiver and the learning line (written by hand).** In
   none is the rule for acting on what is taken made by the growth (lesson
   8.7); where the pattern itself is made, as a receiver is, what counts as its
@@ -4789,9 +4788,7 @@ through a third part. "Meet again" is the owner's phrase.
   Removing Y with its fresh distinctions is the registered alternative,
   defined only where it leaves a well-formed structure. Of the 302 pairs of
   lesson 10.3 it was defined for 182, and gave the same result for every one
-
   ([the study's decision](research/PARTS-MEET-AGAIN-20261124-001/decision.md)).
-
 - The comparison is of X's course, round by round: each birth whose parents
   all lie in X or its descendants, with its parents, what it takes and the
   number of its fresh distinctions, and which sets of their members one knot

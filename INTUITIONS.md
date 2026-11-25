@@ -4872,11 +4872,13 @@ what its parents hold, and whatever a parent holds is already met by
 everything the parent meets; so such a birth can rejoin only what is still
 joined. No run contradicts it: no two parts that share nothing, even through a
 third part, were one part again in 504 runs, in about 1,600 pairs got by
-switching the rule on after the copies are made, or in 3.57 million histories
-so far: in 326 parts of one enumeration every possibility for which
+switching the rule on after the copies are made, or in 3.57 million
+histories: in 326 parts of one enumeration every possibility for which
 distinction each birth takes, and in each of 32 others 100,000 histories taken
-at random under a fixed seed, with two parts still running. Rules R and Q also undo the ring that returns and the part that
-copies itself (lesson 9.6).
+at random under a fixed seed. The enumeration's last two parts were stopped
+unfinished at the owner's word, after 59,000 and 2,000 of their 100,000
+histories, with nothing against the argument in either. Rules R and Q also
+undo the ring that returns and the part that copies itself (lesson 9.6).
 
 **Taking what no parent holds (computed under added rules, referee pending).**
 Here a birth also takes such a distinction (assumption A245, a scaffold): one
@@ -5073,8 +5075,8 @@ made a pattern of its own from what it met.
   and every computed result of lesson 10.3, await their referee. That study
   froze 19 predictions: 16 hold, two fail in one clause each, both in
   controls, and one turns on a reading. It ran six starts for eight rounds,
-  about 1,500 knots a run, under laws set by hand, and two parts of one
-  registered enumeration were still running on 25 November 2026.
+  about 1,500 knots a run, under laws set by hand, and one registered
+  enumeration was left unfinished at 358 of its 360 parts.
 
 **What would answer it (reading).** By the register's own test, a first
 instance would be "one growth in which a made pattern takes one course or

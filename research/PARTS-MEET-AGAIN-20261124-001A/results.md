@@ -206,3 +206,25 @@ the other 32. In none are two parts that share nothing one part again, and in no
 The last two parts are still running and are expected to need about forty hours; this note will be followed by one
 more when they end. The counts above replace "285 of 360" and "1.94 million" in the verdict on P1, in "One registered
 run is not finished" and in the correction of the same day.
+
+## Update of 25 November 2026: the last two parts stopped, the enumeration left unfinished at 358 of 360
+
+The last two parts of the registered enumeration were stopped on 25 November 2026 at the owner's word, and the run is
+recorded as unfinished at 358 of its 360 parts. Both parts are on Ring(5, 3) under COPY-LAW(OFFSHOOT) with rule Q on
+from round 1 and the swap ONE-FEWER, one under each knot law. Each was to take 100,000 histories at random under the
+fixed seed. When they were stopped, after about eight hours, they stood as follows.
+
+| Knot law | Histories taken, of 100,000 | Pairs of parts that share nothing | Of these, one part again | Births with a parent in each | Knot verdicts |
+| --- | --- | --- | --- | --- | --- |
+| Parity | 59,000 | 8,274 | 0 | 0 | 11,960,662 |
+| Not-all-equal | 2,000 | 258 | 0 | 0 | 404,051 |
+
+Nothing in either is against the argument, as far as each went. These partial counts are not among the 358 parts or
+the 3,571,746 histories of the note above. They are the last progress lines of `run2_long_progress.jsonl`, and
+`summary.md` quotes them under "Not finished when this summary was written".
+
+At the rates seen, the parity part needed about six more hours and the not-all-equal part about sixteen days. The
+note above gave "about forty hours" for both, which was wrong for each.
+
+The argument of the pre-registration ("Settled by construction") covers these two parts as it covers the others; what
+is missing is its check on them. The verdict on P1 stands as "holds" on 358 parts, with these two unfinished.

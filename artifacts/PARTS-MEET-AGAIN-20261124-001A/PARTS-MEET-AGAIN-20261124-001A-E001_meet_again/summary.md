@@ -545,7 +545,7 @@ Engine written from the frozen texts by a helper that did not see the drafter's 
 
 Not finished when this summary was written: ["COPY-LAW(OFFSHOOT)|Ring(5,3)|Q|r1|ONE-FEWER|nae", "COPY-LAW(OFFSHOOT)|Ring(5,3)|Q|r1|ONE-FEWER|parity"]
 
-Their progress (last progress line): {}
+Their progress (last progress line): {"COPY-LAW(OFFSHOOT)|Ring(5,3)|Q|r1|ONE-FEWER|nae": {"histories_so_far": 2000, "joint_births_so_far": 0, "knot_fails_so_far": 0, "mode": "drawn", "one_part_again_so_far": 0, "pairs_wholly_apart_so_far": 258, "seconds": 27908.0}, "COPY-LAW(OFFSHOOT)|Ring(5,3)|Q|r1|ONE-FEWER|parity": {"histories_so_far": 59000, "joint_births_so_far": 0, "knot_fails_so_far": 0, "mode": "drawn", "one_part_again_so_far": 0, "pairs_wholly_apart_so_far": 8274, "seconds": 28986.5}}
 
 ## Stops
 

@@ -29,3 +29,7 @@ Things a referee should know.
 **Update of 25 November 2026.** The unfinished enumeration has done 358 of its 360 parts (3,571,746 histories: every
 possibility in 326 parts, 100,000 taken at random in each of 32). Nothing against the argument; two parts still running.
 
+**Second update of 25 November 2026.** The last two parts were stopped at the owner's word, and the enumeration is
+left unfinished at 358 of 360. Both are on Ring(5, 3) with the swap ONE-FEWER: 59,000 of 100,000 histories had been
+taken under parity and 2,000 of 100,000 under not-all-equal, with nothing against the argument in either. Read P1 as
+checked on 358 parts.

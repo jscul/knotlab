@@ -123,3 +123,11 @@ The enumeration that was unfinished at the close has done 358 of its 360 parts: 
 tried in 326 parts and 100,000 histories taken at random in each of the other 32 (the earlier wording, "every choice
 tried", was corrected the same day). Nothing against the argument. The last two parts are still running.
 
+## Update of 25 November 2026: the enumeration is left unfinished at 358 of 360
+
+The owner had the last two parts stopped on 25 November 2026 ("You can probably stop the last two enumeration
+parts"). Both are on Ring(5, 3) with the swap ONE-FEWER, and each was to take 100,000 histories at random. Under
+parity 59,000 had been taken and under not-all-equal 2,000, after about eight hours, with nothing against the
+argument in either. At those rates the first needed about six more hours and the second about sixteen days, not the
+"forty hours or more" given above. The run is recorded as unfinished; the partial counts are in the
+[results](../PARTS-MEET-AGAIN-20261124-001A/results.md) note of the same date.

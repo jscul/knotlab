@@ -3373,8 +3373,18 @@ r steps is 1, 13, 55, 147, 309, 561, 923, 1415, which is
 packing: it grows as the cube of r, at one round, on a range that lengthens
 with the rounds (through 7 steps after 30 rounds). Under a cap of three those
 parts break into pieces whose count is 2r + 1. The other ten starts hold one
-part whose count is an exact quadratic. No argument for any of this is
-written yet, and the ranges are finite
+part whose count is an exact quadratic. The record already had the main fact
+by another count: m knots of m + 1 places, each sharing a distinction with
+every other, grow m-dimensionally when the knots made up to a round are
+counted (proved,
+[FIRST-KNOT-20261118-001](research/FIRST-KNOT-20261118-001/first_knot.md)).
+What the probe adds is the count at one round, one degree less, with an exact
+description: after round t the live knots match the ordered ways of writing
+t − 1 as a sum of m whole numbers, one step moving one unit from one term to
+another (confirmed exactly on the 25 stages tried). So the cube is the case of
+four such knots, five give the fourth power, and the number is the start's
+arrangement, not the law's own. The ranges read are finite, and the ten
+starts with denser parts have no argument
 ([the probe](research/KNOTS-WITHIN-REACH-20261125-001/checks/roster_probe/README.md)).
 Read over every knot ever made, the
 count grows as the square of r from every knot examined in 54 runs at the

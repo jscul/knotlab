@@ -6,7 +6,23 @@ one. **This is a probe by the thread, not a frozen study**: nothing was register
 was seen before it was written down. It uses the study's engine unchanged, and its headline stages were grown again
 with a second engine.
 [The probe](probe.py) · [its driver](drive.py) · [the runs](probe_runs.jsonl.gz) · [the second engine](second_engine.py) ·
-[the starts](fast_starts.json)
+[the starts](fast_starts.json) · [the matching and the larger starts](model_check.py) · [their output](model_check.json)
+
+## What the record already had (searched after the probe)
+
+The main fact was already in the record, by another count. The study of the first knot
+([FIRST-KNOT-20261118-001](../../../FIRST-KNOT-20261118-001/first_knot.md), 18 November 2026; its Proposition 4, proved,
+computed for m = 3, 4, 5) shows that m knots of m + 1 places, each sharing one distinction with every other, grow
+m-dimensionally under the fewest counts, where its "dimension" counts the knots made up to round t. It rests on the
+study of the fresh count ([FRESH-COUNT-20261118-001](../../../FRESH-COUNT-20261118-001/fresh_count.md): the growth is
+the pattern of down-closed sets of its chains of offshoots, proved). The start of three knots in the first row below
+is its case m = 3, and the plainest start of the second row is its case m = 4.
+
+**What this probe adds** is the count at one round, which those studies did not read: what exists after round t has
+one degree less than their count by round, with exact counts and an exact description (below); which laws keep it;
+and which of the census starts do it, among them starts that are not of that form and two denser kinds the
+proposition does not cover. It adds no new dimension: the degree at one round is the start's arrangement, m − 1 for
+m mutually sharing knots, and can be any number.
 
 ## What was read
 
@@ -47,6 +63,22 @@ So, with dimension taken as the program defines it, the growth rate of the count
 round has dimension 2 on 19 of these starts and dimension 3 on 4, under the ordinary count with nothing added, on
 the ranges read. The count over the whole history has one degree more, which is the rounds.
 
+## The matching, and larger starts
+
+- **An exact description of the first two rows.** After round t, the members and their one-step relation are the same,
+  up to renaming, as this: the ordered ways of writing t − 1 as a sum of m non-negative whole numbers, two of them a
+  step apart when one unit moves from one term to another, with one further member attached to each of the m sums
+  that have a single non-zero term (m = 3 in the first row, 4 in the second). An exact isomorphism search confirms it
+  on all 25 stages tried: the mutually sharing starts for m = 3 (rounds 4, 8, 12, 16), m = 4 (4, 6, 8, 10) and m = 5
+  (4, 6, 8), and seven census starts of the two rows after rounds 6 and 9. With the earlier proposition this gives an
+  argument to write: the knots made in a round are the down-closed sets of one size in m chains, which are those
+  sums; the m further members are the chains' newest offshoots; and two members share a knot exactly when one unit
+  moves. It is not written as a proof here.
+- **Larger starts go on the same way.** Five knots of six places, each sharing with the other four: C(t + 3, 4) + 5
+  members after round t, twenty within one step, and the count 1, 21, 131, 471 through 3 steps after 16 rounds. Six
+  knots of seven places: thirty within one step. So the degree at one round is m − 1, with m(m − 1) members within a
+  step.
+
 ## How it was checked
 
 - **A second growth engine.** Six stages (census 19 after rounds 10 and 20; 177 after 10 and 15; 218 after 10; 178
@@ -64,12 +96,11 @@ the ranges read. The count over the whole history has one degree more, which is 
   by looking at the counts.
 - **Finite ranges.** An exact match through 7 or 13 steps on a part of a few thousand members is a count. It is not a
   proof that the part is a piece of an unbounded pattern, and no limit is taken.
-- **No argument yet.** Why these starts and not others, and why these counts, is not argued here. The counts suggest
-  one: the members after round t correspond to the ways of writing t as a sum of three (or four) non-negative
-  whole numbers in order, two members being a step apart when one unit moves from one term to another. That is a
-  guess read off C(t + 2, 2) and C(t + 2, 3), not a result.
-- **Prior work not searched.** The record's studies of growth by round (lesson 8.2 of the guide: growth of a fixed
-  dimension, and groups of three read as filled cells) may already describe these structures in other terms. What
-  is read here, the count within reach at one round, is what the reach study's survey found unmeasured.
+- **The argument is sketched, not written.** For the first two rows it follows the earlier proposition, and the
+  matching above is exact on every stage tried. The third and fourth rows, and the census starts of the first two
+  rows that are not mutually sharing knots, have no argument: why those starts, and what their denser parts are, is
+  open.
+- **Three is not singled out.** The second row's cube is the case m = 4 of a family; m = 5 gives the fourth power.
+  The earlier study already concluded that the number is the start's arrangement and not the law's own.
 - **Nothing is named by space.** The literature's name is given once to make the count findable. No claim is made
   about physical space.

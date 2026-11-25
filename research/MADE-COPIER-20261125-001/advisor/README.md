@@ -12,7 +12,16 @@ Three passes, all by the advisor model (Claude Fable 5.2, no tools), on the even
 - `question3.md` is the third question, with the third drafts. `answer3.json` is its reply: "freeze", with
   sentence-level fixes. `changes_after_third_pass.md` is the drafter's account of applying them.
 
-The frozen pre-registration ends with a summary of what each pass changed.
+The frozen pre-registration of ticket A ends with a summary of what each pass changed.
+
+For ticket B (the owner's second addition, "consume and output 2"), two more passes the same night:
+
+- `question_b.md` and `answer_b.json`: the cold review of the first drafts ("freeze after listed changes").
+  `changes_b_after_first_pass.md` is the drafter's account of what it then changed.
+- `question_b2.md` and `answer_b2.json`: the last pass ("freeze", with sentence-level fixes).
+  `changes_b_after_second_pass.md` is the drafter's account of applying them.
+
+Ticket B's frozen pre-registration ends with its own summary.
 
 Links inside the questions and accounts point into the workspace or name the drafter's scratch files, and may not
 resolve in the public copy.

@@ -3106,6 +3106,15 @@ Taking the rounds away shows what they were doing (computed, refereed):
   leaves a barred place, and no fixed distance is enough where it makes
   offshoots
   ([PARENTS-FROM-HOLDERS-20261124-001](research/PARENTS-FROM-HOLDERS-20261124-001/decision.md)).
+- **Three values are enough (computed, referee pending).** If every new knot
+  writes one of three values, one step on from its parents' value, a knot can
+  tell its parents from its children by comparing values with the knots it
+  meets, looking one step. This gave every parent on every structure tried,
+  half-built ones included, wherever the knots that join were made together.
+  No two-valued version that was tried does. The value is the order of
+  descent cut down to three values, and it is written by hand: the growth does
+  not supply it
+  ([LEAST-RECORD-20261124-001](research/LEAST-RECORD-20261124-001/decision.md)).
 - **The growth lives where parts are joined.** Counted by size, each part of a
   joined start keeps exactly the growth it has alone, and 97% to 99.9% of the
   junctions of size 10 or more span the join.
@@ -3987,8 +3996,9 @@ interpretation that no result settles.
 each have a frozen study behind them, with referees pending. Whether the knots
 of one part have to read together now has an answer, in lesson 8.1: not if
 each birth records its parents, and that record cannot be read back from what
-is built. Three things are open. How little of that record has to be written
-(B325, under goal G5). A first "fold of emergence": under added rules
+is built, though three values on each knot can stand in for it. Three things
+are open. Whether the structure can hold such a count itself (B328, under goal
+G5). A first "fold of emergence": under added rules
 parts that came apart can now meet again, and one part's course then depends
 on whether another is there, but not on what it is, and nothing is built from
 it (B317, under G15; a made pattern that leaves two of what it meets is the

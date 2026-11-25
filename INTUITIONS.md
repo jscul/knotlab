@@ -5170,8 +5170,20 @@ parent meets, no run leaves two such parts; 2,718 of that arm's 18,432 runs
 on its larger set of starts were not run, cut at the hour, and are not
 negatives
 ([the second ticket's result](research/MADE-COPIER-20261125-001B/results.md)).
-A third ticket, which samples many starts with nothing built or picked, is
-running.
+A third ticket sampled instead of building: the census of three to five
+knots, 42 laws under each knot law, every take drawn by chance, and the
+question how often a growth holds a made pattern after whose joining two
+parts of the second part's form are met more often than without it. The
+prediction was that none would be confirmed. Seventeen were: 5 in the main
+runs (3 growths of 1,000 under one law, each start once) and 12 in the
+follow-up runs the failed prediction fired, under 8 laws whose takes go by
+parent steps. None is a copier. Each first-pattern form does it for one form
+of second part, so nothing is a candidate; and in every case the meeting
+runs through a start knot, so the start supplies it
+([the third ticket's result](research/MADE-COPIER-20261125-001C/results.md);
+[what stands](research/MADE-COPIER-20261125-001/decision.md)). So the study
+closes with no copier found, and with one thing sampling does find: a made
+pattern that leaves two of one form.
 
 **An inkling that no copier is general.** "the interesting fact here is that
 it's actually impossible to generalize a 'copier' for all logic structures. It
@@ -5311,9 +5323,11 @@ made a pattern of its own from what it met.
   computed, referee pending). The first step as filed: fix the taken
   distinction by something the structure holds, and compare with the supplied
   conventions on the same starts.
-- **B327 and B329.** Taken by the two studies of lesson 10.4. B327's first
-  two tickets have run and found no copier; its third, by sampling, is
-  running. B329's study has run and found no made count of returns (lesson
+- **B327 and B329.** Taken by the two studies of lesson 10.4. B327's three
+  tickets have run and found no copier; sampling finds made patterns that
+  leave two of one form, through meetings the start supplies, and what that
+  leaves open is a case whose meeting is made by births alone. B329's study
+  has run and found no made count of returns (lesson
   9.6). What it leaves open: a law under which a second part's own knots keep
   a fixed number for each tick, and a reading at each return that survives
   every numbering.

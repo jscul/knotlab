@@ -1,0 +1,1625 @@
+{
+ "cases": 44,
+ "near_case_supplement": [
+  {
+   "case": "near-IN-TURN-nae",
+   "condition_on_names": {
+    "least in knot 0: False, least in knot 1: False | does not pass": 128,
+    "least in knot 0: False, least in knot 1: True | passes": 32,
+    "least in knot 0: True, least in knot 1: False | passes": 32,
+    "least in knot 0: True, least in knot 1: True | passes": 48
+   },
+   "distinct_named_starts": 30,
+   "distinct_named_starts_passed": 14,
+   "item": {
+    "base": "COPY-LAW(OFFSHOOT)",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-1",
+    "start": "two-knot"
+   },
+   "not_passed": 128,
+   "not_passed_with_undecided_tests": 0,
+   "numberings_run": 240,
+   "passed": 112,
+   "sense": "C-iii",
+   "survives_every_numbering": false,
+   "with_unfinished": 0
+  },
+  {
+   "case": "near-IN-TURN-parity",
+   "condition_on_names": {
+    "least in knot 0: False, least in knot 1: False | does not pass": 128,
+    "least in knot 0: False, least in knot 1: True | passes": 32,
+    "least in knot 0: True, least in knot 1: False | passes": 32,
+    "least in knot 0: True, least in knot 1: True | passes": 48
+   },
+   "distinct_named_starts": 30,
+   "distinct_named_starts_passed": 14,
+   "item": {
+    "base": "COPY-LAW(OFFSHOOT)",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-1",
+    "start": "two-knot"
+   },
+   "not_passed": 128,
+   "not_passed_with_undecided_tests": 0,
+   "numberings_run": 240,
+   "passed": 112,
+   "sense": "C-iii",
+   "survives_every_numbering": false,
+   "with_unfinished": 0
+  },
+  {
+   "case": "near-OLDEST-nae",
+   "condition_on_names": {
+    "least in knot 0: False, least in knot 1: False | does not pass": 128,
+    "least in knot 0: False, least in knot 1: True | passes": 32,
+    "least in knot 0: True, least in knot 1: False | passes": 32,
+    "least in knot 0: True, least in knot 1: True | passes": 48
+   },
+   "distinct_named_starts": 30,
+   "distinct_named_starts_passed": 14,
+   "item": {
+    "base": "COPY-LAW(OFFSHOOT)",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-1",
+    "start": "two-knot"
+   },
+   "not_passed": 128,
+   "not_passed_with_undecided_tests": 0,
+   "numberings_run": 240,
+   "passed": 112,
+   "sense": "C-iii",
+   "survives_every_numbering": false,
+   "with_unfinished": 0
+  },
+  {
+   "case": "near-OLDEST-parity",
+   "condition_on_names": {
+    "least in knot 0: False, least in knot 1: False | does not pass": 128,
+    "least in knot 0: False, least in knot 1: True | passes": 32,
+    "least in knot 0: True, least in knot 1: False | passes": 32,
+    "least in knot 0: True, least in knot 1: True | passes": 48
+   },
+   "distinct_named_starts": 30,
+   "distinct_named_starts_passed": 14,
+   "item": {
+    "base": "COPY-LAW(OFFSHOOT)",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-1",
+    "start": "two-knot"
+   },
+   "not_passed": 128,
+   "not_passed_with_undecided_tests": 0,
+   "numberings_run": 240,
+   "passed": 112,
+   "sense": "C-iii",
+   "survives_every_numbering": false,
+   "with_unfinished": 0
+  }
+ ],
+ "near_case_vs_prototype": {
+  "COPY-LAW(OFFSHOOT)|IN-TURN|nae": {
+   "mine": 112,
+   "only_mine": [],
+   "only_prototype": [],
+   "prototype": 112,
+   "same_set": true
+  },
+  "COPY-LAW(OFFSHOOT)|IN-TURN|parity": {
+   "mine": 112,
+   "only_mine": [],
+   "only_prototype": [],
+   "prototype": 112,
+   "same_set": true
+  },
+  "COPY-LAW(OFFSHOOT)|OLDEST|nae": {
+   "mine": 112,
+   "only_mine": [],
+   "only_prototype": [],
+   "prototype": 112,
+   "same_set": true
+  },
+  "COPY-LAW(OFFSHOOT)|OLDEST|parity": {
+   "mine": 112,
+   "only_mine": [],
+   "only_prototype": [],
+   "prototype": 112,
+   "same_set": true
+  }
+ },
+ "run5": [
+  {
+   "case": 0,
+   "distinct_named_starts": 112,
+   "distinct_named_starts_passed": 44,
+   "four_numberings_passed": 4,
+   "item": {
+    "base": "COPY-LAW(OFFSHOOT)",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-2",
+    "start": "D2(4,3)"
+   },
+   "not_passed": 68,
+   "not_passed_with_undecided_tests": 0,
+   "numberings_run": 112,
+   "passed": 44,
+   "sense": "C-iii",
+   "survives_every_numbering": false,
+   "with_unfinished": 0
+  },
+  {
+   "case": 1,
+   "distinct_named_starts": 140,
+   "distinct_named_starts_passed": 56,
+   "four_numberings_passed": 4,
+   "item": {
+    "base": "COPY-LAW(OFFSHOOT)",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-2",
+    "start": "D2(5,3)"
+   },
+   "not_passed": 84,
+   "not_passed_with_undecided_tests": 0,
+   "numberings_run": 140,
+   "passed": 56,
+   "sense": "C-iii",
+   "survives_every_numbering": false,
+   "with_unfinished": 0
+  },
+  {
+   "case": 10,
+   "distinct_named_starts": 168,
+   "distinct_named_starts_passed": 68,
+   "four_numberings_passed": 4,
+   "item": {
+    "base": "COPY-LAW(OFFSHOOT)",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-2",
+    "start": "D2(6,3)"
+   },
+   "not_passed": 100,
+   "not_passed_with_undecided_tests": 0,
+   "numberings_run": 168,
+   "passed": 68,
+   "sense": "C-iii",
+   "survives_every_numbering": false,
+   "with_unfinished": 0
+  },
+  {
+   "case": 11,
+   "distinct_named_starts": 120,
+   "distinct_named_starts_passed": 51,
+   "four_numberings_passed": 4,
+   "item": {
+    "base": "COPY-LAW(OFFSHOOT)",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-2",
+    "start": "DW(5,3)"
+   },
+   "not_passed": 69,
+   "not_passed_with_undecided_tests": 0,
+   "numberings_run": 120,
+   "passed": 51,
+   "sense": "C-iii",
+   "survives_every_numbering": false,
+   "with_unfinished": 0
+  },
+  {
+   "case": 12,
+   "distinct_named_starts": 80,
+   "distinct_named_starts_passed": 37,
+   "four_numberings_passed": 2,
+   "item": {
+    "base": "COPY-LAW(OFFSHOOT)",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-2",
+    "start": "Ring(5,3)"
+   },
+   "not_passed": 43,
+   "not_passed_with_undecided_tests": 0,
+   "numberings_run": 80,
+   "passed": 37,
+   "sense": "C-iii",
+   "survives_every_numbering": false,
+   "with_unfinished": 0
+  },
+  {
+   "case": 13,
+   "distinct_named_starts": 100,
+   "distinct_named_starts_passed": 57,
+   "four_numberings_passed": 2,
+   "item": {
+    "base": "COPY-LAW(OFFSHOOT)",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-2",
+    "start": "Ring(5,4)"
+   },
+   "not_passed": 43,
+   "not_passed_with_undecided_tests": 8,
+   "numberings_run": 100,
+   "passed": 57,
+   "sense": "C-iii",
+   "survives_every_numbering": false,
+   "with_unfinished": 0
+  },
+  {
+   "case": 14,
+   "distinct_named_starts": 112,
+   "distinct_named_starts_passed": 55,
+   "four_numberings_passed": 2,
+   "item": {
+    "base": "COPY-LAW(OFFSHOOT)",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-2",
+    "start": "Ring(7,3)"
+   },
+   "not_passed": 57,
+   "not_passed_with_undecided_tests": 0,
+   "numberings_run": 112,
+   "passed": 55,
+   "sense": "C-iii",
+   "survives_every_numbering": false,
+   "with_unfinished": 0
+  },
+  {
+   "case": 15,
+   "distinct_named_starts": 144,
+   "distinct_named_starts_passed": 52,
+   "four_numberings_passed": 2,
+   "item": {
+    "base": "COPY-LAW(OFFSHOOT)",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-2",
+    "start": "Ring(9,3)"
+   },
+   "not_passed": 92,
+   "not_passed_with_undecided_tests": 0,
+   "numberings_run": 144,
+   "passed": 52,
+   "sense": "C-iii",
+   "survives_every_numbering": false,
+   "with_unfinished": 0
+  },
+  {
+   "case": 16,
+   "condition_on_names": {
+    "least in knot 0: False, least in knot 1: False | does not pass": 128,
+    "least in knot 0: False, least in knot 1: True | passes": 32,
+    "least in knot 0: True, least in knot 1: False | does not pass": 32,
+    "least in knot 0: True, least in knot 1: True | passes": 48
+   },
+   "distinct_named_starts": 30,
+   "distinct_named_starts_passed": 10,
+   "item": {
+    "base": "COPY-LAW(OFFSHOOT)",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-1",
+    "start": "two-knot"
+   },
+   "not_passed": 160,
+   "not_passed_with_undecided_tests": 0,
+   "numberings_run": 240,
+   "passed": 80,
+   "sense": "C-iii",
+   "survives_every_numbering": false,
+   "with_unfinished": 0
+  },
+  {
+   "case": 17,
+   "distinct_named_starts": 112,
+   "distinct_named_starts_passed": 68,
+   "four_numberings_passed": 4,
+   "item": {
+    "base": "COPY-LAW(OFFSHOOT)",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-2",
+    "start": "D2(4,3)"
+   },
+   "not_passed": 44,
+   "not_passed_with_undecided_tests": 5,
+   "numberings_run": 112,
+   "passed": 68,
+   "sense": "C-iii",
+   "survives_every_numbering": false,
+   "with_unfinished": 0
+  },
+  {
+   "case": 18,
+   "distinct_named_starts": 140,
+   "distinct_named_starts_passed": 87,
+   "four_numberings_passed": 4,
+   "item": {
+    "base": "COPY-LAW(OFFSHOOT)",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-2",
+    "start": "D2(5,3)"
+   },
+   "not_passed": 53,
+   "not_passed_with_undecided_tests": 5,
+   "numberings_run": 140,
+   "passed": 87,
+   "sense": "C-iii",
+   "survives_every_numbering": false,
+   "with_unfinished": 0
+  },
+  {
+   "case": 19,
+   "distinct_named_starts": 168,
+   "distinct_named_starts_passed": 106,
+   "four_numberings_passed": 4,
+   "item": {
+    "base": "COPY-LAW(OFFSHOOT)",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-2",
+    "start": "D2(6,3)"
+   },
+   "not_passed": 62,
+   "not_passed_with_undecided_tests": 5,
+   "numberings_run": 168,
+   "passed": 106,
+   "sense": "C-iii",
+   "survives_every_numbering": false,
+   "with_unfinished": 0
+  },
+  {
+   "case": 2,
+   "distinct_named_starts": 168,
+   "distinct_named_starts_passed": 68,
+   "four_numberings_passed": 4,
+   "item": {
+    "base": "COPY-LAW(OFFSHOOT)",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-2",
+    "start": "D2(6,3)"
+   },
+   "not_passed": 100,
+   "not_passed_with_undecided_tests": 0,
+   "numberings_run": 168,
+   "passed": 68,
+   "sense": "C-iii",
+   "survives_every_numbering": false,
+   "with_unfinished": 0
+  },
+  {
+   "case": 20,
+   "distinct_named_starts": 120,
+   "distinct_named_starts_passed": 86,
+   "four_numberings_passed": 4,
+   "item": {
+    "base": "COPY-LAW(OFFSHOOT)",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-2",
+    "start": "DW(5,3)"
+   },
+   "not_passed": 34,
+   "not_passed_with_undecided_tests": 0,
+   "numberings_run": 120,
+   "passed": 86,
+   "sense": "C-iii",
+   "survives_every_numbering": false,
+   "with_unfinished": 0
+  },
+  {
+   "case": 21,
+   "distinct_named_starts": 32,
+   "distinct_named_starts_passed": 16,
+   "four_numberings_passed": 4,
+   "item": {
+    "base": "COPY-LAW(OFFSHOOT)",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-2",
+    "start": "three-knot"
+   },
+   "not_passed": 16,
+   "not_passed_with_undecided_tests": 0,
+   "numberings_run": 32,
+   "passed": 16,
+   "sense": "C-iii",
+   "survives_every_numbering": false,
+   "with_unfinished": 0
+  },
+  {
+   "case": 22,
+   "condition_on_names": {
+    "least in knot 0: False, least in knot 1: False | does not pass": 128,
+    "least in knot 0: False, least in knot 1: True | passes": 32,
+    "least in knot 0: True, least in knot 1: False | does not pass": 32,
+    "least in knot 0: True, least in knot 1: True | passes": 48
+   },
+   "distinct_named_starts": 30,
+   "distinct_named_starts_passed": 10,
+   "item": {
+    "base": "COPY-LAW(OFFSHOOT)",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-1",
+    "start": "two-knot"
+   },
+   "not_passed": 160,
+   "not_passed_with_undecided_tests": 0,
+   "numberings_run": 240,
+   "passed": 80,
+   "sense": "C-iii",
+   "survives_every_numbering": false,
+   "with_unfinished": 0
+  },
+  {
+   "case": 23,
+   "distinct_named_starts": 112,
+   "distinct_named_starts_passed": 68,
+   "four_numberings_passed": 4,
+   "item": {
+    "base": "COPY-LAW(OFFSHOOT)",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-2",
+    "start": "D2(4,3)"
+   },
+   "not_passed": 44,
+   "not_passed_with_undecided_tests": 5,
+   "numberings_run": 112,
+   "passed": 68,
+   "sense": "C-iii",
+   "survives_every_numbering": false,
+   "with_unfinished": 0
+  },
+  {
+   "case": 24,
+   "distinct_named_starts": 140,
+   "distinct_named_starts_passed": 87,
+   "four_numberings_passed": 4,
+   "item": {
+    "base": "COPY-LAW(OFFSHOOT)",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-2",
+    "start": "D2(5,3)"
+   },
+   "not_passed": 53,
+   "not_passed_with_undecided_tests": 5,
+   "numberings_run": 140,
+   "passed": 87,
+   "sense": "C-iii",
+   "survives_every_numbering": false,
+   "with_unfinished": 0
+  },
+  {
+   "case": 25,
+   "distinct_named_starts": 168,
+   "distinct_named_starts_passed": 106,
+   "four_numberings_passed": 4,
+   "item": {
+    "base": "COPY-LAW(OFFSHOOT)",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-2",
+    "start": "D2(6,3)"
+   },
+   "not_passed": 62,
+   "not_passed_with_undecided_tests": 5,
+   "numberings_run": 168,
+   "passed": 106,
+   "sense": "C-iii",
+   "survives_every_numbering": false,
+   "with_unfinished": 0
+  },
+  {
+   "case": 26,
+   "distinct_named_starts": 120,
+   "distinct_named_starts_passed": 86,
+   "four_numberings_passed": 4,
+   "item": {
+    "base": "COPY-LAW(OFFSHOOT)",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-2",
+    "start": "DW(5,3)"
+   },
+   "not_passed": 34,
+   "not_passed_with_undecided_tests": 0,
+   "numberings_run": 120,
+   "passed": 86,
+   "sense": "C-iii",
+   "survives_every_numbering": false,
+   "with_unfinished": 0
+  },
+  {
+   "case": 27,
+   "distinct_named_starts": 32,
+   "distinct_named_starts_passed": 16,
+   "four_numberings_passed": 4,
+   "item": {
+    "base": "COPY-LAW(OFFSHOOT)",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-2",
+    "start": "three-knot"
+   },
+   "not_passed": 16,
+   "not_passed_with_undecided_tests": 0,
+   "numberings_run": 32,
+   "passed": 16,
+   "sense": "C-iii",
+   "survives_every_numbering": false,
+   "with_unfinished": 0
+  },
+  {
+   "case": 28,
+   "condition_on_names": {
+    "least in knot 0: False, least in knot 1: False | does not pass": 128,
+    "least in knot 0: False, least in knot 1: True | passes": 32,
+    "least in knot 0: True, least in knot 1: False | does not pass": 32,
+    "least in knot 0: True, least in knot 1: True | passes": 48
+   },
+   "distinct_named_starts": 30,
+   "distinct_named_starts_passed": 10,
+   "item": {
+    "base": "COPY-LAW(OFFSHOOT)",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-1",
+    "start": "two-knot"
+   },
+   "not_passed": 160,
+   "not_passed_with_undecided_tests": 0,
+   "numberings_run": 240,
+   "passed": 80,
+   "sense": "C-iii",
+   "survives_every_numbering": false,
+   "with_unfinished": 0
+  },
+  {
+   "case": 29,
+   "distinct_named_starts": 112,
+   "distinct_named_starts_passed": 60,
+   "four_numberings_passed": 4,
+   "item": {
+    "base": "COPY-LAW(OFFSHOOT)",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-2",
+    "start": "D2(4,3)"
+   },
+   "not_passed": 52,
+   "not_passed_with_undecided_tests": 17,
+   "numberings_run": 112,
+   "passed": 60,
+   "sense": "C-iii",
+   "survives_every_numbering": false,
+   "with_unfinished": 0
+  },
+  {
+   "case": 3,
+   "distinct_named_starts": 120,
+   "distinct_named_starts_passed": 51,
+   "four_numberings_passed": 4,
+   "item": {
+    "base": "COPY-LAW(OFFSHOOT)",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-2",
+    "start": "DW(5,3)"
+   },
+   "not_passed": 69,
+   "not_passed_with_undecided_tests": 0,
+   "numberings_run": 120,
+   "passed": 51,
+   "sense": "C-iii",
+   "survives_every_numbering": false,
+   "with_unfinished": 0
+  },
+  {
+   "case": 30,
+   "distinct_named_starts": 140,
+   "distinct_named_starts_passed": 76,
+   "four_numberings_passed": 4,
+   "item": {
+    "base": "COPY-LAW(OFFSHOOT)",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-2",
+    "start": "D2(5,3)"
+   },
+   "not_passed": 64,
+   "not_passed_with_undecided_tests": 24,
+   "numberings_run": 140,
+   "passed": 76,
+   "sense": "C-iii",
+   "survives_every_numbering": false,
+   "with_unfinished": 0
+  },
+  {
+   "case": 31,
+   "distinct_named_starts": 168,
+   "distinct_named_starts_passed": 93,
+   "four_numberings_passed": 4,
+   "item": {
+    "base": "COPY-LAW(OFFSHOOT)",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-2",
+    "start": "D2(6,3)"
+   },
+   "not_passed": 75,
+   "not_passed_with_undecided_tests": 30,
+   "numberings_run": 168,
+   "passed": 93,
+   "sense": "C-iii",
+   "survives_every_numbering": false,
+   "with_unfinished": 0
+  },
+  {
+   "case": 32,
+   "distinct_named_starts": 120,
+   "distinct_named_starts_passed": 72,
+   "four_numberings_passed": 4,
+   "item": {
+    "base": "COPY-LAW(OFFSHOOT)",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-2",
+    "start": "DW(5,3)"
+   },
+   "not_passed": 48,
+   "not_passed_with_undecided_tests": 22,
+   "numberings_run": 120,
+   "passed": 72,
+   "sense": "C-iii",
+   "survives_every_numbering": false,
+   "with_unfinished": 0
+  },
+  {
+   "case": 33,
+   "distinct_named_starts": 32,
+   "distinct_named_starts_passed": 16,
+   "four_numberings_passed": 4,
+   "item": {
+    "base": "COPY-LAW(OFFSHOOT)",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-2",
+    "start": "three-knot"
+   },
+   "not_passed": 16,
+   "not_passed_with_undecided_tests": 0,
+   "numberings_run": 32,
+   "passed": 16,
+   "sense": "C-iii",
+   "survives_every_numbering": false,
+   "with_unfinished": 0
+  },
+  {
+   "case": 34,
+   "condition_on_names": {
+    "least in knot 0: False, least in knot 1: False | does not pass": 128,
+    "least in knot 0: False, least in knot 1: True | passes": 32,
+    "least in knot 0: True, least in knot 1: False | does not pass": 32,
+    "least in knot 0: True, least in knot 1: True | passes": 48
+   },
+   "distinct_named_starts": 30,
+   "distinct_named_starts_passed": 10,
+   "item": {
+    "base": "COPY-LAW(OFFSHOOT)",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-1",
+    "start": "two-knot"
+   },
+   "not_passed": 160,
+   "not_passed_with_undecided_tests": 0,
+   "numberings_run": 240,
+   "passed": 80,
+   "sense": "C-iii",
+   "survives_every_numbering": false,
+   "with_unfinished": 0
+  },
+  {
+   "case": 35,
+   "distinct_named_starts": 112,
+   "distinct_named_starts_passed": 62,
+   "four_numberings_passed": 4,
+   "item": {
+    "base": "COPY-LAW(OFFSHOOT)",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-2",
+    "start": "D2(4,3)"
+   },
+   "not_passed": 50,
+   "not_passed_with_undecided_tests": 11,
+   "numberings_run": 112,
+   "passed": 62,
+   "sense": "C-iii",
+   "survives_every_numbering": false,
+   "with_unfinished": 0
+  },
+  {
+   "case": 36,
+   "distinct_named_starts": 140,
+   "distinct_named_starts_passed": 78,
+   "four_numberings_passed": 4,
+   "item": {
+    "base": "COPY-LAW(OFFSHOOT)",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-2",
+    "start": "D2(5,3)"
+   },
+   "not_passed": 62,
+   "not_passed_with_undecided_tests": 16,
+   "numberings_run": 140,
+   "passed": 78,
+   "sense": "C-iii",
+   "survives_every_numbering": false,
+   "with_unfinished": 0
+  },
+  {
+   "case": 37,
+   "distinct_named_starts": 168,
+   "distinct_named_starts_passed": 95,
+   "four_numberings_passed": 4,
+   "item": {
+    "base": "COPY-LAW(OFFSHOOT)",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-2",
+    "start": "D2(6,3)"
+   },
+   "not_passed": 73,
+   "not_passed_with_undecided_tests": 20,
+   "numberings_run": 168,
+   "passed": 95,
+   "sense": "C-iii",
+   "survives_every_numbering": false,
+   "with_unfinished": 0
+  },
+  {
+   "case": 38,
+   "distinct_named_starts": 120,
+   "distinct_named_starts_passed": 74,
+   "four_numberings_passed": 4,
+   "item": {
+    "base": "COPY-LAW(OFFSHOOT)",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-2",
+    "start": "DW(5,3)"
+   },
+   "not_passed": 46,
+   "not_passed_with_undecided_tests": 14,
+   "numberings_run": 120,
+   "passed": 74,
+   "sense": "C-iii",
+   "survives_every_numbering": false,
+   "with_unfinished": 0
+  },
+  {
+   "case": 39,
+   "distinct_named_starts": 32,
+   "distinct_named_starts_passed": 16,
+   "four_numberings_passed": 4,
+   "item": {
+    "base": "COPY-LAW(OFFSHOOT)",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-2",
+    "start": "three-knot"
+   },
+   "not_passed": 16,
+   "not_passed_with_undecided_tests": 0,
+   "numberings_run": 32,
+   "passed": 16,
+   "sense": "C-iii",
+   "survives_every_numbering": false,
+   "with_unfinished": 0
+  },
+  {
+   "case": 4,
+   "distinct_named_starts": 80,
+   "distinct_named_starts_passed": 37,
+   "four_numberings_passed": 2,
+   "item": {
+    "base": "COPY-LAW(OFFSHOOT)",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-2",
+    "start": "Ring(5,3)"
+   },
+   "not_passed": 43,
+   "not_passed_with_undecided_tests": 0,
+   "numberings_run": 80,
+   "passed": 37,
+   "sense": "C-iii",
+   "survives_every_numbering": false,
+   "with_unfinished": 0
+  },
+  {
+   "case": 40,
+   "condition_on_names": {
+    "least in knot 0: False, least in knot 1: False | does not pass": 128,
+    "least in knot 0: False, least in knot 1: True | passes": 32,
+    "least in knot 0: True, least in knot 1: False | passes": 32,
+    "least in knot 0: True, least in knot 1: True | passes": 48
+   },
+   "distinct_named_starts": 30,
+   "distinct_named_starts_passed": 14,
+   "item": {
+    "base": "COPY-LAW(WAIT)",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-2:join",
+    "start": "two-knot"
+   },
+   "not_passed": 128,
+   "not_passed_with_undecided_tests": 0,
+   "numberings_run": 240,
+   "passed": 112,
+   "sense": "C-iii",
+   "survives_every_numbering": false,
+   "with_unfinished": 0
+  },
+  {
+   "case": 41,
+   "condition_on_names": {
+    "least in knot 0: False, least in knot 1: False | does not pass": 128,
+    "least in knot 0: False, least in knot 1: True | passes": 32,
+    "least in knot 0: True, least in knot 1: False | passes": 32,
+    "least in knot 0: True, least in knot 1: True | passes": 48
+   },
+   "distinct_named_starts": 30,
+   "distinct_named_starts_passed": 14,
+   "item": {
+    "base": "COPY-LAW(WAIT)",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-2:join",
+    "start": "two-knot"
+   },
+   "not_passed": 128,
+   "not_passed_with_undecided_tests": 0,
+   "numberings_run": 240,
+   "passed": 112,
+   "sense": "C-iii",
+   "survives_every_numbering": false,
+   "with_unfinished": 0
+  },
+  {
+   "case": 42,
+   "condition_on_names": {
+    "least in knot 0: False, least in knot 1: False | does not pass": 128,
+    "least in knot 0: False, least in knot 1: True | passes": 32,
+    "least in knot 0: True, least in knot 1: False | passes": 32,
+    "least in knot 0: True, least in knot 1: True | passes": 48
+   },
+   "distinct_named_starts": 30,
+   "distinct_named_starts_passed": 14,
+   "item": {
+    "base": "COPY-LAW(WAIT)",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-2:join",
+    "start": "two-knot"
+   },
+   "not_passed": 128,
+   "not_passed_with_undecided_tests": 0,
+   "numberings_run": 240,
+   "passed": 112,
+   "sense": "C-iii",
+   "survives_every_numbering": false,
+   "with_unfinished": 0
+  },
+  {
+   "case": 43,
+   "condition_on_names": {
+    "least in knot 0: False, least in knot 1: False | does not pass": 128,
+    "least in knot 0: False, least in knot 1: True | passes": 32,
+    "least in knot 0: True, least in knot 1: False | passes": 32,
+    "least in knot 0: True, least in knot 1: True | passes": 48
+   },
+   "distinct_named_starts": 30,
+   "distinct_named_starts_passed": 14,
+   "item": {
+    "base": "COPY-LAW(WAIT)",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-2:join",
+    "start": "two-knot"
+   },
+   "not_passed": 128,
+   "not_passed_with_undecided_tests": 0,
+   "numberings_run": 240,
+   "passed": 112,
+   "sense": "C-iii",
+   "survives_every_numbering": false,
+   "with_unfinished": 0
+  },
+  {
+   "case": 5,
+   "distinct_named_starts": 100,
+   "distinct_named_starts_passed": 57,
+   "four_numberings_passed": 2,
+   "item": {
+    "base": "COPY-LAW(OFFSHOOT)",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-2",
+    "start": "Ring(5,4)"
+   },
+   "not_passed": 43,
+   "not_passed_with_undecided_tests": 8,
+   "numberings_run": 100,
+   "passed": 57,
+   "sense": "C-iii",
+   "survives_every_numbering": false,
+   "with_unfinished": 0
+  },
+  {
+   "case": 6,
+   "distinct_named_starts": 112,
+   "distinct_named_starts_passed": 55,
+   "four_numberings_passed": 2,
+   "item": {
+    "base": "COPY-LAW(OFFSHOOT)",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-2",
+    "start": "Ring(7,3)"
+   },
+   "not_passed": 57,
+   "not_passed_with_undecided_tests": 0,
+   "numberings_run": 112,
+   "passed": 55,
+   "sense": "C-iii",
+   "survives_every_numbering": false,
+   "with_unfinished": 0
+  },
+  {
+   "case": 7,
+   "distinct_named_starts": 144,
+   "distinct_named_starts_passed": 52,
+   "four_numberings_passed": 2,
+   "item": {
+    "base": "COPY-LAW(OFFSHOOT)",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-2",
+    "start": "Ring(9,3)"
+   },
+   "not_passed": 92,
+   "not_passed_with_undecided_tests": 0,
+   "numberings_run": 144,
+   "passed": 52,
+   "sense": "C-iii",
+   "survives_every_numbering": false,
+   "with_unfinished": 0
+  },
+  {
+   "case": 8,
+   "distinct_named_starts": 112,
+   "distinct_named_starts_passed": 44,
+   "four_numberings_passed": 4,
+   "item": {
+    "base": "COPY-LAW(OFFSHOOT)",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-2",
+    "start": "D2(4,3)"
+   },
+   "not_passed": 68,
+   "not_passed_with_undecided_tests": 0,
+   "numberings_run": 112,
+   "passed": 44,
+   "sense": "C-iii",
+   "survives_every_numbering": false,
+   "with_unfinished": 0
+  },
+  {
+   "case": 9,
+   "distinct_named_starts": 140,
+   "distinct_named_starts_passed": 56,
+   "four_numberings_passed": 4,
+   "item": {
+    "base": "COPY-LAW(OFFSHOOT)",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-2",
+    "start": "D2(5,3)"
+   },
+   "not_passed": 84,
+   "not_passed_with_undecided_tests": 0,
+   "numberings_run": 140,
+   "passed": 56,
+   "sense": "C-iii",
+   "survives_every_numbering": false,
+   "with_unfinished": 0
+  }
+ ],
+ "run5b": [],
+ "shifts_vs_prototype": {
+  "counts": {
+   "compared": 3488,
+   "differ": 110,
+   "same": 3378
+  },
+  "differences": [
+   {
+    "choice": "BY-COUNT",
+    "knot_law": "nae",
+    "mine": false,
+    "prototype": true,
+    "shift": [
+     1,
+     true,
+     false
+    ],
+    "start": "Ring(5,3)"
+   },
+   {
+    "choice": "BY-COUNT",
+    "knot_law": "nae",
+    "mine": false,
+    "prototype": true,
+    "shift": [
+     0,
+     true,
+     true
+    ],
+    "start": "Ring(5,3)"
+   },
+   {
+    "choice": "BY-COUNT",
+    "knot_law": "nae",
+    "mine": false,
+    "prototype": true,
+    "shift": [
+     0,
+     true,
+     false
+    ],
+    "start": "Ring(5,3)"
+   },
+   {
+    "choice": "BY-COUNT",
+    "knot_law": "nae",
+    "mine": false,
+    "prototype": true,
+    "shift": [
+     1,
+     true,
+     true
+    ],
+    "start": "Ring(5,3)"
+   },
+   {
+    "choice": "BY-COUNT",
+    "knot_law": "nae",
+    "mine": false,
+    "prototype": true,
+    "shift": [
+     4,
+     false,
+     true
+    ],
+    "start": "Ring(5,3)"
+   },
+   {
+    "choice": "BY-COUNT",
+    "knot_law": "nae",
+    "mine": false,
+    "prototype": true,
+    "shift": [
+     4,
+     false,
+     false
+    ],
+    "start": "Ring(5,3)"
+   },
+   {
+    "choice": "BY-COUNT",
+    "knot_law": "nae",
+    "mine": false,
+    "prototype": true,
+    "shift": [
+     5,
+     false,
+     true
+    ],
+    "start": "Ring(5,3)"
+   },
+   {
+    "choice": "BY-COUNT",
+    "knot_law": "nae",
+    "mine": false,
+    "prototype": true,
+    "shift": [
+     5,
+     false,
+     false
+    ],
+    "start": "Ring(5,3)"
+   },
+   {
+    "choice": "BY-COUNT",
+    "knot_law": "nae",
+    "mine": false,
+    "prototype": true,
+    "shift": [
+     7,
+     false,
+     false
+    ],
+    "start": "Ring(5,3)"
+   },
+   {
+    "choice": "BY-COUNT",
+    "knot_law": "nae",
+    "mine": false,
+    "prototype": true,
+    "shift": [
+     7,
+     false,
+     true
+    ],
+    "start": "Ring(5,3)"
+   },
+   {
+    "choice": "BY-COUNT",
+    "knot_law": "nae",
+    "mine": false,
+    "prototype": true,
+    "shift": [
+     8,
+     false,
+     false
+    ],
+    "start": "Ring(5,3)"
+   },
+   {
+    "choice": "BY-COUNT",
+    "knot_law": "nae",
+    "mine": false,
+    "prototype": true,
+    "shift": [
+     8,
+     false,
+     true
+    ],
+    "start": "Ring(5,3)"
+   },
+   {
+    "choice": "BY-COUNT",
+    "knot_law": "nae",
+    "mine": false,
+    "prototype": true,
+    "shift": [
+     8,
+     true,
+     false
+    ],
+    "start": "Ring(5,3)"
+   },
+   {
+    "choice": "BY-COUNT",
+    "knot_law": "nae",
+    "mine": false,
+    "prototype": true,
+    "shift": [
+     9,
+     true,
+     false
+    ],
+    "start": "Ring(5,3)"
+   },
+   {
+    "choice": "BY-COUNT",
+    "knot_law": "nae",
+    "mine": false,
+    "prototype": true,
+    "shift": [
+     9,
+     false,
+     false
+    ],
+    "start": "Ring(5,3)"
+   },
+   {
+    "choice": "BY-COUNT",
+    "knot_law": "nae",
+    "mine": false,
+    "prototype": true,
+    "shift": [
+     9,
+     false,
+     true
+    ],
+    "start": "Ring(5,3)"
+   },
+   {
+    "choice": "BY-COUNT",
+    "knot_law": "nae",
+    "mine": false,
+    "prototype": true,
+    "shift": [
+     10,
+     false,
+     false
+    ],
+    "start": "Ring(5,3)"
+   },
+   {
+    "choice": "BY-COUNT",
+    "knot_law": "nae",
+    "mine": false,
+    "prototype": true,
+    "shift": [
+     10,
+     false,
+     true
+    ],
+    "start": "Ring(5,3)"
+   },
+   {
+    "choice": "BY-COUNT",
+    "knot_law": "nae",
+    "mine": false,
+    "prototype": true,
+    "shift": [
+     10,
+     true,
+     true
+    ],
+    "start": "Ring(5,3)"
+   },
+   {
+    "choice": "BY-COUNT",
+    "knot_law": "nae",
+    "mine": false,
+    "prototype": true,
+    "shift": [
+     11,
+     false,
+     false
+    ],
+    "start": "Ring(5,3)"
+   },
+   {
+    "choice": "BY-COUNT",
+    "knot_law": "nae",
+    "mine": false,
+    "prototype": true,
+    "shift": [
+     11,
+     false,
+     true
+    ],
+    "start": "Ring(5,3)"
+   },
+   {
+    "choice": "BY-COUNT",
+    "knot_law": "nae",
+    "mine": false,
+    "prototype": true,
+    "shift": [
+     12,
+     true,
+     false
+    ],
+    "start": "Ring(5,3)"
+   },
+   {
+    "choice": "BY-COUNT",
+    "knot_law": "nae",
+    "mine": false,
+    "prototype": true,
+    "shift": [
+     13,
+     false,
+     false
+    ],
+    "start": "Ring(5,3)"
+   },
+   {
+    "choice": "BY-COUNT",
+    "knot_law": "nae",
+    "mine": false,
+    "prototype": true,
+    "shift": [
+     13,
+     false,
+     true
+    ],
+    "start": "Ring(5,3)"
+   },
+   {
+    "choice": "BY-COUNT",
+    "knot_law": "nae",
+    "mine": false,
+    "prototype": true,
+    "shift": [
+     14,
+     false,
+     false
+    ],
+    "start": "Ring(5,3)"
+   },
+   {
+    "choice": "BY-COUNT",
+    "knot_law": "nae",
+    "mine": false,
+    "prototype": true,
+    "shift": [
+     17,
+     true,
+     false
+    ],
+    "start": "Ring(5,3)"
+   },
+   {
+    "choice": "BY-COUNT",
+    "knot_law": "nae",
+    "mine": false,
+    "prototype": true,
+    "shift": [
+     17,
+     true,
+     true
+    ],
+    "start": "Ring(5,3)"
+   },
+   {
+    "choice": "BY-COUNT",
+    "knot_law": "nae",
+    "mine": false,
+    "prototype": true,
+    "shift": [
+     18,
+     false,
+     true
+    ],
+    "start": "Ring(5,3)"
+   },
+   {
+    "choice": "BY-COUNT",
+    "knot_law": "nae",
+    "mine": false,
+    "prototype": true,
+    "shift": [
+     18,
+     true,
+     true
+    ],
+    "start": "Ring(5,3)"
+   },
+   {
+    "choice": "BY-COUNT",
+    "knot_law": "nae",
+    "mine": false,
+    "prototype": true,
+    "shift": [
+     18,
+     true,
+     false
+    ],
+    "start": "Ring(5,3)"
+   },
+   {
+    "choice": "BY-COUNT",
+    "knot_law": "nae",
+    "mine": false,
+    "prototype": true,
+    "shift": [
+     19,
+     true,
+     true
+    ],
+    "start": "Ring(5,3)"
+   },
+   {
+    "choice": "BY-COUNT",
+    "knot_law": "nae",
+    "mine": false,
+    "prototype": true,
+    "shift": [
+     19,
+     true,
+     false
+    ],
+    "start": "Ring(5,3)"
+   },
+   {
+    "choice": "BY-COUNT",
+    "knot_law": "nae",
+    "mine": false,
+    "prototype": true,
+    "shift": [
+     7,
+     true,
+     false
+    ],
+    "start": "Ring(5,4)"
+   },
+   {
+    "choice": "BY-COUNT",
+    "knot_law": "nae",
+    "mine": false,
+    "prototype": true,
+    "shift": [
+     8,
+     true,
+     true
+    ],
+    "start": "Ring(5,4)"
+   },
+   {
+    "choice": "BY-COUNT",
+    "knot_law": "nae",
+    "mine": false,
+    "prototype": true,
+    "shift": [
+     8,
+     true,
+     false
+    ],
+    "start": "Ring(5,4)"
+   },
+   {
+    "choice": "BY-COUNT",
+    "knot_law": "nae",
+    "mine": false,
+    "prototype": true,
+    "shift": [
+     11,
+     true,
+     false
+    ],
+    "start": "Ring(5,4)"
+   },
+   {
+    "choice": "BY-COUNT",
+    "knot_law": "nae",
+    "mine": false,
+    "prototype": true,
+    "shift": [
+     12,
+     true,
+     false
+    ],
+    "start": "Ring(5,4)"
+   },
+   {
+    "choice": "BY-COUNT",
+    "knot_law": "nae",
+    "mine": false,
+    "prototype": true,
+    "shift": [
+     13,
+     true,
+     false
+    ],
+    "start": "Ring(5,4)"
+   },
+   {
+    "choice": "BY-COUNT",
+    "knot_law": "nae",
+    "mine": false,
+    "prototype": true,
+    "shift": [
+     14,
+     true,
+     false
+    ],
+    "start": "Ring(5,4)"
+   },
+   {
+    "choice": "BY-COUNT",
+    "knot_law": "nae",
+    "mine": false,
+    "prototype": true,
+    "shift": [
+     15,
+     false,
+     true
+    ],
+    "start": "Ring(5,4)"
+   }
+  ]
+ },
+ "two_knot_L1_vs_prototype": {
+  "COPY-LAW(OFFSHOOT)|IN-TURN|nae": {
+   "mine": 80,
+   "only_mine": [],
+   "only_prototype": [],
+   "prototype": 80,
+   "same_set": true
+  },
+  "COPY-LAW(OFFSHOOT)|IN-TURN|parity": {
+   "mine": 80,
+   "only_mine": [],
+   "only_prototype": [],
+   "prototype": 80,
+   "same_set": true
+  },
+  "COPY-LAW(OFFSHOOT)|OLDEST|nae": {
+   "mine": 80,
+   "only_mine": [],
+   "only_prototype": [],
+   "prototype": 80,
+   "same_set": true
+  },
+  "COPY-LAW(OFFSHOOT)|OLDEST|parity": {
+   "mine": 80,
+   "only_mine": [],
+   "only_prototype": [],
+   "prototype": 80,
+   "same_set": true
+  }
+ }
+}

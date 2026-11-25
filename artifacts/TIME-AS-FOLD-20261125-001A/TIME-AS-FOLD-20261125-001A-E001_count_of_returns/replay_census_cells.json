@@ -1,0 +1,3522 @@
+[
+ {
+  "cell": "fbp|STEPS-1:join|CAP-3",
+  "column": "past: runs with a series giving parts off at 2+ ticks",
+  "mine_and_prototype": [
+   4,
+   2
+  ],
+  "runs": [
+   {
+    "base": "RING-LAW",
+    "choice": "IN-TURN",
+    "group": "fbp",
+    "knot_law": "nae",
+    "rule": "STEPS-1:join",
+    "start": "Ring(9,3)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "IN-TURN",
+    "group": "fbp",
+    "knot_law": "parity",
+    "rule": "STEPS-1:join",
+    "start": "Ring(9,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "IN-TURN",
+    "group": "fbp",
+    "knot_law": "nae",
+    "rule": "STEPS-1:join",
+    "start": "Ring(9,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "IN-TURN",
+    "group": "fbp",
+    "knot_law": "parity",
+    "rule": "STEPS-1:join",
+    "start": "Ring(9,3)"
+   }
+  ]
+ },
+ {
+  "cell": "fbp|STEPS-1:offshoot|FLOOR1",
+  "column": "past: runs with a series giving parts off at 2+ ticks",
+  "mine_and_prototype": [
+   6,
+   4
+  ],
+  "runs": [
+   {
+    "base": "COPY-LAW(OFFSHOOT)",
+    "choice": "BY-COUNT",
+    "group": "fbp",
+    "knot_law": "parity",
+    "rule": "STEPS-1:offshoot",
+    "start": "two-knot"
+   },
+   {
+    "base": "COPY-LAW(OFFSHOOT)",
+    "choice": "BY-COUNT",
+    "group": "fbp",
+    "knot_law": "nae",
+    "rule": "STEPS-1:offshoot",
+    "start": "two-knot"
+   },
+   {
+    "base": "COPY-LAW(WAIT)",
+    "choice": "IN-TURN",
+    "group": "fbp",
+    "knot_law": "nae",
+    "rule": "STEPS-1:offshoot",
+    "start": "three-knot-larger"
+   },
+   {
+    "base": "COPY-LAW(WAIT)",
+    "choice": "IN-TURN",
+    "group": "fbp",
+    "knot_law": "parity",
+    "rule": "STEPS-1:offshoot",
+    "start": "three-knot-larger"
+   },
+   {
+    "base": "COPY-LAW(WAIT)",
+    "choice": "BY-COUNT",
+    "group": "fbp",
+    "knot_law": "nae",
+    "rule": "STEPS-1:offshoot",
+    "start": "three-knot-larger"
+   },
+   {
+    "base": "COPY-LAW(WAIT)",
+    "choice": "BY-COUNT",
+    "group": "fbp",
+    "knot_law": "parity",
+    "rule": "STEPS-1:offshoot",
+    "start": "three-knot-larger"
+   }
+  ]
+ },
+ {
+  "cell": "fbp|STEPS-2:offshoot|FLOOR1",
+  "column": "nopast: runs with a series giving parts off at 2+ ticks",
+  "mine_and_prototype": [
+   26,
+   24
+  ],
+  "runs": [
+   {
+    "base": "COPY-LAW(OFFSHOOT)",
+    "choice": "NEWEST",
+    "group": "fbp",
+    "knot_law": "nae",
+    "rule": "STEPS-2:offshoot",
+    "start": "Ring(5,3)"
+   },
+   {
+    "base": "COPY-LAW(OFFSHOOT)",
+    "choice": "NEWEST",
+    "group": "fbp",
+    "knot_law": "parity",
+    "rule": "STEPS-2:offshoot",
+    "start": "Ring(5,3)"
+   },
+   {
+    "base": "COPY-LAW(OFFSHOOT)",
+    "choice": "NEWEST",
+    "group": "fbp",
+    "knot_law": "nae",
+    "rule": "STEPS-2:offshoot",
+    "start": "Ring(7,3)"
+   },
+   {
+    "base": "COPY-LAW(OFFSHOOT)",
+    "choice": "NEWEST",
+    "group": "fbp",
+    "knot_law": "parity",
+    "rule": "STEPS-2:offshoot",
+    "start": "Ring(7,3)"
+   },
+   {
+    "base": "COPY-LAW(OFFSHOOT)",
+    "choice": "NEWEST",
+    "group": "fbp",
+    "knot_law": "nae",
+    "rule": "STEPS-2:offshoot",
+    "start": "D2(4,3)"
+   },
+   {
+    "base": "COPY-LAW(OFFSHOOT)",
+    "choice": "NEWEST",
+    "group": "fbp",
+    "knot_law": "parity",
+    "rule": "STEPS-2:offshoot",
+    "start": "D2(4,3)"
+   },
+   {
+    "base": "COPY-LAW(OFFSHOOT)",
+    "choice": "NEWEST",
+    "group": "fbp",
+    "knot_law": "nae",
+    "rule": "STEPS-2:offshoot",
+    "start": "D2(5,3)"
+   },
+   {
+    "base": "COPY-LAW(OFFSHOOT)",
+    "choice": "NEWEST",
+    "group": "fbp",
+    "knot_law": "parity",
+    "rule": "STEPS-2:offshoot",
+    "start": "D2(5,3)"
+   },
+   {
+    "base": "COPY-LAW(OFFSHOOT)",
+    "choice": "NEWEST",
+    "group": "fbp",
+    "knot_law": "nae",
+    "rule": "STEPS-2:offshoot",
+    "start": "D2(6,3)"
+   },
+   {
+    "base": "COPY-LAW(OFFSHOOT)",
+    "choice": "NEWEST",
+    "group": "fbp",
+    "knot_law": "parity",
+    "rule": "STEPS-2:offshoot",
+    "start": "D2(6,3)"
+   },
+   {
+    "base": "COPY-LAW(OFFSHOOT)",
+    "choice": "NEWEST",
+    "group": "fbp",
+    "knot_law": "nae",
+    "rule": "STEPS-2:offshoot",
+    "start": "DW(5,3)"
+   },
+   {
+    "base": "COPY-LAW(OFFSHOOT)",
+    "choice": "NEWEST",
+    "group": "fbp",
+    "knot_law": "parity",
+    "rule": "STEPS-2:offshoot",
+    "start": "DW(5,3)"
+   },
+   {
+    "base": "COPY-LAW(OFFSHOOT)",
+    "choice": "BY-COUNT",
+    "group": "fbp",
+    "knot_law": "nae",
+    "rule": "STEPS-2:offshoot",
+    "start": "two-knot"
+   },
+   {
+    "base": "COPY-LAW(OFFSHOOT)",
+    "choice": "BY-COUNT",
+    "group": "fbp",
+    "knot_law": "parity",
+    "rule": "STEPS-2:offshoot",
+    "start": "two-knot"
+   },
+   {
+    "base": "COPY-LAW(OFFSHOOT)",
+    "choice": "NEWEST",
+    "group": "fbp",
+    "knot_law": "parity",
+    "rule": "STEPS-2:offshoot",
+    "start": "three-knot"
+   },
+   {
+    "base": "COPY-LAW(OFFSHOOT)",
+    "choice": "NEWEST",
+    "group": "fbp",
+    "knot_law": "nae",
+    "rule": "STEPS-2:offshoot",
+    "start": "three-knot"
+   },
+   {
+    "base": "COPY-LAW(WAIT)",
+    "choice": "NEWEST",
+    "group": "fbp",
+    "knot_law": "parity",
+    "rule": "STEPS-2:offshoot",
+    "start": "three-knot"
+   },
+   {
+    "base": "COPY-LAW(WAIT)",
+    "choice": "NEWEST",
+    "group": "fbp",
+    "knot_law": "nae",
+    "rule": "STEPS-2:offshoot",
+    "start": "three-knot"
+   },
+   {
+    "base": "COPY-LAW(OFFSHOOT)",
+    "choice": "OLDEST",
+    "group": "fbp",
+    "knot_law": "nae",
+    "rule": "STEPS-2:offshoot",
+    "start": "three-knot-larger"
+   },
+   {
+    "base": "COPY-LAW(OFFSHOOT)",
+    "choice": "OLDEST",
+    "group": "fbp",
+    "knot_law": "parity",
+    "rule": "STEPS-2:offshoot",
+    "start": "three-knot-larger"
+   },
+   {
+    "base": "COPY-LAW(OFFSHOOT)",
+    "choice": "NEWEST",
+    "group": "fbp",
+    "knot_law": "nae",
+    "rule": "STEPS-2:offshoot",
+    "start": "three-knot-larger"
+   },
+   {
+    "base": "COPY-LAW(OFFSHOOT)",
+    "choice": "NEWEST",
+    "group": "fbp",
+    "knot_law": "parity",
+    "rule": "STEPS-2:offshoot",
+    "start": "three-knot-larger"
+   },
+   {
+    "base": "COPY-LAW(WAIT)",
+    "choice": "NEWEST",
+    "group": "fbp",
+    "knot_law": "nae",
+    "rule": "STEPS-2:offshoot",
+    "start": "three-knot-larger"
+   },
+   {
+    "base": "COPY-LAW(WAIT)",
+    "choice": "NEWEST",
+    "group": "fbp",
+    "knot_law": "parity",
+    "rule": "STEPS-2:offshoot",
+    "start": "three-knot-larger"
+   },
+   {
+    "base": "COPY-LAW(OFFSHOOT)",
+    "choice": "NEWEST",
+    "group": "fbp",
+    "knot_law": "parity",
+    "rule": "STEPS-2:offshoot",
+    "start": "generator7"
+   },
+   {
+    "base": "COPY-LAW(OFFSHOOT)",
+    "choice": "NEWEST",
+    "group": "fbp",
+    "knot_law": "nae",
+    "rule": "STEPS-2:offshoot",
+    "start": "generator7"
+   }
+  ]
+ },
+ {
+  "cell": "fbp|STEPS-3:offshoot|FLOOR1",
+  "column": "nopast: runs with a series giving parts off at 2+ ticks",
+  "mine_and_prototype": [
+   12,
+   8
+  ],
+  "runs": [
+   {
+    "base": "COPY-LAW(OFFSHOOT)",
+    "choice": "BY-COUNT",
+    "group": "fbp",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "two-knot"
+   },
+   {
+    "base": "COPY-LAW(OFFSHOOT)",
+    "choice": "BY-COUNT",
+    "group": "fbp",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "two-knot"
+   },
+   {
+    "base": "COPY-LAW(WAIT)",
+    "choice": "OLDEST",
+    "group": "fbp",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "two-knot"
+   },
+   {
+    "base": "COPY-LAW(WAIT)",
+    "choice": "NEWEST",
+    "group": "fbp",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "two-knot"
+   },
+   {
+    "base": "COPY-LAW(WAIT)",
+    "choice": "OLDEST",
+    "group": "fbp",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "two-knot"
+   },
+   {
+    "base": "COPY-LAW(WAIT)",
+    "choice": "NEWEST",
+    "group": "fbp",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "two-knot"
+   },
+   {
+    "base": "COPY-LAW(WAIT)",
+    "choice": "BY-COUNT",
+    "group": "fbp",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "two-knot"
+   },
+   {
+    "base": "COPY-LAW(WAIT)",
+    "choice": "BY-COUNT",
+    "group": "fbp",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "two-knot"
+   },
+   {
+    "base": "COPY-LAW(WAIT)",
+    "choice": "NEWEST",
+    "group": "fbp",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "three-knot"
+   },
+   {
+    "base": "COPY-LAW(WAIT)",
+    "choice": "NEWEST",
+    "group": "fbp",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "three-knot"
+   },
+   {
+    "base": "COPY-LAW(WAIT)",
+    "choice": "NEWEST",
+    "group": "fbp",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "three-knot-larger"
+   },
+   {
+    "base": "COPY-LAW(WAIT)",
+    "choice": "NEWEST",
+    "group": "fbp",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "three-knot-larger"
+   }
+  ]
+ },
+ {
+  "cell": "fbp|STEPS-3:offshoot|FLOOR1",
+  "column": "past: runs with a series giving parts off at 2+ ticks",
+  "mine_and_prototype": [
+   10,
+   8
+  ],
+  "runs": [
+   {
+    "base": "COPY-LAW(WAIT)",
+    "choice": "OLDEST",
+    "group": "fbp",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "two-knot"
+   },
+   {
+    "base": "COPY-LAW(WAIT)",
+    "choice": "NEWEST",
+    "group": "fbp",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "two-knot"
+   },
+   {
+    "base": "COPY-LAW(WAIT)",
+    "choice": "OLDEST",
+    "group": "fbp",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "two-knot"
+   },
+   {
+    "base": "COPY-LAW(WAIT)",
+    "choice": "NEWEST",
+    "group": "fbp",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "two-knot"
+   },
+   {
+    "base": "COPY-LAW(WAIT)",
+    "choice": "BY-COUNT",
+    "group": "fbp",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "two-knot"
+   },
+   {
+    "base": "COPY-LAW(WAIT)",
+    "choice": "BY-COUNT",
+    "group": "fbp",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "two-knot"
+   },
+   {
+    "base": "COPY-LAW(WAIT)",
+    "choice": "NEWEST",
+    "group": "fbp",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "three-knot"
+   },
+   {
+    "base": "COPY-LAW(WAIT)",
+    "choice": "NEWEST",
+    "group": "fbp",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "three-knot"
+   },
+   {
+    "base": "COPY-LAW(WAIT)",
+    "choice": "NEWEST",
+    "group": "fbp",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "three-knot-larger"
+   },
+   {
+    "base": "COPY-LAW(WAIT)",
+    "choice": "NEWEST",
+    "group": "fbp",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "three-knot-larger"
+   }
+  ]
+ },
+ {
+  "cell": "main|STEPS-1:join|CAP-3",
+  "column": "past: runs with a series giving parts off at 2+ ticks",
+  "mine_and_prototype": [
+   4,
+   2
+  ],
+  "runs": [
+   {
+    "base": "RING-LAW",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-1:join",
+    "start": "Ring(9,3)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-1:join",
+    "start": "Ring(9,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-1:join",
+    "start": "Ring(9,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-1:join",
+    "start": "Ring(9,3)"
+   }
+  ]
+ },
+ {
+  "cell": "main|STEPS-3:offshoot|CAP-3",
+  "column": "nopast: runs with a series giving parts off at 2+ ticks",
+  "mine_and_prototype": [
+   184,
+   182
+  ],
+  "runs": [
+   {
+    "base": "RING-LAW",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(5,3)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "NEWEST",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(5,3)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "NEWEST",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(5,3)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(5,3)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(5,3)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(5,3)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(5,3)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(5,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(5,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "NEWEST",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(5,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "NEWEST",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(5,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(5,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(5,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(5,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(5,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(5,3)"
+   },
+   {
+    "base": "CAP-3(OFFSHOOT)",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(5,3)"
+   },
+   {
+    "base": "CAP-3(OFFSHOOT)",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(5,3)"
+   },
+   {
+    "base": "CAP-3(OFFSHOOT)",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(5,3)"
+   },
+   {
+    "base": "CAP-3(OFFSHOOT)",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(5,3)"
+   },
+   {
+    "base": "CAP-3(OFFSHOOT)",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(5,3)"
+   },
+   {
+    "base": "CAP-3(OFFSHOOT)",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(5,3)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(7,3)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(7,3)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "NEWEST",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(7,3)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "NEWEST",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(7,3)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(7,3)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(7,3)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(7,3)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(7,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(7,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(7,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "NEWEST",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(7,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "NEWEST",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(7,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(7,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(7,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(7,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(7,3)"
+   },
+   {
+    "base": "CAP-3(OFFSHOOT)",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(7,3)"
+   },
+   {
+    "base": "CAP-3(OFFSHOOT)",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(7,3)"
+   },
+   {
+    "base": "CAP-3(OFFSHOOT)",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(7,3)"
+   },
+   {
+    "base": "CAP-3(OFFSHOOT)",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(7,3)"
+   },
+   {
+    "base": "CAP-3(OFFSHOOT)",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(7,3)"
+   },
+   {
+    "base": "CAP-3(OFFSHOOT)",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(7,3)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(9,3)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(9,3)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "NEWEST",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(9,3)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(9,3)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "NEWEST",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(9,3)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(9,3)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(9,3)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(9,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(9,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "NEWEST",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(9,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "NEWEST",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(9,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(9,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(9,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(9,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(9,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(9,3)"
+   },
+   {
+    "base": "CAP-3(OFFSHOOT)",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(9,3)"
+   },
+   {
+    "base": "CAP-3(OFFSHOOT)",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(9,3)"
+   },
+   {
+    "base": "CAP-3(OFFSHOOT)",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(9,3)"
+   },
+   {
+    "base": "CAP-3(OFFSHOOT)",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(9,3)"
+   },
+   {
+    "base": "CAP-3(OFFSHOOT)",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(9,3)"
+   },
+   {
+    "base": "CAP-3(OFFSHOOT)",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(9,3)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(5,4)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(5,4)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(5,4)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "NEWEST",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(5,4)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "NEWEST",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(5,4)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(5,4)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(5,4)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(5,4)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "NEWEST",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(5,4)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "NEWEST",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(5,4)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(5,4)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(5,4)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(5,4)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(5,4)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(5,4)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(5,4)"
+   },
+   {
+    "base": "CAP-3(OFFSHOOT)",
+    "choice": "NEWEST",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(5,4)"
+   },
+   {
+    "base": "CAP-3(OFFSHOOT)",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(5,4)"
+   },
+   {
+    "base": "CAP-3(OFFSHOOT)",
+    "choice": "NEWEST",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(5,4)"
+   },
+   {
+    "base": "CAP-3(OFFSHOOT)",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(5,4)"
+   },
+   {
+    "base": "CAP-3(OFFSHOOT)",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(5,4)"
+   },
+   {
+    "base": "CAP-3(OFFSHOOT)",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(5,4)"
+   },
+   {
+    "base": "CAP-3(OFFSHOOT)",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(5,4)"
+   },
+   {
+    "base": "CAP-3(OFFSHOOT)",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(5,4)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(4,3)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "NEWEST",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(4,3)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(4,3)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(4,3)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(4,3)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "NEWEST",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(4,3)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(4,3)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(4,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(4,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(4,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "NEWEST",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(4,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "NEWEST",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(4,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(4,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(4,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(4,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(4,3)"
+   },
+   {
+    "base": "CAP-3(OFFSHOOT)",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(4,3)"
+   },
+   {
+    "base": "CAP-3(OFFSHOOT)",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(4,3)"
+   },
+   {
+    "base": "CAP-3(OFFSHOOT)",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(4,3)"
+   },
+   {
+    "base": "CAP-3(OFFSHOOT)",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(4,3)"
+   },
+   {
+    "base": "CAP-3(OFFSHOOT)",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(4,3)"
+   },
+   {
+    "base": "CAP-3(OFFSHOOT)",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(4,3)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(5,3)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(5,3)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "NEWEST",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(5,3)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(5,3)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(5,3)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(5,3)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "NEWEST",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(5,3)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(5,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "NEWEST",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(5,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "NEWEST",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(5,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(5,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(5,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(5,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(5,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(5,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(5,3)"
+   },
+   {
+    "base": "CAP-3(OFFSHOOT)",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(5,3)"
+   },
+   {
+    "base": "CAP-3(OFFSHOOT)",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(5,3)"
+   },
+   {
+    "base": "CAP-3(OFFSHOOT)",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(5,3)"
+   },
+   {
+    "base": "CAP-3(OFFSHOOT)",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(5,3)"
+   },
+   {
+    "base": "CAP-3(OFFSHOOT)",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(5,3)"
+   },
+   {
+    "base": "CAP-3(OFFSHOOT)",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(5,3)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(6,3)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(6,3)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "NEWEST",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(6,3)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "NEWEST",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(6,3)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(6,3)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(6,3)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(6,3)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(6,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(6,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(6,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "NEWEST",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(6,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "NEWEST",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(6,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(6,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(6,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(6,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(6,3)"
+   },
+   {
+    "base": "CAP-3(OFFSHOOT)",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(6,3)"
+   },
+   {
+    "base": "CAP-3(OFFSHOOT)",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(6,3)"
+   },
+   {
+    "base": "CAP-3(OFFSHOOT)",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(6,3)"
+   },
+   {
+    "base": "CAP-3(OFFSHOOT)",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(6,3)"
+   },
+   {
+    "base": "CAP-3(OFFSHOOT)",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(6,3)"
+   },
+   {
+    "base": "CAP-3(OFFSHOOT)",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(6,3)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "DW(5,3)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "NEWEST",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "DW(5,3)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "NEWEST",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "DW(5,3)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "DW(5,3)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "DW(5,3)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "DW(5,3)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "DW(5,3)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "DW(5,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "NEWEST",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "DW(5,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "NEWEST",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "DW(5,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "DW(5,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "DW(5,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "DW(5,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "DW(5,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "DW(5,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "DW(5,3)"
+   },
+   {
+    "base": "CAP-3(OFFSHOOT)",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "DW(5,3)"
+   },
+   {
+    "base": "CAP-3(OFFSHOOT)",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "DW(5,3)"
+   },
+   {
+    "base": "CAP-3(OFFSHOOT)",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "DW(5,3)"
+   },
+   {
+    "base": "CAP-3(OFFSHOOT)",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "DW(5,3)"
+   },
+   {
+    "base": "CAP-3(OFFSHOOT)",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "DW(5,3)"
+   },
+   {
+    "base": "CAP-3(OFFSHOOT)",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "DW(5,3)"
+   },
+   {
+    "base": "CAP-3(OFFSHOOT)",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "two-knot"
+   },
+   {
+    "base": "CAP-3(OFFSHOOT)",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "two-knot"
+   },
+   {
+    "base": "CAP-3(OFFSHOOT)",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "two-knot"
+   },
+   {
+    "base": "CAP-3(OFFSHOOT)",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "two-knot"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "generator7"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "generator7"
+   }
+  ]
+ },
+ {
+  "cell": "main|STEPS-3:offshoot|CAP-3",
+  "column": "past: runs with a series giving parts off at 2+ ticks",
+  "mine_and_prototype": [
+   184,
+   182
+  ],
+  "runs": [
+   {
+    "base": "RING-LAW",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(5,3)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "NEWEST",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(5,3)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "NEWEST",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(5,3)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(5,3)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(5,3)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(5,3)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(5,3)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(5,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(5,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "NEWEST",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(5,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "NEWEST",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(5,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(5,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(5,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(5,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(5,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(5,3)"
+   },
+   {
+    "base": "CAP-3(OFFSHOOT)",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(5,3)"
+   },
+   {
+    "base": "CAP-3(OFFSHOOT)",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(5,3)"
+   },
+   {
+    "base": "CAP-3(OFFSHOOT)",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(5,3)"
+   },
+   {
+    "base": "CAP-3(OFFSHOOT)",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(5,3)"
+   },
+   {
+    "base": "CAP-3(OFFSHOOT)",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(5,3)"
+   },
+   {
+    "base": "CAP-3(OFFSHOOT)",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(5,3)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(7,3)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(7,3)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "NEWEST",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(7,3)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "NEWEST",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(7,3)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(7,3)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(7,3)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(7,3)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(7,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(7,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(7,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "NEWEST",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(7,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "NEWEST",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(7,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(7,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(7,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(7,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(7,3)"
+   },
+   {
+    "base": "CAP-3(OFFSHOOT)",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(7,3)"
+   },
+   {
+    "base": "CAP-3(OFFSHOOT)",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(7,3)"
+   },
+   {
+    "base": "CAP-3(OFFSHOOT)",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(7,3)"
+   },
+   {
+    "base": "CAP-3(OFFSHOOT)",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(7,3)"
+   },
+   {
+    "base": "CAP-3(OFFSHOOT)",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(7,3)"
+   },
+   {
+    "base": "CAP-3(OFFSHOOT)",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(7,3)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(9,3)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(9,3)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "NEWEST",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(9,3)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(9,3)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "NEWEST",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(9,3)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(9,3)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(9,3)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(9,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(9,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "NEWEST",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(9,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "NEWEST",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(9,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(9,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(9,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(9,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(9,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(9,3)"
+   },
+   {
+    "base": "CAP-3(OFFSHOOT)",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(9,3)"
+   },
+   {
+    "base": "CAP-3(OFFSHOOT)",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(9,3)"
+   },
+   {
+    "base": "CAP-3(OFFSHOOT)",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(9,3)"
+   },
+   {
+    "base": "CAP-3(OFFSHOOT)",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(9,3)"
+   },
+   {
+    "base": "CAP-3(OFFSHOOT)",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(9,3)"
+   },
+   {
+    "base": "CAP-3(OFFSHOOT)",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(9,3)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(5,4)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(5,4)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(5,4)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "NEWEST",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(5,4)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "NEWEST",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(5,4)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(5,4)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(5,4)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(5,4)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "NEWEST",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(5,4)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "NEWEST",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(5,4)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(5,4)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(5,4)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(5,4)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(5,4)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(5,4)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(5,4)"
+   },
+   {
+    "base": "CAP-3(OFFSHOOT)",
+    "choice": "NEWEST",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(5,4)"
+   },
+   {
+    "base": "CAP-3(OFFSHOOT)",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(5,4)"
+   },
+   {
+    "base": "CAP-3(OFFSHOOT)",
+    "choice": "NEWEST",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(5,4)"
+   },
+   {
+    "base": "CAP-3(OFFSHOOT)",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(5,4)"
+   },
+   {
+    "base": "CAP-3(OFFSHOOT)",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(5,4)"
+   },
+   {
+    "base": "CAP-3(OFFSHOOT)",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(5,4)"
+   },
+   {
+    "base": "CAP-3(OFFSHOOT)",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(5,4)"
+   },
+   {
+    "base": "CAP-3(OFFSHOOT)",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "Ring(5,4)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(4,3)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "NEWEST",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(4,3)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(4,3)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(4,3)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(4,3)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "NEWEST",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(4,3)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(4,3)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(4,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(4,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(4,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "NEWEST",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(4,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "NEWEST",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(4,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(4,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(4,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(4,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(4,3)"
+   },
+   {
+    "base": "CAP-3(OFFSHOOT)",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(4,3)"
+   },
+   {
+    "base": "CAP-3(OFFSHOOT)",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(4,3)"
+   },
+   {
+    "base": "CAP-3(OFFSHOOT)",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(4,3)"
+   },
+   {
+    "base": "CAP-3(OFFSHOOT)",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(4,3)"
+   },
+   {
+    "base": "CAP-3(OFFSHOOT)",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(4,3)"
+   },
+   {
+    "base": "CAP-3(OFFSHOOT)",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(4,3)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(5,3)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(5,3)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "NEWEST",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(5,3)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(5,3)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(5,3)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(5,3)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "NEWEST",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(5,3)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(5,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "NEWEST",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(5,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "NEWEST",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(5,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(5,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(5,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(5,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(5,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(5,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(5,3)"
+   },
+   {
+    "base": "CAP-3(OFFSHOOT)",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(5,3)"
+   },
+   {
+    "base": "CAP-3(OFFSHOOT)",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(5,3)"
+   },
+   {
+    "base": "CAP-3(OFFSHOOT)",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(5,3)"
+   },
+   {
+    "base": "CAP-3(OFFSHOOT)",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(5,3)"
+   },
+   {
+    "base": "CAP-3(OFFSHOOT)",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(5,3)"
+   },
+   {
+    "base": "CAP-3(OFFSHOOT)",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(5,3)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(6,3)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(6,3)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "NEWEST",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(6,3)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "NEWEST",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(6,3)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(6,3)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(6,3)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(6,3)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(6,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(6,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(6,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "NEWEST",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(6,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "NEWEST",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(6,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(6,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(6,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(6,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(6,3)"
+   },
+   {
+    "base": "CAP-3(OFFSHOOT)",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(6,3)"
+   },
+   {
+    "base": "CAP-3(OFFSHOOT)",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(6,3)"
+   },
+   {
+    "base": "CAP-3(OFFSHOOT)",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(6,3)"
+   },
+   {
+    "base": "CAP-3(OFFSHOOT)",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(6,3)"
+   },
+   {
+    "base": "CAP-3(OFFSHOOT)",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(6,3)"
+   },
+   {
+    "base": "CAP-3(OFFSHOOT)",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "D2(6,3)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "DW(5,3)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "NEWEST",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "DW(5,3)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "NEWEST",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "DW(5,3)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "DW(5,3)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "DW(5,3)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "DW(5,3)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "DW(5,3)"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "DW(5,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "NEWEST",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "DW(5,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "NEWEST",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "DW(5,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "DW(5,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "DW(5,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "DW(5,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "DW(5,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "DW(5,3)"
+   },
+   {
+    "base": "RING-LAW+FILLERS",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "DW(5,3)"
+   },
+   {
+    "base": "CAP-3(OFFSHOOT)",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "DW(5,3)"
+   },
+   {
+    "base": "CAP-3(OFFSHOOT)",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "DW(5,3)"
+   },
+   {
+    "base": "CAP-3(OFFSHOOT)",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "DW(5,3)"
+   },
+   {
+    "base": "CAP-3(OFFSHOOT)",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "DW(5,3)"
+   },
+   {
+    "base": "CAP-3(OFFSHOOT)",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "DW(5,3)"
+   },
+   {
+    "base": "CAP-3(OFFSHOOT)",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "DW(5,3)"
+   },
+   {
+    "base": "CAP-3(OFFSHOOT)",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "two-knot"
+   },
+   {
+    "base": "CAP-3(OFFSHOOT)",
+    "choice": "OLDEST",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "two-knot"
+   },
+   {
+    "base": "CAP-3(OFFSHOOT)",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "two-knot"
+   },
+   {
+    "base": "CAP-3(OFFSHOOT)",
+    "choice": "IN-TURN",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "two-knot"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "parity",
+    "rule": "STEPS-3:offshoot",
+    "start": "generator7"
+   },
+   {
+    "base": "RING-LAW",
+    "choice": "BY-COUNT",
+    "group": "main",
+    "knot_law": "nae",
+    "rule": "STEPS-3:offshoot",
+    "start": "generator7"
+   }
+  ]
+ }
+]

@@ -1986,7 +1986,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-25 | A count of descent held by the structure itself (`DESCENT-HELD-20261125-001`) | [closure](proofs/DESCENT-HELD-20261125-001Z/DESCENT-HELD-20261125-001Z-P001_synthesis/proof.md) | [folder](research/DESCENT-HELD-20261125-001/) |
 | 2026-11-25 | How many knots lie within reach, and whether the growing end carries a distance of its own (`KNOTS-WITHIN-REACH-20261125-001`) | — | [folder](research/KNOTS-WITHIN-REACH-20261125-001/) |
 | 2026-11-25 | A made copier: a pattern that, on meeting a second pattern, leaves two of the second (`MADE-COPIER-20261125-001`) | — | [folder](research/MADE-COPIER-20261125-001/) |
-| 2026-11-25 | Time as a fold: a made pattern that counts another pattern's returns (`TIME-AS-FOLD-20261125-001`) | — | [folder](research/TIME-AS-FOLD-20261125-001/) |
+| 2026-11-25 | Time as a fold: a made pattern that counts another pattern's returns (`TIME-AS-FOLD-20261125-001`) | [closure](proofs/TIME-AS-FOLD-20261125-001Z/TIME-AS-FOLD-20261125-001Z-P001_synthesis/proof.md) | [folder](research/TIME-AS-FOLD-20261125-001/) |
 | 2026-11-25 | Which weighting "it's random" means: both countings side by side, and whether a growth law fixes one (`TWO-COUNTINGS-20261125-001`) | [closure](proofs/TWO-COUNTINGS-20261125-001Z/TWO-COUNTINGS-20261125-001Z-P001_synthesis/proof.md) | [folder](research/TWO-COUNTINGS-20261125-001/) |
 | 2026-11-25 | What a birth must carry for a made pattern to read what it meets (`WHAT-A-BIRTH-CARRIES-20261125-001`) | — | [folder](research/WHAT-A-BIRTH-CARRIES-20261125-001/) |
 

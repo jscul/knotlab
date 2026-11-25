@@ -11,6 +11,17 @@ referee pending.
 
 ## The answer
 
+> **Correction, 25 November 2026, later the same day (narrowing; found by the thread in the raw records).** Item 1
+> below and the report at the end say that what exists at one round is of degree 1. That holds for the readings the
+> registered rule could decide. On four census starts, under the ordinary count and under the cap of three with
+> short knots retiring or making offshoots, the roster after 66 rounds is one part of 2,214 members whose count
+> within r steps of a member is exactly 3r² + 3r + 1, the count of a six-regular pattern, through as many as 20
+> steps; the registered reading labelled these "undecided" because the part is not yet wide enough for its range.
+> So a recorded law does make a roster of degree 2 at one round, on those starts. The long-term row of the report
+> ("obstruction learned": no recorded law widens the roster) and direction 1's "no recorded law does it" are
+> superseded: the first step of that direction is already answered in part, positively.
+> [The check](checks/README.md).
+
 The direction asked two things of the structures the recorded laws grow: how the number of knots within r steps of a
 knot grows with r, and whether the growing end carries a distance of its own.
 

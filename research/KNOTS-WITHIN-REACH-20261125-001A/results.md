@@ -20,6 +20,19 @@ as small as seven knots, with loose counts held equal. So nothing here is a coun
 what the growth holds at one round, and nothing at the growing end is a distance beyond what the members' own counts
 explain.**
 
+> **Correction, 25 November 2026, later the same day (narrowing; found by the thread in the raw records).** "What
+> exists at one round reads power 1 ... in every run read" is true only of the readings the registered rule could
+> decide. On four census starts (the three-knot start in which every two knots share a distinction and each holds two
+> loose distinctions, and three four-knot starts), under the ordinary count and under the cap of three with short
+> knots retiring or making offshoots, the roster after 66 rounds is one part of 2,214 members, and the number of its
+> members within r steps of a member is exactly 3r² + 3r + 1, the count of a six-regular pattern, from r = 0 through
+> as many as 20 steps (53 sampled members match through at least 5). The registered reading labelled every one of
+> them "undecided": at 66 rounds the part is not wide enough for a range of a factor 8, and the run at 132 rounds
+> passed the knot bound. So on these starts what exists at one round is of degree 2, under two of the three capped
+> laws as well as the ordinary count, and the last sentence above, "nothing here is a count that grows as a power
+> above 1 in what the growth holds at one round", is withdrawn. P9's verdict stands only as a statement about the
+> registered labels. [The check](../KNOTS-WITHIN-REACH-20261125-001/checks/README.md).
+
 The words. **H(u, r)**, the history count, is the number of knots of every round within r holder steps of knot u, the
 knots that have stopped growing included. **P(u, r)**, the roster count, is the number of members of u's part within r
 steps in the roster after one round: what exists then. A count **reads power j** when it lies between two multiples of

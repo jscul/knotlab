@@ -3351,15 +3351,24 @@ round. A second count asks what lies near one knot: how many knots are within r
 steps of it, a step going from a knot to a knot that shares a distinction with
 it. Read on what exists after one round, under each of three laws that cap a
 birth at three fresh distinctions, the live knots of a part within r steps of
-one of them number about a multiple of r (1,700 readings; in 169 more the whole
-part is within reach, and 283 are undecided); none grows as the square of r or
-faster. Read over every knot ever made, the count does grow as the square of r
-from every knot examined, in 54 runs at the longer of the two lengths grown.
-One of those two powers is the rounds themselves, as a bare ring shows exactly,
-so the square says no more than the first count does. Under the test as it was
-registered, no run gives the square or more from every knot examined on a range
-that lengthens as the rounds double; under looser thresholds 111 runs do, so
-that answer rests on thresholds the study supplied. Among the newest knots, how
+one of them mostly number about a multiple of r (1,700 readings; in 169 more
+the whole part is within reach). On four small starts they number exactly
+3r² + 3r + 1, the count of a six-regular pattern, through as many as 20 steps:
+the start of three knots in which every two share a distinction and each holds
+two more, and three starts of four knots, under the ordinary count and under
+the cap of three with short knots retiring or making offshoots. There the live
+knots are one part that grows by 3 + t/2 + t²/2 births in round t, 2,214 of
+them after 66 rounds, so what exists at one round grows as the square of r.
+The study's registered reading had labelled those counts undecided, the part
+being too small after 66 rounds for the range it asks for, and its first
+summary said that nothing at one round grows faster than r; that was corrected
+the same day from the study's own records. Read over every knot ever made, the
+count grows as the square of r from every knot examined in 54 runs at the
+longer of the two lengths grown; one of those two powers is the rounds
+themselves, as a bare ring shows exactly. Under the test as it was registered,
+no run gives the square or more from every knot examined on a range that
+lengthens as the rounds double; under looser thresholds 111 runs do, so that
+answer rests on thresholds the study supplied. Among the newest knots, how
 strongly a loose distinction of one and a loose distinction of another are
 related is graded, but it does not keep the order of how many steps apart the
 knots are, from a structure of seven knots up. The study counts knots and

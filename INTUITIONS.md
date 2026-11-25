@@ -276,6 +276,12 @@ guide reads a system only through the set of states it allows, which is called
 its **relation**. Two systems that allow the same states are the same relation,
 however differently they are written.
 
+**Places and pairs.** The distinctions a rule names are its **places**. The
+rule A ≠ B names two distinctions, so it is a two-place rule; parity on A, B
+and c names three, so it is a three-place rule. A **pair** is simply two
+distinctions taken together, such as A and B. Neither word means anything
+more: a place is a slot in a rule, and a pair is two of them.
+
 **Symbols.** Rules are written with these symbols:
 
 | Written | Read aloud | Rules out |
@@ -1142,8 +1148,10 @@ counterpart for three-place rules.
 
 ### 3.2 Pairs cannot make a knot; three places can
 
-**Two loops, three places.** A pair here means two distinctions named in one
-rule. It does not mean two loops. The smallest knot does bind two loops, and
+**Two loops, three places.** A place is one of the distinctions a rule names,
+and a pair is two of them (lesson 1.2). So a pair here means two distinctions
+named in one rule. It does not mean two loops. The smallest knot does bind two
+loops, and
 it has three places: the two distinctions the loops bring, A and B, and the
 contact c that binds them (lesson 2.1). In the owner's picture of lesson 1.1
 the two bits are the two loops, and the choice between 00/11 and 01/10 is the
@@ -5340,6 +5348,15 @@ that earlier records used in two senses.
 - **Clause.** An "or" of letters, each possibly negated, such as
   `¬A ∨ ¬B ∨ c`. It rules out one assignment of its own variables, and a list
   of clauses that must all hold is a **CNF** (lesson 1.2).
+- **Place.** One of the distinctions a rule names: a slot in the rule (lesson
+  1.2). A rule that names two distinctions is a two-place rule, and one that
+  names three is a three-place rule. A knot's places are the distinctions it
+  binds; the smallest knot has three, the two loops' distinctions and their
+  contact. The intuition: count the letters in the rule.
+- **Pair.** Two distinctions taken together (lesson 1.2). A two-place rule
+  says something about one pair. It does not mean two loops: the two loops of
+  the smallest knot are a pair of its three places, and what binds them is a
+  rule on all three (lesson 3.2).
 - **Emergence.** What a system of rules shows as a whole and none of its rules
   shows alone, as the Game of Life's patterns do on a grid (lesson 1.3). The
   program places the first emergence at the first knot. The intuition: the

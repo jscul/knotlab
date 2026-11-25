@@ -1,0 +1,255 @@
+{
+ "all_pass": true,
+ "tests": {
+  "T1 sampler: one randrange per take, single candidates call too": {
+   "pass": true,
+   "info": {
+    "got": [
+     9,
+     7,
+     2,
+     4
+    ],
+    "want": [
+     9,
+     7,
+     2,
+     4
+    ]
+   }
+  },
+  "T2 sampler: choices weighted by holders, single candidates call too": {
+   "pass": true,
+   "info": {
+    "got": [
+     1,
+     0,
+     1
+    ]
+   }
+  },
+  "T2 sampler: chance in proportion to holders (3 against 2)": {
+   "pass": true,
+   "info": 0.59715
+  },
+  "T2 hand structure: holders 3 and 2": {
+   "pass": true,
+   "info": null
+  },
+  "seed tokens, STEPS-1": {
+   "pass": true,
+   "info": null
+  },
+  "seed tokens, MET, nae": {
+   "pass": true,
+   "info": null
+  },
+  "seed tokens, STEPS-1, HOLD, holder weighting last of all": {
+   "pass": true,
+   "info": {
+    "g": "C|n5-g40-33323|ORD|CANCEL-RETIRE|parity|0|STEPS-1|HOLD|T2",
+    "c": "C|n5-g40-33323|ORD|CANCEL-RETIRE|parity|0|STEPS-1|HOLD|BY|2|17|T2"
+   }
+  },
+  "the family: 42 laws in the order ration, treatment, taking rule": {
+   "pass": true,
+   "info": null
+  },
+  "FBP is FLOOR1 with the fresh count by parents": {
+   "pass": true,
+   "info": null
+  },
+  "pair rule: more than eight pairs, eight sampled with the registered call": {
+   "pass": true,
+   "info": {
+    "got": [
+     [
+      0,
+      9
+     ],
+     [
+      1,
+      7
+     ],
+     [
+      3,
+      6
+     ],
+     [
+      4,
+      6
+     ],
+     [
+      5,
+      6
+     ],
+     [
+      7,
+      5
+     ],
+     [
+      8,
+      0
+     ],
+     [
+      9,
+      5
+     ]
+    ]
+   }
+  },
+  "pair rule: X a made pattern only": {
+   "pass": true,
+   "info": 45
+  },
+  "pair rule: parts that share a distinction are not wholly apart (removed counted)": {
+   "pass": true,
+   "info": {
+    "parts": [
+     [
+      0
+     ],
+     [
+      1
+     ],
+     [
+      2
+     ]
+    ],
+    "n": 4,
+    "removed": 2
+   }
+  },
+  "reading roster equals the fold engine's roster (members, h, k, maximal met sets, parts, classes)": {
+   "pass": true,
+   "info": {
+    "states": 417,
+    "bad": 0
+   }
+  },
+  "ties read birth by birth equal the basis of the allowed states (eligible places and made ties)": {
+   "pass": true,
+   "info": {
+    "checks": 15819,
+    "bad": 0,
+    "made distinctions tied": 55
+   }
+  },
+  "the take wrapper, inactive, changes nothing (growths equal with the original function)": {
+   "pass": true,
+   "info": null
+  },
+  "cached take candidates equal the fold engine's on every call": {
+   "pass": true,
+   "info": {
+    "births": 16980
+   }
+  },
+  "sampler calls follow birth order, one per take, each a candidate": {
+   "pass": true,
+   "info": {
+    "takes": 742
+   }
+  },
+  "fully masked filter removes a candidate held by the other side": {
+   "pass": true,
+   "info": {
+    "full": [
+     [
+      3
+     ]
+    ],
+    "masked": [
+     []
+    ]
+   }
+  },
+  "fully masked filter leaves a birth with no parent on a side alone": {
+   "pass": true,
+   "info": [
+    [
+     1
+    ]
+   ]
+  },
+  "parity verdicts on the reduced structure equal the fold engine's on the whole (and brute force)": {
+   "pass": true,
+   "info": {
+    "knots": 16515,
+    "bad": 0
+   }
+  },
+  "planted case: X and Y as listed after round 3, Y one met set of two members holding one": {
+   "pass": true,
+   "info": {
+    "parts": [
+     [
+      18,
+      21
+     ],
+     [
+      19,
+      20,
+      22,
+      23,
+      24
+     ]
+    ],
+    "ysig": [
+     2,
+     [
+      [
+       1,
+       0
+      ],
+      [
+       1,
+       0
+      ]
+     ],
+     [
+      2
+     ]
+    ]
+   }
+  },
+  "planted placement gives two parts of Y's form from X only (the form reading met)": {
+   "pass": true,
+   "info": {
+    "got": [
+     "form",
+     "formany_X",
+     "yform_any"
+    ],
+    "counts": {
+     "mixed": 1,
+     "X only": 4
+    },
+    "extra": [
+     31,
+     32,
+     34,
+     35
+    ]
+   }
+  },
+  "planted placement leaves the state itself unchanged": {
+   "pass": true,
+   "info": null
+  },
+  "Fisher one-sided: 7 of 100 against 0 passes at 0.01, 6 does not": {
+   "pass": true,
+   "info": {
+    "p7": 0.007008882758187659,
+    "p6": 0.014465141011578784
+   }
+  },
+  "Agresti-Caffo interval": {
+   "pass": true,
+   "info": [
+    0.0349,
+    0.1612
+   ]
+  }
+ }
+}

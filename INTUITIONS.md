@@ -4102,7 +4102,10 @@ with another barred. In the 16 pairs first asked it did not differ with what
 the other is; in the copier study's first ticket the first pattern's course
 differs with which second pattern is there in 367 of 2,304 pairs of runs,
 under rules that choose by name and from starts that supply the second
-pattern, and whether that goes through their meeting was not tested there. No
+pattern, and whether that goes through their meeting was not tested there. A
+later study tested it: what goes through the meeting is one count that the law
+hands over, through a start knot under the recorded rules and through a knot
+the growth made under two added ones (lesson 10.5). No
 part has built anything from what the other is, and no made pattern leaves two
 of what it meets under the laws tried (B317 and B327, under G15; lesson 10.5).
 And
@@ -5173,6 +5176,28 @@ made a pattern of its own from what it met.
   only whether the other grows can matter; and find a base law under which
   parts come apart under both rations, for a case that remains under a change
   of ration.
+- **What goes through a meeting is a count (computed, referee pending).** One
+  study asked what a birth must receive for a made pattern's course to depend
+  on which pattern it meets
+  ([its decision](research/WHAT-A-BIRTH-CARRIES-20261125-001/decision.md)).
+  Under the recorded ordinary count with the recorded taking rule, the first
+  pattern's first join receives two fresh distinctions and one more for each
+  birth the second pattern makes that round, in every numbering of the start
+  (16,880 runs). So its course differs with how many of the second pattern's
+  members were left usable; the link is a start knot. Under a law that uses no
+  names (a recorded ration with short knots waiting, and a birth taking a
+  shared distinction only when exactly one is on offer), two parts the growth
+  made meet only through a knot the growth made that both descend from, for
+  88 pairs under each knot law, with no change in either's course. With a
+  second rule added by hand (an offshoot receives as many fresh distinctions
+  as its parent had joins asked of it, at least two), 280 pairs meet that way
+  and the first part's course does change with the second barred: by one
+  value at one birth, which says whether the second part's two members made
+  their join, and so whether the parts meet at all. In no case does a
+  difference need more than one value at one birth. So the law hands a count
+  over; no pattern responds to which pattern it meets. What is open (a new
+  sub-goal under G15): a second pattern with two features that reach the
+  first at different births, so that a count cannot be the whole difference.
 - **B326, an index made by the growth (G15).** The owner, by 24 November 2026
   (Pacific time): "This is why we may need 'function-like' logical operations
   where we can reference/sample logic. These are basically meeting patterns
@@ -5855,7 +5880,12 @@ that earlier records used in two senses.
   ([PARTS-MEET-AGAIN-20261124-001](research/PARTS-MEET-AGAIN-20261124-001/decision.md),
   computed, referee pending) such a knot was among the common knots of the
   members of two parts that had come apart and were one part again for 62
-  pairs, and the only one for 6; it was always a start knot (lesson 10.3).
+  pairs, and the only one for 6; it was always a start knot (lesson 10.3). A
+  later study found one made by births: under a law that uses no names, two
+  parts the growth made meet only through a knot the growth made that both
+  descend from, for 88 pairs under each knot law
+  ([WHAT-A-BIRTH-CARRIES-20261125-001](research/WHAT-A-BIRTH-CARRIES-20261125-001/decision.md),
+  computed, referee pending; lesson 10.5).
 - **Course of a part; with-and-without test.** The **course** of a part X of
   the live roster after round s is what X and its descendants build, round by
   round: each birth whose parents all lie among them, with its parents, what

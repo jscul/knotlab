@@ -169,7 +169,7 @@ The limit that matters: the meeting here is supplied. The two seeds share a star
 | This attempt — the third probe of sub-goal B335: the place fixed, the form changed | **Status:** Partially successful | On built starts a part's making follows the form of what it is attached to, in kind, by more than a count, partly through made knots. Not shown between parts the growth made. |
 | Local direction — form-following on built starts | Continue | The result is a probe's; a registered study with an independent engine would make it one of the record's. |
 | Broader exploration — the owner's fold of emergence | Known alternatives | The same between two made parts meeting through a made knot; the third property; the copier study. |
-| Long-term goal — G15 Learning: a point in a learned knot pattern, with G18 Comparing growth laws | Capability gained | The first showing that what a part makes depends on what the other part is, not only on whether it is there. |
+| Long-term goal — G15 Learning: a point in a learned knot pattern, with G18 Comparing growth laws | Capability gained | What a part makes is shown to follow the form of what it is attached to, in kind and by more than one count, where the record had one count or one bit. |
 
 **Next step:** Continue — selected: #1
 

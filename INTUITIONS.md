@@ -5250,9 +5250,18 @@ made a pattern of its own from what it met.
   value at one birth, which says whether the second part's two members made
   their join, and so whether the parts meet at all. In no case does a
   difference need more than one value at one birth. So the law hands a count
-  over; no pattern responds to which pattern it meets. What is open (a new
-  sub-goal under G15): a second pattern with two features that reach the
-  first at different births, so that a count cannot be the whole difference.
+  over; no pattern responds to which pattern it meets. A probe by the thread
+  afterwards, not a registered study, grew a first part with two second
+  parts, each barred or not
+  ([the probe](research/WHAT-A-BIRTH-CARRIES-20261125-001/checks/two_by_two/README.md)).
+  The first part's course tells how many of them were barred and never
+  which: the parts that meet through made knots are branches of one knot,
+  alike, and they all meet in the round after they separate (5,091 triples;
+  6,525 pairs of second parts on 196 census starts, every pair alike). Where
+  the second parts are not alike, the first part does not respond. What is
+  open (a sub-goal under G15): a law without names under which parts that do
+  not descend from one knot come to meet, so that a count cannot be the whole
+  difference.
 - **B326, an index made by the growth (G15).** The owner, by 24 November 2026
   (Pacific time): "This is why we may need 'function-like' logical operations
   where we can reference/sample logic. These are basically meeting patterns

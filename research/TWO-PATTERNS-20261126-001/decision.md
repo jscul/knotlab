@@ -6,6 +6,35 @@ by the thread, none registered: computed on the cases named; referee pending.
 [The owner's request](owner_request.md) · [the bench](bench/README.md) · [the toy](toy/README.md) ·
 [the census](census/README.md) · [the report as sent](report_1.md) · [referee hand-off](referee_handoff.md)
 
+> **Referee report R1, 26 November 2026: confirmed with fixes, no block** ([the report](referee-R1/report.md)). An
+> independent growth regrew 52 recorded cases and matched all 6,957 saved values; the tables, the census's merge of
+> its two launches and the toy's agreement were rebuilt. Read this note with these narrowings.
+> - **The headline is a bounded finding.** No mark was first heard by a pattern's own knots after round 6 in the
+>   comparisons made: 13,210 bench marks and 89,466 census marks still unheard after round 6 had a seventh round to
+>   compare. None needed seven witnessed steps (the deepest finite route was five on the bench, two in the census),
+>   so depth alone could not have given a later first hearing; but one census mark a single witnessed step away was
+>   first heard in round 6, so a first hearing can be slow. Unmarked growths ran 6 to 12 rounds on the bench and 6 to
+>   10 in the census. "What the other is crosses in the first rounds or never" reads: no added loose distinction was
+>   first heard by own knots after round 6 in the comparisons made.
+> - **The reason is funding, not the absence of cancelled joins.** Own births equal those with a stub (36 of 36, 1,980
+>   of 1,980) for meetings funded on both sides with nothing taken, by the referee's argument: with nothing taken
+>   each new knot is funded when it first acts, so the receiver's next groups are those of the stub's run. "A change
+>   reaches a pattern's own knots only through a cancelled join" is false in general: in the census a bare shared
+>   distinction changes own births from two to three with no knot short and nothing cancelled, and with the take
+>   that acts 5 of 168 marks are heard at an ordinary meeting. "Everything the two have to do with each other is in
+>   the knots that descend from both" says more than the two comparisons made.
+> - **Joins stop early on the bench's meetings.** The round-5 bound holds for the bench's meetings with nothing taken
+>   under a cap of three or "just enough for three"; in the census 158 meetings under the cap with waiting kept a
+>   join later. Under the eight owing rations no join is kept after round 2 on the bench, though groups persist.
+> - **Retirement, slow growth, the table.** Ten bench rows counted a retirement with no later round to compare; "481
+>   of 990 pairs" is the union over treatments (481 to 489 with eight missing waits). In the table of two lines each
+>   parent that is itself of both is one place back (264 links); 48 links lead to own knots; three parts give 1, 3,
+>   6, … from round 3 under waiting. Credit for the table goes to the connected-set description of births
+>   (`CHAIN-IDENT-20261119-001`) and the two-holder study (`DOUBLE-IDENT-20261119-001`).
+> - **The toy** agrees with the bench on every menu setting (2,592 settings, 21,979 rounds), but it shows growth and
+>   retirement only, not marks, takes, the stub comparison or the table; and its stub can give a pattern different
+>   own births from growing alone.
+
 ## What stands
 
 1. **No mark is first heard late.** A mark is one more loose distinction at a start knot of the other pattern. In

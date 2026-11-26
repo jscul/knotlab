@@ -1,0 +1,384 @@
+{
+  "bench_owing": {
+    "delay example": {
+      "a": "ring",
+      "b": "ring",
+      "case law": [
+        "PARENT-OWING",
+        "CANCEL-WAIT",
+        null
+      ],
+      "join": "share",
+      "other mark index": 1,
+      "receiver": "A",
+      "round": 4,
+      "steps": 1,
+      "witnessed steps": 1
+    },
+    "histograms": {
+      "common comparison length capped at seven": {
+        "7": 8064
+      },
+      "nominal joins plus internal sharings": {
+        "1": 576,
+        "2": 1536,
+        "3": 2304,
+        "4": 2112,
+        "5": 1152,
+        "6": 384
+      },
+      "unheard through six with a seventh comparison by witnessed steps": {
+        "1": 1031,
+        "2": 3022,
+        "3": 2016,
+        "4": 960,
+        "5": 384,
+        "unreachable": 288
+      },
+      "witnessed step count": {
+        "1": 1344,
+        "2": 3072,
+        "3": 2016,
+        "4": 960,
+        "5": 384,
+        "unreachable": 288
+      },
+      "witnessed steps and joint first hearing": {
+        "1, 1": 168,
+        "1, 2": 183,
+        "1, 3": 24,
+        "1, None": 969,
+        "2, 2": 32,
+        "2, 3": 13,
+        "2, None": 3027,
+        "3, None": 2016,
+        "4, None": 960,
+        "5, None": 384,
+        "unreachable, None": 288
+      },
+      "witnessed steps and own first hearing": {
+        "1, 1": 206,
+        "1, 2": 73,
+        "1, 3": 10,
+        "1, 4": 24,
+        "1, None": 1031,
+        "2, 2": 48,
+        "2, 3": 2,
+        "2, None": 3022,
+        "3, None": 2016,
+        "4, None": 960,
+        "5, None": 384,
+        "unreachable, None": 288
+      }
+    },
+    "totals": {
+      "cases: marked": 864,
+      "cases: some mark through seven": 864,
+      "cases: some unheard mark with a seventh comparison": 864,
+      "cases: such a reachable mark": 864,
+      "cases: unmarked through seven": 864,
+      "mark comparisons through seven": 8064,
+      "marks": 8064,
+      "marks not heard by six in recorded window": 7701,
+      "own first hearing later than finite witnessed depth": 109,
+      "own first hearing later than witnessed depth or initially unreachable": 109,
+      "such marks initially reachable by witnessed steps": 7413,
+      "unheard through six with a seventh comparison": 7701
+    }
+  },
+  "bench_runs": {
+    "delay example": {
+      "a": "ring",
+      "b": "ring",
+      "case law": [
+        "CAP-3",
+        "CANCEL-WAIT",
+        null
+      ],
+      "join": "share",
+      "other mark index": 1,
+      "receiver": "A",
+      "round": 3,
+      "steps": 1,
+      "witnessed steps": 1
+    },
+    "histograms": {
+      "common comparison length capped at seven": {
+        "6": 1,
+        "7": 2974
+      },
+      "nominal joins plus internal sharings": {
+        "1": 216,
+        "2": 572,
+        "3": 853,
+        "4": 778,
+        "5": 418,
+        "6": 138
+      },
+      "unheard through six with a seventh comparison by witnessed steps": {
+        "1": 387,
+        "2": 1112,
+        "3": 736,
+        "4": 360,
+        "5": 144,
+        "unreachable": 108
+      },
+      "witnessed step count": {
+        "1": 500,
+        "2": 1127,
+        "3": 736,
+        "4": 360,
+        "5": 144,
+        "unreachable": 108
+      },
+      "witnessed steps and joint first hearing": {
+        "1, 1": 168,
+        "1, 2": 30,
+        "1, 3": 11,
+        "1, 4": 8,
+        "1, 5": 2,
+        "1, None": 281,
+        "2, 1": 4,
+        "2, 2": 142,
+        "2, 3": 27,
+        "2, 4": 14,
+        "2, None": 940,
+        "3, 2": 4,
+        "3, 3": 160,
+        "3, 4": 8,
+        "3, 6": 6,
+        "3, None": 558,
+        "4, 3": 4,
+        "4, 4": 116,
+        "4, None": 240,
+        "5, 5": 48,
+        "5, None": 96,
+        "unreachable, None": 108
+      },
+      "witnessed steps and own first hearing": {
+        "1, 1": 71,
+        "1, 2": 33,
+        "1, 3": 9,
+        "1, None": 387,
+        "2, 2": 12,
+        "2, 3": 3,
+        "2, None": 1112,
+        "3, None": 736,
+        "4, None": 360,
+        "5, None": 144,
+        "unreachable, None": 108
+      }
+    },
+    "totals": {
+      "cases: marked": 320,
+      "cases: some mark through seven": 320,
+      "cases: some unheard mark with a seventh comparison": 320,
+      "cases: such a reachable mark": 320,
+      "cases: unmarked through seven": 320,
+      "mark comparisons through seven": 2974,
+      "marks": 2975,
+      "marks not heard by six in recorded window": 2847,
+      "own first hearing later than finite witnessed depth": 45,
+      "own first hearing later than witnessed depth or initially unreachable": 45,
+      "such marks initially reachable by witnessed steps": 2739,
+      "unheard through six with a seventh comparison": 2847
+    }
+  },
+  "bench_take_marks": {
+    "delay example": {
+      "a": "ring",
+      "b": "ring",
+      "case law": [
+        "CAP-3",
+        "CANCEL-WAIT",
+        "MET-SOLE"
+      ],
+      "join": "share",
+      "other mark index": 2,
+      "receiver": "A",
+      "round": 6,
+      "steps": 2,
+      "witnessed steps": 2
+    },
+    "histograms": {
+      "common comparison length capped at seven": {
+        "5": 2,
+        "6": 25,
+        "7": 2810
+      },
+      "nominal joins plus internal sharings": {
+        "1": 198,
+        "2": 537,
+        "3": 810,
+        "4": 742,
+        "5": 410,
+        "6": 140
+      },
+      "unheard through six with a seventh comparison by witnessed steps": {
+        "1": 328,
+        "2": 995,
+        "3": 730,
+        "4": 360,
+        "5": 144,
+        "unreachable": 105
+      },
+      "witnessed step count": {
+        "1": 447,
+        "2": 1048,
+        "3": 730,
+        "4": 360,
+        "5": 144,
+        "unreachable": 108
+      },
+      "witnessed steps and joint first hearing": {
+        "1, 1": 94,
+        "1, 2": 45,
+        "1, 3": 6,
+        "1, 4": 4,
+        "1, 7": 2,
+        "1, None": 296,
+        "2, 1": 4,
+        "2, 2": 149,
+        "2, 3": 21,
+        "2, 4": 10,
+        "2, 6": 4,
+        "2, None": 860,
+        "3, 2": 22,
+        "3, 3": 134,
+        "3, 4": 10,
+        "3, 6": 6,
+        "3, None": 558,
+        "4, 3": 22,
+        "4, 4": 98,
+        "4, None": 240,
+        "5, 4": 18,
+        "5, 5": 30,
+        "5, None": 96,
+        "unreachable, 1": 6,
+        "unreachable, 2": 6,
+        "unreachable, 3": 6,
+        "unreachable, None": 90
+      },
+      "witnessed steps and own first hearing": {
+        "1, 1": 78,
+        "1, 2": 25,
+        "1, 3": 7,
+        "1, None": 337,
+        "2, 1": 4,
+        "2, 2": 28,
+        "2, 3": 3,
+        "2, 4": 4,
+        "2, 6": 4,
+        "2, None": 1005,
+        "3, None": 730,
+        "4, None": 360,
+        "5, None": 144,
+        "unreachable, 1": 3,
+        "unreachable, None": 105
+      }
+    },
+    "totals": {
+      "cases: marked": 300,
+      "cases: some mark through seven": 298,
+      "cases: some unheard mark with a seventh comparison": 298,
+      "cases: such a reachable mark": 295,
+      "cases: unmarked through seven": 298,
+      "mark comparisons through seven": 2810,
+      "marks": 2837,
+      "marks not heard by six in recorded window": 2681,
+      "own first hearing later than finite witnessed depth": 43,
+      "own first hearing later than witnessed depth or initially unreachable": 46,
+      "such marks initially reachable by witnessed steps": 2557,
+      "unheard through six with a seventh comparison": 2662
+    }
+  },
+  "census horizon reconstruction": {
+    "checked unmarked horizons (truncated at seven)": 17809,
+    "counts at final round checked when original ended by seven": 21,
+    "independent sample cross-check": {
+      "census archive rows": 24,
+      "marked comparison lengths checked against full growth": 135
+    },
+    "seconds": 73.862,
+    "unique inputs": 53437,
+    "unmarked knot totals checked round by round": 124659
+  },
+  "census_runs": {
+    "delay example": {
+      "a": "g7:112@0",
+      "b": "g7:112@2",
+      "case law": [
+        "ORD",
+        "CANCEL-WAIT"
+      ],
+      "join": "share",
+      "other mark index": 0,
+      "receiver": "B",
+      "round": 6,
+      "steps": 1,
+      "witnessed steps": 1
+    },
+    "histograms": {
+      "common comparison length capped at seven": {
+        "6": 54,
+        "7": 101940
+      },
+      "nominal joins plus internal sharings": {
+        "1": 35618,
+        "2": 56656,
+        "3": 9720
+      },
+      "unheard through six with a seventh comparison by witnessed steps": {
+        "1": 51097,
+        "2": 24248,
+        "unreachable": 14121
+      },
+      "witnessed step count": {
+        "1": 63519,
+        "2": 24354,
+        "unreachable": 14121
+      },
+      "witnessed steps and joint first hearing": {
+        "1, 1": 24874,
+        "1, 2": 5423,
+        "1, 3": 2426,
+        "1, 4": 290,
+        "1, 5": 26,
+        "1, None": 30480,
+        "2, 2": 8814,
+        "2, 3": 781,
+        "2, 4": 6,
+        "2, None": 14753,
+        "unreachable, None": 14121
+      },
+      "witnessed steps and own first hearing": {
+        "1, 1": 6706,
+        "1, 2": 3988,
+        "1, 3": 1471,
+        "1, 4": 190,
+        "1, 5": 25,
+        "1, 6": 4,
+        "1, None": 51135,
+        "2, 3": 79,
+        "2, 4": 3,
+        "2, 5": 24,
+        "2, None": 24248,
+        "unreachable, None": 14121
+      }
+    },
+    "totals": {
+      "cases: marked": 17809,
+      "cases: some mark through seven": 17805,
+      "cases: some unheard mark with a seventh comparison": 17736,
+      "cases: such a reachable mark": 17655,
+      "cases: unmarked through seven": 17805,
+      "mark comparisons through seven": 101940,
+      "marks": 101994,
+      "marks not heard by six in recorded window": 89504,
+      "own first hearing later than finite witnessed depth": 5784,
+      "own first hearing later than witnessed depth or initially unreachable": 5784,
+      "such marks initially reachable by witnessed steps": 75345,
+      "unheard through six with a seventh comparison": 89466
+    }
+  }
+}

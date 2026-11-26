@@ -3,9 +3,13 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 26 November 2026 · Two patterns in one start refereed: confirmed, with narrowings
+
+**Corrections from [an independent referee's report](research/TWO-PATTERNS-20261126-001/referee-R1/report.md), folded into [the decision](research/TWO-PATTERNS-20261126-001/decision.md).** An independent growth matched all 6,957 saved values of 52 regrown cases, and no mark was first heard by a pattern's own knots after round 6. Narrowed: that is a bounded finding in the comparisons made, not "what the other is crosses early or never": no mark needed seven witnessed steps, but one a single step away was first heard in round 6. The equality of own births with a stub holds for meetings funded on both sides with nothing taken, because every new knot is funded when it first acts; "a change reaches own knots only through a cancelled join" is false in general (a bare shared distinction changes own births with no knot short). The early end of joins holds for the bench's meetings, not for 158 census meetings under the cap with waiting. In the table two parts make together, 48 parent links lead to a part's own knots rather than one place back, and its credit goes to the earlier connected-set and two-holder studies. The toy shows growth and retirement, not marks, takes, the stub or the table.
+
 ## 26 November 2026 · Two patterns in one start: a joint growth misdescribed for half an hour
 
-**The bench note of the study of two patterns in one start said two two-knot parts sharing a distinction make two joint knots in every round.** Two is the number of joins kept each round; the knots of both made in a round are 2, 4, 6 and on, two more each round. [The note](research/TWO-PATTERNS-20261126-001/bench/README.md) is corrected; its other counts stand.
+**The bench note of the study of two patterns in one start said two two-knot parts sharing a distinction make two joint knots in every round.** Two is the number of joins kept each round; the knots of both made in a round are 2, 4, 6 and on, two more each round. [The note](research/TWO-PATTERNS-20261126-001/bench/README.md) is corrected for that count; the study's referee has since narrowed several of its other statements (the entry above).
 
 ## 26 November 2026 · A rating said "nothing" where the record has a thin case
 

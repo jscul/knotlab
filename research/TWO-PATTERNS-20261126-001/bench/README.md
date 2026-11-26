@@ -1,5 +1,8 @@
 # A bench for two patterns joined in one start
 
+> **Referee report R1 (26 November 2026): confirmed with fixes, no block.** Read this note with the narrowings in
+> [the decision](../decision.md) and [the report](../referee-R1/report.md).
+
 First direction of `TWO-PATTERNS-20261126-001`, at the owner's word ([request](../owner_request.md)). A check by the
 thread, not a registered study; computed on the cases named; referee pending. This file was begun before the first
 full run; the section "Expected" was written then, after one case had been seen while the program was being tried

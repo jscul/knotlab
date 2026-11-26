@@ -1,0 +1,796 @@
+{
+  "case_limits": "full documented round and knot bounds, one process, 3 GiB address space; independent per-roster work ceilings in regrow_engine.py",
+  "closure": "9b6dad2e0c",
+  "directed_additions": "singleton/copier both joins, four census sixth-round cases, the bench sixth-round case, and ring/source one-step ordinary meeting",
+  "frames": {
+    "bench": {
+      "closed_rows": 1296,
+      "completed": 1277,
+      "compressed_sha256": "83c4c38585f273ca8b5064169eae8201c02be55c1b2906d49809269ef3eb2066",
+      "eligible": 780,
+      "strata": {
+        "('CAP-3', 'MET-SOLE')": 108,
+        "('CAP-3', 'STEPS1-SOLE')": 108,
+        "('CAP-3', 'STEPS2-SOLE')": 108,
+        "('CAP-3', None)": 108,
+        "('FLOOR1', 'MET-SOLE')": 59,
+        "('FLOOR1', 'STEPS1-SOLE')": 56,
+        "('FLOOR1', 'STEPS2-SOLE')": 56,
+        "('FLOOR1', None)": 56,
+        "('ORD', 'MET-SOLE')": 29,
+        "('ORD', 'STEPS1-SOLE')": 32,
+        "('ORD', 'STEPS2-SOLE')": 32,
+        "('ORD', None)": 28
+      },
+      "weighting_within_stratum": "one uniform draw without replacement"
+    },
+    "bench owing": {
+      "closed_rows": 864,
+      "completed": 864,
+      "compressed_sha256": "954b20c5fae5b98fa4a7184bad050b2c6e9285d93be16dea183e703a11388d40",
+      "eligible": 363,
+      "strata": {
+        "('MOD2', None)": 7,
+        "('OFFSHOOT-THREE', None)": 6,
+        "('OFFSHOOT-TWO', None)": 56,
+        "('PARENT-OWING', None)": 50,
+        "('PARENT-OWING-1', None)": 91,
+        "('PARENT-OWING-CAP3', None)": 53,
+        "('PARENT-OWING-CAP4', None)": 50,
+        "('PARENT-OWING-PLAIN', None)": 50
+      },
+      "weighting_within_stratum": "one uniform draw without replacement"
+    },
+    "bench take with marks": {
+      "closed_rows": 324,
+      "completed": 300,
+      "compressed_sha256": "db1af289965545c7546dfc5a2ddf91d18c2328e43aa3fac8d00dce43e2838e28",
+      "eligible": 181,
+      "strata": {
+        "('meeting', 'CAP-3')": 54,
+        "('meeting', 'FLOOR1')": 30,
+        "('meeting', 'ORD')": 2,
+        "('share', 'CAP-3')": 54,
+        "('share', 'FLOOR1')": 29,
+        "('share', 'ORD')": 12
+      },
+      "weighting_within_stratum": "one uniform draw without replacement"
+    },
+    "census": {
+      "closed_rows": 17820,
+      "completed": 17809,
+      "compressed_sha256": "df1a3a702931306ee67a4dc781ab2e57f68f2352c479a5d6fb116536699b7d00",
+      "eligible": 17718,
+      "strata": {
+        "('meeting', 'CAP-3', 'CANCEL-OFFSHOOT')": 990,
+        "('meeting', 'CAP-3', 'CANCEL-RETIRE')": 990,
+        "('meeting', 'CAP-3', 'CANCEL-WAIT')": 990,
+        "('meeting', 'FLOOR1', 'CANCEL-OFFSHOOT')": 990,
+        "('meeting', 'FLOOR1', 'CANCEL-RETIRE')": 990,
+        "('meeting', 'FLOOR1', 'CANCEL-WAIT')": 990,
+        "('meeting', 'ORD', 'CANCEL-OFFSHOOT')": 980,
+        "('meeting', 'ORD', 'CANCEL-RETIRE')": 973,
+        "('meeting', 'ORD', 'CANCEL-WAIT')": 971,
+        "('share', 'CAP-3', 'CANCEL-OFFSHOOT')": 990,
+        "('share', 'CAP-3', 'CANCEL-RETIRE')": 990,
+        "('share', 'CAP-3', 'CANCEL-WAIT')": 990,
+        "('share', 'FLOOR1', 'CANCEL-OFFSHOOT')": 990,
+        "('share', 'FLOOR1', 'CANCEL-RETIRE')": 990,
+        "('share', 'FLOOR1', 'CANCEL-WAIT')": 990,
+        "('share', 'ORD', 'CANCEL-OFFSHOOT')": 990,
+        "('share', 'ORD', 'CANCEL-RETIRE')": 990,
+        "('share', 'ORD', 'CANCEL-WAIT')": 934
+      },
+      "weighting_within_stratum": "one uniform draw without replacement"
+    }
+  },
+  "jobs": [
+    {
+      "A": "ring",
+      "B": "ring",
+      "archive": "bench",
+      "join": "share",
+      "law": [
+        "CAP-3",
+        "CANCEL-WAIT",
+        "MET-SOLE"
+      ],
+      "line": 505,
+      "steps": 3
+    },
+    {
+      "A": "ring",
+      "B": "ring",
+      "archive": "bench",
+      "join": "share",
+      "law": [
+        "CAP-3",
+        "CANCEL-OFFSHOOT",
+        "STEPS1-SOLE"
+      ],
+      "line": 813,
+      "steps": 1
+    },
+    {
+      "A": "ring",
+      "B": "ring",
+      "archive": "bench",
+      "join": "meeting",
+      "law": [
+        "CAP-3",
+        "CANCEL-RETIRE",
+        "STEPS2-SOLE"
+      ],
+      "line": 983,
+      "steps": 2
+    },
+    {
+      "A": "ring",
+      "B": "source",
+      "archive": "bench",
+      "join": "share",
+      "law": [
+        "CAP-3",
+        "CANCEL-RETIRE",
+        null
+      ],
+      "line": 236,
+      "steps": 3
+    },
+    {
+      "A": "copier",
+      "B": "copier",
+      "archive": "bench",
+      "join": "share",
+      "law": [
+        "FLOOR1",
+        "CANCEL-OFFSHOOT",
+        "MET-SOLE"
+      ],
+      "line": 573,
+      "steps": 1
+    },
+    {
+      "A": "ring",
+      "B": "copier",
+      "archive": "bench",
+      "join": "meeting",
+      "law": [
+        "FLOOR1",
+        "CANCEL-RETIRE",
+        "STEPS1-SOLE"
+      ],
+      "line": 698,
+      "steps": 3
+    },
+    {
+      "A": "source",
+      "B": "source",
+      "archive": "bench",
+      "join": "share",
+      "law": [
+        "FLOOR1",
+        "CANCEL-WAIT",
+        "STEPS2-SOLE"
+      ],
+      "line": 1291,
+      "steps": 3
+    },
+    {
+      "A": "copier",
+      "B": "source",
+      "archive": "bench",
+      "join": "meeting",
+      "law": [
+        "FLOOR1",
+        "CANCEL-RETIRE",
+        null
+      ],
+      "line": 122,
+      "steps": 2
+    },
+    {
+      "A": "ring",
+      "B": "copier",
+      "archive": "bench",
+      "join": "share",
+      "law": [
+        "ORD",
+        "CANCEL-RETIRE",
+        "MET-SOLE"
+      ],
+      "line": 530,
+      "steps": 2
+    },
+    {
+      "A": "copier",
+      "B": "copier",
+      "archive": "bench",
+      "join": "share",
+      "law": [
+        "ORD",
+        "CANCEL-WAIT",
+        "STEPS1-SOLE"
+      ],
+      "line": 907,
+      "steps": 2
+    },
+    {
+      "A": "copier",
+      "B": "copier",
+      "archive": "bench",
+      "join": "share",
+      "law": [
+        "ORD",
+        "CANCEL-RETIRE",
+        "STEPS2-SOLE"
+      ],
+      "line": 1241,
+      "steps": 3
+    },
+    {
+      "A": "copier",
+      "B": "copier",
+      "archive": "bench",
+      "join": "meeting",
+      "law": [
+        "ORD",
+        "CANCEL-WAIT",
+        null
+      ],
+      "line": 97,
+      "steps": 2
+    },
+    {
+      "A": "ring",
+      "B": "source",
+      "archive": "bench take with marks",
+      "join": "meeting",
+      "law": [
+        "CAP-3",
+        "CANCEL-OFFSHOOT",
+        "MET-SOLE"
+      ],
+      "line": 75,
+      "steps": 3
+    },
+    {
+      "A": "ring",
+      "B": "source",
+      "archive": "bench take with marks",
+      "join": "meeting",
+      "law": [
+        "FLOOR1",
+        "CANCEL-RETIRE",
+        "MET-SOLE"
+      ],
+      "line": 77,
+      "steps": 3
+    },
+    {
+      "A": "copier",
+      "B": "copier",
+      "archive": "bench take with marks",
+      "join": "meeting",
+      "law": [
+        "ORD",
+        "CANCEL-WAIT",
+        "MET-SOLE"
+      ],
+      "line": 97,
+      "steps": 2
+    },
+    {
+      "A": "copier",
+      "B": "copier",
+      "archive": "bench take with marks",
+      "join": "share",
+      "law": [
+        "CAP-3",
+        "CANCEL-RETIRE",
+        "MET-SOLE"
+      ],
+      "line": 263,
+      "steps": 3
+    },
+    {
+      "A": "source",
+      "B": "source",
+      "archive": "bench take with marks",
+      "join": "share",
+      "law": [
+        "FLOOR1",
+        "CANCEL-WAIT",
+        "MET-SOLE"
+      ],
+      "line": 310,
+      "steps": 2
+    },
+    {
+      "A": "ring",
+      "B": "source",
+      "archive": "bench take with marks",
+      "join": "share",
+      "law": [
+        "ORD",
+        "CANCEL-RETIRE",
+        "MET-SOLE"
+      ],
+      "line": 224,
+      "steps": 1
+    },
+    {
+      "A": "source",
+      "B": "source",
+      "archive": "bench owing",
+      "join": "meeting",
+      "law": [
+        "MOD2",
+        "CANCEL-WAIT",
+        null
+      ],
+      "line": 430,
+      "steps": 3
+    },
+    {
+      "A": "source",
+      "B": "source",
+      "archive": "bench owing",
+      "join": "meeting",
+      "law": [
+        "OFFSHOOT-THREE",
+        "CANCEL-RETIRE",
+        null
+      ],
+      "line": 422,
+      "steps": 3
+    },
+    {
+      "A": "ring",
+      "B": "source",
+      "archive": "bench owing",
+      "join": "share",
+      "law": [
+        "OFFSHOOT-TWO",
+        "CANCEL-WAIT",
+        null
+      ],
+      "line": 610,
+      "steps": 2
+    },
+    {
+      "A": "source",
+      "B": "source",
+      "archive": "bench owing",
+      "join": "meeting",
+      "law": [
+        "PARENT-OWING",
+        "CANCEL-WAIT",
+        null
+      ],
+      "line": 409,
+      "steps": 3
+    },
+    {
+      "A": "ring",
+      "B": "ring",
+      "archive": "bench owing",
+      "join": "share",
+      "law": [
+        "PARENT-OWING-1",
+        "CANCEL-RETIRE",
+        null
+      ],
+      "line": 473,
+      "steps": 2
+    },
+    {
+      "A": "copier",
+      "B": "copier",
+      "archive": "bench owing",
+      "join": "share",
+      "law": [
+        "PARENT-OWING-CAP3",
+        "CANCEL-WAIT",
+        null
+      ],
+      "line": 676,
+      "steps": 2
+    },
+    {
+      "A": "source",
+      "B": "source",
+      "archive": "bench owing",
+      "join": "meeting",
+      "law": [
+        "PARENT-OWING-CAP4",
+        "CANCEL-WAIT",
+        null
+      ],
+      "line": 391,
+      "steps": 2
+    },
+    {
+      "A": "source",
+      "B": "source",
+      "archive": "bench owing",
+      "join": "meeting",
+      "law": [
+        "PARENT-OWING-PLAIN",
+        "CANCEL-WAIT",
+        null
+      ],
+      "line": 403,
+      "steps": 2
+    },
+    {
+      "A": "g3:33@0",
+      "B": "g7:333@0",
+      "archive": "census",
+      "join": "meeting",
+      "law": [
+        "CAP-3",
+        "CANCEL-OFFSHOOT"
+      ],
+      "line": 3768,
+      "steps": 1
+    },
+    {
+      "A": "g6:222@1",
+      "B": "g6:333@0",
+      "archive": "census",
+      "join": "meeting",
+      "law": [
+        "CAP-3",
+        "CANCEL-RETIRE"
+      ],
+      "line": 9095,
+      "steps": 1
+    },
+    {
+      "A": "g7:112@0",
+      "B": "g7:333@0",
+      "archive": "census",
+      "join": "meeting",
+      "law": [
+        "CAP-3",
+        "CANCEL-WAIT"
+      ],
+      "line": 15358,
+      "steps": 1
+    },
+    {
+      "A": "g3:22@0",
+      "B": "g7:123@0",
+      "archive": "census",
+      "join": "meeting",
+      "law": [
+        "FLOOR1",
+        "CANCEL-OFFSHOOT"
+      ],
+      "line": 1377,
+      "steps": 1
+    },
+    {
+      "A": "g6:223@2",
+      "B": "g6:233@1",
+      "archive": "census",
+      "join": "meeting",
+      "law": [
+        "FLOOR1",
+        "CANCEL-RETIRE"
+      ],
+      "line": 10556,
+      "steps": 1
+    },
+    {
+      "A": "g6:323@1",
+      "B": "g7:112@2",
+      "archive": "census",
+      "join": "meeting",
+      "law": [
+        "FLOOR1",
+        "CANCEL-WAIT"
+      ],
+      "line": 13381,
+      "steps": 1
+    },
+    {
+      "A": "g6:122@0",
+      "B": "g7:222@0",
+      "archive": "census",
+      "join": "meeting",
+      "law": [
+        "ORD",
+        "CANCEL-OFFSHOOT"
+      ],
+      "line": 4359,
+      "steps": 1
+    },
+    {
+      "A": "g6:323@0",
+      "B": "g7:233@1",
+      "archive": "census",
+      "join": "meeting",
+      "law": [
+        "ORD",
+        "CANCEL-RETIRE"
+      ],
+      "line": 13232,
+      "steps": 1
+    },
+    {
+      "A": "g6:333@0",
+      "B": "g7:233@0",
+      "archive": "census",
+      "join": "meeting",
+      "law": [
+        "ORD",
+        "CANCEL-WAIT"
+      ],
+      "line": 14347,
+      "steps": 1
+    },
+    {
+      "A": "g6:333@1",
+      "B": "g7:123@2",
+      "archive": "census",
+      "join": "share",
+      "law": [
+        "CAP-3",
+        "CANCEL-OFFSHOOT"
+      ],
+      "line": 14594,
+      "steps": 1
+    },
+    {
+      "A": "g3:23@0",
+      "B": "g6:323@2",
+      "archive": "census",
+      "join": "share",
+      "law": [
+        "CAP-3",
+        "CANCEL-RETIRE"
+      ],
+      "line": 1958,
+      "steps": 1
+    },
+    {
+      "A": "g6:123@2",
+      "B": "g6:233@0",
+      "archive": "census",
+      "join": "share",
+      "law": [
+        "CAP-3",
+        "CANCEL-WAIT"
+      ],
+      "line": 6493,
+      "steps": 1
+    },
+    {
+      "A": "g6:233@0",
+      "B": "g6:323@0",
+      "archive": "census",
+      "join": "share",
+      "law": [
+        "FLOOR1",
+        "CANCEL-OFFSHOOT"
+      ],
+      "line": 11105,
+      "steps": 1
+    },
+    {
+      "A": "g6:133@0",
+      "B": "g6:323@1",
+      "archive": "census",
+      "join": "share",
+      "law": [
+        "FLOOR1",
+        "CANCEL-RETIRE"
+      ],
+      "line": 7342,
+      "steps": 1
+    },
+    {
+      "A": "g6:122@1",
+      "B": "g6:323@0",
+      "archive": "census",
+      "join": "share",
+      "law": [
+        "FLOOR1",
+        "CANCEL-WAIT"
+      ],
+      "line": 4732,
+      "steps": 1
+    },
+    {
+      "A": "g6:223@0",
+      "B": "g7:112@0",
+      "archive": "census",
+      "join": "share",
+      "law": [
+        "ORD",
+        "CANCEL-OFFSHOOT"
+      ],
+      "line": 9695,
+      "steps": 1
+    },
+    {
+      "A": "g6:123@2",
+      "B": "g7:122@0",
+      "archive": "census",
+      "join": "share",
+      "law": [
+        "ORD",
+        "CANCEL-RETIRE"
+      ],
+      "line": 6743,
+      "steps": 1
+    },
+    {
+      "A": "g6:122@1",
+      "B": "g7:122@0",
+      "archive": "census",
+      "join": "share",
+      "law": [
+        "ORD",
+        "CANCEL-WAIT"
+      ],
+      "line": 4906,
+      "steps": 1
+    },
+    {
+      "A": "ring",
+      "B": "source",
+      "archive": "bench",
+      "join": "meeting",
+      "law": [
+        "ORD",
+        "CANCEL-WAIT",
+        null
+      ],
+      "line": 61,
+      "steps": 1
+    },
+    {
+      "A": "ring",
+      "B": "ring",
+      "archive": "bench take with marks",
+      "join": "share",
+      "law": [
+        "CAP-3",
+        "CANCEL-WAIT",
+        "MET-SOLE"
+      ],
+      "line": 172,
+      "steps": 2
+    },
+    {
+      "A": "g1:3@0",
+      "B": "g3:22@0",
+      "archive": "census",
+      "join": "meeting",
+      "law": [
+        "ORD",
+        "CANCEL-WAIT"
+      ],
+      "line": 19,
+      "steps": 1
+    },
+    {
+      "A": "g1:3@0",
+      "B": "g3:22@0",
+      "archive": "census",
+      "join": "share",
+      "law": [
+        "ORD",
+        "CANCEL-WAIT"
+      ],
+      "line": 28,
+      "steps": 1
+    },
+    {
+      "A": "g7:112@0",
+      "B": "g7:112@2",
+      "archive": "census",
+      "join": "share",
+      "law": [
+        "ORD",
+        "CANCEL-WAIT"
+      ],
+      "line": 15102,
+      "steps": 1
+    },
+    {
+      "A": "g7:112@0",
+      "B": "g7:113@2",
+      "archive": "census",
+      "join": "share",
+      "law": [
+        "ORD",
+        "CANCEL-WAIT"
+      ],
+      "line": 15138,
+      "steps": 1
+    },
+    {
+      "A": "g7:112@2",
+      "B": "g7:113@0",
+      "archive": "census",
+      "join": "share",
+      "law": [
+        "ORD",
+        "CANCEL-WAIT"
+      ],
+      "line": 15408,
+      "steps": 1
+    },
+    {
+      "A": "g7:113@0",
+      "B": "g7:113@2",
+      "archive": "census",
+      "join": "share",
+      "law": [
+        "ORD",
+        "CANCEL-WAIT"
+      ],
+      "line": 15696,
+      "steps": 1
+    }
+  ],
+  "pilot": [
+    {
+      "A": "ring",
+      "B": "source",
+      "archive": "bench",
+      "join": "meeting",
+      "law": [
+        "ORD",
+        "CANCEL-WAIT",
+        null
+      ],
+      "line": 61,
+      "steps": 1
+    },
+    {
+      "A": "ring",
+      "B": "source",
+      "archive": "bench take with marks",
+      "join": "meeting",
+      "law": [
+        "CAP-3",
+        "CANCEL-OFFSHOOT",
+        "MET-SOLE"
+      ],
+      "line": 75,
+      "steps": 3
+    },
+    {
+      "A": "source",
+      "B": "source",
+      "archive": "bench owing",
+      "join": "meeting",
+      "law": [
+        "MOD2",
+        "CANCEL-WAIT",
+        null
+      ],
+      "line": 430,
+      "steps": 3
+    },
+    {
+      "A": "g3:33@0",
+      "B": "g7:333@0",
+      "archive": "census",
+      "join": "meeting",
+      "law": [
+        "CAP-3",
+        "CANCEL-OFFSHOOT"
+      ],
+      "line": 3768,
+      "steps": 1
+    }
+  ],
+  "sample_frame_cut": "completed rows with saved unmarked knots <= 2500 and saved seconds <= 2",
+  "seed": 20261126
+}

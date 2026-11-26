@@ -1,5 +1,8 @@
 # A census of small starts joined two at a time
 
+> **Referee report R1 (26 November 2026): confirmed with fixes, no block.** Read this note with the narrowings in
+> [the decision](../decision.md) and [the report](../referee-R1/report.md).
+
 Third direction of `TWO-PATTERNS-20261126-001`, at the owner's word ([request](../owner_request.md)). A check by the
 thread, not a registered study; computed; referee pending. It puts [the bench](../bench/README.md)'s readings to
 every pair of small starts, where the bench read three patterns chosen by hand.

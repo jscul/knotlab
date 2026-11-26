@@ -1,5 +1,8 @@
 # The bench as a toy on the site
 
+> **Referee report R1 (26 November 2026): confirmed with fixes, no block.** Read this note with the narrowings in
+> [the decision](../decision.md) and [the report](../referee-R1/report.md).
+
 Second direction of `TWO-PATTERNS-20261126-001`, at the owner's word ([request](../owner_request.md)): the
 [bench](../bench/README.md) in the browser, so that he can run it.
 

@@ -5792,10 +5792,12 @@ evidence: results and their status come from the records each entry links.
   that falls with the steps, the picture cannot come out of the logic as it stands.
 - **History.**
   - 2026-11-26 · `HOW-MUCH-ARRIVES-20261126-001` ([decision](../research/HOW-MUCH-ARRIVES-20261126-001/decision.md)) measured how
-    much of a change arrives, read without names: under the ordinary count some changes at the start of a growth of
-    dimension two settle to a fixed number of births a round while the round's count grows, so their share falls as one
-    over the count, the lamp's form in dimension two (computed, referee pending); every other change tried holds or takes
-    over, and between two patterns nothing falls with the steps. Status unchanged.
+    much of a change arrives. By descent, under the ordinary count, a change at a start re-makes every birth of the changed
+    knot's line and none of the other's, so nothing weakens with the rounds and no change is shared out among a round's
+    births: the lamp's weakening is not found. Read without names, a growth of dimension two forgets its start (two unrelated
+    starts differ in no birth from round 4 on), the picture's "logically small" in the growth's own terms (computed, referee
+    pending; an earlier version of this line, the same day, called the local readings' fixed count a weakening, corrected).
+    Status unchanged.
   - 2026-11-26 · Entered with Chapter 11 of the Intuitions guide, "Simulating our reality".
 
 ### A281 · An origin can be found or invented from what is here
@@ -5849,12 +5851,13 @@ evidence: results and their status come from the records each entry links.
   distance in holder steps from the changed knot after its round. Nothing in the model supplies any of them.
 - **Why.** Adopted by the thread on 26 November 2026, with the advisor's review before the full run: the reading by name
   counts every descendant of a new birth as new, so it could not show a weakening.
-- **Rests on it.** That under the ordinary count some changes at the start of two dimension-two starts weaken (a fixed
-  4, 5 or 1 births a round against a growing round, to round 32), that made marks and pulses hold, and that two
-  changes can partly cancel ([the decision](../research/HOW-MUCH-ARRIVES-20261126-001/decision.md)).
+- **Rests on it.** That under the ordinary count a growth of dimension two, read without names, forgets its start (two
+  unrelated starts differ in no birth from round 4 on, so a change at a start shows only as a fixed difference in the
+  round's count), that made marks and pulses hold, and that two changes can partly cancel
+  ([the decision](../research/HOW-MUCH-ARRIVES-20261126-001/decision.md)).
 - **Challenge.** A matching that does not forget descent but also does not inherit it: the advisor's signature of the
-  map of joins within one or two steps of each birth. If the weakening cases grow under it, the weakening is about
-  sig0 and sig1, which count local kinds of birth, and not about the model. A pulse that also takes back the advance
+  map of joins within one or two steps of each birth. The control that compares unrelated starts already shows sig0 and sig1
+  count local kinds of birth only; a deeper signature would say how far back a start can be told apart. A pulse that also takes back the advance
   payment it caused would test reading 3 of the decision. The model is not expected to supply these readings: they are
   how an observer outside compares two growths, kept until a pattern inside the growth can make the comparison.
 - **History.**

@@ -3,6 +3,10 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 26 November 2026 · How much of a change arrives: a count, not the lamp's weakening
+
+**The study of how much of a change arrives first said that some changes at the start of a growth of dimension two weaken as the owner's lamp does.** Read without names, their damage settles to a fixed few births a round while the round grows. A control run before the referee shows those readings find no difference at all between two unrelated starts of dimension two from round 4 on, so the fixed damage is a difference in the round's count. By descent the change re-makes the whole of one chain and nothing of the other. The [decision](research/HOW-MUCH-ARRIVES-20261126-001/decision.md) and [the note](research/HOW-MUCH-ARRIVES-20261126-001/README.md) carry the corrected reading; the counts stand.
+
 ## 26 November 2026 · The confirmation of the reordering sign refereed: confirmed, with narrowings
 
 **Corrections from [an independent referee's report](research/REORDER-CONFIRM-20261126-001/referee-R1/report.md), folded into [the confirmation](research/REORDER-CONFIRM-20261126-001/results.md).** Every frozen test reproduced. Narrowed: with a complex reading at every reader a different class of schedules carries the sign, not all the others (at four readers 1,728 of 2,520 schedules carry it with neither reading), which corrects the entry below; a commit order unknown to the readers loses the sign at a fixed creation order, but one that follows the creation order needs no reader to know either; and the result holds for a start whose relative signs come from creating its distinctions in order, with the stated real reading.

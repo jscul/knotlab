@@ -119,3 +119,27 @@ number. Every hearing from afar found on this line rests on such a choice, and t
   can (as the second-switch referee found under the ordinary count).
 - Whether dropping the demand can be had from something the model makes (a rule the knots themselves follow) is not
   asked here; it would be a new law.
+
+## C. Parity's shortage (after the referee; written before the run)
+
+The referee found that under the parity knot law an implied birth can be owed and receive nothing, leaving newborns
+short: a shortage the recorded laws make with no ration dropped by hand. [`parity.py`](parity.py) runs B's census (the
+same 100 receivers and five senders) under the ordinary count with the parity knot law, with no take and with each
+recorded take. Seen in one trial receiver: no short knot made after the start under any of the seven laws.
+
+**Expected:** short knots made after the start in a few pairs only (where a birth is implied), and no far change made
+after round 3 heard after round 6 (the parity shortage is one round's, at the newborns, not a lasting one at the line).
+
+### What was found: C
+
+[`parity_table.md`](parity_table.md) ([`tally_b.py`](tally_b.py) on `parity_runs.jsonl.gz`): 3,221 of 3,500 pairs read
+(279 not run: seven jobs stopped by their clock or memory cap).
+
+- **No knot made after the start is short in any pair read, under any of the seven laws.** The referee's implied-birth
+  shortage needs a start where a birth is implied while owed a join; none of these joined starts makes one in the
+  rounds read.
+- **No far change is heard after round 6.** As under not-all-equal, the only hearings are the cross-part take's, in
+  rounds 4 and 5 (194 of 780 at linked far members), with no knot made after the start short.
+
+So the expectation's first half fails (no pair has the shortage at all) and its second holds. In these joined starts
+the parity knot law adds no route; the referee's witness stands as a start of its own, untested for distance.

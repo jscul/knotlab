@@ -55,12 +55,15 @@ Whether either carries a change late and from afar is not tested.
 
 | # | Direction | Payoff | Concreteness | First step → stop when | Status |
 | --- | --- | --- | --- | --- | --- |
-| 1 | Parity's implied births: does the shortage they make carry a far change late? | 3/3 — a shortage the recorded laws make | 3/3 — shortage.py with the parity law | The census under parity, the ordinary count with and without takes → a far change heard after 2d, or none | Selected · started |
+| 1 | Parity's implied births: does the shortage they make carry a far change late? | 3/3 — a shortage the recorded laws make | 3/3 — shortage.py with the parity law | The census under parity, the ordinary count with and without takes → a far change heard after 2d, or none | Selected · done: none (no shortage in 3,221 pairs) |
 | 2 | The local takes: a far addition heard with no shortage; does any arrive late and from afar? | 3/3 — a route with no shortage | 2/3 — the census saw none after round 3 in its windows | Additions after rounds 1 and 2 at every linked far member, longer reads → a hearing after 2d, or none | Alternative · deferred |
 | 3 | A law under which the knots themselves withhold part of the demand (G18) | 3/3 — would put the cap's role in the model | 1/3 — no candidate | Candidates with the advisor → one worth a test, or none | Alternative · awaiting go-ahead |
 
 1. The referee's parity witness is a shortage made by the knot law with nothing dropped by hand: the cheapest check of
-   whether the model can carry what the cap carried.
+   whether the model can carry what the cap carried. Run after the fold-in (README, C): in 3,221 joined pairs under
+   parity no knot made after the start is short and no far change is heard after round 6. With that, nothing the
+   recorded laws make has carried a change to a pattern's own knots late and from afar in these joined starts; the
+   line stops, with directions 2 and 3 left for the owner.
 2. The take's witness is heard in round 2, one or four sharings away; late hearing from afar is untested.
 3. Unchanged.
 

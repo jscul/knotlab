@@ -6107,6 +6107,10 @@ changes what a knot owes changes what it makes.
   three rungs kept apart, repetition, a tower and recursion; only the first is
   reached; the facts a tower would bind exist, and under parity the growth does
   not bind them on any stage read.
+- [12.4 Two kinds of contradiction](#124-two-kinds-of-contradiction):
+  one distinction both yes and no in a single view, which never occurs, and
+  views each fine that cannot all be held together, which do; the owner's
+  reading that the second kind is no failure, a proposal under test.
 
 **The intuition.** The owner has called the work "a logic based fractal with
 emergence as the guiding principle" (lesson 7.2), and says what emergence is
@@ -6241,6 +6245,62 @@ with nothing nested by hand.
 | A connected start keeps two or more independent such facts | computed, refereed: a nine-knot start of two joined rings gains two in one round, a sampled ten-knot start too (lesson 12.2) |
 | The growth makes a rule binding such facts into a larger pattern that keeps a fact none of them holds (a tower) | not found under parity with the shortest changes: on 7,713 stages with relations forced by the knots' laws, none binds three or more facts no single knot reads, each carried by its own cycle ([binding](research/BINDING-20261126-001/decision.md), computed, referee pending) |
 | A pattern that grows back into itself (recursion) | not shown: growing a start and then exchanging it gives the start back only when we pin its loose values, which ordinary growth never does, and the exchange is ours; no free return or cycle on the iterations tested ([recursion's lead](research/RECURSION-LEAD-20261126-001/decision.md), refereed); parts that copy themselves (lesson 8.7) copy under laws added by hand |
+
+### 12.4 Two kinds of contradiction
+
+**Two things get the one name.** A view here is what one reader sees at once:
+the values of some distinctions taken together.
+
+- **One distinction both yes and no in a single view.** This never turns up.
+  Any one view gives one answer, and keeping this rule costs nothing.
+- **Views that are each fine but cannot all be held together.** These do exist.
+  The literature's picture is the impossible staircase (Penrose and Penrose
+  1958): every corner is a perfectly good corner, and the whole cannot be
+  built. Quantum measurements are the physical case: each gives a clean
+  answer, they agree wherever they can be compared, and no single list of
+  answers fits them all.
+
+**The owner's reading (an interpretation).** The owner endorsed this split ("Yes,
+I like this analogy") and agreed with what follows from his own remark that the
+growth law is "the thing that comes before logic" (register entry A128): then
+"a contradiction is a failure" is a rule of logic carried in, not something the
+law owes. The proposal: keep the rule that any one view is consistent, and drop
+the rule that all views must fit into one whole. It is recorded as the owner's
+interpretation, register entry A294, and it is under test, not a result.
+
+**Where the guide already meets the second kind.** A minimal contradiction
+(lesson 7.3) is a set of knots that allows no state while every proper part of
+it allows one; for three-place not-all-equal knots the smallest is the Fano
+pattern of seven. The four parity rules of lesson 8.5 are another: each can be
+met, and no one assignment meets all four. Lesson 5.1 reads such a pattern as a
+refutation, a system that allows nothing. Read with lesson 12.1, the
+impossibility is itself a fact held by the whole and by no part: no proper part
+shows it.
+
+**What is tested and what is not.** The program asks for a state of the whole in
+two places. The knot test's third condition (K3, some state is allowed: lesson
+2.1) is not being changed. The growth law's promise never to forbid what the old
+knots allowed (register entry A126) is the one under challenge, in a study now
+running: what growth does if it may make wholes whose parts are each fine and
+that have no state.
+
+**What could go wrong.** Loosening may let in too much. If every pattern whose
+parts are each fine is accepted, the rule no longer tells patterns apart, and
+that overshoot is the first thing the test expects to see. And a contradiction
+not being a failure does not yet say which contradictions nature permits.
+
+**Known mathematics.** Logics that tolerate a contradiction without everything
+following from it are the literature's paraconsistent logics (da Costa 1963;
+Priest 1979). "Fine in every part, impossible as a whole" is measured as a
+property of a structure, not a defect, in the sheaf reading of contextuality
+(Abramsky and Brandenburger 2011), and the impossible figures have a measure of
+the same kind (Penrose 1992). What the program adds is where to ask it: whether
+the growth law, which comes before the knots' logic, owes the whole a state.
+
+**A question to check.** Take three distinctions a, b and c and three two-place
+rules: a equals b, b equals c, a differs from c. Which rule is at fault? Any
+two of them allow a state, and all three allow none, so no single rule is: the
+fault belongs to the three together.
 
 ## Glossary
 

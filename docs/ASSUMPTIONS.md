@@ -349,6 +349,7 @@ evidence: results and their status come from the records each entry links.
 | [A291](#a291--moves-that-keep-a-class-the-shortest-changes-through-each-distinction-a-second-rule-two-engines-and-a-census) | Moves that keep a class: the shortest changes through each distinction, a second rule, two engines, and a census | scaffold | Assumed |
 | [A292](#a292--a-swaps-lift-its-signed-weightings-two-readings-and-the-readers-distinctions-to-test-a-sign-to-the-sides) | A swap's lift, its signed weightings, two readings and the readers' distinctions, to test a sign to the sides | scaffold | Assumed |
 | [A293](#a293--emergence-is-a-fact-held-by-the-whole-and-by-no-part-and-it-shows-up-at-more-than-one-layer) | Emergence is a fact held by the whole and by no part, and it shows up at more than one layer | interpretation | Assumed |
+| [A294](#a294--a-contradiction-among-views-is-not-a-failure-one-view-never-gives-both-answers) | A contradiction among views is not a failure; one view never gives both answers | interpretation | Assumed |
 
 ## Entries
 
@@ -6077,4 +6078,33 @@ evidence: results and their status come from the records each entry links.
     of its loop (a ten-knot tree keeps one too); joined rings keep one class between them, so the first step of a tower
     fails as computed. The owner: "So that's repetition, but we don't have recursion yet"; repetition is what the record
     shows.
+  - 2026-11-26 · Entered at the owner's request.
+
+### A294 · A contradiction among views is not a failure; one view never gives both answers
+
+**Assumed** · 2026-11-26 · interpretation
+
+- **Statement.** The owner's interpretation. Two things get called a contradiction. One distinction both yes and no in
+  a single view (what one reader sees at once) never occurs, and stays ruled out. Views that are each fine but cannot
+  all be held together do occur: in the literature's picture of the impossible staircase every corner is a good corner
+  and the whole cannot be built, and quantum measurements are the physical case (each gives a clean answer, they agree
+  wherever they can be compared, and no single list of answers fits them all). The second kind is not a failure: if the
+  growth law is "the thing that comes before logic" (A128), then "a contradiction is a failure" is a rule of logic
+  carried in, not something the law owes. The proposal: keep the rule that any one view is consistent, and drop the
+  rule that all views must fit into one whole.
+- **Why.** The split was put to the owner in these words, and he endorsed it ("Yes, I like this analogy. Record it."),
+  agreed with the consequence drawn from A128 ("Agreed."), and asked to continue with the proposal (26 November 2026).
+- **Rests on it.** No result. It frames the challenge of A126 (growth never forbids what the old knots allowed, so
+  every round keeps a state of the whole), in a study now running. The canonical knot test is not changed: its third
+  condition, K3, still asks for an allowed state. The guide's lesson 12.4.
+- **Challenge.** A proposal under test. The record already holds wholes of the second kind: a minimal contradiction
+  (every proper part allows a state, the whole none; the Fano pattern of seven not-all-equal knots is the smallest of
+  three-place knots), and the four parity rules of the guide's lesson 8.5. A law that may make such wholes must say
+  which ones it admits; if it admits every pattern whose parts are each fine, it tells nothing apart, and that
+  overshoot is the first thing to look for. That a contradiction is no failure does not say which ones nature permits.
+  Known mathematics, cited once: paraconsistent logics, which tolerate a contradiction without everything following
+  (da Costa 1963; Priest 1979); contextuality measured as a property of a structure (Abramsky and Brandenburger 2011);
+  the cohomology of impossible figures (Penrose 1992). What this adds: the question asked of the growth law, not of a
+  logic.
+- **History.**
   - 2026-11-26 · Entered at the owner's request.

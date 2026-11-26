@@ -15,6 +15,11 @@ Points a referee should press:
 
 - **"Form" against "count profile".** In 49 of the 90 held-out studies the class is a function of the held knot with
   the second seed's births by round. The result says so; a referee should judge whether the headline does.
+  **Since the hand-off (26 November 2026):** the thread's own check withdrew that reading (almost no pair of the 60
+  seeds shares the profile) and replaced it with a check on 345 second seeds and 27 swap pairs
+  ([the check](checks/what_decides_the_class/README.md)). It is not registered and was run by the author; a referee
+  should recount it too, and judge whether "follows the second seed's knots by their steps from the held knot" and
+  "tells apart seeds that differ only in which knots are partners" say more than its tables do.
 - **C2 after the review.** The first draft's inference from "start knots act in round 1 only" was unsound, as the
   advisor showed. The claim now rests on pairs with the same wider record of round 1. A referee should check the
   wider record's definition (FF 5b) against one such pair by hand.

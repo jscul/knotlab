@@ -3,6 +3,10 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 26 November 2026 · "Decided by a count profile" was a function almost no pair could contradict
+
+**Withdrawal of one reading in a registered study's result and in the guide.** [The registered study of the place held fixed and the form changed](research/FOLLOWS-THE-FORM-20261125-001A/results.md) and lesson 10.5 said that in 49 of 90 held-out studies the class of a second seed is decided by its held knot together with the number of births its descent makes each round, "a count profile and not a form". The number stands. The reading does not: among the 60 held-out second seeds almost no two share that profile (245 of 86,730 pairs in those 49 studies, none in three of them), so nothing could have contradicted it. [A check on 345 second seeds](research/FOLLOWS-THE-FORM-20261125-001/checks/what_decides_the_class/README.md) finds the profile deciding the class in 3 studies of 267, with 27% of the pairs that share it told apart. There, what the first seed's descent makes follows the second seed's knots by their steps from the held knot; and in 23 studies of 270 it tells apart two second seeds that differ only in which knots are partners. The check is the thread's own, not registered, and how far a law sees is tested on few pairs.
+
 ## 26 November 2026 · A first seed's fate: on the probe's seeds, not on most held-out ones
 
 **Narrowing of a probe's report and of the guide.** [The third probe of sub-goal B335](research/WHAT-A-BIRTH-CARRIES-20261125-001/checks/form_at_a_fixed_place/README.md) and lesson 10.5 said that what a first seed's line becomes differs with the form of the second seed. On the probe's own families two or more fates show among the forms in 58 and 62 studies of 90. [The registered study](research/FOLLOWS-THE-FORM-20261125-001A/results.md) predicted at least 40 of 90 on held-out seeds and found 37. That what the first seed's descent makes differs with the form stands there: three or more classes in 87 studies of 90, and nothing differs with the seeds unlinked.

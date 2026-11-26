@@ -1,0 +1,28 @@
+swap family: 270 studies finished, 0 stopped at the time limit
+  no taking rule             offshoots studies  45 | with a swap pair told apart   0 | swap pairs told apart    0 of 1215
+  no taking rule             retire    studies  45 | with a swap pair told apart   0 | swap pairs told apart    0 of 1215
+  no taking rule             wait      studies  45 | with a swap pair told apart  14 | swap pairs told apart  108 of 1215
+  take of a sole candidate   offshoots studies  45 | with a swap pair told apart   3 | swap pairs told apart   18 of 1215
+  take of a sole candidate   retire    studies  45 | with a swap pair told apart   3 | swap pairs told apart   54 of 1215
+  take of a sole candidate   wait      studies  45 | with a swap pair told apart   3 | swap pairs told apart   18 of 1215
+  all: studies with a swap pair told apart 23 of 270 | pairs 198 of 7290
+    ('FLOOR1', 'CANCEL-WAIT', None, 'M', 9, 10, ('row5:2,1,[0],2,3', 'row5:3,1,[0],2,2'))
+    ('FLOOR1', 'CANCEL-WAIT', None, 'N', 9, 2, ('row5:2,1,[1],2,3', 'row5:3,1,[1],2,2'))
+    ('FLOOR1', 'CANCEL-WAIT', None, 'O', 9, 4, ('row5:2,1,[0],2,3', 'row5:3,1,[0],2,2'))
+    ('FLOOR1', 'CANCEL-WAIT', None, 'C', 9, 10, ('row5:2,1,[0],2,3', 'row5:3,1,[0],2,2'))
+    ('FLOOR1', 'CANCEL-WAIT', None, 'D', 9, 2, ('row5:2,1,[1],2,3', 'row5:3,1,[1],2,2'))
+    ('FLOOR1', 'CANCEL-WAIT', None, 'H', 9, 4, ('row5:2,1,[0],2,3', 'row5:3,1,[0],2,2'))
+  by first seed: [('B', 3), ('C', 2), ('D', 1), ('E', 1), ('G', 3), ('H', 2), ('I', 2), ('J', 1), ('L', 3), ('M', 2), ('N', 1), ('O', 2)]
+
+345 seeds: 267 studies finished, 3 stopped: [('ORD', 'CANCEL-OFFSHOOT', 'MET-SOLE', 'C'), ('ORD', 'CANCEL-OFFSHOOT', 'MET-SOLE', 'H'), ('ORD', 'CANCEL-OFFSHOOT', 'MET-SOLE', 'O')]
+  seeds whose farthest knot is at most two steps from the held knot: 251 of 345
+  pairs that agree to two steps: 141 | to three: 16 | of 59340
+  no taking rule             offshoots studies  45 (R* {9: 45}) | with such a pair told apart   0 | first told apart in round: {'never': 6345}
+  no taking rule             retire    studies  45 (R* {9: 45}) | with such a pair told apart   0 | first told apart in round: {'never': 6345}
+  no taking rule             wait      studies  45 (R* {6: 7, 7: 4, 9: 34}) | with such a pair told apart   2 | first told apart in round: {'never': 6326, 3: 3, 4: 16}
+  take of a sole candidate   offshoots studies  42 (R* {2: 4, 3: 6, 4: 2, 9: 30}) | with such a pair told apart  14 | first told apart in round: {'never': 5317, 1: 398, 2: 207}
+  take of a sole candidate   retire    studies  45 (R* {2: 1, 3: 7, 4: 7, 9: 30}) | with such a pair told apart  16 | first told apart in round: {'never': 5608, 1: 398, 2: 317, 3: 19, 5: 3}
+  take of a sole candidate   wait      studies  45 (R* {2: 1, 3: 11, 4: 3, 9: 30}) | with such a pair told apart  24 | first told apart in round: {'never': 5135, 1: 402, 2: 330, 3: 359, 4: 41, 5: 32, 6: 46}
+
+  all pairs told apart: 11779370 of 15843780 (74.3%)
+  held-out first seeds: 89 studies, all pairs told apart 72.2%

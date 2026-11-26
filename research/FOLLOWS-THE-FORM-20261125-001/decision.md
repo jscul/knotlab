@@ -12,6 +12,15 @@ texts and counted a second time by the thread; scientific referee pending.
 
 ## The answer
 
+> **Correction, 26 November 2026 (not a block; found by the thread in a check after the study closed).** Item 3
+> below, the report at the end ("Two things temper it"; "'form' is too large a word") and direction 2 read the 49
+> studies as showing a count profile of the second seed. The number stands; the reading is withdrawn. Among the 60
+> held-out second seeds almost no two share that profile (245 of 86,730 pairs in the 49 studies, none in three of
+> them). On 345 second seeds it decides the class in 3 studies of 267. Direction 2 is done: the class follows the
+> second seed's knots by their steps from the held knot, and in 23 studies of 270 two second seeds that differ only
+> in which knots are partners are told apart. One thing still tempers the result, the failed prediction about fate.
+> [The check](checks/what_decides_the_class/README.md).
+
 The earlier studies asked whether one pattern's course depends on another it meets, and varied only whether the
 other was there. This study holds the place fixed and changes the form.
 

@@ -5292,11 +5292,21 @@ made a pattern of its own from what it met.
   second seeds nothing had grown, the forms fall into three or more classes
   in 87 studies of 90; 422 to 1,309 pairs a row are told apart only after
   round 1 though every round-1 birth with a first-seed ancestor is the
-  same; and the class is never decided by the held knot alone. Two things
-  temper it. In 49 of the 90 studies the class is decided by the held knot
-  together with the second seed's own births by round, a count profile and
-  not a form. And the prediction that the first seed's fate differs with
-  the form failed: two or more fates show in 37 studies of 90. What is open
+  same; and the class is never decided by the held knot alone. One thing
+  tempers it: the prediction that the first seed's fate differs with the
+  form failed, and two or more fates show in 37 studies of 90. A second,
+  that in 49 of the 90 studies the class is decided by "a count profile and
+  not a form" (the held knot with the number of births the second seed
+  makes each round), is withdrawn: among those 60 forms almost no two share
+  that profile, so nothing could have contradicted it. A check by the
+  thread on 345 forms
+  ([the check](research/FOLLOWS-THE-FORM-20261125-001/checks/what_decides_the_class/README.md);
+  not registered) finds it deciding the class in 3 studies of 267. There
+  the class follows the second seed's knots by their steps from the held
+  knot: the same knots at other steps are told apart in a third of such
+  pairs. And in 23 studies of 270 two second seeds with the same knots
+  at the same steps, differing only in which knots are partners, are told
+  apart. How far out a law sees is tested on few pairs. What is open
   (a sub-goal under G15): the same between two parts the growth made,
   meeting through a knot the growth made.
 - **B326, an index made by the growth (G15).** The owner: "This is why we may need 'function-like' logical operations

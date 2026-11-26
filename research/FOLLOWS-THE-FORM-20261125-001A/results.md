@@ -22,6 +22,16 @@ the first seed's line shows two or more fates in 37 studies of 90 where at least
 differs with the form is not shown as registered. And in 49 of the 90 studies the class is decided by the held knot
 together with the second seed's own births by round: there, what is seen is a count profile of the second seed.**
 
+> **Correction, 26 November 2026 (not a block; found by the thread in a check after the study closed).** The last
+> sentence above, and the line "Tempered" below, read the 49 studies as showing "a count profile of the second
+> seed". The number 49 stands, and so does PN7. The reading is withdrawn. Among the 60 held-out second seeds the
+> profile takes 44 to 60 values in a study: in those 49 studies 245 of 86,730 pairs of second seeds share a profile,
+> and in three of them none does, so almost no pair could have contradicted it. On 345 second seeds the same profile
+> decides the class in 3 studies of 267, and 27% of the pairs that share it are told apart. There the class follows
+> the second seed's knots by their steps from the held knot; and in 23 studies of 270 two second seeds that differ
+> only in which knots are partners are told apart.
+> [The check](../FOLLOWS-THE-FORM-20261125-001/checks/what_decides_the_class/README.md).
+
 The words. A start is a **first seed**, one **link** distinction and a **second seed** that holds the link on its
 **held knot**. **What the first seed's descent makes** is its births round by round, each by kind, number of parents,
 places, fresh distinctions and takes, over the knots descended from the first seed and from none of the second. The

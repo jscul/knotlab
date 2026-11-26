@@ -145,3 +145,64 @@ cuts, the relation one knot law makes. Then what each of the owner's rungs requi
 **What it would not show.** Capped group rules (the advisor expects the argument to fail there first); rounds past 6;
 other laws than parity and the recorded cuts; that the built families are typical under any weighting (they are
 hand-built); a next layer's own small changes and laws.
+
+## What was found
+
+All frozen runs finished ([`score.py`](score.py), [`score.json`](score.json)). Every prediction held as made; no
+deviation. Two rounds were not read, both at round 3 of the four-ring families of six knots with detour links, past the
+500-distinction cap.
+
+**(a) After ordinary growth, three or more facts that no single knot reads obey a relation passing the knot test: yes,
+on built starts.** On all 32 built ring families (three or four rings of four to seven knots, both attachments, both
+links), on all 62 rows read at rounds 2 and 3, the new carriers of each ring take exactly 2^(R − 1) of the 2^R joint
+values with every proper sub-family free (one parity rule; the canonical checker passes it on the three-ring start of
+the advisor, for every choice of contact), and every carrier is a class fact read by no single knot under both readings
+of a small change. Also on the advisor's 14-knot start from round 0, and on the binding referee's sampled ten-knot start
+at round 3 under the shortest changes only. Not on any census or held-out start (the binding referee's recount), and
+the 400 fresh sampled starts of nine to twelve knots were read here only for the argument.
+
+**(b) Where the relation comes from: the start's own knot laws.** On every row, every carrier has a start
+representative (each ring's own loose distinctions), the representatives take the same joint values on the start's
+allowed states, and their sum is a sum of start laws: the laws of all the knots, since the connecting knots hold no loose
+distinction. The controls agree: one loose distinction at a detour's middle knot, far from every ring, frees all 2^R
+values at every round read (16 of 16 detour families; 14 grow to round 3 and 2 stall); the other controls free them or stall (all 64 as predicted). The
+origin test can say no: a birth's own law binds its fresh distinctions and inputs, and the test finds the first fresh
+distinction is not a function of the start's values (32 of 32). **And ordinary growth makes no relation among class
+facts on any stage read:** premises 1 to 3 held on every birth record and the pairs and loops of four spanned the changes
+that keep the start's values on every stage (21,678 census, 2,348 held-out, 192 built and 398 sampled rounds; rounds 1
+to 6; 1,964 census, 483 held-out and 331 sampled starts gave no stage, because their first round stalls or closes).
+With the argument above (a sketch, checked here, not yet refereed), every class fact of an ordinarily grown stage is a
+function of the start's values, so every relation among class facts already held at the start.
+
+**(c) What growth contributes: it turns the start's relation into a relation among class facts, with carriers of its
+own.** Before growth the representatives were already read by no single knot (every row), but they were not class facts
+under changes of at most five distinctions on any family (0 of 62 rows), and under the shortest changes only on the
+double-link families (32 rows; not on the 30 detour rows). After growth they are class facts under both readings on
+every row. The mechanism, read from the constructions: at the start a change of five distinctions runs from one ring's
+loose distinction through a connecting knot to another ring's and flips both rings' parities; growth consumes every
+loose distinction, so after it no small change leaves a ring, and the parities can no longer be flipped one at a time.
+And at every round from 2 on, the relation appears again on carriers made only of distinctions born in the round
+before, disjoint, each held by a whole cycle of births.
+
+**(d) Under the forbidding cuts, one knot law makes a new relation.** On the 8 three-ring detour families with the
+middle knots joined pairwise and holding one loose distinction each, under both cuts one birth whose parents are the
+three middle knots gets no fresh distinction at round 1, and its law (the parity of the middles' three loose
+distinctions), with the start's laws, leaves the rings' loose groups 4 of 8 joint values where the start allowed all
+8. Ordinary growth leaves them free at every round. Both cut runs then stall at round 2. Under the cuts premise 3
+fails (on 144 census rounds under one fewer, 192 under the arity floor), yet the span still held on every stage.
+
+**Not-all-equal** (read only): the same carriers take every joint value on every family and round.
+
+## The owner's rungs, in these terms
+
+| Rung | What it requires | Met? |
+| --- | --- | --- |
+| Repetition | the same kind of fact, held by the whole and by no part, at two layers | yes: a knot; a class fact no knot reads (lesson 12.2); now a parity rule among such facts |
+| Tower, first step | facts of one layer held by the whole, bound by a rule that passes the knot test and that nothing outside supplies, where before the step they were not such facts | on built starts, yes: the rule is the start's own sum of knot laws, and growth makes the bound quantities class facts (under changes of at most five distinctions on every family; under the shortest changes on the detour families). Under the cuts the rule itself is new, one knot's law |
+| Tower, every step | the bound layer again keeps facts held by its whole, by its own small changes and its own rule, step after step | not shown: the bound triple has no small changes or laws of its own yet, and both cut runs stall |
+| Recursion | a pattern that grows back into itself | not shown |
+
+**Caveat a referee should press.** As functions on the allowed states the bound facts are linearly dependent, as the
+three distinctions of a parity knot are; what makes this more than a rule we define as a sum is that each fact has its
+own carrier, disjoint from the others and read by no single knot. And the starts are hand-built (register entry for
+this study's scaffolds); under the sampled weightings read so far no binding was found.

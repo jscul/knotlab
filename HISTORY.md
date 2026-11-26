@@ -3,6 +3,10 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 26 November 2026 · The settling cut after the last fall refereed: confirmed, with narrowings
+
+**Corrections from [an independent referee's report](research/LAST-MERGE-20261126-001/referee-R1/report.md), folded into [the decision](research/LAST-MERGE-20261126-001/decision.md).** Both frozen predictions stand. The rule that a view settles three rounds after the last fall in births (five with parents) holds for the starts that settle late, 16 distinct starts in the held-out sample; a start that is not late can settle later. The combined bound follows from the rule and is not a second test.
+
 ## 26 November 2026 · The settling bound refereed: confirmed, with narrowings
 
 **Corrections from [an independent referee's report](research/SETTLE-BOUND-20261126-001/referee-R1/report.md), folded into [the decision](research/SETTLE-BOUND-20261126-001/decision.md).** The frozen settling bound's failure stands. For every late start the view settles exactly three rounds after the last fall in births (five with parents); the pair rule's success where views settle by the cut holds by construction and is not a test.

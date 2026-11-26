@@ -1,0 +1,1106 @@
+{
+  "paired census starts": 100,
+  "laws": {
+    "nae": {
+      "kinds": {
+        "stalls": 65,
+        "dim 1": 11,
+        "dim 2": 20,
+        "dim 3": 2,
+        "dim 4": 1,
+        "unread": 1
+      },
+      "ends by kind": {
+        "stalls": {
+          "stalls at round 1": 65
+        },
+        "dim 1": {
+          "rounds": 11
+        },
+        "dim 2": {
+          "rounds": 20
+        },
+        "dim 3": {
+          "bound": 1,
+          "rounds": 1
+        },
+        "dim 4": {
+          "rounds": 1
+        },
+        "unread": {
+          "bound": 1
+        }
+      },
+      "saved rounds": 828,
+      "births": 129354,
+      "unread": [
+        {
+          "index": 35525,
+          "end": "bound",
+          "birth counts": [
+            6,
+            10,
+            20,
+            40,
+            75,
+            131,
+            215,
+            335,
+            500,
+            720,
+            1006,
+            1370,
+            1825,
+            2385,
+            3065,
+            3881,
+            4850,
+            5990,
+            7320
+          ]
+        }
+      ],
+      "readings": {
+        "sig0": {
+          "K counts": {
+            "6": 9,
+            "7": 6,
+            "3": 10,
+            "10": 2,
+            "8": 2,
+            "5": 2,
+            "9": 2,
+            "4": 1
+          },
+          "T counts": {
+            "1": 22,
+            "4": 5,
+            "5": 2,
+            "3": 4,
+            "6": 1
+          },
+          "horizons": {
+            "24": {
+              "dim 1": 11,
+              "dim 2": 20,
+              "dim 3": 1,
+              "dim 4": 1
+            },
+            "17": {
+              "dim 3": 1
+            }
+          },
+          "strict fall counts": {
+            "0": 22,
+            "2": 8,
+            "1": 4
+          },
+          "K after T and floor": {
+            "dim 1": 5,
+            "dim 2": 16,
+            "dim 3": 2,
+            "dim 4": 1
+          },
+          "last failure cancels in total": {
+            "dim 1": 5,
+            "dim 2": 16,
+            "dim 3": 2,
+            "dim 4": 1
+          },
+          "polynomial degree": {
+            "0": 100,
+            "1": 41,
+            "2": 11,
+            "3": 1
+          },
+          "zero polynomials": 113,
+          "settled forecasts negative at next unsaved round": 0,
+          "forecasts": {
+            "M cutoff": {
+              "forward check": 34,
+              "negative start readings": 0
+            },
+            "T cutoff": {
+              "forward check": 34,
+              "negative start readings": 6,
+              "negative rounds": 112,
+              "negative kind counts": 140
+            },
+            "combined cutoff": {
+              "forward check": 34,
+              "negative start readings": 0
+            }
+          },
+          "negative examples": {
+            "T cutoff": {
+              "index": 35548,
+              "D": 3,
+              "cut": 4,
+              "round": 5,
+              "kind": [
+                "join",
+                2,
+                7,
+                9
+              ],
+              "fitted count": -36,
+              "observed count": 0,
+              "fit counts": [
+                0,
+                12,
+                0
+              ]
+            }
+          },
+          "censored": [
+            {
+              "index": 35548,
+              "D": 3,
+              "end": "bound",
+              "last round": 17,
+              "M": 9,
+              "T": 1,
+              "K": 10,
+              "strict falls": 0,
+              "latest nonzero Dth difference": 10,
+              "latest nonzero Dth difference in total": 7,
+              "censor reasons": [
+                "fewer than 24 saved rounds"
+              ],
+              "checkable relative to saved horizon": true,
+              "M cutoff": 14,
+              "T cutoff": 4,
+              "point holds if late": true,
+              "bound holds": true,
+              "slack": 4
+            }
+          ],
+          "cells": {
+            "dim 1": {
+              "checkable": 11,
+              "within the combined bound": 11
+            },
+            "dim 2": {
+              "checkable": 20,
+              "within the combined bound": 20
+            },
+            "dim 3": {
+              "censored": 1,
+              "checkable": 1,
+              "within the combined bound": 1
+            },
+            "dim 4": {
+              "checkable": 1,
+              "within the combined bound": 1
+            }
+          },
+          "tally": {
+            "within the combined bound": 33,
+            "censored": 1
+          },
+          "post-cut compared rounds": {
+            "18": 9,
+            "17": 6,
+            "21": 10,
+            "16": 2,
+            "14": 1,
+            "19": 2,
+            "15": 2,
+            "20": 1
+          },
+          "final horizon bound": {
+            "before last saved round": 33
+          },
+          "offset K minus T": {
+            "none": {
+              "5": 5,
+              "2": 10,
+              "9": 1,
+              "4": 2,
+              "8": 1,
+              "6": 1,
+              "3": 1
+            },
+            "within M cutoff": {
+              "5": 5,
+              "3": 13,
+              "2": 10,
+              "9": 1,
+              "4": 2,
+              "8": 1,
+              "6": 1
+            },
+            "strict fall": {
+              "3": 12
+            }
+          },
+          "larger cutoff": {
+            "M": 33
+          },
+          "T-only bound fails": {
+            "none": 10
+          },
+          "late": [],
+          "breaks": [],
+          "slack": {
+            "4": 13,
+            "1": 8,
+            "7": 1,
+            "6": 4,
+            "2": 2,
+            "3": 3,
+            "5": 2
+          }
+        },
+        "sig1": {
+          "K counts": {
+            "7": 4,
+            "9": 8,
+            "3": 5,
+            "13": 1,
+            "10": 2,
+            "8": 4,
+            "4": 4,
+            "11": 3,
+            "6": 2,
+            "5": 1
+          },
+          "T counts": {
+            "1": 22,
+            "4": 5,
+            "5": 2,
+            "3": 4,
+            "6": 1
+          },
+          "horizons": {
+            "24": {
+              "dim 1": 11,
+              "dim 2": 20,
+              "dim 3": 1,
+              "dim 4": 1
+            },
+            "17": {
+              "dim 3": 1
+            }
+          },
+          "strict fall counts": {
+            "0": 22,
+            "2": 8,
+            "1": 4
+          },
+          "K after T and floor": {
+            "dim 1": 7,
+            "dim 2": 19,
+            "dim 3": 2,
+            "dim 4": 1
+          },
+          "last failure cancels in total": {
+            "dim 1": 7,
+            "dim 2": 19,
+            "dim 3": 2,
+            "dim 4": 1
+          },
+          "polynomial degree": {
+            "0": 156,
+            "1": 53,
+            "2": 12,
+            "3": 1
+          },
+          "zero polynomials": 362,
+          "settled forecasts negative at next unsaved round": 0,
+          "forecasts": {
+            "M cutoff": {
+              "forward check": 34,
+              "negative start readings": 0
+            },
+            "T cutoff": {
+              "forward check": 34,
+              "negative start readings": 5,
+              "negative rounds": 83,
+              "negative kind counts": 288
+            },
+            "combined cutoff": {
+              "forward check": 34,
+              "negative start readings": 0
+            }
+          },
+          "negative examples": {
+            "T cutoff": {
+              "index": 35548,
+              "D": 3,
+              "cut": 6,
+              "round": 7,
+              "kind": [
+                [
+                  "join",
+                  4,
+                  6,
+                  10
+                ],
+                [
+                  [
+                    "join",
+                    3,
+                    6,
+                    9
+                  ],
+                  [
+                    "join",
+                    3,
+                    7,
+                    10
+                  ],
+                  [
+                    "join",
+                    3,
+                    7,
+                    10
+                  ],
+                  [
+                    "join",
+                    3,
+                    7,
+                    10
+                  ]
+                ]
+              ],
+              "fitted count": -180,
+              "observed count": 0,
+              "fit counts": [
+                0,
+                60,
+                0
+              ]
+            }
+          },
+          "censored": [
+            {
+              "index": 35548,
+              "D": 3,
+              "end": "bound",
+              "last round": 17,
+              "M": 9,
+              "T": 1,
+              "K": 13,
+              "strict falls": 0,
+              "latest nonzero Dth difference": 13,
+              "latest nonzero Dth difference in total": 7,
+              "censor reasons": [
+                "fewer than 24 saved rounds"
+              ],
+              "checkable relative to saved horizon": true,
+              "M cutoff": 16,
+              "T cutoff": 6,
+              "point holds if late": true,
+              "bound holds": true,
+              "slack": 3
+            }
+          ],
+          "cells": {
+            "dim 1": {
+              "checkable": 11,
+              "within the combined bound": 11
+            },
+            "dim 2": {
+              "checkable": 20,
+              "within the combined bound": 20
+            },
+            "dim 3": {
+              "censored": 1,
+              "checkable": 1,
+              "within the combined bound": 1
+            },
+            "dim 4": {
+              "checkable": 1,
+              "within the combined bound": 1
+            }
+          },
+          "tally": {
+            "within the combined bound": 33,
+            "censored": 1
+          },
+          "post-cut compared rounds": {
+            "17": 4,
+            "15": 8,
+            "21": 5,
+            "14": 2,
+            "16": 4,
+            "20": 4,
+            "13": 3,
+            "18": 2,
+            "19": 1
+          },
+          "final horizon bound": {
+            "before last saved round": 33
+          },
+          "offset K minus T": {
+            "none": {
+              "6": 4,
+              "2": 5,
+              "3": 4,
+              "8": 3,
+              "10": 2,
+              "5": 2,
+              "4": 1
+            },
+            "within M cutoff": {
+              "6": 4,
+              "5": 14,
+              "2": 5,
+              "3": 4,
+              "8": 3,
+              "10": 2,
+              "4": 1
+            },
+            "strict fall": {
+              "5": 12
+            }
+          },
+          "larger cutoff": {
+            "M": 33
+          },
+          "T-only bound fails": {
+            "none": 9
+          },
+          "late": [],
+          "breaks": [],
+          "slack": {
+            "5": 5,
+            "1": 8,
+            "9": 1,
+            "8": 1,
+            "2": 2,
+            "7": 3,
+            "3": 4,
+            "6": 4,
+            "4": 5
+          }
+        }
+      },
+      "reading overlap indices": {
+        "late": [],
+        "censored": [
+          35548
+        ]
+      },
+      "K with parents minus K without parents (finite K in both)": {
+        "dim 1": {
+          "1": 7,
+          "0": 4
+        },
+        "dim 2": {
+          "2": 16,
+          "1": 3,
+          "0": 1
+        },
+        "dim 3": {
+          "3": 2
+        },
+        "dim 4": {
+          "4": 1
+        }
+      }
+    },
+    "parity": {
+      "kinds": {
+        "stalls": 65,
+        "dim 1": 11,
+        "closes": 12,
+        "dim 3": 2,
+        "dim 2": 8,
+        "dim 4": 1,
+        "unread": 1
+      },
+      "ends by kind": {
+        "stalls": {
+          "stalls at round 1": 65
+        },
+        "dim 1": {
+          "rounds": 11
+        },
+        "closes": {
+          "closes at round 5": 5,
+          "closes at round 6": 1,
+          "closes at round 4": 4,
+          "closes at round 7": 1,
+          "closes at round 2": 1
+        },
+        "dim 3": {
+          "bound": 1,
+          "rounds": 1
+        },
+        "dim 2": {
+          "rounds": 8
+        },
+        "dim 4": {
+          "rounds": 1
+        },
+        "unread": {
+          "bound": 1
+        }
+      },
+      "saved rounds": 584,
+      "births": 126743,
+      "unread": [
+        {
+          "index": 35525,
+          "end": "bound",
+          "birth counts": [
+            6,
+            10,
+            20,
+            40,
+            75,
+            131,
+            215,
+            335,
+            500,
+            720,
+            1006,
+            1370,
+            1825,
+            2385,
+            3065,
+            3881,
+            4850,
+            5990,
+            7320
+          ]
+        }
+      ],
+      "readings": {
+        "sig0": {
+          "K counts": {
+            "6": 5,
+            "3": 10,
+            "10": 2,
+            "8": 1,
+            "5": 2,
+            "9": 1,
+            "7": 1
+          },
+          "T counts": {
+            "1": 21,
+            "5": 1
+          },
+          "horizons": {
+            "24": {
+              "dim 1": 11,
+              "dim 2": 8,
+              "dim 3": 1,
+              "dim 4": 1
+            },
+            "17": {
+              "dim 3": 1
+            }
+          },
+          "strict fall counts": {
+            "0": 21,
+            "2": 1
+          },
+          "K after T and floor": {
+            "dim 1": 5,
+            "dim 3": 2,
+            "dim 2": 4,
+            "dim 4": 1
+          },
+          "last failure cancels in total": {
+            "dim 1": 5,
+            "dim 3": 2,
+            "dim 2": 4,
+            "dim 4": 1
+          },
+          "polynomial degree": {
+            "0": 88,
+            "1": 29,
+            "2": 11,
+            "3": 1
+          },
+          "zero polynomials": 65,
+          "settled forecasts negative at next unsaved round": 0,
+          "forecasts": {
+            "M cutoff": {
+              "forward check": 22,
+              "negative start readings": 0
+            },
+            "T cutoff": {
+              "forward check": 22,
+              "negative start readings": 6,
+              "negative rounds": 112,
+              "negative kind counts": 140
+            },
+            "combined cutoff": {
+              "forward check": 22,
+              "negative start readings": 0
+            }
+          },
+          "negative examples": {
+            "T cutoff": {
+              "index": 35548,
+              "D": 3,
+              "cut": 4,
+              "round": 5,
+              "kind": [
+                "join",
+                2,
+                7,
+                9
+              ],
+              "fitted count": -36,
+              "observed count": 0,
+              "fit counts": [
+                0,
+                12,
+                0
+              ]
+            }
+          },
+          "censored": [
+            {
+              "index": 35548,
+              "D": 3,
+              "end": "bound",
+              "last round": 17,
+              "M": 9,
+              "T": 1,
+              "K": 10,
+              "strict falls": 0,
+              "latest nonzero Dth difference": 10,
+              "latest nonzero Dth difference in total": 7,
+              "censor reasons": [
+                "fewer than 24 saved rounds"
+              ],
+              "checkable relative to saved horizon": true,
+              "M cutoff": 14,
+              "T cutoff": 4,
+              "point holds if late": true,
+              "bound holds": true,
+              "slack": 4
+            }
+          ],
+          "cells": {
+            "dim 1": {
+              "checkable": 11,
+              "within the combined bound": 11
+            },
+            "dim 3": {
+              "censored": 1,
+              "checkable": 1,
+              "within the combined bound": 1
+            },
+            "dim 2": {
+              "checkable": 8,
+              "within the combined bound": 8
+            },
+            "dim 4": {
+              "checkable": 1,
+              "within the combined bound": 1
+            }
+          },
+          "tally": {
+            "within the combined bound": 21,
+            "censored": 1
+          },
+          "post-cut compared rounds": {
+            "18": 5,
+            "21": 10,
+            "14": 1,
+            "16": 1,
+            "19": 2,
+            "15": 1,
+            "17": 1
+          },
+          "final horizon bound": {
+            "before last saved round": 21
+          },
+          "offset K minus T": {
+            "none": {
+              "5": 5,
+              "2": 10,
+              "9": 1,
+              "4": 2,
+              "8": 1,
+              "6": 1
+            },
+            "within M cutoff": {
+              "5": 5,
+              "2": 10,
+              "9": 1,
+              "3": 1,
+              "4": 2,
+              "8": 1,
+              "6": 1
+            },
+            "strict fall": {
+              "3": 1
+            }
+          },
+          "larger cutoff": {
+            "M": 21
+          },
+          "T-only bound fails": {
+            "none": 10
+          },
+          "late": [],
+          "breaks": [],
+          "slack": {
+            "4": 12,
+            "7": 1,
+            "6": 4,
+            "1": 1,
+            "3": 1,
+            "5": 2
+          }
+        },
+        "sig1": {
+          "K counts": {
+            "7": 4,
+            "3": 5,
+            "13": 1,
+            "4": 4,
+            "9": 3,
+            "11": 2,
+            "10": 1,
+            "6": 1,
+            "5": 1
+          },
+          "T counts": {
+            "1": 21,
+            "5": 1
+          },
+          "horizons": {
+            "24": {
+              "dim 1": 11,
+              "dim 2": 8,
+              "dim 3": 1,
+              "dim 4": 1
+            },
+            "17": {
+              "dim 3": 1
+            }
+          },
+          "strict fall counts": {
+            "0": 21,
+            "2": 1
+          },
+          "K after T and floor": {
+            "dim 1": 7,
+            "dim 3": 2,
+            "dim 2": 7,
+            "dim 4": 1
+          },
+          "last failure cancels in total": {
+            "dim 1": 7,
+            "dim 3": 2,
+            "dim 2": 7,
+            "dim 4": 1
+          },
+          "polynomial degree": {
+            "0": 132,
+            "1": 41,
+            "2": 12,
+            "3": 1
+          },
+          "zero polynomials": 241,
+          "settled forecasts negative at next unsaved round": 0,
+          "forecasts": {
+            "M cutoff": {
+              "forward check": 22,
+              "negative start readings": 0
+            },
+            "T cutoff": {
+              "forward check": 22,
+              "negative start readings": 5,
+              "negative rounds": 83,
+              "negative kind counts": 288
+            },
+            "combined cutoff": {
+              "forward check": 22,
+              "negative start readings": 0
+            }
+          },
+          "negative examples": {
+            "T cutoff": {
+              "index": 35548,
+              "D": 3,
+              "cut": 6,
+              "round": 7,
+              "kind": [
+                [
+                  "join",
+                  4,
+                  6,
+                  10
+                ],
+                [
+                  [
+                    "join",
+                    3,
+                    6,
+                    9
+                  ],
+                  [
+                    "join",
+                    3,
+                    7,
+                    10
+                  ],
+                  [
+                    "join",
+                    3,
+                    7,
+                    10
+                  ],
+                  [
+                    "join",
+                    3,
+                    7,
+                    10
+                  ]
+                ]
+              ],
+              "fitted count": -180,
+              "observed count": 0,
+              "fit counts": [
+                0,
+                60,
+                0
+              ]
+            }
+          },
+          "censored": [
+            {
+              "index": 35548,
+              "D": 3,
+              "end": "bound",
+              "last round": 17,
+              "M": 9,
+              "T": 1,
+              "K": 13,
+              "strict falls": 0,
+              "latest nonzero Dth difference": 13,
+              "latest nonzero Dth difference in total": 7,
+              "censor reasons": [
+                "fewer than 24 saved rounds"
+              ],
+              "checkable relative to saved horizon": true,
+              "M cutoff": 16,
+              "T cutoff": 6,
+              "point holds if late": true,
+              "bound holds": true,
+              "slack": 3
+            }
+          ],
+          "cells": {
+            "dim 1": {
+              "checkable": 11,
+              "within the combined bound": 11
+            },
+            "dim 3": {
+              "censored": 1,
+              "checkable": 1,
+              "within the combined bound": 1
+            },
+            "dim 2": {
+              "checkable": 8,
+              "within the combined bound": 8
+            },
+            "dim 4": {
+              "checkable": 1,
+              "within the combined bound": 1
+            }
+          },
+          "tally": {
+            "within the combined bound": 21,
+            "censored": 1
+          },
+          "post-cut compared rounds": {
+            "17": 4,
+            "21": 5,
+            "20": 4,
+            "15": 3,
+            "13": 2,
+            "14": 1,
+            "18": 1,
+            "19": 1
+          },
+          "final horizon bound": {
+            "before last saved round": 21
+          },
+          "offset K minus T": {
+            "none": {
+              "6": 4,
+              "2": 5,
+              "3": 4,
+              "8": 3,
+              "10": 2,
+              "5": 1,
+              "4": 1
+            },
+            "within M cutoff": {
+              "6": 4,
+              "2": 5,
+              "3": 4,
+              "8": 3,
+              "10": 2,
+              "5": 2,
+              "4": 1
+            },
+            "strict fall": {
+              "5": 1
+            }
+          },
+          "larger cutoff": {
+            "M": 21
+          },
+          "T-only bound fails": {
+            "none": 9
+          },
+          "late": [],
+          "breaks": [],
+          "slack": {
+            "5": 5,
+            "9": 1,
+            "8": 1,
+            "7": 3,
+            "3": 2,
+            "6": 4,
+            "1": 1,
+            "4": 4
+          }
+        }
+      },
+      "reading overlap indices": {
+        "late": [],
+        "censored": [
+          35548
+        ]
+      },
+      "K with parents minus K without parents (finite K in both)": {
+        "dim 1": {
+          "1": 7,
+          "0": 4
+        },
+        "dim 3": {
+          "3": 2
+        },
+        "dim 2": {
+          "1": 3,
+          "2": 4,
+          "0": 1
+        },
+        "dim 4": {
+          "4": 1
+        }
+      }
+    }
+  },
+  "comparison": {
+    "dimension and ending comparison": {
+      "stalls / stalls": 65,
+      "dim 1 / dim 1": 11,
+      "dim 2 / closes": 12,
+      "dim 3 / dim 3": 2,
+      "dim 2 / dim 2": 8,
+      "dim 4 / dim 4": 1,
+      "unread / unread": 1
+    },
+    "M differs": {},
+    "late overlap": {},
+    "censored overlap": {
+      "nae sig0 / nae sig1 / parity sig0 / parity sig1": 1
+    },
+    "checkable overlap": {
+      "nae sig0 / nae sig1 / parity sig0 / parity sig1": 21,
+      "nae sig0 / nae sig1": 12
+    },
+    "law reading comparison": {
+      "stalls / stalls": {
+        "totals": {
+          "identical": 65
+        },
+        "sig0": {
+          "identical": 65
+        },
+        "sig1": {
+          "identical": 65
+        }
+      },
+      "dim 1 / dim 1": {
+        "totals": {
+          "identical": 11
+        },
+        "sig0": {
+          "identical": 11
+        },
+        "sig1": {
+          "identical": 11
+        }
+      },
+      "dim 2 / closes": {
+        "totals": {
+          "agree through shorter record": 12
+        },
+        "sig0": {
+          "first difference at 4": 5,
+          "first difference at 5": 1,
+          "first difference at 3": 4,
+          "first difference at 6": 1,
+          "first difference at 1": 1
+        },
+        "sig1": {
+          "first difference at 4": 5,
+          "first difference at 5": 1,
+          "first difference at 3": 4,
+          "first difference at 6": 1,
+          "first difference at 1": 1
+        }
+      },
+      "dim 3 / dim 3": {
+        "totals": {
+          "identical": 2
+        },
+        "sig0": {
+          "identical": 2
+        },
+        "sig1": {
+          "identical": 2
+        }
+      },
+      "dim 2 / dim 2": {
+        "totals": {
+          "identical": 8
+        },
+        "sig0": {
+          "identical": 8
+        },
+        "sig1": {
+          "identical": 8
+        }
+      },
+      "dim 4 / dim 4": {
+        "totals": {
+          "identical": 1
+        },
+        "sig0": {
+          "identical": 1
+        },
+        "sig1": {
+          "identical": 1
+        }
+      },
+      "unread / unread": {
+        "totals": {
+          "identical": 1
+        },
+        "sig0": {
+          "identical": 1
+        },
+        "sig1": {
+          "identical": 1
+        }
+      }
+    }
+  },
+  "all fields agree with saved test results": {}
+}

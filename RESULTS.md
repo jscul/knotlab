@@ -2014,7 +2014,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-26 | Does what a family makes depend on which family it meets (`FAMILIES-THAT-MEET-20261126-001`) | — | [folder](research/FAMILIES-THAT-MEET-20261126-001/) |
 | 2026-11-26 | Late hearing from afar under the local taking rules, and under laws in which knots hold back part of what they are owed (`HOLD-BACK-20261126-001`) | — | [folder](research/HOLD-BACK-20261126-001/) |
 | 2026-11-26 | How much of a change arrives: the share of a growth's births that a single change alters, round by round (`HOW-MUCH-ARRIVES-20261126-001`) | — | [folder](research/HOW-MUCH-ARRIVES-20261126-001/) |
-| 2026-11-26 | The last merge as the settling round of a local reader's view (`LAST-MERGE-20261126-001`) | — | [folder](research/LAST-MERGE-20261126-001/) |
+| 2026-11-26 | The settling cut after the last fall in births (`LAST-MERGE-20261126-001`) | — | [folder](research/LAST-MERGE-20261126-001/) |
 | 2026-11-26 | The late views of a growth from its start alone (`LATE-VIEWS-20261126-001`) | — | [folder](research/LATE-VIEWS-20261126-001/) |
 | 2026-11-26 | Two patterns that stay linked under a cap: can the far one then change the receiver's course after both exist? (`LINKED-UNDER-CAP-20261126-001`) | — | [folder](research/LINKED-UNDER-CAP-20261126-001/) |
 | 2026-11-26 | Which starts look alike to a local reader (`LOOK-ALIKE-20261126-001`) | — | [folder](research/LOOK-ALIKE-20261126-001/) |

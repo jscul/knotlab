@@ -1,0 +1,1159 @@
+{
+  "seconds": 1.3027516649963218,
+  "checks": [
+    {
+      "census index": 63032,
+      "starting rules": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          3,
+          4
+        ],
+        [
+          3,
+          5,
+          6
+        ],
+        [
+          5,
+          7,
+          8
+        ],
+        [
+          1,
+          7,
+          9,
+          10
+        ],
+        [
+          2,
+          4,
+          6,
+          8,
+          9
+        ]
+      ],
+      "tested rule position": 4,
+      "by law": {
+        "parity": {
+          "allowed": [
+            "0000",
+            "0110",
+            "1010",
+            "1100"
+          ],
+          "binding": true,
+          "coexistence": true,
+          "contact": "x10",
+          "erasure": "forgetting",
+          "invisible_in_parts": false,
+          "is_knot": false,
+          "loops": [
+            "x1",
+            "x7",
+            "x9"
+          ],
+          "loss_on_erasure": false,
+          "minimum_width": 3,
+          "notes": [
+            "with x1 forgotten, x7=0, x9=0, x10=1 is still excluded, so a binding survives without that loop",
+            "with x7 forgotten, x1=0, x9=0, x10=1 is still excluded, so a binding survives without that loop",
+            "with x9 forgotten, x1=0, x7=0, x10=1 is still excluded, so a binding survives without that loop",
+            "with the contact x10 forgotten, x1=0, x7=0, x9=1 is still excluded, so the loops are tied without it"
+          ],
+          "pairwise_definable": false,
+          "variables": [
+            "x1",
+            "x7",
+            "x9",
+            "x10"
+          ]
+        },
+        "nae": {
+          "allowed": [
+            "0001",
+            "0010",
+            "0011",
+            "0100",
+            "0101",
+            "0110",
+            "0111",
+            "1000",
+            "1001",
+            "1010",
+            "1011",
+            "1100",
+            "1101",
+            "1110"
+          ],
+          "binding": true,
+          "coexistence": true,
+          "contact": "x10",
+          "erasure": "forgetting",
+          "invisible_in_parts": true,
+          "is_knot": true,
+          "loops": [
+            "x1",
+            "x7",
+            "x9"
+          ],
+          "loss_on_erasure": true,
+          "minimum_width": 4,
+          "notes": [],
+          "pairwise_definable": false,
+          "variables": [
+            "x1",
+            "x7",
+            "x9",
+            "x10"
+          ]
+        }
+      }
+    },
+    {
+      "census index": 63757,
+      "starting rules": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          3,
+          4,
+          5
+        ],
+        [
+          1,
+          3,
+          6,
+          7,
+          10,
+          11,
+          12
+        ],
+        [
+          4,
+          6,
+          8
+        ],
+        [
+          7,
+          8,
+          9
+        ],
+        [
+          2,
+          5,
+          9
+        ]
+      ],
+      "tested rule position": 2,
+      "by law": {
+        "parity": {
+          "allowed": [
+            "0000000",
+            "0000011",
+            "0000101",
+            "0000110",
+            "0011000",
+            "0011011",
+            "0011101",
+            "0011110",
+            "0101000",
+            "0101011",
+            "0101101",
+            "0101110",
+            "0110000",
+            "0110011",
+            "0110101",
+            "0110110",
+            "1001000",
+            "1001011",
+            "1001101",
+            "1001110",
+            "1010000",
+            "1010011",
+            "1010101",
+            "1010110",
+            "1100000",
+            "1100011",
+            "1100101",
+            "1100110",
+            "1111000",
+            "1111011",
+            "1111101",
+            "1111110"
+          ],
+          "binding": true,
+          "coexistence": true,
+          "contact": "x12",
+          "erasure": "forgetting",
+          "invisible_in_parts": false,
+          "is_knot": false,
+          "loops": [
+            "x1",
+            "x3",
+            "x6",
+            "x7",
+            "x10",
+            "x11"
+          ],
+          "loss_on_erasure": false,
+          "minimum_width": 4,
+          "notes": [
+            "with x1 forgotten, x3=0, x6=0, x7=0, x10=0, x11=0, x12=1 is still excluded, so a binding survives without that loop",
+            "with x3 forgotten, x1=0, x6=0, x7=0, x10=0, x11=0, x12=1 is still excluded, so a binding survives without that loop",
+            "with x6 forgotten, x1=0, x3=0, x7=0, x10=0, x11=0, x12=1 is still excluded, so a binding survives without that loop",
+            "with x7 forgotten, x1=0, x3=0, x6=0, x10=0, x11=0, x12=1 is still excluded, so a binding survives without that loop",
+            "with x10 forgotten, x1=0, x3=0, x6=0, x7=1, x11=0, x12=0 is still excluded, so a binding survives without that loop",
+            "with x11 forgotten, x1=0, x3=0, x6=0, x7=1, x10=0, x12=0 is still excluded, so a binding survives without that loop",
+            "with the contact x12 forgotten, x1=0, x3=0, x6=0, x7=1, x10=0, x11=0 is still excluded, so the loops are tied without it"
+          ],
+          "pairwise_definable": false,
+          "variables": [
+            "x1",
+            "x3",
+            "x6",
+            "x7",
+            "x10",
+            "x11",
+            "x12"
+          ]
+        },
+        "nae": {
+          "allowed": [
+            "0000001",
+            "0000010",
+            "0000011",
+            "0000100",
+            "0000101",
+            "0000110",
+            "0000111",
+            "0001000",
+            "0001001",
+            "0001010",
+            "0001011",
+            "0001100",
+            "0001101",
+            "0001110",
+            "0001111",
+            "0010000",
+            "0010001",
+            "0010010",
+            "0010011",
+            "0010100",
+            "0010101",
+            "0010110",
+            "0010111",
+            "0011000",
+            "0011001",
+            "0011010",
+            "0011011",
+            "0011100",
+            "0011101",
+            "0011110",
+            "0011111",
+            "0100000",
+            "0100001",
+            "0100010",
+            "0100011",
+            "0100100",
+            "0100101",
+            "0100110",
+            "0100111",
+            "0101000",
+            "0101001",
+            "0101010",
+            "0101011",
+            "0101100",
+            "0101101",
+            "0101110",
+            "0101111",
+            "0110000",
+            "0110001",
+            "0110010",
+            "0110011",
+            "0110100",
+            "0110101",
+            "0110110",
+            "0110111",
+            "0111000",
+            "0111001",
+            "0111010",
+            "0111011",
+            "0111100",
+            "0111101",
+            "0111110",
+            "0111111",
+            "1000000",
+            "1000001",
+            "1000010",
+            "1000011",
+            "1000100",
+            "1000101",
+            "1000110",
+            "1000111",
+            "1001000",
+            "1001001",
+            "1001010",
+            "1001011",
+            "1001100",
+            "1001101",
+            "1001110",
+            "1001111",
+            "1010000",
+            "1010001",
+            "1010010",
+            "1010011",
+            "1010100",
+            "1010101",
+            "1010110",
+            "1010111",
+            "1011000",
+            "1011001",
+            "1011010",
+            "1011011",
+            "1011100",
+            "1011101",
+            "1011110",
+            "1011111",
+            "1100000",
+            "1100001",
+            "1100010",
+            "1100011",
+            "1100100",
+            "1100101",
+            "1100110",
+            "1100111",
+            "1101000",
+            "1101001",
+            "1101010",
+            "1101011",
+            "1101100",
+            "1101101",
+            "1101110",
+            "1101111",
+            "1110000",
+            "1110001",
+            "1110010",
+            "1110011",
+            "1110100",
+            "1110101",
+            "1110110",
+            "1110111",
+            "1111000",
+            "1111001",
+            "1111010",
+            "1111011",
+            "1111100",
+            "1111101",
+            "1111110"
+          ],
+          "binding": true,
+          "coexistence": true,
+          "contact": "x12",
+          "erasure": "forgetting",
+          "invisible_in_parts": true,
+          "is_knot": true,
+          "loops": [
+            "x1",
+            "x3",
+            "x6",
+            "x7",
+            "x10",
+            "x11"
+          ],
+          "loss_on_erasure": true,
+          "minimum_width": 7,
+          "notes": [],
+          "pairwise_definable": false,
+          "variables": [
+            "x1",
+            "x3",
+            "x6",
+            "x7",
+            "x10",
+            "x11",
+            "x12"
+          ]
+        }
+      }
+    },
+    {
+      "census index": 71548,
+      "starting rules": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          3,
+          4,
+          5
+        ],
+        [
+          0,
+          6,
+          7,
+          8
+        ],
+        [
+          3,
+          6,
+          9
+        ],
+        [
+          1,
+          4,
+          7,
+          9,
+          10
+        ],
+        [
+          2,
+          5,
+          8,
+          10,
+          11
+        ]
+      ],
+      "tested rule position": 5,
+      "by law": {
+        "parity": {
+          "allowed": [
+            "00000",
+            "00110",
+            "01010",
+            "01100",
+            "10010",
+            "10100",
+            "11000",
+            "11110"
+          ],
+          "binding": true,
+          "coexistence": true,
+          "contact": "x11",
+          "erasure": "forgetting",
+          "invisible_in_parts": false,
+          "is_knot": false,
+          "loops": [
+            "x2",
+            "x5",
+            "x8",
+            "x10"
+          ],
+          "loss_on_erasure": false,
+          "minimum_width": 4,
+          "notes": [
+            "with x2 forgotten, x5=0, x8=0, x10=0, x11=1 is still excluded, so a binding survives without that loop",
+            "with x5 forgotten, x2=0, x8=0, x10=0, x11=1 is still excluded, so a binding survives without that loop",
+            "with x8 forgotten, x2=0, x5=0, x10=0, x11=1 is still excluded, so a binding survives without that loop",
+            "with x10 forgotten, x2=0, x5=0, x8=0, x11=1 is still excluded, so a binding survives without that loop",
+            "with the contact x11 forgotten, x2=0, x5=0, x8=0, x10=1 is still excluded, so the loops are tied without it"
+          ],
+          "pairwise_definable": false,
+          "variables": [
+            "x2",
+            "x5",
+            "x8",
+            "x10",
+            "x11"
+          ]
+        },
+        "nae": {
+          "allowed": [
+            "00001",
+            "00010",
+            "00011",
+            "00100",
+            "00101",
+            "00110",
+            "00111",
+            "01000",
+            "01001",
+            "01010",
+            "01011",
+            "01100",
+            "01101",
+            "01110",
+            "01111",
+            "10000",
+            "10001",
+            "10010",
+            "10011",
+            "10100",
+            "10101",
+            "10110",
+            "10111",
+            "11000",
+            "11001",
+            "11010",
+            "11011",
+            "11100",
+            "11101",
+            "11110"
+          ],
+          "binding": true,
+          "coexistence": true,
+          "contact": "x11",
+          "erasure": "forgetting",
+          "invisible_in_parts": true,
+          "is_knot": true,
+          "loops": [
+            "x2",
+            "x5",
+            "x8",
+            "x10"
+          ],
+          "loss_on_erasure": true,
+          "minimum_width": 5,
+          "notes": [],
+          "pairwise_definable": false,
+          "variables": [
+            "x2",
+            "x5",
+            "x8",
+            "x10",
+            "x11"
+          ]
+        }
+      }
+    },
+    {
+      "census index": 72635,
+      "starting rules": [
+        [
+          0,
+          1,
+          2,
+          11,
+          12
+        ],
+        [
+          3,
+          4,
+          5
+        ],
+        [
+          0,
+          6,
+          7,
+          8
+        ],
+        [
+          3,
+          6,
+          9
+        ],
+        [
+          1,
+          4,
+          7,
+          9,
+          10
+        ],
+        [
+          2,
+          5,
+          8,
+          10
+        ]
+      ],
+      "tested rule position": 0,
+      "by law": {
+        "parity": {
+          "allowed": [
+            "00000",
+            "00011",
+            "01100",
+            "01111",
+            "10100",
+            "10111",
+            "11000",
+            "11011"
+          ],
+          "binding": true,
+          "coexistence": true,
+          "contact": "x12",
+          "erasure": "forgetting",
+          "invisible_in_parts": false,
+          "is_knot": false,
+          "loops": [
+            "x0",
+            "x1",
+            "x2",
+            "x11"
+          ],
+          "loss_on_erasure": false,
+          "minimum_width": 3,
+          "notes": [
+            "with x0 forgotten, x1=0, x2=0, x11=0, x12=1 is still excluded, so a binding survives without that loop",
+            "with x1 forgotten, x0=0, x2=0, x11=0, x12=1 is still excluded, so a binding survives without that loop",
+            "with x2 forgotten, x0=0, x1=0, x11=0, x12=1 is still excluded, so a binding survives without that loop",
+            "with x11 forgotten, x0=0, x1=0, x2=1, x12=0 is still excluded, so a binding survives without that loop",
+            "with the contact x12 forgotten, x0=0, x1=0, x2=1, x11=0 is still excluded, so the loops are tied without it"
+          ],
+          "pairwise_definable": false,
+          "variables": [
+            "x0",
+            "x1",
+            "x2",
+            "x11",
+            "x12"
+          ]
+        },
+        "nae": {
+          "allowed": [
+            "00001",
+            "00010",
+            "00011",
+            "00100",
+            "00101",
+            "00110",
+            "00111",
+            "01000",
+            "01001",
+            "01010",
+            "01011",
+            "01100",
+            "01101",
+            "01110",
+            "01111",
+            "10000",
+            "10001",
+            "10010",
+            "10011",
+            "10100",
+            "10101",
+            "10110",
+            "10111",
+            "11000",
+            "11001",
+            "11010",
+            "11011",
+            "11100",
+            "11101",
+            "11110"
+          ],
+          "binding": true,
+          "coexistence": true,
+          "contact": "x12",
+          "erasure": "forgetting",
+          "invisible_in_parts": true,
+          "is_knot": true,
+          "loops": [
+            "x0",
+            "x1",
+            "x2",
+            "x11"
+          ],
+          "loss_on_erasure": true,
+          "minimum_width": 5,
+          "notes": [],
+          "pairwise_definable": false,
+          "variables": [
+            "x0",
+            "x1",
+            "x2",
+            "x11",
+            "x12"
+          ]
+        }
+      }
+    },
+    {
+      "census index": 33468,
+      "starting rules": [
+        [
+          0,
+          9,
+          10
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          0,
+          1,
+          4,
+          5,
+          11,
+          12
+        ],
+        [
+          2,
+          4,
+          6,
+          7
+        ],
+        [
+          3,
+          6,
+          8
+        ],
+        [
+          5,
+          7,
+          8
+        ]
+      ],
+      "tested rule position": 2,
+      "by law": {
+        "parity": {
+          "allowed": [
+            "000000",
+            "000011",
+            "001100",
+            "001111",
+            "010100",
+            "010111",
+            "011000",
+            "011011",
+            "100001",
+            "100010",
+            "101101",
+            "101110",
+            "110101",
+            "110110",
+            "111001",
+            "111010"
+          ],
+          "binding": true,
+          "coexistence": true,
+          "contact": "x12",
+          "erasure": "forgetting",
+          "invisible_in_parts": false,
+          "is_knot": false,
+          "loops": [
+            "x0",
+            "x1",
+            "x4",
+            "x5",
+            "x11"
+          ],
+          "loss_on_erasure": false,
+          "minimum_width": 3,
+          "notes": [
+            "with x0 forgotten, x1=0, x4=0, x5=1, x11=0, x12=0 is still excluded, so a binding survives without that loop",
+            "with x1 forgotten, x0=0, x4=0, x5=0, x11=0, x12=1 is still excluded, so a binding survives without that loop",
+            "with x4 forgotten, x0=0, x1=0, x5=0, x11=0, x12=1 is still excluded, so a binding survives without that loop",
+            "with x5 forgotten, x0=0, x1=0, x4=0, x11=0, x12=1 is still excluded, so a binding survives without that loop",
+            "with x11 forgotten, x0=0, x1=0, x4=0, x5=1, x12=0 is still excluded, so a binding survives without that loop",
+            "with the contact x12 forgotten, x0=0, x1=0, x4=0, x5=1, x11=0 is still excluded, so the loops are tied without it"
+          ],
+          "pairwise_definable": false,
+          "variables": [
+            "x0",
+            "x1",
+            "x4",
+            "x5",
+            "x11",
+            "x12"
+          ]
+        },
+        "nae": {
+          "allowed": [
+            "000001",
+            "000010",
+            "000011",
+            "000100",
+            "000101",
+            "000110",
+            "000111",
+            "001000",
+            "001001",
+            "001010",
+            "001011",
+            "001100",
+            "001101",
+            "001110",
+            "001111",
+            "010000",
+            "010001",
+            "010010",
+            "010011",
+            "010100",
+            "010101",
+            "010110",
+            "010111",
+            "011000",
+            "011001",
+            "011010",
+            "011011",
+            "011100",
+            "011101",
+            "011110",
+            "011111",
+            "100000",
+            "100001",
+            "100010",
+            "100011",
+            "100100",
+            "100101",
+            "100110",
+            "100111",
+            "101000",
+            "101001",
+            "101010",
+            "101011",
+            "101100",
+            "101101",
+            "101110",
+            "101111",
+            "110000",
+            "110001",
+            "110010",
+            "110011",
+            "110100",
+            "110101",
+            "110110",
+            "110111",
+            "111000",
+            "111001",
+            "111010",
+            "111011",
+            "111100",
+            "111101",
+            "111110"
+          ],
+          "binding": true,
+          "coexistence": true,
+          "contact": "x12",
+          "erasure": "forgetting",
+          "invisible_in_parts": true,
+          "is_knot": true,
+          "loops": [
+            "x0",
+            "x1",
+            "x4",
+            "x5",
+            "x11"
+          ],
+          "loss_on_erasure": true,
+          "minimum_width": 6,
+          "notes": [],
+          "pairwise_definable": false,
+          "variables": [
+            "x0",
+            "x1",
+            "x4",
+            "x5",
+            "x11",
+            "x12"
+          ]
+        }
+      }
+    },
+    {
+      "census index": 67283,
+      "starting rules": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          3,
+          4,
+          5,
+          6
+        ],
+        [
+          1,
+          3,
+          7,
+          8,
+          9
+        ],
+        [
+          2,
+          4,
+          7,
+          10
+        ],
+        [
+          5,
+          8,
+          11,
+          12
+        ],
+        [
+          6,
+          9,
+          10
+        ]
+      ],
+      "tested rule position": 4,
+      "by law": {
+        "parity": {
+          "allowed": [
+            "0000",
+            "0011",
+            "1100",
+            "1111"
+          ],
+          "binding": true,
+          "coexistence": true,
+          "contact": "x12",
+          "erasure": "forgetting",
+          "invisible_in_parts": false,
+          "is_knot": false,
+          "loops": [
+            "x5",
+            "x8",
+            "x11"
+          ],
+          "loss_on_erasure": false,
+          "minimum_width": 2,
+          "notes": [
+            "with x5 forgotten, x8=0, x11=0, x12=1 is still excluded, so a binding survives without that loop",
+            "with x8 forgotten, x5=0, x11=0, x12=1 is still excluded, so a binding survives without that loop",
+            "with x11 forgotten, x5=0, x8=1, x12=0 is still excluded, so a binding survives without that loop",
+            "with the contact x12 forgotten, x5=0, x8=1, x11=0 is still excluded, so the loops are tied without it"
+          ],
+          "pairwise_definable": true,
+          "variables": [
+            "x5",
+            "x8",
+            "x11",
+            "x12"
+          ]
+        },
+        "nae": {
+          "allowed": [
+            "0001",
+            "0010",
+            "0011",
+            "0100",
+            "0101",
+            "0110",
+            "0111",
+            "1000",
+            "1001",
+            "1010",
+            "1011",
+            "1100",
+            "1101",
+            "1110"
+          ],
+          "binding": true,
+          "coexistence": true,
+          "contact": "x12",
+          "erasure": "forgetting",
+          "invisible_in_parts": true,
+          "is_knot": true,
+          "loops": [
+            "x5",
+            "x8",
+            "x11"
+          ],
+          "loss_on_erasure": true,
+          "minimum_width": 4,
+          "notes": [],
+          "pairwise_definable": false,
+          "variables": [
+            "x5",
+            "x8",
+            "x11",
+            "x12"
+          ]
+        }
+      }
+    },
+    {
+      "census index": 21921,
+      "starting rules": [
+        [
+          0,
+          1,
+          2,
+          8,
+          9,
+          10
+        ],
+        [
+          0,
+          3,
+          4
+        ],
+        [
+          1,
+          5,
+          6
+        ],
+        [
+          3,
+          5,
+          7
+        ],
+        [
+          2,
+          11,
+          12
+        ],
+        [
+          4,
+          6,
+          7
+        ]
+      ],
+      "tested rule position": 0,
+      "by law": {
+        "parity": {
+          "allowed": [
+            "000000",
+            "000011",
+            "000101",
+            "000110",
+            "001001",
+            "001010",
+            "001100",
+            "001111",
+            "110000",
+            "110011",
+            "110101",
+            "110110",
+            "111001",
+            "111010",
+            "111100",
+            "111111"
+          ],
+          "binding": true,
+          "coexistence": true,
+          "contact": "x10",
+          "erasure": "forgetting",
+          "invisible_in_parts": false,
+          "is_knot": false,
+          "loops": [
+            "x0",
+            "x1",
+            "x2",
+            "x8",
+            "x9"
+          ],
+          "loss_on_erasure": false,
+          "minimum_width": 4,
+          "notes": [
+            "with x0 forgotten, x1=0, x2=0, x8=0, x9=0, x10=1 is still excluded, so a binding survives without that loop",
+            "with x1 forgotten, x0=0, x2=0, x8=0, x9=0, x10=1 is still excluded, so a binding survives without that loop",
+            "with x2 forgotten, x0=0, x1=1, x8=0, x9=0, x10=0 is still excluded, so a binding survives without that loop",
+            "with x8 forgotten, x0=0, x1=1, x2=0, x9=0, x10=0 is still excluded, so a binding survives without that loop",
+            "with x9 forgotten, x0=0, x1=1, x2=0, x8=0, x10=0 is still excluded, so a binding survives without that loop",
+            "with the contact x10 forgotten, x0=0, x1=1, x2=0, x8=0, x9=0 is still excluded, so the loops are tied without it"
+          ],
+          "pairwise_definable": false,
+          "variables": [
+            "x0",
+            "x1",
+            "x2",
+            "x8",
+            "x9",
+            "x10"
+          ]
+        },
+        "nae": {
+          "allowed": [
+            "000001",
+            "000010",
+            "000011",
+            "000100",
+            "000101",
+            "000110",
+            "000111",
+            "001000",
+            "001001",
+            "001010",
+            "001011",
+            "001100",
+            "001101",
+            "001110",
+            "001111",
+            "010000",
+            "010001",
+            "010010",
+            "010011",
+            "010100",
+            "010101",
+            "010110",
+            "010111",
+            "011000",
+            "011001",
+            "011010",
+            "011011",
+            "011100",
+            "011101",
+            "011110",
+            "011111",
+            "100000",
+            "100001",
+            "100010",
+            "100011",
+            "100100",
+            "100101",
+            "100110",
+            "100111",
+            "101000",
+            "101001",
+            "101010",
+            "101011",
+            "101100",
+            "101101",
+            "101110",
+            "101111",
+            "110000",
+            "110001",
+            "110010",
+            "110011",
+            "110100",
+            "110101",
+            "110110",
+            "110111",
+            "111000",
+            "111001",
+            "111010",
+            "111011",
+            "111100",
+            "111101",
+            "111110"
+          ],
+          "binding": true,
+          "coexistence": true,
+          "contact": "x10",
+          "erasure": "forgetting",
+          "invisible_in_parts": true,
+          "is_knot": true,
+          "loops": [
+            "x0",
+            "x1",
+            "x2",
+            "x8",
+            "x9"
+          ],
+          "loss_on_erasure": true,
+          "minimum_width": 6,
+          "notes": [],
+          "pairwise_definable": false,
+          "variables": [
+            "x0",
+            "x1",
+            "x2",
+            "x8",
+            "x9",
+            "x10"
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,189 @@
+{
+  "seconds": 0.3270949349971488,
+  "checks": [
+    {
+      "census index": 21921,
+      "starting rules": [
+        [
+          0,
+          1,
+          2,
+          8,
+          9,
+          10
+        ],
+        [
+          0,
+          3,
+          4
+        ],
+        [
+          1,
+          5,
+          6
+        ],
+        [
+          3,
+          5,
+          7
+        ],
+        [
+          2,
+          11,
+          12
+        ],
+        [
+          4,
+          6,
+          7
+        ]
+      ],
+      "tested rule position": 0,
+      "by law": {
+        "parity": {
+          "allowed": [
+            "000000",
+            "000011",
+            "000101",
+            "000110",
+            "001001",
+            "001010",
+            "001100",
+            "001111",
+            "110000",
+            "110011",
+            "110101",
+            "110110",
+            "111001",
+            "111010",
+            "111100",
+            "111111"
+          ],
+          "binding": true,
+          "coexistence": true,
+          "contact": "x10",
+          "erasure": "forgetting",
+          "invisible_in_parts": false,
+          "is_knot": false,
+          "loops": [
+            "x0",
+            "x1",
+            "x2",
+            "x8",
+            "x9"
+          ],
+          "loss_on_erasure": false,
+          "minimum_width": 4,
+          "notes": [
+            "with x0 forgotten, x1=0, x2=0, x8=0, x9=0, x10=1 is still excluded, so a binding survives without that loop",
+            "with x1 forgotten, x0=0, x2=0, x8=0, x9=0, x10=1 is still excluded, so a binding survives without that loop",
+            "with x2 forgotten, x0=0, x1=1, x8=0, x9=0, x10=0 is still excluded, so a binding survives without that loop",
+            "with x8 forgotten, x0=0, x1=1, x2=0, x9=0, x10=0 is still excluded, so a binding survives without that loop",
+            "with x9 forgotten, x0=0, x1=1, x2=0, x8=0, x10=0 is still excluded, so a binding survives without that loop",
+            "with the contact x10 forgotten, x0=0, x1=1, x2=0, x8=0, x9=0 is still excluded, so the loops are tied without it"
+          ],
+          "pairwise_definable": false,
+          "variables": [
+            "x0",
+            "x1",
+            "x2",
+            "x8",
+            "x9",
+            "x10"
+          ]
+        },
+        "nae": {
+          "allowed": [
+            "000001",
+            "000010",
+            "000011",
+            "000100",
+            "000101",
+            "000110",
+            "000111",
+            "001000",
+            "001001",
+            "001010",
+            "001011",
+            "001100",
+            "001101",
+            "001110",
+            "001111",
+            "010000",
+            "010001",
+            "010010",
+            "010011",
+            "010100",
+            "010101",
+            "010110",
+            "010111",
+            "011000",
+            "011001",
+            "011010",
+            "011011",
+            "011100",
+            "011101",
+            "011110",
+            "011111",
+            "100000",
+            "100001",
+            "100010",
+            "100011",
+            "100100",
+            "100101",
+            "100110",
+            "100111",
+            "101000",
+            "101001",
+            "101010",
+            "101011",
+            "101100",
+            "101101",
+            "101110",
+            "101111",
+            "110000",
+            "110001",
+            "110010",
+            "110011",
+            "110100",
+            "110101",
+            "110110",
+            "110111",
+            "111000",
+            "111001",
+            "111010",
+            "111011",
+            "111100",
+            "111101",
+            "111110"
+          ],
+          "binding": true,
+          "coexistence": true,
+          "contact": "x10",
+          "erasure": "forgetting",
+          "invisible_in_parts": true,
+          "is_knot": true,
+          "loops": [
+            "x0",
+            "x1",
+            "x2",
+            "x8",
+            "x9"
+          ],
+          "loss_on_erasure": true,
+          "minimum_width": 6,
+          "notes": [],
+          "pairwise_definable": false,
+          "variables": [
+            "x0",
+            "x1",
+            "x2",
+            "x8",
+            "x9",
+            "x10"
+          ]
+        }
+      }
+    }
+  ]
+}

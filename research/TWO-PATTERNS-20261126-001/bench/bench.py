@@ -32,6 +32,8 @@ STARS = {
 }
 SITE = {'ring': 0, 'copier': 0, 'source': 0}
 MULT = 100
+# rations added by a later study: name -> a function (treatment, take) giving a law of the engine's kind.  Empty here.
+LAWS = {}
 
 def build(A, B, steps, mark=None, join='meeting', site_a=None, site_b=None):
     """stars and each start knot's role.  A: a pattern's name or 'stub'.  B: a pattern's name, 'stub', or None (nothing
@@ -167,7 +169,7 @@ def first_diff(g1, g2, X, after=0):
     return next((g1.rows[i]['round'] for i in range(n) if g1.rows[i]['round'] > after and g1.rows[i][X]['digest'] != g2.rows[i][X]['digest']), None), n
 
 def case(A, B, steps, ration, treatment, take, rounds=12, bound=3000, checkpoints=(2, 4, 6, 8), marks=True, join='meeting'):
-    law = eng.Law(ration, treatment, take, 'nae')
+    law = LAWS[ration](treatment, take) if ration in LAWS else eng.Law(ration, treatment, take, 'nae')
     t0 = time.time()
     def grown(a, b, mark=None, cp=()):
         stars, role = build(a, b, steps, mark, join)

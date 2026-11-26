@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**408 current results** and 5 superseded ones, from 678 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**408 current results** and 5 superseded ones, from 679 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -31,7 +31,7 @@ How to read an entry:
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 26 results
 - [Notes](#notes): 6 self-contained notes
-- [Epics](#epics): all 678 epics with their closures
+- [Epics](#epics): all 679 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -2017,6 +2017,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-26 | A built binding of three whole-held facts: made by the law, and does growth make one? (`BUILT-BINDING-20261126-001`) | — | [folder](research/BUILT-BINDING-20261126-001/) |
 | 2026-11-26 | The contact cases: forbidding that answers both readers through a shared birth (`CONTACT-FORBID-20261126-001`) | — | [folder](research/CONTACT-FORBID-20261126-001/) |
 | 2026-11-26 | Do the forbidding cuts bind facts held by the whole? And not-all-equal carriers (`CUT-BINDING-20261126-001`) | — | [folder](research/CUT-BINDING-20261126-001/) |
+| 2026-11-26 | Rule R read off the whole structure: well defined, consistent with earlier readings, and bounded? (`EVENTUAL-R-20261126-001`) | — | [folder](research/EVENTUAL-R-20261126-001/) |
 | 2026-11-26 | Three kinds: one statement that classes every recorded table above the classical bound (`EXCESS-KINDS-20261126-001`) | — | [folder](research/EXCESS-KINDS-20261126-001/) |
 | 2026-11-26 | Does what a family makes depend on which family it meets (`FAMILIES-THAT-MEET-20261126-001`) | — | [folder](research/FAMILIES-THAT-MEET-20261126-001/) |
 | 2026-11-26 | Time as a fold: is there a sign on the path of reading? (`FOLD-SIGN-20261126-001`) | — | [folder](research/FOLD-SIGN-20261126-001/) |

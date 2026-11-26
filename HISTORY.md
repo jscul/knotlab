@@ -3,6 +3,10 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 26 November 2026 · How much of a change arrives refereed: confirmed with fixes, one Block
+
+**Corrections from [an independent referee's report](research/HOW-MUCH-ARRIVES-20261126-001/referee-R1/report.md), folded into [the decision](research/HOW-MUCH-ARRIVES-20261126-001/decision.md) and lesson 11.4.** Four of the seven fixed-count changes started from a knot of two places, and many rows let a short start knot wait where the ordinary law stalls: those are not ordinary growth. On two ordinary starts a mark at a start knot leaves the births further from it unchanged by name and differs locally by a fixed count. The entry below, "by descent the change re-makes the whole of one chain", counted unmatched births of both growths; no reading measured how an amount divides, so the lamp's weakening is neither shown nor ruled out.
+
 ## 26 November 2026 · How much of a change arrives: a count, not the lamp's weakening
 
 **The study of how much of a change arrives first said that some changes at the start of a growth of dimension two weaken as the owner's lamp does.** Read without names, their damage settles to a fixed few births a round while the round grows. A control run before the referee shows those readings find no difference at all between two unrelated starts of dimension two from round 4 on, so the fixed damage is a difference in the round's count. By descent the change re-makes the whole of one chain and nothing of the other. The [decision](research/HOW-MUCH-ARRIVES-20261126-001/decision.md) and [the note](research/HOW-MUCH-ARRIVES-20261126-001/README.md) carry the corrected reading; the counts stand.

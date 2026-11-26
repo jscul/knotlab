@@ -5791,13 +5791,13 @@ evidence: results and their status come from the records each entry links.
   mark, in a growth of known dimension, against the number of knots at that many steps. If no law of the growth gives a share
   that falls with the steps, the picture cannot come out of the logic as it stands.
 - **History.**
-  - 2026-11-26 · `HOW-MUCH-ARRIVES-20261126-001` ([decision](../research/HOW-MUCH-ARRIVES-20261126-001/decision.md)) measured how
-    much of a change arrives. By descent, under the ordinary count, a change at a start re-makes every birth of the changed
-    knot's line and none of the other's, so nothing weakens with the rounds and no change is shared out among a round's
-    births: the lamp's weakening is not found. Read without names, a growth of dimension two forgets its start (two unrelated
-    starts differ in no birth from round 4 on), the picture's "logically small" in the growth's own terms (computed, referee
-    pending; an earlier version of this line, the same day, called the local readings' fixed count a weakening, corrected).
-    Status unchanged.
+  - 2026-11-26 · `HOW-MUCH-ARRIVES-20261126-001` ([decision](../research/HOW-MUCH-ARRIVES-20261126-001/decision.md); refereed,
+    confirmed with fixes and one Block) counted the births of each round that differ after one change. On two ordinary starts
+    of dimension two a mark at a start knot leaves the births one holder step further from it unchanged by name and, read
+    without names, differs by a fixed count, the gap between the two growths' counts, whose share falls as one over the
+    round's count. No reading measured how an amount divides, so the lamp's weakening is neither shown nor ruled out. The two
+    starts look the same to local readings from round 4 on; rings of one rate do not. Status unchanged. (Earlier versions of
+    this line, the same day, called the fixed count a weakening, then said no weakening was found; both corrected.)
   - 2026-11-26 · Entered with Chapter 11 of the Intuitions guide, "Simulating our reality".
 
 ### A281 · An origin can be found or invented from what is here
@@ -5851,16 +5851,21 @@ evidence: results and their status come from the records each entry links.
   distance in holder steps from the changed knot after its round. Nothing in the model supplies any of them.
 - **Why.** Adopted by the thread on 26 November 2026, with the advisor's review before the full run: the reading by name
   counts every descendant of a new birth as new, so it could not show a weakening.
-- **Rests on it.** That under the ordinary count a growth of dimension two, read without names, forgets its start (two
-  unrelated starts differ in no birth from round 4 on, so a change at a start shows only as a fixed difference in the
-  round's count), that made marks and pulses hold, and that two changes can partly cancel
-  ([the decision](../research/HOW-MUCH-ARRIVES-20261126-001/decision.md)).
+- **Rests on it.** That on two ordinary starts of dimension two a mark at a start knot shows, read without names and
+  pooled by round, as a fixed count difference while the births further from it are unchanged by name; that a struck
+  pulse keeps its damage unless its advance payment is struck too; and that two changes can give less damage than
+  either alone in these readings ([the decision](../research/HOW-MUCH-ARRIVES-20261126-001/decision.md); refereed, confirmed
+  with fixes and one Block). Also a sixth choice the referee named: a start knot short in round 1 waits, where the
+  ordinary law stalls the round; the rows that rest on it are growth under waiting, not ordinary growth.
 - **Challenge.** A matching that does not forget descent but also does not inherit it: the advisor's signature of the
   map of joins within one or two steps of each birth. The control that compares unrelated starts already shows sig0 and sig1
   count local kinds of birth only; a deeper signature would say how far back a start can be told apart. A pulse that also takes back the advance
   payment it caused would test reading 3 of the decision. The model is not expected to supply these readings: they are
   how an observer outside compares two growths, kept until a pattern inside the growth can make the comparison.
 - **History.**
+  - 2026-11-26 · Referee R1 on `HOW-MUCH-ARRIVES-20261126-001`: confirmed with fixes and one Block (moves leaving a start knot
+    two places, and a short start knot waiting, are not ordinary growth from admissible starts); its refund control struck a
+    pulse's advance payment too and undid the pulse in 155 of 155, the test of reading 4 this entry asked for.
   - 2026-11-26 · Entered with `HOW-MUCH-ARRIVES-20261126-001`. Swapped within it: the knot law (161 jobs identical under
     parity), the reading (by name, sig0, sig1), six starts of four kinds. Not swapped: the signature's depth, the pulse's
     rule.

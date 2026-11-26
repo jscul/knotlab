@@ -4,6 +4,16 @@ Epic `SIGNED-COUNT-20261126-001` (G18, a short scoping study at the coordinator'
 by the thread: computed on two small starts, with an argument; advisor consulted read-only; referee pending.
 [The note](README.md)
 
+
+> **Refereed (R1, [report](referee-R1/report.md)): the count-weighting result confirmed; one Block.** "A signed sum that is not
+> a count exists only in supplied readings that square it" is false: the side-swap study's reading R1 normalizes signed
+> sums directly, without squaring, and gives a four-correlation score of 4 on an eight-word control where equal counting
+> gives 1; absolute weighting and nonzero signed support also use cancellation. All are supplied; none comes from growth,
+> so the conclusion stands with "square" replaced by "use signed sums as weights". **Narrowings:** only the ring of four
+> has reader knots that share nothing; the mixture identity was checked for events on the old distinctions (every old
+> word on three, four and five knots); probabilities are ratios of nonnegative counts while a signed mean uses their
+> difference. **Not a block:** the term through Bob's knot stays at ±3 and falls only relative to the direct term; odd
+> parity also allows a character sum of minus the number of allowed words. Logged in `docs/CORRECTIONS.md`.
 ## What stands
 
 1. **Under a count weighting the signed form is only a rewriting.** A far edit can move a near reader's statistic

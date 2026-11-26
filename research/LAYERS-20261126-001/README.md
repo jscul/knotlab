@@ -65,9 +65,35 @@ with loose values pinned (a choice of ours), gives the start ring back from the 
 (`SECOND-CHECK-20261126-001`); and the parts that copy themselves (lesson 8.7) make copies of themselves. Neither is a
 step of a tower, and neither is claimed as recursion.
 
-## Next (planned, not frozen)
+## Reconciled before the freeze ([`multi_class.py`](multi_class.py), [`multi_class.json`](multi_class.json))
 
-A frozen test of the reduced reading on every census start of three to five knots that grows: predicted from the start
-alone, the number of classes after one round is two to the number of connected pieces wherever no old knot keeps a
-loose distinction and no three knots pairwise share one; with the tie cap lifted, and two swaps of the reading (the
-moves as every change of up to five distinctions; one more loose distinction at each knot).
+At the coordinator's request: the census starts that keep several independent classes (under parity, 24 with four and
+2 with eight at the start, 8 with four after one round, in the two-class study's census) are where a rule binding
+several facts could live. In every one, each class label can be read knot by knot (the labels single knots read span the
+whole label space; in most, one knot reads all of it). So their facts are local, not held by the whole.
+
+## Frozen
+
+Committed before the runs below; the advisor proposed the rule (its second answer, in the hivemind) and its two
+counterexamples (a tree; one more loose distinction) were run before the freeze.
+
+**The rule (the advisor's reduction).** Under parity and the ordinary count, after one round, if (C1) the start grows,
+(C2) no old knot keeps a loose distinction and (C3) no three knots pairwise share a distinction, then the start has
+2^p classes, p its connected pieces that hold a shared distinction (so 2 for a connected start), and the parity of all
+the old shared distinctions of each piece is a label.
+
+**Sets** ([`frozen.py`](frozen.py)): every census start of three to five knots (7,075), and a held-out sample of 300
+starts each of 6, 7 and 8 knots from the extension's weighting (`forbid.sampled`) with the fresh seed 20261206 + n.
+Moves: every shortest change through each distinction, with no tie cap; loose distinctions free.
+
+**Predictions.**
+- **P1.** Every start meeting C1 to C3 has exactly the predicted classes and each piece's parity is a label.
+- **P2 (reported).** The class counts of the starts outside C2 or C3.
+- **P3.** Every held-out start with four or more classes after the round has its labels read knot by knot.
+
+**Stop.** One start meeting C1 to C3 that breaks P1; or a held-out start with two or more classes not read knot by
+knot, which would be a candidate first step of a tower (a discovery, not a failure); or none.
+
+**What a pass would and would not show.** A pass makes it a computed rule that, under this reading of a small change,
+the growth keeps one whole-held fact per connected piece: repetition, not a tower. It would not show that no other
+reading of a small change, no other knot law or no larger start makes a tower, and nothing here bears on recursion.

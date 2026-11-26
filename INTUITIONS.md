@@ -5441,9 +5441,9 @@ then also need the third property, for which no test is registered.
 - [11.4 What the steps between two patterns do to a change](#114-what-the-steps-between-two-patterns-do-to-a-change):
   a change spreads at most one step of the map of joins a round, a bound of the
   kind that Life and physics have, and two effects ignore it. Along a chain of
-  waiting knots what arrives is when the waiting ends. The record has no
-  measure of how strongly a change arrives, so a weakening like the lamp's is
-  untested.
+  waiting knots what arrives is when the waiting ends. Counted birth by birth,
+  a change is handed down whole lines of descent and is never shared out among
+  a round's births, so no weakening like the lamp's is found.
 - [11.5 Same inventory, different arrangement](#115-same-inventory-different-arrangement):
   the owner's two drops of water, one holding a cell. Two arrangements that
   agree in every count can grow differently. What is missing is one pattern's
@@ -5464,8 +5464,9 @@ the growth of Chapter 8 as it stands, and says plainly which do not. Three do,
 in part. Working backwards is exact at a complete round (lesson 11.2). A change
 spreads at a bounded pace (lesson 11.4). And what follows depends on how
 things are arranged, not only on how many there are (lesson 11.5). Two do not
-yet. The record cannot say whether what arrives is weaker for the steps it
-passed, because it measures only whether and when a change shows. And joined
+yet. Counted birth by birth, a change is handed down whole lines of descent
+and is not shared out among a round's births, so nothing arrives weaker for the
+steps it passed (lesson 11.4). And joined
 through a meeting under the ordinary count, a pattern's own knots grow the same
 whatever is joined to them, so that, in the comparisons made, what two patterns
 do together shows only in the knots that descend from both (lesson 11.3). The
@@ -5785,12 +5786,26 @@ with the two exceptions below. As run, the rounds are a supplied clock (lesson
 So under not-all-equal, after the start, nothing in the record escapes the
 bound; under parity one bit does.
 
-**No measure of strength (reading).** The lamp's other lesson is about how
-much arrives, and here the record is silent: it counts whether a change shows
-and at which round, and neither is an amount, so a weakening is neither shown
-nor ruled out. What is counted does not fall off with the steps in the cases
-below: a change shows from up to some count of steps and from none beyond, or
-from every count tried.
+**How much arrives (computed, a check by the thread, referee pending).** The
+lamp's other lesson is about how much arrives. A later study counted it: in a
+growth and the same growth with one change, the births of each round that
+differ, against the births of the round
+([the study of how much of a change arrives](research/HOW-MUCH-ARRIVES-20261126-001/decision.md)).
+Under the ordinary count, by descent, a change at a start re-makes every birth
+of the changed knot's line and none of the other's. On two touching knots, a
+mark at one of them re-makes all 62 births of round 32 that lie nearer it,
+counted in holder steps, and none of the 66 one step further: the change
+reaches about half of every round, whole, and nothing in it weakens with the
+rounds. Read without names, by each birth's kind, parents, fresh distinctions
+and places, a growth of dimension two forgets its start: two touching knots and
+three knots in a row differ in no birth from round 4 on. So a change at a start
+shows there only as a fixed difference of 1, 4 or 5 births in the round's count,
+whose share falls as one over the count. That is a count a local reader is
+blind to, not a change spread more thinly, and it is the owner's "logically
+small" in the growth's own terms; the study first read it as the lamp's
+weakening and corrected that before its referee. Changes at knots made later
+hold a fixed share or take over, a change struck after one round is not undone,
+and between two patterns nothing that shows falls with the steps.
 
 **Retiring and offshoots: one step (computed, a check by the thread, referee
 pending).** Where short knots retire or make offshoots, under each of five
@@ -5847,13 +5862,13 @@ same kind of count, how fast the number of knots within a given number of steps
 grows (lessons 4.6 and 8.2). So a weakening like the lamp's would come out of a
 growth in which a change is shared out among the knots at each count of steps
 of the map, in place of being handed down one child's descent or making a
-whole new table, as it is in the record. The cheapest test: in a growth of
-known dimension, count for each round the share of that round's births that
-differ after one mark, and see whether it falls as one over the number of
-knots at that many steps.
+whole new table, as it is in the record. The study above ran this test on
+growths of dimension one and two and found no such sharing: by descent the
+share never falls.
 
 **Reading.** Of the lamp's two lessons the growth has the one about time, a
-bounded pace with two exceptions. The one about strength is untested. What
+bounded pace with two exceptions. The one about strength is not found: a
+change is handed down whole, never shared out. What
 arrives from many steps away, where anything does, is when the waiting ends,
 or, under a cap and for one receiver, one property of one knot.
 
@@ -5920,7 +5935,7 @@ record has and its status.
 | Start at the pond and invent where it came from | At a complete round every start that could have led to it gives the same future, and all of them lie on its one way back; midway through a round they do not (lesson 11.2) | Proved, referee pending |
 | Which differences elsewhere make a difference here | A change made in one pattern and looked for in another's own births; through a meeting under the ordinary count with nothing taken, none shows (lesson 11.3) | Computed; refereed |
 | A galaxy is logically small | Beside a pattern joined through a meeting, a pattern's own knots grow as beside one knot; through a meeting a part's course tells how many, never which (lessons 11.3 and 10.5) | Computed; refereed in part |
-| A lamp twice as far gives a quarter | A bounded pace of one step of the map a round, with two effects that ignore it; no measure of strength (lesson 11.4) | The pace proved, referee pending; the weakening untested |
+| A lamp twice as far gives a quarter | A bounded pace of one step of the map a round, with two effects that ignore it; a change handed down whole lines of descent, never shared out (lesson 11.4) | The pace proved, referee pending; no weakening found (computed, referee pending) |
 | Two drops with the same molecules | Arrangements that agree in every count grow differently; a count of births seldom decides (lesson 11.5) | Computed; refereed |
 | Descents that feed each other | For a pattern's own descent, only under laws added by hand: whether the other part grows (lesson 10.3), or, for one receiver under a cap, one property of the knot at the other end of a chain (lesson 11.4) | Computed, referee pending |
 
@@ -5949,9 +5964,15 @@ of the map away be cheaper to hold than what lies one step away.
 
 **Open.**
 
-- **A measure of strength.** A way to say how much of a change arrives, and a
-  law under which it falls the more knots lie at that many steps of the map:
-  the first form of the owner's lamp (lesson 11.4, its cheapest test).
+- **A law that shares a change out.** Every law of the record hands a change
+  down whole lines of descent (lesson 11.4). The owner's lamp needs one under
+  which a change divides among the births of a round, so that it falls the more
+  knots lie at that many steps of the map; none is known.
+- **How far a local reader forgets the start.** Two starts of dimension two
+  look the same, birth for birth, from round 4 on when read without names
+  (lesson 11.4). Whether that holds for every start of one dimension or one
+  rate, the literature's universality in the growth's terms, is the next step
+  of the study that found it.
 - **A signal sent again.** The chain of waiting knots of lesson 11.4 passes a
   change once, and the ring at one end of it does not come round; a second
   change was heard in 120 of 376 pairs, and a third could not be read. The

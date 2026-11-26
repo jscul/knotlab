@@ -345,6 +345,7 @@ evidence: results and their status come from the records each entry links.
 | [A287](#a287--a-round-1-group-of-three-or-more-knots-is-one-cell-of-the-map-of-joins) | A round-1 group of three or more knots is one cell of the map of joins | reading | Under challenge |
 | [A288](#a288--a-reader-as-one-start-knots-descendants-a-region-cut-at-holders-the-round-and-a-cap-to-grow-a-view-on-demand) | A reader as one start knot's descendants, a region cut at holders, the round and a cap, to grow a view on demand | scaffold | Assumed |
 | [A289](#a289--settings-as-free-local-edits-the-preparation-kept-through-the-edits-two-weightings-and-a-census-to-test-joins-that-forbid) | Settings as free local edits, the preparation kept through the edits, two weightings and a census, to test joins that forbid | scaffold | Assumed |
+| [A290](#a290--the-whole-round-response-at-the-level-of-the-readers-records-a-free-weighting-and-the-senders-policies) | The whole-round response at the level of the readers' records, a free weighting, and the sender's policies | scaffold | Assumed |
 
 ## Entries
 
@@ -5998,3 +5999,14 @@ evidence: results and their status come from the records each entry links.
 - **History.**
   - 2026-11-26 · `FORBID-EDITS-20261126-001` ([decision](../research/FORBID-EDITS-20261126-001/decision.md), referee pending): under these choices, no table exceeds the classical bound in 7,075 starts of three to five knots and 3,000 sampled starts of six to eight; forbidding answers one reader's setting in at most 72 placements of a class and never both readers'; the built starts where both forbid carry no correlation. On placements that split, forbidding is a local rejection whatever the scaffolds (an argument).
   - 2026-11-26 · Entered with `FORBID-EDITS-20261126-001`.
+
+### A290 · The whole-round response at the level of the readers' records, a free weighting, and the sender's policies
+
+**Assumed** · 2026-11-26 · scaffold
+
+- **Statement.** For one study of G18, choices made to test the earlier edit study's whole-round response: (1) its preparation is read at the level of the readers' complete records (each reader's preparation bit, three terminal values and whether its round was funded; the terminals carried by the identity, or a cycle of the three when both preparation bits are 1, under parity, and free under not-all-equal); (2) the weighting of the preparation's worlds is chosen freely, nonnegative or signed with every observable probability nonnegative; (3) a sender's policy is any function of its own visible record (with or without its shortage); (4) for the frozen confirmation test of the scoping note, not yet run: three signed weightings of allowed states, each summed directly as a weight (a reading no earlier record adopts).
+- **Why.** Adopted by the thread on 26 November 2026 for `BEYOND-REJECTION-20261126-001` at the coordinator's pick, with the advisor: a free weighting tests whether any weighting rescues the response, which is the question.
+- **Rests on it.** The study's linear programs and its frozen test ([the note](../research/BEYOND-REJECTION-20261126-001/README.md)).
+- **Challenge.** Records with more of the earlier construction's content (only more constraints); other joint responses; the frozen test's readings once run. The model is not expected to keep these choices.
+- **History.**
+  - 2026-11-26 · Entered with `BEYOND-REJECTION-20261126-001`.

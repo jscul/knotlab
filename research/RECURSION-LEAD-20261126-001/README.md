@@ -59,3 +59,31 @@ non-bookkeeping return; a start with two whole-held facts would be the first ste
 **What a pass would and would not show.** That the only recorded return is the ring's, under a pinning we supply, and
 explained by the line-graph fact; so recursion with nothing supplied is not found. It would not show that no law or
 exchange could make one, and it reads one round.
+
+## What was found
+
+Five runs ([`recur_census.jsonl`](recur_census.jsonl), [`recur_heldout.jsonl`](recur_heldout.jsonl),
+[`tower_census.jsonl`](tower_census.jsonl), [`tower_multi.jsonl`](tower_multi.jsonl),
+[`tower_rings.jsonl`](tower_rings.jsonl)), scored by [`score.py`](score.py) ([`score.json`](score.json)).
+
+**The stop is met: R1, R2 and R3 break.**
+- **R1.** One census start that is not a ring returns: census entry 165, four knots, three of them sharing pairwise with a
+  dead knot among them and the fourth hung on the dead knot (loose 0, 2, 2, 2). Its pinned exchange after one round has
+  four knots in the same pattern with the same loose counts. No ring of the census returns (the census holds no ring of
+  five knots with two loose each), and none of the 900 fresh starts returns or gives a lawful pinned exchange.
+- **R3.** Of the 56 census starts with a lawful pinned exchange, 46 have a knot holding three or more shared
+  distinctions, so the advisor's line-graph reading (pairs of shared distinctions at one knot) does not cover them. Their
+  exchanges are smaller starts (one to five knots) that stop within two steps: they close, stall or become unlawful.
+- **R2.** With loose values free, 12 census starts give a lawful exchange; each becomes a new start that closes, stalls or
+  is unlawful at the next step. None returns.
+
+**T1 holds.** Under both readings of a small change (the shortest changes, and every change of at most five
+distinctions), at rounds 1, 2 and 3, no start read has more than one whole-held fact: 400 sampled census starts, the 16
+multi-class starts and the built joined rings. So the tower's negative survives the swap of the reading and two more
+rounds: it is about the growth at these sizes, not only about one reading.
+
+**What it says about recursion.** Every return found, the rings of the second-check study and census entry 165, needs two
+things we supply: the exchange itself (reading each shortest change as a knot is our operation, not the growth's) and
+the pinning of loose values, which no recorded law makes. With nothing pinned, no start returns or cycles. So on the
+owner's rungs this is a curiosity, not recursion: a pattern that grows back into itself with nothing supplied is not
+found. The ring that returns under laws added by hand (lesson 8.7) is the record's other lead, also with a supplied law.

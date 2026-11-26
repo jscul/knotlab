@@ -105,7 +105,7 @@ def seven():
           f'outcome functions of the records (a lower bound): {best}; largest change of the other record under a free sender: {worst}')
 
 
-def random_models(trials=20000, seed=20261126):
+def random_models(trials=20000, seed=20261126, h5=True):
     """Theorem K's contrapositive on random product-form models: alphabets of two or three old values a reader, weights
     0 to 2, completions 0 to 2 with H5 (completed at both settings or neither), outcomes any function of the setting,
     the old value and the fresh value; floats with a 1e-9 margin"""
@@ -135,28 +135,38 @@ def random_models(trials=20000, seed=20261126):
                     t = sum(g1[pi[v]][v])
                     for u in range(U):
                         for r2 in (0, 1): M[u, r2] += mu[v][u] * t * g2[b][u][r2]
-                if M.sum() == 0: return None
+                if M.sum() == 0: continue                  # a policy that leaves no weight is skipped
                 ds.append(M / M.sum())
             worst = max(worst, max(np.abs(d - ds[0]).sum() / 2 for d in ds))
         return worst
-    hits = quiet = 0; best = 0
+    hits = quiet = 0; best = 0; quiet_rich = 0; best_quiet = 0
     for _ in range(trials):
         V = U = rng.choice((2, 3))
         mu = [[rng.randint(0, 2) for _ in range(U)] for _ in range(V)]
         g1 = [[[rng.randint(0, 2) for _ in (0, 1)] for _ in range(V)] for _ in (0, 1)]
         g2 = [[[rng.randint(0, 2) for _ in (0, 1)] for _ in range(U)] for _ in (0, 1)]
-        if not (all((sum(g1[0][v]) > 0) == (sum(g1[1][v]) > 0) for v in range(V)) and
-                all((sum(g2[0][u]) > 0) == (sum(g2[1][u]) > 0) for u in range(U))): continue
+        if h5 and not (all((sum(g1[0][v]) > 0) == (sum(g1[1][v]) > 0) for v in range(V)) and
+                       all((sum(g2[0][u]) > 0) == (sum(g2[1][u]) > 0) for u in range(U))): continue
         o1 = [[[rng.randint(0, 1) for _ in (0, 1)] for _ in range(V)] for _ in (0, 1)]
         o2 = [[[rng.randint(0, 1) for _ in (0, 1)] for _ in range(U)] for _ in (0, 1)]
         c = tables(mu, g1, g2, o1, o2)
-        if c is None or c <= 2 + 1e-9: continue
+        if c is None: continue
         s1, s2 = sig(mu, g1, g2), sig([list(x) for x in zip(*mu)], g2, g1)
         if s1 is None or s2 is None: continue
+        if max(s1, s2) < 1e-12:
+            D = [v for v in range(V) if sum(g1[0][v]) != sum(g1[1][v])]; Dp = [u for u in range(U) if sum(g2[0][u]) != sum(g2[1][u])]
+            N = [v for v in range(V) if v not in D]; Np = [u for u in range(U) if u not in Dp]
+            rich = (any(mu[v][u] for v in D for u in range(U)) and any(mu[v][u] for u in Dp for v in range(V))
+                    and any(mu[v][u] for v in N for u in Np))
+            if rich: quiet_rich += 1; best_quiet = max(best_quiet, c)
+        if c <= 2 + 1e-9: continue
         hits += 1; best = max(best, c)
         if max(s1, s2) < 1e-12: quiet += 1
-    print(f'random product-form models above CHSH 2: {hits} (largest {best:.4f}); with no free signalling: {quiet}')
+    print(f'random product-form models (H5 {"imposed" if h5 else "not imposed"}) above CHSH 2: {hits} (largest {best:.4f}); '
+          f'with no free signalling: {quiet}; quiet models whose D, D\' and N x N\' parts all carry weight: {quiet_rich} '
+          f'(largest CHSH among them {best_quiet:.4f})')
 
 
 if __name__ == '__main__':
-    {'seven': seven, 'random': random_models}[sys.argv[1]]()
+    if sys.argv[1] == 'random': random_models(h5='--no-h5' not in sys.argv)
+    else: {'seven': seven}[sys.argv[1]]()

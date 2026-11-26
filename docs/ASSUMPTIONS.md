@@ -340,6 +340,7 @@ evidence: results and their status come from the records each entry links.
 | [A282](#a282--five-senders-caps-of-four-to-seven-and-two-starts-built-by-hand-to-find-which-receivers-switch) | Five senders, caps of four to seven and two starts built by hand, to find which receivers switch | scaffold | Assumed |
 | [A283](#a283--the-damage-of-a-change-read-without-names-with-a-struck-pulse-and-a-mark-at-a-made-knot) | The damage of a change read without names, with a struck pulse and a mark at a made knot | scaffold | Assumed |
 | [A284](#a284--a-new-knot-holds-back-part-of-what-it-is-owed-two-forms) | A new knot holds back part of what it is owed: two forms | scaffold | Assumed |
+| [A285](#a285--a-threshold-a-new-knot-reads-from-itself-two-forms) | A threshold a new knot reads from itself: two forms | scaffold | Assumed |
 
 ## Entries
 
@@ -5888,3 +5889,14 @@ evidence: results and their status come from the records each entry links.
 - **History.**
   - 2026-11-26 · `HOLD-BACK-20261126-001` ([decision](../research/HOLD-BACK-20261126-001/decision.md), referee pending): under either form knots are short in nearly every pair, the two patterns come apart by round 3, and no far change is heard (0 of 6,117), while the cap of three's controls hear late; late hearing from afar does not survive the change from the cap to either form.
   - 2026-11-26 · Entered with `HOLD-BACK-20261126-001`.
+
+### A285 · A threshold a new knot reads from itself: two forms
+
+**Assumed** · 2026-11-26 · scaffold
+
+- **Statement.** For one study of G18, two laws that give a new knot the ordinary count's fresh distinctions up to a threshold it reads from itself, kept above the ordinary floor max(3 − p, 1): PLACES, at most p + 1 (one more than it was given); HALF, at most ⌈D/2⌉ + 1 (a little over half of what it is owed). Chosen with the advisor: PLACES because the coordinator named a knot's own places, HALF because it binds exactly where the cap of three does (owed four or more) with no fixed number. On starts with joins of two parents and no takes, PLACES is the cap of three on joins and a cap of two on offshoots.
+- **Why.** Adopted by the thread on 26 November 2026 for `SELF-THRESHOLD-20261126-001` at the coordinator's go-ahead, after laws that hold back at nearly every join heard nothing and the cap of three heard late.
+- **Rests on it.** Whatever the study finds about late hearing from afar under a threshold the knot reads from itself ([the note](../research/SELF-THRESHOLD-20261126-001/README.md)).
+- **Challenge.** Starts where p varies (joins of three parents, takes), where PLACES stops being a cap; other self-read thresholds. The model is not expected to keep either form; they are candidates for G18's comparison.
+- **History.**
+  - 2026-11-26 · Entered with `SELF-THRESHOLD-20261126-001`.

@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "experiment_id": "FOUR-SETTINGS-PARITY-20261125-001-E001",
+  "ticket": "FOUR-SETTINGS-PARITY-20261125-001",
+  "status": "Frozen",
+  "evidence_stage": "exploratory",
+  "branch": "code_analysis",
+  "question": "Which of the native parity reading and the supplied quantum measurements recovers the full four-setting distributions?",
+  "public_inputs": "research/FOUR-SETTINGS-PARITY-20261125-001/preregistration.md",
+  "forbidden_inputs": "No answer labels or distant settings enter local readouts. No outcome-dependent selection. No fitting quantum settings or changing the signs between comparisons.",
+  "primary_observable": "All eight output probabilities per setting, full scored rows matched, and total variation for the best uniform-average local model.",
+  "cheapest_meaningful_control": "Keep the same four ordinary words and erase coherence, or replace the quarter-turned flip by an unturned flip.",
+  "first_executable_signal": "Even parity on the ordinary setting and the three mixed settings computed from one preparation and one fixed pair of questions.",
+  "resource_budget": "One bounded CPU calculation over 64 potential-answer lists and 4096 one-bit readout choices, below a minute and 256 MiB.",
+  "stop_rule": "Reconcile all complete scored tables, the four unscored inputs, the ordinary local bound and the finite parity-equation closure witness.",
+  "decision_or_followup_rule": "Stop if the conditional match reproduces the known measurement law and the ordinary reading has a general obstruction. A new native instrument would be a different question.",
+  "nonclaims": "No new GHZ prediction, derivation of the Born rule, or physical spacetime inference."
+}

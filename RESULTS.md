@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**408 current results** and 5 superseded ones, from 639 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**408 current results** and 5 superseded ones, from 640 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -31,7 +31,7 @@ How to read an entry:
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 26 results
 - [Notes](#notes): 6 self-contained notes
-- [Epics](#epics): all 639 epics with their closures
+- [Epics](#epics): all 640 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -2000,6 +2000,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-24 | Parts that meet again: does what one part builds depend on whether another part is there? (`PARTS-MEET-AGAIN-20261124-001`) | [closure](proofs/PARTS-MEET-AGAIN-20261124-001Z/PARTS-MEET-AGAIN-20261124-001Z-P001_synthesis/proof.md) | [folder](research/PARTS-MEET-AGAIN-20261124-001/) |
 | 2026-11-25 | A count of descent held by the structure itself (`DESCENT-HELD-20261125-001`) | [closure](proofs/DESCENT-HELD-20261125-001Z/DESCENT-HELD-20261125-001Z-P001_synthesis/proof.md) | [folder](research/DESCENT-HELD-20261125-001/) |
 | 2026-11-25 | Does what a part makes follow the form of what it is attached to (`FOLLOWS-THE-FORM-20261125-001`) | [closure](proofs/FOLLOWS-THE-FORM-20261125-001Z/FOLLOWS-THE-FORM-20261125-001Z-P001_synthesis/proof.md) | [folder](research/FOLLOWS-THE-FORM-20261125-001/) |
+| 2026-11-25 | Can one parity knot account for four three-detector settings? (`FOUR-SETTINGS-PARITY-20261125-001`) | — | [folder](research/FOUR-SETTINGS-PARITY-20261125-001/) |
 | 2026-11-25 | How many knots lie within reach, and whether the growing end carries a distance of its own (`KNOTS-WITHIN-REACH-20261125-001`) | [closure](proofs/KNOTS-WITHIN-REACH-20261125-001Z/KNOTS-WITHIN-REACH-20261125-001Z-P001_synthesis/proof.md) | [folder](research/KNOTS-WITHIN-REACH-20261125-001/) |
 | 2026-11-25 | A made copier: a pattern that, on meeting a second pattern, leaves two of the second (`MADE-COPIER-20261125-001`) | [closure](proofs/MADE-COPIER-20261125-001Z/MADE-COPIER-20261125-001Z-P001_synthesis/proof.md) | [folder](research/MADE-COPIER-20261125-001/) |
 | 2026-11-25 | Time as a fold: a made pattern that counts another pattern's returns (`TIME-AS-FOLD-20261125-001`) | [closure](proofs/TIME-AS-FOLD-20261125-001Z/TIME-AS-FOLD-20261125-001Z-P001_synthesis/proof.md) | [folder](research/TIME-AS-FOLD-20261125-001/) |

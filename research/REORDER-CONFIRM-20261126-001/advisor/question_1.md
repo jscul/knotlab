@@ -1,0 +1,34 @@
+You are a colleague reviewing a pre-registration before it is frozen. Be skeptical and concrete. Answer in under 900 words.
+
+## Background (a finished exploratory study)
+A parity knot on n binary distinctions x_1..x_n (allowed words: even weight). A "round" of growth gives each old distinction x_j one child: two fresh distinctions y_j, z_j with y_j XOR z_j = x_j. An added rule ("swap rule", s = -1): listing distinctions in creation order, swapping two that both hold 1 costs -1 (Jordan-Wigner). Fermionic model: modes for every distinction; the start is created by applying c+_{x} in a stated order sigma ("parents' creation order") to the vacuum, summed over even words with + coefficients; births K_j = (1-n_j)(1 + c+_y c+_z)/sqrt2 + n_j (c+_y + c+_z)/sqrt2 applied in commit order pi (later on the left). Reader j: Z_j = (-1)^{n_{x_j}}, flip F1_j = -i g'_{x_j} g_{y_j} (g = c + c+, g' = i(c+ - c)). Target: the n-reader GHZ table with real readings ("full contradiction": every even-size correlation <X_T Z_rest> is +-1 and T -> c(T) is not a character). Found at n = 3: contradiction iff pi is an even permutation relative to sigma; pi = sigma (first-created-first-served) gives the exact 64-cell table. A frozen prediction P7 ("with the swap rule applied to the readings too, the table is the same for every commit order: order is gauge") FAILED. A referee (independent code) confirmed the numbers and found at n = 4 the carrying orders are the 4 cyclic shifts of sigma (2 of them odd), so "even" does not extend.
+
+## My analysis (to be tested)
+(A) Why P7 failed. Write K_j = E_j + O_j (E even, O_j = n_j(c+_y+c+_z)/sqrt2 odd). O_i O_j = -O_j O_i, E's commute, so K_i K_j = K_j K_i (-1)^{n_i n_j} exactly. Reordering births multiplies each word by (-1)^{#pairs exchanged with both parents holding 1}: the swap rule reappears on the parents because a child's fresh parity equals its parent's bit. The listing (Jordan-Wigner mode order) is gauge; the commit order is not, because births whose parent holds 1 are parity-odd operations. P7 conflated listing with commit order.
+(B) Using the listing in which each reader's three modes are adjacent (x_j, y_j, z_j), F1_j = X_x X_y, the fresh pair states carry no sign, and the logical amplitude on old word x is (-1)^{C(|x|,2) + d(sigma,pi;x)}, d = number of occupied pairs ordered differently by sigma and pi. C(|x|,2) (the reversal sign, = Clifford reversion) is the cost of the round structure: all parents created before any child. A sign (-1)^{q} on the even code with real Z/X readers carries the full contradiction iff q is quadratic with polar form equal to the dot product on the even code. Polar form of d vanishes on the even code iff the pair set is a cut K_{S,S^c}; a permutation whose relative inversion set is a cut is a cyclic shift. So: carrying orders = the n cyclic shifts of sigma, for every n >= 3; pi = sigma exact with fixed labels; shift by k matches after relabelling the X outcomes of the k moved readers.
+(C) Depth-first creation (each child born right after its own parent is created) makes each reader's block parity-even; blocks commute; the state is the positive one; no contradiction for any sigma.
+(D) Start phases: a start with arbitrary real signs h(x) in the ascending creator basis gives logical sign h(x)(-1)^{inv_pi(x)}; at n = 4, of 128 sign patterns, predicted 48 have a carrying set, each exactly one cyclic class of 4 orders (6 of 8 alternating forms on the 3-dim even code are reached by orders; 8 quadratic forms per polar form).
+(E) Swap-rule family: a holding-dependent sign rule c(u,v) = (-1)^{a + b(u+v) + g uv} contributes only g * (occupied-pair count) beyond linear/global terms, so the hole rule equals the fermion rule and the "mixed pair" rule does nothing. Phases s = e^{i theta} on occupied pairs: at n = 3 the reversal gives <XXZ> = (cos theta - 1)/2, so a full contradiction only at theta = pi; best Mermin with fixed readings 1 + 3(1 - cos theta)/2 > 2 iff cos theta < 1/3.
+(F) Reader conventions: each reader has within-pair order (yz or zy), record (y or z), flip (F1 or F2). Matched (F1 iff the record is the left written creator) gives logical +X or -X; unmatched kills that reader's correlations. With every reader matched, carrying orders are the cyclic class of sigma; a fixed-label exact order exists iff the set M of -X readers or its complement is a prefix of sigma.
+(G) Equal weighting over commit orders: n/n! carry it; equal mixture: no sharp correlations; coherent equal-weight sum: only the blank old word survives.
+
+## Planned frozen predictions
+G gate: my own exact sparse fermion engine reproduces the recorded n = 3 rows; operator identity K_i K_j = K_j K_i (-1)^{n_i n_j} on all basis states.
+C1 listing gauge: tables identical under ascending, block, reverse and 20 random listings (n = 3, 4; all orders; both sigma; F1, F2).
+C2 the commutation identity and the predicted per-word sign of any reordering.
+C3 cyclic shifts at n = 3, 4, 5, 6 (n = 3, 4 are replays; 5, 6 fresh), sigma ascending, descending and one seeded random; FIFO exact over all 4^n cells.
+C4 depth-first: no contradiction for any sigma, n = 3..5.
+C5 start phases at n = 3 (8 patterns: contradiction iff h_ab h_ac h_bc sgn(pi) = -1) and n = 4 (48 of 128, one cyclic class each).
+C6 swap rules: the 8 sign rules on the single n-knot (n = 3..6, all listings): fermion-equivalent iff c00*c11 = -1, nothing otherwise; phases theta = k pi/12.
+C7 weightings over orders (n = 3..6).
+C8 reader conventions (n = 3 all 512 assignments; n = 4 all 256 matched + 256 sampled unmatched).
+Second growth round: not run (a grandchild's reader flip would cover three distinctions, parity-odd; the reader definition is not settled).
+
+## The verdict I intend to state
+The sign is about the orderings we supply, not the model: it appears only when the commit order is one of n cyclic shifts of the start's creation order (n of n! orders), both orders are supplied (the growth law leaves the commit order free; the parity knot has no creation order), and an unrecorded or unknown order loses it; the swap rule is one added rule, unique up to equivalence among sign rules. The model's own contribution is the round structure, which turns a matched pair of orders into the reversal sign.
+
+## Questions
+1. Is any step of (A)-(G) wrong? Is "carrying iff polar form = dot product" right for the full contradiction (including n even, where T = all readers is allowed)?
+2. Which prediction cannot fail (a theorem dressed as a test)? Which would be most informative if it failed?
+3. Is the verdict well posed? What does the result not show that I should say? Is there a fairer test of "about the model vs the ordering" (e.g., a weighting over (sigma, pi) jointly, or a native rule that could fix the order)?
+4. Any known literature giving (B) or the cyclic-shift class (graded cyclicity, supertrace) that I should cite?

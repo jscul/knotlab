@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "experiment_id": "REORDER-CONFIRM-20261126-001-E001",
+  "ticket": "REORDER-CONFIRM-20261126-001",
+  "status": "Frozen",
+  "evidence_stage": "confirmatory",
+  "branch": "code_analysis",
+  "question": "In the reordering-sign study's fermionic model (swap rule s = -1, one-parent births of a parity knot, block readers with fixed real readings), which schedules of creations and births give the full three-detector (n-detector) contradiction, why did its prediction P7 fail, and does the result survive a different choice of each scaffold?",
+  "public_inputs": "research/REORDER-CONFIRM-20261126-001/preregistration.md",
+  "forbidden_inputs": "No code of the predecessor or of its referee is imported; their receipts are read only for the gate's comparison. No sign pattern, phase or postselection enters a preparation except the start-sign patterns of P5, which are the variation under test.",
+  "primary_observable": "Full contradiction with fixed readings: every even-size correlation <F_T Z_rest> is +-1 and T -> c(T) is not a character; exact match of the n-reader target table on all 4^n cells.",
+  "cheapest_meaningful_control": "Depth-first schedules; the complex flip F3; unmatched reader conventions; the 7 other pair sign rules; s = e^{i theta}; listing changes (gauge).",
+  "first_executable_signal": "Time the n = 3 gate against the predecessor's verify_fock.json before any fresh case.",
+  "resource_budget": "One process, exact integers, at most 720 commit orders, 4,610 schedules, 4,096 reader assignments and a combinatorial count of 7,484,400 schedules; expected a few minutes, under 2 GiB.",
+  "stop_rule": "Stop after the gate and P1-P8.",
+  "decision_or_followup_rule": "If P2 at n = 5, 6, P3 and P4 hold, record the sign as a property of the supplied schedule relative to the real reader convention and STOP the order line unless a native rule fixing the schedule is named; otherwise report what the sign depends on beyond the relative order.",
+  "nonclaims": "No claim about physical fermions, exchange statistics as distinct from one CZ per crossing, physical time, a second growth round, or weightings other than the uniform ones named."
+}

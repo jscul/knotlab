@@ -145,6 +145,20 @@ in the model), or every setting read with none.
 
 ## What was found
 
+> **Referee R1, confirmed with fixes and one Block, folded in** ([report](referee-R1/report.md); the corrected
+> claims are in [the decision](decision.md)). **Block:** four of the seven fixed-count changes are moves that leave a
+> start knot with two places, below the three a start must have; and in 98 of 126 moves and 1 of 29 marks a start
+> knot is short in round 1, where `amount.py` lets it wait (treatment CANCEL-WAIT) and the ordinary law stalls the
+> round. Those rows are growth under a waiting treatment from such starts, not ordinary growth: "no knot is ever
+> short there" below is wrong for them. 358 of 465 single-change cases meet the ordinary rules. Repaired with a second
+> shared distinction between donor and neighbour, the four moves give the same fixed count of 5. **Narrowings:** the
+> local agreement holds for the two starts compared (two touching knots and three in a row, sig1 from round 4, sig0
+> from round 2), not for dimension two in general; the shell counts below count unmatched births of both growths, and
+> nothing here measures how an amount divides; the pulse keeps its damage under the strike as specified, and is undone
+> in 155 of 155 when its advance payment is struck too; the pairs' joint damage is the count gap; in setting B shares at
+> a common round fall with d where first-arrival shares rise; the parity swap could not act on these rounds. The
+> sentences below are kept as written, with this notice.
+
 > **Correction, logged in the corrections log.** The first version of this section and of the decision note said
 > that some changes at the start of a growth of dimension two "weaken as the lamp does". A control run after the
 > full run and before the referee ([`control.py`](control.py), [`control.json`](control.json)) shows that the two
@@ -249,3 +263,20 @@ need a change whose effect is shared out among the births of a round; in the gro
 of descent whole, and none was shared out. Cheapest test of the link: compare starts of dimension two that differ
 in more than one knot, and starts of the same rate on rings, in the local readings; universality predicts no damage
 between any two of them after a few rounds, up to the count.
+
+## Audit note (after the referee)
+
+The prior-work search of the design was described but not given as runnable commands. These are the queries it ran,
+for `track.py objects-gate`:
+
+```sh
+python3 -B scripts/track.py objects "share of births that differ after one change" --until 2026-11-26 --exclude HOW-MUCH-ARRIVES-20261126-001
+python3 -B scripts/track.py objects "spread of a disturbance" --until 2026-11-26 --exclude HOW-MUCH-ARRIVES-20261126-001
+python3 -B scripts/track.py objects "damage spreading Hamming distance between two runs" --until 2026-11-26 --exclude HOW-MUCH-ARRIVES-20261126-001
+python3 -B scripts/track.py objects "one more loose distinction mark changes the rate" --until 2026-11-26 --exclude HOW-MUCH-ARRIVES-20261126-001
+```
+
+Credit the referee asks for: the two-pattern study's referee found a move changing 46 of 55 index pairs of the table two
+parts make; `ORDINARY-DYNAMICS-20261120-001` has the funded-parts result on separate descent; the jam and switch studies
+gave setting B's onsets and senders. What this study adds is the per-round comparison of whole multisets of births in
+both growths.

@@ -1,0 +1,6717 @@
+{
+  "sampled ten-knot paths": {
+    "weighting": {
+      "knots": 10,
+      "seed": 61261236,
+      "meeting chance per pair": "2.75/9",
+      "shared multiplicity uniform on": [
+        1,
+        2
+      ],
+      "loose counts uniform on": [
+        0,
+        1,
+        2
+      ],
+      "kept if": "connected, at least three distinctions per knot, at most 30 distinctions",
+      "accepted sample index, counting from zero": 34,
+      "proposals through it": 849
+    },
+    "start": [
+      [
+        0,
+        1,
+        21,
+        22
+      ],
+      [
+        2,
+        3,
+        23
+      ],
+      [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      [
+        10,
+        11,
+        12,
+        24
+      ],
+      [
+        4,
+        5,
+        10,
+        11,
+        13,
+        14,
+        25,
+        26
+      ],
+      [
+        6,
+        15,
+        16
+      ],
+      [
+        0,
+        7,
+        8,
+        17
+      ],
+      [
+        1,
+        12,
+        18,
+        27,
+        28
+      ],
+      [
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      [
+        9,
+        13,
+        14,
+        19,
+        20
+      ]
+    ],
+    "rounds": [
+      {
+        "round": 0,
+        "knots": 10,
+        "distinctions": 29,
+        "allowed states": 524288,
+        "moves": {
+          "distinctions by shortest change size": {
+            "2": 20,
+            "3": 4,
+            "4": 5
+          },
+          "shortest changes by size": {
+            "2": 10,
+            "3": 14,
+            "4": 21
+          },
+          "changes of at most five by size": {
+            "2": 10,
+            "3": 14,
+            "4": 76,
+            "5": 222
+          },
+          "elementary changes of at most five": 163,
+          "non-elementary changes of at most five": 159,
+          "literal enumeration matched": true
+        },
+        "class counts": {
+          "SHORT": {
+            "k": 1,
+            "joint rank": 1,
+            "individually unread": 1,
+            "jointly unread": 1,
+            "triples of unread labels": {}
+          },
+          "UPTO5": {
+            "k": 0,
+            "joint rank": 0,
+            "individually unread": 0,
+            "jointly unread": 0,
+            "triples of unread labels": {}
+          }
+        },
+        "paths through eight distinctions": {
+          "all supports visited": 12388,
+          "shortest supports visited": 612,
+          "maximum path length": 8,
+          "shortest": {
+            "unread values": 0,
+            "unread supports": 0,
+            "disjoint triples": []
+          },
+          "all": {
+            "unread values": 0,
+            "unread supports": 0,
+            "disjoint triples": []
+          },
+          "shortest up to five": {
+            "unread values": 0,
+            "unread supports": 0,
+            "disjoint triples": []
+          },
+          "all up to five": {
+            "unread values": 0,
+            "unread supports": 0,
+            "disjoint triples": []
+          },
+          "tied at the reported endpoints": []
+        },
+        "read on disjoint start supports": {
+          "tuples": [
+            "000",
+            "011",
+            "101",
+            "110"
+          ],
+          "SHORT": [
+            {
+              "class fact": true,
+              "read by no single knot": true,
+              "knots that can read it": [],
+              "changes that flip it": 0,
+              "example changing support": null
+            },
+            {
+              "class fact": false,
+              "read by no single knot": true,
+              "knots that can read it": [],
+              "changes that flip it": 10,
+              "example changing support": [
+                10,
+                24,
+                25
+              ]
+            },
+            {
+              "class fact": false,
+              "read by no single knot": true,
+              "knots that can read it": [],
+              "changes that flip it": 10,
+              "example changing support": [
+                10,
+                24,
+                25
+              ]
+            }
+          ],
+          "UPTO5": [
+            {
+              "class fact": false,
+              "read by no single knot": true,
+              "knots that can read it": [],
+              "changes that flip it": 48,
+              "example changing support": [
+                10,
+                12,
+                13,
+                18,
+                19
+              ]
+            },
+            {
+              "class fact": false,
+              "read by no single knot": true,
+              "knots that can read it": [],
+              "changes that flip it": 136,
+              "example changing support": [
+                10,
+                24,
+                25
+              ]
+            },
+            {
+              "class fact": false,
+              "read by no single knot": true,
+              "knots that can read it": [],
+              "changes that flip it": 136,
+              "example changing support": [
+                10,
+                24,
+                25
+              ]
+            }
+          ],
+          "conditional reads": {
+            "knots with all tuples in every feasible reading": 10,
+            "knots checked": 10,
+            "feasible readings counted over the knots": 352,
+            "tuple counts with each knot fixed to zero": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4
+            ]
+          },
+          "laws giving even parity": [
+            0,
+            3,
+            7
+          ]
+        }
+      },
+      {
+        "round": 1,
+        "knots": 15,
+        "distinctions": 37,
+        "allowed states": 4194304,
+        "moves": {
+          "distinctions by shortest change size": {
+            "2": 20,
+            "3": 1,
+            "4": 16
+          },
+          "shortest changes by size": {
+            "2": 10,
+            "3": 4,
+            "4": 28
+          },
+          "changes of at most five by size": {
+            "2": 10,
+            "3": 4,
+            "4": 73,
+            "5": 102
+          },
+          "elementary changes of at most five": 112,
+          "non-elementary changes of at most five": 77
+        },
+        "class counts": {
+          "SHORT": {
+            "k": 2,
+            "joint rank": 2,
+            "individually unread": 3,
+            "jointly unread": 2,
+            "triples of unread labels": {
+              "three unread labels, the third the sum of two": 1
+            }
+          },
+          "UPTO5": {
+            "k": 0,
+            "joint rank": 0,
+            "individually unread": 0,
+            "jointly unread": 0,
+            "triples of unread labels": {}
+          }
+        },
+        "carriers": [
+          [
+            1,
+            18,
+            21,
+            29
+          ]
+        ],
+        "tuples": [
+          "0",
+          "1"
+        ],
+        "assignments for attained tuples": {
+          "0": [],
+          "1": [
+            0,
+            1,
+            4,
+            7,
+            10,
+            12
+          ]
+        },
+        "SHORT": [
+          {
+            "class fact": true,
+            "read by no single knot": true,
+            "knots that can read it": [],
+            "changes that flip it": 0,
+            "example changing support": null
+          }
+        ],
+        "UPTO5": [
+          {
+            "class fact": false,
+            "read by no single knot": true,
+            "knots that can read it": [],
+            "changes that flip it": 34,
+            "example changing support": [
+              10,
+              12,
+              13,
+              18,
+              19
+            ]
+          }
+        ],
+        "conditional reads": {
+          "knots with all tuples in every feasible reading": 15,
+          "knots checked": 15,
+          "feasible readings counted over the knots": 376,
+          "tuple counts with each knot fixed to zero": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ]
+        },
+        "least changing support": [
+          [
+            1,
+            21,
+            27,
+            29,
+            31
+          ]
+        ],
+        "paths through eight distinctions": {
+          "all supports visited": 34023,
+          "shortest supports visited": 916,
+          "maximum path length": 8,
+          "shortest": {
+            "unread values": 2,
+            "unread supports": 3,
+            "disjoint triples": []
+          },
+          "all": {
+            "unread values": 2,
+            "unread supports": 3,
+            "disjoint triples": []
+          },
+          "shortest up to five": {
+            "unread values": 0,
+            "unread supports": 0,
+            "disjoint triples": []
+          },
+          "all up to five": {
+            "unread values": 0,
+            "unread supports": 0,
+            "disjoint triples": []
+          },
+          "tied at the reported endpoints": []
+        },
+        "read on disjoint start supports": {
+          "tuples": [
+            "000",
+            "011",
+            "101",
+            "110"
+          ],
+          "SHORT": [
+            {
+              "class fact": true,
+              "read by no single knot": true,
+              "knots that can read it": [],
+              "changes that flip it": 0,
+              "example changing support": null
+            },
+            {
+              "class fact": true,
+              "read by no single knot": true,
+              "knots that can read it": [],
+              "changes that flip it": 0,
+              "example changing support": null
+            },
+            {
+              "class fact": true,
+              "read by no single knot": true,
+              "knots that can read it": [],
+              "changes that flip it": 0,
+              "example changing support": null
+            }
+          ],
+          "UPTO5": [
+            {
+              "class fact": false,
+              "read by no single knot": true,
+              "knots that can read it": [],
+              "changes that flip it": 12,
+              "example changing support": [
+                10,
+                12,
+                13,
+                18,
+                19
+              ]
+            },
+            {
+              "class fact": false,
+              "read by no single knot": true,
+              "knots that can read it": [],
+              "changes that flip it": 34,
+              "example changing support": [
+                10,
+                12,
+                13,
+                18,
+                19
+              ]
+            },
+            {
+              "class fact": false,
+              "read by no single knot": true,
+              "knots that can read it": [],
+              "changes that flip it": 22,
+              "example changing support": [
+                10,
+                24,
+                25,
+                29,
+                30
+              ]
+            }
+          ],
+          "conditional reads": {
+            "knots with all tuples in every feasible reading": 15,
+            "knots checked": 15,
+            "feasible readings counted over the knots": 376,
+            "tuple counts with each knot fixed to zero": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4
+            ]
+          },
+          "laws giving even parity": [
+            0,
+            3,
+            7
+          ]
+        }
+      },
+      {
+        "round": 2,
+        "knots": 20,
+        "distinctions": 45,
+        "allowed states": 33554432,
+        "moves": {
+          "distinctions by shortest change size": {
+            "2": 20,
+            "3": 1,
+            "4": 24
+          },
+          "shortest changes by size": {
+            "2": 10,
+            "3": 4,
+            "4": 31
+          },
+          "changes of at most five by size": {
+            "2": 10,
+            "3": 4,
+            "4": 76,
+            "5": 80
+          },
+          "elementary changes of at most five": 93,
+          "non-elementary changes of at most five": 77
+        },
+        "class counts": {
+          "SHORT": {
+            "k": 2,
+            "joint rank": 2,
+            "individually unread": 3,
+            "jointly unread": 2,
+            "triples of unread labels": {
+              "three unread labels, the third the sum of two": 1
+            }
+          },
+          "UPTO5": {
+            "k": 1,
+            "joint rank": 1,
+            "individually unread": 1,
+            "jointly unread": 1,
+            "triples of unread labels": {}
+          }
+        },
+        "carriers": [
+          [
+            1,
+            18,
+            21,
+            29
+          ],
+          [
+            22,
+            33,
+            37
+          ]
+        ],
+        "tuples": [
+          "00",
+          "01",
+          "10",
+          "11"
+        ],
+        "assignments for attained tuples": {
+          "00": [],
+          "01": [
+            3,
+            4,
+            6,
+            9,
+            12,
+            14,
+            16,
+            18,
+            23,
+            24,
+            29,
+            30,
+            31,
+            32,
+            37,
+            39
+          ],
+          "10": [
+            0,
+            1,
+            4,
+            7,
+            10,
+            12
+          ],
+          "11": [
+            0,
+            2,
+            4,
+            5,
+            6,
+            8,
+            9,
+            11,
+            12,
+            14,
+            16,
+            18,
+            21,
+            23,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            39,
+            42
+          ]
+        },
+        "SHORT": [
+          {
+            "class fact": true,
+            "read by no single knot": true,
+            "knots that can read it": [],
+            "changes that flip it": 0,
+            "example changing support": null
+          },
+          {
+            "class fact": true,
+            "read by no single knot": true,
+            "knots that can read it": [],
+            "changes that flip it": 0,
+            "example changing support": null
+          }
+        ],
+        "UPTO5": [
+          {
+            "class fact": false,
+            "read by no single knot": true,
+            "knots that can read it": [],
+            "changes that flip it": 12,
+            "example changing support": [
+              10,
+              12,
+              13,
+              18,
+              19
+            ]
+          },
+          {
+            "class fact": true,
+            "read by no single knot": true,
+            "knots that can read it": [],
+            "changes that flip it": 0,
+            "example changing support": null
+          }
+        ],
+        "conditional reads": {
+          "knots with all tuples in every feasible reading": 20,
+          "knots checked": 20,
+          "feasible readings counted over the knots": 400,
+          "tuple counts with each knot fixed to zero": [
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4
+          ]
+        },
+        "least changing support": [
+          [
+            10,
+            12,
+            13,
+            18,
+            19
+          ],
+          [
+            1,
+            21,
+            27,
+            29,
+            31,
+            37,
+            38
+          ]
+        ],
+        "paths through eight distinctions": {
+          "all supports visited": 52726,
+          "shortest supports visited": 1441,
+          "maximum path length": 8,
+          "shortest": {
+            "unread values": 2,
+            "unread supports": 6,
+            "disjoint triples": []
+          },
+          "all": {
+            "unread values": 2,
+            "unread supports": 6,
+            "disjoint triples": []
+          },
+          "shortest up to five": {
+            "unread values": 1,
+            "unread supports": 5,
+            "disjoint triples": []
+          },
+          "all up to five": {
+            "unread values": 1,
+            "unread supports": 5,
+            "disjoint triples": []
+          },
+          "tied at the reported endpoints": []
+        },
+        "read on disjoint start supports": {
+          "tuples": [
+            "000",
+            "011",
+            "101",
+            "110"
+          ],
+          "SHORT": [
+            {
+              "class fact": true,
+              "read by no single knot": true,
+              "knots that can read it": [],
+              "changes that flip it": 0,
+              "example changing support": null
+            },
+            {
+              "class fact": true,
+              "read by no single knot": true,
+              "knots that can read it": [],
+              "changes that flip it": 0,
+              "example changing support": null
+            },
+            {
+              "class fact": true,
+              "read by no single knot": true,
+              "knots that can read it": [],
+              "changes that flip it": 0,
+              "example changing support": null
+            }
+          ],
+          "UPTO5": [
+            {
+              "class fact": false,
+              "read by no single knot": true,
+              "knots that can read it": [],
+              "changes that flip it": 12,
+              "example changing support": [
+                10,
+                12,
+                13,
+                18,
+                19
+              ]
+            },
+            {
+              "class fact": false,
+              "read by no single knot": true,
+              "knots that can read it": [],
+              "changes that flip it": 12,
+              "example changing support": [
+                10,
+                12,
+                13,
+                18,
+                19
+              ]
+            },
+            {
+              "class fact": true,
+              "read by no single knot": true,
+              "knots that can read it": [],
+              "changes that flip it": 0,
+              "example changing support": null
+            }
+          ],
+          "conditional reads": {
+            "knots with all tuples in every feasible reading": 20,
+            "knots checked": 20,
+            "feasible readings counted over the knots": 400,
+            "tuple counts with each knot fixed to zero": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4
+            ]
+          },
+          "laws giving even parity": [
+            0,
+            3,
+            7
+          ]
+        }
+      },
+      {
+        "round": 3,
+        "knots": 25,
+        "distinctions": 53,
+        "allowed states": 268435456,
+        "moves": {
+          "distinctions by shortest change size": {
+            "2": 20,
+            "3": 1,
+            "4": 32
+          },
+          "shortest changes by size": {
+            "2": 10,
+            "3": 4,
+            "4": 34
+          },
+          "changes of at most five by size": {
+            "2": 10,
+            "3": 4,
+            "4": 79,
+            "5": 80
+          },
+          "elementary changes of at most five": 96,
+          "non-elementary changes of at most five": 77
+        },
+        "class counts": {
+          "SHORT": {
+            "k": 2,
+            "joint rank": 2,
+            "individually unread": 3,
+            "jointly unread": 2,
+            "triples of unread labels": {
+              "three unread labels, the third the sum of two": 1
+            }
+          },
+          "UPTO5": {
+            "k": 1,
+            "joint rank": 1,
+            "individually unread": 1,
+            "jointly unread": 1,
+            "triples of unread labels": {}
+          }
+        },
+        "carriers": [
+          [
+            12,
+            24,
+            27,
+            32,
+            39,
+            46
+          ],
+          [
+            1,
+            18,
+            21,
+            29
+          ],
+          [
+            22,
+            33,
+            37
+          ]
+        ],
+        "tuples": [
+          "000",
+          "011",
+          "101",
+          "110"
+        ],
+        "assignments for attained tuples": {
+          "000": [],
+          "011": [
+            1,
+            11,
+            12,
+            21,
+            26,
+            27,
+            28,
+            29,
+            31,
+            32,
+            33,
+            34,
+            35,
+            38,
+            41,
+            45,
+            46
+          ],
+          "101": [
+            0,
+            5,
+            8,
+            21,
+            26,
+            27,
+            28,
+            29,
+            31,
+            32,
+            33,
+            34,
+            35,
+            38,
+            41,
+            45,
+            46
+          ],
+          "110": [
+            0,
+            1,
+            4,
+            7,
+            10,
+            12
+          ]
+        },
+        "SHORT": [
+          {
+            "class fact": true,
+            "read by no single knot": true,
+            "knots that can read it": [],
+            "changes that flip it": 0,
+            "example changing support": null
+          },
+          {
+            "class fact": true,
+            "read by no single knot": true,
+            "knots that can read it": [],
+            "changes that flip it": 0,
+            "example changing support": null
+          },
+          {
+            "class fact": true,
+            "read by no single knot": true,
+            "knots that can read it": [],
+            "changes that flip it": 0,
+            "example changing support": null
+          }
+        ],
+        "UPTO5": [
+          {
+            "class fact": false,
+            "read by no single knot": true,
+            "knots that can read it": [],
+            "changes that flip it": 12,
+            "example changing support": [
+              10,
+              12,
+              13,
+              18,
+              19
+            ]
+          },
+          {
+            "class fact": false,
+            "read by no single knot": true,
+            "knots that can read it": [],
+            "changes that flip it": 12,
+            "example changing support": [
+              10,
+              12,
+              13,
+              18,
+              19
+            ]
+          },
+          {
+            "class fact": true,
+            "read by no single knot": true,
+            "knots that can read it": [],
+            "changes that flip it": 0,
+            "example changing support": null
+          }
+        ],
+        "conditional reads": {
+          "knots with all tuples in every feasible reading": 25,
+          "knots checked": 25,
+          "feasible readings counted over the knots": 424,
+          "tuple counts with each knot fixed to zero": [
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4
+          ]
+        },
+        "least changing support": [
+          [
+            10,
+            12,
+            13,
+            18,
+            19
+          ],
+          [
+            10,
+            12,
+            13,
+            18,
+            19
+          ],
+          [
+            1,
+            21,
+            27,
+            29,
+            31,
+            37,
+            38,
+            45,
+            46
+          ]
+        ],
+        "laws giving even parity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          8,
+          9,
+          11,
+          12,
+          15,
+          16,
+          21
+        ],
+        "laws whose removal frees every tuple": {
+          "start knots": 9,
+          "born knots": 5,
+          "of start / born": [
+            10,
+            15
+          ],
+          "indices freeing it": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            8,
+            9,
+            11,
+            12,
+            15,
+            16,
+            21
+          ],
+          "indices leaving it": [
+            7,
+            10,
+            13,
+            14,
+            17,
+            18,
+            19,
+            20,
+            22,
+            23,
+            24
+          ]
+        },
+        "paths through eight distinctions": {
+          "all supports visited": 63890,
+          "shortest supports visited": 2271,
+          "maximum path length": 8,
+          "shortest": {
+            "unread values": 3,
+            "unread supports": 10,
+            "disjoint triples": [
+              {
+                "supports": [
+                  [
+                    1,
+                    18,
+                    21,
+                    29
+                  ],
+                  [
+                    12,
+                    24,
+                    27,
+                    32,
+                    39,
+                    46
+                  ],
+                  [
+                    22,
+                    33,
+                    37
+                  ]
+                ],
+                "uses the current round": true,
+                "uses post-start laws": true
+              },
+              {
+                "supports": [
+                  [
+                    1,
+                    18,
+                    21,
+                    29
+                  ],
+                  [
+                    12,
+                    24,
+                    27,
+                    32,
+                    39,
+                    46
+                  ],
+                  [
+                    34,
+                    41,
+                    45
+                  ]
+                ],
+                "uses the current round": true,
+                "uses post-start laws": true
+              },
+              {
+                "supports": [
+                  [
+                    1,
+                    18,
+                    21,
+                    29
+                  ],
+                  [
+                    12,
+                    24,
+                    27,
+                    32,
+                    39,
+                    46
+                  ],
+                  [
+                    37,
+                    41,
+                    42
+                  ]
+                ],
+                "uses the current round": true,
+                "uses post-start laws": true
+              }
+            ]
+          },
+          "all": {
+            "unread values": 3,
+            "unread supports": 11,
+            "disjoint triples": [
+              {
+                "supports": [
+                  [
+                    1,
+                    18,
+                    21,
+                    29
+                  ],
+                  [
+                    12,
+                    24,
+                    27,
+                    32,
+                    39,
+                    46
+                  ],
+                  [
+                    22,
+                    33,
+                    37
+                  ]
+                ],
+                "uses the current round": true,
+                "uses post-start laws": true
+              },
+              {
+                "supports": [
+                  [
+                    1,
+                    18,
+                    21,
+                    29
+                  ],
+                  [
+                    12,
+                    24,
+                    27,
+                    32,
+                    39,
+                    46
+                  ],
+                  [
+                    34,
+                    41,
+                    45
+                  ]
+                ],
+                "uses the current round": true,
+                "uses post-start laws": true
+              },
+              {
+                "supports": [
+                  [
+                    1,
+                    18,
+                    21,
+                    29
+                  ],
+                  [
+                    12,
+                    24,
+                    27,
+                    32,
+                    39,
+                    46
+                  ],
+                  [
+                    37,
+                    41,
+                    42
+                  ]
+                ],
+                "uses the current round": true,
+                "uses post-start laws": true
+              }
+            ]
+          },
+          "shortest up to five": {
+            "unread values": 1,
+            "unread supports": 8,
+            "disjoint triples": []
+          },
+          "all up to five": {
+            "unread values": 1,
+            "unread supports": 8,
+            "disjoint triples": []
+          },
+          "tied at the reported endpoints": [
+            {
+              "endpoints": [
+                10,
+                "loose 46"
+              ],
+              "path length": 6,
+              "shortest supports": 12,
+              "invariant under shortest changes": [
+                [
+                  12,
+                  24,
+                  27,
+                  32,
+                  39,
+                  46
+                ]
+              ],
+              "invariant under changes of at most five": []
+            },
+            {
+              "endpoints": [
+                8,
+                15
+              ],
+              "path length": 4,
+              "shortest supports": 5,
+              "invariant under shortest changes": [
+                [
+                  1,
+                  18,
+                  21,
+                  29
+                ]
+              ],
+              "invariant under changes of at most five": []
+            },
+            {
+              "endpoints": [
+                0,
+                20
+              ],
+              "path length": 3,
+              "shortest supports": 3,
+              "invariant under shortest changes": [
+                [
+                  22,
+                  33,
+                  37
+                ]
+              ],
+              "invariant under changes of at most five": [
+                [
+                  22,
+                  33,
+                  37
+                ]
+              ]
+            }
+          ]
+        },
+        "read on disjoint start supports": {
+          "tuples": [
+            "000",
+            "011",
+            "101",
+            "110"
+          ],
+          "SHORT": [
+            {
+              "class fact": true,
+              "read by no single knot": true,
+              "knots that can read it": [],
+              "changes that flip it": 0,
+              "example changing support": null
+            },
+            {
+              "class fact": true,
+              "read by no single knot": true,
+              "knots that can read it": [],
+              "changes that flip it": 0,
+              "example changing support": null
+            },
+            {
+              "class fact": true,
+              "read by no single knot": true,
+              "knots that can read it": [],
+              "changes that flip it": 0,
+              "example changing support": null
+            }
+          ],
+          "UPTO5": [
+            {
+              "class fact": false,
+              "read by no single knot": true,
+              "knots that can read it": [],
+              "changes that flip it": 12,
+              "example changing support": [
+                10,
+                12,
+                13,
+                18,
+                19
+              ]
+            },
+            {
+              "class fact": false,
+              "read by no single knot": true,
+              "knots that can read it": [],
+              "changes that flip it": 12,
+              "example changing support": [
+                10,
+                12,
+                13,
+                18,
+                19
+              ]
+            },
+            {
+              "class fact": true,
+              "read by no single knot": true,
+              "knots that can read it": [],
+              "changes that flip it": 0,
+              "example changing support": null
+            }
+          ],
+          "conditional reads": {
+            "knots with all tuples in every feasible reading": 25,
+            "knots checked": 25,
+            "feasible readings counted over the knots": 424,
+            "tuple counts with each knot fixed to zero": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4
+            ]
+          },
+          "laws giving even parity": [
+            0,
+            3,
+            7
+          ]
+        },
+        "origin": {
+          "start representatives": [
+            [
+              12,
+              23,
+              24,
+              25,
+              26
+            ],
+            [
+              1,
+              18,
+              24
+            ],
+            [
+              21,
+              22,
+              24
+            ]
+          ],
+          "birth-law sums used to replace each support": [
+            [
+              11,
+              12,
+              16,
+              21
+            ],
+            [
+              10
+            ],
+            [
+              10,
+              15
+            ]
+          ],
+          "start law sum": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            8,
+            9
+          ],
+          "start SHORT": [
+            {
+              "class fact": true,
+              "read by no single knot": true,
+              "knots that can read it": [],
+              "changes that flip it": 0,
+              "example changing support": null
+            },
+            {
+              "class fact": false,
+              "read by no single knot": true,
+              "knots that can read it": [],
+              "changes that flip it": 10,
+              "example changing support": [
+                10,
+                24,
+                25
+              ]
+            },
+            {
+              "class fact": false,
+              "read by no single knot": true,
+              "knots that can read it": [],
+              "changes that flip it": 10,
+              "example changing support": [
+                10,
+                24,
+                25
+              ]
+            }
+          ],
+          "start UPTO5": [
+            {
+              "class fact": false,
+              "read by no single knot": true,
+              "knots that can read it": [],
+              "changes that flip it": 48,
+              "example changing support": [
+                10,
+                12,
+                13,
+                18,
+                19
+              ]
+            },
+            {
+              "class fact": false,
+              "read by no single knot": true,
+              "knots that can read it": [],
+              "changes that flip it": 136,
+              "example changing support": [
+                10,
+                24,
+                25
+              ]
+            },
+            {
+              "class fact": false,
+              "read by no single knot": true,
+              "knots that can read it": [],
+              "changes that flip it": 136,
+              "example changing support": [
+                10,
+                24,
+                25
+              ]
+            }
+          ],
+          "start least changing support": [
+            [
+              0,
+              2,
+              7,
+              21,
+              23
+            ],
+            [
+              1,
+              21,
+              27
+            ],
+            [
+              1,
+              21,
+              27
+            ]
+          ],
+          "start conditional reads": {
+            "knots with all tuples in every feasible reading": 10,
+            "knots checked": 10,
+            "feasible readings counted over the knots": 352,
+            "tuple counts with each knot fixed to zero": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4
+            ]
+          }
+        },
+        "canonical checks": [
+          {
+            "contact": "z3",
+            "clauses": "z1 z2 ~z3; z1 ~z2 z3; ~z1 z2 z3; ~z1 ~z2 ~z3",
+            "checker": {
+              "loops": [
+                "z1",
+                "z2"
+              ],
+              "contact": "z3",
+              "erasure": "forgetting",
+              "binding": true,
+              "loss_on_erasure": true,
+              "coexistence": true,
+              "invisible_in_parts": true,
+              "pairwise_definable": false,
+              "minimum_width": 3,
+              "notes": [],
+              "is_knot": true,
+              "allowed": [
+                "000",
+                "011",
+                "101",
+                "110"
+              ],
+              "variables": [
+                "z1",
+                "z2",
+                "z3"
+              ]
+            }
+          },
+          {
+            "contact": "z1",
+            "clauses": "z1 z2 ~z3; z1 ~z2 z3; ~z1 z2 z3; ~z1 ~z2 ~z3",
+            "checker": {
+              "loops": [
+                "z2",
+                "z3"
+              ],
+              "contact": "z1",
+              "erasure": "forgetting",
+              "binding": true,
+              "loss_on_erasure": true,
+              "coexistence": true,
+              "invisible_in_parts": true,
+              "pairwise_definable": false,
+              "minimum_width": 3,
+              "notes": [],
+              "is_knot": true,
+              "allowed": [
+                "000",
+                "011",
+                "101",
+                "110"
+              ],
+              "variables": [
+                "z2",
+                "z3",
+                "z1"
+              ]
+            }
+          },
+          {
+            "contact": "z2",
+            "clauses": "z1 z2 ~z3; z1 ~z2 z3; ~z1 z2 z3; ~z1 ~z2 ~z3",
+            "checker": {
+              "loops": [
+                "z1",
+                "z3"
+              ],
+              "contact": "z2",
+              "erasure": "forgetting",
+              "binding": true,
+              "loss_on_erasure": true,
+              "coexistence": true,
+              "invisible_in_parts": true,
+              "pairwise_definable": false,
+              "minimum_width": 3,
+              "notes": [],
+              "is_knot": true,
+              "allowed": [
+                "000",
+                "011",
+                "101",
+                "110"
+              ],
+              "variables": [
+                "z1",
+                "z3",
+                "z2"
+              ]
+            }
+          }
+        ],
+        "renaming preserved both move sets and the tuples": true
+      },
+      {
+        "round": 4,
+        "knots": 30,
+        "distinctions": 61,
+        "allowed states": 2147483648,
+        "moves": {
+          "distinctions by shortest change size": {
+            "2": 20,
+            "3": 1,
+            "4": 40
+          },
+          "shortest changes by size": {
+            "2": 10,
+            "3": 4,
+            "4": 37
+          },
+          "changes of at most five by size": {
+            "2": 10,
+            "3": 4,
+            "4": 82,
+            "5": 80
+          },
+          "elementary changes of at most five": 99,
+          "non-elementary changes of at most five": 77
+        },
+        "class counts": {
+          "SHORT": {
+            "k": 2,
+            "joint rank": 2,
+            "individually unread": 3,
+            "jointly unread": 2,
+            "triples of unread labels": {
+              "three unread labels, the third the sum of two": 1
+            }
+          },
+          "UPTO5": {
+            "k": 1,
+            "joint rank": 1,
+            "individually unread": 1,
+            "jointly unread": 1,
+            "triples of unread labels": {}
+          }
+        },
+        "carriers": [
+          [
+            12,
+            24,
+            27,
+            32,
+            39,
+            46
+          ],
+          [
+            1,
+            18,
+            21,
+            29
+          ],
+          [
+            22,
+            33,
+            37
+          ]
+        ],
+        "tuples": [
+          "000",
+          "011",
+          "101",
+          "110"
+        ],
+        "assignments for attained tuples": {
+          "000": [],
+          "011": [
+            0,
+            10,
+            12,
+            17,
+            18,
+            22,
+            26,
+            27,
+            28,
+            34,
+            35,
+            40,
+            41,
+            45,
+            48,
+            53,
+            55
+          ],
+          "101": [
+            1,
+            14,
+            18,
+            19,
+            22,
+            26,
+            27,
+            28,
+            34,
+            35,
+            40,
+            41,
+            45,
+            48,
+            53,
+            55
+          ],
+          "110": [
+            0,
+            1,
+            4,
+            7,
+            10,
+            12
+          ]
+        },
+        "SHORT": [
+          {
+            "class fact": true,
+            "read by no single knot": true,
+            "knots that can read it": [],
+            "changes that flip it": 0,
+            "example changing support": null
+          },
+          {
+            "class fact": true,
+            "read by no single knot": true,
+            "knots that can read it": [],
+            "changes that flip it": 0,
+            "example changing support": null
+          },
+          {
+            "class fact": true,
+            "read by no single knot": true,
+            "knots that can read it": [],
+            "changes that flip it": 0,
+            "example changing support": null
+          }
+        ],
+        "UPTO5": [
+          {
+            "class fact": false,
+            "read by no single knot": true,
+            "knots that can read it": [],
+            "changes that flip it": 12,
+            "example changing support": [
+              10,
+              12,
+              13,
+              18,
+              19
+            ]
+          },
+          {
+            "class fact": false,
+            "read by no single knot": true,
+            "knots that can read it": [],
+            "changes that flip it": 12,
+            "example changing support": [
+              10,
+              12,
+              13,
+              18,
+              19
+            ]
+          },
+          {
+            "class fact": true,
+            "read by no single knot": true,
+            "knots that can read it": [],
+            "changes that flip it": 0,
+            "example changing support": null
+          }
+        ],
+        "conditional reads": {
+          "knots with all tuples in every feasible reading": 30,
+          "knots checked": 30,
+          "feasible readings counted over the knots": 448,
+          "tuple counts with each knot fixed to zero": [
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4
+          ]
+        },
+        "least changing support": [
+          [
+            10,
+            12,
+            13,
+            18,
+            19
+          ],
+          [
+            10,
+            12,
+            13,
+            18,
+            19
+          ],
+          [
+            1,
+            21,
+            27,
+            29,
+            31,
+            37,
+            38,
+            45,
+            46,
+            53,
+            54
+          ]
+        ],
+        "laws giving even parity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          8,
+          9,
+          11,
+          12,
+          15,
+          16,
+          21
+        ],
+        "laws whose removal frees every tuple": {
+          "start knots": 9,
+          "born knots": 5,
+          "of start / born": [
+            10,
+            20
+          ],
+          "indices freeing it": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            8,
+            9,
+            11,
+            12,
+            15,
+            16,
+            21
+          ],
+          "indices leaving it": [
+            7,
+            10,
+            13,
+            14,
+            17,
+            18,
+            19,
+            20,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29
+          ]
+        },
+        "paths through eight distinctions": {
+          "all supports visited": 69556,
+          "shortest supports visited": 3046,
+          "maximum path length": 8,
+          "shortest": {
+            "unread values": 3,
+            "unread supports": 14,
+            "disjoint triples": [
+              {
+                "supports": [
+                  [
+                    1,
+                    18,
+                    21,
+                    29
+                  ],
+                  [
+                    12,
+                    24,
+                    27,
+                    32,
+                    39,
+                    46
+                  ],
+                  [
+                    22,
+                    33,
+                    37
+                  ]
+                ],
+                "uses the current round": false,
+                "uses post-start laws": true
+              },
+              {
+                "supports": [
+                  [
+                    1,
+                    18,
+                    21,
+                    29
+                  ],
+                  [
+                    12,
+                    24,
+                    27,
+                    32,
+                    39,
+                    46
+                  ],
+                  [
+                    28,
+                    35,
+                    40,
+                    47,
+                    54
+                  ]
+                ],
+                "uses the current round": true,
+                "uses post-start laws": true
+              },
+              {
+                "supports": [
+                  [
+                    1,
+                    18,
+                    21,
+                    29
+                  ],
+                  [
+                    12,
+                    24,
+                    27,
+                    32,
+                    39,
+                    46
+                  ],
+                  [
+                    34,
+                    41,
+                    45
+                  ]
+                ],
+                "uses the current round": false,
+                "uses post-start laws": true
+              },
+              {
+                "supports": [
+                  [
+                    1,
+                    18,
+                    21,
+                    29
+                  ],
+                  [
+                    12,
+                    24,
+                    27,
+                    32,
+                    39,
+                    46
+                  ],
+                  [
+                    37,
+                    41,
+                    42
+                  ]
+                ],
+                "uses the current round": false,
+                "uses post-start laws": true
+              },
+              {
+                "supports": [
+                  [
+                    1,
+                    18,
+                    21,
+                    29
+                  ],
+                  [
+                    12,
+                    24,
+                    27,
+                    32,
+                    39,
+                    46
+                  ],
+                  [
+                    42,
+                    49,
+                    53
+                  ]
+                ],
+                "uses the current round": true,
+                "uses post-start laws": true
+              },
+              {
+                "supports": [
+                  [
+                    1,
+                    18,
+                    21,
+                    29
+                  ],
+                  [
+                    12,
+                    24,
+                    27,
+                    32,
+                    39,
+                    46
+                  ],
+                  [
+                    45,
+                    49,
+                    50
+                  ]
+                ],
+                "uses the current round": false,
+                "uses post-start laws": true
+              }
+            ]
+          },
+          "all": {
+            "unread values": 3,
+            "unread supports": 15,
+            "disjoint triples": [
+              {
+                "supports": [
+                  [
+                    1,
+                    18,
+                    21,
+                    29
+                  ],
+                  [
+                    12,
+                    24,
+                    27,
+                    32,
+                    39,
+                    46
+                  ],
+                  [
+                    22,
+                    33,
+                    37
+                  ]
+                ],
+                "uses the current round": false,
+                "uses post-start laws": true
+              },
+              {
+                "supports": [
+                  [
+                    1,
+                    18,
+                    21,
+                    29
+                  ],
+                  [
+                    12,
+                    24,
+                    27,
+                    32,
+                    39,
+                    46
+                  ],
+                  [
+                    28,
+                    35,
+                    40,
+                    47,
+                    54
+                  ]
+                ],
+                "uses the current round": true,
+                "uses post-start laws": true
+              },
+              {
+                "supports": [
+                  [
+                    1,
+                    18,
+                    21,
+                    29
+                  ],
+                  [
+                    12,
+                    24,
+                    27,
+                    32,
+                    39,
+                    46
+                  ],
+                  [
+                    34,
+                    41,
+                    45
+                  ]
+                ],
+                "uses the current round": false,
+                "uses post-start laws": true
+              },
+              {
+                "supports": [
+                  [
+                    1,
+                    18,
+                    21,
+                    29
+                  ],
+                  [
+                    12,
+                    24,
+                    27,
+                    32,
+                    39,
+                    46
+                  ],
+                  [
+                    37,
+                    41,
+                    42
+                  ]
+                ],
+                "uses the current round": false,
+                "uses post-start laws": true
+              },
+              {
+                "supports": [
+                  [
+                    1,
+                    18,
+                    21,
+                    29
+                  ],
+                  [
+                    12,
+                    24,
+                    27,
+                    32,
+                    39,
+                    46
+                  ],
+                  [
+                    42,
+                    49,
+                    53
+                  ]
+                ],
+                "uses the current round": true,
+                "uses post-start laws": true
+              },
+              {
+                "supports": [
+                  [
+                    1,
+                    18,
+                    21,
+                    29
+                  ],
+                  [
+                    12,
+                    24,
+                    27,
+                    32,
+                    39,
+                    46
+                  ],
+                  [
+                    45,
+                    49,
+                    50
+                  ]
+                ],
+                "uses the current round": false,
+                "uses post-start laws": true
+              }
+            ]
+          },
+          "shortest up to five": {
+            "unread values": 1,
+            "unread supports": 12,
+            "disjoint triples": []
+          },
+          "all up to five": {
+            "unread values": 1,
+            "unread supports": 12,
+            "disjoint triples": []
+          },
+          "tied at the reported endpoints": [
+            {
+              "endpoints": [
+                10,
+                26
+              ],
+              "path length": 6,
+              "shortest supports": 20,
+              "invariant under shortest changes": [
+                [
+                  12,
+                  24,
+                  27,
+                  32,
+                  39,
+                  46
+                ]
+              ],
+              "invariant under changes of at most five": []
+            },
+            {
+              "endpoints": [
+                8,
+                15
+              ],
+              "path length": 4,
+              "shortest supports": 5,
+              "invariant under shortest changes": [
+                [
+                  1,
+                  18,
+                  21,
+                  29
+                ]
+              ],
+              "invariant under changes of at most five": []
+            },
+            {
+              "endpoints": [
+                0,
+                20
+              ],
+              "path length": 3,
+              "shortest supports": 3,
+              "invariant under shortest changes": [
+                [
+                  22,
+                  33,
+                  37
+                ]
+              ],
+              "invariant under changes of at most five": [
+                [
+                  22,
+                  33,
+                  37
+                ]
+              ]
+            }
+          ]
+        },
+        "read on disjoint start supports": {
+          "tuples": [
+            "000",
+            "011",
+            "101",
+            "110"
+          ],
+          "SHORT": [
+            {
+              "class fact": true,
+              "read by no single knot": true,
+              "knots that can read it": [],
+              "changes that flip it": 0,
+              "example changing support": null
+            },
+            {
+              "class fact": true,
+              "read by no single knot": true,
+              "knots that can read it": [],
+              "changes that flip it": 0,
+              "example changing support": null
+            },
+            {
+              "class fact": true,
+              "read by no single knot": true,
+              "knots that can read it": [],
+              "changes that flip it": 0,
+              "example changing support": null
+            }
+          ],
+          "UPTO5": [
+            {
+              "class fact": false,
+              "read by no single knot": true,
+              "knots that can read it": [],
+              "changes that flip it": 12,
+              "example changing support": [
+                10,
+                12,
+                13,
+                18,
+                19
+              ]
+            },
+            {
+              "class fact": false,
+              "read by no single knot": true,
+              "knots that can read it": [],
+              "changes that flip it": 12,
+              "example changing support": [
+                10,
+                12,
+                13,
+                18,
+                19
+              ]
+            },
+            {
+              "class fact": true,
+              "read by no single knot": true,
+              "knots that can read it": [],
+              "changes that flip it": 0,
+              "example changing support": null
+            }
+          ],
+          "conditional reads": {
+            "knots with all tuples in every feasible reading": 30,
+            "knots checked": 30,
+            "feasible readings counted over the knots": 448,
+            "tuple counts with each knot fixed to zero": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4
+            ]
+          },
+          "laws giving even parity": [
+            0,
+            3,
+            7
+          ]
+        },
+        "origin": {
+          "start representatives": [
+            [
+              12,
+              23,
+              24,
+              25,
+              26
+            ],
+            [
+              1,
+              18,
+              24
+            ],
+            [
+              21,
+              22,
+              24
+            ]
+          ],
+          "birth-law sums used to replace each support": [
+            [
+              11,
+              12,
+              16,
+              21
+            ],
+            [
+              10
+            ],
+            [
+              10,
+              15
+            ]
+          ],
+          "start law sum": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            8,
+            9
+          ],
+          "start SHORT": [
+            {
+              "class fact": true,
+              "read by no single knot": true,
+              "knots that can read it": [],
+              "changes that flip it": 0,
+              "example changing support": null
+            },
+            {
+              "class fact": false,
+              "read by no single knot": true,
+              "knots that can read it": [],
+              "changes that flip it": 10,
+              "example changing support": [
+                10,
+                24,
+                25
+              ]
+            },
+            {
+              "class fact": false,
+              "read by no single knot": true,
+              "knots that can read it": [],
+              "changes that flip it": 10,
+              "example changing support": [
+                10,
+                24,
+                25
+              ]
+            }
+          ],
+          "start UPTO5": [
+            {
+              "class fact": false,
+              "read by no single knot": true,
+              "knots that can read it": [],
+              "changes that flip it": 48,
+              "example changing support": [
+                10,
+                12,
+                13,
+                18,
+                19
+              ]
+            },
+            {
+              "class fact": false,
+              "read by no single knot": true,
+              "knots that can read it": [],
+              "changes that flip it": 136,
+              "example changing support": [
+                10,
+                24,
+                25
+              ]
+            },
+            {
+              "class fact": false,
+              "read by no single knot": true,
+              "knots that can read it": [],
+              "changes that flip it": 136,
+              "example changing support": [
+                10,
+                24,
+                25
+              ]
+            }
+          ],
+          "start least changing support": [
+            [
+              0,
+              2,
+              7,
+              21,
+              23
+            ],
+            [
+              1,
+              21,
+              27
+            ],
+            [
+              1,
+              21,
+              27
+            ]
+          ],
+          "start conditional reads": {
+            "knots with all tuples in every feasible reading": 10,
+            "knots checked": 10,
+            "feasible readings counted over the knots": 352,
+            "tuple counts with each knot fixed to zero": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4
+            ]
+          }
+        }
+      }
+    ],
+    "minimum start representations": [
+      {
+        "number of equivalent supports": 1024,
+        "smallest count": 2,
+        "all smallest supports": [
+          [
+            0,
+            18
+          ]
+        ]
+      },
+      {
+        "number of equivalent supports": 1024,
+        "smallest count": 3,
+        "all smallest supports": [
+          [
+            1,
+            18,
+            24
+          ]
+        ]
+      },
+      {
+        "number of equivalent supports": 1024,
+        "smallest count": 3,
+        "all smallest supports": [
+          [
+            0,
+            1,
+            24
+          ],
+          [
+            21,
+            22,
+            24
+          ]
+        ]
+      }
+    ],
+    "disjoint start supports with fewest total distinctions": {
+      "total distinctions": 9,
+      "triples": [
+        [
+          [
+            0,
+            18
+          ],
+          [
+            10,
+            11,
+            27,
+            28
+          ],
+          [
+            21,
+            22,
+            24
+          ]
+        ]
+      ]
+    }
+  },
+  "static three-ring start and controls": {
+    "base": {
+      "start": [
+        [
+          0,
+          3,
+          8
+        ],
+        [
+          0,
+          1,
+          4,
+          5
+        ],
+        [
+          1,
+          2,
+          9
+        ],
+        [
+          2,
+          3,
+          6,
+          7
+        ],
+        [
+          10,
+          13,
+          18
+        ],
+        [
+          10,
+          11,
+          14,
+          15
+        ],
+        [
+          11,
+          12,
+          19
+        ],
+        [
+          12,
+          13,
+          16,
+          17
+        ],
+        [
+          20,
+          23,
+          28
+        ],
+        [
+          20,
+          21,
+          24,
+          25
+        ],
+        [
+          21,
+          22,
+          29
+        ],
+        [
+          22,
+          23,
+          26,
+          27
+        ],
+        [
+          8,
+          18,
+          28,
+          30
+        ],
+        [
+          9,
+          19,
+          29,
+          30
+        ]
+      ],
+      "rounds": [
+        {
+          "round": 0,
+          "knots": 14,
+          "distinctions": 31,
+          "allowed states": 131072,
+          "moves": {
+            "distinctions by shortest change size": {
+              "2": 12,
+              "4": 12,
+              "5": 7
+            },
+            "shortest changes by size": {
+              "2": 6,
+              "4": 27,
+              "5": 6
+            },
+            "changes of at most five by size": {
+              "2": 6,
+              "4": 42,
+              "5": 6
+            },
+            "elementary changes of at most five": 39,
+            "non-elementary changes of at most five": 15,
+            "literal enumeration matched": true
+          },
+          "class counts": {
+            "SHORT": {
+              "k": 2,
+              "joint rank": 2,
+              "individually unread": 3,
+              "jointly unread": 2,
+              "triples of unread labels": {
+                "three unread labels, the third the sum of two": 1
+              }
+            },
+            "UPTO5": {
+              "k": 2,
+              "joint rank": 2,
+              "individually unread": 3,
+              "jointly unread": 2,
+              "triples of unread labels": {
+                "three unread labels, the third the sum of two": 1
+              }
+            }
+          },
+          "carriers": [
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              10,
+              11,
+              12,
+              13
+            ],
+            [
+              20,
+              21,
+              22,
+              23
+            ]
+          ],
+          "tuples": [
+            "000",
+            "011",
+            "101",
+            "110"
+          ],
+          "assignments for attained tuples": {
+            "000": [],
+            "011": [
+              10,
+              15,
+              16,
+              17,
+              18,
+              23,
+              24,
+              25,
+              26,
+              28
+            ],
+            "101": [
+              3,
+              6,
+              8,
+              23,
+              24,
+              25,
+              26,
+              28
+            ],
+            "110": [
+              3,
+              6,
+              8,
+              10,
+              15,
+              16,
+              17,
+              18
+            ]
+          },
+          "SHORT": [
+            {
+              "class fact": true,
+              "read by no single knot": true,
+              "knots that can read it": [],
+              "changes that flip it": 0,
+              "example changing support": null
+            },
+            {
+              "class fact": true,
+              "read by no single knot": true,
+              "knots that can read it": [],
+              "changes that flip it": 0,
+              "example changing support": null
+            },
+            {
+              "class fact": true,
+              "read by no single knot": true,
+              "knots that can read it": [],
+              "changes that flip it": 0,
+              "example changing support": null
+            }
+          ],
+          "UPTO5": [
+            {
+              "class fact": true,
+              "read by no single knot": true,
+              "knots that can read it": [],
+              "changes that flip it": 0,
+              "example changing support": null
+            },
+            {
+              "class fact": true,
+              "read by no single knot": true,
+              "knots that can read it": [],
+              "changes that flip it": 0,
+              "example changing support": null
+            },
+            {
+              "class fact": true,
+              "read by no single knot": true,
+              "knots that can read it": [],
+              "changes that flip it": 0,
+              "example changing support": null
+            }
+          ],
+          "conditional reads": {
+            "knots with all tuples in every feasible reading": 14,
+            "knots checked": 14,
+            "feasible readings counted over the knots": 88,
+            "tuple counts with each knot fixed to zero": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4
+            ]
+          },
+          "least changing support": [
+            [
+              0,
+              4,
+              8,
+              10,
+              14,
+              18
+            ],
+            [
+              0,
+              4,
+              8,
+              10,
+              14,
+              18
+            ],
+            [
+              0,
+              4,
+              8,
+              20,
+              24,
+              28
+            ]
+          ],
+          "laws giving even parity": [
+            0,
+            2,
+            4,
+            6,
+            8,
+            10,
+            12,
+            13
+          ],
+          "laws whose removal frees every tuple": {
+            "start knots": 8,
+            "born knots": 0,
+            "of start / born": [
+              14,
+              0
+            ],
+            "indices freeing it": [
+              0,
+              2,
+              4,
+              6,
+              8,
+              10,
+              12,
+              13
+            ],
+            "indices leaving it": [
+              1,
+              3,
+              5,
+              7,
+              9,
+              11
+            ]
+          },
+          "equivalent two-distinction supports": [
+            [
+              8,
+              9
+            ],
+            [
+              18,
+              19
+            ],
+            [
+              28,
+              29
+            ]
+          ],
+          "forced cycle sum supports": [
+            [
+              0,
+              1,
+              2,
+              3,
+              10,
+              11,
+              12,
+              13,
+              20,
+              21,
+              22,
+              23
+            ]
+          ],
+          "dimension of law sums that are changes": 6,
+          "conditional read with two joining knots fixed to zero": [
+            "000"
+          ],
+          "canonical checks": [
+            {
+              "contact": "z3",
+              "clauses": "z1 z2 ~z3; z1 ~z2 z3; ~z1 z2 z3; ~z1 ~z2 ~z3",
+              "checker": {
+                "loops": [
+                  "z1",
+                  "z2"
+                ],
+                "contact": "z3",
+                "erasure": "forgetting",
+                "binding": true,
+                "loss_on_erasure": true,
+                "coexistence": true,
+                "invisible_in_parts": true,
+                "pairwise_definable": false,
+                "minimum_width": 3,
+                "notes": [],
+                "is_knot": true,
+                "allowed": [
+                  "000",
+                  "011",
+                  "101",
+                  "110"
+                ],
+                "variables": [
+                  "z1",
+                  "z2",
+                  "z3"
+                ]
+              }
+            },
+            {
+              "contact": "z1",
+              "clauses": "z1 z2 ~z3; z1 ~z2 z3; ~z1 z2 z3; ~z1 ~z2 ~z3",
+              "checker": {
+                "loops": [
+                  "z2",
+                  "z3"
+                ],
+                "contact": "z1",
+                "erasure": "forgetting",
+                "binding": true,
+                "loss_on_erasure": true,
+                "coexistence": true,
+                "invisible_in_parts": true,
+                "pairwise_definable": false,
+                "minimum_width": 3,
+                "notes": [],
+                "is_knot": true,
+                "allowed": [
+                  "000",
+                  "011",
+                  "101",
+                  "110"
+                ],
+                "variables": [
+                  "z2",
+                  "z3",
+                  "z1"
+                ]
+              }
+            },
+            {
+              "contact": "z2",
+              "clauses": "z1 z2 ~z3; z1 ~z2 z3; ~z1 z2 z3; ~z1 ~z2 ~z3",
+              "checker": {
+                "loops": [
+                  "z1",
+                  "z3"
+                ],
+                "contact": "z2",
+                "erasure": "forgetting",
+                "binding": true,
+                "loss_on_erasure": true,
+                "coexistence": true,
+                "invisible_in_parts": true,
+                "pairwise_definable": false,
+                "minimum_width": 3,
+                "notes": [],
+                "is_knot": true,
+                "allowed": [
+                  "000",
+                  "011",
+                  "101",
+                  "110"
+                ],
+                "variables": [
+                  "z1",
+                  "z3",
+                  "z2"
+                ]
+              }
+            }
+          ],
+          "renaming preserved both move sets and the tuples": true
+        },
+        {
+          "round": 1,
+          "knots": 23,
+          "distinctions": 49,
+          "allowed states": 67108864,
+          "moves": {
+            "distinctions by shortest change size": {
+              "2": 18,
+              "4": 24,
+              "5": 7
+            },
+            "shortest changes by size": {
+              "2": 9,
+              "4": 33,
+              "5": 6
+            },
+            "changes of at most five by size": {
+              "2": 9,
+              "4": 69,
+              "5": 6
+            },
+            "elementary changes of at most five": 48,
+            "non-elementary changes of at most five": 36
+          },
+          "class counts": {
+            "SHORT": {
+              "k": 2,
+              "joint rank": 2,
+              "individually unread": 3,
+              "jointly unread": 2,
+              "triples of unread labels": {
+                "three unread labels, the third the sum of two": 1
+              }
+            },
+            "UPTO5": {
+              "k": 2,
+              "joint rank": 2,
+              "individually unread": 3,
+              "jointly unread": 2,
+              "triples of unread labels": {
+                "three unread labels, the third the sum of two": 1
+              }
+            }
+          },
+          "carriers": [
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              10,
+              11,
+              12,
+              13
+            ],
+            [
+              20,
+              21,
+              22,
+              23
+            ]
+          ],
+          "tuples": [
+            "000",
+            "011",
+            "101",
+            "110"
+          ],
+          "assignments for attained tuples": {
+            "000": [],
+            "011": [
+              11,
+              12,
+              13,
+              14,
+              18,
+              22,
+              26,
+              29,
+              30,
+              33,
+              35
+            ],
+            "101": [
+              0,
+              4,
+              8,
+              22,
+              26,
+              29,
+              30,
+              31,
+              35
+            ],
+            "110": [
+              1,
+              4,
+              9,
+              12,
+              16,
+              19,
+              31,
+              33
+            ]
+          },
+          "SHORT": [
+            {
+              "class fact": true,
+              "read by no single knot": true,
+              "knots that can read it": [],
+              "changes that flip it": 0,
+              "example changing support": null
+            },
+            {
+              "class fact": true,
+              "read by no single knot": true,
+              "knots that can read it": [],
+              "changes that flip it": 0,
+              "example changing support": null
+            },
+            {
+              "class fact": true,
+              "read by no single knot": true,
+              "knots that can read it": [],
+              "changes that flip it": 0,
+              "example changing support": null
+            }
+          ],
+          "UPTO5": [
+            {
+              "class fact": true,
+              "read by no single knot": true,
+              "knots that can read it": [],
+              "changes that flip it": 0,
+              "example changing support": null
+            },
+            {
+              "class fact": true,
+              "read by no single knot": true,
+              "knots that can read it": [],
+              "changes that flip it": 0,
+              "example changing support": null
+            },
+            {
+              "class fact": true,
+              "read by no single knot": true,
+              "knots that can read it": [],
+              "changes that flip it": 0,
+              "example changing support": null
+            }
+          ],
+          "conditional reads": {
+            "knots with all tuples in every feasible reading": 23,
+            "knots checked": 23,
+            "feasible readings counted over the knots": 136,
+            "tuple counts with each knot fixed to zero": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4
+            ]
+          },
+          "least changing support": [
+            [
+              0,
+              4,
+              8,
+              10,
+              14,
+              18,
+              31,
+              33
+            ],
+            [
+              0,
+              4,
+              8,
+              10,
+              14,
+              18,
+              31,
+              33
+            ],
+            [
+              0,
+              4,
+              8,
+              20,
+              24,
+              28,
+              31,
+              35
+            ]
+          ],
+          "laws giving even parity": [
+            0,
+            2,
+            4,
+            6,
+            8,
+            10,
+            12,
+            13
+          ],
+          "laws whose removal frees every tuple": {
+            "start knots": 8,
+            "born knots": 0,
+            "of start / born": [
+              14,
+              9
+            ],
+            "indices freeing it": [
+              0,
+              2,
+              4,
+              6,
+              8,
+              10,
+              12,
+              13
+            ],
+            "indices leaving it": [
+              1,
+              3,
+              5,
+              7,
+              9,
+              11,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22
+            ]
+          },
+          "equivalent two-distinction supports": [
+            [
+              8,
+              9
+            ],
+            [
+              18,
+              19
+            ],
+            [
+              28,
+              29
+            ]
+          ],
+          "forced cycle sum supports": [
+            [
+              0,
+              1,
+              2,
+              3,
+              10,
+              11,
+              12,
+              13,
+              20,
+              21,
+              22,
+              23
+            ]
+          ],
+          "dimension of law sums that are changes": 4,
+          "conditional read with two joining knots fixed to zero": [
+            "000"
+          ]
+        },
+        {
+          "round": 2,
+          "knots": 35,
+          "distinctions": 73,
+          "allowed states": 274877906944,
+          "moves": {
+            "distinctions by shortest change size": {
+              "2": 24,
+              "4": 42,
+              "5": 7
+            },
+            "shortest changes by size": {
+              "2": 12,
+              "4": 51,
+              "5": 6
+            },
+            "changes of at most five by size": {
+              "2": 12,
+              "4": 117,
+              "5": 6
+            },
+            "elementary changes of at most five": 69,
+            "non-elementary changes of at most five": 66
+          },
+          "class counts": {
+            "SHORT": {
+              "k": 2,
+              "joint rank": 2,
+              "individually unread": 3,
+              "jointly unread": 2,
+              "triples of unread labels": {
+                "three unread labels, the third the sum of two": 1
+              }
+            },
+            "UPTO5": {
+              "k": 2,
+              "joint rank": 2,
+              "individually unread": 3,
+              "jointly unread": 2,
+              "triples of unread labels": {
+                "three unread labels, the third the sum of two": 1
+              }
+            }
+          },
+          "carriers": [
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              10,
+              11,
+              12,
+              13
+            ],
+            [
+              20,
+              21,
+              22,
+              23
+            ]
+          ],
+          "tuples": [
+            "000",
+            "011",
+            "101",
+            "110"
+          ],
+          "assignments for attained tuples": {
+            "000": [],
+            "011": [
+              11,
+              14,
+              19,
+              22,
+              24,
+              25,
+              27,
+              29,
+              34,
+              36,
+              45,
+              47,
+              56,
+              57
+            ],
+            "101": [
+              3,
+              6,
+              8,
+              10,
+              11,
+              12,
+              13,
+              22,
+              24,
+              25,
+              27,
+              29,
+              30,
+              31,
+              36,
+              45,
+              47,
+              49,
+              57
+            ],
+            "110": [
+              3,
+              7,
+              8,
+              12,
+              14,
+              15,
+              16,
+              19,
+              22,
+              23,
+              28,
+              29,
+              39,
+              41,
+              52,
+              53
+            ]
+          },
+          "SHORT": [
+            {
+              "class fact": true,
+              "read by no single knot": true,
+              "knots that can read it": [],
+              "changes that flip it": 0,
+              "example changing support": null
+            },
+            {
+              "class fact": true,
+              "read by no single knot": true,
+              "knots that can read it": [],
+              "changes that flip it": 0,
+              "example changing support": null
+            },
+            {
+              "class fact": true,
+              "read by no single knot": true,
+              "knots that can read it": [],
+              "changes that flip it": 0,
+              "example changing support": null
+            }
+          ],
+          "UPTO5": [
+            {
+              "class fact": true,
+              "read by no single knot": true,
+              "knots that can read it": [],
+              "changes that flip it": 0,
+              "example changing support": null
+            },
+            {
+              "class fact": true,
+              "read by no single knot": true,
+              "knots that can read it": [],
+              "changes that flip it": 0,
+              "example changing support": null
+            },
+            {
+              "class fact": true,
+              "read by no single knot": true,
+              "knots that can read it": [],
+              "changes that flip it": 0,
+              "example changing support": null
+            }
+          ],
+          "conditional reads": {
+            "knots with all tuples in every feasible reading": 35,
+            "knots checked": 35,
+            "feasible readings counted over the knots": 208,
+            "tuple counts with each knot fixed to zero": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4
+            ]
+          },
+          "least changing support": [
+            [
+              0,
+              4,
+              8,
+              10,
+              14,
+              18,
+              31,
+              33,
+              49,
+              53
+            ],
+            [
+              0,
+              4,
+              8,
+              10,
+              14,
+              18,
+              31,
+              33,
+              49,
+              53
+            ],
+            [
+              0,
+              4,
+              8,
+              20,
+              24,
+              28,
+              31,
+              35,
+              49,
+              57
+            ]
+          ],
+          "laws giving even parity": [
+            0,
+            2,
+            4,
+            6,
+            8,
+            10,
+            12,
+            13
+          ],
+          "laws whose removal frees every tuple": {
+            "start knots": 8,
+            "born knots": 0,
+            "of start / born": [
+              14,
+              21
+            ],
+            "indices freeing it": [
+              0,
+              2,
+              4,
+              6,
+              8,
+              10,
+              12,
+              13
+            ],
+            "indices leaving it": [
+              1,
+              3,
+              5,
+              7,
+              9,
+              11,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34
+            ]
+          },
+          "equivalent two-distinction supports": [
+            [
+              8,
+              9
+            ],
+            [
+              18,
+              19
+            ],
+            [
+              28,
+              29
+            ]
+          ],
+          "forced cycle sum supports": [
+            [
+              0,
+              1,
+              2,
+              3,
+              10,
+              11,
+              12,
+              13,
+              20,
+              21,
+              22,
+              23
+            ]
+          ],
+          "dimension of law sums that are changes": 9,
+          "conditional read with two joining knots fixed to zero": [
+            "000"
+          ]
+        },
+        {
+          "round": 3,
+          "knots": 50,
+          "distinctions": 103,
+          "allowed states": 9007199254740992,
+          "moves": {
+            "distinctions by shortest change size": {
+              "2": 30,
+              "4": 66,
+              "5": 7
+            },
+            "shortest changes by size": {
+              "2": 15,
+              "4": 72,
+              "5": 6
+            },
+            "changes of at most five by size": {
+              "2": 15,
+              "4": 177,
+              "5": 6
+            },
+            "elementary changes of at most five": 93,
+            "non-elementary changes of at most five": 105
+          },
+          "class counts": {
+            "SHORT": {
+              "k": 2,
+              "joint rank": 2,
+              "individually unread": 3,
+              "jointly unread": 2,
+              "triples of unread labels": {
+                "three unread labels, the third the sum of two": 1
+              }
+            },
+            "UPTO5": {
+              "k": 2,
+              "joint rank": 2,
+              "individually unread": 3,
+              "jointly unread": 2,
+              "triples of unread labels": {
+                "three unread labels, the third the sum of two": 1
+              }
+            }
+          },
+          "carriers": [
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              10,
+              11,
+              12,
+              13
+            ],
+            [
+              20,
+              21,
+              22,
+              23
+            ]
+          ],
+          "tuples": [
+            "000",
+            "011",
+            "101",
+            "110"
+          ],
+          "assignments for attained tuples": {
+            "000": [],
+            "011": [
+              1,
+              3,
+              5,
+              7,
+              8,
+              9,
+              12,
+              17,
+              19,
+              23,
+              26,
+              28,
+              36,
+              37,
+              40,
+              44,
+              47,
+              48,
+              50,
+              57,
+              58,
+              59,
+              60,
+              64,
+              68,
+              69,
+              70,
+              71,
+              76,
+              94,
+              97,
+              99
+            ],
+            "101": [
+              3,
+              7,
+              8,
+              23,
+              26,
+              28,
+              36,
+              40,
+              47,
+              48,
+              57,
+              58,
+              59,
+              60,
+              64,
+              69,
+              70,
+              71,
+              94,
+              99
+            ],
+            "110": [
+              2,
+              6,
+              9,
+              10,
+              11,
+              13,
+              16,
+              19,
+              32,
+              34,
+              52,
+              53,
+              54,
+              55,
+              63,
+              64,
+              65,
+              66,
+              94,
+              96
+            ]
+          },
+          "SHORT": [
+            {
+              "class fact": true,
+              "read by no single knot": true,
+              "knots that can read it": [],
+              "changes that flip it": 0,
+              "example changing support": null
+            },
+            {
+              "class fact": true,
+              "read by no single knot": true,
+              "knots that can read it": [],
+              "changes that flip it": 0,
+              "example changing support": null
+            },
+            {
+              "class fact": true,
+              "read by no single knot": true,
+              "knots that can read it": [],
+              "changes that flip it": 0,
+              "example changing support": null
+            }
+          ],
+          "UPTO5": [
+            {
+              "class fact": true,
+              "read by no single knot": true,
+              "knots that can read it": [],
+              "changes that flip it": 0,
+              "example changing support": null
+            },
+            {
+              "class fact": true,
+              "read by no single knot": true,
+              "knots that can read it": [],
+              "changes that flip it": 0,
+              "example changing support": null
+            },
+            {
+              "class fact": true,
+              "read by no single knot": true,
+              "knots that can read it": [],
+              "changes that flip it": 0,
+              "example changing support": null
+            }
+          ],
+          "conditional reads": {
+            "knots with all tuples in every feasible reading": 50,
+            "knots checked": 50,
+            "feasible readings counted over the knots": 304,
+            "tuple counts with each knot fixed to zero": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4
+            ]
+          },
+          "least changing support": [
+            [
+              0,
+              4,
+              8,
+              10,
+              14,
+              18,
+              31,
+              33,
+              49,
+              53,
+              73,
+              79
+            ],
+            [
+              0,
+              4,
+              8,
+              10,
+              14,
+              18,
+              31,
+              33,
+              49,
+              53,
+              73,
+              79
+            ],
+            [
+              0,
+              4,
+              8,
+              20,
+              24,
+              28,
+              31,
+              35,
+              49,
+              57,
+              73,
+              85
+            ]
+          ],
+          "laws giving even parity": [
+            0,
+            2,
+            4,
+            6,
+            8,
+            10,
+            12,
+            13
+          ],
+          "laws whose removal frees every tuple": {
+            "start knots": 8,
+            "born knots": 0,
+            "of start / born": [
+              14,
+              36
+            ],
+            "indices freeing it": [
+              0,
+              2,
+              4,
+              6,
+              8,
+              10,
+              12,
+              13
+            ],
+            "indices leaving it": [
+              1,
+              3,
+              5,
+              7,
+              9,
+              11,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              41,
+              42,
+              43,
+              44,
+              45,
+              46,
+              47,
+              48,
+              49
+            ]
+          },
+          "equivalent two-distinction supports": [
+            [
+              8,
+              9
+            ],
+            [
+              18,
+              19
+            ],
+            [
+              28,
+              29
+            ]
+          ],
+          "forced cycle sum supports": [
+            [
+              0,
+              1,
+              2,
+              3,
+              10,
+              11,
+              12,
+              13,
+              20,
+              21,
+              22,
+              23
+            ]
+          ],
+          "dimension of law sums that are changes": 7,
+          "conditional read with two joining knots fixed to zero": [
+            "000"
+          ]
+        }
+      ],
+      "minimum start representations": [
+        {
+          "number of equivalent supports": 16384,
+          "smallest count": 2,
+          "all smallest supports": [
+            [
+              8,
+              9
+            ]
+          ]
+        },
+        {
+          "number of equivalent supports": 16384,
+          "smallest count": 2,
+          "all smallest supports": [
+            [
+              18,
+              19
+            ]
+          ]
+        },
+        {
+          "number of equivalent supports": 16384,
+          "smallest count": 2,
+          "all smallest supports": [
+            [
+              28,
+              29
+            ]
+          ]
+        }
+      ]
+    },
+    "no v": {
+      "start": [
+        [
+          0,
+          3,
+          8
+        ],
+        [
+          0,
+          1,
+          4,
+          5
+        ],
+        [
+          1,
+          2,
+          9
+        ],
+        [
+          2,
+          3,
+          6,
+          7
+        ],
+        [
+          10,
+          13,
+          18
+        ],
+        [
+          10,
+          11,
+          14,
+          15
+        ],
+        [
+          11,
+          12,
+          19
+        ],
+        [
+          12,
+          13,
+          16,
+          17
+        ],
+        [
+          20,
+          23,
+          28
+        ],
+        [
+          20,
+          21,
+          24,
+          25
+        ],
+        [
+          21,
+          22,
+          29
+        ],
+        [
+          22,
+          23,
+          26,
+          27
+        ],
+        [
+          8,
+          18,
+          28
+        ],
+        [
+          9,
+          19,
+          29
+        ]
+      ],
+      "rounds": [
+        {
+          "round": 0,
+          "knots": 14,
+          "distinctions": 30,
+          "allowed states": 65536,
+          "moves": {
+            "distinctions by shortest change size": {
+              "2": 12,
+              "4": 12,
+              "6": 6
+            },
+            "shortest changes by size": {
+              "2": 6,
+              "4": 27,
+              "6": 96
+            },
+            "changes of at most five by size": {
+              "2": 6,
+              "4": 42
+            },
+            "elementary changes of at most five": 33,
+            "non-elementary changes of at most five": 15,
+            "literal enumeration matched": true
+          },
+          "class counts": {
+            "SHORT": {
+              "k": 0,
+              "joint rank": 0,
+              "individually unread": 0,
+              "jointly unread": 0,
+              "triples of unread labels": {}
+            },
+            "UPTO5": {
+              "k": 4,
+              "joint rank": 4,
+              "individually unread": 9,
+              "jointly unread": 0,
+              "triples of unread labels": {
+                "three unread labels, independent": 78,
+                "three unread labels, the third the sum of two": 6
+              }
+            }
+          },
+          "carriers": [
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              10,
+              11,
+              12,
+              13
+            ],
+            [
+              20,
+              21,
+              22,
+              23
+            ]
+          ],
+          "tuples": [
+            "000",
+            "011",
+            "101",
+            "110"
+          ],
+          "assignments for attained tuples": {
+            "000": [],
+            "011": [
+              10,
+              15,
+              16,
+              17,
+              18,
+              23,
+              24,
+              25,
+              26,
+              28
+            ],
+            "101": [
+              3,
+              6,
+              8,
+              23,
+              24,
+              25,
+              26,
+              28
+            ],
+            "110": [
+              3,
+              6,
+              8,
+              10,
+              15,
+              16,
+              17,
+              18
+            ]
+          },
+          "SHORT": [
+            {
+              "class fact": false,
+              "read by no single knot": true,
+              "knots that can read it": [],
+              "changes that flip it": 64,
+              "example changing support": [
+                0,
+                4,
+                8,
+                10,
+                14,
+                18
+              ]
+            },
+            {
+              "class fact": false,
+              "read by no single knot": true,
+              "knots that can read it": [],
+              "changes that flip it": 64,
+              "example changing support": [
+                0,
+                4,
+                8,
+                10,
+                14,
+                18
+              ]
+            },
+            {
+              "class fact": false,
+              "read by no single knot": true,
+              "knots that can read it": [],
+              "changes that flip it": 64,
+              "example changing support": [
+                0,
+                4,
+                8,
+                20,
+                24,
+                28
+              ]
+            }
+          ],
+          "UPTO5": [
+            {
+              "class fact": true,
+              "read by no single knot": true,
+              "knots that can read it": [],
+              "changes that flip it": 0,
+              "example changing support": null
+            },
+            {
+              "class fact": true,
+              "read by no single knot": true,
+              "knots that can read it": [],
+              "changes that flip it": 0,
+              "example changing support": null
+            },
+            {
+              "class fact": true,
+              "read by no single knot": true,
+              "knots that can read it": [],
+              "changes that flip it": 0,
+              "example changing support": null
+            }
+          ],
+          "conditional reads": {
+            "knots with all tuples in every feasible reading": 14,
+            "knots checked": 14,
+            "feasible readings counted over the knots": 80,
+            "tuple counts with each knot fixed to zero": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4
+            ]
+          },
+          "least changing support": [
+            [
+              0,
+              4,
+              8,
+              10,
+              14,
+              18
+            ],
+            [
+              0,
+              4,
+              8,
+              10,
+              14,
+              18
+            ],
+            [
+              0,
+              4,
+              8,
+              20,
+              24,
+              28
+            ]
+          ],
+          "laws giving even parity": [
+            0,
+            2,
+            4,
+            6,
+            8,
+            10,
+            12,
+            13
+          ],
+          "laws whose removal frees every tuple": {
+            "start knots": 8,
+            "born knots": 0,
+            "of start / born": [
+              14,
+              0
+            ],
+            "indices freeing it": [
+              0,
+              2,
+              4,
+              6,
+              8,
+              10,
+              12,
+              13
+            ],
+            "indices leaving it": [
+              1,
+              3,
+              5,
+              7,
+              9,
+              11
+            ]
+          },
+          "equivalent two-distinction supports": [
+            [
+              8,
+              9
+            ],
+            [
+              18,
+              19
+            ],
+            [
+              28,
+              29
+            ]
+          ],
+          "forced cycle sum supports": [
+            [
+              0,
+              1,
+              2,
+              3,
+              10,
+              11,
+              12,
+              13,
+              20,
+              21,
+              22,
+              23
+            ]
+          ],
+          "dimension of law sums that are changes": 6,
+          "conditional read with two joining knots fixed to zero": [
+            "000"
+          ]
+        },
+        {
+          "round": 1,
+          "knots": 23,
+          "distinctions": 48,
+          "allowed states": 33554432,
+          "moves": {
+            "distinctions by shortest change size": {
+              "2": 18,
+              "4": 24,
+              "8": 6
+            },
+            "shortest changes by size": {
+              "2": 9,
+              "4": 33,
+              "8": 396
+            },
+            "changes of at most five by size": {
+              "2": 9,
+              "4": 69
+            },
+            "elementary changes of at most five": 42,
+            "non-elementary changes of at most five": 36
+          },
+          "class counts": {
+            "SHORT": {
+              "k": 0,
+              "joint rank": 0,
+              "individually unread": 0,
+              "jointly unread": 0,
+              "triples of unread labels": {}
+            },
+            "UPTO5": {
+              "k": 4,
+              "joint rank": 4,
+              "individually unread": 9,
+              "jointly unread": 0,
+              "triples of unread labels": {
+                "three unread labels, independent": 78,
+                "three unread labels, the third the sum of two": 6
+              }
+            }
+          },
+          "carriers": [
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              10,
+              11,
+              12,
+              13
+            ],
+            [
+              20,
+              21,
+              22,
+              23
+            ]
+          ],
+          "tuples": [
+            "000",
+            "011",
+            "101",
+            "110"
+          ],
+          "assignments for attained tuples": {
+            "000": [],
+            "011": [
+              11,
+              14,
+              19,
+              22,
+              26,
+              29,
+              33,
+              34
+            ],
+            "101": [
+              0,
+              4,
+              8,
+              12,
+              13,
+              18,
+              19,
+              22,
+              26,
+              29,
+              30,
+              34
+            ],
+            "110": [
+              1,
+              4,
+              9,
+              12,
+              16,
+              19,
+              30,
+              32
+            ]
+          },
+          "SHORT": [
+            {
+              "class fact": false,
+              "read by no single knot": true,
+              "knots that can read it": [],
+              "changes that flip it": 256,
+              "example changing support": [
+                0,
+                4,
+                8,
+                10,
+                14,
+                18,
+                30,
+                32
+              ]
+            },
+            {
+              "class fact": false,
+              "read by no single knot": true,
+              "knots that can read it": [],
+              "changes that flip it": 256,
+              "example changing support": [
+                0,
+                4,
+                8,
+                10,
+                14,
+                18,
+                30,
+                32
+              ]
+            },
+            {
+              "class fact": false,
+              "read by no single knot": true,
+              "knots that can read it": [],
+              "changes that flip it": 256,
+              "example changing support": [
+                0,
+                4,
+                8,
+                20,
+                24,
+                28,
+                30,
+                34
+              ]
+            }
+          ],
+          "UPTO5": [
+            {
+              "class fact": true,
+              "read by no single knot": true,
+              "knots that can read it": [],
+              "changes that flip it": 0,
+              "example changing support": null
+            },
+            {
+              "class fact": true,
+              "read by no single knot": true,
+              "knots that can read it": [],
+              "changes that flip it": 0,
+              "example changing support": null
+            },
+            {
+              "class fact": true,
+              "read by no single knot": true,
+              "knots that can read it": [],
+              "changes that flip it": 0,
+              "example changing support": null
+            }
+          ],
+          "conditional reads": {
+            "knots with all tuples in every feasible reading": 23,
+            "knots checked": 23,
+            "feasible readings counted over the knots": 128,
+            "tuple counts with each knot fixed to zero": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4
+            ]
+          },
+          "least changing support": [
+            [
+              0,
+              4,
+              8,
+              10,
+              14,
+              18,
+              30,
+              32
+            ],
+            [
+              0,
+              4,
+              8,
+              10,
+              14,
+              18,
+              30,
+              32
+            ],
+            [
+              0,
+              4,
+              8,
+              20,
+              24,
+              28,
+              30,
+              34
+            ]
+          ],
+          "laws giving even parity": [
+            0,
+            2,
+            4,
+            6,
+            8,
+            10,
+            12,
+            13
+          ],
+          "laws whose removal frees every tuple": {
+            "start knots": 8,
+            "born knots": 0,
+            "of start / born": [
+              14,
+              9
+            ],
+            "indices freeing it": [
+              0,
+              2,
+              4,
+              6,
+              8,
+              10,
+              12,
+              13
+            ],
+            "indices leaving it": [
+              1,
+              3,
+              5,
+              7,
+              9,
+              11,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22
+            ]
+          },
+          "equivalent two-distinction supports": [
+            [
+              8,
+              9
+            ],
+            [
+              18,
+              19
+            ],
+            [
+              28,
+              29
+            ]
+          ],
+          "forced cycle sum supports": [
+            [
+              0,
+              1,
+              2,
+              3,
+              10,
+              11,
+              12,
+              13,
+              20,
+              21,
+              22,
+              23
+            ]
+          ],
+          "dimension of law sums that are changes": 5,
+          "conditional read with two joining knots fixed to zero": [
+            "000"
+          ]
+        },
+        {
+          "round": 2,
+          "knots": 35,
+          "distinctions": 72,
+          "allowed states": 137438953472,
+          "moves": {
+            "distinctions by shortest change size": {
+              "2": 24,
+              "4": 42,
+              "8": 6
+            },
+            "shortest changes by size": {
+              "2": 12,
+              "4": 51,
+              "8": 12
+            },
+            "changes of at most five by size": {
+              "2": 12,
+              "4": 117
+            },
+            "elementary changes of at most five": 63,
+            "non-elementary changes of at most five": 66
+          },
+          "class counts": {
+            "SHORT": {
+              "k": 2,
+              "joint rank": 2,
+              "individually unread": 3,
+              "jointly unread": 2,
+              "triples of unread labels": {
+                "three unread labels, the third the sum of two": 1
+              }
+            },
+            "UPTO5": {
+              "k": 4,
+              "joint rank": 4,
+              "individually unread": 9,
+              "jointly unread": 0,
+              "triples of unread labels": {
+                "three unread labels, independent": 78,
+                "three unread labels, the third the sum of two": 6
+              }
+            }
+          },
+          "carriers": [
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              10,
+              11,
+              12,
+              13
+            ],
+            [
+              20,
+              21,
+              22,
+              23
+            ]
+          ],
+          "tuples": [
+            "000",
+            "011",
+            "101",
+            "110"
+          ],
+          "assignments for attained tuples": {
+            "000": [],
+            "011": [
+              10,
+              11,
+              13,
+              17,
+              19,
+              22,
+              24,
+              25,
+              27,
+              29,
+              35,
+              42,
+              44,
+              46,
+              55,
+              56
+            ],
+            "101": [
+              0,
+              4,
+              8,
+              12,
+              13,
+              18,
+              19,
+              22,
+              24,
+              25,
+              27,
+              29,
+              30,
+              35,
+              44,
+              46,
+              48,
+              56
+            ],
+            "110": [
+              1,
+              2,
+              3,
+              4,
+              6,
+              7,
+              8,
+              10,
+              15,
+              18,
+              38,
+              40,
+              51,
+              52
+            ]
+          },
+          "SHORT": [
+            {
+              "class fact": true,
+              "read by no single knot": true,
+              "knots that can read it": [],
+              "changes that flip it": 0,
+              "example changing support": null
+            },
+            {
+              "class fact": true,
+              "read by no single knot": true,
+              "knots that can read it": [],
+              "changes that flip it": 0,
+              "example changing support": null
+            },
+            {
+              "class fact": true,
+              "read by no single knot": true,
+              "knots that can read it": [],
+              "changes that flip it": 0,
+              "example changing support": null
+            }
+          ],
+          "UPTO5": [
+            {
+              "class fact": true,
+              "read by no single knot": true,
+              "knots that can read it": [],
+              "changes that flip it": 0,
+              "example changing support": null
+            },
+            {
+              "class fact": true,
+              "read by no single knot": true,
+              "knots that can read it": [],
+              "changes that flip it": 0,
+              "example changing support": null
+            },
+            {
+              "class fact": true,
+              "read by no single knot": true,
+              "knots that can read it": [],
+              "changes that flip it": 0,
+              "example changing support": null
+            }
+          ],
+          "conditional reads": {
+            "knots with all tuples in every feasible reading": 35,
+            "knots checked": 35,
+            "feasible readings counted over the knots": 200,
+            "tuple counts with each knot fixed to zero": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4
+            ]
+          },
+          "least changing support": [
+            [
+              0,
+              4,
+              8,
+              10,
+              14,
+              18,
+              30,
+              32,
+              48,
+              52
+            ],
+            [
+              0,
+              4,
+              8,
+              10,
+              14,
+              18,
+              30,
+              32,
+              48,
+              52
+            ],
+            [
+              0,
+              4,
+              8,
+              20,
+              24,
+              28,
+              30,
+              34,
+              48,
+              56
+            ]
+          ],
+          "laws giving even parity": [
+            0,
+            2,
+            4,
+            6,
+            8,
+            10,
+            12,
+            13
+          ],
+          "laws whose removal frees every tuple": {
+            "start knots": 8,
+            "born knots": 0,
+            "of start / born": [
+              14,
+              21
+            ],
+            "indices freeing it": [
+              0,
+              2,
+              4,
+              6,
+              8,
+              10,
+              12,
+              13
+            ],
+            "indices leaving it": [
+              1,
+              3,
+              5,
+              7,
+              9,
+              11,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34
+            ]
+          },
+          "equivalent two-distinction supports": [
+            [
+              8,
+              9
+            ],
+            [
+              18,
+              19
+            ],
+            [
+              28,
+              29
+            ]
+          ],
+          "forced cycle sum supports": [
+            [
+              0,
+              1,
+              2,
+              3,
+              10,
+              11,
+              12,
+              13,
+              20,
+              21,
+              22,
+              23
+            ]
+          ],
+          "dimension of law sums that are changes": 9,
+          "conditional read with two joining knots fixed to zero": [
+            "000"
+          ]
+        },
+        {
+          "round": 3,
+          "knots": 50,
+          "distinctions": 102,
+          "allowed states": 4503599627370496,
+          "moves": {
+            "distinctions by shortest change size": {
+              "2": 30,
+              "4": 66,
+              "8": 6
+            },
+            "shortest changes by size": {
+              "2": 15,
+              "4": 72,
+              "8": 12
+            },
+            "changes of at most five by size": {
+              "2": 15,
+              "4": 177
+            },
+            "elementary changes of at most five": 87,
+            "non-elementary changes of at most five": 105
+          },
+          "class counts": {
+            "SHORT": {
+              "k": 2,
+              "joint rank": 2,
+              "individually unread": 3,
+              "jointly unread": 2,
+              "triples of unread labels": {
+                "three unread labels, the third the sum of two": 1
+              }
+            },
+            "UPTO5": {
+              "k": 4,
+              "joint rank": 4,
+              "individually unread": 9,
+              "jointly unread": 0,
+              "triples of unread labels": {
+                "three unread labels, independent": 78,
+                "three unread labels, the third the sum of two": 6
+              }
+            }
+          },
+          "carriers": [
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              10,
+              11,
+              12,
+              13
+            ],
+            [
+              20,
+              21,
+              22,
+              23
+            ]
+          ],
+          "tuples": [
+            "000",
+            "011",
+            "101",
+            "110"
+          ],
+          "assignments for attained tuples": {
+            "000": [],
+            "011": [
+              12,
+              17,
+              19,
+              22,
+              27,
+              29,
+              34,
+              35,
+              43,
+              47,
+              57,
+              59,
+              67,
+              68,
+              69,
+              70,
+              97,
+              98
+            ],
+            "101": [
+              3,
+              4,
+              5,
+              6,
+              8,
+              10,
+              11,
+              18,
+              19,
+              22,
+              27,
+              29,
+              34,
+              35,
+              37,
+              47,
+              57,
+              59,
+              61,
+              68,
+              69,
+              70,
+              90,
+              98
+            ],
+            "110": [
+              0,
+              2,
+              3,
+              4,
+              9,
+              11,
+              14,
+              19,
+              31,
+              33,
+              48,
+              49,
+              50,
+              52,
+              53,
+              54,
+              60,
+              61,
+              64,
+              65,
+              91,
+              94
+            ]
+          },
+          "SHORT": [
+            {
+              "class fact": true,
+              "read by no single knot": true,
+              "knots that can read it": [],
+              "changes that flip it": 0,
+              "example changing support": null
+            },
+            {
+              "class fact": true,
+              "read by no single knot": true,
+              "knots that can read it": [],
+              "changes that flip it": 0,
+              "example changing support": null
+            },
+            {
+              "class fact": true,
+              "read by no single knot": true,
+              "knots that can read it": [],
+              "changes that flip it": 0,
+              "example changing support": null
+            }
+          ],
+          "UPTO5": [
+            {
+              "class fact": true,
+              "read by no single knot": true,
+              "knots that can read it": [],
+              "changes that flip it": 0,
+              "example changing support": null
+            },
+            {
+              "class fact": true,
+              "read by no single knot": true,
+              "knots that can read it": [],
+              "changes that flip it": 0,
+              "example changing support": null
+            },
+            {
+              "class fact": true,
+              "read by no single knot": true,
+              "knots that can read it": [],
+              "changes that flip it": 0,
+              "example changing support": null
+            }
+          ],
+          "conditional reads": {
+            "knots with all tuples in every feasible reading": 50,
+            "knots checked": 50,
+            "feasible readings counted over the knots": 296,
+            "tuple counts with each knot fixed to zero": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4
+            ]
+          },
+          "least changing support": [
+            [
+              0,
+              4,
+              8,
+              10,
+              14,
+              18,
+              30,
+              32,
+              48,
+              52,
+              72,
+              78
+            ],
+            [
+              0,
+              4,
+              8,
+              10,
+              14,
+              18,
+              30,
+              32,
+              48,
+              52,
+              72,
+              78
+            ],
+            [
+              0,
+              4,
+              8,
+              20,
+              24,
+              28,
+              30,
+              34,
+              48,
+              56,
+              72,
+              84
+            ]
+          ],
+          "laws giving even parity": [
+            0,
+            2,
+            4,
+            6,
+            8,
+            10,
+            12,
+            13
+          ],
+          "laws whose removal frees every tuple": {
+            "start knots": 8,
+            "born knots": 0,
+            "of start / born": [
+              14,
+              36
+            ],
+            "indices freeing it": [
+              0,
+              2,
+              4,
+              6,
+              8,
+              10,
+              12,
+              13
+            ],
+            "indices leaving it": [
+              1,
+              3,
+              5,
+              7,
+              9,
+              11,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              41,
+              42,
+              43,
+              44,
+              45,
+              46,
+              47,
+              48,
+              49
+            ]
+          },
+          "equivalent two-distinction supports": [
+            [
+              8,
+              9
+            ],
+            [
+              18,
+              19
+            ],
+            [
+              28,
+              29
+            ]
+          ],
+          "forced cycle sum supports": [
+            [
+              0,
+              1,
+              2,
+              3,
+              10,
+              11,
+              12,
+              13,
+              20,
+              21,
+              22,
+              23
+            ]
+          ],
+          "dimension of law sums that are changes": 8,
+          "conditional read with two joining knots fixed to zero": [
+            "000"
+          ]
+        }
+      ],
+      "minimum start representations": [
+        {
+          "number of equivalent supports": 16384,
+          "smallest count": 2,
+          "all smallest supports": [
+            [
+              8,
+              9
+            ]
+          ]
+        },
+        {
+          "number of equivalent supports": 16384,
+          "smallest count": 2,
+          "all smallest supports": [
+            [
+              18,
+              19
+            ]
+          ]
+        },
+        {
+          "number of equivalent supports": 16384,
+          "smallest count": 2,
+          "all smallest supports": [
+            [
+              28,
+              29
+            ]
+          ]
+        }
+      ]
+    },
+    "J loose": {
+      "start": [
+        [
+          0,
+          3,
+          8
+        ],
+        [
+          0,
+          1,
+          4,
+          5
+        ],
+        [
+          1,
+          2,
+          9
+        ],
+        [
+          2,
+          3,
+          6,
+          7
+        ],
+        [
+          10,
+          13,
+          18
+        ],
+        [
+          10,
+          11,
+          14,
+          15
+        ],
+        [
+          11,
+          12,
+          19
+        ],
+        [
+          12,
+          13,
+          16,
+          17
+        ],
+        [
+          20,
+          23,
+          28
+        ],
+        [
+          20,
+          21,
+          24,
+          25
+        ],
+        [
+          21,
+          22,
+          29
+        ],
+        [
+          22,
+          23,
+          26,
+          27
+        ],
+        [
+          8,
+          18,
+          28,
+          30,
+          31
+        ],
+        [
+          9,
+          19,
+          29,
+          30
+        ]
+      ],
+      "rounds": [
+        {
+          "round": 0,
+          "knots": 14,
+          "distinctions": 32,
+          "allowed states": 262144,
+          "moves": {
+            "distinctions by shortest change size": {
+              "2": 12,
+              "4": 16,
+              "5": 4
+            },
+            "shortest changes by size": {
+              "2": 6,
+              "4": 39,
+              "5": 18
+            },
+            "changes of at most five by size": {
+              "2": 6,
+              "4": 54,
+              "5": 18
+            },
+            "elementary changes of at most five": 63,
+            "non-elementary changes of at most five": 15,
+            "literal enumeration matched": true
+          },
+          "class counts": {
+            "SHORT": {
+              "k": 0,
+              "joint rank": 0,
+              "individually unread": 0,
+              "jointly unread": 0,
+              "triples of unread labels": {}
+            },
+            "UPTO5": {
+              "k": 0,
+              "joint rank": 0,
+              "individually unread": 0,
+              "jointly unread": 0,
+              "triples of unread labels": {}
+            }
+          },
+          "carriers": [
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              10,
+              11,
+              12,
+              13
+            ],
+            [
+              20,
+              21,
+              22,
+              23
+            ]
+          ],
+          "tuples": [
+            "000",
+            "001",
+            "010",
+            "011",
+            "100",
+            "101",
+            "110",
+            "111"
+          ],
+          "assignments for attained tuples": {
+            "000": [],
+            "001": [
+              1,
+              2,
+              5,
+              6,
+              11,
+              13,
+              15,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              24,
+              25,
+              26,
+              28,
+              30,
+              31
+            ],
+            "010": [
+              1,
+              2,
+              5,
+              7,
+              10,
+              15,
+              16,
+              17,
+              18,
+              21,
+              22,
+              25,
+              26,
+              31
+            ],
+            "011": [
+              10,
+              15,
+              16,
+              17,
+              18,
+              23,
+              24,
+              25,
+              26,
+              28
+            ],
+            "100": [
+              0,
+              1,
+              2,
+              4,
+              5,
+              7,
+              8,
+              12,
+              13,
+              16,
+              17,
+              18,
+              19,
+              22,
+              23,
+              28,
+              29,
+              31
+            ],
+            "101": [
+              3,
+              6,
+              8,
+              23,
+              24,
+              25,
+              26,
+              28
+            ],
+            "110": [
+              3,
+              6,
+              8,
+              10,
+              15,
+              16,
+              17,
+              18
+            ],
+            "111": [
+              0,
+              2,
+              3,
+              4,
+              9,
+              12,
+              17,
+              19,
+              20,
+              22,
+              23,
+              25,
+              26,
+              27,
+              29,
+              30,
+              31
+            ]
+          },
+          "SHORT": [
+            {
+              "class fact": false,
+              "read by no single knot": true,
+              "knots that can read it": [],
+              "changes that flip it": 8,
+              "example changing support": [
+                0,
+                4,
+                8,
+                31
+              ]
+            },
+            {
+              "class fact": false,
+              "read by no single knot": true,
+              "knots that can read it": [],
+              "changes that flip it": 8,
+              "example changing support": [
+                10,
+                14,
+                18,
+                31
+              ]
+            },
+            {
+              "class fact": false,
+              "read by no single knot": true,
+              "knots that can read it": [],
+              "changes that flip it": 8,
+              "example changing support": [
+                20,
+                24,
+                28,
+                31
+              ]
+            }
+          ],
+          "UPTO5": [
+            {
+              "class fact": false,
+              "read by no single knot": true,
+              "knots that can read it": [],
+              "changes that flip it": 8,
+              "example changing support": [
+                0,
+                4,
+                8,
+                31
+              ]
+            },
+            {
+              "class fact": false,
+              "read by no single knot": true,
+              "knots that can read it": [],
+              "changes that flip it": 8,
+              "example changing support": [
+                10,
+                14,
+                18,
+                31
+              ]
+            },
+            {
+              "class fact": false,
+              "read by no single knot": true,
+              "knots that can read it": [],
+              "changes that flip it": 8,
+              "example changing support": [
+                20,
+                24,
+                28,
+                31
+              ]
+            }
+          ],
+          "conditional reads": {
+            "knots with all tuples in every feasible reading": 13,
+            "knots checked": 14,
+            "feasible readings counted over the knots": 96,
+            "tuple counts with each knot fixed to zero": [
+              8,
+              8,
+              8,
+              8,
+              8,
+              8,
+              8,
+              8,
+              8,
+              8,
+              8,
+              8,
+              4,
+              8
+            ]
+          },
+          "least changing support": [
+            [
+              0,
+              4,
+              8,
+              31
+            ],
+            [
+              10,
+              14,
+              18,
+              31
+            ],
+            [
+              20,
+              24,
+              28,
+              31
+            ]
+          ],
+          "equivalent two-distinction supports": [
+            [
+              8,
+              9
+            ],
+            [
+              18,
+              19
+            ],
+            [
+              28,
+              29
+            ]
+          ],
+          "sum of the ring parities is the parity of these loose distinctions": [
+            31
+          ],
+          "forced cycle sum supports": [],
+          "dimension of law sums that are changes": 5,
+          "conditional read with two joining knots fixed to zero": [
+            "000"
+          ]
+        },
+        {
+          "round": 1,
+          "end": "stalled",
+          "shortages": {
+            "12": 5
+          }
+        }
+      ],
+      "minimum start representations": [
+        {
+          "number of equivalent supports": 16384,
+          "smallest count": 2,
+          "all smallest supports": [
+            [
+              8,
+              9
+            ]
+          ]
+        },
+        {
+          "number of equivalent supports": 16384,
+          "smallest count": 2,
+          "all smallest supports": [
+            [
+              18,
+              19
+            ]
+          ]
+        },
+        {
+          "number of equivalent supports": 16384,
+          "smallest count": 2,
+          "all smallest supports": [
+            [
+              28,
+              29
+            ]
+          ]
+        }
+      ]
+    },
+    "J two loose": {
+      "start": [
+        [
+          0,
+          3,
+          8
+        ],
+        [
+          0,
+          1,
+          4,
+          5
+        ],
+        [
+          1,
+          2,
+          9
+        ],
+        [
+          2,
+          3,
+          6,
+          7
+        ],
+        [
+          10,
+          13,
+          18
+        ],
+        [
+          10,
+          11,
+          14,
+          15
+        ],
+        [
+          11,
+          12,
+          19
+        ],
+        [
+          12,
+          13,
+          16,
+          17
+        ],
+        [
+          20,
+          23,
+          28
+        ],
+        [
+          20,
+          21,
+          24,
+          25
+        ],
+        [
+          21,
+          22,
+          29
+        ],
+        [
+          22,
+          23,
+          26,
+          27
+        ],
+        [
+          8,
+          18,
+          28,
+          30,
+          31,
+          32
+        ],
+        [
+          9,
+          19,
+          29,
+          30
+        ]
+      ],
+      "rounds": [
+        {
+          "round": 0,
+          "knots": 14,
+          "distinctions": 33,
+          "allowed states": 524288,
+          "moves": {
+            "distinctions by shortest change size": {
+              "2": 14,
+              "4": 15,
+              "5": 4
+            },
+            "shortest changes by size": {
+              "2": 7,
+              "4": 51,
+              "5": 30
+            },
+            "changes of at most five by size": {
+              "2": 7,
+              "4": 72,
+              "5": 30
+            },
+            "elementary changes of at most five": 88,
+            "non-elementary changes of at most five": 21,
+            "literal enumeration matched": true
+          },
+          "class counts": {
+            "SHORT": {
+              "k": 0,
+              "joint rank": 0,
+              "individually unread": 0,
+              "jointly unread": 0,
+              "triples of unread labels": {}
+            },
+            "UPTO5": {
+              "k": 0,
+              "joint rank": 0,
+              "individually unread": 0,
+              "jointly unread": 0,
+              "triples of unread labels": {}
+            }
+          },
+          "carriers": [
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              10,
+              11,
+              12,
+              13
+            ],
+            [
+              20,
+              21,
+              22,
+              23
+            ]
+          ],
+          "tuples": [
+            "000",
+            "001",
+            "010",
+            "011",
+            "100",
+            "101",
+            "110",
+            "111"
+          ],
+          "assignments for attained tuples": {
+            "000": [],
+            "001": [
+              1,
+              2,
+              5,
+              7,
+              11,
+              13,
+              15,
+              16,
+              18,
+              19,
+              20,
+              21,
+              22,
+              24,
+              25,
+              26,
+              28,
+              30,
+              31
+            ],
+            "010": [
+              1,
+              2,
+              5,
+              7,
+              10,
+              15,
+              16,
+              17,
+              18,
+              21,
+              22,
+              25,
+              26,
+              31
+            ],
+            "011": [
+              10,
+              15,
+              16,
+              17,
+              18,
+              23,
+              24,
+              25,
+              26,
+              28
+            ],
+            "100": [
+              3,
+              4,
+              5,
+              7,
+              8,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              22,
+              23,
+              24,
+              25,
+              28,
+              29,
+              31
+            ],
+            "101": [
+              3,
+              6,
+              8,
+              23,
+              24,
+              25,
+              26,
+              28
+            ],
+            "110": [
+              3,
+              6,
+              8,
+              10,
+              15,
+              16,
+              17,
+              18
+            ],
+            "111": [
+              0,
+              2,
+              3,
+              4,
+              9,
+              12,
+              17,
+              19,
+              20,
+              22,
+              23,
+              24,
+              29,
+              30,
+              31
+            ]
+          },
+          "SHORT": [
+            {
+              "class fact": false,
+              "read by no single knot": true,
+              "knots that can read it": [],
+              "changes that flip it": 16,
+              "example changing support": [
+                0,
+                4,
+                8,
+                31
+              ]
+            },
+            {
+              "class fact": false,
+              "read by no single knot": true,
+              "knots that can read it": [],
+              "changes that flip it": 16,
+              "example changing support": [
+                10,
+                14,
+                18,
+                31
+              ]
+            },
+            {
+              "class fact": false,
+              "read by no single knot": true,
+              "knots that can read it": [],
+              "changes that flip it": 16,
+              "example changing support": [
+                20,
+                24,
+                28,
+                31
+              ]
+            }
+          ],
+          "UPTO5": [
+            {
+              "class fact": false,
+              "read by no single knot": true,
+              "knots that can read it": [],
+              "changes that flip it": 16,
+              "example changing support": [
+                0,
+                4,
+                8,
+                31
+              ]
+            },
+            {
+              "class fact": false,
+              "read by no single knot": true,
+              "knots that can read it": [],
+              "changes that flip it": 16,
+              "example changing support": [
+                10,
+                14,
+                18,
+                31
+              ]
+            },
+            {
+              "class fact": false,
+              "read by no single knot": true,
+              "knots that can read it": [],
+              "changes that flip it": 16,
+              "example changing support": [
+                20,
+                24,
+                28,
+                31
+              ]
+            }
+          ],
+          "conditional reads": {
+            "knots with all tuples in every feasible reading": 13,
+            "knots checked": 14,
+            "feasible readings counted over the knots": 112,
+            "tuple counts with each knot fixed to zero": [
+              8,
+              8,
+              8,
+              8,
+              8,
+              8,
+              8,
+              8,
+              8,
+              8,
+              8,
+              8,
+              4,
+              8
+            ]
+          },
+          "least changing support": [
+            [
+              0,
+              4,
+              8,
+              31
+            ],
+            [
+              10,
+              14,
+              18,
+              31
+            ],
+            [
+              20,
+              24,
+              28,
+              31
+            ]
+          ],
+          "equivalent two-distinction supports": [
+            [
+              8,
+              9
+            ],
+            [
+              18,
+              19
+            ],
+            [
+              28,
+              29
+            ]
+          ],
+          "sum of the ring parities is the parity of these loose distinctions": [
+            31,
+            32
+          ],
+          "forced cycle sum supports": [],
+          "dimension of law sums that are changes": 6,
+          "conditional read with two joining knots fixed to zero": [
+            "000"
+          ],
+          "canonical checks": [
+            {
+              "contact": "z3",
+              "clauses": "z1 ~z1",
+              "checker": {
+                "loops": [
+                  "z1",
+                  "z2"
+                ],
+                "contact": "z3",
+                "erasure": "forgetting",
+                "binding": false,
+                "loss_on_erasure": true,
+                "coexistence": true,
+                "invisible_in_parts": true,
+                "pairwise_definable": true,
+                "minimum_width": 0,
+                "notes": [
+                  "the relation allows every joint state, so nothing binds"
+                ],
+                "is_knot": false,
+                "allowed": [
+                  "000",
+                  "001",
+                  "010",
+                  "011",
+                  "100",
+                  "101",
+                  "110",
+                  "111"
+                ],
+                "variables": [
+                  "z1",
+                  "z2",
+                  "z3"
+                ]
+              }
+            },
+            {
+              "contact": "z1",
+              "clauses": "z1 ~z1",
+              "checker": {
+                "loops": [
+                  "z2",
+                  "z3"
+                ],
+                "contact": "z1",
+                "erasure": "forgetting",
+                "binding": false,
+                "loss_on_erasure": true,
+                "coexistence": true,
+                "invisible_in_parts": true,
+                "pairwise_definable": true,
+                "minimum_width": 0,
+                "notes": [
+                  "the relation allows every joint state, so nothing binds"
+                ],
+                "is_knot": false,
+                "allowed": [
+                  "000",
+                  "001",
+                  "010",
+                  "011",
+                  "100",
+                  "101",
+                  "110",
+                  "111"
+                ],
+                "variables": [
+                  "z2",
+                  "z3",
+                  "z1"
+                ]
+              }
+            },
+            {
+              "contact": "z2",
+              "clauses": "z1 ~z1",
+              "checker": {
+                "loops": [
+                  "z1",
+                  "z3"
+                ],
+                "contact": "z2",
+                "erasure": "forgetting",
+                "binding": false,
+                "loss_on_erasure": true,
+                "coexistence": true,
+                "invisible_in_parts": true,
+                "pairwise_definable": true,
+                "minimum_width": 0,
+                "notes": [
+                  "the relation allows every joint state, so nothing binds"
+                ],
+                "is_knot": false,
+                "allowed": [
+                  "000",
+                  "001",
+                  "010",
+                  "011",
+                  "100",
+                  "101",
+                  "110",
+                  "111"
+                ],
+                "variables": [
+                  "z1",
+                  "z3",
+                  "z2"
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "minimum start representations": [
+        {
+          "number of equivalent supports": 16384,
+          "smallest count": 2,
+          "all smallest supports": [
+            [
+              8,
+              9
+            ]
+          ]
+        },
+        {
+          "number of equivalent supports": 16384,
+          "smallest count": 2,
+          "all smallest supports": [
+            [
+              18,
+              19
+            ]
+          ]
+        },
+        {
+          "number of equivalent supports": 16384,
+          "smallest count": 2,
+          "all smallest supports": [
+            [
+              28,
+              29
+            ]
+          ]
+        }
+      ]
+    }
+  },
+  "seconds": 5.442
+}

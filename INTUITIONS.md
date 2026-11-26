@@ -6104,9 +6104,9 @@ changes what a knot owes changes what it makes.
   a ring of knots that grows keeps a fact that no knot of it can read; so does a
   start with no ring, and one start can keep two such facts.
 - [12.3 Whether it happens again, one pattern up](#123-whether-it-happens-again-one-pattern-up):
-  three rungs kept apart, repetition, a tower and recursion; only the first is
-  reached; the facts a tower would bind exist, and a referee's built start
-  binds three of them under ordinary growth, a claim under check.
+  three rungs kept apart, repetition, a tower and recursion; ordinary growth
+  binds whole-held facts by the start's own laws and makes them facts, the
+  tower's first step; a step that repeats, and recursion, are not shown.
 - [12.4 Two kinds of contradiction](#124-two-kinds-of-contradiction):
   one distinction both yes and no in a single view, which never occurs, and
   views each fine that cannot all be held together, which do; the owner's
@@ -6206,7 +6206,8 @@ says which it reaches:
 3. **Recursion**: a pattern that grows back into itself, or whose product is fed
    back as its own start.
 
-No result yet reaches the second or the third rung.
+The first step of the second rung is reached on some starts (below); a step that
+repeats, and the third rung, are not.
 
 **The question.** If a whole-held fact is a fact of the whole that no part
 holds, it might in turn serve as a distinction: two values, open until fixed.
@@ -6217,13 +6218,49 @@ codes built out of codes (concatenated codes). The first prerequisite holds:
 a connected start can keep two or more independent facts that no single knot
 reads (lesson 12.2). A rule defined as their sum passes the knot test for any
 two independent facts, so that test alone cannot show a tower; what would count
-is three facts, each carried by its own cycle, whose parity the knots' laws force.
-Every such forced relation lies in one space (the literature's bicycle space). On
-the small starts read first none of its elements split into three facts held by
-the whole, but its referee built a start where ordinary growth does bind three,
-and found three bound on a sampled start too
-([binding](research/BINDING-20261126-001/decision.md), refereed: refuted); a
-check of that construction is running.
+is three facts, each carried on its own, whose parity the knots' laws force.
+
+**What was found, in four parts (computed, refereed).**
+
+- **(a) Such bindings exist.** Take three or four rings of knots, each ring knot
+  holding two loose distinctions, joined through connecting knots that hold none.
+  After ordinary growth under parity, each ring carries a fact that no single
+  knot reads and every small change keeps, and the rings' facts obey one parity
+  rule with every proper part free: a relation that passes the knot test. It
+  happens on all 32 such starts read, and on some sampled starts too, when a
+  small change is any change of at most five distinctions: one of 900 sampled
+  starts of six to eight knots, and 7 of 67 grown stages of 400 sampled starts of
+  nine to twelve knots (each pair of knots meeting with chance one third).
+- **(b) The relation comes from the start's own laws.** Each fact equals, on the
+  allowed states, a parity of the start's own distinctions, and those parities
+  already obey the rule at the start: it is the sum of all the start's knot laws,
+  which lands on the rings' loose distinctions because the connecting knots hold
+  none. One loose distinction placed far from every ring dissolves it. In fact
+  ordinary growth never makes a relation among such facts on any stage read: the
+  changes that keep every start value are built from changes of two and four
+  distinctions, which every small change includes (proved for finite grown
+  stages, and checked on 24,616 grown rounds).
+- **(c) What growth adds is the facts.** Before growth a change of five
+  distinctions could run from one ring through the connecting knots to another
+  ring and flip both rings' parities, so they were not facts any small change
+  keeps. Growth uses up every loose distinction, and the least change that flips
+  a ring's parity grows from five distinctions to seven, nine and eleven over
+  three rounds. So growth turns a relation the start's laws already made into a
+  relation among facts held by the whole, and from round 2 it carries each fact
+  again on distinctions born the round before. (A fact also has a smaller reader
+  than its ring, and on a ring of even length its carrier splits into two parts
+  that are facts of their own.)
+- **(d) A rival law makes a new relation.** Under either of two rival growth laws
+  recorded beside the ordinary one, the forbidding cuts (a birth gets one fresh
+  distinction fewer, or only as many as three places need: register entries A129
+  and A130), a start whose middle connecting knots are joined to each other and
+  hold one loose distinction each gets a birth of three parents with no fresh
+  distinction, and that one knot's law binds the rings' parities where the start
+  left them free; the growth stalls soon after.
+
+([binding](research/BINDING-20261126-001/decision.md), refuted by its referee;
+[the built binding](research/BUILT-BINDING-20261126-001/decision.md), confirmed
+with fixes.)
 
 **What earlier lines found.** Lesson 4.8 binds distinctions at different
 depths of one address tree, with a bond that grows by one member per depth. A
@@ -6245,8 +6282,9 @@ with nothing nested by hand.
 | A knot's constraint is held by the whole and by no part | proved (lessons 2.1 and 2.3) |
 | A grown ring under parity keeps a class of the whole ring that no knot reads | computed, refereed (lesson 12.2); a tree does the same, so it is a fact of the grown start, not of the loop (computed, refereed) |
 | A connected start keeps two or more independent such facts | computed, refereed: a nine-knot start of two joined rings gains two in one round, a sampled ten-knot start too (lesson 12.2) |
-| The growth makes a rule binding such facts into a larger pattern that keeps a fact none of them holds (a tower) | open: the binding study's referee built a start of 30 knots where ordinary parity growth binds three facts no single knot reads by a forced parity, and found three bound on a sampled ten-knot start ([binding](research/BINDING-20261126-001/decision.md), refereed); an independent check is running, and whether the bound layer keeps a further fact is untested |
-| A pattern that grows back into itself (recursion) | not shown: growing a start and then exchanging it gives the start back only when we pin its loose values, which ordinary growth never does, and the exchange is ours; no free return or cycle on the iterations tested ([recursion's lead](research/RECURSION-LEAD-20261126-001/decision.md), refereed); parts that copy themselves (lesson 8.7) copy under laws added by hand |
+| A tower's first step: facts held by the whole, bound by a rule that passes the knot test and that nothing outside supplies, where before the step they were not such facts | reached on built starts, and on sampled ones when a small change is any change of at most five distinctions: the rule is the start's own sum of knot laws, and growth makes the bound parities facts ([the built binding](research/BUILT-BINDING-20261126-001/decision.md), computed, refereed); under the forbidding cuts one knot's law makes the rule itself |
+| A tower: the step repeated, the bound layer keeping facts of its own | not shown |
+| A pattern that grows back into itself (recursion) | not shown: growing a start and then exchanging it gives the start back only when we pin its loose values, which ordinary growth never does, and the exchange is ours; no free return or cycle on the iterations tested ([recursion's lead](research/RECURSION-LEAD-20261126-001/decision.md), refereed); parts that copy themselves (lesson 8.7) copy under laws added by hand. Two leads, not results: a part released by ordinary growth that itself keeps releasing parts, proved under both laws, where the second level depends on which released pattern an observer's test recognizes ([generators](research/GENERATORS-20261120-001/nested.md)); and two knots sharing one distinction compose into one knot exactly when they can force it to opposite values ([composition](research/BASE-THREE-20261021-001)) |
 
 ### 12.4 Two kinds of contradiction
 

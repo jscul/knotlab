@@ -2,7 +2,37 @@
 
 Epic `BUILT-BINDING-20261126-001`, at the coordinator's go-ahead on the advisor's top direction and, after the binding
 study's referee reported, on the coordinator's request for a careful test of its constructions. A check by the thread,
-not a registered study; computed. The sections down to "Frozen" were committed before the frozen runs.
+not a registered study; computed. The sections down to "Frozen" were committed before the frozen runs (`233d6f3087`);
+the results and the scorer were added after them. Refereed (R1: **confirmed with fixes, one Block**; folded in below).
+
+> **Referee R1: confirmed with fixes** ([report](referee-R1/report.md)). Part (c) and the argument hold (an independent
+> proof for finite funded ordinary stages, [argument note](referee-R1/argument_note.md)): growth raises the least size of
+> a change flipping a ring's parity from 5 to 7, 9 and 11 distinctions at rounds 0 to 3, so the original supports already
+> carry the bound class facts at round 1 under changes of at most five, and round 2 adds disjoint carriers of new
+> distinctions; the equation is the start's. **Block:** "none on the held-out starts" is false. On the nineteenth
+> eight-knot start of the held-out sample, at round 2, three disjoint sets of two, two and three distinctions take
+> exactly 000, 011, 101 and 110 with any one of its 20 knots fixed, kept by all 102 changes of at most five distinctions;
+> their equation is the sum of two start laws ([certificate](referee-R1/heldout_certificate.json)). Under changes of at
+> most five, disjoint linear triples bind on 1 of 394 held-out stages at round 2 and on 3 of 69, 7 of 67 and 7 of 67
+> stages of the 400 sampled starts of nine to twelve knots at rounds 1 to 3; under the shortest changes, on none of 203
+> grown sampled stages. **Narrowings:** "held only by whole carriers": every designated carrier needs all its members
+> when read alone, but each fact has a smaller reader on four original attachment distinctions (six for four rings),
+> and on rings of even length each carrier splits into two parts that are themselves unread class facts, which bind as
+> six or eight facts by the same inherited law; the cut runs (all eight one-fewer and six of eight arity-floor runs stall
+> at round 2; two grow through round 3 and stall at round 4); the archive counts (ranks on 24,568 stages within the
+> 400-distinction limit, the referee checking the other 48); the test power (only ring lengths five and seven had a
+> frozen class-fact prediction, and the lineage carriers have start representatives by construction); "read by no
+> single knot" should be tested by actual knot values (the reader mislabels directly readable control quantities; the
+> direct test upholds the main result). **Not a block:** a loop of four is shortest through at least one of its
+> distinctions (its lower ones), and premise 2 reads "at least one birth"; the advisor's suggestion that capped groups
+> lose common children is false.
+
+## Prior work in the program
+
+The binding study's referee supplied the built and sampled witnesses, the built example's origin and the deletion of the
+middle birth's law (`BINDING-20261126-001`, referee R1); the closing proof supplied the criterion for an implied law
+(`ERASURE-AND-CLOSING-SIGNS-20261121-001B`, closing_law.md); the projection lemma is refereed in `LAYERS-20261126-001`.
+This study adds the 32-start comparison, the before-and-after readings and the argument's checks.
 
 ## The question
 
@@ -44,7 +74,8 @@ values checked against a solver call per tuple).
   values (its representative is its ring's ten loose distinctions), and those already obey the relation on the start's
   allowed states. At the start the representatives are not class facts under the shortest changes in the 30-knot start;
   in the two 21-knot ones they already are.
-- **The ten-knot path witness reproduces** at round 3, on the referee's own stage ([`repro_paths.py`](repro_paths.py),
+- **The ten-knot path witness reproduces** at round 3 [R1: round 3 supplies those three paths; three disjoint start
+  supports already carry the same shortest-change class facts from round 1], on the referee's own stage ([`repro_paths.py`](repro_paths.py),
   [`repro_paths.json`](repro_paths.json)): four of eight triples, each carrier a class fact under the shortest changes
   and read by no single knot. Under changes of at most five distinctions two of its three carriers are not class facts.
   Origin: the same; the relation holds on the start's allowed states (nine of its ten start laws enter it).
@@ -71,7 +102,7 @@ are the closed loops of this reading. Three premises, read in the engine and che
 ([`premises.py`](premises.py)):
 
 1. no birth takes two distinctions of one parent, and each round takes every loose distinction of every live knot;
-2. any two live knots with a common neighbour are parents of one birth of the next round;
+2. any two live knots with a common neighbour are parents of at least one birth of the next round;
 3. a birth with no fresh distinction is the only birth of its connected structure, and each of its parents holds one
    loose distinction.
 
@@ -80,7 +111,7 @@ no loop of three, and by premise 1 its only loops of two are pairs of loose dist
 older birth w with children v and v′: by premise 2 the two children have a common neighbour (a common child, or U), which
 closes a loop of four, and every other loop through w differs from these by loops not through w; by premise 3 a child
 with no fresh distinction is w's only child. So Z_new is spanned by the pairs and the loops of four, each of which is a
-shortest change through its distinctions. Then every class fact (even on every small change, under either reading) is a
+shortest change through at least one of its distinctions (its lower ones; R1). Then every class fact (even on every small change, under either reading) is a
 function of the start's values; with the projection lemma, **every relation among class facts of an ordinarily grown
 stage already holds among their start representatives**, and it is a sum of the start's own laws.
 
@@ -148,8 +179,9 @@ hand-built); a next layer's own small changes and laws.
 
 ## What was found
 
-All frozen runs finished ([`score.py`](score.py), [`score.json`](score.json)). Every prediction held as made; no
-deviation. Two rounds were not read, both at round 3 of the four-ring families of six knots with detour links, past the
+All frozen runs finished ([`score.py`](score.py), [`score.json`](score.json)). Every frozen numerical prediction held;
+no deviation [R1: only ring lengths five and seven had a frozen class-fact prediction, 32 of the 62 rows, and the
+lineage carriers and the origin control pass by construction, so they check the code rather than the claim]. Two rounds were not read, both at round 3 of the four-ring families of six knots with detour links, past the
 500-distinction cap.
 
 **(a) After ordinary growth, three or more facts that no single knot reads obey a relation passing the knot test: yes,
@@ -158,20 +190,23 @@ links), on all 62 rows read at rounds 2 and 3, the new carriers of each ring tak
 values with every proper sub-family free (one parity rule; the canonical checker passes it on the three-ring start of
 the advisor, for every choice of contact), and every carrier is a class fact read by no single knot under both readings
 of a small change. Also on the advisor's 14-knot start from round 0, and on the binding referee's sampled ten-knot start
-at round 3 under the shortest changes only. Not on any census or held-out start (the binding referee's recount), and
-the 400 fresh sampled starts of nine to twelve knots were read here only for the argument.
+at round 3 under the shortest changes only. [R1, Block:] the earlier disjoint-cycle search gave none on its roster,
+but disjoint parity carriers bind on a held-out eight-knot start under changes of at most five, and on 7 of 67 stages of
+the 400 sampled starts of nine to twelve knots at rounds 2 and 3 (none under the shortest changes); the 400 were read
+here only for the argument.
 
 **(b) Where the relation comes from: the start's own knot laws.** On every row, every carrier has a start
 representative (each ring's own loose distinctions), the representatives take the same joint values on the start's
 allowed states, and their sum is a sum of start laws: the laws of all the knots, since the connecting knots hold no loose
 distinction. The controls agree: one loose distinction at a detour's middle knot, far from every ring, frees all 2^R
-values at every round read (16 of 16 detour families; 14 grow to round 3 and 2 stall); the other controls free them or stall (all 64 as predicted). The
+values at every round read (16 of 16 detour families; all 16 grow to round 3, 14 measured within the cap); the other controls free them or stall (all 64 as predicted). The
 origin test can say no: a birth's own law binds its fresh distinctions and inputs, and the test finds the first fresh
 distinction is not a function of the start's values (32 of 32). **And ordinary growth makes no relation among class
 facts on any stage read:** premises 1 to 3 held on every birth record and the pairs and loops of four spanned the changes
-that keep the start's values on every stage (21,678 census, 2,348 held-out, 192 built and 398 sampled rounds; rounds 1
+that keep the start's values (premises on 24,616 funded rounds: 21,678 census, 2,348 held-out, 192 built and 398
+sampled; ranks on the 24,568 stages within the 400-distinction limit, the referee checking the other 48; rounds 1
 to 6; 1,964 census, 483 held-out and 331 sampled starts gave no stage, because their first round stalls or closes).
-With the argument above (a sketch, checked here, not yet refereed), every class fact of an ordinarily grown stage is a
+With the argument above (a sketch, checked here; R1 gives an independent proof for finite funded ordinary stages), every class fact of an ordinarily grown stage is a
 function of the start's values, so every relation among class facts already held at the start.
 
 **(c) What growth contributes: it turns the start's relation into a relation among class facts, with carriers of its
@@ -179,17 +214,21 @@ own.** Before growth the representatives were already read by no single knot (ev
 under changes of at most five distinctions on any family (0 of 62 rows), and under the shortest changes only on the
 double-link families (32 rows; not on the 30 detour rows). After growth they are class facts under both readings on
 every row. The mechanism, read from the constructions: at the start a change of five distinctions runs from one ring's
-loose distinction through a connecting knot to another ring's and flips both rings' parities; growth consumes every
-loose distinction, so after it no small change leaves a ring, and the parities can no longer be flipped one at a time.
-And at every round from 2 on, the relation appears again on carriers made only of distinctions born in the round
-before, disjoint, each held by a whole cycle of births.
+loose distinction through a connecting knot to another ring's and flips both rings' parities; growth raises the least
+size of a change flipping a ring's parity (5, 7, 9 and 11 at rounds 0 to 3, R1), so after the first round no change of
+at most five flips one. And at every round from 2 on, the relation appears again on carriers made only of distinctions
+born in the round before, disjoint [R1: every distinction of a designated carrier is needed when that carrier is read
+alone, but the same fact has a smaller reader on four original attachment distinctions (six for four rings), and on
+rings of even length each carrier splits into two parts that are themselves unread class facts].
 
 **(d) Under the forbidding cuts, one knot law makes a new relation.** On the 8 three-ring detour families with the
 middle knots joined pairwise and holding one loose distinction each, under both cuts one birth whose parents are the
 three middle knots gets no fresh distinction at round 1, and its law (the parity of the middles' three loose
 distinctions), with the start's laws, leaves the rings' loose groups 4 of 8 joint values where the start allowed all
-8. Ordinary growth leaves them free at every round. Both cut runs then stall at round 2. Under the cuts premise 3
-fails (on 144 census rounds under one fewer, 192 under the arity floor), yet the span still held on every stage.
+8. Ordinary growth leaves them free at every round. All eight one-fewer runs and six of eight arity-floor runs then
+stall at round 2; the two six-knot-ring arity-floor starts grow through round 3 and stall at round 4 (R1). Under the
+cuts premise 3 fails (on 144 of 12,145 census rounds under one fewer and 192 of 12,241 under the arity floor), yet the
+span still held on every stage.
 
 **Not-all-equal** (read only): the same carriers take every joint value on every family and round.
 
@@ -198,11 +237,11 @@ fails (on 144 census rounds under one fewer, 192 under the arity floor), yet the
 | Rung | What it requires | Met? |
 | --- | --- | --- |
 | Repetition | the same kind of fact, held by the whole and by no part, at two layers | yes: a knot; a class fact no knot reads (lesson 12.2); now a parity rule among such facts |
-| Tower, first step | facts of one layer held by the whole, bound by a rule that passes the knot test and that nothing outside supplies, where before the step they were not such facts | on built starts, yes: the rule is the start's own sum of knot laws, and growth makes the bound quantities class facts (under changes of at most five distinctions on every family; under the shortest changes on the detour families). Under the cuts the rule itself is new, one knot's law |
+| Tower, first step | facts of one layer held by the whole, bound by a rule that passes the knot test and that nothing outside supplies, where before the step they were not such facts | in this sense (disjoint facts unread at one knot, an inherited law, the stated reading of a small change), on built starts and on sampled ones under changes of at most five, yes: the rule is the start's own sum of knot laws, and growth makes the bound quantities class facts (under changes of at most five distinctions on every family; under the shortest changes on the detour families). Under the cuts the rule itself is new, one knot's law |
 | Tower, every step | the bound layer again keeps facts held by its whole, by its own small changes and its own rule, step after step | not shown: the bound triple has no small changes or laws of its own yet, and both cut runs stall |
 | Recursion | a pattern that grows back into itself | not shown |
 
 **Caveat a referee should press.** As functions on the allowed states the bound facts are linearly dependent, as the
 three distinctions of a parity knot are; what makes this more than a rule we define as a sum is that each fact has its
-own carrier, disjoint from the others and read by no single knot. And the starts are hand-built (register entry for
-this study's scaffolds); under the sampled weightings read so far no binding was found.
+own carrier, disjoint from the others and read by no single knot. The 32 families are hand-built (register entry
+A298); [R1:] under the extension's weighting bindings also occur, under changes of at most five distinctions.

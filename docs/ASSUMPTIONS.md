@@ -6207,10 +6207,17 @@ evidence: results and their status come from the records each entry links.
 - **Why.** The cheapest construction aimed at the mechanism (a sum of all knot laws that lands on the rings' loose
   distinctions), a carrier rule that needs no search, and a test whose answer does not depend on the representative.
 - **Rests on it.** The study's built-family results and their reading in parts (a) to (d).
-- **Challenge.** Sampled starts under a named weighting in place of built ones (the census, 900 fresh starts of six to
-  eight knots and 400 of nine to twelve show no binding by the cycle test, so the bindings are about the built
-  families); carriers found by search (the binding referee's cycles and shortest paths) in place of the lineage rule;
+- **Challenge.** Sampled starts under a named weighting in place of built ones: the study's cycle search found none on
+  the census and 900 fresh starts of six to eight knots (its 400 starts of nine to twelve were read only for the
+  argument's premises), but its referee's search over disjoint carriers of any shape found bindings on one held-out
+  eight-knot start and on 7 of 67 stages of the 400, under changes of at most five distinctions (the extension's
+  weighting: labelled starts drawn with replacement, equally many per size, each pair meeting with chance 1/3, once or
+  twice equally, loose counts 0 to 2 equally, connected, at least three places per knot, at most 18 or 30
+  distinctions), so bindings are not only about the built families; carriers found by search (the binding referee's cycles and shortest paths) in place of the lineage rule;
   the origin test against a direct computation of the joint values at the start. Expected to be replaced: the model
   should pick its own carriers (the advisor: a rule such as labels of least support, with its own small changes).
 - **History.**
+  - 2026-11-26 · Referee R1 of `BUILT-BINDING-20261126-001` (confirmed with fixes, one Block): bindings occur on
+    sampled starts under changes of at most five; the lineage carriers pass the origin test by construction, and each
+    fact also has a smaller reader.
   - 2026-11-26 · Entered at the freeze of `BUILT-BINDING-20261126-001`.

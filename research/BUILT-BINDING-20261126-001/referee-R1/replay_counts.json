@@ -1,0 +1,2376 @@
+{
+  "roster": {
+    "census file": "research/FORBID-EDITS-20261126-001/starts.json",
+    "census sha256": "ba937f95092234f8e1d8a08c20e86996a3aa58d187f137629b2c55d7e0553d6e",
+    "held-out weighting": "Independent pair meeting with probability 1/3, multiplicity one or two equally, loose count zero, one or two equally, conditional on connectivity, at least three places at every knot and at most 18 distinctions. Labelled draws with replacement.",
+    "held-out parameters": {
+      "sizes": [
+        6,
+        7,
+        8
+      ],
+      "accepted per size": 300,
+      "seed plus size": 20261206
+    },
+    "larger sample parameters": {
+      "sizes": [
+        9,
+        10,
+        11,
+        12
+      ],
+      "accepted per size": 100,
+      "seed plus size": 20261212,
+      "maximum distinctions": 30
+    },
+    "independent census coverage": {
+      "3": {
+        "labelled": 248,
+        "up to renaming": 61
+      },
+      "4": {
+        "labelled": 20096,
+        "up to renaming": 1046
+      },
+      "5": {
+        "labelled": 602955,
+        "up to renaming": 5968
+      }
+    },
+    "census verification seconds": 0.971
+  },
+  "archive cap for span and origin": 400,
+  "archive cap for premise growth": 20000,
+  "unarchived premise arms": {
+    "one fewer and arity floor": [
+      "heldout",
+      "built",
+      "sampled"
+    ]
+  },
+  "pilot": false,
+  "cases": {
+    "census, parity, ordinary": {
+      "recount": {
+        "premises": {
+          "file": "frozen_premises_census.jsonl",
+          "sha256": "541c964bcd8823c5d9ffe5e15ff4f74c711efb36fca680634497e27ee186358b",
+          "footer matches rows": true,
+          "starts": 7075,
+          "premise rounds": {
+            "funded rounds": 21678
+          },
+          "premise failures by reason": {},
+          "span": {
+            "checks": 21678,
+            "equal and inside": 21678,
+            "positive dimension": 19733
+          },
+          "all ends": {
+            "closed": 2049,
+            "stalled": 1734
+          },
+          "first-round ends": {
+            "closed": 230,
+            "stalled": 1734
+          },
+          "by round": {
+            "1": {
+              "funded rounds": 5111,
+              "span checks": 5111
+            },
+            "2": {
+              "funded rounds": 3398,
+              "span checks": 3398
+            },
+            "3": {
+              "funded rounds": 3293,
+              "span checks": 3293
+            },
+            "4": {
+              "funded rounds": 3292,
+              "span checks": 3292
+            },
+            "5": {
+              "funded rounds": 3292,
+              "span checks": 3292
+            },
+            "6": {
+              "funded rounds": 3292,
+              "span checks": 3292
+            }
+          }
+        },
+        "closing": {
+          "file": "closing_census_parity.jsonl",
+          "sha256": "c9f73d19a930ddb860cda5da41bfafeefd4f9e8748a68393d6b3639d15c9c616",
+          "footer matches rows": true,
+          "births": 37722,
+          "ends": {
+            "closed": 2048,
+            "stalled": 1734
+          },
+          "by round": {
+            "1": {
+              "births": 10622,
+              "takes all": 1713,
+              "implied": 1713,
+              "zero fresh": 1713
+            },
+            "2": {
+              "births": 11854,
+              "takes all": 105,
+              "implied": 105,
+              "zero fresh": 105
+            },
+            "3": {
+              "births": 15246,
+              "takes all": 1,
+              "implied": 1,
+              "zero fresh": 1
+            }
+          },
+          "starts": 7075
+        },
+        "origin": {
+          "file": "origin_census.jsonl",
+          "sha256": "329892bfd719f389e2faac68bf5120b701ac47414ecde1489352889ce4f01e21",
+          "footer matches rows": true,
+          "starts": 7075,
+          "checks": {
+            "stages read": 11802,
+            "positive dimension": 9857,
+            "SHORT failures": 0,
+            "UPTO5 failures": 0
+          },
+          "ends": {
+            "closed": 2048,
+            "stalled": 1734
+          },
+          "by round": {
+            "1": {
+              "stages read": 5111,
+              "positive dimension": 3271
+            },
+            "2": {
+              "stages read": 3398,
+              "positive dimension": 3293
+            },
+            "3": {
+              "stages read": 3293,
+              "positive dimension": 3293
+            }
+          }
+        }
+      },
+      "replay": {
+        "starts": 7075,
+        "labelled distinct starts": 7075,
+        "overall": {
+          "funded rounds": 21678,
+          "funded births": 104593,
+          "maximum distinctions": 216,
+          "starts with a knot of more than three places": 7037
+        },
+        "by start size": {
+          "3": {
+            "starts": 61,
+            "funded rounds": 289,
+            "funded births": 1547,
+            "first-round closed": 2
+          },
+          "4": {
+            "starts": 1046,
+            "funded rounds": 3558,
+            "funded births": 16346,
+            "first-round stalled": 278,
+            "first-round closed": 22
+          },
+          "5": {
+            "starts": 5968,
+            "first-round stalled": 1456,
+            "funded rounds": 17831,
+            "funded births": 86700,
+            "first-round closed": 206
+          }
+        },
+        "by round": {
+          "1": {
+            "funded rounds": 5111,
+            "funded births": 10622,
+            "positive new-only dimension": 3271,
+            "chronological span equal and inside": 5111,
+            "any two or four span equal and inside": 5111,
+            "generators verified shortest in full stage": 5111,
+            "within archived span cap": 5111,
+            "positive new-only dimension within archived span cap": 3271,
+            "SHORT: origin stages with class facts": 510,
+            "SHORT: origin stages with class facts and positive new-only dimension": 335,
+            "UPTO5: origin stages with class facts": 308,
+            "UPTO5: origin stages with class facts and positive new-only dimension": 308
+          },
+          "2": {
+            "funded rounds": 3398,
+            "funded births": 11854,
+            "positive new-only dimension": 3293,
+            "chronological span equal and inside": 3398,
+            "any two or four span equal and inside": 3398,
+            "generators verified shortest in full stage": 3398,
+            "within archived span cap": 3398,
+            "positive new-only dimension within archived span cap": 3293,
+            "SHORT: origin stages with class facts": 340,
+            "SHORT: origin stages with class facts and positive new-only dimension": 336,
+            "UPTO5: origin stages with class facts": 1561,
+            "UPTO5: origin stages with class facts and positive new-only dimension": 1561
+          },
+          "3": {
+            "funded rounds": 3293,
+            "funded births": 15246,
+            "positive new-only dimension": 3293,
+            "chronological span equal and inside": 3293,
+            "any two or four span equal and inside": 3293,
+            "generators verified shortest in full stage": 3293,
+            "within archived span cap": 3293,
+            "positive new-only dimension within archived span cap": 3293,
+            "SHORT: origin stages with class facts": 336,
+            "SHORT: origin stages with class facts and positive new-only dimension": 336,
+            "UPTO5: origin stages with class facts": 1561,
+            "UPTO5: origin stages with class facts and positive new-only dimension": 1561
+          },
+          "4": {
+            "funded rounds": 3292,
+            "funded births": 18763,
+            "positive new-only dimension": 3292,
+            "chronological span equal and inside": 3292,
+            "any two or four span equal and inside": 3292,
+            "generators verified shortest in full stage": 3292,
+            "within archived span cap": 3292,
+            "positive new-only dimension within archived span cap": 3292
+          },
+          "5": {
+            "funded rounds": 3292,
+            "funded births": 22288,
+            "positive new-only dimension": 3292,
+            "chronological span equal and inside": 3292,
+            "any two or four span equal and inside": 3292,
+            "generators verified shortest in full stage": 3292,
+            "within archived span cap": 3292,
+            "positive new-only dimension within archived span cap": 3292
+          },
+          "6": {
+            "funded rounds": 3292,
+            "funded births": 25820,
+            "positive new-only dimension": 3292,
+            "chronological span equal and inside": 3292,
+            "any two or four span equal and inside": 3292,
+            "generators verified shortest in full stage": 3292,
+            "within archived span cap": 3292,
+            "positive new-only dimension within archived span cap": 3292
+          }
+        },
+        "first-round ends": {
+          "closed": 230,
+          "stalled": 1734
+        },
+        "all ends": {
+          "closed": 2049,
+          "stalled": 1734
+        },
+        "zero-fresh births": {
+          "implied": 1819,
+          "implied, 2 inputs": 901,
+          "implied, 3 inputs": 132,
+          "implied, 1 inputs": 743,
+          "implied, 4 inputs": 38,
+          "implied, 5 inputs": 5
+        },
+        "origin class dimensions": {
+          "SHORT": {
+            "0": 10616,
+            "1": 1170,
+            "2": 16
+          },
+          "UPTO5": {
+            "0": 8372,
+            "1": 3312,
+            "2": 118
+          }
+        },
+        "literal origin checks": [
+          {
+            "start": "census 2",
+            "round": 1,
+            "distinctions": 9
+          },
+          {
+            "start": "census 2",
+            "round": 2,
+            "distinctions": 12
+          },
+          {
+            "start": "census 3",
+            "round": 1,
+            "distinctions": 13
+          },
+          {
+            "start": "census 4",
+            "round": 1,
+            "distinctions": 12
+          }
+        ],
+        "stages beyond the archived span cap": [],
+        "closing tally": [
+          [
+            [
+              "parity",
+              "implied",
+              "takes every loose distinction of its structure",
+              "fresh 0"
+            ],
+            1819
+          ],
+          [
+            [
+              "parity",
+              "not implied",
+              "leaves some",
+              "fresh > 0"
+            ],
+            35903
+          ]
+        ],
+        "archive comparison": {
+          "premises": {
+            "trajectories compared": 7075,
+            "archived records compared": 25461,
+            "replayed records compared": 25461,
+            "matched trajectories": 7075
+          },
+          "closing": {
+            "trajectories compared": 7075,
+            "archived records compared": 41504,
+            "replayed records compared": 41504,
+            "matched trajectories": 7075
+          },
+          "origin": {
+            "trajectories compared": 7075,
+            "archived records compared": 15584,
+            "replayed records compared": 15584,
+            "matched trajectories": 7075
+          }
+        }
+      },
+      "recount seconds": 0.139,
+      "replay seconds": 5.256
+    },
+    "census, parity, one_fewer": {
+      "recount": {
+        "premises": {
+          "file": "frozen_premises_census_one_fewer.jsonl",
+          "sha256": "98331c3ab50700e2529de7b6c34aa33c6d00f6475d1de12ae69a8b358d2f4223",
+          "footer matches rows": true,
+          "starts": 7075,
+          "premise rounds": {
+            "funded rounds": 12145,
+            "distinct rounds with a broken premise": 144
+          },
+          "premise failures by reason": {
+            "3: zero-fresh birth not alone": 144,
+            "3: zero-fresh parent with more than one loose": 136
+          },
+          "span": {
+            "checks": 12145,
+            "equal and inside": 12145,
+            "positive dimension": 10199
+          },
+          "all ends": {
+            "stalled": 4210,
+            "closed": 2048
+          },
+          "first-round ends": {
+            "closed": 230,
+            "stalled": 1734
+          },
+          "by round": {
+            "1": {
+              "funded rounds": 5111,
+              "span checks": 5111,
+              "distinct rounds with a broken premise": 136
+            },
+            "2": {
+              "funded rounds": 2942,
+              "span checks": 2942,
+              "distinct rounds with a broken premise": 8
+            },
+            "3": {
+              "funded rounds": 1580,
+              "span checks": 1580
+            },
+            "4": {
+              "funded rounds": 878,
+              "span checks": 878
+            },
+            "5": {
+              "funded rounds": 817,
+              "span checks": 817
+            },
+            "6": {
+              "funded rounds": 817,
+              "span checks": 817
+            }
+          }
+        }
+      },
+      "replay": {
+        "starts": 7075,
+        "labelled distinct starts": 7075,
+        "overall": {
+          "funded rounds": 12145,
+          "funded births": 31200,
+          "maximum distinctions": 48,
+          "starts with a knot of more than three places": 7037,
+          "distinct rounds with a broken premise": 144
+        },
+        "by start size": {
+          "3": {
+            "starts": 61,
+            "funded rounds": 124,
+            "funded births": 309,
+            "first-round closed": 2
+          },
+          "4": {
+            "starts": 1046,
+            "funded rounds": 1895,
+            "funded births": 4970,
+            "first-round stalled": 278,
+            "first-round closed": 22
+          },
+          "5": {
+            "starts": 5968,
+            "first-round stalled": 1456,
+            "funded rounds": 10126,
+            "funded births": 25921,
+            "first-round closed": 206
+          }
+        },
+        "by round": {
+          "1": {
+            "funded rounds": 5111,
+            "funded births": 10622,
+            "positive new-only dimension": 3270,
+            "chronological span equal and inside": 5111,
+            "any two or four span equal and inside": 5111,
+            "generators verified shortest in full stage": 5111,
+            "within archived span cap": 5111,
+            "positive new-only dimension within archived span cap": 3270,
+            "distinct rounds with a broken premise": 136
+          },
+          "2": {
+            "funded rounds": 2942,
+            "funded births": 9775,
+            "positive new-only dimension": 2837,
+            "chronological span equal and inside": 2942,
+            "any two or four span equal and inside": 2942,
+            "generators verified shortest in full stage": 2942,
+            "within archived span cap": 2942,
+            "positive new-only dimension within archived span cap": 2837,
+            "distinct rounds with a broken premise": 8
+          },
+          "3": {
+            "funded rounds": 1580,
+            "funded births": 5413,
+            "positive new-only dimension": 1580,
+            "chronological span equal and inside": 1580,
+            "any two or four span equal and inside": 1580,
+            "generators verified shortest in full stage": 1580,
+            "within archived span cap": 1580,
+            "positive new-only dimension within archived span cap": 1580
+          },
+          "4": {
+            "funded rounds": 878,
+            "funded births": 2014,
+            "positive new-only dimension": 878,
+            "chronological span equal and inside": 878,
+            "any two or four span equal and inside": 878,
+            "generators verified shortest in full stage": 878,
+            "within archived span cap": 878,
+            "positive new-only dimension within archived span cap": 878
+          },
+          "5": {
+            "funded rounds": 817,
+            "funded births": 1688,
+            "positive new-only dimension": 817,
+            "chronological span equal and inside": 817,
+            "any two or four span equal and inside": 817,
+            "generators verified shortest in full stage": 817,
+            "within archived span cap": 817,
+            "positive new-only dimension within archived span cap": 817
+          },
+          "6": {
+            "funded rounds": 817,
+            "funded births": 1688,
+            "positive new-only dimension": 817,
+            "chronological span equal and inside": 817,
+            "any two or four span equal and inside": 817,
+            "generators verified shortest in full stage": 817,
+            "within archived span cap": 817,
+            "positive new-only dimension within archived span cap": 817
+          }
+        },
+        "first-round ends": {
+          "closed": 230,
+          "stalled": 1734
+        },
+        "all ends": {
+          "stalled": 4210,
+          "closed": 2048
+        },
+        "zero-fresh births": {
+          "implied": 1818,
+          "implied, 2 inputs": 900,
+          "implied, 3 inputs": 128,
+          "adds an equation": 144,
+          "adds an equation, 3 inputs": 109,
+          "implied, 1 inputs": 747,
+          "implied, 4 inputs": 38,
+          "adds an equation, 4 inputs": 33,
+          "implied, 5 inputs": 5,
+          "adds an equation, 5 inputs": 2
+        },
+        "origin class dimensions": {},
+        "literal origin checks": [],
+        "stages beyond the archived span cap": [],
+        "closing tally": [],
+        "archive comparison": {
+          "premises": {
+            "trajectories compared": 7075,
+            "archived records compared": 18403,
+            "replayed records compared": 18403,
+            "matched trajectories": 7075
+          }
+        }
+      },
+      "recount seconds": 0.045,
+      "replay seconds": 1.171
+    },
+    "census, parity, arity_floor": {
+      "recount": {
+        "premises": {
+          "file": "frozen_premises_census_arity_floor.jsonl",
+          "sha256": "184f98cd18268fe045a2d1960254944fc66e871c84aec2e25acf750ce6b64c13",
+          "footer matches rows": true,
+          "starts": 7075,
+          "premise rounds": {
+            "funded rounds": 12241,
+            "distinct rounds with a broken premise": 192
+          },
+          "premise failures by reason": {
+            "3: zero-fresh birth not alone": 192,
+            "3: zero-fresh parent with more than one loose": 184
+          },
+          "span": {
+            "checks": 12241,
+            "equal and inside": 12241,
+            "positive dimension": 10295
+          },
+          "all ends": {
+            "stalled": 4210,
+            "closed": 2048
+          },
+          "first-round ends": {
+            "closed": 230,
+            "stalled": 1734
+          },
+          "by round": {
+            "1": {
+              "funded rounds": 5111,
+              "span checks": 5111,
+              "distinct rounds with a broken premise": 184
+            },
+            "2": {
+              "funded rounds": 2990,
+              "span checks": 2990,
+              "distinct rounds with a broken premise": 8
+            },
+            "3": {
+              "funded rounds": 1628,
+              "span checks": 1628
+            },
+            "4": {
+              "funded rounds": 878,
+              "span checks": 878
+            },
+            "5": {
+              "funded rounds": 817,
+              "span checks": 817
+            },
+            "6": {
+              "funded rounds": 817,
+              "span checks": 817
+            }
+          }
+        }
+      },
+      "replay": {
+        "starts": 7075,
+        "labelled distinct starts": 7075,
+        "overall": {
+          "funded rounds": 12241,
+          "funded births": 31710,
+          "maximum distinctions": 48,
+          "starts with a knot of more than three places": 7037,
+          "distinct rounds with a broken premise": 192
+        },
+        "by start size": {
+          "3": {
+            "starts": 61,
+            "funded rounds": 144,
+            "funded births": 429,
+            "first-round closed": 2
+          },
+          "4": {
+            "starts": 1046,
+            "funded rounds": 1957,
+            "funded births": 5292,
+            "first-round stalled": 278,
+            "first-round closed": 22
+          },
+          "5": {
+            "starts": 5968,
+            "first-round stalled": 1456,
+            "funded rounds": 10140,
+            "funded births": 25989,
+            "first-round closed": 206
+          }
+        },
+        "by round": {
+          "1": {
+            "funded rounds": 5111,
+            "funded births": 10622,
+            "positive new-only dimension": 3270,
+            "chronological span equal and inside": 5111,
+            "any two or four span equal and inside": 5111,
+            "generators verified shortest in full stage": 5111,
+            "within archived span cap": 5111,
+            "positive new-only dimension within archived span cap": 3270,
+            "distinct rounds with a broken premise": 184
+          },
+          "2": {
+            "funded rounds": 2990,
+            "funded births": 9979,
+            "positive new-only dimension": 2885,
+            "chronological span equal and inside": 2990,
+            "any two or four span equal and inside": 2990,
+            "generators verified shortest in full stage": 2990,
+            "within archived span cap": 2990,
+            "positive new-only dimension within archived span cap": 2885,
+            "distinct rounds with a broken premise": 8
+          },
+          "3": {
+            "funded rounds": 1628,
+            "funded births": 5719,
+            "positive new-only dimension": 1628,
+            "chronological span equal and inside": 1628,
+            "any two or four span equal and inside": 1628,
+            "generators verified shortest in full stage": 1628,
+            "within archived span cap": 1628,
+            "positive new-only dimension within archived span cap": 1628
+          },
+          "4": {
+            "funded rounds": 878,
+            "funded births": 2014,
+            "positive new-only dimension": 878,
+            "chronological span equal and inside": 878,
+            "any two or four span equal and inside": 878,
+            "generators verified shortest in full stage": 878,
+            "within archived span cap": 878,
+            "positive new-only dimension within archived span cap": 878
+          },
+          "5": {
+            "funded rounds": 817,
+            "funded births": 1688,
+            "positive new-only dimension": 817,
+            "chronological span equal and inside": 817,
+            "any two or four span equal and inside": 817,
+            "generators verified shortest in full stage": 817,
+            "within archived span cap": 817,
+            "positive new-only dimension within archived span cap": 817
+          },
+          "6": {
+            "funded rounds": 817,
+            "funded births": 1688,
+            "positive new-only dimension": 817,
+            "chronological span equal and inside": 817,
+            "any two or four span equal and inside": 817,
+            "generators verified shortest in full stage": 817,
+            "within archived span cap": 817,
+            "positive new-only dimension within archived span cap": 817
+          }
+        },
+        "first-round ends": {
+          "closed": 230,
+          "stalled": 1734
+        },
+        "all ends": {
+          "stalled": 4210,
+          "closed": 2048
+        },
+        "zero-fresh births": {
+          "implied": 1818,
+          "implied, 2 inputs": 900,
+          "implied, 3 inputs": 128,
+          "adds an equation": 192,
+          "adds an equation, 3 inputs": 142,
+          "implied, 1 inputs": 747,
+          "implied, 4 inputs": 38,
+          "adds an equation, 4 inputs": 48,
+          "implied, 5 inputs": 5,
+          "adds an equation, 5 inputs": 2
+        },
+        "origin class dimensions": {},
+        "literal origin checks": [],
+        "stages beyond the archived span cap": [],
+        "closing tally": [],
+        "archive comparison": {
+          "premises": {
+            "trajectories compared": 7075,
+            "archived records compared": 18499,
+            "replayed records compared": 18499,
+            "matched trajectories": 7075
+          }
+        }
+      },
+      "recount seconds": 0.037,
+      "replay seconds": 1.192
+    },
+    "census, nae, ordinary": {
+      "recount": {
+        "closing": {
+          "file": "closing_census_nae.jsonl",
+          "sha256": "ba25a7a9f18f8ad1777ac586be97d8dd504748a39d8c67d6b19b048ec0b906ba",
+          "footer matches rows": true,
+          "births": 44452,
+          "ends": {
+            "closed": 230,
+            "stalled": 1734
+          },
+          "by round": {
+            "1": {
+              "births": 10622,
+              "takes all": 1713
+            },
+            "2": {
+              "births": 14310,
+              "takes all": 1075
+            },
+            "3": {
+              "births": 19520,
+              "takes all": 106
+            }
+          },
+          "starts": 7075
+        }
+      },
+      "replay": {
+        "starts": 7075,
+        "labelled distinct starts": 7075,
+        "overall": {
+          "funded rounds": 15333,
+          "funded births": 44452,
+          "maximum distinctions": 66,
+          "starts with a knot of more than three places": 7037
+        },
+        "by start size": {
+          "3": {
+            "starts": 61,
+            "funded rounds": 177,
+            "funded births": 594,
+            "first-round closed": 2
+          },
+          "4": {
+            "starts": 1046,
+            "funded rounds": 2238,
+            "funded births": 6827,
+            "first-round stalled": 278,
+            "first-round closed": 22
+          },
+          "5": {
+            "starts": 5968,
+            "first-round stalled": 1456,
+            "funded rounds": 12918,
+            "funded births": 37031,
+            "first-round closed": 206
+          }
+        },
+        "by round": {
+          "1": {
+            "funded rounds": 5111,
+            "funded births": 10622
+          },
+          "2": {
+            "funded rounds": 5111,
+            "funded births": 14310
+          },
+          "3": {
+            "funded rounds": 5111,
+            "funded births": 19520
+          }
+        },
+        "first-round ends": {
+          "closed": 230,
+          "stalled": 1734
+        },
+        "all ends": {
+          "closed": 230,
+          "stalled": 1734
+        },
+        "zero-fresh births": {},
+        "origin class dimensions": {},
+        "literal origin checks": [],
+        "stages beyond the archived span cap": [],
+        "closing tally": [
+          [
+            [
+              "nae",
+              "not implied",
+              "leaves some",
+              "fresh > 0"
+            ],
+            41558
+          ],
+          [
+            [
+              "nae",
+              "not implied",
+              "takes every loose distinction of its structure",
+              "fresh > 0"
+            ],
+            2894
+          ]
+        ],
+        "archive comparison": {
+          "closing": {
+            "trajectories compared": 7075,
+            "archived records compared": 46416,
+            "replayed records compared": 46416,
+            "matched trajectories": 7075
+          }
+        }
+      },
+      "recount seconds": 0.057,
+      "replay seconds": 1.339
+    },
+    "heldout, parity, ordinary": {
+      "recount": {
+        "premises": {
+          "file": "frozen_premises_heldout.jsonl",
+          "sha256": "f37e48395f50737dc3cd94ba6a14768aec490e0c34aba7529efb07375002fe3d",
+          "footer matches rows": true,
+          "starts": 900,
+          "premise rounds": {
+            "funded rounds": 2348
+          },
+          "premise failures by reason": {},
+          "span": {
+            "checks": 2348,
+            "equal and inside": 2348,
+            "positive dimension": 2303
+          },
+          "all ends": {
+            "stalled": 483,
+            "closed": 33
+          },
+          "first-round ends": {
+            "stalled": 483
+          },
+          "by round": {
+            "1": {
+              "funded rounds": 417,
+              "span checks": 417
+            },
+            "2": {
+              "funded rounds": 394,
+              "span checks": 394
+            },
+            "3": {
+              "funded rounds": 385,
+              "span checks": 385
+            },
+            "4": {
+              "funded rounds": 384,
+              "span checks": 384
+            },
+            "5": {
+              "funded rounds": 384,
+              "span checks": 384
+            },
+            "6": {
+              "funded rounds": 384,
+              "span checks": 384
+            }
+          }
+        },
+        "closing": {
+          "file": "closing_heldout_parity.jsonl",
+          "sha256": "f653c95756b6ca2d3c925480b2977096cc2773ebdde07e421e328acc4df30608",
+          "footer matches rows": true,
+          "births": 6032,
+          "ends": {
+            "stalled": 483,
+            "closed": 32
+          },
+          "by round": {
+            "1": {
+              "births": 1479,
+              "takes all": 23,
+              "implied": 23,
+              "zero fresh": 23
+            },
+            "2": {
+              "births": 1959,
+              "takes all": 9,
+              "implied": 9,
+              "zero fresh": 9
+            },
+            "3": {
+              "births": 2594,
+              "takes all": 1,
+              "implied": 1,
+              "zero fresh": 1
+            }
+          },
+          "starts": 900
+        },
+        "origin": {
+          "file": "origin_heldout.jsonl",
+          "sha256": "96590c506226fdfa38171eb318db23d8b5a5e6086bd56a4eb5810f294a1b10b9",
+          "footer matches rows": true,
+          "starts": 900,
+          "checks": {
+            "stages read": 1196,
+            "positive dimension": 1151,
+            "SHORT failures": 0,
+            "UPTO5 failures": 0
+          },
+          "ends": {
+            "stalled": 483,
+            "closed": 32
+          },
+          "by round": {
+            "1": {
+              "stages read": 417,
+              "positive dimension": 381
+            },
+            "2": {
+              "stages read": 394,
+              "positive dimension": 385
+            },
+            "3": {
+              "stages read": 385,
+              "positive dimension": 385
+            }
+          }
+        }
+      },
+      "replay": {
+        "starts": 900,
+        "labelled distinct starts": 900,
+        "overall": {
+          "starts with a knot of more than three places": 900,
+          "funded rounds": 2348,
+          "funded births": 17825,
+          "maximum distinctions": 264
+        },
+        "by start size": {
+          "6": {
+            "starts": 300,
+            "first-round stalled": 198,
+            "funded rounds": 576,
+            "funded births": 4008
+          },
+          "7": {
+            "starts": 300,
+            "first-round stalled": 184,
+            "funded rounds": 659,
+            "funded births": 4964
+          },
+          "8": {
+            "starts": 300,
+            "funded rounds": 1113,
+            "funded births": 8853,
+            "first-round stalled": 101
+          }
+        },
+        "by round": {
+          "1": {
+            "funded rounds": 417,
+            "funded births": 1479,
+            "positive new-only dimension": 381,
+            "chronological span equal and inside": 417,
+            "any two or four span equal and inside": 417,
+            "generators verified shortest in full stage": 417,
+            "within archived span cap": 417,
+            "positive new-only dimension within archived span cap": 381,
+            "SHORT: origin stages with class facts": 106,
+            "SHORT: origin stages with class facts and positive new-only dimension": 98,
+            "UPTO5: origin stages with class facts": 203,
+            "UPTO5: origin stages with class facts and positive new-only dimension": 198
+          },
+          "2": {
+            "funded rounds": 394,
+            "funded births": 1959,
+            "positive new-only dimension": 385,
+            "chronological span equal and inside": 394,
+            "any two or four span equal and inside": 394,
+            "generators verified shortest in full stage": 394,
+            "within archived span cap": 394,
+            "positive new-only dimension within archived span cap": 385,
+            "SHORT: origin stages with class facts": 96,
+            "SHORT: origin stages with class facts and positive new-only dimension": 93,
+            "UPTO5: origin stages with class facts": 322,
+            "UPTO5: origin stages with class facts and positive new-only dimension": 320
+          },
+          "3": {
+            "funded rounds": 385,
+            "funded births": 2594,
+            "positive new-only dimension": 385,
+            "chronological span equal and inside": 385,
+            "any two or four span equal and inside": 385,
+            "generators verified shortest in full stage": 385,
+            "within archived span cap": 385,
+            "positive new-only dimension within archived span cap": 385,
+            "SHORT: origin stages with class facts": 93,
+            "SHORT: origin stages with class facts and positive new-only dimension": 93,
+            "UPTO5: origin stages with class facts": 320,
+            "UPTO5: origin stages with class facts and positive new-only dimension": 320
+          },
+          "4": {
+            "funded rounds": 384,
+            "funded births": 3259,
+            "positive new-only dimension": 384,
+            "chronological span equal and inside": 384,
+            "any two or four span equal and inside": 384,
+            "generators verified shortest in full stage": 384,
+            "within archived span cap": 384,
+            "positive new-only dimension within archived span cap": 384
+          },
+          "5": {
+            "funded rounds": 384,
+            "funded births": 3930,
+            "positive new-only dimension": 384,
+            "chronological span equal and inside": 384,
+            "any two or four span equal and inside": 384,
+            "generators verified shortest in full stage": 384,
+            "within archived span cap": 384,
+            "positive new-only dimension within archived span cap": 384
+          },
+          "6": {
+            "funded rounds": 384,
+            "funded births": 4604,
+            "positive new-only dimension": 384,
+            "chronological span equal and inside": 384,
+            "any two or four span equal and inside": 384,
+            "generators verified shortest in full stage": 384,
+            "within archived span cap": 384,
+            "positive new-only dimension within archived span cap": 384
+          }
+        },
+        "first-round ends": {
+          "stalled": 483
+        },
+        "all ends": {
+          "stalled": 483,
+          "closed": 33
+        },
+        "zero-fresh births": {
+          "implied": 33,
+          "implied, 1 inputs": 15,
+          "implied, 2 inputs": 16,
+          "implied, 3 inputs": 2
+        },
+        "origin class dimensions": {
+          "SHORT": {
+            "0": 901,
+            "1": 276,
+            "2": 19
+          },
+          "UPTO5": {
+            "0": 351,
+            "1": 551,
+            "3": 46,
+            "2": 248
+          }
+        },
+        "literal origin checks": [
+          {
+            "start": "held out 6-31",
+            "round": 1,
+            "distinctions": 13
+          },
+          {
+            "start": "held out 6-114",
+            "round": 1,
+            "distinctions": 12
+          }
+        ],
+        "stages beyond the archived span cap": [],
+        "closing tally": [
+          [
+            [
+              "parity",
+              "implied",
+              "takes every loose distinction of its structure",
+              "fresh 0"
+            ],
+            33
+          ],
+          [
+            [
+              "parity",
+              "not implied",
+              "leaves some",
+              "fresh > 0"
+            ],
+            5999
+          ]
+        ],
+        "archive comparison": {
+          "premises": {
+            "trajectories compared": 900,
+            "archived records compared": 2864,
+            "replayed records compared": 2864,
+            "matched trajectories": 900
+          },
+          "closing": {
+            "trajectories compared": 900,
+            "archived records compared": 6547,
+            "replayed records compared": 6547,
+            "matched trajectories": 900
+          },
+          "origin": {
+            "trajectories compared": 900,
+            "archived records compared": 1711,
+            "replayed records compared": 1711,
+            "matched trajectories": 900
+          }
+        }
+      },
+      "recount seconds": 0.016,
+      "replay seconds": 0.878
+    },
+    "heldout, nae, ordinary": {
+      "recount": {
+        "closing": {
+          "file": "closing_heldout_nae.jsonl",
+          "sha256": "024f9ef3093f286b10b7a119681ac7d33b6c8f1c04e3529bced6d22dea21603f",
+          "footer matches rows": true,
+          "births": 6140,
+          "ends": {
+            "stalled": 483
+          },
+          "by round": {
+            "1": {
+              "births": 1479,
+              "takes all": 23
+            },
+            "2": {
+              "births": 1997,
+              "takes all": 17
+            },
+            "3": {
+              "births": 2664,
+              "takes all": 10
+            }
+          },
+          "starts": 900
+        }
+      },
+      "replay": {
+        "starts": 900,
+        "labelled distinct starts": 900,
+        "overall": {
+          "starts with a knot of more than three places": 900,
+          "funded rounds": 1251,
+          "funded births": 6140,
+          "maximum distinctions": 84
+        },
+        "by start size": {
+          "6": {
+            "starts": 300,
+            "first-round stalled": 198,
+            "funded rounds": 306,
+            "funded births": 1461
+          },
+          "7": {
+            "starts": 300,
+            "first-round stalled": 184,
+            "funded rounds": 348,
+            "funded births": 1732
+          },
+          "8": {
+            "starts": 300,
+            "funded rounds": 597,
+            "funded births": 2947,
+            "first-round stalled": 101
+          }
+        },
+        "by round": {
+          "1": {
+            "funded rounds": 417,
+            "funded births": 1479
+          },
+          "2": {
+            "funded rounds": 417,
+            "funded births": 1997
+          },
+          "3": {
+            "funded rounds": 417,
+            "funded births": 2664
+          }
+        },
+        "first-round ends": {
+          "stalled": 483
+        },
+        "all ends": {
+          "stalled": 483
+        },
+        "zero-fresh births": {},
+        "origin class dimensions": {},
+        "literal origin checks": [],
+        "stages beyond the archived span cap": [],
+        "closing tally": [
+          [
+            [
+              "nae",
+              "not implied",
+              "leaves some",
+              "fresh > 0"
+            ],
+            6090
+          ],
+          [
+            [
+              "nae",
+              "not implied",
+              "takes every loose distinction of its structure",
+              "fresh > 0"
+            ],
+            50
+          ]
+        ],
+        "archive comparison": {
+          "closing": {
+            "trajectories compared": 900,
+            "archived records compared": 6623,
+            "replayed records compared": 6623,
+            "matched trajectories": 900
+          }
+        }
+      },
+      "recount seconds": 0.007,
+      "replay seconds": 0.172
+    },
+    "built, parity, ordinary": {
+      "recount": {
+        "premises": {
+          "file": "frozen_premises_built.jsonl",
+          "sha256": "6b587952384d15d81ec28f65b0c55bd355de82164b461eae2ff8e80124e72e1a",
+          "footer matches rows": true,
+          "starts": 32,
+          "premise rounds": {
+            "funded rounds": 192
+          },
+          "premise failures by reason": {},
+          "span": {
+            "checks": 144,
+            "equal and inside": 144,
+            "positive dimension": 144,
+            "not run above span cap": 48
+          },
+          "all ends": {},
+          "first-round ends": {},
+          "by round": {
+            "1": {
+              "funded rounds": 32,
+              "span checks": 32
+            },
+            "2": {
+              "funded rounds": 32,
+              "span checks": 32
+            },
+            "3": {
+              "funded rounds": 32,
+              "span checks": 28,
+              "span not run above cap": 4
+            },
+            "4": {
+              "funded rounds": 32,
+              "span checks": 22,
+              "span not run above cap": 10
+            },
+            "5": {
+              "funded rounds": 32,
+              "span checks": 18,
+              "span not run above cap": 14
+            },
+            "6": {
+              "funded rounds": 32,
+              "span not run above cap": 20,
+              "span checks": 12
+            }
+          }
+        }
+      },
+      "replay": {
+        "starts": 32,
+        "labelled distinct starts": 32,
+        "overall": {
+          "starts with a knot of more than three places": 32,
+          "funded rounds": 192,
+          "funded births": 8008,
+          "maximum distinctions": 1782
+        },
+        "by start size": {
+          "18": {
+            "starts": 2,
+            "funded rounds": 12,
+            "funded births": 396
+          },
+          "27": {
+            "starts": 4,
+            "funded rounds": 24,
+            "funded births": 648
+          },
+          "21": {
+            "starts": 2,
+            "funded rounds": 12,
+            "funded births": 180
+          },
+          "30": {
+            "starts": 2,
+            "funded rounds": 12,
+            "funded births": 180
+          },
+          "24": {
+            "starts": 2,
+            "funded rounds": 12,
+            "funded births": 888
+          },
+          "33": {
+            "starts": 2,
+            "funded rounds": 12,
+            "funded births": 888
+          },
+          "36": {
+            "starts": 4,
+            "funded rounds": 24,
+            "funded births": 1436
+          },
+          "28": {
+            "starts": 2,
+            "funded rounds": 12,
+            "funded births": 528
+          },
+          "46": {
+            "starts": 2,
+            "funded rounds": 12,
+            "funded births": 528
+          },
+          "32": {
+            "starts": 2,
+            "funded rounds": 12,
+            "funded births": 240
+          },
+          "50": {
+            "starts": 2,
+            "funded rounds": 12,
+            "funded births": 240
+          },
+          "54": {
+            "starts": 2,
+            "funded rounds": 12,
+            "funded births": 1184
+          },
+          "40": {
+            "starts": 2,
+            "funded rounds": 12,
+            "funded births": 336
+          },
+          "58": {
+            "starts": 2,
+            "funded rounds": 12,
+            "funded births": 336
+          }
+        },
+        "by round": {
+          "1": {
+            "funded rounds": 32,
+            "funded births": 728,
+            "positive new-only dimension": 32,
+            "chronological span equal and inside": 32,
+            "any two or four span equal and inside": 32,
+            "generators verified shortest in full stage": 32,
+            "within archived span cap": 32,
+            "positive new-only dimension within archived span cap": 32
+          },
+          "2": {
+            "funded rounds": 32,
+            "funded births": 896,
+            "positive new-only dimension": 32,
+            "chronological span equal and inside": 32,
+            "any two or four span equal and inside": 32,
+            "generators verified shortest in full stage": 32,
+            "within archived span cap": 32,
+            "positive new-only dimension within archived span cap": 32
+          },
+          "3": {
+            "funded rounds": 32,
+            "funded births": 1120,
+            "positive new-only dimension": 32,
+            "chronological span equal and inside": 32,
+            "any two or four span equal and inside": 32,
+            "generators verified shortest in full stage": 32,
+            "within archived span cap": 28,
+            "positive new-only dimension within archived span cap": 28
+          },
+          "4": {
+            "funded rounds": 32,
+            "funded births": 1400,
+            "positive new-only dimension": 32,
+            "chronological span equal and inside": 32,
+            "any two or four span equal and inside": 32,
+            "generators verified shortest in full stage": 32,
+            "within archived span cap": 22,
+            "positive new-only dimension within archived span cap": 22
+          },
+          "5": {
+            "funded rounds": 32,
+            "funded births": 1736,
+            "positive new-only dimension": 32,
+            "chronological span equal and inside": 32,
+            "any two or four span equal and inside": 32,
+            "generators verified shortest in full stage": 32,
+            "within archived span cap": 18,
+            "positive new-only dimension within archived span cap": 18
+          },
+          "6": {
+            "funded rounds": 32,
+            "funded births": 2128,
+            "positive new-only dimension": 32,
+            "chronological span equal and inside": 32,
+            "any two or four span equal and inside": 32,
+            "generators verified shortest in full stage": 32,
+            "within archived span cap": 12,
+            "positive new-only dimension within archived span cap": 12
+          }
+        },
+        "first-round ends": {},
+        "all ends": {},
+        "zero-fresh births": {},
+        "origin class dimensions": {},
+        "literal origin checks": [],
+        "stages beyond the archived span cap": [
+          {
+            "start": "3 rings of 4, split, double",
+            "round": 6,
+            "distinctions": 450,
+            "dim Z_new": 198,
+            "rank of pairs and loops of four": 198,
+            "inside Z_new": true,
+            "rank of all pairs and four-distinction changes": 198,
+            "shortest in the full stage": true
+          },
+          {
+            "start": "3 rings of 4, split, detour",
+            "round": 6,
+            "distinctions": 471,
+            "dim Z_new": 198,
+            "rank of pairs and loops of four": 198,
+            "inside Z_new": true,
+            "rank of all pairs and four-distinction changes": 198,
+            "shortest in the full stage": true
+          },
+          {
+            "start": "3 rings of 4, paired, double",
+            "round": 6,
+            "distinctions": 450,
+            "dim Z_new": 198,
+            "rank of pairs and loops of four": 198,
+            "inside Z_new": true,
+            "rank of all pairs and four-distinction changes": 198,
+            "shortest in the full stage": true
+          },
+          {
+            "start": "3 rings of 4, paired, detour",
+            "round": 6,
+            "distinctions": 471,
+            "dim Z_new": 198,
+            "rank of pairs and loops of four": 198,
+            "inside Z_new": true,
+            "rank of all pairs and four-distinction changes": 198,
+            "shortest in the full stage": true
+          },
+          {
+            "start": "3 rings of 6, split, double",
+            "round": 4,
+            "distinctions": 576,
+            "dim Z_new": 312,
+            "rank of pairs and loops of four": 312,
+            "inside Z_new": true,
+            "rank of all pairs and four-distinction changes": 312,
+            "shortest in the full stage": true
+          },
+          {
+            "start": "3 rings of 6, split, double",
+            "round": 5,
+            "distinctions": 882,
+            "dim Z_new": 510,
+            "rank of pairs and loops of four": 510,
+            "inside Z_new": true,
+            "rank of all pairs and four-distinction changes": 510,
+            "shortest in the full stage": true
+          },
+          {
+            "start": "3 rings of 6, split, double",
+            "round": 6,
+            "distinctions": 1296,
+            "dim Z_new": 780,
+            "rank of pairs and loops of four": 780,
+            "inside Z_new": true,
+            "rank of all pairs and four-distinction changes": 780,
+            "shortest in the full stage": true
+          },
+          {
+            "start": "3 rings of 6, split, detour",
+            "round": 4,
+            "distinctions": 597,
+            "dim Z_new": 312,
+            "rank of pairs and loops of four": 312,
+            "inside Z_new": true,
+            "rank of all pairs and four-distinction changes": 312,
+            "shortest in the full stage": true
+          },
+          {
+            "start": "3 rings of 6, split, detour",
+            "round": 5,
+            "distinctions": 903,
+            "dim Z_new": 510,
+            "rank of pairs and loops of four": 510,
+            "inside Z_new": true,
+            "rank of all pairs and four-distinction changes": 510,
+            "shortest in the full stage": true
+          },
+          {
+            "start": "3 rings of 6, split, detour",
+            "round": 6,
+            "distinctions": 1317,
+            "dim Z_new": 780,
+            "rank of pairs and loops of four": 780,
+            "inside Z_new": true,
+            "rank of all pairs and four-distinction changes": 780,
+            "shortest in the full stage": true
+          },
+          {
+            "start": "3 rings of 6, paired, double",
+            "round": 4,
+            "distinctions": 576,
+            "dim Z_new": 312,
+            "rank of pairs and loops of four": 312,
+            "inside Z_new": true,
+            "rank of all pairs and four-distinction changes": 312,
+            "shortest in the full stage": true
+          },
+          {
+            "start": "3 rings of 6, paired, double",
+            "round": 5,
+            "distinctions": 882,
+            "dim Z_new": 510,
+            "rank of pairs and loops of four": 510,
+            "inside Z_new": true,
+            "rank of all pairs and four-distinction changes": 510,
+            "shortest in the full stage": true
+          },
+          {
+            "start": "3 rings of 6, paired, double",
+            "round": 6,
+            "distinctions": 1296,
+            "dim Z_new": 780,
+            "rank of pairs and loops of four": 780,
+            "inside Z_new": true,
+            "rank of all pairs and four-distinction changes": 780,
+            "shortest in the full stage": true
+          },
+          {
+            "start": "3 rings of 6, paired, detour",
+            "round": 4,
+            "distinctions": 597,
+            "dim Z_new": 312,
+            "rank of pairs and loops of four": 312,
+            "inside Z_new": true,
+            "rank of all pairs and four-distinction changes": 312,
+            "shortest in the full stage": true
+          },
+          {
+            "start": "3 rings of 6, paired, detour",
+            "round": 5,
+            "distinctions": 903,
+            "dim Z_new": 510,
+            "rank of pairs and loops of four": 510,
+            "inside Z_new": true,
+            "rank of all pairs and four-distinction changes": 510,
+            "shortest in the full stage": true
+          },
+          {
+            "start": "3 rings of 6, paired, detour",
+            "round": 6,
+            "distinctions": 1317,
+            "dim Z_new": 780,
+            "rank of pairs and loops of four": 780,
+            "inside Z_new": true,
+            "rank of all pairs and four-distinction changes": 780,
+            "shortest in the full stage": true
+          },
+          {
+            "start": "4 rings of 4, split, double",
+            "round": 5,
+            "distinctions": 484,
+            "dim Z_new": 200,
+            "rank of pairs and loops of four": 200,
+            "inside Z_new": true,
+            "rank of all pairs and four-distinction changes": 200,
+            "shortest in the full stage": true
+          },
+          {
+            "start": "4 rings of 4, split, double",
+            "round": 6,
+            "distinctions": 612,
+            "dim Z_new": 264,
+            "rank of pairs and loops of four": 264,
+            "inside Z_new": true,
+            "rank of all pairs and four-distinction changes": 264,
+            "shortest in the full stage": true
+          },
+          {
+            "start": "4 rings of 4, split, detour",
+            "round": 4,
+            "distinctions": 414,
+            "dim Z_new": 144,
+            "rank of pairs and loops of four": 144,
+            "inside Z_new": true,
+            "rank of all pairs and four-distinction changes": 144,
+            "shortest in the full stage": true
+          },
+          {
+            "start": "4 rings of 4, split, detour",
+            "round": 5,
+            "distinctions": 526,
+            "dim Z_new": 200,
+            "rank of pairs and loops of four": 200,
+            "inside Z_new": true,
+            "rank of all pairs and four-distinction changes": 200,
+            "shortest in the full stage": true
+          },
+          {
+            "start": "4 rings of 4, split, detour",
+            "round": 6,
+            "distinctions": 654,
+            "dim Z_new": 264,
+            "rank of pairs and loops of four": 264,
+            "inside Z_new": true,
+            "rank of all pairs and four-distinction changes": 264,
+            "shortest in the full stage": true
+          },
+          {
+            "start": "4 rings of 4, paired, double",
+            "round": 5,
+            "distinctions": 484,
+            "dim Z_new": 200,
+            "rank of pairs and loops of four": 200,
+            "inside Z_new": true,
+            "rank of all pairs and four-distinction changes": 200,
+            "shortest in the full stage": true
+          },
+          {
+            "start": "4 rings of 4, paired, double",
+            "round": 6,
+            "distinctions": 612,
+            "dim Z_new": 264,
+            "rank of pairs and loops of four": 264,
+            "inside Z_new": true,
+            "rank of all pairs and four-distinction changes": 264,
+            "shortest in the full stage": true
+          },
+          {
+            "start": "4 rings of 4, paired, detour",
+            "round": 4,
+            "distinctions": 414,
+            "dim Z_new": 144,
+            "rank of pairs and loops of four": 144,
+            "inside Z_new": true,
+            "rank of all pairs and four-distinction changes": 144,
+            "shortest in the full stage": true
+          },
+          {
+            "start": "4 rings of 4, paired, detour",
+            "round": 5,
+            "distinctions": 526,
+            "dim Z_new": 200,
+            "rank of pairs and loops of four": 200,
+            "inside Z_new": true,
+            "rank of all pairs and four-distinction changes": 200,
+            "shortest in the full stage": true
+          },
+          {
+            "start": "4 rings of 4, paired, detour",
+            "round": 6,
+            "distinctions": 654,
+            "dim Z_new": 264,
+            "rank of pairs and loops of four": 264,
+            "inside Z_new": true,
+            "rank of all pairs and four-distinction changes": 264,
+            "shortest in the full stage": true
+          },
+          {
+            "start": "4 rings of 6, split, double",
+            "round": 3,
+            "distinctions": 492,
+            "dim Z_new": 232,
+            "rank of pairs and loops of four": 232,
+            "inside Z_new": true,
+            "rank of all pairs and four-distinction changes": 232,
+            "shortest in the full stage": true
+          },
+          {
+            "start": "4 rings of 6, split, double",
+            "round": 4,
+            "distinctions": 780,
+            "dim Z_new": 416,
+            "rank of pairs and loops of four": 416,
+            "inside Z_new": true,
+            "rank of all pairs and four-distinction changes": 416,
+            "shortest in the full stage": true
+          },
+          {
+            "start": "4 rings of 6, split, double",
+            "round": 5,
+            "distinctions": 1188,
+            "dim Z_new": 680,
+            "rank of pairs and loops of four": 680,
+            "inside Z_new": true,
+            "rank of all pairs and four-distinction changes": 680,
+            "shortest in the full stage": true
+          },
+          {
+            "start": "4 rings of 6, split, double",
+            "round": 6,
+            "distinctions": 1740,
+            "dim Z_new": 1040,
+            "rank of pairs and loops of four": 1040,
+            "inside Z_new": true,
+            "rank of all pairs and four-distinction changes": 1040,
+            "shortest in the full stage": true
+          },
+          {
+            "start": "4 rings of 6, split, detour",
+            "round": 3,
+            "distinctions": 534,
+            "dim Z_new": 232,
+            "rank of pairs and loops of four": 232,
+            "inside Z_new": true,
+            "rank of all pairs and four-distinction changes": 232,
+            "shortest in the full stage": true
+          },
+          {
+            "start": "4 rings of 6, split, detour",
+            "round": 4,
+            "distinctions": 822,
+            "dim Z_new": 416,
+            "rank of pairs and loops of four": 416,
+            "inside Z_new": true,
+            "rank of all pairs and four-distinction changes": 416,
+            "shortest in the full stage": true
+          },
+          {
+            "start": "4 rings of 6, split, detour",
+            "round": 5,
+            "distinctions": 1230,
+            "dim Z_new": 680,
+            "rank of pairs and loops of four": 680,
+            "inside Z_new": true,
+            "rank of all pairs and four-distinction changes": 680,
+            "shortest in the full stage": true
+          },
+          {
+            "start": "4 rings of 6, split, detour",
+            "round": 6,
+            "distinctions": 1782,
+            "dim Z_new": 1040,
+            "rank of pairs and loops of four": 1040,
+            "inside Z_new": true,
+            "rank of all pairs and four-distinction changes": 1040,
+            "shortest in the full stage": true
+          },
+          {
+            "start": "4 rings of 6, paired, double",
+            "round": 3,
+            "distinctions": 492,
+            "dim Z_new": 232,
+            "rank of pairs and loops of four": 232,
+            "inside Z_new": true,
+            "rank of all pairs and four-distinction changes": 232,
+            "shortest in the full stage": true
+          },
+          {
+            "start": "4 rings of 6, paired, double",
+            "round": 4,
+            "distinctions": 780,
+            "dim Z_new": 416,
+            "rank of pairs and loops of four": 416,
+            "inside Z_new": true,
+            "rank of all pairs and four-distinction changes": 416,
+            "shortest in the full stage": true
+          },
+          {
+            "start": "4 rings of 6, paired, double",
+            "round": 5,
+            "distinctions": 1188,
+            "dim Z_new": 680,
+            "rank of pairs and loops of four": 680,
+            "inside Z_new": true,
+            "rank of all pairs and four-distinction changes": 680,
+            "shortest in the full stage": true
+          },
+          {
+            "start": "4 rings of 6, paired, double",
+            "round": 6,
+            "distinctions": 1740,
+            "dim Z_new": 1040,
+            "rank of pairs and loops of four": 1040,
+            "inside Z_new": true,
+            "rank of all pairs and four-distinction changes": 1040,
+            "shortest in the full stage": true
+          },
+          {
+            "start": "4 rings of 6, paired, detour",
+            "round": 3,
+            "distinctions": 534,
+            "dim Z_new": 232,
+            "rank of pairs and loops of four": 232,
+            "inside Z_new": true,
+            "rank of all pairs and four-distinction changes": 232,
+            "shortest in the full stage": true
+          },
+          {
+            "start": "4 rings of 6, paired, detour",
+            "round": 4,
+            "distinctions": 822,
+            "dim Z_new": 416,
+            "rank of pairs and loops of four": 416,
+            "inside Z_new": true,
+            "rank of all pairs and four-distinction changes": 416,
+            "shortest in the full stage": true
+          },
+          {
+            "start": "4 rings of 6, paired, detour",
+            "round": 5,
+            "distinctions": 1230,
+            "dim Z_new": 680,
+            "rank of pairs and loops of four": 680,
+            "inside Z_new": true,
+            "rank of all pairs and four-distinction changes": 680,
+            "shortest in the full stage": true
+          },
+          {
+            "start": "4 rings of 6, paired, detour",
+            "round": 6,
+            "distinctions": 1782,
+            "dim Z_new": 1040,
+            "rank of pairs and loops of four": 1040,
+            "inside Z_new": true,
+            "rank of all pairs and four-distinction changes": 1040,
+            "shortest in the full stage": true
+          },
+          {
+            "start": "4 rings of 7, split, double",
+            "round": 6,
+            "distinctions": 456,
+            "dim Z_new": 168,
+            "rank of pairs and loops of four": 168,
+            "inside Z_new": true,
+            "rank of all pairs and four-distinction changes": 168,
+            "shortest in the full stage": true
+          },
+          {
+            "start": "4 rings of 7, split, detour",
+            "round": 5,
+            "distinctions": 442,
+            "dim Z_new": 140,
+            "rank of pairs and loops of four": 140,
+            "inside Z_new": true,
+            "rank of all pairs and four-distinction changes": 140,
+            "shortest in the full stage": true
+          },
+          {
+            "start": "4 rings of 7, split, detour",
+            "round": 6,
+            "distinctions": 498,
+            "dim Z_new": 168,
+            "rank of pairs and loops of four": 168,
+            "inside Z_new": true,
+            "rank of all pairs and four-distinction changes": 168,
+            "shortest in the full stage": true
+          },
+          {
+            "start": "4 rings of 7, paired, double",
+            "round": 6,
+            "distinctions": 456,
+            "dim Z_new": 168,
+            "rank of pairs and loops of four": 168,
+            "inside Z_new": true,
+            "rank of all pairs and four-distinction changes": 168,
+            "shortest in the full stage": true
+          },
+          {
+            "start": "4 rings of 7, paired, detour",
+            "round": 5,
+            "distinctions": 442,
+            "dim Z_new": 140,
+            "rank of pairs and loops of four": 140,
+            "inside Z_new": true,
+            "rank of all pairs and four-distinction changes": 140,
+            "shortest in the full stage": true
+          },
+          {
+            "start": "4 rings of 7, paired, detour",
+            "round": 6,
+            "distinctions": 498,
+            "dim Z_new": 168,
+            "rank of pairs and loops of four": 168,
+            "inside Z_new": true,
+            "rank of all pairs and four-distinction changes": 168,
+            "shortest in the full stage": true
+          }
+        ],
+        "closing tally": [],
+        "archive comparison": {
+          "premises": {
+            "trajectories compared": 32,
+            "archived records compared": 192,
+            "replayed records compared": 192,
+            "matched trajectories": 32
+          }
+        }
+      },
+      "recount seconds": 0.001,
+      "replay seconds": 0.31
+    },
+    "sampled, parity, ordinary": {
+      "recount": {
+        "premises": {
+          "file": "frozen_premises_sampled.jsonl",
+          "sha256": "d33b7056a37b43db85441e9cb59cdbea9e52529f4f16dce99e7c45372ed8f211",
+          "footer matches rows": true,
+          "starts": 400,
+          "premise rounds": {
+            "funded rounds": 398
+          },
+          "premise failures by reason": {},
+          "span": {
+            "checks": 398,
+            "equal and inside": 398,
+            "positive dimension": 396
+          },
+          "all ends": {
+            "stalled": 331,
+            "closed": 4
+          },
+          "first-round ends": {
+            "stalled": 331
+          },
+          "by round": {
+            "1": {
+              "funded rounds": 69,
+              "span checks": 69
+            },
+            "2": {
+              "funded rounds": 67,
+              "span checks": 67
+            },
+            "3": {
+              "funded rounds": 67,
+              "span checks": 67
+            },
+            "4": {
+              "funded rounds": 65,
+              "span checks": 65
+            },
+            "5": {
+              "funded rounds": 65,
+              "span checks": 65
+            },
+            "6": {
+              "funded rounds": 65,
+              "span checks": 65
+            }
+          }
+        }
+      },
+      "replay": {
+        "starts": 400,
+        "labelled distinct starts": 400,
+        "overall": {
+          "starts with a knot of more than three places": 400,
+          "funded rounds": 398,
+          "funded births": 3175,
+          "maximum distinctions": 250
+        },
+        "by start size": {
+          "9": {
+            "starts": 100,
+            "first-round stalled": 84,
+            "funded rounds": 88,
+            "funded births": 547
+          },
+          "10": {
+            "starts": 100,
+            "funded rounds": 102,
+            "funded births": 761,
+            "first-round stalled": 83
+          },
+          "11": {
+            "starts": 100,
+            "funded rounds": 58,
+            "funded births": 401,
+            "first-round stalled": 89
+          },
+          "12": {
+            "starts": 100,
+            "funded rounds": 150,
+            "funded births": 1466,
+            "first-round stalled": 75
+          }
+        },
+        "by round": {
+          "1": {
+            "funded rounds": 69,
+            "funded births": 290,
+            "positive new-only dimension": 67,
+            "chronological span equal and inside": 69,
+            "any two or four span equal and inside": 69,
+            "generators verified shortest in full stage": 69,
+            "within archived span cap": 69,
+            "positive new-only dimension within archived span cap": 67
+          },
+          "2": {
+            "funded rounds": 67,
+            "funded births": 367,
+            "positive new-only dimension": 67,
+            "chronological span equal and inside": 67,
+            "any two or four span equal and inside": 67,
+            "generators verified shortest in full stage": 67,
+            "within archived span cap": 67,
+            "positive new-only dimension within archived span cap": 67
+          },
+          "3": {
+            "funded rounds": 67,
+            "funded births": 469,
+            "positive new-only dimension": 67,
+            "chronological span equal and inside": 67,
+            "any two or four span equal and inside": 67,
+            "generators verified shortest in full stage": 67,
+            "within archived span cap": 67,
+            "positive new-only dimension within archived span cap": 67
+          },
+          "4": {
+            "funded rounds": 65,
+            "funded births": 575,
+            "positive new-only dimension": 65,
+            "chronological span equal and inside": 65,
+            "any two or four span equal and inside": 65,
+            "generators verified shortest in full stage": 65,
+            "within archived span cap": 65,
+            "positive new-only dimension within archived span cap": 65
+          },
+          "5": {
+            "funded rounds": 65,
+            "funded births": 683,
+            "positive new-only dimension": 65,
+            "chronological span equal and inside": 65,
+            "any two or four span equal and inside": 65,
+            "generators verified shortest in full stage": 65,
+            "within archived span cap": 65,
+            "positive new-only dimension within archived span cap": 65
+          },
+          "6": {
+            "funded rounds": 65,
+            "funded births": 791,
+            "positive new-only dimension": 65,
+            "chronological span equal and inside": 65,
+            "any two or four span equal and inside": 65,
+            "generators verified shortest in full stage": 65,
+            "within archived span cap": 65,
+            "positive new-only dimension within archived span cap": 65
+          }
+        },
+        "first-round ends": {
+          "stalled": 331
+        },
+        "all ends": {
+          "stalled": 331,
+          "closed": 4
+        },
+        "zero-fresh births": {
+          "implied": 4,
+          "implied, 2 inputs": 4
+        },
+        "origin class dimensions": {},
+        "literal origin checks": [],
+        "stages beyond the archived span cap": [],
+        "closing tally": [],
+        "archive comparison": {
+          "premises": {
+            "trajectories compared": 400,
+            "archived records compared": 733,
+            "replayed records compared": 733,
+            "matched trajectories": 400
+          }
+        }
+      },
+      "recount seconds": 0.001,
+      "replay seconds": 0.119
+    },
+    "small built, parity, ordinary": {
+      "recount": {
+        "closing": {
+          "file": "closing_built_parity.jsonl",
+          "sha256": "ce8a66737d82e1219d3c57ac546377f2e5dad6c7109726d714982411add3bc43",
+          "footer matches rows": true,
+          "births": 72,
+          "ends": {
+            "stalled": 2
+          },
+          "by round": {
+            "1": {
+              "births": 18
+            },
+            "2": {
+              "births": 24
+            },
+            "3": {
+              "births": 30
+            }
+          },
+          "starts": 4
+        },
+        "origin": {
+          "file": "origin_built.jsonl",
+          "sha256": "16f5cad82fc7f71bfe2f5fa7fb7184213a0d12ff9609b32eb86da6d3dd6ae082",
+          "footer matches rows": true,
+          "starts": 4,
+          "checks": {
+            "stages read": 6,
+            "positive dimension": 6,
+            "SHORT failures": 0,
+            "UPTO5 failures": 0
+          },
+          "ends": {
+            "stalled": 2
+          },
+          "by round": {
+            "1": {
+              "stages read": 2,
+              "positive dimension": 2
+            },
+            "2": {
+              "stages read": 2,
+              "positive dimension": 2
+            },
+            "3": {
+              "stages read": 2,
+              "positive dimension": 2
+            }
+          }
+        }
+      },
+      "replay": {
+        "starts": 4,
+        "labelled distinct starts": 4,
+        "overall": {
+          "starts with a knot of more than three places": 4,
+          "funded rounds": 6,
+          "funded births": 72,
+          "maximum distinctions": 103
+        },
+        "by start size": {
+          "14": {
+            "starts": 4,
+            "funded rounds": 6,
+            "funded births": 72,
+            "first-round stalled": 2
+          }
+        },
+        "by round": {
+          "1": {
+            "funded rounds": 2,
+            "funded births": 18,
+            "SHORT: origin stages with class facts": 1,
+            "SHORT: origin stages with class facts and positive new-only dimension": 1,
+            "UPTO5: origin stages with class facts": 2,
+            "UPTO5: origin stages with class facts and positive new-only dimension": 2
+          },
+          "2": {
+            "funded rounds": 2,
+            "funded births": 24,
+            "SHORT: origin stages with class facts": 2,
+            "SHORT: origin stages with class facts and positive new-only dimension": 2,
+            "UPTO5: origin stages with class facts": 2,
+            "UPTO5: origin stages with class facts and positive new-only dimension": 2
+          },
+          "3": {
+            "funded rounds": 2,
+            "funded births": 30,
+            "SHORT: origin stages with class facts": 2,
+            "SHORT: origin stages with class facts and positive new-only dimension": 2,
+            "UPTO5: origin stages with class facts": 2,
+            "UPTO5: origin stages with class facts and positive new-only dimension": 2
+          }
+        },
+        "first-round ends": {
+          "stalled": 2
+        },
+        "all ends": {
+          "stalled": 2
+        },
+        "zero-fresh births": {},
+        "origin class dimensions": {
+          "SHORT": {
+            "2": 5,
+            "0": 1
+          },
+          "UPTO5": {
+            "2": 3,
+            "4": 3
+          }
+        },
+        "literal origin checks": [],
+        "stages beyond the archived span cap": [],
+        "closing tally": [
+          [
+            [
+              "parity",
+              "not implied",
+              "leaves some",
+              "fresh > 0"
+            ],
+            72
+          ]
+        ],
+        "archive comparison": {
+          "closing": {
+            "trajectories compared": 4,
+            "archived records compared": 74,
+            "replayed records compared": 74,
+            "matched trajectories": 4
+          },
+          "origin": {
+            "trajectories compared": 4,
+            "archived records compared": 8,
+            "replayed records compared": 8,
+            "matched trajectories": 4
+          }
+        }
+      },
+      "recount seconds": 0.0,
+      "replay seconds": 0.007
+    },
+    "small built, nae, ordinary": {
+      "recount": {
+        "closing": {
+          "file": "closing_built_nae.jsonl",
+          "sha256": "1221eb4ace39c59d6e57295b33dc079b5d1e8a5fdd61d80f0f56db964c38fc4f",
+          "footer matches rows": true,
+          "births": 72,
+          "ends": {
+            "stalled": 2
+          },
+          "by round": {
+            "1": {
+              "births": 18
+            },
+            "2": {
+              "births": 24
+            },
+            "3": {
+              "births": 30
+            }
+          },
+          "starts": 4
+        }
+      },
+      "replay": {
+        "starts": 4,
+        "labelled distinct starts": 4,
+        "overall": {
+          "starts with a knot of more than three places": 4,
+          "funded rounds": 6,
+          "funded births": 72,
+          "maximum distinctions": 103
+        },
+        "by start size": {
+          "14": {
+            "starts": 4,
+            "funded rounds": 6,
+            "funded births": 72,
+            "first-round stalled": 2
+          }
+        },
+        "by round": {
+          "1": {
+            "funded rounds": 2,
+            "funded births": 18
+          },
+          "2": {
+            "funded rounds": 2,
+            "funded births": 24
+          },
+          "3": {
+            "funded rounds": 2,
+            "funded births": 30
+          }
+        },
+        "first-round ends": {
+          "stalled": 2
+        },
+        "all ends": {
+          "stalled": 2
+        },
+        "zero-fresh births": {},
+        "origin class dimensions": {},
+        "literal origin checks": [],
+        "stages beyond the archived span cap": [],
+        "closing tally": [
+          [
+            [
+              "nae",
+              "not implied",
+              "leaves some",
+              "fresh > 0"
+            ],
+            72
+          ]
+        ],
+        "archive comparison": {
+          "closing": {
+            "trajectories compared": 4,
+            "archived records compared": 74,
+            "replayed records compared": 74,
+            "matched trajectories": 4
+          }
+        }
+      },
+      "recount seconds": 0.0,
+      "replay seconds": 0.002
+    }
+  },
+  "total seconds": 18.317
+}

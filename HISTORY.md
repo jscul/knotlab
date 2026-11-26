@@ -3,6 +3,10 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 26 November 2026 · A built binding refereed: confirmed with fixes, bindings on sampled starts too
+
+**Corrections from [an independent referee's report](research/BUILT-BINDING-20261126-001/referee-R1/report.md), folded into [the decision](research/BUILT-BINDING-20261126-001/decision.md).** The study's finding stands: where ordinary growth binds facts that no single knot reads, the relation is the start's own sum of knot laws, and growth makes the bound quantities facts that every small change keeps. Its claim that no binding occurs on sampled starts is withdrawn: one held-out eight-knot start and seven of 67 stages of a larger sample bind, under changes of at most five distinctions. "Held only by whole carriers" is narrowed: each fact also has a smaller reader, and on rings of even length a carrier splits into two parts that are facts of their own.
+
 ## 26 November 2026 · Whether growth binds whole-held facts refereed: refuted
 
 **Corrections from [an independent referee's report](research/BINDING-20261126-001/referee-R1/report.md), folded into [the decision](research/BINDING-20261126-001/decision.md).** The conclusion that ordinary parity growth leaves facts held by the whole unbound is withdrawn. On a 30-knot start built for the review, three disjoint cycles of distinctions born in the first round carry facts that no single knot reads, and after the second round their parities take exactly the four even triples; on one of the study's own sampled ten-knot starts three path parities are bound after the third round. The study's frozen prediction held on every start it read, which stop at eight knots, and its counts were an unfinished prefix (7,961 stages with forced relations, not 7,713). The companion study under the forbidding cuts withdraws its conclusion that a tower is closed for the recorded laws ([decision](research/CUT-BINDING-20261126-001/decision.md)). Whether the binding is made by the growth or carried from the start's own laws is being checked.

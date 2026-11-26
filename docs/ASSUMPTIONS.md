@@ -344,6 +344,7 @@ evidence: results and their status come from the records each entry links.
 | [A286](#a286--strata-starts-built-by-hand-with-large-groups-a-second-weighting-and-a-longer-horizon-to-test-the-late-view-predictor) | Strata, starts built by hand with large groups, a second weighting and a longer horizon, to test the late-view predictor | scaffold | Assumed |
 | [A287](#a287--a-round-1-group-of-three-or-more-knots-is-one-cell-of-the-map-of-joins) | A round-1 group of three or more knots is one cell of the map of joins | reading | Under challenge |
 | [A288](#a288--a-reader-as-one-start-knots-descendants-a-region-cut-at-holders-the-round-and-a-cap-to-grow-a-view-on-demand) | A reader as one start knot's descendants, a region cut at holders, the round and a cap, to grow a view on demand | scaffold | Assumed |
+| [A289](#a289--settings-as-free-local-edits-the-preparation-kept-through-the-edits-two-weightings-and-a-census-to-test-joins-that-forbid) | Settings as free local edits, the preparation kept through the edits, two weightings and a census, to test joins that forbid | scaffold | Assumed |
 
 ## Entries
 
@@ -5982,3 +5983,14 @@ evidence: results and their status come from the records each entry links.
   The model is not expected to supply them: they are how an observer is placed in the growth.
 - **History.**
   - 2026-11-26 · Entered with `ON-DEMAND-20261126-001` at its freeze.
+
+### A289 · Settings as free local edits, the preparation kept through the edits, two weightings and a census, to test joins that forbid
+
+**Assumed** · 2026-11-26 · scaffold
+
+- **Statement.** For one study of G18, choices made to ask whether a join that forbids (A129, A130) gives a four-correlation excess or a three-reader contradiction with free settings: (1) a reader's setting is a free local edit, one more loose distinction at its holder or not (E1), or at which of its two holders (E2); (2) the preparation is the start's allowed states kept through the edits (the start's knots stay in force beside the edited ones), so an edit alone moves no weight; (3) two weightings, every allowed state of each grown structure equally (U), and every surviving state of the edited start equally with its completions sharing its weight (S), each setting pair counted separately; (4) the reading, the value of a fixed old loose distinction of the reader's holder (E2 also the value its edit added); (5) the complete record, every value of the reader's holders and of births with one of them as a parent, with those births' shapes; (6) one round of growth; (7) the census of every start of three to five knots up to relabelling (at most 12 distinctions) and a sampled extension of 6 to 8 knots (each pair meeting with probability 1/3; at most 18 distinctions).
+- **Why.** Adopted by the thread on 26 November 2026 for `FORBID-EDITS-20261126-001` at the coordinator's go-ahead, with the advisor's review: free readings of one surviving structure are already bounded by 2 under any law that forbids, so the settings must change the structure.
+- **Rests on it.** Whatever the study finds about excesses under joins that forbid ([the note](../research/FORBID-EDITS-20261126-001/README.md)).
+- **Challenge.** Other edits (a removed distinction, a changed meeting), more rounds, other readings, a weighting that does not count each setting pair separately, larger or built starts. Counting each setting pair's worlds separately is itself a choice; with all four counted together the settings would not be free. The model is not expected to keep these choices; they are a test bench.
+- **History.**
+  - 2026-11-26 · Entered with `FORBID-EDITS-20261126-001`.

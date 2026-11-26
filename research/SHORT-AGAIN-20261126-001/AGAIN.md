@@ -1,5 +1,7 @@
 # Once a change from afar is heard, is a second heard?
 
+> **Refereed (R1, confirmed with fixes, no Block): the narrowings are in the notice of [the decision](decision.md).**
+
 Third study after the first checkpoint of `SHORT-AGAIN-20261126-001`. A check by the thread, not a registered study;
 computed; referee pending. Program: [`again.py`](again.py), [`drive_again.py`](drive_again.py); table
 [`again_table.md`](again_table.md) ([`tally_again.py`](tally_again.py) on `again_runs.jsonl.gz`).

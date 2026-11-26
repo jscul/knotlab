@@ -5,19 +5,36 @@ standing rule; goals G15 with G18; register entries A282, A224), closed 26 Novem
 registered: computed; referee pending. [The note](README.md) · [advisor's question](advisor_question.md) and
 [answer](advisor_answer.md)
 
+> **Referee R1, confirmed with fixes and one Block, folded in** ([report](referee-R1/report.md)). **Block:** the switch is
+> not a test of the far site's loose count. Over all 599 four-knot sited senders at caps of three and six the receiver
+> switches with 0 of 59 sites holding no loose distinction, 4 of 144 holding one, 175 of 198 holding two and 0 of 198
+> holding three, and another knot of the sender can reverse the reading while the site still holds two. What stands:
+> on the five-sender panel the matched receiver tells the two-knot sender apart at round 2d + 1, at every distance and
+> cap tried. **Narrowings:** an addition at the two-knot sender's site acting by round 3 cancels the switch at every d
+> tried (2 to 5), so the cut is not "round d"; the six receivers have the same counts of own births, not the same
+> births, and own knots short in alternate rounds is not part of the tally; "a site with exactly k places" describes
+> one construction (under a cap of six a six-place site holding three loose misses the reading, a seven-place site
+> holding four keeps it; only 6 of 10 cap-four and 9 of 21 cap-five switchers fit it); under one fewer 37 receivers
+> first read after round 2d at d = 2, all with an own knot short first; at cap five and d = 3 the seven senders switch
+> the receiver at round 13 when read past the knot bound; the history does not show that the rule's text predates its
+> test; the 646 entries are 645 distinct sited starts. **Credit:** the first switch, its 18, 2 and 28 split of senders
+> and the cap-four delay were found in the short-again study.
+
 ## What stands
 
 1. **Under the cap of three one kind of receiver switches.** Of 646 receivers (every sited start of one to four
    knots of the census, and the bench's three patterns), six switch, all with the same own births with every sender:
    the three-knot start holding one, two and two loose distinctions sited at the one, and five starts of four knots
-   that grow as it does. They switch at round 2d + 1 at every distance (5, 7, 9, 11 at d = 2 to 5) when the far site
-   holds two loose distinctions, and stay switched to round 22.
+   that grow as it does (the same counts). They switch at round 2d + 1 at every distance (5, 7, 9, 11 at d = 2 to 5)
+   with the two-knot sender of the five-sender panel (not with every sender whose site holds two: see the notice), and
+   stay switched to round 22 with it.
 2. **The rule, tested at two caps it was not read from.** Under a cap of k, a start of three mutually sharing knots
    whose site has exactly k places, the other two holding two loose distinctions, reads at round 2d + 1 whether the
    far site holds two loose distinctions: k = 3, 4, 5 from the census, k = 6 and 7 predicted on starts built by hand
    and found (rounds 5 and 7 at d = 2 and 3).
-3. **What settles it is the far end's first d rounds.** A change at the far site acting in round d cancels the switch;
-   one acting in round d + 1 is not heard through round 16 (all five caps).
+3. **What settles it is the far end's first rounds.** An addition at the two-knot sender's site acting by round 3
+   cancels the switch, one acting from round 4 on does not (at d = 2 to 5 and all five caps; the referee's narrowing of
+   "round d").
 4. **Not without a cap.** Under the ordinary count no receiver reads the far end at all by a meeting; under the
    record's one fewer receivers read it only from d to 2d, with an own knot waiting first.
 

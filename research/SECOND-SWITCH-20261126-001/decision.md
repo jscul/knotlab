@@ -5,6 +5,10 @@ standing rule; goals G15 with G18; register entries A277, A282), closed 26 Novem
 registered: computed; referee pending. [The note](README.md) · [advisor's question](advisor_question.md) and
 [answer](advisor_answer.md)
 
+> **Note.** The switch receiver's study was refereed after this one closed: the switch is a reading of the two-knot
+> sender on its five-sender panel, not of the far site's loose count in general (its decision, notice). The negative
+> and its reason here do not depend on that reading.
+
 ## What stands
 
 1. **Under caps of three to seven, by a meeting, no change made by the far pattern's own knots after round 3 reaches the

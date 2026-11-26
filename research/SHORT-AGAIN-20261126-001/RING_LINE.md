@@ -1,5 +1,7 @@
 # The ring that returns at one end of a waiting line: does a change pass each time it comes round?
 
+> **Refereed (R1, confirmed with fixes, no Block): the narrowings are in the notice of [the decision](decision.md).**
+
 Direction 1 of [the report at the first checkpoint](report_1.md) of `SHORT-AGAIN-20261126-001`, taken up without a
 new word from the owner (his standing rule: a selected direction is run). A check by the thread, not a registered
 study; computed; referee pending. Program: [`ring_line.py`](ring_line.py).

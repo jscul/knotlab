@@ -1,5 +1,7 @@
 # Is hearing from afar the end of a jam?
 
+> **Refereed (R1, confirmed with fixes, no Block): the narrowings are in the notice of [the decision](decision.md).**
+
 Directions 2 and 3 of [the report at the first checkpoint](report_1.md) of `SHORT-AGAIN-20261126-001`, read
 together: why the source hears along a line and the ring does not, and whether the made rations matter at all.
 A check by the thread, not a registered study; computed; referee pending. Program: [`jam.py`](jam.py).

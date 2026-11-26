@@ -1,5 +1,7 @@
 # A ration under which knots are short now and then: does a pattern then hear another from afar?
 
+> **Refereed (R1, confirmed with fixes, no Block): the narrowings are in the notice of [the decision](decision.md).**
+
 Epic `SHORT-AGAIN-20261126-001`, at the owner's word ([request](owner_request.md)). A check by the thread, not a
 registered study; computed; referee pending. Every ration here is made by hand for the purpose: a scaffold.
 

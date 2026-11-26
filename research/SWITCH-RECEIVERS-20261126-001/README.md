@@ -5,6 +5,9 @@ Epic `SWITCH-RECEIVERS-20261126-001`, direction 1 of the close of
 selected direction is run). A check by the thread, not a registered study; computed; referee pending. Program:
 [`receivers.py`](receivers.py).
 
+> **Referee R1 (confirmed with fixes, one Block): see the notice in [the decision](decision.md).** The switch is not a
+> reading of the far site's loose count in general; the counts below stand.
+
 ## Why
 
 Under the cap of three, by a meeting through a line of link knots, one receiver of 47 (three knots each sharing a
@@ -182,8 +185,9 @@ about three rounds a step.
 
 - **One kind of receiver for each cap** carries the main result; the rule is stated for starts of three mutually
   sharing knots and tested on two more caps, not on larger starts.
-- **What is read is one property of one knot**: whether the far site holds two loose distinctions. Not what the far
-  pattern is as a whole. Why two, and why the round is 2d + 1, is not explained: the reading of a pass turned back at
+- **What is read is not one property of one knot** (referee's Block): on the five-sender panel the matched receiver
+  tells the two-knot sender apart at round 2d + 1; another knot in the sender can reverse this reading at a fixed
+  site. Not what the far pattern is as a whole either. Why two, and why the round is 2d + 1, is not explained: the reading of a pass turned back at
   the far site does not survive the check of the site's slack.
 - **It rests on a cap** (A224's, here of three to seven), on the meeting and on the link knots; without a cap nothing
   is read. The model is not expected to keep a cap of a fixed size; whether a cap that the model could supply (a

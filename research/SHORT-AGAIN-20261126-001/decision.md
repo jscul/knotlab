@@ -7,6 +7,22 @@ two threads, none registered: computed on the cases named; referee pending.
 [the ring at one end of the line](RING_LINE.md) · [is hearing from afar the end of a jam](JAM.md) ·
 [a second change](AGAIN.md) · [advisor, first](advisor_answer.md) · [advisor, second](advisor_answer_2.md)
 
+> **Referee R1, confirmed with fixes, no Block, folded in** ([report](referee-R1/report.md)). **Narrowings:** the cap
+> switch separates the two-loose senders on an unmarked line of known length, but a mark on the line can give the same
+> own births with a stub at its end, and at the switch the receiver's partners of mixed descent, owed four and given
+> three, and own descendants of all three receiver knots make the extra offshoots; the waiting rule is an association,
+> not a route (of the 492 first hearings from three steps or more with no waiting own knot in the unchanged growth,
+> 491 had one after the change, and at two steps 353 of 7,036 lacked one in either growth); without the change the
+> runs make no birth in rounds 2 to 16 under the two made one-fewer rations at every distance and under BUSY-FEWER at
+> one and two steps, and one marked run at four steps reached 4,766 knots at round 11 (not "grows without bound");
+> the ring and the stub give the same own births over 21 aligned starts, none of 1,855 first additions at two to eight
+> steps is heard, and no second addition was tested there; of 704 changes heard under one of the two all-birth
+> one-fewer rations, 40 differ in whether they are heard and 24 more in when, and the one-round ring delay belongs to
+> JOIN-FEWER; the second change: 120 of 376 under each ration, 48 pairs gave a third placement with one round left and
+> 72 none; peeling with the groups recomputed predicts every recorded round (2,280 of 2,624 with the groups held
+> fixed). **Credit:** the bench before this study already had early responses to marks off the site, and its census
+> had this receiver's one-step switch.
+
 ## What stands
 
 1. **What the first checkpoint heard from afar was the end of a jam.** Two seven-knot sources joined through a line
@@ -48,8 +64,9 @@ to 6 rest on the meeting (by a shared distinction they change), and 5 on the cap
 | Broader exploration — a cap as a threshold on what the line's knots are owed | Searching | One switch receiver of 47, caps of three and four; the sender's side has a rule, the receiver's not |
 | Long-term goal — G15 Learning, with G18 Comparing growth laws | Capability gained (thin) | A growing pattern's course set late and from afar by the far end's site, at every distance tried, under a cap |
 
-Under the cap of three the receiver is told one property of one knot, the far end's site, and only one receiver of
-47 can be told it; that is the missing bridge to a pattern learning what another pattern is.
+Under the cap of three the receiver tells the senders apart on an unmarked line, and only one receiver of 47 does it;
+a mark on the line can give the same history as a stub (referee). That is the missing bridge to a pattern learning
+what another pattern is.
 
 **Next step:** Research directions — selected: #1
 

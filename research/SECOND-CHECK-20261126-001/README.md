@@ -9,6 +9,18 @@ ring's long change? Only if no native check exists, would a supplied rule acting
 statistics show a relative sign, with free settings and no signalling? Computed and argued; advisor consulted read-only
 in the repository ([question](advisor_question.md), [answer](advisor_answer.md)); referee pending.
 
+
+> **Refereed (R1, [report](referee-R1/report.md)): confirmed with fixes, no Block.** All 26 pinned exchanged holders pass the
+> record's knot test, and neither reading of the exchange selects a relative sign. **Narrowings:** the pinned exchange
+> was confirmed to give back the bare ring at five, seven and eight knots (not six); at eight knots two least free reads
+> use only loose distinctions and two least pinned changes avoid every old ring distinction; short moves keep either
+> relative sign, which a supplied class-changing read can tell apart. **Not a block:** exchanging twice does not give
+> back the grown ring, so the intuition that the two are each other's dual fails; the repetition-code comparison is a
+> comparison, not an equivalence; the two-ring square would need readers holding parent-to-child distinctions.
+> **And a later correction by the thread** (the both-distances study, `BOTH-LONG-20261126-001`): "one distance is always
+> short" holds after one round only; grown further, a ring's class has both distances equal to n on odd rings (from
+> about (n − 1)/2 rounds), and on even rings one distance equal to n with the other growing by two a round. Logged in
+> `docs/CORRECTIONS.md`.
 ## What was found ([`dual.py`](dual.py), `rings_dual.jsonl`; [`commute.py`](commute.py), [output](commute_out.jsonl))
 
 Rings of n knots with two loose distinctions each, parity, one round of ordinary growth.

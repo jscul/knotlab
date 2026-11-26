@@ -6032,6 +6032,7 @@ evidence: results and their status come from the records each entry links.
 - **Rests on it.** The map of where the classes are ([the note](../research/TWO-CLASS-SIGN-20261126-001/README.md)); the motion study proved that inclusion-minimal moves give one class always, so the classes are the move rule's.
 - **Challenge.** Other move rules (inclusion-minimal: one class; shortest overall: many), more rounds, not-all-equal at larger sizes. The model is not expected to keep the move rule.
 - **History.**
+  - 2026-11-26 · `BOTH-LONG-20261126-001` ([decision](../research/BOTH-LONG-20261126-001/decision.md), referee pending): under the move rule, grown odd rings' classes reach both distances n; the loose values free or pinned change only how many rounds it takes.
   - 2026-11-26 · `SECOND-CHECK-20261126-001` ([decision](../research/SECOND-CHECK-20261126-001/decision.md), referee pending): pinning the loose values decides which distance is short and makes the even rings' classes; with it, the grown ring's moves read as knots give back the bare ring.
   - 2026-11-26 · Entered with `TWO-CLASS-SIGN-20261126-001`.
 

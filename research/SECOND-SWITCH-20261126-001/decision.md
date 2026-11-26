@@ -11,15 +11,16 @@ registered: computed; referee pending. [The note](README.md) · [advisor's quest
 > and two loose distinctions, sited at the second) changes at its own members after round 3 are heard in rounds 13
 > and 15. The census of linked pairs that followed finds such a hearing in each of the 28 far ends that stay linked
 > through round 16, under every cap from three to six ([its note](../LINKED-UNDER-CAP-20261126-001/README.md)). What
-> stands: no change set at a far member in a class apart from the receiver's own is heard, which the referee argues
+> stands: no change set at a far member in a class apart from the receiver's own is heard (the 43 chosen far ends all
+> part by round 3 under the cap of three), which the referee argues
 > from the local law. **Narrowings:** "parts that share nothing" should read "parts in different classes" (a third
 > part can link two parts that share nothing directly); the negative is 0 of 652 capped comparisons plus 0 of 80 under
 > the ordinary count, and the knot bound cut 294 of them before a change could have arrived at one sharing a round,
 > all placed outside the receiver's class; the ordinary count is not empty (barring a loose distinction one sharing
 > away is heard the next round, 15 of 15); the horizon reaches five sharings after round 3, and in another start a
 > change crossed two sharings in one round through a common knot; 38 of the 41 far ends keep their waiting member at a
-> fixed distance; under one fewer all 720 second hearings came from linked placements, and the two ends were apart
-> when each arrived, so a far change can reach the receiver when its member is in a receiver-own class as it is set.
+> fixed distance; under one fewer all 720 second hearings came from linked placements, and in the twice-changed
+> growth the two ends were apart when each arrived (in the growth with the first change only they were together), so a far change can reach the receiver when its member is in a receiver-own class as it is set.
 > Mine, found by the census that followed: "the far end's receding is how coming apart looks" is wrong, since linked
 > far ends recede as fast and their changes are heard.
 

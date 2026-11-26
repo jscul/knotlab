@@ -1,0 +1,5326 @@
+{
+  "seed": 20261126,
+  "sample": "First pass samples one pair per law and receiver family with and without a class link after round 8. Second pass samples one switch-kind pair per cap with and without a round-7 change, one far-member extinction case if absent, and one census-receiver pair in each first-hearing category.",
+  "archive coverage": "The census supplies baseline class-link status by round. The second pass supplies class-link status by round for each growth with a placed change. Compatible predecessor records supply strict own birth counts and also nearest holder-step counts or strict own short counts. The change targets, holder steps at each target, first hearings, read horizons and available terminal knot totals are single readings.",
+  "ledger": {
+    "first pairs": 12,
+    "first changes placed": 156,
+    "first archive mismatch pairs": 0,
+    "changes cut earlier with the baseline bound": 0,
+    "hearings outside that tighter window": 0,
+    "first archived round values checked": 234,
+    "first archive mismatch series": 0,
+    "predecessor archived round values checked": 352,
+    "predecessor archive mismatch series": 0,
+    "second pairs": 11,
+    "second changes placed": 15,
+    "second archive mismatch pairs": 0,
+    "second archived round values checked": 278,
+    "second archive mismatch series": 0
+  },
+  "round values by source and field": {
+    "linked_runs.jsonl.gz": {
+      "linked": 234
+    },
+    "SWITCH-RECEIVERS-20261126-001/receivers_runs.jsonl.gz": {
+      "own births": 64,
+      "A short": 64
+    },
+    "SECOND-SWITCH-20261126-001/recede_runs.jsonl.gz": {
+      "own births": 64,
+      "nearest far member": 64,
+      "nearest far member that waited": 64
+    },
+    "again_linked_runs_caps36.jsonl.gz": {
+      "linked after it": 223
+    },
+    "SWITCH-RECEIVERS-20261126-001/rule_runs.jsonl.gz": {
+      "own births": 16,
+      "A short": 16
+    },
+    "again_linked_runs_receivers.jsonl.gz": {
+      "linked after it": 55
+    }
+  },
+  "wall seconds": 36.7019,
+  "peak RSS KiB": 102944,
+  "cases": [
+    {
+      "selection": {
+        "phase": "first",
+        "stratum": [
+          "CAP-3",
+          false,
+          false
+        ],
+        "key": [
+          "CAP-3",
+          "n4:g17:0131@2",
+          "g7:122@0"
+        ],
+        "rounds": 16,
+        "bound": 3000,
+        "changed horizon": [
+          24,
+          6000
+        ]
+      },
+      "terminal knots": 896,
+      "replay": {
+        "A": "n4:g17:0131@2",
+        "B": "g7:122@0",
+        "law": "CAP-3",
+        "rounds": 16,
+        "linked": [
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "changes": [
+          {
+            "t0": 3,
+            "linked": false,
+            "knot": 31,
+            "sharings": 9,
+            "heard": null,
+            "rounds": 16
+          },
+          {
+            "t0": 3,
+            "linked": false,
+            "knot": 32,
+            "sharings": 9,
+            "heard": null,
+            "rounds": 16
+          },
+          {
+            "t0": 3,
+            "linked": false,
+            "knot": 33,
+            "sharings": 9,
+            "heard": null,
+            "rounds": 16
+          },
+          {
+            "t0": 3,
+            "linked": false,
+            "knot": 36,
+            "sharings": 10,
+            "heard": null,
+            "rounds": 16
+          },
+          {
+            "t0": 3,
+            "linked": false,
+            "knot": 37,
+            "sharings": 10,
+            "heard": null,
+            "rounds": 16
+          },
+          {
+            "t0": 5,
+            "linked": false,
+            "knot": 62,
+            "sharings": 11,
+            "heard": null,
+            "rounds": 16
+          },
+          {
+            "t0": 5,
+            "linked": false,
+            "knot": 63,
+            "sharings": 11,
+            "heard": null,
+            "rounds": 16
+          },
+          {
+            "t0": 5,
+            "linked": false,
+            "knot": 64,
+            "sharings": 11,
+            "heard": null,
+            "rounds": 16
+          },
+          {
+            "t0": 5,
+            "linked": false,
+            "knot": 65,
+            "sharings": 11,
+            "heard": null,
+            "rounds": 16
+          },
+          {
+            "t0": 5,
+            "linked": false,
+            "knot": 66,
+            "sharings": 11,
+            "heard": null,
+            "rounds": 16
+          },
+          {
+            "t0": 8,
+            "linked": false,
+            "knot": 156,
+            "sharings": 14,
+            "heard": null,
+            "rounds": 16
+          },
+          {
+            "t0": 8,
+            "linked": false,
+            "knot": 157,
+            "sharings": 14,
+            "heard": null,
+            "rounds": 16
+          },
+          {
+            "t0": 8,
+            "linked": false,
+            "knot": 158,
+            "sharings": 14,
+            "heard": null,
+            "rounds": 16
+          },
+          {
+            "t0": 8,
+            "linked": false,
+            "knot": 159,
+            "sharings": 14,
+            "heard": null,
+            "rounds": 16
+          },
+          {
+            "t0": 8,
+            "linked": false,
+            "knot": 160,
+            "sharings": 14,
+            "heard": null,
+            "rounds": 16
+          }
+        ],
+        "knots": 896
+      },
+      "archive mismatches": {},
+      "round comparisons": [
+        {
+          "source": "linked_runs.jsonl.gz",
+          "field": "linked",
+          "rounds checked": 16,
+          "length match": true,
+          "mismatch rounds": [],
+          "archived": [
+            true,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "rebuilt": [
+            true,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "source": "SWITCH-RECEIVERS-20261126-001/receivers_runs.jsonl.gz",
+          "field": "own births",
+          "rounds checked": 16,
+          "length match": true,
+          "mismatch rounds": [],
+          "archived": [
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "rebuilt": [
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "sender": "g7:122@0"
+        },
+        {
+          "source": "SWITCH-RECEIVERS-20261126-001/receivers_runs.jsonl.gz",
+          "field": "A short",
+          "rounds checked": 16,
+          "length match": true,
+          "mismatch rounds": [],
+          "archived": [
+            2,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "rebuilt": [
+            2,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "sender": "g7:122@0"
+        }
+      ],
+      "changes cut earlier with the baseline bound": 0,
+      "hearings outside that tighter window": 0,
+      "own birth counts at first hearing": [],
+      "wall seconds": 1.1638
+    },
+    {
+      "selection": {
+        "phase": "first",
+        "stratum": [
+          "CAP-3",
+          false,
+          true
+        ],
+        "key": [
+          "CAP-3",
+          "n4:g17:0122@3",
+          "g6:122@0"
+        ],
+        "rounds": 16,
+        "bound": 3000,
+        "changed horizon": [
+          24,
+          6000
+        ]
+      },
+      "terminal knots": 710,
+      "replay": {
+        "A": "n4:g17:0122@3",
+        "B": "g6:122@0",
+        "law": "CAP-3",
+        "rounds": 16,
+        "linked": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "changes": [
+          {
+            "t0": 3,
+            "linked": true,
+            "knot": 52,
+            "sharings": 9,
+            "heard": null,
+            "rounds": 16
+          },
+          {
+            "t0": 3,
+            "linked": false,
+            "knot": 43,
+            "sharings": 10,
+            "heard": null,
+            "rounds": 16
+          },
+          {
+            "t0": 3,
+            "linked": false,
+            "knot": 44,
+            "sharings": 10,
+            "heard": null,
+            "rounds": 16
+          },
+          {
+            "t0": 3,
+            "linked": false,
+            "knot": 45,
+            "sharings": 10,
+            "heard": null,
+            "rounds": 16
+          },
+          {
+            "t0": 3,
+            "linked": false,
+            "knot": 53,
+            "sharings": 10,
+            "heard": null,
+            "rounds": 16
+          },
+          {
+            "t0": 3,
+            "linked": false,
+            "knot": 54,
+            "sharings": 10,
+            "heard": null,
+            "rounds": 16
+          },
+          {
+            "t0": 5,
+            "linked": true,
+            "knot": 102,
+            "sharings": 11,
+            "heard": null,
+            "rounds": 16
+          },
+          {
+            "t0": 5,
+            "linked": false,
+            "knot": 91,
+            "sharings": 12,
+            "heard": null,
+            "rounds": 16
+          },
+          {
+            "t0": 5,
+            "linked": false,
+            "knot": 92,
+            "sharings": 12,
+            "heard": null,
+            "rounds": 16
+          },
+          {
+            "t0": 5,
+            "linked": false,
+            "knot": 93,
+            "sharings": 12,
+            "heard": null,
+            "rounds": 16
+          },
+          {
+            "t0": 5,
+            "linked": false,
+            "knot": 94,
+            "sharings": 12,
+            "heard": null,
+            "rounds": 16
+          },
+          {
+            "t0": 5,
+            "linked": false,
+            "knot": 95,
+            "sharings": 12,
+            "heard": null,
+            "rounds": 16
+          },
+          {
+            "t0": 8,
+            "linked": true,
+            "knot": 207,
+            "sharings": 14,
+            "heard": null,
+            "rounds": 16
+          },
+          {
+            "t0": 8,
+            "linked": false,
+            "knot": 187,
+            "sharings": 15,
+            "heard": null,
+            "rounds": 16
+          },
+          {
+            "t0": 8,
+            "linked": false,
+            "knot": 188,
+            "sharings": 15,
+            "heard": null,
+            "rounds": 16
+          },
+          {
+            "t0": 8,
+            "linked": false,
+            "knot": 189,
+            "sharings": 15,
+            "heard": null,
+            "rounds": 16
+          },
+          {
+            "t0": 8,
+            "linked": false,
+            "knot": 190,
+            "sharings": 15,
+            "heard": null,
+            "rounds": 16
+          },
+          {
+            "t0": 8,
+            "linked": false,
+            "knot": 191,
+            "sharings": 15,
+            "heard": null,
+            "rounds": 16
+          }
+        ],
+        "knots": 710
+      },
+      "archive mismatches": {},
+      "round comparisons": [
+        {
+          "source": "linked_runs.jsonl.gz",
+          "field": "linked",
+          "rounds checked": 16,
+          "length match": true,
+          "mismatch rounds": [],
+          "archived": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "rebuilt": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "source": "SWITCH-RECEIVERS-20261126-001/receivers_runs.jsonl.gz",
+          "field": "own births",
+          "rounds checked": 16,
+          "length match": true,
+          "mismatch rounds": [],
+          "archived": [
+            3,
+            3,
+            7,
+            8,
+            7,
+            8,
+            10,
+            12,
+            14,
+            16,
+            18,
+            20,
+            22,
+            24,
+            26,
+            28
+          ],
+          "rebuilt": [
+            3,
+            3,
+            7,
+            8,
+            7,
+            8,
+            10,
+            12,
+            14,
+            16,
+            18,
+            20,
+            22,
+            24,
+            26,
+            28
+          ],
+          "sender": "g6:122@0"
+        },
+        {
+          "source": "SWITCH-RECEIVERS-20261126-001/receivers_runs.jsonl.gz",
+          "field": "A short",
+          "rounds checked": 16,
+          "length match": true,
+          "mismatch rounds": [],
+          "archived": [
+            1,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "rebuilt": [
+            1,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "sender": "g6:122@0"
+        }
+      ],
+      "changes cut earlier with the baseline bound": 0,
+      "hearings outside that tighter window": 0,
+      "own birth counts at first hearing": [],
+      "wall seconds": 0.413
+    },
+    {
+      "selection": {
+        "phase": "first",
+        "stratum": [
+          "CAP-3",
+          true,
+          false
+        ],
+        "key": [
+          "CAP-3",
+          "tri:122@0",
+          "n3:g7:123@2"
+        ],
+        "rounds": 24,
+        "bound": 6000,
+        "changed horizon": [
+          24,
+          6000
+        ]
+      },
+      "terminal knots": 4499,
+      "replay": {
+        "A": "tri:122@0",
+        "B": "n3:g7:123@2",
+        "law": "CAP-3",
+        "rounds": 24,
+        "linked": [
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "changes": [
+          {
+            "t0": 3,
+            "linked": false,
+            "knot": 25,
+            "sharings": 8,
+            "heard": null,
+            "rounds": 24
+          },
+          {
+            "t0": 3,
+            "linked": false,
+            "knot": 46,
+            "sharings": 8,
+            "heard": null,
+            "rounds": 24
+          },
+          {
+            "t0": 3,
+            "linked": false,
+            "knot": 47,
+            "sharings": 8,
+            "heard": null,
+            "rounds": 24
+          },
+          {
+            "t0": 3,
+            "linked": false,
+            "knot": 44,
+            "sharings": 9,
+            "heard": null,
+            "rounds": 24
+          },
+          {
+            "t0": 3,
+            "linked": false,
+            "knot": 45,
+            "sharings": 9,
+            "heard": null,
+            "rounds": 24
+          },
+          {
+            "t0": 5,
+            "linked": false,
+            "knot": 119,
+            "sharings": 10,
+            "heard": null,
+            "rounds": 24
+          },
+          {
+            "t0": 5,
+            "linked": false,
+            "knot": 120,
+            "sharings": 10,
+            "heard": null,
+            "rounds": 24
+          },
+          {
+            "t0": 5,
+            "linked": false,
+            "knot": 123,
+            "sharings": 10,
+            "heard": null,
+            "rounds": 24
+          },
+          {
+            "t0": 5,
+            "linked": false,
+            "knot": 124,
+            "sharings": 10,
+            "heard": null,
+            "rounds": 24
+          },
+          {
+            "t0": 5,
+            "linked": false,
+            "knot": 125,
+            "sharings": 10,
+            "heard": null,
+            "rounds": 24
+          },
+          {
+            "t0": 8,
+            "linked": false,
+            "knot": 321,
+            "sharings": 13,
+            "heard": null,
+            "rounds": 24
+          },
+          {
+            "t0": 8,
+            "linked": false,
+            "knot": 322,
+            "sharings": 13,
+            "heard": null,
+            "rounds": 24
+          },
+          {
+            "t0": 8,
+            "linked": false,
+            "knot": 323,
+            "sharings": 13,
+            "heard": null,
+            "rounds": 24
+          },
+          {
+            "t0": 8,
+            "linked": false,
+            "knot": 324,
+            "sharings": 13,
+            "heard": null,
+            "rounds": 24
+          },
+          {
+            "t0": 8,
+            "linked": false,
+            "knot": 325,
+            "sharings": 13,
+            "heard": null,
+            "rounds": 24
+          }
+        ]
+      },
+      "archive mismatches": {},
+      "round comparisons": [
+        {
+          "source": "linked_runs.jsonl.gz",
+          "field": "linked",
+          "rounds checked": 24,
+          "length match": true,
+          "mismatch rounds": [],
+          "archived": [
+            true,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "rebuilt": [
+            true,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "source": "SECOND-SWITCH-20261126-001/recede_runs.jsonl.gz",
+          "field": "own births",
+          "rounds checked": 16,
+          "length match": true,
+          "mismatch rounds": [],
+          "archived": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18
+          ],
+          "rebuilt": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18
+          ]
+        },
+        {
+          "source": "SECOND-SWITCH-20261126-001/recede_runs.jsonl.gz",
+          "field": "nearest far member",
+          "rounds checked": 16,
+          "length match": true,
+          "mismatch rounds": [],
+          "archived": [
+            7,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21
+          ],
+          "rebuilt": [
+            7,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21
+          ]
+        },
+        {
+          "source": "SECOND-SWITCH-20261126-001/recede_runs.jsonl.gz",
+          "field": "nearest far member that waited",
+          "rounds checked": 16,
+          "length match": true,
+          "mismatch rounds": [],
+          "archived": [
+            null,
+            7,
+            8,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "rebuilt": [
+            null,
+            7,
+            8,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      ],
+      "changes cut earlier with the baseline bound": 0,
+      "hearings outside that tighter window": 0,
+      "own birth counts at first hearing": [],
+      "wall seconds": 1.2445
+    },
+    {
+      "selection": {
+        "phase": "first",
+        "stratum": [
+          "CAP-3",
+          true,
+          true
+        ],
+        "key": [
+          "CAP-3",
+          "tri:122@0",
+          "n4:g16:1323@0"
+        ],
+        "rounds": 24,
+        "bound": 6000,
+        "changed horizon": [
+          24,
+          6000
+        ]
+      },
+      "terminal knots": 3626,
+      "replay": {
+        "A": "tri:122@0",
+        "B": "n4:g16:1323@0",
+        "law": "CAP-3",
+        "rounds": 24,
+        "linked": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "changes": [
+          {
+            "t0": 3,
+            "linked": true,
+            "knot": 50,
+            "sharings": 9,
+            "heard": 13,
+            "rounds": 20
+          },
+          {
+            "t0": 3,
+            "linked": true,
+            "knot": 62,
+            "sharings": 11,
+            "heard": 15,
+            "rounds": 21
+          },
+          {
+            "t0": 3,
+            "linked": false,
+            "knot": 55,
+            "sharings": 9,
+            "heard": null,
+            "rounds": 24
+          },
+          {
+            "t0": 3,
+            "linked": false,
+            "knot": 56,
+            "sharings": 9,
+            "heard": null,
+            "rounds": 24
+          },
+          {
+            "t0": 3,
+            "linked": false,
+            "knot": 57,
+            "sharings": 9,
+            "heard": null,
+            "rounds": 24
+          },
+          {
+            "t0": 3,
+            "linked": false,
+            "knot": 51,
+            "sharings": 10,
+            "heard": null,
+            "rounds": 24
+          },
+          {
+            "t0": 3,
+            "linked": false,
+            "knot": 52,
+            "sharings": 10,
+            "heard": null,
+            "rounds": 24
+          },
+          {
+            "t0": 5,
+            "linked": true,
+            "knot": 114,
+            "sharings": 11,
+            "heard": 17,
+            "rounds": 21
+          },
+          {
+            "t0": 5,
+            "linked": true,
+            "knot": 127,
+            "sharings": 13,
+            "heard": 19,
+            "rounds": 22
+          },
+          {
+            "t0": 5,
+            "linked": false,
+            "knot": 98,
+            "sharings": 11,
+            "heard": null,
+            "rounds": 24
+          },
+          {
+            "t0": 5,
+            "linked": false,
+            "knot": 115,
+            "sharings": 12,
+            "heard": null,
+            "rounds": 24
+          },
+          {
+            "t0": 5,
+            "linked": false,
+            "knot": 116,
+            "sharings": 12,
+            "heard": null,
+            "rounds": 24
+          },
+          {
+            "t0": 5,
+            "linked": false,
+            "knot": 117,
+            "sharings": 12,
+            "heard": null,
+            "rounds": 24
+          },
+          {
+            "t0": 5,
+            "linked": false,
+            "knot": 118,
+            "sharings": 12,
+            "heard": null,
+            "rounds": 24
+          },
+          {
+            "t0": 8,
+            "linked": true,
+            "knot": 265,
+            "sharings": 14,
+            "heard": 23,
+            "rounds": 23
+          },
+          {
+            "t0": 8,
+            "linked": true,
+            "knot": 287,
+            "sharings": 16,
+            "heard": null,
+            "rounds": 24
+          },
+          {
+            "t0": 8,
+            "linked": false,
+            "knot": 280,
+            "sharings": 14,
+            "heard": null,
+            "rounds": 24
+          },
+          {
+            "t0": 8,
+            "linked": false,
+            "knot": 281,
+            "sharings": 14,
+            "heard": null,
+            "rounds": 24
+          },
+          {
+            "t0": 8,
+            "linked": false,
+            "knot": 282,
+            "sharings": 14,
+            "heard": null,
+            "rounds": 24
+          },
+          {
+            "t0": 8,
+            "linked": false,
+            "knot": 266,
+            "sharings": 15,
+            "heard": null,
+            "rounds": 24
+          },
+          {
+            "t0": 8,
+            "linked": false,
+            "knot": 267,
+            "sharings": 15,
+            "heard": null,
+            "rounds": 24
+          }
+        ]
+      },
+      "archive mismatches": {},
+      "round comparisons": [
+        {
+          "source": "linked_runs.jsonl.gz",
+          "field": "linked",
+          "rounds checked": 24,
+          "length match": true,
+          "mismatch rounds": [],
+          "archived": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "rebuilt": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "source": "SECOND-SWITCH-20261126-001/recede_runs.jsonl.gz",
+          "field": "own births",
+          "rounds checked": 16,
+          "length match": true,
+          "mismatch rounds": [],
+          "archived": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18
+          ],
+          "rebuilt": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18
+          ]
+        },
+        {
+          "source": "SECOND-SWITCH-20261126-001/recede_runs.jsonl.gz",
+          "field": "nearest far member",
+          "rounds checked": 16,
+          "length match": true,
+          "mismatch rounds": [],
+          "archived": [
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22
+          ],
+          "rebuilt": [
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22
+          ]
+        },
+        {
+          "source": "SECOND-SWITCH-20261126-001/recede_runs.jsonl.gz",
+          "field": "nearest far member that waited",
+          "rounds checked": 16,
+          "length match": true,
+          "mismatch rounds": [],
+          "archived": [
+            null,
+            8,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "rebuilt": [
+            null,
+            8,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      ],
+      "changes cut earlier with the baseline bound": 0,
+      "hearings outside that tighter window": 0,
+      "own birth counts at first hearing": [
+        [
+          3,
+          50,
+          13,
+          15,
+          25
+        ],
+        [
+          3,
+          62,
+          15,
+          17,
+          29
+        ],
+        [
+          5,
+          114,
+          17,
+          19,
+          33
+        ],
+        [
+          5,
+          127,
+          19,
+          21,
+          37
+        ],
+        [
+          8,
+          265,
+          23,
+          25,
+          45
+        ]
+      ],
+      "wall seconds": 1.6071
+    },
+    {
+      "selection": {
+        "phase": "first",
+        "stratum": [
+          "CAP-4",
+          true,
+          false
+        ],
+        "key": [
+          "CAP-4",
+          "tri:222@0",
+          "n4:g14:1133@2"
+        ],
+        "rounds": 24,
+        "bound": 6000,
+        "changed horizon": [
+          24,
+          6000
+        ]
+      },
+      "terminal knots": 5555,
+      "replay": {
+        "A": "tri:222@0",
+        "B": "n4:g14:1133@2",
+        "law": "CAP-4",
+        "rounds": 24,
+        "linked": [
+          true,
+          true,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "changes": [
+          {
+            "t0": 3,
+            "linked": true,
+            "knot": 46,
+            "sharings": 9,
+            "heard": null,
+            "rounds": 24
+          },
+          {
+            "t0": 3,
+            "linked": false,
+            "knot": 47,
+            "sharings": 10,
+            "heard": null,
+            "rounds": 24
+          },
+          {
+            "t0": 5,
+            "linked": false,
+            "knot": 127,
+            "sharings": 12,
+            "heard": null,
+            "rounds": 24
+          },
+          {
+            "t0": 5,
+            "linked": false,
+            "knot": 128,
+            "sharings": 12,
+            "heard": null,
+            "rounds": 24
+          },
+          {
+            "t0": 8,
+            "linked": false,
+            "knot": 315,
+            "sharings": 15,
+            "heard": null,
+            "rounds": 24
+          },
+          {
+            "t0": 8,
+            "linked": false,
+            "knot": 316,
+            "sharings": 15,
+            "heard": null,
+            "rounds": 24
+          },
+          {
+            "t0": 8,
+            "linked": false,
+            "knot": 317,
+            "sharings": 15,
+            "heard": null,
+            "rounds": 24
+          },
+          {
+            "t0": 8,
+            "linked": false,
+            "knot": 318,
+            "sharings": 15,
+            "heard": null,
+            "rounds": 24
+          },
+          {
+            "t0": 8,
+            "linked": false,
+            "knot": 319,
+            "sharings": 15,
+            "heard": null,
+            "rounds": 24
+          }
+        ]
+      },
+      "archive mismatches": {},
+      "round comparisons": [
+        {
+          "source": "linked_runs.jsonl.gz",
+          "field": "linked",
+          "rounds checked": 24,
+          "length match": true,
+          "mismatch rounds": [],
+          "archived": [
+            true,
+            true,
+            true,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "rebuilt": [
+            true,
+            true,
+            true,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        }
+      ],
+      "changes cut earlier with the baseline bound": 0,
+      "hearings outside that tighter window": 0,
+      "own birth counts at first hearing": [],
+      "wall seconds": 1.4605
+    },
+    {
+      "selection": {
+        "phase": "first",
+        "stratum": [
+          "CAP-4",
+          true,
+          true
+        ],
+        "key": [
+          "CAP-4",
+          "tri:222@0",
+          "n4:g18:1112@0"
+        ],
+        "rounds": 24,
+        "bound": 6000,
+        "changed horizon": [
+          24,
+          6000
+        ]
+      },
+      "terminal knots": 5104,
+      "replay": {
+        "A": "tri:222@0",
+        "B": "n4:g18:1112@0",
+        "law": "CAP-4",
+        "rounds": 24,
+        "linked": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "changes": [
+          {
+            "t0": 3,
+            "linked": true,
+            "knot": 44,
+            "sharings": 9,
+            "heard": 13,
+            "rounds": 17
+          },
+          {
+            "t0": 3,
+            "linked": true,
+            "knot": 49,
+            "sharings": 10,
+            "heard": 15,
+            "rounds": 18
+          },
+          {
+            "t0": 5,
+            "linked": true,
+            "knot": 103,
+            "sharings": 11,
+            "heard": 17,
+            "rounds": 18
+          },
+          {
+            "t0": 5,
+            "linked": true,
+            "knot": 106,
+            "sharings": 12,
+            "heard": 19,
+            "rounds": 19
+          },
+          {
+            "t0": 8,
+            "linked": true,
+            "knot": 276,
+            "sharings": 14,
+            "heard": null,
+            "rounds": 21
+          },
+          {
+            "t0": 8,
+            "linked": true,
+            "knot": 279,
+            "sharings": 15,
+            "heard": null,
+            "rounds": 22
+          }
+        ]
+      },
+      "archive mismatches": {},
+      "round comparisons": [
+        {
+          "source": "linked_runs.jsonl.gz",
+          "field": "linked",
+          "rounds checked": 24,
+          "length match": true,
+          "mismatch rounds": [],
+          "archived": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "rebuilt": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      ],
+      "changes cut earlier with the baseline bound": 0,
+      "hearings outside that tighter window": 0,
+      "own birth counts at first hearing": [
+        [
+          3,
+          44,
+          13,
+          27,
+          46
+        ],
+        [
+          3,
+          49,
+          15,
+          31,
+          54
+        ],
+        [
+          5,
+          103,
+          17,
+          35,
+          62
+        ],
+        [
+          5,
+          106,
+          19,
+          39,
+          70
+        ]
+      ],
+      "wall seconds": 0.8666
+    },
+    {
+      "selection": {
+        "phase": "first",
+        "stratum": [
+          "CAP-5",
+          true,
+          false
+        ],
+        "key": [
+          "CAP-5",
+          "tri:322@0",
+          "n4:g15:3233@3"
+        ],
+        "rounds": 24,
+        "bound": 6000,
+        "changed horizon": [
+          24,
+          6000
+        ]
+      },
+      "terminal knots": 6230,
+      "replay": {
+        "A": "tri:322@0",
+        "B": "n4:g15:3233@3",
+        "law": "CAP-5",
+        "rounds": 24,
+        "linked": [
+          true,
+          true,
+          true,
+          false,
+          false,
+          false,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "changes": [
+          {
+            "t0": 3,
+            "linked": true,
+            "knot": 50,
+            "sharings": 9,
+            "heard": null,
+            "rounds": 24
+          },
+          {
+            "t0": 3,
+            "linked": true,
+            "knot": 51,
+            "sharings": 9,
+            "heard": null,
+            "rounds": 24
+          },
+          {
+            "t0": 3,
+            "linked": true,
+            "knot": 57,
+            "sharings": 9,
+            "heard": null,
+            "rounds": 13
+          },
+          {
+            "t0": 3,
+            "linked": true,
+            "knot": 61,
+            "sharings": 9,
+            "heard": null,
+            "rounds": 12
+          },
+          {
+            "t0": 3,
+            "linked": true,
+            "knot": 62,
+            "sharings": 9,
+            "heard": null,
+            "rounds": 12
+          },
+          {
+            "t0": 5,
+            "linked": false,
+            "knot": 138,
+            "sharings": 11,
+            "heard": null,
+            "rounds": 24
+          },
+          {
+            "t0": 5,
+            "linked": false,
+            "knot": 139,
+            "sharings": 11,
+            "heard": null,
+            "rounds": 24
+          },
+          {
+            "t0": 5,
+            "linked": false,
+            "knot": 143,
+            "sharings": 11,
+            "heard": null,
+            "rounds": 24
+          },
+          {
+            "t0": 5,
+            "linked": false,
+            "knot": 169,
+            "sharings": 11,
+            "heard": null,
+            "rounds": 24
+          }
+        ]
+      },
+      "archive mismatches": {},
+      "round comparisons": [
+        {
+          "source": "linked_runs.jsonl.gz",
+          "field": "linked",
+          "rounds checked": 24,
+          "length match": true,
+          "mismatch rounds": [],
+          "archived": [
+            true,
+            true,
+            true,
+            false,
+            false,
+            false,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "rebuilt": [
+            true,
+            true,
+            true,
+            false,
+            false,
+            false,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      ],
+      "changes cut earlier with the baseline bound": 0,
+      "hearings outside that tighter window": 0,
+      "own birth counts at first hearing": [],
+      "wall seconds": 2.1195
+    },
+    {
+      "selection": {
+        "phase": "first",
+        "stratum": [
+          "CAP-5",
+          true,
+          true
+        ],
+        "key": [
+          "CAP-5",
+          "tri:322@0",
+          "n4:g14:1222@0"
+        ],
+        "rounds": 24,
+        "bound": 6000,
+        "changed horizon": [
+          24,
+          6000
+        ]
+      },
+      "terminal knots": 6675,
+      "replay": {
+        "A": "tri:322@0",
+        "B": "n4:g14:1222@0",
+        "law": "CAP-5",
+        "rounds": 21,
+        "linked": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "changes": [
+          {
+            "t0": 3,
+            "linked": true,
+            "knot": 63,
+            "sharings": 9,
+            "heard": 13,
+            "rounds": 14
+          },
+          {
+            "t0": 3,
+            "linked": true,
+            "knot": 70,
+            "sharings": 11,
+            "heard": 15,
+            "rounds": 15
+          },
+          {
+            "t0": 3,
+            "linked": false,
+            "knot": 64,
+            "sharings": 10,
+            "heard": null,
+            "rounds": 21
+          },
+          {
+            "t0": 3,
+            "linked": false,
+            "knot": 65,
+            "sharings": 10,
+            "heard": null,
+            "rounds": 21
+          },
+          {
+            "t0": 3,
+            "linked": false,
+            "knot": 66,
+            "sharings": 10,
+            "heard": null,
+            "rounds": 21
+          },
+          {
+            "t0": 3,
+            "linked": false,
+            "knot": 69,
+            "sharings": 10,
+            "heard": null,
+            "rounds": 21
+          },
+          {
+            "t0": 3,
+            "linked": false,
+            "knot": 71,
+            "sharings": 10,
+            "heard": null,
+            "rounds": 21
+          },
+          {
+            "t0": 5,
+            "linked": true,
+            "knot": 160,
+            "sharings": 11,
+            "heard": null,
+            "rounds": 16
+          },
+          {
+            "t0": 5,
+            "linked": true,
+            "knot": 169,
+            "sharings": 13,
+            "heard": null,
+            "rounds": 17
+          },
+          {
+            "t0": 5,
+            "linked": false,
+            "knot": 161,
+            "sharings": 12,
+            "heard": null,
+            "rounds": 21
+          },
+          {
+            "t0": 5,
+            "linked": false,
+            "knot": 162,
+            "sharings": 12,
+            "heard": null,
+            "rounds": 21
+          },
+          {
+            "t0": 5,
+            "linked": false,
+            "knot": 163,
+            "sharings": 12,
+            "heard": null,
+            "rounds": 21
+          },
+          {
+            "t0": 5,
+            "linked": false,
+            "knot": 164,
+            "sharings": 12,
+            "heard": null,
+            "rounds": 21
+          },
+          {
+            "t0": 5,
+            "linked": false,
+            "knot": 165,
+            "sharings": 12,
+            "heard": null,
+            "rounds": 21
+          },
+          {
+            "t0": 8,
+            "linked": true,
+            "knot": 473,
+            "sharings": 14,
+            "heard": null,
+            "rounds": 18
+          },
+          {
+            "t0": 8,
+            "linked": true,
+            "knot": 485,
+            "sharings": 16,
+            "heard": null,
+            "rounds": 19
+          },
+          {
+            "t0": 8,
+            "linked": false,
+            "knot": 474,
+            "sharings": 15,
+            "heard": null,
+            "rounds": 21
+          },
+          {
+            "t0": 8,
+            "linked": false,
+            "knot": 475,
+            "sharings": 15,
+            "heard": null,
+            "rounds": 21
+          },
+          {
+            "t0": 8,
+            "linked": false,
+            "knot": 476,
+            "sharings": 15,
+            "heard": null,
+            "rounds": 21
+          },
+          {
+            "t0": 8,
+            "linked": false,
+            "knot": 477,
+            "sharings": 15,
+            "heard": null,
+            "rounds": 21
+          },
+          {
+            "t0": 8,
+            "linked": false,
+            "knot": 478,
+            "sharings": 15,
+            "heard": null,
+            "rounds": 21
+          }
+        ]
+      },
+      "archive mismatches": {},
+      "round comparisons": [
+        {
+          "source": "linked_runs.jsonl.gz",
+          "field": "linked",
+          "rounds checked": 21,
+          "length match": true,
+          "mismatch rounds": [],
+          "archived": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "rebuilt": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      ],
+      "changes cut earlier with the baseline bound": 0,
+      "hearings outside that tighter window": 0,
+      "own birth counts at first hearing": [
+        [
+          3,
+          63,
+          13,
+          50,
+          86
+        ],
+        [
+          3,
+          70,
+          15,
+          58,
+          102
+        ]
+      ],
+      "wall seconds": 4.9812
+    },
+    {
+      "selection": {
+        "phase": "first",
+        "stratum": [
+          "CAP-6",
+          true,
+          false
+        ],
+        "key": [
+          "CAP-6",
+          "tri:422@0",
+          "n4:g15:3111@0"
+        ],
+        "rounds": 24,
+        "bound": 6000,
+        "changed horizon": [
+          24,
+          6000
+        ]
+      },
+      "terminal knots": 6397,
+      "replay": {
+        "A": "tri:422@0",
+        "B": "n4:g15:3111@0",
+        "law": "CAP-6",
+        "rounds": 17,
+        "linked": [
+          true,
+          true,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "changes": [
+          {
+            "t0": 3,
+            "linked": true,
+            "knot": 62,
+            "sharings": 9,
+            "heard": null,
+            "rounds": 17
+          },
+          {
+            "t0": 3,
+            "linked": false,
+            "knot": 63,
+            "sharings": 9,
+            "heard": null,
+            "rounds": 17
+          },
+          {
+            "t0": 3,
+            "linked": false,
+            "knot": 83,
+            "sharings": 10,
+            "heard": null,
+            "rounds": 17
+          },
+          {
+            "t0": 3,
+            "linked": false,
+            "knot": 86,
+            "sharings": 10,
+            "heard": null,
+            "rounds": 17
+          },
+          {
+            "t0": 3,
+            "linked": false,
+            "knot": 87,
+            "sharings": 10,
+            "heard": null,
+            "rounds": 17
+          },
+          {
+            "t0": 5,
+            "linked": false,
+            "knot": 238,
+            "sharings": 11,
+            "heard": null,
+            "rounds": 17
+          },
+          {
+            "t0": 5,
+            "linked": false,
+            "knot": 239,
+            "sharings": 11,
+            "heard": null,
+            "rounds": 17
+          },
+          {
+            "t0": 5,
+            "linked": false,
+            "knot": 229,
+            "sharings": 12,
+            "heard": null,
+            "rounds": 17
+          },
+          {
+            "t0": 5,
+            "linked": false,
+            "knot": 230,
+            "sharings": 12,
+            "heard": null,
+            "rounds": 17
+          },
+          {
+            "t0": 5,
+            "linked": false,
+            "knot": 231,
+            "sharings": 12,
+            "heard": null,
+            "rounds": 17
+          },
+          {
+            "t0": 8,
+            "linked": false,
+            "knot": 854,
+            "sharings": 14,
+            "heard": null,
+            "rounds": 17
+          },
+          {
+            "t0": 8,
+            "linked": false,
+            "knot": 855,
+            "sharings": 14,
+            "heard": null,
+            "rounds": 17
+          },
+          {
+            "t0": 8,
+            "linked": false,
+            "knot": 856,
+            "sharings": 14,
+            "heard": null,
+            "rounds": 17
+          },
+          {
+            "t0": 8,
+            "linked": false,
+            "knot": 857,
+            "sharings": 14,
+            "heard": null,
+            "rounds": 17
+          },
+          {
+            "t0": 8,
+            "linked": false,
+            "knot": 858,
+            "sharings": 14,
+            "heard": null,
+            "rounds": 17
+          }
+        ]
+      },
+      "archive mismatches": {},
+      "round comparisons": [
+        {
+          "source": "linked_runs.jsonl.gz",
+          "field": "linked",
+          "rounds checked": 17,
+          "length match": true,
+          "mismatch rounds": [],
+          "archived": [
+            true,
+            true,
+            true,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "rebuilt": [
+            true,
+            true,
+            true,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        }
+      ],
+      "changes cut earlier with the baseline bound": 0,
+      "hearings outside that tighter window": 0,
+      "own birth counts at first hearing": [],
+      "wall seconds": 5.4524
+    },
+    {
+      "selection": {
+        "phase": "first",
+        "stratum": [
+          "CAP-6",
+          true,
+          true
+        ],
+        "key": [
+          "CAP-6",
+          "tri:422@0",
+          "n4:g17:0102@1"
+        ],
+        "rounds": 24,
+        "bound": 6000,
+        "changed horizon": [
+          24,
+          6000
+        ]
+      },
+      "terminal knots": 6262,
+      "replay": {
+        "A": "tri:422@0",
+        "B": "n4:g17:0102@1",
+        "law": "CAP-6",
+        "rounds": 17,
+        "linked": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "changes": [
+          {
+            "t0": 3,
+            "linked": true,
+            "knot": 70,
+            "sharings": 9,
+            "heard": 13,
+            "rounds": 13
+          },
+          {
+            "t0": 3,
+            "linked": true,
+            "knot": 73,
+            "sharings": 11,
+            "heard": null,
+            "rounds": 14
+          },
+          {
+            "t0": 5,
+            "linked": true,
+            "knot": 202,
+            "sharings": 11,
+            "heard": null,
+            "rounds": 14
+          },
+          {
+            "t0": 5,
+            "linked": true,
+            "knot": 205,
+            "sharings": 13,
+            "heard": null,
+            "rounds": 15
+          },
+          {
+            "t0": 8,
+            "linked": true,
+            "knot": 690,
+            "sharings": 14,
+            "heard": null,
+            "rounds": 16
+          },
+          {
+            "t0": 8,
+            "linked": true,
+            "knot": 693,
+            "sharings": 16,
+            "heard": null,
+            "rounds": 17
+          }
+        ]
+      },
+      "archive mismatches": {},
+      "round comparisons": [
+        {
+          "source": "linked_runs.jsonl.gz",
+          "field": "linked",
+          "rounds checked": 17,
+          "length match": true,
+          "mismatch rounds": [],
+          "archived": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "rebuilt": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      ],
+      "changes cut earlier with the baseline bound": 0,
+      "hearings outside that tighter window": 0,
+      "own birth counts at first hearing": [
+        [
+          3,
+          70,
+          13,
+          94,
+          162
+        ]
+      ],
+      "wall seconds": 1.9124
+    },
+    {
+      "selection": {
+        "phase": "first",
+        "stratum": [
+          "CAP-7",
+          true,
+          false
+        ],
+        "key": [
+          "CAP-7",
+          "tri:522@0",
+          "n4:g15:3330@3"
+        ],
+        "rounds": 24,
+        "bound": 6000,
+        "changed horizon": [
+          24,
+          6000
+        ]
+      },
+      "terminal knots": 6090,
+      "replay": {
+        "A": "tri:522@0",
+        "B": "n4:g15:3330@3",
+        "law": "CAP-7",
+        "rounds": 13,
+        "linked": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "changes": [
+          {
+            "t0": 3,
+            "linked": false,
+            "knot": 136,
+            "sharings": 7,
+            "heard": null,
+            "rounds": 13
+          },
+          {
+            "t0": 3,
+            "linked": false,
+            "knot": 83,
+            "sharings": 10,
+            "heard": null,
+            "rounds": 9
+          },
+          {
+            "t0": 3,
+            "linked": false,
+            "knot": 84,
+            "sharings": 10,
+            "heard": null,
+            "rounds": 9
+          },
+          {
+            "t0": 3,
+            "linked": false,
+            "knot": 85,
+            "sharings": 10,
+            "heard": null,
+            "rounds": 9
+          },
+          {
+            "t0": 3,
+            "linked": false,
+            "knot": 109,
+            "sharings": 10,
+            "heard": null,
+            "rounds": 9
+          },
+          {
+            "t0": 5,
+            "linked": false,
+            "knot": 484,
+            "sharings": 9,
+            "heard": null,
+            "rounds": 13
+          },
+          {
+            "t0": 5,
+            "linked": false,
+            "knot": 485,
+            "sharings": 9,
+            "heard": null,
+            "rounds": 13
+          },
+          {
+            "t0": 5,
+            "linked": false,
+            "knot": 486,
+            "sharings": 9,
+            "heard": null,
+            "rounds": 13
+          },
+          {
+            "t0": 5,
+            "linked": false,
+            "knot": 356,
+            "sharings": 12,
+            "heard": null,
+            "rounds": 10
+          },
+          {
+            "t0": 5,
+            "linked": false,
+            "knot": 357,
+            "sharings": 12,
+            "heard": null,
+            "rounds": 10
+          },
+          {
+            "t0": 8,
+            "linked": false,
+            "knot": 1827,
+            "sharings": 12,
+            "heard": null,
+            "rounds": 13
+          },
+          {
+            "t0": 8,
+            "linked": false,
+            "knot": 1828,
+            "sharings": 12,
+            "heard": null,
+            "rounds": 13
+          },
+          {
+            "t0": 8,
+            "linked": false,
+            "knot": 1829,
+            "sharings": 12,
+            "heard": null,
+            "rounds": 13
+          },
+          {
+            "t0": 8,
+            "linked": false,
+            "knot": 1830,
+            "sharings": 12,
+            "heard": null,
+            "rounds": 13
+          },
+          {
+            "t0": 8,
+            "linked": false,
+            "knot": 1831,
+            "sharings": 12,
+            "heard": null,
+            "rounds": 13
+          }
+        ]
+      },
+      "archive mismatches": {},
+      "round comparisons": [
+        {
+          "source": "linked_runs.jsonl.gz",
+          "field": "linked",
+          "rounds checked": 13,
+          "length match": true,
+          "mismatch rounds": [],
+          "archived": [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "rebuilt": [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        }
+      ],
+      "changes cut earlier with the baseline bound": 0,
+      "hearings outside that tighter window": 0,
+      "own birth counts at first hearing": [],
+      "wall seconds": 5.3273
+    },
+    {
+      "selection": {
+        "phase": "first",
+        "stratum": [
+          "CAP-7",
+          true,
+          true
+        ],
+        "key": [
+          "CAP-7",
+          "tri:522@0",
+          "n3:g7:112@0"
+        ],
+        "rounds": 24,
+        "bound": 6000,
+        "changed horizon": [
+          24,
+          6000
+        ]
+      },
+      "terminal knots": 6230,
+      "replay": {
+        "A": "tri:522@0",
+        "B": "n3:g7:112@0",
+        "law": "CAP-7",
+        "rounds": 14,
+        "linked": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "changes": [
+          {
+            "t0": 3,
+            "linked": true,
+            "knot": 83,
+            "sharings": 9,
+            "heard": null,
+            "rounds": 12
+          },
+          {
+            "t0": 3,
+            "linked": true,
+            "knot": 91,
+            "sharings": 10,
+            "heard": null,
+            "rounds": 13
+          },
+          {
+            "t0": 5,
+            "linked": true,
+            "knot": 292,
+            "sharings": 11,
+            "heard": null,
+            "rounds": 13
+          },
+          {
+            "t0": 5,
+            "linked": true,
+            "knot": 295,
+            "sharings": 12,
+            "heard": null,
+            "rounds": 14
+          },
+          {
+            "t0": 8,
+            "linked": true,
+            "knot": 1118,
+            "sharings": 14,
+            "heard": null,
+            "rounds": 14
+          },
+          {
+            "t0": 8,
+            "linked": true,
+            "knot": 1121,
+            "sharings": 15,
+            "heard": null,
+            "rounds": 14
+          }
+        ]
+      },
+      "archive mismatches": {},
+      "round comparisons": [
+        {
+          "source": "linked_runs.jsonl.gz",
+          "field": "linked",
+          "rounds checked": 14,
+          "length match": true,
+          "mismatch rounds": [],
+          "archived": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "rebuilt": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      ],
+      "changes cut earlier with the baseline bound": 0,
+      "hearings outside that tighter window": 0,
+      "own birth counts at first hearing": [],
+      "wall seconds": 2.7863
+    },
+    {
+      "selection": {
+        "phase": "second",
+        "stratum": [
+          "switch kind",
+          "CAP-3",
+          "no round-seven target"
+        ],
+        "key": [
+          "CAP-3",
+          "tri:122@0",
+          "n4:g18:0001@3"
+        ],
+        "rounds": 32,
+        "bound": 10000,
+        "changed horizon": [
+          32,
+          10000
+        ]
+      },
+      "terminal knots": 6188,
+      "replay": {
+        "A": "tri:122@0",
+        "B": "n4:g18:0001@3",
+        "law": "CAP-3",
+        "rounds": 32,
+        "knots": 6188,
+        "changes": [
+          {
+            "t0": 3,
+            "knot": 39,
+            "sharings": 9,
+            "heard": 13,
+            "rounds": 23,
+            "linked after it": [
+              true,
+              true,
+              true,
+              true,
+              true,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "t0": 7,
+            "none linked": true
+          }
+        ]
+      },
+      "archive mismatches": {},
+      "round comparisons": [
+        {
+          "source": "again_linked_runs_caps36.jsonl.gz",
+          "field": "linked after it",
+          "rounds checked": 23,
+          "length match": true,
+          "mismatch rounds": [],
+          "archived": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "rebuilt": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "t0": 3,
+          "knot": 39
+        },
+        {
+          "source": "SECOND-SWITCH-20261126-001/recede_runs.jsonl.gz",
+          "field": "own births",
+          "rounds checked": 16,
+          "length match": true,
+          "mismatch rounds": [],
+          "archived": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18
+          ],
+          "rebuilt": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18
+          ]
+        },
+        {
+          "source": "SECOND-SWITCH-20261126-001/recede_runs.jsonl.gz",
+          "field": "nearest far member",
+          "rounds checked": 16,
+          "length match": true,
+          "mismatch rounds": [],
+          "archived": [
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22
+          ],
+          "rebuilt": [
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22
+          ]
+        },
+        {
+          "source": "SECOND-SWITCH-20261126-001/recede_runs.jsonl.gz",
+          "field": "nearest far member that waited",
+          "rounds checked": 16,
+          "length match": true,
+          "mismatch rounds": [],
+          "archived": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "rebuilt": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      ],
+      "own birth counts at first hearing": [
+        [
+          3,
+          39,
+          13,
+          15,
+          25
+        ]
+      ],
+      "wall seconds": 0.3026
+    },
+    {
+      "selection": {
+        "phase": "second",
+        "stratum": [
+          "switch kind",
+          "CAP-3",
+          "round-seven change placed"
+        ],
+        "key": [
+          "CAP-3",
+          "tri:122@0",
+          "n4:g17:1112@0"
+        ],
+        "rounds": 32,
+        "bound": 10000,
+        "changed horizon": [
+          32,
+          10000
+        ]
+      },
+      "terminal knots": 6220,
+      "replay": {
+        "A": "tri:122@0",
+        "B": "n4:g17:1112@0",
+        "law": "CAP-3",
+        "rounds": 32,
+        "knots": 6220,
+        "changes": [
+          {
+            "t0": 3,
+            "knot": 38,
+            "sharings": 9,
+            "heard": 13,
+            "rounds": 23,
+            "linked after it": [
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ]
+          },
+          {
+            "t0": 7,
+            "knot": 150,
+            "sharings": 13,
+            "heard": null,
+            "rounds": 22,
+            "linked after it": [
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ]
+          },
+          {
+            "t0": 11,
+            "none linked": true
+          }
+        ]
+      },
+      "archive mismatches": {},
+      "round comparisons": [
+        {
+          "source": "again_linked_runs_caps36.jsonl.gz",
+          "field": "linked after it",
+          "rounds checked": 23,
+          "length match": true,
+          "mismatch rounds": [],
+          "archived": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "rebuilt": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "t0": 3,
+          "knot": 38
+        },
+        {
+          "source": "again_linked_runs_caps36.jsonl.gz",
+          "field": "linked after it",
+          "rounds checked": 22,
+          "length match": true,
+          "mismatch rounds": [],
+          "archived": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "rebuilt": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "t0": 7,
+          "knot": 150
+        },
+        {
+          "source": "SECOND-SWITCH-20261126-001/recede_runs.jsonl.gz",
+          "field": "own births",
+          "rounds checked": 16,
+          "length match": true,
+          "mismatch rounds": [],
+          "archived": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18
+          ],
+          "rebuilt": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18
+          ]
+        },
+        {
+          "source": "SECOND-SWITCH-20261126-001/recede_runs.jsonl.gz",
+          "field": "nearest far member",
+          "rounds checked": 16,
+          "length match": true,
+          "mismatch rounds": [],
+          "archived": [
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22
+          ],
+          "rebuilt": [
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22
+          ]
+        },
+        {
+          "source": "SECOND-SWITCH-20261126-001/recede_runs.jsonl.gz",
+          "field": "nearest far member that waited",
+          "rounds checked": 16,
+          "length match": true,
+          "mismatch rounds": [],
+          "archived": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "rebuilt": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      ],
+      "own birth counts at first hearing": [
+        [
+          3,
+          38,
+          13,
+          15,
+          25
+        ]
+      ],
+      "wall seconds": 0.4795
+    },
+    {
+      "selection": {
+        "phase": "second",
+        "stratum": [
+          "switch kind",
+          "CAP-4",
+          "no round-seven target"
+        ],
+        "key": [
+          "CAP-4",
+          "tri:222@0",
+          "n3:g6:122@0"
+        ],
+        "rounds": 32,
+        "bound": 10000,
+        "changed horizon": [
+          32,
+          10000
+        ]
+      },
+      "terminal knots": 10201,
+      "replay": {
+        "A": "tri:222@0",
+        "B": "n3:g6:122@0",
+        "law": "CAP-4",
+        "rounds": 30,
+        "knots": 10201,
+        "changes": [
+          {
+            "t0": 3,
+            "knot": 55,
+            "sharings": 9,
+            "heard": 13,
+            "rounds": 19,
+            "linked after it": [
+              true,
+              true,
+              true,
+              true,
+              true,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ]
+          },
+          {
+            "t0": 7,
+            "none linked": true
+          }
+        ]
+      },
+      "archive mismatches": {},
+      "round comparisons": [
+        {
+          "source": "again_linked_runs_caps36.jsonl.gz",
+          "field": "linked after it",
+          "rounds checked": 19,
+          "length match": true,
+          "mismatch rounds": [],
+          "archived": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "rebuilt": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "t0": 3,
+          "knot": 55
+        },
+        {
+          "source": "SWITCH-RECEIVERS-20261126-001/rule_runs.jsonl.gz",
+          "field": "own births",
+          "rounds checked": 16,
+          "length match": true,
+          "mismatch rounds": [],
+          "archived": [
+            4,
+            5,
+            7,
+            9,
+            11,
+            13,
+            15,
+            17,
+            19,
+            21,
+            23,
+            25,
+            27,
+            29,
+            31,
+            33
+          ],
+          "rebuilt": [
+            4,
+            5,
+            7,
+            9,
+            11,
+            13,
+            15,
+            17,
+            19,
+            21,
+            23,
+            25,
+            27,
+            29,
+            31,
+            33
+          ],
+          "sender": "g6:122@0"
+        },
+        {
+          "source": "SWITCH-RECEIVERS-20261126-001/rule_runs.jsonl.gz",
+          "field": "A short",
+          "rounds checked": 16,
+          "length match": true,
+          "mismatch rounds": [],
+          "archived": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "rebuilt": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "sender": "g6:122@0"
+        }
+      ],
+      "own birth counts at first hearing": [
+        [
+          3,
+          55,
+          13,
+          27,
+          46
+        ]
+      ],
+      "wall seconds": 0.5281
+    },
+    {
+      "selection": {
+        "phase": "second",
+        "stratum": [
+          "switch kind",
+          "CAP-4",
+          "round-seven change placed"
+        ],
+        "key": [
+          "CAP-4",
+          "tri:222@0",
+          "n4:g18:1112@0"
+        ],
+        "rounds": 32,
+        "bound": 10000,
+        "changed horizon": [
+          32,
+          10000
+        ]
+      },
+      "terminal knots": 10676,
+      "replay": {
+        "A": "tri:222@0",
+        "B": "n4:g18:1112@0",
+        "law": "CAP-4",
+        "rounds": 31,
+        "knots": 10676,
+        "changes": [
+          {
+            "t0": 3,
+            "knot": 44,
+            "sharings": 9,
+            "heard": 13,
+            "rounds": 19,
+            "linked after it": [
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ]
+          },
+          {
+            "t0": 7,
+            "knot": 213,
+            "sharings": 13,
+            "heard": null,
+            "rounds": 18,
+            "linked after it": [
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ]
+          },
+          {
+            "t0": 11,
+            "none linked": true
+          }
+        ]
+      },
+      "archive mismatches": {},
+      "round comparisons": [
+        {
+          "source": "again_linked_runs_caps36.jsonl.gz",
+          "field": "linked after it",
+          "rounds checked": 19,
+          "length match": true,
+          "mismatch rounds": [],
+          "archived": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "rebuilt": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "t0": 3,
+          "knot": 44
+        },
+        {
+          "source": "again_linked_runs_caps36.jsonl.gz",
+          "field": "linked after it",
+          "rounds checked": 18,
+          "length match": true,
+          "mismatch rounds": [],
+          "archived": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "rebuilt": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "t0": 7,
+          "knot": 213
+        }
+      ],
+      "own birth counts at first hearing": [
+        [
+          3,
+          44,
+          13,
+          27,
+          46
+        ]
+      ],
+      "wall seconds": 0.7879
+    },
+    {
+      "selection": {
+        "phase": "second",
+        "stratum": [
+          "switch kind",
+          "CAP-5",
+          "no round-seven target"
+        ],
+        "key": [
+          "CAP-5",
+          "tri:322@0",
+          "n3:g6:123@0"
+        ],
+        "rounds": 32,
+        "bound": 10000,
+        "changed horizon": [
+          32,
+          10000
+        ]
+      },
+      "terminal knots": 10784,
+      "replay": {
+        "A": "tri:322@0",
+        "B": "n3:g6:123@0",
+        "law": "CAP-5",
+        "rounds": 25,
+        "knots": 10784,
+        "changes": [
+          {
+            "t0": 3,
+            "knot": 68,
+            "sharings": 9,
+            "heard": 13,
+            "rounds": 15,
+            "linked after it": [
+              true,
+              true,
+              true,
+              true,
+              true,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ]
+          },
+          {
+            "t0": 7,
+            "none linked": true
+          }
+        ]
+      },
+      "archive mismatches": {},
+      "round comparisons": [
+        {
+          "source": "again_linked_runs_caps36.jsonl.gz",
+          "field": "linked after it",
+          "rounds checked": 15,
+          "length match": true,
+          "mismatch rounds": [],
+          "archived": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "rebuilt": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "t0": 3,
+          "knot": 68
+        }
+      ],
+      "own birth counts at first hearing": [
+        [
+          3,
+          68,
+          13,
+          50,
+          86
+        ]
+      ],
+      "wall seconds": 0.6715
+    },
+    {
+      "selection": {
+        "phase": "second",
+        "stratum": [
+          "switch kind",
+          "CAP-5",
+          "round-seven change placed"
+        ],
+        "key": [
+          "CAP-5",
+          "tri:322@0",
+          "n4:g16:1123@0"
+        ],
+        "rounds": 32,
+        "bound": 10000,
+        "changed horizon": [
+          32,
+          10000
+        ]
+      },
+      "terminal knots": 10946,
+      "replay": {
+        "A": "tri:322@0",
+        "B": "n4:g16:1123@0",
+        "law": "CAP-5",
+        "rounds": 25,
+        "knots": 10946,
+        "changes": [
+          {
+            "t0": 3,
+            "knot": 63,
+            "sharings": 9,
+            "heard": 13,
+            "rounds": 15,
+            "linked after it": [
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ]
+          },
+          {
+            "t0": 7,
+            "knot": 330,
+            "sharings": 13,
+            "heard": null,
+            "rounds": 15,
+            "linked after it": [
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ]
+          },
+          {
+            "t0": 11,
+            "none linked": true
+          }
+        ]
+      },
+      "archive mismatches": {},
+      "round comparisons": [
+        {
+          "source": "again_linked_runs_caps36.jsonl.gz",
+          "field": "linked after it",
+          "rounds checked": 15,
+          "length match": true,
+          "mismatch rounds": [],
+          "archived": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "rebuilt": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "t0": 3,
+          "knot": 63
+        },
+        {
+          "source": "again_linked_runs_caps36.jsonl.gz",
+          "field": "linked after it",
+          "rounds checked": 15,
+          "length match": true,
+          "mismatch rounds": [],
+          "archived": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "rebuilt": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "t0": 7,
+          "knot": 330
+        }
+      ],
+      "own birth counts at first hearing": [
+        [
+          3,
+          63,
+          13,
+          50,
+          86
+        ]
+      ],
+      "wall seconds": 1.0547
+    },
+    {
+      "selection": {
+        "phase": "second",
+        "stratum": [
+          "switch kind",
+          "CAP-6",
+          "no round-seven target"
+        ],
+        "key": [
+          "CAP-6",
+          "tri:422@0",
+          "n4:g13:2331@3"
+        ],
+        "rounds": 32,
+        "bound": 10000,
+        "changed horizon": [
+          32,
+          10000
+        ]
+      },
+      "terminal knots": 10336,
+      "replay": {
+        "A": "tri:422@0",
+        "B": "n4:g13:2331@3",
+        "law": "CAP-6",
+        "rounds": 20,
+        "knots": 10336,
+        "changes": [
+          {
+            "t0": 3,
+            "knot": 83,
+            "sharings": 9,
+            "heard": 13,
+            "rounds": 13,
+            "linked after it": [
+              true,
+              true,
+              true,
+              true,
+              true,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ]
+          },
+          {
+            "t0": 7,
+            "none linked": true
+          }
+        ]
+      },
+      "archive mismatches": {},
+      "round comparisons": [
+        {
+          "source": "again_linked_runs_caps36.jsonl.gz",
+          "field": "linked after it",
+          "rounds checked": 13,
+          "length match": true,
+          "mismatch rounds": [],
+          "archived": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "rebuilt": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "t0": 3,
+          "knot": 83
+        }
+      ],
+      "own birth counts at first hearing": [
+        [
+          3,
+          83,
+          13,
+          94,
+          162
+        ]
+      ],
+      "wall seconds": 0.8457
+    },
+    {
+      "selection": {
+        "phase": "second",
+        "stratum": [
+          "switch kind",
+          "CAP-6",
+          "round-seven change placed"
+        ],
+        "key": [
+          "CAP-6",
+          "tri:422@0",
+          "n4:g16:1112@1"
+        ],
+        "rounds": 32,
+        "bound": 10000,
+        "changed horizon": [
+          32,
+          10000
+        ]
+      },
+      "terminal knots": 10397,
+      "replay": {
+        "A": "tri:422@0",
+        "B": "n4:g16:1112@1",
+        "law": "CAP-6",
+        "rounds": 20,
+        "knots": 10397,
+        "changes": [
+          {
+            "t0": 3,
+            "knot": 72,
+            "sharings": 9,
+            "heard": 13,
+            "rounds": 13,
+            "linked after it": [
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              false,
+              false,
+              false,
+              false
+            ]
+          },
+          {
+            "t0": 7,
+            "knot": 503,
+            "sharings": 13,
+            "heard": null,
+            "rounds": 13,
+            "linked after it": [
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              false,
+              false,
+              false,
+              false
+            ]
+          },
+          {
+            "t0": 11,
+            "none linked": true
+          }
+        ]
+      },
+      "archive mismatches": {},
+      "round comparisons": [
+        {
+          "source": "again_linked_runs_caps36.jsonl.gz",
+          "field": "linked after it",
+          "rounds checked": 13,
+          "length match": true,
+          "mismatch rounds": [],
+          "archived": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            false,
+            false,
+            false,
+            false
+          ],
+          "rebuilt": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            false,
+            false,
+            false,
+            false
+          ],
+          "t0": 3,
+          "knot": 72
+        },
+        {
+          "source": "again_linked_runs_caps36.jsonl.gz",
+          "field": "linked after it",
+          "rounds checked": 13,
+          "length match": true,
+          "mismatch rounds": [],
+          "archived": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            false,
+            false,
+            false,
+            false
+          ],
+          "rebuilt": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            false,
+            false,
+            false,
+            false
+          ],
+          "t0": 7,
+          "knot": 503
+        }
+      ],
+      "own birth counts at first hearing": [
+        [
+          3,
+          72,
+          13,
+          94,
+          162
+        ]
+      ],
+      "wall seconds": 1.2442
+    },
+    {
+      "selection": {
+        "phase": "second",
+        "stratum": [
+          "switch kind",
+          "no far member after the first change"
+        ],
+        "key": [
+          "CAP-5",
+          "tri:322@0",
+          "n4:g18:0001@3"
+        ],
+        "rounds": 32,
+        "bound": 10000,
+        "changed horizon": [
+          32,
+          10000
+        ]
+      },
+      "terminal knots": 10661,
+      "replay": {
+        "A": "tri:322@0",
+        "B": "n4:g18:0001@3",
+        "law": "CAP-5",
+        "rounds": 25,
+        "knots": 10661,
+        "changes": [
+          {
+            "t0": 3,
+            "knot": 56,
+            "sharings": 9,
+            "heard": 13,
+            "rounds": 15,
+            "linked after it": [
+              true,
+              true,
+              true,
+              true,
+              true,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "t0": 7,
+            "none linked": true
+          }
+        ]
+      },
+      "archive mismatches": {},
+      "round comparisons": [
+        {
+          "source": "again_linked_runs_caps36.jsonl.gz",
+          "field": "linked after it",
+          "rounds checked": 15,
+          "length match": true,
+          "mismatch rounds": [],
+          "archived": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "rebuilt": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "t0": 3,
+          "knot": 56
+        }
+      ],
+      "own birth counts at first hearing": [
+        [
+          3,
+          56,
+          13,
+          50,
+          86
+        ]
+      ],
+      "wall seconds": 0.6674
+    },
+    {
+      "selection": {
+        "phase": "second",
+        "stratum": [
+          "census receiver",
+          "first change unheard"
+        ],
+        "key": [
+          "CAP-3",
+          "n4:g13:3331@3",
+          "g7:122@0"
+        ],
+        "rounds": 32,
+        "bound": 10000,
+        "changed horizon": [
+          32,
+          10000
+        ]
+      },
+      "terminal knots": 6589,
+      "replay": {
+        "A": "n4:g13:3331@3",
+        "B": "g7:122@0",
+        "law": "CAP-3",
+        "rounds": 32,
+        "knots": 6589,
+        "changes": [
+          {
+            "t0": 3,
+            "knot": 47,
+            "sharings": 9,
+            "heard": null,
+            "rounds": 32,
+            "linked after it": [
+              true,
+              true,
+              true,
+              true,
+              true,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ]
+          },
+          {
+            "t0": 7,
+            "none linked": true
+          }
+        ]
+      },
+      "archive mismatches": {},
+      "round comparisons": [
+        {
+          "source": "again_linked_runs_receivers.jsonl.gz",
+          "field": "linked after it",
+          "rounds checked": 32,
+          "length match": true,
+          "mismatch rounds": [],
+          "archived": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "rebuilt": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "t0": 3,
+          "knot": 47
+        },
+        {
+          "source": "SWITCH-RECEIVERS-20261126-001/receivers_runs.jsonl.gz",
+          "field": "own births",
+          "rounds checked": 16,
+          "length match": true,
+          "mismatch rounds": [],
+          "archived": [
+            7,
+            8,
+            7,
+            4,
+            2,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "rebuilt": [
+            7,
+            8,
+            7,
+            4,
+            2,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "sender": "g7:122@0"
+        },
+        {
+          "source": "SWITCH-RECEIVERS-20261126-001/receivers_runs.jsonl.gz",
+          "field": "A short",
+          "rounds checked": 16,
+          "length match": true,
+          "mismatch rounds": [],
+          "archived": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "rebuilt": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "sender": "g7:122@0"
+        }
+      ],
+      "own birth counts at first hearing": [],
+      "wall seconds": 0.3045
+    },
+    {
+      "selection": {
+        "phase": "second",
+        "stratum": [
+          "census receiver",
+          "first change heard"
+        ],
+        "key": [
+          "CAP-3",
+          "n4:g17:1122@1",
+          "g6:122@0"
+        ],
+        "rounds": 32,
+        "bound": 10000,
+        "changed horizon": [
+          32,
+          10000
+        ]
+      },
+      "terminal knots": 6780,
+      "replay": {
+        "A": "n4:g17:1122@1",
+        "B": "g6:122@0",
+        "law": "CAP-3",
+        "rounds": 32,
+        "knots": 6780,
+        "changes": [
+          {
+            "t0": 3,
+            "knot": 49,
+            "sharings": 9,
+            "heard": 13,
+            "rounds": 23,
+            "linked after it": [
+              true,
+              true,
+              true,
+              true,
+              true,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ]
+          },
+          {
+            "t0": 7,
+            "none linked": true
+          }
+        ]
+      },
+      "archive mismatches": {},
+      "round comparisons": [
+        {
+          "source": "again_linked_runs_receivers.jsonl.gz",
+          "field": "linked after it",
+          "rounds checked": 23,
+          "length match": true,
+          "mismatch rounds": [],
+          "archived": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "rebuilt": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "t0": 3,
+          "knot": 49
+        },
+        {
+          "source": "SWITCH-RECEIVERS-20261126-001/receivers_runs.jsonl.gz",
+          "field": "own births",
+          "rounds checked": 16,
+          "length match": true,
+          "mismatch rounds": [],
+          "archived": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18
+          ],
+          "rebuilt": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18
+          ],
+          "sender": "g6:122@0"
+        },
+        {
+          "source": "SWITCH-RECEIVERS-20261126-001/receivers_runs.jsonl.gz",
+          "field": "A short",
+          "rounds checked": 16,
+          "length match": true,
+          "mismatch rounds": [],
+          "archived": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "rebuilt": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "sender": "g6:122@0"
+        }
+      ],
+      "own birth counts at first hearing": [
+        [
+          3,
+          49,
+          13,
+          15,
+          25
+        ]
+      ],
+      "wall seconds": 0.3088
+    }
+  ]
+}

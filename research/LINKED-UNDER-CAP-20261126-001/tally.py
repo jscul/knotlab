@@ -14,7 +14,7 @@ for law in ('CAP-3', 'CAP-4', 'CAP-5', 'CAP-6', 'CAP-7'):
         yes = [c for c in ch if c['linked']]; no = [c for c in ch if not c['linked']]
         hy = [c for c in yes if c['heard'] is not None]; hn = [c for c in no if c['heard'] is not None]
         exact = sum(1 for c in hy if c['sharings'] is not None and c['heard'] == c['t0'] + c['sharings'] + 1)
-        print('| %s | %s | %d | %d / %d / %d | %d of %d | %d of %d | %d of %d |' % (law, kd, len(rs), at(4), at(9), at(16) if True else 0,
+        print('| %s | %s | %d | %d / %d / %d | %d of %d | %d of %d | %d of %d |' % (law, kd, len(rs), at(3), at(8), at(16),
               len(hy), len(yes), len(hn), len(no), exact, len(hy)))
 print('\nnot run', len(lost), lost[:3])
 if len(sys.argv) > 2:

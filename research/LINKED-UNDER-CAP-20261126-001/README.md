@@ -1,5 +1,8 @@
 # Two patterns that stay linked under a cap: can the far one then change the receiver's course?
 
+> **Refereed (R1, confirmed with fixes, one Block): see the notice in [the decision](decision.md).** "Once, then never"
+> is the scheduled second change's result, not a general limit; the census table's first column is corrected below.
+
 Epic `LINKED-UNDER-CAP-20261126-001`, direction 1 of the close of
 [`SECOND-SWITCH-20261126-001`](../SECOND-SWITCH-20261126-001/decision.md), under the owner's standing rule. A check by
 the thread, not a registered study; computed; referee pending. Program: [`linked.py`](linked.py).
@@ -73,12 +76,14 @@ stopped by the clock. The run was stopped once when its shell's time ran out, at
 
 | pairs | linked after round 3 / 8 / 16 | changes at linked far members heard (of) | at far members not linked (of) |
 |---|---|---|---|
-| cap of three, switch kind × 646 far ends | 167 / 28 / 28 | 124 of 471 | 0 of 8,170 |
-| cap of four | 186 / 28 / 28 | 96 of 1,225 | 0 of 6,974 |
-| cap of five | 197 / 28 / 28 | 48 of 1,747 | 0 of 6,308 |
-| cap of six | 202 / 28 / 28 | 28 of 1,917 | 0 of 6,005 |
-| cap of seven | 205 / 28 / not read (runs end at rounds 9 to 14) | 0 of 2,000 (cut by the knot bound) | 0 of 5,864 |
-| cap of three, 646 receivers × 5 senders | 334 / 181 / 181 | 8 of 1,846 | 0 of 31,206 |
+| cap of three, switch kind × 646 far ends | 205 / 28 / 28 | 124 of 471 | 0 of 8,170 |
+| cap of four | 427 / 28 / 28 | 96 of 1,225 | 0 of 6,974 |
+| cap of five | 462 / 28 / 28 | 48 of 1,747 | 0 of 6,308 |
+| cap of six | 478 / 28 / 28 | 28 of 1,917 | 0 of 6,005 |
+| cap of seven | 485 / 28 / not read (the 28 end at round 14) | 0 of 2,000 (cut by the knot bound) | 0 of 5,864 |
+| cap of three, 646 receivers × 5 senders | 410 / 181 / 181 | 8 of 1,846 | 0 of 31,206 |
+
+(First column corrected after the referee: the first published table read round 4 for round 3.)
 
 1. **No change at a far member outside the receiver's linked parts is heard: 0 of 64,527.** The link is necessary, as
    the referee of the second-switch study argued from the local law.
@@ -98,12 +103,14 @@ census pairs), a change after round 3, then after 7, 11 and 15, each in the grow
 
 - The first is heard in all 112 switch-kind pairs (at round 13) and in 7 of the 181 census pairs (the switch kind and
   one other).
-- **No second change is heard in any of the 293.** After the first change the two lie in unlinked classes from round 6
-  to round 10 in 289 pairs, and in the other 4 (one far end under each cap) the far end has no members left after round
-  5. So sending the change ends the link it was sent along, whether or not it was heard.
+- **The scheduled second change is not heard.** It could be placed in 80 of the 293 pairs (in the others no far
+  member was linked after round 7), all 13 sharings away and due at round 21, which 20 comparisons reached; none was
+  heard, and no third or fourth change could be placed. After the first change the two lie in unlinked classes from
+  round 6 to round 10 in 289 pairs, and in the other 4 the far end has no members left after round 5 (the referee
+  counts two ways the link ends: the shared class splits, or it loses its last strictly far-owned member).
 
-So under a cap, by a meeting, a far pattern can change the receiver's course after both exist, but once: the change
-cuts the link. This is the second branch of the stop of the short-again study's first direction ("the line passes once
+So under a cap, by a meeting, a far pattern can change the receiver's course after both exist; the scheduled second
+change was not heard, and the link ends after the first (the referee found a second change that cancels the first). This is the second branch of the stop of the short-again study's first direction ("the line passes once
 and stops: the line is spent by use"), now in linked pairs that grow, not in a jam.
 
 ## Expectations, and how they fared
@@ -113,7 +120,8 @@ and stops: the line is spent by use"), now in linked pairs that grow, not in a j
 2. *Unlinked, never heard.* Holds: 0 of 64,527.
 3. *Linked and still linked three rounds later, more than half heard.* Holds for the switch kinds under caps three and
    four (124 of 144, 96 of 144); fails under five and six and for the census receivers; 304 of 2,022 in all.
-4. *Sent again: each pair hears three changes in a row.* Fails in all 293: the first change ends the link.
+4. *Sent again: each pair hears three changes in a row.* Fails: 293 first changes, 80 second changes placed, none
+   heard, no third or fourth placed; of the 209 cap-three entries (the expectation's scope) the first was heard in 35.
 
 ## What this does not say
 

@@ -1,0 +1,6774 @@
+{
+  "inputs_sha256": {
+    "rule_runs.jsonl.gz": "036e78237c04e903fc04b618699af94a43e236e34440823ae518ea0645e1a62f",
+    "controls_runs.jsonl.gz": "56ac507ba07cd4fa5195275d11b77df3b9d37682851298308e2421098e5dc7bf",
+    "senders_runs.jsonl.gz": "d2889b0888983b9f957790ae30d6507874d89078aa4249bee7f1a1b86e97a599",
+    "reflect.json": "64d346bef7542d32fee6b57a65de7a58e242a2570bd2b7b0bf2d88f4d47f3be3",
+    "receivers_runs.jsonl.gz": "38f658b9b55a0dc4d3b0729e311d849f0b65b34ff0d1111996cc8ce0d3fe0850"
+  },
+  "predecessor_sha256": "13bc49761905c0bec5af1fe8e665a92973f36e63ca1486ea40041936f5196e94",
+  "rule": {
+    "classes": [
+      {
+        "receiver": "tri:122@0",
+        "cap": 3,
+        "steps": 2,
+        "all_sender_common_rounds": 15,
+        "first_all_sender_common": 5,
+        "first_on_any_pair": 5,
+        "classes_all_sender_common": [
+          [
+            "g1:3@0",
+            "g6:122@0",
+            "stub"
+          ],
+          [
+            "g3:22@0"
+          ],
+          [
+            "g7:122@0"
+          ]
+        ],
+        "any_own_short_before_first": false,
+        "switch": true,
+        "sender_full_rounds": {
+          "g1:3@0": 16,
+          "g3:22@0": 16,
+          "g6:122@0": 16,
+          "g7:122@0": 15,
+          "stub": 16
+        },
+        "stub_comparisons": {
+          "g1:3@0": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          },
+          "g3:22@0": {
+            "first": 5,
+            "rounds": 16,
+            "short_before": false,
+            "short_rounds": [
+              6,
+              8,
+              10
+            ],
+            "alternate_short_to_stop": false
+          },
+          "g6:122@0": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          },
+          "g7:122@0": {
+            "first": 7,
+            "rounds": 15,
+            "short_before": false,
+            "short_rounds": [
+              8,
+              10,
+              12,
+              14
+            ],
+            "alternate_short_to_stop": true
+          },
+          "stub": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          }
+        },
+        "first_after_all_sender_common": []
+      },
+      {
+        "receiver": "tri:122@0",
+        "cap": 3,
+        "steps": 3,
+        "all_sender_common_rounds": 15,
+        "first_all_sender_common": 7,
+        "first_on_any_pair": 7,
+        "classes_all_sender_common": [
+          [
+            "g1:3@0",
+            "g6:122@0",
+            "stub"
+          ],
+          [
+            "g3:22@0"
+          ],
+          [
+            "g7:122@0"
+          ]
+        ],
+        "any_own_short_before_first": false,
+        "switch": true,
+        "sender_full_rounds": {
+          "g1:3@0": 16,
+          "g3:22@0": 16,
+          "g6:122@0": 16,
+          "g7:122@0": 15,
+          "stub": 16
+        },
+        "stub_comparisons": {
+          "g1:3@0": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          },
+          "g3:22@0": {
+            "first": 7,
+            "rounds": 16,
+            "short_before": false,
+            "short_rounds": [
+              8,
+              10,
+              12,
+              14,
+              16
+            ],
+            "alternate_short_to_stop": true
+          },
+          "g6:122@0": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          },
+          "g7:122@0": {
+            "first": 9,
+            "rounds": 15,
+            "short_before": false,
+            "short_rounds": [
+              10,
+              12,
+              14
+            ],
+            "alternate_short_to_stop": true
+          },
+          "stub": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          }
+        },
+        "first_after_all_sender_common": []
+      },
+      {
+        "receiver": "tri:122@0",
+        "cap": 4,
+        "steps": 2,
+        "all_sender_common_rounds": 16,
+        "first_all_sender_common": null,
+        "first_on_any_pair": null,
+        "classes_all_sender_common": [
+          [
+            "g1:3@0",
+            "g3:22@0",
+            "g6:122@0",
+            "g7:122@0",
+            "stub"
+          ]
+        ],
+        "any_own_short_before_first": null,
+        "switch": false,
+        "sender_full_rounds": {
+          "g1:3@0": 16,
+          "g3:22@0": 16,
+          "g6:122@0": 16,
+          "g7:122@0": 16,
+          "stub": 16
+        },
+        "stub_comparisons": {
+          "g1:3@0": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          },
+          "g3:22@0": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          },
+          "g6:122@0": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          },
+          "g7:122@0": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          },
+          "stub": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          }
+        },
+        "first_after_all_sender_common": []
+      },
+      {
+        "receiver": "tri:122@0",
+        "cap": 4,
+        "steps": 3,
+        "all_sender_common_rounds": 16,
+        "first_all_sender_common": null,
+        "first_on_any_pair": null,
+        "classes_all_sender_common": [
+          [
+            "g1:3@0",
+            "g3:22@0",
+            "g6:122@0",
+            "g7:122@0",
+            "stub"
+          ]
+        ],
+        "any_own_short_before_first": null,
+        "switch": false,
+        "sender_full_rounds": {
+          "g1:3@0": 16,
+          "g3:22@0": 16,
+          "g6:122@0": 16,
+          "g7:122@0": 16,
+          "stub": 16
+        },
+        "stub_comparisons": {
+          "g1:3@0": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          },
+          "g3:22@0": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          },
+          "g6:122@0": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          },
+          "g7:122@0": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          },
+          "stub": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          }
+        },
+        "first_after_all_sender_common": []
+      },
+      {
+        "receiver": "tri:222@0",
+        "cap": 3,
+        "steps": 2,
+        "all_sender_common_rounds": 16,
+        "first_all_sender_common": null,
+        "first_on_any_pair": null,
+        "classes_all_sender_common": [
+          [
+            "g1:3@0",
+            "g3:22@0",
+            "g6:122@0",
+            "g7:122@0",
+            "stub"
+          ]
+        ],
+        "any_own_short_before_first": null,
+        "switch": false,
+        "sender_full_rounds": {
+          "g1:3@0": 16,
+          "g3:22@0": 16,
+          "g6:122@0": 16,
+          "g7:122@0": 16,
+          "stub": 16
+        },
+        "stub_comparisons": {
+          "g1:3@0": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [
+              2
+            ],
+            "alternate_short_to_stop": null
+          },
+          "g3:22@0": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [
+              2
+            ],
+            "alternate_short_to_stop": null
+          },
+          "g6:122@0": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [
+              2
+            ],
+            "alternate_short_to_stop": null
+          },
+          "g7:122@0": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [
+              2
+            ],
+            "alternate_short_to_stop": null
+          },
+          "stub": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [
+              2
+            ],
+            "alternate_short_to_stop": null
+          }
+        },
+        "first_after_all_sender_common": []
+      },
+      {
+        "receiver": "tri:222@0",
+        "cap": 3,
+        "steps": 3,
+        "all_sender_common_rounds": 16,
+        "first_all_sender_common": null,
+        "first_on_any_pair": null,
+        "classes_all_sender_common": [
+          [
+            "g1:3@0",
+            "g3:22@0",
+            "g6:122@0",
+            "g7:122@0",
+            "stub"
+          ]
+        ],
+        "any_own_short_before_first": null,
+        "switch": false,
+        "sender_full_rounds": {
+          "g1:3@0": 16,
+          "g3:22@0": 16,
+          "g6:122@0": 16,
+          "g7:122@0": 16,
+          "stub": 16
+        },
+        "stub_comparisons": {
+          "g1:3@0": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [
+              2
+            ],
+            "alternate_short_to_stop": null
+          },
+          "g3:22@0": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [
+              2
+            ],
+            "alternate_short_to_stop": null
+          },
+          "g6:122@0": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [
+              2
+            ],
+            "alternate_short_to_stop": null
+          },
+          "g7:122@0": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [
+              2
+            ],
+            "alternate_short_to_stop": null
+          },
+          "stub": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [
+              2
+            ],
+            "alternate_short_to_stop": null
+          }
+        },
+        "first_after_all_sender_common": []
+      },
+      {
+        "receiver": "tri:222@0",
+        "cap": 4,
+        "steps": 2,
+        "all_sender_common_rounds": 12,
+        "first_all_sender_common": 5,
+        "first_on_any_pair": 5,
+        "classes_all_sender_common": [
+          [
+            "g1:3@0",
+            "g6:122@0",
+            "stub"
+          ],
+          [
+            "g3:22@0"
+          ],
+          [
+            "g7:122@0"
+          ]
+        ],
+        "any_own_short_before_first": false,
+        "switch": true,
+        "sender_full_rounds": {
+          "g1:3@0": 16,
+          "g3:22@0": 13,
+          "g6:122@0": 16,
+          "g7:122@0": 12,
+          "stub": 16
+        },
+        "stub_comparisons": {
+          "g1:3@0": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          },
+          "g3:22@0": {
+            "first": 5,
+            "rounds": 13,
+            "short_before": false,
+            "short_rounds": [
+              6,
+              7,
+              8,
+              10,
+              12
+            ],
+            "alternate_short_to_stop": false
+          },
+          "g6:122@0": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          },
+          "g7:122@0": {
+            "first": 7,
+            "rounds": 12,
+            "short_before": false,
+            "short_rounds": [
+              8,
+              9,
+              10,
+              12
+            ],
+            "alternate_short_to_stop": false
+          },
+          "stub": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          }
+        },
+        "first_after_all_sender_common": []
+      },
+      {
+        "receiver": "tri:222@0",
+        "cap": 4,
+        "steps": 3,
+        "all_sender_common_rounds": 12,
+        "first_all_sender_common": 7,
+        "first_on_any_pair": 7,
+        "classes_all_sender_common": [
+          [
+            "g1:3@0",
+            "g6:122@0",
+            "stub"
+          ],
+          [
+            "g3:22@0"
+          ],
+          [
+            "g7:122@0"
+          ]
+        ],
+        "any_own_short_before_first": false,
+        "switch": true,
+        "sender_full_rounds": {
+          "g1:3@0": 16,
+          "g3:22@0": 13,
+          "g6:122@0": 16,
+          "g7:122@0": 12,
+          "stub": 16
+        },
+        "stub_comparisons": {
+          "g1:3@0": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          },
+          "g3:22@0": {
+            "first": 7,
+            "rounds": 13,
+            "short_before": false,
+            "short_rounds": [
+              8,
+              9,
+              10,
+              12
+            ],
+            "alternate_short_to_stop": false
+          },
+          "g6:122@0": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          },
+          "g7:122@0": {
+            "first": 9,
+            "rounds": 12,
+            "short_before": false,
+            "short_rounds": [
+              10,
+              11,
+              12
+            ],
+            "alternate_short_to_stop": false
+          },
+          "stub": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          }
+        },
+        "first_after_all_sender_common": []
+      },
+      {
+        "receiver": "tri:222@0",
+        "cap": 5,
+        "steps": 2,
+        "all_sender_common_rounds": 15,
+        "first_all_sender_common": null,
+        "first_on_any_pair": null,
+        "classes_all_sender_common": [
+          [
+            "g1:3@0",
+            "g3:22@0",
+            "g6:122@0",
+            "g7:122@0",
+            "stub"
+          ]
+        ],
+        "any_own_short_before_first": null,
+        "switch": false,
+        "sender_full_rounds": {
+          "g1:3@0": 16,
+          "g3:22@0": 16,
+          "g6:122@0": 16,
+          "g7:122@0": 15,
+          "stub": 16
+        },
+        "stub_comparisons": {
+          "g1:3@0": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          },
+          "g3:22@0": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          },
+          "g6:122@0": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          },
+          "g7:122@0": {
+            "first": null,
+            "rounds": 15,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          },
+          "stub": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          }
+        },
+        "first_after_all_sender_common": []
+      },
+      {
+        "receiver": "tri:222@0",
+        "cap": 5,
+        "steps": 3,
+        "all_sender_common_rounds": 16,
+        "first_all_sender_common": null,
+        "first_on_any_pair": null,
+        "classes_all_sender_common": [
+          [
+            "g1:3@0",
+            "g3:22@0",
+            "g6:122@0",
+            "g7:122@0",
+            "stub"
+          ]
+        ],
+        "any_own_short_before_first": null,
+        "switch": false,
+        "sender_full_rounds": {
+          "g1:3@0": 16,
+          "g3:22@0": 16,
+          "g6:122@0": 16,
+          "g7:122@0": 16,
+          "stub": 16
+        },
+        "stub_comparisons": {
+          "g1:3@0": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          },
+          "g3:22@0": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          },
+          "g6:122@0": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          },
+          "g7:122@0": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          },
+          "stub": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          }
+        },
+        "first_after_all_sender_common": []
+      },
+      {
+        "receiver": "tri:322@0",
+        "cap": 4,
+        "steps": 2,
+        "all_sender_common_rounds": 14,
+        "first_all_sender_common": 4,
+        "first_on_any_pair": 4,
+        "classes_all_sender_common": [
+          [
+            "g1:3@0",
+            "g3:22@0"
+          ],
+          [
+            "g6:122@0",
+            "g7:122@0",
+            "stub"
+          ]
+        ],
+        "any_own_short_before_first": true,
+        "switch": false,
+        "sender_full_rounds": {
+          "g1:3@0": 14,
+          "g3:22@0": 14,
+          "g6:122@0": 16,
+          "g7:122@0": 14,
+          "stub": 16
+        },
+        "stub_comparisons": {
+          "g1:3@0": {
+            "first": 4,
+            "rounds": 14,
+            "short_before": true,
+            "short_rounds": [
+              2
+            ],
+            "alternate_short_to_stop": false
+          },
+          "g3:22@0": {
+            "first": 4,
+            "rounds": 14,
+            "short_before": true,
+            "short_rounds": [
+              2
+            ],
+            "alternate_short_to_stop": false
+          },
+          "g6:122@0": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [
+              2
+            ],
+            "alternate_short_to_stop": null
+          },
+          "g7:122@0": {
+            "first": null,
+            "rounds": 14,
+            "short_before": null,
+            "short_rounds": [
+              2
+            ],
+            "alternate_short_to_stop": null
+          },
+          "stub": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [
+              2
+            ],
+            "alternate_short_to_stop": null
+          }
+        },
+        "first_after_all_sender_common": []
+      },
+      {
+        "receiver": "tri:322@0",
+        "cap": 4,
+        "steps": 3,
+        "all_sender_common_rounds": 14,
+        "first_all_sender_common": null,
+        "first_on_any_pair": null,
+        "classes_all_sender_common": [
+          [
+            "g1:3@0",
+            "g3:22@0",
+            "g6:122@0",
+            "g7:122@0",
+            "stub"
+          ]
+        ],
+        "any_own_short_before_first": null,
+        "switch": false,
+        "sender_full_rounds": {
+          "g1:3@0": 14,
+          "g3:22@0": 14,
+          "g6:122@0": 16,
+          "g7:122@0": 15,
+          "stub": 16
+        },
+        "stub_comparisons": {
+          "g1:3@0": {
+            "first": null,
+            "rounds": 14,
+            "short_before": null,
+            "short_rounds": [
+              2
+            ],
+            "alternate_short_to_stop": null
+          },
+          "g3:22@0": {
+            "first": null,
+            "rounds": 14,
+            "short_before": null,
+            "short_rounds": [
+              2
+            ],
+            "alternate_short_to_stop": null
+          },
+          "g6:122@0": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [
+              2
+            ],
+            "alternate_short_to_stop": null
+          },
+          "g7:122@0": {
+            "first": null,
+            "rounds": 15,
+            "short_before": null,
+            "short_rounds": [
+              2
+            ],
+            "alternate_short_to_stop": null
+          },
+          "stub": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [
+              2
+            ],
+            "alternate_short_to_stop": null
+          }
+        },
+        "first_after_all_sender_common": []
+      },
+      {
+        "receiver": "tri:322@0",
+        "cap": 5,
+        "steps": 2,
+        "all_sender_common_rounds": 10,
+        "first_all_sender_common": 5,
+        "first_on_any_pair": 5,
+        "classes_all_sender_common": [
+          [
+            "g1:3@0",
+            "g6:122@0",
+            "stub"
+          ],
+          [
+            "g3:22@0"
+          ],
+          [
+            "g7:122@0"
+          ]
+        ],
+        "any_own_short_before_first": false,
+        "switch": true,
+        "sender_full_rounds": {
+          "g1:3@0": 16,
+          "g3:22@0": 10,
+          "g6:122@0": 16,
+          "g7:122@0": 10,
+          "stub": 16
+        },
+        "stub_comparisons": {
+          "g1:3@0": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          },
+          "g3:22@0": {
+            "first": 5,
+            "rounds": 10,
+            "short_before": false,
+            "short_rounds": [
+              6,
+              7,
+              8,
+              9,
+              10
+            ],
+            "alternate_short_to_stop": false
+          },
+          "g6:122@0": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          },
+          "g7:122@0": {
+            "first": 7,
+            "rounds": 10,
+            "short_before": false,
+            "short_rounds": [
+              8,
+              9,
+              10
+            ],
+            "alternate_short_to_stop": false
+          },
+          "stub": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          }
+        },
+        "first_after_all_sender_common": []
+      },
+      {
+        "receiver": "tri:322@0",
+        "cap": 5,
+        "steps": 3,
+        "all_sender_common_rounds": 11,
+        "first_all_sender_common": 7,
+        "first_on_any_pair": 7,
+        "classes_all_sender_common": [
+          [
+            "g1:3@0",
+            "g6:122@0",
+            "stub"
+          ],
+          [
+            "g3:22@0"
+          ],
+          [
+            "g7:122@0"
+          ]
+        ],
+        "any_own_short_before_first": false,
+        "switch": true,
+        "sender_full_rounds": {
+          "g1:3@0": 16,
+          "g3:22@0": 11,
+          "g6:122@0": 16,
+          "g7:122@0": 11,
+          "stub": 16
+        },
+        "stub_comparisons": {
+          "g1:3@0": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          },
+          "g3:22@0": {
+            "first": 7,
+            "rounds": 11,
+            "short_before": false,
+            "short_rounds": [
+              8,
+              9,
+              10,
+              11
+            ],
+            "alternate_short_to_stop": false
+          },
+          "g6:122@0": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          },
+          "g7:122@0": {
+            "first": 9,
+            "rounds": 11,
+            "short_before": false,
+            "short_rounds": [
+              10,
+              11
+            ],
+            "alternate_short_to_stop": false
+          },
+          "stub": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          }
+        },
+        "first_after_all_sender_common": []
+      },
+      {
+        "receiver": "tri:322@0",
+        "cap": 6,
+        "steps": 2,
+        "all_sender_common_rounds": 10,
+        "first_all_sender_common": 7,
+        "first_on_any_pair": 7,
+        "classes_all_sender_common": [
+          [
+            "g1:3@0"
+          ],
+          [
+            "g3:22@0",
+            "g6:122@0",
+            "g7:122@0",
+            "stub"
+          ]
+        ],
+        "any_own_short_before_first": false,
+        "switch": true,
+        "sender_full_rounds": {
+          "g1:3@0": 10,
+          "g3:22@0": 16,
+          "g6:122@0": 16,
+          "g7:122@0": 13,
+          "stub": 16
+        },
+        "stub_comparisons": {
+          "g1:3@0": {
+            "first": 7,
+            "rounds": 10,
+            "short_before": false,
+            "short_rounds": [
+              9,
+              10
+            ],
+            "alternate_short_to_stop": false
+          },
+          "g3:22@0": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          },
+          "g6:122@0": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          },
+          "g7:122@0": {
+            "first": null,
+            "rounds": 13,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          },
+          "stub": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          }
+        },
+        "first_after_all_sender_common": []
+      },
+      {
+        "receiver": "tri:322@0",
+        "cap": 6,
+        "steps": 3,
+        "all_sender_common_rounds": 11,
+        "first_all_sender_common": 10,
+        "first_on_any_pair": 10,
+        "classes_all_sender_common": [
+          [
+            "g1:3@0"
+          ],
+          [
+            "g3:22@0",
+            "g6:122@0",
+            "g7:122@0",
+            "stub"
+          ]
+        ],
+        "any_own_short_before_first": false,
+        "switch": true,
+        "sender_full_rounds": {
+          "g1:3@0": 11,
+          "g3:22@0": 16,
+          "g6:122@0": 16,
+          "g7:122@0": 14,
+          "stub": 16
+        },
+        "stub_comparisons": {
+          "g1:3@0": {
+            "first": 10,
+            "rounds": 11,
+            "short_before": false,
+            "short_rounds": [],
+            "alternate_short_to_stop": false
+          },
+          "g3:22@0": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          },
+          "g6:122@0": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          },
+          "g7:122@0": {
+            "first": null,
+            "rounds": 14,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          },
+          "stub": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          }
+        },
+        "first_after_all_sender_common": []
+      },
+      {
+        "receiver": "tri:422@0",
+        "cap": 5,
+        "steps": 2,
+        "all_sender_common_rounds": 10,
+        "first_all_sender_common": 4,
+        "first_on_any_pair": 4,
+        "classes_all_sender_common": [
+          [
+            "g1:3@0",
+            "g3:22@0"
+          ],
+          [
+            "g6:122@0",
+            "stub"
+          ],
+          [
+            "g7:122@0"
+          ]
+        ],
+        "any_own_short_before_first": true,
+        "switch": false,
+        "sender_full_rounds": {
+          "g1:3@0": 10,
+          "g3:22@0": 10,
+          "g6:122@0": 16,
+          "g7:122@0": 10,
+          "stub": 16
+        },
+        "stub_comparisons": {
+          "g1:3@0": {
+            "first": 4,
+            "rounds": 10,
+            "short_before": true,
+            "short_rounds": [
+              2,
+              6,
+              8,
+              10
+            ],
+            "alternate_short_to_stop": false
+          },
+          "g3:22@0": {
+            "first": 4,
+            "rounds": 10,
+            "short_before": true,
+            "short_rounds": [
+              2,
+              6,
+              8,
+              10
+            ],
+            "alternate_short_to_stop": false
+          },
+          "g6:122@0": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [
+              2
+            ],
+            "alternate_short_to_stop": null
+          },
+          "g7:122@0": {
+            "first": 6,
+            "rounds": 10,
+            "short_before": true,
+            "short_rounds": [
+              2
+            ],
+            "alternate_short_to_stop": false
+          },
+          "stub": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [
+              2
+            ],
+            "alternate_short_to_stop": null
+          }
+        },
+        "first_after_all_sender_common": []
+      },
+      {
+        "receiver": "tri:422@0",
+        "cap": 5,
+        "steps": 3,
+        "all_sender_common_rounds": 10,
+        "first_all_sender_common": 6,
+        "first_on_any_pair": 6,
+        "classes_all_sender_common": [
+          [
+            "g1:3@0",
+            "g3:22@0"
+          ],
+          [
+            "g6:122@0",
+            "g7:122@0",
+            "stub"
+          ]
+        ],
+        "any_own_short_before_first": true,
+        "switch": false,
+        "sender_full_rounds": {
+          "g1:3@0": 10,
+          "g3:22@0": 10,
+          "g6:122@0": 16,
+          "g7:122@0": 11,
+          "stub": 16
+        },
+        "stub_comparisons": {
+          "g1:3@0": {
+            "first": 6,
+            "rounds": 10,
+            "short_before": true,
+            "short_rounds": [
+              2
+            ],
+            "alternate_short_to_stop": false
+          },
+          "g3:22@0": {
+            "first": 6,
+            "rounds": 10,
+            "short_before": true,
+            "short_rounds": [
+              2
+            ],
+            "alternate_short_to_stop": false
+          },
+          "g6:122@0": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [
+              2
+            ],
+            "alternate_short_to_stop": null
+          },
+          "g7:122@0": {
+            "first": null,
+            "rounds": 11,
+            "short_before": null,
+            "short_rounds": [
+              2
+            ],
+            "alternate_short_to_stop": null
+          },
+          "stub": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [
+              2
+            ],
+            "alternate_short_to_stop": null
+          }
+        },
+        "first_after_all_sender_common": []
+      },
+      {
+        "receiver": "tri:422@0",
+        "cap": 6,
+        "steps": 2,
+        "all_sender_common_rounds": 8,
+        "first_all_sender_common": 5,
+        "first_on_any_pair": 5,
+        "classes_all_sender_common": [
+          [
+            "g1:3@0",
+            "g6:122@0",
+            "stub"
+          ],
+          [
+            "g3:22@0"
+          ],
+          [
+            "g7:122@0"
+          ]
+        ],
+        "any_own_short_before_first": false,
+        "switch": true,
+        "sender_full_rounds": {
+          "g1:3@0": 13,
+          "g3:22@0": 8,
+          "g6:122@0": 14,
+          "g7:122@0": 9,
+          "stub": 16
+        },
+        "stub_comparisons": {
+          "g1:3@0": {
+            "first": null,
+            "rounds": 13,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          },
+          "g3:22@0": {
+            "first": 5,
+            "rounds": 8,
+            "short_before": false,
+            "short_rounds": [
+              6,
+              7,
+              8
+            ],
+            "alternate_short_to_stop": false
+          },
+          "g6:122@0": {
+            "first": null,
+            "rounds": 14,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          },
+          "g7:122@0": {
+            "first": 7,
+            "rounds": 9,
+            "short_before": false,
+            "short_rounds": [
+              8,
+              9
+            ],
+            "alternate_short_to_stop": false
+          },
+          "stub": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          }
+        },
+        "first_after_all_sender_common": []
+      },
+      {
+        "receiver": "tri:422@0",
+        "cap": 6,
+        "steps": 3,
+        "all_sender_common_rounds": 9,
+        "first_all_sender_common": 7,
+        "first_on_any_pair": 7,
+        "classes_all_sender_common": [
+          [
+            "g1:3@0",
+            "g6:122@0",
+            "stub"
+          ],
+          [
+            "g3:22@0"
+          ],
+          [
+            "g7:122@0"
+          ]
+        ],
+        "any_own_short_before_first": false,
+        "switch": true,
+        "sender_full_rounds": {
+          "g1:3@0": 13,
+          "g3:22@0": 9,
+          "g6:122@0": 14,
+          "g7:122@0": 10,
+          "stub": 16
+        },
+        "stub_comparisons": {
+          "g1:3@0": {
+            "first": null,
+            "rounds": 13,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          },
+          "g3:22@0": {
+            "first": 7,
+            "rounds": 9,
+            "short_before": false,
+            "short_rounds": [
+              8,
+              9
+            ],
+            "alternate_short_to_stop": false
+          },
+          "g6:122@0": {
+            "first": null,
+            "rounds": 14,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          },
+          "g7:122@0": {
+            "first": 9,
+            "rounds": 10,
+            "short_before": false,
+            "short_rounds": [
+              10
+            ],
+            "alternate_short_to_stop": true
+          },
+          "stub": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          }
+        },
+        "first_after_all_sender_common": []
+      },
+      {
+        "receiver": "tri:422@0",
+        "cap": 7,
+        "steps": 2,
+        "all_sender_common_rounds": 8,
+        "first_all_sender_common": 6,
+        "first_on_any_pair": 6,
+        "classes_all_sender_common": [
+          [
+            "g1:3@0"
+          ],
+          [
+            "g3:22@0",
+            "g6:122@0",
+            "g7:122@0",
+            "stub"
+          ]
+        ],
+        "any_own_short_before_first": false,
+        "switch": true,
+        "sender_full_rounds": {
+          "g1:3@0": 8,
+          "g3:22@0": 14,
+          "g6:122@0": 14,
+          "g7:122@0": 12,
+          "stub": 16
+        },
+        "stub_comparisons": {
+          "g1:3@0": {
+            "first": 6,
+            "rounds": 8,
+            "short_before": false,
+            "short_rounds": [
+              8
+            ],
+            "alternate_short_to_stop": false
+          },
+          "g3:22@0": {
+            "first": null,
+            "rounds": 14,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          },
+          "g6:122@0": {
+            "first": null,
+            "rounds": 14,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          },
+          "g7:122@0": {
+            "first": null,
+            "rounds": 12,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          },
+          "stub": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          }
+        },
+        "first_after_all_sender_common": []
+      },
+      {
+        "receiver": "tri:422@0",
+        "cap": 7,
+        "steps": 3,
+        "all_sender_common_rounds": 9,
+        "first_all_sender_common": 9,
+        "first_on_any_pair": 9,
+        "classes_all_sender_common": [
+          [
+            "g1:3@0"
+          ],
+          [
+            "g3:22@0",
+            "g6:122@0",
+            "g7:122@0",
+            "stub"
+          ]
+        ],
+        "any_own_short_before_first": false,
+        "switch": true,
+        "sender_full_rounds": {
+          "g1:3@0": 9,
+          "g3:22@0": 14,
+          "g6:122@0": 14,
+          "g7:122@0": 12,
+          "stub": 16
+        },
+        "stub_comparisons": {
+          "g1:3@0": {
+            "first": 9,
+            "rounds": 9,
+            "short_before": false,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          },
+          "g3:22@0": {
+            "first": null,
+            "rounds": 14,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          },
+          "g6:122@0": {
+            "first": null,
+            "rounds": 14,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          },
+          "g7:122@0": {
+            "first": null,
+            "rounds": 12,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          },
+          "stub": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          }
+        },
+        "first_after_all_sender_common": []
+      },
+      {
+        "receiver": "tri:522@0",
+        "cap": 6,
+        "steps": 2,
+        "all_sender_common_rounds": 8,
+        "first_all_sender_common": 4,
+        "first_on_any_pair": 4,
+        "classes_all_sender_common": [
+          [
+            "g1:3@0",
+            "g3:22@0"
+          ],
+          [
+            "g6:122@0",
+            "stub"
+          ],
+          [
+            "g7:122@0"
+          ]
+        ],
+        "any_own_short_before_first": true,
+        "switch": false,
+        "sender_full_rounds": {
+          "g1:3@0": 8,
+          "g3:22@0": 8,
+          "g6:122@0": 16,
+          "g7:122@0": 8,
+          "stub": 16
+        },
+        "stub_comparisons": {
+          "g1:3@0": {
+            "first": 4,
+            "rounds": 8,
+            "short_before": true,
+            "short_rounds": [
+              2,
+              5,
+              6,
+              7,
+              8
+            ],
+            "alternate_short_to_stop": false
+          },
+          "g3:22@0": {
+            "first": 4,
+            "rounds": 8,
+            "short_before": true,
+            "short_rounds": [
+              2,
+              5,
+              6,
+              7,
+              8
+            ],
+            "alternate_short_to_stop": false
+          },
+          "g6:122@0": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [
+              2
+            ],
+            "alternate_short_to_stop": null
+          },
+          "g7:122@0": {
+            "first": 6,
+            "rounds": 8,
+            "short_before": true,
+            "short_rounds": [
+              2,
+              8
+            ],
+            "alternate_short_to_stop": false
+          },
+          "stub": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [
+              2
+            ],
+            "alternate_short_to_stop": null
+          }
+        },
+        "first_after_all_sender_common": []
+      },
+      {
+        "receiver": "tri:522@0",
+        "cap": 6,
+        "steps": 3,
+        "all_sender_common_rounds": 8,
+        "first_all_sender_common": 6,
+        "first_on_any_pair": 6,
+        "classes_all_sender_common": [
+          [
+            "g1:3@0",
+            "g3:22@0"
+          ],
+          [
+            "g6:122@0",
+            "stub"
+          ],
+          [
+            "g7:122@0"
+          ]
+        ],
+        "any_own_short_before_first": true,
+        "switch": false,
+        "sender_full_rounds": {
+          "g1:3@0": 8,
+          "g3:22@0": 8,
+          "g6:122@0": 16,
+          "g7:122@0": 9,
+          "stub": 16
+        },
+        "stub_comparisons": {
+          "g1:3@0": {
+            "first": 6,
+            "rounds": 8,
+            "short_before": true,
+            "short_rounds": [
+              2,
+              8
+            ],
+            "alternate_short_to_stop": false
+          },
+          "g3:22@0": {
+            "first": 6,
+            "rounds": 8,
+            "short_before": true,
+            "short_rounds": [
+              2,
+              8
+            ],
+            "alternate_short_to_stop": false
+          },
+          "g6:122@0": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [
+              2
+            ],
+            "alternate_short_to_stop": null
+          },
+          "g7:122@0": {
+            "first": 8,
+            "rounds": 9,
+            "short_before": true,
+            "short_rounds": [
+              2
+            ],
+            "alternate_short_to_stop": false
+          },
+          "stub": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [
+              2
+            ],
+            "alternate_short_to_stop": null
+          }
+        },
+        "first_after_all_sender_common": []
+      },
+      {
+        "receiver": "tri:522@0",
+        "cap": 7,
+        "steps": 2,
+        "all_sender_common_rounds": 8,
+        "first_all_sender_common": 5,
+        "first_on_any_pair": 5,
+        "classes_all_sender_common": [
+          [
+            "g1:3@0",
+            "g6:122@0",
+            "stub"
+          ],
+          [
+            "g3:22@0"
+          ],
+          [
+            "g7:122@0"
+          ]
+        ],
+        "any_own_short_before_first": false,
+        "switch": true,
+        "sender_full_rounds": {
+          "g1:3@0": 10,
+          "g3:22@0": 8,
+          "g6:122@0": 11,
+          "g7:122@0": 8,
+          "stub": 14
+        },
+        "stub_comparisons": {
+          "g1:3@0": {
+            "first": null,
+            "rounds": 10,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          },
+          "g3:22@0": {
+            "first": 5,
+            "rounds": 8,
+            "short_before": false,
+            "short_rounds": [
+              6,
+              7,
+              8
+            ],
+            "alternate_short_to_stop": false
+          },
+          "g6:122@0": {
+            "first": null,
+            "rounds": 11,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          },
+          "g7:122@0": {
+            "first": 7,
+            "rounds": 8,
+            "short_before": false,
+            "short_rounds": [
+              8
+            ],
+            "alternate_short_to_stop": true
+          },
+          "stub": {
+            "first": null,
+            "rounds": 14,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          }
+        },
+        "first_after_all_sender_common": []
+      },
+      {
+        "receiver": "tri:522@0",
+        "cap": 7,
+        "steps": 3,
+        "all_sender_common_rounds": 8,
+        "first_all_sender_common": 7,
+        "first_on_any_pair": 7,
+        "classes_all_sender_common": [
+          [
+            "g1:3@0",
+            "g6:122@0",
+            "g7:122@0",
+            "stub"
+          ],
+          [
+            "g3:22@0"
+          ]
+        ],
+        "any_own_short_before_first": false,
+        "switch": true,
+        "sender_full_rounds": {
+          "g1:3@0": 11,
+          "g3:22@0": 8,
+          "g6:122@0": 11,
+          "g7:122@0": 9,
+          "stub": 13
+        },
+        "stub_comparisons": {
+          "g1:3@0": {
+            "first": null,
+            "rounds": 11,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          },
+          "g3:22@0": {
+            "first": 7,
+            "rounds": 8,
+            "short_before": false,
+            "short_rounds": [
+              8
+            ],
+            "alternate_short_to_stop": true
+          },
+          "g6:122@0": {
+            "first": null,
+            "rounds": 11,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          },
+          "g7:122@0": {
+            "first": 9,
+            "rounds": 9,
+            "short_before": false,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          },
+          "stub": {
+            "first": null,
+            "rounds": 13,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          }
+        },
+        "first_after_all_sender_common": [
+          {
+            "senders": [
+              "g1:3@0",
+              "g7:122@0"
+            ],
+            "first": 9
+          },
+          {
+            "senders": [
+              "g6:122@0",
+              "g7:122@0"
+            ],
+            "first": 9
+          },
+          {
+            "senders": [
+              "g7:122@0",
+              "stub"
+            ],
+            "first": 9
+          }
+        ]
+      },
+      {
+        "receiver": "tri:522@0",
+        "cap": 8,
+        "steps": 2,
+        "all_sender_common_rounds": 8,
+        "first_all_sender_common": 6,
+        "first_on_any_pair": 6,
+        "classes_all_sender_common": [
+          [
+            "g1:3@0"
+          ],
+          [
+            "g3:22@0",
+            "g6:122@0",
+            "g7:122@0",
+            "stub"
+          ]
+        ],
+        "any_own_short_before_first": false,
+        "switch": true,
+        "sender_full_rounds": {
+          "g1:3@0": 8,
+          "g3:22@0": 12,
+          "g6:122@0": 11,
+          "g7:122@0": 10,
+          "stub": 14
+        },
+        "stub_comparisons": {
+          "g1:3@0": {
+            "first": 6,
+            "rounds": 8,
+            "short_before": false,
+            "short_rounds": [
+              8
+            ],
+            "alternate_short_to_stop": false
+          },
+          "g3:22@0": {
+            "first": null,
+            "rounds": 12,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          },
+          "g6:122@0": {
+            "first": null,
+            "rounds": 11,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          },
+          "g7:122@0": {
+            "first": null,
+            "rounds": 10,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          },
+          "stub": {
+            "first": null,
+            "rounds": 14,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          }
+        },
+        "first_after_all_sender_common": []
+      },
+      {
+        "receiver": "tri:522@0",
+        "cap": 8,
+        "steps": 3,
+        "all_sender_common_rounds": 9,
+        "first_all_sender_common": 9,
+        "first_on_any_pair": 9,
+        "classes_all_sender_common": [
+          [
+            "g1:3@0"
+          ],
+          [
+            "g3:22@0",
+            "g6:122@0",
+            "g7:122@0",
+            "stub"
+          ]
+        ],
+        "any_own_short_before_first": false,
+        "switch": true,
+        "sender_full_rounds": {
+          "g1:3@0": 9,
+          "g3:22@0": 11,
+          "g6:122@0": 11,
+          "g7:122@0": 11,
+          "stub": 13
+        },
+        "stub_comparisons": {
+          "g1:3@0": {
+            "first": 9,
+            "rounds": 9,
+            "short_before": false,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          },
+          "g3:22@0": {
+            "first": null,
+            "rounds": 11,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          },
+          "g6:122@0": {
+            "first": null,
+            "rounds": 11,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          },
+          "g7:122@0": {
+            "first": null,
+            "rounds": 11,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          },
+          "stub": {
+            "first": null,
+            "rounds": 13,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          }
+        },
+        "first_after_all_sender_common": []
+      }
+    ],
+    "swaps_aggregate_only": {
+      "3": [
+        {
+          "after_round": 0,
+          "first_own_birth_difference_reported": 7,
+          "common_rounds": 16
+        },
+        {
+          "after_round": 1,
+          "first_own_birth_difference_reported": 7,
+          "common_rounds": 16
+        },
+        {
+          "after_round": 2,
+          "first_own_birth_difference_reported": 7,
+          "common_rounds": 16
+        },
+        {
+          "after_round": 3,
+          "first_own_birth_difference_reported": null,
+          "common_rounds": 16
+        },
+        {
+          "after_round": 4,
+          "first_own_birth_difference_reported": null,
+          "common_rounds": 16
+        },
+        {
+          "after_round": 5,
+          "first_own_birth_difference_reported": null,
+          "common_rounds": 16
+        }
+      ],
+      "4": [
+        {
+          "after_round": 0,
+          "first_own_birth_difference_reported": 7,
+          "common_rounds": 13
+        },
+        {
+          "after_round": 1,
+          "first_own_birth_difference_reported": 7,
+          "common_rounds": 12
+        },
+        {
+          "after_round": 2,
+          "first_own_birth_difference_reported": 7,
+          "common_rounds": 13
+        },
+        {
+          "after_round": 3,
+          "first_own_birth_difference_reported": null,
+          "common_rounds": 13
+        },
+        {
+          "after_round": 4,
+          "first_own_birth_difference_reported": null,
+          "common_rounds": 13
+        },
+        {
+          "after_round": 5,
+          "first_own_birth_difference_reported": null,
+          "common_rounds": 13
+        }
+      ],
+      "5": [
+        {
+          "after_round": 0,
+          "first_own_birth_difference_reported": 7,
+          "common_rounds": 11
+        },
+        {
+          "after_round": 1,
+          "first_own_birth_difference_reported": 7,
+          "common_rounds": 11
+        },
+        {
+          "after_round": 2,
+          "first_own_birth_difference_reported": 7,
+          "common_rounds": 11
+        },
+        {
+          "after_round": 3,
+          "first_own_birth_difference_reported": null,
+          "common_rounds": 11
+        },
+        {
+          "after_round": 4,
+          "first_own_birth_difference_reported": null,
+          "common_rounds": 11
+        },
+        {
+          "after_round": 5,
+          "first_own_birth_difference_reported": null,
+          "common_rounds": 11
+        }
+      ],
+      "6": [
+        {
+          "after_round": 0,
+          "first_own_birth_difference_reported": 7,
+          "common_rounds": 9
+        },
+        {
+          "after_round": 1,
+          "first_own_birth_difference_reported": 7,
+          "common_rounds": 9
+        },
+        {
+          "after_round": 2,
+          "first_own_birth_difference_reported": 7,
+          "common_rounds": 9
+        },
+        {
+          "after_round": 3,
+          "first_own_birth_difference_reported": null,
+          "common_rounds": 9
+        },
+        {
+          "after_round": 4,
+          "first_own_birth_difference_reported": null,
+          "common_rounds": 9
+        },
+        {
+          "after_round": 5,
+          "first_own_birth_difference_reported": null,
+          "common_rounds": 9
+        }
+      ],
+      "7": [
+        {
+          "after_round": 0,
+          "first_own_birth_difference_reported": 7,
+          "common_rounds": 8
+        },
+        {
+          "after_round": 1,
+          "first_own_birth_difference_reported": 7,
+          "common_rounds": 8
+        },
+        {
+          "after_round": 2,
+          "first_own_birth_difference_reported": 7,
+          "common_rounds": 8
+        },
+        {
+          "after_round": 3,
+          "first_own_birth_difference_reported": null,
+          "common_rounds": 8
+        },
+        {
+          "after_round": 4,
+          "first_own_birth_difference_reported": null,
+          "common_rounds": 8
+        },
+        {
+          "after_round": 5,
+          "first_own_birth_difference_reported": null,
+          "common_rounds": 8
+        }
+      ]
+    }
+  },
+  "controls": {
+    "swaps_aggregate_only": {
+      "g1:3@0": {
+        "0": {
+          "count_by_first_difference_reported": {
+            "None": 6
+          },
+          "count_by_common_rounds": {
+            "16": 6
+          }
+        },
+        "1": {
+          "count_by_first_difference_reported": {
+            "None": 6
+          },
+          "count_by_common_rounds": {
+            "16": 6
+          }
+        },
+        "2": {
+          "count_by_first_difference_reported": {
+            "None": 6
+          },
+          "count_by_common_rounds": {
+            "16": 6
+          }
+        },
+        "3": {
+          "count_by_first_difference_reported": {
+            "None": 6
+          },
+          "count_by_common_rounds": {
+            "16": 6
+          }
+        },
+        "4": {
+          "count_by_first_difference_reported": {
+            "None": 6
+          },
+          "count_by_common_rounds": {
+            "16": 6
+          }
+        },
+        "5": {
+          "count_by_first_difference_reported": {
+            "None": 6
+          },
+          "count_by_common_rounds": {
+            "16": 6
+          }
+        },
+        "6": {
+          "count_by_first_difference_reported": {
+            "None": 6
+          },
+          "count_by_common_rounds": {
+            "16": 6
+          }
+        },
+        "7": {
+          "count_by_first_difference_reported": {
+            "None": 6
+          },
+          "count_by_common_rounds": {
+            "16": 6
+          }
+        },
+        "8": {
+          "count_by_first_difference_reported": {
+            "None": 6
+          },
+          "count_by_common_rounds": {
+            "16": 6
+          }
+        }
+      },
+      "g3:22@0": {
+        "0": {
+          "count_by_first_difference_reported": {
+            "7": 6
+          },
+          "count_by_common_rounds": {
+            "16": 6
+          }
+        },
+        "1": {
+          "count_by_first_difference_reported": {
+            "7": 6
+          },
+          "count_by_common_rounds": {
+            "16": 6
+          }
+        },
+        "2": {
+          "count_by_first_difference_reported": {
+            "7": 6
+          },
+          "count_by_common_rounds": {
+            "16": 6
+          }
+        },
+        "3": {
+          "count_by_first_difference_reported": {
+            "None": 6
+          },
+          "count_by_common_rounds": {
+            "16": 6
+          }
+        },
+        "4": {
+          "count_by_first_difference_reported": {
+            "None": 6
+          },
+          "count_by_common_rounds": {
+            "16": 6
+          }
+        },
+        "5": {
+          "count_by_first_difference_reported": {
+            "None": 6
+          },
+          "count_by_common_rounds": {
+            "16": 6
+          }
+        },
+        "6": {
+          "count_by_first_difference_reported": {
+            "None": 6
+          },
+          "count_by_common_rounds": {
+            "16": 6
+          }
+        },
+        "7": {
+          "count_by_first_difference_reported": {
+            "None": 6
+          },
+          "count_by_common_rounds": {
+            "16": 6
+          }
+        },
+        "8": {
+          "count_by_first_difference_reported": {
+            "None": 6
+          },
+          "count_by_common_rounds": {
+            "16": 6
+          }
+        }
+      },
+      "stub": {
+        "0": {
+          "count_by_first_difference_reported": {
+            "None": 6
+          },
+          "count_by_common_rounds": {
+            "16": 6
+          }
+        },
+        "1": {
+          "count_by_first_difference_reported": {
+            "None": 6
+          },
+          "count_by_common_rounds": {
+            "16": 6
+          }
+        },
+        "2": {
+          "count_by_first_difference_reported": {
+            "None": 6
+          },
+          "count_by_common_rounds": {
+            "16": 6
+          }
+        },
+        "3": {
+          "count_by_first_difference_reported": {
+            "None": 6
+          },
+          "count_by_common_rounds": {
+            "16": 6
+          }
+        },
+        "4": {
+          "count_by_first_difference_reported": {
+            "None": 6
+          },
+          "count_by_common_rounds": {
+            "16": 6
+          }
+        },
+        "5": {
+          "count_by_first_difference_reported": {
+            "None": 6
+          },
+          "count_by_common_rounds": {
+            "16": 6
+          }
+        },
+        "6": {
+          "count_by_first_difference_reported": {
+            "None": 6
+          },
+          "count_by_common_rounds": {
+            "16": 6
+          }
+        },
+        "7": {
+          "count_by_first_difference_reported": {
+            "None": 6
+          },
+          "count_by_common_rounds": {
+            "16": 6
+          }
+        },
+        "8": {
+          "count_by_first_difference_reported": {
+            "None": 6
+          },
+          "count_by_common_rounds": {
+            "16": 6
+          }
+        }
+      }
+    },
+    "long_by_sender": {
+      "g1:3@0": {
+        "count_by_rounds": {
+          "22": 6
+        },
+        "knots_at_stop_by_receiver": {
+          "n3:g7:122@0": 2444,
+          "n4:g17:1122@0": 2445,
+          "n4:g17:1122@1": 2445,
+          "n4:g17:1212@0": 2445,
+          "n4:g17:2121@1": 2445,
+          "n4:g18:1122@0": 2445
+        },
+        "sequences": [
+          {
+            "receivers": [
+              "n3:g7:122@0",
+              "n4:g17:1122@0",
+              "n4:g17:1122@1",
+              "n4:g17:1212@0",
+              "n4:g17:2121@1",
+              "n4:g18:1122@0"
+            ],
+            "own_births": [
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24
+            ],
+            "own_short": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "first_leaves_r_plus_two": null,
+            "alternate_short_to_stop": null
+          }
+        ]
+      },
+      "g3:22@0": {
+        "count_by_rounds": {
+          "22": 6
+        },
+        "knots_at_stop_by_receiver": {
+          "n3:g7:122@0": 5952,
+          "n4:g17:1122@0": 5953,
+          "n4:g17:1122@1": 5953,
+          "n4:g17:1212@0": 5953,
+          "n4:g17:2121@1": 5953,
+          "n4:g18:1122@0": 5953
+        },
+        "sequences": [
+          {
+            "receivers": [
+              "n3:g7:122@0",
+              "n4:g17:1122@0",
+              "n4:g17:1122@1",
+              "n4:g17:1212@0",
+              "n4:g17:2121@1",
+              "n4:g18:1122@0"
+            ],
+            "own_births": [
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              13,
+              16,
+              31,
+              36,
+              52,
+              62,
+              80,
+              94,
+              113,
+              130,
+              149,
+              168,
+              187,
+              206,
+              225,
+              244
+            ],
+            "own_short": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              5,
+              0,
+              4,
+              0,
+              3,
+              0,
+              2,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "first_leaves_r_plus_two": 7,
+            "alternate_short_to_stop": false
+          }
+        ]
+      },
+      "g6:122@0": {
+        "count_by_rounds": {
+          "22": 6
+        },
+        "knots_at_stop_by_receiver": {
+          "n3:g7:122@0": 2464,
+          "n4:g17:1122@0": 2465,
+          "n4:g17:1122@1": 2465,
+          "n4:g17:1212@0": 2465,
+          "n4:g17:2121@1": 2465,
+          "n4:g18:1122@0": 2465
+        },
+        "sequences": [
+          {
+            "receivers": [
+              "n3:g7:122@0",
+              "n4:g17:1122@0",
+              "n4:g17:1122@1",
+              "n4:g17:1212@0",
+              "n4:g17:2121@1",
+              "n4:g18:1122@0"
+            ],
+            "own_births": [
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24
+            ],
+            "own_short": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "first_leaves_r_plus_two": null,
+            "alternate_short_to_stop": null
+          }
+        ]
+      },
+      "g7:122@0": {
+        "count_by_rounds": {
+          "18": 6
+        },
+        "knots_at_stop_by_receiver": {
+          "n3:g7:122@0": 7062,
+          "n4:g17:1122@0": 7063,
+          "n4:g17:1122@1": 7063,
+          "n4:g17:1212@0": 7063,
+          "n4:g17:2121@1": 7063,
+          "n4:g18:1122@0": 7063
+        },
+        "sequences": [
+          {
+            "receivers": [
+              "n3:g7:122@0",
+              "n4:g17:1122@0",
+              "n4:g17:1122@1",
+              "n4:g17:1212@0",
+              "n4:g17:2121@1",
+              "n4:g18:1122@0"
+            ],
+            "own_births": [
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              17,
+              20,
+              41,
+              48,
+              72,
+              86,
+              114,
+              134,
+              165,
+              190
+            ],
+            "own_short": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              7,
+              0,
+              6,
+              0,
+              5,
+              0,
+              4,
+              0,
+              3
+            ],
+            "first_leaves_r_plus_two": 9,
+            "alternate_short_to_stop": true
+          }
+        ]
+      },
+      "stub": {
+        "count_by_rounds": {
+          "22": 6
+        },
+        "knots_at_stop_by_receiver": {
+          "n3:g7:122@0": 943,
+          "n4:g17:1122@0": 944,
+          "n4:g17:1122@1": 944,
+          "n4:g17:1212@0": 944,
+          "n4:g17:2121@1": 944,
+          "n4:g18:1122@0": 944
+        },
+        "sequences": [
+          {
+            "receivers": [
+              "n3:g7:122@0",
+              "n4:g17:1122@0",
+              "n4:g17:1122@1",
+              "n4:g17:1212@0",
+              "n4:g17:2121@1",
+              "n4:g18:1122@0"
+            ],
+            "own_births": [
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24
+            ],
+            "own_short": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "first_leaves_r_plus_two": null,
+            "alternate_short_to_stop": null
+          }
+        ]
+      }
+    },
+    "both_ends": [
+      {
+        "receiver": "n3:g7:122@0",
+        "other_end": "n3:g7:122@0",
+        "first_leaves_r_plus_two": {
+          "A": 9,
+          "B": 9
+        },
+        "equal_own_birth_counts_all_read_rounds": true,
+        "read_rounds": 15
+      },
+      {
+        "receiver": "n4:g17:1122@0",
+        "other_end": "n4:g17:1122@0",
+        "first_leaves_r_plus_two": {
+          "A": 9,
+          "B": 9
+        },
+        "equal_own_birth_counts_all_read_rounds": true,
+        "read_rounds": 15
+      },
+      {
+        "receiver": "n4:g17:1122@1",
+        "other_end": "n4:g17:1122@1",
+        "first_leaves_r_plus_two": {
+          "A": 9,
+          "B": 9
+        },
+        "equal_own_birth_counts_all_read_rounds": true,
+        "read_rounds": 15
+      },
+      {
+        "receiver": "n4:g17:1212@0",
+        "other_end": "n4:g17:1212@0",
+        "first_leaves_r_plus_two": {
+          "A": 9,
+          "B": 9
+        },
+        "equal_own_birth_counts_all_read_rounds": true,
+        "read_rounds": 15
+      },
+      {
+        "receiver": "n4:g17:2121@1",
+        "other_end": "n4:g17:2121@1",
+        "first_leaves_r_plus_two": {
+          "A": 9,
+          "B": 9
+        },
+        "equal_own_birth_counts_all_read_rounds": true,
+        "read_rounds": 15
+      },
+      {
+        "receiver": "n4:g18:1122@0",
+        "other_end": "n4:g18:1122@0",
+        "first_leaves_r_plus_two": {
+          "A": 9,
+          "B": 9
+        },
+        "equal_own_birth_counts_all_read_rounds": true,
+        "read_rounds": 15
+      }
+    ],
+    "rule_swaps_caps_with_16_common_rounds": [
+      3
+    ],
+    "long_runs_reaching_round_22": 24,
+    "cap3_switchers_short_counts": {
+      "2": {
+        "n3:g7:122@0": {
+          "g1:3@0": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          },
+          "g3:22@0": {
+            "first": 5,
+            "rounds": 16,
+            "short_before": false,
+            "short_rounds": [
+              6,
+              8,
+              10
+            ],
+            "alternate_short_to_stop": false
+          },
+          "g6:122@0": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          },
+          "g7:122@0": {
+            "first": 7,
+            "rounds": 15,
+            "short_before": false,
+            "short_rounds": [
+              8,
+              10,
+              12,
+              14
+            ],
+            "alternate_short_to_stop": true
+          },
+          "stub": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          }
+        },
+        "n4:g17:1122@0": {
+          "g1:3@0": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          },
+          "g3:22@0": {
+            "first": 5,
+            "rounds": 16,
+            "short_before": false,
+            "short_rounds": [
+              6,
+              8,
+              10
+            ],
+            "alternate_short_to_stop": false
+          },
+          "g6:122@0": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          },
+          "g7:122@0": {
+            "first": 7,
+            "rounds": 15,
+            "short_before": false,
+            "short_rounds": [
+              8,
+              10,
+              12,
+              14
+            ],
+            "alternate_short_to_stop": true
+          },
+          "stub": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          }
+        },
+        "n4:g17:1122@1": {
+          "g1:3@0": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          },
+          "g3:22@0": {
+            "first": 5,
+            "rounds": 16,
+            "short_before": false,
+            "short_rounds": [
+              6,
+              8,
+              10
+            ],
+            "alternate_short_to_stop": false
+          },
+          "g6:122@0": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          },
+          "g7:122@0": {
+            "first": 7,
+            "rounds": 15,
+            "short_before": false,
+            "short_rounds": [
+              8,
+              10,
+              12,
+              14
+            ],
+            "alternate_short_to_stop": true
+          },
+          "stub": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          }
+        },
+        "n4:g17:1212@0": {
+          "g1:3@0": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          },
+          "g3:22@0": {
+            "first": 5,
+            "rounds": 16,
+            "short_before": false,
+            "short_rounds": [
+              6,
+              8,
+              10
+            ],
+            "alternate_short_to_stop": false
+          },
+          "g6:122@0": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          },
+          "g7:122@0": {
+            "first": 7,
+            "rounds": 15,
+            "short_before": false,
+            "short_rounds": [
+              8,
+              10,
+              12,
+              14
+            ],
+            "alternate_short_to_stop": true
+          },
+          "stub": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          }
+        },
+        "n4:g17:2121@1": {
+          "g1:3@0": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          },
+          "g3:22@0": {
+            "first": 5,
+            "rounds": 16,
+            "short_before": false,
+            "short_rounds": [
+              6,
+              8,
+              10
+            ],
+            "alternate_short_to_stop": false
+          },
+          "g6:122@0": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          },
+          "g7:122@0": {
+            "first": 7,
+            "rounds": 15,
+            "short_before": false,
+            "short_rounds": [
+              8,
+              10,
+              12,
+              14
+            ],
+            "alternate_short_to_stop": true
+          },
+          "stub": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          }
+        },
+        "n4:g18:1122@0": {
+          "g1:3@0": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          },
+          "g3:22@0": {
+            "first": 5,
+            "rounds": 16,
+            "short_before": false,
+            "short_rounds": [
+              6,
+              8,
+              10
+            ],
+            "alternate_short_to_stop": false
+          },
+          "g6:122@0": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          },
+          "g7:122@0": {
+            "first": 7,
+            "rounds": 15,
+            "short_before": false,
+            "short_rounds": [
+              8,
+              10,
+              12,
+              14
+            ],
+            "alternate_short_to_stop": true
+          },
+          "stub": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          }
+        }
+      },
+      "3": {
+        "n3:g7:122@0": {
+          "g1:3@0": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          },
+          "g3:22@0": {
+            "first": 7,
+            "rounds": 16,
+            "short_before": false,
+            "short_rounds": [
+              8,
+              10,
+              12,
+              14,
+              16
+            ],
+            "alternate_short_to_stop": true
+          },
+          "g6:122@0": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          },
+          "g7:122@0": {
+            "first": 9,
+            "rounds": 15,
+            "short_before": false,
+            "short_rounds": [
+              10,
+              12,
+              14
+            ],
+            "alternate_short_to_stop": true
+          },
+          "stub": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          }
+        },
+        "n4:g17:1122@0": {
+          "g1:3@0": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          },
+          "g3:22@0": {
+            "first": 7,
+            "rounds": 16,
+            "short_before": false,
+            "short_rounds": [
+              8,
+              10,
+              12,
+              14,
+              16
+            ],
+            "alternate_short_to_stop": true
+          },
+          "g6:122@0": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          },
+          "g7:122@0": {
+            "first": 9,
+            "rounds": 15,
+            "short_before": false,
+            "short_rounds": [
+              10,
+              12,
+              14
+            ],
+            "alternate_short_to_stop": true
+          },
+          "stub": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          }
+        },
+        "n4:g17:1122@1": {
+          "g1:3@0": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          },
+          "g3:22@0": {
+            "first": 7,
+            "rounds": 16,
+            "short_before": false,
+            "short_rounds": [
+              8,
+              10,
+              12,
+              14,
+              16
+            ],
+            "alternate_short_to_stop": true
+          },
+          "g6:122@0": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          },
+          "g7:122@0": {
+            "first": 9,
+            "rounds": 15,
+            "short_before": false,
+            "short_rounds": [
+              10,
+              12,
+              14
+            ],
+            "alternate_short_to_stop": true
+          },
+          "stub": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          }
+        },
+        "n4:g17:1212@0": {
+          "g1:3@0": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          },
+          "g3:22@0": {
+            "first": 7,
+            "rounds": 16,
+            "short_before": false,
+            "short_rounds": [
+              8,
+              10,
+              12,
+              14,
+              16
+            ],
+            "alternate_short_to_stop": true
+          },
+          "g6:122@0": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          },
+          "g7:122@0": {
+            "first": 9,
+            "rounds": 15,
+            "short_before": false,
+            "short_rounds": [
+              10,
+              12,
+              14
+            ],
+            "alternate_short_to_stop": true
+          },
+          "stub": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          }
+        },
+        "n4:g17:2121@1": {
+          "g1:3@0": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          },
+          "g3:22@0": {
+            "first": 7,
+            "rounds": 16,
+            "short_before": false,
+            "short_rounds": [
+              8,
+              10,
+              12,
+              14,
+              16
+            ],
+            "alternate_short_to_stop": true
+          },
+          "g6:122@0": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          },
+          "g7:122@0": {
+            "first": 9,
+            "rounds": 15,
+            "short_before": false,
+            "short_rounds": [
+              10,
+              12,
+              14
+            ],
+            "alternate_short_to_stop": true
+          },
+          "stub": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          }
+        },
+        "n4:g18:1122@0": {
+          "g1:3@0": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          },
+          "g3:22@0": {
+            "first": 7,
+            "rounds": 16,
+            "short_before": false,
+            "short_rounds": [
+              8,
+              10,
+              12,
+              14,
+              16
+            ],
+            "alternate_short_to_stop": true
+          },
+          "g6:122@0": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          },
+          "g7:122@0": {
+            "first": 9,
+            "rounds": 15,
+            "short_before": false,
+            "short_rounds": [
+              10,
+              12,
+              14
+            ],
+            "alternate_short_to_stop": true
+          },
+          "stub": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          }
+        }
+      },
+      "4": {
+        "n3:g7:122@0": {
+          "g1:3@0": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          },
+          "g3:22@0": {
+            "first": 9,
+            "rounds": 16,
+            "short_before": false,
+            "short_rounds": [
+              10,
+              12,
+              14,
+              16
+            ],
+            "alternate_short_to_stop": true
+          },
+          "g6:122@0": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          },
+          "g7:122@0": {
+            "first": 11,
+            "rounds": 15,
+            "short_before": false,
+            "short_rounds": [
+              12,
+              14
+            ],
+            "alternate_short_to_stop": true
+          },
+          "stub": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          }
+        },
+        "n4:g17:1122@0": {
+          "g1:3@0": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          },
+          "g3:22@0": {
+            "first": 9,
+            "rounds": 16,
+            "short_before": false,
+            "short_rounds": [
+              10,
+              12,
+              14,
+              16
+            ],
+            "alternate_short_to_stop": true
+          },
+          "g6:122@0": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          },
+          "g7:122@0": {
+            "first": 11,
+            "rounds": 15,
+            "short_before": false,
+            "short_rounds": [
+              12,
+              14
+            ],
+            "alternate_short_to_stop": true
+          },
+          "stub": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          }
+        },
+        "n4:g17:1122@1": {
+          "g1:3@0": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          },
+          "g3:22@0": {
+            "first": 9,
+            "rounds": 16,
+            "short_before": false,
+            "short_rounds": [
+              10,
+              12,
+              14,
+              16
+            ],
+            "alternate_short_to_stop": true
+          },
+          "g6:122@0": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          },
+          "g7:122@0": {
+            "first": 11,
+            "rounds": 15,
+            "short_before": false,
+            "short_rounds": [
+              12,
+              14
+            ],
+            "alternate_short_to_stop": true
+          },
+          "stub": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          }
+        },
+        "n4:g17:1212@0": {
+          "g1:3@0": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          },
+          "g3:22@0": {
+            "first": 9,
+            "rounds": 16,
+            "short_before": false,
+            "short_rounds": [
+              10,
+              12,
+              14,
+              16
+            ],
+            "alternate_short_to_stop": true
+          },
+          "g6:122@0": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          },
+          "g7:122@0": {
+            "first": 11,
+            "rounds": 15,
+            "short_before": false,
+            "short_rounds": [
+              12,
+              14
+            ],
+            "alternate_short_to_stop": true
+          },
+          "stub": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          }
+        },
+        "n4:g17:2121@1": {
+          "g1:3@0": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          },
+          "g3:22@0": {
+            "first": 9,
+            "rounds": 16,
+            "short_before": false,
+            "short_rounds": [
+              10,
+              12,
+              14,
+              16
+            ],
+            "alternate_short_to_stop": true
+          },
+          "g6:122@0": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          },
+          "g7:122@0": {
+            "first": 11,
+            "rounds": 15,
+            "short_before": false,
+            "short_rounds": [
+              12,
+              14
+            ],
+            "alternate_short_to_stop": true
+          },
+          "stub": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          }
+        },
+        "n4:g18:1122@0": {
+          "g1:3@0": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          },
+          "g3:22@0": {
+            "first": 9,
+            "rounds": 16,
+            "short_before": false,
+            "short_rounds": [
+              10,
+              12,
+              14,
+              16
+            ],
+            "alternate_short_to_stop": true
+          },
+          "g6:122@0": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          },
+          "g7:122@0": {
+            "first": 11,
+            "rounds": 15,
+            "short_before": false,
+            "short_rounds": [
+              12,
+              14
+            ],
+            "alternate_short_to_stop": true
+          },
+          "stub": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          }
+        }
+      },
+      "5": {
+        "n3:g7:122@0": {
+          "g1:3@0": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          },
+          "g3:22@0": {
+            "first": 11,
+            "rounds": 16,
+            "short_before": false,
+            "short_rounds": [
+              12,
+              14,
+              16
+            ],
+            "alternate_short_to_stop": true
+          },
+          "g6:122@0": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          },
+          "g7:122@0": {
+            "first": 13,
+            "rounds": 16,
+            "short_before": false,
+            "short_rounds": [
+              14,
+              16
+            ],
+            "alternate_short_to_stop": true
+          },
+          "stub": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          }
+        },
+        "n4:g17:1122@0": {
+          "g1:3@0": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          },
+          "g3:22@0": {
+            "first": 11,
+            "rounds": 16,
+            "short_before": false,
+            "short_rounds": [
+              12,
+              14,
+              16
+            ],
+            "alternate_short_to_stop": true
+          },
+          "g6:122@0": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          },
+          "g7:122@0": {
+            "first": 13,
+            "rounds": 16,
+            "short_before": false,
+            "short_rounds": [
+              14,
+              16
+            ],
+            "alternate_short_to_stop": true
+          },
+          "stub": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          }
+        },
+        "n4:g17:1122@1": {
+          "g1:3@0": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          },
+          "g3:22@0": {
+            "first": 11,
+            "rounds": 16,
+            "short_before": false,
+            "short_rounds": [
+              12,
+              14,
+              16
+            ],
+            "alternate_short_to_stop": true
+          },
+          "g6:122@0": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          },
+          "g7:122@0": {
+            "first": 13,
+            "rounds": 16,
+            "short_before": false,
+            "short_rounds": [
+              14,
+              16
+            ],
+            "alternate_short_to_stop": true
+          },
+          "stub": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          }
+        },
+        "n4:g17:1212@0": {
+          "g1:3@0": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          },
+          "g3:22@0": {
+            "first": 11,
+            "rounds": 16,
+            "short_before": false,
+            "short_rounds": [
+              12,
+              14,
+              16
+            ],
+            "alternate_short_to_stop": true
+          },
+          "g6:122@0": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          },
+          "g7:122@0": {
+            "first": 13,
+            "rounds": 16,
+            "short_before": false,
+            "short_rounds": [
+              14,
+              16
+            ],
+            "alternate_short_to_stop": true
+          },
+          "stub": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          }
+        },
+        "n4:g17:2121@1": {
+          "g1:3@0": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          },
+          "g3:22@0": {
+            "first": 11,
+            "rounds": 16,
+            "short_before": false,
+            "short_rounds": [
+              12,
+              14,
+              16
+            ],
+            "alternate_short_to_stop": true
+          },
+          "g6:122@0": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          },
+          "g7:122@0": {
+            "first": 13,
+            "rounds": 16,
+            "short_before": false,
+            "short_rounds": [
+              14,
+              16
+            ],
+            "alternate_short_to_stop": true
+          },
+          "stub": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          }
+        },
+        "n4:g18:1122@0": {
+          "g1:3@0": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          },
+          "g3:22@0": {
+            "first": 11,
+            "rounds": 16,
+            "short_before": false,
+            "short_rounds": [
+              12,
+              14,
+              16
+            ],
+            "alternate_short_to_stop": true
+          },
+          "g6:122@0": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          },
+          "g7:122@0": {
+            "first": 13,
+            "rounds": 16,
+            "short_before": false,
+            "short_rounds": [
+              14,
+              16
+            ],
+            "alternate_short_to_stop": true
+          },
+          "stub": {
+            "first": null,
+            "rounds": 16,
+            "short_before": null,
+            "short_rounds": [],
+            "alternate_short_to_stop": null
+          }
+        }
+      }
+    }
+  },
+  "extended_senders": {
+    "CAP-4 d=2": {
+      "advisor_predicted_round": 8,
+      "count_by_first": {
+        "None": 43,
+        "8": 5
+      },
+      "count_by_last_round": {
+        "16": 35,
+        "14": 12,
+        "12": 1
+      },
+      "reaching_predicted_round": 48,
+      "censored_before_predicted_round_without_a_difference": [],
+      "by_sender": {
+        "g1:3@0": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g3:22@0": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g3:23@0": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g3:23@1": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g3:33@0": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g6:122@0": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g6:122@1": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g6:123@0": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g6:123@1": {
+          "first": 8,
+          "rounds": 14,
+          "own_short_before": false,
+          "own_short_rounds": [
+            10,
+            11,
+            12,
+            13,
+            14
+          ]
+        },
+        "g6:123@2": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g6:133@0": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g6:133@1": {
+          "first": null,
+          "rounds": 14,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g6:222@0": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g6:222@1": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g6:223@0": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g6:223@1": {
+          "first": 8,
+          "rounds": 14,
+          "own_short_before": false,
+          "own_short_rounds": [
+            10,
+            11,
+            12,
+            13,
+            14
+          ]
+        },
+        "g6:223@2": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g6:233@0": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g6:233@1": {
+          "first": null,
+          "rounds": 14,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g6:322@0": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g6:322@1": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g6:323@0": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g6:323@1": {
+          "first": 8,
+          "rounds": 14,
+          "own_short_before": false,
+          "own_short_rounds": [
+            10,
+            11,
+            12,
+            13,
+            14
+          ]
+        },
+        "g6:323@2": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g6:333@0": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g6:333@1": {
+          "first": null,
+          "rounds": 14,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g7:111@0": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g7:112@0": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g7:112@2": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g7:113@0": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g7:113@2": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g7:122@0": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g7:122@1": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g7:123@0": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g7:123@1": {
+          "first": 8,
+          "rounds": 14,
+          "own_short_before": false,
+          "own_short_rounds": [
+            10,
+            11,
+            12,
+            13,
+            14
+          ]
+        },
+        "g7:123@2": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g7:133@0": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g7:133@1": {
+          "first": null,
+          "rounds": 14,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g7:222@0": {
+          "first": 8,
+          "rounds": 12,
+          "own_short_before": false,
+          "own_short_rounds": [
+            10,
+            11,
+            12
+          ]
+        },
+        "g7:223@0": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g7:223@2": {
+          "first": null,
+          "rounds": 14,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g7:233@0": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g7:233@1": {
+          "first": null,
+          "rounds": 14,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g7:333@0": {
+          "first": null,
+          "rounds": 14,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "ring": {
+          "first": null,
+          "rounds": 14,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "copier": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "source": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "stub": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        }
+      }
+    },
+    "CAP-4 d=3": {
+      "advisor_predicted_round": 11,
+      "count_by_first": {
+        "None": 43,
+        "11": 5
+      },
+      "count_by_last_round": {
+        "16": 34,
+        "14": 5,
+        "15": 7,
+        "12": 1,
+        "13": 1
+      },
+      "reaching_predicted_round": 48,
+      "censored_before_predicted_round_without_a_difference": [],
+      "by_sender": {
+        "g1:3@0": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g3:22@0": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g3:23@0": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g3:23@1": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g3:33@0": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g6:122@0": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g6:122@1": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g6:123@0": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g6:123@1": {
+          "first": 11,
+          "rounds": 14,
+          "own_short_before": false,
+          "own_short_rounds": [
+            13
+          ]
+        },
+        "g6:123@2": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g6:133@0": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g6:133@1": {
+          "first": null,
+          "rounds": 15,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g6:222@0": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g6:222@1": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g6:223@0": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g6:223@1": {
+          "first": 11,
+          "rounds": 14,
+          "own_short_before": false,
+          "own_short_rounds": [
+            13
+          ]
+        },
+        "g6:223@2": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g6:233@0": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g6:233@1": {
+          "first": null,
+          "rounds": 15,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g6:322@0": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g6:322@1": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g6:323@0": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g6:323@1": {
+          "first": 11,
+          "rounds": 14,
+          "own_short_before": false,
+          "own_short_rounds": [
+            13
+          ]
+        },
+        "g6:323@2": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g6:333@0": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g6:333@1": {
+          "first": null,
+          "rounds": 15,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g7:111@0": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g7:112@0": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g7:112@2": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g7:113@0": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g7:113@2": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g7:122@0": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g7:122@1": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g7:123@0": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g7:123@1": {
+          "first": 11,
+          "rounds": 14,
+          "own_short_before": false,
+          "own_short_rounds": [
+            13
+          ]
+        },
+        "g7:123@2": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g7:133@0": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g7:133@1": {
+          "first": null,
+          "rounds": 15,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g7:222@0": {
+          "first": 11,
+          "rounds": 12,
+          "own_short_before": false,
+          "own_short_rounds": []
+        },
+        "g7:223@0": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g7:223@2": {
+          "first": null,
+          "rounds": 15,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g7:233@0": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g7:233@1": {
+          "first": null,
+          "rounds": 15,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g7:333@0": {
+          "first": null,
+          "rounds": 15,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "ring": {
+          "first": null,
+          "rounds": 14,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "copier": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "source": {
+          "first": null,
+          "rounds": 13,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "stub": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        }
+      }
+    },
+    "CAP-5 d=2": {
+      "advisor_predicted_round": 11,
+      "count_by_first": {
+        "None": 41,
+        "9": 7
+      },
+      "count_by_last_round": {
+        "16": 40,
+        "11": 4,
+        "15": 1,
+        "10": 1,
+        "9": 2
+      },
+      "reaching_predicted_round": 45,
+      "censored_before_predicted_round_without_a_difference": [],
+      "by_sender": {
+        "g1:3@0": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g3:22@0": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g3:23@0": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g3:23@1": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g3:33@0": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g6:122@0": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g6:122@1": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g6:123@0": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g6:123@1": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g6:123@2": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g6:133@0": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g6:133@1": {
+          "first": 9,
+          "rounds": 11,
+          "own_short_before": false,
+          "own_short_rounds": []
+        },
+        "g6:222@0": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g6:222@1": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g6:223@0": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g6:223@1": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g6:223@2": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g6:233@0": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g6:233@1": {
+          "first": 9,
+          "rounds": 11,
+          "own_short_before": false,
+          "own_short_rounds": []
+        },
+        "g6:322@0": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g6:322@1": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g6:323@0": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g6:323@1": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g6:323@2": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g6:333@0": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g6:333@1": {
+          "first": 9,
+          "rounds": 11,
+          "own_short_before": false,
+          "own_short_rounds": []
+        },
+        "g7:111@0": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g7:112@0": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g7:112@2": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g7:113@0": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g7:113@2": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g7:122@0": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g7:122@1": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g7:123@0": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g7:123@1": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g7:123@2": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g7:133@0": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g7:133@1": {
+          "first": 9,
+          "rounds": 11,
+          "own_short_before": false,
+          "own_short_rounds": []
+        },
+        "g7:222@0": {
+          "first": null,
+          "rounds": 15,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g7:223@0": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g7:223@2": {
+          "first": 9,
+          "rounds": 10,
+          "own_short_before": false,
+          "own_short_rounds": []
+        },
+        "g7:233@0": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g7:233@1": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g7:333@0": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "ring": {
+          "first": 9,
+          "rounds": 9,
+          "own_short_before": false,
+          "own_short_rounds": []
+        },
+        "copier": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "source": {
+          "first": 9,
+          "rounds": 9,
+          "own_short_before": false,
+          "own_short_rounds": []
+        },
+        "stub": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        }
+      }
+    },
+    "CAP-5 d=3": {
+      "advisor_predicted_round": 15,
+      "count_by_first": {
+        "None": 48
+      },
+      "count_by_last_round": {
+        "16": 41,
+        "12": 4,
+        "11": 1,
+        "9": 2
+      },
+      "reaching_predicted_round": 41,
+      "censored_before_predicted_round_without_a_difference": [
+        "g6:133@1",
+        "g6:233@1",
+        "g6:333@1",
+        "g7:133@1",
+        "g7:223@2",
+        "ring",
+        "source"
+      ],
+      "by_sender": {
+        "g1:3@0": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g3:22@0": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g3:23@0": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g3:23@1": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g3:33@0": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g6:122@0": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g6:122@1": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g6:123@0": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g6:123@1": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g6:123@2": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g6:133@0": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g6:133@1": {
+          "first": null,
+          "rounds": 12,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g6:222@0": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g6:222@1": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g6:223@0": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g6:223@1": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g6:223@2": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g6:233@0": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g6:233@1": {
+          "first": null,
+          "rounds": 12,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g6:322@0": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g6:322@1": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g6:323@0": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g6:323@1": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g6:323@2": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g6:333@0": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g6:333@1": {
+          "first": null,
+          "rounds": 12,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g7:111@0": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g7:112@0": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g7:112@2": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g7:113@0": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g7:113@2": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g7:122@0": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g7:122@1": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g7:123@0": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g7:123@1": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g7:123@2": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g7:133@0": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g7:133@1": {
+          "first": null,
+          "rounds": 12,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g7:222@0": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g7:223@0": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g7:223@2": {
+          "first": null,
+          "rounds": 11,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g7:233@0": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g7:233@1": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "g7:333@0": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "ring": {
+          "first": null,
+          "rounds": 9,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "copier": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "source": {
+          "first": null,
+          "rounds": 9,
+          "own_short_before": null,
+          "own_short_rounds": []
+        },
+        "stub": {
+          "first": null,
+          "rounds": 16,
+          "own_short_before": null,
+          "own_short_rounds": []
+        }
+      }
+    }
+  },
+  "reflection": {
+    "stored_site_member_rounds": 1,
+    "count_by_switch_round_for_each_slack": {
+      "3": {
+        "None": 6
+      },
+      "2": {
+        "7": 6,
+        "None": 12
+      },
+      "1": {
+        "None": 4,
+        "7": 12
+      },
+      "0": {
+        "None": 6,
+        "9": 2
+      }
+    },
+    "count_by_switch_round_for_each_pre_join_loose_count": {
+      "3": {
+        "None": 20
+      },
+      "2": {
+        "7": 18
+      },
+      "1": {
+        "None": 7,
+        "9": 2
+      },
+      "stub": {
+        "None": 1
+      }
+    },
+    "two_knot_sender_duplicate_name": "copier",
+    "all_reported_switches": {
+      "g3:22@0": 7,
+      "g3:23@0": 7,
+      "g6:122@1": 7,
+      "g6:123@1": 7,
+      "g6:222@0": 7,
+      "g6:222@1": 7,
+      "g6:223@0": 7,
+      "g6:223@1": 7,
+      "g6:233@0": 7,
+      "g6:322@1": 7,
+      "g6:323@1": 7,
+      "g7:112@2": 7,
+      "g7:113@0": 9,
+      "g7:122@0": 9,
+      "g7:122@1": 7,
+      "g7:123@1": 7,
+      "g7:222@0": 7,
+      "g7:223@0": 7,
+      "g7:233@0": 7,
+      "copier": 7
+    },
+    "no_negative_slack": true,
+    "all_departures_match_predecessor_birth_counts": true,
+    "start_site_control_cases_in_predecessor": {
+      "g1:3@0": [
+        {
+          "at": "B0",
+          "distance": 3,
+          "heard": null,
+          "waiting own without": null,
+          "waiting own with": null
+        },
+        {
+          "at": "bB0",
+          "distance": 3,
+          "heard": 7,
+          "waiting own without": false,
+          "waiting own with": false
+        }
+      ],
+      "g3:22@0": [
+        {
+          "at": "B0",
+          "distance": 3,
+          "heard": 7,
+          "waiting own without": false,
+          "waiting own with": false
+        },
+        {
+          "at": "bB0",
+          "distance": 3,
+          "heard": 7,
+          "waiting own without": false,
+          "waiting own with": false
+        }
+      ],
+      "g6:122@0": [
+        {
+          "at": "B0",
+          "distance": 3,
+          "heard": 7,
+          "waiting own without": false,
+          "waiting own with": false
+        },
+        {
+          "at": "bB0",
+          "distance": 3,
+          "heard": null,
+          "waiting own without": null,
+          "waiting own with": null
+        }
+      ],
+      "g7:122@0": [
+        {
+          "at": "B0",
+          "distance": 3,
+          "heard": 7,
+          "waiting own without": false,
+          "waiting own with": false
+        },
+        {
+          "at": "bB0",
+          "distance": 3,
+          "heard": 9,
+          "waiting own without": false,
+          "waiting own with": false
+        }
+      ],
+      "stub": [
+        {
+          "at": "B0",
+          "distance": 3,
+          "heard": null,
+          "waiting own without": null,
+          "waiting own with": null
+        },
+        {
+          "at": "bB0",
+          "distance": 3,
+          "heard": null,
+          "waiting own without": null,
+          "waiting own with": null
+        }
+      ]
+    }
+  },
+  "independent_mechanism": {
+    "reflection_by_sender": {
+      "g1:3@0": {
+        "site_owed_held_live_neighbours": [
+          [
+            1,
+            4,
+            0
+          ]
+        ],
+        "receiver_first_leaves_r_plus_two": null,
+        "rounds": 16
+      },
+      "g3:22@0": {
+        "site_owed_held_live_neighbours": [
+          [
+            1,
+            3,
+            1
+          ]
+        ],
+        "receiver_first_leaves_r_plus_two": 7,
+        "rounds": 16
+      },
+      "g3:23@0": {
+        "site_owed_held_live_neighbours": [
+          [
+            1,
+            3,
+            1
+          ]
+        ],
+        "receiver_first_leaves_r_plus_two": 7,
+        "rounds": 16
+      },
+      "g3:23@1": {
+        "site_owed_held_live_neighbours": [
+          [
+            1,
+            4,
+            1
+          ]
+        ],
+        "receiver_first_leaves_r_plus_two": null,
+        "rounds": 16
+      },
+      "g3:33@0": {
+        "site_owed_held_live_neighbours": [
+          [
+            1,
+            4,
+            1
+          ]
+        ],
+        "receiver_first_leaves_r_plus_two": null,
+        "rounds": 16
+      },
+      "g6:122@0": {
+        "site_owed_held_live_neighbours": [
+          [
+            1,
+            2,
+            2
+          ]
+        ],
+        "receiver_first_leaves_r_plus_two": null,
+        "rounds": 16
+      },
+      "g6:122@1": {
+        "site_owed_held_live_neighbours": [
+          [
+            2,
+            3,
+            1
+          ]
+        ],
+        "receiver_first_leaves_r_plus_two": 7,
+        "rounds": 16
+      },
+      "g6:123@0": {
+        "site_owed_held_live_neighbours": [
+          [
+            1,
+            2,
+            2
+          ]
+        ],
+        "receiver_first_leaves_r_plus_two": null,
+        "rounds": 16
+      },
+      "g6:123@1": {
+        "site_owed_held_live_neighbours": [
+          [
+            2,
+            3,
+            1
+          ]
+        ],
+        "receiver_first_leaves_r_plus_two": 7,
+        "rounds": 16
+      },
+      "g6:123@2": {
+        "site_owed_held_live_neighbours": [
+          [
+            2,
+            4,
+            1
+          ]
+        ],
+        "receiver_first_leaves_r_plus_two": null,
+        "rounds": 16
+      },
+      "g6:133@0": {
+        "site_owed_held_live_neighbours": [
+          [
+            1,
+            2,
+            2
+          ]
+        ],
+        "receiver_first_leaves_r_plus_two": null,
+        "rounds": 16
+      },
+      "g6:133@1": {
+        "site_owed_held_live_neighbours": [
+          [
+            2,
+            4,
+            1
+          ]
+        ],
+        "receiver_first_leaves_r_plus_two": null,
+        "rounds": 16
+      },
+      "g6:222@0": {
+        "site_owed_held_live_neighbours": [
+          [
+            1,
+            3,
+            2
+          ]
+        ],
+        "receiver_first_leaves_r_plus_two": 7,
+        "rounds": 16
+      },
+      "g6:222@1": {
+        "site_owed_held_live_neighbours": [
+          [
+            2,
+            3,
+            1
+          ]
+        ],
+        "receiver_first_leaves_r_plus_two": 7,
+        "rounds": 16
+      },
+      "g6:223@0": {
+        "site_owed_held_live_neighbours": [
+          [
+            1,
+            3,
+            2
+          ]
+        ],
+        "receiver_first_leaves_r_plus_two": 7,
+        "rounds": 16
+      },
+      "g6:223@1": {
+        "site_owed_held_live_neighbours": [
+          [
+            2,
+            3,
+            1
+          ]
+        ],
+        "receiver_first_leaves_r_plus_two": 7,
+        "rounds": 16
+      },
+      "g6:223@2": {
+        "site_owed_held_live_neighbours": [
+          [
+            2,
+            4,
+            1
+          ]
+        ],
+        "receiver_first_leaves_r_plus_two": null,
+        "rounds": 16
+      },
+      "g6:233@0": {
+        "site_owed_held_live_neighbours": [
+          [
+            1,
+            3,
+            2
+          ]
+        ],
+        "receiver_first_leaves_r_plus_two": 7,
+        "rounds": 16
+      },
+      "g6:233@1": {
+        "site_owed_held_live_neighbours": [
+          [
+            2,
+            4,
+            1
+          ]
+        ],
+        "receiver_first_leaves_r_plus_two": null,
+        "rounds": 16
+      },
+      "g6:322@0": {
+        "site_owed_held_live_neighbours": [
+          [
+            1,
+            4,
+            2
+          ]
+        ],
+        "receiver_first_leaves_r_plus_two": null,
+        "rounds": 16
+      },
+      "g6:322@1": {
+        "site_owed_held_live_neighbours": [
+          [
+            2,
+            3,
+            1
+          ]
+        ],
+        "receiver_first_leaves_r_plus_two": 7,
+        "rounds": 16
+      },
+      "g6:323@0": {
+        "site_owed_held_live_neighbours": [
+          [
+            1,
+            4,
+            2
+          ]
+        ],
+        "receiver_first_leaves_r_plus_two": null,
+        "rounds": 16
+      },
+      "g6:323@1": {
+        "site_owed_held_live_neighbours": [
+          [
+            2,
+            3,
+            1
+          ]
+        ],
+        "receiver_first_leaves_r_plus_two": 7,
+        "rounds": 16
+      },
+      "g6:323@2": {
+        "site_owed_held_live_neighbours": [
+          [
+            2,
+            4,
+            1
+          ]
+        ],
+        "receiver_first_leaves_r_plus_two": null,
+        "rounds": 16
+      },
+      "g6:333@0": {
+        "site_owed_held_live_neighbours": [
+          [
+            1,
+            4,
+            2
+          ]
+        ],
+        "receiver_first_leaves_r_plus_two": null,
+        "rounds": 16
+      },
+      "g6:333@1": {
+        "site_owed_held_live_neighbours": [
+          [
+            2,
+            4,
+            1
+          ]
+        ],
+        "receiver_first_leaves_r_plus_two": null,
+        "rounds": 16
+      },
+      "g7:111@0": {
+        "site_owed_held_live_neighbours": [
+          [
+            2,
+            2,
+            2
+          ]
+        ],
+        "receiver_first_leaves_r_plus_two": null,
+        "rounds": 16
+      },
+      "g7:112@0": {
+        "site_owed_held_live_neighbours": [
+          [
+            2,
+            2,
+            2
+          ]
+        ],
+        "receiver_first_leaves_r_plus_two": null,
+        "rounds": 16
+      },
+      "g7:112@2": {
+        "site_owed_held_live_neighbours": [
+          [
+            2,
+            3,
+            2
+          ]
+        ],
+        "receiver_first_leaves_r_plus_two": 7,
+        "rounds": 16
+      },
+      "g7:113@0": {
+        "site_owed_held_live_neighbours": [
+          [
+            2,
+            2,
+            2
+          ]
+        ],
+        "receiver_first_leaves_r_plus_two": 9,
+        "rounds": 16
+      },
+      "g7:113@2": {
+        "site_owed_held_live_neighbours": [
+          [
+            2,
+            4,
+            2
+          ]
+        ],
+        "receiver_first_leaves_r_plus_two": null,
+        "rounds": 16
+      },
+      "g7:122@0": {
+        "site_owed_held_live_neighbours": [
+          [
+            2,
+            2,
+            2
+          ]
+        ],
+        "receiver_first_leaves_r_plus_two": 9,
+        "rounds": 15
+      },
+      "g7:122@1": {
+        "site_owed_held_live_neighbours": [
+          [
+            2,
+            3,
+            2
+          ]
+        ],
+        "receiver_first_leaves_r_plus_two": 7,
+        "rounds": 16
+      },
+      "g7:123@0": {
+        "site_owed_held_live_neighbours": [
+          [
+            2,
+            2,
+            2
+          ]
+        ],
+        "receiver_first_leaves_r_plus_two": null,
+        "rounds": 16
+      },
+      "g7:123@1": {
+        "site_owed_held_live_neighbours": [
+          [
+            2,
+            3,
+            2
+          ]
+        ],
+        "receiver_first_leaves_r_plus_two": 7,
+        "rounds": 16
+      },
+      "g7:123@2": {
+        "site_owed_held_live_neighbours": [
+          [
+            2,
+            4,
+            2
+          ]
+        ],
+        "receiver_first_leaves_r_plus_two": null,
+        "rounds": 16
+      },
+      "g7:133@0": {
+        "site_owed_held_live_neighbours": [
+          [
+            2,
+            2,
+            2
+          ]
+        ],
+        "receiver_first_leaves_r_plus_two": null,
+        "rounds": 16
+      },
+      "g7:133@1": {
+        "site_owed_held_live_neighbours": [
+          [
+            2,
+            4,
+            2
+          ]
+        ],
+        "receiver_first_leaves_r_plus_two": null,
+        "rounds": 16
+      },
+      "g7:222@0": {
+        "site_owed_held_live_neighbours": [
+          [
+            2,
+            3,
+            2
+          ]
+        ],
+        "receiver_first_leaves_r_plus_two": 7,
+        "rounds": 16
+      },
+      "g7:223@0": {
+        "site_owed_held_live_neighbours": [
+          [
+            2,
+            3,
+            2
+          ]
+        ],
+        "receiver_first_leaves_r_plus_two": 7,
+        "rounds": 16
+      },
+      "g7:223@2": {
+        "site_owed_held_live_neighbours": [
+          [
+            2,
+            4,
+            2
+          ]
+        ],
+        "receiver_first_leaves_r_plus_two": null,
+        "rounds": 16
+      },
+      "g7:233@0": {
+        "site_owed_held_live_neighbours": [
+          [
+            2,
+            3,
+            2
+          ]
+        ],
+        "receiver_first_leaves_r_plus_two": 7,
+        "rounds": 16
+      },
+      "g7:233@1": {
+        "site_owed_held_live_neighbours": [
+          [
+            2,
+            4,
+            2
+          ]
+        ],
+        "receiver_first_leaves_r_plus_two": null,
+        "rounds": 16
+      },
+      "g7:333@0": {
+        "site_owed_held_live_neighbours": [
+          [
+            2,
+            4,
+            2
+          ]
+        ],
+        "receiver_first_leaves_r_plus_two": null,
+        "rounds": 16
+      },
+      "ring": {
+        "site_owed_held_live_neighbours": [
+          [
+            3,
+            4,
+            2
+          ]
+        ],
+        "receiver_first_leaves_r_plus_two": null,
+        "rounds": 16
+      },
+      "copier": {
+        "site_owed_held_live_neighbours": [
+          [
+            1,
+            3,
+            1
+          ]
+        ],
+        "receiver_first_leaves_r_plus_two": 7,
+        "rounds": 16
+      },
+      "source": {
+        "site_owed_held_live_neighbours": [
+          [
+            4,
+            4,
+            1
+          ]
+        ],
+        "receiver_first_leaves_r_plus_two": null,
+        "rounds": 16
+      },
+      "stub": {
+        "site_owed_held_live_neighbours": [
+          [
+            1,
+            1,
+            0
+          ]
+        ],
+        "receiver_first_leaves_r_plus_two": null,
+        "rounds": 16
+      }
+    },
+    "canonical_d3_cap3_marks": {
+      "g1:3@0": [
+        {
+          "after_round": 0,
+          "acts_in_round": 1,
+          "rounds_in_common": 16,
+          "first_receiver_own_signature_difference": null,
+          "first_receiver_own_birth_count_difference": null,
+          "first_receiver_inclusive_birth_count_difference": null,
+          "first_sender_own_signature_difference": 1,
+          "first_whole_knot_count_difference": 1,
+          "marked_original_site_first_three_owed_and_held": [
+            [
+              1,
+              5
+            ],
+            null,
+            null
+          ],
+          "marked_original_site_live_neighbours": 0,
+          "marked_site_starts_a_detached_part": false
+        },
+        {
+          "after_round": 1,
+          "acts_in_round": 2,
+          "rounds_in_common": 16,
+          "first_receiver_own_signature_difference": null,
+          "first_receiver_own_birth_count_difference": null,
+          "first_receiver_inclusive_birth_count_difference": null,
+          "first_sender_own_signature_difference": 2,
+          "first_whole_knot_count_difference": 2,
+          "marked_original_site_first_three_owed_and_held": [
+            [
+              0,
+              1
+            ],
+            null,
+            null
+          ],
+          "marked_original_site_live_neighbours": 4,
+          "marked_site_starts_a_detached_part": false
+        },
+        {
+          "after_round": 2,
+          "acts_in_round": 3,
+          "rounds_in_common": 16,
+          "first_receiver_own_signature_difference": null,
+          "first_receiver_own_birth_count_difference": null,
+          "first_receiver_inclusive_birth_count_difference": null,
+          "first_sender_own_signature_difference": 3,
+          "first_whole_knot_count_difference": 3,
+          "marked_original_site_first_three_owed_and_held": [
+            [
+              4,
+              1
+            ],
+            [
+              6,
+              1
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "marked_original_site_live_neighbours": 1,
+          "marked_site_starts_a_detached_part": false
+        },
+        {
+          "after_round": 3,
+          "acts_in_round": 4,
+          "rounds_in_common": 16,
+          "first_receiver_own_signature_difference": null,
+          "first_receiver_own_birth_count_difference": null,
+          "first_receiver_inclusive_birth_count_difference": null,
+          "first_sender_own_signature_difference": null,
+          "first_whole_knot_count_difference": 4,
+          "marked_original_site_first_three_owed_and_held": [
+            [
+              3,
+              1
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              3,
+              1
+            ]
+          ],
+          "marked_original_site_live_neighbours": 0,
+          "marked_site_starts_a_detached_part": false
+        },
+        {
+          "after_round": 4,
+          "acts_in_round": 5,
+          "rounds_in_common": 16,
+          "first_receiver_own_signature_difference": null,
+          "first_receiver_own_birth_count_difference": null,
+          "first_receiver_inclusive_birth_count_difference": null,
+          "first_sender_own_signature_difference": 5,
+          "first_whole_knot_count_difference": 5,
+          "marked_original_site_first_three_owed_and_held": [
+            [
+              0,
+              1
+            ],
+            null,
+            null
+          ],
+          "marked_original_site_live_neighbours": 0,
+          "marked_site_starts_a_detached_part": true
+        },
+        {
+          "after_round": 5,
+          "acts_in_round": 6,
+          "rounds_in_common": 16,
+          "first_receiver_own_signature_difference": null,
+          "first_receiver_own_birth_count_difference": null,
+          "first_receiver_inclusive_birth_count_difference": null,
+          "first_sender_own_signature_difference": 6,
+          "first_whole_knot_count_difference": 6,
+          "marked_original_site_first_three_owed_and_held": [
+            [
+              0,
+              1
+            ],
+            null,
+            null
+          ],
+          "marked_original_site_live_neighbours": 0,
+          "marked_site_starts_a_detached_part": true
+        },
+        {
+          "after_round": 6,
+          "acts_in_round": 7,
+          "rounds_in_common": 16,
+          "first_receiver_own_signature_difference": null,
+          "first_receiver_own_birth_count_difference": null,
+          "first_receiver_inclusive_birth_count_difference": null,
+          "first_sender_own_signature_difference": 7,
+          "first_whole_knot_count_difference": 7,
+          "marked_original_site_first_three_owed_and_held": [
+            [
+              0,
+              1
+            ],
+            null,
+            null
+          ],
+          "marked_original_site_live_neighbours": 0,
+          "marked_site_starts_a_detached_part": true
+        },
+        {
+          "after_round": 7,
+          "acts_in_round": 8,
+          "rounds_in_common": 16,
+          "first_receiver_own_signature_difference": null,
+          "first_receiver_own_birth_count_difference": null,
+          "first_receiver_inclusive_birth_count_difference": null,
+          "first_sender_own_signature_difference": 8,
+          "first_whole_knot_count_difference": 8,
+          "marked_original_site_first_three_owed_and_held": [
+            [
+              0,
+              1
+            ],
+            null,
+            null
+          ],
+          "marked_original_site_live_neighbours": 0,
+          "marked_site_starts_a_detached_part": true
+        },
+        {
+          "after_round": 8,
+          "acts_in_round": 9,
+          "rounds_in_common": 16,
+          "first_receiver_own_signature_difference": null,
+          "first_receiver_own_birth_count_difference": null,
+          "first_receiver_inclusive_birth_count_difference": null,
+          "first_sender_own_signature_difference": 9,
+          "first_whole_knot_count_difference": 9,
+          "marked_original_site_first_three_owed_and_held": [
+            [
+              0,
+              1
+            ],
+            null,
+            null
+          ],
+          "marked_original_site_live_neighbours": 0,
+          "marked_site_starts_a_detached_part": true
+        }
+      ],
+      "g3:22@0": [
+        {
+          "after_round": 0,
+          "acts_in_round": 1,
+          "rounds_in_common": 16,
+          "first_receiver_own_signature_difference": 7,
+          "first_receiver_own_birth_count_difference": 7,
+          "first_receiver_inclusive_birth_count_difference": 4,
+          "first_sender_own_signature_difference": 1,
+          "first_whole_knot_count_difference": 1,
+          "marked_original_site_first_three_owed_and_held": [
+            [
+              1,
+              4
+            ],
+            null,
+            null
+          ],
+          "marked_original_site_live_neighbours": 1,
+          "marked_site_starts_a_detached_part": false,
+          "marked_first_signature_difference_from_unmarked_stub": null,
+          "rounds_in_common_with_unmarked_stub": 16
+        },
+        {
+          "after_round": 1,
+          "acts_in_round": 2,
+          "rounds_in_common": 16,
+          "first_receiver_own_signature_difference": 7,
+          "first_receiver_own_birth_count_difference": 7,
+          "first_receiver_inclusive_birth_count_difference": 4,
+          "first_sender_own_signature_difference": 3,
+          "first_whole_knot_count_difference": 3,
+          "marked_original_site_first_three_owed_and_held": [
+            [
+              2,
+              1
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "marked_original_site_live_neighbours": 3,
+          "marked_site_starts_a_detached_part": false,
+          "marked_first_signature_difference_from_unmarked_stub": null,
+          "rounds_in_common_with_unmarked_stub": 16
+        },
+        {
+          "after_round": 2,
+          "acts_in_round": 3,
+          "rounds_in_common": 16,
+          "first_receiver_own_signature_difference": 7,
+          "first_receiver_own_birth_count_difference": 7,
+          "first_receiver_inclusive_birth_count_difference": 4,
+          "first_sender_own_signature_difference": 3,
+          "first_whole_knot_count_difference": 3,
+          "marked_original_site_first_three_owed_and_held": [
+            [
+              2,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            null
+          ],
+          "marked_original_site_live_neighbours": 0,
+          "marked_site_starts_a_detached_part": false,
+          "marked_first_signature_difference_from_unmarked_stub": null,
+          "rounds_in_common_with_unmarked_stub": 16
+        },
+        {
+          "after_round": 3,
+          "acts_in_round": 4,
+          "rounds_in_common": 16,
+          "first_receiver_own_signature_difference": null,
+          "first_receiver_own_birth_count_difference": null,
+          "first_receiver_inclusive_birth_count_difference": null,
+          "first_sender_own_signature_difference": 4,
+          "first_whole_knot_count_difference": 4,
+          "marked_original_site_first_three_owed_and_held": [
+            [
+              0,
+              1
+            ],
+            null,
+            null
+          ],
+          "marked_original_site_live_neighbours": 0,
+          "marked_site_starts_a_detached_part": true,
+          "marked_first_signature_difference_from_unmarked_stub": 7,
+          "rounds_in_common_with_unmarked_stub": 16
+        },
+        {
+          "after_round": 4,
+          "acts_in_round": 5,
+          "rounds_in_common": 16,
+          "first_receiver_own_signature_difference": null,
+          "first_receiver_own_birth_count_difference": null,
+          "first_receiver_inclusive_birth_count_difference": null,
+          "first_sender_own_signature_difference": 5,
+          "first_whole_knot_count_difference": 5,
+          "marked_original_site_first_three_owed_and_held": [
+            [
+              0,
+              1
+            ],
+            null,
+            null
+          ],
+          "marked_original_site_live_neighbours": 0,
+          "marked_site_starts_a_detached_part": true,
+          "marked_first_signature_difference_from_unmarked_stub": 7,
+          "rounds_in_common_with_unmarked_stub": 16
+        },
+        {
+          "after_round": 5,
+          "acts_in_round": 6,
+          "rounds_in_common": 16,
+          "first_receiver_own_signature_difference": null,
+          "first_receiver_own_birth_count_difference": null,
+          "first_receiver_inclusive_birth_count_difference": null,
+          "first_sender_own_signature_difference": 6,
+          "first_whole_knot_count_difference": 6,
+          "marked_original_site_first_three_owed_and_held": [
+            [
+              0,
+              1
+            ],
+            null,
+            null
+          ],
+          "marked_original_site_live_neighbours": 0,
+          "marked_site_starts_a_detached_part": true,
+          "marked_first_signature_difference_from_unmarked_stub": 7,
+          "rounds_in_common_with_unmarked_stub": 16
+        },
+        {
+          "after_round": 6,
+          "acts_in_round": 7,
+          "rounds_in_common": 16,
+          "first_receiver_own_signature_difference": null,
+          "first_receiver_own_birth_count_difference": null,
+          "first_receiver_inclusive_birth_count_difference": null,
+          "first_sender_own_signature_difference": 7,
+          "first_whole_knot_count_difference": 7,
+          "marked_original_site_first_three_owed_and_held": [
+            [
+              0,
+              1
+            ],
+            null,
+            null
+          ],
+          "marked_original_site_live_neighbours": 0,
+          "marked_site_starts_a_detached_part": true,
+          "marked_first_signature_difference_from_unmarked_stub": 7,
+          "rounds_in_common_with_unmarked_stub": 16
+        },
+        {
+          "after_round": 7,
+          "acts_in_round": 8,
+          "rounds_in_common": 16,
+          "first_receiver_own_signature_difference": null,
+          "first_receiver_own_birth_count_difference": null,
+          "first_receiver_inclusive_birth_count_difference": null,
+          "first_sender_own_signature_difference": 8,
+          "first_whole_knot_count_difference": 8,
+          "marked_original_site_first_three_owed_and_held": [
+            [
+              0,
+              1
+            ],
+            null,
+            null
+          ],
+          "marked_original_site_live_neighbours": 0,
+          "marked_site_starts_a_detached_part": true,
+          "marked_first_signature_difference_from_unmarked_stub": 7,
+          "rounds_in_common_with_unmarked_stub": 16
+        },
+        {
+          "after_round": 8,
+          "acts_in_round": 9,
+          "rounds_in_common": 16,
+          "first_receiver_own_signature_difference": null,
+          "first_receiver_own_birth_count_difference": null,
+          "first_receiver_inclusive_birth_count_difference": null,
+          "first_sender_own_signature_difference": 9,
+          "first_whole_knot_count_difference": 9,
+          "marked_original_site_first_three_owed_and_held": [
+            [
+              0,
+              1
+            ],
+            null,
+            null
+          ],
+          "marked_original_site_live_neighbours": 0,
+          "marked_site_starts_a_detached_part": true,
+          "marked_first_signature_difference_from_unmarked_stub": 7,
+          "rounds_in_common_with_unmarked_stub": 16
+        }
+      ],
+      "stub": [
+        {
+          "after_round": 0,
+          "acts_in_round": 1,
+          "rounds_in_common": 16,
+          "first_receiver_own_signature_difference": null,
+          "first_receiver_own_birth_count_difference": null,
+          "first_receiver_inclusive_birth_count_difference": 4,
+          "first_sender_own_signature_difference": 1,
+          "first_whole_knot_count_difference": 1,
+          "marked_original_site_first_three_owed_and_held": [
+            [
+              1,
+              2
+            ],
+            null,
+            null
+          ],
+          "marked_original_site_live_neighbours": 0,
+          "marked_site_starts_a_detached_part": false
+        },
+        {
+          "after_round": 1,
+          "acts_in_round": 2,
+          "rounds_in_common": 16,
+          "first_receiver_own_signature_difference": null,
+          "first_receiver_own_birth_count_difference": null,
+          "first_receiver_inclusive_birth_count_difference": null,
+          "first_sender_own_signature_difference": 2,
+          "first_whole_knot_count_difference": 2,
+          "marked_original_site_first_three_owed_and_held": [
+            [
+              0,
+              1
+            ],
+            null,
+            null
+          ],
+          "marked_original_site_live_neighbours": 1,
+          "marked_site_starts_a_detached_part": false
+        },
+        {
+          "after_round": 2,
+          "acts_in_round": 3,
+          "rounds_in_common": 16,
+          "first_receiver_own_signature_difference": null,
+          "first_receiver_own_birth_count_difference": null,
+          "first_receiver_inclusive_birth_count_difference": 4,
+          "first_sender_own_signature_difference": 3,
+          "first_whole_knot_count_difference": 3,
+          "marked_original_site_first_three_owed_and_held": [
+            [
+              1,
+              1
+            ],
+            null,
+            null
+          ],
+          "marked_original_site_live_neighbours": 0,
+          "marked_site_starts_a_detached_part": false
+        },
+        {
+          "after_round": 3,
+          "acts_in_round": 4,
+          "rounds_in_common": 16,
+          "first_receiver_own_signature_difference": null,
+          "first_receiver_own_birth_count_difference": null,
+          "first_receiver_inclusive_birth_count_difference": null,
+          "first_sender_own_signature_difference": 4,
+          "first_whole_knot_count_difference": 4,
+          "marked_original_site_first_three_owed_and_held": [
+            [
+              0,
+              1
+            ],
+            null,
+            null
+          ],
+          "marked_original_site_live_neighbours": 0,
+          "marked_site_starts_a_detached_part": true
+        },
+        {
+          "after_round": 4,
+          "acts_in_round": 5,
+          "rounds_in_common": 16,
+          "first_receiver_own_signature_difference": null,
+          "first_receiver_own_birth_count_difference": null,
+          "first_receiver_inclusive_birth_count_difference": null,
+          "first_sender_own_signature_difference": 5,
+          "first_whole_knot_count_difference": 5,
+          "marked_original_site_first_three_owed_and_held": [
+            [
+              0,
+              1
+            ],
+            null,
+            null
+          ],
+          "marked_original_site_live_neighbours": 0,
+          "marked_site_starts_a_detached_part": true
+        },
+        {
+          "after_round": 5,
+          "acts_in_round": 6,
+          "rounds_in_common": 16,
+          "first_receiver_own_signature_difference": null,
+          "first_receiver_own_birth_count_difference": null,
+          "first_receiver_inclusive_birth_count_difference": null,
+          "first_sender_own_signature_difference": 6,
+          "first_whole_knot_count_difference": 6,
+          "marked_original_site_first_three_owed_and_held": [
+            [
+              0,
+              1
+            ],
+            null,
+            null
+          ],
+          "marked_original_site_live_neighbours": 0,
+          "marked_site_starts_a_detached_part": true
+        },
+        {
+          "after_round": 6,
+          "acts_in_round": 7,
+          "rounds_in_common": 16,
+          "first_receiver_own_signature_difference": null,
+          "first_receiver_own_birth_count_difference": null,
+          "first_receiver_inclusive_birth_count_difference": null,
+          "first_sender_own_signature_difference": 7,
+          "first_whole_knot_count_difference": 7,
+          "marked_original_site_first_three_owed_and_held": [
+            [
+              0,
+              1
+            ],
+            null,
+            null
+          ],
+          "marked_original_site_live_neighbours": 0,
+          "marked_site_starts_a_detached_part": true
+        },
+        {
+          "after_round": 7,
+          "acts_in_round": 8,
+          "rounds_in_common": 16,
+          "first_receiver_own_signature_difference": null,
+          "first_receiver_own_birth_count_difference": null,
+          "first_receiver_inclusive_birth_count_difference": null,
+          "first_sender_own_signature_difference": 8,
+          "first_whole_knot_count_difference": 8,
+          "marked_original_site_first_three_owed_and_held": [
+            [
+              0,
+              1
+            ],
+            null,
+            null
+          ],
+          "marked_original_site_live_neighbours": 0,
+          "marked_site_starts_a_detached_part": true
+        },
+        {
+          "after_round": 8,
+          "acts_in_round": 9,
+          "rounds_in_common": 16,
+          "first_receiver_own_signature_difference": null,
+          "first_receiver_own_birth_count_difference": null,
+          "first_receiver_inclusive_birth_count_difference": null,
+          "first_sender_own_signature_difference": 9,
+          "first_whole_knot_count_difference": 9,
+          "marked_original_site_first_three_owed_and_held": [
+            [
+              0,
+              1
+            ],
+            null,
+            null
+          ],
+          "marked_original_site_live_neighbours": 0,
+          "marked_site_starts_a_detached_part": true
+        }
+      ]
+    },
+    "rule_three_mutually_sharing_knots_d3_boundary": {
+      "3": [
+        {
+          "after_round": 2,
+          "acts_in_round": 3,
+          "rounds_in_common": 16,
+          "first_receiver_own_signature_difference": 7,
+          "first_receiver_own_birth_count_difference": 7,
+          "first_receiver_inclusive_birth_count_difference": 4,
+          "first_sender_own_signature_difference": 3,
+          "first_whole_knot_count_difference": 3,
+          "marked_original_site_first_three_owed_and_held": [
+            [
+              2,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            null
+          ],
+          "marked_original_site_live_neighbours": 0,
+          "marked_site_starts_a_detached_part": false,
+          "marked_first_signature_difference_from_unmarked_stub": null,
+          "rounds_in_common_with_unmarked_stub": 16
+        },
+        {
+          "after_round": 3,
+          "acts_in_round": 4,
+          "rounds_in_common": 16,
+          "first_receiver_own_signature_difference": null,
+          "first_receiver_own_birth_count_difference": null,
+          "first_receiver_inclusive_birth_count_difference": null,
+          "first_sender_own_signature_difference": 4,
+          "first_whole_knot_count_difference": 4,
+          "marked_original_site_first_three_owed_and_held": [
+            [
+              0,
+              1
+            ],
+            null,
+            null
+          ],
+          "marked_original_site_live_neighbours": 0,
+          "marked_site_starts_a_detached_part": true,
+          "marked_first_signature_difference_from_unmarked_stub": 7,
+          "rounds_in_common_with_unmarked_stub": 16
+        }
+      ],
+      "4": [
+        {
+          "after_round": 2,
+          "acts_in_round": 3,
+          "rounds_in_common": 13,
+          "first_receiver_own_signature_difference": 7,
+          "first_receiver_own_birth_count_difference": 7,
+          "first_receiver_inclusive_birth_count_difference": 4,
+          "first_sender_own_signature_difference": 3,
+          "first_whole_knot_count_difference": 3,
+          "marked_original_site_first_three_owed_and_held": [
+            [
+              2,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            null
+          ],
+          "marked_original_site_live_neighbours": 0,
+          "marked_site_starts_a_detached_part": false,
+          "marked_first_signature_difference_from_unmarked_stub": null,
+          "rounds_in_common_with_unmarked_stub": 16
+        },
+        {
+          "after_round": 3,
+          "acts_in_round": 4,
+          "rounds_in_common": 13,
+          "first_receiver_own_signature_difference": null,
+          "first_receiver_own_birth_count_difference": null,
+          "first_receiver_inclusive_birth_count_difference": null,
+          "first_sender_own_signature_difference": 4,
+          "first_whole_knot_count_difference": 4,
+          "marked_original_site_first_three_owed_and_held": [
+            [
+              0,
+              1
+            ],
+            null,
+            null
+          ],
+          "marked_original_site_live_neighbours": 0,
+          "marked_site_starts_a_detached_part": true,
+          "marked_first_signature_difference_from_unmarked_stub": 7,
+          "rounds_in_common_with_unmarked_stub": 13
+        }
+      ],
+      "5": [
+        {
+          "after_round": 2,
+          "acts_in_round": 3,
+          "rounds_in_common": 11,
+          "first_receiver_own_signature_difference": 7,
+          "first_receiver_own_birth_count_difference": 7,
+          "first_receiver_inclusive_birth_count_difference": 4,
+          "first_sender_own_signature_difference": 3,
+          "first_whole_knot_count_difference": 3,
+          "marked_original_site_first_three_owed_and_held": [
+            [
+              2,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            null
+          ],
+          "marked_original_site_live_neighbours": 0,
+          "marked_site_starts_a_detached_part": false,
+          "marked_first_signature_difference_from_unmarked_stub": null,
+          "rounds_in_common_with_unmarked_stub": 16
+        },
+        {
+          "after_round": 3,
+          "acts_in_round": 4,
+          "rounds_in_common": 11,
+          "first_receiver_own_signature_difference": null,
+          "first_receiver_own_birth_count_difference": null,
+          "first_receiver_inclusive_birth_count_difference": null,
+          "first_sender_own_signature_difference": 4,
+          "first_whole_knot_count_difference": 4,
+          "marked_original_site_first_three_owed_and_held": [
+            [
+              0,
+              1
+            ],
+            null,
+            null
+          ],
+          "marked_original_site_live_neighbours": 0,
+          "marked_site_starts_a_detached_part": true,
+          "marked_first_signature_difference_from_unmarked_stub": 7,
+          "rounds_in_common_with_unmarked_stub": 11
+        }
+      ],
+      "6": [
+        {
+          "after_round": 2,
+          "acts_in_round": 3,
+          "rounds_in_common": 9,
+          "first_receiver_own_signature_difference": 7,
+          "first_receiver_own_birth_count_difference": 7,
+          "first_receiver_inclusive_birth_count_difference": 4,
+          "first_sender_own_signature_difference": 3,
+          "first_whole_knot_count_difference": 3,
+          "marked_original_site_first_three_owed_and_held": [
+            [
+              2,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            null
+          ],
+          "marked_original_site_live_neighbours": 0,
+          "marked_site_starts_a_detached_part": false,
+          "marked_first_signature_difference_from_unmarked_stub": null,
+          "rounds_in_common_with_unmarked_stub": 15
+        },
+        {
+          "after_round": 3,
+          "acts_in_round": 4,
+          "rounds_in_common": 9,
+          "first_receiver_own_signature_difference": null,
+          "first_receiver_own_birth_count_difference": null,
+          "first_receiver_inclusive_birth_count_difference": null,
+          "first_sender_own_signature_difference": 4,
+          "first_whole_knot_count_difference": 4,
+          "marked_original_site_first_three_owed_and_held": [
+            [
+              0,
+              1
+            ],
+            null,
+            null
+          ],
+          "marked_original_site_live_neighbours": 0,
+          "marked_site_starts_a_detached_part": true,
+          "marked_first_signature_difference_from_unmarked_stub": 7,
+          "rounds_in_common_with_unmarked_stub": 9
+        }
+      ],
+      "7": [
+        {
+          "after_round": 2,
+          "acts_in_round": 3,
+          "rounds_in_common": 8,
+          "first_receiver_own_signature_difference": 7,
+          "first_receiver_own_birth_count_difference": 7,
+          "first_receiver_inclusive_birth_count_difference": 4,
+          "first_sender_own_signature_difference": 3,
+          "first_whole_knot_count_difference": 3,
+          "marked_original_site_first_three_owed_and_held": [
+            [
+              2,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            null
+          ],
+          "marked_original_site_live_neighbours": 0,
+          "marked_site_starts_a_detached_part": false,
+          "marked_first_signature_difference_from_unmarked_stub": null,
+          "rounds_in_common_with_unmarked_stub": 12
+        },
+        {
+          "after_round": 3,
+          "acts_in_round": 4,
+          "rounds_in_common": 8,
+          "first_receiver_own_signature_difference": null,
+          "first_receiver_own_birth_count_difference": null,
+          "first_receiver_inclusive_birth_count_difference": null,
+          "first_sender_own_signature_difference": 4,
+          "first_whole_knot_count_difference": 4,
+          "marked_original_site_first_three_owed_and_held": [
+            [
+              0,
+              1
+            ],
+            null,
+            null
+          ],
+          "marked_original_site_live_neighbours": 0,
+          "marked_site_starts_a_detached_part": true,
+          "marked_first_signature_difference_from_unmarked_stub": 7,
+          "rounds_in_common_with_unmarked_stub": 8
+        }
+      ]
+    }
+  }
+}

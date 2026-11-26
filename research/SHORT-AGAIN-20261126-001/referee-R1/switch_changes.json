@@ -1,0 +1,80 @@
+{
+  "scope": "cap three, waiting, one-loose receiver site, meeting at three steps, all sender and link changes",
+  "method": "Strict uses births descended exclusively from the receiver. Inclusive counts each birth with any receiver ancestor.",
+  "disagreements with recorded change, distance and waiting flags": [],
+  "comparisons": {
+    "sender": {
+      "changes": 281,
+      "strict signature heard": 77,
+      "strict count-only heard": 77,
+      "strict count-only first difference matches signature or both silent": 281,
+      "birth count including mixed receiver descendants heard": 92,
+      "inclusive count gives earlier hearing than strict count, including otherwise silent": 92,
+      "earlier differences from marks at distance >= 3": 92
+    },
+    "all": {
+      "changes": 473,
+      "strict signature heard": 241,
+      "strict count-only heard": 241,
+      "strict count-only first difference matches signature or both silent": 473,
+      "birth count including mixed receiver descendants heard": 232,
+      "inclusive count gives earlier hearing than strict count, including otherwise silent": 210,
+      "earlier differences from marks at distance >= 3": 92
+    },
+    "link": {
+      "changes": 192,
+      "strict signature heard": 164,
+      "strict count-only heard": 164,
+      "strict count-only first difference matches signature or both silent": 192,
+      "birth count including mixed receiver descendants heard": 140,
+      "inclusive count gives earlier hearing than strict count, including otherwise silent": 118,
+      "earlier differences from marks at distance >= 3": 0
+    }
+  },
+  "unmarked to changed first departures among heard changes": {
+    "sender": {
+      "None to 7": 26,
+      "7 to None": 31,
+      "7 to 9": 5,
+      "None to 9": 4,
+      "9 to 7": 2,
+      "9 to None": 9
+    },
+    "link": {
+      "None to 3": 28,
+      "None to 5": 28,
+      "None to 1": 28,
+      "7 to 3": 18,
+      "7 to 5": 18,
+      "7 to 1": 18,
+      "7 to None": 18,
+      "9 to 3": 2,
+      "9 to 5": 2,
+      "9 to 1": 2,
+      "9 to None": 2
+    }
+  },
+  "examples": {
+    "sender": {
+      "sender": "g1:3@0",
+      "change": "bB0",
+      "distance": 3,
+      "inclusive first difference": 4,
+      "strict first difference": 7,
+      "rounds compared": 16
+    },
+    "link": {
+      "sender": "g1:3@0",
+      "change": "L1",
+      "distance": 1,
+      "inclusive first difference": 2,
+      "strict first difference": 3,
+      "rounds compared": 16
+    }
+  },
+  "runtime": {
+    "elapsed seconds": 13.958,
+    "peak resident KiB": 61956,
+    "single process address-space limit bytes": 1900000000
+  }
+}

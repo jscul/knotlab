@@ -1,0 +1,512 @@
+{
+  "seed": 2026112601,
+  "pilot": true,
+  "primitive checks": {
+    "small group rosters": 120,
+    "short treatment check": {
+      "CANCEL-WAIT": {
+        "completed rounds": 1,
+        "births": 0,
+        "old members still usable": 4
+      },
+      "CANCEL-RETIRE": {
+        "completed rounds": 1,
+        "births": 0,
+        "old members still usable": 0
+      },
+      "CANCEL-OFFSHOOT": {
+        "completed rounds": 1,
+        "births": 8,
+        "old members still usable": 0
+      },
+      "SHORT-BY": {
+        "completed rounds": 1,
+        "births": 4,
+        "old members still usable": 4
+      },
+      "STALL": {
+        "completed rounds": 0,
+        "births": 0,
+        "old members still usable": 4
+      }
+    },
+    "sited starts plus bench starts": 47
+  },
+  "stages": {
+    "switch_runs": {
+      "stratified by": [
+        "law",
+        "join",
+        "A"
+      ],
+      "recorded cases": 5760,
+      "unavailable records": 0,
+      "cases not run in this replay": 5759,
+      "cases compared": 1,
+      "rounds with recorded sequences compared": 16,
+      "values compared": 14,
+      "cases with a difference": 0,
+      "cases": [
+        {
+          "file": "switch_runs.jsonl.gz",
+          "line": 1943,
+          "case": {
+            "A": "g7:122@0",
+            "B": "g6:323@1",
+            "d": 2,
+            "join": "meeting",
+            "law": [
+              "CAP-3",
+              "CANCEL-OFFSHOOT"
+            ]
+          },
+          "rounds compared": 16,
+          "checks": 14,
+          "differences": []
+        }
+      ],
+      "seconds": 0.232,
+      "peak KiB at end of stage": 50352
+    },
+    "jam_d3_meeting": {
+      "stratified by": [
+        "law"
+      ],
+      "recorded cases": 15792,
+      "unavailable records": 0,
+      "cases not run in this replay": 15791,
+      "cases compared": 1,
+      "rounds with recorded sequences compared": 84,
+      "values compared": 20,
+      "cases with a difference": 0,
+      "cases": [
+        {
+          "file": "jam_d3_meeting.jsonl.gz",
+          "line": 10539,
+          "case": {
+            "A": "g7:122@0",
+            "B": "g6:233@0",
+            "d": 3,
+            "join": "meeting",
+            "law": [
+              "CAP-3",
+              "CANCEL-WAIT"
+            ]
+          },
+          "rounds compared": 84,
+          "checks": 20,
+          "differences": []
+        }
+      ],
+      "seconds": 0.442,
+      "peak KiB at end of stage": 183008
+    },
+    "jam_d2_meeting_sample": {
+      "stratified by": [
+        "law"
+      ],
+      "recorded cases": 2800,
+      "unavailable records": 0,
+      "cases not run in this replay": 2799,
+      "cases compared": 1,
+      "rounds with recorded sequences compared": 24,
+      "values compared": 18,
+      "cases with a difference": 0,
+      "cases": [
+        {
+          "file": "jam_d2_meeting_sample.jsonl.gz",
+          "line": 2545,
+          "case": {
+            "A": "g7:333@0",
+            "B": "g6:122@1",
+            "d": 2,
+            "join": "meeting",
+            "law": [
+              "CAP-3",
+              "CANCEL-WAIT"
+            ]
+          },
+          "rounds compared": 24,
+          "checks": 18,
+          "differences": []
+        }
+      ],
+      "seconds": 0.122,
+      "peak KiB at end of stage": 183008
+    },
+    "jam_d5_meeting_sample": {
+      "stratified by": [
+        "law"
+      ],
+      "recorded cases": 2800,
+      "unavailable records": 0,
+      "cases not run in this replay": 2799,
+      "cases compared": 1,
+      "rounds with recorded sequences compared": 36,
+      "values compared": 24,
+      "cases with a difference": 0,
+      "cases": [
+        {
+          "file": "jam_d5_meeting_sample.jsonl.gz",
+          "line": 1663,
+          "case": {
+            "A": "g7:113@0",
+            "B": "g6:123@1",
+            "d": 5,
+            "join": "meeting",
+            "law": [
+              "CAP-3",
+              "CANCEL-WAIT"
+            ]
+          },
+          "rounds compared": 36,
+          "checks": 24,
+          "differences": []
+        }
+      ],
+      "seconds": 0.139,
+      "peak KiB at end of stage": 183008
+    },
+    "jam_d3_share_sample": {
+      "stratified by": [
+        "law"
+      ],
+      "recorded cases": 2800,
+      "unavailable records": 0,
+      "cases not run in this replay": 2799,
+      "cases compared": 1,
+      "rounds with recorded sequences compared": 36,
+      "values compared": 20,
+      "cases with a difference": 0,
+      "cases": [
+        {
+          "file": "jam_d3_share_sample.jsonl.gz",
+          "line": 382,
+          "case": {
+            "A": "g6:122@1",
+            "B": "g7:233@0",
+            "d": 3,
+            "join": "share",
+            "law": [
+              "CAP-3",
+              "CANCEL-WAIT"
+            ]
+          },
+          "rounds compared": 36,
+          "checks": 20,
+          "differences": []
+        }
+      ],
+      "seconds": 0.129,
+      "peak KiB at end of stage": 183008
+    },
+    "far": {
+      "stratified by": [
+        "law"
+      ],
+      "recorded cases": 96,
+      "unavailable records": 0,
+      "cases not run in this replay": 95,
+      "cases compared": 1,
+      "rounds with recorded sequences compared": 16,
+      "values compared": 20,
+      "cases with a difference": 0,
+      "cases": [
+        {
+          "file": "far.jsonl.gz",
+          "line": 30,
+          "case": {
+            "A": "source",
+            "B": "source",
+            "d": 3,
+            "law": [
+              "BUSY-FEWER",
+              "CANCEL-RETIRE"
+            ]
+          },
+          "rounds compared": 16,
+          "checks": 20,
+          "differences": []
+        }
+      ],
+      "seconds": 0.052,
+      "peak KiB at end of stage": 183008
+    },
+    "ring_line_runs": {
+      "stratified by": [
+        "law",
+        "join"
+      ],
+      "recorded cases": 80,
+      "unavailable records": 0,
+      "cases not run in this replay": 79,
+      "cases compared": 1,
+      "rounds with recorded sequences compared": 31,
+      "values compared": 11,
+      "cases with a difference": 0,
+      "cases": [
+        {
+          "file": "ring_line_runs.jsonl.gz",
+          "line": 3,
+          "case": {
+            "d": 3,
+            "join": "meeting",
+            "law": "CAP-3"
+          },
+          "rounds compared": 31,
+          "checks": 11,
+          "differences": []
+        }
+      ],
+      "seconds": 0.059,
+      "peak KiB at end of stage": 183008
+    },
+    "reach_runs": {
+      "stratified by": [
+        "law"
+      ],
+      "recorded cases": 2304,
+      "unavailable records": 0,
+      "cases not run in this replay": 2303,
+      "cases compared": 1,
+      "rounds with recorded sequences compared": 16,
+      "values compared": 21,
+      "cases with a difference": 0,
+      "cases": [
+        {
+          "file": "reach_runs.jsonl.gz",
+          "line": 243,
+          "case": {
+            "A": "g6:122@0",
+            "B": "g6:133@0",
+            "d": 8,
+            "law": [
+              "BUSY-FEWER",
+              "CANCEL-OFFSHOOT"
+            ]
+          },
+          "rounds compared": 16,
+          "checks": 21,
+          "differences": []
+        }
+      ],
+      "seconds": 0.204,
+      "peak KiB at end of stage": 183008
+    },
+    "made_bench": {
+      "stratified by": [
+        "law",
+        "join"
+      ],
+      "recorded cases": 537,
+      "unavailable records": 3,
+      "cases not run in this replay": 536,
+      "cases compared": 1,
+      "rounds with recorded sequences compared": 12,
+      "values compared": 24,
+      "cases with a difference": 0,
+      "cases": [
+        {
+          "file": "made_bench.jsonl.gz",
+          "line": 120,
+          "case": {
+            "A": "ring",
+            "B": "copier",
+            "steps": 1,
+            "join": "meeting",
+            "law": [
+              "BUSY-FEWER",
+              "CANCEL-OFFSHOOT",
+              null
+            ]
+          },
+          "rounds compared": 12,
+          "checks": 24,
+          "differences": []
+        }
+      ],
+      "seconds": 0.141,
+      "peak KiB at end of stage": 183008
+    },
+    "made_census": {
+      "stratified by": [
+        "law",
+        "join"
+      ],
+      "recorded cases": 11880,
+      "unavailable records": 0,
+      "cases not run in this replay": 11879,
+      "cases compared": 1,
+      "rounds with recorded sequences compared": 10,
+      "values compared": 15,
+      "cases with a difference": 0,
+      "cases": [
+        {
+          "file": "made_census.jsonl.gz",
+          "line": 10817,
+          "case": {
+            "A": "g7:122@0",
+            "B": "g7:123@0",
+            "join": "meeting",
+            "law": [
+              "BUSY-FEWER",
+              "CANCEL-OFFSHOOT"
+            ]
+          },
+          "rounds compared": 10,
+          "checks": 15,
+          "differences": []
+        }
+      ],
+      "seconds": 0.11,
+      "peak KiB at end of stage": 183008
+    },
+    "made_mark": {
+      "stratified by": [
+        "law"
+      ],
+      "recorded cases": 288,
+      "unavailable records": 0,
+      "cases not run in this replay": 287,
+      "cases compared": 1,
+      "rounds with recorded sequences compared": 0,
+      "values compared": 9,
+      "cases with a difference": 0,
+      "cases": [
+        {
+          "file": "made_mark.jsonl.gz",
+          "line": 90,
+          "case": {
+            "A": "g6:133@0",
+            "B": "g7:112@0",
+            "d": 4,
+            "law": [
+              "BUSY-FEWER",
+              "CANCEL-OFFSHOOT"
+            ]
+          },
+          "rounds compared": 0,
+          "checks": 9,
+          "differences": []
+        }
+      ],
+      "seconds": 0.062,
+      "peak KiB at end of stage": 183008
+    },
+    "again_runs": {
+      "stratified by": [
+        "law"
+      ],
+      "recorded cases": 821,
+      "unavailable records": 0,
+      "cases not run in this replay": 820,
+      "cases compared": 1,
+      "rounds with recorded sequences compared": 0,
+      "values compared": 8,
+      "cases with a difference": 0,
+      "cases": [
+        {
+          "file": "again_runs.jsonl.gz",
+          "line": 663,
+          "case": {
+            "A": "g7:122@0",
+            "B": "g3:33@0",
+            "d": 3,
+            "law": [
+              "CAP-3",
+              "CANCEL-WAIT"
+            ]
+          },
+          "rounds compared": 0,
+          "checks": 8,
+          "differences": []
+        }
+      ],
+      "seconds": 0.064,
+      "peak KiB at end of stage": 183008
+    },
+    "link-controls": {
+      "cases": [
+        {
+          "sender": "g3:22@0",
+          "d": 6,
+          "loose per link": 2,
+          "rounds": 16,
+          "leaves first way": 13,
+          "own births": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            25,
+            28,
+            61,
+            72
+          ]
+        },
+        {
+          "sender": "g3:22@0",
+          "d": 6,
+          "loose per link": 1,
+          "rounds": 16,
+          "leaves first way": 1,
+          "own births": [
+            4,
+            6,
+            9,
+            13,
+            18,
+            24,
+            31,
+            39,
+            48,
+            58,
+            69,
+            81,
+            94,
+            108,
+            123,
+            139
+          ]
+        },
+        {
+          "sender": "g3:22@0",
+          "d": 6,
+          "loose per link": 3,
+          "rounds": 16,
+          "leaves first way": 3,
+          "own births": [
+            3,
+            4,
+            7,
+            10,
+            17,
+            21,
+            23,
+            27,
+            32,
+            37,
+            42,
+            47,
+            52,
+            57,
+            62,
+            67
+          ]
+        }
+      ],
+      "seconds": 0.08,
+      "peak KiB at end of stage": 183008
+    }
+  },
+  "seconds": 1.843,
+  "peak KiB": 183008
+}

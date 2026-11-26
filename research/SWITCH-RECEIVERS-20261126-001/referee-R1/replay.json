@@ -1,0 +1,1790 @@
+{
+  "address-space limit bytes": 2500000000,
+  "worker processes": 1,
+  "census selection": {
+    "seed": 20261126,
+    "selection": "uniform without replacement among distinct archived sited starts by size",
+    "starts by knot count": {
+      "1": [
+        "n1:g1:3@0"
+      ],
+      "2": [
+        "n2:g3:22@0",
+        "n2:g3:23@0",
+        "n2:g3:23@1",
+        "n2:g3:33@0"
+      ],
+      "3": [
+        "n3:g6:133@1",
+        "n3:g6:322@0",
+        "n3:g6:323@2",
+        "n3:g6:333@1",
+        "n3:g7:122@0"
+      ],
+      "4": [
+        "n4:g15:2121@3",
+        "n4:g15:3230@0",
+        "n4:g17:0121@0",
+        "n4:g18:0113@3",
+        "n4:g18:0133@0"
+      ]
+    },
+    "bench starts, all laws": [
+      "copier",
+      "ring",
+      "source"
+    ],
+    "reported cap-three switch receivers, cap three": [
+      "n3:g7:122@0",
+      "n4:g17:1122@0",
+      "n4:g17:1122@1",
+      "n4:g17:1212@0",
+      "n4:g17:2121@1",
+      "n4:g18:1122@0"
+    ],
+    "unreplayed archive rows": 12540
+  },
+  "archive load seconds": 0.166,
+  "pilot": {
+    "census": {
+      "archive rows checked": 6,
+      "growth runs": 30,
+      "comparisons": {
+        "common rounds": 6,
+        "rounds": 30,
+        "final knots": 30,
+        "own birth counts": 461,
+        "own short counts": 461,
+        "first differs from stub": 30,
+        "common rounds with stub": 30,
+        "sender classes": 6,
+        "first difference among senders": 6,
+        "own short before first difference": 6
+      },
+      "disagreements": [],
+      "findings": [
+        {
+          "A": "n3:g7:122@0",
+          "d": 3,
+          "law": "CAP-3",
+          "rounds compared": 15,
+          "first differs": 7,
+          "classes": [
+            [
+              "g1:3@0",
+              "g6:122@0",
+              "stub"
+            ],
+            [
+              "g3:22@0"
+            ],
+            [
+              "g7:122@0"
+            ]
+          ],
+          "own short before": false,
+          "first by sender versus stub": {
+            "g1:3@0": null,
+            "g3:22@0": 7,
+            "g6:122@0": null,
+            "g7:122@0": 9,
+            "stub": null
+          }
+        }
+      ],
+      "differences hidden by reading only birth counts": [],
+      "run counts by completed rounds": {
+        "12": 3,
+        "13": 2,
+        "15": 1,
+        "16": 24
+      },
+      "wall seconds": 0.41,
+      "slowest seconds per archive row": 0.107,
+      "projection at slowest observed pace, seconds": 40.7
+    },
+    "rule": {
+      "archive rows checked": 4,
+      "growth runs": 17,
+      "comparisons": {
+        "common rounds": 3,
+        "rounds": 15,
+        "final knots": 15,
+        "own birth counts": 193,
+        "own short counts": 193,
+        "first differs from stub": 15,
+        "common rounds with stub": 15,
+        "sender classes": 3,
+        "first difference among senders": 3,
+        "own short before first difference": 3,
+        "mark first heard": 1,
+        "mark common rounds": 1
+      },
+      "disagreements": [],
+      "findings": [
+        {
+          "A": "tri:322@0",
+          "d": 3,
+          "law": "CAP-6",
+          "rounds compared": 11,
+          "first differs": 10,
+          "classes": [
+            [
+              "g1:3@0"
+            ],
+            [
+              "g3:22@0",
+              "g6:122@0",
+              "g7:122@0",
+              "stub"
+            ]
+          ],
+          "own short before": false,
+          "first by sender versus stub": {
+            "g1:3@0": 10,
+            "g3:22@0": null,
+            "g6:122@0": null,
+            "g7:122@0": null,
+            "stub": null
+          }
+        },
+        {
+          "A": "tri:422@0",
+          "d": 3,
+          "law": "CAP-7",
+          "rounds compared": 9,
+          "first differs": 9,
+          "classes": [
+            [
+              "g1:3@0"
+            ],
+            [
+              "g3:22@0",
+              "g6:122@0",
+              "g7:122@0",
+              "stub"
+            ]
+          ],
+          "own short before": false,
+          "first by sender versus stub": {
+            "g1:3@0": 9,
+            "g3:22@0": null,
+            "g6:122@0": null,
+            "g7:122@0": null,
+            "stub": null
+          }
+        },
+        {
+          "A": "tri:522@0",
+          "d": 3,
+          "law": "CAP-8",
+          "rounds compared": 9,
+          "first differs": 9,
+          "classes": [
+            [
+              "g1:3@0"
+            ],
+            [
+              "g3:22@0",
+              "g6:122@0",
+              "g7:122@0",
+              "stub"
+            ]
+          ],
+          "own short before": false,
+          "first by sender versus stub": {
+            "g1:3@0": 9,
+            "g3:22@0": null,
+            "g6:122@0": null,
+            "g7:122@0": null,
+            "stub": null
+          }
+        }
+      ],
+      "differences hidden by reading only birth counts": [],
+      "run counts by completed rounds": {
+        "8": 2,
+        "9": 2,
+        "11": 4,
+        "12": 1,
+        "13": 1,
+        "14": 3,
+        "16": 4
+      },
+      "wall seconds": 2.248,
+      "slowest seconds per archive row": 0.996,
+      "projection at slowest observed pace, seconds": 57.8
+    },
+    "controls": {
+      "archive rows checked": 3,
+      "growth runs": 4,
+      "comparisons": {
+        "mark first heard": 1,
+        "mark common rounds": 1,
+        "rounds": 1,
+        "final knots": 1,
+        "own birth counts": 22,
+        "own short counts": 22,
+        "both ends birth counts": 30,
+        "both ends leaves first way": 2
+      },
+      "disagreements": [],
+      "findings": [],
+      "differences hidden by reading only birth counts": [],
+      "run counts by completed rounds": {
+        "15": 1,
+        "16": 2,
+        "22": 1
+      },
+      "wall seconds": 0.088,
+      "slowest seconds per archive row": 0.039,
+      "projection at slowest observed pace, seconds": 7.7
+    },
+    "senders": {
+      "archive rows checked": 4,
+      "growth runs": 4,
+      "comparisons": {
+        "rounds": 4,
+        "own birth counts": 64,
+        "own short counts": 64,
+        "leaves first way": 4
+      },
+      "disagreements": [],
+      "findings": [],
+      "differences hidden by reading only birth counts": [],
+      "run counts by completed rounds": {
+        "16": 4
+      },
+      "wall seconds": 0.049,
+      "slowest seconds per archive row": 0.013,
+      "projection at slowest observed pace, seconds": 2.5
+    }
+  },
+  "replay": {
+    "census": {
+      "archive rows checked": 380,
+      "growth runs": 1900,
+      "comparisons": {
+        "common rounds": 380,
+        "rounds": 1900,
+        "final knots": 1900,
+        "own birth counts": 28692,
+        "own short counts": 28692,
+        "first differs from stub": 1900,
+        "common rounds with stub": 1900,
+        "sender classes": 380,
+        "first difference among senders": 380,
+        "own short before first difference": 380
+      },
+      "disagreements": [],
+      "findings": [
+        {
+          "A": "n3:g7:122@0",
+          "d": 2,
+          "law": "CAP-3",
+          "rounds compared": 15,
+          "first differs": 5,
+          "classes": [
+            [
+              "g1:3@0",
+              "g6:122@0",
+              "stub"
+            ],
+            [
+              "g3:22@0"
+            ],
+            [
+              "g7:122@0"
+            ]
+          ],
+          "own short before": false,
+          "first by sender versus stub": {
+            "g1:3@0": null,
+            "g3:22@0": 5,
+            "g6:122@0": null,
+            "g7:122@0": 7,
+            "stub": null
+          }
+        },
+        {
+          "A": "n3:g7:122@0",
+          "d": 3,
+          "law": "CAP-3",
+          "rounds compared": 15,
+          "first differs": 7,
+          "classes": [
+            [
+              "g1:3@0",
+              "g6:122@0",
+              "stub"
+            ],
+            [
+              "g3:22@0"
+            ],
+            [
+              "g7:122@0"
+            ]
+          ],
+          "own short before": false,
+          "first by sender versus stub": {
+            "g1:3@0": null,
+            "g3:22@0": 7,
+            "g6:122@0": null,
+            "g7:122@0": 9,
+            "stub": null
+          }
+        },
+        {
+          "A": "n3:g7:122@0",
+          "d": 4,
+          "law": "CAP-3",
+          "rounds compared": 15,
+          "first differs": 9,
+          "classes": [
+            [
+              "g1:3@0",
+              "g6:122@0",
+              "stub"
+            ],
+            [
+              "g3:22@0"
+            ],
+            [
+              "g7:122@0"
+            ]
+          ],
+          "own short before": false,
+          "first by sender versus stub": {
+            "g1:3@0": null,
+            "g3:22@0": 9,
+            "g6:122@0": null,
+            "g7:122@0": 11,
+            "stub": null
+          }
+        },
+        {
+          "A": "n3:g7:122@0",
+          "d": 5,
+          "law": "CAP-3",
+          "rounds compared": 16,
+          "first differs": 11,
+          "classes": [
+            [
+              "g1:3@0",
+              "g6:122@0",
+              "stub"
+            ],
+            [
+              "g3:22@0"
+            ],
+            [
+              "g7:122@0"
+            ]
+          ],
+          "own short before": false,
+          "first by sender versus stub": {
+            "g1:3@0": null,
+            "g3:22@0": 11,
+            "g6:122@0": null,
+            "g7:122@0": 13,
+            "stub": null
+          }
+        },
+        {
+          "A": "n4:g17:1122@0",
+          "d": 2,
+          "law": "CAP-3",
+          "rounds compared": 15,
+          "first differs": 5,
+          "classes": [
+            [
+              "g1:3@0",
+              "g6:122@0",
+              "stub"
+            ],
+            [
+              "g3:22@0"
+            ],
+            [
+              "g7:122@0"
+            ]
+          ],
+          "own short before": false,
+          "first by sender versus stub": {
+            "g1:3@0": null,
+            "g3:22@0": 5,
+            "g6:122@0": null,
+            "g7:122@0": 7,
+            "stub": null
+          }
+        },
+        {
+          "A": "n4:g17:1122@0",
+          "d": 3,
+          "law": "CAP-3",
+          "rounds compared": 15,
+          "first differs": 7,
+          "classes": [
+            [
+              "g1:3@0",
+              "g6:122@0",
+              "stub"
+            ],
+            [
+              "g3:22@0"
+            ],
+            [
+              "g7:122@0"
+            ]
+          ],
+          "own short before": false,
+          "first by sender versus stub": {
+            "g1:3@0": null,
+            "g3:22@0": 7,
+            "g6:122@0": null,
+            "g7:122@0": 9,
+            "stub": null
+          }
+        },
+        {
+          "A": "n4:g17:1122@0",
+          "d": 4,
+          "law": "CAP-3",
+          "rounds compared": 15,
+          "first differs": 9,
+          "classes": [
+            [
+              "g1:3@0",
+              "g6:122@0",
+              "stub"
+            ],
+            [
+              "g3:22@0"
+            ],
+            [
+              "g7:122@0"
+            ]
+          ],
+          "own short before": false,
+          "first by sender versus stub": {
+            "g1:3@0": null,
+            "g3:22@0": 9,
+            "g6:122@0": null,
+            "g7:122@0": 11,
+            "stub": null
+          }
+        },
+        {
+          "A": "n4:g17:1122@0",
+          "d": 5,
+          "law": "CAP-3",
+          "rounds compared": 16,
+          "first differs": 11,
+          "classes": [
+            [
+              "g1:3@0",
+              "g6:122@0",
+              "stub"
+            ],
+            [
+              "g3:22@0"
+            ],
+            [
+              "g7:122@0"
+            ]
+          ],
+          "own short before": false,
+          "first by sender versus stub": {
+            "g1:3@0": null,
+            "g3:22@0": 11,
+            "g6:122@0": null,
+            "g7:122@0": 13,
+            "stub": null
+          }
+        },
+        {
+          "A": "n4:g17:1122@1",
+          "d": 2,
+          "law": "CAP-3",
+          "rounds compared": 15,
+          "first differs": 5,
+          "classes": [
+            [
+              "g1:3@0",
+              "g6:122@0",
+              "stub"
+            ],
+            [
+              "g3:22@0"
+            ],
+            [
+              "g7:122@0"
+            ]
+          ],
+          "own short before": false,
+          "first by sender versus stub": {
+            "g1:3@0": null,
+            "g3:22@0": 5,
+            "g6:122@0": null,
+            "g7:122@0": 7,
+            "stub": null
+          }
+        },
+        {
+          "A": "n4:g17:1122@1",
+          "d": 3,
+          "law": "CAP-3",
+          "rounds compared": 15,
+          "first differs": 7,
+          "classes": [
+            [
+              "g1:3@0",
+              "g6:122@0",
+              "stub"
+            ],
+            [
+              "g3:22@0"
+            ],
+            [
+              "g7:122@0"
+            ]
+          ],
+          "own short before": false,
+          "first by sender versus stub": {
+            "g1:3@0": null,
+            "g3:22@0": 7,
+            "g6:122@0": null,
+            "g7:122@0": 9,
+            "stub": null
+          }
+        },
+        {
+          "A": "n4:g17:1122@1",
+          "d": 4,
+          "law": "CAP-3",
+          "rounds compared": 15,
+          "first differs": 9,
+          "classes": [
+            [
+              "g1:3@0",
+              "g6:122@0",
+              "stub"
+            ],
+            [
+              "g3:22@0"
+            ],
+            [
+              "g7:122@0"
+            ]
+          ],
+          "own short before": false,
+          "first by sender versus stub": {
+            "g1:3@0": null,
+            "g3:22@0": 9,
+            "g6:122@0": null,
+            "g7:122@0": 11,
+            "stub": null
+          }
+        },
+        {
+          "A": "n4:g17:1122@1",
+          "d": 5,
+          "law": "CAP-3",
+          "rounds compared": 16,
+          "first differs": 11,
+          "classes": [
+            [
+              "g1:3@0",
+              "g6:122@0",
+              "stub"
+            ],
+            [
+              "g3:22@0"
+            ],
+            [
+              "g7:122@0"
+            ]
+          ],
+          "own short before": false,
+          "first by sender versus stub": {
+            "g1:3@0": null,
+            "g3:22@0": 11,
+            "g6:122@0": null,
+            "g7:122@0": 13,
+            "stub": null
+          }
+        },
+        {
+          "A": "n4:g17:1212@0",
+          "d": 2,
+          "law": "CAP-3",
+          "rounds compared": 15,
+          "first differs": 5,
+          "classes": [
+            [
+              "g1:3@0",
+              "g6:122@0",
+              "stub"
+            ],
+            [
+              "g3:22@0"
+            ],
+            [
+              "g7:122@0"
+            ]
+          ],
+          "own short before": false,
+          "first by sender versus stub": {
+            "g1:3@0": null,
+            "g3:22@0": 5,
+            "g6:122@0": null,
+            "g7:122@0": 7,
+            "stub": null
+          }
+        },
+        {
+          "A": "n4:g17:1212@0",
+          "d": 3,
+          "law": "CAP-3",
+          "rounds compared": 15,
+          "first differs": 7,
+          "classes": [
+            [
+              "g1:3@0",
+              "g6:122@0",
+              "stub"
+            ],
+            [
+              "g3:22@0"
+            ],
+            [
+              "g7:122@0"
+            ]
+          ],
+          "own short before": false,
+          "first by sender versus stub": {
+            "g1:3@0": null,
+            "g3:22@0": 7,
+            "g6:122@0": null,
+            "g7:122@0": 9,
+            "stub": null
+          }
+        },
+        {
+          "A": "n4:g17:1212@0",
+          "d": 4,
+          "law": "CAP-3",
+          "rounds compared": 15,
+          "first differs": 9,
+          "classes": [
+            [
+              "g1:3@0",
+              "g6:122@0",
+              "stub"
+            ],
+            [
+              "g3:22@0"
+            ],
+            [
+              "g7:122@0"
+            ]
+          ],
+          "own short before": false,
+          "first by sender versus stub": {
+            "g1:3@0": null,
+            "g3:22@0": 9,
+            "g6:122@0": null,
+            "g7:122@0": 11,
+            "stub": null
+          }
+        },
+        {
+          "A": "n4:g17:1212@0",
+          "d": 5,
+          "law": "CAP-3",
+          "rounds compared": 16,
+          "first differs": 11,
+          "classes": [
+            [
+              "g1:3@0",
+              "g6:122@0",
+              "stub"
+            ],
+            [
+              "g3:22@0"
+            ],
+            [
+              "g7:122@0"
+            ]
+          ],
+          "own short before": false,
+          "first by sender versus stub": {
+            "g1:3@0": null,
+            "g3:22@0": 11,
+            "g6:122@0": null,
+            "g7:122@0": 13,
+            "stub": null
+          }
+        },
+        {
+          "A": "n4:g17:2121@1",
+          "d": 2,
+          "law": "CAP-3",
+          "rounds compared": 15,
+          "first differs": 5,
+          "classes": [
+            [
+              "g1:3@0",
+              "g6:122@0",
+              "stub"
+            ],
+            [
+              "g3:22@0"
+            ],
+            [
+              "g7:122@0"
+            ]
+          ],
+          "own short before": false,
+          "first by sender versus stub": {
+            "g1:3@0": null,
+            "g3:22@0": 5,
+            "g6:122@0": null,
+            "g7:122@0": 7,
+            "stub": null
+          }
+        },
+        {
+          "A": "n4:g17:2121@1",
+          "d": 3,
+          "law": "CAP-3",
+          "rounds compared": 15,
+          "first differs": 7,
+          "classes": [
+            [
+              "g1:3@0",
+              "g6:122@0",
+              "stub"
+            ],
+            [
+              "g3:22@0"
+            ],
+            [
+              "g7:122@0"
+            ]
+          ],
+          "own short before": false,
+          "first by sender versus stub": {
+            "g1:3@0": null,
+            "g3:22@0": 7,
+            "g6:122@0": null,
+            "g7:122@0": 9,
+            "stub": null
+          }
+        },
+        {
+          "A": "n4:g17:2121@1",
+          "d": 4,
+          "law": "CAP-3",
+          "rounds compared": 15,
+          "first differs": 9,
+          "classes": [
+            [
+              "g1:3@0",
+              "g6:122@0",
+              "stub"
+            ],
+            [
+              "g3:22@0"
+            ],
+            [
+              "g7:122@0"
+            ]
+          ],
+          "own short before": false,
+          "first by sender versus stub": {
+            "g1:3@0": null,
+            "g3:22@0": 9,
+            "g6:122@0": null,
+            "g7:122@0": 11,
+            "stub": null
+          }
+        },
+        {
+          "A": "n4:g17:2121@1",
+          "d": 5,
+          "law": "CAP-3",
+          "rounds compared": 16,
+          "first differs": 11,
+          "classes": [
+            [
+              "g1:3@0",
+              "g6:122@0",
+              "stub"
+            ],
+            [
+              "g3:22@0"
+            ],
+            [
+              "g7:122@0"
+            ]
+          ],
+          "own short before": false,
+          "first by sender versus stub": {
+            "g1:3@0": null,
+            "g3:22@0": 11,
+            "g6:122@0": null,
+            "g7:122@0": 13,
+            "stub": null
+          }
+        },
+        {
+          "A": "n4:g18:1122@0",
+          "d": 2,
+          "law": "CAP-3",
+          "rounds compared": 15,
+          "first differs": 5,
+          "classes": [
+            [
+              "g1:3@0",
+              "g6:122@0",
+              "stub"
+            ],
+            [
+              "g3:22@0"
+            ],
+            [
+              "g7:122@0"
+            ]
+          ],
+          "own short before": false,
+          "first by sender versus stub": {
+            "g1:3@0": null,
+            "g3:22@0": 5,
+            "g6:122@0": null,
+            "g7:122@0": 7,
+            "stub": null
+          }
+        },
+        {
+          "A": "n4:g18:1122@0",
+          "d": 3,
+          "law": "CAP-3",
+          "rounds compared": 15,
+          "first differs": 7,
+          "classes": [
+            [
+              "g1:3@0",
+              "g6:122@0",
+              "stub"
+            ],
+            [
+              "g3:22@0"
+            ],
+            [
+              "g7:122@0"
+            ]
+          ],
+          "own short before": false,
+          "first by sender versus stub": {
+            "g1:3@0": null,
+            "g3:22@0": 7,
+            "g6:122@0": null,
+            "g7:122@0": 9,
+            "stub": null
+          }
+        },
+        {
+          "A": "n4:g18:1122@0",
+          "d": 4,
+          "law": "CAP-3",
+          "rounds compared": 15,
+          "first differs": 9,
+          "classes": [
+            [
+              "g1:3@0",
+              "g6:122@0",
+              "stub"
+            ],
+            [
+              "g3:22@0"
+            ],
+            [
+              "g7:122@0"
+            ]
+          ],
+          "own short before": false,
+          "first by sender versus stub": {
+            "g1:3@0": null,
+            "g3:22@0": 9,
+            "g6:122@0": null,
+            "g7:122@0": 11,
+            "stub": null
+          }
+        },
+        {
+          "A": "n4:g18:1122@0",
+          "d": 5,
+          "law": "CAP-3",
+          "rounds compared": 16,
+          "first differs": 11,
+          "classes": [
+            [
+              "g1:3@0",
+              "g6:122@0",
+              "stub"
+            ],
+            [
+              "g3:22@0"
+            ],
+            [
+              "g7:122@0"
+            ]
+          ],
+          "own short before": false,
+          "first by sender versus stub": {
+            "g1:3@0": null,
+            "g3:22@0": 11,
+            "g6:122@0": null,
+            "g7:122@0": 13,
+            "stub": null
+          }
+        }
+      ],
+      "differences hidden by reading only birth counts": [],
+      "run counts by completed rounds": {
+        "9": 69,
+        "10": 35,
+        "11": 7,
+        "12": 63,
+        "13": 138,
+        "14": 123,
+        "15": 68,
+        "16": 1397
+      },
+      "wall seconds": 40.642
+    },
+    "rule": {
+      "archive rows checked": 58,
+      "growth runs": 175,
+      "comparisons": {
+        "common rounds": 28,
+        "rounds": 140,
+        "final knots": 140,
+        "own birth counts": 1916,
+        "own short counts": 1916,
+        "first differs from stub": 140,
+        "common rounds with stub": 140,
+        "sender classes": 28,
+        "first difference among senders": 28,
+        "own short before first difference": 28,
+        "mark first heard": 30,
+        "mark common rounds": 30
+      },
+      "disagreements": [],
+      "findings": [
+        {
+          "A": "tri:122@0",
+          "d": 2,
+          "law": "CAP-3",
+          "rounds compared": 15,
+          "first differs": 5,
+          "classes": [
+            [
+              "g1:3@0",
+              "g6:122@0",
+              "stub"
+            ],
+            [
+              "g3:22@0"
+            ],
+            [
+              "g7:122@0"
+            ]
+          ],
+          "own short before": false,
+          "first by sender versus stub": {
+            "g1:3@0": null,
+            "g3:22@0": 5,
+            "g6:122@0": null,
+            "g7:122@0": 7,
+            "stub": null
+          }
+        },
+        {
+          "A": "tri:122@0",
+          "d": 3,
+          "law": "CAP-3",
+          "rounds compared": 15,
+          "first differs": 7,
+          "classes": [
+            [
+              "g1:3@0",
+              "g6:122@0",
+              "stub"
+            ],
+            [
+              "g3:22@0"
+            ],
+            [
+              "g7:122@0"
+            ]
+          ],
+          "own short before": false,
+          "first by sender versus stub": {
+            "g1:3@0": null,
+            "g3:22@0": 7,
+            "g6:122@0": null,
+            "g7:122@0": 9,
+            "stub": null
+          }
+        },
+        {
+          "A": "tri:122@0",
+          "d": 2,
+          "law": "CAP-4",
+          "rounds compared": 16,
+          "first differs": null,
+          "classes": [
+            [
+              "g1:3@0",
+              "g3:22@0",
+              "g6:122@0",
+              "g7:122@0",
+              "stub"
+            ]
+          ],
+          "own short before": null,
+          "first by sender versus stub": {
+            "g1:3@0": null,
+            "g3:22@0": null,
+            "g6:122@0": null,
+            "g7:122@0": null,
+            "stub": null
+          }
+        },
+        {
+          "A": "tri:122@0",
+          "d": 3,
+          "law": "CAP-4",
+          "rounds compared": 16,
+          "first differs": null,
+          "classes": [
+            [
+              "g1:3@0",
+              "g3:22@0",
+              "g6:122@0",
+              "g7:122@0",
+              "stub"
+            ]
+          ],
+          "own short before": null,
+          "first by sender versus stub": {
+            "g1:3@0": null,
+            "g3:22@0": null,
+            "g6:122@0": null,
+            "g7:122@0": null,
+            "stub": null
+          }
+        },
+        {
+          "A": "tri:222@0",
+          "d": 2,
+          "law": "CAP-3",
+          "rounds compared": 16,
+          "first differs": null,
+          "classes": [
+            [
+              "g1:3@0",
+              "g3:22@0",
+              "g6:122@0",
+              "g7:122@0",
+              "stub"
+            ]
+          ],
+          "own short before": null,
+          "first by sender versus stub": {
+            "g1:3@0": null,
+            "g3:22@0": null,
+            "g6:122@0": null,
+            "g7:122@0": null,
+            "stub": null
+          }
+        },
+        {
+          "A": "tri:222@0",
+          "d": 3,
+          "law": "CAP-3",
+          "rounds compared": 16,
+          "first differs": null,
+          "classes": [
+            [
+              "g1:3@0",
+              "g3:22@0",
+              "g6:122@0",
+              "g7:122@0",
+              "stub"
+            ]
+          ],
+          "own short before": null,
+          "first by sender versus stub": {
+            "g1:3@0": null,
+            "g3:22@0": null,
+            "g6:122@0": null,
+            "g7:122@0": null,
+            "stub": null
+          }
+        },
+        {
+          "A": "tri:222@0",
+          "d": 2,
+          "law": "CAP-4",
+          "rounds compared": 12,
+          "first differs": 5,
+          "classes": [
+            [
+              "g1:3@0",
+              "g6:122@0",
+              "stub"
+            ],
+            [
+              "g3:22@0"
+            ],
+            [
+              "g7:122@0"
+            ]
+          ],
+          "own short before": false,
+          "first by sender versus stub": {
+            "g1:3@0": null,
+            "g3:22@0": 5,
+            "g6:122@0": null,
+            "g7:122@0": 7,
+            "stub": null
+          }
+        },
+        {
+          "A": "tri:222@0",
+          "d": 3,
+          "law": "CAP-4",
+          "rounds compared": 12,
+          "first differs": 7,
+          "classes": [
+            [
+              "g1:3@0",
+              "g6:122@0",
+              "stub"
+            ],
+            [
+              "g3:22@0"
+            ],
+            [
+              "g7:122@0"
+            ]
+          ],
+          "own short before": false,
+          "first by sender versus stub": {
+            "g1:3@0": null,
+            "g3:22@0": 7,
+            "g6:122@0": null,
+            "g7:122@0": 9,
+            "stub": null
+          }
+        },
+        {
+          "A": "tri:222@0",
+          "d": 2,
+          "law": "CAP-5",
+          "rounds compared": 15,
+          "first differs": null,
+          "classes": [
+            [
+              "g1:3@0",
+              "g3:22@0",
+              "g6:122@0",
+              "g7:122@0",
+              "stub"
+            ]
+          ],
+          "own short before": null,
+          "first by sender versus stub": {
+            "g1:3@0": null,
+            "g3:22@0": null,
+            "g6:122@0": null,
+            "g7:122@0": null,
+            "stub": null
+          }
+        },
+        {
+          "A": "tri:222@0",
+          "d": 3,
+          "law": "CAP-5",
+          "rounds compared": 16,
+          "first differs": null,
+          "classes": [
+            [
+              "g1:3@0",
+              "g3:22@0",
+              "g6:122@0",
+              "g7:122@0",
+              "stub"
+            ]
+          ],
+          "own short before": null,
+          "first by sender versus stub": {
+            "g1:3@0": null,
+            "g3:22@0": null,
+            "g6:122@0": null,
+            "g7:122@0": null,
+            "stub": null
+          }
+        },
+        {
+          "A": "tri:322@0",
+          "d": 2,
+          "law": "CAP-4",
+          "rounds compared": 14,
+          "first differs": 4,
+          "classes": [
+            [
+              "g1:3@0",
+              "g3:22@0"
+            ],
+            [
+              "g6:122@0",
+              "g7:122@0",
+              "stub"
+            ]
+          ],
+          "own short before": true,
+          "first by sender versus stub": {
+            "g1:3@0": 4,
+            "g3:22@0": 4,
+            "g6:122@0": null,
+            "g7:122@0": null,
+            "stub": null
+          }
+        },
+        {
+          "A": "tri:322@0",
+          "d": 3,
+          "law": "CAP-4",
+          "rounds compared": 14,
+          "first differs": null,
+          "classes": [
+            [
+              "g1:3@0",
+              "g3:22@0",
+              "g6:122@0",
+              "g7:122@0",
+              "stub"
+            ]
+          ],
+          "own short before": null,
+          "first by sender versus stub": {
+            "g1:3@0": null,
+            "g3:22@0": null,
+            "g6:122@0": null,
+            "g7:122@0": null,
+            "stub": null
+          }
+        },
+        {
+          "A": "tri:322@0",
+          "d": 2,
+          "law": "CAP-5",
+          "rounds compared": 10,
+          "first differs": 5,
+          "classes": [
+            [
+              "g1:3@0",
+              "g6:122@0",
+              "stub"
+            ],
+            [
+              "g3:22@0"
+            ],
+            [
+              "g7:122@0"
+            ]
+          ],
+          "own short before": false,
+          "first by sender versus stub": {
+            "g1:3@0": null,
+            "g3:22@0": 5,
+            "g6:122@0": null,
+            "g7:122@0": 7,
+            "stub": null
+          }
+        },
+        {
+          "A": "tri:322@0",
+          "d": 3,
+          "law": "CAP-5",
+          "rounds compared": 11,
+          "first differs": 7,
+          "classes": [
+            [
+              "g1:3@0",
+              "g6:122@0",
+              "stub"
+            ],
+            [
+              "g3:22@0"
+            ],
+            [
+              "g7:122@0"
+            ]
+          ],
+          "own short before": false,
+          "first by sender versus stub": {
+            "g1:3@0": null,
+            "g3:22@0": 7,
+            "g6:122@0": null,
+            "g7:122@0": 9,
+            "stub": null
+          }
+        },
+        {
+          "A": "tri:322@0",
+          "d": 2,
+          "law": "CAP-6",
+          "rounds compared": 10,
+          "first differs": 7,
+          "classes": [
+            [
+              "g1:3@0"
+            ],
+            [
+              "g3:22@0",
+              "g6:122@0",
+              "g7:122@0",
+              "stub"
+            ]
+          ],
+          "own short before": false,
+          "first by sender versus stub": {
+            "g1:3@0": 7,
+            "g3:22@0": null,
+            "g6:122@0": null,
+            "g7:122@0": null,
+            "stub": null
+          }
+        },
+        {
+          "A": "tri:322@0",
+          "d": 3,
+          "law": "CAP-6",
+          "rounds compared": 11,
+          "first differs": 10,
+          "classes": [
+            [
+              "g1:3@0"
+            ],
+            [
+              "g3:22@0",
+              "g6:122@0",
+              "g7:122@0",
+              "stub"
+            ]
+          ],
+          "own short before": false,
+          "first by sender versus stub": {
+            "g1:3@0": 10,
+            "g3:22@0": null,
+            "g6:122@0": null,
+            "g7:122@0": null,
+            "stub": null
+          }
+        },
+        {
+          "A": "tri:422@0",
+          "d": 2,
+          "law": "CAP-5",
+          "rounds compared": 10,
+          "first differs": 4,
+          "classes": [
+            [
+              "g1:3@0",
+              "g3:22@0"
+            ],
+            [
+              "g6:122@0",
+              "stub"
+            ],
+            [
+              "g7:122@0"
+            ]
+          ],
+          "own short before": true,
+          "first by sender versus stub": {
+            "g1:3@0": 4,
+            "g3:22@0": 4,
+            "g6:122@0": null,
+            "g7:122@0": 6,
+            "stub": null
+          }
+        },
+        {
+          "A": "tri:422@0",
+          "d": 3,
+          "law": "CAP-5",
+          "rounds compared": 10,
+          "first differs": 6,
+          "classes": [
+            [
+              "g1:3@0",
+              "g3:22@0"
+            ],
+            [
+              "g6:122@0",
+              "g7:122@0",
+              "stub"
+            ]
+          ],
+          "own short before": true,
+          "first by sender versus stub": {
+            "g1:3@0": 6,
+            "g3:22@0": 6,
+            "g6:122@0": null,
+            "g7:122@0": null,
+            "stub": null
+          }
+        },
+        {
+          "A": "tri:422@0",
+          "d": 2,
+          "law": "CAP-6",
+          "rounds compared": 8,
+          "first differs": 5,
+          "classes": [
+            [
+              "g1:3@0",
+              "g6:122@0",
+              "stub"
+            ],
+            [
+              "g3:22@0"
+            ],
+            [
+              "g7:122@0"
+            ]
+          ],
+          "own short before": false,
+          "first by sender versus stub": {
+            "g1:3@0": null,
+            "g3:22@0": 5,
+            "g6:122@0": null,
+            "g7:122@0": 7,
+            "stub": null
+          }
+        },
+        {
+          "A": "tri:422@0",
+          "d": 3,
+          "law": "CAP-6",
+          "rounds compared": 9,
+          "first differs": 7,
+          "classes": [
+            [
+              "g1:3@0",
+              "g6:122@0",
+              "stub"
+            ],
+            [
+              "g3:22@0"
+            ],
+            [
+              "g7:122@0"
+            ]
+          ],
+          "own short before": false,
+          "first by sender versus stub": {
+            "g1:3@0": null,
+            "g3:22@0": 7,
+            "g6:122@0": null,
+            "g7:122@0": 9,
+            "stub": null
+          }
+        },
+        {
+          "A": "tri:422@0",
+          "d": 2,
+          "law": "CAP-7",
+          "rounds compared": 8,
+          "first differs": 6,
+          "classes": [
+            [
+              "g1:3@0"
+            ],
+            [
+              "g3:22@0",
+              "g6:122@0",
+              "g7:122@0",
+              "stub"
+            ]
+          ],
+          "own short before": false,
+          "first by sender versus stub": {
+            "g1:3@0": 6,
+            "g3:22@0": null,
+            "g6:122@0": null,
+            "g7:122@0": null,
+            "stub": null
+          }
+        },
+        {
+          "A": "tri:422@0",
+          "d": 3,
+          "law": "CAP-7",
+          "rounds compared": 9,
+          "first differs": 9,
+          "classes": [
+            [
+              "g1:3@0"
+            ],
+            [
+              "g3:22@0",
+              "g6:122@0",
+              "g7:122@0",
+              "stub"
+            ]
+          ],
+          "own short before": false,
+          "first by sender versus stub": {
+            "g1:3@0": 9,
+            "g3:22@0": null,
+            "g6:122@0": null,
+            "g7:122@0": null,
+            "stub": null
+          }
+        },
+        {
+          "A": "tri:522@0",
+          "d": 2,
+          "law": "CAP-6",
+          "rounds compared": 8,
+          "first differs": 4,
+          "classes": [
+            [
+              "g1:3@0",
+              "g3:22@0"
+            ],
+            [
+              "g6:122@0",
+              "stub"
+            ],
+            [
+              "g7:122@0"
+            ]
+          ],
+          "own short before": true,
+          "first by sender versus stub": {
+            "g1:3@0": 4,
+            "g3:22@0": 4,
+            "g6:122@0": null,
+            "g7:122@0": 6,
+            "stub": null
+          }
+        },
+        {
+          "A": "tri:522@0",
+          "d": 3,
+          "law": "CAP-6",
+          "rounds compared": 8,
+          "first differs": 6,
+          "classes": [
+            [
+              "g1:3@0",
+              "g3:22@0"
+            ],
+            [
+              "g6:122@0",
+              "stub"
+            ],
+            [
+              "g7:122@0"
+            ]
+          ],
+          "own short before": true,
+          "first by sender versus stub": {
+            "g1:3@0": 6,
+            "g3:22@0": 6,
+            "g6:122@0": null,
+            "g7:122@0": 8,
+            "stub": null
+          }
+        },
+        {
+          "A": "tri:522@0",
+          "d": 2,
+          "law": "CAP-7",
+          "rounds compared": 8,
+          "first differs": 5,
+          "classes": [
+            [
+              "g1:3@0",
+              "g6:122@0",
+              "stub"
+            ],
+            [
+              "g3:22@0"
+            ],
+            [
+              "g7:122@0"
+            ]
+          ],
+          "own short before": false,
+          "first by sender versus stub": {
+            "g1:3@0": null,
+            "g3:22@0": 5,
+            "g6:122@0": null,
+            "g7:122@0": 7,
+            "stub": null
+          }
+        },
+        {
+          "A": "tri:522@0",
+          "d": 3,
+          "law": "CAP-7",
+          "rounds compared": 8,
+          "first differs": 7,
+          "classes": [
+            [
+              "g1:3@0",
+              "g6:122@0",
+              "g7:122@0",
+              "stub"
+            ],
+            [
+              "g3:22@0"
+            ]
+          ],
+          "own short before": false,
+          "first by sender versus stub": {
+            "g1:3@0": null,
+            "g3:22@0": 7,
+            "g6:122@0": null,
+            "g7:122@0": 9,
+            "stub": null
+          }
+        },
+        {
+          "A": "tri:522@0",
+          "d": 2,
+          "law": "CAP-8",
+          "rounds compared": 8,
+          "first differs": 6,
+          "classes": [
+            [
+              "g1:3@0"
+            ],
+            [
+              "g3:22@0",
+              "g6:122@0",
+              "g7:122@0",
+              "stub"
+            ]
+          ],
+          "own short before": false,
+          "first by sender versus stub": {
+            "g1:3@0": 6,
+            "g3:22@0": null,
+            "g6:122@0": null,
+            "g7:122@0": null,
+            "stub": null
+          }
+        },
+        {
+          "A": "tri:522@0",
+          "d": 3,
+          "law": "CAP-8",
+          "rounds compared": 9,
+          "first differs": 9,
+          "classes": [
+            [
+              "g1:3@0"
+            ],
+            [
+              "g3:22@0",
+              "g6:122@0",
+              "g7:122@0",
+              "stub"
+            ]
+          ],
+          "own short before": false,
+          "first by sender versus stub": {
+            "g1:3@0": 9,
+            "g3:22@0": null,
+            "g6:122@0": null,
+            "g7:122@0": null,
+            "stub": null
+          }
+        }
+      ],
+      "differences hidden by reading only birth counts": [],
+      "run counts by completed rounds": {
+        "8": 15,
+        "9": 10,
+        "10": 12,
+        "11": 16,
+        "12": 8,
+        "13": 12,
+        "14": 14,
+        "15": 6,
+        "16": 82
+      },
+      "wall seconds": 11.915
+    },
+    "controls": {
+      "archive rows checked": 198,
+      "growth runs": 216,
+      "comparisons": {
+        "mark first heard": 162,
+        "mark common rounds": 162,
+        "rounds": 30,
+        "final knots": 30,
+        "own birth counts": 636,
+        "own short counts": 636,
+        "both ends birth counts": 180,
+        "both ends leaves first way": 12
+      },
+      "disagreements": [],
+      "findings": [],
+      "differences hidden by reading only birth counts": [],
+      "run counts by completed rounds": {
+        "15": 6,
+        "16": 180,
+        "18": 6,
+        "22": 24
+      },
+      "wall seconds": 3.338
+    },
+    "senders": {
+      "archive rows checked": 192,
+      "growth runs": 192,
+      "comparisons": {
+        "rounds": 192,
+        "own birth counts": 2944,
+        "own short counts": 2944,
+        "leaves first way": 192
+      },
+      "disagreements": [],
+      "findings": [],
+      "differences hidden by reading only birth counts": [],
+      "run counts by completed rounds": {
+        "9": 4,
+        "10": 1,
+        "11": 5,
+        "12": 6,
+        "13": 1,
+        "14": 17,
+        "15": 8,
+        "16": 150
+      },
+      "wall seconds": 4.853
+    }
+  },
+  "peak resident kibibytes": 88016,
+  "total wall seconds": 63.709
+}

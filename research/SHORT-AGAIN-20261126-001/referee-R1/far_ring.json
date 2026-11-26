@@ -1,0 +1,1637 @@
+{
+  "far": {
+    "cells": 96,
+    "changes": 1200,
+    "endpoint_reasons": {
+      "knots": 32,
+      "rounds": 64
+    },
+    "unchanged_common_rounds": {
+      "7": 2,
+      "8": 30,
+      "16": 64
+    },
+    "frozen_cells": [
+      {
+        "steps": 1,
+        "law": "JOIN-FEWER",
+        "initial_knots": 15,
+        "round_one_births": 17,
+        "round_two_through_sixteen_short": 17,
+        "final_knots": 32
+      },
+      {
+        "steps": 1,
+        "law": "BUSY-FEWER",
+        "initial_knots": 15,
+        "round_one_births": 17,
+        "round_two_through_sixteen_short": 17,
+        "final_knots": 32
+      },
+      {
+        "steps": 1,
+        "law": "ONE-FEWER",
+        "initial_knots": 15,
+        "round_one_births": 17,
+        "round_two_through_sixteen_short": 17,
+        "final_knots": 32
+      },
+      {
+        "steps": 2,
+        "law": "JOIN-FEWER",
+        "initial_knots": 17,
+        "round_one_births": 18,
+        "round_two_through_sixteen_short": 18,
+        "final_knots": 35
+      },
+      {
+        "steps": 2,
+        "law": "BUSY-FEWER",
+        "initial_knots": 17,
+        "round_one_births": 18,
+        "round_two_through_sixteen_short": 18,
+        "final_knots": 35
+      },
+      {
+        "steps": 2,
+        "law": "ONE-FEWER",
+        "initial_knots": 17,
+        "round_one_births": 18,
+        "round_two_through_sixteen_short": 18,
+        "final_knots": 35
+      },
+      {
+        "steps": 3,
+        "law": "JOIN-FEWER",
+        "initial_knots": 19,
+        "round_one_births": 19,
+        "round_two_through_sixteen_short": 19,
+        "final_knots": 38
+      },
+      {
+        "steps": 3,
+        "law": "ONE-FEWER",
+        "initial_knots": 19,
+        "round_one_births": 19,
+        "round_two_through_sixteen_short": 19,
+        "final_knots": 38
+      },
+      {
+        "steps": 4,
+        "law": "JOIN-FEWER",
+        "initial_knots": 21,
+        "round_one_births": 20,
+        "round_two_through_sixteen_short": 20,
+        "final_knots": 41
+      },
+      {
+        "steps": 4,
+        "law": "ONE-FEWER",
+        "initial_knots": 21,
+        "round_one_births": 20,
+        "round_two_through_sixteen_short": 20,
+        "final_knots": 41
+      },
+      {
+        "steps": 5,
+        "law": "JOIN-FEWER",
+        "initial_knots": 23,
+        "round_one_births": 21,
+        "round_two_through_sixteen_short": 21,
+        "final_knots": 44
+      },
+      {
+        "steps": 5,
+        "law": "ONE-FEWER",
+        "initial_knots": 23,
+        "round_one_births": 21,
+        "round_two_through_sixteen_short": 21,
+        "final_knots": 44
+      },
+      {
+        "steps": 6,
+        "law": "JOIN-FEWER",
+        "initial_knots": 25,
+        "round_one_births": 22,
+        "round_two_through_sixteen_short": 22,
+        "final_knots": 47
+      },
+      {
+        "steps": 6,
+        "law": "ONE-FEWER",
+        "initial_knots": 25,
+        "round_one_births": 22,
+        "round_two_through_sixteen_short": 22,
+        "final_knots": 47
+      },
+      {
+        "steps": 7,
+        "law": "JOIN-FEWER",
+        "initial_knots": 27,
+        "round_one_births": 23,
+        "round_two_through_sixteen_short": 23,
+        "final_knots": 50
+      },
+      {
+        "steps": 7,
+        "law": "ONE-FEWER",
+        "initial_knots": 27,
+        "round_one_births": 23,
+        "round_two_through_sixteen_short": 23,
+        "final_knots": 50
+      },
+      {
+        "steps": 8,
+        "law": "JOIN-FEWER",
+        "initial_knots": 29,
+        "round_one_births": 24,
+        "round_two_through_sixteen_short": 24,
+        "final_knots": 53
+      },
+      {
+        "steps": 8,
+        "law": "ONE-FEWER",
+        "initial_knots": 29,
+        "round_one_births": 24,
+        "round_two_through_sixteen_short": 24,
+        "final_knots": 53
+      }
+    ],
+    "hearing_counts": {
+      "ORD/CANCEL-WAIT": 1,
+      "ORD/CANCEL-RETIRE": 1,
+      "JOIN-FEWER/CANCEL-WAIT": 98,
+      "JOIN-FEWER/CANCEL-RETIRE": 1,
+      "BUSY-FEWER/CANCEL-WAIT": 25,
+      "BUSY-FEWER/CANCEL-RETIRE": 1,
+      "ONE-FEWER/CANCEL-WAIT": 52,
+      "ONE-FEWER/CANCEL-RETIRE": 1,
+      "ODD-FEWER/CANCEL-WAIT": 10,
+      "ODD-FEWER/CANCEL-RETIRE": 9,
+      "THIRD-FEWER/CANCEL-WAIT": 18,
+      "THIRD-FEWER/CANCEL-RETIRE": 10
+    },
+    "retiring_hearings": {
+      "ORD/CANCEL-RETIRE": [
+        [
+          1,
+          "less",
+          1,
+          8
+        ]
+      ],
+      "JOIN-FEWER/CANCEL-RETIRE": [
+        [
+          1,
+          "less",
+          1,
+          16
+        ]
+      ],
+      "BUSY-FEWER/CANCEL-RETIRE": [
+        [
+          1,
+          "less",
+          1,
+          16
+        ]
+      ],
+      "ONE-FEWER/CANCEL-RETIRE": [
+        [
+          1,
+          "less",
+          1,
+          16
+        ]
+      ],
+      "ODD-FEWER/CANCEL-RETIRE": [
+        [
+          1,
+          "B0",
+          2,
+          16
+        ],
+        [
+          1,
+          "less",
+          1,
+          12
+        ],
+        [
+          2,
+          "L1",
+          2,
+          16
+        ],
+        [
+          3,
+          "L1",
+          2,
+          16
+        ],
+        [
+          4,
+          "L1",
+          2,
+          16
+        ],
+        [
+          5,
+          "L1",
+          2,
+          16
+        ],
+        [
+          6,
+          "L1",
+          2,
+          16
+        ],
+        [
+          7,
+          "L1",
+          2,
+          16
+        ],
+        [
+          8,
+          "L1",
+          2,
+          16
+        ]
+      ],
+      "THIRD-FEWER/CANCEL-RETIRE": [
+        [
+          1,
+          "B0",
+          3,
+          6
+        ],
+        [
+          1,
+          "two",
+          2,
+          6
+        ],
+        [
+          1,
+          "less",
+          1,
+          7
+        ],
+        [
+          2,
+          "L1",
+          2,
+          8
+        ],
+        [
+          3,
+          "L1",
+          2,
+          8
+        ],
+        [
+          4,
+          "L1",
+          2,
+          8
+        ],
+        [
+          5,
+          "L1",
+          2,
+          8
+        ],
+        [
+          6,
+          "L1",
+          2,
+          8
+        ],
+        [
+          7,
+          "L1",
+          2,
+          8
+        ],
+        [
+          8,
+          "L1",
+          2,
+          8
+        ]
+      ]
+    },
+    "busy_waiting_hearings": [
+      [
+        1,
+        "B0",
+        4,
+        9
+      ],
+      [
+        1,
+        "B1",
+        4,
+        13
+      ],
+      [
+        1,
+        "B2",
+        5,
+        13
+      ],
+      [
+        1,
+        "B3",
+        5,
+        13
+      ],
+      [
+        1,
+        "B4",
+        5,
+        12
+      ],
+      [
+        1,
+        "B5",
+        6,
+        16
+      ],
+      [
+        1,
+        "B6",
+        6,
+        16
+      ],
+      [
+        1,
+        "two",
+        4,
+        8
+      ],
+      [
+        1,
+        "less",
+        1,
+        16
+      ],
+      [
+        2,
+        "B0",
+        5,
+        11
+      ],
+      [
+        2,
+        "B1",
+        5,
+        13
+      ],
+      [
+        2,
+        "B2",
+        6,
+        16
+      ],
+      [
+        2,
+        "B3",
+        6,
+        16
+      ],
+      [
+        2,
+        "B4",
+        6,
+        15
+      ],
+      [
+        2,
+        "B5",
+        7,
+        16
+      ],
+      [
+        2,
+        "B6",
+        7,
+        16
+      ],
+      [
+        2,
+        "L1",
+        4,
+        16
+      ],
+      [
+        2,
+        "two",
+        5,
+        9
+      ],
+      [
+        2,
+        "less",
+        4,
+        16
+      ],
+      [
+        3,
+        "L2",
+        4,
+        16
+      ],
+      [
+        4,
+        "L2",
+        4,
+        16
+      ],
+      [
+        5,
+        "L2",
+        4,
+        16
+      ],
+      [
+        6,
+        "L2",
+        4,
+        16
+      ],
+      [
+        7,
+        "L2",
+        4,
+        16
+      ],
+      [
+        8,
+        "L2",
+        4,
+        16
+      ]
+    ],
+    "changed_total_knots_saved": false
+  },
+  "ring": {
+    "starts": 80,
+    "conditions": {
+      "CAP-3/meeting": {
+        "starts": 8,
+        "first_marks": 255,
+        "heard_first_marks": 0,
+        "second_or_third_marks": 0
+      },
+      "REC-ONE-FEWER/meeting": {
+        "starts": 8,
+        "first_marks": 240,
+        "heard_first_marks": 0,
+        "second_or_third_marks": 0
+      },
+      "ONE-FEWER/meeting": {
+        "starts": 8,
+        "first_marks": 240,
+        "heard_first_marks": 0,
+        "second_or_third_marks": 0
+      },
+      "JOIN-FEWER/meeting": {
+        "starts": 8,
+        "first_marks": 200,
+        "heard_first_marks": 0,
+        "second_or_third_marks": 0
+      },
+      "ORD/meeting": {
+        "starts": 8,
+        "first_marks": 120,
+        "heard_first_marks": 0,
+        "second_or_third_marks": 0
+      },
+      "CAP-3/share": {
+        "starts": 8,
+        "first_marks": 345,
+        "heard_first_marks": 0,
+        "second_or_third_marks": 0
+      },
+      "REC-ONE-FEWER/share": {
+        "starts": 8,
+        "first_marks": 200,
+        "heard_first_marks": 1,
+        "second_or_third_marks": 5
+      },
+      "ONE-FEWER/share": {
+        "starts": 8,
+        "first_marks": 200,
+        "heard_first_marks": 1,
+        "second_or_third_marks": 5
+      },
+      "JOIN-FEWER/share": {
+        "starts": 8,
+        "first_marks": 165,
+        "heard_first_marks": 0,
+        "second_or_third_marks": 0
+      },
+      "ORD/share": {
+        "starts": 8,
+        "first_marks": 160,
+        "heard_first_marks": 0,
+        "second_or_third_marks": 0
+      }
+    },
+    "returning_starts": [
+      {
+        "steps": 1,
+        "law": "CAP-3",
+        "join": "meeting",
+        "returns": [
+          [
+            3,
+            5,
+            10
+          ],
+          [
+            4,
+            6,
+            5
+          ],
+          [
+            5,
+            7,
+            10
+          ],
+          [
+            6,
+            8,
+            5
+          ],
+          [
+            7,
+            9,
+            10
+          ],
+          [
+            8,
+            10,
+            5
+          ],
+          [
+            9,
+            11,
+            10
+          ],
+          [
+            10,
+            12,
+            5
+          ],
+          [
+            11,
+            13,
+            10
+          ],
+          [
+            12,
+            14,
+            5
+          ],
+          [
+            13,
+            15,
+            10
+          ]
+        ],
+        "marks": 45
+      },
+      {
+        "steps": 2,
+        "law": "CAP-3",
+        "join": "share",
+        "returns": [
+          [
+            3,
+            5,
+            10
+          ],
+          [
+            4,
+            6,
+            5
+          ],
+          [
+            5,
+            7,
+            10
+          ],
+          [
+            6,
+            8,
+            5
+          ],
+          [
+            7,
+            9,
+            10
+          ],
+          [
+            8,
+            10,
+            5
+          ],
+          [
+            9,
+            11,
+            10
+          ],
+          [
+            10,
+            12,
+            5
+          ],
+          [
+            11,
+            13,
+            10
+          ],
+          [
+            12,
+            14,
+            5
+          ],
+          [
+            13,
+            15,
+            10
+          ],
+          [
+            14,
+            16,
+            5
+          ]
+        ],
+        "marks": 45
+      },
+      {
+        "steps": 3,
+        "law": "CAP-3",
+        "join": "share",
+        "returns": [
+          [
+            3,
+            5,
+            10
+          ],
+          [
+            4,
+            6,
+            5
+          ],
+          [
+            5,
+            7,
+            10
+          ],
+          [
+            6,
+            8,
+            5
+          ],
+          [
+            7,
+            9,
+            10
+          ],
+          [
+            8,
+            10,
+            5
+          ],
+          [
+            9,
+            11,
+            10
+          ],
+          [
+            10,
+            12,
+            5
+          ],
+          [
+            11,
+            13,
+            10
+          ],
+          [
+            12,
+            14,
+            5
+          ],
+          [
+            13,
+            15,
+            10
+          ]
+        ],
+        "marks": 45
+      },
+      {
+        "steps": 4,
+        "law": "CAP-3",
+        "join": "share",
+        "returns": [
+          [
+            3,
+            5,
+            10
+          ],
+          [
+            4,
+            6,
+            5
+          ],
+          [
+            5,
+            7,
+            10
+          ],
+          [
+            6,
+            8,
+            5
+          ],
+          [
+            7,
+            9,
+            10
+          ],
+          [
+            8,
+            10,
+            5
+          ],
+          [
+            9,
+            11,
+            10
+          ],
+          [
+            10,
+            12,
+            5
+          ],
+          [
+            11,
+            13,
+            10
+          ],
+          [
+            12,
+            14,
+            5
+          ],
+          [
+            13,
+            15,
+            10
+          ],
+          [
+            14,
+            16,
+            5
+          ]
+        ],
+        "marks": 45
+      },
+      {
+        "steps": 5,
+        "law": "CAP-3",
+        "join": "share",
+        "returns": [
+          [
+            3,
+            5,
+            10
+          ],
+          [
+            4,
+            6,
+            5
+          ],
+          [
+            5,
+            7,
+            10
+          ],
+          [
+            6,
+            8,
+            5
+          ],
+          [
+            7,
+            9,
+            10
+          ],
+          [
+            8,
+            10,
+            5
+          ],
+          [
+            9,
+            11,
+            10
+          ],
+          [
+            10,
+            12,
+            5
+          ],
+          [
+            11,
+            13,
+            10
+          ],
+          [
+            12,
+            14,
+            5
+          ],
+          [
+            13,
+            15,
+            10
+          ],
+          [
+            14,
+            16,
+            5
+          ]
+        ],
+        "marks": 45
+      },
+      {
+        "steps": 6,
+        "law": "CAP-3",
+        "join": "share",
+        "returns": [
+          [
+            3,
+            5,
+            10
+          ],
+          [
+            4,
+            6,
+            5
+          ],
+          [
+            5,
+            7,
+            10
+          ],
+          [
+            6,
+            8,
+            5
+          ],
+          [
+            7,
+            9,
+            10
+          ],
+          [
+            8,
+            10,
+            5
+          ],
+          [
+            9,
+            11,
+            10
+          ],
+          [
+            10,
+            12,
+            5
+          ],
+          [
+            11,
+            13,
+            10
+          ],
+          [
+            12,
+            14,
+            5
+          ],
+          [
+            13,
+            15,
+            10
+          ]
+        ],
+        "marks": 45
+      },
+      {
+        "steps": 7,
+        "law": "CAP-3",
+        "join": "share",
+        "returns": [
+          [
+            3,
+            5,
+            10
+          ],
+          [
+            4,
+            6,
+            5
+          ],
+          [
+            5,
+            7,
+            10
+          ],
+          [
+            6,
+            8,
+            5
+          ],
+          [
+            7,
+            9,
+            10
+          ],
+          [
+            8,
+            10,
+            5
+          ],
+          [
+            9,
+            11,
+            10
+          ],
+          [
+            10,
+            12,
+            5
+          ],
+          [
+            11,
+            13,
+            10
+          ],
+          [
+            12,
+            14,
+            5
+          ],
+          [
+            13,
+            15,
+            10
+          ]
+        ],
+        "marks": 45
+      },
+      {
+        "steps": 8,
+        "law": "CAP-3",
+        "join": "share",
+        "returns": [
+          [
+            3,
+            5,
+            10
+          ],
+          [
+            4,
+            6,
+            5
+          ],
+          [
+            5,
+            7,
+            10
+          ],
+          [
+            6,
+            8,
+            5
+          ],
+          [
+            7,
+            9,
+            10
+          ],
+          [
+            8,
+            10,
+            5
+          ],
+          [
+            9,
+            11,
+            10
+          ],
+          [
+            10,
+            12,
+            5
+          ],
+          [
+            11,
+            13,
+            10
+          ],
+          [
+            12,
+            14,
+            5
+          ],
+          [
+            13,
+            15,
+            10
+          ]
+        ],
+        "marks": 45
+      }
+    ],
+    "first_mark_hearings": [
+      [
+        1,
+        "REC-ONE-FEWER",
+        "share",
+        2,
+        24,
+        4,
+        12
+      ],
+      [
+        1,
+        "ONE-FEWER",
+        "share",
+        2,
+        24,
+        4,
+        12
+      ]
+    ],
+    "mark_totals": {
+      "one_step": {
+        "first_marks": 270,
+        "first_heard": 2,
+        "second_or_third_marks": 10,
+        "second_or_third_heard": 0,
+        "rounds_read_after_first_marks": {
+          "1": 25,
+          "2": 15,
+          "3": 28,
+          "4": 17,
+          "5": 36,
+          "6": 30,
+          "7": 31,
+          "8": 31,
+          "9": 19,
+          "10": 20,
+          "11": 10,
+          "12": 3,
+          "13": 3,
+          "14": 2
+        }
+      },
+      "two_to_eight_steps": {
+        "first_marks": 1855,
+        "first_heard": 0,
+        "second_or_third_marks": 0,
+        "second_or_third_heard": 0,
+        "rounds_read_after_first_marks": {
+          "1": 110,
+          "2": 190,
+          "3": 125,
+          "4": 190,
+          "5": 149,
+          "6": 297,
+          "7": 132,
+          "8": 211,
+          "9": 169,
+          "10": 130,
+          "11": 117,
+          "12": 22,
+          "13": 13
+        }
+      }
+    },
+    "meeting_restart_comparisons": [
+      {
+        "steps": 2,
+        "law": "REC-ONE-FEWER",
+        "ring_restart": 6,
+        "stub_restart": 4,
+        "ring_end": 13,
+        "stub_end": 16,
+        "equal_counts_from_restart": [
+          8,
+          11,
+          15,
+          17,
+          24,
+          41,
+          58,
+          99
+        ]
+      },
+      {
+        "steps": 3,
+        "law": "REC-ONE-FEWER",
+        "ring_restart": 7,
+        "stub_restart": 5,
+        "ring_end": 13,
+        "stub_end": 16,
+        "equal_counts_from_restart": [
+          8,
+          11,
+          15,
+          17,
+          24,
+          41,
+          58
+        ]
+      },
+      {
+        "steps": 4,
+        "law": "REC-ONE-FEWER",
+        "ring_restart": 8,
+        "stub_restart": 6,
+        "ring_end": 13,
+        "stub_end": 16,
+        "equal_counts_from_restart": [
+          8,
+          11,
+          15,
+          17,
+          24,
+          41
+        ]
+      },
+      {
+        "steps": 5,
+        "law": "REC-ONE-FEWER",
+        "ring_restart": 9,
+        "stub_restart": 7,
+        "ring_end": 13,
+        "stub_end": 16,
+        "equal_counts_from_restart": [
+          8,
+          11,
+          15,
+          17,
+          24
+        ]
+      },
+      {
+        "steps": 6,
+        "law": "REC-ONE-FEWER",
+        "ring_restart": 10,
+        "stub_restart": 8,
+        "ring_end": 13,
+        "stub_end": 16,
+        "equal_counts_from_restart": [
+          8,
+          11,
+          15,
+          17
+        ]
+      },
+      {
+        "steps": 7,
+        "law": "REC-ONE-FEWER",
+        "ring_restart": 11,
+        "stub_restart": 9,
+        "ring_end": 13,
+        "stub_end": 16,
+        "equal_counts_from_restart": [
+          8,
+          11,
+          15
+        ]
+      },
+      {
+        "steps": 8,
+        "law": "REC-ONE-FEWER",
+        "ring_restart": 12,
+        "stub_restart": 10,
+        "ring_end": 13,
+        "stub_end": 16,
+        "equal_counts_from_restart": [
+          8,
+          11
+        ]
+      },
+      {
+        "steps": 2,
+        "law": "ONE-FEWER",
+        "ring_restart": 6,
+        "stub_restart": 4,
+        "ring_end": 13,
+        "stub_end": 16,
+        "equal_counts_from_restart": [
+          8,
+          11,
+          15,
+          17,
+          24,
+          41,
+          58,
+          99
+        ]
+      },
+      {
+        "steps": 3,
+        "law": "ONE-FEWER",
+        "ring_restart": 7,
+        "stub_restart": 5,
+        "ring_end": 13,
+        "stub_end": 16,
+        "equal_counts_from_restart": [
+          8,
+          11,
+          15,
+          17,
+          24,
+          41,
+          58
+        ]
+      },
+      {
+        "steps": 4,
+        "law": "ONE-FEWER",
+        "ring_restart": 8,
+        "stub_restart": 6,
+        "ring_end": 13,
+        "stub_end": 16,
+        "equal_counts_from_restart": [
+          8,
+          11,
+          15,
+          17,
+          24,
+          41
+        ]
+      },
+      {
+        "steps": 5,
+        "law": "ONE-FEWER",
+        "ring_restart": 9,
+        "stub_restart": 7,
+        "ring_end": 13,
+        "stub_end": 16,
+        "equal_counts_from_restart": [
+          8,
+          11,
+          15,
+          17,
+          24
+        ]
+      },
+      {
+        "steps": 6,
+        "law": "ONE-FEWER",
+        "ring_restart": 10,
+        "stub_restart": 8,
+        "ring_end": 13,
+        "stub_end": 16,
+        "equal_counts_from_restart": [
+          8,
+          11,
+          15,
+          17
+        ]
+      },
+      {
+        "steps": 7,
+        "law": "ONE-FEWER",
+        "ring_restart": 11,
+        "stub_restart": 9,
+        "ring_end": 13,
+        "stub_end": 16,
+        "equal_counts_from_restart": [
+          8,
+          11,
+          15
+        ]
+      },
+      {
+        "steps": 8,
+        "law": "ONE-FEWER",
+        "ring_restart": 12,
+        "stub_restart": 10,
+        "ring_end": 13,
+        "stub_end": 16,
+        "equal_counts_from_restart": [
+          8,
+          11
+        ]
+      },
+      {
+        "steps": 2,
+        "law": "JOIN-FEWER",
+        "ring_restart": 5,
+        "stub_restart": 4,
+        "ring_end": 12,
+        "stub_end": 15,
+        "equal_counts_from_restart": [
+          8,
+          16,
+          21,
+          37,
+          54,
+          91,
+          119,
+          196
+        ]
+      },
+      {
+        "steps": 3,
+        "law": "JOIN-FEWER",
+        "ring_restart": 6,
+        "stub_restart": 5,
+        "ring_end": 12,
+        "stub_end": 15,
+        "equal_counts_from_restart": [
+          8,
+          16,
+          21,
+          37,
+          54,
+          91,
+          119
+        ]
+      },
+      {
+        "steps": 4,
+        "law": "JOIN-FEWER",
+        "ring_restart": 7,
+        "stub_restart": 6,
+        "ring_end": 12,
+        "stub_end": 15,
+        "equal_counts_from_restart": [
+          8,
+          16,
+          21,
+          37,
+          54,
+          91
+        ]
+      },
+      {
+        "steps": 5,
+        "law": "JOIN-FEWER",
+        "ring_restart": 8,
+        "stub_restart": 7,
+        "ring_end": 12,
+        "stub_end": 15,
+        "equal_counts_from_restart": [
+          8,
+          16,
+          21,
+          37,
+          54
+        ]
+      },
+      {
+        "steps": 6,
+        "law": "JOIN-FEWER",
+        "ring_restart": 9,
+        "stub_restart": 8,
+        "ring_end": 12,
+        "stub_end": 15,
+        "equal_counts_from_restart": [
+          8,
+          16,
+          21,
+          37
+        ]
+      },
+      {
+        "steps": 7,
+        "law": "JOIN-FEWER",
+        "ring_restart": 10,
+        "stub_restart": 9,
+        "ring_end": 12,
+        "stub_end": 16,
+        "equal_counts_from_restart": [
+          8,
+          16,
+          21
+        ]
+      },
+      {
+        "steps": 8,
+        "law": "JOIN-FEWER",
+        "ring_restart": 11,
+        "stub_restart": 10,
+        "ring_end": 12,
+        "stub_end": 16,
+        "equal_counts_from_restart": [
+          8,
+          16
+        ]
+      }
+    ],
+    "direct_meeting_restart_comparisons": [
+      {
+        "law": "REC-ONE-FEWER",
+        "ring_restart": 5,
+        "stub_rounds": 16
+      },
+      {
+        "law": "ONE-FEWER",
+        "ring_restart": 5,
+        "stub_rounds": 16
+      },
+      {
+        "law": "JOIN-FEWER",
+        "ring_restart": 4,
+        "stub_rounds": 16
+      }
+    ],
+    "shared_starts_differing_from_stub": [
+      [
+        1,
+        "CAP-3",
+        1,
+        1
+      ],
+      [
+        2,
+        "CAP-3",
+        2,
+        2
+      ],
+      [
+        3,
+        "CAP-3",
+        3,
+        3
+      ],
+      [
+        4,
+        "CAP-3",
+        2,
+        2
+      ],
+      [
+        5,
+        "CAP-3",
+        2,
+        2
+      ],
+      [
+        1,
+        "REC-ONE-FEWER",
+        1,
+        1
+      ],
+      [
+        2,
+        "REC-ONE-FEWER",
+        2,
+        2
+      ],
+      [
+        3,
+        "REC-ONE-FEWER",
+        2,
+        5
+      ],
+      [
+        4,
+        "REC-ONE-FEWER",
+        2,
+        2
+      ],
+      [
+        5,
+        "REC-ONE-FEWER",
+        2,
+        2
+      ],
+      [
+        1,
+        "ONE-FEWER",
+        1,
+        1
+      ],
+      [
+        2,
+        "ONE-FEWER",
+        2,
+        2
+      ],
+      [
+        3,
+        "ONE-FEWER",
+        2,
+        5
+      ],
+      [
+        4,
+        "ONE-FEWER",
+        2,
+        2
+      ],
+      [
+        5,
+        "ONE-FEWER",
+        2,
+        2
+      ],
+      [
+        1,
+        "JOIN-FEWER",
+        1,
+        1
+      ],
+      [
+        2,
+        "JOIN-FEWER",
+        2,
+        2
+      ],
+      [
+        3,
+        "JOIN-FEWER",
+        2,
+        3
+      ],
+      [
+        4,
+        "JOIN-FEWER",
+        2,
+        2
+      ],
+      [
+        5,
+        "JOIN-FEWER",
+        2,
+        2
+      ],
+      [
+        6,
+        "JOIN-FEWER",
+        4,
+        4
+      ],
+      [
+        1,
+        "ORD",
+        1,
+        1
+      ],
+      [
+        2,
+        "ORD",
+        2,
+        2
+      ],
+      [
+        3,
+        "ORD",
+        2,
+        3
+      ],
+      [
+        4,
+        "ORD",
+        2,
+        2
+      ],
+      [
+        5,
+        "ORD",
+        2,
+        2
+      ],
+      [
+        6,
+        "ORD",
+        4,
+        4
+      ]
+    ],
+    "cap_meetings_differing_from_stub": [
+      [
+        2,
+        "CAP-3",
+        3,
+        3
+      ]
+    ]
+  }
+}

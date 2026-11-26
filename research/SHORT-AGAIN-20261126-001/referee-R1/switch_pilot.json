@@ -1,0 +1,98 @@
+{
+  "configurations": [
+    {
+      "sender": "g6:123@1",
+      "d": 3,
+      "cap": "CAP-3",
+      "treatment": "CANCEL-WAIT",
+      "round limit": 16,
+      "knot bound": 3000,
+      "trace": true,
+      "rounds": 16,
+      "knots": 2592,
+      "seconds": 0.0317
+    },
+    {
+      "sender": "g7:122@0",
+      "d": 3,
+      "cap": "CAP-3",
+      "treatment": "CANCEL-RETIRE",
+      "round limit": 16,
+      "knot bound": 3000,
+      "trace": true,
+      "rounds": 16,
+      "knots": 2278,
+      "seconds": 0.0282
+    },
+    {
+      "sender": "g7:113@0",
+      "d": 6,
+      "cap": "CAP-3",
+      "treatment": "CANCEL-OFFSHOOT",
+      "round limit": 16,
+      "knot bound": 3000,
+      "trace": true,
+      "rounds": 16,
+      "knots": 1672,
+      "seconds": 0.0205
+    },
+    {
+      "sender": "g7:222@0",
+      "d": 6,
+      "cap": "CAP-4",
+      "treatment": "CANCEL-WAIT",
+      "round limit": 20,
+      "knot bound": 30000,
+      "trace": false,
+      "rounds": 20,
+      "knots": 23399,
+      "seconds": 0.3119
+    },
+    {
+      "sender": "g7:222@0",
+      "d": 6,
+      "cap": "CAP-4",
+      "treatment": "CANCEL-RETIRE",
+      "round limit": 20,
+      "knot bound": 30000,
+      "trace": false,
+      "rounds": 20,
+      "knots": 13546,
+      "seconds": 0.1972
+    },
+    {
+      "sender": "g7:222@0",
+      "d": 6,
+      "cap": "CAP-4",
+      "treatment": "CANCEL-OFFSHOOT",
+      "round limit": 20,
+      "knot bound": 30000,
+      "trace": false,
+      "rounds": 20,
+      "knots": 21680,
+      "seconds": 0.2768
+    },
+    {
+      "sender": "source",
+      "d": 3,
+      "cap": "CAP-5",
+      "treatment": "CANCEL-WAIT",
+      "round limit": 15,
+      "knot bound": 30000,
+      "trace": false,
+      "rounds": 13,
+      "knots": 43414,
+      "seconds": 0.7347
+    }
+  ],
+  "planned": {
+    "route": "720 original baselines plus four simple reference runs per treatment and length",
+    "changes": "all changed runs for the three-step meeting, cap three, waiting",
+    "swaps": "cap four to round 3d+2 with 30000 knots, all sender entries and treatments; cap five at d=2,3 with 30000 knots and waiting"
+  },
+  "runtime": {
+    "elapsed seconds": 1.611,
+    "peak resident KiB": 108708,
+    "single process address-space limit bytes": 1900000000
+  }
+}

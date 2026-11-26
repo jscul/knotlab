@@ -1,0 +1,4015 @@
+{
+  "limits": {
+    "rounds": 16,
+    "knots checked after each round": 3000,
+    "processes": 1,
+    "address space bytes": 2400000000
+  },
+  "sender keys": {
+    "g1:3@0": "one knot, site holds three loose",
+    "g3:22@0": "two knots, site holds two loose",
+    "g6:122@0": "three in a path, middle site holds one loose",
+    "g7:122@0": "three mutually sharing knots, site holds one loose",
+    "stub": "stub"
+  },
+  "target for feature contrasts": "At d=3 every sender reached round 7. The two-knot sender first differs from the stub in round 7, all other senders agree with the stub through round 7, and no own receiver knot was short in rounds 1 to 6. Round against the stub is the archived making of own births.",
+  "scope of contrasts": "One case per archived sited simple start, three bench patterns excluded.",
+  "why the four-knot counts agree": "All four knots pay the same first own join. The additional one-loose knot spends its only distinction there and has no other child. Each of the two knots holding two loose makes one offshoot. The site also pays the meeting with the line. After the round all receiver start knots are spent. The additional parent meets only one live child, so contributes no met set of two or more live children. The three first own births can be paired by their roles. Their later birth records are compared under this pairing, retaining parents, ordinal among equal births, fresh count and places.",
+  "why duplicate sharing has no effect on the observed growth": "The added distinction already has both holders. It adds one to their place counts but changes neither their usable loose counts nor whom they meet. Groups depend on sets of members meeting a common knot. Each kept birth takes only loose distinctions and receives fresh ones from its number of parents and next demand. The correspondence of loose counts and meetings therefore continues after a round under these laws. The two fresh starts test this consequence of the definitions.",
+  "feature contrasts at d=3": {
+    "3": {
+      "all simple census starts": {
+        "cases": 643,
+        "reached round seven with five senders": 643,
+        "round-seven two-loose-only cases": [
+          "n3:g7:122@0",
+          "n4:g17:1122@0",
+          "n4:g17:1122@1",
+          "n4:g17:1212@0",
+          "n4:g17:2121@1",
+          "n4:g18:1122@0"
+        ],
+        "feature contrasts": {
+          "site has k places": {
+            "matches_positive": 3,
+            "misses_positive": 3,
+            "matches_negative": 425,
+            "selects_negative": 212
+          },
+          "site has k minus two loose": {
+            "matches_positive": 6,
+            "misses_positive": 0,
+            "matches_negative": 490,
+            "selects_negative": 147
+          },
+          "site holds two shared distinctions": {
+            "matches_positive": 3,
+            "misses_positive": 3,
+            "matches_negative": 361,
+            "selects_negative": 276
+          },
+          "three knots each meet both others": {
+            "matches_positive": 1,
+            "misses_positive": 5,
+            "matches_negative": 620,
+            "selects_negative": 17
+          },
+          "three knots and both others hold two loose": {
+            "matches_positive": 1,
+            "misses_positive": 5,
+            "matches_negative": 630,
+            "selects_negative": 7
+          },
+          "three mutually meeting knots, both others hold two, site holds k minus two": {
+            "matches_positive": 1,
+            "misses_positive": 5,
+            "matches_negative": 637,
+            "selects_negative": 0
+          },
+          "all live members form one group, two nonsite members hold two loose, remaining nonsite live members hold one, site holds k minus two": {
+            "matches_positive": 6,
+            "misses_positive": 0,
+            "matches_negative": 637,
+            "selects_negative": 0
+          }
+        }
+      },
+      "three mutually meeting knots": {
+        "cases": 18,
+        "reached round seven with five senders": 18,
+        "round-seven two-loose-only cases": [
+          "n3:g7:122@0"
+        ],
+        "feature contrasts": {
+          "site has k places": {
+            "matches_positive": 1,
+            "misses_positive": 0,
+            "matches_negative": 12,
+            "selects_negative": 5
+          },
+          "site has k minus two loose": {
+            "matches_positive": 1,
+            "misses_positive": 0,
+            "matches_negative": 12,
+            "selects_negative": 5
+          },
+          "site holds two shared distinctions": {
+            "matches_positive": 1,
+            "misses_positive": 0,
+            "matches_negative": 0,
+            "selects_negative": 17
+          },
+          "three knots each meet both others": {
+            "matches_positive": 1,
+            "misses_positive": 0,
+            "matches_negative": 0,
+            "selects_negative": 17
+          },
+          "three knots and both others hold two loose": {
+            "matches_positive": 1,
+            "misses_positive": 0,
+            "matches_negative": 15,
+            "selects_negative": 2
+          },
+          "three mutually meeting knots, both others hold two, site holds k minus two": {
+            "matches_positive": 1,
+            "misses_positive": 0,
+            "matches_negative": 17,
+            "selects_negative": 0
+          },
+          "all live members form one group, two nonsite members hold two loose, remaining nonsite live members hold one, site holds k minus two": {
+            "matches_positive": 1,
+            "misses_positive": 0,
+            "matches_negative": 17,
+            "selects_negative": 0
+          }
+        }
+      },
+      "all receivers that switched on the five-way common prefix": [
+        {
+          "receiver": "n3:g7:122@0",
+          "first": 7,
+          "site loose": 1,
+          "site places": 3
+        },
+        {
+          "receiver": "n4:g17:1122@0",
+          "first": 7,
+          "site loose": 1,
+          "site places": 4
+        },
+        {
+          "receiver": "n4:g17:1122@1",
+          "first": 7,
+          "site loose": 1,
+          "site places": 3
+        },
+        {
+          "receiver": "n4:g17:1212@0",
+          "first": 7,
+          "site loose": 1,
+          "site places": 4
+        },
+        {
+          "receiver": "n4:g17:2121@1",
+          "first": 7,
+          "site loose": 1,
+          "site places": 3
+        },
+        {
+          "receiver": "n4:g18:1122@0",
+          "first": 7,
+          "site loose": 1,
+          "site places": 4
+        }
+      ]
+    },
+    "4": {
+      "all simple census starts": {
+        "cases": 643,
+        "reached round seven with five senders": 643,
+        "round-seven two-loose-only cases": [
+          "n3:g7:222@0",
+          "n4:g17:1222@1",
+          "n4:g17:1222@2",
+          "n4:g17:2122@0",
+          "n4:g17:2122@3",
+          "n4:g18:1222@1"
+        ],
+        "feature contrasts": {
+          "site has k places": {
+            "matches_positive": 3,
+            "misses_positive": 3,
+            "matches_negative": 425,
+            "selects_negative": 212
+          },
+          "site has k minus two loose": {
+            "matches_positive": 6,
+            "misses_positive": 0,
+            "matches_negative": 428,
+            "selects_negative": 209
+          },
+          "site holds two shared distinctions": {
+            "matches_positive": 3,
+            "misses_positive": 3,
+            "matches_negative": 361,
+            "selects_negative": 276
+          },
+          "three knots each meet both others": {
+            "matches_positive": 1,
+            "misses_positive": 5,
+            "matches_negative": 620,
+            "selects_negative": 17
+          },
+          "three knots and both others hold two loose": {
+            "matches_positive": 1,
+            "misses_positive": 5,
+            "matches_negative": 630,
+            "selects_negative": 7
+          },
+          "three mutually meeting knots, both others hold two, site holds k minus two": {
+            "matches_positive": 1,
+            "misses_positive": 5,
+            "matches_negative": 637,
+            "selects_negative": 0
+          },
+          "all live members form one group, two nonsite members hold two loose, remaining nonsite live members hold one, site holds k minus two": {
+            "matches_positive": 6,
+            "misses_positive": 0,
+            "matches_negative": 637,
+            "selects_negative": 0
+          }
+        }
+      },
+      "three mutually meeting knots": {
+        "cases": 18,
+        "reached round seven with five senders": 18,
+        "round-seven two-loose-only cases": [
+          "n3:g7:222@0"
+        ],
+        "feature contrasts": {
+          "site has k places": {
+            "matches_positive": 1,
+            "misses_positive": 0,
+            "matches_negative": 12,
+            "selects_negative": 5
+          },
+          "site has k minus two loose": {
+            "matches_positive": 1,
+            "misses_positive": 0,
+            "matches_negative": 12,
+            "selects_negative": 5
+          },
+          "site holds two shared distinctions": {
+            "matches_positive": 1,
+            "misses_positive": 0,
+            "matches_negative": 0,
+            "selects_negative": 17
+          },
+          "three knots each meet both others": {
+            "matches_positive": 1,
+            "misses_positive": 0,
+            "matches_negative": 0,
+            "selects_negative": 17
+          },
+          "three knots and both others hold two loose": {
+            "matches_positive": 1,
+            "misses_positive": 0,
+            "matches_negative": 15,
+            "selects_negative": 2
+          },
+          "three mutually meeting knots, both others hold two, site holds k minus two": {
+            "matches_positive": 1,
+            "misses_positive": 0,
+            "matches_negative": 17,
+            "selects_negative": 0
+          },
+          "all live members form one group, two nonsite members hold two loose, remaining nonsite live members hold one, site holds k minus two": {
+            "matches_positive": 1,
+            "misses_positive": 0,
+            "matches_negative": 17,
+            "selects_negative": 0
+          }
+        }
+      },
+      "all receivers that switched on the five-way common prefix": [
+        {
+          "receiver": "n3:g7:222@0",
+          "first": 7,
+          "site loose": 2,
+          "site places": 4
+        },
+        {
+          "receiver": "n4:g15:3232@0",
+          "first": 7,
+          "site loose": 3,
+          "site places": 4
+        },
+        {
+          "receiver": "n4:g17:1222@0",
+          "first": 7,
+          "site loose": 1,
+          "site places": 4
+        },
+        {
+          "receiver": "n4:g17:1222@1",
+          "first": 7,
+          "site loose": 2,
+          "site places": 4
+        },
+        {
+          "receiver": "n4:g17:1222@2",
+          "first": 7,
+          "site loose": 2,
+          "site places": 5
+        },
+        {
+          "receiver": "n4:g17:2122@0",
+          "first": 7,
+          "site loose": 2,
+          "site places": 5
+        },
+        {
+          "receiver": "n4:g17:2122@1",
+          "first": 7,
+          "site loose": 1,
+          "site places": 3
+        },
+        {
+          "receiver": "n4:g17:2122@3",
+          "first": 7,
+          "site loose": 2,
+          "site places": 4
+        },
+        {
+          "receiver": "n4:g18:1222@0",
+          "first": 7,
+          "site loose": 1,
+          "site places": 4
+        },
+        {
+          "receiver": "n4:g18:1222@1",
+          "first": 7,
+          "site loose": 2,
+          "site places": 5
+        }
+      ]
+    },
+    "5": {
+      "all simple census starts": {
+        "cases": 643,
+        "reached round seven with five senders": 643,
+        "round-seven two-loose-only cases": [
+          "n3:g7:223@2",
+          "n4:g17:1223@3",
+          "n4:g17:1232@2",
+          "n4:g17:2123@3",
+          "n4:g17:2132@2",
+          "n4:g18:1223@3"
+        ],
+        "feature contrasts": {
+          "site has k places": {
+            "matches_positive": 3,
+            "misses_positive": 3,
+            "matches_negative": 487,
+            "selects_negative": 150
+          },
+          "site has k minus two loose": {
+            "matches_positive": 6,
+            "misses_positive": 0,
+            "matches_negative": 427,
+            "selects_negative": 210
+          },
+          "site holds two shared distinctions": {
+            "matches_positive": 3,
+            "misses_positive": 3,
+            "matches_negative": 361,
+            "selects_negative": 276
+          },
+          "three knots each meet both others": {
+            "matches_positive": 1,
+            "misses_positive": 5,
+            "matches_negative": 620,
+            "selects_negative": 17
+          },
+          "three knots and both others hold two loose": {
+            "matches_positive": 1,
+            "misses_positive": 5,
+            "matches_negative": 630,
+            "selects_negative": 7
+          },
+          "three mutually meeting knots, both others hold two, site holds k minus two": {
+            "matches_positive": 1,
+            "misses_positive": 5,
+            "matches_negative": 637,
+            "selects_negative": 0
+          },
+          "all live members form one group, two nonsite members hold two loose, remaining nonsite live members hold one, site holds k minus two": {
+            "matches_positive": 6,
+            "misses_positive": 0,
+            "matches_negative": 637,
+            "selects_negative": 0
+          }
+        }
+      },
+      "three mutually meeting knots": {
+        "cases": 18,
+        "reached round seven with five senders": 18,
+        "round-seven two-loose-only cases": [
+          "n3:g7:223@2"
+        ],
+        "feature contrasts": {
+          "site has k places": {
+            "matches_positive": 1,
+            "misses_positive": 0,
+            "matches_negative": 12,
+            "selects_negative": 5
+          },
+          "site has k minus two loose": {
+            "matches_positive": 1,
+            "misses_positive": 0,
+            "matches_negative": 12,
+            "selects_negative": 5
+          },
+          "site holds two shared distinctions": {
+            "matches_positive": 1,
+            "misses_positive": 0,
+            "matches_negative": 0,
+            "selects_negative": 17
+          },
+          "three knots each meet both others": {
+            "matches_positive": 1,
+            "misses_positive": 0,
+            "matches_negative": 0,
+            "selects_negative": 17
+          },
+          "three knots and both others hold two loose": {
+            "matches_positive": 1,
+            "misses_positive": 0,
+            "matches_negative": 15,
+            "selects_negative": 2
+          },
+          "three mutually meeting knots, both others hold two, site holds k minus two": {
+            "matches_positive": 1,
+            "misses_positive": 0,
+            "matches_negative": 17,
+            "selects_negative": 0
+          },
+          "all live members form one group, two nonsite members hold two loose, remaining nonsite live members hold one, site holds k minus two": {
+            "matches_positive": 1,
+            "misses_positive": 0,
+            "matches_negative": 17,
+            "selects_negative": 0
+          }
+        }
+      },
+      "all receivers that switched on the five-way common prefix": [
+        {
+          "receiver": "n3:g7:223@2",
+          "first": 7,
+          "site loose": 3,
+          "site places": 5
+        },
+        {
+          "receiver": "n4:g15:2332@1",
+          "first": 9,
+          "site loose": 3,
+          "site places": 5
+        },
+        {
+          "receiver": "n4:g15:3232@1",
+          "first": 11,
+          "site loose": 2,
+          "site places": 4
+        },
+        {
+          "receiver": "n4:g15:3233@2",
+          "first": 7,
+          "site loose": 3,
+          "site places": 5
+        },
+        {
+          "receiver": "n4:g15:3332@0",
+          "first": 7,
+          "site loose": 3,
+          "site places": 4
+        },
+        {
+          "receiver": "n4:g17:1222@0",
+          "first": 8,
+          "site loose": 1,
+          "site places": 4
+        },
+        {
+          "receiver": "n4:g17:1223@0",
+          "first": 7,
+          "site loose": 1,
+          "site places": 4
+        },
+        {
+          "receiver": "n4:g17:1223@3",
+          "first": 7,
+          "site loose": 3,
+          "site places": 5
+        },
+        {
+          "receiver": "n4:g17:1232@0",
+          "first": 7,
+          "site loose": 1,
+          "site places": 4
+        },
+        {
+          "receiver": "n4:g17:1232@2",
+          "first": 7,
+          "site loose": 3,
+          "site places": 6
+        },
+        {
+          "receiver": "n4:g17:2122@1",
+          "first": 8,
+          "site loose": 1,
+          "site places": 3
+        },
+        {
+          "receiver": "n4:g17:2123@1",
+          "first": 7,
+          "site loose": 1,
+          "site places": 3
+        },
+        {
+          "receiver": "n4:g17:2123@3",
+          "first": 7,
+          "site loose": 3,
+          "site places": 5
+        },
+        {
+          "receiver": "n4:g17:2132@1",
+          "first": 7,
+          "site loose": 1,
+          "site places": 3
+        },
+        {
+          "receiver": "n4:g17:2132@2",
+          "first": 7,
+          "site loose": 3,
+          "site places": 6
+        },
+        {
+          "receiver": "n4:g17:2222@0",
+          "first": 7,
+          "site loose": 2,
+          "site places": 5
+        },
+        {
+          "receiver": "n4:g17:2222@1",
+          "first": 7,
+          "site loose": 2,
+          "site places": 4
+        },
+        {
+          "receiver": "n4:g18:1222@0",
+          "first": 8,
+          "site loose": 1,
+          "site places": 4
+        },
+        {
+          "receiver": "n4:g18:1223@0",
+          "first": 7,
+          "site loose": 1,
+          "site places": 4
+        },
+        {
+          "receiver": "n4:g18:1223@3",
+          "first": 7,
+          "site loose": 3,
+          "site places": 6
+        },
+        {
+          "receiver": "n4:g18:2222@0",
+          "first": 7,
+          "site loose": 2,
+          "site places": 5
+        }
+      ]
+    }
+  },
+  "six under cap three": {
+    "first own births as [start parent indices, fresh, places]": {
+      "n3:g7:122@0": {
+        "loose in start order": [
+          1,
+          2,
+          2
+        ],
+        "site": 0,
+        "pairs sharing one distinction": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "births": [
+          [
+            [
+              0,
+              1,
+              2
+            ],
+            3,
+            6
+          ],
+          [
+            [
+              1
+            ],
+            2,
+            3
+          ],
+          [
+            [
+              2
+            ],
+            2,
+            3
+          ]
+        ]
+      },
+      "n4:g17:1122@0": {
+        "loose in start order": [
+          1,
+          1,
+          2,
+          2
+        ],
+        "site": 0,
+        "pairs sharing one distinction": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "births": [
+          [
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            3,
+            7
+          ],
+          [
+            [
+              2
+            ],
+            2,
+            3
+          ],
+          [
+            [
+              3
+            ],
+            2,
+            3
+          ]
+        ]
+      },
+      "n4:g17:1122@1": {
+        "loose in start order": [
+          1,
+          1,
+          2,
+          2
+        ],
+        "site": 1,
+        "pairs sharing one distinction": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "births": [
+          [
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            3,
+            7
+          ],
+          [
+            [
+              2
+            ],
+            2,
+            3
+          ],
+          [
+            [
+              3
+            ],
+            2,
+            3
+          ]
+        ]
+      },
+      "n4:g17:1212@0": {
+        "loose in start order": [
+          1,
+          2,
+          1,
+          2
+        ],
+        "site": 0,
+        "pairs sharing one distinction": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "births": [
+          [
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            3,
+            7
+          ],
+          [
+            [
+              1
+            ],
+            2,
+            3
+          ],
+          [
+            [
+              3
+            ],
+            2,
+            3
+          ]
+        ]
+      },
+      "n4:g17:2121@1": {
+        "loose in start order": [
+          2,
+          1,
+          2,
+          1
+        ],
+        "site": 1,
+        "pairs sharing one distinction": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "births": [
+          [
+            [
+              0
+            ],
+            2,
+            3
+          ],
+          [
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            3,
+            7
+          ],
+          [
+            [
+              2
+            ],
+            2,
+            3
+          ]
+        ]
+      },
+      "n4:g18:1122@0": {
+        "loose in start order": [
+          1,
+          1,
+          2,
+          2
+        ],
+        "site": 0,
+        "pairs sharing one distinction": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "births": [
+          [
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            3,
+            7
+          ],
+          [
+            [
+              2
+            ],
+            2,
+            3
+          ],
+          [
+            [
+              3
+            ],
+            2,
+            3
+          ]
+        ]
+      }
+    },
+    "cross-receiver and archive comparisons": [
+      {
+        "receiver": "n3:g7:122@0",
+        "d": 2,
+        "sender": "g1:3@0",
+        "rounds": 16,
+        "three-knot rounds": 16,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": null,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          0
+        ]
+      },
+      {
+        "receiver": "n4:g17:1122@0",
+        "d": 2,
+        "sender": "g1:3@0",
+        "rounds": 16,
+        "three-knot rounds": 16,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": 1,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          1
+        ]
+      },
+      {
+        "receiver": "n4:g17:1122@1",
+        "d": 2,
+        "sender": "g1:3@0",
+        "rounds": 16,
+        "three-knot rounds": 16,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": 1,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          1
+        ]
+      },
+      {
+        "receiver": "n4:g17:1212@0",
+        "d": 2,
+        "sender": "g1:3@0",
+        "rounds": 16,
+        "three-knot rounds": 16,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": 1,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          1
+        ]
+      },
+      {
+        "receiver": "n4:g17:2121@1",
+        "d": 2,
+        "sender": "g1:3@0",
+        "rounds": 16,
+        "three-knot rounds": 16,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": 1,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          1
+        ]
+      },
+      {
+        "receiver": "n4:g18:1122@0",
+        "d": 2,
+        "sender": "g1:3@0",
+        "rounds": 16,
+        "three-knot rounds": 16,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": 1,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          1
+        ]
+      },
+      {
+        "receiver": "n3:g7:122@0",
+        "d": 2,
+        "sender": "g3:22@0",
+        "rounds": 16,
+        "three-knot rounds": 16,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": null,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          0
+        ]
+      },
+      {
+        "receiver": "n4:g17:1122@0",
+        "d": 2,
+        "sender": "g3:22@0",
+        "rounds": 16,
+        "three-knot rounds": 16,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": 1,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          1
+        ]
+      },
+      {
+        "receiver": "n4:g17:1122@1",
+        "d": 2,
+        "sender": "g3:22@0",
+        "rounds": 16,
+        "three-knot rounds": 16,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": 1,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          1
+        ]
+      },
+      {
+        "receiver": "n4:g17:1212@0",
+        "d": 2,
+        "sender": "g3:22@0",
+        "rounds": 16,
+        "three-knot rounds": 16,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": 1,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          1
+        ]
+      },
+      {
+        "receiver": "n4:g17:2121@1",
+        "d": 2,
+        "sender": "g3:22@0",
+        "rounds": 16,
+        "three-knot rounds": 16,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": 1,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          1
+        ]
+      },
+      {
+        "receiver": "n4:g18:1122@0",
+        "d": 2,
+        "sender": "g3:22@0",
+        "rounds": 16,
+        "three-knot rounds": 16,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": 1,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          1
+        ]
+      },
+      {
+        "receiver": "n3:g7:122@0",
+        "d": 2,
+        "sender": "g6:122@0",
+        "rounds": 16,
+        "three-knot rounds": 16,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": null,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          0
+        ]
+      },
+      {
+        "receiver": "n4:g17:1122@0",
+        "d": 2,
+        "sender": "g6:122@0",
+        "rounds": 16,
+        "three-knot rounds": 16,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": 1,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          1
+        ]
+      },
+      {
+        "receiver": "n4:g17:1122@1",
+        "d": 2,
+        "sender": "g6:122@0",
+        "rounds": 16,
+        "three-knot rounds": 16,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": 1,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          1
+        ]
+      },
+      {
+        "receiver": "n4:g17:1212@0",
+        "d": 2,
+        "sender": "g6:122@0",
+        "rounds": 16,
+        "three-knot rounds": 16,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": 1,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          1
+        ]
+      },
+      {
+        "receiver": "n4:g17:2121@1",
+        "d": 2,
+        "sender": "g6:122@0",
+        "rounds": 16,
+        "three-knot rounds": 16,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": 1,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          1
+        ]
+      },
+      {
+        "receiver": "n4:g18:1122@0",
+        "d": 2,
+        "sender": "g6:122@0",
+        "rounds": 16,
+        "three-knot rounds": 16,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": 1,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          1
+        ]
+      },
+      {
+        "receiver": "n3:g7:122@0",
+        "d": 2,
+        "sender": "g7:122@0",
+        "rounds": 15,
+        "three-knot rounds": 15,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": null,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          0
+        ]
+      },
+      {
+        "receiver": "n4:g17:1122@0",
+        "d": 2,
+        "sender": "g7:122@0",
+        "rounds": 15,
+        "three-knot rounds": 15,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": 1,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          1
+        ]
+      },
+      {
+        "receiver": "n4:g17:1122@1",
+        "d": 2,
+        "sender": "g7:122@0",
+        "rounds": 15,
+        "three-knot rounds": 15,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": 1,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          1
+        ]
+      },
+      {
+        "receiver": "n4:g17:1212@0",
+        "d": 2,
+        "sender": "g7:122@0",
+        "rounds": 15,
+        "three-knot rounds": 15,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": 1,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          1
+        ]
+      },
+      {
+        "receiver": "n4:g17:2121@1",
+        "d": 2,
+        "sender": "g7:122@0",
+        "rounds": 15,
+        "three-knot rounds": 15,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": 1,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          1
+        ]
+      },
+      {
+        "receiver": "n4:g18:1122@0",
+        "d": 2,
+        "sender": "g7:122@0",
+        "rounds": 15,
+        "three-knot rounds": 15,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": 1,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          1
+        ]
+      },
+      {
+        "receiver": "n3:g7:122@0",
+        "d": 2,
+        "sender": "stub",
+        "rounds": 16,
+        "three-knot rounds": 16,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": null,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          0
+        ]
+      },
+      {
+        "receiver": "n4:g17:1122@0",
+        "d": 2,
+        "sender": "stub",
+        "rounds": 16,
+        "three-knot rounds": 16,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": 1,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          1
+        ]
+      },
+      {
+        "receiver": "n4:g17:1122@1",
+        "d": 2,
+        "sender": "stub",
+        "rounds": 16,
+        "three-knot rounds": 16,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": 1,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          1
+        ]
+      },
+      {
+        "receiver": "n4:g17:1212@0",
+        "d": 2,
+        "sender": "stub",
+        "rounds": 16,
+        "three-knot rounds": 16,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": 1,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          1
+        ]
+      },
+      {
+        "receiver": "n4:g17:2121@1",
+        "d": 2,
+        "sender": "stub",
+        "rounds": 16,
+        "three-knot rounds": 16,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": 1,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          1
+        ]
+      },
+      {
+        "receiver": "n4:g18:1122@0",
+        "d": 2,
+        "sender": "stub",
+        "rounds": 16,
+        "three-knot rounds": 16,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": 1,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          1
+        ]
+      },
+      {
+        "receiver": "n3:g7:122@0",
+        "d": 3,
+        "sender": "g1:3@0",
+        "rounds": 16,
+        "three-knot rounds": 16,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": null,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          0
+        ]
+      },
+      {
+        "receiver": "n4:g17:1122@0",
+        "d": 3,
+        "sender": "g1:3@0",
+        "rounds": 16,
+        "three-knot rounds": 16,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": 1,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          1
+        ]
+      },
+      {
+        "receiver": "n4:g17:1122@1",
+        "d": 3,
+        "sender": "g1:3@0",
+        "rounds": 16,
+        "three-knot rounds": 16,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": 1,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          1
+        ]
+      },
+      {
+        "receiver": "n4:g17:1212@0",
+        "d": 3,
+        "sender": "g1:3@0",
+        "rounds": 16,
+        "three-knot rounds": 16,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": 1,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          1
+        ]
+      },
+      {
+        "receiver": "n4:g17:2121@1",
+        "d": 3,
+        "sender": "g1:3@0",
+        "rounds": 16,
+        "three-knot rounds": 16,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": 1,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          1
+        ]
+      },
+      {
+        "receiver": "n4:g18:1122@0",
+        "d": 3,
+        "sender": "g1:3@0",
+        "rounds": 16,
+        "three-knot rounds": 16,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": 1,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          1
+        ]
+      },
+      {
+        "receiver": "n3:g7:122@0",
+        "d": 3,
+        "sender": "g3:22@0",
+        "rounds": 16,
+        "three-knot rounds": 16,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": null,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          0
+        ]
+      },
+      {
+        "receiver": "n4:g17:1122@0",
+        "d": 3,
+        "sender": "g3:22@0",
+        "rounds": 16,
+        "three-knot rounds": 16,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": 1,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          1
+        ]
+      },
+      {
+        "receiver": "n4:g17:1122@1",
+        "d": 3,
+        "sender": "g3:22@0",
+        "rounds": 16,
+        "three-knot rounds": 16,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": 1,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          1
+        ]
+      },
+      {
+        "receiver": "n4:g17:1212@0",
+        "d": 3,
+        "sender": "g3:22@0",
+        "rounds": 16,
+        "three-knot rounds": 16,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": 1,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          1
+        ]
+      },
+      {
+        "receiver": "n4:g17:2121@1",
+        "d": 3,
+        "sender": "g3:22@0",
+        "rounds": 16,
+        "three-knot rounds": 16,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": 1,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          1
+        ]
+      },
+      {
+        "receiver": "n4:g18:1122@0",
+        "d": 3,
+        "sender": "g3:22@0",
+        "rounds": 16,
+        "three-knot rounds": 16,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": 1,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          1
+        ]
+      },
+      {
+        "receiver": "n3:g7:122@0",
+        "d": 3,
+        "sender": "g6:122@0",
+        "rounds": 16,
+        "three-knot rounds": 16,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": null,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          0
+        ]
+      },
+      {
+        "receiver": "n4:g17:1122@0",
+        "d": 3,
+        "sender": "g6:122@0",
+        "rounds": 16,
+        "three-knot rounds": 16,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": 1,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          1
+        ]
+      },
+      {
+        "receiver": "n4:g17:1122@1",
+        "d": 3,
+        "sender": "g6:122@0",
+        "rounds": 16,
+        "three-knot rounds": 16,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": 1,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          1
+        ]
+      },
+      {
+        "receiver": "n4:g17:1212@0",
+        "d": 3,
+        "sender": "g6:122@0",
+        "rounds": 16,
+        "three-knot rounds": 16,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": 1,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          1
+        ]
+      },
+      {
+        "receiver": "n4:g17:2121@1",
+        "d": 3,
+        "sender": "g6:122@0",
+        "rounds": 16,
+        "three-knot rounds": 16,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": 1,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          1
+        ]
+      },
+      {
+        "receiver": "n4:g18:1122@0",
+        "d": 3,
+        "sender": "g6:122@0",
+        "rounds": 16,
+        "three-knot rounds": 16,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": 1,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          1
+        ]
+      },
+      {
+        "receiver": "n3:g7:122@0",
+        "d": 3,
+        "sender": "g7:122@0",
+        "rounds": 15,
+        "three-knot rounds": 15,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": null,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          0
+        ]
+      },
+      {
+        "receiver": "n4:g17:1122@0",
+        "d": 3,
+        "sender": "g7:122@0",
+        "rounds": 15,
+        "three-knot rounds": 15,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": 1,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          1
+        ]
+      },
+      {
+        "receiver": "n4:g17:1122@1",
+        "d": 3,
+        "sender": "g7:122@0",
+        "rounds": 15,
+        "three-knot rounds": 15,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": 1,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          1
+        ]
+      },
+      {
+        "receiver": "n4:g17:1212@0",
+        "d": 3,
+        "sender": "g7:122@0",
+        "rounds": 15,
+        "three-knot rounds": 15,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": 1,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          1
+        ]
+      },
+      {
+        "receiver": "n4:g17:2121@1",
+        "d": 3,
+        "sender": "g7:122@0",
+        "rounds": 15,
+        "three-knot rounds": 15,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": 1,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          1
+        ]
+      },
+      {
+        "receiver": "n4:g18:1122@0",
+        "d": 3,
+        "sender": "g7:122@0",
+        "rounds": 15,
+        "three-knot rounds": 15,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": 1,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          1
+        ]
+      },
+      {
+        "receiver": "n3:g7:122@0",
+        "d": 3,
+        "sender": "stub",
+        "rounds": 16,
+        "three-knot rounds": 16,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": null,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          0
+        ]
+      },
+      {
+        "receiver": "n4:g17:1122@0",
+        "d": 3,
+        "sender": "stub",
+        "rounds": 16,
+        "three-knot rounds": 16,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": 1,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          1
+        ]
+      },
+      {
+        "receiver": "n4:g17:1122@1",
+        "d": 3,
+        "sender": "stub",
+        "rounds": 16,
+        "three-knot rounds": 16,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": 1,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          1
+        ]
+      },
+      {
+        "receiver": "n4:g17:1212@0",
+        "d": 3,
+        "sender": "stub",
+        "rounds": 16,
+        "three-knot rounds": 16,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": 1,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          1
+        ]
+      },
+      {
+        "receiver": "n4:g17:2121@1",
+        "d": 3,
+        "sender": "stub",
+        "rounds": 16,
+        "three-knot rounds": 16,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": 1,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          1
+        ]
+      },
+      {
+        "receiver": "n4:g18:1122@0",
+        "d": 3,
+        "sender": "stub",
+        "rounds": 16,
+        "three-knot rounds": 16,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": 1,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          1
+        ]
+      },
+      {
+        "receiver": "n3:g7:122@0",
+        "d": 4,
+        "sender": "g1:3@0",
+        "rounds": 16,
+        "three-knot rounds": 16,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": null,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          0
+        ]
+      },
+      {
+        "receiver": "n4:g17:1122@0",
+        "d": 4,
+        "sender": "g1:3@0",
+        "rounds": 16,
+        "three-knot rounds": 16,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": 1,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          1
+        ]
+      },
+      {
+        "receiver": "n4:g17:1122@1",
+        "d": 4,
+        "sender": "g1:3@0",
+        "rounds": 16,
+        "three-knot rounds": 16,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": 1,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          1
+        ]
+      },
+      {
+        "receiver": "n4:g17:1212@0",
+        "d": 4,
+        "sender": "g1:3@0",
+        "rounds": 16,
+        "three-knot rounds": 16,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": 1,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          1
+        ]
+      },
+      {
+        "receiver": "n4:g17:2121@1",
+        "d": 4,
+        "sender": "g1:3@0",
+        "rounds": 16,
+        "three-knot rounds": 16,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": 1,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          1
+        ]
+      },
+      {
+        "receiver": "n4:g18:1122@0",
+        "d": 4,
+        "sender": "g1:3@0",
+        "rounds": 16,
+        "three-knot rounds": 16,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": 1,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          1
+        ]
+      },
+      {
+        "receiver": "n3:g7:122@0",
+        "d": 4,
+        "sender": "g3:22@0",
+        "rounds": 16,
+        "three-knot rounds": 16,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": null,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          0
+        ]
+      },
+      {
+        "receiver": "n4:g17:1122@0",
+        "d": 4,
+        "sender": "g3:22@0",
+        "rounds": 16,
+        "three-knot rounds": 16,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": 1,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          1
+        ]
+      },
+      {
+        "receiver": "n4:g17:1122@1",
+        "d": 4,
+        "sender": "g3:22@0",
+        "rounds": 16,
+        "three-knot rounds": 16,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": 1,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          1
+        ]
+      },
+      {
+        "receiver": "n4:g17:1212@0",
+        "d": 4,
+        "sender": "g3:22@0",
+        "rounds": 16,
+        "three-knot rounds": 16,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": 1,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          1
+        ]
+      },
+      {
+        "receiver": "n4:g17:2121@1",
+        "d": 4,
+        "sender": "g3:22@0",
+        "rounds": 16,
+        "three-knot rounds": 16,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": 1,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          1
+        ]
+      },
+      {
+        "receiver": "n4:g18:1122@0",
+        "d": 4,
+        "sender": "g3:22@0",
+        "rounds": 16,
+        "three-knot rounds": 16,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": 1,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          1
+        ]
+      },
+      {
+        "receiver": "n3:g7:122@0",
+        "d": 4,
+        "sender": "g6:122@0",
+        "rounds": 16,
+        "three-knot rounds": 16,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": null,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          0
+        ]
+      },
+      {
+        "receiver": "n4:g17:1122@0",
+        "d": 4,
+        "sender": "g6:122@0",
+        "rounds": 16,
+        "three-knot rounds": 16,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": 1,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          1
+        ]
+      },
+      {
+        "receiver": "n4:g17:1122@1",
+        "d": 4,
+        "sender": "g6:122@0",
+        "rounds": 16,
+        "three-knot rounds": 16,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": 1,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          1
+        ]
+      },
+      {
+        "receiver": "n4:g17:1212@0",
+        "d": 4,
+        "sender": "g6:122@0",
+        "rounds": 16,
+        "three-knot rounds": 16,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": 1,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          1
+        ]
+      },
+      {
+        "receiver": "n4:g17:2121@1",
+        "d": 4,
+        "sender": "g6:122@0",
+        "rounds": 16,
+        "three-knot rounds": 16,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": 1,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          1
+        ]
+      },
+      {
+        "receiver": "n4:g18:1122@0",
+        "d": 4,
+        "sender": "g6:122@0",
+        "rounds": 16,
+        "three-knot rounds": 16,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": 1,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          1
+        ]
+      },
+      {
+        "receiver": "n3:g7:122@0",
+        "d": 4,
+        "sender": "g7:122@0",
+        "rounds": 15,
+        "three-knot rounds": 15,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": null,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          0
+        ]
+      },
+      {
+        "receiver": "n4:g17:1122@0",
+        "d": 4,
+        "sender": "g7:122@0",
+        "rounds": 15,
+        "three-knot rounds": 15,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": 1,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          1
+        ]
+      },
+      {
+        "receiver": "n4:g17:1122@1",
+        "d": 4,
+        "sender": "g7:122@0",
+        "rounds": 15,
+        "three-knot rounds": 15,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": 1,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          1
+        ]
+      },
+      {
+        "receiver": "n4:g17:1212@0",
+        "d": 4,
+        "sender": "g7:122@0",
+        "rounds": 15,
+        "three-knot rounds": 15,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": 1,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          1
+        ]
+      },
+      {
+        "receiver": "n4:g17:2121@1",
+        "d": 4,
+        "sender": "g7:122@0",
+        "rounds": 15,
+        "three-knot rounds": 15,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": 1,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          1
+        ]
+      },
+      {
+        "receiver": "n4:g18:1122@0",
+        "d": 4,
+        "sender": "g7:122@0",
+        "rounds": 15,
+        "three-knot rounds": 15,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": 1,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          1
+        ]
+      },
+      {
+        "receiver": "n3:g7:122@0",
+        "d": 4,
+        "sender": "stub",
+        "rounds": 16,
+        "three-knot rounds": 16,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": null,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          0
+        ]
+      },
+      {
+        "receiver": "n4:g17:1122@0",
+        "d": 4,
+        "sender": "stub",
+        "rounds": 16,
+        "three-knot rounds": 16,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": 1,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          1
+        ]
+      },
+      {
+        "receiver": "n4:g17:1122@1",
+        "d": 4,
+        "sender": "stub",
+        "rounds": 16,
+        "three-knot rounds": 16,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": 1,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          1
+        ]
+      },
+      {
+        "receiver": "n4:g17:1212@0",
+        "d": 4,
+        "sender": "stub",
+        "rounds": 16,
+        "three-knot rounds": 16,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": 1,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          1
+        ]
+      },
+      {
+        "receiver": "n4:g17:2121@1",
+        "d": 4,
+        "sender": "stub",
+        "rounds": 16,
+        "three-knot rounds": 16,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": 1,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          1
+        ]
+      },
+      {
+        "receiver": "n4:g18:1122@0",
+        "d": 4,
+        "sender": "stub",
+        "rounds": 16,
+        "three-knot rounds": 16,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": 1,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          1
+        ]
+      },
+      {
+        "receiver": "n3:g7:122@0",
+        "d": 5,
+        "sender": "g1:3@0",
+        "rounds": 16,
+        "three-knot rounds": 16,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": null,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          0
+        ]
+      },
+      {
+        "receiver": "n4:g17:1122@0",
+        "d": 5,
+        "sender": "g1:3@0",
+        "rounds": 16,
+        "three-knot rounds": 16,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": 1,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          1
+        ]
+      },
+      {
+        "receiver": "n4:g17:1122@1",
+        "d": 5,
+        "sender": "g1:3@0",
+        "rounds": 16,
+        "three-knot rounds": 16,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": 1,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          1
+        ]
+      },
+      {
+        "receiver": "n4:g17:1212@0",
+        "d": 5,
+        "sender": "g1:3@0",
+        "rounds": 16,
+        "three-knot rounds": 16,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": 1,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          1
+        ]
+      },
+      {
+        "receiver": "n4:g17:2121@1",
+        "d": 5,
+        "sender": "g1:3@0",
+        "rounds": 16,
+        "three-knot rounds": 16,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": 1,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          1
+        ]
+      },
+      {
+        "receiver": "n4:g18:1122@0",
+        "d": 5,
+        "sender": "g1:3@0",
+        "rounds": 16,
+        "three-knot rounds": 16,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": 1,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          1
+        ]
+      },
+      {
+        "receiver": "n3:g7:122@0",
+        "d": 5,
+        "sender": "g3:22@0",
+        "rounds": 16,
+        "three-knot rounds": 16,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": null,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          0
+        ]
+      },
+      {
+        "receiver": "n4:g17:1122@0",
+        "d": 5,
+        "sender": "g3:22@0",
+        "rounds": 16,
+        "three-knot rounds": 16,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": 1,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          1
+        ]
+      },
+      {
+        "receiver": "n4:g17:1122@1",
+        "d": 5,
+        "sender": "g3:22@0",
+        "rounds": 16,
+        "three-knot rounds": 16,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": 1,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          1
+        ]
+      },
+      {
+        "receiver": "n4:g17:1212@0",
+        "d": 5,
+        "sender": "g3:22@0",
+        "rounds": 16,
+        "three-knot rounds": 16,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": 1,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          1
+        ]
+      },
+      {
+        "receiver": "n4:g17:2121@1",
+        "d": 5,
+        "sender": "g3:22@0",
+        "rounds": 16,
+        "three-knot rounds": 16,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": 1,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          1
+        ]
+      },
+      {
+        "receiver": "n4:g18:1122@0",
+        "d": 5,
+        "sender": "g3:22@0",
+        "rounds": 16,
+        "three-knot rounds": 16,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": 1,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          1
+        ]
+      },
+      {
+        "receiver": "n3:g7:122@0",
+        "d": 5,
+        "sender": "g6:122@0",
+        "rounds": 16,
+        "three-knot rounds": 16,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": null,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          0
+        ]
+      },
+      {
+        "receiver": "n4:g17:1122@0",
+        "d": 5,
+        "sender": "g6:122@0",
+        "rounds": 16,
+        "three-knot rounds": 16,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": 1,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          1
+        ]
+      },
+      {
+        "receiver": "n4:g17:1122@1",
+        "d": 5,
+        "sender": "g6:122@0",
+        "rounds": 16,
+        "three-knot rounds": 16,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": 1,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          1
+        ]
+      },
+      {
+        "receiver": "n4:g17:1212@0",
+        "d": 5,
+        "sender": "g6:122@0",
+        "rounds": 16,
+        "three-knot rounds": 16,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": 1,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          1
+        ]
+      },
+      {
+        "receiver": "n4:g17:2121@1",
+        "d": 5,
+        "sender": "g6:122@0",
+        "rounds": 16,
+        "three-knot rounds": 16,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": 1,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          1
+        ]
+      },
+      {
+        "receiver": "n4:g18:1122@0",
+        "d": 5,
+        "sender": "g6:122@0",
+        "rounds": 16,
+        "three-knot rounds": 16,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": 1,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          1
+        ]
+      },
+      {
+        "receiver": "n3:g7:122@0",
+        "d": 5,
+        "sender": "g7:122@0",
+        "rounds": 16,
+        "three-knot rounds": 16,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": null,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          0
+        ]
+      },
+      {
+        "receiver": "n4:g17:1122@0",
+        "d": 5,
+        "sender": "g7:122@0",
+        "rounds": 16,
+        "three-knot rounds": 16,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": 1,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          1
+        ]
+      },
+      {
+        "receiver": "n4:g17:1122@1",
+        "d": 5,
+        "sender": "g7:122@0",
+        "rounds": 16,
+        "three-knot rounds": 16,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": 1,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          1
+        ]
+      },
+      {
+        "receiver": "n4:g17:1212@0",
+        "d": 5,
+        "sender": "g7:122@0",
+        "rounds": 16,
+        "three-knot rounds": 16,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": 1,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          1
+        ]
+      },
+      {
+        "receiver": "n4:g17:2121@1",
+        "d": 5,
+        "sender": "g7:122@0",
+        "rounds": 16,
+        "three-knot rounds": 16,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": 1,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          1
+        ]
+      },
+      {
+        "receiver": "n4:g18:1122@0",
+        "d": 5,
+        "sender": "g7:122@0",
+        "rounds": 16,
+        "three-knot rounds": 16,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": 1,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          1
+        ]
+      },
+      {
+        "receiver": "n3:g7:122@0",
+        "d": 5,
+        "sender": "stub",
+        "rounds": 16,
+        "three-knot rounds": 16,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": null,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          0
+        ]
+      },
+      {
+        "receiver": "n4:g17:1122@0",
+        "d": 5,
+        "sender": "stub",
+        "rounds": 16,
+        "three-knot rounds": 16,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": 1,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          1
+        ]
+      },
+      {
+        "receiver": "n4:g17:1122@1",
+        "d": 5,
+        "sender": "stub",
+        "rounds": 16,
+        "three-knot rounds": 16,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": 1,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          1
+        ]
+      },
+      {
+        "receiver": "n4:g17:1212@0",
+        "d": 5,
+        "sender": "stub",
+        "rounds": 16,
+        "three-knot rounds": 16,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": 1,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          1
+        ]
+      },
+      {
+        "receiver": "n4:g17:2121@1",
+        "d": 5,
+        "sender": "stub",
+        "rounds": 16,
+        "three-knot rounds": 16,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": 1,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          1
+        ]
+      },
+      {
+        "receiver": "n4:g18:1122@0",
+        "d": 5,
+        "sender": "stub",
+        "rounds": 16,
+        "three-knot rounds": 16,
+        "archive rounds, own counts, shorts, final knots match": true,
+        "first different own count": null,
+        "first different own short count": null,
+        "first different named birth record": 1,
+        "first different round after matching the first three births": null,
+        "whole-growth knot count exceeds the smaller start by": [
+          1
+        ]
+      }
+    ]
+  },
+  "changed inputs": [
+    {
+      "d": 2,
+      "law": "CAP-6",
+      "join": "meeting",
+      "changed": "one sharing per pair",
+      "loose": [
+        3,
+        2,
+        2
+      ],
+      "site": 0,
+      "site places": 5,
+      "reading": {
+        "own_signature": {
+          "first between any pair": 7,
+          "first against stub": {
+            "g1:3@0": 7,
+            "g3:22@0": null,
+            "g6:122@0": null,
+            "g7:122@0": null,
+            "stub": null
+          },
+          "some strictly own knot was short before first difference": false
+        },
+        "own_births": {
+          "first between any pair": 7,
+          "first against stub": {
+            "g1:3@0": 7,
+            "g3:22@0": null,
+            "g6:122@0": null,
+            "g7:122@0": null,
+            "stub": null
+          },
+          "some strictly own knot was short before first difference": false
+        },
+        "receiver_inclusive_births": {
+          "first between any pair": 3,
+          "first against stub": {
+            "g1:3@0": 3,
+            "g3:22@0": 3,
+            "g6:122@0": 3,
+            "g7:122@0": 3,
+            "stub": null
+          },
+          "some strictly own knot was short before first difference": false
+        },
+        "rounds": {
+          "g1:3@0": 10,
+          "g3:22@0": 16,
+          "g6:122@0": 16,
+          "g7:122@0": 13,
+          "stub": 16
+        },
+        "any-receiver-ancestor births in round four": {
+          "g1:3@0": 41,
+          "g3:22@0": 34,
+          "g6:122@0": 31,
+          "g7:122@0": 32,
+          "stub": 27
+        }
+      }
+    },
+    {
+      "d": 2,
+      "law": "CAP-6",
+      "join": "meeting",
+      "changed": "two sharings of the site and first partner",
+      "loose": [
+        3,
+        2,
+        2
+      ],
+      "site": 0,
+      "site places": 6,
+      "reading": {
+        "own_signature": {
+          "first between any pair": 7,
+          "first against stub": {
+            "g1:3@0": 7,
+            "g3:22@0": null,
+            "g6:122@0": null,
+            "g7:122@0": null,
+            "stub": null
+          },
+          "some strictly own knot was short before first difference": false
+        },
+        "own_births": {
+          "first between any pair": 7,
+          "first against stub": {
+            "g1:3@0": 7,
+            "g3:22@0": null,
+            "g6:122@0": null,
+            "g7:122@0": null,
+            "stub": null
+          },
+          "some strictly own knot was short before first difference": false
+        },
+        "receiver_inclusive_births": {
+          "first between any pair": 3,
+          "first against stub": {
+            "g1:3@0": 3,
+            "g3:22@0": 3,
+            "g6:122@0": 3,
+            "g7:122@0": 3,
+            "stub": null
+          },
+          "some strictly own knot was short before first difference": false
+        },
+        "rounds": {
+          "g1:3@0": 10,
+          "g3:22@0": 16,
+          "g6:122@0": 16,
+          "g7:122@0": 13,
+          "stub": 16
+        },
+        "any-receiver-ancestor births in round four": {
+          "g1:3@0": 41,
+          "g3:22@0": 34,
+          "g6:122@0": 31,
+          "g7:122@0": 32,
+          "stub": 27
+        }
+      },
+      "every rebuilt round equals its singly shared control": true
+    },
+    {
+      "d": 2,
+      "law": "CAP-6",
+      "join": "meeting",
+      "changed": "one sharing per pair",
+      "loose": [
+        4,
+        2,
+        2
+      ],
+      "site": 0,
+      "site places": 6,
+      "reading": {
+        "own_signature": {
+          "first between any pair": 5,
+          "first against stub": {
+            "g1:3@0": null,
+            "g3:22@0": 5,
+            "g6:122@0": null,
+            "g7:122@0": 7,
+            "stub": null
+          },
+          "some strictly own knot was short before first difference": false
+        },
+        "own_births": {
+          "first between any pair": 5,
+          "first against stub": {
+            "g1:3@0": null,
+            "g3:22@0": 5,
+            "g6:122@0": null,
+            "g7:122@0": 7,
+            "stub": null
+          },
+          "some strictly own knot was short before first difference": false
+        },
+        "receiver_inclusive_births": {
+          "first between any pair": 3,
+          "first against stub": {
+            "g1:3@0": 4,
+            "g3:22@0": 3,
+            "g6:122@0": 3,
+            "g7:122@0": 3,
+            "stub": null
+          },
+          "some strictly own knot was short before first difference": false
+        },
+        "rounds": {
+          "g1:3@0": 13,
+          "g3:22@0": 8,
+          "g6:122@0": 14,
+          "g7:122@0": 9,
+          "stub": 16
+        },
+        "any-receiver-ancestor births in round four": {
+          "g1:3@0": 55,
+          "g3:22@0": 55,
+          "g6:122@0": 48,
+          "g7:122@0": 49,
+          "stub": 43
+        }
+      }
+    },
+    {
+      "d": 2,
+      "law": "CAP-6",
+      "join": "meeting",
+      "changed": "two sharings of the site and first partner",
+      "loose": [
+        4,
+        2,
+        2
+      ],
+      "site": 0,
+      "site places": 7,
+      "reading": {
+        "own_signature": {
+          "first between any pair": 5,
+          "first against stub": {
+            "g1:3@0": null,
+            "g3:22@0": 5,
+            "g6:122@0": null,
+            "g7:122@0": 7,
+            "stub": null
+          },
+          "some strictly own knot was short before first difference": false
+        },
+        "own_births": {
+          "first between any pair": 5,
+          "first against stub": {
+            "g1:3@0": null,
+            "g3:22@0": 5,
+            "g6:122@0": null,
+            "g7:122@0": 7,
+            "stub": null
+          },
+          "some strictly own knot was short before first difference": false
+        },
+        "receiver_inclusive_births": {
+          "first between any pair": 3,
+          "first against stub": {
+            "g1:3@0": 4,
+            "g3:22@0": 3,
+            "g6:122@0": 3,
+            "g7:122@0": 3,
+            "stub": null
+          },
+          "some strictly own knot was short before first difference": false
+        },
+        "rounds": {
+          "g1:3@0": 13,
+          "g3:22@0": 8,
+          "g6:122@0": 14,
+          "g7:122@0": 9,
+          "stub": 16
+        },
+        "any-receiver-ancestor births in round four": {
+          "g1:3@0": 55,
+          "g3:22@0": 55,
+          "g6:122@0": 48,
+          "g7:122@0": 49,
+          "stub": 43
+        }
+      },
+      "every rebuilt round equals its singly shared control": true
+    },
+    {
+      "d": 3,
+      "law": "CAP-6",
+      "join": "meeting",
+      "changed": "one sharing per pair",
+      "loose": [
+        3,
+        2,
+        2
+      ],
+      "site": 0,
+      "site places": 5,
+      "reading": {
+        "own_signature": {
+          "first between any pair": 10,
+          "first against stub": {
+            "g1:3@0": 10,
+            "g3:22@0": null,
+            "g6:122@0": null,
+            "g7:122@0": null,
+            "stub": null
+          },
+          "some strictly own knot was short before first difference": false
+        },
+        "own_births": {
+          "first between any pair": 10,
+          "first against stub": {
+            "g1:3@0": 10,
+            "g3:22@0": null,
+            "g6:122@0": null,
+            "g7:122@0": null,
+            "stub": null
+          },
+          "some strictly own knot was short before first difference": false
+        },
+        "receiver_inclusive_births": {
+          "first between any pair": 4,
+          "first against stub": {
+            "g1:3@0": 4,
+            "g3:22@0": 4,
+            "g6:122@0": 4,
+            "g7:122@0": 4,
+            "stub": null
+          },
+          "some strictly own knot was short before first difference": false
+        },
+        "rounds": {
+          "g1:3@0": 11,
+          "g3:22@0": 16,
+          "g6:122@0": 16,
+          "g7:122@0": 14,
+          "stub": 16
+        },
+        "any-receiver-ancestor births in round four": {
+          "g1:3@0": 33,
+          "g3:22@0": 32,
+          "g6:122@0": 31,
+          "g7:122@0": 31,
+          "stub": 30
+        }
+      }
+    },
+    {
+      "d": 3,
+      "law": "CAP-6",
+      "join": "meeting",
+      "changed": "two sharings of the site and first partner",
+      "loose": [
+        3,
+        2,
+        2
+      ],
+      "site": 0,
+      "site places": 6,
+      "reading": {
+        "own_signature": {
+          "first between any pair": 10,
+          "first against stub": {
+            "g1:3@0": 10,
+            "g3:22@0": null,
+            "g6:122@0": null,
+            "g7:122@0": null,
+            "stub": null
+          },
+          "some strictly own knot was short before first difference": false
+        },
+        "own_births": {
+          "first between any pair": 10,
+          "first against stub": {
+            "g1:3@0": 10,
+            "g3:22@0": null,
+            "g6:122@0": null,
+            "g7:122@0": null,
+            "stub": null
+          },
+          "some strictly own knot was short before first difference": false
+        },
+        "receiver_inclusive_births": {
+          "first between any pair": 4,
+          "first against stub": {
+            "g1:3@0": 4,
+            "g3:22@0": 4,
+            "g6:122@0": 4,
+            "g7:122@0": 4,
+            "stub": null
+          },
+          "some strictly own knot was short before first difference": false
+        },
+        "rounds": {
+          "g1:3@0": 11,
+          "g3:22@0": 16,
+          "g6:122@0": 16,
+          "g7:122@0": 14,
+          "stub": 16
+        },
+        "any-receiver-ancestor births in round four": {
+          "g1:3@0": 33,
+          "g3:22@0": 32,
+          "g6:122@0": 31,
+          "g7:122@0": 31,
+          "stub": 30
+        }
+      },
+      "every rebuilt round equals its singly shared control": true
+    },
+    {
+      "d": 3,
+      "law": "CAP-6",
+      "join": "meeting",
+      "changed": "one sharing per pair",
+      "loose": [
+        4,
+        2,
+        2
+      ],
+      "site": 0,
+      "site places": 6,
+      "reading": {
+        "own_signature": {
+          "first between any pair": 7,
+          "first against stub": {
+            "g1:3@0": null,
+            "g3:22@0": 7,
+            "g6:122@0": null,
+            "g7:122@0": 9,
+            "stub": null
+          },
+          "some strictly own knot was short before first difference": false
+        },
+        "own_births": {
+          "first between any pair": 7,
+          "first against stub": {
+            "g1:3@0": null,
+            "g3:22@0": 7,
+            "g6:122@0": null,
+            "g7:122@0": 9,
+            "stub": null
+          },
+          "some strictly own knot was short before first difference": false
+        },
+        "receiver_inclusive_births": {
+          "first between any pair": 4,
+          "first against stub": {
+            "g1:3@0": 5,
+            "g3:22@0": 4,
+            "g6:122@0": 4,
+            "g7:122@0": 4,
+            "stub": null
+          },
+          "some strictly own knot was short before first difference": false
+        },
+        "rounds": {
+          "g1:3@0": 13,
+          "g3:22@0": 9,
+          "g6:122@0": 14,
+          "g7:122@0": 10,
+          "stub": 16
+        },
+        "any-receiver-ancestor births in round four": {
+          "g1:3@0": 47,
+          "g3:22@0": 49,
+          "g6:122@0": 48,
+          "g7:122@0": 48,
+          "stub": 47
+        }
+      }
+    },
+    {
+      "d": 3,
+      "law": "CAP-6",
+      "join": "meeting",
+      "changed": "two sharings of the site and first partner",
+      "loose": [
+        4,
+        2,
+        2
+      ],
+      "site": 0,
+      "site places": 7,
+      "reading": {
+        "own_signature": {
+          "first between any pair": 7,
+          "first against stub": {
+            "g1:3@0": null,
+            "g3:22@0": 7,
+            "g6:122@0": null,
+            "g7:122@0": 9,
+            "stub": null
+          },
+          "some strictly own knot was short before first difference": false
+        },
+        "own_births": {
+          "first between any pair": 7,
+          "first against stub": {
+            "g1:3@0": null,
+            "g3:22@0": 7,
+            "g6:122@0": null,
+            "g7:122@0": 9,
+            "stub": null
+          },
+          "some strictly own knot was short before first difference": false
+        },
+        "receiver_inclusive_births": {
+          "first between any pair": 4,
+          "first against stub": {
+            "g1:3@0": 5,
+            "g3:22@0": 4,
+            "g6:122@0": 4,
+            "g7:122@0": 4,
+            "stub": null
+          },
+          "some strictly own knot was short before first difference": false
+        },
+        "rounds": {
+          "g1:3@0": 13,
+          "g3:22@0": 9,
+          "g6:122@0": 14,
+          "g7:122@0": 10,
+          "stub": 16
+        },
+        "any-receiver-ancestor births in round four": {
+          "g1:3@0": 47,
+          "g3:22@0": 49,
+          "g6:122@0": 48,
+          "g7:122@0": 48,
+          "stub": 47
+        }
+      },
+      "every rebuilt round equals its singly shared control": true
+    },
+    {
+      "d": 3,
+      "law": "CAP-3",
+      "join": "meeting",
+      "changed": "baseline",
+      "loose": [
+        1,
+        2,
+        2
+      ],
+      "site": 0,
+      "site places": 3,
+      "reading": {
+        "own_signature": {
+          "first between any pair": 7,
+          "first against stub": {
+            "g1:3@0": null,
+            "g3:22@0": 7,
+            "g6:122@0": null,
+            "g7:122@0": 9,
+            "stub": null
+          },
+          "some strictly own knot was short before first difference": false
+        },
+        "own_births": {
+          "first between any pair": 7,
+          "first against stub": {
+            "g1:3@0": null,
+            "g3:22@0": 7,
+            "g6:122@0": null,
+            "g7:122@0": 9,
+            "stub": null
+          },
+          "some strictly own knot was short before first difference": false
+        },
+        "receiver_inclusive_births": {
+          "first between any pair": 4,
+          "first against stub": {
+            "g1:3@0": 4,
+            "g3:22@0": 4,
+            "g6:122@0": 4,
+            "g7:122@0": 4,
+            "stub": null
+          },
+          "some strictly own knot was short before first difference": false
+        },
+        "rounds": {
+          "g1:3@0": 16,
+          "g3:22@0": 16,
+          "g6:122@0": 16,
+          "g7:122@0": 15,
+          "stub": 16
+        },
+        "any-receiver-ancestor births in round four": {
+          "g1:3@0": 13,
+          "g3:22@0": 14,
+          "g6:122@0": 13,
+          "g7:122@0": 13,
+          "stub": 12
+        }
+      }
+    },
+    {
+      "d": 3,
+      "law": "CAP-3",
+      "join": "meeting",
+      "changed": "new site",
+      "loose": [
+        1,
+        2,
+        2
+      ],
+      "site": 1,
+      "site places": 4,
+      "reading": {
+        "own_signature": {
+          "first between any pair": null,
+          "first against stub": {
+            "g1:3@0": null,
+            "g3:22@0": null,
+            "g6:122@0": null,
+            "g7:122@0": null,
+            "stub": null
+          },
+          "some strictly own knot was short before first difference": null
+        },
+        "own_births": {
+          "first between any pair": null,
+          "first against stub": {
+            "g1:3@0": null,
+            "g3:22@0": null,
+            "g6:122@0": null,
+            "g7:122@0": null,
+            "stub": null
+          },
+          "some strictly own knot was short before first difference": null
+        },
+        "receiver_inclusive_births": {
+          "first between any pair": 4,
+          "first against stub": {
+            "g1:3@0": 4,
+            "g3:22@0": 5,
+            "g6:122@0": 4,
+            "g7:122@0": 4,
+            "stub": null
+          },
+          "some strictly own knot was short before first difference": false
+        },
+        "rounds": {
+          "g1:3@0": 16,
+          "g3:22@0": 16,
+          "g6:122@0": 16,
+          "g7:122@0": 16,
+          "stub": 16
+        },
+        "any-receiver-ancestor births in round four": {
+          "g1:3@0": 10,
+          "g3:22@0": 9,
+          "g6:122@0": 10,
+          "g7:122@0": 10,
+          "stub": 9
+        }
+      }
+    },
+    {
+      "d": 3,
+      "law": "CAP-3",
+      "join": "share",
+      "changed": "new join",
+      "loose": [
+        1,
+        2,
+        2
+      ],
+      "site": 0,
+      "site places": 3,
+      "reading": {
+        "own_signature": {
+          "first between any pair": null,
+          "first against stub": {
+            "g1:3@0": null,
+            "g3:22@0": null,
+            "g6:122@0": null,
+            "g7:122@0": null,
+            "stub": null
+          },
+          "some strictly own knot was short before first difference": null
+        },
+        "own_births": {
+          "first between any pair": null,
+          "first against stub": {
+            "g1:3@0": null,
+            "g3:22@0": null,
+            "g6:122@0": null,
+            "g7:122@0": null,
+            "stub": null
+          },
+          "some strictly own knot was short before first difference": null
+        },
+        "receiver_inclusive_births": {
+          "first between any pair": 3,
+          "first against stub": {
+            "g1:3@0": null,
+            "g3:22@0": 3,
+            "g6:122@0": 3,
+            "g7:122@0": null,
+            "stub": null
+          },
+          "some strictly own knot was short before first difference": true
+        },
+        "rounds": {
+          "g1:3@0": 16,
+          "g3:22@0": 16,
+          "g6:122@0": 16,
+          "g7:122@0": 16,
+          "stub": 16
+        },
+        "any-receiver-ancestor births in round four": {
+          "g1:3@0": 11,
+          "g3:22@0": 11,
+          "g6:122@0": 11,
+          "g7:122@0": 11,
+          "stub": 11
+        }
+      }
+    },
+    {
+      "d": 3,
+      "law": "ORD",
+      "join": "meeting",
+      "changed": "ordinary count",
+      "loose": [
+        1,
+        2,
+        2
+      ],
+      "site": 0,
+      "site places": 3,
+      "reading": {
+        "own_signature": {
+          "first between any pair": null,
+          "first against stub": {
+            "g1:3@0": null,
+            "g3:22@0": null,
+            "g6:122@0": null,
+            "g7:122@0": null,
+            "stub": null
+          },
+          "some strictly own knot was short before first difference": null
+        },
+        "own_births": {
+          "first between any pair": null,
+          "first against stub": {
+            "g1:3@0": null,
+            "g3:22@0": null,
+            "g6:122@0": null,
+            "g7:122@0": null,
+            "stub": null
+          },
+          "some strictly own knot was short before first difference": null
+        },
+        "receiver_inclusive_births": {
+          "first between any pair": 4,
+          "first against stub": {
+            "g1:3@0": 4,
+            "g3:22@0": 4,
+            "g6:122@0": 4,
+            "g7:122@0": 4,
+            "stub": null
+          },
+          "some strictly own knot was short before first difference": false
+        },
+        "rounds": {
+          "g1:3@0": 16,
+          "g3:22@0": 16,
+          "g6:122@0": 16,
+          "g7:122@0": 16,
+          "stub": 16
+        },
+        "any-receiver-ancestor births in round four": {
+          "g1:3@0": 15,
+          "g3:22@0": 14,
+          "g6:122@0": 13,
+          "g7:122@0": 13,
+          "stub": 12
+        }
+      }
+    },
+    {
+      "d": 3,
+      "law": "REC-ONE-FEWER",
+      "join": "meeting",
+      "changed": "record's one fewer",
+      "loose": [
+        1,
+        2,
+        2
+      ],
+      "site": 0,
+      "site places": 3,
+      "reading": {
+        "own_signature": {
+          "first between any pair": null,
+          "first against stub": {
+            "g1:3@0": null,
+            "g3:22@0": null,
+            "g6:122@0": null,
+            "g7:122@0": null,
+            "stub": null
+          },
+          "some strictly own knot was short before first difference": null
+        },
+        "own_births": {
+          "first between any pair": null,
+          "first against stub": {
+            "g1:3@0": null,
+            "g3:22@0": null,
+            "g6:122@0": null,
+            "g7:122@0": null,
+            "stub": null
+          },
+          "some strictly own knot was short before first difference": null
+        },
+        "receiver_inclusive_births": {
+          "first between any pair": 5,
+          "first against stub": {
+            "g1:3@0": null,
+            "g3:22@0": 5,
+            "g6:122@0": 5,
+            "g7:122@0": null,
+            "stub": null
+          },
+          "some strictly own knot was short before first difference": true
+        },
+        "rounds": {
+          "g1:3@0": 14,
+          "g3:22@0": 13,
+          "g6:122@0": 13,
+          "g7:122@0": 13,
+          "stub": 14
+        },
+        "any-receiver-ancestor births in round four": {
+          "g1:3@0": 12,
+          "g3:22@0": 12,
+          "g6:122@0": 12,
+          "g7:122@0": 12,
+          "stub": 12
+        }
+      }
+    },
+    {
+      "d": 3,
+      "law": "CAP-6",
+      "join": "meeting",
+      "changed": "baseline",
+      "loose": [
+        4,
+        2,
+        2
+      ],
+      "site": 0,
+      "site places": 6,
+      "reading": {
+        "own_signature": {
+          "first between any pair": 7,
+          "first against stub": {
+            "g1:3@0": null,
+            "g3:22@0": 7,
+            "g6:122@0": null,
+            "g7:122@0": 9,
+            "stub": null
+          },
+          "some strictly own knot was short before first difference": false
+        },
+        "own_births": {
+          "first between any pair": 7,
+          "first against stub": {
+            "g1:3@0": null,
+            "g3:22@0": 7,
+            "g6:122@0": null,
+            "g7:122@0": 9,
+            "stub": null
+          },
+          "some strictly own knot was short before first difference": false
+        },
+        "receiver_inclusive_births": {
+          "first between any pair": 4,
+          "first against stub": {
+            "g1:3@0": 5,
+            "g3:22@0": 4,
+            "g6:122@0": 4,
+            "g7:122@0": 4,
+            "stub": null
+          },
+          "some strictly own knot was short before first difference": false
+        },
+        "rounds": {
+          "g1:3@0": 13,
+          "g3:22@0": 9,
+          "g6:122@0": 14,
+          "g7:122@0": 10,
+          "stub": 16
+        },
+        "any-receiver-ancestor births in round four": {
+          "g1:3@0": 47,
+          "g3:22@0": 49,
+          "g6:122@0": 48,
+          "g7:122@0": 48,
+          "stub": 47
+        }
+      }
+    },
+    {
+      "d": 3,
+      "law": "CAP-6",
+      "join": "meeting",
+      "changed": "new site",
+      "loose": [
+        4,
+        2,
+        2
+      ],
+      "site": 1,
+      "site places": 4,
+      "reading": {
+        "own_signature": {
+          "first between any pair": null,
+          "first against stub": {
+            "g1:3@0": null,
+            "g3:22@0": null,
+            "g6:122@0": null,
+            "g7:122@0": null,
+            "stub": null
+          },
+          "some strictly own knot was short before first difference": null
+        },
+        "own_births": {
+          "first between any pair": null,
+          "first against stub": {
+            "g1:3@0": null,
+            "g3:22@0": null,
+            "g6:122@0": null,
+            "g7:122@0": null,
+            "stub": null
+          },
+          "some strictly own knot was short before first difference": null
+        },
+        "receiver_inclusive_births": {
+          "first between any pair": 4,
+          "first against stub": {
+            "g1:3@0": 4,
+            "g3:22@0": 4,
+            "g6:122@0": 4,
+            "g7:122@0": 4,
+            "stub": null
+          },
+          "some strictly own knot was short before first difference": false
+        },
+        "rounds": {
+          "g1:3@0": 16,
+          "g3:22@0": 16,
+          "g6:122@0": 16,
+          "g7:122@0": 16,
+          "stub": 16
+        },
+        "any-receiver-ancestor births in round four": {
+          "g1:3@0": 37,
+          "g3:22@0": 36,
+          "g6:122@0": 35,
+          "g7:122@0": 35,
+          "stub": 34
+        }
+      }
+    },
+    {
+      "d": 3,
+      "law": "CAP-6",
+      "join": "share",
+      "changed": "new join",
+      "loose": [
+        4,
+        2,
+        2
+      ],
+      "site": 0,
+      "site places": 6,
+      "reading": {
+        "own_signature": {
+          "first between any pair": 1,
+          "first against stub": {
+            "g1:3@0": null,
+            "g3:22@0": 1,
+            "g6:122@0": 1,
+            "g7:122@0": 1,
+            "stub": null
+          },
+          "some strictly own knot was short before first difference": false
+        },
+        "own_births": {
+          "first between any pair": 1,
+          "first against stub": {
+            "g1:3@0": null,
+            "g3:22@0": 1,
+            "g6:122@0": 1,
+            "g7:122@0": 1,
+            "stub": null
+          },
+          "some strictly own knot was short before first difference": false
+        },
+        "receiver_inclusive_births": {
+          "first between any pair": null,
+          "first against stub": {
+            "g1:3@0": null,
+            "g3:22@0": null,
+            "g6:122@0": null,
+            "g7:122@0": null,
+            "stub": null
+          },
+          "some strictly own knot was short before first difference": null
+        },
+        "rounds": {
+          "g1:3@0": 14,
+          "g3:22@0": 13,
+          "g6:122@0": 14,
+          "g7:122@0": 13,
+          "stub": 14
+        },
+        "any-receiver-ancestor births in round four": {
+          "g1:3@0": 55,
+          "g3:22@0": 55,
+          "g6:122@0": 55,
+          "g7:122@0": 55,
+          "stub": 55
+        }
+      }
+    }
+  ],
+  "pilot": {
+    "one sender per configuration": [
+      {
+        "loose": [
+          1,
+          2,
+          2
+        ],
+        "site": 0,
+        "site places": 3,
+        "d": 2,
+        "law": "CAP-3",
+        "join": "meeting",
+        "seconds": 0.012,
+        "rounds": 16,
+        "final knots": 1593
+      },
+      {
+        "loose": [
+          1,
+          2,
+          2
+        ],
+        "site": 0,
+        "site places": 3,
+        "d": 3,
+        "law": "CAP-3",
+        "join": "meeting",
+        "seconds": 0.01422,
+        "rounds": 16,
+        "final knots": 2238
+      },
+      {
+        "loose": [
+          1,
+          2,
+          2
+        ],
+        "site": 0,
+        "site places": 3,
+        "d": 4,
+        "law": "CAP-3",
+        "join": "meeting",
+        "seconds": 0.01492,
+        "rounds": 16,
+        "final knots": 2525
+      },
+      {
+        "loose": [
+          1,
+          2,
+          2
+        ],
+        "site": 0,
+        "site places": 3,
+        "d": 5,
+        "law": "CAP-3",
+        "join": "meeting",
+        "seconds": 0.0142,
+        "rounds": 16,
+        "final knots": 2467
+      },
+      {
+        "loose": [
+          1,
+          1,
+          2,
+          2
+        ],
+        "site": 0,
+        "site places": 4,
+        "d": 5,
+        "law": "CAP-3",
+        "join": "meeting",
+        "seconds": 0.01468,
+        "rounds": 16,
+        "final knots": 2468
+      },
+      {
+        "loose": [
+          3,
+          2,
+          2
+        ],
+        "site": 0,
+        "site places": 5,
+        "d": 2,
+        "law": "CAP-6",
+        "join": "meeting",
+        "seconds": 0.08208,
+        "rounds": 16,
+        "final knots": 2380
+      },
+      {
+        "loose": [
+          3,
+          2,
+          2
+        ],
+        "site": 0,
+        "site places": 6,
+        "d": 2,
+        "law": "CAP-6",
+        "join": "meeting",
+        "seconds": 0.08071,
+        "rounds": 16,
+        "final knots": 2380
+      },
+      {
+        "loose": [
+          4,
+          2,
+          2
+        ],
+        "site": 0,
+        "site places": 6,
+        "d": 2,
+        "law": "CAP-6",
+        "join": "meeting",
+        "seconds": 0.02992,
+        "rounds": 8,
+        "final knots": 3178
+      },
+      {
+        "loose": [
+          4,
+          2,
+          2
+        ],
+        "site": 0,
+        "site places": 7,
+        "d": 2,
+        "law": "CAP-6",
+        "join": "meeting",
+        "seconds": 0.02991,
+        "rounds": 8,
+        "final knots": 3178
+      },
+      {
+        "loose": [
+          3,
+          2,
+          2
+        ],
+        "site": 0,
+        "site places": 5,
+        "d": 3,
+        "law": "CAP-6",
+        "join": "meeting",
+        "seconds": 0.08792,
+        "rounds": 16,
+        "final knots": 2564
+      },
+      {
+        "loose": [
+          3,
+          2,
+          2
+        ],
+        "site": 0,
+        "site places": 6,
+        "d": 3,
+        "law": "CAP-6",
+        "join": "meeting",
+        "seconds": 0.08696,
+        "rounds": 16,
+        "final knots": 2564
+      },
+      {
+        "loose": [
+          4,
+          2,
+          2
+        ],
+        "site": 0,
+        "site places": 6,
+        "d": 3,
+        "law": "CAP-6",
+        "join": "meeting",
+        "seconds": 0.04942,
+        "rounds": 9,
+        "final knots": 3788
+      },
+      {
+        "loose": [
+          4,
+          2,
+          2
+        ],
+        "site": 0,
+        "site places": 7,
+        "d": 3,
+        "law": "CAP-6",
+        "join": "meeting",
+        "seconds": 0.04113,
+        "rounds": 9,
+        "final knots": 3788
+      },
+      {
+        "loose": [
+          1,
+          2,
+          2
+        ],
+        "site": 1,
+        "site places": 4,
+        "d": 3,
+        "law": "CAP-3",
+        "join": "meeting",
+        "seconds": 0.00537,
+        "rounds": 16,
+        "final knots": 633
+      },
+      {
+        "loose": [
+          1,
+          2,
+          2
+        ],
+        "site": 0,
+        "site places": 3,
+        "d": 3,
+        "law": "CAP-3",
+        "join": "share",
+        "seconds": 0.0055,
+        "rounds": 16,
+        "final knots": 814
+      },
+      {
+        "loose": [
+          4,
+          2,
+          2
+        ],
+        "site": 1,
+        "site places": 4,
+        "d": 3,
+        "law": "CAP-6",
+        "join": "meeting",
+        "seconds": 0.08811,
+        "rounds": 16,
+        "final knots": 2226
+      },
+      {
+        "loose": [
+          4,
+          2,
+          2
+        ],
+        "site": 0,
+        "site places": 6,
+        "d": 3,
+        "law": "CAP-6",
+        "join": "share",
+        "seconds": 0.15352,
+        "rounds": 13,
+        "final knots": 3153
+      },
+      {
+        "loose": [
+          1,
+          2,
+          2
+        ],
+        "site": 0,
+        "site places": 3,
+        "d": 3,
+        "law": "ORD",
+        "join": "meeting",
+        "seconds": 0.01403,
+        "rounds": 16,
+        "final knots": 886
+      },
+      {
+        "loose": [
+          1,
+          2,
+          2
+        ],
+        "site": 0,
+        "site places": 3,
+        "d": 3,
+        "law": "REC-ONE-FEWER",
+        "join": "meeting",
+        "seconds": 0.01595,
+        "rounds": 13,
+        "final knots": 4188
+      }
+    ],
+    "twenty archive rows seconds": 0.00039,
+    "projected 200 growths at slowest pilot seconds": 30.7
+  },
+  "seconds": {
+    "read archive and compare features": 0.1481,
+    "six across all five senders and four link lengths": 1.6749,
+    "change inputs": 5.9347,
+    "entire check": 8.6518
+  },
+  "peak resident KiB": 50228
+}

@@ -1,0 +1,271 @@
+{
+  "raw versus independent baseline differences": [],
+  "tests": {
+    "same-length stub +1 equals unchanged stub, exact own births to round 16": 15,
+    "histories rebuilt": 720,
+    "rounds rebuilt": 11517,
+    "no short own knot through and including first departure, or end if none": 720,
+    "departures": 300,
+    "preceding round all mixed partners owed and held three": 300,
+    "every short mixed partner owed four, held three, descended from receiver and link": 300,
+    "extra own offshoots against unchanged stub equal lost joins at each affected own parent": 300,
+    "lost joins equal total excess over the slow count": 300
+  },
+  "strict birth signature includes": "parent-derived name, fresh distinction count and total places; compared as a multiset",
+  "references": {
+    "early": "stub one step farther with one extra loose distinction at link d",
+    "late": "stub two steps farther with one extra loose distinction at link d+1",
+    "no departure": "unchanged stub at same length"
+  },
+  "reference agreements": {
+    "no departure": {
+      "histories": 420,
+      "all observed rounds available in reference": 420,
+      "identical own birth signatures to reference over observed rounds": 420,
+      "identical own short counts to reference over observed rounds": 420
+    },
+    "early": {
+      "histories": 270,
+      "all observed rounds available in reference": 270,
+      "identical own birth signatures to reference over observed rounds": 270,
+      "identical own short counts to reference over observed rounds": 270,
+      "identical own birth signatures also with two extra loose distinctions at same-length stub": 270
+    },
+    "late": {
+      "histories": 30,
+      "all observed rounds available in reference": 30,
+      "identical own birth signatures to reference over observed rounds": 30,
+      "identical own short counts to reference over observed rounds": 30
+    }
+  },
+  "source labels of affected exclusively own parents": {
+    "[('A0', 'A1', 'A2')]": 300
+  },
+  "at departure, by round, (cancelled mixed groups, kept mixed groups, distinct short mixed partners, affected own parents, own births)": {
+    "5": {
+      "(2, 2, 1, 2, 9)": 54
+    },
+    "7": {
+      "(4, 2, 3, 4, 13)": 60
+    },
+    "9": {
+      "(6, 2, 5, 6, 17)": 60
+    },
+    "11": {
+      "(8, 2, 7, 8, 21)": 60
+    },
+    "13": {
+      "(10, 2, 9, 10, 25)": 60
+    },
+    "15": {
+      "(12, 2, 11, 12, 29)": 6
+    }
+  },
+  "two-knot sender at three steps": {
+    "CANCEL-WAIT": {
+      "departure": 7,
+      "own births": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        13,
+        16,
+        31,
+        36,
+        52,
+        62,
+        80,
+        94,
+        113,
+        130
+      ],
+      "own short": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        5,
+        0,
+        4,
+        0,
+        3,
+        0,
+        2,
+        0,
+        1
+      ],
+      "attempted mixed groups at departure": 6,
+      "kept": 2
+    },
+    "CANCEL-RETIRE": {
+      "departure": 7,
+      "own births": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        13,
+        16,
+        22,
+        26,
+        30,
+        34,
+        38,
+        42,
+        46,
+        50
+      ],
+      "own short": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        5,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "attempted mixed groups at departure": 6,
+      "kept": 2
+    },
+    "CANCEL-OFFSHOOT": {
+      "departure": 7,
+      "own births": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        13,
+        31,
+        37,
+        31,
+        35,
+        44,
+        53,
+        62,
+        71,
+        80
+      ],
+      "own short": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        5,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "attempted mixed groups at departure": 6,
+      "kept": 2
+    }
+  },
+  "bare receiver": {
+    "rounds": 16,
+    "birth counts": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+    ]
+  },
+  "ordinary-count controls": [
+    {
+      "sender": "copier",
+      "d": 2,
+      "rounds": 16,
+      "departure": null
+    },
+    {
+      "sender": "copier",
+      "d": 3,
+      "rounds": 16,
+      "departure": null
+    },
+    {
+      "sender": "copier",
+      "d": 6,
+      "rounds": 16,
+      "departure": null
+    },
+    {
+      "sender": "g7:113@0",
+      "d": 2,
+      "rounds": 16,
+      "departure": null
+    },
+    {
+      "sender": "g7:113@0",
+      "d": 3,
+      "rounds": 16,
+      "departure": null
+    },
+    {
+      "sender": "g7:113@0",
+      "d": 6,
+      "rounds": 16,
+      "departure": null
+    },
+    {
+      "sender": "stub",
+      "d": 2,
+      "rounds": 16,
+      "departure": null
+    },
+    {
+      "sender": "stub",
+      "d": 3,
+      "rounds": 16,
+      "departure": null
+    },
+    {
+      "sender": "stub",
+      "d": 6,
+      "rounds": 16,
+      "departure": null
+    }
+  ],
+  "runtime": {
+    "elapsed seconds": 18.632,
+    "peak resident KiB": 66804,
+    "single process address-space limit bytes": 1900000000
+  }
+}

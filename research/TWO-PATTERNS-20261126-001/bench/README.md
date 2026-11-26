@@ -37,14 +37,16 @@ round 7 or further.
   after round 7. The reading is of the first round a mark is heard, so it does not say that nothing more arrives
   after it; and the 19 and 24 cases not run are under the ordinary count with a shared distinction, where short
   and waiting knots pile up. The stop asked for is not met in what was read.
-- **One pair goes on making joint knots at a steady rate, through the 12 rounds read.** Two two-knot parts sharing
-  a distinction at one step make two joint knots in every round: 2, 4, 6, … 24, 208 knots in all, with no knot ever
-  short (at two steps a knot is short in the first two rounds, and one or two joint knots a round follow, by
-  the treatment). Since nothing is short, the cap of three and the three treatments do not act,
-  so this is one growth, not several; under "just enough for three", the two-knot part's home ration, no join is
-  kept after round 1. Retire every member of the other's descent after round 8, joint knots included, and the
-  first part's own births change in round 9. It shows the two still making joint knots, at a rate that does not
-  grow; not that one is told anything by the other.
+- **One pair goes on making joint knots through the 12 rounds read, and slowly.** Two two-knot parts sharing a
+  distinction at one step keep two joins in every round between each part's own knots and the rest, each part
+  makes two knots of its own a round, and the knots of both made in a round go 2, 4, 6, … 24, two more each round:
+  n(n + 1) of them after n rounds, 208 knots in all at round 12, with no knot ever short. (At two steps a knot is
+  short in the first two rounds, and the same kind of growth follows.) Since nothing is short, the cap of three
+  and the three treatments do not act, so this is one growth, not several; under "just enough for three", the
+  two-knot part's home ration, no join is kept after round 1. Retire every member of the other's descent after
+  round 8, joint knots included, and the first part's own births change in round 9. It shows the two still making
+  joint knots, in numbers that grow by a fixed step where the other joined growths here multiply or stop; not
+  that one is told anything by the other.
 
 So on these patterns the roadmap's fifth level is not reached in the rounds read. What the other *is* gets across
 early or not at all, and what lasts is only that joint knots go on being made.
@@ -187,7 +189,7 @@ other seven are all with waiting.
 2. *Cap of three and just enough, retiring or offshoots: apart after round 5, and retiring the other after round 4
    changes nothing.* Holds for the meeting (latest kept join in round 3) and for "just enough" with either join.
    Fails for the shared distinction under a cap of three: kept joins through round 12 and 6 readings changed by
-   retiring after round 8, the two-knot part's steady line.
+   retiring after round 8, the two-knot part's slow joint growth.
 3. *Waiting: some case still joined at round 8 where retiring the other then changes the own births.* Holds (4, 8,
    8 and 3 readings), but for a reason I had not seen: under "just enough" the knots are locked, not dealing.
 4. *The takes take in few cases.* Two never take, and their readings equal nothing taken in all 648 cases, as
@@ -214,8 +216,10 @@ other seven are all with waiting.
 - **Not run:** 19 of the 1,296 cases and 24 of the 324 of the take's second pass, all under the ordinary count with
   a shared distinction, stopped by the three-minute clock (waiting or short members pile up and one round's roster
   takes minutes). They are not negatives.
-- **The steady line is counted, not understood.** Twelve rounds, 208 knots. Whether it goes on, and whether
-  anything can be made to ride on it, is not known.
+- **The slow joint growth is counted, not understood.** Twelve rounds, 208 knots. Whether it goes on, whether it
+  is the two-knot start's own slow growth under the ordinary count carried over (bare, it has 24 members and 182
+  knots at round 12), and whether anything can be made to ride on it, are not known. The record's studies of slow
+  growth were not searched for it.
 
 ## After the advisor's review
 
@@ -223,7 +227,7 @@ The note was reviewed cold before it was committed ([question](advisor_question.
 What changed: the bound said correctly (3,000 knots) and the rounds read given, with the columns the bound cuts
 short named; "nothing arrives late" narrowed to "no mark is first heard late, in the cases read to round 7"; the
 first finding stated as one fact (no knot short) with its consequences; claims with "ever" scoped to nothing
-taken; the retiring said to include the joint knots; the steady line called one growth and its "without end"
+taken; the retiring said to include the joint knots; the two-knot parts' joint growth called one growth and its "without end"
 dropped; "short at once" given its counts and site marks counted apart from deeper ones; the bare patterns'
 survival under each law added; the comparison counts for the takes corrected (640, not 648); and "36 laws" said
 to be 18 distinct growths.

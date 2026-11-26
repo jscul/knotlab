@@ -3,6 +3,10 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 26 November 2026 · Two patterns in one start: a joint growth misdescribed for half an hour
+
+**The bench note of the study of two patterns in one start said two two-knot parts sharing a distinction make two joint knots in every round.** Two is the number of joins kept each round; the knots of both made in a round are 2, 4, 6 and on, two more each round. [The note](research/TWO-PATTERNS-20261126-001/bench/README.md) is corrected; its other counts stand.
+
 ## 26 November 2026 · A rating said "nothing" where the record has a thin case
 
 **A report to the owner, kept in a public note, said the program has no case of one lasting pattern changing another's course more than once.** The [time-as-a-fold study](research/TIME-AS-FOLD-20261125-001/decision.md) has 78 tests in which a made clock and a second part change each other's course at each of three returns, under rules that choose by the names of the start's distinctions; none survives every renumbering. The report stays as sent, with a notice ([the note](research/FAMILIES-THAT-MEET-20261126-001/third_step/README.md#report-as-sent)); the study that follows asks for a case under a law that uses no names ([request](research/TWO-PATTERNS-20261126-001/owner_request.md)).

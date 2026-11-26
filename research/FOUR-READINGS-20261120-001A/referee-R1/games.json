@@ -1,0 +1,62 @@
+{
+  "command": "ulimit -v 2097152 && OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 .venv/bin/python -B research/FOUR-READINGS-20261120-001A/referee-R1/games.py",
+  "timing_sample": {
+    "argument": "--sample",
+    "Born_entries": 64,
+    "eight_knot_settings": 4,
+    "elapsed_seconds": 0.004533293998974841,
+    "four_knot_instruction_candidates": 1024,
+    "local_strategies": 128,
+    "peak_kib": 19260,
+    "scalar_assignments": 64
+  },
+  "full_replay": {
+    "adversarial_checks": {
+      "disjoint input replaced with meeting input": "games.json.cube_all_pairs[3].inputs[1]: saved 4, rebuilt 7",
+      "illegal four-knot instructions in a list of unchanged size": "games.json.symmetric_four.exact_local_hidden_states[0]: saved 0, rebuilt 542",
+      "marginal-preserving Born weight change": "games.json.six[0].born_numerators_over_256[0]: saved 33, rebuilt 32"
+    },
+    "archive_sha256": "d7658c4f9a49f223faadde8cf9656793583d4ae360278357299b8a175ba2e831",
+    "eight": {
+      "disjoint_settings": 4,
+      "events_per_disjoint_setting": 16,
+      "events_per_meeting_setting": 8,
+      "full_record_TV": ["0", "0"],
+      "meeting_full_record_TV": ["0", "0"],
+      "meeting_settings": 12,
+      "ordered_cancellation": {
+        "forced_products": [1, -1],
+        "matched_distinctions_in_order": [2, 4, 7, 6]
+      }
+    },
+    "elapsed_seconds": 0.029220220996649005,
+    "four": {
+      "classical_instruction_lists": 32,
+      "distinct_full_record_TV": ["0", "0"],
+      "distinct_settings": 12,
+      "full_record_TV_with_equal": ["0", "0"],
+      "instructions_tested": 4096,
+      "settings_including_equal": 16
+    },
+    "peak_kib": 19788,
+    "six": {
+      "Born_entries": 576,
+      "Born_numerators_over_256": {"0": 504, "32": 72},
+      "biased_full_record_TV": ["1/6", "1/6"],
+      "complete_marginals": 18,
+      "full_record_TV": ["0", "0"],
+      "legal_local_strategies": 4096,
+      "local_best": 8,
+      "local_wins_histogram": {"0": 16, "2": 576, "4": 2016, "6": 1344, "8": 144},
+      "scalar_assignments": 512,
+      "scalar_best_game": 6,
+      "scalar_best_rules": 5,
+      "scalar_histograms": {
+        "1_rules_0_pairs": 96,
+        "3_rules_0_pairs": 32,
+        "3_rules_2_pairs": 288,
+        "5_rules_6_pairs": 96
+      }
+    }
+  }
+}

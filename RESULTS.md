@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**408 current results** and 5 superseded ones, from 642 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**408 current results** and 5 superseded ones, from 643 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -31,7 +31,7 @@ How to read an entry:
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 26 results
 - [Notes](#notes): 6 self-contained notes
-- [Epics](#epics): all 642 epics with their closures
+- [Epics](#epics): all 643 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -2007,6 +2007,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-25 | Can a parity knot supply a phase-sensitive reading? (`NATIVE-PHASE-READ-20261125-001`) | — | [folder](research/NATIVE-PHASE-READ-20261125-001/) |
 | 2026-11-25 | Time as a fold: a made pattern that counts another pattern's returns (`TIME-AS-FOLD-20261125-001`) | [closure](proofs/TIME-AS-FOLD-20261125-001Z/TIME-AS-FOLD-20261125-001Z-P001_synthesis/proof.md) | [folder](research/TIME-AS-FOLD-20261125-001/) |
 | 2026-11-25 | Which weighting "it's random" means: both countings side by side, and whether a growth law fixes one (`TWO-COUNTINGS-20261125-001`) | [closure](proofs/TWO-COUNTINGS-20261125-001Z/TWO-COUNTINGS-20261125-001Z-P001_synthesis/proof.md) | [folder](research/TWO-COUNTINGS-20261125-001/) |
+| 2026-11-25 | Do the signed knot laws supply the amplitudes and four detector settings? (`WEIGHTED-KNOT-FOUR-SETTINGS-20261125-001`) | — | [folder](research/WEIGHTED-KNOT-FOUR-SETTINGS-20261125-001/) |
 | 2026-11-25 | What a birth must carry for a made pattern to read what it meets (`WHAT-A-BIRTH-CARRIES-20261125-001`) | [closure](proofs/WHAT-A-BIRTH-CARRIES-20261125-001Z/WHAT-A-BIRTH-CARRIES-20261125-001Z-P001_synthesis/proof.md) | [folder](research/WHAT-A-BIRTH-CARRIES-20261125-001/) |
 | 2026-11-25 | The rosters that widen (`WIDENING-ROSTERS-20261125-001`) | [closure](proofs/WIDENING-ROSTERS-20261125-001Z/WIDENING-ROSTERS-20261125-001Z-P001_synthesis/proof.md) | [folder](research/WIDENING-ROSTERS-20261125-001/) |
 

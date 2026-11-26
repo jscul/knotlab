@@ -329,6 +329,7 @@ evidence: results and their status come from the records each entry links.
 | [A271](#a271--reuse-the-signed-witness-factor-as-a-three-reader-detector) | Reuse the signed witness factor as a three-reader detector | scaffold | Assumed |
 | [A272](#a272--sum-an-unused-distinction-before-reading-its-outcome) | Sum an unused distinction before reading its outcome | scaffold | Assumed |
 | [A273](#a273--compare-the-child-payments-with-the-private-pair-parities) | Compare the child payments with the private pair parities | scaffold | Assumed |
+| [A274](#a274--a-cap-of-any-size-on-the-fresh-distinctions-a-birth-receives) | A cap of any size on the fresh distinctions a birth receives | scaffold | Assumed |
 
 ## Entries
 
@@ -5673,3 +5674,14 @@ evidence: results and their status come from the records each entry links.
 - **Challenge.** Substitute the exact ternary start, read all six private bits, or use each of the eight choices of a single paid distinction at every parent. Reverse the birth ordering and vary the starting holdings.
 - **History.**
   - 2026-11-25 · The three private-pair parities allowed four words. Every choice of three actual payments allowed eight. Neither tested sign-selection operation was required by all births or all joins.
+
+### A274 · A cap of any size on the fresh distinctions a birth receives
+
+**Assumed** · 2026-11-26 · scaffold
+
+- **Statement.** A ration added by hand for a check: a birth receives what the ordinary count gives it, but at most c fresh distinctions, for a chosen whole number c. The record's cap of three is the case c = 3; here c runs from 2 to 8. Nothing in the model supplies c.
+- **Why.** Adopted by the thread on 26 November 2026 in the first step of `FAMILIES-THAT-MEET-20261126-001`. Under the ordinary count every made knot receives as many fresh distinctions as it is asked for joins, so no made knot is ever short and, on the generator study's start, no family's making depends on another's. A cap is the plainest rule under which a made knot can be asked for more than it holds.
+- **Rests on it.** The finding that on the generator study's 21-knot start the first family's side makes something else when the second family's own original is changed, for every cap from 4 to 8 and no cap below or above ([the first step](../research/FAMILIES-THAT-MEET-20261126-001/first_step/README.md)).
+- **Challenge.** Swap the cap for another rule that bounds what a birth receives (a cap on places; a ration that depends on the parents' holdings), and for a cap that a growth could set for itself. The finding is about the model only so far as it survives. Whether lasting families exist under any cap is open.
+- **History.**
+  - 2026-11-26 · Entered with the first step of `FAMILIES-THAT-MEET-20261126-001`. Swapped within it: c from 2 to 8 and no cap, three treatments of short knots, both knot laws. What survived: a difference at every c from 4 to 8, none at 2, 3 or without a cap.

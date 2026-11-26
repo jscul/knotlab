@@ -1,0 +1,4307 @@
+{
+ "inputs": [
+  "phase1_grown.jsonl.gz",
+  "phase2_grown.jsonl.gz"
+ ],
+ "prefix_per_phase": 96,
+ "basis": "For each kind of birth, P(r) = sum a[j] binom(r,j) in absolute round r.",
+ "late_fit": "Through the final D rounds; checked backward until the preceding mismatch.",
+ "descriptions": {
+  "exact": "All coefficients for every kind of birth.",
+  "support": "Only the kinds with a nonzero polynomial.",
+  "degrees": "The degree for each kind, including degree zero.",
+  "constants_and_growing": "The exact value of each constant. Every other count is called growing.",
+  "constants_and_degrees": "The exact constants and the degrees of the growing counts.",
+  "constants_and_leading_coefficients": "The degree and highest nonzero coefficient for each kind.",
+  "all_differences": "Coefficients of orders one and higher for each kind; ignores every constant term.",
+  "constants_and_all_growing_differences": "Exact constant counts and all coefficients above order zero for each growing count."
+ },
+ "nested": "In each round of a suffix through the last common round, either multiset contains the other. The direction may vary. A nonempty such suffix exists exactly when the last common multisets are nested.",
+ "weighting": "One per census start, one per distinct unordered pair within each class. Reference comparisons include the reference itself when present.",
+ "scope": "Each phase and dimension separately. Both references have dimension two. Reference comparisons in other dimensions are descriptive only.",
+ "reference_data": {
+  "sig0": {
+   "one_three_place_knot": {
+    "start": {
+     "n knots": 1,
+     "index": 0,
+     "stars": [
+      [
+       0,
+       1,
+       2
+      ]
+     ]
+    },
+    "polynomials": [
+     [
+      [
+       "offshoot",
+       1,
+       2,
+       3
+      ],
+      [
+       2
+      ]
+     ],
+     [
+      [
+       "join",
+       2,
+       2,
+       4
+      ],
+      [
+       -5,
+       1
+      ]
+     ]
+    ],
+    "last_read": 20,
+    "counts_at_last_read": [
+     [
+      [
+       "offshoot",
+       1,
+       2,
+       3
+      ],
+      2
+     ],
+     [
+      [
+       "join",
+       2,
+       2,
+       4
+      ],
+      15
+     ]
+    ]
+   },
+   "two_three_place_knots_sharing_one_distinction": {
+    "start": {
+     "n knots": 2,
+     "index": 0,
+     "stars": [
+      [
+       0,
+       1,
+       2
+      ],
+      [
+       0,
+       3,
+       4
+      ]
+     ]
+    },
+    "polynomials": [
+     [
+      [
+       "offshoot",
+       1,
+       2,
+       3
+      ],
+      [
+       4
+      ]
+     ],
+     [
+      [
+       "join",
+       2,
+       2,
+       4
+      ],
+      [
+       -2,
+       2
+      ]
+     ]
+    ],
+    "last_read": 20,
+    "counts_at_last_read": [
+     [
+      [
+       "offshoot",
+       1,
+       2,
+       3
+      ],
+      4
+     ],
+     [
+      [
+       "join",
+       2,
+       2,
+       4
+      ],
+      38
+     ]
+    ]
+   }
+  },
+  "sig1": {
+   "one_three_place_knot": {
+    "start": {
+     "n knots": 1,
+     "index": 0,
+     "stars": [
+      [
+       0,
+       1,
+       2
+      ]
+     ]
+    },
+    "polynomials": [
+     [
+      [
+       [
+        "offshoot",
+        1,
+        2,
+        3
+       ],
+       [
+        [
+         "offshoot",
+         1,
+         2,
+         3
+        ]
+       ]
+      ],
+      [
+       2
+      ]
+     ],
+     [
+      [
+       [
+        "join",
+        2,
+        2,
+        4
+       ],
+       [
+        [
+         "join",
+         2,
+         2,
+         4
+        ],
+        [
+         "offshoot",
+         1,
+         2,
+         3
+        ]
+       ]
+      ],
+      [
+       2
+      ]
+     ],
+     [
+      [
+       [
+        "join",
+        2,
+        2,
+        4
+       ],
+       [
+        [
+         "join",
+         2,
+         2,
+         4
+        ],
+        [
+         "join",
+         2,
+         2,
+         4
+        ]
+       ]
+      ],
+      [
+       -7,
+       1
+      ]
+     ]
+    ],
+    "last_read": 20,
+    "counts_at_last_read": [
+     [
+      [
+       [
+        "offshoot",
+        1,
+        2,
+        3
+       ],
+       [
+        [
+         "offshoot",
+         1,
+         2,
+         3
+        ]
+       ]
+      ],
+      2
+     ],
+     [
+      [
+       [
+        "join",
+        2,
+        2,
+        4
+       ],
+       [
+        [
+         "join",
+         2,
+         2,
+         4
+        ],
+        [
+         "offshoot",
+         1,
+         2,
+         3
+        ]
+       ]
+      ],
+      2
+     ],
+     [
+      [
+       [
+        "join",
+        2,
+        2,
+        4
+       ],
+       [
+        [
+         "join",
+         2,
+         2,
+         4
+        ],
+        [
+         "join",
+         2,
+         2,
+         4
+        ]
+       ]
+      ],
+      13
+     ]
+    ]
+   },
+   "two_three_place_knots_sharing_one_distinction": {
+    "start": {
+     "n knots": 2,
+     "index": 0,
+     "stars": [
+      [
+       0,
+       1,
+       2
+      ],
+      [
+       0,
+       3,
+       4
+      ]
+     ]
+    },
+    "polynomials": [
+     [
+      [
+       [
+        "offshoot",
+        1,
+        2,
+        3
+       ],
+       [
+        [
+         "offshoot",
+         1,
+         2,
+         3
+        ]
+       ]
+      ],
+      [
+       4
+      ]
+     ],
+     [
+      [
+       [
+        "join",
+        2,
+        2,
+        4
+       ],
+       [
+        [
+         "join",
+         2,
+         2,
+         4
+        ],
+        [
+         "offshoot",
+         1,
+         2,
+         3
+        ]
+       ]
+      ],
+      [
+       4
+      ]
+     ],
+     [
+      [
+       [
+        "join",
+        2,
+        2,
+        4
+       ],
+       [
+        [
+         "join",
+         2,
+         2,
+         4
+        ],
+        [
+         "join",
+         2,
+         2,
+         4
+        ]
+       ]
+      ],
+      [
+       -6,
+       2
+      ]
+     ]
+    ],
+    "last_read": 20,
+    "counts_at_last_read": [
+     [
+      [
+       [
+        "offshoot",
+        1,
+        2,
+        3
+       ],
+       [
+        [
+         "offshoot",
+         1,
+         2,
+         3
+        ]
+       ]
+      ],
+      4
+     ],
+     [
+      [
+       [
+        "join",
+        2,
+        2,
+        4
+       ],
+       [
+        [
+         "join",
+         2,
+         2,
+         4
+        ],
+        [
+         "offshoot",
+         1,
+         2,
+         3
+        ]
+       ]
+      ],
+      4
+     ],
+     [
+      [
+       [
+        "join",
+        2,
+        2,
+        4
+       ],
+       [
+        [
+         "join",
+         2,
+         2,
+         4
+        ],
+        [
+         "join",
+         2,
+         2,
+         4
+        ]
+       ]
+      ],
+      34
+     ]
+    ]
+   }
+  }
+ },
+ "phase1": {
+  "raw_starts_read": 96,
+  "cells": {
+   "D1_sig0": {
+    "starts": 12,
+    "descriptions": {
+     "exact": {
+      "classes": 8,
+      "same_partition_as_constants_and_growing": true,
+      "reference_memberships": {
+       "one_three_place_knot": 0,
+       "two_three_place_knots_sharing_one_distinction": 0
+      }
+     },
+     "support": {
+      "classes": 6,
+      "same_partition_as_constants_and_growing": false,
+      "reference_memberships": {
+       "one_three_place_knot": 0,
+       "two_three_place_knots_sharing_one_distinction": 0
+      }
+     },
+     "degrees": {
+      "classes": 6,
+      "same_partition_as_constants_and_growing": false,
+      "reference_memberships": {
+       "one_three_place_knot": 0,
+       "two_three_place_knots_sharing_one_distinction": 0
+      }
+     },
+     "constants_and_growing": {
+      "classes": 8,
+      "same_partition_as_constants_and_growing": true,
+      "reference_memberships": {
+       "one_three_place_knot": 0,
+       "two_three_place_knots_sharing_one_distinction": 0
+      }
+     },
+     "constants_and_degrees": {
+      "classes": 8,
+      "same_partition_as_constants_and_growing": true,
+      "reference_memberships": {
+       "one_three_place_knot": 0,
+       "two_three_place_knots_sharing_one_distinction": 0
+      }
+     },
+     "constants_and_leading_coefficients": {
+      "classes": 8,
+      "same_partition_as_constants_and_growing": true,
+      "reference_memberships": {
+       "one_three_place_knot": 0,
+       "two_three_place_knots_sharing_one_distinction": 0
+      }
+     },
+     "all_differences": {
+      "classes": 6,
+      "same_partition_as_constants_and_growing": false,
+      "reference_memberships": {
+       "one_three_place_knot": 0,
+       "two_three_place_knots_sharing_one_distinction": 0
+      }
+     },
+     "constants_and_all_growing_differences": {
+      "classes": 8,
+      "same_partition_as_constants_and_growing": true,
+      "reference_memberships": {
+       "one_three_place_knot": 0,
+       "two_three_place_knots_sharing_one_distinction": 0
+      }
+     }
+    },
+    "minimum_observations_beyond_interpolation": 14,
+    "common_reference_comparison": {
+     "reference_by_reference": {
+      "one_three_place_knot": {
+       "coarse_by_nested": {
+        "coarse=False, nested=False": 12
+       },
+       "first_agreeing_round": {
+        "never": 12
+       },
+       "nested_at_last_common": 0,
+       "equal_at_last_common": 0,
+       "equal_polynomials": 0,
+       "common_round": {
+        "20": 12
+       }
+      },
+      "two_three_place_knots_sharing_one_distinction": {
+       "coarse_by_nested": {
+        "coarse=False, nested=False": 12
+       },
+       "first_agreeing_round": {
+        "never": 12
+       },
+       "nested_at_last_common": 0,
+       "equal_at_last_common": 0,
+       "equal_polynomials": 0,
+       "common_round": {
+        "20": 12
+       }
+      }
+     },
+     "nested_with_references": {
+      "neither": 12
+     },
+     "first_example_comparable_to_lone_only": null
+    },
+    "classes_if_nonconstant_polynomials_are_replaced_by_growing": [
+     {
+      "starts": 3,
+      "pairs": 3,
+      "different_exact_polynomials": 1,
+      "incomparable": {
+       "last_common_incomparable": 0,
+       "some_jointly_settled_incomparable": 0,
+       "every_jointly_settled_incomparable": 0,
+       "no_jointly_settled_round": 0
+      },
+      "last_common_witness": null
+     },
+     {
+      "starts": 2,
+      "pairs": 1,
+      "different_exact_polynomials": 1,
+      "incomparable": {
+       "last_common_incomparable": 0,
+       "some_jointly_settled_incomparable": 0,
+       "every_jointly_settled_incomparable": 0,
+       "no_jointly_settled_round": 0
+      },
+      "last_common_witness": null
+     },
+     {
+      "starts": 2,
+      "pairs": 1,
+      "different_exact_polynomials": 1,
+      "incomparable": {
+       "last_common_incomparable": 0,
+       "some_jointly_settled_incomparable": 0,
+       "every_jointly_settled_incomparable": 0,
+       "no_jointly_settled_round": 0
+      },
+      "last_common_witness": null
+     },
+     {
+      "starts": 1,
+      "pairs": 0,
+      "different_exact_polynomials": 1,
+      "incomparable": {
+       "last_common_incomparable": 0,
+       "some_jointly_settled_incomparable": 0,
+       "every_jointly_settled_incomparable": 0,
+       "no_jointly_settled_round": 0
+      },
+      "last_common_witness": null
+     },
+     {
+      "starts": 1,
+      "pairs": 0,
+      "different_exact_polynomials": 1,
+      "incomparable": {
+       "last_common_incomparable": 0,
+       "some_jointly_settled_incomparable": 0,
+       "every_jointly_settled_incomparable": 0,
+       "no_jointly_settled_round": 0
+      },
+      "last_common_witness": null
+     },
+     {
+      "starts": 1,
+      "pairs": 0,
+      "different_exact_polynomials": 1,
+      "incomparable": {
+       "last_common_incomparable": 0,
+       "some_jointly_settled_incomparable": 0,
+       "every_jointly_settled_incomparable": 0,
+       "no_jointly_settled_round": 0
+      },
+      "last_common_witness": null
+     },
+     {
+      "starts": 1,
+      "pairs": 0,
+      "different_exact_polynomials": 1,
+      "incomparable": {
+       "last_common_incomparable": 0,
+       "some_jointly_settled_incomparable": 0,
+       "every_jointly_settled_incomparable": 0,
+       "no_jointly_settled_round": 0
+      },
+      "last_common_witness": null
+     },
+     {
+      "starts": 1,
+      "pairs": 0,
+      "different_exact_polynomials": 1,
+      "incomparable": {
+       "last_common_incomparable": 0,
+       "some_jointly_settled_incomparable": 0,
+       "every_jointly_settled_incomparable": 0,
+       "no_jointly_settled_round": 0
+      },
+      "last_common_witness": null
+     }
+    ]
+   },
+   "D1_sig1": {
+    "starts": 12,
+    "descriptions": {
+     "exact": {
+      "classes": 8,
+      "same_partition_as_constants_and_growing": true,
+      "reference_memberships": {
+       "one_three_place_knot": 0,
+       "two_three_place_knots_sharing_one_distinction": 0
+      }
+     },
+     "support": {
+      "classes": 6,
+      "same_partition_as_constants_and_growing": false,
+      "reference_memberships": {
+       "one_three_place_knot": 0,
+       "two_three_place_knots_sharing_one_distinction": 0
+      }
+     },
+     "degrees": {
+      "classes": 6,
+      "same_partition_as_constants_and_growing": false,
+      "reference_memberships": {
+       "one_three_place_knot": 0,
+       "two_three_place_knots_sharing_one_distinction": 0
+      }
+     },
+     "constants_and_growing": {
+      "classes": 8,
+      "same_partition_as_constants_and_growing": true,
+      "reference_memberships": {
+       "one_three_place_knot": 0,
+       "two_three_place_knots_sharing_one_distinction": 0
+      }
+     },
+     "constants_and_degrees": {
+      "classes": 8,
+      "same_partition_as_constants_and_growing": true,
+      "reference_memberships": {
+       "one_three_place_knot": 0,
+       "two_three_place_knots_sharing_one_distinction": 0
+      }
+     },
+     "constants_and_leading_coefficients": {
+      "classes": 8,
+      "same_partition_as_constants_and_growing": true,
+      "reference_memberships": {
+       "one_three_place_knot": 0,
+       "two_three_place_knots_sharing_one_distinction": 0
+      }
+     },
+     "all_differences": {
+      "classes": 6,
+      "same_partition_as_constants_and_growing": false,
+      "reference_memberships": {
+       "one_three_place_knot": 0,
+       "two_three_place_knots_sharing_one_distinction": 0
+      }
+     },
+     "constants_and_all_growing_differences": {
+      "classes": 8,
+      "same_partition_as_constants_and_growing": true,
+      "reference_memberships": {
+       "one_three_place_knot": 0,
+       "two_three_place_knots_sharing_one_distinction": 0
+      }
+     }
+    },
+    "minimum_observations_beyond_interpolation": 13,
+    "common_reference_comparison": {
+     "reference_by_reference": {
+      "one_three_place_knot": {
+       "coarse_by_nested": {
+        "coarse=False, nested=False": 12
+       },
+       "first_agreeing_round": {
+        "never": 12
+       },
+       "nested_at_last_common": 0,
+       "equal_at_last_common": 0,
+       "equal_polynomials": 0,
+       "common_round": {
+        "20": 12
+       }
+      },
+      "two_three_place_knots_sharing_one_distinction": {
+       "coarse_by_nested": {
+        "coarse=False, nested=False": 12
+       },
+       "first_agreeing_round": {
+        "never": 12
+       },
+       "nested_at_last_common": 0,
+       "equal_at_last_common": 0,
+       "equal_polynomials": 0,
+       "common_round": {
+        "20": 12
+       }
+      }
+     },
+     "nested_with_references": {
+      "neither": 12
+     },
+     "first_example_comparable_to_lone_only": null
+    },
+    "classes_if_nonconstant_polynomials_are_replaced_by_growing": [
+     {
+      "starts": 3,
+      "pairs": 3,
+      "different_exact_polynomials": 1,
+      "incomparable": {
+       "last_common_incomparable": 0,
+       "some_jointly_settled_incomparable": 0,
+       "every_jointly_settled_incomparable": 0,
+       "no_jointly_settled_round": 0
+      },
+      "last_common_witness": null
+     },
+     {
+      "starts": 2,
+      "pairs": 1,
+      "different_exact_polynomials": 1,
+      "incomparable": {
+       "last_common_incomparable": 0,
+       "some_jointly_settled_incomparable": 0,
+       "every_jointly_settled_incomparable": 0,
+       "no_jointly_settled_round": 0
+      },
+      "last_common_witness": null
+     },
+     {
+      "starts": 2,
+      "pairs": 1,
+      "different_exact_polynomials": 1,
+      "incomparable": {
+       "last_common_incomparable": 0,
+       "some_jointly_settled_incomparable": 0,
+       "every_jointly_settled_incomparable": 0,
+       "no_jointly_settled_round": 0
+      },
+      "last_common_witness": null
+     },
+     {
+      "starts": 1,
+      "pairs": 0,
+      "different_exact_polynomials": 1,
+      "incomparable": {
+       "last_common_incomparable": 0,
+       "some_jointly_settled_incomparable": 0,
+       "every_jointly_settled_incomparable": 0,
+       "no_jointly_settled_round": 0
+      },
+      "last_common_witness": null
+     },
+     {
+      "starts": 1,
+      "pairs": 0,
+      "different_exact_polynomials": 1,
+      "incomparable": {
+       "last_common_incomparable": 0,
+       "some_jointly_settled_incomparable": 0,
+       "every_jointly_settled_incomparable": 0,
+       "no_jointly_settled_round": 0
+      },
+      "last_common_witness": null
+     },
+     {
+      "starts": 1,
+      "pairs": 0,
+      "different_exact_polynomials": 1,
+      "incomparable": {
+       "last_common_incomparable": 0,
+       "some_jointly_settled_incomparable": 0,
+       "every_jointly_settled_incomparable": 0,
+       "no_jointly_settled_round": 0
+      },
+      "last_common_witness": null
+     },
+     {
+      "starts": 1,
+      "pairs": 0,
+      "different_exact_polynomials": 1,
+      "incomparable": {
+       "last_common_incomparable": 0,
+       "some_jointly_settled_incomparable": 0,
+       "every_jointly_settled_incomparable": 0,
+       "no_jointly_settled_round": 0
+      },
+      "last_common_witness": null
+     },
+     {
+      "starts": 1,
+      "pairs": 0,
+      "different_exact_polynomials": 1,
+      "incomparable": {
+       "last_common_incomparable": 0,
+       "some_jointly_settled_incomparable": 0,
+       "every_jointly_settled_incomparable": 0,
+       "no_jointly_settled_round": 0
+      },
+      "last_common_witness": null
+     }
+    ]
+   },
+   "D2_sig0": {
+    "starts": 59,
+    "descriptions": {
+     "exact": {
+      "classes": 29,
+      "same_partition_as_constants_and_growing": false,
+      "reference_memberships": {
+       "one_three_place_knot": 5,
+       "two_three_place_knots_sharing_one_distinction": 2
+      }
+     },
+     "support": {
+      "classes": 4,
+      "same_partition_as_constants_and_growing": false,
+      "reference_memberships": {
+       "one_three_place_knot": 46,
+       "two_three_place_knots_sharing_one_distinction": 46
+      }
+     },
+     "degrees": {
+      "classes": 4,
+      "same_partition_as_constants_and_growing": false,
+      "reference_memberships": {
+       "one_three_place_knot": 46,
+       "two_three_place_knots_sharing_one_distinction": 46
+      }
+     },
+     "constants_and_growing": {
+      "classes": 5,
+      "same_partition_as_constants_and_growing": true,
+      "reference_memberships": {
+       "one_three_place_knot": 19,
+       "two_three_place_knots_sharing_one_distinction": 27
+      }
+     },
+     "constants_and_degrees": {
+      "classes": 5,
+      "same_partition_as_constants_and_growing": true,
+      "reference_memberships": {
+       "one_three_place_knot": 19,
+       "two_three_place_knots_sharing_one_distinction": 27
+      }
+     },
+     "constants_and_leading_coefficients": {
+      "classes": 5,
+      "same_partition_as_constants_and_growing": true,
+      "reference_memberships": {
+       "one_three_place_knot": 19,
+       "two_three_place_knots_sharing_one_distinction": 27
+      }
+     },
+     "all_differences": {
+      "classes": 5,
+      "same_partition_as_constants_and_growing": true,
+      "reference_memberships": {
+       "one_three_place_knot": 19,
+       "two_three_place_knots_sharing_one_distinction": 27
+      }
+     },
+     "constants_and_all_growing_differences": {
+      "classes": 5,
+      "same_partition_as_constants_and_growing": true,
+      "reference_memberships": {
+       "one_three_place_knot": 19,
+       "two_three_place_knots_sharing_one_distinction": 27
+      }
+     }
+    },
+    "minimum_observations_beyond_interpolation": 10,
+    "common_reference_comparison": {
+     "reference_by_reference": {
+      "one_three_place_knot": {
+       "coarse_by_nested": {
+        "coarse=True, nested=True": 19,
+        "coarse=False, nested=True": 38,
+        "coarse=False, nested=False": 2
+       },
+       "first_agreeing_round": {
+        "1": 16,
+        "4": 17,
+        "3": 11,
+        "2": 1,
+        "6": 5,
+        "never": 2,
+        "8": 1,
+        "5": 4,
+        "9": 1,
+        "7": 1
+       },
+       "nested_at_last_common": 57,
+       "equal_at_last_common": 5,
+       "equal_polynomials": 5,
+       "common_round": {
+        "20": 59
+       }
+      },
+      "two_three_place_knots_sharing_one_distinction": {
+       "coarse_by_nested": {
+        "coarse=False, nested=True": 19,
+        "coarse=True, nested=True": 27,
+        "coarse=False, nested=False": 13
+       },
+       "first_agreeing_round": {
+        "4": 14,
+        "1": 3,
+        "2": 3,
+        "never": 13,
+        "6": 12,
+        "8": 1,
+        "3": 5,
+        "5": 7,
+        "7": 1
+       },
+       "nested_at_last_common": 46,
+       "equal_at_last_common": 2,
+       "equal_polynomials": 2,
+       "common_round": {
+        "20": 59
+       }
+      }
+     },
+     "nested_with_references": {
+      "both": 46,
+      "one_three_place_knot": 11,
+      "neither": 2
+     },
+     "first_example_comparable_to_lone_only": {
+      "start": {
+       "n knots": 3,
+       "index": 1,
+       "stars": [
+        [
+         0,
+         1,
+         2
+        ],
+        [
+         0,
+         3,
+         4
+        ],
+        [
+         1,
+         5,
+         6,
+         7
+        ]
+       ]
+      },
+      "round": 20,
+      "counts": [
+       [
+        [
+         "offshoot",
+         1,
+         2,
+         3
+        ],
+        3
+       ],
+       [
+        [
+         "join",
+         3,
+         1,
+         4
+        ],
+        1
+       ],
+       [
+        [
+         "join",
+         2,
+         2,
+         4
+        ],
+        20
+       ],
+       [
+        [
+         "join",
+         2,
+         3,
+         5
+        ],
+        1
+       ]
+      ],
+      "reference_counts": {
+       "one_three_place_knot": [
+        [
+         [
+          "offshoot",
+          1,
+          2,
+          3
+         ],
+         2
+        ],
+        [
+         [
+          "join",
+          2,
+          2,
+          4
+         ],
+         15
+        ]
+       ],
+       "two_three_place_knots_sharing_one_distinction": [
+        [
+         [
+          "offshoot",
+          1,
+          2,
+          3
+         ],
+         4
+        ],
+        [
+         [
+          "join",
+          2,
+          2,
+          4
+         ],
+         38
+        ]
+       ]
+      }
+     }
+    },
+    "classes_if_nonconstant_polynomials_are_replaced_by_growing": [
+     {
+      "starts": 27,
+      "pairs": 351,
+      "different_exact_polynomials": 12,
+      "incomparable": {
+       "last_common_incomparable": 0,
+       "some_jointly_settled_incomparable": 0,
+       "every_jointly_settled_incomparable": 0,
+       "no_jointly_settled_round": 0
+      },
+      "last_common_witness": null,
+      "description": [
+       [
+        [
+         "offshoot",
+         1,
+         2,
+         3
+        ],
+        [
+         "constant",
+         4
+        ]
+       ],
+       [
+        [
+         "join",
+         2,
+         2,
+         4
+        ],
+        [
+         "growing"
+        ]
+       ]
+      ]
+     },
+     {
+      "starts": 19,
+      "pairs": 171,
+      "different_exact_polynomials": 8,
+      "incomparable": {
+       "last_common_incomparable": 0,
+       "some_jointly_settled_incomparable": 0,
+       "every_jointly_settled_incomparable": 0,
+       "no_jointly_settled_round": 0
+      },
+      "last_common_witness": null,
+      "description": [
+       [
+        [
+         "offshoot",
+         1,
+         2,
+         3
+        ],
+        [
+         "constant",
+         2
+        ]
+       ],
+       [
+        [
+         "join",
+         2,
+         2,
+         4
+        ],
+        [
+         "growing"
+        ]
+       ]
+      ]
+     },
+     {
+      "starts": 9,
+      "pairs": 36,
+      "different_exact_polynomials": 5,
+      "incomparable": {
+       "last_common_incomparable": 0,
+       "some_jointly_settled_incomparable": 0,
+       "every_jointly_settled_incomparable": 0,
+       "no_jointly_settled_round": 0
+      },
+      "last_common_witness": null,
+      "description": [
+       [
+        [
+         "offshoot",
+         1,
+         2,
+         3
+        ],
+        [
+         "constant",
+         3
+        ]
+       ],
+       [
+        [
+         "join",
+         3,
+         1,
+         4
+        ],
+        [
+         "constant",
+         1
+        ]
+       ],
+       [
+        [
+         "join",
+         2,
+         2,
+         4
+        ],
+        [
+         "growing"
+        ]
+       ],
+       [
+        [
+         "join",
+         2,
+         3,
+         5
+        ],
+        [
+         "constant",
+         1
+        ]
+       ]
+      ]
+     },
+     {
+      "starts": 3,
+      "pairs": 3,
+      "different_exact_polynomials": 3,
+      "incomparable": {
+       "last_common_incomparable": 0,
+       "some_jointly_settled_incomparable": 0,
+       "every_jointly_settled_incomparable": 0,
+       "no_jointly_settled_round": 0
+      },
+      "last_common_witness": null,
+      "description": [
+       [
+        [
+         "offshoot",
+         1,
+         2,
+         3
+        ],
+        [
+         "constant",
+         3
+        ]
+       ],
+       [
+        [
+         "join",
+         2,
+         1,
+         3
+        ],
+        [
+         "constant",
+         1
+        ]
+       ],
+       [
+        [
+         "join",
+         2,
+         2,
+         4
+        ],
+        [
+         "growing"
+        ]
+       ]
+      ]
+     },
+     {
+      "starts": 1,
+      "pairs": 0,
+      "different_exact_polynomials": 1,
+      "incomparable": {
+       "last_common_incomparable": 0,
+       "some_jointly_settled_incomparable": 0,
+       "every_jointly_settled_incomparable": 0,
+       "no_jointly_settled_round": 0
+      },
+      "last_common_witness": null,
+      "description": [
+       [
+        [
+         "offshoot",
+         1,
+         2,
+         3
+        ],
+        [
+         "constant",
+         2
+        ]
+       ],
+       [
+        [
+         "join",
+         2,
+         3,
+         5
+        ],
+        [
+         "constant",
+         4
+        ]
+       ],
+       [
+        [
+         "join",
+         2,
+         4,
+         6
+        ],
+        [
+         "growing"
+        ]
+       ],
+       [
+        [
+         "join",
+         3,
+         2,
+         5
+        ],
+        [
+         "constant",
+         2
+        ]
+       ],
+       [
+        [
+         "join",
+         3,
+         3,
+         6
+        ],
+        [
+         "growing"
+        ]
+       ],
+       [
+        [
+         "join",
+         4,
+         2,
+         6
+        ],
+        [
+         "growing"
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   "D2_sig1": {
+    "starts": 59,
+    "descriptions": {
+     "exact": {
+      "classes": 29,
+      "same_partition_as_constants_and_growing": false,
+      "reference_memberships": {
+       "one_three_place_knot": 5,
+       "two_three_place_knots_sharing_one_distinction": 2
+      }
+     },
+     "support": {
+      "classes": 4,
+      "same_partition_as_constants_and_growing": false,
+      "reference_memberships": {
+       "one_three_place_knot": 46,
+       "two_three_place_knots_sharing_one_distinction": 46
+      }
+     },
+     "degrees": {
+      "classes": 4,
+      "same_partition_as_constants_and_growing": false,
+      "reference_memberships": {
+       "one_three_place_knot": 46,
+       "two_three_place_knots_sharing_one_distinction": 46
+      }
+     },
+     "constants_and_growing": {
+      "classes": 5,
+      "same_partition_as_constants_and_growing": true,
+      "reference_memberships": {
+       "one_three_place_knot": 19,
+       "two_three_place_knots_sharing_one_distinction": 27
+      }
+     },
+     "constants_and_degrees": {
+      "classes": 5,
+      "same_partition_as_constants_and_growing": true,
+      "reference_memberships": {
+       "one_three_place_knot": 19,
+       "two_three_place_knots_sharing_one_distinction": 27
+      }
+     },
+     "constants_and_leading_coefficients": {
+      "classes": 5,
+      "same_partition_as_constants_and_growing": true,
+      "reference_memberships": {
+       "one_three_place_knot": 19,
+       "two_three_place_knots_sharing_one_distinction": 27
+      }
+     },
+     "all_differences": {
+      "classes": 5,
+      "same_partition_as_constants_and_growing": true,
+      "reference_memberships": {
+       "one_three_place_knot": 19,
+       "two_three_place_knots_sharing_one_distinction": 27
+      }
+     },
+     "constants_and_all_growing_differences": {
+      "classes": 5,
+      "same_partition_as_constants_and_growing": true,
+      "reference_memberships": {
+       "one_three_place_knot": 19,
+       "two_three_place_knots_sharing_one_distinction": 27
+      }
+     }
+    },
+    "minimum_observations_beyond_interpolation": 8,
+    "common_reference_comparison": {
+     "reference_by_reference": {
+      "one_three_place_knot": {
+       "coarse_by_nested": {
+        "coarse=True, nested=True": 19,
+        "coarse=False, nested=True": 36,
+        "coarse=False, nested=False": 4
+       },
+       "first_agreeing_round": {
+        "1": 1,
+        "7": 23,
+        "2": 10,
+        "3": 6,
+        "9": 3,
+        "never": 4,
+        "11": 2,
+        "4": 5,
+        "8": 4,
+        "10": 1
+       },
+       "nested_at_last_common": 55,
+       "equal_at_last_common": 5,
+       "equal_polynomials": 5,
+       "common_round": {
+        "20": 59
+       }
+      },
+      "two_three_place_knots_sharing_one_distinction": {
+       "coarse_by_nested": {
+        "coarse=False, nested=True": 19,
+        "coarse=True, nested=True": 27,
+        "coarse=False, nested=False": 13
+       },
+       "first_agreeing_round": {
+        "7": 14,
+        "1": 1,
+        "4": 2,
+        "never": 13,
+        "9": 12,
+        "3": 2,
+        "5": 1,
+        "11": 1,
+        "6": 5,
+        "8": 7,
+        "10": 1
+       },
+       "nested_at_last_common": 46,
+       "equal_at_last_common": 2,
+       "equal_polynomials": 2,
+       "common_round": {
+        "20": 59
+       }
+      }
+     },
+     "nested_with_references": {
+      "both": 46,
+      "one_three_place_knot": 9,
+      "neither": 4
+     },
+     "first_example_comparable_to_lone_only": {
+      "start": {
+       "n knots": 3,
+       "index": 1,
+       "stars": [
+        [
+         0,
+         1,
+         2
+        ],
+        [
+         0,
+         3,
+         4
+        ],
+        [
+         1,
+         5,
+         6,
+         7
+        ]
+       ]
+      },
+      "round": 20,
+      "counts": [
+       [
+        [
+         [
+          "offshoot",
+          1,
+          2,
+          3
+         ],
+         [
+          [
+           "offshoot",
+           1,
+           2,
+           3
+          ]
+         ]
+        ],
+        3
+       ],
+       [
+        [
+         [
+          "join",
+          2,
+          2,
+          4
+         ],
+         [
+          [
+           "join",
+           2,
+           2,
+           4
+          ],
+          [
+           "offshoot",
+           1,
+           2,
+           3
+          ]
+         ]
+        ],
+        2
+       ],
+       [
+        [
+         [
+          "join",
+          2,
+          2,
+          4
+         ],
+         [
+          [
+           "join",
+           2,
+           2,
+           4
+          ],
+          [
+           "join",
+           2,
+           2,
+           4
+          ]
+         ]
+        ],
+        16
+       ],
+       [
+        [
+         [
+          "join",
+          2,
+          3,
+          5
+         ],
+         [
+          [
+           "join",
+           2,
+           3,
+           5
+          ],
+          [
+           "offshoot",
+           1,
+           2,
+           3
+          ]
+         ]
+        ],
+        1
+       ],
+       [
+        [
+         [
+          "join",
+          2,
+          2,
+          4
+         ],
+         [
+          [
+           "join",
+           2,
+           2,
+           4
+          ],
+          [
+           "join",
+           2,
+           3,
+           5
+          ]
+         ]
+        ],
+        2
+       ],
+       [
+        [
+         [
+          "join",
+          3,
+          1,
+          4
+         ],
+         [
+          [
+           "join",
+           2,
+           2,
+           4
+          ],
+          [
+           "join",
+           2,
+           2,
+           4
+          ],
+          [
+           "join",
+           3,
+           1,
+           4
+          ]
+         ]
+        ],
+        1
+       ]
+      ],
+      "reference_counts": {
+       "one_three_place_knot": [
+        [
+         [
+          [
+           "offshoot",
+           1,
+           2,
+           3
+          ],
+          [
+           [
+            "offshoot",
+            1,
+            2,
+            3
+           ]
+          ]
+         ],
+         2
+        ],
+        [
+         [
+          [
+           "join",
+           2,
+           2,
+           4
+          ],
+          [
+           [
+            "join",
+            2,
+            2,
+            4
+           ],
+           [
+            "offshoot",
+            1,
+            2,
+            3
+           ]
+          ]
+         ],
+         2
+        ],
+        [
+         [
+          [
+           "join",
+           2,
+           2,
+           4
+          ],
+          [
+           [
+            "join",
+            2,
+            2,
+            4
+           ],
+           [
+            "join",
+            2,
+            2,
+            4
+           ]
+          ]
+         ],
+         13
+        ]
+       ],
+       "two_three_place_knots_sharing_one_distinction": [
+        [
+         [
+          [
+           "offshoot",
+           1,
+           2,
+           3
+          ],
+          [
+           [
+            "offshoot",
+            1,
+            2,
+            3
+           ]
+          ]
+         ],
+         4
+        ],
+        [
+         [
+          [
+           "join",
+           2,
+           2,
+           4
+          ],
+          [
+           [
+            "join",
+            2,
+            2,
+            4
+           ],
+           [
+            "offshoot",
+            1,
+            2,
+            3
+           ]
+          ]
+         ],
+         4
+        ],
+        [
+         [
+          [
+           "join",
+           2,
+           2,
+           4
+          ],
+          [
+           [
+            "join",
+            2,
+            2,
+            4
+           ],
+           [
+            "join",
+            2,
+            2,
+            4
+           ]
+          ]
+         ],
+         34
+        ]
+       ]
+      }
+     }
+    },
+    "classes_if_nonconstant_polynomials_are_replaced_by_growing": [
+     {
+      "starts": 27,
+      "pairs": 351,
+      "different_exact_polynomials": 12,
+      "incomparable": {
+       "last_common_incomparable": 0,
+       "some_jointly_settled_incomparable": 0,
+       "every_jointly_settled_incomparable": 0,
+       "no_jointly_settled_round": 0
+      },
+      "last_common_witness": null,
+      "description": [
+       [
+        [
+         [
+          "offshoot",
+          1,
+          2,
+          3
+         ],
+         [
+          [
+           "offshoot",
+           1,
+           2,
+           3
+          ]
+         ]
+        ],
+        [
+         "constant",
+         4
+        ]
+       ],
+       [
+        [
+         [
+          "join",
+          2,
+          2,
+          4
+         ],
+         [
+          [
+           "join",
+           2,
+           2,
+           4
+          ],
+          [
+           "offshoot",
+           1,
+           2,
+           3
+          ]
+         ]
+        ],
+        [
+         "constant",
+         4
+        ]
+       ],
+       [
+        [
+         [
+          "join",
+          2,
+          2,
+          4
+         ],
+         [
+          [
+           "join",
+           2,
+           2,
+           4
+          ],
+          [
+           "join",
+           2,
+           2,
+           4
+          ]
+         ]
+        ],
+        [
+         "growing"
+        ]
+       ]
+      ]
+     },
+     {
+      "starts": 19,
+      "pairs": 171,
+      "different_exact_polynomials": 8,
+      "incomparable": {
+       "last_common_incomparable": 0,
+       "some_jointly_settled_incomparable": 0,
+       "every_jointly_settled_incomparable": 0,
+       "no_jointly_settled_round": 0
+      },
+      "last_common_witness": null,
+      "description": [
+       [
+        [
+         [
+          "offshoot",
+          1,
+          2,
+          3
+         ],
+         [
+          [
+           "offshoot",
+           1,
+           2,
+           3
+          ]
+         ]
+        ],
+        [
+         "constant",
+         2
+        ]
+       ],
+       [
+        [
+         [
+          "join",
+          2,
+          2,
+          4
+         ],
+         [
+          [
+           "join",
+           2,
+           2,
+           4
+          ],
+          [
+           "offshoot",
+           1,
+           2,
+           3
+          ]
+         ]
+        ],
+        [
+         "constant",
+         2
+        ]
+       ],
+       [
+        [
+         [
+          "join",
+          2,
+          2,
+          4
+         ],
+         [
+          [
+           "join",
+           2,
+           2,
+           4
+          ],
+          [
+           "join",
+           2,
+           2,
+           4
+          ]
+         ]
+        ],
+        [
+         "growing"
+        ]
+       ]
+      ]
+     },
+     {
+      "starts": 9,
+      "pairs": 36,
+      "different_exact_polynomials": 5,
+      "incomparable": {
+       "last_common_incomparable": 0,
+       "some_jointly_settled_incomparable": 0,
+       "every_jointly_settled_incomparable": 0,
+       "no_jointly_settled_round": 0
+      },
+      "last_common_witness": null,
+      "description": [
+       [
+        [
+         [
+          "offshoot",
+          1,
+          2,
+          3
+         ],
+         [
+          [
+           "offshoot",
+           1,
+           2,
+           3
+          ]
+         ]
+        ],
+        [
+         "constant",
+         3
+        ]
+       ],
+       [
+        [
+         [
+          "join",
+          2,
+          2,
+          4
+         ],
+         [
+          [
+           "join",
+           2,
+           2,
+           4
+          ],
+          [
+           "offshoot",
+           1,
+           2,
+           3
+          ]
+         ]
+        ],
+        [
+         "constant",
+         2
+        ]
+       ],
+       [
+        [
+         [
+          "join",
+          2,
+          2,
+          4
+         ],
+         [
+          [
+           "join",
+           2,
+           2,
+           4
+          ],
+          [
+           "join",
+           2,
+           2,
+           4
+          ]
+         ]
+        ],
+        [
+         "growing"
+        ]
+       ],
+       [
+        [
+         [
+          "join",
+          2,
+          3,
+          5
+         ],
+         [
+          [
+           "join",
+           2,
+           3,
+           5
+          ],
+          [
+           "offshoot",
+           1,
+           2,
+           3
+          ]
+         ]
+        ],
+        [
+         "constant",
+         1
+        ]
+       ],
+       [
+        [
+         [
+          "join",
+          2,
+          2,
+          4
+         ],
+         [
+          [
+           "join",
+           2,
+           2,
+           4
+          ],
+          [
+           "join",
+           2,
+           3,
+           5
+          ]
+         ]
+        ],
+        [
+         "constant",
+         2
+        ]
+       ],
+       [
+        [
+         [
+          "join",
+          3,
+          1,
+          4
+         ],
+         [
+          [
+           "join",
+           2,
+           2,
+           4
+          ],
+          [
+           "join",
+           2,
+           2,
+           4
+          ],
+          [
+           "join",
+           3,
+           1,
+           4
+          ]
+         ]
+        ],
+        [
+         "constant",
+         1
+        ]
+       ]
+      ]
+     },
+     {
+      "starts": 3,
+      "pairs": 3,
+      "different_exact_polynomials": 3,
+      "incomparable": {
+       "last_common_incomparable": 0,
+       "some_jointly_settled_incomparable": 0,
+       "every_jointly_settled_incomparable": 0,
+       "no_jointly_settled_round": 0
+      },
+      "last_common_witness": null,
+      "description": [
+       [
+        [
+         [
+          "offshoot",
+          1,
+          2,
+          3
+         ],
+         [
+          [
+           "offshoot",
+           1,
+           2,
+           3
+          ]
+         ]
+        ],
+        [
+         "constant",
+         3
+        ]
+       ],
+       [
+        [
+         [
+          "join",
+          2,
+          2,
+          4
+         ],
+         [
+          [
+           "join",
+           2,
+           2,
+           4
+          ],
+          [
+           "offshoot",
+           1,
+           2,
+           3
+          ]
+         ]
+        ],
+        [
+         "constant",
+         2
+        ]
+       ],
+       [
+        [
+         [
+          "join",
+          2,
+          2,
+          4
+         ],
+         [
+          [
+           "join",
+           2,
+           2,
+           4
+          ],
+          [
+           "join",
+           2,
+           2,
+           4
+          ]
+         ]
+        ],
+        [
+         "growing"
+        ]
+       ],
+       [
+        [
+         [
+          "join",
+          2,
+          1,
+          3
+         ],
+         [
+          [
+           "join",
+           2,
+           1,
+           3
+          ],
+          [
+           "offshoot",
+           1,
+           2,
+           3
+          ]
+         ]
+        ],
+        [
+         "constant",
+         1
+        ]
+       ]
+      ]
+     },
+     {
+      "starts": 1,
+      "pairs": 0,
+      "different_exact_polynomials": 1,
+      "incomparable": {
+       "last_common_incomparable": 0,
+       "some_jointly_settled_incomparable": 0,
+       "every_jointly_settled_incomparable": 0,
+       "no_jointly_settled_round": 0
+      },
+      "last_common_witness": null,
+      "description": [
+       [
+        [
+         [
+          "offshoot",
+          1,
+          2,
+          3
+         ],
+         [
+          [
+           "offshoot",
+           1,
+           2,
+           3
+          ]
+         ]
+        ],
+        [
+         "constant",
+         2
+        ]
+       ],
+       [
+        [
+         [
+          "join",
+          2,
+          3,
+          5
+         ],
+         [
+          [
+           "join",
+           2,
+           3,
+           5
+          ],
+          [
+           "join",
+           2,
+           4,
+           6
+          ]
+         ]
+        ],
+        [
+         "constant",
+         4
+        ]
+       ],
+       [
+        [
+         [
+          "join",
+          2,
+          4,
+          6
+         ],
+         [
+          [
+           "join",
+           2,
+           4,
+           6
+          ],
+          [
+           "join",
+           2,
+           4,
+           6
+          ]
+         ]
+        ],
+        [
+         "growing"
+        ]
+       ],
+       [
+        [
+         [
+          "join",
+          2,
+          4,
+          6
+         ],
+         [
+          [
+           "join",
+           2,
+           4,
+           6
+          ],
+          [
+           "offshoot",
+           1,
+           2,
+           3
+          ]
+         ]
+        ],
+        [
+         "constant",
+         2
+        ]
+       ],
+       [
+        [
+         [
+          "join",
+          3,
+          2,
+          5
+         ],
+         [
+          [
+           "join",
+           2,
+           3,
+           5
+          ],
+          [
+           "join",
+           2,
+           3,
+           5
+          ],
+          [
+           "join",
+           3,
+           2,
+           5
+          ]
+         ]
+        ],
+        [
+         "constant",
+         2
+        ]
+       ],
+       [
+        [
+         [
+          "join",
+          3,
+          3,
+          6
+         ],
+         [
+          [
+           "join",
+           2,
+           3,
+           5
+          ],
+          [
+           "join",
+           2,
+           4,
+           6
+          ],
+          [
+           "join",
+           3,
+           3,
+           6
+          ]
+         ]
+        ],
+        [
+         "constant",
+         4
+        ]
+       ],
+       [
+        [
+         [
+          "join",
+          3,
+          3,
+          6
+         ],
+         [
+          [
+           "join",
+           2,
+           4,
+           6
+          ],
+          [
+           "join",
+           3,
+           3,
+           6
+          ],
+          [
+           "join",
+           3,
+           3,
+           6
+          ]
+         ]
+        ],
+        [
+         "growing"
+        ]
+       ],
+       [
+        [
+         [
+          "join",
+          4,
+          2,
+          6
+         ],
+         [
+          [
+           "join",
+           3,
+           2,
+           5
+          ],
+          [
+           "join",
+           3,
+           3,
+           6
+          ],
+          [
+           "join",
+           3,
+           3,
+           6
+          ],
+          [
+           "join",
+           4,
+           2,
+           6
+          ]
+         ]
+        ],
+        [
+         "constant",
+         2
+        ]
+       ],
+       [
+        [
+         [
+          "join",
+          4,
+          2,
+          6
+         ],
+         [
+          [
+           "join",
+           3,
+           3,
+           6
+          ],
+          [
+           "join",
+           3,
+           3,
+           6
+          ],
+          [
+           "join",
+           4,
+           2,
+           6
+          ],
+          [
+           "join",
+           4,
+           2,
+           6
+          ]
+         ]
+        ],
+        [
+         "growing"
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   "D3_sig0": {
+    "starts": 1,
+    "descriptions": {
+     "exact": {
+      "classes": 1,
+      "same_partition_as_constants_and_growing": true,
+      "reference_memberships": {
+       "one_three_place_knot": 0,
+       "two_three_place_knots_sharing_one_distinction": 0
+      }
+     },
+     "support": {
+      "classes": 1,
+      "same_partition_as_constants_and_growing": true,
+      "reference_memberships": {
+       "one_three_place_knot": 0,
+       "two_three_place_knots_sharing_one_distinction": 0
+      }
+     },
+     "degrees": {
+      "classes": 1,
+      "same_partition_as_constants_and_growing": true,
+      "reference_memberships": {
+       "one_three_place_knot": 0,
+       "two_three_place_knots_sharing_one_distinction": 0
+      }
+     },
+     "constants_and_growing": {
+      "classes": 1,
+      "same_partition_as_constants_and_growing": true,
+      "reference_memberships": {
+       "one_three_place_knot": 0,
+       "two_three_place_knots_sharing_one_distinction": 0
+      }
+     },
+     "constants_and_degrees": {
+      "classes": 1,
+      "same_partition_as_constants_and_growing": true,
+      "reference_memberships": {
+       "one_three_place_knot": 0,
+       "two_three_place_knots_sharing_one_distinction": 0
+      }
+     },
+     "constants_and_leading_coefficients": {
+      "classes": 1,
+      "same_partition_as_constants_and_growing": true,
+      "reference_memberships": {
+       "one_three_place_knot": 0,
+       "two_three_place_knots_sharing_one_distinction": 0
+      }
+     },
+     "all_differences": {
+      "classes": 1,
+      "same_partition_as_constants_and_growing": true,
+      "reference_memberships": {
+       "one_three_place_knot": 0,
+       "two_three_place_knots_sharing_one_distinction": 0
+      }
+     },
+     "constants_and_all_growing_differences": {
+      "classes": 1,
+      "same_partition_as_constants_and_growing": true,
+      "reference_memberships": {
+       "one_three_place_knot": 0,
+       "two_three_place_knots_sharing_one_distinction": 0
+      }
+     }
+    },
+    "minimum_observations_beyond_interpolation": 17,
+    "common_reference_comparison": {
+     "reference_by_reference": {
+      "one_three_place_knot": {
+       "coarse_by_nested": {
+        "coarse=False, nested=False": 1
+       },
+       "first_agreeing_round": {
+        "never": 1
+       },
+       "nested_at_last_common": 0,
+       "equal_at_last_common": 0,
+       "equal_polynomials": 0,
+       "common_round": {
+        "20": 1
+       }
+      },
+      "two_three_place_knots_sharing_one_distinction": {
+       "coarse_by_nested": {
+        "coarse=False, nested=False": 1
+       },
+       "first_agreeing_round": {
+        "never": 1
+       },
+       "nested_at_last_common": 0,
+       "equal_at_last_common": 0,
+       "equal_polynomials": 0,
+       "common_round": {
+        "20": 1
+       }
+      }
+     },
+     "nested_with_references": {
+      "neither": 1
+     },
+     "first_example_comparable_to_lone_only": null
+    },
+    "classes_if_nonconstant_polynomials_are_replaced_by_growing": [
+     {
+      "starts": 1,
+      "pairs": 0,
+      "different_exact_polynomials": 1,
+      "incomparable": {
+       "last_common_incomparable": 0,
+       "some_jointly_settled_incomparable": 0,
+       "every_jointly_settled_incomparable": 0,
+       "no_jointly_settled_round": 0
+      },
+      "last_common_witness": null
+     }
+    ]
+   },
+   "D3_sig1": {
+    "starts": 1,
+    "descriptions": {
+     "exact": {
+      "classes": 1,
+      "same_partition_as_constants_and_growing": true,
+      "reference_memberships": {
+       "one_three_place_knot": 0,
+       "two_three_place_knots_sharing_one_distinction": 0
+      }
+     },
+     "support": {
+      "classes": 1,
+      "same_partition_as_constants_and_growing": true,
+      "reference_memberships": {
+       "one_three_place_knot": 0,
+       "two_three_place_knots_sharing_one_distinction": 0
+      }
+     },
+     "degrees": {
+      "classes": 1,
+      "same_partition_as_constants_and_growing": true,
+      "reference_memberships": {
+       "one_three_place_knot": 0,
+       "two_three_place_knots_sharing_one_distinction": 0
+      }
+     },
+     "constants_and_growing": {
+      "classes": 1,
+      "same_partition_as_constants_and_growing": true,
+      "reference_memberships": {
+       "one_three_place_knot": 0,
+       "two_three_place_knots_sharing_one_distinction": 0
+      }
+     },
+     "constants_and_degrees": {
+      "classes": 1,
+      "same_partition_as_constants_and_growing": true,
+      "reference_memberships": {
+       "one_three_place_knot": 0,
+       "two_three_place_knots_sharing_one_distinction": 0
+      }
+     },
+     "constants_and_leading_coefficients": {
+      "classes": 1,
+      "same_partition_as_constants_and_growing": true,
+      "reference_memberships": {
+       "one_three_place_knot": 0,
+       "two_three_place_knots_sharing_one_distinction": 0
+      }
+     },
+     "all_differences": {
+      "classes": 1,
+      "same_partition_as_constants_and_growing": true,
+      "reference_memberships": {
+       "one_three_place_knot": 0,
+       "two_three_place_knots_sharing_one_distinction": 0
+      }
+     },
+     "constants_and_all_growing_differences": {
+      "classes": 1,
+      "same_partition_as_constants_and_growing": true,
+      "reference_memberships": {
+       "one_three_place_knot": 0,
+       "two_three_place_knots_sharing_one_distinction": 0
+      }
+     }
+    },
+    "minimum_observations_beyond_interpolation": 13,
+    "common_reference_comparison": {
+     "reference_by_reference": {
+      "one_three_place_knot": {
+       "coarse_by_nested": {
+        "coarse=False, nested=False": 1
+       },
+       "first_agreeing_round": {
+        "never": 1
+       },
+       "nested_at_last_common": 0,
+       "equal_at_last_common": 0,
+       "equal_polynomials": 0,
+       "common_round": {
+        "20": 1
+       }
+      },
+      "two_three_place_knots_sharing_one_distinction": {
+       "coarse_by_nested": {
+        "coarse=False, nested=False": 1
+       },
+       "first_agreeing_round": {
+        "never": 1
+       },
+       "nested_at_last_common": 0,
+       "equal_at_last_common": 0,
+       "equal_polynomials": 0,
+       "common_round": {
+        "20": 1
+       }
+      }
+     },
+     "nested_with_references": {
+      "neither": 1
+     },
+     "first_example_comparable_to_lone_only": null
+    },
+    "classes_if_nonconstant_polynomials_are_replaced_by_growing": [
+     {
+      "starts": 1,
+      "pairs": 0,
+      "different_exact_polynomials": 1,
+      "incomparable": {
+       "last_common_incomparable": 0,
+       "some_jointly_settled_incomparable": 0,
+       "every_jointly_settled_incomparable": 0,
+       "no_jointly_settled_round": 0
+      },
+      "last_common_witness": null
+     }
+    ]
+   }
+  },
+  "d2_sig1_within_sig0_classes": {
+   "nestedness_tested_in": "sig1",
+   "membership_determined_in": "sig0",
+   "pairs_and_incomparable": {
+    "last_common_incomparable": 0,
+    "some_jointly_settled_incomparable": 0,
+    "every_jointly_settled_incomparable": 0,
+    "no_jointly_settled_round": 0,
+    "pairs": 561
+   },
+   "split_classes": []
+  },
+  "read_fit_seconds": 0.0396,
+  "compare_seconds": 0.0132,
+  "d2_sig0_parent_numbers": {
+   "2": {
+    "births": 12965,
+    "births_on_joint_polynomial_tail": 12339,
+    "starts": 59,
+    "starts_with_a_late_birth": 59,
+    "births_by_round": {
+     "2": 283,
+     "6": 224,
+     "7": 292,
+     "8": 376,
+     "9": 461,
+     "10": 547,
+     "11": 633,
+     "12": 719,
+     "13": 805,
+     "14": 891,
+     "15": 977,
+     "16": 1063,
+     "17": 1149,
+     "18": 1235,
+     "19": 1321,
+     "20": 1407,
+     "3": 184,
+     "4": 127,
+     "5": 163,
+     "1": 108
+    },
+    "examples_seven_or_more": []
+   },
+   "3": {
+    "births": 721,
+    "births_on_joint_polynomial_tail": 488,
+    "starts": 54,
+    "starts_with_a_late_birth": 10,
+    "births_by_round": {
+     "3": 90,
+     "4": 110,
+     "5": 19,
+     "6": 17,
+     "7": 19,
+     "8": 21,
+     "9": 23,
+     "10": 25,
+     "11": 27,
+     "12": 29,
+     "13": 31,
+     "14": 33,
+     "15": 35,
+     "16": 37,
+     "17": 39,
+     "18": 41,
+     "19": 43,
+     "20": 45,
+     "1": 12,
+     "2": 25
+    },
+    "examples_seven_or_more": []
+   },
+   "4": {
+    "births": 168,
+    "births_on_joint_polynomial_tail": 136,
+    "starts": 14,
+    "starts_with_a_late_birth": 1,
+    "births_by_round": {
+     "5": 33,
+     "6": 2,
+     "7": 3,
+     "8": 4,
+     "9": 5,
+     "10": 6,
+     "11": 7,
+     "12": 8,
+     "13": 9,
+     "14": 10,
+     "15": 11,
+     "16": 12,
+     "17": 13,
+     "18": 14,
+     "19": 15,
+     "20": 16
+    },
+    "examples_seven_or_more": []
+   },
+   "5": {
+    "births": 7,
+    "births_on_joint_polynomial_tail": 0,
+    "starts": 2,
+    "starts_with_a_late_birth": 0,
+    "births_by_round": {
+     "6": 7
+    },
+    "examples_seven_or_more": []
+   },
+   "6": {
+    "births": 1,
+    "births_on_joint_polynomial_tail": 0,
+    "starts": 1,
+    "starts_with_a_late_birth": 0,
+    "births_by_round": {
+     "7": 1
+    },
+    "examples_seven_or_more": []
+   }
+  }
+ },
+ "phase2": {
+  "raw_starts_read": 96,
+  "cells": {
+   "D2_sig0": {
+    "starts": 52,
+    "descriptions": {
+     "exact": {
+      "classes": 20,
+      "same_partition_as_constants_and_growing": false,
+      "reference_memberships": {
+       "one_three_place_knot": 1,
+       "two_three_place_knots_sharing_one_distinction": 0
+      }
+     },
+     "support": {
+      "classes": 3,
+      "same_partition_as_constants_and_growing": false,
+      "reference_memberships": {
+       "one_three_place_knot": 34,
+       "two_three_place_knots_sharing_one_distinction": 34
+      }
+     },
+     "degrees": {
+      "classes": 3,
+      "same_partition_as_constants_and_growing": false,
+      "reference_memberships": {
+       "one_three_place_knot": 34,
+       "two_three_place_knots_sharing_one_distinction": 34
+      }
+     },
+     "constants_and_growing": {
+      "classes": 4,
+      "same_partition_as_constants_and_growing": true,
+      "reference_memberships": {
+       "one_three_place_knot": 1,
+       "two_three_place_knots_sharing_one_distinction": 33
+      }
+     },
+     "constants_and_degrees": {
+      "classes": 4,
+      "same_partition_as_constants_and_growing": true,
+      "reference_memberships": {
+       "one_three_place_knot": 1,
+       "two_three_place_knots_sharing_one_distinction": 33
+      }
+     },
+     "constants_and_leading_coefficients": {
+      "classes": 4,
+      "same_partition_as_constants_and_growing": true,
+      "reference_memberships": {
+       "one_three_place_knot": 1,
+       "two_three_place_knots_sharing_one_distinction": 33
+      }
+     },
+     "all_differences": {
+      "classes": 4,
+      "same_partition_as_constants_and_growing": true,
+      "reference_memberships": {
+       "one_three_place_knot": 1,
+       "two_three_place_knots_sharing_one_distinction": 33
+      }
+     },
+     "constants_and_all_growing_differences": {
+      "classes": 4,
+      "same_partition_as_constants_and_growing": true,
+      "reference_memberships": {
+       "one_three_place_knot": 1,
+       "two_three_place_knots_sharing_one_distinction": 33
+      }
+     }
+    },
+    "minimum_observations_beyond_interpolation": 16,
+    "common_reference_comparison": {
+     "reference_by_reference": {
+      "one_three_place_knot": {
+       "coarse_by_nested": {
+        "coarse=True, nested=True": 1,
+        "coarse=False, nested=True": 48,
+        "coarse=False, nested=False": 3
+       },
+       "first_agreeing_round": {
+        "4": 9,
+        "1": 22,
+        "3": 10,
+        "2": 3,
+        "never": 3,
+        "6": 2,
+        "8": 2,
+        "9": 1
+       },
+       "nested_at_last_common": 49,
+       "equal_at_last_common": 1,
+       "equal_polynomials": 1,
+       "common_round": {
+        "20": 52
+       }
+      },
+      "two_three_place_knots_sharing_one_distinction": {
+       "coarse_by_nested": {
+        "coarse=False, nested=True": 1,
+        "coarse=True, nested=True": 33,
+        "coarse=False, nested=False": 18
+       },
+       "first_agreeing_round": {
+        "4": 14,
+        "3": 2,
+        "never": 18,
+        "5": 8,
+        "6": 10
+       },
+       "nested_at_last_common": 34,
+       "equal_at_last_common": 0,
+       "equal_polynomials": 0,
+       "common_round": {
+        "20": 52
+       }
+      }
+     },
+     "nested_with_references": {
+      "both": 34,
+      "one_three_place_knot": 15,
+      "neither": 3
+     },
+     "first_example_comparable_to_lone_only": {
+      "start": {
+       "n knots": 5,
+       "index": 24,
+       "stars": [
+        [
+         0,
+         4,
+         5
+        ],
+        [
+         1,
+         6,
+         7
+        ],
+        [
+         2,
+         8,
+         9
+        ],
+        [
+         1,
+         2,
+         3,
+         10
+        ],
+        [
+         0,
+         3,
+         11,
+         12
+        ]
+       ]
+      },
+      "round": 20,
+      "counts": [
+       [
+        [
+         "offshoot",
+         1,
+         2,
+         3
+        ],
+        3
+       ],
+       [
+        [
+         "join",
+         2,
+         1,
+         3
+        ],
+        1
+       ],
+       [
+        [
+         "join",
+         2,
+         2,
+         4
+        ],
+        16
+       ]
+      ],
+      "reference_counts": {
+       "one_three_place_knot": [
+        [
+         [
+          "offshoot",
+          1,
+          2,
+          3
+         ],
+         2
+        ],
+        [
+         [
+          "join",
+          2,
+          2,
+          4
+         ],
+         15
+        ]
+       ],
+       "two_three_place_knots_sharing_one_distinction": [
+        [
+         [
+          "offshoot",
+          1,
+          2,
+          3
+         ],
+         4
+        ],
+        [
+         [
+          "join",
+          2,
+          2,
+          4
+         ],
+         38
+        ]
+       ]
+      }
+     }
+    },
+    "classes_if_nonconstant_polynomials_are_replaced_by_growing": [
+     {
+      "starts": 33,
+      "pairs": 528,
+      "different_exact_polynomials": 11,
+      "incomparable": {
+       "last_common_incomparable": 0,
+       "some_jointly_settled_incomparable": 0,
+       "every_jointly_settled_incomparable": 0,
+       "no_jointly_settled_round": 0
+      },
+      "last_common_witness": null,
+      "description": [
+       [
+        [
+         "offshoot",
+         1,
+         2,
+         3
+        ],
+        [
+         "constant",
+         4
+        ]
+       ],
+       [
+        [
+         "join",
+         2,
+         2,
+         4
+        ],
+        [
+         "growing"
+        ]
+       ]
+      ]
+     },
+     {
+      "starts": 12,
+      "pairs": 66,
+      "different_exact_polynomials": 4,
+      "incomparable": {
+       "last_common_incomparable": 0,
+       "some_jointly_settled_incomparable": 0,
+       "every_jointly_settled_incomparable": 0,
+       "no_jointly_settled_round": 0
+      },
+      "last_common_witness": null,
+      "description": [
+       [
+        [
+         "offshoot",
+         1,
+         2,
+         3
+        ],
+        [
+         "constant",
+         3
+        ]
+       ],
+       [
+        [
+         "join",
+         3,
+         1,
+         4
+        ],
+        [
+         "constant",
+         1
+        ]
+       ],
+       [
+        [
+         "join",
+         2,
+         2,
+         4
+        ],
+        [
+         "growing"
+        ]
+       ],
+       [
+        [
+         "join",
+         2,
+         3,
+         5
+        ],
+        [
+         "constant",
+         1
+        ]
+       ]
+      ]
+     },
+     {
+      "starts": 6,
+      "pairs": 15,
+      "different_exact_polynomials": 4,
+      "incomparable": {
+       "last_common_incomparable": 0,
+       "some_jointly_settled_incomparable": 0,
+       "every_jointly_settled_incomparable": 0,
+       "no_jointly_settled_round": 0
+      },
+      "last_common_witness": null,
+      "description": [
+       [
+        [
+         "offshoot",
+         1,
+         2,
+         3
+        ],
+        [
+         "constant",
+         3
+        ]
+       ],
+       [
+        [
+         "join",
+         2,
+         1,
+         3
+        ],
+        [
+         "constant",
+         1
+        ]
+       ],
+       [
+        [
+         "join",
+         2,
+         2,
+         4
+        ],
+        [
+         "growing"
+        ]
+       ]
+      ]
+     },
+     {
+      "starts": 1,
+      "pairs": 0,
+      "different_exact_polynomials": 1,
+      "incomparable": {
+       "last_common_incomparable": 0,
+       "some_jointly_settled_incomparable": 0,
+       "every_jointly_settled_incomparable": 0,
+       "no_jointly_settled_round": 0
+      },
+      "last_common_witness": null,
+      "description": [
+       [
+        [
+         "offshoot",
+         1,
+         2,
+         3
+        ],
+        [
+         "constant",
+         2
+        ]
+       ],
+       [
+        [
+         "join",
+         2,
+         2,
+         4
+        ],
+        [
+         "growing"
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   "D2_sig1": {
+    "starts": 52,
+    "descriptions": {
+     "exact": {
+      "classes": 20,
+      "same_partition_as_constants_and_growing": false,
+      "reference_memberships": {
+       "one_three_place_knot": 1,
+       "two_three_place_knots_sharing_one_distinction": 0
+      }
+     },
+     "support": {
+      "classes": 3,
+      "same_partition_as_constants_and_growing": false,
+      "reference_memberships": {
+       "one_three_place_knot": 34,
+       "two_three_place_knots_sharing_one_distinction": 34
+      }
+     },
+     "degrees": {
+      "classes": 3,
+      "same_partition_as_constants_and_growing": false,
+      "reference_memberships": {
+       "one_three_place_knot": 34,
+       "two_three_place_knots_sharing_one_distinction": 34
+      }
+     },
+     "constants_and_growing": {
+      "classes": 4,
+      "same_partition_as_constants_and_growing": true,
+      "reference_memberships": {
+       "one_three_place_knot": 1,
+       "two_three_place_knots_sharing_one_distinction": 33
+      }
+     },
+     "constants_and_degrees": {
+      "classes": 4,
+      "same_partition_as_constants_and_growing": true,
+      "reference_memberships": {
+       "one_three_place_knot": 1,
+       "two_three_place_knots_sharing_one_distinction": 33
+      }
+     },
+     "constants_and_leading_coefficients": {
+      "classes": 4,
+      "same_partition_as_constants_and_growing": true,
+      "reference_memberships": {
+       "one_three_place_knot": 1,
+       "two_three_place_knots_sharing_one_distinction": 33
+      }
+     },
+     "all_differences": {
+      "classes": 4,
+      "same_partition_as_constants_and_growing": true,
+      "reference_memberships": {
+       "one_three_place_knot": 1,
+       "two_three_place_knots_sharing_one_distinction": 33
+      }
+     },
+     "constants_and_all_growing_differences": {
+      "classes": 4,
+      "same_partition_as_constants_and_growing": true,
+      "reference_memberships": {
+       "one_three_place_knot": 1,
+       "two_three_place_knots_sharing_one_distinction": 33
+      }
+     }
+    },
+    "minimum_observations_beyond_interpolation": 14,
+    "common_reference_comparison": {
+     "reference_by_reference": {
+      "one_three_place_knot": {
+       "coarse_by_nested": {
+        "coarse=True, nested=True": 1,
+        "coarse=False, nested=True": 42,
+        "coarse=False, nested=False": 9
+       },
+       "first_agreeing_round": {
+        "5": 3,
+        "2": 7,
+        "7": 12,
+        "4": 12,
+        "never": 9,
+        "3": 6,
+        "10": 2,
+        "11": 1
+       },
+       "nested_at_last_common": 43,
+       "equal_at_last_common": 1,
+       "equal_polynomials": 1,
+       "common_round": {
+        "20": 52
+       }
+      },
+      "two_three_place_knots_sharing_one_distinction": {
+       "coarse_by_nested": {
+        "coarse=False, nested=True": 1,
+        "coarse=True, nested=True": 33,
+        "coarse=False, nested=False": 18
+       },
+       "first_agreeing_round": {
+        "7": 14,
+        "6": 2,
+        "never": 18,
+        "8": 8,
+        "9": 10
+       },
+       "nested_at_last_common": 34,
+       "equal_at_last_common": 0,
+       "equal_polynomials": 0,
+       "common_round": {
+        "20": 52
+       }
+      }
+     },
+     "nested_with_references": {
+      "both": 34,
+      "one_three_place_knot": 9,
+      "neither": 9
+     },
+     "first_example_comparable_to_lone_only": {
+      "start": {
+       "n knots": 5,
+       "index": 24,
+       "stars": [
+        [
+         0,
+         4,
+         5
+        ],
+        [
+         1,
+         6,
+         7
+        ],
+        [
+         2,
+         8,
+         9
+        ],
+        [
+         1,
+         2,
+         3,
+         10
+        ],
+        [
+         0,
+         3,
+         11,
+         12
+        ]
+       ]
+      },
+      "round": 20,
+      "counts": [
+       [
+        [
+         [
+          "offshoot",
+          1,
+          2,
+          3
+         ],
+         [
+          [
+           "offshoot",
+           1,
+           2,
+           3
+          ]
+         ]
+        ],
+        3
+       ],
+       [
+        [
+         [
+          "join",
+          2,
+          2,
+          4
+         ],
+         [
+          [
+           "join",
+           2,
+           2,
+           4
+          ],
+          [
+           "offshoot",
+           1,
+           2,
+           3
+          ]
+         ]
+        ],
+        2
+       ],
+       [
+        [
+         [
+          "join",
+          2,
+          2,
+          4
+         ],
+         [
+          [
+           "join",
+           2,
+           2,
+           4
+          ],
+          [
+           "join",
+           2,
+           2,
+           4
+          ]
+         ]
+        ],
+        14
+       ],
+       [
+        [
+         [
+          "join",
+          2,
+          1,
+          3
+         ],
+         [
+          [
+           "join",
+           2,
+           1,
+           3
+          ],
+          [
+           "offshoot",
+           1,
+           2,
+           3
+          ]
+         ]
+        ],
+        1
+       ]
+      ],
+      "reference_counts": {
+       "one_three_place_knot": [
+        [
+         [
+          [
+           "offshoot",
+           1,
+           2,
+           3
+          ],
+          [
+           [
+            "offshoot",
+            1,
+            2,
+            3
+           ]
+          ]
+         ],
+         2
+        ],
+        [
+         [
+          [
+           "join",
+           2,
+           2,
+           4
+          ],
+          [
+           [
+            "join",
+            2,
+            2,
+            4
+           ],
+           [
+            "offshoot",
+            1,
+            2,
+            3
+           ]
+          ]
+         ],
+         2
+        ],
+        [
+         [
+          [
+           "join",
+           2,
+           2,
+           4
+          ],
+          [
+           [
+            "join",
+            2,
+            2,
+            4
+           ],
+           [
+            "join",
+            2,
+            2,
+            4
+           ]
+          ]
+         ],
+         13
+        ]
+       ],
+       "two_three_place_knots_sharing_one_distinction": [
+        [
+         [
+          [
+           "offshoot",
+           1,
+           2,
+           3
+          ],
+          [
+           [
+            "offshoot",
+            1,
+            2,
+            3
+           ]
+          ]
+         ],
+         4
+        ],
+        [
+         [
+          [
+           "join",
+           2,
+           2,
+           4
+          ],
+          [
+           [
+            "join",
+            2,
+            2,
+            4
+           ],
+           [
+            "offshoot",
+            1,
+            2,
+            3
+           ]
+          ]
+         ],
+         4
+        ],
+        [
+         [
+          [
+           "join",
+           2,
+           2,
+           4
+          ],
+          [
+           [
+            "join",
+            2,
+            2,
+            4
+           ],
+           [
+            "join",
+            2,
+            2,
+            4
+           ]
+          ]
+         ],
+         34
+        ]
+       ]
+      }
+     }
+    },
+    "classes_if_nonconstant_polynomials_are_replaced_by_growing": [
+     {
+      "starts": 33,
+      "pairs": 528,
+      "different_exact_polynomials": 11,
+      "incomparable": {
+       "last_common_incomparable": 0,
+       "some_jointly_settled_incomparable": 0,
+       "every_jointly_settled_incomparable": 0,
+       "no_jointly_settled_round": 0
+      },
+      "last_common_witness": null,
+      "description": [
+       [
+        [
+         [
+          "offshoot",
+          1,
+          2,
+          3
+         ],
+         [
+          [
+           "offshoot",
+           1,
+           2,
+           3
+          ]
+         ]
+        ],
+        [
+         "constant",
+         4
+        ]
+       ],
+       [
+        [
+         [
+          "join",
+          2,
+          2,
+          4
+         ],
+         [
+          [
+           "join",
+           2,
+           2,
+           4
+          ],
+          [
+           "offshoot",
+           1,
+           2,
+           3
+          ]
+         ]
+        ],
+        [
+         "constant",
+         4
+        ]
+       ],
+       [
+        [
+         [
+          "join",
+          2,
+          2,
+          4
+         ],
+         [
+          [
+           "join",
+           2,
+           2,
+           4
+          ],
+          [
+           "join",
+           2,
+           2,
+           4
+          ]
+         ]
+        ],
+        [
+         "growing"
+        ]
+       ]
+      ]
+     },
+     {
+      "starts": 12,
+      "pairs": 66,
+      "different_exact_polynomials": 4,
+      "incomparable": {
+       "last_common_incomparable": 0,
+       "some_jointly_settled_incomparable": 0,
+       "every_jointly_settled_incomparable": 0,
+       "no_jointly_settled_round": 0
+      },
+      "last_common_witness": null,
+      "description": [
+       [
+        [
+         [
+          "offshoot",
+          1,
+          2,
+          3
+         ],
+         [
+          [
+           "offshoot",
+           1,
+           2,
+           3
+          ]
+         ]
+        ],
+        [
+         "constant",
+         3
+        ]
+       ],
+       [
+        [
+         [
+          "join",
+          2,
+          2,
+          4
+         ],
+         [
+          [
+           "join",
+           2,
+           2,
+           4
+          ],
+          [
+           "offshoot",
+           1,
+           2,
+           3
+          ]
+         ]
+        ],
+        [
+         "constant",
+         2
+        ]
+       ],
+       [
+        [
+         [
+          "join",
+          2,
+          2,
+          4
+         ],
+         [
+          [
+           "join",
+           2,
+           2,
+           4
+          ],
+          [
+           "join",
+           2,
+           2,
+           4
+          ]
+         ]
+        ],
+        [
+         "growing"
+        ]
+       ],
+       [
+        [
+         [
+          "join",
+          2,
+          3,
+          5
+         ],
+         [
+          [
+           "join",
+           2,
+           3,
+           5
+          ],
+          [
+           "offshoot",
+           1,
+           2,
+           3
+          ]
+         ]
+        ],
+        [
+         "constant",
+         1
+        ]
+       ],
+       [
+        [
+         [
+          "join",
+          2,
+          2,
+          4
+         ],
+         [
+          [
+           "join",
+           2,
+           2,
+           4
+          ],
+          [
+           "join",
+           2,
+           3,
+           5
+          ]
+         ]
+        ],
+        [
+         "constant",
+         2
+        ]
+       ],
+       [
+        [
+         [
+          "join",
+          3,
+          1,
+          4
+         ],
+         [
+          [
+           "join",
+           2,
+           2,
+           4
+          ],
+          [
+           "join",
+           2,
+           2,
+           4
+          ],
+          [
+           "join",
+           3,
+           1,
+           4
+          ]
+         ]
+        ],
+        [
+         "constant",
+         1
+        ]
+       ]
+      ]
+     },
+     {
+      "starts": 6,
+      "pairs": 15,
+      "different_exact_polynomials": 4,
+      "incomparable": {
+       "last_common_incomparable": 0,
+       "some_jointly_settled_incomparable": 0,
+       "every_jointly_settled_incomparable": 0,
+       "no_jointly_settled_round": 0
+      },
+      "last_common_witness": null,
+      "description": [
+       [
+        [
+         [
+          "offshoot",
+          1,
+          2,
+          3
+         ],
+         [
+          [
+           "offshoot",
+           1,
+           2,
+           3
+          ]
+         ]
+        ],
+        [
+         "constant",
+         3
+        ]
+       ],
+       [
+        [
+         [
+          "join",
+          2,
+          2,
+          4
+         ],
+         [
+          [
+           "join",
+           2,
+           2,
+           4
+          ],
+          [
+           "offshoot",
+           1,
+           2,
+           3
+          ]
+         ]
+        ],
+        [
+         "constant",
+         2
+        ]
+       ],
+       [
+        [
+         [
+          "join",
+          2,
+          2,
+          4
+         ],
+         [
+          [
+           "join",
+           2,
+           2,
+           4
+          ],
+          [
+           "join",
+           2,
+           2,
+           4
+          ]
+         ]
+        ],
+        [
+         "growing"
+        ]
+       ],
+       [
+        [
+         [
+          "join",
+          2,
+          1,
+          3
+         ],
+         [
+          [
+           "join",
+           2,
+           1,
+           3
+          ],
+          [
+           "offshoot",
+           1,
+           2,
+           3
+          ]
+         ]
+        ],
+        [
+         "constant",
+         1
+        ]
+       ]
+      ]
+     },
+     {
+      "starts": 1,
+      "pairs": 0,
+      "different_exact_polynomials": 1,
+      "incomparable": {
+       "last_common_incomparable": 0,
+       "some_jointly_settled_incomparable": 0,
+       "every_jointly_settled_incomparable": 0,
+       "no_jointly_settled_round": 0
+      },
+      "last_common_witness": null,
+      "description": [
+       [
+        [
+         [
+          "offshoot",
+          1,
+          2,
+          3
+         ],
+         [
+          [
+           "offshoot",
+           1,
+           2,
+           3
+          ]
+         ]
+        ],
+        [
+         "constant",
+         2
+        ]
+       ],
+       [
+        [
+         [
+          "join",
+          2,
+          2,
+          4
+         ],
+         [
+          [
+           "join",
+           2,
+           2,
+           4
+          ],
+          [
+           "offshoot",
+           1,
+           2,
+           3
+          ]
+         ]
+        ],
+        [
+         "constant",
+         2
+        ]
+       ],
+       [
+        [
+         [
+          "join",
+          2,
+          2,
+          4
+         ],
+         [
+          [
+           "join",
+           2,
+           2,
+           4
+          ],
+          [
+           "join",
+           2,
+           2,
+           4
+          ]
+         ]
+        ],
+        [
+         "growing"
+        ]
+       ]
+      ]
+     }
+    ]
+   }
+  },
+  "d2_sig1_within_sig0_classes": {
+   "nestedness_tested_in": "sig1",
+   "membership_determined_in": "sig0",
+   "pairs_and_incomparable": {
+    "last_common_incomparable": 0,
+    "some_jointly_settled_incomparable": 0,
+    "every_jointly_settled_incomparable": 0,
+    "no_jointly_settled_round": 0,
+    "pairs": 609
+   },
+   "split_classes": []
+  },
+  "read_fit_seconds": 0.0297,
+  "compare_seconds": 0.0101
+ },
+ "total_seconds": 0.0941
+}

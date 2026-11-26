@@ -1,0 +1,2934 @@
+{
+  "archive_stride": 1,
+  "start_index": "Zero-based index within starts of that number of knots.",
+  "K": "Least K >= D with a polynomial of degree at most D-1 per signature matching all later observations.",
+  "initial_block": "Largest number of live starting knots sharing a common neighbour. Size 0 if no block has at least two knots.",
+  "phases": {
+    "1": {
+      "archive_rows": 223,
+      "end_kind_and_rounds": [
+        {
+          "end": "rounds",
+          "kind": "dim 1",
+          "rounds": 20,
+          "count": 38
+        },
+        {
+          "end": "rounds",
+          "kind": "dim 2",
+          "rounds": 20,
+          "count": 134
+        },
+        {
+          "end": "rounds",
+          "kind": "dim 3",
+          "rounds": 20,
+          "count": 7
+        },
+        {
+          "end": "rounds",
+          "kind": "dim 4",
+          "rounds": 20,
+          "count": 2
+        },
+        {
+          "end": "stalls at round 1",
+          "kind": "stalls",
+          "rounds": 0,
+          "count": 42
+        }
+      ],
+      "knots_at_first_excess_over_30000": [],
+      "kind_as_read_at_14": [
+        {
+          "last_read": "dim 1",
+          "through_14": "dim 1",
+          "count": 38
+        },
+        {
+          "last_read": "dim 2",
+          "through_14": "dim 2",
+          "count": 127
+        },
+        {
+          "last_read": "dim 2",
+          "through_14": "unread",
+          "count": 7
+        },
+        {
+          "last_read": "dim 3",
+          "through_14": "dim 3",
+          "count": 7
+        },
+        {
+          "last_read": "dim 4",
+          "through_14": "dim 4",
+          "count": 2
+        },
+        {
+          "last_read": "stalls",
+          "through_14": "stalls",
+          "count": 42
+        }
+      ],
+      "same_dimension_pair_eligibility": {
+        "same dimension at last read": 9636,
+        "same dimension at 14": 8726,
+        "eligible both ways": 8726,
+        "newly eligible at 14": 0,
+        "lost at 14": 910
+      },
+      "pairs_by_last_common_round": {
+        "20": 9636
+      },
+      "pairs_observed_at_each_forecast_round": {
+        "15": 9636,
+        "16": 9636,
+        "17": 9636,
+        "18": 9636,
+        "19": 9636,
+        "20": 9636
+      },
+      "prefix_dimension_check": {
+        "prefixes_tested": "Every prefix from round 10 through the penultimate round with a dimension label.",
+        "labelled_prefixes": 1578,
+        "prefixes_whose_total_count_fit_later_fails": 0,
+        "starts_with_such_a_failure": 0,
+        "first_five_start_examples": []
+      },
+      "settling": {
+        "sig0": {
+          "least_K_by_kind": [
+            {
+              "kind": "dim 1",
+              "K": 1,
+              "count": 4
+            },
+            {
+              "kind": "dim 1",
+              "K": 2,
+              "count": 4
+            },
+            {
+              "kind": "dim 1",
+              "K": 3,
+              "count": 17
+            },
+            {
+              "kind": "dim 1",
+              "K": 4,
+              "count": 2
+            },
+            {
+              "kind": "dim 1",
+              "K": 5,
+              "count": 1
+            },
+            {
+              "kind": "dim 1",
+              "K": 6,
+              "count": 7
+            },
+            {
+              "kind": "dim 1",
+              "K": 8,
+              "count": 3
+            },
+            {
+              "kind": "dim 2",
+              "K": 2,
+              "count": 9
+            },
+            {
+              "kind": "dim 2",
+              "K": 3,
+              "count": 7
+            },
+            {
+              "kind": "dim 2",
+              "K": 4,
+              "count": 14
+            },
+            {
+              "kind": "dim 2",
+              "K": 5,
+              "count": 13
+            },
+            {
+              "kind": "dim 2",
+              "K": 6,
+              "count": 34
+            },
+            {
+              "kind": "dim 2",
+              "K": 7,
+              "count": 16
+            },
+            {
+              "kind": "dim 2",
+              "K": 8,
+              "count": 32
+            },
+            {
+              "kind": "dim 2",
+              "K": 9,
+              "count": 2
+            },
+            {
+              "kind": "dim 2",
+              "K": 10,
+              "count": 5
+            },
+            {
+              "kind": "dim 2",
+              "K": 12,
+              "count": 2
+            },
+            {
+              "kind": "dim 3",
+              "K": 3,
+              "count": 1
+            },
+            {
+              "kind": "dim 3",
+              "K": 4,
+              "count": 3
+            },
+            {
+              "kind": "dim 3",
+              "K": 6,
+              "count": 3
+            },
+            {
+              "kind": "dim 4",
+              "K": 5,
+              "count": 2
+            }
+          ],
+          "K_less_than_3": 17,
+          "observed_rounds_after_least_K": {
+            "minimum": 8,
+            "maximum": 19
+          },
+          "fixed_cutoffs": {
+            "12": {
+              "starts_with_wrong_forecasts": 0,
+              "forecast_rounds_observed": 1448,
+              "start_rounds_with_wrong_forecasts": 0
+            },
+            "14": {
+              "starts_with_wrong_forecasts": 0,
+              "forecast_rounds_observed": 1086,
+              "start_rounds_with_wrong_forecasts": 0
+            }
+          },
+          "starts_with_nonzero_late_signature_of_degree_strictly_below_D_minus_1": 143,
+          "K_by_initial_block_size": {
+            "0": {
+              "starts": 7,
+              "minimum": 2,
+              "maximum": 6
+            },
+            "2": {
+              "starts": 73,
+              "minimum": 1,
+              "maximum": 10
+            },
+            "3": {
+              "starts": 101,
+              "minimum": 2,
+              "maximum": 12
+            }
+          },
+          "tightest_additive_constant_for_this_phase": 9
+        },
+        "sig1": {
+          "least_K_by_kind": [
+            {
+              "kind": "dim 1",
+              "K": 2,
+              "count": 4
+            },
+            {
+              "kind": "dim 1",
+              "K": 3,
+              "count": 4
+            },
+            {
+              "kind": "dim 1",
+              "K": 4,
+              "count": 17
+            },
+            {
+              "kind": "dim 1",
+              "K": 5,
+              "count": 2
+            },
+            {
+              "kind": "dim 1",
+              "K": 6,
+              "count": 1
+            },
+            {
+              "kind": "dim 1",
+              "K": 7,
+              "count": 7
+            },
+            {
+              "kind": "dim 1",
+              "K": 9,
+              "count": 3
+            },
+            {
+              "kind": "dim 2",
+              "K": 3,
+              "count": 6
+            },
+            {
+              "kind": "dim 2",
+              "K": 4,
+              "count": 8
+            },
+            {
+              "kind": "dim 2",
+              "K": 5,
+              "count": 7
+            },
+            {
+              "kind": "dim 2",
+              "K": 6,
+              "count": 9
+            },
+            {
+              "kind": "dim 2",
+              "K": 7,
+              "count": 13
+            },
+            {
+              "kind": "dim 2",
+              "K": 8,
+              "count": 34
+            },
+            {
+              "kind": "dim 2",
+              "K": 9,
+              "count": 16
+            },
+            {
+              "kind": "dim 2",
+              "K": 10,
+              "count": 32
+            },
+            {
+              "kind": "dim 2",
+              "K": 11,
+              "count": 2
+            },
+            {
+              "kind": "dim 2",
+              "K": 12,
+              "count": 5
+            },
+            {
+              "kind": "dim 2",
+              "K": 14,
+              "count": 2
+            },
+            {
+              "kind": "dim 3",
+              "K": 7,
+              "count": 4
+            },
+            {
+              "kind": "dim 3",
+              "K": 9,
+              "count": 3
+            },
+            {
+              "kind": "dim 4",
+              "K": 9,
+              "count": 2
+            }
+          ],
+          "K_less_than_3": 4,
+          "observed_rounds_after_least_K": {
+            "minimum": 6,
+            "maximum": 18
+          },
+          "fixed_cutoffs": {
+            "14": {
+              "starts_with_wrong_forecasts": 0,
+              "forecast_rounds_observed": 1086,
+              "start_rounds_with_wrong_forecasts": 0
+            }
+          },
+          "starts_with_nonzero_late_signature_of_degree_strictly_below_D_minus_1": 143,
+          "K_by_initial_block_size": {
+            "0": {
+              "starts": 7,
+              "minimum": 4,
+              "maximum": 8
+            },
+            "2": {
+              "starts": 73,
+              "minimum": 2,
+              "maximum": 12
+            },
+            "3": {
+              "starts": 101,
+              "minimum": 3,
+              "maximum": 14
+            }
+          },
+          "tightest_additive_constant_for_this_phase": 11
+        }
+      },
+      "late_starts": [],
+      "late_starts_sharing_histories": {},
+      "late_and_quartic_with_identical_starting_meetings": [],
+      "quartic_cluster_count": null,
+      "unread_and_rate_starts": []
+    },
+    "2": {
+      "archive_rows": 3157,
+      "end_kind_and_rounds": [
+        {
+          "end": "bound",
+          "kind": "dim 3",
+          "rounds": 24,
+          "count": 24
+        },
+        {
+          "end": "bound",
+          "kind": "dim 4",
+          "rounds": 21,
+          "count": 15
+        },
+        {
+          "end": "bound",
+          "kind": "rate 1.38",
+          "rounds": 23,
+          "count": 1
+        },
+        {
+          "end": "bound",
+          "kind": "rate 1.62",
+          "rounds": 16,
+          "count": 1
+        },
+        {
+          "end": "bound",
+          "kind": "unread",
+          "rounds": 19,
+          "count": 8
+        },
+        {
+          "end": "bound",
+          "kind": "unread",
+          "rounds": 23,
+          "count": 1
+        },
+        {
+          "end": "rounds",
+          "kind": "dim 1",
+          "rounds": 24,
+          "count": 409
+        },
+        {
+          "end": "rounds",
+          "kind": "dim 2",
+          "rounds": 24,
+          "count": 1003
+        },
+        {
+          "end": "rounds",
+          "kind": "dim 3",
+          "rounds": 24,
+          "count": 86
+        },
+        {
+          "end": "rounds",
+          "kind": "dim 4",
+          "rounds": 24,
+          "count": 19
+        },
+        {
+          "end": "rounds",
+          "kind": "rate 1.26",
+          "rounds": 24,
+          "count": 1
+        },
+        {
+          "end": "rounds",
+          "kind": "unread",
+          "rounds": 24,
+          "count": 2
+        },
+        {
+          "end": "stalls at round 1",
+          "kind": "stalls",
+          "rounds": 0,
+          "count": 1587
+        }
+      ],
+      "knots_at_first_excess_over_30000": [
+        32651,
+        40340
+      ],
+      "kind_as_read_at_14": [
+        {
+          "last_read": "dim 1",
+          "through_14": "dim 1",
+          "count": 394
+        },
+        {
+          "last_read": "dim 1",
+          "through_14": "unread",
+          "count": 15
+        },
+        {
+          "last_read": "dim 2",
+          "through_14": "dim 2",
+          "count": 894
+        },
+        {
+          "last_read": "dim 2",
+          "through_14": "unread",
+          "count": 109
+        },
+        {
+          "last_read": "dim 3",
+          "through_14": "dim 3",
+          "count": 110
+        },
+        {
+          "last_read": "dim 4",
+          "through_14": "dim 4",
+          "count": 34
+        },
+        {
+          "last_read": "rate 1.26",
+          "through_14": "unread",
+          "count": 1
+        },
+        {
+          "last_read": "rate 1.38",
+          "through_14": "rate 1.39",
+          "count": 1
+        },
+        {
+          "last_read": "rate 1.62",
+          "through_14": "rate 1.62",
+          "count": 1
+        },
+        {
+          "last_read": "stalls",
+          "through_14": "stalls",
+          "count": 1587
+        },
+        {
+          "last_read": "unread",
+          "through_14": "rate 1.50",
+          "count": 1
+        },
+        {
+          "last_read": "unread",
+          "through_14": "unread",
+          "count": 10
+        }
+      ],
+      "same_dimension_pair_eligibility": {
+        "same dimension at last read": 592495,
+        "same dimension at 14": 483148,
+        "eligible both ways": 483148,
+        "newly eligible at 14": 0,
+        "lost at 14": 109347
+      },
+      "pairs_by_last_common_round": {
+        "21": 390,
+        "24": 592105
+      },
+      "pairs_observed_at_each_forecast_round": {
+        "15": 592495,
+        "16": 592495,
+        "17": 592495,
+        "18": 592495,
+        "19": 592495,
+        "20": 592495,
+        "21": 592495,
+        "22": 592105,
+        "23": 592105,
+        "24": 592105
+      },
+      "prefix_dimension_check": {
+        "prefixes_tested": "Every prefix from round 10 through the penultimate round with a dimension label.",
+        "labelled_prefixes": 19347,
+        "prefixes_whose_total_count_fit_later_fails": 0,
+        "starts_with_such_a_failure": 0,
+        "first_five_start_examples": []
+      },
+      "settling": {
+        "sig0": {
+          "least_K_by_kind": [
+            {
+              "kind": "dim 1",
+              "K": 1,
+              "count": 23
+            },
+            {
+              "kind": "dim 1",
+              "K": 2,
+              "count": 37
+            },
+            {
+              "kind": "dim 1",
+              "K": 3,
+              "count": 132
+            },
+            {
+              "kind": "dim 1",
+              "K": 4,
+              "count": 18
+            },
+            {
+              "kind": "dim 1",
+              "K": 5,
+              "count": 26
+            },
+            {
+              "kind": "dim 1",
+              "K": 6,
+              "count": 101
+            },
+            {
+              "kind": "dim 1",
+              "K": 7,
+              "count": 7
+            },
+            {
+              "kind": "dim 1",
+              "K": 8,
+              "count": 50
+            },
+            {
+              "kind": "dim 1",
+              "K": 10,
+              "count": 15
+            },
+            {
+              "kind": "dim 2",
+              "K": 2,
+              "count": 35
+            },
+            {
+              "kind": "dim 2",
+              "K": 3,
+              "count": 67
+            },
+            {
+              "kind": "dim 2",
+              "K": 4,
+              "count": 40
+            },
+            {
+              "kind": "dim 2",
+              "K": 5,
+              "count": 131
+            },
+            {
+              "kind": "dim 2",
+              "K": 6,
+              "count": 214
+            },
+            {
+              "kind": "dim 2",
+              "K": 7,
+              "count": 174
+            },
+            {
+              "kind": "dim 2",
+              "K": 8,
+              "count": 169
+            },
+            {
+              "kind": "dim 2",
+              "K": 9,
+              "count": 64
+            },
+            {
+              "kind": "dim 2",
+              "K": 10,
+              "count": 73
+            },
+            {
+              "kind": "dim 2",
+              "K": 11,
+              "count": 7
+            },
+            {
+              "kind": "dim 2",
+              "K": 12,
+              "count": 22
+            },
+            {
+              "kind": "dim 2",
+              "K": 14,
+              "count": 7
+            },
+            {
+              "kind": "dim 3",
+              "K": 3,
+              "count": 3
+            },
+            {
+              "kind": "dim 3",
+              "K": 4,
+              "count": 36
+            },
+            {
+              "kind": "dim 3",
+              "K": 6,
+              "count": 47
+            },
+            {
+              "kind": "dim 3",
+              "K": 8,
+              "count": 24
+            },
+            {
+              "kind": "dim 4",
+              "K": 5,
+              "count": 19
+            },
+            {
+              "kind": "dim 4",
+              "K": 7,
+              "count": 15
+            }
+          ],
+          "K_less_than_3": 95,
+          "observed_rounds_after_least_K": {
+            "minimum": 10,
+            "maximum": 23
+          },
+          "fixed_cutoffs": {
+            "12": {
+              "starts_with_wrong_forecasts": 7,
+              "forecast_rounds_observed": 18627,
+              "start_rounds_with_wrong_forecasts": 84
+            },
+            "14": {
+              "starts_with_wrong_forecasts": 0,
+              "forecast_rounds_observed": 15515,
+              "start_rounds_with_wrong_forecasts": 0
+            }
+          },
+          "starts_with_nonzero_late_signature_of_degree_strictly_below_D_minus_1": 1147,
+          "K_by_initial_block_size": {
+            "0": {
+              "starts": 44,
+              "minimum": 2,
+              "maximum": 6
+            },
+            "2": {
+              "starts": 280,
+              "minimum": 1,
+              "maximum": 10
+            },
+            "3": {
+              "starts": 682,
+              "minimum": 2,
+              "maximum": 12
+            },
+            "4": {
+              "starts": 550,
+              "minimum": 2,
+              "maximum": 14
+            }
+          },
+          "tightest_additive_constant_for_this_phase": 10
+        },
+        "sig1": {
+          "least_K_by_kind": [
+            {
+              "kind": "dim 1",
+              "K": 2,
+              "count": 23
+            },
+            {
+              "kind": "dim 1",
+              "K": 3,
+              "count": 37
+            },
+            {
+              "kind": "dim 1",
+              "K": 4,
+              "count": 132
+            },
+            {
+              "kind": "dim 1",
+              "K": 5,
+              "count": 18
+            },
+            {
+              "kind": "dim 1",
+              "K": 6,
+              "count": 26
+            },
+            {
+              "kind": "dim 1",
+              "K": 7,
+              "count": 101
+            },
+            {
+              "kind": "dim 1",
+              "K": 8,
+              "count": 7
+            },
+            {
+              "kind": "dim 1",
+              "K": 9,
+              "count": 50
+            },
+            {
+              "kind": "dim 1",
+              "K": 11,
+              "count": 15
+            },
+            {
+              "kind": "dim 2",
+              "K": 3,
+              "count": 19
+            },
+            {
+              "kind": "dim 2",
+              "K": 4,
+              "count": 62
+            },
+            {
+              "kind": "dim 2",
+              "K": 5,
+              "count": 28
+            },
+            {
+              "kind": "dim 2",
+              "K": 6,
+              "count": 33
+            },
+            {
+              "kind": "dim 2",
+              "K": 7,
+              "count": 133
+            },
+            {
+              "kind": "dim 2",
+              "K": 8,
+              "count": 212
+            },
+            {
+              "kind": "dim 2",
+              "K": 9,
+              "count": 174
+            },
+            {
+              "kind": "dim 2",
+              "K": 10,
+              "count": 169
+            },
+            {
+              "kind": "dim 2",
+              "K": 11,
+              "count": 64
+            },
+            {
+              "kind": "dim 2",
+              "K": 12,
+              "count": 73
+            },
+            {
+              "kind": "dim 2",
+              "K": 13,
+              "count": 7
+            },
+            {
+              "kind": "dim 2",
+              "K": 14,
+              "count": 22
+            },
+            {
+              "kind": "dim 2",
+              "K": 16,
+              "count": 7
+            },
+            {
+              "kind": "dim 3",
+              "K": 7,
+              "count": 39
+            },
+            {
+              "kind": "dim 3",
+              "K": 9,
+              "count": 47
+            },
+            {
+              "kind": "dim 3",
+              "K": 11,
+              "count": 24
+            },
+            {
+              "kind": "dim 4",
+              "K": 9,
+              "count": 19
+            },
+            {
+              "kind": "dim 4",
+              "K": 11,
+              "count": 15
+            }
+          ],
+          "K_less_than_3": 23,
+          "observed_rounds_after_least_K": {
+            "minimum": 8,
+            "maximum": 22
+          },
+          "fixed_cutoffs": {
+            "14": {
+              "starts_with_wrong_forecasts": 7,
+              "forecast_rounds_observed": 15515,
+              "start_rounds_with_wrong_forecasts": 70
+            }
+          },
+          "starts_with_nonzero_late_signature_of_degree_strictly_below_D_minus_1": 1147,
+          "K_by_initial_block_size": {
+            "0": {
+              "starts": 44,
+              "minimum": 4,
+              "maximum": 8
+            },
+            "2": {
+              "starts": 280,
+              "minimum": 2,
+              "maximum": 12
+            },
+            "3": {
+              "starts": 682,
+              "minimum": 3,
+              "maximum": 14
+            },
+            "4": {
+              "starts": 550,
+              "minimum": 3,
+              "maximum": 16
+            }
+          },
+          "tightest_additive_constant_for_this_phase": 12
+        }
+      },
+      "late_starts": [
+        {
+          "size": 5,
+          "index": 1177,
+          "loose": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "meetings": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              4
+            ]
+          ],
+          "counts": [
+            11,
+            15,
+            45,
+            120,
+            210,
+            252,
+            210,
+            120,
+            45,
+            10,
+            1,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
+          ],
+          "initial_block": 4,
+          "kind_at14": "unread",
+          "settles": {
+            "sig0": 14,
+            "sig1": 16
+          },
+          "bad_forecast_rounds": {
+            "sig0": {
+              "12": [
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24
+              ],
+              "14": []
+            },
+            "sig1": {
+              "14": [
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24
+              ]
+            }
+          }
+        },
+        {
+          "size": 5,
+          "index": 1771,
+          "loose": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "meetings": [
+            [
+              0,
+              3
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              4
+            ]
+          ],
+          "counts": [
+            11,
+            15,
+            45,
+            120,
+            210,
+            252,
+            210,
+            120,
+            45,
+            10,
+            1,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
+          ],
+          "initial_block": 4,
+          "kind_at14": "unread",
+          "settles": {
+            "sig0": 14,
+            "sig1": 16
+          },
+          "bad_forecast_rounds": {
+            "sig0": {
+              "12": [
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24
+              ],
+              "14": []
+            },
+            "sig1": {
+              "14": [
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24
+              ]
+            }
+          }
+        },
+        {
+          "size": 5,
+          "index": 2083,
+          "loose": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "meetings": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              3,
+              4
+            ]
+          ],
+          "counts": [
+            11,
+            15,
+            45,
+            120,
+            210,
+            252,
+            210,
+            120,
+            45,
+            10,
+            1,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
+          ],
+          "initial_block": 4,
+          "kind_at14": "unread",
+          "settles": {
+            "sig0": 14,
+            "sig1": 16
+          },
+          "bad_forecast_rounds": {
+            "sig0": {
+              "12": [
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24
+              ],
+              "14": []
+            },
+            "sig1": {
+              "14": [
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24
+              ]
+            }
+          }
+        },
+        {
+          "size": 5,
+          "index": 2683,
+          "loose": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "meetings": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              4
+            ]
+          ],
+          "counts": [
+            11,
+            15,
+            45,
+            120,
+            210,
+            252,
+            210,
+            120,
+            45,
+            10,
+            1,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
+          ],
+          "initial_block": 4,
+          "kind_at14": "unread",
+          "settles": {
+            "sig0": 14,
+            "sig1": 16
+          },
+          "bad_forecast_rounds": {
+            "sig0": {
+              "12": [
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24
+              ],
+              "14": []
+            },
+            "sig1": {
+              "14": [
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24
+              ]
+            }
+          }
+        },
+        {
+          "size": 5,
+          "index": 2902,
+          "loose": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "meetings": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              4
+            ]
+          ],
+          "counts": [
+            11,
+            15,
+            45,
+            120,
+            210,
+            252,
+            210,
+            120,
+            45,
+            10,
+            1,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
+          ],
+          "initial_block": 4,
+          "kind_at14": "unread",
+          "settles": {
+            "sig0": 14,
+            "sig1": 16
+          },
+          "bad_forecast_rounds": {
+            "sig0": {
+              "12": [
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24
+              ],
+              "14": []
+            },
+            "sig1": {
+              "14": [
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24
+              ]
+            }
+          }
+        },
+        {
+          "size": 5,
+          "index": 3101,
+          "loose": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "meetings": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              4
+            ]
+          ],
+          "counts": [
+            11,
+            15,
+            45,
+            120,
+            210,
+            252,
+            210,
+            120,
+            45,
+            10,
+            1,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
+          ],
+          "initial_block": 4,
+          "kind_at14": "unread",
+          "settles": {
+            "sig0": 14,
+            "sig1": 16
+          },
+          "bad_forecast_rounds": {
+            "sig0": {
+              "12": [
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24
+              ],
+              "14": []
+            },
+            "sig1": {
+              "14": [
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24
+              ]
+            }
+          }
+        },
+        {
+          "size": 5,
+          "index": 3156,
+          "loose": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "meetings": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              4
+            ]
+          ],
+          "counts": [
+            11,
+            15,
+            45,
+            120,
+            210,
+            252,
+            210,
+            120,
+            45,
+            10,
+            1,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
+          ],
+          "initial_block": 4,
+          "kind_at14": "unread",
+          "settles": {
+            "sig0": 14,
+            "sig1": 16
+          },
+          "bad_forecast_rounds": {
+            "sig0": {
+              "12": [
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24
+              ],
+              "14": []
+            },
+            "sig1": {
+              "14": [
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24
+              ]
+            }
+          }
+        }
+      ],
+      "late_starts_sharing_histories": {
+        "sig0": {
+          "distinct_complete_histories": 1,
+          "first_round_all_late_starts_identical_thereafter": 1
+        },
+        "sig1": {
+          "distinct_complete_histories": 7,
+          "first_round_all_late_starts_identical_thereafter": 2
+        },
+        "shared_first_three_rounds_sig0": [
+          [
+            [
+              [
+                "join",
+                5,
+                10,
+                15
+              ],
+              1
+            ],
+            [
+              [
+                "offshoot",
+                1,
+                2,
+                3
+              ],
+              10
+            ]
+          ],
+          [
+            [
+              [
+                "join",
+                2,
+                1,
+                3
+              ],
+              5
+            ],
+            [
+              [
+                "join",
+                2,
+                9,
+                11
+              ],
+              10
+            ]
+          ],
+          [
+            [
+              [
+                "join",
+                2,
+                8,
+                10
+              ],
+              40
+            ],
+            [
+              [
+                "join",
+                3,
+                8,
+                11
+              ],
+              5
+            ]
+          ]
+        ]
+      },
+      "late_and_quartic_with_identical_starting_meetings": [
+        {
+          "late_index": 1177,
+          "quartic_index": 1156
+        },
+        {
+          "late_index": 1771,
+          "quartic_index": 1739
+        },
+        {
+          "late_index": 2083,
+          "quartic_index": 1999
+        },
+        {
+          "late_index": 2683,
+          "quartic_index": 2611
+        },
+        {
+          "late_index": 2902,
+          "quartic_index": 2881
+        },
+        {
+          "late_index": 3101,
+          "quartic_index": 3074
+        },
+        {
+          "late_index": 3156,
+          "quartic_index": 3151
+        }
+      ],
+      "quartic_cluster_count": {
+        "starts": 7,
+        "numbering": "The five-parent join is 0 and knots 1 to 5 are the offshoots born in the same round.",
+        "common_next_groups_and_loose_counts": {
+          "round_one_loose": [
+            5,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "round_two_groups": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              0,
+              5
+            ]
+          ],
+          "round_one_loose_beyond_round_two_demand": [
+            0,
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        "formula": "5 + binomial(t + 3, 4) for round t >= 1",
+        "argument": [
+          "Restart at round one. Each group for the next round is one pair with one common neighbour. The loose counts meet every demand.",
+          "The cluster identification applies. Each offshoot has one leftover and two loose distinctions, giving it one endless chain. The five-parent join has no leftover.",
+          "Each original round t counts clusters of size t in this map. For a cluster containing the five-parent join, the five chain lengths are nonnegative and sum to t - 1. A cluster omitting the join must begin at one of the five offshoots and has one continuation to size t.",
+          "This map has clusters of every size. Since it never closes, the parity and not-all-equal growths agree."
+        ],
+        "references": [
+          "proofs/DOUBLE-IDENT-20261119-001A/DOUBLE-IDENT-20261119-001A-P001_doubles/proof.md, Theorem 6",
+          "proofs/CHAIN-IDENT-20261119-001A/CHAIN-IDENT-20261119-001A-P001_chains/proof.md, extended complex and rays",
+          "research/NAE-GROWTH-20261119-001/nae_growth.md, growth under the two laws"
+        ]
+      },
+      "unread_and_rate_starts": [
+        {
+          "index": 655,
+          "meetings": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              3,
+              4
+            ]
+          ],
+          "loose": [
+            2,
+            2,
+            2,
+            2,
+            3
+          ],
+          "kind": "unread",
+          "as_of_14": "unread",
+          "end": "rounds",
+          "counts": [
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            13,
+            15,
+            17,
+            19,
+            21,
+            24,
+            28,
+            32,
+            36,
+            40,
+            45,
+            52,
+            60,
+            68,
+            76,
+            85,
+            97,
+            112
+          ],
+          "last_four_ratios": [
+            "19/17",
+            "85/76",
+            "97/85",
+            "112/97"
+          ],
+          "spread": 0.036992,
+          "kind_allowing_D5": "unread",
+          "equals_5_plus_binomial_t_plus_3_choose_4_at_every_read_round": false,
+          "leftovers_on_five_knot_ring": 1
+        },
+        {
+          "index": 656,
+          "meetings": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              3,
+              4
+            ]
+          ],
+          "loose": [
+            2,
+            2,
+            2,
+            3,
+            3
+          ],
+          "kind": "rate 1.26",
+          "as_of_14": "unread",
+          "end": "rounds",
+          "counts": [
+            7,
+            9,
+            11,
+            14,
+            18,
+            22,
+            28,
+            36,
+            45,
+            57,
+            72,
+            90,
+            114,
+            145,
+            183,
+            231,
+            291,
+            366,
+            463,
+            587,
+            742,
+            936,
+            1179,
+            1486
+          ],
+          "last_four_ratios": [
+            "742/587",
+            "468/371",
+            "131/104",
+            "1486/1179"
+          ],
+          "spread": 0.004439,
+          "kind_allowing_D5": "rate 1.26",
+          "equals_5_plus_binomial_t_plus_3_choose_4_at_every_read_round": false,
+          "leftovers_on_five_knot_ring": 2
+        },
+        {
+          "index": 657,
+          "meetings": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              3,
+              4
+            ]
+          ],
+          "loose": [
+            2,
+            2,
+            3,
+            2,
+            3
+          ],
+          "kind": "unread",
+          "as_of_14": "unread",
+          "end": "rounds",
+          "counts": [
+            7,
+            9,
+            12,
+            15,
+            18,
+            22,
+            28,
+            37,
+            48,
+            60,
+            73,
+            90,
+            115,
+            150,
+            193,
+            241,
+            296,
+            368,
+            470,
+            608,
+            777,
+            971,
+            1201,
+            1502
+          ],
+          "last_four_ratios": [
+            "777/608",
+            "971/777",
+            "1201/971",
+            "1502/1201"
+          ],
+          "spread": 0.041091,
+          "kind_allowing_D5": "unread",
+          "equals_5_plus_binomial_t_plus_3_choose_4_at_every_read_round": false,
+          "leftovers_on_five_knot_ring": 2
+        },
+        {
+          "index": 658,
+          "meetings": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              3,
+              4
+            ]
+          ],
+          "loose": [
+            2,
+            2,
+            3,
+            3,
+            3
+          ],
+          "kind": "rate 1.38",
+          "as_of_14": "rate 1.39",
+          "end": "bound",
+          "counts": [
+            8,
+            11,
+            15,
+            21,
+            29,
+            40,
+            55,
+            77,
+            107,
+            148,
+            205,
+            283,
+            391,
+            543,
+            755,
+            1047,
+            1449,
+            2003,
+            2770,
+            3840,
+            5332,
+            7398,
+            10246
+          ],
+          "last_four_ratios": [
+            "384/277",
+            "1333/960",
+            "3699/2666",
+            "5123/3699"
+          ],
+          "spread": 0.003573,
+          "kind_allowing_D5": "rate 1.38",
+          "equals_5_plus_binomial_t_plus_3_choose_4_at_every_read_round": false,
+          "leftovers_on_five_knot_ring": 3
+        },
+        {
+          "index": 659,
+          "meetings": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              3,
+              4
+            ]
+          ],
+          "loose": [
+            2,
+            3,
+            2,
+            3,
+            3
+          ],
+          "kind": "unread",
+          "as_of_14": "unread",
+          "end": "bound",
+          "counts": [
+            8,
+            11,
+            16,
+            22,
+            30,
+            40,
+            55,
+            78,
+            111,
+            155,
+            212,
+            287,
+            393,
+            550,
+            777,
+            1088,
+            1499,
+            2045,
+            2802,
+            3893,
+            5462,
+            7644,
+            10583
+          ],
+          "last_four_ratios": [
+            "3893/2802",
+            "5462/3893",
+            "3822/2731",
+            "10583/7644"
+          ],
+          "spread": 0.018547,
+          "kind_allowing_D5": "unread",
+          "equals_5_plus_binomial_t_plus_3_choose_4_at_every_read_round": false,
+          "leftovers_on_five_knot_ring": 3
+        },
+        {
+          "index": 660,
+          "meetings": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              3,
+              4
+            ]
+          ],
+          "loose": [
+            2,
+            3,
+            3,
+            3,
+            3
+          ],
+          "kind": "unread",
+          "as_of_14": "rate 1.50",
+          "end": "bound",
+          "counts": [
+            9,
+            13,
+            20,
+            30,
+            45,
+            67,
+            100,
+            151,
+            229,
+            346,
+            520,
+            778,
+            1163,
+            1746,
+            2635,
+            3982,
+            6001,
+            9008,
+            13492
+          ],
+          "last_four_ratios": [
+            "3982/2635",
+            "6001/3982",
+            "9008/6001",
+            "3373/2252"
+          ],
+          "spread": 0.013416,
+          "kind_allowing_D5": "unread",
+          "equals_5_plus_binomial_t_plus_3_choose_4_at_every_read_round": false,
+          "leftovers_on_five_knot_ring": 4
+        },
+        {
+          "index": 661,
+          "meetings": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              3,
+              4
+            ]
+          ],
+          "loose": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "kind": "rate 1.62",
+          "as_of_14": "rate 1.62",
+          "end": "bound",
+          "counts": [
+            10,
+            15,
+            25,
+            40,
+            65,
+            105,
+            170,
+            275,
+            445,
+            720,
+            1165,
+            1885,
+            3050,
+            4935,
+            7985,
+            12920
+          ],
+          "last_four_ratios": [
+            "610/377",
+            "987/610",
+            "1597/987",
+            "2584/1597"
+          ],
+          "spread": 4e-06,
+          "kind_allowing_D5": "rate 1.62",
+          "equals_5_plus_binomial_t_plus_3_choose_4_at_every_read_round": false,
+          "leftovers_on_five_knot_ring": 5
+        },
+        {
+          "index": 1156,
+          "meetings": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              4
+            ]
+          ],
+          "loose": [
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "kind": "unread",
+          "as_of_14": "unread",
+          "end": "bound",
+          "counts": [
+            6,
+            10,
+            20,
+            40,
+            75,
+            131,
+            215,
+            335,
+            500,
+            720,
+            1006,
+            1370,
+            1825,
+            2385,
+            3065,
+            3881,
+            4850,
+            5990,
+            7320
+          ],
+          "last_four_ratios": [
+            "3881/3065",
+            "4850/3881",
+            "599/485",
+            "732/599"
+          ],
+          "spread": 0.044195,
+          "kind_allowing_D5": "dim 5",
+          "equals_5_plus_binomial_t_plus_3_choose_4_at_every_read_round": true,
+          "finite_settling_at_D5": {
+            "sig0": 6,
+            "sig1": 11
+          }
+        },
+        {
+          "index": 1739,
+          "meetings": [
+            [
+              0,
+              3
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              4
+            ]
+          ],
+          "loose": [
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "kind": "unread",
+          "as_of_14": "unread",
+          "end": "bound",
+          "counts": [
+            6,
+            10,
+            20,
+            40,
+            75,
+            131,
+            215,
+            335,
+            500,
+            720,
+            1006,
+            1370,
+            1825,
+            2385,
+            3065,
+            3881,
+            4850,
+            5990,
+            7320
+          ],
+          "last_four_ratios": [
+            "3881/3065",
+            "4850/3881",
+            "599/485",
+            "732/599"
+          ],
+          "spread": 0.044195,
+          "kind_allowing_D5": "dim 5",
+          "equals_5_plus_binomial_t_plus_3_choose_4_at_every_read_round": true,
+          "finite_settling_at_D5": {
+            "sig0": 6,
+            "sig1": 11
+          }
+        },
+        {
+          "index": 1999,
+          "meetings": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              3,
+              4
+            ]
+          ],
+          "loose": [
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "kind": "unread",
+          "as_of_14": "unread",
+          "end": "bound",
+          "counts": [
+            6,
+            10,
+            20,
+            40,
+            75,
+            131,
+            215,
+            335,
+            500,
+            720,
+            1006,
+            1370,
+            1825,
+            2385,
+            3065,
+            3881,
+            4850,
+            5990,
+            7320
+          ],
+          "last_four_ratios": [
+            "3881/3065",
+            "4850/3881",
+            "599/485",
+            "732/599"
+          ],
+          "spread": 0.044195,
+          "kind_allowing_D5": "dim 5",
+          "equals_5_plus_binomial_t_plus_3_choose_4_at_every_read_round": true,
+          "finite_settling_at_D5": {
+            "sig0": 6,
+            "sig1": 11
+          }
+        },
+        {
+          "index": 2611,
+          "meetings": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              4
+            ]
+          ],
+          "loose": [
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "kind": "unread",
+          "as_of_14": "unread",
+          "end": "bound",
+          "counts": [
+            6,
+            10,
+            20,
+            40,
+            75,
+            131,
+            215,
+            335,
+            500,
+            720,
+            1006,
+            1370,
+            1825,
+            2385,
+            3065,
+            3881,
+            4850,
+            5990,
+            7320
+          ],
+          "last_four_ratios": [
+            "3881/3065",
+            "4850/3881",
+            "599/485",
+            "732/599"
+          ],
+          "spread": 0.044195,
+          "kind_allowing_D5": "dim 5",
+          "equals_5_plus_binomial_t_plus_3_choose_4_at_every_read_round": true,
+          "finite_settling_at_D5": {
+            "sig0": 6,
+            "sig1": 11
+          }
+        },
+        {
+          "index": 2881,
+          "meetings": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              4
+            ]
+          ],
+          "loose": [
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "kind": "unread",
+          "as_of_14": "unread",
+          "end": "bound",
+          "counts": [
+            6,
+            10,
+            20,
+            40,
+            75,
+            131,
+            215,
+            335,
+            500,
+            720,
+            1006,
+            1370,
+            1825,
+            2385,
+            3065,
+            3881,
+            4850,
+            5990,
+            7320
+          ],
+          "last_four_ratios": [
+            "3881/3065",
+            "4850/3881",
+            "599/485",
+            "732/599"
+          ],
+          "spread": 0.044195,
+          "kind_allowing_D5": "dim 5",
+          "equals_5_plus_binomial_t_plus_3_choose_4_at_every_read_round": true,
+          "finite_settling_at_D5": {
+            "sig0": 6,
+            "sig1": 11
+          }
+        },
+        {
+          "index": 3074,
+          "meetings": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              4
+            ]
+          ],
+          "loose": [
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "kind": "unread",
+          "as_of_14": "unread",
+          "end": "bound",
+          "counts": [
+            6,
+            10,
+            20,
+            40,
+            75,
+            131,
+            215,
+            335,
+            500,
+            720,
+            1006,
+            1370,
+            1825,
+            2385,
+            3065,
+            3881,
+            4850,
+            5990,
+            7320
+          ],
+          "last_four_ratios": [
+            "3881/3065",
+            "4850/3881",
+            "599/485",
+            "732/599"
+          ],
+          "spread": 0.044195,
+          "kind_allowing_D5": "dim 5",
+          "equals_5_plus_binomial_t_plus_3_choose_4_at_every_read_round": true,
+          "finite_settling_at_D5": {
+            "sig0": 6,
+            "sig1": 11
+          }
+        },
+        {
+          "index": 3151,
+          "meetings": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              4
+            ]
+          ],
+          "loose": [
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "kind": "unread",
+          "as_of_14": "unread",
+          "end": "bound",
+          "counts": [
+            6,
+            10,
+            20,
+            40,
+            75,
+            131,
+            215,
+            335,
+            500,
+            720,
+            1006,
+            1370,
+            1825,
+            2385,
+            3065,
+            3881,
+            4850,
+            5990,
+            7320
+          ],
+          "last_four_ratios": [
+            "3881/3065",
+            "4850/3881",
+            "599/485",
+            "732/599"
+          ],
+          "spread": 0.044195,
+          "kind_allowing_D5": "dim 5",
+          "equals_5_plus_binomial_t_plus_3_choose_4_at_every_read_round": true,
+          "finite_settling_at_D5": {
+            "sig0": 6,
+            "sig1": 11
+          }
+        }
+      ]
+    }
+  },
+  "posthoc_initial_block_bound": {
+    "sig0": {
+      "constant_fit_on_up_to_four_knots": 9,
+      "five_knot_misses": 7,
+      "misses_by_initial_block_and_K": [
+        {
+          "block": 4,
+          "K": 14,
+          "count": 7
+        }
+      ],
+      "exploratory_K_at_most_twice_initial_block_plus_c": {
+        "constant_fit_on_up_to_four_knots": 6,
+        "five_knot_misses": 0
+      }
+    },
+    "sig1": {
+      "constant_fit_on_up_to_four_knots": 11,
+      "five_knot_misses": 7,
+      "misses_by_initial_block_and_K": [
+        {
+          "block": 4,
+          "K": 16,
+          "count": 7
+        }
+      ],
+      "exploratory_K_at_most_twice_initial_block_plus_c": {
+        "constant_fit_on_up_to_four_knots": 8,
+        "five_knot_misses": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,1874 @@
+{
+  "changed examples": {
+    "nae | name | bounded | holds": "chain3 move [1, 0] nae",
+    "nae | name | weakens | holds": "chain3 mark 0 nae",
+    "nae | sig0 | bounded | holds": "chain3 move [1, 0] nae",
+    "nae | sig0 | dies out | weakens": "two-touching mark 0 nae",
+    "nae | sig0 | takes over | holds": "ring7-bare move [0, 1] nae",
+    "nae | sig0 | weakens | holds": "chain3 mark 0 nae",
+    "nae | sig1 | bounded | holds": "chain3 move [1, 0] nae",
+    "nae | sig1 | dies out | weakens": "two-touching mark 0 nae",
+    "nae | sig1 | takes over | holds": "ring7-bare move [0, 1] nae",
+    "nae | sig1 | weakens | holds": "chain3 mark 0 nae",
+    "parity | name | bounded | holds": "chain3 move [1, 0] parity",
+    "parity | name | weakens | holds": "chain3 mark 0 parity",
+    "parity | sig0 | bounded | holds": "chain3 move [1, 0] parity",
+    "parity | sig0 | dies out | weakens": "two-touching mark 0 parity",
+    "parity | sig0 | takes over | holds": "ring7-bare move [0, 1] parity",
+    "parity | sig0 | weakens | holds": "chain3 mark 0 parity",
+    "parity | sig1 | bounded | holds": "chain3 move [1, 0] parity",
+    "parity | sig1 | dies out | weakens": "two-touching mark 0 parity",
+    "parity | sig1 | takes over | holds": "ring7-bare move [0, 1] parity",
+    "parity | sig1 | weakens | holds": "chain3 mark 0 parity"
+  },
+  "eligibility and residual verdict": {
+    "nae | name": {
+      "holds with different middle and last share": 283,
+      "holds with falling middle-to-last share": 2,
+      "passes size and length for weakens": 395
+    },
+    "nae | sig0": {
+      "holds with different middle and last share": 395,
+      "holds with falling middle-to-last share": 35,
+      "holds with last share one": 14,
+      "passes size and length for weakens": 395
+    },
+    "nae | sig1": {
+      "holds with different middle and last share": 332,
+      "holds with falling middle-to-last share": 54,
+      "holds without damage growing between compared rounds": 14,
+      "passes size and length for weakens": 395
+    },
+    "parity | name": {
+      "passes size and length for weakens": 171
+    },
+    "parity | sig0": {
+      "passes size and length for weakens": 171
+    },
+    "parity | sig1": {
+      "passes size and length for weakens": 171
+    }
+  },
+  "jobs": 366,
+  "last rounds by intervention": {
+    "nae | made": {
+      "13": 44,
+      "14": 10,
+      "15": 45,
+      "16": 56
+    },
+    "nae | mark": {
+      "12": 6,
+      "14": 6,
+      "16": 17
+    },
+    "nae | move": {
+      "7": 3,
+      "10": 3,
+      "11": 12,
+      "12": 8,
+      "13": 5,
+      "14": 5,
+      "15": 20,
+      "16": 70
+    },
+    "nae | pulse": {
+      "12": 17,
+      "13": 37,
+      "14": 30,
+      "15": 15,
+      "16": 56
+    },
+    "parity | made": {
+      "13": 12,
+      "14": 5,
+      "15": 10,
+      "16": 24
+    },
+    "parity | mark": {
+      "12": 6,
+      "14": 6,
+      "16": 17
+    },
+    "parity | move": {
+      "7": 3,
+      "10": 3,
+      "11": 12,
+      "12": 8,
+      "13": 5,
+      "14": 5,
+      "15": 20,
+      "16": 70
+    }
+  },
+  "last sig1 share ranges": {
+    "chain3 | made 2 | nae": [
+      0.3333333333333333,
+      0.5365853658536586
+    ],
+    "chain3 | made 2 | parity": [
+      0.3333333333333333,
+      0.5365853658536586
+    ],
+    "chain3 | made 4 | nae": [
+      0.288135593220339,
+      0.475
+    ],
+    "chain3 | mark | nae": [
+      0.014492753623188406,
+      0.38181818181818183
+    ],
+    "chain3 | mark | parity": [
+      0.014492753623188406,
+      0.38181818181818183
+    ],
+    "chain3 | move | nae": [
+      0.07936507936507936,
+      0.9487179487179487
+    ],
+    "chain3 | move | parity": [
+      0.07936507936507936,
+      0.9487179487179487
+    ],
+    "chain3 | pulse 2 | nae": [
+      0.5061728395061729,
+      0.638095238095238
+    ],
+    "chain3 | pulse 4 | nae": [
+      0.4430379746835443,
+      0.5757575757575758
+    ],
+    "generator7 | made 2 | nae": [
+      0.715089344804765,
+      0.8890810648217777
+    ],
+    "generator7 | made 2 | parity": [
+      0.715089344804765,
+      0.8890810648217777
+    ],
+    "generator7 | made 4 | nae": [
+      0.3381969775924961,
+      0.6084103388241596
+    ],
+    "generator7 | mark | nae": [
+      0.9582024643633728,
+      0.9990798059227037
+    ],
+    "generator7 | mark | parity": [
+      0.9582024643633728,
+      0.9990798059227037
+    ],
+    "generator7 | move | nae": [
+      0.9936507936507937,
+      1.0
+    ],
+    "generator7 | move | parity": [
+      0.9936507936507937,
+      1.0
+    ],
+    "generator7 | pulse 2 | nae": [
+      0.8207755154973415,
+      0.9721460982074667
+    ],
+    "generator7 | pulse 4 | nae": [
+      0.5189251187940357,
+      0.7805307584866703
+    ],
+    "ring5-bare | made 2 | nae": [
+      1.0,
+      1.0
+    ],
+    "ring5-bare | made 2 | parity": [
+      1.0,
+      1.0
+    ],
+    "ring5-bare | made 4 | nae": [
+      1.0,
+      1.0
+    ],
+    "ring5-bare | mark | nae": [
+      1.0,
+      1.0
+    ],
+    "ring5-bare | mark | parity": [
+      1.0,
+      1.0
+    ],
+    "ring5-bare | move | nae": [
+      0.8275862068965517,
+      0.9696048632218845
+    ],
+    "ring5-bare | move | parity": [
+      0.8275862068965517,
+      0.9696048632218845
+    ],
+    "ring5-bare | pulse 2 | nae": [
+      1.0,
+      1.0
+    ],
+    "ring5-bare | pulse 4 | nae": [
+      1.0,
+      1.0
+    ],
+    "ring5-eddy | made 2 | nae": [
+      0.7070935910990284,
+      1.0
+    ],
+    "ring5-eddy | made 2 | parity": [
+      0.7070935910990284,
+      1.0
+    ],
+    "ring5-eddy | made 4 | nae": [
+      0.29668279601235936,
+      0.9988534575420996
+    ],
+    "ring5-eddy | mark | nae": [
+      1.0,
+      1.0
+    ],
+    "ring5-eddy | mark | parity": [
+      1.0,
+      1.0
+    ],
+    "ring5-eddy | move | nae": [
+      0.5682140435238271,
+      0.7084995397361153
+    ],
+    "ring5-eddy | move | parity": [
+      0.5682140435238271,
+      0.7084995397361153
+    ],
+    "ring5-eddy | pulse 2 | nae": [
+      0.7119799139167863,
+      0.9938573918817963
+    ],
+    "ring5-eddy | pulse 4 | nae": [
+      0.37967914438502676,
+      0.9891966896278309
+    ],
+    "ring7-bare | made 2 | nae": [
+      1.0,
+      1.0
+    ],
+    "ring7-bare | made 2 | parity": [
+      1.0,
+      1.0
+    ],
+    "ring7-bare | made 4 | nae": [
+      1.0,
+      1.0
+    ],
+    "ring7-bare | mark | nae": [
+      1.0,
+      1.0
+    ],
+    "ring7-bare | mark | parity": [
+      1.0,
+      1.0
+    ],
+    "ring7-bare | move | nae": [
+      0.7971014492753623,
+      0.9579579579579579
+    ],
+    "ring7-bare | move | parity": [
+      0.7971014492753623,
+      0.9579579579579579
+    ],
+    "ring7-bare | pulse 2 | nae": [
+      1.0,
+      1.0
+    ],
+    "ring7-bare | pulse 4 | nae": [
+      1.0,
+      1.0
+    ],
+    "two-touching | made 2 | nae": [
+      0.3333333333333333,
+      0.5365853658536586
+    ],
+    "two-touching | made 2 | parity": [
+      0.3333333333333333,
+      0.5365853658536586
+    ],
+    "two-touching | made 4 | nae": [
+      0.288135593220339,
+      0.475
+    ],
+    "two-touching | mark | nae": [
+      0.0625,
+      0.0625
+    ],
+    "two-touching | mark | parity": [
+      0.0625,
+      0.0625
+    ],
+    "two-touching | move | nae": [
+      0.07936507936507936,
+      0.07936507936507936
+    ],
+    "two-touching | move | parity": [
+      0.07936507936507936,
+      0.07936507936507936
+    ],
+    "two-touching | pulse 2 | nae": [
+      0.5061728395061729,
+      0.638095238095238
+    ],
+    "two-touching | pulse 4 | nae": [
+      0.4430379746835443,
+      0.5757575757575758
+    ]
+  },
+  "one-way to both ways with same thresholds": {
+    "nae | name": {
+      "bounded -> holds": 2,
+      "weakens -> holds": 2
+    },
+    "nae | sig0": {
+      "bounded -> holds": 2,
+      "dies out -> weakens": 6,
+      "takes over -> holds": 35,
+      "weakens -> holds": 4
+    },
+    "nae | sig1": {
+      "bounded -> holds": 2,
+      "dies out -> weakens": 6,
+      "takes over -> holds": 33,
+      "weakens -> holds": 4
+    },
+    "parity | name": {
+      "bounded -> holds": 2,
+      "weakens -> holds": 2
+    },
+    "parity | sig0": {
+      "bounded -> holds": 2,
+      "dies out -> weakens": 6,
+      "takes over -> holds": 28,
+      "weakens -> holds": 4
+    },
+    "parity | sig1": {
+      "bounded -> holds": 2,
+      "dies out -> weakens": 6,
+      "takes over -> holds": 28,
+      "weakens -> holds": 4
+    }
+  },
+  "ordinary table": {
+    "chain3 | made 2 | nae": {
+      "name": {
+        "holds": 6
+      },
+      "sig0": {
+        "holds": 6
+      },
+      "sig1": {
+        "holds": 6
+      }
+    },
+    "chain3 | made 2 | parity": {
+      "name": {
+        "holds": 6
+      },
+      "sig0": {
+        "holds": 6
+      },
+      "sig1": {
+        "holds": 6
+      }
+    },
+    "chain3 | made 4 | nae": {
+      "name": {
+        "holds": 10
+      },
+      "sig0": {
+        "holds": 10
+      },
+      "sig1": {
+        "holds": 10
+      }
+    },
+    "chain3 | mark | nae": {
+      "name": {
+        "holds": 3
+      },
+      "sig0": {
+        "holds": 2,
+        "weakens": 1
+      },
+      "sig1": {
+        "holds": 2,
+        "weakens": 1
+      }
+    },
+    "chain3 | mark | parity": {
+      "name": {
+        "holds": 3
+      },
+      "sig0": {
+        "holds": 2,
+        "weakens": 1
+      },
+      "sig1": {
+        "holds": 2,
+        "weakens": 1
+      }
+    },
+    "chain3 | move | nae": {
+      "name": {
+        "holds": 6
+      },
+      "sig0": {
+        "holds": 4,
+        "weakens": 2
+      },
+      "sig1": {
+        "holds": 4,
+        "weakens": 2
+      }
+    },
+    "chain3 | move | parity": {
+      "name": {
+        "holds": 6
+      },
+      "sig0": {
+        "holds": 4,
+        "weakens": 2
+      },
+      "sig1": {
+        "holds": 4,
+        "weakens": 2
+      }
+    },
+    "chain3 | pulse 2 | nae": {
+      "name": {
+        "holds": 6
+      },
+      "sig0": {
+        "holds": 6
+      },
+      "sig1": {
+        "holds": 6
+      }
+    },
+    "chain3 | pulse 4 | nae": {
+      "name": {
+        "holds": 10
+      },
+      "sig0": {
+        "holds": 10
+      },
+      "sig1": {
+        "holds": 10
+      }
+    },
+    "generator7 | made 2 | nae": {
+      "name": {
+        "holds": 12
+      },
+      "sig0": {
+        "holds": 12
+      },
+      "sig1": {
+        "holds": 12
+      }
+    },
+    "generator7 | made 2 | parity": {
+      "name": {
+        "holds": 12
+      },
+      "sig0": {
+        "holds": 12
+      },
+      "sig1": {
+        "holds": 12
+      }
+    },
+    "generator7 | made 4 | nae": {
+      "name": {
+        "holds": 32
+      },
+      "sig0": {
+        "holds": 32
+      },
+      "sig1": {
+        "holds": 32
+      }
+    },
+    "generator7 | mark | nae": {
+      "name": {
+        "takes over": 7
+      },
+      "sig0": {
+        "holds": 7
+      },
+      "sig1": {
+        "holds": 5,
+        "takes over": 2
+      }
+    },
+    "generator7 | mark | parity": {
+      "name": {
+        "takes over": 7
+      },
+      "sig0": {
+        "holds": 7
+      },
+      "sig1": {
+        "holds": 5,
+        "takes over": 2
+      }
+    },
+    "generator7 | move | nae": {
+      "name": {
+        "takes over": 33,
+        "too few rounds": 3
+      },
+      "sig0": {
+        "holds": 29,
+        "takes over": 4,
+        "too few rounds": 3
+      },
+      "sig1": {
+        "takes over": 33,
+        "too few rounds": 3
+      }
+    },
+    "generator7 | move | parity": {
+      "name": {
+        "takes over": 33,
+        "too few rounds": 3
+      },
+      "sig0": {
+        "holds": 29,
+        "takes over": 4,
+        "too few rounds": 3
+      },
+      "sig1": {
+        "takes over": 33,
+        "too few rounds": 3
+      }
+    },
+    "generator7 | pulse 2 | nae": {
+      "name": {
+        "holds": 12
+      },
+      "sig0": {
+        "holds": 12
+      },
+      "sig1": {
+        "holds": 12
+      }
+    },
+    "generator7 | pulse 4 | nae": {
+      "name": {
+        "holds": 32
+      },
+      "sig0": {
+        "holds": 32
+      },
+      "sig1": {
+        "holds": 32
+      }
+    },
+    "ring5-bare | made 2 | nae": {
+      "name": {
+        "takes over": 5
+      },
+      "sig0": {
+        "takes over": 5
+      },
+      "sig1": {
+        "takes over": 5
+      }
+    },
+    "ring5-bare | made 2 | parity": {
+      "name": {
+        "takes over": 5
+      },
+      "sig0": {
+        "takes over": 5
+      },
+      "sig1": {
+        "takes over": 5
+      }
+    },
+    "ring5-bare | made 4 | nae": {
+      "name": {
+        "takes over": 5
+      },
+      "sig0": {
+        "takes over": 5
+      },
+      "sig1": {
+        "takes over": 5
+      }
+    },
+    "ring5-bare | mark | nae": {
+      "name": {
+        "takes over": 5
+      },
+      "sig0": {
+        "takes over": 5
+      },
+      "sig1": {
+        "takes over": 5
+      }
+    },
+    "ring5-bare | mark | parity": {
+      "name": {
+        "takes over": 5
+      },
+      "sig0": {
+        "takes over": 5
+      },
+      "sig1": {
+        "takes over": 5
+      }
+    },
+    "ring5-bare | move | nae": {
+      "name": {
+        "takes over": 20
+      },
+      "sig0": {
+        "holds": 10,
+        "takes over": 10
+      },
+      "sig1": {
+        "holds": 10,
+        "takes over": 10
+      }
+    },
+    "ring5-bare | move | parity": {
+      "name": {
+        "takes over": 20
+      },
+      "sig0": {
+        "holds": 10,
+        "takes over": 10
+      },
+      "sig1": {
+        "holds": 10,
+        "takes over": 10
+      }
+    },
+    "ring5-bare | pulse 2 | nae": {
+      "name": {
+        "takes over": 5
+      },
+      "sig0": {
+        "takes over": 5
+      },
+      "sig1": {
+        "takes over": 5
+      }
+    },
+    "ring5-bare | pulse 4 | nae": {
+      "name": {
+        "takes over": 5
+      },
+      "sig0": {
+        "takes over": 5
+      },
+      "sig1": {
+        "takes over": 5
+      }
+    },
+    "ring5-eddy | made 2 | nae": {
+      "name": {
+        "holds": 10,
+        "takes over": 5
+      },
+      "sig0": {
+        "holds": 15
+      },
+      "sig1": {
+        "holds": 10,
+        "takes over": 5
+      }
+    },
+    "ring5-eddy | made 2 | parity": {
+      "name": {
+        "holds": 10,
+        "takes over": 5
+      },
+      "sig0": {
+        "holds": 15
+      },
+      "sig1": {
+        "holds": 10,
+        "takes over": 5
+      }
+    },
+    "ring5-eddy | made 4 | nae": {
+      "name": {
+        "holds": 40
+      },
+      "sig0": {
+        "holds": 40
+      },
+      "sig1": {
+        "holds": 40
+      }
+    },
+    "ring5-eddy | mark | nae": {
+      "name": {
+        "takes over": 5
+      },
+      "sig0": {
+        "holds": 5
+      },
+      "sig1": {
+        "takes over": 5
+      }
+    },
+    "ring5-eddy | mark | parity": {
+      "name": {
+        "takes over": 5
+      },
+      "sig0": {
+        "holds": 5
+      },
+      "sig1": {
+        "takes over": 5
+      }
+    },
+    "ring5-eddy | move | nae": {
+      "name": {
+        "holds": 20
+      },
+      "sig0": {
+        "holds": 20
+      },
+      "sig1": {
+        "holds": 20
+      }
+    },
+    "ring5-eddy | move | parity": {
+      "name": {
+        "holds": 20
+      },
+      "sig0": {
+        "holds": 20
+      },
+      "sig1": {
+        "holds": 20
+      }
+    },
+    "ring5-eddy | pulse 2 | nae": {
+      "name": {
+        "holds": 10,
+        "takes over": 5
+      },
+      "sig0": {
+        "holds": 15
+      },
+      "sig1": {
+        "holds": 15
+      }
+    },
+    "ring5-eddy | pulse 4 | nae": {
+      "name": {
+        "holds": 40
+      },
+      "sig0": {
+        "holds": 40
+      },
+      "sig1": {
+        "holds": 40
+      }
+    },
+    "ring7-bare | made 2 | nae": {
+      "name": {
+        "takes over": 7
+      },
+      "sig0": {
+        "takes over": 7
+      },
+      "sig1": {
+        "takes over": 7
+      }
+    },
+    "ring7-bare | made 2 | parity": {
+      "name": {
+        "takes over": 7
+      },
+      "sig0": {
+        "takes over": 7
+      },
+      "sig1": {
+        "takes over": 7
+      }
+    },
+    "ring7-bare | made 4 | nae": {
+      "name": {
+        "takes over": 7
+      },
+      "sig0": {
+        "holds": 7
+      },
+      "sig1": {
+        "takes over": 7
+      }
+    },
+    "ring7-bare | mark | nae": {
+      "name": {
+        "takes over": 7
+      },
+      "sig0": {
+        "takes over": 7
+      },
+      "sig1": {
+        "takes over": 7
+      }
+    },
+    "ring7-bare | mark | parity": {
+      "name": {
+        "takes over": 7
+      },
+      "sig0": {
+        "takes over": 7
+      },
+      "sig1": {
+        "takes over": 7
+      }
+    },
+    "ring7-bare | move | nae": {
+      "name": {
+        "takes over": 42
+      },
+      "sig0": {
+        "holds": 42
+      },
+      "sig1": {
+        "holds": 42
+      }
+    },
+    "ring7-bare | move | parity": {
+      "name": {
+        "takes over": 42
+      },
+      "sig0": {
+        "holds": 42
+      },
+      "sig1": {
+        "holds": 42
+      }
+    },
+    "ring7-bare | pulse 2 | nae": {
+      "name": {
+        "takes over": 7
+      },
+      "sig0": {
+        "takes over": 7
+      },
+      "sig1": {
+        "takes over": 7
+      }
+    },
+    "ring7-bare | pulse 4 | nae": {
+      "name": {
+        "takes over": 7
+      },
+      "sig0": {
+        "holds": 7
+      },
+      "sig1": {
+        "takes over": 7
+      }
+    },
+    "two-touching | made 2 | nae": {
+      "name": {
+        "holds": 6
+      },
+      "sig0": {
+        "holds": 6
+      },
+      "sig1": {
+        "holds": 6
+      }
+    },
+    "two-touching | made 2 | parity": {
+      "name": {
+        "holds": 6
+      },
+      "sig0": {
+        "holds": 6
+      },
+      "sig1": {
+        "holds": 6
+      }
+    },
+    "two-touching | made 4 | nae": {
+      "name": {
+        "holds": 10
+      },
+      "sig0": {
+        "holds": 10
+      },
+      "sig1": {
+        "holds": 10
+      }
+    },
+    "two-touching | mark | nae": {
+      "name": {
+        "holds": 2
+      },
+      "sig0": {
+        "weakens": 2
+      },
+      "sig1": {
+        "weakens": 2
+      }
+    },
+    "two-touching | mark | parity": {
+      "name": {
+        "holds": 2
+      },
+      "sig0": {
+        "weakens": 2
+      },
+      "sig1": {
+        "weakens": 2
+      }
+    },
+    "two-touching | move | nae": {
+      "name": {
+        "takes over": 2
+      },
+      "sig0": {
+        "weakens": 2
+      },
+      "sig1": {
+        "weakens": 2
+      }
+    },
+    "two-touching | move | parity": {
+      "name": {
+        "takes over": 2
+      },
+      "sig0": {
+        "weakens": 2
+      },
+      "sig1": {
+        "weakens": 2
+      }
+    },
+    "two-touching | pulse 2 | nae": {
+      "name": {
+        "holds": 6
+      },
+      "sig0": {
+        "holds": 6
+      },
+      "sig1": {
+        "holds": 6
+      }
+    },
+    "two-touching | pulse 4 | nae": {
+      "name": {
+        "holds": 10
+      },
+      "sig0": {
+        "holds": 10
+      },
+      "sig1": {
+        "holds": 10
+      }
+    }
+  },
+  "pulse count check": {
+    "cases": 155,
+    "reached round 16": 56,
+    "unequal counts in final observation": 155
+  },
+  "shell opportunities": {
+    "nae | made": {
+      "cases": 155,
+      "damaged shell furthest": 29,
+      "damaged shell nearest": 155,
+      "fits width one": 155,
+      "multiple shells populated": 126,
+      "room to exceed width three": 87,
+      "within two steps of furthest": 68
+    },
+    "nae | pulse": {
+      "cases": 155,
+      "damaged shell furthest": 29,
+      "damaged shell nearest": 155,
+      "fits width one": 155,
+      "multiple shells populated": 126,
+      "room to exceed width three": 87,
+      "within two steps of furthest": 68
+    },
+    "parity | made": {
+      "cases": 51,
+      "damaged shell furthest": 17,
+      "damaged shell nearest": 51,
+      "fits width one": 51,
+      "multiple shells populated": 34,
+      "room to exceed width three": 20,
+      "within two steps of furthest": 31
+    }
+  },
+  "verdicts": {
+    "nae | name": {
+      "holds": 283,
+      "takes over": 179,
+      "too few rounds": 3
+    },
+    "nae | sig0": {
+      "holds": 395,
+      "takes over": 60,
+      "too few rounds": 3,
+      "weakens": 7
+    },
+    "nae | sig1": {
+      "holds": 340,
+      "takes over": 115,
+      "too few rounds": 3,
+      "weakens": 7
+    },
+    "parity | name": {
+      "holds": 65,
+      "takes over": 138,
+      "too few rounds": 3
+    },
+    "parity | sig0": {
+      "holds": 158,
+      "takes over": 38,
+      "too few rounds": 3,
+      "weakens": 7
+    },
+    "parity | sig1": {
+      "holds": 117,
+      "takes over": 79,
+      "too few rounds": 3,
+      "weakens": 7
+    }
+  },
+  "verified": {
+    "archived verdicts": 2013,
+    "directional identities": 25965,
+    "ordinary table rows": 54,
+    "pair table rows": 6,
+    "receiver table rows": 40,
+    "shell table rows": 30,
+    "weakening series rows": 14
+  },
+  "weakens": {
+    "chain3 mark 1 nae | sig0": {
+      "damages": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "last n and changed n": [
+        34,
+        35
+      ],
+      "rounds exceeding count difference": []
+    },
+    "chain3 mark 1 nae | sig1": {
+      "damages": [
+        3,
+        1,
+        3,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "last n and changed n": [
+        34,
+        35
+      ],
+      "rounds exceeding count difference": [
+        1,
+        3
+      ]
+    },
+    "chain3 mark 1 parity | sig0": {
+      "damages": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "last n and changed n": [
+        34,
+        35
+      ],
+      "rounds exceeding count difference": []
+    },
+    "chain3 mark 1 parity | sig1": {
+      "damages": [
+        3,
+        1,
+        3,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "last n and changed n": [
+        34,
+        35
+      ],
+      "rounds exceeding count difference": [
+        1,
+        3
+      ]
+    },
+    "chain3 move [0, 2] nae | sig0": {
+      "damages": [
+        0,
+        7,
+        6,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ],
+      "last n and changed n": [
+        34,
+        29
+      ],
+      "rounds exceeding count difference": [
+        2,
+        3
+      ]
+    },
+    "chain3 move [0, 2] nae | sig1": {
+      "damages": [
+        6,
+        7,
+        6,
+        7,
+        5,
+        7,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ],
+      "last n and changed n": [
+        34,
+        29
+      ],
+      "rounds exceeding count difference": [
+        1,
+        2,
+        3,
+        4,
+        6
+      ]
+    },
+    "chain3 move [0, 2] parity | sig0": {
+      "damages": [
+        0,
+        7,
+        6,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ],
+      "last n and changed n": [
+        34,
+        29
+      ],
+      "rounds exceeding count difference": [
+        2,
+        3
+      ]
+    },
+    "chain3 move [0, 2] parity | sig1": {
+      "damages": [
+        6,
+        7,
+        6,
+        7,
+        5,
+        7,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ],
+      "last n and changed n": [
+        34,
+        29
+      ],
+      "rounds exceeding count difference": [
+        1,
+        2,
+        3,
+        4,
+        6
+      ]
+    },
+    "chain3 move [2, 0] nae | sig0": {
+      "damages": [
+        0,
+        7,
+        6,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ],
+      "last n and changed n": [
+        34,
+        29
+      ],
+      "rounds exceeding count difference": [
+        2,
+        3
+      ]
+    },
+    "chain3 move [2, 0] nae | sig1": {
+      "damages": [
+        6,
+        7,
+        6,
+        7,
+        5,
+        7,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ],
+      "last n and changed n": [
+        34,
+        29
+      ],
+      "rounds exceeding count difference": [
+        1,
+        2,
+        3,
+        4,
+        6
+      ]
+    },
+    "chain3 move [2, 0] parity | sig0": {
+      "damages": [
+        0,
+        7,
+        6,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ],
+      "last n and changed n": [
+        34,
+        29
+      ],
+      "rounds exceeding count difference": [
+        2,
+        3
+      ]
+    },
+    "chain3 move [2, 0] parity | sig1": {
+      "damages": [
+        6,
+        7,
+        6,
+        7,
+        5,
+        7,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ],
+      "last n and changed n": [
+        34,
+        29
+      ],
+      "rounds exceeding count difference": [
+        1,
+        2,
+        3,
+        4,
+        6
+      ]
+    },
+    "two-touching mark 0 nae | sig0": {
+      "damages": [
+        1,
+        6,
+        5,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "last n and changed n": [
+        34,
+        30
+      ],
+      "rounds exceeding count difference": [
+        2,
+        3
+      ]
+    },
+    "two-touching mark 0 nae | sig1": {
+      "damages": [
+        5,
+        6,
+        5,
+        6,
+        4,
+        6,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "last n and changed n": [
+        34,
+        30
+      ],
+      "rounds exceeding count difference": [
+        1,
+        2,
+        3,
+        4,
+        6
+      ]
+    },
+    "two-touching mark 0 parity | sig0": {
+      "damages": [
+        1,
+        6,
+        5,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "last n and changed n": [
+        34,
+        30
+      ],
+      "rounds exceeding count difference": [
+        2,
+        3
+      ]
+    },
+    "two-touching mark 0 parity | sig1": {
+      "damages": [
+        5,
+        6,
+        5,
+        6,
+        4,
+        6,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "last n and changed n": [
+        34,
+        30
+      ],
+      "rounds exceeding count difference": [
+        1,
+        2,
+        3,
+        4,
+        6
+      ]
+    },
+    "two-touching mark 1 nae | sig0": {
+      "damages": [
+        1,
+        6,
+        5,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "last n and changed n": [
+        34,
+        30
+      ],
+      "rounds exceeding count difference": [
+        2,
+        3
+      ]
+    },
+    "two-touching mark 1 nae | sig1": {
+      "damages": [
+        5,
+        6,
+        5,
+        6,
+        4,
+        6,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "last n and changed n": [
+        34,
+        30
+      ],
+      "rounds exceeding count difference": [
+        1,
+        2,
+        3,
+        4,
+        6
+      ]
+    },
+    "two-touching mark 1 parity | sig0": {
+      "damages": [
+        1,
+        6,
+        5,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "last n and changed n": [
+        34,
+        30
+      ],
+      "rounds exceeding count difference": [
+        2,
+        3
+      ]
+    },
+    "two-touching mark 1 parity | sig1": {
+      "damages": [
+        5,
+        6,
+        5,
+        6,
+        4,
+        6,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "last n and changed n": [
+        34,
+        30
+      ],
+      "rounds exceeding count difference": [
+        1,
+        2,
+        3,
+        4,
+        6
+      ]
+    },
+    "two-touching move [0, 1] nae | sig0": {
+      "damages": [
+        0,
+        7,
+        6,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ],
+      "last n and changed n": [
+        34,
+        29
+      ],
+      "rounds exceeding count difference": [
+        2,
+        3
+      ]
+    },
+    "two-touching move [0, 1] nae | sig1": {
+      "damages": [
+        8,
+        7,
+        8,
+        7,
+        5,
+        7,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ],
+      "last n and changed n": [
+        34,
+        29
+      ],
+      "rounds exceeding count difference": [
+        1,
+        2,
+        3,
+        4,
+        6
+      ]
+    },
+    "two-touching move [0, 1] parity | sig0": {
+      "damages": [
+        0,
+        7,
+        6,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ],
+      "last n and changed n": [
+        34,
+        29
+      ],
+      "rounds exceeding count difference": [
+        2,
+        3
+      ]
+    },
+    "two-touching move [0, 1] parity | sig1": {
+      "damages": [
+        8,
+        7,
+        8,
+        7,
+        5,
+        7,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ],
+      "last n and changed n": [
+        34,
+        29
+      ],
+      "rounds exceeding count difference": [
+        1,
+        2,
+        3,
+        4,
+        6
+      ]
+    },
+    "two-touching move [1, 0] nae | sig0": {
+      "damages": [
+        0,
+        7,
+        6,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ],
+      "last n and changed n": [
+        34,
+        29
+      ],
+      "rounds exceeding count difference": [
+        2,
+        3
+      ]
+    },
+    "two-touching move [1, 0] nae | sig1": {
+      "damages": [
+        8,
+        7,
+        8,
+        7,
+        5,
+        7,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ],
+      "last n and changed n": [
+        34,
+        29
+      ],
+      "rounds exceeding count difference": [
+        1,
+        2,
+        3,
+        4,
+        6
+      ]
+    },
+    "two-touching move [1, 0] parity | sig0": {
+      "damages": [
+        0,
+        7,
+        6,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ],
+      "last n and changed n": [
+        34,
+        29
+      ],
+      "rounds exceeding count difference": [
+        2,
+        3
+      ]
+    },
+    "two-touching move [1, 0] parity | sig1": {
+      "damages": [
+        8,
+        7,
+        8,
+        7,
+        5,
+        7,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ],
+      "last n and changed n": [
+        34,
+        29
+      ],
+      "rounds exceeding count difference": [
+        1,
+        2,
+        3,
+        4,
+        6
+      ]
+    }
+  }
+}

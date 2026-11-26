@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**408 current results** and 5 superseded ones, from 666 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**408 current results** and 5 superseded ones, from 667 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -31,7 +31,7 @@ How to read an entry:
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 26 results
 - [Notes](#notes): 6 self-contained notes
-- [Epics](#epics): all 666 epics with their closures
+- [Epics](#epics): all 667 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -2025,6 +2025,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-26 | A local reader's view grown on demand (`ON-DEMAND-20261126-001`) | — | [folder](research/ON-DEMAND-20261126-001/) |
 | 2026-11-26 | Is the sign about the model or about the order we supply? (`REORDER-CONFIRM-20261126-001`) | — | [folder](research/REORDER-CONFIRM-20261126-001/) |
 | 2026-11-26 | Is the sign the cost of reordering? (`REORDER-SIGN-20261126-001`) | — | [folder](research/REORDER-SIGN-20261126-001/) |
+| 2026-11-26 | The second kind of check: is it already in the structure? (`SECOND-CHECK-20261126-001`) | — | [folder](research/SECOND-CHECK-20261126-001/) |
 | 2026-11-26 | After both exist, can the far pattern change the switch receiver's course? (`SECOND-SWITCH-20261126-001`) | — | [folder](research/SECOND-SWITCH-20261126-001/) |
 | 2026-11-26 | Laws whose threshold a new knot reads from itself: does late hearing from afar survive? (`SELF-THRESHOLD-20261126-001`) | — | [folder](research/SELF-THRESHOLD-20261126-001/) |
 | 2026-11-26 | When a local reader's view of a growth settles, from the start alone (`SETTLE-BOUND-20261126-001`) | — | [folder](research/SETTLE-BOUND-20261126-001/) |

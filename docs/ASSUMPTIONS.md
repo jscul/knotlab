@@ -3901,6 +3901,7 @@ evidence: results and their status come from the records each entry links.
 - **Rests on it.** The supply, stalls, products and retained states measured under this rival law. [Study definition](../research/FORBIDDING-JOIN-20261120-001/preregistration.md).
 - **Challenge.** Compare the arity-floor and ordinary laws on the identical starting structures. A future law would need to explain the allowance in its own terms.
 - **History.**
+  - 2026-11-26 · `FORBID-EDITS-20261126-001` ([decision](../research/FORBID-EDITS-20261126-001/decision.md), referee pending): with free local edits, one round from small starts, this law's forbidding answers one reader's setting in up to 72 placements of a class (by changing what a join of three parents is owed), never both readers'; where it depends on one setting at a time it acts as a local rejection.
   - 2026-11-20 · Added in the first G18 comparison of laws under which joining can forbid. Results are referee pending.
 
 ### A130 · A join may receive only the fresh distinctions required by its arity
@@ -3912,6 +3913,7 @@ evidence: results and their status come from the records each entry links.
 - **Rests on it.** The supply, stalls, products and retained states measured under the arity-floor law. [Study definition](../research/FORBIDDING-JOIN-20261120-001/preregistration.md).
 - **Challenge.** Compare the one-fewer and ordinary grants on the same starts, including births where the three grants differ. The ordinary future birth map needs to be tested again.
 - **History.**
+  - 2026-11-26 · `FORBID-EDITS-20261126-001` ([decision](../research/FORBID-EDITS-20261126-001/decision.md), referee pending): with free local edits, one round from small starts, this law's forbidding answers one reader's setting in up to 65 placements of a class, never both readers'; where it depends on one setting at a time it acts as a local rejection.
   - 2026-11-20 · Added in the first G18 comparison of laws under which joining can forbid. Results are referee pending.
 
 ### A131 · Starting weights can be restricted once to states that still have extensions
@@ -5993,4 +5995,5 @@ evidence: results and their status come from the records each entry links.
 - **Rests on it.** Whatever the study finds about excesses under joins that forbid ([the note](../research/FORBID-EDITS-20261126-001/README.md)).
 - **Challenge.** Other edits (a removed distinction, a changed meeting), more rounds, other readings, a weighting that does not count each setting pair separately, larger or built starts. Counting each setting pair's worlds separately is itself a choice; with all four counted together the settings would not be free. The model is not expected to keep these choices; they are a test bench.
 - **History.**
+  - 2026-11-26 · `FORBID-EDITS-20261126-001` ([decision](../research/FORBID-EDITS-20261126-001/decision.md), referee pending): under these choices, no table exceeds the classical bound in 7,075 starts of three to five knots and 3,000 sampled starts of six to eight; forbidding answers one reader's setting in at most 72 placements of a class and never both readers'; the built starts where both forbid carry no correlation. On placements that split, forbidding is a local rejection whatever the scaffolds (an argument).
   - 2026-11-26 · Entered with `FORBID-EDITS-20261126-001`.

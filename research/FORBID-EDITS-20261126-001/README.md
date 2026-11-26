@@ -62,6 +62,15 @@ Pearle, *Physical Review D* 2, 1418, 1970; Gisin and Gisin, *Physics Letters A* 
   Review A* 83, 032123, 2011, cited from the advisor; to check), which A3 meets at η = 1/2. Whether not-all-equal growth
   from a small start does any of this is the census question.
 
+- **A4 (forbidding that splits is local rejection; written after the pre-count).** When no birth and no stall
+  depends on both readers' settings, the tables under U or S are P(R_A, R_B | x, y) = Σ_λ μ(λ) α_x(λ, R_A)
+  β_y(λ, R_B) / Z(x, y): a hidden variable λ (the preparation) that does not depend on the settings, and responses
+  that each depend on one setting and λ, with rejection (α or β zero) where a join forbids. That is the literature's
+  local model with local rejection, exactly the detection loophole's form. So on placements that split, no forbidding
+  law can give more than such a model gives: it can exceed 2 only by rejection, and then nothing in it is nonlocal.
+  A joint response needs a birth or a stall that depends on both settings, which is a contact between the readers or
+  a whole-round event (the earlier study's 9/4 came from the stall).
+
 ## B. The census (frozen before it is run)
 
 - **Starts.** Every connected start of three to five knots in the class of the earlier edit studies (each knot's
@@ -122,6 +131,13 @@ setting changes the joins with no fresh distinction on its side while old states
 the reader's setting*), and whether that holds for every reader. Tables are computed where it holds on at least one
 side, and on all placements of the first 200 starts of each size as controls.
 
+**With a contact (an addendum after A4, written before its run).** A4 leaves a joint response only where a birth or a
+stall depends on both settings. The census set aside the placements with a birth of two readers (a contact between
+them: 3,587 under E1, 450 under M1). The addendum reads them too (`--shared`, E1 and M1 on the census of starts up to
+five knots), with the same tables and record checks. *Expected:* where a newborn knot holds distinctions of both
+readers, the far edit changes the near reader's births or values, so every excess there comes with a changed record
+(signalling); none without.
+
 ## Expected (written before the census; the advisor's predictions follow)
 
 1. **Parity: no excess without signalling** under any law (A2). Three readers: none above 3/4.
@@ -147,3 +163,53 @@ separately is itself a choice of weighting. The mechanism, read as discarded run
 experiments closed in 2015; it survives here only read as worlds that never exist, which is nearer the literature's
 retrocausal or all-at-once models. The class reaches 4 (A3), above the quantum bound, so 2√2 is not singled out; and
 nothing here bears on physical entanglement.
+
+## What was found
+
+Tables: [census pre-count](census_count.md), [census tables](census_tables.md), [extension pre-count](extension_count.md),
+[extension tables](extension_tables.md), [built starts](built_tables.md), [with a contact](shared_tables.md). Runs:
+`count_*`, `tables5_*`, `xcount_*`, `xrun_*`, `built_*`, `shared_*` (`.jsonl.gz`).
+
+- **Forbidding never answers both readers' settings in a grown start.** In the census (7,075 starts of three to five
+  knots) it answers one reader's in 12 placements (E1, one fewer); in the extension (3,000 sampled starts of six to
+  eight knots) in up to 72 (E1, one fewer) and 65 (E2, the arity floor), never in a three-reader placement, never on
+  both sides. Most placements stall in every setting pair, since one short knot stalls the round.
+- **No table exceeds the classical bound, with or without signalling.** Census: 3,901 (E1), 946 (E2) and 150
+  (three-reader) placements read under each of the six laws, both weightings; extension: tables on the 646 starts with
+  a placement where forbidding answers a setting, or among the first 200 of each size (2,388, 1,550 and 669
+  placements). On placements that split, the largest not-all-equal CHSH is 0.159 and its Mermin win 1/2 (no
+  correlation) under every law; parity reaches exactly 2 and 3/4 (readers whose values a chain of parity knots ties),
+  as A2 allows.
+- **Built starts where both sides forbid carry no correlation.** In the 81 built starts (E1), forbidding answers both
+  readers' settings under one fewer in every one, every one splits and every complete record is unchanged by far
+  settings; CHSH stays below 0.001, because the join carries old-value correlations below 4 × 10⁻⁴: rejection has
+  nothing to select on. Under the arity floor these starts do not forbid by setting. The two E2 built starts do not
+  split.
+- **With a contact, still no excess.** Of the placements where a newborn knot holds distinctions of two readers (3,587
+  under E1, 450 three-reader), the far edit changes the near reader's complete record in most (all under the ordinary
+  count), and no table exceeds 2 or 3/4 (largest: not-all-equal 1.06, parity 2, Mermin 3/4).
+
+**So.** On placements that split, forbidding is local rejection (A4): whatever its size, no nonlocality in Bell's sense
+can come from it. Whether growth gives even a rejection excess was not tested in effect: no grown start forbids on both
+sides, and where both sides were built to forbid, the two sides were uncorrelated. That is a "not run in effect", not a
+negative, and the census is not called clean. The advisor's view, which I take: with A4 in hand the two-sided question
+is worth little, since any excess would be a loophole artefact, so the class is not extended further.
+
+## Expectations, and how they fared
+
+1. *Parity: no excess without signalling; three readers none above 3/4.* Holds (and A2 proves the two-reader case).
+2. *Not-all-equal, the ordinary count: under S no excess; under U excesses may appear, all with signalling.* The first
+   holds; the second fails: no excess at all, although under U the complete record changes with a far setting in 301
+   of 4,642 census placements that split (completion counts that depend on far values).
+3. *Not-all-equal under A129/A130: excesses with single values unchanged may appear; a clean census.* No excess of any
+   kind; the census tests nothing two-sided, as the advisor said ("mostly by vacuity").
+
+## Literature (cited once; what this adds)
+
+Bell's bound and its loophole forms: Pearle (*Physical Review D* 2, 1418, 1970) and Gisin and Gisin (*Physics Letters
+A* 260, 323, 1999) built local models with rejection; Branciard (*Physical Review A* 83, 032123, 2011) gives the bound
+4/η − 2 under post-selection. That every no-signalling table has a local model with signed weights is Abramsky and
+Brandenburger (*New Journal of Physics* 13, 113036, 2011); that a nonnegative representation is equivalent to a
+noncontextual one is Spekkens (*Physical Review Letters* 101, 020401, 2008). This study adds the growth laws' own
+answer: with free local edits, a join that forbids acts as a local rejection, and in the starts read it does not even
+do that on both sides.

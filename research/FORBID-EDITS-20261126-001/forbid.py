@@ -9,7 +9,8 @@ ENTANGLEMENT-READ-20261120-001B and FORBIDDING-JOIN-20261120-001B.
     forbid.py starts                 count the census starts
     forbid.py run KIND I0 I1         KIND in E1, E2, M1 (three readers, E1 edits); starts I0..I1-1, a JSON line each
     forbid.py count KIND I0 I1       the structural pre-count: kinds and forbidding flags, no tables
-    ... --extension                  on the extension's sampled starts of 6, 7 and 8 knots (sampled())"""
+    ... --extension                  on the extension's sampled starts of 6, 7 and 8 knots (sampled())
+    ... --shared                     the addendum: also read placements where a birth has parents of two readers"""
 import sys, json, itertools, collections
 from fractions import Fraction
 from pathlib import Path
@@ -35,6 +36,7 @@ from rival_growth import grow  # noqa: E402
 ARMS = ('ordinary', 'one_fewer', 'arity_floor')          # the control, A129, A130
 LAWS = ('nae', 'parity')
 MAX_KNOTS, MAX_DISTINCTIONS = 5, 12
+SHARED = '--shared' in sys.argv          # the addendum: read placements with a birth of two readers too (a contact)
 
 
 # ---------------------------------------------------------------- the census of starts
@@ -127,7 +129,7 @@ def record_roles(edited, stage, births, own):
         if set(b['parents']) & set(own):
             shape.append((tuple(b['parents']), tuple(b['inputs']), b['f']))
             bits += list(b['fresh'])
-    return bits, tuple(shape)
+    return list(dict.fromkeys(bits)), tuple(shape)       # a distinction both holders hold is read once
 
 
 def distribution(counter, bits, weighting):
@@ -158,6 +160,7 @@ def placement(base, readers, kind, law, arm, tables=True):
     if any(m is None for m in marks): return {'kind': 'not read', 'why': 'a reader holder has no loose distinction to read'}
     owner = {h: i for i, rd in enumerate(readers) for h in rd}
     res, shapes, zsets = {}, {}, {}
+    shared_here = False
     for st in itertools.product((0, 1), repeat=k):
         adds = []
         for i, (s, rd) in enumerate(zip(st, readers)):
@@ -168,14 +171,15 @@ def placement(base, readers, kind, law, arm, tables=True):
         ed = edit(base, adds)
         stage, status, births = grown(ed, law, arm)
         sides = [sorted({owner[p] for p in b['parents'] if p in owner}) for b in births]
-        if any(len(x) > 1 for x in sides): return {'kind': 'shared birth'}
+        if any(len(x) > 1 for x in sides) and not SHARED: return {'kind': 'shared birth'}
+        shared_here = shared_here or any(len(x) > 1 for x in sides)
         counter = StageCounts(law, base + ed, base + stage)
         old = StageCounts(law, base + ed, base + ed).total()
         if counter.total() == 0: return {'kind': 'no allowed state', 'setting': st}
-        zero = [x[0] if x else 'middle' for b, x in zip(births, sides) if b['f'] == 0]
+        zero = [x[0] if len(x) == 1 else 'shared' if x else 'middle' for b, x in zip(births, sides) if b['f'] == 0]
         res[st] = {'status': status, 'births': len(births), 'zero-fresh births by side': dict(collections.Counter(map(str, zero))),
                    'retained': counter.retained(), 'old': old}
-        zsets[st] = [frozenset((tuple(b['parents']), tuple(b['inputs'])) for b, x in zip(births, sides) if b['f'] == 0 and x == [i])
+        zsets[st] = [frozenset((tuple(b['parents']), tuple(b['inputs'])) for b, x in zip(births, sides) if b['f'] == 0 and i in x)
                      for i in range(k)]
         shapes[st] = (status, frozenset((tuple(b['parents']), tuple(b['inputs']), b['f']) for b, x in zip(births, sides) if not x))
         if tables:
@@ -199,7 +203,7 @@ def placement(base, readers, kind, law, arm, tables=True):
     two_sided = any(forbids[st] and all(own_zero[st]) for st in res)
     one_sided = any(forbids[st] and any(own_zero[st]) for st in res)
     splits = len(set(shapes.values())) == 1
-    return {'kind': 'read', 'tables': res, 'forbids somewhere': any(forbids.values()), 'one-sided forbidding': one_sided,
+    return {'kind': 'shared birth, read' if shared_here else 'read', 'tables': res, 'forbids somewhere': any(forbids.values()), 'one-sided forbidding': one_sided,
             'two-sided forbidding': two_sided, 'splits': splits,
             'forbidding changes with own setting': dependent, 'on every side': all(dependent)}
 
@@ -272,7 +276,7 @@ def read_start(idx, start, kind, tables=True):
                 p = placement(base, readers, kind, law, arm, tables)
                 row = {'start': idx, 'n': n, 'supports': base, 'readers': readers, 'kind of edit': kind, 'law': law, 'arm': arm}
                 row.update({a: b for a, b in p.items() if a != 'tables'})
-                if p['kind'] == 'read':
+                if p['kind'] in ('read', 'shared birth, read'):
                     T = p['tables']
                     row['status'] = {''.join(map(str, s)): t['status'] for s, t in T.items()}
                     row['retained of old'] = {''.join(map(str, s)): [t['retained'], t['old']] for s, t in T.items()}
@@ -328,6 +332,9 @@ if __name__ == '__main__':
         print(len(S), collections.Counter(s[0] for s in S))
     else:
         kind, i0, i1 = sys.argv[2], int(sys.argv[3]), int(sys.argv[4])
-        for idx in range(i0, min(i1, len(S))):
+        chosen = range(i0, min(i1, len(S)))
+        if '--starts' in sys.argv:                       # an explicit list of start indices, one JSON list in a file
+            chosen = [i for i in json.loads(Path(sys.argv[sys.argv.index('--starts') + 1]).read_text()) if i0 <= i < i1]
+        for idx in chosen:
             for row in read_start(idx, S[idx], kind, sys.argv[1] == 'run'):
                 print(json.dumps(row), flush=True)

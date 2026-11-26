@@ -3,6 +3,10 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 26 November 2026 · The study of the two countings refereed: confirmed, with narrowings
+
+**Corrections from [an independent referee's report](research/TWO-COUNTINGS-20261125-001/referee-R1/report.md), folded into [the result](research/TWO-COUNTINGS-20261125-001A/results.md).** The four statements of the knot-test finding hold, and every registered comparison counted from a common stage before both settings scores 2. Narrowed: on the 11-rule start the law makes the setting knots from a start two of whose rules fail the knot test in the whole; in the one-parent case every failing rule is a supplied setting, and every birth the law made passes; the lemma needs one more condition said outright, and with other rules added at the setting stage an all-knot example of six rules scores 61/30; "the excess appears only under counting from the finish" holds for the registered common-stage comparisons and not for mixed stages or supplied orders of construction; the two countings part in round one in 436 of 477 not-all-equal growths, not in all; and "the pair tables decide the next birth count" was tested by no pair, since no two tables are equal. This qualifies the entry of 25 November below, "the smallest gain ... was reopened, and the study's confirming run answers it": the two seven-rule parts with every rule a knot stand, and the failures in that census are all at supplied settings.
+
 ## 26 November 2026 · Three studies refereed: one reading blocked, the rest narrowed
 
 **Corrections from three independent referee reports, folded into the records, the guide and the notes they name.** All three studies are confirmed with fixes.

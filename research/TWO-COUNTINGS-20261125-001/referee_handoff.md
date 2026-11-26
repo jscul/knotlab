@@ -1,5 +1,7 @@
 # Referee hand-off: TWO-COUNTINGS-20261125-001
 
+**Refereed, 26 November 2026: confirmed with fixes** ([report R1](referee-R1/report.md)); its fixes are folded into the records it names. "That each hypothesis is needed" below is not shown: the hypotheses are sufficient on the registered form.
+
 Ticket A is referee pending. Its pre-registration has the prior-work searches under "Prior work in the program"; run
 `python3 -B scripts/track.py objects-gate research/TWO-COUNTINGS-20261125-001A/preregistration.md`. It builds on
 `SETTING-AS-REREAD-20261123-001`, `ONE-PARENT-REREAD-20261123-001`, `THIRD-HOLDER-20261123-001`,

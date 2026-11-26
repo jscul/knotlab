@@ -38,6 +38,39 @@ their rules fail: the 11-rule structure is the record's "11-knot structure" (11 
 8-rule and 10-rule structures likewise. **Rule Q** (A235): a one-parent birth also takes a distinction its parent
 shares. **Rule R** (A230): a short knot pays the rest with shared distinctions.
 
+> **Referee report R1, 26 November 2026: confirmed with fixes, no block** ([the report](../TWO-COUNTINGS-20261125-001/referee-R1/report.md)). The four statements
+> of the knot-test finding hold, and every registered comparison counted from a common stage before both settings
+> gives 2 over all two-valued outcome functions, with both records hidden (1,816 verdicts). Read this note with these
+> narrowings.
+> - **Settings made by a law.** The law does make the two standard setting knots on the 11-rule start, but from a
+>   start whose only holders of the two distinctions they take both fail the knot test in the whole. Read "an 11-rule
+>   start with nine knots" for "a structure of 11 knots".
+> - **The one-parent gain.** In all 280 histories with a failing rule the failure belongs to a setting that was
+>   supplied; every birth the law made passes.
+> - **The least size.** Seven old rules (nine with both settings) remains the least for a hidden excess under the
+>   earlier census's parity outcomes and bounds, not over arbitrary two-valued outcomes. The eight-rule witness of
+>   20/9 fails the knot test; the nine-rule one passes.
+> - **The lemma.** Its hypotheses are sufficient on the registered form of a setting; "each hypothesis is needed" is
+>   not shown. It needs one more condition said outright: given the old state, the setting stage gives a product of
+>   two distributions, each depending on its own setting alone. With other rules added at the same stage an example
+>   of six rules, every one a knot, scores 61/30 and changes the second record by 1/60.
+> - **"The excess above 2 appears only under counting from the finish."** Read: all registered common-stage
+>   comparisons that satisfy the lemma score 2. Both mixed stages of the 8/3 example score 7/3 with a record changed;
+>   and counting from nothing under a supplied order of construction gives a hidden 104/45, and a hidden 20/9 under
+>   93 orders.
+> - **Orders of construction.** All 329 orders in the class score 2, and so do 490 outside it. The greatest hidden
+>   score is 104/45; the greatest of all is 6117/2470.
+> - **When the countings part.** For "under not-all-equal they part at once" read: of 477 growths that make a birth,
+>   436 part in round one, 38 in round two, one in round three, and two still agree. The formula for one birth holds
+>   for a not-all-equal birth with old inputs and at least one fresh distinction.
+> - **Equal finishes and pair tables.** All 466 equal finishes in the renumbering check also had equal histories, so
+>   that check never met a finish reached two ways. No two of the 194 pair tables are the same, so "the pair tables
+>   decide the next birth count" was tested by no pair.
+> - **Smaller fixes.** Of the 512 sign assignments 256 score above 2, 128 of them hidden at 20/9; the one-parent
+>   failure is 280 of 680 histories and the shared-payment failure 33 of 214; 33 structures were projected and 28
+>   given the canonical command; the file of recorded readings is under version control; and the direct checks ran
+>   to a narrower limit than reading 35 says, leaving out 345 rounds that the referee checked with no verdict changed.
+
 ## Verdicts
 
 Nine predictions were frozen (P6 in two parts). All hold. The checker's recount agrees with the engine on every number

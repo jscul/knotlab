@@ -2,15 +2,17 @@
 
 Epic `RECURSION-LEAD-20261126-001` (the coordinator's pick after `LAYERS-20261126-001`; goals G17 with G18), closed 26
 November 2026. A check by the thread, not registered: computed; frozen after the advisor's review in the repository;
-referee pending. [The note](README.md)
+refereed (R1: refuted, one Block on the tower line, narrowings; folded in). [The note](README.md) · [Referee report](referee-R1/report.md)
 
 ## What stands
 
-1. **No recursion with nothing supplied.** Growing a start one round and exchanging it (each shortest allowed change
-   read as a knot) returns the start only with loose values pinned, which no recorded law does, and the exchange is our
-   operation. Every free exchange that is lawful (12 census starts) stops within two steps.
-2. **Returns are not only rings.** Besides the rings of the second-check study, one census start returns: three knots
-   sharing pairwise around a dead knot, with a fourth hung on it. The line-graph reading explains the rings, not this.
+1. **No free return or cycle on the iterations tested.** Growing a start one round and exchanging it (each shortest
+   allowed change read as a knot) returns the start only with loose values pinned, which ordinary growth never does (the
+   two forbidding cuts can force a loose value), and the exchange is our operation. Every lawful free exchange (12 census
+   starts) stops; the referee excludes an immediate free return at three to seven knots under ordinary growth.
+2. **Returns are not only rings.** Besides the rings of the second-check study (five and seven to ten knots), one census
+   start returns: three knots sharing pairwise around a dead knot, with a fourth hung on it. The line-graph reading
+   explains the rings and 3 of the 46 branched lawful exchanges, not this.
 3. **The tower re-read (corrected after the layers referee).** Under the shortest changes and under every change of at
    most five distinctions, at rounds 1 to 3, none of the starts read here kept two facts independent of every single
    knot's reads; but the layers referee built and sampled starts that do, so this is a count of these sets, not a
@@ -36,7 +38,8 @@ starts; more rounds of the exchange; a proof.
 | 2 | Why census entry 165 returns | 1/3 — a curiosity | 3/3 — one start | Read its moves by hand against the line-graph reading → the rule, or none | Alternative |
 | 3 | The ring that returns under laws added by hand (lesson 8.7) as a second recursion lead | 2/3 | 2/3 | Read whether its return needs the added law → the law's part, or none | Alternative |
 
-**Corrections:** two claims in the thread's status message to the owner were wrong and are logged in
+**Corrections:** the referee's Block (already logged with the layers referee) and narrowings, logged (2026-11-26,
+"Recursion's lead refereed: what fixes a loose value"); and two claims in the thread's status message to the owner were wrong and are logged in
 `docs/CORRECTIONS.md` (2026-11-26, "Recursion's lead: returns are not only rings"): "only single rings return" and "with
 loose values free it's never lawful".
 **Goals:** checkpoint row added (G17, G18; obstruction learned, thin).

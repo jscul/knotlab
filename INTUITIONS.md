@@ -6105,8 +6105,8 @@ changes what a knot owes changes what it makes.
   start with no ring, and one start can keep two such facts.
 - [12.3 Whether it happens again, one pattern up](#123-whether-it-happens-again-one-pattern-up):
   three rungs kept apart, repetition, a tower and recursion; only the first is
-  reached; the facts a tower would bind exist, and a rule binding them is not
-  yet looked for.
+  reached; the facts a tower would bind exist, and under parity the growth does
+  not bind them on any stage read.
 
 **The intuition.** The owner has called the work "a logic based fractal with
 emergence as the guiding principle" (lesson 7.2), and says what emergence is
@@ -6211,10 +6211,13 @@ larger pattern, if their classes obey a rule among themselves, and that larger
 pattern might keep a fact no single ring holds. The literature has this shape:
 codes built out of codes (concatenated codes). The first prerequisite holds:
 a connected start can keep two or more independent facts that no single knot
-reads (lesson 12.2). Whether the growth then makes a rule binding them, a third
-distinction it produces rather than one a reader defines as their sum, is
-untested. A rule defined as their sum passes the knot test for any two
-independent facts, so that test alone cannot show a tower.
+reads (lesson 12.2). A rule defined as their sum passes the knot test for any
+two independent facts, so that test alone cannot show a tower; what would count
+is three facts, each carried by its own cycle, whose parity the knots' laws force.
+Under parity, with the shortest changes, none was found on any stage read: every
+such forced relation lies in one space (the literature's bicycle space), and none
+of its elements splits into three facts held by the whole
+([binding](research/BINDING-20261126-001/decision.md), computed, referee pending).
 
 **What earlier lines found.** Lesson 4.8 binds distinctions at different
 depths of one address tree, with a bond that grows by one member per depth. A
@@ -6236,8 +6239,8 @@ with nothing nested by hand.
 | A knot's constraint is held by the whole and by no part | proved (lessons 2.1 and 2.3) |
 | A grown ring under parity keeps a class of the whole ring that no knot reads | computed, refereed (lesson 12.2); a tree does the same, so it is a fact of the grown start, not of the loop (computed, refereed) |
 | A connected start keeps two or more independent such facts | computed, refereed: a nine-knot start of two joined rings gains two in one round, a sampled ten-knot start too (lesson 12.2) |
-| The growth makes a rule binding such facts into a larger pattern that keeps a fact none of them holds (a tower) | untested: the facts it would bind exist; a rule the growth makes among them is not yet looked for ([layers](research/LAYERS-20261126-001/decision.md), refereed) |
-| A pattern that grows back into itself (recursion) | not shown: growing a start and then exchanging it gives the start back only when we pin its loose values, which no recorded law does, and the exchange is ours ([recursion's lead](research/RECURSION-LEAD-20261126-001/decision.md)); parts that copy themselves (lesson 8.7) copy under laws added by hand |
+| The growth makes a rule binding such facts into a larger pattern that keeps a fact none of them holds (a tower) | not found under parity with the shortest changes: on 7,713 stages with relations forced by the knots' laws, none binds three or more facts no single knot reads, each carried by its own cycle ([binding](research/BINDING-20261126-001/decision.md), computed, referee pending) |
+| A pattern that grows back into itself (recursion) | not shown: growing a start and then exchanging it gives the start back only when we pin its loose values, which ordinary growth never does, and the exchange is ours; no free return or cycle on the iterations tested ([recursion's lead](research/RECURSION-LEAD-20261126-001/decision.md), refereed); parts that copy themselves (lesson 8.7) copy under laws added by hand |
 
 ## Glossary
 

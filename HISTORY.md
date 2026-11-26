@@ -3,6 +3,10 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 26 November 2026 · Recursion's lead refereed: refuted on the tower line, narrowed on pinning
+
+**Corrections from [an independent referee's report](research/RECURSION-LEAD-20261126-001/referee-R1/report.md), folded into [the decision](research/RECURSION-LEAD-20261126-001/decision.md).** Returns under growing and exchanging still need loose values fixed, which ordinary growth never does; the forbidding cuts, unlike ordinary growth, can fix one. No free return or cycle was found on the iterations tested.
+
 ## 26 November 2026 · Whole-held facts refereed: a start can keep two
 
 **Corrections from [an independent referee's report](research/LAYERS-20261126-001/referee-R1/report.md), folded into [the decision](research/LAYERS-20261126-001/decision.md).** The claim that no start keeps more than one fact that no single knot reads is withdrawn: a connected start of two joined rings gains two such facts in one round. The facts a tower would bind therefore exist; whether the growth binds them is open. The guide's Chapter 12 is corrected.

@@ -1,0 +1,1739 @@
+{
+  "growth source": "Independent round reconstruction. Shared growth is used only as a separate comparator.",
+  "census source": "Archived FORBID-EDITS-20261126-001/starts.json in its recorded order",
+  "census source sha256": "ba937f95092234f8e1d8a08c20e86996a3aa58d187f137629b2c55d7e0553d6e",
+  "heldout source": "Reconstructed labelled draws with replacement using seed 20261206 plus the knot count",
+  "archive check fields": [
+    "start",
+    "knots",
+    "loose",
+    "most shared distinctions at a knot",
+    "one ring",
+    "funding"
+  ],
+  "archive counts": {
+    "census": {
+      "closed": 230,
+      "funded": 5111,
+      "stalled": 1734
+    },
+    "heldout": {
+      "funded": 417,
+      "stalled": 483
+    }
+  },
+  "shared growth comparison": {
+    "seed": 20261210,
+    "sources": [
+      "census 53",
+      "census 35",
+      "census 19",
+      "census 30",
+      "census 1024",
+      "census 569",
+      "census 362",
+      "census 913",
+      "census 3641",
+      "census 3441",
+      "census 1998",
+      "census 4070",
+      "held out 6-278",
+      "held out 6-66",
+      "held out 6-84",
+      "held out 6-230",
+      "held out 7-279",
+      "held out 7-294",
+      "held out 7-29",
+      "held out 7-257",
+      "held out 8-284",
+      "held out 8-32",
+      "held out 8-125",
+      "held out 8-239",
+      "census 165",
+      "census 1590",
+      "census 1665",
+      "census 1689",
+      "census 1795",
+      "held out 7-179",
+      "ring of 3 knots with two loose each",
+      "ring of 4 knots with two loose each",
+      "ring of 5 knots with two loose each",
+      "ring of 6 knots with two loose each",
+      "ring of 7 knots with two loose each",
+      "ring of 8 knots with two loose each",
+      "ring of 9 knots with two loose each",
+      "ring of 10 knots with two loose each",
+      "closed four-knot parity start",
+      "one-loose four-knot start",
+      "one live ring beside a closing ring",
+      "ring of 4 knots grown for one round",
+      "ring of 5 knots grown for one round",
+      "ring of 6 knots grown for one round",
+      "ring of 7 knots grown for one round",
+      "ring of 8 knots grown for one round"
+    ],
+    "counts": {
+      "funded": 432,
+      "paired relabeling comparisons": 276,
+      "stalled": 108,
+      "closed": 12
+    }
+  },
+  "arm audit": {
+    "census": {
+      "counts": {
+        "parity": {
+          "ordinary": {
+            "funded": 5111,
+            "births": 10622,
+            "implied births": 1713,
+            "implied births without fresh distinctions": 1713,
+            "nonimplied births without fresh distinctions": 0,
+            "funded rounds without any loose distinction after growth": 1713,
+            "rounds leaving fresh loose distinctions": 3398,
+            "fresh loose distinctions": 15745,
+            "rounds fixing a fresh loose distinction": 0,
+            "fixed fresh loose distinctions": 0,
+            "rounds newly fixing a consumed loose distinction": 0,
+            "newly fixed consumed loose distinctions": 0,
+            "implied births of 2 places": 821,
+            "implied births of 1 places": 743,
+            "closed": 230,
+            "stalled": 1734
+          },
+          "one_fewer": {
+            "funded": 5111,
+            "births": 10622,
+            "implied births": 1713,
+            "implied births without fresh distinctions": 1713,
+            "nonimplied births without fresh distinctions": 136,
+            "funded rounds without any loose distinction after growth": 1713,
+            "rounds leaving fresh loose distinctions": 3398,
+            "fresh loose distinctions": 15128,
+            "rounds fixing a fresh loose distinction": 4,
+            "fixed fresh loose distinctions": 4,
+            "rounds newly fixing a consumed loose distinction": 126,
+            "newly fixed consumed loose distinctions": 126,
+            "implied births of 2 places": 821,
+            "implied births of 1 places": 743,
+            "closed": 230,
+            "stalled": 1734
+          },
+          "arity_floor": {
+            "funded": 5111,
+            "births": 10622,
+            "implied births": 1713,
+            "implied births without fresh distinctions": 1713,
+            "nonimplied births without fresh distinctions": 184,
+            "funded rounds without any loose distinction after growth": 1713,
+            "rounds leaving fresh loose distinctions": 3398,
+            "fresh loose distinctions": 15073,
+            "rounds fixing a fresh loose distinction": 4,
+            "fixed fresh loose distinctions": 4,
+            "rounds newly fixing a consumed loose distinction": 126,
+            "newly fixed consumed loose distinctions": 126,
+            "implied births of 2 places": 821,
+            "implied births of 1 places": 743,
+            "closed": 230,
+            "stalled": 1734
+          }
+        },
+        "not-all-equal": {
+          "ordinary": {
+            "funded": 5111,
+            "births": 10622,
+            "implied births": 0,
+            "implied births without fresh distinctions": 0,
+            "nonimplied births without fresh distinctions": 0,
+            "funded rounds with an allowed state": 5111,
+            "closed": 230,
+            "stalled": 1734
+          },
+          "one_fewer": {
+            "funded": 5111,
+            "births": 10622,
+            "implied births": 0,
+            "implied births without fresh distinctions": 0,
+            "nonimplied births without fresh distinctions": 285,
+            "funded rounds with an allowed state": 5111,
+            "closed": 230,
+            "stalled": 1734
+          },
+          "arity_floor": {
+            "funded": 5111,
+            "births": 10622,
+            "implied births": 0,
+            "implied births without fresh distinctions": 0,
+            "nonimplied births without fresh distinctions": 333,
+            "funded rounds with an allowed state": 5111,
+            "closed": 230,
+            "stalled": 1734
+          }
+        }
+      },
+      "parity witnesses": {
+        "ordinary": {
+          "fresh pins": [],
+          "first implied unary birth": {
+            "start": "census 21",
+            "start supports": [
+              [
+                0,
+                1,
+                4
+              ],
+              [
+                0,
+                2,
+                3
+              ],
+              [
+                1,
+                2,
+                3
+              ]
+            ],
+            "grown supports": [
+              [
+                0,
+                1,
+                4
+              ],
+              [
+                0,
+                2,
+                3
+              ],
+              [
+                1,
+                2,
+                3
+              ],
+              [
+                4
+              ]
+            ],
+            "births": [
+              {
+                "parents": [
+                  0
+                ],
+                "inputs": [
+                  4
+                ],
+                "demand": 0,
+                "implied": true,
+                "ordinary fresh count": 0,
+                "fresh": []
+              }
+            ],
+            "already fixed input": 4
+          }
+        },
+        "one_fewer": {
+          "fresh pins": [
+            {
+              "start": "census 1590",
+              "distinctions": [
+                12
+              ]
+            },
+            {
+              "start": "census 1665",
+              "distinctions": [
+                13
+              ]
+            },
+            {
+              "start": "census 1689",
+              "distinctions": [
+                13
+              ]
+            },
+            {
+              "start": "census 1795",
+              "distinctions": [
+                13
+              ]
+            }
+          ],
+          "first implied unary birth": {
+            "start": "census 21",
+            "start supports": [
+              [
+                0,
+                1,
+                4
+              ],
+              [
+                0,
+                2,
+                3
+              ],
+              [
+                1,
+                2,
+                3
+              ]
+            ],
+            "grown supports": [
+              [
+                0,
+                1,
+                4
+              ],
+              [
+                0,
+                2,
+                3
+              ],
+              [
+                1,
+                2,
+                3
+              ],
+              [
+                4
+              ]
+            ],
+            "births": [
+              {
+                "parents": [
+                  0
+                ],
+                "inputs": [
+                  4
+                ],
+                "demand": 0,
+                "implied": true,
+                "ordinary fresh count": 0,
+                "fresh": []
+              }
+            ],
+            "already fixed input": 4
+          },
+          "first fresh pin": {
+            "start": "census 1590",
+            "start supports": [
+              [
+                0,
+                1,
+                2,
+                6,
+                7
+              ],
+              [
+                0,
+                3,
+                8
+              ],
+              [
+                1,
+                3,
+                9
+              ],
+              [
+                2,
+                4,
+                5
+              ],
+              [
+                4,
+                5,
+                10
+              ]
+            ],
+            "grown supports": [
+              [
+                0,
+                1,
+                2,
+                6,
+                7
+              ],
+              [
+                0,
+                3,
+                8
+              ],
+              [
+                1,
+                3,
+                9
+              ],
+              [
+                2,
+                4,
+                5
+              ],
+              [
+                4,
+                5,
+                10
+              ],
+              [
+                6,
+                8,
+                9
+              ],
+              [
+                7,
+                10,
+                12
+              ]
+            ],
+            "births": [
+              {
+                "parents": [
+                  0,
+                  1,
+                  2
+                ],
+                "inputs": [
+                  6,
+                  8,
+                  9
+                ],
+                "demand": 1,
+                "implied": false,
+                "ordinary fresh count": 1,
+                "fresh": []
+              },
+              {
+                "parents": [
+                  0,
+                  4
+                ],
+                "inputs": [
+                  7,
+                  10
+                ],
+                "demand": 1,
+                "implied": false,
+                "ordinary fresh count": 1,
+                "fresh": [
+                  12
+                ]
+              }
+            ],
+            "fixed fresh distinction": 12,
+            "fixed value": 0,
+            "sum of grown rows": [
+              12
+            ],
+            "old states": 64,
+            "old states with a cut completion": 32,
+            "old states with an ordinary completion": 64,
+            "old allowed state with no cut completion, distinctions at one": [
+              6,
+              7
+            ],
+            "cut states": 32,
+            "ordinary states": 64,
+            "ordinary loose distinctions": [
+              11,
+              12
+            ],
+            "birth projection distinction order": [
+              7,
+              10,
+              12
+            ],
+            "cut projection on this birth": [
+              "000",
+              "110"
+            ],
+            "ordinary projection on this birth": [
+              "000",
+              "011",
+              "101",
+              "110"
+            ],
+            "ordinary supports": [
+              [
+                0,
+                1,
+                2,
+                6,
+                7
+              ],
+              [
+                0,
+                3,
+                8
+              ],
+              [
+                1,
+                3,
+                9
+              ],
+              [
+                2,
+                4,
+                5
+              ],
+              [
+                4,
+                5,
+                10
+              ],
+              [
+                6,
+                8,
+                9,
+                11
+              ],
+              [
+                7,
+                10,
+                12
+              ]
+            ]
+          }
+        },
+        "arity_floor": {
+          "fresh pins": [
+            {
+              "start": "census 1590",
+              "distinctions": [
+                12
+              ]
+            },
+            {
+              "start": "census 1665",
+              "distinctions": [
+                13
+              ]
+            },
+            {
+              "start": "census 1689",
+              "distinctions": [
+                13
+              ]
+            },
+            {
+              "start": "census 1795",
+              "distinctions": [
+                13
+              ]
+            }
+          ],
+          "first implied unary birth": {
+            "start": "census 21",
+            "start supports": [
+              [
+                0,
+                1,
+                4
+              ],
+              [
+                0,
+                2,
+                3
+              ],
+              [
+                1,
+                2,
+                3
+              ]
+            ],
+            "grown supports": [
+              [
+                0,
+                1,
+                4
+              ],
+              [
+                0,
+                2,
+                3
+              ],
+              [
+                1,
+                2,
+                3
+              ],
+              [
+                4
+              ]
+            ],
+            "births": [
+              {
+                "parents": [
+                  0
+                ],
+                "inputs": [
+                  4
+                ],
+                "demand": 0,
+                "implied": true,
+                "ordinary fresh count": 0,
+                "fresh": []
+              }
+            ],
+            "already fixed input": 4
+          },
+          "first fresh pin": {
+            "start": "census 1590",
+            "start supports": [
+              [
+                0,
+                1,
+                2,
+                6,
+                7
+              ],
+              [
+                0,
+                3,
+                8
+              ],
+              [
+                1,
+                3,
+                9
+              ],
+              [
+                2,
+                4,
+                5
+              ],
+              [
+                4,
+                5,
+                10
+              ]
+            ],
+            "grown supports": [
+              [
+                0,
+                1,
+                2,
+                6,
+                7
+              ],
+              [
+                0,
+                3,
+                8
+              ],
+              [
+                1,
+                3,
+                9
+              ],
+              [
+                2,
+                4,
+                5
+              ],
+              [
+                4,
+                5,
+                10
+              ],
+              [
+                6,
+                8,
+                9
+              ],
+              [
+                7,
+                10,
+                12
+              ]
+            ],
+            "births": [
+              {
+                "parents": [
+                  0,
+                  1,
+                  2
+                ],
+                "inputs": [
+                  6,
+                  8,
+                  9
+                ],
+                "demand": 1,
+                "implied": false,
+                "ordinary fresh count": 1,
+                "fresh": []
+              },
+              {
+                "parents": [
+                  0,
+                  4
+                ],
+                "inputs": [
+                  7,
+                  10
+                ],
+                "demand": 1,
+                "implied": false,
+                "ordinary fresh count": 1,
+                "fresh": [
+                  12
+                ]
+              }
+            ],
+            "fixed fresh distinction": 12,
+            "fixed value": 0,
+            "sum of grown rows": [
+              12
+            ],
+            "old states": 64,
+            "old states with a cut completion": 32,
+            "old states with an ordinary completion": 64,
+            "old allowed state with no cut completion, distinctions at one": [
+              6,
+              7
+            ],
+            "cut states": 32,
+            "ordinary states": 64,
+            "ordinary loose distinctions": [
+              11,
+              12
+            ],
+            "birth projection distinction order": [
+              7,
+              10,
+              12
+            ],
+            "cut projection on this birth": [
+              "000",
+              "110"
+            ],
+            "ordinary projection on this birth": [
+              "000",
+              "011",
+              "101",
+              "110"
+            ],
+            "ordinary supports": [
+              [
+                0,
+                1,
+                2,
+                6,
+                7
+              ],
+              [
+                0,
+                3,
+                8
+              ],
+              [
+                1,
+                3,
+                9
+              ],
+              [
+                2,
+                4,
+                5
+              ],
+              [
+                4,
+                5,
+                10
+              ],
+              [
+                6,
+                8,
+                9,
+                11
+              ],
+              [
+                7,
+                10,
+                12
+              ]
+            ]
+          }
+        }
+      }
+    },
+    "heldout": {
+      "counts": {
+        "parity": {
+          "ordinary": {
+            "stalled": 483,
+            "funded": 417,
+            "births": 1479,
+            "implied births": 23,
+            "implied births without fresh distinctions": 23,
+            "nonimplied births without fresh distinctions": 0,
+            "funded rounds without any loose distinction after growth": 23,
+            "rounds leaving fresh loose distinctions": 394,
+            "fresh loose distinctions": 2570,
+            "rounds fixing a fresh loose distinction": 0,
+            "fixed fresh loose distinctions": 0,
+            "rounds newly fixing a consumed loose distinction": 0,
+            "newly fixed consumed loose distinctions": 0,
+            "implied births of 1 places": 15,
+            "implied births of 2 places": 8
+          },
+          "one_fewer": {
+            "stalled": 483,
+            "funded": 417,
+            "births": 1479,
+            "implied births": 23,
+            "implied births without fresh distinctions": 23,
+            "nonimplied births without fresh distinctions": 19,
+            "funded rounds without any loose distinction after growth": 23,
+            "rounds leaving fresh loose distinctions": 394,
+            "fresh loose distinctions": 2439,
+            "rounds fixing a fresh loose distinction": 1,
+            "fixed fresh loose distinctions": 1,
+            "rounds newly fixing a consumed loose distinction": 9,
+            "newly fixed consumed loose distinctions": 9,
+            "implied births of 1 places": 15,
+            "implied births of 2 places": 8
+          },
+          "arity_floor": {
+            "stalled": 483,
+            "funded": 417,
+            "births": 1479,
+            "implied births": 23,
+            "implied births without fresh distinctions": 23,
+            "nonimplied births without fresh distinctions": 29,
+            "funded rounds without any loose distinction after growth": 23,
+            "rounds leaving fresh loose distinctions": 394,
+            "fresh loose distinctions": 2426,
+            "rounds fixing a fresh loose distinction": 1,
+            "fixed fresh loose distinctions": 1,
+            "rounds newly fixing a consumed loose distinction": 9,
+            "newly fixed consumed loose distinctions": 9,
+            "implied births of 1 places": 15,
+            "implied births of 2 places": 8
+          }
+        },
+        "not-all-equal": {
+          "ordinary": {
+            "stalled": 483,
+            "funded": 417,
+            "births": 1479,
+            "implied births": 0,
+            "implied births without fresh distinctions": 0,
+            "nonimplied births without fresh distinctions": 0,
+            "funded rounds with an allowed state": 417
+          },
+          "one_fewer": {
+            "stalled": 483,
+            "funded": 417,
+            "births": 1479,
+            "implied births": 0,
+            "implied births without fresh distinctions": 0,
+            "nonimplied births without fresh distinctions": 19,
+            "funded rounds with an allowed state": 417
+          },
+          "arity_floor": {
+            "stalled": 483,
+            "funded": 417,
+            "births": 1479,
+            "implied births": 0,
+            "implied births without fresh distinctions": 0,
+            "nonimplied births without fresh distinctions": 29,
+            "funded rounds with an allowed state": 417
+          }
+        }
+      },
+      "parity witnesses": {
+        "ordinary": {
+          "fresh pins": [],
+          "first implied unary birth": {
+            "start": "held out 6-25",
+            "start supports": [
+              [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              [
+                0,
+                1,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10
+              ],
+              [
+                2,
+                5,
+                6
+              ],
+              [
+                3,
+                4,
+                11,
+                12,
+                13
+              ],
+              [
+                7,
+                8,
+                11,
+                14
+              ],
+              [
+                9,
+                10,
+                12,
+                13
+              ]
+            ],
+            "grown supports": [
+              [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              [
+                0,
+                1,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10
+              ],
+              [
+                2,
+                5,
+                6
+              ],
+              [
+                3,
+                4,
+                11,
+                12,
+                13
+              ],
+              [
+                7,
+                8,
+                11,
+                14
+              ],
+              [
+                9,
+                10,
+                12,
+                13
+              ],
+              [
+                14
+              ]
+            ],
+            "births": [
+              {
+                "parents": [
+                  4
+                ],
+                "inputs": [
+                  14
+                ],
+                "demand": 0,
+                "implied": true,
+                "ordinary fresh count": 0,
+                "fresh": []
+              }
+            ],
+            "already fixed input": 14
+          }
+        },
+        "one_fewer": {
+          "fresh pins": [
+            {
+              "start": "held out 7-179",
+              "distinctions": [
+                19
+              ]
+            }
+          ],
+          "first implied unary birth": {
+            "start": "held out 6-25",
+            "start supports": [
+              [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              [
+                0,
+                1,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10
+              ],
+              [
+                2,
+                5,
+                6
+              ],
+              [
+                3,
+                4,
+                11,
+                12,
+                13
+              ],
+              [
+                7,
+                8,
+                11,
+                14
+              ],
+              [
+                9,
+                10,
+                12,
+                13
+              ]
+            ],
+            "grown supports": [
+              [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              [
+                0,
+                1,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10
+              ],
+              [
+                2,
+                5,
+                6
+              ],
+              [
+                3,
+                4,
+                11,
+                12,
+                13
+              ],
+              [
+                7,
+                8,
+                11,
+                14
+              ],
+              [
+                9,
+                10,
+                12,
+                13
+              ],
+              [
+                14
+              ]
+            ],
+            "births": [
+              {
+                "parents": [
+                  4
+                ],
+                "inputs": [
+                  14
+                ],
+                "demand": 0,
+                "implied": true,
+                "ordinary fresh count": 0,
+                "fresh": []
+              }
+            ],
+            "already fixed input": 14
+          },
+          "first fresh pin": {
+            "start": "held out 7-179",
+            "start supports": [
+              [
+                0,
+                1,
+                2,
+                13
+              ],
+              [
+                3,
+                4,
+                5,
+                6
+              ],
+              [
+                0,
+                7,
+                8,
+                9,
+                14,
+                15
+              ],
+              [
+                3,
+                4,
+                10,
+                16
+              ],
+              [
+                1,
+                2,
+                7,
+                11,
+                12,
+                17
+              ],
+              [
+                8,
+                9,
+                10
+              ],
+              [
+                5,
+                6,
+                11,
+                12
+              ]
+            ],
+            "grown supports": [
+              [
+                0,
+                1,
+                2,
+                13
+              ],
+              [
+                3,
+                4,
+                5,
+                6
+              ],
+              [
+                0,
+                7,
+                8,
+                9,
+                14,
+                15
+              ],
+              [
+                3,
+                4,
+                10,
+                16
+              ],
+              [
+                1,
+                2,
+                7,
+                11,
+                12,
+                17
+              ],
+              [
+                8,
+                9,
+                10
+              ],
+              [
+                5,
+                6,
+                11,
+                12
+              ],
+              [
+                13,
+                14,
+                17
+              ],
+              [
+                15,
+                16,
+                19
+              ]
+            ],
+            "births": [
+              {
+                "parents": [
+                  0,
+                  2,
+                  4
+                ],
+                "inputs": [
+                  13,
+                  14,
+                  17
+                ],
+                "demand": 1,
+                "implied": false,
+                "ordinary fresh count": 1,
+                "fresh": []
+              },
+              {
+                "parents": [
+                  2,
+                  3
+                ],
+                "inputs": [
+                  15,
+                  16
+                ],
+                "demand": 1,
+                "implied": false,
+                "ordinary fresh count": 1,
+                "fresh": [
+                  19
+                ]
+              }
+            ],
+            "fixed fresh distinction": 19,
+            "fixed value": 0,
+            "sum of grown rows": [
+              19
+            ],
+            "old states": 2048,
+            "old states with a cut completion": 1024,
+            "old states with an ordinary completion": 2048,
+            "old allowed state with no cut completion, distinctions at one": [
+              14,
+              15
+            ],
+            "cut states": 1024,
+            "ordinary states": 2048,
+            "ordinary loose distinctions": [
+              18,
+              19
+            ],
+            "birth projection distinction order": [
+              15,
+              16,
+              19
+            ],
+            "cut projection on this birth": [
+              "000",
+              "110"
+            ],
+            "ordinary projection on this birth": [
+              "000",
+              "011",
+              "101",
+              "110"
+            ],
+            "ordinary supports": [
+              [
+                0,
+                1,
+                2,
+                13
+              ],
+              [
+                3,
+                4,
+                5,
+                6
+              ],
+              [
+                0,
+                7,
+                8,
+                9,
+                14,
+                15
+              ],
+              [
+                3,
+                4,
+                10,
+                16
+              ],
+              [
+                1,
+                2,
+                7,
+                11,
+                12,
+                17
+              ],
+              [
+                8,
+                9,
+                10
+              ],
+              [
+                5,
+                6,
+                11,
+                12
+              ],
+              [
+                13,
+                14,
+                17,
+                18
+              ],
+              [
+                15,
+                16,
+                19
+              ]
+            ]
+          }
+        },
+        "arity_floor": {
+          "fresh pins": [
+            {
+              "start": "held out 7-179",
+              "distinctions": [
+                19
+              ]
+            }
+          ],
+          "first implied unary birth": {
+            "start": "held out 6-25",
+            "start supports": [
+              [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              [
+                0,
+                1,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10
+              ],
+              [
+                2,
+                5,
+                6
+              ],
+              [
+                3,
+                4,
+                11,
+                12,
+                13
+              ],
+              [
+                7,
+                8,
+                11,
+                14
+              ],
+              [
+                9,
+                10,
+                12,
+                13
+              ]
+            ],
+            "grown supports": [
+              [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              [
+                0,
+                1,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10
+              ],
+              [
+                2,
+                5,
+                6
+              ],
+              [
+                3,
+                4,
+                11,
+                12,
+                13
+              ],
+              [
+                7,
+                8,
+                11,
+                14
+              ],
+              [
+                9,
+                10,
+                12,
+                13
+              ],
+              [
+                14
+              ]
+            ],
+            "births": [
+              {
+                "parents": [
+                  4
+                ],
+                "inputs": [
+                  14
+                ],
+                "demand": 0,
+                "implied": true,
+                "ordinary fresh count": 0,
+                "fresh": []
+              }
+            ],
+            "already fixed input": 14
+          },
+          "first fresh pin": {
+            "start": "held out 7-179",
+            "start supports": [
+              [
+                0,
+                1,
+                2,
+                13
+              ],
+              [
+                3,
+                4,
+                5,
+                6
+              ],
+              [
+                0,
+                7,
+                8,
+                9,
+                14,
+                15
+              ],
+              [
+                3,
+                4,
+                10,
+                16
+              ],
+              [
+                1,
+                2,
+                7,
+                11,
+                12,
+                17
+              ],
+              [
+                8,
+                9,
+                10
+              ],
+              [
+                5,
+                6,
+                11,
+                12
+              ]
+            ],
+            "grown supports": [
+              [
+                0,
+                1,
+                2,
+                13
+              ],
+              [
+                3,
+                4,
+                5,
+                6
+              ],
+              [
+                0,
+                7,
+                8,
+                9,
+                14,
+                15
+              ],
+              [
+                3,
+                4,
+                10,
+                16
+              ],
+              [
+                1,
+                2,
+                7,
+                11,
+                12,
+                17
+              ],
+              [
+                8,
+                9,
+                10
+              ],
+              [
+                5,
+                6,
+                11,
+                12
+              ],
+              [
+                13,
+                14,
+                17
+              ],
+              [
+                15,
+                16,
+                19
+              ]
+            ],
+            "births": [
+              {
+                "parents": [
+                  0,
+                  2,
+                  4
+                ],
+                "inputs": [
+                  13,
+                  14,
+                  17
+                ],
+                "demand": 1,
+                "implied": false,
+                "ordinary fresh count": 1,
+                "fresh": []
+              },
+              {
+                "parents": [
+                  2,
+                  3
+                ],
+                "inputs": [
+                  15,
+                  16
+                ],
+                "demand": 1,
+                "implied": false,
+                "ordinary fresh count": 1,
+                "fresh": [
+                  19
+                ]
+              }
+            ],
+            "fixed fresh distinction": 19,
+            "fixed value": 0,
+            "sum of grown rows": [
+              19
+            ],
+            "old states": 2048,
+            "old states with a cut completion": 1024,
+            "old states with an ordinary completion": 2048,
+            "old allowed state with no cut completion, distinctions at one": [
+              14,
+              15
+            ],
+            "cut states": 1024,
+            "ordinary states": 2048,
+            "ordinary loose distinctions": [
+              18,
+              19
+            ],
+            "birth projection distinction order": [
+              15,
+              16,
+              19
+            ],
+            "cut projection on this birth": [
+              "000",
+              "110"
+            ],
+            "ordinary projection on this birth": [
+              "000",
+              "011",
+              "101",
+              "110"
+            ],
+            "ordinary supports": [
+              [
+                0,
+                1,
+                2,
+                13
+              ],
+              [
+                3,
+                4,
+                5,
+                6
+              ],
+              [
+                0,
+                7,
+                8,
+                9,
+                14,
+                15
+              ],
+              [
+                3,
+                4,
+                10,
+                16
+              ],
+              [
+                1,
+                2,
+                7,
+                11,
+                12,
+                17
+              ],
+              [
+                8,
+                9,
+                10
+              ],
+              [
+                5,
+                6,
+                11,
+                12
+              ],
+              [
+                13,
+                14,
+                17,
+                18
+              ],
+              [
+                15,
+                16,
+                19
+              ]
+            ]
+          }
+        }
+      }
+    },
+    "built controls": {
+      "counts": {
+        "parity": {
+          "ordinary": {
+            "funded": 11,
+            "births": 159,
+            "implied births": 0,
+            "implied births without fresh distinctions": 0,
+            "nonimplied births without fresh distinctions": 0,
+            "funded rounds without any loose distinction after growth": 0,
+            "rounds leaving fresh loose distinctions": 11,
+            "fresh loose distinctions": 604,
+            "rounds fixing a fresh loose distinction": 0,
+            "fixed fresh loose distinctions": 0,
+            "rounds newly fixing a consumed loose distinction": 0,
+            "newly fixed consumed loose distinctions": 0
+          },
+          "one_fewer": {
+            "funded": 11,
+            "births": 159,
+            "implied births": 0,
+            "implied births without fresh distinctions": 0,
+            "nonimplied births without fresh distinctions": 0,
+            "funded rounds without any loose distinction after growth": 0,
+            "rounds leaving fresh loose distinctions": 11,
+            "fresh loose distinctions": 453,
+            "rounds fixing a fresh loose distinction": 0,
+            "fixed fresh loose distinctions": 0,
+            "rounds newly fixing a consumed loose distinction": 0,
+            "newly fixed consumed loose distinctions": 0
+          },
+          "arity_floor": {
+            "funded": 11,
+            "births": 159,
+            "implied births": 0,
+            "implied births without fresh distinctions": 0,
+            "nonimplied births without fresh distinctions": 0,
+            "funded rounds without any loose distinction after growth": 0,
+            "rounds leaving fresh loose distinctions": 11,
+            "fresh loose distinctions": 165,
+            "rounds fixing a fresh loose distinction": 0,
+            "fixed fresh loose distinctions": 0,
+            "rounds newly fixing a consumed loose distinction": 0,
+            "newly fixed consumed loose distinctions": 0
+          }
+        },
+        "not-all-equal": {
+          "ordinary": {
+            "funded": 11,
+            "births": 159,
+            "implied births": 0,
+            "implied births without fresh distinctions": 0,
+            "nonimplied births without fresh distinctions": 0,
+            "funded rounds with an allowed state": 11
+          },
+          "one_fewer": {
+            "funded": 11,
+            "births": 159,
+            "implied births": 0,
+            "implied births without fresh distinctions": 0,
+            "nonimplied births without fresh distinctions": 0,
+            "funded rounds with an allowed state": 11
+          },
+          "arity_floor": {
+            "funded": 11,
+            "births": 159,
+            "implied births": 0,
+            "implied births without fresh distinctions": 0,
+            "nonimplied births without fresh distinctions": 0,
+            "funded rounds with an allowed state": 11
+          }
+        }
+      },
+      "parity witnesses": {
+        "ordinary": {
+          "fresh pins": []
+        },
+        "one_fewer": {
+          "fresh pins": []
+        },
+        "arity_floor": {
+          "fresh pins": []
+        }
+      }
+    }
+  }
+}

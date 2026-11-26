@@ -1,7 +1,7 @@
 # Recursion's lead: does growing and then exchanging give a start back?
 
 Epic `RECURSION-LEAD-20261126-001`, at the coordinator's pick after `LAYERS-20261126-001`, on the owner's question whether
-recursion exists in the framework. A check by the thread, not a registered study; computed. The sections down to
+recursion exists in the framework. A check by the thread, not a registered study; computed; refereed (R1: **refuted, one Block**, the tower line, already corrected; folded in below). The sections down to
 "Frozen" were committed, after the advisor's review in the repository ([question](advisor/question.md),
 [answer](advisor/answer.md)), before the frozen runs.
 
@@ -61,6 +61,17 @@ explained by the line-graph fact; so recursion with nothing supplied is not foun
 exchange could make one, and it reads one round.
 
 ## What was found
+
+> **Referee R1: refuted (one Block), narrowings, folded in** ([report](referee-R1/report.md)). **Block:** the tower
+> re-read's negative is false as a claim about the growth (a nine-knot start keeps the same two ring parities under both
+> readings at rounds 2 and 3; corrected already after the layers referee). **Narrowings:** ordinary growth fixes no loose
+> value (all 18,315 grown loose distinctions stayed open; an implied birth repeats a constraint), but both recorded
+> forbidding cuts forced a fresh loose value to zero on a few starts, so "no recorded law fixes a loose value" holds for
+> ordinary growth only; the line-graph explanation matches 3 of the 46 branched lawful exchanges, and 13 of them give a
+> different start of the same size, seven needing a third step to stop; the counts are 747 stages from 445 rows; "no
+> recursion with nothing supplied" is "no free return or cycle on the iterations tested" (the referee's search excludes an
+> immediate free return at three to seven knots under ordinary growth; a three-knot ring with one loose distinction each
+> grows to a closed four-knot pattern that free exchange alone returns, but the next round cannot start).
 
 Five runs ([`recur_census.jsonl`](recur_census.jsonl), [`recur_heldout.jsonl`](recur_heldout.jsonl),
 [`tower_census.jsonl`](tower_census.jsonl), [`tower_multi.jsonl`](tower_multi.jsonl),

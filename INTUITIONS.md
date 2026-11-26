@@ -79,7 +79,7 @@ PYTHONPATH=tools python3 -m knotlab demo
 - [Chapter 3. Pairs and three places](#chapter-3-pairs-and-three-places)
   - [3.0 Introduction](#30-introduction)
   - [3.1 Two-place rules and the majority vote](#31-two-place-rules-and-the-majority-vote)
-  - [3.2 Pairs cannot make a knot; three places can](#32-pairs-cannot-make-a-knot-three-places-can)
+  - [3.2 Two-place rules cannot make a knot; a three-place rule can](#32-two-place-rules-cannot-make-a-knot-a-three-place-rule-can)
   - [3.3 The free complex of a system](#33-the-free-complex-of-a-system)
   - [3.4 Holes and knots](#34-holes-and-knots)
 - [Chapter 4. How bindings behave](#chapter-4-how-bindings-behave)
@@ -1094,7 +1094,7 @@ the question it leads to.
 - [3.1 Two-place rules and the majority vote](#31-two-place-rules-and-the-majority-vote):
   whenever a system of two-place rules allows three states, it allows their
   majority. No knot on three variables does.
-- [3.2 Pairs cannot make a knot; three places can](#32-pairs-cannot-make-a-knot-three-places-can):
+- [3.2 Two-place rules cannot make a knot; a three-place rule can](#32-two-place-rules-cannot-make-a-knot-a-three-place-rule-can):
   a pair here is two distinctions in one rule, not two loops. The smallest
   knot has two loops and three places, the loops' two distinctions and their
   contact, and rules that each name only two of the three cannot make it. A
@@ -1146,7 +1146,7 @@ So no 2-CNF, with or without witnesses, defines the atom or any other knot on
 three variables. The next lesson states the general theorem, and its positive
 counterpart for three-place rules.
 
-### 3.2 Pairs cannot make a knot; three places can
+### 3.2 Two-place rules cannot make a knot; a three-place rule can
 
 **Two loops, three places.** A place is one of the distinctions a rule names,
 and a pair is two of them (lesson 1.2). So a pair here means two distinctions
@@ -1157,9 +1157,10 @@ contact c that binds them (lesson 2.1). In the owner's picture of lesson 1.1
 the two bits are the two loops, and the choice between 00/11 and 01/10 is the
 third place. This lesson is about how such a knot can be written down. Rules
 that each name only two of the three places can never make it, however many
-of them there are; a rule that names all three at once can. So "pairs cannot"
-and "two loops can" say the same thing from two sides: two loops are bound
-only by a rule that holds both of them and their contact together.
+of them there are; a rule that names all three at once can. So "two-place
+rules cannot" and "two loops can" say the same thing from two sides: two
+loops are bound only by a rule that holds both of them and their contact
+together.
 
 **The intuition.** Whatever a two-place rule says, it says about a pair. A
 system of two-place rules that must all hold is therefore known from its

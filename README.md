@@ -30,7 +30,7 @@ The repository has two layers:
 - A **loop** brings an open distinction: a bit it leaves free.
 - A **knot** binds loops through a contact so that the whole is constrained
   but every part is free, like Borromean rings.
-- **Pairs cannot make a knot; three places can.** Two-literal clauses never
+- **Two-place rules cannot make a knot; a three-place rule can.** Two-literal clauses never
   define one, and three-literal clauses define every one.
 - **A knot hides at most one bit**, and only parity hides a full bit.
 - **Hidden bits have depth**: to see one, an observer must hold a part of the

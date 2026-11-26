@@ -199,7 +199,7 @@ the smallest clause language that can state a knot. This concerns what can be
 expressed, not how hard anything is to compute. The core is classical
 (Schaefer 1978; Baker and Pixley 1975), and the reading is ours.
 
-Evidence: [proof](proofs/KNOT-FOUNDATION-20261019-001E/KNOT-FOUNDATION-20261019-001E-P001_forgetting_reading/proof.md), [`ForgettingKernel.lean`](lean/ForgettingKernel.lean), [`KnotKernel.lean`](lean/KnotKernel.lean), [Intuitions, lesson 3.2](INTUITIONS.md#32-pairs-cannot-make-a-knot-three-places-can)
+Evidence: [proof](proofs/KNOT-FOUNDATION-20261019-001E/KNOT-FOUNDATION-20261019-001E-P001_forgetting_reading/proof.md), [`ForgettingKernel.lean`](lean/ForgettingKernel.lean), [`KnotKernel.lean`](lean/KnotKernel.lean), [Intuitions, lesson 3.2](INTUITIONS.md#32-two-place-rules-cannot-make-a-knot-a-three-place-rule-can)
 
 ### Openness in an infinite system has a source
 
@@ -342,7 +342,7 @@ Distinctions are the material and atoms are the bonds. Every mechanism that
 binds two loops, whether a witness chain, a gate or a circuit, looks from
 outside like one of the 34 knots.
 
-Evidence: [Intuitions, lesson 3.2](INTUITIONS.md#32-pairs-cannot-make-a-knot-three-places-can), [the knot intuition](docs/KNOT_INTUITION.md#projection-simulation-and-reality)
+Evidence: [Intuitions, lesson 3.2](INTUITIONS.md#32-two-place-rules-cannot-make-a-knot-a-three-place-rule-can), [the knot intuition](docs/KNOT_INTUITION.md#projection-simulation-and-reality)
 
 ## 3. Infinite systems
 

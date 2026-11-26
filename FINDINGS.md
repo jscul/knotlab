@@ -20,7 +20,7 @@ come from, so that later corrections can be traced.
 
 | # | Finding | Kind | Status | Where |
 | --- | --- | --- | --- | --- |
-| 1 | The knot test K1–K3; no 2-CNF defines a knot; width 3 binds any number of loops | New reading | Proved (Lean); checked exhaustively | [INTUITIONS, lesson 2.1](INTUITIONS.md#21-the-knot-test), [lesson 3.2](INTUITIONS.md#32-pairs-cannot-make-a-knot-three-places-can), [`lean/ForgettingKernel.lean`](lean/ForgettingKernel.lean), [`lean/KnotKernel.lean`](lean/KnotKernel.lean) |
+| 1 | The knot test K1–K3; no 2-CNF defines a knot; width 3 binds any number of loops | New reading | Proved (Lean); checked exhaustively | [INTUITIONS, lesson 2.1](INTUITIONS.md#21-the-knot-test), [lesson 3.2](INTUITIONS.md#32-two-place-rules-cannot-make-a-knot-a-three-place-rule-can), [`lean/ForgettingKernel.lean`](lean/ForgettingKernel.lean), [`lean/KnotKernel.lean`](lean/KnotKernel.lean) |
 | 2 | Two loops and a contact have 34 knots in 5 classes; a knot hides at most one bit, and only parity hides a full bit | New reading | Proved (short proof); checked exhaustively | [INTUITIONS, lesson 2.3](INTUITIONS.md#23-what-a-knot-hides), [`tests/`](tests/test_knotlab.py) |
 | 3 | Pairwise rules make holes but never knots; every simplicial complex is the free complex of some system | New reading | Checked; the construction is proved in Lean | [INTUITIONS, lesson 3.4](INTUITIONS.md#34-holes-and-knots), [`lean/LoopNerve.lean`](lean/LoopNerve.lean) |
 | 4 | Requirement and choice are one knot read two ways (16 of the 34 two-loop knots) | New reading | Checked exhaustively | [INTUITIONS, lesson 4.2](INTUITIONS.md#42-requirement-and-choice) |

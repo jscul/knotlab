@@ -1,0 +1,2934 @@
+{
+ "predictions": [
+  {
+   "id": "G",
+   "verdict": "holds",
+   "numbers": {
+    "starts as written": [
+     true,
+     true,
+     true
+    ],
+    "sampled runs": 400,
+    "by run set": {
+     "R1": 287,
+     "R2": 113
+    },
+    "second growth (no taking rule)": {
+     "exact_equal": 209,
+     "first_differing": null,
+     "rounds_compared": 2166,
+     "runs": 209,
+     "wl_equal": 209
+    },
+    "takes recomputed (the take)": {
+     "births": 85436,
+     "exact_equal": 191,
+     "first_differing": null,
+     "runs": 191,
+     "takes": 9547
+    }
+   }
+  },
+  {
+   "id": "PR1",
+   "verdict": "holds",
+   "numbers": {
+    "studies": 270,
+    "same": 270,
+    "runs read by round the same": 270
+   },
+   "first failing": null
+  },
+  {
+   "id": "PR2",
+   "verdict": "holds",
+   "numbers": {
+    "cells compared (disclosed leaves)": 62,
+    "differing cells": 0
+   },
+   "first failing": null
+  },
+  {
+   "id": "PR3",
+   "verdict": "holds",
+   "numbers": {
+    "cells compared (disclosed leaves)": 162,
+    "differing cells": 0
+   },
+   "first failing": null
+  },
+  {
+   "id": "PR5",
+   "verdict": "holds",
+   "numbers": {
+    "cells compared (disclosed leaves)": 158,
+    "differing cells": 0
+   },
+   "first failing": null
+  },
+  {
+   "id": "PR4",
+   "verdict": "holds",
+   "runs": 9000,
+   "runs failing": 0,
+   "first failing": null,
+   "reported, no prediction": {
+    "R1 mixed retiring or offshoots: runs": 3060,
+    "R1 mixed retiring or offshoots: a start knot a member after round 1": 0,
+    "R1 mixed waiting: runs": 1530,
+    "R1 mixed waiting: a start knot a member after round 1": 858,
+    "R1 chains retiring or offshoots: runs": 3780,
+    "R1 chains retiring or offshoots: a start knot a member after round 1": 0,
+    "R1 chains waiting: runs": 1890,
+    "R1 chains waiting: a start knot a member after round 1": 528,
+    "R1 second retiring or offshoots: runs": 2280,
+    "R1 second retiring or offshoots: a start knot a member after round 1": 0,
+    "R1 second waiting: runs": 1140,
+    "R1 second waiting: a start knot a member after round 1": 744,
+    "R3 chains retiring or offshoots: runs": 3780,
+    "R3 chains retiring or offshoots: a start knot a member after round 1": 0,
+    "R3 chains waiting: runs": 1890,
+    "R3 chains waiting: a start knot a member after round 1": 732,
+    "R2u fresh retiring or offshoots: runs": 3660,
+    "R2u fresh retiring or offshoots: a start knot a member after round 1": 0,
+    "R2u fresh waiting: runs": 1830,
+    "R2u fresh waiting: a start knot a member after round 1": 0,
+    "R4 fresh retiring or offshoots: runs": 3660,
+    "R4 fresh retiring or offshoots: a start knot a member after round 1": 0,
+    "R4 fresh waiting: runs": 1830,
+    "R4 fresh waiting: a start knot a member after round 1": 1506,
+    "R2 fresh retiring or offshoots: runs": 3660,
+    "R2 fresh retiring or offshoots: a start knot a member after round 1": 0,
+    "R2 fresh waiting: runs": 1830,
+    "R2 fresh waiting: a start knot a member after round 1": 1506
+   }
+  },
+  {
+   "id": "CU",
+   "verdict": "holds",
+   "numbers": {
+    "studies": 90,
+    "every form in the bare start's class": 90,
+    "forms out of the bare start's class (all studies)": 0
+   },
+   "first failing": null
+  },
+  {
+   "id": "S1",
+   "verdict": "holds",
+   "numbers": {
+    "studies": 90,
+    "bare start a class of its own": 90
+   },
+   "first failing": null
+  },
+  {
+   "id": "S2",
+   "verdict": "holds",
+   "numbers": {
+    "studies": 90,
+    "two or more classes among the forms": 90,
+    "fewest classes": 2
+   },
+   "first failing": null
+  },
+  {
+   "id": "S3",
+   "verdict": "holds",
+   "numbers": {
+    "none, ORD, CANCEL-RETIRE": [
+     20,
+     20
+    ],
+    "none, ORD, CANCEL-OFFSHOOT": [
+     20,
+     20
+    ],
+    "none, ORD, CANCEL-WAIT": [
+     20,
+     20
+    ],
+    "none, CAP-3, CANCEL-RETIRE": [
+     20,
+     20
+    ],
+    "none, CAP-3, CANCEL-OFFSHOOT": [
+     20,
+     20
+    ],
+    "none, CAP-3, CANCEL-WAIT": [
+     20,
+     20
+    ],
+    "none, FLOOR1, CANCEL-RETIRE": [
+     20,
+     20
+    ],
+    "none, FLOOR1, CANCEL-OFFSHOOT": [
+     20,
+     20
+    ],
+    "none, FLOOR1, CANCEL-WAIT": [
+     20,
+     20
+    ],
+    "sole, ORD, CANCEL-RETIRE": [
+     20,
+     20
+    ],
+    "sole, ORD, CANCEL-OFFSHOOT": [
+     20,
+     20
+    ],
+    "sole, ORD, CANCEL-WAIT": [
+     20,
+     20
+    ],
+    "sole, CAP-3, CANCEL-RETIRE": [
+     20,
+     20
+    ],
+    "sole, CAP-3, CANCEL-OFFSHOOT": [
+     20,
+     20
+    ],
+    "sole, CAP-3, CANCEL-WAIT": [
+     20,
+     20
+    ],
+    "sole, FLOOR1, CANCEL-RETIRE": [
+     20,
+     20
+    ],
+    "sole, FLOOR1, CANCEL-OFFSHOOT": [
+     20,
+     20
+    ],
+    "sole, FLOOR1, CANCEL-WAIT": [
+     20,
+     20
+    ]
+   },
+   "first failing": null
+  },
+  {
+   "id": "PN2",
+   "verdict": "holds",
+   "numbers": {
+    "studies with three or more classes among the forms": 87,
+    "studies": 90,
+    "distribution of the number of classes": {
+     "2": 3,
+     "3": 14,
+     "4": 5,
+     "5": 13,
+     "6": 4,
+     "7": 7,
+     "8": 8,
+     "9": 4,
+     "10": 1,
+     "11": 3,
+     "12": 4,
+     "13": 2,
+     "14": 5,
+     "15": 1,
+     "16": 2,
+     "17": 1,
+     "18": 3,
+     "21": 1,
+     "22": 2,
+     "25": 1,
+     "27": 1,
+     "32": 3,
+     "33": 1,
+     "36": 1
+    }
+   },
+   "first failing": null
+  },
+  {
+   "id": "PN3",
+   "verdict": "holds",
+   "numbers": {
+    "told apart after the first round, by row": {
+     "none, CANCEL-RETIRE": 422,
+     "none, CANCEL-OFFSHOOT": 445,
+     "none, CANCEL-WAIT": 5415,
+     "sole, CANCEL-RETIRE": 765,
+     "sole, CANCEL-OFFSHOOT": 1309,
+     "sole, CANCEL-WAIT": 4816
+    },
+    "pairs a row": {
+     "none, CANCEL-RETIRE": 26550,
+     "none, CANCEL-OFFSHOOT": 26550,
+     "none, CANCEL-WAIT": 26550,
+     "sole, CANCEL-RETIRE": 26550,
+     "sole, CANCEL-OFFSHOOT": 26550,
+     "sole, CANCEL-WAIT": 26550
+    }
+   },
+   "first failing": null
+  },
+  {
+   "id": "PN4",
+   "verdict": "holds",
+   "numbers": {
+    "percent of pairs of forms told apart at R*, by row": {
+     "none, CANCEL-RETIRE": 58.92,
+     "none, CANCEL-OFFSHOOT": 58.55,
+     "none, CANCEL-WAIT": 80.24,
+     "sole, CANCEL-RETIRE": 71.91,
+     "sole, CANCEL-OFFSHOOT": 74.35,
+     "sole, CANCEL-WAIT": 87.07
+    },
+    "told apart / pairs": {
+     "none, CANCEL-RETIRE": [
+      15642,
+      26550
+     ],
+     "none, CANCEL-OFFSHOOT": [
+      15544,
+      26550
+     ],
+     "none, CANCEL-WAIT": [
+      21304,
+      26550
+     ],
+     "sole, CANCEL-RETIRE": [
+      19091,
+      26550
+     ],
+     "sole, CANCEL-OFFSHOOT": [
+      19739,
+      26550
+     ],
+     "sole, CANCEL-WAIT": [
+      23117,
+      26550
+     ]
+    }
+   },
+   "first failing": null
+  },
+  {
+   "id": "PN5",
+   "verdict": "fails",
+   "numbers": {
+    "studies whose forms show two or more of ends, steady, grows": 37,
+    "studies": 90,
+    "studies with fates not read (R* < 4)": 4,
+    "the split of ends, by row (forms)": {
+     "none, CANCEL-RETIRE": {
+      "ends, no births": 60,
+      "ends, taken up": 61
+     },
+     "none, CANCEL-OFFSHOOT": {
+      "ends, no births": 0,
+      "ends, taken up": 61
+     },
+     "none, CANCEL-WAIT": {
+      "ends, no births": 64,
+      "ends, taken up": 60
+     },
+     "sole, CANCEL-RETIRE": {
+      "ends, no births": 218,
+      "ends, taken up": 44
+     },
+     "sole, CANCEL-OFFSHOOT": {
+      "ends, no births": 0,
+      "ends, taken up": 12
+     },
+     "sole, CANCEL-WAIT": {
+      "ends, no births": 199,
+      "ends, taken up": 32
+     }
+    }
+   },
+   "first failing": "fewer than 40 studies"
+  },
+  {
+   "id": "PN6",
+   "verdict": "holds",
+   "numbers": {
+    "studies with three or more classes among the forms (parity)": 87,
+    "studies": 90,
+    "distribution of the number of classes": {
+     "2": 3,
+     "3": 14,
+     "4": 5,
+     "5": 13,
+     "6": 4,
+     "7": 7,
+     "8": 8,
+     "9": 4,
+     "10": 1,
+     "11": 3,
+     "12": 4,
+     "13": 2,
+     "14": 5,
+     "15": 1,
+     "16": 2,
+     "17": 1,
+     "18": 3,
+     "21": 1,
+     "22": 2,
+     "25": 1,
+     "27": 1,
+     "32": 3,
+     "33": 1,
+     "36": 1
+    }
+   },
+   "first failing": null
+  },
+  {
+   "id": "PN7",
+   "verdict": "holds",
+   "numbers": {
+    "not a function of the held knot": 90,
+    "not a function of the held knot with the second seed's births by round": 41,
+    "not a function of the second seed's births by round (reported)": 87,
+    "studies": 90
+   },
+   "first failing": null
+  },
+  {
+   "id": "PD1",
+   "verdict": "holds",
+   "numbers": {
+    "none, ORD, CANCEL-RETIRE": {
+     "depth 2": [
+      0,
+      140,
+      0.0
+     ],
+     "depth 3": [
+      0,
+      120,
+      0.0
+     ],
+     "depth 4": [
+      0,
+      80,
+      0.0
+     ],
+     "3 against 4 knots": [
+      0,
+      80,
+      0.0
+     ],
+     "4 against 5 knots": [
+      0,
+      160,
+      0.0
+     ]
+    },
+    "none, ORD, CANCEL-OFFSHOOT": {
+     "depth 2": [
+      0,
+      140,
+      0.0
+     ],
+     "depth 3": [
+      0,
+      120,
+      0.0
+     ],
+     "depth 4": [
+      0,
+      80,
+      0.0
+     ],
+     "3 against 4 knots": [
+      0,
+      80,
+      0.0
+     ],
+     "4 against 5 knots": [
+      0,
+      160,
+      0.0
+     ]
+    },
+    "none, ORD, CANCEL-WAIT": {
+     "depth 2": [
+      0,
+      140,
+      0.0
+     ],
+     "depth 3": [
+      0,
+      120,
+      0.0
+     ],
+     "depth 4": [
+      0,
+      80,
+      0.0
+     ],
+     "3 against 4 knots": [
+      0,
+      80,
+      0.0
+     ],
+     "4 against 5 knots": [
+      0,
+      160,
+      0.0
+     ]
+    },
+    "none, CAP-3, CANCEL-RETIRE": {
+     "depth 2": [
+      0,
+      140,
+      0.0
+     ],
+     "depth 3": [
+      0,
+      120,
+      0.0
+     ],
+     "depth 4": [
+      0,
+      80,
+      0.0
+     ],
+     "3 against 4 knots": [
+      0,
+      80,
+      0.0
+     ],
+     "4 against 5 knots": [
+      0,
+      160,
+      0.0
+     ]
+    },
+    "none, CAP-3, CANCEL-OFFSHOOT": {
+     "depth 2": [
+      0,
+      140,
+      0.0
+     ],
+     "depth 3": [
+      0,
+      120,
+      0.0
+     ],
+     "depth 4": [
+      0,
+      80,
+      0.0
+     ],
+     "3 against 4 knots": [
+      0,
+      80,
+      0.0
+     ],
+     "4 against 5 knots": [
+      0,
+      160,
+      0.0
+     ]
+    },
+    "none, CAP-3, CANCEL-WAIT": {
+     "depth 2": [
+      14,
+      140,
+      10.0
+     ],
+     "depth 3": [
+      0,
+      120,
+      0.0
+     ],
+     "depth 4": [
+      0,
+      80,
+      0.0
+     ],
+     "3 against 4 knots": [
+      0,
+      80,
+      0.0
+     ],
+     "4 against 5 knots": [
+      0,
+      160,
+      0.0
+     ]
+    },
+    "none, FLOOR1, CANCEL-RETIRE": {
+     "depth 2": [
+      0,
+      140,
+      0.0
+     ],
+     "depth 3": [
+      0,
+      120,
+      0.0
+     ],
+     "depth 4": [
+      0,
+      80,
+      0.0
+     ],
+     "3 against 4 knots": [
+      0,
+      80,
+      0.0
+     ],
+     "4 against 5 knots": [
+      0,
+      160,
+      0.0
+     ]
+    },
+    "none, FLOOR1, CANCEL-OFFSHOOT": {
+     "depth 2": [
+      0,
+      140,
+      0.0
+     ],
+     "depth 3": [
+      0,
+      120,
+      0.0
+     ],
+     "depth 4": [
+      0,
+      80,
+      0.0
+     ],
+     "3 against 4 knots": [
+      0,
+      80,
+      0.0
+     ],
+     "4 against 5 knots": [
+      0,
+      160,
+      0.0
+     ]
+    },
+    "none, FLOOR1, CANCEL-WAIT": {
+     "depth 2": [
+      0,
+      140,
+      0.0
+     ],
+     "depth 3": [
+      0,
+      120,
+      0.0
+     ],
+     "depth 4": [
+      0,
+      80,
+      0.0
+     ],
+     "3 against 4 knots": [
+      16,
+      80,
+      20.0
+     ],
+     "4 against 5 knots": [
+      0,
+      160,
+      0.0
+     ]
+    }
+   },
+   "first failing": null,
+   "all failing": []
+  },
+  {
+   "id": "PD2",
+   "verdict": "holds",
+   "numbers": {
+    "sole, ORD, CANCEL-RETIRE": [
+     32,
+     160,
+     20.0
+    ],
+    "sole, ORD, CANCEL-OFFSHOOT": [
+     32,
+     160,
+     20.0
+    ],
+    "sole, ORD, CANCEL-WAIT": [
+     48,
+     160,
+     30.0
+    ],
+    "sole, CAP-3, CANCEL-WAIT": [
+     126,
+     160,
+     78.75
+    ]
+   },
+   "first failing": null
+  },
+  {
+   "id": "C1",
+   "verdict": "holds",
+   "numbers": {
+    "by group": {
+     "R2, no taking rule": [
+      300,
+      300
+     ],
+     "R2, the take": [
+      300,
+      300
+     ],
+     "R4": [
+      300,
+      300
+     ]
+    },
+    "differing": 0,
+    "make the same (and rounds read, stop)": 900,
+    "renumbered runs": 900,
+    "wider record and second-only births the same too": 900
+   },
+   "first failing": null
+  },
+  {
+   "id": "C2",
+   "verdict": "holds",
+   "numbers": {
+    "not-all-equal": {
+     "disagreements": 0,
+     "failing knots": 0,
+     "runs": 99,
+     "untested": 0,
+     "verdicts": 113640
+    },
+    "parity (reported, no prediction)": {
+     "disagreements": 0,
+     "failing knots": 0,
+     "runs": 50,
+     "runs with a failing knot": 0,
+     "verdicts": 62347
+    }
+   },
+   "first failing": null,
+   "parity, first failing (reported)": null,
+   "cut": {
+    "knot tests of the half not run": [
+     {
+      "job": 941,
+      "run": "R2|nae|fresh|L|None|ORD|CANCEL-WAIT|ring:3,1,3,1@0|True"
+     }
+    ],
+    "knot tests outside the half not run": 36,
+    "registered half": "jobs 900-999 (first 100 of the 200 R2 runs) and 1100-1149 (first 50 of the 100 R4 runs), deviations 35",
+    "renumbering jobs not run": []
+   },
+   "knot tests outside the half (reported apart)": {
+    "nae failing knots": 0,
+    "nae runs": 80,
+    "nae verdicts": 100244,
+    "parity failing knots": 0,
+    "parity runs": 34,
+    "parity runs with a failing knot": 0,
+    "parity verdicts": 49208,
+    "runs": 114
+   }
+  }
+ ],
+ "claim parts": {
+  "claim C1 (by PN2 and PN4 with CU)": "holds",
+  "claim C2 (by PN3)": "holds",
+  "claim C3 (by PN7)": "holds",
+  "claim C4 (by PN5)": "fails",
+  "claim C5 (by PD1 and PD2)": "holds"
+ },
+ "reported": {
+  "R1": {
+   "wider record against own descent (studies)": {
+    "chains": {
+     "equal": 15,
+     "more": 75
+    },
+    "mixed": {
+     "equal": 10,
+     "more": 80
+    },
+    "second": {
+     "more": 76,
+     "equal": 14
+    }
+   },
+   "classes among the forms (studies by number)": {
+    "chains": {
+     "2": 26,
+     "3": 28,
+     "4": 11,
+     "5": 8,
+     "6": 1,
+     "7": 7,
+     "8": 3,
+     "9": 3,
+     "15": 3
+    },
+    "mixed": {
+     "3": 14,
+     "4": 14,
+     "5": 16,
+     "6": 5,
+     "7": 7,
+     "8": 7,
+     "9": 4,
+     "10": 4,
+     "11": 4,
+     "13": 2,
+     "15": 4,
+     "17": 3,
+     "18": 1,
+     "19": 1,
+     "20": 2,
+     "21": 1,
+     "22": 1
+    },
+    "second": {
+     "2": 1,
+     "3": 5,
+     "4": 12,
+     "5": 12,
+     "6": 9,
+     "7": 8,
+     "8": 3,
+     "9": 8,
+     "10": 5,
+     "11": 2,
+     "12": 4,
+     "13": 3,
+     "14": 2,
+     "15": 4,
+     "16": 3,
+     "18": 1,
+     "19": 1,
+     "22": 2,
+     "26": 1,
+     "27": 1,
+     "28": 2,
+     "30": 1
+    }
+   },
+   "classes by the wider record (studies by number)": {
+    "chains": {
+     "2": 9,
+     "3": 8,
+     "4": 7,
+     "5": 5,
+     "6": 8,
+     "7": 1,
+     "8": 4,
+     "9": 4,
+     "10": 5,
+     "11": 1,
+     "12": 1,
+     "13": 1,
+     "16": 1,
+     "17": 1,
+     "21": 2,
+     "23": 1,
+     "25": 3,
+     "30": 1,
+     "32": 1,
+     "33": 2,
+     "34": 1,
+     "36": 3,
+     "37": 1,
+     "39": 1,
+     "41": 3,
+     "48": 6,
+     "58": 3,
+     "59": 3,
+     "61": 3
+    },
+    "mixed": {
+     "3": 4,
+     "4": 5,
+     "5": 3,
+     "6": 4,
+     "7": 7,
+     "8": 5,
+     "9": 4,
+     "10": 3,
+     "11": 4,
+     "12": 6,
+     "13": 2,
+     "14": 2,
+     "15": 7,
+     "16": 1,
+     "17": 1,
+     "18": 1,
+     "19": 1,
+     "20": 1,
+     "21": 2,
+     "22": 1,
+     "23": 1,
+     "24": 3,
+     "25": 2,
+     "28": 1,
+     "29": 1,
+     "32": 1,
+     "33": 2,
+     "34": 1,
+     "35": 4,
+     "36": 3,
+     "37": 4,
+     "40": 3
+    },
+    "second": {
+     "3": 2,
+     "4": 2,
+     "5": 8,
+     "6": 3,
+     "7": 2,
+     "8": 1,
+     "9": 7,
+     "10": 8,
+     "11": 8,
+     "12": 3,
+     "13": 2,
+     "14": 3,
+     "15": 6,
+     "16": 5,
+     "17": 2,
+     "19": 3,
+     "20": 1,
+     "23": 3,
+     "24": 2,
+     "25": 1,
+     "26": 1,
+     "27": 2,
+     "29": 2,
+     "31": 6,
+     "32": 2,
+     "35": 2,
+     "36": 1,
+     "37": 2
+    }
+   }
+  },
+  "R2": {
+   "wider record against own descent (studies)": {
+    "fresh": {
+     "equal": 21,
+     "more": 69
+    }
+   },
+   "classes among the forms (studies by number)": {
+    "fresh": {
+     "2": 3,
+     "3": 14,
+     "4": 5,
+     "5": 13,
+     "6": 4,
+     "7": 7,
+     "8": 8,
+     "9": 4,
+     "10": 1,
+     "11": 3,
+     "12": 4,
+     "13": 2,
+     "14": 5,
+     "15": 1,
+     "16": 2,
+     "17": 1,
+     "18": 3,
+     "21": 1,
+     "22": 2,
+     "25": 1,
+     "27": 1,
+     "32": 3,
+     "33": 1,
+     "36": 1
+    }
+   },
+   "classes by the wider record (studies by number)": {
+    "fresh": {
+     "2": 3,
+     "3": 6,
+     "4": 3,
+     "5": 3,
+     "6": 6,
+     "7": 3,
+     "8": 3,
+     "9": 3,
+     "10": 6,
+     "11": 4,
+     "12": 1,
+     "13": 2,
+     "14": 4,
+     "15": 3,
+     "16": 2,
+     "17": 2,
+     "18": 1,
+     "19": 5,
+     "20": 2,
+     "21": 1,
+     "23": 1,
+     "24": 3,
+     "25": 1,
+     "26": 1,
+     "27": 4,
+     "31": 2,
+     "33": 1,
+     "37": 2,
+     "40": 1,
+     "43": 2,
+     "44": 1,
+     "46": 3,
+     "47": 1,
+     "49": 2,
+     "50": 1,
+     "52": 1
+    }
+   }
+  },
+  "R4": {
+   "wider record against own descent (studies)": {
+    "fresh": {
+     "equal": 21,
+     "more": 69
+    }
+   },
+   "classes among the forms (studies by number)": {
+    "fresh": {
+     "2": 3,
+     "3": 14,
+     "4": 5,
+     "5": 13,
+     "6": 4,
+     "7": 7,
+     "8": 8,
+     "9": 4,
+     "10": 1,
+     "11": 3,
+     "12": 4,
+     "13": 2,
+     "14": 5,
+     "15": 1,
+     "16": 2,
+     "17": 1,
+     "18": 3,
+     "21": 1,
+     "22": 2,
+     "25": 1,
+     "27": 1,
+     "32": 3,
+     "33": 1,
+     "36": 1
+    }
+   },
+   "classes by the wider record (studies by number)": {
+    "fresh": {
+     "2": 3,
+     "3": 6,
+     "4": 3,
+     "5": 3,
+     "6": 6,
+     "7": 3,
+     "8": 3,
+     "9": 3,
+     "10": 6,
+     "11": 2,
+     "12": 3,
+     "13": 2,
+     "14": 3,
+     "15": 4,
+     "16": 1,
+     "17": 3,
+     "18": 1,
+     "19": 5,
+     "20": 2,
+     "21": 1,
+     "23": 1,
+     "24": 3,
+     "25": 1,
+     "26": 1,
+     "27": 4,
+     "31": 2,
+     "33": 1,
+     "37": 2,
+     "40": 1,
+     "43": 2,
+     "44": 1,
+     "46": 1,
+     "47": 3,
+     "49": 2,
+     "50": 1,
+     "52": 1
+    }
+   }
+  }
+ },
+ "notes": {
+  "PN5 reading applied to R1 (disclosed: 58 of 90 on mixed, 62 of 90 on second)": {
+   "mixed": 58,
+   "second": 62,
+   "chains": 52
+  },
+  "R4 against R2: runs whose record differs (parity against not-all-equal, same starts and laws)": [
+   28,
+   5490
+  ],
+  "R4: entries of the wider record with f = 0 (implied births of the first)": 22,
+  "studies of R4 whose classes differ from the same study of R2": 0,
+  "wall time log": [
+   "R0 start 2026-11-25T23:31:46Z",
+   "R0 pids 2420321 2420322 2420323 2420324 2420325 2420326 2420327 2420328",
+   "R0 end 2026-11-25T23:31:56Z wall 10.393047258 s rc 0",
+   "R1 start 2026-11-25T23:32:14Z",
+   "R1 pids 2420746 2420747 2420748 2420749 2420750 2420751 2420752 2420753",
+   "R1 end 2026-11-25T23:35:28Z wall 193.690078414 s rc 0",
+   "R2 start 2026-11-25T23:37:37Z",
+   "R2 pids 2422273 2422274 2422275 2422276 2422277 2422278 2422279 2422280",
+   "R2 end 2026-11-25T23:40:01Z wall 144.557045978 s rc 0",
+   "R2u start 2026-11-25T23:40:23Z",
+   "R2u pids 2422779 2422780 2422781 2422782 2422783 2422784 2422785 2422786",
+   "R2u end 2026-11-25T23:41:18Z wall 55.208771573 s rc 0",
+   "R3 start 2026-11-25T23:41:45Z",
+   "R3 pids 2423009 2423010 2423011 2423012 2423013 2423014 2423015 2423016",
+   "R3 end 2026-11-25T23:42:54Z wall 69.511477399 s rc 0",
+   "R4 start 2026-11-25T23:43:19Z",
+   "R4 pids 2423315 2423316 2423317 2423318 2423319 2423320 2423321 2423322",
+   "R4 end 2026-11-25T23:45:45Z wall 146.656567407 s rc 0",
+   "R5 start 2026-11-25T23:50:47Z",
+   "R5 pids 2424403 2424404 2424405 2424406 2424407 2424408 2424409 2424410",
+   "R5 chunk 3 (pid 2424406) stopped 2026-11-26T00:04:55Z, deviations 35",
+   "R5rest start 2026-11-26T00:05:03Z",
+   "R5rest 0 pid 2431314",
+   "R5rest 1 pid 2431315",
+   "R5rest 2 pid 2431316",
+   "R5rest 3 pid 2431317",
+   "R5rest 4 pid 2431318",
+   "R5rest 5 pid 2431319",
+   "R5rest 6 pid 2431320",
+   "R5rest 1 (pid 2431315) finished 2026-11-26T00:12:01Z",
+   "R5 chunk 0 (pid 2424403) stopped at the deadline, job 941 unfinished 2026-11-26T00:33:04Z",
+   "R5 end 2026-11-26T00:33:04Z wall 2536.616025005 s rc 1"
+  ]
+ },
+ "R* by row": {
+  "R1": {
+   "chains": {
+    "none, CANCEL-RETIRE": {
+     "10": 15
+    },
+    "none, CANCEL-OFFSHOOT": {
+     "10": 15
+    },
+    "none, CANCEL-WAIT": {
+     "10": 15
+    },
+    "sole, CANCEL-RETIRE": {
+     "10": 10,
+     "5": 2,
+     "4": 3
+    },
+    "sole, CANCEL-OFFSHOOT": {
+     "10": 10,
+     "5": 2,
+     "4": 3
+    },
+    "sole, CANCEL-WAIT": {
+     "10": 10,
+     "5": 1,
+     "4": 4
+    }
+   },
+   "mixed": {
+    "none, CANCEL-RETIRE": {
+     "9": 15
+    },
+    "none, CANCEL-OFFSHOOT": {
+     "9": 15
+    },
+    "none, CANCEL-WAIT": {
+     "9": 15
+    },
+    "sole, CANCEL-RETIRE": {
+     "9": 10,
+     "4": 1,
+     "3": 2,
+     "6": 1,
+     "5": 1
+    },
+    "sole, CANCEL-OFFSHOOT": {
+     "9": 10,
+     "4": 1,
+     "3": 2,
+     "5": 2
+    },
+    "sole, CANCEL-WAIT": {
+     "9": 10,
+     "4": 2,
+     "3": 2,
+     "5": 1
+    }
+   },
+   "second": {
+    "none, CANCEL-RETIRE": {
+     "9": 15
+    },
+    "none, CANCEL-OFFSHOOT": {
+     "9": 15
+    },
+    "none, CANCEL-WAIT": {
+     "9": 13,
+     "7": 1,
+     "6": 1
+    },
+    "sole, CANCEL-RETIRE": {
+     "9": 10,
+     "4": 3,
+     "3": 1,
+     "2": 1
+    },
+    "sole, CANCEL-OFFSHOOT": {
+     "9": 10,
+     "4": 1,
+     "2": 2,
+     "3": 2
+    },
+    "sole, CANCEL-WAIT": {
+     "9": 10,
+     "4": 1,
+     "3": 3,
+     "2": 1
+    }
+   }
+  },
+  "R2": {
+   "fresh": {
+    "none, CANCEL-RETIRE": {
+     "9": 15
+    },
+    "none, CANCEL-OFFSHOOT": {
+     "9": 15
+    },
+    "none, CANCEL-WAIT": {
+     "9": 12,
+     "6": 1,
+     "7": 2
+    },
+    "sole, CANCEL-RETIRE": {
+     "9": 10,
+     "4": 2,
+     "3": 1,
+     "5": 1,
+     "6": 1
+    },
+    "sole, CANCEL-OFFSHOOT": {
+     "9": 10,
+     "4": 3,
+     "3": 2
+    },
+    "sole, CANCEL-WAIT": {
+     "9": 10,
+     "4": 4,
+     "3": 1
+    }
+   }
+  },
+  "R2u": {
+   "fresh": {
+    "none, CANCEL-RETIRE": {
+     "9": 15
+    },
+    "none, CANCEL-OFFSHOOT": {
+     "9": 15
+    },
+    "none, CANCEL-WAIT": {
+     "9": 15
+    },
+    "sole, CANCEL-RETIRE": {
+     "9": 10,
+     "3": 5
+    },
+    "sole, CANCEL-OFFSHOOT": {
+     "9": 10,
+     "3": 5
+    },
+    "sole, CANCEL-WAIT": {
+     "9": 10,
+     "3": 5
+    }
+   }
+  },
+  "R3": {
+   "chains": {
+    "none, CANCEL-RETIRE": {
+     "10": 15
+    },
+    "none, CANCEL-OFFSHOOT": {
+     "10": 15
+    },
+    "none, CANCEL-WAIT": {
+     "10": 15
+    },
+    "sole, CANCEL-RETIRE": {
+     "10": 10,
+     "5": 4,
+     "4": 1
+    },
+    "sole, CANCEL-OFFSHOOT": {
+     "10": 10,
+     "5": 4,
+     "4": 1
+    },
+    "sole, CANCEL-WAIT": {
+     "10": 10,
+     "5": 2,
+     "4": 3
+    }
+   }
+  },
+  "R4": {
+   "fresh": {
+    "none, CANCEL-RETIRE": {
+     "9": 15
+    },
+    "none, CANCEL-OFFSHOOT": {
+     "9": 15
+    },
+    "none, CANCEL-WAIT": {
+     "9": 12,
+     "6": 1,
+     "7": 2
+    },
+    "sole, CANCEL-RETIRE": {
+     "9": 10,
+     "4": 2,
+     "3": 1,
+     "5": 1,
+     "6": 1
+    },
+    "sole, CANCEL-OFFSHOOT": {
+     "9": 10,
+     "4": 3,
+     "3": 2
+    },
+    "sole, CANCEL-WAIT": {
+     "9": 10,
+     "4": 4,
+     "3": 1
+    }
+   }
+  }
+ },
+ "tables": {
+  "R2": {
+   "first told apart, fresh": {
+    "none, CANCEL-RETIRE": {
+     "1": 15051,
+     "never": 10908,
+     "2": 591
+    },
+    "none, CANCEL-OFFSHOOT": {
+     "1": 14961,
+     "never": 11006,
+     "2": 583
+    },
+    "none, CANCEL-WAIT": {
+     "1": 15208,
+     "never": 5218,
+     "2": 4168,
+     "3": 1212,
+     "4": 182,
+     "not read further": 28,
+     "6": 120,
+     "5": 414
+    },
+    "sole, CANCEL-RETIRE": {
+     "1": 18083,
+     "never": 6828,
+     "2": 979,
+     "3": 24,
+     "not read further": 631,
+     "5": 5
+    },
+    "sole, CANCEL-OFFSHOOT": {
+     "1": 18324,
+     "never": 6136,
+     "2": 1413,
+     "3": 2,
+     "not read further": 675
+    },
+    "sole, CANCEL-WAIT": {
+     "1": 18241,
+     "never": 2755,
+     "2": 3492,
+     "3": 1068,
+     "not read further": 485,
+     "6": 124,
+     "4": 209,
+     "5": 158,
+     "7": 16,
+     "9": 1,
+     "8": 1
+    }
+   },
+   "after the first round": {
+    "fresh": {
+     "none, CANCEL-RETIRE": {
+      "pairs": 26550,
+      "told apart at R*": 15642,
+      "first told apart in round 2 or later": 591,
+      "of those, the wider record of round 1 the same": 422,
+      "in round 3 or later with the wider records the same through round 2": 0
+     },
+     "none, CANCEL-OFFSHOOT": {
+      "pairs": 26550,
+      "told apart at R*": 15544,
+      "first told apart in round 2 or later": 583,
+      "of those, the wider record of round 1 the same": 445,
+      "in round 3 or later with the wider records the same through round 2": 0
+     },
+     "none, CANCEL-WAIT": {
+      "pairs": 26550,
+      "told apart at R*": 21304,
+      "first told apart in round 2 or later": 6096,
+      "of those, the wider record of round 1 the same": 5415,
+      "in round 3 or later with the wider records the same through round 2": 1291
+     },
+     "sole, CANCEL-RETIRE": {
+      "pairs": 26550,
+      "told apart at R*": 19091,
+      "first told apart in round 2 or later": 1008,
+      "of those, the wider record of round 1 the same": 765,
+      "in round 3 or later with the wider records the same through round 2": 0
+     },
+     "sole, CANCEL-OFFSHOOT": {
+      "pairs": 26550,
+      "told apart at R*": 19739,
+      "first told apart in round 2 or later": 1415,
+      "of those, the wider record of round 1 the same": 1309,
+      "in round 3 or later with the wider records the same through round 2": 0
+     },
+     "sole, CANCEL-WAIT": {
+      "pairs": 26550,
+      "told apart at R*": 23117,
+      "first told apart in round 2 or later": 5069,
+      "of those, the wider record of round 1 the same": 4816,
+      "in round 3 or later with the wider records the same through round 2": 1370
+     }
+    }
+   },
+   "fates on the window": {
+    "fresh": {
+     "none, CANCEL-RETIRE": {
+      "ends, no births": 60,
+      "ends, taken up": 61,
+      "grows": 734,
+      "steady": 45
+     },
+     "none, CANCEL-OFFSHOOT": {
+      "grows": 801,
+      "ends, taken up": 61,
+      "steady": 38
+     },
+     "none, CANCEL-WAIT": {
+      "ends, no births": 64,
+      "ends, taken up": 60,
+      "grows": 738,
+      "steady": 38
+     },
+     "sole, CANCEL-RETIRE": {
+      "ends, no births": 218,
+      "ends, taken up": 44,
+      "grows": 477,
+      "other": 30,
+      "shrinks": 71,
+      "not read": 60
+     },
+     "sole, CANCEL-OFFSHOOT": {
+      "grows": 714,
+      "other": 32,
+      "ends, taken up": 12,
+      "shrinks": 22,
+      "not read": 120
+     },
+     "sole, CANCEL-WAIT": {
+      "ends, no births": 199,
+      "ends, taken up": 32,
+      "grows": 537,
+      "other": 46,
+      "shrinks": 21,
+      "not read": 60,
+      "steady": 5
+     }
+    }
+   },
+   "the count profile (studies in which the class is a function of it)": {
+    "fresh": {
+     "the held knot": 0,
+     "the second seed's births by round": 3,
+     "both": 49,
+     "studies": 90
+    }
+   },
+   "R*": {
+    "fresh": {
+     "none, CANCEL-RETIRE": {
+      "9": 15
+     },
+     "none, CANCEL-OFFSHOOT": {
+      "9": 15
+     },
+     "none, CANCEL-WAIT": {
+      "9": 12,
+      "6": 1,
+      "7": 2
+     },
+     "sole, CANCEL-RETIRE": {
+      "9": 10,
+      "4": 2,
+      "3": 1,
+      "5": 1,
+      "6": 1
+     },
+     "sole, CANCEL-OFFSHOOT": {
+      "9": 10,
+      "4": 3,
+      "3": 2
+     },
+     "sole, CANCEL-WAIT": {
+      "9": 10,
+      "4": 4,
+      "3": 1
+     }
+    }
+   },
+   "wider record against own descent (studies)": {
+    "fresh": {
+     "equal": 21,
+     "more": 69
+    }
+   },
+   "classes among the forms (studies by number)": {
+    "fresh": {
+     "2": 3,
+     "3": 14,
+     "4": 5,
+     "5": 13,
+     "6": 4,
+     "7": 7,
+     "8": 8,
+     "9": 4,
+     "10": 1,
+     "11": 3,
+     "12": 4,
+     "13": 2,
+     "14": 5,
+     "15": 1,
+     "16": 2,
+     "17": 1,
+     "18": 3,
+     "21": 1,
+     "22": 2,
+     "25": 1,
+     "27": 1,
+     "32": 3,
+     "33": 1,
+     "36": 1
+    }
+   },
+   "classes by the wider record (studies by number)": {
+    "fresh": {
+     "2": 3,
+     "3": 6,
+     "4": 3,
+     "5": 3,
+     "6": 6,
+     "7": 3,
+     "8": 3,
+     "9": 3,
+     "10": 6,
+     "11": 4,
+     "12": 1,
+     "13": 2,
+     "14": 4,
+     "15": 3,
+     "16": 2,
+     "17": 2,
+     "18": 1,
+     "19": 5,
+     "20": 2,
+     "21": 1,
+     "23": 1,
+     "24": 3,
+     "25": 1,
+     "26": 1,
+     "27": 4,
+     "31": 2,
+     "33": 1,
+     "37": 2,
+     "40": 1,
+     "43": 2,
+     "44": 1,
+     "46": 3,
+     "47": 1,
+     "49": 2,
+     "50": 1,
+     "52": 1
+    }
+   },
+   "bare start a class of its own (studies)": {
+    "fresh": [
+     90,
+     90
+    ]
+   },
+   "every form in the bare start's class (studies)": {
+    "fresh": [
+     0,
+     90
+    ]
+   }
+  },
+  "R2u": {
+   "first told apart, fresh": {
+    "none, CANCEL-RETIRE": {
+     "never": 26550
+    },
+    "none, CANCEL-OFFSHOOT": {
+     "never": 26550
+    },
+    "none, CANCEL-WAIT": {
+     "never": 26550
+    },
+    "sole, CANCEL-RETIRE": {
+     "never": 20675,
+     "not read further": 5875
+    },
+    "sole, CANCEL-OFFSHOOT": {
+     "never": 20675,
+     "not read further": 5875
+    },
+    "sole, CANCEL-WAIT": {
+     "never": 20675,
+     "not read further": 5875
+    }
+   },
+   "after the first round": {
+    "fresh": {
+     "none, CANCEL-RETIRE": {
+      "pairs": 26550,
+      "told apart at R*": 0,
+      "first told apart in round 2 or later": 0,
+      "of those, the wider record of round 1 the same": 0,
+      "in round 3 or later with the wider records the same through round 2": 0
+     },
+     "none, CANCEL-OFFSHOOT": {
+      "pairs": 26550,
+      "told apart at R*": 0,
+      "first told apart in round 2 or later": 0,
+      "of those, the wider record of round 1 the same": 0,
+      "in round 3 or later with the wider records the same through round 2": 0
+     },
+     "none, CANCEL-WAIT": {
+      "pairs": 26550,
+      "told apart at R*": 0,
+      "first told apart in round 2 or later": 0,
+      "of those, the wider record of round 1 the same": 0,
+      "in round 3 or later with the wider records the same through round 2": 0
+     },
+     "sole, CANCEL-RETIRE": {
+      "pairs": 26550,
+      "told apart at R*": 0,
+      "first told apart in round 2 or later": 0,
+      "of those, the wider record of round 1 the same": 0,
+      "in round 3 or later with the wider records the same through round 2": 0
+     },
+     "sole, CANCEL-OFFSHOOT": {
+      "pairs": 26550,
+      "told apart at R*": 0,
+      "first told apart in round 2 or later": 0,
+      "of those, the wider record of round 1 the same": 0,
+      "in round 3 or later with the wider records the same through round 2": 0
+     },
+     "sole, CANCEL-WAIT": {
+      "pairs": 26550,
+      "told apart at R*": 0,
+      "first told apart in round 2 or later": 0,
+      "of those, the wider record of round 1 the same": 0,
+      "in round 3 or later with the wider records the same through round 2": 0
+     }
+    }
+   },
+   "fates on the window": {
+    "fresh": {
+     "none, CANCEL-RETIRE": {
+      "ends, no births": 120,
+      "grows": 780
+     },
+     "none, CANCEL-OFFSHOOT": {
+      "grows": 900
+     },
+     "none, CANCEL-WAIT": {
+      "ends, no births": 120,
+      "grows": 780
+     },
+     "sole, CANCEL-RETIRE": {
+      "ends, no births": 240,
+      "not read": 300,
+      "grows": 360
+     },
+     "sole, CANCEL-OFFSHOOT": {
+      "grows": 600,
+      "not read": 300
+     },
+     "sole, CANCEL-WAIT": {
+      "ends, no births": 240,
+      "not read": 300,
+      "grows": 360
+     }
+    }
+   },
+   "the count profile (studies in which the class is a function of it)": {
+    "fresh": {
+     "the held knot": 90,
+     "the second seed's births by round": 90,
+     "both": 90,
+     "studies": 90
+    }
+   },
+   "R*": {
+    "fresh": {
+     "none, CANCEL-RETIRE": {
+      "9": 15
+     },
+     "none, CANCEL-OFFSHOOT": {
+      "9": 15
+     },
+     "none, CANCEL-WAIT": {
+      "9": 15
+     },
+     "sole, CANCEL-RETIRE": {
+      "9": 10,
+      "3": 5
+     },
+     "sole, CANCEL-OFFSHOOT": {
+      "9": 10,
+      "3": 5
+     },
+     "sole, CANCEL-WAIT": {
+      "9": 10,
+      "3": 5
+     }
+    }
+   },
+   "wider record against own descent (studies)": {
+    "fresh": {
+     "equal": 90
+    }
+   },
+   "classes among the forms (studies by number)": {
+    "fresh": {
+     "1": 90
+    }
+   },
+   "classes by the wider record (studies by number)": {
+    "fresh": {
+     "1": 90
+    }
+   },
+   "bare start a class of its own (studies)": {
+    "fresh": [
+     0,
+     90
+    ]
+   },
+   "every form in the bare start's class (studies)": {
+    "fresh": [
+     90,
+     90
+    ]
+   }
+  },
+  "R3": {
+   "depth, chains, first seeds K to O together (told apart / pairs)": {
+    "none, FLOOR1, CANCEL-RETIRE": {
+     "depth 0": [
+      0,
+      155
+     ],
+     "1 against 2 knots": [
+      20,
+      20
+     ],
+     "depth 1": [
+      0,
+      150
+     ],
+     "2 against 3 knots": [
+      0,
+      40
+     ],
+     "depth 2": [
+      0,
+      140
+     ],
+     "3 against 4 knots": [
+      0,
+      80
+     ],
+     "depth 3": [
+      0,
+      120
+     ],
+     "4 against 5 knots": [
+      0,
+      160
+     ],
+     "depth 4": [
+      0,
+      80
+     ]
+    },
+    "none, FLOOR1, CANCEL-OFFSHOOT": {
+     "depth 0": [
+      0,
+      155
+     ],
+     "1 against 2 knots": [
+      20,
+      20
+     ],
+     "depth 1": [
+      0,
+      150
+     ],
+     "2 against 3 knots": [
+      0,
+      40
+     ],
+     "depth 2": [
+      0,
+      140
+     ],
+     "3 against 4 knots": [
+      0,
+      80
+     ],
+     "depth 3": [
+      0,
+      120
+     ],
+     "4 against 5 knots": [
+      0,
+      160
+     ],
+     "depth 4": [
+      0,
+      80
+     ]
+    },
+    "none, FLOOR1, CANCEL-WAIT": {
+     "depth 0": [
+      60,
+      155
+     ],
+     "1 against 2 knots": [
+      20,
+      20
+     ],
+     "depth 1": [
+      0,
+      150
+     ],
+     "2 against 3 knots": [
+      8,
+      40
+     ],
+     "depth 2": [
+      0,
+      140
+     ],
+     "3 against 4 knots": [
+      16,
+      80
+     ],
+     "depth 3": [
+      0,
+      120
+     ],
+     "4 against 5 knots": [
+      0,
+      160
+     ],
+     "depth 4": [
+      0,
+      80
+     ]
+    },
+    "none, CAP-3, CANCEL-RETIRE": {
+     "depth 0": [
+      0,
+      155
+     ],
+     "1 against 2 knots": [
+      20,
+      20
+     ],
+     "depth 1": [
+      0,
+      150
+     ],
+     "2 against 3 knots": [
+      0,
+      40
+     ],
+     "depth 2": [
+      0,
+      140
+     ],
+     "3 against 4 knots": [
+      0,
+      80
+     ],
+     "depth 3": [
+      0,
+      120
+     ],
+     "4 against 5 knots": [
+      0,
+      160
+     ],
+     "depth 4": [
+      0,
+      80
+     ]
+    },
+    "none, CAP-3, CANCEL-OFFSHOOT": {
+     "depth 0": [
+      0,
+      155
+     ],
+     "1 against 2 knots": [
+      20,
+      20
+     ],
+     "depth 1": [
+      0,
+      150
+     ],
+     "2 against 3 knots": [
+      0,
+      40
+     ],
+     "depth 2": [
+      0,
+      140
+     ],
+     "3 against 4 knots": [
+      0,
+      80
+     ],
+     "depth 3": [
+      0,
+      120
+     ],
+     "4 against 5 knots": [
+      0,
+      160
+     ],
+     "depth 4": [
+      0,
+      80
+     ]
+    },
+    "none, CAP-3, CANCEL-WAIT": {
+     "depth 0": [
+      58,
+      155
+     ],
+     "1 against 2 knots": [
+      20,
+      20
+     ],
+     "depth 1": [
+      0,
+      150
+     ],
+     "2 against 3 knots": [
+      14,
+      40
+     ],
+     "depth 2": [
+      14,
+      140
+     ],
+     "3 against 4 knots": [
+      0,
+      80
+     ],
+     "depth 3": [
+      0,
+      120
+     ],
+     "4 against 5 knots": [
+      0,
+      160
+     ],
+     "depth 4": [
+      0,
+      80
+     ]
+    },
+    "none, ORD, CANCEL-RETIRE": {
+     "depth 0": [
+      0,
+      155
+     ],
+     "1 against 2 knots": [
+      20,
+      20
+     ],
+     "depth 1": [
+      0,
+      150
+     ],
+     "2 against 3 knots": [
+      0,
+      40
+     ],
+     "depth 2": [
+      0,
+      140
+     ],
+     "3 against 4 knots": [
+      0,
+      80
+     ],
+     "depth 3": [
+      0,
+      120
+     ],
+     "4 against 5 knots": [
+      0,
+      160
+     ],
+     "depth 4": [
+      0,
+      80
+     ]
+    },
+    "none, ORD, CANCEL-OFFSHOOT": {
+     "depth 0": [
+      0,
+      155
+     ],
+     "1 against 2 knots": [
+      20,
+      20
+     ],
+     "depth 1": [
+      0,
+      150
+     ],
+     "2 against 3 knots": [
+      0,
+      40
+     ],
+     "depth 2": [
+      0,
+      140
+     ],
+     "3 against 4 knots": [
+      0,
+      80
+     ],
+     "depth 3": [
+      0,
+      120
+     ],
+     "4 against 5 knots": [
+      0,
+      160
+     ],
+     "depth 4": [
+      0,
+      80
+     ]
+    },
+    "none, ORD, CANCEL-WAIT": {
+     "depth 0": [
+      58,
+      155
+     ],
+     "1 against 2 knots": [
+      20,
+      20
+     ],
+     "depth 1": [
+      0,
+      150
+     ],
+     "2 against 3 knots": [
+      4,
+      40
+     ],
+     "depth 2": [
+      0,
+      140
+     ],
+     "3 against 4 knots": [
+      0,
+      80
+     ],
+     "depth 3": [
+      0,
+      120
+     ],
+     "4 against 5 knots": [
+      0,
+      160
+     ],
+     "depth 4": [
+      0,
+      80
+     ]
+    },
+    "sole, FLOOR1, CANCEL-RETIRE": {
+     "depth 0": [
+      0,
+      155
+     ],
+     "1 against 2 knots": [
+      20,
+      20
+     ],
+     "depth 1": [
+      0,
+      150
+     ],
+     "2 against 3 knots": [
+      0,
+      40
+     ],
+     "depth 2": [
+      0,
+      140
+     ],
+     "3 against 4 knots": [
+      0,
+      80
+     ],
+     "depth 3": [
+      0,
+      120
+     ],
+     "4 against 5 knots": [
+      0,
+      160
+     ],
+     "depth 4": [
+      0,
+      80
+     ]
+    },
+    "sole, FLOOR1, CANCEL-OFFSHOOT": {
+     "depth 0": [
+      0,
+      155
+     ],
+     "1 against 2 knots": [
+      20,
+      20
+     ],
+     "depth 1": [
+      0,
+      150
+     ],
+     "2 against 3 knots": [
+      0,
+      40
+     ],
+     "depth 2": [
+      0,
+      140
+     ],
+     "3 against 4 knots": [
+      16,
+      80
+     ],
+     "depth 3": [
+      0,
+      120
+     ],
+     "4 against 5 knots": [
+      0,
+      160
+     ],
+     "depth 4": [
+      0,
+      80
+     ]
+    },
+    "sole, FLOOR1, CANCEL-WAIT": {
+     "depth 0": [
+      30,
+      155
+     ],
+     "1 against 2 knots": [
+      20,
+      20
+     ],
+     "depth 1": [
+      0,
+      150
+     ],
+     "2 against 3 knots": [
+      12,
+      40
+     ],
+     "depth 2": [
+      0,
+      140
+     ],
+     "3 against 4 knots": [
+      32,
+      80
+     ],
+     "depth 3": [
+      0,
+      120
+     ],
+     "4 against 5 knots": [
+      16,
+      160
+     ],
+     "depth 4": [
+      0,
+      80
+     ]
+    },
+    "sole, CAP-3, CANCEL-RETIRE": {
+     "depth 0": [
+      35,
+      155
+     ],
+     "1 against 2 knots": [
+      20,
+      20
+     ],
+     "depth 1": [
+      24,
+      150
+     ],
+     "2 against 3 knots": [
+      20,
+      40
+     ],
+     "depth 2": [
+      6,
+      140
+     ],
+     "3 against 4 knots": [
+      32,
+      80
+     ],
+     "depth 3": [
+      0,
+      120
+     ],
+     "4 against 5 knots": [
+      64,
+      160
+     ],
+     "depth 4": [
+      0,
+      80
+     ]
+    },
+    "sole, CAP-3, CANCEL-OFFSHOOT": {
+     "depth 0": [
+      13,
+      155
+     ],
+     "1 against 2 knots": [
+      20,
+      20
+     ],
+     "depth 1": [
+      14,
+      150
+     ],
+     "2 against 3 knots": [
+      12,
+      40
+     ],
+     "depth 2": [
+      0,
+      140
+     ],
+     "3 against 4 knots": [
+      56,
+      80
+     ],
+     "depth 3": [
+      0,
+      120
+     ],
+     "4 against 5 knots": [
+      32,
+      160
+     ],
+     "depth 4": [
+      0,
+      80
+     ]
+    },
+    "sole, CAP-3, CANCEL-WAIT": {
+     "depth 0": [
+      106,
+      155
+     ],
+     "1 against 2 knots": [
+      20,
+      20
+     ],
+     "depth 1": [
+      43,
+      150
+     ],
+     "2 against 3 knots": [
+      24,
+      40
+     ],
+     "depth 2": [
+      26,
+      140
+     ],
+     "3 against 4 knots": [
+      64,
+      80
+     ],
+     "depth 3": [
+      26,
+      120
+     ],
+     "4 against 5 knots": [
+      126,
+      160
+     ],
+     "depth 4": [
+      13,
+      80
+     ]
+    },
+    "sole, ORD, CANCEL-RETIRE": {
+     "depth 0": [
+      69,
+      155
+     ],
+     "1 against 2 knots": [
+      20,
+      20
+     ],
+     "depth 1": [
+      62,
+      150
+     ],
+     "2 against 3 knots": [
+      24,
+      40
+     ],
+     "depth 2": [
+      4,
+      140
+     ],
+     "3 against 4 knots": [
+      48,
+      80
+     ],
+     "depth 3": [
+      0,
+      120
+     ],
+     "4 against 5 knots": [
+      32,
+      160
+     ],
+     "depth 4": [
+      0,
+      80
+     ]
+    },
+    "sole, ORD, CANCEL-OFFSHOOT": {
+     "depth 0": [
+      71,
+      155
+     ],
+     "1 against 2 knots": [
+      20,
+      20
+     ],
+     "depth 1": [
+      74,
+      150
+     ],
+     "2 against 3 knots": [
+      32,
+      40
+     ],
+     "depth 2": [
+      4,
+      140
+     ],
+     "3 against 4 knots": [
+      80,
+      80
+     ],
+     "depth 3": [
+      0,
+      120
+     ],
+     "4 against 5 knots": [
+      32,
+      160
+     ],
+     "depth 4": [
+      0,
+      80
+     ]
+    },
+    "sole, ORD, CANCEL-WAIT": {
+     "depth 0": [
+      98,
+      155
+     ],
+     "1 against 2 knots": [
+      20,
+      20
+     ],
+     "depth 1": [
+      62,
+      150
+     ],
+     "2 against 3 knots": [
+      36,
+      40
+     ],
+     "depth 2": [
+      4,
+      140
+     ],
+     "3 against 4 knots": [
+      80,
+      80
+     ],
+     "depth 3": [
+      0,
+      120
+     ],
+     "4 against 5 knots": [
+      48,
+      160
+     ],
+     "depth 4": [
+      0,
+      80
+     ]
+    }
+   },
+   "first told apart, chains": {
+    "none, CANCEL-RETIRE": {
+     "never": 26565,
+     "1": 1800
+    },
+    "none, CANCEL-OFFSHOOT": {
+     "never": 26565,
+     "1": 1800
+    },
+    "none, CANCEL-WAIT": {
+     "never": 20093,
+     "1": 1800,
+     "3": 2184,
+     "2": 4288
+    },
+    "sole, CANCEL-RETIRE": {
+     "never": 15014,
+     "1": 5779,
+     "2": 3029,
+     "not read further": 4103,
+     "3": 440
+    },
+    "sole, CANCEL-OFFSHOOT": {
+     "never": 15036,
+     "1": 7628,
+     "2": 2561,
+     "not read further": 3140
+    },
+    "sole, CANCEL-WAIT": {
+     "never": 9669,
+     "1": 6355,
+     "2": 5537,
+     "not read further": 2511,
+     "3": 3923,
+     "4": 240,
+     "7": 4,
+     "5": 51,
+     "6": 75
+    }
+   },
+   "after the first round": {
+    "chains": {
+     "none, CANCEL-RETIRE": {
+      "pairs": 28365,
+      "told apart at R*": 1800,
+      "first told apart in round 2 or later": 0,
+      "of those, the wider record of round 1 the same": 0,
+      "in round 3 or later with the wider records the same through round 2": 0
+     },
+     "none, CANCEL-OFFSHOOT": {
+      "pairs": 28365,
+      "told apart at R*": 1800,
+      "first told apart in round 2 or later": 0,
+      "of those, the wider record of round 1 the same": 0,
+      "in round 3 or later with the wider records the same through round 2": 0
+     },
+     "none, CANCEL-WAIT": {
+      "pairs": 28365,
+      "told apart at R*": 8272,
+      "first told apart in round 2 or later": 6472,
+      "of those, the wider record of round 1 the same": 4672,
+      "in round 3 or later with the wider records the same through round 2": 748
+     },
+     "sole, CANCEL-RETIRE": {
+      "pairs": 28365,
+      "told apart at R*": 9248,
+      "first told apart in round 2 or later": 3469,
+      "of those, the wider record of round 1 the same": 2144,
+      "in round 3 or later with the wider records the same through round 2": 0
+     },
+     "sole, CANCEL-OFFSHOOT": {
+      "pairs": 28365,
+      "told apart at R*": 10189,
+      "first told apart in round 2 or later": 2561,
+      "of those, the wider record of round 1 the same": 2036,
+      "in round 3 or later with the wider records the same through round 2": 0
+     },
+     "sole, CANCEL-WAIT": {
+      "pairs": 28365,
+      "told apart at R*": 16185,
+      "first told apart in round 2 or later": 9830,
+      "of those, the wider record of round 1 the same": 8985,
+      "in round 3 or later with the wider records the same through round 2": 2726
+     }
+    }
+   },
+   "fates on the window": {
+    "chains": {
+     "none, CANCEL-RETIRE": {
+      "ends, no births": 62,
+      "grows": 568,
+      "ends, taken up": 60,
+      "steady": 240
+     },
+     "none, CANCEL-OFFSHOOT": {
+      "grows": 630,
+      "ends, taken up": 60,
+      "steady": 240
+     },
+     "none, CANCEL-WAIT": {
+      "ends, no births": 64,
+      "grows": 566,
+      "ends, taken up": 60,
+      "steady": 240
+     },
+     "sole, CANCEL-RETIRE": {
+      "ends, no births": 242,
+      "grows": 465,
+      "other": 30,
+      "ends, taken up": 143,
+      "shrinks": 50
+     },
+     "sole, CANCEL-OFFSHOOT": {
+      "grows": 742,
+      "other": 30,
+      "ends, taken up": 108,
+      "shrinks": 50
+     },
+     "sole, CANCEL-WAIT": {
+      "ends, no births": 241,
+      "grows": 479,
+      "other": 28,
+      "ends, taken up": 130,
+      "shrinks": 52
+     }
+    }
+   },
+   "the count profile (studies in which the class is a function of it)": {
+    "chains": {
+     "the held knot": 54,
+     "the second seed's births by round": 60,
+     "both": 72,
+     "studies": 90
+    }
+   },
+   "R*": {
+    "chains": {
+     "none, CANCEL-RETIRE": {
+      "10": 15
+     },
+     "none, CANCEL-OFFSHOOT": {
+      "10": 15
+     },
+     "none, CANCEL-WAIT": {
+      "10": 15
+     },
+     "sole, CANCEL-RETIRE": {
+      "10": 10,
+      "5": 4,
+      "4": 1
+     },
+     "sole, CANCEL-OFFSHOOT": {
+      "10": 10,
+      "5": 4,
+      "4": 1
+     },
+     "sole, CANCEL-WAIT": {
+      "10": 10,
+      "5": 2,
+      "4": 3
+     }
+    }
+   },
+   "wider record against own descent (studies)": {
+    "chains": {
+     "equal": 31,
+     "more": 59
+    }
+   },
+   "classes among the forms (studies by number)": {
+    "chains": {
+     "2": 52,
+     "3": 8,
+     "4": 10,
+     "5": 5,
+     "6": 1,
+     "7": 2,
+     "8": 3,
+     "10": 1,
+     "11": 4,
+     "15": 3,
+     "19": 1
+    }
+   },
+   "classes by the wider record (studies by number)": {
+    "chains": {
+     "2": 24,
+     "3": 9,
+     "4": 4,
+     "5": 4,
+     "6": 6,
+     "7": 3,
+     "8": 1,
+     "9": 3,
+     "10": 4,
+     "11": 2,
+     "13": 2,
+     "14": 2,
+     "20": 1,
+     "26": 1,
+     "29": 6,
+     "41": 9,
+     "59": 6,
+     "61": 3
+    }
+   },
+   "bare start a class of its own (studies)": {
+    "chains": [
+     90,
+     90
+    ]
+   },
+   "every form in the bare start's class (studies)": {
+    "chains": [
+     0,
+     90
+    ]
+   }
+  },
+  "R4": {
+   "first told apart, fresh": {
+    "none, CANCEL-RETIRE": {
+     "1": 15051,
+     "never": 10908,
+     "2": 591
+    },
+    "none, CANCEL-OFFSHOOT": {
+     "1": 14961,
+     "never": 11006,
+     "2": 583
+    },
+    "none, CANCEL-WAIT": {
+     "1": 15208,
+     "never": 5218,
+     "2": 4168,
+     "3": 1212,
+     "4": 182,
+     "not read further": 28,
+     "6": 120,
+     "5": 414
+    },
+    "sole, CANCEL-RETIRE": {
+     "1": 18083,
+     "never": 6828,
+     "2": 979,
+     "3": 24,
+     "not read further": 631,
+     "5": 5
+    },
+    "sole, CANCEL-OFFSHOOT": {
+     "1": 18324,
+     "never": 6136,
+     "2": 1413,
+     "3": 2,
+     "not read further": 675
+    },
+    "sole, CANCEL-WAIT": {
+     "1": 18241,
+     "never": 2755,
+     "2": 3492,
+     "3": 1068,
+     "not read further": 485,
+     "6": 124,
+     "4": 209,
+     "5": 158,
+     "7": 16,
+     "9": 1,
+     "8": 1
+    }
+   },
+   "after the first round": {
+    "fresh": {
+     "none, CANCEL-RETIRE": {
+      "pairs": 26550,
+      "told apart at R*": 15642,
+      "first told apart in round 2 or later": 591,
+      "of those, the wider record of round 1 the same": 422,
+      "in round 3 or later with the wider records the same through round 2": 0
+     },
+     "none, CANCEL-OFFSHOOT": {
+      "pairs": 26550,
+      "told apart at R*": 15544,
+      "first told apart in round 2 or later": 583,
+      "of those, the wider record of round 1 the same": 445,
+      "in round 3 or later with the wider records the same through round 2": 0
+     },
+     "none, CANCEL-WAIT": {
+      "pairs": 26550,
+      "told apart at R*": 21304,
+      "first told apart in round 2 or later": 6096,
+      "of those, the wider record of round 1 the same": 5415,
+      "in round 3 or later with the wider records the same through round 2": 1291
+     },
+     "sole, CANCEL-RETIRE": {
+      "pairs": 26550,
+      "told apart at R*": 19091,
+      "first told apart in round 2 or later": 1008,
+      "of those, the wider record of round 1 the same": 765,
+      "in round 3 or later with the wider records the same through round 2": 0
+     },
+     "sole, CANCEL-OFFSHOOT": {
+      "pairs": 26550,
+      "told apart at R*": 19739,
+      "first told apart in round 2 or later": 1415,
+      "of those, the wider record of round 1 the same": 1309,
+      "in round 3 or later with the wider records the same through round 2": 0
+     },
+     "sole, CANCEL-WAIT": {
+      "pairs": 26550,
+      "told apart at R*": 23117,
+      "first told apart in round 2 or later": 5069,
+      "of those, the wider record of round 1 the same": 4816,
+      "in round 3 or later with the wider records the same through round 2": 1370
+     }
+    }
+   },
+   "fates on the window": {
+    "fresh": {
+     "none, CANCEL-RETIRE": {
+      "ends, no births": 60,
+      "ends, taken up": 61,
+      "grows": 734,
+      "steady": 45
+     },
+     "none, CANCEL-OFFSHOOT": {
+      "grows": 801,
+      "ends, taken up": 61,
+      "steady": 38
+     },
+     "none, CANCEL-WAIT": {
+      "ends, no births": 64,
+      "ends, taken up": 60,
+      "grows": 738,
+      "steady": 38
+     },
+     "sole, CANCEL-RETIRE": {
+      "ends, no births": 220,
+      "ends, taken up": 42,
+      "grows": 477,
+      "other": 30,
+      "shrinks": 71,
+      "not read": 60
+     },
+     "sole, CANCEL-OFFSHOOT": {
+      "grows": 714,
+      "other": 32,
+      "ends, taken up": 12,
+      "shrinks": 22,
+      "not read": 120
+     },
+     "sole, CANCEL-WAIT": {
+      "ends, no births": 203,
+      "ends, taken up": 28,
+      "grows": 537,
+      "other": 46,
+      "shrinks": 21,
+      "not read": 60,
+      "steady": 5
+     }
+    }
+   },
+   "the count profile (studies in which the class is a function of it)": {
+    "fresh": {
+     "the held knot": 0,
+     "the second seed's births by round": 3,
+     "both": 49,
+     "studies": 90
+    }
+   },
+   "R*": {
+    "fresh": {
+     "none, CANCEL-RETIRE": {
+      "9": 15
+     },
+     "none, CANCEL-OFFSHOOT": {
+      "9": 15
+     },
+     "none, CANCEL-WAIT": {
+      "9": 12,
+      "6": 1,
+      "7": 2
+     },
+     "sole, CANCEL-RETIRE": {
+      "9": 10,
+      "4": 2,
+      "3": 1,
+      "5": 1,
+      "6": 1
+     },
+     "sole, CANCEL-OFFSHOOT": {
+      "9": 10,
+      "4": 3,
+      "3": 2
+     },
+     "sole, CANCEL-WAIT": {
+      "9": 10,
+      "4": 4,
+      "3": 1
+     }
+    }
+   },
+   "wider record against own descent (studies)": {
+    "fresh": {
+     "equal": 21,
+     "more": 69
+    }
+   },
+   "classes among the forms (studies by number)": {
+    "fresh": {
+     "2": 3,
+     "3": 14,
+     "4": 5,
+     "5": 13,
+     "6": 4,
+     "7": 7,
+     "8": 8,
+     "9": 4,
+     "10": 1,
+     "11": 3,
+     "12": 4,
+     "13": 2,
+     "14": 5,
+     "15": 1,
+     "16": 2,
+     "17": 1,
+     "18": 3,
+     "21": 1,
+     "22": 2,
+     "25": 1,
+     "27": 1,
+     "32": 3,
+     "33": 1,
+     "36": 1
+    }
+   },
+   "classes by the wider record (studies by number)": {
+    "fresh": {
+     "2": 3,
+     "3": 6,
+     "4": 3,
+     "5": 3,
+     "6": 6,
+     "7": 3,
+     "8": 3,
+     "9": 3,
+     "10": 6,
+     "11": 2,
+     "12": 3,
+     "13": 2,
+     "14": 3,
+     "15": 4,
+     "16": 1,
+     "17": 3,
+     "18": 1,
+     "19": 5,
+     "20": 2,
+     "21": 1,
+     "23": 1,
+     "24": 3,
+     "25": 1,
+     "26": 1,
+     "27": 4,
+     "31": 2,
+     "33": 1,
+     "37": 2,
+     "40": 1,
+     "43": 2,
+     "44": 1,
+     "46": 1,
+     "47": 3,
+     "49": 2,
+     "50": 1,
+     "52": 1
+    }
+   },
+   "bare start a class of its own (studies)": {
+    "fresh": [
+     90,
+     90
+    ]
+   },
+   "every form in the bare start's class (studies)": {
+    "fresh": [
+     0,
+     90
+    ]
+   }
+  }
+ }
+}

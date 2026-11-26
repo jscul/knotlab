@@ -8,10 +8,12 @@ max(3 - p, 1); the floor is the ordinary count's own.
     HALF          threshold ceil(D / 2) + 1: at most a little over half of what it is owed (binds where D >= 4)
     CAP3-JOINS    the cap of three on joins only, offshoots the ordinary count (the advisor's control for PLACES)
     CAP-3         the cap of three (the positive control)      ORD    the ordinary count (the negative control)
+    PLACES-JOINS, PLACES-OFFSHOOTS   PLACES on one kind of birth only (added after the referee of the hold-back study
+                  found a join given three and owed four where PLACES and the cap differ; README, "Where PLACES differs")
 Also read, on the growth with no change: how many births the law gives less than the ordinary count, by kind.
 
     thr.py census I0 I1        B1 for sampled receivers I0..I1-1
-    thr.py linked I0 I1        B2 for the linked far ends I0..I1-1"""
+    thr.py linked I0 I1 [LAWS]   B2 for the linked far ends I0..I1-1 (LAWS: comma-separated, default all five)"""
 import sys, os, json, random, gzip, collections
 HERE = os.path.dirname(os.path.abspath(__file__))
 HB = os.path.join(HERE, '..', 'HOLD-BACK-20261126-001')
@@ -24,7 +26,9 @@ eng, bench, jam, ring_line, linked, second, receivers, shortage = (hold.eng, hol
 class Threshold(eng.Law):
     FORMS = {'PLACES': lambda kind, p, D, o: p + 1,
              'HALF': lambda kind, p, D, o: -(-D // 2) + 1,
-             'CAP3-JOINS': lambda kind, p, D, o: 3 if kind == 'join' else 10 ** 9}
+             'CAP3-JOINS': lambda kind, p, D, o: 3 if kind == 'join' else 10 ** 9,
+             'PLACES-JOINS': lambda kind, p, D, o: p + 1 if kind == 'join' else 10 ** 9,
+             'PLACES-OFFSHOOTS': lambda kind, p, D, o: p + 1 if kind != 'join' else 10 ** 9}
     def __init__(self, form):
         eng.Law.__init__(self, 'ORD', 'CANCEL-WAIT', None, 'nae'); self.form = form; self.binds = collections.Counter()
     def fresh(self, kind, p, D, o):
@@ -78,6 +82,7 @@ if __name__ == '__main__':
         LK = os.path.join(HERE, '..', 'LINKED-UNDER-CAP-20261126-001')
         far = sorted({json.loads(l)['B'] for l in gzip.open(os.path.join(LK, 'linked_runs.jsonl.gz'), 'rt')
                       if json.loads(l).get('law') == 'CAP-3' and json.loads(l)['A'] == 'tri:122@0' and json.loads(l)['linked'][15]})
+        laws = sys.argv[4].split(',') if len(sys.argv) > 4 else LAWS
         for B in far[int(sys.argv[2]):int(sys.argv[3])]:
-            for spec in LAWS:
+            for spec in laws:
                 print(json.dumps(run_pair(A, B, spec, (3, 5, 8), 24, 6000)), flush=True)

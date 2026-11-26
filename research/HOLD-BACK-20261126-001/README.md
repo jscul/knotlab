@@ -4,6 +4,11 @@ Epic `HOLD-BACK-20261126-001`, at the coordinator's go-ahead under the owner's s
 [`TWO-RECEPTIONS-20261126-001`](../TWO-RECEPTIONS-20261126-001/decision.md). A check by the thread, not a registered
 study; computed; referee pending. Program: [`hold.py`](hold.py) (the readings of that study's census).
 
+
+> **Refereed (R1, [report](referee-R1/report.md)): confirmed with fixes, two Blocks.** The two laws are not one of each
+> of the advisor's classes (NET-OWING is not a constant shortfall of one; joins are given two to four distinctions, not
+> two), and late hearing does not need a fixed number: a ceiling read from the demand gives the cap's allocations and
+> hearings on the histories read. The counts stand. See [the decision's notice](decision.md).
 ## A. The local taking rules
 
 The referee of the two-receptions study found that under the ordinary count with a local taking rule a change at a far

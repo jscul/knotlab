@@ -5889,6 +5889,7 @@ evidence: results and their status come from the records each entry links.
 - **Rests on it.** Whatever the study finds about late hearing from afar under a law in which knots hold back ([the note](../research/HOLD-BACK-20261126-001/README.md)).
 - **Challenge.** Run the advisor's other forms (one fresh distinction per parent; keep one back at every birth) and starts with takes, where the forms differ; a result that holds under every form is about holding back, one that holds under one is about that form. The model is not expected to keep either form; they are candidates for G18's comparison.
 - **History.**
+  - 2026-11-26 · Refereed (R1, [report](../research/HOLD-BACK-20261126-001/referee-R1/report.md); Block): the two formulas are as stated, but NET-OWING is not a constant shortfall of one (it funds some joins in full and leaves others short by more than one), so the pair is not one form of each of the advisor's classes; INHERIT equals the one-per-parent ration on starts with no takes. A ceiling read from the demand gives the cap's allocations on the histories where the cap hears.
   - 2026-11-26 · `HOLD-BACK-20261126-001` ([decision](../research/HOLD-BACK-20261126-001/decision.md), referee pending): under either form knots are short in nearly every pair, the two patterns come apart by round 3, and no far change is heard (0 of 6,117), while the cap of three's controls hear late; late hearing from afar does not survive the change from the cap to either form.
   - 2026-11-26 · Entered with `HOLD-BACK-20261126-001`.
 
@@ -5901,6 +5902,7 @@ evidence: results and their status come from the records each entry links.
 - **Rests on it.** Whatever the study finds about late hearing from afar under a threshold the knot reads from itself ([the note](../research/SELF-THRESHOLD-20261126-001/README.md)).
 - **Challenge.** Starts where p varies (joins of three parents, takes), where PLACES stops being a cap; other self-read thresholds. The model is not expected to keep either form; they are candidates for G18's comparison.
 - **History.**
+  - 2026-11-26 · `SELF-THRESHOLD-20261126-001` ([decision](../research/SELF-THRESHOLD-20261126-001/decision.md), referee pending): HALF hears late exactly where it gives the cap of three's births (6 far changes in the census, 124 in the 28 linked pairs; where it departs from the cap neither hears); PLACES hears nothing. The statement's last sentence was wrong: joins are given two to four distinctions, and PLACES differs from the cap at joins given three and owed four, not at offshoots (logged in `docs/CORRECTIONS.md`).
   - 2026-11-26 · Entered with `SELF-THRESHOLD-20261126-001`.
 
 ### A286 · Strata, starts built by hand with large groups, a second weighting and a longer horizon, to test the late-view predictor

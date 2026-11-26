@@ -332,6 +332,7 @@ evidence: results and their status come from the records each entry links.
 | [A274](#a274--a-cap-of-any-size-on-the-fresh-distinctions-a-birth-receives) | A cap of any size on the fresh distinctions a birth receives | scaffold | Assumed |
 | [A275](#a275--swapping-two-distinctions-that-both-hold-1-costs-1) | Swapping two distinctions that both hold 1 costs −1 | scaffold | Assumed |
 | [A276](#a276--a-reader-holds-its-old-distinction-and-its-childs-first-fresh-one-and-flips-them-with-the-odd-factor-on-the-old-one) | A reader holds its old distinction and its child's first fresh one, and flips them with the odd factor on the old one | scaffold | Assumed |
+| [A277](#a277--a-stub-and-a-mark-stand-for-the-presence-and-the-kind-of-a-pattern) | A stub and a mark stand for the presence and the kind of a pattern | scaffold | Assumed |
 
 ## Entries
 
@@ -5713,3 +5714,14 @@ evidence: results and their status come from the records each entry links.
 - **Challenge.** Use the other real pair flip F2 = iγ_x γ′_y (no order then carries the contradiction); let readers mix F1 and F2; put a reader's record on the child's second fresh distinction; give readers no access to their child.
 - **History.**
   - 2026-11-26 · Added by the reordering test. With F1, the contradiction appears exactly when the children are committed in an even order relative to their parents' creation order; with F2, in no order.
+
+### A277 · A stub and a mark stand for the presence and the kind of a pattern
+
+**Assumed** · 2026-11-26 · scaffold
+
+- **Statement.** In the bench and the census of two patterns in one start, three things are supplied by hand to read whether one pattern feels another. A pattern's own knots are those with no start knot of anything else among their ancestors. A stub, one knot of three places holding the far end of the join, stands for "no pattern there". A mark, one more loose distinction at one start knot, stands for "a different pattern there". The two ways of joining (a meeting through a spent knot with each side supplied for it; one shared distinction with nothing supplied) are the generator study's and the form study's.
+- **Why.** Adopted by the thread on 26 November 2026 for `TWO-PATTERNS-20261126-001`, at the owner's word to build the bench. They are the least changes that let two growths be compared knot for knot: the stub keeps the first pattern's holdings the same, and the mark changes one loose count and nothing else. Other readings were available and not compared: every knot with the pattern among its ancestors (the influence-cone study's), a second pattern of another kind in place of a mark, and a pattern removed altogether.
+- **Rests on it.** That no mark is first heard by a pattern's own knots after round 6, in 1,277 bench cases, 300 with the one take that takes, 864 under the owing rations and 17,809 census cases; that by a meeting under the ordinary count own births equal those with a stub; and the count of marks heard by the joint descent ([the bench](../research/TWO-PATTERNS-20261126-001/bench/README.md), [the census](../research/TWO-PATTERNS-20261126-001/census/README.md)).
+- **Challenge.** Swap the mark for another start in the other's place, and the strict reading of "own" for the influence-cone study's. The cheapest test is the census again with the second start exchanged for each other sited start of the same site holdings. If a start's own births then differ late where no mark did, the results are about the mark, not about the laws. The model is not expected to replace these: they are instruments of comparison, and nothing in a growth holds them.
+- **History.**
+  - 2026-11-26 · Entered with the bench, the toy and the census of `TWO-PATTERNS-20261126-001`. Swapped within them: two joins, one to three steps, nine laws and eleven more rations or takes, 3 patterns and 44 sited small starts. Not swapped: the mark, the stub and the strict reading of a pattern's own knots.

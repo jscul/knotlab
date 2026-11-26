@@ -6094,12 +6094,21 @@ evidence: results and their status come from the records each entry links.
   rule that all views must fit into one whole.
 - **Why.** The split was put to the owner in these words, and he endorsed it ("Yes, I like this analogy. Record it."),
   agreed with the consequence drawn from A128 ("Agreed."), and asked to continue with the proposal (26 November 2026).
-- **Rests on it.** No result. It frames the challenge of A126 (growth never forbids what the old knots allowed, so
-  every round keeps a state of the whole), in a study now running. The canonical knot test is not changed: its third
-  condition, K3, still asks for an allowed state. The guide's lesson 12.4.
-- **Challenge.** A proposal under test. The record already holds wholes of the second kind: a minimal contradiction
-  (every proper part allows a state, the whole none; the Fano pattern of seven not-all-equal knots is the smallest of
-  three-place knots), and the four parity rules of the guide's lesson 8.5. A law that may make such wholes must say
+- **Rests on it.** No result. It frames the challenge, in a study now running, of the assumption that does the work
+  beneath A126 (growth never forbids what the old knots allowed): that any two distinctions have a joint value even
+  when no knot holds both, so that under even parity the state with every value 0 is always allowed; that study
+  records it as its own entry. The canonical knot test is not changed: its third condition, K3, still asks for an
+  allowed state. The guide's lesson 12.4.
+- **Challenge.** A proposal under test, and not new to the record, which read such wholes part by part from 20 to
+  23 November (referees pending): six parity knots on nine distinctions with one odd rule, every proper part allowed
+  and the whole not, where supplied operator values let two readers win all nine trials
+  ([four readings](../research/FOUR-READINGS-20261120-001A/results.md)); ordinary growth closing a part with an even
+  rule, and no reader inside able to record a reversed one
+  ([closing signs](../research/ERASURE-AND-CLOSING-SIGNS-20261121-001B/closing_law.md)); one of 91 closed parity
+  parts met in growth admitting the operator reading
+  ([the operator test](../research/REVIEW-LEADS-20261123-001A/result.md)). The record also holds a minimal
+  contradiction (every proper part allows a state, the whole none; the Fano pattern of seven not-all-equal knots is
+  the smallest of three-place knots), and the four parity rules of the guide's lesson 8.5. A law that may make such wholes must say
   which ones it admits; if it admits every pattern whose parts are each fine, it tells nothing apart, and that
   overshoot is the first thing to look for. That a contradiction is no failure does not say which ones nature permits.
   Known mathematics, cited once: paraconsistent logics, which tolerate a contradiction without everything following
@@ -6107,4 +6116,6 @@ evidence: results and their status come from the records each entry links.
   the cohomology of impossible figures (Penrose 1992). What this adds: the question asked of the growth law, not of a
   logic.
 - **History.**
+  - 2026-11-26 · The earlier studies that ran the proposal cited, and the assumption beneath A126 named as the one
+    under challenge (the advisor's reading, through the coordinator).
   - 2026-11-26 · Entered at the owner's request.

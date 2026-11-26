@@ -6277,12 +6277,28 @@ refutation, a system that allows nothing. Read with lesson 12.1, the
 impossibility is itself a fact held by the whole and by no part: no proper part
 shows it.
 
+**The record has run this before (computed, referees pending).** Earlier
+studies read such wholes part by part. Six parity knots on nine distinctions,
+one of them odd, allow no state, while every proper part allows one; two readers
+given supplied operator values (the literature's Mermin–Peres square) win all
+nine trials, where definite answers win at most eight, and the smallest pattern
+ordinary growth reaches that admits such a reading, once one rule is changed to
+odd, has five knots
+([four readings](research/FOUR-READINGS-20261120-001A/results.md)). Ordinary
+growth closes a part with an even rule; reversed, no state is left and no reader
+inside can record the failure
+([closing signs](research/ERASURE-AND-CLOSING-SIGNS-20261121-001B/closing_law.md)).
+Of 91 closed parity parts met in growth, one admits the operator reading
+([the operator test](research/REVIEW-LEADS-20261123-001A/result.md)). So the
+proposal is not new to the record; what is new is the owner's reading of it.
+
 **What is tested and what is not.** The program asks for a state of the whole in
-two places. The knot test's third condition (K3, some state is allowed: lesson
-2.1) is not being changed. The growth law's promise never to forbid what the old
-knots allowed (register entry A126) is the one under challenge, in a study now
-running: what growth does if it may make wholes whose parts are each fine and
-that have no state.
+more than one place. The knot test's third condition (K3, some state is allowed:
+lesson 2.1) is not being changed. The growth law's promise never to forbid what
+the old knots allowed is register entry A126. Under both lies a quieter
+assumption, the one that does the work: any two distinctions have a joint value
+even when no knot holds both, and under even parity the state with every value
+0 is always allowed. That assumption is what the study now running challenges.
 
 **What could go wrong.** Loosening may let in too much. If every pattern whose
 parts are each fine is accepted, the rule no longer tells patterns apart, and

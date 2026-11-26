@@ -1,0 +1,101 @@
+# Independent referee report on signed reading orders
+**Confirmed with fixes. No Block.**
+
+Ordinary growth builds one successor without adding contributions from its reading orders. Earlier studies explicitly supplied such sums. When a renaming interchanges the next two births and preserves what has already been read, an invariant step rule gives their two orders equal sign. Cancellation of the signed count follows from a different fact about the *whole* history. An ordinary history with two exchangeable lines of descent gave two even and four odd orders.
+
+## 1. What the recorded laws add
+
+**Read in the code.** The ordinary round with waiting chooses the roster, assigns inputs, computes demand and fresh distinctions, then installs the births once. The alternative implementation stalls on a shortage and otherwise returns the old supports followed by the new ones. Neither successor carries a weight indexed by alternative reading orders. The same end could have carried a sum. The absence follows from both update rules. [Growth entry points](../fold.py#L77) · [Round with waiting](../../../experiments/WHAT-A-BIRTH-CARRIES-20261125-001B/WHAT-A-BIRTH-CARRIES-20261125-001B-E001_link_through_a_made_knot/eng.py#L475) · [Funded round](../../../experiments/FORBIDDING-JOIN-20261120-001B/FORBIDDING-JOIN-20261120-001B-E001_free_readings/rival_growth.py#L35)
+
+**Narrowing 1 · Sums already in the record.** The handoff says, “Every order of births respecting the prerequisites builds the same births (prior work), and no law, reading or weighting of the record sums or weights contributions over orders or over histories.” The second clause is false. Keep the absence claim for the ordinary birth update. The proposed sign-imbalance would apply a known signed count to that update's histories. [Exact sentence](../referee_handoff.md#L8)
+
+| Earlier calculation, read here | What it added | Where the weighting came from |
+| --- | --- | --- |
+| Confirmation of the reordering sign, prediction 7 | Averaged tables and, separately, added amplitudes across all commit orders for 3–6 readers. The latter sum retained only the all-zero old word. Its predecessor also tried weighting by permutation sign. | Equal weights and an added occupied-swap rule. The addition is explicit outside the growth call. [Results](../../REORDER-CONFIRM-20261126-001/results.md#L62) · [Sum in code](../../../artifacts/REORDER-CONFIRM-20261126-001/REORDER-CONFIRM-20261126-001-E001_schedules/check.py#L700) · [Signed control](../../REORDER-SIGN-20261126-001/results.md#L46) |
+| Fresh demand on two seven-knot starts | Counted 1,645,195,070,590,156,800 and 9,225,216 reading orders through the stated size. | Each complete order of each fixed map counted once in a checker. [Definition and counts](../../FRESH-DEMAND-20261120-001/fixed_map.md#L39) |
+| Counting from the start or finish | Pooled different histories, either counting each history and final word once or assigning a prior to the histories. An earlier finite probability law also adds the weights of opposite action orders giving one terminal observation. | Both records specify their weights. [Pooled weightings](../../TWO-COUNTINGS-20261125-001/definitions.md#L60) · [Reported result](../../TWO-COUNTINGS-20261125-001A/results.md#L87) · [Finite probability law](../../../proofs/PROBABILITY-001B/PROBABILITY-001B-P001_finite_exact_rational_measures_and_pushforward_laws/proof.md#L89) |
+
+**Narrowing 2 · Which orders agree.** The decision says, “Every order reaches the same end, so even a chosen sign cancels nothing: the missing piece is a sum over histories, not a sign.” Fix the birth map and the assignment of input and fresh distinctions. Any complete legal order installs the same conjunction. Vary an allocation among interchangeable distinctions and the equality can be up to renaming. An infinite order also needs to cover its intended births. Recomputing demand from what is currently built can change the outcome. The guarded, one-birth-at-a-time study reports bounded searches, including one that stopped at 36 of 50 births. The separate parent-identification study shows a start and its offshoot exchanged in one completed 16-knot end. Those are different claims. [Exact sentence](../decision.md#L14) · [Order-independence statement](../../FORBIDDING-JOIN-20261120-001/decision.md#L15) · [Earlier referee](../../ORDINARY-DYNAMICS-20261120-001/referee-R1/report.md#L40) · [Guarded searches](../../LOCAL-ROUND-20261123-001A/results.md) · [Parent identification](../../PARENTS-FROM-HOLDERS-20261124-001/decision.md#L10)
+
+## 2. Twins and the independent count
+
+**Narrowing 3 · Which exchange gives zero.** The handoff says, “Twins give +1, so a history's sign-imbalance is zero when it has two twin births.” [Exact sentence](../referee_handoff.md#L12)
+
+- **At an ideal** (the births already read), let a renaming preserve the ideal and interchange the next births $a,b$. It takes the two-step reading $ab$ to $ba$. An invariant scalar step sign takes equal values on the corresponding steps, so the two products agree and their ratio is +1. The common product itself can be −1.
+- **In the complete finite birth order**, call two births twins when their transposition fixes all other births and preserves the order. Equivalently, both strict predecessor sets agree and both strict successor sets agree. Exchanging their names in each complete reading gives another legal reading of opposite permutation parity, with no fixed reading. Thus the numbers of even and odd readings are equal. An odd order-preserving permutation gives the same balance by a bijection. The signed count uses a chosen listing. Relabelling it oddly reverses the signed count, preserving its magnitude and its vanishing.
+
+**Rebuilt counterexample.** In a connected six-knot start, two five-place knots share one distinction. Each meets two three-place knots holding one loose distinction apiece. Under ordinary not-all-equal growth, each pair makes one birth, and in the next round each birth makes one child. Write the parent orders as $a<x$ and $b<y$. The complete renaming exchanges $a,b$ *and* $x,y$. Its permutation on births is even. The six readings have two even and four odd relative to the recorded listing $a,b,x,y$, giving −2. At the first round alone they were one even and one odd. The program checked the renaming on the actual holdings and parent record. This example is separate from the frequency sample. [Construction and recount](check_symmetric_history.py)
+
+**Rebuilt sample.** Both ordinary implementations grew the same 28 starts under parity and not-all-equal, through five rounds or the last round yielding births. The starts were two lone knots (three or four places), all nine two-knot starts with one or two shared distinctions, at most three loose distinctions per knot and at least three places each, and 17 three-knot starts. The latter were the first four in the recorded three-knot census plus every three-knot entry with one or two loose distinctions in total, taking the union. Each completed nonempty prefix has weight one per start and knot law. Both implementations agreed on every retained field, so each matched prefix appears once below. The signed imbalance Δ is the even count minus the odd count, relative to increasing birth label. [Exact starts, parent records and counts](birth_order_counts.json)
+
+| Knot law | Prefixes | With order twins | Without twins | Among those without twins, Δ = −1 | Δ = 0 | Δ = +1 | Δ = +2 |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| Not-all-equal | 140 | 38 | 102 | 1 | 86 | 14 | 1 |
+| Parity | 101 | 28 | 73 | 1 | 62 | 9 | 1 |
+| **Total** | **241** | **66** | **175** | **2** | **148** | **23** | **2** |
+
+All **66** prefixes with order twins gave Δ = 0. In **58** of those, swapping the two births also fixes each start knot and preserves direct parentage and final holdings up to renaming distinctions. Weighting only the last observed prefix of each start and law instead gives **11 of 56** with order twins. Of the 45 others, 36 balance and nine give +1. Thus “has twin births” needs a specified end to the history as well as a weighting.
+
+From a lone three-place knot under not-all-equal growth, two rounds give six births, no twins and **24 even, 24 odd**. On a three-knot start with place sets {0,1,2}, {0,3,4}, {1,2,5}, both laws give **two even, three odd** through round two and **22 even, 20 odd** through round four, without twins in either prefix. Requiring all births in a round to precede all births in the next changes both imbalances to zero. The parent order and the one-birth guard also differ. In the lone-knot example, a join of the first two offshoots can be *read* before the third offshoot of their parent. The guard that waits for that parent to finish giving forbids that prefix. [Counting code](count_birth_orders.py) · [Guard definitions](../../LOCAL-ROUND-20261123-001/definitions.md)
+
+## 3. Other items of the argument
+
+**A1 and A2 hold for one finite labelled history.** Between two nested ideals, a reading orders exactly their difference. Move the next birth of a target reading leftward in the other reading until it agrees. Every crossed birth is incomparable to it, so each move is legal. Repeating proves that equality on every two-birth exchange is necessary and sufficient for equality of all path products. A step sign depending only on the recorded birth output is a factor for that birth, so the product also follows directly. For the undirected state graph, the majority-membership ideal is the unique median of any three ideals. The literature calls this a *median graph*. Filling all sets of mutually independent additions gives the literature's contractible CAT(0) cube complex. Filling only the four-step exchanges would not establish contractibility in all dimensions. The argument concerns labelled ideals before identifying states by renaming. [Study statement](../README.md#L17) · [Ardila, Owen and Sullivant, Theorem 2.5, with no inconsistent pairs](https://fardila.com/Articles/cat0.pdf)
+
+**Narrowing 4 · A direction is optional.** The decision says, “What the law makes at a step is the same in every order, twins give +1, and a −1 needs a chosen attribute and direction (the exchange sign is one such choice).” In the inversion construction, swapping unequal attributes changes the inversion parity. Reversing the comparison counts the complement among all unequal pairs, multiplying every complete reading by the same sign. Even a comparison of birth attributes is optional. In the six-knot example set $c(I,b)=(-1)^{|\max I|}$, counting births in the ideal with no later birth in it. At $I=\{a\}$, adding $x,b$ gives +1 and adding $b,x$ gives −1. This is a supplied, renaming-invariant function with no ordered birth attribute. The predecessor's occupied-swap rule charges even a pair with the *same* occupation, when both hold 1. If one birth is unoccupied, its charge on the exchange is +1 while permutation parity still flips. The growth update specifies its inputs and grants without assigning any of these signs. [Exact sentence](../decision.md#L9) · [Checked products](check_symmetric_history.py) · [Occupied-swap formula](../../REORDER-CONFIRM-20261126-001/results.md#L43)
+
+**Narrowing 5 · Characters on readings.** The note says, “Different readings of an end's descent (which knots are start knots, who is whose parent) are related by renamings of the end, and the renamings of an end are native.” This holds within the orbit of a specified reading. In the six-knot example the same ten-knot end was also grown in one round starting from the eight-knot intermediate stage. A renaming preserves the size of the start set. The eight-knot start gives one even and one odd reading, against two even and four odd from the six-knot start. Even the magnitude of the signed count can therefore depend on which history of the end is meant. For a finite renaming group $G$ and the subgroup $H$ that preserves the reading, $gH\mapsto\chi(g)$ is well defined exactly when $\chi(h)=+1$ for every $h\in H$. If some $h$ in $H$ has character −1, right multiplication by $h$ reverses sign within each coset. If the character descends and is nontrivial, left multiplication by any element of character −1 reverses sign on the orbit. Both sums vanish in their respective domains. The character itself is always defined on its specified group. The next sentence reads, “Which two-valued character of them weights a reading is not: the parity of a renaming on knots, on shared distinctions or on all distinctions are three choices (on all distinctions, swapping two loose distinctions of one knot is odd, so the sign is ill defined almost everywhere).” A frequency claim needs a weighting of ends. A swap of two loose distinctions of one knot is one sufficient obstruction for the all-distinction character. [Exact sentences](../README.md#L41) · [Two start sizes, same end](check_symmetric_history.py)
+
+**Narrowing 6 · Transport is an extra condition.** The decision says, “On the readings of one end, the sign is a chosen character, and carried along growth it reduces to the exchange sign or to the start's own sign.” Invariant scalar steps imply $W(gP)=W(P)$ for the product along a renamed path. Equality of characters at the two ends requires an additional law, for example $W(gP)/W(P)=\chi_E(g_E)/\chi_S(g_S)$ for a renaming that preserves both ends. Under that condition their characters must agree on transported renamings. Set every step sign to +1 and exchange two first-round offshoots of a lone knot. On knots the start sign is +1 and the end sign is −1. On the full distinctions the six-knot example also admits a swap of two fresh loose distinctions of a single child which fixes the start pointwise. It has odd end parity on distinctions and moves no birth at all. These are obstructions to the specified transport. They do not force a unique exchange rule. A renaming that moves the start requires a comparison between different starts. [Exact sentence](../decision.md#L12) · [Transport assertion](../README.md#L47) · [Checked distinction swap](check_symmetric_history.py)
+
+**Not a block 7 · Executable coverage.** The decision says, “Scaffolds: none used in the argument; the kept test names its engine (two engines) and its characters (three) as choices.” The text discusses all three characters. The retained code enumerates permutations of knots, tests their parity, and counts images of one reading. Loose distinctions are represented only by counts and repeated shared distinctions only by multiplicities. The shared-distinction and all-distinction characters, including permutations fixing every knot, have no computed verdict there. Its third question tests whole involutions exchanging separate components of the moved knots. [Exact sentence](../decision.md#L39) · [Representation and test](../fold.py#L27) · [Outputs](../fold.py#L104)
+
+## Citation checks
+
+The publication details check out for all five references. Ruskey's 1992 paper appeared in *Journal of Combinatorial Theory, Series B* **54**, 77–101. Stanley's appeared in *Advances in Applied Mathematics* **34** (2005), 880–902. Stanley explicitly separates signed parity under a listing from the listing-independent property of balance and uses parity-reversing bijections. These are precedents for the method. The transposition-of-twins proof used here is given above. [Ruskey's publication page](https://webhome.cs.uvic.ca/~ruskey/Publications/JCTextension/JCTextension.html) · [Stanley, §1](https://arxiv.org/abs/math/0211113) · [Journal details](https://math.mit.edu/~rstan/pubs/index.html)
+
+Laidlaw and Cécile Morette DeWitt, *Physical Review D* **3** (1971), 1375, treat scalar representations. Leinaas and Myrheim, *Il Nuovo Cimento B* **37** (1977), 1–23, qualify the two choices by dimension and discuss additional phases. Feynman, *Reviews of Modern Physics* **20** (1948), 367, explicitly adds complex contributions before taking a squared magnitude. These citations explain the analogies in the note. [Laidlaw and Morette DeWitt](https://journals.aps.org/prd/abstract/10.1103/PhysRevD.3.1375) · [Leinaas and Myrheim](https://link.springer.com/article/10.1007/BF02727953) · [Feynman](https://journals.aps.org/rmp/abstract/10.1103/RevModPhys.20.367)
+
+## Verification and limits
+
+I searched the study records, proofs and growth code for order independence, linear extensions, schedule and history weightings, mixtures and coherent sums. I read the handoff, decision, study, pre-closure advice and the cited predecessors. Their counts above are quoted from the records. For the new counts I used `fold.grow` for the births and independent code for the readings. Start knots are already present. The strict order is the transitive closure of the recorded parent pairs on the remaining births.
+
+For up to 20 births, the counter tries each enabled birth and keeps separate even and odd totals for the remaining orders. It interchanges those totals when appending the birth introduces an odd number of inversions. A second count groups consecutive positions into pairs and exchanges the first pair whose births are incomparable. Those contributions cancel in pairs, so only readings with comparable births in every pair contribute, with a possible last singleton. This gave a signed count for **every** history, through 45 births, and agreed with the first method on all **205** prefixes within its bound. Direct enumeration of permutations agreed on all **104** prefixes with at most eight births.
+
+**Reproduce** from the repository root. Run each pilot before its full check. All four invocations use one process and one numerical thread.
+
+```sh
+(
+  ulimit -v 2097152
+  export OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1
+  review=research/FOLD-SIGN-20261126-001/referee-R1
+  /usr/bin/time .venv/bin/python -B "$review/count_birth_orders.py" --smoke > /dev/null
+  /usr/bin/time .venv/bin/python -B "$review/count_birth_orders.py"
+  ulimit -v 1048576
+  /usr/bin/time .venv/bin/python -B "$review/check_symmetric_history.py" --rounds 1
+  /usr/bin/time .venv/bin/python -B "$review/check_symmetric_history.py" --rounds 2
+)
+```
+
+The five-start pilot took 0.65 seconds and the 28-start run 1.81 seconds, peaking at 59,560 KiB. The six-knot control's one-round pilot took 0.17 seconds and its full check 0.18 seconds, under 53,000 KiB.
+
+**Not run.** Separate even and odd totals above 20 births (36 matched prefixes), growth beyond five rounds, the full start and end-renaming census, and enumeration of guarded birth schedules. The growth iterator ended before five rounds on 11 parity starts. The other 45 start/law combinations reached the cutoff. Earlier experiments and the historical 16-knot renaming were read. All signed imbalances of the sampled prefixes were computed.
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This referee check | Successful with fixes | Both primary claims have precise surviving forms |
+| Ordinary growth as a source of signed sums | STOP | Neither update aggregates reading orders |
+| Supplied signed readings | Known alternatives | The record already contains sums and weightings |
+| G18 · Comparing growth laws | Obstruction learned | A sign and a law that adds signed contributions are separate requirements |
+
+**Next step:** Research directions — #1. The requested referee check is complete.
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+| --- | --- | --- | --- | --- | --- |
+| 1 | Resolve which twin condition cancels | 3/3 | 3/3 | Count the fixed histories and test the whole-chain exchange → distinguishing example found | Selected · completed here |
+| 2 | Compare descent characters on a larger sample | 1/3 | 2/3 | Specify the full renaming group and weighting → compare the three characters | Alternative · deferred |
+
+**Corrections:** Six narrowings and one executable-scope clarification above. No Block.  
+**Goals:** G18 retains the ordinary-growth obstruction.  
+**Assumptions:** A finite, labelled parent record and a specified reading underlie each count.  
+**Scaffolds:** The sample, cutoff, reference listing and weighting are explicit. The two growth implementations agreed. Requiring complete rounds changed the signed counts.

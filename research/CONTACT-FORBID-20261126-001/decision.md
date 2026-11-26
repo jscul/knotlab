@@ -4,6 +4,19 @@ Epic `CONTACT-FORBID-20261126-001` (G18, at the coordinator's go-ahead after the
 scaffolds of A289), closed 26 November 2026. A check by the thread: computed; referee pending. [The note](README.md) ·
 [table](contact_table.md)
 
+
+> **Refereed (R1, [report](referee-R1/report.md)): confirmed with fixes, two Blocks.** All 232 contact rows and the two
+> addressed starts reproduce, and with the study's readings every score stays within its bound (largest 13796/12989
+> under not-all-equal). **Block 1:** at the two addressed starts the signal goes one way: only the second reader's
+> births change with the far edit (in all 24 weighted cases), the first reader's values only in 3 of 24; "each reader's
+> own births change" holds for the 232 contact placements, not for those starts. **Block 2:** a reading that uses the
+> changing birth can keep fair output bits and exceed the bound: CHSH 173/86 from the stored fields and 4 from every
+> declared input, at a five-knot contact placement (index 5280); the complete records still signal, so this is the
+> signalling's excess, not one without it. **Narrowings:** the stored record omits other parents' input values, and
+> certainty at the addressed starts depends on recognising outside input names (without them both records are unchanged
+> in 13 of 24 cases); the added parity values are fixed at zero (the old marked values are fair); with three readers no
+> reader tells far settings 01 from 10; a shared birth is established by the parent lists, a native contact needs its
+> own knot test. Logged in `docs/CORRECTIONS.md`.
 ## What stands
 
 1. **Where forbidding answers both readers' settings, it signals.** In all 232 contact placements of the forbidding

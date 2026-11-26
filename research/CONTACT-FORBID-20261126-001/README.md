@@ -7,6 +7,19 @@ newborn knot holding distinctions of two readers makes forbidding answer both re
 where one reader's edit changes the inputs of the other reader's own birth. Question: does forbidding there give anything
 above the classical bound with free settings and no signalling, or is it signalling? Computed; referee pending.
 
+
+> **Refereed (R1, [report](referee-R1/report.md)): confirmed with fixes, two Blocks.** All 232 contact rows and the two
+> addressed starts reproduce, and with the study's readings every score stays within its bound (largest 13796/12989
+> under not-all-equal). **Block 1:** at the two addressed starts the signal goes one way: only the second reader's
+> births change with the far edit (in all 24 weighted cases), the first reader's values only in 3 of 24; "each reader's
+> own births change" holds for the 232 contact placements, not for those starts. **Block 2:** a reading that uses the
+> changing birth can keep fair output bits and exceed the bound: CHSH 173/86 from the stored fields and 4 from every
+> declared input, at a five-knot contact placement (index 5280); the complete records still signal, so this is the
+> signalling's excess, not one without it. **Narrowings:** the stored record omits other parents' input values, and
+> certainty at the addressed starts depends on recognising outside input names (without them both records are unchanged
+> in 13 of 24 cases); the added parity values are fixed at zero (the old marked values are fair); with three readers no
+> reader tells far settings 01 from 10; a shared birth is established by the parent lists, a native contact needs its
+> own knot test. Logged in `docs/CORRECTIONS.md`.
 ## What was read ([`contact.py`](contact.py), [`tally.py`](tally.py), `contact_runs.jsonl.gz`)
 
 The forbidding study's own growth, edits, weightings (U, S), readings and complete records (A289), unchanged. The
@@ -31,7 +44,8 @@ inputs and fresh counts) changes, which it can read off its own structure with c
   certainty at some setting of its own. The same holds at the two starts where one edit changes the other reader's
   birth inputs. The single values stay fair throughout, so a reading of one value hides the signal; the complete record
   does not.
-- **Nothing exceeds the classical bound even so.** With the study's readings, the largest score is 1.06 under
+- **Nothing exceeds the classical bound even so** *(R1, Block 2: with the study's readings only; a reading that uses the
+  changing birth exceeds it while the records signal)*. With the study's readings, the largest score is 1.06 under
   not-all-equal and exactly 2 under parity (the added values, equal by the kept preparation).
 
 **So.** The joint response at a contact is a far edit reaching the near reader's own births: a contact carries the

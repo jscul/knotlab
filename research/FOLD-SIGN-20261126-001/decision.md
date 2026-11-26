@@ -4,6 +4,16 @@ Epic `FOLD-SIGN-20261126-001` (G18, at the coordinator's pick with the owner's i
 argument reviewed with the advisor; nothing computed; referee pending. [The note](README.md) ·
 [advisor's question](advisor_question.md) and [answer](advisor_answer.md)
 
+
+> **Refereed (R1, [report](referee-R1/report.md)): confirmed with fixes, no Block.** On 28 starts and 241 history
+> prefixes (two growth programs agreeing), all 66 with twin births have sign-imbalance zero; of the 175 without twins,
+> 148 have zero, 23 have +1, 2 have −1 and 2 have +2. **Narrowings:** ordinary growth adds no orders, but earlier studies
+> did supply mixtures and signed sums over orders (the reordering line), so "nothing in the record sums over orders"
+> holds for the laws, not for the record; order independence holds for complete readings of a fixed birth map (an
+> allocation among interchangeable distinctions, or demand recomputed during growth, can change the end); the twin swap
+> cancels when the two births are exchanged alone, not with their children; a supplied sign needs no comparison
+> direction; a character gives a sign only on one orbit of readings, and one end can have imbalance 2 from one start and
+> 0 from another; equal characters at the two ends need a transport law. Logged in `docs/CORRECTIONS.md`.
 ## What stands
 
 1. **On the orders of one history, a sign is +1 around every square unless something tells the two births apart.**

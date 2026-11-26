@@ -6219,8 +6219,8 @@ with nothing nested by hand.
 | Emergence is a fact held by the whole and by no part, and it shows up at more than one place and layer | the owner's guiding principle (register entry A293) |
 | A knot's constraint is held by the whole and by no part | proved (lessons 2.1 and 2.3) |
 | A grown ring under parity keeps a class of the whole ring that no knot reads | computed, refereed (lesson 12.2); a tree does the same, so it is a fact of the whole start, not of the loop (computed, not refereed) |
-| Several rings' classes act as distinctions of a larger pattern that keeps a fact no ring holds (a tower) | first instance fails as computed: joined rings keep one class between them, one per connected piece (lesson 12.2); a frozen test is under way |
-| A pattern that grows back into itself (recursion) | not shown; the leads are a ring that returns after an exchange chosen by hand, and parts that copy themselves (lesson 8.7) |
+| Several rings' classes act as distinctions of a larger pattern that keeps a fact no ring holds (a tower) | not found: no start read keeps more than one whole-held fact, under two readings of a small change, at rounds 1 to 3 ([layers](research/LAYERS-20261126-001/decision.md) and [recursion's lead](research/RECURSION-LEAD-20261126-001/decision.md), computed, referee pending) |
+| A pattern that grows back into itself (recursion) | not shown: growing a start and then exchanging it gives the start back only when we pin its loose values, which no recorded law does, and the exchange is ours ([recursion's lead](research/RECURSION-LEAD-20261126-001/decision.md)); parts that copy themselves (lesson 8.7) copy under laws added by hand |
 
 ## Glossary
 

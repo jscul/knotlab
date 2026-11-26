@@ -252,6 +252,12 @@ completed a single instance of complex behavior using any sort of braiding of th
 of complexity from 1-10? And can you come up with some sort of roadmap to get us to a higher rating? I want to
 start simulating stuff."). Headings are set one level down here.
 
+> **Correction, the same day.** "Nothing at 5" below overlooked a result of the day before: in the time-as-a-fold
+> study a made clock and a second part change each other's course at each of three returns, in 78 tests, all under
+> rules that choose by the names of the start's distinctions, and none surviving every renumbering
+> ([decision](../../TIME-AS-FOLD-20261125-001/decision.md), item 3). So a thin, name-dependent case of level 5 is on
+> record. The rest of the report stands.
+
 ### Your question: where we are, and a roadmap
 
 **Yes for patterns that last, no for patterns that work on each other.** We can build a start by hand that makes a lasting pattern. We have no start in which two patterns keep acting on each other, and today's result says why the laws used so far cannot give one.

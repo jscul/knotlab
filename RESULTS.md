@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**408 current results** and 5 superseded ones, from 646 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**408 current results** and 5 superseded ones, from 647 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -31,7 +31,7 @@ How to read an entry:
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 26 results
 - [Notes](#notes): 6 self-contained notes
-- [Epics](#epics): all 646 epics with their closures
+- [Epics](#epics): all 647 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -2013,4 +2013,5 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-25 | The rosters that widen (`WIDENING-ROSTERS-20261125-001`) | [closure](proofs/WIDENING-ROSTERS-20261125-001Z/WIDENING-ROSTERS-20261125-001Z-P001_synthesis/proof.md) | [folder](research/WIDENING-ROSTERS-20261125-001/) |
 | 2026-11-26 | Does what a family makes depend on which family it meets (`FAMILIES-THAT-MEET-20261126-001`) | — | [folder](research/FAMILIES-THAT-MEET-20261126-001/) |
 | 2026-11-26 | Is the sign the cost of reordering? (`REORDER-SIGN-20261126-001`) | — | [folder](research/REORDER-SIGN-20261126-001/) |
+| 2026-11-26 | Two lasting patterns in one start: does one keep changing the other (`TWO-PATTERNS-20261126-001`) | — | [folder](research/TWO-PATTERNS-20261126-001/) |
 

@@ -1,0 +1,2280 @@
+{
+  "scope": "Both main cases with a made linking knot, another parity start, and the not-all-equal case. Both conditional cases needing the meeting are included",
+  "source_records": "artifacts/MADE-COPIER-20261125-001C/MADE-COPIER-20261125-001C-E001_copier_by_sampling",
+  "starts": "research/MADE-COPIER-20261125-001C/starts_c.json",
+  "prefix_per_arm": 16,
+  "cases": [
+    {
+      "source": "R3.json",
+      "run": "R1b",
+      "start": "n5-g40-32112",
+      "law": "RATION-2/CANCEL-RETIRE/RELEASE/STEPS-1/parity/T1",
+      "seed": "C|n5-g40-32112|RATION-2|CANCEL-RETIRE|parity|0|STEPS-1",
+      "pair_round": 1,
+      "X": [
+        5,
+        6,
+        7,
+        10
+      ],
+      "Y": [
+        8,
+        9
+      ],
+      "Y_loose_counts": [
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "base_growth": {
+        "meeting": 2,
+        "first_form": 3,
+        "form_after_meeting": 3,
+        "terminal_round": 8,
+        "reason": null
+      },
+      "first_stage": {
+        "arms": {
+          "BN": {
+            "seed_kind": "BN",
+            "range": [
+              0,
+              16
+            ],
+            "trials": 16,
+            "events": 9,
+            "any_form": 9,
+            "meetings": 15,
+            "stopped": 0,
+            "not_stopped": [
+              9,
+              16
+            ],
+            "event_indices": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              8,
+              9,
+              12,
+              14
+            ],
+            "any_form_indices": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              8,
+              9,
+              12,
+              14
+            ],
+            "meeting_indices": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15
+            ],
+            "limited": {},
+            "last_state_reasons": {
+              "round 8": 16
+            },
+            "wall_seconds": 0.108273
+          },
+          "BY": {
+            "seed_kind": "BY",
+            "range": [
+              0,
+              16
+            ],
+            "trials": 16,
+            "events": 4,
+            "any_form": 4,
+            "meetings": 0,
+            "stopped": 0,
+            "not_stopped": [
+              4,
+              16
+            ],
+            "event_indices": [
+              5,
+              7,
+              10,
+              11
+            ],
+            "any_form_indices": [
+              5,
+              7,
+              10,
+              11
+            ],
+            "meeting_indices": [],
+            "limited": {},
+            "last_state_reasons": {
+              "round 8": 16
+            },
+            "wall_seconds": 0.112567
+          },
+          "BX": {
+            "seed_kind": "BX",
+            "range": [
+              0,
+              16
+            ],
+            "trials": 16,
+            "events": 1,
+            "any_form": 1,
+            "meetings": 0,
+            "stopped": 0,
+            "not_stopped": [
+              1,
+              16
+            ],
+            "event_indices": [
+              4
+            ],
+            "any_form_indices": [
+              4
+            ],
+            "meeting_indices": [],
+            "limited": {},
+            "last_state_reasons": {
+              "round 8": 16
+            },
+            "wall_seconds": 0.047684
+          }
+        },
+        "registered_trials_per_arm": 100,
+        "projected_seconds": {
+          "BN": 0.677,
+          "BY": 0.704,
+          "BX": 0.298
+        },
+        "statistics": null,
+        "differences_from_record": null
+      },
+      "confirmation": {
+        "arms": {
+          "BN": {
+            "seed_kind": "BN",
+            "range": [
+              100,
+              116
+            ],
+            "trials": 16,
+            "events": 5,
+            "any_form": 5,
+            "meetings": 16,
+            "stopped": 0,
+            "not_stopped": [
+              5,
+              16
+            ],
+            "event_indices": [
+              102,
+              103,
+              109,
+              111,
+              112
+            ],
+            "any_form_indices": [
+              102,
+              103,
+              109,
+              111,
+              112
+            ],
+            "meeting_indices": [
+              100,
+              101,
+              102,
+              103,
+              104,
+              105,
+              106,
+              107,
+              108,
+              109,
+              110,
+              111,
+              112,
+              113,
+              114,
+              115
+            ],
+            "limited": {},
+            "last_state_reasons": {
+              "round 8": 16
+            },
+            "wall_seconds": 0.090855
+          },
+          "BY": {
+            "seed_kind": "BY",
+            "range": [
+              100,
+              116
+            ],
+            "trials": 16,
+            "events": 5,
+            "any_form": 5,
+            "meetings": 0,
+            "stopped": 0,
+            "not_stopped": [
+              5,
+              16
+            ],
+            "event_indices": [
+              100,
+              102,
+              103,
+              110,
+              111
+            ],
+            "any_form_indices": [
+              100,
+              102,
+              103,
+              110,
+              111
+            ],
+            "meeting_indices": [],
+            "limited": {},
+            "last_state_reasons": {
+              "round 8": 16
+            },
+            "wall_seconds": 0.077349
+          },
+          "BX": {
+            "seed_kind": "BX",
+            "range": [
+              100,
+              116
+            ],
+            "trials": 16,
+            "events": 5,
+            "any_form": 5,
+            "meetings": 0,
+            "stopped": 0,
+            "not_stopped": [
+              5,
+              16
+            ],
+            "event_indices": [
+              103,
+              106,
+              109,
+              112,
+              113
+            ],
+            "any_form_indices": [
+              103,
+              106,
+              109,
+              112,
+              113
+            ],
+            "meeting_indices": [],
+            "limited": {},
+            "last_state_reasons": {
+              "round 8": 16
+            },
+            "wall_seconds": 0.057419
+          },
+          "BM": {
+            "seed_kind": "BM",
+            "range": [
+              100,
+              116
+            ],
+            "trials": 16,
+            "events": 1,
+            "any_form": 1,
+            "meetings": 16,
+            "stopped": 0,
+            "not_stopped": [
+              1,
+              16
+            ],
+            "event_indices": [
+              112
+            ],
+            "any_form_indices": [
+              112
+            ],
+            "meeting_indices": [
+              100,
+              101,
+              102,
+              103,
+              104,
+              105,
+              106,
+              107,
+              108,
+              109,
+              110,
+              111,
+              112,
+              113,
+              114,
+              115
+            ],
+            "limited": {},
+            "last_state_reasons": {
+              "round 8": 16
+            },
+            "wall_seconds": 0.105958
+          },
+          "BT": {
+            "seed_kind": "BT",
+            "range": [
+              100,
+              116
+            ],
+            "trials": 16,
+            "events": 5,
+            "any_form": 5,
+            "meetings": 15,
+            "stopped": 0,
+            "not_stopped": [
+              5,
+              16
+            ],
+            "event_indices": [
+              101,
+              104,
+              106,
+              109,
+              110
+            ],
+            "any_form_indices": [
+              101,
+              104,
+              106,
+              109,
+              110
+            ],
+            "meeting_indices": [
+              100,
+              101,
+              102,
+              103,
+              105,
+              106,
+              107,
+              108,
+              109,
+              110,
+              111,
+              112,
+              113,
+              114,
+              115
+            ],
+            "limited": {},
+            "last_state_reasons": {
+              "round 8": 16
+            },
+            "wall_seconds": 0.111329
+          }
+        },
+        "registered_trials_per_arm": 1000,
+        "projected_seconds": {
+          "BN": 5.678,
+          "BY": 4.834,
+          "BX": 3.589,
+          "BM": 6.622,
+          "BT": 6.958
+        },
+        "statistics": null,
+        "differences_from_record": null
+      }
+    },
+    {
+      "source": "R3.json",
+      "run": "R1b",
+      "start": "n5-g31-31322",
+      "law": "RATION-2/CANCEL-RETIRE/RELEASE/STEPS-1/parity/T1",
+      "seed": "C|n5-g31-31322|RATION-2|CANCEL-RETIRE|parity|0|STEPS-1",
+      "pair_round": 1,
+      "X": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "Y": [
+        10,
+        11
+      ],
+      "Y_loose_counts": [
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "base_growth": {
+        "meeting": 2,
+        "first_form": 3,
+        "form_after_meeting": 3,
+        "terminal_round": 8,
+        "reason": null
+      },
+      "first_stage": {
+        "arms": {
+          "BN": {
+            "seed_kind": "BN",
+            "range": [
+              0,
+              16
+            ],
+            "trials": 16,
+            "events": 3,
+            "any_form": 4,
+            "meetings": 12,
+            "stopped": 0,
+            "not_stopped": [
+              3,
+              16
+            ],
+            "event_indices": [
+              2,
+              10,
+              12
+            ],
+            "any_form_indices": [
+              2,
+              5,
+              10,
+              12
+            ],
+            "meeting_indices": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              8,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15
+            ],
+            "limited": {},
+            "last_state_reasons": {
+              "round 8": 16
+            },
+            "wall_seconds": 0.148962
+          },
+          "BY": {
+            "seed_kind": "BY",
+            "range": [
+              0,
+              16
+            ],
+            "trials": 16,
+            "events": 4,
+            "any_form": 4,
+            "meetings": 0,
+            "stopped": 0,
+            "not_stopped": [
+              4,
+              16
+            ],
+            "event_indices": [
+              5,
+              7,
+              10,
+              14
+            ],
+            "any_form_indices": [
+              5,
+              7,
+              10,
+              14
+            ],
+            "meeting_indices": [],
+            "limited": {},
+            "last_state_reasons": {
+              "round 8": 16
+            },
+            "wall_seconds": 0.121493
+          },
+          "BX": {
+            "seed_kind": "BX",
+            "range": [
+              0,
+              16
+            ],
+            "trials": 16,
+            "events": 2,
+            "any_form": 2,
+            "meetings": 0,
+            "stopped": 0,
+            "not_stopped": [
+              2,
+              16
+            ],
+            "event_indices": [
+              1,
+              4
+            ],
+            "any_form_indices": [
+              1,
+              4
+            ],
+            "meeting_indices": [],
+            "limited": {},
+            "last_state_reasons": {
+              "round 8": 16
+            },
+            "wall_seconds": 0.17451
+          }
+        },
+        "registered_trials_per_arm": 100,
+        "projected_seconds": {
+          "BN": 0.931,
+          "BY": 0.759,
+          "BX": 1.091
+        },
+        "statistics": null,
+        "differences_from_record": null
+      },
+      "confirmation": {
+        "arms": {
+          "BN": {
+            "seed_kind": "BN",
+            "range": [
+              100,
+              116
+            ],
+            "trials": 16,
+            "events": 7,
+            "any_form": 8,
+            "meetings": 14,
+            "stopped": 0,
+            "not_stopped": [
+              7,
+              16
+            ],
+            "event_indices": [
+              101,
+              104,
+              106,
+              108,
+              113,
+              114,
+              115
+            ],
+            "any_form_indices": [
+              101,
+              104,
+              106,
+              108,
+              110,
+              113,
+              114,
+              115
+            ],
+            "meeting_indices": [
+              100,
+              101,
+              103,
+              104,
+              105,
+              106,
+              107,
+              108,
+              109,
+              111,
+              112,
+              113,
+              114,
+              115
+            ],
+            "limited": {},
+            "last_state_reasons": {
+              "round 8": 16
+            },
+            "wall_seconds": 0.138672
+          },
+          "BY": {
+            "seed_kind": "BY",
+            "range": [
+              100,
+              116
+            ],
+            "trials": 16,
+            "events": 2,
+            "any_form": 2,
+            "meetings": 0,
+            "stopped": 0,
+            "not_stopped": [
+              2,
+              16
+            ],
+            "event_indices": [
+              104,
+              110
+            ],
+            "any_form_indices": [
+              104,
+              110
+            ],
+            "meeting_indices": [],
+            "limited": {},
+            "last_state_reasons": {
+              "round 8": 16
+            },
+            "wall_seconds": 0.119198
+          },
+          "BX": {
+            "seed_kind": "BX",
+            "range": [
+              100,
+              116
+            ],
+            "trials": 16,
+            "events": 1,
+            "any_form": 1,
+            "meetings": 0,
+            "stopped": 0,
+            "not_stopped": [
+              1,
+              16
+            ],
+            "event_indices": [
+              106
+            ],
+            "any_form_indices": [
+              106
+            ],
+            "meeting_indices": [],
+            "limited": {},
+            "last_state_reasons": {
+              "round 8": 16
+            },
+            "wall_seconds": 0.086356
+          },
+          "BM": {
+            "seed_kind": "BM",
+            "range": [
+              100,
+              116
+            ],
+            "trials": 16,
+            "events": 6,
+            "any_form": 6,
+            "meetings": 12,
+            "stopped": 0,
+            "not_stopped": [
+              6,
+              16
+            ],
+            "event_indices": [
+              100,
+              101,
+              104,
+              109,
+              110,
+              113
+            ],
+            "any_form_indices": [
+              100,
+              101,
+              104,
+              109,
+              110,
+              113
+            ],
+            "meeting_indices": [
+              101,
+              103,
+              104,
+              105,
+              106,
+              107,
+              109,
+              110,
+              111,
+              113,
+              114,
+              115
+            ],
+            "limited": {},
+            "last_state_reasons": {
+              "round 8": 16
+            },
+            "wall_seconds": 0.163345
+          },
+          "BT": {
+            "seed_kind": "BT",
+            "range": [
+              100,
+              116
+            ],
+            "trials": 16,
+            "events": 3,
+            "any_form": 3,
+            "meetings": 13,
+            "stopped": 0,
+            "not_stopped": [
+              3,
+              16
+            ],
+            "event_indices": [
+              105,
+              106,
+              110
+            ],
+            "any_form_indices": [
+              105,
+              106,
+              110
+            ],
+            "meeting_indices": [
+              101,
+              103,
+              104,
+              105,
+              106,
+              107,
+              108,
+              109,
+              111,
+              112,
+              113,
+              114,
+              115
+            ],
+            "limited": {},
+            "last_state_reasons": {
+              "round 8": 16
+            },
+            "wall_seconds": 0.165677
+          }
+        },
+        "registered_trials_per_arm": 1000,
+        "projected_seconds": {
+          "BN": 8.667,
+          "BY": 7.45,
+          "BX": 5.397,
+          "BM": 10.209,
+          "BT": 10.355
+        },
+        "statistics": null,
+        "differences_from_record": null
+      }
+    },
+    {
+      "source": "R3.json",
+      "run": "R1b",
+      "start": "n5-g44-02333",
+      "law": "RATION-2/CANCEL-RETIRE/RELEASE/STEPS-1/parity/T1",
+      "seed": "C|n5-g44-02333|RATION-2|CANCEL-RETIRE|parity|0|STEPS-1",
+      "pair_round": 1,
+      "X": [
+        5,
+        6,
+        7,
+        10,
+        11,
+        12
+      ],
+      "Y": [
+        8,
+        9
+      ],
+      "Y_loose_counts": [
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "base_growth": {
+        "meeting": 2,
+        "first_form": 2,
+        "form_after_meeting": 2,
+        "terminal_round": 8,
+        "reason": null
+      },
+      "first_stage": {
+        "arms": {
+          "BN": {
+            "seed_kind": "BN",
+            "range": [
+              0,
+              16
+            ],
+            "trials": 16,
+            "events": 9,
+            "any_form": 9,
+            "meetings": 16,
+            "stopped": 0,
+            "not_stopped": [
+              9,
+              16
+            ],
+            "event_indices": [
+              3,
+              5,
+              6,
+              8,
+              11,
+              12,
+              13,
+              14,
+              15
+            ],
+            "any_form_indices": [
+              3,
+              5,
+              6,
+              8,
+              11,
+              12,
+              13,
+              14,
+              15
+            ],
+            "meeting_indices": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15
+            ],
+            "limited": {},
+            "last_state_reasons": {
+              "round 8": 16
+            },
+            "wall_seconds": 0.10981
+          },
+          "BY": {
+            "seed_kind": "BY",
+            "range": [
+              0,
+              16
+            ],
+            "trials": 16,
+            "events": 4,
+            "any_form": 4,
+            "meetings": 0,
+            "stopped": 0,
+            "not_stopped": [
+              4,
+              16
+            ],
+            "event_indices": [
+              9,
+              10,
+              14,
+              15
+            ],
+            "any_form_indices": [
+              9,
+              10,
+              14,
+              15
+            ],
+            "meeting_indices": [],
+            "limited": {},
+            "last_state_reasons": {
+              "round 8": 16
+            },
+            "wall_seconds": 0.104355
+          },
+          "BX": {
+            "seed_kind": "BX",
+            "range": [
+              0,
+              16
+            ],
+            "trials": 16,
+            "events": 2,
+            "any_form": 2,
+            "meetings": 0,
+            "stopped": 0,
+            "not_stopped": [
+              2,
+              16
+            ],
+            "event_indices": [
+              3,
+              10
+            ],
+            "any_form_indices": [
+              3,
+              10
+            ],
+            "meeting_indices": [],
+            "limited": {},
+            "last_state_reasons": {
+              "round 8": 16
+            },
+            "wall_seconds": 0.051673
+          }
+        },
+        "registered_trials_per_arm": 100,
+        "projected_seconds": {
+          "BN": 0.686,
+          "BY": 0.652,
+          "BX": 0.323
+        },
+        "statistics": null,
+        "differences_from_record": null
+      },
+      "confirmation": {
+        "arms": {
+          "BN": {
+            "seed_kind": "BN",
+            "range": [
+              100,
+              116
+            ],
+            "trials": 16,
+            "events": 6,
+            "any_form": 6,
+            "meetings": 16,
+            "stopped": 0,
+            "not_stopped": [
+              6,
+              16
+            ],
+            "event_indices": [
+              101,
+              104,
+              105,
+              111,
+              113,
+              114
+            ],
+            "any_form_indices": [
+              101,
+              104,
+              105,
+              111,
+              113,
+              114
+            ],
+            "meeting_indices": [
+              100,
+              101,
+              102,
+              103,
+              104,
+              105,
+              106,
+              107,
+              108,
+              109,
+              110,
+              111,
+              112,
+              113,
+              114,
+              115
+            ],
+            "limited": {},
+            "last_state_reasons": {
+              "round 8": 16
+            },
+            "wall_seconds": 0.124311
+          },
+          "BY": {
+            "seed_kind": "BY",
+            "range": [
+              100,
+              116
+            ],
+            "trials": 16,
+            "events": 3,
+            "any_form": 3,
+            "meetings": 0,
+            "stopped": 0,
+            "not_stopped": [
+              3,
+              16
+            ],
+            "event_indices": [
+              105,
+              111,
+              113
+            ],
+            "any_form_indices": [
+              105,
+              111,
+              113
+            ],
+            "meeting_indices": [],
+            "limited": {},
+            "last_state_reasons": {
+              "round 8": 16
+            },
+            "wall_seconds": 0.097211
+          },
+          "BX": {
+            "seed_kind": "BX",
+            "range": [
+              100,
+              116
+            ],
+            "trials": 16,
+            "events": 2,
+            "any_form": 2,
+            "meetings": 0,
+            "stopped": 0,
+            "not_stopped": [
+              2,
+              16
+            ],
+            "event_indices": [
+              101,
+              107
+            ],
+            "any_form_indices": [
+              101,
+              107
+            ],
+            "meeting_indices": [],
+            "limited": {},
+            "last_state_reasons": {
+              "round 8": 16
+            },
+            "wall_seconds": 0.058421
+          },
+          "BM": {
+            "seed_kind": "BM",
+            "range": [
+              100,
+              116
+            ],
+            "trials": 16,
+            "events": 4,
+            "any_form": 4,
+            "meetings": 16,
+            "stopped": 0,
+            "not_stopped": [
+              4,
+              16
+            ],
+            "event_indices": [
+              105,
+              106,
+              108,
+              110
+            ],
+            "any_form_indices": [
+              105,
+              106,
+              108,
+              110
+            ],
+            "meeting_indices": [
+              100,
+              101,
+              102,
+              103,
+              104,
+              105,
+              106,
+              107,
+              108,
+              109,
+              110,
+              111,
+              112,
+              113,
+              114,
+              115
+            ],
+            "limited": {},
+            "last_state_reasons": {
+              "round 8": 16
+            },
+            "wall_seconds": 0.157453
+          },
+          "BT": {
+            "seed_kind": "BT",
+            "range": [
+              100,
+              116
+            ],
+            "trials": 16,
+            "events": 2,
+            "any_form": 2,
+            "meetings": 16,
+            "stopped": 0,
+            "not_stopped": [
+              2,
+              16
+            ],
+            "event_indices": [
+              105,
+              113
+            ],
+            "any_form_indices": [
+              105,
+              113
+            ],
+            "meeting_indices": [
+              100,
+              101,
+              102,
+              103,
+              104,
+              105,
+              106,
+              107,
+              108,
+              109,
+              110,
+              111,
+              112,
+              113,
+              114,
+              115
+            ],
+            "limited": {},
+            "last_state_reasons": {
+              "round 8": 16
+            },
+            "wall_seconds": 0.224327
+          }
+        },
+        "registered_trials_per_arm": 1000,
+        "projected_seconds": {
+          "BN": 7.769,
+          "BY": 6.076,
+          "BX": 3.651,
+          "BM": 9.841,
+          "BT": 14.02
+        },
+        "statistics": null,
+        "differences_from_record": null
+      }
+    },
+    {
+      "source": "R3.json",
+      "run": "R1d",
+      "start": "n5-g31-13122",
+      "law": "CAP-2/CANCEL-RETIRE/RELEASE/STEPS-1/nae/T1",
+      "seed": "C|n5-g31-13122|CAP-2|CANCEL-RETIRE|nae|0|STEPS-1",
+      "pair_round": 1,
+      "X": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "Y": [
+        5
+      ],
+      "Y_loose_counts": [
+        [
+          1,
+          0
+        ]
+      ],
+      "base_growth": {
+        "meeting": 2,
+        "first_form": 5,
+        "form_after_meeting": 5,
+        "terminal_round": 8,
+        "reason": null
+      },
+      "first_stage": {
+        "arms": {
+          "BN": {
+            "seed_kind": "BN",
+            "range": [
+              0,
+              16
+            ],
+            "trials": 16,
+            "events": 12,
+            "any_form": 12,
+            "meetings": 16,
+            "stopped": 0,
+            "not_stopped": [
+              12,
+              16
+            ],
+            "event_indices": [
+              0,
+              2,
+              4,
+              5,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              14,
+              15
+            ],
+            "any_form_indices": [
+              0,
+              2,
+              4,
+              5,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              14,
+              15
+            ],
+            "meeting_indices": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15
+            ],
+            "limited": {},
+            "last_state_reasons": {
+              "round 8": 16
+            },
+            "wall_seconds": 0.057559
+          },
+          "BY": {
+            "seed_kind": "BY",
+            "range": [
+              0,
+              16
+            ],
+            "trials": 16,
+            "events": 9,
+            "any_form": 9,
+            "meetings": 0,
+            "stopped": 0,
+            "not_stopped": [
+              9,
+              16
+            ],
+            "event_indices": [
+              0,
+              1,
+              4,
+              6,
+              7,
+              8,
+              11,
+              14,
+              15
+            ],
+            "any_form_indices": [
+              0,
+              1,
+              4,
+              6,
+              7,
+              8,
+              11,
+              14,
+              15
+            ],
+            "meeting_indices": [],
+            "limited": {},
+            "last_state_reasons": {
+              "round 8": 16
+            },
+            "wall_seconds": 0.066278
+          },
+          "BX": {
+            "seed_kind": "BX",
+            "range": [
+              0,
+              16
+            ],
+            "trials": 16,
+            "events": 0,
+            "any_form": 0,
+            "meetings": 0,
+            "stopped": 0,
+            "not_stopped": [
+              0,
+              16
+            ],
+            "event_indices": [],
+            "any_form_indices": [],
+            "meeting_indices": [],
+            "limited": {},
+            "last_state_reasons": {
+              "round 8": 16
+            },
+            "wall_seconds": 0.028761
+          }
+        },
+        "registered_trials_per_arm": 100,
+        "projected_seconds": {
+          "BN": 0.36,
+          "BY": 0.414,
+          "BX": 0.18
+        },
+        "statistics": null,
+        "differences_from_record": null
+      },
+      "confirmation": {
+        "arms": {
+          "BN": {
+            "seed_kind": "BN",
+            "range": [
+              100,
+              116
+            ],
+            "trials": 16,
+            "events": 12,
+            "any_form": 12,
+            "meetings": 16,
+            "stopped": 0,
+            "not_stopped": [
+              12,
+              16
+            ],
+            "event_indices": [
+              100,
+              102,
+              103,
+              104,
+              105,
+              106,
+              107,
+              108,
+              110,
+              111,
+              112,
+              113
+            ],
+            "any_form_indices": [
+              100,
+              102,
+              103,
+              104,
+              105,
+              106,
+              107,
+              108,
+              110,
+              111,
+              112,
+              113
+            ],
+            "meeting_indices": [
+              100,
+              101,
+              102,
+              103,
+              104,
+              105,
+              106,
+              107,
+              108,
+              109,
+              110,
+              111,
+              112,
+              113,
+              114,
+              115
+            ],
+            "limited": {},
+            "last_state_reasons": {
+              "round 8": 16
+            },
+            "wall_seconds": 0.054931
+          },
+          "BY": {
+            "seed_kind": "BY",
+            "range": [
+              100,
+              116
+            ],
+            "trials": 16,
+            "events": 11,
+            "any_form": 11,
+            "meetings": 0,
+            "stopped": 0,
+            "not_stopped": [
+              11,
+              16
+            ],
+            "event_indices": [
+              100,
+              101,
+              102,
+              103,
+              104,
+              105,
+              109,
+              110,
+              111,
+              114,
+              115
+            ],
+            "any_form_indices": [
+              100,
+              101,
+              102,
+              103,
+              104,
+              105,
+              109,
+              110,
+              111,
+              114,
+              115
+            ],
+            "meeting_indices": [],
+            "limited": {},
+            "last_state_reasons": {
+              "round 8": 16
+            },
+            "wall_seconds": 0.06197
+          },
+          "BX": {
+            "seed_kind": "BX",
+            "range": [
+              100,
+              116
+            ],
+            "trials": 16,
+            "events": 0,
+            "any_form": 0,
+            "meetings": 0,
+            "stopped": 0,
+            "not_stopped": [
+              0,
+              16
+            ],
+            "event_indices": [],
+            "any_form_indices": [],
+            "meeting_indices": [],
+            "limited": {},
+            "last_state_reasons": {
+              "round 8": 16
+            },
+            "wall_seconds": 0.028404
+          },
+          "BM": {
+            "seed_kind": "BM",
+            "range": [
+              100,
+              116
+            ],
+            "trials": 16,
+            "events": 11,
+            "any_form": 11,
+            "meetings": 16,
+            "stopped": 0,
+            "not_stopped": [
+              11,
+              16
+            ],
+            "event_indices": [
+              100,
+              101,
+              102,
+              104,
+              106,
+              109,
+              111,
+              112,
+              113,
+              114,
+              115
+            ],
+            "any_form_indices": [
+              100,
+              101,
+              102,
+              104,
+              106,
+              109,
+              111,
+              112,
+              113,
+              114,
+              115
+            ],
+            "meeting_indices": [
+              100,
+              101,
+              102,
+              103,
+              104,
+              105,
+              106,
+              107,
+              108,
+              109,
+              110,
+              111,
+              112,
+              113,
+              114,
+              115
+            ],
+            "limited": {},
+            "last_state_reasons": {
+              "round 8": 16
+            },
+            "wall_seconds": 0.064195
+          },
+          "BT": {
+            "seed_kind": "BT",
+            "range": [
+              100,
+              116
+            ],
+            "trials": 16,
+            "events": 12,
+            "any_form": 12,
+            "meetings": 16,
+            "stopped": 0,
+            "not_stopped": [
+              12,
+              16
+            ],
+            "event_indices": [
+              100,
+              101,
+              102,
+              104,
+              105,
+              106,
+              107,
+              108,
+              112,
+              113,
+              114,
+              115
+            ],
+            "any_form_indices": [
+              100,
+              101,
+              102,
+              104,
+              105,
+              106,
+              107,
+              108,
+              112,
+              113,
+              114,
+              115
+            ],
+            "meeting_indices": [
+              100,
+              101,
+              102,
+              103,
+              104,
+              105,
+              106,
+              107,
+              108,
+              109,
+              110,
+              111,
+              112,
+              113,
+              114,
+              115
+            ],
+            "limited": {},
+            "last_state_reasons": {
+              "round 8": 16
+            },
+            "wall_seconds": 0.067448
+          }
+        },
+        "registered_trials_per_arm": 1000,
+        "projected_seconds": {
+          "BN": 3.433,
+          "BY": 3.873,
+          "BX": 1.775,
+          "BM": 4.012,
+          "BT": 4.215
+        },
+        "statistics": null,
+        "differences_from_record": null
+      }
+    },
+    {
+      "source": "Rcond.json",
+      "run": "R5",
+      "start": "n3-g6-223",
+      "law": "FBP/CANCEL-RETIRE/HOLD/STEPS-1/parity/T1",
+      "seed": "C|n3-g6-223|FBP|CANCEL-RETIRE|parity|0|STEPS-1|HOLD",
+      "pair_round": 1,
+      "X": [
+        3,
+        6,
+        7,
+        8
+      ],
+      "Y": [
+        4,
+        5
+      ],
+      "Y_loose_counts": [
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "base_growth": {
+        "meeting": 2,
+        "first_form": 4,
+        "form_after_meeting": 4,
+        "terminal_round": 8,
+        "reason": null
+      },
+      "first_stage": {
+        "arms": {
+          "BN": {
+            "seed_kind": "BN",
+            "range": [
+              0,
+              16
+            ],
+            "trials": 16,
+            "events": 3,
+            "any_form": 3,
+            "meetings": 16,
+            "stopped": 0,
+            "not_stopped": [
+              3,
+              16
+            ],
+            "event_indices": [
+              1,
+              5,
+              6
+            ],
+            "any_form_indices": [
+              1,
+              5,
+              6
+            ],
+            "meeting_indices": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15
+            ],
+            "limited": {},
+            "last_state_reasons": {
+              "round 8": 16
+            },
+            "wall_seconds": 0.106038
+          },
+          "BY": {
+            "seed_kind": "BY",
+            "range": [
+              0,
+              16
+            ],
+            "trials": 16,
+            "events": 0,
+            "any_form": 0,
+            "meetings": 0,
+            "stopped": 0,
+            "not_stopped": [
+              0,
+              16
+            ],
+            "event_indices": [],
+            "any_form_indices": [],
+            "meeting_indices": [],
+            "limited": {},
+            "last_state_reasons": {
+              "round 8": 16
+            },
+            "wall_seconds": 0.108261
+          },
+          "BX": {
+            "seed_kind": "BX",
+            "range": [
+              0,
+              16
+            ],
+            "trials": 16,
+            "events": 0,
+            "any_form": 0,
+            "meetings": 0,
+            "stopped": 0,
+            "not_stopped": [
+              0,
+              16
+            ],
+            "event_indices": [],
+            "any_form_indices": [],
+            "meeting_indices": [],
+            "limited": {},
+            "last_state_reasons": {
+              "round 8": 16
+            },
+            "wall_seconds": 0.046734
+          }
+        },
+        "registered_trials_per_arm": 100,
+        "projected_seconds": {
+          "BN": 0.663,
+          "BY": 0.677,
+          "BX": 0.292
+        },
+        "statistics": null,
+        "differences_from_record": null
+      },
+      "confirmation": {
+        "arms": {
+          "BN": {
+            "seed_kind": "BN",
+            "range": [
+              100,
+              116
+            ],
+            "trials": 16,
+            "events": 2,
+            "any_form": 2,
+            "meetings": 16,
+            "stopped": 0,
+            "not_stopped": [
+              2,
+              16
+            ],
+            "event_indices": [
+              110,
+              111
+            ],
+            "any_form_indices": [
+              110,
+              111
+            ],
+            "meeting_indices": [
+              100,
+              101,
+              102,
+              103,
+              104,
+              105,
+              106,
+              107,
+              108,
+              109,
+              110,
+              111,
+              112,
+              113,
+              114,
+              115
+            ],
+            "limited": {},
+            "last_state_reasons": {
+              "round 8": 16
+            },
+            "wall_seconds": 0.068881
+          },
+          "BY": {
+            "seed_kind": "BY",
+            "range": [
+              100,
+              116
+            ],
+            "trials": 16,
+            "events": 0,
+            "any_form": 0,
+            "meetings": 0,
+            "stopped": 0,
+            "not_stopped": [
+              0,
+              16
+            ],
+            "event_indices": [],
+            "any_form_indices": [],
+            "meeting_indices": [],
+            "limited": {},
+            "last_state_reasons": {
+              "round 8": 16
+            },
+            "wall_seconds": 0.048953
+          },
+          "BX": {
+            "seed_kind": "BX",
+            "range": [
+              100,
+              116
+            ],
+            "trials": 16,
+            "events": 0,
+            "any_form": 0,
+            "meetings": 0,
+            "stopped": 0,
+            "not_stopped": [
+              0,
+              16
+            ],
+            "event_indices": [],
+            "any_form_indices": [],
+            "meeting_indices": [],
+            "limited": {},
+            "last_state_reasons": {
+              "round 8": 16
+            },
+            "wall_seconds": 0.032767
+          },
+          "BM": {
+            "seed_kind": "BM",
+            "range": [
+              100,
+              116
+            ],
+            "trials": 16,
+            "events": 0,
+            "any_form": 0,
+            "meetings": 14,
+            "stopped": 0,
+            "not_stopped": [
+              0,
+              16
+            ],
+            "event_indices": [],
+            "any_form_indices": [],
+            "meeting_indices": [
+              100,
+              101,
+              102,
+              103,
+              104,
+              105,
+              106,
+              108,
+              110,
+              111,
+              112,
+              113,
+              114,
+              115
+            ],
+            "limited": {},
+            "last_state_reasons": {
+              "round 8": 16
+            },
+            "wall_seconds": 0.066922
+          },
+          "BT": {
+            "seed_kind": "BT",
+            "range": [
+              100,
+              116
+            ],
+            "trials": 16,
+            "events": 0,
+            "any_form": 0,
+            "meetings": 14,
+            "stopped": 0,
+            "not_stopped": [
+              0,
+              16
+            ],
+            "event_indices": [],
+            "any_form_indices": [],
+            "meeting_indices": [
+              100,
+              101,
+              102,
+              103,
+              104,
+              105,
+              106,
+              107,
+              108,
+              109,
+              111,
+              112,
+              114,
+              115
+            ],
+            "limited": {},
+            "last_state_reasons": {
+              "round 8": 16
+            },
+            "wall_seconds": 0.065923
+          }
+        },
+        "registered_trials_per_arm": 1000,
+        "projected_seconds": {
+          "BN": 4.305,
+          "BY": 3.06,
+          "BX": 2.048,
+          "BM": 4.183,
+          "BT": 4.12
+        },
+        "statistics": null,
+        "differences_from_record": null
+      }
+    },
+    {
+      "source": "Rcond.json",
+      "run": "R5",
+      "start": "n4-g16-1123",
+      "law": "FBP/CANCEL-RETIRE/HOLD/STEPS-1/parity/T1",
+      "seed": "C|n4-g16-1123|FBP|CANCEL-RETIRE|parity|0|STEPS-1|HOLD",
+      "pair_round": 1,
+      "X": [
+        5,
+        7,
+        8
+      ],
+      "Y": [
+        4,
+        6
+      ],
+      "Y_loose_counts": [
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "base_growth": {
+        "meeting": 2,
+        "first_form": 8,
+        "form_after_meeting": 8,
+        "terminal_round": 8,
+        "reason": null
+      },
+      "first_stage": {
+        "arms": {
+          "BN": {
+            "seed_kind": "BN",
+            "range": [
+              0,
+              16
+            ],
+            "trials": 16,
+            "events": 2,
+            "any_form": 2,
+            "meetings": 4,
+            "stopped": 0,
+            "not_stopped": [
+              2,
+              16
+            ],
+            "event_indices": [
+              10,
+              11
+            ],
+            "any_form_indices": [
+              10,
+              11
+            ],
+            "meeting_indices": [
+              2,
+              8,
+              10,
+              11
+            ],
+            "limited": {},
+            "last_state_reasons": {
+              "round 8": 16
+            },
+            "wall_seconds": 0.035925
+          },
+          "BY": {
+            "seed_kind": "BY",
+            "range": [
+              0,
+              16
+            ],
+            "trials": 16,
+            "events": 0,
+            "any_form": 0,
+            "meetings": 0,
+            "stopped": 0,
+            "not_stopped": [
+              0,
+              16
+            ],
+            "event_indices": [],
+            "any_form_indices": [],
+            "meeting_indices": [],
+            "limited": {},
+            "last_state_reasons": {
+              "round 8": 16
+            },
+            "wall_seconds": 0.02371
+          },
+          "BX": {
+            "seed_kind": "BX",
+            "range": [
+              0,
+              16
+            ],
+            "trials": 16,
+            "events": 0,
+            "any_form": 0,
+            "meetings": 0,
+            "stopped": 0,
+            "not_stopped": [
+              0,
+              16
+            ],
+            "event_indices": [],
+            "any_form_indices": [],
+            "meeting_indices": [],
+            "limited": {},
+            "last_state_reasons": {
+              "round 8": 16
+            },
+            "wall_seconds": 0.023175
+          }
+        },
+        "registered_trials_per_arm": 100,
+        "projected_seconds": {
+          "BN": 0.225,
+          "BY": 0.148,
+          "BX": 0.145
+        },
+        "statistics": null,
+        "differences_from_record": null
+      },
+      "confirmation": {
+        "arms": {
+          "BN": {
+            "seed_kind": "BN",
+            "range": [
+              100,
+              116
+            ],
+            "trials": 16,
+            "events": 0,
+            "any_form": 0,
+            "meetings": 6,
+            "stopped": 0,
+            "not_stopped": [
+              0,
+              16
+            ],
+            "event_indices": [],
+            "any_form_indices": [],
+            "meeting_indices": [
+              102,
+              104,
+              105,
+              106,
+              113,
+              114
+            ],
+            "limited": {},
+            "last_state_reasons": {
+              "round 8": 16
+            },
+            "wall_seconds": 0.034457
+          },
+          "BY": {
+            "seed_kind": "BY",
+            "range": [
+              100,
+              116
+            ],
+            "trials": 16,
+            "events": 0,
+            "any_form": 0,
+            "meetings": 0,
+            "stopped": 0,
+            "not_stopped": [
+              0,
+              16
+            ],
+            "event_indices": [],
+            "any_form_indices": [],
+            "meeting_indices": [],
+            "limited": {},
+            "last_state_reasons": {
+              "round 8": 16
+            },
+            "wall_seconds": 0.024694
+          },
+          "BX": {
+            "seed_kind": "BX",
+            "range": [
+              100,
+              116
+            ],
+            "trials": 16,
+            "events": 0,
+            "any_form": 0,
+            "meetings": 0,
+            "stopped": 0,
+            "not_stopped": [
+              0,
+              16
+            ],
+            "event_indices": [],
+            "any_form_indices": [],
+            "meeting_indices": [],
+            "limited": {},
+            "last_state_reasons": {
+              "round 8": 16
+            },
+            "wall_seconds": 0.02486
+          },
+          "BM": {
+            "seed_kind": "BM",
+            "range": [
+              100,
+              116
+            ],
+            "trials": 16,
+            "events": 0,
+            "any_form": 0,
+            "meetings": 4,
+            "stopped": 0,
+            "not_stopped": [
+              0,
+              16
+            ],
+            "event_indices": [],
+            "any_form_indices": [],
+            "meeting_indices": [
+              101,
+              103,
+              104,
+              112
+            ],
+            "limited": {},
+            "last_state_reasons": {
+              "round 8": 16
+            },
+            "wall_seconds": 0.039746
+          },
+          "BT": {
+            "seed_kind": "BT",
+            "range": [
+              100,
+              116
+            ],
+            "trials": 16,
+            "events": 0,
+            "any_form": 0,
+            "meetings": 8,
+            "stopped": 0,
+            "not_stopped": [
+              0,
+              16
+            ],
+            "event_indices": [],
+            "any_form_indices": [],
+            "meeting_indices": [
+              101,
+              102,
+              104,
+              107,
+              108,
+              109,
+              113,
+              115
+            ],
+            "limited": {},
+            "last_state_reasons": {
+              "round 8": 16
+            },
+            "wall_seconds": 0.039782
+          }
+        },
+        "registered_trials_per_arm": 1000,
+        "projected_seconds": {
+          "BN": 2.154,
+          "BY": 1.543,
+          "BX": 1.554,
+          "BM": 2.484,
+          "BT": 2.486
+        },
+        "statistics": null,
+        "differences_from_record": null
+      }
+    }
+  ],
+  "total_continuations": 768,
+  "wall_seconds": 4.099,
+  "peak_rss_kib": 43084
+}

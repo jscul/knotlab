@@ -34,3 +34,28 @@ not-all-equal and under parity:
 **Stop.** One checkable start that breaks 1 or 2, under either knot law; or none. The two laws share their starts and are
 not independent trials. About one start in fifty was late in SETTLE-BOUND's runs, so the point law is expected to be
 tested on some tens of starts.
+
+## What was found
+
+The fresh sample was grown under both knot laws ([`grown_fresh_nae.jsonl.gz`](grown_fresh_nae.jsonl.gz),
+[`grown_fresh_parity.jsonl.gz`](grown_fresh_parity.jsonl.gz)) and tested by [`merge_test.py`](merge_test.py)
+([`test_nae.json`](test_nae.json), [`test_parity.json`](test_parity.json)).
+
+| knot law | starts of a dimension | censored | checkable | late (K > M + 5) | point law K = T + 3 (T + 5 with parents) | combined bound broken |
+|---|---|---|---|---|---|---|
+| not-all-equal | 769 | 18 | 751 | 16 | 16 of 16 (16 of 16) | 0 |
+| parity | 571 | 18 | 553 | 2 | 2 of 2 (2 of 2) | 0 |
+
+The rest: 1,223 stall under both laws; 198 close under parity; 8 unread.
+
+**Both frozen predictions held: the stop is "none".** Every held-out start that settles past the largest-block bound
+settles exactly three rounds after the last fall in its count of births (five with parents), and every checkable start
+settles within the combined bound.
+
+**How much this says (the advisor's caution).** The combined bound is weak: T and K are read from the same counts, and
+K equals the bound in only 44 of 751 starts (6%) without parents, 8 of 553 under parity; the slack is usually 4. The
+sharper result is the point law, now held on 18 held-out late starts (and on all 47 earlier ones); the settling-bound
+referee also found the offsets 3 and 5 in 794 of the 815 earlier starts with any strict fall. What it says: once a
+growth stops narrowing, a local reader's view becomes polynomial within three rounds (five with parents). What it does
+not say: when the last fall comes, which still has to be read from the counts; no prediction of it from the start was
+frozen.

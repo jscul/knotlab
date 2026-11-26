@@ -1,4 +1,4 @@
-# The first step: under the ordinary count families do not act on each other; under a cap they do
+# The first step: on the generator study's start, families do not act on each other under the ordinary count; under a cap they do
 
 Epic `FAMILIES-THAT-MEET-20261126-001` (sub-goal B337 as restated, with B227 of the generator study; goals G15 with
 G17 and G5), 26 November 2026 (UTC), at the owner's word to start. **A first step by the thread, not a registered
@@ -145,9 +145,14 @@ treatment, none at 2 or 3, none without a cap.
 - **Shown.** Under the ordinary count on this start a family's own making is closed to every other family, and the
   record's proved formula is why. Scarcity made at the start (one original short) does not open it. A bound on
   what a birth may receive does, as soon as the bound falls between what the met side asks for in the two cases.
-- **So the two things the fold of emergence needs sit under different laws so far.** Lasting families that the
-  growth releases are proved under the ordinary count, where they cannot act on each other. Acting on each other
-  is seen under a cap, where nobody has shown that a start releases lasting families.
+- **So the two things the fold of emergence needs have not yet been seen together.** Lasting families that the
+  growth releases are proved for starts of the identification theorem's class under the ordinary count, where they
+  cannot act on each other. One part's making depending on another's is seen in two other places: on this start
+  under a cap; and under the ordinary count itself on starts outside that class, where knots hold more loose
+  distinctions than they are asked for or one knot witnesses several members (the cone study's matched starts, and
+  the built starts of [the form study](../../FOLLOWS-THE-FORM-20261125-001A/results.md)). In neither place has
+  anyone shown that a start releases lasting families. Making one original a single distinction short, as in part
+  3, does not take this start far enough out of the class to show it.
 - **Not shown: families under a cap.** "The first family's side" in parts 3 and 4 is a reading by descent on a
   start grown seven rounds. In the generator study the families are released at size 16, far beyond what can be
   grown, and its proofs are for the ordinary count.
@@ -175,7 +180,7 @@ Direction 1 is started and has a first result. **Under the ordinary count the fa
 act on each other: change the second family's own original and everything the first family's side makes is the same,
 by that study's price formula, which I checked knot by knot with a second growth. Under a cap of 4 to 8 on what a
 birth may receive, the first family's side makes something else when the second family's original is changed, in 30
-comparisons of 30. So lasting families and families that act on each other sit under different laws so far.**
+comparisons of 30. So lasting families and parts that act on each other have not yet been seen together.**
 
 | Scope | Verdict | Why |
 | --- | --- | --- |

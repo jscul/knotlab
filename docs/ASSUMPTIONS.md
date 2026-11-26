@@ -353,6 +353,7 @@ evidence: results and their status come from the records each entry links.
 | [A295](#a295--every-two-distinctions-have-a-joint-value-even-where-no-knot-holds-both) | Every two distinctions have a joint value, even where no knot holds both | premise | Under challenge |
 | [A296](#a296--no-signalling-means-no-free-sender-can-change-the-other-readers-complete-record-tables-come-from-one-state-of-the-whole) | No signalling means no free sender can change the other reader's complete record; tables come from one state of the whole | scaffold | Assumed |
 | [A297](#a297--rule-r-read-off-the-whole-structure-with-settled-and-open-pairs-one-realisation-and-the-counting-state) | Rule R read off the whole structure, with settled and open pairs, one realisation and the counting state | scaffold | Assumed |
+| [A298](#a298--built-ring-families-lineage-carriers-and-the-origin-test-to-read-a-binding-of-whole-held-facts) | Built ring families, lineage carriers and the origin test, to read a binding of whole-held facts | scaffold | Assumed |
 
 ## Entries
 
@@ -6100,8 +6101,8 @@ evidence: results and their status come from the records each entry links.
   agreed with the consequence drawn from A128 ("Agreed."), and asked to continue with the proposal (26 November 2026).
 - **Rests on it.** No result. It frames the challenge, in a study now running, of the assumption that does the work
   beneath A126 (growth never forbids what the old knots allowed): that any two distinctions have a joint value even
-  when no knot holds both, so that under even parity the state with every value 0 is always allowed; that study
-  records it as its own entry. The canonical knot test is not changed: its third condition, K3, still asks for an
+  when no knot holds both, so that under even parity the state with every value 0 is always allowed (A295, under
+  challenge in that study). The canonical knot test is not changed: its third condition, K3, still asks for an
   allowed state. The guide's lesson 12.4.
 - **Challenge.** A proposal under test, and not new to the record, which read such wholes part by part from 20 to
   23 November (referees pending): six parity knots on nine distinctions with one odd rule, every proper part allowed
@@ -6120,6 +6121,7 @@ evidence: results and their status come from the records each entry links.
   the cohomology of impossible figures (Penrose 1992). What this adds: the question asked of the growth law, not of a
   logic.
 - **History.**
+  - 2026-11-26 · Tied to A295, the assumption beneath A126 that the running study challenges.
   - 2026-11-26 · The earlier studies that ran the proposal cited, and the assumption beneath A126 named as the one
     under challenge (the advisor's reading, through the coordinator).
   - 2026-11-26 · Entered at the owner's request.
@@ -6186,3 +6188,24 @@ evidence: results and their status come from the records each entry links.
   state exists). Expected to stay a scaffold of the test; the model is not expected to adopt R.
 - **History.**
   - 2026-11-26 · Entered by `EVENTUAL-R-20261126-001`.
+
+### A298 · Built ring families, lineage carriers and the origin test, to read a binding of whole-held facts
+
+**Assumed** · 2026-11-26 · scaffold
+
+- **Statement.** To ask whether growth binds facts that no single knot reads, `BUILT-BINDING-20261126-001` uses
+  three choices of its own. (1) **Hand-built starts**: rings of four to seven knots, each ring knot holding two loose
+  distinctions, joined in threes or fours through connecting knots that hold none (after the binding study's referee
+  and the advisor). (2) **Lineage carriers**: a ring's fact at round t is carried by the fresh distinctions of the
+  round-(t − 1) births whose parents all descend from that ring. (3) **The origin test**: a carrier is "from the start"
+  when its parity plus a sum of the stage's laws lies on the start's own distinctions.
+- **Why.** The cheapest construction aimed at the mechanism (a sum of all knot laws that lands on the rings' loose
+  distinctions), a carrier rule that needs no search, and a test whose answer does not depend on the representative.
+- **Rests on it.** The study's built-family results and their reading in parts (a) to (d).
+- **Challenge.** Sampled starts under a named weighting in place of built ones (the census, 900 fresh starts of six to
+  eight knots and 400 of nine to twelve show no binding by the cycle test, so the bindings are about the built
+  families); carriers found by search (the binding referee's cycles and shortest paths) in place of the lineage rule;
+  the origin test against a direct computation of the joint values at the start. Expected to be replaced: the model
+  should pick its own carriers (the advisor: a rule such as labels of least support, with its own small changes).
+- **History.**
+  - 2026-11-26 · Entered at the freeze of `BUILT-BINDING-20261126-001`.

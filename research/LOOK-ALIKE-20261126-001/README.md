@@ -28,8 +28,8 @@ reader is the owner's "logically small" galaxy made exact.
 ## Design
 
 **Population.** The census of small starts (`COPYING-PARTS-20261123-001A`'s `cpcensus.py`): a connected graph on
-the knots, one shared distinction for each pair it joins, zero to three loose distinctions on each knot, at least
-three places on every knot, each start once up to its symmetries. Phase 1: all starts of one to four knots (1 + 3 +
+the knots, one shared distinction for each pair it joins, zero to three loose distinctions on each knot and at
+least one loose distinction in the start, at least three places on every knot, each start once up to its symmetries. Phase 1: all starts of one to four knots (1 + 3 +
 19 + 200 = 223). Phase 2 (held out): five-knot starts, 3,157 in all, sampled if the full set does not fit the hour.
 
 **Growth.** Ordinary growth only: the ordinary count, not-all-equal, nothing taken, to round 20 or 30,000 knots. A
@@ -65,7 +65,17 @@ the five-knot starts read. **Stop:** the frozen criterion predicts every phase-2
 
 ## Phase 1: what was found (exploratory)
 
-All 223 starts of one to four knots were grown to round 20 ([`phase1_grown.jsonl.gz`](phase1_grown.jsonl.gz)) and
+> **Referee R1, confirmed with fixes, no Block, folded in** ([report](referee-R1/report.md)). Narrowed: the census
+> also requires at least one loose distinction in the start; "settles" is a forecast through the last round read,
+> given the dimension label from the completed run, with each kind's count a polynomial of degree **at most** D − 1
+> (the program floors the settling round at 3); the control failed in round 1 in sig1 for all 76 pairs with births;
+> delayed agreement also comes from which kinds are present, not only from slopes crossing; "16 late views" are 16
+> descriptions grouping 68 exact views; the burst's block of ten forms in round 2, from starts whose largest block is
+> four; of the 11 unread five-knot starts, 7 grow as 5 + C(t + 3, 4), a quartic beyond the classifier's range, and 4 are
+> rings; two pairs of five-knot rings with the same proved rate never nest. The sentences below are corrected in place
+> where the referee gave the wording.
+
+Of the 223 starts of one to four knots, 181 reached round 20 and 42 stalled before their first birth ([`phase1_grown.jsonl.gz`](phase1_grown.jsonl.gz)) and
 every pair of one kind read in both readings ([`pairs.py`](pairs.py), [`phase1_pairs.jsonl.gz`](phase1_pairs.jsonl.gz)).
 Kinds: 42 stall (all of four knots), 38 of dimension one, 134 of dimension two, 7 of three and 2 of four; none
 closes and none grows at a fixed rate. Under not-all-equal a lone three-place knot does not close: it grows in
@@ -88,7 +98,8 @@ polynomial in the round. In dimension two (sig0) the 134 starts have six late sh
 fresh distinctions growing by a fixed number a round, plus a constant number of one-parent offshoots (2 for 67
 starts, 4 for 37), sometimes with constant defects (a group of three and a two-parent join with three fresh
 distinctions, 13 starts; a two-parent join with one fresh distinction, 7); or, for starts with a larger block of
-knots that share a neighbour, joins of up to seven parents growing in binomial proportions. Every start's view
+knots that share a neighbour, joins of up to six parents in binomial proportions in the settled views (joins of seven
+and eight parents occur only before settling). Every start's view
 settles: from some round K on, every kind's count is the polynomial fitted through rounds K − D + 1 to K and holds
 through round 20; K is at most 12 in sig0 and 14 in sig1, for all 181 starts of a dimension.
 
@@ -103,8 +114,8 @@ through round 20; K is at most 12 in sig0 and 14 in sig1, for all 181 starts of 
 6. *sig0 no later than sig1.* Held in all 9,636 pairs.
 
 **The criterion this suggests.** Whether two starts agree up to the count is decided by their settled views: two
-lists of polynomials, one for each kind of birth. That is a finite description, read from the first 14 rounds, of
-what a local reader sees of the whole unending growth. It is frozen below for the held-out test.
+lists of polynomials, one for each kind of birth. Given the dimension label from the completed run, the first 14
+rounds supply a forecast through the last common recorded round. It is frozen below for the held-out test.
 
 ## Addendum: the criterion, frozen before phase 2
 
@@ -134,9 +145,11 @@ and nothing changes after; it is the check that the comparison as stated is the 
 
 All 3,157 five-knot starts of the census were grown under ordinary growth to round 24 or 30,000 knots
 ([`phase2_grown.jsonl.gz`](phase2_grown.jsonl.gz)), and the frozen criterion applied by [`phase2.py`](phase2.py)
-([`phase2.json`](phase2.json)). Kinds: 1,587 stall; 409 of dimension one, 1,003 of two, 110 of three, 34 of four;
+([`phase2.json`](phase2.json)). Kinds: 1,587 stall; 409 of dimension one, 1,003 of two, 110 of three, 34 of four (15 of these stopped at round 21 by the
+knot bound);
 three grow at a rate (1.26, 1.38 and 1.62, the last the golden-ratio ring of five), one of each, so no pair of one
-rate exists; 11 are unread (counts still changing their ratio when the run stopped).
+rate label exists; 11 are unread: 4 rings of five with leftovers, and 7 that grow as 5 + C(t + 3, 4) births a round, a
+quartic, from one five-parent join and five offshoots each starting an endless chain (the referee's reading).
 
 **1. Settling: failed for seven starts.** 1,549 of the 1,556 starts of a dimension settle within the frozen bounds in
 both readings. Seven of dimension two settle at round 14 in sig0 and 16 in sig1, inside the rounds read but past the
@@ -158,21 +171,28 @@ whose sig1 view had not settled by round 14.
 | dimension four | 561 | 276 / 0 / 285 | 276 / 0 / 285 | 0 |
 
 **The stop is met, at a miss.** The criterion as frozen fails for seven starts and the 5,614 pairs that include them;
-it predicts every other pair. What fails is the bound on the settling round, not the idea: the seven views do settle,
-two rounds after the burst of their block ends.
+it predicts every other pair. What fails is the bound on the settling round, not the idea. The burst ends at round
+11; the views settle three rounds later in sig0 and five later in sig1, two rounds beyond each frozen bound.
 
-**Few far views.** Read by kinds in the last rounds, the 1,003 five-knot starts of dimension two show 16 distinct late
-views in sig0 (the 134 of up to four knots, 6). The commonest, 549 starts, is two-parent joins growing plus two
-offshoots a round, the late view of a lone three-place knot; the next, 176 starts, has four offshoots a round, that of
-two touching knots. Dimension one shows 29 late views among 409, three 3 among 110, four 2 among 34.
+**Few far views.** Read by kinds in the last rounds, the 1,003 five-knot starts of dimension two have 68 distinct
+settled sig0 views (lists of polynomials); keeping the constant counts and marking each varying count only as
+growing, they fall into 16 descriptions (the 134 of up to four knots: 36 views, 6 descriptions). The largest
+description, 549 starts, is two-parent joins growing plus two offshoots a round, as for a lone three-place knot; the
+next, 176, has four offshoots a round, as for two touching knots. Compared directly through round 20, 793 five-knot
+starts agree up to the count with a lone three-place knot and 725 with two touching knots (725 with both). Dimension
+one shows 29 exact views among 409, three 3 among 110, four 2 among 34.
 
 ## Expectations, all
 
-1. *Control (Lemma R's data):* held in sig0 from round 1, sig1 from round 2 (phase 1).
+1. *Control (Lemma R's data):* failed as frozen in round 1 for all 76 pairs with births in sig1 (the start knots'
+   places differ); held in sig0, and both readings agree from round 2.
 2. *Dimension one: every pair agrees by round 6:* failed (phase 1, 502 of 703 never; phase 2, 64,978 of 83,436).
 3. *Dimension two: some pair never agrees:* held.
-4. *Rates: some pairs never agree:* not testable; no two starts share a rate.
-5. *Agreement by round 8:* failed in both phases, where counts of different slopes cross later.
+4. *Rates: some pairs never agree:* no two starts received the same frozen rate label; two pairs of five-knot rings
+   with the same proved rate were never nested in either reading in any saved round, so it holds when rate means the
+   proved rate.
+5. *Agreement by round 8:* failed in both phases; delayed agreement comes from slopes crossing and also from changes
+   in which kinds of birth are present (21,889 of 36,172 late sig0 pairs have equal settled total slopes).
 6. *sig0 no later than sig1:* held in phase 1 (not re-tallied in phase 2).
 7. *Addendum, settling within 12 and 14:* failed for seven five-knot starts with a burst of a block of ten.
 8. *Addendum, the pair rule:* held for every sig0 pair and every sig1 pair without one of the seven.
@@ -188,7 +208,8 @@ of two late views. The study of reading a start back (`READ-ORIGIN-20261120-001`
 different pasts of one present give one future; here different starts give one local future up to a count. Both say
 that what lies behind, in descent, is small to what comes after, read where it is.
 
-**Reading (not tested here).** The settling round looks set by the largest block of live knots sharing a neighbour:
+**Reading (not tested here).** The settling round looks set by the largest block, at the start or among the children
+of one round-1 birth (the seven late starts' largest start block is four; their block of ten forms in round 2):
 a block of m bursts through the binomial numbers of m and ends in one join of all m, and the view settles a few
 rounds after (for the block of ten, the burst ends at round 11 and the view settles at 14 in sig0 and 16 in sig1). A
 criterion from the start alone would bound the settling round by the size of its largest block plus a small constant;

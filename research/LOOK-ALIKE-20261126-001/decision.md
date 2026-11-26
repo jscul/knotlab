@@ -7,25 +7,31 @@ the thread, not registered: computed on every census start of one to five knots;
 
 ## What stands
 
-1. **A local reader's view of a grown start settles into a finite description.** Under ordinary growth (a short knot
-   stalls the round), every census start of one to five knots of a fixed dimension (1,737 starts: 181 of up to four
-   knots, 1,556 of five), read by each birth's kind, parents, fresh distinctions and places (and its parents' too),
-   becomes from some round on a few kinds of birth, each counted by a polynomial in the round of degree one less than
-   the dimension; it settles by round 12 or 14 except for seven five-knot starts whose block of ten live knots bursts
-   through the binomial numbers until round 11 (settled at 14 and 16).
-2. **Whether two starts look alike is decided by their settled views.** Two starts of one dimension agree up to the
-   count (one's births contained in the other's in every later round) from the round their settled views say: so in
-   every one of 9,636 pairs of up to four knots, and, with the frozen criterion on the held-out five-knot starts, in
-   every one of 592,495 pairs in the reading without parents and 586,881 with them; the 5,614 misses all include one
-   of the seven late starts, whose view had not settled by round 14.
-3. **Few late views.** The 1,003 five-knot starts of dimension two show 16 late views; 549 look, to a local reader, like
-   a lone three-place knot up to the count, and 176 like two touching knots. Dimension one shows 29 among 409.
-4. **Expectations:** two failed (every dimension-one pair agreeing early; agreement by round 8), the control held (pairs
-   with the same data of Lemma R grow identically), and the frozen settling bound failed for seven starts.
+> **Referee R1, confirmed with fixes, no Block, folded in** ([report](referee-R1/report.md)). Items 1 to 4 are worded
+> as the referee narrowed them; the note carries the details.
 
-**Not established.** A criterion from the start alone (the reading in the note: the largest block bounds the settling
-round); rates (three five-knot starts grow at a rate, no two at the same); starts of six knots or more; anything past
-round 24.
+1. **Given its dimension, a local reader's view of a grown start settles into polynomial counts.** Under ordinary
+   growth (a short knot stalls the round), every census start of one to five knots (each once up to its symmetries,
+   with at least one loose distinction) labelled with a dimension D from its completed run (1,737 starts: 181 of up to
+   four knots, 1,556 of five), read by each birth's kind, parents, fresh distinctions and places (and its parents' too),
+   is from some round on, through the last round read, a few kinds of birth each counted by a polynomial of degree at
+   most D − 1; the round is at most 12 or 14 except for seven five-knot starts (14 and 16), in which a block of ten
+   live knots formed in round 2 bursts through the binomial numbers until round 11.
+2. **Whether two starts look alike follows from their views.** The round from which two starts of one dimension agree
+   up to the count, computed from the observed prefix through round 14 and the extrapolated views after, is the
+   observed one in all 9,636 pairs of up to four knots in both readings; on the held-out five-knot starts, in all
+   592,495 pairs without parents and 586,881 with them; all 5,614 misses include one of the seven late starts and
+   predict "never" where agreement begins at round 15.
+3. **Few late views.** The 1,003 five-knot starts of dimension two have 68 settled views, grouped into 16 descriptions
+   (constant counts kept, varying ones marked only as growing); the two largest hold 549 and 176. Compared directly,
+   793 agree up to the count with a lone three-place knot and 725 with two touching knots. Two pairs of rings with the
+   same proved rate never nest.
+4. **Expectations:** three of the six failed as frozen (the round-1 control in the reading with parents, early
+   agreement in dimension one, agreement by round 8); the other three held, the sixth by construction; both promises
+   of the frozen addendum failed for the seven late starts.
+
+**Not established.** A bound on the settling round from the start alone (the successor's question); starts of six
+knots or more; any claim past the last round read; the seven quartic five-knot starts, outside the classifier.
 
 ## Position and next directions
 
@@ -33,23 +39,23 @@ round 24.
 | --- | --- | --- |
 | This attempt — a criterion for which starts look alike, frozen and tested on held-out starts | **Status:** Partially successful; the stop met at a miss | The settled views decide every pair; the frozen settling bound fails for seven starts with a block of ten |
 | Local direction — what a local reader keeps of a start | Continue | The late view is a finite description; its bound from the start alone is the open piece |
-| Broader exploration — far details as one case ("logically small") | Capability gained | Most dimension-two starts share one of two late views; a start survives locally only as its late view and its counts |
+| Broader exploration — far details as one case ("logically small") | Capability gained | 793 of 1,003 five-knot dimension-two starts agree up to the count with a lone three-place knot; a start survives locally only as its late view and its counts |
 | Long-term goal — G17 Typical and rare meeting patterns, with G1 | Capability gained | A classification of grown starts by what a local reader can tell, with the census weighting (each start once up to its symmetries) |
 
 **Next step:** Research directions — selected: #1
 
 | # | Direction | Payoff | Concreteness | First step → stop when | Status |
 | --- | --- | --- | --- | --- | --- |
-| 1 | The settling bound from the start alone: the largest block of live knots | 3/3 — makes the late view computable before growing | 3/3 — block sizes are Lemma R's data | Freeze "settles by the largest block's size plus c", test on the five-knot starts and a seeded sample of six → every start, or one it misses | Selected · not started |
+| 1 | The settling bound from the start alone: the largest block of live knots | 3/3 — makes the late view computable before growing | 3/3 — block sizes are Lemma R's data | Freeze "settles by the largest block's size plus c", test on the five-knot starts and a seeded sample of six → every start, or one it misses | Selected · started (`SETTLE-BOUND-20261126-001`) |
 | 2 | The late views from the start alone: chain tips and blocks | 3/3 — "logically small" made static | 2/3 — the late kinds look like chain tips and block bursts | Predict each start's late view from its endless chains and blocks → every late view of the census, or a miss | Alternative · deferred |
-| 3 | Rates: starts of one rate compared | 2/3 — the eddies' far views | 2/3 — needs six-knot rings with leftovers | Grow rings of one rate with leftovers placed apart and together → agree up to the count or not | Alternative · deferred |
+| 3 | Rates: starts of one proved rate compared | 2/3 — the eddies' far views | 3/3 — the referee's two five-knot ring pairs never nest; the ring theorem gives the classes | Every ring of five to seven with leftovers, grouped by proved rate → which pairs nest, or none | Alternative · deferred |
 
 1. Cheap and sharp: if it holds, a local reader's whole future view is computable from a start's Lemma R data and a
    bounded number of rounds.
 2. The stronger statement; it needs a theory of which kinds persist.
-3. The lamp study's referee found two rings of one rate that never agree; the census has none to compare.
+3. The referee found two pairs of five-knot rings with one proved rate that never nest.
 
-**Corrections:** none.
+**Corrections:** the referee's narrowings, logged (no Block): the census condition, the forecast's scope, the round-1 control, the onset's explanation, rates and unread starts, what 16 counts.
 **Goals:** checkpoint row added (G17, G1; capability gained); no goal changed.
 **Assumptions:** A283 (the readings without names) gains a history line; no new entry: the kind classification, the
 settling round and the census weighting are named in the note as choices.

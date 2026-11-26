@@ -326,6 +326,8 @@ evidence: results and their status come from the records each entry links.
 | [A268](#a268--a-one-reader-phase-comparison-fixes-three-readings-and-a-reference) | A one-reader phase comparison fixes three readings and a reference | scaffold | Assumed |
 | [A269](#a269--compare-a-pulse-before-and-after-growth-from-a-common-known-parity) | Compare a pulse before and after growth from a common known parity | scaffold | Assumed |
 | [A270](#a270--collect-the-conserved-parity-at-a-designated-pointer) | Collect the conserved parity at a designated pointer | scaffold | Assumed |
+| [A271](#a271--reuse-the-signed-witness-factor-as-a-three-reader-detector) | Reuse the signed witness factor as a three-reader detector | scaffold | Assumed |
+| [A272](#a272--sum-an-unused-distinction-before-reading-its-outcome) | Sum an unused distinction before reading its outcome | scaffold | Assumed |
 
 ## Entries
 
@@ -4059,6 +4061,7 @@ evidence: results and their status come from the records each entry links.
 - **Rests on it.** The fixed questions, choice of signs and transpose, external free settings, local reader placements including both readers in one holding, split knots, unread distinctions, mediator reports, and sampled and explosive starts are listed in the design. The ordinary laws determine the allowed assignments and parent holdings.
 - **Challenge.** Compare the incoherent uniform mixture, exchange fixed and conditioned settings, suppress either mediator report, lift a reversible motion event, and compare signed counts and a different one-question probability rule. Test both knot laws and both overlapping and separate holdings.
 - **History.**
+  - 2026-11-25 · The archived symmetric signed parity law and the original two-bit factor give all 64 three-reader probabilities. Uniform weighting of surviving outcomes and absolute weights reproduce the same table. Of those readings and squared weights, only squared weights preserve the unchanged reader's marginal under the archived unequal-magnitude control. [Signed four-setting comparison](../research/WEIGHTED-KNOT-FOUR-SETTINGS-20261125-001/results.md)
   - 2026-11-20 · A four-knot ordinary register distinguishes two swap histories. Crossing both histories with both relative signs leaves its answer unchanged at either fixed history. The supplied sum-and-difference operation gives the sign-sensitive result. [Sign study](../research/SIGN-RECORDS-AND-RECEIVER-TICKS-20261120-001A/results.md).
   - 2026-11-20 · For finite unsigned, uniform allowed words, matched word pairs give exactly the previous squared-weight chances once the second question and its pair calibration are supplied. A different unsigned rule meets the weaker requirements. No ordinary motion or birth tested gives the calibrated answer. The measurement remains a scaffold. [Study](../research/FREEDOM-CLOCKS-AND-BIRTHS-20261120-001A/results.md).
   - 2026-11-20 · The freedom study tests if a count of allowed changes is sufficient to reproduce the measured chances, and whether ordinary questions, composition, independent margins and certainty identify it. [Study](../research/FREEDOM-CLOCKS-AND-BIRTHS-20261120-001A/preregistration.md).
@@ -5622,3 +5625,25 @@ evidence: results and their status come from the records each entry links.
 - **Challenge.** Read the pointer before collecting, apply the same moves blindly, change the pointer and vary every firing order. A native process that imposes the enabling rule and supplies its receiver would replace the measuring device chosen here.
 - **History.**
   - 2026-11-25 · Every pointer and maximal firing order gave the same sign. The blind device and the plain pointer both gave a fair bit in either mixed preparation.
+
+### A271 · Reuse the signed witness factor as a three-reader detector
+
+**Assumed** · 2026-11-25 · scaffold
+
+- **Statement.** Select the real even-parity law with weight +1 at 000 and −1 at each two-one word. Equivalently attach the original signed two-bit factor to each pair of visible distinctions in the one-witness parity construction. At each reader choose a copy of that same two-bit factor or the ordinary equality transfer. Fix all input and output bit labels before testing.
+- **Why.** The October proof tabulated both symmetric sign choices and separately used the binary factor to construct parity. This choice tests their consequences against an independently specified table with a detector available in the signed calculus.
+- **Rests on it.** The real signed construction of all four promised and four additional outcome distributions. [Signed four-setting comparison](../research/WEIGHTED-KNOT-FOUR-SETTINGS-20261125-001/results.md)
+- **Challenge.** Try all real sign assignments on the same four words, hold the detector fixed, erase the signs before summation, or transport both source and detector. Require a rule that prepares the weights and makes the setting switch to replace the choice of wiring.
+- **History.**
+  - 2026-11-25 · One sign assignment up to common sign matched the fixed real read. The ordinary probabilities of the two symmetric sources agreed and their paired-change parities differed.
+
+### A272 · Sum an unused distinction before reading its outcome
+
+**Assumed** · 2026-11-25 · scaffold
+
+- **Statement.** As a second construction, permit one free distinction of a single copy of the signed ternary to be summed with coefficients (1,1). Join the resulting two-bit map to the source and give equal weight to surviving outcomes, or normalize absolute or squared coefficients for each setting.
+- **Why.** This tests which part of the real reading can be recovered using copies of the ternary when a free third distinction can contribute coherently. The archived internal joining rule places a forgotten distinction in exactly two copies.
+- **Rests on it.** The second two-setting construction, the effect of retaining the third distinction as an ordinary record, and the comparison of complete probabilities. [Signed four-setting comparison](../research/WEIGHTED-KNOT-FOUR-SETTINGS-20261125-001/results.md)
+- **Challenge.** Change the summation to (1,−1), use the positive law, keep a separate third-bit record until after squaring, or permit only joins in which each hidden bit occurs twice. Use unequal coefficient magnitudes to distinguish the probability prescriptions.
+- **History.**
+  - 2026-11-25 · Either coherent sum on the symmetric signed law gives the full target. Retaining the mark as an ordinary record gives a promised win fraction of 5/8. Equal weight on surviving outcomes and squared weight disagree on the unequal-magnitude control.

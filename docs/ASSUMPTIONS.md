@@ -334,6 +334,7 @@ evidence: results and their status come from the records each entry links.
 | [A276](#a276--a-reader-holds-its-old-distinction-and-its-childs-first-fresh-one-and-flips-them-with-the-odd-factor-on-the-old-one) | A reader holds its old distinction and its child's first fresh one, and flips them with the odd factor on the old one | scaffold | Assumed |
 | [A277](#a277--a-stub-and-a-mark-stand-for-the-presence-and-the-kind-of-a-pattern) | A stub and a mark stand for the presence and the kind of a pattern | scaffold | Assumed |
 | [A278](#a278--rations-made-by-hand-so-that-knots-are-short-now-and-then) | Rations made by hand so that knots are short now and then | scaffold | Assumed |
+| [A279](#a279--count-every-schedule-of-one-rounds-creations-and-births-equally) | Count every schedule of one round's creations and births equally | measure | Assumed |
 
 ## Entries
 
@@ -5703,17 +5704,19 @@ evidence: results and their status come from the records each entry links.
 - **Rests on it.** The finding that a round's own commit order, measured against its parents' creation order, carries the full contradiction. [Reordering test](../research/REORDER-SIGN-20261126-001/results.md)
 - **Challenge.** Use s = +1 (no sign anywhere, every scored win 5/8); derive the rule from the program's own laws rather than adding it; find a test that separates exchange statistics from one CZ per crossing; impose parity superselection, which forbids the odd local births the model uses.
 - **History.**
+  - 2026-11-26 · Challenged in its class by `REORDER-CONFIRM-20261126-001` (frozen, every prediction held): of the eight rules that charge a swap ±1 by what the two distinctions hold, the four with c00·c11 = −1 (the rule "both hold 0" among them) act exactly as this one up to relabelling and a global sign, and the other four do nothing; of the phases e^{iθ} raised to the number of inversions, only −1 gives the full contradiction (three to six readers). Under the rule a commit order is an order of operations: two births commute up to −1 exactly when both parents hold 1. The sign it gives belongs to the supplied schedule, not to the model. Status unchanged. Referee R1 of the reordering test also confirmed its five claims. [Confirmation](../research/REORDER-CONFIRM-20261126-001/results.md)
   - 2026-11-26 · Added by the reordering test. The frozen predictions G and P1–P6 held; P7 (order is gauge once the rule also governs the readings) failed.
 
 ### A276 · A reader holds its old distinction and its child's first fresh one, and flips them with the odd factor on the old one
 
 **Assumed** · 2026-11-26 · scaffold
 
-- **Statement.** In the grown parity ternary, reader j holds old distinction x_j and the first fresh distinction y_j of the child born from it. Its ordinary reading is the parity of x_j. Its flip reading is the real pair flip X_x·X_y; in the fermionic model, the local even operator F1 = −iγ′_x γ_y, whose odd factor γ′ sits on the old distinction.
+- **Statement.** In the grown parity ternary, reader j holds old distinction x_j and the first fresh distinction y_j of the child born from it. Its ordinary reading is the parity of x_j. Its flip reading is the real pair flip X_x·X_y; in the fermionic model, the local even operator F1 = −iγ′_x γ_y, whose primed factor γ′ sits on the old distinction (both factors are odd; the reworded clause said "odd factor").
 - **Why.** Reading the old distinction alone decoheres: its child's fresh pair records its value, and the scored win falls to 5/8. The pair flip keeps the child's parity. F1 is the dressed form of X_x·X_y when the old distinction precedes the fresh one, as it does in creation order.
 - **Rests on it.** Every three-reader table of the reordering test. [Reordering test](../research/REORDER-SIGN-20261126-001/results.md)
 - **Challenge.** Use the other real pair flip F2 = iγ_x γ′_y (no order then carries the contradiction); let readers mix F1 and F2; put a reader's record on the child's second fresh distinction; give readers no access to their child.
 - **History.**
+  - 2026-11-26 · Challenged by `REORDER-CONFIRM-20261126-001` (frozen, every prediction held). Each reader's flip must match the order its child's pair is written in (F1 when its record is the left written creator, F2 otherwise); a mismatched reader removes the contradiction in every order, and with all matched the carrying orders are the cyclic shifts of the parents' creation order at three and four readers (64 and 256 assignments). With the complex flip iγ_x γ_y the other schedules carry it: depth-first and the shifts of the reversed creation order. So the need for the sign comes from holding the readings real. The statement's "odd factor" reworded to "primed factor" (referee R1 of the reordering test). Status unchanged. [Confirmation](../research/REORDER-CONFIRM-20261126-001/results.md)
   - 2026-11-26 · Added by the reordering test. With F1, the contradiction appears exactly when the children are committed in an even order relative to their parents' creation order; with F2, in no order.
 
 ### A277 · A stub and a mark stand for the presence and the kind of a pattern
@@ -5738,3 +5741,14 @@ evidence: results and their status come from the records each entry links.
 - **Challenge.** The result is about a line of waiting knots more than about a ration: the cheapest test is the same reading under the record's cap of three with waiting on the same pair and chain, and under a different treatment of waiting knots. If a change travels there too, the ration is not what carries it. The model is expected to replace these rations or drop them: a rule that withholds one distinction from every join has no reason behind it yet.
 - **History.**
   - 2026-11-26 · Entered with `SHORT-AGAIN-20261126-001`. Swapped within it: five rations and the ordinary count, three treatments, distances one to eight, four small receivers and senders, the bench's three patterns and the census's 990 pairs. What survived: hearing from afar only with waiting, only with a source at the receiving end, under JOIN-FEWER and in part under the ring study's ration.
+
+### A279 · Count every schedule of one round's creations and births equally
+
+**Assumed** · 2026-11-26 · measure
+
+- **Statement.** In the confirmation of the reordering sign, "how often" a schedule carries the three-detector (n-detector) sign is a share of all sequences of the 2n events of one round (each old distinction's creation and its child's birth, the creation first), each sequence counted once: 90, 2,520, 113,400 and 7,484,400 sequences at three to six readers. Commit orders alone are counted the same way (each of the n! orders once).
+- **Why.** Taken by default by `REORDER-CONFIRM-20261126-001` as the plainest weighting when nothing in the model orders the events. No other weighting was compared.
+- **Rests on it.** The shares 7/15, 13/105, 1/45 and 31/10395 with the real flip and 8/15, 4/21, 52/945 and 7/495 with the complex flip, and the commit-order shares n/n!. [Confirmation](../research/REORDER-CONFIRM-20261126-001/results.md)
+- **Challenge.** Weight schedules by a growth's own way of making them (for example rounds only, with the commit order counted equally, which gives n/n!), by the number of distinct crossing relations, or by a rule that orders births by their parents' creation; any of these changes every share. The verdict that the sign is supplied does not rest on this weighting, only the shares do.
+- **History.**
+  - 2026-11-26 · Entered with the confirmation of the reordering sign. Swapped: commit orders alone against whole schedules; the joint weighting of creation and commit orders gives the same shares as commit orders alone.

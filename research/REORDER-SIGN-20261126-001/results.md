@@ -1,5 +1,25 @@
 # The sign as the cost of reordering
 
+> **Referee report R1 and a frozen confirmation, 26 November 2026: the numbers stand; two readings are narrowed.** The
+> [referee](referee-R1/codex/report.md) rebuilt all five claims with its own code (confirmed with fixes), and
+> [the confirmation](../REORDER-CONFIRM-20261126-001/results.md) (frozen, every prediction held) tested the account at three
+> to six readers. Read this record with these changes.
+> - **"An even order" is the three-reader case.** The contradiction appears exactly when the commit order is one of the n
+>   cyclic shifts of the parents' creation order (3 of 6, 4 of 24, 5 of 120, 6 of 720); at three readers the shifts are the
+>   even orders, at four two of them are odd. First created, first born is exact at every size checked.
+> - **The reference is supplied, not free.** The parents' creation order acts only through the start's relative signs, which
+>   the parity rule does not fix, and the commit order must match it; "the reference that reading R1 had to supply is not
+>   extra … every history already has" is withdrawn. Under the swap rule the sign is a property of the supplied schedule of
+>   creations and births, read against real readings held fixed: with a complex flip the other schedules carry it.
+> - **Why P7 failed.** A commit order is an order of operations: two births commute up to −1 exactly when both parents hold 1.
+>   The listing is a convention; the commit order is not. The P7 convention matches the sequential births on fresh inputs
+>   only; its tables do not single out a birth operator elsewhere.
+> - **Smaller fixes.** The F1 flip's *primed* factor sits on the old distinction (both factors are odd); with the child's pair
+>   written in the other order the other flip works. "Orders unknown to the readers give 7/6" holds for the fixed readings:
+>   with other real readings the mixtures score above 2 (at least 168/(25√10) and 308/(25√37)), without the full
+>   contradiction. The coherent sum's surviving word is the parents' word 000, with eight completions. The births mix fermion
+>   parity, so they are not local operations of physical fermions.
+
 **With one added rule, that swapping the order of two distinctions that both hold 1 costs −1, a growth round's own commit order
 supplies the sign of the three-detector experiment, and the reference it is measured against is the parents' own creation
 order.** Read with the two real readings, the grown parity knot carries the full contradiction exactly when its children are

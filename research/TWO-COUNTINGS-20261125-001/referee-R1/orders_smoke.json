@@ -1,0 +1,1344 @@
+{
+  "comparison": "Exact probabilities after renormalising each history's surviving weight.",
+  "mixed": "Exploratory. Starts just after the first setting rule. That stage is common only to pairs sharing that setting.",
+  "indices": "Zero-based within a list or order.",
+  "orders checked also by forward enumeration": [
+    [
+      "eleven_registered_400",
+      0
+    ],
+    [
+      "eleven_new_400",
+      0
+    ],
+    [
+      "smallest_gain_400",
+      0
+    ]
+  ],
+  "P4 holds on orders checked": true,
+  "disagreements with recorded rows": [],
+  "summary": {
+    "eleven_registered_400": {
+      "orders": 4,
+      "in the class": 3,
+      "in the class: at 2 and hidden": 3,
+      "in the class: losing weight at some rule": 3,
+      "in the class: equal weight loss across the four setting pairs": 3,
+      "in the class: no loss, indices": [],
+      "outside: at 2, hidden": 1,
+      "outside: above 2, hidden": 0,
+      "outside: above 2, not hidden": 0,
+      "outside: largest score": "2",
+      "outside: largest score, indices": [
+        1
+      ],
+      "outside: largest hidden score": null,
+      "outside: largest hidden score, indices": [],
+      "outside: above 2, hidden, equal loss": [],
+      "in the class: above 2 from the mixed stage": [],
+      "mixed scores and hidden, counts": {
+        "('2', True)": 4
+      }
+    },
+    "eleven_new_400": {
+      "orders": 4,
+      "in the class": 0,
+      "in the class: at 2 and hidden": 0,
+      "in the class: losing weight at some rule": 0,
+      "in the class: equal weight loss across the four setting pairs": 0,
+      "in the class: no loss, indices": [],
+      "outside: at 2, hidden": 2,
+      "outside: above 2, hidden": 0,
+      "outside: above 2, not hidden": 2,
+      "outside: largest score": "1162/495",
+      "outside: largest score, indices": [
+        1
+      ],
+      "outside: largest hidden score": null,
+      "outside: largest hidden score, indices": [],
+      "outside: above 2, hidden, equal loss": [],
+      "in the class: above 2 from the mixed stage": [],
+      "mixed scores and hidden, counts": {
+        "('2', True)": 2,
+        "('1162/495', False)": 1,
+        "('20/9', True)": 1
+      }
+    },
+    "smallest_gain_400": {
+      "orders": 4,
+      "in the class": 0,
+      "in the class: at 2 and hidden": 0,
+      "in the class: losing weight at some rule": 0,
+      "in the class: equal weight loss across the four setting pairs": 0,
+      "in the class: no loss, indices": [],
+      "outside: at 2, hidden": 1,
+      "outside: above 2, hidden": 0,
+      "outside: above 2, not hidden": 3,
+      "outside: largest score": "82/35",
+      "outside: largest score, indices": [
+        2
+      ],
+      "outside: largest hidden score": null,
+      "outside: largest hidden score, indices": [],
+      "outside: above 2, hidden, equal loss": [],
+      "in the class: above 2 from the mixed stage": [],
+      "mixed scores and hidden, counts": {
+        "('67/30', False)": 1,
+        "('2', True)": 1,
+        "('82/35', False)": 1,
+        "('15/7', False)": 1
+      }
+    }
+  },
+  "rows": [
+    {
+      "list": "eleven_registered_400",
+      "index": 0,
+      "order": [
+        5,
+        12,
+        7,
+        2,
+        3,
+        8,
+        6,
+        1,
+        9,
+        10,
+        4,
+        0,
+        11
+      ],
+      "in class": true,
+      "class detail": {
+        "first setting knot": true,
+        "second setting knot": true
+      },
+      "score_all": "2",
+      "score_parity": "2",
+      "score_parity_abs": "2",
+      "change_first": "0",
+      "change_second": "0",
+      "hidden": true,
+      "weight lost": {
+        "(0, 0)": "23/24",
+        "(0, 1)": "23/24",
+        "(1, 0)": "23/24",
+        "(1, 1)": "23/24"
+      },
+      "weight loss positions": {
+        "(0, 0)": [
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "(0, 1)": [
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "(1, 0)": [
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "(1, 1)": [
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      "weight lost equally across the setting pairs": true,
+      "any weight lost": true,
+      "verdict": "in the class, at 2, hidden",
+      "mixed first setting": "second observer",
+      "mixed from after first setting": {
+        "score_all": "2",
+        "score_parity": "2",
+        "score_parity_abs": "2",
+        "change_first": "0",
+        "change_second": "0",
+        "hidden": true,
+        "weight lost": {
+          "(0, 0)": "23/24",
+          "(0, 1)": "23/24",
+          "(1, 0)": "23/24",
+          "(1, 1)": "23/24"
+        },
+        "weight loss positions": {
+          "(0, 0)": [
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "(0, 1)": [
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "(1, 0)": [
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "(1, 1)": [
+            6,
+            7,
+            8,
+            9,
+            10
+          ]
+        },
+        "weight lost equally across the setting pairs": true,
+        "any weight lost": true
+      }
+    },
+    {
+      "list": "eleven_registered_400",
+      "index": 1,
+      "order": [
+        12,
+        2,
+        9,
+        0,
+        1,
+        4,
+        7,
+        11,
+        6,
+        10,
+        3,
+        8,
+        5
+      ],
+      "in class": false,
+      "class detail": {
+        "first setting knot": true,
+        "second setting knot": false
+      },
+      "score_all": "2",
+      "score_parity": "2",
+      "score_parity_abs": "2",
+      "change_first": "0",
+      "change_second": "0",
+      "hidden": true,
+      "weight lost": {
+        "(0, 0)": "15/16",
+        "(0, 1)": "7/8",
+        "(1, 0)": "15/16",
+        "(1, 1)": "7/8"
+      },
+      "weight loss positions": {
+        "(0, 0)": [
+          9,
+          10,
+          11,
+          12
+        ],
+        "(0, 1)": [
+          9,
+          10,
+          12
+        ],
+        "(1, 0)": [
+          9,
+          10,
+          11,
+          12
+        ],
+        "(1, 1)": [
+          9,
+          10,
+          12
+        ]
+      },
+      "weight lost equally across the setting pairs": false,
+      "any weight lost": true,
+      "verdict": "outside the class",
+      "mixed first setting": "second observer",
+      "mixed from after first setting": {
+        "score_all": "2",
+        "score_parity": "2",
+        "score_parity_abs": "2",
+        "change_first": "0",
+        "change_second": "0",
+        "hidden": true,
+        "weight lost": {
+          "(0, 0)": "15/16",
+          "(0, 1)": "7/8",
+          "(1, 0)": "15/16",
+          "(1, 1)": "7/8"
+        },
+        "weight loss positions": {
+          "(0, 0)": [
+            9,
+            10,
+            11,
+            12
+          ],
+          "(0, 1)": [
+            9,
+            10,
+            12
+          ],
+          "(1, 0)": [
+            9,
+            10,
+            11,
+            12
+          ],
+          "(1, 1)": [
+            9,
+            10,
+            12
+          ]
+        },
+        "weight lost equally across the setting pairs": false,
+        "any weight lost": true
+      }
+    },
+    {
+      "list": "eleven_registered_400",
+      "index": 2,
+      "order": [
+        1,
+        7,
+        9,
+        5,
+        3,
+        0,
+        10,
+        12,
+        2,
+        6,
+        4,
+        8,
+        11
+      ],
+      "in class": true,
+      "class detail": {
+        "first setting knot": true,
+        "second setting knot": true
+      },
+      "score_all": "2",
+      "score_parity": "2",
+      "score_parity_abs": "2",
+      "change_first": "0",
+      "change_second": "0",
+      "hidden": true,
+      "weight lost": {
+        "(0, 0)": "11/12",
+        "(0, 1)": "11/12",
+        "(1, 0)": "11/12",
+        "(1, 1)": "11/12"
+      },
+      "weight loss positions": {
+        "(0, 0)": [
+          8,
+          9,
+          10,
+          11
+        ],
+        "(0, 1)": [
+          8,
+          9,
+          10,
+          11
+        ],
+        "(1, 0)": [
+          8,
+          9,
+          10,
+          11
+        ],
+        "(1, 1)": [
+          8,
+          9,
+          10,
+          11
+        ]
+      },
+      "weight lost equally across the setting pairs": true,
+      "any weight lost": true,
+      "verdict": "in the class, at 2, hidden",
+      "mixed first setting": "second observer",
+      "mixed from after first setting": {
+        "score_all": "2",
+        "score_parity": "2",
+        "score_parity_abs": "2",
+        "change_first": "0",
+        "change_second": "0",
+        "hidden": true,
+        "weight lost": {
+          "(0, 0)": "11/12",
+          "(0, 1)": "11/12",
+          "(1, 0)": "11/12",
+          "(1, 1)": "11/12"
+        },
+        "weight loss positions": {
+          "(0, 0)": [
+            8,
+            9,
+            10,
+            11
+          ],
+          "(0, 1)": [
+            8,
+            9,
+            10,
+            11
+          ],
+          "(1, 0)": [
+            8,
+            9,
+            10,
+            11
+          ],
+          "(1, 1)": [
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        "weight lost equally across the setting pairs": true,
+        "any weight lost": true
+      }
+    },
+    {
+      "list": "eleven_registered_400",
+      "index": 3,
+      "order": [
+        10,
+        0,
+        5,
+        2,
+        6,
+        12,
+        8,
+        7,
+        9,
+        11,
+        3,
+        1,
+        4
+      ],
+      "in class": true,
+      "class detail": {
+        "first setting knot": true,
+        "second setting knot": true
+      },
+      "score_all": "2",
+      "score_parity": "2",
+      "score_parity_abs": "2",
+      "change_first": "0",
+      "change_second": "0",
+      "hidden": true,
+      "weight lost": {
+        "(0, 0)": "15/16",
+        "(0, 1)": "15/16",
+        "(1, 0)": "15/16",
+        "(1, 1)": "15/16"
+      },
+      "weight loss positions": {
+        "(0, 0)": [
+          3,
+          6,
+          8,
+          11,
+          12
+        ],
+        "(0, 1)": [
+          3,
+          6,
+          8,
+          11,
+          12
+        ],
+        "(1, 0)": [
+          3,
+          6,
+          8,
+          11,
+          12
+        ],
+        "(1, 1)": [
+          3,
+          6,
+          8,
+          11,
+          12
+        ]
+      },
+      "weight lost equally across the setting pairs": true,
+      "any weight lost": true,
+      "verdict": "in the class, at 2, hidden",
+      "mixed first setting": "second observer",
+      "mixed from after first setting": {
+        "score_all": "2",
+        "score_parity": "2",
+        "score_parity_abs": "2",
+        "change_first": "0",
+        "change_second": "0",
+        "hidden": true,
+        "weight lost": {
+          "(0, 0)": "11/12",
+          "(0, 1)": "11/12",
+          "(1, 0)": "11/12",
+          "(1, 1)": "11/12"
+        },
+        "weight loss positions": {
+          "(0, 0)": [
+            6,
+            8,
+            11,
+            12
+          ],
+          "(0, 1)": [
+            6,
+            8,
+            11,
+            12
+          ],
+          "(1, 0)": [
+            6,
+            8,
+            11,
+            12
+          ],
+          "(1, 1)": [
+            6,
+            8,
+            11,
+            12
+          ]
+        },
+        "weight lost equally across the setting pairs": true,
+        "any weight lost": true
+      }
+    },
+    {
+      "list": "eleven_new_400",
+      "index": 0,
+      "order": [
+        6,
+        8,
+        0,
+        9,
+        4,
+        3,
+        1,
+        12,
+        10,
+        2,
+        5,
+        7,
+        11
+      ],
+      "in class": false,
+      "class detail": {
+        "first setting knot": true,
+        "second setting knot": false
+      },
+      "score_all": "2",
+      "score_parity": "2",
+      "score_parity_abs": "2",
+      "change_first": "0",
+      "change_second": "0",
+      "hidden": true,
+      "weight lost": {
+        "(0, 0)": "29/32",
+        "(0, 1)": "29/32",
+        "(1, 0)": "29/32",
+        "(1, 1)": "29/32"
+      },
+      "weight loss positions": {
+        "(0, 0)": [
+          5,
+          9,
+          10,
+          11
+        ],
+        "(0, 1)": [
+          5,
+          9,
+          10,
+          11
+        ],
+        "(1, 0)": [
+          5,
+          9,
+          10,
+          11
+        ],
+        "(1, 1)": [
+          5,
+          9,
+          10,
+          11
+        ]
+      },
+      "weight lost equally across the setting pairs": true,
+      "any weight lost": true,
+      "verdict": "outside the class",
+      "mixed first setting": "second observer",
+      "mixed from after first setting": {
+        "score_all": "2",
+        "score_parity": "2",
+        "score_parity_abs": "2",
+        "change_first": "0",
+        "change_second": "0",
+        "hidden": true,
+        "weight lost": {
+          "(0, 0)": "5/6",
+          "(0, 1)": "5/6",
+          "(1, 0)": "5/6",
+          "(1, 1)": "5/6"
+        },
+        "weight loss positions": {
+          "(0, 0)": [
+            9,
+            10,
+            11
+          ],
+          "(0, 1)": [
+            9,
+            10,
+            11
+          ],
+          "(1, 0)": [
+            9,
+            10,
+            11
+          ],
+          "(1, 1)": [
+            9,
+            10,
+            11
+          ]
+        },
+        "weight lost equally across the setting pairs": true,
+        "any weight lost": true
+      }
+    },
+    {
+      "list": "eleven_new_400",
+      "index": 1,
+      "order": [
+        6,
+        12,
+        8,
+        7,
+        11,
+        1,
+        3,
+        10,
+        0,
+        5,
+        4,
+        9,
+        2
+      ],
+      "in class": false,
+      "class detail": {
+        "first setting knot": false,
+        "second setting knot": false
+      },
+      "score_all": "1162/495",
+      "score_parity": "1162/495",
+      "score_parity_abs": "1162/495",
+      "change_first": "3/55",
+      "change_second": "1/15",
+      "hidden": false,
+      "weight lost": {
+        "(0, 0)": "31/36",
+        "(0, 1)": "133/144",
+        "(1, 0)": "11/12",
+        "(1, 1)": "23/24"
+      },
+      "weight loss positions": {
+        "(0, 0)": [
+          10,
+          11,
+          12
+        ],
+        "(0, 1)": [
+          9,
+          10,
+          11,
+          12
+        ],
+        "(1, 0)": [
+          8,
+          10,
+          11,
+          12
+        ],
+        "(1, 1)": [
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "weight lost equally across the setting pairs": false,
+      "any weight lost": true,
+      "verdict": "outside the class",
+      "mixed first setting": "second observer",
+      "mixed from after first setting": {
+        "score_all": "1162/495",
+        "score_parity": "1162/495",
+        "score_parity_abs": "1162/495",
+        "change_first": "3/55",
+        "change_second": "1/15",
+        "hidden": false,
+        "weight lost": {
+          "(0, 0)": "31/36",
+          "(0, 1)": "133/144",
+          "(1, 0)": "11/12",
+          "(1, 1)": "23/24"
+        },
+        "weight loss positions": {
+          "(0, 0)": [
+            10,
+            11,
+            12
+          ],
+          "(0, 1)": [
+            9,
+            10,
+            11,
+            12
+          ],
+          "(1, 0)": [
+            8,
+            10,
+            11,
+            12
+          ],
+          "(1, 1)": [
+            8,
+            9,
+            10,
+            11,
+            12
+          ]
+        },
+        "weight lost equally across the setting pairs": false,
+        "any weight lost": true
+      }
+    },
+    {
+      "list": "eleven_new_400",
+      "index": 2,
+      "order": [
+        8,
+        9,
+        0,
+        1,
+        12,
+        6,
+        11,
+        5,
+        2,
+        4,
+        7,
+        3,
+        10
+      ],
+      "in class": false,
+      "class detail": {
+        "first setting knot": true,
+        "second setting knot": false
+      },
+      "score_all": "2",
+      "score_parity": "2",
+      "score_parity_abs": "2",
+      "change_first": "0",
+      "change_second": "0",
+      "hidden": true,
+      "weight lost": {
+        "(0, 0)": "15/16",
+        "(0, 1)": "15/16",
+        "(1, 0)": "15/16",
+        "(1, 1)": "15/16"
+      },
+      "weight loss positions": {
+        "(0, 0)": [
+          7,
+          10,
+          11,
+          12
+        ],
+        "(0, 1)": [
+          7,
+          10,
+          11,
+          12
+        ],
+        "(1, 0)": [
+          7,
+          10,
+          11,
+          12
+        ],
+        "(1, 1)": [
+          7,
+          10,
+          11,
+          12
+        ]
+      },
+      "weight lost equally across the setting pairs": true,
+      "any weight lost": true,
+      "verdict": "outside the class",
+      "mixed first setting": "second observer",
+      "mixed from after first setting": {
+        "score_all": "2",
+        "score_parity": "2",
+        "score_parity_abs": "2",
+        "change_first": "0",
+        "change_second": "0",
+        "hidden": true,
+        "weight lost": {
+          "(0, 0)": "15/16",
+          "(0, 1)": "15/16",
+          "(1, 0)": "15/16",
+          "(1, 1)": "15/16"
+        },
+        "weight loss positions": {
+          "(0, 0)": [
+            7,
+            10,
+            11,
+            12
+          ],
+          "(0, 1)": [
+            7,
+            10,
+            11,
+            12
+          ],
+          "(1, 0)": [
+            7,
+            10,
+            11,
+            12
+          ],
+          "(1, 1)": [
+            7,
+            10,
+            11,
+            12
+          ]
+        },
+        "weight lost equally across the setting pairs": true,
+        "any weight lost": true
+      }
+    },
+    {
+      "list": "eleven_new_400",
+      "index": 3,
+      "order": [
+        8,
+        9,
+        10,
+        5,
+        6,
+        4,
+        7,
+        2,
+        12,
+        3,
+        1,
+        11,
+        0
+      ],
+      "in class": false,
+      "class detail": {
+        "first setting knot": false,
+        "second setting knot": true
+      },
+      "score_all": "59/28",
+      "score_parity": "59/28",
+      "score_parity_abs": "59/28",
+      "change_first": "0",
+      "change_second": "3/56",
+      "hidden": false,
+      "weight lost": {
+        "(0, 0)": "2/3",
+        "(0, 1)": "2/3",
+        "(1, 0)": "17/24",
+        "(1, 1)": "17/24"
+      },
+      "weight loss positions": {
+        "(0, 0)": [
+          10,
+          12
+        ],
+        "(0, 1)": [
+          10,
+          12
+        ],
+        "(1, 0)": [
+          10,
+          12
+        ],
+        "(1, 1)": [
+          10,
+          12
+        ]
+      },
+      "weight lost equally across the setting pairs": false,
+      "any weight lost": true,
+      "verdict": "outside the class",
+      "mixed first setting": "second observer",
+      "mixed from after first setting": {
+        "score_all": "20/9",
+        "score_parity": "20/9",
+        "score_parity_abs": "20/9",
+        "change_first": "0",
+        "change_second": "0",
+        "hidden": true,
+        "weight lost": {
+          "(0, 0)": "2/3",
+          "(0, 1)": "2/3",
+          "(1, 0)": "2/3",
+          "(1, 1)": "2/3"
+        },
+        "weight loss positions": {
+          "(0, 0)": [
+            10,
+            12
+          ],
+          "(0, 1)": [
+            10,
+            12
+          ],
+          "(1, 0)": [
+            10,
+            12
+          ],
+          "(1, 1)": [
+            10,
+            12
+          ]
+        },
+        "weight lost equally across the setting pairs": true,
+        "any weight lost": true
+      }
+    },
+    {
+      "list": "smallest_gain_400",
+      "index": 0,
+      "order": [
+        1,
+        9,
+        5,
+        0,
+        10,
+        8,
+        7,
+        3,
+        6,
+        4,
+        2
+      ],
+      "in class": false,
+      "class detail": {
+        "first setting knot": false,
+        "second setting knot": false
+      },
+      "score_all": "67/30",
+      "score_parity": "67/30",
+      "score_parity_abs": "67/30",
+      "change_first": "1/60",
+      "change_second": "1/10",
+      "hidden": false,
+      "weight lost": {
+        "(0, 0)": "191/216",
+        "(0, 1)": "8/9",
+        "(1, 0)": "31/36",
+        "(1, 1)": "31/36"
+      },
+      "weight loss positions": {
+        "(0, 0)": [
+          7,
+          8,
+          9,
+          10
+        ],
+        "(0, 1)": [
+          7,
+          8,
+          9,
+          10
+        ],
+        "(1, 0)": [
+          3,
+          8,
+          9,
+          10
+        ],
+        "(1, 1)": [
+          3,
+          8,
+          9,
+          10
+        ]
+      },
+      "weight lost equally across the setting pairs": false,
+      "any weight lost": true,
+      "verdict": "outside the class",
+      "mixed first setting": "first observer",
+      "mixed from after first setting": {
+        "score_all": "67/30",
+        "score_parity": "67/30",
+        "score_parity_abs": "67/30",
+        "change_first": "1/60",
+        "change_second": "1/10",
+        "hidden": false,
+        "weight lost": {
+          "(0, 0)": "191/216",
+          "(0, 1)": "8/9",
+          "(1, 0)": "31/36",
+          "(1, 1)": "31/36"
+        },
+        "weight loss positions": {
+          "(0, 0)": [
+            7,
+            8,
+            9,
+            10
+          ],
+          "(0, 1)": [
+            7,
+            8,
+            9,
+            10
+          ],
+          "(1, 0)": [
+            3,
+            8,
+            9,
+            10
+          ],
+          "(1, 1)": [
+            3,
+            8,
+            9,
+            10
+          ]
+        },
+        "weight lost equally across the setting pairs": false,
+        "any weight lost": true
+      }
+    },
+    {
+      "list": "smallest_gain_400",
+      "index": 1,
+      "order": [
+        6,
+        8,
+        9,
+        7,
+        3,
+        0,
+        4,
+        2,
+        5,
+        10,
+        1
+      ],
+      "in class": false,
+      "class detail": {
+        "first setting knot": false,
+        "second setting knot": true
+      },
+      "score_all": "2",
+      "score_parity": "2",
+      "score_parity_abs": "2",
+      "change_first": "0",
+      "change_second": "0",
+      "hidden": true,
+      "weight lost": {
+        "(0, 0)": "7/9",
+        "(0, 1)": "7/9",
+        "(1, 0)": "5/6",
+        "(1, 1)": "5/6"
+      },
+      "weight loss positions": {
+        "(0, 0)": [
+          7,
+          8,
+          10
+        ],
+        "(0, 1)": [
+          7,
+          8,
+          10
+        ],
+        "(1, 0)": [
+          7,
+          8,
+          10
+        ],
+        "(1, 1)": [
+          7,
+          8,
+          10
+        ]
+      },
+      "weight lost equally across the setting pairs": false,
+      "any weight lost": true,
+      "verdict": "outside the class",
+      "mixed first setting": "first observer",
+      "mixed from after first setting": {
+        "score_all": "2",
+        "score_parity": "2",
+        "score_parity_abs": "2",
+        "change_first": "0",
+        "change_second": "0",
+        "hidden": true,
+        "weight lost": {
+          "(0, 0)": "7/9",
+          "(0, 1)": "7/9",
+          "(1, 0)": "5/6",
+          "(1, 1)": "5/6"
+        },
+        "weight loss positions": {
+          "(0, 0)": [
+            7,
+            8,
+            10
+          ],
+          "(0, 1)": [
+            7,
+            8,
+            10
+          ],
+          "(1, 0)": [
+            7,
+            8,
+            10
+          ],
+          "(1, 1)": [
+            7,
+            8,
+            10
+          ]
+        },
+        "weight lost equally across the setting pairs": false,
+        "any weight lost": true
+      }
+    },
+    {
+      "list": "smallest_gain_400",
+      "index": 2,
+      "order": [
+        10,
+        9,
+        5,
+        6,
+        7,
+        2,
+        0,
+        8,
+        1,
+        3,
+        4
+      ],
+      "in class": false,
+      "class detail": {
+        "first setting knot": false,
+        "second setting knot": false
+      },
+      "score_all": "82/35",
+      "score_parity": "82/35",
+      "score_parity_abs": "82/35",
+      "change_first": "0",
+      "change_second": "6/35",
+      "hidden": false,
+      "weight lost": {
+        "(0, 0)": "19/24",
+        "(0, 1)": "19/24",
+        "(1, 0)": "41/48",
+        "(1, 1)": "41/48"
+      },
+      "weight loss positions": {
+        "(0, 0)": [
+          6,
+          9,
+          10
+        ],
+        "(0, 1)": [
+          6,
+          9,
+          10
+        ],
+        "(1, 0)": [
+          6,
+          9,
+          10
+        ],
+        "(1, 1)": [
+          6,
+          9,
+          10
+        ]
+      },
+      "weight lost equally across the setting pairs": false,
+      "any weight lost": true,
+      "verdict": "outside the class",
+      "mixed first setting": "second observer",
+      "mixed from after first setting": {
+        "score_all": "82/35",
+        "score_parity": "82/35",
+        "score_parity_abs": "82/35",
+        "change_first": "0",
+        "change_second": "6/35",
+        "hidden": false,
+        "weight lost": {
+          "(0, 0)": "19/24",
+          "(0, 1)": "19/24",
+          "(1, 0)": "41/48",
+          "(1, 1)": "41/48"
+        },
+        "weight loss positions": {
+          "(0, 0)": [
+            6,
+            9,
+            10
+          ],
+          "(0, 1)": [
+            6,
+            9,
+            10
+          ],
+          "(1, 0)": [
+            6,
+            9,
+            10
+          ],
+          "(1, 1)": [
+            6,
+            9,
+            10
+          ]
+        },
+        "weight lost equally across the setting pairs": false,
+        "any weight lost": true
+      }
+    },
+    {
+      "list": "smallest_gain_400",
+      "index": 3,
+      "order": [
+        7,
+        0,
+        6,
+        9,
+        5,
+        8,
+        4,
+        10,
+        2,
+        3,
+        1
+      ],
+      "in class": false,
+      "class detail": {
+        "first setting knot": false,
+        "second setting knot": true
+      },
+      "score_all": "11/5",
+      "score_parity": "11/5",
+      "score_parity_abs": "11/5",
+      "change_first": "0",
+      "change_second": "1/10",
+      "hidden": false,
+      "weight lost": {
+        "(0, 0)": "7/9",
+        "(0, 1)": "7/9",
+        "(1, 0)": "19/24",
+        "(1, 1)": "19/24"
+      },
+      "weight loss positions": {
+        "(0, 0)": [
+          6,
+          8,
+          10
+        ],
+        "(0, 1)": [
+          6,
+          8,
+          10
+        ],
+        "(1, 0)": [
+          6,
+          10
+        ],
+        "(1, 1)": [
+          6,
+          10
+        ]
+      },
+      "weight lost equally across the setting pairs": false,
+      "any weight lost": true,
+      "verdict": "outside the class",
+      "mixed first setting": "first observer",
+      "mixed from after first setting": {
+        "score_all": "15/7",
+        "score_parity": "15/7",
+        "score_parity_abs": "15/7",
+        "change_first": "0",
+        "change_second": "1/14",
+        "hidden": false,
+        "weight lost": {
+          "(0, 0)": "7/9",
+          "(0, 1)": "7/9",
+          "(1, 0)": "33/40",
+          "(1, 1)": "33/40"
+        },
+        "weight loss positions": {
+          "(0, 0)": [
+            6,
+            8,
+            10
+          ],
+          "(0, 1)": [
+            6,
+            8,
+            10
+          ],
+          "(1, 0)": [
+            6,
+            10
+          ],
+          "(1, 1)": [
+            6,
+            10
+          ]
+        },
+        "weight lost equally across the setting pairs": false,
+        "any weight lost": true
+      }
+    }
+  ]
+}

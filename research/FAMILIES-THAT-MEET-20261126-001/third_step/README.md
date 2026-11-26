@@ -244,3 +244,61 @@ To run again, from this folder, with `PROBE_ROOT` set to the repository:
 `python3 -B drive_deep.py out.jsonl 3`, then `python3 -B tally_deep.py out.jsonl pairs.json`; and for the
 comparisons by name, `python3 -B cross.py '{"d":2,"ration":"CAP-9","treatment":"CANCEL-RETIRE","rounds":9,"bound":40000,"ma":1,"mb":2}' --table`
 (about 5 GB and ten seconds). `../first_step/make_engine_cap.py` writes the engine with the further caps first.
+
+## Report as sent
+
+Sent to the owner on 26 November 2026, with his question of the same hour answered first ("Have we successfully
+completed a single instance of complex behavior using any sort of braiding of the logic? … What are we at in terms
+of complexity from 1-10? And can you come up with some sort of roadmap to get us to a higher rating? I want to
+start simulating stuff."). Headings are set one level down here.
+
+### Your question: where we are, and a roadmap
+
+**Yes for patterns that last, no for patterns that work on each other.** We can build a start by hand that makes a lasting pattern. We have no start in which two patterns keep acting on each other, and today's result says why the laws used so far cannot give one.
+
+| Built so far | What it does | Standing |
+| --- | --- | --- |
+| A ring that returns | the same ring of knots comes back every few rounds and gives parts off each time | computed, referee pending |
+| A part that copies itself | two knots become two such pairs every two rounds, at three rates | computed, referee pending |
+| A source | seven knots that keep releasing lasting families under ordinary growth; two families released together make one joint knot, and what it holds depends on the start | the Codex line's study, refereed, stands |
+
+**Rating: between 3 and 4 out of 10**, on this scale of mine: 1 one knot · 2 growth we can count · 3 patterns that last · 4 an imprint (what a pattern makes differs with what it grew next to) · 5 a signal (a lasting pattern changes another's course after both exist, and can do it again) · 6 a switch that can be chained · 7 switches with memory, a counter · 8 a start that builds a described structure · 9 one that copies itself from its description · 10 open-ended.
+
+We hold 3. We hold 4 only thinly: the joint knot above, and today's one-step result under a cap. Nothing at 5: the copies never meet again, and the search for a copier that growth makes found none (refereed). The roadmap is the directions table below.
+
+### The step you asked for: how far a cap lets one side feel the other
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt — how far a change beyond the second family is felt on the first family's side | **Status:** Successful | One step out: felt at caps 9, 10 and 12 (26 of 27 pairs). Two or three steps out: felt in 0 of 162 pairs |
+| Local direction — a cap, with laws under which a birth takes nothing | Practically exhausted | The cap that makes knots short also parts the families, by round c − 1 |
+| Broader exploration — laws under which families keep acting on each other | Known alternatives | Waiting keeps them joined; laws that reach further rejoin parts |
+| Long-term goal — G15 Learning, with G18 Comparing growth laws | Obstruction learned | Joined families feel each other only through short knots; parted ones never do |
+
+Without a cap no knot is ever short, so nothing is felt although the families stay joined. With a cap, a short knot cancels its joins, and a neighbour on the other side makes an offshoot where it would have made a join. That is the only way a change crosses, and at one step I can name it birth for birth (48 offshoots, each in place of a join with a knot of the second family that is short in one start only). But where short knots retire or make offshoots, no group joins the two sides from round c − 1 on (caps 4 to 9, 106 of 106 starts), and parts that have come apart act alone from then on. So a change has a few rounds to cross and must be near.
+
+"From then on" is an argument from two of my earlier studies, not yet refereed. I tested it by retiring the second family by hand once the sides were apart: the rest grew the same, knot for knot (7 starts, 180,852 births). At caps 10 and 12 the two- and three-step starts could not be read far enough to decide. Everything is on one built start. The advisor's review changed nine things before the commit, among them a miscount of mine (82 pairs, not 118).
+
+**Next step:** Research directions — selected: #1
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+| --- | --- | --- | --- | --- | --- |
+| 1 | A bench for two patterns (toward level 5) | 3/3 — first test of patterns that stay joined | 2/3 — engine and readings exist; the law is unknown | Join two of the three patterns in one start, 1 to 3 steps apart, under waiting and under two laws that reach further; read whether either's course differs from growing alone, and for how long → a pair that differs for good under a swap of ration, or every pair read | Selected · awaiting go-ahead |
+| 2 | The bench as a toy on the site | 2/3 — it is how you simulate | 3/3 — playground and engine ports exist | Pick two patterns, a law and the steps apart; watch the rounds → it matches the bench on every case of #1 | Alternative · deferred |
+| 3 | Search small starts for pairs that act on each other | 3/3 — finds what hand-building misses | 2/3 — census code exists; the reading is new | Every start of up to six knots under waiting, each pair of parts grown together and alone → the first pair that differs for good, or the census ends | Alternative · deferred |
+| 4 | What the other is (level 5 proper) | 3/3 — the fold's own question | 1/3 — needs a pair from #1 or #3 | Swap the second pattern for another → two courses for two partners | Alternative · deferred |
+| 5 | Does any cap let a two-step change through | 1/3 — closes today's open cell | 3/3 — same programs, smaller start | Read caps 10 to 14 to the round the sides part → one crossing or none | Alternative · deferred |
+
+1. Every law we have used either never makes a knot short or parts the patterns, so staying joined is the missing ingredient. The engine already has waiting and the takes that reach further, and today's readings carry over; which law shows anything is the unknown. A table costs minutes of compute.
+2. The same runs in the browser. It adds no result, so it follows #1.
+3. The ring census already read 86,032 small starts for "returns"; this reads them for "differs together from alone".
+4. Close to the generator study's open sub-goal B225, and it is where the made-copier study found nothing. It waits for a pair.
+5. Cheap, but it only fills in a table about a scaffold.
+
+Levels 6 and 7 wait for a level-5 pair: a switch is two such signals meeting. Say go, or reorder, and I'll start #1 and close this epic's record with today's verdict.
+
+**Corrections:** none logged; the advisor's findings were fixed before anything left the session.
+**Goals:** no checkpoint yet (the epic is still open); G15 and G18 unchanged.
+**Assumptions:** A274 (a cap of any size) has a new history line; no new entry.
+**Scaffolds:** the cap, the tail built on the second family's original, the reading of sides by original ancestors, and the choice that a birth takes nothing. Swapped: eight caps, three treatments, one to three steps, one to three rings. Not swapped: taking (the engine's sole-candidate takes never took on this start, and taking the oldest or newest ended the growth by round 5). The result is about this start under these laws.
+**Basket:** the lead B337 carries the result; rows 3 and 4 are close to the generator study's open sub-goals B227 and B225, which now carry these ratings.

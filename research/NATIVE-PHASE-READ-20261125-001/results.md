@@ -1,6 +1,6 @@
 # Can a parity knot supply a phase-sensitive measurement?
 
-One parity knot can store a distinction that behaves like a phase label in repeated one-reader measurements. Its four ordinary states also impose a sharp limit. No update on those states can perform the calibrated quantum quarter turn on the six preparations tested here. For three readers, the program's first growth step supplies usable memory. The full quantum correlation table appears when we give the readers a particular rule for sharing and changing that memory. The growth rule itself supplies three equivalent places to store a bit and leaves the reader's access and update undetermined.
+One parity knot can store a distinction that behaves like a phase label in repeated one-reader measurements. Its four ordinary states also impose a sharp limit. No update on those states can perform the calibrated quantum quarter turn on the six preparations tested here. For three readers, the program's first growth step supplies usable memory. The full quantum correlation table appears when we give the readers a particular rule for sharing and changing that memory. Growth supplies three equivalent storage choices. The passing device gives all three readers access to one writable bit. It therefore breaks the November 23 Bell study’s restriction against handing the same value to two users.
 
 The ordinary devices in this study use bits, allowed changes and explicit sampling weights. The quantum predictions specify what a device would have to reproduce. Some control rules were chosen or searched for with those predictions in view. Their agreement measures what can be encoded. [Frozen design](preregistration.md) · [Subsequent sensitivity tests](sensitivity.md)
 
@@ -37,6 +37,8 @@ One round of the program's ordinary fewest-funded growth preserves the root ABC 
 At setting Z return the root bit. At Y return that bit XOR the chosen fresh bit, then flip both fresh bits in its holding. The pair flip preserves every knot. If each reader uses its own holding, all three scored settings with two Y choices fail. If every reader uses the same holding, all 384 probabilities agree. With two Y choices the two reads of the common bit have opposite values, so they reverse the original even parity exactly once. With an odd number of Y choices its fair initial value makes the final parity fair. Uniform sampling of the root word provides uniformity within each parity class.
 
 Preparing the common bit at zero preserves the four scored tables and loses the other four. Leaving a fair common bit untouched loses all three nonzero scored tables. Calling the toggling Y reader twice in succession gives opposite answers on every trial. An ideal projective Y measurement repeated on its own output gives the same answer. The common-bit device also lets the readers communicate through writable state during a trial. The ability to store a bit comes from growth. Choosing one holding, granting all three readers access and implementing the read-and-toggle remain supplied rules. [Local and common memory tests](verify_growth.py)
+
+The November 23 Bell test makes the difference in access precise. Its two sides used local records, with every present allowed word equally weighted and each complete local record hiding the other side’s setting. With one shared binary distinction the study proved the CHSH ceiling of 2. With two shared distinctions, the ceiling of 2 held throughout the tested two-holder classes. Its 20/9 comparison required one value to serve two users while its distinction was still needed for a birth. A value shared before the settings can enter the one-distinction proof as common randomness. Here successive readers can read and change the same bit during one trial. An earlier choice can therefore change what a later reader receives. The three-reader agreement is a result about shared writable memory. [November 23 Bell study, lead C](../REVIEW-LEADS-20261123-001C/result.md)
 
 ## When even the ordinary read is allowed to write
 
@@ -100,7 +102,7 @@ The full reversible census took 0.29 seconds and 15.2 MiB on the study host. Its
 
 **STOP.** The four-state calibration is settled. The opposite-sign test is sharp, and a larger native preparation that commits to its readout would reopen the investigation. Another fitted table would leave that question open.
 
-**Corrections:** None. The previous comparison explicitly left changing readouts open.
+**Corrections:** The shared-bit comparison now identifies which access restriction in the November 23 Bell study the successful sequential device crosses.
 
 **Goals:** G5, dynamics, gains a bounded obstruction. Its wording is unchanged.
 

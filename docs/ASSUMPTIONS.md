@@ -347,6 +347,8 @@ evidence: results and their status come from the records each entry links.
 | [A289](#a289--settings-as-free-local-edits-the-preparation-kept-through-the-edits-two-weightings-and-a-census-to-test-joins-that-forbid) | Settings as free local edits, the preparation kept through the edits, two weightings and a census, to test joins that forbid | scaffold | Assumed |
 | [A290](#a290--the-whole-round-response-at-the-level-of-the-readers-records-a-free-weighting-and-the-senders-policies) | The whole-round response at the level of the readers' records, a free weighting, and the sender's policies | scaffold | Assumed |
 | [A291](#a291--moves-that-keep-a-class-the-shortest-changes-through-each-distinction-a-second-rule-two-engines-and-a-census) | Moves that keep a class: the shortest changes through each distinction, a second rule, two engines, and a census | scaffold | Assumed |
+| [A292](#a292--a-swaps-lift-its-signed-weightings-two-readings-and-the-readers-distinctions-to-test-a-sign-to-the-sides) | A swap's lift, its signed weightings, two readings and the readers' distinctions, to test a sign to the sides | scaffold | Assumed |
+| [A293](#a293--emergence-is-a-fact-held-by-the-whole-and-by-no-part-and-it-shows-up-at-more-than-one-layer) | Emergence is a fact held by the whole and by no part, and it shows up at more than one layer | interpretation | Assumed |
 
 ## Entries
 
@@ -6030,3 +6032,36 @@ evidence: results and their status come from the records each entry links.
 - **History.**
   - 2026-11-26 · `SECOND-CHECK-20261126-001` ([decision](../research/SECOND-CHECK-20261126-001/decision.md), referee pending): pinning the loose values decides which distance is short and makes the even rings' classes; with it, the grown ring's moves read as knots give back the bare ring.
   - 2026-11-26 · Entered with `TWO-CLASS-SIGN-20261126-001`.
+
+### A292 · A swap's lift, its signed weightings, two readings and the readers' distinctions, to test a sign to the sides
+
+**Assumed** · 2026-11-26 · scaffold
+
+- **Statement.** For one study of G18, choices made to test the owner's "sign to the sides": (1) a swap is a renaming of a stage of order two that moves a knot, carried to the distinctions by the minimal lift (keeping every distinction it can) or the maximal one (exchanging those two by two), one swap read from each class that renamings carry into one another; (2) its sides are the groups of moved knots joined through moved distinctions; (3) signed weightings of the allowed states: W1, the cost −1 of A275 on each pair {d, swap(d)} that holds 1 on both (W1c with 0 read as holding; W1k, W1 on kept states only), W2, −1 when both sides hold an odd number of 1s, W3, +1 on the states the swap keeps, −1 on those it turns into their complement, 0 elsewhere (W3m, flipped on the moved distinctions only), W4, the sign of which side holds more 1s; (4) two readings of a signed weighting as chances: R1, the signed count of a reading's completions over the signed count of all states, and R2, the squares of those signed sums normalised per setting pair (A144); (5) readers choose which of two distinctions to read, from their side's distinctions on two-sided swaps and from the moved distinctions otherwise, with no knot holding distinctions of both; (6) the census of arrangements of three to five knots, each once, grown 0 to 2 rounds, states listed up to 2^22.
+- **Why.** Adopted by the thread on 26 November 2026 for `SIDE-SIGN-20261126-001` at the coordinator's pick: the smallest set of choices that turns a swap into a signed weighting and a reader's table, with every piece the model does not make named.
+- **Rests on it.** The study's census and named cases ([the note](../research/SIDE-SIGN-20261126-001/README.md)).
+- **Challenge.** Each choice is swapped once in the study (the other lift, the other convention, the other reading, the other reader placement, the other law, round 0 and a blow-up start); signs of degree three or more, reads of several distinctions and readers whose setting is an edit are not tested. The model is not expected to keep these choices: R1 and R2 are readings, W1 and W2 need A275's cost, W3 the choice of the twist's nontrivial character.
+- **History.**
+  - 2026-11-26 · Entered with `SIDE-SIGN-20261126-001`.
+
+### A293 · Emergence is a fact held by the whole and by no part, and it shows up at more than one layer
+
+**Assumed** · 2026-11-26 · interpretation
+
+- **Statement.** The owner's guiding principle, in his words: the work is "a logic based fractal with emergence as the
+  guiding principle", and "Emergence isn't just seen once and it goes away, it can show up in multiple places and
+  layers." Read as a fact: emergence is something true of a whole that no part of it can tell, and it can happen again
+  in what the parts make.
+- **Why.** The owner's reading of what the workspace represents (26 November 2026, answering the thread's "facts held by
+  the whole and by no part": "No, but you're getting at exactly what this workspace represents. Emergence."); recorded
+  at his request.
+- **Rests on it.** The guide's Chapter 12 and the theory card "Emergence is a fact held by the whole and by no part".
+  Where it holds in the record: the knot test itself (K1 with K2, proved: the whole rules something out and no part
+  does), and a grown ring under parity whose class, the sum of its old shared distinctions, no knot reads
+  (`TWO-CLASS-SIGN-20261126-001`, computed, refereed). Nothing is derived from the principle.
+- **Challenge.** Whether it happens again one pattern up: several rings whose whole-loop classes act as the distinctions
+  of a larger pattern, with a rule among them and a fact no single ring holds (a study queued after
+  `ON-DEMAND-20261126-001`). Earlier nesting by hand (`BASES-WITHIN-20261112-001`) found the pattern above reads exactly
+  the law below; a second layer made by the growth itself, or an argument that the layers do not stack, would test it.
+- **History.**
+  - 2026-11-26 · Entered at the owner's request.

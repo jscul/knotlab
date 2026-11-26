@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**408 current results** and 5 superseded ones, from 667 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**408 current results** and 5 superseded ones, from 668 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -31,7 +31,7 @@ How to read an entry:
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 26 results
 - [Notes](#notes): 6 self-contained notes
-- [Epics](#epics): all 667 epics with their closures
+- [Epics](#epics): all 668 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -2030,6 +2030,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-26 | Laws whose threshold a new knot reads from itself: does late hearing from afar survive? (`SELF-THRESHOLD-20261126-001`) | — | [folder](research/SELF-THRESHOLD-20261126-001/) |
 | 2026-11-26 | When a local reader's view of a growth settles, from the start alone (`SETTLE-BOUND-20261126-001`) | — | [folder](research/SETTLE-BOUND-20261126-001/) |
 | 2026-11-26 | A ration under which a knot is short again where two patterns join: does one then hear the other from afar (`SHORT-AGAIN-20261126-001`) | — | [folder](research/SHORT-AGAIN-20261126-001/) |
+| 2026-11-26 | A sign to the sides: does a swap of two sides of a meeting pattern make a sign? (`SIDE-SIGN-20261126-001`) | — | [folder](research/SIDE-SIGN-20261126-001/) |
 | 2026-11-26 | Which receivers switch their way of growing on what is at the far end of a line, under a cap (`SWITCH-RECEIVERS-20261126-001`) | — | [folder](research/SWITCH-RECEIVERS-20261126-001/) |
 | 2026-11-26 | The preserved two-class sign: where it is, and whether anything weights the classes oppositely (`TWO-CLASS-SIGN-20261126-001`) | — | [folder](research/TWO-CLASS-SIGN-20261126-001/) |
 | 2026-11-26 | Two lasting patterns in one start: does one keep changing the other (`TWO-PATTERNS-20261126-001`) | — | [folder](research/TWO-PATTERNS-20261126-001/) |

@@ -139,6 +139,12 @@ PYTHONPATH=tools python3 -m knotlab demo
   - [11.4 What the steps between two patterns do to a change](#114-what-the-steps-between-two-patterns-do-to-a-change)
   - [11.5 Same inventory, different arrangement](#115-same-inventory-different-arrangement)
   - [11.6 What a simulation of the pond still needs](#116-what-a-simulation-of-the-pond-still-needs)
+  - [11.7 Computing only what is discovered](#117-computing-only-what-is-discovered)
+- [Chapter 12. Emergence, again and again](#chapter-12-emergence-again-and-again)
+  - [12.0 Introduction](#120-introduction)
+  - [12.1 A fact held by the whole and by no part](#121-a-fact-held-by-the-whole-and-by-no-part)
+  - [12.2 The same again in a grown ring](#122-the-same-again-in-a-grown-ring)
+  - [12.3 Whether it happens again, one pattern up](#123-whether-it-happens-again-one-pattern-up)
 - [Glossary](#glossary)
 
 ## Chapter 1. Bits and rules
@@ -5453,6 +5459,11 @@ then also need the third property, for which no test is registered.
 - [11.6 What a simulation of the pond still needs](#116-what-a-simulation-of-the-pond-still-needs):
   the owner's picture set against the record, claim by claim, two cautions,
   and what is open.
+- [11.7 Computing only what is discovered](#117-computing-only-what-is-discovered):
+  the owner's "we only need to compute what is discoverable". A reader's view
+  through round t needs only the start within t + 1 steps of the map, filled in
+  in any order, after one check of the whole start; parity's whole birth is the
+  one rule that reads everything later.
 
 **The intuition.** Asked whether simulating the beginning of life needs the Big
 Bang, the owner answers that it does not: start at the edge of a pond, and keep
@@ -5941,6 +5952,7 @@ record has and its status.
 | A galaxy is logically small | Beside a pattern joined through a meeting, a pattern's own knots grow as beside one knot; through a meeting a part's course tells how many, never which (lessons 11.3 and 10.5) | Computed; refereed in part |
 | A lamp twice as far gives a quarter | A bounded pace of one step of the map a round, with two effects that ignore it; births that differ counted, but no reading of how an amount divides (lesson 11.4) | The pace proved, referee pending; the weakening open |
 | Two drops with the same molecules | Arrangements that agree in every count grow differently; a count of births seldom decides (lesson 11.5) | Computed; refereed |
+| Only the parts we need are computed | A reader's view through round t needs only the start within t + 1 steps of the map, in any order of filling in, after one check of the whole start (lesson 11.7) | Computed, referee pending |
 | Descents that feed each other | For a pattern's own descent, only under laws added by hand: whether the other part grows (lesson 10.3), or, for one receiver under a cap, one property of the knot at the other end of a chain (lesson 11.4) | Computed, referee pending |
 
 **Two cautions about the picture (reading).**
@@ -5998,6 +6010,183 @@ pond that would mean one growth, under a law with nothing supplied after the
 start, in which a part many steps of the map away can be held by a few counts
 and a part one step away cannot: a pattern whose own births follow what a
 second pattern is, more weakly the more steps lie between.
+
+### 11.7 Computing only what is discovered
+
+**The owner's picture.** The owner wrote: "What if the quantum resolution stuff
+is actually like when the logic has to settle, and when we look at distant
+galaxies, it's essentially like quantum entanglement resolves binding the
+information we see. Like we only need to compute what is
+discoverable/discovered. So we can kind of simulate from "life" with a
+simulated environment, then the "quantum" stuff is what happens as
+"awareness" is made. So the trick here is that we're not actually simulating
+the full environment from the start, just the parts we need."
+
+**The question it poses.** Put a reader at one knot of a start and let it read
+only what grows from there. How much of the start must be computed to give it
+exactly what it would read in the whole growth? And does it matter in which
+order the rest is filled in?
+
+**The words.** A **reader** here is one start knot that holds a loose
+distinction. Its **view** at round t is the round's births that descend from
+it, each read by its number of parents and of fresh distinctions, and with its
+parents' readings too (the readings without names of lesson 11.4). Steps of the
+map are those of lesson 11.0. To grow a **part** of the start is to run the
+growth on some of its live knots alone: each knot keeps its loose distinctions,
+and a knot outside the part that meets knots inside it still counts as their
+common neighbour, so a part is computed from its knots and read from the knots
+around it.
+
+**What was found (computed, referee pending).** Under not-all-equal, the live
+knots within t + 1 steps of the map give the reader's view through round t
+exactly. That held in all 2,256 cases read: 60 random starts of 40 knots without
+cycles, 58 of 25 knots with cycles, and 148 six-knot starts of the census.
+Within t steps is enough except where the edge of the part cuts a group of three
+or more knots joined in round 1 (27 cases): a knot just beyond the edge counts
+for two members of the group, so the part needs one step more. Filling in more
+of the start, in every order tried, never changed a round already read (1,544
+checks). And a reader's view rested on about a quarter to a third of all the
+births of the growth.
+([The on-demand study](research/ON-DEMAND-20261126-001/decision.md))
+
+**Two places where the law reads the whole start.**
+
+- **A shortage in round 1.** A knot that owes more than it holds stops the
+  whole growth in round 1 (lesson 8.1). In 2 of the 252 six-knot starts that
+  stall, the short knot lay in another piece of the start, which no part grown
+  from the reader reaches. So computing on demand needs one check of the whole
+  start before round 1, and only then.
+- **Parity's whole birth.** Under parity a birth that takes every loose
+  distinction of the start is fixed by all the others, so it gets none of its
+  own and the growth closes there; whether a birth is that one depends on
+  everything. Each of the 53 cases where a reader's part differed from the whole
+  growth under parity was such a birth. Under not-all-equal no birth is ever
+  fixed this way.
+
+**What it does not show (reading).** The far part is unread, not undetermined:
+a growth whose law reads only nearby knots can always be run this way, and
+nothing is settled by being read. The bound of t + 1 steps is the opposite of a
+link at a distance, since nothing beyond it can change the reader's view before
+the round that reaches it. Earlier studies found no far change heard late
+(lesson 11.3) and, with free settings, nothing in the model beyond the
+classical bound on correlations
+([the study of what lies beyond rejection](research/BEYOND-REJECTION-20261126-001/decision.md)).
+Parity's whole birth is the one place where a reader's own birth waits on
+everything; the literature calls such a consequence an implied clause, and a
+parity consequence of this kind has no local certificate (Tseitin's parity on
+a cycle is its smallest case).
+
+**The link (intuition).** The literature's name for the bound is the
+dependence cone of a cellular automaton: in the Game of Life of lesson 1.3, a
+cell after t steps depends only on the cells within t steps of it. Here it is
+one step more, because a group is read whole at the edge of the part.
+
+## Chapter 12. Emergence, again and again
+
+### 12.0 Introduction
+
+**The lessons.** What each lesson of this chapter is about:
+
+- [12.1 A fact held by the whole and by no part](#121-a-fact-held-by-the-whole-and-by-no-part):
+  the owner's guiding principle, and the first place it holds: a knot.
+- [12.2 The same again in a grown ring](#122-the-same-again-in-a-grown-ring):
+  a ring of knots that grows keeps a fact of the whole ring that no knot of it
+  can read.
+- [12.3 Whether it happens again, one pattern up](#123-whether-it-happens-again-one-pattern-up):
+  what it would take for such facts to act as distinctions in their turn, and
+  what earlier lines found.
+
+**The intuition.** The owner has called the work "a logic based fractal with
+emergence as the guiding principle" (lesson 7.2), and says what emergence is
+here: "Emergence isn't just seen once and it goes away, it can show up in
+multiple places and layers." This chapter gathers what the guide already says in
+pieces under that principle, shows it once more in a grown ring, and says
+plainly what is the owner's principle, what is computed, and what is untested.
+
+**No new result.** Every statement stands in a record, and the chapter names the
+lesson or study that holds it.
+
+### 12.1 A fact held by the whole and by no part
+
+**The principle (the owner's).** Emergence, in the glossary's words, is what a
+system of rules shows as a whole and none of its rules shows alone. Read as a
+fact: something true of the whole that no part can tell. The owner adds that it
+is not a single event: it "can show up in multiple places and layers". This is
+his guiding principle, a reading, not a theorem (register entry A293).
+
+**The first place it holds: a knot (proved).** The knot test of lesson 2.1 asks
+exactly this of a relation on a few distinctions. The whole rules something out
+(K1); forget any one distinction and the rest are free (K2). So the knot's
+constraint is a fact held by the whole and by no part. Lesson 2.3 measures it:
+the whole holds up to one bit that no pair holds, and only parity holds a full
+bit.
+
+**A question to check.** Parity on three distinctions allows the four states
+with an even number of ones. Which single distinction tells you anything about
+the others? None: each value of any one distinction, and of any two, still
+leaves an allowed state. The fact "the sum is even" belongs to all three.
+
+### 12.2 The same again in a grown ring
+
+**The setting.** A ring of knots (glossary, "Ring"): n knots in a cycle, each
+sharing one distinction with each of its two neighbours and holding two loose
+distinctions, grown one round under parity (lesson 8.1). The allowed states
+after the round are the assignments every knot allows.
+
+**What the whole ring keeps (computed, refereed).** After the first round,
+for every ring of four to twelve knots, the allowed states split into two
+classes. A state's class is the parity of the ring's old shared distinctions,
+the sum of all of them, which no single knot holds: each knot holds only two of
+them. Changing a state by the smallest allowed changes never changes its class,
+and the classes were followed into the next round on rings of four to thirteen
+knots. On the five-knot ring there are 32,768 allowed states, 16,384 in each
+class. The literature's name for such a fact is a sector of a classical code: a
+value that every small change keeps and no local check reads
+([the preserved two-class sign](research/TWO-CLASS-SIGN-20261126-001/decision.md),
+refereed).
+
+**What it depends on (reading).** The fact itself, the sum of the old ring
+distinctions, is a property of each state. That it lasts depends on what counts
+as a small change: with every change that cannot be split as the small changes,
+there is one class, and the change of the whole old ring exchanges the two
+classes on odd rings. So the ring holds a whole-loop fact; how firmly it holds it
+is a choice of reading. On the census starts of three to five knots, unlike the
+rings, the class can be read inside a single knot.
+
+**So emergence happens twice here.** Once in each knot, whose constraint no
+part of it holds (lesson 12.1), and again in the ring of knots, whose class no
+knot of it holds.
+
+### 12.3 Whether it happens again, one pattern up
+
+**The question.** If a whole-loop fact is a fact of the whole that no part
+holds, it might in turn serve as a distinction: two values, open until fixed.
+Then several rings that share knots or grow together would be the knots of a
+larger pattern, if their classes obey a rule among themselves, and that larger
+pattern might keep a fact no single ring holds. The literature has this shape:
+codes built out of codes (concatenated codes). Whether the growth does it is
+untested; a study to test it is queued.
+
+**What earlier lines found.** Lesson 4.8 binds distinctions at different
+depths of one address tree, with a bond that grows by one member per depth. A
+study of bases within bases made each distinction of an outer pattern into a
+pattern of its own and found that the pattern above allows exactly the outer
+states, at every depth: nesting by hand adds no new constraint and spreads no
+influence
+([bases within bases](research/BASES-WITHIN-20261112-001/bases_within.md),
+refereed: for not-all-equal this is its mirror symmetry). Those lines nest one
+rule inside another by construction. The question here is different: whether a
+fact the growth itself makes at one stage becomes a distinction of the next,
+with nothing nested by hand.
+
+**What is the principle, what is computed, what is untested.**
+
+| Statement | Status |
+| --- | --- |
+| Emergence is a fact held by the whole and by no part, and it shows up at more than one place and layer | the owner's guiding principle (register entry A293) |
+| A knot's constraint is held by the whole and by no part | proved (lessons 2.1 and 2.3) |
+| A grown ring under parity keeps a class of the whole ring that no knot reads | computed, refereed (lesson 12.2) |
+| Several rings' classes act as distinctions of a larger pattern that keeps a fact no ring holds | untested; a study is queued |
 
 ## Glossary
 

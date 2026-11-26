@@ -330,6 +330,8 @@ evidence: results and their status come from the records each entry links.
 | [A272](#a272--sum-an-unused-distinction-before-reading-its-outcome) | Sum an unused distinction before reading its outcome | scaffold | Assumed |
 | [A273](#a273--compare-the-child-payments-with-the-private-pair-parities) | Compare the child payments with the private pair parities | scaffold | Assumed |
 | [A274](#a274--a-cap-of-any-size-on-the-fresh-distinctions-a-birth-receives) | A cap of any size on the fresh distinctions a birth receives | scaffold | Assumed |
+| [A275](#a275--swapping-two-distinctions-that-both-hold-1-costs-1) | Swapping two distinctions that both hold 1 costs −1 | scaffold | Assumed |
+| [A276](#a276--a-reader-holds-its-old-distinction-and-its-childs-first-fresh-one-and-flips-them-with-the-odd-factor-on-the-old-one) | A reader holds its old distinction and its child's first fresh one, and flips them with the odd factor on the old one | scaffold | Assumed |
 
 ## Entries
 
@@ -5688,3 +5690,25 @@ evidence: results and their status come from the records each entry links.
 - **Challenge.** Swap the cap for another rule that bounds what a birth receives (a cap on places; a ration that depends on the parents' holdings), and for a cap that a growth could set for itself. The finding is about the model only so far as it survives. Whether lasting families exist under any cap is open.
 - **History.**
   - 2026-11-26 · Entered with the first step of `FAMILIES-THAT-MEET-20261126-001`. Swapped within it: c from 2 to 8 and no cap, three treatments of short knots, both knot laws. What survived: a difference at every c from 4 to 8, none at 2, 3 or without a cap.
+
+### A275 · Swapping two distinctions that both hold 1 costs −1
+
+**Assumed** · 2026-11-26 · scaffold
+
+- **Statement.** List distinctions in the order they were created. A listing's weight relative to another is s raised to the number of pairs of distinctions that both hold 1 and whose relative order differs, with s = −1. This is the literature's exchange sign of fermions (Jordan and Wigner, 1928); a swap of two neighbouring distinctions under it is the same as one CZ per crossing.
+- **Why.** On the even words of the three-distinction parity knot the sign of reversing the listing is exactly `+---`, the preparation the three-detector experiment needs with real readings, and the growth law already leaves the commit order of a round free. The rule tests whether that freedom can supply the sign.
+- **Rests on it.** The finding that a round's own commit order, measured against its parents' creation order, carries the full contradiction. [Reordering test](../research/REORDER-SIGN-20261126-001/results.md)
+- **Challenge.** Use s = +1 (no sign anywhere, every scored win 5/8); derive the rule from the program's own laws rather than adding it; find a test that separates exchange statistics from one CZ per crossing; impose parity superselection, which forbids the odd local births the model uses.
+- **History.**
+  - 2026-11-26 · Added by the reordering test. The frozen predictions G and P1–P6 held; P7 (order is gauge once the rule also governs the readings) failed.
+
+### A276 · A reader holds its old distinction and its child's first fresh one, and flips them with the odd factor on the old one
+
+**Assumed** · 2026-11-26 · scaffold
+
+- **Statement.** In the grown parity ternary, reader j holds old distinction x_j and the first fresh distinction y_j of the child born from it. Its ordinary reading is the parity of x_j. Its flip reading is the real pair flip X_x·X_y; in the fermionic model, the local even operator F1 = −iγ′_x γ_y, whose odd factor γ′ sits on the old distinction.
+- **Why.** Reading the old distinction alone decoheres: its child's fresh pair records its value, and the scored win falls to 5/8. The pair flip keeps the child's parity. F1 is the dressed form of X_x·X_y when the old distinction precedes the fresh one, as it does in creation order.
+- **Rests on it.** Every three-reader table of the reordering test. [Reordering test](../research/REORDER-SIGN-20261126-001/results.md)
+- **Challenge.** Use the other real pair flip F2 = iγ_x γ′_y (no order then carries the contradiction); let readers mix F1 and F2; put a reader's record on the child's second fresh distinction; give readers no access to their child.
+- **History.**
+  - 2026-11-26 · Added by the reordering test. With F1, the contradiction appears exactly when the children are committed in an even order relative to their parents' creation order; with F2, in no order.

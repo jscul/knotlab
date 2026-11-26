@@ -208,6 +208,37 @@ class Piece:
                     yield frozenset(C), frozenset(E), w
 
 
+class GeneralPiece(Piece):
+    """the revised reading found after the frozen test failed (post hoc, not tested on held-out starts): a valid set's
+    parents are all its valid subsets of size one less (cutting two cells that share a knot at once included), and its
+    fresh distinctions are its valid supersets of size one more within the core, plus one per chain at it"""
+    def __init__(self, *a, **k):
+        super().__init__(*a, **k)
+        self.sizes_of = {}
+        for C in connected_sets(self.pts, self.adj):
+            if self.valid(C): self.sizes_of[frozenset(C)] = self.size(C)
+        self.core_parents = {}; self.children = collections.Counter()
+        for C, z in self.sizes_of.items():
+            ex = sum(len(G) - 2 for G in self.cells if G <= C); out = set()
+            for r in range(1, min(len(C) - 1, 1 + ex) + 1):
+                for X in itertools.combinations(sorted(C, key=str), r):
+                    T = C - frozenset(X)
+                    if self.sizes_of.get(T) == z - 1: out.add(T)
+            self.core_parents[C] = out
+            for T in out: self.children[T] += 1
+
+    def parent_sets(self, C, E):
+        bases = {e[0] for e in E}
+        return {T for T in self.core_parents[C] if bases <= T}
+
+    def kind(self, C, E):
+        key = (C, E)
+        if key not in self.memo:
+            self.memo[key] = (len(E) + len(self.parent_sets(C, E)),
+                              self.children[C] + sum(self.chains.get(v, 0) for v in C))
+        return self.memo[key]
+
+
 def gbinom(m, r):
     """the binomial coefficient as a polynomial in m (any integer m, r >= 0)"""
     out = 1
@@ -225,7 +256,7 @@ def term_at(t, w, k, j):
     return (comb(m, q - 1) if m >= q - 1 else 0), gbinom(m, q - 1)
 
 
-def predict(stars, rounds, knot_law='nae', ablate=(), static=None):
+def predict(stars, rounds, knot_law='nae', ablate=(), static=None, general=False):
     """the predicted rows (round 1..rounds) in the readings sig0 and sig1, or a reason it is not predicted.
     ablate (negative controls only): 'relay' closes every finite piece, 'cells' reads no group cells.  static, a dict,
     receives the stratum, the predicted dimension D and, in each reading, the predicted settling round K: the least
@@ -248,7 +279,7 @@ def predict(stars, rounds, knot_law='nae', ablate=(), static=None):
             if not E: break
 
     for pts, tree, nch in M.pieces:
-        P = Piece(pts, M.adj, M.chains, lambda v: v < M.n, start, lambda v: 1, M.cells)
+        P = (GeneralPiece if general else Piece)(pts, M.adj, M.chains, lambda v: v < M.n, start, lambda v: 1, M.cells)
         relay = nch == 0 and (knot_law == 'nae' or many) and 'relay' not in ablate
         whole = frozenset(pts)
         for C, E, w in P.configs():

@@ -342,6 +342,7 @@ evidence: results and their status come from the records each entry links.
 | [A284](#a284--a-new-knot-holds-back-part-of-what-it-is-owed-two-forms) | A new knot holds back part of what it is owed: two forms | scaffold | Assumed |
 | [A285](#a285--a-threshold-a-new-knot-reads-from-itself-two-forms) | A threshold a new knot reads from itself: two forms | scaffold | Assumed |
 | [A286](#a286--strata-starts-built-by-hand-with-large-groups-a-second-weighting-and-a-longer-horizon-to-test-the-late-view-predictor) | Strata, starts built by hand with large groups, a second weighting and a longer horizon, to test the late-view predictor | scaffold | Assumed |
+| [A287](#a287--a-round-1-group-of-three-or-more-knots-is-one-cell-of-the-map-of-joins) | A round-1 group of three or more knots is one cell of the map of joins | reading | Under challenge |
 
 ## Entries
 
@@ -5918,8 +5919,35 @@ evidence: results and their status come from the records each entry links.
 - **Why.** Adopted by the thread on 26 November 2026 with the advisor's review before the freeze: every group cell in the
   census of up to five knots is small, so the rare strata, the large cells and a second weighting are where the predictor's
   reading of groups is most likely to fail.
-- **Rests on it.** Whatever the study claims about starts of six and seven knots (filled in at its close).
+- **Rests on it.** That a local reader's view and its settling round are read off the start's finite map for 705 of
+  706 accepted starts of the uniform six-knot sample and all 70 accepted seven-knot starts of the 'grow' weighting, and
+  that the group-cell reading fails where two cells share a knot (39 of 39 of the stratified supplement)
+  ([the decision](../research/LATE-VIEWS-20261126-001/decision.md)).
 - **Challenge.** Seeds and weightings other than these, starts of eight or more knots, horizons past 40 rounds. The model
   is not expected to replace them: they are how an observer samples starts.
 - **History.**
+  - 2026-11-26 · `LATE-VIEWS-20261126-001` closed (computed; referee pending). Swapped within it: the knot law, the reading,
+    the weighting (census, strata, 'grow' at seven knots), the seed, the horizon (24 and 40 rounds), the census for starts
+    built by hand; the agreement survives every swap, and the failure belongs to the cell reading (A287), not to a scaffold.
   - 2026-11-26 · Entered with `LATE-VIEWS-20261126-001` at its freeze.
+
+### A287 · A round-1 group of three or more knots is one cell of the map of joins
+
+**Under challenge** · 2026-11-26 · reading
+
+- **Statement.** In reading a start's births off its extended map (the proved identification of `RING-IDENT`,
+  `CHAIN-IDENT`, `RELAY-IDENT` and `DOUBLE-IDENT`, which assumes no such group), each round-1 group of g ≥ 3 live knots is
+  one cell: a birth holds one knot of it or none, or all of it; a birth holding the whole cell is g − 2 rounds earlier
+  than its number of points says; blocks inside the cell are dropped, and a block meeting the cell in m knots counts as
+  m − 1 filled cycles. With it, repeated blocks are read as their distinct maximal sets (Lemma R, proved).
+- **Why.** Found by the thread on 26 November 2026 for `LATE-VIEWS-20261126-001` by exploring the census of up to four
+  knots, and kept when it matched every accepted start of up to five knots; not proved.
+- **Rests on it.** That a local reader's view is read off the start's finite map for 666 of the 667 accepted starts of
+  the uniform six-knot sample that are outside the proved class, and for all 30 such seven-knot starts of the 'grow'
+  weighting ([the decision](../research/LATE-VIEWS-20261126-001/decision.md)).
+- **Challenge.** It fails as frozen where two cells share a knot (39 of 39 drawn there) and in 3 starts where a block
+  meets a cell of four. A reading found afterwards, the valid sets as a graded order (parents the sets a birth covers,
+  fresh distinctions the sets covering it), fixes 40 of the 42 and needs held-out starts; a proof would extend the
+  identification to most starts that do not stall.
+- **History.**
+  - 2026-11-26 · Entered under challenge with `LATE-VIEWS-20261126-001` (computed; referee pending).

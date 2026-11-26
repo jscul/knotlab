@@ -124,3 +124,58 @@ all 199 stratified, 16 of 17 built by hand, 70 of the seven-knot set, all 100 fo
 **Stop.** One accepted start whose grown view differs from its prediction in any round read, in either reading, under
 either law, in any set; or none. A miss in the proved class would be a fault in the code or in the identification; a
 miss elsewhere, in a stratum, narrows the two readings to the strata where they held.
+
+## What was found
+
+The grown sets ([`held_out_nae.jsonl.gz`](held_out_nae.jsonl.gz), [`held_out_parity.jsonl.gz`](held_out_parity.jsonl.gz),
+`grown_*.jsonl.gz`) were opened after the freeze and scored by [`score.py`](score.py) ([`score.json`](score.json)).
+
+| set | accepted | proved class: agree | a new reading: agree | not accepted |
+|---|---|---|---|---|
+| uniform, six knots | 706 | 39 of 39 | 666 of 667 | 1,253 stall; 41 a piece with a cycle |
+| stratified, six knots | 199 | none in it | 159 of 199 | none |
+| built by hand | 16 | none in it | 15 of 16 | 1 a piece with a cycle |
+| 'grow' weighting, seven knots | 70 | 40 of 40 | 30 of 30 | 929 stall; 1 a piece with a cycle |
+| horizon, to round 40 | 100 | 9 of 9 | 91 of 91 | none |
+
+Each row holds under not-all-equal and under parity alike: the same starts agree and differ.
+
+**The stop is met: 42 accepted starts differ.** By the stratum each was drawn for:
+- **Group cells sharing a knot: 39 of 39 differ**, from round 1. Two cells G1 and G2 meet in one knot k; a knot a of
+  G1 and a knot b of G2 are candidates through k, so {a, b} is a round-1 pair, and in round 2 one birth holds both cells
+  with three parents, G1, G2 and the pair. The frozen rule gives the pair no fresh distinction (adding the rest of either
+  cell alone breaks the other) and the union two parents.
+- **A block meeting a group cell in two or three knots: 3 differ** (one of the uniform set, census entry 6408, a cell of
+  four knots; one of the stratified set; the hand-built start of four knots touching pairwise with a knot hanging from
+  each), from round 2.
+- Every other stratum agrees: two cells sharing no knot 40 of 40, a cell of four or more 40 of 40 (and 40 of 40 with
+  chains), a block meeting a cell with chains 39 of 40.
+
+**The rest of the predictions.**
+- **P2.** The grown dimension equals the predicted one for every accepted start of a dimension; the settling round is as
+  predicted for all but the starts that differ (uniform 697 of 698 in each reading under not-all-equal; seven knots 70 of
+  70; horizon 100 of 100).
+- **P3** holds: all 100 starts agree through round 40.
+- **P4** holds: without the relay 217 of the 706 uniform starts differ, without the group cells 581, and the
+  not-all-equal reading on the parity growths 173.
+- Every start read as stalling by its round-1 demand stalls at round 1 (1,253 uniform, 929 seven-knot).
+
+**Post hoc, not a test** ([`posthoc.py`](posthoc.py), [`posthoc.json`](posthoc.json)). Read the valid sets as a graded
+collection ordered by inclusion: a birth's parents are all its valid subsets of size one less, and its fresh
+distinctions all its valid supersets of size one more, plus one per chain at it (`late.GeneralPiece`). In the proved
+class this is the identification itself. It agrees with 40 of the 42 misses and with every start that agreed before, in
+every set and the fitting data; the two left (census entry 6408 and the hand-built start, a cell of four with blocks
+meeting it) are not explained. Found on the misses, it needs held-out starts of its own.
+
+**What it says.** For 705 of the 706 accepted starts of the uniform six-knot sample, and every accepted seven-knot start
+of a second weighting, a local reader's whole view, every round in both readings, and the round at which it settles are
+read off the start's finite map without growing it. The proved identification accounts for 39 of the 706; the rest rest
+on two readings this study adds, repeated blocks and group cells, and the group-cell reading as frozen fails where two
+cells share a knot, a stratum of 42 starts in the six-knot census.
+
+**Link (intuition-links), offered and not checked as a theorem.** The post hoc reading makes the growth the literature's
+Hasse diagram of a graded partially ordered set (Stanley, *Enumerative Combinatorics* I, chapter 3): the valid sets
+ordered by inclusion, ranked by size less one; a birth's round is its rank, its parents are the sets it covers, and its
+fresh distinctions count the sets that cover it. A group cell is then a set that enters the order whole, one rank above
+its knots, and two cells that share a knot are covered together by their union. Cheapest test: the revised reading on
+fresh starts where cells share a knot.

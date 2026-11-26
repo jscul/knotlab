@@ -352,6 +352,7 @@ evidence: results and their status come from the records each entry links.
 | [A294](#a294--a-contradiction-among-views-is-not-a-failure-one-view-never-gives-both-answers) | A contradiction among views is not a failure; one view never gives both answers | interpretation | Assumed |
 | [A295](#a295--every-two-distinctions-have-a-joint-value-even-where-no-knot-holds-both) | Every two distinctions have a joint value, even where no knot holds both | premise | Under challenge |
 | [A296](#a296--no-signalling-means-no-free-sender-can-change-the-other-readers-complete-record-tables-come-from-one-state-of-the-whole) | No signalling means no free sender can change the other reader's complete record; tables come from one state of the whole | scaffold | Assumed |
+| [A297](#a297--rule-r-read-off-the-whole-structure-with-settled-and-open-pairs-one-realisation-and-the-counting-state) | Rule R read off the whole structure, with settled and open pairs, one realisation and the counting state | scaffold | Assumed |
 
 ## Entries
 
@@ -6165,3 +6166,23 @@ evidence: results and their status come from the records each entry links.
 - **Challenge.** Read the record with fixed settings only (the 9/4 tables then stand as no-signalling tables beyond quantum theory); drop (2), as the study of patterns with allowed parts and no allowed whole does. The model is not expected to keep (2) if that study succeeds.
 - **History.**
   - 2026-11-26 · Entered with `EXCESS-KINDS-20261126-001`.
+
+### A297 · Rule R read off the whole structure, with settled and open pairs, one realisation and the counting state
+
+**Assumed** · 2026-11-26 · scaffold
+
+- **Statement.** To test rule R (two values commute exactly when some knot holds both) as a rule read off the whole
+  fixed structure, `EVENTUAL-R-20261126-001` reads "the whole" as the last round grown, with every pair of distinctions
+  classed settled (either held twice, or held by one knot) or open (both loose in different knots, while growth goes on);
+  realises values as signed Pauli products with no relation beyond R; takes the counting state (every knot even except
+  the last of each closed component, which takes the forced sign); and samples 300 census starts uniformly (seed
+  20261128), ordinary parity growth on the canonical engine, four rounds.
+- **Why.** Chosen to make the test finite without reading an open pair as failing; the realisation is the freest one R
+  allows; the counting state is the one the knots' own laws fix.
+- **Rests on it.** That study's findings: R is well defined and consistent with earlier readings, but no state makes
+  every knot hold on 290 of the 300 sampled starts; the flip formula (1,035 changes); the three-reader value 4.
+- **Challenge.** Read past four rounds; another engine (the recent line's) or weighting; a realisation with extra
+  relations (which could add laws); a state other than the counting one (which changes probabilities, not whether a
+  state exists). Expected to stay a scaffold of the test; the model is not expected to adopt R.
+- **History.**
+  - 2026-11-26 · Entered by `EVENTUAL-R-20261126-001`.

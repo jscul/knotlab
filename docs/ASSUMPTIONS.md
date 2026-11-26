@@ -333,6 +333,7 @@ evidence: results and their status come from the records each entry links.
 | [A275](#a275--swapping-two-distinctions-that-both-hold-1-costs-1) | Swapping two distinctions that both hold 1 costs −1 | scaffold | Assumed |
 | [A276](#a276--a-reader-holds-its-old-distinction-and-its-childs-first-fresh-one-and-flips-them-with-the-odd-factor-on-the-old-one) | A reader holds its old distinction and its child's first fresh one, and flips them with the odd factor on the old one | scaffold | Assumed |
 | [A277](#a277--a-stub-and-a-mark-stand-for-the-presence-and-the-kind-of-a-pattern) | A stub and a mark stand for the presence and the kind of a pattern | scaffold | Assumed |
+| [A278](#a278--rations-made-by-hand-so-that-knots-are-short-now-and-then) | Rations made by hand so that knots are short now and then | scaffold | Assumed |
 
 ## Entries
 
@@ -5725,3 +5726,14 @@ evidence: results and their status come from the records each entry links.
 - **Challenge.** Swap the mark for another start in the other's place, and the strict reading of "own" for the influence-cone study's. The cheapest test is the census again with the second start exchanged for each other sited start of the same site holdings. If a start's own births then differ late where no mark did, the results are about the mark, not about the laws. The model is not expected to replace these: they are instruments of comparison, and nothing in a growth holds them.
 - **History.**
   - 2026-11-26 · Entered with the bench, the toy and the census of `TWO-PATTERNS-20261126-001`. Swapped within them: two joins, one to three steps, nine laws and eleven more rations or takes, 3 patterns and 44 sited small starts. Not swapped: the mark, the stub and the strict reading of a pattern's own knots.
+
+### A278 · Rations made by hand so that knots are short now and then
+
+**Assumed** · 2026-11-26 · scaffold
+
+- **Statement.** Four rations added by hand for one study, each reading only what the record's rations read (whether a new knot is a join or an offshoot, how many distinctions it was given, how many joins it will be owed): one fewer than the ordinary count when the demand is odd (ODD-FEWER); a join one fewer when its demand exceeds its number of parents (BUSY-FEWER); a join one fewer always (JOIN-FEWER); one fewer when the demand leaves 2 on division by 3 (THIRD-FEWER). Nothing in the model supplies any of them. They were run beside the ordinary count and the ring study's ration of one fewer always.
+- **Why.** Adopted by the thread on 26 November 2026 for `SHORT-AGAIN-20261126-001`, at the owner's word ("Yes, let's do 1."), after two studies found that under the ordinary count no new knot is ever short and under a cap the joins between two patterns stop. The four were chosen with the advisor before any was run; its forecasts are in the study's note.
+- **Rests on it.** That a change in one pattern is first heard by another pattern's own knots at a round growing by one with each step between them, to distance eight: seen for two seven-knot sources joined by a meeting, with waiting, under JOIN-FEWER (every mark) and under the ring study's ration (two marks of seven), and under no ration where short knots retire ([the note](../research/SHORT-AGAIN-20261126-001/README.md)).
+- **Challenge.** The result is about a line of waiting knots more than about a ration: the cheapest test is the same reading under the record's cap of three with waiting on the same pair and chain, and under a different treatment of waiting knots. If a change travels there too, the ration is not what carries it. The model is expected to replace these rations or drop them: a rule that withholds one distinction from every join has no reason behind it yet.
+- **History.**
+  - 2026-11-26 · Entered with `SHORT-AGAIN-20261126-001`. Swapped within it: five rations and the ordinary count, three treatments, distances one to eight, four small receivers and senders, the bench's three patterns and the census's 990 pairs. What survived: hearing from afar only with waiting, only with a source at the receiving end, under JOIN-FEWER and in part under the ring study's ration.

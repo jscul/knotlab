@@ -338,6 +338,7 @@ evidence: results and their status come from the records each entry links.
 | [A280](#a280--from-a-place-only-the-differences-that-can-make-a-difference-there-need-simulating) | From a place, only the differences that can make a difference there need simulating | interpretation | Assumed |
 | [A281](#a281--an-origin-can-be-found-or-invented-from-what-is-here) | An origin can be found or invented from what is here | working premise | Assumed |
 | [A282](#a282--five-senders-caps-of-four-to-seven-and-two-starts-built-by-hand-to-find-which-receivers-switch) | Five senders, caps of four to seven and two starts built by hand, to find which receivers switch | scaffold | Assumed |
+| [A283](#a283--the-damage-of-a-change-read-without-names-with-a-struck-pulse-and-a-mark-at-a-made-knot) | The damage of a change read without names, with a struck pulse and a mark at a made knot | scaffold | Assumed |
 
 ## Entries
 
@@ -5790,6 +5791,11 @@ evidence: results and their status come from the records each entry links.
   mark, in a growth of known dimension, against the number of knots at that many steps. If no law of the growth gives a share
   that falls with the steps, the picture cannot come out of the logic as it stands.
 - **History.**
+  - 2026-11-26 · `HOW-MUCH-ARRIVES-20261126-001` ([decision](../research/HOW-MUCH-ARRIVES-20261126-001/decision.md)) measured how
+    much of a change arrives, read without names: under the ordinary count some changes at the start of a growth of
+    dimension two settle to a fixed number of births a round while the round's count grows, so their share falls as one
+    over the count, the lamp's form in dimension two (computed, referee pending); every other change tried holds or takes
+    over, and between two patterns nothing falls with the steps. Status unchanged.
   - 2026-11-26 · Entered with Chapter 11 of the Intuitions guide, "Simulating our reality".
 
 ### A281 · An origin can be found or invented from what is here
@@ -5829,3 +5835,29 @@ evidence: results and their status come from the records each entry links.
   - 2026-11-26 · Refereed (report R1 on `SWITCH-RECEIVERS-20261126-001`, confirmed with fixes, one Block): swapping the five senders for all 599 four-knot sited senders breaks the reading of the far site's loose count (by the site's loose count 0 to 3: 0 of 59, 4 of 144, 175 of 198, 0 of 198 switch); the switch is the panel's. The caps of six and seven came from the rule's test, the cap of five and the three bands from the advisor.
   - 2026-11-26 · `SECOND-SWITCH-20261126-001` ([decision](../research/SECOND-SWITCH-20261126-001/decision.md), referee pending): the five members of the far end's own knots nearest the receiver, and its nearest member that waits, as the places of a change made after both exist (0 of 652 heard under caps of three to seven, and 0 of 80 under the ordinary count); and every receiver of the census as a far end. The negative's reason is that the two patterns come apart into parts that share no distinction by round 3, which no choice of place changes.
   - 2026-11-26 · Entered with `SWITCH-RECEIVERS-20261126-001`. Swapped within it: five caps and two other laws, four distances, 646 receivers, and for the switch receiver 48 senders under caps of four and five.
+
+### A283 · The damage of a change read without names, with a struck pulse and a mark at a made knot
+
+**Assumed** · 2026-11-26 · scaffold
+
+- **Statement.** Choices made by `HOW-MUCH-ARRIVES-20261126-001` to measure how much of a change arrives: (1) a birth is
+  matched between a growth and the same growth with one change by its kind, number of parents, fresh distinctions and
+  places (sig0), or with its parents' sig0 as well (sig1), in place of its name by descent, which is hereditary; (2) the
+  damage of a round is the multiset difference both ways, against the births of both growths that round; (3) a change
+  is one more loose distinction at a start knot or a made knot, or one moved between start knots; (4) a pulse bars,
+  after one round, the loose distinctions of the knots that took the added distinction; (5) a birth's place is its
+  distance in holder steps from the changed knot after its round. Nothing in the model supplies any of them.
+- **Why.** Adopted by the thread on 26 November 2026, with the advisor's review before the full run: the reading by name
+  counts every descendant of a new birth as new, so it could not show a weakening.
+- **Rests on it.** That under the ordinary count some changes at the start of two dimension-two starts weaken (a fixed
+  4, 5 or 1 births a round against a growing round, to round 32), that made marks and pulses hold, and that two
+  changes can partly cancel ([the decision](../research/HOW-MUCH-ARRIVES-20261126-001/decision.md)).
+- **Challenge.** A matching that does not forget descent but also does not inherit it: the advisor's signature of the
+  map of joins within one or two steps of each birth. If the weakening cases grow under it, the weakening is about
+  sig0 and sig1, which count local kinds of birth, and not about the model. A pulse that also takes back the advance
+  payment it caused would test reading 3 of the decision. The model is not expected to supply these readings: they are
+  how an observer outside compares two growths, kept until a pattern inside the growth can make the comparison.
+- **History.**
+  - 2026-11-26 · Entered with `HOW-MUCH-ARRIVES-20261126-001`. Swapped within it: the knot law (161 jobs identical under
+    parity), the reading (by name, sig0, sig1), six starts of four kinds. Not swapped: the signature's depth, the pulse's
+    rule.

@@ -1,5 +1,12 @@
 # The thread's later look inside the "undecided" one-round counts
 
+> **Referee report R1, 26 November 2026** ([the report](../referee-R1/report.md)): the count 3r² + 3r + 1 is
+> reproduced by an independent growth on all 128 saved member profiles. Two repairs to this note. "Not under the cap
+> of three with waiting" is wrong: the script missed the waiting fields, and the square count holds there too on 19 of
+> 32 sampled members (72 of 128 in all; the longest matches run from 12 to 20 steps). And the registered reading did
+> not label these undecided because "the part is not wide enough": the exact square is the first stretch of the count
+> and the classifier reads the last.
+
 Study `KNOTS-WITHIN-REACH-20261125-001`, 25 November 2026, after the study closed. The result note reported the
 registered labels of the roster count (power 1, all within reach, undecided) and concluded that what exists at one
 round is of degree 1. The thread then read the counts behind the label "undecided", from the study's own raw records,

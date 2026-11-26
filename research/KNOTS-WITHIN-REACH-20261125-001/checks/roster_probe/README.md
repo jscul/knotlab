@@ -8,6 +8,19 @@ with a second engine.
 [The probe](probe.py) · [its driver](drive.py) · [the runs](probe_runs.jsonl.gz) · [the second engine](second_engine.py) ·
 [the starts](fast_starts.json) · [the matching and the larger starts](model_check.py) · [their output](model_check.json)
 
+> **Referee report R1, 26 November 2026** ([the report](../../referee-R1/report.md)): an independent growth
+> matched all 142 runs and 958 recorded stages, and matched every one-step pair to the description on all 25 stages.
+> Read this note with these changes.
+> - For "the best-placed member" and "from every member" read: the greatest count at each step over the members
+>   examined. Of the 958 stages, 681 read every member of the largest part, 69 a sample, and 208 sizes only. Counting
+>   every member on the 69 sampled stages changes later greatest counts on 23 and no formula's range.
+> - The member with the most within one step need not be the member with the most within three.
+> - The probe's second computation compared totals, counts by number of neighbours and greatest counts; that cannot
+>   show the one-step pairs are the same. The referee's explicit matchings do.
+> - The knot test here is a sample: 200 made knots a run.
+> - All four families now have proofs, in the study of widening rosters
+>   ([its note](../../../WIDENING-ROSTERS-20261125-001/rosters.md)); the two denser size formulas hold from round 3.
+
 ## What the record already had (searched after the probe)
 
 The main fact was already in the record, by another count. The study of the first knot

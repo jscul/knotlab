@@ -9,6 +9,45 @@ referee pending.
 [pre-registration](../KNOTS-WITHIN-REACH-20261125-001A/preregistration.md) · [survey of the record](survey.md) ·
 [referee hand-off](referee_handoff.md) · [advisor review before the freeze](advisor/README.md)
 
+> **Referee report R1, 26 November 2026: confirmed with fixes; three claims blocked** ([the report](referee-R1/report.md)). An
+> independent growth reproduces the square and the cube counts at one round; the five lemmas hold under their stated
+> hypotheses; the registered tables are recounted. Read this note with these changes.
+> - **Block: the one-round headline.** "What exists at one round reads power 1, or lies wholly within reach, in every
+>   run read" is withdrawn, as the correction above began to say. The registered labels were 1,700 linear, 169 all
+>   within reach and 283 undecided, of 2,152 readings; the undecided ones are outside the two outcomes the prediction
+>   names. On the 23 starts whose births grow fastest the count is an exact square on 19 and an exact cube on 4, on
+>   the ranges read. The correction above missed two things. The square count also holds under the cap of three with
+>   waiting (19 of 32 sampled members there; 72 of 128 in all). And the registered reading did not miss it for want
+>   of width: the exact square is the first stretch of the count, and the classifier reads the last.
+> - **Block: the history count does not give the degree of what exists at one round.** "Where the number of parts is
+>   fixed, a power of the history count is the roster's power plus one from the rounds" is false. The 54 runs kept
+>   their number of parts while the parts changed size. And in an example the referee built, a roster of 67 members
+>   that stays the same for 32 rounds has the count 2r + 1 while its history count grows as the cube of r. What
+>   stands: the exact count on the bare ring, and the shifted bounds of Lemma R.
+> - **Block: "every knot tested passed" under parity.** All 216,017 sampled parity occurrences pass the projection
+>   the study computed, but three have only two places, fewer than the canonical knot test requires (one closing
+>   birth on one start, under three laws). In the runs with a taking rule, beside the 204 reported failures, 2,135
+>   more pass the projection with fewer than three places: 2,339 outside the canonical test or failing it. All 434
+>   tied pairs of loose distinctions (prediction 11) survive: both holders have three or more places and pass.
+> - **Births (narrowing).** The cap of three with retiring also turns 36 constant birth sequences into linear ones,
+>   so "the cap stops only the faster ones" is too simple. The shares 0.80 and 0.666 are estimates from 469 census
+>   starts; which side of two thirds the census lies on is not decided.
+> - **History verdicts (narrowing).** By the claim's own rule for an unreached longer stage, 69 runs are undecided,
+>   not 39 (21 pass, 145 fail the gate). Prediction 5 holds either way.
+> - **The lemmas and the knot test (narrowing).** For "checked on every run" read the report's counts: 136 named
+>   prefixes for Lemmas E and R; 84 of 87 continuations for Lemma F; 1,930 control stages for Lemma N; 29,599 parity
+>   stages by algebra and 5,649 by enumeration for Lemma P. The knot test sampled 200 made knots a run whatever the
+>   run's size, so it supports no pooled bound on a failing share.
+> - **The growing end (narrowing).** Under the ration just enough for three places, all 1,224 comparisons tie in
+>   delay, which is always one; 178 differ in strength. For "nothing at the growing end is a distance beyond what
+>   the members' own counts explain" read: with the members' counts held equal, reversals of the order by delay and
+>   by steps remain (1,680, 249, 423 and 378 under the ordinary count, waiting, retiring and offshoots). The
+>   strength is not always negative at one witnessed step: 434 of 37,992 decided pairs are positive.
+> - **Taking rules (narrowing).** For "no hubs" read: none of the 31 runs with uniform takes that doubled also kept
+>   its greatest holder steps within two; under the oldest choice none doubled.
+> - **Smaller fixes.** The six-regular control has 19,602 knots, not 99. The named starts are 17 entries. The
+>   prior-work gate had run one placeholder query; the referee ran the seven real ones.
+
 ## The answer
 
 > **Correction, 25 November 2026, later the same day (narrowing; found by the thread in the raw records).** Item 1

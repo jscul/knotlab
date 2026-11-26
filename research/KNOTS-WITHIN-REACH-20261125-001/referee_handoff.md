@@ -1,5 +1,7 @@
 # Referee hand-off: KNOTS-WITHIN-REACH-20261125-001
 
+**Refereed, 26 November 2026: confirmed with fixes, three claims blocked** ([report R1](referee-R1/report.md)); its fixes are folded into the records it names.
+
 Ticket A is referee pending. Its pre-registration has the prior-work searches under "Prior work in the program"; run
 `python3 -B scripts/track.py objects-gate research/KNOTS-WITHIN-REACH-20261125-001A/preregistration.md`. It builds on
 `RING-IN-BALANCE-20261123-001`, `PARTS-MEET-AGAIN-20261124-001`, `COPYING-PARTS-20261123-001` and the studies of 17 to

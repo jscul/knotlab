@@ -3367,7 +3367,9 @@ overlap one another, and the unrolled map no longer says what grows.
   sample allowed
   ([WALL-READ-20261119-001](research/WALL-READ-20261119-001/wall_read.md)).
 
-**Within reach of a knot (computed, referee pending).** The counts above are by
+**Within reach of a knot (computed; refereed on 26 November 2026, confirmed
+with fixes:
+[the report](research/KNOTS-WITHIN-REACH-20261125-001/referee-R1/report.md)).** The counts above are by
 round. A second count asks what lies near one knot: how many knots are within r
 steps of it, a step going from a knot to a knot that shares a distinction with
 it. Read on what exists after one round, under each of three laws that cap a
@@ -3377,18 +3379,20 @@ the whole part is within reach). On four small starts they number exactly
 3r² + 3r + 1, the count of a six-regular pattern, through as many as 20 steps:
 the start of three knots in which every two share a distinction and each holds
 two more, and three starts of four knots, under the ordinary count and under
-the cap of three with short knots retiring or making offshoots. There the live
+the cap of three with short knots retiring, making offshoots or waiting. There the live
 knots are one part that grows by 3 + t/2 + t²/2 births in round t, 2,214 of
 them after 66 rounds, so what exists at one round grows as the square of r.
-The study's registered reading had labelled those counts undecided, the part
-being too small after 66 rounds for the range it asks for, and its first
-summary said that nothing at one round grows faster than r; that was corrected
-from the study's own records. A probe then read the count from
-every live knot on the 23 starts whose births grow fastest (a probe by the
-thread, not a registered study; its headline stages were grown again with a
-second engine). Nine starts have the six-regular count, under every law read.
-On four starts of four or five knots, under the ordinary count, the live
-knots with the most neighbours have twelve within one step, and the count within
+The study's registered reading had labelled those counts undecided, because
+it reads the last stretch of a count and the exact square is the first, and
+its first summary said that nothing at one round grows faster than r; that was
+corrected from the study's own records, and the referee withdrew it. A probe
+then read the count on the 23 starts whose births grow fastest (a probe by
+the thread, not a registered study; regrown by the referee). There a step
+goes between two live knots that some knot shares a distinction with both,
+and the count given is the greatest over the live knots examined, every one
+of them on most stages. Nine starts have the six-regular count, under every
+law read. On four starts of four or five knots, under the ordinary count,
+some live knots have twelve within one step, and the greatest count within
 r steps is 1, 13, 55, 147, 309, 561, 923, 1415, which is
 (2r + 1)(5r² + 5r + 3)/3, the count of the literature's face-centred cubic
 packing: it grows as the cube of r, at one round, on a range that lengthens
@@ -3402,15 +3406,20 @@ counted (proved,
 What the probe adds is the count at one round, one degree less, with an exact
 description: after round t the live knots match the ordered ways of writing
 t − 1 as a sum of m whole numbers, one step moving one unit from one term to
-another (confirmed exactly on the 25 stages tried). So the cube is the case of
+another, with one further knot attached to each sum that has a single term
+(confirmed exactly on the 25 stages tried). So the cube is the case of
 four such knots, five give the fourth power, and the number is the start's
-arrangement, not the law's own. The ranges read are finite, and the ten
-starts with denser parts have no argument
-([the probe](research/KNOTS-WITHIN-REACH-20261125-001/checks/roster_probe/README.md)).
+arrangement, not the law's own. The ranges read are finite; all four
+families were proved afterwards in the study of widening rosters
+([the probe](research/KNOTS-WITHIN-REACH-20261125-001/checks/roster_probe/README.md);
+[the proofs](research/WIDENING-ROSTERS-20261125-001/rosters.md)).
 Read over every knot ever made, the
 count grows as the square of r from every knot examined in 54 runs at the
-longer of the two lengths grown; one of those two powers is the rounds
-themselves, as a bare ring shows exactly. Under the test as it was registered,
+longer of the two lengths grown. On a bare ring one of those two powers is
+exactly the rounds. That does not hold in general, as the referee showed:
+the count over the history does not give the degree of what exists at one
+round, and a roster of 67 members that never changes can have a history
+count that grows as the cube of r. Under the test as it was registered,
 no run gives the square or more from every knot examined on a range that
 lengthens as the rounds double; under looser thresholds 111 runs do, so that
 answer rests on thresholds the study supplied. Among the newest knots, how

@@ -6189,6 +6189,9 @@ evidence: results and their status come from the records each entry links.
   relations (which could add laws); a state other than the counting one (which changes probabilities, not whether a
   state exists). Expected to stay a scaffold of the test; the model is not expected to adopt R.
 - **History.**
+  - 2026-11-26 · Qualified by referee R1: the counting state is the uniform weighting on the eigenspace the knot
+    signs fix (a choice); the failure on 290 of 300 starts is that of the signed realisation, not of the commuting
+    pattern alone. [Report](../research/EVENTUAL-R-20261126-001/referee-R1/report.md)
   - 2026-11-26 · Entered by `EVENTUAL-R-20261126-001`.
 
 ### A298 · Built ring families, lineage carriers and the origin test, to read a binding of whole-held facts

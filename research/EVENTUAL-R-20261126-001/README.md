@@ -6,7 +6,20 @@ patterns growth reaches but changes at a birth when read stage by stage. Under t
 changes over time; rounds are a reading outward of one fixed unlimited structure), a rule read off the whole is not
 disqualified for being unreadable mid-growth. So R is tested here in that form: two distinctions have a joint value
 exactly when some knot of the whole structure holds both. Computed; the advisor consulted read-only in the repository
-([question](advisor_question.md), [answer](advisor_answer.md)); referee pending.
+([question](advisor_question.md), [answer](advisor_answer.md)); refereed (R1, below).
+
+> **Refereed (R1, [report](referee-R1/report.md)): confirmed with fixes, no Block.** Rebuilt independently: the 15
+> closed-part exceptions, 290 permanent failures in 300 sampled starts, the three-reader value 4, and CHSH at most 2 for
+> settings that are products of values (now computed); prediction 2 is reported as failed. **Narrowings:** the knot
+> signs fix a common eigenspace, and the counting state is the uniform weighting on it (a choice); earlier signs persist
+> when read with the whole's R, while R recomputed at each round changed 1,035 old knot-pair signs; the 290 failures rule
+> out definite parities for every knot in one state under the *signed* realisation of R (the ordinary engine allows the
+> all-zero word on all 300, and a realisation with the same commuting pairs but no signs gives every knot +1); the
+> common-children formula predicts changes of existing pairs only (a newborn pair can fail at once); and "contextuality,
+> not separated readers" is too strong: products of values can commute with no shared holder (two disjoint closed
+> components admit joint tables of product settings), and the same 64 probabilities are given by three separate factors
+> of the literature's three-reader state. **Not a block:** with products whose distinctions all cancel kept, GF(2)
+> signing contradicts on 2,857 nonempty read sets. Logged in `docs/CORRECTIONS.md`.
 
 **Words.** A *read set* is a set of distinctions whose values commute under R (every two held by a common knot), so one
 reader can read them together. Its *laws* are the products of knots whose distinctions left over after cancelling lie

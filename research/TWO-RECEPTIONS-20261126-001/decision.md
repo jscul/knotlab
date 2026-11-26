@@ -63,7 +63,8 @@ Whether either carries a change late and from afar is not tested.
    whether the model can carry what the cap carried. Run after the fold-in (README, C): in 3,221 joined pairs under
    parity no knot made after the start is short and no tested round-3 addition is first heard after round 6 within its
    window (refereed, R2: confirmed with fixes, two Blocks; owed implied births occur, and the changed runs kept a stale
-   parity equation). The follow-ups are in `HOLD-BACK-20261126-001`.
+   parity equation; rechecked with the equation renewed: all 4,844 comparisons read in both runs keep their first
+   hearing, none after round 6). The follow-ups are in `HOLD-BACK-20261126-001`.
 2. The take's witness is heard in round 2, one or four sharings away; late hearing from afar is untested.
 3. Unchanged.
 

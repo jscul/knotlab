@@ -153,3 +153,12 @@ after round 3 heard after round 6 (the parity shortage is one round's, at the ne
 So the expectation's first half fails (no pair has the shortage at all) and its second holds, as far as read: no late
 first hearing for the tested round-3 additions within their windows (the referee's narrowing). The referee's
 eight-knot witness stands as a start of its own, untested for distance.
+
+### The recheck with the corrected equation (after R2)
+
+[`parity2.py`](parity2.py) reruns the census with a mark that renews the parity equations after the addition
+(`drive_c2.py`; `parity2_runs.jsonl.gz`; [`compare_c2.py`](compare_c2.py), [output](compare_c2.txt)). Of the
+pairs and laws read in both runs (3,181; 40 read only the first time fall in the eight jobs stopped by their clock or
+memory cap this time), **every one of the 4,844 far changes compared has the same first hearing as before**: 194
+heard, all in rounds 4 and 5 under the cross-part take, and none after round 6. The stale equation changed no outcome;
+the referee's narrowing (no late first hearing within each change's window) stands as written.

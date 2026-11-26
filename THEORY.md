@@ -115,9 +115,9 @@ goes away, it can show up in multiple places and layers." Read as a fact,
 emergence is something true of a whole that no part of it can tell. It is his
 principle: nothing in the record proves it. It holds by definition in the knot
 test, where the whole rules something out and no part does, and again where
-computed: a start grown under parity keeps a class, the sum of its old shared
-distinctions, that no knot of it reads. That is repetition. A tower, where such
-facts act as distinctions once more, is not shown, and neither is recursion.
+computed: a start grown under parity can keep a class value, or several, that
+no single knot reads. That is repetition. A tower, where such facts are bound as
+distinctions once more, is not shown, and neither is recursion.
 
 Evidence: [Intuitions, Chapter 12](INTUITIONS.md#chapter-12-emergence-again-and-again), [the register, A293](docs/ASSUMPTIONS.md#a293--emergence-is-a-fact-held-by-the-whole-and-by-no-part-and-it-shows-up-at-more-than-one-layer), [what a knot hides](INTUITIONS.md#23-what-a-knot-hides), [the ring's class](research/TWO-CLASS-SIGN-20261126-001/decision.md)
 

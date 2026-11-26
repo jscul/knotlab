@@ -1,8 +1,7 @@
 # Whole-held facts as the distinctions of a next layer
 
 Epic `LAYERS-20261126-001`, at the coordinator's go-ahead on the owner's emergence principle (register entry A293) and
-his question whether recursion can be shown. A check by the thread, not a registered study; exploration so far,
-nothing frozen. The advisor was consulted twice from inside the repository ([first question](advisor/question.md);
+his question whether recursion can be shown. A check by the thread, not a registered study; computed; refereed (R1: **refuted, two Blocks**; folded in below). The advisor was consulted twice from inside the repository ([first question](advisor/question.md);
 both answers are entries in `docs/ADVISOR_HIVEMIND.md`).
 
 ## Three rungs, kept apart
@@ -100,6 +99,18 @@ reading of a small change, no other knot law or no larger start makes a tower, a
 
 ## What was found
 
+> **Referee R1: refuted, two Blocks, folded in** ([report](referee-R1/report.md)). **Block:** a connected start can keep
+> two independent whole-held facts: two rings of four knots joined through a ninth knot holding no loose distinction go
+> from one class to four in one ordinary round; neither ring's parity can be read in a single knot, and all four value
+> pairs occur even with any one grown knot fixed; a sampled ten-knot start does it too, and built starts of 13 and 17
+> knots keep three and four. The frozen held-out round of seven knots (entry 7-239) already kept two labels neither of
+> which a single knot reads (their sum is readable), which the frozen stop counted as a candidate. **Block:** so "at most
+> one whole-held fact per connected start" is false; a tower stays open. **Narrowings:** "held by no part" means here
+> "no single knot reads it" (two grown knots together read each parity in the witness); the joined rings of sizes four
+> and above kept one bit, those with a ring of three none, other joins and funding can give two; the failures of the
+> per-piece rule split 816/99 one class, 31/27 two with another label, 1/3 four; record fixes (the reader script, prior
+> credit). The sentences below are corrected where marked.
+
 The frozen runs ([`frozen_census.jsonl`](frozen_census.jsonl), [`frozen_heldout.jsonl`](frozen_heldout.jsonl)), scored by
 [`score.py`](score.py) ([`score.json`](score.json)):
 
@@ -118,8 +129,9 @@ the first suspect, not checked).
 independent whole-held facts, so that a rule can bind them. Only starts with four or more classes could show that: 8 in
 the census and 8 held out. In 15 of the 16 every label is read knot by knot (no whole-held fact at all among them), and
 in the sixteenth (held out, seven knots) the two-dimensional label space holds one label that single knots read and one
-that none does. So **no start read keeps more than one whole-held fact**, at the start or after one round, under this
-reading of a small change. The first step of a tower is not found, on sampled starts, not only on built ones; but only
+that none does. [Corrected after the referee:] none of the funded frozen rounds kept two facts independent of every single knot's reads,
+but the seven-knot held-out round kept two independent parities neither of which a single knot reads (their sum is
+readable), and the referee's nine- and ten-knot starts keep two that pass the stronger test. The first step of a tower is not found, on sampled starts, not only on built ones; but only
 16 of 7,975 starts could have shown it, and rounds past the first were read only on the built rings.
 
 **Repetition, not a tower.** The record shows the same kind of fact, held by the whole and by no part, twice: in a knot,

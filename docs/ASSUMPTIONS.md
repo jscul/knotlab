@@ -6070,6 +6070,8 @@ evidence: results and their status come from the records each entry links.
   `ON-DEMAND-20261126-001`). Earlier nesting by hand (`BASES-WITHIN-20261112-001`) found the pattern above reads exactly
   the law below; a second layer made by the growth itself, or an argument that the layers do not stack, would test it.
 - **History.**
+  - 2026-11-26 · Refereed (R1 on `LAYERS-20261126-001`, refuted, two Blocks): a connected start can keep two or more
+    independent facts that no single knot reads, so the facts a tower would bind exist; a tower stays open.
   - 2026-11-26 · `LAYERS-20261126-001` (computed, not refereed): the grown ring's class is a fact of the whole start, not
     of its loop (a ten-knot tree keeps one too); joined rings keep one class between them, so the first step of a tower
     fails as computed. The owner: "So that's repetition, but we don't have recursion yet"; repetition is what the record

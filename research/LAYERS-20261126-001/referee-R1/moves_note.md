@@ -1,0 +1,28 @@
+# Changing which moves keep a fact
+
+Two connected rings can gain two independent class bits in one funded round under the frozen rule. Here “whole-held” means independent modulo the span of all class bits readable on single holders. At each of the two positive stages below, every class shows the same set of observations at each holder. Even a nonlinear reading of one holder cannot distinguish the classes.
+
+In both examples each named bit can be read by two holders together. This matters for the study's stronger wording “no part”. For the first five-knot ring, the joining holder imposes $x_0+x_4+c=0$, so its label reduces to $x_1+x_2+x_3$. Two other holders see these three distinctions between them. [Minimum holder counts](moves_certificates.json)
+
+**Two five-knot rings.** Add one shared distinction $c$ between a holder of each ring. Give those two holders zero loose distinctions and each of the other eight holders two. Write $R_A$ and $R_B$ for the parities of the shared distinctions going around the rings. The source has one class. After one round $R_A+c$ and $R_B+c$ label four classes of $2^{25}$ allowed states each. Changing all five old ring distinctions on either side exchanges just its own label. All 47 distinctions move. Of 112 distinct shortest changes, 64 change $c$ and both raw ring parities. The parity of the ten grown loose distinctions on either side equals $c$, which takes both values. The state sets on the two sides therefore cannot be freely combined. All four classes give identical local observation sets on all 20 holders. The named facts persist through three rounds. Changes of at most five leave only a locally readable bit at round one. The two labels take all four pairs, so their values impose no constraint on each other. [Certificates](moves_certificates.json)
+
+**Two four-knot rings.** Between them put one holder that shares two distinctions with a holder on each ring. It has no loose distinction. Give each ring holder two loose distinctions. The first round makes a new holder with a parent on each ring. Under changes of at most five, the source and the first round each have one class. At round two, 202 allowed changes of at most five span 42 of the 44 independent allowed changes. The four classes are read by the two original ring parities. Every one of 78 distinctions participates. Every holder gives the same local observations in all four classes. The two labels persist to round three. Taking the 20-holder first grown stage as a prepared start reproduces the transition in one round. Growth here supplies neither a rule on the two labels nor a return of a product as its own start. [Certificates](moves_certificates.json)
+
+The 16 original grown cases were selected because the frozen rule gave at least four classes. Literal replays covered all 143,104 allowed states summed across those cases. Under changes of at most five, 12 have one class and four have two, with every surviving bit readable locally. The two original construction lists and the individual rings of three through seven knots give 42 distinct specifications. All 42 have one class after one round at bounds five and six. Among a further 99 specified constructions and controls, 28 connected preparations gain two whole-held bits under the frozen rule. None of the 99 has two whole-held bits at round one under the five-distinction rule. Some parameter settings coincide between the two rosters. [Sixteen replays](moves_archive.json) · [Original rings](moves_original_rings.json) · [Other constructions](moves_rings.json) · [Later rounds](moves_deep.json)
+
+## Reproduction
+
+From the repository root, set `R=research/LAYERS-20261126-001/referee-R1` and run the following.
+
+```sh
+.venv/bin/python -B "$R/moves.py" archive --output "$R/moves_archive.json"
+.venv/bin/python -B "$R/moves.py" rings --output "$R/moves_rings.json"
+.venv/bin/python -B "$R/moves.py" original-rings --output "$R/moves_original_rings.json"
+.venv/bin/python -B "$R/moves.py" rings --case 5_5_joins1_inside0_copies1_except_joins 5_7_joins1_inside0_copies1_except_joins 5_5_joins2_inside1_copies2_rings 4_4_joins1_inside1_copies2_rings --rounds 3 --verbose --output "$R/moves_deep.json"
+.venv/bin/python -B "$R/moves.py" candidate --rounds 4 --verbose --output "$R/moves_sample.json"
+.venv/bin/python -B "$R/moves_certificates.py" --output "$R/moves_certificates.json"
+```
+
+The main calculation independently implements ordinary funding and parity growth. A change satisfies all parity laws exactly when all holders have even incidence in its support. In the literature's incidence multigraph, append one unconstrained holder for all loose distinctions. Its incidence is automatically even. Any change of bounded size splits into simple cycles no larger than itself. Their span therefore gives the exact classes for that bound. A shortest change through a distinction is a simple cycle, with all ties included. A second calculation enumerates supports by matching the parity violations of their two halves, without using cycles. On the two certificates it reproduces the moves and compares the independently grown supports with the existing ordinary growth implementation through three rounds. The knot checker reads the exact holder projections grouped by arity.
+
+Runs used one process with a 2 GiB address-space ceiling, with one short subprocess for the knot checker. Each family had a timed subset before its full run. The larger independently sampled ten-knot example was rechecked through four rounds. Starts outside the selected 16 were not reclassified as a full census under the size bounds. The construction search was finite. Classes on class values and a native feedback rule were not constructed or tested.

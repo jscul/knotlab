@@ -6101,11 +6101,12 @@ changes what a knot owes changes what it makes.
 - [12.1 A fact held by the whole and by no part](#121-a-fact-held-by-the-whole-and-by-no-part):
   the owner's guiding principle, and the first place it holds: a knot.
 - [12.2 The same again in a grown ring](#122-the-same-again-in-a-grown-ring):
-  a ring of knots that grows keeps a fact of the whole that no knot of it can
-  read; so does a start with no ring, so the fact belongs to the whole start.
+  a ring of knots that grows keeps a fact that no knot of it can read; so does a
+  start with no ring, and one start can keep two such facts.
 - [12.3 Whether it happens again, one pattern up](#123-whether-it-happens-again-one-pattern-up):
   three rungs kept apart, repetition, a tower and recursion; only the first is
-  reached, and the first step of a tower fails as computed.
+  reached; the facts a tower would bind exist, and a rule binding them is not
+  yet looked for.
 
 **The intuition.** The owner has called the work "a logic based fractal with
 emergence as the guiding principle" (lesson 7.2), and says what emergence is
@@ -6164,18 +6165,27 @@ classes on odd rings. So the ring holds a whole-loop fact; how firmly it holds i
 is a choice of reading. On the census starts of three to five knots, unlike the
 rings, the class can be read inside a single knot.
 
-**Not a fact of the loop (computed, not refereed).** A later check grew a
-start with no cycle at all, a tree of ten knots, and found the same: after one
-round its allowed states split into two classes, labelled by the sum of all its
-nine old shared distinctions. And two rings joined in one start, through a shared
-knot, a shared distinction or a chain of knots, keep two classes between them,
-not four. So the class is a fact of the whole connected start, not of a loop, and
-it comes from what counts as a small change: one class for each connected piece
-([the study of layers](research/LAYERS-20261126-001/README.md)).
+**Not a fact of the loop (computed, refereed).** A later check grew a start
+with no cycle at all, a tree of ten knots, and found the same: after one round
+its allowed states split into two classes, labelled by the sum of all its nine
+old shared distinctions, which no single knot reads. So the class is a fact of
+the grown start, not of a loop, and it comes from what counts as a small change
+([the study of layers](research/LAYERS-20261126-001/decision.md)).
 
-**So emergence happens twice here.** Once in each knot, whose constraint no
-part of it holds (lesson 12.1), and again in the grown start, whose class no
-knot of it holds. That is repetition: the same kind of fact at two layers.
+**And it can happen twice in one start (computed, refereed).** The rings that
+check joined in one start kept one class between them, but its referee built a
+start that keeps two. Two rings of four knots, joined through a ninth knot that
+holds no loose distinction, go from one class to four in one round: neither ring's
+parity can be read in a single knot, and all four pairs of values occur, even when
+the values at any one of the twenty grown knots are fixed. A sampled start of ten
+knots does the same, and built starts of thirteen and seventeen knots keep three
+and four. Funding the ninth knot with four loose distinctions leaves one
+([its referee's report](research/LAYERS-20261126-001/referee-R1/report.md)).
+
+**So emergence happens twice here.** Once in each knot, whose constraint
+vanishes when any one of its distinctions is forgotten (lesson 12.1), and again in
+the grown start, which can keep a class, or two, that no single knot reads. That
+is repetition: the same kind of fact at two layers.
 
 ### 12.3 Whether it happens again, one pattern up
 
@@ -6184,7 +6194,9 @@ but we don't have recursion yet." Three things can be meant, and each result
 says which it reaches:
 
 1. **Repetition**: the same kind of fact held by the whole and by no part, at
-   two layers. The knot and the grown start reach it (lessons 12.1 and 12.2).
+   two layers. A knot's constraint vanishes when any one distinction is
+   forgotten; a grown start can keep a class value that no single knot reads
+   (lessons 12.1 and 12.2).
 2. **A tower**: a step that carries any layer to the next, so that facts of one
    layer, bound by a rule, make a next layer with the same property.
 3. **Recursion**: a pattern that grows back into itself, or whose product is fed
@@ -6197,8 +6209,12 @@ holds, it might in turn serve as a distinction: two values, open until fixed.
 Then several rings that share knots or grow together would be the knots of a
 larger pattern, if their classes obey a rule among themselves, and that larger
 pattern might keep a fact no single ring holds. The literature has this shape:
-codes built out of codes (concatenated codes). Whether the growth does it is
-untested; a study to test it is queued.
+codes built out of codes (concatenated codes). The first prerequisite holds:
+a connected start can keep two or more independent facts that no single knot
+reads (lesson 12.2). Whether the growth then makes a rule binding them, a third
+distinction it produces rather than one a reader defines as their sum, is
+untested. A rule defined as their sum passes the knot test for any two
+independent facts, so that test alone cannot show a tower.
 
 **What earlier lines found.** Lesson 4.8 binds distinctions at different
 depths of one address tree, with a bond that grows by one member per depth. A
@@ -6218,8 +6234,9 @@ with nothing nested by hand.
 | --- | --- |
 | Emergence is a fact held by the whole and by no part, and it shows up at more than one place and layer | the owner's guiding principle (register entry A293) |
 | A knot's constraint is held by the whole and by no part | proved (lessons 2.1 and 2.3) |
-| A grown ring under parity keeps a class of the whole ring that no knot reads | computed, refereed (lesson 12.2); a tree does the same, so it is a fact of the whole start, not of the loop (computed, not refereed) |
-| Several rings' classes act as distinctions of a larger pattern that keeps a fact no ring holds (a tower) | not found: no start read keeps more than one whole-held fact, under two readings of a small change, at rounds 1 to 3 ([layers](research/LAYERS-20261126-001/decision.md) and [recursion's lead](research/RECURSION-LEAD-20261126-001/decision.md), computed, referee pending) |
+| A grown ring under parity keeps a class of the whole ring that no knot reads | computed, refereed (lesson 12.2); a tree does the same, so it is a fact of the grown start, not of the loop (computed, refereed) |
+| A connected start keeps two or more independent such facts | computed, refereed: a nine-knot start of two joined rings gains two in one round, a sampled ten-knot start too (lesson 12.2) |
+| The growth makes a rule binding such facts into a larger pattern that keeps a fact none of them holds (a tower) | untested: the facts it would bind exist; a rule the growth makes among them is not yet looked for ([layers](research/LAYERS-20261126-001/decision.md), refereed) |
 | A pattern that grows back into itself (recursion) | not shown: growing a start and then exchanging it gives the start back only when we pin its loose values, which no recorded law does, and the exchange is ours ([recursion's lead](research/RECURSION-LEAD-20261126-001/decision.md)); parts that copy themselves (lesson 8.7) copy under laws added by hand |
 
 ## Glossary

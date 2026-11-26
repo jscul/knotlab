@@ -3,20 +3,23 @@
 Epic `LAYERS-20261126-001` (the coordinator's go-ahead on the owner's emergence principle and his question about
 recursion; goals G17 with G18; register entries A291, A293), closed 26 November 2026. A check by the thread, not
 registered: computed; the rule frozen before its runs after two consultations of the advisor inside the repository;
-referee pending. [The note](README.md)
+**refereed (R1): refuted, two Blocks, folded in.** [The note](README.md) · [Referee report](referee-R1/report.md)
+
+> **First closed as "no start keeps two independent whole-held facts" (corrected).** The referee built a connected nine-knot
+> start that gains two in one round, and found a sampled ten-knot one; the facts a tower would bind exist. Logged.
 
 ## What stands
 
-1. **Repetition, not a tower.** A knot holds a fact no part of it holds, and a start grown one round under parity can
-   hold one too (its class, which no knot reads). No start read keeps two independent whole-held facts: of 7,975 starts
-   (every census start of three to five knots, and 900 fresh starts of six to eight), only the 16 with four or more
-   classes could have, and their labels are read knot by knot in 15, with one whole-held label in the sixteenth.
-2. **The grown ring's class is a fact of the whole start, not of its loop**: a tree of ten knots keeps one too, and two
-   or three rings joined in one start keep one between them (built starts, rounds one and two; logged as a narrowing).
+1. **The facts a tower would bind exist; a tower is not shown.** A connected start can gain two independent facts that
+   no single knot reads in one ordinary round (the referee's nine-knot start of two rings joined through a knot with no
+   loose distinction; a sampled ten-knot start; three and four in built 13- and 17-knot starts). Whether the growth makes
+   a rule binding them is untested; a rule defined as their sum passes K1 to K3 for any two, so that test cannot show it.
+2. **The grown ring's class is a fact of the grown start, not of its loop**: a tree of ten knots keeps one too. The
+   joined rings first built kept one bit between them (sizes four and above), but other joins and funding give two.
 3. **The rule "one class per connected piece" fails as stated** (the advisor's reduction, frozen): it holds in 130 of
    978 census starts meeting its conditions and 28 of 157 held out; most keep no class at all.
-4. **Growth adds no check on old distinctions** under parity and the ordinary count (read in the engine's code by the
-   advisor; held on every structure explored).
+4. **Growth adds no check on old distinctions** under parity and the ordinary count (the earlier fresh-count requirement
+   and keep-clause result, `NAE-GROWTH-20261119-001`; read in the code by the advisor; held on all 5,528 funded rounds).
 
 **Not shown.** Rounds past the first on sampled starts; other readings of a small change; the not-all-equal law (no
 classes in what the record read); a proof of any of it; and recursion (a pattern that grows back into itself), whose
@@ -26,10 +29,10 @@ leads are the second-check study's exchange, chosen by hand, and the parts that 
 
 | Scope | Verdict | Why |
 | --- | --- | --- |
-| This attempt — a tower's first step under parity, frozen and tested | **Status:** STOP (the frozen rule breaks; no step found) | No start read keeps two independent whole-held facts; the per-piece rule fails in most starts |
-| Local direction — whole-held facts as distinctions | STOP for this reading of a small change | Facts of a connected start do not multiply: at most one whole-held fact each |
+| This attempt — a tower's first step under parity, frozen and tested | **Status:** Refuted (referee R1, two Blocks) | The frozen rule broke, and the claim that no start keeps two whole-held facts is false |
+| Local direction — whole-held facts as distinctions | Continue | A connected start can gain two independent whole-held bits in one round; their four value pairs are free; a tower remains open |
 | Broader exploration — emergence at more than one layer (the owner's principle) | Partly mapped | Repetition is shown twice; a tower and recursion are not |
-| Long-term goal — G17 with G18 | Obstruction learned (thin) | Under the recorded laws and moves, whole-held facts do not stack |
+| Long-term goal — G17 with G18 | Capability gained (thin) | Starts that keep several whole-held facts exist, so a rule among them can be looked for |
 
 **Next step:** Research directions — #1 proposed; the coordinator's call
 
@@ -39,7 +42,8 @@ leads are the second-check study's exchange, chosen by hand, and the parts that 
 | 2 | Why the per-piece rule fails: what removes the class in 848 census starts (double meetings first) | 1/3 — a correction of a reduction | 3/3 — the starts are listed | Classify the 848 by double meetings and short cycles → the condition, or none | Alternative |
 | 3 | A second reading of a small change (every change of up to five distinctions) for the tower's first step | 2/3 — the scaffold most likely to matter | 2/3 — the same code with a longer move | Rerun the 16 multi-class starts and the built rings → two whole-held facts, or none | Alternative |
 
-**Corrections:** one narrowing logged in `docs/CORRECTIONS.md` (2026-11-26, "The grown ring's class is a fact of the
+**Corrections:** two Blocks and two narrowings from referee R1, logged (2026-11-26, "Layers: a start can keep two whole-held
+facts"); and one narrowing logged before it (2026-11-26, "The grown ring's class is a fact of the
 whole start, not of its loop"): Chapter 12, the theory card and A293 corrected. The on-demand refutation is logged
 separately.
 **Goals:** checkpoint row added (G17, G18; obstruction learned, thin).

@@ -11,8 +11,10 @@ referee pending. [The note](README.md)
    operation. Every free exchange that is lawful (12 census starts) stops within two steps.
 2. **Returns are not only rings.** Besides the rings of the second-check study, one census start returns: three knots
    sharing pairwise around a dead knot, with a fourth hung on it. The line-graph reading explains the rings, not this.
-3. **The tower's negative survives a second reading and more rounds.** Under the shortest changes and under every change
-   of at most five distinctions, at rounds 1 to 3, no start read keeps more than one whole-held fact.
+3. **The tower re-read (corrected after the layers referee).** Under the shortest changes and under every change of at
+   most five distinctions, at rounds 1 to 3, none of the starts read here kept two facts independent of every single
+   knot's reads; but the layers referee built and sampled starts that do, so this is a count of these sets, not a
+   negative about the model.
 
 **Not shown.** Not-all-equal (the exchange needs the linear space of allowed changes, which only parity has); larger
 starts; more rounds of the exchange; a proof.
@@ -24,7 +26,7 @@ starts; more rounds of the exchange; a proof.
 | This attempt — a return of a start by growing and exchanging, frozen and tested | **Status:** STOP (R1 to R3 break; T1 holds) | Returns need a pinning and an exchange we supply; one non-ring start returns |
 | Local direction — recursion in the recorded laws | STOP for this lead | Nothing returns with nothing supplied |
 | Broader exploration — emergence at more than one layer | Partly mapped | Repetition is shown; a tower is not, under two readings and three rounds; recursion is not |
-| Long-term goal — G17 with G18 | Obstruction learned (thin) | The recorded laws repeat whole-held facts but neither stack nor return them |
+| Long-term goal — G17 with G18 | Obstruction learned (thin) | Returns need supplied choices; whether whole-held facts stack is open |
 
 **Next step:** Research directions — #1 proposed; the coordinator's call
 
@@ -42,7 +44,7 @@ loose values free it's never lawful".
 **Basket:** the postulates line's top items belong to the hearing and meeting lines.
 **Scaffolds:** A291 (the moves); the pinning and the exchange (supplied, named); the census and the extension's weighting.
 Swapped: the reading of a small change (shortest, or up to five), rounds 1 to 3, built starts for sampled ones, pinned for
-free. The tower's negative survives every swap made; the returns exist only under the pinning.
+free. The tower re-read held on these sets under every swap made, but the layers referee's starts keep two whole-held facts; the returns exist only under the pinning.
 **Advisor:** consulted before the freeze in the repository; taken: the line-graph reading (it explains the rings, not
 census entry 165), that the pinning amounts to reading births without their fresh places, the closed-piece reading, the
 names (cycle and cut spaces, homological codes); its R3 prediction broke.

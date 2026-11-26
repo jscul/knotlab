@@ -3,6 +3,10 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 26 November 2026 · Whole-held facts refereed: a start can keep two
+
+**Corrections from [an independent referee's report](research/LAYERS-20261126-001/referee-R1/report.md), folded into [the decision](research/LAYERS-20261126-001/decision.md).** The claim that no start keeps more than one fact that no single knot reads is withdrawn: a connected start of two joined rings gains two such facts in one round. The facts a tower would bind therefore exist; whether the growth binds them is open. The guide's Chapter 12 is corrected.
+
 ## 26 November 2026 · Emergence, again and again: the ring's class belongs to the whole start
 
 **A narrowing of [the guide's Chapter 12](INTUITIONS.md#chapter-12-emergence-again-and-again).** The class a grown ring keeps under parity is not a fact of its loop: a start with no cycle keeps one too, and rings joined in one start keep one between them. The chapter now keeps three rungs apart: repetition, which the record shows; a tower; and recursion, which it does not show.

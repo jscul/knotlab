@@ -77,10 +77,11 @@ Five runs ([`recur_census.jsonl`](recur_census.jsonl), [`recur_heldout.jsonl`](r
 - **R2.** With loose values free, 12 census starts give a lawful exchange; each becomes a new start that closes, stalls or
   is unlawful at the next step. None returns.
 
-**T1 holds.** Under both readings of a small change (the shortest changes, and every change of at most five
-distinctions), at rounds 1, 2 and 3, no start read has more than one whole-held fact: 400 sampled census starts, the 16
-multi-class starts and the built joined rings. So the tower's negative survives the swap of the reading and two more
-rounds: it is about the growth at these sizes, not only about one reading.
+**T1 holds on these sets.** Under both readings of a small change (the shortest changes, and every change of at most
+five distinctions), at rounds 1, 2 and 3, no start read here has more than one fact independent of every single knot's
+reads: 400 sampled census starts, the 16 multi-class starts and the built joined rings. [Corrected after the layers
+referee:] that referee built a nine-knot start and sampled a ten-knot one that gain two, so this is a count of these
+sets, not a negative about the growth.
 
 **What it says about recursion.** Every return found, the rings of the second-check study and census entry 165, needs two
 things we supply: the exchange itself (reading each shortest change as a knot is our operation, not the growth's) and

@@ -1,5 +1,44 @@
 # A sign to the sides: what stands
 
+> **Referee report R1, 26 November 2026: confirmed with fixes, no Block** ([the report](referee-R1/report.md)). Two exact
+> tables at CHSH 4 were rebuilt independently (start 3097 with the block sign; a seven-knot not-all-equal stage grown
+> once from start 1212 with the swap's sign on kept states), every structural count matched on all 7,075 starts, and
+> all 8,856 sampled weighting-and-reading summaries matched. Read this record with these narrowings.
+> - **Placements were counted with repeats.** A distinction shared inside a side was listed once per holder, so some
+>   placements were tried more than once. Distinct placements: parity W1 923, 32,552 and 107,804 at rounds 0, 1 and 2
+>   (not 1,397, 32,840 and 109,936); W2 25 (not 100); not-all-equal W1k 7,382 and 55,488 under R1, 4,310 and 3,096
+>   under R2 (3,016 of the last at 4 and 80 at 12/5); W3 132, 996, 1,328; W3m 12, 1,600, 6,856. The stages with a hit
+>   and every winning value are unchanged; the parity unsigned control covers 92,134,111 distinct placements.
+> - **"Through the completions" was tested on four values, not on the reading.** Every R1 hit needs weights of both
+>   signs; the annotation checked a full four-value word and only the first 20 hits of a row. Every parity W1 hit has a
+>   four-value word with both signs; 64 and 144 not-all-equal W3m hits (rounds 1, 2) and 16 W1k hits (round 2) do not,
+>   cancelling only across the readers' chosen pair. "Every hit after growth goes through the completions" is withdrawn
+>   in that form; so is "every one annotated" for the round-0 W1 hits (743 of 1,397 entries were annotated).
+> - **What a state reads of a swap is its mismatch x + swap(x).** Kept and flipped are two of its values; most swap rows
+>   also have states of neither kind. A chain from a knot to its image establishes the exchange; the two-distinction
+>   read measures only the state's mismatch on that pair. "A state sees the twist only as kept and flipped" is narrowed
+>   to that.
+> - **The controls show a swap is unnecessary in those examples, not that R1 and R2 reward every sign.** Random matchings
+>   (94 of 200 on one stage) and products of two single-distinction signs (156 of 231 on another) were rebuilt; they say
+>   nothing about a frequency over arbitrary signs, and writing W1k as single-distinction signs keeps its restriction to
+>   kept states. "R1 and R2 reward any sign" is narrowed to "R1 and R2 give the excess without the swap on the stages
+>   tested".
+> - **The tie is on the signed support.** Parity hits have one read of each reader tied among the words with nonzero
+>   signed weight, not among the allowed words (start 89: all 16 words occur, summation cancels those with x₄ ≠ x₉).
+>   W2's excess needs both side parities to be functions of the four reads (the advisor's lemma holds); "only where the
+>   sides are small" has no size bound behind it.
+> - **A sign the table missed.** The sign of the swap on a state's own orbit (+1 if kept, −1 otherwise) needs no held
+>   value or ordering; on all 23,760 parity lift rows it gives no hit, though a constructed growth with the readers' pools
+>   relaxed reaches 4 with it. W1 is also the sign of the permutation the lift induces on H(x) ∩ swap(H(x)), the held
+>   distinctions kept by it, on every state.
+> - **Smaller fixes.** The not-all-equal cutoff was more than 22 distinctions, not more than 2^22 states (all 10 round-1
+>   and 142 round-2 exclusions of width 23 have fewer); "U at most 18/29" holds for distinct placements, the stored
+>   round-0 maximum 10/13 comes from a lift with no eligible placement; on four classes 46 of 102 lift rows on 27 stages
+>   and on eight 6 of 6 on two move classes; at the rings' first round there is one motion class, so the old-shared sign
+>   is a character there; A2's "need only" should read "require"; the two-reader bound for the change-read direction
+>   covers the stated observables only; a fixed-width square could overflow at 2^30 entries (no published value
+>   affected); the blow-up start's round 2 and the excluded not-all-equal searches were not run.
+
 Epic `SIDE-SIGN-20261126-001` (G18, at the coordinator's pick after the owner's message "it might be a symmetry thing
 too where there's a sign to the sides or something. It'd be a complex meeting pattern"; register entry A292), closed
 26 November 2026. A census with arguments: computed, with proofs where marked; referee pending.

@@ -324,6 +324,8 @@ evidence: results and their status come from the records each entry links.
 | [A266](#a266--a-birth-can-distinguish-exactly-three-current-holders) | A birth can distinguish exactly three current holders | scaffold | Assumed |
 | [A267](#a267--a-three-reader-experiment-must-specify-what-its-readers-may-write) | A three-reader experiment must specify what its readers may write | scaffold | Assumed |
 | [A268](#a268--a-one-reader-phase-comparison-fixes-three-readings-and-a-reference) | A one-reader phase comparison fixes three readings and a reference | scaffold | Assumed |
+| [A269](#a269--compare-a-pulse-before-and-after-growth-from-a-common-known-parity) | Compare a pulse before and after growth from a common known parity | scaffold | Assumed |
+| [A270](#a270--collect-the-conserved-parity-at-a-designated-pointer) | Collect the conserved parity at a designated pointer | scaffold | Assumed |
 
 ## Entries
 
@@ -5585,6 +5587,7 @@ evidence: results and their status come from the records each entry links.
 - **Rests on it.** The four-word obstruction, the independent local offshoot comparison, and the passing examples with common records in NATIVE-PHASE-READ-20261125-001. [Phase-reading study](../research/NATIVE-PHASE-READ-20261125-001/results.md)
 - **Challenge.** Repeat a read, interpose another reader, and vary the available memory and the preparation it may record. A native preparation and exchange rule would replace the hand-granted reference and access.
 - **History.**
+  - 2026-11-25 · GROWN-OPPOSITE-READS-20261125-001 produced an ordinary conserved sign by interchanging one pulse and growth. Reading it at a single mark used a separately declared local update, and erasing the difference in the whole state erased the signal. [Grown preparations](../research/GROWN-OPPOSITE-READS-20261125-001/results.md)
   - 2026-11-25 · Tested the bare word, an ordinary read that writes, local and shared access after one funded growth round, and an explicitly copied preparation.
 
 ### A268 · A one-reader phase comparison fixes three readings and a reference
@@ -5597,3 +5600,25 @@ evidence: results and their status come from the records each entry links.
 - **Challenge.** Compare a directed allowed four-cycle, reverse its selection, or add a fourth distinction carrying the changing sign. A native preparation and readout would have to establish the reference and full calibration from their own rules.
 - **History.**
   - 2026-11-25 · The six preparations closed under repeated readings. The ordinary four-cycle changed the third sign. Adding a fourth distinction permitted the calibrated pulse.
+
+### A269 · Compare a pulse before and after growth from a common known parity
+
+**Assumed** · 2026-11-25 · scaffold
+
+- **Statement.** Prepare a common blank cyclic start of five or seven even-parity knots. Swap the order of one ordinary growth and a shortest change through an originally shared distinction. Fix the sign as the parity of all originally shared distinctions. Admit all lawful growth extensions and all minimum ties. For probability comparisons offer every grown shortest change once with an independent fair choice, or give equal weight to each reachable word.
+- **Why.** The earlier motion law preserves this parity after growth. The experiment asks whether two preparations can write opposite values by the same two operations, with ordinary small reads blind to the choice. A known source parity fixes the absolute sign and uniform mixing removes incidental differences in small reads.
+- **Rests on it.** The opposite absolute signs and the sharp ordinary-read thresholds in GROWN-OPPOSITE-READS-20261125-001. [Grown preparations](../research/GROWN-OPPOSITE-READS-20261125-001/results.md)
+- **Challenge.** Vary the source, address, ties, extensions and mixing. An unaddressed early pulse is imperfect, a fair initial parity erases the absolute contrast, and a fair extra change of the whole old set erases the record. A native source and sampling law would replace the blank and the fair offers.
+- **History.**
+  - 2026-11-25 · The sign survived all addressed minimum ties and all extensions at both registered sizes. Exact equality of small-read probabilities depended on the common weighting.
+
+### A270 · Collect the conserved parity at a designated pointer
+
+**Assumed** · 2026-11-25 · scaffold
+
+- **Statement.** Use the originally addressed mark as a pointer. Permit an occupied nonpointer old mark to make an existing shortest lawful change with an old neighbor closer to the pointer. The procedure ends when none can fire. Read zero as plus and one as minus.
+- **Why.** This conditional rule implements the already fixed collective parity with one final physical bit. Current values and a designated receiver are enough to run it in any enabled order.
+- **Rests on it.** The concentration of the preparation sign in one ordinary mark at five and seven in GROWN-OPPOSITE-READS-20261125-001. [Grown preparations](../research/GROWN-OPPOSITE-READS-20261125-001/results.md)
+- **Challenge.** Read the pointer before collecting, apply the same moves blindly, change the pointer and vary every firing order. A native process that imposes the enabling rule and supplies its receiver would replace the measuring device chosen here.
+- **History.**
+  - 2026-11-25 · Every pointer and maximal firing order gave the same sign. The blind device and the plain pointer both gave a fair bit in either mixed preparation.

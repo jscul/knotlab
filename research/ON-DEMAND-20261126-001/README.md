@@ -97,3 +97,70 @@ is the opposite of a link at a distance: a change beyond the reach cannot reach 
 earlier studies found no far change heard late and nothing in the model beyond the classical bound with free settings.
 Parity's implied birth reads the whole presentation (the literature's implied clause), and the earlier studies found no
 reader hears a far change through it with free settings.
+
+**Deviation, recorded before the rerun.** The first run of the tree-plus-lines set was stopped by its 6 GB cap at its
+fifteenth start (a region growth without a cap). It is rerun from the start with the same seed and draws, each start in
+a child process with 3 GB of address space and 300 seconds, and every region growth capped like the full growth: a
+region growth that stops at the cap before round t is not read at t, and a start over either limit is not read. Its
+first 14 starts reproduce the first run exactly (checked on three). The tree and six-knot sets, which finished, are
+not rerun.
+
+## What was found
+
+Three runs ([`results_tree40.jsonl`](results_tree40.jsonl), [`results_treeplus25.jsonl`](results_treeplus25.jsonl),
+[`results_census6.jsonl`](results_census6.jsonl); the stopped first run kept as
+[`results_treeplus25_first_run.jsonl`](results_treeplus25_first_run.jsonl)), scored by [`score.py`](score.py)
+([`score.json`](score.json)).
+
+| population | starts read | (reader, round) cases | H1: within t + 1 steps, not-all-equal | within t steps | H2 regions and steps | stalls in round 1 |
+|---|---|---|---|---|---|---|
+| 'tree', 40 knots | 60 | 411 | 411 agree | 411 agree | 327 agree | none |
+| 'tree+', 25 knots | 58 (2 not read: memory, time) | 365 | 365 agree | 352 agree, 13 differ | 329 agree | none |
+| six-knot census sample | 148 (of 400) | 1,480 | 1,480 agree | 1,466 agree, 14 differ | 888 agree | 252 |
+
+**H1 holds: the stop is "none".** Under not-all-equal, in all 2,256 (reader, round) cases, the growth run on the live
+knots within t + 1 steps of the map gives the reader's view through round t exactly, in both readings. The knots within
+t steps suffice in 2,229; the 27 that need one step more are all in the two sets with cycles or groups of three or more,
+none in the trees, as the hand test found.
+
+**H2 holds.** Every region holding those knots gave the same view (1,544 regions and admission steps under
+not-all-equal): admitting more of the start, in any of the orders drawn, never changed a round already read.
+
+**H3 holds.** (a) Of the 252 starts that stall in round 1, the reader's own region stalls within 1 step of the map in
+194, within 2 in 55 and within 3 in 1; in 2 the short knot lies in another piece of the start, which no region grown
+from the reader ever reaches. So on demand needs one check of the whole start before round 1, and only then. (b) Under
+parity, 53 (reader, round) cases differ, all in the six-knot set, and in every one the region's growth closes on an
+implied birth (one birth holding every live knot of the region) that the full growth does not make; under
+not-all-equal none differ. Nine further regions of H2 differ under parity; how they end was not recorded.
+
+**What a reader rests on (reported).** At the last round read, the reader's view rests on a median of 28% of the full
+growth's births in the trees (least 5%), 34% in the starts with cycles (least 10%), and nearly all of them in the six-knot
+starts, which are too small to leave anything out. The growth on the knots within t + 1 steps makes some births the full
+growth does not, at the edge of what it computes (2.9% of its births in the trees, 4.0% with cycles, 3 of 74,219 in the
+six-knot starts): provisional births, which the full growth replaces once the knots beyond the edge are admitted, and
+which the reader's view never contains.
+
+**What it says.** In the growth of Chapter 8 under not-all-equal, a reader's view through round t depends on the start
+only within t + 1 steps of the map from it, so the view can be computed on demand from that part alone, filled in in any
+order, after one check of the whole start that no knot is short. Parity's implied birth is the one rule that reads the
+whole presentation at a later round.
+
+**What it does not show.** The far part is unread, not undetermined: a deterministic local law can always be run
+lazily, and nothing is settled by being read. The bound of one step of the map a round is the opposite of a link at a
+distance: nothing beyond the reach can change the reader's view before the round it reaches. The earlier studies found
+no far change heard late and nothing beyond the classical bound with free settings, and this adds nothing to either.
+Admission was tested with rounds run together, not with births made one at a time; the readers are start knots; the
+starts have up to 40 knots.
+
+**Stress test pending.** The engine's check against the growth on all 3,157 five-knot census starts under both laws
+(four-knot: all agree) was 2,026 starts in, all agreeing, when this was written.
+
+**Link (intuition-links), offered as an intuition.** The exact link for H1 is the dependence cone of a cellular
+automaton: with one step per round, the state at a site after t rounds depends only on the sites within t steps; here
+the reach is one step more, because a group of three or more is read whole at its edge. H2 is confluence (Newman's
+lemma, for a growth with a finite round structure). For H3 (b), a parity consequence has no local certificate: the
+literature's contrast between unit propagation and Gaussian elimination, of which Tseitin's parity on a cycle is the
+smallest case. The owner's "quantum resolution" is, on this reading, not where the far part settles: the far part is
+settled by the law whether read or not. The one place where a reader's own birth waits on the whole start is parity's
+implied birth, a consequence of the whole presentation, which the earlier studies found no reader can use to hear a far
+change.

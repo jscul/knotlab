@@ -5982,11 +5982,15 @@ evidence: results and their status come from the records each entry links.
   six-knot census sample, with stated seeds, one reader per start. Nothing in the model supplies any of them.
 - **Why.** Adopted by the thread on 26 November 2026 with the advisor's review, which named the round and the cap as
   global reads to record and asked for admission during the growth.
-- **Rests on it.** Whatever the study claims about how much of the start a reader needs (filled in at its close).
+- **Rests on it.** That under not-all-equal a reader's view through round t needs only the live knots within t + 1
+  steps of the map from it, in any order of admitting the rest, in all 2,256 cases tested
+  ([the decision](../research/ON-DEMAND-20261126-001/decision.md)).
 - **Challenge.** A reader that is a made knot or a set of knots, or a view of the births within a number of holder steps
   rather than descendants; admission composed with births one at a time; no cap; larger starts and other weightings.
   The model is not expected to supply them: they are how an observer is placed in the growth.
 - **History.**
+  - 2026-11-26 · `ON-DEMAND-20261126-001` closed (computed; referee pending). Swapped: the knot law, the reading, three
+    weightings, the region (supersets, admission in steps). Not swapped: the reader as a start knot, the round, the cap.
   - 2026-11-26 · Entered with `ON-DEMAND-20261126-001` at its freeze.
 
 ### A289 · Settings as free local edits, the preparation kept through the edits, two weightings and a census, to test joins that forbid

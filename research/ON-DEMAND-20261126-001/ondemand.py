@@ -123,28 +123,27 @@ def view(g, reader=None):
     return out
 
 
-def verify(N, out):
-    """the roster engine's whole views (no reader) against the look-alike study's growth (alike.grow), both laws"""
+def verify(N, out, law_list=('nae', 'parity')):
+    """the roster engine's whole views (no reader) against the look-alike study's growth (alike.grow), both laws; one
+    line per start and law, written as it goes; the engine stops before a round of more than 30,000 births and is then
+    compared through the rounds it made"""
     sys.path.insert(0, os.path.join(HERE, '..', 'LOOK-ALIKE-20261126-001'))
     import alike
-    res = Counter(); bad = []
-    for law in ('nae', 'parity'):
-        for i, gi, loose, stars in alike.census(N):
-            a = alike.grow(stars, rounds=24, knot_law=law)
-            opn, places, B = roster(stars)
-            g = grow(opn, places, B, len(a['rows']) + 1, law)
-            V = view(g)
-            same = len(V) >= len(a['rows']) and all(
-                late.cnt(a['rows'][t], 'sig0') == Counter({json.dumps(list(k)): v for k, v in V[t][0].items()}) and
-                late.cnt(a['rows'][t], 'sig1') == Counter({json.dumps([list(k[:4]), [list(x) for x in k[4]]]): v
-                                                           for k, v in V[t][1].items()})
-                for t in range(len(a['rows'])))
-            ends = (a['end'].split()[0], g['end'])
-            res[(law, 'agree' if same else 'differ', ends[0])] += 1
-            if not same and len(bad) < 10: bad.append([law, i, stars, a['end'], g['end']])
-    r = {'tally': {' / '.join(k): v for k, v in sorted(res.items())}, 'differ (first 10)': bad}
-    json.dump(r, open(out, 'w'), indent=1); print(json.dumps(r, indent=1)[:3000])
+    with open(out, 'w') as f:
+        for law in law_list:
+            for i, gi, loose, stars in alike.census(N):
+                a = alike.grow(stars, rounds=24, knot_law=law)
+                opn, places, B = roster(stars)
+                g = grow(opn, places, B, len(a['rows']) + 1, law, cap=30000)
+                V = view(g); m = min(len(V), len(a['rows'])) if g['end'] == 'cap' else len(a['rows'])
+                same = len(V) >= m and all(
+                    late.cnt(a['rows'][t], 'sig0') == Counter({json.dumps(list(k)): v for k, v in V[t][0].items()}) and
+                    late.cnt(a['rows'][t], 'sig1') == Counter({json.dumps([list(k[:4]), [list(x) for x in k[4]]]): v
+                                                               for k, v in V[t][1].items()})
+                    for t in range(m))
+                f.write(json.dumps({'law': law, 'index': i, 'agree': same, 'rounds compared': m, 'growth end': a['end'],
+                                    'engine end': g['end']}) + '\n'); f.flush()
 
 
 if __name__ == '__main__':
-    if sys.argv[1] == 'verify': verify(int(sys.argv[2]), sys.argv[3])
+    if sys.argv[1] == 'verify': verify(int(sys.argv[2]), sys.argv[3], tuple(sys.argv[4].split(',')) if len(sys.argv) > 4 else ('nae', 'parity'))

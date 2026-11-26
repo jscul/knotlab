@@ -1,0 +1,505 @@
+{
+  "history": {
+    "commits": [
+      {
+        "revision": "89f8da21e9",
+        "commit_time": "2026-11-26T09:25:23-08:00"
+      },
+      {
+        "revision": "ec406f0ff7",
+        "commit_time": "2026-11-26T09:29:29-08:00"
+      },
+      {
+        "revision": "8de314b77c",
+        "commit_time": "2026-11-26T09:42:33-08:00"
+      },
+      {
+        "revision": "bf097af102",
+        "commit_time": "2026-11-26T09:50:38-08:00"
+      },
+      {
+        "revision": "0d3f180c31",
+        "commit_time": "2026-11-26T09:50:48-08:00"
+      }
+    ],
+    "freeze_changes": [
+      "A\tresearch/SETTLE-BOUND-20261126-001/README.md",
+      "A\tresearch/SETTLE-BOUND-20261126-001/bound.py"
+    ],
+    "result_changes": [
+      "M\tresearch/SETTLE-BOUND-20261126-001/README.md",
+      "A\tresearch/SETTLE-BOUND-20261126-001/decision.md",
+      "A\tresearch/SETTLE-BOUND-20261126-001/grown_g5_nae.jsonl.gz",
+      "A\tresearch/SETTLE-BOUND-20261126-001/grown_g5_par.jsonl.gz",
+      "A\tresearch/SETTLE-BOUND-20261126-001/grown_g6_nae.jsonl.gz",
+      "A\tresearch/SETTLE-BOUND-20261126-001/grown_g6_par.jsonl.gz",
+      "A\tresearch/SETTLE-BOUND-20261126-001/test_g5_nae.json",
+      "A\tresearch/SETTLE-BOUND-20261126-001/test_g5_par.json",
+      "A\tresearch/SETTLE-BOUND-20261126-001/test_g6_nae.json",
+      "A\tresearch/SETTLE-BOUND-20261126-001/test_g6_par.json"
+    ],
+    "first_committed_note_is_unchanged_prefix_of_results_note": true,
+    "first_committed_note_is_unchanged_prefix_of_current_note": true,
+    "frozen_note_sha256": "2b5fe996aa6dbc00ea3707e4b3833de9f6d3dd44e368d14891460e80ab5b912e",
+    "code": {
+      "research/SETTLE-BOUND-20261126-001/bound.py": {
+        "ec406f0ff7": "3ffe70e1e3228c5d69615aadef418a47c55c9c3928f5bbeac01d0e4fe8dc9c96",
+        "0d3f180c31": "3ffe70e1e3228c5d69615aadef418a47c55c9c3928f5bbeac01d0e4fe8dc9c96"
+      },
+      "research/LOOK-ALIKE-20261126-001/alike.py": {
+        "ec406f0ff7": "96dc13b063971e85ffc841f42661646ca1abf02b81f73cc4fc58b587e1064fa7",
+        "0d3f180c31": "96dc13b063971e85ffc841f42661646ca1abf02b81f73cc4fc58b587e1064fa7"
+      },
+      "research/LOOK-ALIKE-20261126-001/phase2.py": {
+        "ec406f0ff7": "4af40b9aa2713fc2215e54f6435b6357d4ec30a49b6fb25e575a896e0cd43e4f",
+        "0d3f180c31": "4af40b9aa2713fc2215e54f6435b6357d4ec30a49b6fb25e575a896e0cd43e4f"
+      }
+    },
+    "index_update_paths": [
+      "docs/LONG_RUNNING.md",
+      "docs/OBJECTS.md",
+      "docs/RESEARCH_GOALS.md"
+    ],
+    "frozen_note_sections": [
+      "## Why",
+      "## What it rests on",
+      "## The bound (frozen)",
+      "## Expected (written before the test runs)"
+    ],
+    "limitations": "Commit order verifies the recorded design precedes the committed results. It cannot date an unrecorded pilot or show which prior runs had been read."
+  },
+  "prior_work": {
+    "gates": [
+      {
+        "note": "research/SETTLE-BOUND-20261126-001/README.md",
+        "revision": "ec406f0ff7",
+        "arguments": [
+          "scripts/track.py",
+          "objects-gate",
+          "/dev/stdin"
+        ],
+        "exit": 1,
+        "output": "prior-work line: missing ## Prior work in the program section"
+      },
+      {
+        "note": "research/SETTLE-BOUND-20261126-001/README.md",
+        "revision": "current",
+        "arguments": [
+          "scripts/track.py",
+          "objects-gate",
+          "research/SETTLE-BOUND-20261126-001/README.md"
+        ],
+        "exit": 1,
+        "output": "prior-work line: missing ## Prior work in the program section"
+      }
+    ],
+    "searches": [
+      {
+        "arguments": [
+          "scripts/track.py",
+          "objects",
+          "local reader view settles polynomial counts birth kind cut",
+          "--until",
+          "2026-11-26",
+          "--exclude",
+          "SETTLE-BOUND-20261126-001",
+          "--limit",
+          "8",
+          "--json"
+        ],
+        "index": [
+          {
+            "id": "LOOK-ALIKE-20261126-001/1",
+            "date": "2026-11-26",
+            "record": "research/LOOK-ALIKE-20261126-001/README.md",
+            "score": 35.367541962233496,
+            "matched": [
+              "birth",
+              "count",
+              "kind",
+              "local",
+              "polynomial",
+              "reader",
+              "settle",
+              "view"
+            ]
+          },
+          {
+            "id": "KNOT-COUNTS-AND-ONE-EXTRA-MEETING-20261121-001/2",
+            "date": "2026-11-21",
+            "record": "research/KNOT-COUNTS-AND-ONE-EXTRA-MEETING-20261121-001/phase_comparison.md",
+            "score": 13.86087149710555,
+            "matched": [
+              "count",
+              "local",
+              "polynomial",
+              "reader"
+            ]
+          },
+          {
+            "id": "ROW-ARRANGE-20261118-001/1",
+            "date": "2026-11-18",
+            "record": "research/ROW-ARRANGE-20261118-001/row_arrange.md",
+            "score": 13.35607067406227,
+            "matched": [
+              "count",
+              "local",
+              "polynomial",
+              "view"
+            ]
+          },
+          {
+            "id": "PARENTS-FROM-HOLDERS-20261124-001/1",
+            "date": "2026-11-24",
+            "record": "research/PARENTS-FROM-HOLDERS-20261124-001A/results.md",
+            "score": 12.0421001751434,
+            "matched": [
+              "birth",
+              "local",
+              "view"
+            ]
+          },
+          {
+            "id": "FRESH-COUNT-20261118-001/3",
+            "date": "2026-11-18",
+            "record": "research/FRESH-COUNT-20261118-001/fresh_count.md",
+            "score": 11.10022809247422,
+            "matched": [
+              "count",
+              "cut",
+              "reader"
+            ]
+          },
+          {
+            "id": "RIGID-WORLDS-20261110-001/2",
+            "date": "2026-11-10",
+            "record": "research/RIGID-WORLDS-20261110-001/rigid_worlds.md",
+            "score": 10.924702195833545,
+            "matched": [
+              "local",
+              "view"
+            ]
+          },
+          {
+            "id": "RING-READ-20261118-001/1",
+            "date": "2026-11-18",
+            "record": "research/RING-READ-20261118-001/ring_read.md",
+            "score": 10.401437627389003,
+            "matched": [
+              "count",
+              "cut",
+              "reader"
+            ]
+          },
+          {
+            "id": "GROW-FACE-20261110-001/1",
+            "date": "2026-11-10",
+            "record": "research/GROW-FACE-20261110-001/grow_face.md",
+            "score": 10.390855831775752,
+            "matched": [
+              "count",
+              "local",
+              "view"
+            ]
+          }
+        ],
+        "other_epics": [
+          {
+            "id": "LAST-MERGE-20261126-001",
+            "date": "2026-11-26",
+            "record": "tickets/LAST-MERGE-20261126-001.json",
+            "score": 29.78554534021612,
+            "matched": [
+              "count",
+              "local",
+              "reader",
+              "settle",
+              "view"
+            ]
+          },
+          {
+            "id": "ONE-BIT-20261108-001",
+            "date": "2026-11-08",
+            "record": "tickets/ONE-BIT-20261108-001.json",
+            "score": 14.987054462680382,
+            "matched": [
+              "cut",
+              "local",
+              "reader",
+              "settle"
+            ]
+          },
+          {
+            "id": "UNIFORM-SPHERES-20261107-001",
+            "date": "2026-11-07",
+            "record": "tickets/UNIFORM-SPHERES-20261107-001.json",
+            "score": 10.62437569540548,
+            "matched": [
+              "count",
+              "kind",
+              "local"
+            ]
+          },
+          {
+            "id": "TWO-RECEPTIONS-20261126-001",
+            "date": "2026-11-26",
+            "record": "tickets/TWO-RECEPTIONS-20261126-001.json",
+            "score": 10.412176411234718,
+            "matched": [
+              "birth",
+              "kind",
+              "local"
+            ]
+          },
+          {
+            "id": "SPHERE-GROWTH-20261107-001",
+            "date": "2026-11-07",
+            "record": "tickets/SPHERE-GROWTH-20261107-001.json",
+            "score": 9.479063274756406,
+            "matched": [
+              "count",
+              "kind",
+              "local"
+            ]
+          }
+        ]
+      }
+    ],
+    "index_sha256_before": "c29e7ac89f7a66bf7fcce78daa415d36d81516a4f0b6520c3e9f25d38a22562f",
+    "index_sha256_after": "c29e7ac89f7a66bf7fcce78daa415d36d81516a4f0b6520c3e9f25d38a22562f",
+    "search_date_scope": "The day filter is inclusive. Same-day records require a Git chronology check."
+  },
+  "archives": {
+    "g5_nae": {
+      "starts_read": 128,
+      "dimension_labels": 74,
+      "archived_end_counts": {
+        "rounds": 74,
+        "stalls at round 1": 54
+      },
+      "maximum_saved_knot_count": 954,
+      "saved_rounds_by_dimension_labelled_start": {
+        "24": 74
+      },
+      "parity_start_rules_failing_K2_in_the_whole": [],
+      "parity_starts_with_failed_K2_and_a_dimension_label": 0,
+      "parity_starts_with_failed_K2_and_a_recorded_bound_miss": 0,
+      "block_examples": {
+        "unique_maximal_set_stalls": {
+          "census_index": 0,
+          "start_holdings": [
+            [
+              0,
+              4,
+              5
+            ],
+            [
+              1,
+              6,
+              7
+            ],
+            [
+              2,
+              8,
+              9
+            ],
+            [
+              3,
+              10,
+              11
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ]
+          ],
+          "loose_counts": [
+            2,
+            2,
+            2,
+            2,
+            0
+          ],
+          "live_neighbour_set": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "common_neighbours": [
+            4
+          ],
+          "maximal_live_neighbour_sets": [
+            [
+              0,
+              1,
+              2,
+              3
+            ]
+          ],
+          "pairs_expected_from_unqualified_binomial_count": 6,
+          "derived_round_one_groups_before_shortage_check": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              2,
+              3
+            ]
+          ],
+          "short_members": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "derived_round_one_pair_joins_within_set": 0,
+          "archive_round_one_kinds_and_counts": [],
+          "archive_first_round_counts": [],
+          "archive_ending": "stalls at round 1"
+        }
+      }
+    },
+    "g5_par": {
+      "starts_read": 128,
+      "dimension_labels": 73,
+      "archived_end_counts": {
+        "closes at round 4": 1,
+        "rounds": 73,
+        "stalls at round 1": 54
+      },
+      "maximum_saved_knot_count": 954,
+      "saved_rounds_by_dimension_labelled_start": {
+        "24": 73
+      },
+      "parity_start_rules_failing_K2_in_the_whole": [],
+      "parity_starts_with_failed_K2_and_a_dimension_label": 0,
+      "parity_starts_with_failed_K2_and_a_recorded_bound_miss": 0,
+      "block_examples": {}
+    },
+    "g6_nae": {
+      "starts_read": 128,
+      "dimension_labels": 53,
+      "archived_end_counts": {
+        "bound": 4,
+        "rounds": 50,
+        "stalls at round 1": 74
+      },
+      "maximum_saved_knot_count": 35744,
+      "saved_rounds_by_dimension_labelled_start": {
+        "19": 1,
+        "21": 2,
+        "24": 50
+      },
+      "parity_start_rules_failing_K2_in_the_whole": [],
+      "parity_starts_with_failed_K2_and_a_dimension_label": 0,
+      "parity_starts_with_failed_K2_and_a_recorded_bound_miss": 0,
+      "block_examples": {}
+    },
+    "g6_par": {
+      "starts_read": 128,
+      "dimension_labels": 36,
+      "archived_end_counts": {
+        "bound": 4,
+        "closes at round 10": 1,
+        "closes at round 14": 1,
+        "closes at round 2": 1,
+        "closes at round 3": 3,
+        "closes at round 4": 4,
+        "closes at round 5": 3,
+        "closes at round 6": 2,
+        "closes at round 8": 2,
+        "rounds": 33,
+        "stalls at round 1": 74
+      },
+      "maximum_saved_knot_count": 35744,
+      "saved_rounds_by_dimension_labelled_start": {
+        "19": 1,
+        "21": 2,
+        "24": 33
+      },
+      "parity_start_rules_failing_K2_in_the_whole": [],
+      "parity_starts_with_failed_K2_and_a_dimension_label": 0,
+      "parity_starts_with_failed_K2_and_a_recorded_bound_miss": 0,
+      "block_examples": {}
+    }
+  },
+  "surfaces": {
+    "docs/OBJECTS.md": [
+      {
+        "line": 13,
+        "text": "| SETTLE-BOUND-20261126-001/1 | A bound on the round at which a local reader's view of a growth settles, from the start's largest block (live start knots sharing a neighbour, or a round-1 birth's fresh count) | All 3,157 five-knot census starts and a seeded sample of 1,000 of the 82,656 six-knot starts, under not-all-equal and parity, to round 24 | settling: from round K each kind's count is the fitted polynomial of degree at most D - 1 through the last round read | Refuted: settling past M + 5 (M + 7 with parents) in 41 of 1,556 five-knot and 6 of 387 six-knot starts of a dimension (11 and 2 under parity), by up to three rounds; most late starts narrow to a single birth a round first; the pair rule holds wherever views settle by the cut | refuted | [research/SETTLE-BOUND-20261126-001/README.md](../research/SETTLE-BOUND-20261126-001/README.md) |"
+      }
+    ],
+    "docs/RESEARCH_GOALS.md": [
+      {
+        "line": 6155,
+        "text": "| 2026-11-26 | [When a local reader's view settles, from the start alone](../research/SETTLE-BOUND-20261126-001/decision.md) | G17, G1 | Obstruction learned | A check by the thread at the coordinator's go-ahead (computed; referee pending). A bound frozen on starts of up to four knots, a view settling within the start's largest block plus 5 rounds (plus 7 with parents), fails on 41 of 1,556 five-knot and 6 of 387 held-out six-knot starts of a dimension under not-all-equal (11 and 2 under parity). Most late starts narrow to a single birth a round before going on as a lone knot, late even with no large block. The look-alike pair rule holds wherever views settle by the cut. Successor: the round of the last merge as the bound. |"
+      }
+    ],
+    "publication/knotlab/INTUITIONS.md": [],
+    "publication/knotlab/docs/RESEARCH_GOALS.md": [],
+    "publication/knotlab/HISTORY.md": []
+  },
+  "guide_result_phrases": {
+    "settling round": [],
+    "local reader": [
+      {
+        "line": 5975,
+        "text": "- **When far details are small to a local reader.** Two starts of dimension two"
+      }
+    ],
+    "settled view": [],
+    "M + 5": [],
+    "round of the last merge": []
+  },
+  "source_checks": {
+    "previous_settling": [
+      "research/LOOK-ALIKE-20261126-001/referee-R1/report.md:7",
+      "research/LOOK-ALIKE-20261126-001/referee-R1/report.md:22"
+    ],
+    "pair_exactness_implication_already_noted": [
+      "research/LOOK-ALIKE-20261126-001/README.md:141",
+      "research/LOOK-ALIKE-20261126-001/referee-R1/report.md:8"
+    ],
+    "prior_growth_law_swap": [
+      "research/NAE-GROWTH-20261119-001/nae_growth.md:95",
+      "research/NAE-GROWTH-20261119-001/nae_growth.md:109",
+      "research/NAE-GROWTH-20261119-001/nae_growth.md:112",
+      "research/NAE-GROWTH-20261119-001/referee-R1/report.md:50"
+    ],
+    "earlier_six_knot_roster_and_different_measurement": [
+      "research/DESCENT-HELD-20261125-001/definitions.md:210",
+      "research/DESCENT-HELD-20261125-001A/results.md:81"
+    ],
+    "previous_parity_start_screen": [
+      "research/DESCENT-HELD-20261125-001/definitions.md:189"
+    ],
+    "maximal_sets_and_binomial_scope": {
+      "group_rule": "proofs/REDUCE-BLOCKS-20261119-001A/REDUCE-BLOCKS-20261119-001A-P001_reduce/proof.md:29",
+      "reduced_class_conditions": "proofs/REDUCE-BLOCKS-20261119-001A/REDUCE-BLOCKS-20261119-001A-P001_reduce/proof.md:75",
+      "branch_system_with_extra_distinctions": "proofs/DEAD-CAP-20261119-001A/DEAD-CAP-20261119-001A-P001_dead/proof.md:81",
+      "recorded_isolated_bursts": "research/MERGE-BURST-20261119-001/referee-R1/report.md:21",
+      "qualification": "A common-neighbour set supplies candidate pairs. A larger joining group can cover those pairs. For one maximal set all candidates inside it are pair groups, subject to the shortage rule. Extra loose distinctions produce offshoots and change the whole birth count. The earlier isolated bursts use the branch system with their measured loose counts, alongside the proof's other premises."
+    }
+  }
+}

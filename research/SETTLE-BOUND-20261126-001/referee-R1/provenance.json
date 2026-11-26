@@ -1,0 +1,3197 @@
+{
+  "history": {
+    "commits": [
+      {
+        "revision": "89f8da21e9",
+        "commit_time": "2026-11-26T09:25:23-08:00"
+      },
+      {
+        "revision": "ec406f0ff7",
+        "commit_time": "2026-11-26T09:29:29-08:00"
+      },
+      {
+        "revision": "8de314b77c",
+        "commit_time": "2026-11-26T09:42:33-08:00"
+      },
+      {
+        "revision": "bf097af102",
+        "commit_time": "2026-11-26T09:50:38-08:00"
+      },
+      {
+        "revision": "0d3f180c31",
+        "commit_time": "2026-11-26T09:50:48-08:00"
+      }
+    ],
+    "freeze_changes": [
+      "A\tresearch/SETTLE-BOUND-20261126-001/README.md",
+      "A\tresearch/SETTLE-BOUND-20261126-001/bound.py"
+    ],
+    "result_changes": [
+      "M\tresearch/SETTLE-BOUND-20261126-001/README.md",
+      "A\tresearch/SETTLE-BOUND-20261126-001/decision.md",
+      "A\tresearch/SETTLE-BOUND-20261126-001/grown_g5_nae.jsonl.gz",
+      "A\tresearch/SETTLE-BOUND-20261126-001/grown_g5_par.jsonl.gz",
+      "A\tresearch/SETTLE-BOUND-20261126-001/grown_g6_nae.jsonl.gz",
+      "A\tresearch/SETTLE-BOUND-20261126-001/grown_g6_par.jsonl.gz",
+      "A\tresearch/SETTLE-BOUND-20261126-001/test_g5_nae.json",
+      "A\tresearch/SETTLE-BOUND-20261126-001/test_g5_par.json",
+      "A\tresearch/SETTLE-BOUND-20261126-001/test_g6_nae.json",
+      "A\tresearch/SETTLE-BOUND-20261126-001/test_g6_par.json"
+    ],
+    "first_committed_note_is_unchanged_prefix_of_results_note": true,
+    "first_committed_note_is_unchanged_prefix_of_current_note": true,
+    "frozen_note_sha256": "2b5fe996aa6dbc00ea3707e4b3833de9f6d3dd44e368d14891460e80ab5b912e",
+    "code": {
+      "research/SETTLE-BOUND-20261126-001/bound.py": {
+        "ec406f0ff7": "3ffe70e1e3228c5d69615aadef418a47c55c9c3928f5bbeac01d0e4fe8dc9c96",
+        "0d3f180c31": "3ffe70e1e3228c5d69615aadef418a47c55c9c3928f5bbeac01d0e4fe8dc9c96"
+      },
+      "research/LOOK-ALIKE-20261126-001/alike.py": {
+        "ec406f0ff7": "96dc13b063971e85ffc841f42661646ca1abf02b81f73cc4fc58b587e1064fa7",
+        "0d3f180c31": "96dc13b063971e85ffc841f42661646ca1abf02b81f73cc4fc58b587e1064fa7"
+      },
+      "research/LOOK-ALIKE-20261126-001/phase2.py": {
+        "ec406f0ff7": "4af40b9aa2713fc2215e54f6435b6357d4ec30a49b6fb25e575a896e0cd43e4f",
+        "0d3f180c31": "4af40b9aa2713fc2215e54f6435b6357d4ec30a49b6fb25e575a896e0cd43e4f"
+      }
+    },
+    "index_update_paths": [
+      "docs/LONG_RUNNING.md",
+      "docs/OBJECTS.md",
+      "docs/RESEARCH_GOALS.md"
+    ],
+    "frozen_note_sections": [
+      "## Why",
+      "## What it rests on",
+      "## The bound (frozen)",
+      "## Expected (written before the test runs)"
+    ],
+    "limitations": "Commit order verifies the recorded design precedes the committed results. It cannot date an unrecorded pilot or show which prior runs had been read."
+  },
+  "prior_work": {
+    "gates": [
+      {
+        "note": "research/SETTLE-BOUND-20261126-001/README.md",
+        "revision": "ec406f0ff7",
+        "arguments": [
+          "scripts/track.py",
+          "objects-gate",
+          "/dev/stdin"
+        ],
+        "exit": 1,
+        "output": "prior-work line: missing ## Prior work in the program section"
+      },
+      {
+        "note": "research/SETTLE-BOUND-20261126-001/README.md",
+        "revision": "current",
+        "arguments": [
+          "scripts/track.py",
+          "objects-gate",
+          "research/SETTLE-BOUND-20261126-001/README.md"
+        ],
+        "exit": 1,
+        "output": "prior-work line: missing ## Prior work in the program section"
+      }
+    ],
+    "searches": [
+      {
+        "arguments": [
+          "scripts/track.py",
+          "objects",
+          "local reader view settles polynomial counts birth kind cut",
+          "--until",
+          "2026-11-26",
+          "--exclude",
+          "SETTLE-BOUND-20261126-001",
+          "--limit",
+          "8",
+          "--json"
+        ],
+        "index": [
+          {
+            "id": "LOOK-ALIKE-20261126-001/1",
+            "date": "2026-11-26",
+            "record": "research/LOOK-ALIKE-20261126-001/README.md",
+            "score": 35.367541962233496,
+            "matched": [
+              "birth",
+              "count",
+              "kind",
+              "local",
+              "polynomial",
+              "reader",
+              "settle",
+              "view"
+            ]
+          },
+          {
+            "id": "KNOT-COUNTS-AND-ONE-EXTRA-MEETING-20261121-001/2",
+            "date": "2026-11-21",
+            "record": "research/KNOT-COUNTS-AND-ONE-EXTRA-MEETING-20261121-001/phase_comparison.md",
+            "score": 13.86087149710555,
+            "matched": [
+              "count",
+              "local",
+              "polynomial",
+              "reader"
+            ]
+          },
+          {
+            "id": "ROW-ARRANGE-20261118-001/1",
+            "date": "2026-11-18",
+            "record": "research/ROW-ARRANGE-20261118-001/row_arrange.md",
+            "score": 13.35607067406227,
+            "matched": [
+              "count",
+              "local",
+              "polynomial",
+              "view"
+            ]
+          },
+          {
+            "id": "PARENTS-FROM-HOLDERS-20261124-001/1",
+            "date": "2026-11-24",
+            "record": "research/PARENTS-FROM-HOLDERS-20261124-001A/results.md",
+            "score": 12.0421001751434,
+            "matched": [
+              "birth",
+              "local",
+              "view"
+            ]
+          },
+          {
+            "id": "FRESH-COUNT-20261118-001/3",
+            "date": "2026-11-18",
+            "record": "research/FRESH-COUNT-20261118-001/fresh_count.md",
+            "score": 11.10022809247422,
+            "matched": [
+              "count",
+              "cut",
+              "reader"
+            ]
+          },
+          {
+            "id": "RIGID-WORLDS-20261110-001/2",
+            "date": "2026-11-10",
+            "record": "research/RIGID-WORLDS-20261110-001/rigid_worlds.md",
+            "score": 10.924702195833545,
+            "matched": [
+              "local",
+              "view"
+            ]
+          },
+          {
+            "id": "RING-READ-20261118-001/1",
+            "date": "2026-11-18",
+            "record": "research/RING-READ-20261118-001/ring_read.md",
+            "score": 10.401437627389003,
+            "matched": [
+              "count",
+              "cut",
+              "reader"
+            ]
+          },
+          {
+            "id": "GROW-FACE-20261110-001/1",
+            "date": "2026-11-10",
+            "record": "research/GROW-FACE-20261110-001/grow_face.md",
+            "score": 10.390855831775752,
+            "matched": [
+              "count",
+              "local",
+              "view"
+            ]
+          }
+        ],
+        "other_epics": [
+          {
+            "id": "LAST-MERGE-20261126-001",
+            "date": "2026-11-26",
+            "record": "tickets/LAST-MERGE-20261126-001.json",
+            "score": 29.78554534021612,
+            "matched": [
+              "count",
+              "local",
+              "reader",
+              "settle",
+              "view"
+            ]
+          },
+          {
+            "id": "ONE-BIT-20261108-001",
+            "date": "2026-11-08",
+            "record": "tickets/ONE-BIT-20261108-001.json",
+            "score": 14.987054462680382,
+            "matched": [
+              "cut",
+              "local",
+              "reader",
+              "settle"
+            ]
+          },
+          {
+            "id": "UNIFORM-SPHERES-20261107-001",
+            "date": "2026-11-07",
+            "record": "tickets/UNIFORM-SPHERES-20261107-001.json",
+            "score": 10.62437569540548,
+            "matched": [
+              "count",
+              "kind",
+              "local"
+            ]
+          },
+          {
+            "id": "TWO-RECEPTIONS-20261126-001",
+            "date": "2026-11-26",
+            "record": "tickets/TWO-RECEPTIONS-20261126-001.json",
+            "score": 10.412176411234718,
+            "matched": [
+              "birth",
+              "kind",
+              "local"
+            ]
+          },
+          {
+            "id": "SPHERE-GROWTH-20261107-001",
+            "date": "2026-11-07",
+            "record": "tickets/SPHERE-GROWTH-20261107-001.json",
+            "score": 9.479063274756406,
+            "matched": [
+              "count",
+              "kind",
+              "local"
+            ]
+          }
+        ]
+      },
+      {
+        "arguments": [
+          "scripts/track.py",
+          "objects",
+          "settling round largest common neighbour block round one fresh distinctions",
+          "--until",
+          "2026-11-26",
+          "--exclude",
+          "SETTLE-BOUND-20261126-001",
+          "--limit",
+          "8",
+          "--json"
+        ],
+        "index": [
+          {
+            "id": "RING-PAIR-20261119-001/1",
+            "date": "2026-11-19",
+            "record": "research/RING-PAIR-20261119-001/ring_pair.md",
+            "score": 16.780337298289634,
+            "matched": [
+              "block",
+              "common",
+              "distinction",
+              "fresh",
+              "neighbour",
+              "one",
+              "round"
+            ]
+          },
+          {
+            "id": "PLUS-ONE-20261118-001/1",
+            "date": "2026-11-18",
+            "record": "research/PLUS-ONE-20261118-001/plus_one.md",
+            "score": 16.013176318218317,
+            "matched": [
+              "distinction",
+              "neighbour",
+              "one",
+              "round",
+              "settl"
+            ]
+          },
+          {
+            "id": "LOOK-ALIKE-20261126-001/1",
+            "date": "2026-11-26",
+            "record": "research/LOOK-ALIKE-20261126-001/README.md",
+            "score": 15.348979529880738,
+            "matched": [
+              "block",
+              "distinction",
+              "fresh",
+              "one",
+              "round",
+              "settl"
+            ]
+          },
+          {
+            "id": "REDUCE-BLOCKS-20261119-001/1",
+            "date": "2026-11-19",
+            "record": "research/REDUCE-BLOCKS-20261119-001/reduce_blocks.md",
+            "score": 12.692925904782943,
+            "matched": [
+              "block",
+              "neighbour",
+              "one",
+              "round"
+            ]
+          },
+          {
+            "id": "THREE-RIGID-20261119-001/1",
+            "date": "2026-11-19",
+            "record": "research/THREE-RIGID-20261119-001/three_rigid.md",
+            "score": 12.454739978029991,
+            "matched": [
+              "largest",
+              "round",
+              "settl"
+            ]
+          },
+          {
+            "id": "SPACE-ORDER-20261117-001/1",
+            "date": "2026-11-17",
+            "record": "research/SPACE-ORDER-20261117-001/space_order.md",
+            "score": 11.79376660060815,
+            "matched": [
+              "largest",
+              "one",
+              "round",
+              "settl"
+            ]
+          },
+          {
+            "id": "CENSUS-READ-20261118-001/1",
+            "date": "2026-11-18",
+            "record": "research/CENSUS-READ-20261118-001/census_read.md",
+            "score": 10.928539620582908,
+            "matched": [
+              "distinction",
+              "fresh",
+              "largest",
+              "one",
+              "round"
+            ]
+          },
+          {
+            "id": "PARENT-RULE-20261119-001/1",
+            "date": "2026-11-19",
+            "record": "research/PARENT-RULE-20261119-001/parent_rule.md",
+            "score": 10.583932909832946,
+            "matched": [
+              "distinction",
+              "neighbour",
+              "one",
+              "round"
+            ]
+          }
+        ],
+        "other_epics": [
+          {
+            "id": "LAST-MERGE-20261126-001",
+            "date": "2026-11-26",
+            "record": "tickets/LAST-MERGE-20261126-001.json",
+            "score": 24.21623861607253,
+            "matched": [
+              "block",
+              "fresh",
+              "largest",
+              "round",
+              "settl"
+            ]
+          },
+          {
+            "id": "SWITCH-RECEIVERS-20261126-001",
+            "date": "2026-11-26",
+            "record": "tickets/SWITCH-RECEIVERS-20261126-001.json",
+            "score": 14.357755049196708,
+            "matched": [
+              "block",
+              "distinction",
+              "one",
+              "round",
+              "settl"
+            ]
+          },
+          {
+            "id": "PINWHEEL-NATIVE-20261107-001",
+            "date": "2026-11-07",
+            "record": "tickets/PINWHEEL-NATIVE-20261107-001.json",
+            "score": 9.139306819584716,
+            "matched": [
+              "distinction",
+              "one",
+              "round"
+            ]
+          },
+          {
+            "id": "NATIVE-NETWORK-20261021-001",
+            "date": "2026-10-21",
+            "record": "tickets/NATIVE-NETWORK-20261021-001.json",
+            "score": 9.135919829704864,
+            "matched": [
+              "common",
+              "distinction",
+              "one"
+            ]
+          },
+          {
+            "id": "COUNT-SYSTEMS-20261110-001",
+            "date": "2026-11-10",
+            "record": "tickets/COUNT-SYSTEMS-20261110-001.json",
+            "score": 9.086096473547101,
+            "matched": [
+              "one",
+              "round",
+              "settl"
+            ]
+          }
+        ]
+      },
+      {
+        "arguments": [
+          "scripts/track.py",
+          "objects",
+          "ordinary growth parity not-all-equal implied closing top relay tail",
+          "--until",
+          "2026-11-26",
+          "--exclude",
+          "SETTLE-BOUND-20261126-001",
+          "--limit",
+          "8",
+          "--json"
+        ],
+        "index": [
+          {
+            "id": "NAE-GROWTH-20261119-001/1",
+            "date": "2026-11-19",
+            "record": "research/NAE-GROWTH-20261119-001/nae_growth.md",
+            "score": 27.276029577710947,
+            "matched": [
+              "all",
+              "clos",
+              "equal",
+              "growth",
+              "imply",
+              "not",
+              "not-all-equal",
+              "parity",
+              "relay",
+              "top"
+            ]
+          },
+          {
+            "id": "WHOLE-STAGE-SETTINGS-20261120-001/2",
+            "date": "2026-11-20",
+            "record": "experiments/WHOLE-STAGE-SETTINGS-20261120-001B/WHOLE-STAGE-SETTINGS-20261120-001B-E001_ordinary_edits/result.md",
+            "score": 21.746096182766276,
+            "matched": [
+              "all",
+              "clos",
+              "equal",
+              "growth",
+              "imply",
+              "not",
+              "not-all-equal",
+              "ordinary",
+              "parity"
+            ]
+          },
+          {
+            "id": "RELAY-IDENT-20261119-001/1",
+            "date": "2026-11-19",
+            "record": "proofs/RELAY-IDENT-20261119-001A/RELAY-IDENT-20261119-001A-P001_relays/proof.md",
+            "score": 17.173756543123798,
+            "matched": [
+              "all",
+              "growth",
+              "parity",
+              "relay",
+              "top"
+            ]
+          },
+          {
+            "id": "WRITTEN-BIT-AND-JOIN-VETO-20261122-001/1",
+            "date": "2026-11-22",
+            "record": "research/WRITTEN-BIT-AND-JOIN-VETO-20261122-001/paid_veto.md",
+            "score": 16.19583374142613,
+            "matched": [
+              "all",
+              "equal",
+              "not",
+              "not-all-equal",
+              "ordinary",
+              "parity",
+              "relay"
+            ]
+          },
+          {
+            "id": "DOUBLE-IDENT-20261119-001/1",
+            "date": "2026-11-19",
+            "record": "proofs/DOUBLE-IDENT-20261119-001A/DOUBLE-IDENT-20261119-001A-P001_doubles/proof.md",
+            "score": 15.105015889254533,
+            "matched": [
+              "growth",
+              "imply",
+              "parity",
+              "relay"
+            ]
+          },
+          {
+            "id": "ORDINARY-DYNAMICS-20261120-001/1",
+            "date": "2026-11-20",
+            "record": "research/ORDINARY-DYNAMICS-20261120-001/decision.md",
+            "score": 14.451610744053816,
+            "matched": [
+              "all",
+              "clos",
+              "equal",
+              "growth",
+              "not",
+              "not-all-equal",
+              "ordinary",
+              "parity"
+            ]
+          },
+          {
+            "id": "READ-ORIGIN-20261120-001/1",
+            "date": "2026-11-20",
+            "record": "research/READ-ORIGIN-20261120-001/minimum.md",
+            "score": 14.125248484997346,
+            "matched": [
+              "all",
+              "clos",
+              "equal",
+              "growth",
+              "not",
+              "not-all-equal",
+              "ordinary",
+              "parity"
+            ]
+          },
+          {
+            "id": "IDLE-PHASE-AND-TREE-CLOSURE-20261121-001/5",
+            "date": "2026-11-21",
+            "record": "research/IDLE-PHASE-AND-TREE-CLOSURE-20261121-001/tree_proof.md",
+            "score": 13.820563138639406,
+            "matched": [
+              "clos",
+              "growth",
+              "ordinary",
+              "parity",
+              "top"
+            ]
+          }
+        ],
+        "other_epics": [
+          {
+            "id": "MADE-COPIER-20261125-001",
+            "date": "2026-11-25",
+            "record": "tickets/MADE-COPIER-20261125-001.json",
+            "score": 21.278470746928235,
+            "matched": [
+              "all",
+              "clos",
+              "equal",
+              "growth",
+              "imply",
+              "not",
+              "not-all-equal",
+              "parity"
+            ]
+          },
+          {
+            "id": "CYCLE-TRACTABILITY-20261021-001",
+            "date": "2026-10-21",
+            "record": "tickets/CYCLE-TRACTABILITY-20261021-001.json",
+            "score": 19.65576774108731,
+            "matched": [
+              "all",
+              "equal",
+              "imply",
+              "not",
+              "not-all-equal",
+              "top"
+            ]
+          },
+          {
+            "id": "TWO-RECEPTIONS-20261126-001",
+            "date": "2026-11-26",
+            "record": "tickets/TWO-RECEPTIONS-20261126-001.json",
+            "score": 17.062488058744098,
+            "matched": [
+              "all",
+              "equal",
+              "growth",
+              "imply",
+              "not",
+              "not-all-equal",
+              "parity"
+            ]
+          },
+          {
+            "id": "EXACT-TOWERS-20261029-001",
+            "date": "2026-10-29",
+            "record": "tickets/EXACT-TOWERS-20261029-001.json",
+            "score": 16.65992174821067,
+            "matched": [
+              "all",
+              "equal",
+              "growth",
+              "not",
+              "not-all-equal",
+              "parity"
+            ]
+          },
+          {
+            "id": "SPACE-SELECTION-20261030-001",
+            "date": "2026-10-30",
+            "record": "tickets/SPACE-SELECTION-20261030-001.json",
+            "score": 15.058331565681009,
+            "matched": [
+              "all",
+              "equal",
+              "growth",
+              "not",
+              "not-all-equal",
+              "parity"
+            ]
+          }
+        ]
+      },
+      {
+        "arguments": [
+          "scripts/track.py",
+          "objects",
+          "binomial burst maximal live neighbour set one block merge",
+          "--until",
+          "2026-11-26",
+          "--exclude",
+          "SETTLE-BOUND-20261126-001",
+          "--limit",
+          "8",
+          "--json"
+        ],
+        "index": [
+          {
+            "id": "REDUCE-BLOCKS-20261119-001/1",
+            "date": "2026-11-19",
+            "record": "research/REDUCE-BLOCKS-20261119-001/reduce_blocks.md",
+            "score": 32.059046932177026,
+            "matched": [
+              "block",
+              "burst",
+              "live",
+              "maximal",
+              "merge",
+              "neighbour",
+              "one",
+              "set"
+            ]
+          },
+          {
+            "id": "WALL-READ-20261119-001/2",
+            "date": "2026-11-19",
+            "record": "research/WALL-READ-20261119-001/wall_read.md",
+            "score": 28.65676644994931,
+            "matched": [
+              "block",
+              "burst",
+              "maximal",
+              "merge",
+              "one",
+              "set"
+            ]
+          },
+          {
+            "id": "MERGE-BURST-20261119-001/1",
+            "date": "2026-11-19",
+            "record": "research/MERGE-BURST-20261119-001/merge_burst.md",
+            "score": 28.366879204068177,
+            "matched": [
+              "block",
+              "burst",
+              "live",
+              "maximal",
+              "merge",
+              "one"
+            ]
+          },
+          {
+            "id": "EXPLOSIVE-20261119-001/1",
+            "date": "2026-11-19",
+            "record": "research/EXPLOSIVE-20261119-001/explosive.md",
+            "score": 21.51790026788813,
+            "matched": [
+              "binomial",
+              "block",
+              "burst",
+              "merge"
+            ]
+          },
+          {
+            "id": "LOOK-ALIKE-20261126-001/1",
+            "date": "2026-11-26",
+            "record": "research/LOOK-ALIKE-20261126-001/README.md",
+            "score": 11.030690717903877,
+            "matched": [
+              "block",
+              "burst",
+              "one"
+            ]
+          },
+          {
+            "id": "DECIDE-SMALL-20261117-001/1",
+            "date": "2026-11-17",
+            "record": "research/DECIDE-SMALL-20261117-001/decide_small.md",
+            "score": 10.644855087706912,
+            "matched": [
+              "block",
+              "merge",
+              "set"
+            ]
+          },
+          {
+            "id": "RING-PAIR-20261119-001/1",
+            "date": "2026-11-19",
+            "record": "research/RING-PAIR-20261119-001/ring_pair.md",
+            "score": 10.265500014502246,
+            "matched": [
+              "block",
+              "neighbour",
+              "one",
+              "set"
+            ]
+          },
+          {
+            "id": "GUARD-CHOICE-SEPARATION-20261115-001/1",
+            "date": "2026-11-15",
+            "record": "proofs/GUARD-CHOICE-SEPARATION-20261115-001A/GUARD-CHOICE-SEPARATION-20261115-001A-P001_boundary_supports/proof.md",
+            "score": 10.23541422970095,
+            "matched": [
+              "block",
+              "merge",
+              "one",
+              "set"
+            ]
+          }
+        ],
+        "other_epics": [
+          {
+            "id": "MATROID-CONVERSE-20261021-001",
+            "date": "2026-10-21",
+            "record": "tickets/MATROID-CONVERSE-20261021-001.json",
+            "score": 11.675124822637905,
+            "matched": [
+              "maximal",
+              "one",
+              "set"
+            ]
+          },
+          {
+            "id": "LAST-MERGE-20261126-001",
+            "date": "2026-11-26",
+            "record": "tickets/LAST-MERGE-20261126-001.json",
+            "score": 11.546634673632372,
+            "matched": [
+              "block",
+              "merge"
+            ]
+          },
+          {
+            "id": "PC-DEGREE-20261020-001",
+            "date": "2026-10-20",
+            "record": "tickets/PC-DEGREE-20261020-001.json",
+            "score": 11.297420441021213,
+            "matched": [
+              "binomial",
+              "one",
+              "set"
+            ]
+          },
+          {
+            "id": "KNOT-CIRCUITS-20261020-001",
+            "date": "2026-10-20",
+            "record": "tickets/KNOT-CIRCUITS-20261020-001.json",
+            "score": 10.919443592101961,
+            "matched": [
+              "maximal",
+              "one",
+              "set"
+            ]
+          },
+          {
+            "id": "RECUR-PROOF-20261108-001",
+            "date": "2026-11-08",
+            "record": "tickets/RECUR-PROOF-20261108-001.json",
+            "score": 10.284959385525699,
+            "matched": [
+              "binomial",
+              "block",
+              "one"
+            ]
+          }
+        ]
+      },
+      {
+        "arguments": [
+          "scripts/track.py",
+          "objects",
+          "six knot census starts sample growth parity waiting",
+          "--until",
+          "2026-11-26",
+          "--exclude",
+          "SETTLE-BOUND-20261126-001",
+          "--limit",
+          "8",
+          "--json"
+        ],
+        "index": [
+          {
+            "id": "DESCENT-HELD-20261125-001/1",
+            "date": "2026-11-25",
+            "record": "research/DESCENT-HELD-20261125-001A/results.md",
+            "score": 15.60622534014348,
+            "matched": [
+              "censu",
+              "knot",
+              "parity",
+              "six",
+              "start",
+              "wait"
+            ]
+          },
+          {
+            "id": "CLUSTER-ALL-20261119-001/1",
+            "date": "2026-11-19",
+            "record": "research/CLUSTER-ALL-20261119-001/cluster_all.md",
+            "score": 12.687532435707858,
+            "matched": [
+              "censu",
+              "growth",
+              "knot",
+              "parity",
+              "six",
+              "start"
+            ]
+          },
+          {
+            "id": "INFLUENCE-CONE-20261120-001/5",
+            "date": "2026-11-20",
+            "record": "research/INFLUENCE-CONE-20261120-001/physical_edits.md",
+            "score": 12.197398365979947,
+            "matched": [
+              "growth",
+              "knot",
+              "parity",
+              "sample",
+              "six",
+              "start"
+            ]
+          },
+          {
+            "id": "PLUS-ONE-20261118-001/1",
+            "date": "2026-11-18",
+            "record": "research/PLUS-ONE-20261118-001/plus_one.md",
+            "score": 12.121672754079023,
+            "matched": [
+              "censu",
+              "growth",
+              "knot",
+              "parity",
+              "six",
+              "start"
+            ]
+          },
+          {
+            "id": "LOCAL-ROUND-20261123-001/1",
+            "date": "2026-11-24",
+            "record": "research/LOCAL-ROUND-20261123-001A/results.md",
+            "score": 11.56392910147242,
+            "matched": [
+              "growth",
+              "knot",
+              "start",
+              "wait"
+            ]
+          },
+          {
+            "id": "DROPPED-JUNCTION-20261119-001/1",
+            "date": "2026-11-19",
+            "record": "research/DROPPED-JUNCTION-20261119-001/dropped_junction.md",
+            "score": 11.484918359330345,
+            "matched": [
+              "censu",
+              "knot",
+              "parity",
+              "sample",
+              "start"
+            ]
+          },
+          {
+            "id": "RING-IN-BALANCE-20261123-001/3",
+            "date": "2026-11-23",
+            "record": "research/RING-IN-BALANCE-20261123-001B/results.md",
+            "score": 11.381547174048599,
+            "matched": [
+              "censu",
+              "growth",
+              "knot",
+              "six",
+              "start"
+            ]
+          },
+          {
+            "id": "RING-IN-BALANCE-20261123-001/4",
+            "date": "2026-11-23",
+            "record": "research/RING-IN-BALANCE-20261123-001B/results.md",
+            "score": 11.370943712170368,
+            "matched": [
+              "censu",
+              "knot",
+              "wait"
+            ]
+          }
+        ],
+        "other_epics": [
+          {
+            "id": "LAST-MERGE-20261126-001",
+            "date": "2026-11-26",
+            "record": "tickets/LAST-MERGE-20261126-001.json",
+            "score": 21.842686127969664,
+            "matched": [
+              "censu",
+              "growth",
+              "knot",
+              "sample",
+              "six",
+              "start"
+            ]
+          },
+          {
+            "id": "TWO-PATTERNS-20261126-001",
+            "date": "2026-11-26",
+            "record": "tickets/TWO-PATTERNS-20261126-001.json",
+            "score": 16.406700808619945,
+            "matched": [
+              "censu",
+              "growth",
+              "knot",
+              "start",
+              "wait"
+            ]
+          },
+          {
+            "id": "TWO-RECEPTIONS-20261126-001",
+            "date": "2026-11-26",
+            "record": "tickets/TWO-RECEPTIONS-20261126-001.json",
+            "score": 12.000485975156955,
+            "matched": [
+              "censu",
+              "growth",
+              "knot",
+              "parity",
+              "start"
+            ]
+          },
+          {
+            "id": "SHORT-AGAIN-20261126-001",
+            "date": "2026-11-26",
+            "record": "tickets/SHORT-AGAIN-20261126-001.json",
+            "score": 11.710856172695348,
+            "matched": [
+              "knot",
+              "start",
+              "wait"
+            ]
+          },
+          {
+            "id": "MALTSEV-CONVERSE-20261020-001",
+            "date": "2026-10-20",
+            "record": "tickets/MALTSEV-CONVERSE-20261020-001.json",
+            "score": 11.554733641247172,
+            "matched": [
+              "censu",
+              "knot",
+              "parity",
+              "sample"
+            ]
+          }
+        ]
+      },
+      {
+        "arguments": [
+          "scripts/track.py",
+          "objects",
+          "pair agreement compared local birth kinds polynomial counts",
+          "--until",
+          "2026-11-26",
+          "--exclude",
+          "SETTLE-BOUND-20261126-001",
+          "--limit",
+          "8",
+          "--json"
+        ],
+        "index": [
+          {
+            "id": "LOOK-ALIKE-20261126-001/1",
+            "date": "2026-11-26",
+            "record": "research/LOOK-ALIKE-20261126-001/README.md",
+            "score": 22.510886201319614,
+            "matched": [
+              "agreement",
+              "birth",
+              "count",
+              "kind",
+              "local",
+              "pair",
+              "polynomial"
+            ]
+          },
+          {
+            "id": "FRESH-DEMAND-20261120-001/4",
+            "date": "2026-11-20",
+            "record": "research/FRESH-DEMAND-20261120-001/sampling.md",
+            "score": 13.076306789714547,
+            "matched": [
+              "birth",
+              "compar",
+              "count",
+              "pair"
+            ]
+          },
+          {
+            "id": "SIBLING-ANNOUNCEMENTS-AND-RECEIVER-BIRTHS-20261121-001/4",
+            "date": "2026-11-21",
+            "record": "research/SIBLING-ANNOUNCEMENTS-AND-RECEIVER-BIRTHS-20261121-001B/results.md",
+            "score": 11.3860456683575,
+            "matched": [
+              "birth",
+              "compar",
+              "pair"
+            ]
+          },
+          {
+            "id": "KNOT-COUNTS-AND-ONE-EXTRA-MEETING-20261121-001/2",
+            "date": "2026-11-21",
+            "record": "research/KNOT-COUNTS-AND-ONE-EXTRA-MEETING-20261121-001/phase_comparison.md",
+            "score": 10.72973105231792,
+            "matched": [
+              "count",
+              "local",
+              "pair",
+              "polynomial"
+            ]
+          },
+          {
+            "id": "TWO-KNOTS-ONE-DECISION-20261121-001/3",
+            "date": "2026-11-21",
+            "record": "research/TWO-KNOTS-ONE-DECISION-20261121-001B/results.md",
+            "score": 10.623377656789607,
+            "matched": [
+              "agreement",
+              "count",
+              "local",
+              "pair"
+            ]
+          },
+          {
+            "id": "LOCAL-ROUND-20261123-001/1",
+            "date": "2026-11-24",
+            "record": "research/LOCAL-ROUND-20261123-001A/results.md",
+            "score": 10.524266758103973,
+            "matched": [
+              "birth",
+              "compar",
+              "pair"
+            ]
+          },
+          {
+            "id": "HOW-MUCH-ARRIVES-20261126-001/1",
+            "date": "2026-11-26",
+            "record": "research/HOW-MUCH-ARRIVES-20261126-001/README.md",
+            "score": 10.469360837091724,
+            "matched": [
+              "birth",
+              "count",
+              "kind",
+              "pair"
+            ]
+          },
+          {
+            "id": "RULER-20261111-001/1",
+            "date": "2026-11-11",
+            "record": "research/RULER-20261111-001/ruler.md",
+            "score": 10.430893156920238,
+            "matched": [
+              "compar",
+              "kind",
+              "pair"
+            ]
+          }
+        ],
+        "other_epics": [
+          {
+            "id": "UNIFORM-SPHERES-20261107-001",
+            "date": "2026-11-07",
+            "record": "tickets/UNIFORM-SPHERES-20261107-001.json",
+            "score": 12.945415512684244,
+            "matched": [
+              "count",
+              "kind",
+              "local",
+              "pair"
+            ]
+          },
+          {
+            "id": "TWO-RECEPTIONS-20261126-001",
+            "date": "2026-11-26",
+            "record": "tickets/TWO-RECEPTIONS-20261126-001.json",
+            "score": 12.131607270538861,
+            "matched": [
+              "birth",
+              "kind",
+              "local",
+              "pair"
+            ]
+          },
+          {
+            "id": "COUNT-SURFACES-20261107-001",
+            "date": "2026-11-07",
+            "record": "tickets/COUNT-SURFACES-20261107-001.json",
+            "score": 9.989711549953611,
+            "matched": [
+              "agreement",
+              "count"
+            ]
+          },
+          {
+            "id": "SPHERE-GROWTH-20261107-001",
+            "date": "2026-11-07",
+            "record": "tickets/SPHERE-GROWTH-20261107-001.json",
+            "score": 9.479063274756406,
+            "matched": [
+              "count",
+              "kind",
+              "local"
+            ]
+          },
+          {
+            "id": "COUNT-ANTIVORTEX-20261107-001",
+            "date": "2026-11-07",
+            "record": "tickets/COUNT-ANTIVORTEX-20261107-001.json",
+            "score": 8.621654400274684,
+            "matched": [
+              "agreement",
+              "count"
+            ]
+          }
+        ]
+      }
+    ],
+    "index_sha256_before": "c29e7ac89f7a66bf7fcce78daa415d36d81516a4f0b6520c3e9f25d38a22562f",
+    "index_sha256_after": "c29e7ac89f7a66bf7fcce78daa415d36d81516a4f0b6520c3e9f25d38a22562f",
+    "search_date_scope": "The day filter is inclusive. Same-day records require a Git chronology check."
+  },
+  "archives": {
+    "g5_nae": {
+      "starts_read": 3157,
+      "dimension_labels": 1556,
+      "archived_end_counts": {
+        "bound": 50,
+        "rounds": 1520,
+        "stalls at round 1": 1587
+      },
+      "maximum_saved_knot_count": 40340,
+      "saved_rounds_by_dimension_labelled_start": {
+        "21": 15,
+        "24": 1541
+      },
+      "parity_start_rules_failing_K2_in_the_whole": [],
+      "parity_starts_with_failed_K2_and_a_dimension_label": 0,
+      "parity_starts_with_failed_K2_and_a_recorded_bound_miss": 0,
+      "block_examples": {
+        "unique_maximal_set_stalls": {
+          "census_index": 0,
+          "start_holdings": [
+            [
+              0,
+              4,
+              5
+            ],
+            [
+              1,
+              6,
+              7
+            ],
+            [
+              2,
+              8,
+              9
+            ],
+            [
+              3,
+              10,
+              11
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ]
+          ],
+          "loose_counts": [
+            2,
+            2,
+            2,
+            2,
+            0
+          ],
+          "live_neighbour_set": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "common_neighbours": [
+            4
+          ],
+          "maximal_live_neighbour_sets": [
+            [
+              0,
+              1,
+              2,
+              3
+            ]
+          ],
+          "pairs_expected_from_unqualified_binomial_count": 6,
+          "derived_round_one_groups_before_shortage_check": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              2,
+              3
+            ]
+          ],
+          "short_members": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "derived_round_one_pair_joins_within_set": 0,
+          "archive_round_one_kinds_and_counts": [],
+          "archive_first_round_counts": [],
+          "archive_ending": "stalls at round 1"
+        },
+        "unique_maximal_set_with_surplus": {
+          "census_index": 666,
+          "start_holdings": [
+            [
+              0,
+              6,
+              7
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              1,
+              4,
+              5
+            ],
+            [
+              2,
+              4,
+              8,
+              9
+            ],
+            [
+              3,
+              5,
+              10,
+              11,
+              12
+            ]
+          ],
+          "loose_counts": [
+            2,
+            0,
+            0,
+            2,
+            3
+          ],
+          "live_neighbour_set": [
+            0,
+            3,
+            4
+          ],
+          "common_neighbours": [
+            1
+          ],
+          "maximal_live_neighbour_sets": [
+            [
+              0,
+              3,
+              4
+            ]
+          ],
+          "pairs_expected_from_unqualified_binomial_count": 3,
+          "derived_round_one_groups_before_shortage_check": [
+            [
+              0,
+              3
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              3,
+              4
+            ]
+          ],
+          "short_members": [],
+          "derived_round_one_pair_joins_within_set": 3,
+          "archive_round_one_kinds_and_counts": [
+            [
+              [
+                "join",
+                2,
+                1,
+                3
+              ],
+              1
+            ],
+            [
+              [
+                "join",
+                2,
+                2,
+                4
+              ],
+              2
+            ],
+            [
+              [
+                "offshoot",
+                1,
+                2,
+                3
+              ],
+              1
+            ]
+          ],
+          "archive_first_round_counts": [
+            4,
+            3,
+            1,
+            1,
+            2,
+            3
+          ],
+          "archive_ending": "rounds"
+        },
+        "overlapping_maximal_sets": {
+          "census_index": 2077,
+          "start_holdings": [
+            [
+              0,
+              1,
+              7,
+              8,
+              9
+            ],
+            [
+              0,
+              2,
+              3,
+              4,
+              10,
+              11,
+              12
+            ],
+            [
+              2,
+              5,
+              13,
+              14,
+              15
+            ],
+            [
+              3,
+              5,
+              6
+            ],
+            [
+              1,
+              4,
+              6,
+              16,
+              17,
+              18
+            ]
+          ],
+          "loose_counts": [
+            3,
+            3,
+            3,
+            0,
+            3
+          ],
+          "live_neighbour_set": [
+            1,
+            2,
+            4
+          ],
+          "common_neighbours": [
+            3
+          ],
+          "maximal_live_neighbour_sets": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2,
+              4
+            ],
+            [
+              1,
+              2,
+              4
+            ]
+          ],
+          "pairs_expected_from_unqualified_binomial_count": 3,
+          "derived_round_one_groups_before_shortage_check": [
+            [
+              0,
+              1,
+              2,
+              4
+            ]
+          ],
+          "short_members": [],
+          "derived_round_one_pair_joins_within_set": 0,
+          "archive_round_one_kinds_and_counts": [
+            [
+              [
+                "join",
+                4,
+                8,
+                12
+              ],
+              1
+            ],
+            [
+              [
+                "offshoot",
+                1,
+                2,
+                3
+              ],
+              8
+            ]
+          ],
+          "archive_first_round_counts": [
+            9,
+            12,
+            28,
+            56,
+            70,
+            56
+          ],
+          "archive_ending": "rounds"
+        }
+      }
+    },
+    "g5_par": {
+      "starts_read": 3157,
+      "dimension_labels": 1078,
+      "archived_end_counts": {
+        "bound": 50,
+        "closes at round 10": 22,
+        "closes at round 12": 7,
+        "closes at round 2": 32,
+        "closes at round 3": 22,
+        "closes at round 4": 113,
+        "closes at round 5": 58,
+        "closes at round 6": 116,
+        "closes at round 7": 34,
+        "closes at round 8": 67,
+        "closes at round 9": 7,
+        "rounds": 1042,
+        "stalls at round 1": 1587
+      },
+      "maximum_saved_knot_count": 40340,
+      "saved_rounds_by_dimension_labelled_start": {
+        "21": 15,
+        "24": 1063
+      },
+      "parity_start_rules_failing_K2_in_the_whole": [
+        {
+          "census_index": 1512,
+          "holdings": [
+            [
+              0,
+              7,
+              8
+            ],
+            [
+              1,
+              2,
+              3
+            ],
+            [
+              1,
+              4,
+              5
+            ],
+            [
+              2,
+              4,
+              6
+            ],
+            [
+              0,
+              3,
+              5,
+              6
+            ]
+          ],
+          "kind": "dim 2",
+          "has_dimension_label": true,
+          "recorded_bound_miss": false,
+          "restrictions": [
+            {
+              "starting_rule": 0,
+              "forced_parity_on": [
+                0
+              ]
+            },
+            {
+              "starting_rule": 4,
+              "forced_parity_on": [
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "census_index": 1513,
+          "holdings": [
+            [
+              0,
+              7,
+              8
+            ],
+            [
+              1,
+              2,
+              3
+            ],
+            [
+              1,
+              4,
+              5
+            ],
+            [
+              2,
+              4,
+              6
+            ],
+            [
+              0,
+              3,
+              5,
+              6,
+              9
+            ]
+          ],
+          "kind": "dim 2",
+          "has_dimension_label": true,
+          "recorded_bound_miss": false,
+          "restrictions": [
+            {
+              "starting_rule": 4,
+              "forced_parity_on": [
+                0,
+                9
+              ]
+            }
+          ]
+        },
+        {
+          "census_index": 1514,
+          "holdings": [
+            [
+              0,
+              7,
+              8
+            ],
+            [
+              1,
+              2,
+              3
+            ],
+            [
+              1,
+              4,
+              5
+            ],
+            [
+              2,
+              4,
+              6
+            ],
+            [
+              0,
+              3,
+              5,
+              6,
+              9,
+              10
+            ]
+          ],
+          "kind": "dim 2",
+          "has_dimension_label": true,
+          "recorded_bound_miss": false,
+          "restrictions": [
+            {
+              "starting_rule": 4,
+              "forced_parity_on": [
+                3,
+                5,
+                6
+              ]
+            }
+          ]
+        },
+        {
+          "census_index": 1515,
+          "holdings": [
+            [
+              0,
+              7,
+              8
+            ],
+            [
+              1,
+              2,
+              3
+            ],
+            [
+              1,
+              4,
+              5
+            ],
+            [
+              2,
+              4,
+              6
+            ],
+            [
+              0,
+              3,
+              5,
+              6,
+              9,
+              10,
+              11
+            ]
+          ],
+          "kind": "dim 2",
+          "has_dimension_label": true,
+          "recorded_bound_miss": false,
+          "restrictions": [
+            {
+              "starting_rule": 4,
+              "forced_parity_on": [
+                3,
+                5,
+                6
+              ]
+            }
+          ]
+        },
+        {
+          "census_index": 1592,
+          "holdings": [
+            [
+              0,
+              7,
+              8,
+              9
+            ],
+            [
+              1,
+              2,
+              3
+            ],
+            [
+              1,
+              4,
+              5
+            ],
+            [
+              2,
+              4,
+              6
+            ],
+            [
+              0,
+              3,
+              5,
+              6
+            ]
+          ],
+          "kind": "closes",
+          "has_dimension_label": false,
+          "recorded_bound_miss": false,
+          "restrictions": [
+            {
+              "starting_rule": 0,
+              "forced_parity_on": [
+                0
+              ]
+            },
+            {
+              "starting_rule": 4,
+              "forced_parity_on": [
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "census_index": 1593,
+          "holdings": [
+            [
+              0,
+              7,
+              8,
+              9
+            ],
+            [
+              1,
+              2,
+              3
+            ],
+            [
+              1,
+              4,
+              5
+            ],
+            [
+              2,
+              4,
+              6
+            ],
+            [
+              0,
+              3,
+              5,
+              6,
+              10
+            ]
+          ],
+          "kind": "dim 2",
+          "has_dimension_label": true,
+          "recorded_bound_miss": false,
+          "restrictions": [
+            {
+              "starting_rule": 4,
+              "forced_parity_on": [
+                0,
+                10
+              ]
+            }
+          ]
+        },
+        {
+          "census_index": 1594,
+          "holdings": [
+            [
+              0,
+              7,
+              8,
+              9
+            ],
+            [
+              1,
+              2,
+              3
+            ],
+            [
+              1,
+              4,
+              5
+            ],
+            [
+              2,
+              4,
+              6
+            ],
+            [
+              0,
+              3,
+              5,
+              6,
+              10,
+              11
+            ]
+          ],
+          "kind": "dim 2",
+          "has_dimension_label": true,
+          "recorded_bound_miss": false,
+          "restrictions": [
+            {
+              "starting_rule": 4,
+              "forced_parity_on": [
+                3,
+                5,
+                6
+              ]
+            }
+          ]
+        },
+        {
+          "census_index": 1595,
+          "holdings": [
+            [
+              0,
+              7,
+              8,
+              9
+            ],
+            [
+              1,
+              2,
+              3
+            ],
+            [
+              1,
+              4,
+              5
+            ],
+            [
+              2,
+              4,
+              6
+            ],
+            [
+              0,
+              3,
+              5,
+              6,
+              10,
+              11,
+              12
+            ]
+          ],
+          "kind": "dim 2",
+          "has_dimension_label": true,
+          "recorded_bound_miss": false,
+          "restrictions": [
+            {
+              "starting_rule": 4,
+              "forced_parity_on": [
+                3,
+                5,
+                6
+              ]
+            }
+          ]
+        },
+        {
+          "census_index": 2084,
+          "holdings": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              3,
+              4,
+              5
+            ],
+            [
+              0,
+              3,
+              6
+            ],
+            [
+              1,
+              4,
+              7
+            ],
+            [
+              2,
+              5,
+              6
+            ]
+          ],
+          "kind": "closes",
+          "has_dimension_label": false,
+          "recorded_bound_miss": false,
+          "restrictions": [
+            {
+              "starting_rule": 3,
+              "forced_parity_on": [
+                7
+              ]
+            }
+          ]
+        },
+        {
+          "census_index": 2088,
+          "holdings": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              3,
+              4,
+              5
+            ],
+            [
+              0,
+              3,
+              6
+            ],
+            [
+              1,
+              4,
+              7,
+              8
+            ],
+            [
+              2,
+              5,
+              6
+            ]
+          ],
+          "kind": "dim 2",
+          "has_dimension_label": true,
+          "recorded_bound_miss": false,
+          "restrictions": [
+            {
+              "starting_rule": 3,
+              "forced_parity_on": [
+                1,
+                4
+              ]
+            }
+          ]
+        },
+        {
+          "census_index": 2092,
+          "holdings": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              3,
+              4,
+              5
+            ],
+            [
+              0,
+              3,
+              6
+            ],
+            [
+              1,
+              4,
+              7,
+              8,
+              9
+            ],
+            [
+              2,
+              5,
+              6
+            ]
+          ],
+          "kind": "closes",
+          "has_dimension_label": false,
+          "recorded_bound_miss": false,
+          "restrictions": [
+            {
+              "starting_rule": 3,
+              "forced_parity_on": [
+                1,
+                4
+              ]
+            }
+          ]
+        },
+        {
+          "census_index": 2384,
+          "holdings": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              3,
+              4
+            ],
+            [
+              5,
+              6,
+              8
+            ],
+            [
+              1,
+              3,
+              5,
+              7
+            ],
+            [
+              2,
+              4,
+              6,
+              7
+            ]
+          ],
+          "kind": "closes",
+          "has_dimension_label": false,
+          "recorded_bound_miss": false,
+          "restrictions": [
+            {
+              "starting_rule": 2,
+              "forced_parity_on": [
+                8
+              ]
+            }
+          ]
+        },
+        {
+          "census_index": 2394,
+          "holdings": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              3,
+              4
+            ],
+            [
+              5,
+              6,
+              8,
+              9
+            ],
+            [
+              1,
+              3,
+              5,
+              7
+            ],
+            [
+              2,
+              4,
+              6,
+              7
+            ]
+          ],
+          "kind": "dim 2",
+          "has_dimension_label": true,
+          "recorded_bound_miss": false,
+          "restrictions": [
+            {
+              "starting_rule": 2,
+              "forced_parity_on": [
+                5,
+                6
+              ]
+            }
+          ]
+        },
+        {
+          "census_index": 2404,
+          "holdings": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              3,
+              4
+            ],
+            [
+              5,
+              6,
+              8,
+              9,
+              10
+            ],
+            [
+              1,
+              3,
+              5,
+              7
+            ],
+            [
+              2,
+              4,
+              6,
+              7
+            ]
+          ],
+          "kind": "closes",
+          "has_dimension_label": false,
+          "recorded_bound_miss": false,
+          "restrictions": [
+            {
+              "starting_rule": 2,
+              "forced_parity_on": [
+                5,
+                6
+              ]
+            }
+          ]
+        },
+        {
+          "census_index": 2684,
+          "holdings": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              3,
+              4
+            ],
+            [
+              3,
+              5,
+              6
+            ],
+            [
+              1,
+              5,
+              7
+            ],
+            [
+              2,
+              4,
+              6,
+              7,
+              8
+            ]
+          ],
+          "kind": "closes",
+          "has_dimension_label": false,
+          "recorded_bound_miss": false,
+          "restrictions": [
+            {
+              "starting_rule": 4,
+              "forced_parity_on": [
+                8
+              ]
+            }
+          ]
+        },
+        {
+          "census_index": 2685,
+          "holdings": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              3,
+              4
+            ],
+            [
+              3,
+              5,
+              6
+            ],
+            [
+              1,
+              5,
+              7
+            ],
+            [
+              2,
+              4,
+              6,
+              7,
+              8,
+              9
+            ]
+          ],
+          "kind": "dim 2",
+          "has_dimension_label": true,
+          "recorded_bound_miss": false,
+          "restrictions": [
+            {
+              "starting_rule": 4,
+              "forced_parity_on": [
+                8,
+                9
+              ]
+            }
+          ]
+        },
+        {
+          "census_index": 2686,
+          "holdings": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              3,
+              4
+            ],
+            [
+              3,
+              5,
+              6
+            ],
+            [
+              1,
+              5,
+              7
+            ],
+            [
+              2,
+              4,
+              6,
+              7,
+              8,
+              9,
+              10
+            ]
+          ],
+          "kind": "closes",
+          "has_dimension_label": false,
+          "recorded_bound_miss": false,
+          "restrictions": [
+            {
+              "starting_rule": 4,
+              "forced_parity_on": [
+                8,
+                9,
+                10
+              ]
+            }
+          ]
+        },
+        {
+          "census_index": 2687,
+          "holdings": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              3,
+              4
+            ],
+            [
+              3,
+              5,
+              6
+            ],
+            [
+              1,
+              5,
+              7,
+              8
+            ],
+            [
+              2,
+              4,
+              6,
+              7
+            ]
+          ],
+          "kind": "closes",
+          "has_dimension_label": false,
+          "recorded_bound_miss": false,
+          "restrictions": [
+            {
+              "starting_rule": 3,
+              "forced_parity_on": [
+                8
+              ]
+            }
+          ]
+        },
+        {
+          "census_index": 2691,
+          "holdings": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              3,
+              4
+            ],
+            [
+              3,
+              5,
+              6
+            ],
+            [
+              1,
+              5,
+              7,
+              8,
+              9
+            ],
+            [
+              2,
+              4,
+              6,
+              7
+            ]
+          ],
+          "kind": "dim 2",
+          "has_dimension_label": true,
+          "recorded_bound_miss": false,
+          "restrictions": [
+            {
+              "starting_rule": 3,
+              "forced_parity_on": [
+                8,
+                9
+              ]
+            }
+          ]
+        },
+        {
+          "census_index": 2695,
+          "holdings": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              3,
+              4
+            ],
+            [
+              3,
+              5,
+              6
+            ],
+            [
+              1,
+              5,
+              7,
+              8,
+              9,
+              10
+            ],
+            [
+              2,
+              4,
+              6,
+              7
+            ]
+          ],
+          "kind": "closes",
+          "has_dimension_label": false,
+          "recorded_bound_miss": false,
+          "restrictions": [
+            {
+              "starting_rule": 3,
+              "forced_parity_on": [
+                1,
+                5,
+                7
+              ]
+            }
+          ]
+        },
+        {
+          "census_index": 2903,
+          "holdings": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              3,
+              4,
+              5
+            ],
+            [
+              3,
+              6,
+              7
+            ],
+            [
+              1,
+              4,
+              6,
+              8
+            ],
+            [
+              2,
+              5,
+              7,
+              8,
+              9
+            ]
+          ],
+          "kind": "closes",
+          "has_dimension_label": false,
+          "recorded_bound_miss": false,
+          "restrictions": [
+            {
+              "starting_rule": 4,
+              "forced_parity_on": [
+                9
+              ]
+            }
+          ]
+        },
+        {
+          "census_index": 2904,
+          "holdings": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              3,
+              4,
+              5
+            ],
+            [
+              3,
+              6,
+              7
+            ],
+            [
+              1,
+              4,
+              6,
+              8
+            ],
+            [
+              2,
+              5,
+              7,
+              8,
+              9,
+              10
+            ]
+          ],
+          "kind": "dim 2",
+          "has_dimension_label": true,
+          "recorded_bound_miss": false,
+          "restrictions": [
+            {
+              "starting_rule": 4,
+              "forced_parity_on": [
+                9,
+                10
+              ]
+            }
+          ]
+        },
+        {
+          "census_index": 2905,
+          "holdings": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              3,
+              4,
+              5
+            ],
+            [
+              3,
+              6,
+              7
+            ],
+            [
+              1,
+              4,
+              6,
+              8
+            ],
+            [
+              2,
+              5,
+              7,
+              8,
+              9,
+              10,
+              11
+            ]
+          ],
+          "kind": "closes",
+          "has_dimension_label": false,
+          "recorded_bound_miss": false,
+          "restrictions": [
+            {
+              "starting_rule": 4,
+              "forced_parity_on": [
+                9,
+                10,
+                11
+              ]
+            }
+          ]
+        },
+        {
+          "census_index": 2912,
+          "holdings": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              3,
+              4,
+              5
+            ],
+            [
+              3,
+              6,
+              7,
+              9
+            ],
+            [
+              1,
+              4,
+              6,
+              8
+            ],
+            [
+              2,
+              5,
+              7,
+              8
+            ]
+          ],
+          "kind": "closes",
+          "has_dimension_label": false,
+          "recorded_bound_miss": false,
+          "restrictions": [
+            {
+              "starting_rule": 2,
+              "forced_parity_on": [
+                9
+              ]
+            }
+          ]
+        },
+        {
+          "census_index": 2922,
+          "holdings": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              3,
+              4,
+              5
+            ],
+            [
+              3,
+              6,
+              7,
+              9,
+              10
+            ],
+            [
+              1,
+              4,
+              6,
+              8
+            ],
+            [
+              2,
+              5,
+              7,
+              8
+            ]
+          ],
+          "kind": "dim 2",
+          "has_dimension_label": true,
+          "recorded_bound_miss": false,
+          "restrictions": [
+            {
+              "starting_rule": 2,
+              "forced_parity_on": [
+                9,
+                10
+              ]
+            }
+          ]
+        },
+        {
+          "census_index": 2932,
+          "holdings": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              3,
+              4,
+              5
+            ],
+            [
+              3,
+              6,
+              7,
+              9,
+              10,
+              11
+            ],
+            [
+              1,
+              4,
+              6,
+              8
+            ],
+            [
+              2,
+              5,
+              7,
+              8
+            ]
+          ],
+          "kind": "closes",
+          "has_dimension_label": false,
+          "recorded_bound_miss": false,
+          "restrictions": [
+            {
+              "starting_rule": 2,
+              "forced_parity_on": [
+                3,
+                6,
+                7
+              ]
+            }
+          ]
+        },
+        {
+          "census_index": 3102,
+          "holdings": [
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              4,
+              5,
+              6
+            ],
+            [
+              1,
+              4,
+              7,
+              8
+            ],
+            [
+              2,
+              5,
+              7,
+              9
+            ],
+            [
+              3,
+              6,
+              8,
+              9,
+              10
+            ]
+          ],
+          "kind": "closes",
+          "has_dimension_label": false,
+          "recorded_bound_miss": false,
+          "restrictions": [
+            {
+              "starting_rule": 4,
+              "forced_parity_on": [
+                10
+              ]
+            }
+          ]
+        },
+        {
+          "census_index": 3103,
+          "holdings": [
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              4,
+              5,
+              6
+            ],
+            [
+              1,
+              4,
+              7,
+              8
+            ],
+            [
+              2,
+              5,
+              7,
+              9
+            ],
+            [
+              3,
+              6,
+              8,
+              9,
+              10,
+              11
+            ]
+          ],
+          "kind": "dim 2",
+          "has_dimension_label": true,
+          "recorded_bound_miss": false,
+          "restrictions": [
+            {
+              "starting_rule": 4,
+              "forced_parity_on": [
+                10,
+                11
+              ]
+            }
+          ]
+        },
+        {
+          "census_index": 3104,
+          "holdings": [
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              4,
+              5,
+              6
+            ],
+            [
+              1,
+              4,
+              7,
+              8
+            ],
+            [
+              2,
+              5,
+              7,
+              9
+            ],
+            [
+              3,
+              6,
+              8,
+              9,
+              10,
+              11,
+              12
+            ]
+          ],
+          "kind": "closes",
+          "has_dimension_label": false,
+          "recorded_bound_miss": false,
+          "restrictions": [
+            {
+              "starting_rule": 4,
+              "forced_parity_on": [
+                10,
+                11,
+                12
+              ]
+            }
+          ]
+        }
+      ],
+      "parity_starts_with_failed_K2_and_a_dimension_label": 14,
+      "parity_starts_with_failed_K2_and_a_recorded_bound_miss": 0,
+      "block_examples": {},
+      "canonical_check_of_first_failed_rule": {
+        "starting_rule": 0,
+        "arguments": [
+          "-m",
+          "knotlab",
+          "check",
+          "--cnf",
+          "x0 x7 ~x8;x0 ~x7 x8;~x0 x7 x8;~x0 ~x7 ~x8;x1 x2 ~x3;x1 ~x2 x3;~x1 x2 x3;~x1 ~x2 ~x3;x1 x4 ~x5;x1 ~x4 x5;~x1 x4 x5;~x1 ~x4 ~x5;x2 x4 ~x6;x2 ~x4 x6;~x2 x4 x6;~x2 ~x4 ~x6;x0 x3 x5 ~x6;x0 x3 ~x5 x6;x0 ~x3 x5 x6;x0 ~x3 ~x5 ~x6;~x0 x3 x5 x6;~x0 x3 ~x5 ~x6;~x0 ~x3 x5 ~x6;~x0 ~x3 ~x5 x6",
+          "--loops",
+          "x0",
+          "x7",
+          "--contact",
+          "x8",
+          "--witnesses",
+          "x1",
+          "x2",
+          "x3",
+          "x4",
+          "x5",
+          "x6",
+          "--json"
+        ],
+        "K1": true,
+        "K2": false,
+        "K3": true,
+        "allowed": [
+          "000",
+          "011"
+        ],
+        "variables": [
+          "x0",
+          "x7",
+          "x8"
+        ]
+      }
+    },
+    "g6_nae": {
+      "starts_read": 1000,
+      "dimension_labels": 387,
+      "archived_end_counts": {
+        "bound": 27,
+        "rounds": 363,
+        "stalls at round 1": 610
+      },
+      "maximum_saved_knot_count": 38856,
+      "saved_rounds_by_dimension_labelled_start": {
+        "17": 2,
+        "19": 3,
+        "21": 8,
+        "24": 374
+      },
+      "parity_start_rules_failing_K2_in_the_whole": [],
+      "parity_starts_with_failed_K2_and_a_dimension_label": 0,
+      "parity_starts_with_failed_K2_and_a_recorded_bound_miss": 0,
+      "block_examples": {}
+    },
+    "g6_par": {
+      "starts_read": 1000,
+      "dimension_labels": 283,
+      "archived_end_counts": {
+        "bound": 27,
+        "closes at round 10": 8,
+        "closes at round 11": 1,
+        "closes at round 12": 1,
+        "closes at round 14": 2,
+        "closes at round 2": 3,
+        "closes at round 3": 11,
+        "closes at round 4": 28,
+        "closes at round 5": 12,
+        "closes at round 6": 16,
+        "closes at round 7": 6,
+        "closes at round 8": 15,
+        "closes at round 9": 1,
+        "rounds": 259,
+        "stalls at round 1": 610
+      },
+      "maximum_saved_knot_count": 38856,
+      "saved_rounds_by_dimension_labelled_start": {
+        "17": 2,
+        "19": 3,
+        "21": 8,
+        "24": 270
+      },
+      "parity_start_rules_failing_K2_in_the_whole": [
+        {
+          "census_index": 21925,
+          "holdings": [
+            [
+              0,
+              1,
+              2,
+              8,
+              9,
+              10
+            ],
+            [
+              0,
+              3,
+              4
+            ],
+            [
+              1,
+              5,
+              6
+            ],
+            [
+              3,
+              5,
+              7
+            ],
+            [
+              2,
+              11,
+              12,
+              13
+            ],
+            [
+              4,
+              6,
+              7
+            ]
+          ],
+          "kind": "dim 2",
+          "has_dimension_label": true,
+          "recorded_bound_miss": false,
+          "restrictions": [
+            {
+              "starting_rule": 0,
+              "forced_parity_on": [
+                0,
+                1
+              ]
+            }
+          ]
+        },
+        {
+          "census_index": 70399,
+          "holdings": [
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              4,
+              5,
+              6
+            ],
+            [
+              1,
+              4,
+              7,
+              8
+            ],
+            [
+              2,
+              5,
+              7,
+              9
+            ],
+            [
+              3,
+              6,
+              8,
+              10
+            ],
+            [
+              9,
+              10,
+              11
+            ]
+          ],
+          "kind": "closes",
+          "has_dimension_label": false,
+          "recorded_bound_miss": false,
+          "restrictions": [
+            {
+              "starting_rule": 5,
+              "forced_parity_on": [
+                11
+              ]
+            }
+          ]
+        }
+      ],
+      "parity_starts_with_failed_K2_and_a_dimension_label": 1,
+      "parity_starts_with_failed_K2_and_a_recorded_bound_miss": 0,
+      "block_examples": {},
+      "canonical_check_of_first_failed_rule": {
+        "starting_rule": 0,
+        "arguments": [
+          "-m",
+          "knotlab",
+          "check",
+          "--cnf",
+          "x0 x1 x2 x8 x9 ~x10;x0 x1 x2 x8 ~x9 x10;x0 x1 x2 ~x8 x9 x10;x0 x1 x2 ~x8 ~x9 ~x10;x0 x1 ~x2 x8 x9 x10;x0 x1 ~x2 x8 ~x9 ~x10;x0 x1 ~x2 ~x8 x9 ~x10;x0 x1 ~x2 ~x8 ~x9 x10;x0 ~x1 x2 x8 x9 x10;x0 ~x1 x2 x8 ~x9 ~x10;x0 ~x1 x2 ~x8 x9 ~x10;x0 ~x1 x2 ~x8 ~x9 x10;x0 ~x1 ~x2 x8 x9 ~x10;x0 ~x1 ~x2 x8 ~x9 x10;x0 ~x1 ~x2 ~x8 x9 x10;x0 ~x1 ~x2 ~x8 ~x9 ~x10;~x0 x1 x2 x8 x9 x10;~x0 x1 x2 x8 ~x9 ~x10;~x0 x1 x2 ~x8 x9 ~x10;~x0 x1 x2 ~x8 ~x9 x10;~x0 x1 ~x2 x8 x9 ~x10;~x0 x1 ~x2 x8 ~x9 x10;~x0 x1 ~x2 ~x8 x9 x10;~x0 x1 ~x2 ~x8 ~x9 ~x10;~x0 ~x1 x2 x8 x9 ~x10;~x0 ~x1 x2 x8 ~x9 x10;~x0 ~x1 x2 ~x8 x9 x10;~x0 ~x1 x2 ~x8 ~x9 ~x10;~x0 ~x1 ~x2 x8 x9 x10;~x0 ~x1 ~x2 x8 ~x9 ~x10;~x0 ~x1 ~x2 ~x8 x9 ~x10;~x0 ~x1 ~x2 ~x8 ~x9 x10;x0 x3 ~x4;x0 ~x3 x4;~x0 x3 x4;~x0 ~x3 ~x4;x1 x5 ~x6;x1 ~x5 x6;~x1 x5 x6;~x1 ~x5 ~x6;x3 x5 ~x7;x3 ~x5 x7;~x3 x5 x7;~x3 ~x5 ~x7;x2 x11 x12 ~x13;x2 x11 ~x12 x13;x2 ~x11 x12 x13;x2 ~x11 ~x12 ~x13;~x2 x11 x12 x13;~x2 x11 ~x12 ~x13;~x2 ~x11 x12 ~x13;~x2 ~x11 ~x12 x13;x4 x6 ~x7;x4 ~x6 x7;~x4 x6 x7;~x4 ~x6 ~x7",
+          "--loops",
+          "x0",
+          "x1",
+          "x2",
+          "x8",
+          "x9",
+          "--contact",
+          "x10",
+          "--witnesses",
+          "x11",
+          "x12",
+          "x13",
+          "x3",
+          "x4",
+          "x5",
+          "x6",
+          "x7",
+          "--json"
+        ],
+        "K1": true,
+        "K2": false,
+        "K3": true,
+        "allowed": [
+          "000000",
+          "000011",
+          "000101",
+          "000110",
+          "001001",
+          "001010",
+          "001100",
+          "001111",
+          "110000",
+          "110011",
+          "110101",
+          "110110",
+          "111001",
+          "111010",
+          "111100",
+          "111111"
+        ],
+        "variables": [
+          "x0",
+          "x1",
+          "x2",
+          "x8",
+          "x9",
+          "x10"
+        ]
+      }
+    }
+  },
+  "surfaces": {
+    "docs/OBJECTS.md": [
+      {
+        "line": 13,
+        "text": "| SETTLE-BOUND-20261126-001/1 | A bound on the round at which a local reader's view of a growth settles, from the start's largest block (live start knots sharing a neighbour, or a round-1 birth's fresh count) | All 3,157 five-knot census starts and a seeded sample of 1,000 of the 82,656 six-knot starts, under not-all-equal and parity, to round 24 | settling: from round K each kind's count is the fitted polynomial of degree at most D - 1 through the last round read | Refuted: settling past M + 5 (M + 7 with parents) in 41 of 1,556 five-knot and 6 of 387 six-knot starts of a dimension (11 and 2 under parity), by up to three rounds; most late starts narrow to a single birth a round first; the pair rule holds wherever views settle by the cut | refuted | [research/SETTLE-BOUND-20261126-001/README.md](../research/SETTLE-BOUND-20261126-001/README.md) |"
+      }
+    ],
+    "docs/RESEARCH_GOALS.md": [
+      {
+        "line": 6155,
+        "text": "| 2026-11-26 | [When a local reader's view settles, from the start alone](../research/SETTLE-BOUND-20261126-001/decision.md) | G17, G1 | Obstruction learned | A check by the thread at the coordinator's go-ahead (computed; referee pending). A bound frozen on starts of up to four knots, a view settling within the start's largest block plus 5 rounds (plus 7 with parents), fails on 41 of 1,556 five-knot and 6 of 387 held-out six-knot starts of a dimension under not-all-equal (11 and 2 under parity). Most late starts narrow to a single birth a round before going on as a lone knot, late even with no large block. The look-alike pair rule holds wherever views settle by the cut. Successor: the round of the last merge as the bound. |"
+      }
+    ],
+    "publication/knotlab/INTUITIONS.md": [],
+    "publication/knotlab/docs/RESEARCH_GOALS.md": [],
+    "publication/knotlab/HISTORY.md": []
+  },
+  "guide_result_phrases": {
+    "settling round": [],
+    "local reader": [
+      {
+        "line": 5975,
+        "text": "- **When far details are small to a local reader.** Two starts of dimension two"
+      }
+    ],
+    "settled view": [],
+    "M + 5": [],
+    "round of the last merge": []
+  },
+  "source_checks": {
+    "previous_settling": [
+      "research/LOOK-ALIKE-20261126-001/referee-R1/report.md:7",
+      "research/LOOK-ALIKE-20261126-001/referee-R1/report.md:22"
+    ],
+    "pair_exactness_implication_already_noted": [
+      "research/LOOK-ALIKE-20261126-001/README.md:141",
+      "research/LOOK-ALIKE-20261126-001/referee-R1/report.md:8"
+    ],
+    "prior_growth_law_swap": [
+      "research/NAE-GROWTH-20261119-001/nae_growth.md:95",
+      "research/NAE-GROWTH-20261119-001/nae_growth.md:109",
+      "research/NAE-GROWTH-20261119-001/nae_growth.md:112",
+      "research/NAE-GROWTH-20261119-001/referee-R1/report.md:50"
+    ],
+    "earlier_six_knot_roster_and_different_measurement": [
+      "research/DESCENT-HELD-20261125-001/definitions.md:210",
+      "research/DESCENT-HELD-20261125-001A/results.md:81"
+    ],
+    "previous_parity_start_screen": [
+      "research/DESCENT-HELD-20261125-001/definitions.md:189"
+    ],
+    "maximal_sets_and_binomial_scope": {
+      "group_rule": "proofs/REDUCE-BLOCKS-20261119-001A/REDUCE-BLOCKS-20261119-001A-P001_reduce/proof.md:29",
+      "reduced_class_conditions": "proofs/REDUCE-BLOCKS-20261119-001A/REDUCE-BLOCKS-20261119-001A-P001_reduce/proof.md:75",
+      "branch_system_with_extra_distinctions": "proofs/DEAD-CAP-20261119-001A/DEAD-CAP-20261119-001A-P001_dead/proof.md:81",
+      "recorded_isolated_bursts": "research/MERGE-BURST-20261119-001/referee-R1/report.md:21",
+      "qualification": "A common-neighbour set supplies candidate pairs. A larger joining group can cover those pairs. For one maximal set all candidates inside it are pair groups, subject to the shortage rule. Extra loose distinctions produce offshoots and change the whole birth count. The earlier isolated bursts use the branch system with their measured loose counts, alongside the proof's other premises."
+    }
+  }
+}

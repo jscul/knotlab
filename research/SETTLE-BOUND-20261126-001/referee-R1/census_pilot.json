@@ -1,0 +1,165 @@
+{
+  "scope": "timing only",
+  "shared_input": "The graph atlas supplies the order and numbering. Coverage, renaming, loose counts, sampling and archive checks are implemented here. Prior parity flags are read from the earlier archive. Pair eligibility uses recorded M.",
+  "census": {
+    "5": {
+      "atlas_patterns_enumerated": 8,
+      "atlas_patterns_available": 21,
+      "numbered_patterns_checked": 1024,
+      "numbered_patterns_available": 1024,
+      "connected_numbered_patterns_among_check": 728,
+      "starts": 662,
+      "excluded_without_loose_distinctions": [],
+      "with_dead_knot": 158,
+      "seconds": 0.0043
+    },
+    "6": {
+      "atlas_patterns_enumerated": 8,
+      "atlas_patterns_available": 112,
+      "numbered_patterns_checked": 4096,
+      "numbered_patterns_available": 32768,
+      "connected_numbered_patterns_among_check": 2414,
+      "starts": 1137,
+      "excluded_without_loose_distinctions": [],
+      "with_dead_knot": 309,
+      "seconds": 0.0185
+    }
+  },
+  "six_knot_seed": 20261126,
+  "runs": {
+    "g5_nae": {
+      "records_read": 50,
+      "kinds": {
+        "stalls": 27,
+        "dim 2": 17,
+        "dim 1": 5,
+        "dim 4": 1
+      },
+      "kinds_by_run_ending": {
+        "rounds / dim 1": 5,
+        "rounds / dim 2": 17,
+        "rounds / dim 4": 1,
+        "stalls / stalls": 27
+      },
+      "endings_by_number_of_saved_rounds": {
+        "rounds / 24": 23,
+        "stalls / 0": 27
+      },
+      "unread_passing_higher_count_dimension_screen": {},
+      "seconds": 0.0289
+    },
+    "g5_par": {
+      "records_read": 50,
+      "kinds": {
+        "stalls": 27,
+        "dim 2": 8,
+        "closes": 9,
+        "dim 1": 5,
+        "dim 4": 1
+      },
+      "kinds_by_run_ending": {
+        "closes / closes": 9,
+        "rounds / dim 1": 5,
+        "rounds / dim 2": 8,
+        "rounds / dim 4": 1,
+        "stalls / stalls": 27
+      },
+      "endings_by_number_of_saved_rounds": {
+        "closes / 1": 2,
+        "closes / 4": 4,
+        "closes / 6": 1,
+        "closes / 7": 2,
+        "rounds / 24": 14,
+        "stalls / 0": 27
+      },
+      "unread_passing_higher_count_dimension_screen": {},
+      "seconds": 0.0225
+    },
+    "g6_nae": {
+      "records_read": 16,
+      "kinds": {
+        "stalls": 11,
+        "dim 2": 4,
+        "dim 1": 1
+      },
+      "kinds_by_run_ending": {
+        "rounds / dim 1": 1,
+        "rounds / dim 2": 4,
+        "stalls / stalls": 11
+      },
+      "endings_by_number_of_saved_rounds": {
+        "rounds / 24": 5,
+        "stalls / 0": 11
+      },
+      "unread_passing_higher_count_dimension_screen": {},
+      "seconds": 0.0088
+    },
+    "g6_par": {
+      "records_read": 16,
+      "kinds": {
+        "stalls": 11,
+        "dim 2": 2,
+        "dim 1": 1,
+        "closes": 2
+      },
+      "kinds_by_run_ending": {
+        "closes / closes": 2,
+        "rounds / dim 1": 1,
+        "rounds / dim 2": 2,
+        "stalls / stalls": 11
+      },
+      "endings_by_number_of_saved_rounds": {
+        "closes / 6": 1,
+        "closes / 13": 1,
+        "rounds / 24": 3,
+        "stalls / 0": 11
+      },
+      "unread_passing_higher_count_dimension_screen": {},
+      "seconds": 0.009
+    }
+  },
+  "law_transfers": {},
+  "look_alike_overlap": {
+    "phase_1_kinds": {
+      "dim 2": 19,
+      "stalls": 5,
+      "dim 1": 4
+    },
+    "phase_2_matching_five_knot_nae_traces": 50,
+    "seconds": 0.03
+  },
+  "earlier_balance_census": {
+    "sizes": {
+      "5": {
+        "earlier_roster": {
+          "ordinary parity run completed": 200
+        },
+        "earlier_status_of_current_study_starts": {
+          "ordinary parity run completed": 200
+        },
+        "earlier_status_of_current_starts_by_law_and_kind": {
+          "ordinary parity run completed / nae / dim 2": 1,
+          "ordinary parity run completed / nae / stalls": 3,
+          "ordinary parity run completed / par / dim 2": 1,
+          "ordinary parity run completed / par / stalls": 3
+        },
+        "earlier_set_asides_in_current_study": [],
+        "earlier_set_asides_among_reported_late_starts": {}
+      },
+      "6": {
+        "earlier_roster": {
+          "ordinary parity run completed": 200
+        },
+        "earlier_status_of_current_study_starts": {
+          "ordinary parity run completed": 170
+        },
+        "earlier_status_of_current_starts_by_law_and_kind": {},
+        "earlier_set_asides_in_current_study": [],
+        "earlier_set_asides_among_reported_late_starts": {}
+      }
+    },
+    "seconds": 0.8487
+  },
+  "seconds": 0.9951,
+  "peak_rss_kib": 42364
+}

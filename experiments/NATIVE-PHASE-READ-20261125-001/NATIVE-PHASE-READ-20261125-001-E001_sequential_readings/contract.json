@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "experiment_id": "NATIVE-PHASE-READ-20261125-001-E001",
+  "ticket": "NATIVE-PHASE-READ-20261125-001",
+  "status": "Frozen",
+  "evidence_stage": "exploratory",
+  "branch": "code_analysis",
+  "question": "Which phase-sensitive observations can be implemented by ordinary operations on the four words of one even-parity knot?",
+  "public_inputs": "research/NATIVE-PHASE-READ-20261125-001/preregistration.md",
+  "forbidden_inputs": "No quantum amplitudes, distant settings, declared trial order, outcome labels, or prior transcript enter the candidate update rules. No discarded trials. Explicitly label each extra record.",
+  "primary_observable": "Full joint distributions in all six orders, repeatability, the six one-reader preparations and the best success for a calibrated quarter turn.",
+  "cheapest_meaningful_control": "Hold the order fixed, supply one common fair writable bit, freeze its value, or prepare its value deterministically. Compare a lawful four-cycle with the pulse holding the reference fixed.",
+  "first_executable_signal": "Apply one changed reader in two orders relative to a read of another mark. Score all four inputs in a fixed-order example, then repeat a changed read in the shared-bit example.",
+  "resource_budget": "One exact census of 110592 candidates and finite verification, a few CPU seconds at a time, less than 512 MiB per process.",
+  "stop_rule": "Stop on a certified isolated-word obstruction or counterexample and reproduce the declared positive controls with their first failure or scope limit.",
+  "decision_or_followup_rule": "Close the isolated-word test when results are reconciled. Distinguish any richer source of phase or physical reader from this test and from an added shared record.",
+  "nonclaims": "No derivation of quantum physics, physical space, a Born rule, a measurement forced by K1–K3, or an impossibility theorem over richer logical preparations."
+}

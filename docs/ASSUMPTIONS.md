@@ -322,6 +322,8 @@ evidence: results and their status come from the records each entry links.
 | [A264](#a264--a-birth-can-read-the-creation-round-of-an-offered-distinction) | A birth can read the creation round of an offered distinction | scaffold | Assumed |
 | [A265](#a265--a-birth-can-tell-a-made-distinction-from-one-present-at-the-start) | A birth can tell a made distinction from one present at the start | scaffold | Assumed |
 | [A266](#a266--a-birth-can-distinguish-exactly-three-current-holders) | A birth can distinguish exactly three current holders | scaffold | Assumed |
+| [A267](#a267--a-three-reader-experiment-must-specify-what-its-readers-may-write) | A three-reader experiment must specify what its readers may write | scaffold | Assumed |
+| [A268](#a268--a-one-reader-phase-comparison-fixes-three-readings-and-a-reference) | A one-reader phase comparison fixes three readings and a reference | scaffold | Assumed |
 
 ## Entries
 
@@ -4163,6 +4165,7 @@ evidence: results and their status come from the records each entry links.
 - **Rests on it.** The full-pair and singleton calibrations, six-rule and three-reader tables, before-and-after states, the chosen sign order, supplied readers, preparations and fresh comparison weightings.
 - **Challenge.** Compare fresh conditioning to a retained preparation label, algebraic order to recorded chronology, a fair sign attached to a refused change, and alternative states after the same answer. Check both laws and ordinary motion, births and the forbidding join.
 - **History.**
+  - 2026-11-25 · NATIVE-PHASE-READ-20261125-001 compared read-only and writing ordinary reads, repeatability and a grown shared record. Both the act and who may retain its outcome affect the predictions. [Phase-reading study](../research/NATIVE-PHASE-READ-20261125-001/results.md)
   - 2026-11-21 · Two coherent pulse rules have identical ordinary singleton frequencies but different end-to-end physical sign records. The chosen phase on an idle alternative is consequential. [Erasure and closing signs](../research/ERASURE-AND-CLOSING-SIGNS-20261121-001/decision.md)
   - 2026-11-21 · The new shared instrument separates source admission, signed changes, conditional data state, local raw and calibrated word, and a physically distinct recorded answer. The all-even and not-all-equal controls keep pre-setting herald failures as well as accepted histories. [Measurement study](../research/TWO-KNOTS-ONE-DECISION-20261121-001/decision.md)
   - 2026-11-20 · Reading every erased mark and pooling by the product has the same conditional exterior state as the binary joint flip once all the erased marks are discarded. Additional retained marks can distinguish the two supplied instruments. [Study](../research/JOINT-PARENTS-AND-ERASURE-20261120-001B/results.md)
@@ -5572,3 +5575,25 @@ evidence: results and their status come from the records each entry links.
 - **History.**
   - 2026-11-25 · Frozen for comparison on the same 205 settings under both knot laws.
   - 2026-11-25 · A fixed test for exactly three holders reproduced every strict meeting, while the lasting-mark rule did so without this cardinality test.
+
+### A267 · A three-reader experiment must specify what its readers may write
+
+**Assumed** · 2026-11-25 · scaffold
+
+- **Statement.** Use one uniformly prepared even word as the complete mutable state. In the primary test each ordinary read returns its own bit and leaves no record. Free settings are independent of the word and the readers see only the current state. Compare all six orders. The alternatives grant an ordinary read a write, grant the readers one grown common bit, or give them a read-only copy of the preparation and a common fair bit.
+- **Why.** Adopted for the owner's phase question so the source of the outcome correlations can be tested directly. Parity specifies allowed states. Each choice of who may read or change a specific stored value is an additional hypothesis.
+- **Rests on it.** The four-word obstruction, the independent local offshoot comparison, and the passing examples with common records in NATIVE-PHASE-READ-20261125-001. [Phase-reading study](../research/NATIVE-PHASE-READ-20261125-001/results.md)
+- **Challenge.** Repeat a read, interpose another reader, and vary the available memory and the preparation it may record. A native preparation and exchange rule would replace the hand-granted reference and access.
+- **History.**
+  - 2026-11-25 · Tested the bare word, an ordinary read that writes, local and shared access after one funded growth round, and an explicitly copied preparation.
+
+### A268 · A one-reader phase comparison fixes three readings and a reference
+
+**Assumed** · 2026-11-25 · scaffold
+
+- **Statement.** Give the three distinctions of one even knot the fixed one-reader roles Z, X and Y. Prepare either value at one role with both compatible words equally weighted. After a read, keep that value and use a fair choice to leave the other two alone or flip both. Calibrate the proposed quarter turn against all three roles while holding the Z reference fixed.
+- **Why.** This ordinary model tests whether repeatable phase-labelled readings and their successive outcomes already force the calibrated change of preparation. The roles, sampling and update are supplied controls.
+- **Rests on it.** The six-preparation comparison and the 2/3 bound on the fixed-reference pulse in NATIVE-PHASE-READ-20261125-001. [Phase-reading study](../research/NATIVE-PHASE-READ-20261125-001/results.md)
+- **Challenge.** Compare a directed allowed four-cycle, reverse its selection, or add a fourth distinction carrying the changing sign. A native preparation and readout would have to establish the reference and full calibration from their own rules.
+- **History.**
+  - 2026-11-25 · The six preparations closed under repeated readings. The ordinary four-cycle changed the third sign. Adding a fourth distinction permitted the calibrated pulse.

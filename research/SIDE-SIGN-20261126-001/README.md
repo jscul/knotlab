@@ -257,3 +257,79 @@ that would read the twist); mixed lifts (some kept pairs exchanged and others no
 the detection loophole of R2's postselection (equal normalizers do not close it); readers whose setting is an edit of the
 pattern rather than a choice of what to read; not-all-equal stages with more than 2^22 states; renamings of order more
 than two (the five-knot ring's turn) as signs; the classes of the other thread's sign beyond the named rings.
+
+## Results (added after the run, 26 November 2026)
+
+Computed, with one argument added after the run; referee pending. The census ran as long-running job SIDE-SIGN-C1
+(283 cases of 25 starts, all finished; [tally](census_tally.md), [sampled hits](census_hits.json), [every result](census_results.jsonl.gz), rebuilt by `tally.py`); the named cases are in
+[named_rings.jsonl](named_rings.jsonl), [named_lone.jsonl](named_lone.jsonl), [named_partnered.jsonl](named_partnered.jsonl)
+and [named_classes.jsonl](named_classes.jsonl). Three checks were added after the run and are marked post hoc.
+
+### The answer
+
+**A swap of two sides is a real part of what growth makes, and so is its twist; but no sign it makes acts natively.**
+Growth never removes a swap of the knots and keeps making new ones; one-sided swaps, where going round a chain of knots
+returns with the sides exchanged, occur at every round and no renaming removes them. The states do sort into kept and
+flipped, but the sort is the action of one renaming and gives every state the same weight, and under parity the flipped
+states vanish once growth makes a knot of three places. Where the record's preserved sign has two classes a swap keeps
+both; where it has four or eight, a swap can exchange two of the class signs and keep their product, still at equal
+weight. As weightings: with values read and the unread distinctions forgotten, no sign of any kind changes a table (A6).
+Adding the unread distinctions with their signs (R1 and R2) does give tables above 2, up to the literature's PR box
+(CHSH 4, beyond the quantum bound 2√2), with free settings, no signalling, and two completions of one reading cancelling;
+but random pairings do the same under parity, and products of signs on single distinctions do it under not-all-equal (the
+post hoc controls), so **the excess belongs to the readings, not to the swap**.
+
+### A6. With values read, no sign acts (an argument added after the run; proved)
+
+Let readers read values of single distinctions, and let every unread distinction be forgotten with each completion
+counted by the square of its weight (the literature's rule for a state read in the value basis, with what is not read
+traced out). Then P(a, b | s, t) is the count of the completions of the reading on the support of the weighting, divided
+by the support's size: one nonnegative weighting of joint assignments, so CHSH is at most 2 (Fine), whatever the signs.
+A sign of a state therefore shows in a table only through a reading that adds signed weights of different completions of
+one reading before any square is taken (R1 adds them and stops; R2 squares the sum, which amounts to keeping only the
+trials in which every unread distinction is found in its "both values together" change state, a post-selection), or
+through reads of changes (A144), which the model does not make either. Known: a phase on the value basis changes no
+statistics read in that basis; what this adds is that it closes question 3 for every sign at once, native or not, on
+value reads.
+
+### Against the frozen predictions
+
+| # | Prediction | Result |
+| --- | --- | --- |
+| P1 | No stage with a swap followed by one without | **Held.** 0 of 7,383 (start, law, round) triples with a swap and a next stage lose every swap |
+| P2 | No flipped state under a swap keeping a distinction; none under parity with an odd-place knot | **Held.** 0 violations; under parity 64 swap rows have flipped states (63 at round 0, 1 at round 1), every knot of each stage with an even number of places |
+| P3 | Rings: W5 unchanged by every swap; six-ring half-turn W3 = W5 on kept and flipped, four-ring not | **Held** on all 3 rings at rounds 0 and 1 under both laws where run |
+| P4 | Parity, R1: no U hit; W3, W3m, W1k fail G0; W2 hit at start 3097; some W1/W2 hit after growth; every hit tied | **Held.** U: 0 hits on 93.5 million placements. W3 and W3m: normalizer 0 on every one of 3,343 swap rows. W1k: no hit (normalizer 0 on 18,640 of 23,758 swap rows). Start 3097: W2 gives CHSH 4 under R1 and R2 at round 0, as the advisor derived by hand, with the sign on the reads only, and nothing after one round. W1 hits after growth: 32,840 placements at 203 of 2,442 stages with a swap (round 1), 109,936 at 838 of 2,304 (round 2), every one CHSH 4. 60 sampled hits: every one has its four reads on eight words with one read of each reader tied (post hoc, [posthoc_tie.txt](posthoc_tie.txt)) |
+| P5 | Not-all-equal, R1: no U hit; some W1/W1c/W2/W3 hit; none reaching 4 | **Held.** U at most 18/29. W1 up to 19/6, W3 up to 10/3, W2 none. **But W1k**, added after the advisor and not in P5, **reaches 4**: 7,416 placements at 16 stages (round 1) and 55,488 at 61 (round 2); W3m up to 1630/549 and 10/3 |
+| P6 | R2: the 3097 hit; some R2 hit after growth | **Held.** Parity W1: every R1 hit is an R2 hit (the signed sums are 0 or one value); not-all-equal W1k: 4,344 (round 1) and 3,096 (round 2) R2 hits, CHSH 4; W1, W3, W3m: none under R2 |
+| P7 | Round-0 hits on the reads only; later hits through the completions; hits survive the other lift and convention | **Failed in two of three parts.** Only W2's round-0 hits (100) are on the reads only; W1's round-0 hits (1,397 under parity) go through the completions (every one annotated). Every hit after growth goes through the completions (held). Lift: of the swaps read under both lifts with a hit, 143 hit under both and 1,173 under one only (parity W1); the hit belongs to the lift. Convention: W1c hits exactly where W1 does in every row, and under parity W1c is ±W1 on every state in 11,110 of 23,758 rows, so there the swap tested nothing |
+| P8 | The 16-knot end and the blow-up start: no hit | **Failed.** The 16-knot end: no hit under any weighting or reading. The blow-up start (the partnered start with every renaming kept): W1 gives CHSH 4 at round 0 (4,176 placements, in five of its eight swap rows), none at round 1; round 2 not run (the placement search over about 200 moved distinctions did not finish within the hour) |
+| P9 | Two classes: every swap keeps the classes; four or more: some swap does not | **Held.** All 1,076 swaps (2,152 rows under the two lifts) on 624 two-class stages keep the classes; on 29 stages with four or eight classes, 52 of 108 swap rows move classes, two-sided and one-sided swaps alike. On four classes a swap that moves one exchanges two of the three class signs and keeps their product |
+
+Stages not run: 1,294 of 3,341 not-all-equal stages with a swap at round 2 and 10 at round 1 (more than 2^22 states); the
+lone four-place knot under not-all-equal (still growing at round 6, 19 knots, 39 distinctions); the blow-up start's round 2.
+
+### The checks added after the run (post hoc)
+
+- **Random pairings do as well as the swap's (parity).** On a round-2 stage with a W1 hit (start 26, ten knots, 23
+  distinctions), W1 built on 200 random matchings with the swap's eleven pairs (seed 20261126) gives CHSH 4 in 94 of them,
+  against the swap's own 96 placements at 4; one sign on one arbitrary pair gives nothing above 1 on any of 253 pairs.
+  [posthoc_match_26.json](posthoc_match_26.json), [posthoc_cz_26.json](posthoc_cz_26.json)
+- **Signs on single distinctions do it under not-all-equal.** On the stage of the first W1k hit under R2 (start 421,
+  twelve knots, 22 distinctions, round 2), the product (−1)^(x_u + x_v) of two single-distinction signs gives an R1 table
+  above 2 for 156 of the 231 pairs (largest 290/81) and an R2 table above 2 for 6 (largest 12/5). One distinction's sign
+  alone sums to zero under not-all-equal (the complement), so two are the least. And W1k itself is such a product: on a
+  kept state a pair holds 1 on both exactly when its distinction holds 1, so W1k is (−1) to the number of moved
+  distinctions holding 1, counted once per pair, on the kept states. [posthoc_local_421.json](posthoc_local_421.json)
+- **The parity hits have the tie A5 requires**: [posthoc_tie.txt](posthoc_tie.txt) (above).
+
+So under parity the excess needs signs on pairs (a character fails G0) but not the swap's pairs, and under not-all-equal it
+needs no pairwise sign at all. Both are what A6 says: the readings R1 and R2 add the signs of completions that differ only
+in unread distinctions, and that is enough for the literature's result that signed weightings give every no-signalling
+table (Abramsky and Brandenburger 2011) to show up on almost any sign.
+
+### What this does not show
+
+That no sign could act through reads of changes (A144) or a reading the model makes itself; that swaps of order more than
+two, or several swaps together, give nothing; signs of degree three or more; the not-all-equal stages not run; readers
+whose setting is an edit; the four-or-eight-class stages beyond those P9 read.

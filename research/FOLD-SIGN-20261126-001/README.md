@@ -65,6 +65,6 @@ can supply; it has no rule that sums over histories.
 exchange sign (its inversions against a fixed listing), is a known invariant of a partial order, its sign-imbalance; it is
 zero ("sign-balanced") whenever two independent births are twins, which is the twin lemma above (Ruskey, *Journal of Combinatorial Theory B* 54, 77, 1992; Stanley,
 "Some remarks on sign-balanced and maj-balanced posets", *Advances in Applied Mathematics* 34, 880, 2005). So the first rule that would sum histories with a sign
-already has a literature: the program's histories would be weighted by their sign-imbalance, and most would cancel. The
+already has a literature: the program's histories would be weighted by their sign-imbalance, and every history with two twin births would cancel (histories without twins need not). The
 cheapest test: compute the sign-imbalance of the histories ordinary growth makes from small starts, and see whether any
 survives a twin.

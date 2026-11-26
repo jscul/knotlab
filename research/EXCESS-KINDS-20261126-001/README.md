@@ -152,9 +152,10 @@ setting is a fixed, supplied birth, and fixed settings are what remain.
   and the Tsirelson–Landau–Masanes test gives 3·arcsin 1 − arcsin(3/4) ≈ 3.864 > π (checked against the record's actual
   tables, (7/8, 0, 0, 1/8) three times and (13/16, 1/16, 1/16, 1/16), by the advisor and here). It is made by the
   funding law with a supplied start and weighting, and it is the same under both countings.
-- **Kind (a), inside the quantum set.** The four-type 20/9 (REVIEW-LEADS C) has correlations −5/9, −5/9, −5/9, +5/9
-  with fair single values; 4·arcsin(5/9) ≈ 2.36 < π, so a quantum state reproduces its correlations at fixed settings
-  (the advisor's reconstruction, by hand, unverified on the 18-knot tables).
+- **Kind (a), inside the quantum set.** The four-type 20/9 (REVIEW-LEADS C) has correlations 5/9, 5/9, 5/9, −5/9 with
+  fair single values (checked from the record's own formula for it, [check_20_9.txt](check_20_9.txt)); 4·arcsin(5/9) ≈
+  2.36 < π, so a quantum state reproduces its correlations at fixed settings (a two-reader state of visibility about
+  0.79 does). The 18-knot structure reaches 20/9 in the same family; its tables were not rebuilt here.
 - **What separates them.** A free sender: under it both kinds signal (Theorem K for (a), the funding proofs for (b)),
   while quantum theory does not. But a free sender keys a setting to a value, which is outside H0. So the
   classification's force comes from A296, a standard set by an agent the model does not contain.

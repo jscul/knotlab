@@ -24,7 +24,7 @@ consulted twice (for the coordinator's choice and on the draft); referee pending
 4. **Inside the model, no reader can expose some of these tables (the main result).** A free sender keys a birth to a
    value, which no law reading no values does. So inside the model settings are fixed, and there the record holds
    tables above 2 with every record hidden: the whole-stage 9/4, which lies outside the quantum set (TLM 3.864 > π,
-   checked), and the four-type 20/9, whose correlations lie inside it by the advisor's reconstruction (unverified).
+   checked), and the four-type 20/9, whose correlations (5/9, 5/9, 5/9, −5/9) lie inside it (checked).
    Only an agent outside the model, keying a setting to a value, makes them signal, and the classification's force
    rests on that standard (A296).
 5. **Counting from the finish (A240)** would let anything able to key a birth to a value detect every excess of

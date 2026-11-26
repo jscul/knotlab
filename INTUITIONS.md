@@ -5298,10 +5298,21 @@ made a pattern of its own from what it met.
   It sees the near end of the second seed in detail and, with the take of a
   sole candidate, its length to five knots; it does not read the whole
   form. With the two seeds in one start and not linked, nothing differs.
-  The meeting there is supplied by the start. A registered study of this is
-  frozen and running
-  ([its claim](research/FOLLOWS-THE-FORM-20261125-001/claim.md)). What is
-  open (a sub-goal under G15): the same between two parts the growth made,
+  The meeting there is supplied by the start. A registered study then put
+  this to held-out seeds, with a reading written from its frozen text by
+  another hand
+  ([its result](research/FOLLOWS-THE-FORM-20261125-001A/results.md);
+  computed, referee pending). Nineteen of twenty predictions hold, the
+  exact replications of the probe among them. On five first seeds and 60
+  second seeds nothing had grown, the forms fall into three or more classes
+  in 87 studies of 90; 422 to 1,309 pairs a row are told apart only after
+  round 1 though every round-1 birth with a first-seed ancestor is the
+  same; and the class is never decided by the held knot alone. Two things
+  temper it. In 49 of the 90 studies the class is decided by the held knot
+  together with the second seed's own births by round, a count profile and
+  not a form. And the prediction that the first seed's fate differs with
+  the form failed: two or more fates show in 37 studies of 90. What is open
+  (a sub-goal under G15): the same between two parts the growth made,
   meeting through a knot the growth made.
 - **B326, an index made by the growth (G15).** The owner, by 24 November 2026
   (Pacific time): "This is why we may need 'function-like' logical operations

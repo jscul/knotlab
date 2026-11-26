@@ -3,6 +3,10 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 26 November 2026 · A first seed's fate: on the probe's seeds, not on most held-out ones
+
+**Narrowing of a probe's report and of the guide.** [The third probe of sub-goal B335](research/WHAT-A-BIRTH-CARRIES-20261125-001/checks/form_at_a_fixed_place/README.md) and lesson 10.5 said that what a first seed's line becomes differs with the form of the second seed. On the probe's own families two or more fates show among the forms in 58 and 62 studies of 90. [The registered study](research/FOLLOWS-THE-FORM-20261125-001A/results.md) predicted at least 40 of 90 on held-out seeds and found 37. That what the first seed's descent makes differs with the form stands there: three or more classes in 87 studies of 90, and nothing differs with the seeds unlinked.
+
 ## 25 November 2026 · "Its line ends" was a line taken up
 
 **Narrowing of a probe's report and of the guide, published the same day.** [The third probe of sub-goal B335](research/WHAT-A-BIRTH-CARRIES-20261125-001/checks/form_at_a_fixed_place/README.md) and lesson 10.5 said that a first seed's own line "ends, idles or grows" with the form of the second seed. The probe counted births descended from the first seed and from none of the second, and a birth with a parent of each descent leaves that count. With no taking rule, on the probe's mixed family, every line that read as ended (372 runs) is taken up: births with a first-seed ancestor go on, each also of the second seed. Lines with no births at all occur with the take of a sole candidate and on the probe's second family. The registered study that followed splits the two ([its definitions](research/FOLLOWS-THE-FORM-20261125-001/definitions.md), FF 7). That what the first seed's descent makes differs with the form stands.

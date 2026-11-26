@@ -3,6 +3,10 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 26 November 2026 · Emergence, again and again: the ring's class belongs to the whole start
+
+**A narrowing of [the guide's Chapter 12](INTUITIONS.md#chapter-12-emergence-again-and-again).** The class a grown ring keeps under parity is not a fact of its loop: a start with no cycle keeps one too, and rings joined in one start keep one between them. The chapter now keeps three rungs apart: repetition, which the record shows; a tower; and recursion, which it does not show.
+
 ## 26 November 2026 · A reader's view grown on demand refereed: refuted
 
 **Corrections from [an independent referee's report](research/ON-DEMAND-20261126-001/referee-R1/report.md), folded into [the decision](research/ON-DEMAND-20261126-001/decision.md).** The claim that a reader's view through round t can be computed by growing only the part of the start within t + 1 steps of the map, in any order, is withdrawn. Cutting the start can leave knots short that the whole start funds, so the cut part stalls where the whole grows, and the order in which more is admitted can change what is read on the way. The bound itself holds in the form an earlier study proved, for growths whose knots are funded and that do not close. Lesson 11.7 of the guide is corrected.

@@ -6101,11 +6101,11 @@ changes what a knot owes changes what it makes.
 - [12.1 A fact held by the whole and by no part](#121-a-fact-held-by-the-whole-and-by-no-part):
   the owner's guiding principle, and the first place it holds: a knot.
 - [12.2 The same again in a grown ring](#122-the-same-again-in-a-grown-ring):
-  a ring of knots that grows keeps a fact of the whole ring that no knot of it
-  can read.
+  a ring of knots that grows keeps a fact of the whole that no knot of it can
+  read; so does a start with no ring, so the fact belongs to the whole start.
 - [12.3 Whether it happens again, one pattern up](#123-whether-it-happens-again-one-pattern-up):
-  what it would take for such facts to act as distinctions in their turn, and
-  what earlier lines found.
+  three rungs kept apart, repetition, a tower and recursion; only the first is
+  reached, and the first step of a tower fails as computed.
 
 **The intuition.** The owner has called the work "a logic based fractal with
 emergence as the guiding principle" (lesson 7.2), and says what emergence is
@@ -6164,13 +6164,35 @@ classes on odd rings. So the ring holds a whole-loop fact; how firmly it holds i
 is a choice of reading. On the census starts of three to five knots, unlike the
 rings, the class can be read inside a single knot.
 
+**Not a fact of the loop (computed, not refereed).** A later check grew a
+start with no cycle at all, a tree of ten knots, and found the same: after one
+round its allowed states split into two classes, labelled by the sum of all its
+nine old shared distinctions. And two rings joined in one start, through a shared
+knot, a shared distinction or a chain of knots, keep two classes between them,
+not four. So the class is a fact of the whole connected start, not of a loop, and
+it comes from what counts as a small change: one class for each connected piece
+([the study of layers](research/LAYERS-20261126-001/README.md)).
+
 **So emergence happens twice here.** Once in each knot, whose constraint no
-part of it holds (lesson 12.1), and again in the ring of knots, whose class no
-knot of it holds.
+part of it holds (lesson 12.1), and again in the grown start, whose class no
+knot of it holds. That is repetition: the same kind of fact at two layers.
 
 ### 12.3 Whether it happens again, one pattern up
 
-**The question.** If a whole-loop fact is a fact of the whole that no part
+**Three rungs, kept apart.** The owner put it plainly: "So that's repetition,
+but we don't have recursion yet." Three things can be meant, and each result
+says which it reaches:
+
+1. **Repetition**: the same kind of fact held by the whole and by no part, at
+   two layers. The knot and the grown start reach it (lessons 12.1 and 12.2).
+2. **A tower**: a step that carries any layer to the next, so that facts of one
+   layer, bound by a rule, make a next layer with the same property.
+3. **Recursion**: a pattern that grows back into itself, or whose product is fed
+   back as its own start.
+
+No result yet reaches the second or the third rung.
+
+**The question.** If a whole-held fact is a fact of the whole that no part
 holds, it might in turn serve as a distinction: two values, open until fixed.
 Then several rings that share knots or grow together would be the knots of a
 larger pattern, if their classes obey a rule among themselves, and that larger
@@ -6196,8 +6218,9 @@ with nothing nested by hand.
 | --- | --- |
 | Emergence is a fact held by the whole and by no part, and it shows up at more than one place and layer | the owner's guiding principle (register entry A293) |
 | A knot's constraint is held by the whole and by no part | proved (lessons 2.1 and 2.3) |
-| A grown ring under parity keeps a class of the whole ring that no knot reads | computed, refereed (lesson 12.2) |
-| Several rings' classes act as distinctions of a larger pattern that keeps a fact no ring holds | untested; a study is queued |
+| A grown ring under parity keeps a class of the whole ring that no knot reads | computed, refereed (lesson 12.2); a tree does the same, so it is a fact of the whole start, not of the loop (computed, not refereed) |
+| Several rings' classes act as distinctions of a larger pattern that keeps a fact no ring holds (a tower) | first instance fails as computed: joined rings keep one class between them, one per connected piece (lesson 12.2); a frozen test is under way |
+| A pattern that grows back into itself (recursion) | not shown; the leads are a ring that returns after an exchange chosen by hand, and parts that copy themselves (lesson 8.7) |
 
 ## Glossary
 

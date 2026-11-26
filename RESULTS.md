@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**408 current results** and 5 superseded ones, from 669 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**408 current results** and 5 superseded ones, from 670 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -31,7 +31,7 @@ How to read an entry:
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 26 results
 - [Notes](#notes): 6 self-contained notes
-- [Epics](#epics): all 669 epics with their closures
+- [Epics](#epics): all 670 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -2021,6 +2021,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-26 | How much of a change arrives: the share of a growth's births that a single change alters, round by round (`HOW-MUCH-ARRIVES-20261126-001`) | — | [folder](research/HOW-MUCH-ARRIVES-20261126-001/) |
 | 2026-11-26 | The settling cut after the last fall in births (`LAST-MERGE-20261126-001`) | — | [folder](research/LAST-MERGE-20261126-001/) |
 | 2026-11-26 | The late views of a growth from its start alone (`LATE-VIEWS-20261126-001`) | — | [folder](research/LATE-VIEWS-20261126-001/) |
+| 2026-11-26 | Whole-ring facts as the distinctions of a second layer (`LAYERS-20261126-001`) | — | [folder](research/LAYERS-20261126-001/) |
 | 2026-11-26 | Two patterns that stay linked under a cap: can the far one then change the receiver's course after both exist? (`LINKED-UNDER-CAP-20261126-001`) | — | [folder](research/LINKED-UNDER-CAP-20261126-001/) |
 | 2026-11-26 | Which starts look alike to a local reader (`LOOK-ALIKE-20261126-001`) | — | [folder](research/LOOK-ALIKE-20261126-001/) |
 | 2026-11-26 | A local reader's view grown on demand (`ON-DEMAND-20261126-001`) | — | [folder](research/ON-DEMAND-20261126-001/) |

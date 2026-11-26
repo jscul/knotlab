@@ -3,6 +3,10 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 26 November 2026 · A reader's view grown on demand refereed: refuted
+
+**Corrections from [an independent referee's report](research/ON-DEMAND-20261126-001/referee-R1/report.md), folded into [the decision](research/ON-DEMAND-20261126-001/decision.md).** The claim that a reader's view through round t can be computed by growing only the part of the start within t + 1 steps of the map, in any order, is withdrawn. Cutting the start can leave knots short that the whole start funds, so the cut part stalls where the whole grows, and the order in which more is admitted can change what is read on the way. The bound itself holds in the form an earlier study proved, for growths whose knots are funded and that do not close. Lesson 11.7 of the guide is corrected.
+
 ## 26 November 2026 · The late views from the start alone refereed: confirmed, with narrowings
 
 **Corrections from [an independent referee's report](research/LATE-VIEWS-20261126-001/referee-R1/report.md), folded into [the decision](research/LATE-VIEWS-20261126-001/decision.md).** The prediction of 705 of 706 held-out views stands. The earlier proofs cover 125 of the 706 starts, not 39; the rule that a group of three or more enters whole comes from an earlier study, which had already seen it fail where two groups share a knot; and the misses are 40 starts with groups sharing a knot and two with a block meeting a group of four.

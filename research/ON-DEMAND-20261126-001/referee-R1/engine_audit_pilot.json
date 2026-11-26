@@ -1,0 +1,773 @@
+{
+  "pilot": true,
+  "pinned comparison logs": "815b1964d7",
+  "sample seed": 20261204,
+  "four-knot not-all-equal archive": {
+    "path": "research/LOOK-ALIKE-20261126-001/phase1_grown.jsonl.gz",
+    "serialized SHA-256": "b4dee13a4d44f0b3c43769afddf5bbdb61b0a26dd2d37a087b9a2532172e30f5",
+    "starts": 200,
+    "birth rounds": 3160,
+    "births": 87292,
+    "end and round counts": [
+      {
+        "rounds": 0,
+        "growth end": "stalls at round 1",
+        "engine end": null,
+        "starts": 42
+      },
+      {
+        "rounds": 20,
+        "growth end": "rounds",
+        "engine end": null,
+        "starts": 158
+      }
+    ]
+  },
+  "comparator controls": {
+    "changed first reading while preserving the birth total is detected": true,
+    "changed parent reading while preserving the first reading and birth total is detected": true,
+    "changed stopping behavior on a zero-round reference escapes a prefix comparison": true
+  },
+  "five knots": {
+    "nae": {
+      "matching growth archive": {
+        "path": "research/SETTLE-BOUND-20261126-001/grown_g5_nae.jsonl.gz",
+        "serialized SHA-256": "78ebaec185aca8abf0e50d996b2995c7b455034bd96c2fa2ca682699dd36f51c",
+        "starts": 3157,
+        "birth rounds": 37585,
+        "births": 3830712,
+        "end and round counts": [
+          {
+            "rounds": 0,
+            "growth end": "stalls at round 1",
+            "engine end": null,
+            "starts": 1587
+          },
+          {
+            "rounds": 16,
+            "growth end": "bound",
+            "engine end": null,
+            "starts": 1
+          },
+          {
+            "rounds": 19,
+            "growth end": "bound",
+            "engine end": null,
+            "starts": 8
+          },
+          {
+            "rounds": 21,
+            "growth end": "bound",
+            "engine end": null,
+            "starts": 15
+          },
+          {
+            "rounds": 23,
+            "growth end": "bound",
+            "engine end": null,
+            "starts": 2
+          },
+          {
+            "rounds": 24,
+            "growth end": "bound",
+            "engine end": null,
+            "starts": 24
+          },
+          {
+            "rounds": 24,
+            "growth end": "rounds",
+            "engine end": null,
+            "starts": 1520
+          }
+        ]
+      },
+      "comparison logs": {
+        "committed": {
+          "snapshot SHA-256": "6ef6ebc82ffb1ef8fde6f2cc2e28c3894927f5de8b00a1ca21441cf27ddfe374",
+          "partial line bytes omitted": 0,
+          "first missing index": 2602,
+          "missing starts": 555,
+          "census coverage is a contiguous prefix": true,
+          "counts": {
+            "comparisons": 2602,
+            "agreements": 2602,
+            "zero-round agreements": 1433,
+            "agreements with at least one compared round": 1169,
+            "compared birth rounds": 28005,
+            "compared births": 2220613,
+            "starts compared through round 24": 1155,
+            "shared growth stopped at the cumulative knot bound": 26,
+            "shared growth stopped at that bound before round 24": 14,
+            "engine stopped at its per-round cap": 0
+          },
+          "end and round counts": [
+            {
+              "rounds": 0,
+              "growth end": "stalls at round 1",
+              "engine end": "stall",
+              "starts": 1433
+            },
+            {
+              "rounds": 16,
+              "growth end": "bound",
+              "engine end": "rounds",
+              "starts": 1
+            },
+            {
+              "rounds": 19,
+              "growth end": "bound",
+              "engine end": "rounds",
+              "starts": 4
+            },
+            {
+              "rounds": 21,
+              "growth end": "bound",
+              "engine end": "rounds",
+              "starts": 7
+            },
+            {
+              "rounds": 23,
+              "growth end": "bound",
+              "engine end": "rounds",
+              "starts": 2
+            },
+            {
+              "rounds": 24,
+              "growth end": "bound",
+              "engine end": "rounds",
+              "starts": 12
+            },
+            {
+              "rounds": 24,
+              "growth end": "rounds",
+              "engine end": "rounds",
+              "starts": 1143
+            }
+          ],
+          "nonagreements": [],
+          "unexpected engine end indices": []
+        },
+        "working copy": {
+          "snapshot SHA-256": "6cacc3ead4cadf1ad07fb7d66d2ec1df180eb6ceb305aaf48d9a020c7a908dfd",
+          "partial line bytes omitted": 0,
+          "first missing index": null,
+          "missing starts": 0,
+          "census coverage is a contiguous prefix": true,
+          "counts": {
+            "comparisons": 3157,
+            "agreements": 3157,
+            "zero-round agreements": 1587,
+            "agreements with at least one compared round": 1570,
+            "compared birth rounds": 37585,
+            "compared births": 3830712,
+            "starts compared through round 24": 1544,
+            "shared growth stopped at the cumulative knot bound": 50,
+            "shared growth stopped at that bound before round 24": 26,
+            "engine stopped at its per-round cap": 0
+          },
+          "end and round counts": [
+            {
+              "rounds": 0,
+              "growth end": "stalls at round 1",
+              "engine end": "stall",
+              "starts": 1587
+            },
+            {
+              "rounds": 16,
+              "growth end": "bound",
+              "engine end": "rounds",
+              "starts": 1
+            },
+            {
+              "rounds": 19,
+              "growth end": "bound",
+              "engine end": "rounds",
+              "starts": 8
+            },
+            {
+              "rounds": 21,
+              "growth end": "bound",
+              "engine end": "rounds",
+              "starts": 15
+            },
+            {
+              "rounds": 23,
+              "growth end": "bound",
+              "engine end": "rounds",
+              "starts": 2
+            },
+            {
+              "rounds": 24,
+              "growth end": "bound",
+              "engine end": "rounds",
+              "starts": 24
+            },
+            {
+              "rounds": 24,
+              "growth end": "rounds",
+              "engine end": "rounds",
+              "starts": 1520
+            }
+          ],
+          "nonagreements": [],
+          "unexpected engine end indices": []
+        }
+      },
+      "replay": {
+        "counts": {
+          "starts checked through round one or its stall": 9,
+          "starts checked through their last saved round": 2,
+          "compared birth rounds": 19,
+          "compared births": 40335
+        },
+        "last-saved-round replay indices": [
+          0,
+          660
+        ],
+        "seconds": 16.6007
+      }
+    },
+    "parity": {
+      "matching growth archive": {
+        "path": "research/SETTLE-BOUND-20261126-001/grown_g5_par.jsonl.gz",
+        "serialized SHA-256": "742417da07d87a7db03a6ec52d65509dcdd832b84460c0efbbc2e59123f51c49",
+        "starts": 3157,
+        "birth rounds": 28344,
+        "births": 3735536,
+        "end and round counts": [
+          {
+            "rounds": 0,
+            "growth end": "stalls at round 1",
+            "engine end": null,
+            "starts": 1587
+          },
+          {
+            "rounds": 1,
+            "growth end": "closes at round 2",
+            "engine end": null,
+            "starts": 32
+          },
+          {
+            "rounds": 2,
+            "growth end": "closes at round 3",
+            "engine end": null,
+            "starts": 22
+          },
+          {
+            "rounds": 3,
+            "growth end": "closes at round 4",
+            "engine end": null,
+            "starts": 113
+          },
+          {
+            "rounds": 4,
+            "growth end": "closes at round 5",
+            "engine end": null,
+            "starts": 58
+          },
+          {
+            "rounds": 5,
+            "growth end": "closes at round 6",
+            "engine end": null,
+            "starts": 116
+          },
+          {
+            "rounds": 6,
+            "growth end": "closes at round 7",
+            "engine end": null,
+            "starts": 34
+          },
+          {
+            "rounds": 7,
+            "growth end": "closes at round 8",
+            "engine end": null,
+            "starts": 67
+          },
+          {
+            "rounds": 8,
+            "growth end": "closes at round 9",
+            "engine end": null,
+            "starts": 7
+          },
+          {
+            "rounds": 9,
+            "growth end": "closes at round 10",
+            "engine end": null,
+            "starts": 22
+          },
+          {
+            "rounds": 11,
+            "growth end": "closes at round 12",
+            "engine end": null,
+            "starts": 7
+          },
+          {
+            "rounds": 16,
+            "growth end": "bound",
+            "engine end": null,
+            "starts": 1
+          },
+          {
+            "rounds": 19,
+            "growth end": "bound",
+            "engine end": null,
+            "starts": 8
+          },
+          {
+            "rounds": 21,
+            "growth end": "bound",
+            "engine end": null,
+            "starts": 15
+          },
+          {
+            "rounds": 23,
+            "growth end": "bound",
+            "engine end": null,
+            "starts": 2
+          },
+          {
+            "rounds": 24,
+            "growth end": "bound",
+            "engine end": null,
+            "starts": 24
+          },
+          {
+            "rounds": 24,
+            "growth end": "rounds",
+            "engine end": null,
+            "starts": 1042
+          }
+        ]
+      },
+      "comparison logs": {
+        "committed": {
+          "snapshot SHA-256": "484b1ca102f8cbab5808e5ddf6c8f54394ec983dc4c4931bc97c7c8dab9e1581",
+          "partial line bytes omitted": 0,
+          "first missing index": 2609,
+          "missing starts": 548,
+          "census coverage is a contiguous prefix": true,
+          "counts": {
+            "comparisons": 2609,
+            "agreements": 2609,
+            "zero-round agreements": 1436,
+            "agreements with at least one compared round": 1173,
+            "compared birth rounds": 21540,
+            "compared births": 2170037,
+            "starts compared through round 24": 817,
+            "shared growth stopped at the cumulative knot bound": 26,
+            "shared growth stopped at that bound before round 24": 14,
+            "engine stopped at its per-round cap": 0
+          },
+          "end and round counts": [
+            {
+              "rounds": 0,
+              "growth end": "stalls at round 1",
+              "engine end": "stall",
+              "starts": 1436
+            },
+            {
+              "rounds": 1,
+              "growth end": "closes at round 2",
+              "engine end": "closed",
+              "starts": 14
+            },
+            {
+              "rounds": 2,
+              "growth end": "closes at round 3",
+              "engine end": "closed",
+              "starts": 16
+            },
+            {
+              "rounds": 3,
+              "growth end": "closes at round 4",
+              "engine end": "closed",
+              "starts": 71
+            },
+            {
+              "rounds": 4,
+              "growth end": "closes at round 5",
+              "engine end": "closed",
+              "starts": 46
+            },
+            {
+              "rounds": 5,
+              "growth end": "closes at round 6",
+              "engine end": "closed",
+              "starts": 86
+            },
+            {
+              "rounds": 6,
+              "growth end": "closes at round 7",
+              "engine end": "closed",
+              "starts": 34
+            },
+            {
+              "rounds": 7,
+              "growth end": "closes at round 8",
+              "engine end": "closed",
+              "starts": 52
+            },
+            {
+              "rounds": 8,
+              "growth end": "closes at round 9",
+              "engine end": "closed",
+              "starts": 7
+            },
+            {
+              "rounds": 9,
+              "growth end": "closes at round 10",
+              "engine end": "closed",
+              "starts": 13
+            },
+            {
+              "rounds": 11,
+              "growth end": "closes at round 12",
+              "engine end": "closed",
+              "starts": 3
+            },
+            {
+              "rounds": 16,
+              "growth end": "bound",
+              "engine end": "rounds",
+              "starts": 1
+            },
+            {
+              "rounds": 19,
+              "growth end": "bound",
+              "engine end": "rounds",
+              "starts": 4
+            },
+            {
+              "rounds": 21,
+              "growth end": "bound",
+              "engine end": "rounds",
+              "starts": 7
+            },
+            {
+              "rounds": 23,
+              "growth end": "bound",
+              "engine end": "rounds",
+              "starts": 2
+            },
+            {
+              "rounds": 24,
+              "growth end": "bound",
+              "engine end": "rounds",
+              "starts": 12
+            },
+            {
+              "rounds": 24,
+              "growth end": "rounds",
+              "engine end": "rounds",
+              "starts": 805
+            }
+          ],
+          "nonagreements": [],
+          "unexpected engine end indices": []
+        },
+        "working copy": {
+          "snapshot SHA-256": "42645337c8a5214736c84512beefc5f1d4ff20506282a49f87142cdf656551c8",
+          "partial line bytes omitted": 0,
+          "first missing index": null,
+          "missing starts": 0,
+          "census coverage is a contiguous prefix": true,
+          "counts": {
+            "comparisons": 3157,
+            "agreements": 3157,
+            "zero-round agreements": 1587,
+            "agreements with at least one compared round": 1570,
+            "compared birth rounds": 28344,
+            "compared births": 3735536,
+            "starts compared through round 24": 1066,
+            "shared growth stopped at the cumulative knot bound": 50,
+            "shared growth stopped at that bound before round 24": 26,
+            "engine stopped at its per-round cap": 0
+          },
+          "end and round counts": [
+            {
+              "rounds": 0,
+              "growth end": "stalls at round 1",
+              "engine end": "stall",
+              "starts": 1587
+            },
+            {
+              "rounds": 1,
+              "growth end": "closes at round 2",
+              "engine end": "closed",
+              "starts": 32
+            },
+            {
+              "rounds": 2,
+              "growth end": "closes at round 3",
+              "engine end": "closed",
+              "starts": 22
+            },
+            {
+              "rounds": 3,
+              "growth end": "closes at round 4",
+              "engine end": "closed",
+              "starts": 113
+            },
+            {
+              "rounds": 4,
+              "growth end": "closes at round 5",
+              "engine end": "closed",
+              "starts": 58
+            },
+            {
+              "rounds": 5,
+              "growth end": "closes at round 6",
+              "engine end": "closed",
+              "starts": 116
+            },
+            {
+              "rounds": 6,
+              "growth end": "closes at round 7",
+              "engine end": "closed",
+              "starts": 34
+            },
+            {
+              "rounds": 7,
+              "growth end": "closes at round 8",
+              "engine end": "closed",
+              "starts": 67
+            },
+            {
+              "rounds": 8,
+              "growth end": "closes at round 9",
+              "engine end": "closed",
+              "starts": 7
+            },
+            {
+              "rounds": 9,
+              "growth end": "closes at round 10",
+              "engine end": "closed",
+              "starts": 22
+            },
+            {
+              "rounds": 11,
+              "growth end": "closes at round 12",
+              "engine end": "closed",
+              "starts": 7
+            },
+            {
+              "rounds": 16,
+              "growth end": "bound",
+              "engine end": "rounds",
+              "starts": 1
+            },
+            {
+              "rounds": 19,
+              "growth end": "bound",
+              "engine end": "rounds",
+              "starts": 8
+            },
+            {
+              "rounds": 21,
+              "growth end": "bound",
+              "engine end": "rounds",
+              "starts": 15
+            },
+            {
+              "rounds": 23,
+              "growth end": "bound",
+              "engine end": "rounds",
+              "starts": 2
+            },
+            {
+              "rounds": 24,
+              "growth end": "bound",
+              "engine end": "rounds",
+              "starts": 24
+            },
+            {
+              "rounds": 24,
+              "growth end": "rounds",
+              "engine end": "rounds",
+              "starts": 1042
+            }
+          ],
+          "nonagreements": [],
+          "unexpected engine end indices": []
+        }
+      },
+      "replay": {
+        "counts": {
+          "starts checked through round one or its stall": 9,
+          "starts checked through their last saved round": 2,
+          "compared birth rounds": 19,
+          "compared births": 40335
+        },
+        "last-saved-round replay indices": [
+          0,
+          660
+        ],
+        "seconds": 20.9522
+      }
+    }
+  },
+  "four-knot comparison logs present in the result commit": false,
+  "four-knot replay": {
+    "nae": {
+      "counts": {
+        "birth rounds compared to the predecessor archive": 80,
+        "starts": 4,
+        "birth rounds compared between both replays": 96,
+        "births compared between both replays": 19041
+      },
+      "end and round counts": [
+        {
+          "rounds": 24,
+          "growth end": "rounds",
+          "engine end": "rounds",
+          "starts": 4
+        }
+      ],
+      "seconds": 2.4951
+    },
+    "parity": {
+      "counts": {
+        "starts": 4,
+        "birth rounds compared between both replays": 74,
+        "births compared between both replays": 18788
+      },
+      "end and round counts": [
+        {
+          "rounds": 2,
+          "growth end": "closes at round 3",
+          "engine end": "closed",
+          "starts": 1
+        },
+        {
+          "rounds": 24,
+          "growth end": "rounds",
+          "engine end": "rounds",
+          "starts": 3
+        }
+      ],
+      "seconds": 2.4736
+    }
+  },
+  "disconnected-presentation control": {
+    "starting holdings": [
+      [
+        0,
+        1,
+        3
+      ],
+      [
+        0,
+        2,
+        4
+      ],
+      [
+        1,
+        2,
+        5
+      ],
+      [
+        6,
+        7,
+        8
+      ]
+    ],
+    "readings": {
+      "nae": {
+        "mismatches [round, reading]": [],
+        "explicit holdings first reading": [
+          [
+            [
+              "join",
+              3,
+              1,
+              4
+            ],
+            1
+          ],
+          [
+            [
+              "offshoot",
+              1,
+              2,
+              3
+            ],
+            3
+          ]
+        ],
+        "roster first reading": [
+          [
+            [
+              "join",
+              3,
+              1,
+              4
+            ],
+            1
+          ],
+          [
+            [
+              "offshoot",
+              1,
+              2,
+              3
+            ],
+            3
+          ]
+        ]
+      },
+      "parity": {
+        "mismatches [round, reading]": [
+          [
+            1,
+            "sig0"
+          ],
+          [
+            1,
+            "sig1"
+          ]
+        ],
+        "explicit holdings first reading": [
+          [
+            [
+              "join",
+              3,
+              0,
+              3
+            ],
+            1
+          ],
+          [
+            [
+              "offshoot",
+              1,
+              2,
+              3
+            ],
+            3
+          ]
+        ],
+        "roster first reading": [
+          [
+            [
+              "join",
+              3,
+              1,
+              4
+            ],
+            1
+          ],
+          [
+            [
+              "offshoot",
+              1,
+              2,
+              3
+            ],
+            3
+          ]
+        ]
+      }
+    }
+  },
+  "total seconds": 48.3918
+}

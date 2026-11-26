@@ -1,0 +1,8436 @@
+{
+  "selection seed": 871926,
+  "selection": "Per weighting, uniform sample of 12 completed growing tree or tree-plus starts or 28 growing census starts. Include all recorded parity misses, all 27 not-all-equal failures within t steps and all census stalls. Both laws on every selected start.",
+  "growth": "Independent. The six-knot holdings are read from the earlier growth archives and the three successive census draws reselected from integer indices. Tree and tree-plus starts, loose counts, reader and all region draws are rebuilt from their weighting and seeds.",
+  "memory limit bytes": 3221225472,
+  "peak resident KiB": 360484,
+  "seconds": 62.195,
+  "checks": {
+    "tree40": {
+      "nae": {
+        "start-law replays": 12,
+        "whole birth rounds": 85,
+        "whole births": 61166,
+        "distinct nonfull growths": 116,
+        "distinct nonfull birth rounds": 478,
+        "distinct nonfull births": 104081,
+        "H1 within t + 1 steps agrees comparisons": 85,
+        "within t steps agrees comparisons": 85,
+        "H2 comparisons": 70
+      },
+      "parity": {
+        "start-law replays": 12,
+        "whole birth rounds": 85,
+        "whole births": 61166,
+        "distinct nonfull growths": 116,
+        "distinct nonfull birth rounds": 478,
+        "distinct nonfull births": 104081,
+        "H1 within t + 1 steps agrees comparisons": 85,
+        "within t steps agrees comparisons": 85,
+        "H2 comparisons": 70
+      }
+    },
+    "treeplus25": {
+      "nae": {
+        "start-law replays": 20,
+        "whole birth rounds": 123,
+        "whole births": 43144,
+        "distinct nonfull growths": 150,
+        "distinct nonfull birth rounds": 484,
+        "distinct nonfull births": 56724,
+        "H1 within t + 1 steps agrees comparisons": 123,
+        "within t steps agrees comparisons": 123,
+        "within t steps agrees differences": 13,
+        "H2 comparisons": 114
+      },
+      "parity": {
+        "start-law replays": 20,
+        "whole birth rounds": 123,
+        "whole births": 43144,
+        "distinct nonfull growths": 150,
+        "distinct nonfull birth rounds": 484,
+        "distinct nonfull births": 56724,
+        "H1 within t + 1 steps agrees comparisons": 123,
+        "within t steps agrees comparisons": 123,
+        "within t steps agrees differences": 13,
+        "H2 comparisons": 114
+      }
+    },
+    "census6": {
+      "nae": {
+        "start-law replays": 297,
+        "whole birth rounds": 450,
+        "whole births": 16726,
+        "earlier whole reading rounds compared": 450,
+        "distinct nonfull growths": 41,
+        "distinct nonfull birth rounds": 190,
+        "distinct nonfull births": 1010,
+        "H1 within t + 1 steps agrees comparisons": 450,
+        "within t steps agrees comparisons": 450,
+        "within t steps agrees differences": 14,
+        "H2 comparisons": 270,
+        "whole stalls": 252
+      },
+      "parity": {
+        "start-law replays": 297,
+        "whole birth rounds": 398,
+        "whole births": 16561,
+        "earlier whole reading rounds compared": 398,
+        "distinct nonfull growths": 41,
+        "distinct nonfull birth rounds": 144,
+        "distinct nonfull births": 832,
+        "H1 within t + 1 steps agrees comparisons": 450,
+        "within t steps agrees comparisons": 450,
+        "within t steps agrees differences": 67,
+        "H2 comparisons": 270,
+        "whole stalls": 252,
+        "H1 within t + 1 steps agrees differences": 53,
+        "H2 differences": 9
+      }
+    }
+  },
+  "selected starts": {
+    "tree40": [
+      {
+        "index": 0,
+        "seconds": 0.9385
+      },
+      {
+        "index": 2,
+        "seconds": 5.4751
+      },
+      {
+        "index": 11,
+        "seconds": 1.6517
+      },
+      {
+        "index": 13,
+        "seconds": 0.8894
+      },
+      {
+        "index": 16,
+        "seconds": 2.9198
+      },
+      {
+        "index": 17,
+        "seconds": 3.6193
+      },
+      {
+        "index": 22,
+        "seconds": 2.7421
+      },
+      {
+        "index": 28,
+        "seconds": 3.5946
+      },
+      {
+        "index": 48,
+        "seconds": 2.2857
+      },
+      {
+        "index": 49,
+        "seconds": 3.6179
+      },
+      {
+        "index": 51,
+        "seconds": 7.7536
+      },
+      {
+        "index": 55,
+        "seconds": 2.2638
+      }
+    ],
+    "treeplus25": [
+      {
+        "index": 4,
+        "seconds": 0.3105
+      },
+      {
+        "index": 9,
+        "seconds": 1.0352
+      },
+      {
+        "index": 12,
+        "seconds": 0.1491
+      },
+      {
+        "index": 13,
+        "seconds": 1.0497
+      },
+      {
+        "index": 15,
+        "seconds": 0.5339
+      },
+      {
+        "index": 16,
+        "seconds": 0.5757
+      },
+      {
+        "index": 17,
+        "seconds": 0.1236
+      },
+      {
+        "index": 27,
+        "seconds": 0.8062
+      },
+      {
+        "index": 31,
+        "seconds": 0.7224
+      },
+      {
+        "index": 33,
+        "seconds": 0.3956
+      },
+      {
+        "index": 35,
+        "seconds": 1.6527
+      },
+      {
+        "index": 37,
+        "seconds": 0.4815
+      },
+      {
+        "index": 40,
+        "seconds": 0.3845
+      },
+      {
+        "index": 44,
+        "seconds": 1.0938
+      },
+      {
+        "index": 46,
+        "seconds": 0.3087
+      },
+      {
+        "index": 47,
+        "seconds": 0.5476
+      },
+      {
+        "index": 48,
+        "seconds": 0.4771
+      },
+      {
+        "index": 51,
+        "seconds": 2.2668
+      },
+      {
+        "index": 55,
+        "seconds": 0.4328
+      },
+      {
+        "index": 57,
+        "seconds": 2.3637
+      }
+    ],
+    "census6": [
+      {
+        "index": 42518,
+        "seconds": 0.0374
+      },
+      {
+        "index": 14733,
+        "seconds": 0.0008
+      },
+      {
+        "index": 4831,
+        "seconds": 0.0005
+      },
+      {
+        "index": 14071,
+        "seconds": 0.0068
+      },
+      {
+        "index": 12393,
+        "seconds": 0.0004
+      },
+      {
+        "index": 11672,
+        "seconds": 0.0004
+      },
+      {
+        "index": 77273,
+        "seconds": 0.0005
+      },
+      {
+        "index": 46598,
+        "seconds": 0.0004
+      },
+      {
+        "index": 14931,
+        "seconds": 0.0019
+      },
+      {
+        "index": 192,
+        "seconds": 0.0224
+      },
+      {
+        "index": 30217,
+        "seconds": 0.0005
+      },
+      {
+        "index": 14630,
+        "seconds": 0.0009
+      },
+      {
+        "index": 36383,
+        "seconds": 1.994
+      },
+      {
+        "index": 45169,
+        "seconds": 0.0037
+      },
+      {
+        "index": 69307,
+        "seconds": 0.0005
+      },
+      {
+        "index": 39196,
+        "seconds": 0.0006
+      },
+      {
+        "index": 50915,
+        "seconds": 0.0005
+      },
+      {
+        "index": 44366,
+        "seconds": 0.0003
+      },
+      {
+        "index": 6681,
+        "seconds": 0.0003
+      },
+      {
+        "index": 45487,
+        "seconds": 0.0037
+      },
+      {
+        "index": 27007,
+        "seconds": 0.0004
+      },
+      {
+        "index": 65235,
+        "seconds": 0.0004
+      },
+      {
+        "index": 28297,
+        "seconds": 0.0005
+      },
+      {
+        "index": 1068,
+        "seconds": 0.0003
+      },
+      {
+        "index": 21237,
+        "seconds": 0.0005
+      },
+      {
+        "index": 14645,
+        "seconds": 0.0004
+      },
+      {
+        "index": 39864,
+        "seconds": 0.0036
+      },
+      {
+        "index": 28389,
+        "seconds": 0.0007
+      },
+      {
+        "index": 51798,
+        "seconds": 0.0008
+      },
+      {
+        "index": 812,
+        "seconds": 0.0004
+      },
+      {
+        "index": 61205,
+        "seconds": 0.0003
+      },
+      {
+        "index": 31701,
+        "seconds": 0.0035
+      },
+      {
+        "index": 73207,
+        "seconds": 0.0003
+      },
+      {
+        "index": 1943,
+        "seconds": 0.0005
+      },
+      {
+        "index": 7118,
+        "seconds": 0.0004
+      },
+      {
+        "index": 33808,
+        "seconds": 0.0003
+      },
+      {
+        "index": 18420,
+        "seconds": 0.0006
+      },
+      {
+        "index": 55174,
+        "seconds": 0.0149
+      },
+      {
+        "index": 7794,
+        "seconds": 0.0033
+      },
+      {
+        "index": 12634,
+        "seconds": 0.0004
+      },
+      {
+        "index": 24285,
+        "seconds": 0.0004
+      },
+      {
+        "index": 43,
+        "seconds": 0.0003
+      },
+      {
+        "index": 62650,
+        "seconds": 0.0004
+      },
+      {
+        "index": 64872,
+        "seconds": 0.0006
+      },
+      {
+        "index": 28399,
+        "seconds": 0.0007
+      },
+      {
+        "index": 50090,
+        "seconds": 0.0079
+      },
+      {
+        "index": 8482,
+        "seconds": 0.0003
+      },
+      {
+        "index": 35853,
+        "seconds": 0.0003
+      },
+      {
+        "index": 41003,
+        "seconds": 0.0004
+      },
+      {
+        "index": 22835,
+        "seconds": 0.0004
+      },
+      {
+        "index": 16536,
+        "seconds": 0.0003
+      },
+      {
+        "index": 32039,
+        "seconds": 0.0003
+      },
+      {
+        "index": 57238,
+        "seconds": 0.0006
+      },
+      {
+        "index": 17587,
+        "seconds": 0.0005
+      },
+      {
+        "index": 35211,
+        "seconds": 0.0006
+      },
+      {
+        "index": 34284,
+        "seconds": 0.0003
+      },
+      {
+        "index": 77997,
+        "seconds": 0.0882
+      },
+      {
+        "index": 61029,
+        "seconds": 0.0005
+      },
+      {
+        "index": 27563,
+        "seconds": 0.0031
+      },
+      {
+        "index": 75415,
+        "seconds": 0.0141
+      },
+      {
+        "index": 40503,
+        "seconds": 0.0005
+      },
+      {
+        "index": 60901,
+        "seconds": 0.0003
+      },
+      {
+        "index": 43281,
+        "seconds": 0.0003
+      },
+      {
+        "index": 24363,
+        "seconds": 0.0006
+      },
+      {
+        "index": 44008,
+        "seconds": 0.0003
+      },
+      {
+        "index": 67071,
+        "seconds": 0.0006
+      },
+      {
+        "index": 10317,
+        "seconds": 0.0004
+      },
+      {
+        "index": 64198,
+        "seconds": 0.0027
+      },
+      {
+        "index": 62606,
+        "seconds": 0.0004
+      },
+      {
+        "index": 35059,
+        "seconds": 0.001
+      },
+      {
+        "index": 80994,
+        "seconds": 0.0007
+      },
+      {
+        "index": 5043,
+        "seconds": 0.0005
+      },
+      {
+        "index": 48477,
+        "seconds": 0.0003
+      },
+      {
+        "index": 24562,
+        "seconds": 0.0003
+      },
+      {
+        "index": 16650,
+        "seconds": 0.0002
+      },
+      {
+        "index": 23301,
+        "seconds": 0.0004
+      },
+      {
+        "index": 56490,
+        "seconds": 0.0002
+      },
+      {
+        "index": 64335,
+        "seconds": 0.0003
+      },
+      {
+        "index": 34737,
+        "seconds": 0.0002
+      },
+      {
+        "index": 77900,
+        "seconds": 0.0003
+      },
+      {
+        "index": 11881,
+        "seconds": 0.0005
+      },
+      {
+        "index": 16183,
+        "seconds": 0.0004
+      },
+      {
+        "index": 58382,
+        "seconds": 0.0003
+      },
+      {
+        "index": 57001,
+        "seconds": 0.0002
+      },
+      {
+        "index": 19594,
+        "seconds": 0.0003
+      },
+      {
+        "index": 61133,
+        "seconds": 0.0005
+      },
+      {
+        "index": 7804,
+        "seconds": 0.0034
+      },
+      {
+        "index": 13106,
+        "seconds": 0.0005
+      },
+      {
+        "index": 37665,
+        "seconds": 0.0004
+      },
+      {
+        "index": 21803,
+        "seconds": 0.0004
+      },
+      {
+        "index": 39778,
+        "seconds": 0.0003
+      },
+      {
+        "index": 49964,
+        "seconds": 0.0007
+      },
+      {
+        "index": 46127,
+        "seconds": 0.0005
+      },
+      {
+        "index": 9232,
+        "seconds": 0.0003
+      },
+      {
+        "index": 49444,
+        "seconds": 0.0004
+      },
+      {
+        "index": 76313,
+        "seconds": 0.0003
+      },
+      {
+        "index": 25994,
+        "seconds": 0.0002
+      },
+      {
+        "index": 46391,
+        "seconds": 0.0005
+      },
+      {
+        "index": 40193,
+        "seconds": 0.0009
+      },
+      {
+        "index": 70862,
+        "seconds": 0.0005
+      },
+      {
+        "index": 17466,
+        "seconds": 0.0063
+      },
+      {
+        "index": 26213,
+        "seconds": 0.0005
+      },
+      {
+        "index": 44783,
+        "seconds": 0.0005
+      },
+      {
+        "index": 557,
+        "seconds": 0.0123
+      },
+      {
+        "index": 74424,
+        "seconds": 0.0479
+      },
+      {
+        "index": 68779,
+        "seconds": 0.0004
+      },
+      {
+        "index": 45247,
+        "seconds": 0.0004
+      },
+      {
+        "index": 21297,
+        "seconds": 0.0004
+      },
+      {
+        "index": 80352,
+        "seconds": 0.0518
+      },
+      {
+        "index": 42735,
+        "seconds": 0.0008
+      },
+      {
+        "index": 32247,
+        "seconds": 0.0007
+      },
+      {
+        "index": 3208,
+        "seconds": 0.0008
+      },
+      {
+        "index": 23660,
+        "seconds": 0.0003
+      },
+      {
+        "index": 20475,
+        "seconds": 0.0003
+      },
+      {
+        "index": 26818,
+        "seconds": 0.0002
+      },
+      {
+        "index": 33126,
+        "seconds": 0.0003
+      },
+      {
+        "index": 24045,
+        "seconds": 0.0003
+      },
+      {
+        "index": 29131,
+        "seconds": 0.0002
+      },
+      {
+        "index": 52424,
+        "seconds": 0.0003
+      },
+      {
+        "index": 41327,
+        "seconds": 0.0003
+      },
+      {
+        "index": 54458,
+        "seconds": 0.0002
+      },
+      {
+        "index": 29049,
+        "seconds": 0.002
+      },
+      {
+        "index": 60542,
+        "seconds": 0.0004
+      },
+      {
+        "index": 10221,
+        "seconds": 0.0003
+      },
+      {
+        "index": 70868,
+        "seconds": 0.0004
+      },
+      {
+        "index": 55928,
+        "seconds": 0.0004
+      },
+      {
+        "index": 22814,
+        "seconds": 0.0003
+      },
+      {
+        "index": 48721,
+        "seconds": 0.0003
+      },
+      {
+        "index": 62027,
+        "seconds": 0.0004
+      },
+      {
+        "index": 76450,
+        "seconds": 0.0004
+      },
+      {
+        "index": 6823,
+        "seconds": 0.0003
+      },
+      {
+        "index": 72523,
+        "seconds": 0.0003
+      },
+      {
+        "index": 38544,
+        "seconds": 0.0035
+      },
+      {
+        "index": 18167,
+        "seconds": 0.0004
+      },
+      {
+        "index": 54313,
+        "seconds": 0.0008
+      },
+      {
+        "index": 32702,
+        "seconds": 0.0004
+      },
+      {
+        "index": 14705,
+        "seconds": 0.0004
+      },
+      {
+        "index": 26491,
+        "seconds": 0.0004
+      },
+      {
+        "index": 47628,
+        "seconds": 0.0007
+      },
+      {
+        "index": 43403,
+        "seconds": 0.0003
+      },
+      {
+        "index": 14607,
+        "seconds": 0.0004
+      },
+      {
+        "index": 67253,
+        "seconds": 0.0008
+      },
+      {
+        "index": 40184,
+        "seconds": 0.0003
+      },
+      {
+        "index": 43000,
+        "seconds": 0.0003
+      },
+      {
+        "index": 70972,
+        "seconds": 0.0005
+      },
+      {
+        "index": 58921,
+        "seconds": 0.0664
+      },
+      {
+        "index": 32382,
+        "seconds": 0.0009
+      },
+      {
+        "index": 35146,
+        "seconds": 0.0181
+      },
+      {
+        "index": 76431,
+        "seconds": 0.0008
+      },
+      {
+        "index": 44688,
+        "seconds": 0.0005
+      },
+      {
+        "index": 36655,
+        "seconds": 0.3503
+      },
+      {
+        "index": 11567,
+        "seconds": 0.0003
+      },
+      {
+        "index": 26319,
+        "seconds": 0.0003
+      },
+      {
+        "index": 18260,
+        "seconds": 0.0035
+      },
+      {
+        "index": 36472,
+        "seconds": 0.0025
+      },
+      {
+        "index": 38016,
+        "seconds": 0.0033
+      },
+      {
+        "index": 16009,
+        "seconds": 0.0002
+      },
+      {
+        "index": 35683,
+        "seconds": 0.0002
+      },
+      {
+        "index": 72116,
+        "seconds": 0.0003
+      },
+      {
+        "index": 5763,
+        "seconds": 0.0002
+      },
+      {
+        "index": 31835,
+        "seconds": 0.0003
+      },
+      {
+        "index": 14127,
+        "seconds": 0.0003
+      },
+      {
+        "index": 1457,
+        "seconds": 0.0003
+      },
+      {
+        "index": 43585,
+        "seconds": 0.0003
+      },
+      {
+        "index": 67245,
+        "seconds": 0.0003
+      },
+      {
+        "index": 27715,
+        "seconds": 0.0003
+      },
+      {
+        "index": 8486,
+        "seconds": 0.0036
+      },
+      {
+        "index": 20628,
+        "seconds": 0.0003
+      },
+      {
+        "index": 4496,
+        "seconds": 0.0002
+      },
+      {
+        "index": 43012,
+        "seconds": 0.0005
+      },
+      {
+        "index": 33667,
+        "seconds": 0.0003
+      },
+      {
+        "index": 39584,
+        "seconds": 0.0004
+      },
+      {
+        "index": 77405,
+        "seconds": 0.0003
+      },
+      {
+        "index": 70614,
+        "seconds": 0.0002
+      },
+      {
+        "index": 18054,
+        "seconds": 0.0113
+      },
+      {
+        "index": 2908,
+        "seconds": 0.0003
+      },
+      {
+        "index": 47957,
+        "seconds": 0.0003
+      },
+      {
+        "index": 1866,
+        "seconds": 0.0002
+      },
+      {
+        "index": 5259,
+        "seconds": 0.0033
+      },
+      {
+        "index": 18612,
+        "seconds": 0.0003
+      },
+      {
+        "index": 16207,
+        "seconds": 0.0004
+      },
+      {
+        "index": 72611,
+        "seconds": 0.0004
+      },
+      {
+        "index": 30834,
+        "seconds": 0.0134
+      },
+      {
+        "index": 18130,
+        "seconds": 0.0103
+      },
+      {
+        "index": 79768,
+        "seconds": 0.0004
+      },
+      {
+        "index": 4035,
+        "seconds": 0.0003
+      },
+      {
+        "index": 6581,
+        "seconds": 0.0004
+      },
+      {
+        "index": 70151,
+        "seconds": 0.0066
+      },
+      {
+        "index": 11059,
+        "seconds": 0.0002
+      },
+      {
+        "index": 48019,
+        "seconds": 0.0037
+      },
+      {
+        "index": 9342,
+        "seconds": 0.0004
+      },
+      {
+        "index": 44383,
+        "seconds": 0.0006
+      },
+      {
+        "index": 55395,
+        "seconds": 0.0427
+      },
+      {
+        "index": 15382,
+        "seconds": 0.001
+      },
+      {
+        "index": 33655,
+        "seconds": 0.0007
+      },
+      {
+        "index": 54637,
+        "seconds": 0.0005
+      },
+      {
+        "index": 63776,
+        "seconds": 0.0002
+      },
+      {
+        "index": 27834,
+        "seconds": 0.0588
+      },
+      {
+        "index": 9349,
+        "seconds": 0.0004
+      },
+      {
+        "index": 52748,
+        "seconds": 0.0003
+      },
+      {
+        "index": 64277,
+        "seconds": 0.0002
+      },
+      {
+        "index": 45230,
+        "seconds": 0.0003
+      },
+      {
+        "index": 43854,
+        "seconds": 0.0004
+      },
+      {
+        "index": 2916,
+        "seconds": 0.0005
+      },
+      {
+        "index": 24031,
+        "seconds": 0.0005
+      },
+      {
+        "index": 32357,
+        "seconds": 0.0004
+      },
+      {
+        "index": 70948,
+        "seconds": 0.0003
+      },
+      {
+        "index": 64863,
+        "seconds": 0.0043
+      },
+      {
+        "index": 70548,
+        "seconds": 0.0003
+      },
+      {
+        "index": 23254,
+        "seconds": 0.0003
+      },
+      {
+        "index": 67333,
+        "seconds": 0.0002
+      },
+      {
+        "index": 66314,
+        "seconds": 0.0003
+      },
+      {
+        "index": 48784,
+        "seconds": 0.0001
+      },
+      {
+        "index": 312,
+        "seconds": 0.0002
+      },
+      {
+        "index": 34328,
+        "seconds": 0.0004
+      },
+      {
+        "index": 31615,
+        "seconds": 0.0003
+      },
+      {
+        "index": 3606,
+        "seconds": 0.0002
+      },
+      {
+        "index": 54285,
+        "seconds": 0.0003
+      },
+      {
+        "index": 48115,
+        "seconds": 0.2375
+      },
+      {
+        "index": 74323,
+        "seconds": 0.0067
+      },
+      {
+        "index": 71896,
+        "seconds": 0.0003
+      },
+      {
+        "index": 60496,
+        "seconds": 0.0005
+      },
+      {
+        "index": 60132,
+        "seconds": 0.0003
+      },
+      {
+        "index": 10420,
+        "seconds": 0.0002
+      },
+      {
+        "index": 57164,
+        "seconds": 0.0003
+      },
+      {
+        "index": 2039,
+        "seconds": 0.0038
+      },
+      {
+        "index": 62853,
+        "seconds": 0.0003
+      },
+      {
+        "index": 71050,
+        "seconds": 0.0003
+      },
+      {
+        "index": 2523,
+        "seconds": 0.0005
+      },
+      {
+        "index": 27651,
+        "seconds": 0.0003
+      },
+      {
+        "index": 4787,
+        "seconds": 0.0003
+      },
+      {
+        "index": 71365,
+        "seconds": 0.0003
+      },
+      {
+        "index": 26515,
+        "seconds": 0.0033
+      },
+      {
+        "index": 49134,
+        "seconds": 0.0004
+      },
+      {
+        "index": 33034,
+        "seconds": 0.0003
+      },
+      {
+        "index": 41234,
+        "seconds": 0.0005
+      },
+      {
+        "index": 7865,
+        "seconds": 0.0599
+      },
+      {
+        "index": 8001,
+        "seconds": 0.0182
+      },
+      {
+        "index": 22289,
+        "seconds": 0.0003
+      },
+      {
+        "index": 4875,
+        "seconds": 0.0003
+      },
+      {
+        "index": 11699,
+        "seconds": 0.0083
+      },
+      {
+        "index": 51333,
+        "seconds": 0.0003
+      },
+      {
+        "index": 9818,
+        "seconds": 0.0002
+      },
+      {
+        "index": 77914,
+        "seconds": 0.0032
+      },
+      {
+        "index": 24732,
+        "seconds": 0.0004
+      },
+      {
+        "index": 50194,
+        "seconds": 0.0003
+      },
+      {
+        "index": 73530,
+        "seconds": 0.0003
+      },
+      {
+        "index": 67202,
+        "seconds": 0.0004
+      },
+      {
+        "index": 33019,
+        "seconds": 0.0003
+      },
+      {
+        "index": 46805,
+        "seconds": 0.0036
+      },
+      {
+        "index": 796,
+        "seconds": 0.0005
+      },
+      {
+        "index": 71113,
+        "seconds": 0.0003
+      },
+      {
+        "index": 39853,
+        "seconds": 0.0006
+      },
+      {
+        "index": 7580,
+        "seconds": 0.0033
+      },
+      {
+        "index": 54209,
+        "seconds": 0.0003
+      },
+      {
+        "index": 78049,
+        "seconds": 0.0002
+      },
+      {
+        "index": 25643,
+        "seconds": 0.0058
+      },
+      {
+        "index": 44463,
+        "seconds": 0.0004
+      },
+      {
+        "index": 42521,
+        "seconds": 0.0261
+      },
+      {
+        "index": 25278,
+        "seconds": 0.0035
+      },
+      {
+        "index": 49914,
+        "seconds": 0.0117
+      },
+      {
+        "index": 20271,
+        "seconds": 0.0005
+      },
+      {
+        "index": 20641,
+        "seconds": 0.0081
+      },
+      {
+        "index": 35942,
+        "seconds": 0.0095
+      },
+      {
+        "index": 16040,
+        "seconds": 0.0003
+      },
+      {
+        "index": 11275,
+        "seconds": 0.0003
+      },
+      {
+        "index": 43550,
+        "seconds": 0.0003
+      },
+      {
+        "index": 17837,
+        "seconds": 0.0002
+      },
+      {
+        "index": 28725,
+        "seconds": 0.0003
+      },
+      {
+        "index": 31080,
+        "seconds": 0.0002
+      },
+      {
+        "index": 8017,
+        "seconds": 0.0237
+      },
+      {
+        "index": 8966,
+        "seconds": 0.0005
+      },
+      {
+        "index": 24295,
+        "seconds": 0.0004
+      },
+      {
+        "index": 25511,
+        "seconds": 0.0004
+      },
+      {
+        "index": 78207,
+        "seconds": 0.0003
+      },
+      {
+        "index": 16800,
+        "seconds": 0.0068
+      },
+      {
+        "index": 11861,
+        "seconds": 0.0078
+      },
+      {
+        "index": 65999,
+        "seconds": 0.0006
+      },
+      {
+        "index": 32097,
+        "seconds": 0.0003
+      },
+      {
+        "index": 45697,
+        "seconds": 0.0078
+      },
+      {
+        "index": 79825,
+        "seconds": 0.0002
+      },
+      {
+        "index": 24361,
+        "seconds": 0.0003
+      },
+      {
+        "index": 9565,
+        "seconds": 0.0004
+      },
+      {
+        "index": 46023,
+        "seconds": 0.0005
+      },
+      {
+        "index": 19824,
+        "seconds": 0.0003
+      },
+      {
+        "index": 34998,
+        "seconds": 0.0003
+      },
+      {
+        "index": 2330,
+        "seconds": 0.0069
+      },
+      {
+        "index": 24724,
+        "seconds": 0.0003
+      },
+      {
+        "index": 20832,
+        "seconds": 0.0005
+      },
+      {
+        "index": 72765,
+        "seconds": 0.043
+      },
+      {
+        "index": 64817,
+        "seconds": 0.0093
+      },
+      {
+        "index": 41998,
+        "seconds": 0.0004
+      },
+      {
+        "index": 1852,
+        "seconds": 0.0003
+      },
+      {
+        "index": 4945,
+        "seconds": 0.0003
+      },
+      {
+        "index": 60808,
+        "seconds": 0.0004
+      },
+      {
+        "index": 56051,
+        "seconds": 0.0003
+      },
+      {
+        "index": 28004,
+        "seconds": 0.0003
+      }
+    ]
+  },
+  "differing comparisons": [
+    {
+      "reader": 3,
+      "comparison horizon": 3,
+      "live start knots in region": [
+        1,
+        2,
+        3
+      ],
+      "first different round": 3,
+      "first reading differs there": true,
+      "reading with parents differs there": true,
+      "region end": "closed",
+      "full end at study horizon": "rounds",
+      "terminal birth": {
+        "round": 3,
+        "total loose beforehand": 3,
+        "terminal parents": 3,
+        "terminal kind": "join",
+        "terminal fresh": 0,
+        "single birth takes every loose distinction": true,
+        "full births at that round": 2,
+        "full fresh counts at matching parent descent": [
+          1
+        ],
+        "full birth count at matching parent descent": 1,
+        "full implied at that round": false
+      },
+      "test": "H1 within t + 1 steps agrees",
+      "item": null,
+      "law": "parity",
+      "population": "census6",
+      "start index": 192
+    },
+    {
+      "reader": 3,
+      "comparison horizon": 4,
+      "live start knots in region": [
+        1,
+        2,
+        3
+      ],
+      "first different round": 3,
+      "first reading differs there": true,
+      "reading with parents differs there": true,
+      "region end": "closed",
+      "full end at study horizon": "rounds",
+      "terminal birth": {
+        "round": 3,
+        "total loose beforehand": 3,
+        "terminal parents": 3,
+        "terminal kind": "join",
+        "terminal fresh": 0,
+        "single birth takes every loose distinction": true,
+        "full births at that round": 2,
+        "full fresh counts at matching parent descent": [
+          1
+        ],
+        "full birth count at matching parent descent": 1,
+        "full implied at that round": false
+      },
+      "test": "H1 within t + 1 steps agrees",
+      "item": null,
+      "law": "parity",
+      "population": "census6",
+      "start index": 192
+    },
+    {
+      "reader": 3,
+      "comparison horizon": 5,
+      "live start knots in region": [
+        1,
+        2,
+        3
+      ],
+      "first different round": 3,
+      "first reading differs there": true,
+      "reading with parents differs there": true,
+      "region end": "closed",
+      "full end at study horizon": "rounds",
+      "terminal birth": {
+        "round": 3,
+        "total loose beforehand": 3,
+        "terminal parents": 3,
+        "terminal kind": "join",
+        "terminal fresh": 0,
+        "single birth takes every loose distinction": true,
+        "full births at that round": 2,
+        "full fresh counts at matching parent descent": [
+          1
+        ],
+        "full birth count at matching parent descent": 1,
+        "full implied at that round": false
+      },
+      "test": "H1 within t + 1 steps agrees",
+      "item": null,
+      "law": "parity",
+      "population": "census6",
+      "start index": 192
+    },
+    {
+      "reader": 3,
+      "comparison horizon": 6,
+      "live start knots in region": [
+        1,
+        2,
+        3
+      ],
+      "first different round": 3,
+      "first reading differs there": true,
+      "reading with parents differs there": true,
+      "region end": "closed",
+      "full end at study horizon": "rounds",
+      "terminal birth": {
+        "round": 3,
+        "total loose beforehand": 3,
+        "terminal parents": 3,
+        "terminal kind": "join",
+        "terminal fresh": 0,
+        "single birth takes every loose distinction": true,
+        "full births at that round": 2,
+        "full fresh counts at matching parent descent": [
+          1
+        ],
+        "full birth count at matching parent descent": 1,
+        "full implied at that round": false
+      },
+      "test": "H1 within t + 1 steps agrees",
+      "item": null,
+      "law": "parity",
+      "population": "census6",
+      "start index": 192
+    },
+    {
+      "reader": 3,
+      "comparison horizon": 7,
+      "live start knots in region": [
+        1,
+        2,
+        3
+      ],
+      "first different round": 3,
+      "first reading differs there": true,
+      "reading with parents differs there": true,
+      "region end": "closed",
+      "full end at study horizon": "rounds",
+      "terminal birth": {
+        "round": 3,
+        "total loose beforehand": 3,
+        "terminal parents": 3,
+        "terminal kind": "join",
+        "terminal fresh": 0,
+        "single birth takes every loose distinction": true,
+        "full births at that round": 2,
+        "full fresh counts at matching parent descent": [
+          1
+        ],
+        "full birth count at matching parent descent": 1,
+        "full implied at that round": false
+      },
+      "test": "H1 within t + 1 steps agrees",
+      "item": null,
+      "law": "parity",
+      "population": "census6",
+      "start index": 192
+    },
+    {
+      "reader": 3,
+      "comparison horizon": 8,
+      "live start knots in region": [
+        1,
+        2,
+        3
+      ],
+      "first different round": 3,
+      "first reading differs there": true,
+      "reading with parents differs there": true,
+      "region end": "closed",
+      "full end at study horizon": "rounds",
+      "terminal birth": {
+        "round": 3,
+        "total loose beforehand": 3,
+        "terminal parents": 3,
+        "terminal kind": "join",
+        "terminal fresh": 0,
+        "single birth takes every loose distinction": true,
+        "full births at that round": 2,
+        "full fresh counts at matching parent descent": [
+          1
+        ],
+        "full birth count at matching parent descent": 1,
+        "full implied at that round": false
+      },
+      "test": "H1 within t + 1 steps agrees",
+      "item": null,
+      "law": "parity",
+      "population": "census6",
+      "start index": 192
+    },
+    {
+      "reader": 3,
+      "comparison horizon": 9,
+      "live start knots in region": [
+        1,
+        2,
+        3
+      ],
+      "first different round": 3,
+      "first reading differs there": true,
+      "reading with parents differs there": true,
+      "region end": "closed",
+      "full end at study horizon": "rounds",
+      "terminal birth": {
+        "round": 3,
+        "total loose beforehand": 3,
+        "terminal parents": 3,
+        "terminal kind": "join",
+        "terminal fresh": 0,
+        "single birth takes every loose distinction": true,
+        "full births at that round": 2,
+        "full fresh counts at matching parent descent": [
+          1
+        ],
+        "full birth count at matching parent descent": 1,
+        "full implied at that round": false
+      },
+      "test": "H1 within t + 1 steps agrees",
+      "item": null,
+      "law": "parity",
+      "population": "census6",
+      "start index": 192
+    },
+    {
+      "reader": 3,
+      "comparison horizon": 10,
+      "live start knots in region": [
+        1,
+        2,
+        3
+      ],
+      "first different round": 3,
+      "first reading differs there": true,
+      "reading with parents differs there": true,
+      "region end": "closed",
+      "full end at study horizon": "rounds",
+      "terminal birth": {
+        "round": 3,
+        "total loose beforehand": 3,
+        "terminal parents": 3,
+        "terminal kind": "join",
+        "terminal fresh": 0,
+        "single birth takes every loose distinction": true,
+        "full births at that round": 2,
+        "full fresh counts at matching parent descent": [
+          1
+        ],
+        "full birth count at matching parent descent": 1,
+        "full implied at that round": false
+      },
+      "test": "H1 within t + 1 steps agrees",
+      "item": null,
+      "law": "parity",
+      "population": "census6",
+      "start index": 192
+    },
+    {
+      "reader": 3,
+      "comparison horizon": 6,
+      "live start knots in region": [
+        1,
+        2,
+        3
+      ],
+      "first different round": 3,
+      "first reading differs there": true,
+      "reading with parents differs there": true,
+      "region end": "closed",
+      "full end at study horizon": "rounds",
+      "terminal birth": {
+        "round": 3,
+        "total loose beforehand": 3,
+        "terminal parents": 3,
+        "terminal kind": "join",
+        "terminal fresh": 0,
+        "single birth takes every loose distinction": true,
+        "full births at that round": 2,
+        "full fresh counts at matching parent descent": [
+          1
+        ],
+        "full birth count at matching parent descent": 1,
+        "full implied at that round": false
+      },
+      "test": "H2",
+      "item": "admission 1",
+      "law": "parity",
+      "population": "census6",
+      "start index": 192
+    },
+    {
+      "reader": 3,
+      "comparison horizon": 3,
+      "live start knots in region": [
+        3
+      ],
+      "first different round": 3,
+      "first reading differs there": true,
+      "reading with parents differs there": true,
+      "region end": "closed",
+      "full end at study horizon": "rounds",
+      "terminal birth": {
+        "round": 3,
+        "total loose beforehand": 3,
+        "terminal parents": 3,
+        "terminal kind": "join",
+        "terminal fresh": 0,
+        "single birth takes every loose distinction": true,
+        "full births at that round": 2,
+        "full fresh counts at matching parent descent": [
+          1
+        ],
+        "full birth count at matching parent descent": 1,
+        "full implied at that round": false
+      },
+      "test": "H1 within t + 1 steps agrees",
+      "item": null,
+      "law": "parity",
+      "population": "census6",
+      "start index": 50090
+    },
+    {
+      "reader": 3,
+      "comparison horizon": 4,
+      "live start knots in region": [
+        3
+      ],
+      "first different round": 3,
+      "first reading differs there": true,
+      "reading with parents differs there": true,
+      "region end": "closed",
+      "full end at study horizon": "rounds",
+      "terminal birth": {
+        "round": 3,
+        "total loose beforehand": 3,
+        "terminal parents": 3,
+        "terminal kind": "join",
+        "terminal fresh": 0,
+        "single birth takes every loose distinction": true,
+        "full births at that round": 2,
+        "full fresh counts at matching parent descent": [
+          1
+        ],
+        "full birth count at matching parent descent": 1,
+        "full implied at that round": false
+      },
+      "test": "H1 within t + 1 steps agrees",
+      "item": null,
+      "law": "parity",
+      "population": "census6",
+      "start index": 50090
+    },
+    {
+      "reader": 3,
+      "comparison horizon": 5,
+      "live start knots in region": [
+        3
+      ],
+      "first different round": 3,
+      "first reading differs there": true,
+      "reading with parents differs there": true,
+      "region end": "closed",
+      "full end at study horizon": "rounds",
+      "terminal birth": {
+        "round": 3,
+        "total loose beforehand": 3,
+        "terminal parents": 3,
+        "terminal kind": "join",
+        "terminal fresh": 0,
+        "single birth takes every loose distinction": true,
+        "full births at that round": 2,
+        "full fresh counts at matching parent descent": [
+          1
+        ],
+        "full birth count at matching parent descent": 1,
+        "full implied at that round": false
+      },
+      "test": "H1 within t + 1 steps agrees",
+      "item": null,
+      "law": "parity",
+      "population": "census6",
+      "start index": 50090
+    },
+    {
+      "reader": 3,
+      "comparison horizon": 6,
+      "live start knots in region": [
+        3
+      ],
+      "first different round": 3,
+      "first reading differs there": true,
+      "reading with parents differs there": true,
+      "region end": "closed",
+      "full end at study horizon": "rounds",
+      "terminal birth": {
+        "round": 3,
+        "total loose beforehand": 3,
+        "terminal parents": 3,
+        "terminal kind": "join",
+        "terminal fresh": 0,
+        "single birth takes every loose distinction": true,
+        "full births at that round": 2,
+        "full fresh counts at matching parent descent": [
+          1
+        ],
+        "full birth count at matching parent descent": 1,
+        "full implied at that round": false
+      },
+      "test": "H1 within t + 1 steps agrees",
+      "item": null,
+      "law": "parity",
+      "population": "census6",
+      "start index": 50090
+    },
+    {
+      "reader": 3,
+      "comparison horizon": 7,
+      "live start knots in region": [
+        3
+      ],
+      "first different round": 3,
+      "first reading differs there": true,
+      "reading with parents differs there": true,
+      "region end": "closed",
+      "full end at study horizon": "rounds",
+      "terminal birth": {
+        "round": 3,
+        "total loose beforehand": 3,
+        "terminal parents": 3,
+        "terminal kind": "join",
+        "terminal fresh": 0,
+        "single birth takes every loose distinction": true,
+        "full births at that round": 2,
+        "full fresh counts at matching parent descent": [
+          1
+        ],
+        "full birth count at matching parent descent": 1,
+        "full implied at that round": false
+      },
+      "test": "H1 within t + 1 steps agrees",
+      "item": null,
+      "law": "parity",
+      "population": "census6",
+      "start index": 50090
+    },
+    {
+      "reader": 3,
+      "comparison horizon": 8,
+      "live start knots in region": [
+        3
+      ],
+      "first different round": 3,
+      "first reading differs there": true,
+      "reading with parents differs there": true,
+      "region end": "closed",
+      "full end at study horizon": "rounds",
+      "terminal birth": {
+        "round": 3,
+        "total loose beforehand": 3,
+        "terminal parents": 3,
+        "terminal kind": "join",
+        "terminal fresh": 0,
+        "single birth takes every loose distinction": true,
+        "full births at that round": 2,
+        "full fresh counts at matching parent descent": [
+          1
+        ],
+        "full birth count at matching parent descent": 1,
+        "full implied at that round": false
+      },
+      "test": "H1 within t + 1 steps agrees",
+      "item": null,
+      "law": "parity",
+      "population": "census6",
+      "start index": 50090
+    },
+    {
+      "reader": 3,
+      "comparison horizon": 9,
+      "live start knots in region": [
+        3
+      ],
+      "first different round": 3,
+      "first reading differs there": true,
+      "reading with parents differs there": true,
+      "region end": "closed",
+      "full end at study horizon": "rounds",
+      "terminal birth": {
+        "round": 3,
+        "total loose beforehand": 3,
+        "terminal parents": 3,
+        "terminal kind": "join",
+        "terminal fresh": 0,
+        "single birth takes every loose distinction": true,
+        "full births at that round": 2,
+        "full fresh counts at matching parent descent": [
+          1
+        ],
+        "full birth count at matching parent descent": 1,
+        "full implied at that round": false
+      },
+      "test": "H1 within t + 1 steps agrees",
+      "item": null,
+      "law": "parity",
+      "population": "census6",
+      "start index": 50090
+    },
+    {
+      "reader": 3,
+      "comparison horizon": 10,
+      "live start knots in region": [
+        3
+      ],
+      "first different round": 3,
+      "first reading differs there": true,
+      "reading with parents differs there": true,
+      "region end": "closed",
+      "full end at study horizon": "rounds",
+      "terminal birth": {
+        "round": 3,
+        "total loose beforehand": 3,
+        "terminal parents": 3,
+        "terminal kind": "join",
+        "terminal fresh": 0,
+        "single birth takes every loose distinction": true,
+        "full births at that round": 2,
+        "full fresh counts at matching parent descent": [
+          1
+        ],
+        "full birth count at matching parent descent": 1,
+        "full implied at that round": false
+      },
+      "test": "H1 within t + 1 steps agrees",
+      "item": null,
+      "law": "parity",
+      "population": "census6",
+      "start index": 50090
+    },
+    {
+      "reader": 3,
+      "comparison horizon": 6,
+      "live start knots in region": [
+        3
+      ],
+      "first different round": 3,
+      "first reading differs there": true,
+      "reading with parents differs there": true,
+      "region end": "closed",
+      "full end at study horizon": "rounds",
+      "terminal birth": {
+        "round": 3,
+        "total loose beforehand": 3,
+        "terminal parents": 3,
+        "terminal kind": "join",
+        "terminal fresh": 0,
+        "single birth takes every loose distinction": true,
+        "full births at that round": 2,
+        "full fresh counts at matching parent descent": [
+          1
+        ],
+        "full birth count at matching parent descent": 1,
+        "full implied at that round": false
+      },
+      "test": "H2",
+      "item": "random 2",
+      "law": "parity",
+      "population": "census6",
+      "start index": 50090
+    },
+    {
+      "reader": 3,
+      "comparison horizon": 9,
+      "live start knots in region": [
+        3
+      ],
+      "first different round": 3,
+      "first reading differs there": true,
+      "reading with parents differs there": true,
+      "region end": "closed",
+      "full end at study horizon": "rounds",
+      "terminal birth": {
+        "round": 3,
+        "total loose beforehand": 3,
+        "terminal parents": 3,
+        "terminal kind": "join",
+        "terminal fresh": 0,
+        "single birth takes every loose distinction": true,
+        "full births at that round": 2,
+        "full fresh counts at matching parent descent": [
+          1
+        ],
+        "full birth count at matching parent descent": 1,
+        "full implied at that round": false
+      },
+      "test": "H2",
+      "item": "random 3",
+      "law": "parity",
+      "population": "census6",
+      "start index": 50090
+    },
+    {
+      "reader": 3,
+      "comparison horizon": 10,
+      "live start knots in region": [
+        3
+      ],
+      "first different round": 3,
+      "first reading differs there": true,
+      "reading with parents differs there": true,
+      "region end": "closed",
+      "full end at study horizon": "rounds",
+      "terminal birth": {
+        "round": 3,
+        "total loose beforehand": 3,
+        "terminal parents": 3,
+        "terminal kind": "join",
+        "terminal fresh": 0,
+        "single birth takes every loose distinction": true,
+        "full births at that round": 2,
+        "full fresh counts at matching parent descent": [
+          1
+        ],
+        "full birth count at matching parent descent": 1,
+        "full implied at that round": false
+      },
+      "test": "H2",
+      "item": "admission 1",
+      "law": "parity",
+      "population": "census6",
+      "start index": 50090
+    },
+    {
+      "reader": 3,
+      "comparison horizon": 10,
+      "live start knots in region": [
+        3
+      ],
+      "first different round": 3,
+      "first reading differs there": true,
+      "reading with parents differs there": true,
+      "region end": "closed",
+      "full end at study horizon": "rounds",
+      "terminal birth": {
+        "round": 3,
+        "total loose beforehand": 3,
+        "terminal parents": 3,
+        "terminal kind": "join",
+        "terminal fresh": 0,
+        "single birth takes every loose distinction": true,
+        "full births at that round": 2,
+        "full fresh counts at matching parent descent": [
+          1
+        ],
+        "full birth count at matching parent descent": 1,
+        "full implied at that round": false
+      },
+      "test": "H2",
+      "item": "admission 2",
+      "law": "parity",
+      "population": "census6",
+      "start index": 50090
+    },
+    {
+      "reader": 5,
+      "comparison horizon": 6,
+      "live start knots in region": [
+        1,
+        2,
+        4,
+        5
+      ],
+      "first different round": 6,
+      "first reading differs there": true,
+      "reading with parents differs there": true,
+      "region end": "closed",
+      "full end at study horizon": "rounds",
+      "terminal birth": {
+        "round": 6,
+        "total loose beforehand": 4,
+        "terminal parents": 4,
+        "terminal kind": "join",
+        "terminal fresh": 0,
+        "single birth takes every loose distinction": true,
+        "full births at that round": 2,
+        "full fresh counts at matching parent descent": [
+          1
+        ],
+        "full birth count at matching parent descent": 1,
+        "full implied at that round": false
+      },
+      "test": "H1 within t + 1 steps agrees",
+      "item": null,
+      "law": "parity",
+      "population": "census6",
+      "start index": 557
+    },
+    {
+      "reader": 5,
+      "comparison horizon": 7,
+      "live start knots in region": [
+        1,
+        2,
+        4,
+        5
+      ],
+      "first different round": 6,
+      "first reading differs there": true,
+      "reading with parents differs there": true,
+      "region end": "closed",
+      "full end at study horizon": "rounds",
+      "terminal birth": {
+        "round": 6,
+        "total loose beforehand": 4,
+        "terminal parents": 4,
+        "terminal kind": "join",
+        "terminal fresh": 0,
+        "single birth takes every loose distinction": true,
+        "full births at that round": 2,
+        "full fresh counts at matching parent descent": [
+          1
+        ],
+        "full birth count at matching parent descent": 1,
+        "full implied at that round": false
+      },
+      "test": "H1 within t + 1 steps agrees",
+      "item": null,
+      "law": "parity",
+      "population": "census6",
+      "start index": 557
+    },
+    {
+      "reader": 5,
+      "comparison horizon": 8,
+      "live start knots in region": [
+        1,
+        2,
+        4,
+        5
+      ],
+      "first different round": 6,
+      "first reading differs there": true,
+      "reading with parents differs there": true,
+      "region end": "closed",
+      "full end at study horizon": "rounds",
+      "terminal birth": {
+        "round": 6,
+        "total loose beforehand": 4,
+        "terminal parents": 4,
+        "terminal kind": "join",
+        "terminal fresh": 0,
+        "single birth takes every loose distinction": true,
+        "full births at that round": 2,
+        "full fresh counts at matching parent descent": [
+          1
+        ],
+        "full birth count at matching parent descent": 1,
+        "full implied at that round": false
+      },
+      "test": "H1 within t + 1 steps agrees",
+      "item": null,
+      "law": "parity",
+      "population": "census6",
+      "start index": 557
+    },
+    {
+      "reader": 5,
+      "comparison horizon": 9,
+      "live start knots in region": [
+        1,
+        2,
+        4,
+        5
+      ],
+      "first different round": 6,
+      "first reading differs there": true,
+      "reading with parents differs there": true,
+      "region end": "closed",
+      "full end at study horizon": "rounds",
+      "terminal birth": {
+        "round": 6,
+        "total loose beforehand": 4,
+        "terminal parents": 4,
+        "terminal kind": "join",
+        "terminal fresh": 0,
+        "single birth takes every loose distinction": true,
+        "full births at that round": 2,
+        "full fresh counts at matching parent descent": [
+          1
+        ],
+        "full birth count at matching parent descent": 1,
+        "full implied at that round": false
+      },
+      "test": "H1 within t + 1 steps agrees",
+      "item": null,
+      "law": "parity",
+      "population": "census6",
+      "start index": 557
+    },
+    {
+      "reader": 5,
+      "comparison horizon": 10,
+      "live start knots in region": [
+        1,
+        2,
+        4,
+        5
+      ],
+      "first different round": 6,
+      "first reading differs there": true,
+      "reading with parents differs there": true,
+      "region end": "closed",
+      "full end at study horizon": "rounds",
+      "terminal birth": {
+        "round": 6,
+        "total loose beforehand": 4,
+        "terminal parents": 4,
+        "terminal kind": "join",
+        "terminal fresh": 0,
+        "single birth takes every loose distinction": true,
+        "full births at that round": 2,
+        "full fresh counts at matching parent descent": [
+          1
+        ],
+        "full birth count at matching parent descent": 1,
+        "full implied at that round": false
+      },
+      "test": "H1 within t + 1 steps agrees",
+      "item": null,
+      "law": "parity",
+      "population": "census6",
+      "start index": 557
+    },
+    {
+      "reader": 5,
+      "comparison horizon": 6,
+      "live start knots in region": [
+        1,
+        2,
+        4,
+        5
+      ],
+      "first different round": 6,
+      "first reading differs there": true,
+      "reading with parents differs there": true,
+      "region end": "closed",
+      "full end at study horizon": "rounds",
+      "terminal birth": {
+        "round": 6,
+        "total loose beforehand": 4,
+        "terminal parents": 4,
+        "terminal kind": "join",
+        "terminal fresh": 0,
+        "single birth takes every loose distinction": true,
+        "full births at that round": 2,
+        "full fresh counts at matching parent descent": [
+          1
+        ],
+        "full birth count at matching parent descent": 1,
+        "full implied at that round": false
+      },
+      "test": "H2",
+      "item": "admission 1",
+      "law": "parity",
+      "population": "census6",
+      "start index": 557
+    },
+    {
+      "reader": 4,
+      "comparison horizon": 3,
+      "live start knots in region": [
+        0,
+        2,
+        4
+      ],
+      "first different round": 3,
+      "first reading differs there": true,
+      "reading with parents differs there": true,
+      "region end": "closed",
+      "full end at study horizon": "rounds",
+      "terminal birth": {
+        "round": 3,
+        "total loose beforehand": 3,
+        "terminal parents": 3,
+        "terminal kind": "join",
+        "terminal fresh": 0,
+        "single birth takes every loose distinction": true,
+        "full births at that round": 6,
+        "full fresh counts at matching parent descent": [
+          1
+        ],
+        "full birth count at matching parent descent": 1,
+        "full implied at that round": false
+      },
+      "test": "H1 within t + 1 steps agrees",
+      "item": null,
+      "law": "parity",
+      "population": "census6",
+      "start index": 30834
+    },
+    {
+      "reader": 4,
+      "comparison horizon": 4,
+      "live start knots in region": [
+        0,
+        2,
+        4
+      ],
+      "first different round": 3,
+      "first reading differs there": true,
+      "reading with parents differs there": true,
+      "region end": "closed",
+      "full end at study horizon": "rounds",
+      "terminal birth": {
+        "round": 3,
+        "total loose beforehand": 3,
+        "terminal parents": 3,
+        "terminal kind": "join",
+        "terminal fresh": 0,
+        "single birth takes every loose distinction": true,
+        "full births at that round": 6,
+        "full fresh counts at matching parent descent": [
+          1
+        ],
+        "full birth count at matching parent descent": 1,
+        "full implied at that round": false
+      },
+      "test": "H1 within t + 1 steps agrees",
+      "item": null,
+      "law": "parity",
+      "population": "census6",
+      "start index": 30834
+    },
+    {
+      "reader": 4,
+      "comparison horizon": 5,
+      "live start knots in region": [
+        0,
+        2,
+        4
+      ],
+      "first different round": 3,
+      "first reading differs there": true,
+      "reading with parents differs there": true,
+      "region end": "closed",
+      "full end at study horizon": "rounds",
+      "terminal birth": {
+        "round": 3,
+        "total loose beforehand": 3,
+        "terminal parents": 3,
+        "terminal kind": "join",
+        "terminal fresh": 0,
+        "single birth takes every loose distinction": true,
+        "full births at that round": 6,
+        "full fresh counts at matching parent descent": [
+          1
+        ],
+        "full birth count at matching parent descent": 1,
+        "full implied at that round": false
+      },
+      "test": "H1 within t + 1 steps agrees",
+      "item": null,
+      "law": "parity",
+      "population": "census6",
+      "start index": 30834
+    },
+    {
+      "reader": 4,
+      "comparison horizon": 6,
+      "live start knots in region": [
+        0,
+        2,
+        4
+      ],
+      "first different round": 3,
+      "first reading differs there": true,
+      "reading with parents differs there": true,
+      "region end": "closed",
+      "full end at study horizon": "rounds",
+      "terminal birth": {
+        "round": 3,
+        "total loose beforehand": 3,
+        "terminal parents": 3,
+        "terminal kind": "join",
+        "terminal fresh": 0,
+        "single birth takes every loose distinction": true,
+        "full births at that round": 6,
+        "full fresh counts at matching parent descent": [
+          1
+        ],
+        "full birth count at matching parent descent": 1,
+        "full implied at that round": false
+      },
+      "test": "H1 within t + 1 steps agrees",
+      "item": null,
+      "law": "parity",
+      "population": "census6",
+      "start index": 30834
+    },
+    {
+      "reader": 4,
+      "comparison horizon": 7,
+      "live start knots in region": [
+        0,
+        2,
+        4
+      ],
+      "first different round": 3,
+      "first reading differs there": true,
+      "reading with parents differs there": true,
+      "region end": "closed",
+      "full end at study horizon": "rounds",
+      "terminal birth": {
+        "round": 3,
+        "total loose beforehand": 3,
+        "terminal parents": 3,
+        "terminal kind": "join",
+        "terminal fresh": 0,
+        "single birth takes every loose distinction": true,
+        "full births at that round": 6,
+        "full fresh counts at matching parent descent": [
+          1
+        ],
+        "full birth count at matching parent descent": 1,
+        "full implied at that round": false
+      },
+      "test": "H1 within t + 1 steps agrees",
+      "item": null,
+      "law": "parity",
+      "population": "census6",
+      "start index": 30834
+    },
+    {
+      "reader": 4,
+      "comparison horizon": 8,
+      "live start knots in region": [
+        0,
+        2,
+        4
+      ],
+      "first different round": 3,
+      "first reading differs there": true,
+      "reading with parents differs there": true,
+      "region end": "closed",
+      "full end at study horizon": "rounds",
+      "terminal birth": {
+        "round": 3,
+        "total loose beforehand": 3,
+        "terminal parents": 3,
+        "terminal kind": "join",
+        "terminal fresh": 0,
+        "single birth takes every loose distinction": true,
+        "full births at that round": 6,
+        "full fresh counts at matching parent descent": [
+          1
+        ],
+        "full birth count at matching parent descent": 1,
+        "full implied at that round": false
+      },
+      "test": "H1 within t + 1 steps agrees",
+      "item": null,
+      "law": "parity",
+      "population": "census6",
+      "start index": 30834
+    },
+    {
+      "reader": 4,
+      "comparison horizon": 9,
+      "live start knots in region": [
+        0,
+        2,
+        4
+      ],
+      "first different round": 3,
+      "first reading differs there": true,
+      "reading with parents differs there": true,
+      "region end": "closed",
+      "full end at study horizon": "rounds",
+      "terminal birth": {
+        "round": 3,
+        "total loose beforehand": 3,
+        "terminal parents": 3,
+        "terminal kind": "join",
+        "terminal fresh": 0,
+        "single birth takes every loose distinction": true,
+        "full births at that round": 6,
+        "full fresh counts at matching parent descent": [
+          1
+        ],
+        "full birth count at matching parent descent": 1,
+        "full implied at that round": false
+      },
+      "test": "H1 within t + 1 steps agrees",
+      "item": null,
+      "law": "parity",
+      "population": "census6",
+      "start index": 30834
+    },
+    {
+      "reader": 4,
+      "comparison horizon": 10,
+      "live start knots in region": [
+        0,
+        2,
+        4
+      ],
+      "first different round": 3,
+      "first reading differs there": true,
+      "reading with parents differs there": true,
+      "region end": "closed",
+      "full end at study horizon": "rounds",
+      "terminal birth": {
+        "round": 3,
+        "total loose beforehand": 3,
+        "terminal parents": 3,
+        "terminal kind": "join",
+        "terminal fresh": 0,
+        "single birth takes every loose distinction": true,
+        "full births at that round": 6,
+        "full fresh counts at matching parent descent": [
+          1
+        ],
+        "full birth count at matching parent descent": 1,
+        "full implied at that round": false
+      },
+      "test": "H1 within t + 1 steps agrees",
+      "item": null,
+      "law": "parity",
+      "population": "census6",
+      "start index": 30834
+    },
+    {
+      "reader": 4,
+      "comparison horizon": 10,
+      "live start knots in region": [
+        0,
+        2,
+        4
+      ],
+      "first different round": 3,
+      "first reading differs there": true,
+      "reading with parents differs there": true,
+      "region end": "closed",
+      "full end at study horizon": "rounds",
+      "terminal birth": {
+        "round": 3,
+        "total loose beforehand": 3,
+        "terminal parents": 3,
+        "terminal kind": "join",
+        "terminal fresh": 0,
+        "single birth takes every loose distinction": true,
+        "full births at that round": 6,
+        "full fresh counts at matching parent descent": [
+          1
+        ],
+        "full birth count at matching parent descent": 1,
+        "full implied at that round": false
+      },
+      "test": "H2",
+      "item": "admission 1",
+      "law": "parity",
+      "population": "census6",
+      "start index": 30834
+    },
+    {
+      "reader": 4,
+      "comparison horizon": 3,
+      "live start knots in region": [
+        3,
+        4
+      ],
+      "first different round": 3,
+      "first reading differs there": true,
+      "reading with parents differs there": true,
+      "region end": "closed",
+      "full end at study horizon": "rounds",
+      "terminal birth": {
+        "round": 3,
+        "total loose beforehand": 3,
+        "terminal parents": 3,
+        "terminal kind": "join",
+        "terminal fresh": 0,
+        "single birth takes every loose distinction": true,
+        "full births at that round": 6,
+        "full fresh counts at matching parent descent": [
+          1
+        ],
+        "full birth count at matching parent descent": 1,
+        "full implied at that round": false
+      },
+      "test": "H1 within t + 1 steps agrees",
+      "item": null,
+      "law": "parity",
+      "population": "census6",
+      "start index": 11699
+    },
+    {
+      "reader": 4,
+      "comparison horizon": 4,
+      "live start knots in region": [
+        3,
+        4
+      ],
+      "first different round": 3,
+      "first reading differs there": true,
+      "reading with parents differs there": true,
+      "region end": "closed",
+      "full end at study horizon": "rounds",
+      "terminal birth": {
+        "round": 3,
+        "total loose beforehand": 3,
+        "terminal parents": 3,
+        "terminal kind": "join",
+        "terminal fresh": 0,
+        "single birth takes every loose distinction": true,
+        "full births at that round": 6,
+        "full fresh counts at matching parent descent": [
+          1
+        ],
+        "full birth count at matching parent descent": 1,
+        "full implied at that round": false
+      },
+      "test": "H1 within t + 1 steps agrees",
+      "item": null,
+      "law": "parity",
+      "population": "census6",
+      "start index": 11699
+    },
+    {
+      "reader": 4,
+      "comparison horizon": 5,
+      "live start knots in region": [
+        3,
+        4
+      ],
+      "first different round": 3,
+      "first reading differs there": true,
+      "reading with parents differs there": true,
+      "region end": "closed",
+      "full end at study horizon": "rounds",
+      "terminal birth": {
+        "round": 3,
+        "total loose beforehand": 3,
+        "terminal parents": 3,
+        "terminal kind": "join",
+        "terminal fresh": 0,
+        "single birth takes every loose distinction": true,
+        "full births at that round": 6,
+        "full fresh counts at matching parent descent": [
+          1
+        ],
+        "full birth count at matching parent descent": 1,
+        "full implied at that round": false
+      },
+      "test": "H1 within t + 1 steps agrees",
+      "item": null,
+      "law": "parity",
+      "population": "census6",
+      "start index": 11699
+    },
+    {
+      "reader": 4,
+      "comparison horizon": 6,
+      "live start knots in region": [
+        3,
+        4
+      ],
+      "first different round": 3,
+      "first reading differs there": true,
+      "reading with parents differs there": true,
+      "region end": "closed",
+      "full end at study horizon": "rounds",
+      "terminal birth": {
+        "round": 3,
+        "total loose beforehand": 3,
+        "terminal parents": 3,
+        "terminal kind": "join",
+        "terminal fresh": 0,
+        "single birth takes every loose distinction": true,
+        "full births at that round": 6,
+        "full fresh counts at matching parent descent": [
+          1
+        ],
+        "full birth count at matching parent descent": 1,
+        "full implied at that round": false
+      },
+      "test": "H1 within t + 1 steps agrees",
+      "item": null,
+      "law": "parity",
+      "population": "census6",
+      "start index": 11699
+    },
+    {
+      "reader": 4,
+      "comparison horizon": 7,
+      "live start knots in region": [
+        3,
+        4
+      ],
+      "first different round": 3,
+      "first reading differs there": true,
+      "reading with parents differs there": true,
+      "region end": "closed",
+      "full end at study horizon": "rounds",
+      "terminal birth": {
+        "round": 3,
+        "total loose beforehand": 3,
+        "terminal parents": 3,
+        "terminal kind": "join",
+        "terminal fresh": 0,
+        "single birth takes every loose distinction": true,
+        "full births at that round": 6,
+        "full fresh counts at matching parent descent": [
+          1
+        ],
+        "full birth count at matching parent descent": 1,
+        "full implied at that round": false
+      },
+      "test": "H1 within t + 1 steps agrees",
+      "item": null,
+      "law": "parity",
+      "population": "census6",
+      "start index": 11699
+    },
+    {
+      "reader": 4,
+      "comparison horizon": 8,
+      "live start knots in region": [
+        3,
+        4
+      ],
+      "first different round": 3,
+      "first reading differs there": true,
+      "reading with parents differs there": true,
+      "region end": "closed",
+      "full end at study horizon": "rounds",
+      "terminal birth": {
+        "round": 3,
+        "total loose beforehand": 3,
+        "terminal parents": 3,
+        "terminal kind": "join",
+        "terminal fresh": 0,
+        "single birth takes every loose distinction": true,
+        "full births at that round": 6,
+        "full fresh counts at matching parent descent": [
+          1
+        ],
+        "full birth count at matching parent descent": 1,
+        "full implied at that round": false
+      },
+      "test": "H1 within t + 1 steps agrees",
+      "item": null,
+      "law": "parity",
+      "population": "census6",
+      "start index": 11699
+    },
+    {
+      "reader": 4,
+      "comparison horizon": 9,
+      "live start knots in region": [
+        3,
+        4
+      ],
+      "first different round": 3,
+      "first reading differs there": true,
+      "reading with parents differs there": true,
+      "region end": "closed",
+      "full end at study horizon": "rounds",
+      "terminal birth": {
+        "round": 3,
+        "total loose beforehand": 3,
+        "terminal parents": 3,
+        "terminal kind": "join",
+        "terminal fresh": 0,
+        "single birth takes every loose distinction": true,
+        "full births at that round": 6,
+        "full fresh counts at matching parent descent": [
+          1
+        ],
+        "full birth count at matching parent descent": 1,
+        "full implied at that round": false
+      },
+      "test": "H1 within t + 1 steps agrees",
+      "item": null,
+      "law": "parity",
+      "population": "census6",
+      "start index": 11699
+    },
+    {
+      "reader": 4,
+      "comparison horizon": 10,
+      "live start knots in region": [
+        3,
+        4
+      ],
+      "first different round": 3,
+      "first reading differs there": true,
+      "reading with parents differs there": true,
+      "region end": "closed",
+      "full end at study horizon": "rounds",
+      "terminal birth": {
+        "round": 3,
+        "total loose beforehand": 3,
+        "terminal parents": 3,
+        "terminal kind": "join",
+        "terminal fresh": 0,
+        "single birth takes every loose distinction": true,
+        "full births at that round": 6,
+        "full fresh counts at matching parent descent": [
+          1
+        ],
+        "full birth count at matching parent descent": 1,
+        "full implied at that round": false
+      },
+      "test": "H1 within t + 1 steps agrees",
+      "item": null,
+      "law": "parity",
+      "population": "census6",
+      "start index": 11699
+    },
+    {
+      "reader": 4,
+      "comparison horizon": 10,
+      "live start knots in region": [
+        3,
+        4
+      ],
+      "first different round": 3,
+      "first reading differs there": true,
+      "reading with parents differs there": true,
+      "region end": "closed",
+      "full end at study horizon": "rounds",
+      "terminal birth": {
+        "round": 3,
+        "total loose beforehand": 3,
+        "terminal parents": 3,
+        "terminal kind": "join",
+        "terminal fresh": 0,
+        "single birth takes every loose distinction": true,
+        "full births at that round": 6,
+        "full fresh counts at matching parent descent": [
+          1
+        ],
+        "full birth count at matching parent descent": 1,
+        "full implied at that round": false
+      },
+      "test": "H2",
+      "item": "admission 1",
+      "law": "parity",
+      "population": "census6",
+      "start index": 11699
+    },
+    {
+      "reader": 0,
+      "comparison horizon": 3,
+      "live start knots in region": [
+        0
+      ],
+      "first different round": 3,
+      "first reading differs there": true,
+      "reading with parents differs there": true,
+      "region end": "closed",
+      "full end at study horizon": "rounds",
+      "terminal birth": {
+        "round": 3,
+        "total loose beforehand": 3,
+        "terminal parents": 3,
+        "terminal kind": "join",
+        "terminal fresh": 0,
+        "single birth takes every loose distinction": true,
+        "full births at that round": 2,
+        "full fresh counts at matching parent descent": [
+          1
+        ],
+        "full birth count at matching parent descent": 1,
+        "full implied at that round": false
+      },
+      "test": "H1 within t + 1 steps agrees",
+      "item": null,
+      "law": "parity",
+      "population": "census6",
+      "start index": 49914
+    },
+    {
+      "reader": 0,
+      "comparison horizon": 4,
+      "live start knots in region": [
+        0
+      ],
+      "first different round": 3,
+      "first reading differs there": true,
+      "reading with parents differs there": true,
+      "region end": "closed",
+      "full end at study horizon": "rounds",
+      "terminal birth": {
+        "round": 3,
+        "total loose beforehand": 3,
+        "terminal parents": 3,
+        "terminal kind": "join",
+        "terminal fresh": 0,
+        "single birth takes every loose distinction": true,
+        "full births at that round": 2,
+        "full fresh counts at matching parent descent": [
+          1
+        ],
+        "full birth count at matching parent descent": 1,
+        "full implied at that round": false
+      },
+      "test": "H1 within t + 1 steps agrees",
+      "item": null,
+      "law": "parity",
+      "population": "census6",
+      "start index": 49914
+    },
+    {
+      "reader": 0,
+      "comparison horizon": 5,
+      "live start knots in region": [
+        0
+      ],
+      "first different round": 3,
+      "first reading differs there": true,
+      "reading with parents differs there": true,
+      "region end": "closed",
+      "full end at study horizon": "rounds",
+      "terminal birth": {
+        "round": 3,
+        "total loose beforehand": 3,
+        "terminal parents": 3,
+        "terminal kind": "join",
+        "terminal fresh": 0,
+        "single birth takes every loose distinction": true,
+        "full births at that round": 2,
+        "full fresh counts at matching parent descent": [
+          1
+        ],
+        "full birth count at matching parent descent": 1,
+        "full implied at that round": false
+      },
+      "test": "H1 within t + 1 steps agrees",
+      "item": null,
+      "law": "parity",
+      "population": "census6",
+      "start index": 49914
+    },
+    {
+      "reader": 0,
+      "comparison horizon": 6,
+      "live start knots in region": [
+        0
+      ],
+      "first different round": 3,
+      "first reading differs there": true,
+      "reading with parents differs there": true,
+      "region end": "closed",
+      "full end at study horizon": "rounds",
+      "terminal birth": {
+        "round": 3,
+        "total loose beforehand": 3,
+        "terminal parents": 3,
+        "terminal kind": "join",
+        "terminal fresh": 0,
+        "single birth takes every loose distinction": true,
+        "full births at that round": 2,
+        "full fresh counts at matching parent descent": [
+          1
+        ],
+        "full birth count at matching parent descent": 1,
+        "full implied at that round": false
+      },
+      "test": "H1 within t + 1 steps agrees",
+      "item": null,
+      "law": "parity",
+      "population": "census6",
+      "start index": 49914
+    },
+    {
+      "reader": 0,
+      "comparison horizon": 7,
+      "live start knots in region": [
+        0
+      ],
+      "first different round": 3,
+      "first reading differs there": true,
+      "reading with parents differs there": true,
+      "region end": "closed",
+      "full end at study horizon": "rounds",
+      "terminal birth": {
+        "round": 3,
+        "total loose beforehand": 3,
+        "terminal parents": 3,
+        "terminal kind": "join",
+        "terminal fresh": 0,
+        "single birth takes every loose distinction": true,
+        "full births at that round": 2,
+        "full fresh counts at matching parent descent": [
+          1
+        ],
+        "full birth count at matching parent descent": 1,
+        "full implied at that round": false
+      },
+      "test": "H1 within t + 1 steps agrees",
+      "item": null,
+      "law": "parity",
+      "population": "census6",
+      "start index": 49914
+    },
+    {
+      "reader": 0,
+      "comparison horizon": 8,
+      "live start knots in region": [
+        0
+      ],
+      "first different round": 3,
+      "first reading differs there": true,
+      "reading with parents differs there": true,
+      "region end": "closed",
+      "full end at study horizon": "rounds",
+      "terminal birth": {
+        "round": 3,
+        "total loose beforehand": 3,
+        "terminal parents": 3,
+        "terminal kind": "join",
+        "terminal fresh": 0,
+        "single birth takes every loose distinction": true,
+        "full births at that round": 2,
+        "full fresh counts at matching parent descent": [
+          1
+        ],
+        "full birth count at matching parent descent": 1,
+        "full implied at that round": false
+      },
+      "test": "H1 within t + 1 steps agrees",
+      "item": null,
+      "law": "parity",
+      "population": "census6",
+      "start index": 49914
+    },
+    {
+      "reader": 0,
+      "comparison horizon": 9,
+      "live start knots in region": [
+        0
+      ],
+      "first different round": 3,
+      "first reading differs there": true,
+      "reading with parents differs there": true,
+      "region end": "closed",
+      "full end at study horizon": "rounds",
+      "terminal birth": {
+        "round": 3,
+        "total loose beforehand": 3,
+        "terminal parents": 3,
+        "terminal kind": "join",
+        "terminal fresh": 0,
+        "single birth takes every loose distinction": true,
+        "full births at that round": 2,
+        "full fresh counts at matching parent descent": [
+          1
+        ],
+        "full birth count at matching parent descent": 1,
+        "full implied at that round": false
+      },
+      "test": "H1 within t + 1 steps agrees",
+      "item": null,
+      "law": "parity",
+      "population": "census6",
+      "start index": 49914
+    },
+    {
+      "reader": 0,
+      "comparison horizon": 10,
+      "live start knots in region": [
+        0
+      ],
+      "first different round": 3,
+      "first reading differs there": true,
+      "reading with parents differs there": true,
+      "region end": "closed",
+      "full end at study horizon": "rounds",
+      "terminal birth": {
+        "round": 3,
+        "total loose beforehand": 3,
+        "terminal parents": 3,
+        "terminal kind": "join",
+        "terminal fresh": 0,
+        "single birth takes every loose distinction": true,
+        "full births at that round": 2,
+        "full fresh counts at matching parent descent": [
+          1
+        ],
+        "full birth count at matching parent descent": 1,
+        "full implied at that round": false
+      },
+      "test": "H1 within t + 1 steps agrees",
+      "item": null,
+      "law": "parity",
+      "population": "census6",
+      "start index": 49914
+    },
+    {
+      "reader": 3,
+      "comparison horizon": 3,
+      "live start knots in region": [
+        3,
+        4
+      ],
+      "first different round": 3,
+      "first reading differs there": true,
+      "reading with parents differs there": true,
+      "region end": "closed",
+      "full end at study horizon": "rounds",
+      "terminal birth": {
+        "round": 3,
+        "total loose beforehand": 3,
+        "terminal parents": 3,
+        "terminal kind": "join",
+        "terminal fresh": 0,
+        "single birth takes every loose distinction": true,
+        "full births at that round": 2,
+        "full fresh counts at matching parent descent": [
+          1
+        ],
+        "full birth count at matching parent descent": 1,
+        "full implied at that round": false
+      },
+      "test": "H1 within t + 1 steps agrees",
+      "item": null,
+      "law": "parity",
+      "population": "census6",
+      "start index": 11861
+    },
+    {
+      "reader": 3,
+      "comparison horizon": 4,
+      "live start knots in region": [
+        3,
+        4
+      ],
+      "first different round": 3,
+      "first reading differs there": true,
+      "reading with parents differs there": true,
+      "region end": "closed",
+      "full end at study horizon": "rounds",
+      "terminal birth": {
+        "round": 3,
+        "total loose beforehand": 3,
+        "terminal parents": 3,
+        "terminal kind": "join",
+        "terminal fresh": 0,
+        "single birth takes every loose distinction": true,
+        "full births at that round": 2,
+        "full fresh counts at matching parent descent": [
+          1
+        ],
+        "full birth count at matching parent descent": 1,
+        "full implied at that round": false
+      },
+      "test": "H1 within t + 1 steps agrees",
+      "item": null,
+      "law": "parity",
+      "population": "census6",
+      "start index": 11861
+    },
+    {
+      "reader": 3,
+      "comparison horizon": 5,
+      "live start knots in region": [
+        3,
+        4
+      ],
+      "first different round": 3,
+      "first reading differs there": true,
+      "reading with parents differs there": true,
+      "region end": "closed",
+      "full end at study horizon": "rounds",
+      "terminal birth": {
+        "round": 3,
+        "total loose beforehand": 3,
+        "terminal parents": 3,
+        "terminal kind": "join",
+        "terminal fresh": 0,
+        "single birth takes every loose distinction": true,
+        "full births at that round": 2,
+        "full fresh counts at matching parent descent": [
+          1
+        ],
+        "full birth count at matching parent descent": 1,
+        "full implied at that round": false
+      },
+      "test": "H1 within t + 1 steps agrees",
+      "item": null,
+      "law": "parity",
+      "population": "census6",
+      "start index": 11861
+    },
+    {
+      "reader": 3,
+      "comparison horizon": 6,
+      "live start knots in region": [
+        3,
+        4
+      ],
+      "first different round": 3,
+      "first reading differs there": true,
+      "reading with parents differs there": true,
+      "region end": "closed",
+      "full end at study horizon": "rounds",
+      "terminal birth": {
+        "round": 3,
+        "total loose beforehand": 3,
+        "terminal parents": 3,
+        "terminal kind": "join",
+        "terminal fresh": 0,
+        "single birth takes every loose distinction": true,
+        "full births at that round": 2,
+        "full fresh counts at matching parent descent": [
+          1
+        ],
+        "full birth count at matching parent descent": 1,
+        "full implied at that round": false
+      },
+      "test": "H1 within t + 1 steps agrees",
+      "item": null,
+      "law": "parity",
+      "population": "census6",
+      "start index": 11861
+    },
+    {
+      "reader": 3,
+      "comparison horizon": 7,
+      "live start knots in region": [
+        3,
+        4
+      ],
+      "first different round": 3,
+      "first reading differs there": true,
+      "reading with parents differs there": true,
+      "region end": "closed",
+      "full end at study horizon": "rounds",
+      "terminal birth": {
+        "round": 3,
+        "total loose beforehand": 3,
+        "terminal parents": 3,
+        "terminal kind": "join",
+        "terminal fresh": 0,
+        "single birth takes every loose distinction": true,
+        "full births at that round": 2,
+        "full fresh counts at matching parent descent": [
+          1
+        ],
+        "full birth count at matching parent descent": 1,
+        "full implied at that round": false
+      },
+      "test": "H1 within t + 1 steps agrees",
+      "item": null,
+      "law": "parity",
+      "population": "census6",
+      "start index": 11861
+    },
+    {
+      "reader": 3,
+      "comparison horizon": 8,
+      "live start knots in region": [
+        3,
+        4
+      ],
+      "first different round": 3,
+      "first reading differs there": true,
+      "reading with parents differs there": true,
+      "region end": "closed",
+      "full end at study horizon": "rounds",
+      "terminal birth": {
+        "round": 3,
+        "total loose beforehand": 3,
+        "terminal parents": 3,
+        "terminal kind": "join",
+        "terminal fresh": 0,
+        "single birth takes every loose distinction": true,
+        "full births at that round": 2,
+        "full fresh counts at matching parent descent": [
+          1
+        ],
+        "full birth count at matching parent descent": 1,
+        "full implied at that round": false
+      },
+      "test": "H1 within t + 1 steps agrees",
+      "item": null,
+      "law": "parity",
+      "population": "census6",
+      "start index": 11861
+    },
+    {
+      "reader": 3,
+      "comparison horizon": 9,
+      "live start knots in region": [
+        3,
+        4
+      ],
+      "first different round": 3,
+      "first reading differs there": true,
+      "reading with parents differs there": true,
+      "region end": "closed",
+      "full end at study horizon": "rounds",
+      "terminal birth": {
+        "round": 3,
+        "total loose beforehand": 3,
+        "terminal parents": 3,
+        "terminal kind": "join",
+        "terminal fresh": 0,
+        "single birth takes every loose distinction": true,
+        "full births at that round": 2,
+        "full fresh counts at matching parent descent": [
+          1
+        ],
+        "full birth count at matching parent descent": 1,
+        "full implied at that round": false
+      },
+      "test": "H1 within t + 1 steps agrees",
+      "item": null,
+      "law": "parity",
+      "population": "census6",
+      "start index": 11861
+    },
+    {
+      "reader": 3,
+      "comparison horizon": 10,
+      "live start knots in region": [
+        3,
+        4
+      ],
+      "first different round": 3,
+      "first reading differs there": true,
+      "reading with parents differs there": true,
+      "region end": "closed",
+      "full end at study horizon": "rounds",
+      "terminal birth": {
+        "round": 3,
+        "total loose beforehand": 3,
+        "terminal parents": 3,
+        "terminal kind": "join",
+        "terminal fresh": 0,
+        "single birth takes every loose distinction": true,
+        "full births at that round": 2,
+        "full fresh counts at matching parent descent": [
+          1
+        ],
+        "full birth count at matching parent descent": 1,
+        "full implied at that round": false
+      },
+      "test": "H1 within t + 1 steps agrees",
+      "item": null,
+      "law": "parity",
+      "population": "census6",
+      "start index": 11861
+    },
+    {
+      "reader": 3,
+      "comparison horizon": 7,
+      "live start knots in region": [
+        3,
+        4
+      ],
+      "first different round": 3,
+      "first reading differs there": true,
+      "reading with parents differs there": true,
+      "region end": "closed",
+      "full end at study horizon": "rounds",
+      "terminal birth": {
+        "round": 3,
+        "total loose beforehand": 3,
+        "terminal parents": 3,
+        "terminal kind": "join",
+        "terminal fresh": 0,
+        "single birth takes every loose distinction": true,
+        "full births at that round": 2,
+        "full fresh counts at matching parent descent": [
+          1
+        ],
+        "full birth count at matching parent descent": 1,
+        "full implied at that round": false
+      },
+      "test": "H2",
+      "item": "admission 1",
+      "law": "parity",
+      "population": "census6",
+      "start index": 11861
+    }
+  ],
+  "not-all-equal misses within t steps": [
+    {
+      "start index": 4,
+      "population": "treeplus25",
+      "reader": 22,
+      "round": 1,
+      "within t": [
+        0,
+        10,
+        22
+      ],
+      "first different round": 1,
+      "reader birth totals through t, full": [
+        1
+      ],
+      "reader birth totals through t, region": [
+        1
+      ],
+      "counts by parents alone agree through t": true,
+      "counts by fresh distinctions alone agree through t": false,
+      "first reading differs there": true,
+      "first-round-only reading agrees": false,
+      "first reading at first difference": {
+        "full only": [
+          [
+            [
+              "join",
+              3,
+              5,
+              8
+            ],
+            1
+          ]
+        ],
+        "region only": [
+          [
+            [
+              "join",
+              3,
+              7,
+              10
+            ],
+            1
+          ]
+        ]
+      },
+      "reading including parents at first difference": {
+        "full only": [
+          [
+            [
+              [
+                "join",
+                3,
+                5,
+                8
+              ],
+              [
+                [
+                  "start",
+                  0,
+                  0,
+                  4
+                ],
+                [
+                  "start",
+                  0,
+                  0,
+                  7
+                ],
+                [
+                  "start",
+                  0,
+                  0,
+                  9
+                ]
+              ]
+            ],
+            1
+          ]
+        ],
+        "region only": [
+          [
+            [
+              [
+                "join",
+                3,
+                7,
+                10
+              ],
+              [
+                [
+                  "start",
+                  0,
+                  0,
+                  4
+                ],
+                [
+                  "start",
+                  0,
+                  0,
+                  7
+                ],
+                [
+                  "start",
+                  0,
+                  0,
+                  9
+                ]
+              ]
+            ],
+            1
+          ]
+        ]
+      },
+      "full first-round groups of three or more cut by this region": [],
+      "outside knots joinable to two or more inside members of a full group of three or more": [
+        {
+          "full group": [
+            0,
+            10,
+            22
+          ],
+          "outside knot": 2,
+          "joinable inside members": [
+            0,
+            10
+          ],
+          "outside knot in this group": false
+        },
+        {
+          "full group": [
+            0,
+            10,
+            22
+          ],
+          "outside knot": 17,
+          "joinable inside members": [
+            0,
+            10
+          ],
+          "outside knot in this group": false
+        }
+      ],
+      "fewer steps": [
+        {
+          "steps": 0,
+          "end": "rounds",
+          "agrees": false
+        }
+      ],
+      "first reader births in full": [
+        [
+          [
+            0,
+            10,
+            22
+          ],
+          5
+        ]
+      ],
+      "first reader births in region": [
+        [
+          [
+            0,
+            10,
+            22
+          ],
+          7
+        ]
+      ]
+    },
+    {
+      "start index": 9,
+      "population": "treeplus25",
+      "reader": 21,
+      "round": 2,
+      "within t": [
+        1,
+        4,
+        6,
+        13,
+        14,
+        15,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24
+      ],
+      "first different round": 2,
+      "reader birth totals through t, full": [
+        5,
+        18
+      ],
+      "reader birth totals through t, region": [
+        5,
+        18
+      ],
+      "counts by parents alone agree through t": true,
+      "counts by fresh distinctions alone agree through t": false,
+      "first reading differs there": true,
+      "first-round-only reading agrees": true,
+      "first reading at first difference": {
+        "full only": [
+          [
+            [
+              "join",
+              2,
+              11,
+              13
+            ],
+            1
+          ]
+        ],
+        "region only": [
+          [
+            [
+              "join",
+              2,
+              13,
+              15
+            ],
+            1
+          ]
+        ]
+      },
+      "reading including parents at first difference": {
+        "full only": [
+          [
+            [
+              [
+                "join",
+                2,
+                11,
+                13
+              ],
+              [
+                [
+                  "join",
+                  2,
+                  8,
+                  10
+                ],
+                [
+                  "join",
+                  3,
+                  9,
+                  12
+                ]
+              ]
+            ],
+            1
+          ]
+        ],
+        "region only": [
+          [
+            [
+              [
+                "join",
+                2,
+                13,
+                15
+              ],
+              [
+                [
+                  "join",
+                  2,
+                  8,
+                  10
+                ],
+                [
+                  "join",
+                  3,
+                  11,
+                  14
+                ]
+              ]
+            ],
+            1
+          ]
+        ]
+      },
+      "full first-round groups of three or more cut by this region": [],
+      "outside knots joinable to two or more inside members of a full group of three or more": [
+        {
+          "full group": [
+            18,
+            20,
+            24
+          ],
+          "outside knot": 7,
+          "joinable inside members": [
+            20,
+            24
+          ],
+          "outside knot in this group": false
+        },
+        {
+          "full group": [
+            18,
+            20,
+            24
+          ],
+          "outside knot": 11,
+          "joinable inside members": [
+            20,
+            24
+          ],
+          "outside knot in this group": false
+        }
+      ],
+      "fewer steps": [
+        {
+          "steps": 0,
+          "end": "rounds",
+          "agrees": false
+        },
+        {
+          "steps": 1,
+          "end": "rounds",
+          "agrees": false
+        }
+      ]
+    },
+    {
+      "start index": 16,
+      "population": "treeplus25",
+      "reader": 13,
+      "round": 1,
+      "within t": [
+        0,
+        4,
+        13,
+        22
+      ],
+      "first different round": 1,
+      "reader birth totals through t, full": [
+        2
+      ],
+      "reader birth totals through t, region": [
+        2
+      ],
+      "counts by parents alone agree through t": true,
+      "counts by fresh distinctions alone agree through t": false,
+      "first reading differs there": true,
+      "first-round-only reading agrees": false,
+      "first reading at first difference": {
+        "full only": [
+          [
+            [
+              "join",
+              3,
+              4,
+              7
+            ],
+            1
+          ]
+        ],
+        "region only": [
+          [
+            [
+              "join",
+              3,
+              7,
+              10
+            ],
+            1
+          ]
+        ]
+      },
+      "reading including parents at first difference": {
+        "full only": [
+          [
+            [
+              [
+                "join",
+                3,
+                4,
+                7
+              ],
+              [
+                [
+                  "start",
+                  0,
+                  0,
+                  6
+                ],
+                [
+                  "start",
+                  0,
+                  0,
+                  7
+                ],
+                [
+                  "start",
+                  0,
+                  0,
+                  8
+                ]
+              ]
+            ],
+            1
+          ]
+        ],
+        "region only": [
+          [
+            [
+              [
+                "join",
+                3,
+                7,
+                10
+              ],
+              [
+                [
+                  "start",
+                  0,
+                  0,
+                  6
+                ],
+                [
+                  "start",
+                  0,
+                  0,
+                  7
+                ],
+                [
+                  "start",
+                  0,
+                  0,
+                  8
+                ]
+              ]
+            ],
+            1
+          ]
+        ]
+      },
+      "full first-round groups of three or more cut by this region": [],
+      "outside knots joinable to two or more inside members of a full group of three or more": [
+        {
+          "full group": [
+            0,
+            13,
+            22
+          ],
+          "outside knot": 6,
+          "joinable inside members": [
+            0,
+            22
+          ],
+          "outside knot in this group": false
+        },
+        {
+          "full group": [
+            0,
+            13,
+            22
+          ],
+          "outside knot": 10,
+          "joinable inside members": [
+            0,
+            22
+          ],
+          "outside knot in this group": false
+        },
+        {
+          "full group": [
+            0,
+            13,
+            22
+          ],
+          "outside knot": 11,
+          "joinable inside members": [
+            0,
+            22
+          ],
+          "outside knot in this group": false
+        }
+      ],
+      "fewer steps": [
+        {
+          "steps": 0,
+          "end": "rounds",
+          "agrees": false
+        }
+      ],
+      "first reader births in full": [
+        [
+          [
+            0,
+            13,
+            22
+          ],
+          4
+        ],
+        [
+          [
+            4,
+            13
+          ],
+          2
+        ]
+      ],
+      "first reader births in region": [
+        [
+          [
+            0,
+            13,
+            22
+          ],
+          7
+        ],
+        [
+          [
+            4,
+            13
+          ],
+          2
+        ]
+      ]
+    },
+    {
+      "start index": 35,
+      "population": "treeplus25",
+      "reader": 20,
+      "round": 2,
+      "within t": [
+        2,
+        3,
+        4,
+        7,
+        10,
+        15,
+        16,
+        17,
+        20,
+        24
+      ],
+      "first different round": 2,
+      "reader birth totals through t, full": [
+        3,
+        9
+      ],
+      "reader birth totals through t, region": [
+        3,
+        9
+      ],
+      "counts by parents alone agree through t": true,
+      "counts by fresh distinctions alone agree through t": false,
+      "first reading differs there": true,
+      "first-round-only reading agrees": true,
+      "first reading at first difference": {
+        "full only": [
+          [
+            [
+              "join",
+              2,
+              10,
+              12
+            ],
+            1
+          ]
+        ],
+        "region only": [
+          [
+            [
+              "join",
+              2,
+              12,
+              14
+            ],
+            1
+          ]
+        ]
+      },
+      "reading including parents at first difference": {
+        "full only": [
+          [
+            [
+              [
+                "join",
+                2,
+                10,
+                12
+              ],
+              [
+                [
+                  "join",
+                  2,
+                  7,
+                  9
+                ],
+                [
+                  "join",
+                  3,
+                  10,
+                  13
+                ]
+              ]
+            ],
+            1
+          ]
+        ],
+        "region only": [
+          [
+            [
+              [
+                "join",
+                2,
+                12,
+                14
+              ],
+              [
+                [
+                  "join",
+                  2,
+                  7,
+                  9
+                ],
+                [
+                  "join",
+                  3,
+                  12,
+                  15
+                ]
+              ]
+            ],
+            1
+          ]
+        ]
+      },
+      "full first-round groups of three or more cut by this region": [],
+      "outside knots joinable to two or more inside members of a full group of three or more": [
+        {
+          "full group": [
+            2,
+            15,
+            24
+          ],
+          "outside knot": 11,
+          "joinable inside members": [
+            2,
+            15
+          ],
+          "outside knot in this group": false
+        },
+        {
+          "full group": [
+            2,
+            15,
+            24
+          ],
+          "outside knot": 23,
+          "joinable inside members": [
+            2,
+            15
+          ],
+          "outside knot in this group": false
+        }
+      ],
+      "fewer steps": [
+        {
+          "steps": 0,
+          "end": "rounds",
+          "agrees": false
+        },
+        {
+          "steps": 1,
+          "end": "rounds",
+          "agrees": false
+        }
+      ]
+    },
+    {
+      "start index": 37,
+      "population": "treeplus25",
+      "reader": 4,
+      "round": 1,
+      "within t": [
+        4,
+        8,
+        12,
+        17,
+        21,
+        24
+      ],
+      "first different round": 1,
+      "reader birth totals through t, full": [
+        4
+      ],
+      "reader birth totals through t, region": [
+        4
+      ],
+      "counts by parents alone agree through t": true,
+      "counts by fresh distinctions alone agree through t": false,
+      "first reading differs there": true,
+      "first-round-only reading agrees": false,
+      "first reading at first difference": {
+        "full only": [
+          [
+            [
+              "join",
+              3,
+              6,
+              9
+            ],
+            1
+          ]
+        ],
+        "region only": [
+          [
+            [
+              "join",
+              3,
+              9,
+              12
+            ],
+            1
+          ]
+        ]
+      },
+      "reading including parents at first difference": {
+        "full only": [
+          [
+            [
+              [
+                "join",
+                3,
+                6,
+                9
+              ],
+              [
+                [
+                  "start",
+                  0,
+                  0,
+                  6
+                ],
+                [
+                  "start",
+                  0,
+                  0,
+                  7
+                ],
+                [
+                  "start",
+                  0,
+                  0,
+                  8
+                ]
+              ]
+            ],
+            1
+          ]
+        ],
+        "region only": [
+          [
+            [
+              [
+                "join",
+                3,
+                9,
+                12
+              ],
+              [
+                [
+                  "start",
+                  0,
+                  0,
+                  6
+                ],
+                [
+                  "start",
+                  0,
+                  0,
+                  7
+                ],
+                [
+                  "start",
+                  0,
+                  0,
+                  8
+                ]
+              ]
+            ],
+            1
+          ]
+        ]
+      },
+      "full first-round groups of three or more cut by this region": [],
+      "outside knots joinable to two or more inside members of a full group of three or more": [
+        {
+          "full group": [
+            4,
+            12,
+            24
+          ],
+          "outside knot": 0,
+          "joinable inside members": [
+            12,
+            24
+          ],
+          "outside knot in this group": false
+        },
+        {
+          "full group": [
+            4,
+            12,
+            24
+          ],
+          "outside knot": 2,
+          "joinable inside members": [
+            12,
+            24
+          ],
+          "outside knot in this group": false
+        },
+        {
+          "full group": [
+            4,
+            12,
+            24
+          ],
+          "outside knot": 14,
+          "joinable inside members": [
+            12,
+            24
+          ],
+          "outside knot in this group": false
+        }
+      ],
+      "fewer steps": [
+        {
+          "steps": 0,
+          "end": "rounds",
+          "agrees": false
+        }
+      ],
+      "first reader births in full": [
+        [
+          [
+            4,
+            8
+          ],
+          3
+        ],
+        [
+          [
+            4,
+            12,
+            24
+          ],
+          6
+        ],
+        [
+          [
+            4,
+            17
+          ],
+          4
+        ],
+        [
+          [
+            4,
+            21
+          ],
+          5
+        ]
+      ],
+      "first reader births in region": [
+        [
+          [
+            4,
+            8
+          ],
+          3
+        ],
+        [
+          [
+            4,
+            12,
+            24
+          ],
+          9
+        ],
+        [
+          [
+            4,
+            17
+          ],
+          4
+        ],
+        [
+          [
+            4,
+            21
+          ],
+          5
+        ]
+      ]
+    },
+    {
+      "start index": 44,
+      "population": "treeplus25",
+      "reader": 14,
+      "round": 1,
+      "within t": [
+        2,
+        6,
+        7,
+        10,
+        14,
+        17,
+        18,
+        24
+      ],
+      "first different round": 1,
+      "reader birth totals through t, full": [
+        6
+      ],
+      "reader birth totals through t, region": [
+        6
+      ],
+      "counts by parents alone agree through t": true,
+      "counts by fresh distinctions alone agree through t": false,
+      "first reading differs there": true,
+      "first-round-only reading agrees": false,
+      "first reading at first difference": {
+        "full only": [
+          [
+            [
+              "join",
+              3,
+              10,
+              13
+            ],
+            1
+          ]
+        ],
+        "region only": [
+          [
+            [
+              "join",
+              3,
+              12,
+              15
+            ],
+            1
+          ]
+        ]
+      },
+      "reading including parents at first difference": {
+        "full only": [
+          [
+            [
+              [
+                "join",
+                3,
+                10,
+                13
+              ],
+              [
+                [
+                  "start",
+                  0,
+                  0,
+                  9
+                ],
+                [
+                  "start",
+                  0,
+                  0,
+                  10
+                ],
+                [
+                  "start",
+                  0,
+                  0,
+                  10
+                ]
+              ]
+            ],
+            1
+          ]
+        ],
+        "region only": [
+          [
+            [
+              [
+                "join",
+                3,
+                12,
+                15
+              ],
+              [
+                [
+                  "start",
+                  0,
+                  0,
+                  9
+                ],
+                [
+                  "start",
+                  0,
+                  0,
+                  10
+                ],
+                [
+                  "start",
+                  0,
+                  0,
+                  10
+                ]
+              ]
+            ],
+            1
+          ]
+        ]
+      },
+      "full first-round groups of three or more cut by this region": [],
+      "outside knots joinable to two or more inside members of a full group of three or more": [
+        {
+          "full group": [
+            6,
+            10,
+            14
+          ],
+          "outside knot": 9,
+          "joinable inside members": [
+            6,
+            10
+          ],
+          "outside knot in this group": false
+        },
+        {
+          "full group": [
+            6,
+            10,
+            14
+          ],
+          "outside knot": 22,
+          "joinable inside members": [
+            6,
+            10
+          ],
+          "outside knot in this group": false
+        }
+      ],
+      "fewer steps": [
+        {
+          "steps": 0,
+          "end": "rounds",
+          "agrees": false
+        }
+      ],
+      "first reader births in full": [
+        [
+          [
+            2,
+            14
+          ],
+          7
+        ],
+        [
+          [
+            6,
+            10,
+            14
+          ],
+          10
+        ],
+        [
+          [
+            7,
+            14
+          ],
+          7
+        ],
+        [
+          [
+            14,
+            17
+          ],
+          6
+        ],
+        [
+          [
+            14,
+            18
+          ],
+          5
+        ],
+        [
+          [
+            14,
+            24
+          ],
+          6
+        ]
+      ],
+      "first reader births in region": [
+        [
+          [
+            2,
+            14
+          ],
+          7
+        ],
+        [
+          [
+            6,
+            10,
+            14
+          ],
+          12
+        ],
+        [
+          [
+            7,
+            14
+          ],
+          7
+        ],
+        [
+          [
+            14,
+            17
+          ],
+          6
+        ],
+        [
+          [
+            14,
+            18
+          ],
+          5
+        ],
+        [
+          [
+            14,
+            24
+          ],
+          6
+        ]
+      ]
+    },
+    {
+      "start index": 46,
+      "population": "treeplus25",
+      "reader": 24,
+      "round": 2,
+      "within t": [
+        0,
+        3,
+        4,
+        7,
+        8,
+        10,
+        14,
+        16,
+        17,
+        21,
+        24
+      ],
+      "first different round": 2,
+      "reader birth totals through t, full": [
+        4,
+        11
+      ],
+      "reader birth totals through t, region": [
+        4,
+        11
+      ],
+      "counts by parents alone agree through t": true,
+      "counts by fresh distinctions alone agree through t": false,
+      "first reading differs there": true,
+      "first-round-only reading agrees": true,
+      "first reading at first difference": {
+        "full only": [
+          [
+            [
+              "join",
+              2,
+              7,
+              9
+            ],
+            1
+          ]
+        ],
+        "region only": [
+          [
+            [
+              "join",
+              2,
+              8,
+              10
+            ],
+            1
+          ]
+        ]
+      },
+      "reading including parents at first difference": {
+        "full only": [
+          [
+            [
+              [
+                "join",
+                2,
+                7,
+                9
+              ],
+              [
+                [
+                  "join",
+                  2,
+                  7,
+                  9
+                ],
+                [
+                  "join",
+                  3,
+                  8,
+                  11
+                ]
+              ]
+            ],
+            1
+          ]
+        ],
+        "region only": [
+          [
+            [
+              [
+                "join",
+                2,
+                8,
+                10
+              ],
+              [
+                [
+                  "join",
+                  2,
+                  7,
+                  9
+                ],
+                [
+                  "join",
+                  3,
+                  9,
+                  12
+                ]
+              ]
+            ],
+            1
+          ]
+        ]
+      },
+      "full first-round groups of three or more cut by this region": [],
+      "outside knots joinable to two or more inside members of a full group of three or more": [
+        {
+          "full group": [
+            3,
+            7,
+            14
+          ],
+          "outside knot": 23,
+          "joinable inside members": [
+            3,
+            7
+          ],
+          "outside knot in this group": false
+        }
+      ],
+      "fewer steps": [
+        {
+          "steps": 0,
+          "end": "rounds",
+          "agrees": false
+        },
+        {
+          "steps": 1,
+          "end": "rounds",
+          "agrees": false
+        }
+      ]
+    },
+    {
+      "start index": 47,
+      "population": "treeplus25",
+      "reader": 1,
+      "round": 3,
+      "within t": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        10,
+        11,
+        14,
+        15,
+        16,
+        17,
+        18,
+        21,
+        22,
+        23,
+        24
+      ],
+      "first different round": 3,
+      "reader birth totals through t, full": [
+        1,
+        5,
+        19
+      ],
+      "reader birth totals through t, region": [
+        1,
+        5,
+        19
+      ],
+      "counts by parents alone agree through t": true,
+      "counts by fresh distinctions alone agree through t": false,
+      "first reading differs there": true,
+      "first-round-only reading agrees": true,
+      "first reading at first difference": {
+        "full only": [
+          [
+            [
+              "join",
+              2,
+              11,
+              13
+            ],
+            1
+          ]
+        ],
+        "region only": [
+          [
+            [
+              "join",
+              2,
+              13,
+              15
+            ],
+            1
+          ]
+        ]
+      },
+      "reading including parents at first difference": {
+        "full only": [
+          [
+            [
+              [
+                "join",
+                2,
+                11,
+                13
+              ],
+              [
+                [
+                  "join",
+                  2,
+                  7,
+                  9
+                ],
+                [
+                  "join",
+                  2,
+                  12,
+                  14
+                ]
+              ]
+            ],
+            1
+          ]
+        ],
+        "region only": [
+          [
+            [
+              [
+                "join",
+                2,
+                13,
+                15
+              ],
+              [
+                [
+                  "join",
+                  2,
+                  7,
+                  9
+                ],
+                [
+                  "join",
+                  2,
+                  14,
+                  16
+                ]
+              ]
+            ],
+            1
+          ]
+        ]
+      },
+      "full first-round groups of three or more cut by this region": [],
+      "outside knots joinable to two or more inside members of a full group of three or more": [
+        {
+          "full group": [
+            2,
+            6,
+            22
+          ],
+          "outside knot": 8,
+          "joinable inside members": [
+            2,
+            22
+          ],
+          "outside knot in this group": false
+        },
+        {
+          "full group": [
+            2,
+            6,
+            22
+          ],
+          "outside knot": 12,
+          "joinable inside members": [
+            2,
+            22
+          ],
+          "outside knot in this group": false
+        }
+      ],
+      "fewer steps": [
+        {
+          "steps": 0,
+          "end": "rounds",
+          "agrees": false
+        },
+        {
+          "steps": 1,
+          "end": "rounds",
+          "agrees": false
+        },
+        {
+          "steps": 2,
+          "end": "rounds",
+          "agrees": false
+        }
+      ]
+    },
+    {
+      "start index": 48,
+      "population": "treeplus25",
+      "reader": 15,
+      "round": 1,
+      "within t": [
+        5,
+        14,
+        15,
+        20,
+        22,
+        23
+      ],
+      "first different round": 1,
+      "reader birth totals through t, full": [
+        3
+      ],
+      "reader birth totals through t, region": [
+        3
+      ],
+      "counts by parents alone agree through t": true,
+      "counts by fresh distinctions alone agree through t": false,
+      "first reading differs there": true,
+      "first-round-only reading agrees": false,
+      "first reading at first difference": {
+        "full only": [
+          [
+            [
+              "join",
+              3,
+              6,
+              9
+            ],
+            1
+          ]
+        ],
+        "region only": [
+          [
+            [
+              "join",
+              3,
+              7,
+              10
+            ],
+            1
+          ]
+        ]
+      },
+      "reading including parents at first difference": {
+        "full only": [
+          [
+            [
+              [
+                "join",
+                3,
+                6,
+                9
+              ],
+              [
+                [
+                  "start",
+                  0,
+                  0,
+                  6
+                ],
+                [
+                  "start",
+                  0,
+                  0,
+                  7
+                ],
+                [
+                  "start",
+                  0,
+                  0,
+                  9
+                ]
+              ]
+            ],
+            1
+          ]
+        ],
+        "region only": [
+          [
+            [
+              [
+                "join",
+                3,
+                7,
+                10
+              ],
+              [
+                [
+                  "start",
+                  0,
+                  0,
+                  6
+                ],
+                [
+                  "start",
+                  0,
+                  0,
+                  7
+                ],
+                [
+                  "start",
+                  0,
+                  0,
+                  9
+                ]
+              ]
+            ],
+            1
+          ]
+        ]
+      },
+      "full first-round groups of three or more cut by this region": [
+        [
+          4,
+          17,
+          23
+        ]
+      ],
+      "outside knots joinable to two or more inside members of a full group of three or more": [
+        {
+          "full group": [
+            14,
+            15,
+            22
+          ],
+          "outside knot": 11,
+          "joinable inside members": [
+            14,
+            22
+          ],
+          "outside knot in this group": false
+        }
+      ],
+      "fewer steps": [
+        {
+          "steps": 0,
+          "end": "rounds",
+          "agrees": false
+        }
+      ],
+      "first reader births in full": [
+        [
+          [
+            5,
+            15
+          ],
+          2
+        ],
+        [
+          [
+            14,
+            15,
+            22
+          ],
+          6
+        ],
+        [
+          [
+            15,
+            20,
+            23
+          ],
+          6
+        ]
+      ],
+      "first reader births in region": [
+        [
+          [
+            5,
+            15
+          ],
+          2
+        ],
+        [
+          [
+            14,
+            15,
+            22
+          ],
+          7
+        ],
+        [
+          [
+            15,
+            20,
+            23
+          ],
+          6
+        ]
+      ]
+    },
+    {
+      "start index": 48,
+      "population": "treeplus25",
+      "reader": 15,
+      "round": 2,
+      "within t": [
+        2,
+        4,
+        5,
+        6,
+        8,
+        11,
+        14,
+        15,
+        17,
+        19,
+        20,
+        22,
+        23
+      ],
+      "first different round": 2,
+      "reader birth totals through t, full": [
+        3,
+        10
+      ],
+      "reader birth totals through t, region": [
+        3,
+        10
+      ],
+      "counts by parents alone agree through t": true,
+      "counts by fresh distinctions alone agree through t": false,
+      "first reading differs there": true,
+      "first-round-only reading agrees": true,
+      "first reading at first difference": {
+        "full only": [
+          [
+            [
+              "join",
+              2,
+              8,
+              10
+            ],
+            1
+          ]
+        ],
+        "region only": [
+          [
+            [
+              "join",
+              2,
+              11,
+              13
+            ],
+            1
+          ]
+        ]
+      },
+      "reading including parents at first difference": {
+        "full only": [
+          [
+            [
+              [
+                "join",
+                2,
+                8,
+                10
+              ],
+              [
+                [
+                  "join",
+                  3,
+                  6,
+                  9
+                ],
+                [
+                  "join",
+                  3,
+                  7,
+                  10
+                ]
+              ]
+            ],
+            1
+          ]
+        ],
+        "region only": [
+          [
+            [
+              [
+                "join",
+                2,
+                11,
+                13
+              ],
+              [
+                [
+                  "join",
+                  3,
+                  6,
+                  9
+                ],
+                [
+                  "join",
+                  3,
+                  10,
+                  13
+                ]
+              ]
+            ],
+            1
+          ]
+        ]
+      },
+      "full first-round groups of three or more cut by this region": [],
+      "outside knots joinable to two or more inside members of a full group of three or more": [
+        {
+          "full group": [
+            4,
+            17,
+            23
+          ],
+          "outside knot": 3,
+          "joinable inside members": [
+            4,
+            17
+          ],
+          "outside knot in this group": false
+        },
+        {
+          "full group": [
+            4,
+            17,
+            23
+          ],
+          "outside knot": 16,
+          "joinable inside members": [
+            4,
+            17
+          ],
+          "outside knot in this group": false
+        },
+        {
+          "full group": [
+            4,
+            17,
+            23
+          ],
+          "outside knot": 21,
+          "joinable inside members": [
+            4,
+            17
+          ],
+          "outside knot in this group": false
+        }
+      ],
+      "fewer steps": [
+        {
+          "steps": 0,
+          "end": "rounds",
+          "agrees": false
+        },
+        {
+          "steps": 1,
+          "end": "rounds",
+          "agrees": false
+        }
+      ]
+    },
+    {
+      "start index": 48,
+      "population": "treeplus25",
+      "reader": 15,
+      "round": 4,
+      "within t": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24
+      ],
+      "first different round": 4,
+      "reader birth totals through t, full": [
+        3,
+        10,
+        33,
+        105
+      ],
+      "reader birth totals through t, region": [
+        3,
+        10,
+        33,
+        105
+      ],
+      "counts by parents alone agree through t": true,
+      "counts by fresh distinctions alone agree through t": false,
+      "first reading differs there": true,
+      "first-round-only reading agrees": true,
+      "first reading at first difference": {
+        "full only": [
+          [
+            [
+              "join",
+              2,
+              10,
+              12
+            ],
+            1
+          ]
+        ],
+        "region only": [
+          [
+            [
+              "join",
+              2,
+              11,
+              13
+            ],
+            1
+          ]
+        ]
+      },
+      "reading including parents at first difference": {
+        "full only": [
+          [
+            [
+              [
+                "join",
+                2,
+                10,
+                12
+              ],
+              [
+                [
+                  "join",
+                  2,
+                  11,
+                  13
+                ],
+                [
+                  "join",
+                  3,
+                  9,
+                  12
+                ]
+              ]
+            ],
+            1
+          ]
+        ],
+        "region only": [
+          [
+            [
+              [
+                "join",
+                2,
+                11,
+                13
+              ],
+              [
+                [
+                  "join",
+                  2,
+                  11,
+                  13
+                ],
+                [
+                  "join",
+                  3,
+                  10,
+                  13
+                ]
+              ]
+            ],
+            1
+          ]
+        ]
+      },
+      "full first-round groups of three or more cut by this region": [],
+      "outside knots joinable to two or more inside members of a full group of three or more": [
+        {
+          "full group": [
+            9,
+            21,
+            24
+          ],
+          "outside knot": 18,
+          "joinable inside members": [
+            9,
+            24
+          ],
+          "outside knot in this group": false
+        }
+      ],
+      "fewer steps": [
+        {
+          "steps": 0,
+          "end": "rounds",
+          "agrees": false
+        },
+        {
+          "steps": 1,
+          "end": "rounds",
+          "agrees": false
+        },
+        {
+          "steps": 2,
+          "end": "rounds",
+          "agrees": false
+        },
+        {
+          "steps": 3,
+          "end": "rounds",
+          "agrees": false
+        }
+      ]
+    },
+    {
+      "start index": 51,
+      "population": "treeplus25",
+      "reader": 19,
+      "round": 4,
+      "within t": [
+        2,
+        4,
+        5,
+        7,
+        10,
+        11,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        21,
+        24
+      ],
+      "first different round": 4,
+      "reader birth totals through t, full": [
+        2,
+        5,
+        12,
+        24
+      ],
+      "reader birth totals through t, region": [
+        2,
+        5,
+        12,
+        24
+      ],
+      "counts by parents alone agree through t": true,
+      "counts by fresh distinctions alone agree through t": false,
+      "first reading differs there": true,
+      "first-round-only reading agrees": true,
+      "first reading at first difference": {
+        "full only": [
+          [
+            [
+              "join",
+              2,
+              10,
+              12
+            ],
+            1
+          ]
+        ],
+        "region only": [
+          [
+            [
+              "join",
+              2,
+              11,
+              13
+            ],
+            1
+          ]
+        ]
+      },
+      "reading including parents at first difference": {
+        "full only": [
+          [
+            [
+              [
+                "join",
+                2,
+                10,
+                12
+              ],
+              [
+                [
+                  "join",
+                  2,
+                  9,
+                  11
+                ],
+                [
+                  "join",
+                  2,
+                  11,
+                  13
+                ]
+              ]
+            ],
+            1
+          ]
+        ],
+        "region only": [
+          [
+            [
+              [
+                "join",
+                2,
+                11,
+                13
+              ],
+              [
+                [
+                  "join",
+                  2,
+                  9,
+                  11
+                ],
+                [
+                  "join",
+                  2,
+                  12,
+                  14
+                ]
+              ]
+            ],
+            1
+          ]
+        ]
+      },
+      "full first-round groups of three or more cut by this region": [
+        [
+          7,
+          9,
+          24
+        ]
+      ],
+      "outside knots joinable to two or more inside members of a full group of three or more": [
+        {
+          "full group": [
+            7,
+            9,
+            24
+          ],
+          "outside knot": 9,
+          "joinable inside members": [
+            7,
+            24
+          ],
+          "outside knot in this group": true
+        },
+        {
+          "full group": [
+            7,
+            17,
+            21
+          ],
+          "outside knot": 12,
+          "joinable inside members": [
+            7,
+            21
+          ],
+          "outside knot in this group": false
+        }
+      ],
+      "fewer steps": [
+        {
+          "steps": 0,
+          "end": "rounds",
+          "agrees": false
+        },
+        {
+          "steps": 1,
+          "end": "rounds",
+          "agrees": false
+        },
+        {
+          "steps": 2,
+          "end": "rounds",
+          "agrees": false
+        },
+        {
+          "steps": 3,
+          "end": "rounds",
+          "agrees": false
+        }
+      ]
+    },
+    {
+      "start index": 55,
+      "population": "treeplus25",
+      "reader": 9,
+      "round": 3,
+      "within t": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        14,
+        17,
+        20,
+        23,
+        24
+      ],
+      "first different round": 3,
+      "reader birth totals through t, full": [
+        2,
+        7,
+        18
+      ],
+      "reader birth totals through t, region": [
+        2,
+        7,
+        18
+      ],
+      "counts by parents alone agree through t": true,
+      "counts by fresh distinctions alone agree through t": false,
+      "first reading differs there": true,
+      "first-round-only reading agrees": true,
+      "first reading at first difference": {
+        "full only": [
+          [
+            [
+              "join",
+              2,
+              7,
+              9
+            ],
+            1
+          ]
+        ],
+        "region only": [
+          [
+            [
+              "join",
+              2,
+              8,
+              10
+            ],
+            1
+          ]
+        ]
+      },
+      "reading including parents at first difference": {
+        "full only": [
+          [
+            [
+              [
+                "join",
+                2,
+                7,
+                9
+              ],
+              [
+                [
+                  "join",
+                  2,
+                  4,
+                  6
+                ],
+                [
+                  "join",
+                  2,
+                  8,
+                  10
+                ]
+              ]
+            ],
+            1
+          ]
+        ],
+        "region only": [
+          [
+            [
+              [
+                "join",
+                2,
+                8,
+                10
+              ],
+              [
+                [
+                  "join",
+                  2,
+                  4,
+                  6
+                ],
+                [
+                  "join",
+                  2,
+                  9,
+                  11
+                ]
+              ]
+            ],
+            1
+          ]
+        ]
+      },
+      "full first-round groups of three or more cut by this region": [],
+      "outside knots joinable to two or more inside members of a full group of three or more": [
+        {
+          "full group": [
+            3,
+            10,
+            17
+          ],
+          "outside knot": 0,
+          "joinable inside members": [
+            3,
+            17
+          ],
+          "outside knot in this group": false
+        }
+      ],
+      "fewer steps": [
+        {
+          "steps": 0,
+          "end": "rounds",
+          "agrees": false
+        },
+        {
+          "steps": 1,
+          "end": "rounds",
+          "agrees": false
+        },
+        {
+          "steps": 2,
+          "end": "rounds",
+          "agrees": false
+        }
+      ]
+    },
+    {
+      "start index": 42518,
+      "population": "census6",
+      "reader": 4,
+      "round": 1,
+      "within t": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "first different round": 1,
+      "reader birth totals through t, full": [
+        2
+      ],
+      "reader birth totals through t, region": [
+        2
+      ],
+      "counts by parents alone agree through t": true,
+      "counts by fresh distinctions alone agree through t": false,
+      "first reading differs there": true,
+      "first-round-only reading agrees": false,
+      "first reading at first difference": {
+        "full only": [
+          [
+            [
+              "join",
+              4,
+              4,
+              8
+            ],
+            1
+          ]
+        ],
+        "region only": [
+          [
+            [
+              "join",
+              4,
+              5,
+              9
+            ],
+            1
+          ]
+        ]
+      },
+      "reading including parents at first difference": {
+        "full only": [
+          [
+            [
+              [
+                "join",
+                4,
+                4,
+                8
+              ],
+              [
+                [
+                  "start",
+                  0,
+                  0,
+                  4
+                ],
+                [
+                  "start",
+                  0,
+                  0,
+                  5
+                ],
+                [
+                  "start",
+                  0,
+                  0,
+                  6
+                ],
+                [
+                  "start",
+                  0,
+                  0,
+                  7
+                ]
+              ]
+            ],
+            1
+          ]
+        ],
+        "region only": [
+          [
+            [
+              [
+                "join",
+                4,
+                5,
+                9
+              ],
+              [
+                [
+                  "start",
+                  0,
+                  0,
+                  4
+                ],
+                [
+                  "start",
+                  0,
+                  0,
+                  5
+                ],
+                [
+                  "start",
+                  0,
+                  0,
+                  6
+                ],
+                [
+                  "start",
+                  0,
+                  0,
+                  7
+                ]
+              ]
+            ],
+            1
+          ]
+        ]
+      },
+      "full first-round groups of three or more cut by this region": [],
+      "outside knots joinable to two or more inside members of a full group of three or more": [
+        {
+          "full group": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "outside knot": 5,
+          "joinable inside members": [
+            2,
+            3
+          ],
+          "outside knot in this group": false
+        }
+      ],
+      "fewer steps": [
+        {
+          "steps": 0,
+          "end": "rounds",
+          "agrees": false
+        }
+      ],
+      "first reader births in full": [
+        [
+          [
+            1,
+            2,
+            3,
+            4
+          ],
+          4
+        ],
+        [
+          [
+            4
+          ],
+          2
+        ]
+      ],
+      "first reader births in region": [
+        [
+          [
+            1,
+            2,
+            3,
+            4
+          ],
+          5
+        ],
+        [
+          [
+            4
+          ],
+          2
+        ]
+      ]
+    },
+    {
+      "start index": 7794,
+      "population": "census6",
+      "reader": 1,
+      "round": 1,
+      "within t": [
+        0,
+        1,
+        2,
+        4
+      ],
+      "first different round": 1,
+      "reader birth totals through t, full": [
+        1
+      ],
+      "reader birth totals through t, region": [
+        1
+      ],
+      "counts by parents alone agree through t": true,
+      "counts by fresh distinctions alone agree through t": false,
+      "first reading differs there": true,
+      "first-round-only reading agrees": false,
+      "first reading at first difference": {
+        "full only": [
+          [
+            [
+              "join",
+              4,
+              1,
+              5
+            ],
+            1
+          ]
+        ],
+        "region only": [
+          [
+            [
+              "join",
+              4,
+              2,
+              6
+            ],
+            1
+          ]
+        ]
+      },
+      "reading including parents at first difference": {
+        "full only": [
+          [
+            [
+              [
+                "join",
+                4,
+                1,
+                5
+              ],
+              [
+                [
+                  "start",
+                  0,
+                  0,
+                  3
+                ],
+                [
+                  "start",
+                  0,
+                  0,
+                  3
+                ],
+                [
+                  "start",
+                  0,
+                  0,
+                  4
+                ],
+                [
+                  "start",
+                  0,
+                  0,
+                  6
+                ]
+              ]
+            ],
+            1
+          ]
+        ],
+        "region only": [
+          [
+            [
+              [
+                "join",
+                4,
+                2,
+                6
+              ],
+              [
+                [
+                  "start",
+                  0,
+                  0,
+                  3
+                ],
+                [
+                  "start",
+                  0,
+                  0,
+                  3
+                ],
+                [
+                  "start",
+                  0,
+                  0,
+                  4
+                ],
+                [
+                  "start",
+                  0,
+                  0,
+                  6
+                ]
+              ]
+            ],
+            1
+          ]
+        ]
+      },
+      "full first-round groups of three or more cut by this region": [],
+      "outside knots joinable to two or more inside members of a full group of three or more": [
+        {
+          "full group": [
+            0,
+            1,
+            2,
+            4
+          ],
+          "outside knot": 5,
+          "joinable inside members": [
+            0,
+            2
+          ],
+          "outside knot in this group": false
+        }
+      ],
+      "fewer steps": [
+        {
+          "steps": 0,
+          "end": "rounds",
+          "agrees": false
+        }
+      ],
+      "first reader births in full": [
+        [
+          [
+            0,
+            1,
+            2,
+            4
+          ],
+          1
+        ]
+      ],
+      "first reader births in region": [
+        [
+          [
+            0,
+            1,
+            2,
+            4
+          ],
+          2
+        ]
+      ]
+    },
+    {
+      "start index": 64198,
+      "population": "census6",
+      "reader": 5,
+      "round": 1,
+      "within t": [
+        1,
+        2,
+        3,
+        5
+      ],
+      "first different round": 1,
+      "reader birth totals through t, full": [
+        1
+      ],
+      "reader birth totals through t, region": [
+        1
+      ],
+      "counts by parents alone agree through t": true,
+      "counts by fresh distinctions alone agree through t": false,
+      "first reading differs there": true,
+      "first-round-only reading agrees": false,
+      "first reading at first difference": {
+        "full only": [
+          [
+            [
+              "join",
+              4,
+              2,
+              6
+            ],
+            1
+          ]
+        ],
+        "region only": [
+          [
+            [
+              "join",
+              4,
+              4,
+              8
+            ],
+            1
+          ]
+        ]
+      },
+      "reading including parents at first difference": {
+        "full only": [
+          [
+            [
+              [
+                "join",
+                4,
+                2,
+                6
+              ],
+              [
+                [
+                  "start",
+                  0,
+                  0,
+                  4
+                ],
+                [
+                  "start",
+                  0,
+                  0,
+                  6
+                ],
+                [
+                  "start",
+                  0,
+                  0,
+                  6
+                ],
+                [
+                  "start",
+                  0,
+                  0,
+                  6
+                ]
+              ]
+            ],
+            1
+          ]
+        ],
+        "region only": [
+          [
+            [
+              [
+                "join",
+                4,
+                4,
+                8
+              ],
+              [
+                [
+                  "start",
+                  0,
+                  0,
+                  4
+                ],
+                [
+                  "start",
+                  0,
+                  0,
+                  6
+                ],
+                [
+                  "start",
+                  0,
+                  0,
+                  6
+                ],
+                [
+                  "start",
+                  0,
+                  0,
+                  6
+                ]
+              ]
+            ],
+            1
+          ]
+        ]
+      },
+      "full first-round groups of three or more cut by this region": [
+        [
+          1,
+          2,
+          3,
+          4
+        ]
+      ],
+      "outside knots joinable to two or more inside members of a full group of three or more": [
+        {
+          "full group": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "outside knot": 4,
+          "joinable inside members": [
+            1,
+            2,
+            3
+          ],
+          "outside knot in this group": true
+        },
+        {
+          "full group": [
+            1,
+            2,
+            3,
+            5
+          ],
+          "outside knot": 4,
+          "joinable inside members": [
+            1,
+            2,
+            3
+          ],
+          "outside knot in this group": false
+        }
+      ],
+      "fewer steps": [
+        {
+          "steps": 0,
+          "end": "rounds",
+          "agrees": false
+        }
+      ],
+      "first reader births in full": [
+        [
+          [
+            1,
+            2,
+            3,
+            5
+          ],
+          2
+        ]
+      ],
+      "first reader births in region": [
+        [
+          [
+            1,
+            2,
+            3,
+            5
+          ],
+          4
+        ]
+      ]
+    },
+    {
+      "start index": 7804,
+      "population": "census6",
+      "reader": 1,
+      "round": 1,
+      "within t": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "first different round": 1,
+      "reader birth totals through t, full": [
+        1
+      ],
+      "reader birth totals through t, region": [
+        1
+      ],
+      "counts by parents alone agree through t": true,
+      "counts by fresh distinctions alone agree through t": false,
+      "first reading differs there": true,
+      "first-round-only reading agrees": false,
+      "first reading at first difference": {
+        "full only": [
+          [
+            [
+              "join",
+              5,
+              3,
+              8
+            ],
+            1
+          ]
+        ],
+        "region only": [
+          [
+            [
+              "join",
+              5,
+              4,
+              9
+            ],
+            1
+          ]
+        ]
+      },
+      "reading including parents at first difference": {
+        "full only": [
+          [
+            [
+              [
+                "join",
+                5,
+                3,
+                8
+              ],
+              [
+                [
+                  "start",
+                  0,
+                  0,
+                  3
+                ],
+                [
+                  "start",
+                  0,
+                  0,
+                  4
+                ],
+                [
+                  "start",
+                  0,
+                  0,
+                  4
+                ],
+                [
+                  "start",
+                  0,
+                  0,
+                  5
+                ],
+                [
+                  "start",
+                  0,
+                  0,
+                  6
+                ]
+              ]
+            ],
+            1
+          ]
+        ],
+        "region only": [
+          [
+            [
+              [
+                "join",
+                5,
+                4,
+                9
+              ],
+              [
+                [
+                  "start",
+                  0,
+                  0,
+                  3
+                ],
+                [
+                  "start",
+                  0,
+                  0,
+                  4
+                ],
+                [
+                  "start",
+                  0,
+                  0,
+                  4
+                ],
+                [
+                  "start",
+                  0,
+                  0,
+                  5
+                ],
+                [
+                  "start",
+                  0,
+                  0,
+                  6
+                ]
+              ]
+            ],
+            1
+          ]
+        ]
+      },
+      "full first-round groups of three or more cut by this region": [],
+      "outside knots joinable to two or more inside members of a full group of three or more": [
+        {
+          "full group": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "outside knot": 5,
+          "joinable inside members": [
+            0,
+            2
+          ],
+          "outside knot in this group": false
+        }
+      ],
+      "fewer steps": [
+        {
+          "steps": 0,
+          "end": "rounds",
+          "agrees": false
+        }
+      ],
+      "first reader births in full": [
+        [
+          [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          3
+        ]
+      ],
+      "first reader births in region": [
+        [
+          [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          4
+        ]
+      ]
+    },
+    {
+      "start index": 35146,
+      "population": "census6",
+      "reader": 5,
+      "round": 1,
+      "within t": [
+        0,
+        1,
+        2,
+        3,
+        5
+      ],
+      "first different round": 1,
+      "reader birth totals through t, full": [
+        2
+      ],
+      "reader birth totals through t, region": [
+        2
+      ],
+      "counts by parents alone agree through t": true,
+      "counts by fresh distinctions alone agree through t": false,
+      "first reading differs there": true,
+      "first-round-only reading agrees": false,
+      "first reading at first difference": {
+        "full only": [
+          [
+            [
+              "join",
+              5,
+              4,
+              9
+            ],
+            1
+          ]
+        ],
+        "region only": [
+          [
+            [
+              "join",
+              5,
+              5,
+              10
+            ],
+            1
+          ]
+        ]
+      },
+      "reading including parents at first difference": {
+        "full only": [
+          [
+            [
+              [
+                "join",
+                5,
+                4,
+                9
+              ],
+              [
+                [
+                  "start",
+                  0,
+                  0,
+                  4
+                ],
+                [
+                  "start",
+                  0,
+                  0,
+                  5
+                ],
+                [
+                  "start",
+                  0,
+                  0,
+                  5
+                ],
+                [
+                  "start",
+                  0,
+                  0,
+                  6
+                ],
+                [
+                  "start",
+                  0,
+                  0,
+                  7
+                ]
+              ]
+            ],
+            1
+          ]
+        ],
+        "region only": [
+          [
+            [
+              [
+                "join",
+                5,
+                5,
+                10
+              ],
+              [
+                [
+                  "start",
+                  0,
+                  0,
+                  4
+                ],
+                [
+                  "start",
+                  0,
+                  0,
+                  5
+                ],
+                [
+                  "start",
+                  0,
+                  0,
+                  5
+                ],
+                [
+                  "start",
+                  0,
+                  0,
+                  6
+                ],
+                [
+                  "start",
+                  0,
+                  0,
+                  7
+                ]
+              ]
+            ],
+            1
+          ]
+        ]
+      },
+      "full first-round groups of three or more cut by this region": [],
+      "outside knots joinable to two or more inside members of a full group of three or more": [
+        {
+          "full group": [
+            0,
+            1,
+            2,
+            3,
+            5
+          ],
+          "outside knot": 4,
+          "joinable inside members": [
+            1,
+            2
+          ],
+          "outside knot in this group": false
+        }
+      ],
+      "fewer steps": [
+        {
+          "steps": 0,
+          "end": "rounds",
+          "agrees": false
+        }
+      ],
+      "first reader births in full": [
+        [
+          [
+            0,
+            1,
+            2,
+            3,
+            5
+          ],
+          4
+        ],
+        [
+          [
+            5
+          ],
+          2
+        ]
+      ],
+      "first reader births in region": [
+        [
+          [
+            0,
+            1,
+            2,
+            3,
+            5
+          ],
+          5
+        ],
+        [
+          [
+            5
+          ],
+          2
+        ]
+      ]
+    },
+    {
+      "start index": 18054,
+      "population": "census6",
+      "reader": 2,
+      "round": 1,
+      "within t": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "first different round": 1,
+      "reader birth totals through t, full": [
+        3
+      ],
+      "reader birth totals through t, region": [
+        3
+      ],
+      "counts by parents alone agree through t": true,
+      "counts by fresh distinctions alone agree through t": false,
+      "first reading differs there": true,
+      "first-round-only reading agrees": false,
+      "first reading at first difference": {
+        "full only": [
+          [
+            [
+              "join",
+              5,
+              5,
+              10
+            ],
+            1
+          ]
+        ],
+        "region only": [
+          [
+            [
+              "join",
+              5,
+              6,
+              11
+            ],
+            1
+          ]
+        ]
+      },
+      "reading including parents at first difference": {
+        "full only": [
+          [
+            [
+              [
+                "join",
+                5,
+                5,
+                10
+              ],
+              [
+                [
+                  "start",
+                  0,
+                  0,
+                  4
+                ],
+                [
+                  "start",
+                  0,
+                  0,
+                  5
+                ],
+                [
+                  "start",
+                  0,
+                  0,
+                  5
+                ],
+                [
+                  "start",
+                  0,
+                  0,
+                  6
+                ],
+                [
+                  "start",
+                  0,
+                  0,
+                  6
+                ]
+              ]
+            ],
+            1
+          ]
+        ],
+        "region only": [
+          [
+            [
+              [
+                "join",
+                5,
+                6,
+                11
+              ],
+              [
+                [
+                  "start",
+                  0,
+                  0,
+                  4
+                ],
+                [
+                  "start",
+                  0,
+                  0,
+                  5
+                ],
+                [
+                  "start",
+                  0,
+                  0,
+                  5
+                ],
+                [
+                  "start",
+                  0,
+                  0,
+                  6
+                ],
+                [
+                  "start",
+                  0,
+                  0,
+                  6
+                ]
+              ]
+            ],
+            1
+          ]
+        ]
+      },
+      "full first-round groups of three or more cut by this region": [],
+      "outside knots joinable to two or more inside members of a full group of three or more": [
+        {
+          "full group": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "outside knot": 5,
+          "joinable inside members": [
+            1,
+            4
+          ],
+          "outside knot in this group": false
+        }
+      ],
+      "fewer steps": [
+        {
+          "steps": 0,
+          "end": "rounds",
+          "agrees": false
+        }
+      ],
+      "first reader births in full": [
+        [
+          [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          5
+        ],
+        [
+          [
+            2
+          ],
+          2
+        ],
+        [
+          [
+            2
+          ],
+          2
+        ]
+      ],
+      "first reader births in region": [
+        [
+          [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          6
+        ],
+        [
+          [
+            2
+          ],
+          2
+        ],
+        [
+          [
+            2
+          ],
+          2
+        ]
+      ]
+    },
+    {
+      "start index": 27834,
+      "population": "census6",
+      "reader": 0,
+      "round": 1,
+      "within t": [
+        0,
+        1,
+        2,
+        4,
+        5
+      ],
+      "first different round": 1,
+      "reader birth totals through t, full": [
+        3
+      ],
+      "reader birth totals through t, region": [
+        3
+      ],
+      "counts by parents alone agree through t": true,
+      "counts by fresh distinctions alone agree through t": false,
+      "first reading differs there": true,
+      "first-round-only reading agrees": false,
+      "first reading at first difference": {
+        "full only": [
+          [
+            [
+              "join",
+              5,
+              7,
+              12
+            ],
+            1
+          ]
+        ],
+        "region only": [
+          [
+            [
+              "join",
+              5,
+              9,
+              14
+            ],
+            1
+          ]
+        ]
+      },
+      "reading including parents at first difference": {
+        "full only": [
+          [
+            [
+              [
+                "join",
+                5,
+                7,
+                12
+              ],
+              [
+                [
+                  "start",
+                  0,
+                  0,
+                  5
+                ],
+                [
+                  "start",
+                  0,
+                  0,
+                  5
+                ],
+                [
+                  "start",
+                  0,
+                  0,
+                  5
+                ],
+                [
+                  "start",
+                  0,
+                  0,
+                  6
+                ],
+                [
+                  "start",
+                  0,
+                  0,
+                  7
+                ]
+              ]
+            ],
+            1
+          ]
+        ],
+        "region only": [
+          [
+            [
+              [
+                "join",
+                5,
+                9,
+                14
+              ],
+              [
+                [
+                  "start",
+                  0,
+                  0,
+                  5
+                ],
+                [
+                  "start",
+                  0,
+                  0,
+                  5
+                ],
+                [
+                  "start",
+                  0,
+                  0,
+                  5
+                ],
+                [
+                  "start",
+                  0,
+                  0,
+                  6
+                ],
+                [
+                  "start",
+                  0,
+                  0,
+                  7
+                ]
+              ]
+            ],
+            1
+          ]
+        ]
+      },
+      "full first-round groups of three or more cut by this region": [
+        [
+          1,
+          2,
+          3,
+          4
+        ]
+      ],
+      "outside knots joinable to two or more inside members of a full group of three or more": [
+        {
+          "full group": [
+            0,
+            1,
+            2,
+            4,
+            5
+          ],
+          "outside knot": 3,
+          "joinable inside members": [
+            1,
+            2,
+            4
+          ],
+          "outside knot in this group": false
+        },
+        {
+          "full group": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "outside knot": 3,
+          "joinable inside members": [
+            1,
+            2,
+            4
+          ],
+          "outside knot in this group": true
+        }
+      ],
+      "fewer steps": [
+        {
+          "steps": 0,
+          "end": "rounds",
+          "agrees": false
+        }
+      ],
+      "first reader births in full": [
+        [
+          [
+            0
+          ],
+          2
+        ],
+        [
+          [
+            0
+          ],
+          2
+        ],
+        [
+          [
+            0,
+            1,
+            2,
+            4,
+            5
+          ],
+          7
+        ]
+      ],
+      "first reader births in region": [
+        [
+          [
+            0
+          ],
+          2
+        ],
+        [
+          [
+            0
+          ],
+          2
+        ],
+        [
+          [
+            0,
+            1,
+            2,
+            4,
+            5
+          ],
+          9
+        ]
+      ]
+    },
+    {
+      "start index": 8001,
+      "population": "census6",
+      "reader": 1,
+      "round": 1,
+      "within t": [
+        0,
+        1,
+        2,
+        4
+      ],
+      "first different round": 1,
+      "reader birth totals through t, full": [
+        2
+      ],
+      "reader birth totals through t, region": [
+        2
+      ],
+      "counts by parents alone agree through t": true,
+      "counts by fresh distinctions alone agree through t": false,
+      "first reading differs there": true,
+      "first-round-only reading agrees": false,
+      "first reading at first difference": {
+        "full only": [
+          [
+            [
+              "join",
+              4,
+              4,
+              8
+            ],
+            1
+          ]
+        ],
+        "region only": [
+          [
+            [
+              "join",
+              4,
+              5,
+              9
+            ],
+            1
+          ]
+        ]
+      },
+      "reading including parents at first difference": {
+        "full only": [
+          [
+            [
+              [
+                "join",
+                4,
+                4,
+                8
+              ],
+              [
+                [
+                  "start",
+                  0,
+                  0,
+                  4
+                ],
+                [
+                  "start",
+                  0,
+                  0,
+                  4
+                ],
+                [
+                  "start",
+                  0,
+                  0,
+                  4
+                ],
+                [
+                  "start",
+                  0,
+                  0,
+                  7
+                ]
+              ]
+            ],
+            1
+          ]
+        ],
+        "region only": [
+          [
+            [
+              [
+                "join",
+                4,
+                5,
+                9
+              ],
+              [
+                [
+                  "start",
+                  0,
+                  0,
+                  4
+                ],
+                [
+                  "start",
+                  0,
+                  0,
+                  4
+                ],
+                [
+                  "start",
+                  0,
+                  0,
+                  4
+                ],
+                [
+                  "start",
+                  0,
+                  0,
+                  7
+                ]
+              ]
+            ],
+            1
+          ]
+        ]
+      },
+      "full first-round groups of three or more cut by this region": [],
+      "outside knots joinable to two or more inside members of a full group of three or more": [
+        {
+          "full group": [
+            0,
+            1,
+            2,
+            4
+          ],
+          "outside knot": 5,
+          "joinable inside members": [
+            0,
+            2
+          ],
+          "outside knot in this group": false
+        }
+      ],
+      "fewer steps": [
+        {
+          "steps": 0,
+          "end": "rounds",
+          "agrees": false
+        }
+      ],
+      "first reader births in full": [
+        [
+          [
+            0,
+            1,
+            2,
+            4
+          ],
+          4
+        ],
+        [
+          [
+            1
+          ],
+          2
+        ]
+      ],
+      "first reader births in region": [
+        [
+          [
+            0,
+            1,
+            2,
+            4
+          ],
+          5
+        ],
+        [
+          [
+            1
+          ],
+          2
+        ]
+      ]
+    },
+    {
+      "start index": 25643,
+      "population": "census6",
+      "reader": 5,
+      "round": 1,
+      "within t": [
+        1,
+        2,
+        3,
+        5
+      ],
+      "first different round": 1,
+      "reader birth totals through t, full": [
+        1
+      ],
+      "reader birth totals through t, region": [
+        1
+      ],
+      "counts by parents alone agree through t": true,
+      "counts by fresh distinctions alone agree through t": false,
+      "first reading differs there": true,
+      "first-round-only reading agrees": false,
+      "first reading at first difference": {
+        "full only": [
+          [
+            [
+              "join",
+              4,
+              2,
+              6
+            ],
+            1
+          ]
+        ],
+        "region only": [
+          [
+            [
+              "join",
+              4,
+              4,
+              8
+            ],
+            1
+          ]
+        ]
+      },
+      "reading including parents at first difference": {
+        "full only": [
+          [
+            [
+              [
+                "join",
+                4,
+                2,
+                6
+              ],
+              [
+                [
+                  "start",
+                  0,
+                  0,
+                  3
+                ],
+                [
+                  "start",
+                  0,
+                  0,
+                  4
+                ],
+                [
+                  "start",
+                  0,
+                  0,
+                  5
+                ],
+                [
+                  "start",
+                  0,
+                  0,
+                  6
+                ]
+              ]
+            ],
+            1
+          ]
+        ],
+        "region only": [
+          [
+            [
+              [
+                "join",
+                4,
+                4,
+                8
+              ],
+              [
+                [
+                  "start",
+                  0,
+                  0,
+                  3
+                ],
+                [
+                  "start",
+                  0,
+                  0,
+                  4
+                ],
+                [
+                  "start",
+                  0,
+                  0,
+                  5
+                ],
+                [
+                  "start",
+                  0,
+                  0,
+                  6
+                ]
+              ]
+            ],
+            1
+          ]
+        ]
+      },
+      "full first-round groups of three or more cut by this region": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      ],
+      "outside knots joinable to two or more inside members of a full group of three or more": [
+        {
+          "full group": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "outside knot": 0,
+          "joinable inside members": [
+            1,
+            2,
+            3
+          ],
+          "outside knot in this group": true
+        },
+        {
+          "full group": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "outside knot": 4,
+          "joinable inside members": [
+            1,
+            2,
+            3
+          ],
+          "outside knot in this group": true
+        },
+        {
+          "full group": [
+            1,
+            2,
+            3,
+            5
+          ],
+          "outside knot": 0,
+          "joinable inside members": [
+            1,
+            2,
+            3
+          ],
+          "outside knot in this group": false
+        },
+        {
+          "full group": [
+            1,
+            2,
+            3,
+            5
+          ],
+          "outside knot": 4,
+          "joinable inside members": [
+            1,
+            2,
+            3
+          ],
+          "outside knot in this group": false
+        }
+      ],
+      "fewer steps": [
+        {
+          "steps": 0,
+          "end": "rounds",
+          "agrees": false
+        }
+      ],
+      "first reader births in full": [
+        [
+          [
+            1,
+            2,
+            3,
+            5
+          ],
+          2
+        ]
+      ],
+      "first reader births in region": [
+        [
+          [
+            1,
+            2,
+            3,
+            5
+          ],
+          4
+        ]
+      ]
+    },
+    {
+      "start index": 42521,
+      "population": "census6",
+      "reader": 1,
+      "round": 1,
+      "within t": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "first different round": 1,
+      "reader birth totals through t, full": [
+        2
+      ],
+      "reader birth totals through t, region": [
+        2
+      ],
+      "counts by parents alone agree through t": true,
+      "counts by fresh distinctions alone agree through t": false,
+      "first reading differs there": true,
+      "first-round-only reading agrees": false,
+      "first reading at first difference": {
+        "full only": [
+          [
+            [
+              "join",
+              4,
+              5,
+              9
+            ],
+            1
+          ]
+        ],
+        "region only": [
+          [
+            [
+              "join",
+              4,
+              6,
+              10
+            ],
+            1
+          ]
+        ]
+      },
+      "reading including parents at first difference": {
+        "full only": [
+          [
+            [
+              [
+                "join",
+                4,
+                5,
+                9
+              ],
+              [
+                [
+                  "start",
+                  0,
+                  0,
+                  4
+                ],
+                [
+                  "start",
+                  0,
+                  0,
+                  6
+                ],
+                [
+                  "start",
+                  0,
+                  0,
+                  6
+                ],
+                [
+                  "start",
+                  0,
+                  0,
+                  7
+                ]
+              ]
+            ],
+            1
+          ]
+        ],
+        "region only": [
+          [
+            [
+              [
+                "join",
+                4,
+                6,
+                10
+              ],
+              [
+                [
+                  "start",
+                  0,
+                  0,
+                  4
+                ],
+                [
+                  "start",
+                  0,
+                  0,
+                  6
+                ],
+                [
+                  "start",
+                  0,
+                  0,
+                  6
+                ],
+                [
+                  "start",
+                  0,
+                  0,
+                  7
+                ]
+              ]
+            ],
+            1
+          ]
+        ]
+      },
+      "full first-round groups of three or more cut by this region": [],
+      "outside knots joinable to two or more inside members of a full group of three or more": [
+        {
+          "full group": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "outside knot": 5,
+          "joinable inside members": [
+            2,
+            3
+          ],
+          "outside knot in this group": false
+        }
+      ],
+      "fewer steps": [
+        {
+          "steps": 0,
+          "end": "rounds",
+          "agrees": false
+        }
+      ],
+      "first reader births in full": [
+        [
+          [
+            1
+          ],
+          2
+        ],
+        [
+          [
+            1,
+            2,
+            3,
+            4
+          ],
+          5
+        ]
+      ],
+      "first reader births in region": [
+        [
+          [
+            1
+          ],
+          2
+        ],
+        [
+          [
+            1,
+            2,
+            3,
+            4
+          ],
+          6
+        ]
+      ]
+    },
+    {
+      "start index": 8017,
+      "population": "census6",
+      "reader": 1,
+      "round": 1,
+      "within t": [
+        0,
+        1,
+        2,
+        4
+      ],
+      "first different round": 1,
+      "reader birth totals through t, full": [
+        2
+      ],
+      "reader birth totals through t, region": [
+        2
+      ],
+      "counts by parents alone agree through t": true,
+      "counts by fresh distinctions alone agree through t": false,
+      "first reading differs there": true,
+      "first-round-only reading agrees": false,
+      "first reading at first difference": {
+        "full only": [
+          [
+            [
+              "join",
+              4,
+              5,
+              9
+            ],
+            1
+          ]
+        ],
+        "region only": [
+          [
+            [
+              "join",
+              4,
+              6,
+              10
+            ],
+            1
+          ]
+        ]
+      },
+      "reading including parents at first difference": {
+        "full only": [
+          [
+            [
+              [
+                "join",
+                4,
+                5,
+                9
+              ],
+              [
+                [
+                  "start",
+                  0,
+                  0,
+                  4
+                ],
+                [
+                  "start",
+                  0,
+                  0,
+                  4
+                ],
+                [
+                  "start",
+                  0,
+                  0,
+                  5
+                ],
+                [
+                  "start",
+                  0,
+                  0,
+                  7
+                ]
+              ]
+            ],
+            1
+          ]
+        ],
+        "region only": [
+          [
+            [
+              [
+                "join",
+                4,
+                6,
+                10
+              ],
+              [
+                [
+                  "start",
+                  0,
+                  0,
+                  4
+                ],
+                [
+                  "start",
+                  0,
+                  0,
+                  4
+                ],
+                [
+                  "start",
+                  0,
+                  0,
+                  5
+                ],
+                [
+                  "start",
+                  0,
+                  0,
+                  7
+                ]
+              ]
+            ],
+            1
+          ]
+        ]
+      },
+      "full first-round groups of three or more cut by this region": [],
+      "outside knots joinable to two or more inside members of a full group of three or more": [
+        {
+          "full group": [
+            0,
+            1,
+            2,
+            4
+          ],
+          "outside knot": 5,
+          "joinable inside members": [
+            0,
+            2
+          ],
+          "outside knot in this group": false
+        }
+      ],
+      "fewer steps": [
+        {
+          "steps": 0,
+          "end": "rounds",
+          "agrees": false
+        }
+      ],
+      "first reader births in full": [
+        [
+          [
+            0,
+            1,
+            2,
+            4
+          ],
+          5
+        ],
+        [
+          [
+            1
+          ],
+          2
+        ]
+      ],
+      "first reader births in region": [
+        [
+          [
+            0,
+            1,
+            2,
+            4
+          ],
+          6
+        ],
+        [
+          [
+            1
+          ],
+          2
+        ]
+      ]
+    },
+    {
+      "start index": 16800,
+      "population": "census6",
+      "reader": 4,
+      "round": 1,
+      "within t": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "first different round": 1,
+      "reader birth totals through t, full": [
+        3
+      ],
+      "reader birth totals through t, region": [
+        3
+      ],
+      "counts by parents alone agree through t": true,
+      "counts by fresh distinctions alone agree through t": false,
+      "first reading differs there": true,
+      "first-round-only reading agrees": false,
+      "first reading at first difference": {
+        "full only": [
+          [
+            [
+              "join",
+              5,
+              6,
+              11
+            ],
+            1
+          ]
+        ],
+        "region only": [
+          [
+            [
+              "join",
+              5,
+              8,
+              13
+            ],
+            1
+          ]
+        ]
+      },
+      "reading including parents at first difference": {
+        "full only": [
+          [
+            [
+              [
+                "join",
+                5,
+                6,
+                11
+              ],
+              [
+                [
+                  "start",
+                  0,
+                  0,
+                  5
+                ],
+                [
+                  "start",
+                  0,
+                  0,
+                  5
+                ],
+                [
+                  "start",
+                  0,
+                  0,
+                  5
+                ],
+                [
+                  "start",
+                  0,
+                  0,
+                  6
+                ],
+                [
+                  "start",
+                  0,
+                  0,
+                  7
+                ]
+              ]
+            ],
+            1
+          ]
+        ],
+        "region only": [
+          [
+            [
+              [
+                "join",
+                5,
+                8,
+                13
+              ],
+              [
+                [
+                  "start",
+                  0,
+                  0,
+                  5
+                ],
+                [
+                  "start",
+                  0,
+                  0,
+                  5
+                ],
+                [
+                  "start",
+                  0,
+                  0,
+                  5
+                ],
+                [
+                  "start",
+                  0,
+                  0,
+                  6
+                ],
+                [
+                  "start",
+                  0,
+                  0,
+                  7
+                ]
+              ]
+            ],
+            1
+          ]
+        ]
+      },
+      "full first-round groups of three or more cut by this region": [],
+      "outside knots joinable to two or more inside members of a full group of three or more": [
+        {
+          "full group": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "outside knot": 5,
+          "joinable inside members": [
+            0,
+            1,
+            3
+          ],
+          "outside knot in this group": false
+        }
+      ],
+      "fewer steps": [
+        {
+          "steps": 0,
+          "end": "rounds",
+          "agrees": false
+        }
+      ],
+      "first reader births in full": [
+        [
+          [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          6
+        ],
+        [
+          [
+            4
+          ],
+          2
+        ],
+        [
+          [
+            4
+          ],
+          2
+        ]
+      ],
+      "first reader births in region": [
+        [
+          [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          8
+        ],
+        [
+          [
+            4
+          ],
+          2
+        ],
+        [
+          [
+            4
+          ],
+          2
+        ]
+      ]
+    },
+    {
+      "start index": 45697,
+      "population": "census6",
+      "reader": 2,
+      "round": 1,
+      "within t": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "first different round": 1,
+      "reader birth totals through t, full": [
+        2
+      ],
+      "reader birth totals through t, region": [
+        2
+      ],
+      "counts by parents alone agree through t": true,
+      "counts by fresh distinctions alone agree through t": false,
+      "first reading differs there": true,
+      "first-round-only reading agrees": false,
+      "first reading at first difference": {
+        "full only": [
+          [
+            [
+              "join",
+              4,
+              4,
+              8
+            ],
+            1
+          ]
+        ],
+        "region only": [
+          [
+            [
+              "join",
+              4,
+              5,
+              9
+            ],
+            1
+          ]
+        ]
+      },
+      "reading including parents at first difference": {
+        "full only": [
+          [
+            [
+              [
+                "join",
+                4,
+                4,
+                8
+              ],
+              [
+                [
+                  "start",
+                  0,
+                  0,
+                  4
+                ],
+                [
+                  "start",
+                  0,
+                  0,
+                  5
+                ],
+                [
+                  "start",
+                  0,
+                  0,
+                  6
+                ],
+                [
+                  "start",
+                  0,
+                  0,
+                  7
+                ]
+              ]
+            ],
+            1
+          ]
+        ],
+        "region only": [
+          [
+            [
+              [
+                "join",
+                4,
+                5,
+                9
+              ],
+              [
+                [
+                  "start",
+                  0,
+                  0,
+                  4
+                ],
+                [
+                  "start",
+                  0,
+                  0,
+                  5
+                ],
+                [
+                  "start",
+                  0,
+                  0,
+                  6
+                ],
+                [
+                  "start",
+                  0,
+                  0,
+                  7
+                ]
+              ]
+            ],
+            1
+          ]
+        ]
+      },
+      "full first-round groups of three or more cut by this region": [],
+      "outside knots joinable to two or more inside members of a full group of three or more": [
+        {
+          "full group": [
+            0,
+            2,
+            3,
+            5
+          ],
+          "outside knot": 1,
+          "joinable inside members": [
+            3,
+            5
+          ],
+          "outside knot in this group": false
+        }
+      ],
+      "fewer steps": [
+        {
+          "steps": 0,
+          "end": "rounds",
+          "agrees": false
+        }
+      ],
+      "first reader births in full": [
+        [
+          [
+            0,
+            2,
+            3,
+            5
+          ],
+          4
+        ],
+        [
+          [
+            2
+          ],
+          2
+        ]
+      ],
+      "first reader births in region": [
+        [
+          [
+            0,
+            2,
+            3,
+            5
+          ],
+          5
+        ],
+        [
+          [
+            2
+          ],
+          2
+        ]
+      ]
+    },
+    {
+      "start index": 2330,
+      "population": "census6",
+      "reader": 5,
+      "round": 2,
+      "within t": [
+        0,
+        1,
+        2,
+        4,
+        5
+      ],
+      "first different round": 2,
+      "reader birth totals through t, full": [
+        3,
+        5
+      ],
+      "reader birth totals through t, region": [
+        3,
+        5
+      ],
+      "counts by parents alone agree through t": true,
+      "counts by fresh distinctions alone agree through t": false,
+      "first reading differs there": true,
+      "first-round-only reading agrees": true,
+      "first reading at first difference": {
+        "full only": [
+          [
+            [
+              "join",
+              2,
+              5,
+              7
+            ],
+            1
+          ]
+        ],
+        "region only": [
+          [
+            [
+              "join",
+              2,
+              6,
+              8
+            ],
+            1
+          ]
+        ]
+      },
+      "reading including parents at first difference": {
+        "full only": [
+          [
+            [
+              [
+                "join",
+                2,
+                5,
+                7
+              ],
+              [
+                [
+                  "join",
+                  2,
+                  4,
+                  6
+                ],
+                [
+                  "join",
+                  3,
+                  4,
+                  7
+                ]
+              ]
+            ],
+            1
+          ]
+        ],
+        "region only": [
+          [
+            [
+              [
+                "join",
+                2,
+                6,
+                8
+              ],
+              [
+                [
+                  "join",
+                  2,
+                  4,
+                  6
+                ],
+                [
+                  "join",
+                  3,
+                  5,
+                  8
+                ]
+              ]
+            ],
+            1
+          ]
+        ]
+      },
+      "full first-round groups of three or more cut by this region": [],
+      "outside knots joinable to two or more inside members of a full group of three or more": [
+        {
+          "full group": [
+            1,
+            2,
+            4
+          ],
+          "outside knot": 3,
+          "joinable inside members": [
+            2,
+            4
+          ],
+          "outside knot in this group": false
+        }
+      ],
+      "fewer steps": [
+        {
+          "steps": 0,
+          "end": "rounds",
+          "agrees": false
+        },
+        {
+          "steps": 1,
+          "end": "rounds",
+          "agrees": false
+        }
+      ]
+    }
+  ]
+}

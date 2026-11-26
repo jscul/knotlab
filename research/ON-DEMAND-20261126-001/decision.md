@@ -2,51 +2,53 @@
 
 Epic `ON-DEMAND-20261126-001` (the coordinator's go-ahead on the owner's intuition; goals G17 with G1), closed 26
 November 2026. A check by the thread, not registered: computed; frozen with the advisor's review and hand test before
-the runs; referee pending; the engine's five-knot check is a stress test pending. [The note](README.md)
+the runs; **refereed (R1): refuted, three Blocks, folded in.** [The note](README.md) · [Referee report](referee-R1/report.md)
+
+> **First closed as "successful; the stop met with none broken" (corrected).** The frozen random sample agreed, but the
+> general claims fail: the hand test before the freeze stopped at the first region that worked, so its "t + 1 steps in
+> all 2,368" was not checked; a funded start gives the reader births in the full growth that its region of t + 1 steps,
+> which stalls, does not; and admission order can change a view read on the way. Logged in `docs/CORRECTIONS.md`.
 
 ## What stands
 
-1. **A reader's view through round t needs only the start within t + 1 steps of the map.** Under not-all-equal, in all
-   2,256 (reader, round) cases of 60 random trees of 40 knots, 58 starts of 25 knots with cycles and 148 six-knot census
-   starts that do not stall, the growth run on the live knots within t + 1 steps of a start knot gives that knot's view
-   through round t exactly, in both readings. Within t steps suffices except where the edge passes through a round-1
-   group of three or more (27 cases, none in the trees).
-2. **Any admission order gives the same view.** Every region holding those knots, and every step of admitting more,
-   gave the same view (1,544 checks).
-3. **Two rules read the whole start.** A knot short in round 1 stops the whole growth, and in 2 of 252 stalling starts it
-   lies where no region grown from the reader reaches; under parity a birth that takes every loose distinction closes
-   the growth, and every one of the 53 cases where a region's view differed was such a closure.
-4. **A reader rests on a fraction of the growth**: a median of 28% of the births in the trees and 34% with cycles.
+1. **The earlier proved bound, not this study's computation.** For funded growths that do not close, a reader's births
+   through round t, with parents and fresh counts, are fixed by the knots within t + 1 steps of the map
+   (`INFLUENCE-CONE-20261120-001`, proved, which this study did not cite before the referee).
+2. **Growing a cut part of the start is not safe.** Cutting a block can make knots short that the whole start funds, so
+   the cut part stalls where the start grows (the region of exactly t + 1 steps fails in 6 of 2,368 hand-test cases, and
+   in a funded 25-knot start the weighting can draw); and admitting knots in different orders can change what is read
+   on the way (180 of 720 orders on a 14-knot start).
+3. **On the frozen random sample both agreed**: 2,256 of 2,256 (reader, round) cases within t + 1 steps and 1,544 of
+   1,544 regions and admission steps, each region grown afresh. This is a count of the sample, not a law.
+4. **Two whole-start reads**: a knot short in round 1 stops the whole growth (in 2 of 252 stalling starts it lay beyond
+   the reader's piece); under parity a region can close on a birth that the full growth gives one fresh distinction
+   (seven closures behind the 53 differing cases).
 
-**Not shown.** Anything settled by being read: the far part is unread, not undetermined. Admission composed with births
-made one at a time; readers that are made knots; starts beyond 40 knots.
+**Not shown.** Admission into a continuing growth; readers born during growth; that the far part is settled by being read
+(it is unread, not undetermined, under the earlier theorem's premise).
 
 ## Position and next directions
 
 | Scope | Verdict | Why |
 | --- | --- | --- |
-| This attempt — a reader's view on demand, frozen and tested on fresh starts | **Status:** Successful; the stop met with none broken | 2,256 of 2,256 cases within t + 1 steps |
-| Local direction — what a reader needs of the growth | Continue | The reach is t + 1 steps; parity's implied birth and the round-1 shortage are the only whole-start reads |
-| Broader exploration — the owner's simulation picture (Chapter 11) | Capability gained | Computing only what a reader needs works, with one check of the whole start |
-| Long-term goal — G17 Typical and rare meeting patterns, with G1 | Capability gained | A reader's dependence on the start is bounded and measured |
+| This attempt — a reader's view grown on a cut part of the start | **Status:** Refuted (referee R1, three Blocks) | The cut can create a shortage and order can change what is read; the sample's agreement does not generalize |
+| Local direction — what a reader needs of the growth | Narrowed | The proved bound needs a funded, non-closing growth; computing it by cutting needs its own funding check |
+| Broader exploration — the owner's simulation picture (Chapter 11) | Searching | "Only the parts we need" holds in the proved form, not as a cut grown alone |
+| Long-term goal — G17 Typical and rare meeting patterns, with G1 | No demonstrated advance | The bound was already proved; the new computation failed |
 
 **Next step:** Research directions — selected: #1 (the coordinator's queued go-ahead)
 
 | # | Direction | Payoff | Concreteness | First step → stop when | Status |
 | --- | --- | --- | --- | --- | --- |
-| 1 | Whole-ring facts as the distinctions of a second layer: do several rings' whole-loop facts obey a knot rule among themselves, and does that keep a fact no single ring holds? | 3/3 — the owner's emergence at more than one layer | 2/3 — the two-class sign under parity is the first layer | Read the nested-pattern and bases-within-bases records, then a frozen test on rings that share knots → a second layer, or an argument that the layers do not stack | Selected · not started |
-| 2 | Admission composed with births one at a time | 2/3 — the owner's picture of filling in during the growth, without rounds | 2/3 — both halves exist (`LOCAL-ROUND-20261123-001`) | Admit knots at random births of the asynchronous law → the view, or a mismatch | Alternative · deferred |
-| 3 | A proof that t + 1 steps suffice | 2/3 — turns the cone into a theorem | 2/3 — the identification and the hand test name the one case | Prove it on the identification's class, with groups read whole → a proof, or a counterexample | Alternative · deferred |
+| 1 | Whole-ring facts as the distinctions of a second layer | 3/3 — the owner's emergence at more than one layer | 2/3 — the two-class sign under parity is the first layer | Started as `LAYERS-20261126-001` | Selected · started |
+| 2 | A funded cut: grow a part with its boundary knots funded as in the whole (demand read from the whole start) | 2/3 — makes on-demand computation safe | 3/3 — the referee's witnesses are the test set | Fund each cut knot by its demand in the full start, rerun the witnesses and the sample → agreement, or a miss | Alternative · deferred |
+| 3 | Admission into a continuing growth, with births one at a time | 2/3 — the owner's picture of filling in during the growth | 2/3 — both halves exist (`LOCAL-ROUND-20261123-001`) | Admit knots at random births of the asynchronous law → the view, or a mismatch | Alternative · deferred |
 
-**Corrections:** none.
-**Goals:** checkpoint row added (G17, G1; capability gained).
-**Assumptions:** A288 added (scaffold: the reader, the region rule, the round, the cap, the populations).
-**Basket:** the postulates line's top items belong to the hearing and meeting lines; `COPYING-PARTS-20261123-001#1` (a
-round read locally) is #2's closest kin.
-**Scaffolds:** A288. Swapped: the knot law, the reading, the weighting (trees, trees with lines, the census), the seed,
-the region (balls, random supersets, admission in steps). Not swapped: the reader as a start knot, the round, the cap
-(rounds past it not read). The result survives every swap made, so it is about the model's locality under
-not-all-equal; the parity differences belong to the parity law.
-**Advisor:** consulted before the freeze; its hand test broke "t steps" and set the frozen claim at t + 1; taken: the
-holders are read one start step beyond the knots, the cap and the round are scaffolds, admission during the growth, "the
-far part is unread, not undetermined"; not taken: composing admission with births one at a time.
+**Corrections:** three Blocks and five narrowings from referee R1, and one point of credit, logged in `docs/CORRECTIONS.md`
+(2026-11-26, "A reader's view on demand: refuted"); the guide's lesson 11.7 corrected.
+**Goals:** checkpoint row corrected (G17, G1; no demonstrated advance).
+**Assumptions:** A288 updated.
+**Basket:** the postulates line's top items belong to the hearing and meeting lines.
+**Scaffolds:** A288. The failures are about the computation (a cut grown alone), not a scaffold of the model.
+**Advisor:** consulted before the freeze; its hand counterexample was right, and the thread's scoring of the hand test
+(stopping at the first region that worked) hid the cases that refute the frozen claim.

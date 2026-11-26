@@ -2,8 +2,17 @@
 
 Epic `ON-DEMAND-20261126-001`, at the coordinator's go-ahead on the owner's intuition, after
 [`LATE-VIEWS-20261126-001`](../LATE-VIEWS-20261126-001/decision.md). A check by the thread, not a registered study;
-computed. The sections down to "Frozen" were committed, after the advisor's review ([question](advisor/question.md),
+computed; refereed (R1: **refuted, three Blocks**; folded in below). The sections down to "Frozen" were committed, after the advisor's review ([question](advisor/question.md),
 [answer](advisor/answer.md)), before the frozen runs below.
+
+## Prior work in the program
+
+Added after the referee (R1, item 9). `INFLUENCE-CONE-20261120-001` ([proof](../INFLUENCE-CONE-20261120-001/cones_proof.md))
+had already proved that for funded growths that do not close, which births a family of knots makes in its first t rounds,
+with their parents and fresh counts, is fixed by the knots within t + 1 steps, by enumerating births through the needed
+interior knots, sharp under both laws. This study ran a different computation, the whole growth on a cut region, and
+the referee found that the cut adds a funding condition the earlier theorem's premise covers and the cut does not. The
+prior-work search was not run before the freeze.
 
 ## The question
 
@@ -50,7 +59,10 @@ itself read the whole start, so that no part can be left unread?
    candidate of two members of the group, so cutting it gives each of them a one-parent birth where the group had one
    way to grow. The knots within t + 1 steps give the view in all 2,368, under both laws.
 
-So the frozen claim is t + 1 steps.
+So the frozen claim is t + 1 steps. [Corrected after the referee:] the hand test stopped at the first region that
+worked, so "t + 1 steps give the view in all 2,368" was not what it checked: some region of at most t + 1 steps works in
+all 2,368, and the region of exactly t + 1 steps in 2,362; in the six others (three starts) the region of t + 1 steps
+stalls, because cutting a block leaves knots that owe more than they hold, while fewer and more steps both work.
 
 ## The advisor's review, taken
 
@@ -107,6 +119,18 @@ not rerun.
 
 ## What was found
 
+> **Referee R1: refuted, three Blocks, folded in** ([report](referee-R1/report.md)). **Block:** the hand test before the
+> freeze stopped at the first region that worked; the region of exactly t + 1 steps fails in 6 of its 2,368 cases.
+> **Block:** a funded start the 25-knot weighting can draw gives the reader two births in round 1 in the full growth and
+> none in its region of two steps, which stalls: omitting one knot puts four others into one holder's block, every pair
+> of them counts as a group, and three become short. So funding the start does not fund the cut. **Block:** admission
+> order can change a view read on the way: on that start one order of adding knots suppresses a birth the other keeps,
+> and on a 14-knot start 180 of 720 orders meet a differing view; every comparison of the study grew a fixed region
+> afresh. **Narrowings:** only 5 of the 27 misses at t steps cut a group; all 27 differ in fresh counts only; the 53
+> parity differences come from seven closures, where the full growth makes the same birth with one fresh distinction;
+> the shares measure ancestry, not computation (42% median on the 38 starts with cycles); one step of the map uses two
+> holder steps; prior work credited (Not a block). The sentences below stand only as counts of the frozen sample.
+
 Three runs ([`results_tree40.jsonl`](results_tree40.jsonl), [`results_treeplus25.jsonl`](results_treeplus25.jsonl),
 [`results_census6.jsonl`](results_census6.jsonl); the stopped first run kept as
 [`results_treeplus25_first_run.jsonl`](results_treeplus25_first_run.jsonl)), scored by [`score.py`](score.py)
@@ -118,13 +142,13 @@ Three runs ([`results_tree40.jsonl`](results_tree40.jsonl), [`results_treeplus25
 | 'tree+', 25 knots | 58 (2 not read: memory, time) | 365 | 365 agree | 352 agree, 13 differ | 329 agree | none |
 | six-knot census sample | 148 (of 400) | 1,480 | 1,480 agree | 1,466 agree, 14 differ | 888 agree | 252 |
 
-**H1 holds: the stop is "none".** Under not-all-equal, in all 2,256 (reader, round) cases, the growth run on the live
+**H1 holds on the frozen sample; as a general claim it is refuted (referee R1, above).** Under not-all-equal, in all 2,256 (reader, round) cases, the growth run on the live
 knots within t + 1 steps of the map gives the reader's view through round t exactly, in both readings. The knots within
 t steps suffice in 2,229; the 27 that need one step more are all in the two sets with cycles or groups of three or more,
 none in the trees, as the hand test found.
 
-**H2 holds.** Every region holding those knots gave the same view (1,544 regions and admission steps under
-not-all-equal): admitting more of the start, in any of the orders drawn, never changed a round already read.
+**H2 holds on the frozen sample** (1,544 regions and admission steps under not-all-equal, each a fixed region grown
+afresh). [Corrected after the referee:] admission order can change a view read on the way (the 25-knot and 14-knot starts above).
 
 **H3 holds.** (a) Of the 252 starts that stall in round 1, the reader's own region stalls within 1 step of the map in
 194, within 2 in 55 and within 3 in 1; in 2 the short knot lies in another piece of the start, which no region grown
@@ -140,10 +164,10 @@ growth does not, at the edge of what it computes (2.9% of its births in the tree
 six-knot starts): provisional births, which the full growth replaces once the knots beyond the edge are admitted, and
 which the reader's view never contains.
 
-**What it says.** In the growth of Chapter 8 under not-all-equal, a reader's view through round t depends on the start
-only within t + 1 steps of the map from it, so the view can be computed on demand from that part alone, filled in in any
-order, after one check of the whole start that no knot is short. Parity's implied birth is the one rule that reads the
-whole presentation at a later round.
+**What it says** [Corrected after the referee:] The earlier proved theorem stands: for funded growths that do not close, a reader's births
+through round t, with their parents and fresh counts, are fixed by the knots within t + 1 steps. Growing a cut part of
+the start as if it were the whole is not a safe way to compute them: a cut can make knots short that were not, and the
+order in which more is admitted can change what is read on the way. On the frozen random sample neither happened.
 
 **What it does not show.** The far part is unread, not undetermined: a deterministic local law can always be run
 lazily, and nothing is settled by being read. The bound of one step of the map a round is the opposite of a link at a

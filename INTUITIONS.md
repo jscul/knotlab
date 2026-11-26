@@ -5460,10 +5460,10 @@ then also need the third property, for which no test is registered.
   the owner's picture set against the record, claim by claim, two cautions,
   and what is open.
 - [11.7 Computing only what is discovered](#117-computing-only-what-is-discovered):
-  the owner's "we only need to compute what is discoverable". A reader's view
-  through round t needs only the start within t + 1 steps of the map, filled in
-  in any order, after one check of the whole start; parity's whole birth is the
-  one rule that reads everything later.
+  the owner's "we only need to compute what is discoverable". In a funded
+  growth that does not close, a reader's view through round t is fixed by the
+  start within t + 1 steps of the map (proved); growing that part alone is not
+  a safe way to compute it, since a cut can leave knots short.
 
 **The intuition.** Asked whether simulating the beginning of life needs the Big
 Bang, the owner answers that it does not: start at the edge of a pond, and keep
@@ -5763,7 +5763,8 @@ the glider travels at a quarter of it, one cell diagonally every four updates.
 **A bounded pace (proved, referee pending).** The growth has a bound of the
 second kind, counted in rounds and steps of the map of joins. Two start knots
 first have a common descendant after exactly as many rounds as there are steps
-of the map between them. Which births a family of knots makes in the first n
+of the map between them. In a growth whose knots are funded and which does not
+close, which births a family of knots makes in the first n
 rounds is fixed by the start within n steps of the map of it, and the fresh
 distinctions those births receive by the start within n + 1; both bounds are
 reached. A change in how many loose distinctions a knot d steps away holds can
@@ -5952,7 +5953,7 @@ record has and its status.
 | A galaxy is logically small | Beside a pattern joined through a meeting, a pattern's own knots grow as beside one knot; through a meeting a part's course tells how many, never which (lessons 11.3 and 10.5) | Computed; refereed in part |
 | A lamp twice as far gives a quarter | A bounded pace of one step of the map a round, with two effects that ignore it; births that differ counted, but no reading of how an amount divides (lesson 11.4) | The pace proved, referee pending; the weakening open |
 | Two drops with the same molecules | Arrangements that agree in every count grow differently; a count of births seldom decides (lesson 11.5) | Computed; refereed |
-| Only the parts we need are computed | A reader's view through round t needs only the start within t + 1 steps of the map, in any order of filling in, after one check of the whole start (lesson 11.7) | Computed, referee pending |
+| Only the parts we need are computed | In a funded growth that does not close, a reader's view through round t is fixed by the start within t + 1 steps of the map; growing that part alone can stall where the whole grows (lesson 11.7) | The bound proved; the method refuted |
 | Descents that feed each other | For a pattern's own descent, only under laws added by hand: whether the other part grows (lesson 10.3), or, for one receiver under a cap, one property of the knot at the other end of a chain (lesson 11.4) | Computed, referee pending |
 
 **Two cautions about the picture (reading).**
@@ -6037,17 +6038,26 @@ and a knot outside the part that meets knots inside it still counts as their
 common neighbour, so a part is computed from its knots and read from the knots
 around it.
 
-**What was found (computed, referee pending).** Under not-all-equal, the live
-knots within t + 1 steps of the map give the reader's view through round t
-exactly. That held in all 2,256 cases read: 60 random starts of 40 knots without
-cycles, 58 of 25 knots with cycles, and 148 six-knot starts of the census.
-Within t steps is enough except where the edge of the part cuts a group of three
-or more knots joined in round 1 (27 cases): a knot just beyond the edge counts
-for two members of the group, so the part needs one step more. Filling in more
-of the start, in every order tried, never changed a round already read (1,544
-checks). And a reader's view rested on about a quarter to a third of all the
-births of the growth.
-([The on-demand study](research/ON-DEMAND-20261126-001/decision.md))
+**What was proved first.** An earlier study proved the bound this asks for:
+in a growth whose knots are all funded and which does not close, which births a
+reader descends into through round t, with their parents and fresh
+distinctions, is fixed by the knots within t + 1 steps of the map
+([the influence cones](research/INFLUENCE-CONE-20261120-001/cones_proof.md),
+proved). So the far part does not decide what the reader reads before then.
+
+**What growing only the part does (computed, refereed: refuted as a method).**
+A later study grew the part within t + 1 steps alone, as if it were the whole
+start, and compared the reader's view with the whole growth. On 266 sampled
+starts every round agreed. But its referee found where it fails. Cutting the
+start can put several knots into one block that were apart, so that each pair
+of them counts as a group and some become short: the part then stalls where the
+whole start grows. In a funded start of 25 knots the reader makes two births in
+round 1, and its part of two steps makes none. And admitting more knots in
+different orders can change what is read on the way (on a 14-knot start, 180 of
+720 orders). So computing on demand needs the part's knots funded as in the
+whole start, not just the knots themselves
+([the on-demand study](research/ON-DEMAND-20261126-001/decision.md) and
+[its referee](research/ON-DEMAND-20261126-001/referee-R1/report.md)).
 
 **Two places where the law reads the whole start.**
 
@@ -6060,14 +6070,14 @@ births of the growth.
   distinction of the start is fixed by all the others, so it gets none of its
   own and the growth closes there; whether a birth is that one depends on
   everything. Each of the 53 cases where a reader's part differed from the whole
-  growth under parity was such a birth. Under not-all-equal no birth is ever
-  fixed this way.
+  growth under parity came from such a birth (seven of them): in the whole
+  growth the same birth gets one fresh distinction. Under not-all-equal no birth
+  is ever fixed this way.
 
 **What it does not show (reading).** The far part is unread, not undetermined:
-a growth whose law reads only nearby knots can always be run this way, and
-nothing is settled by being read. The bound of t + 1 steps is the opposite of a
-link at a distance, since nothing beyond it can change the reader's view before
-the round that reaches it. Earlier studies found no far change heard late
+nothing is settled by being read. The proved bound is the opposite of a link at
+a distance, since in a funded growth that does not close nothing beyond it can
+change the reader's view before the round that reaches it. Earlier studies found no far change heard late
 (lesson 11.3) and, with free settings, nothing in the model beyond the
 classical bound on correlations
 ([the study of what lies beyond rejection](research/BEYOND-REJECTION-20261126-001/decision.md)).
@@ -6079,7 +6089,8 @@ a cycle is its smallest case).
 **The link (intuition).** The literature's name for the bound is the
 dependence cone of a cellular automaton: in the Game of Life of lesson 1.3, a
 cell after t steps depends only on the cells within t steps of it. Here it is
-one step more, because a group is read whole at the edge of the part.
+one step more, and the cone holds only where every knot is funded: a cut that
+changes what a knot owes changes what it makes.
 
 ## Chapter 12. Emergence, again and again
 

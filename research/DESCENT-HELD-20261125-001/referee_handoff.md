@@ -1,5 +1,7 @@
 # Referee hand-off: DESCENT-HELD-20261125-001
 
+**Refereed, 26 November 2026: confirmed with fixes** ([report R1](referee-R1/report.md)); its fixes are folded into the records it names. In its second row the four-way "exactly when" is too strong: the four conditions suffice.
+
 The note's two arguments are the study's content and are not refereed; ticket A is their check and is referee pending.
 The pre-registration has the prior-work searches under "Prior work in the program"; run
 `python3 -B scripts/track.py objects-gate research/DESCENT-HELD-20261125-001A/preregistration.md`. The study builds on

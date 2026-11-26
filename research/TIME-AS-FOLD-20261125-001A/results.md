@@ -28,6 +28,39 @@ knots waiting; MET lets a birth take a distinction held by a knot its parent mee
 held by a recorded ancestor k parent steps above its parent; OLDEST, NEWEST, IN-TURN and BY-COUNT choose among
 candidates by name. A period is always measured in rounds, which are supplied.
 
+> **Referee report R1, 26 November 2026: confirmed with fixes, no block** ([the report](../TIME-AS-FOLD-20261125-001/referee-R1/report.md)). A planted count
+> passes the reading under all 240 numberings and recovers ticks 1, 2 and 3; all 88,299 archived tests fail the count;
+> the separate reading of three returns holds in 78 tests, with 148 undecided. Read this note with these narrowings.
+> - **Why the count failed.** "In every one the second part's own knots grow from period to period" is true of 8 of
+>   the 78 responses. In 44 the second part's own count is constant and positive, and those fail because births go on
+>   after the clock is barred; in 26 the counts are unequal and do not increase. The series 7, 15, 32, 74 describes 4
+>   of the 20 cases compared; four give 11, 22, 50, 114, eight give 2, 1, 0, 0 and four give 2, 0, 0, 0.
+> - **What was searched.** Not "every made clock and every second part wholly apart from it": the paired run took one
+>   clock for each form, the first and the next choice round, and at most eight eligible second parts in name order
+>   (7,310 of 14,557 combinations with a test reached that cap). The 5,000 runs are the first eligible ones in the
+>   saved output order; one configuration left out at the boundary was rebuilt by the referee and gives 26 more tests,
+>   all failing.
+> - **The argument about counts.** On the twelve named starts neither primary law gives parts off at four ticks. The
+>   argument proves less than "for every start": under the first law each tick that gives off parts or copies needs a
+>   different start knot to act in that interval; under waiting, start knots can act in different intervals and no
+>   bound of three follows.
+> - **What the three returns establish.** In all 50 tests the three-member clock stops returning with the second part
+>   barred, and in the other direction the second part changes course; only 36 second parts have three members and a
+>   later return of their own. The prediction as literally written fails; the reading adopted after the outputs were
+>   seen passes. In 46 of the 78 tests a made knot is common to all three first meetings; in the other 32 only start
+>   knots supply those meetings. So "made by births: the clocks, the second parts and their meetings" holds for 46.
+> - **Numberings.** For "36% to 63% of shifts" read: 52 of 144 to 86 of 120 with one clock for each form, or 44 of 112
+>   to 103 of 112 with every clock. All 36 larger-start cases lose eligibility under some shift.
+> - **A missed return can come later.** No eligible run returned at the next even round after those, and four
+>   returned two rounds later still (on one eight-knot start, under both knot laws).
+> - **The knot test.** The hand prediction of two failing joins missed 23 more. The projection test and the canonical
+>   knot test are not the same thing: 15 of the 78 positive tests have a birth of two places in their baseline, fewer
+>   than the canonical test requires, and 25 have one in the baseline or a comparison. The 78 verdicts are about a
+>   response and stand; how many births of fewer than three places the whole census holds is not known.
+> - **Smaller fixes.** Four of the 46 recorded readings were written after the outputs they concern; the family of
+>   laws was frozen after disclosed prototype work, two of its rules chosen after the prototype's census; "8 of 82
+>   cells" is eight of 164 entries in six of 82 rows.
+
 ## Verdicts
 
 | # | Kind | Verdict | What was found |

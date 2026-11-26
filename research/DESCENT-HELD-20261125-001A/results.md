@@ -27,6 +27,41 @@ which 3,348 have every start knot passing the knot test under parity. The laws a
 RATION-3, CAP-3, FLOOR1 and ORD are rations; waiting, retiring and offshoots are what a short knot does; HOLD lets a
 knot keep a loose place for a cancelled group.
 
+> **Referee report R1, 26 November 2026: confirmed with fixes, no block** ([the report](../DESCENT-HELD-20261125-001/referee-R1/report.md)). The restart
+> obstruction, the conditional argument about counts and the census under fourteen laws hold; an independent growth
+> replayed every named run and a sample of the census. Read this note with these narrowings.
+> - **The restart argument and "only".** The exchange of the two knots already defeats a reader within one start's
+>   half-built history; the two-record restart argument by itself needs both histories. So for "only where a rule
+>   writes it" read: the forms of count tested here write it; whether a law can show it from a restricted class of
+>   starts without that input is open. "Ten recorded rations" is ten cases under seven recorded rations.
+> - **The converse and the earlier stamp.** The four conditions suffice; given three of them, the place rule is right
+>   exactly when the fourth holds. "It also needs that no knot retires" is too strong: two census starts retire every
+>   knot and keep every place right. And "the stamp's rule word for word" holds under the argument's hypotheses only:
+>   on the registered four-knot witness with waiting, a join with parents at steps zero and one gets no barred
+>   distinction where the earlier stamp gives two.
+> - **Closing and fillers.** For "where the base law closes, the barred form grows on without end" read: an earlier
+>   barred addition disables the closing exception, and further births depend on the usable distinctions left. Of 26
+>   comparisons with such an addition 22 had another birth and four stopped. "No birth changes" holds through the
+>   base law's closing round under parity.
+> - **The least period.** The two registered rings do return after six rounds. The general formula does not hold: a
+>   lone four-place start gives a marked return after three rounds where the formula says six.
+> - **The knot test.** The parity argument needs a connected start, and a knot needs three places: a connected
+>   passing start closes on a birth of two places. The tests cover the last structure of each completed run, 270,753
+>   parity knots by both methods and 12,625 of 278,185 not-all-equal knots.
+> - **The swaps.** The parents-differ swap keeps every whole-run verdict; the closing swap changes 31 of the 33 it
+>   acts on, all from wrong to right.
+> - **The census wording.** Two of the four holding laws do allow waiting (48 and 48 starts; 369 and 462 under the
+>   two that do not). "The stamp counted in fives is right exactly where the greatest difference is 2" is among
+>   starts with mixed parent steps.
+> - **The first wrong round.** The stored round is the first checked round with a wrong place, not the first: all
+>   45,142 runs whose start knots already disagree report a later round. Their whole-run verdicts stand.
+> - **The score.** For "all hold on what was run" read: the main census counts reproduce; the planted-error check
+>   fails as worded (225 of 246 actual planted errors matched the frozen prediction, 21 did not, and 62 scheduled
+>   cases had no birth to alter); the birth comparison holds through closure; five items had no prediction.
+> - **Credit.** The two-knot exchange and the three-valued stamp were already in the studies of parents from holders
+>   and of the least record; this study adds the restart census, the construction by place counts and the measured
+>   scope of the earlier stamp's failure.
+
 ## Verdicts
 
 | # | Kind | Verdict | What was found |

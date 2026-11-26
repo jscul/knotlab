@@ -1,5 +1,7 @@
 # Referee hand-off: TIME-AS-FOLD-20261125-001
 
+**Refereed, 26 November 2026: confirmed with fixes** ([report R1](referee-R1/report.md)); its fixes are folded into the records it names. In its knot-test row, "P11, which fails as predicted by hand" is wrong: the hand prediction of two failures missed 23 more.
+
 Ticket A is referee pending. Its pre-registration has the prior-work searches under "Prior work in the program"; run
 `python3 -B scripts/track.py objects-gate research/TIME-AS-FOLD-20261125-001A/preregistration.md`. It builds on
 `PARTS-MEET-AGAIN-20261124-001`, `RING-IN-BALANCE-20261123-001` and `COPYING-PARTS-20261123-001`, all referee pending.

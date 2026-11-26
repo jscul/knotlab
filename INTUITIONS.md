@@ -4451,7 +4451,7 @@ where it makes offshoots the holder steps needed are one fewer than the round
 every law tried, the order cannot always be recovered from what is built
 ([the search for parents in what is built](research/PARENTS-FROM-HOLDERS-20261124-001/decision.md)).
 
-**Three values handed down (computed, referee pending).** If every new knot
+**Three values handed down (computed; refereed, confirmed with fixes).** If every new knot
 writes one of three values, one on from its parents' value (assumption A247, a
 scaffold), a knot distinguishes its parents from its children by comparing
 values across one shared distinction. This gave every parent on every structure
@@ -4470,17 +4470,23 @@ counter modulo three, written by hand
 ([the study of the least record](research/LEAST-RECORD-20261124-001/decision.md);
 lesson 8.1).
 
-**The same count, written by the ration (argued, checked by a run, referee
-pending).** Can the structure hold that count itself? Only where a rule writes
-it. Give each new knot 0, 1 or 2 further fresh distinctions so that its number
-of places is one more, counted in threes, than its parents'. Then the two
-holders of a shared distinction show which is the parent by their counts. This
-was right at every shared distinction on all 20,677 runs where its conditions
-hold: the start's knots that share a distinction already agree in their
-counts, and every birth's parents are equally many parent steps from the
-start, counted in threes. With the added distinctions barred from further
-births, no birth changes; that the rule can be deleted without changing a
-birth shows it is the written value again, in another place. So the supplied
+**The same count, written by the ration (argued, checked by a run; refereed,
+confirmed with fixes:
+[the report](research/DESCENT-HELD-20261125-001/referee-R1/report.md)).** Can
+the structure hold that count itself? The forms of count tried here hold it
+because a rule writes it; whether a law can show it from a restricted class
+of starts without that is open. Give each new knot 0, 1 or 2 further fresh
+distinctions so that its number of places is one more, counted in threes,
+than its parents'. Then the two holders of a shared distinction show which is
+the parent by their counts. This was right at every shared distinction on
+all 20,677 runs where its four conditions hold: the start's knots that share
+a distinction already agree in their counts; every birth's parents are
+equally many parent steps from the start, counted in threes; no knot's count
+changes later by a number not divisible by three; and no closing birth
+breaks the count. With the added distinctions barred from further births, no
+birth changes through the round in which the base law closes under parity;
+that the rule can be deleted without changing a birth shows it is the written
+value again, in another place. So the supplied
 record is moved into the law, not removed, and it is relative to a start
 supplied with its knots agreeing (133 of the 3,348 census starts). Under the
 recorded laws, with no such rule, nothing the structure shows can give the
@@ -4756,26 +4762,32 @@ return was then tested, in the study below.
 question, and one study took it up (TIME-AS-FOLD-20261125-001; the record's
 identifier, its "fold" short for the owner's phrase). It fixed its laws first,
 the two of least cost that let parts meet and a registered family of others,
-and then asked of every made clock and every second part wholly apart from it
-whether the second part counts the clock's ticks. Lesson 10.4 sets it beside
+and then asked of made clocks and second parts wholly apart from them whether
+the second part counts the clock's ticks: one clock for each form, and at
+most eight second parts for each. Lesson 10.4 sets it beside
 the study of a made copier.
 
-**No made count of returns was found (computed, referee pending).** A count
+**No made count of returns was found (computed; refereed, confirmed with
+fixes:
+[the report](research/TIME-AS-FOLD-20261125-001/referee-R1/report.md)).** A count
 was asked for in a form a program can decide: the second part makes the same
 number of knots of its own in each of four periods, and makes no more once the
 clock is barred. In 88,299 tests, under every law run, that fails, each test
-decided. Under the two laws of least cost no clock gives parts off at four
-ticks at all; under the first of them this is argued for every start, given
-one supplied rule (a birth's fresh distinctions are counted by its distinct
-inputs). The weaker thing, a second part whose course differs when the clock
-is barred after each of three returns, was found in 78 tests, all under rules
-that take from a recorded ancestor and choose by name; every such case is lost
-under some renumbering of its start, so each is a case under a supplied
-numbering, and in each the second part's own knots grow from period to period,
-so there is no fixed number for each tick. Every period is measured in rounds,
-which are supplied. The study reaches neither side of its stop: no made count,
-and no reason that no law of this kind can hold one. About half of its main
-run was not run, cut at the hour, and is not a negative
+decided; a count planted by hand passes, so the reading could have found one.
+Under the two laws of least cost no clock gives parts off at four ticks on
+the twelve starts read; the argument for the first of them shows that each
+such tick needs a different start knot to act, which bounds the ticks only
+where short knots retire or make offshoots. The weaker thing, a second part
+whose course differs when the clock is barred after each of three returns,
+was found in 78 tests, all under rules that take from a recorded ancestor and
+choose by name; every such case is lost under some renumbering of its start,
+so each is a case under a supplied numbering. In 44 of the 78 the second
+part's own count is the same in every period and it fails because its births
+go on after the clock is barred; in 8 its count grows from period to period.
+In 32 of the 78 only start knots supply the meetings. Every period is measured
+in rounds, which are supplied. The study reaches neither side of its stop: no
+made count, and no reason that no law of this kind can hold one. About half of
+its main run was not run, cut at the hour, and is not a negative
 ([the study's decision](research/TIME-AS-FOLD-20261125-001/decision.md)).
 
 ## Chapter 10. Folds of emergence
@@ -5227,7 +5239,7 @@ identifier; its "fold" is short for the owner's phrase) takes sub-goal B329,
 under goal G5, dynamics, with G15 and goal G18, comparing growth laws: whether
 a pattern the growth makes can count another pattern's returns. It has run,
 and found none: lesson 9.6, "No made count of returns was found", gives the
-result (computed, referee pending).
+result (computed; refereed, confirmed with fixes).
 
 ### 10.5 What is open
 

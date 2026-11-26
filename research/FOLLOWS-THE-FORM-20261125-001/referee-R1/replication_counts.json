@@ -1,0 +1,1397 @@
+{
+  "G": {
+    "births_checked_for_takes": 85436,
+    "no_take_exact": 209,
+    "no_take_invariant_equal": 209,
+    "no_take_sample": 209,
+    "no_take_snapshots_compared_including_starts": 2166,
+    "sample_by_runset": {
+      "R1": 287,
+      "R2": 113
+    },
+    "sole_take_exact": 191,
+    "sole_take_sample": 191,
+    "starts_as_written": 3,
+    "takes_checked": 9547
+  },
+  "PR1": {
+    "horizon_or_partition_differs": [],
+    "run_count_by_round_differs_outside_prediction": [],
+    "studies_compared": 270
+  },
+  "PR2": {
+    "cells_compared": 62,
+    "differences": {}
+  },
+  "PR3": {
+    "cells_compared": 162,
+    "differences": {}
+  },
+  "PR4": {
+    "R1 mixed, retiring or offshoots": {
+      "either": 0,
+      "runs": 3060,
+      "start_knot_in_later_roster": 0,
+      "start_knot_in_next_roster": 0
+    },
+    "R1 mixed, waiting": {
+      "either": 858,
+      "runs": 1530,
+      "start_knot_in_later_roster": 858,
+      "start_knot_in_next_roster": 251
+    },
+    "R1 second, retiring or offshoots": {
+      "either": 0,
+      "runs": 2280,
+      "start_knot_in_later_roster": 0,
+      "start_knot_in_next_roster": 0
+    },
+    "R1 second, waiting": {
+      "either": 744,
+      "runs": 1140,
+      "start_knot_in_later_roster": 744,
+      "start_knot_in_next_roster": 376
+    },
+    "R2 fresh, retiring or offshoots": {
+      "either": 0,
+      "runs": 3660,
+      "start_knot_in_later_roster": 0,
+      "start_knot_in_next_roster": 0
+    },
+    "R2 fresh, waiting": {
+      "either": 1506,
+      "runs": 1830,
+      "start_knot_in_later_roster": 1506,
+      "start_knot_in_next_roster": 634
+    }
+  },
+  "PR5": {
+    "cells_compared": 158,
+    "differences": {}
+  },
+  "R1_studies_with_two_of_ends_steady_grows": {
+    "chains": 52,
+    "mixed": 58,
+    "second": 62
+  },
+  "controls": {
+    "knot_test_groups": {
+      "nae in retained half": {
+        "birth_vs_direct": 106861,
+        "completed": 99,
+        "n_disagree": 0,
+        "n_fail": 0,
+        "n_untested": 0,
+        "not_run": 1,
+        "verdicts": 113640
+      },
+      "nae outside retained half": {
+        "birth_vs_direct": 96747,
+        "completed": 80,
+        "n_disagree": 0,
+        "n_fail": 0,
+        "n_untested": 0,
+        "not_run": 20,
+        "verdicts": 100244
+      },
+      "parity in retained half": {
+        "birth_vs_direct": 0,
+        "completed": 50,
+        "n_disagree": 0,
+        "n_fail": 0,
+        "n_untested": 0,
+        "verdicts": 62347
+      },
+      "parity outside retained half": {
+        "birth_vs_direct": 0,
+        "completed": 34,
+        "n_disagree": 0,
+        "n_fail": 0,
+        "n_untested": 0,
+        "not_run": 16,
+        "verdicts": 49208
+      }
+    },
+    "knot_test_jobs_not_run": {
+      "1002": "R2|nae|fresh|O|MET-SOLE|FLOOR1|CANCEL-RETIRE|None|True",
+      "1012": "R2|nae|fresh|K|MET-SOLE|FLOOR1|CANCEL-WAIT|star3:2;2,3,3@centre|True",
+      "1028": "R2|nae|fresh|M|None|ORD|CANCEL-WAIT|path:2,1,3,3@2|True",
+      "1032": "R2|nae|fresh|N|None|FLOOR1|CANCEL-WAIT|ring:2,3,3@0|True",
+      "1034": "R2|nae|fresh|N|MET-SOLE|FLOOR1|CANCEL-WAIT|path:2,1,2,2@2|True",
+      "1036": "R2|nae|fresh|N|MET-SOLE|FLOOR1|CANCEL-RETIRE|ring:1,1,2,2@0|True",
+      "1048": "R2|nae|fresh|O|MET-SOLE|ORD|CANCEL-OFFSHOOT|star3:2;2,3,3@centre|True",
+      "1054": "R2|nae|fresh|O|MET-SOLE|CAP-3|CANCEL-WAIT|ring:1,1,2,3@0|True",
+      "1056": "R2|nae|fresh|N|MET-SOLE|FLOOR1|CANCEL-WAIT|star3:2;2,3,3@centre|True",
+      "1058": "R2|nae|fresh|M|None|CAP-3|CANCEL-RETIRE|path:1,1,1,3@0|True",
+      "1059": "R2|nae|fresh|O|None|CAP-3|CANCEL-RETIRE|path:2,1,2,2@2|True",
+      "1067": "R2|nae|fresh|O|None|CAP-3|CANCEL-OFFSHOOT|star3:2;2,2,3@arm|True",
+      "1069": "R2|nae|fresh|M|MET-SOLE|CAP-3|CANCEL-OFFSHOOT|ring:1,2,1,2@0|True",
+      "1074": "R2|nae|fresh|L|None|ORD|CANCEL-OFFSHOOT|ring:1,3,3,3@0|True",
+      "1076": "R2|nae|fresh|M|None|FLOOR1|CANCEL-RETIRE|path:2,1,1,2@0|True",
+      "1083": "R2|nae|fresh|N|None|ORD|CANCEL-WAIT|ring:3,1,3,1@0|True",
+      "1088": "R2|nae|fresh|L|MET-SOLE|CAP-3|CANCEL-WAIT|ring:0,3,2,3@0|True",
+      "1090": "R2|nae|fresh|M|None|ORD|CANCEL-RETIRE|ring:1,1,2,2@0|True",
+      "1092": "R2|nae|fresh|K|None|CAP-3|CANCEL-WAIT|path:1,1,1,3@0|True",
+      "1096": "R2|nae|fresh|K|MET-SOLE|CAP-3|CANCEL-WAIT|path:2,1,1,2@0|True",
+      "1152": "R4|parity|fresh|M|MET-SOLE|CAP-3|CANCEL-OFFSHOOT|ring:1,1,2,3@0|True",
+      "1153": "R4|parity|fresh|K|None|ORD|CANCEL-RETIRE|ring:3,3,1,3@0|True",
+      "1155": "R4|parity|fresh|N|None|CAP-3|CANCEL-OFFSHOOT|path:2,1,1,2@0|True",
+      "1159": "R4|parity|fresh|K|MET-SOLE|ORD|CANCEL-RETIRE|path:2,3,2,3@2|True",
+      "1165": "R4|parity|fresh|O|MET-SOLE|CAP-3|CANCEL-OFFSHOOT|ring:1,2,3,3@0|True",
+      "1167": "R4|parity|fresh|K|MET-SOLE|ORD|CANCEL-WAIT|path:2,1,2,2@2|True",
+      "1169": "R4|parity|fresh|M|MET-SOLE|FLOOR1|CANCEL-WAIT|path:1,1,1,3@0|True",
+      "1172": "R4|parity|fresh|L|None|ORD|CANCEL-RETIRE|ring:2,2,2,3@0|True",
+      "1173": "R4|parity|fresh|N|MET-SOLE|ORD|CANCEL-OFFSHOOT|star3:2;3,2,3@arm|True",
+      "1179": "R4|parity|fresh|O|None|CAP-3|CANCEL-OFFSHOOT|path:2,3,3,3@1|True",
+      "1181": "R4|parity|fresh|L|MET-SOLE|FLOOR1|CANCEL-WAIT|ring:2,3,1,3@0|True",
+      "1184": "R4|parity|fresh|K|MET-SOLE|ORD|CANCEL-OFFSHOOT|ring:2,1,1,1@0|True",
+      "1185": "R4|parity|fresh|N|None|FLOOR1|CANCEL-WAIT|path:2,2,3,3@1|True",
+      "1187": "R4|parity|fresh|M|None|ORD|CANCEL-RETIRE|star3:2;1,2,3@arm|True",
+      "1191": "R4|parity|fresh|K|None|FLOOR1|CANCEL-RETIRE|ring:0,1,3,3@0|True",
+      "1194": "R4|parity|fresh|L|None|ORD|CANCEL-OFFSHOOT|path:2,2,3,2@2|True",
+      "941": "R2|nae|fresh|L|None|ORD|CANCEL-WAIT|ring:3,1,3,1@0|True"
+    },
+    "records_by_launch": {
+      "after cut": {
+        "knot test": 22
+      },
+      "original": {
+        "knot test": 241,
+        "renumber": 900
+      }
+    },
+    "renumber_fail": [],
+    "renumber_jobs_compared": 900,
+    "secondary_renumber_fail": [],
+    "truncated_control_shards_and_recovered_rows": {
+      "controls_0of8.jsonl.gz": 116,
+      "controls_3of8.jsonl.gz": 125
+    }
+  },
+  "fresh_sanity_and_parity": {
+    "S1_bare_class": 90,
+    "S2_PN6": {
+      "NAE studies with at least two form classes": 90,
+      "parity studies with at least three form classes": 87
+    },
+    "S3_first_knot_against_two": {
+      "none, CAP-3, CANCEL-OFFSHOOT": [
+        20,
+        20
+      ],
+      "none, CAP-3, CANCEL-RETIRE": [
+        20,
+        20
+      ],
+      "none, CAP-3, CANCEL-WAIT": [
+        20,
+        20
+      ],
+      "none, FLOOR1, CANCEL-OFFSHOOT": [
+        20,
+        20
+      ],
+      "none, FLOOR1, CANCEL-RETIRE": [
+        20,
+        20
+      ],
+      "none, FLOOR1, CANCEL-WAIT": [
+        20,
+        20
+      ],
+      "none, ORD, CANCEL-OFFSHOOT": [
+        20,
+        20
+      ],
+      "none, ORD, CANCEL-RETIRE": [
+        20,
+        20
+      ],
+      "none, ORD, CANCEL-WAIT": [
+        20,
+        20
+      ],
+      "sole, CAP-3, CANCEL-OFFSHOOT": [
+        20,
+        20
+      ],
+      "sole, CAP-3, CANCEL-RETIRE": [
+        20,
+        20
+      ],
+      "sole, CAP-3, CANCEL-WAIT": [
+        20,
+        20
+      ],
+      "sole, FLOOR1, CANCEL-OFFSHOOT": [
+        20,
+        20
+      ],
+      "sole, FLOOR1, CANCEL-RETIRE": [
+        20,
+        20
+      ],
+      "sole, FLOOR1, CANCEL-WAIT": [
+        20,
+        20
+      ],
+      "sole, ORD, CANCEL-OFFSHOOT": [
+        20,
+        20
+      ],
+      "sole, ORD, CANCEL-RETIRE": [
+        20,
+        20
+      ],
+      "sole, ORD, CANCEL-WAIT": [
+        20,
+        20
+      ]
+    },
+    "differences_by_field": {
+      "make wider knots": [
+        "R2|nae|fresh|K|None|ORD|CANCEL-WAIT|None|True",
+        "R2|nae|fresh|K|MET-SOLE|ORD|CANCEL-OFFSHOOT|None|True",
+        "R2|nae|fresh|K|None|ORD|CANCEL-OFFSHOOT|None|True",
+        "R2|nae|fresh|K|MET-SOLE|ORD|CANCEL-RETIRE|None|True",
+        "R2|nae|fresh|K|MET-SOLE|ORD|CANCEL-WAIT|None|True",
+        "R2|nae|fresh|K|None|ORD|CANCEL-RETIRE|None|True"
+      ],
+      "sec_only knots": [
+        "R2|nae|fresh|O|MET-SOLE|ORD|CANCEL-RETIRE|path:1,2,1,3@0|True",
+        "R2|nae|fresh|O|MET-SOLE|ORD|CANCEL-RETIRE|path:3,1,3@0|True",
+        "R2|nae|fresh|O|MET-SOLE|ORD|CANCEL-RETIRE|star3:2;2,3,3@arm|True",
+        "R2|nae|fresh|O|MET-SOLE|ORD|CANCEL-RETIRE|path:3,3,3@1|True",
+        "R2|nae|fresh|O|MET-SOLE|ORD|CANCEL-RETIRE|star3:0;2,3,3@arm|True",
+        "R2|nae|fresh|O|MET-SOLE|ORD|CANCEL-RETIRE|ring:3,3,1,3@0|True"
+      ],
+      "wider knots": [
+        "R2|nae|fresh|K|MET-SOLE|CAP-3|CANCEL-WAIT|path:2,3,1,3@3|True",
+        "R2|nae|fresh|K|MET-SOLE|FLOOR1|CANCEL-WAIT|path:2,3,1,3@3|True",
+        "R2|nae|fresh|K|MET-SOLE|ORD|CANCEL-WAIT|path:1,1,3,2@0|True",
+        "R2|nae|fresh|K|MET-SOLE|CAP-3|CANCEL-WAIT|path:1,1,3,2@0|True",
+        "R2|nae|fresh|K|MET-SOLE|ORD|CANCEL-RETIRE|path:3,1,2,3@0|True",
+        "R2|nae|fresh|K|MET-SOLE|ORD|CANCEL-OFFSHOOT|path:2,3,1,3@3|True",
+        "R2|nae|fresh|K|MET-SOLE|FLOOR1|CANCEL-WAIT|path:1,1,3,2@0|True",
+        "R2|nae|fresh|K|MET-SOLE|CAP-3|CANCEL-RETIRE|path:3,1,2,3@0|True",
+        "R2|nae|fresh|L|MET-SOLE|ORD|CANCEL-WAIT|star3:1;1,3,3@arm|True",
+        "R2|nae|fresh|M|MET-SOLE|ORD|CANCEL-WAIT|ring:2,3,1,3@0|True",
+        "R2|nae|fresh|K|MET-SOLE|FLOOR1|CANCEL-RETIRE|path:3,1,2,3@0|True",
+        "R2|nae|fresh|K|MET-SOLE|ORD|CANCEL-OFFSHOOT|path:1,1,3,2@0|True",
+        "R2|nae|fresh|L|MET-SOLE|ORD|CANCEL-OFFSHOOT|star3:1;1,3,3@arm|True",
+        "R2|nae|fresh|M|MET-SOLE|ORD|CANCEL-OFFSHOOT|path:3,3,3@1|True",
+        "R2|nae|fresh|K|MET-SOLE|ORD|CANCEL-OFFSHOOT|path:3,1,2,3@0|True",
+        "R2|nae|fresh|K|MET-SOLE|ORD|CANCEL-WAIT|path:2,3,1,3@3|True"
+      ]
+    },
+    "fields_used_for_parity_comparison": [
+      "make",
+      "wider",
+      "sec_only",
+      "rounds_read",
+      "stop",
+      "knots"
+    ],
+    "own_descent_differs_through_common_horizon": [
+      "R2|nae|fresh|K|None|ORD|CANCEL-WAIT|None|True",
+      "R2|nae|fresh|K|None|ORD|CANCEL-OFFSHOOT|None|True",
+      "R2|nae|fresh|K|None|ORD|CANCEL-RETIRE|None|True"
+    ],
+    "paired_runs": 5490,
+    "parity_studies_with_different_horizon": [],
+    "parity_studies_with_different_membership": [],
+    "parity_studies_with_different_wider_membership": [
+      [
+        "K",
+        "fresh",
+        "sole",
+        "FLOOR1",
+        "CANCEL-RETIRE"
+      ],
+      [
+        "K",
+        "fresh",
+        "sole",
+        "FLOOR1",
+        "CANCEL-WAIT"
+      ],
+      [
+        "K",
+        "fresh",
+        "sole",
+        "CAP-3",
+        "CANCEL-RETIRE"
+      ],
+      [
+        "K",
+        "fresh",
+        "sole",
+        "CAP-3",
+        "CANCEL-WAIT"
+      ],
+      [
+        "K",
+        "fresh",
+        "sole",
+        "ORD",
+        "CANCEL-RETIRE"
+      ],
+      [
+        "K",
+        "fresh",
+        "sole",
+        "ORD",
+        "CANCEL-WAIT"
+      ]
+    ],
+    "studies": 90
+  },
+  "frozen_digests_match": {
+    "experiments/PARTS-MEET-AGAIN-20261124-001A/PARTS-MEET-AGAIN-20261124-001A-E001_meet_again/pm.py": true,
+    "experiments/WHAT-A-BIRTH-CARRIES-20261125-001B/WHAT-A-BIRTH-CARRIES-20261125-001B-E001_link_through_a_made_knot/eng.py": true,
+    "research/FOLLOWS-THE-FORM-20261125-001/claim.md": true,
+    "research/FOLLOWS-THE-FORM-20261125-001/definitions.md": true,
+    "research/FOLLOWS-THE-FORM-20261125-001A/disclosed.json": true,
+    "research/FOLLOWS-THE-FORM-20261125-001A/preregistration.md": true,
+    "research/FOLLOWS-THE-FORM-20261125-001A/seeds.json": true,
+    "research/WHAT-A-BIRTH-CARRIES-20261125-001/definitions_b.md": true
+  },
+  "run_counts": {
+    "R1": 13680,
+    "R2": 5490,
+    "R3": 5670,
+    "R4": 5490
+  },
+  "tables": {
+    "R*": {
+      "mixed": {
+        "none, CANCEL-OFFSHOOT": {
+          "9": 15
+        },
+        "none, CANCEL-RETIRE": {
+          "9": 15
+        },
+        "none, CANCEL-WAIT": {
+          "9": 15
+        },
+        "sole, CANCEL-OFFSHOOT": {
+          "3": 2,
+          "4": 1,
+          "5": 2,
+          "9": 10
+        },
+        "sole, CANCEL-RETIRE": {
+          "3": 2,
+          "4": 1,
+          "5": 1,
+          "6": 1,
+          "9": 10
+        },
+        "sole, CANCEL-WAIT": {
+          "3": 2,
+          "4": 2,
+          "5": 1,
+          "9": 10
+        }
+      },
+      "second": {
+        "none, CANCEL-OFFSHOOT": {
+          "9": 15
+        },
+        "none, CANCEL-RETIRE": {
+          "9": 15
+        },
+        "none, CANCEL-WAIT": {
+          "6": 1,
+          "7": 1,
+          "9": 13
+        },
+        "sole, CANCEL-OFFSHOOT": {
+          "2": 2,
+          "3": 2,
+          "4": 1,
+          "9": 10
+        },
+        "sole, CANCEL-RETIRE": {
+          "2": 1,
+          "3": 1,
+          "4": 3,
+          "9": 10
+        },
+        "sole, CANCEL-WAIT": {
+          "2": 1,
+          "3": 3,
+          "4": 1,
+          "9": 10
+        }
+      }
+    },
+    "after the first round": {
+      "mixed": {
+        "none, CANCEL-OFFSHOOT": {
+          "first told apart in round 2 or later": 1096,
+          "in round 3 or later with the wider records the same through round 2": 0,
+          "of those, the wider record of round 1 the same": 512,
+          "pairs": 18375,
+          "told apart at R*": 12058
+        },
+        "none, CANCEL-RETIRE": {
+          "first told apart in round 2 or later": 1096,
+          "in round 3 or later with the wider records the same through round 2": 0,
+          "of those, the wider record of round 1 the same": 512,
+          "pairs": 18375,
+          "told apart at R*": 10933
+        },
+        "none, CANCEL-WAIT": {
+          "first told apart in round 2 or later": 3047,
+          "in round 3 or later with the wider records the same through round 2": 1287,
+          "of those, the wider record of round 1 the same": 2051,
+          "pairs": 18375,
+          "told apart at R*": 13658
+        },
+        "sole, CANCEL-OFFSHOOT": {
+          "first told apart in round 2 or later": 772,
+          "in round 3 or later with the wider records the same through round 2": 0,
+          "of those, the wider record of round 1 the same": 586,
+          "pairs": 18375,
+          "told apart at R*": 13895
+        },
+        "sole, CANCEL-RETIRE": {
+          "first told apart in round 2 or later": 726,
+          "in round 3 or later with the wider records the same through round 2": 0,
+          "of those, the wider record of round 1 the same": 350,
+          "pairs": 18375,
+          "told apart at R*": 12491
+        },
+        "sole, CANCEL-WAIT": {
+          "first told apart in round 2 or later": 3115,
+          "in round 3 or later with the wider records the same through round 2": 2175,
+          "of those, the wider record of round 1 the same": 2510,
+          "pairs": 18375,
+          "told apart at R*": 15163
+        }
+      },
+      "second": {
+        "none, CANCEL-OFFSHOOT": {
+          "first told apart in round 2 or later": 864,
+          "in round 3 or later with the wider records the same through round 2": 0,
+          "of those, the wider record of round 1 the same": 489,
+          "pairs": 9990,
+          "told apart at R*": 6909
+        },
+        "none, CANCEL-RETIRE": {
+          "first told apart in round 2 or later": 900,
+          "in round 3 or later with the wider records the same through round 2": 0,
+          "of those, the wider record of round 1 the same": 502,
+          "pairs": 9990,
+          "told apart at R*": 7308
+        },
+        "none, CANCEL-WAIT": {
+          "first told apart in round 2 or later": 1202,
+          "in round 3 or later with the wider records the same through round 2": 275,
+          "of those, the wider record of round 1 the same": 765,
+          "pairs": 9990,
+          "told apart at R*": 8080
+        },
+        "sole, CANCEL-OFFSHOOT": {
+          "first told apart in round 2 or later": 200,
+          "in round 3 or later with the wider records the same through round 2": 0,
+          "of those, the wider record of round 1 the same": 119,
+          "pairs": 9990,
+          "told apart at R*": 8052
+        },
+        "sole, CANCEL-RETIRE": {
+          "first told apart in round 2 or later": 433,
+          "in round 3 or later with the wider records the same through round 2": 0,
+          "of those, the wider record of round 1 the same": 319,
+          "pairs": 9990,
+          "told apart at R*": 8337
+        },
+        "sole, CANCEL-WAIT": {
+          "first told apart in round 2 or later": 558,
+          "in round 3 or later with the wider records the same through round 2": 65,
+          "of those, the wider record of round 1 the same": 474,
+          "pairs": 9990,
+          "told apart at R*": 8517
+        }
+      }
+    },
+    "depth, chains, first seeds A to E together (told apart / pairs)": {
+      "none, CAP-3, CANCEL-OFFSHOOT": {
+        "1 against 2 knots": [
+          20,
+          20
+        ],
+        "2 against 3 knots": [
+          8,
+          40
+        ],
+        "3 against 4 knots": [
+          0,
+          80
+        ],
+        "4 against 5 knots": [
+          0,
+          160
+        ],
+        "depth 0": [
+          87,
+          155
+        ],
+        "depth 1": [
+          60,
+          150
+        ],
+        "depth 2": [
+          0,
+          140
+        ],
+        "depth 3": [
+          0,
+          120
+        ],
+        "depth 4": [
+          0,
+          80
+        ]
+      },
+      "none, CAP-3, CANCEL-RETIRE": {
+        "1 against 2 knots": [
+          20,
+          20
+        ],
+        "2 against 3 knots": [
+          8,
+          40
+        ],
+        "3 against 4 knots": [
+          0,
+          80
+        ],
+        "4 against 5 knots": [
+          0,
+          160
+        ],
+        "depth 0": [
+          87,
+          155
+        ],
+        "depth 1": [
+          60,
+          150
+        ],
+        "depth 2": [
+          0,
+          140
+        ],
+        "depth 3": [
+          0,
+          120
+        ],
+        "depth 4": [
+          0,
+          80
+        ]
+      },
+      "none, CAP-3, CANCEL-WAIT": {
+        "1 against 2 knots": [
+          20,
+          20
+        ],
+        "2 against 3 knots": [
+          8,
+          40
+        ],
+        "3 against 4 knots": [
+          0,
+          80
+        ],
+        "4 against 5 knots": [
+          4,
+          160
+        ],
+        "depth 0": [
+          89,
+          155
+        ],
+        "depth 1": [
+          74,
+          150
+        ],
+        "depth 2": [
+          4,
+          140
+        ],
+        "depth 3": [
+          0,
+          120
+        ],
+        "depth 4": [
+          4,
+          80
+        ]
+      },
+      "none, FLOOR1, CANCEL-OFFSHOOT": {
+        "1 against 2 knots": [
+          20,
+          20
+        ],
+        "2 against 3 knots": [
+          8,
+          40
+        ],
+        "3 against 4 knots": [
+          0,
+          80
+        ],
+        "4 against 5 knots": [
+          0,
+          160
+        ],
+        "depth 0": [
+          57,
+          155
+        ],
+        "depth 1": [
+          0,
+          150
+        ],
+        "depth 2": [
+          0,
+          140
+        ],
+        "depth 3": [
+          0,
+          120
+        ],
+        "depth 4": [
+          0,
+          80
+        ]
+      },
+      "none, FLOOR1, CANCEL-RETIRE": {
+        "1 against 2 knots": [
+          20,
+          20
+        ],
+        "2 against 3 knots": [
+          8,
+          40
+        ],
+        "3 against 4 knots": [
+          0,
+          80
+        ],
+        "4 against 5 knots": [
+          0,
+          160
+        ],
+        "depth 0": [
+          57,
+          155
+        ],
+        "depth 1": [
+          0,
+          150
+        ],
+        "depth 2": [
+          0,
+          140
+        ],
+        "depth 3": [
+          0,
+          120
+        ],
+        "depth 4": [
+          0,
+          80
+        ]
+      },
+      "none, FLOOR1, CANCEL-WAIT": {
+        "1 against 2 knots": [
+          20,
+          20
+        ],
+        "2 against 3 knots": [
+          12,
+          40
+        ],
+        "3 against 4 knots": [
+          16,
+          80
+        ],
+        "4 against 5 knots": [
+          0,
+          160
+        ],
+        "depth 0": [
+          57,
+          155
+        ],
+        "depth 1": [
+          14,
+          150
+        ],
+        "depth 2": [
+          0,
+          140
+        ],
+        "depth 3": [
+          0,
+          120
+        ],
+        "depth 4": [
+          0,
+          80
+        ]
+      },
+      "none, ORD, CANCEL-OFFSHOOT": {
+        "1 against 2 knots": [
+          20,
+          20
+        ],
+        "2 against 3 knots": [
+          8,
+          40
+        ],
+        "3 against 4 knots": [
+          0,
+          80
+        ],
+        "4 against 5 knots": [
+          0,
+          160
+        ],
+        "depth 0": [
+          56,
+          155
+        ],
+        "depth 1": [
+          0,
+          150
+        ],
+        "depth 2": [
+          0,
+          140
+        ],
+        "depth 3": [
+          0,
+          120
+        ],
+        "depth 4": [
+          0,
+          80
+        ]
+      },
+      "none, ORD, CANCEL-RETIRE": {
+        "1 against 2 knots": [
+          20,
+          20
+        ],
+        "2 against 3 knots": [
+          8,
+          40
+        ],
+        "3 against 4 knots": [
+          0,
+          80
+        ],
+        "4 against 5 knots": [
+          0,
+          160
+        ],
+        "depth 0": [
+          56,
+          155
+        ],
+        "depth 1": [
+          0,
+          150
+        ],
+        "depth 2": [
+          0,
+          140
+        ],
+        "depth 3": [
+          0,
+          120
+        ],
+        "depth 4": [
+          0,
+          80
+        ]
+      },
+      "none, ORD, CANCEL-WAIT": {
+        "1 against 2 knots": [
+          20,
+          20
+        ],
+        "2 against 3 knots": [
+          8,
+          40
+        ],
+        "3 against 4 knots": [
+          0,
+          80
+        ],
+        "4 against 5 knots": [
+          0,
+          160
+        ],
+        "depth 0": [
+          56,
+          155
+        ],
+        "depth 1": [
+          14,
+          150
+        ],
+        "depth 2": [
+          0,
+          140
+        ],
+        "depth 3": [
+          0,
+          120
+        ],
+        "depth 4": [
+          0,
+          80
+        ]
+      },
+      "sole, CAP-3, CANCEL-OFFSHOOT": {
+        "1 against 2 knots": [
+          20,
+          20
+        ],
+        "2 against 3 knots": [
+          24,
+          40
+        ],
+        "3 against 4 knots": [
+          36,
+          80
+        ],
+        "4 against 5 knots": [
+          32,
+          160
+        ],
+        "depth 0": [
+          60,
+          155
+        ],
+        "depth 1": [
+          10,
+          150
+        ],
+        "depth 2": [
+          0,
+          140
+        ],
+        "depth 3": [
+          0,
+          120
+        ],
+        "depth 4": [
+          0,
+          80
+        ]
+      },
+      "sole, CAP-3, CANCEL-RETIRE": {
+        "1 against 2 knots": [
+          20,
+          20
+        ],
+        "2 against 3 knots": [
+          24,
+          40
+        ],
+        "3 against 4 knots": [
+          40,
+          80
+        ],
+        "4 against 5 knots": [
+          48,
+          160
+        ],
+        "depth 0": [
+          68,
+          155
+        ],
+        "depth 1": [
+          24,
+          150
+        ],
+        "depth 2": [
+          0,
+          140
+        ],
+        "depth 3": [
+          0,
+          120
+        ],
+        "depth 4": [
+          0,
+          80
+        ]
+      },
+      "sole, CAP-3, CANCEL-WAIT": {
+        "1 against 2 knots": [
+          20,
+          20
+        ],
+        "2 against 3 knots": [
+          24,
+          40
+        ],
+        "3 against 4 knots": [
+          56,
+          80
+        ],
+        "4 against 5 knots": [
+          98,
+          160
+        ],
+        "depth 0": [
+          87,
+          155
+        ],
+        "depth 1": [
+          40,
+          150
+        ],
+        "depth 2": [
+          12,
+          140
+        ],
+        "depth 3": [
+          15,
+          120
+        ],
+        "depth 4": [
+          9,
+          80
+        ]
+      },
+      "sole, FLOOR1, CANCEL-OFFSHOOT": {
+        "1 against 2 knots": [
+          20,
+          20
+        ],
+        "2 against 3 knots": [
+          8,
+          40
+        ],
+        "3 against 4 knots": [
+          0,
+          80
+        ],
+        "4 against 5 knots": [
+          0,
+          160
+        ],
+        "depth 0": [
+          56,
+          155
+        ],
+        "depth 1": [
+          0,
+          150
+        ],
+        "depth 2": [
+          0,
+          140
+        ],
+        "depth 3": [
+          0,
+          120
+        ],
+        "depth 4": [
+          0,
+          80
+        ]
+      },
+      "sole, FLOOR1, CANCEL-RETIRE": {
+        "1 against 2 knots": [
+          20,
+          20
+        ],
+        "2 against 3 knots": [
+          8,
+          40
+        ],
+        "3 against 4 knots": [
+          0,
+          80
+        ],
+        "4 against 5 knots": [
+          0,
+          160
+        ],
+        "depth 0": [
+          56,
+          155
+        ],
+        "depth 1": [
+          0,
+          150
+        ],
+        "depth 2": [
+          0,
+          140
+        ],
+        "depth 3": [
+          0,
+          120
+        ],
+        "depth 4": [
+          0,
+          80
+        ]
+      },
+      "sole, FLOOR1, CANCEL-WAIT": {
+        "1 against 2 knots": [
+          20,
+          20
+        ],
+        "2 against 3 knots": [
+          8,
+          40
+        ],
+        "3 against 4 knots": [
+          16,
+          80
+        ],
+        "4 against 5 knots": [
+          32,
+          160
+        ],
+        "depth 0": [
+          56,
+          155
+        ],
+        "depth 1": [
+          0,
+          150
+        ],
+        "depth 2": [
+          0,
+          140
+        ],
+        "depth 3": [
+          0,
+          120
+        ],
+        "depth 4": [
+          0,
+          80
+        ]
+      },
+      "sole, ORD, CANCEL-OFFSHOOT": {
+        "1 against 2 knots": [
+          20,
+          20
+        ],
+        "2 against 3 knots": [
+          36,
+          40
+        ],
+        "3 against 4 knots": [
+          64,
+          80
+        ],
+        "4 against 5 knots": [
+          48,
+          160
+        ],
+        "depth 0": [
+          99,
+          155
+        ],
+        "depth 1": [
+          70,
+          150
+        ],
+        "depth 2": [
+          4,
+          140
+        ],
+        "depth 3": [
+          0,
+          120
+        ],
+        "depth 4": [
+          0,
+          80
+        ]
+      },
+      "sole, ORD, CANCEL-RETIRE": {
+        "1 against 2 knots": [
+          20,
+          20
+        ],
+        "2 against 3 knots": [
+          36,
+          40
+        ],
+        "3 against 4 knots": [
+          48,
+          80
+        ],
+        "4 against 5 knots": [
+          48,
+          160
+        ],
+        "depth 0": [
+          99,
+          155
+        ],
+        "depth 1": [
+          64,
+          150
+        ],
+        "depth 2": [
+          4,
+          140
+        ],
+        "depth 3": [
+          0,
+          120
+        ],
+        "depth 4": [
+          0,
+          80
+        ]
+      },
+      "sole, ORD, CANCEL-WAIT": {
+        "1 against 2 knots": [
+          20,
+          20
+        ],
+        "2 against 3 knots": [
+          36,
+          40
+        ],
+        "3 against 4 knots": [
+          64,
+          80
+        ],
+        "4 against 5 knots": [
+          80,
+          160
+        ],
+        "depth 0": [
+          99,
+          155
+        ],
+        "depth 1": [
+          64,
+          150
+        ],
+        "depth 2": [
+          4,
+          140
+        ],
+        "depth 3": [
+          0,
+          120
+        ],
+        "depth 4": [
+          0,
+          80
+        ]
+      }
+    },
+    "fates on the window": {
+      "mixed": {
+        "none, CANCEL-OFFSHOOT": {
+          "ends, taken up": 125,
+          "grows": 554,
+          "steady": 71
+        },
+        "none, CANCEL-RETIRE": {
+          "ends, taken up": 125,
+          "grows": 492,
+          "steady": 133
+        },
+        "none, CANCEL-WAIT": {
+          "ends, taken up": 122,
+          "grows": 554,
+          "steady": 74
+        },
+        "sole, CANCEL-OFFSHOOT": {
+          "ends, taken up": 37,
+          "grows": 548,
+          "not read": 100,
+          "other": 50,
+          "steady": 15
+        },
+        "sole, CANCEL-RETIRE": {
+          "ends, no births": 189,
+          "ends, taken up": 71,
+          "grows": 299,
+          "not read": 100,
+          "other": 38,
+          "steady": 53
+        },
+        "sole, CANCEL-WAIT": {
+          "ends, no births": 181,
+          "ends, taken up": 63,
+          "grows": 347,
+          "not read": 100,
+          "other": 44,
+          "steady": 15
+        }
+      },
+      "second": {
+        "none, CANCEL-OFFSHOOT": {
+          "ends, taken up": 23,
+          "grows": 464,
+          "steady": 68
+        },
+        "none, CANCEL-RETIRE": {
+          "ends, no births": 48,
+          "ends, taken up": 38,
+          "grows": 372,
+          "steady": 97
+        },
+        "none, CANCEL-WAIT": {
+          "ends, no births": 61,
+          "ends, taken up": 34,
+          "grows": 382,
+          "other": 5,
+          "shrinks": 5,
+          "steady": 68
+        },
+        "sole, CANCEL-OFFSHOOT": {
+          "ends, taken up": 34,
+          "grows": 368,
+          "not read": 148,
+          "other": 3,
+          "steady": 2
+        },
+        "sole, CANCEL-RETIRE": {
+          "ends, no births": 219,
+          "ends, taken up": 89,
+          "grows": 123,
+          "not read": 74,
+          "other": 18,
+          "shrinks": 13,
+          "steady": 19
+        },
+        "sole, CANCEL-WAIT": {
+          "ends, no births": 219,
+          "ends, taken up": 70,
+          "grows": 110,
+          "not read": 148,
+          "other": 3,
+          "steady": 5
+        }
+      }
+    },
+    "first told apart, mixed": {
+      "none, CANCEL-OFFSHOOT": {
+        "1": 10962,
+        "2": 1053,
+        "3": 43,
+        "never": 6317
+      },
+      "none, CANCEL-RETIRE": {
+        "1": 9837,
+        "2": 1053,
+        "3": 43,
+        "never": 7442
+      },
+      "none, CANCEL-WAIT": {
+        "1": 10611,
+        "2": 1659,
+        "3": 1292,
+        "4": 96,
+        "never": 4717
+      },
+      "sole, CANCEL-OFFSHOOT": {
+        "1": 13123,
+        "2": 763,
+        "3": 9,
+        "never": 4296,
+        "not read further": 184
+      },
+      "sole, CANCEL-RETIRE": {
+        "1": 11765,
+        "2": 719,
+        "3": 7,
+        "never": 5755,
+        "not read further": 129
+      },
+      "sole, CANCEL-WAIT": {
+        "1": 12352,
+        "2": 830,
+        "3": 1571,
+        "4": 224,
+        "5": 225,
+        "6": 221,
+        "7": 44,
+        "never": 2646,
+        "not read further": 262
+      }
+    },
+    "first told apart, second": {
+      "none, CANCEL-OFFSHOOT": {
+        "1": 6045,
+        "2": 864,
+        "never": 3081
+      },
+      "none, CANCEL-RETIRE": {
+        "1": 6408,
+        "2": 900,
+        "never": 2682
+      },
+      "none, CANCEL-WAIT": {
+        "1": 6878,
+        "2": 774,
+        "3": 249,
+        "4": 161,
+        "5": 18,
+        "never": 1904,
+        "not read further": 6
+      },
+      "sole, CANCEL-OFFSHOOT": {
+        "1": 7852,
+        "2": 200,
+        "never": 1819,
+        "not read further": 119
+      },
+      "sole, CANCEL-RETIRE": {
+        "1": 7904,
+        "2": 433,
+        "never": 1579,
+        "not read further": 74
+      },
+      "sole, CANCEL-WAIT": {
+        "1": 7965,
+        "2": 491,
+        "3": 31,
+        "4": 19,
+        "5": 12,
+        "6": 1,
+        "7": 4,
+        "never": 1403,
+        "not read further": 64
+      }
+    },
+    "the count profile (studies in which the class is a function of it)": {
+      "mixed": {
+        "both": 56,
+        "studies": 90,
+        "the held knot": 0,
+        "the second seed's births by round": 2
+      },
+      "second": {
+        "both": 13,
+        "studies": 90,
+        "the held knot": 0,
+        "the second seed's births by round": 0
+      }
+    }
+  }
+}

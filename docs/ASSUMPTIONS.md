@@ -5867,9 +5867,9 @@ evidence: results and their status come from the records each entry links.
   how an observer outside compares two growths, kept until a pattern inside the growth can make the comparison.
 - **History.**
   - 2026-11-26 · `LOOK-ALIKE-20261126-001` ([decision](../research/LOOK-ALIKE-20261126-001/decision.md)) used the two readings
-    without names on every census start of one to five knots under ordinary growth: each start's view settles into a few kinds
-    of birth counted by polynomials, and the settled views decide which starts agree up to the count (computed, referee
-    pending). The readings stay a scaffold: they are how an outside observer compares growths.
+    without names on every census start of one to five knots under ordinary growth: given the dimension from its completed run,
+    each start's view becomes, through the last round read, a few kinds of birth counted by polynomials, and the views decide
+    which starts agree up to the count (computed; refereed, confirmed with fixes). The readings stay a scaffold: they are how an outside observer compares growths.
   - 2026-11-26 · Referee R1 on `HOW-MUCH-ARRIVES-20261126-001`: confirmed with fixes and one Block (moves leaving a start knot
     two places, and a short start knot waiting, are not ordinary growth from admissible starts); its refund control struck a
     pulse's advance payment too and undid the pulse in 155 of 155, the test of reading 4 this entry asked for.

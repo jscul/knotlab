@@ -3,6 +3,10 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 26 November 2026 · Which starts look alike refereed: confirmed, with narrowings
+
+**Corrections from [an independent referee's report](research/LOOK-ALIKE-20261126-001/referee-R1/report.md), folded into [the decision](research/LOOK-ALIKE-20261126-001/decision.md).** The pair results stand. Narrowed: what a local reader sees settles into polynomial counts through the rounds read, given each start's dimension from its completed run; the frozen round-1 control failed in the reading with parents; the "16 late views" are 16 descriptions of 68 exact views; seven unread five-knot starts grow as a quartic.
+
 ## 26 November 2026 · How much of a change arrives refereed: confirmed with fixes, one Block
 
 **Corrections from [an independent referee's report](research/HOW-MUCH-ARRIVES-20261126-001/referee-R1/report.md), folded into [the decision](research/HOW-MUCH-ARRIVES-20261126-001/decision.md) and lesson 11.4.** Four of the seven fixed-count changes started from a knot of two places, and many rows let a short start knot wait where the ordinary law stalls: those are not ordinary growth. On two ordinary starts a mark at a start knot leaves the births further from it unchanged by name and differs locally by a fixed count. The entry below, "by descent the change re-makes the whole of one chain", counted unmatched births of both growths; no reading measured how an amount divides, so the lamp's weakening is neither shown nor ruled out.

@@ -5598,7 +5598,8 @@ evidence: results and their status come from the records each entry links.
 - **Rests on it.** The four-word obstruction, the independent local offshoot comparison, and the passing examples with common records in NATIVE-PHASE-READ-20261125-001. [Phase-reading study](../research/NATIVE-PHASE-READ-20261125-001/results.md)
 - **Challenge.** Repeat a read, interpose another reader, and vary the available memory and the preparation it may record. A native preparation and exchange rule would replace the hand-granted reference and access.
 - **History.**
-  - 2026-11-25 · GROWN-OPPOSITE-READS-20261125-001 produced an ordinary conserved sign by interchanging one pulse and growth. Reading it at a single mark used a separately declared local update, and erasing the difference in the whole state erased the signal. [Grown preparations](../research/GROWN-OPPOSITE-READS-20261125-001/results.md)
+  - 2026-11-25 · All three readers receive the same mutable value in the successful sequential control. This crosses the two-user access restriction identified by the [November 23 Bell study](../research/REVIEW-LEADS-20261123-001C/result.md). The [shared-bit comparison](../research/NATIVE-PHASE-READ-20261125-001/results.md) distinguishes the certain table match from the CHSH bound for fixed local records.
+  - 2026-11-25 · GROWN-OPPOSITE-READS-20261125-001 produced an ordinary conserved sign by interchanging one pulse and growth. Reading it at a single distinction used a separately declared local update, and erasing the difference in the whole state erased the signal. [Grown preparations](../research/GROWN-OPPOSITE-READS-20261125-001/results.md)
   - 2026-11-25 · Tested the bare word, an ordinary read that writes, local and shared access after one funded growth round, and an explicitly copied preparation.
 
 ### A268 · A one-reader phase comparison fixes three readings and a reference
@@ -5627,9 +5628,9 @@ evidence: results and their status come from the records each entry links.
 
 **Assumed** · 2026-11-25 · scaffold
 
-- **Statement.** Use the originally addressed mark as a pointer. Permit an occupied nonpointer old mark to make an existing shortest lawful change with an old neighbor closer to the pointer. The procedure ends when none can fire. Read zero as plus and one as minus.
+- **Statement.** Use the originally addressed distinction as a pointer. Permit an occupied nonpointer old distinction to make an existing shortest lawful change with an old neighbor closer to the pointer. The procedure ends when none can fire. Read zero as plus and one as minus.
 - **Why.** This conditional rule implements the already fixed collective parity with one final physical bit. Current values and a designated receiver are enough to run it in any enabled order.
-- **Rests on it.** The concentration of the preparation sign in one ordinary mark at five and seven in GROWN-OPPOSITE-READS-20261125-001. [Grown preparations](../research/GROWN-OPPOSITE-READS-20261125-001/results.md)
+- **Rests on it.** The concentration of the preparation sign in one ordinary distinction at five and seven in GROWN-OPPOSITE-READS-20261125-001. [Grown preparations](../research/GROWN-OPPOSITE-READS-20261125-001/results.md)
 - **Challenge.** Read the pointer before collecting, apply the same moves blindly, change the pointer and vary every firing order. A native process that imposes the enabling rule and supplies its receiver would replace the measuring device chosen here.
 - **History.**
   - 2026-11-25 · Every pointer and maximal firing order gave the same sign. The blind device and the plain pointer both gave a fair bit in either mixed preparation.
@@ -5656,7 +5657,7 @@ evidence: results and their status come from the records each entry links.
 - **Challenge.** Change the summation to (1,−1), use the positive law, keep a separate third-bit record until after squaring, or permit only joins in which each hidden bit occurs twice. Use unequal coefficient magnitudes to distinguish the probability prescriptions.
 - **History.**
   - 2026-11-25 · No obligation to apply the open summation or its reversible map arose at the tested births or joins. A unary birth embeds its old bit in the parity of two new bits under either signing. [Birth and join test](../research/GROWTH-SIGN-LAW-20261125-001/results.md)
-  - 2026-11-25 · Either coherent sum on the symmetric signed law gives the full target. Retaining the mark as an ordinary record gives a promised win fraction of 5/8. Equal weight on surviving outcomes and squared weight disagree on the unequal-magnitude control.
+  - 2026-11-25 · Either coherent sum on the symmetric signed law gives the full target. Retaining the distinction as an ordinary record gives a promised win fraction of 5/8. Equal weight on surviving outcomes and squared weight disagree on the unequal-magnitude control.
 
 ### A273 · Compare the child payments with the private pair parities
 

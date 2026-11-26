@@ -142,3 +142,91 @@ of the growth, about one birth more each round).
 **Headline.** No weakening in any setting or reading: the growth has no conserved amount that a change spreads more
 thinly with the steps. **Stop:** a case that weakens in an ancestry-free reading of setting A (the lamp's second half
 in the model), or every setting read with none.
+
+## What was found
+
+All 366 jobs were read, none lost ([`drive.py`](drive.py), [`runs.jsonl.gz`](runs.jsonl.gz); the tables are
+[`tables.md`](tables.md), from [`tally.py`](tally.py)): 181 of setting A under not-all-equal, 161 of them again under
+parity (the marks, the moves and the round-2 made marks), and 24 of setting B. Parity gave the same verdicts and
+counts as not-all-equal in every job run under both.
+
+**1. A change at the start of a growth of dimension two can weaken as the lamp does.** On two touching knots every
+change at the start weakens in both ancestry-free readings (2 marks and 2 moves of 2 and 2), and on chain3 one mark
+of three (at the middle knot) and two moves of six (between the end knots). In each, the damage settles to a fixed
+number of births a round, 4, 5 or 1, from about round 5, while the births of each growth grow by two a round, so the
+share falls as one over the round's count: 0.06, 0.08 and 0.01 at round 16. Grown on to round 32 ([`longer.py`](longer.py),
+[`longer.jsonl`](longer.jsonl)), the damage stays at exactly 4, 5 and 1 in every round. By name the same cases hold or
+take over: the changed knot's descent is new by name, and locally it is the same kinds of births as before, all but
+a fixed few.
+
+**2. Where the damage sits.** Read by shells (holder steps from the changed knot, the structure after each round),
+the damage of a mark at one of two touching knots lies wholly in the shell of the round's births nearer the changed
+knot (33 births against 29 there at round 32) and none in the shell one step further (33 against 33): the births on
+the other knot's chain are not reached at all, read without names.
+
+**3. Everything else holds or takes over** (ancestry-free, sig1):
+
+| start (kind) | marks at the start | moves at the start | made marks, rounds 2 and 4 | pulses |
+|---|---|---|---|---|
+| ring5-bare, ring7-bare (dimension one) | take over (12 of 12) | hold (52) or take over (10), shares 0.80 to 0.97 | take over (24 of 24) | take over (24 of 24) |
+| two-touching (dimension two) | **weaken (2 of 2)** | **weaken (2 of 2)** | hold (16), shares 0.29 to 0.54 | hold (16), 0.44 to 0.64 |
+| chain3 (dimension two) | weaken 1, hold 2 | weaken 2, hold 4 | hold (16), 0.29 to 0.54 | hold (16), 0.44 to 0.64 |
+| ring5-eddy (golden ratio) | take over (5 of 5) | hold (20), 0.57 to 0.71 | hold 50, take over 5 | hold (55) |
+| generator7 (releases packets) | hold 5, take over 2 | take over 33 (3 too short) | hold (44), 0.34 to 0.89 | hold (44), 0.52 to 0.97 |
+
+On the bare rings a mark or a made mark turns a count that stays at 5 or 7 into one that grows, and on the eddy a mark
+changes the rate: the change changes the kind of growth, and it takes over. In dimension two a made mark adds a part
+that keeps growing (on two touching knots the damage at round 16 is 19 or 44 births, growing by one or three a
+round), so its share holds.
+
+**4. A pulse does not die out** (0 of 155, all starts). Striking the marked knot's new offshoot after one round does
+not undo the change: on two touching knots the pulse's damage is larger than the mark's at rounds 14 to 16 (57 to 67
+against 38 to 44 for two of the knots made in round 2, 35 to 41 against 17 to 19 for two others). Read in one case birth by birth: the mark gave the knot one more offshoot, and the join it shares
+with a partner received three fresh distinctions where it had received two, paid in advance for a join with that
+offshoot; striking the offshoot leaves the extra distinction unused, and it grows on its own.
+
+**5. Pairs mostly add, and some cancel.** Two made marks at once in round 2, against each alone, at round 16 (sig1):
+on two touching knots 9 pairs of 15 give the sum, 4 less than the sum and 2 less than either alone (19 and 19 alone,
+9 together); on chain3 8, 5 and 2 (19 and 19 alone, 11 and 7 together).
+
+**6. Shells.** Every made mark's and pulse's damage lies in a single shell in the last round read (310 of 310
+not-all-equal cases and the 51 made marks under parity).
+
+**7. Setting B.** Under the ordinary count (B0) nothing differs in either setting, in any reading. B1 (two seven-knot
+generators under the record's one fewer, waiting): two marks of seven show at every d from 1 to 8, first in round
+d + 5, and the share is 1.00 from that round on: the end of a jam re-makes the whole later growth. B2 (the switch
+receiver under the cap of three): the far site with two loose distinctions against three shows at round 2d + 1 at
+every d from 2 to 5, with a first-round share of 0.12, 0.18, 0.21 and 0.24, rising with d, and 0.92 to 0.95 by
+round 16; three against a stub never shows. The fraction of far changes that show does not fall with d in either.
+
+## Expectations, and how they fared
+
+1. *By name, nothing weakens.* Held: no case weakens by name.
+2. *A change at a start does not weaken, ancestry-free.* **Failed:** 4 of 4 changes at the start on two touching
+   knots and 3 of 9 on chain3 weaken. This is the stop.
+3. *A made mark does not weaken.* Held: every made mark holds or takes over.
+4. *A pulse dies out in most cases.* **Failed:** none does.
+5. *Pairs add; no pair cancels below either alone.* Failed in part: 4 pairs of 30 give less than either mark alone.
+6. *A made mark's damage sits in at most three shells.* Held: one shell in every case.
+7. *Setting B: nothing under the ordinary count; the fraction shown and the first-round share do not fall with d.*
+   Held, except that B2's first-round share rises with d where I wrote that it would stay the same.
+
+**The headline expectation failed:** a weakening exists in the model itself, under the ordinary count, with no
+scaffold of the record supplied, though only for some changes at the start of a growth of dimension two.
+
+## A reading of why (not proved)
+
+What decides is whether the change adds or removes an endless chain (or a relay). The dimension of a growth is its
+number of endless chains in one connected part, a relay counting two (lesson 8.2; proved, refereed). A change at the
+start that leaves that count alone shifts one chain's births by a fixed offset, so the damage is a fixed number of
+births a round and its share falls as one over the round's count; a change that adds a chain or a relay grows with
+the rounds and holds; a change that turns a bare ring into one that grows, or alters a ring's lap weight, takes
+over. The two touching knots' damage stays in the shell nearer the changed knot, on its own chain. Not checked here:
+that each weakening change keeps the count of endless chains and each holding one adds one.
+
+**Link (intuition-links), offered and not checked.** A fixed amount spread over the births of a round, which number
+about t^(D − 1) in a growth of dimension D (lesson 4.6), falls as one over t^(D − 1): in dimension two as 1/t, which
+is the share seen; in a space of three dimensions it is the lamp's 1/r². So the lamp's law is the count of a round's
+births when the change is a fixed defect in one chain, the literature's picture of a defect carried by a growing
+crystal. Its cheapest test: a start of dimension three (six places, or a dead knot) with a change that keeps the
+count of endless chains, where the share should fall as one over the square of the round.

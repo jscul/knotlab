@@ -145,24 +145,39 @@ in the model), or every setting read with none.
 
 ## What was found
 
+> **Correction, logged in the corrections log.** The first version of this section and of the decision note said
+> that some changes at the start of a growth of dimension two "weaken as the lamp does". A control run after the
+> full run and before the referee ([`control.py`](control.py), [`control.json`](control.json)) shows that the two
+> ancestry-free readings find no damage at all between two different starts of dimension two: two touching knots and
+> three knots in a row, compared with each other, differ in no birth from round 4 to round 32 (66 births a round
+> each). So those readings see only how many births of each local kind a round has; the fixed damage of 4, 5 or 1 is
+> a fixed difference in the round's count, not a change spreading more thinly. By descent the same change re-makes
+> every birth of the changed knot's own chain and none of the other's. Findings 1 and 2 and the headline below are
+> rewritten to say this; the counts stand.
+
 All 366 jobs were read, none lost ([`drive.py`](drive.py), [`runs.jsonl.gz`](runs.jsonl.gz); the tables are
 [`tables.md`](tables.md), from [`tally.py`](tally.py)): 181 of setting A under not-all-equal, 161 of them again under
 parity (the marks, the moves and the round-2 made marks), and 24 of setting B. Parity gave the same verdicts and
 counts as not-all-equal in every job run under both.
 
-**1. A change at the start of a growth of dimension two can weaken as the lamp does.** On two touching knots every
-change at the start weakens in both ancestry-free readings (2 marks and 2 moves of 2 and 2), and on chain3 one mark
-of three (at the middle knot) and two moves of six (between the end knots). In each, the damage settles to a fixed
-number of births a round, 4, 5 or 1, from about round 5, while the births of each growth grow by two a round, so the
-share falls as one over the round's count: 0.06, 0.08 and 0.01 at round 16. Grown on to round 32 ([`longer.py`](longer.py),
-[`longer.jsonl`](longer.jsonl)), the damage stays at exactly 4, 5 and 1 in every round. By name the same cases hold or
-take over: the changed knot's descent is new by name, and locally it is the same kinds of births as before, all but
-a fixed few.
+**1. Read locally, a growth of dimension two forgets its start.** The ancestry-free readings (each birth by its kind,
+parents, fresh distinctions and places, and its parents') find no damage between two touching knots and three
+knots in a row from round 4 on (control 1). A change at the start then leaves, in those readings, only a fixed
+difference in the round's count: on two touching knots every change at the start (2 marks and 2 moves of 2 and 2),
+and on chain3 one mark of three (at the middle knot) and two moves of six (between the end knots), settle to a fixed
+4, 5 or 1 births a round from about round 5, while each growth's round grows by two, so the share falls as one over
+the round's count: 0.06, 0.08 and 0.01 at round 16, and still exactly 4, 5 and 1 at round 32
+([`longer.py`](longer.py), [`longer.jsonl`](longer.jsonl)). This is the verdict "weakens" of the design, met by its
+letter. It says what the local readings can tell apart, a count, and not that a change spreads more thinly: in those
+readings two unrelated starts are one case, the owner's "logically small" in the growth's own terms.
 
-**2. Where the damage sits.** Read by shells (holder steps from the changed knot, the structure after each round),
-the damage of a mark at one of two touching knots lies wholly in the shell of the round's births nearer the changed
-knot (33 births against 29 there at round 32) and none in the shell one step further (33 against 33): the births on
-the other knot's chain are not reached at all, read without names.
+**2. By descent, a change re-makes one whole chain and nothing else.** Read by name and by shells (holder steps from
+the changed knot, in the structure after each round; control 2), a mark at one of two touching knots re-makes every
+birth of the shell nearer the changed knot (62 of 62 births of both growths there at round 32) and none of the shell
+one step further (0 of 66); at the middle knot of chain3 the same (63 of 65, and 0 of 68). A move between the two
+knots re-makes both. So by descent the change reaches a fixed part of every round, about one half, and nothing in it
+weakens with the rounds. Read without names, the re-made shell differs from the unchanged one only by its count (33
+against 29).
 
 **3. Everything else holds or takes over** (ancestry-free, sig1):
 
@@ -211,22 +226,26 @@ round 16; three against a stub never shows. The fraction of far changes that sho
 7. *Setting B: nothing under the ordinary count; the fraction shown and the first-round share do not fall with d.*
    Held, except that B2's first-round share rises with d where I wrote that it would stay the same.
 
-**The headline expectation failed:** a weakening exists in the model itself, under the ordinary count, with no
-scaffold of the record supplied, though only for some changes at the start of a growth of dimension two.
+**The headline expectation failed by its letter only:** seven changes at the start of a growth of dimension two
+weaken in the ancestry-free readings, but those readings find no difference between two unrelated starts of
+dimension two (control 1), so what weakens is a count, not a change spreading more thinly. By descent nothing
+weakens (control 2). No weakening of the lamp's kind is found in the model.
 
 ## A reading of why (not proved)
 
 What decides is whether the change adds or removes an endless chain (or a relay). The dimension of a growth is its
 number of endless chains in one connected part, a relay counting two (lesson 8.2; proved, refereed). A change at the
-start that leaves that count alone shifts one chain's births by a fixed offset, so the damage is a fixed number of
+start that leaves that count alone shifts one chain's births by a fixed offset, so in the local readings the damage is a fixed number of
 births a round and its share falls as one over the round's count; a change that adds a chain or a relay grows with
 the rounds and holds; a change that turns a bare ring into one that grows, or alters a ring's lap weight, takes
 over. The two touching knots' damage stays in the shell nearer the changed knot, on its own chain. Not checked here:
 that each weakening change keeps the count of endless chains and each holding one adds one.
 
-**Link (intuition-links), offered and not checked.** A fixed amount spread over the births of a round, which number
-about t^(D − 1) in a growth of dimension D (lesson 4.6), falls as one over t^(D − 1): in dimension two as 1/t, which
-is the share seen; in a space of three dimensions it is the lamp's 1/r². So the lamp's law is the count of a round's
-births when the change is a fixed defect in one chain, the literature's picture of a defect carried by a growing
-crystal. Its cheapest test: a start of dimension three (six places, or a dead knot) with a change that keeps the
-count of endless chains, where the share should fall as one over the square of the round.
+**Link (intuition-links), offered and not checked.** What the growth shows is closer to the literature's
+universality than to the lamp: grown far enough, growths of one dimension from different starts look the same in
+every local reading, and a start's details survive only as a few counts (here, the round's count of births), as
+the details of a system at small scales survive at large ones only through a few numbers. The lamp's weakening would
+need a change whose effect is shared out among the births of a round; in the growth a change is handed down a line
+of descent whole, and none was shared out. Cheapest test of the link: compare starts of dimension two that differ
+in more than one knot, and starts of the same rate on rings, in the local readings; universality predicts no damage
+between any two of them after a few rounds, up to the count.

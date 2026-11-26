@@ -221,6 +221,38 @@ other seven are all with waiting.
   knots at round 12), and whether anything can be made to ride on it, are not known. The record's studies of slow
   growth were not searched for it.
 
+## A link, checked: the knots of both are a table of the two parts' own lines
+
+*An intuition with its check (the practice of intuition-links), prompted by the count n(n + 1). It is a reading of
+one case, not a result about patterns in general, and the mechanism is the record's, not new.*
+
+- **Link.** Under the ordinary count each two-knot part makes two knots of its own a round: a line. Give every knot
+  its **place** along each part's line, the latest round in which an ancestor of it was made that is that part's
+  own. Then the knots of both parts are a table of the two lines: in round n exactly two knots at each pair of
+  places adding up to n − 1, and no others. The literature's name is the product of two paths, and the record has
+  the mechanism already: under the ordinary count a knot is a connected piece of the start's unrolled map
+  ([`DOUBLE-IDENT-20261119-001A`](../../../proofs/DOUBLE-IDENT-20261119-001A)), and m mutually touching knots grow a
+  pattern of dimension m ([`FIRST-KNOT-20261118-001`](../../FIRST-KNOT-20261118-001/first_knot.md), proved, referee
+  pending). What the bench adds is the reading by descent: the table is exactly what the two parts make *together*,
+  and each part's own line is one of its sides.
+- **Checked** ([`table_check.py`](table_check.py), 12 rounds). Two parts: 2n knots of both in round n, at n places,
+  two at each (rounds 1 to 12); every parent of a knot of both that is itself of both stands one place back along
+  one line (132 and 132 links; the other 48 parents are own knots, at the table's sides); and the knots within r
+  sharings of the knot at places (4, 3) number 1, 5, 13, 25, 41 for r up to 4, which is 2r² + 2r + 1, before the
+  ball reaches what round 12 has not yet made. Three parts whose first knots all hold one distinction: after two
+  rounds in which three knots are short, the knots of all three made in a round number 1, 3, 6, 10, … 55, one at
+  each triple of places; parents of all three stand one place back along one line (120, 120 and 120 links) or
+  three places back at the first step in (45 each); the balls around (4, 4, 3) number 1, 7, 24, 55, 100, short of
+  the three-way table's 1, 7, 25, 63, 129 from the second step. Four parts sharing one distinction make nothing:
+  all eight knots are short in every round.
+- **Would reduce.** Nothing supplied here; it explains a count. It says what "two patterns making something
+  together" is in this case: not one acting on the other but each lending the other a line to count along.
+- **Premise.** Nothing chooses an order: the table's places are read from descent alone.
+- **Test** (not run). Whether a mark on one part's line shows in the table as one line of it and no more, and
+  whether the table can carry a pattern of its own (the first step toward a signal that rides on what two parts
+  make together) → stop at a mark whose trace in the table is read at a place far from the parts' own knots.
+  Payoff 3/3, concreteness 2/3.
+
 ## After the advisor's review
 
 The note was reviewed cold before it was committed ([question](advisor_question.md), [answer](advisor_answer.md)).

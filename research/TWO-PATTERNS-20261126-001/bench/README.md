@@ -221,6 +221,29 @@ other seven are all with waiting.
   knots at round 12), and whether anything can be made to ride on it, are not known. The record's studies of slow
   growth were not searched for it.
 
+## A further pass: the rations under which an offshoot receives by what its parent was owed
+
+Added after the census, since both it and the table above say the same thing: under the ordinary count no new
+knot is short, and under a cap of three or "just enough" nothing is first heard after round 5 or 6. The engine has
+eight more rations, those of the study of what a birth must carry
+([`WHAT-A-BIRTH-CARRIES-20261125-001`](../../WHAT-A-BIRTH-CARRIES-20261125-001/decision.md)): a join receives
+"just enough for three places" and an offshoot receives by what its parent was owed, in eight ways. They make
+knots short again and again and they hand a count on. The pass is the bench's 6 pairs, 3 distances and 2 joins
+under these eight rations and the three treatments, nothing taken, with the marks: 864 cases
+(`drive_bench.py … owing`).
+
+**Expected (written before the run).** No mark first heard by a pattern's own knots after round 6 here either:
+joins receive "just enough for three", under which the bench's patterns had no kept join after round 2, so I
+expect the two to stop dealing as early. I hold this less firmly than the census's first expectation, since an
+offshoot's supply now depends on its parent's owing, which is how the earlier study handed a count across.
+
+**Found** ([`bench_owing.jsonl.gz`](bench_owing.jsonl.gz); 864 of 864 cases read, 7 to 12 rounds, in a minute and a
+half). The expectation holds. Under each of the eight rations the last kept join between a pattern's own knots
+and any other is in round 2 at the latest (in 37 or 38 of each ration's 108 cases there is none at all). Of 8,064
+marks, a pattern's own knots first hear 206 in round 1, 121 in round 2, 12 in round 3 and 24 in round 4, and the
+joint descent 168, 215 and 37 in rounds 1 to 3; none later. A ration that hands a parent's owing on to its
+offshoot does not keep two patterns dealing with each other: the joins between them stop first.
+
 ## A link, checked: the knots of both are a table of the two parts' own lines
 
 *An intuition with its check (the practice of intuition-links), prompted by the count n(n + 1). It is a reading of
@@ -248,10 +271,17 @@ one case, not a result about patterns in general, and the mechanism is the recor
 - **Would reduce.** Nothing supplied here; it explains a count. It says what "two patterns making something
   together" is in this case: not one acting on the other but each lending the other a line to count along.
 - **Premise.** Nothing chooses an order: the table's places are read from descent alone.
-- **Test** (not run). Whether a mark on one part's line shows in the table as one line of it and no more, and
-  whether the table can carry a pattern of its own (the first step toward a signal that rides on what two parts
-  make together) → stop at a mark whose trace in the table is read at a place far from the parts' own knots.
-  Payoff 3/3, concreteness 2/3.
+- **Test.** Whether a mark on one part's line shows in the table as one line of it and no more, and whether the
+  table can carry a pattern of its own (the first step toward a signal that rides on what two parts make
+  together) → stop at a mark whose trace in the table is read at a place far from the parts' own knots. Payoff
+  3/3, concreteness 2/3.
+- **Its first step, run** ([`table_mark.py`](table_mark.py), 10 rounds). It does not show as one line. One more
+  loose distinction at either knot of the first part changes that part's own line from the first round (3, 2, 1,
+  1, 1, … own births a round where the unmarked part makes 2, 2, 2, …), and with it every one of the table's 55
+  places: 37 hold another number of knots and the rest knots that hold more (128 knots in all against 154). The
+  second part's own line is untouched, two births a round, and no knot is short. So a mark is not carried at a
+  place of the table; it gives another table. Whether anything smaller than a mark can be set at one place of a
+  table and stay there is the open half of the test.
 
 ## After the advisor's review
 

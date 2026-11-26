@@ -23,6 +23,13 @@ jobs = [{'A': P[i], 'B': P[j], 'steps': s, 'join': jn, 'ration': r, 'treatment':
 if len(sys.argv) > 3 and sys.argv[3] == 'take-marks':
     # a later pass: the one take that ever took (the take of a sole candidate from a knot the parent meets), with the marks
     jobs = [dict(j, marks=True) for j in jobs if j['take'] == 'MET-SOLE']
+if len(sys.argv) > 3 and sys.argv[3] == 'owing':
+    # a further pass: the engine's eight rations under which an offshoot receives by what its parent was owed (the
+    # rations of the study of what a birth must carry), nothing taken, with the marks
+    jobs = [{'A': P[i], 'B': P[j], 'steps': s, 'join': jn, 'ration': r, 'treatment': t, 'take': None, 'marks': True}
+            for jn in ('meeting', 'share') for i in range(3) for j in range(i, 3) for s in (1, 2, 3)
+            for r in ('PARENT-OWING', 'PARENT-OWING-CAP3', 'PARENT-OWING-CAP4', 'OFFSHOOT-TWO', 'OFFSHOOT-THREE', 'PARENT-OWING-1', 'PARENT-OWING-PLAIN', 'MOD2')
+            for t in ('CANCEL-WAIT', 'CANCEL-RETIRE', 'CANCEL-OFFSHOOT')]
 def one(j):
     t0 = time.time()
     p = subprocess.run(['systemd-run', '--user', '--scope', '-q', '-p', 'MemoryMax=8G', '-p', 'MemorySwapMax=0',

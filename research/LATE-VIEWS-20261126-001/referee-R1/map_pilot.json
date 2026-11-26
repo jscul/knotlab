@@ -1,0 +1,568 @@
+{
+  "pilot": true,
+  "uncompressed frozen archive sha256": "d6aefb73dc32220c61166efc94e568c0a6906f48a7ccf7eb508d72c1ab3f699d",
+  "fields compared against frozen file": [
+    "read",
+    "stratum",
+    "D",
+    "K0",
+    "K1",
+    "rows"
+  ],
+  "by set and law": {
+    "uniform / nae": {
+      "starts read": 9,
+      "independent frozen matches all archived fields": 9,
+      "stall": 5,
+      "predicted": 4,
+      "frozen forecast rounds checked against archive": 96,
+      "rounds of positive-length or saved birth data read": 93,
+      "accepted, end bound": 1,
+      "old hit preserved": 3,
+      "accepted, end rounds": 3,
+      "old miss persists": 1
+    },
+    "uniform / parity": {
+      "starts read": 9,
+      "independent frozen matches all archived fields": 9,
+      "stall": 5,
+      "predicted": 4,
+      "frozen forecast rounds checked against archive": 96,
+      "rounds of positive-length or saved birth data read": 74,
+      "accepted, end bound": 1,
+      "old hit preserved": 3,
+      "accepted, end closes": 1,
+      "accepted, end rounds": 2,
+      "old miss persists": 1
+    },
+    "stratified / nae": {
+      "starts read": 10,
+      "independent frozen matches all archived fields": 10,
+      "predicted": 10,
+      "frozen forecast rounds checked against archive": 240,
+      "rounds of positive-length or saved birth data read": 240,
+      "accepted, end rounds": 10,
+      "old hit preserved": 8,
+      "old miss fixed": 2,
+      "revised rows differ from frozen through forecast horizon": 2,
+      "revised rows differ within the saved birth rounds": 2
+    },
+    "stratified / parity": {
+      "starts read": 10,
+      "independent frozen matches all archived fields": 10,
+      "predicted": 10,
+      "frozen forecast rounds checked against archive": 240,
+      "rounds of positive-length or saved birth data read": 240,
+      "accepted, end rounds": 10,
+      "old hit preserved": 8,
+      "old miss fixed": 2,
+      "revised rows differ from frozen through forecast horizon": 2,
+      "revised rows differ within the saved birth rounds": 2
+    },
+    "handbuilt / nae": {
+      "starts read": 10,
+      "independent frozen matches all archived fields": 10,
+      "predicted": 10,
+      "frozen forecast rounds checked against archive": 240,
+      "rounds of positive-length or saved birth data read": 226,
+      "accepted, end rounds": 8,
+      "old hit preserved": 9,
+      "accepted, end bound": 2,
+      "old miss persists": 1
+    },
+    "handbuilt / parity": {
+      "starts read": 10,
+      "independent frozen matches all archived fields": 10,
+      "predicted": 10,
+      "frozen forecast rounds checked against archive": 240,
+      "rounds of positive-length or saved birth data read": 102,
+      "accepted, end closes": 7,
+      "old hit preserved": 9,
+      "accepted, end rounds": 1,
+      "accepted, end bound": 2,
+      "old miss persists": 1
+    },
+    "grow7 / nae": {
+      "starts read": 11,
+      "independent frozen matches all archived fields": 11,
+      "stall": 8,
+      "predicted": 3,
+      "frozen forecast rounds checked against archive": 72,
+      "rounds of positive-length or saved birth data read": 72,
+      "accepted, end rounds": 3,
+      "old hit preserved": 3
+    },
+    "grow7 / parity": {
+      "starts read": 11,
+      "independent frozen matches all archived fields": 11,
+      "stall": 8,
+      "predicted": 3,
+      "frozen forecast rounds checked against archive": 72,
+      "rounds of positive-length or saved birth data read": 72,
+      "accepted, end rounds": 3,
+      "old hit preserved": 3
+    },
+    "horizon / nae": {
+      "starts read": 8,
+      "independent frozen matches all archived fields": 8,
+      "predicted": 8,
+      "frozen forecast rounds checked against archive": 320,
+      "rounds of positive-length or saved birth data read": 320,
+      "accepted, end rounds": 8,
+      "old hit preserved": 8
+    }
+  },
+  "graded counts by archived stratum": {
+    "uniform / nae": {
+      "not predicted: stall": 5,
+      "group cells / agree": 3,
+      "a block meeting a group cell in two knots / differ": 1
+    },
+    "uniform / parity": {
+      "not predicted: stall": 5,
+      "group cells / agree": 3,
+      "a block meeting a group cell in two knots / differ": 1
+    },
+    "stratified / nae": {
+      "a block meeting a group cell in two knots / agree": 3,
+      "group cells / agree": 7
+    },
+    "stratified / parity": {
+      "a block meeting a group cell in two knots / agree": 3,
+      "group cells / agree": 7
+    },
+    "handbuilt / nae": {
+      "group cells / agree": 9,
+      "a block meeting a group cell in two knots / differ": 1
+    },
+    "handbuilt / parity": {
+      "group cells / agree": 9,
+      "a block meeting a group cell in two knots / differ": 1
+    },
+    "grow7 / nae": {
+      "not predicted: stall": 8,
+      "proved class / agree": 3
+    },
+    "grow7 / parity": {
+      "not predicted: stall": 8,
+      "proved class / agree": 3
+    },
+    "horizon / nae": {
+      "proved class / agree": 3,
+      "a block meeting a group cell in two knots / agree": 4,
+      "repeated blocks only / agree": 1
+    }
+  },
+  "independent frozen discrepancies": [],
+  "first differences observed": [
+    {
+      "set": "uniform",
+      "law": "nae",
+      "index": 6408,
+      "end": "rounds",
+      "saved birth rounds": 24,
+      "first frozen difference": 2,
+      "first graded difference": 2,
+      "stratum": "a block meeting a group cell in two knots",
+      "drawn for": null,
+      "cell sizes": [
+        4
+      ],
+      "cell pair intersection sizes": [],
+      "block intersections of at least two knots with cells": [
+        2,
+        2
+      ],
+      "inclusion covers tested against assigned ranks": {
+        "counts": {
+          "valid core sets": 43,
+          "proper inclusions": 408,
+          "true covers": 89
+        },
+        "examples": []
+      }
+    },
+    {
+      "set": "uniform",
+      "law": "parity",
+      "index": 6408,
+      "end": "rounds",
+      "saved birth rounds": 24,
+      "first frozen difference": 2,
+      "first graded difference": 2,
+      "stratum": "a block meeting a group cell in two knots",
+      "drawn for": null,
+      "cell sizes": [
+        4
+      ],
+      "cell pair intersection sizes": [],
+      "block intersections of at least two knots with cells": [
+        2,
+        2
+      ]
+    },
+    {
+      "set": "stratified",
+      "law": "nae",
+      "index": 30473,
+      "end": "rounds",
+      "saved birth rounds": 24,
+      "first frozen difference": 1,
+      "first graded difference": null,
+      "stratum": "a block meeting a group cell in two knots",
+      "drawn for": "group cells sharing a knot",
+      "cell sizes": [
+        3,
+        3
+      ],
+      "cell pair intersection sizes": [
+        1
+      ],
+      "block intersections of at least two knots with cells": [
+        2,
+        2
+      ],
+      "inclusion covers tested against assigned ranks": {
+        "counts": {
+          "valid core sets": 59,
+          "proper inclusions": 814,
+          "true covers": 139
+        },
+        "examples": []
+      }
+    },
+    {
+      "set": "stratified",
+      "law": "nae",
+      "index": 30474,
+      "end": "rounds",
+      "saved birth rounds": 24,
+      "first frozen difference": 1,
+      "first graded difference": null,
+      "stratum": "a block meeting a group cell in two knots",
+      "drawn for": "group cells sharing a knot",
+      "cell sizes": [
+        3,
+        3
+      ],
+      "cell pair intersection sizes": [
+        1
+      ],
+      "block intersections of at least two knots with cells": [
+        2,
+        2
+      ],
+      "inclusion covers tested against assigned ranks": {
+        "counts": {
+          "valid core sets": 104,
+          "proper inclusions": 2107,
+          "true covers": 294
+        },
+        "examples": []
+      }
+    },
+    {
+      "set": "stratified",
+      "law": "parity",
+      "index": 30473,
+      "end": "rounds",
+      "saved birth rounds": 24,
+      "first frozen difference": 1,
+      "first graded difference": null,
+      "stratum": "a block meeting a group cell in two knots",
+      "drawn for": "group cells sharing a knot",
+      "cell sizes": [
+        3,
+        3
+      ],
+      "cell pair intersection sizes": [
+        1
+      ],
+      "block intersections of at least two knots with cells": [
+        2,
+        2
+      ]
+    },
+    {
+      "set": "stratified",
+      "law": "parity",
+      "index": 30474,
+      "end": "rounds",
+      "saved birth rounds": 24,
+      "first frozen difference": 1,
+      "first graded difference": null,
+      "stratum": "a block meeting a group cell in two knots",
+      "drawn for": "group cells sharing a knot",
+      "cell sizes": [
+        3,
+        3
+      ],
+      "cell pair intersection sizes": [
+        1
+      ],
+      "block intersections of at least two knots with cells": [
+        2,
+        2
+      ]
+    },
+    {
+      "set": "handbuilt",
+      "law": "nae",
+      "index": 14,
+      "end": "rounds",
+      "saved birth rounds": 24,
+      "first frozen difference": 2,
+      "first graded difference": 2,
+      "stratum": "a block meeting a group cell in two knots",
+      "drawn for": null,
+      "cell sizes": [
+        4
+      ],
+      "cell pair intersection sizes": [],
+      "block intersections of at least two knots with cells": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "inclusion covers tested against assigned ranks": {
+        "counts": {
+          "valid core sets": 52,
+          "proper inclusions": 437,
+          "true covers": 124
+        },
+        "examples": []
+      }
+    },
+    {
+      "set": "handbuilt",
+      "law": "parity",
+      "index": 14,
+      "end": "closes at round 9",
+      "saved birth rounds": 8,
+      "first frozen difference": 2,
+      "first graded difference": 2,
+      "stratum": "a block meeting a group cell in two knots",
+      "drawn for": null,
+      "cell sizes": [
+        4
+      ],
+      "cell pair intersection sizes": [],
+      "block intersections of at least two knots with cells": [
+        3,
+        3,
+        3,
+        3
+      ]
+    }
+  ],
+  "remaining graded discrepancies": [
+    {
+      "set": "uniform",
+      "law": "nae",
+      "index": 6408,
+      "end": "rounds",
+      "saved birth rounds": 24,
+      "first frozen difference": 2,
+      "first graded difference": 2,
+      "stratum": "a block meeting a group cell in two knots",
+      "drawn for": null,
+      "cell sizes": [
+        4
+      ],
+      "cell pair intersection sizes": [],
+      "block intersections of at least two knots with cells": [
+        2,
+        2
+      ],
+      "inclusion covers tested against assigned ranks": {
+        "counts": {
+          "valid core sets": 43,
+          "proper inclusions": 408,
+          "true covers": 89
+        },
+        "examples": []
+      },
+      "first_round_detail": {
+        "round": 2,
+        "number predicted": 10,
+        "number observed": 10,
+        "sig0": {
+          "forecast excess": {
+            "[\"join\",3,3,6]": 2
+          },
+          "observed excess": {
+            "[\"join\",3,4,7]": 2
+          }
+        },
+        "sig1": {
+          "forecast excess": {
+            "[[\"join\",3,3,6],[[\"join\",2,3,5],[\"join\",2,3,5],[\"join\",4,3,7]]]": 2
+          },
+          "observed excess": {
+            "[[\"join\",3,4,7],[[\"join\",2,3,5],[\"join\",2,3,5],[\"join\",4,3,7]]]": 2
+          }
+        }
+      }
+    },
+    {
+      "set": "uniform",
+      "law": "parity",
+      "index": 6408,
+      "end": "rounds",
+      "saved birth rounds": 24,
+      "first frozen difference": 2,
+      "first graded difference": 2,
+      "stratum": "a block meeting a group cell in two knots",
+      "drawn for": null,
+      "cell sizes": [
+        4
+      ],
+      "cell pair intersection sizes": [],
+      "block intersections of at least two knots with cells": [
+        2,
+        2
+      ],
+      "first_round_detail": {
+        "round": 2,
+        "number predicted": 10,
+        "number observed": 10,
+        "sig0": {
+          "forecast excess": {
+            "[\"join\",3,3,6]": 2
+          },
+          "observed excess": {
+            "[\"join\",3,4,7]": 2
+          }
+        },
+        "sig1": {
+          "forecast excess": {
+            "[[\"join\",3,3,6],[[\"join\",2,3,5],[\"join\",2,3,5],[\"join\",4,3,7]]]": 2
+          },
+          "observed excess": {
+            "[[\"join\",3,4,7],[[\"join\",2,3,5],[\"join\",2,3,5],[\"join\",4,3,7]]]": 2
+          }
+        }
+      }
+    },
+    {
+      "set": "handbuilt",
+      "law": "nae",
+      "index": 14,
+      "end": "rounds",
+      "saved birth rounds": 24,
+      "first frozen difference": 2,
+      "first graded difference": 2,
+      "stratum": "a block meeting a group cell in two knots",
+      "drawn for": null,
+      "cell sizes": [
+        4
+      ],
+      "cell pair intersection sizes": [],
+      "block intersections of at least two knots with cells": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "inclusion covers tested against assigned ranks": {
+        "counts": {
+          "valid core sets": 52,
+          "proper inclusions": 437,
+          "true covers": 124
+        },
+        "examples": []
+      },
+      "first_round_detail": {
+        "round": 2,
+        "number predicted": 16,
+        "number observed": 16,
+        "sig0": {
+          "forecast excess": {
+            "[\"join\",4,3,7]": 4
+          },
+          "observed excess": {
+            "[\"join\",4,6,10]": 4
+          }
+        },
+        "sig1": {
+          "forecast excess": {
+            "[[\"join\",4,3,7],[[\"join\",2,3,5],[\"join\",2,3,5],[\"join\",2,3,5],[\"join\",4,4,8]]]": 4
+          },
+          "observed excess": {
+            "[[\"join\",4,6,10],[[\"join\",2,3,5],[\"join\",2,3,5],[\"join\",2,3,5],[\"join\",4,4,8]]]": 4
+          }
+        }
+      }
+    },
+    {
+      "set": "handbuilt",
+      "law": "parity",
+      "index": 14,
+      "end": "closes at round 9",
+      "saved birth rounds": 8,
+      "first frozen difference": 2,
+      "first graded difference": 2,
+      "stratum": "a block meeting a group cell in two knots",
+      "drawn for": null,
+      "cell sizes": [
+        4
+      ],
+      "cell pair intersection sizes": [],
+      "block intersections of at least two knots with cells": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "first_round_detail": {
+        "round": 2,
+        "number predicted": 16,
+        "number observed": 16,
+        "sig0": {
+          "forecast excess": {
+            "[\"join\",4,3,7]": 4
+          },
+          "observed excess": {
+            "[\"join\",4,6,10]": 4
+          }
+        },
+        "sig1": {
+          "forecast excess": {
+            "[[\"join\",4,3,7],[[\"join\",2,3,5],[\"join\",2,3,5],[\"join\",2,3,5],[\"join\",4,4,8]]]": 4
+          },
+          "observed excess": {
+            "[[\"join\",4,6,10],[[\"join\",2,3,5],[\"join\",2,3,5],[\"join\",2,3,5],[\"join\",4,4,8]]]": 4
+          }
+        }
+      }
+    }
+  ],
+  "corrected distinct starts, grouped up to renaming": {
+    "bare live knots, cells and maximal blocks, multiplicities": [
+      2
+    ],
+    "also attaching pendants, chains and original knot sizes, multiplicities": [
+      1,
+      1
+    ],
+    "identical revised two-reading forecasts through 24 under not-all-equal, multiplicities": [
+      1,
+      1
+    ]
+  },
+  "graded counts match the source post hoc counts on every held-out stratum": null,
+  "time in seconds by set and law including archive parsing": {
+    "uniform / nae": 1.112,
+    "uniform / parity": 0.835,
+    "stratified / nae": 0.268,
+    "stratified / parity": 0.267,
+    "handbuilt / nae": 0.412,
+    "handbuilt / parity": 0.392,
+    "grow7 / nae": 0.085,
+    "grow7 / parity": 0.073,
+    "horizon / nae": 0.247
+  },
+  "total elapsed seconds": 3.692,
+  "peak KiB": 26032
+}

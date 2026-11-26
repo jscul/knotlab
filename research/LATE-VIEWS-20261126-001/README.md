@@ -2,9 +2,22 @@
 
 Epic `LATE-VIEWS-20261126-001`, at the coordinator's go-ahead on the selected direction of
 [`LAST-MERGE-20261126-001`](../LAST-MERGE-20261126-001/decision.md). A check by the thread, not a registered study;
-computed. The sections down to "Frozen" were committed, after the advisor's review before the freeze
+computed; refereed (R1: confirmed with fixes, no Block; folded in below). The sections down to "Frozen" were committed, after the advisor's review before the freeze
 ([question](advisor_question_freeze.md), [answer](advisor_answer_freeze.md)), before any grown file of the held-out
 sets below was opened; the sets were grown meanwhile.
+
+## Prior work in the program
+
+Added after the referee (R1, item 7). Earlier work already had the pieces this study assembles: the cluster-count study
+(`CLUSTER-ALL-20261119-001`, [preregistration](../CLUSTER-ALL-20261119-001/preregistration.md)) required a group of
+three or more to enter all at once and adjusted the relay for its size, and its record documented a failure with two
+groups sharing one knot and a two-knot block ([note](../CLUSTER-ALL-20261119-001/cluster_all.md)); the reduction lemma
+(`REDUCE-BLOCKS-20261119-001`, corollary 2) supplies distinct maximal blocks with the identification's hypotheses; the
+chain identification's Theorem 2 already sums the untyped binomials over the core. What this study adds: those rules
+predict the counts by kind of birth and by the parents' kinds, every round, and the settling cuts, including the attempted
+extension to a block meeting a cell; and it locates where the one-or-all rule fails at six knots. The freeze is commit
+`f97fd78ae5`, the results `3ceb22a8ec` (identical prediction bytes and predictor logic); no separate deviations file
+accompanies the freeze.
 
 ## Where it starts
 
@@ -38,9 +51,12 @@ The finite part of each piece (its live knots and pendant points: its core) is l
 extended map is a connected set C of the core holding a knot, a set E of the chains leaving C, and a length of at least
 one along each chain in E. Its kind depends only on (C, E), and in the reading with parents also on which chains have
 length exactly one, so the number of round-t births of each kind is a finite sum of binomial coefficients in t. Nothing is
-grown.
+grown. [Corrected after the referee:] for round one the map must also keep each live start knot's original number of places: of 290
+pairs of accepted uniform starts with the same maximal blocks and loose counts, 284 differ in their first reading with
+parents.
 
-Two readings go past the proved class; both were found by exploring the census of up to four knots:
+Two readings go past the identification as first proved; both were found by exploring the census of up to four knots
+([Corrected after the referee:] the first is already proved, by the reduction lemma's corollary 2, and the second follows the cluster-count study's one-or-all rule):
 1. **Repeated blocks.** Blocks are read as their distinct maximal sets (Lemma R). This takes in starts with two live knots
    that have two common neighbours.
 2. **Group cells.** Each round-1 group of g ≥ 3 live knots is a cell: a set is valid when it holds one knot of the cell or
@@ -55,7 +71,10 @@ Any other cycle puts the piece outside the predictor (a ring: reported as not pr
 continues them below the sizes at which they start, so the count equals its polynomial from the round after its last
 departure. The predicted settling round K is the least K ≥ max(D, 3) with every count equal to its polynomial part from
 round K − D + 1 on, D being the largest number of chains a set takes (the look-alike study's settling definition, applied
-to the predicted counts). In the advisor's words, it is set per kind by the largest set of that kind; the literature's
+to the predicted counts). [Corrected after the referee:] the terms of each kind are summed before its last departure from its eventual
+polynomial is located, since their departures can cancel (for two three-place knots sharing one distinction the
+two-parent births with two fresh distinctions give 2x²/(1 − x)², whose terms depart by +2, −4 and +2 at round two); the
+largest set of a kind gives only a bound. The literature's
 fact behind it is that a rational series with denominator a power of 1 − x is polynomial past the degree of its
 numerator (Stanley, *Enumerative Combinatorics* I, section 4.3).
 
@@ -81,13 +100,17 @@ with group cells, 203 with a block meeting a group cell in two knots, and 7 with
 
 **Negative controls (five knots, not-all-equal).** With the relay removed, 698 starts differ; with the group cells
 removed, 986 differ (every start of dimension three or four has a cell); the not-all-equal predictor applied to the parity
-growths fails on all 470 that close. The predictor can fail.
+growths fails on all 470 that close. The predictor can fail. [Corrected after the referee:] the fitting runs are read through their saved
+rounds (the archive of one to four knots ends at round 20; at five knots 22 accepted records per law hit the knot cap in
+rounds 19 or 21), and the 470 are the parity closures among starts the not-all-equal predictor accepts (of the 478 parity
+closures, eight have an excluded cycle).
 
 **The six-knot census by structure alone** ([`strata_census6.json`](strata_census6.json), [`strata.py`](strata.py)):
 of 82,656 starts, 50,845 stall in round 1 by their demand, 1,473 have a piece with a cycle, and 30,338 are accepted
 (95.4% of those that do not stall): 2,053 in the proved class, 4,264 with repeated blocks only, 20,232 with group cells,
 3,733 with a block meeting a group cell, 56 with one loose distinction. Rare strata: two group cells sharing no knot (92),
-group cells sharing a knot (42); none has two cells sharing two knots.
+group cells sharing a knot (42); none of the 30,338 accepted starts has two cells sharing at least two knots
+([Corrected after the referee:] 1,151 starts that do not stall but are excluded have such an overlap).
 
 ## Frozen
 
@@ -97,7 +120,9 @@ unchanged (scaffolds: register entry A286):
    before ([`sample.py`](sample.py)).
 2. **Stratified.** 199 six-knot starts, up to 40 in each of five rare strata, `random.Random(20261130)`, outside all
    5,000 ([`stratified.jsonl`](stratified.jsonl)).
-3. **Built by hand.** 17 starts outside the census with group cells of four to seven knots ([`handbuilt.py`](handbuilt.py)).
+3. **Built by hand.** 17 starts with group cells of four to seven knots ([`handbuilt.py`](handbuilt.py)). [Corrected after the referee:]
+13 of the 17 are census identities, nine of them in the fitting data; of the four outside the census, three are accepted
+and two agree.
 4. **A second weighting.** 1,000 seven-knot starts of the 'grow' weighting of `WEIGHTINGS-20261119-001B`,
    `random.Random(20261129)` ([`sample_grow.py`](sample_grow.py)).
 5. **A longer horizon.** 100 starts of the uniform set accepted with predicted dimension at most two,
@@ -127,6 +152,13 @@ miss elsewhere, in a stratum, narrows the two readings to the strata where they 
 
 ## What was found
 
+> **Referee R1, confirmed with fixes, no Block, folded in** ([report](referee-R1/report.md)). Narrowed: the existing
+> proofs cover 125 of the 706 uniform starts, not 39; the round-1 reading needs each start knot's places; the misses are
+> 40 starts with cells sharing a knot (from round one) and two with a block meeting a four-knot cell (from round two);
+> the settling cut needs each kind's terms summed first; 13 of the 17 hand-built starts are census identities; the
+> horizon set reached round 40 on 95 before the referee's replay; prior work credited (Not a block). Sentences are
+> corrected where marked.
+
 The grown sets ([`held_out_nae.jsonl.gz`](held_out_nae.jsonl.gz), [`held_out_parity.jsonl.gz`](held_out_parity.jsonl.gz),
 `grown_*.jsonl.gz`) were opened after the freeze and scored by [`score.py`](score.py) ([`score.json`](score.json)).
 
@@ -138,26 +170,33 @@ The grown sets ([`held_out_nae.jsonl.gz`](held_out_nae.jsonl.gz), [`held_out_par
 | 'grow' weighting, seven knots | 70 | 40 of 40 | 30 of 30 | 929 stall; 1 a piece with a cycle |
 | horizon, to round 40 | 100 | 9 of 9 | 91 of 91 | none |
 
-Each row holds under not-all-equal and under parity alike: the same starts agree and differ.
+Each row holds under not-all-equal and under parity alike: the same starts agree and differ. [Corrected after the referee:] these
+denominators count structural starts; requiring every start to pass K1–K3 removes one agreeing parity start from each of
+the uniform and seven-knot sets (704 of 705 and 69 of 69). Of the 747 uniform starts that grow, 705 agree in both
+readings; 41 accepted starts per law hit the knot cap, 26 of them before round 24.
 
 **The stop is met: 42 accepted starts differ.** By the stratum each was drawn for:
-- **Group cells sharing a knot: 39 of 39 differ**, from round 1. Two cells G1 and G2 meet in one knot k; a knot a of
+- **Group cells sharing a knot: 39 of 39 differ**, from round 1 ([Corrected after the referee:] by membership, 40 of 40 tested starts with
+cells sharing a knot differ, the fortieth drawn for another stratum; their total births agree every round, their kinds do
+not). Two cells G1 and G2 meet in one knot k; a knot a of
   G1 and a knot b of G2 are candidates through k, so {a, b} is a round-1 pair, and in round 2 one birth holds both cells
-  with three parents, G1, G2 and the pair. The frozen rule gives the pair no fresh distinction (adding the rest of either
-  cell alone breaks the other) and the union two parents.
-- **A block meeting a group cell in two or three knots: 3 differ** (one of the uniform set, census entry 6408, a cell of
-  four knots; one of the stratified set; the hand-built start of four knots touching pairwise with a knot hanging from
-  each), from round 2.
-- Every other stratum agrees: two cells sharing no knot 40 of 40, a cell of four or more 40 of 40 (and 40 of 40 with
-  chains), a block meeting a cell with chains 39 of 40.
+  with three parents, G1, G2 and the pair. The frozen rule underpredicts the pair by one fresh distinction ([Corrected after the referee:] 0 for 1 on 12 starts, 1 for 2 on 17,
+  2 for 3 on 11) and gives the union two parents.
+- **A block meeting a group cell of four: 2 differ**, from round 2 (census entry 6408 of the uniform set, and the
+  hand-built start of four knots touching pairwise with a knot hanging from each; [Corrected after the referee:] the third miss first
+  listed here, census entry 30324, has two cells of three sharing a knot and belongs above).
+- [Corrected after the referee:] by membership in the supplement, two cells sharing no knot agree 40 of 40, a cell of four or more with chains
+  99 of 99, and of the 65 with a block meeting a cell with chains 21 miss (all of them with cells sharing a knot).
 
 **The rest of the predictions.**
 - **P2.** The grown dimension equals the predicted one for every accepted start of a dimension; the settling round is as
   predicted for all but the starts that differ (uniform 697 of 698 in each reading under not-all-equal; seven knots 70 of
   70; horizon 100 of 100).
-- **P3** holds: all 100 starts agree through round 40.
+- **P3** holds: all 100 match their saved views. [Corrected after the referee:] the growths reached round 40 on 95, round 35 on two and
+  round 34 on three; the referee's replay supplied the missing 28 rounds and confirms 100 of 100 through round 40.
 - **P4** holds: without the relay 217 of the 706 uniform starts differ, without the group cells 581, and the
-  not-all-equal reading on the parity growths 173.
+  not-all-equal reading on the parity growths 173 ([Corrected after the referee:] on the 705 starts the full predictor gets right they
+  introduce 216, 580 and 172 errors).
 - Every start read as stalling by its round-1 demand stalls at round 1 (1,253 uniform, 929 seven-knot).
 
 **Post hoc, not a test** ([`posthoc.py`](posthoc.py), [`posthoc.json`](posthoc.json)). Read the valid sets as a graded
@@ -169,9 +208,10 @@ meeting it) are not explained. Found on the misses, it needs held-out starts of 
 
 **What it says.** For 705 of the 706 accepted starts of the uniform six-knot sample, and every accepted seven-knot start
 of a second weighting, a local reader's whole view, every round in both readings, and the round at which it settles are
-read off the start's finite map without growing it. The proved identification accounts for 39 of the 706; the rest rest
-on two readings this study adds, repeated blocks and group cells, and the group-cell reading as frozen fails where two
-cells share a knot, a stratum of 42 starts in the six-knot census.
+read off the start's finite map without growing it. [Corrected after the referee:] 39 of the 706 satisfy the identification directly and
+86 more after repeated or contained blocks are removed (the reduction lemma's corollary 2); of the remaining 581 with
+cells, 580 agree. The one-or-all reading of groups, after the cluster-count study, fails where two cells share a knot,
+42 starts in the six-knot census.
 
 **Link (intuition-links), offered and not checked as a theorem.** The post hoc reading makes the growth the literature's
 Hasse diagram of a graded partially ordered set (Stanley, *Enumerative Combinatorics* I, chapter 3): the valid sets

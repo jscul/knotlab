@@ -1,0 +1,77 @@
+{
+  "sample": "grow7",
+  "archive index": 816,
+  "starting rule in stored order": 4,
+  "holdings": [
+    [
+      0,
+      2,
+      3
+    ],
+    [
+      0,
+      1,
+      6
+    ],
+    [
+      1,
+      2,
+      4
+    ],
+    [
+      3,
+      4,
+      5
+    ],
+    [
+      5,
+      6,
+      7,
+      9,
+      10
+    ],
+    [
+      7,
+      8,
+      11
+    ],
+    [
+      8,
+      12,
+      13,
+      14,
+      15
+    ]
+  ],
+  "visible distinctions": [
+    5,
+    6,
+    7,
+    9,
+    10
+  ],
+  "independent even parities": [
+    [
+      5,
+      6
+    ],
+    [
+      7,
+      9,
+      10
+    ]
+  ],
+  "cnf": "x5 ~x6; ~x5 x6; x7 x9 ~x10; x7 ~x9 x10; ~x7 x9 x10; ~x7 ~x9 ~x10",
+  "arguments": [
+    "--cnf",
+    "x5 ~x6; ~x5 x6; x7 x9 ~x10; x7 ~x9 x10; ~x7 x9 x10; ~x7 ~x9 ~x10",
+    "--loops",
+    "x5",
+    "x6",
+    "x7",
+    "x9",
+    "--contact",
+    "x10",
+    "--json"
+  ]
+}

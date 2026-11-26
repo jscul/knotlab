@@ -1,0 +1,41 @@
+{
+  "allowed": [
+    "00000",
+    "00011",
+    "00101",
+    "00110",
+    "11000",
+    "11011",
+    "11101",
+    "11110"
+  ],
+  "binding": true,
+  "coexistence": true,
+  "contact": "x10",
+  "erasure": "forgetting",
+  "invisible_in_parts": false,
+  "is_knot": false,
+  "loops": [
+    "x5",
+    "x6",
+    "x7",
+    "x9"
+  ],
+  "loss_on_erasure": false,
+  "minimum_width": 3,
+  "notes": [
+    "with x5 forgotten, x6=0, x7=0, x9=0, x10=1 is still excluded, so a binding survives without that loop",
+    "with x6 forgotten, x5=0, x7=0, x9=0, x10=1 is still excluded, so a binding survives without that loop",
+    "with x7 forgotten, x5=0, x6=1, x9=0, x10=0 is still excluded, so a binding survives without that loop",
+    "with x9 forgotten, x5=0, x6=1, x7=0, x10=0 is still excluded, so a binding survives without that loop",
+    "with the contact x10 forgotten, x5=0, x6=1, x7=0, x9=0 is still excluded, so the loops are tied without it"
+  ],
+  "pairwise_definable": false,
+  "variables": [
+    "x5",
+    "x6",
+    "x7",
+    "x9",
+    "x10"
+  ]
+}

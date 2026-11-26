@@ -3,6 +3,10 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 26 November 2026 · The late views from the start alone refereed: confirmed, with narrowings
+
+**Corrections from [an independent referee's report](research/LATE-VIEWS-20261126-001/referee-R1/report.md), folded into [the decision](research/LATE-VIEWS-20261126-001/decision.md).** The prediction of 705 of 706 held-out views stands. The earlier proofs cover 125 of the 706 starts, not 39; the rule that a group of three or more enters whole comes from an earlier study, which had already seen it fail where two groups share a knot; and the misses are 40 starts with groups sharing a knot and two with a block meeting a group of four.
+
 ## 26 November 2026 · The settling cut after the last fall refereed: confirmed, with narrowings
 
 **Corrections from [an independent referee's report](research/LAST-MERGE-20261126-001/referee-R1/report.md), folded into [the decision](research/LAST-MERGE-20261126-001/decision.md).** Both frozen predictions stand. The rule that a view settles three rounds after the last fall in births (five with parents) holds for the starts that settle late, 16 distinct starts in the held-out sample; a start that is not late can settle later. The combined bound follows from the rule and is not a second test.

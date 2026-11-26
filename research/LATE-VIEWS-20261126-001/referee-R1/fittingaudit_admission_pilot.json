@@ -1,0 +1,122 @@
+{
+  "one to four, not-all-equal": {
+    "records checked": 190,
+    "starts violating parity knot test": [
+      {
+        "knots": 4,
+        "census index": 166,
+        "starting rules": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            3,
+            4
+          ],
+          [
+            1,
+            3,
+            5
+          ],
+          [
+            2,
+            4,
+            5,
+            6
+          ]
+        ],
+        "parity predictor disposition": "one loose",
+        "failed knot tests": [
+          {
+            "start knot position": 3,
+            "coexisting projected assignments": 4,
+            "surviving proper-subset parity constraints": [
+              [
+                "x2",
+                "x4",
+                "x5"
+              ],
+              [
+                "x6"
+              ]
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "five, parity": {
+    "records checked": 1513,
+    "starts violating parity knot test": [
+      {
+        "knots": 5,
+        "census index": 1512,
+        "starting rules": [
+          [
+            0,
+            7,
+            8
+          ],
+          [
+            1,
+            2,
+            3
+          ],
+          [
+            1,
+            4,
+            5
+          ],
+          [
+            2,
+            4,
+            6
+          ],
+          [
+            0,
+            3,
+            5,
+            6
+          ]
+        ],
+        "parity predictor disposition": "predicted",
+        "failed knot tests": [
+          {
+            "start knot position": 0,
+            "coexisting projected assignments": 2,
+            "surviving proper-subset parity constraints": [
+              [
+                "x0"
+              ],
+              [
+                "x7",
+                "x8"
+              ]
+            ]
+          },
+          {
+            "start knot position": 4,
+            "coexisting projected assignments": 4,
+            "surviving proper-subset parity constraints": [
+              [
+                "x0"
+              ],
+              [
+                "x3",
+                "x5",
+                "x6"
+              ]
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "pilot cases per bin": 1,
+  "elapsed seconds": 0.273,
+  "peak RSS KiB": 20376,
+  "address space cap KiB": 2097152
+}

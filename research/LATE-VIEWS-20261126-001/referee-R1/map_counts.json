@@ -1,0 +1,2654 @@
+{
+  "pilot": false,
+  "uncompressed frozen archive sha256": "d6aefb73dc32220c61166efc94e568c0a6906f48a7ccf7eb508d72c1ab3f699d",
+  "fields compared against frozen file": [
+    "read",
+    "stratum",
+    "D",
+    "K0",
+    "K1",
+    "rows"
+  ],
+  "by set and law": {
+    "uniform / nae": {
+      "starts read": 2000,
+      "independent frozen matches all archived fields": 2000,
+      "stall": 1253,
+      "predicted": 706,
+      "frozen forecast rounds checked against archive": 16944,
+      "rounds of positive-length or saved birth data read": 16786,
+      "accepted, end bound": 41,
+      "old hit preserved": 705,
+      "accepted, end rounds": 665,
+      "a piece with a cycle": 41,
+      "old miss persists": 1
+    },
+    "uniform / parity": {
+      "starts read": 2000,
+      "independent frozen matches all archived fields": 2000,
+      "stall": 1253,
+      "predicted": 706,
+      "frozen forecast rounds checked against archive": 16944,
+      "rounds of positive-length or saved birth data read": 13603,
+      "accepted, end bound": 41,
+      "old hit preserved": 705,
+      "accepted, end closes": 172,
+      "accepted, end rounds": 493,
+      "a piece with a cycle": 41,
+      "old miss persists": 1
+    },
+    "stratified / nae": {
+      "starts read": 199,
+      "independent frozen matches all archived fields": 199,
+      "predicted": 199,
+      "frozen forecast rounds checked against archive": 4776,
+      "rounds of positive-length or saved birth data read": 4765,
+      "accepted, end rounds": 193,
+      "old hit preserved": 159,
+      "old miss fixed": 40,
+      "revised rows differ from frozen through forecast horizon": 40,
+      "revised rows differ within the saved birth rounds": 40,
+      "revised D or cuts differ from frozen": 6,
+      "accepted, end bound": 6
+    },
+    "stratified / parity": {
+      "starts read": 199,
+      "independent frozen matches all archived fields": 199,
+      "predicted": 199,
+      "frozen forecast rounds checked against archive": 4776,
+      "rounds of positive-length or saved birth data read": 4203,
+      "accepted, end rounds": 162,
+      "old hit preserved": 159,
+      "accepted, end closes": 31,
+      "old miss fixed": 40,
+      "revised rows differ from frozen through forecast horizon": 40,
+      "revised rows differ within the saved birth rounds": 40,
+      "revised D or cuts differ from frozen": 6,
+      "accepted, end bound": 6
+    },
+    "handbuilt / nae": {
+      "starts read": 17,
+      "independent frozen matches all archived fields": 17,
+      "predicted": 16,
+      "frozen forecast rounds checked against archive": 384,
+      "rounds of positive-length or saved birth data read": 365,
+      "accepted, end rounds": 13,
+      "old hit preserved": 15,
+      "accepted, end bound": 3,
+      "a piece with a cycle": 1,
+      "old miss persists": 1
+    },
+    "handbuilt / parity": {
+      "starts read": 17,
+      "independent frozen matches all archived fields": 17,
+      "predicted": 16,
+      "frozen forecast rounds checked against archive": 384,
+      "rounds of positive-length or saved birth data read": 181,
+      "accepted, end closes": 10,
+      "old hit preserved": 15,
+      "accepted, end rounds": 3,
+      "accepted, end bound": 3,
+      "a piece with a cycle": 1,
+      "old miss persists": 1
+    },
+    "grow7 / nae": {
+      "starts read": 1000,
+      "independent frozen matches all archived fields": 1000,
+      "stall": 929,
+      "predicted": 70,
+      "frozen forecast rounds checked against archive": 1680,
+      "rounds of positive-length or saved birth data read": 1680,
+      "accepted, end rounds": 70,
+      "old hit preserved": 70,
+      "a piece with a cycle": 1
+    },
+    "grow7 / parity": {
+      "starts read": 1000,
+      "independent frozen matches all archived fields": 1000,
+      "stall": 929,
+      "predicted": 70,
+      "frozen forecast rounds checked against archive": 1680,
+      "rounds of positive-length or saved birth data read": 1663,
+      "accepted, end rounds": 69,
+      "old hit preserved": 70,
+      "a piece with a cycle": 1,
+      "accepted, end closes": 1
+    },
+    "horizon / nae": {
+      "starts read": 100,
+      "independent frozen matches all archived fields": 100,
+      "predicted": 100,
+      "frozen forecast rounds checked against archive": 4000,
+      "rounds of positive-length or saved birth data read": 3972,
+      "accepted, end rounds": 95,
+      "old hit preserved": 100,
+      "accepted, end bound": 5
+    }
+  },
+  "graded counts by archived stratum": {
+    "uniform / nae": {
+      "not predicted: stall": 1253,
+      "group cells / agree": 489,
+      "not predicted: a piece with a cycle": 41,
+      "proved class / agree": 39,
+      "a block meeting a group cell in two knots / agree": 91,
+      "repeated blocks only / agree": 86,
+      "a block meeting a group cell in two knots / differ": 1
+    },
+    "uniform / parity": {
+      "not predicted: stall": 1253,
+      "group cells / agree": 489,
+      "not predicted: a piece with a cycle": 41,
+      "proved class / agree": 39,
+      "a block meeting a group cell in two knots / agree": 91,
+      "repeated blocks only / agree": 86,
+      "a block meeting a group cell in two knots / differ": 1
+    },
+    "stratified / nae": {
+      "a block meeting a group cell in two knots / agree": 90,
+      "group cells / agree": 109
+    },
+    "stratified / parity": {
+      "a block meeting a group cell in two knots / agree": 90,
+      "group cells / agree": 109
+    },
+    "handbuilt / nae": {
+      "group cells / agree": 14,
+      "not predicted: a piece with a cycle": 1,
+      "a block meeting a group cell in two knots / differ": 1,
+      "a block meeting a group cell in two knots / agree": 1
+    },
+    "handbuilt / parity": {
+      "group cells / agree": 14,
+      "not predicted: a piece with a cycle": 1,
+      "a block meeting a group cell in two knots / differ": 1,
+      "a block meeting a group cell in two knots / agree": 1
+    },
+    "grow7 / nae": {
+      "not predicted: stall": 929,
+      "proved class / agree": 40,
+      "not predicted: a piece with a cycle": 1,
+      "group cells / agree": 12,
+      "a block meeting a group cell in two knots / agree": 9,
+      "repeated blocks only / agree": 9
+    },
+    "grow7 / parity": {
+      "not predicted: stall": 929,
+      "proved class / agree": 40,
+      "not predicted: a piece with a cycle": 1,
+      "group cells / agree": 12,
+      "a block meeting a group cell in two knots / agree": 9,
+      "repeated blocks only / agree": 9
+    },
+    "horizon / nae": {
+      "proved class / agree": 9,
+      "a block meeting a group cell in two knots / agree": 14,
+      "repeated blocks only / agree": 13,
+      "group cells / agree": 64
+    }
+  },
+  "independent frozen discrepancies": [],
+  "first differences observed": [
+    {
+      "set": "uniform",
+      "law": "nae",
+      "index": 6408,
+      "end": "rounds",
+      "saved birth rounds": 24,
+      "first frozen difference": 2,
+      "first graded difference": 2,
+      "stratum": "a block meeting a group cell in two knots",
+      "drawn for": null,
+      "cell sizes": [
+        4
+      ],
+      "cell pair intersection sizes": [],
+      "block intersections of at least two knots with cells": [
+        2,
+        2
+      ],
+      "inclusion covers tested against assigned ranks": {
+        "counts": {
+          "valid core sets": 43,
+          "proper inclusions": 408,
+          "true covers": 89
+        },
+        "examples": []
+      }
+    },
+    {
+      "set": "uniform",
+      "law": "parity",
+      "index": 6408,
+      "end": "rounds",
+      "saved birth rounds": 24,
+      "first frozen difference": 2,
+      "first graded difference": 2,
+      "stratum": "a block meeting a group cell in two knots",
+      "drawn for": null,
+      "cell sizes": [
+        4
+      ],
+      "cell pair intersection sizes": [],
+      "block intersections of at least two knots with cells": [
+        2,
+        2
+      ]
+    },
+    {
+      "set": "stratified",
+      "law": "nae",
+      "index": 30307,
+      "end": "rounds",
+      "saved birth rounds": 24,
+      "first frozen difference": 1,
+      "first graded difference": null,
+      "stratum": "a block meeting a group cell in two knots",
+      "drawn for": "group cells sharing a knot",
+      "cell sizes": [
+        3,
+        3
+      ],
+      "cell pair intersection sizes": [
+        1
+      ],
+      "block intersections of at least two knots with cells": [
+        2,
+        2
+      ],
+      "inclusion covers tested against assigned ranks": {
+        "counts": {
+          "valid core sets": 9,
+          "proper inclusions": 16,
+          "true covers": 11
+        },
+        "examples": []
+      }
+    },
+    {
+      "set": "stratified",
+      "law": "nae",
+      "index": 30308,
+      "end": "rounds",
+      "saved birth rounds": 24,
+      "first frozen difference": 1,
+      "first graded difference": null,
+      "stratum": "a block meeting a group cell in two knots",
+      "drawn for": "group cells sharing a knot",
+      "cell sizes": [
+        3,
+        3
+      ],
+      "cell pair intersection sizes": [
+        1
+      ],
+      "block intersections of at least two knots with cells": [
+        2,
+        2
+      ],
+      "inclusion covers tested against assigned ranks": {
+        "counts": {
+          "valid core sets": 13,
+          "proper inclusions": 39,
+          "true covers": 19
+        },
+        "examples": []
+      }
+    },
+    {
+      "set": "stratified",
+      "law": "nae",
+      "index": 30311,
+      "end": "rounds",
+      "saved birth rounds": 24,
+      "first frozen difference": 1,
+      "first graded difference": null,
+      "stratum": "a block meeting a group cell in two knots",
+      "drawn for": "group cells sharing a knot",
+      "cell sizes": [
+        3,
+        3
+      ],
+      "cell pair intersection sizes": [
+        1
+      ],
+      "block intersections of at least two knots with cells": [
+        2,
+        2
+      ],
+      "inclusion covers tested against assigned ranks": {
+        "counts": {
+          "valid core sets": 12,
+          "proper inclusions": 33,
+          "true covers": 16
+        },
+        "examples": []
+      }
+    },
+    {
+      "set": "stratified",
+      "law": "nae",
+      "index": 30312,
+      "end": "rounds",
+      "saved birth rounds": 24,
+      "first frozen difference": 1,
+      "first graded difference": null,
+      "stratum": "a block meeting a group cell in two knots",
+      "drawn for": "group cells sharing a knot",
+      "cell sizes": [
+        3,
+        3
+      ],
+      "cell pair intersection sizes": [
+        1
+      ],
+      "block intersections of at least two knots with cells": [
+        2,
+        2
+      ],
+      "inclusion covers tested against assigned ranks": {
+        "counts": {
+          "valid core sets": 18,
+          "proper inclusions": 81,
+          "true covers": 29
+        },
+        "examples": []
+      }
+    },
+    {
+      "set": "stratified",
+      "law": "nae",
+      "index": 30315,
+      "end": "rounds",
+      "saved birth rounds": 24,
+      "first frozen difference": 1,
+      "first graded difference": null,
+      "stratum": "a block meeting a group cell in two knots",
+      "drawn for": "group cells sharing a knot",
+      "cell sizes": [
+        3,
+        3
+      ],
+      "cell pair intersection sizes": [
+        1
+      ],
+      "block intersections of at least two knots with cells": [
+        2,
+        2
+      ],
+      "inclusion covers tested against assigned ranks": {
+        "counts": {
+          "valid core sets": 18,
+          "proper inclusions": 79,
+          "true covers": 29
+        },
+        "examples": []
+      }
+    },
+    {
+      "set": "stratified",
+      "law": "nae",
+      "index": 30316,
+      "end": "rounds",
+      "saved birth rounds": 24,
+      "first frozen difference": 1,
+      "first graded difference": null,
+      "stratum": "a block meeting a group cell in two knots",
+      "drawn for": "group cells sharing a knot",
+      "cell sizes": [
+        3,
+        3
+      ],
+      "cell pair intersection sizes": [
+        1
+      ],
+      "block intersections of at least two knots with cells": [
+        2,
+        2
+      ],
+      "inclusion covers tested against assigned ranks": {
+        "counts": {
+          "valid core sets": 28,
+          "proper inclusions": 193,
+          "true covers": 54
+        },
+        "examples": []
+      }
+    },
+    {
+      "set": "stratified",
+      "law": "nae",
+      "index": 30319,
+      "end": "rounds",
+      "saved birth rounds": 24,
+      "first frozen difference": 1,
+      "first graded difference": null,
+      "stratum": "a block meeting a group cell in two knots",
+      "drawn for": "group cells sharing a knot",
+      "cell sizes": [
+        3,
+        3
+      ],
+      "cell pair intersection sizes": [
+        1
+      ],
+      "block intersections of at least two knots with cells": [
+        2,
+        2
+      ],
+      "inclusion covers tested against assigned ranks": {
+        "counts": {
+          "valid core sets": 16,
+          "proper inclusions": 65,
+          "true covers": 23
+        },
+        "examples": []
+      }
+    },
+    {
+      "set": "stratified",
+      "law": "nae",
+      "index": 30320,
+      "end": "rounds",
+      "saved birth rounds": 24,
+      "first frozen difference": 1,
+      "first graded difference": null,
+      "stratum": "a block meeting a group cell in two knots",
+      "drawn for": "group cells sharing a knot",
+      "cell sizes": [
+        3,
+        3
+      ],
+      "cell pair intersection sizes": [
+        1
+      ],
+      "block intersections of at least two knots with cells": [
+        2,
+        2
+      ],
+      "inclusion covers tested against assigned ranks": {
+        "counts": {
+          "valid core sets": 25,
+          "proper inclusions": 162,
+          "true covers": 44
+        },
+        "examples": []
+      }
+    },
+    {
+      "set": "stratified",
+      "law": "nae",
+      "index": 30323,
+      "end": "rounds",
+      "saved birth rounds": 24,
+      "first frozen difference": 1,
+      "first graded difference": null,
+      "stratum": "a block meeting a group cell in two knots",
+      "drawn for": "group cells sharing a knot",
+      "cell sizes": [
+        3,
+        3
+      ],
+      "cell pair intersection sizes": [
+        1
+      ],
+      "block intersections of at least two knots with cells": [
+        2,
+        2
+      ],
+      "inclusion covers tested against assigned ranks": {
+        "counts": {
+          "valid core sets": 24,
+          "proper inclusions": 149,
+          "true covers": 41
+        },
+        "examples": []
+      }
+    },
+    {
+      "set": "stratified",
+      "law": "nae",
+      "index": 30324,
+      "end": "rounds",
+      "saved birth rounds": 24,
+      "first frozen difference": 1,
+      "first graded difference": null,
+      "stratum": "a block meeting a group cell in two knots",
+      "drawn for": "a block meeting a group cell, with chains",
+      "cell sizes": [
+        3,
+        3
+      ],
+      "cell pair intersection sizes": [
+        1
+      ],
+      "block intersections of at least two knots with cells": [
+        2,
+        2
+      ],
+      "inclusion covers tested against assigned ranks": {
+        "counts": {
+          "valid core sets": 39,
+          "proper inclusions": 374,
+          "true covers": 81
+        },
+        "examples": []
+      }
+    },
+    {
+      "set": "stratified",
+      "law": "nae",
+      "index": 30327,
+      "end": "rounds",
+      "saved birth rounds": 24,
+      "first frozen difference": 1,
+      "first graded difference": null,
+      "stratum": "a block meeting a group cell in two knots",
+      "drawn for": "group cells sharing a knot",
+      "cell sizes": [
+        3,
+        3
+      ],
+      "cell pair intersection sizes": [
+        1
+      ],
+      "block intersections of at least two knots with cells": [
+        2,
+        2
+      ],
+      "inclusion covers tested against assigned ranks": {
+        "counts": {
+          "valid core sets": 36,
+          "proper inclusions": 329,
+          "true covers": 71
+        },
+        "examples": []
+      }
+    },
+    {
+      "set": "stratified",
+      "law": "nae",
+      "index": 30328,
+      "end": "rounds",
+      "saved birth rounds": 24,
+      "first frozen difference": 1,
+      "first graded difference": null,
+      "stratum": "a block meeting a group cell in two knots",
+      "drawn for": "group cells sharing a knot",
+      "cell sizes": [
+        3,
+        3
+      ],
+      "cell pair intersection sizes": [
+        1
+      ],
+      "block intersections of at least two knots with cells": [
+        2,
+        2
+      ],
+      "inclusion covers tested against assigned ranks": {
+        "counts": {
+          "valid core sets": 61,
+          "proper inclusions": 842,
+          "true covers": 146
+        },
+        "examples": []
+      }
+    },
+    {
+      "set": "stratified",
+      "law": "nae",
+      "index": 30331,
+      "end": "rounds",
+      "saved birth rounds": 24,
+      "first frozen difference": 1,
+      "first graded difference": null,
+      "stratum": "a block meeting a group cell in two knots",
+      "drawn for": "group cells sharing a knot",
+      "cell sizes": [
+        3,
+        3
+      ],
+      "cell pair intersection sizes": [
+        1
+      ],
+      "block intersections of at least two knots with cells": [
+        2,
+        2
+      ],
+      "inclusion covers tested against assigned ranks": {
+        "counts": {
+          "valid core sets": 13,
+          "proper inclusions": 38,
+          "true covers": 19
+        },
+        "examples": []
+      }
+    },
+    {
+      "set": "stratified",
+      "law": "nae",
+      "index": 30332,
+      "end": "rounds",
+      "saved birth rounds": 24,
+      "first frozen difference": 1,
+      "first graded difference": null,
+      "stratum": "a block meeting a group cell in two knots",
+      "drawn for": "group cells sharing a knot",
+      "cell sizes": [
+        3,
+        3
+      ],
+      "cell pair intersection sizes": [
+        1
+      ],
+      "block intersections of at least two knots with cells": [
+        2,
+        2
+      ],
+      "inclusion covers tested against assigned ranks": {
+        "counts": {
+          "valid core sets": 19,
+          "proper inclusions": 87,
+          "true covers": 32
+        },
+        "examples": []
+      }
+    },
+    {
+      "set": "stratified",
+      "law": "nae",
+      "index": 30335,
+      "end": "rounds",
+      "saved birth rounds": 24,
+      "first frozen difference": 1,
+      "first graded difference": null,
+      "stratum": "a block meeting a group cell in two knots",
+      "drawn for": "group cells sharing a knot",
+      "cell sizes": [
+        3,
+        3
+      ],
+      "cell pair intersection sizes": [
+        1
+      ],
+      "block intersections of at least two knots with cells": [
+        2,
+        2
+      ],
+      "inclusion covers tested against assigned ranks": {
+        "counts": {
+          "valid core sets": 18,
+          "proper inclusions": 80,
+          "true covers": 29
+        },
+        "examples": []
+      }
+    },
+    {
+      "set": "stratified",
+      "law": "nae",
+      "index": 30336,
+      "end": "rounds",
+      "saved birth rounds": 24,
+      "first frozen difference": 1,
+      "first graded difference": null,
+      "stratum": "a block meeting a group cell in two knots",
+      "drawn for": "group cells sharing a knot",
+      "cell sizes": [
+        3,
+        3
+      ],
+      "cell pair intersection sizes": [
+        1
+      ],
+      "block intersections of at least two knots with cells": [
+        2,
+        2
+      ],
+      "inclusion covers tested against assigned ranks": {
+        "counts": {
+          "valid core sets": 28,
+          "proper inclusions": 194,
+          "true covers": 54
+        },
+        "examples": []
+      }
+    },
+    {
+      "set": "stratified",
+      "law": "nae",
+      "index": 30339,
+      "end": "rounds",
+      "saved birth rounds": 24,
+      "first frozen difference": 1,
+      "first graded difference": null,
+      "stratum": "a block meeting a group cell in two knots",
+      "drawn for": "group cells sharing a knot",
+      "cell sizes": [
+        3,
+        3
+      ],
+      "cell pair intersection sizes": [
+        1
+      ],
+      "block intersections of at least two knots with cells": [
+        2,
+        2
+      ],
+      "inclusion covers tested against assigned ranks": {
+        "counts": {
+          "valid core sets": 28,
+          "proper inclusions": 192,
+          "true covers": 54
+        },
+        "examples": []
+      }
+    },
+    {
+      "set": "stratified",
+      "law": "nae",
+      "index": 30340,
+      "end": "rounds",
+      "saved birth rounds": 24,
+      "first frozen difference": 1,
+      "first graded difference": null,
+      "stratum": "a block meeting a group cell in two knots",
+      "drawn for": "group cells sharing a knot",
+      "cell sizes": [
+        3,
+        3
+      ],
+      "cell pair intersection sizes": [
+        1
+      ],
+      "block intersections of at least two knots with cells": [
+        2,
+        2
+      ],
+      "inclusion covers tested against assigned ranks": {
+        "counts": {
+          "valid core sets": 46,
+          "proper inclusions": 480,
+          "true covers": 107
+        },
+        "examples": []
+      }
+    },
+    {
+      "set": "stratified",
+      "law": "nae",
+      "index": 30344,
+      "end": "rounds",
+      "saved birth rounds": 24,
+      "first frozen difference": 1,
+      "first graded difference": null,
+      "stratum": "a block meeting a group cell in two knots",
+      "drawn for": "group cells sharing a knot",
+      "cell sizes": [
+        3,
+        3
+      ],
+      "cell pair intersection sizes": [
+        1
+      ],
+      "block intersections of at least two knots with cells": [
+        2,
+        2
+      ],
+      "inclusion covers tested against assigned ranks": {
+        "counts": {
+          "valid core sets": 26,
+          "proper inclusions": 170,
+          "true covers": 47
+        },
+        "examples": []
+      }
+    },
+    {
+      "set": "stratified",
+      "law": "nae",
+      "index": 30347,
+      "end": "rounds",
+      "saved birth rounds": 24,
+      "first frozen difference": 1,
+      "first graded difference": null,
+      "stratum": "a block meeting a group cell in two knots",
+      "drawn for": "group cells sharing a knot",
+      "cell sizes": [
+        3,
+        3
+      ],
+      "cell pair intersection sizes": [
+        1
+      ],
+      "block intersections of at least two knots with cells": [
+        2,
+        2
+      ],
+      "inclusion covers tested against assigned ranks": {
+        "counts": {
+          "valid core sets": 24,
+          "proper inclusions": 151,
+          "true covers": 41
+        },
+        "examples": []
+      }
+    },
+    {
+      "set": "stratified",
+      "law": "nae",
+      "index": 30348,
+      "end": "rounds",
+      "saved birth rounds": 24,
+      "first frozen difference": 1,
+      "first graded difference": null,
+      "stratum": "a block meeting a group cell in two knots",
+      "drawn for": "group cells sharing a knot",
+      "cell sizes": [
+        3,
+        3
+      ],
+      "cell pair intersection sizes": [
+        1
+      ],
+      "block intersections of at least two knots with cells": [
+        2,
+        2
+      ],
+      "inclusion covers tested against assigned ranks": {
+        "counts": {
+          "valid core sets": 39,
+          "proper inclusions": 377,
+          "true covers": 81
+        },
+        "examples": []
+      }
+    },
+    {
+      "set": "stratified",
+      "law": "nae",
+      "index": 30351,
+      "end": "rounds",
+      "saved birth rounds": 24,
+      "first frozen difference": 1,
+      "first graded difference": null,
+      "stratum": "a block meeting a group cell in two knots",
+      "drawn for": "group cells sharing a knot",
+      "cell sizes": [
+        3,
+        3
+      ],
+      "cell pair intersection sizes": [
+        1
+      ],
+      "block intersections of at least two knots with cells": [
+        2,
+        2
+      ],
+      "inclusion covers tested against assigned ranks": {
+        "counts": {
+          "valid core sets": 38,
+          "proper inclusions": 361,
+          "true covers": 78
+        },
+        "examples": []
+      }
+    },
+    {
+      "set": "stratified",
+      "law": "nae",
+      "index": 30352,
+      "end": "rounds",
+      "saved birth rounds": 24,
+      "first frozen difference": 1,
+      "first graded difference": null,
+      "stratum": "a block meeting a group cell in two knots",
+      "drawn for": "group cells sharing a knot",
+      "cell sizes": [
+        3,
+        3
+      ],
+      "cell pair intersection sizes": [
+        1
+      ],
+      "block intersections of at least two knots with cells": [
+        2,
+        2
+      ],
+      "inclusion covers tested against assigned ranks": {
+        "counts": {
+          "valid core sets": 65,
+          "proper inclusions": 925,
+          "true covers": 162
+        },
+        "examples": []
+      }
+    },
+    {
+      "set": "stratified",
+      "law": "nae",
+      "index": 30355,
+      "end": "rounds",
+      "saved birth rounds": 24,
+      "first frozen difference": 1,
+      "first graded difference": null,
+      "stratum": "a block meeting a group cell in two knots",
+      "drawn for": "group cells sharing a knot",
+      "cell sizes": [
+        3,
+        3
+      ],
+      "cell pair intersection sizes": [
+        1
+      ],
+      "block intersections of at least two knots with cells": [
+        2,
+        2
+      ],
+      "inclusion covers tested against assigned ranks": {
+        "counts": {
+          "valid core sets": 25,
+          "proper inclusions": 157,
+          "true covers": 44
+        },
+        "examples": []
+      }
+    },
+    {
+      "set": "stratified",
+      "law": "nae",
+      "index": 30356,
+      "end": "rounds",
+      "saved birth rounds": 24,
+      "first frozen difference": 1,
+      "first graded difference": null,
+      "stratum": "a block meeting a group cell in two knots",
+      "drawn for": "group cells sharing a knot",
+      "cell sizes": [
+        3,
+        3
+      ],
+      "cell pair intersection sizes": [
+        1
+      ],
+      "block intersections of at least two knots with cells": [
+        2,
+        2
+      ],
+      "inclusion covers tested against assigned ranks": {
+        "counts": {
+          "valid core sets": 40,
+          "proper inclusions": 386,
+          "true covers": 84
+        },
+        "examples": []
+      }
+    },
+    {
+      "set": "stratified",
+      "law": "nae",
+      "index": 30359,
+      "end": "rounds",
+      "saved birth rounds": 24,
+      "first frozen difference": 1,
+      "first graded difference": null,
+      "stratum": "a block meeting a group cell in two knots",
+      "drawn for": "group cells sharing a knot",
+      "cell sizes": [
+        3,
+        3
+      ],
+      "cell pair intersection sizes": [
+        1
+      ],
+      "block intersections of at least two knots with cells": [
+        2,
+        2
+      ],
+      "inclusion covers tested against assigned ranks": {
+        "counts": {
+          "valid core sets": 36,
+          "proper inclusions": 333,
+          "true covers": 71
+        },
+        "examples": []
+      }
+    },
+    {
+      "set": "stratified",
+      "law": "nae",
+      "index": 30360,
+      "end": "rounds",
+      "saved birth rounds": 24,
+      "first frozen difference": 1,
+      "first graded difference": null,
+      "stratum": "a block meeting a group cell in two knots",
+      "drawn for": "group cells sharing a knot",
+      "cell sizes": [
+        3,
+        3
+      ],
+      "cell pair intersection sizes": [
+        1
+      ],
+      "block intersections of at least two knots with cells": [
+        2,
+        2
+      ],
+      "inclusion covers tested against assigned ranks": {
+        "counts": {
+          "valid core sets": 61,
+          "proper inclusions": 849,
+          "true covers": 146
+        },
+        "examples": []
+      }
+    },
+    {
+      "set": "stratified",
+      "law": "nae",
+      "index": 30363,
+      "end": "rounds",
+      "saved birth rounds": 24,
+      "first frozen difference": 1,
+      "first graded difference": null,
+      "stratum": "a block meeting a group cell in two knots",
+      "drawn for": "group cells sharing a knot",
+      "cell sizes": [
+        3,
+        3
+      ],
+      "cell pair intersection sizes": [
+        1
+      ],
+      "block intersections of at least two knots with cells": [
+        2,
+        2
+      ],
+      "inclusion covers tested against assigned ranks": {
+        "counts": {
+          "valid core sets": 58,
+          "proper inclusions": 791,
+          "true covers": 136
+        },
+        "examples": []
+      }
+    },
+    {
+      "set": "stratified",
+      "law": "nae",
+      "index": 30364,
+      "end": "rounds",
+      "saved birth rounds": 24,
+      "first frozen difference": 1,
+      "first graded difference": null,
+      "stratum": "a block meeting a group cell in two knots",
+      "drawn for": "group cells sharing a knot",
+      "cell sizes": [
+        3,
+        3
+      ],
+      "cell pair intersection sizes": [
+        1
+      ],
+      "block intersections of at least two knots with cells": [
+        2,
+        2
+      ],
+      "inclusion covers tested against assigned ranks": {
+        "counts": {
+          "valid core sets": 103,
+          "proper inclusions": 2069,
+          "true covers": 291
+        },
+        "examples": []
+      }
+    },
+    {
+      "set": "stratified",
+      "law": "nae",
+      "index": 30457,
+      "end": "rounds",
+      "saved birth rounds": 24,
+      "first frozen difference": 1,
+      "first graded difference": null,
+      "stratum": "a block meeting a group cell in two knots",
+      "drawn for": "group cells sharing a knot",
+      "cell sizes": [
+        3,
+        3
+      ],
+      "cell pair intersection sizes": [
+        1
+      ],
+      "block intersections of at least two knots with cells": [
+        2,
+        2
+      ],
+      "inclusion covers tested against assigned ranks": {
+        "counts": {
+          "valid core sets": 19,
+          "proper inclusions": 85,
+          "true covers": 32
+        },
+        "examples": []
+      }
+    },
+    {
+      "set": "stratified",
+      "law": "nae",
+      "index": 30458,
+      "end": "rounds",
+      "saved birth rounds": 24,
+      "first frozen difference": 1,
+      "first graded difference": null,
+      "stratum": "a block meeting a group cell in two knots",
+      "drawn for": "group cells sharing a knot",
+      "cell sizes": [
+        3,
+        3
+      ],
+      "cell pair intersection sizes": [
+        1
+      ],
+      "block intersections of at least two knots with cells": [
+        2,
+        2
+      ],
+      "inclusion covers tested against assigned ranks": {
+        "counts": {
+          "valid core sets": 28,
+          "proper inclusions": 187,
+          "true covers": 53
+        },
+        "examples": []
+      }
+    },
+    {
+      "set": "stratified",
+      "law": "nae",
+      "index": 30461,
+      "end": "rounds",
+      "saved birth rounds": 24,
+      "first frozen difference": 1,
+      "first graded difference": null,
+      "stratum": "a block meeting a group cell in two knots",
+      "drawn for": "group cells sharing a knot",
+      "cell sizes": [
+        3,
+        3
+      ],
+      "cell pair intersection sizes": [
+        1
+      ],
+      "block intersections of at least two knots with cells": [
+        2,
+        2
+      ],
+      "inclusion covers tested against assigned ranks": {
+        "counts": {
+          "valid core sets": 26,
+          "proper inclusions": 168,
+          "true covers": 47
+        },
+        "examples": []
+      }
+    },
+    {
+      "set": "stratified",
+      "law": "nae",
+      "index": 30462,
+      "end": "rounds",
+      "saved birth rounds": 24,
+      "first frozen difference": 1,
+      "first graded difference": null,
+      "stratum": "a block meeting a group cell in two knots",
+      "drawn for": "group cells sharing a knot",
+      "cell sizes": [
+        3,
+        3
+      ],
+      "cell pair intersection sizes": [
+        1
+      ],
+      "block intersections of at least two knots with cells": [
+        2,
+        2
+      ],
+      "inclusion covers tested against assigned ranks": {
+        "counts": {
+          "valid core sets": 41,
+          "proper inclusions": 400,
+          "true covers": 87
+        },
+        "examples": []
+      }
+    },
+    {
+      "set": "stratified",
+      "law": "nae",
+      "index": 30466,
+      "end": "rounds",
+      "saved birth rounds": 24,
+      "first frozen difference": 1,
+      "first graded difference": null,
+      "stratum": "a block meeting a group cell in two knots",
+      "drawn for": "group cells sharing a knot",
+      "cell sizes": [
+        3,
+        3
+      ],
+      "cell pair intersection sizes": [
+        1
+      ],
+      "block intersections of at least two knots with cells": [
+        2,
+        2
+      ],
+      "inclusion covers tested against assigned ranks": {
+        "counts": {
+          "valid core sets": 67,
+          "proper inclusions": 960,
+          "true covers": 168
+        },
+        "examples": []
+      }
+    },
+    {
+      "set": "stratified",
+      "law": "nae",
+      "index": 30469,
+      "end": "rounds",
+      "saved birth rounds": 24,
+      "first frozen difference": 1,
+      "first graded difference": null,
+      "stratum": "a block meeting a group cell in two knots",
+      "drawn for": "group cells sharing a knot",
+      "cell sizes": [
+        3,
+        3
+      ],
+      "cell pair intersection sizes": [
+        1
+      ],
+      "block intersections of at least two knots with cells": [
+        2,
+        2
+      ],
+      "inclusion covers tested against assigned ranks": {
+        "counts": {
+          "valid core sets": 37,
+          "proper inclusions": 348,
+          "true covers": 74
+        },
+        "examples": []
+      }
+    },
+    {
+      "set": "stratified",
+      "law": "nae",
+      "index": 30470,
+      "end": "rounds",
+      "saved birth rounds": 24,
+      "first frozen difference": 1,
+      "first graded difference": null,
+      "stratum": "a block meeting a group cell in two knots",
+      "drawn for": "group cells sharing a knot",
+      "cell sizes": [
+        3,
+        3
+      ],
+      "cell pair intersection sizes": [
+        1
+      ],
+      "block intersections of at least two knots with cells": [
+        2,
+        2
+      ],
+      "inclusion covers tested against assigned ranks": {
+        "counts": {
+          "valid core sets": 62,
+          "proper inclusions": 871,
+          "true covers": 149
+        },
+        "examples": []
+      }
+    },
+    {
+      "set": "stratified",
+      "law": "nae",
+      "index": 30473,
+      "end": "rounds",
+      "saved birth rounds": 24,
+      "first frozen difference": 1,
+      "first graded difference": null,
+      "stratum": "a block meeting a group cell in two knots",
+      "drawn for": "group cells sharing a knot",
+      "cell sizes": [
+        3,
+        3
+      ],
+      "cell pair intersection sizes": [
+        1
+      ],
+      "block intersections of at least two knots with cells": [
+        2,
+        2
+      ],
+      "inclusion covers tested against assigned ranks": {
+        "counts": {
+          "valid core sets": 59,
+          "proper inclusions": 814,
+          "true covers": 139
+        },
+        "examples": []
+      }
+    },
+    {
+      "set": "stratified",
+      "law": "nae",
+      "index": 30474,
+      "end": "rounds",
+      "saved birth rounds": 24,
+      "first frozen difference": 1,
+      "first graded difference": null,
+      "stratum": "a block meeting a group cell in two knots",
+      "drawn for": "group cells sharing a knot",
+      "cell sizes": [
+        3,
+        3
+      ],
+      "cell pair intersection sizes": [
+        1
+      ],
+      "block intersections of at least two knots with cells": [
+        2,
+        2
+      ],
+      "inclusion covers tested against assigned ranks": {
+        "counts": {
+          "valid core sets": 104,
+          "proper inclusions": 2107,
+          "true covers": 294
+        },
+        "examples": []
+      }
+    },
+    {
+      "set": "stratified",
+      "law": "nae",
+      "index": 30477,
+      "end": "rounds",
+      "saved birth rounds": 24,
+      "first frozen difference": 1,
+      "first graded difference": null,
+      "stratum": "a block meeting a group cell in two knots",
+      "drawn for": "group cells sharing a knot",
+      "cell sizes": [
+        3,
+        3
+      ],
+      "cell pair intersection sizes": [
+        1
+      ],
+      "block intersections of at least two knots with cells": [
+        2,
+        2
+      ],
+      "inclusion covers tested against assigned ranks": {
+        "counts": {
+          "valid core sets": 97,
+          "proper inclusions": 1928,
+          "true covers": 268
+        },
+        "examples": []
+      }
+    },
+    {
+      "set": "stratified",
+      "law": "nae",
+      "index": 30478,
+      "end": "rounds",
+      "saved birth rounds": 24,
+      "first frozen difference": 1,
+      "first graded difference": null,
+      "stratum": "a block meeting a group cell in two knots",
+      "drawn for": "group cells sharing a knot",
+      "cell sizes": [
+        3,
+        3
+      ],
+      "cell pair intersection sizes": [
+        1
+      ],
+      "block intersections of at least two knots with cells": [
+        2,
+        2
+      ],
+      "inclusion covers tested against assigned ranks": {
+        "counts": {
+          "valid core sets": 178,
+          "proper inclusions": 5123,
+          "true covers": 583
+        },
+        "examples": []
+      }
+    },
+    {
+      "set": "stratified",
+      "law": "parity",
+      "index": 30307,
+      "end": "closes at round 3",
+      "saved birth rounds": 2,
+      "first frozen difference": 1,
+      "first graded difference": null,
+      "stratum": "a block meeting a group cell in two knots",
+      "drawn for": "group cells sharing a knot",
+      "cell sizes": [
+        3,
+        3
+      ],
+      "cell pair intersection sizes": [
+        1
+      ],
+      "block intersections of at least two knots with cells": [
+        2,
+        2
+      ]
+    },
+    {
+      "set": "stratified",
+      "law": "parity",
+      "index": 30308,
+      "end": "closes at round 4",
+      "saved birth rounds": 3,
+      "first frozen difference": 1,
+      "first graded difference": null,
+      "stratum": "a block meeting a group cell in two knots",
+      "drawn for": "group cells sharing a knot",
+      "cell sizes": [
+        3,
+        3
+      ],
+      "cell pair intersection sizes": [
+        1
+      ],
+      "block intersections of at least two knots with cells": [
+        2,
+        2
+      ]
+    },
+    {
+      "set": "stratified",
+      "law": "parity",
+      "index": 30311,
+      "end": "rounds",
+      "saved birth rounds": 24,
+      "first frozen difference": 1,
+      "first graded difference": null,
+      "stratum": "a block meeting a group cell in two knots",
+      "drawn for": "group cells sharing a knot",
+      "cell sizes": [
+        3,
+        3
+      ],
+      "cell pair intersection sizes": [
+        1
+      ],
+      "block intersections of at least two knots with cells": [
+        2,
+        2
+      ]
+    },
+    {
+      "set": "stratified",
+      "law": "parity",
+      "index": 30312,
+      "end": "rounds",
+      "saved birth rounds": 24,
+      "first frozen difference": 1,
+      "first graded difference": null,
+      "stratum": "a block meeting a group cell in two knots",
+      "drawn for": "group cells sharing a knot",
+      "cell sizes": [
+        3,
+        3
+      ],
+      "cell pair intersection sizes": [
+        1
+      ],
+      "block intersections of at least two knots with cells": [
+        2,
+        2
+      ]
+    },
+    {
+      "set": "stratified",
+      "law": "parity",
+      "index": 30315,
+      "end": "closes at round 5",
+      "saved birth rounds": 4,
+      "first frozen difference": 1,
+      "first graded difference": null,
+      "stratum": "a block meeting a group cell in two knots",
+      "drawn for": "group cells sharing a knot",
+      "cell sizes": [
+        3,
+        3
+      ],
+      "cell pair intersection sizes": [
+        1
+      ],
+      "block intersections of at least two knots with cells": [
+        2,
+        2
+      ]
+    },
+    {
+      "set": "stratified",
+      "law": "parity",
+      "index": 30316,
+      "end": "closes at round 6",
+      "saved birth rounds": 5,
+      "first frozen difference": 1,
+      "first graded difference": null,
+      "stratum": "a block meeting a group cell in two knots",
+      "drawn for": "group cells sharing a knot",
+      "cell sizes": [
+        3,
+        3
+      ],
+      "cell pair intersection sizes": [
+        1
+      ],
+      "block intersections of at least two knots with cells": [
+        2,
+        2
+      ]
+    },
+    {
+      "set": "stratified",
+      "law": "parity",
+      "index": 30319,
+      "end": "rounds",
+      "saved birth rounds": 24,
+      "first frozen difference": 1,
+      "first graded difference": null,
+      "stratum": "a block meeting a group cell in two knots",
+      "drawn for": "group cells sharing a knot",
+      "cell sizes": [
+        3,
+        3
+      ],
+      "cell pair intersection sizes": [
+        1
+      ],
+      "block intersections of at least two knots with cells": [
+        2,
+        2
+      ]
+    },
+    {
+      "set": "stratified",
+      "law": "parity",
+      "index": 30320,
+      "end": "rounds",
+      "saved birth rounds": 24,
+      "first frozen difference": 1,
+      "first graded difference": null,
+      "stratum": "a block meeting a group cell in two knots",
+      "drawn for": "group cells sharing a knot",
+      "cell sizes": [
+        3,
+        3
+      ],
+      "cell pair intersection sizes": [
+        1
+      ],
+      "block intersections of at least two knots with cells": [
+        2,
+        2
+      ]
+    },
+    {
+      "set": "stratified",
+      "law": "parity",
+      "index": 30323,
+      "end": "rounds",
+      "saved birth rounds": 24,
+      "first frozen difference": 1,
+      "first graded difference": null,
+      "stratum": "a block meeting a group cell in two knots",
+      "drawn for": "group cells sharing a knot",
+      "cell sizes": [
+        3,
+        3
+      ],
+      "cell pair intersection sizes": [
+        1
+      ],
+      "block intersections of at least two knots with cells": [
+        2,
+        2
+      ]
+    },
+    {
+      "set": "stratified",
+      "law": "parity",
+      "index": 30324,
+      "end": "rounds",
+      "saved birth rounds": 24,
+      "first frozen difference": 1,
+      "first graded difference": null,
+      "stratum": "a block meeting a group cell in two knots",
+      "drawn for": "a block meeting a group cell, with chains",
+      "cell sizes": [
+        3,
+        3
+      ],
+      "cell pair intersection sizes": [
+        1
+      ],
+      "block intersections of at least two knots with cells": [
+        2,
+        2
+      ]
+    },
+    {
+      "set": "stratified",
+      "law": "parity",
+      "index": 30327,
+      "end": "closes at round 7",
+      "saved birth rounds": 6,
+      "first frozen difference": 1,
+      "first graded difference": null,
+      "stratum": "a block meeting a group cell in two knots",
+      "drawn for": "group cells sharing a knot",
+      "cell sizes": [
+        3,
+        3
+      ],
+      "cell pair intersection sizes": [
+        1
+      ],
+      "block intersections of at least two knots with cells": [
+        2,
+        2
+      ]
+    },
+    {
+      "set": "stratified",
+      "law": "parity",
+      "index": 30328,
+      "end": "closes at round 8",
+      "saved birth rounds": 7,
+      "first frozen difference": 1,
+      "first graded difference": null,
+      "stratum": "a block meeting a group cell in two knots",
+      "drawn for": "group cells sharing a knot",
+      "cell sizes": [
+        3,
+        3
+      ],
+      "cell pair intersection sizes": [
+        1
+      ],
+      "block intersections of at least two knots with cells": [
+        2,
+        2
+      ]
+    },
+    {
+      "set": "stratified",
+      "law": "parity",
+      "index": 30331,
+      "end": "closes at round 4",
+      "saved birth rounds": 3,
+      "first frozen difference": 1,
+      "first graded difference": null,
+      "stratum": "a block meeting a group cell in two knots",
+      "drawn for": "group cells sharing a knot",
+      "cell sizes": [
+        3,
+        3
+      ],
+      "cell pair intersection sizes": [
+        1
+      ],
+      "block intersections of at least two knots with cells": [
+        2,
+        2
+      ]
+    },
+    {
+      "set": "stratified",
+      "law": "parity",
+      "index": 30332,
+      "end": "closes at round 5",
+      "saved birth rounds": 4,
+      "first frozen difference": 1,
+      "first graded difference": null,
+      "stratum": "a block meeting a group cell in two knots",
+      "drawn for": "group cells sharing a knot",
+      "cell sizes": [
+        3,
+        3
+      ],
+      "cell pair intersection sizes": [
+        1
+      ],
+      "block intersections of at least two knots with cells": [
+        2,
+        2
+      ]
+    },
+    {
+      "set": "stratified",
+      "law": "parity",
+      "index": 30335,
+      "end": "rounds",
+      "saved birth rounds": 24,
+      "first frozen difference": 1,
+      "first graded difference": null,
+      "stratum": "a block meeting a group cell in two knots",
+      "drawn for": "group cells sharing a knot",
+      "cell sizes": [
+        3,
+        3
+      ],
+      "cell pair intersection sizes": [
+        1
+      ],
+      "block intersections of at least two knots with cells": [
+        2,
+        2
+      ]
+    },
+    {
+      "set": "stratified",
+      "law": "parity",
+      "index": 30336,
+      "end": "rounds",
+      "saved birth rounds": 24,
+      "first frozen difference": 1,
+      "first graded difference": null,
+      "stratum": "a block meeting a group cell in two knots",
+      "drawn for": "group cells sharing a knot",
+      "cell sizes": [
+        3,
+        3
+      ],
+      "cell pair intersection sizes": [
+        1
+      ],
+      "block intersections of at least two knots with cells": [
+        2,
+        2
+      ]
+    },
+    {
+      "set": "stratified",
+      "law": "parity",
+      "index": 30339,
+      "end": "closes at round 6",
+      "saved birth rounds": 5,
+      "first frozen difference": 1,
+      "first graded difference": null,
+      "stratum": "a block meeting a group cell in two knots",
+      "drawn for": "group cells sharing a knot",
+      "cell sizes": [
+        3,
+        3
+      ],
+      "cell pair intersection sizes": [
+        1
+      ],
+      "block intersections of at least two knots with cells": [
+        2,
+        2
+      ]
+    },
+    {
+      "set": "stratified",
+      "law": "parity",
+      "index": 30340,
+      "end": "closes at round 7",
+      "saved birth rounds": 6,
+      "first frozen difference": 1,
+      "first graded difference": null,
+      "stratum": "a block meeting a group cell in two knots",
+      "drawn for": "group cells sharing a knot",
+      "cell sizes": [
+        3,
+        3
+      ],
+      "cell pair intersection sizes": [
+        1
+      ],
+      "block intersections of at least two knots with cells": [
+        2,
+        2
+      ]
+    },
+    {
+      "set": "stratified",
+      "law": "parity",
+      "index": 30344,
+      "end": "rounds",
+      "saved birth rounds": 24,
+      "first frozen difference": 1,
+      "first graded difference": null,
+      "stratum": "a block meeting a group cell in two knots",
+      "drawn for": "group cells sharing a knot",
+      "cell sizes": [
+        3,
+        3
+      ],
+      "cell pair intersection sizes": [
+        1
+      ],
+      "block intersections of at least two knots with cells": [
+        2,
+        2
+      ]
+    },
+    {
+      "set": "stratified",
+      "law": "parity",
+      "index": 30347,
+      "end": "rounds",
+      "saved birth rounds": 24,
+      "first frozen difference": 1,
+      "first graded difference": null,
+      "stratum": "a block meeting a group cell in two knots",
+      "drawn for": "group cells sharing a knot",
+      "cell sizes": [
+        3,
+        3
+      ],
+      "cell pair intersection sizes": [
+        1
+      ],
+      "block intersections of at least two knots with cells": [
+        2,
+        2
+      ]
+    },
+    {
+      "set": "stratified",
+      "law": "parity",
+      "index": 30348,
+      "end": "rounds",
+      "saved birth rounds": 24,
+      "first frozen difference": 1,
+      "first graded difference": null,
+      "stratum": "a block meeting a group cell in two knots",
+      "drawn for": "group cells sharing a knot",
+      "cell sizes": [
+        3,
+        3
+      ],
+      "cell pair intersection sizes": [
+        1
+      ],
+      "block intersections of at least two knots with cells": [
+        2,
+        2
+      ]
+    },
+    {
+      "set": "stratified",
+      "law": "parity",
+      "index": 30351,
+      "end": "rounds",
+      "saved birth rounds": 24,
+      "first frozen difference": 1,
+      "first graded difference": null,
+      "stratum": "a block meeting a group cell in two knots",
+      "drawn for": "group cells sharing a knot",
+      "cell sizes": [
+        3,
+        3
+      ],
+      "cell pair intersection sizes": [
+        1
+      ],
+      "block intersections of at least two knots with cells": [
+        2,
+        2
+      ]
+    },
+    {
+      "set": "stratified",
+      "law": "parity",
+      "index": 30352,
+      "end": "rounds",
+      "saved birth rounds": 24,
+      "first frozen difference": 1,
+      "first graded difference": null,
+      "stratum": "a block meeting a group cell in two knots",
+      "drawn for": "group cells sharing a knot",
+      "cell sizes": [
+        3,
+        3
+      ],
+      "cell pair intersection sizes": [
+        1
+      ],
+      "block intersections of at least two knots with cells": [
+        2,
+        2
+      ]
+    },
+    {
+      "set": "stratified",
+      "law": "parity",
+      "index": 30355,
+      "end": "closes at round 6",
+      "saved birth rounds": 5,
+      "first frozen difference": 1,
+      "first graded difference": null,
+      "stratum": "a block meeting a group cell in two knots",
+      "drawn for": "group cells sharing a knot",
+      "cell sizes": [
+        3,
+        3
+      ],
+      "cell pair intersection sizes": [
+        1
+      ],
+      "block intersections of at least two knots with cells": [
+        2,
+        2
+      ]
+    },
+    {
+      "set": "stratified",
+      "law": "parity",
+      "index": 30356,
+      "end": "closes at round 7",
+      "saved birth rounds": 6,
+      "first frozen difference": 1,
+      "first graded difference": null,
+      "stratum": "a block meeting a group cell in two knots",
+      "drawn for": "group cells sharing a knot",
+      "cell sizes": [
+        3,
+        3
+      ],
+      "cell pair intersection sizes": [
+        1
+      ],
+      "block intersections of at least two knots with cells": [
+        2,
+        2
+      ]
+    },
+    {
+      "set": "stratified",
+      "law": "parity",
+      "index": 30359,
+      "end": "rounds",
+      "saved birth rounds": 24,
+      "first frozen difference": 1,
+      "first graded difference": null,
+      "stratum": "a block meeting a group cell in two knots",
+      "drawn for": "group cells sharing a knot",
+      "cell sizes": [
+        3,
+        3
+      ],
+      "cell pair intersection sizes": [
+        1
+      ],
+      "block intersections of at least two knots with cells": [
+        2,
+        2
+      ]
+    },
+    {
+      "set": "stratified",
+      "law": "parity",
+      "index": 30360,
+      "end": "rounds",
+      "saved birth rounds": 24,
+      "first frozen difference": 1,
+      "first graded difference": null,
+      "stratum": "a block meeting a group cell in two knots",
+      "drawn for": "group cells sharing a knot",
+      "cell sizes": [
+        3,
+        3
+      ],
+      "cell pair intersection sizes": [
+        1
+      ],
+      "block intersections of at least two knots with cells": [
+        2,
+        2
+      ]
+    },
+    {
+      "set": "stratified",
+      "law": "parity",
+      "index": 30363,
+      "end": "closes at round 8",
+      "saved birth rounds": 7,
+      "first frozen difference": 1,
+      "first graded difference": null,
+      "stratum": "a block meeting a group cell in two knots",
+      "drawn for": "group cells sharing a knot",
+      "cell sizes": [
+        3,
+        3
+      ],
+      "cell pair intersection sizes": [
+        1
+      ],
+      "block intersections of at least two knots with cells": [
+        2,
+        2
+      ]
+    },
+    {
+      "set": "stratified",
+      "law": "parity",
+      "index": 30364,
+      "end": "closes at round 9",
+      "saved birth rounds": 8,
+      "first frozen difference": 1,
+      "first graded difference": null,
+      "stratum": "a block meeting a group cell in two knots",
+      "drawn for": "group cells sharing a knot",
+      "cell sizes": [
+        3,
+        3
+      ],
+      "cell pair intersection sizes": [
+        1
+      ],
+      "block intersections of at least two knots with cells": [
+        2,
+        2
+      ]
+    },
+    {
+      "set": "stratified",
+      "law": "parity",
+      "index": 30457,
+      "end": "closes at round 5",
+      "saved birth rounds": 4,
+      "first frozen difference": 1,
+      "first graded difference": null,
+      "stratum": "a block meeting a group cell in two knots",
+      "drawn for": "group cells sharing a knot",
+      "cell sizes": [
+        3,
+        3
+      ],
+      "cell pair intersection sizes": [
+        1
+      ],
+      "block intersections of at least two knots with cells": [
+        2,
+        2
+      ]
+    },
+    {
+      "set": "stratified",
+      "law": "parity",
+      "index": 30458,
+      "end": "closes at round 6",
+      "saved birth rounds": 5,
+      "first frozen difference": 1,
+      "first graded difference": null,
+      "stratum": "a block meeting a group cell in two knots",
+      "drawn for": "group cells sharing a knot",
+      "cell sizes": [
+        3,
+        3
+      ],
+      "cell pair intersection sizes": [
+        1
+      ],
+      "block intersections of at least two knots with cells": [
+        2,
+        2
+      ]
+    },
+    {
+      "set": "stratified",
+      "law": "parity",
+      "index": 30461,
+      "end": "rounds",
+      "saved birth rounds": 24,
+      "first frozen difference": 1,
+      "first graded difference": null,
+      "stratum": "a block meeting a group cell in two knots",
+      "drawn for": "group cells sharing a knot",
+      "cell sizes": [
+        3,
+        3
+      ],
+      "cell pair intersection sizes": [
+        1
+      ],
+      "block intersections of at least two knots with cells": [
+        2,
+        2
+      ]
+    },
+    {
+      "set": "stratified",
+      "law": "parity",
+      "index": 30462,
+      "end": "rounds",
+      "saved birth rounds": 24,
+      "first frozen difference": 1,
+      "first graded difference": null,
+      "stratum": "a block meeting a group cell in two knots",
+      "drawn for": "group cells sharing a knot",
+      "cell sizes": [
+        3,
+        3
+      ],
+      "cell pair intersection sizes": [
+        1
+      ],
+      "block intersections of at least two knots with cells": [
+        2,
+        2
+      ]
+    },
+    {
+      "set": "stratified",
+      "law": "parity",
+      "index": 30466,
+      "end": "closes at round 8",
+      "saved birth rounds": 7,
+      "first frozen difference": 1,
+      "first graded difference": null,
+      "stratum": "a block meeting a group cell in two knots",
+      "drawn for": "group cells sharing a knot",
+      "cell sizes": [
+        3,
+        3
+      ],
+      "cell pair intersection sizes": [
+        1
+      ],
+      "block intersections of at least two knots with cells": [
+        2,
+        2
+      ]
+    },
+    {
+      "set": "stratified",
+      "law": "parity",
+      "index": 30469,
+      "end": "rounds",
+      "saved birth rounds": 24,
+      "first frozen difference": 1,
+      "first graded difference": null,
+      "stratum": "a block meeting a group cell in two knots",
+      "drawn for": "group cells sharing a knot",
+      "cell sizes": [
+        3,
+        3
+      ],
+      "cell pair intersection sizes": [
+        1
+      ],
+      "block intersections of at least two knots with cells": [
+        2,
+        2
+      ]
+    },
+    {
+      "set": "stratified",
+      "law": "parity",
+      "index": 30470,
+      "end": "rounds",
+      "saved birth rounds": 24,
+      "first frozen difference": 1,
+      "first graded difference": null,
+      "stratum": "a block meeting a group cell in two knots",
+      "drawn for": "group cells sharing a knot",
+      "cell sizes": [
+        3,
+        3
+      ],
+      "cell pair intersection sizes": [
+        1
+      ],
+      "block intersections of at least two knots with cells": [
+        2,
+        2
+      ]
+    },
+    {
+      "set": "stratified",
+      "law": "parity",
+      "index": 30473,
+      "end": "rounds",
+      "saved birth rounds": 24,
+      "first frozen difference": 1,
+      "first graded difference": null,
+      "stratum": "a block meeting a group cell in two knots",
+      "drawn for": "group cells sharing a knot",
+      "cell sizes": [
+        3,
+        3
+      ],
+      "cell pair intersection sizes": [
+        1
+      ],
+      "block intersections of at least two knots with cells": [
+        2,
+        2
+      ]
+    },
+    {
+      "set": "stratified",
+      "law": "parity",
+      "index": 30474,
+      "end": "rounds",
+      "saved birth rounds": 24,
+      "first frozen difference": 1,
+      "first graded difference": null,
+      "stratum": "a block meeting a group cell in two knots",
+      "drawn for": "group cells sharing a knot",
+      "cell sizes": [
+        3,
+        3
+      ],
+      "cell pair intersection sizes": [
+        1
+      ],
+      "block intersections of at least two knots with cells": [
+        2,
+        2
+      ]
+    },
+    {
+      "set": "stratified",
+      "law": "parity",
+      "index": 30477,
+      "end": "closes at round 9",
+      "saved birth rounds": 8,
+      "first frozen difference": 1,
+      "first graded difference": null,
+      "stratum": "a block meeting a group cell in two knots",
+      "drawn for": "group cells sharing a knot",
+      "cell sizes": [
+        3,
+        3
+      ],
+      "cell pair intersection sizes": [
+        1
+      ],
+      "block intersections of at least two knots with cells": [
+        2,
+        2
+      ]
+    },
+    {
+      "set": "stratified",
+      "law": "parity",
+      "index": 30478,
+      "end": "closes at round 10",
+      "saved birth rounds": 9,
+      "first frozen difference": 1,
+      "first graded difference": null,
+      "stratum": "a block meeting a group cell in two knots",
+      "drawn for": "group cells sharing a knot",
+      "cell sizes": [
+        3,
+        3
+      ],
+      "cell pair intersection sizes": [
+        1
+      ],
+      "block intersections of at least two knots with cells": [
+        2,
+        2
+      ]
+    },
+    {
+      "set": "handbuilt",
+      "law": "nae",
+      "index": 14,
+      "end": "rounds",
+      "saved birth rounds": 24,
+      "first frozen difference": 2,
+      "first graded difference": 2,
+      "stratum": "a block meeting a group cell in two knots",
+      "drawn for": null,
+      "cell sizes": [
+        4
+      ],
+      "cell pair intersection sizes": [],
+      "block intersections of at least two knots with cells": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "inclusion covers tested against assigned ranks": {
+        "counts": {
+          "valid core sets": 52,
+          "proper inclusions": 437,
+          "true covers": 124
+        },
+        "examples": []
+      }
+    },
+    {
+      "set": "handbuilt",
+      "law": "parity",
+      "index": 14,
+      "end": "closes at round 9",
+      "saved birth rounds": 8,
+      "first frozen difference": 2,
+      "first graded difference": 2,
+      "stratum": "a block meeting a group cell in two knots",
+      "drawn for": null,
+      "cell sizes": [
+        4
+      ],
+      "cell pair intersection sizes": [],
+      "block intersections of at least two knots with cells": [
+        3,
+        3,
+        3,
+        3
+      ]
+    }
+  ],
+  "remaining graded discrepancies": [
+    {
+      "set": "uniform",
+      "law": "nae",
+      "index": 6408,
+      "end": "rounds",
+      "saved birth rounds": 24,
+      "first frozen difference": 2,
+      "first graded difference": 2,
+      "stratum": "a block meeting a group cell in two knots",
+      "drawn for": null,
+      "cell sizes": [
+        4
+      ],
+      "cell pair intersection sizes": [],
+      "block intersections of at least two knots with cells": [
+        2,
+        2
+      ],
+      "inclusion covers tested against assigned ranks": {
+        "counts": {
+          "valid core sets": 43,
+          "proper inclusions": 408,
+          "true covers": 89
+        },
+        "examples": []
+      },
+      "first_round_detail": {
+        "round": 2,
+        "number predicted": 10,
+        "number observed": 10,
+        "sig0": {
+          "forecast excess": {
+            "[\"join\",3,3,6]": 2
+          },
+          "observed excess": {
+            "[\"join\",3,4,7]": 2
+          }
+        },
+        "sig1": {
+          "forecast excess": {
+            "[[\"join\",3,3,6],[[\"join\",2,3,5],[\"join\",2,3,5],[\"join\",4,3,7]]]": 2
+          },
+          "observed excess": {
+            "[[\"join\",3,4,7],[[\"join\",2,3,5],[\"join\",2,3,5],[\"join\",4,3,7]]]": 2
+          }
+        }
+      }
+    },
+    {
+      "set": "uniform",
+      "law": "parity",
+      "index": 6408,
+      "end": "rounds",
+      "saved birth rounds": 24,
+      "first frozen difference": 2,
+      "first graded difference": 2,
+      "stratum": "a block meeting a group cell in two knots",
+      "drawn for": null,
+      "cell sizes": [
+        4
+      ],
+      "cell pair intersection sizes": [],
+      "block intersections of at least two knots with cells": [
+        2,
+        2
+      ],
+      "first_round_detail": {
+        "round": 2,
+        "number predicted": 10,
+        "number observed": 10,
+        "sig0": {
+          "forecast excess": {
+            "[\"join\",3,3,6]": 2
+          },
+          "observed excess": {
+            "[\"join\",3,4,7]": 2
+          }
+        },
+        "sig1": {
+          "forecast excess": {
+            "[[\"join\",3,3,6],[[\"join\",2,3,5],[\"join\",2,3,5],[\"join\",4,3,7]]]": 2
+          },
+          "observed excess": {
+            "[[\"join\",3,4,7],[[\"join\",2,3,5],[\"join\",2,3,5],[\"join\",4,3,7]]]": 2
+          }
+        }
+      }
+    },
+    {
+      "set": "handbuilt",
+      "law": "nae",
+      "index": 14,
+      "end": "rounds",
+      "saved birth rounds": 24,
+      "first frozen difference": 2,
+      "first graded difference": 2,
+      "stratum": "a block meeting a group cell in two knots",
+      "drawn for": null,
+      "cell sizes": [
+        4
+      ],
+      "cell pair intersection sizes": [],
+      "block intersections of at least two knots with cells": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "inclusion covers tested against assigned ranks": {
+        "counts": {
+          "valid core sets": 52,
+          "proper inclusions": 437,
+          "true covers": 124
+        },
+        "examples": []
+      },
+      "first_round_detail": {
+        "round": 2,
+        "number predicted": 16,
+        "number observed": 16,
+        "sig0": {
+          "forecast excess": {
+            "[\"join\",4,3,7]": 4
+          },
+          "observed excess": {
+            "[\"join\",4,6,10]": 4
+          }
+        },
+        "sig1": {
+          "forecast excess": {
+            "[[\"join\",4,3,7],[[\"join\",2,3,5],[\"join\",2,3,5],[\"join\",2,3,5],[\"join\",4,4,8]]]": 4
+          },
+          "observed excess": {
+            "[[\"join\",4,6,10],[[\"join\",2,3,5],[\"join\",2,3,5],[\"join\",2,3,5],[\"join\",4,4,8]]]": 4
+          }
+        }
+      }
+    },
+    {
+      "set": "handbuilt",
+      "law": "parity",
+      "index": 14,
+      "end": "closes at round 9",
+      "saved birth rounds": 8,
+      "first frozen difference": 2,
+      "first graded difference": 2,
+      "stratum": "a block meeting a group cell in two knots",
+      "drawn for": null,
+      "cell sizes": [
+        4
+      ],
+      "cell pair intersection sizes": [],
+      "block intersections of at least two knots with cells": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "first_round_detail": {
+        "round": 2,
+        "number predicted": 16,
+        "number observed": 16,
+        "sig0": {
+          "forecast excess": {
+            "[\"join\",4,3,7]": 4
+          },
+          "observed excess": {
+            "[\"join\",4,6,10]": 4
+          }
+        },
+        "sig1": {
+          "forecast excess": {
+            "[[\"join\",4,3,7],[[\"join\",2,3,5],[\"join\",2,3,5],[\"join\",2,3,5],[\"join\",4,4,8]]]": 4
+          },
+          "observed excess": {
+            "[[\"join\",4,6,10],[[\"join\",2,3,5],[\"join\",2,3,5],[\"join\",2,3,5],[\"join\",4,4,8]]]": 4
+          }
+        }
+      }
+    }
+  ],
+  "corrected distinct starts, grouped up to renaming": {
+    "bare live knots, cells and maximal blocks, multiplicities": [
+      40
+    ],
+    "also attaching pendants, chains and original knot sizes, multiplicities": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "identical revised two-reading forecasts through 24 under not-all-equal, multiplicities": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "graded counts match the source post hoc counts on every held-out stratum": true,
+  "time in seconds by set and law including archive parsing": {
+    "uniform / nae": 5.648,
+    "uniform / parity": 6.392,
+    "stratified / nae": 1.275,
+    "stratified / parity": 1.153,
+    "handbuilt / nae": 0.457,
+    "handbuilt / parity": 0.436,
+    "grow7 / nae": 0.454,
+    "grow7 / parity": 0.41,
+    "horizon / nae": 1.088
+  },
+  "total elapsed seconds": 17.315,
+  "peak KiB": 26644
+}

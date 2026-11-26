@@ -1,6 +1,6 @@
 # Referee hand-off
 
-Study `LATE-VIEWS-20261126-001`: a check by the thread, computed, referee pending. Frozen and pre-registered in
+Study `LATE-VIEWS-20261126-001`: a check by the thread, computed; refereed (R1, confirmed with fixes, no Block; [report](referee-R1/report.md)), with the denominators below as corrected in [the note](README.md). Frozen and pre-registered in
 `f97fd78ae5`, with the advisor's review ([question](advisor_question_freeze.md), [answer](advisor_answer_freeze.md)),
 before any grown file of the held-out sets was opened; the sets were grown meanwhile.
 

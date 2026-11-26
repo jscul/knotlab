@@ -1,0 +1,80 @@
+{
+  "sample": "uniform",
+  "archive index": 34172,
+  "starting rule in stored order": 2,
+  "holdings": [
+    [
+      0,
+      9,
+      10,
+      11
+    ],
+    [
+      1,
+      2,
+      3
+    ],
+    [
+      0,
+      1,
+      4,
+      5,
+      12,
+      13,
+      14
+    ],
+    [
+      2,
+      4,
+      6,
+      7
+    ],
+    [
+      3,
+      6,
+      8
+    ],
+    [
+      5,
+      7,
+      8
+    ]
+  ],
+  "visible distinctions": [
+    0,
+    1,
+    4,
+    5,
+    12,
+    13,
+    14
+  ],
+  "independent even parities": [
+    [
+      1,
+      4,
+      5
+    ],
+    [
+      0,
+      12,
+      13,
+      14
+    ]
+  ],
+  "cnf": "x1 x4 ~x5; x1 ~x4 x5; ~x1 x4 x5; ~x1 ~x4 ~x5; x0 x12 x13 ~x14; x0 x12 ~x13 x14; x0 ~x12 x13 x14; x0 ~x12 ~x13 ~x14; ~x0 x12 x13 x14; ~x0 x12 ~x13 ~x14; ~x0 ~x12 x13 ~x14; ~x0 ~x12 ~x13 x14",
+  "arguments": [
+    "--cnf",
+    "x1 x4 ~x5; x1 ~x4 x5; ~x1 x4 x5; ~x1 ~x4 ~x5; x0 x12 x13 ~x14; x0 x12 ~x13 x14; x0 ~x12 x13 x14; x0 ~x12 ~x13 ~x14; ~x0 x12 x13 x14; ~x0 x12 ~x13 ~x14; ~x0 ~x12 x13 ~x14; ~x0 ~x12 ~x13 x14",
+    "--loops",
+    "x0",
+    "x1",
+    "x4",
+    "x5",
+    "x12",
+    "x13",
+    "--contact",
+    "x14",
+    "--json"
+  ]
+}

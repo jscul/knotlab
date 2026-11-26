@@ -5914,7 +5914,8 @@ evidence: results and their status come from the records each entry links.
   symmetries, `random.Random(20261128)`, outside the 3,000 sampled before); (2) a supplement of up to 40 starts in each of
   five rare structural strata (a group cell of four or more knots, with chains and without; two group cells that share no
   knot; group cells sharing a knot; a block meeting a group cell in two knots, with chains), `random.Random(20261130)`,
-  outside every earlier sample; (3) 17 starts built by hand outside the census, with group cells of four to seven knots;
+  outside every earlier sample; (3) 17 starts built by hand with group cells of four to seven knots (13 of them census identities, nine in the
+  fitting data, as the referee found);
   (4) 1,000 seven-knot starts of the 'grow' weighting of `WEIGHTINGS-20261119-001B` (`random.Random(20261129)`); (5) the
   24-round horizon with the 30,000-knot cap, lengthened to 40 rounds for 100 sampled starts of predicted dimension at most
   two. The two readings without names are A283's. Nothing in the model supplies any of them.
@@ -5928,6 +5929,9 @@ evidence: results and their status come from the records each entry links.
 - **Challenge.** Seeds and weightings other than these, starts of eight or more knots, horizons past 40 rounds. The model
   is not expected to replace them: they are how an observer samples starts.
 - **History.**
+  - 2026-11-26 · Refereed (R1 on `LATE-VIEWS-20261126-001`, confirmed with fixes, no Block): only four hand-built
+    starts lie outside the census (three accepted, two agree); the horizon set reached round 40 on 95 of 100 in the run
+    and on all 100 in the referee's replay; with K1–K3 admission the parity agreements are 704 of 705 and 69 of 69.
   - 2026-11-26 · `LATE-VIEWS-20261126-001` closed (computed; referee pending). Swapped within it: the knot law, the reading,
     the weighting (census, strata, 'grow' at seven knots), the seed, the horizon (24 and 40 rounds), the census for starts
     built by hand; the agreement survives every swap, and the failure belongs to the cell reading (A287), not to a scaffold.
@@ -5942,14 +5946,18 @@ evidence: results and their status come from the records each entry links.
   one cell: a birth holds one knot of it or none, or all of it; a birth holding the whole cell is g − 2 rounds earlier
   than its number of points says; blocks inside the cell are dropped, and a block meeting the cell in m knots counts as
   m − 1 filled cycles. With it, repeated blocks are read as their distinct maximal sets (Lemma R, proved).
-- **Why.** Found by the thread on 26 November 2026 for `LATE-VIEWS-20261126-001` by exploring the census of up to four
-  knots, and kept when it matched every accepted start of up to five knots; not proved.
-- **Rests on it.** That a local reader's view is read off the start's finite map for 666 of the 667 accepted starts of
-  the uniform six-knot sample that are outside the proved class, and for all 30 such seven-knot starts of the 'grow'
-  weighting ([the decision](../research/LATE-VIEWS-20261126-001/decision.md)).
-- **Challenge.** It fails as frozen where two cells share a knot (39 of 39 drawn there) and in 3 starts where a block
-  meets a cell of four. A reading found afterwards, the valid sets as a graded order (parents the sets a birth covers,
-  fresh distinctions the sets covering it), fixes 40 of the 42 and needs held-out starts; a proof would extend the
+- **Why.** The cluster-count study (`CLUSTER-ALL-20261119-001`) first required a group of three or more to enter all at
+  once; the thread reread it on 26 November 2026 for `LATE-VIEWS-20261126-001` by exploring the census of up to four
+  knots, and kept it when it matched every accepted start of up to five knots; not proved.
+- **Rests on it.** That a local reader's view is read off the start's finite map for 580 of the 581 accepted starts of
+  the uniform six-knot sample that need cells (the other 125 are covered by the proved identification and the reduction
+  lemma), and for all 21 such seven-knot starts of the 'grow' weighting ([the decision](../research/LATE-VIEWS-20261126-001/decision.md)).
+- **Challenge.** It fails as frozen where two cells share a knot (40 of 40 tested; the cluster-count study had seen a
+  failure there too) and in 2 starts where a block meets a cell of four. A reading found afterwards, the valid sets as a
+  graded order (parents the sets a birth covers, fresh distinctions the sets covering it), fixes the 40 and needs
+  held-out starts; a proof would extend the
   identification to most starts that do not stall.
 - **History.**
+  - 2026-11-26 · Refereed (R1 on `LATE-VIEWS-20261126-001`, confirmed with fixes, no Block): the misses are 40 starts
+    with cells sharing a knot and two with a block meeting a four-knot cell; the rule is credited to the cluster-count study.
   - 2026-11-26 · Entered under challenge with `LATE-VIEWS-20261126-001` (computed; referee pending).

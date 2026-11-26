@@ -1,5 +1,8 @@
 # After both exist, can the far pattern change the switch receiver's course?
 
+> **Refereed (R1, confirmed with fixes, one Block): see the notice in [the decision](decision.md).** The negative holds
+> for the 43 far ends read, not under a cap in general.
+
 Epic `SECOND-SWITCH-20261126-001`, a successor of
 [`SWITCH-RECEIVERS-20261126-001`](../SWITCH-RECEIVERS-20261126-001/decision.md) under the owner's standing rule. It
 takes that close's second direction ("a second switch") ahead of its first, because the first would add a ration made

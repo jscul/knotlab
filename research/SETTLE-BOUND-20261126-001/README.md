@@ -56,6 +56,16 @@ misses, in either knot law; or none.
 
 ## What was found
 
+> **Referee R1, confirmed with fixes, no Block, folded in** ([report](referee-R1/report.md)). Narrowed: the frozen
+> offsets 5 and 7 fail (two five-knot starts with M = 3 and identical first-round readings settle at 3 and 9, so M alone
+> cannot fix the settling round); runs end at the last saved round, some before 24 (15 five-knot and 13 six-knot starts
+> of a dimension per law); a block shares a neighbour but need not burst binomially (one start makes a four-parent join
+> instead); after the fall to one birth the counts follow a lone three-place knot's tail, and under parity the growth
+> closes at that join; for all 47 late starts the view settles exactly 3 rounds after the last strict fall in births
+> (5 with parents), which replaces "1 to 12 rounds after the last fall"; the pair rule's "where both views settle by
+> the cut" cannot fail by construction, and fitted polynomials gave negative counts in 47,789 pair-readings (valid
+> forecasts still miss 28,045). The sentences below stand with this notice; the decision is corrected.
+
 Four runs, each to round 24 or 30,000 knots ([`bound.py`](bound.py)): all 3,157 five-knot starts and the 1,000 sampled
 six-knot starts, each under not-all-equal and under parity ([`grown_g5_nae.jsonl.gz`](grown_g5_nae.jsonl.gz),
 [`grown_g5_par.jsonl.gz`](grown_g5_par.jsonl.gz), [`grown_g6_nae.jsonl.gz`](grown_g6_nae.jsonl.gz),

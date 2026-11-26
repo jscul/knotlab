@@ -3,6 +3,10 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 26 November 2026 · The settling bound refereed: confirmed, with narrowings
+
+**Corrections from [an independent referee's report](research/SETTLE-BOUND-20261126-001/referee-R1/report.md), folded into [the decision](research/SETTLE-BOUND-20261126-001/decision.md).** The frozen settling bound's failure stands. For every late start the view settles exactly three rounds after the last fall in births (five with parents); the pair rule's success where views settle by the cut holds by construction and is not a test.
+
 ## 26 November 2026 · Which starts look alike refereed: confirmed, with narrowings
 
 **Corrections from [an independent referee's report](research/LOOK-ALIKE-20261126-001/referee-R1/report.md), folded into [the decision](research/LOOK-ALIKE-20261126-001/decision.md).** The pair results stand. Narrowed: what a local reader sees settles into polynomial counts through the rounds read, given each start's dimension from its completed run; the frozen round-1 control failed in the reading with parents; the "16 late views" are 16 descriptions of 68 exact views; seven unread five-knot starts grow as a quartic.

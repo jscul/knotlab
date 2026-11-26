@@ -346,6 +346,7 @@ evidence: results and their status come from the records each entry links.
 | [A288](#a288--a-reader-as-one-start-knots-descendants-a-region-cut-at-holders-the-round-and-a-cap-to-grow-a-view-on-demand) | A reader as one start knot's descendants, a region cut at holders, the round and a cap, to grow a view on demand | scaffold | Assumed |
 | [A289](#a289--settings-as-free-local-edits-the-preparation-kept-through-the-edits-two-weightings-and-a-census-to-test-joins-that-forbid) | Settings as free local edits, the preparation kept through the edits, two weightings and a census, to test joins that forbid | scaffold | Assumed |
 | [A290](#a290--the-whole-round-response-at-the-level-of-the-readers-records-a-free-weighting-and-the-senders-policies) | The whole-round response at the level of the readers' records, a free weighting, and the sender's policies | scaffold | Assumed |
+| [A291](#a291--moves-that-keep-a-class-the-shortest-changes-through-each-distinction-a-second-rule-two-engines-and-a-census) | Moves that keep a class: the shortest changes through each distinction, a second rule, two engines, and a census | scaffold | Assumed |
 
 ## Entries
 
@@ -6013,3 +6014,14 @@ evidence: results and their status come from the records each entry links.
 - **History.**
   - 2026-11-26 · Refereed (R1, [report](../research/BEYOND-REJECTION-20261126-001/referee-R1/report.md); one Block on the scoping note): part A stands with the complete records as well as the reduced ones; the hidden sender's feasible weightings need not fix the terminals.
   - 2026-11-26 · Entered with `BEYOND-REJECTION-20261126-001`.
+
+### A291 · Moves that keep a class: the shortest changes through each distinction, a second rule, two engines, and a census
+
+**Assumed** · 2026-11-26 · scaffold
+
+- **Statement.** For one study of G18, choices made to map the preserved two-class sign: (1) under parity a move is a shortest allowed change through a distinction, every tie kept (the motion study's rule), swapped for the shortest allowed changes overall; (2) classes are the cosets of the moves' span in the allowed space; (3) one round of growth on the engine of the 20 November studies, swapped for the recent line's engine; (4) every start of three to five knots and rings of three to twelve knots, loose values free or pinned; (5) under not-all-equal, a move at a state is a smallest change through a distinction that keeps the state allowed, searched up to size four within two holder steps.
+- **Why.** Adopted by the thread on 26 November 2026 for `TWO-CLASS-SIGN-20261126-001` at the coordinator's go-ahead, following the motion study's definition so that its counts could be reproduced.
+- **Rests on it.** The map of where the classes are ([the note](../research/TWO-CLASS-SIGN-20261126-001/README.md)); the motion study proved that inclusion-minimal moves give one class always, so the classes are the move rule's.
+- **Challenge.** Other move rules (inclusion-minimal: one class; shortest overall: many), more rounds, not-all-equal at larger sizes. The model is not expected to keep the move rule.
+- **History.**
+  - 2026-11-26 · Entered with `TWO-CLASS-SIGN-20261126-001`.

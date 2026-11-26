@@ -2,7 +2,10 @@
 
 Epic `CUT-BINDING-20261126-001` (the coordinator's go-ahead after `BINDING-20261126-001`; goals G17 with G18), closed 26
 November 2026. A check by the thread, not registered: computed; the cut test frozen before its runs, the not-all-equal
-test run after; referee pending. [The note](README.md)
+test run after; referee pending. **Corrected (Block on point 3, from the binding study's referee):** ordinary growth
+binds three facts held by the whole on a built 30-knot start, and on a modified version of it both cuts bind three old
+ring parities through one three-parent birth's law; the frozen negatives below stand as counts of their sets, which
+stop at eight knots. [The note](README.md)
 
 ## What stands
 
@@ -13,7 +16,7 @@ test run after; referee pending. [The note](README.md)
 2. **Under not-all-equal the ring parities stay free.** On the witnesses of two, three and four rings, at rounds 0 to 2,
    the rings' own parities take every tuple of values (a solver call per tuple); and the record finds no fact kept by
    small changes under this law.
-3. **The tower is closed for the recorded laws in what was read.** With `BINDING-20261126-001`: ordinary parity growth,
+3. **[Withdrawn: Block, `docs/CORRECTIONS.md`.] The tower is closed for the recorded laws in what was read.** With `BINDING-20261126-001`: ordinary parity growth,
    both forbidding cuts and not-all-equal leave such facts unbound. Repetition is shown; a tower and recursion are not.
 
 **Not shown.** Larger starts and later rounds; other readings of a small change; laws beyond the recorded ones.

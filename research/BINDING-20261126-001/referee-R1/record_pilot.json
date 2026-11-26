@@ -1,0 +1,134 @@
+{
+  "gate": {
+    "file": "research/BINDING-20261126-001/README.md",
+    "exit": 1,
+    "message": "prior-work line: missing ## Prior work in the program section"
+  },
+  "freeze": "24bc18768e",
+  "closure": "fd6b445e0f",
+  "freeze_note_unchanged_as_prefix": true,
+  "freeze_files": [
+    "research/BINDING-20261126-001/README.md",
+    "research/BINDING-20261126-001/advisor/answer.md",
+    "research/BINDING-20261126-001/advisor/question.md",
+    "research/BINDING-20261126-001/binding.py",
+    "research/BINDING-20261126-001/forced.py",
+    "research/BINDING-20261126-001/split.py"
+  ],
+  "judge_closed": {
+    "rows": 7771,
+    "keys": 7771,
+    "at_least_three": 2830,
+    "positive": 0,
+    "sha256": "83fae83c098a8019a371ac5b6747980eecc3ca36453270960da0717e3fe79750"
+  },
+  "judge_at_reported_prefix": {
+    "rows": 7713,
+    "keys": 7713,
+    "at_least_three": 2805,
+    "positive": 0,
+    "sha256": "2dc6fd52798caf499f1cd4b7feb49d22d2bcb274b9ef3028a202af365370a750"
+  },
+  "judge_in_checkout": {
+    "rows": 7964,
+    "keys": 7961,
+    "at_least_three": 2932,
+    "positive": 0,
+    "sha256": "39f2cfe258d1bbb7e6a17643e3c9259e0bc81f6f807203a75232bab5cf053019"
+  },
+  "checkout_starts_with_committed_bytes": true,
+  "searches": [
+    {
+      "args": [
+        "objects",
+        "relations forced cycle parity cut space",
+        "--until",
+        "2026-11-26",
+        "--exclude",
+        "BINDING-20261126-001",
+        "--limit",
+        "10",
+        "--json"
+      ],
+      "index": [
+        {
+          "id": "FRESH-COUNT-20261118-001/2",
+          "record": "proofs/FRESH-COUNT-20261118-001A/FRESH-COUNT-20261118-001A-P001_free_count/proof.md",
+          "ticket_in_freeze": true
+        },
+        {
+          "id": "CUT-BINDING-20261126-001/1",
+          "record": "research/CUT-BINDING-20261126-001/README.md",
+          "ticket_in_freeze": false
+        },
+        {
+          "id": "THREE-WAY-20261119-001/1",
+          "record": "research/THREE-WAY-20261119-001/three_way.md",
+          "ticket_in_freeze": true
+        },
+        {
+          "id": "NATIVE-SPINE-20261119-001/1",
+          "record": "research/NATIVE-SPINE-20261119-001/native_spine.md",
+          "ticket_in_freeze": true
+        },
+        {
+          "id": "TIE-CYCLE-20261114-001/1",
+          "record": "research/TIE-CYCLE-20261114-001/tie_cycle.md",
+          "ticket_in_freeze": true
+        },
+        {
+          "id": "REVIEW-LEADS-20261123-001/3",
+          "record": "research/REVIEW-LEADS-20261123-001B/result.md",
+          "ticket_in_freeze": true
+        },
+        {
+          "id": "COPYING-PARTS-20261123-001/2",
+          "record": "research/COPYING-PARTS-20261123-001A/results.md",
+          "ticket_in_freeze": true
+        },
+        {
+          "id": "BOARD-DIST-20261110-001/1",
+          "record": "research/BOARD-DIST-20261110-001/board_dist.md",
+          "ticket_in_freeze": true
+        },
+        {
+          "id": "MEET-ONCE-20261119-001/1",
+          "record": "research/MEET-ONCE-20261119-001/meet_once.md",
+          "ticket_in_freeze": true
+        },
+        {
+          "id": "GROWN-PAIR-20261119-001/1",
+          "record": "research/GROWN-PAIR-20261119-001/grown_pair.md",
+          "ticket_in_freeze": true
+        }
+      ],
+      "other_epics": [
+        "SELECT-COUNT-20261101-001",
+        "OWN-RELATION-20261111-001",
+        "HOLES-AT-INFINITY-20261020-001",
+        "EMERGENCE-BITS-20261021-001",
+        "NAME-LAYERS-20261110-001"
+      ]
+    }
+  ],
+  "direct_prior_searches": [
+    {
+      "args": [
+        "objects",
+        "fresh count",
+        "--epic",
+        "FRESH-COUNT-20261118-001",
+        "--until",
+        "2026-11-26",
+        "--json"
+      ],
+      "rows": [
+        "FRESH-COUNT-20261118-001/3",
+        "FRESH-COUNT-20261118-001/1",
+        "FRESH-COUNT-20261118-001/2"
+      ],
+      "ticket_in_freeze": true
+    }
+  ],
+  "seconds": 0.533
+}

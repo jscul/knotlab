@@ -1,8 +1,20 @@
 # Does growth bind facts held by the whole into a knot of the next layer?
 
 Epic `BINDING-20261126-001`, at the coordinator's go-ahead on the layers referee's top direction. A check by the thread,
-not a registered study; computed, with an argument. The sections down to "Frozen" were committed, after the advisor's
-review in the repository ([question](advisor/question.md), [answer](advisor/answer.md)), before the census-wide test.
+not a registered study; computed, with an argument; refereed (R1: **refuted, two Blocks**; folded in below). The census B
+computations finished before the freeze commit, whose outputs the thread reports unopened; the split prediction was
+committed before the final judge and its results ([question](advisor/question.md), [answer](advisor/answer.md)).
+
+> **Referee R1: refuted (two Blocks), narrowings** ([report](referee-R1/report.md)). The frozen prediction holds on every
+> recorded stage, but the conclusion that growth leaves whole-held facts unbound is false. **Block:** a 30-knot start built
+> for the review gains, at round 2 of ordinary growth, three disjoint cycles of distinctions born in round 1 whose
+> parities take exactly 000, 011, 101 and 110, each read by no single knot; removing any one round-1 law frees all eight
+> ([certificate](referee-R1/construct_born.json)). **Block:** on the sampled ten-knot start, three disjoint path parities
+> bind at round 3; removing one round-3 law frees them ([paths](referee-R1/path_certificate.json)). **Narrowings:** the
+> counts below were an unfinished prefix (finished: 7,961 stages with B nonzero, 2,931 with a split into three or more
+> cycles; still no qualifying split; the finished [`judge.jsonl`](judge.jsonl) is now committed); a qualifying split is a
+> candidate needing its own joint-state and origin check; under changes of at most five distinctions the built witnesses
+> regain two, three and four facts at rounds 2 and 3. Reproduced independently in `BUILT-BINDING-20261126-001`.
 
 ## The question, sharpened
 
@@ -36,10 +48,10 @@ read by one knot), whose parity the growth forces.
 - On the referee's built witnesses (two, three and four facts) B = 0 at rounds 0 to 3: no forced relation at all.
 - On its sampled ten-knot start, B has dimension 1 at every round, from a relation already present at the start.
 - On the seven-knot held-out start 7-239, B grows from 1 to 2 to 3 at rounds 1 to 3, and its new elements are sums of
-  laws that include knots born after the start; but every element read is a single cycle, which splits into no
-  disjoint parts (one carrier whose parity is fixed, not a relation among three).
+  laws that include knots born after the start; [R1:] across rounds 0 to 3 a forced sum splits into at most two, two, three and four cycles
+  respectively, and none of its cycle parts is an unread label.
 - Under the second reading of a small change (every change of up to five distinctions), the built witnesses keep no
-  facts at all.
+  facts at rounds 0 and 1 [R1: they regain two, three and four at rounds 2 and 3].
 
 ## Frozen
 
@@ -50,7 +62,9 @@ round 3.
 **Prediction.** No stage read has an element of B (every nonzero element of its span, up to 2^10 of them) whose support
 splits into three or more distinction-disjoint cycles that are each a class label not read by one knot.
 
-**Stop.** One such element: a second-layer knot made by the knots' laws, to be frozen and tested in its own right; or
+**Stop.** One such element: a second-layer knot made by the knots' laws, to be frozen and tested in its own right [R1:
+a positive split is a candidate: check that every proper subset is free and when the equation first holds on these
+supports]; or
 none, which with the argument above says that under parity, with the shortest changes, growth leaves whole-held facts
 unbound.
 
@@ -65,15 +79,17 @@ just before the freeze was committed and were not opened before it), and [`judge
 element of B on every stage where B ≠ 0 ([`judge.jsonl`](judge.jsonl)): 7,713 stages.
 
 **The stop is "none".** No stage has an element of B that splits into three or more distinction-disjoint cycles each a
-class label not read by one knot. Forced relations are common (B ≠ 0 on 7,713 stages, and their elements split into
-three to six disjoint cycles on 2,805 of them), but on none are all the parts facts held by the whole: some part is no
+class label not read by one knot. Forced relations are common (7,961 distinct start-and-round entries with nonzero B, of which 2,931 have a
+split into at least three cycles; the 7,713 and 2,805 first given were an unfinished prefix), but on none are all the parts facts held by the whole: some part is no
 class label, or one knot reads it.
 
-**So, under parity with the shortest changes, growth leaves the facts held by the whole unbound.** With the argument:
+**[Refuted by R1 as a statement about the growth:] no recorded stage passed the disjoint-cycle test; on the sampled
+ten-knot start, three disjoint path parities bind at round 3.** With the argument:
 facts carried by old distinctions keep the relations of the start (none for the witnesses), every relation the knots'
 laws force among cycle parities lies in B, and no element of B binds three or more such facts on any stage read. The
-built witnesses with two, three and four facts have B = 0 at rounds 0 to 3: their facts stay free. The second reading of
-a small change removes the facts themselves on the built witnesses.
+built witnesses with two, three and four facts have B = 0 at rounds 0 to 3: their facts stay free. Under the second reading of
+a small change the built witnesses have one class at rounds 0 and 1, and two, three and four independent facts
+beyond all single-knot reads at rounds 2 and 3 (R1).
 
 **On the owner's rungs.** Repetition is shown (a knot; a grown start keeping one or several facts no knot reads). A
 tower is not: the facts exist, and the growth does not bind them, under this law and reading, on the stages read.

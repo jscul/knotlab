@@ -96,6 +96,7 @@ sets, not a negative about the growth.
 
 **What it says about recursion.** Every return found, the rings of the second-check study and census entry 165, needs two
 things we supply: the exchange itself (reading each shortest change as a knot is our operation, not the growth's) and
-the pinning of loose values, which no recorded law makes. With nothing pinned, no start returns or cycles. So on the
+the pinning of loose values, which ordinary growth never makes [R1: the two recorded forbidding cuts can fix a loose
+value, so "no recorded law" is false as first worded]. With nothing pinned, no start returns or cycles. So on the
 owner's rungs this is a curiosity, not recursion: a pattern that grows back into itself with nothing supplied is not
 found. The ring that returns under laws added by hand (lesson 8.7) is the record's other lead, also with a supplied law.

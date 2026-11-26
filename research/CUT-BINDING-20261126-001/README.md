@@ -51,7 +51,9 @@ two, three and four rings of four knots, grown 0 to 2 rounds under not-all-equal
 carried by its own ring, disjoint, unchanged by flipping every value) take every tuple of values? They do, at every round
 (4 of 4, 8 of 8, 16 of 16 tuples): no rule binds them.
 
-**So, for the recorded laws, the tower is closed in what was read.** Ordinary growth under parity, the two forbidding
+**[Withdrawn as a statement about the laws (Block): the sets read stop at eight knots, and the binding referee's built
+30-knot start binds under ordinary growth and, modified, under both cuts.] So, for the recorded laws, the tower is closed
+in what was read.** Ordinary growth under parity, the two forbidding
 cuts, and not-all-equal all leave the facts that no single knot reads unbound. On the owner's rungs: repetition is shown;
 a tower is not; recursion is not.
 

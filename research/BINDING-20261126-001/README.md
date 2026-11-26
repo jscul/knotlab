@@ -56,3 +56,29 @@ unbound.
 
 **What it would not show.** Not-all-equal; other readings of a small change; rounds past 2 on sampled starts; that no
 other law binds such facts.
+
+## What was found
+
+The space B was computed on every census and held-out stage of rounds 0 to 2 and the witnesses to round 3
+([`forced_census.jsonl`](forced_census.jsonl), [`forced_heldout.jsonl`](forced_heldout.jsonl); these runs finished
+just before the freeze was committed and were not opened before it), and [`judge.py`](judge.py) split every nonzero
+element of B on every stage where B ≠ 0 ([`judge.jsonl`](judge.jsonl)): 7,713 stages.
+
+**The stop is "none".** No stage has an element of B that splits into three or more distinction-disjoint cycles each a
+class label not read by one knot. Forced relations are common (B ≠ 0 on 7,713 stages, and their elements split into
+three to six disjoint cycles on 2,805 of them), but on none are all the parts facts held by the whole: some part is no
+class label, or one knot reads it.
+
+**So, under parity with the shortest changes, growth leaves the facts held by the whole unbound.** With the argument:
+facts carried by old distinctions keep the relations of the start (none for the witnesses), every relation the knots'
+laws force among cycle parities lies in B, and no element of B binds three or more such facts on any stage read. The
+built witnesses with two, three and four facts have B = 0 at rounds 0 to 3: their facts stay free. The second reading of
+a small change removes the facts themselves on the built witnesses.
+
+**On the owner's rungs.** Repetition is shown (a knot; a grown start keeping one or several facts no knot reads). A
+tower is not: the facts exist, and the growth does not bind them, under this law and reading, on the stages read.
+Recursion is not shown (the recursion study).
+
+**Not run.** Not-all-equal (the record reads no classes under it; its carriers would be functions of pairwise
+agreements, and its space need not be linear); rounds past 2 on sampled starts; other readings of a small change on the
+census; the forbidding cuts, which can fix loose values and so could force new relations.

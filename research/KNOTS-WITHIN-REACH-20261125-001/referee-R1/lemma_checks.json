@@ -1,0 +1,929 @@
+{
+  "scope": "Taking-free NAE rounds regenerated from the frozen definitions; parity examples and NAE state counts independently enumerated. Raw comparison denominators counted separately.",
+  "E_F_R_run_bounds": "Through round 50 or the last reached round. Continue while there are at most 128 members and at most 512 usable loose distinctions. Larger rosters are continued up to 1,024 members when each has at most three usable loose distinctions and at most six one-step roster neighbors. Compare the round 40 count through ten further completed rounds when available.",
+  "E_F_R_independent_named_runs": {
+    "E": 136,
+    "R": 136,
+    "R_round": 85,
+    "F": 84,
+    "F_full_horizon": 84,
+    "stopped_by_referee_size": 28,
+    "F_knots": 1434
+  },
+  "R_older_parent_examples": {
+    "WAIT": [
+      "Ring(5,3)",
+      "L1",
+      [
+        5,
+        25,
+        1,
+        3,
+        2
+      ]
+    ],
+    "HOLD": [
+      "two-knot",
+      "L3",
+      [
+        8,
+        16,
+        2,
+        4,
+        3
+      ]
+    ]
+  },
+  "E_F_controls": {
+    "E": {
+      "from_first_child_of_first_start": [
+        [
+          1,
+          2,
+          4,
+          6
+        ],
+        [
+          1,
+          2,
+          3,
+          3
+        ]
+      ],
+      "holder_steps_to_other_start": 2,
+      "parent_reaches_other_start": false
+    },
+    "E_extra_take": {
+      "nonparent_met": 1,
+      "birth": 2
+    },
+    "F_local_attachment_control": {
+      "only_usable_loose_distinction": 6,
+      "old_loose_distinctions_barred": [
+        0,
+        1,
+        3,
+        5
+      ],
+      "start_knot": 0,
+      "member_at_stage": 2,
+      "s_min": 2,
+      "before": [
+        1,
+        2,
+        3
+      ],
+      "ordinary_attachment": [
+        1,
+        2,
+        3
+      ],
+      "additional_take": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  "fixed_roster_counterexample": {
+    "ordinary_not_all_equal": true,
+    "initial_live_knots": 67,
+    "initial_knots": 6051,
+    "added_start_knots_have_no_loose_distinctions": true,
+    "layer_sizes": [
+      1,
+      3,
+      6,
+      10,
+      15,
+      21,
+      28,
+      36,
+      45,
+      55,
+      66,
+      78,
+      91,
+      105,
+      120,
+      136,
+      153,
+      171,
+      190,
+      210,
+      231,
+      253,
+      276,
+      300,
+      325,
+      351,
+      378,
+      406,
+      435,
+      465,
+      496,
+      528
+    ],
+    "distinct_other_holders_carrying_a_pair_at_each_added_knot_at_least": 2,
+    "rounds": 32,
+    "members_every_round": [
+      67,
+      67,
+      67,
+      67,
+      67,
+      67,
+      67,
+      67,
+      67,
+      67,
+      67,
+      67,
+      67,
+      67,
+      67,
+      67,
+      67,
+      67,
+      67,
+      67,
+      67,
+      67,
+      67,
+      67,
+      67,
+      67,
+      67,
+      67,
+      67,
+      67,
+      67,
+      67,
+      67
+    ],
+    "one_part_every_round": true,
+    "minimum_steps_of_last_member": 32,
+    "history_at_live_start": [
+      1,
+      6,
+      17,
+      35,
+      61,
+      96,
+      141,
+      197,
+      265,
+      346,
+      441,
+      551,
+      677,
+      820,
+      981,
+      1161,
+      1361,
+      1582,
+      1825,
+      2091,
+      2381,
+      2696,
+      3037,
+      3405,
+      3801,
+      4226,
+      4681,
+      5167,
+      5685,
+      6236,
+      6821,
+      7441,
+      8097
+    ],
+    "roster_at_one_round": [
+      1,
+      3,
+      5,
+      7,
+      9,
+      11,
+      13,
+      15,
+      17,
+      19,
+      21,
+      23,
+      25,
+      27,
+      29,
+      31,
+      33,
+      35,
+      37,
+      39,
+      41,
+      43,
+      45,
+      47,
+      49,
+      51,
+      53,
+      55,
+      57,
+      59,
+      61,
+      63,
+      65
+    ],
+    "history_formula": "2r^2+2r+1+C(r+2,3)",
+    "roster_formula": "2r+1"
+  },
+  "N_independent_run0": {
+    "stages": 1930,
+    "start_stages": 1130,
+    "stages_with_a_pair": 1763,
+    "member_pairs": 8079,
+    "loose_distinction_pairs": 32630
+  },
+  "N_P_controls": {
+    "P": {
+      "connected_no_loose": {
+        "places": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            1,
+            2
+          ]
+        ],
+        "loose": [],
+        "loose_projection_count": 1,
+        "allowed": 4,
+        "pair_disagreements": {
+          "0,1": [
+            2,
+            4
+          ],
+          "0,2": [
+            2,
+            4
+          ],
+          "1,2": [
+            2,
+            4
+          ]
+        },
+        "loose_states": [
+          ""
+        ]
+      },
+      "connected_one_loose": {
+        "places": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "loose": [
+          3
+        ],
+        "loose_projection_count": 1,
+        "allowed": 4,
+        "pair_disagreements": {
+          "0,1": [
+            2,
+            4
+          ],
+          "0,2": [
+            2,
+            4
+          ],
+          "0,3": [
+            2,
+            4
+          ],
+          "1,2": [
+            2,
+            4
+          ],
+          "1,3": [
+            2,
+            4
+          ],
+          "2,3": [
+            2,
+            4
+          ]
+        },
+        "loose_states": [
+          "0"
+        ]
+      },
+      "connected_two_loose": {
+        "places": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            1,
+            3
+          ]
+        ],
+        "loose": [
+          2,
+          3
+        ],
+        "loose_projection_count": 2,
+        "allowed": 4,
+        "pair_disagreements": {
+          "0,1": [
+            2,
+            4
+          ],
+          "0,2": [
+            2,
+            4
+          ],
+          "0,3": [
+            2,
+            4
+          ],
+          "1,2": [
+            2,
+            4
+          ],
+          "1,3": [
+            2,
+            4
+          ],
+          "2,3": [
+            0,
+            4
+          ]
+        },
+        "loose_states": [
+          "00",
+          "11"
+        ]
+      },
+      "connected_three_loose": {
+        "places": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            1,
+            3,
+            4
+          ]
+        ],
+        "loose": [
+          2,
+          3,
+          4
+        ],
+        "loose_projection_count": 4,
+        "allowed": 8,
+        "pair_disagreements": {
+          "0,1": [
+            4,
+            8
+          ],
+          "0,2": [
+            4,
+            8
+          ],
+          "0,3": [
+            4,
+            8
+          ],
+          "0,4": [
+            4,
+            8
+          ],
+          "1,2": [
+            4,
+            8
+          ],
+          "1,3": [
+            4,
+            8
+          ],
+          "1,4": [
+            4,
+            8
+          ],
+          "2,3": [
+            4,
+            8
+          ],
+          "2,4": [
+            4,
+            8
+          ],
+          "3,4": [
+            4,
+            8
+          ]
+        },
+        "loose_states": [
+          "000",
+          "011",
+          "101",
+          "110"
+        ]
+      },
+      "one_distinction_with_three_holders": {
+        "places": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            1,
+            3
+          ],
+          [
+            0,
+            4,
+            5
+          ]
+        ],
+        "loose": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "loose_projection_count": 8,
+        "allowed": 8,
+        "pair_disagreements": {
+          "0,1": [
+            4,
+            8
+          ],
+          "0,2": [
+            4,
+            8
+          ],
+          "0,3": [
+            4,
+            8
+          ],
+          "0,4": [
+            4,
+            8
+          ],
+          "0,5": [
+            4,
+            8
+          ],
+          "1,2": [
+            4,
+            8
+          ],
+          "1,3": [
+            4,
+            8
+          ],
+          "1,4": [
+            4,
+            8
+          ],
+          "1,5": [
+            4,
+            8
+          ],
+          "2,3": [
+            0,
+            8
+          ],
+          "2,4": [
+            4,
+            8
+          ],
+          "2,5": [
+            4,
+            8
+          ],
+          "3,4": [
+            4,
+            8
+          ],
+          "3,5": [
+            4,
+            8
+          ],
+          "4,5": [
+            4,
+            8
+          ]
+        },
+        "loose_states": [
+          "0000",
+          "0001",
+          "0010",
+          "0011",
+          "1100",
+          "1101",
+          "1110",
+          "1111"
+        ]
+      },
+      "two_parts_of_the_holder_relation": {
+        "places": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            1,
+            3
+          ],
+          [
+            4,
+            5,
+            6
+          ],
+          [
+            4,
+            5,
+            7
+          ]
+        ],
+        "loose": [
+          2,
+          3,
+          6,
+          7
+        ],
+        "loose_projection_count": 4,
+        "allowed": 16,
+        "pair_disagreements": {
+          "0,1": [
+            8,
+            16
+          ],
+          "0,2": [
+            8,
+            16
+          ],
+          "0,3": [
+            8,
+            16
+          ],
+          "0,4": [
+            8,
+            16
+          ],
+          "0,5": [
+            8,
+            16
+          ],
+          "0,6": [
+            8,
+            16
+          ],
+          "0,7": [
+            8,
+            16
+          ],
+          "1,2": [
+            8,
+            16
+          ],
+          "1,3": [
+            8,
+            16
+          ],
+          "1,4": [
+            8,
+            16
+          ],
+          "1,5": [
+            8,
+            16
+          ],
+          "1,6": [
+            8,
+            16
+          ],
+          "1,7": [
+            8,
+            16
+          ],
+          "2,3": [
+            0,
+            16
+          ],
+          "2,4": [
+            8,
+            16
+          ],
+          "2,5": [
+            8,
+            16
+          ],
+          "2,6": [
+            8,
+            16
+          ],
+          "2,7": [
+            8,
+            16
+          ],
+          "3,4": [
+            8,
+            16
+          ],
+          "3,5": [
+            8,
+            16
+          ],
+          "3,6": [
+            8,
+            16
+          ],
+          "3,7": [
+            8,
+            16
+          ],
+          "4,5": [
+            8,
+            16
+          ],
+          "4,6": [
+            8,
+            16
+          ],
+          "4,7": [
+            8,
+            16
+          ],
+          "5,6": [
+            8,
+            16
+          ],
+          "5,7": [
+            8,
+            16
+          ],
+          "6,7": [
+            0,
+            16
+          ]
+        },
+        "loose_states": [
+          "0000",
+          "0011",
+          "1100",
+          "1111"
+        ]
+      },
+      "one_frozen_distinction_in_a_half_disagreement_pair": {
+        "places": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            4,
+            5
+          ]
+        ],
+        "loose": [
+          3,
+          4,
+          5
+        ],
+        "loose_projection_count": 4,
+        "allowed": 8,
+        "pair_disagreements": {
+          "0,1": [
+            4,
+            8
+          ],
+          "0,2": [
+            4,
+            8
+          ],
+          "0,3": [
+            4,
+            8
+          ],
+          "0,4": [
+            4,
+            8
+          ],
+          "0,5": [
+            4,
+            8
+          ],
+          "1,2": [
+            4,
+            8
+          ],
+          "1,3": [
+            4,
+            8
+          ],
+          "1,4": [
+            4,
+            8
+          ],
+          "1,5": [
+            4,
+            8
+          ],
+          "2,3": [
+            4,
+            8
+          ],
+          "2,4": [
+            4,
+            8
+          ],
+          "2,5": [
+            4,
+            8
+          ],
+          "3,4": [
+            4,
+            8
+          ],
+          "3,5": [
+            4,
+            8
+          ],
+          "4,5": [
+            4,
+            8
+          ]
+        },
+        "loose_states": [
+          "000",
+          "001",
+          "010",
+          "011"
+        ],
+        "pair_3_4_projection": [
+          "00",
+          "01"
+        ]
+      }
+    },
+    "odd_rhs_pair_disagreement": [
+      4,
+      4
+    ],
+    "N_two_knot_uniform": [
+      2,
+      18
+    ],
+    "N_two_knot_agreements_weighted_twice": [
+      12,
+      28
+    ],
+    "N_two_knot_gamma": [
+      1,
+      1
+    ],
+    "N_two_knot_scale": 9
+  },
+  "saved_run_checks": {
+    "run1": {
+      "rows": 5378,
+      "E_checks": 5378,
+      "E_failures": 0
+    },
+    "run2": {
+      "rows": 396,
+      "E_checks": 320,
+      "E_failures": 0,
+      "R_checks": 320,
+      "R_failures": 0,
+      "F_no_later_round": 96,
+      "F_stage_comparisons": 456,
+      "F_full_ten_rounds": 446,
+      "F_knots_compared": 82360,
+      "F_failures": 0
+    },
+    "run4": {
+      "rows": 8496,
+      "P_parity_rows": 4248,
+      "P_stages": 29599,
+      "P_enumerated_stages": 5649,
+      "P_failures": 0
+    },
+    "run5_L0": {
+      "rows": 3376,
+      "N_stages": 540,
+      "N_eligible_stages": 420,
+      "N_member_pairs": 1129,
+      "N_failures": 0,
+      "I_failures": 0
+    },
+    "run5_L1": {
+      "rows": 3376,
+      "N_stages": 723,
+      "N_eligible_stages": 603,
+      "N_member_pairs": 2953,
+      "N_failures": 0,
+      "I_failures": 0
+    },
+    "run5_L3": {
+      "rows": 3376,
+      "N_stages": 999,
+      "N_eligible_stages": 865,
+      "N_member_pairs": 2989,
+      "N_failures": 0,
+      "I_failures": 0
+    },
+    "run5_L6": {
+      "rows": 3376,
+      "N_stages": 847,
+      "N_eligible_stages": 710,
+      "N_member_pairs": 2013,
+      "N_failures": 0,
+      "I_failures": 0
+    },
+    "run5_L7": {
+      "rows": 3376,
+      "N_stages": 616,
+      "N_eligible_stages": 496,
+      "N_member_pairs": 1577,
+      "N_failures": 0,
+      "I_failures": 0
+    },
+    "run5_swaps": {
+      "rows": 2190,
+      "N_stages": 708,
+      "N_eligible_stages": 576,
+      "N_member_pairs": 2373,
+      "N_failures": 0,
+      "I_failures": 0
+    }
+  },
+  "run0_recorded": {
+    "E": 136,
+    "F": 87,
+    "I_pairs": 8079,
+    "I_stages": 1930,
+    "N_pairs": 8079,
+    "R": 136
+  },
+  "arguments_in_order": {
+    "E": [
+      "A taking-free birth uses a different loose distinction of each parent, then only fresh distinctions. The used distinction had one holder and now has two. It cannot be used again.",
+      "Every new meeting is thus a parent meeting, and each parent is met. The only other meetings are between start knots. Removing these meetings can change counts from a made knot if its paths use them."
+    ],
+    "F": [
+      "Fix the old structure at round t with at least one member. Every old knot meeting a later birth was already a member at t, since an old unusable distinction never becomes usable under a taking-free law. No step adds a direct meeting between two old knots.",
+      "On a path from u to a knot made later, the step into its first new knot leaves an old member m. The preceding path lies in the old structure and has length at least s_t(m) minus s_t(u), hence at least s_min minus s_t(u). The added step puts the new knot outside the kept range. Any path of length within the range uses old meetings throughout.",
+      "This proves equality of all kept counts even if other shortest paths had shortened. It allows waiting, holding, closing and retiring. Taking an already-shared distinction breaks the old-member argument."
+    ],
+    "R": [
+      "A shortest path to any start knot can stop as soon as it reaches the first start knot. E makes its length the least number of parent steps to the start set.",
+      "When all old members give up all usable distinctions in every completed round, every parent of a round-t birth was born in round t-1. This holds under release with stalling, offshoots or retirement, including fillers and closings. A chain of parents realizes t steps. Each meeting changes the birth round by at most one, so no shorter path exists.",
+      "For a connected start and any later structure, s(v) is at most the holder steps from a specified start knot c, which are at most e(c)+s(v). Counting yields B(r-e(c)) <= H(c,r) <= B(r), with B of a negative argument zero. Only the synchronized case identifies B with cumulative births including the start.",
+      "Nothing here relates the shape of finite history counts from c to the shape of roster counts. The verified ordinary-law example keeps exactly one unchanged roster and yields different powers than the proposed degree-plus-one rule."
+    ],
+    "N": [
+      "Condition on every shared distinction. The loose distinctions of different knots have independent uniform choices among their local allowed completions, including barred loose distinctions. If a knot has a shared 0 and a shared 1, every loose string completes it.",
+      "When its shared bits are all 0, exactly the all-zero loose string is excluded; when they are all 1, exactly the all-one loose string is excluded. Therefore the mean of 2a-1 is g_u/(2^lambda_u-1). Multiply the two conditional means for distinct holders and average with the stage weighting to obtain the formula and its bound.",
+      "The formula requires at least one shared and one loose distinction at each holder. The sharper numerator bound is |gamma(u,v)| <= min(Pr(u has equal shared places),Pr(v has equal shared places)). Reweighting agreements twice in the two-knot example breaks the displayed identity."
+    ],
+    "P": [
+      "Under homogeneous parity, bitwise addition preserves all rules and the all-zero state is allowed. If any state distinguishes a pair, adding that state pairs every agreement with one disagreement in the uniform stage weighting. Otherwise the two distinctions agree throughout.",
+      "All linear rules are sums of the local parity rules. Each row vanishes on the solution set, and elimination gives as many independent rows as the codimension of that set. A rule on loose distinctions cancels every shared distinction. With precisely two holders per shared distinction, cancellation requires equal coefficients on its two knots. With the holder relation connected, all coefficients are equal. The only possible nonzero loose rule is the sum of all loose distinctions.",
+      "With zero loose distinctions there is no nonzero rule, with one its bit is fixed at zero, with two they are equal, and with at least three every pair takes all four values equally. Under arbitrary holder counts, half disagreement alone does not guarantee both are open. The connected three-holder example has pair projection {00,01}. An odd right-hand side or a changed weighting removes the general half-disagreement argument."
+    ]
+  }
+}

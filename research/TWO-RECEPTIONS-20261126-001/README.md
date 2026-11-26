@@ -132,14 +132,24 @@ after round 3 heard after round 6 (the parity shortage is one round's, at the ne
 
 ### What was found: C
 
+> **Referee R2 (confirmed with fixes, two Blocks), folded in** ([report](referee-R2/report.md)). **Block:** "none of
+> these joined starts makes one" is false: 61 of the 300 implied births (all under the cross-part take) were owed
+> joins, one owed eight; but when such a birth leaves, no survivor's owing rises, so no member made after the start is
+> short. **Block (a program fault):** in the changed growths the parity test kept the marked member's equation from
+> before the addition (`ring_line.mark` does not renew it); all 194 first hearings survive the corrected equation, but
+> 4,023 of the 4,725 unheard comparisons are not rechecked. **Narrowing:** what is shown is no first hearing after round
+> 6 for the tested round-3 additions through their common endpoints (1,125 of 4,919 ended before round 7; the placement
+> limits left 3,051 eligible additions out), not that parity "adds no route". The not-all-equal studies are unaffected
+> by the fault (that law does not read the equations).
+
 [`parity_table.md`](parity_table.md) ([`tally_b.py`](tally_b.py) on `parity_runs.jsonl.gz`): 3,221 of 3,500 pairs read
 (279 not run: seven jobs stopped by their clock or memory cap).
 
-- **No knot made after the start is short in any pair read, under any of the seven laws.** The referee's implied-birth
-  shortage needs a start where a birth is implied while owed a join; none of these joined starts makes one in the
-  rounds read.
+- **No knot made after the start is short in any pair read, under any of the seven laws.** Implied births owed joins do
+  occur (61, all under the cross-part take: the referee), but none leaves a survivor short.
 - **No far change is heard after round 6.** As under not-all-equal, the only hearings are the cross-part take's, in
   rounds 4 and 5 (194 of 780 at linked far members), with no knot made after the start short.
 
-So the expectation's first half fails (no pair has the shortage at all) and its second holds. In these joined starts
-the parity knot law adds no route; the referee's witness stands as a start of its own, untested for distance.
+So the expectation's first half fails (no pair has the shortage at all) and its second holds, as far as read: no late
+first hearing for the tested round-3 additions within their windows (the referee's narrowing). The referee's
+eight-knot witness stands as a start of its own, untested for distance.

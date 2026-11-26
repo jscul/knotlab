@@ -61,9 +61,9 @@ Whether either carries a change late and from afar is not tested.
 
 1. The referee's parity witness is a shortage made by the knot law with nothing dropped by hand: the cheapest check of
    whether the model can carry what the cap carried. Run after the fold-in (README, C): in 3,221 joined pairs under
-   parity no knot made after the start is short and no far change is heard after round 6. With that, nothing the
-   recorded laws make has carried a change to a pattern's own knots late and from afar in these joined starts; the
-   line stops, with directions 2 and 3 left for the owner.
+   parity no knot made after the start is short and no tested round-3 addition is first heard after round 6 within its
+   window (refereed, R2: confirmed with fixes, two Blocks; owed implied births occur, and the changed runs kept a stale
+   parity equation). The follow-ups are in `HOLD-BACK-20261126-001`.
 2. The take's witness is heard in round 2, one or four sharings away; late hearing from afar is untested.
 3. Unchanged.
 

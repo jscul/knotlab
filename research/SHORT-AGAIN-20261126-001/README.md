@@ -153,6 +153,16 @@ marks; the census's 990 pairs under ODD-FEWER and BUSY-FEWER, 11,880 cases, all 
 
 ## The two sources: heard from afar, one step a round
 
+> **Correction, logged in [the corrections](../../docs/CORRECTIONS.md).** Without the change these structures make
+> no knot after round 1: every member is short and waits in rounds 2 to 16, under JOIN-FEWER and ONE-FEWER with
+> waiting at every distance, and under BUSY-FEWER at d = 1 and 2, the only distances at which it carried (the ring
+> study's word for this is "jammed"). The 32 to 53 knots at round 16 are the start and its first round. A change
+> lets one knot pay; the jam then ends one knot a round along the line, and the structure grows without bound (4,766
+> knots at round 11 at d = 4). A stub in place of the other source ends it too (from round 5 at d = 3). So what the
+> receiver hears is that the jam has ended, and when, not what the other source is. The counts below stand. [The jam
+> study](JAM.md) tests whether hearing from afar is always the end of a jam, and [the ring line](RING_LINE.md) finds
+> that the line passes once and stops.
+
 [`far.py`](far.py), [`far.jsonl.gz`](far.jsonl.gz): the two sources joined by a meeting through a chain of up to
 seven link knots, with the reach table's changes, to 16 rounds; 96 cases, all read.
 
@@ -208,3 +218,22 @@ knot next to the source under ODD-FEWER and THIRD-FEWER.
   latest first hearing under JOIN-FEWER with waiting is round 5.
 - **The reading of "why" is a reading.** The fuse is described from the counts (knots, short rounds, kept joins),
   not traced knot by knot.
+
+## After the first checkpoint
+
+Three checks and one link, run by the thread that took the line over ([decision](decision.md)):
+
+- [**The ring at one end of the line**](RING_LINE.md) (direction 1): the line passes once and stops. Joined through
+  the line, the ring no longer comes round under the rations that carry; where it does come round (the cap of
+  three), nothing it does reaches the source. What passes under one fewer is one number: when the source starts
+  making knots again (one or two rounds later with the ring than with a stub).
+- [**Is hearing from afar the end of a jam?**](JAM.md) (directions 2 and 3, 2,256 pairs and three samples): not of
+  the whole pattern. By a meeting under one fewer than asked, a far change gets in through own knots that wait (one
+  exception in 2,327 far hearings, at d = 2). The record's own "one fewer" does what the made ration did. Under the
+  cap of three one receiver hears from afar another way: it switches its way of growing at round 2d + 1 when the far
+  end's site holds two loose distinctions, at every distance tried.
+- [**A second change**](AGAIN.md) is heard in 120 of 376 pairs under one fewer; a third could not be read.
+- **The link** ([`peel.py`](peel.py), `peel.json`): the end of the two sources' jam follows the literature's threshold
+  peeling (bootstrap percolation): every short knot falls short by one, and a knot acts the round after its first
+  group partner acts: in 80 of 128 marked cases for every member, and in 2,280 of 2,624 members in all; each of the
+  other 344 acts exactly one round late.

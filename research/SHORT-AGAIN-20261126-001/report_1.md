@@ -2,6 +2,11 @@
 
 Sent to the owner at the first checkpoint of `SHORT-AGAIN-20261126-001`. [The note](README.md)
 
+> **Correction (see [the corrections](../../docs/CORRECTIONS.md)).** "A growth that barely grows" understates it:
+> without the change the two sources and their line make no knot after round 1 (every member waits), and with the
+> change the structure grows without bound. What is heard from afar is the end of that jam. The report is kept as
+> sent.
+
 The stop is met, in a thin form: under a made ration with waiting, a change in one pattern is heard by another
 pattern's own knots from up to eight steps away, one round later for each step. It happens for one pair of
 patterns, along a line of waiting knots, in a growth that barely grows.

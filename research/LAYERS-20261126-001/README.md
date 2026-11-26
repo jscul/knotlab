@@ -97,3 +97,31 @@ knot, which would be a candidate first step of a tower (a discovery, not a failu
 **What a pass would and would not show.** A pass makes it a computed rule that, under this reading of a small change,
 the growth keeps one whole-held fact per connected piece: repetition, not a tower. It would not show that no other
 reading of a small change, no other knot law or no larger start makes a tower, and nothing here bears on recursion.
+
+## What was found
+
+The frozen runs ([`frozen_census.jsonl`](frozen_census.jsonl), [`frozen_heldout.jsonl`](frozen_heldout.jsonl)), scored by
+[`score.py`](score.py) ([`score.json`](score.json)):
+
+| set | grow one round | in the conditions | P1 holds | P1 breaks | four or more classes | of those, labels read knot by knot |
+|---|---|---|---|---|---|---|
+| census, 3 to 5 knots | 5,111 of 7,075 | 978 | 130 | 848 | 8 | 8 |
+| held out, 6 to 8 knots | 417 of 900 | 157 | 28 | 129 | 8 | 7 |
+
+**The stop is met: the rule breaks.** In 848 of the 978 census starts that meet the conditions (and 129 of 157 held
+out), the start keeps one class after the round, not two, and its pieces' parities are no label; in a few (31 and 27) it
+keeps two with another label, and in four it keeps four. So the advisor's reduction, as stated, is wrong: its conditions
+leave out what removes the class in most starts (the record's double meetings, two knots sharing two distinctions, are
+the first suspect, not checked).
+
+**What the tower's first step needed, and what was found.** A tower needs a connected start that keeps two or more
+independent whole-held facts, so that a rule can bind them. Only starts with four or more classes could show that: 8 in
+the census and 8 held out. In 15 of the 16 every label is read knot by knot (no whole-held fact at all among them), and
+in the sixteenth (held out, seven knots) the two-dimensional label space holds one label that single knots read and one
+that none does. So **no start read keeps more than one whole-held fact**, at the start or after one round, under this
+reading of a small change. The first step of a tower is not found, on sampled starts, not only on built ones; but only
+16 of 7,975 starts could have shown it, and rounds past the first were read only on the built rings.
+
+**Repetition, not a tower.** The record shows the same kind of fact, held by the whole and by no part, twice: in a knot,
+and in a grown start (one per connected piece, at most, in every start read). It does not show a step from one to the
+next, and nothing here bears on recursion.

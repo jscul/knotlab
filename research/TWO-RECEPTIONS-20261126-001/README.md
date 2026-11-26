@@ -1,5 +1,8 @@
 # Two receptions from a far pattern, and whether the model makes the shortage itself
 
+> **Refereed (R1, confirmed with fixes, two Blocks): see the notice in [the decision](decision.md).** The argument holds
+> for the not-all-equal law; parity's implied births and the record's local takes open two routes it does not cover.
+
 Epic `TWO-RECEPTIONS-20261126-001`, at the coordinator's go-ahead under the owner's standing rule, after the referee of
 [`LINKED-UNDER-CAP-20261126-001`](../LINKED-UNDER-CAP-20261126-001/decision.md) found that a second far change can
 cancel the first. A check by the thread, not a registered study; computed; referee pending.

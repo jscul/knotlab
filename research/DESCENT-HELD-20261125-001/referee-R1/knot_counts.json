@@ -1,0 +1,2604 @@
+{
+  "part7_recount": {
+    "registered_prefix": {
+      "parity": {
+        "runs": 409,
+        "final_knots": 225422,
+        "start_knots": 1556,
+        "new_knots": 223866,
+        "two_methods_runs": 409,
+        "two_methods_knots": 225422,
+        "two_methods_start_knots": 1556,
+        "two_methods_new_knots": 223866,
+        "reported_failures": 0,
+        "reported_disagreements": 0,
+        "reported_untested_knots_within_completed_runs": 0
+      },
+      "nae": {
+        "runs": 409,
+        "final_knots": 236716,
+        "start_knots": 1556,
+        "new_knots": 235160,
+        "two_methods_runs": 206,
+        "two_methods_knots": 10555,
+        "two_methods_start_knots": 626,
+        "two_methods_new_knots": 9929,
+        "reported_failures": 0,
+        "reported_disagreements": 0,
+        "reported_untested_knots_within_completed_runs": 0
+      }
+    },
+    "completed_after_prefix": {
+      "parity": {
+        "runs": 78,
+        "final_knots": 45331,
+        "start_knots": 796,
+        "new_knots": 44535,
+        "two_methods_runs": 78,
+        "two_methods_knots": 45331,
+        "two_methods_start_knots": 796,
+        "two_methods_new_knots": 44535,
+        "reported_failures": 0,
+        "reported_disagreements": 0,
+        "reported_untested_knots_within_completed_runs": 0
+      },
+      "nae": {
+        "runs": 76,
+        "final_knots": 41469,
+        "start_knots": 782,
+        "new_knots": 40687,
+        "two_methods_runs": 25,
+        "two_methods_knots": 2070,
+        "two_methods_start_knots": 244,
+        "two_methods_new_knots": 1826,
+        "reported_failures": 0,
+        "reported_disagreements": 0,
+        "reported_untested_knots_within_completed_runs": 0
+      }
+    },
+    "without_results": {
+      "parity": {
+        "runs": 141,
+        "by_source": {
+          "part4": 129,
+          "part6": 12
+        },
+        "by_form": {
+          "PU": 33,
+          "None": 36,
+          "PB": 36,
+          "BB": 36
+        },
+        "by_start": {
+          "D2(4,3)": 1,
+          "GEN7": 40,
+          "SCC": 44,
+          "C8X3": 44,
+          "Ring(5,3)": 6,
+          "Ring(7,3)": 6
+        },
+        "final_knots_recorded_in_parts_4_and_6": 121674,
+        "start_knots": 1504,
+        "new_knots_recorded_in_parts_4_and_6": 120170,
+        "largest_final_roster": 14056
+      },
+      "nae": {
+        "runs": 131,
+        "by_source": {
+          "part4": 131
+        },
+        "by_form": {
+          "PU": 33,
+          "PB": 33,
+          "BB": 33,
+          "None": 32
+        },
+        "by_start": {
+          "D2(4,3)": 1,
+          "GEN7": 42,
+          "SCC": 44,
+          "C8X3": 44
+        },
+        "final_knots_recorded_in_parts_4_and_6": 112900,
+        "start_knots": 1446,
+        "new_knots_recorded_in_parts_4_and_6": 111454,
+        "largest_final_roster": 14056
+      }
+    },
+    "first_run_without_result": [
+      "part4",
+      "D2(4,3)",
+      "ORD",
+      "PU",
+      "parity"
+    ],
+    "methods": {
+      "parity": "ranks and kernel",
+      "nae": "decomposed for every final knot in a completed run and direct for arity at most 7 in a final roster of at most 150 knots",
+      "two_methods_start_knots": "final roster sizes and unchanged arities of the start knots determine the direct-test start count",
+      "without_results": "roster sizes were recorded by the growth runs and were counted here as untested in part 7"
+    }
+  },
+  "part8_closing_swap_recount": {
+    "named_parity_runs": 462,
+    "runs_with_a_swapped_closing_birth": 33,
+    "swapped_closing_births": 49,
+    "swapped_closing_births_with_fresh_distinctions": 49,
+    "swapped_closing_births_failing_at_their_own_round": 49,
+    "reported_disagreements": 0
+  },
+  "registered_parity_closing_arities": {
+    "scope": "all recorded parity closing births in part 4, each of which received its part 7 test",
+    "closing_runs": 57,
+    "arities": {
+      "3": 53,
+      "4": 4
+    },
+    "rows": [
+      {
+        "start": "LONE-THREE",
+        "ration_and_treatment": "F1O",
+        "form": "None",
+        "closing_arities": [
+          3
+        ]
+      },
+      {
+        "start": "LONE-THREE",
+        "ration_and_treatment": "F1R",
+        "form": "None",
+        "closing_arities": [
+          3
+        ]
+      },
+      {
+        "start": "LONE-THREE",
+        "ration_and_treatment": "ORD",
+        "form": "None",
+        "closing_arities": [
+          3
+        ]
+      },
+      {
+        "start": "LONE-THREE",
+        "ration_and_treatment": "C3W",
+        "form": "None",
+        "closing_arities": [
+          3
+        ]
+      },
+      {
+        "start": "LONE-THREE",
+        "ration_and_treatment": "C3WF",
+        "form": "None",
+        "closing_arities": [
+          3
+        ]
+      },
+      {
+        "start": "LONE-THREE",
+        "ration_and_treatment": "F1W",
+        "form": "None",
+        "closing_arities": [
+          3
+        ]
+      },
+      {
+        "start": "LONE-THREE",
+        "ration_and_treatment": "H-C3W",
+        "form": "None",
+        "closing_arities": [
+          3
+        ]
+      },
+      {
+        "start": "LONE-THREE",
+        "ration_and_treatment": "H-F1R",
+        "form": "None",
+        "closing_arities": [
+          3
+        ]
+      },
+      {
+        "start": "LONE-THREE",
+        "ration_and_treatment": "H-F1O",
+        "form": "None",
+        "closing_arities": [
+          3
+        ]
+      },
+      {
+        "start": "LONE-FOUR",
+        "ration_and_treatment": "ORD",
+        "form": "None",
+        "closing_arities": [
+          4
+        ]
+      },
+      {
+        "start": "LONE-FOUR",
+        "ration_and_treatment": "C3W",
+        "form": "None",
+        "closing_arities": [
+          4
+        ]
+      },
+      {
+        "start": "LONE-FOUR",
+        "ration_and_treatment": "C3WF",
+        "form": "None",
+        "closing_arities": [
+          4
+        ]
+      },
+      {
+        "start": "LONE-FOUR",
+        "ration_and_treatment": "H-C3W",
+        "form": "None",
+        "closing_arities": [
+          4
+        ]
+      },
+      {
+        "start": "TRIANGLE",
+        "ration_and_treatment": "R3W",
+        "form": "None",
+        "closing_arities": [
+          3
+        ]
+      },
+      {
+        "start": "TRIANGLE",
+        "ration_and_treatment": "R3W",
+        "form": "PU",
+        "closing_arities": [
+          3
+        ]
+      },
+      {
+        "start": "TRIANGLE",
+        "ration_and_treatment": "R3W",
+        "form": "PB",
+        "closing_arities": [
+          3
+        ]
+      },
+      {
+        "start": "TRIANGLE",
+        "ration_and_treatment": "R3W",
+        "form": "BB",
+        "closing_arities": [
+          3
+        ]
+      },
+      {
+        "start": "TRIANGLE",
+        "ration_and_treatment": "F1O",
+        "form": "None",
+        "closing_arities": [
+          3
+        ]
+      },
+      {
+        "start": "TRIANGLE",
+        "ration_and_treatment": "F1O",
+        "form": "PU",
+        "closing_arities": [
+          3
+        ]
+      },
+      {
+        "start": "TRIANGLE",
+        "ration_and_treatment": "F1O",
+        "form": "PB",
+        "closing_arities": [
+          3
+        ]
+      },
+      {
+        "start": "TRIANGLE",
+        "ration_and_treatment": "F1O",
+        "form": "BB",
+        "closing_arities": [
+          3
+        ]
+      },
+      {
+        "start": "TRIANGLE",
+        "ration_and_treatment": "F1R",
+        "form": "None",
+        "closing_arities": [
+          3
+        ]
+      },
+      {
+        "start": "TRIANGLE",
+        "ration_and_treatment": "F1R",
+        "form": "PU",
+        "closing_arities": [
+          3
+        ]
+      },
+      {
+        "start": "TRIANGLE",
+        "ration_and_treatment": "F1R",
+        "form": "PB",
+        "closing_arities": [
+          3
+        ]
+      },
+      {
+        "start": "TRIANGLE",
+        "ration_and_treatment": "F1R",
+        "form": "BB",
+        "closing_arities": [
+          3
+        ]
+      },
+      {
+        "start": "TRIANGLE",
+        "ration_and_treatment": "ORD",
+        "form": "None",
+        "closing_arities": [
+          3
+        ]
+      },
+      {
+        "start": "TRIANGLE",
+        "ration_and_treatment": "ORD",
+        "form": "PU",
+        "closing_arities": [
+          3
+        ]
+      },
+      {
+        "start": "TRIANGLE",
+        "ration_and_treatment": "ORD",
+        "form": "PB",
+        "closing_arities": [
+          3
+        ]
+      },
+      {
+        "start": "TRIANGLE",
+        "ration_and_treatment": "ORD",
+        "form": "BB",
+        "closing_arities": [
+          3
+        ]
+      },
+      {
+        "start": "TRIANGLE",
+        "ration_and_treatment": "C3W",
+        "form": "None",
+        "closing_arities": [
+          3
+        ]
+      },
+      {
+        "start": "TRIANGLE",
+        "ration_and_treatment": "C3W",
+        "form": "PU",
+        "closing_arities": [
+          3
+        ]
+      },
+      {
+        "start": "TRIANGLE",
+        "ration_and_treatment": "C3W",
+        "form": "PB",
+        "closing_arities": [
+          3
+        ]
+      },
+      {
+        "start": "TRIANGLE",
+        "ration_and_treatment": "C3W",
+        "form": "BB",
+        "closing_arities": [
+          3
+        ]
+      },
+      {
+        "start": "TRIANGLE",
+        "ration_and_treatment": "C3WF",
+        "form": "None",
+        "closing_arities": [
+          3
+        ]
+      },
+      {
+        "start": "TRIANGLE",
+        "ration_and_treatment": "C3WF",
+        "form": "PU",
+        "closing_arities": [
+          3
+        ]
+      },
+      {
+        "start": "TRIANGLE",
+        "ration_and_treatment": "C3WF",
+        "form": "PB",
+        "closing_arities": [
+          3
+        ]
+      },
+      {
+        "start": "TRIANGLE",
+        "ration_and_treatment": "C3WF",
+        "form": "BB",
+        "closing_arities": [
+          3
+        ]
+      },
+      {
+        "start": "TRIANGLE",
+        "ration_and_treatment": "F1W",
+        "form": "None",
+        "closing_arities": [
+          3
+        ]
+      },
+      {
+        "start": "TRIANGLE",
+        "ration_and_treatment": "F1W",
+        "form": "PU",
+        "closing_arities": [
+          3
+        ]
+      },
+      {
+        "start": "TRIANGLE",
+        "ration_and_treatment": "F1W",
+        "form": "PB",
+        "closing_arities": [
+          3
+        ]
+      },
+      {
+        "start": "TRIANGLE",
+        "ration_and_treatment": "F1W",
+        "form": "BB",
+        "closing_arities": [
+          3
+        ]
+      },
+      {
+        "start": "TRIANGLE",
+        "ration_and_treatment": "H-C3W",
+        "form": "None",
+        "closing_arities": [
+          3
+        ]
+      },
+      {
+        "start": "TRIANGLE",
+        "ration_and_treatment": "H-C3W",
+        "form": "PU",
+        "closing_arities": [
+          3
+        ]
+      },
+      {
+        "start": "TRIANGLE",
+        "ration_and_treatment": "H-C3W",
+        "form": "PB",
+        "closing_arities": [
+          3
+        ]
+      },
+      {
+        "start": "TRIANGLE",
+        "ration_and_treatment": "H-C3W",
+        "form": "BB",
+        "closing_arities": [
+          3
+        ]
+      },
+      {
+        "start": "TRIANGLE",
+        "ration_and_treatment": "H-R3W",
+        "form": "None",
+        "closing_arities": [
+          3
+        ]
+      },
+      {
+        "start": "TRIANGLE",
+        "ration_and_treatment": "H-R3W",
+        "form": "PU",
+        "closing_arities": [
+          3
+        ]
+      },
+      {
+        "start": "TRIANGLE",
+        "ration_and_treatment": "H-R3W",
+        "form": "PB",
+        "closing_arities": [
+          3
+        ]
+      },
+      {
+        "start": "TRIANGLE",
+        "ration_and_treatment": "H-R3W",
+        "form": "BB",
+        "closing_arities": [
+          3
+        ]
+      },
+      {
+        "start": "TRIANGLE",
+        "ration_and_treatment": "H-F1R",
+        "form": "None",
+        "closing_arities": [
+          3
+        ]
+      },
+      {
+        "start": "TRIANGLE",
+        "ration_and_treatment": "H-F1R",
+        "form": "PU",
+        "closing_arities": [
+          3
+        ]
+      },
+      {
+        "start": "TRIANGLE",
+        "ration_and_treatment": "H-F1R",
+        "form": "PB",
+        "closing_arities": [
+          3
+        ]
+      },
+      {
+        "start": "TRIANGLE",
+        "ration_and_treatment": "H-F1R",
+        "form": "BB",
+        "closing_arities": [
+          3
+        ]
+      },
+      {
+        "start": "TRIANGLE",
+        "ration_and_treatment": "H-F1O",
+        "form": "None",
+        "closing_arities": [
+          3
+        ]
+      },
+      {
+        "start": "TRIANGLE",
+        "ration_and_treatment": "H-F1O",
+        "form": "PU",
+        "closing_arities": [
+          3
+        ]
+      },
+      {
+        "start": "TRIANGLE",
+        "ration_and_treatment": "H-F1O",
+        "form": "PB",
+        "closing_arities": [
+          3
+        ]
+      },
+      {
+        "start": "TRIANGLE",
+        "ration_and_treatment": "H-F1O",
+        "form": "BB",
+        "closing_arities": [
+          3
+        ]
+      }
+    ]
+  },
+  "independent_allowed_state_checks": {
+    "runs": [
+      {
+        "knot_law": "parity",
+        "start_places": [
+          [
+            0,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            4
+          ],
+          [
+            1,
+            2,
+            5
+          ]
+        ],
+        "births_by_round": [
+          1,
+          0
+        ],
+        "snapshots": [
+          {
+            "round": 0,
+            "outcome": "start",
+            "knots": 3,
+            "failed_knots": [],
+            "changed_since_birth": []
+          },
+          {
+            "round": 1,
+            "outcome": "birth",
+            "knots": 4,
+            "failed_knots": [],
+            "changed_since_birth": []
+          },
+          {
+            "round": 2,
+            "outcome": "no change",
+            "knots": 4,
+            "failed_knots": [],
+            "changed_since_birth": []
+          }
+        ],
+        "first_birth": {
+          "round": 1,
+          "knot": 3,
+          "parents": [
+            0,
+            1,
+            2
+          ],
+          "taken": [
+            3,
+            4,
+            5
+          ],
+          "fresh": [],
+          "closing_candidate": true,
+          "demand": 0
+        },
+        "closing_candidates": [
+          {
+            "round": 1,
+            "knot": 3,
+            "parents": [
+              0,
+              1,
+              2
+            ],
+            "taken": [
+              3,
+              4,
+              5
+            ],
+            "fresh": [],
+            "closing_candidate": true,
+            "demand": 0
+          }
+        ],
+        "case": "three-knot ring with one loose distinction each",
+        "ration": "ORD",
+        "form": "None",
+        "closing_swap": false,
+        "recorded_final_count_and_births_match": true
+      },
+      {
+        "knot_law": "parity",
+        "start_places": [
+          [
+            0,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            4
+          ],
+          [
+            1,
+            2,
+            5
+          ],
+          [
+            6,
+            7,
+            8
+          ]
+        ],
+        "births_by_round": [
+          4
+        ],
+        "snapshots": [
+          {
+            "round": 0,
+            "outcome": "start",
+            "knots": 4,
+            "failed_knots": [],
+            "changed_since_birth": []
+          },
+          {
+            "round": 1,
+            "outcome": "birth",
+            "knots": 8,
+            "failed_knots": [
+              4
+            ],
+            "changed_since_birth": []
+          }
+        ],
+        "first_birth": {
+          "round": 1,
+          "knot": 4,
+          "parents": [
+            0,
+            1,
+            2
+          ],
+          "taken": [
+            3,
+            4,
+            5
+          ],
+          "fresh": [
+            9
+          ],
+          "closing_candidate": false,
+          "demand": 0
+        },
+        "closing_candidates": [],
+        "case": "three-knot ring with one loose distinction each and a separate three-place knot",
+        "ration": "ORD",
+        "form": "None",
+        "closing_swap": false
+      },
+      {
+        "knot_law": "parity",
+        "start_places": [
+          [
+            0,
+            1,
+            4
+          ],
+          [
+            2,
+            3,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "births_by_round": [
+          1,
+          0
+        ],
+        "snapshots": [
+          {
+            "round": 0,
+            "outcome": "start",
+            "knots": 3,
+            "failed_knots": [],
+            "changed_since_birth": []
+          },
+          {
+            "round": 1,
+            "outcome": "birth",
+            "knots": 4,
+            "failed_knots": [],
+            "changed_since_birth": []
+          },
+          {
+            "round": 2,
+            "outcome": "no change",
+            "knots": 4,
+            "failed_knots": [],
+            "changed_since_birth": []
+          }
+        ],
+        "first_birth": {
+          "round": 1,
+          "knot": 3,
+          "parents": [
+            0,
+            1
+          ],
+          "taken": [
+            4,
+            5
+          ],
+          "fresh": [],
+          "closing_candidate": true,
+          "demand": 0
+        },
+        "closing_candidates": [
+          {
+            "round": 1,
+            "knot": 3,
+            "parents": [
+              0,
+              1
+            ],
+            "taken": [
+              4,
+              5
+            ],
+            "fresh": [],
+            "closing_candidate": true,
+            "demand": 0
+          }
+        ],
+        "case": "two live three-place knots meeting one dead four-place common knot",
+        "ration": "ORD",
+        "form": "None",
+        "closing_swap": false
+      },
+      {
+        "knot_law": "parity",
+        "start_places": [
+          [
+            0,
+            1,
+            2
+          ]
+        ],
+        "births_by_round": [
+          3,
+          3,
+          1,
+          0
+        ],
+        "snapshots": [
+          {
+            "round": 0,
+            "outcome": "start",
+            "knots": 1,
+            "failed_knots": [],
+            "changed_since_birth": []
+          },
+          {
+            "round": 1,
+            "outcome": "birth",
+            "knots": 4,
+            "failed_knots": [],
+            "changed_since_birth": []
+          },
+          {
+            "round": 2,
+            "outcome": "birth",
+            "knots": 7,
+            "failed_knots": [],
+            "changed_since_birth": []
+          },
+          {
+            "round": 3,
+            "outcome": "birth",
+            "knots": 8,
+            "failed_knots": [],
+            "changed_since_birth": []
+          },
+          {
+            "round": 4,
+            "outcome": "no change",
+            "knots": 8,
+            "failed_knots": [],
+            "changed_since_birth": []
+          }
+        ],
+        "first_birth": {
+          "round": 1,
+          "knot": 1,
+          "parents": [
+            0
+          ],
+          "taken": [
+            0
+          ],
+          "fresh": [
+            3,
+            4
+          ],
+          "closing_candidate": false,
+          "demand": 2
+        },
+        "closing_candidates": [
+          {
+            "round": 3,
+            "knot": 7,
+            "parents": [
+              4,
+              5,
+              6
+            ],
+            "taken": [
+              9,
+              10,
+              11
+            ],
+            "fresh": [],
+            "closing_candidate": true,
+            "demand": 0
+          }
+        ],
+        "case": "lone three-place knot",
+        "ration": "ORD",
+        "form": "None",
+        "closing_swap": false,
+        "recorded_final_count_and_births_match": true
+      },
+      {
+        "knot_law": "parity",
+        "start_places": [
+          [
+            0,
+            1,
+            2
+          ]
+        ],
+        "births_by_round": [
+          3,
+          3,
+          1,
+          0
+        ],
+        "snapshots": [
+          {
+            "round": 0,
+            "outcome": "start",
+            "knots": 1,
+            "failed_knots": [],
+            "changed_since_birth": []
+          },
+          {
+            "round": 1,
+            "outcome": "birth",
+            "knots": 4,
+            "failed_knots": [],
+            "changed_since_birth": []
+          },
+          {
+            "round": 2,
+            "outcome": "birth",
+            "knots": 7,
+            "failed_knots": [],
+            "changed_since_birth": []
+          },
+          {
+            "round": 3,
+            "outcome": "birth",
+            "knots": 8,
+            "failed_knots": [],
+            "changed_since_birth": []
+          },
+          {
+            "round": 4,
+            "outcome": "no change",
+            "knots": 8,
+            "failed_knots": [],
+            "changed_since_birth": []
+          }
+        ],
+        "first_birth": {
+          "round": 1,
+          "knot": 1,
+          "parents": [
+            0
+          ],
+          "taken": [
+            0
+          ],
+          "fresh": [
+            3,
+            4
+          ],
+          "closing_candidate": false,
+          "demand": 2
+        },
+        "closing_candidates": [
+          {
+            "round": 3,
+            "knot": 7,
+            "parents": [
+              4,
+              5,
+              6
+            ],
+            "taken": [
+              9,
+              10,
+              11
+            ],
+            "fresh": [],
+            "closing_candidate": true,
+            "demand": 0
+          }
+        ],
+        "case": "lone three-place knot",
+        "ration": "FLOOR1",
+        "form": "None",
+        "closing_swap": false,
+        "recorded_final_count_and_births_match": true
+      },
+      {
+        "knot_law": "nae",
+        "start_places": [
+          [
+            0,
+            1,
+            2
+          ]
+        ],
+        "births_by_round": [
+          3,
+          3,
+          1,
+          1,
+          2,
+          3,
+          5,
+          8
+        ],
+        "snapshots": [
+          {
+            "round": 0,
+            "outcome": "start",
+            "knots": 1,
+            "failed_knots": [],
+            "changed_since_birth": []
+          },
+          {
+            "round": 1,
+            "outcome": "birth",
+            "knots": 4,
+            "failed_knots": [],
+            "changed_since_birth": []
+          },
+          {
+            "round": 2,
+            "outcome": "birth",
+            "knots": 7,
+            "failed_knots": [],
+            "changed_since_birth": []
+          },
+          {
+            "round": 3,
+            "outcome": "birth",
+            "knots": 8,
+            "failed_knots": [],
+            "changed_since_birth": []
+          },
+          {
+            "round": 4,
+            "outcome": "birth",
+            "knots": 9,
+            "failed_knots": [],
+            "changed_since_birth": []
+          },
+          {
+            "round": 5,
+            "outcome": "birth",
+            "knots": 11,
+            "failed_knots": [],
+            "changed_since_birth": []
+          },
+          {
+            "round": 6,
+            "outcome": "birth",
+            "knots": 14,
+            "failed_knots": [],
+            "changed_since_birth": []
+          },
+          {
+            "round": 7,
+            "outcome": "birth",
+            "knots": 19,
+            "failed_knots": [],
+            "changed_since_birth": []
+          },
+          {
+            "round": 8,
+            "outcome": "birth",
+            "knots": 27,
+            "failed_knots": [],
+            "changed_since_birth": []
+          }
+        ],
+        "first_birth": {
+          "round": 1,
+          "knot": 1,
+          "parents": [
+            0
+          ],
+          "taken": [
+            0
+          ],
+          "fresh": [
+            3,
+            4
+          ],
+          "closing_candidate": false,
+          "demand": 2
+        },
+        "closing_candidates": [],
+        "case": "lone three-place knot",
+        "ration": "FLOOR1",
+        "form": "None",
+        "closing_swap": false,
+        "recorded_final_count_and_births_match": true
+      },
+      {
+        "knot_law": "nae",
+        "start_places": [
+          [
+            0,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            4
+          ],
+          [
+            1,
+            2,
+            5
+          ]
+        ],
+        "births_by_round": [
+          1,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "snapshots": [
+          {
+            "round": 0,
+            "outcome": "start",
+            "knots": 3,
+            "failed_knots": [],
+            "changed_since_birth": []
+          },
+          {
+            "round": 1,
+            "outcome": "birth",
+            "knots": 4,
+            "failed_knots": [],
+            "changed_since_birth": []
+          },
+          {
+            "round": 2,
+            "outcome": "birth",
+            "knots": 5,
+            "failed_knots": [],
+            "changed_since_birth": []
+          },
+          {
+            "round": 3,
+            "outcome": "birth",
+            "knots": 7,
+            "failed_knots": [],
+            "changed_since_birth": []
+          },
+          {
+            "round": 4,
+            "outcome": "birth",
+            "knots": 10,
+            "failed_knots": [],
+            "changed_since_birth": []
+          },
+          {
+            "round": 5,
+            "outcome": "birth",
+            "knots": 14,
+            "failed_knots": [],
+            "changed_since_birth": []
+          },
+          {
+            "round": 6,
+            "outcome": "birth",
+            "knots": 19,
+            "failed_knots": [],
+            "changed_since_birth": []
+          },
+          {
+            "round": 7,
+            "outcome": "birth",
+            "knots": 25,
+            "failed_knots": [],
+            "changed_since_birth": []
+          },
+          {
+            "round": 8,
+            "outcome": "birth",
+            "knots": 32,
+            "failed_knots": [],
+            "changed_since_birth": []
+          }
+        ],
+        "first_birth": {
+          "round": 1,
+          "knot": 3,
+          "parents": [
+            0,
+            1,
+            2
+          ],
+          "taken": [
+            3,
+            4,
+            5
+          ],
+          "fresh": [
+            6
+          ],
+          "closing_candidate": false,
+          "demand": 0
+        },
+        "closing_candidates": [],
+        "case": "three-knot ring with one loose distinction each",
+        "ration": "ORD",
+        "form": "None",
+        "closing_swap": false,
+        "recorded_final_count_and_births_match": true
+      },
+      {
+        "knot_law": "parity",
+        "start_places": [
+          [
+            0,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            4
+          ],
+          [
+            1,
+            2,
+            5
+          ]
+        ],
+        "births_by_round": [
+          1,
+          0
+        ],
+        "snapshots": [
+          {
+            "round": 0,
+            "outcome": "start",
+            "knots": 3,
+            "failed_knots": [],
+            "changed_since_birth": []
+          },
+          {
+            "round": 1,
+            "outcome": "birth",
+            "knots": 4,
+            "failed_knots": [],
+            "changed_since_birth": []
+          },
+          {
+            "round": 2,
+            "outcome": "no change",
+            "knots": 4,
+            "failed_knots": [],
+            "changed_since_birth": []
+          }
+        ],
+        "first_birth": {
+          "round": 1,
+          "knot": 3,
+          "parents": [
+            0,
+            1,
+            2
+          ],
+          "taken": [
+            3,
+            4,
+            5
+          ],
+          "fresh": [],
+          "closing_candidate": true,
+          "demand": 0
+        },
+        "closing_candidates": [
+          {
+            "round": 1,
+            "knot": 3,
+            "parents": [
+              0,
+              1,
+              2
+            ],
+            "taken": [
+              3,
+              4,
+              5
+            ],
+            "fresh": [],
+            "closing_candidate": true,
+            "demand": 0
+          }
+        ],
+        "case": "three-knot ring with one loose distinction each, barred-count form",
+        "ration": "ORD",
+        "form": "BB",
+        "closing_swap": false,
+        "recorded_final_count_and_births_match": true
+      },
+      {
+        "knot_law": "nae",
+        "start_places": [
+          [
+            0,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            4
+          ],
+          [
+            1,
+            2,
+            5
+          ]
+        ],
+        "births_by_round": [
+          1,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "snapshots": [
+          {
+            "round": 0,
+            "outcome": "start",
+            "knots": 3,
+            "failed_knots": [],
+            "changed_since_birth": []
+          },
+          {
+            "round": 1,
+            "outcome": "birth",
+            "knots": 4,
+            "failed_knots": [],
+            "changed_since_birth": []
+          },
+          {
+            "round": 2,
+            "outcome": "birth",
+            "knots": 5,
+            "failed_knots": [],
+            "changed_since_birth": []
+          },
+          {
+            "round": 3,
+            "outcome": "birth",
+            "knots": 7,
+            "failed_knots": [],
+            "changed_since_birth": []
+          },
+          {
+            "round": 4,
+            "outcome": "birth",
+            "knots": 10,
+            "failed_knots": [],
+            "changed_since_birth": []
+          },
+          {
+            "round": 5,
+            "outcome": "birth",
+            "knots": 14,
+            "failed_knots": [],
+            "changed_since_birth": []
+          },
+          {
+            "round": 6,
+            "outcome": "birth",
+            "knots": 19,
+            "failed_knots": [],
+            "changed_since_birth": []
+          },
+          {
+            "round": 7,
+            "outcome": "birth",
+            "knots": 25,
+            "failed_knots": [],
+            "changed_since_birth": []
+          },
+          {
+            "round": 8,
+            "outcome": "birth",
+            "knots": 32,
+            "failed_knots": [],
+            "changed_since_birth": []
+          }
+        ],
+        "first_birth": {
+          "round": 1,
+          "knot": 3,
+          "parents": [
+            0,
+            1,
+            2
+          ],
+          "taken": [
+            3,
+            4,
+            5
+          ],
+          "fresh": [
+            6,
+            7
+          ],
+          "closing_candidate": false,
+          "demand": 0
+        },
+        "closing_candidates": [],
+        "case": "three-knot ring with one loose distinction each, barred-count form",
+        "ration": "ORD",
+        "form": "BB",
+        "closing_swap": false,
+        "recorded_final_count_and_births_match": true
+      },
+      {
+        "knot_law": "parity",
+        "start_places": [
+          [
+            0,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            4
+          ],
+          [
+            1,
+            2,
+            5
+          ]
+        ],
+        "births_by_round": [
+          1,
+          1
+        ],
+        "snapshots": [
+          {
+            "round": 0,
+            "outcome": "start",
+            "knots": 3,
+            "failed_knots": [],
+            "changed_since_birth": []
+          },
+          {
+            "round": 1,
+            "outcome": "birth",
+            "knots": 4,
+            "failed_knots": [
+              3
+            ],
+            "changed_since_birth": []
+          },
+          {
+            "round": 2,
+            "outcome": "birth",
+            "knots": 5,
+            "failed_knots": [
+              3,
+              4
+            ],
+            "changed_since_birth": []
+          }
+        ],
+        "first_birth": {
+          "round": 1,
+          "knot": 3,
+          "parents": [
+            0,
+            1,
+            2
+          ],
+          "taken": [
+            3,
+            4,
+            5
+          ],
+          "fresh": [
+            6
+          ],
+          "closing_candidate": true,
+          "demand": 0
+        },
+        "closing_candidates": [
+          {
+            "round": 1,
+            "knot": 3,
+            "parents": [
+              0,
+              1,
+              2
+            ],
+            "taken": [
+              3,
+              4,
+              5
+            ],
+            "fresh": [
+              6
+            ],
+            "closing_candidate": true,
+            "demand": 0
+          },
+          {
+            "round": 2,
+            "knot": 4,
+            "parents": [
+              3
+            ],
+            "taken": [
+              6
+            ],
+            "fresh": [
+              7,
+              8,
+              9,
+              10
+            ],
+            "closing_candidate": true,
+            "demand": 0
+          }
+        ],
+        "case": "three-knot ring with one loose distinction each, closing swap and places count",
+        "ration": "ORD",
+        "form": "PB",
+        "closing_swap": true
+      },
+      {
+        "knot_law": "parity",
+        "start_places": [
+          [
+            0,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            4
+          ],
+          [
+            1,
+            2,
+            5
+          ]
+        ],
+        "births_by_round": [
+          1,
+          1
+        ],
+        "snapshots": [
+          {
+            "round": 0,
+            "outcome": "start",
+            "knots": 3,
+            "failed_knots": [],
+            "changed_since_birth": []
+          },
+          {
+            "round": 1,
+            "outcome": "birth",
+            "knots": 4,
+            "failed_knots": [
+              3
+            ],
+            "changed_since_birth": []
+          },
+          {
+            "round": 2,
+            "outcome": "birth",
+            "knots": 5,
+            "failed_knots": [
+              3
+            ],
+            "changed_since_birth": []
+          }
+        ],
+        "first_birth": {
+          "round": 1,
+          "knot": 3,
+          "parents": [
+            0,
+            1,
+            2
+          ],
+          "taken": [
+            3,
+            4,
+            5
+          ],
+          "fresh": [
+            6,
+            7
+          ],
+          "closing_candidate": true,
+          "demand": 0
+        },
+        "closing_candidates": [
+          {
+            "round": 1,
+            "knot": 3,
+            "parents": [
+              0,
+              1,
+              2
+            ],
+            "taken": [
+              3,
+              4,
+              5
+            ],
+            "fresh": [
+              6,
+              7
+            ],
+            "closing_candidate": true,
+            "demand": 0
+          }
+        ],
+        "case": "three-knot ring with one loose distinction each, closing swap and barred count",
+        "ration": "ORD",
+        "form": "BB",
+        "closing_swap": true
+      },
+      {
+        "knot_law": "nae",
+        "start_places": [
+          [
+            0,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            4
+          ],
+          [
+            1,
+            2,
+            5
+          ],
+          [
+            6,
+            7,
+            8
+          ]
+        ],
+        "births_by_round": [
+          4
+        ],
+        "snapshots": [
+          {
+            "round": 0,
+            "outcome": "start",
+            "knots": 4,
+            "failed_knots": [],
+            "changed_since_birth": []
+          },
+          {
+            "round": 1,
+            "outcome": "birth",
+            "knots": 8,
+            "failed_knots": [],
+            "changed_since_birth": []
+          }
+        ],
+        "first_birth": {
+          "round": 1,
+          "knot": 4,
+          "parents": [
+            0,
+            1,
+            2
+          ],
+          "taken": [
+            3,
+            4,
+            5
+          ],
+          "fresh": [
+            9
+          ],
+          "closing_candidate": false,
+          "demand": 0
+        },
+        "closing_candidates": [],
+        "case": "three-knot ring with one loose distinction each and a separate three-place knot",
+        "ration": "ORD",
+        "form": "None",
+        "closing_swap": false
+      },
+      {
+        "knot_law": "parity",
+        "start_places": [
+          [
+            0,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            4
+          ],
+          [
+            1,
+            2,
+            5
+          ],
+          [
+            6,
+            7,
+            8
+          ]
+        ],
+        "births_by_round": [
+          4
+        ],
+        "snapshots": [
+          {
+            "round": 0,
+            "outcome": "start",
+            "knots": 4,
+            "failed_knots": [],
+            "changed_since_birth": []
+          },
+          {
+            "round": 1,
+            "outcome": "birth",
+            "knots": 8,
+            "failed_knots": [
+              4
+            ],
+            "changed_since_birth": []
+          }
+        ],
+        "first_birth": {
+          "round": 1,
+          "knot": 4,
+          "parents": [
+            0,
+            1,
+            2
+          ],
+          "taken": [
+            3,
+            4,
+            5
+          ],
+          "fresh": [
+            9,
+            10
+          ],
+          "closing_candidate": false,
+          "demand": 0
+        },
+        "closing_candidates": [],
+        "case": "three-knot ring with one loose distinction each and a separate three-place knot, barred-count form",
+        "ration": "ORD",
+        "form": "BB",
+        "closing_swap": false
+      }
+    ],
+    "explicit_projection_certificates": [
+      {
+        "case": "three-knot ring with one loose distinction each",
+        "knot_law": "parity",
+        "places_by_knot": [
+          [
+            0,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            4
+          ],
+          [
+            1,
+            2,
+            5
+          ],
+          [
+            3,
+            4,
+            5
+          ]
+        ],
+        "target_knot": 3,
+        "target_places": [
+          3,
+          4,
+          5
+        ],
+        "allowed_states": [
+          "000",
+          "011",
+          "101",
+          "110"
+        ],
+        "K1": true,
+        "K2": true,
+        "K3": true,
+        "arity_allows_two_loops_and_contact": true,
+        "forgetting_counts": [
+          4,
+          4,
+          4
+        ]
+      },
+      {
+        "case": "three-knot ring with one loose distinction each and a separate three-place knot",
+        "knot_law": "parity",
+        "places_by_knot": [
+          [
+            0,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            4
+          ],
+          [
+            1,
+            2,
+            5
+          ],
+          [
+            6,
+            7,
+            8
+          ],
+          [
+            3,
+            4,
+            5,
+            9
+          ],
+          [
+            6,
+            10,
+            11
+          ],
+          [
+            7,
+            12,
+            13
+          ],
+          [
+            8,
+            14,
+            15
+          ]
+        ],
+        "target_knot": 4,
+        "target_places": [
+          3,
+          4,
+          5,
+          9
+        ],
+        "allowed_states": [
+          "0000",
+          "0110",
+          "1010",
+          "1100"
+        ],
+        "K1": true,
+        "K2": false,
+        "K3": true,
+        "arity_allows_two_loops_and_contact": true,
+        "forgetting_counts": [
+          4,
+          4,
+          4,
+          4
+        ]
+      },
+      {
+        "case": "two live three-place knots meeting one dead four-place common knot",
+        "knot_law": "parity",
+        "places_by_knot": [
+          [
+            0,
+            1,
+            4
+          ],
+          [
+            2,
+            3,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            4,
+            5
+          ]
+        ],
+        "target_knot": 0,
+        "target_places": [
+          0,
+          1,
+          4
+        ],
+        "allowed_states": [
+          "000",
+          "011",
+          "101",
+          "110"
+        ],
+        "K1": true,
+        "K2": true,
+        "K3": true,
+        "arity_allows_two_loops_and_contact": true,
+        "forgetting_counts": [
+          4,
+          4,
+          4
+        ]
+      },
+      {
+        "case": "two live three-place knots meeting one dead four-place common knot",
+        "knot_law": "parity",
+        "places_by_knot": [
+          [
+            0,
+            1,
+            4
+          ],
+          [
+            2,
+            3,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            4,
+            5
+          ]
+        ],
+        "target_knot": 1,
+        "target_places": [
+          2,
+          3,
+          5
+        ],
+        "allowed_states": [
+          "000",
+          "011",
+          "101",
+          "110"
+        ],
+        "K1": true,
+        "K2": true,
+        "K3": true,
+        "arity_allows_two_loops_and_contact": true,
+        "forgetting_counts": [
+          4,
+          4,
+          4
+        ]
+      },
+      {
+        "case": "two live three-place knots meeting one dead four-place common knot",
+        "knot_law": "parity",
+        "places_by_knot": [
+          [
+            0,
+            1,
+            4
+          ],
+          [
+            2,
+            3,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            4,
+            5
+          ]
+        ],
+        "target_knot": 2,
+        "target_places": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "allowed_states": [
+          "0000",
+          "0011",
+          "0101",
+          "0110",
+          "1001",
+          "1010",
+          "1100",
+          "1111"
+        ],
+        "K1": true,
+        "K2": true,
+        "K3": true,
+        "arity_allows_two_loops_and_contact": true,
+        "forgetting_counts": [
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "case": "two live three-place knots meeting one dead four-place common knot",
+        "knot_law": "parity",
+        "places_by_knot": [
+          [
+            0,
+            1,
+            4
+          ],
+          [
+            2,
+            3,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            4,
+            5
+          ]
+        ],
+        "target_knot": 3,
+        "target_places": [
+          4,
+          5
+        ],
+        "allowed_states": [
+          "00",
+          "11"
+        ],
+        "K1": true,
+        "K2": true,
+        "K3": true,
+        "arity_allows_two_loops_and_contact": false,
+        "forgetting_counts": [
+          2,
+          2
+        ]
+      },
+      {
+        "case": "three-knot ring with one loose distinction each",
+        "knot_law": "nae",
+        "places_by_knot": [
+          [
+            0,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            4
+          ],
+          [
+            1,
+            2,
+            5
+          ],
+          [
+            3,
+            4,
+            5,
+            6
+          ]
+        ],
+        "target_knot": 3,
+        "target_places": [
+          3,
+          4,
+          5,
+          6
+        ],
+        "allowed_states": [
+          "0001",
+          "0010",
+          "0011",
+          "0100",
+          "0101",
+          "0110",
+          "0111",
+          "1000",
+          "1001",
+          "1010",
+          "1011",
+          "1100",
+          "1101",
+          "1110"
+        ],
+        "K1": true,
+        "K2": true,
+        "K3": true,
+        "arity_allows_two_loops_and_contact": true,
+        "forgetting_counts": [
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "case": "three-knot ring with one loose distinction each, closing swap and places count",
+        "knot_law": "parity",
+        "places_by_knot": [
+          [
+            0,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            4
+          ],
+          [
+            1,
+            2,
+            5
+          ],
+          [
+            3,
+            4,
+            5,
+            6
+          ]
+        ],
+        "target_knot": 3,
+        "target_places": [
+          3,
+          4,
+          5,
+          6
+        ],
+        "allowed_states": [
+          "0000",
+          "0110",
+          "1010",
+          "1100"
+        ],
+        "K1": true,
+        "K2": false,
+        "K3": true,
+        "arity_allows_two_loops_and_contact": true,
+        "forgetting_counts": [
+          4,
+          4,
+          4,
+          4
+        ]
+      },
+      {
+        "case": "three-knot ring with one loose distinction each, closing swap and barred count",
+        "knot_law": "parity",
+        "places_by_knot": [
+          [
+            0,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            4
+          ],
+          [
+            1,
+            2,
+            5
+          ],
+          [
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        ],
+        "target_knot": 3,
+        "target_places": [
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "allowed_states": [
+          "00000",
+          "00011",
+          "01100",
+          "01111",
+          "10100",
+          "10111",
+          "11000",
+          "11011"
+        ],
+        "K1": true,
+        "K2": false,
+        "K3": true,
+        "arity_allows_two_loops_and_contact": true,
+        "forgetting_counts": [
+          8,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "case": "three-knot ring with one loose distinction each and a separate three-place knot, barred-count form",
+        "knot_law": "parity",
+        "places_by_knot": [
+          [
+            0,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            4
+          ],
+          [
+            1,
+            2,
+            5
+          ],
+          [
+            6,
+            7,
+            8
+          ],
+          [
+            3,
+            4,
+            5,
+            9,
+            10
+          ],
+          [
+            6,
+            11,
+            12,
+            13
+          ],
+          [
+            7,
+            14,
+            15,
+            16
+          ],
+          [
+            8,
+            17,
+            18,
+            19
+          ]
+        ],
+        "target_knot": 4,
+        "target_places": [
+          3,
+          4,
+          5,
+          9,
+          10
+        ],
+        "allowed_states": [
+          "00000",
+          "00011",
+          "01100",
+          "01111",
+          "10100",
+          "10111",
+          "11000",
+          "11011"
+        ],
+        "K1": true,
+        "K2": false,
+        "K3": true,
+        "arity_allows_two_loops_and_contact": true,
+        "forgetting_counts": [
+          8,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "case": "connected allowed start sharing all three places of one knot with a four-place knot",
+        "knot_law": "parity",
+        "places_by_knot": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "target_knot": 1,
+        "target_places": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "allowed_states": [
+          "0000",
+          "0110",
+          "1010",
+          "1100"
+        ],
+        "K1": true,
+        "K2": false,
+        "K3": true,
+        "arity_allows_two_loops_and_contact": true,
+        "forgetting_counts": [
+          4,
+          4,
+          4,
+          4
+        ]
+      },
+      {
+        "case": "connected allowed start sharing all three places of one knot with a four-place knot",
+        "knot_law": "nae",
+        "places_by_knot": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "target_knot": 1,
+        "target_places": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "allowed_states": [
+          "0010",
+          "0011",
+          "0100",
+          "0101",
+          "0110",
+          "0111",
+          "1000",
+          "1001",
+          "1010",
+          "1011",
+          "1100",
+          "1101"
+        ],
+        "K1": true,
+        "K2": false,
+        "K3": true,
+        "arity_allows_two_loops_and_contact": true,
+        "forgetting_counts": [
+          8,
+          8,
+          8,
+          6
+        ]
+      }
+    ],
+    "named_start_knots": {
+      "parity": {
+        "LONE-THREE": {
+          "knots": 1,
+          "failed_knots": [],
+          "changed_since_birth": []
+        },
+        "LONE-FOUR": {
+          "knots": 1,
+          "failed_knots": [],
+          "changed_since_birth": []
+        },
+        "TWO-KNOT": {
+          "knots": 2,
+          "failed_knots": [],
+          "changed_since_birth": []
+        },
+        "TRIANGLE": {
+          "knots": 3,
+          "failed_knots": [],
+          "changed_since_birth": []
+        },
+        "THREE-KNOT": {
+          "knots": 3,
+          "failed_knots": [],
+          "changed_since_birth": []
+        },
+        "Ring(5,3)": {
+          "knots": 5,
+          "failed_knots": [],
+          "changed_since_birth": []
+        },
+        "Ring(6,3)": {
+          "knots": 6,
+          "failed_knots": [],
+          "changed_since_birth": []
+        },
+        "Ring(7,3)": {
+          "knots": 7,
+          "failed_knots": [],
+          "changed_since_birth": []
+        },
+        "Ring(5,2)": {
+          "knots": 5,
+          "failed_knots": [],
+          "changed_since_birth": []
+        },
+        "D2(4,3)": {
+          "knots": 8,
+          "failed_knots": [],
+          "changed_since_birth": []
+        },
+        "D2(6,3)": {
+          "knots": 12,
+          "failed_knots": [],
+          "changed_since_birth": []
+        },
+        "GEN7": {
+          "knots": 7,
+          "failed_knots": [],
+          "changed_since_birth": []
+        },
+        "SCC": {
+          "knots": 7,
+          "failed_knots": [],
+          "changed_since_birth": []
+        },
+        "C8X3": {
+          "knots": 19,
+          "failed_knots": [],
+          "changed_since_birth": []
+        }
+      },
+      "nae": {
+        "LONE-THREE": {
+          "knots": 1,
+          "failed_knots": [],
+          "changed_since_birth": []
+        },
+        "LONE-FOUR": {
+          "knots": 1,
+          "failed_knots": [],
+          "changed_since_birth": []
+        },
+        "TWO-KNOT": {
+          "knots": 2,
+          "failed_knots": [],
+          "changed_since_birth": []
+        },
+        "TRIANGLE": {
+          "knots": 3,
+          "failed_knots": [],
+          "changed_since_birth": []
+        },
+        "THREE-KNOT": {
+          "knots": 3,
+          "failed_knots": [],
+          "changed_since_birth": []
+        },
+        "Ring(5,3)": {
+          "knots": 5,
+          "failed_knots": [],
+          "changed_since_birth": []
+        },
+        "Ring(6,3)": {
+          "knots": 6,
+          "failed_knots": [],
+          "changed_since_birth": []
+        },
+        "Ring(7,3)": {
+          "knots": 7,
+          "failed_knots": [],
+          "changed_since_birth": []
+        },
+        "Ring(5,2)": {
+          "knots": 5,
+          "failed_knots": [],
+          "changed_since_birth": []
+        },
+        "D2(4,3)": {
+          "knots": 8,
+          "failed_knots": [],
+          "changed_since_birth": []
+        },
+        "D2(6,3)": {
+          "knots": 12,
+          "failed_knots": [],
+          "changed_since_birth": []
+        },
+        "GEN7": {
+          "knots": 7,
+          "failed_knots": [],
+          "changed_since_birth": []
+        },
+        "SCC": {
+          "knots": 7,
+          "failed_knots": [],
+          "changed_since_birth": []
+        },
+        "C8X3": {
+          "knots": 19,
+          "failed_knots": [],
+          "changed_since_birth": []
+        }
+      }
+    }
+  }
+}

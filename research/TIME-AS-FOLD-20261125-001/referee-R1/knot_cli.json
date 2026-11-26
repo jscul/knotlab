@@ -1,0 +1,164 @@
+[
+  {
+    "case": "the five-place join in its grown pattern",
+    "cnf": "d100 d106 d114 d115 ~d116; d100 d106 d114 ~d115 d116; d100 d106 ~d114 d115 d116; d100 d106 ~d114 ~d115 ~d116; d100 ~d106 d114 d115 d116; d100 ~d106 d114 d115 ~d116; d100 ~d106 d114 ~d115 d116; d100 ~d106 d114 ~d115 ~d116; d100 ~d106 ~d114 d115 d116; d100 ~d106 ~d114 d115 ~d116; d100 ~d106 ~d114 ~d115 d116; d100 ~d106 ~d114 ~d115 ~d116; ~d100 d106 d114 d115 d116; ~d100 d106 d114 d115 ~d116; ~d100 d106 d114 ~d115 d116; ~d100 d106 d114 ~d115 ~d116; ~d100 d106 ~d114 d115 d116; ~d100 d106 ~d114 d115 ~d116; ~d100 d106 ~d114 ~d115 d116; ~d100 d106 ~d114 ~d115 ~d116; ~d100 ~d106 d114 d115 ~d116; ~d100 ~d106 d114 ~d115 d116; ~d100 ~d106 ~d114 d115 d116; ~d100 ~d106 ~d114 ~d115 ~d116",
+    "allowed": [
+      "00000",
+      "00011",
+      "00101",
+      "00110",
+      "11000",
+      "11011",
+      "11101",
+      "11110"
+    ],
+    "binding": true,
+    "coexistence": true,
+    "contact": "d116",
+    "erasure": "forgetting",
+    "invisible_in_parts": false,
+    "is_knot": false,
+    "loops": [
+      "d100",
+      "d106",
+      "d114",
+      "d115"
+    ],
+    "loss_on_erasure": false,
+    "minimum_width": 3,
+    "notes": [
+      "with d100 forgotten, d106=0, d114=0, d115=0, d116=1 is still excluded, so a binding survives without that loop",
+      "with d106 forgotten, d100=0, d114=0, d115=0, d116=1 is still excluded, so a binding survives without that loop",
+      "with d114 forgotten, d100=0, d106=1, d115=0, d116=0 is still excluded, so a binding survives without that loop",
+      "with d115 forgotten, d100=0, d106=1, d114=0, d116=0 is still excluded, so a binding survives without that loop",
+      "with the contact d116 forgotten, d100=0, d106=1, d114=0, d115=0 is still excluded, so the loops are tied without it"
+    ],
+    "pairwise_definable": false,
+    "variables": [
+      "d100",
+      "d106",
+      "d114",
+      "d115",
+      "d116"
+    ]
+  },
+  {
+    "case": "the same join read with only its own parity rule",
+    "cnf": "d100 d106 d114 d115 ~d116; d100 d106 d114 ~d115 d116; d100 d106 ~d114 d115 d116; d100 d106 ~d114 ~d115 ~d116; d100 ~d106 d114 d115 d116; d100 ~d106 d114 ~d115 ~d116; d100 ~d106 ~d114 d115 ~d116; d100 ~d106 ~d114 ~d115 d116; ~d100 d106 d114 d115 d116; ~d100 d106 d114 ~d115 ~d116; ~d100 d106 ~d114 d115 ~d116; ~d100 d106 ~d114 ~d115 d116; ~d100 ~d106 d114 d115 ~d116; ~d100 ~d106 d114 ~d115 d116; ~d100 ~d106 ~d114 d115 d116; ~d100 ~d106 ~d114 ~d115 ~d116",
+    "allowed": [
+      "00000",
+      "00011",
+      "00101",
+      "00110",
+      "01001",
+      "01010",
+      "01100",
+      "01111",
+      "10001",
+      "10010",
+      "10100",
+      "10111",
+      "11000",
+      "11011",
+      "11101",
+      "11110"
+    ],
+    "binding": true,
+    "coexistence": true,
+    "contact": "d116",
+    "erasure": "forgetting",
+    "invisible_in_parts": true,
+    "is_knot": true,
+    "loops": [
+      "d100",
+      "d106",
+      "d114",
+      "d115"
+    ],
+    "loss_on_erasure": true,
+    "minimum_width": 5,
+    "notes": [],
+    "pairwise_definable": false,
+    "variables": [
+      "d100",
+      "d106",
+      "d114",
+      "d115",
+      "d116"
+    ]
+  },
+  {
+    "case": "one parent in the same grown pattern",
+    "cnf": "d80 d96 d97 ~d100; d80 d96 ~d97 d100; d80 ~d96 d97 d100; d80 ~d96 ~d97 ~d100; ~d80 d96 d97 d100; ~d80 d96 ~d97 ~d100; ~d80 ~d96 d97 ~d100; ~d80 ~d96 ~d97 d100",
+    "allowed": [
+      "0000",
+      "0011",
+      "0101",
+      "0110",
+      "1001",
+      "1010",
+      "1100",
+      "1111"
+    ],
+    "binding": true,
+    "coexistence": true,
+    "contact": "d100",
+    "erasure": "forgetting",
+    "invisible_in_parts": true,
+    "is_knot": true,
+    "loops": [
+      "d80",
+      "d96",
+      "d97"
+    ],
+    "loss_on_erasure": true,
+    "minimum_width": 4,
+    "notes": [],
+    "pairwise_definable": false,
+    "variables": [
+      "d80",
+      "d96",
+      "d97",
+      "d100"
+    ]
+  },
+  {
+    "case": "four-place not-all-equal with two additional words forbidden",
+    "cnf": "a b c d; a b ~c ~d; ~a ~b c d; ~a ~b ~c ~d",
+    "allowed": [
+      "0001",
+      "0010",
+      "0100",
+      "0101",
+      "0110",
+      "0111",
+      "1000",
+      "1001",
+      "1010",
+      "1011",
+      "1101",
+      "1110"
+    ],
+    "binding": true,
+    "coexistence": true,
+    "contact": "d",
+    "erasure": "forgetting",
+    "invisible_in_parts": true,
+    "is_knot": true,
+    "loops": [
+      "a",
+      "b",
+      "c"
+    ],
+    "loss_on_erasure": true,
+    "minimum_width": 4,
+    "notes": [],
+    "pairwise_definable": false,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  }
+]

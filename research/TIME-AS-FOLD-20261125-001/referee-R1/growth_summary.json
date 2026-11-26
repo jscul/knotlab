@@ -1,0 +1,1218 @@
+{
+  "phase": "summary",
+  "pilot": false,
+  "wall_s": 7.8074017689796165,
+  "process_s": 7.805543266000001,
+  "peak_rss_kib": 42624,
+  "address_space_limit_bytes": 3221225472,
+  "rows": [
+    {
+      "item": {
+        "group": "dbt",
+        "start": "generator7",
+        "base": "CAP-3(RETIRE)",
+        "rule": "MET",
+        "choice": "NEWEST",
+        "knot_law": "nae"
+      },
+      "source": "run1_part8.jsonl.gz",
+      "rounds": 18,
+      "knots": 27,
+      "stop": null,
+      "round_differences": {},
+      "series_counts": {
+        "past": {
+          "eligible_series_before_export_cap": 0,
+          "one_member_series_before_export_cap": 0,
+          "recorded_series_checked": 0,
+          "recorded_ticks_checked": 0,
+          "recorded_endless_series_checked": 0,
+          "endless_series_before_export_cap": 0
+        },
+        "nopast": {
+          "eligible_series_before_export_cap": 0,
+          "one_member_series_before_export_cap": 0,
+          "recorded_series_checked": 0,
+          "recorded_ticks_checked": 0,
+          "recorded_endless_series_checked": 0,
+          "endless_series_before_export_cap": 0
+        }
+      },
+      "series_differences": {},
+      "within_part_filter_differences": {},
+      "wall_s": 0.0013002419145777822
+    },
+    {
+      "item": {
+        "group": "fbp",
+        "start": "DW(5,3)",
+        "base": "COPY-LAW(WAIT)",
+        "rule": "STEPS-3:join",
+        "choice": "BY-COUNT",
+        "knot_law": "parity"
+      },
+      "source": "run1_part6.jsonl.gz",
+      "rounds": 14,
+      "knots": 4460,
+      "stop": "knots",
+      "round_differences": {},
+      "series_counts": {
+        "past": {
+          "eligible_series_before_export_cap": 526,
+          "one_member_series_before_export_cap": 90,
+          "recorded_series_checked": 200,
+          "recorded_ticks_checked": 495,
+          "recorded_endless_series_checked": 50,
+          "endless_series_before_export_cap": 90
+        },
+        "nopast": {
+          "eligible_series_before_export_cap": 526,
+          "one_member_series_before_export_cap": 90,
+          "recorded_series_checked": 200,
+          "recorded_ticks_checked": 495,
+          "recorded_endless_series_checked": 50,
+          "endless_series_before_export_cap": 90
+        }
+      },
+      "series_differences": {},
+      "within_part_filter_differences": {},
+      "wall_s": 0.8288435330614448
+    },
+    {
+      "item": {
+        "group": "fbp",
+        "start": "three-knot-larger",
+        "base": "COPY-LAW(WAIT)",
+        "rule": "STEPS-2:offshoot",
+        "choice": "NEWEST",
+        "knot_law": "parity"
+      },
+      "source": "run1_part6.jsonl.gz",
+      "rounds": 18,
+      "knots": 119,
+      "stop": null,
+      "round_differences": {},
+      "series_counts": {
+        "past": {
+          "eligible_series_before_export_cap": 1,
+          "one_member_series_before_export_cap": 0,
+          "recorded_series_checked": 1,
+          "recorded_ticks_checked": 3,
+          "recorded_endless_series_checked": 0,
+          "endless_series_before_export_cap": 0
+        },
+        "nopast": {
+          "eligible_series_before_export_cap": 4,
+          "one_member_series_before_export_cap": 0,
+          "recorded_series_checked": 4,
+          "recorded_ticks_checked": 12,
+          "recorded_endless_series_checked": 0,
+          "endless_series_before_export_cap": 0
+        }
+      },
+      "series_differences": {},
+      "within_part_filter_differences": {},
+      "wall_s": 0.008725186926312745
+    },
+    {
+      "item": {
+        "group": "ladder",
+        "start": "D2(5,3)",
+        "base": "RING-LAW",
+        "rule": "STEPS-2",
+        "choice": "NEWEST",
+        "knot_law": "parity"
+      },
+      "source": "run3.jsonl.gz",
+      "rounds": 8,
+      "knots": 174,
+      "stop": null,
+      "round_differences": {},
+      "series_counts": {
+        "past": {
+          "eligible_series_before_export_cap": 2,
+          "one_member_series_before_export_cap": 0,
+          "recorded_series_checked": 2,
+          "recorded_ticks_checked": 3,
+          "recorded_endless_series_checked": 2,
+          "endless_series_before_export_cap": 2
+        },
+        "nopast": {
+          "eligible_series_before_export_cap": 2,
+          "one_member_series_before_export_cap": 0,
+          "recorded_series_checked": 2,
+          "recorded_ticks_checked": 3,
+          "recorded_endless_series_checked": 2,
+          "endless_series_before_export_cap": 2
+        }
+      },
+      "series_differences": {},
+      "within_part_filter_differences": {},
+      "wall_s": 0.006343431072309613
+    },
+    {
+      "item": {
+        "group": "ladder",
+        "start": "Ring(5,3)",
+        "base": "RING-LAW",
+        "rule": "STEPS-1",
+        "choice": "IN-TURN",
+        "knot_law": "nae"
+      },
+      "source": "run3.jsonl.gz",
+      "rounds": 6,
+      "knots": 42,
+      "stop": null,
+      "round_differences": {},
+      "series_counts": {
+        "past": {
+          "eligible_series_before_export_cap": 0,
+          "one_member_series_before_export_cap": 0,
+          "recorded_series_checked": 0,
+          "recorded_ticks_checked": 0,
+          "recorded_endless_series_checked": 1,
+          "endless_series_before_export_cap": 1
+        },
+        "nopast": {
+          "eligible_series_before_export_cap": 0,
+          "one_member_series_before_export_cap": 0,
+          "recorded_series_checked": 0,
+          "recorded_ticks_checked": 0,
+          "recorded_endless_series_checked": 1,
+          "endless_series_before_export_cap": 1
+        }
+      },
+      "series_differences": {},
+      "within_part_filter_differences": {},
+      "wall_s": 0.001524177030660212
+    },
+    {
+      "item": {
+        "group": "ladder",
+        "start": "Ring(7,3)",
+        "base": "RING-LAW",
+        "rule": "STEPS-4",
+        "choice": "BY-COUNT",
+        "knot_law": "nae"
+      },
+      "source": "run3.jsonl.gz",
+      "rounds": 12,
+      "knots": 593,
+      "stop": null,
+      "round_differences": {},
+      "series_counts": {
+        "past": {
+          "eligible_series_before_export_cap": 9,
+          "one_member_series_before_export_cap": 0,
+          "recorded_series_checked": 9,
+          "recorded_ticks_checked": 44,
+          "recorded_endless_series_checked": 5,
+          "endless_series_before_export_cap": 5
+        },
+        "nopast": {
+          "eligible_series_before_export_cap": 9,
+          "one_member_series_before_export_cap": 0,
+          "recorded_series_checked": 9,
+          "recorded_ticks_checked": 52,
+          "recorded_endless_series_checked": 5,
+          "endless_series_before_export_cap": 5
+        }
+      },
+      "series_differences": {},
+      "within_part_filter_differences": {},
+      "wall_s": 0.036132794921286404
+    },
+    {
+      "item": {
+        "group": "ladder",
+        "start": "Ring(9,3)",
+        "base": "RING-LAW",
+        "rule": "STEPS-8",
+        "choice": "OLDEST",
+        "knot_law": "parity"
+      },
+      "source": "run3.jsonl.gz",
+      "rounds": 15,
+      "knots": 2421,
+      "stop": "guard",
+      "round_differences": {},
+      "series_counts": {
+        "past": {
+          "eligible_series_before_export_cap": 2,
+          "one_member_series_before_export_cap": 0,
+          "recorded_series_checked": 2,
+          "recorded_ticks_checked": 13,
+          "recorded_endless_series_checked": 0,
+          "endless_series_before_export_cap": 0
+        },
+        "nopast": {
+          "eligible_series_before_export_cap": 2,
+          "one_member_series_before_export_cap": 0,
+          "recorded_series_checked": 2,
+          "recorded_ticks_checked": 14,
+          "recorded_endless_series_checked": 0,
+          "endless_series_before_export_cap": 0
+        }
+      },
+      "series_differences": {},
+      "within_part_filter_differences": {},
+      "wall_s": 0.20147269207518548
+    },
+    {
+      "item": {
+        "group": "main",
+        "start": "D2(4,3)",
+        "base": "CAP-3(RETIRE)",
+        "rule": "MET",
+        "choice": "NEWEST",
+        "knot_law": "nae"
+      },
+      "source": "run1_part2.jsonl.gz",
+      "rounds": 18,
+      "knots": 16,
+      "stop": null,
+      "round_differences": {},
+      "series_counts": {
+        "past": {
+          "eligible_series_before_export_cap": 0,
+          "one_member_series_before_export_cap": 0,
+          "recorded_series_checked": 0,
+          "recorded_ticks_checked": 0,
+          "recorded_endless_series_checked": 0,
+          "endless_series_before_export_cap": 0
+        },
+        "nopast": {
+          "eligible_series_before_export_cap": 0,
+          "one_member_series_before_export_cap": 0,
+          "recorded_series_checked": 0,
+          "recorded_ticks_checked": 0,
+          "recorded_endless_series_checked": 0,
+          "endless_series_before_export_cap": 0
+        },
+        "past_greatest": {
+          "eligible_series_before_export_cap": 0,
+          "one_member_series_before_export_cap": 0,
+          "recorded_series_checked": 0,
+          "recorded_ticks_checked": 0
+        },
+        "nopast_greatest": {
+          "eligible_series_before_export_cap": 0,
+          "one_member_series_before_export_cap": 0,
+          "recorded_series_checked": 0,
+          "recorded_ticks_checked": 0
+        }
+      },
+      "series_differences": {},
+      "within_part_filter_differences": {},
+      "wall_s": 0.0016644870629534125
+    },
+    {
+      "item": {
+        "group": "main",
+        "start": "D2(5,3)",
+        "base": "CAP-3(OFFSHOOT)",
+        "rule": "MET:offshoot",
+        "choice": "BY-COUNT",
+        "knot_law": "nae"
+      },
+      "source": "run1_part2.jsonl.gz",
+      "rounds": 4,
+      "knots": 410,
+      "stop": "guard",
+      "round_differences": {},
+      "series_counts": {
+        "past": {
+          "eligible_series_before_export_cap": 0,
+          "one_member_series_before_export_cap": 0,
+          "recorded_series_checked": 0,
+          "recorded_ticks_checked": 0,
+          "recorded_endless_series_checked": 0,
+          "endless_series_before_export_cap": 0
+        },
+        "nopast": {
+          "eligible_series_before_export_cap": 0,
+          "one_member_series_before_export_cap": 0,
+          "recorded_series_checked": 0,
+          "recorded_ticks_checked": 0,
+          "recorded_endless_series_checked": 0,
+          "endless_series_before_export_cap": 0
+        },
+        "past_greatest": {
+          "eligible_series_before_export_cap": 0,
+          "one_member_series_before_export_cap": 0,
+          "recorded_series_checked": 0,
+          "recorded_ticks_checked": 0
+        },
+        "nopast_greatest": {
+          "eligible_series_before_export_cap": 0,
+          "one_member_series_before_export_cap": 0,
+          "recorded_series_checked": 0,
+          "recorded_ticks_checked": 0
+        }
+      },
+      "series_differences": {},
+      "within_part_filter_differences": {},
+      "wall_s": 0.0624128709314391
+    },
+    {
+      "item": {
+        "group": "main",
+        "start": "D2(6,3)",
+        "base": "COPY-LAW(RETIRE)",
+        "rule": "UP-TO-2",
+        "choice": "IN-TURN",
+        "knot_law": "parity"
+      },
+      "source": "run1_part3.jsonl.gz",
+      "rounds": 18,
+      "knots": 100,
+      "stop": null,
+      "round_differences": {},
+      "series_counts": {
+        "past": {
+          "eligible_series_before_export_cap": 0,
+          "one_member_series_before_export_cap": 0,
+          "recorded_series_checked": 0,
+          "recorded_ticks_checked": 0,
+          "recorded_endless_series_checked": 4,
+          "endless_series_before_export_cap": 4
+        },
+        "nopast": {
+          "eligible_series_before_export_cap": 0,
+          "one_member_series_before_export_cap": 0,
+          "recorded_series_checked": 0,
+          "recorded_ticks_checked": 0,
+          "recorded_endless_series_checked": 4,
+          "endless_series_before_export_cap": 4
+        },
+        "past_greatest": {
+          "eligible_series_before_export_cap": 0,
+          "one_member_series_before_export_cap": 0,
+          "recorded_series_checked": 0,
+          "recorded_ticks_checked": 0
+        },
+        "nopast_greatest": {
+          "eligible_series_before_export_cap": 0,
+          "one_member_series_before_export_cap": 0,
+          "recorded_series_checked": 0,
+          "recorded_ticks_checked": 0
+        }
+      },
+      "series_differences": {},
+      "within_part_filter_differences": {},
+      "wall_s": 0.004396951990202069
+    },
+    {
+      "item": {
+        "group": "main",
+        "start": "DW(5,3)",
+        "base": "RING-LAW",
+        "rule": "MET:join",
+        "choice": "BY-COUNT",
+        "knot_law": "nae"
+      },
+      "source": "run1_part3.jsonl.gz",
+      "rounds": 15,
+      "knots": 4424,
+      "stop": "knots",
+      "round_differences": {},
+      "series_counts": {
+        "past": {
+          "eligible_series_before_export_cap": 115,
+          "one_member_series_before_export_cap": 0,
+          "recorded_series_checked": 115,
+          "recorded_ticks_checked": 222,
+          "recorded_endless_series_checked": 0,
+          "endless_series_before_export_cap": 0
+        },
+        "nopast": {
+          "eligible_series_before_export_cap": 121,
+          "one_member_series_before_export_cap": 0,
+          "recorded_series_checked": 121,
+          "recorded_ticks_checked": 255,
+          "recorded_endless_series_checked": 0,
+          "endless_series_before_export_cap": 0
+        },
+        "past_greatest": {
+          "eligible_series_before_export_cap": 115,
+          "one_member_series_before_export_cap": 0,
+          "recorded_series_checked": 115,
+          "recorded_ticks_checked": 222
+        },
+        "nopast_greatest": {
+          "eligible_series_before_export_cap": 121,
+          "one_member_series_before_export_cap": 0,
+          "recorded_series_checked": 121,
+          "recorded_ticks_checked": 255
+        }
+      },
+      "series_differences": {},
+      "within_part_filter_differences": {},
+      "wall_s": 0.3381556799868122
+    },
+    {
+      "item": {
+        "group": "main",
+        "start": "Ring(5,3)",
+        "base": "RING-LAW",
+        "rule": null,
+        "choice": "OLDEST",
+        "knot_law": "nae"
+      },
+      "source": "run1_part1.jsonl.gz",
+      "rounds": 18,
+      "knots": 3125,
+      "stop": null,
+      "round_differences": {},
+      "series_counts": {
+        "past": {
+          "eligible_series_before_export_cap": 2,
+          "one_member_series_before_export_cap": 0,
+          "recorded_series_checked": 2,
+          "recorded_ticks_checked": 16,
+          "recorded_endless_series_checked": 0,
+          "endless_series_before_export_cap": 0
+        },
+        "nopast": {
+          "eligible_series_before_export_cap": 2,
+          "one_member_series_before_export_cap": 0,
+          "recorded_series_checked": 2,
+          "recorded_ticks_checked": 17,
+          "recorded_endless_series_checked": 0,
+          "endless_series_before_export_cap": 0
+        }
+      },
+      "series_differences": {},
+      "within_part_filter_differences": {},
+      "wall_s": 0.07637878297828138
+    },
+    {
+      "item": {
+        "group": "main",
+        "start": "Ring(5,4)",
+        "base": "COPY-LAW(OFFSHOOT)",
+        "rule": "STEPS-2",
+        "choice": "BY-COUNT",
+        "knot_law": "parity"
+      },
+      "source": "run1_part2.jsonl.gz",
+      "rounds": 18,
+      "knots": 575,
+      "stop": null,
+      "round_differences": {},
+      "series_counts": {
+        "past": {
+          "eligible_series_before_export_cap": 10,
+          "one_member_series_before_export_cap": 0,
+          "recorded_series_checked": 10,
+          "recorded_ticks_checked": 40,
+          "recorded_endless_series_checked": 15,
+          "endless_series_before_export_cap": 15
+        },
+        "nopast": {
+          "eligible_series_before_export_cap": 19,
+          "one_member_series_before_export_cap": 0,
+          "recorded_series_checked": 19,
+          "recorded_ticks_checked": 73,
+          "recorded_endless_series_checked": 15,
+          "endless_series_before_export_cap": 15
+        },
+        "past_greatest": {
+          "eligible_series_before_export_cap": 10,
+          "one_member_series_before_export_cap": 0,
+          "recorded_series_checked": 10,
+          "recorded_ticks_checked": 40
+        },
+        "nopast_greatest": {
+          "eligible_series_before_export_cap": 19,
+          "one_member_series_before_export_cap": 0,
+          "recorded_series_checked": 19,
+          "recorded_ticks_checked": 73
+        }
+      },
+      "series_differences": {},
+      "within_part_filter_differences": {},
+      "wall_s": 0.023035148973576725
+    },
+    {
+      "item": {
+        "group": "main",
+        "start": "Ring(7,3)",
+        "base": "RING-LAW+FILLERS",
+        "rule": "STEPS-1:join",
+        "choice": "NEWEST",
+        "knot_law": "nae"
+      },
+      "source": "run1_part1.jsonl.gz",
+      "rounds": 18,
+      "knots": 273,
+      "stop": null,
+      "round_differences": {},
+      "series_counts": {
+        "past": {
+          "eligible_series_before_export_cap": 0,
+          "one_member_series_before_export_cap": 0,
+          "recorded_series_checked": 0,
+          "recorded_ticks_checked": 0,
+          "recorded_endless_series_checked": 0,
+          "endless_series_before_export_cap": 0
+        },
+        "nopast": {
+          "eligible_series_before_export_cap": 1,
+          "one_member_series_before_export_cap": 0,
+          "recorded_series_checked": 1,
+          "recorded_ticks_checked": 1,
+          "recorded_endless_series_checked": 0,
+          "endless_series_before_export_cap": 0
+        },
+        "past_greatest": {
+          "eligible_series_before_export_cap": 0,
+          "one_member_series_before_export_cap": 0,
+          "recorded_series_checked": 0,
+          "recorded_ticks_checked": 0
+        },
+        "nopast_greatest": {
+          "eligible_series_before_export_cap": 1,
+          "one_member_series_before_export_cap": 0,
+          "recorded_series_checked": 1,
+          "recorded_ticks_checked": 1
+        }
+      },
+      "series_differences": {},
+      "within_part_filter_differences": {},
+      "wall_s": 0.009431039914488792
+    },
+    {
+      "item": {
+        "group": "main",
+        "start": "Ring(9,3)",
+        "base": "RING-LAW",
+        "rule": "MET",
+        "choice": "IN-TURN",
+        "knot_law": "parity"
+      },
+      "source": "run1_part1.jsonl.gz",
+      "rounds": 18,
+      "knots": 27,
+      "stop": null,
+      "round_differences": {},
+      "series_counts": {
+        "past": {
+          "eligible_series_before_export_cap": 0,
+          "one_member_series_before_export_cap": 0,
+          "recorded_series_checked": 0,
+          "recorded_ticks_checked": 0,
+          "recorded_endless_series_checked": 0,
+          "endless_series_before_export_cap": 0
+        },
+        "nopast": {
+          "eligible_series_before_export_cap": 0,
+          "one_member_series_before_export_cap": 0,
+          "recorded_series_checked": 0,
+          "recorded_ticks_checked": 0,
+          "recorded_endless_series_checked": 0,
+          "endless_series_before_export_cap": 0
+        },
+        "past_greatest": {
+          "eligible_series_before_export_cap": 0,
+          "one_member_series_before_export_cap": 0,
+          "recorded_series_checked": 0,
+          "recorded_ticks_checked": 0
+        },
+        "nopast_greatest": {
+          "eligible_series_before_export_cap": 0,
+          "one_member_series_before_export_cap": 0,
+          "recorded_series_checked": 0,
+          "recorded_ticks_checked": 0
+        }
+      },
+      "series_differences": {},
+      "within_part_filter_differences": {},
+      "wall_s": 0.00605223688762635
+    },
+    {
+      "item": {
+        "group": "main",
+        "start": "three-knot",
+        "base": "RING-LAW+FILLERS",
+        "rule": "Q",
+        "choice": "OLDEST",
+        "knot_law": "nae"
+      },
+      "source": "run1_part4.jsonl.gz",
+      "rounds": 18,
+      "knots": 7,
+      "stop": null,
+      "round_differences": {},
+      "series_counts": {
+        "past": {
+          "eligible_series_before_export_cap": 0,
+          "one_member_series_before_export_cap": 0,
+          "recorded_series_checked": 0,
+          "recorded_ticks_checked": 0,
+          "recorded_endless_series_checked": 0,
+          "endless_series_before_export_cap": 0
+        },
+        "nopast": {
+          "eligible_series_before_export_cap": 0,
+          "one_member_series_before_export_cap": 0,
+          "recorded_series_checked": 0,
+          "recorded_ticks_checked": 0,
+          "recorded_endless_series_checked": 0,
+          "endless_series_before_export_cap": 0
+        },
+        "past_greatest": {
+          "eligible_series_before_export_cap": 0,
+          "one_member_series_before_export_cap": 0,
+          "recorded_series_checked": 0,
+          "recorded_ticks_checked": 0
+        },
+        "nopast_greatest": {
+          "eligible_series_before_export_cap": 0,
+          "one_member_series_before_export_cap": 0,
+          "recorded_series_checked": 0,
+          "recorded_ticks_checked": 0
+        }
+      },
+      "series_differences": {},
+      "within_part_filter_differences": {},
+      "wall_s": 0.0005623690085485578
+    },
+    {
+      "item": {
+        "group": "main",
+        "start": "two-knot",
+        "base": "COPY-LAW(OFFSHOOT)",
+        "rule": "STEPS-1",
+        "choice": "OLDEST",
+        "knot_law": "nae"
+      },
+      "source": "run1_part3.jsonl.gz",
+      "rounds": 18,
+      "knots": 108,
+      "stop": null,
+      "round_differences": {},
+      "series_counts": {
+        "past": {
+          "eligible_series_before_export_cap": 0,
+          "one_member_series_before_export_cap": 0,
+          "recorded_series_checked": 0,
+          "recorded_ticks_checked": 0,
+          "recorded_endless_series_checked": 2,
+          "endless_series_before_export_cap": 2
+        },
+        "nopast": {
+          "eligible_series_before_export_cap": 3,
+          "one_member_series_before_export_cap": 0,
+          "recorded_series_checked": 3,
+          "recorded_ticks_checked": 21,
+          "recorded_endless_series_checked": 2,
+          "endless_series_before_export_cap": 2
+        },
+        "past_greatest": {
+          "eligible_series_before_export_cap": 0,
+          "one_member_series_before_export_cap": 0,
+          "recorded_series_checked": 0,
+          "recorded_ticks_checked": 0
+        },
+        "nopast_greatest": {
+          "eligible_series_before_export_cap": 3,
+          "one_member_series_before_export_cap": 0,
+          "recorded_series_checked": 3,
+          "recorded_ticks_checked": 21
+        }
+      },
+      "series_differences": {},
+      "within_part_filter_differences": {
+        "past": {
+          "n_series": {
+            "recorded": 4,
+            "replayed": 6
+          }
+        },
+        "past_greatest": {
+          "n_series": {
+            "recorded": 4,
+            "replayed": 6
+          }
+        }
+      },
+      "wall_s": 0.0036880510160699487
+    },
+    {
+      "item": {
+        "group": "main",
+        "start": "two-knot",
+        "base": "COPY-LAW(WAIT)",
+        "rule": "STEPS-2:join",
+        "choice": "OLDEST",
+        "knot_law": "parity"
+      },
+      "source": "run1_part3.jsonl.gz",
+      "rounds": 16,
+      "knots": 4592,
+      "stop": "knots",
+      "round_differences": {},
+      "series_counts": {
+        "past": {
+          "eligible_series_before_export_cap": 497,
+          "one_member_series_before_export_cap": 81,
+          "recorded_series_checked": 200,
+          "recorded_ticks_checked": 549,
+          "recorded_endless_series_checked": 50,
+          "endless_series_before_export_cap": 310
+        },
+        "nopast": {
+          "eligible_series_before_export_cap": 497,
+          "one_member_series_before_export_cap": 81,
+          "recorded_series_checked": 200,
+          "recorded_ticks_checked": 551,
+          "recorded_endless_series_checked": 50,
+          "endless_series_before_export_cap": 310
+        },
+        "past_greatest": {
+          "eligible_series_before_export_cap": 416,
+          "one_member_series_before_export_cap": 0,
+          "recorded_series_checked": 200,
+          "recorded_ticks_checked": 525
+        },
+        "nopast_greatest": {
+          "eligible_series_before_export_cap": 416,
+          "one_member_series_before_export_cap": 0,
+          "recorded_series_checked": 200,
+          "recorded_ticks_checked": 525
+        }
+      },
+      "series_differences": {},
+      "within_part_filter_differences": {
+        "past": {
+          "listed_series": {
+            "differing_rows": 4,
+            "first_three": [
+              {
+                "P0": [
+                  0
+                ],
+                "clock": false,
+                "clock_off4": false,
+                "periods": [
+                  7,
+                  5
+                ],
+                "size": 1,
+                "t0": 0,
+                "ticks": [
+                  [
+                    7,
+                    [
+                      81
+                    ],
+                    13,
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  [
+                    12,
+                    [
+                      682
+                    ],
+                    6,
+                    0,
+                    0,
+                    0,
+                    0
+                  ]
+                ],
+                "ticks_off": 2
+              },
+              {
+                "P0": [
+                  1
+                ],
+                "clock": false,
+                "clock_off4": false,
+                "periods": [
+                  7,
+                  5
+                ],
+                "size": 1,
+                "t0": 0,
+                "ticks": [
+                  [
+                    7,
+                    [
+                      82
+                    ],
+                    13,
+                    0,
+                    1,
+                    0,
+                    0
+                  ],
+                  [
+                    12,
+                    [
+                      683
+                    ],
+                    6,
+                    0,
+                    0,
+                    0,
+                    0
+                  ]
+                ],
+                "ticks_off": 2
+              },
+              {
+                "P0": [
+                  81
+                ],
+                "clock": false,
+                "clock_off4": false,
+                "periods": [
+                  5
+                ],
+                "size": 1,
+                "t0": 7,
+                "ticks": [
+                  [
+                    12,
+                    [
+                      682
+                    ],
+                    6,
+                    0,
+                    0,
+                    0,
+                    0
+                  ]
+                ],
+                "ticks_off": 1
+              }
+            ],
+            "recorded_count": 200,
+            "replayed_count": 200
+          },
+          "endless": {
+            "recorded_count": 50,
+            "replayed_count": 50
+          },
+          "copies": {
+            "recorded": 741,
+            "replayed": 742
+          }
+        },
+        "past_greatest": {
+          "copies": {
+            "recorded": 741,
+            "replayed": 742
+          }
+        }
+      },
+      "wall_s": 1.7899843379855156
+    },
+    {
+      "item": {
+        "group": "main",
+        "start": "two-knot",
+        "base": "RING-LAW",
+        "rule": "MET",
+        "choice": "NEWEST",
+        "knot_law": "parity"
+      },
+      "source": "run1_part3.jsonl.gz",
+      "rounds": 18,
+      "knots": 167,
+      "stop": null,
+      "round_differences": {},
+      "series_counts": {
+        "past": {
+          "eligible_series_before_export_cap": 3,
+          "one_member_series_before_export_cap": 0,
+          "recorded_series_checked": 3,
+          "recorded_ticks_checked": 34,
+          "recorded_endless_series_checked": 0,
+          "endless_series_before_export_cap": 0
+        },
+        "nopast": {
+          "eligible_series_before_export_cap": 3,
+          "one_member_series_before_export_cap": 0,
+          "recorded_series_checked": 3,
+          "recorded_ticks_checked": 35,
+          "recorded_endless_series_checked": 0,
+          "endless_series_before_export_cap": 0
+        },
+        "past_greatest": {
+          "eligible_series_before_export_cap": 3,
+          "one_member_series_before_export_cap": 0,
+          "recorded_series_checked": 3,
+          "recorded_ticks_checked": 34
+        },
+        "nopast_greatest": {
+          "eligible_series_before_export_cap": 3,
+          "one_member_series_before_export_cap": 0,
+          "recorded_series_checked": 3,
+          "recorded_ticks_checked": 35
+        }
+      },
+      "series_differences": {},
+      "within_part_filter_differences": {
+        "past": {
+          "n_series": {
+            "recorded": 6,
+            "replayed": 8
+          }
+        },
+        "past_greatest": {
+          "n_series": {
+            "recorded": 6,
+            "replayed": 8
+          }
+        }
+      },
+      "wall_s": 0.00801573193166405,
+      "parity": {
+        "fail_rows": [
+          {
+            "knot": 40,
+            "made": 5,
+            "places": 14,
+            "parents": 12,
+            "kind": "join",
+            "how": "parity"
+          },
+          {
+            "knot": 41,
+            "made": 5,
+            "places": 14,
+            "parents": 12,
+            "kind": "join",
+            "how": "parity"
+          }
+        ],
+        "same_fail_rows": true,
+        "literal_verdicts": 1604,
+        "literal_fails": 28,
+        "same_literal_counts": true
+      }
+    },
+    {
+      "item": {
+        "group": "ring227",
+        "start": "atlas 168 loose 3,3,0,3,3,3",
+        "base": "RING-LAW",
+        "rule": "MET",
+        "choice": "BY-COUNT",
+        "knot_law": "parity"
+      },
+      "source": "run2.jsonl.gz",
+      "rounds": 18,
+      "knots": 38,
+      "stop": null,
+      "round_differences": {},
+      "series_counts": {
+        "past": {
+          "eligible_series_before_export_cap": 0,
+          "one_member_series_before_export_cap": 0,
+          "recorded_series_checked": 0,
+          "recorded_ticks_checked": 0,
+          "recorded_endless_series_checked": 1,
+          "endless_series_before_export_cap": 1
+        },
+        "nopast": {
+          "eligible_series_before_export_cap": 1,
+          "one_member_series_before_export_cap": 0,
+          "recorded_series_checked": 1,
+          "recorded_ticks_checked": 1,
+          "recorded_endless_series_checked": 1,
+          "endless_series_before_export_cap": 1
+        }
+      },
+      "series_differences": {},
+      "within_part_filter_differences": {},
+      "wall_s": 0.0016028720419853926
+    },
+    {
+      "item": {
+        "group": "ring227",
+        "start": "atlas 168 loose 3,3,0,3,3,3",
+        "base": "RING-LAW",
+        "rule": null,
+        "choice": "OLDEST",
+        "knot_law": "nae"
+      },
+      "source": "run2.jsonl.gz",
+      "rounds": 18,
+      "knots": 3441,
+      "stop": null,
+      "round_differences": {},
+      "series_counts": {
+        "past": {
+          "eligible_series_before_export_cap": 2,
+          "one_member_series_before_export_cap": 0,
+          "recorded_series_checked": 2,
+          "recorded_ticks_checked": 15,
+          "recorded_endless_series_checked": 0,
+          "endless_series_before_export_cap": 0
+        },
+        "nopast": {
+          "eligible_series_before_export_cap": 2,
+          "one_member_series_before_export_cap": 0,
+          "recorded_series_checked": 2,
+          "recorded_ticks_checked": 15,
+          "recorded_endless_series_checked": 0,
+          "endless_series_before_export_cap": 0
+        }
+      },
+      "series_differences": {},
+      "within_part_filter_differences": {},
+      "wall_s": 0.0818486959906295
+    },
+    {
+      "item": {
+        "group": "ring227",
+        "start": "atlas 208 loose 0,0,2,3,3,3",
+        "base": "RING-LAW",
+        "rule": "MET",
+        "choice": "BY-COUNT",
+        "knot_law": "parity"
+      },
+      "source": "run2.jsonl.gz",
+      "rounds": 18,
+      "knots": 12,
+      "stop": null,
+      "round_differences": {},
+      "series_counts": {
+        "past": {
+          "eligible_series_before_export_cap": 0,
+          "one_member_series_before_export_cap": 0,
+          "recorded_series_checked": 0,
+          "recorded_ticks_checked": 0,
+          "recorded_endless_series_checked": 0,
+          "endless_series_before_export_cap": 0
+        },
+        "nopast": {
+          "eligible_series_before_export_cap": 0,
+          "one_member_series_before_export_cap": 0,
+          "recorded_series_checked": 0,
+          "recorded_ticks_checked": 0,
+          "recorded_endless_series_checked": 0,
+          "endless_series_before_export_cap": 0
+        }
+      },
+      "series_differences": {},
+      "within_part_filter_differences": {},
+      "wall_s": 0.0034063359489664435
+    },
+    {
+      "item": {
+        "group": "ring227",
+        "start": "atlas 208 loose 0,0,2,3,3,3",
+        "base": "RING-LAW",
+        "rule": null,
+        "choice": "OLDEST",
+        "knot_law": "nae"
+      },
+      "source": "run2.jsonl.gz",
+      "rounds": 18,
+      "knots": 3368,
+      "stop": null,
+      "round_differences": {},
+      "series_counts": {
+        "past": {
+          "eligible_series_before_export_cap": 2,
+          "one_member_series_before_export_cap": 0,
+          "recorded_series_checked": 2,
+          "recorded_ticks_checked": 15,
+          "recorded_endless_series_checked": 0,
+          "endless_series_before_export_cap": 0
+        },
+        "nopast": {
+          "eligible_series_before_export_cap": 2,
+          "one_member_series_before_export_cap": 0,
+          "recorded_series_checked": 2,
+          "recorded_ticks_checked": 15,
+          "recorded_endless_series_checked": 0,
+          "endless_series_before_export_cap": 0
+        }
+      },
+      "series_differences": {},
+      "within_part_filter_differences": {},
+      "wall_s": 0.07971664797514677
+    },
+    {
+      "item": {
+        "group": "ring227",
+        "start": "atlas 38 loose 3,3,3,3,3",
+        "base": "RING-LAW",
+        "rule": "MET",
+        "choice": "BY-COUNT",
+        "knot_law": "parity"
+      },
+      "source": "run2.jsonl.gz",
+      "rounds": 18,
+      "knots": 81,
+      "stop": null,
+      "round_differences": {},
+      "series_counts": {
+        "past": {
+          "eligible_series_before_export_cap": 0,
+          "one_member_series_before_export_cap": 0,
+          "recorded_series_checked": 0,
+          "recorded_ticks_checked": 0,
+          "recorded_endless_series_checked": 0,
+          "endless_series_before_export_cap": 0
+        },
+        "nopast": {
+          "eligible_series_before_export_cap": 2,
+          "one_member_series_before_export_cap": 0,
+          "recorded_series_checked": 2,
+          "recorded_ticks_checked": 14,
+          "recorded_endless_series_checked": 0,
+          "endless_series_before_export_cap": 0
+        }
+      },
+      "series_differences": {},
+      "within_part_filter_differences": {},
+      "wall_s": 0.0093516840133816
+    },
+    {
+      "item": {
+        "group": "ring227",
+        "start": "atlas 38 loose 3,3,3,3,3",
+        "base": "RING-LAW",
+        "rule": null,
+        "choice": "OLDEST",
+        "knot_law": "nae"
+      },
+      "source": "run2.jsonl.gz",
+      "rounds": 18,
+      "knots": 3125,
+      "stop": null,
+      "round_differences": {},
+      "series_counts": {
+        "past": {
+          "eligible_series_before_export_cap": 2,
+          "one_member_series_before_export_cap": 0,
+          "recorded_series_checked": 2,
+          "recorded_ticks_checked": 16,
+          "recorded_endless_series_checked": 0,
+          "endless_series_before_export_cap": 0
+        },
+        "nopast": {
+          "eligible_series_before_export_cap": 2,
+          "one_member_series_before_export_cap": 0,
+          "recorded_series_checked": 2,
+          "recorded_ticks_checked": 17,
+          "recorded_endless_series_checked": 0,
+          "endless_series_before_export_cap": 0
+        }
+      },
+      "series_differences": {},
+      "within_part_filter_differences": {},
+      "wall_s": 0.07372261304408312
+    }
+  ]
+}

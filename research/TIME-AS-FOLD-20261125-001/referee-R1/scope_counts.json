@@ -1,0 +1,340 @@
+{
+  "frozen_hashes_equal": {
+    "research/TIME-AS-FOLD-20261125-001A/starts.json": true,
+    "research/TIME-AS-FOLD-20261125-001A/rules.json": true,
+    "research/TIME-AS-FOLD-20261125-001A/numberings_5b.json": true,
+    "research/TIME-AS-FOLD-20261125-001A/compare.json": true,
+    "research/TIME-AS-FOLD-20261125-001A/preregistration.md": true,
+    "research/TIME-AS-FOLD-20261125-001/definitions.md": true,
+    "research/TIME-AS-FOLD-20261125-001/claim.md": true,
+    "research/PARTS-MEET-AGAIN-20261124-001/definitions.md": true,
+    "research/RING-IN-BALANCE-20261123-001/definitions.md": true
+  },
+  "eligible_baseline_runs_by_group": {
+    "main": 2975,
+    "fbp": 3334,
+    "dbt": 3011,
+    "ring227": 486,
+    "ladder": 310
+  },
+  "eligible_primary_runs_with_a_clock": {
+    "STEPS-1": 48,
+    "MET": 30
+  },
+  "selected_input_order": {
+    "from_written_order": {
+      "fbp": 2025,
+      "main": 2975
+    },
+    "from_registered_order": {
+      "fbp": 2025,
+      "main": 2975
+    },
+    "registered_only": [
+      [
+        "fbp",
+        "DW(5,3)",
+        "COPY-LAW(WAIT)",
+        "STEPS-3:join",
+        "BY-COUNT",
+        "parity"
+      ]
+    ],
+    "written_only": [
+      [
+        "fbp",
+        "DW(5,3)",
+        "CAP-3(RETIRE)",
+        "MET:offshoot",
+        "OLDEST",
+        "parity"
+      ]
+    ],
+    "first_different_position": 6,
+    "nonempty_test_runs_outside_written_prefix": 0,
+    "registered_only_nonempty_run_records": 0,
+    "written_only_test_records": 0,
+    "selected_runs_with_test_records": 4385,
+    "selected_runs_with_no_test_records": 615
+  },
+  "boundary_run_evidence": {
+    "('fbp', 'DW(5,3)', 'CAP-3(RETIRE)', 'MET:offshoot', 'OLDEST', 'parity')": {
+      "eligible_clock_starts_and_number_of_parts_at_choice": [
+        [
+          5,
+          1
+        ],
+        [
+          6,
+          1
+        ]
+      ],
+      "clock_count": 1,
+      "clocks_in_compact_record": 1
+    },
+    "('fbp', 'DW(5,3)', 'COPY-LAW(WAIT)', 'STEPS-3:join', 'BY-COUNT', 'parity')": {
+      "eligible_clock_starts_and_number_of_parts_at_choice": [
+        [
+          2,
+          6
+        ],
+        [
+          4,
+          16
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          4,
+          16
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          4,
+          16
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          4,
+          16
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          4,
+          16
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          5,
+          11
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          5,
+          11
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          5,
+          11
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          5,
+          11
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          5,
+          11
+        ],
+        [
+          4,
+          16
+        ],
+        [
+          6,
+          31
+        ],
+        [
+          4,
+          16
+        ],
+        [
+          6,
+          31
+        ],
+        [
+          4,
+          16
+        ],
+        [
+          6,
+          31
+        ],
+        [
+          4,
+          16
+        ],
+        [
+          6,
+          31
+        ],
+        [
+          4,
+          16
+        ],
+        [
+          6,
+          31
+        ],
+        [
+          5,
+          11
+        ],
+        [
+          5,
+          11
+        ],
+        [
+          5,
+          11
+        ],
+        [
+          5,
+          11
+        ],
+        [
+          5,
+          11
+        ],
+        [
+          6,
+          31
+        ],
+        [
+          6,
+          31
+        ],
+        [
+          6,
+          31
+        ],
+        [
+          6,
+          31
+        ],
+        [
+          6,
+          31
+        ],
+        [
+          6,
+          31
+        ],
+        [
+          6,
+          31
+        ],
+        [
+          6,
+          31
+        ],
+        [
+          6,
+          31
+        ],
+        [
+          6,
+          31
+        ]
+      ],
+      "clock_count": 30,
+      "clocks_in_compact_record": 30
+    }
+  },
+  "test_rows": 88299,
+  "clock_and_j_groups_with_tests": 14557,
+  "second_parts_per_clock_and_j_histogram": {
+    "8": 7310,
+    "5": 1349,
+    "1": 618,
+    "7": 824,
+    "2": 945,
+    "3": 1026,
+    "4": 1595,
+    "6": 890
+  },
+  "C_iii_by_rule": {
+    "STEPS-2": {
+      "tests": 50,
+      "X_has_three_members": 36,
+      "Y_three_members_period_three": 50,
+      "Y_returns_after_X_barred": 0,
+      "Y_returns_fewer_at_common_horizon": 50,
+      "Y_equal_at_common_horizon": 0,
+      "Y_equal_at_respective_horizons": 0,
+      "all_three_bars_Bprime_change_course": 0,
+      "made_meetings_at_3_of_three_bars": 18,
+      "made_meetings_at_0_of_three_bars": 32,
+      "X_with_a_recorded_own_first_return_in_A": 36,
+      "baseline_series_listing_at_storage_cap": 0,
+      "clock_gives_off_in_four_test_periods": 0,
+      "clock_gives_off_in_any_equal_four": 0,
+      "run_contains_a_clock_that_gives_off_at_four": 0
+    },
+    "STEPS-1": {
+      "tests": 8,
+      "X_has_three_members": 8,
+      "Y_three_members_period_three": 0,
+      "Y_returns_after_X_barred": 0,
+      "Y_returns_fewer_at_common_horizon": 8,
+      "Y_equal_at_common_horizon": 0,
+      "Y_equal_at_respective_horizons": 0,
+      "all_three_bars_Bprime_change_course": 0,
+      "made_meetings_at_3_of_three_bars": 8,
+      "X_with_a_recorded_own_first_return_in_A": 8,
+      "baseline_series_listing_at_storage_cap": 0,
+      "clock_gives_off_in_four_test_periods": 0,
+      "clock_gives_off_in_any_equal_four": 0,
+      "run_contains_a_clock_that_gives_off_at_four": 0
+    },
+    "STEPS-2:join": {
+      "tests": 20,
+      "X_has_three_members": 4,
+      "Y_three_members_period_three": 0,
+      "Y_returns_after_X_barred": 20,
+      "Y_returns_fewer_at_common_horizon": 0,
+      "Y_equal_at_common_horizon": 20,
+      "Y_equal_at_respective_horizons": 16,
+      "all_three_bars_Bprime_change_course": 20,
+      "made_meetings_at_3_of_three_bars": 20,
+      "X_with_a_recorded_own_first_return_in_A": 8,
+      "baseline_series_listing_at_storage_cap": 20,
+      "clock_gives_off_in_four_test_periods": 20,
+      "clock_gives_off_in_any_equal_four": 20,
+      "run_contains_a_clock_that_gives_off_at_four": 20
+    }
+  },
+  "first_meetings_across_accepted_bars": {
+    "STEPS-2": {
+      "made": 54,
+      "only start": 96
+    },
+    "STEPS-1": {
+      "made": 24
+    },
+    "STEPS-2:join": {
+      "made": 60
+    }
+  },
+  "prototype_positive_tests": 44,
+  "prototype_tests_matched_including_j_rounds_counts_and_three_difference_rounds": 44,
+  "unmatched_disclosed_signatures": []
+}

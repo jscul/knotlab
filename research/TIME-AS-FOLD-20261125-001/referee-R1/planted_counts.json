@@ -1,0 +1,837 @@
+{
+  "archived_source_gate": {
+    "file": "experiments/TIME-AS-FOLD-20261125-001A/TIME-AS-FOLD-20261125-001A-E001_count_of_returns/tf_tests.py",
+    "sha256": "c1d1be0c8c9d325faf0a40de52c8e38051800b455a47ff77f702729736363d86",
+    "line": 672,
+    "checked_expression": "len(run_bars) == 3 and all(b.get('grown_4_periods') and b.get('lag') is not None\n                                         and b.get('M_equals_B_4') for b in run_bars) and len(es) == 1",
+    "examples": {
+      "positive": {
+        "reaches_positive_branch": true,
+        "archived_preliminary_hold": true,
+        "frozen_made_witness_each_bar": true
+      },
+      "start-only": {
+        "reaches_positive_branch": true,
+        "archived_preliminary_hold": true,
+        "frozen_made_witness_each_bar": false
+      },
+      "keeps-making": {
+        "reaches_positive_branch": false,
+        "archived_preliminary_hold": false,
+        "frozen_made_witness_each_bar": false
+      },
+      "ignores-mask": {
+        "reaches_positive_branch": true,
+        "archived_preliminary_hold": false,
+        "frozen_made_witness_each_bar": true
+      },
+      "delay-two-periods": {
+        "reaches_positive_branch": true,
+        "archived_preliminary_hold": true,
+        "frozen_made_witness_each_bar": true
+      },
+      "unequal-offset": {
+        "reaches_positive_branch": true,
+        "archived_preliminary_hold": false,
+        "frozen_made_witness_each_bar": true
+      },
+      "short second bar": {
+        "reaches_positive_branch": true,
+        "archived_preliminary_hold": false,
+        "frozen_made_witness_each_bar": false
+      }
+    }
+  },
+  "supplied": "Two-phase birth rule and start, outside the census. Parts, first returns, own births, barred and masked histories, meeting witnesses and parity projections are read from the records.",
+  "start": [
+    [
+      0,
+      1,
+      2,
+      3
+    ],
+    [
+      2,
+      3,
+      4
+    ]
+  ],
+  "settings": {
+    "through_round": 15,
+    "workers": 1,
+    "maximum_GiB": 2
+  },
+  "totals": {
+    "numberings": 240,
+    "A_B_M_and_X_barred_histories": 1920,
+    "knots_checked_in_final_relations": 56640
+  },
+  "distinct_named_starts": 60,
+  "positive_example": {
+    "first_round": 1,
+    "ticks": [
+      3,
+      5,
+      7,
+      9,
+      11,
+      13,
+      15
+    ],
+    "Y_size": 2,
+    "X_size": 1,
+    "copies": 0,
+    "given_off": 0,
+    "own": [
+      2,
+      2,
+      2,
+      2
+    ],
+    "joint": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "bars": [
+      {
+        "tick": 1,
+        "round": 3,
+        "B_end": 15,
+        "A_end": 15,
+        "diff": 5,
+        "mask_equals_B_through_2": true,
+        "mask_equals_B_through_4": true,
+        "late_own": 0,
+        "lag": 1,
+        "e": 1,
+        "total_own": 3,
+        "joint_after": 0,
+        "meeting": [
+          "made"
+        ]
+      },
+      {
+        "tick": 2,
+        "round": 5,
+        "B_end": 15,
+        "A_end": 15,
+        "diff": 7,
+        "mask_equals_B_through_2": true,
+        "mask_equals_B_through_4": true,
+        "late_own": 0,
+        "lag": 1,
+        "e": 1,
+        "total_own": 5,
+        "joint_after": 0,
+        "meeting": [
+          "made"
+        ]
+      },
+      {
+        "tick": 3,
+        "round": 7,
+        "B_end": 15,
+        "A_end": 15,
+        "diff": 9,
+        "mask_equals_B_through_2": true,
+        "mask_equals_B_through_4": true,
+        "late_own": 0,
+        "lag": 1,
+        "e": 1,
+        "total_own": 7,
+        "joint_after": 0,
+        "meeting": [
+          "made"
+        ]
+      }
+    ],
+    "C_count_and_mask": true,
+    "C_3_made_witness": true,
+    "C_with_provenance": "holds before numbering",
+    "C_iii": "holds",
+    "recovered_ticks": [
+      1,
+      2,
+      3
+    ],
+    "minimum_places": 3,
+    "invalid_knot_indices": [
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "knots_in_histories": [
+      47,
+      33,
+      12,
+      28,
+      18,
+      34,
+      24,
+      40
+    ]
+  },
+  "controls_on_original_numbering": {
+    "start-only": {
+      "first_round": 1,
+      "ticks": [
+        3,
+        5,
+        7,
+        9,
+        11,
+        13,
+        15
+      ],
+      "Y_size": 2,
+      "X_size": 1,
+      "copies": 0,
+      "given_off": 0,
+      "own": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "joint": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "bars": [
+        {
+          "tick": 1,
+          "round": 3,
+          "B_end": 15,
+          "A_end": 15,
+          "diff": 5,
+          "mask_equals_B_through_2": true,
+          "mask_equals_B_through_4": true,
+          "late_own": 0,
+          "lag": 1,
+          "e": 1,
+          "total_own": 3,
+          "joint_after": 0,
+          "meeting": [
+            "start"
+          ]
+        },
+        {
+          "tick": 2,
+          "round": 5,
+          "B_end": 15,
+          "A_end": 15,
+          "diff": 7,
+          "mask_equals_B_through_2": true,
+          "mask_equals_B_through_4": true,
+          "late_own": 0,
+          "lag": 1,
+          "e": 1,
+          "total_own": 5,
+          "joint_after": 0,
+          "meeting": [
+            "start"
+          ]
+        },
+        {
+          "tick": 3,
+          "round": 7,
+          "B_end": 15,
+          "A_end": 15,
+          "diff": 9,
+          "mask_equals_B_through_2": true,
+          "mask_equals_B_through_4": true,
+          "late_own": 0,
+          "lag": 1,
+          "e": 1,
+          "total_own": 7,
+          "joint_after": 0,
+          "meeting": [
+            "start"
+          ]
+        }
+      ],
+      "C_count_and_mask": true,
+      "C_3_made_witness": false,
+      "C_with_provenance": "undecided under TD 4.6",
+      "C_iii": "holds",
+      "recovered_ticks": [
+        1,
+        2,
+        3
+      ],
+      "minimum_places": 3,
+      "invalid_knot_indices": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "knots_in_histories": [
+        47,
+        33,
+        12,
+        28,
+        18,
+        34,
+        24,
+        40
+      ]
+    },
+    "keeps-making": {
+      "first_round": 1,
+      "ticks": [
+        3,
+        5,
+        7,
+        9,
+        11,
+        13,
+        15
+      ],
+      "Y_size": 2,
+      "X_size": 1,
+      "copies": 0,
+      "given_off": 0,
+      "own": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "joint": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "bars": [
+        {
+          "tick": 1,
+          "round": 3,
+          "B_end": 15,
+          "A_end": 15,
+          "diff": null,
+          "mask_equals_B_through_2": true,
+          "mask_equals_B_through_4": true,
+          "late_own": 8,
+          "lag": null,
+          "e": 12,
+          "total_own": 14,
+          "joint_after": 0,
+          "meeting": []
+        },
+        {
+          "tick": 2,
+          "round": 5,
+          "B_end": 15,
+          "A_end": 15,
+          "diff": null,
+          "mask_equals_B_through_2": true,
+          "mask_equals_B_through_4": true,
+          "late_own": 6,
+          "lag": null,
+          "e": 10,
+          "total_own": 14,
+          "joint_after": 0,
+          "meeting": []
+        },
+        {
+          "tick": 3,
+          "round": 7,
+          "B_end": 15,
+          "A_end": 15,
+          "diff": null,
+          "mask_equals_B_through_2": true,
+          "mask_equals_B_through_4": true,
+          "late_own": 4,
+          "lag": null,
+          "e": 8,
+          "total_own": 14,
+          "joint_after": 0,
+          "meeting": []
+        }
+      ],
+      "C_count_and_mask": false,
+      "C_3_made_witness": false,
+      "C_with_provenance": "fails",
+      "C_iii": "fails",
+      "recovered_ticks": null,
+      "minimum_places": 3,
+      "invalid_knot_indices": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "knots_in_histories": [
+        47,
+        33,
+        23,
+        35,
+        27,
+        41,
+        31,
+        47
+      ]
+    },
+    "ignores-mask": {
+      "first_round": 1,
+      "ticks": [
+        3,
+        5,
+        7,
+        9,
+        11,
+        13,
+        15
+      ],
+      "Y_size": 2,
+      "X_size": 1,
+      "copies": 0,
+      "given_off": 0,
+      "own": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "joint": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "bars": [
+        {
+          "tick": 1,
+          "round": 3,
+          "B_end": 15,
+          "A_end": 15,
+          "diff": 5,
+          "mask_equals_B_through_2": false,
+          "mask_equals_B_through_4": false,
+          "late_own": 0,
+          "lag": 1,
+          "e": 1,
+          "total_own": 3,
+          "joint_after": 0,
+          "meeting": [
+            "made"
+          ]
+        },
+        {
+          "tick": 2,
+          "round": 5,
+          "B_end": 15,
+          "A_end": 15,
+          "diff": 7,
+          "mask_equals_B_through_2": false,
+          "mask_equals_B_through_4": false,
+          "late_own": 0,
+          "lag": 1,
+          "e": 1,
+          "total_own": 5,
+          "joint_after": 0,
+          "meeting": [
+            "made"
+          ]
+        },
+        {
+          "tick": 3,
+          "round": 7,
+          "B_end": 15,
+          "A_end": 15,
+          "diff": 9,
+          "mask_equals_B_through_2": false,
+          "mask_equals_B_through_4": false,
+          "late_own": 0,
+          "lag": 1,
+          "e": 1,
+          "total_own": 7,
+          "joint_after": 0,
+          "meeting": [
+            "made"
+          ]
+        }
+      ],
+      "C_count_and_mask": false,
+      "C_3_made_witness": true,
+      "C_with_provenance": "undecided under TD 4.6",
+      "C_iii": "undecided",
+      "recovered_ticks": null,
+      "minimum_places": 3,
+      "invalid_knot_indices": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "knots_in_histories": [
+        47,
+        33,
+        12,
+        35,
+        18,
+        41,
+        24,
+        47
+      ]
+    },
+    "delay-two-periods": {
+      "first_round": 1,
+      "ticks": [
+        3,
+        5,
+        7,
+        9,
+        11,
+        13,
+        15
+      ],
+      "Y_size": 2,
+      "X_size": 1,
+      "copies": 0,
+      "given_off": 0,
+      "own": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "joint": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "bars": [
+        {
+          "tick": 1,
+          "round": 3,
+          "B_end": 15,
+          "A_end": 15,
+          "diff": 8,
+          "mask_equals_B_through_2": true,
+          "mask_equals_B_through_4": true,
+          "late_own": 0,
+          "lag": 4,
+          "e": 4,
+          "total_own": 6,
+          "joint_after": 0,
+          "meeting": [
+            "made"
+          ]
+        },
+        {
+          "tick": 2,
+          "round": 5,
+          "B_end": 15,
+          "A_end": 15,
+          "diff": 10,
+          "mask_equals_B_through_2": true,
+          "mask_equals_B_through_4": true,
+          "late_own": 0,
+          "lag": 4,
+          "e": 4,
+          "total_own": 8,
+          "joint_after": 0,
+          "meeting": [
+            "made"
+          ]
+        },
+        {
+          "tick": 3,
+          "round": 7,
+          "B_end": 15,
+          "A_end": 15,
+          "diff": 12,
+          "mask_equals_B_through_2": true,
+          "mask_equals_B_through_4": true,
+          "late_own": 0,
+          "lag": 4,
+          "e": 4,
+          "total_own": 10,
+          "joint_after": 0,
+          "meeting": [
+            "made"
+          ]
+        }
+      ],
+      "C_count_and_mask": true,
+      "C_3_made_witness": true,
+      "C_with_provenance": "holds before numbering",
+      "C_iii": "fails",
+      "recovered_ticks": [
+        1,
+        2,
+        3
+      ],
+      "minimum_places": 3,
+      "invalid_knot_indices": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "knots_in_histories": [
+        47,
+        33,
+        15,
+        31,
+        21,
+        37,
+        27,
+        43
+      ]
+    },
+    "unequal-offset": {
+      "first_round": 1,
+      "ticks": [
+        3,
+        5,
+        7,
+        9,
+        11,
+        13,
+        15
+      ],
+      "Y_size": 2,
+      "X_size": 1,
+      "copies": 0,
+      "given_off": 0,
+      "own": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "joint": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "bars": [
+        {
+          "tick": 1,
+          "round": 3,
+          "B_end": 15,
+          "A_end": 15,
+          "diff": 5,
+          "mask_equals_B_through_2": true,
+          "mask_equals_B_through_4": true,
+          "late_own": 0,
+          "lag": 1,
+          "e": 1,
+          "total_own": 3,
+          "joint_after": 0,
+          "meeting": [
+            "made"
+          ]
+        },
+        {
+          "tick": 2,
+          "round": 5,
+          "B_end": 15,
+          "A_end": 15,
+          "diff": 9,
+          "mask_equals_B_through_2": true,
+          "mask_equals_B_through_4": true,
+          "late_own": 0,
+          "lag": 3,
+          "e": 3,
+          "total_own": 7,
+          "joint_after": 0,
+          "meeting": [
+            "made"
+          ]
+        },
+        {
+          "tick": 3,
+          "round": 7,
+          "B_end": 15,
+          "A_end": 15,
+          "diff": 9,
+          "mask_equals_B_through_2": true,
+          "mask_equals_B_through_4": true,
+          "late_own": 0,
+          "lag": 1,
+          "e": 1,
+          "total_own": 7,
+          "joint_after": 0,
+          "meeting": [
+            "made"
+          ]
+        }
+      ],
+      "C_count_and_mask": false,
+      "C_3_made_witness": true,
+      "C_with_provenance": "undecided under TD 4.6",
+      "C_iii": "holds",
+      "recovered_ticks": null,
+      "minimum_places": 3,
+      "invalid_knot_indices": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "knots_in_histories": [
+        47,
+        33,
+        12,
+        28,
+        20,
+        36,
+        24,
+        40
+      ]
+    },
+    "short second bar": {
+      "first_round": 1,
+      "ticks": [
+        3,
+        5,
+        7,
+        9,
+        11,
+        13,
+        15
+      ],
+      "Y_size": 2,
+      "X_size": 1,
+      "copies": 0,
+      "given_off": 0,
+      "own": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "joint": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "bars": [
+        {
+          "tick": 1,
+          "round": 3,
+          "B_end": 15,
+          "A_end": 15,
+          "diff": 5,
+          "mask_equals_B_through_2": true,
+          "mask_equals_B_through_4": true,
+          "late_own": 0,
+          "lag": 1,
+          "e": 1,
+          "total_own": 3,
+          "joint_after": 0,
+          "meeting": [
+            "made"
+          ]
+        },
+        {
+          "tick": 2,
+          "round": 5,
+          "B_end": 6,
+          "A_end": 15,
+          "diff": null,
+          "mask_equals_B_through_2": true,
+          "mask_equals_B_through_4": true,
+          "late_own": 0,
+          "lag": null,
+          "e": 1,
+          "total_own": 5,
+          "joint_after": 0,
+          "meeting": []
+        },
+        {
+          "tick": 3,
+          "round": 7,
+          "B_end": 15,
+          "A_end": 15,
+          "diff": 9,
+          "mask_equals_B_through_2": true,
+          "mask_equals_B_through_4": true,
+          "late_own": 0,
+          "lag": 1,
+          "e": 1,
+          "total_own": 7,
+          "joint_after": 0,
+          "meeting": [
+            "made"
+          ]
+        }
+      ],
+      "C_count_and_mask": false,
+      "C_3_made_witness": false,
+      "C_with_provenance": "undecided under TD 4.6",
+      "C_iii": "undecided",
+      "recovered_ticks": null,
+      "minimum_places": 3,
+      "invalid_knot_indices": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "knots_in_histories": [
+        47,
+        33,
+        12,
+        28,
+        18,
+        34,
+        24,
+        40
+      ]
+    }
+  },
+  "mixed_parent_control": {
+    "own_by_round": {
+      "2": 1
+    },
+    "joint_by_round": {
+      "2": 1,
+      "3": 1
+    }
+  },
+  "positive_seconds": 1.407,
+  "elapsed_seconds": 1.448,
+  "peak_RSS_KiB": 24848
+}

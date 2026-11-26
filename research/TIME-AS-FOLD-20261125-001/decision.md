@@ -8,6 +8,9 @@ thread; scientific referee pending.
 [pre-registration](../TIME-AS-FOLD-20261125-001A/preregistration.md) · [survey of the record](survey.md) ·
 [referee hand-off](referee_handoff.md) · [advisor review before the freeze](advisor/README.md)
 
+> **Referee report R1, 26 November 2026: confirmed with fixes, no block; seven narrowings** ([the report](referee-R1/report.md)). Its fixes are listed
+> there and are not yet written into this note; read the statements below with the report beside them.
+
 ## The answer
 
 The owner asked: "Is time itself a fold like intelligence/life through DNA?" The thread read that as a test a program

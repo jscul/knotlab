@@ -9,6 +9,9 @@ computed by a second program and counted a third time by the thread; scientific 
 [survey of the record](survey.md) · [referee hand-off](referee_handoff.md) ·
 [advisor review before the freeze](advisor/README.md)
 
+> **Referee report R1, 26 November 2026: confirmed with fixes, no block; nine narrowings** ([the report](referee-R1/report.md)). Its fixes are listed
+> there and are not yet written into this note; read the statements below with the report beside them.
+
 ## The answer
 
 The direction asked whether the structure itself can hold the count that tells a knot which of the knots it meets is

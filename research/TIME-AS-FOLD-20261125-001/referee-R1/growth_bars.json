@@ -1,0 +1,1253 @@
+{
+  "phase": "bars",
+  "pilot": false,
+  "wall_s": 3.1386643550358713,
+  "process_s": 3.137775701,
+  "peak_rss_kib": 99080,
+  "address_space_limit_bytes": 3221225472,
+  "rows": [
+    {
+      "item": {
+        "group": "main",
+        "start": "Ring(5,3)",
+        "base": "RING-LAW",
+        "rule": null,
+        "choice": "OLDEST",
+        "knot_law": "nae"
+      },
+      "t0": 0,
+      "P0": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "j": 1,
+      "X": [
+        15,
+        16
+      ],
+      "wall_s": 0.21966927393805236,
+      "registered_pair_is_selected": true,
+      "eligible_pairs_in_source": 10,
+      "differences": {},
+      "replay": {
+        "selector": {
+          "part_is_separate": true,
+          "part_has_knot_made_after_start": true
+        },
+        "tick_rounds": [
+          2,
+          4,
+          6,
+          8,
+          10
+        ],
+        "all_return_rounds": [
+          2,
+          4,
+          6,
+          8,
+          10,
+          12,
+          14,
+          16,
+          18
+        ],
+        "run_A": {
+          "rounds": 18,
+          "knots": 3125,
+          "stop": null
+        },
+        "P_j": [
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "own_A_per_period": [
+          7,
+          11,
+          15,
+          19
+        ],
+        "joint_A_per_period": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "bars": [
+          {
+            "r": 1,
+            "examined": true,
+            "t_bar": 4,
+            "barred_part": [
+              25,
+              26,
+              27,
+              28,
+              29
+            ],
+            "qualifying_parts": [
+              [
+                25,
+                26,
+                27,
+                28,
+                29
+              ]
+            ],
+            "parts_given_off": [
+              [
+                60,
+                61
+              ],
+              [
+                62,
+                63
+              ],
+              [
+                64,
+                65
+              ],
+              [
+                66,
+                67
+              ],
+              [
+                68,
+                69
+              ]
+            ],
+            "X_desc_in_barred_part": 0,
+            "B": {
+              "rounds": 18,
+              "stop": null
+            },
+            "course_differs": null,
+            "demand_differs": null,
+            "grown_2_periods": true,
+            "grown_4_periods": true,
+            "own_A_after_bar_by_round": {
+              "5": 5,
+              "6": 6,
+              "7": 7,
+              "8": 8,
+              "9": 9,
+              "10": 10,
+              "11": 11,
+              "12": 12,
+              "13": 13,
+              "14": 14,
+              "15": 15,
+              "16": 16,
+              "17": 17,
+              "18": 18
+            },
+            "own_B_after_bar_by_round": {
+              "5": 5,
+              "6": 6,
+              "7": 7,
+              "8": 8,
+              "9": 9,
+              "10": 10,
+              "11": 11,
+              "12": 12,
+              "13": 13,
+              "14": 14,
+              "15": 15,
+              "16": 16,
+              "17": 17,
+              "18": 18
+            },
+            "joint_B_after_bar": 0,
+            "own_after_lag_rounds": [
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18
+            ],
+            "e": 161,
+            "B'": {
+              "course_differs": null
+            },
+            "c_iii": "equal"
+          },
+          {
+            "r": 2,
+            "examined": false
+          },
+          {
+            "r": 3,
+            "examined": false
+          }
+        ],
+        "X_barred": {
+          "Y_ticks_A": [
+            4,
+            6,
+            8,
+            10,
+            12,
+            14,
+            16,
+            18
+          ],
+          "Y_ticks_X_barred": [
+            4,
+            6,
+            8,
+            10,
+            12,
+            14,
+            16,
+            18
+          ],
+          "rounds": 18,
+          "stop": null
+        },
+        "X_barred_common_rounds": {
+          "horizon": 18,
+          "Y_ticks_A": [
+            4,
+            6,
+            8,
+            10,
+            12,
+            14,
+            16,
+            18
+          ],
+          "Y_ticks_X_barred": [
+            4,
+            6,
+            8,
+            10,
+            12,
+            14,
+            16,
+            18
+          ]
+        },
+        "clause1": false,
+        "verdict_C": "fails",
+        "verdict_C_iii": "fails",
+        "exclude_joint_with_Y_confirmed_bars": 0
+      }
+    },
+    {
+      "item": {
+        "group": "main",
+        "start": "Ring(5,3)",
+        "base": "COPY-LAW(OFFSHOOT)",
+        "rule": "STEPS-2",
+        "choice": "BY-COUNT",
+        "knot_law": "nae"
+      },
+      "t0": 4,
+      "P0": [
+        59,
+        76,
+        77
+      ],
+      "j": 0,
+      "X": [
+        57,
+        68,
+        69,
+        72,
+        73
+      ],
+      "wall_s": 0.033137088059447706,
+      "registered_pair_is_selected": true,
+      "eligible_pairs_in_source": 20,
+      "differences": {},
+      "replay": {
+        "selector": {
+          "part_is_separate": true,
+          "part_has_knot_made_after_start": true
+        },
+        "tick_rounds": [
+          4,
+          7,
+          10,
+          13,
+          16
+        ],
+        "all_return_rounds": [
+          7,
+          10,
+          13,
+          16
+        ],
+        "run_A": {
+          "rounds": 18,
+          "knots": 311,
+          "stop": null
+        },
+        "P_j": [
+          59,
+          76,
+          77
+        ],
+        "own_A_per_period": [
+          13,
+          12,
+          12,
+          12
+        ],
+        "joint_A_per_period": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "bars": [
+          {
+            "r": 1,
+            "examined": true,
+            "t_bar": 7,
+            "barred_part": [
+              130,
+              133,
+              134
+            ],
+            "qualifying_parts": [
+              [
+                130,
+                133,
+                134
+              ]
+            ],
+            "parts_given_off": [],
+            "X_desc_in_barred_part": 0,
+            "B": {
+              "rounds": 18,
+              "stop": null
+            },
+            "course_differs": 10,
+            "demand_differs": 9,
+            "grown_2_periods": true,
+            "grown_4_periods": false,
+            "own_A_after_bar_by_round": {
+              "8": 4,
+              "9": 4,
+              "10": 4,
+              "11": 4,
+              "12": 4,
+              "13": 4,
+              "14": 4,
+              "15": 4,
+              "16": 4,
+              "17": 4,
+              "18": 4
+            },
+            "own_B_after_bar_by_round": {
+              "8": 4,
+              "9": 4,
+              "10": 3,
+              "11": 3,
+              "12": 3,
+              "13": 3,
+              "14": 3,
+              "15": 3,
+              "16": 3,
+              "17": 3,
+              "18": 3
+            },
+            "joint_B_after_bar": 0,
+            "own_after_lag_rounds": [
+              14,
+              15,
+              16,
+              17,
+              18
+            ],
+            "e": 35,
+            "M": {
+              "rounds": 18,
+              "stop": null
+            },
+            "M_equals_B_2": true,
+            "M_differs_from_B_at": null,
+            "exclude_joint_with_Y_sensitivity": {
+              "course_differs": 10,
+              "M_equals_B_2": true
+            },
+            "M_equals_B_4": true,
+            "c_iii": "differs"
+          },
+          {
+            "r": 2,
+            "examined": true,
+            "t_bar": 10,
+            "barred_part": [
+              178,
+              181,
+              182
+            ],
+            "qualifying_parts": [
+              [
+                178,
+                181,
+                182
+              ]
+            ],
+            "parts_given_off": [],
+            "X_desc_in_barred_part": 0,
+            "B": {
+              "rounds": 18,
+              "stop": null
+            },
+            "course_differs": 13,
+            "demand_differs": 12,
+            "grown_2_periods": true,
+            "grown_4_periods": false,
+            "own_A_after_bar_by_round": {
+              "11": 4,
+              "12": 4,
+              "13": 4,
+              "14": 4,
+              "15": 4,
+              "16": 4,
+              "17": 4,
+              "18": 4
+            },
+            "own_B_after_bar_by_round": {
+              "11": 4,
+              "12": 4,
+              "13": 3,
+              "14": 3,
+              "15": 3,
+              "16": 3,
+              "17": 3,
+              "18": 3
+            },
+            "joint_B_after_bar": 0,
+            "own_after_lag_rounds": [
+              17,
+              18
+            ],
+            "e": 26,
+            "M": {
+              "rounds": 18,
+              "stop": null
+            },
+            "M_equals_B_2": true,
+            "M_differs_from_B_at": null,
+            "exclude_joint_with_Y_sensitivity": {
+              "course_differs": 13,
+              "M_equals_B_2": true
+            },
+            "M_equals_B_4": true,
+            "c_iii": "differs"
+          },
+          {
+            "r": 3,
+            "examined": true,
+            "t_bar": 13,
+            "barred_part": [
+              226,
+              229,
+              230
+            ],
+            "qualifying_parts": [
+              [
+                226,
+                229,
+                230
+              ]
+            ],
+            "parts_given_off": [],
+            "X_desc_in_barred_part": 0,
+            "B": {
+              "rounds": 18,
+              "stop": null
+            },
+            "course_differs": 16,
+            "demand_differs": 15,
+            "grown_2_periods": false,
+            "grown_4_periods": false,
+            "own_A_after_bar_by_round": {
+              "14": 4,
+              "15": 4,
+              "16": 4,
+              "17": 4,
+              "18": 4
+            },
+            "own_B_after_bar_by_round": {
+              "14": 4,
+              "15": 4,
+              "16": 3,
+              "17": 3,
+              "18": 3
+            },
+            "joint_B_after_bar": 0,
+            "own_after_lag_rounds": [],
+            "e": 17,
+            "M": {
+              "rounds": 18,
+              "stop": null
+            },
+            "M_equals_B_2": true,
+            "M_differs_from_B_at": null,
+            "exclude_joint_with_Y_sensitivity": {
+              "course_differs": 16,
+              "M_equals_B_2": true
+            },
+            "M_equals_B_4": true,
+            "c_iii": "differs"
+          }
+        ],
+        "X_barred": {
+          "Y_ticks_A": [
+            7,
+            10,
+            13,
+            16
+          ],
+          "Y_ticks_X_barred": [],
+          "rounds": 18,
+          "stop": null
+        },
+        "X_barred_common_rounds": {
+          "horizon": 18,
+          "Y_ticks_A": [
+            7,
+            10,
+            13,
+            16
+          ],
+          "Y_ticks_X_barred": []
+        },
+        "clause1": false,
+        "verdict_C": "fails",
+        "verdict_C_iii": "holds",
+        "exclude_joint_with_Y_confirmed_bars": 3
+      }
+    },
+    {
+      "item": {
+        "group": "main",
+        "start": "two-knot",
+        "base": "COPY-LAW(OFFSHOOT)",
+        "rule": "STEPS-1",
+        "choice": "OLDEST",
+        "knot_law": "nae"
+      },
+      "t0": 3,
+      "P0": [
+        12,
+        14,
+        15
+      ],
+      "j": 0,
+      "X": [
+        13,
+        16,
+        17
+      ],
+      "wall_s": 0.011576205026358366,
+      "registered_pair_is_selected": true,
+      "eligible_pairs_in_source": 6,
+      "differences": {},
+      "replay": {
+        "selector": {
+          "part_is_separate": true,
+          "part_has_knot_made_after_start": true
+        },
+        "tick_rounds": [
+          3,
+          5,
+          7,
+          9,
+          11
+        ],
+        "all_return_rounds": [
+          5,
+          7,
+          9,
+          11,
+          13,
+          15,
+          17
+        ],
+        "run_A": {
+          "rounds": 18,
+          "knots": 108,
+          "stop": null
+        },
+        "P_j": [
+          12,
+          14,
+          15
+        ],
+        "own_A_per_period": [
+          6,
+          6,
+          6,
+          6
+        ],
+        "joint_A_per_period": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "bars": [
+          {
+            "r": 1,
+            "examined": true,
+            "t_bar": 5,
+            "barred_part": [
+              24,
+              26,
+              27
+            ],
+            "qualifying_parts": [
+              [
+                24,
+                26,
+                27
+              ]
+            ],
+            "parts_given_off": [],
+            "X_desc_in_barred_part": 0,
+            "B": {
+              "rounds": 18,
+              "stop": null
+            },
+            "course_differs": 7,
+            "demand_differs": 6,
+            "grown_2_periods": true,
+            "grown_4_periods": true,
+            "own_A_after_bar_by_round": {
+              "6": 3,
+              "7": 3,
+              "8": 3,
+              "9": 3,
+              "10": 3,
+              "11": 3,
+              "12": 3,
+              "13": 3,
+              "14": 3,
+              "15": 3,
+              "16": 3,
+              "17": 3,
+              "18": 3
+            },
+            "own_B_after_bar_by_round": {
+              "6": 3,
+              "7": 2,
+              "8": 2,
+              "9": 2,
+              "10": 2,
+              "11": 2,
+              "12": 2,
+              "13": 2,
+              "14": 2,
+              "15": 2,
+              "16": 2,
+              "17": 2,
+              "18": 2
+            },
+            "joint_B_after_bar": 0,
+            "own_after_lag_rounds": [
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18
+            ],
+            "e": 27,
+            "M": {
+              "rounds": 13,
+              "stop": null
+            },
+            "M_equals_B_2": true,
+            "M_differs_from_B_at": null,
+            "exclude_joint_with_Y_sensitivity": {
+              "course_differs": 7,
+              "M_equals_B_2": true
+            },
+            "M_equals_B_4": true,
+            "c_iii": "differs"
+          },
+          {
+            "r": 2,
+            "examined": true,
+            "t_bar": 7,
+            "barred_part": [
+              36,
+              38,
+              39
+            ],
+            "qualifying_parts": [
+              [
+                36,
+                38,
+                39
+              ]
+            ],
+            "parts_given_off": [],
+            "X_desc_in_barred_part": 0,
+            "B": {
+              "rounds": 18,
+              "stop": null
+            },
+            "course_differs": 9,
+            "demand_differs": 8,
+            "grown_2_periods": true,
+            "grown_4_periods": true,
+            "own_A_after_bar_by_round": {
+              "8": 3,
+              "9": 3,
+              "10": 3,
+              "11": 3,
+              "12": 3,
+              "13": 3,
+              "14": 3,
+              "15": 3,
+              "16": 3,
+              "17": 3,
+              "18": 3
+            },
+            "own_B_after_bar_by_round": {
+              "8": 3,
+              "9": 2,
+              "10": 2,
+              "11": 2,
+              "12": 2,
+              "13": 2,
+              "14": 2,
+              "15": 2,
+              "16": 2,
+              "17": 2,
+              "18": 2
+            },
+            "joint_B_after_bar": 0,
+            "own_after_lag_rounds": [
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18
+            ],
+            "e": 23,
+            "M": {
+              "rounds": 15,
+              "stop": null
+            },
+            "M_equals_B_2": true,
+            "M_differs_from_B_at": null,
+            "exclude_joint_with_Y_sensitivity": {
+              "course_differs": 9,
+              "M_equals_B_2": true
+            },
+            "M_equals_B_4": true,
+            "c_iii": "differs"
+          },
+          {
+            "r": 3,
+            "examined": true,
+            "t_bar": 9,
+            "barred_part": [
+              48,
+              50,
+              51
+            ],
+            "qualifying_parts": [
+              [
+                48,
+                50,
+                51
+              ]
+            ],
+            "parts_given_off": [],
+            "X_desc_in_barred_part": 0,
+            "B": {
+              "rounds": 18,
+              "stop": null
+            },
+            "course_differs": 11,
+            "demand_differs": 10,
+            "grown_2_periods": true,
+            "grown_4_periods": true,
+            "own_A_after_bar_by_round": {
+              "10": 3,
+              "11": 3,
+              "12": 3,
+              "13": 3,
+              "14": 3,
+              "15": 3,
+              "16": 3,
+              "17": 3,
+              "18": 3
+            },
+            "own_B_after_bar_by_round": {
+              "10": 3,
+              "11": 2,
+              "12": 2,
+              "13": 2,
+              "14": 2,
+              "15": 2,
+              "16": 2,
+              "17": 2,
+              "18": 2
+            },
+            "joint_B_after_bar": 0,
+            "own_after_lag_rounds": [
+              14,
+              15,
+              16,
+              17,
+              18
+            ],
+            "e": 19,
+            "M": {
+              "rounds": 17,
+              "stop": null
+            },
+            "M_equals_B_2": true,
+            "M_differs_from_B_at": null,
+            "exclude_joint_with_Y_sensitivity": {
+              "course_differs": 11,
+              "M_equals_B_2": true
+            },
+            "M_equals_B_4": true,
+            "c_iii": "differs"
+          }
+        ],
+        "X_barred": {
+          "Y_ticks_A": [
+            5,
+            7,
+            9,
+            11,
+            13,
+            15,
+            17
+          ],
+          "Y_ticks_X_barred": [],
+          "rounds": 18,
+          "stop": null
+        },
+        "X_barred_common_rounds": {
+          "horizon": 18,
+          "Y_ticks_A": [
+            5,
+            7,
+            9,
+            11,
+            13,
+            15,
+            17
+          ],
+          "Y_ticks_X_barred": []
+        },
+        "clause1": true,
+        "verdict_C": "fails",
+        "verdict_C_iii": "holds",
+        "exclude_joint_with_Y_confirmed_bars": 3
+      }
+    },
+    {
+      "item": {
+        "group": "main",
+        "start": "two-knot",
+        "base": "COPY-LAW(WAIT)",
+        "rule": "STEPS-2:join",
+        "choice": "OLDEST",
+        "knot_law": "parity"
+      },
+      "t0": 1,
+      "P0": [
+        2,
+        3
+      ],
+      "j": 0,
+      "X": [
+        4,
+        5
+      ],
+      "wall_s": 1.8782320719910786,
+      "registered_pair_is_selected": true,
+      "eligible_pairs_in_source": 19,
+      "differences": {},
+      "replay": {
+        "selector": {
+          "part_is_separate": true,
+          "part_has_knot_made_after_start": true
+        },
+        "tick_rounds": [
+          1,
+          3,
+          5,
+          7,
+          9
+        ],
+        "all_return_rounds": [
+          3,
+          5,
+          7,
+          9,
+          11,
+          13,
+          15
+        ],
+        "run_A": {
+          "rounds": 16,
+          "knots": 4592,
+          "stop": "knots"
+        },
+        "P_j": [
+          2,
+          3
+        ],
+        "own_A_per_period": [
+          7,
+          15,
+          32,
+          74
+        ],
+        "joint_A_per_period": [
+          0,
+          1,
+          2,
+          2
+        ],
+        "bars": [
+          {
+            "r": 1,
+            "examined": true,
+            "t_bar": 3,
+            "barred_part": [
+              12,
+              13
+            ],
+            "qualifying_parts": [
+              [
+                12,
+                13
+              ],
+              [
+                14,
+                15
+              ]
+            ],
+            "parts_given_off": [
+              [
+                6
+              ]
+            ],
+            "X_desc_in_barred_part": 0,
+            "B": {
+              "rounds": 17,
+              "stop": "knots"
+            },
+            "course_differs": 7,
+            "demand_differs": 6,
+            "grown_2_periods": true,
+            "grown_4_periods": true,
+            "own_A_after_bar_by_round": {
+              "4": 7,
+              "5": 8,
+              "6": 14,
+              "7": 18,
+              "8": 32,
+              "9": 42,
+              "10": 72,
+              "11": 98,
+              "12": 162,
+              "13": 228,
+              "14": 366,
+              "15": 528,
+              "16": 830
+            },
+            "own_B_after_bar_by_round": {
+              "4": 7,
+              "5": 8,
+              "6": 14,
+              "7": 18,
+              "8": 32,
+              "9": 42,
+              "10": 72,
+              "11": 98,
+              "12": 162,
+              "13": 228,
+              "14": 366,
+              "15": 528,
+              "16": 830,
+              "17": 1218
+            },
+            "joint_B_after_bar": 231,
+            "own_after_lag_rounds": [
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17
+            ],
+            "e": 3623,
+            "B'": {
+              "course_differs": 5
+            },
+            "Ball": {
+              "course_differs": 7
+            },
+            "M": {
+              "rounds": 11,
+              "stop": null
+            },
+            "M_equals_B_2": true,
+            "M_differs_from_B_at": null,
+            "exclude_joint_with_Y_sensitivity": {
+              "course_differs": 7,
+              "M_equals_B_2": true
+            },
+            "M_equals_B_4": true,
+            "c_iii": "differs"
+          },
+          {
+            "r": 2,
+            "examined": true,
+            "t_bar": 5,
+            "barred_part": [
+              35,
+              36
+            ],
+            "qualifying_parts": [
+              [
+                35,
+                36
+              ],
+              [
+                37,
+                38
+              ]
+            ],
+            "parts_given_off": [
+              [
+                20
+              ]
+            ],
+            "X_desc_in_barred_part": 0,
+            "B": {
+              "rounds": 16,
+              "stop": "knots"
+            },
+            "course_differs": 9,
+            "demand_differs": 8,
+            "grown_2_periods": true,
+            "grown_4_periods": true,
+            "own_A_after_bar_by_round": {
+              "6": 14,
+              "7": 18,
+              "8": 32,
+              "9": 42,
+              "10": 72,
+              "11": 98,
+              "12": 162,
+              "13": 228,
+              "14": 366,
+              "15": 528,
+              "16": 830
+            },
+            "own_B_after_bar_by_round": {
+              "6": 14,
+              "7": 18,
+              "8": 32,
+              "9": 42,
+              "10": 72,
+              "11": 98,
+              "12": 162,
+              "13": 228,
+              "14": 366,
+              "15": 528,
+              "16": 830
+            },
+            "joint_B_after_bar": 66,
+            "own_after_lag_rounds": [
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16
+            ],
+            "e": 2390,
+            "B'": {
+              "course_differs": 7
+            },
+            "Ball": {
+              "course_differs": 9
+            },
+            "M": {
+              "rounds": 13,
+              "stop": null
+            },
+            "M_equals_B_2": true,
+            "M_differs_from_B_at": null,
+            "exclude_joint_with_Y_sensitivity": {
+              "course_differs": 9,
+              "M_equals_B_2": true
+            },
+            "M_equals_B_4": true,
+            "c_iii": "differs"
+          },
+          {
+            "r": 3,
+            "examined": true,
+            "t_bar": 7,
+            "barred_part": [
+              84,
+              85
+            ],
+            "qualifying_parts": [
+              [
+                84,
+                85
+              ],
+              [
+                86,
+                87
+              ]
+            ],
+            "parts_given_off": [
+              [
+                51
+              ]
+            ],
+            "X_desc_in_barred_part": 0,
+            "B": {
+              "rounds": 16,
+              "stop": "knots"
+            },
+            "course_differs": 11,
+            "demand_differs": 10,
+            "grown_2_periods": true,
+            "grown_4_periods": true,
+            "own_A_after_bar_by_round": {
+              "8": 32,
+              "9": 42,
+              "10": 72,
+              "11": 98,
+              "12": 162,
+              "13": 228,
+              "14": 366,
+              "15": 528,
+              "16": 830
+            },
+            "own_B_after_bar_by_round": {
+              "8": 32,
+              "9": 42,
+              "10": 72,
+              "11": 98,
+              "12": 162,
+              "13": 228,
+              "14": 366,
+              "15": 528,
+              "16": 830
+            },
+            "joint_B_after_bar": 29,
+            "own_after_lag_rounds": [
+              12,
+              13,
+              14,
+              15,
+              16
+            ],
+            "e": 2358,
+            "B'": {
+              "course_differs": 9
+            },
+            "Ball": {
+              "course_differs": 11
+            },
+            "M": {
+              "rounds": 15,
+              "stop": null
+            },
+            "M_equals_B_2": true,
+            "M_differs_from_B_at": null,
+            "exclude_joint_with_Y_sensitivity": {
+              "course_differs": 11,
+              "M_equals_B_2": true
+            },
+            "M_equals_B_4": true,
+            "c_iii": "differs"
+          }
+        ],
+        "X_barred": {
+          "Y_ticks_A": [
+            3,
+            5,
+            7,
+            9,
+            11,
+            13,
+            15
+          ],
+          "Y_ticks_X_barred": [
+            3,
+            5,
+            7,
+            9,
+            11,
+            13,
+            15,
+            17
+          ],
+          "rounds": 17,
+          "stop": "knots"
+        },
+        "X_barred_common_rounds": {
+          "horizon": 16,
+          "Y_ticks_A": [
+            3,
+            5,
+            7,
+            9,
+            11,
+            13,
+            15
+          ],
+          "Y_ticks_X_barred": [
+            3,
+            5,
+            7,
+            9,
+            11,
+            13,
+            15
+          ]
+        },
+        "clause1": false,
+        "verdict_C": "fails",
+        "verdict_C_iii": "holds",
+        "exclude_joint_with_Y_confirmed_bars": 3
+      }
+    }
+  ]
+}

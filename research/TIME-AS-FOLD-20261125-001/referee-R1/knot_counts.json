@@ -1,0 +1,579 @@
+{
+  "run_a": {
+    "totals": {
+      "nae": {
+        "runs": 14295,
+        "start_knots": 96025,
+        "max_start_width": 8,
+        "start_knots_above_12_places": 0,
+        "same_method_rechecks": 96025,
+        "unfinished_runs": 0,
+        "runs_with_failure": 0,
+        "knot_rounds_by_extension": 62261144,
+        "verdicts": 14202628,
+        "fails": 0,
+        "disagree": 0,
+        "untested": 0,
+        "compared": 14201704,
+        "extension_bad": 0,
+        "cuts": 0,
+        "only_one_method": 924,
+        "two_distinct_methods": 14105679,
+        "literal_runs": 8679,
+        "literal_knot_rounds": 7900900,
+        "literal_failed_knot_rounds": 0,
+        "literal_method_disagreements": 0,
+        "literal_runs_with_different_failing_knots": 0
+      },
+      "parity": {
+        "runs": 14295,
+        "start_knots": 96025,
+        "max_start_width": 8,
+        "start_knots_above_12_places": 0,
+        "unfinished_runs": 0,
+        "runs_with_failure": 20,
+        "knot_rounds_by_extension": 61910014,
+        "verdicts": 14149583,
+        "fails": 25,
+        "disagree": 0,
+        "untested": 0,
+        "compared": 14149583,
+        "extension_bad": 0,
+        "cuts": 0,
+        "only_one_method": 0,
+        "two_distinct_methods": 14149583,
+        "literal_runs": 8789,
+        "literal_knot_rounds": 8042665,
+        "literal_failed_knot_rounds": 374,
+        "literal_method_disagreements": 0,
+        "literal_runs_with_different_failing_knots": 0
+      }
+    },
+    "source_keys_without_knot_test": 0,
+    "knot_tests_without_source_key": 0,
+    "stops": {
+      "round bound": 23308,
+      "guard": 1798,
+      "knots": 3484
+    },
+    "failure_rows": [
+      {
+        "configuration": [
+          "dbt",
+          "D2(4,3)",
+          "RING-LAW",
+          "STEPS-2",
+          "OLDEST",
+          "parity"
+        ],
+        "how": "parity",
+        "kind": "join",
+        "knot": 60,
+        "made": 5,
+        "parents": 4,
+        "places": 5,
+        "met_newest_predicted": false,
+        "has_clock": false
+      },
+      {
+        "configuration": [
+          "dbt",
+          "D2(5,3)",
+          "RING-LAW",
+          "STEPS-2",
+          "OLDEST",
+          "parity"
+        ],
+        "how": "parity",
+        "kind": "join",
+        "knot": 75,
+        "made": 5,
+        "parents": 4,
+        "places": 5,
+        "met_newest_predicted": false,
+        "has_clock": false
+      },
+      {
+        "configuration": [
+          "dbt",
+          "D2(5,3)",
+          "RING-LAW",
+          "STEPS-2",
+          "OLDEST",
+          "parity"
+        ],
+        "how": "parity",
+        "kind": "join",
+        "knot": 76,
+        "made": 5,
+        "parents": 4,
+        "places": 5,
+        "met_newest_predicted": false,
+        "has_clock": false
+      },
+      {
+        "configuration": [
+          "dbt",
+          "D2(6,3)",
+          "RING-LAW",
+          "STEPS-2",
+          "OLDEST",
+          "parity"
+        ],
+        "how": "parity",
+        "kind": "join",
+        "knot": 90,
+        "made": 5,
+        "parents": 4,
+        "places": 5,
+        "met_newest_predicted": false,
+        "has_clock": false
+      },
+      {
+        "configuration": [
+          "dbt",
+          "D2(6,3)",
+          "RING-LAW",
+          "STEPS-2",
+          "OLDEST",
+          "parity"
+        ],
+        "how": "parity",
+        "kind": "join",
+        "knot": 91,
+        "made": 5,
+        "parents": 4,
+        "places": 5,
+        "met_newest_predicted": false,
+        "has_clock": false
+      },
+      {
+        "configuration": [
+          "dbt",
+          "D2(6,3)",
+          "RING-LAW",
+          "STEPS-2",
+          "OLDEST",
+          "parity"
+        ],
+        "how": "parity",
+        "kind": "join",
+        "knot": 92,
+        "made": 5,
+        "parents": 4,
+        "places": 5,
+        "met_newest_predicted": false,
+        "has_clock": false
+      },
+      {
+        "configuration": [
+          "dbt",
+          "DW(5,3)",
+          "RING-LAW",
+          "STEPS-2",
+          "OLDEST",
+          "parity"
+        ],
+        "how": "parity",
+        "kind": "join",
+        "knot": 75,
+        "made": 5,
+        "parents": 4,
+        "places": 5,
+        "met_newest_predicted": false,
+        "has_clock": false
+      },
+      {
+        "configuration": [
+          "dbt",
+          "DW(5,3)",
+          "RING-LAW",
+          "STEPS-2",
+          "OLDEST",
+          "parity"
+        ],
+        "how": "parity",
+        "kind": "join",
+        "knot": 76,
+        "made": 5,
+        "parents": 4,
+        "places": 5,
+        "met_newest_predicted": false,
+        "has_clock": false
+      },
+      {
+        "configuration": [
+          "dbt",
+          "Ring(5,4)",
+          "CAP-3(OFFSHOOT)",
+          "MET:offshoot",
+          "BY-COUNT",
+          "parity"
+        ],
+        "how": "parity",
+        "kind": "join",
+        "knot": 245,
+        "made": 5,
+        "parents": 38,
+        "places": 39,
+        "met_newest_predicted": false,
+        "has_clock": true
+      },
+      {
+        "configuration": [
+          "dbt",
+          "three-knot-larger",
+          "COPY-LAW(OFFSHOOT)",
+          "UP-TO-2",
+          "NEWEST",
+          "parity"
+        ],
+        "how": "parity",
+        "kind": "join",
+        "knot": 19,
+        "made": 4,
+        "parents": 4,
+        "places": 5,
+        "met_newest_predicted": false,
+        "has_clock": false
+      },
+      {
+        "configuration": [
+          "main",
+          "three-knot-larger",
+          "COPY-LAW(OFFSHOOT)",
+          "UP-TO-2",
+          "NEWEST",
+          "parity"
+        ],
+        "how": "parity",
+        "kind": "join",
+        "knot": 19,
+        "made": 4,
+        "parents": 4,
+        "places": 5,
+        "met_newest_predicted": false,
+        "has_clock": false
+      },
+      {
+        "configuration": [
+          "main",
+          "two-knot",
+          "RING-LAW",
+          "MET",
+          "NEWEST",
+          "parity"
+        ],
+        "how": "parity",
+        "kind": "join",
+        "knot": 40,
+        "made": 5,
+        "parents": 12,
+        "places": 14,
+        "met_newest_predicted": true,
+        "has_clock": true
+      },
+      {
+        "configuration": [
+          "main",
+          "two-knot",
+          "RING-LAW",
+          "MET",
+          "NEWEST",
+          "parity"
+        ],
+        "how": "parity",
+        "kind": "join",
+        "knot": 41,
+        "made": 5,
+        "parents": 12,
+        "places": 14,
+        "met_newest_predicted": true,
+        "has_clock": true
+      },
+      {
+        "configuration": [
+          "ring227",
+          "atlas 103 loose 3,3,3,1,1,2",
+          "RING-LAW",
+          "MET",
+          "IN-TURN",
+          "parity"
+        ],
+        "how": "parity",
+        "kind": "join",
+        "knot": 15,
+        "made": 2,
+        "parents": 10,
+        "places": 11,
+        "met_newest_predicted": false,
+        "has_clock": false
+      },
+      {
+        "configuration": [
+          "ring227",
+          "atlas 103 loose 3,3,3,1,1,2",
+          "RING-LAW",
+          "MET",
+          "OLDEST",
+          "parity"
+        ],
+        "how": "parity",
+        "kind": "join",
+        "knot": 15,
+        "made": 2,
+        "parents": 10,
+        "places": 11,
+        "met_newest_predicted": false,
+        "has_clock": false
+      },
+      {
+        "configuration": [
+          "ring227",
+          "atlas 103 loose 3,3,3,3,1,2",
+          "RING-LAW",
+          "MET",
+          "OLDEST",
+          "parity"
+        ],
+        "how": "parity",
+        "kind": "join",
+        "knot": 17,
+        "made": 2,
+        "parents": 12,
+        "places": 13,
+        "met_newest_predicted": false,
+        "has_clock": false
+      },
+      {
+        "configuration": [
+          "ring227",
+          "atlas 125 loose 3,3,1,2,2,3",
+          "RING-LAW",
+          "MET",
+          "IN-TURN",
+          "parity"
+        ],
+        "how": "parity",
+        "kind": "join",
+        "knot": 15,
+        "made": 2,
+        "parents": 10,
+        "places": 11,
+        "met_newest_predicted": false,
+        "has_clock": false
+      },
+      {
+        "configuration": [
+          "ring227",
+          "atlas 125 loose 3,3,1,2,2,3",
+          "RING-LAW",
+          "MET",
+          "OLDEST",
+          "parity"
+        ],
+        "how": "parity",
+        "kind": "join",
+        "knot": 15,
+        "made": 2,
+        "parents": 10,
+        "places": 11,
+        "met_newest_predicted": false,
+        "has_clock": false
+      },
+      {
+        "configuration": [
+          "ring227",
+          "atlas 125 loose 3,3,1,3,3,3",
+          "RING-LAW",
+          "MET",
+          "OLDEST",
+          "parity"
+        ],
+        "how": "parity",
+        "kind": "join",
+        "knot": 17,
+        "made": 2,
+        "parents": 12,
+        "places": 13,
+        "met_newest_predicted": false,
+        "has_clock": false
+      },
+      {
+        "configuration": [
+          "ring227",
+          "atlas 128 loose 1,3,3,3,3,3",
+          "RING-LAW",
+          "MET",
+          "OLDEST",
+          "parity"
+        ],
+        "how": "parity",
+        "kind": "join",
+        "knot": 17,
+        "made": 2,
+        "parents": 12,
+        "places": 13,
+        "met_newest_predicted": false,
+        "has_clock": false
+      },
+      {
+        "configuration": [
+          "ring227",
+          "atlas 147 loose 2,3,1,3,0,3",
+          "RING-LAW",
+          "MET",
+          "BY-COUNT",
+          "parity"
+        ],
+        "how": "parity",
+        "kind": "join",
+        "knot": 14,
+        "made": 2,
+        "parents": 9,
+        "places": 10,
+        "met_newest_predicted": false,
+        "has_clock": false
+      },
+      {
+        "configuration": [
+          "ring227",
+          "atlas 147 loose 2,3,2,3,0,3",
+          "RING-LAW",
+          "MET",
+          "BY-COUNT",
+          "parity"
+        ],
+        "how": "parity",
+        "kind": "join",
+        "knot": 14,
+        "made": 2,
+        "parents": 9,
+        "places": 10,
+        "met_newest_predicted": false,
+        "has_clock": false
+      },
+      {
+        "configuration": [
+          "ring227",
+          "atlas 154 loose 3,1,3,3,3,3",
+          "RING-LAW",
+          "MET",
+          "OLDEST",
+          "parity"
+        ],
+        "how": "parity",
+        "kind": "join",
+        "knot": 17,
+        "made": 2,
+        "parents": 12,
+        "places": 13,
+        "met_newest_predicted": false,
+        "has_clock": false
+      },
+      {
+        "configuration": [
+          "ring227",
+          "atlas 80 loose 3,1,3,3,2,3",
+          "RING-LAW",
+          "MET",
+          "BY-COUNT",
+          "parity"
+        ],
+        "how": "parity",
+        "kind": "join",
+        "knot": 17,
+        "made": 2,
+        "parents": 12,
+        "places": 13,
+        "met_newest_predicted": false,
+        "has_clock": false
+      },
+      {
+        "configuration": [
+          "ring227",
+          "atlas 98 loose 1,3,3,3,3,3",
+          "RING-LAW",
+          "MET",
+          "OLDEST",
+          "parity"
+        ],
+        "how": "parity",
+        "kind": "join",
+        "knot": 17,
+        "made": 2,
+        "parents": 12,
+        "places": 13,
+        "met_newest_predicted": false,
+        "has_clock": false
+      }
+    ],
+    "failure_runs_with_clock": 2,
+    "failure_runs_that_reach_comparison_pool": 1,
+    "failure_runs_that_reach_seeded_sample": 0,
+    "positive_c_iii_tests": 78,
+    "positive_c_iii_runs": 44,
+    "positive_c_iii_runs_by_law": {
+      "nae": 22,
+      "parity": 22
+    },
+    "positive_c_iii_runs_without_run_a_knot_test": 0,
+    "positive_c_iii_runs_with_run_a_failure": 0,
+    "positive_c_iii_sources_in_seeded_sample": 0,
+    "positive_c_iii_sources_in_timing_sample": 0
+  },
+  "comparisons": {
+    "seed": 2026112508,
+    "seed_replay_matches_source_keys": true,
+    "selection_order": "completion order saved in raw growth files",
+    "pool_size_before_prefix": 10116,
+    "prefix_size": 5000,
+    "sample_timing_overlap": 0,
+    "timing_sources_in_prefix": 20,
+    "timing_sources_in_each_group": {
+      "dbt": 10,
+      "main": 12,
+      "fbp": 14
+    },
+    "registered_sample": {
+      "nae": {
+        "sources": 54,
+        "sources_with_comparison": 47,
+        "runs": 1238,
+        "verdicts": 4161981,
+        "fails": 0,
+        "disagree": 0,
+        "untested": 0
+      },
+      "parity": {
+        "sources": 46,
+        "sources_with_comparison": 40,
+        "runs": 1145,
+        "verdicts": 4177027,
+        "fails": 0,
+        "disagree": 0,
+        "untested": 0
+      }
+    },
+    "timing_sample": {
+      "nae": {
+        "sources": 18,
+        "sources_with_comparison": 14,
+        "runs": 342,
+        "verdicts": 1263897,
+        "fails": 0,
+        "disagree": 0,
+        "untested": 0
+      },
+      "parity": {
+        "sources": 18,
+        "sources_with_comparison": 14,
+        "runs": 323,
+        "verdicts": 1119224,
+        "fails": 0,
+        "disagree": 0,
+        "untested": 0
+      }
+    }
+  }
+}

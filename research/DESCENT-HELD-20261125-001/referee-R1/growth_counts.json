@@ -1,0 +1,1094 @@
+{
+  "census population": {
+    "up to five knots": 3380,
+    "up to five kept": 3348,
+    "up to five kept agreeing": 133,
+    "six knots": 82656,
+    "six kept": 82372,
+    "six kept agreeing": 804
+  },
+  "hand cases": {
+    "H1_two_knot/base": {
+      "births": [
+        4,
+        6
+      ],
+      "unequal_parents": []
+    },
+    "H1_two_knot/NEXT3-PLACES (usable)": {
+      "births": [
+        4,
+        10
+      ],
+      "unequal_parents": []
+    },
+    "H1_two_knot/NEXT3-PLACES (barred)": {
+      "births": [
+        4,
+        6
+      ],
+      "unequal_parents": []
+    },
+    "H1_two_knot/NEXT3-BARRED": {
+      "births": [
+        4,
+        6
+      ],
+      "unequal_parents": []
+    },
+    "W1_waiting/base": {
+      "births": [
+        2,
+        6,
+        13
+      ],
+      "unequal_parents": [
+        [
+          3,
+          {
+            "knot": 12,
+            "parents": [
+              2,
+              7
+            ],
+            "parents_parent_steps": [
+              0,
+              1
+            ],
+            "parent_steps": 2,
+            "places": 5,
+            "p": 2,
+            "F": 3,
+            "s": 0,
+            "barred_at_birth": 0
+          }
+        ]
+      ]
+    },
+    "W2_holding/base": {
+      "births": [
+        2,
+        3,
+        7
+      ],
+      "unequal_parents": [
+        [
+          3,
+          {
+            "knot": 9,
+            "parents": [
+              0,
+              7
+            ],
+            "parents_parent_steps": [
+              0,
+              2
+            ],
+            "parent_steps": 3,
+            "places": 3,
+            "p": 2,
+            "F": 1,
+            "s": 0,
+            "barred_at_birth": 0
+          }
+        ]
+      ]
+    },
+    "W2b_holding_retiring/base": {
+      "births": [
+        1,
+        4
+      ],
+      "unequal_parents": [
+        [
+          2,
+          {
+            "knot": 5,
+            "parents": [
+              0,
+              4
+            ],
+            "parents_parent_steps": [
+              0,
+              1
+            ],
+            "parent_steps": 2,
+            "places": 3,
+            "p": 2,
+            "F": 1,
+            "s": 0,
+            "barred_at_birth": 0
+          }
+        ]
+      ]
+    }
+  },
+  "lone cases": {
+    "base tested": 10,
+    "base exchanges": 10,
+    "PU tested": 10,
+    "PU exchanges": 0,
+    "PB tested": 10,
+    "PB exchanges": 0,
+    "BB tested": 10,
+    "BB exchanges": 0
+  },
+  "gates": {
+    "gate": 152,
+    "extra HOLD": 171,
+    "prior HOLD events": 88
+  },
+  "restarts": {
+    "restarts": 140,
+    "with barred distinctions at hand-in": 17,
+    "allowed starts at hand-in": 123,
+    "first continuation round changes structure": 130,
+    "with a later birth": 129,
+    "with two later rounds executed": 130,
+    "rounds compared": 270,
+    "later changes compared": 248,
+    "later rounds with births compared": 247,
+    "hand-ins": 126,
+    "hand-ins with barred marks": 83,
+    "old parent distinctions in hand-ins": 882,
+    "ended": [
+      {
+        "start": "LONE-FOUR",
+        "law": "F1R",
+        "t": 3,
+        "ended_at": 3,
+        "state": "stopped"
+      },
+      {
+        "start": "TWO-KNOT",
+        "law": "C3WF",
+        "t": 3,
+        "ended_at": 3,
+        "state": "stopped"
+      },
+      {
+        "start": "LONE-FOUR",
+        "law": "F1W",
+        "t": 2,
+        "ended_at": 2,
+        "state": "jammed"
+      },
+      {
+        "start": "LONE-FOUR",
+        "law": "F1W",
+        "t": 3,
+        "ended_at": 2,
+        "state": "jammed"
+      }
+    ]
+  },
+  "census restarts": {
+    "candidates_with_multiplicity": {
+      "subset": 13975,
+      "prefix": 2432,
+      "complete": 80
+    },
+    "sources_all": 223,
+    "sources_kept": 220,
+    "from_223": {
+      "prefix": 515,
+      "complete": 4,
+      "subset": 1234,
+      "within_only": 511,
+      "subset_minus_prefix": 719,
+      "by_law": {
+        "R3W": {
+          "prefix": 228,
+          "complete": 2,
+          "subset": 642
+        },
+        "F1O": {
+          "prefix": 225,
+          "complete": 2,
+          "subset": 668
+        },
+        "F1R": {
+          "prefix": 186,
+          "complete": 2,
+          "subset": 533
+        },
+        "ORD": {
+          "prefix": 145,
+          "complete": 2,
+          "subset": 494
+        },
+        "C3W": {
+          "prefix": 234,
+          "complete": 2,
+          "subset": 648
+        },
+        "C3WF": {
+          "prefix": 208,
+          "complete": 1,
+          "subset": 514
+        },
+        "F1W": {
+          "prefix": 225,
+          "complete": 2,
+          "subset": 629
+        },
+        "ORDW": {
+          "prefix": 164,
+          "complete": 2,
+          "subset": 571
+        },
+        "OFW": {
+          "prefix": 191,
+          "complete": 1,
+          "subset": 599
+        },
+        "R4W": {
+          "prefix": 0,
+          "complete": 0,
+          "subset": 0
+        }
+      },
+      "complete_list": [
+        23,
+        35,
+        1739,
+        1827
+      ]
+    },
+    "from_220_kept": {
+      "prefix": 515,
+      "complete": 4,
+      "subset": 1234,
+      "within_only": 511,
+      "subset_minus_prefix": 719,
+      "by_law": {
+        "R3W": {
+          "prefix": 228,
+          "complete": 2,
+          "subset": 642
+        },
+        "F1O": {
+          "prefix": 225,
+          "complete": 2,
+          "subset": 668
+        },
+        "F1R": {
+          "prefix": 186,
+          "complete": 2,
+          "subset": 533
+        },
+        "ORD": {
+          "prefix": 145,
+          "complete": 2,
+          "subset": 494
+        },
+        "C3W": {
+          "prefix": 234,
+          "complete": 2,
+          "subset": 648
+        },
+        "C3WF": {
+          "prefix": 208,
+          "complete": 1,
+          "subset": 514
+        },
+        "F1W": {
+          "prefix": 225,
+          "complete": 2,
+          "subset": 629
+        },
+        "ORDW": {
+          "prefix": 164,
+          "complete": 2,
+          "subset": 571
+        },
+        "OFW": {
+          "prefix": 191,
+          "complete": 1,
+          "subset": 599
+        },
+        "R4W": {
+          "prefix": 0,
+          "complete": 0,
+          "subset": 0
+        }
+      },
+      "complete_list": [
+        23,
+        35,
+        1739,
+        1827
+      ]
+    }
+  },
+  "closure limits": {
+    "LONE-THREE/C3WF/base": {
+      "start": [
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "births": [
+        3,
+        3,
+        1,
+        0
+      ],
+      "end": "stopped",
+      "usable_distinctions_after": 0,
+      "rounds": [
+        {
+          "closing": false,
+          "barred_before": 0,
+          "barred_after": 0,
+          "births": [
+            {
+              "parents": [
+                0
+              ],
+              "demand": 2,
+              "F": 2,
+              "s": 0,
+              "barred_at_birth": 0
+            },
+            {
+              "parents": [
+                0
+              ],
+              "demand": 2,
+              "F": 2,
+              "s": 0,
+              "barred_at_birth": 0
+            },
+            {
+              "parents": [
+                0
+              ],
+              "demand": 2,
+              "F": 2,
+              "s": 0,
+              "barred_at_birth": 0
+            }
+          ]
+        },
+        {
+          "closing": false,
+          "barred_before": 0,
+          "barred_after": 0,
+          "births": [
+            {
+              "parents": [
+                1,
+                2
+              ],
+              "demand": 1,
+              "F": 1,
+              "s": 0,
+              "barred_at_birth": 0
+            },
+            {
+              "parents": [
+                1,
+                3
+              ],
+              "demand": 1,
+              "F": 1,
+              "s": 0,
+              "barred_at_birth": 0
+            },
+            {
+              "parents": [
+                2,
+                3
+              ],
+              "demand": 1,
+              "F": 1,
+              "s": 0,
+              "barred_at_birth": 0
+            }
+          ]
+        },
+        {
+          "closing": true,
+          "barred_before": 0,
+          "barred_after": 0,
+          "births": [
+            {
+              "parents": [
+                4,
+                5,
+                6
+              ],
+              "demand": 0,
+              "F": 0,
+              "s": 0,
+              "barred_at_birth": 0
+            }
+          ]
+        },
+        {
+          "closing": false,
+          "barred_before": 0,
+          "barred_after": 0,
+          "births": []
+        }
+      ]
+    },
+    "LONE-THREE/C3WF/PB": {
+      "start": [
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "births": [
+        3,
+        3,
+        1,
+        0
+      ],
+      "end": "stopped",
+      "usable_distinctions_after": 0,
+      "rounds": [
+        {
+          "closing": false,
+          "barred_before": 0,
+          "barred_after": 3,
+          "births": [
+            {
+              "parents": [
+                0
+              ],
+              "demand": 2,
+              "F": 2,
+              "s": 1,
+              "barred_at_birth": 1
+            },
+            {
+              "parents": [
+                0
+              ],
+              "demand": 2,
+              "F": 2,
+              "s": 1,
+              "barred_at_birth": 1
+            },
+            {
+              "parents": [
+                0
+              ],
+              "demand": 2,
+              "F": 2,
+              "s": 1,
+              "barred_at_birth": 1
+            }
+          ]
+        },
+        {
+          "closing": false,
+          "barred_before": 3,
+          "barred_after": 9,
+          "births": [
+            {
+              "parents": [
+                1,
+                2
+              ],
+              "demand": 1,
+              "F": 1,
+              "s": 2,
+              "barred_at_birth": 2
+            },
+            {
+              "parents": [
+                1,
+                3
+              ],
+              "demand": 1,
+              "F": 1,
+              "s": 2,
+              "barred_at_birth": 2
+            },
+            {
+              "parents": [
+                2,
+                3
+              ],
+              "demand": 1,
+              "F": 1,
+              "s": 2,
+              "barred_at_birth": 2
+            }
+          ]
+        },
+        {
+          "closing": false,
+          "barred_before": 9,
+          "barred_after": 12,
+          "births": [
+            {
+              "parents": [
+                4,
+                5,
+                6
+              ],
+              "demand": 0,
+              "F": 1,
+              "s": 2,
+              "barred_at_birth": 3
+            }
+          ]
+        },
+        {
+          "closing": false,
+          "barred_before": 12,
+          "barred_after": 12,
+          "births": []
+        }
+      ]
+    },
+    "LONE-THREE/C3WF/BB": {
+      "start": [
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "births": [
+        3,
+        3,
+        1,
+        0
+      ],
+      "end": "stopped",
+      "usable_distinctions_after": 0,
+      "rounds": [
+        {
+          "closing": false,
+          "barred_before": 0,
+          "barred_after": 3,
+          "births": [
+            {
+              "parents": [
+                0
+              ],
+              "demand": 2,
+              "F": 2,
+              "s": 1,
+              "barred_at_birth": 1
+            },
+            {
+              "parents": [
+                0
+              ],
+              "demand": 2,
+              "F": 2,
+              "s": 1,
+              "barred_at_birth": 1
+            },
+            {
+              "parents": [
+                0
+              ],
+              "demand": 2,
+              "F": 2,
+              "s": 1,
+              "barred_at_birth": 1
+            }
+          ]
+        },
+        {
+          "closing": false,
+          "barred_before": 3,
+          "barred_after": 9,
+          "births": [
+            {
+              "parents": [
+                1,
+                2
+              ],
+              "demand": 1,
+              "F": 1,
+              "s": 2,
+              "barred_at_birth": 2
+            },
+            {
+              "parents": [
+                1,
+                3
+              ],
+              "demand": 1,
+              "F": 1,
+              "s": 2,
+              "barred_at_birth": 2
+            },
+            {
+              "parents": [
+                2,
+                3
+              ],
+              "demand": 1,
+              "F": 1,
+              "s": 2,
+              "barred_at_birth": 2
+            }
+          ]
+        },
+        {
+          "closing": false,
+          "barred_before": 9,
+          "barred_after": 12,
+          "births": [
+            {
+              "parents": [
+                4,
+                5,
+                6
+              ],
+              "demand": 0,
+              "F": 1,
+              "s": 2,
+              "barred_at_birth": 3
+            }
+          ]
+        },
+        {
+          "closing": false,
+          "barred_before": 12,
+          "barred_after": 12,
+          "births": []
+        }
+      ]
+    },
+    "TRIANGLE/ORD/base": {
+      "start": [
+        [
+          0,
+          2,
+          3
+        ],
+        [
+          0,
+          1,
+          4
+        ],
+        [
+          1,
+          2,
+          5
+        ]
+      ],
+      "births": [
+        1,
+        0
+      ],
+      "end": "stopped",
+      "usable_distinctions_after": 0,
+      "rounds": [
+        {
+          "closing": true,
+          "barred_before": 0,
+          "barred_after": 0,
+          "births": [
+            {
+              "parents": [
+                0,
+                1,
+                2
+              ],
+              "demand": 0,
+              "F": 0,
+              "s": 0,
+              "barred_at_birth": 0
+            }
+          ]
+        },
+        {
+          "closing": false,
+          "barred_before": 0,
+          "barred_after": 0,
+          "births": []
+        }
+      ]
+    },
+    "TRIANGLE/ORD/PB": {
+      "start": [
+        [
+          0,
+          2,
+          3
+        ],
+        [
+          0,
+          1,
+          4
+        ],
+        [
+          1,
+          2,
+          5
+        ]
+      ],
+      "births": [
+        1,
+        0
+      ],
+      "end": "stopped",
+      "usable_distinctions_after": 0,
+      "rounds": [
+        {
+          "closing": true,
+          "barred_before": 0,
+          "barred_after": 0,
+          "births": [
+            {
+              "parents": [
+                0,
+                1,
+                2
+              ],
+              "demand": 0,
+              "F": 0,
+              "s": 0,
+              "barred_at_birth": 0
+            }
+          ]
+        },
+        {
+          "closing": false,
+          "barred_before": 0,
+          "barred_after": 0,
+          "births": []
+        }
+      ]
+    },
+    "TRIANGLE/ORD/BB": {
+      "start": [
+        [
+          0,
+          2,
+          3
+        ],
+        [
+          0,
+          1,
+          4
+        ],
+        [
+          1,
+          2,
+          5
+        ]
+      ],
+      "births": [
+        1,
+        0
+      ],
+      "end": "stopped",
+      "usable_distinctions_after": 0,
+      "rounds": [
+        {
+          "closing": true,
+          "barred_before": 0,
+          "barred_after": 0,
+          "births": [
+            {
+              "parents": [
+                0,
+                1,
+                2
+              ],
+              "demand": 0,
+              "F": 0,
+              "s": 0,
+              "barred_at_birth": 0
+            }
+          ]
+        },
+        {
+          "closing": false,
+          "barred_before": 0,
+          "barred_after": 0,
+          "births": []
+        }
+      ]
+    }
+  },
+  "disconnected parity example": {
+    "start": [
+      [
+        0,
+        2,
+        3
+      ],
+      [
+        0,
+        1,
+        4
+      ],
+      [
+        1,
+        2,
+        5
+      ],
+      [
+        6,
+        7,
+        8
+      ]
+    ],
+    "start_failures": [],
+    "closing": false,
+    "new_knots": [
+      {
+        "knot": 4,
+        "parents": [
+          0,
+          1,
+          2
+        ],
+        "places": [
+          3,
+          4,
+          5,
+          9
+        ],
+        "fresh": [
+          9
+        ]
+      },
+      {
+        "knot": 5,
+        "parents": [
+          3
+        ],
+        "places": [
+          8,
+          10,
+          11
+        ],
+        "fresh": [
+          10,
+          11
+        ]
+      },
+      {
+        "knot": 6,
+        "parents": [
+          3
+        ],
+        "places": [
+          7,
+          12,
+          13
+        ],
+        "fresh": [
+          12,
+          13
+        ]
+      },
+      {
+        "knot": 7,
+        "parents": [
+          3
+        ],
+        "places": [
+          6,
+          14,
+          15
+        ],
+        "fresh": [
+          14,
+          15
+        ]
+      }
+    ],
+    "failures_after_round_one": [
+      4
+    ]
+  },
+  "named growth": {
+    "PU new knots": 433310,
+    "PU new knots receiving s": 172916,
+    "PU sum s": 268492,
+    "usable form runs with same birth totals": 28,
+    "PB new knots": 110052,
+    "PB new knots receiving s": 68505,
+    "PB sum s": 101987,
+    "barred form comparisons": 616,
+    "barred form equals base through required round": 616,
+    "barred form base closes": 48,
+    "barred form actually closes at base closure round": 22,
+    "barred form gains a later birth": 22,
+    "BB new knots": 110052,
+    "BB new knots receiving s": 84437,
+    "BB sum s": 126433
+  },
+  "shortness": {
+    "member_rounds_holding_barred_places": 45536,
+    "rounds_where_all_loose_reading_gives_another_short_set": 577,
+    "runs with different short set on some round": 195
+  },
+  "census sample": {
+    "up_to_four_selected": 223,
+    "five_selected": [
+      311,
+      325,
+      334,
+      352,
+      407,
+      415,
+      436,
+      454,
+      476,
+      480,
+      555,
+      584,
+      660,
+      813,
+      1030,
+      1050,
+      1090,
+      1297,
+      1375,
+      1397,
+      1447,
+      1513,
+      1567,
+      1603,
+      1634,
+      1770,
+      1852,
+      1887,
+      1940,
+      2103,
+      2150,
+      2169,
+      2178,
+      2301,
+      2309,
+      2463,
+      2530,
+      2585,
+      2672,
+      2821,
+      2857,
+      2958,
+      2981,
+      2982,
+      2997,
+      3049,
+      3168,
+      3196,
+      3214,
+      3298
+    ],
+    "five_sample_seed": 223515,
+    "six_prefix_in_registered_order": 60,
+    "six_selected": [
+      24,
+      74614,
+      2388,
+      76543,
+      65078,
+      36091,
+      52328,
+      18524,
+      8353,
+      39136,
+      18982,
+      64398,
+      60310,
+      31703,
+      37665,
+      8128,
+      26205,
+      80829,
+      32370,
+      41955,
+      37950,
+      34918,
+      7028,
+      68069,
+      69907,
+      60392,
+      52539,
+      17286,
+      46056,
+      41960,
+      4908,
+      79935,
+      11600,
+      5132,
+      67756,
+      71181,
+      53754,
+      65187,
+      54844,
+      25519,
+      30983,
+      12634,
+      63367,
+      991,
+      80074,
+      7541,
+      60051,
+      37177,
+      48824,
+      69520,
+      23756,
+      69538,
+      7082,
+      26379,
+      57418,
+      18574,
+      59825,
+      43092,
+      4424,
+      36338
+    ]
+  },
+  "comparisons": {
+    "census population through five knots": 3380,
+    "six-knot census population": 82656,
+    "frozen hand birth records": 7,
+    "census numbered witnesses": 3,
+    "three-knot closing": 18,
+    "lone knot and first offshoot": 40,
+    "gate": 20,
+    "extra HOLD": 24,
+    "prior HOLD events": 16,
+    "restart classified": 144,
+    "restart exact states and births": 270,
+    "restart saved totals": 140,
+    "round-one hand-ins": 126,
+    "census restarts totals": 2,
+    "census restarts index lists": 20,
+    "named base growth": 308,
+    "named count form growth": 924,
+    "shortness control": 462,
+    "sample base growth through five knots": 7602,
+    "sample count form growth through five knots": 5670,
+    "sample six-knot base growth": 840
+  },
+  "disagreements": {},
+  "examples": {},
+  "phase_seconds": {
+    "census population": 3.402,
+    "hand cases": 0.002,
+    "lone cases": 0.002,
+    "gates": 0.308,
+    "restarts": 0.082,
+    "census restarts": 0.409,
+    "closure limits": 0.001,
+    "disconnected parity example": 0.0,
+    "named growth": 23.567,
+    "shortness": 11.294,
+    "census sample": 170.979
+  },
+  "seconds": 210.595
+}

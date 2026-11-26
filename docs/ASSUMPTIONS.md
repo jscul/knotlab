@@ -262,6 +262,66 @@ evidence: results and their status come from the records each entry links.
 | [A204](#a204--read-only-the-later-receivers-new-marks-until-they-are-shared) | Read only the later receiver’s new marks until they are shared | scaffold | Assumed |
 | [A205](#a205--learn-letter-frequencies-with-shared-local-pixel-wiring) | Learn letter frequencies with shared local pixel wiring | scaffold | Assumed |
 | [A206](#a206--repeat-an-exchange-on-the-same-two-paid-distinctions) | Repeat an exchange on the same two paid distinctions | scaffold | Assumed |
+| [A207](#a207--choose-pixel-count-groups-by-reward-separation) | Choose pixel count groups by reward separation | scaffold | Assumed |
+| [A208](#a208--vary-pen-strokes-in-matched-training-slots) | Vary pen strokes in matched training slots | scaffold | Assumed |
+| [A209](#a209--read-the-position-of-pixels-from-a-common-starting-row-and-column) | Read the position of pixels from a common starting row and column | scaffold | Assumed |
+| [A210](#a210--extend-a-reference-before-filling-a-new-knot) | Extend a reference before filling a new knot | scaffold | Assumed |
+| [A211](#a211--read-an-earlier-receipt-through-the-holdings-of-a-newborn) | Read an earlier receipt through the holdings of a newborn | scaffold | Assumed |
+| [A212](#a212--a-free-message-may-choose-how-to-edit-using-every-local-pre-edit-reading) | A free message may choose how to edit using every local pre-edit reading | scaffold | Assumed |
+| [A213](#a213--a-local-shortage-may-follow-from-obligations-beyond-the-edit-holders-record) | A local shortage may follow from obligations beyond the edit holder’s record | scaffold | Assumed |
+| [A214](#a214--a-reading-first-disclosed-after-the-edit-may-be-used-as-a-comparison) | A reading first disclosed after the edit may be used as a comparison | scaffold | Assumed |
+| [A215](#a215--read-the-operator-test-on-every-stage-of-growth) | Read the operator test on every stage of growth | scaffold | Assumed |
+| [A216](#a216--rewire-a-historys-births-with-no-regard-to-who-shares-with-whom) | Rewire a history's births with no regard to who shares with whom | scaffold | Assumed |
+| [A217](#a217--let-each-rewarded-example-be-a-parity-knot-over-window-count-parities) | Let each rewarded example be a parity knot over window-count parities | scaffold | Assumed |
+| [A218](#a218--weigh-every-present-word-equally-and-take-a-birth-as-the-setting) | Weigh every present word equally and take a birth as the setting | scaffold | Assumed |
+| [A219](#a219--compare-payment-allocations-by-the-named-distribution-of-the-old-words) | Compare payment allocations by the named distribution of the old words | scaffold | Overturned |
+| [A220](#a220--join-two-copies-of-one-clock-on-a-donor-one-loose-distinction-short-and-count-every-order-equally) | Join two copies of one clock on a donor one loose distinction short, and count every order equally | scaffold | Assumed |
+| [A221](#a221--remove-an-old-word-that-has-no-lawful-completion-under-a-rule-that-is-both-parity-and-not-all-equal) | Remove an old word that has no lawful completion under a rule that is both parity and not-all-equal | scaffold | Assumed |
+| [A222](#a222--decide-between-growth-and-source-hood-by-two-bars-fixed-in-advance) | Decide between growth and source-hood by two bars fixed in advance | scaffold | Assumed |
+| [A223](#a223--a-fold-of-emergence-is-a-made-pattern-that-reads-another-and-grows-its-own) | A fold of emergence is a made pattern that reads another and grows its own | interpretation | Assumed |
+| [A224](#a224--three-added-rules-give-a-ring-that-returns-and-gives-off-parts) | Three added rules give a ring that returns and gives off parts | scaffold | Assumed |
+| [A225](#a225--let-a-birth-take-a-distinction-that-already-has-two-holders) | Let a birth take a distinction that already has two holders | scaffold | Assumed |
+| [A226](#a226--read-a-value-keyed-setting-by-pooling-finished-words-unnormalized) | Read a value-keyed setting by pooling finished words, unnormalized | scaffold | Assumed |
+| [A227](#a227--order-structures-by-knots-first-then-by-extra-holders) | Order structures by knots first, then by extra holders | scaffold | Assumed |
+| [A228](#a228--the-logic-comes-before-time-and-time-would-be-a-pattern-like-the-others) | The logic comes before time, and time would be a pattern like the others | interpretation | Assumed |
+| [A229](#a229--time-is-a-priority-among-updates-and-what-absorbs-information-samples-the-whole) | Time is a priority among updates, and what absorbs information samples the whole | interpretation | Assumed |
+| [A230](#a230--a-short-knot-pays-the-rest-with-shared-distinctions-rule-r) | A short knot pays the rest with shared distinctions (rule R) | scaffold | Assumed |
+| [A231](#a231--pay-the-oldest-or-the-newest-allowed-shared-distinction) | Pay the oldest or the newest allowed shared distinction | scaffold | Assumed |
+| [A232](#a232--take-parts-of-the-censuss-structures-as-starts-and-give-every-newborn-a-law) | Take parts of the census's structures as starts and give every newborn a law | scaffold | Assumed |
+| [A233](#a233--grow-a-start-that-holds-a-distinction-three-times-with-every-two-of-its-holders-meeting) | Grow a start that holds a distinction three times with every two of its holders meeting | scaffold | Assumed |
+| [A234](#a234--probe-a-part-with-one-added-not-all-equal-knot-that-has-a-fresh-distinction) | Probe a part with one added not-all-equal knot that has a fresh distinction | scaffold | Assumed |
+| [A235](#a235--a-one-parent-birth-also-takes-a-distinction-its-parent-shares-rule-q) | A one-parent birth also takes a distinction its parent shares (rule Q) | scaffold | Assumed |
+| [A236](#a236--let-each-re-reading-birth-take-any-shared-distinction-of-its-parent) | Let each re-reading birth take any shared distinction of its parent | scaffold | Assumed |
+| [A237](#a237--the-parts-of-the-live-roster-may-take-their-rounds-one-at-a-time) | The parts of the live roster may take their rounds one at a time | scaffold | Assumed |
+| [A238](#a238--small-starts-are-counted-once-each-up-to-isomorphism-in-the-census-of-returning-parts) | Small starts are counted once each up to isomorphism in the census of returning parts | measure | Assumed |
+| [A239](#a239--read-an-open-choice-of-a-growth-law-as-an-observers-setting) | Read an open choice of a growth law as an observer's setting | scaffold | Assumed |
+| [A240](#a240--count-every-complete-configuration-once-equal-weight-on-the-allowed-words-of-each-finished-structure) | Count every complete configuration once: equal weight on the allowed words of each finished structure | reading | Assumed |
+| [A241](#a241--knots-that-descend-from-one-knot-can-be-joined-again-through-it) | Knots that descend from one knot can be joined again through it | working premise | Confirmed |
+| [A242](#a242--every-birth-writes-its-parents-and-a-law-may-read-that-record) | Every birth writes its parents and a law may read that record | scaffold | Assumed |
+| [A243](#a243--a-start-knot-reads-the-start-as-given-and-a-knot-that-waited-reads-again-only-against-those-that-waited-with-it) | A start knot reads the start as given and a knot that waited reads again only against those that waited with it | scaffold | Assumed |
+| [A244](#a244--copying-is-a-pattern-the-growth-makes-and-not-a-law) | Copying is a pattern the growth makes and not a law | working premise | Assumed |
+| [A245](#a245--a-birth-may-take-a-distinction-that-none-of-its-parents-holds) | A birth may take a distinction that none of its parents holds | scaffold | Assumed |
+| [A246](#a246--a-part-reads-another-when-its-course-differs-with-the-other-stopped) | A part reads another when its course differs with the other stopped | measure | Assumed |
+| [A247](#a247--each-knot-carries-a-stamp-written-at-its-birth) | Each knot carries a stamp written at its birth | scaffold | Assumed |
+| [A248](#a248--no-one-pattern-copies-every-pattern-because-what-it-meets-can-change-its-course) | No one pattern copies every pattern, because what it meets can change its course | working premise | Assumed |
+| [A249](#a249--a-copier-may-have-to-be-hit-by-chance-among-very-many-growths) | A copier may have to be hit by chance among very many growths | working premise | Assumed |
+| [A250](#a250--at-a-birth-each-old-states-weight-is-shared-equally-among-its-completions) | At a birth each old state's weight is shared equally among its completions | scaffold | Assumed |
+| [A251](#a251--a-structure-built-by-hand-is-taken-as-its-own-start) | A structure built by hand is taken as its own start | scaffold | Assumed |
+| [A252](#a252--a-ration-may-take-its-parents-count-of-places) | A ration may take its parents' count of places | scaffold | Assumed |
+| [A253](#a253--a-start-is-supplied-with-its-meeting-knots-agreeing-in-their-counts) | A start is supplied with its meeting knots agreeing in their counts | scaffold | Assumed |
+| [A254](#a254--one-power-from-every-knot-examined-is-tested-with-fixed-thresholds) | One power from every knot examined is tested with fixed thresholds | scaffold | Assumed |
+| [A255](#a255--a-birth-may-take-a-shared-distinction-when-exactly-one-is-on-offer) | A birth may take a shared distinction when exactly one is on offer | scaffold | Assumed |
+| [A256](#a256--an-offshoot-may-receive-as-many-fresh-distinctions-as-its-parent-had-joins-asked-of-it) | An offshoot may receive as many fresh distinctions as its parent had joins asked of it | scaffold | Assumed |
+| [A257](#a257--a-birth-may-take-the-most-held-distinction-within-two-holder-steps-of-knots) | A birth may take the most-held distinction within two holder steps of knots | scaffold | Assumed |
+| [A258](#a258--starts-built-from-two-seeds-joined-by-one-link-distinction) | Starts built from two seeds joined by one link distinction | scaffold | Assumed |
+| [A259](#a259--two-holder-roles-are-read-through-their-exclusive-distinctions) | Two holder roles are read through their exclusive distinctions | scaffold | Assumed |
+| [A260](#a260--a-birth-can-use-the-preceding-round-to-choose-a-distinction) | A birth can use the preceding round to choose a distinction | scaffold | Assumed |
+| [A261](#a261--a-birth-can-distinguish-its-one-step-and-two-step-offers) | A birth can distinguish its one-step and two-step offers | scaffold | Assumed |
+| [A262](#a262--a-birth-can-remember-whether-a-place-has-ever-been-taken) | A birth can remember whether a place has ever been taken | scaffold | Assumed |
+| [A263](#a263--a-birth-can-read-the-latest-past-take-among-the-offered-distinctions) | A birth can read the latest past take among the offered distinctions | scaffold | Assumed |
+| [A264](#a264--a-birth-can-read-the-creation-round-of-an-offered-distinction) | A birth can read the creation round of an offered distinction | scaffold | Assumed |
+| [A265](#a265--a-birth-can-tell-a-made-distinction-from-one-present-at-the-start) | A birth can tell a made distinction from one present at the start | scaffold | Assumed |
+| [A266](#a266--a-birth-can-distinguish-exactly-three-current-holders) | A birth can distinguish exactly three current holders | scaffold | Assumed |
 
 ## Entries
 
@@ -2866,6 +2926,7 @@ evidence: results and their status come from the records each entry links.
   A single temporary test pair can certify a true neighbor on a favorable reading. Under the connected growth rule the present bond distances cannot guarantee the first neighbor: even direct replacement admits continued ambiguity. [Proof and checks](../research/ONE-PROBE-ALIGNMENT-20261118-001/one_pair.md)
   A rule with 75 patterns compiled for the 35-junction target and its join order reads the current bond-distance table. Its instrument can replace both tests together. The construction is computed, with a symmetry argument for the last 27 joins. Individually moving one table-identified pair at a time can be blocked before the second join, even with perfect recall in the referee’s finite game. [Two live tests and referee](../research/TWO-PROBE-ALIGNMENT-20261118-001/two_pairs.md)
 - **History.**
+  - 2026-11-25 · [KNOTS-WITHIN-REACH-20261125-001](../research/KNOTS-WITHIN-REACH-20261125-001/decision.md) (computed, referee pending): at the growing end, under not-all-equal, how strongly a loose distinction of one member and one of another are related is graded, and with the members' loose counts held equal it still differs; but it does not keep the order of the members' witnessed steps, holder steps or arrival delay, from a stage of 7 knots up (9 or 10 knots with shared-place counts held equal too). Under parity two loose distinctions are tied or unrelated. So on the growing end the grading in the states is not a distance in the order sense. Status unchanged.
   - 2026-11-22 · At one named, positive-age, 31-distinction not-all-equal table, giving every current word equal weight determines seven funded births. The only two-birth rival fails a necessary equality on three distinctions. The theorem allows arbitrary admissible static predecessors and does not recover growth from all pair tables. The parity controls still admit ambiguities. [The uniform two-birth rival](../research/PAIR-READINGS-AND-SEVEN-FOUNDERS-20261122-001A/result.md)
   - 2026-11-20 · Given ordinary not-all-equal growth and recursive division among extensions, the selected explosive 31-name table forces fourteen loose names, six newest holdings and seven named, priced two-parent births over every reached rival. The full next roster, loose names and newest supports are mutually recoverable given the pairs at every positive age. Under uniform words the remaining rival needs a 29-name one-loose source with exactly 200,393,770 words. Under parity the same preparation has every pair at one half. [Pair study](../research/NEWEST-KNOTS-AND-LOCAL-JOINS-20261120-001A/results.md).
   - 2026-11-20 · With ordinary not-all-equal growth the 29-name pair table fixes all twenty loose names, five parents and ten births of price three, under both word weights. At every size inherited pairs identify all loose names of a supplied newest knot. Reached parity pair tables can give ten births versus eight. Under the new join, equal marked state distance still gives two steps versus never on funded trees. [Pair readings](../research/LOOSE-NAMES-AND-SPENT-JOINS-20261120-001A/results.md). [Paid join](../research/LOOSE-NAMES-AND-SPENT-JOINS-20261120-001B/results.md).
@@ -3035,6 +3096,7 @@ evidence: results and their status come from the records each entry links.
   ties broke one prediction there. Under plain implications this entry's strict reading is satisfied exactly: betweenness is the
   order's intervals.
 - **History.**
+  - 2026-11-25 · [KNOTS-WITHIN-REACH-20261125-001](../research/KNOTS-WITHIN-REACH-20261125-001/decision.md) (computed, referee pending): the registered betweenness test on triples of members fails on some stage under each of four laws (for example 16,639 of 61,925 triples under the ordinary count), and the order test against arrival delay fails from a stage of 7 knots. These are stage readings on rounds 1 to 3 of small starts. Status unchanged.
   - 2026-11-17 · Scoped after the referee `DISTANCE-DIM-R1`: degree 12 belongs to the relative-neighbourhood test.
   - 2026-11-17 · Challenge "levels from a start" run by `DISTANCE-DIM-20261117-001`; status unchanged.
   - 2026-11-17 · Challenge partly run by the referee `DISTANCE-ORDER-R1` (the order-only reading above); status unchanged.
@@ -3244,6 +3306,8 @@ evidence: results and their status come from the records each entry links.
   rule avoid trees without the complete round, and what does it build? The cheapest discriminator is the serial rule with a
   distance-only preference (join before extending) from one knot, compared with the complete round on the same seeds.
 - **History.**
+  - 2026-11-24 · `LOCAL-ROUND-20261123-001` ([decision](../research/LOCAL-ROUND-20261123-001/decision.md), referee pending) swapped the complete round for births made one at a time under a guard: a knot acts when every knot made alongside it has parents that have finished giving, and replays the round on that record. In every order searched this builds what the complete rounds build, with waiting, without it and under ordinary growth. The round is then kept by nobody, but it is still what the law replays, from a written record of parents (A242). Status unchanged.
+  - 2026-11-23 · `RING-IN-BALANCE-20261123-001`, ticket C ([decision](../research/RING-IN-BALANCE-20261123-001/decision.md), referee pending): under the added rules of A224 the complete round can be replaced by rounds taken part by part in any order, with the same structure built (726 runs and an argument), but not by one birth at a time with every knot reading again, under which the ring jams. Status unchanged.
   - 2026-11-20 · INFLUENCE-CONE-20261120-001 · Within the identified class every fair writing of the fixed structure gives the complete-cut cone at each size. Recomputed individual births can lose the exact receiver pair even with no edit. [Scheduling controls](../research/INFLUENCE-CONE-20261120-001/orders.md).
   - 2026-11-20 · GENERATORS-20261120-001 · On identified starts, the emitter and both-persist meeting are fixed by parentage. A first direct mixed birth is possible at only the first parent step after simultaneous release. Delivering births along the fixed map and serial recomputation make different predictions in the explosive controls.
   - 2026-11-20 · READ-ORIGIN-20261120-001 · A complete ordinary boundary carries every subsequent complete layer without an origin tag. A correctly written partial layer with the same physical holdings as a new start can instead need linear information for its remaining births. The size of a complete layer and the choice of observation in a partial one have separate operational consequences.
@@ -4795,3 +4859,715 @@ evidence: results and their status come from the records each entry links.
   - 2026-11-22 · After the first receiver finishes, the original paid pair cannot carry a further ordinary send. A separate live sender, selected by the frozen payment order, can act on an oriented still-private 01 pair. A known zero background at the recipient of the old bit lets a later anonymous reading sometimes certify both the old bit and the new action. Each preparation is priced in the original uniform lawful completion weighting, with the second action chosen at equal odds. An unprepared pair has exchangeable orientations. [Exact joint tables](../research/SUCCESSOR-RECEIPT-20261122-001/later_source_joint.json)
   - 2026-11-22 · Enroll the physically reached three-mark sender and a one-founder comparison that grows a two-mark sender. Read its own values, persistent distinctions and anonymous coholders before it pays. An unordered unlike pair can be reversed without knowing which value a fixed child will get. In the marked-pair control an experimenter identifies a pair containing the intended payment. The third mark can then make both prospective payments agree. A stronger control indicates the precise paying mark and supplies a value-dependent writer. The wager, private random tie choice and conditional birth weighting are choices. Ordinary growth produces no prepayment role indication in this class. [The new sender’s reference](../research/NEW-SENDER-REFERENCE-20261122-001/decision.md)
 
+### A207 · Choose pixel count groups by reward separation
+
+**Assumed** · 2026-11-22 · scaffold
+
+- **Statement.** In the follow-up to A205, the reader may count any subset of the 16 anonymous two-by-two pixel patterns. It ranks such sums by separation of their rewarded class means relative to variation within classes, prefers fewer categories at tied rank and keeps all remaining ties. The test reserves two entirely new stroke designs and two turns, pairs ink and placement across letters, and scores every bitmap equally within its declared cell.
+- **Why.** The preceding reader lost accuracy after a turn even though its local counts retained a letter distinction. Searching all unordered partitions allows experience to determine the grouping. The designer supplies the search, the rank, the tie vote, the padded sensor and the method of writing and reading the learned marks.
+- **Rests on it.** LEARNED-PATCH-GROUPS-20261122-001 tests this class of count-based rules, with the true class recoverable from one issued binary guess and correctness. Its run compares six- and seven-pixel letters in a fixed finite census.
+- **Challenge.** Reassign teaching feedback to images while preserving class totals. Keep the class statistics and change only the group flags. Compare the predecessor, the ordinary integer implementation and two distinct knot laws, and report each unseen turn for each letter and new design. A future test could allow learning a different feature vocabulary or examine independent drawing processes.
+- **History.**
+  - 2026-11-22 · Recorded before fitting the comparison requested by the owner. No named rotation or patch type enters the selection rule.
+
+### A208 · Vary pen strokes in matched training slots
+
+**Assumed** · 2026-11-22 · scaffold
+
+- **Statement.** In the varied-drawings study the same reward-ranked pixel reader receives either four straight stroke designs or their specified mixture of straight and bent pen strokes. Matched presentations keep the letter, turn, placement, dimensions and ink fixed. Each reserved drawing, class, turn and placement condition receives its own count.
+- **Why.** The preceding reader learned two individual patterns among 240 rules that separated its training letters perfectly. Generator-side variation in legitimate horizontal and vertical pen strokes offers new within-class experience while preserving the previously supplied sensor, update, rank, size preference and voting rule.
+- **Rests on it.** VARIED-LETTER-DRAWINGS-20261122-001 measures this fixed pair of equal-budget training sets on one common reserved panel, under both parity and not-all-equal. Translation sharing and physical read/write preparation come from A205 and A207.
+- **Challenge.** Compare the paired budgets and all class/turn cells. Exchange the complete learned words and cross only group membership between the two class calibrations. Distinguish multiple equally fitting groups, changes in their rank and what the deployed vote actually does. A broader claim about drawing diversity would require independently sampled training cohorts and different pen families.
+- **History.**
+  - 2026-11-22 · Recorded before fitting in the [varied-drawings protocol](../research/VARIED-LETTER-DRAWINGS-20261122-001/preregistration.md). The stroke grammar and equal-slot comparison are supplied experimental choices.
+
+### A209 · Read the position of pixels from a common starting row and column
+
+**Assumed** · 2026-11-22 · scaffold
+
+- **Statement.** The letter experiment supplies row and column order and aligns drawings by their first occupied row and column. From the aligned pixels a reward-trained tree may learn up to three single-feature tests along a decision path. A positive exact Gini gain, address order, threshold order and a fixed majority tie settle its choices. Results weight each drawing, true letter and turn equally, with separate checks of placement.
+- **Why.** Two opposite-label drawings tied on the full previous count sensor. The aligned pixels preserve every occupied offset. The depth bound and inspection order make it possible to trace the decision to the specific fitted holdings on each image.
+- **Rests on it.** RELATIVE-PIXEL-READ-20261122-001 tests this choice under two knot laws on eight matched, fresh paired designs from a stated pen grammar. A205, A207 and A208 describe the earlier supplied reads, class calibration and acquisition.
+- **Challenge.** Compare the same tree on the old counts and the original group reader on identical rewards and drawings. Clear and exchange the fitted marks, compare the independent arithmetic implementation, and count distinct drawings separately from repeated placements. Claims about other reference choices, orientation conventions, fitting rules or handwriting require separate evidence.
+- **History.**
+  - 2026-11-22 · Recorded before the disclosed sensor check or any fit. The new reference, supplied learning rule, matched drawing census and its weighting apply to this experiment.
+
+### A210 · Extend a reference before filling a new knot
+
+**Assumed** · 2026-11-22 · scaffold
+
+- **Statement.** In the recorded join-veto comparison, transport old reference values through their actual payments. For not-all-equal, extend them on each new knot by the first lawful fresh tuple in a supplied slot order with 0 first. Fill the actual fresh values with every lawful tuple that changes the fewest places from that reference. For the comparison extension, give each fresh distinction the opposite reference whenever all paid references agree.
+- **Why.** A111 supplies a transported comparison state. A113 prescribes minimum new deviations in the parity study. Neither chooses how an absolute not-all-equal reference grows. The two explicit extensions let the same all-parent veto be tested under each choice.
+- **Rests on it.** On one designated branch of the supplied three-distinction founder the primary extension permits a written and paid mark to be the sole deviation in the later guard. The second extension requires a companion. The upstream preparation, fixed target, transported slot ordering, matched value-independent allocation and complete guard reading are supplied. [Physical trace](../research/WRITTEN-BIT-AND-JOIN-VETO-20261122-001/paid_veto.md)
+- **Challenge.** Exchange the reference extensions, swap the source of the signal before the writer exists, and carry all designations through a renaming. A growth-made reference or feedback rule would have to establish how the knot itself supplies the comparison state or action.
+- **History.**
+  - 2026-11-22 · Under each extension all minimum fillings give the same target birth decision. Only the primary extension makes the one carried mark sufficient on these histories. [Study](../research/WRITTEN-BIT-AND-JOIN-VETO-20261122-001/decision.md)
+
+### A211 · Read an earlier receipt through the holdings of a newborn
+
+**Assumed** · 2026-11-22 · scaffold
+
+- **Statement.** In matched prepared starts enroll two newborns by the sole actual payment of each of two recognizable founders. At birth read a newborn's own distinctions and their shared or loose status. Score a later joint birth by its exact two enrolled parents. Divert the earlier donor separately at either recipient while retaining all funded opportunities.
+- **Why.** The crossed preparations let both recipients keep the same available payments and distinguish the use of a retained contact from the cost of its next birth. The number of founder sharings identifying the roles, the initial lawful common values, and the experimenter's choice of which roles to compare are supplied.
+- **Rests on it.** The local recognition and matched comparison in the [earlier event and later birth study](../research/EARLIER-EVENT-AND-LATER-BIRTH-20261122-001/decision.md).
+- **Challenge.** Change the founding markers, match the complete local word across two different donors, or score only the unpointed totals. Trace the actual shared distinctions through both the receipt and the later funding in each case.
+- **History.**
+  - 2026-11-22 · Registered for the two frozen preparations under parity and not-all-equal. [Design](../research/EARLIER-EVENT-AND-LATER-BIRTH-20261122-001A/preregistration.md)
+
+### A212 · A free message may choose how to edit using every local pre-edit reading
+
+**Assumed** · 2026-11-23 · scaffold
+
+- **Statement.** Choose a rule for adding one spare at either named holder. The message is independent of the prepared state. The address implementing it can depend on all values and names the party can inspect before the round. Read the joint local pre/post record after growth.
+- **Why.** An observer who sees an old bit can use it to address a holder and can combine it with a later birth to read a message.
+- **Rests on it.** The all-policy signalling test and its quantitative bound for visible, persistent old marks. [Frozen study](../research/LOCAL-EDIT-POLICIES-20261123-001/preregistration.md).
+- **Challenge.** Compare constant addresses, access to a single old mark, a controller with no marks, withholding a spare, or an outcome that first becomes available after the intervention.
+- **History.**
+  - 2026-11-23 · Recorded during the G18 study of all locally available address edits. Independent referee pending.
+
+### A213 · A local shortage may follow from obligations beyond the edit holder’s record
+
+**Assumed** · 2026-11-23 · scaffold
+
+- **Statement.** Give both editable holders one opening. Give one of the two more distant associated holders two private distinctions, making one editable holder owe two uses. Expose both editable holders, their witnesses, the detector and its first fixed connection, including all shared values and co-holder names.
+- **Why.** This tests whether a signal can survive when neither sender can tell which local edit would repair the shortage.
+- **Rests on it.** The hidden-demand comparison on four equally weighted ordinary starts and the finite bounds at each declared view. [Frozen study](../research/LOCAL-EDIT-POLICIES-20261123-001/preregistration.md).
+- **Challenge.** Reveal the two more distant holders or bias their preparation. Compare the earlier source that exposes both loose counts locally.
+- **History.**
+  - 2026-11-23 · Recorded during the G18 study of all locally available address edits. Independent referee pending.
+
+### A214 · A reading first disclosed after the edit may be used as a comparison
+
+**Assumed** · 2026-11-23 · scaffold
+
+- **Statement.** In a mathematical control a correlated pair of bits is first available after the matched addresses fund a round. A missed round supplies a fixed result and the common funding flag remains visible.
+- **Why.** This tests which part of the old-mark bound requires inspecting the mark before choosing a policy.
+- **Rests on it.** The comparison with a supplied response table and the scope of the obstruction; the physical concealed-demand preparation reads a persistent old bit. [Frozen study](../research/LOCAL-EDIT-POLICIES-20261123-001/preregistration.md).
+- **Challenge.** Make the same marks accessible before the edit, or permit a local withholding policy. A native later reading would require its own ordinary derivation.
+- **History.**
+  - 2026-11-23 · Recorded during the G18 study of all locally available address edits. Independent referee pending.
+
+### A215 · Read the operator test on every stage of growth
+
+**Assumed** · 2026-11-23 · scaffold
+
+- **Statement.** A stage passes when the pattern of which knot holds which distinction is, in the literature's words, a planar graph. The test is read on open stages, where the theorem that ties it to signed operator readings does not apply, and on patterns with more than two holders per distinction.
+- **Why.** The six-rule study used the test only on closed parity patterns. Read along growth it needs no scale and no fitted exponent.
+- **Rests on it.** The census of REVIEW-LEADS-20261123-001A and the follow-up REVIEW-LEADS-20261123-001G.
+- **Challenge.** Compare with a reading that weighs how far a failing stage is from passing, and with the fitted exponents of the shape study on the same stages.
+- **History.**
+  - 2026-11-23 · Recorded at the freeze. The test separated the benchmark constructions and followed how births are funded and grouped; it did not single out sources. [Result](../research/REVIEW-LEADS-20261123-001A/result.md) · [Follow-up](../research/REVIEW-LEADS-20261123-001G/result.md)
+
+### A216 · Rewire a history's births with no regard to who shares with whom
+
+**Assumed** · 2026-11-23 · scaffold
+
+- **Statement.** The comparison for the operator test keeps each parent step's births, their numbers of parents and of fresh distinctions, and draws each birth's parents uniformly from the knots that still hold a loose distinction.
+- **Why.** It isolates what ordinary growth's choice of parent groups adds to the same amount of growth.
+- **Rests on it.** The statement of REVIEW-LEADS-20261123-001A that ordinary growth keeps passing where its rewiring fails (442 of 444 histories).
+- **Challenge.** Rewire only among knots within a bounded number of shared distinctions, so that the comparison is with other local laws and not with blind ones.
+- **History.**
+  - 2026-11-23 · Recorded at the freeze, on the advisor's objection that the test might only track loop count. [Result](../research/REVIEW-LEADS-20261123-001A/result.md)
+
+### A217 · Let each rewarded example be a parity knot over window-count parities
+
+**Assumed** · 2026-11-23 · scaffold
+
+- **Statement.** The learner's memory is one distinction per feature; a feature is the parity of the count of one two-by-two window pattern in the bordered image; each rewarded image adds one parity knot; an image is answered only when the knots force its label; when no memory word is allowed, the windows of the next size are added.
+- **Why.** In the earlier letter studies an ordinary program learned and the knots stored its numbers. This makes the examples the knots.
+- **Rests on it.** Every count of REVIEW-LEADS-20261123-001B.
+- **Challenge.** Other features, another law for an example knot, and another rule for what to add when the memory has no allowed word.
+- **History.**
+  - 2026-11-23 · Recorded at the freeze. Retired as a way to recognize letters at turns never trained; the memory's failing K3 on shuffled labels is kept as a sign. [Result](../research/REVIEW-LEADS-20261123-001B/result.md)
+
+### A218 · Weigh every present word equally and take a birth as the setting
+
+**Assumed** · 2026-11-23 · scaffold
+
+- **Statement.** For the four-correlation test of the present-words study, every allowed word of the finished structure has equal weight, an observer's setting is which of two not-all-equal births happens on its side, and its record is its three old loose distinctions and the fresh one.
+- **Why.** Under this weighting an ordinary not-all-equal birth weighs the old words by their number of extensions, with nothing added. The setting is a choice between starts, since ordinary growth fixes its parent groups.
+- **Rests on it.** The census and arguments of REVIEW-LEADS-20261123-001C. Challenges A185, the choice among three ordinary weightings.
+- **Challenge.** The old-word weighting, under which the score is at most 2; settings read from fresh values; structures with more than two holders per distinction.
+- **History.**
+  - 2026-11-23 · Recorded at the freeze. No two-holder structure in the classes searched gives a hidden excess; a structure with a third holder does (exploratory). [Result](../research/REVIEW-LEADS-20261123-001C/result.md)
+
+### A219 · Compare payment allocations by the named distribution of the old words
+
+**Overturned** · 2026-11-23 · scaffold
+
+- **Statement.** The audit of signalling routes compared two ways of paying a knot's loose distinctions to its children by the joint distribution of the old distinctions under their names.
+- **Why.** It was the direct way to ask whether an allocation changes anything.
+- **Rests on it.** R3 of REVIEW-LEADS-20261123-001E.
+- **Challenge.** Compare up to renamings of exchangeable distinctions.
+- **History.**
+  - 2026-11-23 · Recorded at the freeze and overturned as a reading the same day: the two allocations differ by a renaming of two exchangeable loose distinctions. The counts stand. [Result and correction](../research/REVIEW-LEADS-20261123-001E/result.md)
+
+### A220 · Join two copies of one clock on a donor one loose distinction short, and count every order equally
+
+**Assumed** · 2026-11-23 · scaffold
+
+- **Statement.** The shared-supply study makes one donor knot of each copy the same knot, gives it one loose distinction fewer than the two histories take, repairs the stall that merging causes, and counts every order of the contested births once.
+- **Why.** A donor is a finite supply; a shortfall of one is the least contest. No weighting of orders follows from the model.
+- **Rests on it.** The proportions of REVIEW-LEADS-20261123-001D.
+- **Challenge.** Other shortfalls, other sources, a contest that recurs, and a weighting of orders that follows from something.
+- **History.**
+  - 2026-11-23 · Recorded in the construction addendum before any growth. The larger sources were outside the frozen horizon. [Result](../research/REVIEW-LEADS-20261123-001D/result.md)
+
+### A221 · Remove an old word that has no lawful completion under a rule that is both parity and not-all-equal
+
+**Assumed** · 2026-11-23 · scaffold
+
+- **Statement.** The both-laws study requires every knot's word to have even parity and not be all equal, grows the structure by ordinary growth unchanged, and removes a valued start when some birth has no lawful fresh values.
+- **Why.** The rule fails K2 and is two knots on the same distinctions; it was the signal-fraction study's control, taken from the quiet start only.
+- **Rests on it.** Every count of REVIEW-LEADS-20261123-001F.
+- **Challenge.** Let a word with no completion stop the birth and not the word; other counting rules.
+- **History.**
+  - 2026-11-23 · Recorded at the freeze. No start was removed on the three sources, so the removal reading was never exercised. [Result](../research/REVIEW-LEADS-20261123-001F/result.md)
+
+### A222 · Decide between growth and source-hood by two bars fixed in advance
+
+**Assumed** · 2026-11-23 · scaffold
+
+- **Statement.** The follow-up on repeated release reads the result as 'the test tracks growth' if at least 90% of growing starts that are not proved sources fail, and as 'the test separates sources' if at most half do while every proved source fails.
+- **Why.** The advisor's objection was that the test might read growth and not source-hood; the bars make the answer a reading fixed before the run.
+- **Rests on it.** The verdict of REVIEW-LEADS-20261123-001G.
+- **Challenge.** Populations in which growing starts both pass and fail, so that the comparison has room.
+- **History.**
+  - 2026-11-23 · Recorded at the freeze. All 182 growing starts that are not proved sources fail. [Result](../research/REVIEW-LEADS-20261123-001G/result.md)
+
+### A223 · A fold of emergence is a made pattern that reads another and grows its own
+
+**Assumed** · 2026-11-23 · interpretation
+
+- **Statement.** The owner's picture, in the owner's words (23 November 2026): "I'd like to record DNA as something like 'intelligence' as an emergent structure/pattern. So things like DNA are kind of like patterns that observe a different pattern but also have their own growing patterns. This is generalized, so maybe DNA has some access to things like the golden ratios, and can output structures based on that." And: "structures like DNA or intelligence should maybe be exceptional, almost considered folds of emergence." Read in the program's terms, a "fold of emergence" is a pattern with three properties: the rules make it and nobody places it; what it makes depends on another pattern; and it makes a pattern of its own. Such patterns would be a kind apart from growth that only repeats or multiplies. No claim is made about DNA, cells or minds. Stated in the Intuitions guide, lesson 8.7 ([lesson](../INTUITIONS.md#87-generators-and-folds-of-emergence)).
+- **Why.** Recorded at the owner's request of 23 November 2026, after the pictures of the golden-ratio eddy in the guide's Chapter 8 introduction.
+- **Rests on it.** No result. It frames lesson 8.7 and the leads filed with it.
+- **Challenge.** It would gain its first instance from one growth in which a made pattern takes one course or another according to what a second made pattern is, with nothing read or chosen from outside. It would lose its footing if ordinary growth and every law compared with it were shown to allow no such dependence. What the record has: packets that the growth makes and that release packets of their own, and a knot that receives 18 fresh distinctions where two packets are joined and 15 where they are kept apart, each found by comparing two prepared starts ([generator study](../research/GENERATORS-20261120-001/decision.md)); a stored value that steers no ordinary birth ([stored-bit study](../research/STORED-BIT-AND-NEXT-ACTION-20261122-001/decision.md), referee pending); and readers, learners and agents whose sensors and rules were all supplied. The cheapest first test: hang the same part on two rings that differ only in how many of their knots keep a leftover distinction, and ask whether anything the part makes, beyond its count of knots, tells the two rings apart.
+- **History.**
+  - 2026-11-25 · The owner asked whether time is itself such a fold: "Is time itself a fold like intelligence/life through DNA?" Read in the program's terms, a pattern that counts another pattern's returns would take something from another pattern and make something of its own, and at each return it needs only whether the other has returned; whether that is enough for the fuller sense of this entry's test is not settled. No made pattern counts another in the record. Filed as sub-goal B329 and recorded under A228. Status unchanged.
+  - 2026-11-25 · `PARTS-MEET-AGAIN-20261124-001` ([decision](../research/PARTS-MEET-AGAIN-20261124-001/decision.md), referee pending) gives the first cases in the record in which what one made part builds depends on whether another made part is there, under a stated law with nothing placed by hand after the start: 216 confirmed cases under laws in which a birth takes a distinction none of its parents holds (A245). They fall short of this entry's picture in two ways: what crosses is whether the other part is there and never what it is (16 pairs asked, none), and no part makes a pattern of its own from what it meets. Under the recorded laws in which a birth takes only what its parents hold there is no such dependence at all, by an argument. Status unchanged.
+  - 2026-11-24 · `PARTS-MEET-AGAIN-20261124-001` opened at the owner's request of this date to look for a first instance: a law under which
+    parts of the live roster that have come apart can meet again, tested by growing a start with and without a second part.
+    It starts from the laws in which a birth takes a distinction that is already shared (A225, A230, A235). No result yet;
+    status unchanged.
+  - 2026-11-23 · `RING-IN-BALANCE-20261123-001` ([decision](../research/RING-IN-BALANCE-20261123-001/decision.md), referee pending) marks where an instance cannot be: under ordinary growth and under the added rules of A224, once past the start the parts of the live roster act alone and never become joinable again, so nothing one part makes can depend on another. A first instance needs a law under which parts can meet again. Status unchanged.
+  - 2026-11-23 · Recorded, in the owner's words, as the owner's interpretation; framed by Intuitions lesson 8.7.
+
+### A224 · Three added rules give a ring that returns and gives off parts
+
+**Assumed** · 2026-11-23 · scaffold
+
+- **Statement.** A pilot of 23 November 2026 changed ordinary growth by three rules added by hand. Cap: a new knot receives at most three fresh distinctions. Wait: a knot that owes more loose distinctions than it holds makes no join, every join that needs it is cancelled, and it stays live with what it holds, where the ordinary law stalls the whole round; the other knots make an offshoot from each distinction a cancelled join would have taken. Unused fillers: a fresh distinction that a knot receives only to make up three places or the least of one, and that no join of the next round asks for, is never used. Under the first two rules a ring of an odd number of knots, five or more, each sharing a distinction with the next and holding three loose distinctions, returns to its own live roster every two rounds while as many parts of two knots come apart from it as the ring has knots; a ring of four or of six does not return. Under all three each such part makes one more knot and then nothing, and the knots that can still make something repeat every two rounds; the knots that stop still hold a loose distinction that is never used. Stated in the Intuitions guide, lesson 8.7 ([lesson](../INTUITIONS.md#87-generators-and-folds-of-emergence)).
+- **Why.** The owner asked for a way past the proved limit that a finite start cannot keep releasing one fixed finite packet under ordinary growth ([copies study](../research/COPIES-AND-MEETINGS-20261120-001/bounded.md)): "We need to break this limit. I'm imagining a system of balance. Similar to life and death cycles." Under ordinary growth no part of the live roster ends while another goes on, and its parts never come apart ([generator study](../research/GENERATORS-20261120-001/components.md)), so a rule had to be added.
+- **Rests on it.** The pilot's result alone: computed by two independent programs, with an argument for every ring of four or more knots, not refereed. Nothing about ordinary growth rests on it, and the limit it was meant to pass still stands as a theorem about ordinary growth.
+- **Challenge.** Swap each rule. In the pilot's search of 56 combinations of eight ways to ration fresh distinctions with seven ways to treat a knot that cannot pay, the returning ring appeared only where the short knot waits and the ration is the cap of three, one fewer than the ordinary count, or a flat three, and in none of the 56 did the parts that came apart end; the third rule was added for that, and it also ends every endless chain. Still to test: whether every knot made under these rules passes the knot test in the whole structure, the same starts under not-all-equal, other choices for what a cancelled join's distinctions do, and starts taken under a named weighting. The model would replace this scaffold if a law with a reason of its own gave the same return and release.
+- **History.**
+  - 2026-11-24 · `GUARD-CAP-AND-HOLD-20261124-001` ([decision](../research/GUARD-CAP-AND-HOLD-20261124-001/decision.md), referee pending): under the two added rules as recorded (a cap of three, waiting, release), with and without the fillers, births made one at a time under the guard of A242 and A243 build what the complete rounds build in every order searched. With the release swapped for holding the guard fails. Status unchanged.
+  - 2026-11-23 · `COPYING-PARTS-20261123-001` ([decision](../research/COPYING-PARTS-20261123-001/decision.md), referee pending): under the rations FLOOR0, FLOOR1 and ONE-FEWER of the same family of added rules, with a short knot's joins cancelled, a part of two knots becomes two of the same every two rounds, at a rate set by the treatment; this needs neither waiting nor the release rule, and the fillers stop it. Every knot passes the knot test under both knot laws on the small starts, and under FLOOR1 in a census of 3,344 starts. Status unchanged.
+  - 2026-11-23 · `RING-IN-BALANCE-20261123-001` ([decision](../research/RING-IN-BALANCE-20261123-001/decision.md), referee pending) swapped each rule on real knots. The ring's return survives every cap from three to seven and fixed rations of three and four. It does not survive the loss of waiting, of offshoots, or of the release of what cancelled joins would have taken, which that study names as part of what was added. Every knot made passes the knot test under parity and not-all-equal. The fillers were swapped only against their absence. Status unchanged.
+  - 2026-11-23 · Recorded with the pilot. The owner's words are quoted in lesson 8.7 and in the sub-goal filed with it.
+
+### A225 · Let a birth take a distinction that already has two holders
+
+**Assumed** · 2026-11-23 · scaffold
+
+- **Statement.** In the smallest-structure study an observer's distinction may have two holders before the setting birth takes it, so the birth gives it a third. Ordinary growth never does this: a birth takes loose distinctions.
+- **Why.** With loose observer distinctions no structure with at most three holders gave a hidden excess; this is the least change found that does.
+- **Rests on it.** The 7-knot structure and the lower bounds of THIRD-HOLDER-20261123-001B.
+- **Challenge.** State it as a growth law (when does a birth take a shared distinction), and run the survive-or-end test, the recorded sources and the pace limit under it.
+- **History.**
+  - 2026-11-25 · `PARTS-MEET-AGAIN-20261124-001` ([decision](../research/PARTS-MEET-AGAIN-20261124-001/decision.md), referee pending): stated as a growth law the move is rule R or rule Q, and neither can make parts that share nothing one part again, by an argument borne out on every pair tested. One birth of this kind placed by hand between two such parts does join them; it is labelled supplied. Status unchanged.
+  - 2026-11-23 · Recorded at the freeze as class S. Seven knots of both laws with no old distinction held three times give 19/9 with hidden settings. [Result](../research/THIRD-HOLDER-20261123-001B/result.md)
+
+### A226 · Read a value-keyed setting by pooling finished words, unnormalized
+
+**Assumed** · 2026-11-23 · scaffold
+
+- **Statement.** When an observer's setting is a function of its old values, each old word is counted with its lawful fresh completions under the birth its own values select, and every such finished word has equal weight.
+- **Why.** A value-keyed setting has no single finished structure; pooling is the reading closest to 'every present word equal'.
+- **Rests on it.** The keyed-setting changes of THIRD-HOLDER-20261123-001A (2/9 and 1/9).
+- **Challenge.** Normalize per setting; the two agree when the totals of the finished structures are equal, as they are on the 18-knot structure.
+- **History.**
+  - 2026-11-23 · Recorded at the freeze on the advisor's objection that the test was underdefined. [Result](../research/THIRD-HOLDER-20261123-001A/result.md)
+
+### A227 · Order structures by knots first, then by extra holders
+
+**Assumed** · 2026-11-23 · scaffold
+
+- **Statement.** The smallest-structure study ranks a structure by its number of knots, then by its holders beyond two summed over old distinctions, and reports the least number of extra holders found at any number of knots beside it.
+- **Why.** Two measures of size with no order would let the answer be chosen after the fact.
+- **Rests on it.** The word 'smallest' in THIRD-HOLDER-20261123-001B.
+- **Challenge.** Rank by extra holders first, or by distinctions.
+- **History.**
+  - 2026-11-23 · Recorded at the freeze. Both orders give the same structure when the birth may take a shared distinction: 7 knots, no extra holder. [Result](../research/THIRD-HOLDER-20261123-001B/result.md)
+
+### A228 · The logic comes before time, and time would be a pattern like the others
+
+**Assumed** · 2026-11-23 · interpretation
+
+- **Statement.** The owner's interpretation, in the owner's words (23 November 2026): "Also, what if 'time' is a device or pattern just like the other ones? Are we able to simulate things 'over time'? So logic is prior to time as well as space." It continues his "Time doesn't have ticks" of 18 November 2026 (Pacific time; 19 November in UTC, the date of the first record that quotes it). Read in the program's terms: no clock is given. A history is one allowed state of one fixed system of rules, with a separate distinction for each thing at each step ([lesson 1.3](../INTUITIONS.md#13-emergence-in-the-game-of-life)). The only before and after the structure itself holds is that a knot comes after its parents. A clock is then a pattern among the others: one that returns, or one whose members carry a count, and time is what one pattern counts of another. Every round, tick and order of changes in the program's simulations is supplied by the one who runs them, so it is a scaffold until a pattern replaces it. No claim is made about physical time: an order of formation alone is not physical time. Stated beside the rounds reading of the Intuitions guide ([lesson 8.1](../INTUITIONS.md#81-growing-in-rounds), "Rounds are not a clock").
+- **Why.** Recorded from the owner's question of 23 November 2026, asked after the ring that returns under added rules ([lesson 8.7](../INTUITIONS.md#87-generators-and-folds-of-emergence)). It is the sibling of A112, which says the same of space.
+- **Rests on it.** No result. It frames lesson 8.1's reading of the rounds (A110's history of 19 November 2026), the clock studies read through A150, and the lead filed with this entry.
+- **Challenge.** What the record has. Inside the proved class a knot's round is its cluster's size less one, so the rounds count size and nothing has to change over time ([round-free study](../research/ROUND-FREE-20261119-001/round_free.md), proved, refereed). Outside it the supplied order still matters: laws that make one join at a time and read only what is built made different things in different orders in 12 of 14 cases, and a law that reads only what is built and needs no tick is not known (same study). Recurring releases of a generator have been counted as ticks, two clocks in one structure of 21 knots ticking every 16 and every 24 parent steps, with the reader that identifies a tick supplied ([clock study](../research/FREEDOM-CLOCKS-AND-BIRTHS-20261120-001/decision.md), referee pending; A150); and between the same two receipts a prepared receiver counted three of its own ticks, and one when the start knots it could return to were exchanged ([receiver study](../research/TICK-BIRTHS-AND-SCARCITY-20261121-001/decision.md), referee pending). The interpretation would gain its first instance from a clock that no one supplies: a pattern that returns under every fair order of local changes, with no round given, and whose returns a second pattern made by the same growth counts. It would lose its footing if every law that needs no supplied order were shown to build nothing that returns or counts. The cheapest first test: run the ring that returns under the two added rules of A224 one knot at a time, in every fair order, and ask whether it still returns and gives off the same parts.
+- **History.**
+  - 2026-11-25 · [TIME-AS-FOLD-20261125-001](../research/TIME-AS-FOLD-20261125-001/decision.md) (computed, referee pending): the one test made of "time is a pattern" in the sense of one made pattern counting another's returns found no such pattern. In 88,299 tests of a made clock and a second part, under a family of laws fixed first, no second part makes a fixed number of its own knots for each tick; a second part's course differs at each of three returns in 78 tests, each lost under some renumbering of its start. The study does not show that no law can hold a made count. Status unchanged: it remains the owner's interpretation.
+  - 2026-11-25 · The owner asked: "Is time itself a fold like intelligence/life through DNA?" Read against this entry: an order (a knot after its parents) is not a pattern, and a clock (a pattern that returns) takes nothing in, so neither is a fold; a made count of returns, one pattern counting another's returns, has the form of his fold of emergence (A223), and it asks the least of any fold, since whether another part is there is what the study of parts that meet again found can cross between parts. Whatever counts in the record is supplied, and no law yet holds both a pattern that returns and a pattern that meets it at each return. Filed as sub-goal B329; the guide gathers the subject in its chapter on time. Status unchanged.
+  - 2026-11-25 · `LEAST-RECORD-20261124-001` ([decision](../research/LEAST-RECORD-20261124-001/decision.md), referee pending): the before and after that births made one at a time need can be carried by a count of three values handed from parent to child. It cannot be read from what is built alone (the study before it), and here it is written by hand. Whether the structure can hold such a count itself is filed as sub-goal B328. Status unchanged.
+  - 2026-11-24 · `LOCAL-ROUND-20261123-001` ([decision](../research/LOCAL-ROUND-20261123-001/decision.md), referee pending): the round inside a part need not be supplied either. With each birth recording its parents (A242), a knot that waits until the knots made alongside it have parents that have finished giving builds, one birth at a time and in every order searched, what the complete rounds build. The before and after that the structure holds, a knot after its parents, is then enough to stand in for the scheduler; the round is still what such a law replays. Status unchanged.
+  - 2026-11-23 · `RING-IN-BALANCE-20261123-001`, ticket C ([decision](../research/RING-IN-BALANCE-20261123-001/decision.md), referee pending): with the parts of the live roster taking their rounds one at a time in any order the same structure is built, and a knot's count of its own part's rounds is its round, so a count of rounds can belong to a part (726 runs and an argument). With one birth at a time and every knot reading again after each birth, the ring jams in every order. The round inside a part is still supplied (A237). Status unchanged.
+  - 2026-11-23 · The owner refined the picture the same evening: time is "not really like a sequencer, but more like a priority system", with how often a part is updated set by a property of it. Recorded as A229, with its lead. Status unchanged.
+  - 2026-11-23 · Recorded, in the owner's words, as the owner's interpretation. Computed the same day, not refereed: in the golden-ratio eddy a knot made in round r with p parents and f fresh distinctions has r = f + 2p - 3 - 2e with e equal to 0, 1 or 2, so what one knot holds gives its round to within three values; and under the two added rules of A224 the ring that returns is made each time of the knots that waited.
+
+### A229 · Time is a priority among updates, and what absorbs information samples the whole
+
+**Assumed** · 2026-11-23 · interpretation
+
+- **Statement.** The owner's picture, in the owner's words (23 November 2026): "Also, for the time thing, I feel like it's not really like a sequencer, but more like a priority system, if that makes sense. How often updates happen given some property (maybe mass impacts that). In fact, it's kind of like black holes are the limit of the compute, or the place that absorbs information, like a reader. It's almost like the distribution of black holes is a statistical way of getting a sample of the universe. Please record this idea. Then places with nothing going on need less simulation." Read in the program's terms, it says four things. Nothing steps every part at once: each part is updated as often as some property of it sets, so how often takes the place of when. A part with nothing going on is not updated at all. A reader is a part that takes in and gives nothing back, and the parts that take in the most are where the updates are densest, his "limit of the compute". And where the readers are is a weighting the structure supplies for itself, so a sample taken at the readers would be a sample of the whole. It refines A228. The literature has counterparts, named here once so that they can be found: event-driven simulation, which keeps the next changes in a queue by priority and spends nothing on quiet regions (for Conway's Life, Gosper's hashlife, 1984); clocks that run slower near mass in general relativity; and black holes as the limit on the information a region can hold (the literature's Bekenstein bound, 1981) and as the limiting case in Lloyd's "Ultimate physical limits to computation" (2000). No claim is made about physics, mass or black holes.
+- **Why.** Recorded at the owner's request of 23 November 2026, after the question of time as a pattern (A228) and the ring that returns under added rules ([lesson 8.7](../INTUITIONS.md#87-generators-and-folds-of-emergence)).
+- **Rests on it.** No result. It frames the lead filed with this entry.
+- **Challenge.** What the record has. Growth touches only live knots, so a part with nothing loose costs nothing; under the three added rules of A224 the knots that can still make something stay between five and fifteen while the structure goes on growing. With the rounds taken away, the order of births matters and each order so far was supplied ([lesson 8.1](../INTUITIONS.md#81-growing-in-rounds), "Rounds are not a clock"; A168). Under one supplied priority, finishing the oldest funded births first, one tick of a clock cost 81 births alone, 253 with a second part attached that spends from the tick's own parents and 141 with one attached elsewhere that spends nothing there, while all three ticked once in every four parent steps ([receiver study](../research/TICK-BIRTHS-AND-SCARCITY-20261121-001/decision.md), referee pending): counted in births, the loaded clock is slower, and that study left a reading in terms of gravity open. Every weighting used to sample a growth was chosen by the study that used it ([lesson 8.3](../INTUITIONS.md#83-reading-a-blow-up-by-sampling)). The picture would gain its first instance from a priority read from the structure alone, neither an age nor an order we choose, under which what is built does not depend on how ties are broken and a part's own returns per birth fall as more is attached to it. It would gain a second from a sample taken at the parts that take in and make nothing, which gives the same counts as a sample of the whole under a named weighting. It would lose its footing if every priority read from the structure either builds what the rounds build or builds different things for different ways of breaking ties.
+- **History.**
+  - 2026-11-24 · `LOCAL-ROUND-20261123-001` ([decision](../research/LOCAL-ROUND-20261123-001/decision.md), referee pending): with births made one at a time under a guard read from the structure, no order of updates has to be supplied inside a part, so any priority among the allowed births builds the same thing. What a knot must read to know it may act is four holder steps on the cycles tried, and more for each time a knot has to wait. Status unchanged.
+  - 2026-11-23 · `RING-IN-BALANCE-20261123-001`, ticket C ([decision](../research/RING-IN-BALANCE-20261123-001/decision.md), referee pending) counted the ring's returns in births under seven orders of the parts: slower and slower under even-handed orders while the parts it gave off keep growing, every 4n births with the largest part first (the parts given off are then never served), and steady under the three added rules. The orders are supplied (A237); nothing in the growth sets one or counts births. The sample at the readers was not attempted. Status unchanged.
+  - 2026-11-23 · Recorded, in the owner's words, as the owner's interpretation.
+
+### A230 · A short knot pays the rest with shared distinctions (rule R)
+
+**Assumed** · 2026-11-23 · scaffold
+
+- **Statement.** As ordinary growth, except that a live knot that owes more loose distinctions than it holds pays the rest with distinctions it shares, each of which gains a holder; under parity a birth gets no fresh distinction only when the parity of what it takes is implied by the old knots.
+- **Why.** It is the least wording of the move the third-holder epic found: a birth that takes a distinction already held twice.
+- **Rests on it.** Every result of REREAD-BIRTHS-AND-MIXED-LAWS-20261123-001A and arm 1 of REREAD-BIRTHS-AND-MIXED-LAWS-20261123-001C.
+- **Challenge.** Re-read where nothing is short: a one-parent birth that takes a shared distinction of its parent in place of a fresh one, or a spent knot that joins a neighbour's birth.
+- **History.**
+  - 2026-11-25 · `PARTS-MEET-AGAIN-20261124-001` ([decision](../research/PARTS-MEET-AGAIN-20261124-001/decision.md), referee pending) ran the rule as a treatment of a short knot under the rations of the ring that returns and of the parts that copy themselves, where knots are short every other round. It never makes parts that share nothing one part again (an argument: everything a birth takes is held by one of its parents; no exception in 504 runs and 1.94 million histories so far, every choice tried in 268 enumerations holding 239,866 of them and 100,000 taken at random under a fixed seed in each of 17 others), and from round 1 it undoes both objects: the ring never returns and nothing copies itself. Status unchanged.
+  - 2026-11-23 · Recorded at the freeze. The rule forbids no old word, acts at round 1 only and never in a recorded source; no part with at most two holders gains a hidden excess under it. [Result](../research/REREAD-BIRTHS-AND-MIXED-LAWS-20261123-001A/result.md)
+
+### A231 · Pay the oldest or the newest allowed shared distinction
+
+**Assumed** · 2026-11-23 · scaffold
+
+- **Statement.** Where rule R leaves a short knot several shared distinctions to pay, two conventions are run (the smallest and the largest name allowed), with every allowed choice enumerated on small cases.
+- **Why.** The rule does not say which; two fixed conventions and an enumeration bracket the choice.
+- **Rests on it.** The counts of REREAD-BIRTHS-AND-MIXED-LAWS-20261123-001A that differ by convention, and the seven gains of REREAD-BIRTHS-AND-MIXED-LAWS-20261123-001C, the smallest of which appears under one convention only.
+- **Challenge.** Find what in the structure could fix the choice, or read the choice as a setting.
+- **History.**
+  - 2026-11-23 · Recorded at the freeze. The conventions give different births per round on 471 to 478 of 744 draws. [Result](../research/REREAD-BIRTHS-AND-MIXED-LAWS-20261123-001A/result.md)
+
+### A232 · Take parts of the census's structures as starts and give every newborn a law
+
+**Assumed** · 2026-11-23 · scaffold
+
+- **Statement.** The reachability studies start growth from every connected part of a structure with a hidden excess that holds all six observer distinctions, keep the founders' laws, and give each newborn even parity, odd parity or not-all-equal, every assignment or 4,096 drawn.
+- **Why.** No recorded growth mixes the two laws, and a start has to come from somewhere; parts of known structures make the question finite.
+- **Rests on it.** Every count of REREAD-BIRTHS-AND-MIXED-LAWS-20261123-001B and REREAD-BIRTHS-AND-MIXED-LAWS-20261123-001C.
+- **Challenge.** Start from draws that are no part of a known structure; let a rule give the newborn its law.
+- **History.**
+  - 2026-11-23 · Recorded at the freeze, first with two laws per newborn; odd parity was added when the sign turned out not to be a renaming after the next round. [Result](../research/REREAD-BIRTHS-AND-MIXED-LAWS-20261123-001B/result.md)
+
+### A233 · Grow a start that holds a distinction three times with every two of its holders meeting
+
+**Assumed** · 2026-11-23 · scaffold
+
+- **Statement.** The recorded operator accepts at most two holders per distinction; a start with a distinction held three or more times is grown with each two of its holders adjacent.
+- **Why.** It is the reading under which the recorded operator is unchanged on starts with at most two holders.
+- **Rests on it.** The 34 histories of REREAD-BIRTHS-AND-MIXED-LAWS-20261123-001B that gain a hidden excess and the seven of REREAD-BIRTHS-AND-MIXED-LAWS-20261123-001C.
+- **Challenge.** Let the holders of a much-held distinction meet through it in one group only, or not at all.
+- **History.**
+  - 2026-11-23 · Recorded as a reading of the implementer; ticket A's engine reads meetings from full holdings and agrees with it on 500 of 500 drawn starts. [Result](../research/REREAD-BIRTHS-AND-MIXED-LAWS-20261123-001B/result.md)
+
+### A234 · Probe a part with one added not-all-equal knot that has a fresh distinction
+
+**Assumed** · 2026-11-23 · scaffold
+
+- **Statement.** For each part with at most two holders and no hidden excess, one not-all-equal knot is added on every set of two to four of its distinctions and one fresh distinction; no growth is run.
+- **Why.** It lists, without choosing a law, which single births that forbid nothing would lift the part.
+- **Rests on it.** Arm 2 of REREAD-BIRTHS-AND-MIXED-LAWS-20261123-001C: 27 parts and 1,746 sets.
+- **Challenge.** Add two knots, or a parity knot with a later not-all-equal reader; require the knot to be a birth some stated law makes.
+- **History.**
+  - 2026-11-23 · Recorded at the freeze on the advisor's objection that this is a supplied knot and no growth. [Result](../research/REREAD-BIRTHS-AND-MIXED-LAWS-20261123-001C/result.md)
+
+### A235 · A one-parent birth also takes a distinction its parent shares (rule Q)
+
+**Assumed** · 2026-11-23 · scaffold
+
+- **Statement.** As ordinary growth, except that a one-parent birth takes, with its parent's loose distinction, one distinction its parent shares; a birth with i inputs gets max(D, 3 − i, 1) fresh distinctions, the lookahead seeing the new meetings.
+- **Why.** It is the least law that makes the birth a part at exactly 2 lacks: a loose distinction taken together with a shared one of the same knot, where nothing is short.
+- **Rests on it.** Every result of ONE-PARENT-REREAD-20261123-001A.
+- **Challenge.** Let joint births re-read as well; let a re-reading birth keep two fresh distinctions; re-read only where the parent holds two loose distinctions.
+- **History.**
+  - 2026-11-25 · `PARTS-MEET-AGAIN-20261124-001` ([decision](../research/PARTS-MEET-AGAIN-20261124-001/decision.md), referee pending): the same for rule Q under those rations. No parts that share nothing become one part again, under any choice of the shared distinction, from round 1 or switched on after the copies exist (742 pairs that came apart); and from round 1 it undoes the ring that returns and the parts that copy themselves. Status unchanged.
+  - 2026-11-23 · Recorded at the freeze. With every newborn not-all-equal, eight two-holder parts gain a hidden excess at round 1; the rule damps growth and changes four of the seven recorded sources. [Result](../research/ONE-PARENT-REREAD-20261123-001A/result.md)
+
+### A236 · Let each re-reading birth take any shared distinction of its parent
+
+**Assumed** · 2026-11-23 · scaffold
+
+- **Statement.** Rule Q does not say which shared distinction is taken. Two conventions are run (the parent's oldest, its newest; siblings then take the same one) and, in the census, every round-1 choice, each birth choosing independently.
+- **Why.** The conventions are the two simplest fixed readings; the enumeration shows what the choice can do.
+- **Rests on it.** The one-law result of ONE-PARENT-REREAD-20261123-001A: the eight parts gain only when the two births of one parent take different distinctions, which neither convention gives.
+- **Challenge.** State a rule that gives siblings different distinctions (the first the oldest, the second the next), or read the open choice as a setting.
+- **History.**
+  - 2026-11-25 · `PARTS-MEET-AGAIN-20261124-001` ([decision](../research/PARTS-MEET-AGAIN-20261124-001/decision.md), referee pending): for rules Q and R no choice of the shared distinction changes whether parts meet again (never). For the laws in which a birth takes a distinction none of its parents holds (A245) the choice decides it: change it for one part alone and that part's dependence on the other appears or goes. Status unchanged.
+  - 2026-11-23 · Recorded at the freeze. Under either convention no part gains with every newborn not-all-equal (0 of 10,348 histories). [Result](../research/ONE-PARENT-REREAD-20261123-001A/result.md)
+
+### A237 · The parts of the live roster may take their rounds one at a time
+
+**Assumed** · 2026-11-23 · scaffold
+
+- **Statement.** In place of the complete round (A104), one part of the live roster at a time takes a complete round of its own, the next part being chosen by a supplied order: every part in turn, each equally likely, by number of members, the largest or the smallest first, the one holding most first, or the one served least. A second supplied law makes one birth at a time, with every knot reading its groups and its shortage again after each birth. Defined in the [shared definitions](../research/RING-IN-BALANCE-20261123-001/definitions.md) of `RING-IN-BALANCE-20261123-001`.
+- **Why.** Added by the study of the ring that returns to swap the complete round, after the owner's questions of 23 November 2026 on time as a pattern and as a priority (A228, A229).
+- **Rests on it.** Ticket C of that study ([result](../research/RING-IN-BALANCE-20261123-001C/results.md), referee pending): the same structure is built in every order of the parts; the births between returns of the ring depend on the order; the birth-by-birth law jams.
+- **Challenge.** The model does not supply which part moves next, nor that the knots of one part read together. A law in which each knot reads once, or a proof that no law of a stated kind lets the knots of a part read at different moments, would replace the second half. The orders that read only the present roster (by members, by holdings) are candidates for something a growth could supply itself; the order by least service reads the history.
+- **History.**
+  - 2026-11-24 · `LOCAL-ROUND-20261123-001` ([decision](../research/LOCAL-ROUND-20261123-001/decision.md), referee pending) went one step further inside a part: its members need not read together either, given a written record of parents (A242) and the rules of A243. Births made one at a time then build what the complete rounds build in every order searched. Status unchanged.
+  - 2026-11-23 · Recorded as a scaffold of `RING-IN-BALANCE-20261123-001`. What survived its swaps: the structure built is the same under all seven orders (726 runs, with an argument); the rate of the ring in births is not.
+
+### A238 · Small starts are counted once each up to isomorphism in the census of returning parts
+
+**Assumed** · 2026-11-23 · measure
+
+- **Statement.** Shares of starts with a part that returns giving parts off are taken over every connected pattern of single meetings on 3 to 6 knots with a loose count from 0 to 3 on each knot, at least three places for each knot and at least one live knot, each start counted once up to isomorphism (86,032 starts). A cycle through dead knots is built in two ways, with doubled meetings or with the dead knots meeting one another.
+- **Why.** Chosen by `RING-IN-BALANCE-20261123-001` (ticket B) as the smallest exhaustive family that holds both starts with every knot live and starts with dead knots. No other weighting was compared.
+- **Rests on it.** The shares by number of dead knots, the count of 227 returning starts and the matched pairs 70 against 42 ([result](../research/RING-IN-BALANCE-20261123-001B/results.md), referee pending).
+- **Challenge.** A weighting by automorphisms, by labelled starts or by a growth's own way of making starts could change every share; starts with doubled meetings, where a dead knot can meet only two members, are outside the family. The cheapest test is the same census with each labelled start counted once.
+- **History.**
+  - 2026-11-23 · Recorded as a measure of `RING-IN-BALANCE-20261123-001`. The two ways of building a cycle through dead knots gave the same roster at every round (swapped); the weighting was not swapped.
+
+### A239 · Read an open choice of a growth law as an observer's setting
+
+**Assumed** · 2026-11-23 · scaffold
+
+- **Statement.** Where a growth law leaves open which shared distinction a birth takes, the two possibilities are read as an observer's two settings; each choice gives a separate finished structure, and the table of the test is assembled from the four.
+- **Why.** It puts the setting inside the law in place of a knot added by hand. The owner, 2026-11-23: nothing choosing means there is no simulator; "random can have any combination of settings and starting positions", and any possible configuration is testable.
+- **Rests on it.** The result of SETTING-AS-REREAD-20261123-001A.
+- **Challenge.** Require one structure to carry the whole table; or let the choice follow from the structure by a stated rule and ask what is left.
+- **History.**
+  - 2026-11-23 · Recorded at the freeze on the advisor's objection that the rule's silence is not a setting and no one structure carries the table. [Result](../research/SETTING-AS-REREAD-20261123-001A/result.md)
+
+### A240 · Count every complete configuration once: equal weight on the allowed words of each finished structure
+
+**Assumed** · 2026-11-25 · reading
+
+- **Statement.** Under the owner's picture that nothing chooses and any combination of settings and values can occur, the equal weighting of finished words used since the present-words study is read as counting every complete configuration once. It assumes no setting that is independent of the values, which the usual four-correlation bound of 2 does assume.
+- **Why.** It is the one supplied thing the whole excess comes from; naming it as a reading keeps it open to challenge.
+- **Rests on it.** Every hidden excess of the line, from the present-words study to SETTING-AS-REREAD-20261123-001A; with the old words' distribution held fixed every score is exactly 2.
+- **Challenge.** Weight each old word equally and divide among its completions; or find a weighting that follows from growth itself and see which of the two it gives.
+- **History.**
+  - 2026-11-25 · TWO-COUNTINGS-20261125-001 closed (computed, checked by a second program, referee pending): from a start before the settings every registered test scores exactly 2, and every excess of the line is under this counting; no law that uses no value decides between the two. The choice stays the thread's, reversible; of the readings registered as reversing it, one was tested and not met (an excess also stands on structures whose every rule is a knot in the whole). [Decision](../research/TWO-COUNTINGS-20261125-001/decision.md)
+  - 2026-11-25 · Kept as the thread's working choice, reversible and not tested: TWO-COUNTINGS-20261125-001 sets this counting (every finished configuration once) beside the other (every start once, each birth's new values equally often among what the start leaves) on the record's weighted statements. Asked which he means by "random", the owner answered that his "random" means not chosen ("Our reality, is random. It's not chosen. We're choosing logical structures to start from because we don't have access to the knowledge of what our reality is made of yet and what meeting patterns exist") and, shown the two countings on a small example: "I'm not sure, this is one of those, we can pursue whichever is most interesting and document the choice as reversible in the future if it unlocks some ability later." So neither counting is his. The thread keeps this one as the working reading for three reasons, the first two reworded the same day after the study's helper showed they said too much: with the start placed before the settings it is the only one of the two under which the settings line shows anything beyond 2 (under the other, supplied orders of construction in which a setting knot brings a record's distinction as fresh also pass 2); it is the one of the two that is a function of the finished structure's set of allowed states alone, the set the canonical knot test reads (the test itself uses no weighting); and it needs no start and no record of births (it does need a supplied finishing stage and, across settings, a supplied weighting of histories). The excess on the settings line is what this choice produces, so it is not evidence for the choice. The choice is reversible: the study keeps both countings side by side so that a later reversal costs a table, not a rerun.
+  - 2026-11-23 · Recorded at the close as a reading and no result. In the literature's terms it is measurement dependence. [Decision](../research/SETTING-AS-REREAD-20261123-001/decision.md)
+
+### A241 · Knots that descend from one knot can be joined again through it
+
+**Confirmed** · 2026-11-25 · working premise
+
+- **Statement.** The owner's intuition, in the owner's words (24 November 2026): "There's no way it wouldn't work. It might just cost complexity. Programming is a thing in our reality, there should be a way to reference information like joining 2 different clusters of child logic from the parent via something like an 'axis point'. So we can essentially reference chunks of logic." Read in the program's terms: there is a growth law under which members of two parts of the live roster that have come apart become joinable again through a knot that both descend from, so that what is already built can be referred to and what one part builds can depend on another. The knot they are joined through is then a common knot that is also a common ancestor, an **ancestral common knot**; "axis point" is the owner's phrase for it; he said afterwards that "access point" may be what he meant. The price would be complexity, not impossibility. This is recorded as the owner's conviction and is not evidence.
+- **Why.** Recorded at the owner's request of 24 November 2026, as an addition to the study of parts that meet again before its design was frozen. He asked that his conviction be kept apart from the evidence, and that the usual standard hold for anything claimed.
+- **Rests on it.** No result. It frames one named arm of `PARTS-MEET-AGAIN-20261124-001`, and it changes what a negative there means: if the three recorded laws in which a birth takes a shared distinction (A225, A230, A235) do not let parts meet again, that is a result about those laws, and the study goes on to the least law that does.
+- **Challenge.** That some law does it is cheap: a law that lets any two members join, whatever is built, does it at once. What can be tested is the least law, and its cost: what has to be supplied by hand (the rule, the choice of which shared distinction is taken, any record of who came from whom), how far a knot must read, how fast the number of holders of a distinction grows, and whether what is built are knots under the canonical test under parity and under not-all-equal. It would be confirmed by a stated law, with every knot passing the test, under which a part's own births differ according to whether a second part is there, the two being joined through an ancestral common knot. It would be narrowed if every law of a stated family fails, each with its reason, and overturned for that family only. What the record has: under ordinary growth and under the added rules of A224 a knot meets only its parents and its children, so parts that have come apart act alone ([the ring that returns](../research/RING-IN-BALANCE-20261123-001/decision.md), [the parts that copy themselves](../research/COPYING-PARTS-20261123-001/decision.md), both referee pending); and every join already has a common knot, a dead knot being the pure case ([lesson 8.7](../INTUITIONS.md#87-generators-and-folds-of-emergence)).
+- **History.**
+  - 2026-11-25 · [WHAT-A-BIRTH-CARRIES-20261125-001](../research/WHAT-A-BIRTH-CARRIES-20261125-001/decision.md) (computed, referee pending): the knot through which two parts are joined again need not be a start knot. Under a law that uses no names (a recorded ration with short knots waiting, and a take of a shared distinction only when exactly one is on offer), two parts the growth made meet only through a knot the growth made that both descend from, for 88 pairs under each knot law on five small starts, with no start knot holding a distinction through which they meet. Under a second added rule the first part's course then differs with the second barred, by one value at one birth. The start supplies that knot's ancestors. Status unchanged.
+  - 2026-11-25 · `PARTS-MEET-AGAIN-20261124-001` ([decision](../research/PARTS-MEET-AGAIN-20261124-001/decision.md), referee pending) closed its challenge, and the entry is confirmed for these reasons only. Under laws in which a birth takes a distinction held one or two steps back along its own descent, parts that came apart become one part again and the first then builds differently with the second there; in 62 confirmed cases a knot both parts descend from is among the knots that link them, and in 6 it is the only link; every knot of those cases passes the knot test under both knot laws. What is not shown: the ancestral common knot is always a start knot; no case survives a change of its ration on its own start; the law and its way of choosing are supplied (A245); what crosses is whether the other part is there, not what it is. The three recorded laws (A225, A230, A235) cannot do it at all. The cost found: two holder steps looked at and no record of descent for the cheapest law that works, a supplied choice, and distinctions with more than a hundred holders within eight rounds. Computed, referee pending; reopenable.
+  - 2026-11-24 · The owner, after hearing the first, unreported counts of the study of parts that meet again: "In the real world meeting patterns are highly complex, imagine spatial things like cells and the nutrients they have to absorb, that's a spatial meeting pattern within larger structures, the organism itself. So I don't expect these to be common or trivial." Recorded as his expectation, kept apart from the evidence: a law under which parts meet again should cost something and its cases should be few, and a meeting sits inside a larger structure that holds both parts. Read in the program's terms: "common" needs a weighting over laws and starts, and the study has none, since its laws and starts were chosen by hand; it can say which of its cases meet and how each fares when a scaffold is swapped, not how often meeting happens. No claim about living things is made.
+  - 2026-11-24 · The owner carried the idea further, in his words: "This is why we may need 'function-like' logical operations where we can reference/sample logic. These are basically meeting patterns that are complex in nature. Maybe even so complex as to the indexing operation being logic based iterators rather than incremental. So like maybe intelligence as a fold has access to something like 'the golden ratio', but it needs to index what part of the golden ratio it's looking at?" Read in the program's terms: a reference needs an index, which says which part of the other pattern is taken, and the index would itself be made by the growth and not be a count kept from outside. In the laws where a birth takes a shared distinction, the index is the choice of which shared distinction is taken, so far supplied by a convention (A231, A236). The study registers that choice as the index and reports what supplies it. Filed also as a lead of its own. No claim is made about minds.
+  - 2026-11-24 · The owner, later the same day: "Root might be a good alternative word too." Recorded as his candidate for the knot that a set of knots descends from. It names the descent and not the meeting, and the growth studies already use "root" for the root of an equation that gives a rate, so it goes to the advisor with the study's design before any use as a term.
+  - 2026-11-24 · The owner on the words, the same day: "Maybe access point is what I meant, or Take seems fine too. But I like ancestral common knot for the definition." So the definition's term is ancestral common knot, with his approval; the move is "take"; and "axis point" and "access point" stay as his quoted phrases for it.
+  - 2026-11-24 · Recorded, in the owner's words, as the owner's intuition, and put under challenge by `PARTS-MEET-AGAIN-20261124-001`, opened the same day. The word was put to the advisor model at his request: "axis" is already the guide's word for the axes built of logic (lesson 4.6), and "point" is a word of space, so the program's term is ancestral common knot and the law of the named arm is ancestor-taking, a birth that takes a distinction an ancestor holds. No result yet.
+
+### A242 · Every birth writes its parents and a law may read that record
+
+**Assumed** · 2026-11-24 · scaffold
+
+- **Statement.** In the laws that make one birth at a time, each birth records, with the new knot, the knots it took a distinction from, and a knot may read that record: who its parents are, who their other children are, and what each of them held at birth. The holders of a shared distinction do not say which of the two is the parent, so this is written by the birth and is not read from the structure.
+- **Why.** Adopted at the freeze of LOCAL-ROUND-20261123-001. Without it a knot cannot tell the knots made alongside it from knots of other rounds, and the laws that read only the present roster fail within a few births.
+- **Rests on it.** Every result of LOCAL-ROUND-20261123-001A: the guard that waits for a knot's brood to be weaned, the distances of four and six holder steps, and the failures of the narrower guards.
+- **Challenge.** Read the direction from the structure instead. The record's depth guard does this from depth to supplied first knots, reads the whole structure, and stops early wherever a knot waits; a law that reads only holders within a bounded distance and still builds what the complete rounds build is not known. The model is not expected to supply this record by itself; whether it can be replaced is open.
+- **History.**
+  - 2026-11-25 · `LEAST-RECORD-20261124-001` ([decision](../research/LEAST-RECORD-20261124-001/decision.md), referee pending): how little of the record is needed. One of three values on each knot, its generation counted in threes and written by the new knot from its parents' values, lets any knot find its parents by comparing values across one shared place. It gave every place of every structure reached, half-built ones included, under four laws, wherever the knots that join were made together; no stamp of two values that was tried does. So the full record of parents can be cut down to three values per knot. It is still written, not found. Status unchanged.
+  - 2026-11-24 · `PARENTS-FROM-HOLDERS-20261124-001` ([decision](../research/PARENTS-FROM-HOLDERS-20261124-001/decision.md), referee pending), the first test of whether the record can be done without. In the half-built states that arise when births are made one at a time, some place leading to a parent and some place leading to a child are exchanged by a renaming of the whole structure, under every law tried, the smallest with two knots; no look at what is built tells them apart. On structures built by complete rounds it depends on the law: a rule looking two holder steps out recovers the parents where a short knot retires and leaves a barred place; none of any fixed distance does where it makes offshoots (a proof by hand, confirmed at every round to twelve); under a fixed three with waiting and under ordinary growth the distance needed grew with the round as far as searched. So something has to be written; whether less than the full record would do was not tested. Status unchanged.
+  - 2026-11-24 · `GUARD-CAP-AND-HOLD-20261124-001` ([decision](../research/GUARD-CAP-AND-HOLD-20261124-001/decision.md), referee pending): with the record, the guard also holds under the cap of three as recorded for the ring that returns. Status unchanged.
+  - 2026-11-24 · Recorded at the freeze. Not swapped in the study: with the record, births made one at a time build what the complete rounds build in every order searched. [Result](../research/LOCAL-ROUND-20261123-001A/results.md), referee pending.
+
+### A243 · A start knot reads the start as given and a knot that waited reads again only against those that waited with it
+
+**Assumed** · 2026-11-24 · scaffold
+
+- **Statement.** Two rules complete the laws that make one birth at a time. A start knot has no parents, so it reads the start's own roster at every moment. A knot that was short and waited reads a second time against the other knots of its brood that also waited, never against new knots, and so on for each further wait; a group of such knots all of which are short waits for ever.
+- **Why.** Adopted at the freeze of LOCAL-ROUND-20261123-001, as the least rules that let a start knot and a waiting knot act without a round being supplied. The second follows the complete rounds past the start, by an argument in the study's definitions.
+- **Rests on it.** Every result of LOCAL-ROUND-20261123-001A on starts with waiting, and the finding that each further wait reaches one step further.
+- **Challenge.** The first rule is known to be wrong where a start knot that acts meets a start knot that waits: on a start of seven knots built to show it, every law fails at the second birth. A rule that reads such a start correctly within a bounded distance was left open. The second rule was not swapped.
+- **History.**
+  - 2026-11-24 · `GUARD-CAP-AND-HOLD-20261124-001` ([decision](../research/GUARD-CAP-AND-HOLD-20261124-001/decision.md), referee pending): the rule for a further reading was extended to a knot that holds what its cancelled joins would have taken (a stayer, read again with the waiters and stayers of its brood). It fails there: under holding a knot's children are not all made in one round, and under the complete rounds a staying knot is asked for joins through its own children's children, so a brood is no longer one round's roster. The guard stops early as frozen, and with its test for a finished parent repaired it makes a birth the rounds never make, at exactly 13 births on the cycle of four through dead knots. Status unchanged.
+  - 2026-11-24 · Recorded at the freeze. The start rule's failure was disclosed before the freeze and confirmed by the runs. [Result](../research/LOCAL-ROUND-20261123-001A/results.md), referee pending.
+
+### A244 · Copying is a pattern the growth makes and not a law
+
+**Assumed** · 2026-11-24 · working premise
+
+- **Statement.** The owner's idea, in the owner's words (24 November 2026): "copying would not be a law. Laws are for how the knots interact. A copy function, like other functions, would be a logical structure that has a meeting pattern with other things. And we would need to prove that the copy/paste pattern can be generalized." Two things are kept apart in everything written about it. A law is the rule the growth follows: which knots join, what a new knot receives, what a short knot does. A copier is a pattern the growth makes. What the record has so far makes more of itself and takes no input. What is asked for meets another pattern and leaves two of it.
+- **Why.** Recorded at the owner's request of 24 November 2026 and filed as a lead to start once the study of parts that meet again has closed. It follows his "function-like" operations of the same day (history of A241).
+- **Rests on it.** No result. It frames the lead filed with it: under the cheapest law that lets parts meet, is there a made pattern that, on meeting a second pattern, leaves two of the second?
+- **Challenge.** State the claim before testing it: for which class of patterns the copier should work, and whether "two of it" means the same form, the same built structure, or the same values. What the record has: under rations and treatments added by hand, a part of two knots becomes two of the same every two rounds, with no input and with copies that never meet again ([parts that copy themselves](../research/COPYING-PARTS-20261123-001/decision.md), referee pending); and an argument that a part of parity knots whose distinctions have at most two holders hands a value on once and never twice, while not-all-equal knots can hand one value to three places, as the Fano pattern less one knot does with a third holder for four of its distinctions, and with two holders per distinction no copy made of them has been found ([note of the third-holder study](../research/THIRD-HOLDER-20261123-001/third_holder_moves.md), referee pending). It would be confirmed by a made pattern that leaves two of what it met, for a stated class and with every knot passing the canonical test; it would be bounded by the smallest pattern a copier fails on, with the reason; and it would be overturned for a law by a reason no made pattern can under that law.
+- **History.**
+  - 2026-11-25 · The copier study closed (`MADE-COPIER-20261125-001`, three tickets, referee pending): no copier was found as a made pattern, built, as "consume and output two" or by sampling. Sampling finds 17 confirmed cases in which two parts of a second part's form are met more often after a made pattern joins it; each first-pattern form does it for one form, and every meeting runs through a start knot. The assumption stays as held: nothing here made copying a law, and no made pattern copies.
+  - 2026-11-25 · The owner, on hearing that the scratch runs of `MADE-COPIER-20261125-001` have no copier even for one pattern once the start is renumbered: "I have a trick maybe. What if instead of 'copying', we consume and output 2?" (24 November 2026, Pacific time). Read in the study's terms: the two patterns become one part, births with a parent in each use up the second pattern, its own descendants end, and two parts the same as it are made by those joint births. The design had counted only two that descend from the first pattern alone. A join uses loose distinctions and needs no supplied choice of which shared distinction is taken, so under a law with no taking rule such a case cannot depend on the start's numbering; the meeting then has to be supplied by the start, and a join uses up both parents. Added to that study as a named arm before its freeze. Status unchanged.
+  - 2026-11-24 · Recorded, in the owner's words, as his idea. Not yet started: it waits for the least law of `PARTS-MEET-AGAIN-20261124-001`.
+
+### A245 · A birth may take a distinction that none of its parents holds
+
+**Assumed** · 2026-11-25 · scaffold
+
+- **Statement.** In the laws that reach further, a birth also takes one distinction that is already shared and that none of its parents holds: one held by a knot its parent meets, or by a recorded ancestor one or two parent steps above its parent. Which of the eligible distinctions it takes is fixed by a supplied choice: the oldest or the newest by name, in turn among the births of one parent, or by the number of places the parent has. Ordinary growth and the recorded rules R and Q never do this: under them everything a birth takes is held by one of its parents.
+- **Why.** Adopted at the freeze of PARTS-MEET-AGAIN-20261124-001, as the least departure from the recorded laws under which parts that have come apart can become one part again. The laws that take from an ancestor answer the owner's idea of 24 November 2026 (A241).
+- **Rests on it.** Every positive result of PARTS-MEET-AGAIN-20261124-001A: the 216 confirmed cases in which one part's course differs with another stopped, the smallest case, and the cases through an ancestral common knot.
+- **Challenge.** Swap the rule, its choice and the base law. Done in that study: no case for parts that came apart survives a change of its ration on its own start, each case depends on the choice, and the one case that survives every swap joins two parts of a start that were never one part. Still open: a rule of this kind whose cases survive those swaps, and whether the choice can be made by the growth (lead B326). The model is not expected to supply these rules as they stand.
+- **History.**
+  - 2026-11-25 · Recorded at the close of the study that froze it on 24 November 2026. Under these laws parts that came apart become one part again and the first then builds differently, with every knot of the cases passing the knot test under both knot laws. [Result](../research/PARTS-MEET-AGAIN-20261124-001A/results.md), referee pending.
+
+### A246 · A part reads another when its course differs with the other stopped
+
+**Assumed** · 2026-11-25 · measure
+
+- **Statement.** The owner's test of 24 November 2026, as measured: grow one start twice under one law, once as it is and once with every usable loose distinction of the second part barred at the round the two parts share nothing, and compare what the first part and its descendants build, round by round, up to renaming. The first part's course differs when the two differ. A difference is counted as made by births only when it goes through a meeting, which is confirmed by a third run in which members of the two parts are not allowed to be joinable. Removing the second part is the swap, used where it leaves a well-formed structure.
+- **Why.** Adopted at the freeze of PARTS-MEET-AGAIN-20261124-001 as the reading of the owner's words "run each start twice, once with the second part present and once without it. A part reads another when its course differs between the two runs."
+- **Rests on it.** Every mark of PARTS-MEET-AGAIN-20261124-001A, and the statement that what crosses is whether the other part is there and not what it is.
+- **Challenge.** Compare with removal throughout (done where defined: the same mark in all 182 cases); count the demand of a birth as part of the course (it differs a round earlier in 114 of 302 cases); ask for dependence on what the other part is and not only on its presence (asked on 16 pairs: none).
+- **History.**
+  - 2026-11-25 · Recorded at the close of the study that froze it on 24 November 2026. [Result](../research/PARTS-MEET-AGAIN-20261124-001A/results.md), referee pending.
+
+### A247 · Each knot carries a stamp written at its birth
+
+**Assumed** · 2026-11-25 · scaffold
+
+- **Statement.** In the search for how little has to be written, each knot carries one value, a stamp, written by whoever runs the growth. The stamp that works is the knot's generation counted in threes: a start knot has 0, and a new knot writes one more than its parents' stamp, modulo 3. A knot then takes the other holder of a shared place for a parent exactly when that holder's stamp is one less. Nothing in the growth laws writes or looks at a stamp.
+- **Why.** Adopted at the freeze of LEAST-RECORD-20261124-001, after the search that showed the parents cannot be found from what is built alone. It is the smallest of ten stamps tried that recovers the parents under every law.
+- **Rests on it.** The result of LEAST-RECORD-20261124-001A, and the statement that three values per knot can stand in for the written record of parents (A242) wherever the knots that join were made together.
+- **Challenge.** A stamp of two values (five were tried and none works under every law; one read over a longer distance is not ruled out); starts on which some birth has parents at different parent steps (under the waiting law the stamp was adopted for, 510 of 3,348 census starts of up to five knots, each counted once up to renaming; counting in fives repairs 501 of them, and no fixed count is known to be enough); and, most of all, a count of this kind held by the structure itself and not written beside it (sub-goal B328, closed: a ration can write the count in a knot's own places, from a start supplied with its meeting knots agreeing, which moves the record into the law and does not remove it; open: whether a law with no parent count among its inputs shows the order from lone-knot starts). The model is not expected to supply a stamp written from outside.
+- **History.**
+  - 2026-11-25 · [DESCENT-HELD-20261125-001](../research/DESCENT-HELD-20261125-001/decision.md) (computed by two programs and counted a third time, referee pending): the stamp's failure is not one built start. Under the waiting law of the study that adopted it, some birth has parents at different parent steps on 510 of 3,348 census starts of up to five knots (19% with each numbering of the knots counted once), smallest witness `[[0,1,2],[0,3,5],[1,3,4,6],[2,4,7,8]]`; under that study's three other laws on none; under four holding laws on 48, 48, 369 and 462. Counting in fives is right on 501 of the 510; a difference of three parent steps occurs, so no fixed count is known to be enough. The same study writes the stamp by a ration in a knot's own places (and, with the added distinctions barred, with no birth changed), from a start supplied flat. Status unchanged; the challenge line is corrected.
+  - 2026-11-25 · Recorded at the close of the study that froze it on 24 November 2026. With the stamp shown, the rule gives every parent at one holder step on every structure reached under four laws, and under holding on sixteen runs. [Result](../research/LEAST-RECORD-20261124-001A/results.md), referee pending.
+
+### A248 · No one pattern copies every pattern, because what it meets can change its course
+
+**Assumed** · 2026-11-25 · working premise
+
+- **Statement.** The owner's inkling, in the owner's words (24 November 2026, Pacific time; 25 November by the record's dates): "the interesting fact here is that it's actually impossible to generalize a 'copier' for all logic structures. It might be the case that some logic models are able to over-write the instructions of the copier and break out." As the study of a made copier reads it: for every pattern the growth makes, and every law fixed beforehand, there is a second pattern of which it does not leave two; and some second patterns change what the first pattern goes on to build, so that it stops leaving two of anything, while they go on themselves. It is his intuition and is kept apart from the evidence.
+- **Why.** Recorded at the owner's request while the study of a made copier was being designed, before its freeze. It stands beside his other idea on the subject (A244: copying is a pattern the growth makes and not a law) and bounds it: A244 asks for a copier, and this says that no copier can be general.
+- **Rests on it.** No result. It frames one arm of `MADE-COPIER-20261125-001`: whether a second pattern changes the course of the first, by which way, and which of the two goes on afterwards.
+- **Challenge.** It would be overturned, for a class of patterns and a law, by one made pattern and one stated rule that leave two of every second pattern of the class with every knot passing the canonical test. It would be supported, and no more than supported, by a second pattern on which each candidate fails, with the reason; a finite list of failures is not an argument about every pattern. An argument would need two things the study states for its referee: that the law gives the second pattern's births the same takes from the first pattern as the other way about, so that nothing shields a copier; and that a pattern which leaves two of two different second patterns must have a course that depends on what it meets. In the literature's words, from memory and not checked: a constructor that copies a description given to it on a passive tape is the known positive case (von Neumann's universal constructor, 1966), and the difficulty named here is that what is met is not passive.
+- **History.**
+  - 2026-11-25 · The owner's "consume and output 2" (history of A244) bears on this entry: where two patterns are used up together by joint births, neither is shielded, and a pattern that is to work a second time has to be made again among what comes out. Status unchanged.
+  - 2026-11-25 · Recorded, in the owner's words, as his inkling. Folded into the design of `MADE-COPIER-20261125-001` before its freeze as a named arm.
+
+### A249 · A copier may have to be hit by chance among very many growths
+
+**Assumed** · 2026-11-25 · working premise
+
+- **Statement.** The owner's idea, in the owner's words (24 November 2026, Pacific time; 25 November by the record's dates): "What if we need to statistically hit a 'copier' like DNA and primordial soup?" As the study of a made copier reads it: a pattern that leaves two of what it meets may not be found by building one, nor among the few patterns of a registered class. It may be made only in a small share of growths, under some named weighting over starts, laws and histories, and be found only by sampling very many of them; and once made, it would show itself by the numbers of what it leaves. DNA and a primordial soup are his pictures, and no claim is made about living things.
+- **Why.** Recorded at the owner's word while the two frozen tickets of the copier study were waiting for their engine. It changes the method from building to sampling, in line with his picture that nothing chooses a meeting pattern, so that one written down is one sample (lesson 7.3 of the Intuitions guide; A71 and A110).
+- **Rests on it.** No result. It frames a third ticket of `MADE-COPIER-20261125-001` and the lead filed with this entry.
+- **Challenge.** What the record has. A pattern that makes two of itself needs no luck under one ration: in the copying study's census of every start of up to five knots with single meetings, each counted once, 85% to 97% come to hold a part that copies itself within ten rounds ([parts that copy themselves](../research/COPYING-PARTS-20261123-001A/results.md), computed, referee pending; the shares are under that one weighting). What has not been found is a pattern that takes another in. The frozen copier study registers a control in which each birth's taken distinction is drawn at random ([its pre-registration](../research/MADE-COPIER-20261125-001A/preregistration.md)); it has not been run. And three arguments, none refereed, say what no sampling of starts can find under particular laws: from a start with no tie no made distinction is ever tied to another under not-all-equal; under the first ration with a taking rule every later birth receives one fresh distinction; and where no shared distinction is taken the roster after a round depends only on the roster before it. So a sampling has to range over laws as well as starts. The idea would gain its first instance from one made pattern that, with every taken distinction drawn at random, leaves two of each of several different second patterns it meets, at a stated rate under a named weighting. It would be bounded by rates with their weightings and by the arguments that cap them. The literature's names, from memory and not checked: autocatalytic sets (Kauffman, 1986), and soups of random programs in which self-copying programs arise (Ray's Tierra, 1991; Agüera y Arcas and others, 2024).
+- **History.**
+  - 2026-11-25 · Tested as read (`MADE-COPIER-20261125-001C`, referee pending): rates under the census and labelled weightings, takes sampled take by take. Under two laws a growth holds a confirmed case (3 of 1,000 growths, and 1 of 30); elsewhere the rate is bounded below 0.3% to 1.9% a law at 0.95, on the prefixes run. No candidate for a copier.
+  - 2026-11-25 · Recorded, in the owner's words, as his idea. A third ticket of the copier study is being designed for it.
+
+### A250 · At a birth each old state's weight is shared equally among its completions
+
+**Assumed** · 2026-11-25 · scaffold
+
+- **Statement.** Counting from the start gives every allowed state of the start the same weight and, at each birth, shares an old state's weight equally among the states that complete it. A state with no completion loses its weight, and the rest is taken as it stands, renormalised only where a score needs it.
+- **Why.** Added by the study of two countings as the rule that defines counting from the start. It is one of at least three natural rules at a birth; the others are fair values for the fresh distinctions with a forbidden result discarding the whole state (which is counting from the finish) and a fair reveal, which depends on the order of revealing.
+- **Rests on it.** Every "counted from the start" value of [TWO-COUNTINGS-20261125-001](../research/TWO-COUNTINGS-20261125-001/decision.md): the exactly 2 on the settings line, the classification of orders of construction, and where the two countings part.
+- **Challenge.** Its swap is the other counting itself, and both are reported side by side. A growth law that uses a value could make one of them the law's own; none is recorded.
+- **History.**
+  - 2026-11-25 · Recorded as a scaffold of `TWO-COUNTINGS-20261125-001`. What survived its swap: nothing of the settings line's excess; the scores above 2 belong to the other counting.
+
+### A251 · A structure built by hand is taken as its own start
+
+**Assumed** · 2026-11-25 · scaffold
+
+- **Statement.** Where a study counts the states of a structure that no growth law made, counting from the start takes the whole hand-built structure as the start: every allowed state of it once, with only the births added afterwards (the setting knots) sharing weight.
+- **Why.** Added by the study of two countings. A hand-built structure has no record of which knot brought which distinction, and counting from the start needs one; taking the structure as its own start supplies it in the simplest way.
+- **Rests on it.** The exactly 2 on the hand-built structures of the settings line in [TWO-COUNTINGS-20261125-001](../research/TWO-COUNTINGS-20261125-001/decision.md).
+- **Challenge.** Build the structure from nothing in an order. The study did, in 1,200 supplied orders: the 2 survives in every order in which each setting knot brings only its own fresh distinction, and other orders pass 2 (up to 104/45). So the result under counting from the start is about where the start is placed as much as about the counting.
+- **History.**
+  - 2026-11-25 · Recorded as a scaffold of `TWO-COUNTINGS-20261125-001`, with its swap run. The model is expected to replace it only where a growth law makes the structure, as for the 894 grown records, which score exactly 2.
+
+### A252 · A ration may take its parents' count of places
+
+**Assumed** · 2026-11-25 · scaffold
+
+- **Statement.** In the study of descent held by the structure, a new knot receives 0, 1 or 2 fresh distinctions beyond its base ration, the least that makes its count (of places, or of barred places) one more, counted in threes, than its parents' common count. The ration therefore takes the parents' counts as an input, which no recorded ration does. A shared place is then called a parent place when the other holder's count is one less; no knot uses that rule, only the run applies it.
+- **Why.** Added by DESCENT-HELD-20261125-001 to ask whether the order that births one at a time need can be shown in a knot's own places. It is the stamp of A247 written by the law: with the added distinctions barred, deleting the rule changes no birth.
+- **Rests on it.** Every "the place rule is right" statement of [DESCENT-HELD-20261125-001](../research/DESCENT-HELD-20261125-001/decision.md): right on all 20,677 runs where its four conditions hold, wrong on all 1,800 where some birth's parents disagree.
+- **Challenge.** A law with no parent count among its inputs that shows the order from a class of starts no reached structure belongs to (lone knots, say); it was not tested. Swapped here: added distinctions usable instead of barred (births then change in 280 of 308 runs); the rule at a birth whose parents differ (which places are wrong changes, which runs are right on every structure does not); a closing birth that receives its count (it then fails the knot test under parity). The model is not expected to supply a ration that counts its parents' places.
+- **History.**
+  - 2026-11-25 · Recorded as a scaffold of `DESCENT-HELD-20261125-001`. What survived its swaps: the order shown under a written count, under every numbering of four small starts; not "nothing supplied".
+
+### A253 · A start is supplied with its meeting knots agreeing in their counts
+
+**Assumed** · 2026-11-25 · scaffold
+
+- **Statement.** For a count written by the ration to show which holder of a shared distinction is the parent, every two start knots that meet must have the same count of places, counted in threes (or, for the count of barred places, a start must carry no barred place). The start is supplied in that form; no law makes it so.
+- **Why.** Stated by DESCENT-HELD-20261125-001 as condition (a) of its second argument. Without it the place rule is wrong at a place between two start knots on every run tried (45,142 of 45,142).
+- **Rests on it.** The positive half of [DESCENT-HELD-20261125-001](../research/DESCENT-HELD-20261125-001/decision.md), and the reading that the order is relative to a start supplied flat. It holds on 133 of the 3,348 census starts of up to five knots (each counted once up to renaming) and on 804 of 82,372 starts of six knots.
+- **Challenge.** A class of starts fixed without the count, such as lone knots, where the condition is empty; or a law under which no structure reached meets the condition, so that a start is told from a grown structure by what it shows. The first argument of the study says why some such restriction is needed: a structure reached by a birth and handed in as a start has two records.
+- **History.**
+  - 2026-11-25 · Recorded as a scaffold of `DESCENT-HELD-20261125-001`. Not swapped by a run; its swap (a start may carry barred places) is argued in the study's note.
+
+### A254 · One power from every knot examined is tested with fixed thresholds
+
+**Assumed** · 2026-11-25 · scaffold
+
+- **Statement.** In the study of knots within reach, a run is said to give one power j from every knot examined when each knot's count lies between two multiples of r to the power j within a factor of 2, on one common range of at least a factor 8, and the range is at least 1.8 times longer when the rounds double. The factor, the range and the lengthening are fixed before the run; nothing in the growth supplies them.
+- **Why.** Chosen with the advisor before the freeze of KNOTS-WITHIN-REACH-20261125-001, so that "the same power from every knot" is something a program decides and a count that only looks straight on a short range does not pass.
+- **Rests on it.** The statement that no run of [KNOTS-WITHIN-REACH-20261125-001](../research/KNOTS-WITHIN-REACH-20261125-001/decision.md) gives power 2 or more from every knot examined on a range that lengthens.
+- **Challenge.** Swapped in the same study for a range of a factor 4 and a factor of 3 between a knot's bounds: 111 runs then pass at power 2. So the negative at power 2 is the thresholds'; what does not depend on them is that the count at one round reads power 1. A longer run (four times the rounds) on those 111 would say whether they keep passing.
+- **History.**
+  - 2026-11-25 · Later the same day: the thresholds also hid a positive in the roster count. On four starts the count at one round is exactly 3r² + 3r + 1 through as many as 20 steps, and the registered range of a factor 8 labelled it undecided, the part being too small after 66 rounds ([the check](../research/KNOTS-WITHIN-REACH-20261125-001/checks/README.md)). So the thresholds were needed for the roster count after all, and failed there in the other direction.
+  - 2026-11-25 · Recorded as a scaffold of `KNOTS-WITHIN-REACH-20261125-001`. It did not survive its swap for the history count at power 2; it was not needed for the roster count.
+
+### A255 · A birth may take a shared distinction when exactly one is on offer
+
+**Assumed** · 2026-11-25 · scaffold
+
+- **Statement.** In the second ticket of the study of what a newborn's holdings must depend on, a birth takes a distinction held by a knot its parent meets, and not by its parent, only when exactly one such distinction is eligible; with none or with several it takes nothing. The rule uses no names: there is never a choice among candidates.
+- **Why.** Added by WHAT-A-BIRTH-CARRIES-20261125-001 so that a taking rule could be used without a supplied convention for which distinction is taken, the scaffold that removed every case of the earlier studies under renumbering.
+- **Rests on it.** Every meeting of [ticket B](../research/WHAT-A-BIRTH-CARRIES-20261125-001B/results.md): the 88 pairs per knot law that meet only through a made knot both descend from, and the 280 under the owing ration.
+- **Challenge.** The same rule reading one or two parent steps above the parent gives no meeting at all on the starts tried; a take within one holder step was not listed. Whether a law that takes among several candidates without names (all of them, or by a count the structure holds) gives the same links is not tested.
+- **History.**
+  - 2026-11-26 · Used as one of two taking rules in `FOLLOWS-THE-FORM-20261125-001` (referee pending): with it the first seed's descent tells a chain of four knots from one of five in 20% to 79% of pairs under four laws; with no taking rule it does not. The finding that what a seed's descent makes differs with the form it is linked to does not need this rule.
+  - 2026-11-25 · Recorded as a scaffold of `WHAT-A-BIRTH-CARRIES-20261125-001`. Under 1,152 renumbered runs every verdict and course is the same, as argued.
+
+### A256 · An offshoot may receive as many fresh distinctions as its parent had joins asked of it
+
+**Assumed** · 2026-11-25 · scaffold
+
+- **Statement.** In the second ticket of the study of what a newborn's holdings must depend on, an offshoot receives max(2, o) fresh distinctions, o being the number of the round's groups that contain its parent, counted before any is cancelled; every other birth receives as under the ration "just enough for three places". The value handed to the offshoot is formed anew each round from the groups; it is not a count kept down a line of descent.
+- **Why.** Added by WHAT-A-BIRTH-CARRIES-20261125-001 as the least change found, among 60 listed laws, under which one made part's course differs with another barred across a meeting through a made knot.
+- **Rests on it.** The dependence of [ticket B](../research/WHAT-A-BIRTH-CARRIES-20261125-001B/results.md): 280 pairs per knot law, attributed through the meeting, by one value at one birth.
+- **Challenge.** Swapped in the same ticket: the plain form max(o, 3 − p, 1) gives the same case; a constant of two or three for every offshoot gives no course difference; the value capped at three gives none, and capped at four gives the link with no difference. So the difference needs the uncapped count. A ration under which the difference needs two values at distinct births is the open direction; the model is not expected to supply this rule.
+- **History.**
+  - 2026-11-25 · Recorded as a scaffold of `WHAT-A-BIRTH-CARRIES-20261125-001`. What survived its swaps: the case under the plain form; not under a constant or a cap.
+
+### A257 · A birth may take the most-held distinction within two holder steps of knots
+
+**Assumed** · 2026-11-25 · scaffold
+
+- **Statement.** A taking rule added by hand for a probe: a birth may take, among the shared distinctions that no parent of it holds and that are held by a knot its parents meet or by a knot those knots meet, the one with the most holders, when exactly one has the most. It uses no name and does not look at parts. It is not a recorded law and nothing in the model supplies it.
+- **Why.** Adopted by the thread on 25 November 2026 in the second probe of sub-goal B335, after the take of a sole candidate was found to let a made part meet only the other branches of the knot it descends from. Preferred to six other rules tried with it (a sole candidate, every candidate, or the fewest holders, from near or further; the most holders from near), which gave nothing new.
+- **Rests on it.** The original finite observations that parts meet through made knots and that a first part's course can need two values at two births ([the probe](../research/WHAT-A-BIRTH-CARRIES-20261125-001/checks/reach_further/README.md)). The widening-roster epic independently reconstructed the first meetings under both knot laws.
+- **Challenge.** The rule piles holders onto whichever distinction already has the most, so its links may be common hubs and not contacts; on the census starts every link it makes runs through a distinction a start knot holds. A challenge would test the links with the knot test's hub reading, and would swap the rule for one that reaches as far without seeking the most-held distinction. The model is not expected to supply this rule.
+- **History.**
+  - 2026-11-25 · Entered with the second probe of B335: seven taking rules swapped (how far a birth draws from, which candidate it takes), five rations, three treatments, ring and census starts. What survived the swaps: under a link with no start knot on its distinction the course tells how many second parts are there and not which (1,120 tests on 123 rings of five knots).
+  - 2026-11-25 · Corrected by the registered first-meeting study. The 1,250 most-held meetings per knot law with no start-held linking distinction use different distinctions of a common ancestor of both endpoints. Every tested single-place literal relation allowed all eight states. The frozen complete-record and alternate-taking studies give the stronger readings.
+  - 2026-11-25 · A lasting mark that any birth previously took a distinction reproduced every one of the original 1,250 wholly made first meetings per law, on the same 125 settings. No comparison of holder counts was needed.
+
+### A258 · Starts built from two seeds joined by one link distinction
+
+**Assumed** · 2026-11-25 · scaffold
+
+- **Statement.** A start built by hand for a probe: a first seed of one to three knots, a second seed of one to five knots, and one distinction held by a chosen knot of each. The first seed and the place of the link are held fixed while the second seed is changed. The parts compared are the descents of the two seeds, so the meeting of the two is supplied by the start and not made by the growth.
+- **Why.** Adopted by the thread on 25 November 2026 in the third probe of sub-goal B335, as the plainest way to hold the place fixed and change the form. The alternative, two parts the growth made that meet through a knot the growth made, was tried first in two probes and gave second parts of the same form near the first part.
+- **Rests on it.** The third probe's findings that what a part makes follows the form of what it is attached to, in 4 to 23 classes, by more than one count and partly through made knots ([the probe](../research/WHAT-A-BIRTH-CARRIES-20261125-001/checks/form_at_a_fixed_place/README.md)). No registered result rests on it.
+- **Challenge.** Swap the built starts for starts sampled under a named weighting and for parts the growth made; the finding is about the model only so far as it survives. Five first seeds and two families of second seeds were swapped within the probe; the classes differ from one first seed to another.
+- **History.**
+  - 2026-11-26 · Registered and run (`FOLLOWS-THE-FORM-20261125-001`, referee pending): on five held-out first seeds and 60 held-out second seeds the finding survives (three or more classes in 87 studies of 90; nothing differs with the seeds unlinked), counted twice. What did not survive the swap to held-out seeds: that the first seed's fate differs (37 studies of 90, 40 predicted), and which features are seen. The meeting stays supplied; the scaffold is not replaced.
+  - 2026-11-25 · Entered with the third probe of B335: five first seeds, 50 mixed second seeds and 62 chains, eighteen laws. What survived the swaps of first seed, family and law: what the first seed's descent makes differs with the second seed's form. What did not: which forms are told apart.
+
+### A259 · Two holder roles are read through their exclusive distinctions
+
+**Assumed** · 2026-11-25 · scaffold
+
+- **Statement.** For a witnessed meeting with one identical shared distinction, read a side through each actual distinction held by its endpoint and absent from the opposite endpoint. Also read all such distinctions on a fixed sample of endpoints.
+- **Why.** This gives independently specified side variables and retains the actual shared variable. The prior probe classified witnesses by their holders.
+- **Rests on it.** The contact classifications on the declared panel in WIDENING-ROSTERS-20261125-001.
+- **Challenge.** Compare the literal projections with the joint records of both endpoint supports. Other native recurrence readings need their own specified roles and test.
+- **History.**
+  - 2026-11-25 · Filed with [the further-reaching link study](../experiments/WIDENING-ROSTERS-20261125-001D/WIDENING-ROSTERS-20261125-001D-E001_links/contract.json) before the comparison.
+  - 2026-11-25 · All tested literal triples allowed all eight states. Keeping both complete exclusive records instead gave a proper common hub at all 264,016 physical occurrences per law.
+
+### A260 · A birth can use the preceding round to choose a distinction
+
+**Assumed** · 2026-11-25 · scaffold
+
+- **Statement.** Among the two-step offers, take a sole offer. Otherwise take a distinction only when it is the sole candidate taken by any birth in the preceding complete round.
+- **Why.** This tests whether actual meetings require a ranking by holder count. The single stored mark expires after one round.
+- **Rests on it.** The preceding-round comparison in WIDENING-ROSTERS-20261125-001.
+- **Challenge.** Remove the mark, or replace it with the difference between the two-step and one-step offers. A law without an added memory would replace this scaffold.
+- **History.**
+  - 2026-11-25 · Filed with [the further-reaching link study](../experiments/WIDENING-ROSTERS-20261125-001D/WIDENING-ROSTERS-20261125-001D-E001_links/contract.json) before the comparison.
+  - 2026-11-25 · Marks from the immediately preceding round reproduced 22 first meetings per law whose linking knots were all made. Every one used a start-held distinction.
+
+### A261 · A birth can distinguish its one-step and two-step offers
+
+**Assumed** · 2026-11-25 · scaffold
+
+- **Statement.** Take a sole two-step offer. Otherwise take a distinction only when it is the sole member of the two-step offer absent from the one-step offer.
+- **Why.** This uses the current holder relations and avoids ranking candidates or storing a previous round.
+- **Rests on it.** The two-step comparison in WIDENING-ROSTERS-20261125-001.
+- **Challenge.** Compare actual first meetings with the sole-offer rule and the one-round mark on the same starts. A law deriving the selection from the unaltered growth would replace this added rule.
+- **History.**
+  - 2026-11-25 · Filed with [the further-reaching link study](../experiments/WIDENING-ROSTERS-20261125-001D/WIDENING-ROSTERS-20261125-001D-E001_links/contract.json) before the comparison.
+  - 2026-11-25 · Choosing the only distinction additionally offered at step two made 33 first meetings per law, all with a start knot among the linkers.
+
+### A262 · A birth can remember whether a place has ever been taken
+
+**Assumed** · 2026-11-25 · scaffold
+
+- **Statement.** With a sole candidate take it. With several candidates, use this choice. Of the offered places, exactly one has ever been taken as an extra in a strictly earlier completed round. Take nothing if the stated uniqueness fails.
+- **Why.** This rule tests whether further-reaching first meetings need comparison of holder counts. The offers, kinds of births, treatment of short knots and initial supply stay as in the archived positive settings.
+- **Rests on it.** The matched comparison using this taking rule in the study of the rosters that widen.
+- **Challenge.** Compare with sole offer, the most-held rule, preceding-round marks, and the other four rules on the same starts. Require a first meeting with no start-held linking distinction for the stronger result.
+- **History.**
+  - 2026-11-25 · Frozen for comparison on the same 205 settings under both knot laws.
+  - 2026-11-25 · A lasting mark reproduced all 1,250 strict first meetings on the original 125 settings per knot law. Every strict-producing trajectory made the same choices on plural offers as the original rule.
+
+### A263 · A birth can read the latest past take among the offered distinctions
+
+**Assumed** · 2026-11-25 · scaffold
+
+- **Statement.** With a sole candidate take it. With several candidates, use this choice. Among offered places previously taken as extras, take the unique place with the latest round of such a take. If none are marked or the latest round ties, abstain. Take nothing if the stated uniqueness fails.
+- **Why.** This rule tests whether further-reaching first meetings need comparison of holder counts. The offers, kinds of births, treatment of short knots and initial supply stay as in the archived positive settings.
+- **Rests on it.** The matched comparison using this taking rule in the study of the rosters that widen.
+- **Challenge.** Compare with sole offer, the most-held rule, preceding-round marks, and the other four rules on the same starts. Require a first meeting with no start-held linking distinction for the stronger result.
+- **History.**
+  - 2026-11-25 · Frozen for comparison on the same 205 settings under both knot laws.
+  - 2026-11-25 · The latest-past-take rule reproduced all 1,250 strict first meetings per knot law. Outside strict-producing settings it chose below the unique most-held candidate 20 times per law.
+
+### A264 · A birth can read the creation round of an offered distinction
+
+**Assumed** · 2026-11-25 · scaffold
+
+- **Statement.** With a sole candidate take it. With several candidates, use this choice. Take the sole candidate with the latest round of creation. Every distinction in the start has round zero. A tie abstains. Take nothing if the stated uniqueness fails.
+- **Why.** This rule tests whether further-reaching first meetings need comparison of holder counts. The offers, kinds of births, treatment of short knots and initial supply stay as in the archived positive settings.
+- **Rests on it.** The matched comparison using this taking rule in the study of the rosters that widen.
+- **Challenge.** Compare with sole offer, the most-held rule, preceding-round marks, and the other four rules on the same starts. Require a first meeting with no start-held linking distinction for the stronger result.
+- **History.**
+  - 2026-11-25 · Frozen for comparison on the same 205 settings under both knot laws.
+  - 2026-11-25 · The rule preferring the newest distinction made two-step-only takes but produced no first meeting on the observed prefixes.
+
+### A265 · A birth can tell a made distinction from one present at the start
+
+**Assumed** · 2026-11-25 · scaffold
+
+- **Statement.** With a sole candidate take it. With several candidates, use this choice. Take only if precisely one offered place was created after the start. Take nothing if the stated uniqueness fails.
+- **Why.** This rule tests whether further-reaching first meetings need comparison of holder counts. The offers, kinds of births, treatment of short knots and initial supply stay as in the archived positive settings.
+- **Rests on it.** The matched comparison using this taking rule in the study of the rosters that widen.
+- **Challenge.** Compare with sole offer, the most-held rule, preceding-round marks, and the other four rules on the same starts. Require a first meeting with no start-held linking distinction for the stronger result.
+- **History.**
+  - 2026-11-25 · Frozen for comparison on the same 205 settings under both knot laws.
+  - 2026-11-25 · The rule taking the only made distinction made two-step-only takes but produced no first meeting on the observed prefixes.
+
+### A266 · A birth can distinguish exactly three current holders
+
+**Assumed** · 2026-11-25 · scaffold
+
+- **Statement.** With a sole candidate take it. With several candidates, use this choice. Take only if precisely one offered place has exactly three holders before the round. This final comparator reads a fixed holder count and can choose a place with fewer holders than another. Take nothing if the stated uniqueness fails.
+- **Why.** This rule tests whether further-reaching first meetings need comparison of holder counts. The offers, kinds of births, treatment of short knots and initial supply stay as in the archived positive settings.
+- **Rests on it.** The matched comparison using this taking rule in the study of the rosters that widen.
+- **Challenge.** Compare with sole offer, the most-held rule, preceding-round marks, and the other four rules on the same starts. Require a first meeting with no start-held linking distinction for the stronger result.
+- **History.**
+  - 2026-11-25 · Frozen for comparison on the same 205 settings under both knot laws.
+  - 2026-11-25 · A fixed test for exactly three holders reproduced every strict meeting, while the lasting-mark rule did so without this cardinality test.

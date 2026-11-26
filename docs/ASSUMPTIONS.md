@@ -341,6 +341,7 @@ evidence: results and their status come from the records each entry links.
 | [A283](#a283--the-damage-of-a-change-read-without-names-with-a-struck-pulse-and-a-mark-at-a-made-knot) | The damage of a change read without names, with a struck pulse and a mark at a made knot | scaffold | Assumed |
 | [A284](#a284--a-new-knot-holds-back-part-of-what-it-is-owed-two-forms) | A new knot holds back part of what it is owed: two forms | scaffold | Assumed |
 | [A285](#a285--a-threshold-a-new-knot-reads-from-itself-two-forms) | A threshold a new knot reads from itself: two forms | scaffold | Assumed |
+| [A286](#a286--strata-starts-built-by-hand-with-large-groups-a-second-weighting-and-a-longer-horizon-to-test-the-late-view-predictor) | Strata, starts built by hand with large groups, a second weighting and a longer horizon, to test the late-view predictor | scaffold | Assumed |
 
 ## Entries
 
@@ -5900,3 +5901,25 @@ evidence: results and their status come from the records each entry links.
 - **Challenge.** Starts where p varies (joins of three parents, takes), where PLACES stops being a cap; other self-read thresholds. The model is not expected to keep either form; they are candidates for G18's comparison.
 - **History.**
   - 2026-11-26 · Entered with `SELF-THRESHOLD-20261126-001`.
+
+### A286 · Strata, starts built by hand with large groups, a second weighting and a longer horizon, to test the late-view predictor
+
+**Assumed** · 2026-11-26 · scaffold
+
+- **Statement.** Choices made by `LATE-VIEWS-20261126-001` to test a predictor that reads each start's view off its finite
+  map without growing it: (1) a uniform seeded sample of 2,000 six-knot census starts (each census start once up to its
+  symmetries, `random.Random(20261128)`, outside the 3,000 sampled before); (2) a supplement of up to 40 starts in each of
+  five rare structural strata (a group cell of four or more knots, with chains and without; two group cells that share no
+  knot; group cells sharing a knot; a block meeting a group cell in two knots, with chains), `random.Random(20261130)`,
+  outside every earlier sample; (3) 17 starts built by hand outside the census, with group cells of four to seven knots;
+  (4) 1,000 seven-knot starts of the 'grow' weighting of `WEIGHTINGS-20261119-001B` (`random.Random(20261129)`); (5) the
+  24-round horizon with the 30,000-knot cap, lengthened to 40 rounds for 100 sampled starts of predicted dimension at most
+  two. The two readings without names are A283's. Nothing in the model supplies any of them.
+- **Why.** Adopted by the thread on 26 November 2026 with the advisor's review before the freeze: every group cell in the
+  census of up to five knots is small, so the rare strata, the large cells and a second weighting are where the predictor's
+  reading of groups is most likely to fail.
+- **Rests on it.** Whatever the study claims about starts of six and seven knots (filled in at its close).
+- **Challenge.** Seeds and weightings other than these, starts of eight or more knots, horizons past 40 rounds. The model
+  is not expected to replace them: they are how an observer samples starts.
+- **History.**
+  - 2026-11-26 · Entered with `LATE-VIEWS-20261126-001` at its freeze.

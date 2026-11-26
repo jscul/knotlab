@@ -36,8 +36,7 @@ relation among variables, not a knot in space. Since the program is trying to
 build space, the page names its own objects by distinctions, knots and counts,
 and gives a spatial word only as the literature's name for an object, marked
 as such, or for a picture it says is drawn; the
-[glossary](INTUITIONS.md#glossary) maps each word to the literature's
-(owner, 2026-11-11).
+[glossary](INTUITIONS.md#glossary) maps each word to the literature's.
 
 **What this does not claim.** The boundary between two-place and three-place
 constraints is a boundary of what can be expressed. It is not the boundary
@@ -92,76 +91,17 @@ Evidence: [the thesis](docs/FOUNDATIONAL_THESIS.md#emergence-atomic-topology-and
 
 The program's owner: "Distance is the only form of information.
 That's the entire basis of the 'this versus that' distinction in the smallest
-emergent unit." It was, he said, "the entire premise of 'space from logic'",
-and it "plays in with everything, like the dimensions from logic too". It is
-his premise and his interpretation. Nothing in the record proves it, no
-result is derived from it, and the protected thesis does not state it in these
-words.
+emergent unit." It is his premise and his interpretation: nothing in the
+record proves it, and no result is derived from it. On his reading distance
+has no direction but has an order in which nothing is skipped, and it begins
+with the first knot, whose single touch is minimal contact-distance.
 
-Asked whether his distance includes which way or only how far, he answered:
-"Distance is topological, so it will have some starting point, then go off
-outward from there. So for example, 0 might be a starting point on the number
-line. In my view, there isn't really any such thing as "direction". Everything
-is just "relative", but it's also topological, so if you're at 3 on the number
-line, you can't just skip 4 to get to 5, so there is an order."
-The number line is his illustration, not a space the program assumes. Read
-as order from distance alone, with no direction (classically, betweenness for
-a distance built from unit steps), this is the program's reading of his
-words, and it has not been tested.
-
-Asked next whether that order exists before any knot, as on a chain of plain
-implications, or only with one knot per step, he answered: "The knots are
-themselves the smallest form of spatial topology. "3" as a concept is a
-topological structure that exists but with relation to all other numbers, not
-just neighbors", and "Logical topology is the very first instance of "this
-versus that". From that, we can create space, set theory, everything else."
-Read in the program's terms, not his: the knot comes first, so under the
-premise minimal contact-distance appears with the first knot, and the order a
-chain of plain implications already has is not yet his distance; "all other
-numbers, not just neighbors" reads distance as a relation over every pair. He
-did not name one of the candidate distances.
-
-In the program's terms it joins two things the foundation already says. The
-knot's single touch is minimal contact-distance, the smallest relative
-existence, with no magnitude (the claim above); and a knot is joint
-information, a difference held by the whole and by no part. Read with the
-premise, the two are one, and there is no other kind of information; the owner
-has not put it in these words. Minimal contact-distance then appears with the
-first knot, not before, since logic itself presupposes no distance (the first
-claim of this section), and counted distances appear only where knots compose.
-Every counted distance is counted in knots,
-bonds or contacts: bond distance read from the allowed states, which counts one
-unit per loop along a chain of atoms and, under the not-all-equal law, measures
-steps apart exactly on the endless six-regular weave (section 5); counted
-contacts along a route, across time (assumption A40); and dimension, which the
-record reads from how fast the distinctions within a given bond distance grow.
-The owner's idea of axes that "expand out in measures of logic" is this
-premise turned on space; this line of work is parked, with one dimension
-grown from a rule and none yet selected by a law of its own.
-
-The premise is under challenge as assumption A97, and its first direct test
-shows that which notion of distance is meant decides the answer. Read as bond
-distance between pairs, it fails from four distinctions up: bases with the
-same pairwise bond distances allow different states. Read as how often two
-distinctions differ, the number of allowed states in which they take
-different values, that table determines the allowed states of any base
-defined by three-place not-all-equal rules on four or more distinctions.
-On four distinctions a four-place rule and the unconstrained base both give
-eight disagreements per pair, although they allow 14 and 16 states respectively.
-This count ranges across the allowed states. An interpretation as extended
-distance would also require native paths and separation. His
-answer rules out direction and asks for an order in which nothing is skipped.
-In that count, c lies between a and b exactly when no allowed state has
-a = b ≠ c. Where the pairs of the three are all free, that constraint is a
-knot; on a chain of two-place implications, which has no knot, it follows from
-the two-place rules, and the count is exactly the number of steps (on
-x → y → z it is 1, 1 and 2). Where the knots form no
-cycle, one quantity read from the counts equals steps apart, so a single
-distance carries the base and goes outward with nothing skipped (proved). On
-the thread and the six-regular weave, read with exact additive betweenness, the
-count that carries everything puts no distinction between two others; read
-only as order, it has a local order whose nearest neighbours are not the
-weave's own (computed, refereed). This page leaves the choice of his word open.
+Under challenge as assumption A97, the first direct test finds that the
+notion of distance decides the answer. Pairwise bond distances do not fix the
+allowed states from four distinctions up. How often two distinctions differ,
+counted over the allowed states, fixes them for bases of three-place
+not-all-equal rules on four or more distinctions; it is a count, not an
+extended distance. Which notion he means is open. Lesson 2.4 gives the rest.
 
 Evidence: [Intuitions, lesson 2.4](INTUITIONS.md#24-distance-is-the-only-form-of-information), [the register, A97](docs/ASSUMPTIONS.md#a97--distance-is-the-only-form-of-information), [the direct test](research/DISTANCE-INFO-20261117-001/distance_info.md), [its referee](research/DISTANCE-INFO-20261117-001/referee-R1/report.md), [the order test](research/DISTANCE-ORDER-20261117-001/distance_order.md), [the thesis](docs/FOUNDATIONAL_THESIS.md#emergence-atomic-topology-and-distance), [the foundation's reading](docs/FOUNDATION_READING.md)
 
@@ -175,7 +115,7 @@ an input. Each loop contributes an open distinction, and erasing a loop forgets
 it. A relation over the loops' distinctions and one contact is a knot when it
 is constrained as a whole (K1), forgetting any one variable leaves the rest
 unconstrained (K2), and some state is allowed (K3). John Cullen adopted this
-test, with erasure read as forgetting, on 19 October 2026.
+test, with erasure read as forgetting.
 
 Evidence: [the decision](research/KNOT-FOUNDATION-20261019-001/canonical_correction_request.md), [the thesis](docs/FOUNDATIONAL_THESIS.md#canonical-knot-test), [proof](proofs/KNOT-FOUNDATION-20261019-001E/KNOT-FOUNDATION-20261019-001E-P001_forgetting_reading/proof.md), [Intuitions, lesson 2.1](INTUITIONS.md#21-the-knot-test)
 
@@ -241,19 +181,15 @@ Evidence: [the thesis](docs/FOUNDATIONAL_THESIS.md#protected-modal-plurality-int
 
 John Cullen: "Yes, there is no choice. I
 feel like we keep going back to this being a choice. It isn't. It's just
-random." Of our reality: "It is indifferent. It's is purely coincidental."
-This is the co-reality reading applied to which knots share which
+random." This is the co-reality reading applied to which knots share which
 distinctions: no meeting pattern is selected, so one the record writes down is
-one sample, not a gap to be closed, and the questions become which meeting
-patterns are typical and which rare, and what a law reads off each. Since no
-chances can be equal over infinitely many alternatives, typical and rare are
-always relative to a declared weighting. His other realities are read as other
-knot patterns of the same kind of logic, and bound realities as one larger
-knot pattern, never as contact across bases. What binds them, his "binding
-patterns", he leaves open: "This is what we're trying to discover" (12
-November), with two pictures, logic carried in each knot that binds whole knot
-patterns together, or recursion in which inner parts are placed by the larger
-ones. Whether a law forces its own meeting pattern stays a separate question.
+one sample, not a gap to be closed. The questions become which meeting
+patterns are typical and which rare, always under a declared weighting, and
+what a law reads off each. His other realities are read as other knot patterns
+of the same kind of logic, and bound realities as one larger knot pattern,
+never as contact across bases. What binds them, his "binding patterns", he
+leaves open. Whether a law forces its own meeting pattern is a separate
+question.
 
 Evidence: [Intuitions, lesson 7.3](INTUITIONS.md#73-every-meeting-pattern-none-chosen), [the register, A15, A71 and A73](docs/ASSUMPTIONS.md)
 
@@ -535,14 +471,12 @@ contradictions (earlier records: three-fold spaces), are the triple systems
 that resist 2-colouring as a whole but not once their corner knot is removed.
 Each is built from Fano pieces, the Fano pattern (the literature's Fano plane)
 with one element removed, joined at three-edge cuts of the incidence graph by
-Pfaffian glue made from planar pieces. When the glue is planar, the genus of
-the incidence graph, the least genus of an orientable surface that carries it
-in the literature's terms, equals the number of Fano pieces: in that drawing
-each piece is one handle. The Fano pattern's own drawing is the literature's
-seven-vertex torus. The tools are classical (tight cuts, Pfaffian
-orientations). (Reworded on 2026-11-11: the first title said that the knot
-"builds its own surfaces", but the surfaces are the literature's drawings of
-the incidence graph, which the knot does not build.)
+Pfaffian glue made from planar pieces. When the glue is planar, the
+literature's genus of the incidence graph equals the number of Fano pieces: in
+its drawing each piece is one handle. The tools are classical (tight cuts,
+Pfaffian orientations). (Reworded: the first title said that the knot "builds
+its own surfaces", but the surfaces are the literature's drawings of the
+incidence graph, which the knot does not build.)
 
 Evidence: [built from the Fano plane](proofs/THREEFOLD-SPACES-20261030-001A/THREEFOLD-SPACES-20261030-001A-P001_three_fold_spaces_are_built_from_the_fano_plane/proof.md), [pieces and glue](proofs/THREEFOLD-GRAMMAR-20261030-001A/THREEFOLD-GRAMMAR-20261030-001A-P001_fano_leaves_and_planar_glue/proof.md), [each piece a handle](proofs/THREEFOLD-SURFACES-20261030-001A/THREEFOLD-SURFACES-20261030-001A-P001_fano_atoms_are_handles/proof.md)
 
@@ -584,10 +518,9 @@ Sierpinski d-simplex too, and one member of its family is a knot in every
 dimension d ≥ 2, so knots reproduce themselves exactly on drawn self-similar
 substrates whose dimension, in the literature's count, rises to d. On drawn
 two-dimensional triangulations under shared subdivision, by contrast, only
-parity reproduces itself with a knot. (Reworded on 2026-11-11: the first
-version said that signed knots "build" self-similar space, but the gaskets and
-simplices are drawn in advance, and what is proved is that the law reproduces
-itself on them.)
+parity reproduces itself with a knot. (Reworded: the first version said that
+signed knots "build" self-similar space, but the substrates are drawn in
+advance.)
 
 Evidence: [gaskets](proofs/SIGNED-GASKETS-20261029-001A/SIGNED-GASKETS-20261029-001A-P001_signed_not_all_equal_reproduces_itself_on_every_gasket/proof.md), [simplices](proofs/SIMPLEX-GASKETS-20261029-001A/SIMPLEX-GASKETS-20261029-001A-P001_the_standing_wave_reproduces_itself_on_every_sierpinski_simplex/proof.md), [shared subdivision](proofs/SHARED-SUBDIVISION-20261029-001A/SHARED-SUBDIVISION-20261029-001A-P001_which_knots_reproduce_themselves_under_shared_subdivision/proof.md)
 
@@ -601,9 +534,8 @@ two-dimensional topology in the literature's sense: each Fano piece of a
 not-all-equal contradiction adds one handle to its incidence graph's drawing,
 while the native laws found so far fix neither orientation nor scale. How the
 knots meet is supplied with the gluing, not chosen by the law (A51, A64).
-(Reworded on 2026-11-11: the reading first said that "the space a law builds is
-two-dimensional topology" and that the knot "builds one handle per Fano atom";
-later records show that how knots meet is an input the law does not supply,
+(Reworded: the reading first said that "the space a law builds is
+two-dimensional topology"; how knots meet is an input the law does not supply,
 `NAE-SURFACE-20261111-001`.)
 
 Evidence: [the knot intuition, question 9](docs/KNOT_INTUITION.md#open-questions)
@@ -614,21 +546,16 @@ Evidence: [the knot intuition, question 9](docs/KNOT_INTUITION.md#open-questions
 
 Bond distance, the size of the least knot through two distinctions minus one,
 is read from the allowed states alone. Along a chain of atoms
-w(t−1) ∧ L(t) → w(t) it is exactly t − s + 1 from w(s) to w(t), one unit per
-loop, while a chain of two-place ties has no knot and so no bond distance.
-When finite sets of distinctions far enough apart are independent, as under
-parity laws with no ends, every knot is chained at the law's range, so bond
-distance is at least the separation divided by that range. Tseitin's parity law on a drawn
-grid of D steps has bond balls that grow like r^D, so the allowed states read
-the grid's dimension back. A rule that grows only at knots holding two loose
-ends grows an endless chain from one knot, along which bond distance counts one
-per step, with nothing drawn. Bond distance spaces nothing across a gate, a
-shared distinction one value of which satisfies both knots it joins: there a
-chain of knots can read what the literature calls a number line while bond
-distance reads none, and the register holds as assumption A39 that such
-distinctions are not spaced. These are the first exact distances under the
-founding premise (section 1); the core is classical shift theory, and what is
-new is reading a ruler from the least knots.
+w(t−1) ∧ L(t) → w(t) it counts one unit per loop; a chain of two-place ties
+has no knot and so no bond distance. Where distinctions far enough apart are
+independent, bond distance is at least the separation divided by the law's
+range: Tseitin's parity law on a drawn grid of D steps has bond balls that grow
+like r^D, so the allowed states read the grid's dimension back. A rule that
+grows only at knots holding two loose ends grows an endless chain, counted one
+per step, with nothing drawn. Across a gate, a shared distinction one value of
+which satisfies both its knots, bond distance spaces nothing (assumption A39).
+The core is classical shift theory; reading a ruler from the least knots is
+new.
 
 Evidence: [proof](proofs/LOGIC-AXIS-20261107-001A/LOGIC-AXIS-20261107-001A-P001_rulers_without_ends/proof.md), [the axis decision note](research/LOGIC-AXIS-20261107-001/logic_axis.md), [growth at loose ends](research/OPEN-END-GROWTH-20261107-001/open_end_growth.md), [bond and chain distance](research/BOND-CHAIN-20261108-001/bond_chain.md), [Intuitions, lesson 4.6](INTUITIONS.md#46-dimensions-from-rules)
 
@@ -638,18 +565,15 @@ Evidence: [proof](proofs/LOGIC-AXIS-20261107-001A/LOGIC-AXIS-20261107-001A-P001_
 
 On the endless six-regular weave, with nothing given but the knots and which
 distinctions they share, the not-all-equal law reads the meeting pattern
-faithfully, and two distinctions d steps apart lie together in a bond of
-exactly d + 2 distinctions and in no smaller one: bond distance is steps apart
-plus one at every distance. So the law reads dimension two from its allowed
-states, with the meeting pattern given. On a finite six-regular weave whose
-unfilled cycles set a margin M, the orientable ones have states exactly when
-M ≥ 0, bond distance is steps apart plus one whenever the steps apart are
-below M/3 (beyond that only a lower bound is proved, and on small weaves short
-unfilled cycles do shorten bonds three steps apart), and the reading is
-faithful when M > 3. The allowed states are the
-literature's ground states of the triangular Ising antiferromagnet, and the
-height function behind the proof is known (Blöte and Hilhorst 1982); the
-statement of the ruler was not found in a bounded search.
+faithfully: two distinctions d steps apart lie together in a bond of exactly
+d + 2 distinctions and in no smaller one, so bond distance is steps apart plus
+one, and the law reads dimension two from its allowed states. On a finite
+six-regular weave whose unfilled cycles set a margin M, the orientable ones
+have states exactly when M ≥ 0, the ruler holds below M/3 steps apart, and the
+reading is faithful when M > 3. The allowed states are the literature's ground
+states of the triangular Ising antiferromagnet, and the height function behind
+the proof is known (Blöte and Hilhorst 1982); the ruler itself was not found in
+a bounded search.
 
 Evidence: [proof](proofs/RULER-20261111-001A/RULER-20261111-001A-P001_the_plane_ruler/proof.md), [finite weaves](proofs/RULER-FLAT-20261111-001A/RULER-FLAT-20261111-001A-P001_winding_heights/proof.md), [Intuitions, lesson 4.7](INTUITIONS.md#47-knots-alone)
 
@@ -777,17 +701,15 @@ Evidence: [planar sides](proofs/HANDLE-EMERGENCE-20261102-001A/HANDLE-EMERGENCE-
 **Proved** · 2026-11-02
 
 Draw the planar glue's incidence graph in the plane, as the literature does,
-and give it Kasteleyn signs. A solution then makes each knot skip the
-distinction opposite its odd distinction, and every face of the drawing hold an
-odd number of skipped distinctions, so Euler's count of faces forces a planar
-contradiction to fail. After a removal, the solutions are the perfect
-matchings of the other knots to the faces off the removed knot. These matchings
-carry integer heights that form a discretely convex set, so on a planar side
-every pinned knot on three distinctions through the hub is generated, whatever
-the far side. A crossing knot that one port separates
-is a 2-sum of its two sides, or tie-equivalent to a one-sided circuit. Heights
-of planar matchings (Thurston, Propp) and discrete convexity (Murota) are
-classical.
+with Kasteleyn signs. A solution makes each knot skip the distinction opposite
+its odd distinction and every face hold an odd number of skipped distinctions,
+so Euler's count of faces forces a planar contradiction to fail. After a
+removal, the solutions are the perfect matchings of the other knots to the
+faces off the removed knot; their integer heights form a discretely convex set,
+so on a planar side every pinned knot on three distinctions through the hub is
+generated, whatever the far side. A crossing knot that one port separates is a
+2-sum of its two sides, or tie-equivalent to a one-sided circuit. Heights of planar matchings (Thurston, Propp) and
+discrete convexity (Murota) are classical.
 
 Evidence: [faces](proofs/HANDLE-EMERGENCE-20261102-001C/HANDLE-EMERGENCE-20261102-001C-P001_why_a_planar_side_cannot_create/proof.md), [access lemma](proofs/PLANAR-THEOREM-20261102-001A/PLANAR-THEOREM-20261102-001A-P001_the_access_lemma_by_discrete_convexity/proof.md), [one-port 2-sums](proofs/PLANAR-THEOREM-20261102-001B/PLANAR-THEOREM-20261102-001B-P001_knots_separated_by_one_port_are_two_sums/proof.md)
 
@@ -1030,17 +952,14 @@ Evidence: [the knot intuition, questions 1, 2, 4 and 7](docs/KNOT_INTUITION.md#o
 
 **Open** · 2026-11-12
 
-Grow a knot pattern one knot at a time under a declared random process. Its
-outcome, after John Cullen's three: it resolves to nothing, it ends (allows
-states for a while, then none), or it goes on forever. Under not-all-equal
-with knots placed uniformly at random, the end comes near 2.1 knots per
-distinction (known; the exact value for three-place knots is open), and the
-contradiction that ends a large pattern is never local (known). Open: what the
-law reads off the patterns that live (ties, faithfulness, bond distance
-against steps apart), what other growth processes do, and whether the law's
-own quantities approach a limit as a pattern nears its end, which John Cullen
-expects ("similar to limits", "relativity, but for logic"). A census is
-pre-registered.
+Grow a knot pattern one knot at a time under a declared random process. It
+resolves to nothing, ends (allows states for a while, then none), or goes on
+forever. Under not-all-equal with knots placed uniformly at random, the end
+comes near 2.1 knots per distinction (known; the exact value for three-place
+knots is open), and the contradiction that ends a large pattern is never local
+(known). Open: what the law reads off the patterns that live, what other
+growth processes do, and whether the law's own quantities approach a limit as
+a pattern nears its end, as John Cullen expects. A census is pre-registered.
 
 Evidence: [Intuitions, lesson 7.3](INTUITIONS.md#73-every-meeting-pattern-none-chosen), [the census's pre-registration](research/RANDOM-FATES-20261112-001/preregistration.md)
 
@@ -1053,16 +972,10 @@ loops of logic, then like eddies in a river that are shared across the
 universe essentially there are 'core-libs' kind of processing." This is his
 direction, not a result. Read in the program's terms, the loops of knots that
 feed their own growth would come in a few kinds, each acting the same way
-wherever it occurs, like a shared library routine. A short catalogue of them,
-with what each does to whatever joins it, would then describe the
-self-feeding part of every growth. What is known so far fits it:
-- a ring's ratio depends only on its knots and spares;
-- a ring keeps its own growth inside a join;
-- rings that feed themselves are rare among growths full of cycles;
-- they behave the same under parity and under not-all-equal.
-
-Whether the kinds are few is being tested. "Shared across the universe" stays
-an interpretation.
+wherever it occurs, like a shared library routine. What is known so far fits
+it: a ring's ratio depends only on its knots and spares, a ring keeps its own
+growth inside a join, and rings behave the same under parity and under
+not-all-equal. Whether the kinds are few is being tested.
 
 Evidence: [the register, A109](docs/ASSUMPTIONS.md), [the joined rings' rule](research/RING-PAIR-20261119-001/ring_pair.md), [growth under not-all-equal](research/NAE-GROWTH-20261119-001/nae_growth.md)
 
@@ -1071,24 +984,17 @@ Evidence: [the register, A109](docs/ASSUMPTIONS.md), [the joined rings' rule](re
 **Open** · 2026-11-12
 
 John Cullen: "each boolean variable could be its own micro infinite series of
-logic, that's bound to others". Tested one way (referee pending): each
-distinction an inner harmony, each outer knot an unlagged stitch of the inner
-harmonies. Then the level above allows exactly the outer states, at every
-level, and never ends (proved: every outer state lifts); only the alternation
-0101… is one distinction exactly; forced values only multiply the seed's, and
-a drawn three-copy nesting forces nothing to level 7. Tested the other way
-(referee pending): replace each distinction by a block whose own knots bind
-the copies, and every distinction the block cannot spare is tied across the
-whole pattern (in 47 of 87 small blocks), while nesting deeper adds nothing
-new. Proved (referee pending): the pinned distinctions are exactly those no
-state of the block can flip alone, pinned by equality, the same value
-everywhere they reach; so for odd periods a harmony is exactly a block that,
-nested, pins everything. Open: pins that vary (a twisted binding), and which
-reading John meant. Asked whether the series are bound beside or inside one
-another, he said: "We need to suss this out", adding that a
-loop's "side" is not a drawn edge: "there is no limit in what it's in contact
-with, so the "sides" can overlap where one side can touch many other sides,
-it's not a 1:1 thing."
+logic, that's bound to others". Tested two ways, each with its referee
+pending. With each distinction an inner harmony and each outer knot an
+unlagged stitch of the inner harmonies, the level above allows exactly the
+outer states, at every level, and never ends (proved: every outer state
+lifts). With each distinction replaced by a block whose own knots bind the
+copies, every distinction the block cannot spare is tied across the whole
+pattern (in 47 of 87 small blocks), and nesting deeper adds nothing new.
+Proved: the pinned distinctions are exactly those no state of the block can
+flip alone, pinned by equality. Open: pins that vary (a twisted binding), and
+which reading John meant; whether the series are bound beside or inside one
+another, he said, "We need to suss this out".
 
 Evidence: [bases within bases](research/BASES-WITHIN-20261112-001/bases_within.md), [nesting by substitution](research/SUBST-NEST-20261112-001/subst_nest.md), [the pinning theorem](research/PIN-RULE-20261112-001/pin_rule.md), [Intuitions, lesson 7.3](INTUITIONS.md#73-every-meeting-pattern-none-chosen)
 

@@ -4,6 +4,23 @@ Epic `BEYOND-REJECTION-20261126-001` (G18, at the coordinator's pick after `FORB
 A290), closed 26 November 2026. A check by the thread: exact linear programs and a scoping note; referee pending.
 [The note](README.md) · [advisor's question](advisor_question.md) and [answer](advisor_answer.md)
 
+
+> **Refereed (R1, [report](referee-R1/report.md)): refuted in part, one Block on part B.** Part A stands: the fixed-address
+> maxima 7/3 and 5/2 (rebuilt independently from the earlier construction's own terminal names, and attainable with the
+> complete records, not only the three terminals), and no weighting, nonnegative or signed, survives a sender who sees its
+> shortage. **Block:** part B's "no recorded law makes a sign that could weight configurations" is false. The record has a
+> preserved sign on complete states: after one ordinary growth from the five-knot cyclic start, the 32,768 allowed states
+> fall into two classes of 16,384 joined by the smallest changes, labelled by the parity of the old shared distinctions
+> (`READS-HOLDERS-SOURCES-20261120-001`, its motion study); and a counting proof sums signed coefficients over legal
+> states, the sign fixed by the law and a marked place (`THREEFOLD-AMPLITUDE-20261030-001C`, Lemma 2). Neither shows
+> growth choosing such a weighting for the readers, so part A's operational result stands, but the inventory cannot close
+> the search for a sign. **Narrowings:** with the shortage hidden the maximum is 2, but feasible weightings need not fix
+> the terminals (not-all-equal allows every score from 1 to 2); row 3's value-read claim (summing unread witnesses before
+> squaring can change a value read); row 4 (the reversal sign can factor with mixed parity; the carrying condition across
+> a split is the complex flip's, and for the real flip it is all pairs except those across the split); rows 6, 8, 9, 10,
+> 11 (signs in matching terms align; an odd harmony has no antiperiod; inclusion–exclusion sums over the same assignments;
+> the co-information's sign depends on its weighting); the advisor's factorization sketch fails on a four-bit example.
+> Logged in `docs/CORRECTIONS.md`.
 ## What stands
 
 1. **The whole-round response is closed as a route.** On the earlier edit study's preparation, with the weighting of
@@ -11,7 +28,9 @@ A290), closed 26 November 2026. A check by the thread: exact linear programs and
    earlier 9/4); but once the sender may choose its address from what it sees, no weighting keeps the receiver's record
    unchanged, and with its shortage hidden from it the only weightings left give exactly 2. Signed weights do not help:
    with every observable probability nonnegative, no signed weighting reaches even 2.001 against a free sender.
-2. **No recorded law makes a sign that could weight configurations.** Of twelve places where the record has something
+2. **No recorded law makes a sign that could weight configurations** *(R1, Block: false; the record has a preserved
+   two-class sign on complete states after ordinary growth, and a marked signed law in a counting proof; neither is
+   shown to be selected by growth for the readers)*. Of twelve places where the record has something
    cancel, the ones the model makes by itself (the parity rule's mod-2 sums, a shared distinction counted twice,
    not-all-equal's antisymmetric mode, complement symmetry, a knot's negative co-information) weight no configuration
    or weight them all alike; every signed weight on whole configurations is a choice of ours (the sign law and its
@@ -36,7 +55,7 @@ sign (the note is about the recorded laws).
 
 | # | Direction | Payoff | Concreteness | First step → stop when | Status |
 | --- | --- | --- | --- | --- | --- |
-| 1 | A growth rule that orders births so that the exchange sign falls on the pairs across a split | 3/3 — would make the sign native | 1/3 — no candidate rule | Write candidate rules with the advisor (orders a round could take by itself) → one with a frozen test, or none | Proposed |
+| 1 | A growth rule that orders births so that the exchange sign carries the contradiction (R1: across the split for the complex flip; all pairs but those across it for the real flip) | 3/3 — would make the sign native | 1/3 — no candidate rule | Write candidate rules with the advisor (orders a round could take by itself) → one with a frozen test, or none | Proposed |
 | 2 | Run the frozen confirmation test | 1/3 — confirms the note | 3/3 — written | Run it → zero hits (the note stands) or a hit to report as a supplied sign | Proposed |
 
 1. The record's only pairwise sign that carries the contradiction is the exchange sign of crossing lifetimes, and the

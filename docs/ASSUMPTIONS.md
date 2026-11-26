@@ -6011,4 +6011,5 @@ evidence: results and their status come from the records each entry links.
 - **Rests on it.** The study's linear programs and its frozen test ([the note](../research/BEYOND-REJECTION-20261126-001/README.md)).
 - **Challenge.** Records with more of the earlier construction's content (only more constraints); other joint responses; the frozen test's readings once run. The model is not expected to keep these choices.
 - **History.**
+  - 2026-11-26 · Refereed (R1, [report](../research/BEYOND-REJECTION-20261126-001/referee-R1/report.md); one Block on the scoping note): part A stands with the complete records as well as the reduced ones; the hidden sender's feasible weightings need not fix the terminals.
   - 2026-11-26 · Entered with `BEYOND-REJECTION-20261126-001`.

@@ -6,6 +6,23 @@ acts as a local rejection). That study left two routes to a table beyond the cla
 does not signal, or weights that can cancel. Part A tests the first on the one joint response the record has; part B
 scopes the second. A check by the thread; computed; referee pending.
 
+
+> **Refereed (R1, [report](referee-R1/report.md)): refuted in part, one Block on part B.** Part A stands: the fixed-address
+> maxima 7/3 and 5/2 (rebuilt independently from the earlier construction's own terminal names, and attainable with the
+> complete records, not only the three terminals), and no weighting, nonnegative or signed, survives a sender who sees its
+> shortage. **Block:** part B's "no recorded law makes a sign that could weight configurations" is false. The record has a
+> preserved sign on complete states: after one ordinary growth from the five-knot cyclic start, the 32,768 allowed states
+> fall into two classes of 16,384 joined by the smallest changes, labelled by the parity of the old shared distinctions
+> (`READS-HOLDERS-SOURCES-20261120-001`, its motion study); and a counting proof sums signed coefficients over legal
+> states, the sign fixed by the law and a marked place (`THREEFOLD-AMPLITUDE-20261030-001C`, Lemma 2). Neither shows
+> growth choosing such a weighting for the readers, so part A's operational result stands, but the inventory cannot close
+> the search for a sign. **Narrowings:** with the shortage hidden the maximum is 2, but feasible weightings need not fix
+> the terminals (not-all-equal allows every score from 1 to 2); row 3's value-read claim (summing unread witnesses before
+> squaring can change a value read); row 4 (the reversal sign can factor with mixed parity; the carrying condition across
+> a split is the complex flip's, and for the real flip it is all pairs except those across the split); rows 6, 8, 9, 10,
+> 11 (signs in matching terms align; an odd harmony has no antiperiod; inclusion–exclusion sums over the same assignments;
+> the co-information's sign depends on its weighting); the advisor's factorization sketch fails on a four-bit example.
+> Logged in `docs/CORRECTIONS.md`.
 ## A. The whole-round response under every sender policy ([`lp.py`](lp.py))
 
 The earlier edit study's preparation (`WHOLE-STAGE-SETTINGS-20261120-001`, its 56-knot construction): four

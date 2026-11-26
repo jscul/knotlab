@@ -6,9 +6,27 @@ the thread: arguments and exact computation; referee pending. [The note](README.
 [first question](advisor_question.md) and [answer](advisor_answer.md), [second question](advisor_question2.md) and
 [answer](advisor_answer2.md)
 
+
+> **Refereed (R1, [report](referee-R1/report.md)): confirmed with fixes, one Block.** The parity proof, the two examples and
+> every score stand (no archived score above its classical bound; 212 census and extension rows and 32 contact rows
+> rebuilt with independent code). **Block:** the census's "splits" flag does not establish A4's hypothesis. It checks
+> the round's status and the births with no reader parent, not whether each reader's births are the same for both far
+> settings: at a seven-knot sampled start (index 1007, readers (3,6) and (2,0)) Alice's edit changes the inputs of Bob's
+> own birth at fixed Bob setting, with every prepared state surviving. A4 holds where the responses actually factor;
+> the census does not show that they do on every placement it marked. **Narrowings:** a rejection representation can
+> also come from positive completion counts (every state surviving: CHSH 9/4 in a variant of A3), and "local" there
+> includes the rejection outcome; with a contact (a birth of two readers), changing either reader's own edit changes the
+> forbidden states in 163 one-holder placements under not-all-equal and 68 under parity, and all three in one
+> three-reader placement, so "forbidding never answers both readers' settings" holds only for births each owned by one
+> reader; the flag and the actual forbidden sets differ once (64 against 65); the stored record omits the values of
+> other parents' inputs (no verdict changes); tables were computed on 646 selected extension starts (562 scored), not on
+> all 3,000; the built starts' correlations are small but not zero (largest 2601/7295401); Branciard's η is each
+> reader's acceptance given the other's (A3: 1/2 each, bound 6, capped at 4). **Not a block:** the small correlations.
+> Logged in `docs/CORRECTIONS.md`.
 ## What stands
 
-1. **Forbidding that splits is local rejection (argument).** When each reader's setting is a free local edit and no
+1. **Forbidding that splits is local rejection (argument; R1: where the responses actually factor, which the census's
+   flag does not check).** When each reader's setting is a free local edit and no
    birth or stall depends on both settings, the four tables are a local model with local rejection: a preparation that
    does not depend on the settings, and responses that each depend on one setting, zero where a join forbids. So a law
    in which a later join can forbid gives, on such placements, no nonlocality in Bell's sense, whatever the size of an
@@ -22,7 +40,7 @@ the thread: arguments and exact computation; referee pending. [The note](README.
 4. **In the starts read, nothing exceeds the classical bound.** Every start of three to five knots (7,075) and 3,000
    sampled starts of six to eight knots, one round, under both forbidding laws and the ordinary count, both knot laws,
    both weightings: no CHSH above 2 and no Mermin win above 3/4, with or without signalling, also where a newborn knot
-   holds distinctions of two readers. Forbidding answers one reader's setting in up to 72 placements of a class, never
+   holds distinctions of two readers. Forbidding answers one reader's setting in up to 72 placements of a class, never (in births each owned by one reader; R1)
    both readers'. Where both were built to forbid, the two sides carried no correlation (CHSH below 0.001).
 
 **Not shown.** Whether growth gives a rejection excess where both sides forbid: no grown start does, and the built ones

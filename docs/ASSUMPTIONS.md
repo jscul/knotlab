@@ -5997,6 +5997,7 @@ evidence: results and their status come from the records each entry links.
 - **Rests on it.** Whatever the study finds about excesses under joins that forbid ([the note](../research/FORBID-EDITS-20261126-001/README.md)).
 - **Challenge.** Other edits (a removed distinction, a changed meeting), more rounds, other readings, a weighting that does not count each setting pair separately, larger or built starts. Counting each setting pair's worlds separately is itself a choice; with all four counted together the settings would not be free. The model is not expected to keep these choices; they are a test bench.
 - **History.**
+  - 2026-11-26 · Refereed (R1, [report](../research/FORBID-EDITS-20261126-001/referee-R1/report.md); confirmed with fixes, one Block): the scores stand; the census's flag does not establish that responses factor; with a birth of two readers forbidding answers both readers' settings in 231 one-holder placements.
   - 2026-11-26 · `FORBID-EDITS-20261126-001` ([decision](../research/FORBID-EDITS-20261126-001/decision.md), referee pending): under these choices, no table exceeds the classical bound in 7,075 starts of three to five knots and 3,000 sampled starts of six to eight; forbidding answers one reader's setting in at most 72 placements of a class and never both readers'; the built starts where both forbid carry no correlation. On placements that split, forbidding is a local rejection whatever the scaffolds (an argument).
   - 2026-11-26 · Entered with `FORBID-EDITS-20261126-001`.
 

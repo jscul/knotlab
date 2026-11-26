@@ -1,0 +1,2531 @@
+{
+  "F3": {
+    "n3": {
+      "abc": {
+        "carrying": [
+          "acb",
+          "bac",
+          "cba"
+        ],
+        "exact": [
+          "cba"
+        ],
+        "orders_checked": 6
+      },
+      "cba": {
+        "carrying": [
+          "abc",
+          "bca",
+          "cab"
+        ],
+        "exact": [
+          "abc"
+        ],
+        "orders_checked": 6
+      }
+    },
+    "n4": {
+      "abcd": {
+        "carrying": [
+          "adcb",
+          "badc",
+          "cbad",
+          "dcba"
+        ],
+        "exact": [
+          "dcba"
+        ],
+        "orders_checked": 24
+      }
+    },
+    "n5": {
+      "abcde": {
+        "carrying": [
+          "aedcb",
+          "baedc",
+          "cbaed",
+          "dcbae",
+          "edcba"
+        ],
+        "exact": [
+          "edcba"
+        ],
+        "orders_checked": 120
+      }
+    },
+    "n6": {
+      "abcdef": {
+        "carrying": [
+          "afedcb",
+          "bafedc",
+          "cbafed",
+          "dcbafe",
+          "edcbaf",
+          "fedcba"
+        ],
+        "exact": [
+          "fedcba"
+        ],
+        "orders_checked": 720
+      }
+    }
+  },
+  "P5": {
+    "n3": {
+      "anchor": {
+        "carrying": true,
+        "exact_cells": 64,
+        "order": "abc",
+        "sign_pattern": "+---"
+      },
+      "even_words": [
+        "000",
+        "011",
+        "101",
+        "110"
+      ],
+      "orders_per_pattern": 6,
+      "pattern_order_cases_carrying": 24,
+      "pattern_order_cases_exact": 6,
+      "patterns": 8,
+      "patterns_with_carrying_order": 8,
+      "patterns_with_exact_order": 6,
+      "sets_by_sign_pattern": {
+        "++++": {
+          "observed_carrying_orders": [
+            "acb",
+            "bac",
+            "cba"
+          ],
+          "observed_exact_orders": [
+            "cba"
+          ],
+          "predicted_carrying_orders": [
+            "acb",
+            "bac",
+            "cba"
+          ],
+          "predicted_exact_orders": [
+            "cba"
+          ]
+        },
+        "+++-": {
+          "observed_carrying_orders": [
+            "abc",
+            "bca",
+            "cab"
+          ],
+          "observed_exact_orders": [
+            "cab"
+          ],
+          "predicted_carrying_orders": [
+            "abc",
+            "bca",
+            "cab"
+          ],
+          "predicted_exact_orders": [
+            "cab"
+          ]
+        },
+        "++-+": {
+          "observed_carrying_orders": [
+            "abc",
+            "bca",
+            "cab"
+          ],
+          "observed_exact_orders": [],
+          "predicted_carrying_orders": [
+            "abc",
+            "bca",
+            "cab"
+          ],
+          "predicted_exact_orders": []
+        },
+        "++--": {
+          "observed_carrying_orders": [
+            "acb",
+            "bac",
+            "cba"
+          ],
+          "observed_exact_orders": [
+            "acb"
+          ],
+          "predicted_carrying_orders": [
+            "acb",
+            "bac",
+            "cba"
+          ],
+          "predicted_exact_orders": [
+            "acb"
+          ]
+        },
+        "+-++": {
+          "observed_carrying_orders": [
+            "abc",
+            "bca",
+            "cab"
+          ],
+          "observed_exact_orders": [
+            "bca"
+          ],
+          "predicted_carrying_orders": [
+            "abc",
+            "bca",
+            "cab"
+          ],
+          "predicted_exact_orders": [
+            "bca"
+          ]
+        },
+        "+-+-": {
+          "observed_carrying_orders": [
+            "acb",
+            "bac",
+            "cba"
+          ],
+          "observed_exact_orders": [],
+          "predicted_carrying_orders": [
+            "acb",
+            "bac",
+            "cba"
+          ],
+          "predicted_exact_orders": []
+        },
+        "+--+": {
+          "observed_carrying_orders": [
+            "acb",
+            "bac",
+            "cba"
+          ],
+          "observed_exact_orders": [
+            "bac"
+          ],
+          "predicted_carrying_orders": [
+            "acb",
+            "bac",
+            "cba"
+          ],
+          "predicted_exact_orders": [
+            "bac"
+          ]
+        },
+        "+---": {
+          "observed_carrying_orders": [
+            "abc",
+            "bca",
+            "cab"
+          ],
+          "observed_exact_orders": [
+            "abc"
+          ],
+          "predicted_carrying_orders": [
+            "abc",
+            "bca",
+            "cab"
+          ],
+          "predicted_exact_orders": [
+            "abc"
+          ]
+        }
+      }
+    },
+    "n4": {
+      "even_words": [
+        "0000",
+        "0011",
+        "0101",
+        "0110",
+        "1001",
+        "1010",
+        "1100",
+        "1111"
+      ],
+      "orders_per_pattern": 24,
+      "pattern_order_cases_carrying": 192,
+      "pattern_order_cases_exact": 24,
+      "patterns": 128,
+      "patterns_with_carrying_order": 48,
+      "patterns_with_exact_order": 24,
+      "sets_by_sign_pattern": {
+        "++++++++": {
+          "observed_carrying_orders": [
+            "adcb",
+            "badc",
+            "cbad",
+            "dcba"
+          ],
+          "observed_exact_orders": [
+            "dcba"
+          ],
+          "predicted_carrying_orders": [
+            "adcb",
+            "badc",
+            "cbad",
+            "dcba"
+          ],
+          "predicted_exact_orders": [
+            "dcba"
+          ]
+        },
+        "+++++++-": {
+          "observed_carrying_orders": [],
+          "observed_exact_orders": [],
+          "predicted_carrying_orders": [],
+          "predicted_exact_orders": []
+        },
+        "++++++-+": {
+          "observed_carrying_orders": [],
+          "observed_exact_orders": [],
+          "predicted_carrying_orders": [],
+          "predicted_exact_orders": []
+        },
+        "++++++--": {
+          "observed_carrying_orders": [
+            "abdc",
+            "bdca",
+            "cabd",
+            "dcab"
+          ],
+          "observed_exact_orders": [
+            "dcab"
+          ],
+          "predicted_carrying_orders": [
+            "abdc",
+            "bdca",
+            "cabd",
+            "dcab"
+          ],
+          "predicted_exact_orders": [
+            "dcab"
+          ]
+        },
+        "+++++-++": {
+          "observed_carrying_orders": [],
+          "observed_exact_orders": [],
+          "predicted_carrying_orders": [],
+          "predicted_exact_orders": []
+        },
+        "+++++-+-": {
+          "observed_carrying_orders": [],
+          "observed_exact_orders": [],
+          "predicted_carrying_orders": [],
+          "predicted_exact_orders": []
+        },
+        "+++++--+": {
+          "observed_carrying_orders": [
+            "acbd",
+            "bdac",
+            "cbda",
+            "dacb"
+          ],
+          "observed_exact_orders": [
+            "dacb"
+          ],
+          "predicted_carrying_orders": [
+            "acbd",
+            "bdac",
+            "cbda",
+            "dacb"
+          ],
+          "predicted_exact_orders": [
+            "dacb"
+          ]
+        },
+        "+++++---": {
+          "observed_carrying_orders": [],
+          "observed_exact_orders": [],
+          "predicted_carrying_orders": [],
+          "predicted_exact_orders": []
+        },
+        "++++-+++": {
+          "observed_carrying_orders": [],
+          "observed_exact_orders": [],
+          "predicted_carrying_orders": [],
+          "predicted_exact_orders": []
+        },
+        "++++-++-": {
+          "observed_carrying_orders": [
+            "acbd",
+            "bdac",
+            "cbda",
+            "dacb"
+          ],
+          "observed_exact_orders": [],
+          "predicted_carrying_orders": [
+            "acbd",
+            "bdac",
+            "cbda",
+            "dacb"
+          ],
+          "predicted_exact_orders": []
+        },
+        "++++-+-+": {
+          "observed_carrying_orders": [],
+          "observed_exact_orders": [],
+          "predicted_carrying_orders": [],
+          "predicted_exact_orders": []
+        },
+        "++++-+--": {
+          "observed_carrying_orders": [],
+          "observed_exact_orders": [],
+          "predicted_carrying_orders": [],
+          "predicted_exact_orders": []
+        },
+        "++++--++": {
+          "observed_carrying_orders": [
+            "abdc",
+            "bdca",
+            "cabd",
+            "dcab"
+          ],
+          "observed_exact_orders": [],
+          "predicted_carrying_orders": [
+            "abdc",
+            "bdca",
+            "cabd",
+            "dcab"
+          ],
+          "predicted_exact_orders": []
+        },
+        "++++--+-": {
+          "observed_carrying_orders": [],
+          "observed_exact_orders": [],
+          "predicted_carrying_orders": [],
+          "predicted_exact_orders": []
+        },
+        "++++---+": {
+          "observed_carrying_orders": [],
+          "observed_exact_orders": [],
+          "predicted_carrying_orders": [],
+          "predicted_exact_orders": []
+        },
+        "++++----": {
+          "observed_carrying_orders": [
+            "adcb",
+            "badc",
+            "cbad",
+            "dcba"
+          ],
+          "observed_exact_orders": [
+            "adcb"
+          ],
+          "predicted_carrying_orders": [
+            "adcb",
+            "badc",
+            "cbad",
+            "dcba"
+          ],
+          "predicted_exact_orders": [
+            "adcb"
+          ]
+        },
+        "+++-++++": {
+          "observed_carrying_orders": [],
+          "observed_exact_orders": [],
+          "predicted_carrying_orders": [],
+          "predicted_exact_orders": []
+        },
+        "+++-+++-": {
+          "observed_carrying_orders": [
+            "adbc",
+            "bcad",
+            "cadb",
+            "dbca"
+          ],
+          "observed_exact_orders": [
+            "dbca"
+          ],
+          "predicted_carrying_orders": [
+            "adbc",
+            "bcad",
+            "cadb",
+            "dbca"
+          ],
+          "predicted_exact_orders": [
+            "dbca"
+          ]
+        },
+        "+++-++-+": {
+          "observed_carrying_orders": [],
+          "observed_exact_orders": [],
+          "predicted_carrying_orders": [],
+          "predicted_exact_orders": []
+        },
+        "+++-++--": {
+          "observed_carrying_orders": [],
+          "observed_exact_orders": [],
+          "predicted_carrying_orders": [],
+          "predicted_exact_orders": []
+        },
+        "+++-+-++": {
+          "observed_carrying_orders": [
+            "acdb",
+            "bacd",
+            "cdba",
+            "dbac"
+          ],
+          "observed_exact_orders": [
+            "dbac"
+          ],
+          "predicted_carrying_orders": [
+            "acdb",
+            "bacd",
+            "cdba",
+            "dbac"
+          ],
+          "predicted_exact_orders": [
+            "dbac"
+          ]
+        },
+        "+++-+-+-": {
+          "observed_carrying_orders": [],
+          "observed_exact_orders": [],
+          "predicted_carrying_orders": [],
+          "predicted_exact_orders": []
+        },
+        "+++-+--+": {
+          "observed_carrying_orders": [],
+          "observed_exact_orders": [],
+          "predicted_carrying_orders": [],
+          "predicted_exact_orders": []
+        },
+        "+++-+---": {
+          "observed_carrying_orders": [
+            "abcd",
+            "bcda",
+            "cdab",
+            "dabc"
+          ],
+          "observed_exact_orders": [
+            "dabc"
+          ],
+          "predicted_carrying_orders": [
+            "abcd",
+            "bcda",
+            "cdab",
+            "dabc"
+          ],
+          "predicted_exact_orders": [
+            "dabc"
+          ]
+        },
+        "+++--+++": {
+          "observed_carrying_orders": [
+            "abcd",
+            "bcda",
+            "cdab",
+            "dabc"
+          ],
+          "observed_exact_orders": [],
+          "predicted_carrying_orders": [
+            "abcd",
+            "bcda",
+            "cdab",
+            "dabc"
+          ],
+          "predicted_exact_orders": []
+        },
+        "+++--++-": {
+          "observed_carrying_orders": [],
+          "observed_exact_orders": [],
+          "predicted_carrying_orders": [],
+          "predicted_exact_orders": []
+        },
+        "+++--+-+": {
+          "observed_carrying_orders": [],
+          "observed_exact_orders": [],
+          "predicted_carrying_orders": [],
+          "predicted_exact_orders": []
+        },
+        "+++--+--": {
+          "observed_carrying_orders": [
+            "acdb",
+            "bacd",
+            "cdba",
+            "dbac"
+          ],
+          "observed_exact_orders": [],
+          "predicted_carrying_orders": [
+            "acdb",
+            "bacd",
+            "cdba",
+            "dbac"
+          ],
+          "predicted_exact_orders": []
+        },
+        "+++---++": {
+          "observed_carrying_orders": [],
+          "observed_exact_orders": [],
+          "predicted_carrying_orders": [],
+          "predicted_exact_orders": []
+        },
+        "+++---+-": {
+          "observed_carrying_orders": [],
+          "observed_exact_orders": [],
+          "predicted_carrying_orders": [],
+          "predicted_exact_orders": []
+        },
+        "+++----+": {
+          "observed_carrying_orders": [
+            "adbc",
+            "bcad",
+            "cadb",
+            "dbca"
+          ],
+          "observed_exact_orders": [
+            "adbc"
+          ],
+          "predicted_carrying_orders": [
+            "adbc",
+            "bcad",
+            "cadb",
+            "dbca"
+          ],
+          "predicted_exact_orders": [
+            "adbc"
+          ]
+        },
+        "+++-----": {
+          "observed_carrying_orders": [],
+          "observed_exact_orders": [],
+          "predicted_carrying_orders": [],
+          "predicted_exact_orders": []
+        },
+        "++-+++++": {
+          "observed_carrying_orders": [],
+          "observed_exact_orders": [],
+          "predicted_carrying_orders": [],
+          "predicted_exact_orders": []
+        },
+        "++-++++-": {
+          "observed_carrying_orders": [],
+          "observed_exact_orders": [],
+          "predicted_carrying_orders": [],
+          "predicted_exact_orders": []
+        },
+        "++-+++-+": {
+          "observed_carrying_orders": [
+            "adbc",
+            "bcad",
+            "cadb",
+            "dbca"
+          ],
+          "observed_exact_orders": [],
+          "predicted_carrying_orders": [
+            "adbc",
+            "bcad",
+            "cadb",
+            "dbca"
+          ],
+          "predicted_exact_orders": []
+        },
+        "++-+++--": {
+          "observed_carrying_orders": [],
+          "observed_exact_orders": [],
+          "predicted_carrying_orders": [],
+          "predicted_exact_orders": []
+        },
+        "++-++-++": {
+          "observed_carrying_orders": [
+            "abcd",
+            "bcda",
+            "cdab",
+            "dabc"
+          ],
+          "observed_exact_orders": [],
+          "predicted_carrying_orders": [
+            "abcd",
+            "bcda",
+            "cdab",
+            "dabc"
+          ],
+          "predicted_exact_orders": []
+        },
+        "++-++-+-": {
+          "observed_carrying_orders": [],
+          "observed_exact_orders": [],
+          "predicted_carrying_orders": [],
+          "predicted_exact_orders": []
+        },
+        "++-++--+": {
+          "observed_carrying_orders": [],
+          "observed_exact_orders": [],
+          "predicted_carrying_orders": [],
+          "predicted_exact_orders": []
+        },
+        "++-++---": {
+          "observed_carrying_orders": [
+            "acdb",
+            "bacd",
+            "cdba",
+            "dbac"
+          ],
+          "observed_exact_orders": [],
+          "predicted_carrying_orders": [
+            "acdb",
+            "bacd",
+            "cdba",
+            "dbac"
+          ],
+          "predicted_exact_orders": []
+        },
+        "++-+-+++": {
+          "observed_carrying_orders": [
+            "acdb",
+            "bacd",
+            "cdba",
+            "dbac"
+          ],
+          "observed_exact_orders": [],
+          "predicted_carrying_orders": [
+            "acdb",
+            "bacd",
+            "cdba",
+            "dbac"
+          ],
+          "predicted_exact_orders": []
+        },
+        "++-+-++-": {
+          "observed_carrying_orders": [],
+          "observed_exact_orders": [],
+          "predicted_carrying_orders": [],
+          "predicted_exact_orders": []
+        },
+        "++-+-+-+": {
+          "observed_carrying_orders": [],
+          "observed_exact_orders": [],
+          "predicted_carrying_orders": [],
+          "predicted_exact_orders": []
+        },
+        "++-+-+--": {
+          "observed_carrying_orders": [
+            "abcd",
+            "bcda",
+            "cdab",
+            "dabc"
+          ],
+          "observed_exact_orders": [],
+          "predicted_carrying_orders": [
+            "abcd",
+            "bcda",
+            "cdab",
+            "dabc"
+          ],
+          "predicted_exact_orders": []
+        },
+        "++-+--++": {
+          "observed_carrying_orders": [],
+          "observed_exact_orders": [],
+          "predicted_carrying_orders": [],
+          "predicted_exact_orders": []
+        },
+        "++-+--+-": {
+          "observed_carrying_orders": [
+            "adbc",
+            "bcad",
+            "cadb",
+            "dbca"
+          ],
+          "observed_exact_orders": [],
+          "predicted_carrying_orders": [
+            "adbc",
+            "bcad",
+            "cadb",
+            "dbca"
+          ],
+          "predicted_exact_orders": []
+        },
+        "++-+---+": {
+          "observed_carrying_orders": [],
+          "observed_exact_orders": [],
+          "predicted_carrying_orders": [],
+          "predicted_exact_orders": []
+        },
+        "++-+----": {
+          "observed_carrying_orders": [],
+          "observed_exact_orders": [],
+          "predicted_carrying_orders": [],
+          "predicted_exact_orders": []
+        },
+        "++--++++": {
+          "observed_carrying_orders": [
+            "abdc",
+            "bdca",
+            "cabd",
+            "dcab"
+          ],
+          "observed_exact_orders": [
+            "bdca"
+          ],
+          "predicted_carrying_orders": [
+            "abdc",
+            "bdca",
+            "cabd",
+            "dcab"
+          ],
+          "predicted_exact_orders": [
+            "bdca"
+          ]
+        },
+        "++--+++-": {
+          "observed_carrying_orders": [],
+          "observed_exact_orders": [],
+          "predicted_carrying_orders": [],
+          "predicted_exact_orders": []
+        },
+        "++--++-+": {
+          "observed_carrying_orders": [],
+          "observed_exact_orders": [],
+          "predicted_carrying_orders": [],
+          "predicted_exact_orders": []
+        },
+        "++--++--": {
+          "observed_carrying_orders": [
+            "adcb",
+            "badc",
+            "cbad",
+            "dcba"
+          ],
+          "observed_exact_orders": [],
+          "predicted_carrying_orders": [
+            "adcb",
+            "badc",
+            "cbad",
+            "dcba"
+          ],
+          "predicted_exact_orders": []
+        },
+        "++--+-++": {
+          "observed_carrying_orders": [],
+          "observed_exact_orders": [],
+          "predicted_carrying_orders": [],
+          "predicted_exact_orders": []
+        },
+        "++--+-+-": {
+          "observed_carrying_orders": [
+            "acbd",
+            "bdac",
+            "cbda",
+            "dacb"
+          ],
+          "observed_exact_orders": [
+            "bdac"
+          ],
+          "predicted_carrying_orders": [
+            "acbd",
+            "bdac",
+            "cbda",
+            "dacb"
+          ],
+          "predicted_exact_orders": [
+            "bdac"
+          ]
+        },
+        "++--+--+": {
+          "observed_carrying_orders": [],
+          "observed_exact_orders": [],
+          "predicted_carrying_orders": [],
+          "predicted_exact_orders": []
+        },
+        "++--+---": {
+          "observed_carrying_orders": [],
+          "observed_exact_orders": [],
+          "predicted_carrying_orders": [],
+          "predicted_exact_orders": []
+        },
+        "++---+++": {
+          "observed_carrying_orders": [],
+          "observed_exact_orders": [],
+          "predicted_carrying_orders": [],
+          "predicted_exact_orders": []
+        },
+        "++---++-": {
+          "observed_carrying_orders": [],
+          "observed_exact_orders": [],
+          "predicted_carrying_orders": [],
+          "predicted_exact_orders": []
+        },
+        "++---+-+": {
+          "observed_carrying_orders": [
+            "acbd",
+            "bdac",
+            "cbda",
+            "dacb"
+          ],
+          "observed_exact_orders": [],
+          "predicted_carrying_orders": [
+            "acbd",
+            "bdac",
+            "cbda",
+            "dacb"
+          ],
+          "predicted_exact_orders": []
+        },
+        "++---+--": {
+          "observed_carrying_orders": [],
+          "observed_exact_orders": [],
+          "predicted_carrying_orders": [],
+          "predicted_exact_orders": []
+        },
+        "++----++": {
+          "observed_carrying_orders": [
+            "adcb",
+            "badc",
+            "cbad",
+            "dcba"
+          ],
+          "observed_exact_orders": [
+            "badc"
+          ],
+          "predicted_carrying_orders": [
+            "adcb",
+            "badc",
+            "cbad",
+            "dcba"
+          ],
+          "predicted_exact_orders": [
+            "badc"
+          ]
+        },
+        "++----+-": {
+          "observed_carrying_orders": [],
+          "observed_exact_orders": [],
+          "predicted_carrying_orders": [],
+          "predicted_exact_orders": []
+        },
+        "++-----+": {
+          "observed_carrying_orders": [],
+          "observed_exact_orders": [],
+          "predicted_carrying_orders": [],
+          "predicted_exact_orders": []
+        },
+        "++------": {
+          "observed_carrying_orders": [
+            "abdc",
+            "bdca",
+            "cabd",
+            "dcab"
+          ],
+          "observed_exact_orders": [
+            "abdc"
+          ],
+          "predicted_carrying_orders": [
+            "abdc",
+            "bdca",
+            "cabd",
+            "dcab"
+          ],
+          "predicted_exact_orders": [
+            "abdc"
+          ]
+        },
+        "+-++++++": {
+          "observed_carrying_orders": [],
+          "observed_exact_orders": [],
+          "predicted_carrying_orders": [],
+          "predicted_exact_orders": []
+        },
+        "+-+++++-": {
+          "observed_carrying_orders": [
+            "acdb",
+            "bacd",
+            "cdba",
+            "dbac"
+          ],
+          "observed_exact_orders": [
+            "cdba"
+          ],
+          "predicted_carrying_orders": [
+            "acdb",
+            "bacd",
+            "cdba",
+            "dbac"
+          ],
+          "predicted_exact_orders": [
+            "cdba"
+          ]
+        },
+        "+-++++-+": {
+          "observed_carrying_orders": [
+            "abcd",
+            "bcda",
+            "cdab",
+            "dabc"
+          ],
+          "observed_exact_orders": [
+            "cdab"
+          ],
+          "predicted_carrying_orders": [
+            "abcd",
+            "bcda",
+            "cdab",
+            "dabc"
+          ],
+          "predicted_exact_orders": [
+            "cdab"
+          ]
+        },
+        "+-++++--": {
+          "observed_carrying_orders": [],
+          "observed_exact_orders": [],
+          "predicted_carrying_orders": [],
+          "predicted_exact_orders": []
+        },
+        "+-+++-++": {
+          "observed_carrying_orders": [
+            "adbc",
+            "bcad",
+            "cadb",
+            "dbca"
+          ],
+          "observed_exact_orders": [],
+          "predicted_carrying_orders": [
+            "adbc",
+            "bcad",
+            "cadb",
+            "dbca"
+          ],
+          "predicted_exact_orders": []
+        },
+        "+-+++-+-": {
+          "observed_carrying_orders": [],
+          "observed_exact_orders": [],
+          "predicted_carrying_orders": [],
+          "predicted_exact_orders": []
+        },
+        "+-+++--+": {
+          "observed_carrying_orders": [],
+          "observed_exact_orders": [],
+          "predicted_carrying_orders": [],
+          "predicted_exact_orders": []
+        },
+        "+-+++---": {
+          "observed_carrying_orders": [],
+          "observed_exact_orders": [],
+          "predicted_carrying_orders": [],
+          "predicted_exact_orders": []
+        },
+        "+-++-+++": {
+          "observed_carrying_orders": [],
+          "observed_exact_orders": [],
+          "predicted_carrying_orders": [],
+          "predicted_exact_orders": []
+        },
+        "+-++-++-": {
+          "observed_carrying_orders": [],
+          "observed_exact_orders": [],
+          "predicted_carrying_orders": [],
+          "predicted_exact_orders": []
+        },
+        "+-++-+-+": {
+          "observed_carrying_orders": [],
+          "observed_exact_orders": [],
+          "predicted_carrying_orders": [],
+          "predicted_exact_orders": []
+        },
+        "+-++-+--": {
+          "observed_carrying_orders": [
+            "adbc",
+            "bcad",
+            "cadb",
+            "dbca"
+          ],
+          "observed_exact_orders": [
+            "cadb"
+          ],
+          "predicted_carrying_orders": [
+            "adbc",
+            "bcad",
+            "cadb",
+            "dbca"
+          ],
+          "predicted_exact_orders": [
+            "cadb"
+          ]
+        },
+        "+-++--++": {
+          "observed_carrying_orders": [],
+          "observed_exact_orders": [],
+          "predicted_carrying_orders": [],
+          "predicted_exact_orders": []
+        },
+        "+-++--+-": {
+          "observed_carrying_orders": [
+            "abcd",
+            "bcda",
+            "cdab",
+            "dabc"
+          ],
+          "observed_exact_orders": [],
+          "predicted_carrying_orders": [
+            "abcd",
+            "bcda",
+            "cdab",
+            "dabc"
+          ],
+          "predicted_exact_orders": []
+        },
+        "+-++---+": {
+          "observed_carrying_orders": [
+            "acdb",
+            "bacd",
+            "cdba",
+            "dbac"
+          ],
+          "observed_exact_orders": [
+            "acdb"
+          ],
+          "predicted_carrying_orders": [
+            "acdb",
+            "bacd",
+            "cdba",
+            "dbac"
+          ],
+          "predicted_exact_orders": [
+            "acdb"
+          ]
+        },
+        "+-++----": {
+          "observed_carrying_orders": [],
+          "observed_exact_orders": [],
+          "predicted_carrying_orders": [],
+          "predicted_exact_orders": []
+        },
+        "+-+-++++": {
+          "observed_carrying_orders": [],
+          "observed_exact_orders": [],
+          "predicted_carrying_orders": [],
+          "predicted_exact_orders": []
+        },
+        "+-+-+++-": {
+          "observed_carrying_orders": [],
+          "observed_exact_orders": [],
+          "predicted_carrying_orders": [],
+          "predicted_exact_orders": []
+        },
+        "+-+-++-+": {
+          "observed_carrying_orders": [],
+          "observed_exact_orders": [],
+          "predicted_carrying_orders": [],
+          "predicted_exact_orders": []
+        },
+        "+-+-++--": {
+          "observed_carrying_orders": [
+            "acbd",
+            "bdac",
+            "cbda",
+            "dacb"
+          ],
+          "observed_exact_orders": [],
+          "predicted_carrying_orders": [
+            "acbd",
+            "bdac",
+            "cbda",
+            "dacb"
+          ],
+          "predicted_exact_orders": []
+        },
+        "+-+-+-++": {
+          "observed_carrying_orders": [],
+          "observed_exact_orders": [],
+          "predicted_carrying_orders": [],
+          "predicted_exact_orders": []
+        },
+        "+-+-+-+-": {
+          "observed_carrying_orders": [
+            "adcb",
+            "badc",
+            "cbad",
+            "dcba"
+          ],
+          "observed_exact_orders": [],
+          "predicted_carrying_orders": [
+            "adcb",
+            "badc",
+            "cbad",
+            "dcba"
+          ],
+          "predicted_exact_orders": []
+        },
+        "+-+-+--+": {
+          "observed_carrying_orders": [
+            "abdc",
+            "bdca",
+            "cabd",
+            "dcab"
+          ],
+          "observed_exact_orders": [],
+          "predicted_carrying_orders": [
+            "abdc",
+            "bdca",
+            "cabd",
+            "dcab"
+          ],
+          "predicted_exact_orders": []
+        },
+        "+-+-+---": {
+          "observed_carrying_orders": [],
+          "observed_exact_orders": [],
+          "predicted_carrying_orders": [],
+          "predicted_exact_orders": []
+        },
+        "+-+--+++": {
+          "observed_carrying_orders": [],
+          "observed_exact_orders": [],
+          "predicted_carrying_orders": [],
+          "predicted_exact_orders": []
+        },
+        "+-+--++-": {
+          "observed_carrying_orders": [
+            "abdc",
+            "bdca",
+            "cabd",
+            "dcab"
+          ],
+          "observed_exact_orders": [],
+          "predicted_carrying_orders": [
+            "abdc",
+            "bdca",
+            "cabd",
+            "dcab"
+          ],
+          "predicted_exact_orders": []
+        },
+        "+-+--+-+": {
+          "observed_carrying_orders": [
+            "adcb",
+            "badc",
+            "cbad",
+            "dcba"
+          ],
+          "observed_exact_orders": [],
+          "predicted_carrying_orders": [
+            "adcb",
+            "badc",
+            "cbad",
+            "dcba"
+          ],
+          "predicted_exact_orders": []
+        },
+        "+-+--+--": {
+          "observed_carrying_orders": [],
+          "observed_exact_orders": [],
+          "predicted_carrying_orders": [],
+          "predicted_exact_orders": []
+        },
+        "+-+---++": {
+          "observed_carrying_orders": [
+            "acbd",
+            "bdac",
+            "cbda",
+            "dacb"
+          ],
+          "observed_exact_orders": [],
+          "predicted_carrying_orders": [
+            "acbd",
+            "bdac",
+            "cbda",
+            "dacb"
+          ],
+          "predicted_exact_orders": []
+        },
+        "+-+---+-": {
+          "observed_carrying_orders": [],
+          "observed_exact_orders": [],
+          "predicted_carrying_orders": [],
+          "predicted_exact_orders": []
+        },
+        "+-+----+": {
+          "observed_carrying_orders": [],
+          "observed_exact_orders": [],
+          "predicted_carrying_orders": [],
+          "predicted_exact_orders": []
+        },
+        "+-+-----": {
+          "observed_carrying_orders": [],
+          "observed_exact_orders": [],
+          "predicted_carrying_orders": [],
+          "predicted_exact_orders": []
+        },
+        "+--+++++": {
+          "observed_carrying_orders": [
+            "acbd",
+            "bdac",
+            "cbda",
+            "dacb"
+          ],
+          "observed_exact_orders": [
+            "cbda"
+          ],
+          "predicted_carrying_orders": [
+            "acbd",
+            "bdac",
+            "cbda",
+            "dacb"
+          ],
+          "predicted_exact_orders": [
+            "cbda"
+          ]
+        },
+        "+--++++-": {
+          "observed_carrying_orders": [],
+          "observed_exact_orders": [],
+          "predicted_carrying_orders": [],
+          "predicted_exact_orders": []
+        },
+        "+--+++-+": {
+          "observed_carrying_orders": [],
+          "observed_exact_orders": [],
+          "predicted_carrying_orders": [],
+          "predicted_exact_orders": []
+        },
+        "+--+++--": {
+          "observed_carrying_orders": [],
+          "observed_exact_orders": [],
+          "predicted_carrying_orders": [],
+          "predicted_exact_orders": []
+        },
+        "+--++-++": {
+          "observed_carrying_orders": [],
+          "observed_exact_orders": [],
+          "predicted_carrying_orders": [],
+          "predicted_exact_orders": []
+        },
+        "+--++-+-": {
+          "observed_carrying_orders": [
+            "abdc",
+            "bdca",
+            "cabd",
+            "dcab"
+          ],
+          "observed_exact_orders": [],
+          "predicted_carrying_orders": [
+            "abdc",
+            "bdca",
+            "cabd",
+            "dcab"
+          ],
+          "predicted_exact_orders": []
+        },
+        "+--++--+": {
+          "observed_carrying_orders": [
+            "adcb",
+            "badc",
+            "cbad",
+            "dcba"
+          ],
+          "observed_exact_orders": [],
+          "predicted_carrying_orders": [
+            "adcb",
+            "badc",
+            "cbad",
+            "dcba"
+          ],
+          "predicted_exact_orders": []
+        },
+        "+--++---": {
+          "observed_carrying_orders": [],
+          "observed_exact_orders": [],
+          "predicted_carrying_orders": [],
+          "predicted_exact_orders": []
+        },
+        "+--+-+++": {
+          "observed_carrying_orders": [],
+          "observed_exact_orders": [],
+          "predicted_carrying_orders": [],
+          "predicted_exact_orders": []
+        },
+        "+--+-++-": {
+          "observed_carrying_orders": [
+            "adcb",
+            "badc",
+            "cbad",
+            "dcba"
+          ],
+          "observed_exact_orders": [
+            "cbad"
+          ],
+          "predicted_carrying_orders": [
+            "adcb",
+            "badc",
+            "cbad",
+            "dcba"
+          ],
+          "predicted_exact_orders": [
+            "cbad"
+          ]
+        },
+        "+--+-+-+": {
+          "observed_carrying_orders": [
+            "abdc",
+            "bdca",
+            "cabd",
+            "dcab"
+          ],
+          "observed_exact_orders": [
+            "cabd"
+          ],
+          "predicted_carrying_orders": [
+            "abdc",
+            "bdca",
+            "cabd",
+            "dcab"
+          ],
+          "predicted_exact_orders": [
+            "cabd"
+          ]
+        },
+        "+--+-+--": {
+          "observed_carrying_orders": [],
+          "observed_exact_orders": [],
+          "predicted_carrying_orders": [],
+          "predicted_exact_orders": []
+        },
+        "+--+--++": {
+          "observed_carrying_orders": [],
+          "observed_exact_orders": [],
+          "predicted_carrying_orders": [],
+          "predicted_exact_orders": []
+        },
+        "+--+--+-": {
+          "observed_carrying_orders": [],
+          "observed_exact_orders": [],
+          "predicted_carrying_orders": [],
+          "predicted_exact_orders": []
+        },
+        "+--+---+": {
+          "observed_carrying_orders": [],
+          "observed_exact_orders": [],
+          "predicted_carrying_orders": [],
+          "predicted_exact_orders": []
+        },
+        "+--+----": {
+          "observed_carrying_orders": [
+            "acbd",
+            "bdac",
+            "cbda",
+            "dacb"
+          ],
+          "observed_exact_orders": [
+            "acbd"
+          ],
+          "predicted_carrying_orders": [
+            "acbd",
+            "bdac",
+            "cbda",
+            "dacb"
+          ],
+          "predicted_exact_orders": [
+            "acbd"
+          ]
+        },
+        "+---++++": {
+          "observed_carrying_orders": [],
+          "observed_exact_orders": [],
+          "predicted_carrying_orders": [],
+          "predicted_exact_orders": []
+        },
+        "+---+++-": {
+          "observed_carrying_orders": [
+            "abcd",
+            "bcda",
+            "cdab",
+            "dabc"
+          ],
+          "observed_exact_orders": [
+            "bcda"
+          ],
+          "predicted_carrying_orders": [
+            "abcd",
+            "bcda",
+            "cdab",
+            "dabc"
+          ],
+          "predicted_exact_orders": [
+            "bcda"
+          ]
+        },
+        "+---++-+": {
+          "observed_carrying_orders": [
+            "acdb",
+            "bacd",
+            "cdba",
+            "dbac"
+          ],
+          "observed_exact_orders": [],
+          "predicted_carrying_orders": [
+            "acdb",
+            "bacd",
+            "cdba",
+            "dbac"
+          ],
+          "predicted_exact_orders": []
+        },
+        "+---++--": {
+          "observed_carrying_orders": [],
+          "observed_exact_orders": [],
+          "predicted_carrying_orders": [],
+          "predicted_exact_orders": []
+        },
+        "+---+-++": {
+          "observed_carrying_orders": [],
+          "observed_exact_orders": [],
+          "predicted_carrying_orders": [],
+          "predicted_exact_orders": []
+        },
+        "+---+-+-": {
+          "observed_carrying_orders": [],
+          "observed_exact_orders": [],
+          "predicted_carrying_orders": [],
+          "predicted_exact_orders": []
+        },
+        "+---+--+": {
+          "observed_carrying_orders": [],
+          "observed_exact_orders": [],
+          "predicted_carrying_orders": [],
+          "predicted_exact_orders": []
+        },
+        "+---+---": {
+          "observed_carrying_orders": [
+            "adbc",
+            "bcad",
+            "cadb",
+            "dbca"
+          ],
+          "observed_exact_orders": [],
+          "predicted_carrying_orders": [
+            "adbc",
+            "bcad",
+            "cadb",
+            "dbca"
+          ],
+          "predicted_exact_orders": []
+        },
+        "+----+++": {
+          "observed_carrying_orders": [
+            "adbc",
+            "bcad",
+            "cadb",
+            "dbca"
+          ],
+          "observed_exact_orders": [
+            "bcad"
+          ],
+          "predicted_carrying_orders": [
+            "adbc",
+            "bcad",
+            "cadb",
+            "dbca"
+          ],
+          "predicted_exact_orders": [
+            "bcad"
+          ]
+        },
+        "+----++-": {
+          "observed_carrying_orders": [],
+          "observed_exact_orders": [],
+          "predicted_carrying_orders": [],
+          "predicted_exact_orders": []
+        },
+        "+----+-+": {
+          "observed_carrying_orders": [],
+          "observed_exact_orders": [],
+          "predicted_carrying_orders": [],
+          "predicted_exact_orders": []
+        },
+        "+----+--": {
+          "observed_carrying_orders": [],
+          "observed_exact_orders": [],
+          "predicted_carrying_orders": [],
+          "predicted_exact_orders": []
+        },
+        "+-----++": {
+          "observed_carrying_orders": [],
+          "observed_exact_orders": [],
+          "predicted_carrying_orders": [],
+          "predicted_exact_orders": []
+        },
+        "+-----+-": {
+          "observed_carrying_orders": [
+            "acdb",
+            "bacd",
+            "cdba",
+            "dbac"
+          ],
+          "observed_exact_orders": [
+            "bacd"
+          ],
+          "predicted_carrying_orders": [
+            "acdb",
+            "bacd",
+            "cdba",
+            "dbac"
+          ],
+          "predicted_exact_orders": [
+            "bacd"
+          ]
+        },
+        "+------+": {
+          "observed_carrying_orders": [
+            "abcd",
+            "bcda",
+            "cdab",
+            "dabc"
+          ],
+          "observed_exact_orders": [
+            "abcd"
+          ],
+          "predicted_carrying_orders": [
+            "abcd",
+            "bcda",
+            "cdab",
+            "dabc"
+          ],
+          "predicted_exact_orders": [
+            "abcd"
+          ]
+        },
+        "+-------": {
+          "observed_carrying_orders": [],
+          "observed_exact_orders": [],
+          "predicted_carrying_orders": [],
+          "predicted_exact_orders": []
+        }
+      }
+    }
+  },
+  "P8": {
+    "n3": {
+      "all_assignments": {
+        "abc": {
+          "assignment_order_cases": 3072,
+          "by_matched_F2_set": {
+            "": {
+              "assignments": 8,
+              "carrying_orders": [
+                "abc",
+                "bca",
+                "cab"
+              ],
+              "exact_orders": [
+                "abc"
+              ]
+            },
+            "a": {
+              "assignments": 8,
+              "carrying_orders": [
+                "abc",
+                "bca",
+                "cab"
+              ],
+              "exact_orders": [
+                "bca"
+              ]
+            },
+            "ab": {
+              "assignments": 8,
+              "carrying_orders": [
+                "abc",
+                "bca",
+                "cab"
+              ],
+              "exact_orders": [
+                "cab"
+              ]
+            },
+            "abc": {
+              "assignments": 8,
+              "carrying_orders": [
+                "abc",
+                "bca",
+                "cab"
+              ],
+              "exact_orders": [
+                "abc"
+              ]
+            },
+            "ac": {
+              "assignments": 8,
+              "carrying_orders": [
+                "abc",
+                "bca",
+                "cab"
+              ],
+              "exact_orders": []
+            },
+            "b": {
+              "assignments": 8,
+              "carrying_orders": [
+                "abc",
+                "bca",
+                "cab"
+              ],
+              "exact_orders": []
+            },
+            "bc": {
+              "assignments": 8,
+              "carrying_orders": [
+                "abc",
+                "bca",
+                "cab"
+              ],
+              "exact_orders": [
+                "bca"
+              ]
+            },
+            "c": {
+              "assignments": 8,
+              "carrying_orders": [
+                "abc",
+                "bca",
+                "cab"
+              ],
+              "exact_orders": [
+                "cab"
+              ]
+            }
+          },
+          "cases_carrying": 192,
+          "cases_exact": 48,
+          "matched_assignments": 64,
+          "matched_assignments_with_exact_order": 48,
+          "unmatched_assignments": 448,
+          "zero_full_correlations_toggling_any_unmatched_reader": 6912
+        },
+        "cba": {
+          "assignment_order_cases": 3072,
+          "by_matched_F2_set": {
+            "": {
+              "assignments": 8,
+              "carrying_orders": [
+                "acb",
+                "bac",
+                "cba"
+              ],
+              "exact_orders": [
+                "cba"
+              ]
+            },
+            "a": {
+              "assignments": 8,
+              "carrying_orders": [
+                "acb",
+                "bac",
+                "cba"
+              ],
+              "exact_orders": [
+                "acb"
+              ]
+            },
+            "ab": {
+              "assignments": 8,
+              "carrying_orders": [
+                "acb",
+                "bac",
+                "cba"
+              ],
+              "exact_orders": [
+                "bac"
+              ]
+            },
+            "abc": {
+              "assignments": 8,
+              "carrying_orders": [
+                "acb",
+                "bac",
+                "cba"
+              ],
+              "exact_orders": [
+                "cba"
+              ]
+            },
+            "ac": {
+              "assignments": 8,
+              "carrying_orders": [
+                "acb",
+                "bac",
+                "cba"
+              ],
+              "exact_orders": []
+            },
+            "b": {
+              "assignments": 8,
+              "carrying_orders": [
+                "acb",
+                "bac",
+                "cba"
+              ],
+              "exact_orders": []
+            },
+            "bc": {
+              "assignments": 8,
+              "carrying_orders": [
+                "acb",
+                "bac",
+                "cba"
+              ],
+              "exact_orders": [
+                "acb"
+              ]
+            },
+            "c": {
+              "assignments": 8,
+              "carrying_orders": [
+                "acb",
+                "bac",
+                "cba"
+              ],
+              "exact_orders": [
+                "bac"
+              ]
+            }
+          },
+          "cases_carrying": 192,
+          "cases_exact": 48,
+          "matched_assignments": 64,
+          "matched_assignments_with_exact_order": 48,
+          "unmatched_assignments": 448,
+          "zero_full_correlations_toggling_any_unmatched_reader": 6912
+        }
+      },
+      "grown_vectors_checked_by_sigma_order_pair_product": 96
+    },
+    "n4": {
+      "all_assignments": {
+        "abcd": {
+          "assignment_order_cases": 98304,
+          "by_matched_F2_set": {
+            "": {
+              "assignments": 16,
+              "carrying_orders": [
+                "abcd",
+                "bcda",
+                "cdab",
+                "dabc"
+              ],
+              "exact_orders": [
+                "abcd"
+              ]
+            },
+            "a": {
+              "assignments": 16,
+              "carrying_orders": [
+                "abcd",
+                "bcda",
+                "cdab",
+                "dabc"
+              ],
+              "exact_orders": [
+                "bcda"
+              ]
+            },
+            "ab": {
+              "assignments": 16,
+              "carrying_orders": [
+                "abcd",
+                "bcda",
+                "cdab",
+                "dabc"
+              ],
+              "exact_orders": [
+                "cdab"
+              ]
+            },
+            "abc": {
+              "assignments": 16,
+              "carrying_orders": [
+                "abcd",
+                "bcda",
+                "cdab",
+                "dabc"
+              ],
+              "exact_orders": [
+                "dabc"
+              ]
+            },
+            "abcd": {
+              "assignments": 16,
+              "carrying_orders": [
+                "abcd",
+                "bcda",
+                "cdab",
+                "dabc"
+              ],
+              "exact_orders": [
+                "abcd"
+              ]
+            },
+            "abd": {
+              "assignments": 16,
+              "carrying_orders": [
+                "abcd",
+                "bcda",
+                "cdab",
+                "dabc"
+              ],
+              "exact_orders": []
+            },
+            "ac": {
+              "assignments": 16,
+              "carrying_orders": [
+                "abcd",
+                "bcda",
+                "cdab",
+                "dabc"
+              ],
+              "exact_orders": []
+            },
+            "acd": {
+              "assignments": 16,
+              "carrying_orders": [
+                "abcd",
+                "bcda",
+                "cdab",
+                "dabc"
+              ],
+              "exact_orders": []
+            },
+            "ad": {
+              "assignments": 16,
+              "carrying_orders": [
+                "abcd",
+                "bcda",
+                "cdab",
+                "dabc"
+              ],
+              "exact_orders": []
+            },
+            "b": {
+              "assignments": 16,
+              "carrying_orders": [
+                "abcd",
+                "bcda",
+                "cdab",
+                "dabc"
+              ],
+              "exact_orders": []
+            },
+            "bc": {
+              "assignments": 16,
+              "carrying_orders": [
+                "abcd",
+                "bcda",
+                "cdab",
+                "dabc"
+              ],
+              "exact_orders": []
+            },
+            "bcd": {
+              "assignments": 16,
+              "carrying_orders": [
+                "abcd",
+                "bcda",
+                "cdab",
+                "dabc"
+              ],
+              "exact_orders": [
+                "bcda"
+              ]
+            },
+            "bd": {
+              "assignments": 16,
+              "carrying_orders": [
+                "abcd",
+                "bcda",
+                "cdab",
+                "dabc"
+              ],
+              "exact_orders": []
+            },
+            "c": {
+              "assignments": 16,
+              "carrying_orders": [
+                "abcd",
+                "bcda",
+                "cdab",
+                "dabc"
+              ],
+              "exact_orders": []
+            },
+            "cd": {
+              "assignments": 16,
+              "carrying_orders": [
+                "abcd",
+                "bcda",
+                "cdab",
+                "dabc"
+              ],
+              "exact_orders": [
+                "cdab"
+              ]
+            },
+            "d": {
+              "assignments": 16,
+              "carrying_orders": [
+                "abcd",
+                "bcda",
+                "cdab",
+                "dabc"
+              ],
+              "exact_orders": [
+                "dabc"
+              ]
+            }
+          },
+          "cases_carrying": 1024,
+          "cases_exact": 128,
+          "matched_assignments": 256,
+          "matched_assignments_with_exact_order": 128,
+          "unmatched_assignments": 3840,
+          "zero_full_correlations_toggling_any_unmatched_reader": 534528
+        }
+      },
+      "archived_sample": {
+        "by_sigma": {
+          "abcd": {
+            "assignment_order_cases": 12288,
+            "by_matched_F2_set": {
+              "": {
+                "assignments": 16,
+                "carrying_orders": [
+                  "abcd",
+                  "bcda",
+                  "cdab",
+                  "dabc"
+                ],
+                "exact_orders": [
+                  "abcd"
+                ]
+              },
+              "a": {
+                "assignments": 16,
+                "carrying_orders": [
+                  "abcd",
+                  "bcda",
+                  "cdab",
+                  "dabc"
+                ],
+                "exact_orders": [
+                  "bcda"
+                ]
+              },
+              "ab": {
+                "assignments": 16,
+                "carrying_orders": [
+                  "abcd",
+                  "bcda",
+                  "cdab",
+                  "dabc"
+                ],
+                "exact_orders": [
+                  "cdab"
+                ]
+              },
+              "abc": {
+                "assignments": 16,
+                "carrying_orders": [
+                  "abcd",
+                  "bcda",
+                  "cdab",
+                  "dabc"
+                ],
+                "exact_orders": [
+                  "dabc"
+                ]
+              },
+              "abcd": {
+                "assignments": 16,
+                "carrying_orders": [
+                  "abcd",
+                  "bcda",
+                  "cdab",
+                  "dabc"
+                ],
+                "exact_orders": [
+                  "abcd"
+                ]
+              },
+              "abd": {
+                "assignments": 16,
+                "carrying_orders": [
+                  "abcd",
+                  "bcda",
+                  "cdab",
+                  "dabc"
+                ],
+                "exact_orders": []
+              },
+              "ac": {
+                "assignments": 16,
+                "carrying_orders": [
+                  "abcd",
+                  "bcda",
+                  "cdab",
+                  "dabc"
+                ],
+                "exact_orders": []
+              },
+              "acd": {
+                "assignments": 16,
+                "carrying_orders": [
+                  "abcd",
+                  "bcda",
+                  "cdab",
+                  "dabc"
+                ],
+                "exact_orders": []
+              },
+              "ad": {
+                "assignments": 16,
+                "carrying_orders": [
+                  "abcd",
+                  "bcda",
+                  "cdab",
+                  "dabc"
+                ],
+                "exact_orders": []
+              },
+              "b": {
+                "assignments": 16,
+                "carrying_orders": [
+                  "abcd",
+                  "bcda",
+                  "cdab",
+                  "dabc"
+                ],
+                "exact_orders": []
+              },
+              "bc": {
+                "assignments": 16,
+                "carrying_orders": [
+                  "abcd",
+                  "bcda",
+                  "cdab",
+                  "dabc"
+                ],
+                "exact_orders": []
+              },
+              "bcd": {
+                "assignments": 16,
+                "carrying_orders": [
+                  "abcd",
+                  "bcda",
+                  "cdab",
+                  "dabc"
+                ],
+                "exact_orders": [
+                  "bcda"
+                ]
+              },
+              "bd": {
+                "assignments": 16,
+                "carrying_orders": [
+                  "abcd",
+                  "bcda",
+                  "cdab",
+                  "dabc"
+                ],
+                "exact_orders": []
+              },
+              "c": {
+                "assignments": 16,
+                "carrying_orders": [
+                  "abcd",
+                  "bcda",
+                  "cdab",
+                  "dabc"
+                ],
+                "exact_orders": []
+              },
+              "cd": {
+                "assignments": 16,
+                "carrying_orders": [
+                  "abcd",
+                  "bcda",
+                  "cdab",
+                  "dabc"
+                ],
+                "exact_orders": [
+                  "cdab"
+                ]
+              },
+              "d": {
+                "assignments": 16,
+                "carrying_orders": [
+                  "abcd",
+                  "bcda",
+                  "cdab",
+                  "dabc"
+                ],
+                "exact_orders": [
+                  "dabc"
+                ]
+              }
+            },
+            "cases_carrying": 1024,
+            "cases_exact": 128,
+            "matched_assignments": 256,
+            "matched_assignments_with_exact_order": 128,
+            "unmatched_assignments": 256,
+            "zero_full_correlations_toggling_any_unmatched_reader": 35376
+          }
+        },
+        "provenance": "Reconstructed from the archived source's enumeration order and seed. The archived receipt gives aggregate counts.",
+        "sampled_unmatched_design_ids": [
+          3508,
+          3520,
+          1860,
+          2487,
+          2117,
+          932,
+          2411,
+          3588,
+          727,
+          882,
+          2406,
+          2724,
+          2939,
+          643,
+          2098,
+          2044,
+          3680,
+          1159,
+          509,
+          3821,
+          3854,
+          3057,
+          2136,
+          1703,
+          2374,
+          1008,
+          3954,
+          179,
+          1498,
+          3688,
+          162,
+          2070,
+          3018,
+          1690,
+          843,
+          562,
+          543,
+          618,
+          1887,
+          2655,
+          600,
+          802,
+          1378,
+          1629,
+          428,
+          1484,
+          884,
+          397,
+          2963,
+          623,
+          3599,
+          1763,
+          3829,
+          3559,
+          870,
+          651,
+          3797,
+          1840,
+          707,
+          2914,
+          546,
+          3800,
+          954,
+          3058,
+          3998,
+          3196,
+          3603,
+          2951,
+          1316,
+          3961,
+          3088,
+          281,
+          1906,
+          3837,
+          2964,
+          2324,
+          271,
+          2101,
+          3481,
+          3919,
+          2368,
+          1769,
+          481,
+          2996,
+          170,
+          288,
+          2434,
+          2284,
+          125,
+          3728,
+          141,
+          1659,
+          1281,
+          1510,
+          2507,
+          3798,
+          1285,
+          107,
+          3326,
+          4015,
+          2169,
+          2513,
+          3805,
+          3812,
+          39,
+          2168,
+          258,
+          3878,
+          1685,
+          292,
+          4020,
+          1610,
+          1534,
+          466,
+          321,
+          3477,
+          2090,
+          1663,
+          3062,
+          3966,
+          3597,
+          2293,
+          2653,
+          1398,
+          605,
+          3019,
+          2150,
+          751,
+          983,
+          2982,
+          4009,
+          205,
+          3894,
+          3009,
+          2620,
+          2897,
+          1334,
+          796,
+          3571,
+          485,
+          2845,
+          3016,
+          540,
+          3409,
+          1877,
+          138,
+          1247,
+          2167,
+          920,
+          2723,
+          2561,
+          1834,
+          3042,
+          1235,
+          2277,
+          1585,
+          148,
+          1180,
+          822,
+          1979,
+          1451,
+          2837,
+          1053,
+          330,
+          3015,
+          2639,
+          3170,
+          3086,
+          3566,
+          2675,
+          1931,
+          2201,
+          1762,
+          2744,
+          766,
+          465,
+          888,
+          3218,
+          3763,
+          3220,
+          2585,
+          3331,
+          3360,
+          4093,
+          2318,
+          1003,
+          3369,
+          2899,
+          701,
+          399,
+          471,
+          3278,
+          3219,
+          764,
+          2946,
+          526,
+          3712,
+          2494,
+          1786,
+          2553,
+          2088,
+          528,
+          2740,
+          3092,
+          301,
+          3810,
+          3048,
+          1622,
+          3299,
+          2040,
+          3415,
+          2889,
+          971,
+          1327,
+          801,
+          3866,
+          800,
+          4005,
+          1657,
+          2191,
+          841,
+          515,
+          1079,
+          3129,
+          488,
+          1065,
+          1714,
+          2003,
+          3666,
+          1567,
+          1145,
+          4035,
+          1780,
+          1609,
+          1561,
+          3493,
+          2525,
+          3207,
+          3915,
+          3791,
+          2840,
+          1867,
+          2550,
+          3052,
+          3184,
+          1866,
+          3860,
+          2778,
+          1114,
+          1512,
+          549,
+          2203,
+          3442,
+          4036,
+          4044,
+          1727
+        ],
+        "seed": 20261131
+      },
+      "grown_vectors_checked_by_sigma_order_pair_product": 384
+    }
+  },
+  "archive_comparison": {
+    "P5": "All archived counts agree. The original receipt does not give individual sign patterns and orders.",
+    "P8": {
+      "n3": {
+        "assignment_and_match_counts_in_archive_are_per_creation_order": true,
+        "exact_matches_in_archive_are_total_across_creation_orders": true,
+        "total_assignment_runs": 1024,
+        "total_matched_assignment_runs": 128,
+        "total_unmatched_assignment_runs": 896
+      },
+      "n4": {
+        "assignment_and_match_counts_in_archive_are_per_creation_order": true,
+        "exact_matches_in_archive_are_total_across_creation_orders": true,
+        "total_assignment_runs": 512,
+        "total_matched_assignment_runs": 256,
+        "total_unmatched_assignment_runs": 256
+      }
+    },
+    "P8_F3": "The archived F3 control uses only the ascending creation order. The ternary descending creation order was added here."
+  },
+  "diagonal_phase_scope": {
+    "n3": {
+      "chronological_ascending_commits_with_factorizable_phase": [
+        "abc",
+        "acb",
+        "bac",
+        "bca",
+        "cab",
+        "cba"
+      ],
+      "factorizable_sign_patterns_up_to_global_sign": 8
+    },
+    "n4": {
+      "chronological_ascending_commits_with_factorizable_phase": [
+        "abcd",
+        "adcb",
+        "badc",
+        "bcda",
+        "cbad",
+        "cdab",
+        "dabc",
+        "dcba"
+      ],
+      "factorizable_sign_patterns_up_to_global_sign": 16
+    },
+    "nonfactorizable_witness": {
+      "commit_order": "abdc",
+      "creation_order": "abcd",
+      "h_ab_times_h_cd": -1,
+      "h_abcd": -1,
+      "h_ac_times_h_bd": 1
+    }
+  },
+  "local_flip_columns_powers_of_i": {
+    "yz y F1": [
+      0,
+      0
+    ],
+    "yz y F2": null,
+    "yz y F3": [
+      1,
+      3
+    ],
+    "yz z F1": null,
+    "yz z F2": [
+      2,
+      2
+    ],
+    "yz z F3": null,
+    "zy y F1": null,
+    "zy y F2": [
+      2,
+      2
+    ],
+    "zy y F3": null,
+    "zy z F1": [
+      0,
+      0
+    ],
+    "zy z F2": null,
+    "zy z F3": [
+      1,
+      3
+    ]
+  },
+  "method": {
+    "P5_prediction": "Use the reversal signs times the inversion signs for each exact order. A carrying order allows any additional character of the even words.",
+    "P8_design_id": "Zero-based order in the product of LOCAL_ASSIGNMENTS across readers, with the last reader varying fastest.",
+    "carrying": "All full correlations at even flip settings are sharp and their signs fail the character identity.",
+    "exact": "All fixed-label outcome probabilities agree with the reversal-signed state read by Z and X.",
+    "state": "Chronological left creation and exact signed occupation states, checked on every fresh-pair completion.",
+    "tables": "Exact Walsh coefficients of the outcome probabilities from the projected Z and F operators.",
+    "ternary_benchmark": "Fourier inversion of the target reproduced all 64 cells of the specified four-settings benchmark."
+  }
+}

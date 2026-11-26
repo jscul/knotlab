@@ -1,0 +1,992 @@
+{
+  "stage": "full independent replay",
+  "gate": {
+    "replay": {
+      "order_rows": 24,
+      "summary_rows": 4,
+      "coherent_norm_fields_checked": 4,
+      "relative_order_parity_fields_checked": 24,
+      "case_groups": {
+        "parents_created_a_b_c/F1": {
+          "order_correlations": {
+            "abc": [
+              "1",
+              "-1",
+              "-1",
+              "-1"
+            ],
+            "acb": [
+              "1",
+              "0",
+              "0",
+              "0"
+            ],
+            "bac": [
+              "1",
+              "0",
+              "0",
+              "0"
+            ],
+            "bca": [
+              "1",
+              "1",
+              "1",
+              "-1"
+            ],
+            "cab": [
+              "1",
+              "-1",
+              "1",
+              "1"
+            ],
+            "cba": [
+              "1",
+              "0",
+              "0",
+              "0"
+            ]
+          },
+          "order_blind_best_score": "7/6",
+          "coherent_sum_old_words": [
+            "000"
+          ],
+          "normalized_coherent_sum_norm_squared": "1/4",
+          "nonzero_coherent_coefficients": 8
+        },
+        "parents_created_a_b_c/F2": {
+          "order_correlations": {
+            "abc": [
+              "1",
+              "0",
+              "0",
+              "0"
+            ],
+            "acb": [
+              "1",
+              "0",
+              "0",
+              "0"
+            ],
+            "bac": [
+              "1",
+              "0",
+              "0",
+              "0"
+            ],
+            "bca": [
+              "1",
+              "0",
+              "0",
+              "0"
+            ],
+            "cab": [
+              "1",
+              "0",
+              "0",
+              "0"
+            ],
+            "cba": [
+              "1",
+              "0",
+              "0",
+              "0"
+            ]
+          },
+          "order_blind_best_score": "1",
+          "coherent_sum_old_words": [
+            "000"
+          ],
+          "normalized_coherent_sum_norm_squared": "1/4",
+          "nonzero_coherent_coefficients": 8
+        },
+        "parents_created_c_b_a/F1": {
+          "order_correlations": {
+            "abc": [
+              "1",
+              "0",
+              "0",
+              "0"
+            ],
+            "acb": [
+              "1",
+              "1",
+              "1",
+              "-1"
+            ],
+            "bac": [
+              "1",
+              "-1",
+              "1",
+              "1"
+            ],
+            "bca": [
+              "1",
+              "0",
+              "0",
+              "0"
+            ],
+            "cab": [
+              "1",
+              "0",
+              "0",
+              "0"
+            ],
+            "cba": [
+              "1",
+              "-1",
+              "-1",
+              "-1"
+            ]
+          },
+          "order_blind_best_score": "7/6",
+          "coherent_sum_old_words": [
+            "000"
+          ],
+          "normalized_coherent_sum_norm_squared": "1/4",
+          "nonzero_coherent_coefficients": 8
+        },
+        "parents_created_c_b_a/F2": {
+          "order_correlations": {
+            "abc": [
+              "1",
+              "0",
+              "0",
+              "0"
+            ],
+            "acb": [
+              "1",
+              "0",
+              "0",
+              "0"
+            ],
+            "bac": [
+              "1",
+              "0",
+              "0",
+              "0"
+            ],
+            "bca": [
+              "1",
+              "0",
+              "0",
+              "0"
+            ],
+            "cab": [
+              "1",
+              "0",
+              "0",
+              "0"
+            ],
+            "cba": [
+              "1",
+              "0",
+              "0",
+              "0"
+            ]
+          },
+          "order_blind_best_score": "1",
+          "coherent_sum_old_words": [
+            "000"
+          ],
+          "normalized_coherent_sum_norm_squared": "1/4",
+          "nonzero_coherent_coefficients": 8
+        }
+      }
+    },
+    "anticommutation": {
+      "listings": 2,
+      "basis_states_per_listing": 512,
+      "individual_relation_checks": 248832,
+      "failures": 0
+    },
+    "matrix_path": {
+      "n3": {
+        "table_runs": 66,
+        "distinct_input_configurations": 60,
+        "distinct_state_and_order_inputs": 48,
+        "probability_cells": 4224,
+        "random_order": "abc"
+      },
+      "n4": {
+        "table_runs": 72,
+        "distinct_input_configurations": 72,
+        "distinct_state_and_order_inputs": 72,
+        "probability_cells": 18432,
+        "random_order": "badc"
+      }
+    },
+    "listings": {
+      "n3": {
+        "listings": 23,
+        "distinct_listings": 23,
+        "reference_tables": 24,
+        "table_runs": 552,
+        "comparisons_to_reference": 528,
+        "probability_cells_compared": 33792,
+        "creation_and_reader_setups_with_commit_order_contrast": 2
+      },
+      "n4": {
+        "listings": 23,
+        "distinct_listings": 23,
+        "reference_tables": 24,
+        "table_runs": 552,
+        "comparisons_to_reference": 528,
+        "probability_cells_compared": 135168,
+        "creation_and_reader_setups_with_commit_order_contrast": 1
+      }
+    }
+  },
+  "P1": {
+    "commutation_identity": {
+      "basis_states": 512,
+      "ordered_birth_pairs": 6,
+      "failures": 0,
+      "nonzero_minus_sign": 432,
+      "zero_minus_sign": 336,
+      "nonzero_plus_sign": 1920,
+      "zero_plus_sign": 384
+    },
+    "reordering_sign": {
+      "n3": {
+        "pairs_of_orders": 15,
+        "nonzero_coefficients_compared": 480,
+        "coefficients_changing_sign": 216,
+        "failures": 0
+      },
+      "n4": {
+        "pairs_of_orders": 276,
+        "nonzero_coefficients_compared": 35328,
+        "coefficients_changing_sign": 16128,
+        "failures": 0
+      }
+    }
+  },
+  "P2": {
+    "n3": {
+      "ascending": {
+        "sigma": "abc",
+        "orders": 6,
+        "carrying_orders": [
+          "abc",
+          "bca",
+          "cab"
+        ],
+        "noncarrying_orders": 3,
+        "probability_cells_compared_to_target": 384,
+        "fixed_label_match_counts": {
+          "64": 1,
+          "44": 3,
+          "48": 2
+        },
+        "shifts": {
+          "abc": {
+            "fixed_label_matches": 64,
+            "relabeled_matches": 64
+          },
+          "bca": {
+            "fixed_label_matches": 48,
+            "relabeled_matches": 64
+          },
+          "cab": {
+            "fixed_label_matches": 48,
+            "relabeled_matches": 64
+          }
+        }
+      },
+      "descending": {
+        "sigma": "cba",
+        "orders": 6,
+        "carrying_orders": [
+          "acb",
+          "bac",
+          "cba"
+        ],
+        "noncarrying_orders": 3,
+        "probability_cells_compared_to_target": 384,
+        "fixed_label_match_counts": {
+          "44": 3,
+          "48": 2,
+          "64": 1
+        },
+        "shifts": {
+          "acb": {
+            "fixed_label_matches": 48,
+            "relabeled_matches": 64
+          },
+          "bac": {
+            "fixed_label_matches": 48,
+            "relabeled_matches": 64
+          },
+          "cba": {
+            "fixed_label_matches": 64,
+            "relabeled_matches": 64
+          }
+        }
+      },
+      "random": {
+        "sigma": "abc",
+        "orders": 6,
+        "carrying_orders": [
+          "abc",
+          "bca",
+          "cab"
+        ],
+        "noncarrying_orders": 3,
+        "probability_cells_compared_to_target": 384,
+        "fixed_label_match_counts": {
+          "64": 1,
+          "44": 3,
+          "48": 2
+        },
+        "shifts": {
+          "abc": {
+            "fixed_label_matches": 64,
+            "relabeled_matches": 64
+          },
+          "bca": {
+            "fixed_label_matches": 48,
+            "relabeled_matches": 64
+          },
+          "cab": {
+            "fixed_label_matches": 48,
+            "relabeled_matches": 64
+          }
+        }
+      },
+      "elapsed_seconds_including_p7": 0.005
+    },
+    "n4": {
+      "ascending": {
+        "sigma": "abcd",
+        "orders": 24,
+        "carrying_orders": [
+          "abcd",
+          "bcda",
+          "cdab",
+          "dabc"
+        ],
+        "noncarrying_orders": 20,
+        "probability_cells_compared_to_target": 6144,
+        "fixed_label_match_counts": {
+          "256": 1,
+          "176": 10,
+          "134": 2,
+          "136": 2,
+          "192": 3,
+          "160": 6
+        },
+        "shifts": {
+          "abcd": {
+            "fixed_label_matches": 256,
+            "relabeled_matches": 256
+          },
+          "bcda": {
+            "fixed_label_matches": 192,
+            "relabeled_matches": 256
+          },
+          "cdab": {
+            "fixed_label_matches": 192,
+            "relabeled_matches": 256
+          },
+          "dabc": {
+            "fixed_label_matches": 192,
+            "relabeled_matches": 256
+          }
+        }
+      },
+      "descending": {
+        "sigma": "dcba",
+        "orders": 24,
+        "carrying_orders": [
+          "adcb",
+          "badc",
+          "cbad",
+          "dcba"
+        ],
+        "noncarrying_orders": 20,
+        "probability_cells_compared_to_target": 6144,
+        "fixed_label_match_counts": {
+          "136": 2,
+          "176": 10,
+          "160": 6,
+          "192": 3,
+          "134": 2,
+          "256": 1
+        },
+        "shifts": {
+          "adcb": {
+            "fixed_label_matches": 192,
+            "relabeled_matches": 256
+          },
+          "badc": {
+            "fixed_label_matches": 192,
+            "relabeled_matches": 256
+          },
+          "cbad": {
+            "fixed_label_matches": 192,
+            "relabeled_matches": 256
+          },
+          "dcba": {
+            "fixed_label_matches": 256,
+            "relabeled_matches": 256
+          }
+        }
+      },
+      "random": {
+        "sigma": "badc",
+        "orders": 24,
+        "carrying_orders": [
+          "adcb",
+          "badc",
+          "cbad",
+          "dcba"
+        ],
+        "noncarrying_orders": 20,
+        "probability_cells_compared_to_target": 6144,
+        "fixed_label_match_counts": {
+          "136": 2,
+          "176": 10,
+          "160": 6,
+          "192": 3,
+          "256": 1,
+          "134": 2
+        },
+        "shifts": {
+          "adcb": {
+            "fixed_label_matches": 192,
+            "relabeled_matches": 256
+          },
+          "badc": {
+            "fixed_label_matches": 256,
+            "relabeled_matches": 256
+          },
+          "cbad": {
+            "fixed_label_matches": 192,
+            "relabeled_matches": 256
+          },
+          "dcba": {
+            "fixed_label_matches": 192,
+            "relabeled_matches": 256
+          }
+        }
+      },
+      "elapsed_seconds_including_p7": 0.069
+    },
+    "n5": {
+      "ascending": {
+        "sigma": "abcde",
+        "orders": 120,
+        "carrying_orders": [
+          "abcde",
+          "bcdea",
+          "cdeab",
+          "deabc",
+          "eabcd"
+        ],
+        "noncarrying_orders": 115,
+        "probability_cells_compared_to_target": 122880,
+        "fixed_label_match_counts": {
+          "1024": 1,
+          "704": 22,
+          "536": 9,
+          "558": 25,
+          "624": 10,
+          "422": 5,
+          "544": 8,
+          "768": 4,
+          "640": 28,
+          "508": 8
+        },
+        "shifts": {
+          "abcde": {
+            "fixed_label_matches": 1024,
+            "relabeled_matches": 1024
+          },
+          "bcdea": {
+            "fixed_label_matches": 768,
+            "relabeled_matches": 1024
+          },
+          "cdeab": {
+            "fixed_label_matches": 768,
+            "relabeled_matches": 1024
+          },
+          "deabc": {
+            "fixed_label_matches": 768,
+            "relabeled_matches": 1024
+          },
+          "eabcd": {
+            "fixed_label_matches": 768,
+            "relabeled_matches": 1024
+          }
+        }
+      },
+      "descending": {
+        "sigma": "edcba",
+        "orders": 120,
+        "carrying_orders": [
+          "aedcb",
+          "baedc",
+          "cbaed",
+          "dcbae",
+          "edcba"
+        ],
+        "noncarrying_orders": 115,
+        "probability_cells_compared_to_target": 122880,
+        "fixed_label_match_counts": {
+          "422": 5,
+          "544": 8,
+          "558": 25,
+          "704": 22,
+          "508": 8,
+          "624": 10,
+          "640": 28,
+          "768": 4,
+          "536": 9,
+          "1024": 1
+        },
+        "shifts": {
+          "aedcb": {
+            "fixed_label_matches": 768,
+            "relabeled_matches": 1024
+          },
+          "baedc": {
+            "fixed_label_matches": 768,
+            "relabeled_matches": 1024
+          },
+          "cbaed": {
+            "fixed_label_matches": 768,
+            "relabeled_matches": 1024
+          },
+          "dcbae": {
+            "fixed_label_matches": 768,
+            "relabeled_matches": 1024
+          },
+          "edcba": {
+            "fixed_label_matches": 1024,
+            "relabeled_matches": 1024
+          }
+        }
+      },
+      "random": {
+        "sigma": "becad",
+        "orders": 120,
+        "carrying_orders": [
+          "adbec",
+          "becad",
+          "cadbe",
+          "dbeca",
+          "ecadb"
+        ],
+        "noncarrying_orders": 115,
+        "probability_cells_compared_to_target": 122880,
+        "fixed_label_match_counts": {
+          "624": 10,
+          "558": 25,
+          "640": 28,
+          "704": 22,
+          "536": 9,
+          "422": 5,
+          "508": 8,
+          "768": 4,
+          "544": 8,
+          "1024": 1
+        },
+        "shifts": {
+          "adbec": {
+            "fixed_label_matches": 768,
+            "relabeled_matches": 1024
+          },
+          "becad": {
+            "fixed_label_matches": 1024,
+            "relabeled_matches": 1024
+          },
+          "cadbe": {
+            "fixed_label_matches": 768,
+            "relabeled_matches": 1024
+          },
+          "dbeca": {
+            "fixed_label_matches": 768,
+            "relabeled_matches": 1024
+          },
+          "ecadb": {
+            "fixed_label_matches": 768,
+            "relabeled_matches": 1024
+          }
+        }
+      },
+      "elapsed_seconds_including_p7": 0.056
+    },
+    "n6": {
+      "ascending": {
+        "sigma": "abcdef",
+        "orders": 720,
+        "carrying_orders": [
+          "abcdef",
+          "bcdefa",
+          "cdefab",
+          "defabc",
+          "efabcd",
+          "fabcde"
+        ],
+        "noncarrying_orders": 714,
+        "probability_cells_compared_to_target": 2949120,
+        "fixed_label_match_counts": {
+          "4096": 1,
+          "2816": 40,
+          "2144": 25,
+          "2232": 139,
+          "2496": 52,
+          "1688": 26,
+          "1792": 40,
+          "2364": 18,
+          "2064": 40,
+          "1940": 6,
+          "1380": 3,
+          "1932": 6,
+          "2176": 20,
+          "2072": 32,
+          "1800": 32,
+          "1378": 3,
+          "3072": 5,
+          "2560": 80,
+          "2032": 45,
+          "2168": 59,
+          "2432": 20,
+          "2300": 18,
+          "1624": 10
+        },
+        "shifts": {
+          "abcdef": {
+            "fixed_label_matches": 4096,
+            "relabeled_matches": 4096
+          },
+          "bcdefa": {
+            "fixed_label_matches": 3072,
+            "relabeled_matches": 4096
+          },
+          "cdefab": {
+            "fixed_label_matches": 3072,
+            "relabeled_matches": 4096
+          },
+          "defabc": {
+            "fixed_label_matches": 3072,
+            "relabeled_matches": 4096
+          },
+          "efabcd": {
+            "fixed_label_matches": 3072,
+            "relabeled_matches": 4096
+          },
+          "fabcde": {
+            "fixed_label_matches": 3072,
+            "relabeled_matches": 4096
+          }
+        }
+      },
+      "descending": {
+        "sigma": "fedcba",
+        "orders": 720,
+        "carrying_orders": [
+          "afedcb",
+          "bafedc",
+          "cbafed",
+          "dcbafe",
+          "edcbaf",
+          "fedcba"
+        ],
+        "noncarrying_orders": 714,
+        "probability_cells_compared_to_target": 2949120,
+        "fixed_label_match_counts": {
+          "1378": 3,
+          "1688": 26,
+          "1800": 32,
+          "2176": 20,
+          "1792": 40,
+          "2072": 32,
+          "2232": 139,
+          "1932": 6,
+          "2816": 40,
+          "1624": 10,
+          "2032": 45,
+          "2364": 18,
+          "2064": 40,
+          "2168": 59,
+          "2496": 52,
+          "2300": 18,
+          "2560": 80,
+          "2432": 20,
+          "3072": 5,
+          "1380": 3,
+          "1940": 6,
+          "2144": 25,
+          "4096": 1
+        },
+        "shifts": {
+          "afedcb": {
+            "fixed_label_matches": 3072,
+            "relabeled_matches": 4096
+          },
+          "bafedc": {
+            "fixed_label_matches": 3072,
+            "relabeled_matches": 4096
+          },
+          "cbafed": {
+            "fixed_label_matches": 3072,
+            "relabeled_matches": 4096
+          },
+          "dcbafe": {
+            "fixed_label_matches": 3072,
+            "relabeled_matches": 4096
+          },
+          "edcbaf": {
+            "fixed_label_matches": 3072,
+            "relabeled_matches": 4096
+          },
+          "fedcba": {
+            "fixed_label_matches": 4096,
+            "relabeled_matches": 4096
+          }
+        }
+      },
+      "random": {
+        "sigma": "dbafec",
+        "orders": 720,
+        "carrying_orders": [
+          "afecdb",
+          "bafecd",
+          "cdbafe",
+          "dbafec",
+          "ecdbaf",
+          "fecdba"
+        ],
+        "noncarrying_orders": 714,
+        "probability_cells_compared_to_target": 2949120,
+        "fixed_label_match_counts": {
+          "1624": 10,
+          "2032": 45,
+          "1792": 40,
+          "1800": 32,
+          "2072": 32,
+          "2232": 139,
+          "1380": 3,
+          "1688": 26,
+          "2144": 25,
+          "2064": 40,
+          "2168": 59,
+          "1940": 6,
+          "2560": 80,
+          "2300": 18,
+          "2496": 52,
+          "2432": 20,
+          "2176": 20,
+          "2816": 40,
+          "2364": 18,
+          "3072": 5,
+          "1378": 3,
+          "1932": 6,
+          "4096": 1
+        },
+        "shifts": {
+          "afecdb": {
+            "fixed_label_matches": 3072,
+            "relabeled_matches": 4096
+          },
+          "bafecd": {
+            "fixed_label_matches": 3072,
+            "relabeled_matches": 4096
+          },
+          "cdbafe": {
+            "fixed_label_matches": 3072,
+            "relabeled_matches": 4096
+          },
+          "dbafec": {
+            "fixed_label_matches": 4096,
+            "relabeled_matches": 4096
+          },
+          "ecdbaf": {
+            "fixed_label_matches": 3072,
+            "relabeled_matches": 4096
+          },
+          "fecdba": {
+            "fixed_label_matches": 3072,
+            "relabeled_matches": 4096
+          }
+        }
+      },
+      "elapsed_seconds_including_p7": 0.536
+    }
+  },
+  "P7": {
+    "joint_sigma_pi": {
+      "n3": {
+        "pairs": 36,
+        "carrying": 18,
+        "share": "1/2"
+      },
+      "n4": {
+        "pairs": 576,
+        "carrying": 96,
+        "share": "1/6"
+      }
+    },
+    "n3": {
+      "orders": 6,
+      "carrying": 3,
+      "share": "1/2",
+      "mean_even_setting_correlations": {
+        "000": "1",
+        "110": "-1/6",
+        "101": "1/6",
+        "011": "-1/6"
+      },
+      "sharp_even_setting_masks": [
+        "000"
+      ],
+      "coherent_sum_old_words": [
+        "000"
+      ],
+      "nonzero_coherent_coefficients": 8,
+      "coherent_sum_nonzero_correlations_with_nonempty_even_flips": 0,
+      "coherent_sum_absolute_amplitudes": [
+        6
+      ],
+      "normalized_coherent_sum_norm_squared": "1/4"
+    },
+    "n4": {
+      "orders": 24,
+      "carrying": 4,
+      "share": "1/6",
+      "mean_even_setting_correlations": {
+        "0000": "1",
+        "1100": "-1/6",
+        "1010": "0",
+        "0110": "-1/6",
+        "1001": "1/6",
+        "0101": "0",
+        "0011": "-1/6",
+        "1111": "0"
+      },
+      "sharp_even_setting_masks": [
+        "0000"
+      ],
+      "coherent_sum_old_words": [
+        "0000"
+      ],
+      "nonzero_coherent_coefficients": 16,
+      "coherent_sum_nonzero_correlations_with_nonempty_even_flips": 0,
+      "coherent_sum_absolute_amplitudes": [
+        24
+      ],
+      "normalized_coherent_sum_norm_squared": "1/8"
+    },
+    "n5": {
+      "orders": 120,
+      "carrying": 5,
+      "share": "1/24",
+      "mean_even_setting_correlations": {
+        "00000": "1",
+        "11000": "-3/20",
+        "10100": "-1/60",
+        "01100": "-3/20",
+        "10010": "1/60",
+        "01010": "-1/60",
+        "00110": "-3/20",
+        "11110": "0",
+        "10001": "3/20",
+        "01001": "1/60",
+        "00101": "-1/60",
+        "11101": "0",
+        "00011": "-3/20",
+        "11011": "0",
+        "10111": "0",
+        "01111": "0"
+      },
+      "sharp_even_setting_masks": [
+        "00000"
+      ],
+      "coherent_sum_old_words": [
+        "00000"
+      ],
+      "nonzero_coherent_coefficients": 32,
+      "coherent_sum_nonzero_correlations_with_nonempty_even_flips": 0,
+      "coherent_sum_absolute_amplitudes": [
+        120
+      ],
+      "normalized_coherent_sum_norm_squared": "1/16"
+    },
+    "n6": {
+      "orders": 720,
+      "carrying": 6,
+      "share": "1/120",
+      "mean_even_setting_correlations": {
+        "000000": "1",
+        "110000": "-2/15",
+        "101000": "-1/60",
+        "011000": "-2/15",
+        "100100": "0",
+        "010100": "-1/60",
+        "001100": "-2/15",
+        "111100": "0",
+        "100010": "1/60",
+        "010010": "0",
+        "001010": "-1/60",
+        "111010": "0",
+        "000110": "-2/15",
+        "110110": "0",
+        "101110": "0",
+        "011110": "0",
+        "100001": "2/15",
+        "010001": "1/60",
+        "001001": "0",
+        "111001": "0",
+        "000101": "-1/60",
+        "110101": "0",
+        "101101": "0",
+        "011101": "0",
+        "000011": "-2/15",
+        "110011": "0",
+        "101011": "0",
+        "011011": "0",
+        "100111": "0",
+        "010111": "0",
+        "001111": "0",
+        "111111": "0"
+      },
+      "sharp_even_setting_masks": [
+        "000000"
+      ],
+      "coherent_sum_old_words": [
+        "000000"
+      ],
+      "nonzero_coherent_coefficients": 64,
+      "coherent_sum_nonzero_correlations_with_nonempty_even_flips": 0,
+      "coherent_sum_absolute_amplitudes": [
+        720
+      ],
+      "normalized_coherent_sum_norm_squared": "1/32"
+    }
+  },
+  "receipt_comparison": {
+    "gate_and_P1_P2_P7_receipt_disagreements": 0,
+    "P2_comparison": "The receipt stores carrying orders and agreement flags. The referee recomputed all probability cells."
+  },
+  "P2_totals": {
+    "orders": 2610,
+    "distinct_creation_and_commit_pairs": 2604,
+    "carrying_orders": 54,
+    "noncarrying_orders": 2556,
+    "probability_cells_compared_to_target": 9235584,
+    "fixed_label_cells_for_matching_orders": 16320,
+    "cyclic_shift_cells_matching_after_relabelling": 92736
+  },
+  "elapsed_seconds": {
+    "gate_replay": 0.004,
+    "gate_car": 0.009,
+    "gate_second_path": 0.144,
+    "gate_listings": 0.161,
+    "birth_commutation": 0.187,
+    "order_pair_signs": 0.005,
+    "round_predictions": 0.666,
+    "verify_receipts": 0.0
+  },
+  "total_elapsed_seconds": 1.177
+}

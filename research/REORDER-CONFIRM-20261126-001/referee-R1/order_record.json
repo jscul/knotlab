@@ -1,0 +1,167 @@
+{
+  "setting_index": "bit j is 1 for the real flip at reader j (a is bit 0); 0 for Z",
+  "freeze_check": {
+    "freeze": "8515665ca6e603548e8035b28b296e9e53cbb987",
+    "first_committed_receipt": "019ff11379806fe875bac514ee33e73b77e96a9d",
+    "unchanged_blobs": {
+      "research/REORDER-CONFIRM-20261126-001/preregistration.md": "5c18858697552786725a97a5ddfe44e4d5d15422",
+      "experiments/REORDER-CONFIRM-20261126-001/REORDER-CONFIRM-20261126-001-E001_schedules/contract.json": "26d47739c357d3843a7cae9fa14ffe9693741162",
+      "research/REORDER-CONFIRM-20261126-001/advisor/question_1.md": "f1775c8519c73c467f9913dfde347e4ee9f579a7",
+      "research/REORDER-CONFIRM-20261126-001/advisor/answer_1.md": "031a1d53bbfad7e435fcf077c41f02c5e962f3fe"
+    },
+    "study_implementation_files_in_freeze": 0
+  },
+  "unknown_schedule_same_creation_order": {
+    "schedules": [
+      [
+        "ca",
+        "cb",
+        "ba",
+        "bb",
+        "cc",
+        "bc"
+      ],
+      [
+        "ca",
+        "cb",
+        "cc",
+        "bc",
+        "ba",
+        "bb"
+      ]
+    ],
+    "states_equal": true,
+    "correlations": [
+      "1",
+      "0",
+      "0",
+      "-1",
+      "0",
+      "1",
+      "1",
+      "0"
+    ],
+    "product_of_four_scored_correlations": -1
+  },
+  "unknown_common_creation_and_commit_order": {
+    "hidden_orders": 6,
+    "distinct_old_states": 1,
+    "old_amplitudes": {
+      "0": 1,
+      "3": -1,
+      "5": -1,
+      "6": -1
+    }
+  },
+  "equal_mixtures_by_chronological_commit_parity": {
+    "chronological_even": [
+      "1",
+      "0",
+      "0",
+      "-1/3",
+      "0",
+      "1/3",
+      "-1/3",
+      "0"
+    ],
+    "chronological_odd": [
+      "1",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    "all": [
+      "1",
+      "0",
+      "0",
+      "-1/6",
+      "0",
+      "1/6",
+      "-1/6",
+      "0"
+    ]
+  },
+  "changed_real_readings": {
+    "chronological_even": {
+      "predecessor_witness_score_squared": "14112/3125",
+      "independent_unnormalized_Z_X_directions": [
+        [
+          [
+            4,
+            1
+          ],
+          [
+            -4,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            4,
+            -1
+          ],
+          [
+            4,
+            1
+          ]
+        ]
+      ],
+      "attained_score": "110/51"
+    },
+    "all": {
+      "predecessor_witness_score_squared": "94864/23125",
+      "independent_unnormalized_Z_X_directions": [
+        [
+          [
+            7,
+            1
+          ],
+          [
+            -7,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            7,
+            -1
+          ],
+          [
+            7,
+            1
+          ]
+        ]
+      ],
+      "attained_score": "307/150"
+    }
+  },
+  "four_reader_nonconstant_sign": {
+    "labelled_schedules": 2520,
+    "nonconstant_sign": 2184,
+    "flat_sign": 336
+  }
+}

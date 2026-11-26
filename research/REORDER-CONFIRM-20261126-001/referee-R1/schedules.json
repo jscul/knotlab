@@ -1,0 +1,565 @@
+{
+  "P3": {
+    "n3": {
+      "both": 0,
+      "carrying_checked": {
+        "F1": 42,
+        "F3": 48
+      },
+      "checked": 90,
+      "disagreements": {
+        "F1": 0,
+        "F3": 0
+      },
+      "first_failure": null,
+      "neither": 0,
+      "occupation_coefficients_checked": 2880,
+      "occupation_sign_disagreements": 0,
+      "schedules": 90,
+      "seconds": 0.004
+    },
+    "n4": {
+      "both": 0,
+      "carrying_checked": {
+        "F1": 312,
+        "F3": 480
+      },
+      "checked": 2520,
+      "disagreements": {
+        "F1": 0,
+        "F3": 0
+      },
+      "first_failure": null,
+      "neither": 1728,
+      "occupation_coefficients_checked": 322560,
+      "occupation_sign_disagreements": 0,
+      "schedules": 2520,
+      "seconds": 0.2993
+    },
+    "n5": {
+      "both": 0,
+      "carrying_checked": {
+        "F1": 40,
+        "F3": 95
+      },
+      "checked": 2000,
+      "disagreements": {
+        "F1": 0,
+        "F3": 0
+      },
+      "first_failure": null,
+      "neither": 1865,
+      "occupation_coefficients_checked": 1024000,
+      "occupation_sign_disagreements": 0,
+      "schedules": 113400,
+      "seconds": 1.1075
+    }
+  },
+  "P3_direct_up_to_reader_renaming": {
+    "n5": {
+      "both": 0,
+      "carrying_checked": {
+        "F1": 21,
+        "F3": 52
+      },
+      "census_agreement": true,
+      "checked": 945,
+      "disagreements": {
+        "F1": 0,
+        "F3": 0
+      },
+      "first_failure": null,
+      "label_multiplicity": 120,
+      "neither": 872,
+      "occupation_coefficients_checked": 483840,
+      "occupation_sign_disagreements": 0,
+      "represented_labelled_carrying": {
+        "F1": 2520,
+        "F3": 6240
+      },
+      "represented_labelled_schedules": 113400,
+      "seconds": 0.5266
+    },
+    "n6": {
+      "both": 0,
+      "carrying_checked": {
+        "F1": 31,
+        "F3": 147
+      },
+      "census_agreement": true,
+      "checked": 10395,
+      "disagreements": {
+        "F1": 0,
+        "F3": 0
+      },
+      "first_failure": null,
+      "label_multiplicity": 720,
+      "neither": 10217,
+      "occupation_coefficients_checked": 21288960,
+      "occupation_sign_disagreements": 0,
+      "represented_labelled_carrying": {
+        "F1": 22320,
+        "F3": 105840
+      },
+      "represented_labelled_schedules": 7484400,
+      "seconds": 34.7851
+    }
+  },
+  "P3_n5_sample": {
+    "first_eight_zero_based_indices": [
+      99712,
+      18237,
+      76554,
+      7477,
+      43554,
+      45773,
+      39248,
+      11841
+    ],
+    "index_order": "Lexicographic on reader labels, each appearing twice",
+    "receipt_comparison": "The receipt retains only aggregates. The seed and index order reconstruct the sample.",
+    "seed": 20261130,
+    "sha256_of_comma_separated_indices": "e035052633e44b90b578b48d79359d68e390d646dd9a86ed61c9a96fe38f7c20"
+  },
+  "P4": {
+    "n3": {
+      "both": 0,
+      "carrying_checked": {
+        "F1": 0,
+        "F3": 6
+      },
+      "checked": 6,
+      "disagreements": {
+        "F1": 0,
+        "F3": 0
+      },
+      "first_failure": null,
+      "neither": 0,
+      "occupation_coefficients_checked": 192,
+      "occupation_sign_disagreements": 0,
+      "seconds": 0.0004
+    },
+    "n4": {
+      "both": 0,
+      "carrying_checked": {
+        "F1": 0,
+        "F3": 24
+      },
+      "checked": 24,
+      "disagreements": {
+        "F1": 0,
+        "F3": 0
+      },
+      "first_failure": null,
+      "neither": 0,
+      "occupation_coefficients_checked": 3072,
+      "occupation_sign_disagreements": 0,
+      "seconds": 0.0042
+    },
+    "n5": {
+      "both": 0,
+      "carrying_checked": {
+        "F1": 0,
+        "F3": 120
+      },
+      "checked": 120,
+      "disagreements": {
+        "F1": 0,
+        "F3": 0
+      },
+      "first_failure": null,
+      "neither": 0,
+      "occupation_coefficients_checked": 61440,
+      "occupation_sign_disagreements": 0,
+      "seconds": 0.0806
+    },
+    "n6": {
+      "both": 0,
+      "carrying_checked": {
+        "F1": 0,
+        "F3": 720
+      },
+      "checked": 720,
+      "disagreements": {
+        "F1": 0,
+        "F3": 0
+      },
+      "first_failure": null,
+      "neither": 0,
+      "occupation_coefficients_checked": 1474560,
+      "occupation_sign_disagreements": 0,
+      "seconds": 2.5865
+    }
+  },
+  "controls": {
+    "distinct_schedules_same_state": true,
+    "equal_coherent_sum_F1_carries": true,
+    "equal_mixture_F1_carries": true,
+    "examples": {
+      "complex_carrying_nonempty_split": {
+        "alternating_pairs": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ]
+        ],
+        "correlations_by_flip_mask": {
+          "F1": {
+            "0": "1",
+            "3": "0",
+            "5": "0",
+            "6": "0",
+            "9": "0",
+            "10": "0",
+            "12": "0",
+            "15": "-1"
+          },
+          "F3": {
+            "0": "1",
+            "3": "1",
+            "5": "1",
+            "6": "-1",
+            "9": "1",
+            "10": "-1",
+            "12": "-1",
+            "15": "-1"
+          }
+        },
+        "full_contradiction": {
+          "F1": false,
+          "F3": true
+        },
+        "schedule": [
+          0,
+          1,
+          2,
+          3,
+          0,
+          3,
+          2,
+          1
+        ]
+      },
+      "identical_creation_and_commit_orders": {
+        "alternating_pairs": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "correlations_by_flip_mask": {
+          "F1": {
+            "0": "1",
+            "3": "-1",
+            "5": "-1",
+            "6": "-1",
+            "9": "-1",
+            "10": "-1",
+            "12": "-1",
+            "15": "1"
+          },
+          "F3": {
+            "0": "1",
+            "3": "0",
+            "5": "0",
+            "6": "0",
+            "9": "0",
+            "10": "0",
+            "12": "0",
+            "15": "1"
+          }
+        },
+        "full_contradiction": {
+          "F1": true,
+          "F3": false
+        },
+        "schedule": [
+          0,
+          1,
+          2,
+          3,
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "immediate_births": {
+        "alternating_pairs": [],
+        "correlations_by_flip_mask": {
+          "F1": {
+            "0": "1",
+            "3": "0",
+            "5": "0",
+            "6": "0",
+            "9": "0",
+            "10": "0",
+            "12": "0",
+            "15": "1"
+          },
+          "F3": {
+            "0": "1",
+            "3": "-1",
+            "5": "-1",
+            "6": "-1",
+            "9": "-1",
+            "10": "-1",
+            "12": "-1",
+            "15": "1"
+          }
+        },
+        "full_contradiction": {
+          "F1": false,
+          "F3": true
+        },
+        "schedule": [
+          0,
+          0,
+          1,
+          1,
+          2,
+          2,
+          3,
+          3
+        ]
+      },
+      "neither_flip_carries": {
+        "alternating_pairs": [
+          [
+            0,
+            1
+          ]
+        ],
+        "correlations_by_flip_mask": {
+          "F1": {
+            "0": "1",
+            "3": "-1",
+            "5": "0",
+            "6": "0",
+            "9": "0",
+            "10": "0",
+            "12": "0",
+            "15": "0"
+          },
+          "F3": {
+            "0": "1",
+            "3": "0",
+            "5": "0",
+            "6": "0",
+            "9": "0",
+            "10": "0",
+            "12": "-1",
+            "15": "0"
+          }
+        },
+        "full_contradiction": {
+          "F1": false,
+          "F3": false
+        },
+        "schedule": [
+          0,
+          1,
+          0,
+          1,
+          2,
+          2,
+          3,
+          3
+        ]
+      },
+      "same_state_immediate_birth_for_reader_0": {
+        "alternating_pairs": [
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "correlations_by_flip_mask": {
+          "F1": {
+            "0": "1",
+            "3": "1",
+            "5": "1",
+            "6": "-1",
+            "9": "1",
+            "10": "-1",
+            "12": "-1",
+            "15": "-1"
+          },
+          "F3": {
+            "0": "1",
+            "3": "0",
+            "5": "0",
+            "6": "0",
+            "9": "0",
+            "10": "0",
+            "12": "0",
+            "15": "-1"
+          }
+        },
+        "full_contradiction": {
+          "F1": true,
+          "F3": false
+        },
+        "schedule": [
+          0,
+          0,
+          1,
+          2,
+          3,
+          1,
+          2,
+          3
+        ]
+      },
+      "same_state_latest_birth_for_reader_0": {
+        "alternating_pairs": [
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "correlations_by_flip_mask": {
+          "F1": {
+            "0": "1",
+            "3": "1",
+            "5": "1",
+            "6": "-1",
+            "9": "1",
+            "10": "-1",
+            "12": "-1",
+            "15": "-1"
+          },
+          "F3": {
+            "0": "1",
+            "3": "0",
+            "5": "0",
+            "6": "0",
+            "9": "0",
+            "10": "0",
+            "12": "0",
+            "15": "-1"
+          }
+        },
+        "full_contradiction": {
+          "F1": true,
+          "F3": false
+        },
+        "schedule": [
+          0,
+          1,
+          2,
+          3,
+          1,
+          2,
+          3,
+          0
+        ]
+      }
+    }
+  },
+  "elapsed_seconds": 39.6817,
+  "peak_resident_kib": 24984,
+  "receipt_aggregate_fields_match": {
+    "P3_n3": true,
+    "P3_n4": true,
+    "P3_n5": true,
+    "P3_uniform_n3": true,
+    "P3_uniform_n4": true,
+    "P3_uniform_n5": true,
+    "P3_uniform_n6": true,
+    "P4_n3": true,
+    "P4_n4": true,
+    "P4_n5": true
+  },
+  "uniform_over_labelled_schedules": {
+    "n3": {
+      "F1": 42,
+      "F3": 48,
+      "seconds": 0.0001,
+      "share_F1": "7/15",
+      "share_F3": "8/15",
+      "total": 90,
+      "unlabelled_pairings": 15
+    },
+    "n4": {
+      "F1": 312,
+      "F3": 480,
+      "seconds": 0.0002,
+      "share_F1": "13/105",
+      "share_F3": "4/21",
+      "total": 2520,
+      "unlabelled_pairings": 105
+    },
+    "n5": {
+      "F1": 2520,
+      "F3": 6240,
+      "seconds": 0.0015,
+      "share_F1": "1/45",
+      "share_F3": "52/945",
+      "total": 113400,
+      "unlabelled_pairings": 945
+    },
+    "n6": {
+      "F1": 22320,
+      "F3": 105840,
+      "seconds": 0.0181,
+      "share_F1": "31/10395",
+      "share_F3": "7/495",
+      "total": 7484400,
+      "unlabelled_pairings": 10395
+    },
+    "n7": {
+      "F1": 216720,
+      "F3": 2268000,
+      "seconds": 0.2631,
+      "share_F1": "43/135135",
+      "share_F3": "10/3003",
+      "total": 681080400,
+      "unlabelled_pairings": 135135
+    }
+  }
+}

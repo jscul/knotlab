@@ -178,8 +178,8 @@ distinction: two alternatives of which exactly one holds. A distinction is one
 bit, and its two alternatives are written 0 and 1. Nothing else is assumed.
 There is no space, no order and no number beyond the two values.
 
-**"It's a choice."** The owner's way of saying what a distinction is (25
-November 2026): "it's a choice" between 00/11 and 01/10, "a choice between the
+**"It's a choice."** The owner's way of saying what a distinction is: "it's a
+choice" between 00/11 and 01/10, "a choice between the
 two options, where the 2 options are the loops of the logical knot". Put two
 bits side by side. Their four joint states fall into two pairs:
 
@@ -547,13 +547,13 @@ the same device to bind any number of loops with three-place rules.
 ### 1.7 What rules make
 
 **The word.** The owner's word for any structure that rules make is "shape".
-In his words (8 November 2026): "things like
+In his words: "things like
 triangles/lines are essentially shapes, and they can run on forever. You can
 have an infinitely large circle, and different infinity size circles as well.
 Same thing with human minds. [W]e're essentially just a logical shape, or a
 pattern that repeats as consciousness in other humans. Our genome is a shape
 just like it." For the program's own objects the guide does not use the word:
-since 11 November 2026 it says **meeting pattern** for which knots share which
+it says **meeting pattern** for which knots share which
 distinctions (lesson 2.1), and it keeps "shape" in the owner's own words only.
 
 **More than a pattern.** "People refer to these as 'patterns'. They are, but it's
@@ -611,7 +611,7 @@ learn the shape of the underlying pattern somehow. But that is to be tested."
 That is open: whether a learning rule, shown what a system allows, can find
 rules, and rules within rules, that make it.
 
-**Studying a base from inside.** On 11 November 2026 the owner asked about
+**Studying a base from inside.** The owner asked about
 "the infinite series of emergent logic idea": "I feel like the emergence
 there is essentially like a set of rules, and things that emerge from those
 sets of rules can study those patterns in their base reality. So for example,
@@ -742,7 +742,7 @@ knots, is their **meeting pattern**, with the knots' rules left out. Knots
 with their rules, together with their meeting pattern, form a **knot
 pattern**, and a knot pattern that allows at least one state is a **base**, in
 the sense of the owner's "base reality": different meeting patterns, infinite
-ones included, make different bases. In the owner's words (11 November 2026), loops "weave in and
+ones included, make different bases. In the owner's words, loops "weave in and
 out and around other loops", the whole is "immensely complicated", and the
 structure that emerges is "folded" and "compressed".
 
@@ -853,7 +853,7 @@ PYTHONPATH=tools python3 -m knotlab patterns
 
 ### 2.4 Distance is the only form of information
 
-**The premise.** On 17 November 2026 the owner stated, in his words, the
+**The premise.** The owner stated, in his words, the
 premise that the program's question rests on: "Distance is the only form of
 information. That's the entire basis of the 'this versus that' distinction in
 the smallest emergent unit." It was, he said, "the entire premise of 'space
@@ -864,7 +864,7 @@ it as A97, now under challenge (the last part of this lesson). This lesson
 says what it means in the words of lessons 1.1 to 2.3, and which later lessons
 hang from it.
 
-**Relative, with an order.** Asked the same day whether his distance includes
+**Relative, with an order.** Asked whether his distance includes
 which way or only how far, the owner answered:
 "Distance is topological, so it will have some starting point, then go off
 outward from there. So for example, 0 might be a starting point on the number
@@ -904,7 +904,7 @@ number. It treats a distinction as the least piece of information, since it
 tells this from that. The guide reads the premise as saying what kind of thing
 that telling apart is: a distance. On this reading nothing has information on
 its own, as a value it carries; it has it only in its distance from what it is
-told apart from. That continues the owner's stance of 22 October 2026 that
+told apart from. That continues the owner's earlier stance that
 "everything is relational", that there are no values, only relations
 ([TWIST-RELATIONS-20261022-001](research/TWIST-RELATIONS-20261022-001/twist_relations.md)).
 His picture of a distinction as a choice between 00/11 and 01/10 (lesson 1.1)
@@ -966,7 +966,7 @@ carries no number; the counts are the guide's.
   apart
   ([KNOTS-ALONE-20261111-001](research/KNOTS-ALONE-20261111-001/knots_alone.md)).
 - **Length across time.** A count of contacts along a route is a magnitude
-  the record reads, by the owner's ruling of 8 November 2026 (assumption A40,
+  the record reads, by the owner's ruling (assumption A40,
   its consequence checked by a frozen test), and distance across time was built from it in
   two exact forms on networks of rings
   ([DISTANCE-20261108-001](research/DISTANCE-20261108-001/distance.md)).
@@ -974,7 +974,7 @@ carries no number; the counts are the guide's.
 Extended distance along paths, or a metric, comes later still: the foundation
 allows it only after paths and separation have been built from many contacts.
 
-**Dimensions from logic.** The owner's idea of 7 November 2026, "a number
+**Dimensions from logic.** The owner's idea of "a number
 line/Cartesian plane where the dimensions themselves expand out in measures of
 logic" (lesson 4.6), is the premise turned on the axes themselves. The guide's
 meaning of dimension is built from distance alone: the distinctions within a
@@ -1540,7 +1540,7 @@ PYTHONPATH=tools python3 -m knotlab holonomy
 
 **The idea.** In the Game of Life the board comes first: the grid decides
 which cells are neighbours, and the rules are read on it (lesson 1.3). The
-owner proposed the reverse, on 7 November 2026: "a number line/Cartesian plane
+owner proposed the reverse: "a number line/Cartesian plane
 where the dimensions themselves expand out in measures of logic", each axis
 "built out of an infinite structure of logic (emergent space)". So the axes X
 and Y would follow rules, as Life's cells do, and the rules would be an
@@ -1548,7 +1548,7 @@ essentially infinite CNF. It is the intuition of lesson 1.7 turned on space
 itself: in the owner's terms, lines and functions are "shapes", and "shapes"
 have rules. A function's
 graph already obeys one ("A single input (x-value) cannot have two different
-outputs (y-values)", in the owner's words of 8 November), so the axes it is
+outputs (y-values)", in the owner's words), so the axes it is
 drawn on could obey rules too. It is his founding premise turned on space
 (lesson 2.4): if distance is the only form of information, the axes are made
 of that information. This lesson says what of that idea is proved, what is
@@ -2556,9 +2556,7 @@ typical has to name its weighting.
 
 ### 7.3 Every meeting pattern, none chosen
 
-On the evening of 11 November 2026 (Pacific time; the record's tickets carry
-12 November, its date in UTC) the owner set out what the program's bases are
-part of. This lesson records his picture in his words, beside the readings of
+The owner has set out what the program's bases are part of. This lesson records his picture in his words, beside the readings of
 the coordinator, the agent that runs the program's lines of research, and the
 tests now running on each part. The readings are interpretations open to
 challenge; named results identify what is proved.
@@ -2610,7 +2608,7 @@ distinction share no contact, since the program infers no contact across
 bases (lesson 7.1). The register records this reading as A73, with how to
 challenge it.
 
-**Binding patterns: an open definition.** Asked on 12 November what "binding
+**Binding patterns: an open definition.** Asked what "binding
 patterns" means, the owner said: "This is what we're trying to discover. To
 me, it's like injected logic in each clause that binds a series of CNF
 together. And this injection could maybe even bind in ways that have influence
@@ -2672,8 +2670,8 @@ of three:
 - **It ends:** it allows states for a while and then none. It **ends** at the
   first knot after which it allows no state, and its **last base** is the
   pattern before that knot. Adding knots never brings a state back, so an end
-  is final. The record reads the owner's "die" as this (A72), and on 12
-  November he accepted the reading: "This is fine."
+  is final. The record reads the owner's "die" as this (A72), and he
+  accepted the reading: "This is fine."
 - **It goes on forever:** it is a base at every stage. By the compactness
   theorem (lesson 7.2, question 3) that is the same as the endless pattern it
   grows into being a base. A computation can only report that a pattern is
@@ -2726,9 +2724,9 @@ think it's just harmonies and logic fractals to infinity for irrational
 numbers." "Fractal" is kept in his own words only, and "harmony" has one
 assumed reading, below (glossary). Earlier he used "harmony" for a relation
 in which incommensurable parts cancel
-("It is ALL relational. There is no real such thing as 'values'", 22 October
-2026) and for polygons whose ratio of perimeter to diameter is rational, as
-against "a ratio that continues" (7 November 2026). The record has these
+("It is ALL relational. There is no real such thing as 'values'") and for
+polygons whose ratio of perimeter to diameter is rational, as against "a ratio
+that continues". The record has these
 pieces that bear on them, none yet tied to his words:
 
 - **One law, the same kind at every level (proved).** Where knots overlap,
@@ -2770,7 +2768,7 @@ tested (backlog B164):
 
 The two readings differ in kind, so which one the owner means matters (A75 in
 the register). Asked whether nested series are bound to each other beside one
-another or inside one another, he said on 12 November: "We need to suss this
+another or inside one another, he said: "We need to suss this
 out. Side might be misleading here, I guess it makes sense, but these are not
 sides in the typical "edge of a triangle" sense. We're not even in spatial
 reality yet. The "side" is like the continuous edge of the loop, there is no
@@ -2911,13 +2909,13 @@ much its distances say of the next round, whether locality and motion come
 out of it, and whether it makes things that last, give parts off or copy
 themselves.
 
-The lessons state in plain words the picture that the growth studies of 17 to
-24 November 2026 support. They build on lessons 2.4 (distance), 4.6
+The lessons state in plain words the picture that the growth studies
+support. They build on lessons 2.4 (distance), 4.6
 (dimension, read from how fast balls grow) and 7.3 (samples and weightings).
 Each claim says whether it is proved, computed or open, and a result is given
 as settled only once its referee has confirmed it.
 
-**What the program is building.** On 23 November 2026 the owner was asked
+**What the program is building.** The owner was asked
 whether the program looks for purely Boolean pieces that, combined, could
 explain how atoms interact or why gravity exists. The answer is a fair
 introduction to the program and to this chapter: "The combined part is the
@@ -3217,7 +3215,7 @@ unlimited, outward from its smallest pieces, a layer at a time. The start is
 the piece we stand on, and a round is how far we have read. On this reading a
 blow-up is the structure getting far richer a little further on, and asking
 whether a growth ends asks whether the whole structure is finite.
-The owner asked, on 19 November 2026, "The structure changes over time? Like
+The owner asked, "The structure changes over time? Like
 it adds more logic to itself?", and accepted this reading: "This makes sense,
 yes" (assumption A110). It rests on the theorem's class; for the explosive
 starts of lesson 8.2 it is open. Chapter 9 gathers what the record holds on
@@ -3281,7 +3279,7 @@ one.
   in one part, and a dead knot lifts the bound even at five, since it joins its
   neighbours without costing them a place.
 
-**Eddies.** The word is the owner's, from 18 November 2026: "It's an
+**Eddies.** The word is the owner's: "It's an
 interesting idea, loops of logic, then like eddies in a river that are shared
 across the universe essentially there are 'core-libs' kind of processing"
 (assumption A109). An **eddy** is a cycle of knots that feeds its own growth,
@@ -3385,7 +3383,7 @@ them after 66 rounds, so what exists at one round grows as the square of r.
 The study's registered reading had labelled those counts undecided, the part
 being too small after 66 rounds for the range it asks for, and its first
 summary said that nothing at one round grows faster than r; that was corrected
-the same day from the study's own records. A probe then read the count from
+from the study's own records. A probe then read the count from
 every live knot on the 23 starts whose births grow fastest (a probe by the
 thread, not a registered study; its headline stages were grown again with a
 second engine). Nine starts have the six-regular count, under every law read.
@@ -3425,8 +3423,8 @@ names nothing by space
 ### 8.3 Reading a blow-up by sampling
 
 **Blow-up is expected.** A growth **blows up** when its count grows faster than
-any polynomial: the eddies and the explosive kind. The owner, on 19 November
-2026, of the explosive kind: "When we talk about 'explosive', isn't that kind
+any polynomial: the eddies and the explosive kind. The owner, of the explosive
+kind: "When we talk about 'explosive', isn't that kind
 of expected? Whenever I envision the intuition, it always blows up. Imagine
 it's a simulation, where the simulator has no limits. That is the kind of
 system we're dealing with. My thought process was that we would need to do
@@ -3583,7 +3581,7 @@ either. A97 stays under challenge.
 
 ### 8.5 Locality before space
 
-**The owner's question.** On 19 November 2026 (Pacific time) the owner asked:
+**The owner's question.** The owner asked:
 "This kind of contradicts Einstein's theory of locality/space if true, right?
 Similar to quantum mechanics, the logic is not spatial yet." This lesson gives
 the program's answer. It is an interpretation, recorded as assumption A112,
@@ -3663,7 +3661,7 @@ comes out at large scales is an open question, not a contradiction.
   rule on its distinctions, so only some combinations are allowed, and a state
   is one allowed combination of all the distinctions at once (lesson 1.1).
 
-**The owner's question.** On 19 November 2026 (Pacific time) the owner asked:
+**The owner's question.** The owner asked:
 "So am I understanding correctly? That I was originally under the assumption
 that there was some 'state' to the world, but in actuality, what we've found in
 practice is that these 'junctions' or developing structure over time works
@@ -3762,10 +3760,10 @@ proved, referee pending, to steer nothing (lesson 8.7).
 
 ### 8.7 Generators and folds of emergence
 
-**The owner's questions.** On 20 November 2026 the owner wrote: "there are
+**The owner's questions.** The owner wrote: "there are
 underlying rules that can exist that don't destroy each other but can create
-things. This is kind of like a generator in conway's game of life." On 23
-November he asked again, and wider: "have we made generators yet? Like
+things. This is kind of like a generator in conway's game of life." Later he
+asked again, and wider: "have we made generators yet? Like
 structures that output other structures that either die, or live, or combine
 with other patterns? This is like logic of cellular biology where you have
 machines printing stuff, and cells reproducing to receive and send signals".
@@ -3871,14 +3869,13 @@ growing. It does not mean two independent objects."
   growth closing or stalling.
 
 **Balance (computed under added rules, referee pending).** Told of that limit, the
-owner wrote on 23 November 2026: "We need to break this limit. I'm imagining a
+owner wrote: "We need to break this limit. I'm imagining a
 system of balance. Similar to life and death cycles." The limit counts packets
 that last, so a thing that ends is not counted by it. And ordinary growth
 already has one kind of balance: in the live roster every knot is live for
 exactly one round, so on a bare ring of five, five knots leave the live roster
 and five join it, in the same holdings, round after round. What it lacks is the
-giving off and the ending. A pilot on the same day looked for them by changing
-the law.
+giving off and the ending. A pilot then looked for them by changing the law.
 
 - **Two added rules give a ring that returns and gives off parts.** First, a
   new knot receives at most three fresh distinctions. Second, a knot that owes
@@ -3962,8 +3959,8 @@ the law.
   is never used, so in the glossary's sense they stay live. The limit above is
   a theorem about ordinary growth, and it stands.
 
-**Anchors and time (the owner's questions; computed, referee pending).** On 23
-November 2026 the owner asked two more things of the ring that returns. "What
+**Anchors and time (the owner's questions; computed, referee pending).** The owner
+asked two more things of the ring that returns. "What
 if some emergent patterns need anchor points, or like a reference. … I think a
 structure like this would just make it easier to join things, but I'm not
 sure." And: "what if 'time' is a device or pattern just like the other ones?
@@ -4033,7 +4030,7 @@ is a gadget for it, but nothing that carries it from one part to another.
   5n, 8n, …, from the start on, for five knots and for seven or more (rings
   of three, four and six are outside the proved class)
   ([RING-CORES-20261119-001](research/RING-CORES-20261119-001/ring_cores.md);
-  recomputed on 23 November 2026 for n = 5, 7, 8, 9, 10 and 11 on two
+  recomputed for n = 5, 7, 8, 9, 10 and 11 on two
   independent growth programs).
 - **A dial.** On a ring of an odd number n of knots, five or more, with k
   knots keeping a leftover distinction, the rate solves x^(n+k) = (x + 1)^k
@@ -4098,8 +4095,8 @@ is a gadget for it, but nothing that carries it from one part to another.
   reader, learner and agent in the record so far were written by hand. Making
   the one who reads out of the growth itself is open (goal G15).
 
-**"Folds of emergence" (the owner's picture; an interpretation).** On 23
-November 2026 the owner asked for this to be recorded: "I'd like to record DNA
+**"Folds of emergence" (the owner's picture; an interpretation).** The owner
+asked for this to be recorded: "I'd like to record DNA
 as something like 'intelligence' as an emergent structure/pattern. So things
 like DNA are kind of like patterns that observe a different pattern but also
 have their own growing patterns. This is generalized, so maybe DNA has some
@@ -4123,7 +4120,7 @@ interpretation that no result settles.
   been shown to take one course or another according to what a second pattern
   is. That is the first test of this picture, and it is open.
 - **Parts that meet again (computed under added rules, referee pending).** A
-  first step was run on 24 November 2026. Under every law above, and under the
+  first step has been run. Under every law above, and under the
   recorded rules in which a birth takes a distinction that is already shared,
   parts that have come apart and share nothing, even through a third part,
   never become one part again; for those rules there is a reason: a birth that
@@ -4206,29 +4203,23 @@ turns rate x into the x′ of x′² = x(x′ + 1) (B316, under G17).
 program's foundation holds that an order of formation alone is not physical
 time ([docs/COMMON_VERBIAGE.md](docs/COMMON_VERBIAGE.md)), and every before and
 after below is a relation in an allowed state or in the record of a growth. The
-program's logic is given no clock. A system is known by the states it allows
-(lesson 1.2), so a whole history of a process whose updates are given is one
-allowed state, and before and after are relations inside it. Every round, tick
-and order of changes in the program's simulations is supplied by whoever runs
-them (assumption A228), and the chapter asks which of them the growth can do
-without. Where lesson 8.1's theorem holds, the rounds count size; with the
+program's logic is given no clock. In the owner's words, "Time doesn't have
+ticks", and time may be "a device or pattern just like the other ones", so that
+"logic is prior to time as well as space" (assumption A228, the sibling of
+A112, which says the same of space, lesson 8.5). A system is known by the
+states it allows (lesson 1.2), so a whole history of a process whose updates
+are given is one allowed state, and before and after are relations inside it.
+Every round, tick and order of changes in the program's simulations is supplied
+by whoever runs them (A228), and the chapter asks which of them the growth can
+do without. Where lesson 8.1's theorem holds, the rounds count size; with the
 rounds gone, what is left of before and after is that a knot comes after its
 parents, and for births made one at a time that order has to be written down.
-On the owner's picture (A228) a clock would then be one more pattern, one in
-which an event recurs, and time what one pattern counts of another's returns.
-The record has such patterns. Whatever counts them is, so far, supplied.
-
-**The owner's words on time.** By 18 November 2026 (Pacific time; the register
-carries 19 November, the date in UTC of the first record that quotes it) the
-owner had put it as "Time doesn't have ticks". On 23 November he asked: "Also,
-what if 'time' is a device or pattern just like the other ones? Are we able to
-simulate things 'over time'? So logic is prior to time as well as space." The
-register holds this as his interpretation, assumption A228, the sibling of
-A112, which says the same of space (lesson 8.5). The same evening he refined it
-into a priority among updates, assumption A229 (lesson 9.5). On 24 November
-2026 (Pacific time; the record's tickets carry 25 November, its date in UTC) he
-asked for this chapter, and whether time is itself a fold of emergence (lesson
-9.6). All of these are interpretations, and no result settles them.
+On the owner's picture a clock would then be one more pattern, one in which an
+event recurs, and time what one pattern counts of another's returns. The record
+has such patterns. Whatever counts them is, so far, supplied. The owner also
+reads time as a priority among updates (assumption A229, lesson 9.5) and asks
+whether it is itself a fold of emergence (lesson 9.6). These are
+interpretations, and no result settles them.
 
 **What this chapter adds.** No new result. Every statement stands in a record.
 Where an earlier lesson gives it (lessons 1.3, 2.4, 5.3, 7.3, 8.1, 8.6 and
@@ -4269,7 +4260,7 @@ fixed rule of earlier ones (the literature's cellular automata):
   value that is not constant has no knot with the start exactly when it is a
   single "and", or a single "or", of starting values, each possibly negated.
   The study takes this to be the boundary between two places and three of
-  Chapter 3, across time (reading). A narrowing the same day: such a process
+  Chapter 3, across time (reading). A narrowing: such a process
   can still knot later updates together, with no starting cell in the knot.
   Rule 128, each cell the "and" of three, does, because it never makes the
   pattern 1 0 1.
@@ -4284,7 +4275,7 @@ fixed rule of earlier ones (the literature's cellular automata):
 **Counted length across time.** Lesson 2.4 gives the record's other use of
 time. In networks of rings of cells, each ring running the literature's rule
 60, the record takes a count of contacts along a route as a magnitude, by the
-owner's ruling of 8 November 2026: "I think yes, length can count as magnitude"
+owner's ruling: "I think yes, length can count as magnitude"
 (assumption A40, confirmed by a test frozen before it ran). The glossary calls
 it counted length. From it the record built two exact forms, proved for every
 network of that kind: the most disjoint cuts that separate two rings of cells,
@@ -4335,8 +4326,8 @@ size, each part of a joined start keeps exactly the growth it has alone, and
 or more of the joined parts (computed, and refereed for two of the three
 joins; same study).
 
-**One fixed structure, smallest pieces first (reading).** The owner asked on 19
-November 2026: "The structure changes over time? Like it adds more logic to
+**One fixed structure, smallest pieces first (reading).** The owner asked:
+"The structure changes over time? Like it adds more logic to
 itself?" On the reading he accepted, "This makes sense, yes" (assumption A110),
 nothing has to change over time: the rounds go through one fixed structure,
 perhaps unlimited, by size, smallest pieces first. The start is the piece taken
@@ -4610,7 +4601,7 @@ by a pattern that no one supplies, is lesson 9.6's question.
 
 ### 9.5 Priority: which birth is made first
 
-**The owner's picture of priority.** On 23 November 2026 the owner wrote:
+**The owner's picture of priority.** The owner wrote:
 "Also, for the time thing, I feel like it's not really like a sequencer, but
 more like a priority system, if that makes sense. How often updates happen
 given some property (maybe mass impacts that). In fact, it's kind of like black
@@ -4624,8 +4615,7 @@ on is not updated. No claim is made about mass, black holes or physics. In the
 guide a priority says which of the parts or births that are ready goes first
 (glossary, "Priority").
 
-**His question of 24 November.** On 24 November 2026 (Pacific time; the
-record's tickets carry 25 November, its date in UTC) the owner asked: "Wait so
+**His question.** The owner then asked: "Wait so
 these computations themselves can have prioritization, and that's essentially
 the same thing as time? Just like prioritization?" The record's cases come
 first, and the reading given to him after them.
@@ -4702,10 +4692,9 @@ births per tick rise as more is joined to it (B320). None is known.
 
 ### 9.6 Is time a fold of emergence?
 
-**His question.** On 24 November 2026 (Pacific time; the record's tickets carry
-25 November, its date in UTC) the owner asked: "Is time itself a fold like
+**His question.** The owner asked: "Is time itself a fold like
 intelligence/life through DNA?" A fold of
-emergence, his phrase of 23 November 2026 (assumption A223; lesson 8.7), would
+emergence, his phrase (assumption A223; lesson 8.7), would
 be a pattern with three properties: the rules make it and nobody places it;
 what it makes depends on another pattern; and it makes a pattern of its own.
 The answer below is a reading, set against the record; the register keeps it in
@@ -4852,7 +4841,7 @@ one-parent birth also takes a distinction its parent shares (lessons 9.5 and
 
 ### 10.1 What a fold of emergence would be, and the nearest things in the record
 
-**The picture he asked to record.** On 23 November 2026 the owner asked for a
+**The picture he asked to record.** The owner asked for a
 picture to be recorded, given in full in lesson 8.7. In it things like DNA
 "are kind of like patterns that observe a different pattern but also have
 their own growing patterns", and "structures like DNA or intelligence should
@@ -4943,8 +4932,7 @@ test for that property.
 
 ### 10.2 The with-and-without test: whether one part's course depends on another
 
-**The test in his words.** By 24 November 2026 (Pacific time) the owner had
-set it: "run each start twice, once with the second part present and once
+**The test in his words.** The owner set it: "run each start twice, once with the second part present and once
 without it. A part reads another when its course differs between the two
 runs." This is the guide's one sense of "reads" for a part, and it is his. The
 study of parts that meet again (lesson 10.3) fixed how to run it before
@@ -5028,8 +5016,7 @@ that the law is the model's
 
 ### 10.3 Parts that meet again, under laws added by hand
 
-**The study and its question.** By 24 November 2026 (Pacific time) the owner
-had asked whether some growth law lets parts that have come apart meet again.
+**The study and its question.** The owner asked whether some growth law lets parts that have come apart meet again.
 Before the design was frozen he added: "There's no way it wouldn't work. It
 might just cost complexity. Programming is a thing in our reality, there
 should be a way to reference information like joining 2 different clusters of
@@ -5119,7 +5106,7 @@ here is yet a property of the model".
 
 ### 10.4 Two studies in design: a made copier and a made count of returns
 
-**A copier is a pattern.** On 24 November 2026 the owner wrote: "copying would
+**A copier is a pattern.** The owner wrote: "copying would
 not be a law. Laws are for how the knots interact. A copy function, like other
 functions, would be a logical structure that has a meeting pattern with other
 things. And we would need to prove that the copy/paste pattern can be
@@ -5131,9 +5118,8 @@ makes." The register holds this as assumption A244, a working premise
 leave two of the second; the part that copies itself leaves two of itself.
 
 **The first ticket: no copier (computed, referee pending).** The study of a
-made copier, MADE-COPIER-20261125-001, froze its first ticket on the evening
-of 24 November 2026 (Pacific time; 25 November in UTC), before its code was
-written
+made copier, MADE-COPIER-20261125-001, froze its first ticket before its code
+was written
 ([its claim](research/MADE-COPIER-20261125-001/claim.md);
 [its pre-registration](research/MADE-COPIER-20261125-001A/preregistration.md)).
 The law is fixed before any pattern: the taking rule that takes from a knot the
@@ -5154,10 +5140,9 @@ which second pattern is there, in 367 of 2,304 pairs of runs, under rules that
 choose by name
 ([the first ticket's result](research/MADE-COPIER-20261125-001A/results.md)).
 
-**Consume and output two.** Later the same evening, before the freeze, the
-owner wrote: "I have a trick maybe. What if instead of 'copying', we consume
-and output 2?" (24 November 2026, Pacific time; the record's tickets carry 25
-November). It changes what counts as two. The two patterns would become one
+**Consume and output two.** Before the freeze the owner wrote: "I have a trick
+maybe. What if instead of 'copying', we consume and output 2?" It changes what
+counts as two. The two patterns would become one
 part, births with a parent in each would use up the second pattern's loose
 distinctions, the second pattern's own descendants would end, and the two
 afterwards would descend from both patterns; the first ticket counts only two
@@ -5189,8 +5174,7 @@ pattern that leaves two of one form.
 **An inkling that no copier is general.** "the interesting fact here is that
 it's actually impossible to generalize a 'copier' for all logic structures. It
 might be the case that some logic models are able to over-write the
-instructions of the copier and break out." (24 November 2026, Pacific time;
-the record's dates carry 25 November.) It is assumption A248, a working
+instructions of the copier and break out." It is assumption A248, a working
 premise kept apart from the evidence. The frozen claim registers it as a
 reading (its section 6): no first pattern, law and stated rule leaves two of
 every member of a registered class; since the classes are finite, failures
@@ -5238,7 +5222,7 @@ made a pattern of its own from what it met.
 
 - **B317's remainder (goal G15).** A part whose course depends on what the
   other part is, and that makes a pattern of its own from it; neither was
-  found (B317's note of 25 November). Two directions the study deferred bear
+  found (B317's note). Two directions the study deferred bear
   on it: vary the second part more widely under the rule that takes from a
   knot the parent meets, stopping at one such dependence or at a reason that
   only whether the other grows can matter; and find a base law under which
@@ -5315,8 +5299,7 @@ made a pattern of its own from what it met.
   the form failed: two or more fates show in 37 studies of 90. What is open
   (a sub-goal under G15): the same between two parts the growth made,
   meeting through a knot the growth made.
-- **B326, an index made by the growth (G15).** The owner, by 24 November 2026
-  (Pacific time): "This is why we may need 'function-like' logical operations
+- **B326, an index made by the growth (G15).** The owner: "This is why we may need 'function-like' logical operations
   where we can reference/sample logic. These are basically meeting patterns
   that are complex in nature. Maybe even so complex as to the indexing
   operation being logic based iterators rather than incremental. So like maybe
@@ -5328,8 +5311,8 @@ made a pattern of its own from what it met.
   outside. In the laws of lesson 10.3 that is which distinction a birth takes,
   and every convention for it is supplied. One of them, by count, takes a
   number from the structure but uses it as a position in the list of eligible
-  distinctions sorted by the supplied names (the study's results, dated note
-  of 25 November). In the golden-ratio eddy a knot's own holdings already give
+  distinctions sorted by the supplied names (the study's results, in a later
+  note). In the golden-ratio eddy a knot's own holdings already give
   the round it was made in to within three values, and no rule reads them
   ([what a reference is](research/RING-IN-BALANCE-20261123-001B/results.md),
   computed, referee pending). The first step as filed: fix the taken
@@ -5379,14 +5362,14 @@ that earlier records used in two senses.
 - **Distinction.** Two alternatives of which exactly one holds: one bit
   (lesson 1.1). A distinction is open when it is free on its own, taking
   both values; each loop brings an open distinction to a knot. The intuition:
-  the least thing that could be otherwise. In the owner's words (25 November
-  2026) "it's a choice" between 00/11 and 01/10: of two things, whether they
+  the least thing that could be otherwise. In the owner's words "it's a
+  choice" between 00/11 and 01/10: of two things, whether they
   go together or go opposite. Each option is a pair of opposite states, which
   is what a loop shows, and in the parity knot every distinction is this
   choice for the other two (lessons 1.1 and 2.1). Everything in the guide is built
   from distinctions and from rules about them, and nothing else is assumed,
-  not even a place to put them. The owner's founding premise, in his words (17
-  November 2026): "Distance is the only form of information. That's the entire
+  not even a place to put them. The owner's founding premise, in his words:
+  "Distance is the only form of information. That's the entire
   basis of the 'this versus that' distinction in the smallest emergent unit"
   (lesson 2.4: an interpretation, under challenge as assumption A97).
 - **Joint state.** A value for every variable, written as a string such as 110
@@ -5608,18 +5591,17 @@ that earlier records used in two senses.
   every value is the same as shifting it by half its period. The intuition: a
   repeat the law makes, not one drawn into the meeting pattern. Under
   not-all-equal no harmony has an odd period up to 29, or at 31
-  or 37, and one has period 61 (corrected 2026-11-12). The owner has also
-  used the word for a relation in which incommensurable parts cancel (22
-  October 2026), for drawn polygons whose ratio of perimeter to diameter is
-  rational, against "a ratio that continues" (7 November 2026), and for
-  "something like natural numbers" (11 November 2026; lesson 7.3), so the
+  or 37, and one has period 61 (corrected). The owner has also used the word
+  for a relation in which incommensurable parts cancel, for drawn polygons
+  whose ratio of perimeter to diameter is rational, against "a ratio that
+  continues", and for "something like natural numbers" (lesson 7.3), so the
   reading is one assumption about his word, not its only sense.
 - **Stitch.** A knot of one fixed kind, at every shift, holding distinctions
   of two or three harmonies, such as one on (a_{i+s}, a_{i+t}, b_{i+u});
   harmonies with stitches are **stitched**. The members' **lags** s, t, u
   count only up to a common addend; a stitch with all lags equal, such as
   (a_i, b_i, c_i), is **unlagged**, and any other is **lagged** (bases within
-  bases, 12 November 2026). (They overlap instead when a_i and b_{i+s} are one
+  bases). (They overlap instead when a_i and b_{i+s} are one
   shared distinction.) The **offset** of two orbits of periods p and q is the
   shift between their states counted modulo gcd(p, q), the literature's
   relative phase; a stitch keeps or removes each offset whole. The intuition:
@@ -5636,7 +5618,7 @@ that earlier records used in two senses.
   The intuition: with the block's own knots between copies, a part is pinned
   across the whole pattern exactly when the block cannot spare its
   distinction, that is, when no state of the block survives flipping it alone
-  (proved: the pinning theorem, 12 November 2026); the pin is always an
+  (proved: the pinning theorem); the pin is always an
   equality, carried one knot at a time.
 - **Knot substitution.** Each knot is replaced by a copy of a **gadget** (the
   complexity literature's word), a pattern glued to the knot at its three
@@ -5646,8 +5628,7 @@ that earlier records used in two senses.
 - **Tie extent.** Of a distinction, the most steps apart to a distinction
   tied to it: how far fixing it forces a value.
 - **Locked.** Copies are locked when they are equal, place by place, in every
-  allowed state: one copy then fixes all of them (which loops lock, 12
-  November 2026).
+  allowed state: one copy then fixes all of them (which loops lock).
 - **Copy shifts; unmixed and mixed knots.** Copies of a harmony placed at the
   pairs of whole numbers (r, c), repeated n × m; the two shifts of this
   arrangement are the **copy shifts** e₁ and e₂, always told apart from the
@@ -5656,7 +5637,7 @@ that earlier records used in two senses.
   holds (x, x + e₂, x + e₁), one step along each (the literature's three-dot
   shape of Ledrappier's law). The intuition: unmixed knots make rows and
   columns that are rings and nothing more; the mixed knot is the smallest that
-  ties both shifts at once (locks across two shifts, 12 November 2026).
+  ties both shifts at once (locks across two shifts).
 - **Stepped state.** A state of copies along two shifts in which each step
   along a copy shift applies one fixed symmetry of the harmony (a shift or a
   flip of every value): X(r, c) = g^r h^c u, the literature's constant
@@ -5675,7 +5656,7 @@ that earlier records used in two senses.
   law. A **permutive sub-stitch** is a set of allowed triples in which, for
   every two members from its set of states, exactly one third completes a
   triple (the literature's quasigroup or permutive law). A harmony's stitch
-  has none (lines in the increments, 12 November 2026).
+  has none (lines in the increments).
 - **Lifted phase; step pairs; mean steps.** On copies of one orbit along two
   copy shifts, a **lifted phase** counts each copy's shift from a fixed state
   in whole numbers, so that the steps around any four mutually neighbouring
@@ -5697,7 +5678,7 @@ that earlier records used in two senses.
   relation forces the third make all its copies known from count 0. **Fixed
   but unreached**: fixed, not flip-frozen, not reached; **full fixing**: every
   count fixed by count 0 and some count not flip-frozen (a parity knot among
-  stitched copies, 12 November 2026).
+  stitched copies).
 - **Shortcut.** A pair of distinctions whose bond distance is less than their
   steps apart plus one (lesson 4.7). The endless six-regular weave has none;
   some periodic bases that overlap have many.
@@ -5742,7 +5723,7 @@ that earlier records used in two senses.
 - **Round.** One step of propagation in an atom pattern whose held distinctions the outside sets to 1: every atom
   whose two demanders are forced forces the distinction it demands (the literature's synchronous unit propagation).
   The count of rounds is the height of the shallowest derivation (lesson 5.3), as `SEQUENTIAL-WALL-20261116-001`
-  found on 16 November 2026. In growth (lesson 8.1), a round is one application of the joining rule to every live
+  found. In growth (lesson 8.1), a round is one application of the joining rule to every live
   junction at once; inside the theorem's class a junction's round is its cluster's size less one.
 - **Phase.** One stage of the forcing law (lesson 5.3): every atom with a forced demander is read as the two-place rule
   from its other demander to what it demands, and everything reachable along those rules is forced at once. A distinction's
@@ -5766,7 +5747,7 @@ that earlier records used in two senses.
   needs ⌈σ/w⌉ phases for Strahler number σ (the literature's register allocation), and the keep law reaches in one
   phase what w black pebbles with sliding reach (the literature's pebble game). The intuition, in the owner's words:
   carrying is holding several strands, and keeping lets one strand split into two that later rejoin; splitting pays
-  only where strands rejoin (`CARRY-STRANDS-20261116-001`, 16 November 2026).
+  only where strands rejoin (`CARRY-STRANDS-20261116-001`).
 - **Drawn knot pattern.** A knot pattern given together with a drawing on a
   surface, which earlier records called a knot space: every knot holds three
   distinctions and every distinction lies in three knots, and the drawing is a
@@ -5839,12 +5820,12 @@ that earlier records used in two senses.
   distinctions are those it alone holds when it is made. Growth is counted in
   rounds, in births or, in lesson 7.3, in moves; every count names its unit.
   Not the process line's "born" and "birth rule" for bands and cells of a
-  network of rings of cells (9 November 2026), kept in that record's words.
+  network of rings of cells, kept in that record's words.
 - **Junction; parent.** The growth records' word for a knot of a growing
   structure: the knots of the start and every knot a growth law makes are its
   junctions, and lesson 8.1 says "a junction is simply a knot". In the growth
-  lessons the two words name the same things, and the owner has kept both (24
-  November 2026, Pacific time). "Junction" is the older word, from parity
+  lessons the two words name the same things, and the owner has kept both.
+  "Junction" is the older word, from parity
   growth by the cubic study's joining rule (`CUBIC-FROM-A-KNOT-20261117-001`),
   where each junction is placed by the rule on loose distinctions of earlier
   junctions and some fresh ones; lesson 8.1 and the entries below keep it, and
@@ -5927,7 +5908,7 @@ that earlier records used in two senses.
   a ring. A leftover distinction is an open distinction that a knot keeps
   beyond what its joins use (lesson 8.1); the growth records call it a spare,
   a word the guide keeps for distinction substitution.
-- **Eddy.** The owner's word (18 November 2026, assumption A109): a cycle of
+- **Eddy.** The owner's word (assumption A109): a cycle of
   knots that feeds its own growth, so that the count is multiplied by about
   the same rate each round. Going once around the cycle multiplies the count
   by its **lap weight** W, and the rate x solves W(1/x) = 1 (lesson 8.2). The
@@ -5946,8 +5927,7 @@ that earlier records used in two senses.
   octahedron). Runaway growth: each round's count is about two to the power of
   half the one before (the literature's iterated exponential), as in a start
   whose live knots are partnered (lesson 8.2).
-- **Generator; packet; release.** The owner's word generator (20 and 23
-  November 2026): a start that keeps making separate things. In the record's
+- **Generator; packet; release.** The owner's word generator: a start that keeps making separate things. In the record's
   test (assumption A125) a **packet** is a finite set of knots made in one
   round whose later members take every parent from the packet's own earlier
   members; it is **released** in the round from which that holds, which is
@@ -5959,8 +5939,7 @@ that earlier records used in two senses.
   Life, which makes one fixed pattern each time; under ordinary growth no start
   is known to keep releasing lasting packets of one fixed width, and in the
   class where every knot can be reconstructed from the start none can.
-- **Fold of emergence.** The owner's phrase (23 November 2026, assumption
-  A223), always written in full and in his words: a pattern that the rules make,
+- **Fold of emergence.** The owner's phrase (assumption A223), always written in full and in his words: a pattern that the rules make,
   where what it makes depends on another pattern, and that makes a pattern of
   its own,
   as he pictures DNA and intelligence. An interpretation. Under laws added by
@@ -5972,9 +5951,9 @@ that earlier records used in two senses.
   10.1 and 10.3). It is not the
   two-fold of a two-fold weave, which counts knots, and the guide makes no
   claim about living things.
-- **Copier.** The owner's word (24 November 2026: "a copier is a pattern the
-  growth makes", assumption A244 and sub-goal B327; and "a 'copier'" in his
-  inkling of the same evening, assumption A248). In the guide: a pattern the
+- **Copier.** The owner's word ("a copier is a pattern the growth makes",
+  assumption A244 and sub-goal B327; and "a 'copier'" in his inkling,
+  assumption A248). In the guide: a pattern the
   growth makes that meets a second made pattern and leaves two of the second.
   A copier is a pattern, never a law: the law (which knots join, what a new
   knot receives, what a short knot does) is supplied and named separately. A
@@ -5995,8 +5974,8 @@ that earlier records used in two senses.
 - **Ancestral common knot; ancestor-taking.** A common knot of two members
   that is also a recorded ancestor of both and not the parent of both: the
   knot through which two sets of descendants are joined. The owner's phrase
-  for it was "axis point", and afterwards perhaps "access point" (24 November
-  2026, assumption A241). A **taking rule** is a rule added to a growth law
+  for it was "axis point", and afterwards perhaps "access point" (assumption
+  A241). A **taking rule** is a rule added to a growth law
   under which a birth also takes a distinction that is already shared, by a
   supplied convention for which: rules R and Q take only what a parent holds,
   and the rule that takes from a knot the parent meets takes from no ancestor
@@ -6020,8 +5999,7 @@ that earlier records used in two senses.
   it takes and the number of its fresh distinctions, and which sets of their
   members one knot meets, up to a renaming of the knots made after round s. A
   birth's demand is recorded separately and is not part of the course. The
-  **with-and-without test** is the owner's test (by 24 November 2026, Pacific
-  time: "run each start twice, once with the second part present and once
+  **with-and-without test** is the owner's test ("run each start twice, once with the second part present and once
   without it. A part reads another when its course differs between the two
   runs") as one study measured it (assumption A246, a measure; the records'
   "paired test"). One start is grown under one law, and grown again with every
@@ -6044,9 +6022,9 @@ that earlier records used in two senses.
   (assumption A150, a scaffold). "Made" speaks of the pattern only: the law,
   the start and whatever counts the ticks are named separately, and in the
   record so far whatever counts a made clock's ticks is supplied. A tick is
-  the event, not the count of it. The owner's words: "Time doesn't have ticks"
-  (by 18 November 2026, Pacific time); "what if 'time' is a device or pattern
-  just like the other ones?" (23 November 2026, assumption A228).
+  the event, not the count of it. The owner's words: "Time doesn't have ticks";
+  "what if 'time' is a device or pattern just like the other ones?"
+  (assumption A228).
 - **Return; period.** A part of the live roster returns at a later round when
   the members then descending from it, a member that waits counting as its own
   descendant, include a part that is the same as it: the same up to a renaming
@@ -6060,7 +6038,7 @@ that earlier records used in two senses.
   recurs while each packet is larger than the last is not a return. Not the
   foundation's "native return artifact" and "causal return handoff", written
   in full, which are a runner's return of control.
-- **Priority.** The owner's word (23 November 2026, assumption A229): "not
+- **Priority.** The owner's word (assumption A229): "not
   really like a sequencer, but more like a priority system ... How often
   updates happen given some property". In the guide: a rule that says which of
   the parts or births that are ready goes first, by a named property of them
@@ -6105,7 +6083,7 @@ that earlier records used in two senses.
   letter by letter (the literature's automatic sequence). The intuition: a
   block is a piece the pattern can be solved in, and a descent is how a few
   distinctions carry the top down without the rest of the level
-  (`DIRECT-REACH-20261115-001`, 16 November 2026).
+  (`DIRECT-REACH-20261115-001`).
 - **Pair projection; product; two-orbit bond; exposed; unexposed dependence.**
   The **pair projection** of two orbits is the projection of the allowed
   states onto them. It is a **product** when every pairing of the two
@@ -6119,7 +6097,7 @@ that earlier records used in two senses.
   orbit's own constraint stands in the way. The intuition: a two-orbit bond
   is a bond that two orbits far apart hold between themselves alone, and an
   unexposed dependence binds them too, but only a larger set of addresses
-  can show it (`KEEP-REACH-20261117-001`, 17 November 2026).
+  can show it (`KEEP-REACH-20261117-001`).
 - **Stem.** For an orbit at one level and an orbit some levels below it, the
   stem of depth d is the upper orbit together with the lower orbit's
   ancestor orbits at the d levels below the upper one: the start of the way
@@ -6128,7 +6106,7 @@ that earlier records used in two senses.
   top to the lower orbit, as a two-orbit bond does. Stems of depth 2 hold the
   top in three patterns (ten descriptions) where no bond inside two orbits does: their unexposed
   dependence shows once the orbits just below the top are held too
-  (`CARRIER-20261117-001`, 17 November 2026).
+  (`CARRIER-20261117-001`).
 - **Bracketing; bare bracketing.** A line (the one-order base) of n distinctions presented by the fewest betweenness knots,
   n − 2 of them, is presented exactly when its knots form a **bracketing**: every knot B(a, c, b) has c between a and b, its
   **halves** are the line's steps from a to c and from c to b, and each knot other than the **ends' knot** (the one holding
@@ -6138,8 +6116,7 @@ that earlier records used in two senses.
   or rooted binary tree, drawn as a triangulation of a polygon rooted at a marked side; the bare one is the unlabelled rooted
   binary tree. The intuition: how the knots meet, read against the line, is a hierarchy of which knot lies within which, and the
   growth that reads which knots meet reads this hierarchy: a fill makes a knot's halves cross, and a second fill keeps two orders
-  only when its knot is step-disjoint from the first or joins it to a knot it shares a pair with (`MEET-ORDERS-20261118-001`,
-  18 November 2026).
+  only when its knot is step-disjoint from the first or joins it to a knot it shares a pair with (`MEET-ORDERS-20261118-001`).
 - **Same way, other way.** For knots χ within ν within π of a bracketing, χ lies in ν **the same way** when it sits in ν at the
   same end as ν sits in π, and **the other way** otherwise. With the bare bracketing these choices make up the whole bracketing
   up to mirror image. The shared distinction of the line of five's three knots sits at an end when the chain lies the same way and
@@ -6222,11 +6199,11 @@ that earlier records used in two senses.
   | junction | a knot of a growing structure, the start's knots included: the growth records' word, kept beside "knot" as a second word for the same things in the growth lessons (lesson 8.1; glossary, "Junction; parent") | (no other sense) |
   | law | a rule put everywhere in a pattern (lesson 4.6) | a regularity the allowed states force: bond |
   | smallest bond | the bond with the fewest distinctions (lesson 4.6) | the knot that excludes the fewest states: weakest bond |
-  | bond distance | read from the allowed states (lesson 4.6) | a count of knots or co-knotted pairs in a chain: steps apart (bases within bases and nesting by substitution, 12 November 2026, corrected) |
+  | bond distance | read from the allowed states (lesson 4.6) | a count of knots or co-knotted pairs in a chain: steps apart (bases within bases and nesting by substitution, corrected) |
   | network | a network of loops (lesson 4.5) | a pattern of knots: knot pattern; the foundation's contact network, written in full |
   | space | what the program hopes to build, with native definitions (lesson 7.2) | three-fold space: three-regular contradiction; knot space: drawn knot pattern |
   | dimension | how fast balls grow (lesson 4.6) | the dimension of a hole or of a complex: the literature's, marked as such |
-  | distance | (unqualified, only in the owner's words: his founding premise, lesson 2.4, whose reach he has yet to settle) | the one touch of a knot: minimal contact-distance; read from the allowed states: bond distance; a count on the meeting pattern: steps apart; contacts along a route across time: counted length (A40), not the quantity THEORY.md's claim "Counted length" (1 November 2026) names, the logarithm of a count of states, read as a count; between states: Hamming distance, the literature's; along paths, or a metric: not yet built |
+  | distance | (unqualified, only in the owner's words: his founding premise, lesson 2.4, whose reach he has yet to settle) | the one touch of a knot: minimal contact-distance; read from the allowed states: bond distance; a count on the meeting pattern: steps apart; contacts along a route across time: counted length (A40), not the quantity THEORY.md's claim "Counted length" names, the logarithm of a count of states, read as a count; between states: Hamming distance, the literature's; along paths, or a metric: not yet built |
   | place | an argument position, as in three-place (lesson 3.2) | where a board holds a value: cell; the index of a stitch's members: lag (unlagged stitch, formerly "stitch at one place"); a block's position: its distinction (spare distinction, formerly "loose place") |
   | point | the owner's moving point, a state with a charge-like strength (his picture of learning), and otherwise the literature's | a variable: distinction |
   | line | (only in the owner's words, in the literature's names, such as the number line and a Fano line, and in a line of work, such as the process line and the learning line) | a three-place knot: knot; an open chain: chain; knots each a parent of the next: descent |
@@ -6248,7 +6225,7 @@ that earlier records used in two senses.
   | step | (never alone as a unit of count; always a named kind) | co-knotted pairs between distinctions: steps apart (lesson 4.7); from a cell to a neighbouring cell: a board's step (lesson 4.6); from a knot to a parent: parent step; from a knot to a knot sharing a distinction with it: holder step; one update of every cell of an automaton: an update, a tick of its supplied clock; one birth or one part's round, or nothing: move |
   | lag | the shift of a stitch's member, counted up to a common addend (Stitch) | the process line's count of an automaton's updates since its first row (lesson 2.4's networks of rings of cells; assumptions A40, A41, A56): updates |
   | choice | a rule saying that when something exists, one of several things must (lesson 4.2) | which already shared distinction a birth takes (the study of parts that meet again's "the choice"; assumptions A231, A236, A245): which distinction a birth takes; the owner's "it's a choice" for a distinction (lesson 1.1), kept in his own words only: two alternatives of which one holds |
-- **Older records.** Records written before 11 November 2026 use the older
+- **Older records.** Records written before this glossary use the older
   words, and a record whose checksum another record pins (a manifest, a result
   or a discovery) is never edited, so it keeps them. Read such a record with the
   table above: a line of a triple system is a knot, a point a distinction, an

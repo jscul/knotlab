@@ -90,7 +90,7 @@ Evidence: [the thesis](docs/FOUNDATIONAL_THESIS.md#emergence-atomic-topology-and
 
 **Premise** · 2026-11-17
 
-The program's owner, on 17 November 2026: "Distance is the only form of information.
+The program's owner: "Distance is the only form of information.
 That's the entire basis of the 'this versus that' distinction in the smallest
 emergent unit." It was, he said, "the entire premise of 'space from logic'",
 and it "plays in with everything, like the dimensions from logic too". It is
@@ -239,7 +239,7 @@ Evidence: [the thesis](docs/FOUNDATIONAL_THESIS.md#protected-modal-plurality-int
 
 **Reading** · 2026-11-12
 
-John Cullen, on 11 November 2026 (Pacific time): "Yes, there is no choice. I
+John Cullen: "Yes, there is no choice. I
 feel like we keep going back to this being a choice. It isn't. It's just
 random." Of our reality: "It is indifferent. It's is purely coincidental."
 This is the co-reality reading applied to which knots share which
@@ -1048,7 +1048,7 @@ Evidence: [Intuitions, lesson 7.3](INTUITIONS.md#73-every-meeting-pattern-none-c
 
 **Reading** · 2026-11-19
 
-John Cullen, on 18 November 2026 (Pacific time): "It's an interesting idea,
+John Cullen: "It's an interesting idea,
 loops of logic, then like eddies in a river that are shared across the
 universe essentially there are 'core-libs' kind of processing." This is his
 direction, not a result. Read in the program's terms, the loops of knots that
@@ -1085,7 +1085,7 @@ state of the block can flip alone, pinned by equality, the same value
 everywhere they reach; so for odd periods a harmony is exactly a block that,
 nested, pins everything. Open: pins that vary (a twisted binding), and which
 reading John meant. Asked whether the series are bound beside or inside one
-another, he said on 12 November: "We need to suss this out", adding that a
+another, he said: "We need to suss this out", adding that a
 loop's "side" is not a drawn edge: "there is no limit in what it's in contact
 with, so the "sides" can overlap where one side can touch many other sides,
 it's not a 1:1 thing."

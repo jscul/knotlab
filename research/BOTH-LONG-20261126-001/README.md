@@ -7,6 +7,15 @@ growing with size; and on such a structure, is there a native reading under whic
 change each other, so that a relative sign is set by the structure? Computed; advisor consulted read-only in the
 repository ([question](advisor_question.md), [answer](advisor_answer.md)); referee pending.
 
+
+> **Refereed (R1, [report](referee-R1/report.md)): confirmed with fixes, no Block.** All 50 ring preparations and 44 from six
+> sampled starts matched. **Narrowings:** the ring's size bounds the smaller distance (eight knots, round four: 8/11 free,
+> 9/8 pinned); of the 350 sampled starts, 153 reached round four and 75 ever had a class; **"a start with a long cycle is
+> rare" is wrong**: cycles of five or more knots occur in 99 of 200 census starts and 85 of 150 extension starts, yet their
+> distances stay small, so a long cycle in the start is not enough; the old odd ring attains both minima but so do other
+> sets; one sampled start had 128 ties through a distinction, over the cap of 64 (keeping every tie reproduced its
+> distances); a recorded reading does use the class character as a supplied weighting; with loose values pinned at
+> nonzero values a positive class can still be singled out. Logged in `docs/CORRECTIONS.md`.
 ## How the distances are read ([`distances.py`](distances.py))
 
 Under parity a structure is a graph: knots as vertices, each shared distinction an edge between its two holders, and,
@@ -34,7 +43,8 @@ four or more).
 - **Sampled starts** (seed 20261127: 200 census starts of three to five knots and 150 of the six-to-eight-knot extension,
   grown to round 4; `census_dist.jsonl.gz`, `extension_dist.jsonl.gz`): the largest min(read, change) is 4, at one
   start, the four-knot ring itself; otherwise 3 or less. Under these weightings a start with a long cycle is rare, and
-  without one growth does not lengthen both distances.
+  without one growth does not lengthen both distances *(R1: wrong; long cycles are common in the sample, and growth still
+  does not lengthen both distances there)*.
 - **On odd rings the old ring is its own conjugate.** The least class change is the old ring r itself, and it is also a
   class label (r overlaps every move evenly and some allowed change oddly), from the round both distances reach n (pinned:
   from round 1); r overlaps itself oddly (n odd), so changing by r flips the parity read of r. On even rings the least

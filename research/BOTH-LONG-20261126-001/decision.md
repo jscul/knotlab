@@ -4,6 +4,15 @@ Epic `BOTH-LONG-20261126-001` (G18, at the coordinator's go-ahead after `SECOND-
 A291), closed 26 November 2026. A check by the thread: computed, with an argument; advisor consulted read-only in the
 repository; referee pending. [The note](README.md)
 
+
+> **Refereed (R1, [report](referee-R1/report.md)): confirmed with fixes, no Block.** All 50 ring preparations and 44 from six
+> sampled starts matched. **Narrowings:** the ring's size bounds the smaller distance (eight knots, round four: 8/11 free,
+> 9/8 pinned); of the 350 sampled starts, 153 reached round four and 75 ever had a class; **"a start with a long cycle is
+> rare" is wrong**: cycles of five or more knots occur in 99 of 200 census starts and 85 of 150 extension starts, yet their
+> distances stay small, so a long cycle in the start is not enough; the old odd ring attains both minima but so do other
+> sets; one sampled start had 128 ties through a distinction, over the cap of 64 (keeping every tie reproduced its
+> distances); a recorded reading does use the class character as a supplied weighting; with loose values pinned at
+> nonzero values a positive class can still be singled out. Logged in `docs/CORRECTIONS.md`.
 ## What stands
 
 1. **Ordinary growth makes a class with both distances long, at the start ring's length.** Under parity, a ring of n

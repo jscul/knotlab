@@ -1,0 +1,70 @@
+{
+ "free_counts_by_old_parity": {
+  "0": 16384,
+  "1": 16384
+ },
+ "nonzero_pins": [
+  23,
+  24
+ ],
+ "pinned_counts_by_old_parity": {
+  "0": 32,
+  "1": 32
+ },
+ "tied_pair_control": {
+  "allowed": [
+   "000",
+   "001",
+   "110",
+   "111"
+  ],
+  "binding": true,
+  "coexistence": true,
+  "contact": "c",
+  "erasure": "forgetting",
+  "invisible_in_parts": false,
+  "is_knot": false,
+  "loops": [
+   "A",
+   "B"
+  ],
+  "loss_on_erasure": false,
+  "minimum_width": 2,
+  "notes": [
+   "with the contact c forgotten, A=0, B=1 is still excluded, so the loops are tied without it"
+  ],
+  "pairwise_definable": true,
+  "variables": [
+   "A",
+   "B",
+   "c"
+  ]
+ },
+ "whole_parity_control": {
+  "allowed": [
+   "000",
+   "011",
+   "101",
+   "110"
+  ],
+  "binding": true,
+  "coexistence": true,
+  "contact": "c",
+  "erasure": "forgetting",
+  "invisible_in_parts": true,
+  "is_knot": true,
+  "loops": [
+   "A",
+   "B"
+  ],
+  "loss_on_erasure": true,
+  "minimum_width": 3,
+  "notes": [],
+  "pairwise_definable": false,
+  "variables": [
+   "A",
+   "B",
+   "c"
+  ]
+ }
+}

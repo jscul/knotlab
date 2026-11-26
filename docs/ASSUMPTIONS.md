@@ -71,7 +71,7 @@ evidence: results and their status come from the records each entry links.
 | [A13](#a13--witness-variables-are-part-of-a-law-not-a-drawing) | Witness variables are part of a law, not a drawing | reading | Assumed |
 | [A14](#a14--a-growing-laws-history-is-a-hidden-witness) | A growing law's history is a hidden witness | reading | Confirmed |
 | [A15](#a15--every-coherent-alternative-is-co-real) | Every coherent alternative is co-real | interpretation | Assumed |
-| [A16](#a16--pairs-cannot-make-a-knot-three-places-can) | Pairs cannot make a knot; three places can | premise | Confirmed |
+| [A16](#a16--two-place-rules-cannot-make-a-knot-a-three-place-rule-can) | Two-place rules cannot make a knot; a three-place rule can | premise | Confirmed |
 | [A17](#a17--erasure-is-absence) | Erasure is absence | reading | Overturned |
 | [A18](#a18--the-fano-pattern-is-the-knots-only-three-regular-contradiction) | The Fano pattern is the knot's only three-regular contradiction | working premise | Overturned |
 | [A19](#a19--a-gadgets-verdict-does-not-depend-on-how-its-distinctions-are-listed) | A gadget's verdict does not depend on how its distinctions are listed | working premise | Overturned |
@@ -645,7 +645,7 @@ evidence: results and their status come from the records each entry links.
     ([Intuitions, lesson 7.3](../INTUITIONS.md#73-every-meeting-pattern-none-chosen)).
   - 2026-10-18 · In the foundational thesis as a protected interpretation, in its earliest committed version.
 
-### A16 · Pairs cannot make a knot; three places can
+### A16 · Two-place rules cannot make a knot; a three-place rule can
 
 **Confirmed** · 2026-10-19 · premise
 
@@ -659,6 +659,7 @@ evidence: results and their status come from the records each entry links.
   under existential witnesses (A7), the strict reading (A8) and bits (A10): signed witnesses turn it into a boundary of
   positivity, competing pairs make the not-all-equal knot, and pairs on three values make "not all different".
 - **History.**
+  - 2026-11-26 · Retitled at the owner's word, together with lesson 3.2 of the guide. The title was "Pairs cannot make a knot; three places can", which read as if two loops could not make a knot. The statement is unchanged.
   - 2026-10-29 · Restated under signed witnesses as a boundary of positivity (`INTERFERENCE-20261029-001`).
   - 2026-10-19 · Confirmed: proved under K1–K3, in Lean.
   - 2026-07-24 · Stated in the workspace's first commit as the protected arity thesis.

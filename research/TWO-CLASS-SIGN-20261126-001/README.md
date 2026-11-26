@@ -8,6 +8,15 @@ any operation of ordinary growth, or any reading a local reader can make, counts
 that something adds and can cancel. Computed and argued; the advisor consulted read-only inside the repository
 ([question](advisor_question.md), [answer](advisor_answer.md)); referee pending.
 
+
+> **Refereed (R1, [report](referee-R1/report.md)): confirmed with fixes, no Block.** All eight motion preparations match the
+> archive. **Narrowings:** one knot reads a class bit on all 794 class-bearing starts and the whole class on 788; the 470
+> starts "with no renaming but the identity" count renamings of knots only (with renamings of distinctions every one has
+> a symmetry); a forbidding law can remove old states while every class keeps its weight (one eight-class start: half
+> the states had no completion, every class kept 256); the second engine was checked under the ordinary count only; the
+> rings' classes were followed through the second round (rings of four to thirteen knots), not every round; changing the
+> whole old ring exchanges the classes on odd rings and keeps them on even rings; "nothing weights them oppositely" holds
+> for unsigned growth and value reads (the motion study records a supplied signed read). Logged in `docs/CORRECTIONS.md`.
 ## The sign, defined
 
 Under parity the allowed assignments S form a linear space. A **move** is, for each distinction, a shortest allowed

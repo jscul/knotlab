@@ -5,6 +5,15 @@ register entry A291), closed 26 November 2026. A check by the thread: computed, 
 [The note](README.md) · [advisor's question](advisor_question.md) and [answer](advisor_answer.md) (read-only in the
 repository)
 
+
+> **Refereed (R1, [report](referee-R1/report.md)): confirmed with fixes, no Block.** All eight motion preparations match the
+> archive. **Narrowings:** one knot reads a class bit on all 794 class-bearing starts and the whole class on 788; the 470
+> starts "with no renaming but the identity" count renamings of knots only (with renamings of distinctions every one has
+> a symmetry); a forbidding law can remove old states while every class keeps its weight (one eight-class start: half
+> the states had no completion, every class kept 256); the second engine was checked under the ordinary count only; the
+> rings' classes were followed through the second round (rings of four to thirteen knots), not every round; changing the
+> whole old ring exchanges the classes on odd rings and keeps them on even rings; "nothing weights them oppositely" holds
+> for unsigned growth and value reads (the motion study records a supplied signed read). Logged in `docs/CORRECTIONS.md`.
 ## What stands
 
 1. **Where the sign is.** Under parity, with the motion study's moves (shortest changes through each distinction), 794

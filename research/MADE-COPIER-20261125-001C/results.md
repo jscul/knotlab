@@ -26,6 +26,32 @@ continuations also put it above the fully masked control, at levels that hold th
 to 0.01 over its family of runs. A **candidate** is one first-pattern form with confirmed cases for two forms of
 second pattern. Takes are sampled take by take; starts are the census of three to five knots.
 
+> **Referee report R1, 26 November 2026: confirmed with fixes, no block**
+> ([the report](../MADE-COPIER-20261125-001/referee-R1/report.md)). All 17 cases and all 91,300 continuations were
+> regrown by the referee's own code; every comparison count matched. Read this result with these changes.
+> - For "in 17 sampled growths" read: 17 ordered-pair cases in 16 growths on 15 starts. One family at 0.01 over 17
+>   keeps all 17.
+> - For "with the two unable to meet" read: with direct joins and takes between the two descents masked. For "after a
+>   pattern the growth made joins a second part" read: at or after the round in which descendants of the two first
+>   belong to one part. One outcome occurred in the meeting round, and fully masked the two still came to one part in
+>   every positive case. The comparisons keep the second part's form fixed: they show an effect of the second part,
+>   not of its form.
+> - For "the meetings are the start's" read: all 17 have a connection through start knots; two also have one through
+>   made knots alone; none has every linking knot made.
+> - The bounds in the sentence beginning "Where it has none" used the prefix's mean weight; the report gives them by
+>   law with the eligible census's (0.359% and 0.562%, 0.300% and 0.470%, 1.200% and 1.890%, 10.000% and 15.745%,
+>   0.600% and 0.939%, census and labelled; two laws with runs lost to memory inside the prefix: 0.405% and 0.633%,
+>   2.804% and 4.386%).
+> - For "renaming changes no distribution (157 checks)" read: all 157 completed checks of the distribution agreed, and
+>   none of 210 tests on the presence of a pair rejected (105 could have). The exact argument C-S1 is false as
+>   stated and holds with ticket B's qualification, for ideal sampling.
+> - "Second parts' members hold at most one loose distinction (497 cases)": 497 main cases under the least fresh
+>   count with offshoots. "The laws with waiting hold a pair in none of 4 growths": six of seven did; the cap of
+>   three had 1 of 4.
+> - For "all 96 disclosed cases found" read: 96 listed pairs located, 91 valid entries of the form reading and four
+>   of the values reading; one of the 92 entries labelled as form has both forms the same and enters no count.
+> - Of the 65 recorded readings some are written after the run they describe, the cut in note 55 among them.
+
 ## Verdicts
 
 | # | Verdict | What was found |

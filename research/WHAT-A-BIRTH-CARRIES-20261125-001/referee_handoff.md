@@ -1,5 +1,7 @@
 # Referee hand-off: WHAT-A-BIRTH-CARRIES-20261125-001
 
+**Refereed, 26 November 2026: confirmed with fixes** ([report R1](referee-R1/report.md)); its fixes are folded into the records it names.
+
 Tickets A and B are referee pending. Each pre-registration has the prior-work searches under "Prior work in the
 program"; run `python3 -B scripts/track.py objects-gate` on each. The study builds on
 `PARTS-MEET-AGAIN-20261124-001`, `MADE-COPIER-20261125-001` and `RING-IN-BALANCE-20261123-001`, all referee pending.

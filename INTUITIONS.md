@@ -5117,7 +5117,9 @@ makes." The register holds this as assumption A244, a working premise
 (sub-goal B327, under goal G15). A copier would meet a second pattern and
 leave two of the second; the part that copies itself leaves two of itself.
 
-**The first ticket: no copier (computed, referee pending).** The study of a
+**The first ticket: no copier (computed; refereed on 26 November 2026,
+confirmed with fixes:
+[the report](research/MADE-COPIER-20261125-001/referee-R1/report.md)).** The study of a
 made copier, MADE-COPIER-20261125-001, froze its first ticket before its code
 was written
 ([its claim](research/MADE-COPIER-20261125-001/claim.md);
@@ -5135,7 +5137,9 @@ copier in any of the three readings, for any registered class, law and
 convention. Under not-all-equal no made distinction is ever tied to another
 from these starts. Under parity two made distinctions tied to one place of the
 second pattern appear once under a stated convention, and that one case is
-gone when the start is renumbered. The first pattern's course does differ with
+gone when the start is renumbered (it fails all four renumberings tried; a
+case of the form reading under the other taking rule survives renumbering
+and fails for the class). The first pattern's course does differ with
 which second pattern is there, in 367 of 2,304 pairs of runs, under rules that
 choose by name
 ([the first ticket's result](research/MADE-COPIER-20261125-001A/results.md)).
@@ -5147,29 +5151,37 @@ part, births with a parent in each would use up the second pattern's loose
 distinctions, the second pattern's own descendants would end, and the two
 afterwards would descend from both patterns; the first ticket counts only two
 whose members descend from the first pattern alone. A second ticket of the
-same study tested it (computed, referee pending). Where the start supplies the
+same study tested it (computed, refereed). Where the start supplies the
 meeting and no birth takes a shared distinction, two parts of the second
-pattern's form, each descended from both, do appear, in 100 runs; in every one
-the second pattern alone leaves two of itself as well, so the first pattern is
-not what makes two. Where a birth may take a distinction held by a knot its
+pattern's form, each descended from both, do appear, in 100 runs. In every one
+the second pattern alone also reaches two of itself within the eight rounds
+read, so the first pattern is not needed for two; but it had two at the round
+where the pair first did in only 62 of the 100, and in one start the pair
+reaches two in round 2 where the second pattern alone does in round 5. Where
+a birth may take a distinction held by a knot its
 parent meets, no run leaves two such parts; 2,718 of that arm's 18,432 runs
 on its larger set of starts were not run, cut at the hour, and are not
 negatives
 ([the second ticket's result](research/MADE-COPIER-20261125-001B/results.md)).
 A third ticket sampled instead of building: the census of three to five
 knots, 42 laws under each knot law, every take drawn by chance, and the
-question how often a growth holds a made pattern after whose joining two
-parts of the second part's form are met more often than without it. The
-prediction was that none would be confirmed. Seventeen were: 5 in the main
-runs (3 growths of 1,000 under one law, each start once) and 12 in the
-follow-up runs the failed prediction fired, under 8 laws whose takes go by
-parent steps. None is a copier. Each first-pattern form does it for one form
-of second part, so nothing is a candidate; and in every case the meeting
-runs through a start knot, so the start supplies it
+question how often a growth holds a made pattern such that, once descendants
+of it and of a second part belong to one part, two parts of the second
+part's form are met more often than in each of three controls. The
+prediction was that none would be confirmed. Seventeen cases were, in 16
+growths on 15 starts: 5 in the main runs (3 growths of 1,000 under one law,
+each start once) and 12 in the follow-up runs the failed prediction fired,
+under 8 laws whose takes go by parent steps. The referee regrew all 17 and
+their 91,300 continuations. None is a copier: no first-pattern form was
+confirmed for two forms of second part under one law, so nothing is a
+candidate. The controls kept the second part's form fixed, so the cases show
+an effect of the second part and not of its form. All 17 have a connection
+through start knots; two also have one through made knots alone; none has
+every linking knot made
 ([the third ticket's result](research/MADE-COPIER-20261125-001C/results.md);
 [what stands](research/MADE-COPIER-20261125-001/decision.md)). So the study
 closes with no copier found, and with one thing sampling does find: a made
-pattern that leaves two of one form.
+pattern after meeting which two parts of one form are left more often.
 
 **An inkling that no copier is general.** "the interesting fact here is that
 it's actually impossible to generalize a 'copier' for all logic structures. It
@@ -5228,87 +5240,99 @@ made a pattern of its own from what it met.
   only whether the other grows can matter; and find a base law under which
   parts come apart under both rations, for a case that remains under a change
   of ration.
-- **What goes through a meeting is a count (computed, referee pending).** One
-  study asked what a birth must receive for a made pattern's course to depend
-  on which pattern it meets
-  ([its decision](research/WHAT-A-BIRTH-CARRIES-20261125-001/decision.md)).
+- **What goes through a meeting (computed; refereed on 26 November 2026,
+  confirmed with fixes).** One study asked what a birth must receive for a
+  made pattern's course to depend on which pattern it meets
+  ([its decision](research/WHAT-A-BIRTH-CARRIES-20261125-001/decision.md);
+  [the referee's report](research/WHAT-A-BIRTH-CARRIES-20261125-001/referee-R1/report.md)).
   Under the recorded ordinary count with the recorded taking rule, the first
   pattern's first join receives two fresh distinctions and one more for each
   birth the second pattern makes that round, in every numbering of the start
-  (16,880 runs). So its course differs with how many of the second pattern's
-  members were left usable; the link is a start knot. Under a law that uses no
-  names (a recorded ration with short knots waiting, and a birth taking a
-  shared distinction only when exactly one is on offer), two parts the growth
-  made meet only through a knot the growth made that both descend from, for
-  88 pairs under each knot law, with no change in either's course. With a
-  second rule added by hand (an offshoot receives as many fresh distinctions
-  as its parent had joins asked of it, at least two), 280 pairs meet that way
-  and the first part's course does change with the second barred: by one
-  value at one birth, which says whether the second part's two members made
-  their join, and so whether the parts meet at all. In no case does a
-  difference need more than one value at one birth. So the law hands a count
-  over; no pattern responds to which pattern it meets. A probe by the thread
-  afterwards, not a registered study, grew a first part with two second
-  parts, each barred or not
+  (17,280 growths, the referee's own). So its course differs with how many of
+  the second pattern's members were left usable; the link is a start knot. In
+  later rounds the count is not the whole of it: two second patterns that give
+  the same count have courses that differ in 1,228 of 4,700 comparisons, and
+  at round 2 the demands of two births are needed, in 364 of 1,295 settings,
+  to tell the classes of courses apart. Under a law that uses no names (a
+  recorded ration with short knots waiting, and a birth taking a shared
+  distinction only when exactly one is on offer), two parts the growth made
+  meet only through a knot the growth made, for 88 pairs under each knot law,
+  with no change in either's course. That knot is an ancestor of the
+  descendants that meet, from each part, and of every original member of the
+  two parts in none. With a second rule added by hand (an offshoot receives as
+  many fresh distinctions as its parent had joins asked of it, at least two),
+  280 pairs meet that way and the first part's course changes with the second
+  barred: by one value at one birth, which says whether the second part's two
+  members made their join, and so whether the parts meet at all. The
+  registered test found that dependence for 32 of the 280 and left 248
+  undecided. So the law hands counts over, and no pattern was shown to respond
+  to which pattern it meets. A probe by the thread afterwards, not a
+  registered study, grew a first part with two second parts, each barred or
+  not
   ([the probe](research/WHAT-A-BIRTH-CARRIES-20261125-001/checks/two_by_two/README.md)).
-  The first part's course tells how many of them were barred and never
-  which: the parts that meet through made knots are branches of one knot,
-  alike, and they all meet in the round after they separate (5,091 triples;
-  6,525 pairs of second parts on 196 census starts, every pair alike). Where
-  the second parts are not alike, the first part does not respond. A second
-  probe tried seven taking rules without names that reach further or choose
-  differently
+  The first part's course tells how many of them were barred and never which.
+  There it could not have come out otherwise: the second parts that meet
+  through made knots are branches of one knot and can be exchanged (6,525
+  pairs on 196 census starts, every pair). All 5,091 responses first show in
+  round six; the 1,200 runs without one had stopped in round five. Where the
+  second parts are not alike (420 tests under waiting), the first part does
+  not respond. A second probe tried seven taking rules without names that
+  reach further or choose differently
   ([the second probe](research/WHAT-A-BIRTH-CARRIES-20261125-001/checks/reach_further/README.md)).
-  One of them, drawing from the knots that a parent's met knots meet and
+  Under one of them, drawing from the knots that a parent's met knots meet and
   taking the candidate with the most holders when exactly one has the most,
-  does make parts of different descent meet through made knots. Where the
-  link is wholly the growth's (1,120 tests on 123 rings of five knots) the
-  first part's course still tells only how many, now through two values at
-  two births, and never which. On the census starts every such link runs
-  through a distinction a start knot holds; there, in 11 of 127 tests, the
-  course does differ with which second part is barred, and in the cases
-  read birth by birth that is which one arrives first, or a count at one
-  birth and a join at another. The study of parts that meet again had
-  found the same with one second part: what crosses is whether the other
-  part is there. A third probe then held the place fixed and changed the
-  form, on starts built by hand: one first seed, one link, and a second
-  seed running over 50 forms
+  parts meet through made knots with no start knot's distinction on the link
+  (1,120 tests on 123 rings of five knots). The thread read these as parts of
+  different descent, and the referee showed that reading false: in every such
+  first meeting the made knot is a direct parent of both knots that meet
+  (1,250 under each knot law). They too are branches of one knot. There the
+  first part's course tells how many second parts are there, in three classes
+  that need two entries at distinct births, and never which. On the census
+  starts every such link runs through a distinction a start knot holds; there,
+  in 11 of 127 tests, the course does differ with which second part is barred,
+  and in the cases read birth by birth that is which one arrives first, or a
+  count at one birth and a join at another. The study of parts that meet again
+  had found the same with one second part: in its 16 comparisons what crosses
+  is whether the other part is there. A third probe then held the place fixed
+  and changed the form, on starts built by hand: one first seed, one link, and
+  a second seed running over 50 forms
   ([the third probe](research/WHAT-A-BIRTH-CARRIES-20261125-001/checks/form_at_a_fixed_place/README.md)).
-  There what the first seed's own descent makes does follow the form, under
-  every law tried and with no taking rule at all: its births fall into 4 to
-  23 classes, and its own line is taken up by the second seed's, idles at
-  one birth a round or grows according to what it is attached to. Some
-  forms are told apart only in rounds 2 to 7, and about half of those still
-  differ when every round-1 birth with a first-seed ancestor is the same.
-  It sees the near end of the second seed in detail and, with the take of a
-  sole candidate, its length to five knots; it does not read the whole
-  form. With the two seeds in one start and not linked, nothing differs.
-  The meeting there is supplied by the start. A registered study then put
-  this to held-out seeds, with a reading written from its frozen text by
-  another hand
+  There what the first seed's own descent makes differs with the second seed,
+  under every law tried and with no taking rule at all: its births fall into 4
+  to 23 classes, the bare start counted. Some second seeds are told apart only
+  in rounds 2 to 7, and for 6,521 of those 9,852 pairs the record of round 1
+  is the same. A single knot is always told from a longer chain, and from the
+  other forms not always. The meeting there is supplied by the start. A
+  registered study then put this to held-out seeds, with a reading written
+  from its frozen text by another hand
   ([its result](research/FOLLOWS-THE-FORM-20261125-001A/results.md);
-  computed, referee pending). Nineteen of twenty predictions hold, the
-  exact replications of the probe among them. On five first seeds and 60
-  second seeds nothing had grown, the forms fall into three or more classes
-  in 87 studies of 90; 422 to 1,309 pairs a row are told apart only after
-  round 1 though every round-1 birth with a first-seed ancestor is the
-  same; and the class is never decided by the held knot alone. One thing
-  tempers it: the prediction that the first seed's fate differs with the
-  form failed, and two or more fates show in 37 studies of 90. A second,
-  that in 49 of the 90 studies the class is decided by "a count profile and
-  not a form" (the held knot with the number of births the second seed
-  makes each round), is withdrawn: among those 60 forms almost no two share
-  that profile, so nothing could have contradicted it. A check by the
-  thread on 345 forms
-  ([the check](research/FOLLOWS-THE-FORM-20261125-001/checks/what_decides_the_class/README.md);
-  not registered) finds it deciding the class in 3 studies of 267. There
-  the class follows the second seed's knots by their steps from the held
-  knot: the same knots at other steps are told apart in a third of such
-  pairs. And in 23 studies of 270 two second seeds with the same knots
-  at the same steps, differing only in which knots are partners, are told
-  apart. How far out a law sees is tested on few pairs. What is open
-  (a sub-goal under G15): the same between two parts the growth made,
-  meeting through a knot the growth made.
+  [the referee's report](research/FOLLOWS-THE-FORM-20261125-001/referee-R1/report.md)).
+  Eighteen of its twenty registered rows hold in full. The prediction that the
+  first seed's fate differs with the form failed: two or more fates show in 37
+  studies of 90, with 40 predicted. Its sampled knot test was cut short; it
+  passed on what was run, and the referee's checks pass on the rest. On five
+  first seeds and 60 second seeds nothing had grown, changing the second seed
+  changes the first seed's own births in all 90 studies, into three or more
+  classes in 87. Where short knots retire or make offshoots, 422 to 1,309
+  pairs a row first differ in the record after round 1 though the record of
+  every round-1 birth with a first-seed ancestor is the same; a difference can
+  already be there in round 1 that this record does not show. The class is
+  never decided by the held knot alone. With the two seeds in one start and
+  not linked nothing differs, as it must: under these laws seeds that share
+  nothing cannot reach each other, so that control checks the program and not
+  the growth. One reading is withdrawn, that in 49 of the 90 studies the class
+  is decided by "a count profile and not a form" (the held knot with the
+  number of births the second seed makes each round). Only 245 of 86,730 pairs
+  of forms there share the profile, and on 345 forms it decides the class in 3
+  studies of 267
+  ([the check](research/FOLLOWS-THE-FORM-20261125-001/checks/what_decides_the_class/README.md),
+  the thread's own, recounted by the referee). There, each of the 92 pairs
+  with the same knots at other steps from the held knot is told apart in some
+  study. And in 23 studies of 270 two second seeds with the same knots at the
+  same steps, differing only in which knots are partners, are told apart. How
+  far out a law sees is tested on few pairs. What is open (a sub-goal under
+  G15): the same between two parts the growth made, meeting through a knot the
+  growth made.
 - **B326, an index made by the growth (G15).** The owner: "This is why we may need 'function-like' logical operations
   where we can reference/sample logic. These are basically meeting patterns
   that are complex in nature. Maybe even so complex as to the indexing

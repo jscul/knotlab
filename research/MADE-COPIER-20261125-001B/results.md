@@ -30,6 +30,15 @@ that meet again: COPY-LAW(t) is that study's name for a ration and a treatment, 
 birth's fresh distinctions at three; FBP(t) counts them by parents; t says what a short knot does (retires, makes
 offshoots, or waits); MET lets a birth take a shared distinction held by a knot its parent meets.
 
+> **Referee report R1, 26 November 2026: confirmed with fixes, no block**
+> ([the report](../MADE-COPIER-20261125-001/referee-R1/report.md)). Narrowing: for "the first pattern is not what
+> makes two" read: the second pattern alone reached two within eight rounds in all 100 runs, and had two at the round
+> where the two together first did in 62 of 100. In one start the two together reach two in round 2 and each control
+> in round 5. Accounting: the 100 are primary runs of unequal kinds under the least ration, with release; the round
+> limit is 8 under that ration and 10 under the cap of three; two compressed files lack their endings (eight and
+> twelve complete records kept); "88 against 86" is 88 run-rounds and 98 parts in 1,728 runs (80 and 88 on the
+> original 1,584 designs); four knot checks under not-all-equal were not run.
+
 ## Verdicts
 
 Eighteen predictions and the reading of the owner's inkling were frozen. Fifteen hold (one of them on what was run),

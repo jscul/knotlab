@@ -10,15 +10,43 @@ texts and counted a second time by the thread; scientific referee pending.
 [advisor review before the freeze](advisor/README.md) ·
 [the probe it registers](../WHAT-A-BIRTH-CARRIES-20261125-001/checks/form_at_a_fixed_place/README.md)
 
+> **Referee report R1, 26 November 2026: confirmed with fixes, no block** ([the report](referee-R1/report.md)). An independent
+> referee grew 2,160 linked runs with its own growth (all 19,120 rounds match), recounted the held-out rows, the
+> replications and the gate, and recounted the later check. Changing the second seed changes the first seed's own
+> births in all 90 held-out studies. Read this note with these narrowings.
+> - **The link.** "The link carries the difference" and "not linked, nothing differs" say less than they seem to.
+>   Under these laws two seeds that share nothing cannot reach each other: every group of parents, every candidate
+>   and every demand comes from knots already joined by shared distinctions. The unlinked control could expose a
+>   faulty program; it had no second route to find. The guard also cut 375 of 5,400 unlinked runs short of the bare
+>   start's.
+> - **When the difference enters.** "Told apart only after round 1" is a statement about the record: the first seed's
+>   own recorded births first differ later, although the round-1 multisets of every birth with a first-seed ancestor
+>   are the same. In two pairs traced by hand a difference is already there in round 1 that the record omits (a
+>   demand; which newborns share a distinction). The claim's "the difference entered the first seed's descent after
+>   round 1" is not shown.
+> - **The score.** For "nineteen of twenty predictions hold" read: eighteen rows passed in full, the fate prediction
+>   failed, and the sampled knot test passed on the part that was completed. It was cut after 14 minutes with 37 of
+>   300 jobs unfinished; the referee's own exact checks pass on all 37. No positive claim rests on that test.
+> - **The 49 studies.** As in the correction above: 245 of 86,730 pairs could have contradicted the profile there,
+>   and three studies had no such pair.
+> - **Credit.** The pre-registration's "no record substitutes one form for another at a fixed place" holds of
+>   registered records. The probe this study registers had already done it; this study registered the comparisons
+>   and tested five further first seeds and 60 further second seeds of the same kinds.
+> - **The gate's program** accepts agreement on a summary of the structure where exact equality fails. All 209 runs
+>   it compared matched exactly, so no verdict changes; the condition should require exact equality.
+> - **The later check** is narrowed too; its note carries the changes
+>   ([the check](checks/what_decides_the_class/README.md)).
+
 ## The answer
 
 > **Correction, 26 November 2026 (not a block; found by the thread in a check after the study closed).** Item 3
 > below, the report at the end ("Two things temper it"; "'form' is too large a word") and direction 2 read the 49
 > studies as showing a count profile of the second seed. The number stands; the reading is withdrawn. Among the 60
 > held-out second seeds almost no two share that profile (245 of 86,730 pairs in the 49 studies, none in three of
-> them). On 345 second seeds it decides the class in 3 studies of 267. Direction 2 is done: the class follows the
-> second seed's knots by their steps from the held knot, and in 23 studies of 270 two second seeds that differ only
-> in which knots are partners are told apart. One thing still tempers the result, the failed prediction about fate.
+> them). On 345 second seeds it decides the class in 3 studies of 267. Direction 2 is done: each of the 92 pairs
+> with the same knots at other steps from the held knot is told apart in some study, and in 23 studies of 270 two
+> second seeds that differ only in which knots are partners are told apart. One thing still tempers the result, the
+> failed prediction about fate.
 > [The check](checks/what_decides_the_class/README.md).
 
 The earlier studies asked whether one pattern's course depends on another it meets, and varied only whether the

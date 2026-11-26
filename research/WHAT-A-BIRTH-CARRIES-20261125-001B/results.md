@@ -30,6 +30,25 @@ is "handed in one value", m of 2 or more "composed over several births". The law
 fresh distinctions for three places; CAP-3 caps them at three; a short knot waits, retires or makes offshoots. The
 take of a sole candidate and the two owing rations are rules added by hand for this ticket.
 
+> **Referee report R1, 26 November 2026: confirmed with fixes, no block**
+> ([the report](../WHAT-A-BIRTH-CARRIES-20261125-001/referee-R1/report.md)). An independent growth matched all 960 main
+> settings, 96 ration controls and 835 listed births. Narrowings:
+> - **The made link where short knots wait.** The linking knot is an ancestor of the meeting descendants from each
+>   part in all 88 pairs under each knot law, and of every original member in none. For "Holds" on that prediction
+>   read "existence confirmed, forecast failed": 5 of the 8 starts named, 0 of the 4 capped ring starts. Why the
+>   scratch counted 640 meetings and 312 made links where the run finds 328 and 176 is left open; the trace is gone.
+> - **The course that changes.** 280 courses differ under each knot law; dependence was found for 32 and is undecided
+>   for 248. On the extra ring: 148 differ, 8 found, 140 undecided ("with every reading of the case" overstated it).
+>   "On any such pair under any law" leaves out the control that looks at parts, where 72 comparisons of equal size
+>   separate. "Demand 10 against 9" covers 40 of 76 pairs on the ring with one extra distinction; the other 36 give
+>   7 against 6.
+> - **Renaming.** All 1,152 comparisons matched the saved readings and the whole-structure check; 350 had a meeting.
+>   The comparison repeated no knot tests.
+> - **The notes.** Of the 36 recorded readings, 1 to 30 precede the gate, 31 follows a timing sample, and the rest
+>   are written afterwards. "The guard was never reached" holds within the comparison it was registered for.
+> - **Credit.** "Until now every knot both parts descend from was a start knot" holds for ancestral linking knots in
+>   the earlier cases that were not controls; made knots that link without being ancestors were already recorded.
+
 ## Verdicts
 
 | # | Kind | Verdict | What was found |

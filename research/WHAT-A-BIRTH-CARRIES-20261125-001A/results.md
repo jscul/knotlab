@@ -27,6 +27,15 @@ take a distinction held by a knot its parent meets), choosing the oldest candida
 course from X only is what the births descended from X alone build, with all names forgotten. M = a(h − 1) − a(a − 1)/2
 is the number of births Y's usable members make in round 2.
 
+> **Referee report R1, 26 November 2026: confirmed with fixes, no block**
+> ([the report](../WHAT-A-BIRTH-CARRIES-20261125-001/referee-R1/report.md)). The first join receives 2 + M in 17,280 of
+> 17,280 growths made by the referee's own code, the 400 this run left out among them. One narrowing: "for every such
+> course some other numbering of the other case gives the same one" is false as written. Where two second patterns give
+> the same count the two sets of courses overlap and do not coincide; the courses differ in 1,228 of 4,700 paired
+> comparisons (with three loose distinctions and the newest choice: 23 and 22 courses at round four, 18 shared). And a
+> difference can need more than one value: at round 2, 364 of 1,295 settings need the demands of two births; at the
+> longest common round 384 settings have no single count that recovers the classes of courses.
+
 ## Verdicts
 
 | # | Kind | Verdict | What was found |

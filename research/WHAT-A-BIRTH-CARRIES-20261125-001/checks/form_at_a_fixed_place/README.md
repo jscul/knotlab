@@ -14,6 +14,18 @@ Programs (run `make_engine.py` first; it writes the engine into this folder): [t
 Outputs: [the mixed family](form_b.jsonl.gz) · [the chains](chains_a.jsonl.gz) · [single changes](depth_a.jsonl.gz) ·
 [the family not seen beforehand](unseen.jsonl.gz) · [checks](checks.jsonl.gz).
 
+> **Referee report R1, 26 November 2026** ([the report](../../referee-R1/report.md)): this probe's counts are
+> recounted (4 to 23 classes with the bare start counted, 3 to 22 without); four statements are narrowed.
+> - "A single knot against anything longer" holds in 10,800 of 10,800 comparisons among chains and fails in 445 of
+>   16,560 in the mixed family.
+> - Finding 4's "through made knots alone" does not follow from rosters with no start member after round 1: a start
+>   knot that has left the roster can still supply a distinction or witness a group.
+> - "About half of those": 2,938 of 6,077 for differences first seen in round 2, and 6,521 of 9,852 for rounds 2 to
+>   7. What is the same there is a multiset of birth kinds, counts and descent flags, not every fact of round 1.
+> - The fate count on the second family is 62 studies of 90 on a common round, not 71.
+> The registered study that followed supplied the wider record and the unlinked control
+> ([its result](../../../FOLLOWS-THE-FORM-20261125-001A/results.md)).
+
 ## What the record already had
 
 Ticket A of this study found that the first pattern's first join receives two fresh distinctions and one more for

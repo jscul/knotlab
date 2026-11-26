@@ -14,6 +14,17 @@ Outputs: [ring starts, four runs](main.jsonl.gz) · [census starts, four runs](c
 [the control](planted.jsonl.gz) · [scan, census](scan_small.jsonl.gz) · [scan, laws](scan_laws.jsonl.gz) ·
 [scan, later rounds](scan_later.jsonl.gz) · [first meetings](births_explore.jsonl.gz) · [descent](lineage.jsonl.gz).
 
+> **Referee report R1, 26 November 2026** ([the report](../../referee-R1/report.md)): this probe's counts are
+> recounted; three of its statements are narrowed.
+> - "The other 1,200 show no difference at all": all 1,200 had stopped in round five, and all 5,091 responses first
+>   appear in round six. They are runs that ended too soon, not runs with no response.
+> - "No second part reaches a first part at a second birth": read "no delayed first meeting in the scan that could be
+>   read". 1,042 of 1,120 selections were read far enough and 214 had a first meeting. On a ring the referee grew, the
+>   same two descents meet in round five and again in round six.
+> - "Never which": every pair of second parts here can be exchanged with the first part fixed (6,525 pairs), so
+>   "which" could not have shown. Two partners give three values of a count, three give four. Of 1,400 candidates
+>   under waiting whose second parts are not alike, 420 were given the four-run test and none responded.
+
 ## The question
 
 Ticket B found one made part's course changing with another through a knot the growth made, by one count at one birth.

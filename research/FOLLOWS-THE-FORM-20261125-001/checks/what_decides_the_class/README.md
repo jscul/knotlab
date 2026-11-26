@@ -15,11 +15,21 @@ the advisor: [question](advisor_question.md), [answer](advisor_answer.md)
 
 **The registered study's sentence "in 49 of the 90 studies the class is decided by a count profile of the second
 seed" is withdrawn as a reading: the number stands, but almost no pair of forms could have contradicted it. On 345
-second seeds that profile decides the class in 3 studies of 267. What the first seed's descent makes is not decided
-by any tally of the second seed that forgets how many steps each knot is from the held knot; with no taking rule it
-is the same for every pair that agrees out to two steps, though that is tested on only 141 pairs. And in 23 studies of
-270 two second seeds with the same knots at the same steps, differing only in which knot is a partner of which, are
-told apart.**
+second seeds that profile decides the class in 3 studies of 267. None of the tallies tried that forget how many
+steps each knot is from the held knot decides what the first seed's descent makes: each of the 92 pairs with the
+same knots at other steps is told apart in some study. Of the 141 pairs that agree out to two steps, none is told
+apart where nothing is taken and short knots retire or make offshoots (12,690 comparisons, each read to round 9),
+and 19 comparisons are where they wait. And in 23 studies of 270 two second seeds with the same knots at the same
+steps, differing only in which knot is a partner of which, are told apart.**
+
+> **After the referee's report, 26 November 2026** ([report R1](../../referee-R1/report.md); confirmed with fixes).
+> The referee recounted every table here and regrew a pair with the same registered profile and different classes
+> in each of the 264 studies where the profile fails, six studies in full, and ten swap comparisons. Three
+> statements of this note were narrowed, and the text is changed where they stood: "follows the second seed's knots
+> by their steps" (all 345 seeds differ in those counts, so whether they are enough cannot be asked there); "the
+> 141 pairs differ only in loose counts three or four steps out" (64 of them set a chain of four against a chain of
+> five); and "nothing could have contradicted" the registered reading (245 pairs could have). The report as sent,
+> at the end, is kept as sent.
 
 The words are the registered study's ([definitions](../../definitions.md)). A start is a **first seed**, one
 **link** distinction and a **second seed** that holds the link on its **held knot**. A **study** is one law and one
@@ -39,7 +49,8 @@ number of classes, in 90 studies of 90.
 The result, the decision note, the guide and the report to the owner then read the other 49 studies as "what is seen
 is a count profile of the second seed; 'form' is too large a word". That does not follow. Among the 60 held-out
 second seeds the profile takes 44 to 60 values in a study. In the 49 studies, 245 of 86,730 pairs of second seeds
-share a profile, and in three of them none does. A profile that nearly names each seed decides anything.
+share a profile, and in three of them none does: only those 245 could have contradicted the reading. A profile that
+nearly names each seed decides almost anything.
 
 ## What was read
 
@@ -80,7 +91,7 @@ Of all 15,843,780 pairs, 74.3% are told apart. Each row below is to be read agai
   45 studies of 267.
 - **Neither does the seed's own knots with their steps forgotten.** 92 pairs in each study are built from the same
   knots, each with the same loose count and number of partners, and differ in where those knots are. 8,209 of the
-  24,564 are told apart, at least one in 237 studies of 267. One pair read birth by birth, under the ration
+  24,564 comparisons are told apart, at least one in 237 studies of 267, and each of the 92 pairs in some study. One pair read birth by birth, under the ration
   "just enough for three places" with short knots retiring and a first seed of one knot: a chain of four held at its
   end with loose counts 1, 1, 2, 2 and the same with 1, 2, 1, 2. In the first the knot next to the held knot owes two joins and has one loose
   distinction, so it retires, and the first seed's knot makes four offshoots. In the second it has two, its join
@@ -89,10 +100,12 @@ Of all 15,843,780 pairs, 74.3% are told apart. Each row below is to be read agai
   apart). That is not a description of the second seed. Those births are outcomes of the same meeting, and in the
   pair above one of them is the difference. The births of both with the held knot, without the second seed's own
   births, decide the class in 99 studies of 267.
-- **Out to two steps, with no taking rule.** 141 pairs agree out to two steps from the held knot and differ beyond.
-  They differ there only in loose counts, three or four steps out. Where short knots retire or make offshoots none
-  of them is told apart in any of 90 studies, each read to round 9. Where short knots wait, 19 are, in 2 studies of
-  45, first in rounds 3 and 4. One step is not enough: it decides the class in 24 studies of 135.
+- **Out to two steps, with no taking rule.** 141 pairs agree out to two steps from the held knot and differ beyond:
+  77 only in loose counts three or four steps out, and 64 by setting a chain of four against a chain of five. (The
+  two-step profile counts every partner of a knot it includes, those beyond two steps among them.) Where short knots
+  retire or make offshoots none of them is told apart in any of 90 studies, each read to round 9. Where short knots
+  wait, 19 comparisons are, in 2 studies of 45, first in rounds 3 and 4: 11 of the first kind and 8 of the second.
+  One step is not enough: it decides the class in 24 studies of 135.
 - **With the take of a sole candidate the first seed's descent is told more.** The same 141 pairs are told apart in
   54 studies of 132 (2,552 of 18,612), most of them in round 1 or 2. The 16 pairs that agree to three steps, chains
   of five that differ in the loose count of the far end, are told apart in 10 studies, all under the cap of three with
@@ -107,14 +120,16 @@ Of all 15,843,780 pairs, 74.3% are told apart. Each row below is to be read agai
 ## What this shows and does not show
 
 - **Shown.** The registered study's main statement stands without that tempering: on built starts, what a first
-  seed's own descent makes differs with the second seed in ways that no count of the second seed's births decides.
-  What it follows, on these seeds, is the second seed's knots by their steps from the held knot. And under some
-  laws it follows which knots are partners where those are the same: that is the first case on this line of a
-  difference that counts by steps do not decide.
-- **Not shown: that two steps is how far a law sees.** The statement rests on 141 pairs that differ only in loose
-  counts three or four steps out. In all 345 seeds every knot three or more steps out has a loose distinction, so no
-  pair differs in whether a far knot can take part in round 1. Longer seeds, or far knots with no loose distinction,
-  may show more. No argument is written for it.
+  seed's own descent makes differs with the second seed in ways that the counts of the second seed's births tried
+  here do not decide. Where the second seed's knots are the same and their steps from the held knot differ, the
+  pair is told apart in some study, all 92. Whether the knots by their steps are enough cannot be asked on the 345
+  seeds, since no two share them. The swap pairs ask it, and under some laws the answer is no: which knots are
+  partners matters where the steps are the same. That is the first case on this line of a difference that counts
+  by steps do not decide.
+- **Not shown: that two steps is how far a law sees.** The statement rests on 141 pairs of 59,340, and 251 of the
+  345 seeds have every knot within two steps. In all 345 seeds every knot three or more steps out has a loose
+  distinction, so no pair differs in whether an existing far knot can take part in round 1. Longer seeds, or far
+  knots with no loose distinction, may show more. No argument is written for it.
 - **Not shown: that anything reads a form in a fuller sense.** In the pair read birth by birth the whole difference
   is one comparison at one knot, whether it can pay the joins it owes. That the form gets through because that
   comparison is made knot by knot is a reading of one pair, not a result.
@@ -166,6 +181,8 @@ python3 -B pair.py '{"ration":"FLOOR1","treatment":"CANCEL-RETIRE","take":null,"
 ```
 
 ## Report as sent (26 November 2026, about 03:50 UTC)
+
+(Kept as sent. Three of its statements were narrowed by the referee the same day; see the note at the head.)
 
 The check is in, and it removes the soft spot instead of confirming it. **The sentence I gave you, "in 49 of 90
 held-out studies the difference is no more than a count profile", was wrong as a reading: among those 60 forms

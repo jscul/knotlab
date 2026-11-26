@@ -35,6 +35,14 @@ candidates sorted by name. The starts are named in the study's data file; this n
 | made-h (h = 2 to 6) | two start knots sharing one distinction, the second holding h loose distinctions; their round-1 offshoots are X (two knots) and Y (h knots); made-2 is the control with Y the same as X |
 | Y present from round 0, of kind one-2, one-3, two-22, two-23, two-33, three-222 | the three-knot start's two founders (X) with their dead knot, and a second dead knot sharing one distinction e with the first and meeting Y's members: one member holding two; one holding three; two holding two each (the control); two and three; three and three; three holding two each |
 
+> **Referee report R1, 26 November 2026: confirmed with fixes, no block**
+> ([the report](../MADE-COPIER-20261125-001/referee-R1/report.md)). No registered class passed the copier test. The
+> values case failed all four renumberings; the main form case failed two of three; a form case under the take by
+> parent steps survived 28 added numberings under each knot law and failed for the class. Three of the arguments
+> this ticket leans on are narrowed in the report (no tie from two holders needs the knot law; "a knot holding barred
+> distinctions has no children" needs its start conditions; a changed take need not show in the first pattern's next
+> round).
+
 ## Verdicts
 
 Thirty-four predictions and the owner's reading were frozen. Twenty-four hold, two fail, eight are reported with no

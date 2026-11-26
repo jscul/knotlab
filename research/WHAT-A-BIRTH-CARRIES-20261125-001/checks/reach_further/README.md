@@ -16,6 +16,26 @@ links on [rings](links_rings.jsonl.gz), [small census](links_census.jsonl.gz), [
 [rings with unequal knots](links_ringk.jsonl.gz) ([driver](drive_ringk.py)) ·
 [renumbering](renumber.jsonl.gz) · [rule check](check_take.jsonl.gz).
 
+> **Block on one reading, 26 November 2026 (referee report R1;** [the report](../../referee-R1/report.md)**).** Finding 2
+> below, and the report as sent, say that under the take of the candidate with the most holders "the linking knots are
+> made knots that are an ancestor of neither part", and so that parts of different descent meet through made knots.
+> That is false of the knots that meet. The probe used ticket B's class "ancestral common knot", which leaves out a
+> knot that is a direct parent of both meeting knots. In all 1,250 first meetings with no start-held linking
+> distinction, under each knot law, the made linking knot is a direct parent of both knots that meet, each child
+> holding a different distinction of it. These are two children of one made knot: branches of one knot, as in the
+> first probe. **"Parts of different descent meet through made knots" is withdrawn.** What stands: the counts of the
+> barred courses (three classes by the number barred, a least of two entries at distinct births, on 1,120 four-run
+> tests) and both registered tickets.
+>
+> Narrowings from the same report:
+> - The 15 and 90 of 3,285 settings with a take count only rounds after the first; with round 1, 1,965 of 3,285 for
+>   each rule. The 120 meetings under each take-every rule are 60 unordered meetings.
+> - For "two copies of one count" read: three classes by the number barred, and a least of two entries, with their
+>   places saved only for the 18 earlier ring tests.
+> - For "one value in every census test" read: one entry in 76 responsive tests, 51 unchanged; 54 of 127 census tests
+>   reached a common round seven.
+> - That a first part still meets a second part when the other is barred was not established.
+
 ## What the record already had
 
 The study of parts that meet again ([its decision](../../../PARTS-MEET-AGAIN-20261124-001/decision.md), closed the same

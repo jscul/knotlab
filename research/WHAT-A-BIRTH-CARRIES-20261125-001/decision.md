@@ -11,6 +11,31 @@ scientific referee pending.
 [survey of the record](survey.md) · [referee hand-off](referee_handoff.md) ·
 advisor reviews before each freeze: [first](advisor/README.md), [second](advisor_b/README.md)
 
+> **Referee report R1, 26 November 2026: confirmed with fixes; no block on either ticket; a block on one reading of the
+> second probe** ([the report](referee-R1/report.md)). An independent referee grew ticket B's 960 main settings and
+> ticket A's first joins with its own code: every growth matched, and 17,280 of 17,280 first joins receive 2 + M. Read
+> this note with these changes.
+> - **Item 2, the made link where short knots wait (narrowing).** "A knot the growth made that both descend from" is
+>   narrower than it reads. In the 88 pairs under each knot law the linking knot is an ancestor of the descendants
+>   that meet, from each part, and of every original member of the two parts in none. The forecast named eight starts
+>   and four capped ring starts; it held on five and on none. Read "existence confirmed, forecast failed".
+> - **Item 3, the course that changes (narrowing).** All 280 courses differ under each knot law. The registered test
+>   of dependence found it for 32 of them and left 248 undecided. Barring either member of the second part also
+>   removes the meeting.
+> - **Items 1 and 4 (narrowing).** "Nothing is composed" and "where two second patterns give the same count, they are
+>   not separated" are too strong for ticket A's later rounds. Where the counts are equal the two sets of courses
+>   overlap, and the courses differ in 1,228 of 4,700 paired comparisons. At round 2, 364 of 1,295 settings need the
+>   demands of two births to recover how the courses fall into classes. At the longest common round every setting has
+>   one entry that does, and 384 have no single count that does.
+> - **The numbering row of the scaffolds table (narrowing).** "Every verdict and course equal exactly" should read:
+>   all 1,152 comparisons matched the saved readings of link, ancestry and course. Of them 350 had a meeting and 88
+>   an attributed difference. The ring called "with no symmetry" has no symmetry that moves a start knot.
+> - **Credit (not a block).** A made knot that links was already seen: the study of parts that meet again had 180 of
+>   216 attributed meetings through made knots. What this study adds is a made linking knot that is an ancestor, under
+>   a law that uses no names; and, for ticket A, the formula in every numbering.
+> - **The three probes made after closure** carry their own notices. The second probe's reading that its made links
+>   join parts of different descent is withdrawn (a block on that reading; the counts of courses stand).
+
 ## The answer
 
 The direction asked what the least is that a growth law must let a birth receive for a pattern the growth makes to

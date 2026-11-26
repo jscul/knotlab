@@ -1,5 +1,7 @@
 # Referee hand-off: MADE-COPIER-20261125-001
 
+**Refereed, 26 November 2026: confirmed with fixes** ([report R1](referee-R1/report.md)); its fixes are folded into the records it names. The last point below is wrong about ticket A: its primary values case and form case both take from a knot the parent meets.
+
 Tickets A, B and C are referee pending. Each pre-registration has the prior-work searches under "Prior work in the
 program"; run `python3 -B scripts/track.py objects-gate` on each. The study builds on
 `PARTS-MEET-AGAIN-20261124-001`, `COPYING-PARTS-20261123-001` and `RING-IN-BALANCE-20261123-001`, all referee

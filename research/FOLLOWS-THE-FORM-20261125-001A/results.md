@@ -27,9 +27,9 @@ together with the second seed's own births by round: there, what is seen is a co
 > seed". The number 49 stands, and so does PN7. The reading is withdrawn. Among the 60 held-out second seeds the
 > profile takes 44 to 60 values in a study: in those 49 studies 245 of 86,730 pairs of second seeds share a profile,
 > and in three of them none does, so almost no pair could have contradicted it. On 345 second seeds the same profile
-> decides the class in 3 studies of 267, and 27% of the pairs that share it are told apart. There the class follows
-> the second seed's knots by their steps from the held knot; and in 23 studies of 270 two second seeds that differ
-> only in which knots are partners are told apart.
+> decides the class in 3 studies of 267, and 27% of the pairs that share it are told apart. There, each of the 92
+> pairs with the same knots at other steps from the held knot is told apart in some study; and in 23 studies of 270
+> two second seeds that differ only in which knots are partners are told apart.
 > [The check](../FOLLOWS-THE-FORM-20261125-001/checks/what_decides_the_class/README.md).
 
 The words. A start is a **first seed**, one **link** distinction and a **second seed** that holds the link on its
@@ -39,6 +39,33 @@ places, fresh distinctions and takes, over the knots descended from the first se
 one family of second seeds; two second seeds are in one **class** when the first seed's descent makes the same
 through the last round every run of the study reached, and are **told apart** otherwise. The **unlinked start** has
 both seeds and no shared distinction. A **row** pools three rations and five first seeds.
+
+> **Referee report R1, 26 November 2026: confirmed with fixes, no block** ([the report](../FOLLOWS-THE-FORM-20261125-001/referee-R1/report.md)). An independent
+> referee grew 2,160 linked runs with its own growth (all 19,120 rounds match), recounted the held-out rows, the
+> replications and the gate, and recounted the later check. Changing the second seed changes the first seed's own
+> births in all 90 held-out studies. Read this note with these narrowings.
+> - **The link.** "The link carries the difference" and "not linked, nothing differs" say less than they seem to.
+>   Under these laws two seeds that share nothing cannot reach each other: every group of parents, every candidate
+>   and every demand comes from knots already joined by shared distinctions. The unlinked control could expose a
+>   faulty program; it had no second route to find. The guard also cut 375 of 5,400 unlinked runs short of the bare
+>   start's.
+> - **When the difference enters.** "Told apart only after round 1" is a statement about the record: the first seed's
+>   own recorded births first differ later, although the round-1 multisets of every birth with a first-seed ancestor
+>   are the same. In two pairs traced by hand a difference is already there in round 1 that the record omits (a
+>   demand; which newborns share a distinction). The claim's "the difference entered the first seed's descent after
+>   round 1" is not shown.
+> - **The score.** For "nineteen of twenty predictions hold" read: eighteen rows passed in full, the fate prediction
+>   failed, and the sampled knot test passed on the part that was completed. It was cut after 14 minutes with 37 of
+>   300 jobs unfinished; the referee's own exact checks pass on all 37. No positive claim rests on that test.
+> - **The 49 studies.** As in the correction above: 245 of 86,730 pairs could have contradicted the profile there,
+>   and three studies had no such pair.
+> - **Credit.** The pre-registration's "no record substitutes one form for another at a fixed place" holds of
+>   registered records. The probe this study registers had already done it; this study registered the comparisons
+>   and tested five further first seeds and 60 further second seeds of the same kinds.
+> - **The gate's program** accepts agreement on a summary of the structure where exact equality fails. All 209 runs
+>   it compared matched exactly, so no verdict changes; the condition should require exact equality.
+> - **The later check** is narrowed too; its note carries the changes
+>   ([the check](../FOLLOWS-THE-FORM-20261125-001/checks/what_decides_the_class/README.md)).
 
 ## Verdicts
 

@@ -8,6 +8,40 @@ ticket B: [result](../MADE-COPIER-20261125-001B/results.md), [claim](claim_b.md)
 ticket C: [result](../MADE-COPIER-20261125-001C/results.md), [claim](claim_c.md), [definitions](definitions_c.md) ·
 [survey of the record](survey.md) · [referee hand-off](referee_handoff.md) · [advisor reviews](advisor/)
 
+> **Referee report R1, 26 November 2026: confirmed with fixes, no block** ([the report](referee-R1/report.md)). An
+> independent referee regrew all 17 confirmed cases of ticket C and their 91,300 continuations with its own code,
+> and recounted tickets A and B. No copier was found; that verdict stands for what was run. Read this note with
+> these changes.
+> - **Counting (not a block).** The 17 are ordered-pair cases in 16 growths on 15 starts. They survive one family at
+>   0.01 over 17. "Sixteen forms in hand" should read 11 first forms, 15 groups by law.
+> - **What the 17 show (narrowing).** An effect of the second part with its form held fixed: two parts of its form,
+>   descended from the first pattern alone, are met more often with joins and takes between the two descents allowed
+>   than in each control. The controls never changed the second part's form in a growth, so "the pattern is not a
+>   function of what it is given" should read: no first form was confirmed for two forms of second part under one
+>   law. "With the two unable to meet" was: with direct joins and takes between the two descents masked; even fully
+>   masked, descendants of the two came to belong to one part in every positive case.
+> - **The start (narrowing).** All 17 have a connection through start knots. Two also have one through made knots
+>   alone at the meeting round. None meets ticket C's stricter requirement that every linking knot be made.
+> - **Renaming (narrowing).** The exact argument that renaming changes no rate is false as stated: exchanging two
+>   usable loose names on one parent can change which goes to its join and which to its offshoot. With the
+>   qualification ticket B already carries (a parent's interchangeable loose distinctions may be permuted) it
+>   holds for ideal sampling. All 157 completed checks agreed; of the 210 tests on the presence of a pair, 105 could
+>   have rejected.
+> - **Ticket A (narrowing).** "The one case is gone when the start is renamed" is the values case (it failed four
+>   renumberings of four); the main form case failed two of three; another form case, under the take by parent
+>   steps, survived all 28 added numberings and failed for the class. For "no made first pattern leaves two of a
+>   second" read "no registered class passed the copier test". Three arguments are narrowed in the report: "at most
+>   two holders and so no tie" needs the knot law (two parity knots on {a, b, x} and {a, b, y} tie x and y); "a knot
+>   holding barred distinctions has no children" needs the start conditions it was checked under; and a take can
+>   change a whole part without showing in the next round's trace of the first pattern.
+> - **Ticket B (narrowing).** "They are its own doing" overstated it. The second pattern alone reached two within
+>   eight rounds in all 100 runs, and had two at the round where the two together first did in 62. In one start the
+>   two together reach two in round 2 and each control in round 5.
+> - **Rates and scope (narrowing).** The bounds where no case was found used the mean weight of the prefix run, not
+>   of the eligible census; the corrected bounds by law are in the report (from 0.30% to 10% under the census
+>   weighting, the last on 30 starts). "Second parts' members hold at most one loose distinction" is about 497 main
+>   cases under one law; in 11 of the 17 confirmed cases a member holds two.
+
 ## The answer
 
 The owner asked for a copier that is a pattern, not a law: a logical structure the growth makes, which on meeting a

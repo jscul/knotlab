@@ -343,6 +343,7 @@ evidence: results and their status come from the records each entry links.
 | [A285](#a285--a-threshold-a-new-knot-reads-from-itself-two-forms) | A threshold a new knot reads from itself: two forms | scaffold | Assumed |
 | [A286](#a286--strata-starts-built-by-hand-with-large-groups-a-second-weighting-and-a-longer-horizon-to-test-the-late-view-predictor) | Strata, starts built by hand with large groups, a second weighting and a longer horizon, to test the late-view predictor | scaffold | Assumed |
 | [A287](#a287--a-round-1-group-of-three-or-more-knots-is-one-cell-of-the-map-of-joins) | A round-1 group of three or more knots is one cell of the map of joins | reading | Under challenge |
+| [A288](#a288--a-reader-as-one-start-knots-descendants-a-region-cut-at-holders-the-round-and-a-cap-to-grow-a-view-on-demand) | A reader as one start knot's descendants, a region cut at holders, the round and a cap, to grow a view on demand | scaffold | Assumed |
 
 ## Entries
 
@@ -5961,3 +5962,23 @@ evidence: results and their status come from the records each entry links.
   - 2026-11-26 · Refereed (R1 on `LATE-VIEWS-20261126-001`, confirmed with fixes, no Block): the misses are 40 starts
     with cells sharing a knot and two with a block meeting a four-knot cell; the rule is credited to the cluster-count study.
   - 2026-11-26 · Entered under challenge with `LATE-VIEWS-20261126-001` (computed; referee pending).
+
+### A288 · A reader as one start knot's descendants, a region cut at holders, the round and a cap, to grow a view on demand
+
+**Assumed** · 2026-11-26 · scaffold
+
+- **Statement.** Choices made by `ON-DEMAND-20261126-001` to test whether a local reader's view can be computed from only
+  the part of the start it needs: (1) a reader is one live start knot, and its view is the round's births that descend
+  from it; (2) a region is a set of live start knots with each holder's block cut to it and the open counts unchanged;
+  (3) rounds are run together (the earlier asynchronous study shows births one at a time from a record of parents can
+  replace them; not composed here); (4) the full growth stops before a round of more than 3,000 births and later rounds
+  are not read; (5) the populations: the 'tree' weighting at 40 knots, the 'tree+' weighting at 25 knots and the uniform
+  six-knot census sample, with stated seeds, one reader per start. Nothing in the model supplies any of them.
+- **Why.** Adopted by the thread on 26 November 2026 with the advisor's review, which named the round and the cap as
+  global reads to record and asked for admission during the growth.
+- **Rests on it.** Whatever the study claims about how much of the start a reader needs (filled in at its close).
+- **Challenge.** A reader that is a made knot or a set of knots, or a view of the births within a number of holder steps
+  rather than descendants; admission composed with births one at a time; no cap; larger starts and other weightings.
+  The model is not expected to supply them: they are how an observer is placed in the growth.
+- **History.**
+  - 2026-11-26 · Entered with `ON-DEMAND-20261126-001` at its freeze.

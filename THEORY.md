@@ -959,7 +959,7 @@ comes near 2.1 knots per distinction (known; the exact value for three-place
 knots is open), and the contradiction that ends a large pattern is never local
 (known). Open: what the law reads off the patterns that live, what other
 growth processes do, and whether the law's own quantities approach a limit as
-a pattern nears its end, as John Cullen expects. A census is pre-registered.
+a pattern nears its end, as the program's owner expects. A census is pre-registered.
 
 Evidence: [Intuitions, lesson 7.3](INTUITIONS.md#73-every-meeting-pattern-none-chosen), [the census's pre-registration](research/RANDOM-FATES-20261112-001/preregistration.md)
 
@@ -993,7 +993,7 @@ copies, every distinction the block cannot spare is tied across the whole
 pattern (in 47 of 87 small blocks), and nesting deeper adds nothing new.
 Proved: the pinned distinctions are exactly those no state of the block can
 flip alone, pinned by equality. Open: pins that vary (a twisted binding), and
-which reading John meant; whether the series are bound beside or inside one
+which reading the owner meant; whether the series are bound beside or inside one
 another, he said, "We need to suss this out".
 
 Evidence: [bases within bases](research/BASES-WITHIN-20261112-001/bases_within.md), [nesting by substitution](research/SUBST-NEST-20261112-001/subst_nest.md), [the pinning theorem](research/PIN-RULE-20261112-001/pin_rule.md), [Intuitions, lesson 7.3](INTUITIONS.md#73-every-meeting-pattern-none-chosen)

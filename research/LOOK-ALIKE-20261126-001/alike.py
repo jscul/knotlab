@@ -27,7 +27,7 @@ sys.path.insert(0, ROOT + '/experiments/COPYING-PARTS-20261123-001A/COPYING-PART
 import eng
 import cpcensus
 
-ROUNDS, BOUND = 20, 30000
+ROUNDS, BOUND = int(os.environ.get("ALIKE_ROUNDS", 20)), 30000
 
 
 def census(n):

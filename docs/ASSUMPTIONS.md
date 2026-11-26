@@ -339,6 +339,7 @@ evidence: results and their status come from the records each entry links.
 | [A281](#a281--an-origin-can-be-found-or-invented-from-what-is-here) | An origin can be found or invented from what is here | working premise | Assumed |
 | [A282](#a282--five-senders-caps-of-four-to-seven-and-two-starts-built-by-hand-to-find-which-receivers-switch) | Five senders, caps of four to seven and two starts built by hand, to find which receivers switch | scaffold | Assumed |
 | [A283](#a283--the-damage-of-a-change-read-without-names-with-a-struck-pulse-and-a-mark-at-a-made-knot) | The damage of a change read without names, with a struck pulse and a mark at a made knot | scaffold | Assumed |
+| [A284](#a284--a-new-knot-holds-back-part-of-what-it-is-owed-two-forms) | A new knot holds back part of what it is owed: two forms | scaffold | Assumed |
 
 ## Entries
 
@@ -5865,9 +5866,24 @@ evidence: results and their status come from the records each entry links.
   payment it caused would test reading 3 of the decision. The model is not expected to supply these readings: they are
   how an observer outside compares two growths, kept until a pattern inside the growth can make the comparison.
 - **History.**
+  - 2026-11-26 · `LOOK-ALIKE-20261126-001` ([decision](../research/LOOK-ALIKE-20261126-001/decision.md)) used the two readings
+    without names on every census start of one to five knots under ordinary growth: each start's view settles into a few kinds
+    of birth counted by polynomials, and the settled views decide which starts agree up to the count (computed, referee
+    pending). The readings stay a scaffold: they are how an outside observer compares growths.
   - 2026-11-26 · Referee R1 on `HOW-MUCH-ARRIVES-20261126-001`: confirmed with fixes and one Block (moves leaving a start knot
     two places, and a short start knot waiting, are not ordinary growth from admissible starts); its refund control struck a
     pulse's advance payment too and undid the pulse in 155 of 155, the test of reading 4 this entry asked for.
   - 2026-11-26 · Entered with `HOW-MUCH-ARRIVES-20261126-001`. Swapped within it: the knot law (161 jobs identical under
     parity), the reading (by name, sig0, sig1), six starts of four kinds. Not swapped: the signature's depth, the pulse's
     rule.
+
+### A284 · A new knot holds back part of what it is owed: two forms
+
+**Assumed** · 2026-11-26 · scaffold
+
+- **Statement.** For one study of G18, two laws in place of the ordinary count's fresh count f = max(D, 3 − p, 1) (D what the new knot is owed, p what it was given), each kept above the same floor: INHERIT, f = min(D, p), a knot takes no more fresh distinctions than it was given; NET-OWING, f = D − p + 1, what a knot was given pays part of what it is owed. Neither sets a number beyond the ordinary count's; each reads only what a birth knows. Chosen with the advisor as one form from each of two classes (a shortfall that grows with what is owed beyond what was given; a constant shortfall of one at every join).
+- **Why.** Adopted by the thread on 26 November 2026 for `HOLD-BACK-20261126-001` at the coordinator's go-ahead: under the ordinary count no knot made after the start is ever short and a pattern's own knots cannot hear later far changes; every late hearing found came under a ration that gives less than the demand, chosen by hand.
+- **Rests on it.** Whatever the study finds about late hearing from afar under a law in which knots hold back ([the note](../research/HOLD-BACK-20261126-001/README.md)).
+- **Challenge.** Run the advisor's other forms (one fresh distinction per parent; keep one back at every birth) and starts with takes, where the forms differ; a result that holds under every form is about holding back, one that holds under one is about that form. The model is not expected to keep either form; they are candidates for G18's comparison.
+- **History.**
+  - 2026-11-26 · Entered with `HOLD-BACK-20261126-001`.

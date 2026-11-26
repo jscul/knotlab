@@ -3,7 +3,7 @@
 Epic `REVIEW-LEADS-20261123-001`, 2026-11-23. It ran the six leads B309 to B314 that the coordinator's review of four
 Codex threads recorded the same morning, and one follow-up. Each ticket froze its design after a cold review by the
 advisor model, was implemented by a sub-agent (Claude Sonnet for A to F, Claude Opus for G) and was checked by the
-thread with separate code or by hand. Every result is referee pending. [Referee hand-off](referee_handoff.md) ·
+thread with separate code or by hand. Every result was referee pending; tickets A and C were refereed on 26 November (R1, [report](../REVIEW-LEADS-20261123-001A/referee-R1/report.md): confirmed with fixes, no Block; narrowings logged in `docs/CORRECTIONS.md`). [Referee hand-off](referee_handoff.md) ·
 [how the advisor was used](advisor/use.md)
 
 ## What each ticket found

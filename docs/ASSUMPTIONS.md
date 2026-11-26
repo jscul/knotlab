@@ -350,6 +350,8 @@ evidence: results and their status come from the records each entry links.
 | [A292](#a292--a-swaps-lift-its-signed-weightings-two-readings-and-the-readers-distinctions-to-test-a-sign-to-the-sides) | A swap's lift, its signed weightings, two readings and the readers' distinctions, to test a sign to the sides | scaffold | Assumed |
 | [A293](#a293--emergence-is-a-fact-held-by-the-whole-and-by-no-part-and-it-shows-up-at-more-than-one-layer) | Emergence is a fact held by the whole and by no part, and it shows up at more than one layer | interpretation | Assumed |
 | [A294](#a294--a-contradiction-among-views-is-not-a-failure-one-view-never-gives-both-answers) | A contradiction among views is not a failure; one view never gives both answers | interpretation | Assumed |
+| [A295](#a295--every-two-distinctions-have-a-joint-value-even-where-no-knot-holds-both) | Every two distinctions have a joint value, even where no knot holds both | premise | Under challenge |
+| [A296](#a296--no-signalling-means-no-free-sender-can-change-the-other-readers-complete-record-tables-come-from-one-state-of-the-whole) | No signalling means no free sender can change the other reader's complete record; tables come from one state of the whole | scaffold | Assumed |
 
 ## Entries
 
@@ -5002,6 +5004,7 @@ evidence: results and their status come from the records each entry links.
 - **Rests on it.** The statement of REVIEW-LEADS-20261123-001A that ordinary growth keeps passing where its rewiring fails (442 of 444 histories).
 - **Challenge.** Rewire only among knots within a bounded number of shared distinctions, so that the comparison is with other local laws and not with blind ones.
 - **History.**
+  - 2026-11-26 · Qualified by referee R1 of `REVIEW-LEADS-20261123-001A`: the frozen rule allows fewer parents when too few are eligible, and 70 of 4,480 rewirings missed one parent (40 histories); without them 405 of 407 comparisons qualify. [Report](../research/REVIEW-LEADS-20261123-001A/referee-R1/report.md)
   - 2026-11-23 · Recorded at the freeze, on the advisor's objection that the test might only track loop count. [Result](../research/REVIEW-LEADS-20261123-001A/result.md)
 
 ### A217 · Let each rewarded example be a parity knot over window-count parities
@@ -6119,3 +6122,46 @@ evidence: results and their status come from the records each entry links.
   - 2026-11-26 · The earlier studies that ran the proposal cited, and the assumption beneath A126 named as the one
     under challenge (the advisor's reading, through the coordinator).
   - 2026-11-26 · Entered at the owner's request.
+
+### A295 · Every two distinctions have a joint value, even where no knot holds both
+
+**Under challenge** · 2026-11-26 · premise
+
+- **Statement.** Any two distinctions can be given values together, whether or not some knot holds both: in the
+  literature's terms, all values commute. Every growth engine uses it when it decides that a new knot is implied by
+  summing the old knots' parity rows over GF(2) (`startlib.py`, `gf2`; `freelib.py`; the closing law of
+  `ERASURE-AND-CLOSING-SIGNS-20261121-001B`), and so under parity the closing sign of a closed part is forced even and
+  the state with every value 0 stays allowed. Its named rival is **rule R**: two values commute exactly when some knot
+  holds both, and otherwise do not, so that bringing a distinction's two occurrences together in a closing sum costs a
+  sign for each pair that does not commute.
+- **Why.** Taken by default: a state was always a list of values, one per distinction, and every rule read it that way.
+  The record never stated it as a choice; the advisor named it on 26 November 2026 as the ingredient beneath A126.
+- **Rests on it.** A126 (growth never forbids what the old knots allowed) in its parity form; the closing law (growth
+  forces the closing sign even); the canonical test's third condition, K3, read as one relation over all the
+  distinctions (the knot test itself is not changed); every Bell bound proved on a common state.
+- **Challenge.** `NO-WHOLE-STATE-20261126-001`. At the four-knot closure that ordinary growth reaches from a ring of
+  three knots, rule R forces the closing sign odd (the literature's three-reader pattern of Mermin, 1990), so the whole
+  has no list of values while every part read by its three readers is allowed and the parts agree; with values
+  commuting the sign is forced even. The identity behind it (the sum of the knots' signs equals the reordering cost) holds
+  at all 115 stored operator witnesses of `FOUR-READINGS-20261120-001A`. Expected to stay the rule of the current
+  engines; R is a rival law to be set beside it under G18, not a replacement. Over that study's 173 closed patterns R
+  makes every knot definite on one state at 21 and forces an odd closing at 12 of the 121 that growth reaches; with a
+  free choice of which unheld pairs fail to commute an odd closing is attainable at all 173. But R changes at a birth
+  (three loose distinctions of three knots, pairwise non-commuting under R, become one knot with no parity), so it is
+  read only off the finished pattern: supplied, not native. Referee R1 of the study narrowed this: commuting values suffice for the
+  even sign but are not necessary (R forces even at five reached types), and R can be evaluated stage by stage; what
+  the birth rules out is a persistent R. The next test reads R off the whole fixed structure (`EVENTUAL-R-20261126-001`).
+- **History.**
+  - 2026-11-26 · Entered, under challenge, by `NO-WHOLE-STATE-20261126-001` at the coordinator's request, beside A126
+    and A294.
+
+### A296 · No signalling means no free sender can change the other reader's complete record; tables come from one state of the whole
+
+**Assumed** · 2026-11-26 · scaffold
+
+- **Statement.** For the classification of every recorded table above the classical bound: (1) a table signals when some free sender, a reader whose setting is any function of its own visible record, changes the distribution of the other reader's complete record; fixed settings are the constant functions; (2) every table is computed from the allowed states of finished structures, one state of the whole for each setting pair, with each outcome a function of its reader's record.
+- **Why.** Adopted by the thread on 26 November 2026 for `EXCESS-KINDS-20261126-001` at the coordinator's pick: quantum theory meets the free-sender standard (a party may choose its setting from its own earlier outcomes without changing the other's statistics), and (2) is the form every recorded table has.
+- **Rests on it.** The three kinds and Theorem K ([the note](../research/EXCESS-KINDS-20261126-001/README.md)); the whole-stage 9/4 is kind (b) only under (1): at fixed addresses it hides every record and lies outside the quantum set.
+- **Challenge.** Read the record with fixed settings only (the 9/4 tables then stand as no-signalling tables beyond quantum theory); drop (2), as the study of patterns with allowed parts and no allowed whole does. The model is not expected to keep (2) if that study succeeds.
+- **History.**
+  - 2026-11-26 · Entered with `EXCESS-KINDS-20261126-001`.

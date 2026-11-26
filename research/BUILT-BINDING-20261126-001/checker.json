@@ -1,0 +1,280 @@
+[
+ {
+  "variant": "base",
+  "tuples": [
+   [
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    1,
+    1
+   ],
+   [
+    1,
+    0,
+    1
+   ],
+   [
+    1,
+    1,
+    0
+   ]
+  ],
+  "checks": [
+   {
+    "contact": "z3",
+    "clauses": "z1 z2 ~z3; z1 ~z2 z3; ~z1 z2 z3; ~z1 ~z2 ~z3",
+    "checker": {
+     "allowed": [
+      "000",
+      "011",
+      "101",
+      "110"
+     ],
+     "binding": true,
+     "coexistence": true,
+     "contact": "z3",
+     "erasure": "forgetting",
+     "invisible_in_parts": true,
+     "is_knot": true,
+     "loops": [
+      "z1",
+      "z2"
+     ],
+     "loss_on_erasure": true,
+     "minimum_width": 3,
+     "notes": [],
+     "pairwise_definable": false,
+     "variables": [
+      "z1",
+      "z2",
+      "z3"
+     ]
+    }
+   },
+   {
+    "contact": "z1",
+    "clauses": "z1 z2 ~z3; z1 ~z2 z3; ~z1 z2 z3; ~z1 ~z2 ~z3",
+    "checker": {
+     "allowed": [
+      "000",
+      "011",
+      "101",
+      "110"
+     ],
+     "binding": true,
+     "coexistence": true,
+     "contact": "z1",
+     "erasure": "forgetting",
+     "invisible_in_parts": true,
+     "is_knot": true,
+     "loops": [
+      "z2",
+      "z3"
+     ],
+     "loss_on_erasure": true,
+     "minimum_width": 3,
+     "notes": [],
+     "pairwise_definable": false,
+     "variables": [
+      "z2",
+      "z3",
+      "z1"
+     ]
+    }
+   },
+   {
+    "contact": "z2",
+    "clauses": "z1 z2 ~z3; z1 ~z2 z3; ~z1 z2 z3; ~z1 ~z2 ~z3",
+    "checker": {
+     "allowed": [
+      "000",
+      "011",
+      "101",
+      "110"
+     ],
+     "binding": true,
+     "coexistence": true,
+     "contact": "z2",
+     "erasure": "forgetting",
+     "invisible_in_parts": true,
+     "is_knot": true,
+     "loops": [
+      "z1",
+      "z3"
+     ],
+     "loss_on_erasure": true,
+     "minimum_width": 3,
+     "notes": [],
+     "pairwise_definable": false,
+     "variables": [
+      "z1",
+      "z3",
+      "z2"
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "variant": "J two loose",
+  "tuples": [
+   [
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    1
+   ],
+   [
+    0,
+    1,
+    0
+   ],
+   [
+    0,
+    1,
+    1
+   ],
+   [
+    1,
+    0,
+    0
+   ],
+   [
+    1,
+    0,
+    1
+   ],
+   [
+    1,
+    1,
+    0
+   ],
+   [
+    1,
+    1,
+    1
+   ]
+  ],
+  "checks": [
+   {
+    "contact": "z3",
+    "clauses": "z1 ~z1",
+    "checker": {
+     "allowed": [
+      "000",
+      "001",
+      "010",
+      "011",
+      "100",
+      "101",
+      "110",
+      "111"
+     ],
+     "binding": false,
+     "coexistence": true,
+     "contact": "z3",
+     "erasure": "forgetting",
+     "invisible_in_parts": true,
+     "is_knot": false,
+     "loops": [
+      "z1",
+      "z2"
+     ],
+     "loss_on_erasure": true,
+     "minimum_width": 0,
+     "notes": [
+      "the relation allows every joint state, so nothing binds"
+     ],
+     "pairwise_definable": true,
+     "variables": [
+      "z1",
+      "z2",
+      "z3"
+     ]
+    }
+   },
+   {
+    "contact": "z1",
+    "clauses": "z1 ~z1",
+    "checker": {
+     "allowed": [
+      "000",
+      "001",
+      "010",
+      "011",
+      "100",
+      "101",
+      "110",
+      "111"
+     ],
+     "binding": false,
+     "coexistence": true,
+     "contact": "z1",
+     "erasure": "forgetting",
+     "invisible_in_parts": true,
+     "is_knot": false,
+     "loops": [
+      "z2",
+      "z3"
+     ],
+     "loss_on_erasure": true,
+     "minimum_width": 0,
+     "notes": [
+      "the relation allows every joint state, so nothing binds"
+     ],
+     "pairwise_definable": true,
+     "variables": [
+      "z2",
+      "z3",
+      "z1"
+     ]
+    }
+   },
+   {
+    "contact": "z2",
+    "clauses": "z1 ~z1",
+    "checker": {
+     "allowed": [
+      "000",
+      "001",
+      "010",
+      "011",
+      "100",
+      "101",
+      "110",
+      "111"
+     ],
+     "binding": false,
+     "coexistence": true,
+     "contact": "z2",
+     "erasure": "forgetting",
+     "invisible_in_parts": true,
+     "is_knot": false,
+     "loops": [
+      "z1",
+      "z3"
+     ],
+     "loss_on_erasure": true,
+     "minimum_width": 0,
+     "notes": [
+      "the relation allows every joint state, so nothing binds"
+     ],
+     "pairwise_definable": true,
+     "variables": [
+      "z1",
+      "z3",
+      "z2"
+     ]
+    }
+   }
+  ]
+ }
+]

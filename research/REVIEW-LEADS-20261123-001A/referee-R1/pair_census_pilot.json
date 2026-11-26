@@ -1,0 +1,1437 @@
+{
+  "settings": {
+    "seed": 2026112603,
+    "pilot": true,
+    "larger_pair_sample_per_pool": 200,
+    "larger_function_sample_limit_per_cut": 128
+  },
+  "complete_record_control": {
+    "hidden": true,
+    "parity": "20/9",
+    "unrestricted": "20/9"
+  },
+  "pools": {
+    "c1_k3_i3": {
+      "exact_tables": 596,
+      "exact_nonempty": 595,
+      "exact_allocation": 160,
+      "exact_ordered_attempted": 355216,
+      "exact_ordered_no_word": 1209,
+      "projective_tables": 495,
+      "projective_allocation": 133,
+      "projective_ordered_attempted": 245025,
+      "projective_ordered_no_word": 18,
+      "row_classes": 277,
+      "row_classes_allocation": 107,
+      "row_class_sizes": {
+        "1": 99,
+        "2": 158,
+        "4": 20
+      },
+      "archived_scoring": "ordered projective pairs",
+      "counts": {
+        "totals": {
+          "pairs_with_no_word": 12,
+          "pairs_evaluated": 7908,
+          "pairs_hidden": 4696,
+          "alloc_pairs": 399,
+          "pairs_hidden_alloc": 399
+        },
+        "blocks": [
+          {
+            "rows": [
+              0,
+              16
+            ],
+            "mismatches": null
+          }
+        ],
+        "row_span_kinds": 8,
+        "setting_span_kinds": 2
+      },
+      "witness_sample": {
+        "witness_rows": 10,
+        "allocation_witnesses": 2,
+        "sample_primary_witness_has_allocation": 1,
+        "sample_repeated_constraint": 0
+      },
+      "witness_maxima_checked": 2,
+      "exact_parity_replay": {
+        "counts": {
+          "tables": 1337,
+          "hidden": 699,
+          "allocation": 210,
+          "all_gt2": 45,
+          "hidden_eq2": 79,
+          "hidden_gt2": 0,
+          "hidden_alloc_eq2": 15
+        },
+        "maximum": {
+          "all": "8/3",
+          "hidden": "2",
+          "allocation": "2"
+        }
+      },
+      "count_seconds": 0.004,
+      "score_seconds": 0.099,
+      "wall_seconds": 0.118,
+      "structure_count_from_archive": 7023
+    },
+    "c1_k4_i5": {
+      "exact_tables": 8647,
+      "exact_nonempty": 8646,
+      "exact_allocation": 1810,
+      "exact_ordered_attempted": 74770609,
+      "exact_ordered_no_word": 18861,
+      "projective_tables": 6592,
+      "projective_allocation": 1270,
+      "projective_ordered_attempted": 43454464,
+      "projective_ordered_no_word": 1250,
+      "row_classes": 3328,
+      "row_classes_allocation": 1000,
+      "row_class_sizes": {
+        "1": 884,
+        "2": 2034,
+        "4": 410
+      },
+      "archived_scoring": "unordered row-class pairs",
+      "counts": {
+        "totals": {
+          "pairs_with_no_word": 0,
+          "pairs_evaluated": 53128,
+          "pairs_hidden": 31352,
+          "alloc_pairs": 11934,
+          "pairs_hidden_alloc": 11934
+        },
+        "blocks": [
+          {
+            "rows": [
+              0,
+              16
+            ],
+            "mismatches": null
+          }
+        ],
+        "row_span_kinds": 20,
+        "setting_span_kinds": 2
+      },
+      "witness_sample": {
+        "witness_rows": 9,
+        "allocation_witnesses": 1,
+        "sample_primary_witness_has_allocation": 1,
+        "sample_repeated_constraint": 0
+      },
+      "witness_maxima_checked": 2,
+      "exact_parity_replay": {
+        "attempted": 200,
+        "no_word": 0,
+        "counts": {
+          "tables": 200,
+          "hidden": 100,
+          "allocation": 23,
+          "all_gt2": 0,
+          "hidden_eq2": 0,
+          "hidden_gt2": 0,
+          "hidden_alloc_eq2": 0
+        },
+        "maximum": {
+          "all": "1139/945",
+          "hidden": "134/149",
+          "allocation": "886/1281"
+        }
+      },
+      "count_seconds": 0.018,
+      "score_seconds": 0.011,
+      "wall_seconds": 0.112,
+      "structure_count_from_archive": 4501281
+    },
+    "c1_t6alloc": {
+      "exact_tables": 14000,
+      "exact_nonempty": 14000,
+      "exact_allocation": 14000,
+      "exact_ordered_attempted": 196000000,
+      "exact_ordered_no_word": 5390,
+      "projective_tables": 7809,
+      "projective_allocation": 7809,
+      "projective_ordered_attempted": 60980481,
+      "projective_ordered_no_word": 1456,
+      "row_classes": 6744,
+      "row_classes_allocation": 6744,
+      "row_class_sizes": {
+        "1": 5679,
+        "2": 1065
+      },
+      "archived_scoring": "unordered row-class pairs",
+      "counts": {
+        "totals": {
+          "pairs_with_no_word": 0,
+          "pairs_evaluated": 476432,
+          "pairs_hidden": 476432,
+          "alloc_pairs": 476432,
+          "pairs_hidden_alloc": 476432
+        },
+        "blocks": [
+          {
+            "rows": [
+              0,
+              16
+            ],
+            "mismatches": null
+          },
+          {
+            "rows": [
+              588,
+              604
+            ],
+            "mismatches": null
+          },
+          {
+            "rows": [
+              1238,
+              1254
+            ],
+            "mismatches": null
+          },
+          {
+            "rows": [
+              1975,
+              1991
+            ],
+            "mismatches": null
+          },
+          {
+            "rows": [
+              2850,
+              2866
+            ],
+            "mismatches": null
+          },
+          {
+            "rows": [
+              3991,
+              4007
+            ],
+            "mismatches": null
+          }
+        ],
+        "row_span_kinds": 63,
+        "setting_span_kinds": 1
+      },
+      "witness_sample": {
+        "witness_rows": 16,
+        "allocation_witnesses": 8,
+        "sample_primary_witness_has_allocation": 8,
+        "sample_repeated_constraint": 0
+      },
+      "witness_maxima_checked": 6,
+      "exact_parity_replay": {
+        "attempted": 200,
+        "no_word": 0,
+        "counts": {
+          "tables": 200,
+          "hidden": 200,
+          "allocation": 200,
+          "all_gt2": 0,
+          "hidden_eq2": 0,
+          "hidden_gt2": 0,
+          "hidden_alloc_eq2": 0
+        },
+        "maximum": {
+          "all": "292/437",
+          "hidden": "292/437",
+          "allocation": "292/437"
+        }
+      },
+      "count_seconds": 0.091,
+      "score_seconds": 0.011,
+      "wall_seconds": 0.266,
+      "draw_archive": {
+        "mode": "alloc",
+        "seed": 11,
+        "tried": 458772,
+        "valid": 236053
+      }
+    },
+    "c1_t6allocb": {
+      "exact_tables": 20000,
+      "exact_nonempty": 20000,
+      "exact_allocation": 20000,
+      "exact_ordered_attempted": 400000000,
+      "exact_ordered_no_word": 11550,
+      "projective_tables": 11529,
+      "projective_allocation": 11529,
+      "projective_ordered_attempted": 132917841,
+      "projective_ordered_no_word": 3182,
+      "row_classes": 9906,
+      "row_classes_allocation": 9906,
+      "row_class_sizes": {
+        "1": 8283,
+        "2": 1623
+      },
+      "archived_scoring": "unordered row-class pairs",
+      "counts": {
+        "totals": {
+          "pairs_with_no_word": 38,
+          "pairs_evaluated": 1336778,
+          "pairs_hidden": 1336778,
+          "alloc_pairs": 1336778,
+          "pairs_hidden_alloc": 1336778
+        },
+        "blocks": [
+          {
+            "rows": [
+              0,
+              16
+            ],
+            "mismatches": null
+          },
+          {
+            "rows": [
+              422,
+              438
+            ],
+            "mismatches": null
+          },
+          {
+            "rows": [
+              863,
+              879
+            ],
+            "mismatches": null
+          },
+          {
+            "rows": [
+              1327,
+              1343
+            ],
+            "mismatches": null
+          },
+          {
+            "rows": [
+              1818,
+              1834
+            ],
+            "mismatches": null
+          },
+          {
+            "rows": [
+              2340,
+              2356
+            ],
+            "mismatches": null
+          },
+          {
+            "rows": [
+              2901,
+              2917
+            ],
+            "mismatches": null
+          },
+          {
+            "rows": [
+              3512,
+              3528
+            ],
+            "mismatches": null
+          },
+          {
+            "rows": [
+              4187,
+              4203
+            ],
+            "mismatches": null
+          },
+          {
+            "rows": [
+              4953,
+              4969
+            ],
+            "mismatches": null
+          },
+          {
+            "rows": [
+              5862,
+              5878
+            ],
+            "mismatches": null
+          },
+          {
+            "rows": [
+              7046,
+              7062
+            ],
+            "mismatches": null
+          }
+        ],
+        "row_span_kinds": 82,
+        "setting_span_kinds": 1
+      },
+      "witness_sample": {
+        "witness_rows": 16,
+        "allocation_witnesses": 8,
+        "sample_primary_witness_has_allocation": 8,
+        "sample_repeated_constraint": 0
+      },
+      "witness_maxima_checked": 12,
+      "exact_parity_replay": {
+        "attempted": 200,
+        "no_word": 0,
+        "counts": {
+          "tables": 200,
+          "hidden": 200,
+          "allocation": 200,
+          "all_gt2": 0,
+          "hidden_eq2": 0,
+          "hidden_gt2": 0,
+          "hidden_alloc_eq2": 0
+        },
+        "maximum": {
+          "all": "2/3",
+          "hidden": "2/3",
+          "allocation": "2/3"
+        }
+      },
+      "count_seconds": 0.081,
+      "score_seconds": 0.011,
+      "wall_seconds": 0.356,
+      "draw_archive": {
+        "mode": "alloc",
+        "seed": 21,
+        "tried": 867592,
+        "valid": 446131
+      }
+    },
+    "c1_t6free": {
+      "exact_tables": 14000,
+      "exact_nonempty": 14000,
+      "exact_allocation": 0,
+      "exact_ordered_attempted": 196000000,
+      "exact_ordered_no_word": 3080,
+      "projective_tables": 8027,
+      "projective_allocation": 0,
+      "projective_ordered_attempted": 64432729,
+      "projective_ordered_no_word": 1012,
+      "row_classes": 6242,
+      "row_classes_allocation": 0,
+      "row_class_sizes": {
+        "1": 4859,
+        "2": 1106,
+        "3": 152,
+        "4": 125
+      },
+      "archived_scoring": "unordered row-class pairs",
+      "counts": {
+        "totals": {
+          "pairs_with_no_word": 0,
+          "pairs_evaluated": 440928,
+          "pairs_hidden": 234894,
+          "alloc_pairs": 0,
+          "pairs_hidden_alloc": 0
+        },
+        "blocks": [
+          {
+            "rows": [
+              0,
+              16
+            ],
+            "mismatches": null
+          },
+          {
+            "rows": [
+              544,
+              560
+            ],
+            "mismatches": null
+          },
+          {
+            "rows": [
+              1145,
+              1161
+            ],
+            "mismatches": null
+          },
+          {
+            "rows": [
+              1828,
+              1844
+            ],
+            "mismatches": null
+          },
+          {
+            "rows": [
+              2638,
+              2654
+            ],
+            "mismatches": null
+          },
+          {
+            "rows": [
+              3694,
+              3710
+            ],
+            "mismatches": null
+          }
+        ],
+        "row_span_kinds": 57,
+        "setting_span_kinds": 2
+      },
+      "witness_sample": {
+        "witness_rows": 8,
+        "allocation_witnesses": 0,
+        "sample_primary_witness_has_allocation": 1,
+        "sample_repeated_constraint": 0
+      },
+      "witness_maxima_checked": 6,
+      "exact_parity_replay": {
+        "attempted": 200,
+        "no_word": 0,
+        "counts": {
+          "tables": 200,
+          "hidden": 106,
+          "allocation": 0,
+          "all_gt2": 0,
+          "hidden_eq2": 0,
+          "hidden_gt2": 0,
+          "hidden_alloc_eq2": 0
+        },
+        "maximum": {
+          "all": "31/30",
+          "hidden": "6/7",
+          "allocation": null
+        }
+      },
+      "count_seconds": 0.065,
+      "score_seconds": 0.082,
+      "wall_seconds": 0.267,
+      "draw_archive": {
+        "mode": "free",
+        "seed": 13,
+        "tried": 157259,
+        "valid": 114989
+      }
+    },
+    "c1_t6freeb": {
+      "exact_tables": 20000,
+      "exact_nonempty": 20000,
+      "exact_allocation": 0,
+      "exact_ordered_attempted": 400000000,
+      "exact_ordered_no_word": 6156,
+      "projective_tables": 11640,
+      "projective_allocation": 0,
+      "projective_ordered_attempted": 135489600,
+      "projective_ordered_no_word": 2244,
+      "row_classes": 9024,
+      "row_classes_allocation": 0,
+      "row_class_sizes": {
+        "1": 6998,
+        "2": 1612,
+        "3": 238,
+        "4": 176
+      },
+      "archived_scoring": "unordered row-class pairs",
+      "counts": {
+        "totals": {
+          "pairs_with_no_word": 29,
+          "pairs_evaluated": 1217635,
+          "pairs_hidden": 612087,
+          "alloc_pairs": 0,
+          "pairs_hidden_alloc": 0
+        },
+        "blocks": [
+          {
+            "rows": [
+              0,
+              16
+            ],
+            "mismatches": null
+          },
+          {
+            "rows": [
+              384,
+              400
+            ],
+            "mismatches": null
+          },
+          {
+            "rows": [
+              786,
+              802
+            ],
+            "mismatches": null
+          },
+          {
+            "rows": [
+              1209,
+              1225
+            ],
+            "mismatches": null
+          },
+          {
+            "rows": [
+              1656,
+              1672
+            ],
+            "mismatches": null
+          },
+          {
+            "rows": [
+              2132,
+              2148
+            ],
+            "mismatches": null
+          },
+          {
+            "rows": [
+              2643,
+              2659
+            ],
+            "mismatches": null
+          },
+          {
+            "rows": [
+              3199,
+              3215
+            ],
+            "mismatches": null
+          },
+          {
+            "rows": [
+              3814,
+              3830
+            ],
+            "mismatches": null
+          },
+          {
+            "rows": [
+              4512,
+              4528
+            ],
+            "mismatches": null
+          },
+          {
+            "rows": [
+              5340,
+              5356
+            ],
+            "mismatches": null
+          },
+          {
+            "rows": [
+              6419,
+              6435
+            ],
+            "mismatches": null
+          }
+        ],
+        "row_span_kinds": 69,
+        "setting_span_kinds": 2
+      },
+      "witness_sample": {
+        "witness_rows": 8,
+        "allocation_witnesses": 0,
+        "sample_primary_witness_has_allocation": 0,
+        "sample_repeated_constraint": 0
+      },
+      "witness_maxima_checked": 12,
+      "exact_parity_replay": {
+        "attempted": 200,
+        "no_word": 0,
+        "counts": {
+          "tables": 200,
+          "hidden": 102,
+          "allocation": 0,
+          "all_gt2": 0,
+          "hidden_eq2": 0,
+          "hidden_gt2": 0,
+          "hidden_alloc_eq2": 0
+        },
+        "maximum": {
+          "all": "6/5",
+          "hidden": "6/5",
+          "allocation": null
+        }
+      },
+      "count_seconds": 0.097,
+      "score_seconds": 0.081,
+      "wall_seconds": 0.347,
+      "draw_archive": {
+        "mode": "free",
+        "seed": 23,
+        "tried": 270585,
+        "valid": 197280
+      }
+    },
+    "c2_k3_i3": {
+      "exact_tables": 3018,
+      "exact_nonempty": 3018,
+      "exact_allocation": 721,
+      "exact_ordered_attempted": 9108324,
+      "exact_ordered_no_word": 164,
+      "projective_tables": 2635,
+      "projective_allocation": 619,
+      "projective_ordered_attempted": 6943225,
+      "projective_ordered_no_word": 86,
+      "row_classes": 1452,
+      "row_classes_allocation": 516,
+      "row_class_sizes": {
+        "1": 485,
+        "2": 859,
+        "4": 108
+      },
+      "archived_scoring": "ordered projective pairs",
+      "counts": {
+        "totals": {
+          "pairs_with_no_word": 10,
+          "pairs_evaluated": 42150,
+          "pairs_hidden": 26707,
+          "alloc_pairs": 1857,
+          "pairs_hidden_alloc": 1857
+        },
+        "blocks": [
+          {
+            "rows": [
+              0,
+              16
+            ],
+            "mismatches": null
+          }
+        ],
+        "row_span_kinds": 51,
+        "setting_span_kinds": 83
+      },
+      "witness_sample": {
+        "witness_rows": 9,
+        "allocation_witnesses": 1,
+        "sample_primary_witness_has_allocation": 1,
+        "sample_repeated_constraint": 0
+      },
+      "witness_maxima_checked": 2,
+      "exact_parity_replay": {
+        "counts": {
+          "tables": 3972,
+          "hidden": 2015,
+          "allocation": 537,
+          "all_gt2": 95,
+          "hidden_eq2": 206,
+          "hidden_gt2": 0,
+          "hidden_alloc_eq2": 23
+        },
+        "maximum": {
+          "all": "8/3",
+          "hidden": "2",
+          "allocation": "2"
+        }
+      },
+      "count_seconds": 0.02,
+      "score_seconds": 0.227,
+      "wall_seconds": 0.282,
+      "structure_count_from_archive": 41355
+    },
+    "c2_k4_i5": {
+      "exact_tables": 51596,
+      "exact_nonempty": 51595,
+      "exact_allocation": 10033,
+      "exact_ordered_attempted": 2662147216,
+      "exact_ordered_no_word": 151459,
+      "projective_tables": 39775,
+      "projective_allocation": 7300,
+      "projective_ordered_attempted": 1582050625,
+      "projective_ordered_no_word": 29128,
+      "row_classes": 20798,
+      "row_classes_allocation": 6056,
+      "row_class_sizes": {
+        "1": 5411,
+        "2": 13592,
+        "4": 1795
+      },
+      "archived_scoring": "unordered row-class pairs",
+      "counts": {
+        "totals": {
+          "pairs_with_no_word": 120,
+          "pairs_evaluated": 2808168,
+          "pairs_hidden": 1016821,
+          "alloc_pairs": 335319,
+          "pairs_hidden_alloc": 335319
+        },
+        "blocks": [
+          {
+            "rows": [
+              0,
+              16
+            ],
+            "mismatches": null
+          },
+          {
+            "rows": [
+              885,
+              901
+            ],
+            "mismatches": null
+          },
+          {
+            "rows": [
+              1812,
+              1828
+            ],
+            "mismatches": null
+          },
+          {
+            "rows": [
+              2786,
+              2802
+            ],
+            "mismatches": null
+          },
+          {
+            "rows": [
+              3817,
+              3833
+            ],
+            "mismatches": null
+          },
+          {
+            "rows": [
+              4913,
+              4929
+            ],
+            "mismatches": null
+          },
+          {
+            "rows": [
+              6092,
+              6108
+            ],
+            "mismatches": null
+          },
+          {
+            "rows": [
+              7373,
+              7389
+            ],
+            "mismatches": null
+          },
+          {
+            "rows": [
+              8790,
+              8806
+            ],
+            "mismatches": null
+          },
+          {
+            "rows": [
+              10399,
+              10415
+            ],
+            "mismatches": null
+          },
+          {
+            "rows": [
+              12307,
+              12323
+            ],
+            "mismatches": null
+          },
+          {
+            "rows": [
+              14794,
+              14810
+            ],
+            "mismatches": null
+          }
+        ],
+        "row_span_kinds": 275,
+        "setting_span_kinds": 1255
+      },
+      "witness_sample": {
+        "witness_rows": 8,
+        "allocation_witnesses": 0,
+        "sample_primary_witness_has_allocation": 0,
+        "sample_repeated_constraint": 0
+      },
+      "witness_maxima_checked": 12,
+      "exact_parity_replay": {
+        "attempted": 200,
+        "no_word": 0,
+        "counts": {
+          "tables": 200,
+          "hidden": 80,
+          "allocation": 20,
+          "all_gt2": 0,
+          "hidden_eq2": 0,
+          "hidden_gt2": 0,
+          "hidden_alloc_eq2": 0
+        },
+        "maximum": {
+          "all": "399867616/434293425",
+          "hidden": "50/73",
+          "allocation": "6/19"
+        }
+      },
+      "count_seconds": 0.275,
+      "score_seconds": 0.01,
+      "wall_seconds": 0.963,
+      "structure_count_from_archive": 27947475
+    },
+    "c2_t6alloc": {
+      "exact_tables": 14000,
+      "exact_nonempty": 14000,
+      "exact_allocation": 14000,
+      "exact_ordered_attempted": 196000000,
+      "exact_ordered_no_word": 2846,
+      "projective_tables": 7986,
+      "projective_allocation": 7986,
+      "projective_ordered_attempted": 63776196,
+      "projective_ordered_no_word": 1346,
+      "row_classes": 7282,
+      "row_classes_allocation": 7282,
+      "row_class_sizes": {
+        "1": 6578,
+        "2": 704
+      },
+      "archived_scoring": "unordered row-class pairs",
+      "counts": {
+        "totals": {
+          "pairs_with_no_word": 0,
+          "pairs_evaluated": 514512,
+          "pairs_hidden": 514512,
+          "alloc_pairs": 514512,
+          "pairs_hidden_alloc": 514512
+        },
+        "blocks": [
+          {
+            "rows": [
+              0,
+              16
+            ],
+            "mismatches": null
+          },
+          {
+            "rows": [
+              634,
+              650
+            ],
+            "mismatches": null
+          },
+          {
+            "rows": [
+              1336,
+              1352
+            ],
+            "mismatches": null
+          },
+          {
+            "rows": [
+              2133,
+              2149
+            ],
+            "mismatches": null
+          },
+          {
+            "rows": [
+              3078,
+              3094
+            ],
+            "mismatches": null
+          },
+          {
+            "rows": [
+              4309,
+              4325
+            ],
+            "mismatches": null
+          }
+        ],
+        "row_span_kinds": 595,
+        "setting_span_kinds": 1
+      },
+      "witness_sample": {
+        "witness_rows": 16,
+        "allocation_witnesses": 8,
+        "sample_primary_witness_has_allocation": 8,
+        "sample_repeated_constraint": 0
+      },
+      "witness_maxima_checked": 6,
+      "exact_parity_replay": {
+        "attempted": 200,
+        "no_word": 0,
+        "counts": {
+          "tables": 200,
+          "hidden": 200,
+          "allocation": 200,
+          "all_gt2": 0,
+          "hidden_eq2": 0,
+          "hidden_gt2": 0,
+          "hidden_alloc_eq2": 0
+        },
+        "maximum": {
+          "all": "886/1323",
+          "hidden": "886/1323",
+          "allocation": "886/1323"
+        }
+      },
+      "count_seconds": 0.083,
+      "score_seconds": 0.011,
+      "wall_seconds": 0.316,
+      "draw_archive": {
+        "mode": "alloc",
+        "seed": 12,
+        "tried": 161166,
+        "valid": 89345
+      }
+    },
+    "c2_t6allocb": {
+      "exact_tables": 20000,
+      "exact_nonempty": 20000,
+      "exact_allocation": 20000,
+      "exact_ordered_attempted": 400000000,
+      "exact_ordered_no_word": 8808,
+      "projective_tables": 11474,
+      "projective_allocation": 11474,
+      "projective_ordered_attempted": 131652676,
+      "projective_ordered_no_word": 4052,
+      "row_classes": 10433,
+      "row_classes_allocation": 10433,
+      "row_class_sizes": {
+        "1": 9392,
+        "2": 1041
+      },
+      "archived_scoring": "unordered row-class pairs",
+      "counts": {
+        "totals": {
+          "pairs_with_no_word": 119,
+          "pairs_evaluated": 1407881,
+          "pairs_hidden": 1407881,
+          "alloc_pairs": 1407881,
+          "pairs_hidden_alloc": 1407881
+        },
+        "blocks": [
+          {
+            "rows": [
+              0,
+              16
+            ],
+            "mismatches": null
+          },
+          {
+            "rows": [
+              444,
+              460
+            ],
+            "mismatches": null
+          },
+          {
+            "rows": [
+              909,
+              925
+            ],
+            "mismatches": null
+          },
+          {
+            "rows": [
+              1398,
+              1414
+            ],
+            "mismatches": null
+          },
+          {
+            "rows": [
+              1914,
+              1930
+            ],
+            "mismatches": null
+          },
+          {
+            "rows": [
+              2465,
+              2481
+            ],
+            "mismatches": null
+          },
+          {
+            "rows": [
+              3056,
+              3072
+            ],
+            "mismatches": null
+          },
+          {
+            "rows": [
+              3699,
+              3715
+            ],
+            "mismatches": null
+          },
+          {
+            "rows": [
+              4410,
+              4426
+            ],
+            "mismatches": null
+          },
+          {
+            "rows": [
+              5216,
+              5232
+            ],
+            "mismatches": null
+          },
+          {
+            "rows": [
+              6174,
+              6190
+            ],
+            "mismatches": null
+          },
+          {
+            "rows": [
+              7421,
+              7437
+            ],
+            "mismatches": null
+          }
+        ],
+        "row_span_kinds": 779,
+        "setting_span_kinds": 1
+      },
+      "witness_sample": {
+        "witness_rows": 16,
+        "allocation_witnesses": 8,
+        "sample_primary_witness_has_allocation": 8,
+        "sample_repeated_constraint": 0
+      },
+      "witness_maxima_checked": 12,
+      "exact_parity_replay": {
+        "attempted": 200,
+        "no_word": 0,
+        "counts": {
+          "tables": 200,
+          "hidden": 200,
+          "allocation": 200,
+          "all_gt2": 0,
+          "hidden_eq2": 0,
+          "hidden_gt2": 0,
+          "hidden_alloc_eq2": 0
+        },
+        "maximum": {
+          "all": "22/31",
+          "hidden": "22/31",
+          "allocation": "22/31"
+        }
+      },
+      "count_seconds": 0.127,
+      "score_seconds": 0.01,
+      "wall_seconds": 0.457,
+      "draw_archive": {
+        "mode": "alloc",
+        "seed": 22,
+        "tried": 276191,
+        "valid": 152898
+      }
+    },
+    "c2_t6free": {
+      "exact_tables": 14000,
+      "exact_nonempty": 14000,
+      "exact_allocation": 0,
+      "exact_ordered_attempted": 196000000,
+      "exact_ordered_no_word": 1474,
+      "projective_tables": 8253,
+      "projective_allocation": 0,
+      "projective_ordered_attempted": 68112009,
+      "projective_ordered_no_word": 640,
+      "row_classes": 6883,
+      "row_classes_allocation": 0,
+      "row_class_sizes": {
+        "1": 5756,
+        "2": 961,
+        "3": 89,
+        "4": 77
+      },
+      "archived_scoring": "unordered row-class pairs",
+      "counts": {
+        "totals": {
+          "pairs_with_no_word": 0,
+          "pairs_evaluated": 486272,
+          "pairs_hidden": 259026,
+          "alloc_pairs": 0,
+          "pairs_hidden_alloc": 0
+        },
+        "blocks": [
+          {
+            "rows": [
+              0,
+              16
+            ],
+            "mismatches": null
+          },
+          {
+            "rows": [
+              600,
+              616
+            ],
+            "mismatches": null
+          },
+          {
+            "rows": [
+              1263,
+              1279
+            ],
+            "mismatches": null
+          },
+          {
+            "rows": [
+              2016,
+              2032
+            ],
+            "mismatches": null
+          },
+          {
+            "rows": [
+              2909,
+              2925
+            ],
+            "mismatches": null
+          },
+          {
+            "rows": [
+              4073,
+              4089
+            ],
+            "mismatches": null
+          }
+        ],
+        "row_span_kinds": 379,
+        "setting_span_kinds": 512
+      },
+      "witness_sample": {
+        "witness_rows": 8,
+        "allocation_witnesses": 0,
+        "sample_primary_witness_has_allocation": 0,
+        "sample_repeated_constraint": 0
+      },
+      "witness_maxima_checked": 6,
+      "exact_parity_replay": {
+        "attempted": 200,
+        "no_word": 0,
+        "counts": {
+          "tables": 200,
+          "hidden": 102,
+          "allocation": 0,
+          "all_gt2": 0,
+          "hidden_eq2": 1,
+          "hidden_gt2": 0,
+          "hidden_alloc_eq2": 0
+        },
+        "maximum": {
+          "all": "2",
+          "hidden": "2",
+          "allocation": null
+        }
+      },
+      "count_seconds": 0.081,
+      "score_seconds": 0.01,
+      "wall_seconds": 0.249,
+      "draw_archive": {
+        "mode": "free",
+        "seed": 14,
+        "tried": 74741,
+        "valid": 59194
+      }
+    },
+    "c2_t6freeb": {
+      "exact_tables": 20000,
+      "exact_nonempty": 20000,
+      "exact_allocation": 0,
+      "exact_ordered_attempted": 400000000,
+      "exact_ordered_no_word": 2748,
+      "projective_tables": 11803,
+      "projective_allocation": 0,
+      "projective_ordered_attempted": 139310809,
+      "projective_ordered_no_word": 994,
+      "row_classes": 9764,
+      "row_classes_allocation": 0,
+      "row_class_sizes": {
+        "1": 8046,
+        "2": 1494,
+        "3": 127,
+        "4": 97
+      },
+      "archived_scoring": "unordered row-class pairs",
+      "counts": {
+        "totals": {
+          "pairs_with_no_word": 0,
+          "pairs_evaluated": 1317616,
+          "pairs_hidden": 657218,
+          "alloc_pairs": 0,
+          "pairs_hidden_alloc": 0
+        },
+        "blocks": [
+          {
+            "rows": [
+              0,
+              16
+            ],
+            "mismatches": null
+          },
+          {
+            "rows": [
+              416,
+              432
+            ],
+            "mismatches": null
+          },
+          {
+            "rows": [
+              851,
+              867
+            ],
+            "mismatches": null
+          },
+          {
+            "rows": [
+              1308,
+              1324
+            ],
+            "mismatches": null
+          },
+          {
+            "rows": [
+              1792,
+              1808
+            ],
+            "mismatches": null
+          },
+          {
+            "rows": [
+              2307,
+              2323
+            ],
+            "mismatches": null
+          },
+          {
+            "rows": [
+              2860,
+              2876
+            ],
+            "mismatches": null
+          },
+          {
+            "rows": [
+              3461,
+              3477
+            ],
+            "mismatches": null
+          },
+          {
+            "rows": [
+              4127,
+              4143
+            ],
+            "mismatches": null
+          },
+          {
+            "rows": [
+              4882,
+              4898
+            ],
+            "mismatches": null
+          },
+          {
+            "rows": [
+              5778,
+              5794
+            ],
+            "mismatches": null
+          },
+          {
+            "rows": [
+              6945,
+              6961
+            ],
+            "mismatches": null
+          }
+        ],
+        "row_span_kinds": 475,
+        "setting_span_kinds": 752
+      },
+      "witness_sample": {
+        "witness_rows": 8,
+        "allocation_witnesses": 0,
+        "sample_primary_witness_has_allocation": 2,
+        "sample_repeated_constraint": 0
+      },
+      "witness_maxima_checked": 12,
+      "exact_parity_replay": {
+        "attempted": 200,
+        "no_word": 0,
+        "counts": {
+          "tables": 200,
+          "hidden": 108,
+          "allocation": 0,
+          "all_gt2": 0,
+          "hidden_eq2": 0,
+          "hidden_gt2": 0,
+          "hidden_alloc_eq2": 0
+        },
+        "maximum": {
+          "all": "246/269",
+          "hidden": "246/269",
+          "allocation": null
+        }
+      },
+      "count_seconds": 0.153,
+      "score_seconds": 0.075,
+      "wall_seconds": 0.431,
+      "draw_archive": {
+        "mode": "free",
+        "seed": 24,
+        "tried": 122801,
+        "valid": 96989
+      }
+    }
+  },
+  "unrestricted_cut_1": {
+    "groups": {
+      "small_census": {
+        "histogram": {
+          "2": 16
+        },
+        "tested": 16,
+        "hidden_parity_exact_two": 16
+      },
+      "extended_only": {
+        "histogram": {
+          "2": 128
+        },
+        "tested": 128,
+        "hidden_parity_exact_two": 128
+      }
+    },
+    "retained_small": 150,
+    "retained_extended_only": 2821,
+    "wall_seconds": 0.032
+  },
+  "unrestricted_cut_2": {
+    "groups": {
+      "small_census": {
+        "histogram": {
+          "2": 16
+        },
+        "tested": 16,
+        "hidden_parity_exact_two": 16
+      },
+      "extended_only": {
+        "histogram": {
+          "2": 128
+        },
+        "tested": 128,
+        "hidden_parity_exact_two": 128
+      }
+    },
+    "retained_small": 879,
+    "retained_extended_only": 13895,
+    "wall_seconds": 0.059
+  },
+  "wall_seconds": 4.364,
+  "cpu_seconds": 4.443,
+  "max_rss_kib": 316564
+}

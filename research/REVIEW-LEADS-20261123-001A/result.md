@@ -1,8 +1,20 @@
 # The operator test as a yes-or-no reading of growth: result
 
-Ticket `REVIEW-LEADS-20261123-001A` (B310; G1 with G18 and G17), 2026-11-23. Computed; scientific referee pending.
+Ticket `REVIEW-LEADS-20261123-001A` (B310; G1 with G18 and G17), 2026-11-23. Computed; refereed (R1, below).
 [Pre-registration](preregistration.md) · [full tables and commands](results_draft.md) ·
 [deviations](../../experiments/REVIEW-LEADS-20261123-001A/REVIEW-LEADS-20261123-001A-E001_operator_test/deviations.md)
+
+> **Refereed (R1, [report](referee-R1/report.md)): confirmed with fixes, no Block.** The eight-knot part admits the
+> supplied odd operator reading; the hidden two-holder census maximum is 2 and the reference reaches exactly 20/9.
+> **Narrowings:** the 91 closed parity parts are closed parity presentations for the operator test, of which only 34 pass
+> K1–K3 at every holding (13 initial, 21 grown); of 247 passing funded draws per law, 170 under parity and all 247 under
+> not-all-equal reached step 12 (the others closed earlier), and "every structure that keeps producing does not stay so"
+> covers the seven named sources; 70 of 4,480 rewirings missed one parent, and without their histories 405 of 407
+> comparisons qualify (442 of 444 before); an all-size two-holder bound of 2 stays open (the 18-knot witness uses
+> distinctions with three and four holders). **Not a block:** 2,782 stages through loop rank 4 passed (2,471 below it);
+> the one-parent claim needs a passing first stage; the frozen control failed on three multi-holder windows; pairing
+> counts (284.3 million within pools); the exact maximum of 2 over every retained table; raw side counts are 16 and 4
+> times the reference's; the residual is 4/27 with free mass and 2/9 with mass one. Logged in `docs/CORRECTIONS.md`.
 
 **With the test supplied as a reading, ordinary growth keeps passing it where a rewiring with the same births fails
 within a few steps; every recorded source fails it by its second step; and it says more than the number of independent

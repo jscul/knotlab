@@ -1,0 +1,1009 @@
+{
+  "archived_draw_summary": {
+    "comparisons": {
+      "both": {
+        "histories_affected_by_shortfalls": 40,
+        "median_failure_step_2_to_4": 322,
+        "missing_parents": 70,
+        "no_earlier_than_median": 442,
+        "no_earlier_than_median_no_shortfall": 405,
+        "ordinary_pass_all_eight_rewirings_fail": 365,
+        "ordinary_pass_median_failure_step_2_to_4": 260,
+        "qualifying_histories": 444,
+        "qualifying_histories_no_shortfall": 407,
+        "qualifying_infinite_median": 5,
+        "qualifying_ordinary_pass_all_stages": 378,
+        "replicas": 4480,
+        "replicas_with_shortfall": 70
+      },
+      "nae": {
+        "histories_affected_by_shortfalls": 20,
+        "median_failure_step_2_to_4": 161,
+        "missing_parents": 35,
+        "no_earlier_than_median": 253,
+        "no_earlier_than_median_no_shortfall": 233,
+        "ordinary_pass_all_eight_rewirings_fail": 220,
+        "ordinary_pass_median_failure_step_2_to_4": 130,
+        "qualifying_histories": 254,
+        "qualifying_histories_no_shortfall": 234,
+        "qualifying_infinite_median": 0,
+        "qualifying_ordinary_pass_all_stages": 221,
+        "replicas": 2240,
+        "replicas_with_shortfall": 35
+      },
+      "parity": {
+        "histories_affected_by_shortfalls": 20,
+        "median_failure_step_2_to_4": 161,
+        "missing_parents": 35,
+        "no_earlier_than_median": 189,
+        "no_earlier_than_median_no_shortfall": 172,
+        "ordinary_pass_all_eight_rewirings_fail": 145,
+        "ordinary_pass_median_failure_step_2_to_4": 130,
+        "qualifying_histories": 190,
+        "qualifying_histories_no_shortfall": 173,
+        "qualifying_infinite_median": 5,
+        "qualifying_ordinary_pass_all_stages": 157,
+        "replicas": 2240,
+        "replicas_with_shortfall": 35
+      }
+    },
+    "exceptions": [
+      {
+        "arm": 2,
+        "draw": 180,
+        "first_failure": 1,
+        "law": "nae",
+        "rewired_failures": [
+          4,
+          2,
+          4,
+          1,
+          1,
+          1,
+          2,
+          1
+        ]
+      },
+      {
+        "arm": 2,
+        "draw": 180,
+        "first_failure": 1,
+        "law": "parity",
+        "rewired_failures": [
+          4,
+          2,
+          4,
+          1,
+          1,
+          1,
+          2,
+          1
+        ]
+      }
+    ],
+    "outcomes": {
+      "nae": {
+        "failed_funded": 33,
+        "funded": 280,
+        "histories": 1024,
+        "passing_funded_reached_stages": 247,
+        "passing_funded_reached_step_12": 247
+      },
+      "parity": {
+        "failed_funded": 33,
+        "funded": 280,
+        "funded_closed_step_1_pass": 61,
+        "funded_closed_step_2_fail": 1,
+        "funded_closed_step_2_pass": 7,
+        "funded_closed_step_3_pass": 9,
+        "histories": 1024,
+        "passing_funded_reached_stages": 247,
+        "passing_funded_reached_step_12": 170
+      }
+    },
+    "rank_5_examples": {
+      "fail": {
+        "T": "fail",
+        "arm": 2,
+        "births": 3,
+        "distinctions": 19,
+        "draw": 180,
+        "kind": "stage",
+        "knots": 10,
+        "law": "nae",
+        "links": 33,
+        "loop_rank": 5,
+        "loose": 5,
+        "lower_bound": 0,
+        "n": 7,
+        "one_parent_births": 2,
+        "parts": 1,
+        "population": "P3",
+        "t": 1
+      },
+      "pass": {
+        "T": "pass",
+        "arm": 0,
+        "births": 3,
+        "distinctions": 20,
+        "draw": 32,
+        "kind": "stage",
+        "knots": 11,
+        "law": "nae",
+        "links": 35,
+        "loop_rank": 5,
+        "loose": 5,
+        "lower_bound": 0,
+        "n": 4,
+        "one_parent_births": 2,
+        "parts": 1,
+        "population": "P3",
+        "t": 2
+      }
+    }
+  },
+  "archived_ranks": {
+    "distinct_ranks": 210,
+    "least_failing_rank": 5,
+    "mixed_ranks": 104,
+    "mixed_ranks_by_population": {
+      "P1": 0,
+      "P2": 1,
+      "P3": 101
+    },
+    "ranks_0_to_4": {
+      "0": {
+        "pass": 516
+      },
+      "1": {
+        "pass": 514
+      },
+      "2": {
+        "pass": 626
+      },
+      "3": {
+        "pass": 815
+      },
+      "4": {
+        "pass": 311
+      }
+    }
+  },
+  "archived_rows": {
+    "P1": {
+      "construction": 4,
+      "stage": 24
+    },
+    "P2": {
+      "history": 14,
+      "stage": 164
+    },
+    "P3": {
+      "closed_part": 91,
+      "history": 2048,
+      "stage": 7936
+    }
+  },
+  "bounded_bond_removal_counterexample": {
+    "claimed_lower": 41,
+    "distinct_sharing_pairs": 119,
+    "removed_distinctions": [
+      17,
+      12,
+      13,
+      8,
+      7,
+      18,
+      2
+    ]
+  },
+  "five_founder_pairwise_meeting_groups": [
+    [
+      0,
+      5
+    ],
+    [
+      1,
+      7
+    ],
+    [
+      2,
+      9
+    ],
+    [
+      3,
+      6
+    ],
+    [
+      4,
+      8
+    ]
+  ],
+  "mode": "full",
+  "one_parent_counterexample": {
+    "initial_holdings": [
+      [
+        0,
+        1,
+        2,
+        9
+      ],
+      [
+        3,
+        4,
+        5
+      ],
+      [
+        6,
+        7,
+        8
+      ],
+      [
+        0,
+        3,
+        6
+      ],
+      [
+        1,
+        4,
+        7
+      ],
+      [
+        2,
+        5,
+        8
+      ]
+    ],
+    "outcome": "closed",
+    "parent_and_fresh_counts": [
+      [
+        [
+          1,
+          0
+        ]
+      ]
+    ],
+    "stage_verdicts": [
+      "fail",
+      "fail"
+    ]
+  },
+  "rebuilt_benchmark": {
+    "bounded_bond": {
+      "1": {
+        "T": "pass",
+        "distinctions": 9,
+        "knots": 6,
+        "links": 18,
+        "literal_second_holder_mutant": "pass",
+        "loop_rank": 4,
+        "loose": 3,
+        "parts": 1
+      },
+      "2": {
+        "T": "fail",
+        "distinctions": 25,
+        "knots": 28,
+        "links": 84,
+        "literal_second_holder_mutant": "fail",
+        "loop_rank": 32,
+        "loose": 3,
+        "parts": 1
+      },
+      "3": {
+        "T": "fail",
+        "distinctions": 49,
+        "knots": 66,
+        "links": 198,
+        "literal_second_holder_mutant": "fail",
+        "loop_rank": 84,
+        "loose": 3,
+        "parts": 1
+      },
+      "4": {
+        "T": "fail",
+        "distinctions": 81,
+        "knots": 120,
+        "links": 360,
+        "literal_second_holder_mutant": "fail",
+        "loop_rank": 160,
+        "loose": 3,
+        "parts": 1
+      }
+    },
+    "cubic": {
+      "0": {
+        "T": "pass",
+        "distinctions": 3,
+        "knots": 1,
+        "links": 3,
+        "loop_rank": 0,
+        "loose": 3,
+        "parts": 1
+      },
+      "1": {
+        "T": "pass",
+        "distinctions": 12,
+        "knots": 4,
+        "links": 15,
+        "loop_rank": 0,
+        "loose": 9,
+        "parts": 1
+      },
+      "2": {
+        "T": "pass",
+        "distinctions": 30,
+        "knots": 10,
+        "links": 42,
+        "loop_rank": 3,
+        "loose": 18,
+        "parts": 1
+      },
+      "3": {
+        "T": "pass",
+        "distinctions": 60,
+        "knots": 20,
+        "links": 90,
+        "loop_rank": 11,
+        "loose": 30,
+        "parts": 1
+      },
+      "4": {
+        "T": "fail",
+        "distinctions": 105,
+        "knots": 35,
+        "links": 165,
+        "loop_rank": 26,
+        "loose": 45,
+        "parts": 1
+      },
+      "5": {
+        "T": "fail",
+        "distinctions": 168,
+        "knots": 56,
+        "links": 273,
+        "loop_rank": 50,
+        "loose": 63,
+        "parts": 1
+      },
+      "6": {
+        "T": "fail",
+        "distinctions": 252,
+        "knots": 84,
+        "links": 420,
+        "loop_rank": 85,
+        "loose": 84,
+        "parts": 1
+      }
+    },
+    "periodic": {
+      "1": {
+        "T": "pass",
+        "distinctions": 5,
+        "knots": 2,
+        "links": 6,
+        "loop_rank": 0,
+        "loose": 4,
+        "parts": 1
+      },
+      "2": {
+        "T": "pass",
+        "distinctions": 9,
+        "knots": 4,
+        "links": 12,
+        "loop_rank": 0,
+        "loose": 6,
+        "parts": 1
+      },
+      "3": {
+        "T": "pass",
+        "distinctions": 16,
+        "knots": 8,
+        "links": 24,
+        "loop_rank": 1,
+        "loose": 8,
+        "parts": 1
+      },
+      "4": {
+        "T": "pass",
+        "distinctions": 30,
+        "knots": 16,
+        "links": 48,
+        "loop_rank": 3,
+        "loose": 12,
+        "parts": 1
+      },
+      "5": {
+        "T": "pass",
+        "distinctions": 56,
+        "knots": 32,
+        "links": 96,
+        "loop_rank": 9,
+        "loose": 16,
+        "parts": 1
+      },
+      "6": {
+        "T": "pass",
+        "distinctions": 108,
+        "knots": 64,
+        "links": 192,
+        "loop_rank": 21,
+        "loose": 24,
+        "parts": 1
+      },
+      "7": {
+        "T": "pass",
+        "distinctions": 208,
+        "knots": 128,
+        "links": 384,
+        "loop_rank": 49,
+        "loose": 32,
+        "parts": 1
+      },
+      "8": {
+        "T": "pass",
+        "distinctions": 408,
+        "knots": 256,
+        "links": 768,
+        "loop_rank": 105,
+        "loose": 48,
+        "parts": 1
+      }
+    },
+    "pinwheel": {
+      "1": {
+        "T": "pass",
+        "distinctions": 11,
+        "knots": 5,
+        "links": 16,
+        "loop_rank": 1,
+        "loose": 6,
+        "parts": 1
+      },
+      "2": {
+        "T": "pass",
+        "distinctions": 49,
+        "knots": 25,
+        "links": 84,
+        "loop_rank": 11,
+        "loose": 14,
+        "parts": 1
+      },
+      "3": {
+        "T": "pass",
+        "distinctions": 227,
+        "knots": 125,
+        "links": 424,
+        "loop_rank": 73,
+        "loose": 30,
+        "parts": 1
+      },
+      "4": {
+        "T": "pass",
+        "distinctions": 1101,
+        "knots": 625,
+        "links": 2132,
+        "loop_rank": 407,
+        "loose": 70,
+        "parts": 1
+      },
+      "5": {
+        "T": "pass",
+        "distinctions": 5411,
+        "knots": 3125,
+        "links": 10672,
+        "loop_rank": 2137,
+        "loose": 150,
+        "parts": 1
+      }
+    }
+  },
+  "rebuilt_draw_counts": {
+    "funded_histories": 560,
+    "histories": 2048,
+    "rewirings": 4480,
+    "stages": 7936
+  },
+  "rebuilt_draw_scope": {
+    "keys": "all",
+    "sample_seed": 2026112601
+  },
+  "rebuilt_source_prefixes": {
+    "archive_start-00": {
+      "nae": {
+        "archived_horizon": 16,
+        "first_failure": 1,
+        "first_failure_knots": 14,
+        "reconstructed": [
+          {
+            "T": "pass",
+            "distinctions": 23,
+            "knots": 6,
+            "links": 30,
+            "loop_rank": 2,
+            "loose": 16,
+            "parts": 1
+          },
+          {
+            "T": "fail",
+            "distinctions": 49,
+            "knots": 14,
+            "links": 72,
+            "loop_rank": 10,
+            "loose": 26,
+            "parts": 1
+          },
+          {
+            "T": "fail",
+            "distinctions": 87,
+            "knots": 26,
+            "links": 136,
+            "loop_rank": 24,
+            "loose": 38,
+            "parts": 1
+          }
+        ]
+      },
+      "parity": {
+        "archived_horizon": 16,
+        "first_failure": 1,
+        "first_failure_knots": 14,
+        "reconstructed": [
+          {
+            "T": "pass",
+            "distinctions": 23,
+            "knots": 6,
+            "links": 30,
+            "loop_rank": 2,
+            "loose": 16,
+            "parts": 1
+          },
+          {
+            "T": "fail",
+            "distinctions": 49,
+            "knots": 14,
+            "links": 72,
+            "loop_rank": 10,
+            "loose": 26,
+            "parts": 1
+          },
+          {
+            "T": "fail",
+            "distinctions": 87,
+            "knots": 26,
+            "links": 136,
+            "loop_rank": 24,
+            "loose": 38,
+            "parts": 1
+          }
+        ]
+      }
+    },
+    "archive_start-04": {
+      "nae": {
+        "archived_horizon": 8,
+        "first_failure": 1,
+        "first_failure_knots": 16,
+        "reconstructed": [
+          {
+            "T": "pass",
+            "distinctions": 24,
+            "knots": 6,
+            "links": 32,
+            "loop_rank": 3,
+            "loose": 16,
+            "parts": 1
+          },
+          {
+            "T": "fail",
+            "distinctions": 58,
+            "knots": 16,
+            "links": 82,
+            "loop_rank": 9,
+            "loose": 34,
+            "parts": 1
+          },
+          {
+            "T": "fail",
+            "distinctions": 122,
+            "knots": 32,
+            "links": 180,
+            "loop_rank": 27,
+            "loose": 64,
+            "parts": 1
+          }
+        ]
+      },
+      "parity": {
+        "archived_horizon": 8,
+        "first_failure": 1,
+        "first_failure_knots": 16,
+        "reconstructed": [
+          {
+            "T": "pass",
+            "distinctions": 24,
+            "knots": 6,
+            "links": 32,
+            "loop_rank": 3,
+            "loose": 16,
+            "parts": 1
+          },
+          {
+            "T": "fail",
+            "distinctions": 58,
+            "knots": 16,
+            "links": 82,
+            "loop_rank": 9,
+            "loose": 34,
+            "parts": 1
+          },
+          {
+            "T": "fail",
+            "distinctions": 122,
+            "knots": 32,
+            "links": 180,
+            "loop_rank": 27,
+            "loose": 64,
+            "parts": 1
+          }
+        ]
+      }
+    },
+    "archive_start-13": {
+      "nae": {
+        "archived_horizon": 6,
+        "first_failure": 1,
+        "first_failure_knots": 22,
+        "reconstructed": [
+          {
+            "T": "pass",
+            "distinctions": 33,
+            "knots": 7,
+            "links": 41,
+            "loop_rank": 2,
+            "loose": 25,
+            "parts": 1
+          },
+          {
+            "T": "fail",
+            "distinctions": 90,
+            "knots": 22,
+            "links": 123,
+            "loop_rank": 12,
+            "loose": 57,
+            "parts": 1
+          },
+          {
+            "T": "fail",
+            "distinctions": 223,
+            "knots": 49,
+            "links": 313,
+            "loop_rank": 42,
+            "loose": 133,
+            "parts": 1
+          }
+        ]
+      },
+      "parity": {
+        "archived_horizon": 6,
+        "first_failure": 1,
+        "first_failure_knots": 22,
+        "reconstructed": [
+          {
+            "T": "pass",
+            "distinctions": 33,
+            "knots": 7,
+            "links": 41,
+            "loop_rank": 2,
+            "loose": 25,
+            "parts": 1
+          },
+          {
+            "T": "fail",
+            "distinctions": 90,
+            "knots": 22,
+            "links": 123,
+            "loop_rank": 12,
+            "loose": 57,
+            "parts": 1
+          },
+          {
+            "T": "fail",
+            "distinctions": 223,
+            "knots": 49,
+            "links": 313,
+            "loop_rank": 42,
+            "loose": 133,
+            "parts": 1
+          }
+        ]
+      }
+    },
+    "five_founder_clock": {
+      "nae": {
+        "archived_horizon": 16,
+        "first_failure": 1,
+        "first_failure_knots": 10,
+        "reconstructed": [
+          {
+            "T": "pass",
+            "distinctions": 18,
+            "knots": 5,
+            "links": 26,
+            "loop_rank": 4,
+            "loose": 10,
+            "parts": 1
+          },
+          {
+            "T": "fail",
+            "distinctions": 28,
+            "knots": 10,
+            "links": 46,
+            "loop_rank": 9,
+            "loose": 10,
+            "parts": 1
+          },
+          {
+            "T": "fail",
+            "distinctions": 38,
+            "knots": 15,
+            "links": 66,
+            "loop_rank": 14,
+            "loose": 10,
+            "parts": 1
+          }
+        ]
+      },
+      "parity": {
+        "archived_horizon": 16,
+        "first_failure": 1,
+        "first_failure_knots": 10,
+        "reconstructed": [
+          {
+            "T": "pass",
+            "distinctions": 18,
+            "knots": 5,
+            "links": 26,
+            "loop_rank": 4,
+            "loose": 10,
+            "parts": 1
+          },
+          {
+            "T": "fail",
+            "distinctions": 28,
+            "knots": 10,
+            "links": 46,
+            "loop_rank": 9,
+            "loose": 10,
+            "parts": 1
+          },
+          {
+            "T": "fail",
+            "distinctions": 38,
+            "knots": 15,
+            "links": 66,
+            "loop_rank": 14,
+            "loose": 10,
+            "parts": 1
+          }
+        ]
+      }
+    },
+    "knots21_two_clocks": {
+      "nae": {
+        "archived_horizon": 8,
+        "first_failure": 2,
+        "first_failure_knots": 57,
+        "reconstructed": [
+          {
+            "T": "pass",
+            "distinctions": 60,
+            "knots": 21,
+            "links": 96,
+            "loop_rank": 16,
+            "loose": 24,
+            "parts": 1
+          },
+          {
+            "T": "pass",
+            "distinctions": 108,
+            "knots": 33,
+            "links": 168,
+            "loop_rank": 28,
+            "loose": 48,
+            "parts": 1
+          },
+          {
+            "T": "fail",
+            "distinctions": 232,
+            "knots": 57,
+            "links": 340,
+            "loop_rank": 52,
+            "loose": 124,
+            "parts": 1
+          }
+        ]
+      },
+      "parity": {
+        "archived_horizon": 8,
+        "first_failure": 2,
+        "first_failure_knots": 57,
+        "reconstructed": [
+          {
+            "T": "pass",
+            "distinctions": 60,
+            "knots": 21,
+            "links": 96,
+            "loop_rank": 16,
+            "loose": 24,
+            "parts": 1
+          },
+          {
+            "T": "pass",
+            "distinctions": 108,
+            "knots": 33,
+            "links": 168,
+            "loop_rank": 28,
+            "loose": 48,
+            "parts": 1
+          },
+          {
+            "T": "fail",
+            "distinctions": 232,
+            "knots": 57,
+            "links": 340,
+            "loop_rank": 52,
+            "loose": 124,
+            "parts": 1
+          }
+        ]
+      }
+    },
+    "nine_knot_drawn": {
+      "nae": {
+        "archived_horizon": 8,
+        "first_failure": 1,
+        "first_failure_knots": 24,
+        "reconstructed": [
+          {
+            "T": "pass",
+            "distinctions": 39,
+            "knots": 9,
+            "links": 49,
+            "loop_rank": 2,
+            "loose": 29,
+            "parts": 1
+          },
+          {
+            "T": "fail",
+            "distinctions": 102,
+            "knots": 24,
+            "links": 141,
+            "loop_rank": 16,
+            "loose": 63,
+            "parts": 1
+          },
+          {
+            "T": "fail",
+            "distinctions": 250,
+            "knots": 54,
+            "links": 352,
+            "loop_rank": 49,
+            "loose": 148,
+            "parts": 1
+          }
+        ]
+      },
+      "parity": {
+        "archived_horizon": 8,
+        "first_failure": 1,
+        "first_failure_knots": 24,
+        "reconstructed": [
+          {
+            "T": "pass",
+            "distinctions": 39,
+            "knots": 9,
+            "links": 49,
+            "loop_rank": 2,
+            "loose": 29,
+            "parts": 1
+          },
+          {
+            "T": "fail",
+            "distinctions": 102,
+            "knots": 24,
+            "links": 141,
+            "loop_rank": 16,
+            "loose": 63,
+            "parts": 1
+          },
+          {
+            "T": "fail",
+            "distinctions": 250,
+            "knots": 54,
+            "links": 352,
+            "loop_rank": 49,
+            "loose": 148,
+            "parts": 1
+          }
+        ]
+      }
+    },
+    "seven_knot": {
+      "nae": {
+        "archived_horizon": 13,
+        "first_failure": 1,
+        "first_failure_knots": 15,
+        "reconstructed": [
+          {
+            "T": "pass",
+            "distinctions": 25,
+            "knots": 7,
+            "links": 34,
+            "loop_rank": 3,
+            "loose": 16,
+            "parts": 1
+          },
+          {
+            "T": "fail",
+            "distinctions": 50,
+            "knots": 15,
+            "links": 75,
+            "loop_rank": 11,
+            "loose": 25,
+            "parts": 1
+          },
+          {
+            "T": "fail",
+            "distinctions": 92,
+            "knots": 27,
+            "links": 142,
+            "loop_rank": 24,
+            "loose": 42,
+            "parts": 1
+          }
+        ]
+      },
+      "parity": {
+        "archived_horizon": 13,
+        "first_failure": 1,
+        "first_failure_knots": 15,
+        "reconstructed": [
+          {
+            "T": "pass",
+            "distinctions": 25,
+            "knots": 7,
+            "links": 34,
+            "loop_rank": 3,
+            "loose": 16,
+            "parts": 1
+          },
+          {
+            "T": "fail",
+            "distinctions": 50,
+            "knots": 15,
+            "links": 75,
+            "loop_rank": 11,
+            "loose": 25,
+            "parts": 1
+          },
+          {
+            "T": "fail",
+            "distinctions": 92,
+            "knots": 27,
+            "links": 142,
+            "loop_rank": 24,
+            "loose": 42,
+            "parts": 1
+          }
+        ]
+      }
+    }
+  },
+  "timings": {
+    "aggregate_cpu_s": 0.05199888899999999,
+    "benchmark_cpu_s": 0.145984088,
+    "fresh_draws_cpu_s": 10.288517249,
+    "sources_cpu_s": 0.05198707900000002
+  }
+}

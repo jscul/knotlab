@@ -1,5 +1,13 @@
 # How often ordinary growth closes, and what a reader can register there
 
+> **Refereed (R1, [report](referee-R1/report.md)): confirmed with fixes, no Block.** All 544 founders rebuilt under both
+> laws; at the five-knot minimum growth forces the closing sign even (all 64 older states survive; reversing only that
+> sign leaves none); all 63 simultaneous closures and 12,800 measurement cells match. **Narrowings:** "every part" allows
+> a state means every proper subset of the equations of one connected odd component (with two odd components every single
+> deletion still leaves none); reversing a sign at a birth with a fresh distinction keeps the older states and extension
+> counts but changes which complete words are allowed. **Not a block:** previously closed components appear on 96
+> distinct funded cuts, 127 component occurrences. Logged in `docs/CORRECTIONS.md`.
+
 **Six of 256 newly drawn labelled trees closed by the fourth parity cut. One of the six admitted an operator reading after reversing its closing sign.** None of 128 connected explosive starts closed. All 128 explosive starts with two added components kept growing as wholes, while their added components supplied 256 actual closures, 129 admitting. The smallest fully closed admitting draw had five knots and ten distinctions. Its older 64 ordinary words all survived the implied sign. None survived the reversal. A supplied signed instrument could record either parity on the closing knot. Ordinary growth supplied no such instrument or write. Independent scientific referee pending. [Approved design](preregistration.md) · [Detailed denominators](populations.md) · [Internal receipts](../../artifacts/ERASURE-AND-CLOSING-SIGNS-20261121-001B/ERASURE-AND-CLOSING-SIGNS-20261121-001B-E001_closures/internal_receipts.json.gz)
 
 ## Fresh draw and event rates

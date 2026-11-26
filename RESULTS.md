@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**408 current results** and 5 superseded ones, from 674 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**408 current results** and 5 superseded ones, from 678 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -31,7 +31,7 @@ How to read an entry:
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 26 results
 - [Notes](#notes): 6 self-contained notes
-- [Epics](#epics): all 674 epics with their closures
+- [Epics](#epics): all 678 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -2014,8 +2014,10 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-26 | What lies beyond rejection: the whole-round response under a free sender, and the record's signs (`BEYOND-REJECTION-20261126-001`) | — | [folder](research/BEYOND-REJECTION-20261126-001/) |
 | 2026-11-26 | Does growth bind facts held by the whole into a knot of the next layer? (`BINDING-20261126-001`) | — | [folder](research/BINDING-20261126-001/) |
 | 2026-11-26 | Starts where both distances grow (`BOTH-LONG-20261126-001`) | — | [folder](research/BOTH-LONG-20261126-001/) |
+| 2026-11-26 | A built binding of three whole-held facts: made by the law, and does growth make one? (`BUILT-BINDING-20261126-001`) | — | [folder](research/BUILT-BINDING-20261126-001/) |
 | 2026-11-26 | The contact cases: forbidding that answers both readers through a shared birth (`CONTACT-FORBID-20261126-001`) | — | [folder](research/CONTACT-FORBID-20261126-001/) |
 | 2026-11-26 | Do the forbidding cuts bind facts held by the whole? And not-all-equal carriers (`CUT-BINDING-20261126-001`) | — | [folder](research/CUT-BINDING-20261126-001/) |
+| 2026-11-26 | Three kinds: one statement that classes every recorded table above the classical bound (`EXCESS-KINDS-20261126-001`) | — | [folder](research/EXCESS-KINDS-20261126-001/) |
 | 2026-11-26 | Does what a family makes depend on which family it meets (`FAMILIES-THAT-MEET-20261126-001`) | — | [folder](research/FAMILIES-THAT-MEET-20261126-001/) |
 | 2026-11-26 | Time as a fold: is there a sign on the path of reading? (`FOLD-SIGN-20261126-001`) | — | [folder](research/FOLD-SIGN-20261126-001/) |
 | 2026-11-26 | Free edits under joins that forbid: does a small start exceed the classical bound? (`FORBID-EDITS-20261126-001`) | — | [folder](research/FORBID-EDITS-20261126-001/) |
@@ -2026,6 +2028,8 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-26 | Whole-ring facts as the distinctions of a second layer (`LAYERS-20261126-001`) | — | [folder](research/LAYERS-20261126-001/) |
 | 2026-11-26 | Two patterns that stay linked under a cap: can the far one then change the receiver's course after both exist? (`LINKED-UNDER-CAP-20261126-001`) | — | [folder](research/LINKED-UNDER-CAP-20261126-001/) |
 | 2026-11-26 | Which starts look alike to a local reader (`LOOK-ALIKE-20261126-001`) | — | [folder](research/LOOK-ALIKE-20261126-001/) |
+| 2026-11-26 | What the model is missing for the quantum part: an advisor consultation (`MISSING-PIECE-20261126-001`) | — | [folder](research/MISSING-PIECE-20261126-001/) |
+| 2026-11-26 | No state of the whole: patterns read part by part, and values that need not commute (`NO-WHOLE-STATE-20261126-001`) | — | [folder](research/NO-WHOLE-STATE-20261126-001/) |
 | 2026-11-26 | A local reader's view grown on demand (`ON-DEMAND-20261126-001`) | — | [folder](research/ON-DEMAND-20261126-001/) |
 | 2026-11-26 | Recursion's lead: does growing and then exchanging give a start back? (`RECURSION-LEAD-20261126-001`) | — | [folder](research/RECURSION-LEAD-20261126-001/) |
 | 2026-11-26 | Is the sign about the model or about the order we supply? (`REORDER-CONFIRM-20261126-001`) | — | [folder](research/REORDER-CONFIRM-20261126-001/) |

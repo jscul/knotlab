@@ -17,7 +17,7 @@ interpretation, not a result, and it is under test. Lesson 2.4 states it in
 the guide's words, once the knot it speaks of has been defined, and shows how
 the later lessons on distance and dimension hang from it.
 
-The page is written as a textbook, to be read in order. Its ten chapters are
+The page is written as a textbook, to be read in order. Its eleven chapters are
 divided into lessons, and each lesson builds on the ones before it. Each
 chapter opens with a lesson numbered 0, its introduction: an index of the
 chapter's lessons, a line or two on each, and under it the chapter's
@@ -131,6 +131,14 @@ PYTHONPATH=tools python3 -m knotlab demo
   - [10.3 Parts that meet again, under laws added by hand](#103-parts-that-meet-again-under-laws-added-by-hand)
   - [10.4 Two studies in design: a made copier and a made count of returns](#104-two-studies-in-design-a-made-copier-and-a-made-count-of-returns)
   - [10.5 What is open](#105-what-is-open)
+- [Chapter 11. Simulating our reality](#chapter-11-simulating-our-reality)
+  - [11.0 Introduction](#110-introduction)
+  - [11.1 The edge of the pond](#111-the-edge-of-the-pond)
+  - [11.2 Working backwards from the ingredients](#112-working-backwards-from-the-ingredients)
+  - [11.3 What one pattern can change in another](#113-what-one-pattern-can-change-in-another)
+  - [11.4 What the steps between two patterns do to a change](#114-what-the-steps-between-two-patterns-do-to-a-change)
+  - [11.5 Same inventory, different arrangement](#115-same-inventory-different-arrangement)
+  - [11.6 What a simulation of the pond still needs](#116-what-a-simulation-of-the-pond-still-needs)
 - [Glossary](#glossary)
 
 ## Chapter 1. Bits and rules
@@ -3652,7 +3660,10 @@ states of a definite logic and nothing else.
   speed.
 - **The first real test is open.** If the rules themselves gave a largest
   speed at which a change can spread, that would be the first test of this
-  logic against Einstein's locality. Whether they do is open.
+  logic against Einstein's locality. Whether they do is open. Lesson 11.4
+  gives a later study's bound for ordinary growth (proved, referee pending):
+  a change spreads at most one step of the map of joins a round, with two
+  exceptions, one of them a single bit under parity that ignores the steps.
 
 **Reading.** On the program's reading the owner's remark is right about the
 order of things: here logic comes before space, as some physics programmes put
@@ -5405,6 +5416,564 @@ another according to what a second made pattern is, with nothing read or
 chosen from outside" (A223), with the masked run of lesson 10.2 showing that
 the difference went through the two parts meeting. A fold of emergence would
 then also need the third property, for which no test is registered.
+
+## Chapter 11. Simulating our reality
+
+### 11.0 Introduction
+
+**The lessons.** What each lesson of this chapter is about:
+
+- [11.1 The edge of the pond](#111-the-edge-of-the-pond): the owner's
+  picture, in his words. To simulate the beginning of life, start at the edge
+  of a pond, not at the Big Bang, and keep of the rest of the world only the
+  differences that can make a difference there. Four things the program takes
+  from it.
+- [11.2 Working backwards from the ingredients](#112-working-backwards-from-the-ingredients):
+  the owner's method: find what is needed here first, then find or invent where
+  it came from. In the growth a complete round carries its whole future, so
+  every start that could have led to it gives the same growth afterwards.
+  Midway through a round it does not.
+- [11.3 What one pattern can change in another](#113-what-one-pattern-can-change-in-another):
+  the owner's question asked of two patterns joined in one start: change one,
+  and look for the change in the other's own births. Joined through a meeting
+  that each can afford, under the ordinary count with nothing taken, a
+  pattern's own knots grow exactly as they would beside a single knot.
+- [11.4 What the steps between two patterns do to a change](#114-what-the-steps-between-two-patterns-do-to-a-change):
+  a change spreads at most one step of the map of joins a round, a bound of the
+  kind that Life and physics have, and two effects ignore it. Along a chain of
+  waiting knots what arrives is when the waiting ends. The record has no
+  measure of how strongly a change arrives, so a weakening like the lamp's is
+  untested.
+- [11.5 Same inventory, different arrangement](#115-same-inventory-different-arrangement):
+  the owner's two drops of water, one holding a cell. Two arrangements that
+  agree in every count can grow differently. What is missing is one pattern's
+  own descent changing another's.
+- [11.6 What a simulation of the pond still needs](#116-what-a-simulation-of-the-pond-still-needs):
+  the owner's picture set against the record, claim by claim, two cautions,
+  and what is open.
+
+**The intuition.** Asked whether simulating the beginning of life needs the Big
+Bang, the owner answers that it does not: start at the edge of a pond, and keep
+of everything else only what can make a difference there. From there, in his
+words, "the universe is the small part. Life is the complex part." His aim for
+the program is of the same kind: "We're not trying to prove that the universe
+IS actually this way, we're trying to prove that the universe COULD be made out
+of our theory. It doesn't need to be testable, it needs to click into place."
+So the chapter asks which parts of the pond picture would click into place in
+the growth of Chapter 8 as it stands, and says plainly which do not. Three do,
+in part. Working backwards is exact at a complete round (lesson 11.2). A change
+spreads at a bounded pace (lesson 11.4). And what follows depends on how
+things are arranged, not only on how many there are (lesson 11.5). Two do not
+yet. The record cannot say whether what arrives is weaker for the steps it
+passed, because it measures only whether and when a change shows. And joined
+through a meeting under the ordinary count, a pattern's own knots grow the same
+whatever is joined to them, so that, in the comparisons made, what two patterns
+do together shows only in the knots that descend from both (lesson 11.3). The
+chapter makes no claim about physics, chemistry or living things. The pond,
+the lamp, the galaxy and the cell are the owner's everyday picture; the
+chapter's claims are about knots.
+
+**No new result.** Every statement stands in a record, and where an earlier
+lesson gives it, the chapter names that lesson. Four studies are new to the
+guide here, each with its status: Codex's studies of reading a start back from
+what it grew and of how many rounds a change needs to spread (both proved,
+referee pending), and two checks by the thread of patterns joined in one start
+(computed; the first refereed, the second referee pending).
+
+**The growth's words used here.** A pattern here is one of the record's starts
+that lasts on its own under its law: the ring of five knots that returns, the
+part of two knots that copies itself, and the seven-knot generator (lesson
+8.7). Two patterns are joined in one start through a **meeting**, a dead knot of
+three places that meets one knot of each, each of those two being given one
+more loose distinction so that it can afford the join; or by a bare shared
+distinction, which both hold, with nothing more given. A knot is one of a
+pattern's **own** knots when every start knot among its ancestors belongs to
+that pattern, and is in the **joint descent** when it has start knots of both
+among its ancestors (assumption A277, a scaffold, calls this the strict
+reading). A **stub** is the least knot that can stand where a pattern stood:
+one knot that takes the other pattern's place in the join. A **mark** is one
+more loose distinction at a start knot of the other pattern. A change **shows**
+in a pattern's own births at the first round at which they differ, in how each
+is made, its fresh distinctions or its places, between the growth with the
+change and the same growth without it (the records say the change is heard).
+Under the **ordinary count** a new knot receives what it is owed, as in the
+cheapest growth of lesson 8.1; a ration is any other rule for how many it
+receives, and a short knot, one that owes more than it holds, retires, waits or
+makes offshoots (lessons 9.4 and 10.0). Two live knots are one **step of the
+map** apart when one knot meets both, so that they can join through it, as in
+the map of joins (lesson 8.1), and d steps of the map apart when the fewest
+such steps between them number d.
+
+### 11.1 The edge of the pond
+
+**The owner's question.** The owner asked, in an essay: "If you wanted to
+simulate the beginning of life, would you start with the Big Bang? You could
+form galaxies, wait for a star with a rocky planet, and follow that planet
+until you had a pond. I'd start by putting the camera at the edge of the pond.
+From there, which takes up more room in your simulation, a distant galaxy or
+the cell in the next drop of water?" This lesson gives his answer in his words.
+It is his picture, an interpretation (assumption A280), not a result.
+
+**Detail depends on the place.** "I think about render distance in a game. A
+city on the horizon might occupy four pixels. Thousands of different street
+plans would produce the same four pixels. Walk into the city and suddenly it
+matters which street connects to the bridge. The city was there the whole time.
+What changed was how much of its detail your position could reveal."
+
+**Which differences elsewhere make a difference here.** He then goes past what
+a camera sees: "Which differences elsewhere can make a difference *here*?" His
+example is a lamp: "Move a small lamp twice as far away, keeping its output
+fixed and letting it shine equally in all directions. The same patch facing it
+receives a quarter as much power. The lamp keeps shining just as brightly. More
+of its light passes the pond by."
+
+**Logically small.** "Now imagine two distant galaxies with different
+arrangements of stars. If they deliver effectively the same light and
+gravitational influence at the pond over the time I'm studying, I can swap one
+for the other and get the same pond experiment to the accuracy I care about.
+That is the sense in which a galaxy can be *logically small*. A great many
+states out there amount to one case here." And: "If a burst of radiation from
+one of its stars changes the chemistry in the pond, that burst earns its place
+in the model."
+
+**Arrangement close up.** "Try the same swap with two drops of water. One
+contains a living cell. The other has the same inventory of molecules,
+dispersed through the drop. A spreadsheet listing each kind of molecule and how
+many there are would come out the same twice. Yet one drop could have
+descendants tomorrow. The arrangement matters, and the cell can carry the
+consequences of that arrangement into another generation." Then descents that
+act on each other: "What one releases into the water could feed its neighbor.
+Now a change inside the first cell can change which descendants of the second
+one survive."
+
+**His conclusion.** "From the edge of this pond, the universe is the small
+part. Life is the complex part. I'd make the same choice even if simulating
+galaxies were free."
+
+**Known physics.** *Classical:* the galaxy and the lamp are one mechanism in
+the physics of the owner's picture. Seen from far off, a source's pull or light
+depends on how its parts are arranged only through a few numbers, its
+multipole moments (the literature's multipole expansion, Legendre 1785): its
+total falls as the square of the distance grows, which is the lamp's quarter,
+and each finer detail of its arrangement falls off by a further power. So the
+further a source, the fewer of its arrangements can be told apart from here,
+and many arrangements are one case: "logically small" is the far field.
+
+**What the program takes from it (reading).** Four things, which the lessons
+that follow test against the record:
+
+1. **A test of difference.** Whether a difference in one place makes a
+   difference in another is a comparison of two runs, one with the difference
+   and one without (lessons 10.2 and 11.3).
+2. **A filter by the steps between.** What arrives from more steps away should
+   arrive later, or weaker, or not at all (lesson 11.4).
+3. **Arrangement over inventory.** Two arrangements with the same counts should
+   be able to grow differently, and descents should act on each other (lesson
+   11.5).
+4. **A start where you stand.** A simulation may begin at the place it cares
+   about and take what came before as given (lesson 11.2).
+
+**A pair and the whole.** The smallest form of "logically small" is the knot
+test itself (lesson 2.1). Forgetting any one distinction of a knot leaves the
+rest free, so seen from any one pair of a three-place knot's distinctions the
+knot looks exactly like no rule at all: the pair takes all four of its states
+either way. Everything the knot holds lies in the whole, and from a pair it is
+one case with the rules that allow everything. A parity knot hides the most in
+this way, one full bit (lesson 2.3).
+
+### 11.2 Working backwards from the ingredients
+
+**The owner's method.** Told that the pond's ingredients came from stars, so
+that starting at the pond takes that history as given, the owner answered: "But
+what I'm saying is we can work backwards. We can first find the ingredients,
+then figure out where they came from, or invent where they came from." It is
+his method, a working premise (assumption A281), and the growth can test it:
+how much of a start can be read back from what it grew, and how much does it
+matter?
+
+**Where the start comes from in the growth.** Every growth is fixed by its
+start and its law, and the start is supplied: nothing chooses a meeting
+pattern, so a start is one sample (lessons 7.3 and 8.0). The rounds read one
+structure outward from the start (lesson 8.1). Working backwards asks the
+reverse: given what is there after some rounds, which starts could have led to
+it, and does it matter which?
+
+**At a complete round the past has one way back (proved, referee pending; the
+ring computed).** Take a growth after a complete round that leaves loose
+distinctions. The knots that still hold a loose distinction are exactly the
+last round's births. Remove them, give their taken distinctions back to the
+knots that held them before, and what is left is the only complete round that
+could have come before, if any did; if growing it does not rebuild the present,
+the present can only have been a start. So stepping back is forced, one round
+at a time, and the only freedom is how far back to stop: every stopping point
+is a start that could have led to the present. Predicting the whole growth from
+a known complete round needs no bit of its origin, under either knot law:
+every start that could have led to it gives the same growth afterwards. On a
+ring of five knots each holding two loose distinctions, after 20 rounds there
+are 105 knots and 215 distinctions, 21 possible starts of different sizes, and
+one future; telling the 21 apart takes five bits
+([Codex's study of reading a start back](research/READ-ORIGIN-20261120-001/decision.md);
+[its boundary cases](research/READ-ORIGIN-20261120-001/boundaries.md)).
+
+**Midway through a round, the past still matters (proved, referee pending).**
+The smallest case is two three-place knots that share a distinction, five
+distinctions in all. They may be the whole start, or a single start knot and
+its first offshoot, made while the rest of that round is still owed. The
+holdings are the same and so are the allowed states, under both knot laws; the
+births that follow are not, and the difference lasts: in one reading the two
+old knots come to be joined by a chain of four knots that avoids their shared
+distinction, and in the other they never are
+([the smallest presents](research/READ-ORIGIN-20261120-001/minimum.md)). One
+bit answers "start or middle?"; the whole list of births still owed can take
+information that grows with the number of knots. The study sampled starts
+under two named weightings, uniform labelled trees and such trees with one
+meeting added, sampled uniformly, each knot given one spare loose distinction
+with chance one quarter, and cut one round of each midway. Each of the 164
+middles, read again as a start, gives different parents to its births than its
+own history does; once the round is completed, all 164 agree with their
+restarts on the whole next round
+([the samples](research/READ-ORIGIN-20261120-001/samples.md)).
+
+**The known mechanism.** *Classical:* a complete round is what the literature
+calls a full state of a Markov process: the future depends on the present
+alone, and not on how it was reached. Midway through a round the state is only
+partly in view, as in the literature's hidden Markov models: the births still
+owed are part of the present, and the holdings do not show them.
+
+**What this gives the owner's method (reading).** Working backwards is exact
+where the present is a complete round: the present itself can serve as the
+start, and so can any round on its one way back, with the same future. Within
+one law there is little to invent, though: every start that leads to a
+complete round lies on that one way back, so inventing a past means choosing
+how far back it began. What working backwards returns is that set of possible
+starts, and the set is harmless, since its members agree on the future.
+Midway, the ingredients on view are not all of the present, the origin is not
+"logically small", and a start read off the holdings can give a different
+future. In the owner's picture: the pond can be the start if nothing in it is
+half made.
+
+**Life is different (lesson 1.3).** In Life two patterns can have the same
+successor, so a present can have many predecessors, and by the Garden of Eden
+theorem some have none. In the growth a complete round that leaves loose
+distinctions has at most one round it could have come from. The holdings do
+not in general mark which knots were the start, though in some classes they
+do: where every start knot has five places and the growth makes only knots of
+four, the places tell the start apart (the study's scaffold test).
+
+### 11.3 What one pattern can change in another
+
+**The question, in the growth.** The owner's question, which differences
+elsewhere can make a difference here, needs two things the growth has: two
+patterns that last, and a way to make a difference in one. Lesson 10.2's
+with-and-without test bars a whole part and asks whether. The checks of this
+lesson ask which: join two patterns in one start, make one small change in the
+second, a mark, and look for the round at which it first shows in the first
+pattern's own births; and compare the first pattern's own births beside the
+second with its births beside a stub. The mark, the stub and the strict
+reading of "own" are a scaffold (assumption A277).
+
+**Own births follow their parents (an argument, not yet checked by a second
+hand).** The referee of the study below gave it. Under the ordinary count
+with nothing taken, each new knot receives at least what it is owed, so it can
+pay for its joins when it first acts, and no knot is short. Every knot that can
+join a pattern's own newborn shares one of that newborn's parents. So where two
+patterns are joined through a meeting that each can afford, the same parents
+give the same births, whatever stands at the other end of the join. That is
+"logically small", in the owner's phrase, in its strictest form: to a
+pattern's own knots the other pattern and one stub knot are one case.
+
+**The two-pattern study (computed; refereed, confirmed with fixes).** A bench
+joined the ring of five, the part of two knots and the seven-knot generator two
+at a time, one to three steps of the map apart, by a meeting or by a bare
+shared distinction, under nine laws (three rations, each with short knots
+retiring, waiting or making offshoots), with nothing taken or with one of three
+takes that use no names, and in a later pass under eight more rations. A
+census joined every pair of the record's small starts of one to three knots,
+990 pairs, under nine laws. The referee recounted every table
+([the study](research/TWO-PATTERNS-20261126-001/decision.md);
+[the referee's report](research/TWO-PATTERNS-20261126-001/referee-R1/report.md)).
+
+| Joined by | Law | What a pattern's own knots show of the other |
+| --- | --- | --- |
+| A meeting | The ordinary count, nothing taken | Own births as beside a stub in 36 of 36 bench readings and 1,980 of 1,980 census readings; no mark shows |
+| A meeting | The ordinary count, the one take that takes | 5 of 168 marks show, each in round 1 |
+| A meeting | The cap of three, or "just enough for three places" | The last kept join between own knots and others is by round 5 on the bench; at the census's meetings under the cap many keep one later |
+| A meeting | Eight rations that hand on a parent's owing | No kept join between own knots and others after round 2 on the bench |
+| A bare shared distinction | The three rations, nothing taken | Knots short from the first round in most cases; 233 of 316 readings differ from beside a stub; each mark that shows does so by round 3 |
+
+In the referee's wording of the headline: "No added loose distinction was first
+heard by own knots after round 6 in the comparisons made", across 13,876 marks
+on the bench and 101,994 in the census. The marks lay at most five steps of the
+map from the receiving pattern, so these comparisons could not show a change
+that shows late because it starts many steps away.
+
+**Where the two meet: the joint descent.** In these readings, what the two do
+together shows in the joint descent, which by the strict reading of "own"
+belongs to neither. On the bench the joint descent shows a mark at every start
+knot of the other but one, 156 of 168, at the round its number of steps of the
+map gives (over the three treatments, 12 of 468 showed one round earlier). The smallest worked case is two parts of two knots that share a
+distinction. Number the knots of each part's own chain 0, 1, 2, …. Then each
+pair of numbers (i, j) with i + j = n − 1 holds two knots of both made in round
+n, so round n makes 2n of them and n(n + 1) are made by round n, and each
+parent of such a knot that is itself of both is one number back in i or in j,
+through round 12. It is two copies of the literature's product of two chains,
+a growth of dimension two of the kind two touching knots make (lesson 8.2);
+the description of births as connected sets of the map of joins (lesson 8.1)
+is the earlier result behind it. Each part lends the other a chain to count
+along. A mark on one part does not stay at one pair of numbers: it gives
+another table.
+
+**What passes a meeting is a count (computed; refereed in part).** Where a
+part's course does depend on parts beyond a meeting, under the laws of lesson
+10.5, what it tells is how many of them were there, never which. To the first
+part the others are again one case.
+
+**Reading.** In the owner's picture the cell in the next drop is the complex
+part. Here, under the ordinary count, the other pattern a step of the map away
+is as small to a pattern's own knots as a galaxy is to the pond.
+
+### 11.4 What the steps between two patterns do to a change
+
+**Two bounds that the literature knows.** *Classical:* the owner's lamp shows
+one of them. The power that a patch receives from a lamp falls as the square
+of the lamp's distance grows, the literature's inverse-square law of received
+light (Kepler 1604), because the same power is spread over a sphere around the
+lamp whose area grows as the square. Physics has a second bound: no influence
+travels faster than light, so what can make a difference at a place and time is
+what lies in its past light cone (Minkowski 1908). Life has a bound of the
+second kind (lesson 1.3): each cell's rule reads only its eight neighbours on
+the drawn board, so a change spreads at most one cell an update, the
+literature's speed of light of the game (Berlekamp, Conway and Guy 1982), and
+the glider travels at a quarter of it, one cell diagonally every four updates.
+
+**A bounded pace (proved, referee pending).** The growth has a bound of the
+second kind, counted in rounds and steps of the map of joins. Two start knots
+first have a common descendant after exactly as many rounds as there are steps
+of the map between them. Which births a family of knots makes in the first n
+rounds is fixed by the start within n steps of the map of it, and the fresh
+distinctions those births receive by the start within n + 1; both bounds are
+reached. A change in how many loose distinctions a knot d steps away holds can
+first show in a birth's fresh distinctions in round d, and in which births are
+made in round d + 1, for every d; a change in which knots one knot meets can
+show a round earlier
+([Codex's study of how many rounds a change needs](research/INFLUENCE-CONE-20261120-001/decision.md);
+[its proofs](research/INFLUENCE-CONE-20261120-001/cones_proof.md)). Here a
+birth counts when any of its ancestors lies in the receiving family, as for the
+joint descent of lesson 11.3. So within n rounds only what lies within about n
+steps of the map can make a difference: a largest pace, the kind of bound
+lesson 8.5 names as the first test of this logic against Einstein's locality,
+with the two exceptions below. As run, the rounds are a supplied clock (lesson
+9.2), so the pace is counted in its ticks.
+
+**Two effects that ignore the steps (proved, referee pending).**
+
+- **A start that cannot pay.** If one knot of a supplied start holds too few
+  loose distinctions for what its first round asks, the whole round cannot be
+  made, and no knot anywhere is born, under either knot law: the stall of
+  lesson 8.1. A growth that has paid for a round has already paid for what the
+  next round asks, so ordinary growth never brings this back after the start
+  ([the study's notes on what a receiver can learn](research/INFLUENCE-CONE-20261120-001/signalling.md)).
+- **Parity closing.** Under parity, in the study's constructions, a knot made
+  from the same three parents holds three distinctions when no other part of
+  the live roster is live and four when one is, at any number of steps and
+  even between parts that share nothing. A parity growth can close with one
+  birth that takes every loose distinction only when one part is left, so that
+  birth tells whether anything else anywhere is live: one bit, never what it
+  is. Under not-all-equal that knot holds four either way
+  ([the study's notes on these two effects](research/INFLUENCE-CONE-20261120-001/guards.md)).
+
+So under not-all-equal, after the start, nothing in the record escapes the
+bound; under parity one bit does.
+
+**No measure of strength (reading).** The lamp's other lesson is about how
+much arrives, and here the record is silent: it counts whether a change shows
+and at which round, and neither is an amount, so a weakening is neither shown
+nor ruled out. What is counted does not fall off with the steps in the cases
+below: a change shows from up to some count of steps and from none beyond, or
+from every count tried.
+
+**Retiring and offshoots: one step (computed, a check by the thread, referee
+pending).** Where short knots retire or make offshoots, under each of five
+rations, four of them made by hand (assumption A278, a scaffold), a change
+reached a pattern's own knots from a knot one step away and from no knot two
+or more steps away, on the small starts tried. In the study's reading, a knot
+that is not short spends every loose distinction it has, so when a short knot
+cancels a join, its partner makes an offshoot in the join's place and has as
+many children as before: "A cancelled join changes what one child is, never
+how many there are, so the change is handed down that child's line and not
+across" ([the study](research/SHORT-AGAIN-20261126-001/README.md)).
+
+**A chain of waiting knots: the end of a jam (computed, checks by two threads,
+referee pending).** Where short knots wait, under the record's own ration "one
+fewer than asked" or a ration made by hand like it (A278), two seven-knot
+generators joined through a chain of up to seven link knots make no knot after
+round 1 without a change: every knot is short by one and waits, a state the
+ring study calls jammed. A mark at the other generator lets one knot pay. The
+jam then ends one knot a round along the chain, and the receiving generator
+makes knots again from round d + 3 to d + 5 at d meetings, as late as round 13
+at d = 8. It is the literature's threshold peeling, or bootstrap percolation
+(Chalupa, Leath and Reich 1979): a knot acts the round after the first of its
+partners in a join does, exactly for 2,280 of 2,624 knots and one round late
+for the rest. So what arrives is when the waiting ends, one number, and not
+what the other generator is. Of 47 small receivers tried by a meeting at three
+steps, the same eight hear from nearly every sender this way, through own knots
+that wait; the ring and the part of two knots never do. Joined to one end of
+such a chain, the ring that returns no longer returns under these rations, and
+where it does, under the cap of three, nothing it does reaches the generator
+from two steps or more (0 of 1,855 changes). A second change is heard in 120
+of 376 pairs; a third could not be read, as the structures outgrow the program
+([the study's decision](research/SHORT-AGAIN-20261126-001/decision.md)).
+
+**Under a cap, one receiver reads the other end (computed, referee
+pending).** Under the cap of three, one three-knot start, joined at its knot
+with one loose distinction to a chain of meetings, grows the slow way, 3, 4, 5,
+… own knots a round, until round 2d + 1 at d meetings. Then, if the site at the
+other end of the chain holds two loose distinctions, it switches to a fast way;
+if it holds three, or a stub stands there, it never does. This holds from d = 2
+to 6, rounds 5 to 13, under every treatment of a short knot, with the same
+senders on each side at every count of meetings; under a cap of four the
+switch comes at round 3d + 2. It is the one case in the record of a growing
+pattern's own course set late, from many steps of the map away, by what is at
+the other end, and it is thin: one receiver of 47, one property of one knot,
+and it rests on the cap (assumption A224, a rule added by hand), coming in
+where the knots of the chain beside the receiver come to be owed four and are
+given three. Under the ordinary count nothing like it shows.
+
+**The lamp, read as a count (an intuition, not evidence).** The lamp's square
+and the galaxy's few moments (lesson 11.1) both come from sharing: over how
+much a source's influence is spread at each distance, and how much of its
+arrangement survives the spreading. The program reads dimension from the
+same kind of count, how fast the number of knots within a given number of steps
+grows (lessons 4.6 and 8.2). So a weakening like the lamp's would come out of a
+growth in which a change is shared out among the knots at each count of steps
+of the map, in place of being handed down one child's descent or making a
+whole new table, as it is in the record. The cheapest test: in a growth of
+known dimension, count for each round the share of that round's births that
+differ after one mark, and see whether it falls as one over the number of
+knots at that many steps.
+
+**Reading.** Of the lamp's two lessons the growth has the one about time, a
+bounded pace with two exceptions. The one about strength is untested. What
+arrives from many steps away, where anything does, is when the waiting ends,
+or, under a cap and for one receiver, one property of one knot.
+
+### 11.5 Same inventory, different arrangement
+
+**The owner's drops.** His second swap is the opposite of the first: two drops
+of water with the same inventory of molecules, one holding a living cell. "A
+spreadsheet listing each kind of molecule and how many there are would come out
+the same twice. Yet one drop could have descendants tomorrow."
+
+**The same counts, a different tomorrow (computed; refereed).** Lesson 8.4 has
+a stronger form of the two drops. The law builds pairs of arrangements that
+agree in the bond distance between every two distinctions, far more than an
+inventory, and still allow different states; and on one stage it reaches,
+exchanging two distinctions keeps all 210 bond distances and every live knot's
+distinctions, while one round later the two exchanged pairs part. Today's
+counts and distances do not settle tomorrow's.
+
+**A count of births does not decide (computed; refereed, confirmed with
+fixes).** The study of lesson 10.5 that held one place fixed and changed the
+form attached to it runs a weaker form of the spreadsheet test. With the
+meeting supplied by the start, the first seed's own births differ with the
+second seed's form in all 90 of its studies, into three or more classes in 87.
+The second seed's count profile, the knot it is held at with the number of
+births it makes each round, is a poorer list than the owner's spreadsheet, and
+it still fails: on 345 second seeds it decides the class in 3 studies of 267,
+and in the other 264 two second seeds with the same profile are told apart. And
+two second seeds with the same knots at the same steps from the held knot,
+differing only in which knots are partners, are told apart in 23 studies of
+270. In the owner's words, "The arrangement matters".
+
+**Into another generation.** In the growth every knot after the start is born
+from parents and takes what they hold, so whatever a knot's arrangement is
+passes into its descent (lesson 8.1). What the owner asks for is more: an
+arrangement that makes more of itself, and descents that act on each other.
+The record has a part that makes two of itself every two rounds, under rules
+added by hand, taking nothing from any other part (lesson 8.7), and no copier,
+a pattern the growth makes that leaves two of another (lesson 10.4).
+
+**Descents that act on each other.** "Now a change inside the first cell can
+change which descendants of the second one survive." That is the second
+property of a fold of emergence (lesson 10.1): what one pattern makes depends
+on another. The joint descent of lesson 11.3 depends on both patterns, but it
+is not either pattern's own descent: the strict reading leaves it out by
+definition. For one pattern's own descent the record has the dependence only
+under laws added by hand, and there it depends on whether the other part is
+growing, never on what it is (lesson 10.3); through a meeting, what passes is a
+count (lesson 10.5); under the cap of three, one receiver's own growth follows
+one property of the knot at the other end of a chain (lesson 11.4); and under
+the ordinary count, through a meeting, a pattern's own knots grow the same
+whatever is joined to them (lesson 11.3).
+
+**Reading.** The growth already has the owner's point that arrangement, and not
+inventory, decides what follows. It does not yet have two descents, both made
+by the growth, each changing which of the other's own descendants go on.
+
+### 11.6 What a simulation of the pond still needs
+
+**The picture against the record.** Each of the owner's claims, with what the
+record has and its status.
+
+| The owner's picture | What the record has | Status |
+| --- | --- | --- |
+| Start at the pond and invent where it came from | At a complete round every start that could have led to it gives the same future, and all of them lie on its one way back; midway through a round they do not (lesson 11.2) | Proved, referee pending |
+| Which differences elsewhere make a difference here | A change made in one pattern and looked for in another's own births; through a meeting under the ordinary count with nothing taken, none shows (lesson 11.3) | Computed; refereed |
+| A galaxy is logically small | Beside a pattern joined through a meeting, a pattern's own knots grow as beside one knot; through a meeting a part's course tells how many, never which (lessons 11.3 and 10.5) | Computed; refereed in part |
+| A lamp twice as far gives a quarter | A bounded pace of one step of the map a round, with two effects that ignore it; no measure of strength (lesson 11.4) | The pace proved, referee pending; the weakening untested |
+| Two drops with the same molecules | Arrangements that agree in every count grow differently; a count of births seldom decides (lesson 11.5) | Computed; refereed |
+| Descents that feed each other | For a pattern's own descent, only under laws added by hand: whether the other part grows (lesson 10.3), or, for one receiver under a cap, one property of the knot at the other end of a chain (lesson 11.4) | Computed, referee pending |
+
+**Two cautions about the picture (reading).**
+
+- **Interchangeable is not identical.** Two galaxies can be swapped "to the
+  accuracy I care about", over the time studied, and that is the sense the
+  owner gives. Over longer times small differences can grow, in the physics of
+  his picture: the literature's sensitive dependence on initial conditions
+  (Lorenz 1963). The record has no measure of how a difference grows over
+  rounds. The nearest fact is that a change, where it gets through, is not
+  damped: one mark on one of two parts gives a whole new table of what they
+  make together (lesson 11.3).
+- **The pond's ingredients have a history.** Starting at the pond takes what
+  came before as given. The owner's answer is lesson 11.2: work backwards, and
+  where the present is complete, the past can be taken as given at no cost.
+
+**How the owner pictures using the system.** He has asked: "What about if we
+wanted to simulate some sort of environment? What if we wanted to model physics
+or something?", and pictured the growth: "I imagine it to be something like
+fractals, except the branches of the fractals are able to join with each other
+and are not separated so much by space" (glossary, "Fractal"). And of
+locality: "the logic is not spatial yet" (lesson 8.5). The pond picture asks of
+that structure what any simulation of a place asks: that what lies many steps
+of the map away be cheaper to hold than what lies one step away.
+
+**Open.**
+
+- **A measure of strength.** A way to say how much of a change arrives, and a
+  law under which it falls the more knots lie at that many steps of the map:
+  the first form of the owner's lamp (lesson 11.4, its cheapest test).
+- **A signal sent again.** The chain of waiting knots of lesson 11.4 passes a
+  change once, and the ring at one end of it does not come round; a second
+  change was heard in 120 of 376 pairs, and a third could not be read. The
+  study that found the receiver under a cap samples receivers of four knots
+  next, for a rule of which receivers read the other end.
+- **An eddy in a grown background.** B207 in the tracker, under goal G17,
+  typical and rare meeting patterns: an eddy joined into a background that
+  grows in dimension two, read for whether it lasts, whether bond distances
+  among knots a few steps of the map from it differ from those many steps away,
+  how many steps of the map a disturbance spreads, and how two eddies act on
+  each other. The first experiment found lasting things and no signal
+  (lesson 8.5).
+- **Descents that act on each other.** Sub-goal B317 (lesson 10.5): a part
+  whose course depends on what another part is, and that makes a pattern of its
+  own from it.
+
+**What would click into place (reading).** By the owner's aim the model need
+not show that our universe is made this way, only that it could be. For the
+pond that would mean one growth, under a law with nothing supplied after the
+start, in which a part many steps of the map away can be held by a few counts
+and a part one step away cannot: a pattern whose own births follow what a
+second pattern is, more weakly the more steps lie between.
 
 ## Glossary
 

@@ -335,6 +335,8 @@ evidence: results and their status come from the records each entry links.
 | [A277](#a277--a-stub-and-a-mark-stand-for-the-presence-and-the-kind-of-a-pattern) | A stub and a mark stand for the presence and the kind of a pattern | scaffold | Assumed |
 | [A278](#a278--rations-made-by-hand-so-that-knots-are-short-now-and-then) | Rations made by hand so that knots are short now and then | scaffold | Assumed |
 | [A279](#a279--count-every-schedule-of-one-rounds-creations-and-births-equally) | Count every schedule of one round's creations and births equally | measure | Assumed |
+| [A280](#a280--from-a-place-only-the-differences-that-can-make-a-difference-there-need-simulating) | From a place, only the differences that can make a difference there need simulating | interpretation | Assumed |
+| [A281](#a281--an-origin-can-be-found-or-invented-from-what-is-here) | An origin can be found or invented from what is here | working premise | Assumed |
 
 ## Entries
 
@@ -5755,3 +5757,52 @@ evidence: results and their status come from the records each entry links.
 - **Challenge.** Weight schedules by a growth's own way of making them (for example rounds only, with the commit order counted equally, which gives n/n!), by the number of distinct crossing relations, or by a rule that orders births by their parents' creation; any of these changes every share. The verdict that the sign is supplied does not rest on this weighting, only the shares do.
 - **History.**
   - 2026-11-26 · Entered with the confirmation of the reordering sign. Swapped: commit orders alone against whole schedules; the joint weighting of creation and commit orders gives the same shares as commit orders alone.
+
+### A280 · From a place, only the differences that can make a difference there need simulating
+
+**Assumed** · 2026-11-26 · interpretation
+
+- **Statement.** The owner's picture, in his words, from an essay: to simulate the beginning of life, "I'd start by putting the
+  camera at the edge of the pond", and ask "Which differences elsewhere can make a difference *here*?" Two galaxies that deliver
+  the same light and pull to the pond can be swapped, so a galaxy is "logically small": "A great many states out there amount to
+  one case here." Two drops with the same inventory of molecules differ when one holds a cell: "The arrangement matters." And
+  "From the edge of this pond, the universe is the small part. Life is the complex part." Read in the program's terms: a
+  simulation of a place need hold of the rest only what can change the births there; what lies more steps of the map of joins
+  away should arrive later, or weaker, or not at all; and arrangement, not inventory, should decide what follows. Stated in the
+  Intuitions guide, Chapter 11 ([lesson 11.1](../INTUITIONS.md#111-the-edge-of-the-pond)).
+- **Why.** Recorded with Chapter 11 of the guide, written at the owner's request ("I'm wondering if we could add a simulation of
+  our reality chapter"), as his interpretation; no result is drawn from it.
+- **Rests on it.** No result. It frames Chapter 11 of the guide.
+- **Challenge.** Its parts can be set against the growth one by one. A bounded pace is proved, referee pending: a change spreads
+  at most one step of the map a round, with two exceptions ([Codex's study of how many rounds a change needs](../research/INFLUENCE-CONE-20261120-001/decision.md)).
+  A weakening is untested, since the record counts only whether and when a change shows. And joined through a meeting under the
+  ordinary count with nothing taken, a pattern's own knots grow exactly as beside one knot
+  ([the two-pattern study](../research/TWO-PATTERNS-20261126-001/decision.md)), the opposite of the picture's cell in the next
+  drop. The cheapest test is a measure of how much of a change arrives: the share of a round's births that differ after one
+  mark, in a growth of known dimension, against the number of knots at that many steps. If no law of the growth gives a share
+  that falls with the steps, the picture cannot come out of the logic as it stands.
+- **History.**
+  - 2026-11-26 · Entered with Chapter 11 of the Intuitions guide, "Simulating our reality".
+
+### A281 · An origin can be found or invented from what is here
+
+**Assumed** · 2026-11-26 · working premise
+
+- **Statement.** The owner's method, in his words: "we can work backwards. We can first find the ingredients, then figure out
+  where they came from, or invent where they came from." In the program's terms: a growth may be studied from a present taken as
+  its start, with any start that could have led to it standing in for the true one. Stated in the Intuitions guide
+  ([lesson 11.2](../INTUITIONS.md#112-working-backwards-from-the-ingredients)).
+- **Why.** The owner's answer when told that the pond's ingredients came from stars, so that starting at the pond takes that
+  history as given; recorded with Chapter 11 of the guide.
+- **Rests on it.** Lesson 11.2's reading, and any later study that grows from a built present in place of a start.
+- **Challenge.** Proved in one form, referee pending: at a complete round that leaves loose distinctions, every start that could
+  have led to it gives the same growth afterwards, all of them lie on its one way back, and the present is itself one of them;
+  midway through a round the same holdings, read as a start, give different births
+  ([Codex's study of reading a start back](../research/READ-ORIGIN-20261120-001/decision.md)). So the premise holds where the
+  present is a complete round and fails where something is half made, and within one law there is little to invent beyond how
+  far back the start was. A study that starts from a built present should say which it is. The cheapest test of a new case is
+  the study's: restart the present as a start and compare its births with its history.
+- **History.**
+  - 2026-11-26 · Entered with Chapter 11 of the Intuitions guide. The study of reading a start back, of 20 November 2026, already
+    bears on it: its 164 sampled middles of a round all differ from their histories when restarted, and all agree once the
+    round is completed.

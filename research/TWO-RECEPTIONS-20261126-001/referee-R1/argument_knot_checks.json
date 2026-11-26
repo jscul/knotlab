@@ -1,0 +1,117 @@
+[
+  {
+    "arity": 3,
+    "cnf": "~A B c; A ~B c; A B ~c; ~A ~B ~c",
+    "check": {
+      "allowed": [
+        "000",
+        "011",
+        "101",
+        "110"
+      ],
+      "binding": true,
+      "coexistence": true,
+      "contact": "c",
+      "erasure": "forgetting",
+      "invisible_in_parts": true,
+      "is_knot": true,
+      "loops": [
+        "A",
+        "B"
+      ],
+      "loss_on_erasure": true,
+      "minimum_width": 3,
+      "notes": [],
+      "pairwise_definable": false,
+      "variables": [
+        "A",
+        "B",
+        "c"
+      ]
+    }
+  },
+  {
+    "arity": 4,
+    "cnf": "~A B C c; A ~B C c; A B ~C c; ~A ~B ~C c; A B C ~c; ~A ~B C ~c; ~A B ~C ~c; A ~B ~C ~c",
+    "check": {
+      "allowed": [
+        "0000",
+        "0011",
+        "0101",
+        "0110",
+        "1001",
+        "1010",
+        "1100",
+        "1111"
+      ],
+      "binding": true,
+      "coexistence": true,
+      "contact": "c",
+      "erasure": "forgetting",
+      "invisible_in_parts": true,
+      "is_knot": true,
+      "loops": [
+        "A",
+        "B",
+        "C"
+      ],
+      "loss_on_erasure": true,
+      "minimum_width": 4,
+      "notes": [],
+      "pairwise_definable": false,
+      "variables": [
+        "A",
+        "B",
+        "C",
+        "c"
+      ]
+    }
+  },
+  {
+    "arity": 5,
+    "cnf": "~A B C D c; A ~B C D c; A B ~C D c; ~A ~B ~C D c; A B C ~D c; ~A ~B C ~D c; ~A B ~C ~D c; A ~B ~C ~D c; A B C D ~c; ~A ~B C D ~c; ~A B ~C D ~c; A ~B ~C D ~c; ~A B C ~D ~c; A ~B C ~D ~c; A B ~C ~D ~c; ~A ~B ~C ~D ~c",
+    "check": {
+      "allowed": [
+        "00000",
+        "00011",
+        "00101",
+        "00110",
+        "01001",
+        "01010",
+        "01100",
+        "01111",
+        "10001",
+        "10010",
+        "10100",
+        "10111",
+        "11000",
+        "11011",
+        "11101",
+        "11110"
+      ],
+      "binding": true,
+      "coexistence": true,
+      "contact": "c",
+      "erasure": "forgetting",
+      "invisible_in_parts": true,
+      "is_knot": true,
+      "loops": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "loss_on_erasure": true,
+      "minimum_width": 5,
+      "notes": [],
+      "pairwise_definable": false,
+      "variables": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "c"
+      ]
+    }
+  }
+]

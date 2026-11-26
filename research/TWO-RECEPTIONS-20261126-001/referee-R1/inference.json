@@ -1,0 +1,193 @@
+{
+  "start": [
+    [
+      0,
+      3,
+      4,
+      7
+    ],
+    [
+      1,
+      2,
+      5,
+      6,
+      8
+    ],
+    [
+      0,
+      1,
+      2
+    ]
+  ],
+  "first_far_member_by_number": true,
+  "short_members": "any nonzero value stops before reading that round",
+  "comparisons": [
+    {
+      "take": "oldest",
+      "set_after": 1,
+      "marked": 6,
+      "sharings_to_a_current_receiver_member": 2,
+      "receiver_members": [
+        4,
+        5
+      ],
+      "sender_members": [
+        6,
+        7
+      ],
+      "rounds": [
+        {
+          "round": 2,
+          "same": false,
+          "own_births": [
+            1,
+            1
+          ],
+          "own_fresh": [
+            [
+              9
+            ],
+            [
+              10
+            ]
+          ],
+          "own_places": [
+            [
+              12
+            ],
+            [
+              13
+            ]
+          ]
+        }
+      ],
+      "cpu_seconds": 0.001
+    },
+    {
+      "take": "none",
+      "set_after": 1,
+      "marked": 6,
+      "sharings_to_a_current_receiver_member": 4,
+      "receiver_members": [
+        4,
+        5
+      ],
+      "sender_members": [
+        6,
+        7
+      ],
+      "rounds": [
+        {
+          "round": 2,
+          "same": true,
+          "own_births": [
+            1,
+            1
+          ],
+          "own_fresh": [
+            [
+              1
+            ],
+            [
+              1
+            ]
+          ],
+          "own_places": [
+            [
+              3
+            ],
+            [
+              3
+            ]
+          ]
+        },
+        {
+          "round": 3,
+          "same": true,
+          "own_births": [
+            0,
+            0
+          ],
+          "own_fresh": [
+            [],
+            []
+          ],
+          "own_places": [
+            [],
+            []
+          ]
+        }
+      ],
+      "cpu_seconds": 0.001
+    },
+    {
+      "take": "sole",
+      "set_after": 1,
+      "marked": 6,
+      "sharings_to_a_current_receiver_member": 2,
+      "receiver_members": [
+        4,
+        5
+      ],
+      "sender_members": [
+        6,
+        7
+      ],
+      "rounds": [
+        {
+          "round": 2,
+          "same": true,
+          "own_births": [
+            1,
+            1
+          ],
+          "own_fresh": [
+            [
+              3
+            ],
+            [
+              3
+            ]
+          ],
+          "own_places": [
+            [
+              5
+            ],
+            [
+              5
+            ]
+          ]
+        },
+        {
+          "round": 3,
+          "same": true,
+          "own_births": [
+            0,
+            0
+          ],
+          "own_fresh": [
+            [],
+            []
+          ],
+          "own_places": [
+            [],
+            []
+          ]
+        }
+      ],
+      "cpu_seconds": 0.001
+    },
+    {
+      "observed": "one end absent",
+      "cpu_seconds": 0.002
+    },
+    {
+      "observed": "one end absent",
+      "cpu_seconds": 0.001
+    },
+    {
+      "observed": "one end absent",
+      "cpu_seconds": 0.0
+    }
+  ]
+}

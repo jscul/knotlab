@@ -48,8 +48,10 @@ Pearle, *Physical Review D* 2, 1418, 1970; Gisin and Gisin, *Physics Letters A* 
   (α′, β′), lies in W with α′ ∈ S_0 and β′ ∈ T_0, so in V_00; the relations on V_00, V_01 and V_10 then give
   a_1(α) = b_0(β′) = a_0(α′) = b_1(β) at every point of V_11. U and S agree under parity (every surviving state has the
   same number of completions). Checked by exhaustion on two values a reader ([`linear_two.py`](linear_two.py): best
-  2). Three readers: by exhaustion on one and two values a reader the best Mermin win is 3/4
-  ([`linear_three.py`](linear_three.py)); no proof yet. What growth can break is the split: a birth with parents of
+  2). Three readers: by exhaustion on one value a reader, and on two values for one reader and
+  one for each other, the best Mermin win is 3/4 ([`linear_three.py`](linear_three.py)); *corrected after the run:* the
+  case of two values for two readers was started and stopped unfinished (not run), so "two values a reader" was more
+  than was checked. No proof yet. What growth can break is the split: a birth with parents of
   two readers (then a + b = x·y, the literature's PR box, is linear), a birth of the middle that changes with one edit,
   or a round that stalls. Each shows in the census as a placement that does not split.
 - **A3 (no general bound).** Eight equally weighted worlds on Alice's values (p, q) and Bob's (r, s), allowed when

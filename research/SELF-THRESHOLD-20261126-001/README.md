@@ -4,6 +4,11 @@ Epic `SELF-THRESHOLD-20261126-001`, the last round of the line at the coordinato
 [`HOLD-BACK-20261126-001`](../HOLD-BACK-20261126-001/decision.md). A check by the thread, not a registered study;
 computed; referee pending. Program: [`thr.py`](thr.py), on that study's readings.
 
+
+> **Refereed (R1, [report](referee-R1/report.md)): confirmed with fixes, one Block.** The counts stand; the claim that
+> late hearing needs a join owed four given three is wrong for the line (the cap of four hears through joins owed five
+> given four; the minimum count hears too); HALF and the cap differ at an allocation in 173 census pairs, not 145, and
+> HALF gives more than the cap there, not less. See [the decision's notice](decision.md).
 ## Why
 
 Two laws that hold back at nearly every join part the patterns at once and nothing is heard; the cap of three, which

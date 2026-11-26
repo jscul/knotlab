@@ -161,4 +161,5 @@ eight-knot witness stands as a start of its own, untested for distance.
 pairs and laws read in both runs (3,181; 40 read only the first time fall in the eight jobs stopped by their clock or
 memory cap this time), **every one of the 4,844 far changes compared has the same first hearing as before**: 194
 heard, all in rounds 4 and 5 under the cross-part take, and none after round 6. The stale equation changed no outcome;
-the referee's narrowing (no late first hearing within each change's window) stands as written.
+the referee's narrowing (no late first hearing within each change's window) stands as written. *(Self-threshold referee R1, a narrowing: first hearings are preserved, but in five rebuilt additions renewing the
+equation changed a receiver offshoot's fresh count to zero; outcomes, not every birth, are unchanged.)*

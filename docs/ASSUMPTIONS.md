@@ -5906,6 +5906,7 @@ evidence: results and their status come from the records each entry links.
 - **Rests on it.** Whatever the study finds about late hearing from afar under a threshold the knot reads from itself ([the note](../research/SELF-THRESHOLD-20261126-001/README.md)).
 - **Challenge.** Starts where p varies (joins of three parents, takes), where PLACES stops being a cap; other self-read thresholds. The model is not expected to keep either form; they are candidates for G18's comparison.
 - **History.**
+  - 2026-11-26 · Refereed (R1, [report](../research/SELF-THRESHOLD-20261126-001/referee-R1/report.md); confirmed with fixes, one Block on the line-wide reading): both formulas reproduce the results; HALF gives more than the cap where they differ; PLACES first differs at first-round offshoots too, but the joins given three and owed four decide the comparison.
   - 2026-11-26 · `SELF-THRESHOLD-20261126-001` ([decision](../research/SELF-THRESHOLD-20261126-001/decision.md), referee pending): HALF hears late exactly where it gives the cap of three's births (6 far changes in the census, 124 in the 28 linked pairs; where it departs from the cap neither hears); PLACES hears nothing. The statement's last sentence was wrong: joins are given two to four distinctions, and PLACES differs from the cap at joins given three and owed four, not at offshoots (logged in `docs/CORRECTIONS.md`).
   - 2026-11-26 · Entered with `SELF-THRESHOLD-20261126-001`.
 

@@ -3,7 +3,18 @@
 Epic `SELF-THRESHOLD-20261126-001` (the coordinator's go-ahead for a last round on the line of hearing from afar; goals
 G15 with G18; register entry A285), closed 26 November 2026. A check by the thread, not registered: computed; referee
 pending. [The note](README.md) · [advisor's question](advisor_question.md) and [answer](advisor_answer.md) ·
-[census table](census_table.md) · [linked-pairs table](linked_table.md)
+[census table](census_table.md) · [linked-pairs table](linked_table.md) · [referee report R1](referee-R1/report.md)
+
+> **Refereed (R1): confirmed with fixes, one Block.** HALF reproduced all 130 hearing histories of the cap of three at
+> every allocation (826,280 births), and PLACES heard none; the counts stand. **Block:** finding 3's "only where a join
+> owed four is given three" is false for the line: under the cap of four, which gives every join owed four its four, a
+> far change is heard at round 13 through joins owed five given four (giving those joins five removes the hearing), and
+> under the minimum count, every join given one, at round 9. What stands is the general form: late hearing from afar
+> came only under rules that give some join less than it is owed, which the ordinary count never does. **Narrowings:**
+> HALF and the cap differ at an allocation in 173 census pairs, not 145 (28 only in changed growths); PLACES also first
+> differs at 933 first-round census offshoots (given two, owed three or four), though the joins given three and owed four
+> decide the comparison. **Not a block:** PLACES's unchanged growth equals the cap's in all 28 linked pairs (the ordinary
+> count's in 25); HALF gives more than the cap, not less, wherever they differ. Logged in `docs/CORRECTIONS.md`.
 
 ## What stands
 
@@ -19,7 +30,9 @@ pending. [The note](README.md) · [advisor's question](advisor_question.md) and 
    gives it four, the cap three. PLACES at joins alone gives PLACES's whole record; PLACES at offshoots alone gives the
    ordinary count's.
 3. **The line closes as an obstruction learned.** On every history read in it, a far change made after both patterns
-   exist reaches the receiver late only where a join owed four is given three. The ordinary count never gives a join
+   exist reaches the receiver late only where a join owed four is given three *(R1, Block: wrong for the line; under
+   the cap of four through joins owed five given four, and under the minimum count; the general form, a join given
+   less than it is owed, stands)*. The ordinary count never gives a join
    less than it is owed (the funding argument of the two-receptions study); a law that does is a rule added, whether
    its number is fixed or read from the demand.
 
@@ -32,7 +45,7 @@ heard. Not-all-equal only; one join, d = 3.
 | Scope | Verdict | Why |
 | --- | --- | --- |
 | This attempt — two self-read thresholds with three controls | **Status:** Successful (a positive that is a replay, a negative with a reason) | HALF hears exactly where it is the cap; PLACES hears nothing, and the birth that decides is found |
-| Local direction — late hearing from afar | **STOP** (obstruction learned) | Late hearing rests on one added allocation, a join owed four given three |
+| Local direction — late hearing from afar | **STOP** (obstruction learned) | Late hearing rests on an added rule that gives some join less than it is owed (R1: not only a join owed four given three) |
 | Broader exploration — laws that leave a join short | Partly mapped | Fixed caps, holding back, self-read thresholds, takes: only an underfunded join owed four carries it |
 | Long-term goal — G15 Learning, with G18 Comparing growth laws | Obstruction learned | Nothing the model's own count does carries a far change late; the coordinator's next direction (a join that forbids, with free settings) is G18's open question |
 

@@ -1,5 +1,12 @@
 # Under the forbidding cuts, does growth close a stage that carries the step one layer up? What stands
 
+
+> **Narrowed by `UPPER-GROWN-20261127-001`'s referee (R1, Block)** ([report](../UPPER-GROWN-20261127-001/referee-R1/report.md)).
+> "Boxes need a closed system of at least twelve three-place knots" is false: ordinary growth makes 18 boxes on an open
+> stage one round from a built ten-knot start, and a four-clause step occurs on a closed ten-knot system. The counts
+> here stand (171 starts close under each cut, at most nine knots, no box). The conclusion that no recorded law makes
+> the step is true only of census starts under the rival laws; under ordinary growth it is false on a built start.
+
 `CLOSED-BY-CUTS-20261127-001`. Frozen in commit 7167b99346. Results are in `out/`. Referee pending.
 
 **Answer: growth under the cuts does close stages, but only small ones, and none carries the step.** Every census

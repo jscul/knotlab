@@ -1,0 +1,532 @@
+{
+  "domain": "Abstract lower relations on six bits. No raw not-all-equal realization is assumed.",
+  "normalization": "All three upper agreements are true in the fixed forbidden word.",
+  "counts": {
+    "permutations_read": 40320,
+    "each_specified_triple_forbids_exactly_one_word": 1960,
+    "upper_knot": 1216,
+    "sign_product_upper_knot": 8,
+    "nonproduct_upper_knot": 1208,
+    "nonproduct_upper_knot_unread_at_each_of_eight_lower_knots": 1208,
+    "nonproduct_upper_knot_and_no_extra_nonfull_triple": 48
+  },
+  "nonproduct_upper_knots_by_number_of_missing_upper_words": {
+    "1": 992,
+    "2": 192,
+    "3": 24
+  },
+  "examples": {
+    "no_extra_nonfull_triple_upper_words_7": {
+      "forbidden_words_in_000_to_111_transversal_order": [
+        "000",
+        "001",
+        "010",
+        "011",
+        "111",
+        "110",
+        "101",
+        "100"
+      ],
+      "specified_triples": [
+        [
+          0,
+          2,
+          4
+        ],
+        [
+          0,
+          2,
+          5
+        ],
+        [
+          0,
+          3,
+          4
+        ],
+        [
+          0,
+          3,
+          5
+        ],
+        [
+          1,
+          2,
+          4
+        ],
+        [
+          1,
+          2,
+          5
+        ],
+        [
+          1,
+          3,
+          4
+        ],
+        [
+          1,
+          3,
+          5
+        ]
+      ],
+      "other_nonfull_triples": {},
+      "number_of_six_bit_words": 32,
+      "upper_image": [
+        "000",
+        "001",
+        "010",
+        "011",
+        "100",
+        "101",
+        "110"
+      ],
+      "reading_fixes_leaving_both_values_at_each_lower_knot": {
+        "(0, 2, 4)": [
+          5,
+          6,
+          6
+        ],
+        "(0, 2, 5)": [
+          5,
+          6,
+          6
+        ],
+        "(0, 3, 4)": [
+          5,
+          6,
+          6
+        ],
+        "(0, 3, 5)": [
+          5,
+          6,
+          6
+        ],
+        "(1, 2, 4)": [
+          5,
+          6,
+          6
+        ],
+        "(1, 2, 5)": [
+          5,
+          6,
+          6
+        ],
+        "(1, 3, 4)": [
+          5,
+          6,
+          6
+        ],
+        "(1, 3, 5)": [
+          5,
+          6,
+          6
+        ]
+      },
+      "six_bit_witness_on_deletion_for_upper_111": [
+        "000000",
+        "000011",
+        "001100",
+        "001111",
+        "111111",
+        "111100",
+        "110011",
+        "110000"
+      ],
+      "upper_cnf_with_the_six_lower_readings_quantified": "A0 B0 C0; A0 B0 ~C1; A0 ~B1 C0; A0 ~B1 ~C1; ~A1 ~B0 ~C0; ~A1 ~B0 C1; ~A1 B1 ~C0; ~A1 B1 C1; A0 A1 P; A0 ~A1 ~P; ~A0 A1 ~P; ~A0 ~A1 P; B0 B1 Q; B0 ~B1 ~Q; ~B0 B1 ~Q; ~B0 ~B1 Q; C0 C1 R; C0 ~C1 ~R; ~C0 C1 ~R; ~C0 ~C1 R",
+      "canonical_check": [
+        {
+          "variables": [
+            "Q",
+            "R",
+            "P"
+          ],
+          "allowed": [
+            "000",
+            "001",
+            "010",
+            "011",
+            "100",
+            "101",
+            "110"
+          ],
+          "is_knot": true
+        },
+        {
+          "variables": [
+            "P",
+            "R",
+            "Q"
+          ],
+          "allowed": [
+            "000",
+            "001",
+            "010",
+            "011",
+            "100",
+            "101",
+            "110"
+          ],
+          "is_knot": true
+        },
+        {
+          "variables": [
+            "P",
+            "Q",
+            "R"
+          ],
+          "allowed": [
+            "000",
+            "001",
+            "010",
+            "011",
+            "100",
+            "101",
+            "110"
+          ],
+          "is_knot": true
+        }
+      ]
+    },
+    "first_sign_at_A_depends_on_B_index": {
+      "forbidden_words_in_000_to_111_transversal_order": [
+        "000",
+        "001",
+        "110",
+        "111",
+        "100",
+        "101",
+        "010",
+        "011"
+      ],
+      "specified_triples": [
+        [
+          0,
+          2,
+          4
+        ],
+        [
+          0,
+          2,
+          5
+        ],
+        [
+          0,
+          3,
+          4
+        ],
+        [
+          0,
+          3,
+          5
+        ],
+        [
+          1,
+          2,
+          4
+        ],
+        [
+          1,
+          2,
+          5
+        ],
+        [
+          1,
+          3,
+          4
+        ],
+        [
+          1,
+          3,
+          5
+        ]
+      ],
+      "other_nonfull_triples": {
+        "(2, 3, 4)": [
+          "010"
+        ],
+        "(2, 3, 5)": [
+          "011"
+        ]
+      },
+      "number_of_six_bit_words": 34,
+      "upper_image": [
+        "000",
+        "001",
+        "010",
+        "011",
+        "100",
+        "101",
+        "110"
+      ],
+      "reading_fixes_leaving_both_values_at_each_lower_knot": {
+        "(0, 2, 4)": [
+          6,
+          5,
+          6
+        ],
+        "(0, 2, 5)": [
+          6,
+          5,
+          6
+        ],
+        "(0, 3, 4)": [
+          6,
+          5,
+          6
+        ],
+        "(0, 3, 5)": [
+          6,
+          5,
+          6
+        ],
+        "(1, 2, 4)": [
+          6,
+          5,
+          6
+        ],
+        "(1, 2, 5)": [
+          6,
+          5,
+          6
+        ],
+        "(1, 3, 4)": [
+          6,
+          5,
+          6
+        ],
+        "(1, 3, 5)": [
+          6,
+          5,
+          6
+        ]
+      },
+      "six_bit_witness_on_deletion_for_upper_111": [
+        "000000",
+        "000011",
+        "111100",
+        "111111",
+        "110000",
+        "110011",
+        "001100",
+        "001111"
+      ],
+      "upper_cnf_with_the_six_lower_readings_quantified": "A0 B0 C0; A0 B0 ~C1; ~A0 ~B1 C0; ~A0 ~B1 ~C1; ~A1 B0 C0; ~A1 B0 ~C1; A1 ~B1 C0; A1 ~B1 ~C1; A0 A1 P; A0 ~A1 ~P; ~A0 A1 ~P; ~A0 ~A1 P; B0 B1 Q; B0 ~B1 ~Q; ~B0 B1 ~Q; ~B0 ~B1 Q; C0 C1 R; C0 ~C1 ~R; ~C0 C1 ~R; ~C0 ~C1 R",
+      "canonical_check": [
+        {
+          "variables": [
+            "Q",
+            "R",
+            "P"
+          ],
+          "allowed": [
+            "000",
+            "001",
+            "010",
+            "011",
+            "100",
+            "101",
+            "110"
+          ],
+          "is_knot": true
+        },
+        {
+          "variables": [
+            "P",
+            "R",
+            "Q"
+          ],
+          "allowed": [
+            "000",
+            "001",
+            "010",
+            "011",
+            "100",
+            "101",
+            "110"
+          ],
+          "is_knot": true
+        },
+        {
+          "variables": [
+            "P",
+            "Q",
+            "R"
+          ],
+          "allowed": [
+            "000",
+            "001",
+            "010",
+            "011",
+            "100",
+            "101",
+            "110"
+          ],
+          "is_knot": true
+        }
+      ]
+    },
+    "no_extra_nonfull_triple_upper_words_5": {
+      "forbidden_words_in_000_to_111_transversal_order": [
+        "000",
+        "110",
+        "101",
+        "011",
+        "111",
+        "001",
+        "010",
+        "100"
+      ],
+      "specified_triples": [
+        [
+          0,
+          2,
+          4
+        ],
+        [
+          0,
+          2,
+          5
+        ],
+        [
+          0,
+          3,
+          4
+        ],
+        [
+          0,
+          3,
+          5
+        ],
+        [
+          1,
+          2,
+          4
+        ],
+        [
+          1,
+          2,
+          5
+        ],
+        [
+          1,
+          3,
+          4
+        ],
+        [
+          1,
+          3,
+          5
+        ]
+      ],
+      "other_nonfull_triples": {},
+      "number_of_six_bit_words": 22,
+      "upper_image": [
+        "000",
+        "011",
+        "100",
+        "101",
+        "110"
+      ],
+      "reading_fixes_leaving_both_values_at_each_lower_knot": {
+        "(0, 2, 4)": [
+          5,
+          5,
+          5
+        ],
+        "(0, 2, 5)": [
+          5,
+          5,
+          5
+        ],
+        "(0, 3, 4)": [
+          5,
+          5,
+          5
+        ],
+        "(0, 3, 5)": [
+          5,
+          5,
+          5
+        ],
+        "(1, 2, 4)": [
+          5,
+          5,
+          5
+        ],
+        "(1, 2, 5)": [
+          5,
+          5,
+          5
+        ],
+        "(1, 3, 4)": [
+          5,
+          5,
+          5
+        ],
+        "(1, 3, 5)": [
+          5,
+          5,
+          5
+        ]
+      },
+      "six_bit_witness_on_deletion_for_upper_111": [
+        "000000",
+        "111100",
+        "110011",
+        "001111",
+        "111111",
+        "000011",
+        "001100",
+        "110000"
+      ],
+      "upper_cnf_with_the_six_lower_readings_quantified": "A0 B0 C0; ~A0 ~B0 C1; ~A0 B1 ~C0; A0 ~B1 ~C1; ~A1 ~B0 ~C0; A1 B0 ~C1; A1 ~B1 C0; ~A1 B1 C1; A0 A1 P; A0 ~A1 ~P; ~A0 A1 ~P; ~A0 ~A1 P; B0 B1 Q; B0 ~B1 ~Q; ~B0 B1 ~Q; ~B0 ~B1 Q; C0 C1 R; C0 ~C1 ~R; ~C0 C1 ~R; ~C0 ~C1 R",
+      "canonical_check": [
+        {
+          "variables": [
+            "Q",
+            "R",
+            "P"
+          ],
+          "allowed": [
+            "000",
+            "001",
+            "011",
+            "101",
+            "110"
+          ],
+          "is_knot": true
+        },
+        {
+          "variables": [
+            "P",
+            "R",
+            "Q"
+          ],
+          "allowed": [
+            "000",
+            "011",
+            "100",
+            "101",
+            "110"
+          ],
+          "is_knot": true
+        },
+        {
+          "variables": [
+            "P",
+            "Q",
+            "R"
+          ],
+          "allowed": [
+            "000",
+            "011",
+            "100",
+            "101",
+            "110"
+          ],
+          "is_knot": true
+        }
+      ]
+    }
+  }
+}

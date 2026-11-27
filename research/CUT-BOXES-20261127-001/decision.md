@@ -1,5 +1,12 @@
 # Does the step one layer up need a closed system? What stands
 
+
+> **Refuted by `UPPER-GROWN-20261127-001`'s referee (R1, Block)** ([report](../UPPER-GROWN-20261127-001/referee-R1/report.md)).
+> Splitting each of the 18 links of each of the 49 systems in turn, one of the 882 splits keeps the step: 18 boxes,
+> whose carriers read both loose distinctions. The 49 seeded splits all missed it. That open system is one ordinary
+> round from a ten-knot start. So the step does not need a closed system, and "apparently out of ordinary growth's
+> reach" is false. This study's own referee is still running.
+
 `CUT-BOXES-20261127-001`. Frozen in commit a14cb272a5. Results are in `out/`. Referee pending.
 
 **Answer: on the systems read, yes.** Each of the 49 closed twelve-knot systems that carry a box (`UPPER-GROWN-20261127-001`)

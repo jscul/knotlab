@@ -1,5 +1,9 @@
 # One layer up, made by growth?
 
+
+> **Referee R1: refuted, one Block** ([report](referee-R1/report.md); notice in [decision.md](decision.md)). Ordinary
+> growth makes the step one layer up on a built ten-knot start, both births needed. U_A's sums are modulo two.
+
 `UPPER-GROWN-20261127-001`. It was opened after `RING-BOND-20261127-001`'s referee found the layer above. On a closed
 start of twelve three-place knots, six agreements on disjoint carriers, A0, A1, B0, B1, C0 and C1, are bound by eight
 clauses: no one A, one B and one C all agree. The agreements of agreements [A0 = A1], [B0 = B1] and [C0 = C1] then take

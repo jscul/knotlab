@@ -1,5 +1,20 @@
 # One layer up, made by growth? What stands
 
+
+> **Referee R1: refuted, one Block** ([report](referee-R1/report.md)). Every frozen count reproduces: 1, 2, 5, 19 and 85
+> classes; boxes on 49 of the 85 twelve-knot classes and on none smaller (801 boxes, each with every law needed); none on
+> the 2,416 sampled stages, also under an unrestricted search of the 351 large ones. **Block:** closure is not needed, and
+> ordinary growth makes the step. A connected ten-knot start grows two ordinary births in one round. The grown stage then
+> has 18 boxes on six disjoint three-place carriers, and every one of its twelve laws is needed, both births included.
+> Replayed by the thread with the study's own engine (`post/grown_replay.py`: the same stage, 14,554 states, seven
+> upper words, every law needed). The argument "boxes need closedness" holds only for a loose distinction that no carrier
+> reads; here the carriers read both births' fresh distinctions. A different upper reading (four clauses: both A
+> agreements, either B, either C) gives a step on a closed ten-knot system, and on a sampled stage (census start 420,
+> round 2) with all six birth laws needed. **Narrowings:** the class weighting (labelled systems give 368 of 661); the
+> opportunity count (1,693 by full-stage bonds); B4 checked on all 801; the product form guarantees at least one upper
+> exclusion, not exactly one; "modulo two" in the definition. The start was built, not sampled, and selection of readings
+> by growth is open: both symmetries of the start exchange the 18 boxes in pairs.
+
 `UPPER-GROWN-20261127-001`. Frozen in commit b35af0be04. Results are in `out/`; the post-hoc replay is in `post/`.
 Referee pending.
 
@@ -27,10 +42,9 @@ distinction twice is a connected cubic graph: knots are its points, distinctions
 - A replay by full enumeration, with no solver (`post/replay_box.py`), agrees on one box of each of the 49 graphs: one
   word missing, all twelve knots needed.
 
-So the step one layer up is not one chosen example. It is common among closed three-place systems once they have
-twelve knots, and absent below that.
+So the step one layer up is not one chosen example. [R1: the frozen box occurs on 49 of the 85 simple connected closed twelve-knot classes and none of the 27 smaller classes, weighting each class equally; a different upper reading already works at ten.]
 
-**Made by growth: not found.**
+**Made by growth: not found** [R1, Block: found by the referee on a built ten-knot start after one ordinary round, both births needed].
 - G1 and G2 held. 1,000 held-out census starts were read at rounds 0 to 2: 2,416 stages in all, 2,065 by the full
   search and 351 by the local search (holders ≤ 4). They have no box, so no box needs a birth.
 - There were 1,691 stages with at least 12 distinctions and at least 8 bonds, where a box could have appeared.
@@ -49,7 +63,7 @@ within them. A grown stage keeps loose distinctions, and its born part has no cl
 
 ## Intuition (a link, not evidence)
 
-**Boxes need closedness.** A knot with a distinction of its own that no carrier reads can satisfy its law there, so its
+**Boxes need closedness** [R1, Block: false; the argument covers only loose distinctions no carrier reads]. A knot with a distinction of its own that no carrier reads can satisfy its law there, so its
 law is never needed. That is the same argument that makes growth keep the earlier projection. In a box with every knot
 needed, every private distinction must be read. Closed systems have none, so all their knots can be needed. Cheapest
 test: on open systems built by removing one link from the 49 graphs, count the boxes that survive.
@@ -59,7 +73,7 @@ test: on open systems built by removing one link from the 49 graphs, count the b
 | Scope | Verdict | Why |
 | --- | --- | --- |
 | This attempt: one layer up, made by growth | **Status:** STOP (B1–B4, G1 and G2 held) | Common in closed twelve-knot systems (49 of 85), absent below twelve, and absent from 2,416 grown stages read |
-| Local direction: a second layer made by growth | Open | Needs a closed part of at least twelve knots inside a grown stage |
+| Local direction: a second layer made by growth | Open | [R1, Block: ordinary growth makes 18 boxes in one round on a built ten-knot start, every law needed; the 1,000 sampled starts make none through round 2.] ~~Needs a closed part of at least twelve knots inside a grown stage~~ |
 | Long-term goal: G17 with G18 | Advanced | The step one layer up is generic in closed systems at twelve knots, not one built example |
 
 **Next step:** Continue with direction 1 (the coordinator's call; the law between parity and not-all-equal waits for the

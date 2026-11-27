@@ -47,3 +47,7 @@ places, the loose set held once and every other distinction twice, connected, th
 **H_d.** Under not-all-equal too, the pair fixes the families and the tree on every census start. **Read:** on how
 many starts the pair fixes the presentation itself (the knots), under each law; seen before the freeze on the first 200
 census starts: 200 of 200 under not-all-equal, 136 of 200 under parity.
+
+**Deviation, recorded before any not-all-equal result was read.** Timed at full size the not-all-equal run needs about
+three and a half hours (about 33 starts a minute once past the small starts), past the two-hour limit. It is cut to the
+first 2,000 census starts in the census order; the rest are not run. The parity run covers all 7,075.

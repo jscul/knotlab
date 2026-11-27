@@ -26,7 +26,7 @@ the code, not the model.
 **What is ours.** "At most two holders" at the second layer (each fact in at most two relations) is our requirement,
 copied from the first layer, where the engine imposes it (a distinction has at most two holders). Of the 840 bases of the
 relations among the nine facts, it keeps 20, of which 12 meet in a ring and one is the tree (part (a), a1). The model
-imposes nothing at the second layer, so this is a scaffold (register entry for this study). Which of the 20 to take is
+imposes nothing at the second layer, so this is a scaffold (register entry A306). Which of the 20 to take is
 then the choice of which facts are loose, the second layer's version of the reader's question. A preference for shorter
 relations does not choose either: shorter in places favours the tree, shorter in carrier distinctions can favour the
 four-place relation (rings of 10, 4 and 4: 36 against 40), and shorter in the laws behind it favours the tree again

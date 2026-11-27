@@ -6366,9 +6366,12 @@ evidence: results and their status come from the records each entry links.
   at the first layer.
 - **Why.** Copied from the first layer, where the engine imposes it; it is what makes the tree and the loop comparable
   as patterns of knots meeting.
-- **Rests on it.** The count of 20 among the 840 bases of the relations among the nine facts of three rings of four, and
-  the reading of the tree and the loop as two presentations.
+- **Rests on it.** The count of 20 among the 840 bases of the relations among the nine facts of three rings of four [R1:
+  they come from four different completions, and the earlier loop basis, holding each ring fact three times, is not
+  among them].
 - **Challenge.** Drop it (all 840 bases count, and every fact can lie in many relations), or replace it by a rule the
   growth itself supplies at the second layer; none is known. Expected to be replaced if a second-layer law is found.
 - **History.**
+  - 2026-11-27 · Referee R1 of `ONE-STATEMENT-20261127-001`: the cap excludes the earlier loop basis; of 11 loose sets,
+    three admit four bases each, so the cap and the loose set together still do not choose one.
   - 2026-11-27 · Entered with part (b) of `ONE-STATEMENT-20261127-001`.

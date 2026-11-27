@@ -1,5 +1,23 @@
 # One statement for both layers
 
+
+> **Referee R1: refuted, two Blocks** ([report](referee-R1/report.md)). The census counts hold and extend: one marked
+> not-all-equal presentation on 7,074 of 7,075 census starts, every competitor class tried (other knot counts, two-place
+> rules, disconnected, repeated supports) adding none; but the one ambiguity has no loose distinction, so the census
+> never tested family recovery under not-all-equal. **Block:** in general it fails: two connected ten-knot
+> presentations with the same 209,952 states and the same two loose distinctions have two families and one (each has
+> two redundant laws; [witness](referee-R1/family_witness.json)). **Block:** at the second layer the loose set does not
+> choose the basis: of 11 possible loose sets, 8 select one basis and 3 admit four each, with different knot sizes
+> (3, 3, 3, 6 against 3, 3, 4, 5); the 20 bases come from four different completions. **Narrowings:** under parity the
+> entailment holds with the cost restricted to changes holding exactly one loose distinction of each family and no other
+> (a seven-knot start gives 8 against 6 for the earlier pair cost); the completion adds the parity law on the loose set
+> (often of fewer than three places), and Whitney's twists cover the two-connected case; under not-all-equal the parity
+> argument is what is not available, other recovery results hold (an earlier all-size classification covers connected
+> presentations with every law essential, `THREE-READERS-AND-GROWTH-20261120-001B`); a3 as frozen measured law
+> distinctions, 92 against 40, reversing the prediction (the carrier count 36 against 40 was not what the frozen code
+> measured); what recurses: on the ring witness each family's live knots form a path that growth lengthens by one,
+> and ordinary growth does permit a two-place birth that closes (three laws on abl, cdm, abcd give one on lm).
+
 `ONE-STATEMENT-20261127-001`, part (b). A statement with its sources; what is proved, what is computed and what is our
 choice are marked.
 
@@ -26,7 +44,7 @@ the code, not the model.
 **What is ours.** "At most two holders" at the second layer (each fact in at most two relations) is our requirement,
 copied from the first layer, where the engine imposes it (a distinction has at most two holders). Of the 840 bases of the
 relations among the nine facts, it keeps 20, of which 12 meet in a ring and one is the tree (part (a), a1). The model
-imposes nothing at the second layer, so this is a scaffold (register entry A306). Which of the 20 to take is
+imposes nothing at the second layer, so this is a scaffold (register entry A306). [R1: there are 11 possible loose sets; eight select one basis each and three admit four each.] Which of the 20 to take is
 then the choice of which facts are loose, the second layer's version of the reader's question. A preference for shorter
 relations does not choose either: shorter in places favours the tree, shorter in carrier distinctions can favour the
 four-place relation (rings of 10, 4 and 4: 36 against 40), and shorter in the laws behind it favours the tree again
@@ -37,6 +55,6 @@ grows four three-place births and closes at round 3, while on the grown witness 
 each family fact every round and never close. So the second layer is not grown by the first layer's law: no recursion
 here.
 
-**Where something could be learned** (part (d)). Under not-all-equal no law is a sum of others, so nothing above is
-entailed, and whether the allowed states with the loose set marked fix the knots, the families and the tree is a
+**Where something could be learned** (part (d)). Under not-all-equal no law is a sum of others, so the parity argument above is not available [R1: other
+recovery results hold there], and whether the allowed states with the loose set marked fix the knots, the families and the tree is a
 question about the model. Its run is in `README.md`, part (d).

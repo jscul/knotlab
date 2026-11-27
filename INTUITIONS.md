@@ -6967,9 +6967,10 @@ that earlier records used in two senses.
   start family is a class of a start's live knots, two of them joined when some
   knot shares a distinction with each (the joining rule's candidates). No birth
   takes parents from two start families, so a start family with its descendants
-  is closed under parents, and the parity of its loose distinctions, its family
-  fact, is a fact the growth keeps for good: the least change that flips it
-  grows by two distinctions a round. The guide says start family for the
+  is closed under parents, and the parity of its loose distinctions is its
+  family fact. When a start has two or more start families, the least change
+  that flips any nonconstant sum of their facts grows by two distinctions a
+  round while growth is funded; with one start family its fact is fixed. The guide says start family for the
   second sense and packet for the first.
 - **Fold of emergence.** The owner's phrase (assumption A223), always written in full and in his words: a pattern that the rules make,
   where what it makes depends on another pattern, and that makes a pattern of

@@ -1,5 +1,23 @@
 # A presentation is a completed system with one knot left out: both layers, and under not-all-equal
 
+
+> **Referee R1: refuted, two Blocks** ([report](referee-R1/report.md)). The census counts hold and extend: one marked
+> not-all-equal presentation on 7,074 of 7,075 census starts, every competitor class tried (other knot counts, two-place
+> rules, disconnected, repeated supports) adding none; but the one ambiguity has no loose distinction, so the census
+> never tested family recovery under not-all-equal. **Block:** in general it fails: two connected ten-knot
+> presentations with the same 209,952 states and the same two loose distinctions have two families and one (each has
+> two redundant laws; [witness](referee-R1/family_witness.json)). **Block:** at the second layer the loose set does not
+> choose the basis: of 11 possible loose sets, 8 select one basis and 3 admit four each, with different knot sizes
+> (3, 3, 3, 6 against 3, 3, 4, 5); the 20 bases come from four different completions. **Narrowings:** under parity the
+> entailment holds with the cost restricted to changes holding exactly one loose distinction of each family and no other
+> (a seven-knot start gives 8 against 6 for the earlier pair cost); the completion adds the parity law on the loose set
+> (often of fewer than three places), and Whitney's twists cover the two-connected case; under not-all-equal the parity
+> argument is what is not available, other recovery results hold (an earlier all-size classification covers connected
+> presentations with every law essential, `THREE-READERS-AND-GROWTH-20261120-001B`); a3 as frozen measured law
+> distinctions, 92 against 40, reversing the prediction (the carrier count 36 against 40 was not what the frozen code
+> measured); what recurses: on the ring witness each family's live knots form a path that growth lengthens by one,
+> and ordinary growth does permit a two-place birth that closes (three laws on abl, cdm, abcd give one on lm).
+
 Epic `ONE-STATEMENT-20261127-001`, at the coordinator's pick of the advisor's third direction
 ([the advisor's answer](../TREE-PROOF-20261127-001/advisor/answer_directions.md)). A check by the thread, not registered;
 computed. Each part's predictions are committed before its run.
@@ -20,7 +38,7 @@ computed. Each part's predictions are committed before its run.
   knot once) with a ring knot left out, 16 states on eight distinctions: loose sets differ, families 2 against 1. Pair
   (iii), 8 states and the loose set {l, m}: the holdings differ and the families are the same.
 
-**What was found in (a)** ([`checks_a.json`](checks_a.json)). All four held, a3 under one count. a1: 15 relations, 840
+**What was found in (a)** ([`checks_a.json`](checks_a.json)). All four held, a3 under one count [R1: the frozen code measured law distinctions, 92 against 40, which reverses the prediction; the carrier count, 36 against 40, was not what it measured]. a1: 15 relations, 840
 bases, 20 keep every fact in at most two relations, 12 of them meet in a ring of four, and exactly one leaves the six
 family facts in a single relation each: the tree (p_i q_i R_i three times, and R1 R2 R3). a2: each four-place relation
 has 8 joint values, and removing any one of the 18 start laws frees it, as does any of its own ring's 6 round-1 births.

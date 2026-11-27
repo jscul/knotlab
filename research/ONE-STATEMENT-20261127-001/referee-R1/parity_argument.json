@@ -1,0 +1,1239 @@
+{
+  "nine facts": {
+    "nine places in order": [
+      "p1",
+      "q1",
+      "p2",
+      "q2",
+      "p3",
+      "q3",
+      "R1",
+      "R2",
+      "R3"
+    ],
+    "joint states": 32,
+    "nonzero equations": 15,
+    "inclusion-minimal relations": 11,
+    "nonminimal equations": [
+      [
+        "p1",
+        "q1",
+        "p2",
+        "q2",
+        "R1",
+        "R2"
+      ],
+      [
+        "p1",
+        "q1",
+        "p3",
+        "q3",
+        "R1",
+        "R3"
+      ],
+      [
+        "p2",
+        "q2",
+        "p3",
+        "q3",
+        "R2",
+        "R3"
+      ],
+      [
+        "p1",
+        "q1",
+        "p2",
+        "q2",
+        "p3",
+        "q3",
+        "R1",
+        "R2",
+        "R3"
+      ]
+    ],
+    "four-law choices tested": 1365,
+    "independent bases": 840,
+    "bases all of whose relations are minimal": 208,
+    "bases with at most two holders": 20,
+    "of them four relations meeting in a ring": 12,
+    "of them three relations meeting a fourth": 8,
+    "canonical tests on all fifteen projected supports": {
+      "p1,q1,p2,q2,p3,q3": {
+        "passes": true,
+        "joint values": 32
+      },
+      "p1,q1,R1": {
+        "passes": true,
+        "joint values": 4
+      },
+      "p2,q2,p3,q3,R1": {
+        "passes": true,
+        "joint values": 16
+      },
+      "p2,q2,R2": {
+        "passes": true,
+        "joint values": 4
+      },
+      "p1,q1,p3,q3,R2": {
+        "passes": true,
+        "joint values": 16
+      },
+      "p1,q1,p2,q2,R1,R2": {
+        "passes": false,
+        "joint values": 16
+      },
+      "p3,q3,R1,R2": {
+        "passes": true,
+        "joint values": 8
+      },
+      "p1,q1,p2,q2,R3": {
+        "passes": true,
+        "joint values": 16
+      },
+      "p3,q3,R3": {
+        "passes": true,
+        "joint values": 4
+      },
+      "p2,q2,R1,R3": {
+        "passes": true,
+        "joint values": 8
+      },
+      "p1,q1,p3,q3,R1,R3": {
+        "passes": false,
+        "joint values": 16
+      },
+      "p1,q1,R2,R3": {
+        "passes": true,
+        "joint values": 8
+      },
+      "p2,q2,p3,q3,R2,R3": {
+        "passes": false,
+        "joint values": 16
+      },
+      "R1,R2,R3": {
+        "passes": true,
+        "joint values": 4
+      },
+      "p1,q1,p2,q2,p3,q3,R1,R2,R3": {
+        "passes": false,
+        "joint values": 32
+      }
+    },
+    "distinct labelled completions": 4,
+    "omissions with the same 32 states": 20,
+    "distinct loose sets": 11,
+    "basis counts per loose set": {
+      "p1,q1,p2,q2,p3,q3": 1,
+      "p1,q1,R1": 4,
+      "p2,q2,p3,q3,R1": 1,
+      "p2,q2,R2": 4,
+      "p1,q1,p3,q3,R2": 1,
+      "p3,q3,R1,R2": 1,
+      "p1,q1,p2,q2,R3": 1,
+      "p3,q3,R3": 4,
+      "p2,q2,R1,R3": 1,
+      "p1,q1,R2,R3": 1,
+      "R1,R2,R3": 1
+    },
+    "four distinct bases with loose p1,q1,R1": [
+      [
+        [
+          "p1",
+          "q1",
+          "p2",
+          "q2",
+          "p3",
+          "q3"
+        ],
+        [
+          "p2",
+          "q2",
+          "R2"
+        ],
+        [
+          "p3",
+          "q3",
+          "R3"
+        ],
+        [
+          "R1",
+          "R2",
+          "R3"
+        ]
+      ],
+      [
+        [
+          "p2",
+          "q2",
+          "p3",
+          "q3",
+          "R1"
+        ],
+        [
+          "p2",
+          "q2",
+          "R2"
+        ],
+        [
+          "p3",
+          "q3",
+          "R3"
+        ],
+        [
+          "p1",
+          "q1",
+          "R2",
+          "R3"
+        ]
+      ],
+      [
+        [
+          "p2",
+          "q2",
+          "R2"
+        ],
+        [
+          "p1",
+          "q1",
+          "p3",
+          "q3",
+          "R2"
+        ],
+        [
+          "p3",
+          "q3",
+          "R3"
+        ],
+        [
+          "p2",
+          "q2",
+          "R1",
+          "R3"
+        ]
+      ],
+      [
+        [
+          "p2",
+          "q2",
+          "R2"
+        ],
+        [
+          "p3",
+          "q3",
+          "R1",
+          "R2"
+        ],
+        [
+          "p1",
+          "q1",
+          "p2",
+          "q2",
+          "R3"
+        ],
+        [
+          "p3",
+          "q3",
+          "R3"
+        ]
+      ]
+    ],
+    "distinct arity lists with loose p1,q1,R1": [
+      [
+        3,
+        3,
+        3,
+        6
+      ],
+      [
+        3,
+        3,
+        4,
+        5
+      ]
+    ],
+    "completed systems as five equations": [
+      [
+        [
+          "p1",
+          "q1",
+          "p2",
+          "q2",
+          "p3",
+          "q3"
+        ],
+        [
+          "p1",
+          "q1",
+          "R1"
+        ],
+        [
+          "p2",
+          "q2",
+          "R2"
+        ],
+        [
+          "p3",
+          "q3",
+          "R3"
+        ],
+        [
+          "R1",
+          "R2",
+          "R3"
+        ]
+      ],
+      [
+        [
+          "p1",
+          "q1",
+          "R1"
+        ],
+        [
+          "p2",
+          "q2",
+          "p3",
+          "q3",
+          "R1"
+        ],
+        [
+          "p2",
+          "q2",
+          "R2"
+        ],
+        [
+          "p3",
+          "q3",
+          "R3"
+        ],
+        [
+          "p1",
+          "q1",
+          "R2",
+          "R3"
+        ]
+      ],
+      [
+        [
+          "p1",
+          "q1",
+          "R1"
+        ],
+        [
+          "p2",
+          "q2",
+          "R2"
+        ],
+        [
+          "p1",
+          "q1",
+          "p3",
+          "q3",
+          "R2"
+        ],
+        [
+          "p3",
+          "q3",
+          "R3"
+        ],
+        [
+          "p2",
+          "q2",
+          "R1",
+          "R3"
+        ]
+      ],
+      [
+        [
+          "p1",
+          "q1",
+          "R1"
+        ],
+        [
+          "p2",
+          "q2",
+          "R2"
+        ],
+        [
+          "p3",
+          "q3",
+          "R1",
+          "R2"
+        ],
+        [
+          "p1",
+          "q1",
+          "p2",
+          "q2",
+          "R3"
+        ],
+        [
+          "p3",
+          "q3",
+          "R3"
+        ]
+      ]
+    ],
+    "earlier four-place presentation": {
+      "laws": [
+        [
+          "R1",
+          "R2",
+          "R3"
+        ],
+        [
+          "p1",
+          "q1",
+          "R2",
+          "R3"
+        ],
+        [
+          "p2",
+          "q2",
+          "R1",
+          "R3"
+        ],
+        [
+          "p3",
+          "q3",
+          "R1",
+          "R2"
+        ]
+      ],
+      "holders per place": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        3,
+        3,
+        3
+      ],
+      "joint states": 32
+    }
+  },
+  "direct and parity pair costs": {
+    "holder rows": [
+      [
+        "shared-0-1-1",
+        "shared-0-1-2",
+        "a"
+      ],
+      [
+        "shared-0-1-1",
+        "shared-0-1-2",
+        "shared-1-2-1",
+        "shared-1-2-2",
+        "c"
+      ],
+      [
+        "shared-1-2-1",
+        "shared-1-2-2",
+        "shared-2-3-1"
+      ],
+      [
+        "shared-2-3-1",
+        "shared-3-4-1",
+        "d"
+      ],
+      [
+        "shared-3-4-1",
+        "shared-4-5-1",
+        "shared-4-5-2"
+      ],
+      [
+        "shared-4-5-1",
+        "shared-4-5-2",
+        "shared-5-6-1",
+        "shared-5-6-2",
+        "e"
+      ],
+      [
+        "shared-5-6-1",
+        "shared-5-6-2",
+        "b"
+      ]
+    ],
+    "states": 256,
+    "start families": [
+      [
+        "a"
+      ],
+      [
+        "c",
+        "d",
+        "e"
+      ],
+      [
+        "b"
+      ]
+    ],
+    "pairs": [
+      {
+        "first": [
+          "a"
+        ],
+        "second": [
+          "c",
+          "d",
+          "e"
+        ],
+        "holder steps": 1,
+        "least change with exactly two loose distinctions": [
+          "shared-0-1-1",
+          "a",
+          "c"
+        ],
+        "least change flipping the two family facts": [
+          "shared-0-1-1",
+          "a",
+          "c"
+        ]
+      },
+      {
+        "first": [
+          "a"
+        ],
+        "second": [
+          "b"
+        ],
+        "holder steps": 6,
+        "least change with exactly two loose distinctions": [
+          "shared-0-1-1",
+          "shared-1-2-1",
+          "shared-2-3-1",
+          "shared-3-4-1",
+          "shared-4-5-1",
+          "shared-5-6-1",
+          "a",
+          "b"
+        ],
+        "least change flipping the two family facts": [
+          "shared-0-1-1",
+          "shared-5-6-1",
+          "a",
+          "c",
+          "e",
+          "b"
+        ]
+      },
+      {
+        "first": [
+          "c",
+          "d",
+          "e"
+        ],
+        "second": [
+          "b"
+        ],
+        "holder steps": 1,
+        "least change with exactly two loose distinctions": [
+          "shared-5-6-1",
+          "e",
+          "b"
+        ],
+        "least change flipping the two family facts": [
+          "shared-5-6-1",
+          "e",
+          "b"
+        ]
+      }
+    ],
+    "recorded holder-step thresholds": [
+      1,
+      6
+    ],
+    "thresholds from unrestricted pair cost minus two": [
+      1,
+      4
+    ],
+    "common partitions at each threshold": {
+      "0": [
+        [
+          "a"
+        ],
+        [
+          "c",
+          "d",
+          "e"
+        ],
+        [
+          "b"
+        ]
+      ],
+      "1": [
+        [
+          "a",
+          "c",
+          "d",
+          "e",
+          "b"
+        ]
+      ],
+      "2": [
+        [
+          "a",
+          "c",
+          "d",
+          "e",
+          "b"
+        ]
+      ],
+      "3": [
+        [
+          "a",
+          "c",
+          "d",
+          "e",
+          "b"
+        ]
+      ],
+      "4": [
+        [
+          "a",
+          "c",
+          "d",
+          "e",
+          "b"
+        ]
+      ],
+      "5": [
+        [
+          "a",
+          "c",
+          "d",
+          "e",
+          "b"
+        ]
+      ],
+      "6": [
+        [
+          "a",
+          "c",
+          "d",
+          "e",
+          "b"
+        ]
+      ]
+    }
+  },
+  "scope controls": {
+    "different rule counts with a separate closed component": {
+      "law": "parity",
+      "same labelled allowed states": 32,
+      "shared loose set": [
+        0,
+        1,
+        2
+      ],
+      "first": {
+        "laws": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            3,
+            4,
+            5
+          ],
+          [
+            3,
+            6,
+            7
+          ],
+          [
+            4,
+            6,
+            8
+          ],
+          [
+            5,
+            7,
+            8
+          ]
+        ],
+        "components": 2,
+        "live holder groups": [
+          [
+            0,
+            1,
+            2
+          ]
+        ],
+        "start families": [
+          [
+            0,
+            1,
+            2
+          ]
+        ],
+        "laws that pass the minimal projection test": 5
+      },
+      "second": {
+        "laws": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            3,
+            6,
+            7
+          ],
+          [
+            4,
+            6,
+            8
+          ],
+          [
+            5,
+            7,
+            8
+          ]
+        ],
+        "components": 1,
+        "live holder groups": [
+          [
+            0,
+            1,
+            2
+          ]
+        ],
+        "start families": [
+          [
+            0,
+            1,
+            2
+          ]
+        ],
+        "laws that pass the minimal projection test": 3
+      }
+    },
+    "a connected presentation acquiring a two-place equation": {
+      "law": "parity",
+      "same labelled allowed states": 8,
+      "shared loose set": [
+        0,
+        1,
+        2
+      ],
+      "first": {
+        "laws": [
+          [
+            0,
+            1,
+            3
+          ],
+          [
+            2,
+            4,
+            5
+          ],
+          [
+            3,
+            4,
+            5
+          ]
+        ],
+        "components": 1,
+        "live holder groups": [
+          [
+            0,
+            1
+          ],
+          [
+            2
+          ]
+        ],
+        "start families": [
+          [
+            0,
+            1,
+            2
+          ]
+        ],
+        "laws that pass the minimal projection test": 3
+      },
+      "second": {
+        "laws": [
+          [
+            0,
+            1,
+            4,
+            5
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            4,
+            5
+          ]
+        ],
+        "components": 1,
+        "live holder groups": [
+          [
+            0,
+            1
+          ],
+          [
+            2
+          ]
+        ],
+        "start families": [
+          [
+            0,
+            1,
+            2
+          ]
+        ],
+        "laws that pass the minimal projection test": 3
+      }
+    },
+    "empty loose set": {
+      "original parity states": 8,
+      "completed bookkeeping equation places": [],
+      "bookkeeping equation passes minimal projection test": false
+    },
+    "zero, one or two loose distinctions on a connected four-knot start": [
+      {
+        "loose": [],
+        "states": 8,
+        "assignments on the loose set, as positions set to one": [
+          []
+        ]
+      },
+      {
+        "loose": [
+          6
+        ],
+        "states": 8,
+        "assignments on the loose set, as positions set to one": [
+          []
+        ]
+      },
+      {
+        "loose": [
+          6,
+          7
+        ],
+        "states": 16,
+        "assignments on the loose set, as positions set to one": [
+          [],
+          [
+            6,
+            7
+          ]
+        ]
+      }
+    ],
+    "one outside holder on two separate open triples": {
+      "projected states on all six loose distinctions": 16,
+      "states of even parity on six distinctions": 32
+    },
+    "closed four-triple NAE presentations": {
+      "law": "not-all-equal",
+      "same labelled allowed states": 18,
+      "shared loose set": [],
+      "first": {
+        "laws": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            3,
+            4
+          ],
+          [
+            1,
+            3,
+            5
+          ],
+          [
+            2,
+            4,
+            5
+          ]
+        ],
+        "components": 1,
+        "live holder groups": [],
+        "start families": [],
+        "laws that pass the minimal projection test": 4
+      },
+      "second": {
+        "laws": [
+          [
+            3,
+            4,
+            5
+          ],
+          [
+            1,
+            2,
+            5
+          ],
+          [
+            0,
+            2,
+            4
+          ],
+          [
+            0,
+            1,
+            3
+          ]
+        ],
+        "components": 1,
+        "live holder groups": [],
+        "start families": [],
+        "laws that pass the minimal projection test": 4
+      }
+    }
+  },
+  "completed systems with different arrangements of separating distinctions": {
+    "law": "parity",
+    "same labelled allowed states": 256,
+    "shared loose set": [
+      0,
+      1,
+      2
+    ],
+    "first": {
+      "laws": [
+        [
+          0,
+          1,
+          2,
+          12,
+          13,
+          14
+        ],
+        [
+          3,
+          4,
+          5,
+          12
+        ],
+        [
+          3,
+          4,
+          5
+        ],
+        [
+          6,
+          7,
+          8,
+          13
+        ],
+        [
+          6,
+          7,
+          8
+        ],
+        [
+          9,
+          10,
+          11,
+          14
+        ],
+        [
+          9,
+          10,
+          11
+        ]
+      ],
+      "components": 1,
+      "live holder groups": [
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "start families": [
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "laws that pass the minimal projection test": 3
+    },
+    "second": {
+      "laws": [
+        [
+          0,
+          1,
+          2,
+          12
+        ],
+        [
+          3,
+          4,
+          5,
+          12,
+          13
+        ],
+        [
+          3,
+          4,
+          5
+        ],
+        [
+          6,
+          7,
+          8,
+          13,
+          14
+        ],
+        [
+          6,
+          7,
+          8
+        ],
+        [
+          9,
+          10,
+          11,
+          14
+        ],
+        [
+          9,
+          10,
+          11
+        ]
+      ],
+      "components": 1,
+      "live holder groups": [
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "start families": [
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "laws that pass the minimal projection test": 3
+    },
+    "three shared distinctions fixed to zero": [
+      12,
+      13,
+      14
+    ],
+    "numbers of these three incident to each block of paired holders": [
+      [
+        1,
+        1,
+        1,
+        3
+      ],
+      [
+        1,
+        1,
+        2,
+        2
+      ]
+    ]
+  },
+  "not-all-equal controls": {
+    "implied NAE on all six loose distinctions": {
+      "four laws": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          3,
+          4
+        ],
+        [
+          1,
+          5,
+          6
+        ],
+        [
+          2,
+          7,
+          8
+        ]
+      ],
+      "loose": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "states before and after": 162,
+      "projected values on loose distinctions": 62
+    },
+    "adding NAE on all loose distinctions can change states": {
+      "two laws": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          3,
+          4
+        ]
+      ],
+      "loose": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "states before": 18,
+      "states after": 16,
+      "one removed state as positions set to one": [
+        0
+      ]
+    },
+    "two-flip test under NAE": {
+      "two bits at different holders, flipped between two allowed states": [
+        1,
+        3
+      ],
+      "before and after, positions set to one": [
+        [
+          0
+        ],
+        [
+          0,
+          1,
+          3
+        ]
+      ],
+      "two bits at one holder, no uniform translation symmetry": [
+        0,
+        1
+      ],
+      "allowed and forbidden triple, positions set to one": [
+        [
+          0,
+          1
+        ],
+        []
+      ]
+    },
+    "two redundant NAE laws with different marked families": {
+      "law": "not-all-equal",
+      "same labelled allowed states": 288,
+      "shared loose set": [
+        7,
+        8
+      ],
+      "first": {
+        "laws": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            6,
+            7
+          ],
+          [
+            3,
+            4,
+            5,
+            6,
+            8
+          ]
+        ],
+        "components": 1,
+        "live holder groups": [
+          [
+            7
+          ],
+          [
+            8
+          ]
+        ],
+        "start families": [
+          [
+            7
+          ],
+          [
+            8
+          ]
+        ],
+        "laws that pass the minimal projection test": 2
+      },
+      "second": {
+        "laws": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            6,
+            7,
+            8
+          ],
+          [
+            3,
+            4,
+            5,
+            6
+          ]
+        ],
+        "components": 1,
+        "live holder groups": [
+          [
+            7,
+            8
+          ]
+        ],
+        "start families": [
+          [
+            7,
+            8
+          ]
+        ],
+        "laws that pass the minimal projection test": 2
+      }
+    }
+  }
+}

@@ -1,0 +1,2028 @@
+{
+  "pairs": {
+    "i": {
+      "same names": true,
+      "same allowed states": true,
+      "states": [
+        16,
+        16
+      ],
+      "same loose set": false,
+      "loose sets": [
+        [
+          "v",
+          "w",
+          "x1",
+          "x2"
+        ],
+        [
+          "x1",
+          "x2",
+          "y"
+        ]
+      ],
+      "families (as loose groups)": [
+        [
+          [
+            "v",
+            "x1",
+            "x2"
+          ],
+          [
+            "w"
+          ]
+        ],
+        [
+          [
+            "x1",
+            "x2",
+            "y"
+          ]
+        ]
+      ],
+      "different holdings": true,
+      "holdings": [
+        [
+          "x1 x2 y",
+          "y z1 z2 w",
+          "z1 z2 v"
+        ],
+        [
+          "x1 x2 v w",
+          "y z1 z2 w",
+          "z1 z2 v"
+        ]
+      ],
+      "distinction order": [
+        "v",
+        "w",
+        "x1",
+        "x2",
+        "y",
+        "z1",
+        "z2"
+      ],
+      "allowed states": [
+        "0000000",
+        "0000011",
+        "0011000",
+        "0011011",
+        "0101100",
+        "0101111",
+        "0110100",
+        "0110111",
+        "1001101",
+        "1001110",
+        "1010101",
+        "1010110",
+        "1100001",
+        "1100010",
+        "1111001",
+        "1111010"
+      ],
+      "matches archive": true
+    },
+    "ii": {
+      "same names": true,
+      "same allowed states": true,
+      "states": [
+        16,
+        16
+      ],
+      "same loose set": false,
+      "loose sets": [
+        [
+          "l1",
+          "l2",
+          "l3",
+          "l4"
+        ],
+        [
+          "l1",
+          "r12",
+          "r41"
+        ]
+      ],
+      "families (as loose groups)": [
+        [
+          [
+            "l1",
+            "l3"
+          ],
+          [
+            "l2",
+            "l4"
+          ]
+        ],
+        [
+          [
+            "l1",
+            "r12",
+            "r41"
+          ]
+        ]
+      ],
+      "different holdings": true,
+      "holdings": [
+        [
+          "r41 r12 l1",
+          "r12 r23 l2",
+          "r23 r34 l3",
+          "r34 r41 l4"
+        ],
+        [
+          "r12 r23 l2",
+          "r23 r34 l3",
+          "r34 r41 l4",
+          "l1 l2 l3 l4"
+        ]
+      ],
+      "distinction order": [
+        "l1",
+        "l2",
+        "l3",
+        "l4",
+        "r12",
+        "r23",
+        "r34",
+        "r41"
+      ],
+      "allowed states": [
+        "00000000",
+        "00001111",
+        "00110010",
+        "00111101",
+        "01010110",
+        "01011001",
+        "01100100",
+        "01101011",
+        "10010001",
+        "10011110",
+        "10100011",
+        "10101100",
+        "11000111",
+        "11001000",
+        "11110101",
+        "11111010"
+      ],
+      "matches archive": true
+    },
+    "iii": {
+      "same names": true,
+      "same allowed states": true,
+      "states": [
+        8,
+        8
+      ],
+      "same loose set": true,
+      "loose sets": [
+        [
+          "l",
+          "m"
+        ],
+        [
+          "l",
+          "m"
+        ]
+      ],
+      "families (as loose groups)": [
+        [
+          [
+            "l",
+            "m"
+          ]
+        ],
+        [
+          [
+            "l",
+            "m"
+          ]
+        ]
+      ],
+      "different holdings": true,
+      "holdings": [
+        [
+          "a1 a2 c l",
+          "b c m",
+          "a1 a2 b"
+        ],
+        [
+          "b c l",
+          "a1 a2 c m",
+          "a1 a2 b"
+        ]
+      ],
+      "distinction order": [
+        "a1",
+        "a2",
+        "b",
+        "c",
+        "l",
+        "m"
+      ],
+      "allowed states": [
+        "000000",
+        "000111",
+        "011011",
+        "011100",
+        "101011",
+        "101100",
+        "110000",
+        "110111"
+      ],
+      "matches archive": true
+    }
+  },
+  "tree": {
+    "start": [
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        0,
+        3,
+        4
+      ],
+      [
+        1,
+        5,
+        6
+      ],
+      [
+        2,
+        7,
+        8
+      ]
+    ],
+    "rounds": [
+      {
+        "round": 1,
+        "births": 3,
+        "places of births": {
+          "3": 3
+        },
+        "two-place births": 0
+      },
+      {
+        "round": 2,
+        "births": 1,
+        "places of births": {
+          "3": 1
+        },
+        "two-place births": 0
+      },
+      {
+        "round": 3,
+        "end": "closed"
+      }
+    ],
+    "details": [
+      {
+        "round": 1,
+        "loose distinctions after round": 3,
+        "births": [
+          {
+            "parents": [
+              1,
+              2
+            ],
+            "inputs": [
+              3,
+              5
+            ],
+            "fresh": [
+              9
+            ],
+            "p": 2,
+            "f": 1,
+            "implied": false,
+            "takes all": false
+          },
+          {
+            "parents": [
+              1,
+              3
+            ],
+            "inputs": [
+              4,
+              7
+            ],
+            "fresh": [
+              10
+            ],
+            "p": 2,
+            "f": 1,
+            "implied": false,
+            "takes all": false
+          },
+          {
+            "parents": [
+              2,
+              3
+            ],
+            "inputs": [
+              6,
+              8
+            ],
+            "fresh": [
+              11
+            ],
+            "p": 2,
+            "f": 1,
+            "implied": false,
+            "takes all": false
+          }
+        ]
+      },
+      {
+        "round": 2,
+        "loose distinctions after round": 0,
+        "births": [
+          {
+            "parents": [
+              4,
+              5,
+              6
+            ],
+            "inputs": [
+              9,
+              10,
+              11
+            ],
+            "fresh": [],
+            "p": 3,
+            "f": 0,
+            "implied": true,
+            "takes all": true
+          }
+        ]
+      },
+      {
+        "round": 3,
+        "loose distinctions after round": 0,
+        "births": []
+      }
+    ],
+    "matches archive": true
+  },
+  "ordinary parity binary closing control": {
+    "names": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "l",
+      "m"
+    ],
+    "start": [
+      [
+        0,
+        1,
+        4
+      ],
+      [
+        2,
+        3,
+        5
+      ],
+      [
+        0,
+        1,
+        2,
+        3
+      ]
+    ],
+    "births": [
+      {
+        "parents": [
+          0,
+          1
+        ],
+        "inputs": [
+          4,
+          5
+        ],
+        "fresh": [],
+        "p": 2,
+        "f": 0,
+        "implied": true,
+        "takes all": true
+      }
+    ],
+    "old state count": 8,
+    "new state count": 8,
+    "same allowed states": true,
+    "loose pair before and after": [
+      "00",
+      "11"
+    ]
+  },
+  "sample selection": "Every 337th archived census start from zero, census 959, and the final start",
+  "archive sample": {
+    "parity": {
+      "archive": "research/BUILT-BINDING-20261126-001/closing_census_parity.jsonl",
+      "archived starts": 7075,
+      "compared starts": [
+        {
+          "census index": 0,
+          "starting knots": 3,
+          "loose counts at their holders": [
+            1,
+            2,
+            2
+          ],
+          "births": 18,
+          "two-place births": 0,
+          "final recorded event": {
+            "round": 3,
+            "parents": [
+              12
+            ],
+            "p": 1,
+            "f": 2,
+            "implied": false,
+            "takes all": false
+          }
+        },
+        {
+          "census index": 337,
+          "starting knots": 4,
+          "loose counts at their holders": [
+            1,
+            1,
+            2
+          ],
+          "births": 3,
+          "two-place births": 1,
+          "final recorded event": {
+            "round": 3,
+            "end": "closed"
+          }
+        },
+        {
+          "census index": 674,
+          "starting knots": 4,
+          "loose counts at their holders": [
+            1,
+            2,
+            2
+          ],
+          "births": 0,
+          "two-place births": 0,
+          "final recorded event": {
+            "round": 1,
+            "end": "stalled"
+          }
+        },
+        {
+          "census index": 959,
+          "starting knots": 4,
+          "loose counts at their holders": [],
+          "births": 0,
+          "two-place births": 0,
+          "final recorded event": {
+            "round": 1,
+            "end": "closed"
+          }
+        },
+        {
+          "census index": 1011,
+          "starting knots": 4,
+          "loose counts at their holders": [
+            1,
+            1,
+            2
+          ],
+          "births": 0,
+          "two-place births": 0,
+          "final recorded event": {
+            "round": 1,
+            "end": "stalled"
+          }
+        },
+        {
+          "census index": 1348,
+          "starting knots": 5,
+          "loose counts at their holders": [
+            2,
+            2,
+            2
+          ],
+          "births": 4,
+          "two-place births": 0,
+          "final recorded event": {
+            "round": 3,
+            "end": "closed"
+          }
+        },
+        {
+          "census index": 1685,
+          "starting knots": 5,
+          "loose counts at their holders": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "births": 0,
+          "two-place births": 0,
+          "final recorded event": {
+            "round": 1,
+            "end": "stalled"
+          }
+        },
+        {
+          "census index": 2022,
+          "starting knots": 5,
+          "loose counts at their holders": [
+            1,
+            1,
+            2,
+            2
+          ],
+          "births": 0,
+          "two-place births": 0,
+          "final recorded event": {
+            "round": 1,
+            "end": "stalled"
+          }
+        },
+        {
+          "census index": 2359,
+          "starting knots": 5,
+          "loose counts at their holders": [
+            2,
+            2
+          ],
+          "births": 12,
+          "two-place births": 0,
+          "final recorded event": {
+            "round": 3,
+            "parents": [
+              11
+            ],
+            "p": 1,
+            "f": 2,
+            "implied": false,
+            "takes all": false
+          }
+        },
+        {
+          "census index": 2696,
+          "starting knots": 5,
+          "loose counts at their holders": [
+            1,
+            1,
+            1
+          ],
+          "births": 0,
+          "two-place births": 0,
+          "final recorded event": {
+            "round": 1,
+            "end": "stalled"
+          }
+        },
+        {
+          "census index": 3033,
+          "starting knots": 5,
+          "loose counts at their holders": [
+            1,
+            1
+          ],
+          "births": 1,
+          "two-place births": 1,
+          "final recorded event": {
+            "round": 2,
+            "end": "closed"
+          }
+        },
+        {
+          "census index": 3370,
+          "starting knots": 5,
+          "loose counts at their holders": [
+            1,
+            2
+          ],
+          "births": 15,
+          "two-place births": 0,
+          "final recorded event": {
+            "round": 3,
+            "parents": [
+              12
+            ],
+            "p": 1,
+            "f": 2,
+            "implied": false,
+            "takes all": false
+          }
+        },
+        {
+          "census index": 3707,
+          "starting knots": 5,
+          "loose counts at their holders": [
+            1,
+            1,
+            2
+          ],
+          "births": 3,
+          "two-place births": 1,
+          "final recorded event": {
+            "round": 3,
+            "end": "closed"
+          }
+        },
+        {
+          "census index": 4044,
+          "starting knots": 5,
+          "loose counts at their holders": [
+            1,
+            1,
+            2
+          ],
+          "births": 13,
+          "two-place births": 0,
+          "final recorded event": {
+            "round": 3,
+            "parents": [
+              11
+            ],
+            "p": 1,
+            "f": 2,
+            "implied": false,
+            "takes all": false
+          }
+        },
+        {
+          "census index": 4381,
+          "starting knots": 5,
+          "loose counts at their holders": [
+            1,
+            2
+          ],
+          "births": 15,
+          "two-place births": 0,
+          "final recorded event": {
+            "round": 3,
+            "parents": [
+              12
+            ],
+            "p": 1,
+            "f": 2,
+            "implied": false,
+            "takes all": false
+          }
+        },
+        {
+          "census index": 4718,
+          "starting knots": 5,
+          "loose counts at their holders": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "births": 8,
+          "two-place births": 0,
+          "final recorded event": {
+            "round": 3,
+            "parents": [
+              8
+            ],
+            "p": 1,
+            "f": 2,
+            "implied": false,
+            "takes all": false
+          }
+        },
+        {
+          "census index": 5055,
+          "starting knots": 5,
+          "loose counts at their holders": [
+            2
+          ],
+          "births": 9,
+          "two-place births": 0,
+          "final recorded event": {
+            "round": 3,
+            "parents": [
+              9
+            ],
+            "p": 1,
+            "f": 2,
+            "implied": false,
+            "takes all": false
+          }
+        },
+        {
+          "census index": 5392,
+          "starting knots": 5,
+          "loose counts at their holders": [
+            2
+          ],
+          "births": 9,
+          "two-place births": 0,
+          "final recorded event": {
+            "round": 3,
+            "parents": [
+              9
+            ],
+            "p": 1,
+            "f": 2,
+            "implied": false,
+            "takes all": false
+          }
+        },
+        {
+          "census index": 5729,
+          "starting knots": 5,
+          "loose counts at their holders": [
+            1,
+            1
+          ],
+          "births": 1,
+          "two-place births": 1,
+          "final recorded event": {
+            "round": 2,
+            "end": "closed"
+          }
+        },
+        {
+          "census index": 6066,
+          "starting knots": 5,
+          "loose counts at their holders": [
+            1,
+            2
+          ],
+          "births": 6,
+          "two-place births": 0,
+          "final recorded event": {
+            "round": 3,
+            "parents": [
+              8
+            ],
+            "p": 1,
+            "f": 2,
+            "implied": false,
+            "takes all": false
+          }
+        },
+        {
+          "census index": 6403,
+          "starting knots": 5,
+          "loose counts at their holders": [
+            1,
+            1
+          ],
+          "births": 1,
+          "two-place births": 1,
+          "final recorded event": {
+            "round": 2,
+            "end": "closed"
+          }
+        },
+        {
+          "census index": 6740,
+          "starting knots": 5,
+          "loose counts at their holders": [
+            1,
+            2
+          ],
+          "births": 6,
+          "two-place births": 0,
+          "final recorded event": {
+            "round": 3,
+            "parents": [
+              8
+            ],
+            "p": 1,
+            "f": 2,
+            "implied": false,
+            "takes all": false
+          }
+        },
+        {
+          "census index": 7074,
+          "starting knots": 5,
+          "loose counts at their holders": [],
+          "births": 0,
+          "two-place births": 0,
+          "final recorded event": {
+            "round": 1,
+            "end": "closed"
+          }
+        }
+      ],
+      "archive two-place counts": [
+        {
+          "round": 1,
+          "implied": true,
+          "births": 821
+        },
+        {
+          "round": 2,
+          "implied": true,
+          "births": 79
+        },
+        {
+          "round": 3,
+          "implied": true,
+          "births": 1
+        }
+      ]
+    },
+    "nae": {
+      "archive": "research/BUILT-BINDING-20261126-001/closing_census_nae.jsonl",
+      "archived starts": 7075,
+      "compared starts": [
+        {
+          "census index": 0,
+          "starting knots": 3,
+          "loose counts at their holders": [
+            1,
+            2,
+            2
+          ],
+          "births": 18,
+          "two-place births": 0,
+          "final recorded event": {
+            "round": 3,
+            "parents": [
+              12
+            ],
+            "p": 1,
+            "f": 2,
+            "implied": false,
+            "takes all": false
+          }
+        },
+        {
+          "census index": 337,
+          "starting knots": 4,
+          "loose counts at their holders": [
+            1,
+            1,
+            2
+          ],
+          "births": 4,
+          "two-place births": 0,
+          "final recorded event": {
+            "round": 3,
+            "parents": [
+              6
+            ],
+            "p": 1,
+            "f": 2,
+            "implied": false,
+            "takes all": true
+          }
+        },
+        {
+          "census index": 674,
+          "starting knots": 4,
+          "loose counts at their holders": [
+            1,
+            2,
+            2
+          ],
+          "births": 0,
+          "two-place births": 0,
+          "final recorded event": {
+            "round": 1,
+            "end": "stalled"
+          }
+        },
+        {
+          "census index": 959,
+          "starting knots": 4,
+          "loose counts at their holders": [],
+          "births": 0,
+          "two-place births": 0,
+          "final recorded event": {
+            "round": 1,
+            "end": "closed"
+          }
+        },
+        {
+          "census index": 1011,
+          "starting knots": 4,
+          "loose counts at their holders": [
+            1,
+            1,
+            2
+          ],
+          "births": 0,
+          "two-place births": 0,
+          "final recorded event": {
+            "round": 1,
+            "end": "stalled"
+          }
+        },
+        {
+          "census index": 1348,
+          "starting knots": 5,
+          "loose counts at their holders": [
+            2,
+            2,
+            2
+          ],
+          "births": 5,
+          "two-place births": 0,
+          "final recorded event": {
+            "round": 3,
+            "parents": [
+              8
+            ],
+            "p": 1,
+            "f": 2,
+            "implied": false,
+            "takes all": true
+          }
+        },
+        {
+          "census index": 1685,
+          "starting knots": 5,
+          "loose counts at their holders": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "births": 0,
+          "two-place births": 0,
+          "final recorded event": {
+            "round": 1,
+            "end": "stalled"
+          }
+        },
+        {
+          "census index": 2022,
+          "starting knots": 5,
+          "loose counts at their holders": [
+            1,
+            1,
+            2,
+            2
+          ],
+          "births": 0,
+          "two-place births": 0,
+          "final recorded event": {
+            "round": 1,
+            "end": "stalled"
+          }
+        },
+        {
+          "census index": 2359,
+          "starting knots": 5,
+          "loose counts at their holders": [
+            2,
+            2
+          ],
+          "births": 12,
+          "two-place births": 0,
+          "final recorded event": {
+            "round": 3,
+            "parents": [
+              11
+            ],
+            "p": 1,
+            "f": 2,
+            "implied": false,
+            "takes all": false
+          }
+        },
+        {
+          "census index": 2696,
+          "starting knots": 5,
+          "loose counts at their holders": [
+            1,
+            1,
+            1
+          ],
+          "births": 0,
+          "two-place births": 0,
+          "final recorded event": {
+            "round": 1,
+            "end": "stalled"
+          }
+        },
+        {
+          "census index": 3033,
+          "starting knots": 5,
+          "loose counts at their holders": [
+            1,
+            1
+          ],
+          "births": 4,
+          "two-place births": 0,
+          "final recorded event": {
+            "round": 3,
+            "parents": [
+              6
+            ],
+            "p": 1,
+            "f": 2,
+            "implied": false,
+            "takes all": false
+          }
+        },
+        {
+          "census index": 3370,
+          "starting knots": 5,
+          "loose counts at their holders": [
+            1,
+            2
+          ],
+          "births": 15,
+          "two-place births": 0,
+          "final recorded event": {
+            "round": 3,
+            "parents": [
+              12
+            ],
+            "p": 1,
+            "f": 2,
+            "implied": false,
+            "takes all": false
+          }
+        },
+        {
+          "census index": 3707,
+          "starting knots": 5,
+          "loose counts at their holders": [
+            1,
+            1,
+            2
+          ],
+          "births": 4,
+          "two-place births": 0,
+          "final recorded event": {
+            "round": 3,
+            "parents": [
+              7
+            ],
+            "p": 1,
+            "f": 2,
+            "implied": false,
+            "takes all": true
+          }
+        },
+        {
+          "census index": 4044,
+          "starting knots": 5,
+          "loose counts at their holders": [
+            1,
+            1,
+            2
+          ],
+          "births": 13,
+          "two-place births": 0,
+          "final recorded event": {
+            "round": 3,
+            "parents": [
+              11
+            ],
+            "p": 1,
+            "f": 2,
+            "implied": false,
+            "takes all": false
+          }
+        },
+        {
+          "census index": 4381,
+          "starting knots": 5,
+          "loose counts at their holders": [
+            1,
+            2
+          ],
+          "births": 15,
+          "two-place births": 0,
+          "final recorded event": {
+            "round": 3,
+            "parents": [
+              12
+            ],
+            "p": 1,
+            "f": 2,
+            "implied": false,
+            "takes all": false
+          }
+        },
+        {
+          "census index": 4718,
+          "starting knots": 5,
+          "loose counts at their holders": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "births": 8,
+          "two-place births": 0,
+          "final recorded event": {
+            "round": 3,
+            "parents": [
+              8
+            ],
+            "p": 1,
+            "f": 2,
+            "implied": false,
+            "takes all": false
+          }
+        },
+        {
+          "census index": 5055,
+          "starting knots": 5,
+          "loose counts at their holders": [
+            2
+          ],
+          "births": 9,
+          "two-place births": 0,
+          "final recorded event": {
+            "round": 3,
+            "parents": [
+              9
+            ],
+            "p": 1,
+            "f": 2,
+            "implied": false,
+            "takes all": false
+          }
+        },
+        {
+          "census index": 5392,
+          "starting knots": 5,
+          "loose counts at their holders": [
+            2
+          ],
+          "births": 9,
+          "two-place births": 0,
+          "final recorded event": {
+            "round": 3,
+            "parents": [
+              9
+            ],
+            "p": 1,
+            "f": 2,
+            "implied": false,
+            "takes all": false
+          }
+        },
+        {
+          "census index": 5729,
+          "starting knots": 5,
+          "loose counts at their holders": [
+            1,
+            1
+          ],
+          "births": 4,
+          "two-place births": 0,
+          "final recorded event": {
+            "round": 3,
+            "parents": [
+              6
+            ],
+            "p": 1,
+            "f": 2,
+            "implied": false,
+            "takes all": false
+          }
+        },
+        {
+          "census index": 6066,
+          "starting knots": 5,
+          "loose counts at their holders": [
+            1,
+            2
+          ],
+          "births": 6,
+          "two-place births": 0,
+          "final recorded event": {
+            "round": 3,
+            "parents": [
+              8
+            ],
+            "p": 1,
+            "f": 2,
+            "implied": false,
+            "takes all": false
+          }
+        },
+        {
+          "census index": 6403,
+          "starting knots": 5,
+          "loose counts at their holders": [
+            1,
+            1
+          ],
+          "births": 4,
+          "two-place births": 0,
+          "final recorded event": {
+            "round": 3,
+            "parents": [
+              6
+            ],
+            "p": 1,
+            "f": 2,
+            "implied": false,
+            "takes all": false
+          }
+        },
+        {
+          "census index": 6740,
+          "starting knots": 5,
+          "loose counts at their holders": [
+            1,
+            2
+          ],
+          "births": 6,
+          "two-place births": 0,
+          "final recorded event": {
+            "round": 3,
+            "parents": [
+              8
+            ],
+            "p": 1,
+            "f": 2,
+            "implied": false,
+            "takes all": false
+          }
+        },
+        {
+          "census index": 7074,
+          "starting knots": 5,
+          "loose counts at their holders": [],
+          "births": 0,
+          "two-place births": 0,
+          "final recorded event": {
+            "round": 1,
+            "end": "closed"
+          }
+        }
+      ],
+      "archive two-place counts": []
+    }
+  },
+  "three rings of four": {
+    "start": [
+      [
+        0,
+        3,
+        12,
+        13,
+        36
+      ],
+      [
+        0,
+        1,
+        14,
+        15,
+        42
+      ],
+      [
+        1,
+        2,
+        16,
+        17,
+        37
+      ],
+      [
+        2,
+        3,
+        18,
+        19,
+        43
+      ],
+      [
+        4,
+        7,
+        20,
+        21,
+        38
+      ],
+      [
+        4,
+        5,
+        22,
+        23,
+        48
+      ],
+      [
+        5,
+        6,
+        24,
+        25,
+        39
+      ],
+      [
+        6,
+        7,
+        26,
+        27,
+        49
+      ],
+      [
+        8,
+        11,
+        28,
+        29,
+        44
+      ],
+      [
+        8,
+        9,
+        30,
+        31,
+        50
+      ],
+      [
+        9,
+        10,
+        32,
+        33,
+        45
+      ],
+      [
+        10,
+        11,
+        34,
+        35,
+        51
+      ],
+      [
+        36,
+        37,
+        40,
+        41
+      ],
+      [
+        38,
+        39,
+        40,
+        41
+      ],
+      [
+        42,
+        43,
+        46,
+        47
+      ],
+      [
+        44,
+        45,
+        46,
+        47
+      ],
+      [
+        48,
+        49,
+        52,
+        53
+      ],
+      [
+        50,
+        51,
+        52,
+        53
+      ]
+    ],
+    "families": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        4,
+        6
+      ],
+      [
+        5,
+        7
+      ],
+      [
+        8,
+        10
+      ],
+      [
+        9,
+        11
+      ]
+    ],
+    "knots and distinctions through rounds": [
+      [
+        18,
+        54
+      ],
+      [
+        36,
+        90
+      ],
+      [
+        60,
+        138
+      ],
+      [
+        90,
+        198
+      ],
+      [
+        126,
+        270
+      ],
+      [
+        168,
+        354
+      ],
+      [
+        216,
+        450
+      ],
+      [
+        270,
+        558
+      ]
+    ],
+    "matching recorded stages (including start)": 6,
+    "transitions": [
+      {
+        "round": 1,
+        "births": 18,
+        "loose distinctions per family": [
+          6,
+          6,
+          6,
+          6,
+          6,
+          6
+        ],
+        "old minimal relations by places": {
+          "3": 4,
+          "4": 3,
+          "5": 3,
+          "6": 1
+        },
+        "inclusion-minimal relations on both generations by places": {
+          "2": 6,
+          "3": 13,
+          "4": 12,
+          "5": 48,
+          "6": 64
+        },
+        "inclusion-minimal relations mentioning a new carrier by places": {
+          "2": 6,
+          "3": 9,
+          "4": 9,
+          "5": 45,
+          "6": 63
+        },
+        "old and enlarged ranks of forced equations": [
+          4,
+          10
+        ],
+        "independent copy equalities": 6,
+        "new independent equations beyond copies": 0,
+        "old and enlarged allowed word counts": [
+          32,
+          32
+        ],
+        "least changing size, six families then three rings": [
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          7,
+          7,
+          7
+        ],
+        "facts kept by all changes of size at most twelve": {
+          "fact positions": [],
+          "joint word count": 1,
+          "single-knot readers exist": []
+        },
+        "pairwise disjoint carriers": false
+      },
+      {
+        "round": 2,
+        "births": 24,
+        "loose distinctions per family": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "old minimal relations by places": {
+          "3": 4,
+          "4": 3,
+          "5": 3,
+          "6": 1
+        },
+        "inclusion-minimal relations on both generations by places": {
+          "2": 6,
+          "3": 13,
+          "4": 12,
+          "5": 48,
+          "6": 64
+        },
+        "inclusion-minimal relations mentioning a new carrier by places": {
+          "2": 6,
+          "3": 9,
+          "4": 9,
+          "5": 45,
+          "6": 63
+        },
+        "old and enlarged ranks of forced equations": [
+          4,
+          10
+        ],
+        "independent copy equalities": 6,
+        "new independent equations beyond copies": 0,
+        "old and enlarged allowed word counts": [
+          32,
+          32
+        ],
+        "least changing size, six families then three rings": [
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          9,
+          9,
+          9
+        ],
+        "facts kept by all changes of size at most twelve": {
+          "fact positions": [],
+          "joint word count": 1,
+          "single-knot readers exist": []
+        },
+        "pairwise disjoint carriers": true
+      },
+      {
+        "round": 3,
+        "births": 30,
+        "loose distinctions per family": [
+          10,
+          10,
+          10,
+          10,
+          10,
+          10
+        ],
+        "old minimal relations by places": {
+          "3": 4,
+          "4": 3,
+          "5": 3,
+          "6": 1
+        },
+        "inclusion-minimal relations on both generations by places": {
+          "2": 6,
+          "3": 13,
+          "4": 12,
+          "5": 48,
+          "6": 64
+        },
+        "inclusion-minimal relations mentioning a new carrier by places": {
+          "2": 6,
+          "3": 9,
+          "4": 9,
+          "5": 45,
+          "6": 63
+        },
+        "old and enlarged ranks of forced equations": [
+          4,
+          10
+        ],
+        "independent copy equalities": 6,
+        "new independent equations beyond copies": 0,
+        "old and enlarged allowed word counts": [
+          32,
+          32
+        ],
+        "least changing size, six families then three rings": [
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          11,
+          11,
+          11
+        ],
+        "facts kept by all changes of size at most twelve": {
+          "fact positions": [],
+          "joint word count": 1,
+          "single-knot readers exist": []
+        },
+        "pairwise disjoint carriers": true
+      },
+      {
+        "round": 4,
+        "births": 36,
+        "loose distinctions per family": [
+          12,
+          12,
+          12,
+          12,
+          12,
+          12
+        ],
+        "old minimal relations by places": {
+          "3": 4,
+          "4": 3,
+          "5": 3,
+          "6": 1
+        },
+        "inclusion-minimal relations on both generations by places": {
+          "2": 6,
+          "3": 13,
+          "4": 12,
+          "5": 48,
+          "6": 64
+        },
+        "inclusion-minimal relations mentioning a new carrier by places": {
+          "2": 6,
+          "3": 9,
+          "4": 9,
+          "5": 45,
+          "6": 63
+        },
+        "old and enlarged ranks of forced equations": [
+          4,
+          10
+        ],
+        "independent copy equalities": 6,
+        "new independent equations beyond copies": 0,
+        "old and enlarged allowed word counts": [
+          32,
+          32
+        ],
+        "least changing size, six families then three rings": [
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          13,
+          13,
+          13
+        ],
+        "facts kept by all changes of size at most twelve": {
+          "fact positions": [
+            6,
+            7,
+            8
+          ],
+          "joint word count": 4,
+          "single-knot readers exist": [
+            false,
+            false,
+            false
+          ]
+        },
+        "pairwise disjoint carriers": true
+      },
+      {
+        "round": 5,
+        "births": 42,
+        "loose distinctions per family": [
+          14,
+          14,
+          14,
+          14,
+          14,
+          14
+        ],
+        "old minimal relations by places": {
+          "3": 4,
+          "4": 3,
+          "5": 3,
+          "6": 1
+        },
+        "inclusion-minimal relations on both generations by places": {
+          "2": 6,
+          "3": 13,
+          "4": 12,
+          "5": 48,
+          "6": 64
+        },
+        "inclusion-minimal relations mentioning a new carrier by places": {
+          "2": 6,
+          "3": 9,
+          "4": 9,
+          "5": 45,
+          "6": 63
+        },
+        "old and enlarged ranks of forced equations": [
+          4,
+          10
+        ],
+        "independent copy equalities": 6,
+        "new independent equations beyond copies": 0,
+        "old and enlarged allowed word counts": [
+          32,
+          32
+        ],
+        "least changing size, six families then three rings": [
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          15,
+          15,
+          15
+        ],
+        "facts kept by all changes of size at most twelve": {
+          "fact positions": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "joint word count": 32,
+          "single-knot readers exist": [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        "pairwise disjoint carriers": true
+      },
+      {
+        "round": 6,
+        "births": 48,
+        "loose distinctions per family": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "old minimal relations by places": {
+          "3": 4,
+          "4": 3,
+          "5": 3,
+          "6": 1
+        },
+        "inclusion-minimal relations on both generations by places": {
+          "2": 6,
+          "3": 13,
+          "4": 12,
+          "5": 48,
+          "6": 64
+        },
+        "inclusion-minimal relations mentioning a new carrier by places": {
+          "2": 6,
+          "3": 9,
+          "4": 9,
+          "5": 45,
+          "6": 63
+        },
+        "old and enlarged ranks of forced equations": [
+          4,
+          10
+        ],
+        "independent copy equalities": 6,
+        "new independent equations beyond copies": 0,
+        "old and enlarged allowed word counts": [
+          32,
+          32
+        ],
+        "least changing size, six families then three rings": [
+          15,
+          15,
+          15,
+          15,
+          15,
+          15,
+          17,
+          17,
+          17
+        ],
+        "facts kept by all changes of size at most twelve": {
+          "fact positions": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "joint word count": 32,
+          "single-knot readers exist": [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        "pairwise disjoint carriers": true
+      },
+      {
+        "round": 7,
+        "births": 54,
+        "loose distinctions per family": [
+          18,
+          18,
+          18,
+          18,
+          18,
+          18
+        ],
+        "old minimal relations by places": {
+          "3": 4,
+          "4": 3,
+          "5": 3,
+          "6": 1
+        },
+        "inclusion-minimal relations on both generations by places": {
+          "2": 6,
+          "3": 13,
+          "4": 12,
+          "5": 48,
+          "6": 64
+        },
+        "inclusion-minimal relations mentioning a new carrier by places": {
+          "2": 6,
+          "3": 9,
+          "4": 9,
+          "5": 45,
+          "6": 63
+        },
+        "old and enlarged ranks of forced equations": [
+          4,
+          10
+        ],
+        "independent copy equalities": 6,
+        "new independent equations beyond copies": 0,
+        "old and enlarged allowed word counts": [
+          32,
+          32
+        ],
+        "least changing size, six families then three rings": [
+          17,
+          17,
+          17,
+          17,
+          17,
+          17,
+          19,
+          19,
+          19
+        ],
+        "facts kept by all changes of size at most twelve": {
+          "fact positions": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "joint word count": 32,
+          "single-knot readers exist": [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        "pairwise disjoint carriers": true
+      }
+    ],
+    "new minimal ternary relation certificate": {
+      "round": 5,
+      "carriers": [
+        [
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ],
+        [
+          270,
+          271,
+          272,
+          273,
+          274,
+          275,
+          276,
+          277,
+          278,
+          279,
+          330,
+          331,
+          334,
+          335
+        ],
+        [
+          280,
+          281,
+          282,
+          283,
+          284,
+          285,
+          286,
+          287,
+          288,
+          289,
+          332,
+          333,
+          336,
+          337
+        ]
+      ],
+      "allowed words": [
+        "000",
+        "011",
+        "101",
+        "110"
+      ],
+      "canonical check": {
+        "allowed": [
+          "000",
+          "011",
+          "101",
+          "110"
+        ],
+        "binding": true,
+        "coexistence": true,
+        "contact": "q1new",
+        "erasure": "forgetting",
+        "invisible_in_parts": true,
+        "is_knot": true,
+        "loops": [
+          "R1",
+          "p1new"
+        ],
+        "loss_on_erasure": true,
+        "minimum_width": 3,
+        "notes": [],
+        "pairwise_definable": false,
+        "variables": [
+          "R1",
+          "p1new",
+          "q1new"
+        ]
+      },
+      "minimum flip sizes": [
+        15,
+        13,
+        13
+      ],
+      "any one-knot reader": false
+    }
+  },
+  "runtime": {
+    "elapsed seconds": 0.184,
+    "peak memory KiB": 24892,
+    "memory limit bytes": 2147483648,
+    "processes": 1,
+    "pilot": false
+  }
+}

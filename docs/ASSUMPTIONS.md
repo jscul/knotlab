@@ -355,6 +355,7 @@ evidence: results and their status come from the records each entry links.
 | [A297](#a297--rule-r-read-off-the-whole-structure-with-settled-and-open-pairs-one-realisation-and-the-counting-state) | Rule R read off the whole structure, with settled and open pairs, one realisation and the counting state | scaffold | Assumed |
 | [A298](#a298--built-ring-families-lineage-carriers-and-the-origin-test-to-read-a-binding-of-whole-held-facts) | Built ring families, lineage carriers and the origin test, to read a binding of whole-held facts | scaffold | Assumed |
 | [A299](#a299--families-of-live-knots-and-a-scale-of-small-change-to-read-which-facts-growth-makes-last) | Families of live knots and a scale of small change, to read which facts growth makes last | scaffold | Assumed |
+| [A300](#a300--values-and-changes-both-readable-the-coherent-counting-state-combined-questions-and-a-middle-reader-who-sorts) | Values and changes both readable: the coherent counting state, combined questions and a middle reader who sorts | scaffold | Assumed |
 
 ## Entries
 
@@ -6240,3 +6241,25 @@ evidence: results and their status come from the records each entry links.
   scales; the shortest-change reading. Expected to be replaced by a proof of claim T, which needs no chosen scale.
 - **History.**
   - 2026-11-26 · Entered at the freeze of `THIRD-LAYER-20261126-001`.
+
+### A300 · Values and changes both readable: the coherent counting state, combined questions and a middle reader who sorts
+
+**Assumed** · 2026-11-26 · scaffold
+
+- **Statement.** To test whether reading a change gives separated readers a table above the classical bound,
+  `VALUE-CHANGE-20261126-001` supplies: the coherent counting state (every allowed word weighted equally and every two
+  related equally, so that a change read, which compares two words, has a meaning); combined questions (a change of one
+  set read together with a value of another); a middle reader who reads changes, with a fixed setting, whose record
+  sorts the table; reader regions by lineage (a ring's places, or only those no other knot holds, or two rings
+  together); and the built joined-ring starts of `BUILT-BINDING-20261126-001`, grown by ordinary parity growth on the
+  canonical engine for two rounds.
+- **Why.** Nothing native reads a change; these are the least additions under which a change read means anything, and
+  the regions follow the structure's own lineage.
+- **Rests on it.** That study's square of certainty for readers who share no knot (one reader holding two rings, the
+  middle read for changes); its separability result does not rest on the middle reader or the regions (it holds for any
+  readers whom no knot joins).
+- **Challenge.** The middle as a third reader with two settings (no sorting); sampled starts under a named weighting; a
+  state that relates words unequally; a growth rule in which a birth compares its parents' allowed words. Expected to be
+  replaced only if the model comes to read changes itself.
+- **History.**
+  - 2026-11-26 · Entered by `VALUE-CHANGE-20261126-001`.

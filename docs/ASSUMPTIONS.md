@@ -6279,6 +6279,7 @@ evidence: results and their status come from the records each entry links.
 - **Rests on it.** The fresh test of the graded order and its exception, the split pair ([the note](../research/GRADED-ORDER-20261126-001/README.md)).
 - **Challenge.** Other weightings, eight knots and more, a longer horizon; the hash can merge two starts only if it collides. The model is not expected to keep these choices.
 - **History.**
+  - 2026-11-27 · Refereed (`GRADED-ORDER-20261126-001`, report R1): the sampling choices checked (the hash merged no two distinct starts); a blind eight-knot weighting agreed with the flags; constructed starts outside these weightings refute the general statement. [Referee report](../research/GRADED-ORDER-20261126-001/referee-R1/report.md)
   - 2026-11-27 · Entered with `GRADED-ORDER-20261126-001`: under both weightings every start without a split pair or two cells sharing two knots agrees, every start with one differs.
 
 ### A302 · The middle of the joined-ring starts as a third reader with two settings, and a quarter-turn read

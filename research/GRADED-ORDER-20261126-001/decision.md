@@ -1,5 +1,23 @@
 # Reading a growth straight off its start: what stands
 
+> **Referee report R1, 27 November 2026: refuted in part — Block on the statement to prove and on the order lemma as
+> worded; every frozen prediction reproduced** ([the report](referee-R1/report.md)). The referee rebuilt all 358
+> comparisons and both samples (175 distinct starts; the hash merged none) and blind-tested 55 eight-knot starts of its
+> own weighting, where the flags classed every start correctly. Read this record with these changes.
+> - **Block: the absence of both flags does not suffice.** An accepted 36-knot start (seven four-knot cells, one on each
+>   triple of the literature's Fano plane, inside one block) has neither flag and fails at round 1 under both laws: the
+>   reading's size counts a set's points less two for each whole cell it holds, which gives the whole set size 0 though
+>   it contains seven sets of size 2, so the order is not graded by size. A 14-knot start fails the same way. The
+>   statement to prove is withdrawn as written: a theorem must first justify the computed size on every cover.
+> - **Block: the order lemma as worded is false.** Its second clause must use families maximal among all pairwise
+>   parent-sharing families (on one block of four, 123, 124 and 134 share parents pairwise, yet the growth's birth 1234
+>   also has parent 234); the first clause needs rank two at least. The obligation is to compare the whole parent roster
+>   at each rank.
+> - **Narrowings.** A split pair keeps two parents out of one join; how many joins they enter depends on the roster.
+>   The cell clause describes one overlap (other overlaps lose the cells differently). Denominators: 352 fresh law
+>   comparisons in all, 40 starts with a split pair in the first weighting, closings in rounds 3 to 13; the hand-built
+>   start's small knots have four places.
+
 Epic `GRADED-ORDER-20261126-001` (G17 with G1; at the coordinator's pick, the advisor's direction 2 and the late-views
 study's direction 2; register entry A301), closed 27 November 2026. Computed, frozen with the advisor's review before
 any fresh start was grown; referee pending. [The note](README.md)

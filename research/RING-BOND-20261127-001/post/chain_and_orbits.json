@@ -1,0 +1,128 @@
+{
+ "chains": {
+  "((0, 1, 2), (2, 3, 4))": {
+   "bonds": 0,
+   "every law essential": 0,
+   "example": []
+  },
+  "((0, 1, 2), (2, 3, 4), (4, 5, 6))": {
+   "bonds": 16,
+   "every law essential": 16,
+   "example": [
+    {
+     "readings": [
+      [
+       [
+        0,
+        3
+       ],
+       "="
+      ],
+      [
+       [
+        1,
+        5
+       ],
+       "="
+      ],
+      [
+       [
+        2,
+        4,
+        6
+       ],
+       "="
+      ]
+     ],
+     "missing": [
+      "001"
+     ],
+     "essential": [
+      0,
+      1,
+      2
+     ],
+     "new": null
+    }
+   ]
+  },
+  "((0, 1, 2, 3), (3, 4, 5, 6))": {
+   "bonds": 0,
+   "every law essential": 0,
+   "example": []
+  },
+  "((6, 7, 8), (7, 9, 10), (8, 11, 12))": {
+   "bonds": 16,
+   "every law essential": 16,
+   "example": [
+    {
+     "readings": [
+      [
+       [
+        6,
+        9
+       ],
+       "="
+      ],
+      [
+       [
+        7,
+        11
+       ],
+       "="
+      ],
+      [
+       [
+        8,
+        10,
+        12
+       ],
+       "="
+      ]
+     ],
+     "missing": [
+      "001"
+     ],
+     "essential": [
+      0,
+      1,
+      2
+     ],
+     "new": null
+    }
+   ]
+  }
+ },
+ "round 1": {
+  "symmetries": 6,
+  "bonds": 9,
+  "orbit sizes": {
+   "3": 1,
+   "6": 1
+  },
+  "fixed bonds": 0
+ },
+ "round 2": {
+  "symmetries": 12,
+  "bonds": 411,
+  "orbit sizes": {
+   "3": 1,
+   "6": 16,
+   "12": 26
+  },
+  "fixed bonds": 0
+ },
+ "round 3": {
+  "symmetries": 48,
+  "bonds": 9121,
+  "orbit sizes": {
+   "3": 1,
+   "6": 33,
+   "8": 2,
+   "12": 184,
+   "24": 203,
+   "48": 38
+  },
+  "fixed bonds": 0
+ }
+}

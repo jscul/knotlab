@@ -43,7 +43,7 @@ if __name__ == '__main__':
     for t, (sup, born) in enumerate(RB.stages(S, 'nae', 3)):
         b = RB.bonds(RB.Stage(sup, 'nae'), 'agree', born=born)['bonds']
         agree = sum(missing_by_collapse(sup, 'nae', [C for C, lab in x['readings']]) == x['missing'] for x in b)
-        res['ring'].append({'round': t, 'bonds': len(b), 'collapse agrees': agree})
+        res['ring'].append({'round': t, 'bonds': len(b), 'collapse agrees': agree}); json.dump(res, open(sys.argv[1], 'w'), indent=1)
     starts = RB.forbid.census()
     for law in ('nae', 'parity'):
         for i in range(200):
@@ -53,4 +53,6 @@ if __name__ == '__main__':
                     if not x['same relation on the stage'] or x['read at a knot of the stage']: continue
                     res['census'][law][0] += 1
                     res['census'][law][1] += missing_by_collapse(sup, law, [C for C, lab in x['readings']]) == x['missing']
+            res['census starts read'] = res.get('census starts read', {}); res['census starts read'][law] = i + 1
+            json.dump(res, open(sys.argv[1], 'w'), indent=1)       # written after every start, so a stopped run keeps its part
     json.dump(res, open(sys.argv[1], 'w'), indent=1); print(json.dumps(res))

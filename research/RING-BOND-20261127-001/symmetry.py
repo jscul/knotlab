@@ -41,6 +41,8 @@ if __name__ == '__main__':
     G = group(); out = {'group order': len(G), 'rounds': []}
     for t, (sup, born) in enumerate(RB.stages(S, 'nae', ROUNDS)):
         fixes = [RB.automorphisms_fix(sup, g) for g in G]
+        if t > 3:                                        # bonds are read at rounds 1 to 3 only (README, P1.2)
+            out['rounds'].append({'round': t, 'knots': len(sup), 'every symmetry maps the stage onto itself': all(fixes)}); continue
         st = RB.Stage(sup, 'nae'); res = RB.bonds(st, 'agree', born=born)
         keys = {RB.bond_key(b): b for b in res['bonds']}
         orbits, seen = [], set()

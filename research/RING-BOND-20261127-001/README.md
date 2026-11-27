@@ -117,3 +117,20 @@ file.
 The census runs at about 3 s a start under not-all-equal and 5 s under parity (pilot), so 1,000 starts each in 6 and 8
 chunks takes about 10 to 15 minutes. The ring's round-4 full search, the layer above and the collapse check take
 minutes each. Each run has a memory cap (MemoryMax 6G) and a 30-minute stop. Anything that stops is reported as not run.
+
+## Deviations (process only; recorded after the freeze)
+
+- The first launch ran numpy with many threads per process and overloaded the machine. It was stopped after about five
+  minutes, before any result was read, and relaunched with one thread per process.
+- `symmetry.py` ran the bond search at rounds 4 and 5, which P1.2 does not ask for and the search cannot hold (27
+  distinctions). It was changed to read bonds at rounds 1 to 3 only, as frozen, and rerun. P1.3 was compared at round
+  5, past the frozen round 3.
+- `collapse.py` was changed to save after every start and relaunched. Under parity it was stopped at census start 5 to
+  close the study, so starts 6 to 199 are not run.
+- The holder-cap swap read every tenth sampled start (100 starts), not the first 100.
+- At the 30-minute stop, the parity census had read 179 of 1,000 starts; 821 are not run. The layer above with overlap
+  had read round 1; round 2 is not run.
+
+## Results
+
+`decision.md`, with the tallies in `out/tally.json` and post-hoc checks in `post/`.

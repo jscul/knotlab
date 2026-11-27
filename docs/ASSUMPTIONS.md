@@ -361,6 +361,7 @@ evidence: results and their status come from the records each entry links.
 | [A303](#a303--the-families-tree-as-the-places-of-the-second-layer-read-at-a-scale) | The families' tree as the places of the second layer, read at a scale | scaffold | Assumed |
 | [A304](#a304--the-countings-tested-on-small-sampled-starts-fourteen-distinctions-two-rounds) | The countings tested on small sampled starts: fourteen distinctions, two rounds | scaffold | Assumed |
 | [A305](#a305--the-transfer-laws-tables-a-declared-start-weighting-the-coherent-version-and-rotated-reads) | The transfer law's tables: a declared start weighting, the coherent version and rotated reads | scaffold | Assumed |
+| [A306](#a306--at-most-two-holders-at-the-second-layer) | At most two holders at the second layer | scaffold | Assumed |
 
 ## Entries
 
@@ -6354,3 +6355,19 @@ evidence: results and their status come from the records each entry links.
 - **Challenge.** More founders and rounds; other phases; a law that prescribes its own lift weights.
 - **History.**
   - 2026-11-26 · Entered by `TRANSFER-TABLES-20261126-001`.
+
+### A306 · At most two holders at the second layer
+
+**Assumed** · 2026-11-27 · scaffold
+
+- **Statement.** `ONE-STATEMENT-20261127-001` and the studies before it count a set of relations among second-layer
+  facts as a presentation only when each fact lies in at most two of them, as a distinction lies in at most two knots
+  at the first layer.
+- **Why.** Copied from the first layer, where the engine imposes it; it is what makes the tree and the loop comparable
+  as patterns of knots meeting.
+- **Rests on it.** The count of 20 among the 840 bases of the relations among the nine facts of three rings of four, and
+  the reading of the tree and the loop as two presentations.
+- **Challenge.** Drop it (all 840 bases count, and every fact can lie in many relations), or replace it by a rule the
+  growth itself supplies at the second layer; none is known. Expected to be replaced if a second-layer law is found.
+- **History.**
+  - 2026-11-27 · Entered with part (b) of `ONE-STATEMENT-20261127-001`.

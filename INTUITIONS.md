@@ -6260,8 +6260,8 @@ is three facts, each carried on its own, whose parity the knots' laws force.
   each meet a ring by one distinction, bound from the start, and one sampled start
   of ten knots under the shortest changes, where growth makes two of its three
   facts (computed, at the advisor's prompting). At a larger scale the verdict
-  changes: a connecting knot's own fact stops lasting, while the fact of each of
-  the start's families (its live knots joined through common neighbours) keeps
+  changes: a connecting knot's own fact stops lasting, while the fact of each start
+  family (its live knots joined through common neighbours; glossary) keeps
   needing exactly two more distinctions to flip each round (proved), so after four
   rounds, with a small change any change of up to ten or twelve distinctions, the
   families' facts are held by no part on 8 of the 12 three-ring starts read, and
@@ -6962,6 +6962,15 @@ that earlier records used in two senses.
   Life, which makes one fixed pattern each time; under ordinary growth no start
   is known to keep releasing lasting packets of one fixed width, and in the
   class where every knot can be reconstructed from the start none can.
+- **Start family.** The records use "family" in two senses, kept apart
+  here. In the generator records a family is a packet (above). In lesson 12.3 a
+  start family is a class of a start's live knots, two of them joined when some
+  knot shares a distinction with each (the joining rule's candidates). No birth
+  takes parents from two start families, so a start family with its descendants
+  is closed under parents, and the parity of its loose distinctions, its family
+  fact, is a fact the growth keeps for good: the least change that flips it
+  grows by two distinctions a round. The guide says start family for the
+  second sense and packet for the first.
 - **Fold of emergence.** The owner's phrase (assumption A223), always written in full and in his words: a pattern that the rules make,
   where what it makes depends on another pattern, and that makes a pattern of
   its own,

@@ -357,6 +357,7 @@ evidence: results and their status come from the records each entry links.
 | [A299](#a299--families-of-live-knots-and-a-scale-of-small-change-to-read-which-facts-growth-makes-last) | Families of live knots and a scale of small change, to read which facts growth makes last | scaffold | Assumed |
 | [A300](#a300--values-and-changes-both-readable-the-coherent-counting-state-combined-questions-and-a-middle-reader-who-sorts) | Values and changes both readable: the coherent counting state, combined questions and a middle reader who sorts | scaffold | Assumed |
 | [A301](#a301--two-weightings-of-seven-knot-starts-buckets-up-to-renaming-and-a-24-round-horizon-to-test-the-graded-order-and-its-exception) | Two weightings of seven-knot starts, buckets up to renaming and a 24-round horizon, to test the graded order and its exception | scaffold | Assumed |
+| [A302](#a302--the-middle-of-the-joined-ring-starts-as-a-third-reader-with-two-settings-and-a-quarter-turn-read) | The middle of the joined-ring starts as a third reader with two settings, and a quarter-turn read | scaffold | Assumed |
 
 ## Entries
 
@@ -6279,3 +6280,20 @@ evidence: results and their status come from the records each entry links.
 - **Challenge.** Other weightings, eight knots and more, a longer horizon; the hash can merge two starts only if it collides. The model is not expected to keep these choices.
 - **History.**
   - 2026-11-27 · Entered with `GRADED-ORDER-20261126-001`: under both weightings every start without a split pair or two cells sharing two knots agrees, every start with one differs.
+
+### A302 · The middle of the joined-ring starts as a third reader with two settings, and a quarter-turn read
+
+**Assumed** · 2026-11-26 · scaffold
+
+- **Statement.** To test whether the sorting of the change-read study's square can be removed,
+  `THIRD-READER-20261126-001` makes every distinction outside two rings' regions one middle reader with two settings,
+  and lets each reader make a quarter-turn read (i times a change read times a value read that does not commute with
+  it), on the coherent counting state of the built joined-ring starts at round 0.
+- **Why.** The least change to the event-ready arrangement that gives the middle settings of its own.
+- **Rests on it.** That study's three-reader game of certainty and its contact list; not its separability argument,
+  which holds for any readers no knot joins.
+- **Challenge.** A middle split into readers no knot joins (then, by the argument, nothing a list cannot give); real
+  reads only (no game with positive amplitudes, by the lemma); a state that does not factor over knots. Expected to
+  stay a scaffold.
+- **History.**
+  - 2026-11-26 · Entered by `THIRD-READER-20261126-001`.

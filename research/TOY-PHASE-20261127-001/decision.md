@@ -117,3 +117,62 @@ design by hand, read-only, before the freeze. Six changes followed, listed in th
 - **Two values are special** (row 4; [Gross 2006](https://arxiv.org/abs/quant-ph/0602001)). For three-valued (and any
   odd prime number of values) distinctions the stabilizer states have non-negative Wigner functions, so the gap closes
   there.
+
+## Final report as sent
+
+2026-11-27 15:25 PST
+
+Direction 1 is done. The comparison holds exactly, and it settles the quantum question as far as the current model can take it.
+
+**What we found**
+- **One knot is one toy bit.** A three-place parity knot is exactly one toy bit of Spekkens's toy theory. Its four allowed states, three distinctions and three allowed changes are the toy bit's underlying states, questions and shifts. Your picture of a distinction, a choice between 00/11 and 01/10, is the toy bit's rule that each question is the sum of the other two. The not-all-equal knot is not a toy bit.
+- **Growth's closure is on the toy side.** Take the four-knot closure that growth makes, read by its own three readers. The even law growth produces is a valid toy state under all 216 ways of assigning the readers' questions. It is a qubit stabilizer state under none of them, because the four knot operators always multiply to −1. The odd law is the reverse: it has no allowed state, but exactly one qubit state, and that state reproduces the 64-probability three-reader target.
+- **What is missing.** Every table above the classical limit in the record used supplied reads whose product squares to −1. That is a phase of order four, the literature's Z4. On one knot, the model has the knot's own allowed change, the literature's Z. The toy theory adds two maps whose product is Z, and quantum mechanics has S, whose square is Z. Every operation on a knot's values that keeps a read gives the identity when applied twice, so no square root of Z exists among them.
+- **Two readers.** Inside the stabilizer part, states and reads alike, the two-reader score never exceeds 2. The sibling study's 2.108 uses a read outside it. X and Z reads on both sides can reach 2√2, but only with a supplied state that is not a stabilizer state.
+- **One size past.** I tested the same split on all 115 operator certificates the four-readings study stored, 79 of them on patterns growth closes. In every one, the toy reading gives only even laws, the operators give the odd total, and the gap is the cost of reordering.
+
+So in a model whose states give every distinction a value (A295), there is no source of the quantum phase. Getting one means changing what a state is, to a relation between two allowed states that carries a phase. That is the quantum account's one missing piece, now in its exact form in the literature.
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt — the model against Spekkens's toy theory and the phase groups | **Status:** Successful | All seven frozen predictions and the stress test held; referee pending |
+| Local direction — quantum tables from a model whose states give every distinction a value | Retire (settled) | The odd close needs reads whose product squares to −1; no operation on values gives one |
+| Broader exploration — quantum behaviour by a declared extension | Known alternatives | A phase of order four with a sign rule at birth; the toy side's own protocols |
+| Long-term goal — G18 Comparing growth laws | Obstruction learned | The quantum line's obstruction in its exact known form, Z2×Z2 against Z4 |
+
+**Next step:** Full pivot — selected: #1
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+| --- | --- | --- | --- | --- | --- |
+| 1 | Declare a phase of order four with a sign rule at birth, and ask which grown structures keep a state | 2/3 — Substantial | 2/3 — Testable | Your decision → on census starts, a state on every grown structure, or the first without one | Selected · awaiting go-ahead |
+| 2 | Run the toy theory's protocols (teleportation, dense coding) with the model's own reads and allowed changes | 2/3 — Substantial | 2/3 — Testable | Toy teleportation on a grown two-reader structure → runs with nothing supplied, or the first supplied step | Alternative · deferred |
+| 3 | Odd rings that meet: is there a forced parity of class labels (the both-long study's direction 1)? | 3/3 — Barrier | 3/3 — Ready | As recorded: grow meeting rings, read the classes → a forced parity, or free bits | Alternative · deferred |
+| 4 | Intuition link: three-valued distinctions close the gap (Gross) | 1/3 — Incremental | 3/3 — Ready | A three-valued closure, toy reading against operator reading → they agree, or not | Alternative · deferred |
+
+1. This would say exactly what "something to represent quantum mechanics" costs on growth's own structures: one declared primitive plus a rule that places signs at birth. The test is now exact: a state exists exactly when every relation among the knots has the reordering cost its signs require. The main uncertainty is whether any rule fixed at birth keeps a state as growth continues. The account found that rule R, read off finished structures, leaves no state on 290 of 300 sampled starts. It changes what the model is, so it waits for your word.
+2. This would show which quantum-looking protocols the model runs with nothing supplied, since its allowed changes are the toy bit's shifts. The payoff is our placement, not new physics, because these protocols have classical explanations.
+3. This is rated 3/3 and 3/3 in the line's basket, but it belongs to the layer line, which other threads are carrying.
+4. This is the intuition link for this STOP. For an odd prime number of values (three, five, …), the stabilizer part has a classical model (Gross), so the gap found here exists only for two-valued distinctions. It is a cheap footnote.
+
+**STOP** on tables above the classical limit inside a model whose states give every distinction a value. That much is settled. What is open is a declared extension, and that choice is yours. I haven't started another study under the rule for a STOP, because the next choice in this line is yours and the basket's 3/3 items belong to lines other threads are working.
+
+**Corrections:** none. One sharpening of my earlier reply: on the closure, the three-reader table needs reads whose product squares to −1, which the record achieves with real reads. The account's "quarter-turn read" belongs to the third-reader game without sorting, not to the closure.
+
+**Goals:** G18 gets an "obstruction learned" checkpoint row. No goal changed.
+
+**Assumptions:** New scaffold A313: a parity knot, and each reader's pair, read as a toy bit. A295 (every two distinctions have a joint value) gets a history line. This study shows it is what puts the model on the toy side; its status stays Under challenge.
+
+**Scaffolds:** I tested A313 under every choice it has: all 6 coordinate choices and all 216 assignments give the same verdicts. The pairing does matter. The toy theory accepts 7 of the 15 ways of pairing distinctions into readers, and the record's readers (the pairs no knot holds together) are among them.
+
+**Basket:** The line's top items were the both-long study's direction 1 (3/3, 3/3), the value-change study's direction 1 (3/3, 3/3) and B239 (3/3, 2/3). None was taken: the first belongs to the layer line, the second appears to have been answered by the third-reader study though it is not marked taken, and the third is an older selected study.
+
+Both advisor models were at their usage limit. An independent reviewer checked the design by hand before the freeze and caught three problems, which I fixed before running:
+- P3's wording about which knots fail to commute was wrong.
+- My two-reader prediction claimed too much.
+- "Quarter-turn" would have given one word two meanings.
+
+My first version of A313 broke the register's format and failed one publication run. The next commit fixed it, and publication is now current. The referee (Codex, in the background) is checking every count with its own code, and I'll fold its report in when it lands.
+
+[Decision note](https://github.com/jscul/knotlab/blob/main/research/TOY-PHASE-20261127-001/decision.md) · [Design and results](https://github.com/jscul/knotlab/blob/main/research/TOY-PHASE-20261127-001/README.md)
+
+Sources: [Coecke, Edwards and Spekkens, arXiv:1003.5005](https://arxiv.org/abs/1003.5005) · [Spekkens, toy theory, arXiv:quant-ph/0401052](https://arxiv.org/abs/quant-ph/0401052) · [Spekkens, Quasi-quantization, arXiv:1409.5041](https://arxiv.org/abs/1409.5041) · [Gross, arXiv:quant-ph/0602001](https://arxiv.org/abs/quant-ph/0602001)

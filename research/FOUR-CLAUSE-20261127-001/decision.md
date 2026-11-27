@@ -1,5 +1,17 @@
 # How often does ordinary growth make the four-clause step one layer up? What stands
 
+
+> **Referee R1: confirmed with fixes, no Block** ([report](referee-R1/report.md)). The count reproduces: 1 of 408 under the
+> cap. Searching the 211 omitted stages adds two (the second rounds of census starts 2439 and 3777, 14 patterns each):
+> 3 of 426 funded starts (0.70%), 3 of 600 sampled (0.50%). **The explanation (the referee's finding, replayed by the
+> thread, `post/chain_replay.py`):** the three positive stages are exactly those with a chain of eight three-place knots
+> (consecutive knots sharing one distinction, no other pair sharing). A bare chain of eight three-place knots, with no
+> ring and no growth, carries one pattern and three steps with every law needed; a chain of seven carries none; a chain
+> of nine carries six. **Narrowings:** another assignment of the four clauses (one member of the "both" pair used three
+> times) adds four steps on census start 426, round 2; the cap counted distinctions, not bonds; F3 met its threshold on
+> one pattern only; persistence is guaranteed by the projection argument, so selection means "does growth distinguish
+> competing readings". Credit: the four-clause form and its first witness are the earlier referee's.
+
 `FOUR-CLAUSE-20261127-001`. Frozen in commit 59177ac458. Results are in `out/`. Referee pending.
 
 **Answer: rarely, under the census weighting, on the stages read.** 600 held-out census starts were read at rounds 0
@@ -11,7 +23,7 @@ to 2, with the full search on stages of at most 19 distinctions.
 | Starts with a grown stage read (round 1 or 2) | 408 |
 | Stages read: round 0, 1, 2 | 600, 408, 233 |
 | Stages not read, over 19 distinctions: round 1, 2 | 18, 193 |
-| Stages with a four-clause pattern | 1 (census start 5260, round 2) |
+| Originally read stages with the frozen alternating pattern | 1 (census start 5260, round 2) [R1: 3 of 426 funded starts with the omitted stages] |
 | Steps (proper, free in pairs, not read at one lower bond) | 3, the three readings of that one pattern, all with a birth needed |
 
 - **F1 held:** no step at round 0.

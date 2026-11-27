@@ -1,0 +1,5091 @@
+{
+  "growth_source": "research/NAE-LAYER-20261127-001/referee-R1/growth_rule.py",
+  "census_source": "research/FORBID-EDITS-20261126-001/starts.json",
+  "state_encoding": "Distinction i is bit i in the integer assignment labels.",
+  "word_encoding": "Displayed words give values in the stated order from left to right.",
+  "deletion_semantics": "Keep all distinctions, carriers, and remaining laws of the final round fixed.",
+  "census_420": {
+    "census_entry": 420,
+    "round": 2,
+    "knots_by_round": [
+      [
+        [
+          0,
+          1,
+          4
+        ],
+        [
+          0,
+          2,
+          5
+        ],
+        [
+          1,
+          3,
+          6
+        ],
+        [
+          2,
+          3,
+          7,
+          8
+        ]
+      ],
+      [
+        [
+          0,
+          1,
+          4
+        ],
+        [
+          0,
+          2,
+          5
+        ],
+        [
+          1,
+          3,
+          6
+        ],
+        [
+          2,
+          3,
+          7,
+          8
+        ],
+        [
+          4,
+          7,
+          9
+        ],
+        [
+          5,
+          6,
+          10
+        ],
+        [
+          8,
+          11,
+          12
+        ]
+      ],
+      [
+        [
+          0,
+          1,
+          4
+        ],
+        [
+          0,
+          2,
+          5
+        ],
+        [
+          1,
+          3,
+          6
+        ],
+        [
+          2,
+          3,
+          7,
+          8
+        ],
+        [
+          4,
+          7,
+          9
+        ],
+        [
+          5,
+          6,
+          10
+        ],
+        [
+          8,
+          11,
+          12
+        ],
+        [
+          9,
+          11,
+          13
+        ],
+        [
+          10,
+          14,
+          15
+        ],
+        [
+          12,
+          16,
+          17
+        ]
+      ]
+    ],
+    "growth_births_by_round": [
+      [
+        {
+          "knot": 4,
+          "parents": [
+            0,
+            3
+          ],
+          "inputs": [
+            4,
+            7
+          ],
+          "demand": 1,
+          "fresh": [
+            9
+          ]
+        },
+        {
+          "knot": 5,
+          "parents": [
+            1,
+            2
+          ],
+          "inputs": [
+            5,
+            6
+          ],
+          "demand": 0,
+          "fresh": [
+            10
+          ]
+        },
+        {
+          "knot": 6,
+          "parents": [
+            3
+          ],
+          "inputs": [
+            8
+          ],
+          "demand": 1,
+          "fresh": [
+            11,
+            12
+          ]
+        }
+      ],
+      [
+        {
+          "knot": 7,
+          "parents": [
+            4,
+            6
+          ],
+          "inputs": [
+            9,
+            11
+          ],
+          "demand": 1,
+          "fresh": [
+            13
+          ]
+        },
+        {
+          "knot": 8,
+          "parents": [
+            5
+          ],
+          "inputs": [
+            10
+          ],
+          "demand": 0,
+          "fresh": [
+            14,
+            15
+          ]
+        },
+        {
+          "knot": 9,
+          "parents": [
+            6
+          ],
+          "inputs": [
+            12
+          ],
+          "demand": 1,
+          "fresh": [
+            16,
+            17
+          ]
+        }
+      ]
+    ],
+    "distinctions": 18,
+    "allowed_states": 17928,
+    "carriers_in_A0_A1_B0_B1_C0_C1_order": [
+      [
+        3,
+        5,
+        6
+      ],
+      [
+        8,
+        11,
+        13
+      ],
+      [
+        0,
+        4,
+        7
+      ],
+      [
+        10,
+        12
+      ],
+      [
+        9,
+        14,
+        15
+      ],
+      [
+        1,
+        16,
+        17
+      ]
+    ],
+    "forbidden_values_of_six_agreements": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "lower_bond_indices": [
+      [
+        0,
+        2,
+        4
+      ],
+      [
+        0,
+        3,
+        5
+      ],
+      [
+        1,
+        2,
+        5
+      ],
+      [
+        1,
+        3,
+        4
+      ]
+    ],
+    "six_reading_word_counts": {
+      "000000": 4416,
+      "000001": 840,
+      "000010": 840,
+      "000011": 168,
+      "000100": 4424,
+      "000101": 928,
+      "000110": 880,
+      "000111": 176,
+      "001000": 564,
+      "001001": 138,
+      "001010": 144,
+      "001100": 604,
+      "001101": 104,
+      "001110": 104,
+      "001111": 52,
+      "010000": 380,
+      "010001": 76,
+      "010010": 190,
+      "010011": 38,
+      "010100": 666,
+      "010101": 144,
+      "011000": 60,
+      "011010": 30,
+      "011100": 90,
+      "100000": 436,
+      "100001": 218,
+      "100010": 80,
+      "100011": 40,
+      "100100": 636,
+      "100110": 120,
+      "101000": 48,
+      "101001": 24,
+      "101100": 72,
+      "110000": 40,
+      "110001": 20,
+      "110010": 20,
+      "110011": 10,
+      "110100": 90,
+      "111100": 18
+    },
+    "lower_bond_word_counts": [
+      {
+        "000": 11874,
+        "001": 2292,
+        "010": 1560,
+        "011": 330,
+        "100": 1440,
+        "101": 270,
+        "110": 162
+      },
+      {
+        "000": 6624,
+        "001": 1260,
+        "010": 6768,
+        "011": 1404,
+        "100": 624,
+        "101": 312,
+        "110": 936
+      },
+      {
+        "000": 11832,
+        "001": 2370,
+        "010": 1536,
+        "011": 318,
+        "100": 1386,
+        "101": 288,
+        "110": 198
+      },
+      {
+        "000": 6684,
+        "001": 1272,
+        "010": 6768,
+        "011": 1332,
+        "100": 576,
+        "101": 288,
+        "110": 1008
+      }
+    ],
+    "fixes_leaving_both_values_per_lower_reading_at_each_knot": [
+      [
+        6,
+        6,
+        2,
+        6,
+        6,
+        6
+      ],
+      [
+        6,
+        6,
+        6,
+        6,
+        6,
+        6
+      ],
+      [
+        2,
+        6,
+        6,
+        6,
+        6,
+        6
+      ],
+      [
+        14,
+        14,
+        14,
+        14,
+        14,
+        14
+      ],
+      [
+        6,
+        6,
+        2,
+        6,
+        6,
+        6
+      ],
+      [
+        2,
+        6,
+        6,
+        6,
+        6,
+        6
+      ],
+      [
+        6,
+        2,
+        6,
+        6,
+        6,
+        6
+      ],
+      [
+        6,
+        2,
+        6,
+        6,
+        6,
+        6
+      ],
+      [
+        6,
+        6,
+        6,
+        6,
+        2,
+        6
+      ],
+      [
+        6,
+        6,
+        6,
+        6,
+        6,
+        2
+      ]
+    ],
+    "single_change_witnesses_per_lower_carrier_member": [
+      {
+        "3": [
+          5638,
+          5646
+        ],
+        "5": [
+          5638,
+          5670
+        ],
+        "6": [
+          5638,
+          5702
+        ]
+      },
+      {
+        "8": [
+          5638,
+          5894
+        ],
+        "11": [
+          5638,
+          7686
+        ],
+        "13": [
+          5638,
+          13830
+        ]
+      },
+      {
+        "0": [
+          5638,
+          5639
+        ],
+        "4": [
+          5638,
+          5654
+        ],
+        "7": [
+          5638,
+          5766
+        ]
+      },
+      {
+        "10": [
+          21030,
+          22054
+        ],
+        "12": [
+          67331,
+          71427
+        ]
+      },
+      {
+        "9": [
+          7190,
+          7702
+        ],
+        "14": [
+          7190,
+          23574
+        ],
+        "15": [
+          7190,
+          39958
+        ]
+      },
+      {
+        "1": [
+          5641,
+          5643
+        ],
+        "16": [
+          5641,
+          71177
+        ],
+        "17": [
+          5641,
+          136713
+        ]
+      }
+    ],
+    "pairings_with_four_consistently_signed_clauses_on_these_six_carriers": [
+      {
+        "pairs": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            4,
+            5
+          ]
+        ],
+        "parity": 0,
+        "clauses": [
+          [
+            0,
+            2,
+            4
+          ],
+          [
+            0,
+            3,
+            5
+          ],
+          [
+            1,
+            2,
+            5
+          ],
+          [
+            1,
+            3,
+            4
+          ]
+        ],
+        "signed_values_in_carrier_order": [
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1"
+        ]
+      }
+    ],
+    "upper_roles": [
+      {
+        "both_pair": "A",
+        "upper_word_counts": {
+          "000": 5232,
+          "001": 2490,
+          "010": 7164,
+          "011": 2844,
+          "100": 40,
+          "101": 50,
+          "110": 108
+        },
+        "upper_pair_images": {
+          "01": [
+            "00",
+            "01",
+            "10",
+            "11"
+          ],
+          "02": [
+            "00",
+            "01",
+            "10",
+            "11"
+          ],
+          "12": [
+            "00",
+            "01",
+            "10",
+            "11"
+          ]
+        },
+        "fixes_leaving_both_values_per_reading_for_each_of_four_lower_bonds": [
+          [
+            3,
+            4,
+            4
+          ],
+          [
+            3,
+            4,
+            4
+          ],
+          [
+            3,
+            4,
+            4
+          ],
+          [
+            3,
+            4,
+            4
+          ]
+        ],
+        "fixes_leaving_both_values_per_upper_reading_at_each_knot": [
+          [
+            6,
+            6,
+            6
+          ],
+          [
+            6,
+            6,
+            6
+          ],
+          [
+            2,
+            6,
+            6
+          ],
+          [
+            12,
+            14,
+            14
+          ],
+          [
+            6,
+            6,
+            6
+          ],
+          [
+            2,
+            6,
+            6
+          ],
+          [
+            2,
+            6,
+            6
+          ],
+          [
+            2,
+            6,
+            6
+          ],
+          [
+            6,
+            6,
+            6
+          ],
+          [
+            6,
+            6,
+            6
+          ]
+        ],
+        "deterministic_by_any_three_of_six_carrier_readings": [
+          {
+            "carrier_indices": [
+              0,
+              1,
+              2
+            ],
+            "upper_reading_indices": [
+              0
+            ],
+            "this_triple_itself_a_bond": false
+          },
+          {
+            "carrier_indices": [
+              0,
+              1,
+              3
+            ],
+            "upper_reading_indices": [
+              0
+            ],
+            "this_triple_itself_a_bond": false
+          },
+          {
+            "carrier_indices": [
+              0,
+              1,
+              4
+            ],
+            "upper_reading_indices": [
+              0
+            ],
+            "this_triple_itself_a_bond": false
+          },
+          {
+            "carrier_indices": [
+              0,
+              1,
+              5
+            ],
+            "upper_reading_indices": [
+              0
+            ],
+            "this_triple_itself_a_bond": false
+          },
+          {
+            "carrier_indices": [
+              0,
+              2,
+              3
+            ],
+            "upper_reading_indices": [
+              1
+            ],
+            "this_triple_itself_a_bond": false
+          },
+          {
+            "carrier_indices": [
+              0,
+              4,
+              5
+            ],
+            "upper_reading_indices": [
+              2
+            ],
+            "this_triple_itself_a_bond": false
+          },
+          {
+            "carrier_indices": [
+              1,
+              2,
+              3
+            ],
+            "upper_reading_indices": [
+              1
+            ],
+            "this_triple_itself_a_bond": false
+          },
+          {
+            "carrier_indices": [
+              1,
+              4,
+              5
+            ],
+            "upper_reading_indices": [
+              2
+            ],
+            "this_triple_itself_a_bond": false
+          },
+          {
+            "carrier_indices": [
+              2,
+              3,
+              4
+            ],
+            "upper_reading_indices": [
+              1
+            ],
+            "this_triple_itself_a_bond": false
+          },
+          {
+            "carrier_indices": [
+              2,
+              3,
+              5
+            ],
+            "upper_reading_indices": [
+              1
+            ],
+            "this_triple_itself_a_bond": false
+          },
+          {
+            "carrier_indices": [
+              2,
+              4,
+              5
+            ],
+            "upper_reading_indices": [
+              2
+            ],
+            "this_triple_itself_a_bond": false
+          },
+          {
+            "carrier_indices": [
+              3,
+              4,
+              5
+            ],
+            "upper_reading_indices": [
+              2
+            ],
+            "this_triple_itself_a_bond": false
+          }
+        ],
+        "individual_law_deletions": [
+          {
+            "law_index": 0,
+            "knot": [
+              0,
+              1,
+              4
+            ],
+            "round": 0,
+            "allowed_states_after_deletion": 23202,
+            "states_restoring_111": 20,
+            "first_restored_state": 21096,
+            "upper_word_counts_after_deletion": {
+              "000": 6226,
+              "001": 3080,
+              "010": 9656,
+              "011": 3952,
+              "100": 56,
+              "101": 70,
+              "110": 142,
+              "111": 20
+            }
+          },
+          {
+            "law_index": 1,
+            "knot": [
+              0,
+              2,
+              5
+            ],
+            "round": 0,
+            "allowed_states_after_deletion": 23220,
+            "states_restoring_111": 0,
+            "first_restored_state": null,
+            "upper_word_counts_after_deletion": {
+              "000": 6792,
+              "001": 3360,
+              "010": 9200,
+              "011": 3598,
+              "100": 64,
+              "101": 80,
+              "110": 126
+            }
+          },
+          {
+            "law_index": 2,
+            "knot": [
+              1,
+              3,
+              6
+            ],
+            "round": 0,
+            "allowed_states_after_deletion": 23220,
+            "states_restoring_111": 42,
+            "first_restored_state": 5637,
+            "upper_word_counts_after_deletion": {
+              "000": 6926,
+              "001": 3046,
+              "010": 9018,
+              "011": 3798,
+              "100": 112,
+              "101": 86,
+              "110": 192,
+              "111": 42
+            }
+          },
+          {
+            "law_index": 3,
+            "knot": [
+              2,
+              3,
+              7,
+              8
+            ],
+            "round": 0,
+            "allowed_states_after_deletion": 19926,
+            "states_restoring_111": 0,
+            "first_restored_state": null,
+            "upper_word_counts_after_deletion": {
+              "000": 5872,
+              "001": 2840,
+              "010": 7904,
+              "011": 3094,
+              "100": 40,
+              "101": 50,
+              "110": 126
+            }
+          },
+          {
+            "law_index": 4,
+            "knot": [
+              4,
+              7,
+              9
+            ],
+            "round": 1,
+            "allowed_states_after_deletion": 23490,
+            "states_restoring_111": 10,
+            "first_restored_state": 21241,
+            "upper_word_counts_after_deletion": {
+              "000": 6346,
+              "001": 3140,
+              "010": 9732,
+              "011": 4002,
+              "100": 56,
+              "101": 70,
+              "110": 134,
+              "111": 10
+            }
+          },
+          {
+            "law_index": 5,
+            "knot": [
+              5,
+              6,
+              10
+            ],
+            "round": 1,
+            "allowed_states_after_deletion": 23472,
+            "states_restoring_111": 36,
+            "first_restored_state": 5737,
+            "upper_word_counts_after_deletion": {
+              "000": 7002,
+              "001": 3240,
+              "010": 9038,
+              "011": 3796,
+              "100": 100,
+              "101": 80,
+              "110": 180,
+              "111": 36
+            }
+          },
+          {
+            "law_index": 6,
+            "knot": [
+              8,
+              11,
+              12
+            ],
+            "round": 1,
+            "allowed_states_after_deletion": 23760,
+            "states_restoring_111": 36,
+            "first_restored_state": 15638,
+            "upper_word_counts_after_deletion": {
+              "000": 7160,
+              "001": 3190,
+              "010": 9180,
+              "011": 3834,
+              "100": 100,
+              "101": 80,
+              "110": 180,
+              "111": 36
+            }
+          },
+          {
+            "law_index": 7,
+            "knot": [
+              9,
+              11,
+              13
+            ],
+            "round": 2,
+            "allowed_states_after_deletion": 23760,
+            "states_restoring_111": 36,
+            "first_restored_state": 5142,
+            "upper_word_counts_after_deletion": {
+              "000": 7080,
+              "001": 3126,
+              "010": 9228,
+              "011": 3912,
+              "100": 112,
+              "101": 86,
+              "110": 180,
+              "111": 36
+            }
+          },
+          {
+            "law_index": 8,
+            "knot": [
+              10,
+              14,
+              15
+            ],
+            "round": 2,
+            "allowed_states_after_deletion": 23904,
+            "states_restoring_111": 36,
+            "first_restored_state": 54790,
+            "upper_word_counts_after_deletion": {
+              "000": 6342,
+              "001": 3954,
+              "010": 8442,
+              "011": 4902,
+              "100": 60,
+              "101": 60,
+              "110": 108,
+              "111": 36
+            }
+          },
+          {
+            "law_index": 9,
+            "knot": [
+              12,
+              16,
+              17
+            ],
+            "round": 2,
+            "allowed_states_after_deletion": 23904,
+            "states_restoring_111": 36,
+            "first_restored_state": 27000,
+            "upper_word_counts_after_deletion": {
+              "000": 6366,
+              "001": 3930,
+              "010": 8502,
+              "011": 4842,
+              "100": 60,
+              "101": 60,
+              "110": 108,
+              "111": 36
+            }
+          }
+        ],
+        "unique_minimal_law_indices_for_upper_111_exclusion": [
+          0,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "upper_word_counts_with_only_essential_laws": {
+          "000": 7680,
+          "001": 3840,
+          "010": 10400,
+          "011": 4000,
+          "100": 64,
+          "101": 80,
+          "110": 180
+        },
+        "earlier_rounds": [
+          {
+            "round": 0,
+            "distinctions": 9,
+            "knots": 4,
+            "allowed_states": 190,
+            "projection_unchanged": true,
+            "carrier_indices_already_present": [
+              0,
+              2
+            ],
+            "fixed_upper_readings_defined_on_actual_round": false,
+            "upper_counts_after_adding_free_later_distinctions": {
+              "000": 21816,
+              "001": 16968,
+              "010": 30744,
+              "011": 23912,
+              "100": 936,
+              "101": 728,
+              "110": 1224,
+              "111": 952
+            }
+          },
+          {
+            "round": 1,
+            "distinctions": 13,
+            "knots": 7,
+            "allowed_states": 1320,
+            "projection_unchanged": true,
+            "carrier_indices_already_present": [
+              0,
+              2,
+              3
+            ],
+            "fixed_upper_readings_defined_on_actual_round": false,
+            "upper_counts_after_adding_free_later_distinctions": {
+              "000": 10206,
+              "001": 7938,
+              "010": 13140,
+              "011": 10220,
+              "100": 198,
+              "101": 154,
+              "110": 216,
+              "111": 168
+            }
+          }
+        ],
+        "four_clauses_on_independent_lower_readings": [
+          {
+            "omitted_lower_clause_index": null,
+            "lower_words": 41,
+            "upper_words": [
+              "000",
+              "001",
+              "010",
+              "011",
+              "100",
+              "101",
+              "110"
+            ],
+            "lower_words_giving_upper_111": []
+          },
+          {
+            "omitted_lower_clause_index": 0,
+            "lower_words": 45,
+            "upper_words": [
+              "000",
+              "001",
+              "010",
+              "011",
+              "100",
+              "101",
+              "110",
+              "111"
+            ],
+            "lower_words_giving_upper_111": [
+              "111010"
+            ]
+          },
+          {
+            "omitted_lower_clause_index": 1,
+            "lower_words": 45,
+            "upper_words": [
+              "000",
+              "001",
+              "010",
+              "011",
+              "100",
+              "101",
+              "110",
+              "111"
+            ],
+            "lower_words_giving_upper_111": [
+              "110101"
+            ]
+          },
+          {
+            "omitted_lower_clause_index": 2,
+            "lower_words": 45,
+            "upper_words": [
+              "000",
+              "001",
+              "010",
+              "011",
+              "100",
+              "101",
+              "110",
+              "111"
+            ],
+            "lower_words_giving_upper_111": [
+              "111001"
+            ]
+          },
+          {
+            "omitted_lower_clause_index": 3,
+            "lower_words": 45,
+            "upper_words": [
+              "000",
+              "001",
+              "010",
+              "011",
+              "100",
+              "101",
+              "110",
+              "111"
+            ],
+            "lower_words_giving_upper_111": [
+              "110110"
+            ]
+          }
+        ],
+        "canonical_check": [
+          {
+            "variables": [
+              "B",
+              "C",
+              "A"
+            ],
+            "allowed": [
+              "000",
+              "001",
+              "010",
+              "011",
+              "100",
+              "101",
+              "110"
+            ],
+            "binding": true,
+            "loss_on_erasure": true,
+            "coexistence": true,
+            "is_knot": true
+          },
+          {
+            "variables": [
+              "A",
+              "C",
+              "B"
+            ],
+            "allowed": [
+              "000",
+              "001",
+              "010",
+              "011",
+              "100",
+              "101",
+              "110"
+            ],
+            "binding": true,
+            "loss_on_erasure": true,
+            "coexistence": true,
+            "is_knot": true
+          },
+          {
+            "variables": [
+              "A",
+              "B",
+              "C"
+            ],
+            "allowed": [
+              "000",
+              "001",
+              "010",
+              "011",
+              "100",
+              "101",
+              "110"
+            ],
+            "binding": true,
+            "loss_on_erasure": true,
+            "coexistence": true,
+            "is_knot": true
+          }
+        ]
+      },
+      {
+        "both_pair": "B",
+        "upper_word_counts": {
+          "000": 9404,
+          "001": 4114,
+          "010": 604,
+          "011": 260,
+          "100": 2356,
+          "101": 1010,
+          "110": 180
+        },
+        "upper_pair_images": {
+          "01": [
+            "00",
+            "01",
+            "10",
+            "11"
+          ],
+          "02": [
+            "00",
+            "01",
+            "10",
+            "11"
+          ],
+          "12": [
+            "00",
+            "01",
+            "10",
+            "11"
+          ]
+        },
+        "fixes_leaving_both_values_per_reading_for_each_of_four_lower_bonds": [
+          [
+            4,
+            3,
+            4
+          ],
+          [
+            4,
+            3,
+            4
+          ],
+          [
+            4,
+            3,
+            4
+          ],
+          [
+            4,
+            3,
+            4
+          ]
+        ],
+        "fixes_leaving_both_values_per_upper_reading_at_each_knot": [
+          [
+            6,
+            2,
+            6
+          ],
+          [
+            6,
+            6,
+            6
+          ],
+          [
+            6,
+            6,
+            6
+          ],
+          [
+            14,
+            14,
+            14
+          ],
+          [
+            6,
+            2,
+            6
+          ],
+          [
+            6,
+            6,
+            6
+          ],
+          [
+            6,
+            6,
+            6
+          ],
+          [
+            6,
+            6,
+            6
+          ],
+          [
+            6,
+            6,
+            6
+          ],
+          [
+            6,
+            6,
+            6
+          ]
+        ],
+        "deterministic_by_any_three_of_six_carrier_readings": [
+          {
+            "carrier_indices": [
+              0,
+              1,
+              2
+            ],
+            "upper_reading_indices": [
+              0
+            ],
+            "this_triple_itself_a_bond": false
+          },
+          {
+            "carrier_indices": [
+              0,
+              1,
+              3
+            ],
+            "upper_reading_indices": [
+              0
+            ],
+            "this_triple_itself_a_bond": false
+          },
+          {
+            "carrier_indices": [
+              0,
+              1,
+              4
+            ],
+            "upper_reading_indices": [
+              0
+            ],
+            "this_triple_itself_a_bond": false
+          },
+          {
+            "carrier_indices": [
+              0,
+              1,
+              5
+            ],
+            "upper_reading_indices": [
+              0
+            ],
+            "this_triple_itself_a_bond": false
+          },
+          {
+            "carrier_indices": [
+              0,
+              2,
+              3
+            ],
+            "upper_reading_indices": [
+              1
+            ],
+            "this_triple_itself_a_bond": false
+          },
+          {
+            "carrier_indices": [
+              0,
+              4,
+              5
+            ],
+            "upper_reading_indices": [
+              2
+            ],
+            "this_triple_itself_a_bond": false
+          },
+          {
+            "carrier_indices": [
+              1,
+              2,
+              3
+            ],
+            "upper_reading_indices": [
+              1
+            ],
+            "this_triple_itself_a_bond": false
+          },
+          {
+            "carrier_indices": [
+              1,
+              4,
+              5
+            ],
+            "upper_reading_indices": [
+              2
+            ],
+            "this_triple_itself_a_bond": false
+          },
+          {
+            "carrier_indices": [
+              2,
+              3,
+              4
+            ],
+            "upper_reading_indices": [
+              1
+            ],
+            "this_triple_itself_a_bond": false
+          },
+          {
+            "carrier_indices": [
+              2,
+              3,
+              5
+            ],
+            "upper_reading_indices": [
+              1
+            ],
+            "this_triple_itself_a_bond": false
+          },
+          {
+            "carrier_indices": [
+              2,
+              4,
+              5
+            ],
+            "upper_reading_indices": [
+              2
+            ],
+            "this_triple_itself_a_bond": false
+          },
+          {
+            "carrier_indices": [
+              3,
+              4,
+              5
+            ],
+            "upper_reading_indices": [
+              2
+            ],
+            "this_triple_itself_a_bond": false
+          }
+        ],
+        "individual_law_deletions": [
+          {
+            "law_index": 0,
+            "knot": [
+              0,
+              1,
+              4
+            ],
+            "round": 0,
+            "allowed_states_after_deletion": 23202,
+            "states_restoring_111": 78,
+            "first_restored_state": 5644,
+            "upper_word_counts_after_deletion": {
+              "000": 11610,
+              "001": 5112,
+              "010": 1120,
+              "011": 518,
+              "100": 3014,
+              "101": 1414,
+              "110": 336,
+              "111": 78
+            }
+          },
+          {
+            "law_index": 1,
+            "knot": [
+              0,
+              2,
+              5
+            ],
+            "round": 0,
+            "allowed_states_after_deletion": 23220,
+            "states_restoring_111": 0,
+            "first_restored_state": null,
+            "upper_word_counts_after_deletion": {
+              "000": 12072,
+              "001": 5352,
+              "010": 736,
+              "011": 290,
+              "100": 3140,
+              "101": 1396,
+              "110": 234
+            }
+          },
+          {
+            "law_index": 2,
+            "knot": [
+              1,
+              3,
+              6
+            ],
+            "round": 0,
+            "allowed_states_after_deletion": 23220,
+            "states_restoring_111": 80,
+            "first_restored_state": 7313,
+            "upper_word_counts_after_deletion": {
+              "000": 11250,
+              "001": 4896,
+              "010": 708,
+              "011": 300,
+              "100": 4028,
+              "101": 1696,
+              "110": 262,
+              "111": 80
+            }
+          },
+          {
+            "law_index": 3,
+            "knot": [
+              2,
+              3,
+              7,
+              8
+            ],
+            "round": 0,
+            "allowed_states_after_deletion": 19926,
+            "states_restoring_111": 0,
+            "first_restored_state": null,
+            "upper_word_counts_after_deletion": {
+              "000": 10464,
+              "001": 4584,
+              "010": 656,
+              "011": 280,
+              "100": 2624,
+              "101": 1120,
+              "110": 198
+            }
+          },
+          {
+            "law_index": 4,
+            "knot": [
+              4,
+              7,
+              9
+            ],
+            "round": 1,
+            "allowed_states_after_deletion": 23490,
+            "states_restoring_111": 66,
+            "first_restored_state": 5785,
+            "upper_word_counts_after_deletion": {
+              "000": 11806,
+              "001": 5240,
+              "010": 1144,
+              "011": 530,
+              "100": 3006,
+              "101": 1386,
+              "110": 312,
+              "111": 66
+            }
+          },
+          {
+            "law_index": 5,
+            "knot": [
+              5,
+              6,
+              10
+            ],
+            "round": 1,
+            "allowed_states_after_deletion": 23472,
+            "states_restoring_111": 40,
+            "first_restored_state": 7417,
+            "upper_word_counts_after_deletion": {
+              "000": 11526,
+              "001": 5106,
+              "010": 744,
+              "011": 300,
+              "100": 3820,
+              "101": 1706,
+              "110": 230,
+              "111": 40
+            }
+          },
+          {
+            "law_index": 6,
+            "knot": [
+              8,
+              11,
+              12
+            ],
+            "round": 1,
+            "allowed_states_after_deletion": 23760,
+            "states_restoring_111": 50,
+            "first_restored_state": 15769,
+            "upper_word_counts_after_deletion": {
+              "000": 11738,
+              "001": 5128,
+              "010": 752,
+              "011": 310,
+              "100": 3892,
+              "101": 1652,
+              "110": 238,
+              "111": 50
+            }
+          },
+          {
+            "law_index": 7,
+            "knot": [
+              9,
+              11,
+              13
+            ],
+            "round": 2,
+            "allowed_states_after_deletion": 23760,
+            "states_restoring_111": 70,
+            "first_restored_state": 5273,
+            "upper_word_counts_after_deletion": {
+              "000": 11634,
+              "001": 5052,
+              "010": 734,
+              "011": 310,
+              "100": 3978,
+              "101": 1728,
+              "110": 254,
+              "111": 70
+            }
+          },
+          {
+            "law_index": 8,
+            "knot": [
+              10,
+              14,
+              15
+            ],
+            "round": 2,
+            "allowed_states_after_deletion": 23904,
+            "states_restoring_111": 60,
+            "first_restored_state": 54790,
+            "upper_word_counts_after_deletion": {
+              "000": 11268,
+              "001": 6756,
+              "010": 708,
+              "011": 444,
+              "100": 2796,
+              "101": 1692,
+              "110": 180,
+              "111": 60
+            }
+          },
+          {
+            "law_index": 9,
+            "knot": [
+              12,
+              16,
+              17
+            ],
+            "round": 2,
+            "allowed_states_after_deletion": 23904,
+            "states_restoring_111": 60,
+            "first_restored_state": 18681,
+            "upper_word_counts_after_deletion": {
+              "000": 11310,
+              "001": 6714,
+              "010": 708,
+              "011": 444,
+              "100": 2838,
+              "101": 1650,
+              "110": 180,
+              "111": 60
+            }
+          }
+        ],
+        "unique_minimal_law_indices_for_upper_111_exclusion": [
+          0,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "upper_word_counts_with_only_essential_laws": {
+          "000": 13568,
+          "001": 6016,
+          "010": 832,
+          "011": 320,
+          "100": 3600,
+          "101": 1584,
+          "110": 324
+        },
+        "earlier_rounds": [
+          {
+            "round": 0,
+            "distinctions": 9,
+            "knots": 4,
+            "allowed_states": 190,
+            "projection_unchanged": true,
+            "carrier_indices_already_present": [
+              0,
+              2
+            ],
+            "fixed_upper_readings_defined_on_actual_round": false,
+            "upper_counts_after_adding_free_later_distinctions": {
+              "000": 31536,
+              "001": 24528,
+              "010": 3024,
+              "011": 2352,
+              "100": 18576,
+              "101": 14448,
+              "110": 1584,
+              "111": 1232
+            }
+          },
+          {
+            "round": 1,
+            "distinctions": 13,
+            "knots": 7,
+            "allowed_states": 1320,
+            "projection_unchanged": true,
+            "carrier_indices_already_present": [
+              0,
+              2,
+              3
+            ],
+            "fixed_upper_readings_defined_on_actual_round": false,
+            "upper_counts_after_adding_free_later_distinctions": {
+              "000": 16686,
+              "001": 12978,
+              "010": 1044,
+              "011": 812,
+              "100": 5706,
+              "101": 4438,
+              "110": 324,
+              "111": 252
+            }
+          }
+        ],
+        "four_clauses_on_independent_lower_readings": [
+          {
+            "omitted_lower_clause_index": null,
+            "lower_words": 41,
+            "upper_words": [
+              "000",
+              "001",
+              "010",
+              "011",
+              "100",
+              "101",
+              "110"
+            ],
+            "lower_words_giving_upper_111": []
+          },
+          {
+            "omitted_lower_clause_index": 0,
+            "lower_words": 45,
+            "upper_words": [
+              "000",
+              "001",
+              "010",
+              "011",
+              "100",
+              "101",
+              "110",
+              "111"
+            ],
+            "lower_words_giving_upper_111": [
+              "101110"
+            ]
+          },
+          {
+            "omitted_lower_clause_index": 1,
+            "lower_words": 45,
+            "upper_words": [
+              "000",
+              "001",
+              "010",
+              "011",
+              "100",
+              "101",
+              "110",
+              "111"
+            ],
+            "lower_words_giving_upper_111": [
+              "101101"
+            ]
+          },
+          {
+            "omitted_lower_clause_index": 2,
+            "lower_words": 45,
+            "upper_words": [
+              "000",
+              "001",
+              "010",
+              "011",
+              "100",
+              "101",
+              "110",
+              "111"
+            ],
+            "lower_words_giving_upper_111": [
+              "011101"
+            ]
+          },
+          {
+            "omitted_lower_clause_index": 3,
+            "lower_words": 45,
+            "upper_words": [
+              "000",
+              "001",
+              "010",
+              "011",
+              "100",
+              "101",
+              "110",
+              "111"
+            ],
+            "lower_words_giving_upper_111": [
+              "011110"
+            ]
+          }
+        ],
+        "canonical_check": [
+          {
+            "variables": [
+              "B",
+              "C",
+              "A"
+            ],
+            "allowed": [
+              "000",
+              "001",
+              "010",
+              "011",
+              "100",
+              "101",
+              "110"
+            ],
+            "binding": true,
+            "loss_on_erasure": true,
+            "coexistence": true,
+            "is_knot": true
+          },
+          {
+            "variables": [
+              "A",
+              "C",
+              "B"
+            ],
+            "allowed": [
+              "000",
+              "001",
+              "010",
+              "011",
+              "100",
+              "101",
+              "110"
+            ],
+            "binding": true,
+            "loss_on_erasure": true,
+            "coexistence": true,
+            "is_knot": true
+          },
+          {
+            "variables": [
+              "A",
+              "B",
+              "C"
+            ],
+            "allowed": [
+              "000",
+              "001",
+              "010",
+              "011",
+              "100",
+              "101",
+              "110"
+            ],
+            "binding": true,
+            "loss_on_erasure": true,
+            "coexistence": true,
+            "is_knot": true
+          }
+        ]
+      },
+      {
+        "both_pair": "C",
+        "upper_word_counts": {
+          "000": 6096,
+          "001": 168,
+          "010": 7890,
+          "011": 228,
+          "100": 1460,
+          "101": 88,
+          "110": 1998
+        },
+        "upper_pair_images": {
+          "01": [
+            "00",
+            "01",
+            "10",
+            "11"
+          ],
+          "02": [
+            "00",
+            "01",
+            "10",
+            "11"
+          ],
+          "12": [
+            "00",
+            "01",
+            "10",
+            "11"
+          ]
+        },
+        "fixes_leaving_both_values_per_reading_for_each_of_four_lower_bonds": [
+          [
+            4,
+            4,
+            3
+          ],
+          [
+            4,
+            4,
+            3
+          ],
+          [
+            4,
+            4,
+            3
+          ],
+          [
+            4,
+            4,
+            3
+          ]
+        ],
+        "fixes_leaving_both_values_per_upper_reading_at_each_knot": [
+          [
+            6,
+            6,
+            6
+          ],
+          [
+            6,
+            6,
+            6
+          ],
+          [
+            6,
+            6,
+            6
+          ],
+          [
+            14,
+            14,
+            14
+          ],
+          [
+            6,
+            6,
+            6
+          ],
+          [
+            6,
+            6,
+            6
+          ],
+          [
+            6,
+            6,
+            6
+          ],
+          [
+            6,
+            6,
+            6
+          ],
+          [
+            6,
+            6,
+            2
+          ],
+          [
+            6,
+            6,
+            2
+          ]
+        ],
+        "deterministic_by_any_three_of_six_carrier_readings": [
+          {
+            "carrier_indices": [
+              0,
+              1,
+              2
+            ],
+            "upper_reading_indices": [
+              0
+            ],
+            "this_triple_itself_a_bond": false
+          },
+          {
+            "carrier_indices": [
+              0,
+              1,
+              3
+            ],
+            "upper_reading_indices": [
+              0
+            ],
+            "this_triple_itself_a_bond": false
+          },
+          {
+            "carrier_indices": [
+              0,
+              1,
+              4
+            ],
+            "upper_reading_indices": [
+              0
+            ],
+            "this_triple_itself_a_bond": false
+          },
+          {
+            "carrier_indices": [
+              0,
+              1,
+              5
+            ],
+            "upper_reading_indices": [
+              0
+            ],
+            "this_triple_itself_a_bond": false
+          },
+          {
+            "carrier_indices": [
+              0,
+              2,
+              3
+            ],
+            "upper_reading_indices": [
+              1
+            ],
+            "this_triple_itself_a_bond": false
+          },
+          {
+            "carrier_indices": [
+              0,
+              4,
+              5
+            ],
+            "upper_reading_indices": [
+              2
+            ],
+            "this_triple_itself_a_bond": false
+          },
+          {
+            "carrier_indices": [
+              1,
+              2,
+              3
+            ],
+            "upper_reading_indices": [
+              1
+            ],
+            "this_triple_itself_a_bond": false
+          },
+          {
+            "carrier_indices": [
+              1,
+              4,
+              5
+            ],
+            "upper_reading_indices": [
+              2
+            ],
+            "this_triple_itself_a_bond": false
+          },
+          {
+            "carrier_indices": [
+              2,
+              3,
+              4
+            ],
+            "upper_reading_indices": [
+              1
+            ],
+            "this_triple_itself_a_bond": false
+          },
+          {
+            "carrier_indices": [
+              2,
+              3,
+              5
+            ],
+            "upper_reading_indices": [
+              1
+            ],
+            "this_triple_itself_a_bond": false
+          },
+          {
+            "carrier_indices": [
+              2,
+              4,
+              5
+            ],
+            "upper_reading_indices": [
+              2
+            ],
+            "this_triple_itself_a_bond": false
+          },
+          {
+            "carrier_indices": [
+              3,
+              4,
+              5
+            ],
+            "upper_reading_indices": [
+              2
+            ],
+            "this_triple_itself_a_bond": false
+          }
+        ],
+        "individual_law_deletions": [
+          {
+            "law_index": 0,
+            "knot": [
+              0,
+              1,
+              4
+            ],
+            "round": 0,
+            "allowed_states_after_deletion": 23202,
+            "states_restoring_111": 30,
+            "first_restored_state": 53800,
+            "upper_word_counts_after_deletion": {
+              "000": 7262,
+              "001": 208,
+              "010": 10584,
+              "011": 306,
+              "100": 1846,
+              "101": 116,
+              "110": 2850,
+              "111": 30
+            }
+          },
+          {
+            "law_index": 1,
+            "knot": [
+              0,
+              2,
+              5
+            ],
+            "round": 0,
+            "allowed_states_after_deletion": 23220,
+            "states_restoring_111": 0,
+            "first_restored_state": null,
+            "upper_word_counts_after_deletion": {
+              "000": 7912,
+              "001": 224,
+              "010": 10024,
+              "011": 290,
+              "100": 2032,
+              "101": 128,
+              "110": 2610
+            }
+          },
+          {
+            "law_index": 2,
+            "knot": [
+              1,
+              3,
+              6
+            ],
+            "round": 0,
+            "allowed_states_after_deletion": 23220,
+            "states_restoring_111": 58,
+            "first_restored_state": 7188,
+            "upper_word_counts_after_deletion": {
+              "000": 7310,
+              "001": 196,
+              "010": 9376,
+              "011": 272,
+              "100": 2572,
+              "101": 92,
+              "110": 3344,
+              "111": 58
+            }
+          },
+          {
+            "law_index": 3,
+            "knot": [
+              2,
+              3,
+              7,
+              8
+            ],
+            "round": 0,
+            "allowed_states_after_deletion": 19926,
+            "states_restoring_111": 0,
+            "first_restored_state": null,
+            "upper_word_counts_after_deletion": {
+              "000": 6864,
+              "001": 192,
+              "010": 8680,
+              "011": 248,
+              "100": 1648,
+              "101": 98,
+              "110": 2196
+            }
+          },
+          {
+            "law_index": 4,
+            "knot": [
+              4,
+              7,
+              9
+            ],
+            "round": 1,
+            "allowed_states_after_deletion": 23490,
+            "states_restoring_111": 22,
+            "first_restored_state": 53945,
+            "upper_word_counts_after_deletion": {
+              "000": 7406,
+              "001": 208,
+              "010": 10784,
+              "011": 322,
+              "100": 1882,
+              "101": 116,
+              "110": 2750,
+              "111": 22
+            }
+          },
+          {
+            "law_index": 5,
+            "knot": [
+              5,
+              6,
+              10
+            ],
+            "round": 1,
+            "allowed_states_after_deletion": 23472,
+            "states_restoring_111": 54,
+            "first_restored_state": 7288,
+            "upper_word_counts_after_deletion": {
+              "000": 7574,
+              "001": 220,
+              "010": 9610,
+              "011": 272,
+              "100": 2526,
+              "101": 102,
+              "110": 3114,
+              "111": 54
+            }
+          },
+          {
+            "law_index": 6,
+            "knot": [
+              8,
+              11,
+              12
+            ],
+            "round": 1,
+            "allowed_states_after_deletion": 23760,
+            "states_restoring_111": 48,
+            "first_restored_state": 15641,
+            "upper_word_counts_after_deletion": {
+              "000": 7688,
+              "001": 214,
+              "010": 9750,
+              "011": 276,
+              "100": 2530,
+              "101": 98,
+              "110": 3156,
+              "111": 48
+            }
+          },
+          {
+            "law_index": 7,
+            "knot": [
+              9,
+              11,
+              13
+            ],
+            "round": 2,
+            "allowed_states_after_deletion": 23760,
+            "states_restoring_111": 60,
+            "first_restored_state": 5145,
+            "upper_word_counts_after_deletion": {
+              "000": 7552,
+              "001": 206,
+              "010": 9696,
+              "011": 276,
+              "100": 2548,
+              "101": 98,
+              "110": 3324,
+              "111": 60
+            }
+          },
+          {
+            "law_index": 8,
+            "knot": [
+              10,
+              14,
+              15
+            ],
+            "round": 2,
+            "allowed_states_after_deletion": 23904,
+            "states_restoring_111": 56,
+            "first_restored_state": 6393,
+            "upper_word_counts_after_deletion": {
+              "000": 8016,
+              "001": 336,
+              "010": 10358,
+              "011": 466,
+              "100": 1930,
+              "101": 134,
+              "110": 2608,
+              "111": 56
+            }
+          },
+          {
+            "law_index": 9,
+            "knot": [
+              12,
+              16,
+              17
+            ],
+            "round": 2,
+            "allowed_states_after_deletion": 23904,
+            "states_restoring_111": 50,
+            "first_restored_state": 11673,
+            "upper_word_counts_after_deletion": {
+              "000": 8016,
+              "001": 336,
+              "010": 10372,
+              "011": 452,
+              "100": 1938,
+              "101": 126,
+              "110": 2614,
+              "111": 50
+            }
+          }
+        ],
+        "unique_minimal_law_indices_for_upper_111_exclusion": [
+          0,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "upper_word_counts_with_only_essential_laws": {
+          "000": 8960,
+          "001": 256,
+          "010": 11200,
+          "011": 320,
+          "100": 2304,
+          "101": 144,
+          "110": 3060
+        },
+        "earlier_rounds": [
+          {
+            "round": 0,
+            "distinctions": 9,
+            "knots": 4,
+            "allowed_states": 190,
+            "projection_unchanged": true,
+            "carrier_indices_already_present": [
+              0,
+              2
+            ],
+            "fixed_upper_readings_defined_on_actual_round": false,
+            "upper_counts_after_adding_free_later_distinctions": {
+              "000": 23760,
+              "001": 1584,
+              "010": 33840,
+              "011": 2256,
+              "100": 14160,
+              "101": 944,
+              "110": 19440,
+              "111": 1296
+            }
+          },
+          {
+            "round": 1,
+            "distinctions": 13,
+            "knots": 7,
+            "allowed_states": 1320,
+            "projection_unchanged": true,
+            "carrier_indices_already_present": [
+              0,
+              2,
+              3
+            ],
+            "fixed_upper_readings_defined_on_actual_round": false,
+            "upper_counts_after_adding_free_later_distinctions": {
+              "000": 12930,
+              "001": 862,
+              "010": 16620,
+              "011": 1108,
+              "100": 4410,
+              "101": 294,
+              "110": 5640,
+              "111": 376
+            }
+          }
+        ],
+        "four_clauses_on_independent_lower_readings": [
+          {
+            "omitted_lower_clause_index": null,
+            "lower_words": 41,
+            "upper_words": [
+              "000",
+              "001",
+              "010",
+              "011",
+              "100",
+              "101",
+              "110"
+            ],
+            "lower_words_giving_upper_111": []
+          },
+          {
+            "omitted_lower_clause_index": 0,
+            "lower_words": 45,
+            "upper_words": [
+              "000",
+              "001",
+              "010",
+              "011",
+              "100",
+              "101",
+              "110",
+              "111"
+            ],
+            "lower_words_giving_upper_111": [
+              "101011"
+            ]
+          },
+          {
+            "omitted_lower_clause_index": 1,
+            "lower_words": 45,
+            "upper_words": [
+              "000",
+              "001",
+              "010",
+              "011",
+              "100",
+              "101",
+              "110",
+              "111"
+            ],
+            "lower_words_giving_upper_111": [
+              "100111"
+            ]
+          },
+          {
+            "omitted_lower_clause_index": 2,
+            "lower_words": 45,
+            "upper_words": [
+              "000",
+              "001",
+              "010",
+              "011",
+              "100",
+              "101",
+              "110",
+              "111"
+            ],
+            "lower_words_giving_upper_111": [
+              "011011"
+            ]
+          },
+          {
+            "omitted_lower_clause_index": 3,
+            "lower_words": 45,
+            "upper_words": [
+              "000",
+              "001",
+              "010",
+              "011",
+              "100",
+              "101",
+              "110",
+              "111"
+            ],
+            "lower_words_giving_upper_111": [
+              "010111"
+            ]
+          }
+        ],
+        "canonical_check": [
+          {
+            "variables": [
+              "B",
+              "C",
+              "A"
+            ],
+            "allowed": [
+              "000",
+              "001",
+              "010",
+              "011",
+              "100",
+              "101",
+              "110"
+            ],
+            "binding": true,
+            "loss_on_erasure": true,
+            "coexistence": true,
+            "is_knot": true
+          },
+          {
+            "variables": [
+              "A",
+              "C",
+              "B"
+            ],
+            "allowed": [
+              "000",
+              "001",
+              "010",
+              "011",
+              "100",
+              "101",
+              "110"
+            ],
+            "binding": true,
+            "loss_on_erasure": true,
+            "coexistence": true,
+            "is_knot": true
+          },
+          {
+            "variables": [
+              "A",
+              "B",
+              "C"
+            ],
+            "allowed": [
+              "000",
+              "001",
+              "010",
+              "011",
+              "100",
+              "101",
+              "110"
+            ],
+            "binding": true,
+            "loss_on_erasure": true,
+            "coexistence": true,
+            "is_knot": true
+          }
+        ]
+      }
+    ]
+  },
+  "census_5260": {
+    "census_entry": 5260,
+    "round": 2,
+    "knots_by_round": [
+      [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          8,
+          9
+        ],
+        [
+          0,
+          5,
+          6
+        ],
+        [
+          1,
+          5,
+          7
+        ],
+        [
+          2,
+          6,
+          10
+        ],
+        [
+          3,
+          4,
+          7
+        ]
+      ],
+      [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          8,
+          9
+        ],
+        [
+          0,
+          5,
+          6
+        ],
+        [
+          1,
+          5,
+          7
+        ],
+        [
+          2,
+          6,
+          10
+        ],
+        [
+          3,
+          4,
+          7
+        ],
+        [
+          8,
+          10,
+          11
+        ],
+        [
+          9,
+          12,
+          13
+        ]
+      ],
+      [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          8,
+          9
+        ],
+        [
+          0,
+          5,
+          6
+        ],
+        [
+          1,
+          5,
+          7
+        ],
+        [
+          2,
+          6,
+          10
+        ],
+        [
+          3,
+          4,
+          7
+        ],
+        [
+          8,
+          10,
+          11
+        ],
+        [
+          9,
+          12,
+          13
+        ],
+        [
+          11,
+          12,
+          14
+        ],
+        [
+          13,
+          15,
+          16
+        ]
+      ]
+    ],
+    "growth_births_by_round": [
+      [
+        {
+          "knot": 5,
+          "parents": [
+            0,
+            3
+          ],
+          "inputs": [
+            8,
+            10
+          ],
+          "demand": 1,
+          "fresh": [
+            11
+          ]
+        },
+        {
+          "knot": 6,
+          "parents": [
+            0
+          ],
+          "inputs": [
+            9
+          ],
+          "demand": 1,
+          "fresh": [
+            12,
+            13
+          ]
+        }
+      ],
+      [
+        {
+          "knot": 7,
+          "parents": [
+            5,
+            6
+          ],
+          "inputs": [
+            11,
+            12
+          ],
+          "demand": 1,
+          "fresh": [
+            14
+          ]
+        },
+        {
+          "knot": 8,
+          "parents": [
+            6
+          ],
+          "inputs": [
+            13
+          ],
+          "demand": 1,
+          "fresh": [
+            15,
+            16
+          ]
+        }
+      ]
+    ],
+    "distinctions": 17,
+    "allowed_states": 12912,
+    "carriers_in_A0_A1_B0_B1_C0_C1_order": [
+      [
+        2,
+        8,
+        10
+      ],
+      [
+        7,
+        13
+      ],
+      [
+        0,
+        1,
+        5
+      ],
+      [
+        9,
+        12,
+        14
+      ],
+      [
+        3,
+        4,
+        11
+      ],
+      [
+        6,
+        15,
+        16
+      ]
+    ],
+    "forbidden_values_of_six_agreements": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "lower_bond_indices": [
+      [
+        0,
+        2,
+        4
+      ],
+      [
+        0,
+        3,
+        5
+      ],
+      [
+        1,
+        2,
+        5
+      ],
+      [
+        1,
+        3,
+        4
+      ]
+    ],
+    "six_reading_word_counts": {
+      "000000": 3190,
+      "000001": 638,
+      "000010": 620,
+      "000011": 124,
+      "000100": 320,
+      "000101": 64,
+      "000110": 160,
+      "000111": 32,
+      "001000": 316,
+      "001001": 158,
+      "001010": 56,
+      "001011": 28,
+      "001100": 32,
+      "001101": 16,
+      "001110": 16,
+      "001111": 8,
+      "010000": 3180,
+      "010001": 636,
+      "010010": 610,
+      "010011": 122,
+      "010100": 470,
+      "010101": 94,
+      "011000": 468,
+      "011010": 78,
+      "011100": 66,
+      "100000": 380,
+      "100001": 94,
+      "100010": 96,
+      "100100": 48,
+      "100110": 24,
+      "101000": 44,
+      "101001": 22,
+      "110000": 404,
+      "110001": 64,
+      "110010": 64,
+      "110011": 32,
+      "110100": 66,
+      "111000": 60,
+      "111100": 12
+    },
+    "lower_bond_word_counts": [
+      {
+        "000": 8592,
+        "001": 1668,
+        "010": 1056,
+        "011": 186,
+        "100": 1056,
+        "101": 216,
+        "110": 138
+      },
+      {
+        "000": 8518,
+        "001": 1706,
+        "010": 1064,
+        "011": 214,
+        "100": 1048,
+        "101": 212,
+        "110": 150
+      },
+      {
+        "000": 4838,
+        "001": 952,
+        "010": 464,
+        "011": 232,
+        "100": 4794,
+        "101": 948,
+        "110": 684
+      },
+      {
+        "000": 4842,
+        "001": 924,
+        "010": 480,
+        "011": 240,
+        "100": 4812,
+        "101": 906,
+        "110": 708
+      }
+    ],
+    "fixes_leaving_both_values_per_lower_reading_at_each_knot": [
+      [
+        58,
+        126,
+        46,
+        124,
+        58,
+        126
+      ],
+      [
+        6,
+        6,
+        2,
+        6,
+        6,
+        6
+      ],
+      [
+        6,
+        6,
+        2,
+        6,
+        6,
+        6
+      ],
+      [
+        2,
+        6,
+        6,
+        6,
+        6,
+        6
+      ],
+      [
+        6,
+        6,
+        6,
+        6,
+        2,
+        6
+      ],
+      [
+        2,
+        6,
+        6,
+        6,
+        6,
+        6
+      ],
+      [
+        6,
+        6,
+        6,
+        2,
+        6,
+        6
+      ],
+      [
+        6,
+        6,
+        6,
+        2,
+        6,
+        6
+      ],
+      [
+        6,
+        6,
+        6,
+        6,
+        6,
+        2
+      ]
+    ],
+    "single_change_witnesses_per_lower_carrier_member": [
+      {
+        "2": [
+          10314,
+          10318
+        ],
+        "8": [
+          10314,
+          10570
+        ],
+        "10": [
+          10314,
+          11338
+        ]
+      },
+      {
+        "7": [
+          10255,
+          10383
+        ],
+        "13": [
+          35343,
+          43535
+        ]
+      },
+      {
+        "0": [
+          10286,
+          10287
+        ],
+        "1": [
+          10285,
+          10287
+        ],
+        "5": [
+          10255,
+          10287
+        ]
+      },
+      {
+        "9": [
+          10255,
+          10767
+        ],
+        "12": [
+          10255,
+          14351
+        ],
+        "14": [
+          10255,
+          26639
+        ]
+      },
+      {
+        "3": [
+          10263,
+          10271
+        ],
+        "4": [
+          10255,
+          10271
+        ],
+        "11": [
+          12575,
+          14623
+        ]
+      },
+      {
+        "6": [
+          10255,
+          10319
+        ],
+        "15": [
+          10255,
+          43023
+        ],
+        "16": [
+          10255,
+          75791
+        ]
+      }
+    ],
+    "pairings_with_four_consistently_signed_clauses_on_these_six_carriers": [
+      {
+        "pairs": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            4,
+            5
+          ]
+        ],
+        "parity": 0,
+        "clauses": [
+          [
+            0,
+            2,
+            4
+          ],
+          [
+            0,
+            3,
+            5
+          ],
+          [
+            1,
+            2,
+            5
+          ],
+          [
+            1,
+            3,
+            4
+          ]
+        ],
+        "signed_values_in_carrier_order": [
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1"
+        ]
+      }
+    ],
+    "upper_roles": [
+      {
+        "both_pair": "A",
+        "upper_word_counts": {
+          "000": 6750,
+          "001": 2940,
+          "010": 1764,
+          "011": 756,
+          "100": 404,
+          "101": 160,
+          "110": 138
+        },
+        "upper_pair_images": {
+          "01": [
+            "00",
+            "01",
+            "10",
+            "11"
+          ],
+          "02": [
+            "00",
+            "01",
+            "10",
+            "11"
+          ],
+          "12": [
+            "00",
+            "01",
+            "10",
+            "11"
+          ]
+        },
+        "fixes_leaving_both_values_per_reading_for_each_of_four_lower_bonds": [
+          [
+            3,
+            4,
+            4
+          ],
+          [
+            3,
+            4,
+            4
+          ],
+          [
+            3,
+            4,
+            4
+          ],
+          [
+            3,
+            4,
+            4
+          ]
+        ],
+        "fixes_leaving_both_values_per_upper_reading_at_each_knot": [
+          [
+            58,
+            124,
+            126
+          ],
+          [
+            6,
+            6,
+            6
+          ],
+          [
+            6,
+            6,
+            6
+          ],
+          [
+            2,
+            6,
+            6
+          ],
+          [
+            6,
+            6,
+            6
+          ],
+          [
+            2,
+            6,
+            6
+          ],
+          [
+            6,
+            6,
+            6
+          ],
+          [
+            6,
+            6,
+            6
+          ],
+          [
+            6,
+            6,
+            6
+          ]
+        ],
+        "deterministic_by_any_three_of_six_carrier_readings": [
+          {
+            "carrier_indices": [
+              0,
+              1,
+              2
+            ],
+            "upper_reading_indices": [
+              0
+            ],
+            "this_triple_itself_a_bond": false
+          },
+          {
+            "carrier_indices": [
+              0,
+              1,
+              3
+            ],
+            "upper_reading_indices": [
+              0
+            ],
+            "this_triple_itself_a_bond": false
+          },
+          {
+            "carrier_indices": [
+              0,
+              1,
+              4
+            ],
+            "upper_reading_indices": [
+              0
+            ],
+            "this_triple_itself_a_bond": false
+          },
+          {
+            "carrier_indices": [
+              0,
+              1,
+              5
+            ],
+            "upper_reading_indices": [
+              0
+            ],
+            "this_triple_itself_a_bond": false
+          },
+          {
+            "carrier_indices": [
+              0,
+              2,
+              3
+            ],
+            "upper_reading_indices": [
+              1
+            ],
+            "this_triple_itself_a_bond": false
+          },
+          {
+            "carrier_indices": [
+              0,
+              4,
+              5
+            ],
+            "upper_reading_indices": [
+              2
+            ],
+            "this_triple_itself_a_bond": false
+          },
+          {
+            "carrier_indices": [
+              1,
+              2,
+              3
+            ],
+            "upper_reading_indices": [
+              1
+            ],
+            "this_triple_itself_a_bond": false
+          },
+          {
+            "carrier_indices": [
+              1,
+              4,
+              5
+            ],
+            "upper_reading_indices": [
+              2
+            ],
+            "this_triple_itself_a_bond": false
+          },
+          {
+            "carrier_indices": [
+              2,
+              3,
+              4
+            ],
+            "upper_reading_indices": [
+              1
+            ],
+            "this_triple_itself_a_bond": false
+          },
+          {
+            "carrier_indices": [
+              2,
+              3,
+              5
+            ],
+            "upper_reading_indices": [
+              1
+            ],
+            "this_triple_itself_a_bond": false
+          },
+          {
+            "carrier_indices": [
+              2,
+              4,
+              5
+            ],
+            "upper_reading_indices": [
+              2
+            ],
+            "this_triple_itself_a_bond": false
+          },
+          {
+            "carrier_indices": [
+              3,
+              4,
+              5
+            ],
+            "upper_reading_indices": [
+              2
+            ],
+            "this_triple_itself_a_bond": false
+          }
+        ],
+        "individual_law_deletions": [
+          {
+            "law_index": 0,
+            "knot": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              8,
+              9
+            ],
+            "round": 0,
+            "allowed_states_after_deletion": 13122,
+            "states_restoring_111": 0,
+            "first_restored_state": null,
+            "upper_word_counts_after_deletion": {
+              "000": 6784,
+              "001": 3008,
+              "010": 1800,
+              "011": 792,
+              "100": 416,
+              "101": 160,
+              "110": 162
+            }
+          },
+          {
+            "law_index": 1,
+            "knot": [
+              0,
+              5,
+              6
+            ],
+            "round": 0,
+            "allowed_states_after_deletion": 17232,
+            "states_restoring_111": 40,
+            "first_restored_state": 13700,
+            "upper_word_counts_after_deletion": {
+              "000": 8446,
+              "001": 3692,
+              "010": 2914,
+              "011": 1244,
+              "100": 508,
+              "101": 200,
+              "110": 188,
+              "111": 40
+            }
+          },
+          {
+            "law_index": 2,
+            "knot": [
+              1,
+              5,
+              7
+            ],
+            "round": 0,
+            "allowed_states_after_deletion": 17286,
+            "states_restoring_111": 40,
+            "first_restored_state": 13735,
+            "upper_word_counts_after_deletion": {
+              "000": 8446,
+              "001": 3692,
+              "010": 2932,
+              "011": 1280,
+              "100": 508,
+              "101": 200,
+              "110": 188,
+              "111": 40
+            }
+          },
+          {
+            "law_index": 3,
+            "knot": [
+              2,
+              6,
+              10
+            ],
+            "round": 0,
+            "allowed_states_after_deletion": 17262,
+            "states_restoring_111": 46,
+            "first_restored_state": 10369,
+            "upper_word_counts_after_deletion": {
+              "000": 8760,
+              "001": 3804,
+              "010": 2262,
+              "011": 1032,
+              "100": 780,
+              "101": 348,
+              "110": 230,
+              "111": 46
+            }
+          },
+          {
+            "law_index": 4,
+            "knot": [
+              3,
+              4,
+              7
+            ],
+            "round": 0,
+            "allowed_states_after_deletion": 17154,
+            "states_restoring_111": 54,
+            "first_restored_state": 10456,
+            "upper_word_counts_after_deletion": {
+              "000": 8084,
+              "001": 4762,
+              "010": 2108,
+              "011": 1258,
+              "100": 464,
+              "101": 286,
+              "110": 138,
+              "111": 54
+            }
+          },
+          {
+            "law_index": 5,
+            "knot": [
+              8,
+              10,
+              11
+            ],
+            "round": 1,
+            "allowed_states_after_deletion": 17226,
+            "states_restoring_111": 30,
+            "first_restored_state": 11653,
+            "upper_word_counts_after_deletion": {
+              "000": 8766,
+              "001": 3792,
+              "010": 2262,
+              "011": 1020,
+              "100": 788,
+              "101": 334,
+              "110": 234,
+              "111": 30
+            }
+          },
+          {
+            "law_index": 6,
+            "knot": [
+              9,
+              12,
+              13
+            ],
+            "round": 1,
+            "allowed_states_after_deletion": 17208,
+            "states_restoring_111": 40,
+            "first_restored_state": 30597,
+            "upper_word_counts_after_deletion": {
+              "000": 8432,
+              "001": 3676,
+              "010": 2902,
+              "011": 1262,
+              "100": 508,
+              "101": 200,
+              "110": 188,
+              "111": 40
+            }
+          },
+          {
+            "law_index": 7,
+            "knot": [
+              11,
+              12,
+              14
+            ],
+            "round": 2,
+            "allowed_states_after_deletion": 17208,
+            "states_restoring_111": 40,
+            "first_restored_state": 9605,
+            "upper_word_counts_after_deletion": {
+              "000": 8422,
+              "001": 3686,
+              "010": 2918,
+              "011": 1258,
+              "100": 502,
+              "101": 200,
+              "110": 182,
+              "111": 40
+            }
+          },
+          {
+            "law_index": 8,
+            "knot": [
+              13,
+              15,
+              16
+            ],
+            "round": 2,
+            "allowed_states_after_deletion": 17216,
+            "states_restoring_111": 46,
+            "first_restored_state": 5423,
+            "upper_word_counts_after_deletion": {
+              "000": 8118,
+              "001": 4802,
+              "010": 2118,
+              "011": 1242,
+              "100": 468,
+              "101": 284,
+              "110": 138,
+              "111": 46
+            }
+          }
+        ],
+        "unique_minimal_law_indices_for_upper_111_exclusion": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "upper_word_counts_with_only_essential_laws": {
+          "000": 6784,
+          "001": 3008,
+          "010": 1800,
+          "011": 792,
+          "100": 416,
+          "101": 160,
+          "110": 162
+        },
+        "earlier_rounds": [
+          {
+            "round": 0,
+            "distinctions": 11,
+            "knots": 5,
+            "allowed_states": 638,
+            "projection_unchanged": true,
+            "carrier_indices_already_present": [
+              0,
+              2
+            ],
+            "fixed_upper_readings_defined_on_actual_round": false,
+            "upper_counts_after_adding_free_later_distinctions": {
+              "000": 15750,
+              "001": 9354,
+              "010": 7818,
+              "011": 4582,
+              "100": 1422,
+              "101": 834,
+              "110": 690,
+              "111": 382
+            }
+          },
+          {
+            "round": 1,
+            "distinctions": 14,
+            "knots": 7,
+            "allowed_states": 2868,
+            "projection_unchanged": true,
+            "carrier_indices_already_present": [
+              0,
+              1,
+              2,
+              4
+            ],
+            "fixed_upper_readings_defined_on_actual_round": false,
+            "upper_counts_after_adding_free_later_distinctions": {
+              "000": 10128,
+              "001": 6016,
+              "010": 3528,
+              "011": 2040,
+              "100": 582,
+              "101": 354,
+              "110": 198,
+              "111": 98
+            }
+          }
+        ],
+        "four_clauses_on_independent_lower_readings": [
+          {
+            "omitted_lower_clause_index": null,
+            "lower_words": 41,
+            "upper_words": [
+              "000",
+              "001",
+              "010",
+              "011",
+              "100",
+              "101",
+              "110"
+            ],
+            "lower_words_giving_upper_111": []
+          },
+          {
+            "omitted_lower_clause_index": 0,
+            "lower_words": 45,
+            "upper_words": [
+              "000",
+              "001",
+              "010",
+              "011",
+              "100",
+              "101",
+              "110",
+              "111"
+            ],
+            "lower_words_giving_upper_111": [
+              "111010"
+            ]
+          },
+          {
+            "omitted_lower_clause_index": 1,
+            "lower_words": 45,
+            "upper_words": [
+              "000",
+              "001",
+              "010",
+              "011",
+              "100",
+              "101",
+              "110",
+              "111"
+            ],
+            "lower_words_giving_upper_111": [
+              "110101"
+            ]
+          },
+          {
+            "omitted_lower_clause_index": 2,
+            "lower_words": 45,
+            "upper_words": [
+              "000",
+              "001",
+              "010",
+              "011",
+              "100",
+              "101",
+              "110",
+              "111"
+            ],
+            "lower_words_giving_upper_111": [
+              "111001"
+            ]
+          },
+          {
+            "omitted_lower_clause_index": 3,
+            "lower_words": 45,
+            "upper_words": [
+              "000",
+              "001",
+              "010",
+              "011",
+              "100",
+              "101",
+              "110",
+              "111"
+            ],
+            "lower_words_giving_upper_111": [
+              "110110"
+            ]
+          }
+        ],
+        "canonical_check": [
+          {
+            "variables": [
+              "B",
+              "C",
+              "A"
+            ],
+            "allowed": [
+              "000",
+              "001",
+              "010",
+              "011",
+              "100",
+              "101",
+              "110"
+            ],
+            "binding": true,
+            "loss_on_erasure": true,
+            "coexistence": true,
+            "is_knot": true
+          },
+          {
+            "variables": [
+              "A",
+              "C",
+              "B"
+            ],
+            "allowed": [
+              "000",
+              "001",
+              "010",
+              "011",
+              "100",
+              "101",
+              "110"
+            ],
+            "binding": true,
+            "loss_on_erasure": true,
+            "coexistence": true,
+            "is_knot": true
+          },
+          {
+            "variables": [
+              "A",
+              "B",
+              "C"
+            ],
+            "allowed": [
+              "000",
+              "001",
+              "010",
+              "011",
+              "100",
+              "101",
+              "110"
+            ],
+            "binding": true,
+            "loss_on_erasure": true,
+            "coexistence": true,
+            "is_knot": true
+          }
+        ]
+      },
+      {
+        "both_pair": "B",
+        "upper_word_counts": {
+          "000": 3826,
+          "001": 1880,
+          "010": 32,
+          "011": 40,
+          "100": 5120,
+          "101": 1936,
+          "110": 78
+        },
+        "upper_pair_images": {
+          "01": [
+            "00",
+            "01",
+            "10",
+            "11"
+          ],
+          "02": [
+            "00",
+            "01",
+            "10",
+            "11"
+          ],
+          "12": [
+            "00",
+            "01",
+            "10",
+            "11"
+          ]
+        },
+        "fixes_leaving_both_values_per_reading_for_each_of_four_lower_bonds": [
+          [
+            4,
+            3,
+            4
+          ],
+          [
+            4,
+            3,
+            4
+          ],
+          [
+            4,
+            3,
+            4
+          ],
+          [
+            4,
+            3,
+            4
+          ]
+        ],
+        "fixes_leaving_both_values_per_upper_reading_at_each_knot": [
+          [
+            126,
+            40,
+            126
+          ],
+          [
+            6,
+            2,
+            6
+          ],
+          [
+            6,
+            2,
+            6
+          ],
+          [
+            6,
+            6,
+            6
+          ],
+          [
+            6,
+            6,
+            6
+          ],
+          [
+            6,
+            6,
+            6
+          ],
+          [
+            6,
+            2,
+            6
+          ],
+          [
+            6,
+            2,
+            6
+          ],
+          [
+            6,
+            6,
+            6
+          ]
+        ],
+        "deterministic_by_any_three_of_six_carrier_readings": [
+          {
+            "carrier_indices": [
+              0,
+              1,
+              2
+            ],
+            "upper_reading_indices": [
+              0
+            ],
+            "this_triple_itself_a_bond": false
+          },
+          {
+            "carrier_indices": [
+              0,
+              1,
+              3
+            ],
+            "upper_reading_indices": [
+              0
+            ],
+            "this_triple_itself_a_bond": false
+          },
+          {
+            "carrier_indices": [
+              0,
+              1,
+              4
+            ],
+            "upper_reading_indices": [
+              0
+            ],
+            "this_triple_itself_a_bond": false
+          },
+          {
+            "carrier_indices": [
+              0,
+              1,
+              5
+            ],
+            "upper_reading_indices": [
+              0
+            ],
+            "this_triple_itself_a_bond": false
+          },
+          {
+            "carrier_indices": [
+              0,
+              2,
+              3
+            ],
+            "upper_reading_indices": [
+              1
+            ],
+            "this_triple_itself_a_bond": false
+          },
+          {
+            "carrier_indices": [
+              0,
+              4,
+              5
+            ],
+            "upper_reading_indices": [
+              2
+            ],
+            "this_triple_itself_a_bond": false
+          },
+          {
+            "carrier_indices": [
+              1,
+              2,
+              3
+            ],
+            "upper_reading_indices": [
+              1
+            ],
+            "this_triple_itself_a_bond": false
+          },
+          {
+            "carrier_indices": [
+              1,
+              4,
+              5
+            ],
+            "upper_reading_indices": [
+              2
+            ],
+            "this_triple_itself_a_bond": false
+          },
+          {
+            "carrier_indices": [
+              2,
+              3,
+              4
+            ],
+            "upper_reading_indices": [
+              1
+            ],
+            "this_triple_itself_a_bond": false
+          },
+          {
+            "carrier_indices": [
+              2,
+              3,
+              5
+            ],
+            "upper_reading_indices": [
+              1
+            ],
+            "this_triple_itself_a_bond": false
+          },
+          {
+            "carrier_indices": [
+              2,
+              4,
+              5
+            ],
+            "upper_reading_indices": [
+              2
+            ],
+            "this_triple_itself_a_bond": false
+          },
+          {
+            "carrier_indices": [
+              3,
+              4,
+              5
+            ],
+            "upper_reading_indices": [
+              2
+            ],
+            "this_triple_itself_a_bond": false
+          }
+        ],
+        "individual_law_deletions": [
+          {
+            "law_index": 0,
+            "knot": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              8,
+              9
+            ],
+            "round": 0,
+            "allowed_states_after_deletion": 13122,
+            "states_restoring_111": 0,
+            "first_restored_state": null,
+            "upper_word_counts_after_deletion": {
+              "000": 3840,
+              "001": 1920,
+              "010": 32,
+              "011": 40,
+              "100": 5200,
+              "101": 2000,
+              "110": 90
+            }
+          },
+          {
+            "law_index": 1,
+            "knot": [
+              0,
+              5,
+              6
+            ],
+            "round": 0,
+            "allowed_states_after_deletion": 17232,
+            "states_restoring_111": 28,
+            "first_restored_state": 10363,
+            "upper_word_counts_after_deletion": {
+              "000": 5180,
+              "001": 2380,
+              "010": 80,
+              "011": 64,
+              "100": 6662,
+              "101": 2704,
+              "110": 134,
+              "111": 28
+            }
+          },
+          {
+            "law_index": 2,
+            "knot": [
+              1,
+              5,
+              7
+            ],
+            "round": 0,
+            "allowed_states_after_deletion": 17286,
+            "states_restoring_111": 30,
+            "first_restored_state": 10328,
+            "upper_word_counts_after_deletion": {
+              "000": 5186,
+              "001": 2392,
+              "010": 80,
+              "011": 64,
+              "100": 6670,
+              "101": 2726,
+              "110": 138,
+              "111": 30
+            }
+          },
+          {
+            "law_index": 3,
+            "knot": [
+              2,
+              6,
+              10
+            ],
+            "round": 0,
+            "allowed_states_after_deletion": 17262,
+            "states_restoring_111": 10,
+            "first_restored_state": 10283,
+            "upper_word_counts_after_deletion": {
+              "000": 4786,
+              "001": 2360,
+              "010": 40,
+              "011": 50,
+              "100": 7102,
+              "101": 2810,
+              "110": 104,
+              "111": 10
+            }
+          },
+          {
+            "law_index": 4,
+            "knot": [
+              3,
+              4,
+              7
+            ],
+            "round": 0,
+            "allowed_states_after_deletion": 17154,
+            "states_restoring_111": 30,
+            "first_restored_state": 10456,
+            "upper_word_counts_after_deletion": {
+              "000": 4660,
+              "001": 2894,
+              "010": 48,
+              "011": 48,
+              "100": 6008,
+              "101": 3388,
+              "110": 78,
+              "111": 30
+            }
+          },
+          {
+            "law_index": 5,
+            "knot": [
+              8,
+              10,
+              11
+            ],
+            "round": 1,
+            "allowed_states_after_deletion": 17226,
+            "states_restoring_111": 10,
+            "first_restored_state": 11567,
+            "upper_word_counts_after_deletion": {
+              "000": 4786,
+              "001": 2360,
+              "010": 40,
+              "011": 50,
+              "100": 7120,
+              "101": 2756,
+              "110": 104,
+              "111": 10
+            }
+          },
+          {
+            "law_index": 6,
+            "knot": [
+              9,
+              12,
+              13
+            ],
+            "round": 1,
+            "allowed_states_after_deletion": 17208,
+            "states_restoring_111": 28,
+            "first_restored_state": 29632,
+            "upper_word_counts_after_deletion": {
+              "000": 5162,
+              "001": 2368,
+              "010": 76,
+              "011": 62,
+              "100": 6658,
+              "101": 2720,
+              "110": 134,
+              "111": 28
+            }
+          },
+          {
+            "law_index": 7,
+            "knot": [
+              11,
+              12,
+              14
+            ],
+            "round": 2,
+            "allowed_states_after_deletion": 17208,
+            "states_restoring_111": 24,
+            "first_restored_state": 8640,
+            "upper_word_counts_after_deletion": {
+              "000": 5172,
+              "001": 2388,
+              "010": 80,
+              "011": 64,
+              "100": 6634,
+              "101": 2708,
+              "110": 138,
+              "111": 24
+            }
+          },
+          {
+            "law_index": 8,
+            "knot": [
+              13,
+              15,
+              16
+            ],
+            "round": 2,
+            "allowed_states_after_deletion": 17216,
+            "states_restoring_111": 26,
+            "first_restored_state": 21295,
+            "upper_word_counts_after_deletion": {
+              "000": 4686,
+              "001": 2922,
+              "010": 48,
+              "011": 48,
+              "100": 6030,
+              "101": 3378,
+              "110": 78,
+              "111": 26
+            }
+          }
+        ],
+        "unique_minimal_law_indices_for_upper_111_exclusion": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "upper_word_counts_with_only_essential_laws": {
+          "000": 3840,
+          "001": 1920,
+          "010": 32,
+          "011": 40,
+          "100": 5200,
+          "101": 2000,
+          "110": 90
+        },
+        "earlier_rounds": [
+          {
+            "round": 0,
+            "distinctions": 11,
+            "knots": 5,
+            "allowed_states": 638,
+            "projection_unchanged": true,
+            "carrier_indices_already_present": [
+              0,
+              2
+            ],
+            "fixed_upper_readings_defined_on_actual_round": false,
+            "upper_counts_after_adding_free_later_distinctions": {
+              "000": 10434,
+              "001": 6190,
+              "010": 294,
+              "011": 170,
+              "100": 14550,
+              "101": 8570,
+              "110": 402,
+              "111": 222
+            }
+          },
+          {
+            "round": 1,
+            "distinctions": 14,
+            "knots": 7,
+            "allowed_states": 2868,
+            "projection_unchanged": true,
+            "carrier_indices_already_present": [
+              0,
+              1,
+              2,
+              4
+            ],
+            "fixed_upper_readings_defined_on_actual_round": false,
+            "upper_counts_after_adding_free_later_distinctions": {
+              "000": 6324,
+              "001": 3756,
+              "010": 120,
+              "011": 72,
+              "100": 7848,
+              "101": 4608,
+              "110": 144,
+              "111": 72
+            }
+          }
+        ],
+        "four_clauses_on_independent_lower_readings": [
+          {
+            "omitted_lower_clause_index": null,
+            "lower_words": 41,
+            "upper_words": [
+              "000",
+              "001",
+              "010",
+              "011",
+              "100",
+              "101",
+              "110"
+            ],
+            "lower_words_giving_upper_111": []
+          },
+          {
+            "omitted_lower_clause_index": 0,
+            "lower_words": 45,
+            "upper_words": [
+              "000",
+              "001",
+              "010",
+              "011",
+              "100",
+              "101",
+              "110",
+              "111"
+            ],
+            "lower_words_giving_upper_111": [
+              "101110"
+            ]
+          },
+          {
+            "omitted_lower_clause_index": 1,
+            "lower_words": 45,
+            "upper_words": [
+              "000",
+              "001",
+              "010",
+              "011",
+              "100",
+              "101",
+              "110",
+              "111"
+            ],
+            "lower_words_giving_upper_111": [
+              "101101"
+            ]
+          },
+          {
+            "omitted_lower_clause_index": 2,
+            "lower_words": 45,
+            "upper_words": [
+              "000",
+              "001",
+              "010",
+              "011",
+              "100",
+              "101",
+              "110",
+              "111"
+            ],
+            "lower_words_giving_upper_111": [
+              "011101"
+            ]
+          },
+          {
+            "omitted_lower_clause_index": 3,
+            "lower_words": 45,
+            "upper_words": [
+              "000",
+              "001",
+              "010",
+              "011",
+              "100",
+              "101",
+              "110",
+              "111"
+            ],
+            "lower_words_giving_upper_111": [
+              "011110"
+            ]
+          }
+        ],
+        "canonical_check": [
+          {
+            "variables": [
+              "B",
+              "C",
+              "A"
+            ],
+            "allowed": [
+              "000",
+              "001",
+              "010",
+              "011",
+              "100",
+              "101",
+              "110"
+            ],
+            "binding": true,
+            "loss_on_erasure": true,
+            "coexistence": true,
+            "is_knot": true
+          },
+          {
+            "variables": [
+              "A",
+              "C",
+              "B"
+            ],
+            "allowed": [
+              "000",
+              "001",
+              "010",
+              "011",
+              "100",
+              "101",
+              "110"
+            ],
+            "binding": true,
+            "loss_on_erasure": true,
+            "coexistence": true,
+            "is_knot": true
+          },
+          {
+            "variables": [
+              "A",
+              "B",
+              "C"
+            ],
+            "allowed": [
+              "000",
+              "001",
+              "010",
+              "011",
+              "100",
+              "101",
+              "110"
+            ],
+            "binding": true,
+            "loss_on_erasure": true,
+            "coexistence": true,
+            "is_knot": true
+          }
+        ]
+      },
+      {
+        "both_pair": "C",
+        "upper_word_counts": {
+          "000": 4448,
+          "001": 124,
+          "010": 1138,
+          "011": 68,
+          "100": 5528,
+          "101": 154,
+          "110": 1452
+        },
+        "upper_pair_images": {
+          "01": [
+            "00",
+            "01",
+            "10",
+            "11"
+          ],
+          "02": [
+            "00",
+            "01",
+            "10",
+            "11"
+          ],
+          "12": [
+            "00",
+            "01",
+            "10",
+            "11"
+          ]
+        },
+        "fixes_leaving_both_values_per_reading_for_each_of_four_lower_bonds": [
+          [
+            4,
+            4,
+            3
+          ],
+          [
+            4,
+            4,
+            3
+          ],
+          [
+            4,
+            4,
+            3
+          ],
+          [
+            4,
+            4,
+            3
+          ]
+        ],
+        "fixes_leaving_both_values_per_upper_reading_at_each_knot": [
+          [
+            126,
+            124,
+            58
+          ],
+          [
+            6,
+            6,
+            6
+          ],
+          [
+            6,
+            6,
+            6
+          ],
+          [
+            6,
+            6,
+            6
+          ],
+          [
+            6,
+            6,
+            2
+          ],
+          [
+            6,
+            6,
+            6
+          ],
+          [
+            6,
+            6,
+            6
+          ],
+          [
+            6,
+            6,
+            6
+          ],
+          [
+            6,
+            6,
+            2
+          ]
+        ],
+        "deterministic_by_any_three_of_six_carrier_readings": [
+          {
+            "carrier_indices": [
+              0,
+              1,
+              2
+            ],
+            "upper_reading_indices": [
+              0
+            ],
+            "this_triple_itself_a_bond": false
+          },
+          {
+            "carrier_indices": [
+              0,
+              1,
+              3
+            ],
+            "upper_reading_indices": [
+              0
+            ],
+            "this_triple_itself_a_bond": false
+          },
+          {
+            "carrier_indices": [
+              0,
+              1,
+              4
+            ],
+            "upper_reading_indices": [
+              0
+            ],
+            "this_triple_itself_a_bond": false
+          },
+          {
+            "carrier_indices": [
+              0,
+              1,
+              5
+            ],
+            "upper_reading_indices": [
+              0
+            ],
+            "this_triple_itself_a_bond": false
+          },
+          {
+            "carrier_indices": [
+              0,
+              2,
+              3
+            ],
+            "upper_reading_indices": [
+              1
+            ],
+            "this_triple_itself_a_bond": false
+          },
+          {
+            "carrier_indices": [
+              0,
+              4,
+              5
+            ],
+            "upper_reading_indices": [
+              2
+            ],
+            "this_triple_itself_a_bond": false
+          },
+          {
+            "carrier_indices": [
+              1,
+              2,
+              3
+            ],
+            "upper_reading_indices": [
+              1
+            ],
+            "this_triple_itself_a_bond": false
+          },
+          {
+            "carrier_indices": [
+              1,
+              4,
+              5
+            ],
+            "upper_reading_indices": [
+              2
+            ],
+            "this_triple_itself_a_bond": false
+          },
+          {
+            "carrier_indices": [
+              2,
+              3,
+              4
+            ],
+            "upper_reading_indices": [
+              1
+            ],
+            "this_triple_itself_a_bond": false
+          },
+          {
+            "carrier_indices": [
+              2,
+              3,
+              5
+            ],
+            "upper_reading_indices": [
+              1
+            ],
+            "this_triple_itself_a_bond": false
+          },
+          {
+            "carrier_indices": [
+              2,
+              4,
+              5
+            ],
+            "upper_reading_indices": [
+              2
+            ],
+            "this_triple_itself_a_bond": false
+          },
+          {
+            "carrier_indices": [
+              3,
+              4,
+              5
+            ],
+            "upper_reading_indices": [
+              2
+            ],
+            "this_triple_itself_a_bond": false
+          }
+        ],
+        "individual_law_deletions": [
+          {
+            "law_index": 0,
+            "knot": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              8,
+              9
+            ],
+            "round": 0,
+            "allowed_states_after_deletion": 13122,
+            "states_restoring_111": 0,
+            "first_restored_state": null,
+            "upper_word_counts_after_deletion": {
+              "000": 4480,
+              "001": 128,
+              "010": 1152,
+              "011": 72,
+              "100": 5600,
+              "101": 160,
+              "110": 1530
+            }
+          },
+          {
+            "law_index": 1,
+            "knot": [
+              0,
+              5,
+              6
+            ],
+            "round": 0,
+            "allowed_states_after_deletion": 17232,
+            "states_restoring_111": 34,
+            "first_restored_state": 12676,
+            "upper_word_counts_after_deletion": {
+              "000": 5568,
+              "001": 156,
+              "010": 1904,
+              "011": 76,
+              "100": 6928,
+              "101": 194,
+              "110": 2372,
+              "111": 34
+            }
+          },
+          {
+            "law_index": 2,
+            "knot": [
+              1,
+              5,
+              7
+            ],
+            "round": 0,
+            "allowed_states_after_deletion": 17286,
+            "states_restoring_111": 40,
+            "first_restored_state": 12711,
+            "upper_word_counts_after_deletion": {
+              "000": 5568,
+              "001": 156,
+              "010": 1922,
+              "011": 76,
+              "100": 6928,
+              "101": 194,
+              "110": 2402,
+              "111": 40
+            }
+          },
+          {
+            "law_index": 3,
+            "knot": [
+              2,
+              6,
+              10
+            ],
+            "round": 0,
+            "allowed_states_after_deletion": 17262,
+            "states_restoring_111": 18,
+            "first_restored_state": 10267,
+            "upper_word_counts_after_deletion": {
+              "000": 5568,
+              "001": 156,
+              "010": 1426,
+              "011": 86,
+              "100": 7750,
+              "101": 218,
+              "110": 2040,
+              "111": 18
+            }
+          },
+          {
+            "law_index": 4,
+            "knot": [
+              3,
+              4,
+              7
+            ],
+            "round": 0,
+            "allowed_states_after_deletion": 17154,
+            "states_restoring_111": 40,
+            "first_restored_state": 10397,
+            "upper_word_counts_after_deletion": {
+              "000": 5802,
+              "001": 246,
+              "010": 1502,
+              "011": 100,
+              "100": 7238,
+              "101": 310,
+              "110": 1916,
+              "111": 40
+            }
+          },
+          {
+            "law_index": 5,
+            "knot": [
+              8,
+              10,
+              11
+            ],
+            "round": 1,
+            "allowed_states_after_deletion": 17226,
+            "states_restoring_111": 14,
+            "first_restored_state": 11551,
+            "upper_word_counts_after_deletion": {
+              "000": 5568,
+              "001": 156,
+              "010": 1426,
+              "011": 86,
+              "100": 7742,
+              "101": 214,
+              "110": 2020,
+              "111": 14
+            }
+          },
+          {
+            "law_index": 6,
+            "knot": [
+              9,
+              12,
+              13
+            ],
+            "round": 1,
+            "allowed_states_after_deletion": 17208,
+            "states_restoring_111": 40,
+            "first_restored_state": 29573,
+            "upper_word_counts_after_deletion": {
+              "000": 5546,
+              "001": 154,
+              "010": 1894,
+              "011": 74,
+              "100": 6922,
+              "101": 194,
+              "110": 2384,
+              "111": 40
+            }
+          },
+          {
+            "law_index": 7,
+            "knot": [
+              11,
+              12,
+              14
+            ],
+            "round": 2,
+            "allowed_states_after_deletion": 17208,
+            "states_restoring_111": 38,
+            "first_restored_state": 8581,
+            "upper_word_counts_after_deletion": {
+              "000": 5556,
+              "001": 156,
+              "010": 1916,
+              "011": 76,
+              "100": 6904,
+              "101": 194,
+              "110": 2368,
+              "111": 38
+            }
+          },
+          {
+            "law_index": 8,
+            "knot": [
+              13,
+              15,
+              16
+            ],
+            "round": 2,
+            "allowed_states_after_deletion": 17216,
+            "states_restoring_111": 34,
+            "first_restored_state": 2623,
+            "upper_word_counts_after_deletion": {
+              "000": 5848,
+              "001": 248,
+              "010": 1508,
+              "011": 100,
+              "100": 7268,
+              "101": 308,
+              "110": 1902,
+              "111": 34
+            }
+          }
+        ],
+        "unique_minimal_law_indices_for_upper_111_exclusion": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "upper_word_counts_with_only_essential_laws": {
+          "000": 4480,
+          "001": 128,
+          "010": 1152,
+          "011": 72,
+          "100": 5600,
+          "101": 160,
+          "110": 1530
+        },
+        "earlier_rounds": [
+          {
+            "round": 0,
+            "distinctions": 11,
+            "knots": 5,
+            "allowed_states": 638,
+            "projection_unchanged": true,
+            "carrier_indices_already_present": [
+              0,
+              2
+            ],
+            "fixed_upper_readings_defined_on_actual_round": false,
+            "upper_counts_after_adding_free_later_distinctions": {
+              "000": 10956,
+              "001": 468,
+              "010": 5436,
+              "011": 228,
+              "100": 15288,
+              "101": 648,
+              "110": 7504,
+              "111": 304
+            }
+          },
+          {
+            "round": 1,
+            "distinctions": 14,
+            "knots": 7,
+            "allowed_states": 2868,
+            "projection_unchanged": true,
+            "carrier_indices_already_present": [
+              0,
+              1,
+              2,
+              4
+            ],
+            "fixed_upper_readings_defined_on_actual_round": false,
+            "upper_counts_after_adding_free_later_distinctions": {
+              "000": 7304,
+              "001": 312,
+              "010": 2548,
+              "011": 108,
+              "100": 9076,
+              "101": 388,
+              "110": 3092,
+              "111": 116
+            }
+          }
+        ],
+        "four_clauses_on_independent_lower_readings": [
+          {
+            "omitted_lower_clause_index": null,
+            "lower_words": 41,
+            "upper_words": [
+              "000",
+              "001",
+              "010",
+              "011",
+              "100",
+              "101",
+              "110"
+            ],
+            "lower_words_giving_upper_111": []
+          },
+          {
+            "omitted_lower_clause_index": 0,
+            "lower_words": 45,
+            "upper_words": [
+              "000",
+              "001",
+              "010",
+              "011",
+              "100",
+              "101",
+              "110",
+              "111"
+            ],
+            "lower_words_giving_upper_111": [
+              "101011"
+            ]
+          },
+          {
+            "omitted_lower_clause_index": 1,
+            "lower_words": 45,
+            "upper_words": [
+              "000",
+              "001",
+              "010",
+              "011",
+              "100",
+              "101",
+              "110",
+              "111"
+            ],
+            "lower_words_giving_upper_111": [
+              "100111"
+            ]
+          },
+          {
+            "omitted_lower_clause_index": 2,
+            "lower_words": 45,
+            "upper_words": [
+              "000",
+              "001",
+              "010",
+              "011",
+              "100",
+              "101",
+              "110",
+              "111"
+            ],
+            "lower_words_giving_upper_111": [
+              "011011"
+            ]
+          },
+          {
+            "omitted_lower_clause_index": 3,
+            "lower_words": 45,
+            "upper_words": [
+              "000",
+              "001",
+              "010",
+              "011",
+              "100",
+              "101",
+              "110",
+              "111"
+            ],
+            "lower_words_giving_upper_111": [
+              "010111"
+            ]
+          }
+        ],
+        "canonical_check": [
+          {
+            "variables": [
+              "B",
+              "C",
+              "A"
+            ],
+            "allowed": [
+              "000",
+              "001",
+              "010",
+              "011",
+              "100",
+              "101",
+              "110"
+            ],
+            "binding": true,
+            "loss_on_erasure": true,
+            "coexistence": true,
+            "is_knot": true
+          },
+          {
+            "variables": [
+              "A",
+              "C",
+              "B"
+            ],
+            "allowed": [
+              "000",
+              "001",
+              "010",
+              "011",
+              "100",
+              "101",
+              "110"
+            ],
+            "binding": true,
+            "loss_on_erasure": true,
+            "coexistence": true,
+            "is_knot": true
+          },
+          {
+            "variables": [
+              "A",
+              "B",
+              "C"
+            ],
+            "allowed": [
+              "000",
+              "001",
+              "010",
+              "011",
+              "100",
+              "101",
+              "110"
+            ],
+            "binding": true,
+            "loss_on_erasure": true,
+            "coexistence": true,
+            "is_knot": true
+          }
+        ]
+      }
+    ]
+  }
+}

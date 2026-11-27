@@ -1,0 +1,60 @@
+# Independent referee report on four clauses binding six agreements
+
+**Confirmed with fixes**. **No Block on the frozen count.**
+
+The alternating form occurs on **1 of 408** starts under the original cutoff and **3 of 426** funded starts after searching all 211 omitted stages. A different four-clause assignment uncovers a step on a stage the study did read, bringing the broader count under the cutoff to **2 of 408**. [Counts by weighting](audit_counts.json)
+
+## What holds
+
+| Claim | Independent count |
+| --- | --- |
+| Sample and freeze | The seed reproduces all 600 entries across 12 files from an eligible pool of 6,065. Zero overlap with the previous 1,000 starts or either saved pilot. The three entries in the smaller pilot were eligible but undrawn. All three frozen file hashes match. [Record audit](record_counts.json) |
+| Coverage and lower bonds | All 1,452 stage records agree. The 600, 408 and 233 stages read at rounds zero, one and two gave 43,486, 598,187 and 1,046,096 lower bonds respectively. Among 426 funded starts, 175 had both read and omitted grown stages, and 18 had only omitted grown stages. [Recount by round](read_counts.json) |
+| F1, no starting step | **0/600.** Of 322 starts with 12 distinctions, 201 had at least four lower bonds. **Zero** starting bonds used three two-place carriers, a necessary condition for fitting six disjoint carriers into 12 distinctions. [Opportunity counts](read_counts.json) |
+| F2, at least 5% of starts with a grown stage read | **Failed.** It needed at least 21 positive starts among 408 and found one. The independent search tried both alternating choices for each signed pairing, all three choices of “both”, and applied no pattern cap. The maximum was one pattern on any originally read stage. [Stage tables](read_stages_0.json) |
+| F3, seven upper words on at least 90% of steps | **3/3 readings of one pattern** on the original stages. Upper 111 is impossible by construction. On an abstract control, 38 lower words pass all four lower-bond and upper-step tests yet give six upper words for one choice of “both”. [Control](record_counts.json) |
+| The reported witness | The second round of five-knot census entry 5260 has nine knots, 17 distinctions and 12,912 allowed states. They realize 39 of the 41 lower words permitted by the clauses. All three upper images are 000 through 110 and pass the canonical knot test. None of the six upper functions is determined at any of 18,567 stage bonds. Earlier four-knot census entry 420 reproduces four patterns and twelve qualifying readings. [Witness replay](witness_checks.json) · [All-bond check](locality_all_counts.json) · [Earlier control](read_pilot.json) |
+
+At census entry 5260, removing the seven-place starting law restores **zero** assignments with upper 111 for every role. Removing the four birth laws one at a time restores **30, 40, 40, 46** assignments with “both” on A, **10, 28, 24, 26** on B, and **14, 40, 38, 34** on C. The four births and four remaining starting laws are individually necessary and jointly sufficient. Deletions keep the final carriers fixed. [All nine law deletions](witness_notes.md)
+
+**The omitted stages.** The frozen form occurs on **0/18** omitted first rounds and **2/193** omitted second rounds, or **2/211 (0.948%)** weighting each omitted stage once. The two positives are the second rounds of five-knot census entries 2439 and 3777. Each has 23 distinctions, 14 patterns and 42 qualifying readings. All 84 have seven upper words and need six of seven births. Direct enumeration of all 8,388,608 assignments on each stage independently recovered every pattern, role and single-law deletion verdict. Both starts were already in the 408. Complete coverage gives 3/408 on that roster, **3/426 (0.704%)** across funded starts and **3/600 (0.500%)** across sampled starts. [Omitted-stage counts](omitted_summary.json) · [Direct enumeration](direct_crosscheck.json)
+
+**What explains the 29 patterns.** Across all 1,452 stages, exactly three contain a chain of eight three-place source laws in which consecutive knots share one distinction and all other pairs share none. They are exactly the three positive stages. The original positive has one such chain. Each larger positive has two. On each chain the same six agreements, up to renaming, give the exclusion with those eight laws alone. Each larger chain gives seven patterns by using the two-place carrier as it stands or adding any one of the six distinctions outside that chain. A bare chain of seven knots gives zero patterns, and a bare chain of eight gives one. The earlier closed ten-knot positive has only 15 distinctions and supplies a counterexample to a universal chain requirement. [Chain counts and reductions](common_source.json) · [Earlier closed witness](../../UPPER-GROWN-20261127-001/referee-R1/upper_four_closed.json)
+
+## The fixes
+
+1. **Narrowing — which four clauses count.** In the decision table, change “Stages with a four-clause pattern” to “Originally read stages with the frozen alternating pattern”. Add “Allowing one member of the ‘both’ pair to occur three times adds four steps on the second round of four-knot census entry 426. Each needs a birth.” All four use six disjoint carriers. On each, all nine source-law deletions restore 111 individually, including all five births. None of the stage’s 22,990 lower bonds determines an upper reading. Across 1,241 read stages the broader class gives **seven readings on two starts**. Assigning the “both” member by just one of the other indices adds zero. Allowing inconsistent signs adds zero on the 150 candidate six-carrier sets. The four clauses themselves must exclude upper 111. A further 101 choices used only five carriers. The earlier positive control supplied 44 qualifying three-to-one assignments. [Decision](../decision.md) · [Broader count](alternative_full.json) · [Four witnesses](alternative_witnesses.json) · [Coverage argument and controls](alternative_notes.md)
+2. **Narrowing — coverage and prediction strength.** Replace “Most of the larger round-2 stages, 193 of them, are not read. They have the most bonds, so the frequency there may differ. That part is not run.” with the omitted-stage counts above. The cutoff measured distinctions. For example, an omitted 20-distinction stage had 12,754 bonds, fewer than the 18,567 on the reported witness. Change “F3 held: all 3 steps have seven upper words” to “F3 met its frozen threshold on three role choices of one pattern.” With the size cutoff lifted the count is 87/87 across three sources, all with the same eight-law explanation. [Decision](../decision.md) · [Direct size control](direct_crosscheck_pilot.json)
+3. **Narrowing — safe restriction and persistence.** In direction 1 replace “restricted to readings on born distinctions (the projection argument makes it exact)” with “require at least one relevant born distinction somewhere in a birth-essential witness”. In the reported example, two of the six carriers are entirely present at the start. Four are entirely present before the final round. Requiring every carrier to use a born distinction loses the reported positive. In direction 3 replace “do some patterns persist or vanish with further rounds?” with “does growth distinguish the competing readings?” Every allowed old state extends through a funded ordinary round since each birth has a private fresh distinction. Tracking the upper words on fixed old carriers must reproduce them. [Decision](../decision.md) · [Predecessor projections](witness_checks.json)
+4. **Not a block — credit and public wording.** In the goals checkpoint replace “211 larger stages not read” with “the referee found the frozen form on two of the 211 omitted stages, giving 3 of 426 funded starts”. Make the same update to the object entry. In the guide qualify “On one sampled start a looser form of the step” with “In the earlier sample” before adding the held-out result. Four searches of the objects register returned the earlier grown four-clause witness, its eight-clause predecessor and a separate rival-law witness. Credit this study with the held-out frequency. The eight-law reduction is a referee finding. [Goals](../../../docs/RESEARCH_GOALS.md) · [Objects](../../../docs/OBJECTS.md) · [Guide](../../../publication/knotlab/INTUITIONS.md) · [Earlier four-clause report](../../UPPER-GROWN-20261127-001/referee-R1/report.md) · [Preceding report](../../RING-BOND-20261127-001/referee-R1/report.md) · [Disjoint witness](../../RING-BOND-20261127-001/referee-R1/layer_notes.md)
+
+The 60-pattern cap hid nothing in the frozen sample. The original deduplication key does merge the two alternating clause sets when all eight relevant triples are bonds. They give the same three upper functions but can have different defining lower bonds. A control with eight clauses produced both choices, and a planted 64-pattern control exceeded 60. Neither situation occurred on an originally read stage. On the reported witness, two “both” pairs give three further seven-word readings, each explained by two clauses. With three “both” pairs, a single clause suffices and no individual birth deletion restores 111. [Matching controls](read_pattern_controls.json) · [All eight role choices](role_controls.json)
+
+## What was not run
+
+Frequency outside these 600 starts, rounds beyond two, unrestricted carrier sizes, and selection of the six readings by the growth law were not run. The nonalternating frequency on the 211 omitted stages was not run. Only the frozen alternating form has a complete count there. The study's own timing pilot has no separate archived output for a leakage check.
+
+## How it was checked
+
+From the repository root, run `bash research/FOUR-CLAUSE-20261127-001/referee-R1/replay.sh`. It compiles the finite search, times small cases, and reruns each count sequentially with one numerical thread. The only reused growth code is the earlier independent ordinary-growth rule. We checked funding and sizes against all 1,452 rows and the actual supports against the earlier named witness. All counting and witness checks are implemented in this folder. The study archives its data under `out/` and has no `post/` directory. An initial synthetic control created a temporary directory under `/tmp`. It was removed, and the corrected control reran inside this folder. [Replay](replay.sh) · [Read-stage method](read_notes.md) · [Omitted-stage completeness argument](omitted_notes.md) · [Earlier growth rule](../../NAE-LAYER-20261127-001/referee-R1/growth_rule.py)
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| Frozen count | Confirmed with fixes | All original fields reproduced |
+| Other four-clause assignments | Additional start found | Four steps on the second round of census entry 426 |
+| Other sources | Known alternative | Earlier closed ten-knot witness |
+| G17, outcomes under a weighting | Advanced | All 600 sampled starts resolved through round two |
+| G18, comparing growth laws | Not assessed | Only ordinary growth was tested |
+
+**Next step:** Research directions — No next action selected.
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+| --- | --- | --- | --- | --- | --- |
+| 1 | Test the eight-law explanation on another sample | 2/3 | 3/3 | Compare the chain count to the full step count on held-out stages → first disagreement or sample exhausted | Alternative · deferred |
+
+**STOP.** The frozen frequency and the specific missed reading are resolved. A fresh sample could distinguish a reusable predictor from the exact coincidence in these 600 starts.
+
+**Corrections:** Three narrowings and one wording and credit update proposed above. No Block.  
+**Goals:** The completed frequency serves G17. G18 still needs a comparison between laws.  
+**Assumptions:** The frozen agreements use two or three distinctions per carrier.  
+**Scaffolds:** The six carriers, pairings and upper readings are chosen. Search over alternative assignments and removal of both numerical caps are quantified above.

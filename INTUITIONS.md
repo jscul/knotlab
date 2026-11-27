@@ -6323,9 +6323,15 @@ distinction held twice and no two knots sharing two, 49 carry this step, countin
 of the 27 smaller kinds does. Closure is not needed, and growth can make it. A
 connected start of ten knots grows two ordinary births in one round, and the
 grown stage carries 18 such steps on disjoint triples. Every one of its twelve
-laws is needed, both births included. On one sampled start a looser form of
-the step (four clauses, and both A agreements read) appears after two rounds,
-with every birth's law needed. Which of the equivalent readings growth
+laws is needed, both births included. A looser form of the step (four clauses, with
+both A agreements read and either B and either C) appears on sampled starts
+after two rounds of ordinary growth, with every birth's law needed: on 3 of 426
+growing census starts drawn with a stated seed. Those three are exactly the
+stages that hold a chain of eight three-place knots, each sharing one
+distinction with the next, and a bare chain of eight such knots carries the
+looser step by itself, with every law needed: no ring, no closure and no
+growth. A chain of seven carries none. So a chain of three knots holds
+clauses on agreements, and a chain of eight holds the step one layer up. Which of the equivalent readings growth
 selects is open: the ten-knot start's own symmetries exchange its 18 steps in
 pairs. Under parity every such clause follows
 from the dependences among its distinctions' pairs, which are sums of laws

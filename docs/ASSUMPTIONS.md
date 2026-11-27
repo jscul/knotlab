@@ -6421,12 +6421,12 @@ evidence: results and their status come from the records each entry links.
 
 - **Statement.** For one study of whether the step one layer up occurs, and whether growth makes it: the step is read as
   a box. A box is six agreements on disjoint carriers of two or three distinctions whose eight triples are clauses
-  missing one product triple. Its three agreements of agreements then miss one word. Closed systems of three-place knots
+  missing one product triple. Its three agreements of agreements then miss at least one word (the product form guarantees one; further laws can remove others). Closed systems of three-place knots
   that hold every distinction twice are read as connected cubic graphs, every simple one with up to twelve points once.
   Grown stages are a held-out sample of 1,000 census starts (seed 20261128) at rounds 0 to 2, with the full search up to
   19 distinctions and the local search (holders at most four) above.
 - **Why.** Adopted by the thread on 27 November 2026 for `UPPER-GROWN-20261127-001`. The box is the form of the referee's
-  witness in `RING-BOND-20261127-001`, and counting every closed system once needs no weighting.
+  witness in `RING-BOND-20261127-001`, and each isomorphism class has equal weight (referee R1: labelled systems weighted equally give 368 of 661 positive, against 49 of 85 classes).
 - **Rests on it.** The study's two answers ([the note](../research/UPPER-GROWN-20261127-001/README.md)).
 - **Challenge.** Other upper readings (overlapping carriers, as on the grown ring), multigraphs and knots of four places,
   more rounds of growth, larger closed systems. None was swapped here. The model is not expected to keep the box form
@@ -6434,3 +6434,4 @@ evidence: results and their status come from the records each entry links.
 - **History.**
   - 2026-11-27 · Entered with `UPPER-GROWN-20261127-001`: boxes on 49 of the 85 twelve-knot closed systems, none below
     twelve, none on 2,416 grown stages read.
+  - 2026-11-27 · Referee R1 (refuted, one Block): ordinary growth makes 18 boxes in one round on a built ten-knot start; a four-clause form of the step occurs on a closed ten-knot system and a sampled grown stage. The box form is one shape of the step, not the only one.

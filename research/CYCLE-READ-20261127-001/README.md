@@ -89,7 +89,9 @@ births excluded and counted:
   without twins with chains, 40 without twins or chains.
 - **W2**, the scaffold `tree+s50` (`tree+` with one more loose distinction on each knot with chance one half) at eight
   knots, seed 20261131, 6,000 draws, the same buckets ([twin8_draw.jsonl](twin8_draw.jsonl)): drawn by that fixed
-  command after this text was frozen, structure only, and added before any of its starts is grown.
+  command after this text was frozen, structure only, and added before any of its starts is grown: 3,347 new distinct
+  accepted starts, 15 with chained twins, 31 with unchained twins, 3,167 with none, 133 unending, one not run; kept 126
+  (15 chained, 25 unchained without chains, 6 unchained with chains, 40 without twins with chains, 40 without either).
 Each kept start is grown to round 24 under both laws with the look-alike study's growth, two minutes a start at most.
 Starts without twins and without chains are read by the proved core theorem and the proved relay alone, so they check
 the code; the starts with chains test the chain counting. The twin flags are computed with the predictor's own node construction (`twins.py` uses
@@ -130,3 +132,31 @@ Searched before the freeze, `--exclude CYCLE-READ-20261127-001`:
   chained-twin mechanism (chain births of two parents that share a parent a round earlier) is a case of chains combining.
 - `GRADED-ORDER-20261126-001` and its referees R1 and R2: the node reading, its two misses, the conditional core theorem
   and its converse; this study's direct predecessor.
+
+## Results (added after the run)
+
+### Part 1: pieces with a cycle
+
+[Scores](scores.jsonl) ([tally.py](tally.py)); [Y4, Y5 and the twins' rank](checks45.txt) ([checks45.py](checks45.py)).
+Nothing was changed after scoring.
+
+| Stratum (159 starts) | Starts | Node reading, both laws | Prediction |
+| --- | ---: | --- | --- |
+| core finishes, no chained twins | 115 | agrees in every round read on all 115 | Y1 holds |
+| core does not finish by rank 25, no chains on it | 7 | agrees in every round read on all 7 | Y1 holds |
+| core finishes, chained twins (all six-knot) | 11 | **differs on all 11, under both laws, first at round 5**, the least rank of their chained twins on every one | Y2 holds |
+| core does not finish, chains on it | 2 | not predicted | — |
+| core unending (over the cap) | 24 | not predicted (5 of their 48 growths were also not run) | — |
+
+- **Y1 holds:** 122 of 122 predicted starts without chained twins, 244 start-and-law cases, every round read (24, or
+  to a parity closing). That includes 23 starts with chains on a piece `late.py` counts as a cycle and 7 whose core
+  does not finish (rings in the unrolled sense), read with no relay.
+- **Y2 holds:** the 11 starts with chained twins, all from the six-knot uniform set, differ under both laws, first at
+  round 5, which is the least rank of their chained twins on each. **Y3 holds** (no miss outside it).
+- **Y4 holds as the advisor worked it out:** the first-coded relay misses `tree+` draw 335 at round 2 under
+  not-all-equal and agrees under parity, and misses six-knot entry 13560 at round 5 under not-all-equal; the frozen
+  reading agrees on both under both laws. **Y5 holds:** the first-coded chain count misses draw 109 at round 9 under
+  both laws (with the core built to rank 10); the frozen reading does not read it.
+
+So on pieces with a cycle the node reading is exact wherever it reads, and its only misses are the chained twins:
+the late-views study's six-knot cycle starts it could not predict are now read, except 11 with chained twins.

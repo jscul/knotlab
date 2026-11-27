@@ -360,6 +360,7 @@ evidence: results and their status come from the records each entry links.
 | [A302](#a302--the-middle-of-the-joined-ring-starts-as-a-third-reader-with-two-settings-and-a-quarter-turn-read) | The middle of the joined-ring starts as a third reader with two settings, and a quarter-turn read | scaffold | Assumed |
 | [A303](#a303--the-families-tree-as-the-places-of-the-second-layer-read-at-a-scale) | The families' tree as the places of the second layer, read at a scale | scaffold | Assumed |
 | [A304](#a304--the-countings-tested-on-small-sampled-starts-fourteen-distinctions-two-rounds) | The countings tested on small sampled starts: fourteen distinctions, two rounds | scaffold | Assumed |
+| [A305](#a305--the-transfer-laws-tables-a-declared-start-weighting-the-coherent-version-and-rotated-reads) | The transfer law's tables: a declared start weighting, the coherent version and rotated reads | scaffold | Assumed |
 
 ## Entries
 
@@ -6338,3 +6339,18 @@ evidence: results and their status come from the records each entry links.
   - 2026-11-26 · Qualified by referees R1 and R2 (refuted): the countings factor over listed laws, not over knots in the
     whole; a recorded value-reading transfer law makes a weighting that does not factor.
   - 2026-11-26 · Entered by `FACTOR-WEIGHTS-20261126-001`.
+
+### A305 · The transfer law's tables: a declared start weighting, the coherent version and rotated reads
+
+**Assumed** · 2026-11-26 · scaffold
+
+- **Statement.** To test tables under the ring-to-end study's transfer law, `TRANSFER-TABLES-20261126-001` declares a
+  start weighting (the four starts and each birth's permitted lifts equally weighted; the law prescribes only the
+  reached states), relates the reached states with equal phases (the coherent version), allows rotated reads beside the
+  model's reads, and uses one three-place founder grown one round.
+- **Why.** The least additions under which a table above the classical limit could appear at all.
+- **Rests on it.** That study's excess with any reads (up to 1 + √2); not its finding that the model's reads never
+  exceed 2, which held under every counting and lift.
+- **Challenge.** More founders and rounds; other phases; a law that prescribes its own lift weights.
+- **History.**
+  - 2026-11-26 · Entered by `TRANSFER-TABLES-20261126-001`.

@@ -53,7 +53,10 @@ def first_failure(stars, R):
                     extra = list((want - have).elements()); missing = list((have - want).elements())
                     kinds = collections.Counter(kind_of(S, missing) for S in set(extra))
                     f = {'round': t + 1, 'shapes': dict(kinds)}
+                    # every piece failing at the earliest round is kept (referee R1: ties lost a mechanism)
                     if out is None or f['round'] < out['round']: out = f
+                    elif f['round'] == out['round']:
+                        out = {'round': out['round'], 'shapes': dict(collections.Counter(out['shapes']) + kinds)}
                     break
     finally:
         order.NodePiece.round1_groups = None; order.NodePiece.max_rank = None

@@ -1,0 +1,82 @@
+# Advisor answer: `SELECTED-KNOTS-20261127-001`
+
+Everything below is by hand with no run, so it is `unverified` unless marked "read". I read the hivemind, the `THIRD-LAYER` referee report, argument and decision, `scale.py`, `twokinds.py`, `repro.rings_start` lines 29–61, `overlap.py` and `overlap.json`. I did not read `minflip.py`, `built.py`, the engine, or `rings_start` past line 61.
+
+## What the record does and does not show
+
+- **The "held by no part" test cannot see carriers (read).** `scale.held_by_no_part` line 38 ranks the fact together with `rows`, so it tests the fact modulo the laws. `overlap.json` records 0 single-knot class facts at scale 12, so every nonconstant element of V passes at rounds 5 and 6. The five carriers passing is not evidence that growth selects those five.
+- **P + Q + R is an identity as functions.** The three rings of four have six families, so V has dimension 5 and R = P + Q. The only relation among family facts is the sum of all six. The second "knot" exists because R sits on generation-0 loose distinctions and P, Q on generation-1 fresh ones.
+- **Its law set is two copies added.** `overlap.json` gives 6 `born` removals freeing P Q R and 18 `start` removals freeing R S T. The 6 are ring 1's round-1 births, i.e. "P at generation 0 = P at generation 1" plus the same for Q.
+
+## 1. The statement, and the choices that remain
+
+**Given the places, nothing is chosen.** Once the carried facts are fixed, the knots are the minimal relations among them. Each relation is the sum of one set K of first-layer laws, and K is unique while loose distinctions exist (the laws are then independent). So the whole choice is the set of places. Scale and reading only decide which places count as class facts.
+
+Your candidate (least-size supports, circuits with disjoint carriers) fails as a selection by growth in three ways:
+
+- **It selects the start, not growth.** Least supports sit in the start. P's is its 4 start loose distinctions; later generations have 6 or more.
+- **It has ties.** R's least support has size 4 with 9 tied choices: R = e_rs + e_rt, and each e has three two-distinction representatives (attachments on either side, or the link pair).
+- **Its matroid is determined by m alone.** At large scale the nonzero facts are all 2^(m−1) − 1 splits of the families, and every dependent triple is a "knot": 155 triples for m = 6, before the disjointness filter.
+
+Three statements that can be tested, from least to most choice:
+
+- **S1, growth's own places, no scale and no reading.** A place is (family, generation): the distinctions fresh at round s held by that family's lineage. Families at stage t are readable from the stage by the candidate rule (referee's lineage lemma). The relations are then one root relation and one copy per family per round. The pattern is a root with m chains, the same for every start with m families. This is the only fully choice-free answer, and it says growth makes copies, not knots.
+- **S2, function level, scale as the one scaffold.** Let d(A, B) be the least number of shared distinctions on a route between a live knot of A and one of B at the start. Claim: the least change flipping both l_A and l_B is d + 2 + 2t at round t (the referee's +2 argument applied to one pair). This fits the recorded 5, 7, 9 for P (d = 1) and 7, 9, 11 for R (d = 3). Then at scale k above the bounded costs:
+  - the class facts at round t are the parities constant on classes of families joined at d ≤ k − 2t − 2;
+  - the start alone fixes a tree (families joined at increasing d), and growth lowers the threshold by two a round;
+  - the scale picks the level; the tree and the order of arrival do not depend on it.
+- **S3, carrier level.** A second-layer knot is a group of first-layer knots, its law the sum of theirs, its places the bundles of distinctions leaving it. A grouping is admissible when every bundle parity is a class fact not spanned by single-knot facts. The choice left is the grouping, and I expect ties (see section 3).
+
+Least arbitrary: S2 for the facts and S1 for the places. Disjoint carriers is itself a reading, and it is what turns the identity R = P + Q into a knot.
+
+**The other reading.** Under tied-shortest changes, I expect all of V to be class facts from about round 2 with no order of arrival, so the tree is visible only under the scale reading. The pairwise costs d + 2 + 2t are reading-free.
+
+## 2. Predictions
+
+**Three rings of four (split, double).** d is 1 inside a ring, 3 between directly linked families, 4 or 5 otherwise.
+
+- Tree: root {R, S, T}, with R {P0, Q0}, S {P1, Q1}, T {P2, Q2}. Four knots, three shared facts, each shared parent to child. The referee's witness is the root plus one ring node.
+- Class-fact dimension by scale and round:
+
+| Scale | Rounds with 0 | Round with 2 | Rounds with 5 |
+| --- | --- | --- | --- |
+| 12 | ≤ 3 | 4 | ≥ 5 |
+| 14 | ≤ 4 | 5 | ≥ 6 |
+
+- At scale 11 the closed start change through all three links (12 distinctions) is not small. The three attachment parities e_rs should then be class facts, each read by one connecting knot, so R, S, T are spanned by parts while P, Q are not (from round 5).
+- **A static version of the witness, sharpest check.** Put R, S, T each on its ring's four attachment distinctions and the six family facts on their start loose distinctions. That gives nine pairwise disjoint places, all in the start, at every round. Predicted removals freeing P Q R: ring 1's four start knots, 0 born. Predicted removals freeing R S T: the six connecting knots. The four law sets part the 18 start knots.
+- **C2.** With all facts as coordinates, every nonzero second-layer change flips 16 of 31, so all tie and span: no kept fact. With first-layer cost, the cheapest changes are the within-ring pairs, and the kept facts are span(R, S, T), which are places of the root.
+
+**Three or four rings of five.** An odd ring is one family, so m = 3 or 4, and (assuming every pair of rings is linked alike, as in the double-link family) all d are equal. Prediction: one knot of three or four places, nothing shared, all of V arriving in one round (dimension 2 or 3). C2 is the even-weight code, its pairs span it, and no fact is kept.
+
+## 3. Start and law alone?
+
+- **The tree: yes.** It depends on d only. The round enters as the level k − 2t − 2. Check: scales k and k + 2 should give the same sequence one round apart.
+- **S1's pattern** depends on the round only through chain length.
+- **Representatives matter in three places.**
+  - Ties among least supports (9 for R).
+  - S3's finest admissible grouping. On the witness, the grouping with the six connecting knots as centre has a centre that is not connected. With connected groups required there are three tied groupings (which ring joins the rest).
+  - Families read by a single knot. A family that is one live knot is read by that knot at every scale (referee: 204 of 245 starts). So "held by no part" depends on whether a lineage ever passes through one knot's distinctions.
+- **Open check.** Can a family of three live knots with one loose distinction each get one joint birth with one fresh distinction (f = max(D, 0, 1))? If so, whole-heldness changes at round 1 for good. I did not check this against the engine.
+
+## 4. A third-layer fact without a chosen reading
+
+I predict none, for two reasons.
+
+- **With growth's own places**, one knot (the root) holds every place, so every coarser fact is a parity of a subset of its places.
+- **With every separately carried sum admitted**, every coarser class fact is a parity constant on clusters, hence a sum of cluster facts, each of which is a place. The referee's thirteen-ring control (two more eligible knots read the facts) is an instance. A third-layer whole-held fact needs a place set not closed under sums, and the only growth-made one is the atoms.
+
+**On meeting.** If groups are connected and every bundle parity is a class fact at large scale, the pattern of groups has no ring. A ring of groups lifts to a closed start change of fixed size crossing one bundle once. So at large scale second-layer knots meet only in a tree.
+
+A ring of second-layer knots exists only in a window of scales below that closed change. On the witness at scale ≤ 11 the three rings share the e's pairwise, but each e is read by one connecting knot. Spreading each bundle over two connecting knots should fix that; this is not built.
+
+A third layer would need nested windows built into the start (groups of groups, bundles spread at each level). My rough size estimate is 40 to 50 knots. It would be static, with growth adding only copies. This is the earlier "only in the start's closed changes" in sharper form.
+
+## What a referee would press first
+
+1. The pairwise cost d + 2 + 2t, and that weight-four changes never undercut the pairs.
+2. Whether generations are readable from the stage alone.
+3. The tree lemma's need for connected groups.
+4. The scale-12 and scale-14 tables above against exact class-space dimensions, not only the five named facts.
+
+One entry is added to the hivemind; nothing else was touched.

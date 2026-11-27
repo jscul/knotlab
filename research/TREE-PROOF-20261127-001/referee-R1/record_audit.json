@@ -1,0 +1,379 @@
+{
+  "start limit per set": null,
+  "sets": {
+    "census": {
+      "counts": {
+        "start records": 1000,
+        "starts with 1 families": 715,
+        "starts with 2 families": 245,
+        "starts with pairs": 253,
+        "hierarchies read": 253,
+        "hierarchies with nonconstant class facts": 7,
+        "round records": 1181,
+        "pair records": 1261,
+        "direct cost failures": 0,
+        "scale 8 records": 1181,
+        "scale 8 zero dimension": 669,
+        "scale 12 records": 1181,
+        "scale 12 zero dimension": 1133,
+        "scale 8 full dimension": 505,
+        "scale 12 full dimension": 41,
+        "starts with 0 families": 32,
+        "first omitted round: stalled": 21,
+        "starts with 3 families": 8,
+        "scale 8 intermediate dimension": 7,
+        "scale 12 intermediate dimension": 7
+      },
+      "shortest reading": {
+        "round 0: records": 253,
+        "round 0: any fact": 6,
+        "round 0: all facts": 5,
+        "round 1: records": 232,
+        "round 1: any fact": 27,
+        "round 1: all facts": 26,
+        "round 2: records": 232,
+        "round 2: any fact": 26,
+        "round 2: all facts": 25,
+        "round 3: records": 232,
+        "round 3: any fact": 26,
+        "round 3: all facts": 25,
+        "round 4: records": 232,
+        "round 4: any fact": 26,
+        "round 4: all facts": 25
+      },
+      "direct cost failure witnesses": []
+    },
+    "heldout": {
+      "counts": {
+        "start records": 900,
+        "starts with 2 families": 373,
+        "starts with pairs": 515,
+        "hierarchies read": 515,
+        "hierarchies with nonconstant class facts": 99,
+        "round records": 1783,
+        "pair records": 3279,
+        "direct cost failures": 1,
+        "scale 8 records": 1783,
+        "scale 8 zero dimension": 963,
+        "scale 12 records": 1783,
+        "scale 12 zero dimension": 1597,
+        "first omitted round: stalled": 198,
+        "starts with 1 families": 385,
+        "scale 8 full dimension": 731,
+        "scale 12 full dimension": 97,
+        "starts with 4 families": 20,
+        "scale 8 intermediate dimension": 89,
+        "scale 12 intermediate dimension": 89,
+        "starts with 3 families": 122
+      },
+      "shortest reading": {
+        "round 0: records": 515,
+        "round 0: any fact": 36,
+        "round 0: all facts": 17,
+        "round 1: records": 317,
+        "round 1: any fact": 67,
+        "round 1: all facts": 42,
+        "round 2: records": 317,
+        "round 2: any fact": 60,
+        "round 2: all facts": 35,
+        "round 3: records": 317,
+        "round 3: any fact": 59,
+        "round 3: all facts": 34,
+        "round 4: records": 317,
+        "round 4: any fact": 59,
+        "round 4: all facts": 34
+      },
+      "direct cost failure witnesses": [
+        {
+          "start": "held out 8-50",
+          "round": 0,
+          "pair": [
+            1,
+            2
+          ],
+          "direct step count": 6,
+          "direct cost": 8,
+          "recorded cost": 6,
+          "two steps by intermediate": {
+            "0": 6
+          }
+        }
+      ]
+    },
+    "sampled": {
+      "counts": {
+        "start records": 400,
+        "starts with 1 families": 226,
+        "starts with 2 families": 120,
+        "starts with pairs": 174,
+        "hierarchies read": 174,
+        "hierarchies with nonconstant class facts": 34,
+        "round records": 390,
+        "pair records": 808,
+        "direct cost failures": 2,
+        "scale 8 records": 390,
+        "scale 8 zero dimension": 250,
+        "scale 12 records": 390,
+        "scale 12 zero dimension": 358,
+        "first omitted round: stalled": 120,
+        "starts with 3 families": 40,
+        "scale 8 intermediate dimension": 15,
+        "scale 8 full dimension": 125,
+        "scale 12 intermediate dimension": 15,
+        "scale 12 full dimension": 17,
+        "starts with 4 families": 13,
+        "starts with 5 families": 1
+      },
+      "shortest reading": {
+        "round 0: records": 174,
+        "round 0: any fact": 18,
+        "round 0: all facts": 9,
+        "round 1: records": 54,
+        "round 1: any fact": 18,
+        "round 1: all facts": 11,
+        "round 2: records": 54,
+        "round 2: any fact": 17,
+        "round 2: all facts": 10,
+        "round 3: records": 54,
+        "round 3: any fact": 17,
+        "round 3: all facts": 10,
+        "round 4: records": 54,
+        "round 4: any fact": 17,
+        "round 4: all facts": 10
+      },
+      "direct cost failure witnesses": [
+        {
+          "start": "sampled 12-35",
+          "round": 0,
+          "pair": [
+            0,
+            1
+          ],
+          "direct step count": 7,
+          "direct cost": 9,
+          "recorded cost": 8,
+          "two steps by intermediate": {
+            "2": 8,
+            "3": 14
+          }
+        },
+        {
+          "start": "sampled 12-56",
+          "round": 0,
+          "pair": [
+            0,
+            2
+          ],
+          "direct step count": 6,
+          "direct cost": 8,
+          "recorded cost": 6,
+          "two steps by intermediate": {
+            "1": 6
+          }
+        }
+      ]
+    },
+    "built": {
+      "counts": {
+        "start records": 33,
+        "starts with 6 families": 8,
+        "starts with pairs": 33,
+        "hierarchies read": 33,
+        "hierarchies with nonconstant class facts": 16,
+        "round records": 135,
+        "pair records": 1491,
+        "direct cost failures": 0,
+        "scale 8 records": 111,
+        "scale 8 zero dimension": 50,
+        "scale 12 records": 111,
+        "scale 12 zero dimension": 94,
+        "scale 8 intermediate dimension": 8,
+        "scale 8 full dimension": 53,
+        "scale 12 intermediate dimension": 4,
+        "starts with 3 families": 9,
+        "scale 12 full dimension": 13,
+        "first omitted round: not read": 16,
+        "starts with 8 families": 8,
+        "starts with 4 families": 8
+      },
+      "shortest reading": {
+        "round 0: records": 25,
+        "round 0: any fact": 13,
+        "round 0: all facts": 9,
+        "round 1: records": 25,
+        "round 1: any fact": 25,
+        "round 1: all facts": 25,
+        "round 2: records": 25,
+        "round 2: any fact": 25,
+        "round 2: all facts": 25,
+        "round 3: records": 19,
+        "round 3: any fact": 19,
+        "round 3: all facts": 19,
+        "round 4: records": 17,
+        "round 4: any fact": 17,
+        "round 4: all facts": 17
+      },
+      "direct cost failure witnesses": []
+    }
+  },
+  "identical allowed states control": {
+    "distinctions by their two bookkeeping holders": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        6,
+        7
+      ],
+      [
+        6,
+        7
+      ],
+      [
+        7,
+        8
+      ],
+      [
+        7,
+        8
+      ],
+      [
+        8,
+        9
+      ],
+      [
+        8,
+        9
+      ],
+      [
+        9,
+        0
+      ],
+      [
+        9,
+        0
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        1,
+        6
+      ],
+      [
+        1,
+        6
+      ]
+    ],
+    "allowed-state counts in each": 32768,
+    "constraint rank in each": 9,
+    "identical constraint spans on the same distinctions": true,
+    "starts by omitted holder": {
+      "0": {
+        "connected": true,
+        "singleton families": [
+          1,
+          4,
+          9
+        ],
+        "pair steps": {
+          "1-4": 3,
+          "1-9": 4,
+          "4-9": 5
+        },
+        "distinct merge levels": [
+          3,
+          4
+        ],
+        "knot arities": [
+          6,
+          4,
+          4,
+          6,
+          4,
+          6,
+          4,
+          4,
+          4
+        ]
+      },
+      "1": {
+        "connected": true,
+        "singleton families": [
+          0,
+          2,
+          6
+        ],
+        "pair steps": {
+          "0-2": 3,
+          "0-6": 3,
+          "2-6": 4
+        },
+        "distinct merge levels": [
+          3
+        ],
+        "knot arities": [
+          6,
+          4,
+          4,
+          6,
+          4,
+          6,
+          4,
+          4,
+          4
+        ]
+      }
+    }
+  }
+}

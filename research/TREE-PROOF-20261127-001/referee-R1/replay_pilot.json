@@ -1,0 +1,963 @@
+{
+  "method": "Exact least changes measured from the independently rebuilt stage parity constraints. Pair minima come from split-terminal shortest routes. Set minima are separately measured by splitting the exterior in two. Shortest reading projects every tied shortest cycle through each distinction.",
+  "scope": "Frozen starts with at least two families, rounds zero through four, 300-distinction ceiling, and at most six families for set costs and both readings. Start order checked against the archives.",
+  "raw ordering": "Pair costs follow the family pairs in lexicographic order. Proper-set costs follow ascending binary masks for sets containing family zero, omitting the whole set.",
+  "triangle defect": "The largest d(A,B) minus d(A,C) minus d(C,B), floored at zero. The direct weights satisfy all triangles exactly when 2t+2 is at least this defect. Any smaller toll admits a strictly cheaper chain on some pair.",
+  "run": "pilot",
+  "totals": {
+    "starts": 105,
+    "starts with 1 families": 38,
+    "starts with 2 families": 21,
+    "eligible starts": 67,
+    "starts with maximum triangle defect 0": 61,
+    "rounds read": 249,
+    "pair rows": 1779,
+    "chain matches": 1779,
+    "set costs read": 1689,
+    "SK2 direct crossing matches": 1689,
+    "SK2 measured crossing matches": 1689,
+    "SK3 rounds at 8": 225,
+    "SK3 dimension matches at 8": 225,
+    "SK3 individual sum classifications matched at 8": 1689,
+    "SK3 rounds at 12": 225,
+    "SK3 dimension matches at 12": 225,
+    "SK3 individual sum classifications matched at 12": 1689,
+    "shortest reading rounds": 225,
+    "shortest reading keeps a sum": 139,
+    "funded transitions": 198,
+    "births": 3795,
+    "end: stalled": 14,
+    "pair rows with a third family present": 1718,
+    "chain shorter than direct prediction": 3,
+    "direct predictions missed": 3,
+    "rounds with a strictly cheaper family chain possible": 3,
+    "starts with 3 families": 18,
+    "starts with maximum triangle defect 4": 2,
+    "starts with maximum triangle defect 1": 1,
+    "starts with maximum triangle defect 2": 2,
+    "starts with 4 families": 11,
+    "starts with 5 families": 1,
+    "starts with maximum triangle defect 3": 1,
+    "starts with 6 families": 8,
+    "end: not read": 16,
+    "starts with 8 families": 8,
+    "zero-fresh births": 0,
+    "end: closed": 0
+  },
+  "set details": {
+    "census": {
+      "archive sha256": "daa4e0533ebc3665c24644e7bd55b2f17ab63069c09f24f99d127cb01c6ef4f3",
+      "population": 1000,
+      "counts": {
+        "starts": 23,
+        "starts with 1 families": 18,
+        "starts with 2 families": 5,
+        "eligible starts": 5,
+        "starts with maximum triangle defect 0": 5,
+        "rounds read": 21,
+        "pair rows": 21,
+        "chain matches": 21,
+        "pair rows with a third family present": 0,
+        "chain shorter than direct prediction": 0,
+        "direct predictions missed": 0,
+        "set costs read": 21,
+        "SK2 direct crossing matches": 21,
+        "SK2 measured crossing matches": 21,
+        "SK3 rounds at 8": 21,
+        "SK3 dimension matches at 8": 21,
+        "SK3 individual sum classifications matched at 8": 21,
+        "SK3 rounds at 12": 21,
+        "SK3 dimension matches at 12": 21,
+        "SK3 individual sum classifications matched at 12": 21,
+        "shortest reading rounds": 21,
+        "shortest reading keeps a sum": 8,
+        "rounds with a strictly cheaper family chain possible": 0,
+        "funded transitions": 16,
+        "births": 89,
+        "zero-fresh births": 0,
+        "end: stalled": 1
+      },
+      "counts by round": {
+        "0": {
+          "rounds read": 5,
+          "pair rows": 5,
+          "chain matches": 5,
+          "pair rows with a third family present": 0,
+          "chain shorter than direct prediction": 0,
+          "direct predictions missed": 0,
+          "set costs read": 5,
+          "SK2 direct crossing matches": 5,
+          "SK2 measured crossing matches": 5,
+          "SK3 rounds at 8": 5,
+          "SK3 dimension matches at 8": 5,
+          "SK3 individual sum classifications matched at 8": 5,
+          "SK3 rounds at 12": 5,
+          "SK3 dimension matches at 12": 5,
+          "SK3 individual sum classifications matched at 12": 5,
+          "shortest reading rounds": 5,
+          "shortest reading keeps a sum": 0,
+          "rounds with a strictly cheaper family chain possible": 0
+        },
+        "1": {
+          "rounds read": 4,
+          "pair rows": 4,
+          "chain matches": 4,
+          "pair rows with a third family present": 0,
+          "chain shorter than direct prediction": 0,
+          "direct predictions missed": 0,
+          "set costs read": 4,
+          "SK2 direct crossing matches": 4,
+          "SK2 measured crossing matches": 4,
+          "SK3 rounds at 8": 4,
+          "SK3 dimension matches at 8": 4,
+          "SK3 individual sum classifications matched at 8": 4,
+          "SK3 rounds at 12": 4,
+          "SK3 dimension matches at 12": 4,
+          "SK3 individual sum classifications matched at 12": 4,
+          "shortest reading rounds": 4,
+          "shortest reading keeps a sum": 2,
+          "rounds with a strictly cheaper family chain possible": 0
+        },
+        "2": {
+          "rounds read": 4,
+          "pair rows": 4,
+          "chain matches": 4,
+          "pair rows with a third family present": 0,
+          "chain shorter than direct prediction": 0,
+          "direct predictions missed": 0,
+          "set costs read": 4,
+          "SK2 direct crossing matches": 4,
+          "SK2 measured crossing matches": 4,
+          "SK3 rounds at 8": 4,
+          "SK3 dimension matches at 8": 4,
+          "SK3 individual sum classifications matched at 8": 4,
+          "SK3 rounds at 12": 4,
+          "SK3 dimension matches at 12": 4,
+          "SK3 individual sum classifications matched at 12": 4,
+          "shortest reading rounds": 4,
+          "shortest reading keeps a sum": 2,
+          "rounds with a strictly cheaper family chain possible": 0
+        },
+        "3": {
+          "rounds read": 4,
+          "pair rows": 4,
+          "chain matches": 4,
+          "pair rows with a third family present": 0,
+          "chain shorter than direct prediction": 0,
+          "direct predictions missed": 0,
+          "set costs read": 4,
+          "SK2 direct crossing matches": 4,
+          "SK2 measured crossing matches": 4,
+          "SK3 rounds at 8": 4,
+          "SK3 dimension matches at 8": 4,
+          "SK3 individual sum classifications matched at 8": 4,
+          "SK3 rounds at 12": 4,
+          "SK3 dimension matches at 12": 4,
+          "SK3 individual sum classifications matched at 12": 4,
+          "shortest reading rounds": 4,
+          "shortest reading keeps a sum": 2,
+          "rounds with a strictly cheaper family chain possible": 0
+        },
+        "4": {
+          "rounds read": 4,
+          "pair rows": 4,
+          "chain matches": 4,
+          "pair rows with a third family present": 0,
+          "chain shorter than direct prediction": 0,
+          "direct predictions missed": 0,
+          "set costs read": 4,
+          "SK2 direct crossing matches": 4,
+          "SK2 measured crossing matches": 4,
+          "SK3 rounds at 8": 4,
+          "SK3 dimension matches at 8": 4,
+          "SK3 individual sum classifications matched at 8": 4,
+          "SK3 rounds at 12": 4,
+          "SK3 dimension matches at 12": 4,
+          "SK3 individual sum classifications matched at 12": 4,
+          "shortest reading rounds": 4,
+          "shortest reading keeps a sum": 2,
+          "rounds with a strictly cheaper family chain possible": 0
+        }
+      },
+      "direct exceptions": [],
+      "chain discrepancies": [],
+      "archive discrepancies": [],
+      "seconds including roster generation": 0.0249
+    },
+    "heldout": {
+      "archive sha256": "c2ec4e55f27164236affa5255e2f4633e65eca95b75a573df3291d75228eaec3",
+      "population": 900,
+      "counts": {
+        "starts": 24,
+        "starts with 2 families": 9,
+        "eligible starts": 13,
+        "starts with maximum triangle defect 0": 10,
+        "rounds read": 41,
+        "pair rows": 81,
+        "chain matches": 81,
+        "pair rows with a third family present": 60,
+        "chain shorter than direct prediction": 1,
+        "direct predictions missed": 1,
+        "set costs read": 81,
+        "SK2 direct crossing matches": 81,
+        "SK2 measured crossing matches": 81,
+        "SK3 rounds at 8": 41,
+        "SK3 dimension matches at 8": 41,
+        "SK3 individual sum classifications matched at 8": 81,
+        "SK3 rounds at 12": 41,
+        "SK3 dimension matches at 12": 41,
+        "SK3 individual sum classifications matched at 12": 81,
+        "shortest reading rounds": 41,
+        "shortest reading keeps a sum": 8,
+        "rounds with a strictly cheaper family chain possible": 1,
+        "end: stalled": 6,
+        "starts with 1 families": 11,
+        "funded transitions": 28,
+        "births": 208,
+        "zero-fresh births": 0,
+        "starts with 3 families": 4,
+        "starts with maximum triangle defect 4": 1,
+        "starts with maximum triangle defect 1": 1,
+        "starts with maximum triangle defect 2": 1
+      },
+      "counts by round": {
+        "0": {
+          "rounds read": 13,
+          "pair rows": 21,
+          "chain matches": 21,
+          "pair rows with a third family present": 12,
+          "chain shorter than direct prediction": 1,
+          "direct predictions missed": 1,
+          "set costs read": 21,
+          "SK2 direct crossing matches": 21,
+          "SK2 measured crossing matches": 21,
+          "SK3 rounds at 8": 13,
+          "SK3 dimension matches at 8": 13,
+          "SK3 individual sum classifications matched at 8": 21,
+          "SK3 rounds at 12": 13,
+          "SK3 dimension matches at 12": 13,
+          "SK3 individual sum classifications matched at 12": 21,
+          "shortest reading rounds": 13,
+          "shortest reading keeps a sum": 0,
+          "rounds with a strictly cheaper family chain possible": 1
+        },
+        "1": {
+          "rounds read": 7,
+          "pair rows": 15,
+          "chain matches": 15,
+          "pair rows with a third family present": 12,
+          "chain shorter than direct prediction": 0,
+          "direct predictions missed": 0,
+          "set costs read": 15,
+          "SK2 direct crossing matches": 15,
+          "SK2 measured crossing matches": 15,
+          "SK3 rounds at 8": 7,
+          "SK3 dimension matches at 8": 7,
+          "SK3 individual sum classifications matched at 8": 15,
+          "SK3 rounds at 12": 7,
+          "SK3 dimension matches at 12": 7,
+          "SK3 individual sum classifications matched at 12": 15,
+          "shortest reading rounds": 7,
+          "shortest reading keeps a sum": 2,
+          "rounds with a strictly cheaper family chain possible": 0
+        },
+        "2": {
+          "rounds read": 7,
+          "pair rows": 15,
+          "chain matches": 15,
+          "pair rows with a third family present": 12,
+          "chain shorter than direct prediction": 0,
+          "direct predictions missed": 0,
+          "set costs read": 15,
+          "SK2 direct crossing matches": 15,
+          "SK2 measured crossing matches": 15,
+          "SK3 rounds at 8": 7,
+          "SK3 dimension matches at 8": 7,
+          "SK3 individual sum classifications matched at 8": 15,
+          "SK3 rounds at 12": 7,
+          "SK3 dimension matches at 12": 7,
+          "SK3 individual sum classifications matched at 12": 15,
+          "shortest reading rounds": 7,
+          "shortest reading keeps a sum": 2,
+          "rounds with a strictly cheaper family chain possible": 0
+        },
+        "3": {
+          "rounds read": 7,
+          "pair rows": 15,
+          "chain matches": 15,
+          "pair rows with a third family present": 12,
+          "chain shorter than direct prediction": 0,
+          "direct predictions missed": 0,
+          "set costs read": 15,
+          "SK2 direct crossing matches": 15,
+          "SK2 measured crossing matches": 15,
+          "SK3 rounds at 8": 7,
+          "SK3 dimension matches at 8": 7,
+          "SK3 individual sum classifications matched at 8": 15,
+          "SK3 rounds at 12": 7,
+          "SK3 dimension matches at 12": 7,
+          "SK3 individual sum classifications matched at 12": 15,
+          "shortest reading rounds": 7,
+          "shortest reading keeps a sum": 2,
+          "rounds with a strictly cheaper family chain possible": 0
+        },
+        "4": {
+          "rounds read": 7,
+          "pair rows": 15,
+          "chain matches": 15,
+          "pair rows with a third family present": 12,
+          "chain shorter than direct prediction": 0,
+          "direct predictions missed": 0,
+          "set costs read": 15,
+          "SK2 direct crossing matches": 15,
+          "SK2 measured crossing matches": 15,
+          "SK3 rounds at 8": 7,
+          "SK3 dimension matches at 8": 7,
+          "SK3 individual sum classifications matched at 8": 15,
+          "SK3 rounds at 12": 7,
+          "SK3 dimension matches at 12": 7,
+          "SK3 individual sum classifications matched at 12": 15,
+          "shortest reading rounds": 7,
+          "shortest reading keeps a sum": 2,
+          "rounds with a strictly cheaper family chain possible": 0
+        }
+      },
+      "direct exceptions": [
+        {
+          "start": "held out 8-50",
+          "start supports": [
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              4,
+              11
+            ],
+            [
+              1,
+              2,
+              5,
+              12,
+              13
+            ],
+            [
+              6,
+              7,
+              8,
+              14
+            ],
+            [
+              6,
+              7,
+              15
+            ],
+            [
+              4,
+              16,
+              17
+            ],
+            [
+              3,
+              9,
+              10
+            ],
+            [
+              5,
+              8,
+              9,
+              10
+            ]
+          ],
+          "families": [
+            [
+              1,
+              2,
+              3
+            ],
+            [
+              4
+            ],
+            [
+              5
+            ]
+          ],
+          "starting steps": {
+            "0-1": 1,
+            "0-2": 1,
+            "1-2": 6
+          },
+          "round": 0,
+          "witnesses": [
+            {
+              "families": [
+                1,
+                2
+              ],
+              "least change distinctions": [
+                4,
+                6,
+                11,
+                14,
+                15,
+                16
+              ],
+              "loose distinctions in least change": [
+                11,
+                14,
+                15,
+                16
+              ],
+              "direct prediction": 8,
+              "chain prediction": 6
+            }
+          ]
+        }
+      ],
+      "chain discrepancies": [],
+      "archive discrepancies": [],
+      "seconds including roster generation": 1.1463
+    },
+    "sampled": {
+      "archive sha256": "181b74a1e0ad7102842adb0a5a575b29541a1a1b63cdfc0f5b9e7d1dd8c9750c",
+      "population": 400,
+      "counts": {
+        "starts": 25,
+        "starts with 1 families": 9,
+        "starts with 2 families": 7,
+        "eligible starts": 16,
+        "starts with maximum triangle defect 0": 13,
+        "rounds read": 52,
+        "pair rows": 186,
+        "chain matches": 186,
+        "pair rows with a third family present": 167,
+        "chain shorter than direct prediction": 2,
+        "direct predictions missed": 2,
+        "set costs read": 222,
+        "SK2 direct crossing matches": 222,
+        "SK2 measured crossing matches": 222,
+        "SK3 rounds at 8": 52,
+        "SK3 dimension matches at 8": 52,
+        "SK3 individual sum classifications matched at 8": 222,
+        "SK3 rounds at 12": 52,
+        "SK3 dimension matches at 12": 52,
+        "SK3 individual sum classifications matched at 12": 222,
+        "shortest reading rounds": 52,
+        "shortest reading keeps a sum": 24,
+        "rounds with a strictly cheaper family chain possible": 2,
+        "end: stalled": 7,
+        "starts with 3 families": 5,
+        "funded transitions": 36,
+        "births": 324,
+        "zero-fresh births": 0,
+        "starts with maximum triangle defect 2": 1,
+        "starts with 4 families": 3,
+        "starts with 5 families": 1,
+        "starts with maximum triangle defect 3": 1,
+        "starts with maximum triangle defect 4": 1
+      },
+      "counts by round": {
+        "0": {
+          "rounds read": 16,
+          "pair rows": 50,
+          "chain matches": 50,
+          "pair rows with a third family present": 43,
+          "chain shorter than direct prediction": 2,
+          "direct predictions missed": 2,
+          "set costs read": 58,
+          "SK2 direct crossing matches": 58,
+          "SK2 measured crossing matches": 58,
+          "SK3 rounds at 8": 16,
+          "SK3 dimension matches at 8": 16,
+          "SK3 individual sum classifications matched at 8": 58,
+          "SK3 rounds at 12": 16,
+          "SK3 dimension matches at 12": 16,
+          "SK3 individual sum classifications matched at 12": 58,
+          "shortest reading rounds": 16,
+          "shortest reading keeps a sum": 4,
+          "rounds with a strictly cheaper family chain possible": 2
+        },
+        "1": {
+          "rounds read": 9,
+          "pair rows": 34,
+          "chain matches": 34,
+          "pair rows with a third family present": 31,
+          "chain shorter than direct prediction": 0,
+          "direct predictions missed": 0,
+          "set costs read": 41,
+          "SK2 direct crossing matches": 41,
+          "SK2 measured crossing matches": 41,
+          "SK3 rounds at 8": 9,
+          "SK3 dimension matches at 8": 9,
+          "SK3 individual sum classifications matched at 8": 41,
+          "SK3 rounds at 12": 9,
+          "SK3 dimension matches at 12": 9,
+          "SK3 individual sum classifications matched at 12": 41,
+          "shortest reading rounds": 9,
+          "shortest reading keeps a sum": 5,
+          "rounds with a strictly cheaper family chain possible": 0
+        },
+        "2": {
+          "rounds read": 9,
+          "pair rows": 34,
+          "chain matches": 34,
+          "pair rows with a third family present": 31,
+          "chain shorter than direct prediction": 0,
+          "direct predictions missed": 0,
+          "set costs read": 41,
+          "SK2 direct crossing matches": 41,
+          "SK2 measured crossing matches": 41,
+          "SK3 rounds at 8": 9,
+          "SK3 dimension matches at 8": 9,
+          "SK3 individual sum classifications matched at 8": 41,
+          "SK3 rounds at 12": 9,
+          "SK3 dimension matches at 12": 9,
+          "SK3 individual sum classifications matched at 12": 41,
+          "shortest reading rounds": 9,
+          "shortest reading keeps a sum": 5,
+          "rounds with a strictly cheaper family chain possible": 0
+        },
+        "3": {
+          "rounds read": 9,
+          "pair rows": 34,
+          "chain matches": 34,
+          "pair rows with a third family present": 31,
+          "chain shorter than direct prediction": 0,
+          "direct predictions missed": 0,
+          "set costs read": 41,
+          "SK2 direct crossing matches": 41,
+          "SK2 measured crossing matches": 41,
+          "SK3 rounds at 8": 9,
+          "SK3 dimension matches at 8": 9,
+          "SK3 individual sum classifications matched at 8": 41,
+          "SK3 rounds at 12": 9,
+          "SK3 dimension matches at 12": 9,
+          "SK3 individual sum classifications matched at 12": 41,
+          "shortest reading rounds": 9,
+          "shortest reading keeps a sum": 5,
+          "rounds with a strictly cheaper family chain possible": 0
+        },
+        "4": {
+          "rounds read": 9,
+          "pair rows": 34,
+          "chain matches": 34,
+          "pair rows with a third family present": 31,
+          "chain shorter than direct prediction": 0,
+          "direct predictions missed": 0,
+          "set costs read": 41,
+          "SK2 direct crossing matches": 41,
+          "SK2 measured crossing matches": 41,
+          "SK3 rounds at 8": 9,
+          "SK3 dimension matches at 8": 9,
+          "SK3 individual sum classifications matched at 8": 41,
+          "SK3 rounds at 12": 9,
+          "SK3 dimension matches at 12": 9,
+          "SK3 individual sum classifications matched at 12": 41,
+          "shortest reading rounds": 9,
+          "shortest reading keeps a sum": 5,
+          "rounds with a strictly cheaper family chain possible": 0
+        }
+      },
+      "direct exceptions": [
+        {
+          "start": "sampled 12-35",
+          "start supports": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              3,
+              4,
+              18
+            ],
+            [
+              0,
+              1,
+              19,
+              20
+            ],
+            [
+              5,
+              6,
+              7
+            ],
+            [
+              5,
+              8,
+              9,
+              10,
+              11,
+              21
+            ],
+            [
+              12,
+              13,
+              14,
+              15
+            ],
+            [
+              2,
+              8,
+              9
+            ],
+            [
+              16,
+              22,
+              23
+            ],
+            [
+              3,
+              4,
+              12,
+              24
+            ],
+            [
+              6,
+              7,
+              25,
+              26
+            ],
+            [
+              13,
+              16,
+              17,
+              27
+            ],
+            [
+              10,
+              11,
+              14,
+              15,
+              17
+            ]
+          ],
+          "families": [
+            [
+              1
+            ],
+            [
+              2
+            ],
+            [
+              4,
+              8,
+              9,
+              10
+            ],
+            [
+              7
+            ]
+          ],
+          "starting steps": {
+            "0-1": 7,
+            "0-2": 1,
+            "0-3": 4,
+            "1-2": 3,
+            "1-3": 6,
+            "2-3": 1
+          },
+          "round": 0,
+          "witnesses": [
+            {
+              "families": [
+                0,
+                1
+              ],
+              "least change distinctions": [
+                0,
+                2,
+                3,
+                8,
+                18,
+                19,
+                21,
+                24
+              ],
+              "loose distinctions in least change": [
+                18,
+                19,
+                21,
+                24
+              ],
+              "direct prediction": 9,
+              "chain prediction": 8
+            }
+          ]
+        },
+        {
+          "start": "sampled 12-56",
+          "start supports": [
+            [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            [
+              5,
+              19,
+              20
+            ],
+            [
+              6,
+              7,
+              8,
+              9
+            ],
+            [
+              6,
+              7,
+              21
+            ],
+            [
+              0,
+              1,
+              10,
+              22
+            ],
+            [
+              5,
+              8,
+              11,
+              23
+            ],
+            [
+              2,
+              12,
+              13
+            ],
+            [
+              3,
+              4,
+              24,
+              25
+            ],
+            [
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              26,
+              27
+            ],
+            [
+              9,
+              11,
+              14,
+              15
+            ],
+            [
+              10,
+              18,
+              28
+            ],
+            [
+              16,
+              17,
+              18
+            ]
+          ],
+          "families": [
+            [
+              1
+            ],
+            [
+              3,
+              5,
+              8,
+              10
+            ],
+            [
+              4,
+              7
+            ]
+          ],
+          "starting steps": {
+            "0-1": 1,
+            "0-2": 6,
+            "1-2": 1
+          },
+          "round": 0,
+          "witnesses": [
+            {
+              "families": [
+                0,
+                2
+              ],
+              "least change distinctions": [
+                5,
+                10,
+                19,
+                22,
+                23,
+                28
+              ],
+              "loose distinctions in least change": [
+                19,
+                23,
+                28,
+                22
+              ],
+              "direct prediction": 8,
+              "chain prediction": 6
+            }
+          ]
+        }
+      ],
+      "chain discrepancies": [],
+      "archive discrepancies": [],
+      "seconds including roster generation": 4.9974
+    },
+    "built": {
+      "archive sha256": "d30e7d7490665c3b099a43fd0e812ad36b569432dd9814256fbc1b30dd7627c1",
+      "population": 33,
+      "counts": {
+        "starts": 33,
+        "starts with 6 families": 8,
+        "eligible starts": 33,
+        "starts with maximum triangle defect 0": 33,
+        "rounds read": 135,
+        "pair rows": 1491,
+        "chain matches": 1491,
+        "pair rows with a third family present": 1491,
+        "chain shorter than direct prediction": 0,
+        "direct predictions missed": 0,
+        "set costs read": 1365,
+        "SK2 direct crossing matches": 1365,
+        "SK2 measured crossing matches": 1365,
+        "SK3 rounds at 8": 111,
+        "SK3 dimension matches at 8": 111,
+        "SK3 individual sum classifications matched at 8": 1365,
+        "SK3 rounds at 12": 111,
+        "SK3 dimension matches at 12": 111,
+        "SK3 individual sum classifications matched at 12": 1365,
+        "shortest reading rounds": 111,
+        "shortest reading keeps a sum": 99,
+        "rounds with a strictly cheaper family chain possible": 0,
+        "funded transitions": 118,
+        "births": 3174,
+        "zero-fresh births": 0,
+        "starts with 3 families": 9,
+        "end: not read": 16,
+        "starts with 8 families": 8,
+        "starts with 4 families": 8
+      },
+      "counts by round": {
+        "0": {
+          "rounds read": 33,
+          "pair rows": 419,
+          "chain matches": 419,
+          "pair rows with a third family present": 419,
+          "chain shorter than direct prediction": 0,
+          "direct predictions missed": 0,
+          "set costs read": 331,
+          "SK2 direct crossing matches": 331,
+          "SK2 measured crossing matches": 331,
+          "SK3 rounds at 8": 25,
+          "SK3 dimension matches at 8": 25,
+          "SK3 individual sum classifications matched at 8": 331,
+          "SK3 rounds at 12": 25,
+          "SK3 dimension matches at 12": 25,
+          "SK3 individual sum classifications matched at 12": 331,
+          "shortest reading rounds": 25,
+          "shortest reading keeps a sum": 13,
+          "rounds with a strictly cheaper family chain possible": 0
+        },
+        "1": {
+          "rounds read": 33,
+          "pair rows": 419,
+          "chain matches": 419,
+          "pair rows with a third family present": 419,
+          "chain shorter than direct prediction": 0,
+          "direct predictions missed": 0,
+          "set costs read": 331,
+          "SK2 direct crossing matches": 331,
+          "SK2 measured crossing matches": 331,
+          "SK3 rounds at 8": 25,
+          "SK3 dimension matches at 8": 25,
+          "SK3 individual sum classifications matched at 8": 331,
+          "SK3 rounds at 12": 25,
+          "SK3 dimension matches at 12": 25,
+          "SK3 individual sum classifications matched at 12": 331,
+          "shortest reading rounds": 25,
+          "shortest reading keeps a sum": 25,
+          "rounds with a strictly cheaper family chain possible": 0
+        },
+        "2": {
+          "rounds read": 31,
+          "pair rows": 363,
+          "chain matches": 363,
+          "pair rows with a third family present": 363,
+          "chain shorter than direct prediction": 0,
+          "direct predictions missed": 0,
+          "set costs read": 331,
+          "SK2 direct crossing matches": 331,
+          "SK2 measured crossing matches": 331,
+          "SK3 rounds at 8": 25,
+          "SK3 dimension matches at 8": 25,
+          "SK3 individual sum classifications matched at 8": 331,
+          "SK3 rounds at 12": 25,
+          "SK3 dimension matches at 12": 25,
+          "SK3 individual sum classifications matched at 12": 331,
+          "shortest reading rounds": 25,
+          "shortest reading keeps a sum": 25,
+          "rounds with a strictly cheaper family chain possible": 0
+        },
+        "3": {
+          "rounds read": 21,
+          "pair rows": 179,
+          "chain matches": 179,
+          "pair rows with a third family present": 179,
+          "chain shorter than direct prediction": 0,
+          "direct predictions missed": 0,
+          "set costs read": 193,
+          "SK2 direct crossing matches": 193,
+          "SK2 measured crossing matches": 193,
+          "SK3 rounds at 8": 19,
+          "SK3 dimension matches at 8": 19,
+          "SK3 individual sum classifications matched at 8": 193,
+          "SK3 rounds at 12": 19,
+          "SK3 dimension matches at 12": 19,
+          "SK3 individual sum classifications matched at 12": 193,
+          "shortest reading rounds": 19,
+          "shortest reading keeps a sum": 19,
+          "rounds with a strictly cheaper family chain possible": 0
+        },
+        "4": {
+          "rounds read": 17,
+          "pair rows": 111,
+          "chain matches": 111,
+          "pair rows with a third family present": 111,
+          "chain shorter than direct prediction": 0,
+          "direct predictions missed": 0,
+          "set costs read": 179,
+          "SK2 direct crossing matches": 179,
+          "SK2 measured crossing matches": 179,
+          "SK3 rounds at 8": 17,
+          "SK3 dimension matches at 8": 17,
+          "SK3 individual sum classifications matched at 8": 179,
+          "SK3 rounds at 12": 17,
+          "SK3 dimension matches at 12": 17,
+          "SK3 individual sum classifications matched at 12": 179,
+          "shortest reading rounds": 17,
+          "shortest reading keeps a sum": 17,
+          "rounds with a strictly cheaper family chain possible": 0
+        }
+      },
+      "direct exceptions": [],
+      "chain discrepancies": [],
+      "archive discrepancies": [],
+      "seconds including roster generation": 0.4359
+    }
+  },
+  "seconds": 6.6048,
+  "peak RSS KiB": 29128
+}

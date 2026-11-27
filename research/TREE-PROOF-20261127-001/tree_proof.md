@@ -1,7 +1,18 @@
 # The cost of flipping two families' facts, and the tree it makes
 
-`TREE-PROOF-20261127-001`, at the coordinator's request while `SELECTED-KNOTS-20261127-001`'s referee runs. A proof,
-not refereed; each step is marked **proved** (here, from the engine's definitions) or **computed** (checked on records).
+`TREE-PROOF-20261127-001`, at the coordinator's request while `SELECTED-KNOTS-20261127-001`'s referee runs. A proof;
+each step is marked **proved** (here, from the engine's definitions) or **computed** (checked on records).
+
+> **Referee R1: refuted on one claim, the theorem confirmed** ([report](referee-R1/report.md)). The shortest-chain
+> theorem holds (all 6,839 archived costs and 571 fresh ones; Lemma 2 on 50,634 positive-round comparisons; the three
+> round-0 exceptions by full enumeration, each using two loose distinctions of an intervening family). **Block:** "the
+> tree is the single-linkage tree of distances between allowed states alone" is false: two connected starts give the
+> same 4,096 allowed states on the same 27 distinctions after one round, with three families each, but one tree joins
+> two families at cost 5 and the third at 8, the other all three at 7. Given the family parity map, the costs determine
+> the tree at every resolution; the start supplies that map. **Proof fixes (not a block):** in Γ_t with U removed a
+> birth's neighbours are its parents and children; the common parent in Lemma 2 is the witness at proposal time; the
+> lower bound allows closed routes left over and same-family routes, and charges one loose distinction per odd point.
+> Chains through a wide family can beat the direct step for many rounds (a 51-knot start: 70 against 72 at round 16).
 
 ## Setting
 
@@ -26,7 +37,7 @@ route from a live knot of A to a live knot of B: a step count on the meeting pat
 - **E3.** A birth with no fresh distinction is the only birth of its connected structure; so, while growth does not
   close, every birth has a fresh distinction. *Proved in `ERASURE-AND-CLOSING-SIGNS-20261121-001B` (closing law).*
 
-**Lemma 1 (lineages are closed).** A birth's neighbours in Γ_t are its parents and its children, and all its parents
+**Lemma 1 (lineages are closed).** In Γ_t with U removed, a birth's neighbours are its parents and its children, and all its parents
 lie in one lineage. *Proved* (THIRD-LAYER referee R1, argument.md; also the draft of this thread): a birth holds its
 inputs, shared with its parents, and its fresh distinctions, loose until its children take them; by E2 at round 1 its
 parents are candidates, so one family, and at later rounds two parents with a common neighbour have a common parent.
@@ -83,16 +94,17 @@ on every other row ([`chain_check.py`](chain_check.py), [`chain_check.json`](cha
 ## Distance, the owner's premise, and the reading
 
 - **Which distance.** d is a step count on the meeting pattern between families (the glossary's step counts, lesson
-  7.3), not bond distance (lesson 2.4). But c_t is a distance between allowed states: the least number of distinctions
-  in which two allowed states differ when they differ in exactly A's and B's facts. And c_t has the same clusters as
-  w_t at every threshold (a chain of length at most k has every edge at most k), so **the tree is the single-linkage
-  tree of distances between allowed states alone**, and for t large enough c_t − 2t − 2 returns d itself. This bears on
-  the owner's premise that distance is the only form of information (A97): what growth selects at the second layer is
-  read off distances, with nothing else supplied. The families themselves are read as the finest clusters.
+  7.3), not bond distance (lesson 2.4). c_t is a distance between allowed states (the least number of distinctions in
+  which two allowed states differ when they differ in exactly A's and B's facts), and it has the same clusters as w_t at
+  every threshold. [Corrected after R1, Block:] **given the family parity map, these least distances determine the
+  families' single-linkage tree at every resolution; the starting presentation supplies the family map.** The allowed
+  states alone do not: two starts with the same allowed states on the same distinctions give different trees. So the
+  owner's premise that distance is the only form of information (A97) is not shown here: the tree is read off
+  distances once the families' facts are named, and naming them uses the holdings.
 - **Which reading the model would use.** None is needed for the tree: c_t is defined without a reading of a small
   change. A reading enters only to call some sums "class facts" at a round: the scale k is then a free resolution the
   model does not fix, and the shortest-change reading, which ties a shortest change through every distinction, hides
-  the tree on most sampled rows (11 to 32 per cent show it, `SELECTED-KNOTS-20261127-001`). So the honest statement is
+  the tree on most sampled rows (at rounds one to four some family sum survives every tied shortest change on 105 of 928 census-sample rows, 245 of 1,268 held-out and 69 of 216 sampled rows, `SELECTED-KNOTS-20261127-001`; this counts kept sums, not recovery of the tree's branching). So the honest statement is
   that the model supplies the costs and their tree; which level counts as "the facts" is a reading, a scaffold.
 
 ## What is not covered

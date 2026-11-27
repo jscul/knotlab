@@ -10,7 +10,7 @@ The note is [README.md](README.md) (frozen section committed at `965e73547a` bef
 | 2 | T2 and the one relation: on a connected start the families' facts obey exactly one relation, the sum of all its laws | proved (component lemma, conjecture.md (ii)); computed, frozen | `twokinds.py` | `frozen_*.jsonl` |
 | 3 | T3: the least change flipping a family's fact grows by at least two distinctions a round | computed, frozen | `minflip.py`, `twokinds.py` | `frozen_*.jsonl` |
 | 4 | T4: at the scale of five, the class-fact count is equal at rounds 3 and 4 and contains every family's fact | computed, frozen | `twokinds.py` (`labels_dim`) | `frozen_*.jsonl` |
-| 5 | At round 4 and the scale one below the families' flip, the bound facts are held by no part on 10 of 12 three-ring families read | computed, read (no prediction) | `scale.py`, `scale_read.py` | `frozen_scale_read.jsonl` |
+| 5 | At round 4 and the scale one below the families' flip, the bound facts are held by no part on 10 of 12 three-ring families read [R1: 8 of 12 for family facts, 4 of 12 for whole-ring facts] | computed, read (no prediction) | `scale.py`, `scale_read.py` | `frozen_scale_read.jsonl` |
 | 6 | At small scale the ring and sampled bindings are sums of single-knot facts (the narrowing logged today) | computed, before the freeze | `jointly.py`, `jointly_examples.py` | `jointly_explore.jsonl`, `jointly_examples.jsonl` |
 | 7 | The conclusion: one second-layer knot per connected start, so the binding step does not repeat under ordinary growth | argument from 2 with 1, 3, 4 | conjecture.md | as above |
 

@@ -1,6 +1,6 @@
 """minflip.py: the least size of an allowed change that flips a parity (the least flipping change), by a solver.
 THIRD-LAYER-20261126-001.  An allowed change is a set z of distinctions meeting every knot evenly; it flips a parity f
-when it meets f's support oddly.  least(st, f, kmax) is the least |z|, or None if more than kmax."""
+when it meets f's support oddly.  least(st, f, kmax) is the least |z|; None for a fixed parity (a sum of laws), and the string 'more than kmax' for a least above kmax."""
 import itertools
 from pysat.solvers import Minisat22
 from pysat.card import CardEnc, EncType

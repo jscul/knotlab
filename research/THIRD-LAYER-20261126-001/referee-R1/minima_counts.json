@@ -1,0 +1,4662 @@
+{
+  "controls": {
+    "small incidence patterns": 28,
+    "least flip comparisons": 24666,
+    "short move span comparisons": 282,
+    "cap convention on known minima": [
+      {
+        "one cyclic allowed change of size": 39,
+        "exact minimum": 39,
+        "at cap 40": 39,
+        "fixed parity at cap 40": null
+      },
+      {
+        "one cyclic allowed change of size": 40,
+        "exact minimum": 40,
+        "at cap 40": 40,
+        "fixed parity at cap 40": null
+      },
+      {
+        "one cyclic allowed change of size": 41,
+        "exact minimum": 41,
+        "at cap 40": "more than 40",
+        "fixed parity at cap 40": null
+      }
+    ]
+  },
+  "archives": {
+    "census": {
+      "archive sha256": "bfb9b043215d7c4568fbaadecca4e53d1129d5720e0fbb1ad18c3d2d4a813eb7",
+      "counts": {
+        "starts": 1000,
+        "stages": 3158,
+        "all family selections": 5648,
+        "fixed family selections": 3126,
+        "archived family minima": 4347,
+        "nonconstant archived family minima": 2402,
+        "additional round-two scale-five dimensions": 486,
+        "archived scale-five dimensions": 950,
+        "archived scale-five membership verdicts": 464,
+        "scale-five nonconstant family membership checks": 944,
+        "additional paired round-two and round-three dimensions": 475,
+        "paired round-two and round-three identical source class spaces": 475,
+        "paired round-three and round-four dimensions": 475,
+        "paired round-three and round-four identical source class spaces": 475,
+        "nonconstant family selections": 2522,
+        "nonconstant family selections compared between rounds": 1984,
+        "nonconstant family selections grew by exactly two": 1984
+      },
+      "least flip frequency": {
+        "fixed": 1945,
+        "5": 468,
+        "7": 468,
+        "9": 468,
+        "11": 468,
+        "13": 85,
+        "3": 425,
+        "6": 4,
+        "8": 4,
+        "10": 4,
+        "12": 4,
+        "14": 4
+      },
+      "ends": {
+        "stalled": 246,
+        "closed": 279
+      },
+      "scale-five class fact rank in excess of family span frequency": {
+        "0": 950
+      },
+      "examples": {},
+      "differences": []
+    },
+    "heldout": {
+      "archive sha256": "0aa023788a174abd223a29975a12c389fc66edc67c294214e01f10e8264e63b1",
+      "counts": {
+        "starts": 900,
+        "stages": 2480,
+        "all family selections": 9238,
+        "nonconstant family selections": 6758,
+        "fixed family selections": 2480,
+        "archived family minima": 4961,
+        "nonconstant archived family minima": 4264,
+        "additional round-two scale-five dimensions": 394,
+        "archived scale-five dimensions": 769,
+        "archived scale-five membership verdicts": 634,
+        "scale-five nonconstant family membership checks": 1536,
+        "additional paired round-two and round-three dimensions": 385,
+        "paired round-two and round-three identical source class spaces": 385,
+        "paired round-three and round-four dimensions": 384,
+        "paired round-three and round-four identical source class spaces": 384,
+        "nonconstant family selections compared between rounds": 5000,
+        "nonconstant family selections grew by exactly two": 5000
+      },
+      "least flip frequency": {
+        "5": 760,
+        "fixed": 697,
+        "3": 857,
+        "7": 725,
+        "9": 725,
+        "11": 725,
+        "13": 243,
+        "6": 45,
+        "8": 43,
+        "10": 43,
+        "12": 43,
+        "14": 43,
+        "15": 12
+      },
+      "ends": {
+        "stalled": 483,
+        "closed": 33
+      },
+      "scale-five class fact rank in excess of family span frequency": {
+        "0": 719,
+        "1": 50
+      },
+      "examples": {
+        "scale five above family span": {
+          "start": "held out 6-24",
+          "round": 3,
+          "class fact rank": 2,
+          "rank of family parities modulo laws": 1
+        }
+      },
+      "differences": []
+    },
+    "sampled": {
+      "archive sha256": "fca149d41a9dc1c8e1f91cce4d9ce845a51d6c47b47a3cc8df2f71298ef4828d",
+      "counts": {
+        "starts": 400,
+        "stages": 668,
+        "all family selections": 2400,
+        "fixed family selections": 668,
+        "archived family minima": 1243,
+        "nonconstant archived family minima": 965,
+        "nonconstant family selections": 1732,
+        "nonconstant family selections compared between rounds": 1040,
+        "nonconstant family selections grew by exactly two": 1040,
+        "additional round-two scale-five dimensions": 67,
+        "archived scale-five dimensions": 132,
+        "archived scale-five membership verdicts": 108,
+        "scale-five nonconstant family membership checks": 274,
+        "additional paired round-two and round-three dimensions": 67,
+        "paired round-two and round-three identical source class spaces": 67,
+        "paired round-three and round-four dimensions": 65,
+        "paired round-three and round-four identical source class spaces": 65
+      },
+      "least flip frequency": {
+        "fixed": 278,
+        "3": 297,
+        "5": 191,
+        "7": 130,
+        "9": 130,
+        "11": 130,
+        "13": 49,
+        "6": 10,
+        "8": 7,
+        "10": 7,
+        "12": 7,
+        "14": 7
+      },
+      "ends": {
+        "stalled": 331,
+        "closed": 4
+      },
+      "scale-five class fact rank in excess of family span frequency": {
+        "0": 106,
+        "1": 16,
+        "2": 10
+      },
+      "examples": {
+        "scale five above family span": {
+          "start": "sampled 9-14",
+          "round": 3,
+          "class fact rank": 1,
+          "rank of family parities modulo laws": 0
+        }
+      },
+      "differences": []
+    },
+    "built": {
+      "archive sha256": "2b0ff5da4bafa200317d5211eaa626b91390c7800a943ffde124a61bfbc6cac0",
+      "counts": {
+        "starts": 33,
+        "stages": 135,
+        "all family selections": 8961,
+        "nonconstant family selections": 8826,
+        "fixed family selections": 135,
+        "archived family minima": 655,
+        "nonconstant archived family minima": 655,
+        "nonconstant family selections compared between rounds": 6132,
+        "nonconstant family selections grew by exactly two": 6132,
+        "additional round-two scale-five dimensions": 31,
+        "archived scale-five dimensions": 38,
+        "archived scale-five membership verdicts": 38,
+        "scale-five nonconstant family membership checks": 158,
+        "additional paired round-two and round-three dimensions": 21,
+        "paired round-two and round-three identical source class spaces": 21,
+        "paired round-three and round-four dimensions": 17,
+        "paired round-three and round-four identical source class spaces": 17
+      },
+      "least flip frequency": {
+        "3": 112,
+        "5": 168,
+        "7": 152,
+        "9": 96,
+        "11": 72,
+        "13": 40,
+        "6": 3,
+        "8": 3,
+        "10": 3,
+        "12": 3,
+        "14": 3
+      },
+      "ends": {
+        "not read": 16
+      },
+      "scale-five class fact rank in excess of family span frequency": {
+        "1": 16,
+        "4": 8,
+        "3": 10,
+        "7": 2,
+        "0": 2
+      },
+      "examples": {
+        "scale five above family span": {
+          "start": "3 rings of 4, split, double",
+          "round": 3,
+          "class fact rank": 6,
+          "rank of family parities modulo laws": 5
+        }
+      },
+      "differences": []
+    },
+    "merge": {
+      "archive sha256": "e2724e79fa8ca228ed4fb106b57efc055ac0e67c07759736b31c20a8a9a1abd8",
+      "counts": {
+        "starts": 16,
+        "stages": 40,
+        "all family selections": 1016,
+        "nonconstant family selections": 976,
+        "fixed family selections": 40,
+        "archived family minima": 176,
+        "nonconstant archived family minima": 176,
+        "nonconstant family selections compared between rounds": 720,
+        "nonconstant family selections grew by exactly two": 720,
+        "additional round-two scale-five dimensions": 8,
+        "archived scale-five dimensions": 8,
+        "archived scale-five membership verdicts": 8,
+        "scale-five nonconstant family membership checks": 40,
+        "additional paired round-two and round-three dimensions": 4,
+        "paired round-two and round-three identical source class spaces": 4,
+        "paired round-three and round-four dimensions": 4,
+        "paired round-three and round-four identical source class spaces": 4
+      },
+      "least flip frequency": {
+        "3": 40,
+        "5": 56,
+        "7": 40,
+        "9": 20,
+        "11": 20
+      },
+      "ends": {
+        "stalled": 8,
+        "not read": 4
+      },
+      "scale-five class fact rank in excess of family span frequency": {
+        "1": 8
+      },
+      "examples": {
+        "scale five above family span": {
+          "start": "3 rings of 4, split, double + a dead knot meeting rings 1 and 2",
+          "round": 3,
+          "class fact rank": 5,
+          "rank of family parities modulo laws": 4
+        }
+      },
+      "differences": []
+    }
+  },
+  "totals": {
+    "starts": 2349,
+    "stages": 6481,
+    "all family selections": 27263,
+    "fixed family selections": 6449,
+    "archived family minima": 11382,
+    "nonconstant archived family minima": 8462,
+    "additional round-two scale-five dimensions": 986,
+    "archived scale-five dimensions": 1897,
+    "archived scale-five membership verdicts": 1252,
+    "scale-five nonconstant family membership checks": 2952,
+    "additional paired round-two and round-three dimensions": 952,
+    "paired round-two and round-three identical source class spaces": 952,
+    "paired round-three and round-four dimensions": 945,
+    "paired round-three and round-four identical source class spaces": 945,
+    "nonconstant family selections": 20814,
+    "nonconstant family selections compared between rounds": 14876,
+    "nonconstant family selections grew by exactly two": 14876
+  },
+  "built ring audit": {
+    "counts": {
+      "built ring minimum measurements": 496,
+      "built connector attachment minimum measurements": 1248,
+      "built ring minimum measurements in conjecture B citation": 448,
+      "archived scale-read family minima": 48,
+      "preadvertised attachment minimum measurements": 30,
+      "size-cap omissions checked separately": 4
+    },
+    "measurements": [
+      {
+        "start": "3 rings of 4, split, double",
+        "connector attachment supports": {
+          "12": [
+            36,
+            37
+          ],
+          "13": [
+            38,
+            39
+          ],
+          "14": [
+            42,
+            43
+          ],
+          "15": [
+            44,
+            45
+          ],
+          "16": [
+            48,
+            49
+          ],
+          "17": [
+            50,
+            51
+          ]
+        },
+        "rounds": [
+          {
+            "round": 0,
+            "distinctions": 54,
+            "least ring flips": [
+              5,
+              5,
+              5
+            ],
+            "least connector attachment flips": {
+              "12": 5,
+              "13": 5,
+              "14": 5,
+              "15": 5,
+              "16": 5,
+              "17": 5
+            }
+          },
+          {
+            "round": 1,
+            "distinctions": 90,
+            "least ring flips": [
+              7,
+              7,
+              7
+            ],
+            "least connector attachment flips": {
+              "12": 7,
+              "13": 7,
+              "14": 7,
+              "15": 7,
+              "16": 7,
+              "17": 7
+            }
+          },
+          {
+            "round": 2,
+            "distinctions": 138,
+            "least ring flips": [
+              9,
+              9,
+              9
+            ],
+            "least connector attachment flips": {
+              "12": 9,
+              "13": 9,
+              "14": 9,
+              "15": 9,
+              "16": 9,
+              "17": 9
+            }
+          },
+          {
+            "round": 3,
+            "distinctions": 198,
+            "least ring flips": [
+              11,
+              11,
+              11
+            ],
+            "least connector attachment flips": {
+              "12": 11,
+              "13": 11,
+              "14": 11,
+              "15": 11,
+              "16": 11,
+              "17": 11
+            }
+          },
+          {
+            "round": 4,
+            "distinctions": 270,
+            "least ring flips": [
+              13,
+              13,
+              13
+            ],
+            "least connector attachment flips": {
+              "12": 12,
+              "13": 12,
+              "14": 12,
+              "15": 12,
+              "16": 12,
+              "17": 12
+            }
+          }
+        ],
+        "scale-read family minima": [
+          11,
+          11,
+          11,
+          11,
+          11,
+          11
+        ]
+      },
+      {
+        "start": "3 rings of 4, split, detour",
+        "connector attachment supports": {
+          "12": [
+            36,
+            37
+          ],
+          "13": [
+            38,
+            39
+          ],
+          "17": [
+            49,
+            50
+          ],
+          "18": [
+            51,
+            52
+          ],
+          "22": [
+            62,
+            63
+          ],
+          "23": [
+            64,
+            65
+          ]
+        },
+        "rounds": [
+          {
+            "round": 0,
+            "distinctions": 75,
+            "least ring flips": [
+              5,
+              5,
+              5
+            ],
+            "least connector attachment flips": {
+              "12": 5,
+              "13": 5,
+              "17": 5,
+              "18": 5,
+              "22": 5,
+              "23": 5
+            }
+          },
+          {
+            "round": 1,
+            "distinctions": 111,
+            "least ring flips": [
+              7,
+              7,
+              7
+            ],
+            "least connector attachment flips": {
+              "12": 7,
+              "13": 7,
+              "17": 7,
+              "18": 7,
+              "22": 7,
+              "23": 7
+            }
+          },
+          {
+            "round": 2,
+            "distinctions": 159,
+            "least ring flips": [
+              9,
+              9,
+              9
+            ],
+            "least connector attachment flips": {
+              "12": 9,
+              "13": 9,
+              "17": 9,
+              "18": 9,
+              "22": 9,
+              "23": 9
+            }
+          },
+          {
+            "round": 3,
+            "distinctions": 219,
+            "least ring flips": [
+              11,
+              11,
+              11
+            ],
+            "least connector attachment flips": {
+              "12": 11,
+              "13": 11,
+              "17": 11,
+              "18": 11,
+              "22": 11,
+              "23": 11
+            }
+          },
+          {
+            "round": 4,
+            "distinctions": 291,
+            "least ring flips": [
+              13,
+              13,
+              13
+            ],
+            "least connector attachment flips": {
+              "12": 12,
+              "13": 12,
+              "17": 12,
+              "18": 12,
+              "22": 12,
+              "23": 12
+            }
+          }
+        ],
+        "scale-read family minima": [
+          11,
+          11,
+          11,
+          11,
+          11,
+          11
+        ]
+      },
+      {
+        "start": "3 rings of 4, paired, double",
+        "connector attachment supports": {
+          "12": [
+            36,
+            37
+          ],
+          "13": [
+            38,
+            39
+          ],
+          "14": [
+            42,
+            43
+          ],
+          "15": [
+            44,
+            45
+          ],
+          "16": [
+            48,
+            49
+          ],
+          "17": [
+            50,
+            51
+          ]
+        },
+        "rounds": [
+          {
+            "round": 0,
+            "distinctions": 54,
+            "least ring flips": [
+              5,
+              5,
+              5
+            ],
+            "least connector attachment flips": {
+              "12": 5,
+              "13": 5,
+              "14": 5,
+              "15": 5,
+              "16": 5,
+              "17": 5
+            }
+          },
+          {
+            "round": 1,
+            "distinctions": 90,
+            "least ring flips": [
+              7,
+              7,
+              7
+            ],
+            "least connector attachment flips": {
+              "12": 7,
+              "13": 7,
+              "14": 7,
+              "15": 7,
+              "16": 7,
+              "17": 7
+            }
+          },
+          {
+            "round": 2,
+            "distinctions": 138,
+            "least ring flips": [
+              9,
+              9,
+              9
+            ],
+            "least connector attachment flips": {
+              "12": 9,
+              "13": 9,
+              "14": 9,
+              "15": 9,
+              "16": 9,
+              "17": 9
+            }
+          },
+          {
+            "round": 3,
+            "distinctions": 198,
+            "least ring flips": [
+              11,
+              11,
+              11
+            ],
+            "least connector attachment flips": {
+              "12": 11,
+              "13": 11,
+              "14": 11,
+              "15": 11,
+              "16": 11,
+              "17": 11
+            }
+          },
+          {
+            "round": 4,
+            "distinctions": 270,
+            "least ring flips": [
+              13,
+              13,
+              13
+            ],
+            "least connector attachment flips": {
+              "12": 13,
+              "13": 13,
+              "14": 13,
+              "15": 13,
+              "16": 13,
+              "17": 13
+            }
+          }
+        ],
+        "scale-read family minima": [
+          11,
+          11,
+          11,
+          11,
+          11,
+          11
+        ]
+      },
+      {
+        "start": "3 rings of 4, paired, detour",
+        "connector attachment supports": {
+          "12": [
+            36,
+            37
+          ],
+          "13": [
+            38,
+            39
+          ],
+          "17": [
+            49,
+            50
+          ],
+          "18": [
+            51,
+            52
+          ],
+          "22": [
+            62,
+            63
+          ],
+          "23": [
+            64,
+            65
+          ]
+        },
+        "rounds": [
+          {
+            "round": 0,
+            "distinctions": 75,
+            "least ring flips": [
+              5,
+              5,
+              5
+            ],
+            "least connector attachment flips": {
+              "12": 5,
+              "13": 5,
+              "17": 5,
+              "18": 5,
+              "22": 5,
+              "23": 5
+            }
+          },
+          {
+            "round": 1,
+            "distinctions": 111,
+            "least ring flips": [
+              7,
+              7,
+              7
+            ],
+            "least connector attachment flips": {
+              "12": 7,
+              "13": 7,
+              "17": 7,
+              "18": 7,
+              "22": 7,
+              "23": 7
+            }
+          },
+          {
+            "round": 2,
+            "distinctions": 159,
+            "least ring flips": [
+              9,
+              9,
+              9
+            ],
+            "least connector attachment flips": {
+              "12": 9,
+              "13": 9,
+              "17": 9,
+              "18": 9,
+              "22": 9,
+              "23": 9
+            }
+          },
+          {
+            "round": 3,
+            "distinctions": 219,
+            "least ring flips": [
+              11,
+              11,
+              11
+            ],
+            "least connector attachment flips": {
+              "12": 11,
+              "13": 11,
+              "17": 11,
+              "18": 11,
+              "22": 11,
+              "23": 11
+            }
+          },
+          {
+            "round": 4,
+            "distinctions": 291,
+            "least ring flips": [
+              13,
+              13,
+              13
+            ],
+            "least connector attachment flips": {
+              "12": 13,
+              "13": 13,
+              "17": 13,
+              "18": 13,
+              "22": 13,
+              "23": 13
+            }
+          }
+        ],
+        "scale-read family minima": [
+          11,
+          11,
+          11,
+          11,
+          11,
+          11
+        ]
+      },
+      {
+        "start": "3 rings of 5, split, double",
+        "connector attachment supports": {
+          "15": [
+            45,
+            46
+          ],
+          "16": [
+            47,
+            48
+          ],
+          "17": [
+            51,
+            52
+          ],
+          "18": [
+            53,
+            54
+          ],
+          "19": [
+            57,
+            58
+          ],
+          "20": [
+            59,
+            60
+          ]
+        },
+        "rounds": [
+          {
+            "round": 0,
+            "distinctions": 63,
+            "least ring flips": [
+              5,
+              5,
+              5
+            ],
+            "least connector attachment flips": {
+              "15": 5,
+              "16": 5,
+              "17": 5,
+              "18": 5,
+              "19": 5,
+              "20": 5
+            }
+          },
+          {
+            "round": 1,
+            "distinctions": 93,
+            "least ring flips": [
+              7,
+              7,
+              7
+            ],
+            "least connector attachment flips": {
+              "15": 7,
+              "16": 7,
+              "17": 7,
+              "18": 7,
+              "19": 7,
+              "20": 7
+            }
+          },
+          {
+            "round": 2,
+            "distinctions": 123,
+            "least ring flips": [
+              9,
+              9,
+              9
+            ],
+            "least connector attachment flips": {
+              "15": 9,
+              "16": 9,
+              "17": 9,
+              "18": 9,
+              "19": 9,
+              "20": 9
+            }
+          },
+          {
+            "round": 3,
+            "distinctions": 153,
+            "least ring flips": [
+              11,
+              11,
+              11
+            ],
+            "least connector attachment flips": {
+              "15": 11,
+              "16": 11,
+              "17": 11,
+              "18": 11,
+              "19": 11,
+              "20": 11
+            }
+          },
+          {
+            "round": 4,
+            "distinctions": 183,
+            "least ring flips": [
+              13,
+              13,
+              13
+            ],
+            "least connector attachment flips": {
+              "15": 12,
+              "16": 12,
+              "17": 12,
+              "18": 12,
+              "19": 12,
+              "20": 12
+            }
+          }
+        ],
+        "scale-read family minima": [
+          13,
+          13,
+          13
+        ]
+      },
+      {
+        "start": "3 rings of 5, split, detour",
+        "connector attachment supports": {
+          "15": [
+            45,
+            46
+          ],
+          "16": [
+            47,
+            48
+          ],
+          "20": [
+            58,
+            59
+          ],
+          "21": [
+            60,
+            61
+          ],
+          "25": [
+            71,
+            72
+          ],
+          "26": [
+            73,
+            74
+          ]
+        },
+        "rounds": [
+          {
+            "round": 0,
+            "distinctions": 84,
+            "least ring flips": [
+              5,
+              5,
+              5
+            ],
+            "least connector attachment flips": {
+              "15": 5,
+              "16": 5,
+              "20": 5,
+              "21": 5,
+              "25": 5,
+              "26": 5
+            }
+          },
+          {
+            "round": 1,
+            "distinctions": 114,
+            "least ring flips": [
+              7,
+              7,
+              7
+            ],
+            "least connector attachment flips": {
+              "15": 7,
+              "16": 7,
+              "20": 7,
+              "21": 7,
+              "25": 7,
+              "26": 7
+            }
+          },
+          {
+            "round": 2,
+            "distinctions": 144,
+            "least ring flips": [
+              9,
+              9,
+              9
+            ],
+            "least connector attachment flips": {
+              "15": 9,
+              "16": 9,
+              "20": 9,
+              "21": 9,
+              "25": 9,
+              "26": 9
+            }
+          },
+          {
+            "round": 3,
+            "distinctions": 174,
+            "least ring flips": [
+              11,
+              11,
+              11
+            ],
+            "least connector attachment flips": {
+              "15": 11,
+              "16": 11,
+              "20": 11,
+              "21": 11,
+              "25": 11,
+              "26": 11
+            }
+          },
+          {
+            "round": 4,
+            "distinctions": 204,
+            "least ring flips": [
+              13,
+              13,
+              13
+            ],
+            "least connector attachment flips": {
+              "15": 12,
+              "16": 12,
+              "20": 12,
+              "21": 12,
+              "25": 12,
+              "26": 12
+            }
+          }
+        ],
+        "scale-read family minima": [
+          13,
+          13,
+          13
+        ]
+      },
+      {
+        "start": "3 rings of 5, paired, double",
+        "connector attachment supports": {
+          "15": [
+            45,
+            46
+          ],
+          "16": [
+            47,
+            48
+          ],
+          "17": [
+            51,
+            52
+          ],
+          "18": [
+            53,
+            54
+          ],
+          "19": [
+            57,
+            58
+          ],
+          "20": [
+            59,
+            60
+          ]
+        },
+        "rounds": [
+          {
+            "round": 0,
+            "distinctions": 63,
+            "least ring flips": [
+              5,
+              5,
+              5
+            ],
+            "least connector attachment flips": {
+              "15": 5,
+              "16": 5,
+              "17": 5,
+              "18": 5,
+              "19": 5,
+              "20": 5
+            }
+          },
+          {
+            "round": 1,
+            "distinctions": 93,
+            "least ring flips": [
+              7,
+              7,
+              7
+            ],
+            "least connector attachment flips": {
+              "15": 7,
+              "16": 7,
+              "17": 7,
+              "18": 7,
+              "19": 7,
+              "20": 7
+            }
+          },
+          {
+            "round": 2,
+            "distinctions": 123,
+            "least ring flips": [
+              9,
+              9,
+              9
+            ],
+            "least connector attachment flips": {
+              "15": 9,
+              "16": 9,
+              "17": 9,
+              "18": 9,
+              "19": 9,
+              "20": 9
+            }
+          },
+          {
+            "round": 3,
+            "distinctions": 153,
+            "least ring flips": [
+              11,
+              11,
+              11
+            ],
+            "least connector attachment flips": {
+              "15": 11,
+              "16": 11,
+              "17": 11,
+              "18": 11,
+              "19": 11,
+              "20": 11
+            }
+          },
+          {
+            "round": 4,
+            "distinctions": 183,
+            "least ring flips": [
+              13,
+              13,
+              13
+            ],
+            "least connector attachment flips": {
+              "15": 13,
+              "16": 13,
+              "17": 13,
+              "18": 13,
+              "19": 13,
+              "20": 13
+            }
+          }
+        ],
+        "scale-read family minima": [
+          13,
+          13,
+          13
+        ]
+      },
+      {
+        "start": "3 rings of 5, paired, detour",
+        "connector attachment supports": {
+          "15": [
+            45,
+            46
+          ],
+          "16": [
+            47,
+            48
+          ],
+          "20": [
+            58,
+            59
+          ],
+          "21": [
+            60,
+            61
+          ],
+          "25": [
+            71,
+            72
+          ],
+          "26": [
+            73,
+            74
+          ]
+        },
+        "rounds": [
+          {
+            "round": 0,
+            "distinctions": 84,
+            "least ring flips": [
+              5,
+              5,
+              5
+            ],
+            "least connector attachment flips": {
+              "15": 5,
+              "16": 5,
+              "20": 5,
+              "21": 5,
+              "25": 5,
+              "26": 5
+            }
+          },
+          {
+            "round": 1,
+            "distinctions": 114,
+            "least ring flips": [
+              7,
+              7,
+              7
+            ],
+            "least connector attachment flips": {
+              "15": 7,
+              "16": 7,
+              "20": 7,
+              "21": 7,
+              "25": 7,
+              "26": 7
+            }
+          },
+          {
+            "round": 2,
+            "distinctions": 144,
+            "least ring flips": [
+              9,
+              9,
+              9
+            ],
+            "least connector attachment flips": {
+              "15": 9,
+              "16": 9,
+              "20": 9,
+              "21": 9,
+              "25": 9,
+              "26": 9
+            }
+          },
+          {
+            "round": 3,
+            "distinctions": 174,
+            "least ring flips": [
+              11,
+              11,
+              11
+            ],
+            "least connector attachment flips": {
+              "15": 11,
+              "16": 11,
+              "20": 11,
+              "21": 11,
+              "25": 11,
+              "26": 11
+            }
+          },
+          {
+            "round": 4,
+            "distinctions": 204,
+            "least ring flips": [
+              13,
+              13,
+              13
+            ],
+            "least connector attachment flips": {
+              "15": 13,
+              "16": 13,
+              "20": 13,
+              "21": 13,
+              "25": 13,
+              "26": 13
+            }
+          }
+        ],
+        "scale-read family minima": [
+          13,
+          13,
+          13
+        ]
+      },
+      {
+        "start": "3 rings of 6, split, double",
+        "connector attachment supports": {
+          "18": [
+            54,
+            55
+          ],
+          "19": [
+            56,
+            57
+          ],
+          "20": [
+            60,
+            61
+          ],
+          "21": [
+            62,
+            63
+          ],
+          "22": [
+            66,
+            67
+          ],
+          "23": [
+            68,
+            69
+          ]
+        },
+        "rounds": [
+          {
+            "round": 0,
+            "distinctions": 72,
+            "least ring flips": [
+              5,
+              5,
+              5
+            ],
+            "least connector attachment flips": {
+              "18": 5,
+              "19": 5,
+              "20": 5,
+              "21": 5,
+              "22": 5,
+              "23": 5
+            }
+          },
+          {
+            "round": 1,
+            "distinctions": 126,
+            "least ring flips": [
+              7,
+              7,
+              7
+            ],
+            "least connector attachment flips": {
+              "18": 7,
+              "19": 7,
+              "20": 7,
+              "21": 7,
+              "22": 7,
+              "23": 7
+            }
+          },
+          {
+            "round": 2,
+            "distinctions": 216,
+            "least ring flips": [
+              9,
+              9,
+              9
+            ],
+            "least connector attachment flips": {
+              "18": 9,
+              "19": 9,
+              "20": 9,
+              "21": 9,
+              "22": 9,
+              "23": 9
+            }
+          },
+          {
+            "round": 3,
+            "distinctions": 360,
+            "least ring flips": [
+              11,
+              11,
+              11
+            ],
+            "least connector attachment flips": {
+              "18": 11,
+              "19": 11,
+              "20": 11,
+              "21": 11,
+              "22": 11,
+              "23": 11
+            }
+          },
+          {
+            "round": 4,
+            "distinctions": 576,
+            "least ring flips": [
+              13,
+              13,
+              13
+            ],
+            "least connector attachment flips": {
+              "18": 12,
+              "19": 12,
+              "20": 12,
+              "21": 12,
+              "22": 12,
+              "23": 12
+            }
+          }
+        ]
+      },
+      {
+        "start": "3 rings of 6, split, detour",
+        "connector attachment supports": {
+          "18": [
+            54,
+            55
+          ],
+          "19": [
+            56,
+            57
+          ],
+          "23": [
+            67,
+            68
+          ],
+          "24": [
+            69,
+            70
+          ],
+          "28": [
+            80,
+            81
+          ],
+          "29": [
+            82,
+            83
+          ]
+        },
+        "rounds": [
+          {
+            "round": 0,
+            "distinctions": 93,
+            "least ring flips": [
+              5,
+              5,
+              5
+            ],
+            "least connector attachment flips": {
+              "18": 5,
+              "19": 5,
+              "23": 5,
+              "24": 5,
+              "28": 5,
+              "29": 5
+            }
+          },
+          {
+            "round": 1,
+            "distinctions": 147,
+            "least ring flips": [
+              7,
+              7,
+              7
+            ],
+            "least connector attachment flips": {
+              "18": 7,
+              "19": 7,
+              "23": 7,
+              "24": 7,
+              "28": 7,
+              "29": 7
+            }
+          },
+          {
+            "round": 2,
+            "distinctions": 237,
+            "least ring flips": [
+              9,
+              9,
+              9
+            ],
+            "least connector attachment flips": {
+              "18": 9,
+              "19": 9,
+              "23": 9,
+              "24": 9,
+              "28": 9,
+              "29": 9
+            }
+          },
+          {
+            "round": 3,
+            "distinctions": 381,
+            "least ring flips": [
+              11,
+              11,
+              11
+            ],
+            "least connector attachment flips": {
+              "18": 11,
+              "19": 11,
+              "23": 11,
+              "24": 11,
+              "28": 11,
+              "29": 11
+            }
+          },
+          {
+            "round": 4,
+            "distinctions": 597,
+            "least ring flips": [
+              13,
+              13,
+              13
+            ],
+            "least connector attachment flips": {
+              "18": 12,
+              "19": 12,
+              "23": 12,
+              "24": 12,
+              "28": 12,
+              "29": 12
+            }
+          }
+        ]
+      },
+      {
+        "start": "3 rings of 6, paired, double",
+        "connector attachment supports": {
+          "18": [
+            54,
+            55
+          ],
+          "19": [
+            56,
+            57
+          ],
+          "20": [
+            60,
+            61
+          ],
+          "21": [
+            62,
+            63
+          ],
+          "22": [
+            66,
+            67
+          ],
+          "23": [
+            68,
+            69
+          ]
+        },
+        "rounds": [
+          {
+            "round": 0,
+            "distinctions": 72,
+            "least ring flips": [
+              5,
+              5,
+              5
+            ],
+            "least connector attachment flips": {
+              "18": 5,
+              "19": 5,
+              "20": 5,
+              "21": 5,
+              "22": 5,
+              "23": 5
+            }
+          },
+          {
+            "round": 1,
+            "distinctions": 126,
+            "least ring flips": [
+              7,
+              7,
+              7
+            ],
+            "least connector attachment flips": {
+              "18": 7,
+              "19": 7,
+              "20": 7,
+              "21": 7,
+              "22": 7,
+              "23": 7
+            }
+          },
+          {
+            "round": 2,
+            "distinctions": 216,
+            "least ring flips": [
+              9,
+              9,
+              9
+            ],
+            "least connector attachment flips": {
+              "18": 9,
+              "19": 9,
+              "20": 9,
+              "21": 9,
+              "22": 9,
+              "23": 9
+            }
+          },
+          {
+            "round": 3,
+            "distinctions": 360,
+            "least ring flips": [
+              11,
+              11,
+              11
+            ],
+            "least connector attachment flips": {
+              "18": 11,
+              "19": 11,
+              "20": 11,
+              "21": 11,
+              "22": 11,
+              "23": 11
+            }
+          },
+          {
+            "round": 4,
+            "distinctions": 576,
+            "least ring flips": [
+              13,
+              13,
+              13
+            ],
+            "least connector attachment flips": {
+              "18": 13,
+              "19": 13,
+              "20": 13,
+              "21": 13,
+              "22": 13,
+              "23": 13
+            }
+          }
+        ]
+      },
+      {
+        "start": "3 rings of 6, paired, detour",
+        "connector attachment supports": {
+          "18": [
+            54,
+            55
+          ],
+          "19": [
+            56,
+            57
+          ],
+          "23": [
+            67,
+            68
+          ],
+          "24": [
+            69,
+            70
+          ],
+          "28": [
+            80,
+            81
+          ],
+          "29": [
+            82,
+            83
+          ]
+        },
+        "rounds": [
+          {
+            "round": 0,
+            "distinctions": 93,
+            "least ring flips": [
+              5,
+              5,
+              5
+            ],
+            "least connector attachment flips": {
+              "18": 5,
+              "19": 5,
+              "23": 5,
+              "24": 5,
+              "28": 5,
+              "29": 5
+            }
+          },
+          {
+            "round": 1,
+            "distinctions": 147,
+            "least ring flips": [
+              7,
+              7,
+              7
+            ],
+            "least connector attachment flips": {
+              "18": 7,
+              "19": 7,
+              "23": 7,
+              "24": 7,
+              "28": 7,
+              "29": 7
+            }
+          },
+          {
+            "round": 2,
+            "distinctions": 237,
+            "least ring flips": [
+              9,
+              9,
+              9
+            ],
+            "least connector attachment flips": {
+              "18": 9,
+              "19": 9,
+              "23": 9,
+              "24": 9,
+              "28": 9,
+              "29": 9
+            }
+          },
+          {
+            "round": 3,
+            "distinctions": 381,
+            "least ring flips": [
+              11,
+              11,
+              11
+            ],
+            "least connector attachment flips": {
+              "18": 11,
+              "19": 11,
+              "23": 11,
+              "24": 11,
+              "28": 11,
+              "29": 11
+            }
+          },
+          {
+            "round": 4,
+            "distinctions": 597,
+            "least ring flips": [
+              13,
+              13,
+              13
+            ],
+            "least connector attachment flips": {
+              "18": 13,
+              "19": 13,
+              "23": 13,
+              "24": 13,
+              "28": 13,
+              "29": 13
+            }
+          }
+        ]
+      },
+      {
+        "start": "3 rings of 7, split, double",
+        "connector attachment supports": {
+          "21": [
+            63,
+            64
+          ],
+          "22": [
+            65,
+            66
+          ],
+          "23": [
+            69,
+            70
+          ],
+          "24": [
+            71,
+            72
+          ],
+          "25": [
+            75,
+            76
+          ],
+          "26": [
+            77,
+            78
+          ]
+        },
+        "rounds": [
+          {
+            "round": 0,
+            "distinctions": 81,
+            "least ring flips": [
+              5,
+              5,
+              5
+            ],
+            "least connector attachment flips": {
+              "21": 5,
+              "22": 5,
+              "23": 5,
+              "24": 5,
+              "25": 5,
+              "26": 5
+            }
+          },
+          {
+            "round": 1,
+            "distinctions": 123,
+            "least ring flips": [
+              7,
+              7,
+              7
+            ],
+            "least connector attachment flips": {
+              "21": 7,
+              "22": 7,
+              "23": 7,
+              "24": 7,
+              "25": 7,
+              "26": 7
+            }
+          },
+          {
+            "round": 2,
+            "distinctions": 165,
+            "least ring flips": [
+              9,
+              9,
+              9
+            ],
+            "least connector attachment flips": {
+              "21": 9,
+              "22": 9,
+              "23": 9,
+              "24": 9,
+              "25": 9,
+              "26": 9
+            }
+          },
+          {
+            "round": 3,
+            "distinctions": 207,
+            "least ring flips": [
+              11,
+              11,
+              11
+            ],
+            "least connector attachment flips": {
+              "21": 11,
+              "22": 11,
+              "23": 11,
+              "24": 11,
+              "25": 11,
+              "26": 11
+            }
+          },
+          {
+            "round": 4,
+            "distinctions": 249,
+            "least ring flips": [
+              13,
+              13,
+              13
+            ],
+            "least connector attachment flips": {
+              "21": 12,
+              "22": 12,
+              "23": 12,
+              "24": 12,
+              "25": 12,
+              "26": 12
+            }
+          }
+        ],
+        "scale-read family minima": [
+          13,
+          13,
+          13
+        ]
+      },
+      {
+        "start": "3 rings of 7, split, detour",
+        "connector attachment supports": {
+          "21": [
+            63,
+            64
+          ],
+          "22": [
+            65,
+            66
+          ],
+          "26": [
+            76,
+            77
+          ],
+          "27": [
+            78,
+            79
+          ],
+          "31": [
+            89,
+            90
+          ],
+          "32": [
+            91,
+            92
+          ]
+        },
+        "rounds": [
+          {
+            "round": 0,
+            "distinctions": 102,
+            "least ring flips": [
+              5,
+              5,
+              5
+            ],
+            "least connector attachment flips": {
+              "21": 5,
+              "22": 5,
+              "26": 5,
+              "27": 5,
+              "31": 5,
+              "32": 5
+            }
+          },
+          {
+            "round": 1,
+            "distinctions": 144,
+            "least ring flips": [
+              7,
+              7,
+              7
+            ],
+            "least connector attachment flips": {
+              "21": 7,
+              "22": 7,
+              "26": 7,
+              "27": 7,
+              "31": 7,
+              "32": 7
+            }
+          },
+          {
+            "round": 2,
+            "distinctions": 186,
+            "least ring flips": [
+              9,
+              9,
+              9
+            ],
+            "least connector attachment flips": {
+              "21": 9,
+              "22": 9,
+              "26": 9,
+              "27": 9,
+              "31": 9,
+              "32": 9
+            }
+          },
+          {
+            "round": 3,
+            "distinctions": 228,
+            "least ring flips": [
+              11,
+              11,
+              11
+            ],
+            "least connector attachment flips": {
+              "21": 11,
+              "22": 11,
+              "26": 11,
+              "27": 11,
+              "31": 11,
+              "32": 11
+            }
+          },
+          {
+            "round": 4,
+            "distinctions": 270,
+            "least ring flips": [
+              13,
+              13,
+              13
+            ],
+            "least connector attachment flips": {
+              "21": 12,
+              "22": 12,
+              "26": 12,
+              "27": 12,
+              "31": 12,
+              "32": 12
+            }
+          }
+        ],
+        "scale-read family minima": [
+          13,
+          13,
+          13
+        ]
+      },
+      {
+        "start": "3 rings of 7, paired, double",
+        "connector attachment supports": {
+          "21": [
+            63,
+            64
+          ],
+          "22": [
+            65,
+            66
+          ],
+          "23": [
+            69,
+            70
+          ],
+          "24": [
+            71,
+            72
+          ],
+          "25": [
+            75,
+            76
+          ],
+          "26": [
+            77,
+            78
+          ]
+        },
+        "rounds": [
+          {
+            "round": 0,
+            "distinctions": 81,
+            "least ring flips": [
+              5,
+              5,
+              5
+            ],
+            "least connector attachment flips": {
+              "21": 5,
+              "22": 5,
+              "23": 5,
+              "24": 5,
+              "25": 5,
+              "26": 5
+            }
+          },
+          {
+            "round": 1,
+            "distinctions": 123,
+            "least ring flips": [
+              7,
+              7,
+              7
+            ],
+            "least connector attachment flips": {
+              "21": 7,
+              "22": 7,
+              "23": 7,
+              "24": 7,
+              "25": 7,
+              "26": 7
+            }
+          },
+          {
+            "round": 2,
+            "distinctions": 165,
+            "least ring flips": [
+              9,
+              9,
+              9
+            ],
+            "least connector attachment flips": {
+              "21": 9,
+              "22": 9,
+              "23": 9,
+              "24": 9,
+              "25": 9,
+              "26": 9
+            }
+          },
+          {
+            "round": 3,
+            "distinctions": 207,
+            "least ring flips": [
+              11,
+              11,
+              11
+            ],
+            "least connector attachment flips": {
+              "21": 11,
+              "22": 11,
+              "23": 11,
+              "24": 11,
+              "25": 11,
+              "26": 11
+            }
+          },
+          {
+            "round": 4,
+            "distinctions": 249,
+            "least ring flips": [
+              13,
+              13,
+              13
+            ],
+            "least connector attachment flips": {
+              "21": 13,
+              "22": 13,
+              "23": 13,
+              "24": 13,
+              "25": 13,
+              "26": 13
+            }
+          }
+        ],
+        "scale-read family minima": [
+          13,
+          13,
+          13
+        ]
+      },
+      {
+        "start": "3 rings of 7, paired, detour",
+        "connector attachment supports": {
+          "21": [
+            63,
+            64
+          ],
+          "22": [
+            65,
+            66
+          ],
+          "26": [
+            76,
+            77
+          ],
+          "27": [
+            78,
+            79
+          ],
+          "31": [
+            89,
+            90
+          ],
+          "32": [
+            91,
+            92
+          ]
+        },
+        "rounds": [
+          {
+            "round": 0,
+            "distinctions": 102,
+            "least ring flips": [
+              5,
+              5,
+              5
+            ],
+            "least connector attachment flips": {
+              "21": 5,
+              "22": 5,
+              "26": 5,
+              "27": 5,
+              "31": 5,
+              "32": 5
+            }
+          },
+          {
+            "round": 1,
+            "distinctions": 144,
+            "least ring flips": [
+              7,
+              7,
+              7
+            ],
+            "least connector attachment flips": {
+              "21": 7,
+              "22": 7,
+              "26": 7,
+              "27": 7,
+              "31": 7,
+              "32": 7
+            }
+          },
+          {
+            "round": 2,
+            "distinctions": 186,
+            "least ring flips": [
+              9,
+              9,
+              9
+            ],
+            "least connector attachment flips": {
+              "21": 9,
+              "22": 9,
+              "26": 9,
+              "27": 9,
+              "31": 9,
+              "32": 9
+            }
+          },
+          {
+            "round": 3,
+            "distinctions": 228,
+            "least ring flips": [
+              11,
+              11,
+              11
+            ],
+            "least connector attachment flips": {
+              "21": 11,
+              "22": 11,
+              "26": 11,
+              "27": 11,
+              "31": 11,
+              "32": 11
+            }
+          },
+          {
+            "round": 4,
+            "distinctions": 270,
+            "least ring flips": [
+              13,
+              13,
+              13
+            ],
+            "least connector attachment flips": {
+              "21": 13,
+              "22": 13,
+              "26": 13,
+              "27": 13,
+              "31": 13,
+              "32": 13
+            }
+          }
+        ],
+        "scale-read family minima": [
+          13,
+          13,
+          13
+        ]
+      },
+      {
+        "start": "4 rings of 4, split, double",
+        "connector attachment supports": {
+          "16": [
+            48,
+            49
+          ],
+          "17": [
+            50,
+            51
+          ],
+          "18": [
+            54,
+            55
+          ],
+          "19": [
+            56,
+            57
+          ],
+          "20": [
+            60,
+            61
+          ],
+          "21": [
+            62,
+            63
+          ],
+          "22": [
+            66,
+            67
+          ],
+          "23": [
+            68,
+            69
+          ],
+          "24": [
+            72,
+            73
+          ],
+          "25": [
+            74,
+            75
+          ],
+          "26": [
+            78,
+            79
+          ],
+          "27": [
+            80,
+            81
+          ]
+        },
+        "rounds": [
+          {
+            "round": 0,
+            "distinctions": 84,
+            "least ring flips": [
+              5,
+              5,
+              5,
+              5
+            ],
+            "least connector attachment flips": {
+              "16": 5,
+              "17": 5,
+              "18": 5,
+              "19": 5,
+              "20": 5,
+              "21": 5,
+              "22": 5,
+              "23": 5,
+              "24": 5,
+              "25": 5,
+              "26": 5,
+              "27": 5
+            }
+          },
+          {
+            "round": 1,
+            "distinctions": 132,
+            "least ring flips": [
+              7,
+              7,
+              7,
+              7
+            ],
+            "least connector attachment flips": {
+              "16": 7,
+              "17": 7,
+              "18": 7,
+              "19": 7,
+              "20": 7,
+              "21": 7,
+              "22": 7,
+              "23": 7,
+              "24": 7,
+              "25": 7,
+              "26": 7,
+              "27": 7
+            }
+          },
+          {
+            "round": 2,
+            "distinctions": 196,
+            "least ring flips": [
+              9,
+              9,
+              9,
+              9
+            ],
+            "least connector attachment flips": {
+              "16": 9,
+              "17": 9,
+              "18": 9,
+              "19": 9,
+              "20": 9,
+              "21": 9,
+              "22": 9,
+              "23": 9,
+              "24": 9,
+              "25": 9,
+              "26": 9,
+              "27": 9
+            }
+          },
+          {
+            "round": 3,
+            "distinctions": 276,
+            "least ring flips": [
+              11,
+              11,
+              11,
+              11
+            ],
+            "least connector attachment flips": {
+              "16": 10,
+              "17": 10,
+              "18": 10,
+              "19": 10,
+              "20": 10,
+              "21": 10,
+              "22": 11,
+              "23": 11,
+              "24": 10,
+              "25": 10,
+              "26": 10,
+              "27": 10
+            }
+          }
+        ]
+      },
+      {
+        "start": "4 rings of 4, split, detour",
+        "connector attachment supports": {
+          "16": [
+            48,
+            49
+          ],
+          "17": [
+            50,
+            51
+          ],
+          "21": [
+            61,
+            62
+          ],
+          "22": [
+            63,
+            64
+          ],
+          "26": [
+            74,
+            75
+          ],
+          "27": [
+            76,
+            77
+          ],
+          "31": [
+            87,
+            88
+          ],
+          "32": [
+            89,
+            90
+          ],
+          "36": [
+            100,
+            101
+          ],
+          "37": [
+            102,
+            103
+          ],
+          "41": [
+            113,
+            114
+          ],
+          "42": [
+            115,
+            116
+          ]
+        },
+        "rounds": [
+          {
+            "round": 0,
+            "distinctions": 126,
+            "least ring flips": [
+              5,
+              5,
+              5,
+              5
+            ],
+            "least connector attachment flips": {
+              "16": 5,
+              "17": 5,
+              "21": 5,
+              "22": 5,
+              "26": 5,
+              "27": 5,
+              "31": 5,
+              "32": 5,
+              "36": 5,
+              "37": 5,
+              "41": 5,
+              "42": 5
+            }
+          },
+          {
+            "round": 1,
+            "distinctions": 174,
+            "least ring flips": [
+              7,
+              7,
+              7,
+              7
+            ],
+            "least connector attachment flips": {
+              "16": 7,
+              "17": 7,
+              "21": 7,
+              "22": 7,
+              "26": 7,
+              "27": 7,
+              "31": 7,
+              "32": 7,
+              "36": 7,
+              "37": 7,
+              "41": 7,
+              "42": 7
+            }
+          },
+          {
+            "round": 2,
+            "distinctions": 238,
+            "least ring flips": [
+              9,
+              9,
+              9,
+              9
+            ],
+            "least connector attachment flips": {
+              "16": 9,
+              "17": 9,
+              "21": 9,
+              "22": 9,
+              "26": 9,
+              "27": 9,
+              "31": 9,
+              "32": 9,
+              "36": 9,
+              "37": 9,
+              "41": 9,
+              "42": 9
+            }
+          },
+          {
+            "round": 3,
+            "distinctions": 318,
+            "least ring flips": [
+              11,
+              11,
+              11,
+              11
+            ],
+            "least connector attachment flips": {
+              "16": 10,
+              "17": 10,
+              "21": 10,
+              "22": 10,
+              "26": 10,
+              "27": 10,
+              "31": 11,
+              "32": 11,
+              "36": 10,
+              "37": 10,
+              "41": 10,
+              "42": 10
+            }
+          }
+        ]
+      },
+      {
+        "start": "4 rings of 4, paired, double",
+        "connector attachment supports": {
+          "16": [
+            48,
+            49
+          ],
+          "17": [
+            50,
+            51
+          ],
+          "18": [
+            54,
+            55
+          ],
+          "19": [
+            56,
+            57
+          ],
+          "20": [
+            60,
+            61
+          ],
+          "21": [
+            62,
+            63
+          ],
+          "22": [
+            66,
+            67
+          ],
+          "23": [
+            68,
+            69
+          ],
+          "24": [
+            72,
+            73
+          ],
+          "25": [
+            74,
+            75
+          ],
+          "26": [
+            78,
+            79
+          ],
+          "27": [
+            80,
+            81
+          ]
+        },
+        "rounds": [
+          {
+            "round": 0,
+            "distinctions": 84,
+            "least ring flips": [
+              5,
+              5,
+              5,
+              5
+            ],
+            "least connector attachment flips": {
+              "16": 5,
+              "17": 5,
+              "18": 5,
+              "19": 5,
+              "20": 5,
+              "21": 5,
+              "22": 5,
+              "23": 5,
+              "24": 5,
+              "25": 5,
+              "26": 5,
+              "27": 5
+            }
+          },
+          {
+            "round": 1,
+            "distinctions": 132,
+            "least ring flips": [
+              7,
+              7,
+              7,
+              7
+            ],
+            "least connector attachment flips": {
+              "16": 7,
+              "17": 7,
+              "18": 7,
+              "19": 7,
+              "20": 7,
+              "21": 7,
+              "22": 7,
+              "23": 7,
+              "24": 7,
+              "25": 7,
+              "26": 7,
+              "27": 7
+            }
+          },
+          {
+            "round": 2,
+            "distinctions": 196,
+            "least ring flips": [
+              9,
+              9,
+              9,
+              9
+            ],
+            "least connector attachment flips": {
+              "16": 9,
+              "17": 9,
+              "18": 9,
+              "19": 9,
+              "20": 9,
+              "21": 9,
+              "22": 9,
+              "23": 9,
+              "24": 9,
+              "25": 9,
+              "26": 9,
+              "27": 9
+            }
+          },
+          {
+            "round": 3,
+            "distinctions": 276,
+            "least ring flips": [
+              11,
+              11,
+              11,
+              11
+            ],
+            "least connector attachment flips": {
+              "16": 11,
+              "17": 11,
+              "18": 11,
+              "19": 11,
+              "20": 11,
+              "21": 11,
+              "22": 11,
+              "23": 11,
+              "24": 11,
+              "25": 11,
+              "26": 11,
+              "27": 11
+            }
+          }
+        ]
+      },
+      {
+        "start": "4 rings of 4, paired, detour",
+        "connector attachment supports": {
+          "16": [
+            48,
+            49
+          ],
+          "17": [
+            50,
+            51
+          ],
+          "21": [
+            61,
+            62
+          ],
+          "22": [
+            63,
+            64
+          ],
+          "26": [
+            74,
+            75
+          ],
+          "27": [
+            76,
+            77
+          ],
+          "31": [
+            87,
+            88
+          ],
+          "32": [
+            89,
+            90
+          ],
+          "36": [
+            100,
+            101
+          ],
+          "37": [
+            102,
+            103
+          ],
+          "41": [
+            113,
+            114
+          ],
+          "42": [
+            115,
+            116
+          ]
+        },
+        "rounds": [
+          {
+            "round": 0,
+            "distinctions": 126,
+            "least ring flips": [
+              5,
+              5,
+              5,
+              5
+            ],
+            "least connector attachment flips": {
+              "16": 5,
+              "17": 5,
+              "21": 5,
+              "22": 5,
+              "26": 5,
+              "27": 5,
+              "31": 5,
+              "32": 5,
+              "36": 5,
+              "37": 5,
+              "41": 5,
+              "42": 5
+            }
+          },
+          {
+            "round": 1,
+            "distinctions": 174,
+            "least ring flips": [
+              7,
+              7,
+              7,
+              7
+            ],
+            "least connector attachment flips": {
+              "16": 7,
+              "17": 7,
+              "21": 7,
+              "22": 7,
+              "26": 7,
+              "27": 7,
+              "31": 7,
+              "32": 7,
+              "36": 7,
+              "37": 7,
+              "41": 7,
+              "42": 7
+            }
+          },
+          {
+            "round": 2,
+            "distinctions": 238,
+            "least ring flips": [
+              9,
+              9,
+              9,
+              9
+            ],
+            "least connector attachment flips": {
+              "16": 9,
+              "17": 9,
+              "21": 9,
+              "22": 9,
+              "26": 9,
+              "27": 9,
+              "31": 9,
+              "32": 9,
+              "36": 9,
+              "37": 9,
+              "41": 9,
+              "42": 9
+            }
+          },
+          {
+            "round": 3,
+            "distinctions": 318,
+            "least ring flips": [
+              11,
+              11,
+              11,
+              11
+            ],
+            "least connector attachment flips": {
+              "16": 11,
+              "17": 11,
+              "21": 11,
+              "22": 11,
+              "26": 11,
+              "27": 11,
+              "31": 11,
+              "32": 11,
+              "36": 11,
+              "37": 11,
+              "41": 11,
+              "42": 11
+            }
+          }
+        ]
+      },
+      {
+        "start": "4 rings of 5, split, double",
+        "connector attachment supports": {
+          "20": [
+            60,
+            61
+          ],
+          "21": [
+            62,
+            63
+          ],
+          "22": [
+            66,
+            67
+          ],
+          "23": [
+            68,
+            69
+          ],
+          "24": [
+            72,
+            73
+          ],
+          "25": [
+            74,
+            75
+          ],
+          "26": [
+            78,
+            79
+          ],
+          "27": [
+            80,
+            81
+          ],
+          "28": [
+            84,
+            85
+          ],
+          "29": [
+            86,
+            87
+          ],
+          "30": [
+            90,
+            91
+          ],
+          "31": [
+            92,
+            93
+          ]
+        },
+        "rounds": [
+          {
+            "round": 0,
+            "distinctions": 96,
+            "least ring flips": [
+              5,
+              5,
+              5,
+              5
+            ],
+            "least connector attachment flips": {
+              "20": 5,
+              "21": 5,
+              "22": 5,
+              "23": 5,
+              "24": 5,
+              "25": 5,
+              "26": 5,
+              "27": 5,
+              "28": 5,
+              "29": 5,
+              "30": 5,
+              "31": 5
+            }
+          },
+          {
+            "round": 1,
+            "distinctions": 136,
+            "least ring flips": [
+              7,
+              7,
+              7,
+              7
+            ],
+            "least connector attachment flips": {
+              "20": 7,
+              "21": 7,
+              "22": 7,
+              "23": 7,
+              "24": 7,
+              "25": 7,
+              "26": 7,
+              "27": 7,
+              "28": 7,
+              "29": 7,
+              "30": 7,
+              "31": 7
+            }
+          },
+          {
+            "round": 2,
+            "distinctions": 176,
+            "least ring flips": [
+              9,
+              9,
+              9,
+              9
+            ],
+            "least connector attachment flips": {
+              "20": 9,
+              "21": 9,
+              "22": 9,
+              "23": 9,
+              "24": 9,
+              "25": 9,
+              "26": 9,
+              "27": 9,
+              "28": 9,
+              "29": 9,
+              "30": 9,
+              "31": 9
+            }
+          },
+          {
+            "round": 3,
+            "distinctions": 216,
+            "least ring flips": [
+              11,
+              11,
+              11,
+              11
+            ],
+            "least connector attachment flips": {
+              "20": 10,
+              "21": 10,
+              "22": 10,
+              "23": 10,
+              "24": 10,
+              "25": 10,
+              "26": 11,
+              "27": 11,
+              "28": 10,
+              "29": 10,
+              "30": 10,
+              "31": 10
+            }
+          }
+        ]
+      },
+      {
+        "start": "4 rings of 5, split, detour",
+        "connector attachment supports": {
+          "20": [
+            60,
+            61
+          ],
+          "21": [
+            62,
+            63
+          ],
+          "25": [
+            73,
+            74
+          ],
+          "26": [
+            75,
+            76
+          ],
+          "30": [
+            86,
+            87
+          ],
+          "31": [
+            88,
+            89
+          ],
+          "35": [
+            99,
+            100
+          ],
+          "36": [
+            101,
+            102
+          ],
+          "40": [
+            112,
+            113
+          ],
+          "41": [
+            114,
+            115
+          ],
+          "45": [
+            125,
+            126
+          ],
+          "46": [
+            127,
+            128
+          ]
+        },
+        "rounds": [
+          {
+            "round": 0,
+            "distinctions": 138,
+            "least ring flips": [
+              5,
+              5,
+              5,
+              5
+            ],
+            "least connector attachment flips": {
+              "20": 5,
+              "21": 5,
+              "25": 5,
+              "26": 5,
+              "30": 5,
+              "31": 5,
+              "35": 5,
+              "36": 5,
+              "40": 5,
+              "41": 5,
+              "45": 5,
+              "46": 5
+            }
+          },
+          {
+            "round": 1,
+            "distinctions": 178,
+            "least ring flips": [
+              7,
+              7,
+              7,
+              7
+            ],
+            "least connector attachment flips": {
+              "20": 7,
+              "21": 7,
+              "25": 7,
+              "26": 7,
+              "30": 7,
+              "31": 7,
+              "35": 7,
+              "36": 7,
+              "40": 7,
+              "41": 7,
+              "45": 7,
+              "46": 7
+            }
+          },
+          {
+            "round": 2,
+            "distinctions": 218,
+            "least ring flips": [
+              9,
+              9,
+              9,
+              9
+            ],
+            "least connector attachment flips": {
+              "20": 9,
+              "21": 9,
+              "25": 9,
+              "26": 9,
+              "30": 9,
+              "31": 9,
+              "35": 9,
+              "36": 9,
+              "40": 9,
+              "41": 9,
+              "45": 9,
+              "46": 9
+            }
+          },
+          {
+            "round": 3,
+            "distinctions": 258,
+            "least ring flips": [
+              11,
+              11,
+              11,
+              11
+            ],
+            "least connector attachment flips": {
+              "20": 10,
+              "21": 10,
+              "25": 10,
+              "26": 10,
+              "30": 10,
+              "31": 10,
+              "35": 11,
+              "36": 11,
+              "40": 10,
+              "41": 10,
+              "45": 10,
+              "46": 10
+            }
+          }
+        ]
+      },
+      {
+        "start": "4 rings of 5, paired, double",
+        "connector attachment supports": {
+          "20": [
+            60,
+            61
+          ],
+          "21": [
+            62,
+            63
+          ],
+          "22": [
+            66,
+            67
+          ],
+          "23": [
+            68,
+            69
+          ],
+          "24": [
+            72,
+            73
+          ],
+          "25": [
+            74,
+            75
+          ],
+          "26": [
+            78,
+            79
+          ],
+          "27": [
+            80,
+            81
+          ],
+          "28": [
+            84,
+            85
+          ],
+          "29": [
+            86,
+            87
+          ],
+          "30": [
+            90,
+            91
+          ],
+          "31": [
+            92,
+            93
+          ]
+        },
+        "rounds": [
+          {
+            "round": 0,
+            "distinctions": 96,
+            "least ring flips": [
+              5,
+              5,
+              5,
+              5
+            ],
+            "least connector attachment flips": {
+              "20": 5,
+              "21": 5,
+              "22": 5,
+              "23": 5,
+              "24": 5,
+              "25": 5,
+              "26": 5,
+              "27": 5,
+              "28": 5,
+              "29": 5,
+              "30": 5,
+              "31": 5
+            }
+          },
+          {
+            "round": 1,
+            "distinctions": 136,
+            "least ring flips": [
+              7,
+              7,
+              7,
+              7
+            ],
+            "least connector attachment flips": {
+              "20": 7,
+              "21": 7,
+              "22": 7,
+              "23": 7,
+              "24": 7,
+              "25": 7,
+              "26": 7,
+              "27": 7,
+              "28": 7,
+              "29": 7,
+              "30": 7,
+              "31": 7
+            }
+          },
+          {
+            "round": 2,
+            "distinctions": 176,
+            "least ring flips": [
+              9,
+              9,
+              9,
+              9
+            ],
+            "least connector attachment flips": {
+              "20": 9,
+              "21": 9,
+              "22": 9,
+              "23": 9,
+              "24": 9,
+              "25": 9,
+              "26": 9,
+              "27": 9,
+              "28": 9,
+              "29": 9,
+              "30": 9,
+              "31": 9
+            }
+          },
+          {
+            "round": 3,
+            "distinctions": 216,
+            "least ring flips": [
+              11,
+              11,
+              11,
+              11
+            ],
+            "least connector attachment flips": {
+              "20": 11,
+              "21": 11,
+              "22": 11,
+              "23": 11,
+              "24": 11,
+              "25": 11,
+              "26": 11,
+              "27": 11,
+              "28": 11,
+              "29": 11,
+              "30": 11,
+              "31": 11
+            }
+          }
+        ]
+      },
+      {
+        "start": "4 rings of 5, paired, detour",
+        "connector attachment supports": {
+          "20": [
+            60,
+            61
+          ],
+          "21": [
+            62,
+            63
+          ],
+          "25": [
+            73,
+            74
+          ],
+          "26": [
+            75,
+            76
+          ],
+          "30": [
+            86,
+            87
+          ],
+          "31": [
+            88,
+            89
+          ],
+          "35": [
+            99,
+            100
+          ],
+          "36": [
+            101,
+            102
+          ],
+          "40": [
+            112,
+            113
+          ],
+          "41": [
+            114,
+            115
+          ],
+          "45": [
+            125,
+            126
+          ],
+          "46": [
+            127,
+            128
+          ]
+        },
+        "rounds": [
+          {
+            "round": 0,
+            "distinctions": 138,
+            "least ring flips": [
+              5,
+              5,
+              5,
+              5
+            ],
+            "least connector attachment flips": {
+              "20": 5,
+              "21": 5,
+              "25": 5,
+              "26": 5,
+              "30": 5,
+              "31": 5,
+              "35": 5,
+              "36": 5,
+              "40": 5,
+              "41": 5,
+              "45": 5,
+              "46": 5
+            }
+          },
+          {
+            "round": 1,
+            "distinctions": 178,
+            "least ring flips": [
+              7,
+              7,
+              7,
+              7
+            ],
+            "least connector attachment flips": {
+              "20": 7,
+              "21": 7,
+              "25": 7,
+              "26": 7,
+              "30": 7,
+              "31": 7,
+              "35": 7,
+              "36": 7,
+              "40": 7,
+              "41": 7,
+              "45": 7,
+              "46": 7
+            }
+          },
+          {
+            "round": 2,
+            "distinctions": 218,
+            "least ring flips": [
+              9,
+              9,
+              9,
+              9
+            ],
+            "least connector attachment flips": {
+              "20": 9,
+              "21": 9,
+              "25": 9,
+              "26": 9,
+              "30": 9,
+              "31": 9,
+              "35": 9,
+              "36": 9,
+              "40": 9,
+              "41": 9,
+              "45": 9,
+              "46": 9
+            }
+          },
+          {
+            "round": 3,
+            "distinctions": 258,
+            "least ring flips": [
+              11,
+              11,
+              11,
+              11
+            ],
+            "least connector attachment flips": {
+              "20": 11,
+              "21": 11,
+              "25": 11,
+              "26": 11,
+              "30": 11,
+              "31": 11,
+              "35": 11,
+              "36": 11,
+              "40": 11,
+              "41": 11,
+              "45": 11,
+              "46": 11
+            }
+          }
+        ]
+      },
+      {
+        "start": "4 rings of 6, split, double",
+        "connector attachment supports": {
+          "24": [
+            72,
+            73
+          ],
+          "25": [
+            74,
+            75
+          ],
+          "26": [
+            78,
+            79
+          ],
+          "27": [
+            80,
+            81
+          ],
+          "28": [
+            84,
+            85
+          ],
+          "29": [
+            86,
+            87
+          ],
+          "30": [
+            90,
+            91
+          ],
+          "31": [
+            92,
+            93
+          ],
+          "32": [
+            96,
+            97
+          ],
+          "33": [
+            98,
+            99
+          ],
+          "34": [
+            102,
+            103
+          ],
+          "35": [
+            104,
+            105
+          ]
+        },
+        "rounds": [
+          {
+            "round": 0,
+            "distinctions": 108,
+            "least ring flips": [
+              5,
+              5,
+              5,
+              5
+            ],
+            "least connector attachment flips": {
+              "24": 5,
+              "25": 5,
+              "26": 5,
+              "27": 5,
+              "28": 5,
+              "29": 5,
+              "30": 5,
+              "31": 5,
+              "32": 5,
+              "33": 5,
+              "34": 5,
+              "35": 5
+            }
+          },
+          {
+            "round": 1,
+            "distinctions": 180,
+            "least ring flips": [
+              7,
+              7,
+              7,
+              7
+            ],
+            "least connector attachment flips": {
+              "24": 7,
+              "25": 7,
+              "26": 7,
+              "27": 7,
+              "28": 7,
+              "29": 7,
+              "30": 7,
+              "31": 7,
+              "32": 7,
+              "33": 7,
+              "34": 7,
+              "35": 7
+            }
+          },
+          {
+            "round": 2,
+            "distinctions": 300,
+            "least ring flips": [
+              9,
+              9,
+              9,
+              9
+            ],
+            "least connector attachment flips": {
+              "24": 9,
+              "25": 9,
+              "26": 9,
+              "27": 9,
+              "28": 9,
+              "29": 9,
+              "30": 9,
+              "31": 9,
+              "32": 9,
+              "33": 9,
+              "34": 9,
+              "35": 9
+            }
+          },
+          {
+            "round": 3,
+            "distinctions": 492,
+            "least ring flips": [
+              11,
+              11,
+              11,
+              11
+            ],
+            "least connector attachment flips": {
+              "24": 10,
+              "25": 10,
+              "26": 10,
+              "27": 10,
+              "28": 10,
+              "29": 10,
+              "30": 11,
+              "31": 11,
+              "32": 10,
+              "33": 10,
+              "34": 10,
+              "35": 10
+            }
+          }
+        ]
+      },
+      {
+        "start": "4 rings of 6, split, detour",
+        "connector attachment supports": {
+          "24": [
+            72,
+            73
+          ],
+          "25": [
+            74,
+            75
+          ],
+          "29": [
+            85,
+            86
+          ],
+          "30": [
+            87,
+            88
+          ],
+          "34": [
+            98,
+            99
+          ],
+          "35": [
+            100,
+            101
+          ],
+          "39": [
+            111,
+            112
+          ],
+          "40": [
+            113,
+            114
+          ],
+          "44": [
+            124,
+            125
+          ],
+          "45": [
+            126,
+            127
+          ],
+          "49": [
+            137,
+            138
+          ],
+          "50": [
+            139,
+            140
+          ]
+        },
+        "rounds": [
+          {
+            "round": 0,
+            "distinctions": 150,
+            "least ring flips": [
+              5,
+              5,
+              5,
+              5
+            ],
+            "least connector attachment flips": {
+              "24": 5,
+              "25": 5,
+              "29": 5,
+              "30": 5,
+              "34": 5,
+              "35": 5,
+              "39": 5,
+              "40": 5,
+              "44": 5,
+              "45": 5,
+              "49": 5,
+              "50": 5
+            }
+          },
+          {
+            "round": 1,
+            "distinctions": 222,
+            "least ring flips": [
+              7,
+              7,
+              7,
+              7
+            ],
+            "least connector attachment flips": {
+              "24": 7,
+              "25": 7,
+              "29": 7,
+              "30": 7,
+              "34": 7,
+              "35": 7,
+              "39": 7,
+              "40": 7,
+              "44": 7,
+              "45": 7,
+              "49": 7,
+              "50": 7
+            }
+          },
+          {
+            "round": 2,
+            "distinctions": 342,
+            "least ring flips": [
+              9,
+              9,
+              9,
+              9
+            ],
+            "least connector attachment flips": {
+              "24": 9,
+              "25": 9,
+              "29": 9,
+              "30": 9,
+              "34": 9,
+              "35": 9,
+              "39": 9,
+              "40": 9,
+              "44": 9,
+              "45": 9,
+              "49": 9,
+              "50": 9
+            }
+          },
+          {
+            "round": 3,
+            "distinctions": 534,
+            "least ring flips": [
+              11,
+              11,
+              11,
+              11
+            ],
+            "least connector attachment flips": {
+              "24": 10,
+              "25": 10,
+              "29": 10,
+              "30": 10,
+              "34": 10,
+              "35": 10,
+              "39": 11,
+              "40": 11,
+              "44": 10,
+              "45": 10,
+              "49": 10,
+              "50": 10
+            }
+          }
+        ]
+      },
+      {
+        "start": "4 rings of 6, paired, double",
+        "connector attachment supports": {
+          "24": [
+            72,
+            73
+          ],
+          "25": [
+            74,
+            75
+          ],
+          "26": [
+            78,
+            79
+          ],
+          "27": [
+            80,
+            81
+          ],
+          "28": [
+            84,
+            85
+          ],
+          "29": [
+            86,
+            87
+          ],
+          "30": [
+            90,
+            91
+          ],
+          "31": [
+            92,
+            93
+          ],
+          "32": [
+            96,
+            97
+          ],
+          "33": [
+            98,
+            99
+          ],
+          "34": [
+            102,
+            103
+          ],
+          "35": [
+            104,
+            105
+          ]
+        },
+        "rounds": [
+          {
+            "round": 0,
+            "distinctions": 108,
+            "least ring flips": [
+              5,
+              5,
+              5,
+              5
+            ],
+            "least connector attachment flips": {
+              "24": 5,
+              "25": 5,
+              "26": 5,
+              "27": 5,
+              "28": 5,
+              "29": 5,
+              "30": 5,
+              "31": 5,
+              "32": 5,
+              "33": 5,
+              "34": 5,
+              "35": 5
+            }
+          },
+          {
+            "round": 1,
+            "distinctions": 180,
+            "least ring flips": [
+              7,
+              7,
+              7,
+              7
+            ],
+            "least connector attachment flips": {
+              "24": 7,
+              "25": 7,
+              "26": 7,
+              "27": 7,
+              "28": 7,
+              "29": 7,
+              "30": 7,
+              "31": 7,
+              "32": 7,
+              "33": 7,
+              "34": 7,
+              "35": 7
+            }
+          },
+          {
+            "round": 2,
+            "distinctions": 300,
+            "least ring flips": [
+              9,
+              9,
+              9,
+              9
+            ],
+            "least connector attachment flips": {
+              "24": 9,
+              "25": 9,
+              "26": 9,
+              "27": 9,
+              "28": 9,
+              "29": 9,
+              "30": 9,
+              "31": 9,
+              "32": 9,
+              "33": 9,
+              "34": 9,
+              "35": 9
+            }
+          },
+          {
+            "round": 3,
+            "distinctions": 492,
+            "least ring flips": [
+              11,
+              11,
+              11,
+              11
+            ],
+            "least connector attachment flips": {
+              "24": 11,
+              "25": 11,
+              "26": 11,
+              "27": 11,
+              "28": 11,
+              "29": 11,
+              "30": 11,
+              "31": 11,
+              "32": 11,
+              "33": 11,
+              "34": 11,
+              "35": 11
+            }
+          }
+        ]
+      },
+      {
+        "start": "4 rings of 6, paired, detour",
+        "connector attachment supports": {
+          "24": [
+            72,
+            73
+          ],
+          "25": [
+            74,
+            75
+          ],
+          "29": [
+            85,
+            86
+          ],
+          "30": [
+            87,
+            88
+          ],
+          "34": [
+            98,
+            99
+          ],
+          "35": [
+            100,
+            101
+          ],
+          "39": [
+            111,
+            112
+          ],
+          "40": [
+            113,
+            114
+          ],
+          "44": [
+            124,
+            125
+          ],
+          "45": [
+            126,
+            127
+          ],
+          "49": [
+            137,
+            138
+          ],
+          "50": [
+            139,
+            140
+          ]
+        },
+        "rounds": [
+          {
+            "round": 0,
+            "distinctions": 150,
+            "least ring flips": [
+              5,
+              5,
+              5,
+              5
+            ],
+            "least connector attachment flips": {
+              "24": 5,
+              "25": 5,
+              "29": 5,
+              "30": 5,
+              "34": 5,
+              "35": 5,
+              "39": 5,
+              "40": 5,
+              "44": 5,
+              "45": 5,
+              "49": 5,
+              "50": 5
+            }
+          },
+          {
+            "round": 1,
+            "distinctions": 222,
+            "least ring flips": [
+              7,
+              7,
+              7,
+              7
+            ],
+            "least connector attachment flips": {
+              "24": 7,
+              "25": 7,
+              "29": 7,
+              "30": 7,
+              "34": 7,
+              "35": 7,
+              "39": 7,
+              "40": 7,
+              "44": 7,
+              "45": 7,
+              "49": 7,
+              "50": 7
+            }
+          },
+          {
+            "round": 2,
+            "distinctions": 342,
+            "least ring flips": [
+              9,
+              9,
+              9,
+              9
+            ],
+            "least connector attachment flips": {
+              "24": 9,
+              "25": 9,
+              "29": 9,
+              "30": 9,
+              "34": 9,
+              "35": 9,
+              "39": 9,
+              "40": 9,
+              "44": 9,
+              "45": 9,
+              "49": 9,
+              "50": 9
+            }
+          },
+          {
+            "round": 3,
+            "distinctions": 534,
+            "least ring flips": [
+              11,
+              11,
+              11,
+              11
+            ],
+            "least connector attachment flips": {
+              "24": 11,
+              "25": 11,
+              "29": 11,
+              "30": 11,
+              "34": 11,
+              "35": 11,
+              "39": 11,
+              "40": 11,
+              "44": 11,
+              "45": 11,
+              "49": 11,
+              "50": 11
+            }
+          }
+        ]
+      },
+      {
+        "start": "4 rings of 7, split, double",
+        "connector attachment supports": {
+          "28": [
+            84,
+            85
+          ],
+          "29": [
+            86,
+            87
+          ],
+          "30": [
+            90,
+            91
+          ],
+          "31": [
+            92,
+            93
+          ],
+          "32": [
+            96,
+            97
+          ],
+          "33": [
+            98,
+            99
+          ],
+          "34": [
+            102,
+            103
+          ],
+          "35": [
+            104,
+            105
+          ],
+          "36": [
+            108,
+            109
+          ],
+          "37": [
+            110,
+            111
+          ],
+          "38": [
+            114,
+            115
+          ],
+          "39": [
+            116,
+            117
+          ]
+        },
+        "rounds": [
+          {
+            "round": 0,
+            "distinctions": 120,
+            "least ring flips": [
+              5,
+              5,
+              5,
+              5
+            ],
+            "least connector attachment flips": {
+              "28": 5,
+              "29": 5,
+              "30": 5,
+              "31": 5,
+              "32": 5,
+              "33": 5,
+              "34": 5,
+              "35": 5,
+              "36": 5,
+              "37": 5,
+              "38": 5,
+              "39": 5
+            }
+          },
+          {
+            "round": 1,
+            "distinctions": 176,
+            "least ring flips": [
+              7,
+              7,
+              7,
+              7
+            ],
+            "least connector attachment flips": {
+              "28": 7,
+              "29": 7,
+              "30": 7,
+              "31": 7,
+              "32": 7,
+              "33": 7,
+              "34": 7,
+              "35": 7,
+              "36": 7,
+              "37": 7,
+              "38": 7,
+              "39": 7
+            }
+          },
+          {
+            "round": 2,
+            "distinctions": 232,
+            "least ring flips": [
+              9,
+              9,
+              9,
+              9
+            ],
+            "least connector attachment flips": {
+              "28": 9,
+              "29": 9,
+              "30": 9,
+              "31": 9,
+              "32": 9,
+              "33": 9,
+              "34": 9,
+              "35": 9,
+              "36": 9,
+              "37": 9,
+              "38": 9,
+              "39": 9
+            }
+          },
+          {
+            "round": 3,
+            "distinctions": 288,
+            "least ring flips": [
+              11,
+              11,
+              11,
+              11
+            ],
+            "least connector attachment flips": {
+              "28": 10,
+              "29": 10,
+              "30": 10,
+              "31": 10,
+              "32": 10,
+              "33": 10,
+              "34": 11,
+              "35": 11,
+              "36": 10,
+              "37": 10,
+              "38": 10,
+              "39": 10
+            }
+          }
+        ]
+      },
+      {
+        "start": "4 rings of 7, split, detour",
+        "connector attachment supports": {
+          "28": [
+            84,
+            85
+          ],
+          "29": [
+            86,
+            87
+          ],
+          "33": [
+            97,
+            98
+          ],
+          "34": [
+            99,
+            100
+          ],
+          "38": [
+            110,
+            111
+          ],
+          "39": [
+            112,
+            113
+          ],
+          "43": [
+            123,
+            124
+          ],
+          "44": [
+            125,
+            126
+          ],
+          "48": [
+            136,
+            137
+          ],
+          "49": [
+            138,
+            139
+          ],
+          "53": [
+            149,
+            150
+          ],
+          "54": [
+            151,
+            152
+          ]
+        },
+        "rounds": [
+          {
+            "round": 0,
+            "distinctions": 162,
+            "least ring flips": [
+              5,
+              5,
+              5,
+              5
+            ],
+            "least connector attachment flips": {
+              "28": 5,
+              "29": 5,
+              "33": 5,
+              "34": 5,
+              "38": 5,
+              "39": 5,
+              "43": 5,
+              "44": 5,
+              "48": 5,
+              "49": 5,
+              "53": 5,
+              "54": 5
+            }
+          },
+          {
+            "round": 1,
+            "distinctions": 218,
+            "least ring flips": [
+              7,
+              7,
+              7,
+              7
+            ],
+            "least connector attachment flips": {
+              "28": 7,
+              "29": 7,
+              "33": 7,
+              "34": 7,
+              "38": 7,
+              "39": 7,
+              "43": 7,
+              "44": 7,
+              "48": 7,
+              "49": 7,
+              "53": 7,
+              "54": 7
+            }
+          },
+          {
+            "round": 2,
+            "distinctions": 274,
+            "least ring flips": [
+              9,
+              9,
+              9,
+              9
+            ],
+            "least connector attachment flips": {
+              "28": 9,
+              "29": 9,
+              "33": 9,
+              "34": 9,
+              "38": 9,
+              "39": 9,
+              "43": 9,
+              "44": 9,
+              "48": 9,
+              "49": 9,
+              "53": 9,
+              "54": 9
+            }
+          },
+          {
+            "round": 3,
+            "distinctions": 330,
+            "least ring flips": [
+              11,
+              11,
+              11,
+              11
+            ],
+            "least connector attachment flips": {
+              "28": 10,
+              "29": 10,
+              "33": 10,
+              "34": 10,
+              "38": 10,
+              "39": 10,
+              "43": 11,
+              "44": 11,
+              "48": 10,
+              "49": 10,
+              "53": 10,
+              "54": 10
+            }
+          }
+        ]
+      },
+      {
+        "start": "4 rings of 7, paired, double",
+        "connector attachment supports": {
+          "28": [
+            84,
+            85
+          ],
+          "29": [
+            86,
+            87
+          ],
+          "30": [
+            90,
+            91
+          ],
+          "31": [
+            92,
+            93
+          ],
+          "32": [
+            96,
+            97
+          ],
+          "33": [
+            98,
+            99
+          ],
+          "34": [
+            102,
+            103
+          ],
+          "35": [
+            104,
+            105
+          ],
+          "36": [
+            108,
+            109
+          ],
+          "37": [
+            110,
+            111
+          ],
+          "38": [
+            114,
+            115
+          ],
+          "39": [
+            116,
+            117
+          ]
+        },
+        "rounds": [
+          {
+            "round": 0,
+            "distinctions": 120,
+            "least ring flips": [
+              5,
+              5,
+              5,
+              5
+            ],
+            "least connector attachment flips": {
+              "28": 5,
+              "29": 5,
+              "30": 5,
+              "31": 5,
+              "32": 5,
+              "33": 5,
+              "34": 5,
+              "35": 5,
+              "36": 5,
+              "37": 5,
+              "38": 5,
+              "39": 5
+            }
+          },
+          {
+            "round": 1,
+            "distinctions": 176,
+            "least ring flips": [
+              7,
+              7,
+              7,
+              7
+            ],
+            "least connector attachment flips": {
+              "28": 7,
+              "29": 7,
+              "30": 7,
+              "31": 7,
+              "32": 7,
+              "33": 7,
+              "34": 7,
+              "35": 7,
+              "36": 7,
+              "37": 7,
+              "38": 7,
+              "39": 7
+            }
+          },
+          {
+            "round": 2,
+            "distinctions": 232,
+            "least ring flips": [
+              9,
+              9,
+              9,
+              9
+            ],
+            "least connector attachment flips": {
+              "28": 9,
+              "29": 9,
+              "30": 9,
+              "31": 9,
+              "32": 9,
+              "33": 9,
+              "34": 9,
+              "35": 9,
+              "36": 9,
+              "37": 9,
+              "38": 9,
+              "39": 9
+            }
+          },
+          {
+            "round": 3,
+            "distinctions": 288,
+            "least ring flips": [
+              11,
+              11,
+              11,
+              11
+            ],
+            "least connector attachment flips": {
+              "28": 11,
+              "29": 11,
+              "30": 11,
+              "31": 11,
+              "32": 11,
+              "33": 11,
+              "34": 11,
+              "35": 11,
+              "36": 11,
+              "37": 11,
+              "38": 11,
+              "39": 11
+            }
+          }
+        ]
+      },
+      {
+        "start": "4 rings of 7, paired, detour",
+        "connector attachment supports": {
+          "28": [
+            84,
+            85
+          ],
+          "29": [
+            86,
+            87
+          ],
+          "33": [
+            97,
+            98
+          ],
+          "34": [
+            99,
+            100
+          ],
+          "38": [
+            110,
+            111
+          ],
+          "39": [
+            112,
+            113
+          ],
+          "43": [
+            123,
+            124
+          ],
+          "44": [
+            125,
+            126
+          ],
+          "48": [
+            136,
+            137
+          ],
+          "49": [
+            138,
+            139
+          ],
+          "53": [
+            149,
+            150
+          ],
+          "54": [
+            151,
+            152
+          ]
+        },
+        "rounds": [
+          {
+            "round": 0,
+            "distinctions": 162,
+            "least ring flips": [
+              5,
+              5,
+              5,
+              5
+            ],
+            "least connector attachment flips": {
+              "28": 5,
+              "29": 5,
+              "33": 5,
+              "34": 5,
+              "38": 5,
+              "39": 5,
+              "43": 5,
+              "44": 5,
+              "48": 5,
+              "49": 5,
+              "53": 5,
+              "54": 5
+            }
+          },
+          {
+            "round": 1,
+            "distinctions": 218,
+            "least ring flips": [
+              7,
+              7,
+              7,
+              7
+            ],
+            "least connector attachment flips": {
+              "28": 7,
+              "29": 7,
+              "33": 7,
+              "34": 7,
+              "38": 7,
+              "39": 7,
+              "43": 7,
+              "44": 7,
+              "48": 7,
+              "49": 7,
+              "53": 7,
+              "54": 7
+            }
+          },
+          {
+            "round": 2,
+            "distinctions": 274,
+            "least ring flips": [
+              9,
+              9,
+              9,
+              9
+            ],
+            "least connector attachment flips": {
+              "28": 9,
+              "29": 9,
+              "33": 9,
+              "34": 9,
+              "38": 9,
+              "39": 9,
+              "43": 9,
+              "44": 9,
+              "48": 9,
+              "49": 9,
+              "53": 9,
+              "54": 9
+            }
+          },
+          {
+            "round": 3,
+            "distinctions": 330,
+            "least ring flips": [
+              11,
+              11,
+              11,
+              11
+            ],
+            "least connector attachment flips": {
+              "28": 11,
+              "29": 11,
+              "33": 11,
+              "34": 11,
+              "38": 11,
+              "39": 11,
+              "43": 11,
+              "44": 11,
+              "48": 11,
+              "49": 11,
+              "53": 11,
+              "54": 11
+            }
+          }
+        ]
+      }
+    ],
+    "differences": [],
+    "scale archive sha256": "b8f50a92d4eea3a4ff9aea75a91c001f6639d44778838b10c72b77027091c199",
+    "predecessor record sha256": "9e5f8f0aa14fb5299fd0b9f580c4dc7c439aeb38010e7c8ce080783c3a23c193"
+  },
+  "maximum resident KiB": 30464,
+  "elapsed seconds": 10.594,
+  "processes": 1
+}

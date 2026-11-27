@@ -24,7 +24,7 @@ proper subfamily free (so the rule passes the knot test K1 to K3).
 
 ## The binding step (layer one to layer two)
 
-**Conjecture B.** Let G_1, ..., G_m (m ≥ 3) be pairwise disjoint sets of loose distinctions of S such that
+**[Refuted by R1 as stated (Block): its hypothesis is impossible as worded, and a nine-knot ring grouped into threes keeps a least flip of four for twelve rounds; the family-union statement in the referee's proof replaces it.] Conjecture B.** Let G_1, ..., G_m (m ≥ 3) be pairwise disjoint sets of loose distinctions of S such that
 (H1) the parity of G_1 ∪ ... ∪ G_m is the sum of the laws of a set D of knots of S, and every proper subfamily of the
 parities is free on S's allowed states (for the ring starts, D is every knot, since the connecting knots hold no loose
 distinction); (H2) S's growth is funded for t rounds (each round takes every loose distinction: engine fact E1);
@@ -62,11 +62,11 @@ flipping change bounded by a number S fixes. Hence for every scale k there is a 
 class facts at scale k are the span of the l_A plus start parities that no change of at most k in S's own closed
 changes flips, and the latter part does not change with t.
 
-**Consequence (the stop).** At a scale above the bounded facts, ordinary growth keeps the families' facts and one law
+**[Withdrawn: Block, R1.] Consequence (the stop).** At a scale above the bounded facts, ordinary growth keeps the families' facts and one law
 among them: one second-layer knot per connected start, the composite of all its knots (see the recursion note). Two
 second-layer knots that share a fact would need two relations, so the layer-two pattern has no shared facts and no
 loop, and no third layer arises from growth. A further layer can sit only in S's closed changes, which growth leaves
 as they were.
 
-**Status.** (ii) is proved; (i), (iii) and (iv) are computed on the frozen sets (README, "What was found"); (iii) and
+**Status.** [R1: (i), (ii) and the exact growth of two a round in (iii) are proved in referee-R1/argument.md; (iv) is proved with the bound max(4, number of start knots) for start parities; the scale description holds for scales of at least four, with additional parities surviving at smaller scales.] (ii) is proved; (i), (iii) and (iv) are computed on the frozen sets (README, "What was found"); (iii) and
 (iv) need a proof, for which P4 (births as clusters of the unrolled map) and P5 (reach) are the natural tools.

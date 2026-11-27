@@ -1,7 +1,26 @@
 # Does the binding step repeat? A third layer of whole-held facts
 
 Epic `THIRD-LAYER-20261126-001`, at the coordinator's go-ahead after the built-binding referee. A check by the thread,
-not a registered study; computed. The sections down to "Frozen" were committed before the frozen runs.
+not a registered study; computed. The sections down to "Frozen" were committed before the frozen runs (`965e73547a`).
+Refereed (R1: **refuted, two Blocks**; folded in below).
+
+> **Referee R1: refuted** ([report](referee-R1/report.md), [proof](referee-R1/argument.md)). **Block:** "one
+> second-layer knot per connected start, and no two can share a fact" is false. On the three-ring start of rings of
+> four knots (split attachments, double links), the whole-ring facts R, S, T and the first ring's two alternating
+> family facts P, Q have pairwise disjoint carriers and obey exactly two independent equations, R + S + T = 0 and
+> P + Q + R = 0, each triple taking exactly 000, 011, 101 and 110; at round 5 all five are class facts at the scale of
+> twelve and no single knot has a class fact of its own; removing one start law frees only the first triple, one birth
+> law only the second ([certificate](referee-R1/ring_overlap_counts.json)). A 48-knot start gives another, and on
+> thirteen five-knot rings a third-layer knot exists under a chosen reading (18 selected second-layer knots; two more
+> eligible knots make its facts locally readable). Whether ordinary growth selects a further layer is open.
+> **Block:** Conjecture B as stated (its hypothesis is impossible as worded, and a nine-knot ring grouping keeps a
+> least flip of four for twelve rounds). **What holds, now proved by the referee:** no birth mixes families (0 of
+> 23,149); the one relation among the named family facts; the least change flipping a nonzero sum of family facts grows
+> by exactly two each funded round (all 14,876 comparisons); a start parity outside the family span is flipped by a
+> change of at most the larger of four and the number of start knots. **Narrowings:** T4's membership test held for
+> the nonconstant family facts (645 null rows were skipped by the scorer); at the larger scale the family facts are
+> held by no part on 8 of 12 constructions (not 10), the whole-ring facts on 4 of 12; the scale description of
+> Conjecture T; the solver's outputs (None for a fixed parity, a string above the cap).
 
 ## The question
 
@@ -70,7 +89,7 @@ found seven constraints in one round on two of its cut starts); capped group rul
 
 All frozen runs finished ([`score.py`](score.py), [`score.json`](score.json)); no deviation.
 
-**T1 to T4 held on every start read, with no failure** (2,349 starts: 1,000 census, 900 held-out, 400 sampled, 33
+**T1 to T3 and T4's dimension test held on every start read; T4's membership test held for the nonconstant family facts** [R1] (2,349 starts: 1,000 census, 900 held-out, 400 sampled, 33
 built, 16 merge controls; 6,481 rounds read). No birth had parents descended from two families (T1). The families'
 facts took the joint values of one parity rule with every proper subfamily free on every connected start with three or
 more families, were tied on every start with two and fixed on every start with one; the merge control lowered the
@@ -83,17 +102,14 @@ have three or more; on the larger sample 54.
 **The read at a larger scale** ([`scale_read.py`](scale_read.py), [`frozen_scale_read.jsonl`](frozen_scale_read.jsonl)):
 on the three-ring built families at round 4, at the scale one below the families' least flipping change (10 for rings of
 four, 12 for rings of five and seven), the families' facts are class facts on all 12 read, and held by no part on 10
-of them: all split attachments, and the paired rings of four. On the paired rings of five and seven each connecting
+of them [R1: 8 of 12 for the family facts, 4 of 12 for the whole-ring facts]. On the paired rings of five and seven each connecting
 knot's own parity of its two attachment distinctions is still a class fact at that scale, and the families' facts are
 sums of them; a later round or a larger scale was not run. The four families of rings of six passed the size cap.
 
-**So the step does not repeat under ordinary growth, and this is the reason.** The facts that growth makes last are the
-families' facts; at a scale above the bounded facts they are held by no part (where read); and on a connected start
-they obey exactly one relation, the sum of all the start's laws (proved, the component lemma). So ordinary growth keeps
-one second-layer knot per connected start, the composite of all its knots. Second-layer knots that share a fact would
-need two relations among lasting facts, and none of 2,349 starts has them; a third layer can sit only in the start's
-own closed changes, which growth leaves as they were. The conjecture, with what is proved and what is computed, is
-[conjecture.md](conjecture.md); the two recursion leads are read beside it in [recursion_note.md](recursion_note.md).
+**[Withdrawn: Block, referee R1.] So the step does not repeat under ordinary growth, and this is the reason.** It
+does not follow: the one relation holds among the named family facts, but sums of family facts can have carriers of
+their own, and any linear dependence among three or more separately carried facts is a second-layer knot. The referee
+found two sharing a fact on a frozen start (below).
 
 **Not run.** The forbidding cuts (which can add relations among families' facts), capped group rules, rounds past 4,
 rings of six at round 4, and a built start whose closed changes carry a third layer (the advisor's 32-knot candidate,

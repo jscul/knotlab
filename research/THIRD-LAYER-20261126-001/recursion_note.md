@@ -8,9 +8,8 @@ distinction compose into one knot exactly when they can force it to opposite val
 that share a distinction is a law on the rest: a + b + s and s + c + d give a + b + c + d. The one relation of a connected
 start among its families' facts is this composition carried through the whole start: summing every law sums out every
 shared distinction and leaves the parity of all the loose distinctions, grouped by family. So the second-layer knot that
-ordinary growth keeps is the composite of all the first-layer knots of a connected start. That is why there is exactly
-one: composition turns many knots into one, and a tower would need several second-layer knots sharing facts, which one
-composite cannot supply. A start built in several levels (codes made of codes) supplies them by hand, and growth leaves
+ordinary growth keeps is the composite of all the first-layer knots of a connected start. [R1: there is exactly one among the
+named family facts, but not among separately carried sums of them, where several second-layer knots can share a fact.] A start built in several levels (codes made of codes) supplies them by hand, and growth leaves
 such a build as it was.
 
 **A released product that keeps releasing** (`GENERATORS-20261120-001`, nested.md: inside one ordinary structure, under
@@ -25,5 +24,6 @@ structure's laws, so a release would add facts to the second layer, not relation
 under ordinary growth was not measured here.
 
 **So, on the owner's third rung.** Both leads are about the growth reproducing a shape (a composite knot; a product that
-emits products), and both meet the same limit as the tower: what ordinary growth reproduces carries one relation per
-connected structure.
+emits products). [Corrected after R1:] the one relation holds among the named family facts, but sums of them can carry
+further relations on carriers of their own, so neither lead is limited by it; which of those relations growth itself
+selects is the open question.

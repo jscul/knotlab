@@ -3,6 +3,10 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 26 November 2026 · The third layer refereed: two second-layer knots can share a fact
+
+**Corrections from [an independent referee's report](research/THIRD-LAYER-20261126-001/referee-R1/report.md), folded into [the decision](research/THIRD-LAYER-20261126-001/decision.md).** The conclusion that ordinary growth keeps one second-layer knot per connected start, so that the binding step cannot repeat, is withdrawn. The families' facts obey one relation, but sums of them can be carried separately, and on a start of three rings of four knots two second-layer knots share a fact, all five facts held by no part. The count of starts where bound facts are held by no part at a larger scale is 8 of 12 for the families' facts and 4 of 12 for the whole rings', not 10. Which second-layer knots growth itself selects is open.
+
 ## 26 November 2026 · Held by no part at a larger scale; the binding step does not repeat by itself
 
 **A refinement of [lesson 12.3](INTUITIONS.md#123-whether-it-happens-again-one-pattern-up).** At a larger scale of small change, the facts bound on the built ring starts are held by no part on 10 of 12 read. And [a new study](research/THIRD-LAYER-20261126-001/decision.md) finds why the binding step does not repeat under ordinary growth: the facts growth makes last obey exactly one relation on each connected start (referee pending).

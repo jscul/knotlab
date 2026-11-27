@@ -2,7 +2,10 @@
 
 Epic `THIRD-LAYER-20261126-001` (the coordinator's go-ahead after the built-binding referee; goals G17 with G18), closed
 26 November 2026. A check by the thread, not registered: computed, with one part proved; frozen after the advisor's
-review in the repository; referee pending. [The note](README.md) · [The conjecture](conjecture.md) ·
+review in the repository. **Refereed (R1): refuted, two Blocks** ([report](referee-R1/report.md)): two second-layer
+knots can share a fact (on a frozen start), so the binding step's repetition is not ruled out; whether ordinary growth
+selects a further layer is open. Points 1 and 2 hold (the referee proves the cost of flipping a family fact grows by
+exactly two each round); point 3 is withdrawn; point 4's count is 8 of 12 for family facts. [The note](README.md) · [The conjecture](conjecture.md) ·
 [The recursion note](recursion_note.md)
 
 ## What stands
@@ -14,7 +17,7 @@ review in the repository; referee pending. [The note](README.md) · [The conject
 2. **One relation per connected start** (proved: a sum of laws supported on loose distinctions is all the laws of a
    connected part or none). The families' facts of a connected start obey exactly the sum of all its laws: one
    second-layer knot, the composite of all its knots.
-3. **So the step does not repeat under ordinary growth.** Second-layer knots that share a fact would need two relations
+3. **[Withdrawn: Block.] So the step does not repeat under ordinary growth.** Second-layer knots that share a fact would need two relations
    among lasting facts; none of 2,349 starts has them, and by point 2 none can. A third layer can sit only in the
    start's own closed changes, which growth leaves as they were.
 4. **Held by no part, at a scale.** At round 4 and the scale one below the families' least flipping change, the bound
@@ -33,10 +36,10 @@ past 4; whether lineages split during growth (a nested release); the advisor's c
 
 | Scope | Verdict | Why |
 | --- | --- | --- |
-| This attempt — the binding step repeated, frozen | **Status:** STOP (the reason found) | One relation per connected start among the facts that last |
-| Local direction — a tower under ordinary growth | STOP | It cannot repeat: one second-layer knot per connected start |
+| This attempt — the binding step repeated, frozen | **Status:** STOP (refuted by R1) | Two second-layer knots share a fact on a frozen start; the one relation holds only among the named family facts |
+| Local direction — a tower under ordinary growth | Continue | The step can repeat under a chosen reading; which knots growth selects is open |
 | Broader exploration — emergence at more than one layer | Mapped for ordinary growth | Repetition and one binding step; no further layer from growth |
-| Long-term goal — G17 with G18 | Obstruction learned | Further layers need a rule that adds relations among lasting facts: a rival law, or laws built into the start |
+| Long-term goal — G17 with G18 | Reopened | Lasting facts form a space; second-layer knots are dependencies among separately carried facts, and growth's own choice of them is the question |
 
 **Next step:** Research directions — the coordinator's call between #1 and #2
 

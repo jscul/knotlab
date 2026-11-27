@@ -1,5 +1,21 @@
 # What the node cores over the cap are
 
+> **Referee report R1, 27 November 2026: refuted — Block on the headline counts, on "every one grows steadily", and on
+> the proposed two-cycle condition; both certificates (subset finish, repeat) proved sound** ([the report](referee-R1/report.md)).
+> - **Block: the counts.** The six run files hold 181 distinct starts, not 221 (20 + 40 + 40 + 40 + 40 + 1); 180 are
+>   unresolved, one finishes by the subset pattern, none repeats. 1,473 of the 1,654 capped starts were not certified,
+>   not 1,433. The growth range 1.17 to 2.52 is one window (the fourth root of the ratio four ranks apart, ending one rank
+>   before the last); twelve pieces decrease somewhere and 87 of 184 have a last one-step ratio above 2.52.
+> - **Block, and a new result: at least 127 of the 181 never finish.** The referee proved it with a certificate the study
+>   lacked: mark each pair of a rank's births that share a parent with 0 or 1 so that every three births that pairwise
+>   share carry an even sum and some closed walk an odd one; the round rule carries such a marking to every later rank, so
+>   the core never ends. 131 pieces of 127 starts carry one at rank 1. One seven-knot start has births growing without
+>   bound, by the exact factor λ with λ^7 = (λ + 1)^2.
+> - **Block: the two-cycle condition is false.** That seven-knot start has one independent cycle; the proposed test fails.
+> - **Narrowings.** The caps and their counting conventions are stated more precisely in the report; 177 of the 180
+>   `tree+` starts sit on pieces counted as a cycle; the earlier finishing cores had 65,726 and 67,108,976 births (the
+>   figures quoted were nodes, with the starting knots). Read this record with these changes.
+
 Epic `CAPPED-CORES-20261127-001`, under G17 with G1, after `TWO-EXCEPTIONS-20261127-001` (its direction 1) and the cycle
 study's referee R1, which showed that a core over the cap may finish (two nine-knot `tree+` starts, 65,735 and
 67,108,985 births) or repeat (7, 7, 6 births forever). Structure only: nothing is grown.
@@ -45,8 +61,8 @@ eight-knot `tree+` cores, all unresolved and growing by about 1.3 to 1.6 a rank,
 | `tree+`, 11 | 727 | 40 | 0 | 0 | 0 | 40 | 1.17 to 2.51 |
 | `grow`, 10 | 1 | 1 | 0 | 0 | 0 | 1 | 1.39 |
 
-- **C1 holds:** 219 of the 221 certified capped cores are unresolved, and every one grows steadily, by 1.17 to 2.52
-  births a rank. **C2 holds:** one nine-knot core finishes by the subset pattern, after 2^84 − 85 more births, finite
+- **C1 holds:** ~~219 of the 221~~ *180 of the 181 (R1)* certified capped cores are unresolved, and ~~every one grows steadily,~~
+  in one window they grow by 1.17 to 2.52 births a rank *(R1: twelve pieces decrease somewhere)*. **C2 holds:** one nine-knot core finishes by the subset pattern, after 2^84 − 85 more births, finite
   but far past any growth that could be run. **C3 holds:** none repeats within 50,000 births.
 - **Where they sit.** 217 of the 220 capped `tree+` cores certified are on pieces `late.py` counts as a cycle (all 221
   but three: one at nine knots and two at eleven are on tree pieces).
@@ -54,11 +70,12 @@ eight-knot `tree+` cores, all unresolved and growing by about 1.3 to 1.6 a rank,
   eleven knots) has a capped core, unresolved and growing; under `tree+`, capped cores are 9% of accepted draws at seven
   knots rising to 30% at eleven, and of those certified none was shown to finish within reach except one, none repeats,
   and the rest grow by a steady factor a rank. Unending is shown for none of them (no certificate of growth without
-  bound is built here); finishing is shown for one.
+  bound is built here); finishing is shown for one. *(R1: at least 127 of the 181 are now proved unending by the
+  referee's parity certificate.)*
 
 **An intuition (a link, not evidence).** A piece with two or more independent cycles unrolls into a cover in which the
 number of connected sets of each size grows by a steady factor (the literature's growth constant of cluster counts on a
 branching cover; `RING-PAIR-20261119-001` found the cheapest growth's series rational with one cycle and exponential with
 two or more). The steady factors here, 1.17 to 2.52, are what that predicts for node cores, which would make these cores
-unending. Cheapest test: compute each piece's cycle rank against its blocks and cells and check that every capped,
+unending. Cheapest test *(R1: the first part fails; a seven-knot capped core with one cycle grows by λ with λ^7 = (λ + 1)^2)*: compute each piece's cycle rank against its blocks and cells and check that every capped,
 growing core has rank two or more, and that the factor matches the cover's growth constant on a few small pieces.

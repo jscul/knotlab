@@ -354,6 +354,7 @@ evidence: results and their status come from the records each entry links.
 | [A296](#a296--no-signalling-means-no-free-sender-can-change-the-other-readers-complete-record-tables-come-from-one-state-of-the-whole) | No signalling means no free sender can change the other reader's complete record; tables come from one state of the whole | scaffold | Assumed |
 | [A297](#a297--rule-r-read-off-the-whole-structure-with-settled-and-open-pairs-one-realisation-and-the-counting-state) | Rule R read off the whole structure, with settled and open pairs, one realisation and the counting state | scaffold | Assumed |
 | [A298](#a298--built-ring-families-lineage-carriers-and-the-origin-test-to-read-a-binding-of-whole-held-facts) | Built ring families, lineage carriers and the origin test, to read a binding of whole-held facts | scaffold | Assumed |
+| [A299](#a299--families-of-live-knots-and-a-scale-of-small-change-to-read-which-facts-growth-makes-last) | Families of live knots and a scale of small change, to read which facts growth makes last | scaffold | Assumed |
 
 ## Entries
 
@@ -6221,3 +6222,21 @@ evidence: results and their status come from the records each entry links.
     sampled starts under changes of at most five; the lineage carriers pass the origin test by construction, and each
     fact also has a smaller reader.
   - 2026-11-26 · Entered at the freeze of `BUILT-BINDING-20261126-001`.
+
+### A299 · Families of live knots and a scale of small change, to read which facts growth makes last
+
+**Assumed** · 2026-11-26 · scaffold
+
+- **Statement.** `THIRD-LAYER-20261126-001` reads two things of its own choosing. (1) **Families**: the live knots of
+  a start (those holding a loose distinction), two of them joined when some knot shares a distinction with each (the
+  engine's own candidate rule), taken in connected classes; a family's fact is the parity of its loose distinctions.
+  (2) **A scale**: a small change is any allowed change of at most k distinctions, with k = 5 for the frozen count and
+  k one below the families' least flipping change for the read of facts held by no part.
+- **Why.** The families are the advisor's reading of which lineages never share a birth; the scale lets a fact's least
+  flipping change, which growth lengthens, decide whether it is a class fact.
+- **Rests on it.** Claim T's computed parts and the read at a larger scale. The one relation per connected start does
+  not rest on it (proved for any grouping of loose distinctions by connected parts).
+- **Challenge.** Families defined from the stage at each round instead of the start (lineages that split); other
+  scales; the shortest-change reading. Expected to be replaced by a proof of claim T, which needs no chosen scale.
+- **History.**
+  - 2026-11-26 · Entered at the freeze of `THIRD-LAYER-20261126-001`.

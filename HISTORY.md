@@ -3,6 +3,10 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 26 November 2026 · Held by no part at a larger scale; the binding step does not repeat by itself
+
+**A refinement of [lesson 12.3](INTUITIONS.md#123-whether-it-happens-again-one-pattern-up).** At a larger scale of small change, the facts bound on the built ring starts are held by no part on 10 of 12 read. And [a new study](research/THIRD-LAYER-20261126-001/decision.md) finds why the binding step does not repeat under ordinary growth: the facts growth makes last obey exactly one relation on each connected start (referee pending).
+
 ## 26 November 2026 · Bindings of facts held by no part: only two in the record
 
 **A narrowing of [lesson 12.3](INTUITIONS.md#123-whether-it-happens-again-one-pattern-up) and of [the built binding](research/BUILT-BINDING-20261126-001/decision.md).** The facts bound on the built ring starts and on the sampled starts are read by no single knot, but each is a sum of facts that single connecting knots read, so a small part of the start holds it. Only two bindings in the record bind facts held by no part: a start of three rings whose joining knots each meet a ring by one distinction, and one sampled ten-knot start under the shortest changes.

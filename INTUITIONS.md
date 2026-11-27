@@ -6258,7 +6258,11 @@ is three facts, each carried on its own, whose parity the knots' laws force.
   only two bindings in the record: a start of three rings whose joining knots
   each meet a ring by one distinction, bound from the start, and one sampled start
   of ten knots under the shortest changes, where growth makes two of its three
-  facts (computed, at the advisor's prompting).
+  facts (computed, at the advisor's prompting). At a larger scale the verdict
+  changes: a connecting knot's own fact stops lasting, while a ring's fact keeps
+  needing two more distinctions to flip each round, so after four rounds, with a
+  small change any change of up to ten or twelve distinctions, the ring facts are
+  held by no part on 10 of the 12 three-ring starts read.
 - **(d) A rival law makes a new relation.** Under either of two rival growth laws
   recorded beside the ordinary one, the forbidding cuts (a birth gets one fresh
   distinction fewer, or only as many as three places need: register entries A129
@@ -6291,8 +6295,8 @@ with nothing nested by hand.
 | A knot's constraint is held by the whole and by no part | proved (lessons 2.1 and 2.3) |
 | A grown ring under parity keeps a class of the whole ring that no knot reads | computed, refereed (lesson 12.2); a tree does the same, so it is a fact of the grown start, not of the loop (computed, refereed) |
 | A connected start keeps two or more independent such facts | computed, refereed: a nine-knot start of two joined rings gains two in one round, a sampled ten-knot start too (lesson 12.2) |
-| A tower's first step: facts held by the whole, bound by a rule that passes the knot test and that nothing outside supplies, where before the step they were not such facts | reached for facts read by no single knot on built starts, and on sampled ones when a small change is any change of at most five distinctions; for facts held by no part, on one sampled start under the shortest changes: the rule is the start's own sum of knot laws, and growth makes the bound parities facts ([the built binding](research/BUILT-BINDING-20261126-001/decision.md), computed, refereed); under the forbidding cuts one knot's law makes the rule itself |
-| A tower: the step repeated, the bound layer keeping facts of its own | not shown |
+| A tower's first step: facts held by the whole, bound by a rule that passes the knot test and that nothing outside supplies, where before the step they were not such facts | reached for facts read by no single knot on built starts, and on sampled ones when a small change is any change of at most five distinctions; for facts held by no part, on one sampled start under the shortest changes and, at a larger scale, on 10 of 12 three-ring built starts read: the rule is the start's own sum of knot laws, and growth makes the bound parities facts ([the built binding](research/BUILT-BINDING-20261126-001/decision.md), computed, refereed); under the forbidding cuts one knot's law makes the rule itself |
+| A tower: the step repeated, the bound layer keeping facts of its own | not by ordinary growth: the facts growth makes last are the start's families' facts, and on a connected start they obey exactly one relation, the sum of all its laws (proved), so growth keeps one second-layer knot per connected start and no two can share a fact ([the third layer](research/THIRD-LAYER-20261126-001/decision.md), computed on 2,349 starts, referee pending) |
 | A pattern that grows back into itself (recursion) | not shown: growing a start and then exchanging it gives the start back only when we pin its loose values, which ordinary growth never does, and the exchange is ours; no free return or cycle on the iterations tested ([recursion's lead](research/RECURSION-LEAD-20261126-001/decision.md), refereed); parts that copy themselves (lesson 8.7) copy under laws added by hand. Two leads, not results: a part released by ordinary growth that itself keeps releasing parts, proved under both laws, where the second level depends on which released pattern an observer's test recognizes ([generators](research/GENERATORS-20261120-001/nested.md)); and two knots sharing one distinction compose into one knot exactly when they can force it to opposite values ([composition](research/BASE-THREE-20261021-001)) |
 
 ### 12.4 Two kinds of contradiction

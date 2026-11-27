@@ -365,6 +365,9 @@ evidence: results and their status come from the records each entry links.
 | [A307](#a307--cycle-starts-two-twin-weightings-and-count-caps-to-test-the-node-reading-and-its-twin-exception) | Cycle starts, two twin weightings and count caps to test the node reading and its twin exception | scaffold | Assumed |
 | [A308](#a308--agreement-readings-on-small-carriers-two-holder-notions-and-bonds-as-laws-to-test-the-grown-rings-bond) | Agreement readings on small carriers, two holder notions and bonds as laws, to test the grown ring's bond | scaffold | Assumed |
 | [A309](#a309--a-box-form-for-the-step-one-layer-up-and-closed-systems-counted-once) | A box form for the step one layer up, and closed systems counted once | scaffold | Assumed |
+| [A310](#a310--sign-the-change-a-parent-leaves-invisible-by-its-loose-value) | Sign the change a parent leaves invisible by its loose value | scaffold | Assumed |
+| [A311](#a311--divide-a-current-round-among-joint-classes-of-allowed-sibling-words) | Divide a current round among joint classes of allowed sibling words | scaffold | Assumed |
+| [A312](#a312--prepare-coherent-sibling-words-and-measure-combinations-of-the-permitted-changes) | Prepare coherent sibling words and measure combinations of the permitted changes | scaffold | Assumed |
 
 ## Entries
 
@@ -3870,6 +3873,7 @@ evidence: results and their status come from the records each entry links.
   rule under the same growth (parity against not-all-equal). As a scaffold of the current studies, the model is expected to
   settle which law it uses, or to show which results hold under every reasonable law (G18).
 - **History.**
+  - 2026-11-27 · Both positive joint birth weightings preserve every allowed old state on the tested start. This leaves the extension assumption open. [Birth sign and joint sibling weights](../research/BIRTH-SIGN-WEIGHT-20261127-001/decision.md)
   - 2026-11-20 · Localizing the spent-pair permission retains extension of every old word on a funded cut under both knot laws. When a distant donor is one loose name short the complete cut can end while all focal permissions and funds persist. [Join study](../research/NEWEST-KNOTS-AND-LOCAL-JOINS-20261120-001B/results.md).
   - 2026-11-20 · The rule allowing two spent knots to authorize a paid birth preserves every old word under either knot law on every funded cut. A funding veto leaves the old presentation intact. [Paid join](../research/LOOSE-NAMES-AND-SPENT-JOINS-20261120-001B/results.md).
   - 2026-11-20 · The two rival join choices, adding a direct live pair and including a live witness, preserve every old allowed word and its full local knot projections under both laws. Each funded nonclosing birth has its own fresh completion. A veto retains all prior words. Both rivals nevertheless veto the funded seven-knot recurring source. State extension alone does not decide which join to use. [Extension proof and costs](../research/STATE-DISTANCE-AND-REACHED-GROWTH-20261120-001A/rival_joins.md).
@@ -4211,6 +4215,7 @@ evidence: results and their status come from the records each entry links.
 - **Rests on it.** The full-pair and singleton calibrations, six-rule and three-reader tables, before-and-after states, the chosen sign order, supplied readers, preparations and fresh comparison weightings.
 - **Challenge.** Compare fresh conditioning to a retained preparation label, algebraic order to recorded chronology, a fair sign attached to a refused change, and alternative states after the same answer. Check both laws and ordinary motion, births and the forbidding join.
 - **History.**
+  - 2026-11-27 · No nonzero allowed change fits a single reader’s two distinctions on the old parity ring. A local coherent flip leaving that support can recover the target. On a sibling’s three-word support the fixed spectral read also requires a supplied measurement. [Birth sign and joint sibling weights](../research/BIRTH-SIGN-WEIGHT-20261127-001/decision.md)
   - 2026-11-25 · NATIVE-PHASE-READ-20261125-001 compared read-only and writing ordinary reads, repeatability and a grown shared record. Both the act and who may retain its outcome affect the predictions. [Phase-reading study](../research/NATIVE-PHASE-READ-20261125-001/results.md)
   - 2026-11-21 · Two coherent pulse rules have identical ordinary singleton frequencies but different end-to-end physical sign records. The chosen phase on an idle alternative is consequential. [Erasure and closing signs](../research/ERASURE-AND-CLOSING-SIGNS-20261121-001/decision.md)
   - 2026-11-21 · The new shared instrument separates source admission, signed changes, conditional data state, local raw and calibrated word, and a physically distinct recorded answer. The all-even and not-all-equal controls keep pre-setting herald failures as well as accepted histories. [Measurement study](../research/TWO-KNOTS-ONE-DECISION-20261121-001/decision.md)
@@ -6167,6 +6172,7 @@ evidence: results and their status come from the records each entry links.
   even sign but are not necessary (R forces even at five reached types), and R can be evaluated stage by stage; what
   the birth rules out is a persistent R. The next test reads R off the whole fixed structure (`EVENTUAL-R-20261126-001`).
 - **History.**
+  - 2026-11-27 · Two old words supplying the same three loose values at the close can carry opposite relative signs. Ordinary value reads on the fixed sibling preparation still admit a common list. [Birth sign and joint sibling weights](../research/BIRTH-SIGN-WEIGHT-20261127-001/decision.md)
   - 2026-11-26 · Entered, under challenge, by `NO-WHOLE-STATE-20261126-001` at the coordinator's request, beside A126
     and A294.
 
@@ -6272,6 +6278,7 @@ evidence: results and their status come from the records each entry links.
   state that relates words unequally; a growth rule in which a birth compares its parents' allowed words. Expected to be
   replaced only if the model comes to read changes itself.
 - **History.**
+  - 2026-11-27 · The three-parent signed transfer and the three-word sibling questions give two tests at matched ordinary frequencies. Dephasing every named sibling word yields zero on the new fixed questions. [Birth sign and joint sibling weights](../research/BIRTH-SIGN-WEIGHT-20261127-001/decision.md)
   - 2026-11-26 · Qualified by referees R1 and R2: a sufficient construction, not a least one (the mixture scores 2/3,
     another relative phase gives the same winning table); the square's win needs each middle record's signs
     applied. [R1](../research/VALUE-CHANGE-20261126-001/referee-R1/report.md) · [R2](../research/VALUE-CHANGE-20261126-001/referee-R2/report.md)
@@ -6358,6 +6365,7 @@ evidence: results and their status come from the records each entry links.
   exceed 2, which held under every counting and lift.
 - **Challenge.** More founders and rounds; other phases; a law that prescribes its own lift weights.
 - **History.**
+  - 2026-11-27 · New same-round weights and fixed questions on the sibling support distinguish an attained 2.1078403054 from the optimum with freely rotated reads. A current birth cannot duplicate both stopping horizons on the archived example. [Birth sign and joint sibling weights](../research/BIRTH-SIGN-WEIGHT-20261127-001/decision.md)
   - 2026-11-26 · Entered by `TRANSFER-TABLES-20261126-001`.
 
 ### A306 · At most two holders at the second layer
@@ -6435,3 +6443,36 @@ evidence: results and their status come from the records each entry links.
   - 2026-11-27 · Entered with `UPPER-GROWN-20261127-001`: boxes on 49 of the 85 twelve-knot closed systems, none below
     twelve, none on 2,416 grown stages read.
   - 2026-11-27 · Referee R1 (refuted, one Block): ordinary growth makes 18 boxes in one round on a built ten-knot start; a four-clause form of the step occurs on a closed ten-knot system and a sampled grown stage. The box form is one shape of the step, not the only one.
+
+### A310 · Sign the change a parent leaves invisible by its loose value
+
+**Assumed** · 2026-11-27 · scaffold
+
+- **Statement.** Give the old parity ring one loose distinction per parent. Choose the old allowed change invisible to that parent and give it the sign read on the parent’s loose distinction. Read the resulting relative phases coherently.
+- **Why.** The parent roles specify the changes on the three-parent example before closing. A signed transfer is an additional choice.
+- **Rests on it.** The relative minus at the three-parent close and its coherent three-reader table use this choice. [Birth sign and joint sibling weights](../research/BIRTH-SIGN-WEIGHT-20261127-001/decision.md)
+- **Challenge.** Remove the change, rephase the preparation and the questions together, restrict each read to its two distinctions, and compare with four parents. Keeping only the pair and preserving the old allowed words leaves the phase unread.
+- **History.**
+  - 2026-11-27 · Entered with the exploratory studies and their independent controls.
+
+### A311 · Divide a current round among joint classes of allowed sibling words
+
+**Assumed** · 2026-11-27 · scaffold
+
+- **Statement.** For the children of a not-all-equal founder fixed in advance, weight the symmetry classes of simultaneous allowed completions equally, then divide each class weight equally among its named words.
+- **Why.** This specifies a rival from current information and permits ordinary independent one-birth weights or a reinforcing draw as alternatives.
+- **Rests on it.** The siblings’ dependent equal/mixed table and the coherent score above two use the chosen class weighting and the fixed founder. [Birth sign and joint sibling weights](../research/BIRTH-SIGN-WEIGHT-20261127-001/decision.md)
+- **Challenge.** Keep single-birth probabilities fixed using reinforcement, compare a shared random draw, allow all founder words, and change the stopping horizon. All were checked. Separation by knots depends on the chosen founder.
+- **History.**
+  - 2026-11-27 · Entered with the exploratory studies and their independent controls.
+
+### A312 · Prepare coherent sibling words and measure combinations of the permitted changes
+
+**Assumed** · 2026-11-27 · scaffold
+
+- **Statement.** Prepare positive square-root amplitudes for the nine named word pairs. Choose an equality question, a change question from both legal toggles and a reflection about their common invariant. Measure their projectors. The construction of these combinations was chosen with the target in view.
+- **Why.** The table of probabilities and allowed changes fix the coefficients under the chosen construction. A local operation that carries out the coherent measurement is open.
+- **Rests on it.** The fixed-questions score 2.1078403054, the need to distinguish two kinds of dephasing, and the comparison with a classical common list all use this specified reading. [Birth sign and joint sibling weights](../research/BIRTH-SIGN-WEIGHT-20261127-001/decision.md)
+- **Challenge.** Use fully mixed named words, class dephasing, two independent preparations, the other weighting, opposite zero-mode convention, or either actual one-bit toggle. A growth-derived alternative must give a different answer record at identical ordinary word probabilities.
+- **History.**
+  - 2026-11-27 · Entered with the exploratory studies and their independent controls.

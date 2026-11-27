@@ -1,0 +1,4332 @@
+{
+  "census_size": 7075,
+  "starts_processed": 17,
+  "pilot_start_indices": [
+    0,
+    3,
+    8,
+    19,
+    20,
+    47,
+    87,
+    90,
+    1312,
+    1334,
+    1591,
+    1675,
+    2030,
+    2176,
+    3609,
+    5097,
+    7074
+  ],
+  "census_sha256": "ba937f95092234f8e1d8a08c20e86996a3aa58d187f137629b2c55d7e0553d6e",
+  "last_materialized_round": 6,
+  "last_round_funding_check": "test whether the reached round-six stage can fund round seven",
+  "last_round_funding_in_terminal_marks": true,
+  "controls": {
+    "literal_chain_counts": [
+      1,
+      4,
+      1,
+      1
+    ],
+    "earlier_growth_replay": {
+      "sources": 6,
+      "ordered_support_arrays": 42,
+      "transition_statuses": 24,
+      "birth_records": 81,
+      "next_funding_checks": 24,
+      "mismatches": []
+    },
+    "earlier_chain_priority": {
+      "starts": 8,
+      "stages": 21,
+      "first_three_chain_identities": 59,
+      "mismatches": []
+    }
+  },
+  "archive_mismatches": [],
+  "law_counts": {
+    "one_fewer": {
+      "rounds": [
+        {
+          "round": 0,
+          "reached_stages": 17,
+          "chain_positive_stages": 0,
+          "chain_occurrences": 0,
+          "first_three_occurrences": 0,
+          "max_chains": 0,
+          "stages_reaching_frozen_chain_cap": 0
+        },
+        {
+          "round": 1,
+          "reached_stages": 16,
+          "chain_positive_stages": 0,
+          "chain_occurrences": 0,
+          "first_three_occurrences": 0,
+          "max_chains": 0,
+          "stages_reaching_frozen_chain_cap": 0
+        },
+        {
+          "round": 2,
+          "reached_stages": 10,
+          "chain_positive_stages": 2,
+          "chain_occurrences": 25,
+          "first_three_occurrences": 6,
+          "max_chains": 19,
+          "stages_reaching_frozen_chain_cap": 0
+        },
+        {
+          "round": 3,
+          "reached_stages": 8,
+          "chain_positive_stages": 3,
+          "chain_occurrences": 112,
+          "first_three_occurrences": 9,
+          "max_chains": 86,
+          "stages_reaching_frozen_chain_cap": 0
+        },
+        {
+          "round": 4,
+          "reached_stages": 6,
+          "chain_positive_stages": 4,
+          "chain_occurrences": 234,
+          "first_three_occurrences": 12,
+          "max_chains": 162,
+          "stages_reaching_frozen_chain_cap": 0
+        },
+        {
+          "round": 5,
+          "reached_stages": 5,
+          "chain_positive_stages": 4,
+          "chain_occurrences": 389,
+          "first_three_occurrences": 12,
+          "max_chains": 238,
+          "stages_reaching_frozen_chain_cap": 0
+        },
+        {
+          "round": 6,
+          "reached_stages": 5,
+          "chain_positive_stages": 5,
+          "chain_occurrences": 609,
+          "first_three_occurrences": 15,
+          "max_chains": 314,
+          "stages_reaching_frozen_chain_cap": 0
+        }
+      ],
+      "terminal_marks": [
+        {
+          "category": [
+            0,
+            "closed"
+          ],
+          "count": 1
+        },
+        {
+          "category": [
+            1,
+            "stalled"
+          ],
+          "count": 6
+        },
+        {
+          "category": [
+            2,
+            "stalled"
+          ],
+          "count": 2
+        },
+        {
+          "category": [
+            3,
+            "stalled"
+          ],
+          "count": 2
+        },
+        {
+          "category": [
+            4,
+            "stalled"
+          ],
+          "count": 1
+        },
+        {
+          "category": [
+            6,
+            "funded"
+          ],
+          "count": 5
+        }
+      ],
+      "round_seven_next_funding": {
+        "funded": 5
+      },
+      "archive_checks": {
+        "stage_records_compared": 67,
+        "terminal_records_compared": 17
+      },
+      "distinct_chain_positive_ordered_support_arrays": 18,
+      "starts_with_chain": 5,
+      "comparison_with_matched_ordinary_stages": {
+        "total": {
+          "stages": 18,
+          "same_ordered_supports": 14,
+          "same_supports_up_to_distinction_renaming": 14,
+          "ordinary_chain_positive_stages": 15,
+          "same_chain_count": 14,
+          "same_chain_law_index_order": 14,
+          "same_first_three_chain_law_indices": 14
+        },
+        "per_round": [
+          {
+            "round": 2,
+            "stages": 2,
+            "same_ordered_supports": 2,
+            "same_supports_up_to_distinction_renaming": 2,
+            "ordinary_chain_positive_stages": 2,
+            "same_chain_count": 2,
+            "same_chain_law_index_order": 2,
+            "same_first_three_chain_law_indices": 2
+          },
+          {
+            "round": 3,
+            "stages": 3,
+            "same_ordered_supports": 3,
+            "same_supports_up_to_distinction_renaming": 3,
+            "ordinary_chain_positive_stages": 3,
+            "same_chain_count": 3,
+            "same_chain_law_index_order": 3,
+            "same_first_three_chain_law_indices": 3
+          },
+          {
+            "round": 4,
+            "stages": 4,
+            "same_ordered_supports": 3,
+            "same_supports_up_to_distinction_renaming": 3,
+            "ordinary_chain_positive_stages": 3,
+            "same_chain_count": 3,
+            "same_chain_law_index_order": 3,
+            "same_first_three_chain_law_indices": 3
+          },
+          {
+            "round": 5,
+            "stages": 4,
+            "same_ordered_supports": 3,
+            "same_supports_up_to_distinction_renaming": 3,
+            "ordinary_chain_positive_stages": 3,
+            "same_chain_count": 3,
+            "same_chain_law_index_order": 3,
+            "same_first_three_chain_law_indices": 3
+          },
+          {
+            "round": 6,
+            "stages": 5,
+            "same_ordered_supports": 3,
+            "same_supports_up_to_distinction_renaming": 3,
+            "ordinary_chain_positive_stages": 4,
+            "same_chain_count": 3,
+            "same_chain_law_index_order": 3,
+            "same_first_three_chain_law_indices": 3
+          }
+        ],
+        "ordinary_chain_free_cases": [
+          {
+            "start": 1591,
+            "starting_supports": [
+              [
+                0,
+                1,
+                2,
+                6,
+                7
+              ],
+              [
+                0,
+                3,
+                8
+              ],
+              [
+                1,
+                3,
+                9
+              ],
+              [
+                2,
+                4,
+                5
+              ],
+              [
+                4,
+                5,
+                10,
+                11
+              ]
+            ],
+            "round": 6,
+            "ordinary_supports": [
+              [
+                0,
+                1,
+                2,
+                6,
+                7
+              ],
+              [
+                0,
+                3,
+                8
+              ],
+              [
+                1,
+                3,
+                9
+              ],
+              [
+                2,
+                4,
+                5
+              ],
+              [
+                4,
+                5,
+                10,
+                11
+              ],
+              [
+                6,
+                8,
+                9,
+                12
+              ],
+              [
+                7,
+                10,
+                13,
+                14
+              ],
+              [
+                11,
+                15,
+                16
+              ],
+              [
+                12,
+                13,
+                17
+              ],
+              [
+                14,
+                15,
+                18,
+                19
+              ],
+              [
+                16,
+                20,
+                21
+              ],
+              [
+                17,
+                18,
+                22
+              ],
+              [
+                19,
+                20,
+                23,
+                24
+              ],
+              [
+                21,
+                25,
+                26
+              ],
+              [
+                22,
+                23,
+                27
+              ],
+              [
+                24,
+                25,
+                28,
+                29
+              ],
+              [
+                26,
+                30,
+                31
+              ],
+              [
+                27,
+                28,
+                32
+              ],
+              [
+                29,
+                30,
+                33,
+                34
+              ],
+              [
+                31,
+                35,
+                36
+              ],
+              [
+                32,
+                33,
+                37
+              ],
+              [
+                34,
+                35,
+                38,
+                39
+              ],
+              [
+                36,
+                40,
+                41
+              ]
+            ],
+            "rival_supports": [
+              [
+                0,
+                1,
+                2,
+                6,
+                7
+              ],
+              [
+                0,
+                3,
+                8
+              ],
+              [
+                1,
+                3,
+                9
+              ],
+              [
+                2,
+                4,
+                5
+              ],
+              [
+                4,
+                5,
+                10,
+                11
+              ],
+              [
+                6,
+                8,
+                9
+              ],
+              [
+                7,
+                10,
+                13
+              ],
+              [
+                11,
+                15,
+                16
+              ],
+              [
+                13,
+                15,
+                17
+              ],
+              [
+                16,
+                18,
+                19
+              ],
+              [
+                17,
+                18,
+                20
+              ],
+              [
+                19,
+                21,
+                22
+              ],
+              [
+                20,
+                21,
+                23
+              ],
+              [
+                22,
+                24,
+                25
+              ],
+              [
+                23,
+                24,
+                26
+              ],
+              [
+                25,
+                27,
+                28
+              ],
+              [
+                26,
+                27,
+                29
+              ],
+              [
+                28,
+                30,
+                31
+              ]
+            ],
+            "rival_chains": [
+              [
+                6,
+                8,
+                7,
+                9,
+                11,
+                12,
+                14,
+                16
+              ],
+              [
+                6,
+                8,
+                7,
+                9,
+                11,
+                13,
+                14,
+                16
+              ],
+              [
+                6,
+                8,
+                7,
+                9,
+                11,
+                13,
+                15,
+                16
+              ],
+              [
+                6,
+                8,
+                7,
+                9,
+                11,
+                13,
+                15,
+                17
+              ],
+              [
+                6,
+                8,
+                10,
+                9,
+                11,
+                13,
+                14,
+                16
+              ],
+              [
+                6,
+                8,
+                10,
+                9,
+                11,
+                13,
+                15,
+                16
+              ],
+              [
+                6,
+                8,
+                10,
+                9,
+                11,
+                13,
+                15,
+                17
+              ],
+              [
+                6,
+                8,
+                10,
+                12,
+                11,
+                13,
+                15,
+                16
+              ],
+              [
+                6,
+                8,
+                10,
+                12,
+                11,
+                13,
+                15,
+                17
+              ],
+              [
+                6,
+                8,
+                10,
+                12,
+                14,
+                13,
+                15,
+                17
+              ],
+              [
+                6,
+                8,
+                10,
+                12,
+                14,
+                16,
+                15,
+                17
+              ],
+              [
+                7,
+                8,
+                10,
+                12,
+                11,
+                13,
+                15,
+                16
+              ],
+              [
+                7,
+                8,
+                10,
+                12,
+                11,
+                13,
+                15,
+                17
+              ],
+              [
+                7,
+                8,
+                10,
+                12,
+                14,
+                13,
+                15,
+                17
+              ],
+              [
+                7,
+                8,
+                10,
+                12,
+                14,
+                16,
+                15,
+                17
+              ],
+              [
+                7,
+                9,
+                10,
+                12,
+                14,
+                13,
+                15,
+                17
+              ],
+              [
+                7,
+                9,
+                10,
+                12,
+                14,
+                16,
+                15,
+                17
+              ],
+              [
+                7,
+                9,
+                11,
+                12,
+                14,
+                16,
+                15,
+                17
+              ],
+              [
+                8,
+                7,
+                9,
+                11,
+                12,
+                14,
+                16,
+                15
+              ]
+            ],
+            "rival_next_funding": "funded"
+          },
+          {
+            "start": 1675,
+            "starting_supports": [
+              [
+                0,
+                1,
+                2,
+                3,
+                6,
+                7
+              ],
+              [
+                0,
+                4,
+                8
+              ],
+              [
+                1,
+                4,
+                9
+              ],
+              [
+                2,
+                3,
+                5
+              ],
+              [
+                5,
+                10,
+                11
+              ]
+            ],
+            "round": 4,
+            "ordinary_supports": [
+              [
+                0,
+                1,
+                2,
+                3,
+                6,
+                7
+              ],
+              [
+                0,
+                4,
+                8
+              ],
+              [
+                1,
+                4,
+                9
+              ],
+              [
+                2,
+                3,
+                5
+              ],
+              [
+                5,
+                10,
+                11
+              ],
+              [
+                6,
+                8,
+                9,
+                12
+              ],
+              [
+                7,
+                10,
+                13,
+                14
+              ],
+              [
+                11,
+                15,
+                16
+              ],
+              [
+                12,
+                13,
+                17
+              ],
+              [
+                14,
+                15,
+                18,
+                19
+              ],
+              [
+                16,
+                20,
+                21
+              ],
+              [
+                17,
+                18,
+                22
+              ],
+              [
+                19,
+                20,
+                23,
+                24
+              ],
+              [
+                21,
+                25,
+                26
+              ],
+              [
+                22,
+                23,
+                27
+              ],
+              [
+                24,
+                25,
+                28,
+                29
+              ],
+              [
+                26,
+                30,
+                31
+              ]
+            ],
+            "rival_supports": [
+              [
+                0,
+                1,
+                2,
+                3,
+                6,
+                7
+              ],
+              [
+                0,
+                4,
+                8
+              ],
+              [
+                1,
+                4,
+                9
+              ],
+              [
+                2,
+                3,
+                5
+              ],
+              [
+                5,
+                10,
+                11
+              ],
+              [
+                6,
+                8,
+                9
+              ],
+              [
+                7,
+                10,
+                13
+              ],
+              [
+                11,
+                15,
+                16
+              ],
+              [
+                13,
+                15,
+                17
+              ],
+              [
+                16,
+                18,
+                19
+              ],
+              [
+                17,
+                18,
+                20
+              ],
+              [
+                19,
+                21,
+                22
+              ],
+              [
+                20,
+                21,
+                23
+              ],
+              [
+                22,
+                24,
+                25
+              ]
+            ],
+            "rival_chains": [
+              [
+                3,
+                4,
+                6,
+                8,
+                10,
+                9,
+                11,
+                13
+              ],
+              [
+                3,
+                4,
+                6,
+                8,
+                10,
+                12,
+                11,
+                13
+              ],
+              [
+                3,
+                4,
+                7,
+                8,
+                10,
+                12,
+                11,
+                13
+              ]
+            ],
+            "rival_next_funding": "funded"
+          },
+          {
+            "start": 1675,
+            "starting_supports": [
+              [
+                0,
+                1,
+                2,
+                3,
+                6,
+                7
+              ],
+              [
+                0,
+                4,
+                8
+              ],
+              [
+                1,
+                4,
+                9
+              ],
+              [
+                2,
+                3,
+                5
+              ],
+              [
+                5,
+                10,
+                11
+              ]
+            ],
+            "round": 5,
+            "ordinary_supports": [
+              [
+                0,
+                1,
+                2,
+                3,
+                6,
+                7
+              ],
+              [
+                0,
+                4,
+                8
+              ],
+              [
+                1,
+                4,
+                9
+              ],
+              [
+                2,
+                3,
+                5
+              ],
+              [
+                5,
+                10,
+                11
+              ],
+              [
+                6,
+                8,
+                9,
+                12
+              ],
+              [
+                7,
+                10,
+                13,
+                14
+              ],
+              [
+                11,
+                15,
+                16
+              ],
+              [
+                12,
+                13,
+                17
+              ],
+              [
+                14,
+                15,
+                18,
+                19
+              ],
+              [
+                16,
+                20,
+                21
+              ],
+              [
+                17,
+                18,
+                22
+              ],
+              [
+                19,
+                20,
+                23,
+                24
+              ],
+              [
+                21,
+                25,
+                26
+              ],
+              [
+                22,
+                23,
+                27
+              ],
+              [
+                24,
+                25,
+                28,
+                29
+              ],
+              [
+                26,
+                30,
+                31
+              ],
+              [
+                27,
+                28,
+                32
+              ],
+              [
+                29,
+                30,
+                33,
+                34
+              ],
+              [
+                31,
+                35,
+                36
+              ]
+            ],
+            "rival_supports": [
+              [
+                0,
+                1,
+                2,
+                3,
+                6,
+                7
+              ],
+              [
+                0,
+                4,
+                8
+              ],
+              [
+                1,
+                4,
+                9
+              ],
+              [
+                2,
+                3,
+                5
+              ],
+              [
+                5,
+                10,
+                11
+              ],
+              [
+                6,
+                8,
+                9
+              ],
+              [
+                7,
+                10,
+                13
+              ],
+              [
+                11,
+                15,
+                16
+              ],
+              [
+                13,
+                15,
+                17
+              ],
+              [
+                16,
+                18,
+                19
+              ],
+              [
+                17,
+                18,
+                20
+              ],
+              [
+                19,
+                21,
+                22
+              ],
+              [
+                20,
+                21,
+                23
+              ],
+              [
+                22,
+                24,
+                25
+              ],
+              [
+                23,
+                24,
+                26
+              ],
+              [
+                25,
+                27,
+                28
+              ]
+            ],
+            "rival_chains": [
+              [
+                3,
+                4,
+                6,
+                8,
+                10,
+                9,
+                11,
+                13
+              ],
+              [
+                3,
+                4,
+                6,
+                8,
+                10,
+                12,
+                11,
+                13
+              ],
+              [
+                3,
+                4,
+                6,
+                8,
+                10,
+                12,
+                14,
+                13
+              ],
+              [
+                3,
+                4,
+                7,
+                8,
+                10,
+                12,
+                11,
+                13
+              ],
+              [
+                3,
+                4,
+                7,
+                8,
+                10,
+                12,
+                14,
+                13
+              ],
+              [
+                3,
+                4,
+                7,
+                9,
+                10,
+                12,
+                14,
+                13
+              ],
+              [
+                4,
+                6,
+                8,
+                10,
+                9,
+                11,
+                13,
+                14
+              ],
+              [
+                4,
+                6,
+                8,
+                10,
+                9,
+                11,
+                13,
+                15
+              ],
+              [
+                4,
+                6,
+                8,
+                10,
+                12,
+                11,
+                13,
+                15
+              ],
+              [
+                4,
+                6,
+                8,
+                10,
+                12,
+                14,
+                13,
+                15
+              ],
+              [
+                4,
+                7,
+                8,
+                10,
+                12,
+                11,
+                13,
+                15
+              ],
+              [
+                4,
+                7,
+                8,
+                10,
+                12,
+                14,
+                13,
+                15
+              ],
+              [
+                4,
+                7,
+                9,
+                10,
+                12,
+                14,
+                13,
+                15
+              ],
+              [
+                6,
+                4,
+                7,
+                9,
+                10,
+                12,
+                14,
+                13
+              ]
+            ],
+            "rival_next_funding": "funded"
+          }
+        ],
+        "round_six_support_exceptions": [
+          {
+            "start": 1591,
+            "starting_supports": [
+              [
+                0,
+                1,
+                2,
+                6,
+                7
+              ],
+              [
+                0,
+                3,
+                8
+              ],
+              [
+                1,
+                3,
+                9
+              ],
+              [
+                2,
+                4,
+                5
+              ],
+              [
+                4,
+                5,
+                10,
+                11
+              ]
+            ],
+            "first_different_round": 1,
+            "first_different_births": [
+              {
+                "knot": 5,
+                "parents": [
+                  0,
+                  1,
+                  2
+                ],
+                "demand": 1,
+                "ordinary_fresh": 1,
+                "rival_fresh": 0
+              },
+              {
+                "knot": 6,
+                "parents": [
+                  0,
+                  4
+                ],
+                "demand": 2,
+                "ordinary_fresh": 2,
+                "rival_fresh": 1
+              }
+            ],
+            "stages": [
+              {
+                "round": 0,
+                "rival_knot_count": 5,
+                "rival_chain_count": 0,
+                "ordinary_knot_count": 5,
+                "ordinary_chain_count": 0
+              },
+              {
+                "round": 1,
+                "rival_knot_count": 8,
+                "rival_chain_count": 0,
+                "ordinary_knot_count": 8,
+                "ordinary_chain_count": 0
+              },
+              {
+                "round": 2,
+                "rival_knot_count": 10,
+                "rival_chain_count": 0,
+                "ordinary_knot_count": 11,
+                "ordinary_chain_count": 0
+              },
+              {
+                "round": 3,
+                "rival_knot_count": 12,
+                "rival_chain_count": 0,
+                "ordinary_knot_count": 14,
+                "ordinary_chain_count": 0
+              },
+              {
+                "round": 4,
+                "rival_knot_count": 14,
+                "rival_chain_count": 0,
+                "ordinary_knot_count": 17,
+                "ordinary_chain_count": 0
+              },
+              {
+                "round": 5,
+                "rival_knot_count": 16,
+                "rival_chain_count": 0,
+                "ordinary_knot_count": 20,
+                "ordinary_chain_count": 0
+              },
+              {
+                "round": 6,
+                "rival_knot_count": 18,
+                "rival_chain_count": 19,
+                "ordinary_knot_count": 23,
+                "ordinary_chain_count": 0
+              }
+            ],
+            "rival_next_funding": "funded",
+            "round_six_rival_supports": [
+              [
+                0,
+                1,
+                2,
+                6,
+                7
+              ],
+              [
+                0,
+                3,
+                8
+              ],
+              [
+                1,
+                3,
+                9
+              ],
+              [
+                2,
+                4,
+                5
+              ],
+              [
+                4,
+                5,
+                10,
+                11
+              ],
+              [
+                6,
+                8,
+                9
+              ],
+              [
+                7,
+                10,
+                13
+              ],
+              [
+                11,
+                15,
+                16
+              ],
+              [
+                13,
+                15,
+                17
+              ],
+              [
+                16,
+                18,
+                19
+              ],
+              [
+                17,
+                18,
+                20
+              ],
+              [
+                19,
+                21,
+                22
+              ],
+              [
+                20,
+                21,
+                23
+              ],
+              [
+                22,
+                24,
+                25
+              ],
+              [
+                23,
+                24,
+                26
+              ],
+              [
+                25,
+                27,
+                28
+              ],
+              [
+                26,
+                27,
+                29
+              ],
+              [
+                28,
+                30,
+                31
+              ]
+            ],
+            "round_six_ordinary_supports": [
+              [
+                0,
+                1,
+                2,
+                6,
+                7
+              ],
+              [
+                0,
+                3,
+                8
+              ],
+              [
+                1,
+                3,
+                9
+              ],
+              [
+                2,
+                4,
+                5
+              ],
+              [
+                4,
+                5,
+                10,
+                11
+              ],
+              [
+                6,
+                8,
+                9,
+                12
+              ],
+              [
+                7,
+                10,
+                13,
+                14
+              ],
+              [
+                11,
+                15,
+                16
+              ],
+              [
+                12,
+                13,
+                17
+              ],
+              [
+                14,
+                15,
+                18,
+                19
+              ],
+              [
+                16,
+                20,
+                21
+              ],
+              [
+                17,
+                18,
+                22
+              ],
+              [
+                19,
+                20,
+                23,
+                24
+              ],
+              [
+                21,
+                25,
+                26
+              ],
+              [
+                22,
+                23,
+                27
+              ],
+              [
+                24,
+                25,
+                28,
+                29
+              ],
+              [
+                26,
+                30,
+                31
+              ],
+              [
+                27,
+                28,
+                32
+              ],
+              [
+                29,
+                30,
+                33,
+                34
+              ],
+              [
+                31,
+                35,
+                36
+              ],
+              [
+                32,
+                33,
+                37
+              ],
+              [
+                34,
+                35,
+                38,
+                39
+              ],
+              [
+                36,
+                40,
+                41
+              ]
+            ]
+          },
+          {
+            "start": 1675,
+            "starting_supports": [
+              [
+                0,
+                1,
+                2,
+                3,
+                6,
+                7
+              ],
+              [
+                0,
+                4,
+                8
+              ],
+              [
+                1,
+                4,
+                9
+              ],
+              [
+                2,
+                3,
+                5
+              ],
+              [
+                5,
+                10,
+                11
+              ]
+            ],
+            "first_different_round": 1,
+            "first_different_births": [
+              {
+                "knot": 5,
+                "parents": [
+                  0,
+                  1,
+                  2
+                ],
+                "demand": 1,
+                "ordinary_fresh": 1,
+                "rival_fresh": 0
+              },
+              {
+                "knot": 6,
+                "parents": [
+                  0,
+                  4
+                ],
+                "demand": 2,
+                "ordinary_fresh": 2,
+                "rival_fresh": 1
+              }
+            ],
+            "stages": [
+              {
+                "round": 0,
+                "rival_knot_count": 5,
+                "rival_chain_count": 0,
+                "ordinary_knot_count": 5,
+                "ordinary_chain_count": 0
+              },
+              {
+                "round": 1,
+                "rival_knot_count": 8,
+                "rival_chain_count": 0,
+                "ordinary_knot_count": 8,
+                "ordinary_chain_count": 0
+              },
+              {
+                "round": 2,
+                "rival_knot_count": 10,
+                "rival_chain_count": 0,
+                "ordinary_knot_count": 11,
+                "ordinary_chain_count": 0
+              },
+              {
+                "round": 3,
+                "rival_knot_count": 12,
+                "rival_chain_count": 0,
+                "ordinary_knot_count": 14,
+                "ordinary_chain_count": 0
+              },
+              {
+                "round": 4,
+                "rival_knot_count": 14,
+                "rival_chain_count": 3,
+                "ordinary_knot_count": 17,
+                "ordinary_chain_count": 0
+              },
+              {
+                "round": 5,
+                "rival_knot_count": 16,
+                "rival_chain_count": 14,
+                "ordinary_knot_count": 20,
+                "ordinary_chain_count": 0
+              },
+              {
+                "round": 6,
+                "rival_knot_count": 18,
+                "rival_chain_count": 49,
+                "ordinary_knot_count": 23,
+                "ordinary_chain_count": 1
+              }
+            ],
+            "rival_next_funding": "funded",
+            "round_six_rival_supports": [
+              [
+                0,
+                1,
+                2,
+                3,
+                6,
+                7
+              ],
+              [
+                0,
+                4,
+                8
+              ],
+              [
+                1,
+                4,
+                9
+              ],
+              [
+                2,
+                3,
+                5
+              ],
+              [
+                5,
+                10,
+                11
+              ],
+              [
+                6,
+                8,
+                9
+              ],
+              [
+                7,
+                10,
+                13
+              ],
+              [
+                11,
+                15,
+                16
+              ],
+              [
+                13,
+                15,
+                17
+              ],
+              [
+                16,
+                18,
+                19
+              ],
+              [
+                17,
+                18,
+                20
+              ],
+              [
+                19,
+                21,
+                22
+              ],
+              [
+                20,
+                21,
+                23
+              ],
+              [
+                22,
+                24,
+                25
+              ],
+              [
+                23,
+                24,
+                26
+              ],
+              [
+                25,
+                27,
+                28
+              ],
+              [
+                26,
+                27,
+                29
+              ],
+              [
+                28,
+                30,
+                31
+              ]
+            ],
+            "round_six_ordinary_supports": [
+              [
+                0,
+                1,
+                2,
+                3,
+                6,
+                7
+              ],
+              [
+                0,
+                4,
+                8
+              ],
+              [
+                1,
+                4,
+                9
+              ],
+              [
+                2,
+                3,
+                5
+              ],
+              [
+                5,
+                10,
+                11
+              ],
+              [
+                6,
+                8,
+                9,
+                12
+              ],
+              [
+                7,
+                10,
+                13,
+                14
+              ],
+              [
+                11,
+                15,
+                16
+              ],
+              [
+                12,
+                13,
+                17
+              ],
+              [
+                14,
+                15,
+                18,
+                19
+              ],
+              [
+                16,
+                20,
+                21
+              ],
+              [
+                17,
+                18,
+                22
+              ],
+              [
+                19,
+                20,
+                23,
+                24
+              ],
+              [
+                21,
+                25,
+                26
+              ],
+              [
+                22,
+                23,
+                27
+              ],
+              [
+                24,
+                25,
+                28,
+                29
+              ],
+              [
+                26,
+                30,
+                31
+              ],
+              [
+                27,
+                28,
+                32
+              ],
+              [
+                29,
+                30,
+                33,
+                34
+              ],
+              [
+                31,
+                35,
+                36
+              ],
+              [
+                32,
+                33,
+                37
+              ],
+              [
+                34,
+                35,
+                38,
+                39
+              ],
+              [
+                36,
+                40,
+                41
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    "arity_floor": {
+      "rounds": [
+        {
+          "round": 0,
+          "reached_stages": 17,
+          "chain_positive_stages": 0,
+          "chain_occurrences": 0,
+          "first_three_occurrences": 0,
+          "max_chains": 0,
+          "stages_reaching_frozen_chain_cap": 0
+        },
+        {
+          "round": 1,
+          "reached_stages": 16,
+          "chain_positive_stages": 0,
+          "chain_occurrences": 0,
+          "first_three_occurrences": 0,
+          "max_chains": 0,
+          "stages_reaching_frozen_chain_cap": 0
+        },
+        {
+          "round": 2,
+          "reached_stages": 14,
+          "chain_positive_stages": 2,
+          "chain_occurrences": 25,
+          "first_three_occurrences": 6,
+          "max_chains": 19,
+          "stages_reaching_frozen_chain_cap": 0
+        },
+        {
+          "round": 3,
+          "reached_stages": 12,
+          "chain_positive_stages": 3,
+          "chain_occurrences": 112,
+          "first_three_occurrences": 9,
+          "max_chains": 86,
+          "stages_reaching_frozen_chain_cap": 0
+        },
+        {
+          "round": 4,
+          "reached_stages": 6,
+          "chain_positive_stages": 4,
+          "chain_occurrences": 234,
+          "first_three_occurrences": 12,
+          "max_chains": 162,
+          "stages_reaching_frozen_chain_cap": 0
+        },
+        {
+          "round": 5,
+          "reached_stages": 5,
+          "chain_positive_stages": 4,
+          "chain_occurrences": 389,
+          "first_three_occurrences": 12,
+          "max_chains": 238,
+          "stages_reaching_frozen_chain_cap": 0
+        },
+        {
+          "round": 6,
+          "reached_stages": 5,
+          "chain_positive_stages": 5,
+          "chain_occurrences": 609,
+          "first_three_occurrences": 15,
+          "max_chains": 314,
+          "stages_reaching_frozen_chain_cap": 0
+        }
+      ],
+      "terminal_marks": [
+        {
+          "category": [
+            0,
+            "closed"
+          ],
+          "count": 1
+        },
+        {
+          "category": [
+            1,
+            "stalled"
+          ],
+          "count": 2
+        },
+        {
+          "category": [
+            2,
+            "stalled"
+          ],
+          "count": 2
+        },
+        {
+          "category": [
+            3,
+            "stalled"
+          ],
+          "count": 6
+        },
+        {
+          "category": [
+            4,
+            "stalled"
+          ],
+          "count": 1
+        },
+        {
+          "category": [
+            6,
+            "funded"
+          ],
+          "count": 5
+        }
+      ],
+      "round_seven_next_funding": {
+        "funded": 5
+      },
+      "archive_checks": {
+        "stage_records_compared": 75,
+        "terminal_records_compared": 17
+      },
+      "distinct_chain_positive_ordered_support_arrays": 18,
+      "starts_with_chain": 5,
+      "comparison_with_matched_ordinary_stages": {
+        "total": {
+          "stages": 18,
+          "same_ordered_supports": 14,
+          "same_supports_up_to_distinction_renaming": 14,
+          "ordinary_chain_positive_stages": 15,
+          "same_chain_count": 14,
+          "same_chain_law_index_order": 14,
+          "same_first_three_chain_law_indices": 14
+        },
+        "per_round": [
+          {
+            "round": 2,
+            "stages": 2,
+            "same_ordered_supports": 2,
+            "same_supports_up_to_distinction_renaming": 2,
+            "ordinary_chain_positive_stages": 2,
+            "same_chain_count": 2,
+            "same_chain_law_index_order": 2,
+            "same_first_three_chain_law_indices": 2
+          },
+          {
+            "round": 3,
+            "stages": 3,
+            "same_ordered_supports": 3,
+            "same_supports_up_to_distinction_renaming": 3,
+            "ordinary_chain_positive_stages": 3,
+            "same_chain_count": 3,
+            "same_chain_law_index_order": 3,
+            "same_first_three_chain_law_indices": 3
+          },
+          {
+            "round": 4,
+            "stages": 4,
+            "same_ordered_supports": 3,
+            "same_supports_up_to_distinction_renaming": 3,
+            "ordinary_chain_positive_stages": 3,
+            "same_chain_count": 3,
+            "same_chain_law_index_order": 3,
+            "same_first_three_chain_law_indices": 3
+          },
+          {
+            "round": 5,
+            "stages": 4,
+            "same_ordered_supports": 3,
+            "same_supports_up_to_distinction_renaming": 3,
+            "ordinary_chain_positive_stages": 3,
+            "same_chain_count": 3,
+            "same_chain_law_index_order": 3,
+            "same_first_three_chain_law_indices": 3
+          },
+          {
+            "round": 6,
+            "stages": 5,
+            "same_ordered_supports": 3,
+            "same_supports_up_to_distinction_renaming": 3,
+            "ordinary_chain_positive_stages": 4,
+            "same_chain_count": 3,
+            "same_chain_law_index_order": 3,
+            "same_first_three_chain_law_indices": 3
+          }
+        ],
+        "ordinary_chain_free_cases": [
+          {
+            "start": 1591,
+            "starting_supports": [
+              [
+                0,
+                1,
+                2,
+                6,
+                7
+              ],
+              [
+                0,
+                3,
+                8
+              ],
+              [
+                1,
+                3,
+                9
+              ],
+              [
+                2,
+                4,
+                5
+              ],
+              [
+                4,
+                5,
+                10,
+                11
+              ]
+            ],
+            "round": 6,
+            "ordinary_supports": [
+              [
+                0,
+                1,
+                2,
+                6,
+                7
+              ],
+              [
+                0,
+                3,
+                8
+              ],
+              [
+                1,
+                3,
+                9
+              ],
+              [
+                2,
+                4,
+                5
+              ],
+              [
+                4,
+                5,
+                10,
+                11
+              ],
+              [
+                6,
+                8,
+                9,
+                12
+              ],
+              [
+                7,
+                10,
+                13,
+                14
+              ],
+              [
+                11,
+                15,
+                16
+              ],
+              [
+                12,
+                13,
+                17
+              ],
+              [
+                14,
+                15,
+                18,
+                19
+              ],
+              [
+                16,
+                20,
+                21
+              ],
+              [
+                17,
+                18,
+                22
+              ],
+              [
+                19,
+                20,
+                23,
+                24
+              ],
+              [
+                21,
+                25,
+                26
+              ],
+              [
+                22,
+                23,
+                27
+              ],
+              [
+                24,
+                25,
+                28,
+                29
+              ],
+              [
+                26,
+                30,
+                31
+              ],
+              [
+                27,
+                28,
+                32
+              ],
+              [
+                29,
+                30,
+                33,
+                34
+              ],
+              [
+                31,
+                35,
+                36
+              ],
+              [
+                32,
+                33,
+                37
+              ],
+              [
+                34,
+                35,
+                38,
+                39
+              ],
+              [
+                36,
+                40,
+                41
+              ]
+            ],
+            "rival_supports": [
+              [
+                0,
+                1,
+                2,
+                6,
+                7
+              ],
+              [
+                0,
+                3,
+                8
+              ],
+              [
+                1,
+                3,
+                9
+              ],
+              [
+                2,
+                4,
+                5
+              ],
+              [
+                4,
+                5,
+                10,
+                11
+              ],
+              [
+                6,
+                8,
+                9
+              ],
+              [
+                7,
+                10,
+                13
+              ],
+              [
+                11,
+                15,
+                16
+              ],
+              [
+                13,
+                15,
+                17
+              ],
+              [
+                16,
+                18,
+                19
+              ],
+              [
+                17,
+                18,
+                20
+              ],
+              [
+                19,
+                21,
+                22
+              ],
+              [
+                20,
+                21,
+                23
+              ],
+              [
+                22,
+                24,
+                25
+              ],
+              [
+                23,
+                24,
+                26
+              ],
+              [
+                25,
+                27,
+                28
+              ],
+              [
+                26,
+                27,
+                29
+              ],
+              [
+                28,
+                30,
+                31
+              ]
+            ],
+            "rival_chains": [
+              [
+                6,
+                8,
+                7,
+                9,
+                11,
+                12,
+                14,
+                16
+              ],
+              [
+                6,
+                8,
+                7,
+                9,
+                11,
+                13,
+                14,
+                16
+              ],
+              [
+                6,
+                8,
+                7,
+                9,
+                11,
+                13,
+                15,
+                16
+              ],
+              [
+                6,
+                8,
+                7,
+                9,
+                11,
+                13,
+                15,
+                17
+              ],
+              [
+                6,
+                8,
+                10,
+                9,
+                11,
+                13,
+                14,
+                16
+              ],
+              [
+                6,
+                8,
+                10,
+                9,
+                11,
+                13,
+                15,
+                16
+              ],
+              [
+                6,
+                8,
+                10,
+                9,
+                11,
+                13,
+                15,
+                17
+              ],
+              [
+                6,
+                8,
+                10,
+                12,
+                11,
+                13,
+                15,
+                16
+              ],
+              [
+                6,
+                8,
+                10,
+                12,
+                11,
+                13,
+                15,
+                17
+              ],
+              [
+                6,
+                8,
+                10,
+                12,
+                14,
+                13,
+                15,
+                17
+              ],
+              [
+                6,
+                8,
+                10,
+                12,
+                14,
+                16,
+                15,
+                17
+              ],
+              [
+                7,
+                8,
+                10,
+                12,
+                11,
+                13,
+                15,
+                16
+              ],
+              [
+                7,
+                8,
+                10,
+                12,
+                11,
+                13,
+                15,
+                17
+              ],
+              [
+                7,
+                8,
+                10,
+                12,
+                14,
+                13,
+                15,
+                17
+              ],
+              [
+                7,
+                8,
+                10,
+                12,
+                14,
+                16,
+                15,
+                17
+              ],
+              [
+                7,
+                9,
+                10,
+                12,
+                14,
+                13,
+                15,
+                17
+              ],
+              [
+                7,
+                9,
+                10,
+                12,
+                14,
+                16,
+                15,
+                17
+              ],
+              [
+                7,
+                9,
+                11,
+                12,
+                14,
+                16,
+                15,
+                17
+              ],
+              [
+                8,
+                7,
+                9,
+                11,
+                12,
+                14,
+                16,
+                15
+              ]
+            ],
+            "rival_next_funding": "funded"
+          },
+          {
+            "start": 1675,
+            "starting_supports": [
+              [
+                0,
+                1,
+                2,
+                3,
+                6,
+                7
+              ],
+              [
+                0,
+                4,
+                8
+              ],
+              [
+                1,
+                4,
+                9
+              ],
+              [
+                2,
+                3,
+                5
+              ],
+              [
+                5,
+                10,
+                11
+              ]
+            ],
+            "round": 4,
+            "ordinary_supports": [
+              [
+                0,
+                1,
+                2,
+                3,
+                6,
+                7
+              ],
+              [
+                0,
+                4,
+                8
+              ],
+              [
+                1,
+                4,
+                9
+              ],
+              [
+                2,
+                3,
+                5
+              ],
+              [
+                5,
+                10,
+                11
+              ],
+              [
+                6,
+                8,
+                9,
+                12
+              ],
+              [
+                7,
+                10,
+                13,
+                14
+              ],
+              [
+                11,
+                15,
+                16
+              ],
+              [
+                12,
+                13,
+                17
+              ],
+              [
+                14,
+                15,
+                18,
+                19
+              ],
+              [
+                16,
+                20,
+                21
+              ],
+              [
+                17,
+                18,
+                22
+              ],
+              [
+                19,
+                20,
+                23,
+                24
+              ],
+              [
+                21,
+                25,
+                26
+              ],
+              [
+                22,
+                23,
+                27
+              ],
+              [
+                24,
+                25,
+                28,
+                29
+              ],
+              [
+                26,
+                30,
+                31
+              ]
+            ],
+            "rival_supports": [
+              [
+                0,
+                1,
+                2,
+                3,
+                6,
+                7
+              ],
+              [
+                0,
+                4,
+                8
+              ],
+              [
+                1,
+                4,
+                9
+              ],
+              [
+                2,
+                3,
+                5
+              ],
+              [
+                5,
+                10,
+                11
+              ],
+              [
+                6,
+                8,
+                9
+              ],
+              [
+                7,
+                10,
+                13
+              ],
+              [
+                11,
+                15,
+                16
+              ],
+              [
+                13,
+                15,
+                17
+              ],
+              [
+                16,
+                18,
+                19
+              ],
+              [
+                17,
+                18,
+                20
+              ],
+              [
+                19,
+                21,
+                22
+              ],
+              [
+                20,
+                21,
+                23
+              ],
+              [
+                22,
+                24,
+                25
+              ]
+            ],
+            "rival_chains": [
+              [
+                3,
+                4,
+                6,
+                8,
+                10,
+                9,
+                11,
+                13
+              ],
+              [
+                3,
+                4,
+                6,
+                8,
+                10,
+                12,
+                11,
+                13
+              ],
+              [
+                3,
+                4,
+                7,
+                8,
+                10,
+                12,
+                11,
+                13
+              ]
+            ],
+            "rival_next_funding": "funded"
+          },
+          {
+            "start": 1675,
+            "starting_supports": [
+              [
+                0,
+                1,
+                2,
+                3,
+                6,
+                7
+              ],
+              [
+                0,
+                4,
+                8
+              ],
+              [
+                1,
+                4,
+                9
+              ],
+              [
+                2,
+                3,
+                5
+              ],
+              [
+                5,
+                10,
+                11
+              ]
+            ],
+            "round": 5,
+            "ordinary_supports": [
+              [
+                0,
+                1,
+                2,
+                3,
+                6,
+                7
+              ],
+              [
+                0,
+                4,
+                8
+              ],
+              [
+                1,
+                4,
+                9
+              ],
+              [
+                2,
+                3,
+                5
+              ],
+              [
+                5,
+                10,
+                11
+              ],
+              [
+                6,
+                8,
+                9,
+                12
+              ],
+              [
+                7,
+                10,
+                13,
+                14
+              ],
+              [
+                11,
+                15,
+                16
+              ],
+              [
+                12,
+                13,
+                17
+              ],
+              [
+                14,
+                15,
+                18,
+                19
+              ],
+              [
+                16,
+                20,
+                21
+              ],
+              [
+                17,
+                18,
+                22
+              ],
+              [
+                19,
+                20,
+                23,
+                24
+              ],
+              [
+                21,
+                25,
+                26
+              ],
+              [
+                22,
+                23,
+                27
+              ],
+              [
+                24,
+                25,
+                28,
+                29
+              ],
+              [
+                26,
+                30,
+                31
+              ],
+              [
+                27,
+                28,
+                32
+              ],
+              [
+                29,
+                30,
+                33,
+                34
+              ],
+              [
+                31,
+                35,
+                36
+              ]
+            ],
+            "rival_supports": [
+              [
+                0,
+                1,
+                2,
+                3,
+                6,
+                7
+              ],
+              [
+                0,
+                4,
+                8
+              ],
+              [
+                1,
+                4,
+                9
+              ],
+              [
+                2,
+                3,
+                5
+              ],
+              [
+                5,
+                10,
+                11
+              ],
+              [
+                6,
+                8,
+                9
+              ],
+              [
+                7,
+                10,
+                13
+              ],
+              [
+                11,
+                15,
+                16
+              ],
+              [
+                13,
+                15,
+                17
+              ],
+              [
+                16,
+                18,
+                19
+              ],
+              [
+                17,
+                18,
+                20
+              ],
+              [
+                19,
+                21,
+                22
+              ],
+              [
+                20,
+                21,
+                23
+              ],
+              [
+                22,
+                24,
+                25
+              ],
+              [
+                23,
+                24,
+                26
+              ],
+              [
+                25,
+                27,
+                28
+              ]
+            ],
+            "rival_chains": [
+              [
+                3,
+                4,
+                6,
+                8,
+                10,
+                9,
+                11,
+                13
+              ],
+              [
+                3,
+                4,
+                6,
+                8,
+                10,
+                12,
+                11,
+                13
+              ],
+              [
+                3,
+                4,
+                6,
+                8,
+                10,
+                12,
+                14,
+                13
+              ],
+              [
+                3,
+                4,
+                7,
+                8,
+                10,
+                12,
+                11,
+                13
+              ],
+              [
+                3,
+                4,
+                7,
+                8,
+                10,
+                12,
+                14,
+                13
+              ],
+              [
+                3,
+                4,
+                7,
+                9,
+                10,
+                12,
+                14,
+                13
+              ],
+              [
+                4,
+                6,
+                8,
+                10,
+                9,
+                11,
+                13,
+                14
+              ],
+              [
+                4,
+                6,
+                8,
+                10,
+                9,
+                11,
+                13,
+                15
+              ],
+              [
+                4,
+                6,
+                8,
+                10,
+                12,
+                11,
+                13,
+                15
+              ],
+              [
+                4,
+                6,
+                8,
+                10,
+                12,
+                14,
+                13,
+                15
+              ],
+              [
+                4,
+                7,
+                8,
+                10,
+                12,
+                11,
+                13,
+                15
+              ],
+              [
+                4,
+                7,
+                8,
+                10,
+                12,
+                14,
+                13,
+                15
+              ],
+              [
+                4,
+                7,
+                9,
+                10,
+                12,
+                14,
+                13,
+                15
+              ],
+              [
+                6,
+                4,
+                7,
+                9,
+                10,
+                12,
+                14,
+                13
+              ]
+            ],
+            "rival_next_funding": "funded"
+          }
+        ],
+        "round_six_support_exceptions": [
+          {
+            "start": 1591,
+            "starting_supports": [
+              [
+                0,
+                1,
+                2,
+                6,
+                7
+              ],
+              [
+                0,
+                3,
+                8
+              ],
+              [
+                1,
+                3,
+                9
+              ],
+              [
+                2,
+                4,
+                5
+              ],
+              [
+                4,
+                5,
+                10,
+                11
+              ]
+            ],
+            "first_different_round": 1,
+            "first_different_births": [
+              {
+                "knot": 5,
+                "parents": [
+                  0,
+                  1,
+                  2
+                ],
+                "demand": 1,
+                "ordinary_fresh": 1,
+                "rival_fresh": 0
+              },
+              {
+                "knot": 6,
+                "parents": [
+                  0,
+                  4
+                ],
+                "demand": 2,
+                "ordinary_fresh": 2,
+                "rival_fresh": 1
+              }
+            ],
+            "stages": [
+              {
+                "round": 0,
+                "rival_knot_count": 5,
+                "rival_chain_count": 0,
+                "ordinary_knot_count": 5,
+                "ordinary_chain_count": 0
+              },
+              {
+                "round": 1,
+                "rival_knot_count": 8,
+                "rival_chain_count": 0,
+                "ordinary_knot_count": 8,
+                "ordinary_chain_count": 0
+              },
+              {
+                "round": 2,
+                "rival_knot_count": 10,
+                "rival_chain_count": 0,
+                "ordinary_knot_count": 11,
+                "ordinary_chain_count": 0
+              },
+              {
+                "round": 3,
+                "rival_knot_count": 12,
+                "rival_chain_count": 0,
+                "ordinary_knot_count": 14,
+                "ordinary_chain_count": 0
+              },
+              {
+                "round": 4,
+                "rival_knot_count": 14,
+                "rival_chain_count": 0,
+                "ordinary_knot_count": 17,
+                "ordinary_chain_count": 0
+              },
+              {
+                "round": 5,
+                "rival_knot_count": 16,
+                "rival_chain_count": 0,
+                "ordinary_knot_count": 20,
+                "ordinary_chain_count": 0
+              },
+              {
+                "round": 6,
+                "rival_knot_count": 18,
+                "rival_chain_count": 19,
+                "ordinary_knot_count": 23,
+                "ordinary_chain_count": 0
+              }
+            ],
+            "rival_next_funding": "funded",
+            "round_six_rival_supports": [
+              [
+                0,
+                1,
+                2,
+                6,
+                7
+              ],
+              [
+                0,
+                3,
+                8
+              ],
+              [
+                1,
+                3,
+                9
+              ],
+              [
+                2,
+                4,
+                5
+              ],
+              [
+                4,
+                5,
+                10,
+                11
+              ],
+              [
+                6,
+                8,
+                9
+              ],
+              [
+                7,
+                10,
+                13
+              ],
+              [
+                11,
+                15,
+                16
+              ],
+              [
+                13,
+                15,
+                17
+              ],
+              [
+                16,
+                18,
+                19
+              ],
+              [
+                17,
+                18,
+                20
+              ],
+              [
+                19,
+                21,
+                22
+              ],
+              [
+                20,
+                21,
+                23
+              ],
+              [
+                22,
+                24,
+                25
+              ],
+              [
+                23,
+                24,
+                26
+              ],
+              [
+                25,
+                27,
+                28
+              ],
+              [
+                26,
+                27,
+                29
+              ],
+              [
+                28,
+                30,
+                31
+              ]
+            ],
+            "round_six_ordinary_supports": [
+              [
+                0,
+                1,
+                2,
+                6,
+                7
+              ],
+              [
+                0,
+                3,
+                8
+              ],
+              [
+                1,
+                3,
+                9
+              ],
+              [
+                2,
+                4,
+                5
+              ],
+              [
+                4,
+                5,
+                10,
+                11
+              ],
+              [
+                6,
+                8,
+                9,
+                12
+              ],
+              [
+                7,
+                10,
+                13,
+                14
+              ],
+              [
+                11,
+                15,
+                16
+              ],
+              [
+                12,
+                13,
+                17
+              ],
+              [
+                14,
+                15,
+                18,
+                19
+              ],
+              [
+                16,
+                20,
+                21
+              ],
+              [
+                17,
+                18,
+                22
+              ],
+              [
+                19,
+                20,
+                23,
+                24
+              ],
+              [
+                21,
+                25,
+                26
+              ],
+              [
+                22,
+                23,
+                27
+              ],
+              [
+                24,
+                25,
+                28,
+                29
+              ],
+              [
+                26,
+                30,
+                31
+              ],
+              [
+                27,
+                28,
+                32
+              ],
+              [
+                29,
+                30,
+                33,
+                34
+              ],
+              [
+                31,
+                35,
+                36
+              ],
+              [
+                32,
+                33,
+                37
+              ],
+              [
+                34,
+                35,
+                38,
+                39
+              ],
+              [
+                36,
+                40,
+                41
+              ]
+            ]
+          },
+          {
+            "start": 1675,
+            "starting_supports": [
+              [
+                0,
+                1,
+                2,
+                3,
+                6,
+                7
+              ],
+              [
+                0,
+                4,
+                8
+              ],
+              [
+                1,
+                4,
+                9
+              ],
+              [
+                2,
+                3,
+                5
+              ],
+              [
+                5,
+                10,
+                11
+              ]
+            ],
+            "first_different_round": 1,
+            "first_different_births": [
+              {
+                "knot": 5,
+                "parents": [
+                  0,
+                  1,
+                  2
+                ],
+                "demand": 1,
+                "ordinary_fresh": 1,
+                "rival_fresh": 0
+              },
+              {
+                "knot": 6,
+                "parents": [
+                  0,
+                  4
+                ],
+                "demand": 2,
+                "ordinary_fresh": 2,
+                "rival_fresh": 1
+              }
+            ],
+            "stages": [
+              {
+                "round": 0,
+                "rival_knot_count": 5,
+                "rival_chain_count": 0,
+                "ordinary_knot_count": 5,
+                "ordinary_chain_count": 0
+              },
+              {
+                "round": 1,
+                "rival_knot_count": 8,
+                "rival_chain_count": 0,
+                "ordinary_knot_count": 8,
+                "ordinary_chain_count": 0
+              },
+              {
+                "round": 2,
+                "rival_knot_count": 10,
+                "rival_chain_count": 0,
+                "ordinary_knot_count": 11,
+                "ordinary_chain_count": 0
+              },
+              {
+                "round": 3,
+                "rival_knot_count": 12,
+                "rival_chain_count": 0,
+                "ordinary_knot_count": 14,
+                "ordinary_chain_count": 0
+              },
+              {
+                "round": 4,
+                "rival_knot_count": 14,
+                "rival_chain_count": 3,
+                "ordinary_knot_count": 17,
+                "ordinary_chain_count": 0
+              },
+              {
+                "round": 5,
+                "rival_knot_count": 16,
+                "rival_chain_count": 14,
+                "ordinary_knot_count": 20,
+                "ordinary_chain_count": 0
+              },
+              {
+                "round": 6,
+                "rival_knot_count": 18,
+                "rival_chain_count": 49,
+                "ordinary_knot_count": 23,
+                "ordinary_chain_count": 1
+              }
+            ],
+            "rival_next_funding": "funded",
+            "round_six_rival_supports": [
+              [
+                0,
+                1,
+                2,
+                3,
+                6,
+                7
+              ],
+              [
+                0,
+                4,
+                8
+              ],
+              [
+                1,
+                4,
+                9
+              ],
+              [
+                2,
+                3,
+                5
+              ],
+              [
+                5,
+                10,
+                11
+              ],
+              [
+                6,
+                8,
+                9
+              ],
+              [
+                7,
+                10,
+                13
+              ],
+              [
+                11,
+                15,
+                16
+              ],
+              [
+                13,
+                15,
+                17
+              ],
+              [
+                16,
+                18,
+                19
+              ],
+              [
+                17,
+                18,
+                20
+              ],
+              [
+                19,
+                21,
+                22
+              ],
+              [
+                20,
+                21,
+                23
+              ],
+              [
+                22,
+                24,
+                25
+              ],
+              [
+                23,
+                24,
+                26
+              ],
+              [
+                25,
+                27,
+                28
+              ],
+              [
+                26,
+                27,
+                29
+              ],
+              [
+                28,
+                30,
+                31
+              ]
+            ],
+            "round_six_ordinary_supports": [
+              [
+                0,
+                1,
+                2,
+                3,
+                6,
+                7
+              ],
+              [
+                0,
+                4,
+                8
+              ],
+              [
+                1,
+                4,
+                9
+              ],
+              [
+                2,
+                3,
+                5
+              ],
+              [
+                5,
+                10,
+                11
+              ],
+              [
+                6,
+                8,
+                9,
+                12
+              ],
+              [
+                7,
+                10,
+                13,
+                14
+              ],
+              [
+                11,
+                15,
+                16
+              ],
+              [
+                12,
+                13,
+                17
+              ],
+              [
+                14,
+                15,
+                18,
+                19
+              ],
+              [
+                16,
+                20,
+                21
+              ],
+              [
+                17,
+                18,
+                22
+              ],
+              [
+                19,
+                20,
+                23,
+                24
+              ],
+              [
+                21,
+                25,
+                26
+              ],
+              [
+                22,
+                23,
+                27
+              ],
+              [
+                24,
+                25,
+                28,
+                29
+              ],
+              [
+                26,
+                30,
+                31
+              ],
+              [
+                27,
+                28,
+                32
+              ],
+              [
+                29,
+                30,
+                33,
+                34
+              ],
+              [
+                31,
+                35,
+                36
+              ],
+              [
+                32,
+                33,
+                37
+              ],
+              [
+                34,
+                35,
+                38,
+                39
+              ],
+              [
+                36,
+                40,
+                41
+              ]
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "between_laws": {
+    "starts_with_support_differences": 4,
+    "common_stages": 67,
+    "common_stage_ordered_support_differences": 4,
+    "common_stage_distinction_renaming_differences": 4,
+    "common_stage_knot_count_differences": 0,
+    "common_stage_chain_count_differences": 0,
+    "common_stage_ordered_chain_differences": 0,
+    "common_stage_first_three_chain_differences": 0,
+    "stages_only_one_fewer": 0,
+    "stages_only_arity_floor": 8,
+    "starts_with_different_terminal_marks": 4,
+    "starts_with_same_terminal_mark_but_different_supports": 0,
+    "first_support_difference_round_1": 4,
+    "common_chain_positive_stages": 18,
+    "common_chain_positive_stage_support_differences": 0
+  },
+  "different_terminal_starts": {
+    "first_changed_round": [
+      {
+        "category": 1,
+        "count": 4
+      }
+    ],
+    "starting_knot_count": [
+      {
+        "category": 3,
+        "count": 3
+      },
+      {
+        "category": 5,
+        "count": 1
+      }
+    ],
+    "per_start_changed_grants": [
+      {
+        "category": 1,
+        "count": 4
+      }
+    ],
+    "terminal_marks": [
+      {
+        "category": [
+          [
+            1,
+            "stalled"
+          ],
+          [
+            3,
+            "stalled"
+          ]
+        ],
+        "count": 4
+      }
+    ],
+    "changed_grant_patterns": [
+      {
+        "category": [
+          3,
+          2,
+          2,
+          1,
+          0
+        ],
+        "count": 3
+      },
+      {
+        "category": [
+          3,
+          3,
+          3,
+          2,
+          0
+        ],
+        "count": 1
+      }
+    ],
+    "one_fewer_stall_shortage": [
+      {
+        "category": [
+          1
+        ],
+        "count": 4
+      }
+    ],
+    "zero_fresh_grants_match_shortage_holders": 4,
+    "chain_positive_starts": 0,
+    "changed_grant_key": [
+      "parents",
+      "demand",
+      "ordinary fresh",
+      "one fewer fresh",
+      "arity floor fresh"
+    ],
+    "records": [
+      {
+        "start": 19,
+        "starting_supports": [
+          [
+            0,
+            1,
+            3
+          ],
+          [
+            0,
+            2,
+            4,
+            5
+          ],
+          [
+            1,
+            2,
+            6,
+            7
+          ]
+        ],
+        "first_different_round": 1,
+        "changed_grants": [
+          {
+            "knot": 3,
+            "parents": 3,
+            "parent_knots": [
+              0,
+              1,
+              2
+            ],
+            "inputs": [
+              3,
+              4,
+              6
+            ],
+            "demand": 2,
+            "ordinary_fresh": 2,
+            "one_fewer_fresh": 1,
+            "arity_floor_fresh": 0
+          }
+        ],
+        "stage_knot_counts": {
+          "one_fewer": [
+            3,
+            6
+          ],
+          "arity_floor": [
+            3,
+            6,
+            10,
+            16
+          ]
+        },
+        "stage_chain_counts": {
+          "one_fewer": [
+            0,
+            0
+          ],
+          "arity_floor": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "terminal": {
+          "one_fewer": [
+            1,
+            "stalled"
+          ],
+          "arity_floor": [
+            3,
+            "stalled"
+          ]
+        },
+        "shortages": {
+          "one_fewer": {
+            "3": 1
+          },
+          "arity_floor": {
+            "10": 1,
+            "11": 1
+          }
+        }
+      },
+      {
+        "start": 20,
+        "starting_supports": [
+          [
+            0,
+            1,
+            3,
+            4
+          ],
+          [
+            0,
+            2,
+            5,
+            6
+          ],
+          [
+            1,
+            2,
+            7,
+            8
+          ]
+        ],
+        "first_different_round": 1,
+        "changed_grants": [
+          {
+            "knot": 3,
+            "parents": 3,
+            "parent_knots": [
+              0,
+              1,
+              2
+            ],
+            "inputs": [
+              3,
+              5,
+              7
+            ],
+            "demand": 3,
+            "ordinary_fresh": 3,
+            "one_fewer_fresh": 2,
+            "arity_floor_fresh": 0
+          }
+        ],
+        "stage_knot_counts": {
+          "one_fewer": [
+            3,
+            7
+          ],
+          "arity_floor": [
+            3,
+            7,
+            13,
+            22
+          ]
+        },
+        "stage_chain_counts": {
+          "one_fewer": [
+            0,
+            0
+          ],
+          "arity_floor": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "terminal": {
+          "one_fewer": [
+            1,
+            "stalled"
+          ],
+          "arity_floor": [
+            3,
+            "stalled"
+          ]
+        },
+        "shortages": {
+          "one_fewer": {
+            "3": 1
+          },
+          "arity_floor": {
+            "13": 1,
+            "14": 1,
+            "15": 1
+          }
+        }
+      },
+      {
+        "start": 47,
+        "starting_supports": [
+          [
+            0,
+            1,
+            2,
+            5
+          ],
+          [
+            0,
+            3,
+            4,
+            6,
+            7
+          ],
+          [
+            1,
+            2,
+            3,
+            4,
+            8,
+            9
+          ]
+        ],
+        "first_different_round": 1,
+        "changed_grants": [
+          {
+            "knot": 3,
+            "parents": 3,
+            "parent_knots": [
+              0,
+              1,
+              2
+            ],
+            "inputs": [
+              5,
+              6,
+              8
+            ],
+            "demand": 2,
+            "ordinary_fresh": 2,
+            "one_fewer_fresh": 1,
+            "arity_floor_fresh": 0
+          }
+        ],
+        "stage_knot_counts": {
+          "one_fewer": [
+            3,
+            6
+          ],
+          "arity_floor": [
+            3,
+            6,
+            10,
+            16
+          ]
+        },
+        "stage_chain_counts": {
+          "one_fewer": [
+            0,
+            0
+          ],
+          "arity_floor": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "terminal": {
+          "one_fewer": [
+            1,
+            "stalled"
+          ],
+          "arity_floor": [
+            3,
+            "stalled"
+          ]
+        },
+        "shortages": {
+          "one_fewer": {
+            "3": 1
+          },
+          "arity_floor": {
+            "10": 1,
+            "11": 1
+          }
+        }
+      },
+      {
+        "start": 5097,
+        "starting_supports": [
+          [
+            0,
+            1,
+            2,
+            3,
+            7,
+            8
+          ],
+          [
+            0,
+            4,
+            5
+          ],
+          [
+            1,
+            4,
+            6
+          ],
+          [
+            2,
+            5,
+            9
+          ],
+          [
+            3,
+            6,
+            10,
+            11
+          ]
+        ],
+        "first_different_round": 1,
+        "changed_grants": [
+          {
+            "knot": 5,
+            "parents": 3,
+            "parent_knots": [
+              0,
+              3,
+              4
+            ],
+            "inputs": [
+              7,
+              9,
+              10
+            ],
+            "demand": 2,
+            "ordinary_fresh": 2,
+            "one_fewer_fresh": 1,
+            "arity_floor_fresh": 0
+          }
+        ],
+        "stage_knot_counts": {
+          "one_fewer": [
+            5,
+            8
+          ],
+          "arity_floor": [
+            5,
+            8,
+            12,
+            18
+          ]
+        },
+        "stage_chain_counts": {
+          "one_fewer": [
+            0,
+            0
+          ],
+          "arity_floor": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "terminal": {
+          "one_fewer": [
+            1,
+            "stalled"
+          ],
+          "arity_floor": [
+            3,
+            "stalled"
+          ]
+        },
+        "shortages": {
+          "one_fewer": {
+            "5": 1
+          },
+          "arity_floor": {
+            "12": 1,
+            "13": 1
+          }
+        }
+      }
+    ]
+  },
+  "seconds": {
+    "controls_and_input": 0.544,
+    "recount": 0.029
+  },
+  "peak_resident_kib": 310772
+}

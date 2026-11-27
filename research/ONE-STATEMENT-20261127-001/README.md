@@ -19,3 +19,31 @@ computed. Each part's predictions are committed before its run.
   a ring of four knots with one loose distinction each against the completed system (a fifth knot meeting each ring
   knot once) with a ring knot left out, 16 states on eight distinctions: loose sets differ, families 2 against 1. Pair
   (iii), 8 states and the loose set {l, m}: the holdings differ and the families are the same.
+
+**What was found in (a)** ([`checks_a.json`](checks_a.json)). All four held, a3 under one count. a1: 15 relations, 840
+bases, 20 keep every fact in at most two relations, 12 of them meet in a ring of four, and exactly one leaves the six
+family facts in a single relation each: the tree (p_i q_i R_i three times, and R1 R2 R3). a2: each four-place relation
+has 8 joint values, and removing any one of the 18 start laws frees it, as does any of its own ring's 6 round-1 births.
+a3: on rings of 10, 4 and 4 the three-place relation for the big ring is 3 places, 40 carrier distinctions and 10 laws
+(40 distinctions); the four-place one is 4 places, 36 carrier distinctions and 34 laws (92 distinctions): shorter in
+carriers, longer in places and in laws, so which presentation is "shorter" depends on what is counted. a4: pairs (i) and
+(ii) have the same allowed states and different loose sets, with 2 families against 1; pair (iii) has the same states
+and loose set, different holdings, and the same single family.
+
+**Part (c), the recursion test** ([`recursion_c.py`](recursion_c.py), [`recursion_c.json`](recursion_c.json); run
+right after (a), with the advisor's prediction as its hypothesis). The tree presentation read as a first-layer start
+(root R1 R2 R3; T_i = R_i p_i q_i) grows three three-place births at round 1, one at round 2, and closes at round 3. The
+nine facts on the grown witness instead gain, each round, one two-place relation per family (its fact on its new
+carrier) and never close. They differ, as predicted: the second layer does not grow as a start of its own would.
+
+## Part (d): the reader's question under each law ([`nae_pres.py`](nae_pres.py))
+
+Under parity, a presentation of the reader's pair (allowed states, loose set) is a completed system with one knot left
+out, and the families and the tree are fixed by the pair (`MARKED-LOOSE-20261127-001`: every census start; entailed, so
+that agreement checks the code). Under not-all-equal nothing is entailed: no law is a sum of others.
+
+**Frozen.** Every census start, under each law: every presentation of its pair (as many knots, each at least three
+places, the loose set held once and every other distinction twice, connected, the same allowed states under that law).
+**H_d.** Under not-all-equal too, the pair fixes the families and the tree on every census start. **Read:** on how
+many starts the pair fixes the presentation itself (the knots), under each law; seen before the freeze on the first 200
+census starts: 200 of 200 under not-all-equal, 136 of 200 under parity.

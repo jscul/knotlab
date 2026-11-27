@@ -6402,8 +6402,7 @@ evidence: results and their status come from the records each entry links.
   20261127, the 10 pilot starts excluded) at rounds 0 and 1.
 - **Why.** Adopted by the thread on 27 November 2026 for `RING-BOND-20261127-001` at the coordinator's go-ahead, after
   the not-all-equal layer's referee found the first such bond with agreement readings. The small carriers keep the
-  search exact and fast, and the connected holders exclude readings padded with distinctions that the relation does not
-  use.
+  search exact and fast, and connected holders contain the carriers (referee R1: in 811 of 9,524 sampled source bonds a place can be dropped keeping an admissible bond with the same words, and in 344 an input can be replaced by an independent distinction).
 - **Rests on it.** The study's four answers ([the note](../research/RING-BOND-20261127-001/README.md)).
 - **Challenge.** Each choice is swapped in the study: all readings unchanged by a global flip, carriers up to four, both
   holder notions with five holders on a tenth of the sample, overlapping readings in the layer above. Larger carriers,
@@ -6412,3 +6411,4 @@ evidence: results and their status come from the records each entry links.
 - **History.**
   - 2026-11-27 · Entered with `RING-BOND-20261127-001` before its runs.
   - 2026-11-27 · Every swap run left the answers unchanged: all flip-unchanged readings and carriers up to four on the ring, every bond still missing one triple; five holders on 100 sampled starts, 6,153 bonds against 4,867, one stage of 175 gaining its first bond. Overlapping readings in the layer above were read at round 1 only. The choice of one of the ring's three equivalent bonds is the study's, not the model's.
+  - 2026-11-27 · Referee R1 (refuted, one Block): the clusters of at most three bonds could not hold a bond of the layer above, which needs eight; one exists on a closed twelve-knot start and on the grown ring with overlap. Strict carrier controls leave 2 and 0 sampled bonds; disconnected holders raise the starts with a bond before growth from 408 to 606; the counts depend on these choices.

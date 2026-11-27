@@ -50,7 +50,7 @@ eight-knot `tree+` cores, all unresolved and growing by about 1.3 to 1.6 a rank,
   but far past any growth that could be run. **C3 holds:** none repeats within 50,000 births.
 - **Where they sit.** 217 of the 220 capped `tree+` cores certified are on pieces `late.py` counts as a cycle (all 221
   but three: one at nine knots and two at eleven are on tree pieces).
-- **So, how often a core is unending,** stated with its weighting: under `grow`, one accepted start in 769 (seven to
+- **So, how often a core is unending,** stated with its weighting: under `grow`, one distinct accepted start in 769 (seven to
   eleven knots) has a capped core, unresolved and growing; under `tree+`, capped cores are 9% of accepted draws at seven
   knots rising to 30% at eleven, and of those certified none was shown to finish within reach except one, none repeats,
   and the rest grow by a steady factor a rank. Unending is shown for none of them (no certificate of growth without

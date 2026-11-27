@@ -6,7 +6,9 @@ import sys, json, gzip, itertools
 import order, late
 
 
-def twins(stars, law='nae'):
+def twins(stars, law='nae', chained_only=True):
+    """twin births of the core: two core births of one round sharing two parents C and D; with chained_only, only those
+    with a chain based at a point of a common parent of C and D"""
     M = late.Map(stars, law); out = []
     if M.cls != 'in' or not all(t for _, t, _ in M.pieces): return out
     order.NodePiece.round1_groups = late.round1(*late.sizes_edges(stars))[4]
@@ -18,8 +20,9 @@ def twins(stars, law='nae'):
                 if P.sizes_of[A] != P.sizes_of[B] or P.sizes_of[A] < 3: continue
                 common = P.core_parents[A] & P.core_parents[B]
                 for C, D in itertools.combinations(common, 2):
-                    if any(P.points_of[T] & chained for T in P.core_parents[C] & P.core_parents[D]):
-                        out.append({'rank': P.sizes_of[A] - 1, 'shared parents': len(common)}); break
+                    ch = any(P.points_of[T] & chained for T in P.core_parents[C] & P.core_parents[D])
+                    if ch or not chained_only:
+                        out.append({'rank': P.sizes_of[A] - 1, 'shared parents': len(common), 'chained': ch}); break
     finally:
         order.NodePiece.round1_groups = None
     return out

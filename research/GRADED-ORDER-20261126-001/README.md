@@ -1,5 +1,24 @@
 # Reading a growth straight off its start: the graded order, tested where groups share a knot
 
+> **Referee report R2, 27 November 2026: confirmed with fixes — Block on the unconditional reduction and on the rank
+> checker as a certificate; the conditional core theorem proved** ([the report](referee-R2/report.md)). Before reading the
+> twin explanation, the referee drew 192 starts of its own weightings (all agree through round 8 under both laws) and
+> built two new failing starts, of 10 and 16 knots, which fail under both laws at round 5: in both, two core births of one
+> round share two parents and a common parent of those carries a chain base (chained twins), and removing one loose
+> distinction that removes the twins restores agreement. It rebuilt all 834 completed start-and-law scores (830 agree).
+> - **Block: the reduction holds only without chained twins.** "So the core's births are the round rule iterated on the
+>   core alone" is false in general; the referee proved it on starts without chained twins (two induction properties of
+>   the actual growth), and showed that at the first chained twins the parent roster always changes. The chain counting
+>   and the fresh counts of mixed births remain unproved.
+> - **Block: the rank checker certified nothing at the ends.** It compared ranks 1 to top − 1 only and returned success
+>   on both obstructions after checking no transition. Repaired (rank 1 and the top now checked); the 127 and 112 starts
+>   without a flag still hold, and both obstructions now fail.
+> - **Narrowings.** Round 1 also has offshoots; the twin mechanism is a group {A, B, C′, D′} seen a round earlier on the
+>   twins' own counts; the relay alternative failed on 33 starts, not 29; denominators are 417 completed rows (416
+>   distinct, of 418); the reduction to the identification holds on accepted pieces without a cycle meeting all its
+>   hypotheses. **Not a block:** two replay labels swapped; "every frozen prediction held" dates to the first test (H1
+>   later failed at seven knots).
+
 > **Referee report R1, 27 November 2026: refuted in part — Block on the statement to prove and on the order lemma as
 > worded; every frozen prediction reproduced** ([the report](referee-R1/report.md)). The referee rebuilt all 358
 > comparisons and both samples (175 distinct starts; the hash merged none) and blind-tested 55 eight-knot starts of its
@@ -167,26 +186,36 @@ explosive starts (none appeared: every growth here ended, stopped at the horizon
 
 ## The order lemma and a reading for the exception (after the run; the coordinator's next pick)
 
-**Reduction (proved).** By Lemma R (`REDUCE-BLOCKS-20261119-001A`, items 1 and 3), round 1's births are the round-1
-groups, and from round 1 on a round's births are, among the last round's, the maximal sets of three or more that
-pairwise share a parent and do not all share one, and the candidate pairs no such set contains (the **round rule**).
-Births along an endless chain never enter a group of the start's finite core: a chain birth has a core parent only when
-it holds one chain step, and then that parent C is its only core parent, so every core birth sharing a parent with it is
-a child of C; a group containing it would then share the parent C, which a group may not. So the core's births are
-the round rule iterated on the core alone, from the round-1 groups. The graded order is exact exactly when that
-iteration returns, at every rank, the valid sets with their covering relation: the **order lemma**.
+**Reduction (proved, with a hypothesis added by referee R2).** By Lemma R (`REDUCE-BLOCKS-20261119-001A`, items 1 and
+3), round 1's births are the round-1 groups and one offshoot for each loose distinction they leave, and from round 1 on
+a round's joins are, among the last round's births, the maximal sets of three or more that pairwise share a parent and
+do not all share one, and the candidate pairs no such set contains (the **round rule**). ~~Births along an endless
+chain never enter a group of the start's finite core [...]. So the core's births are the round rule iterated on the core
+alone, from the round-1 groups.~~ *[Corrected after referee R2: Block. This holds only on starts without **chained
+twins**, two core births of one round sharing two parents C and D with a chain base in the points of a common parent of
+C and D; the referee proved it under that hypothesis (item 2 of "What is proved and what is computed") and found two new
+starts, of 10 and 16 knots, where chained twins change the core's groups.]* The graded order is exact exactly when that
+iteration returns the valid sets with their covering relation at every rank, from rank 1 (the round-1 groups and
+offshoots) to the top (nothing after it): the **order lemma**.
 
 **The order lemma, checked without growing (computed).** `order.py check` applies the round rule to the valid sets of
 each rank and compares with the next rank's parent sets: it holds at every rank on all 127 fresh starts without the
 exception, on the two starts with two cells sharing two knots and no split pair from rank 1 on (their failure is at rank
 0 to 1, where the reading gives a cell no valid set), and fails on every start with a split pair, at rank 1 or 2.
+*[Corrected after referee R2: Block on the checker as a certificate. As first written it compared ranks 1 to top − 1
+only, so it reported success on the 36-knot and 14-knot obstructions after checking no transition. Repaired: it now
+also checks rank 1 against the round-1 groups and offshoots and that nothing follows the top rank. Rerun: the 127
+starts without a flag and the 112 held-out ones still hold at every rank; both obstructions now fail, at rank 1 and rank
+0; the four starts with two cells sharing two knots fail at rank 0 (initialization).]*
 
 **A reading for the exception: the core's births as nodes (post hoc).** Build the core's births by the round rule from
 the round-1 groups, each birth a node (its points the union of its parents'), so that two births with one union are two
 births; then count chains and the relay as `late.py` does, the relay taken by the one last core birth holding the whole
 piece (`order.py core --groups`). Two choices were made after looking at these starts: the relay's birth (taking every
-whole-piece birth failed on 29 not-all-equal starts) and rank 1 from the groups rather than the valid sets (which fixed
-the four starts with two cells sharing two knots). With both, it reads every round of all 176 fresh starts under both
+whole-piece birth failed on 33 not-all-equal starts with rank 1 from the groups, 32 of the `tree+` sample and one of the
+`grow` sample; *corrected after referee R2*: "29" was the count of additional relay failures with rank 1 from the valid
+sets) and rank 1 from the groups rather than the valid sets (which fixed the four starts with two cells sharing two
+knots). With both, it reads every round of all 176 fresh starts under both
 laws, all 49 exception starts included, and the hand-built eight-knot start; it misses census entry 6408 at round 6
 under both laws (unexplained), and on the advisor's eight-knot start the core's round rule passes 200,000 births and is
 stopped (that start's growth stops at the engine's guard).
@@ -221,8 +250,11 @@ with a split pair, 32 of them also with cells sharing two knots, 13 with cells s
 draw 257587 are the only starts, of 417 the node reading was run on, where two core births of one round share two
 parents C and D and a chain is based at a point of a common parent of C and D (`twins.py`); in both the twins sit at
 rank 6 and the first difference is at round 6. That is exactly where the decoupling argument below needs its
-hypothesis: a chain birth at the common grandparent joins the twins' shared parents into one group with them, so the
-core's round rule alone no longer gives the round. Found after the misses; a fresh test is open.
+hypothesis. *[Mechanism corrected after referee R2:]* the one-step chain births of C and D (C′ and D′) share a parent,
+the one-step chain birth at the common grandparent, a round earlier; so in the next round the twins A and B and C′ and
+D′ pairwise share parents and form one group {A, B, C′, D′}, which the core's round rule cannot see, and the twins'
+fresh counts are already changed in the twins' own round. Found after the misses; a fresh test is open
+(`CYCLE-READ-20261127-001`, Part 2).
 
 **On the referee's counterexamples (post hoc: built against the graded order).** The node reading, which never uses the
 graded order's size, agrees through six rounds under both laws on the 36-knot and 14-knot starts and on five of the
@@ -231,29 +263,44 @@ round rule does not finish in two minutes ([witness_nodes.jsonl](witness_nodes.j
 
 ## What is proved and what is computed
 
-1. **Proved (Lemma R, items 1 and 3; `REDUCE-BLOCKS-20261119-001A`).** Round 1's births are the round-1 groups; from
-   round 1 on a round's births are given by the round rule applied to the last round's births.
-2. **Proved here (decoupling).** Suppose no two core births of one round share two parents C, D with a chain based at a
-   point of a common parent of C and D. Then the core's births are the round rule iterated on core births alone.
-   *Argument.* A chain birth X has a core parent only when it holds one chain step, and then exactly one, C. A core
-   birth sharing a parent with X is a child of C. So a group of core births with a chain birth added would share the
-   parent C, which a group may not: core groups stay maximal among all pairwise parent-sharing families. A candidate
-   pair {A, B} of core births can be covered by a family holding chain births only if A and B are both children of the
-   chain births' core parents; for two distinct chain births with core parents C and D that needs A and B to share both
-   C and D, and X and the other chain birth to share a parent, a chain birth at a common parent of C and D. Under the
-   hypothesis neither happens, so core groups and core pairs are those of the core alone. ∎
-3. **Computed, not proved.** That births along chains are counted by `late.py`'s binomial terms on the core's births
+1. **Proved (Lemma R, items 1 and 3; `REDUCE-BLOCKS-20261119-001A`).** Round 1's births are the round-1 groups and one
+   offshoot for each loose distinction they leave (two three-place knots sharing one distinction have no group and
+   four offshoots); from round 1 on a round's joins are given by the round rule applied to the last round's births.
+2. **Proved (decoupling; the argument as first written used the chain reading before it was established, so the
+   referee's repaired proof replaces it).** Suppose no two core births of one round share two parents C, D with a chain
+   base in the points of a common parent of C and D (no **chained twins**). Then the core's births are the round rule
+   iterated on core births alone, under either law. *Argument (referee R2).* Call a birth **pure** when it is a core
+   birth: every round-1 group and offshoot, and every later join whose parents are all pure. Induct through rounds on
+   the pure roster with two properties of the actual growth: (i) every birth outside the core has at most one pure
+   parent; (ii) if that pure parent F also has a pure child, F's points hold a chain base. If a group held two pure
+   births A and B and some births outside the core, each of those shares a pure parent with A and with B and has only
+   one; if all used one parent the group would share it, so two of them use different pure parents C and D, both
+   parents of A and of B, and share a parent W outside the core; by (i) W has one pure parent F, common to C and D, and
+   by (ii) F holds a chain base: chained twins. So no group mixes two pure births, every pure group stays maximal and
+   every uncovered pure pair stays uncovered. (ii) passes on because a non-core join's pure parent shares a pure parent
+   with another member of its group; unary births are checked directly (a pure join leaves no offshoot; a round-1
+   offshoot of a knot with o loose distinctions has demand o − 1, with an excess only at o = 2, a chain base). ∎
+   *Converse (referee R2).* At the first chained twins a full group holds the twins and two chain births of C and D, so
+   the parent roster always changes; whether a pure pair is lost and whether the counts of fresh distinctions show it
+   are separate questions. [Report](referee-R2/report.md)
+3. **Computed, not proved.** That births along chains, and the fresh counts of births that mix core and chain parents,
+   are counted by `late.py`'s binomial terms on the core's births
    (proved for tree maps without cells by `CHAIN-IDENT` and `DOUBLE-IDENT`), and the relay taken by the one last core
-   birth holding the whole piece (Lemma R item 4 with `RELAY-IDENT` Theorem 4 for the identification's class). Checked on
-   all 176 fresh starts, the 239 held-out starts and the referee's witnesses, both laws, with the two twin starts the
-   only misses.
+   birth holding the whole piece (Lemma R item 4 with `RELAY-IDENT` Theorem 4 for the identification's class; referee R2
+   proved the terminal choice for finished pieces without chains). Checked on 417 completed sample starts (416
+   distinct, of 418 attempted; one eight-knot replay passed the core cap), both laws, with the two twin starts the only
+   misses, and on seven of the referee's eight constructed starts (one an agreement control for the graded order; the
+   30-knot one timed out, and its later rounds were not run).
 4. **The graded order** is the node reading exactly when, at every rank, the round rule returns the valid sets with
    their covering relation (computed on the samples, `order.py check`); the referee's starts show that this needs the
    size of a valid set to grade inclusion, which fails on starts with many cells, and its order lemma as first worded was
    false.
 
-**Does it reduce to the refereed identification?** Yes, inside the identification's class (no round-1 group of three or
-more, no two live knots with two common neighbours): there the round-1 groups are the map's pairs, the core's births
+**Does it reduce to the refereed identification?** Yes, on the accepted pieces without a cycle that also meet all of
+the identification's hypotheses (connected, distinctions held at most twice, at least two loose distinctions, no
+shortage, no round-1 group of three or more, no two live knots with two common neighbours; corrected after referee R2,
+which also notes that the identification's parity theorem covers pieces with a cycle through the unrolled map, which
+this reading declined; the not-all-equal treatment of a lone finished piece is `NAE-GROWTH-20261119-001Z`'s): there the round-1 groups are the map's pairs, the core's births
 built by the round rule are the connected sets of the map (the clusters of the unrolled map, a tree), no two of them
 share two parents, and the node reading is `DOUBLE-IDENT`'s identification, proved and refereed. Outside it, the node
 reading extends the identification: births are the nodes of the core's iterated round rule rather than sets, which is

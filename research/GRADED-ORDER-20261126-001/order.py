@@ -6,8 +6,9 @@ are candidates exactly when they share a parent, and a set has a common neighbou
 parent. So a round's births are, among the last round's births, the maximal sets of three or more that pairwise share a
 parent and do not all share one, and the candidate pairs no such set contains. Call this the ROUND RULE.
 
-    order.py check FILE.jsonl [LAW]     on each start's core, does the round rule applied to the valid sets of each rank
-                                        return the parent sets of the valid sets of the next rank (the order lemma)?
+    order.py check FILE.jsonl [LAW]     on each start's core, are rank 1's valid sets the round-1 groups and offshoots, does
+                                        the round rule applied to the valid sets of each rank return the parent sets of the
+                                        valid sets of the next rank, and nothing after the top rank (the order lemma)?
     order.py core FILE.jsonl GROWN.jsonl LAW [--groups]   the reading for starts with a split pair: the core's births
                                         built by the round rule from the round-1 valid sets (each birth a node, not a set),
                                         then the chains and the relay as late.py reads them, the relay taken by the one last
@@ -45,12 +46,18 @@ def check_start(stars, law):
     M = late.Map(stars, law)
     if M.cls != 'in' or not all(t for _, t, _ in M.pieces): return None
     res = []
+    groups = late.round1(*late.sizes_edges(stars))[4]
     for pts, tree, nch in M.pieces:
         P = late.GeneralPiece(pts, M.adj, M.chains, lambda v: v < M.n, None, lambda v: 1, M.cells)
         by = collections.defaultdict(list)
         for C, z in P.sizes_of.items(): by[z - 1].append(C)
         top = max(by) if by else 0
-        for t in range(1, top):
+        # both ends (referee R2, fix 4): rank 1 must be the round-1 groups and offshoots, and the top rank must have
+        # no births after it
+        ones = [frozenset(g) for g in groups if set(g) <= set(pts)]
+        ones += [frozenset([k, q]) for q in pts if not P.is_knot(q) for k in P.adj[q] if P.is_knot(k)]
+        res.append((0, collections.Counter(frozenset(C) for C in by[1]) == collections.Counter(ones)))
+        for t in range(1, top + 1):
             par = {A: frozenset(P.core_parents[A]) for A in by[t]}
             want = round_rule(by[t], par)
             have = collections.Counter(frozenset(P.core_parents[C]) for C in by[t + 1])
@@ -62,6 +69,7 @@ def check(path, law='nae'):
     tally = collections.Counter()
     for l in late.opener(path):
         x = json.loads(l)
+        if 'stars' not in x: continue
         r = check_start(x['stars'], law)
         if r is None: tally['not in the class'] += 1; continue
         ok = all(v for _, v in r)
@@ -75,11 +83,13 @@ def check(path, law='nae'):
 
 class NodePiece(late.GeneralPiece):
     round1_groups = None                                 # set by predict_nodes(..., groups=True)
+    max_rank = None                                      # pieces with a cycle: stop building the core at this rank
+    cap = int(os.environ.get('CORE_CAP', '200000'))       # core births at most, else the core is called unending
     """as GeneralPiece, but the core's births are built by the round rule from the round-1 valid sets, each birth a node
     (its points the union of its parents' points), so that two births with one union are two births"""
     def __init__(self, *a, **k):
         late.Piece.__init__(self, *a, **k)
-        G = late.GeneralPiece(*a, **k)
+        G = late.GeneralPiece(*a, **k) if NodePiece.round1_groups is None else None   # the valid sets only when needed
         self.points_of, self.sizes_of, self.core_parents = {}, {}, {}
         nid = 0
         def node(C, z, parents):
@@ -102,14 +112,14 @@ class NodePiece(late.GeneralPiece):
                 base[C] = node(C, 2, [base[frozenset([v])] for v in C if frozenset([v]) in base])
         layer = [n for n in self.points_of if self.sizes_of[n] == 2]
         z = 2
-        while layer:
+        while layer and (NodePiece.max_rank is None or z <= NodePiece.max_rank):
             par = {a: frozenset(self.core_parents[a]) for a in layer}
             nxt = []
             for S in round_rule(layer, par):
                 C = frozenset().union(*(self.points_of[a] for a in S))
                 nxt.append(node(C, z + 1, S))
             layer, z = nxt, z + 1
-            if nid > 200000: raise RuntimeError('too many core births')
+            if nid > NodePiece.cap: raise RuntimeError('too many core births')
         self.children = collections.Counter()
         for n, ps in self.core_parents.items():
             for T in ps: self.children[T] += 1
@@ -143,12 +153,13 @@ class NodePiece(late.GeneralPiece):
         return ('offshoot' if p == 1 else 'join', p, f, p + f)
 
 
-def predict_nodes(stars, rounds, law, groups=False):
+def predict_nodes(stars, rounds, law, groups=False, cycles=False):
     """late.predict with NodePiece in place of GeneralPiece: the same terms, chains and relay, except that the relay's
     whole-piece birth is the node whose points are the whole piece (not predicted if there are several)"""
     M = late.Map(stars, law)
     if M.cls != 'in': return None, M.cls
-    if not all(tree for _, tree, _ in M.pieces): return None, 'a piece with a cycle'
+    if not all(tree for _, tree, _ in M.pieces) and not cycles: return None, 'a piece with a cycle'
+    NodePiece.max_rank = rounds + 1 if cycles else None  # a birth of rank r is born in round r, so rank rounds suffices
     NodePiece.round1_groups = late.round1(*late.sizes_edges(stars))[4] if groups else None
     start = lambda v: ('start', 0, 0, M.sizes[v])
     many = len(M.pieces) >= 2
@@ -161,7 +172,7 @@ def predict_nodes(stars, rounds, law, groups=False):
             if not E: break
     for pts, tree, nch in M.pieces:
         P = NodePiece(pts, M.adj, M.chains, lambda v: v < M.n, start, lambda v: 1, M.cells)
-        relay = nch == 0 and (law == 'nae' or many)
+        relay = tree and nch == 0 and (law == 'nae' or many)   # a piece with a cycle never finishes
         whole = frozenset(pts)
         tops = [n for n in P.points_of if P.points_of[n] == whole and not P.children[n]]   # the last core births
         if relay and len(tops) != 1: return None, 'not one last birth holding the whole piece'

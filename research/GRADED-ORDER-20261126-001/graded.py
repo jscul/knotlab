@@ -125,39 +125,47 @@ def sample_start(WL, kind, n, rng):
 def draw_twins(out, kind, draws, per, seed, exclude=()):
     """accepted tree-piece starts by the twin flags (twins.py): twins with a chain at a common grandparent, twins
     without one, and starts without twins, up to PER each; repeats removed up to renaming (and of EXCLUDE); also the
-    count of drawn accepted starts whose core does not finish within the cap (an unending core); structure only"""
-    import twins as TW
+    count of drawn accepted starts whose core does not finish within the cap of CORE_CAP core births (an unending core),
+    or within the backstop of TWIN_LIMIT seconds (not run), both
+    among distinct starts and among accepted draws counted with their repeats (the weighting's own count); structure
+    only"""
+    import twins as TW, signal
     path = ROOT + '/experiments/WEIGHTINGS-20261119-001B/WEIGHTINGS-20261119-001B-E001_weights/weightlib.py'
     spec = importlib.util.spec_from_file_location('wl', path); WL = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(WL)
     rng = random.Random(seed); kept = collections.defaultdict(list); seen = set(exclude); tally = collections.Counter()
+    per_draw = collections.Counter(); outcome = {}
+    class _Late(Exception): pass
+    def _al(*_): raise _Late()
+    signal.signal(signal.SIGALRM, _al)
     for i in range(draws):
         sizes, edges = sample_start(WL, kind, int(os.environ.get('KNOTS', '7')), rng)
         stars = stars_of(sizes, edges)
         M = late.Map(stars)
-        if M.cls != 'in': continue
-        if not all(t for _, t, _ in M.pieces): continue
+        if M.cls != 'in': per_draw['not accepted'] += 1; continue
+        if not all(t for _, t, _ in M.pieces): per_draw['a piece with a cycle'] += 1; continue
         key = canon(sizes, edges)
+        if key in outcome: per_draw[outcome[key]] += 1; continue
         first = key not in seen
-        import signal
-        class _Late(Exception): pass
-        def _al(*_): raise _Late()
-        signal.signal(signal.SIGALRM, _al); signal.alarm(5)
+        signal.alarm(int(os.environ.get('TWIN_LIMIT', '120')))   # a backstop only; the cap is a count (CORE_CAP)
         try:
             T = TW.twins(stars, chained_only=False); signal.alarm(0)
-        except (RuntimeError, _Late):
+            b = 'twins, chained' if any(t['chained'] for t in T) else ('twins, not chained' if T else 'no twins')
+            if b != 'twins, chained': b += ', with chains' if any(M.chains.values()) else ', no chains'
+        except (RuntimeError, _Late) as e:
             signal.alarm(0)
-            if first: tally['unending core (over the cap of core births, or 5 s)'] += 1; seen.add(key)
-            continue
-        b = 'twins, chained' if any(t['chained'] for t in T) else ('twins, not chained' if T else 'no twins')
+            b = 'unending core (over the cap of core births)' if isinstance(e, RuntimeError) else 'not run (time limit)'
+        outcome[key] = b; per_draw[b] += 1
         if first: tally[b] += 1
-        if not first or len(kept[b]) >= per: seen.add(key); continue
+        if b.startswith(('unending', 'not run')) or not first or len(kept[b]) >= per: seen.add(key); continue
         seen.add(key); kept[b].append({'weighting': kind, 'draw': i, 'sizes': sizes, 'edges': edges, 'stars': stars,
                                        'twins': b})
     with open(out, 'w') as f:
         for b in sorted(kept):
             for x in kept[b]: f.write(json.dumps(x) + '\n')
-    print(json.dumps({'distinct accepted tree-piece starts drawn': dict(tally), 'kept': {b: len(v) for b, v in kept.items()}}))
+    print(json.dumps({'weighting': kind, 'knots': int(os.environ.get('KNOTS', '7')), 'draws': draws, 'seed': seed,
+                      'distinct accepted tree-piece starts drawn (new)': dict(tally), 'accepted draws with repeats': dict(per_draw),
+                      'kept': {b: len(v) for b, v in kept.items()}}))
 
 
 def draw(out, kind='grow', draws=DRAWS, per=PER, seed=SEED, exclude=()):
@@ -189,12 +197,29 @@ def draw(out, kind='grow', draws=DRAWS, per=PER, seed=SEED, exclude=()):
 
 
 def grow(law, src, out):
+    """grow each start of SRC to round 24 under LAW; with GROW_LIMIT=s set, a start whose growth takes more than s
+    seconds is written with end 'not run (time limit)'; starts already in OUT are kept and not grown again"""
     sys.path.insert(0, os.path.join(ROOT, 'research', 'LOOK-ALIKE-20261126-001'))
-    import alike
+    import alike, signal
+    limit = int(os.environ.get('GROW_LIMIT', '0'))
+    done = [json.loads(l) for l in open(out)] if os.path.exists(out) else []
+    have = {canon(x['sizes'], x['edges']) if 'sizes' in x else json.dumps(x['stars']) for x in done
+            if x.get('end') != 'not run (time limit)'}
+    class _Late(Exception): pass
+    def _al(*_): raise _Late()
+    signal.signal(signal.SIGALRM, _al)
     with open(out, 'w') as f:
+        for x in done:
+            if x.get('end') != 'not run (time limit)': f.write(json.dumps(x) + '\n')
         for l in open(src):
             x = json.loads(l)
-            g = alike.grow(x['stars'], rounds=ROUNDS, knot_law=law)
+            if (canon(x['sizes'], x['edges']) if 'sizes' in x else json.dumps(x['stars'])) in have: continue
+            if limit: signal.alarm(limit)
+            try:
+                g = alike.grow(x['stars'], rounds=ROUNDS, knot_law=law); signal.alarm(0)
+            except _Late:
+                x.update({'knot law': law, 'end': 'not run (time limit)', 'rows': []})
+                f.write(json.dumps(x) + '\n'); f.flush(); continue
             x.update(g); x.update({'knot law': law, 'kind': alike.kind([r['n'] for r in g['rows']], g['end'])})
             f.write(json.dumps(x) + '\n'); f.flush()
 
@@ -222,6 +247,7 @@ if __name__ == '__main__':
             for l in open(fn):
                 x = json.loads(l)
                 if 'sizes' in x: prior.add(canon(x['sizes'], x['edges']))
+                elif 'stars' in x: prior.add(canon(*late.sizes_edges(x['stars'])))   # rows without sizes (advisor)
         draw_twins(sys.argv[2], sys.argv[3], int(sys.argv[4]), int(sys.argv[5]), int(sys.argv[6]), prior)
     elif cmd == 'cycles': draw_cycles(sys.argv[2], sys.argv[3], int(sys.argv[4]), int(sys.argv[5]), int(sys.argv[6]))
     elif cmd == 'heldout':                   # graded.py heldout OUT KIND DRAWS PER SEED PRIOR.jsonl...: repeats of PRIOR excluded

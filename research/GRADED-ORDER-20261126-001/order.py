@@ -9,11 +9,14 @@ parent and do not all share one, and the candidate pairs no such set contains. C
     order.py check FILE.jsonl [LAW]     on each start's core, are rank 1's valid sets the round-1 groups and offshoots, does
                                         the round rule applied to the valid sets of each rank return the parent sets of the
                                         valid sets of the next rank, and nothing after the top rank (the order lemma)?
-    order.py core FILE.jsonl GROWN.jsonl LAW [--groups]   the reading for starts with a split pair: the core's births
+    order.py core FILE.jsonl GROWN.jsonl LAW [--groups] [--cycles]   the reading for starts with a split pair: the core's births
                                         built by the round rule from the round-1 valid sets (each birth a node, not a set),
                                         then the chains and the relay as late.py reads them, the relay taken by the one last
                                         core birth holding the whole piece; --groups: rank 1 from the round-1 groups
-                                        themselves instead of the valid sets; compared with the growth
+                                        themselves instead of the valid sets; --cycles: pieces with a cycle too (core built
+                                        to rank 25; relay only on a core that finishes; chains on a core that does not finish
+                                        not read); --first-coded: the relay by late.py's count and chains read anyway (a
+                                        check of the advisor's review); compared with the growth
 """
 import sys, os, json, itertools, collections
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -22,19 +25,29 @@ import graded
 late, score = graded.late, graded.score
 
 
-def round_rule(nodes, par):
-    """the next round's parent sets from this round's nodes (par: node -> frozenset of its parents)"""
+def round_rule(nodes, par, budget=None):
+    """the next round's parent sets from this round's nodes (par: node -> frozenset of its parents); with BUDGET, a
+    RuntimeError as soon as more than BUDGET maximal families have been listed (a count, so the stop does not depend
+    on the machine)"""
     nodes = list(nodes)
     adj = {a: set() for a in nodes}
-    for a, b in itertools.combinations(nodes, 2):
-        if par[a] & par[b]: adj[a].add(b); adj[b].add(a)
+    kids = collections.defaultdict(list)                # two nodes share a parent: read off each parent's children
+    for a in nodes:
+        for T in par[a]: kids[T].append(a)
+    pairs_cap = int(os.environ.get('PAIR_CAP', '250000'))   # a count: a round sharing parents in more pairs is too many
+    if budget is not None and sum(len(ks) * (len(ks) - 1) // 2 for ks in kids.values()) > pairs_cap:
+        raise RuntimeError('too many core births')
+    for ks in kids.values():
+        for a, b in itertools.combinations(ks, 2): adj[a].add(b); adj[b].add(a)
     out = []
     import networkx as nx
     G = nx.Graph(); G.add_nodes_from(nodes)
     for a in nodes:
         for b in adj[a]: G.add_edge(a, b)
-    groups = []
+    groups = []; listed = 0
     for Q in nx.find_cliques(G):                   # maximal cliques; a maximal valid set is one (any larger clique
+        listed += 1
+        if budget is not None and listed > budget: raise RuntimeError('too many core births')
         if len(Q) >= 3 and not frozenset.intersection(*[par[q] for q in Q]):   # would share no parent either)
             groups.append(frozenset(Q))
     covered = {frozenset(p) for S in groups for p in itertools.combinations(S, 2)}
@@ -115,11 +128,12 @@ class NodePiece(late.GeneralPiece):
         while layer and (NodePiece.max_rank is None or z <= NodePiece.max_rank):
             par = {a: frozenset(self.core_parents[a]) for a in layer}
             nxt = []
-            for S in round_rule(layer, par):
+            for S in round_rule(layer, par, NodePiece.cap - nid):
                 C = frozenset().union(*(self.points_of[a] for a in S))
                 nxt.append(node(C, z + 1, S))
             layer, z = nxt, z + 1
             if nid > NodePiece.cap: raise RuntimeError('too many core births')
+        self.finished = not layer                        # the round rule ran out of births (else stopped at max_rank)
         self.children = collections.Counter()
         for n, ps in self.core_parents.items():
             for T in ps: self.children[T] += 1
@@ -153,7 +167,7 @@ class NodePiece(late.GeneralPiece):
         return ('offshoot' if p == 1 else 'join', p, f, p + f)
 
 
-def predict_nodes(stars, rounds, law, groups=False, cycles=False):
+def predict_nodes(stars, rounds, law, groups=False, cycles=False, first_coded=False):
     """late.predict with NodePiece in place of GeneralPiece: the same terms, chains and relay, except that the relay's
     whole-piece birth is the node whose points are the whole piece (not predicted if there are several)"""
     M = late.Map(stars, law)
@@ -172,7 +186,15 @@ def predict_nodes(stars, rounds, law, groups=False, cycles=False):
             if not E: break
     for pts, tree, nch in M.pieces:
         P = NodePiece(pts, M.adj, M.chains, lambda v: v < M.n, start, lambda v: 1, M.cells)
-        relay = tree and nch == 0 and (law == 'nae' or many)   # a piece with a cycle never finishes
+        # the relay is decided by whether the core finishes with one last birth, not by late.py's count of blocks and
+        # cells (advisor, CYCLE-READ-20261127-001): a core that never finishes never relays; chains on such a core
+        # are not read, since a birth there can hold two copies of a chained point (two chains) and points are sets
+        if first_coded:                                  # as first coded, before the advisor's review (a check)
+            relay = tree and nch == 0 and (law == 'nae' or many)
+        else:
+            if not P.finished and nch:
+                return None, 'chains on a core that does not finish by rank %d' % NodePiece.max_rank
+            relay = P.finished and nch == 0 and (law == 'nae' or many)
         whole = frozenset(pts)
         tops = [n for n in P.points_of if P.points_of[n] == whole and not P.children[n]]   # the last core births
         if relay and len(tops) != 1: return None, 'not one last birth holding the whole piece'
@@ -201,12 +223,12 @@ def predict_nodes(stars, rounds, law, groups=False, cycles=False):
     return out, 'predicted'
 
 
-def core(path, grown, law, groups=False):
+def core(path, grown, law, groups=False, cycles=False, first_coded=False):
     stars_by = {}
     for l in late.opener(grown):
         x = json.loads(l)
         try:
-            P, why = predict_nodes(x['stars'], graded.ROUNDS, law, groups)
+            P, why = predict_nodes(x['stars'], graded.ROUNDS, law, groups, cycles, first_coded)
         except Exception as e:
             print(json.dumps({'draw': x.get('draw'), 'name': x.get('name'), 'law': law, 'error': repr(e)})); continue
         first = score.compare(P, x) if P is not None else 'not predicted: ' + why
@@ -220,4 +242,5 @@ def core(path, grown, law, groups=False):
 
 if __name__ == '__main__':
     if sys.argv[1] == 'check': check(sys.argv[2], *(sys.argv[3:4] or ['nae']))
-    elif sys.argv[1] == 'core': core(sys.argv[2], sys.argv[3], sys.argv[4], '--groups' in sys.argv)
+    elif sys.argv[1] == 'core': core(sys.argv[2], sys.argv[3], sys.argv[4], '--groups' in sys.argv, '--cycles' in sys.argv,
+                                     '--first-coded' in sys.argv)

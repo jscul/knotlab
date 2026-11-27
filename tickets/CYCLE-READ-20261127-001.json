@@ -1,0 +1,31 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "GRADED-ORDER-20261126-001",
+    "LATE-VIEWS-20261126-001",
+    "REDUCE-BLOCKS-20261119-001",
+    "RING-IDENT-20261119-001"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "groups": [
+      "spacing"
+    ],
+    "program": "topology"
+  },
+  "id": "CYCLE-READ-20261127-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "Under G17 with G1, at the coordinator's pick after GRADED-ORDER-20261126-001: (1) extend the node reading (the start's core births built by Lemma R's round rule from the round-1 groups, chains and relay counted as late.py does) to pieces with a cycle, where the core never finishes, and test it against growth on starts with a cycle under both laws; (2) test, frozen and on fresh starts, the post hoc explanation of the node reading's two misses (twin core births sharing two parents with a chain based at a common grandparent), drawing twins with and without that chain; (3) count how often an unending core turns up among drawn starts. Stop at agreement or a stated miss for each.",
+  "ownership": {
+    "root": true,
+    "scope_id": "CYCLE-READ-20261127-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Frozen 2026-11-27: Part 1 (133 predicted starts with a piece with a cycle, Y1-Y5), Part 2 (fresh twin test, T1-T4, W1 192 starts, W2 to be drawn), Part 3 (unending-core counts); scoring next",
+  "status_class": "active",
+  "stop_rule": "",
+  "title": "Reading a growth from its start on pieces with a cycle, and a fresh test of the twin exception"
+}

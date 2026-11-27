@@ -359,6 +359,7 @@ evidence: results and their status come from the records each entry links.
 | [A301](#a301--two-weightings-of-seven-knot-starts-buckets-up-to-renaming-and-a-24-round-horizon-to-test-the-graded-order-and-its-exception) | Two weightings of seven-knot starts, buckets up to renaming and a 24-round horizon, to test the graded order and its exception | scaffold | Assumed |
 | [A302](#a302--the-middle-of-the-joined-ring-starts-as-a-third-reader-with-two-settings-and-a-quarter-turn-read) | The middle of the joined-ring starts as a third reader with two settings, and a quarter-turn read | scaffold | Assumed |
 | [A303](#a303--the-families-tree-as-the-places-of-the-second-layer-read-at-a-scale) | The families' tree as the places of the second layer, read at a scale | scaffold | Assumed |
+| [A304](#a304--the-countings-tested-on-small-sampled-starts-fourteen-distinctions-two-rounds) | The countings tested on small sampled starts: fourteen distinctions, two rounds | scaffold | Assumed |
 
 ## Entries
 
@@ -6317,3 +6318,19 @@ evidence: results and their status come from the records each entry links.
   minority of rows. Expected to be replaced by a proof that the pair cost fixes the tree.
 - **History.**
   - 2026-11-27 · Entered at the freeze of `SELECTED-KNOTS-20261127-001`.
+
+### A304 · The countings tested on small sampled starts: fourteen distinctions, two rounds
+
+**Assumed** · 2026-11-26 · scaffold
+
+- **Statement.** `FACTOR-WEIGHTS-20261126-001` tests whether the record's countings factor over knots on 300 census
+  starts drawn uniformly (seed 20261129), grown at most two rounds on the canonical engine under parity and
+  not-all-equal and each arm, keeping only growths with at most fourteen distinctions (69 or 70 per arm under parity, 17
+  to 21 under not-all-equal), exhaustively over their words.
+- **Why.** Exhaustive enumeration of every word; the factorization argument holds at any size, so the sample checks it.
+- **Rests on it.** That study's "every recorded weighting the model makes factors over knots", as a check of the
+  argument; the argument itself does not rest on the cap.
+- **Challenge.** Larger structures by sampling words instead of enumerating them; more rounds; the recent line's
+  engine with waiting.
+- **History.**
+  - 2026-11-26 · Entered by `FACTOR-WEIGHTS-20261126-001`.

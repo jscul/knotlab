@@ -1,0 +1,517 @@
+{
+  "starts": 150,
+  "exact statuses": {
+    "one_fewer": {
+      "stalled at round 1": 12,
+      "closed at start": 4,
+      "stalled at round 3": 28,
+      "stalled at round 0": 37,
+      "funded at round 6": 20,
+      "stalled at round 2": 31,
+      "stalled at round 4": 17,
+      "closed after round 2": 1
+    },
+    "arity_floor": {
+      "stalled at round 1": 12,
+      "closed at start": 4,
+      "stalled at round 3": 28,
+      "stalled at round 0": 37,
+      "funded at round 6": 20,
+      "stalled at round 2": 31,
+      "stalled at round 4": 17,
+      "closed after round 2": 1
+    }
+  },
+  "archived status definitions": {
+    "one_fewer": {
+      "stalled at round 1": 12,
+      "closed at round 0, no loose": 4,
+      "stalled at round 3": 28,
+      "stalled at round 0": 37,
+      "funded through round 6": 20,
+      "stalled at round 2": 31,
+      "stalled at round 4": 17,
+      "closed by growth": 1
+    },
+    "arity_floor": {
+      "stalled at round 1": 12,
+      "closed at round 0, no loose": 4,
+      "stalled at round 3": 28,
+      "stalled at round 0": 37,
+      "funded through round 6": 20,
+      "stalled at round 2": 31,
+      "stalled at round 4": 17,
+      "closed by growth": 1
+    }
+  },
+  "round-six endpoints classified before round seven": {
+    "one_fewer": {
+      "closed": 0,
+      "stalled": 0,
+      "funded": 20
+    },
+    "arity_floor": {
+      "closed": 0,
+      "stalled": 0,
+      "funded": 20
+    }
+  },
+  "formed stages including starts": {
+    "one_fewer": {
+      "0": 150,
+      "1": 109,
+      "2": 97,
+      "3": 65,
+      "4": 37,
+      "5": 20,
+      "6": 20
+    },
+    "arity_floor": {
+      "0": 150,
+      "1": 109,
+      "2": 97,
+      "3": 65,
+      "4": 37,
+      "5": 20,
+      "6": 20
+    }
+  },
+  "largest terminal knot count by round [knots, census id]": {
+    "one_fewer": {
+      "1": [
+        10,
+        1161
+      ],
+      "0": [
+        5,
+        4585
+      ],
+      "3": [
+        17,
+        5042
+      ],
+      "6": [
+        28,
+        160
+      ],
+      "2": [
+        18,
+        1290
+      ],
+      "4": [
+        18,
+        428
+      ]
+    },
+    "arity_floor": {
+      "1": [
+        10,
+        1161
+      ],
+      "0": [
+        5,
+        4585
+      ],
+      "3": [
+        17,
+        5042
+      ],
+      "6": [
+        28,
+        160
+      ],
+      "2": [
+        18,
+        1290
+      ],
+      "4": [
+        18,
+        428
+      ]
+    }
+  },
+  "newly closed sizes": {
+    "one_fewer": {
+      "knots": {
+        "8": 1
+      },
+      "distinctions": {
+        "14": 1
+      },
+      "start knots": {
+        "4": 1
+      }
+    },
+    "arity_floor": {
+      "knots": {
+        "8": 1
+      },
+      "distinctions": {
+        "14": 1
+      },
+      "start knots": {
+        "4": 1
+      }
+    }
+  },
+  "newly closed membership [only three-place knots, repeated meetings, stages]": {
+    "one_fewer": [
+      [
+        false,
+        true,
+        1
+      ]
+    ],
+    "arity_floor": [
+      [
+        false,
+        true,
+        1
+      ]
+    ]
+  },
+  "newly closed pairs": {
+    "total starts closed after growth by either law": 1,
+    "same closure round and identical supports": 1
+  },
+  "paired endpoints [A129, A130, census starts]": [
+    [
+      "closed after round 2",
+      "closed after round 2",
+      1
+    ],
+    [
+      "closed at start",
+      "closed at start",
+      4
+    ],
+    [
+      "funded at round 6",
+      "funded at round 6",
+      20
+    ],
+    [
+      "stalled at round 0",
+      "stalled at round 0",
+      37
+    ],
+    [
+      "stalled at round 1",
+      "stalled at round 1",
+      12
+    ],
+    [
+      "stalled at round 2",
+      "stalled at round 2",
+      31
+    ],
+    [
+      "stalled at round 3",
+      "stalled at round 3",
+      28
+    ],
+    [
+      "stalled at round 4",
+      "stalled at round 4",
+      17
+    ]
+  ],
+  "paired stage differences": {
+    "identical supports": 498
+  },
+  "first support difference by round": {
+    "no difference at shared rounds": 150
+  },
+  "first indexed meeting-pattern difference by round": {
+    "no difference at shared rounds": 150
+  },
+  "first differing grants [parents, demand, A129 fresh, A130 fresh, births]": [],
+  "shortages at first differing stage": {},
+  "paired witness": null,
+  "archived comparison": null,
+  "sources": {
+    "census SHA-256": "ba937f95092234f8e1d8a08c20e86996a3aa58d187f137629b2c55d7e0553d6e",
+    "study freeze": {
+      "research/CLOSED-BY-CUTS-20261127-001/README.md": {
+        "expected": "c057fc9236839ff02afd9c10ce22eea5bb52647797c2095eb8a53644ef38d962",
+        "observed": "c057fc9236839ff02afd9c10ce22eea5bb52647797c2095eb8a53644ef38d962",
+        "matches": true
+      },
+      "research/CLOSED-BY-CUTS-20261127-001/closed.py": {
+        "expected": "d73e73f3c5ff2af6f012066b5555a6d156c4cc2c9bf2177a52390c272e09899f",
+        "observed": "d73e73f3c5ff2af6f012066b5555a6d156c4cc2c9bf2177a52390c272e09899f",
+        "matches": true
+      }
+    }
+  },
+  "sample": {
+    "seed": 11,
+    "weighting": "each census class equally per draw without replacement",
+    "census ids": [
+      3705,
+      4585,
+      7019,
+      6399,
+      3814,
+      3701,
+      4160,
+      7004,
+      4811,
+      1555,
+      1512,
+      6585,
+      4193,
+      3897,
+      5159,
+      5029,
+      6496,
+      1525,
+      771,
+      3658,
+      2485,
+      1161,
+      742,
+      4412,
+      6632,
+      5680,
+      5197,
+      343,
+      4877,
+      3245,
+      3710,
+      5356,
+      6053,
+      5042,
+      5325,
+      1290,
+      5104,
+      122,
+      6813,
+      4328,
+      517,
+      487,
+      292,
+      1558,
+      1981,
+      4912,
+      246,
+      6374,
+      3800,
+      2672,
+      3608,
+      4841,
+      6901,
+      1600,
+      4252,
+      1914,
+      5245,
+      2409,
+      4094,
+      37,
+      5426,
+      696,
+      3746,
+      5364,
+      2278,
+      3332,
+      4515,
+      6883,
+      681,
+      5798,
+      2080,
+      2582,
+      6209,
+      1881,
+      4201,
+      2367,
+      243,
+      575,
+      4613,
+      6277,
+      884,
+      3280,
+      883,
+      6935,
+      2383,
+      3166,
+      547,
+      138,
+      6941,
+      5610,
+      4,
+      1749,
+      1718,
+      428,
+      3850,
+      3075,
+      5807,
+      3255,
+      3438,
+      598,
+      4638,
+      5156,
+      1626,
+      6377,
+      5528,
+      2210,
+      2759,
+      713,
+      2549,
+      2724,
+      124,
+      3359,
+      966,
+      1102,
+      2018,
+      5791,
+      827,
+      89,
+      490,
+      3808,
+      6529,
+      3988,
+      1455,
+      5587,
+      4581,
+      1543,
+      3665,
+      4168,
+      1562,
+      5995,
+      6303,
+      1072,
+      3434,
+      5273,
+      3143,
+      954,
+      3234,
+      3446,
+      1743,
+      3,
+      6581,
+      4855,
+      2491,
+      160,
+      1726,
+      1534,
+      3229,
+      6999,
+      4931,
+      5257
+    ]
+  },
+  "newly closed pilot rows": [
+    {
+      "law": "one_fewer",
+      "census_id": 243,
+      "round": 2,
+      "start_knots": 4,
+      "supports": [
+        [
+          0,
+          1,
+          2,
+          3
+        ],
+        [
+          0,
+          4,
+          5,
+          6
+        ],
+        [
+          1,
+          7,
+          8
+        ],
+        [
+          2,
+          3,
+          4,
+          9,
+          10
+        ],
+        [
+          5,
+          7,
+          11
+        ],
+        [
+          6,
+          9,
+          12
+        ],
+        [
+          8,
+          10,
+          13
+        ],
+        [
+          11,
+          12,
+          13
+        ]
+      ],
+      "last_birth_knots": [
+        7
+      ]
+    },
+    {
+      "law": "arity_floor",
+      "census_id": 243,
+      "round": 2,
+      "start_knots": 4,
+      "supports": [
+        [
+          0,
+          1,
+          2,
+          3
+        ],
+        [
+          0,
+          4,
+          5,
+          6
+        ],
+        [
+          1,
+          7,
+          8
+        ],
+        [
+          2,
+          3,
+          4,
+          9,
+          10
+        ],
+        [
+          5,
+          7,
+          11
+        ],
+        [
+          6,
+          9,
+          12
+        ],
+        [
+          8,
+          10,
+          13
+        ],
+        [
+          11,
+          12,
+          13
+        ]
+      ],
+      "last_birth_knots": [
+        7
+      ]
+    }
+  ],
+  "wall seconds": 0.075,
+  "peak resident KiB": 29632
+}

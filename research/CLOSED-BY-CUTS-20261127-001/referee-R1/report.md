@@ -1,0 +1,66 @@
+# Independent referee report on closure and the step one layer up under two growth laws
+**Refuted. One Block on the surviving claim about census starts.** Both rival laws make a four-clause step on an open census stage. With the same start and six agreement readings, ordinary growth permits **468** assignments with upper word `111`. Either rival gives one birth one fewer fresh distinction and excludes that word. The frozen counts of newly closed stages and strict boxes reproduce.
+
+## What holds
+
+| Claim | Independent result |
+| --- | --- |
+| Census and frozen pilot | **7,075** distinct starting classes. Independent generation found 61 with three knots, 1,046 with four and 5,968 with five. Every class is present once. Reconstructing the seed-11 sample of 150 gives **1** closure after growth (round two, eight imposed laws, 14 distinctions), **4** already closed, **125** stalled and **20** funded through six rounds under each law. The full census includes the pilot. [Membership](census_membership.json) · [Pilot](growth_pilot.json) |
+| Endpoints through six rounds | Under each law, the **same 171** starts close with identical supports, **149** after one round and **22** after two. **230** start closed, **5,857** stall and **817** complete six rounds. The original loop skips a closure check immediately after its sixth success. Direct inspection finds all 817 still open and fundable under each law. Every tally in the 16 chunks and every archived closure row matches. [Counts by round and law](growth_census.json) |
+| Frozen predictions K1 and K2 | **K1 fails.** 171/7,075 is **2.417%**, 30 starts above the largest count allowed by 2%. The threshold was frozen and the decision scored the miss. **K2 holds.** The imposed-law counts are 4, 5, 6, 8 and 9 on respectively **4, 28, 117, 17 and 5** newly closed stages. All five largest stages have 15 distinctions. The 171 closures give **145** different systems when start markings and names are forgotten. [Size and projection checks](closure_supports.json) |
+| Frozen prediction K3 | **Zero strict boxes** on all 171 newly closed stages per law. All **205,986** lower bonds per law reproduce, each excluding one word. Of the 171 stages, 120 have at least twelve distinctions, 97 can supply six disjoint agreements individually unread at every source knot, and 21 have at least eight lower clauses that each leave room for three more such agreements. **Zero** have even two clauses on six mutually disjoint carriers, a necessary condition for a box. The zero for boxes needing a birth had **zero** deletion opportunities. [Closed-stage counts](closed_counts.json) |
+| Alternative four-clause form at closure | **Zero** on those 171 stages. Only **three** admit two clauses sharing one reading on five disjoint carriers with room for an unread sixth. A second search tried **714,445** ways to add three disjoint agreements to an eligible first clause. Even disregarding all forbidden signs, none supplies the required alternating four clauses. All other nonconstant ways to pick one A reading for each B/C choice also give zero. [Signed search](closed_counts.json) · [Search disregarding signs](closed_support_counts.json) |
+| Earlier comparison | The earlier simple connected closed three-place classes give **0/27** through ten knots and **49/85** at twelve, for **801** boxes. The 49 archived example replays match. One seeded split per positive class gave **0/49**. The earlier exhaustive split record gives **1/882** positive choices and **18** boxes there. A different four-clause upper reading works on a closed ten-knot system. Ordinary funded growth leaves a loose distinction at every finite newly formed stage because each birth receives a fresh distinction. [Linked archives and witness checks](reading_checks.json) |
+
+### The open census counterexample
+
+Start with five knots, one of six places and four of three places (census entry 5246). The three laws give identical supports for three rounds. In round four, one birth receives distinctions `13,15,17,18` under ordinary growth and `13,15,17` under either cut. Every other law is identical. The cut stage has twelve imposed laws and five loose distinctions.
+
+In order A0, A1, B0, B1, C0, C1, read agreement on **(0,1,5), (11,12,14), (2,8,9), (7,13), (3,4,10), (6,15,17)**. On each of A0 B0 C0, A0 B1 C1, A1 B0 C1 and A1 B1 C0, exactly the seven words other than `111` occur. For the upper readings, require **both** A agreements, **either** B agreement and **either** C agreement. If both A readings are 1, any choice of a 1 from B and a 1 from C violates one of the four clauses.
+
+The **173,430** allowed source states give **39** six-reading words and all seven upper words other than `111`. Forgetting any upper reading gives all four pairs. All four clauses are necessary in their conjunction. No single source knot determines any lower reading, and no individual lower clause determines any upper reading. Erasing the shortened birth law restores **468** source assignments with upper `111`. The ordinary stage realizes **468** such assignments on the identical readings. Its extra distinction 18 occurs only in that birth and in no reading, so ordinary growth can satisfy the birth even when its other three distinctions agree. Both cuts remove precisely that option. [Source and birth history](open_four_changed.json) · [Independent truth tables and canonical checks](changed_reading_check.json)
+
+Two comparisons distinguish formation from the effect of shortening. On the four-knot census start with three three-place laws and one four-place law (entry 420), the earlier second-round four-clause witness also works under both cuts. Its **17,928** states give seven upper words. All six birth laws are essential, and ordinary growth produces the identical stage. Separately, a **constructed ten-knot start outside the census** goes from zero strict boxes to **18** in one round under both rivals, again with the ordinary allotment. Both birth laws are essential to all 18. The two open census witnesses above each have zero strict boxes. [Four-clause replay](open_four_transfer.json) · [Strict-box controls and searches](open_eight_notes.md)
+
+## The fixes
+
+1. **Block — open census stages.** Replace “The conclusion that no recorded law makes the step is true only of census starts under the rival laws”, “Boxes need a closed system of at least twelve three-place knots” and “So no growth law recorded makes the step one layer up on the starts read” in the [decision](../decision.md) with **“Both cuts form a birth-essential four-clause step on open census stages. The 171 newly closed stages under each cut have neither the frozen eight-clause box nor the four-clause form tested here.”** Use that sentence for the local and long-term position rows, the [goals checkpoint](../../../docs/RESEARCH_GOALS.md) sentence ending “which needs a closed system of at least twelve,” and the [objects entry](../../../docs/OBJECTS.md) ending “no recorded growth law makes the step on census starts.” The earlier referee already refuted the need for closure. The round-four comparison above refutes the remaining census qualification.
+2. **Narrowing — sizes and opportunity.** Replace “Their knots” and “6 in 117” in the [decision table](../decision.md) with **“Imposed laws (six in 117 stages). Six displayed supports pass the knot test in the full stage on 114 stages.”** All 1,039 supports per law were projected onto their own distinctions. In three six-law stages, forgetting one distinction of one displayed support still leaves a forbidden word. For example, on the first-round closure of a five-knot start (entry 3052), forgetting distinction 0 on its seven-place support still excludes `000110`. In the K3 bullet replace “nor, therefore, one needing a birth” with **“No box was available for a birth-deletion test.”** Only two newly closed stages belong to the earlier simple three-place class, so K2's size result alone did not settle K3. [Projection failures](closure_supports.json) · [Opportunity counts](closed_counts.json)
+3. **Narrowing — what the laws change.** Replace “The two laws differ only in when some starts stall (rounds 1 and 3), not in which starts close” in the [decision](../decision.md) with **“The closure rosters coincide. On 48 starts the first-round allotments already differ. A129 retains one or two fresh distinctions at a birth where A130 retains zero. A129 stalls after round one and A130 after round three on those starts.”** The other 7,027 starts have identical support histories through the tested limit. [Paired trajectories and shortages](growth_census.json)
+4. **Not a block — scope and credit.** Annotate “They occur on 49 of the 85 closed twelve-knot three-place systems and none smaller” in the [frozen background](../README.md), and qualify “49 carry this step ... and none of the 27 smaller kinds does” in [guide lesson 12.3](../../../publication/knotlab/INTUITIONS.md), with **“The strict eight-clause box occurs in 49 of the 85 simple connected closed twelve-knot three-place classes, and in none of the 27 smaller classes tested, weighting classes equally.”** Preserve the frozen predictions as written. The earlier rival-law study already exhibited closure on a chosen start. The earlier agreement referees supplied the closed box and the ordinary four-clause witness. Five searches of the objects index found no earlier matching six-round closure census. The old transcription of 117 smaller classes as the denominator was already corrected to 27. [Exact wording, prior records and index queries](sources.json)
+
+## What was not run
+
+There are **16,168** open post-growth stage occurrences under A129 and **16,264** under A130. For strict boxes, 264 per law are too small for six disjoint carriers. Two ordered prefixes and three targeted checks cover **261 further occurrences per law**, with zero boxes. A general strict-box search was **not run on 15,643 and 15,739** open occurrences, respectively. Checking every open stage for the particular twelve-law constructed witness gave zero copies. That test can only recognize that source system. The four-clause search stopped on witnesses. Its frequency, arbitrary upper readings, later rounds, larger starting classes and selection of the readings by growth remain unmeasured. [Deduplicated coverage](coverage.json) · [Search bounds](open_eight_notes.md) · [Known source system](trace_strict_example.json)
+
+## How it was checked
+
+The replay reuses the earlier independent ordinary growth rule and applies the two cuts to its births. New code checks census membership, raw rows and tallies, closed-stage bonds, the two upper forms and the source projections. Positive controls recover both known forms and lose the upper exclusion on deletion. A second enumeration checks the open witnesses and runs the canonical test with each upper reading as contact. The supplementary open strict-box search uses an earlier independent signed-triple screen. Both freeze hashes match. The 16 raw files are in `out/`. The related `post/` replays belong to the preceding study. The original decision reports no advisor consultation. [Rerun commands and resources](replay.md) · [Positive and deletion controls](closed_controls.json)
+
+To verify the decisive counterexample from its saved certificate, run from the repository root
+
+```sh
+ref=research/CLOSED-BY-CUTS-20261127-001/referee-R1
+export OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1
+.venv/bin/python -B "$ref/verify_readings.py" --changed --pilot
+.venv/bin/python -B "$ref/verify_readings.py" --changed
+```
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| Frozen closure census | **Status:** Successful recount | All 7,075 starts and both laws checked |
+| Growth can form a step on open census starts | Established for the four-clause reading | A shortened birth excludes a previously attainable upper word |
+| Strict box on an open census start | Unresolved | The constructed example lies outside this census |
+| G17 meeting patterns and G18 comparing growth laws | Capability gained | A comparison on the same six carriers isolates the fresh distinction that changes the upper relation |
+
+**Next step:** Research directions. STOP this referee round. The matched ordinary and cut stages settle the surviving formation claim.
+
+| # | Direction | Payoff | Concreteness | First step and stopping condition | Status |
+| --- | --- | --- | --- | --- | --- |
+| 1 | Explain the role of the extra fresh distinction | 3/3 | 3/3 | Keep all six readings fixed and restore that one distinction. The 468 assignments return | Checked here |
+| 2 | Find a strict box on an open census stage | 2/3 | 2/3 | Search additional previously untested stages with six eligible carriers. Stop at a verified box or the end of a declared sample | Open |
+
+**Corrections:** One Block on the surviving census reading, two narrowings, and a wording and credit fix.  
+**Goals:** Revise the G17/G18 checkpoint as specified above.  
+**Assumptions:** A129 and A130 specify the rival laws. A309 fixes the strict eight-clause form.  
+**Scaffolds:** The six-round limit, the census weighting, chosen agreement carriers and upper readings, and the ordered open-search prefixes bound these results.

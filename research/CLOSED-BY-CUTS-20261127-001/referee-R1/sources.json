@@ -1,0 +1,190 @@
+{
+  "scope": "Documentary audit of the frozen record, archive summaries, published wording and earlier work. Archive totals below are a cross-check of saved records.",
+  "freeze": {
+    "commit": "7167b99346",
+    "first_results_commit": "15559a3fe2",
+    "hash_check": "sha256sum -c research/CLOSED-BY-CUTS-20261127-001/frozen.sha256",
+    "hashes_passed": [
+      "research/CLOSED-BY-CUTS-20261127-001/README.md",
+      "research/CLOSED-BY-CUTS-20261127-001/closed.py"
+    ],
+    "pilot": "The frozen README records 1 closure among 150 starts with seed 11, with both laws agreeing on outcomes. The full run reads all 7,075 starts and so includes the pilot population. There is no separate local pilot archive or saved roster.",
+    "predictions": {
+      "K1": "At most 2%. The archived 171/7,075 is 2.417%, so it fails by 30 closures above the greatest allowed integer count of 141. The decision reports this failure without moving the threshold.",
+      "K2": "The bounded size prediction holds in the archive, with a maximum of nine displayed rules. Its rationale for K3 was outside the earlier census's hypotheses. Of the 171 newly closed stages, 169 have at least one rule with more than three places. The earlier negative covers 27 connected three-place classes with at most one shared distinction between any two knots. The general claim that closure is necessary had already been refuted.",
+      "K3": "Both strict box counts are zero. The birth-essential part follows from that zero and had zero possible source-law deletion tests."
+    },
+    "implementation_bounds": "closed.py:16–18 and 33–41 specify the default full search at up to 20 distinctions and a cap of 50 boxes per stage for source-law deletion tests. The archive reaches 15 distinctions with no search omissions and no box on which the deletion cap could matter. At closed.py:26–32 a successful sixth round is counted immediately, without testing whether the resulting stage has a loose distinction. A replay must check the round-six boundary directly.",
+    "post_hoc": "There is no post/ within this study folder. The related strict open witness is the predecessor replay in research/UPPER-GROWN-20261127-001/post/grown_replay.json, with its script beside it. It reproduces the exact ordinary grown stage, 14,554 allowed states, seven upper words and all twelve source laws essential. It tests a built ten-knot start under ordinary growth."
+  },
+  "archive_cross_check_per_law": {
+    "newly_closed": 171,
+    "closure_rounds": {"1": 149, "2": 22},
+    "displayed_rule_counts": {"4": 4, "5": 28, "6": 117, "8": 17, "9": 5},
+    "distinction_counts": {"6": 1, "7": 1, "8": 1, "9": 3, "10": 10, "11": 35, "12": 99, "13": 2, "14": 5, "15": 14},
+    "all_three_place_stages": 2,
+    "stages_with_a_wider_rule": 169,
+    "at_least_twelve_distinctions": 120,
+    "at_least_twelve_distinctions_and_eight_archived_lower_bonds": 111,
+    "total_archived_lower_bonds": 205986,
+    "skipped_strict_box_searches": 0,
+    "archived_strict_boxes": 0,
+    "birth_deletion_tests_available": 0,
+    "closed_at_start": 230,
+    "stalled": 5857,
+    "completed_six_successful_rounds_per_archive": 817,
+    "stalled_by_completed_round": {
+      "A129": {"0": 1734, "1": 456, "2": 1257, "3": 1445, "4": 886, "5": 79},
+      "A130": {"0": 1734, "1": 408, "2": 1257, "3": 1493, "4": 886, "5": 79}
+    },
+    "opportunity_note": "The two numerical opportunity filters are necessary for the frozen strict box. They do not check the signs, disjointness or upper reading itself. Counts are per law, and different starts can reach an identical or relabelled stage."
+  },
+  "fixes": [
+    {
+      "verdict": "Block already logged, with an additional scope narrowing",
+      "file": "research/CLOSED-BY-CUTS-20261127-001/decision.md",
+      "location": "lines 4–8, 12–13, 26–29 and 35–37 at audit",
+      "current": "The conclusion that no recorded law makes the step is true only of census starts under the rival laws; under ordinary growth it is false on a built start. / Answer: growth under the cuts does close stages, but only small ones, and none carries the step. / Boxes need a closed system of at least twelve three-place knots. / Needs closure at twelve or more knots; no recorded law gives it on census starts. / The second step is a property of closed systems of twelve knots.",
+      "replacement": "Of 7,075 census starts grown for up to six rounds under each rival not-all-equal law, 171 closed after growth. The newly closed stages had four to nine displayed rules, and the complete search found no strict box on them. Earlier work found strict boxes on 49 of 85 simple connected closed twelve-knot classes and on none of the 27 such smaller classes, weighting classes equally. Ordinary growth makes 18 strict boxes on an open stage from a built ten-knot start. The frozen rival-law run searched newly closed stages for the strict form. Open stages and the four-clause form need separate checks.",
+      "position_table_replacement": "For the local result use “No strict box on these newly closed stages.” For G17 and G18 use “Finite scope established for the two rival laws. Ordinary growth can make an upper knot on a built start. Selection of readings remains open.” Add the independent findings separately with their populations.",
+      "evidence": [
+        "research/CLOSED-BY-CUTS-20261127-001/closed.py:24–41",
+        "research/UPPER-GROWN-20261127-001/referee-R1/report.md:10–26",
+        "research/CUT-BOXES-20261127-001/referee-R1/report.md:13–18"
+      ]
+    },
+    {
+      "verdict": "Narrowing",
+      "file": "research/CLOSED-BY-CUTS-20261127-001/decision.md",
+      "location": "lines 15, 20–24 at audit",
+      "current": "Funded at round 6. / K3 held. The full search finds no box on any of the 171 (nor, therefore, one needing a birth). / The two laws differ only in when some starts stall (rounds 1 and 3), not in which starts close.",
+      "replacement": "Label the final column “Completed six funded rounds”. K1 failed at 171 of 7,075 (2.417%). K2 holds for the measured size bound. K3 holds for the strict box on the newly closed stages, with zero boxes available for source-law deletion tests. The archived status totals agree for closures and six completed rounds. The stall counts differ by 48 at completed rounds 1 and 3. The laws can impose different allowed-state restrictions even from the same census start.",
+      "evidence": [
+        "research/CLOSED-BY-CUTS-20261127-001/out/",
+        "research/CLOSED-BY-CUTS-20261127-001/closed.py:26–32",
+        "proofs/FORBIDDING-JOIN-20261120-001A/FORBIDDING-JOIN-20261120-001A-P001_surviving_states/proof.md:63–78"
+      ]
+    },
+    {
+      "verdict": "Narrowing and provenance",
+      "file": "research/CLOSED-BY-CUTS-20261127-001/README.md",
+      "location": "lines 4–8 and 25–28",
+      "current": "Boxes are the step one layer up. / One cut removes every one of them. / Ordinary growth never closes a connected stage. / That is fewer than twelve knots, so going by the closed census, no box.",
+      "replacement": "Keep the freeze intact and add this notice in the decision or referee report: “The box is one form of an upper knot. All 49 seeded splits lost their strict boxes, and one of the 882 possible splits gives 18. Ordinary not-all-equal growth from an open start leaves a fresh distinction after every funded round. The earlier census was limited to connected three-place classes with at most one shared distinction per pair of knots. K2 tests the size of the rival-law closures. K3 requires its own direct search.”",
+      "evidence": [
+        "research/CLOSED-BY-CUTS-20261127-001/frozen.sha256",
+        "research/CUT-BOXES-20261127-001/referee-R1/report.md:3–18",
+        "research/NAE-GROWTH-20261119-001/nae_growth.md:32–44",
+        "research/UPPER-GROWN-20261127-001/referee-R1/report.md:8–26"
+      ]
+    },
+    {
+      "verdict": "Narrowing",
+      "file": "docs/RESEARCH_GOALS.md",
+      "location": "G17/G18 checkpoint for the rival-law closure study, line 6169 at audit",
+      "current": "Under either rival law 171 of 7,075 census starts close after growth, all with at most nine knots, and none carries the step one layer up, which needs a closed system of at least twelve.",
+      "replacement": "Under each rival not-all-equal law, 171 of 7,075 census starts close after growth through round six. Each newly closed stage has four to nine displayed rules and no strict box. Earlier work found a strict box on an open stage under ordinary growth. See the referee report for separate tests of the four-clause form and open stages.",
+      "evidence": [
+        "research/CLOSED-BY-CUTS-20261127-001/decision.md:12–24",
+        "research/UPPER-GROWN-20261127-001/referee-R1/report.md:16–27"
+      ]
+    },
+    {
+      "verdict": "Narrowing",
+      "file": "docs/OBJECTS.md and its tracker source",
+      "location": "CLOSED-BY-CUTS-20261127-001/1, line 22 at audit",
+      "current": "With boxes needing closed systems of at least twelve knots, no recorded growth law makes the step on census starts.",
+      "replacement": "With a six-round limit, under each rival not-all-equal law 171 of 7,075 census starts close after growth. Every newly closed stage has four to nine displayed rules. Full-stage search of the frozen strict box on those 171 stages finds zero.",
+      "evidence": [
+        "scripts/track.py objects --epic CLOSED-BY-CUTS-20261127-001 --json",
+        "research/CLOSED-BY-CUTS-20261127-001/closed.py:24–41",
+        "docs/tooling/objects-index.md:31–45",
+        "docs/CORRECTIONS.md, “One layer up refereed: ordinary growth makes the step, closure is not needed”"
+      ],
+      "record_note": "The generated handbook entry and read-only database output both still carry the claim, although the earlier correction log says the objects rows were carried through."
+    },
+    {
+      "verdict": "Narrowing",
+      "file": "tickets/CLOSED-BY-CUTS-20261127-001.json",
+      "location": "objective, line 17 at audit",
+      "current": "CUT-BOXES-20261127-001 found the step one layer up (boxes) only on closed systems, which ordinary growth never makes.",
+      "replacement": "The predecessor found zero strict boxes after its 49 seeded single splits. The later exhaustive split check found an open positive case, which ordinary not-all-equal growth also makes. This study measures newly closed stages reached by the two rival laws and searches them for strict boxes.",
+      "evidence": [
+        "research/CUT-BOXES-20261127-001/decision.md:4–15",
+        "research/UPPER-GROWN-20261127-001/referee-R1/report.md:16–20"
+      ]
+    },
+    {
+      "verdict": "Narrowing",
+      "file": "publication/knotlab/INTUITIONS.md",
+      "location": "lesson 12.3, lines 6320–6328 and the not-all-equal row near 6372 at audit",
+      "current": "49 carry this step, counting each kind once, and none of the 27 smaller kinds does.",
+      "replacement": "The strict form with six disjoint agreement carriers and eight clauses in one product pattern occurs in 49 of the 85 kinds of connected twelve-knot system with three places per knot, each distinction held twice, and at most one distinction shared by any two knots. It occurs in none of the 27 smaller kinds with those same restrictions. Each kind has equal weight up to renaming. A different four-clause form occurs in a closed ten-knot system and on an ordinarily grown stage from a sampled four-knot start.",
+      "evidence": [
+        "research/UPPER-GROWN-20261127-001/referee-R1/report.md:10–26",
+        "docs/CORRECTIONS.md, “The cut study refereed: narrowings, and the guide's count of closed systems”"
+      ],
+      "record_note": "The guide already includes the earlier fix for multiple shared distinctions and says ordinary growth can make the step. The remaining issue is using “this step” for a negative counted only under the strict form."
+    },
+    {
+      "verdict": "Not a block",
+      "file": "docs/ASSUMPTIONS.md",
+      "location": "A129, A130 and A309",
+      "current": "A309's history says “none below twelve” after describing the original count. The only explicit six-round scaffold in the closure study is in its frozen README and closing note.",
+      "replacement": "If folded in, give A309 the qualifier “none of the 27 smaller simple connected closed three-place classes”. Record the rival-law continuation as using A129 and A130, the exact census roster, the six-round limit and the strict box form. Keep the different four-clause reading and open-stage coverage attributed to their own tests.",
+      "evidence": [
+        "docs/ASSUMPTIONS.md:3915–3938",
+        "docs/ASSUMPTIONS.md:6418–6437",
+        "research/CLOSED-BY-CUTS-20261127-001/decision.md:47–50"
+      ]
+    }
+  ],
+  "prior_work": {
+    "method": "The objects subcommand dispatches directly to search_objects; it opens SQLite with mode=ro and only calls object_rows SELECTs. Epic and optional deep scans read files. The database header was 1/1 (rollback journal), with no journal sidecar present. Read-only queries used the repository Python, bytecode writes disabled, single-thread settings and a 1 GiB virtual-memory cap. The first three-row query took 0.26 s and about 41 MiB peak resident memory. The date filters epic IDs inclusively, so later corrections can appear in results dated the same day. Freeze order was checked against Git history.",
+    "query_prefix": "OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 BLAS=1 .venv/bin/python -B scripts/track.py objects",
+    "query_suffix": "--json --deep --limit 5 --until 2026-11-27 --exclude CLOSED-BY-CUTS-20261127-001",
+    "queries_and_first_three_index_rows": {
+      "closed growth box": ["UPPER-GROWN-20261127-001/1", "CUT-BOXES-20261127-001/1", "GRID-GROW-20261117-001/1"],
+      "agreement agreements four clause upper bond": ["RING-BOND-20261127-001/1", "UPPER-GROWN-20261127-001/1", "SHIFT-COUNT-20261112-001/2"],
+      "loose closure one_fewer arity_floor forbidding cuts growth": ["CUT-BINDING-20261126-001/1", "INFLUENCE-CONE-20261120-001/2", "BOND-CLOSURE-20261120-001/2"],
+      "census closed growth box birth": ["UPPER-GROWN-20261127-001/1", "CUT-BOXES-20261127-001/1", "GRID-GROW-20261117-001/1"],
+      "closed stages newly closed 171 boxes forbidding not-all-equal": ["UPPER-GROWN-20261127-001/1", "WEIGHTS-20261112-001/1", "CUT-BINDING-20261126-001/1"]
+    },
+    "relevant_predecessors": [
+      {
+        "record": "research/RING-BOND-20261127-001/referee-R1/layer_notes.md and layer_witness.json",
+        "finding": "The strict upper form was already known on a chosen closed twelve-knot start. An overlap version already bound on the open three-knot ring after three and four ordinary rounds, with a round-three law needed."
+      },
+      {
+        "record": "research/UPPER-GROWN-20261127-001/referee-R1/report.md:8–27",
+        "finding": "Prior strict census: 49/85 simple closed twelve-knot classes under equal class weighting (368/661 under equal labelled weighting), 0/27 smaller classes, 0/2,416 sampled stages. The later referee found 18 strict boxes on a built ordinary open stage and one four-clause form on a closed ten-knot source and one on a sampled grown stage."
+      },
+      {
+        "record": "research/CUT-BOXES-20261127-001/referee-R1/report.md:3–35",
+        "finding": "The 49 seeded cuts miss every strict box, one of the 882 cuts gives 18 strict boxes, and allowing overlap within each paired comparison gives an upper binding on all 49 seeded cuts. None of these populations is the rival-law census."
+      },
+      {
+        "record": "research/FORBIDDING-JOIN-20261120-001/decision.md:11–35 and experiments/FORBIDDING-JOIN-20261120-001C/FORBIDDING-JOIN-20261120-001C-E001_growth_checks/result.md:24",
+        "finding": "The two rival grants and their ability to close a chosen start under not-all-equal were known. The new frozen result is the closure census and strict box recount on that census."
+      },
+      {
+        "record": "proofs/FORBIDDING-JOIN-20261120-001A/FORBIDDING-JOIN-20261120-001A-P001_surviving_states/proof.md:63–92",
+        "finding": "A three-knot ring with one extra loose distinction at each of two knots fits this census. On it A129 retains 146 of 146 old states and A130 retains 106 of 146, so the rivalry differs before a stall. A five-knot start with repeated meetings also fits the census when it has the extra loose distinction z. After growth under both laws, an eight-place displayed rule loses K2 in the actual projection. Thus claims about the imposed rule count and the canonical knot count need distinct evidence."
+      },
+      {
+        "record": "research/CUT-BINDING-20261126-001/decision.md and research/BUILT-BINDING-20261126-001/decision.md",
+        "finding": "The two rival cuts were already found to bind old ring parities under a chosen parity reading on a built start. That result uses different source laws and readings from the strict not-all-equal box."
+      },
+      {
+        "record": "research/NAE-GROWTH-20261119-001/nae_growth.md:32–44",
+        "finding": "Ordinary growth from open starts can close under parity but supplies a fresh distinction under not-all-equal. The law name and initial openness matter in the frozen introduction."
+      }
+    ],
+    "search_limit": "No earlier record returned the same 171-of-7,075 six-round not-all-equal closure census with the strict-box exclusion. The internal index and bounded matching file searches do not establish an external novelty claim. Other high-ranked results concern different populations or relations."
+  },
+  "intuition": {
+    "status": "Exact link with an inexpensive diagnostic",
+    "statement": "An unread private distinction supplies a local extension of every assignment to the rest of a knot's variables. If all six readings ignore such a variable of a source rule, every reading word after deleting that rule already occurred with it. This is the same extension mechanism behind ordinary growth's preserved projection. An essential birth can use a private distinction only if a carrier reads it. Closing is one way of removing these private extension choices.",
+    "cheapest_test": "For a proposed birth-essential witness, delete one source rule at a time. If a new upper word appears, check whether the rule still held a private distinction and whether a carrier included it. The ordinary open witness provides the positive control because its carriers read both fresh distinctions."
+  }
+}

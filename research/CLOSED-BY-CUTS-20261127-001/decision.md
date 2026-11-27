@@ -1,6 +1,17 @@
 # Under the forbidding cuts, does growth close a stage that carries the step one layer up? What stands
 
 
+> **Referee R1: refuted, one Block** ([report](referee-R1/report.md)). The census counts reproduce exactly (the same 171
+> closing starts under each law, 4 to 9 imposed laws, no box and no four-clause step on any). **Block:** both cuts form
+> a step one layer up on an open census stage. Census start 5246 grows the same under all three laws for three rounds.
+> In round four one birth receives one fewer fresh distinction under either cut. On six agreements, [0 = 1 = 5],
+> [11 = 12 = 14], [2 = 8 = 9], [7 = 13], [3 = 4 = 10] and [6 = 15 = 17], four clauses then hold, and the four-clause step
+> excludes its upper word. Under ordinary growth 468 assignments with that word occur, because the extra fresh
+> distinction lets the birth be satisfied. **Narrowings:** the table's "knots" are imposed laws; no box was available for
+> a birth-deletion test; the laws' histories differ on 48 starts (A129 stalls after round one where A130 stalls after
+> round three), though the closure rosters coincide.
+
+
 > **Narrowed by `UPPER-GROWN-20261127-001`'s referee (R1, Block)** ([report](../UPPER-GROWN-20261127-001/referee-R1/report.md)).
 > "Boxes need a closed system of at least twelve three-place knots" is false: ordinary growth makes 18 boxes on an open
 > stage one round from a built ten-knot start, and a four-clause step occurs on a closed ten-knot system. The counts
@@ -23,7 +34,7 @@ start (7,075) was grown for at most six rounds under each rival law.
 
 The two laws differ only in when some starts stall (rounds 1 and 3), not in which starts close.
 
-**Reading.** Boxes need a closed system of at least twelve three-place knots: none on the 27 closed three-place systems with ten or
+**Reading** [R1, Block: both cuts form a birth-essential four-clause step on open census stages; the 171 newly closed stages have neither form tested]. Boxes need a closed system of at least twelve three-place knots: none on the 27 closed three-place systems with ten or
 fewer, 49 of 85 with twelve, and none survives one cut. Ordinary growth never closes a connected stage. The cuts close only stages
 of at most nine knots within six rounds on census starts. So no growth law recorded makes the step one layer up on the
 starts read. Whether larger starts under the cuts close at twelve or more knots is not run.

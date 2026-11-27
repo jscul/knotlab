@@ -30,3 +30,30 @@ the swap is the weighting by one round's completions, which the growth itself su
 own factor along the route: no single knot reads it, but it carries nothing beyond the knots' own factors (the chain is
 a Markov chain), so it is held by the route only in the weak sense. Whether the swap of weighting keeps that is the test
 of the scaffold.
+
+## What was found ([`weights.json`](weights.json))
+
+**Under the equal weighting.**
+- **W1 held exactly:** on all 761 pairs of distinctions of the 15 tree-shaped census starts, the mean product of signs
+  is the product of −1/(2^(a−1) − 1) over the knots on the route.
+- **W1r held exactly:** the route formula gives −15/41, −33/95 and −3/13 on SIGNED-COUNT's rings, their exact means.
+- **W3 held:** 50 of the ring of four's 82 states have even ring parity.
+- **W2 failed as frozen:** 351 of 7,445 pairs of sign products on disjoint knot sets are not independent. Read after
+  the run: on starts of three-place knots only, every pair of products carried on distinctions that only the two sets'
+  own knots hold is independent (252 of 252); the 27 failures there use a distinction that a knot outside both sets also
+  holds; and every start with a knot of four or more places has failures even inside (52), since such a knot couples
+  all its places at once (its law has a term on four of them, not only on pairs).
+
+**Under the other weighting** (each state weighted by its completions after one round): the route formula holds on 6
+of 453 pairs and independence on 294 of 2,680 (five starts do not grow). The births of the round join loose
+distinctions of different knots, so they add couplings the start does not have.
+
+**So, is a correlation between distant parts held by the whole?** Under the equal weighting, on starts with no ring and
+three-place knots, it is no single knot's, but it is exactly the product of each knot's own factor along the route:
+the chain holds nothing beyond its knots' factors, and separated parts are independent. That is the weak sense of
+"held by the whole", the same as the composed relations of `NAE-LAYER-20261127-001`. Rings add the loop's own term
+(the route formula over both routes, normalised), and a knot of four or more places carries a joint term of its own,
+a fact read at that one knot. Under the growth's own weighting the picture changes entirely: the result is about the
+equal weighting, a scaffold, not about the model.
+
+**Not run.** Starts with rings past SIGNED-COUNT's two; later rounds; other weightings.

@@ -1,0 +1,141 @@
+{
+  "source": "research/TWO-COUNTINGS-20261125-001A/structures.json",
+  "start": "eleven (start)",
+  "allowed start states": 64,
+  "start weight unit": "Each allowed start state has weight one before division.",
+  "recorded shared-fresh example": [
+    {
+      "settings": [
+        0,
+        0
+      ],
+      "old states by number of completions": {
+        "0": 16,
+        "1": 32,
+        "2": 16
+      },
+      "allowed final states": 64,
+      "single old rule carrying the divisor": [
+        "c",
+        "x3",
+        "s2"
+      ],
+      "patterns with weight 1/2": [
+        "010",
+        "101"
+      ],
+      "other patterns before law indicators": "1",
+      "renormalisation multiplier for the unit start weights": "1/48",
+      "comparisons on allowed old states and both fresh values": 128,
+      "mismatches": 0
+    },
+    {
+      "settings": [
+        0,
+        1
+      ],
+      "old states by number of completions": {
+        "0": 0,
+        "1": 48,
+        "2": 16
+      },
+      "allowed final states": 80,
+      "single old rule carrying the divisor": [
+        "c",
+        "x3",
+        "s2"
+      ],
+      "patterns with weight 1/2": [
+        "011",
+        "100"
+      ],
+      "other patterns before law indicators": "1",
+      "renormalisation multiplier for the unit start weights": "1/64",
+      "comparisons on allowed old states and both fresh values": 128,
+      "mismatches": 0
+    },
+    {
+      "settings": [
+        1,
+        0
+      ],
+      "old states by number of completions": {
+        "0": 16,
+        "1": 32,
+        "2": 16
+      },
+      "allowed final states": 64,
+      "single old rule carrying the divisor": [
+        "c",
+        "x2",
+        "s1"
+      ],
+      "patterns with weight 1/2": [
+        "010",
+        "101"
+      ],
+      "other patterns before law indicators": "1",
+      "renormalisation multiplier for the unit start weights": "1/48",
+      "comparisons on allowed old states and both fresh values": 128,
+      "mismatches": 0
+    },
+    {
+      "settings": [
+        1,
+        1
+      ],
+      "old states by number of completions": {
+        "0": 16,
+        "1": 32,
+        "2": 16
+      },
+      "allowed final states": 64,
+      "single old rule carrying the divisor": [
+        "c",
+        "x2",
+        "s1"
+      ],
+      "patterns with weight 1/2": [
+        "011",
+        "100"
+      ],
+      "other patterns before law indicators": "1",
+      "renormalisation multiplier for the unit start weights": "1/48",
+      "comparisons on allowed old states and both fresh values": 128,
+      "mismatches": 0
+    }
+  ],
+  "shared-fresh control with otherwise free inputs": {
+    "rules": [
+      [
+        "x1",
+        "x2",
+        "z"
+      ],
+      [
+        "y1",
+        "y2",
+        "z"
+      ]
+    ],
+    "law": "not-all-equal",
+    "fixed": {
+      "x1": 0,
+      "y1": 0,
+      "z": 1
+    },
+    "table rows": "x2 = 0, 1",
+    "table columns": "y2 = 0, 1",
+    "weights from one unit per old state": [
+      [
+        "1",
+        "1"
+      ],
+      [
+        "1",
+        "1/2"
+      ]
+    ],
+    "determinant": "-1/2"
+  }
+}

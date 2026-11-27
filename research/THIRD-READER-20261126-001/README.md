@@ -22,6 +22,9 @@ held ([preregistration](preregistration.md)).
 
 ## A. Readers whom no knot joins share nothing a list cannot give (an argument, checked)
 
+> *Narrowed by the factoring study's referees (26 November):* "knot" here means a **listed rule** of the structure;
+> a listed rule can fail the knot test in the whole, and readers joined only by such a rule are not covered.
+
 For any readers no two of which share a knot, everything else unread, the coherent counting state on their distinctions
 is diagonal in a product of local bases: an allowed change supported on the readers splits into one allowed change per
 reader (each knot meets at most one reader), so every certainty's change part is local, and each reader's parts of the

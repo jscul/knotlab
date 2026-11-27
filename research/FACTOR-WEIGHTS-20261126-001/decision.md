@@ -2,8 +2,25 @@
 
 Epic `FACTOR-WEIGHTS-20261126-001` (G18, at the coordinator's pick after `THIRD-READER-20261126-001`; register entry
 A304), closed 26 November 2026. Computed; the advisor consulted once before the freeze (it replaced my first check, an
-identity, with a test on readers no knot joins, and added the controls); referee pending. [The note](README.md) ·
+identity, with a test on readers no knot joins, and added the controls); refereed (R1, R2: refuted, below). [The note](README.md) ·
 [preregistration](preregistration.md) · [advisor's question](advisor_question.md) and [answer](advisor_answer.md)
+
+> **Refereed (R1, [report](referee-R1/report.md); R2, [report](referee-R2/report.md)): refuted, two Blocks.** **Block:**
+> both countings factor over the **listed rules** of a fixed history of value-blind growth, but not over **knots** in the
+> program's sense: a listed rule can fail the knot test in the whole structure (in 92 of 209 parity histories some do;
+> the smallest census case has five distinctions), and pairs no knot holds together can have rank-two tables (240 on two
+> sampled parity starts, which the pair screen skipped because a listed rule held them). **Block:** a recorded law does
+> make a weighting that does not factor even when every listed rule is a knot: the transfer law of the ring-to-end study
+> (`RING-TO-END-20261119-001`), whose newborns occupy fresh distinctions according to the value of another distinction
+> of the parent; from one three-place knot it reaches 13 states where its four knots' local patterns admit 32, and two
+> readers no listed knot meets show a table that is not a product. So "every weighting the model makes factors over
+> knots" is false, and the STOP inferred from it holds only for readers no listed rule joins under value-blind growth.
+> **Narrowings:** single-distinction rank tests can disprove factoring but not establish it; only 23 of the 31 fact sums
+> have a representative on one ring, and every ring pair shares a knot in the whole; the sampled square's 13 positive
+> starts depend on the listed-rule screen (0 under the knot screen); the forbidding arms lose old states in 5 of 21
+> not-all-equal histories, the renormalised weighting still factoring over listed rules. **Not a block:** the 4,303,444
+> tables were those with a positive entry (12,522,284 more were all zero); the repeated-name bug's false candidates; the
+> one failed control. Logged in `docs/CORRECTIONS.md`.
 
 ## What stands
 
@@ -24,7 +41,7 @@ identity, with a test on readers no knot joins, and added the controls); referee
 | Scope | Verdict | Why |
 | --- | --- | --- |
 | This attempt — a non-factoring weighting the model makes | **Status:** Successful (a negative with its check) | Every recorded weighting the model makes factors over knots |
-| Local direction — separated readers with nothing supplied | **STOP** (obstruction learned) | With factoring weightings, readers no knot joins share nothing a list cannot give |
+| Local direction — separated readers with nothing supplied | **STOP** for readers no listed rule joins under value-blind growth *(R1, R2: Block on the universal form)* | Reopened: a recorded value-dependent transfer law makes a weighting that does not factor, untested for tables |
 | Broader exploration — a growth law whose weighting does not factor | Unmapped | Dividing over several births at once would; no recorded law does |
 | Long-term goal — G18 Comparing growth laws | Obstruction learned | The quantum line rests on supplied pieces; the model's own weightings are classical for separated readers |
 

@@ -5,8 +5,25 @@ showed that readers whom no knot joins share nothing a list of values cannot giv
 product of one factor per knot. The one way out left is a weighting that does not factor. Here the record's own
 weightings are tested: the two countings (`TWO-COUNTINGS-20261125-001`) and a restriction to one value of a bound
 whole-held fact (the third-layer referee's three rings of four). Computed; the advisor consulted read-only in the
-repository ([question](advisor_question.md), [answer](advisor_answer.md)); referee pending.
+repository ([question](advisor_question.md), [answer](advisor_answer.md)); refereed (R1, R2: refuted, below).
 [Preregistration](preregistration.md), frozen before the runs, with one deviation recorded.
+
+> **Refereed (R1, [report](referee-R1/report.md); R2, [report](referee-R2/report.md)): refuted, two Blocks.** **Block:**
+> both countings factor over the **listed rules** of a fixed history of value-blind growth, but not over **knots** in the
+> program's sense: a listed rule can fail the knot test in the whole structure (in 92 of 209 parity histories some do;
+> the smallest census case has five distinctions), and pairs no knot holds together can have rank-two tables (240 on two
+> sampled parity starts, which the pair screen skipped because a listed rule held them). **Block:** a recorded law does
+> make a weighting that does not factor even when every listed rule is a knot: the transfer law of the ring-to-end study
+> (`RING-TO-END-20261119-001`), whose newborns occupy fresh distinctions according to the value of another distinction
+> of the parent; from one three-place knot it reaches 13 states where its four knots' local patterns admit 32, and two
+> readers no listed knot meets show a table that is not a product. So "every weighting the model makes factors over
+> knots" is false, and the STOP inferred from it holds only for readers no listed rule joins under value-blind growth.
+> **Narrowings:** single-distinction rank tests can disprove factoring but not establish it; only 23 of the 31 fact sums
+> have a representative on one ring, and every ring pair shares a knot in the whole; the sampled square's 13 positive
+> starts depend on the listed-rule screen (0 under the knot screen); the forbidding arms lose old states in 5 of 21
+> not-all-equal histories, the renormalised weighting still factoring over listed rules. **Not a block:** the 4,303,444
+> tables were those with a positive entry (12,522,284 more were all zero); the repeated-name bug's false candidates; the
+> one failed control. Logged in `docs/CORRECTIONS.md`.
 
 ## A. Both countings factor ([`countings.py`](countings.py), [output](countings_out.txt))
 

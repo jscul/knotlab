@@ -6335,4 +6335,6 @@ evidence: results and their status come from the records each entry links.
 - **Challenge.** Larger structures by sampling words instead of enumerating them; more rounds; the recent line's
   engine with waiting.
 - **History.**
+  - 2026-11-26 · Qualified by referees R1 and R2 (refuted): the countings factor over listed laws, not over knots in the
+    whole; a recorded value-reading transfer law makes a weighting that does not factor.
   - 2026-11-26 · Entered by `FACTOR-WEIGHTS-20261126-001`.

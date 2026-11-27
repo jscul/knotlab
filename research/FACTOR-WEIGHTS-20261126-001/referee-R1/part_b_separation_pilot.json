@@ -1,0 +1,359 @@
+{
+  "pilot": true,
+  "rounds": [
+    {
+      "round": 1,
+      "frozen_round": true,
+      "knots": 36,
+      "distinctions": 90,
+      "reader_pairs": [
+        {
+          "readers": [
+            0,
+            1
+          ],
+          "support": [
+            36,
+            37,
+            38,
+            39
+          ],
+          "two_connecting_rules": [
+            [
+              36,
+              37,
+              40,
+              41
+            ],
+            [
+              38,
+              39,
+              40,
+              41
+            ]
+          ],
+          "baseline_allowed": [
+            "0000",
+            "0011",
+            "0101",
+            "0110",
+            "1001",
+            "1010",
+            "1100",
+            "1111"
+          ],
+          "restriction_masks_preserving_projection_by_value": [
+            [
+              1,
+              7,
+              10
+            ],
+            [
+              1,
+              10
+            ]
+          ],
+          "restriction_masks_without_an_allowed_state_by_value": [
+            [],
+            [
+              7
+            ]
+          ],
+          "shared_connector_distinctions": [
+            40,
+            41
+          ],
+          "conditional_on_connector_values": [
+            {
+              "values": [
+                0,
+                0
+              ],
+              "allowed": [
+                "0000",
+                "0011",
+                "1100",
+                "1111"
+              ]
+            },
+            {
+              "values": [
+                0,
+                1
+              ],
+              "allowed": [
+                "0101",
+                "0110",
+                "1001",
+                "1010"
+              ]
+            },
+            {
+              "values": [
+                1,
+                0
+              ],
+              "allowed": [
+                "0101",
+                "0110",
+                "1001",
+                "1010"
+              ]
+            },
+            {
+              "values": [
+                1,
+                1
+              ],
+              "allowed": [
+                "0000",
+                "0011",
+                "1100",
+                "1111"
+              ]
+            }
+          ]
+        },
+        {
+          "readers": [
+            0,
+            2
+          ],
+          "support": [
+            42,
+            43,
+            44,
+            45
+          ],
+          "two_connecting_rules": [
+            [
+              42,
+              43,
+              46,
+              47
+            ],
+            [
+              44,
+              45,
+              46,
+              47
+            ]
+          ],
+          "baseline_allowed": [
+            "0000",
+            "0011",
+            "0101",
+            "0110",
+            "1001",
+            "1010",
+            "1100",
+            "1111"
+          ],
+          "restriction_masks_preserving_projection_by_value": [
+            [
+              1,
+              7,
+              10
+            ],
+            [
+              1,
+              10
+            ]
+          ],
+          "restriction_masks_without_an_allowed_state_by_value": [
+            [],
+            [
+              7
+            ]
+          ],
+          "shared_connector_distinctions": [
+            46,
+            47
+          ],
+          "conditional_on_connector_values": [
+            {
+              "values": [
+                0,
+                0
+              ],
+              "allowed": [
+                "0000",
+                "0011",
+                "1100",
+                "1111"
+              ]
+            },
+            {
+              "values": [
+                0,
+                1
+              ],
+              "allowed": [
+                "0101",
+                "0110",
+                "1001",
+                "1010"
+              ]
+            },
+            {
+              "values": [
+                1,
+                0
+              ],
+              "allowed": [
+                "0101",
+                "0110",
+                "1001",
+                "1010"
+              ]
+            },
+            {
+              "values": [
+                1,
+                1
+              ],
+              "allowed": [
+                "0000",
+                "0011",
+                "1100",
+                "1111"
+              ]
+            }
+          ]
+        },
+        {
+          "readers": [
+            1,
+            2
+          ],
+          "support": [
+            48,
+            49,
+            50,
+            51
+          ],
+          "two_connecting_rules": [
+            [
+              48,
+              49,
+              52,
+              53
+            ],
+            [
+              50,
+              51,
+              52,
+              53
+            ]
+          ],
+          "baseline_allowed": [
+            "0000",
+            "0011",
+            "0101",
+            "0110",
+            "1001",
+            "1010",
+            "1100",
+            "1111"
+          ],
+          "restriction_masks_preserving_projection_by_value": [
+            [
+              1,
+              7,
+              10
+            ],
+            [
+              1,
+              10
+            ]
+          ],
+          "restriction_masks_without_an_allowed_state_by_value": [
+            [],
+            [
+              7
+            ]
+          ],
+          "shared_connector_distinctions": [
+            52,
+            53
+          ],
+          "conditional_on_connector_values": [
+            {
+              "values": [
+                0,
+                0
+              ],
+              "allowed": [
+                "0000",
+                "0011",
+                "1100",
+                "1111"
+              ]
+            },
+            {
+              "values": [
+                0,
+                1
+              ],
+              "allowed": [
+                "0101",
+                "0110",
+                "1001",
+                "1010"
+              ]
+            },
+            {
+              "values": [
+                1,
+                0
+              ],
+              "allowed": [
+                "0101",
+                "0110",
+                "1001",
+                "1010"
+              ]
+            },
+            {
+              "values": [
+                1,
+                1
+              ],
+              "allowed": [
+                "0000",
+                "0011",
+                "1100",
+                "1111"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "case_projections": 21,
+  "canonical_command": {
+    "linked_projection": {
+      "binding": true,
+      "loss_on_erasure": true,
+      "coexistence": true,
+      "is_knot": true
+    },
+    "conditioned_on_zero_connector_values": {
+      "binding": true,
+      "loss_on_erasure": false,
+      "coexistence": true,
+      "is_knot": false
+    },
+    "unjoined_start_projection": {
+      "binding": false,
+      "loss_on_erasure": true,
+      "coexistence": true,
+      "is_knot": false
+    }
+  },
+  "elapsed_seconds": 0.10467418299231213,
+  "peak_rss_kib": 15320,
+  "peak_checker_rss_kib": 15656,
+  "address_space_limit_bytes_per_process": 2684354560
+}

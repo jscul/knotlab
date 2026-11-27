@@ -1,0 +1,154 @@
+{
+  "census_index_zero_based": 21,
+  "arm": "ordinary",
+  "law": "even parity",
+  "rounds": 1,
+  "listed_rule_counts_in_order": [
+    3,
+    4
+  ],
+  "distinctions_in_order": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "listed_rules_in_birth_order": [
+    [
+      0,
+      1,
+      4
+    ],
+    [
+      0,
+      2,
+      3
+    ],
+    [
+      1,
+      2,
+      3
+    ],
+    [
+      4
+    ]
+  ],
+  "allowed_states": 4,
+  "scopes_checked_including_unlisted": 31,
+  "listed_knots": [
+    [
+      0,
+      2,
+      3
+    ],
+    [
+      1,
+      2,
+      3
+    ]
+  ],
+  "all_knots": [
+    [
+      0,
+      2,
+      3
+    ],
+    [
+      1,
+      2,
+      3
+    ]
+  ],
+  "counting_from_start": {
+    "stages": [
+      {
+        "allowed_states": 4
+      },
+      {
+        "allowed_states": 4,
+        "old_state_counts_by_number_of_completions": {
+          "1": 4
+        }
+      }
+    ],
+    "total_before_renormalizing": "1",
+    "weights_per_state_after_renormalizing": {
+      "1/4": 4
+    },
+    "start_counting_is_uniform_after_renormalizing": true
+  },
+  "all_start_rules_pass": false,
+  "fixed_distinctions": [
+    4
+  ],
+  "two_variable_parity_equations": [
+    [
+      0,
+      1
+    ]
+  ],
+  "canonical_failing_listed_scope": [
+    0,
+    1,
+    4
+  ],
+  "canonical_result": {
+    "arguments": [
+      "-B",
+      "-m",
+      "knotlab",
+      "check",
+      "--cnf",
+      "d0 d1 -d4; d0 -d1 d4; -d0 d1 d4; -d0 -d1 -d4; d0 d2 -d3; d0 -d2 d3; -d0 d2 d3; -d0 -d2 -d3; d1 d2 -d3; d1 -d2 d3; -d1 d2 d3; -d1 -d2 -d3; -d4",
+      "--loops",
+      "d0",
+      "d1",
+      "--contact",
+      "d4",
+      "--witnesses",
+      "d2",
+      "d3",
+      "--json"
+    ],
+    "binding": true,
+    "loss_on_erasure": false,
+    "coexistence": true,
+    "is_knot": false,
+    "allowed": [
+      "000",
+      "110"
+    ]
+  },
+  "raw_rules_product": {
+    "states_in_join_of_projections": 4,
+    "forbidden_in_join": 0,
+    "forbidden_example": null,
+    "allowed_extensions_of_its_local_patterns": null,
+    "pair_table_failures": 0,
+    "first_pair_failure": null
+  },
+  "listed_knots_product": {
+    "states_in_join_of_projections": 8,
+    "forbidden_in_join": 4,
+    "forbidden_example": "00001",
+    "allowed_extensions_of_its_local_patterns": [
+      "00000",
+      "00000"
+    ],
+    "pair_table_failures": 0,
+    "first_pair_failure": null
+  },
+  "all_knots_product": {
+    "states_in_join_of_projections": 8,
+    "forbidden_in_join": 4,
+    "forbidden_example": "00001",
+    "allowed_extensions_of_its_local_patterns": [
+      "00000",
+      "00000"
+    ],
+    "pair_table_failures": 0,
+    "first_pair_failure": null
+  },
+  "elapsed_seconds_excluding_import_and_census_load": 0.036368
+}

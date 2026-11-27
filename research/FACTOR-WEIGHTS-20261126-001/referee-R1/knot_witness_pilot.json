@@ -1,0 +1,191 @@
+{
+  "census_index": 3480,
+  "position_in_sample": 2,
+  "statuses": [
+    "funded",
+    "closed"
+  ],
+  "stages": [
+    [
+      [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      [
+        0,
+        5,
+        6,
+        7,
+        8
+      ],
+      [
+        1,
+        2,
+        5,
+        6,
+        9,
+        10
+      ],
+      [
+        3,
+        4,
+        7,
+        8
+      ],
+      [
+        9,
+        10,
+        11
+      ]
+    ],
+    [
+      [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      [
+        0,
+        5,
+        6,
+        7,
+        8
+      ],
+      [
+        1,
+        2,
+        5,
+        6,
+        9,
+        10
+      ],
+      [
+        3,
+        4,
+        7,
+        8
+      ],
+      [
+        9,
+        10,
+        11
+      ],
+      [
+        11
+      ]
+    ]
+  ],
+  "start_states": 128,
+  "final_states": 128,
+  "distinct_remainders": 64,
+  "per_start_completions": [
+    1
+  ],
+  "both_countings_given_other_values_zero_unnormalised_slice": [
+    "1/128",
+    "0",
+    "0",
+    "1/128"
+  ],
+  "subsets_tested": 220,
+  "knots_on_named_distinctions": [],
+  "listed_rules_holding_pair": [
+    {
+      "scope": [
+        1,
+        2,
+        5,
+        6,
+        9,
+        10
+      ],
+      "binding": true,
+      "loss_on_erasure": false,
+      "coexistence": true,
+      "is_knot": false
+    }
+  ],
+  "initially_valid_example": {
+    "census_index": 30,
+    "position_in_sample": 235,
+    "start": [
+      [
+        0,
+        1,
+        4,
+        5
+      ],
+      [
+        0,
+        2,
+        3,
+        6
+      ],
+      [
+        1,
+        2,
+        3,
+        7
+      ]
+    ],
+    "starting_checks": [
+      {
+        "binding": true,
+        "loss_on_erasure": true,
+        "coexistence": true,
+        "is_knot": true
+      }
+    ],
+    "first_round": [
+      [
+        0,
+        1,
+        4,
+        5
+      ],
+      [
+        0,
+        2,
+        3,
+        6
+      ],
+      [
+        1,
+        2,
+        3,
+        7
+      ],
+      [
+        4,
+        6,
+        7
+      ],
+      [
+        5,
+        9,
+        10
+      ]
+    ],
+    "old_allowed": 32,
+    "new_allowed": 32,
+    "distinct_remainders": 16,
+    "rule_containing_9_and_10": [
+      5,
+      9,
+      10
+    ],
+    "rule_check": {
+      "binding": true,
+      "loss_on_erasure": false,
+      "coexistence": true,
+      "is_knot": false
+    }
+  },
+  "seconds": 0.1313,
+  "peak_rss_kib": 45804
+}

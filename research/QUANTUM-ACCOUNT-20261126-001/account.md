@@ -17,9 +17,12 @@ two-valued choice, a **knot** a law on several distinctions, a **reader** someon
   two distinctions each round; facts of three rings are bound by parity rules, one of them made by a birth.
   ([study](../THIRD-LAYER-20261126-001/README.md))
 - **Allowed changes**, sets of distinctions whose flip keeps every law, as objects of the structure.
-- **Weightings that are built knot by knot.** Counting every finished state once, and counting from a random start that
-  then grows, are both products of one factor per knot (no exception in 4.3 million tests). So readers whom no knot joins
-  share nothing a list cannot give. ([study](../FACTOR-WEIGHTS-20261126-001/README.md),
+- **Weightings built law by law.** Counting every finished state once, and counting from a random start that then grows,
+  are both products of one factor per listed law of the structure, under growth that reads no values. So readers whom no
+  listed law joins share nothing a list cannot give. Two referees found the limits: a listed law can fail the knot test in
+  the whole structure, so the factors are not always knots; and a recorded rival law that reads values as it grows (a
+  newborn takes fresh distinctions according to another value of its parent) makes a weighting that does not factor at
+  all, which no table has yet been tested on. ([study](../FACTOR-WEIGHTS-20261126-001/README.md),
   [argument](../THIRD-READER-20261126-001/README.md))
 
 ## What each table above the classical limit needed
@@ -38,9 +41,10 @@ two-valued choice, a **knot** a law on several distinctions, a **reader** someon
    are one piece: reading a change compares two allowed states, the relation between them is what the counts do not
    give, and the sign is its phase. The quarter-turn read and the questions that read a change with a value are the
    reads that use it.
-2. **Something that ties readers no knot joins.** A middle reader whose record sorts the table, and a weighting not
-   built knot by knot, are one piece: the counts the model makes factor over knots, so separated readers share only
-   what passes through a joined reader or a weighting that does not factor.
+2. **Something that ties readers no law joins.** A middle reader whose record sorts the table, and a weighting not
+   built law by law, are one piece: the counts of value-blind growth factor over its listed laws, so separated readers
+   share only what passes through a joined reader or a weighting that does not factor. The one recorded law that makes
+   such a weighting reads values as it grows.
 
 ## The fold link, exactly
 
@@ -65,8 +69,9 @@ commute the sign does not depend on the order. ([study](../NO-WHOLE-STATE-202611
 |---|---|---|---|
 | An odd closing law | a rule for which values commute, fixed at each birth, that keeps a state on every grown structure | 3/3 | 1/3: the rule read off the finished structure leaves no state on 290 of 300 sampled starts |
 | A relation between two allowed states | a birth whose law compares two allowed states of its parents | 3/3 | 1/3: no birth's law does so now, and no candidate exists |
-| A weighting not built knot by knot | dividing weight over several births at once instead of birth by birth | 2/3 | 2/3: the rule exists as a control and fails to factor; untested for separated readers |
+| A weighting not built law by law | a growth law that reads values as it grows (one is recorded, the ring-to-end study's transfer law), or one that divides weight over several births at once | 2/3 | 2/3: both exist and fail to factor; untested for tables above the classical limit |
 | A middle reader whose record sorts | none needed in the law: a joined reader already exists; what is supplied is using its record | 1/3 | 3/3 |
 
 The first two are the same piece and would give the quantum part a native source; neither has a candidate. The third
-is the only concrete one, and it would give a weighting, not yet a sign.
+is the only concrete one, and it would give a weighting, not yet a sign: a weighting of values alone, however it is
+tied, still has a list (the word itself), so it matters only together with the first piece.

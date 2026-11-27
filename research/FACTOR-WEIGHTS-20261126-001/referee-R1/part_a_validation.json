@@ -1,0 +1,77 @@
+{
+  "source replay pilot": {
+    "counts": {
+      "source round attempts": 309,
+      "growth paths matched": 216,
+      "funded rounds matched": 242,
+      "parity canonical knot sets confirmed by row-space enumeration": 28
+    },
+    "actual waiting histories": {
+      "parity / ordinary": {},
+      "parity / one_fewer": {},
+      "parity / arity_floor": {},
+      "nae / ordinary": {},
+      "nae / one_fewer": {},
+      "nae / arity_floor": {},
+      "parity / CAP-3": {},
+      "nae / CAP-3": {},
+      "nae / REC-ONE-FEWER": {}
+    },
+    "seconds": 0.2283941200003028
+  },
+  "source replay full estimate seconds": 2.854926500003785,
+  "source replay full": {
+    "counts": {
+      "source round attempts": 3629,
+      "growth paths matched": 2700,
+      "funded rounds matched": 2780,
+      "parity canonical knot sets confirmed by row-space enumeration": 278
+    },
+    "actual waiting histories": {
+      "parity / ordinary": {},
+      "parity / one_fewer": {},
+      "parity / arity_floor": {},
+      "nae / ordinary": {},
+      "nae / one_fewer": {},
+      "nae / arity_floor": {},
+      "parity / CAP-3": {},
+      "nae / CAP-3": {},
+      "nae / REC-ONE-FEWER": {
+        "actual waiting histories with retained weight 1": 3
+      }
+    },
+    "seconds": 4.133963501997641
+  },
+  "matching listed-rule archive rows": 6,
+  "independent direct-projection control populations": 24,
+  "census index 3480 whole-structure rule on 9, 10, 11": {
+    "allowed": [
+      "000",
+      "110"
+    ],
+    "binding": true,
+    "coexistence": true,
+    "contact": "d11",
+    "erasure": "forgetting",
+    "invisible_in_parts": false,
+    "is_knot": false,
+    "loops": [
+      "d9",
+      "d10"
+    ],
+    "loss_on_erasure": false,
+    "minimum_width": 2,
+    "notes": [
+      "with d9 forgotten, d10=0, d11=1 is still excluded, so a binding survives without that loop",
+      "with d10 forgotten, d9=0, d11=1 is still excluded, so a binding survives without that loop",
+      "with the contact d11 forgotten, d9=0, d10=1 is still excluded, so the loops are tied without it"
+    ],
+    "pairwise_definable": true,
+    "variables": [
+      "d9",
+      "d10",
+      "d11"
+    ]
+  },
+  "peak resident KiB": 65868
+}

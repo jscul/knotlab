@@ -1,0 +1,265 @@
+{
+  "start limit": 30,
+  "full sample size": 300,
+  "seed": 20261129,
+  "census": "research/FORBID-EDITS-20261126-001/starts.json",
+  "census size": 7075,
+  "census sha256": "ba937f95092234f8e1d8a08c20e86996a3aa58d187f137629b2c55d7e0553d6e",
+  "weighting": "uniform over census entries drawn without replacement",
+  "growth": "parity, at most two funded rounds under each arm",
+  "controls": [
+    {
+      "expected e with middle read for changes": 0,
+      "allowed states": 256,
+      "distinct joint projections": 256,
+      "product of separate projection counts": 256,
+      "e with middle unread": 0
+    },
+    {
+      "expected e with middle read for changes": 1,
+      "allowed states": 8,
+      "distinct joint projections": 8,
+      "product of separate projection counts": 16,
+      "e with middle unread": 0
+    },
+    {
+      "expected e with middle read for changes": 2,
+      "allowed states": 64,
+      "distinct joint projections": 64,
+      "product of separate projection counts": 256,
+      "e with middle unread": 0
+    }
+  ],
+  "source comparisons": [
+    {
+      "record": "square_sample.jsonl.gz",
+      "sha256": "03e26911f31041b29d22d7debb129c86a9c7cfb1e3141660f0b590da1a7c92b2",
+      "matched rows": 90,
+      "compared rows": 90,
+      "mismatches": []
+    },
+    {
+      "record": "square_sample_frozen.jsonl.gz",
+      "sha256": "0c6ec04c858bd4585aa7958922096530a1549efb0118948fc6c7df3bb29588c7",
+      "matched rows": 90,
+      "compared rows": 90,
+      "mismatches": []
+    }
+  ],
+  "pilot projections": [],
+  "corrected totals": {
+    "ordinary": {
+      "starts": 30,
+      "reader choices": 444,
+      "starts with separated readers": 4,
+      "separated reader choices": 4,
+      "starts with e >= 1 after middle changes": 0,
+      "starts with e >= 2 after middle changes": 0,
+      "reader choices with e >= 1 after middle changes": 0,
+      "reader choices with e >= 2 after middle changes": 0,
+      "starts with e >= 1 when middle unread": 0,
+      "completed rounds": {
+        "0": 8,
+        "1": 1,
+        "2": 21
+      }
+    },
+    "one_fewer": {
+      "starts": 30,
+      "reader choices": 444,
+      "starts with separated readers": 4,
+      "separated reader choices": 4,
+      "starts with e >= 1 after middle changes": 0,
+      "starts with e >= 2 after middle changes": 0,
+      "reader choices with e >= 1 after middle changes": 0,
+      "reader choices with e >= 2 after middle changes": 0,
+      "starts with e >= 1 when middle unread": 0,
+      "completed rounds": {
+        "0": 8,
+        "1": 7,
+        "2": 15
+      }
+    },
+    "arity_floor": {
+      "starts": 30,
+      "reader choices": 444,
+      "starts with separated readers": 4,
+      "separated reader choices": 4,
+      "starts with e >= 1 after middle changes": 0,
+      "starts with e >= 2 after middle changes": 0,
+      "reader choices with e >= 1 after middle changes": 0,
+      "reader choices with e >= 2 after middle changes": 0,
+      "starts with e >= 1 when middle unread": 0,
+      "completed rounds": {
+        "0": 8,
+        "1": 6,
+        "2": 16
+      }
+    }
+  },
+  "frozen totals": {
+    "ordinary": {
+      "starts": 30,
+      "reader choices": 444,
+      "starts with separated readers": 4,
+      "separated reader choices": 4,
+      "starts with e >= 1 after middle changes": 0,
+      "starts with e >= 2 after middle changes": 0,
+      "reader choices with e >= 1 after middle changes": 0,
+      "reader choices with e >= 2 after middle changes": 0,
+      "starts with e >= 1 when middle unread": 0,
+      "completed rounds": {
+        "0": 8,
+        "1": 1,
+        "2": 21
+      },
+      "unread false-positive census indices": []
+    },
+    "one_fewer": {
+      "starts": 30,
+      "reader choices": 444,
+      "starts with separated readers": 4,
+      "separated reader choices": 4,
+      "starts with e >= 1 after middle changes": 0,
+      "starts with e >= 2 after middle changes": 0,
+      "reader choices with e >= 1 after middle changes": 0,
+      "reader choices with e >= 2 after middle changes": 0,
+      "starts with e >= 1 when middle unread": 0,
+      "completed rounds": {
+        "0": 8,
+        "1": 7,
+        "2": 15
+      },
+      "unread false-positive census indices": []
+    },
+    "arity_floor": {
+      "starts": 30,
+      "reader choices": 444,
+      "starts with separated readers": 4,
+      "separated reader choices": 4,
+      "starts with e >= 1 after middle changes": 0,
+      "starts with e >= 2 after middle changes": 0,
+      "reader choices with e >= 1 after middle changes": 0,
+      "reader choices with e >= 2 after middle changes": 0,
+      "starts with e >= 1 when middle unread": 0,
+      "completed rounds": {
+        "0": 8,
+        "1": 6,
+        "2": 16
+      },
+      "unread false-positive census indices": []
+    }
+  },
+  "repeated-name effects on separated reader choices": {
+    "ordinary": {
+      "repeated separated choices of the same reader sets": 0
+    },
+    "one_fewer": {
+      "repeated separated choices of the same reader sets": 0
+    },
+    "arity_floor": {
+      "repeated separated choices of the same reader sets": 0
+    }
+  },
+  "first changed-pair witness per arm": [],
+  "run": {
+    "wall seconds": 0.023031128992442973,
+    "CPU seconds": 0.023031558,
+    "peak resident KiB": 26572,
+    "virtual memory cap KiB": 2621440,
+    "worker processes": 1,
+    "calculation threads per worker": 1
+  },
+  "rows": [
+    {"corrected": {"start": 5, "arm": "ordinary", "rounds": 2, "pairs": 6, "knots": 13, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}, "frozen": {"start": 5, "arm": "ordinary", "rounds": 2, "pairs": 6, "knots": 13, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}},
+    {"corrected": {"start": 5, "arm": "one_fewer", "rounds": 1, "pairs": 6, "knots": 7, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}, "frozen": {"start": 5, "arm": "one_fewer", "rounds": 1, "pairs": 6, "knots": 7, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}},
+    {"corrected": {"start": 5, "arm": "arity_floor", "rounds": 1, "pairs": 6, "knots": 7, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}, "frozen": {"start": 5, "arm": "arity_floor", "rounds": 1, "pairs": 6, "knots": 7, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}},
+    {"corrected": {"start": 23, "arm": "ordinary", "rounds": 2, "pairs": 6, "knots": 7, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}, "frozen": {"start": 23, "arm": "ordinary", "rounds": 2, "pairs": 6, "knots": 7, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}},
+    {"corrected": {"start": 23, "arm": "one_fewer", "rounds": 2, "pairs": 6, "knots": 7, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}, "frozen": {"start": 23, "arm": "one_fewer", "rounds": 2, "pairs": 6, "knots": 7, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}},
+    {"corrected": {"start": 23, "arm": "arity_floor", "rounds": 2, "pairs": 6, "knots": 7, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}, "frozen": {"start": 23, "arm": "arity_floor", "rounds": 2, "pairs": 6, "knots": 7, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}},
+    {"corrected": {"start": 30, "arm": "ordinary", "rounds": 2, "pairs": 6, "knots": 7, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}, "frozen": {"start": 30, "arm": "ordinary", "rounds": 2, "pairs": 6, "knots": 7, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}},
+    {"corrected": {"start": 30, "arm": "one_fewer", "rounds": 2, "pairs": 6, "knots": 7, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}, "frozen": {"start": 30, "arm": "one_fewer", "rounds": 2, "pairs": 6, "knots": 7, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}},
+    {"corrected": {"start": 30, "arm": "arity_floor", "rounds": 2, "pairs": 6, "knots": 7, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}, "frozen": {"start": 30, "arm": "arity_floor", "rounds": 2, "pairs": 6, "knots": 7, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}},
+    {"corrected": {"start": 38, "arm": "ordinary", "rounds": 2, "pairs": 6, "knots": 7, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}, "frozen": {"start": 38, "arm": "ordinary", "rounds": 2, "pairs": 6, "knots": 7, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}},
+    {"corrected": {"start": 38, "arm": "one_fewer", "rounds": 2, "pairs": 6, "knots": 7, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}, "frozen": {"start": 38, "arm": "one_fewer", "rounds": 2, "pairs": 6, "knots": 7, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}},
+    {"corrected": {"start": 38, "arm": "arity_floor", "rounds": 2, "pairs": 6, "knots": 7, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}, "frozen": {"start": 38, "arm": "arity_floor", "rounds": 2, "pairs": 6, "knots": 7, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}},
+    {"corrected": {"start": 48, "arm": "ordinary", "rounds": 2, "pairs": 6, "knots": 10, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}, "frozen": {"start": 48, "arm": "ordinary", "rounds": 2, "pairs": 6, "knots": 10, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}},
+    {"corrected": {"start": 48, "arm": "one_fewer", "rounds": 1, "pairs": 6, "knots": 6, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}, "frozen": {"start": 48, "arm": "one_fewer", "rounds": 1, "pairs": 6, "knots": 6, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}},
+    {"corrected": {"start": 48, "arm": "arity_floor", "rounds": 1, "pairs": 6, "knots": 6, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}, "frozen": {"start": 48, "arm": "arity_floor", "rounds": 1, "pairs": 6, "knots": 6, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}},
+    {"corrected": {"start": 50, "arm": "ordinary", "rounds": 2, "pairs": 6, "knots": 13, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}, "frozen": {"start": 50, "arm": "ordinary", "rounds": 2, "pairs": 6, "knots": 13, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}},
+    {"corrected": {"start": 50, "arm": "one_fewer", "rounds": 1, "pairs": 6, "knots": 7, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}, "frozen": {"start": 50, "arm": "one_fewer", "rounds": 1, "pairs": 6, "knots": 7, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}},
+    {"corrected": {"start": 50, "arm": "arity_floor", "rounds": 2, "pairs": 6, "knots": 13, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}, "frozen": {"start": 50, "arm": "arity_floor", "rounds": 2, "pairs": 6, "knots": 13, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}},
+    {"corrected": {"start": 54, "arm": "ordinary", "rounds": 1, "pairs": 6, "knots": 4, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}, "frozen": {"start": 54, "arm": "ordinary", "rounds": 1, "pairs": 6, "knots": 4, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}},
+    {"corrected": {"start": 54, "arm": "one_fewer", "rounds": 1, "pairs": 6, "knots": 4, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}, "frozen": {"start": 54, "arm": "one_fewer", "rounds": 1, "pairs": 6, "knots": 4, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}},
+    {"corrected": {"start": 54, "arm": "arity_floor", "rounds": 1, "pairs": 6, "knots": 4, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}, "frozen": {"start": 54, "arm": "arity_floor", "rounds": 1, "pairs": 6, "knots": 4, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}},
+    {"corrected": {"start": 56, "arm": "ordinary", "rounds": 2, "pairs": 6, "knots": 10, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}, "frozen": {"start": 56, "arm": "ordinary", "rounds": 2, "pairs": 6, "knots": 10, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}},
+    {"corrected": {"start": 56, "arm": "one_fewer", "rounds": 1, "pairs": 6, "knots": 6, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}, "frozen": {"start": 56, "arm": "one_fewer", "rounds": 1, "pairs": 6, "knots": 6, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}},
+    {"corrected": {"start": 56, "arm": "arity_floor", "rounds": 1, "pairs": 6, "knots": 6, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}, "frozen": {"start": 56, "arm": "arity_floor", "rounds": 1, "pairs": 6, "knots": 6, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}},
+    {"corrected": {"start": 99, "arm": "ordinary", "rounds": 2, "pairs": 18, "knots": 15, "separated pairs": 1, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}, "frozen": {"start": 99, "arm": "ordinary", "rounds": 2, "pairs": 18, "knots": 15, "separated pairs": 1, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}},
+    {"corrected": {"start": 99, "arm": "one_fewer", "rounds": 1, "pairs": 18, "knots": 9, "separated pairs": 1, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}, "frozen": {"start": 99, "arm": "one_fewer", "rounds": 1, "pairs": 18, "knots": 9, "separated pairs": 1, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}},
+    {"corrected": {"start": 99, "arm": "arity_floor", "rounds": 1, "pairs": 18, "knots": 9, "separated pairs": 1, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}, "frozen": {"start": 99, "arm": "arity_floor", "rounds": 1, "pairs": 18, "knots": 9, "separated pairs": 1, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}},
+    {"corrected": {"start": 131, "arm": "ordinary", "rounds": 2, "pairs": 18, "knots": 13, "separated pairs": 1, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}, "frozen": {"start": 131, "arm": "ordinary", "rounds": 2, "pairs": 18, "knots": 13, "separated pairs": 1, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}},
+    {"corrected": {"start": 131, "arm": "one_fewer", "rounds": 2, "pairs": 18, "knots": 13, "separated pairs": 1, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}, "frozen": {"start": 131, "arm": "one_fewer", "rounds": 2, "pairs": 18, "knots": 13, "separated pairs": 1, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}},
+    {"corrected": {"start": 131, "arm": "arity_floor", "rounds": 2, "pairs": 18, "knots": 13, "separated pairs": 1, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}, "frozen": {"start": 131, "arm": "arity_floor", "rounds": 2, "pairs": 18, "knots": 13, "separated pairs": 1, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}},
+    {"corrected": {"start": 136, "arm": "ordinary", "rounds": 2, "pairs": 18, "knots": 10, "separated pairs": 1, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}, "frozen": {"start": 136, "arm": "ordinary", "rounds": 2, "pairs": 18, "knots": 10, "separated pairs": 1, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}},
+    {"corrected": {"start": 136, "arm": "one_fewer", "rounds": 2, "pairs": 18, "knots": 10, "separated pairs": 1, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}, "frozen": {"start": 136, "arm": "one_fewer", "rounds": 2, "pairs": 18, "knots": 10, "separated pairs": 1, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}},
+    {"corrected": {"start": 136, "arm": "arity_floor", "rounds": 2, "pairs": 18, "knots": 10, "separated pairs": 1, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}, "frozen": {"start": 136, "arm": "arity_floor", "rounds": 2, "pairs": 18, "knots": 10, "separated pairs": 1, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}},
+    {"corrected": {"start": 153, "arm": "ordinary", "rounds": 2, "pairs": 18, "knots": 13, "separated pairs": 1, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}, "frozen": {"start": 153, "arm": "ordinary", "rounds": 2, "pairs": 18, "knots": 13, "separated pairs": 1, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}},
+    {"corrected": {"start": 153, "arm": "one_fewer", "rounds": 2, "pairs": 18, "knots": 13, "separated pairs": 1, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}, "frozen": {"start": 153, "arm": "one_fewer", "rounds": 2, "pairs": 18, "knots": 13, "separated pairs": 1, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}},
+    {"corrected": {"start": 153, "arm": "arity_floor", "rounds": 2, "pairs": 18, "knots": 13, "separated pairs": 1, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}, "frozen": {"start": 153, "arm": "arity_floor", "rounds": 2, "pairs": 18, "knots": 13, "separated pairs": 1, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}},
+    {"corrected": {"start": 187, "arm": "ordinary", "rounds": 0, "pairs": 18, "knots": 4, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}, "frozen": {"start": 187, "arm": "ordinary", "rounds": 0, "pairs": 18, "knots": 4, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}},
+    {"corrected": {"start": 187, "arm": "one_fewer", "rounds": 0, "pairs": 18, "knots": 4, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}, "frozen": {"start": 187, "arm": "one_fewer", "rounds": 0, "pairs": 18, "knots": 4, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}},
+    {"corrected": {"start": 187, "arm": "arity_floor", "rounds": 0, "pairs": 18, "knots": 4, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}, "frozen": {"start": 187, "arm": "arity_floor", "rounds": 0, "pairs": 18, "knots": 4, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}},
+    {"corrected": {"start": 191, "arm": "ordinary", "rounds": 0, "pairs": 18, "knots": 4, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}, "frozen": {"start": 191, "arm": "ordinary", "rounds": 0, "pairs": 18, "knots": 4, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}},
+    {"corrected": {"start": 191, "arm": "one_fewer", "rounds": 0, "pairs": 18, "knots": 4, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}, "frozen": {"start": 191, "arm": "one_fewer", "rounds": 0, "pairs": 18, "knots": 4, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}},
+    {"corrected": {"start": 191, "arm": "arity_floor", "rounds": 0, "pairs": 18, "knots": 4, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}, "frozen": {"start": 191, "arm": "arity_floor", "rounds": 0, "pairs": 18, "knots": 4, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}},
+    {"corrected": {"start": 193, "arm": "ordinary", "rounds": 0, "pairs": 18, "knots": 4, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}, "frozen": {"start": 193, "arm": "ordinary", "rounds": 0, "pairs": 18, "knots": 4, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}},
+    {"corrected": {"start": 193, "arm": "one_fewer", "rounds": 0, "pairs": 18, "knots": 4, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}, "frozen": {"start": 193, "arm": "one_fewer", "rounds": 0, "pairs": 18, "knots": 4, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}},
+    {"corrected": {"start": 193, "arm": "arity_floor", "rounds": 0, "pairs": 18, "knots": 4, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}, "frozen": {"start": 193, "arm": "arity_floor", "rounds": 0, "pairs": 18, "knots": 4, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}},
+    {"corrected": {"start": 207, "arm": "ordinary", "rounds": 2, "pairs": 18, "knots": 9, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}, "frozen": {"start": 207, "arm": "ordinary", "rounds": 2, "pairs": 18, "knots": 9, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}},
+    {"corrected": {"start": 207, "arm": "one_fewer", "rounds": 2, "pairs": 18, "knots": 9, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}, "frozen": {"start": 207, "arm": "one_fewer", "rounds": 2, "pairs": 18, "knots": 9, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}},
+    {"corrected": {"start": 207, "arm": "arity_floor", "rounds": 2, "pairs": 18, "knots": 9, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}, "frozen": {"start": 207, "arm": "arity_floor", "rounds": 2, "pairs": 18, "knots": 9, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}},
+    {"corrected": {"start": 218, "arm": "ordinary", "rounds": 2, "pairs": 18, "knots": 10, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}, "frozen": {"start": 218, "arm": "ordinary", "rounds": 2, "pairs": 18, "knots": 10, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}},
+    {"corrected": {"start": 218, "arm": "one_fewer", "rounds": 2, "pairs": 18, "knots": 10, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}, "frozen": {"start": 218, "arm": "one_fewer", "rounds": 2, "pairs": 18, "knots": 10, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}},
+    {"corrected": {"start": 218, "arm": "arity_floor", "rounds": 2, "pairs": 18, "knots": 10, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}, "frozen": {"start": 218, "arm": "arity_floor", "rounds": 2, "pairs": 18, "knots": 10, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}},
+    {"corrected": {"start": 228, "arm": "ordinary", "rounds": 0, "pairs": 18, "knots": 4, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}, "frozen": {"start": 228, "arm": "ordinary", "rounds": 0, "pairs": 18, "knots": 4, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}},
+    {"corrected": {"start": 228, "arm": "one_fewer", "rounds": 0, "pairs": 18, "knots": 4, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}, "frozen": {"start": 228, "arm": "one_fewer", "rounds": 0, "pairs": 18, "knots": 4, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}},
+    {"corrected": {"start": 228, "arm": "arity_floor", "rounds": 0, "pairs": 18, "knots": 4, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}, "frozen": {"start": 228, "arm": "arity_floor", "rounds": 0, "pairs": 18, "knots": 4, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}},
+    {"corrected": {"start": 293, "arm": "ordinary", "rounds": 0, "pairs": 18, "knots": 4, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}, "frozen": {"start": 293, "arm": "ordinary", "rounds": 0, "pairs": 18, "knots": 4, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}},
+    {"corrected": {"start": 293, "arm": "one_fewer", "rounds": 0, "pairs": 18, "knots": 4, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}, "frozen": {"start": 293, "arm": "one_fewer", "rounds": 0, "pairs": 18, "knots": 4, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}},
+    {"corrected": {"start": 293, "arm": "arity_floor", "rounds": 0, "pairs": 18, "knots": 4, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}, "frozen": {"start": 293, "arm": "arity_floor", "rounds": 0, "pairs": 18, "knots": 4, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}},
+    {"corrected": {"start": 298, "arm": "ordinary", "rounds": 0, "pairs": 18, "knots": 4, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}, "frozen": {"start": 298, "arm": "ordinary", "rounds": 0, "pairs": 18, "knots": 4, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}},
+    {"corrected": {"start": 298, "arm": "one_fewer", "rounds": 0, "pairs": 18, "knots": 4, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}, "frozen": {"start": 298, "arm": "one_fewer", "rounds": 0, "pairs": 18, "knots": 4, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}},
+    {"corrected": {"start": 298, "arm": "arity_floor", "rounds": 0, "pairs": 18, "knots": 4, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}, "frozen": {"start": 298, "arm": "arity_floor", "rounds": 0, "pairs": 18, "knots": 4, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}},
+    {"corrected": {"start": 307, "arm": "ordinary", "rounds": 2, "pairs": 18, "knots": 13, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}, "frozen": {"start": 307, "arm": "ordinary", "rounds": 2, "pairs": 18, "knots": 13, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}},
+    {"corrected": {"start": 307, "arm": "one_fewer", "rounds": 1, "pairs": 18, "knots": 8, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}, "frozen": {"start": 307, "arm": "one_fewer", "rounds": 1, "pairs": 18, "knots": 8, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}},
+    {"corrected": {"start": 307, "arm": "arity_floor", "rounds": 1, "pairs": 18, "knots": 8, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}, "frozen": {"start": 307, "arm": "arity_floor", "rounds": 1, "pairs": 18, "knots": 8, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}},
+    {"corrected": {"start": 332, "arm": "ordinary", "rounds": 0, "pairs": 18, "knots": 4, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}, "frozen": {"start": 332, "arm": "ordinary", "rounds": 0, "pairs": 18, "knots": 4, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}},
+    {"corrected": {"start": 332, "arm": "one_fewer", "rounds": 0, "pairs": 18, "knots": 4, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}, "frozen": {"start": 332, "arm": "one_fewer", "rounds": 0, "pairs": 18, "knots": 4, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}},
+    {"corrected": {"start": 332, "arm": "arity_floor", "rounds": 0, "pairs": 18, "knots": 4, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}, "frozen": {"start": 332, "arm": "arity_floor", "rounds": 0, "pairs": 18, "knots": 4, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}},
+    {"corrected": {"start": 340, "arm": "ordinary", "rounds": 2, "pairs": 18, "knots": 12, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}, "frozen": {"start": 340, "arm": "ordinary", "rounds": 2, "pairs": 18, "knots": 12, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}},
+    {"corrected": {"start": 340, "arm": "one_fewer", "rounds": 2, "pairs": 18, "knots": 12, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}, "frozen": {"start": 340, "arm": "one_fewer", "rounds": 2, "pairs": 18, "knots": 12, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}},
+    {"corrected": {"start": 340, "arm": "arity_floor", "rounds": 2, "pairs": 18, "knots": 12, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}, "frozen": {"start": 340, "arm": "arity_floor", "rounds": 2, "pairs": 18, "knots": 12, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}},
+    {"corrected": {"start": 369, "arm": "ordinary", "rounds": 2, "pairs": 18, "knots": 12, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}, "frozen": {"start": 369, "arm": "ordinary", "rounds": 2, "pairs": 18, "knots": 12, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}},
+    {"corrected": {"start": 369, "arm": "one_fewer", "rounds": 2, "pairs": 18, "knots": 12, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}, "frozen": {"start": 369, "arm": "one_fewer", "rounds": 2, "pairs": 18, "knots": 12, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}},
+    {"corrected": {"start": 369, "arm": "arity_floor", "rounds": 2, "pairs": 18, "knots": 12, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}, "frozen": {"start": 369, "arm": "arity_floor", "rounds": 2, "pairs": 18, "knots": 12, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}},
+    {"corrected": {"start": 398, "arm": "ordinary", "rounds": 0, "pairs": 18, "knots": 4, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}, "frozen": {"start": 398, "arm": "ordinary", "rounds": 0, "pairs": 18, "knots": 4, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}},
+    {"corrected": {"start": 398, "arm": "one_fewer", "rounds": 0, "pairs": 18, "knots": 4, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}, "frozen": {"start": 398, "arm": "one_fewer", "rounds": 0, "pairs": 18, "knots": 4, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}},
+    {"corrected": {"start": 398, "arm": "arity_floor", "rounds": 0, "pairs": 18, "knots": 4, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}, "frozen": {"start": 398, "arm": "arity_floor", "rounds": 0, "pairs": 18, "knots": 4, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}},
+    {"corrected": {"start": 433, "arm": "ordinary", "rounds": 2, "pairs": 18, "knots": 13, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}, "frozen": {"start": 433, "arm": "ordinary", "rounds": 2, "pairs": 18, "knots": 13, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}},
+    {"corrected": {"start": 433, "arm": "one_fewer", "rounds": 2, "pairs": 18, "knots": 13, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}, "frozen": {"start": 433, "arm": "one_fewer", "rounds": 2, "pairs": 18, "knots": 13, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}},
+    {"corrected": {"start": 433, "arm": "arity_floor", "rounds": 2, "pairs": 18, "knots": 13, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}, "frozen": {"start": 433, "arm": "arity_floor", "rounds": 2, "pairs": 18, "knots": 13, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}},
+    {"corrected": {"start": 434, "arm": "ordinary", "rounds": 2, "pairs": 18, "knots": 11, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}, "frozen": {"start": 434, "arm": "ordinary", "rounds": 2, "pairs": 18, "knots": 11, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}},
+    {"corrected": {"start": 434, "arm": "one_fewer", "rounds": 2, "pairs": 18, "knots": 11, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}, "frozen": {"start": 434, "arm": "one_fewer", "rounds": 2, "pairs": 18, "knots": 11, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}},
+    {"corrected": {"start": 434, "arm": "arity_floor", "rounds": 2, "pairs": 18, "knots": 11, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}, "frozen": {"start": 434, "arm": "arity_floor", "rounds": 2, "pairs": 18, "knots": 11, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}},
+    {"corrected": {"start": 435, "arm": "ordinary", "rounds": 2, "pairs": 18, "knots": 10, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}, "frozen": {"start": 435, "arm": "ordinary", "rounds": 2, "pairs": 18, "knots": 10, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}},
+    {"corrected": {"start": 435, "arm": "one_fewer", "rounds": 2, "pairs": 18, "knots": 10, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}, "frozen": {"start": 435, "arm": "one_fewer", "rounds": 2, "pairs": 18, "knots": 10, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}},
+    {"corrected": {"start": 435, "arm": "arity_floor", "rounds": 2, "pairs": 18, "knots": 10, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}, "frozen": {"start": 435, "arm": "arity_floor", "rounds": 2, "pairs": 18, "knots": 10, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}},
+    {"corrected": {"start": 465, "arm": "ordinary", "rounds": 2, "pairs": 18, "knots": 12, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}, "frozen": {"start": 465, "arm": "ordinary", "rounds": 2, "pairs": 18, "knots": 12, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}},
+    {"corrected": {"start": 465, "arm": "one_fewer", "rounds": 2, "pairs": 18, "knots": 12, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}, "frozen": {"start": 465, "arm": "one_fewer", "rounds": 2, "pairs": 18, "knots": 12, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}},
+    {"corrected": {"start": 465, "arm": "arity_floor", "rounds": 2, "pairs": 18, "knots": 12, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}, "frozen": {"start": 465, "arm": "arity_floor", "rounds": 2, "pairs": 18, "knots": 12, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}},
+    {"corrected": {"start": 642, "arm": "ordinary", "rounds": 2, "pairs": 18, "knots": 8, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}, "frozen": {"start": 642, "arm": "ordinary", "rounds": 2, "pairs": 18, "knots": 8, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}},
+    {"corrected": {"start": 642, "arm": "one_fewer", "rounds": 2, "pairs": 18, "knots": 8, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}, "frozen": {"start": 642, "arm": "one_fewer", "rounds": 2, "pairs": 18, "knots": 8, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}},
+    {"corrected": {"start": 642, "arm": "arity_floor", "rounds": 2, "pairs": 18, "knots": 8, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}, "frozen": {"start": 642, "arm": "arity_floor", "rounds": 2, "pairs": 18, "knots": 8, "separated pairs": 0, "pairs with e >= 1": 0, "pairs with e >= 2": 0, "largest e, middle read for changes": 0, "largest e, middle unread": 0}}
+  ]
+}

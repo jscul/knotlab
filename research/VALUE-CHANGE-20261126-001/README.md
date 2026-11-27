@@ -5,7 +5,25 @@ answer on which pairs of values may fail to commute. Part A runs the advisor's t
 Parts B and C take the candidate the coordinator judged closest to the model's own terms, *value against change*: all
 values have joint values, and a value and the read of a change that flips it do not. Computed, with an argument; the
 advisor consulted read-only in the repository ([question](advisor_question.md), [answer](advisor_answer.md)); referee
-pending.
+refereed (R1 and R2, below).
+
+> **Refereed (R1, [report](referee-R1/report.md); R2, [report](referee-R2/report.md)): confirmed with fixes, no Block.**
+> R1 rebuilt part A (75,224 pairs; 134 of 134 six-round failures) and every reader row; R2 matched all 36,864 entries of
+> the square's tables to an explicit quantum realisation and found every sorted and unsorted marginal free of
+> signalling. **Narrowings:** a knot's list is an allowed change exactly when the knot commutes with every knot (all 56
+> lists passed on the ten commuting closers, which meet that condition); e = 1 with the middle read for changes on 72 of
+> 78 separated pairs (the loose chain's first pair is 0 at all three rounds; 74 counted two predicted zeros); with the
+> middle unread separated readers can share a value parity, and what separability gives is a table with a list of
+> values (shared classical information allowed); the square is won 9 of 9 only when each middle record's signs are
+> applied (a herald, or one reader relabelling with the signs), while the fixed reads score 9, 5, 5, 5 of nine across
+> the four sign classes (pooled 2/3); "nothing native reads a change" holds for the primitives and readings inspected,
+> not for every possible construction, and whether a flip is allowed is a different question from what sign a read
+> returns; the coherent state is a sufficient choice, not a proved least one: equal counts fix only the weights, the
+> mixture scores 2/3, and a state with a different relative phase reproduces the whole winning table; reading one
+> connecting distinction gives e = 1 only for readers holding every place of their lineage (0 on all 39 for the other
+> choice). **Not a block:** the earlier side-sign study already had readers whom no knot joins on a grown stage reach
+> CHSH 4 with a supplied signed weighting, so this is not the first such table; the original square checker returned
+> unsigned counts (the referees checked the signs). Logged in `docs/CORRECTIONS.md`.
 
 ## A. The advisor's three checks ([`check1.py`](check1.py), [`check2.py`](check2.py), [`check3.py`](check3.py))
 

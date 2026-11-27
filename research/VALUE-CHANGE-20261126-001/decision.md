@@ -2,8 +2,26 @@
 
 Epic `VALUE-CHANGE-20261126-001` (G18, at the coordinator's pick after `EVENTUAL-R-20261126-001`; register entry A300),
 closed 26 November 2026. Computed, with arguments; the advisor consulted once before the freeze (its by-hand values
-became the predictions); referee pending. [The note](README.md) · [preregistration](preregistration.md) ·
+became the predictions); refereed (R1 and R2, below). [The note](README.md) · [preregistration](preregistration.md) ·
 [advisor's question](advisor_question.md) and [answer](advisor_answer.md)
+
+> **Refereed (R1, [report](referee-R1/report.md); R2, [report](referee-R2/report.md)): confirmed with fixes, no Block.**
+> R1 rebuilt part A (75,224 pairs; 134 of 134 six-round failures) and every reader row; R2 matched all 36,864 entries of
+> the square's tables to an explicit quantum realisation and found every sorted and unsorted marginal free of
+> signalling. **Narrowings:** a knot's list is an allowed change exactly when the knot commutes with every knot (all 56
+> lists passed on the ten commuting closers, which meet that condition); e = 1 with the middle read for changes on 72 of
+> 78 separated pairs (the loose chain's first pair is 0 at all three rounds; 74 counted two predicted zeros); with the
+> middle unread separated readers can share a value parity, and what separability gives is a table with a list of
+> values (shared classical information allowed); the square is won 9 of 9 only when each middle record's signs are
+> applied (a herald, or one reader relabelling with the signs), while the fixed reads score 9, 5, 5, 5 of nine across
+> the four sign classes (pooled 2/3); "nothing native reads a change" holds for the primitives and readings inspected,
+> not for every possible construction, and whether a flip is allowed is a different question from what sign a read
+> returns; the coherent state is a sufficient choice, not a proved least one: equal counts fix only the weights, the
+> mixture scores 2/3, and a state with a different relative phase reproduces the whole winning table; reading one
+> connecting distinction gives e = 1 only for readers holding every place of their lineage (0 on all 39 for the other
+> choice). **Not a block:** the earlier side-sign study already had readers whom no knot joins on a grown stage reach
+> CHSH 4 with a supplied signed weighting, so this is not the first such table; the original square checker returned
+> unsigned counts (the referees checked the signs). Logged in `docs/CORRECTIONS.md`.
 
 ## What stands
 
@@ -32,7 +50,7 @@ became the predictions); referee pending. [The note](README.md) · [preregistrat
 | This attempt — reading a change | **Status:** Successful (a table, with the three things it needs named) | Certainty in the square for separated readers, given coherence, combined questions and a middle reader whose change record sorts |
 | Local direction — a table with nothing supplied | **STOP** (obstruction learned) | Without the middle's change reads the readers' state is separable; nothing native reads a change |
 | Broader exploration — a native source of the middle's change read | Unmapped | Growth carries the coherent state forward by copying parities but never reads a change |
-| Long-term goal — G18 Comparing growth laws | Capability gained (thin) | The first separated-reader table above the classical bound on structures growth makes, with its supplied parts named |
+| Long-term goal — G18 Comparing growth laws | Capability gained (thin) | A conditional square of certainty for readers whom no knot joins, on the coherent counting state of built joined-ring structures, with its supplied parts named (R1: not the first separated-reader table; the side-sign study's supplied signed weighting came earlier) |
 
 **Next step:** Research directions — the owner's or the coordinator's choice
 

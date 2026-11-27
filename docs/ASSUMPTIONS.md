@@ -6264,6 +6264,9 @@ evidence: results and their status come from the records each entry links.
   state that relates words unequally; a growth rule in which a birth compares its parents' allowed words. Expected to be
   replaced only if the model comes to read changes itself.
 - **History.**
+  - 2026-11-26 · Qualified by referees R1 and R2: a sufficient construction, not a least one (the mixture scores 2/3,
+    another relative phase gives the same winning table); the square's win needs each middle record's signs
+    applied. [R1](../research/VALUE-CHANGE-20261126-001/referee-R1/report.md) · [R2](../research/VALUE-CHANGE-20261126-001/referee-R2/report.md)
   - 2026-11-26 · Entered by `VALUE-CHANGE-20261126-001`.
 
 ### A301 · Two weightings of seven-knot starts, buckets up to renaming and a 24-round horizon, to test the graded order and its exception

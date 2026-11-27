@@ -16,7 +16,7 @@ stages, the box form itself); or show that the twelve-knot count is wrong.
 
 1. **Read the hand-off.** `research/UPPER-GROWN-20261127-001/referee_handoff.md` lists each claim, its evidence class,
    where its code and data are, and the points the author asks a referee to press. Read what it links, including the
-   previous referee's report and witness (`research/UPPER-GROWN-20261127-001/referee-R1/report.md`, `layer_witness.json`,
+   previous referee's report and witness (`research/RING-BOND-20261127-001/referee-R1/report.md`, `layer_witness.json`,
    `layer_notes.md`); no advisor was consulted. Read
    `AGENTS.md` ("Canonical foundation", "Research discipline", "Guardrails") and the glossary at the end of
    `publication/knotlab/INTUITIONS.md` first.

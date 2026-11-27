@@ -16,11 +16,16 @@
 
 **STOP** on these fixtures with the available reads. The first direction would directly address the missing operation. The present rules supply no candidate interaction with that capability. The second extends the classical explanation for interchangeable siblings. A more general classical weighting would still have a single word for both readers.
 
-**Corrections:** One pre-run prediction failed. Mixing the named words gives 0 with the four fixed questions. The predicted 2/9 holds when only the equal/mixed classes lose coherence. This was an untested forecast, and both the original forecast and the failed control are retained.  
-**Goals:** G18 Comparing growth laws gained two computable rivals. The recorded-answer sub-goal B286 has a new three-word test case.  
-**Assumptions:** A310 records the signed transfer, A311 the current joint weighting and A312 the coherent preparation and read. The older questions about joint values and allowed acts remain open (A152 and A295).  
-**Scaffolds:** Compared signed and unsigned changes, two sibling weightings, two kinds of lost coherence, matched independent preparations and actual single-bit toggles.  
-**Basket:** The open odd-ring parity comparison and middle-reader game address different settings. This study took the birth-sign direction from the no-whole-state study and the joint-birth direction from the transfer-table study.  
+**Corrections:** One pre-run prediction failed. Mixing the named words gives 0 with the four fixed questions. The predicted 2/9 holds when only the equal/mixed classes lose coherence. This was an untested forecast, and both the original forecast and the failed control are retained.
+
+**Goals:** G18 Comparing growth laws gained two computable rivals. The recorded-answer sub-goal B286 has a new three-word test case.
+
+**Assumptions:** A310 records the signed transfer, A311 the current joint weighting and A312 the coherent preparation and read. The older questions about joint values and allowed acts remain open (A152 and A295).
+
+**Scaffolds:** Compared signed and unsigned changes, two sibling weightings, two kinds of lost coherence, matched independent preparations and actual single-bit toggles.
+
+**Basket:** The open odd-ring parity comparison and middle-reader game address different settings. This study took the birth-sign direction from the no-whole-state study and the joint-birth direction from the transfer-table study.
+
 **Advisor:** Both Fable versions returned a usage limit on both consultations. A separate implementation checked the main results in the named-word representations.
 
 ## A sign determined before the close
@@ -42,6 +47,43 @@ When a proposed one-bit change would be forbidden, leave the word as it was. Tho
 The ordinary one-bit toggles have direct meanings as changes of words. Replacing the first reader’s coherent change question by either one gives 2, even with all the other coherent ingredients present. The independent search gave 2 even after admitting every signed involutive permutation of the three words as a possible local question. In contrast, the fixed combined measurement gives 2.1078403054, and the two readers’ local probabilities are independent of the remote setting. The final cross-check matched all 96 probabilities from six preparations to within $6\times10^{-16}$. The symbolic calculations give exact answers. [Symbolic tables](../../artifacts/BIRTH-SIGN-WEIGHT-20261127-001C/BIRTH-SIGN-WEIGHT-20261127-001C-E001_local_questions/results.json) · [Independent full-word tables](review/reader_results.json)
 
 The strong comparison uses *identical named-word probabilities*. Erasing all coherence takes the score from 2.1078403054 to 0. Erasing it only between equal and mixed classes takes it to 2/9. The other tested weighting with ordinary one-birth marginals gives 1.939424 with the same questions. Changing probabilities alone, changing which possibilities can combine, and changing what a reader can measure have three separately checkable consequences. [Frozen prediction](../BIRTH-SIGN-WEIGHT-20261127-001C/preregistration.md) · [Initial scope and methods](preregistration.md)
+
 ## Verification
 
 The scoped file check passed on 30 study files, the terminal scope and discovery disposition validated, and all nine evidence checksums matched. A second implementation reproduced the sign and six two-reader controls. The full checkout’s checkpoint also checks project instructions. It reported one unrelated edited sentence about coordinating tasks. The change was present outside this study.
+
+## Final report as sent
+
+2026-11-27 01:44 PST
+
+We found a concrete rule for each piece, on two different starts. The strongest result is a two-reader score of **2.10784**, above the common-list limit of **2**, with questions fixed from the allowed changes. The calculation still needs a coherent preparation and a way to measure those changes. [Two-reader study](https://github.com/jscul/knotlab/blob/main/experiments/BIRTH-SIGN-WEIGHT-20261127-001C/BIRTH-SIGN-WEIGHT-20261127-001C-E001_local_questions/result.md)
+
+**1. The closing sign.** Each parent in the three-knot ring leaves exactly one allowed change invisible to it. Giving that change the sign of the parent’s loose value produces an odd close in **all eight old states and all six parent orders**. Two old states can give the birth exactly the same three values and carry opposite signs. With supplied coherent questions, the three readers recover all 64 target probabilities. Ordinary value readings win three rounds out of four. The corresponding four-parent control closed even. [Sign study](https://github.com/jscul/knotlab/blob/main/experiments/BIRTH-SIGN-WEIGHT-20261127-001A/BIRTH-SIGN-WEIGHT-20261127-001A-E001_closing_sign/result.md)
+
+**2. The joint weighting.** With the founder fixed before either question, no knot joins the two sibling readers. Under one current-round rule, both siblings show an equal pair with probability **1/3**. Independent siblings with the same individual chances give **1/4**. A shared random draw reproduces this increase. The score of 2.10784 appears when the joint weights are prepared coherently and the readers can compare alternatives. Replacing one such question by either ordinary one-bit change gives exactly **2**. [Weighting study](https://github.com/jscul/knotlab/blob/main/experiments/BIRTH-SIGN-WEIGHT-20261127-001B/BIRTH-SIGN-WEIGHT-20261127-001B-E001_joint_weights/results.md)
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| These two tests | **Status:** Partially successful | Both rules use information available in their round. |
+| Ordinary readings on these starts | STOP | A common list still accounts for them. |
+| Quantum question | Open | A birth that preserves alternatives and writes a sign-sensitive answer remains to be found. |
+| G18 Comparing growth laws | Capability gained | A second joint rule preserves ordinary one-birth probabilities and scores 1.93942 with the same coherent questions. |
+
+**Next step:** Research directions — No next action selected.
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+| --- | --- | --- | --- | --- | --- |
+| 1 | A birth that records a relative sign | 3/3 | 1/3 | Specify one interaction → different records at identical value frequencies | Alternative · deferred |
+| 2 | A shared draw for siblings with different roles | 1/3 | 2/3 | Compare one joint table → agreement or a differing frequency | Alternative · deferred |
+
+**Corrections:** My pre-run prediction for removing coherence was wrong. Mixing all named words gives **0** with the fixed questions. The predicted **2/9** applies when the two mixed words, 01 and 10, still combine coherently. Independent calculations agreed on all 96 probabilities across six preparations. [Independent review](https://github.com/jscul/knotlab/blob/main/research/BIRTH-SIGN-WEIGHT-20261127-001/review/report.md)
+
+**Goals:** G18 gained a concrete test for its open question about recording a sign, B286.
+
+**Assumptions:** A310–A312 record the signed change, joint weighting, and coherent preparation and reading.
+
+**Scaffolds:** The measurement questions were chosen with the target in view. Their coefficients follow from the allowed changes without fitting an angle.
+
+**Basket:** We took the birth-sign and joint-weight directions. The odd-ring and middle-reader questions remain open.
+
+Both advisor versions reached their usage limit. The independent review and scoped file checks passed. A broader repository check flags an unrelated edit to project instructions. [Published account](https://github.com/jscul/knotlab/blob/main/research/BIRTH-SIGN-WEIGHT-20261127-001/decision.md)

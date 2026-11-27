@@ -205,3 +205,59 @@ with a split pair, 32 of them also with cells sharing two knots, 13 with cells s
 | H1 | The node reading agrees in every round read, both readings, both laws, on every held-out start whose core round rule finishes (70% for seven knots, 55% for eight) | any such start differs |
 | H2 | The graded order, unchanged, agrees on every held-out start with neither flag and differs on every start with one (85% seven, 75% eight) | either way |
 | H3 | Every miss of the node reading, if any, is on a start with chains, as 6408 has (60%) | a chain-free miss |
+
+### Held-out results (added after the run)
+
+[Tally](held_tally.txt); scores `nodesg_held*.jsonl`.
+
+| Starts (seed 20261128) | Graded order | Node reading | Predictions |
+| --- | --- | --- | --- |
+| seven knots, `tree+` (47: 40 neither, 7 flagged) | agrees on all 40 without a flag, differs on all 7 flagged | agrees on all 47 | — |
+| seven knots, `grow` (76: 72 neither, 4 flagged) | agrees on all 72, differs on all 4 | agrees on 75; **misses one** (draw 257587, flagged), first at round 6, both laws | H1 fails for seven knots (122 of 123) |
+| eight knots, `tree+` (116: 40 neither, 76 flagged) | agrees on all 40, differs on all 76 | **agrees on all 116** | H1 holds one size past |
+| | **H2 holds** at both sizes | | H3 holds: the miss has a chain |
+
+**Both misses of the node reading have one cause (post hoc, checked on 417 starts).** Census entry 6408 and held-out
+draw 257587 are the only starts, of 417 the node reading was run on, where two core births of one round share two
+parents C and D and a chain is based at a point of a common parent of C and D (`twins.py`); in both the twins sit at
+rank 6 and the first difference is at round 6. That is exactly where the decoupling argument below needs its
+hypothesis: a chain birth at the common grandparent joins the twins' shared parents into one group with them, so the
+core's round rule alone no longer gives the round. Found after the misses; a fresh test is open.
+
+**On the referee's counterexamples (post hoc: built against the graded order).** The node reading, which never uses the
+graded order's size, agrees through six rounds under both laws on the 36-knot and 14-knot starts and on five of the
+referee's six other constructed starts; on the sixth the growth stops at the engine's guard at round 4 and the core's
+round rule does not finish in two minutes ([witness_nodes.jsonl](witness_nodes.jsonl)).
+
+## What is proved and what is computed
+
+1. **Proved (Lemma R, items 1 and 3; `REDUCE-BLOCKS-20261119-001A`).** Round 1's births are the round-1 groups; from
+   round 1 on a round's births are given by the round rule applied to the last round's births.
+2. **Proved here (decoupling).** Suppose no two core births of one round share two parents C, D with a chain based at a
+   point of a common parent of C and D. Then the core's births are the round rule iterated on core births alone.
+   *Argument.* A chain birth X has a core parent only when it holds one chain step, and then exactly one, C. A core
+   birth sharing a parent with X is a child of C. So a group of core births with a chain birth added would share the
+   parent C, which a group may not: core groups stay maximal among all pairwise parent-sharing families. A candidate
+   pair {A, B} of core births can be covered by a family holding chain births only if A and B are both children of the
+   chain births' core parents; for two distinct chain births with core parents C and D that needs A and B to share both
+   C and D, and X and the other chain birth to share a parent, a chain birth at a common parent of C and D. Under the
+   hypothesis neither happens, so core groups and core pairs are those of the core alone. ∎
+3. **Computed, not proved.** That births along chains are counted by `late.py`'s binomial terms on the core's births
+   (proved for tree maps without cells by `CHAIN-IDENT` and `DOUBLE-IDENT`), and the relay taken by the one last core
+   birth holding the whole piece (Lemma R item 4 with `RELAY-IDENT` Theorem 4 for the identification's class). Checked on
+   all 176 fresh starts, the 239 held-out starts and the referee's witnesses, both laws, with the two twin starts the
+   only misses.
+4. **The graded order** is the node reading exactly when, at every rank, the round rule returns the valid sets with
+   their covering relation (computed on the samples, `order.py check`); the referee's starts show that this needs the
+   size of a valid set to grade inclusion, which fails on starts with many cells, and its order lemma as first worded was
+   false.
+
+**Does it reduce to the refereed identification?** Yes, inside the identification's class (no round-1 group of three or
+more, no two live knots with two common neighbours): there the round-1 groups are the map's pairs, the core's births
+built by the round rule are the connected sets of the map (the clusters of the unrolled map, a tree), no two of them
+share two parents, and the node reading is `DOUBLE-IDENT`'s identification, proved and refereed. Outside it, the node
+reading extends the identification: births are the nodes of the core's iterated round rule rather than sets, which is
+what lets two births with one union (a split pair) be two births.
+
+**Pieces with a cycle** are still outside: the core is then infinite (the unrolled map), and the round rule would have
+to be iterated on the orbits of the cover (`RING-IDENT`), the next step.

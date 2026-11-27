@@ -38,8 +38,16 @@ any fresh start was grown; referee pending. [The note](README.md)
    order lemma: any two parents of a valid set share a parent, and every set of births that pairwise share a parent and
    lies in no one parent's children is the parent set of exactly one valid set.
 
-**Not shown.** Eight knots and more beyond two built starts; other weightings; the order lemma; pieces with a cycle (the
-reading does not extend to them as it stands).
+4. **The node reading (added after the referee, held-out test frozen).** Build the start's core births by Lemma R's round
+   rule from the round-1 groups, each birth a node, then count chains and the relay as before. It reads every round of
+   238 of 239 held-out starts of a new seed under both laws (all 116 eight-knot ones, one size past) and the referee's
+   counterexamples to the graded order except one whose core explodes; its two misses in 417 starts are exactly the
+   starts where two core births share two parents with a chain at a common grandparent (post hoc).
+5. **Proved and computed.** Lemma R gives the round rule (proved); births along chains never change a core group except
+   at such twins (proved here); the chain counting and the relay on node cores are computed. Inside the identification's
+   class the node reading is the refereed identification.
+
+**Not shown.** The chain counting on node cores as a theorem; a fresh test of the twin exception; pieces with a cycle.
 
 ## Position and next directions
 

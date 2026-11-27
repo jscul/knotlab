@@ -358,6 +358,7 @@ evidence: results and their status come from the records each entry links.
 | [A300](#a300--values-and-changes-both-readable-the-coherent-counting-state-combined-questions-and-a-middle-reader-who-sorts) | Values and changes both readable: the coherent counting state, combined questions and a middle reader who sorts | scaffold | Assumed |
 | [A301](#a301--two-weightings-of-seven-knot-starts-buckets-up-to-renaming-and-a-24-round-horizon-to-test-the-graded-order-and-its-exception) | Two weightings of seven-knot starts, buckets up to renaming and a 24-round horizon, to test the graded order and its exception | scaffold | Assumed |
 | [A302](#a302--the-middle-of-the-joined-ring-starts-as-a-third-reader-with-two-settings-and-a-quarter-turn-read) | The middle of the joined-ring starts as a third reader with two settings, and a quarter-turn read | scaffold | Assumed |
+| [A303](#a303--the-families-tree-as-the-places-of-the-second-layer-read-at-a-scale) | The families' tree as the places of the second layer, read at a scale | scaffold | Assumed |
 
 ## Entries
 
@@ -6298,3 +6299,21 @@ evidence: results and their status come from the records each entry links.
   stay a scaffold.
 - **History.**
   - 2026-11-26 · Entered by `THIRD-READER-20261126-001`.
+
+### A303 · The families' tree as the places of the second layer, read at a scale
+
+**Assumed** · 2026-11-27 · scaffold
+
+- **Statement.** `SELECTED-KNOTS-20261127-001` takes as the second layer's places the nodes of the tree of a start's
+  families joined by their distance d (single linkage: two clusters join at the least d between their families), each
+  node's fact the sum of its families' facts, with a knot at each node with two or more children; and it reads class
+  facts at a scale (any allowed change of at most k distinctions, k = 8 and 12).
+- **Why.** Given the places, the knots are the minimal relations and nothing else is chosen (the advisor); the
+  tree is what growth reveals at a scale, since the cost of flipping two families' facts is d + 2 + 2t.
+- **Rests on it.** The study's answer to which second-layer knots growth selects, how they meet, and the layer-three
+  read.
+- **Challenge.** Other places: each family's generations (growth's own, which give only copies), groupings of knots
+  (which tie), least supports (which sit in the start); the shortest-change reading, under which the tree shows on a
+  minority of rows. Expected to be replaced by a proof that the pair cost fixes the tree.
+- **History.**
+  - 2026-11-27 · Entered at the freeze of `SELECTED-KNOTS-20261127-001`.

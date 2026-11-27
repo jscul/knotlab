@@ -1,0 +1,845 @@
+{
+  "mode": "full",
+  "phases_seconds": {
+    "two_stops": 0.060707,
+    "founder": 0.000504,
+    "all_founders_and_controls": 0.003832,
+    "support": 0.24459,
+    "coherent_and_value_reads": 0.445077
+  },
+  "two_stops": {
+    "source": "FACTOR-WEIGHTS referee R1, NAE / ordinary, census 23",
+    "old_state": "1010000",
+    "start_rules": [
+      [
+        0,
+        1,
+        4
+      ],
+      [
+        0,
+        2,
+        3
+      ],
+      [
+        1,
+        2,
+        3,
+        5,
+        6
+      ]
+    ],
+    "births_by_round": [
+      [
+        [
+          [
+            4,
+            5
+          ],
+          [
+            7
+          ]
+        ],
+        [
+          [
+            6
+          ],
+          [
+            8,
+            9
+          ]
+        ]
+      ],
+      [
+        [
+          [
+            7,
+            8
+          ],
+          [
+            10
+          ]
+        ],
+        [
+          [
+            9
+          ],
+          [
+            11,
+            12
+          ]
+        ]
+      ]
+    ],
+    "first_fresh_states": [
+      "101",
+      "110",
+      "111"
+    ],
+    "numbers_of_later_completions": [
+      6,
+      3,
+      3
+    ],
+    "at_first_stop": [
+      "1/3",
+      "1/3",
+      "1/3"
+    ],
+    "at_second_stop_then_forget": [
+      "1/2",
+      "1/4",
+      "1/4"
+    ],
+    "total_variation": "1/6",
+    "archived_readers": [
+      4,
+      6
+    ],
+    "archived_fixed_others": {
+      "0": 1,
+      "1": 0,
+      "2": 1,
+      "3": 0,
+      "5": 0,
+      "7": 1,
+      "8": 1,
+      "9": 0,
+      "10": 0,
+      "11": 1,
+      "12": 1
+    },
+    "tables_before_common_start_weight": {
+      "finish": {
+        "mass": [
+          [
+            "1",
+            "1"
+          ],
+          [
+            "1",
+            "1"
+          ]
+        ],
+        "determinant": "0"
+      },
+      "start": {
+        "mass": [
+          [
+            "1/9",
+            "1/9"
+          ],
+          [
+            "1/18",
+            "1/18"
+          ]
+        ],
+        "determinant": "0"
+      },
+      "one stage": {
+        "mass": [
+          [
+            "1/12",
+            "1/15"
+          ],
+          [
+            "1/27",
+            "1/27"
+          ]
+        ],
+        "determinant": "1/1620"
+      }
+    },
+    "old_state_count": 68
+  },
+  "founder": {
+    "founder_state": "001",
+    "grown_rules": [
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        0,
+        3,
+        4
+      ],
+      [
+        1,
+        5,
+        6
+      ],
+      [
+        2,
+        7,
+        8
+      ]
+    ],
+    "current_classes": 6,
+    "class_sizes": [
+      1,
+      2,
+      4,
+      4,
+      8,
+      8
+    ],
+    "positive_fresh_words": 27,
+    "classes_equal_mixed_table": [
+      [
+        "1/3",
+        "1/6"
+      ],
+      [
+        "1/6",
+        "1/3"
+      ]
+    ],
+    "determinant": "1/12",
+    "same_marginals_independent": [
+      [
+        "1/4",
+        "1/4"
+      ],
+      [
+        "1/4",
+        "1/4"
+      ]
+    ],
+    "fixing_each_old_identity": [
+      [
+        "1/4",
+        "1/4"
+      ],
+      [
+        "1/4",
+        "1/4"
+      ]
+    ]
+  },
+  "all_founders_and_controls": {
+    "all_six_founder_states": [
+      {
+        "old": "001",
+        "same_input_children": [
+          0,
+          1
+        ],
+        "class_sizes": [
+          1,
+          2,
+          4,
+          4,
+          8,
+          8
+        ],
+        "table": [
+          [
+            "1/3",
+            "1/6"
+          ],
+          [
+            "1/6",
+            "1/3"
+          ]
+        ]
+      },
+      {
+        "old": "010",
+        "same_input_children": [
+          0,
+          2
+        ],
+        "class_sizes": [
+          1,
+          2,
+          4,
+          4,
+          8,
+          8
+        ],
+        "table": [
+          [
+            "1/3",
+            "1/6"
+          ],
+          [
+            "1/6",
+            "1/3"
+          ]
+        ]
+      },
+      {
+        "old": "011",
+        "same_input_children": [
+          1,
+          2
+        ],
+        "class_sizes": [
+          1,
+          2,
+          4,
+          4,
+          8,
+          8
+        ],
+        "table": [
+          [
+            "1/3",
+            "1/6"
+          ],
+          [
+            "1/6",
+            "1/3"
+          ]
+        ]
+      },
+      {
+        "old": "100",
+        "same_input_children": [
+          1,
+          2
+        ],
+        "class_sizes": [
+          1,
+          2,
+          4,
+          4,
+          8,
+          8
+        ],
+        "table": [
+          [
+            "1/3",
+            "1/6"
+          ],
+          [
+            "1/6",
+            "1/3"
+          ]
+        ]
+      },
+      {
+        "old": "101",
+        "same_input_children": [
+          0,
+          2
+        ],
+        "class_sizes": [
+          1,
+          2,
+          4,
+          4,
+          8,
+          8
+        ],
+        "table": [
+          [
+            "1/3",
+            "1/6"
+          ],
+          [
+            "1/6",
+            "1/3"
+          ]
+        ]
+      },
+      {
+        "old": "110",
+        "same_input_children": [
+          0,
+          1
+        ],
+        "class_sizes": [
+          1,
+          2,
+          4,
+          4,
+          8,
+          8
+        ],
+        "table": [
+          [
+            "1/3",
+            "1/6"
+          ],
+          [
+            "1/6",
+            "1/3"
+          ]
+        ]
+      }
+    ],
+    "fine_pair_names": [
+      "01",
+      "10",
+      "11"
+    ],
+    "fine_pair_table": [
+      [
+        "1/12",
+        "1/12",
+        "1/12"
+      ],
+      [
+        "1/12",
+        "1/12",
+        "1/12"
+      ],
+      [
+        "1/12",
+        "1/12",
+        "1/3"
+      ]
+    ],
+    "third_child_is_independent_given_001": true,
+    "single_fresh_bit_per_child": [
+      [
+        "1/12",
+        "1/6"
+      ],
+      [
+        "1/6",
+        "7/12"
+      ]
+    ],
+    "single_bit_determinant": "1/48",
+    "all_founder_words_uniform_fixed_pair": [
+      [
+        "5/18",
+        "2/9"
+      ],
+      [
+        "2/9",
+        "5/18"
+      ]
+    ],
+    "pooled_determinant": "1/36",
+    "uniform_named_completions_class_table": [
+      [
+        "1/9",
+        "2/9"
+      ],
+      [
+        "2/9",
+        "4/9"
+      ]
+    ],
+    "urn_class_counts": [
+      1,
+      2
+    ],
+    "urn_class_table": [
+      [
+        "1/6",
+        "1/6"
+      ],
+      [
+        "1/6",
+        "1/2"
+      ]
+    ],
+    "urn_determinant": "1/18",
+    "urn_fine_table_preserves_named_marginals": [
+      [
+        "1/8",
+        "1/8",
+        "1/12"
+      ],
+      [
+        "1/8",
+        "1/8",
+        "1/12"
+      ],
+      [
+        "1/12",
+        "1/12",
+        "1/6"
+      ]
+    ],
+    "positive_weights_given_001": {
+      "01 01 00": "1/24",
+      "01 01 01": "1/48",
+      "01 01 10": "1/48",
+      "01 10 00": "1/24",
+      "01 10 01": "1/48",
+      "01 10 10": "1/48",
+      "01 11 00": "1/24",
+      "01 11 01": "1/48",
+      "01 11 10": "1/48",
+      "10 01 00": "1/24",
+      "10 01 01": "1/48",
+      "10 01 10": "1/48",
+      "10 10 00": "1/24",
+      "10 10 01": "1/48",
+      "10 10 10": "1/48",
+      "10 11 00": "1/24",
+      "10 11 01": "1/48",
+      "10 11 10": "1/48",
+      "11 01 00": "1/24",
+      "11 01 01": "1/48",
+      "11 01 10": "1/48",
+      "11 10 00": "1/24",
+      "11 10 01": "1/48",
+      "11 10 10": "1/48",
+      "11 11 00": "1/6",
+      "11 11 01": "1/12",
+      "11 11 10": "1/12"
+    }
+  },
+  "support": {
+    "full": {
+      "positive_states": 162,
+      "scopes_of_arity_at_least_three": 466,
+      "all_knots": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          3,
+          4
+        ],
+        [
+          1,
+          2,
+          3,
+          4
+        ],
+        [
+          1,
+          5,
+          6
+        ],
+        [
+          0,
+          2,
+          5,
+          6
+        ],
+        [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        [
+          0,
+          1,
+          7,
+          8
+        ],
+        [
+          2,
+          7,
+          8
+        ],
+        [
+          1,
+          3,
+          4,
+          7,
+          8
+        ],
+        [
+          0,
+          5,
+          6,
+          7,
+          8
+        ],
+        [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      ],
+      "knots_meeting_both_fresh_pairs": [
+        [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      ],
+      "canonical_checks": [
+        {
+          "scope": [
+            0,
+            1,
+            2
+          ],
+          "command_args": [
+            "-m",
+            "knotlab",
+            "check",
+            "--cnf",
+            "v0 v1 v2;~v0 ~v1 ~v2;v0 v3 v4;~v0 ~v3 ~v4;v1 v5 v6;~v1 ~v5 ~v6;v2 v7 v8;~v2 ~v7 ~v8",
+            "--loops",
+            "v0",
+            "v1",
+            "--contact",
+            "v2",
+            "--witnesses",
+            "v3",
+            "v4",
+            "v5",
+            "v6",
+            "v7",
+            "v8",
+            "--json"
+          ],
+          "allowed_patterns": 6,
+          "K1": true,
+          "K2": true,
+          "K3": true,
+          "is_knot": true
+        },
+        {
+          "scope": [
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "command_args": [
+            "-m",
+            "knotlab",
+            "check",
+            "--cnf",
+            "v0 v1 v2;~v0 ~v1 ~v2;v0 v3 v4;~v0 ~v3 ~v4;v1 v5 v6;~v1 ~v5 ~v6;v2 v7 v8;~v2 ~v7 ~v8",
+            "--loops",
+            "v2",
+            "v3",
+            "v4",
+            "v5",
+            "--contact",
+            "v6",
+            "--witnesses",
+            "v0",
+            "v1",
+            "v7",
+            "v8",
+            "--json"
+          ],
+          "allowed_patterns": 30,
+          "K1": true,
+          "K2": true,
+          "K3": true,
+          "is_knot": true
+        },
+        {
+          "scope": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "command_args": [
+            "-m",
+            "knotlab",
+            "check",
+            "--cnf",
+            "v0 v1 v2;~v0 ~v1 ~v2;v0 v3 v4;~v0 ~v3 ~v4;v1 v5 v6;~v1 ~v5 ~v6;v2 v7 v8;~v2 ~v7 ~v8",
+            "--loops",
+            "v3",
+            "v4",
+            "v5",
+            "v6",
+            "v7",
+            "--contact",
+            "v8",
+            "--witnesses",
+            "v0",
+            "v1",
+            "v2",
+            "--json"
+          ],
+          "allowed_patterns": 62,
+          "K1": true,
+          "K2": true,
+          "K3": true,
+          "is_knot": true
+        }
+      ]
+    },
+    "founder_fixed": {
+      "positive_states": 27,
+      "scopes_of_arity_at_least_three": 466,
+      "all_knots": [],
+      "knots_meeting_both_fresh_pairs": [],
+      "canonical_checks": [
+        {
+          "scope": [
+            0,
+            1,
+            2
+          ],
+          "command_args": [
+            "-m",
+            "knotlab",
+            "check",
+            "--cnf",
+            "v0 v1 v2;~v0 ~v1 ~v2;v0 v3 v4;~v0 ~v3 ~v4;v1 v5 v6;~v1 ~v5 ~v6;v2 v7 v8;~v2 ~v7 ~v8;~v0;~v1;v2",
+            "--loops",
+            "v0",
+            "v1",
+            "--contact",
+            "v2",
+            "--witnesses",
+            "v3",
+            "v4",
+            "v5",
+            "v6",
+            "v7",
+            "v8",
+            "--json"
+          ],
+          "allowed_patterns": 1,
+          "K1": true,
+          "K2": false,
+          "K3": true,
+          "is_knot": false
+        },
+        {
+          "scope": [
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "command_args": [
+            "-m",
+            "knotlab",
+            "check",
+            "--cnf",
+            "v0 v1 v2;~v0 ~v1 ~v2;v0 v3 v4;~v0 ~v3 ~v4;v1 v5 v6;~v1 ~v5 ~v6;v2 v7 v8;~v2 ~v7 ~v8;~v0;~v1;v2",
+            "--loops",
+            "v2",
+            "v3",
+            "v4",
+            "v5",
+            "--contact",
+            "v6",
+            "--witnesses",
+            "v0",
+            "v1",
+            "v7",
+            "v8",
+            "--json"
+          ],
+          "allowed_patterns": 9,
+          "K1": true,
+          "K2": false,
+          "K3": true,
+          "is_knot": false
+        },
+        {
+          "scope": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "command_args": [
+            "-m",
+            "knotlab",
+            "check",
+            "--cnf",
+            "v0 v1 v2;~v0 ~v1 ~v2;v0 v3 v4;~v0 ~v3 ~v4;v1 v5 v6;~v1 ~v5 ~v6;v2 v7 v8;~v2 ~v7 ~v8;~v0;~v1;v2",
+            "--loops",
+            "v3",
+            "v4",
+            "v5",
+            "v6",
+            "v7",
+            "--contact",
+            "v8",
+            "--witnesses",
+            "v0",
+            "v1",
+            "v2",
+            "--json"
+          ],
+          "allowed_patterns": 27,
+          "K1": true,
+          "K2": false,
+          "K3": true,
+          "is_knot": false
+        }
+      ]
+    }
+  },
+  "coherent_and_value_reads": {
+    "orbit": {
+      "value_read_max": "2",
+      "sqrt_amplitudes_determinant": "1/6",
+      "XX_YY_ZZ": [
+        "1",
+        "-1/3",
+        "1/3"
+      ],
+      "correlations_at_attaining_reads": [
+        "3*sqrt(10)/10",
+        "3*sqrt(10)/10",
+        "sqrt(10)/30",
+        "-sqrt(10)/30"
+      ],
+      "arbitrary_local_read_max": "2*sqrt(10)/3",
+      "fine_value_read_max": "2",
+      "fine_amplitudes_shape": [
+        4,
+        4
+      ],
+      "fine_isometry": true,
+      "fine_attained": "2*sqrt(10)/3"
+    },
+    "matched_independent": {
+      "value_read_max": "2",
+      "sqrt_amplitudes_determinant": "0",
+      "XX_YY_ZZ": [
+        "1",
+        "0",
+        "0"
+      ],
+      "correlations_at_attaining_reads": [
+        "1",
+        "1",
+        "0",
+        "0"
+      ],
+      "arbitrary_local_read_max": "2",
+      "fine_value_read_max": "2",
+      "fine_amplitudes_shape": [
+        4,
+        4
+      ],
+      "fine_isometry": true,
+      "fine_attained": "2"
+    }
+  },
+  "elapsed_seconds": 0.754748,
+  "peak_process_kib": 77120
+}

@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "experiment_id": "BIRTH-SIGN-WEIGHT-20261127-001B-E001",
+  "ticket_id": "BIRTH-SIGN-WEIGHT-20261127-001B",
+  "status": "Frozen",
+  "evidence_stage": "exploratory",
+  "branch": "code_analysis",
+  "frozen_at": "2026-11-27T09:15:46.746320+00:00",
+  "question": "Can current simultaneous births assign joint weights, and can one such kernel also match uniform completion counting at two stopping rounds?",
+  "inputs": [
+    "One archived two-round not-all-equal start with a nonzero whole-completion minor.",
+    "One not-all-equal founder in state 001, its allowed renamings, the sibling orbits from current roles, and all permitted fresh pairs."
+  ],
+  "forbidden_inputs": [
+    "Later completion counts as an input to a rule used at the first round.",
+    "Selecting the reader pair or the weighting by a quantum score, or using a coherent preparation without declaring it."
+  ],
+  "primary_observable": "Compare the first-round distribution at two stopping horizons. For a rival, divide weight equally among current joint completion classes under permutations preserving the founder and its values, then over their representatives. Compute the reader table, determinants, ordinary value and supplied coherent scores, and knots on the conditioned and full supports.",
+  "control": "Independent draws with the same marginals, uniform named completions, and a second weighting with class multiplicities. Compare symmetric signed changes against rotated coherent reads and distinguish data needed for each.",
+  "resource_budget": "One process per exact calculation, one mathematical family and named controls, pilot each computation, at most a few minutes per script and 1 GiB of working memory. No sweep of the old census.",
+  "first_executable_signal": "Exhibit incompatible marginals for the old whole-completion rule, or an exact current kernel for both horizons. Give at least one exact sibling table and its matched independent control.",
+  "stop_rule": "Stop after the two stopping horizons and the one founder including all start words for the full support. If a supplied coherent score exceeds two, test the permitted local operations before drawing an operational conclusion.",
+  "nonclaims": [
+    "A universal obstruction to all current-round laws",
+    "A quantum advantage from a positive probability distribution alone",
+    "Native access to rotated measurements"
+  ],
+  "preregistration": "research/BIRTH-SIGN-WEIGHT-20261127-001/preregistration.md",
+  "prior_exposure": "Earlier answers and example data were public. The two candidates and their numerical predictions were reasoned out before activation. This is an open exploration, with independent mathematical checks."
+}

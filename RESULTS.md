@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**408 current results** and 5 superseded ones, from 703 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**408 current results** and 5 superseded ones, from 704 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -31,7 +31,7 @@ How to read an entry:
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 26 results
 - [Notes](#notes): 6 self-contained notes
-- [Epics](#epics): all 703 epics with their closures
+- [Epics](#epics): all 704 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -2053,6 +2053,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-26 | Two lasting patterns in one start: does one keep changing the other (`TWO-PATTERNS-20261126-001`) | — | [folder](research/TWO-PATTERNS-20261126-001/) |
 | 2026-11-26 | Two receptions from a far pattern, and whether the model makes the shortage itself (`TWO-RECEPTIONS-20261126-001`) | — | [folder](research/TWO-RECEPTIONS-20261126-001/) |
 | 2026-11-26 | Reading a change: is it native, and does it give separated readers a table above the classical bound? (`VALUE-CHANGE-20261126-001`) | — | [folder](research/VALUE-CHANGE-20261126-001/) |
+| 2026-11-27 | A readable sign at birth and joint weights within a round (`BIRTH-SIGN-WEIGHT-20261127-001`) | — | [folder](research/BIRTH-SIGN-WEIGHT-20261127-001/) |
 | 2026-11-27 | What the node cores over the cap are: finishing, repeating or growing without bound (`CAPPED-CORES-20261127-001`) | — | [folder](research/CAPPED-CORES-20261127-001/) |
 | 2026-11-27 | Proving the chain counting on node cores without chained twins (`CHAIN-COUNT-20261127-001`) | — | [folder](research/CHAIN-COUNT-20261127-001/) |
 | 2026-11-27 | Comparing growth laws on the step one layer up: chains of eight under the forbidding cuts (`CHAIN-LAWS-20261127-001`) | — | [folder](research/CHAIN-LAWS-20261127-001/) |

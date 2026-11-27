@@ -27,6 +27,12 @@ the results and the scorer were added after them. Refereed (R1: **confirmed with
 > distinctions (its lower ones), and premise 2 reads "at least one birth"; the advisor's suggestion that capped groups
 > lose common children is false.
 
+> **Narrowed after the referee** (`docs/CORRECTIONS.md`, "Bindings of facts held by no part"): each bound fact here is
+> read by no single knot, but on all 32 ring families, under both readings, it is the sum of its connecting knots'
+> attachment parities, each a class fact read by one knot, so a part of two or three knots holds it; the same holds for
+> all 19 sampled bindings the referee found. The stricter test (held by no part) passes only on the advisor's 14-knot
+> start and on the sampled ten-knot start under the shortest changes (`THIRD-LAYER-20261126-001`, jointly.py).
+
 ## Prior work in the program
 
 The binding study's referee supplied the built and sampled witnesses, the built example's origin and the deletion of the

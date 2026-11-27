@@ -6,6 +6,10 @@ after the advisor's review in the repository. **Refereed (R1): confirmed with fi
 a binding also occurs on a sampled held-out start, so "none on the held-out starts" is false; part (c) and the argument
 hold, with "held only by whole carriers" narrowed. [The note](README.md)
 
+**Narrowed after the referee** (`docs/CORRECTIONS.md`, "Bindings of facts held by no part"): on the ring families
+and the sampled bindings each fact is a sum of class facts that single connecting knots read; only the 14-knot start
+and the sampled ten-knot start (shortest changes) bind facts held by no part.
+
 ## What stands, in four parts
 
 1. **(a) Bindings exist after ordinary growth, on built starts.** On all 32 built ring families (three or four rings

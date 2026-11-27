@@ -3,6 +3,10 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 26 November 2026 · Bindings of facts held by no part: only two in the record
+
+**A narrowing of [lesson 12.3](INTUITIONS.md#123-whether-it-happens-again-one-pattern-up) and of [the built binding](research/BUILT-BINDING-20261126-001/decision.md).** The facts bound on the built ring starts and on the sampled starts are read by no single knot, but each is a sum of facts that single connecting knots read, so a small part of the start holds it. Only two bindings in the record bind facts held by no part: a start of three rings whose joining knots each meet a ring by one distinction, and one sampled ten-knot start under the shortest changes.
+
 ## 26 November 2026 · A built binding refereed: confirmed with fixes, bindings on sampled starts too
 
 **Corrections from [an independent referee's report](research/BUILT-BINDING-20261126-001/referee-R1/report.md), folded into [the decision](research/BUILT-BINDING-20261126-001/decision.md).** The study's finding stands: where ordinary growth binds facts that no single knot reads, the relation is the start's own sum of knot laws, and growth makes the bound quantities facts that every small change keeps. Its claim that no binding occurs on sampled starts is withdrawn: one held-out eight-knot start and seven of 67 stages of a larger sample bind, under changes of at most five distinctions. "Held only by whole carriers" is narrowed: each fact also has a smaller reader, and on rings of even length a carrier splits into two parts that are facts of their own.

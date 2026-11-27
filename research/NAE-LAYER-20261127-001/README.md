@@ -36,3 +36,26 @@ together; exchanging one pair's members exchanges the two presentations).
 with no ring, the first layer read through relays, which rings and growth erase; that is repetition, and no second
 layer. A missing pattern where none is predicted (on a ring, or after a round) is a relation a ring or growth carries,
 the second-layer candidate, frozen and tested on its own.
+
+## What was found
+
+Every frozen prediction held exactly ([`t7.json`](t7.json), [`census.jsonl`](census.jsonl)).
+- **T7.** 4,374 states (N1); its nine loose distinctions show 510 of 512 patterns (N2); (g_0, g_1, g_2) takes 25 of 27
+  triples, missing exactly (+,+,+) and (−,−,−), with every pair taking all 9 (N3). With 11 renamed 9 a ring of five
+  closes and all 128 loose patterns occur (N4; 2,178 states). T7 stalls in round 1; with 15, 16, 17 added it has 55,566
+  states and shows 4,094 of 4,096 loose patterns, and after one round its stage of 16 knots shows all 32,768 (N5).
+- **The census.** On all 7,075 starts the not-all-equal states form one class under single-distinction changes (C1) and
+  no pair of distinctions is tied (C2); on all 6,845 starts with loose distinctions the loose patterns number 2^m − 2 on
+  the 15 tree-shaped ones and 2^m on the other 6,830 (C3); after one round all 2^m occur on all 500 starts read (C4).
+  Under parity 2^(m − 1) on every start (C3').
+
+**So, under not-all-equal.** A fact held by the whole is a relation among separately carried values that no proper part
+implies: on a part with no ring it exists (exactly two loose patterns missing), and it is the first knots' own law read
+through relays (whenever a relayed value is nonzero it fixes the first knot's distinction), not a new law. A ring
+erases it, and so does one round of growth, since growth's joins close rings. Nothing is kept by small changes (one
+class) and nothing is tied. **On the owner's rungs:** repetition, in the weak form of the first layer composed with
+itself; no second layer; and growth removes even the composed relation after one round. Under parity it is the reverse:
+rings carry the facts, and growth makes them last.
+
+**Not run.** Starts past the census; rounds past 1; readings of a fact other than relations among values (the equal
+weighting of states and its correlations, which the advisor describes but which were not tested here).

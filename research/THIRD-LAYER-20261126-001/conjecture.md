@@ -45,6 +45,28 @@ distinction per round, and by P1 it cannot shortcut through a new law on old dis
 **What would break it.** A start meeting H1 to H3 whose least flipping change stops growing (for example where a
 shortcut through a closed part appears, P2), or a reading in which loops of four are not small (then P3 fails).
 
-## The general step (layer k to layer k + 1)
+## The general step (layer k to layer k + 1), and why it does not repeat by itself
 
-Stated after the advisor's review (advisor/), since the layer's own small changes must be fixed first.
+After the advisor's review ([answer](advisor/answer.md)). The layer's own small changes cannot be fixed without a
+choice: a layer number is not a property of a fact (any grouping of knots gives a coarser start whose laws are the
+groups' law sums, and the same parity is second-layer for one grouping and third-layer for a finer one). What the
+growth itself fixes is the least size of a change flipping a fact, round by round. In those terms:
+
+**Conjecture T (two kinds of fact).** Let S be a connected start grown by ordinary parity growth, funded for t rounds,
+with families A_1, ..., A_m (live start knots joined when some knot shares a distinction with each) and family facts
+l_A (the parity of a family's loose distinctions). (i) No birth has parents descended from two families. (ii) The l_A
+obey exactly one relation, the sum of all of S's laws (proved: a sum of laws supported on loose distinctions is all the
+laws of a connected part or none, the component lemma behind P2 and P3). (iii) The least change flipping any nonzero
+sum of the l_A (not a sum of laws) grows by at least two distinctions a round. (iv) Every other class fact has a least
+flipping change bounded by a number S fixes. Hence for every scale k there is a round T of about k/2 after which the
+class facts at scale k are the span of the l_A plus start parities that no change of at most k in S's own closed
+changes flips, and the latter part does not change with t.
+
+**Consequence (the stop).** At a scale above the bounded facts, ordinary growth keeps the families' facts and one law
+among them: one second-layer knot per connected start, the composite of all its knots (see the recursion note). Two
+second-layer knots that share a fact would need two relations, so the layer-two pattern has no shared facts and no
+loop, and no third layer arises from growth. A further layer can sit only in S's closed changes, which growth leaves
+as they were.
+
+**Status.** (ii) is proved; (i), (iii) and (iv) are computed on the frozen sets (README, "What was found"); (iii) and
+(iv) need a proof, for which P4 (births as clusters of the unrolled map) and P5 (reach) are the natural tools.

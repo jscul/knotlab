@@ -1,0 +1,738 @@
+{
+  "census_archived_tally": {
+    "C1 fails": 0,
+    "C2 fails": 0,
+    "C3 fails": 0,
+    "C3' fails": 0,
+    "C4 fails": 0,
+    "C4 read": 500,
+    "starts": 7075
+  },
+  "census_coverage": {
+    "C4_first_and_last_recorded_zero_based_indices": [
+      0,
+      707
+    ],
+    "C4_funded_eligible_omitted_after_prefix": 4611,
+    "C4_prefix_including_skipped_rows": {
+      "closed": 7,
+      "eligible_at_cap": 500,
+      "stalled": 201
+    },
+    "C4_recorded_stage_loose_distinctions_histogram": {
+      "1": 39,
+      "2": 34,
+      "3": 110,
+      "4": 53,
+      "5": 50,
+      "6": 104,
+      "7": 34,
+      "8": 39,
+      "9": 20,
+      "10": 13,
+      "12": 4
+    },
+    "C4_total_loose_patterns_offered_in_reported_checks": 64470,
+    "archive_rows_inspected": 7075,
+    "counts": {
+      "C2_pair_opportunities_across_starts": 418293,
+      "funded_stages_still_tree_shaped": 0,
+      "funded_tree_shaped_sources": 10,
+      "recorded_C1_successes": 7075,
+      "recorded_C2_successes": 7075,
+      "recorded_C3_pattern_count_matches": 7075,
+      "recorded_C4_full_projections": 500,
+      "recorded_C4_tree_shaped_sources": 8,
+      "recorded_C4_tree_shaped_stages": 0,
+      "recorded_parity_matches_among_starts_with_loose_distinctions": 6845,
+      "source_starts_with_loose_distinctions": 6845,
+      "source_tree_shaped_starts": 15
+    },
+    "coverage_by_source_knot_count": {
+      "3": {
+        "closed": 2,
+        "eligible_at_cap": 59,
+        "recorded": 59
+      },
+      "4": {
+        "closed": 22,
+        "eligible_at_cap": 746,
+        "recorded": 441,
+        "stalled": 278
+      },
+      "5": {
+        "closed": 206,
+        "eligible_at_cap": 4306,
+        "stalled": 1456
+      }
+    },
+    "coverage_totals": {
+      "closed": 230,
+      "eligible_at_cap": 5111,
+      "funded_over_cap": 0,
+      "recorded": 500,
+      "stalled": 1734
+    },
+    "source_roster": "Connected starts of three to five knots once up to renaming. At most twelve distinctions. Each knot has at least three places and at most two loose distinctions. Each pair of knots shares at most two distinctions."
+  },
+  "frozen_stop": "Keep the historical stopping rule in the frozen text. Annotate it with the scope of the current-loose projection test and the preservation of source projections.",
+  "guide": {
+    "relevant_sections": [
+      "4.7 Knots alone",
+      "12.3 Whether it happens again, one pattern up"
+    ],
+    "scope": "The guide already cites the Pasch example and leaves a repeated tower step open. No passage attributes the closed study's headline to its census.",
+    "study_is_cited_at_handoff": false
+  },
+  "history": {
+    "archives_first_present_at_result": true,
+    "commits": {
+      "freeze": {
+        "committed_at": "2026-11-26T19:51:49-08:00",
+        "revision": "643e5a85a90477bbf8b63050c2c3c9c029a3013b"
+      },
+      "goals_and_objects": {
+        "committed_at": "2026-11-26T19:53:49-08:00",
+        "revision": "8a4f08870e2322d7024f9be254e9a1aaf09e837f"
+      },
+      "handoff": {
+        "committed_at": "2026-11-26T19:54:08-08:00",
+        "revision": "d642a52c422ce762ad89800117f46a71779ece65"
+      },
+      "results": {
+        "committed_at": "2026-11-26T19:53:33-08:00",
+        "revision": "b2dc53d665e3649960bfcea756854a48ce6b968e"
+      }
+    },
+    "frozen_note_is_unchanged_prefix_of_result_note": true,
+    "inputs": {
+      "research/FORBID-EDITS-20261126-001/starts.json": {
+        "sha256": "ba937f95092234f8e1d8a08c20e86996a3aa58d187f137629b2c55d7e0553d6e",
+        "working_copy_matches": true
+      },
+      "research/NAE-LAYER-20261127-001/census.jsonl": {
+        "sha256": "2ba35ff04e5f327cdc245b747381a8e4091de3dba951bcadbbc40536b7aa7da4",
+        "working_copy_matches": true
+      },
+      "research/NAE-LAYER-20261127-001/census.py": {
+        "sha256": "5710fefa7c07f6252534d5f5b66137228dca6918d34ffb06c7aa9f9dc36770fc",
+        "working_copy_matches": true
+      },
+      "research/NAE-LAYER-20261127-001/t7.json": {
+        "sha256": "d7ce615c6df0a80701e4949a08a7f87aea5bb4c4fac63ee1fdede48cef888810",
+        "working_copy_matches": true
+      },
+      "research/NAE-LAYER-20261127-001/t7.py": {
+        "sha256": "e20e2fd655cb93178ad5adc6ad93f4a4053480f5564441082c54e76c25e61fc1",
+        "working_copy_matches": true
+      }
+    },
+    "results_are_direct_child_of_freeze": true,
+    "scope": "The committed predictions, code and thresholds precede the committed outputs. These timestamps cannot establish when local output was produced or read.",
+    "scripts_unchanged_between_freeze_and_result": true
+  },
+  "mode": "full",
+  "pasch": {
+    "allowed_states_in_both_presentations": 18,
+    "closed_four_knot_presentations": 2,
+    "description": "The four ternary knots in which each pair of knots shares one distinction. Every distinction has two holders.",
+    "implied_ternary_not_all_equal_supports": [
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        0,
+        1,
+        3
+      ],
+      [
+        0,
+        2,
+        4
+      ],
+      [
+        0,
+        3,
+        4
+      ],
+      [
+        1,
+        2,
+        5
+      ],
+      [
+        1,
+        3,
+        5
+      ],
+      [
+        2,
+        4,
+        5
+      ],
+      [
+        3,
+        4,
+        5
+      ]
+    ],
+    "loose_distinctions": 0,
+    "pairs_held_together_by_no_knot": [
+      [
+        0,
+        5
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "rival_supports": [
+      [
+        0,
+        1,
+        3
+      ],
+      [
+        0,
+        2,
+        4
+      ],
+      [
+        1,
+        2,
+        5
+      ],
+      [
+        3,
+        4,
+        5
+      ]
+    ],
+    "source_supports": [
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        0,
+        3,
+        4
+      ],
+      [
+        1,
+        3,
+        5
+      ],
+      [
+        2,
+        4,
+        5
+      ]
+    ],
+    "zero_based_archive_index": 959
+  },
+  "prior_work": {
+    "credit": {
+      "research/BASE-THREE-20261021-001/base_three.md": {
+        "present_at_freeze": true,
+        "relation": "Opposite forcing at one shared distinction gives the two-knot composition rule."
+      },
+      "research/BASES-WITHIN-20261112-001/bases_within.md": {
+        "present_at_freeze": true,
+        "relation": "The earlier nested construction recovers the supplied outer law. Ordinary growth supplies a different test of a further layer."
+      },
+      "research/BINDING-20261126-001/referee-R1/report.md": {
+        "present_at_freeze": true,
+        "relation": "The earlier parity review found bindings on disjoint cycle and path carriers and left a further layer open. It explicitly established preservation of old projections under ordinary growth."
+      },
+      "research/CUT-BINDING-20261126-001/README.md": {
+        "present_at_freeze": true,
+        "relation": "Ring parities on three built not-all-equal starts took every joint tuple through two rounds. Those supplied parities differ from the full projection onto the currently loose distinctions."
+      },
+      "research/FRESH-COUNT-20261118-001/preregistration.md": {
+        "present_at_freeze": true,
+        "relation": "The complete-round groups and the fewest-fresh rule predate the study."
+      },
+      "research/NAE-GROWTH-20261119-001/nae_growth.md": {
+        "present_at_freeze": true,
+        "relation": "T1 gives old-state extension with private fresh distinctions. T2 gives the ordinary not-all-equal fresh floor. T3 gives the parity projection by summing the laws of a connected part."
+      },
+      "research/NAE-WEIGHTS-20261127-001/README.md": {
+        "present_at_freeze": false,
+        "relation": "The equal-weighting study was first committed after this freeze. The dated search can return it because the cutoff includes that day."
+      },
+      "research/ONE-STATEMENT-20261127-001/referee-R1/report.md": {
+        "present_at_freeze": true,
+        "relation": "The earlier full census established 7,074 unique marked presentations out of 7,075. Its ten-knot witness outside the census keeps the same marked loose distinctions and allows the same 209,952 states, with two families in one presentation and one in the other. This already refutes unrestricted recovery."
+      },
+      "research/OVERLAP-READ-20261111-001/overlap_read.md": {
+        "present_at_freeze": true,
+        "relation": "The pair-count result and the six-distinction Pasch example already give identical states in the two presentations."
+      },
+      "research/SIGNED-COUNT-20261126-001/README.md": {
+        "present_at_freeze": true,
+        "relation": "The ring of four has 82 states and a measured correlation under equal weighting. Its published read uses shared distinctions."
+      },
+      "research/STATES-GROWTH-20261119-001/states_growth.md": {
+        "present_at_freeze": true,
+        "relation": "The 18-state four-knot ambiguity, two irredundant presentations, and the limitation from redundant laws were already recorded."
+      },
+      "research/THREE-READERS-AND-GROWTH-20261120-001B/classification.md": {
+        "present_at_freeze": true,
+        "relation": "This is the complete finite classification within connected presentations with two holders at most, arity at least three, full local projections and each law essential in both presentations. The closed Pasch case is the sole exception there."
+      },
+      "research/TWO-CLASS-SIGN-20261126-001/referee-R1/report.md": {
+        "present_at_freeze": true,
+        "relation": "Earlier sampled census starts and ring profiles had one not-all-equal class wherever read. The referee checked connectivity directly under single changes on 22 starts and 11 grown stages."
+      }
+    },
+    "cutoff_scope": "The date is inclusive. Git checks whether each returned path was present at the freeze.",
+    "retrospective_prior_work_gate": {
+      "exit_status": 1,
+      "result": "prior-work line: missing ## Prior work in the program section"
+    },
+    "searches": [
+      {
+        "arguments": [
+          "objects",
+          "Pasch",
+          "--until",
+          "2026-11-27",
+          "--exclude",
+          "NAE-LAYER-20261127-001",
+          "--deep",
+          "--json"
+        ],
+        "first_three_paths_per_section": {
+          "deep": [
+            {
+              "present_at_freeze": true,
+              "record": "research/AGE-NEST-20261112-001/preregistration.md"
+            },
+            {
+              "present_at_freeze": true,
+              "record": "research/OVERLAP-READ-20261111-001/overlap_read.md"
+            },
+            {
+              "present_at_freeze": true,
+              "record": "research/OVERLAP-READ-20261111-001/preregistration.md"
+            }
+          ],
+          "index": [
+            {
+              "present_at_freeze": true,
+              "record": "research/OVERLAP-READ-20261111-001/overlap_read.md"
+            },
+            {
+              "present_at_freeze": true,
+              "record": "research/OVERLAP-READ-20261111-001/overlap_read.md"
+            }
+          ],
+          "other_epics": []
+        }
+      },
+      {
+        "arguments": [
+          "objects",
+          "not-all-equal loose patterns tree rings erase composition forcing",
+          "--until",
+          "2026-11-27",
+          "--exclude",
+          "NAE-LAYER-20261127-001",
+          "--deep",
+          "--json"
+        ],
+        "first_three_paths_per_section": {
+          "deep": [
+            {
+              "present_at_freeze": false,
+              "record": "research/NAE-WEIGHTS-20261127-001/README.md"
+            },
+            {
+              "present_at_freeze": true,
+              "record": "research/ERASURE-AND-CLOSING-SIGNS-20261121-001/decision.md"
+            },
+            {
+              "present_at_freeze": true,
+              "record": "research/ONE-STATEMENT-20261127-001/README.md"
+            }
+          ],
+          "index": [
+            {
+              "present_at_freeze": true,
+              "record": "research/ONE-STATEMENT-20261127-001/README.md"
+            },
+            {
+              "present_at_freeze": true,
+              "record": "research/SHIFT-COUNT-20261112-001/shift_count.md"
+            },
+            {
+              "present_at_freeze": false,
+              "record": "research/NAE-WEIGHTS-20261127-001/README.md"
+            }
+          ],
+          "other_epics": [
+            {
+              "present_at_freeze": true,
+              "record": "tickets/KNOT-LOOPS-20261019-001.json"
+            },
+            {
+              "present_at_freeze": true,
+              "record": "tickets/EMERGENCE-BITS-20261021-001.json"
+            },
+            {
+              "present_at_freeze": true,
+              "record": "tickets/GALLAI-KNOTS-20261020-001.json"
+            }
+          ]
+        }
+      },
+      {
+        "arguments": [
+          "objects",
+          "whole-held facts not-all-equal growth weighting correlations",
+          "--until",
+          "2026-11-27",
+          "--exclude",
+          "NAE-LAYER-20261127-001",
+          "--deep",
+          "--json"
+        ],
+        "first_three_paths_per_section": {
+          "deep": [
+            {
+              "present_at_freeze": false,
+              "record": "research/NAE-WEIGHTS-20261127-001/decision.md"
+            },
+            {
+              "present_at_freeze": true,
+              "record": "research/LAYERS-20261126-001/decision.md"
+            },
+            {
+              "present_at_freeze": true,
+              "record": "research/CUT-BINDING-20261126-001/decision.md"
+            }
+          ],
+          "index": [
+            {
+              "present_at_freeze": true,
+              "record": "research/LAYERS-20261126-001/README.md"
+            },
+            {
+              "present_at_freeze": true,
+              "record": "research/BINDING-20261126-001/README.md"
+            },
+            {
+              "present_at_freeze": true,
+              "record": "research/BUILT-BINDING-20261126-001/README.md"
+            }
+          ],
+          "other_epics": [
+            {
+              "present_at_freeze": true,
+              "record": "tickets/FACTOR-WEIGHTS-20261126-001.json"
+            },
+            {
+              "present_at_freeze": true,
+              "record": "tickets/BEYOND-REJECTION-20261126-001.json"
+            },
+            {
+              "present_at_freeze": true,
+              "record": "tickets/EXACT-TOWERS-20261029-001.json"
+            }
+          ]
+        }
+      },
+      {
+        "arguments": [
+          "objects",
+          "not-all-equal state recovery essential Pasch loose marked",
+          "--until",
+          "2026-11-27",
+          "--exclude",
+          "NAE-LAYER-20261127-001",
+          "--deep",
+          "--json"
+        ],
+        "first_three_paths_per_section": {
+          "deep": [
+            {
+              "present_at_freeze": true,
+              "record": "research/ONE-STATEMENT-20261127-001/statement.md"
+            },
+            {
+              "present_at_freeze": true,
+              "record": "research/ONE-STATEMENT-20261127-001/decision.md"
+            },
+            {
+              "present_at_freeze": true,
+              "record": "research/ONE-STATEMENT-20261127-001/README.md"
+            }
+          ],
+          "index": [
+            {
+              "present_at_freeze": true,
+              "record": "research/READS-HOLDERS-SOURCES-20261120-001B/results.md"
+            },
+            {
+              "present_at_freeze": true,
+              "record": "proofs/LAST-DISTINCTION-AND-PRIVATE-PULSES-20261121-001B/LAST-DISTINCTION-AND-PRIVATE-PULSES-20261121-001B-P001_private_pulses/proof.md"
+            },
+            {
+              "present_at_freeze": true,
+              "record": "research/ONE-STATEMENT-20261127-001/README.md"
+            }
+          ],
+          "other_epics": [
+            {
+              "present_at_freeze": true,
+              "record": "tickets/PINNING-20261031-001.json"
+            },
+            {
+              "present_at_freeze": true,
+              "record": "tickets/SHARED-SUBDIVISION-20261029-001.json"
+            },
+            {
+              "present_at_freeze": true,
+              "record": "tickets/LOCAL-RECOVERY-LAW-20261012-001.json"
+            }
+          ]
+        }
+      },
+      {
+        "arguments": [
+          "objects",
+          "two knots sharing one distinction compose projection opposite values",
+          "--until",
+          "2026-11-27",
+          "--exclude",
+          "NAE-LAYER-20261127-001",
+          "--deep",
+          "--json"
+        ],
+        "first_three_paths_per_section": {
+          "deep": [
+            {
+              "present_at_freeze": true,
+              "record": "research/NATIVE-NETWORK-20261021-001/native_network.md"
+            },
+            {
+              "present_at_freeze": true,
+              "record": "research/CARRY-BOUND-20261114-001/advisor_review_answer.md"
+            },
+            {
+              "present_at_freeze": true,
+              "record": "research/BOND-CLOSURE-20261120-001/scaffolds.md"
+            }
+          ],
+          "index": [
+            {
+              "present_at_freeze": true,
+              "record": "research/BOND-BALLS-20261111-001/bond_balls.md"
+            },
+            {
+              "present_at_freeze": true,
+              "record": "research/BARE-NAMES-20261110-001/bare_names.md"
+            },
+            {
+              "present_at_freeze": true,
+              "record": "research/BOND-METRIC-20261118-001/bond_metric.md"
+            }
+          ],
+          "other_epics": [
+            {
+              "present_at_freeze": true,
+              "record": "tickets/BASE-THREE-20261021-001.json"
+            },
+            {
+              "present_at_freeze": true,
+              "record": "tickets/KNOT-CIRCUITS-20261020-001.json"
+            },
+            {
+              "present_at_freeze": true,
+              "record": "tickets/NATIVE-NETWORK-20261021-001.json"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "t7_archived_observations": {
+    "N1 states": 4374,
+    "N2 loose patterns": [
+      510,
+      512
+    ],
+    "N3 missing triples": [
+      [
+        "+",
+        "+",
+        "+"
+      ],
+      [
+        "-",
+        "-",
+        "-"
+      ]
+    ],
+    "N3 pairs": [
+      9,
+      9,
+      9
+    ],
+    "N3 triples of (g0, g1, g2)": 25,
+    "N4 ring control: loose patterns": [
+      128,
+      128
+    ],
+    "N4 ring control: states": 2178,
+    "N5 T7 round 1": "stalled",
+    "N5 T7 with 15, 16, 17: loose patterns": [
+      4094,
+      4096
+    ],
+    "N5 T7 with 15, 16, 17: states": 55566,
+    "N5 its round 1": "funded",
+    "N5 loose patterns after one round": [
+      32768,
+      32768
+    ],
+    "N5 stage after one round: knots": 16
+  },
+  "wording_targets": [
+    {
+      "archived_excerpt": "The sections down to \"Frozen\" were committed before the runs.",
+      "line": 4,
+      "path": "research/NAE-LAYER-20261127-001/README.md",
+      "report_fix": 6,
+      "revision": "b2dc53d665e3649960bfcea756854a48ce6b968e"
+    },
+    {
+      "archived_excerpt": "Under not-all-equal no law is a sum of others, so parity's facts (sums kept by every small change) have no analogue to lean on.",
+      "line": 8,
+      "path": "research/NAE-LAYER-20261127-001/README.md",
+      "report_fix": 5,
+      "revision": "b2dc53d665e3649960bfcea756854a48ce6b968e"
+    },
+    {
+      "archived_excerpt": "Census start 959, the one start whose not-all-equal states admit a second presentation, is the record's Pasch pattern (its distinctions fall into three pairs no knot holds together; exchanging one pair's members exchanges the two presentations).",
+      "line": 16,
+      "path": "research/NAE-LAYER-20261127-001/README.md",
+      "report_fix": 5,
+      "revision": "b2dc53d665e3649960bfcea756854a48ce6b968e"
+    },
+    {
+      "archived_excerpt": "**The census.** On all 7,075 starts the not-all-equal states form one class under single-distinction changes (C1) and no pair of distinctions is tied (C2); on all 6,845 starts with loose distinctions the loose patterns number 2^m \u2212 2 on the 15 tree-shaped ones and 2^m on the other 6,830 (C3); after one round all 2^m occur on all 500 starts read (C4). Under parity 2^(m \u2212 1) on every start (C3').",
+      "line": 47,
+      "path": "research/NAE-LAYER-20261127-001/README.md",
+      "report_fix": 3,
+      "revision": "b2dc53d665e3649960bfcea756854a48ce6b968e"
+    },
+    {
+      "archived_excerpt": "**So, under not-all-equal.** A fact held by the whole is a relation among separately carried values that no proper part implies: on a part with no ring it exists (exactly two loose patterns missing), and it is the first knots' own law read through relays (whenever a relayed value is nonzero it fixes the first knot's distinction), not a new law. A ring erases it, and so does one round of growth, since growth's joins close rings. Nothing is kept by small changes (one class) and nothing is tied. **On the owner's rungs:** repetition, in the weak form of the first layer composed with itself; no second layer; and growth removes even the composed relation after one round. Under parity it is the reverse: rings carry the facts, and growth makes them last.",
+      "line": 52,
+      "path": "research/NAE-LAYER-20261127-001/README.md",
+      "report_fix": 1,
+      "revision": "b2dc53d665e3649960bfcea756854a48ce6b968e"
+    },
+    {
+      "archived_excerpt": "Under not-all-equal nothing is kept by small changes and nothing is tied",
+      "line": 8,
+      "path": "research/NAE-LAYER-20261127-001/decision.md",
+      "report_fix": 3,
+      "revision": "b2dc53d665e3649960bfcea756854a48ce6b968e"
+    },
+    {
+      "archived_excerpt": "The only relations are compositions over parts with no ring.",
+      "line": 10,
+      "path": "research/NAE-LAYER-20261127-001/decision.md",
+      "report_fix": 1,
+      "revision": "b2dc53d665e3649960bfcea756854a48ce6b968e"
+    },
+    {
+      "archived_excerpt": "**Rings and growth erase them.** Closing a ring of five makes every loose pattern occur; after one round of growth every pattern occurs (the seven-knot tree, and all 500 census starts read).",
+      "line": 13,
+      "path": "research/NAE-LAYER-20261127-001/decision.md",
+      "report_fix": 2,
+      "revision": "b2dc53d665e3649960bfcea756854a48ce6b968e"
+    },
+    {
+      "archived_excerpt": "**On the owner's rungs:** repetition in the weak form (the first layer composed with itself); no second layer; and growth removes even that. Under parity the reverse: rings carry the facts and growth makes them last.",
+      "line": 15,
+      "path": "research/NAE-LAYER-20261127-001/decision.md",
+      "report_fix": 1,
+      "revision": "b2dc53d665e3649960bfcea756854a48ce6b968e"
+    },
+    {
+      "archived_excerpt": "Not-all-equal's whole-held relations are compositions that rings and growth erase",
+      "line": 25,
+      "path": "research/NAE-LAYER-20261127-001/decision.md",
+      "report_fix": 2,
+      "revision": "b2dc53d665e3649960bfcea756854a48ce6b968e"
+    },
+    {
+      "archived_excerpt": "under not-all-equal the states fix the knots but growth keeps no whole-held fact",
+      "line": 27,
+      "path": "research/NAE-LAYER-20261127-001/decision.md",
+      "report_fix": 5,
+      "revision": "b2dc53d665e3649960bfcea756854a48ce6b968e"
+    },
+    {
+      "archived_excerpt": "Nothing survives one round of growth",
+      "line": 26,
+      "path": "research/NAE-LAYER-20261127-001/decision.md",
+      "report_fix": 2,
+      "revision": "b2dc53d665e3649960bfcea756854a48ce6b968e"
+    },
+    {
+      "archived_excerpt": "A law between the two: one whose states fix its knots (like not-all-equal) and whose rings carry facts that growth keeps (like parity), for example mixed knots or a three-valued law",
+      "line": 33,
+      "path": "research/NAE-LAYER-20261127-001/decision.md",
+      "report_fix": 5,
+      "revision": "b2dc53d665e3649960bfcea756854a48ce6b968e"
+    },
+    {
+      "archived_excerpt": "the first layer read through relays; rings and growth erase it; no second layer",
+      "line": 11,
+      "path": "research/NAE-LAYER-20261127-001/referee_handoff.md",
+      "report_fix": 1,
+      "revision": "d642a52c42"
+    },
+    {
+      "archived_excerpt": "the only whole-held relations are compositions over parts with no ring, which rings and one round of growth erase; no second layer.",
+      "line": 27,
+      "path": "tickets/NAE-LAYER-20261127-001.json",
+      "report_fix": 1,
+      "revision": "b2dc53d665e3649960bfcea756854a48ce6b968e"
+    },
+    {
+      "archived_excerpt": "All 7,075 census starts (500 grown one round)",
+      "line": 16,
+      "path": "docs/OBJECTS.md",
+      "report_fix": 3,
+      "revision": "8a4f08870e2322d7024f9be254e9a1aaf09e837f"
+    },
+    {
+      "archived_excerpt": "T7: 25 of 27 triples, 510 of 512, ring and growth erase",
+      "line": 16,
+      "path": "docs/OBJECTS.md",
+      "report_fix": 2,
+      "revision": "8a4f08870e2322d7024f9be254e9a1aaf09e837f"
+    },
+    {
+      "archived_excerpt": "Under not-all-equal nothing is kept by small changes and nothing is tied on any census start; the only whole-held relations are compositions over parts with no ring (the advisor's seven-knot tree: 25 of 27 triples), which a ring or one round of growth erases (every loose pattern after one round on all 500 starts read). Parity keeps facts but does not fix the second layer's knots; not-all-equal fixes the knots but keeps no fact.",
+      "line": 6165,
+      "path": "docs/RESEARCH_GOALS.md",
+      "report_fix": 5,
+      "revision": "8a4f08870e2322d7024f9be254e9a1aaf09e837f"
+    }
+  ]
+}

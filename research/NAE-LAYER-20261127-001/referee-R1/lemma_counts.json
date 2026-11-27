@@ -1,0 +1,194 @@
+{
+  "controls": {
+    "five_levels_of_blocking": {
+      "common_changes_per_state": [
+        34,
+        18,
+        10,
+        6,
+        4,
+        2
+      ],
+      "distinctions": 66,
+      "knots": 33
+    },
+    "odd_ring": {
+      "after_each_knot_deletion": [
+        16,
+        16,
+        16
+      ],
+      "after_forgetting_each_distinction": [
+        8,
+        8,
+        8,
+        8
+      ],
+      "allowed_words": [
+        "0000",
+        "0001",
+        "0011",
+        "0100",
+        "0101",
+        "0110",
+        "0111",
+        "1000",
+        "1001",
+        "1010",
+        "1011",
+        "1100",
+        "1110",
+        "1111"
+      ],
+      "holdings": [
+        [
+          0,
+          4,
+          1
+        ],
+        [
+          4,
+          5,
+          2
+        ],
+        [
+          5,
+          0,
+          3
+        ]
+      ],
+      "missing_words": [
+        "0010",
+        "1101"
+      ],
+      "read_distinctions": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    "terminal_on_other_holder": {
+      "holdings": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          3
+        ],
+        [
+          2,
+          3,
+          4
+        ]
+      ],
+      "s": [
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "safe_common_changes_for_target": [
+        4,
+        2
+      ],
+      "t": [
+        0,
+        1,
+        0,
+        1,
+        1
+      ],
+      "target": 0,
+      "unsafe_common_changes_for_target": [
+        3,
+        2
+      ]
+    },
+    "three_holders_per_distinction": {
+      "after_deleting_first_knot": 10,
+      "allowed_states": 0,
+      "empty_pin_forces_nothing": true,
+      "first_three_distinctions_after_deletion": [
+        "000",
+        "111"
+      ],
+      "holdings": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          3,
+          4
+        ],
+        [
+          0,
+          5,
+          6
+        ],
+        [
+          1,
+          3,
+          5
+        ],
+        [
+          1,
+          4,
+          6
+        ],
+        [
+          2,
+          3,
+          6
+        ],
+        [
+          2,
+          4,
+          5
+        ]
+      ]
+    },
+    "two_place_odd_ring": {
+      "empty_pin_forces_nothing": true,
+      "states": 0
+    },
+    "two_ternary_knots_sharing_one_distinction": {
+      "loose_patterns": 14,
+      "states": 18
+    }
+  },
+  "max_common_changes_per_escape": 3,
+  "max_forcing_steps": 4,
+  "pilot": false,
+  "scope": "Connected one- through four-knot systems of arity three or four, through eight distinctions, including repeated meetings and coincident supports. Once up to renaming.",
+  "seconds": 0.376,
+  "systems_by_knots": {
+    "1": 2,
+    "2": 10,
+    "3": 32,
+    "4": 63
+  },
+  "totals": {
+    "allowed_states": 9160,
+    "at_least_two_forced": 47708,
+    "contradictory": 75822,
+    "escape_choices": 3014,
+    "extendible": 357339,
+    "partial_words": 433161,
+    "ring_free": 8,
+    "ring_free_knot_deletions": 17,
+    "ring_present": 99,
+    "stuck_pairs": 998,
+    "systems": 107,
+    "tested_pairs": 2403,
+    "unordered_state_pairs": 498188
+  }
+}

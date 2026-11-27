@@ -1,5 +1,23 @@
 # Facts held by the whole under not-all-equal, and a second layer
 
+
+> **Referee R1: refuted, two Blocks** ([report](referee-R1/report.md)). Every frozen number reproduces (all 7,075
+> census starts; every current loose pattern on all 5,111 funded first rounds). **Block:** "the only relations are
+> compositions over parts with no ring, and nothing survives one round of growth" is false: on the census's three-knot
+> ring, one ordinary birth makes a fresh distinction that takes part in a relation among three readings on disjoint
+> distinctions, seven of eight triples across 44 states, every pair free; removing any one of the four laws restores
+> the missing triple, and it stays missing through round four ([certificate](referee-R1/carrier_birth.json)). The test
+> here read only the current loose set, which a ring frees; it never tested relations among carriers using shared
+> distinctions. **Block:** "growth erases": every funded round keeps the projection onto earlier distinctions (each
+> birth can satisfy its law at its own fresh distinction), so the patterns missing on the original distinctions stay
+> missing (a six-knot chain: the same two of 1,024 through round four); it is each round's new loose set that is free.
+> **Narrowings:** the census's tie test was implied by its class test; only the chosen seven-knot tree was tested for
+> relayed values; weighted claims need a carrier and a weighting (a four-knot chain breaks the advisor's independence on
+> ring-free starts, 1/81 against 1/729); "fixes the knots but keeps no fact" becomes "the census recovers 7,074 of 7,075
+> marked presentations; ordinary not-all-equal growth can bind readings on separate carriers; their selection and
+> iteration remain open". The bound readings are not kept by single changes, and growth admits three equivalent choices
+> of them.
+
 Epic `NAE-LAYER-20261127-001`, at the coordinator's pick after `ONE-STATEMENT-20261127-001`. A check by the thread, not
 registered; computed. The sections down to "Frozen" were committed before the runs.
 

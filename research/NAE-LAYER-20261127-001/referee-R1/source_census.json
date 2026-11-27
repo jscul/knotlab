@@ -1,0 +1,983 @@
+{
+  "totals": {
+    "starts": 7075,
+    "C1 fails": 0,
+    "C1 starts with more than one allowed state": 7075,
+    "C2 fails": 0,
+    "C3 fails on starts with loose distinctions": 0,
+    "C3 zero-loose projections with one pattern": 230,
+    "C3 positive-loose starts": 6845,
+    "C3 tree-shaped starts": 15,
+    "C3 other positive-loose starts": 6830,
+    "C3 other starts with at least three loose distinctions": 4558,
+    "C3 candidate loose words, summed over positive-loose starts": 105826,
+    "C3 missing loose words, summed over positive-loose starts": 30,
+    "C3' fails on starts with loose distinctions": 0,
+    "C3' projections equal the even loose words": 7075,
+    "checked against literal enumeration": 119,
+    "C4 recorded": 500,
+    "C4 recorded failures": 0,
+    "C4 recorded after a tree-shaped start": 8,
+    "C4 possible loose words across recorded stages": 64470,
+    "tree-shaped starts with exactly the alternating patterns missing": 15
+  },
+  "raw_start_field_mismatches": [],
+  "source_state_counts": {
+    "not-all-equal": {
+      "total": 10217792,
+      "min": 14,
+      "max": 3734
+    },
+    "parity": {
+      "total": 756940,
+      "min": 4,
+      "max": 512
+    }
+  },
+  "source_pair_totals": {
+    "checked": 418293,
+    "restricted": 0
+  },
+  "source_pair_incidence": {
+    "loose + loose, co-knotted": {
+      "candidates": 5398,
+      "restricted": 0
+    },
+    "loose + loose, without common knot": {
+      "candidates": 25650,
+      "restricted": 0
+    },
+    "loose + shared, co-knotted": {
+      "candidates": 62171,
+      "restricted": 0
+    },
+    "loose + shared, without common knot": {
+      "candidates": 105859,
+      "restricted": 0
+    },
+    "shared + shared, co-knotted": {
+      "candidates": 146832,
+      "restricted": 0
+    },
+    "shared + shared, without common knot": {
+      "candidates": 72383,
+      "restricted": 0
+    }
+  },
+  "by_source_factor": {
+    "distinctions": {
+      "7": {
+        "starts": 27,
+        "tree-shaped": 1,
+        "starts with loose distinctions": 23,
+        "starts with at least three loose distinctions": 9,
+        "distinction pairs checked": 567,
+        "C4 recorded": 22
+      },
+      "8": {
+        "starts": 80,
+        "tree-shaped": 1,
+        "starts with loose distinctions": 69,
+        "starts with at least three loose distinctions": 29,
+        "distinction pairs checked": 2240,
+        "C4 recorded": 56
+      },
+      "6": {
+        "starts": 10,
+        "tree-shaped": 0,
+        "starts with loose distinctions": 7,
+        "starts with at least three loose distinctions": 2,
+        "distinction pairs checked": 150,
+        "C4 recorded": 7
+      },
+      "9": {
+        "starts": 246,
+        "tree-shaped": 2,
+        "starts with loose distinctions": 220,
+        "starts with at least three loose distinctions": 100,
+        "distinction pairs checked": 8856,
+        "C4 recorded": 98
+      },
+      "10": {
+        "starts": 736,
+        "tree-shaped": 2,
+        "starts with loose distinctions": 686,
+        "starts with at least three loose distinctions": 348,
+        "distinction pairs checked": 33120,
+        "C4 recorded": 118
+      },
+      "5": {
+        "starts": 2,
+        "tree-shaped": 0,
+        "starts with loose distinctions": 1,
+        "starts with at least three loose distinctions": 0,
+        "distinction pairs checked": 20,
+        "C4 recorded": 1
+      },
+      "11": {
+        "starts": 1904,
+        "tree-shaped": 4,
+        "starts with loose distinctions": 1839,
+        "starts with at least three loose distinctions": 1140,
+        "distinction pairs checked": 104720,
+        "C4 recorded": 111
+      },
+      "12": {
+        "starts": 4070,
+        "tree-shaped": 5,
+        "starts with loose distinctions": 4000,
+        "starts with at least three loose distinctions": 2945,
+        "distinction pairs checked": 268620,
+        "C4 recorded": 87
+      }
+    },
+    "knot arities": {
+      "all three-place": {
+        "starts": 38,
+        "tree-shaped": 5,
+        "starts with loose distinctions": 36,
+        "starts with at least three loose distinctions": 27,
+        "distinction pairs checked": 1220,
+        "C4 recorded": 13
+      },
+      "includes a knot with at least four places": {
+        "starts": 7037,
+        "tree-shaped": 10,
+        "starts with loose distinctions": 6809,
+        "starts with at least three loose distinctions": 4546,
+        "distinction pairs checked": 417073,
+        "C4 recorded": 487
+      }
+    },
+    "knots": {
+      "3": {
+        "starts": 61,
+        "tree-shaped": 2,
+        "starts with loose distinctions": 59,
+        "starts with at least three loose distinctions": 46,
+        "distinction pairs checked": 1760,
+        "C4 recorded": 59
+      },
+      "4": {
+        "starts": 1046,
+        "tree-shaped": 6,
+        "starts with loose distinctions": 1024,
+        "starts with at least three loose distinctions": 820,
+        "distinction pairs checked": 53759,
+        "C4 recorded": 441
+      },
+      "5": {
+        "starts": 5968,
+        "tree-shaped": 7,
+        "starts with loose distinctions": 5762,
+        "starts with at least three loose distinctions": 3707,
+        "distinction pairs checked": 362774,
+        "C4 recorded": 0
+      }
+    },
+    "loose distinctions": {
+      "5": {
+        "starts": 824,
+        "tree-shaped": 1,
+        "starts with loose distinctions": 824,
+        "starts with at least three loose distinctions": 824,
+        "distinction pairs checked": 50983,
+        "C4 recorded": 92
+      },
+      "6": {
+        "starts": 323,
+        "tree-shaped": 3,
+        "starts with loose distinctions": 323,
+        "starts with at least three loose distinctions": 323,
+        "distinction pairs checked": 20196,
+        "C4 recorded": 78
+      },
+      "3": {
+        "starts": 1822,
+        "tree-shaped": 0,
+        "starts with loose distinctions": 1822,
+        "starts with at least three loose distinctions": 1822,
+        "distinction pairs checked": 108445,
+        "C4 recorded": 97
+      },
+      "4": {
+        "starts": 1520,
+        "tree-shaped": 0,
+        "starts with loose distinctions": 1520,
+        "starts with at least three loose distinctions": 1520,
+        "distinction pairs checked": 92378,
+        "C4 recorded": 118
+      },
+      "2": {
+        "starts": 1529,
+        "tree-shaped": 0,
+        "starts with loose distinctions": 1529,
+        "starts with at least three loose distinctions": 0,
+        "distinction pairs checked": 88076,
+        "C4 recorded": 66
+      },
+      "1": {
+        "starts": 743,
+        "tree-shaped": 0,
+        "starts with loose distinctions": 743,
+        "starts with at least three loose distinctions": 0,
+        "distinction pairs checked": 41028,
+        "C4 recorded": 20
+      },
+      "0": {
+        "starts": 230,
+        "tree-shaped": 0,
+        "starts with loose distinctions": 0,
+        "starts with at least three loose distinctions": 0,
+        "distinction pairs checked": 11828,
+        "C4 recorded": 0
+      },
+      "7": {
+        "starts": 72,
+        "tree-shaped": 4,
+        "starts with loose distinctions": 72,
+        "starts with at least three loose distinctions": 72,
+        "distinction pairs checked": 4589,
+        "C4 recorded": 22
+      },
+      "8": {
+        "starts": 12,
+        "tree-shaped": 7,
+        "starts with loose distinctions": 12,
+        "starts with at least three loose distinctions": 12,
+        "distinction pairs checked": 770,
+        "C4 recorded": 7
+      }
+    },
+    "meeting category": {
+      "tree-shaped": {
+        "starts": 15,
+        "tree-shaped": 15,
+        "starts with loose distinctions": 15,
+        "starts with at least three loose distinctions": 15,
+        "distinction pairs checked": 761,
+        "C4 recorded": 8
+      },
+      "doubled meeting without longer ring": {
+        "starts": 340,
+        "tree-shaped": 0,
+        "starts with loose distinctions": 340,
+        "starts with at least three loose distinctions": 335,
+        "distinction pairs checked": 18931,
+        "C4 recorded": 94
+      },
+      "ring without doubled meeting": {
+        "starts": 294,
+        "tree-shaped": 0,
+        "starts with loose distinctions": 290,
+        "starts with at least three loose distinctions": 259,
+        "distinction pairs checked": 16169,
+        "C4 recorded": 25
+      },
+      "ring and doubled meeting": {
+        "starts": 6426,
+        "tree-shaped": 0,
+        "starts with loose distinctions": 6200,
+        "starts with at least three loose distinctions": 3964,
+        "distinction pairs checked": 382432,
+        "C4 recorded": 373
+      }
+    }
+  },
+  "tree_shaped_sources": [
+    {
+      "census_source_rank": 0,
+      "knot_supports": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          3,
+          4
+        ],
+        [
+          1,
+          5,
+          6
+        ]
+      ],
+      "loose": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "missing_words": [
+        "10000",
+        "01111"
+      ],
+      "alternating_by_holder": true,
+      "C4 recorded": true
+    },
+    {
+      "census_source_rank": 1,
+      "knot_supports": [
+        [
+          0,
+          1,
+          2,
+          3
+        ],
+        [
+          0,
+          4,
+          5
+        ],
+        [
+          1,
+          6,
+          7
+        ]
+      ],
+      "loose": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "missing_words": [
+        "110000",
+        "001111"
+      ],
+      "alternating_by_holder": true,
+      "C4 recorded": true
+    },
+    {
+      "census_source_rank": 61,
+      "knot_supports": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          3,
+          4
+        ],
+        [
+          1,
+          5,
+          6
+        ],
+        [
+          2,
+          7,
+          8
+        ]
+      ],
+      "loose": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "missing_words": [
+        "000000",
+        "111111"
+      ],
+      "alternating_by_holder": true,
+      "C4 recorded": true
+    },
+    {
+      "census_source_rank": 62,
+      "knot_supports": [
+        [
+          0,
+          1,
+          2,
+          3
+        ],
+        [
+          0,
+          4,
+          5
+        ],
+        [
+          1,
+          6,
+          7
+        ],
+        [
+          2,
+          8,
+          9
+        ]
+      ],
+      "loose": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "missing_words": [
+        "1000000",
+        "0111111"
+      ],
+      "alternating_by_holder": true,
+      "C4 recorded": true
+    },
+    {
+      "census_source_rank": 63,
+      "knot_supports": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        [
+          0,
+          5,
+          6
+        ],
+        [
+          1,
+          7,
+          8
+        ],
+        [
+          2,
+          9,
+          10
+        ]
+      ],
+      "loose": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "missing_words": [
+        "11000000",
+        "00111111"
+      ],
+      "alternating_by_holder": true,
+      "C4 recorded": true
+    },
+    {
+      "census_source_rank": 87,
+      "knot_supports": [
+        [
+          0,
+          1,
+          3
+        ],
+        [
+          0,
+          2,
+          4
+        ],
+        [
+          1,
+          5,
+          6
+        ],
+        [
+          2,
+          7,
+          8
+        ]
+      ],
+      "loose": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "missing_words": [
+        "011100",
+        "100011"
+      ],
+      "alternating_by_holder": true,
+      "C4 recorded": true
+    },
+    {
+      "census_source_rank": 88,
+      "knot_supports": [
+        [
+          0,
+          1,
+          3
+        ],
+        [
+          0,
+          2,
+          4,
+          5
+        ],
+        [
+          1,
+          6,
+          7
+        ],
+        [
+          2,
+          8,
+          9
+        ]
+      ],
+      "loose": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "missing_words": [
+        "0111100",
+        "1000011"
+      ],
+      "alternating_by_holder": true,
+      "C4 recorded": true
+    },
+    {
+      "census_source_rank": 89,
+      "knot_supports": [
+        [
+          0,
+          1,
+          3,
+          4
+        ],
+        [
+          0,
+          2,
+          5,
+          6
+        ],
+        [
+          1,
+          7,
+          8
+        ],
+        [
+          2,
+          9,
+          10
+        ]
+      ],
+      "loose": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "missing_words": [
+        "00111100",
+        "11000011"
+      ],
+      "alternating_by_holder": true,
+      "C4 recorded": true
+    },
+    {
+      "census_source_rank": 1107,
+      "knot_supports": [
+        [
+          0,
+          1,
+          2,
+          3
+        ],
+        [
+          0,
+          4,
+          5
+        ],
+        [
+          1,
+          6,
+          7
+        ],
+        [
+          2,
+          8,
+          9
+        ],
+        [
+          3,
+          10,
+          11
+        ]
+      ],
+      "loose": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "missing_words": [
+        "00000000",
+        "11111111"
+      ],
+      "alternating_by_holder": true,
+      "C4 recorded": false
+    },
+    {
+      "census_source_rank": 1112,
+      "knot_supports": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          3,
+          4
+        ],
+        [
+          1,
+          5,
+          6
+        ],
+        [
+          2,
+          7,
+          8
+        ],
+        [
+          3,
+          9,
+          10
+        ]
+      ],
+      "loose": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "missing_words": [
+        "1111100",
+        "0000011"
+      ],
+      "alternating_by_holder": true,
+      "C4 recorded": false
+    },
+    {
+      "census_source_rank": 1113,
+      "knot_supports": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          3,
+          4,
+          5
+        ],
+        [
+          1,
+          6,
+          7
+        ],
+        [
+          2,
+          8,
+          9
+        ],
+        [
+          3,
+          10,
+          11
+        ]
+      ],
+      "loose": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "missing_words": [
+        "11111100",
+        "00000011"
+      ],
+      "alternating_by_holder": true,
+      "C4 recorded": false
+    },
+    {
+      "census_source_rank": 1114,
+      "knot_supports": [
+        [
+          0,
+          1,
+          2,
+          4
+        ],
+        [
+          0,
+          3,
+          5
+        ],
+        [
+          1,
+          6,
+          7
+        ],
+        [
+          2,
+          8,
+          9
+        ],
+        [
+          3,
+          10,
+          11
+        ]
+      ],
+      "loose": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "missing_words": [
+        "01111100",
+        "10000011"
+      ],
+      "alternating_by_holder": true,
+      "C4 recorded": false
+    },
+    {
+      "census_source_rank": 1184,
+      "knot_supports": [
+        [
+          0,
+          1,
+          4
+        ],
+        [
+          0,
+          2,
+          5
+        ],
+        [
+          1,
+          3,
+          6
+        ],
+        [
+          2,
+          7,
+          8
+        ],
+        [
+          3,
+          9,
+          10
+        ]
+      ],
+      "loose": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "missing_words": [
+        "0110000",
+        "1001111"
+      ],
+      "alternating_by_holder": true,
+      "C4 recorded": false
+    },
+    {
+      "census_source_rank": 1185,
+      "knot_supports": [
+        [
+          0,
+          1,
+          4
+        ],
+        [
+          0,
+          2,
+          5
+        ],
+        [
+          1,
+          3,
+          6,
+          7
+        ],
+        [
+          2,
+          8,
+          9
+        ],
+        [
+          3,
+          10,
+          11
+        ]
+      ],
+      "loose": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "missing_words": [
+        "01110000",
+        "10001111"
+      ],
+      "alternating_by_holder": true,
+      "C4 recorded": false
+    },
+    {
+      "census_source_rank": 1186,
+      "knot_supports": [
+        [
+          0,
+          1,
+          4,
+          5
+        ],
+        [
+          0,
+          2,
+          6
+        ],
+        [
+          1,
+          3,
+          7
+        ],
+        [
+          2,
+          8,
+          9
+        ],
+        [
+          3,
+          10,
+          11
+        ]
+      ],
+      "loose": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "missing_words": [
+        "00110000",
+        "11001111"
+      ],
+      "alternating_by_holder": true,
+      "C4 recorded": false
+    }
+  ],
+  "C4_recorded_selection": {
+    "evidence": "Selection and denominators from the recorded fields. Growth is checked separately.",
+    "first_census_source_rank": 0,
+    "last_census_source_rank": 707,
+    "sources_without_C4_through_last_rank": 208,
+    "sources_after_last_rank": 6367,
+    "stages_by_new_loose_count": {
+      "1": 39,
+      "2": 34,
+      "3": 110,
+      "4": 53,
+      "5": 50,
+      "6": 104,
+      "7": 34,
+      "8": 39,
+      "9": 20,
+      "10": 13,
+      "12": 4
+    },
+    "stages_with_at_least_three_loose_distinctions": 427
+  },
+  "inputs": {
+    "research/FORBID-EDITS-20261126-001/starts.json": "ba937f95092234f8e1d8a08c20e86996a3aa58d187f137629b2c55d7e0553d6e",
+    "research/NAE-LAYER-20261127-001/census.jsonl": "2ba35ff04e5f327cdc245b747381a8e4091de3dba951bcadbbc40536b7aa7da4"
+  },
+  "census_generation": {
+    "limits": "Connected starts of three to five knots with at most twelve distinctions, at least three places per knot, at most two loose distinctions per knot, and one or two shared distinctions per meeting pair.",
+    "order": "First admissible source enumerations in knot count, occupied-pair count, lexical occupied pairs, multiplicities and loose counts. The reported start is the least renaming by its meeting list and then loose counts. Shared distinction names precede loose names.",
+    "exact_order_comparisons": 7075,
+    "raw_source_records": 7075
+  },
+  "controls": {
+    "truth_tables": "Literal state enumeration for both laws on every source with up to eight distinctions.",
+    "C1 and C2": "A supplied three-distinction relation with only 000 and 111 has two single-change classes and a tied pair. Both readers detected the failure.",
+    "C3 independent opportunities": "With at least three loose distinctions a missing word can survive the every-pair-free check. With two or fewer, pair freedom, complement symmetry or nonemptiness suffice."
+  },
+  "raw_tally": {
+    "starts": 7075,
+    "C1 fails": 0,
+    "C2 fails": 0,
+    "C3 fails": 0,
+    "C3' fails": 0,
+    "C4 read": 500,
+    "C4 fails": 0
+  },
+  "recomputed_tally": {
+    "starts": 7075,
+    "C1 fails": 0,
+    "C2 fails": 0,
+    "C3 fails": 0,
+    "C3' fails": 0,
+    "C4 read": 500,
+    "C4 fails": 0
+  },
+  "raw_tally_matched": true
+}

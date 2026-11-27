@@ -6173,6 +6173,11 @@ evidence: results and their status come from the records each entry links.
   even sign but are not necessary (R forces even at five reached types), and R can be evaluated stage by stage; what
   the birth rules out is a persistent R. The next test reads R off the whole fixed structure (`EVENTUAL-R-20261126-001`).
 - **History.**
+  - 2026-11-27 · Placed by `TOY-PHASE-20261127-001` (exact, referee pending): with joint values a three-place parity knot is
+    one toy bit of Spekkens's toy theory, and growth's four-knot closure is a toy state under all 216 reader assignments and
+    a qubit stabilizer state under none. The odd close needs each reader's two reads to anticommute, a phase of order four
+    (the literature's Z4) that no operation on values gives; dropping this assumption is what such a phase needs. Status
+    unchanged. [Toy theory and phase groups](../research/TOY-PHASE-20261127-001/decision.md)
   - 2026-11-27 · Two old words supplying the same three loose values at the close can carry opposite relative signs. Ordinary value reads on the fixed sibling preparation still admit a common list. [Birth sign and joint sibling weights](../research/BIRTH-SIGN-WEIGHT-20261127-001/decision.md)
   - 2026-11-26 · Entered, under challenge, by `NO-WHOLE-STATE-20261126-001` at the coordinator's request, beside A126
     and A294.
@@ -6487,4 +6492,7 @@ evidence: results and their status come from the records each entry links.
 - **Rests on it.** Every placement claim of the toy-phase study: that one parity knot is one toy bit, that the even closure is a toy state and no stabilizer state, that the record's coherent constructions supply a phase of order four (the literature's Z4). [Design](../research/TOY-PHASE-20261127-001/README.md)
 - **Challenge.** Take the other coordinate choices of Map K (six), the other assignments of Map R (216) and the other pairings of the six distinctions into readers (14); a result claimed about the model must hold under all of them. The not-all-equal knot is the control: it is no toy bit. An operation of the model that carried one read of a reader to another with a phase of order four would overturn the placement.
 - **History.**
+  - 2026-11-27 · Tested under every choice it has (exact, referee pending): all 6 coordinate choices of Map K and all 216
+    assignments of Map R give the same verdicts; the pairing matters, the toy theory accepting 7 of the 15, among them the
+    record's readers (the pairs no knot holds together). [Toy theory and phase groups](../research/TOY-PHASE-20261127-001/decision.md)
   - 2026-11-27 · Entered with the toy-phase study's frozen design.

@@ -110,3 +110,39 @@ exception. Pieces with a cycle stay outside the reading.
 
 The weightings (`tree+` primary, `grow` second), the seed, the bucket sizes and the 24-round horizon; entered in the
 register with the results. The reading is the record's, unchanged.
+
+## Results (added after the run, 27 November 2026)
+
+Computed; referee pending. Scores: `scored_*.jsonl` (one line a start and law); growths: `grown_*.jsonl`.
+
+| Starts | Flags | Under each law | Prediction |
+| --- | --- | --- | --- |
+| 41 `tree+`, 86 `grow` (127) | neither | **all agree** in every round read, both readings (212 of 254 start-and-law cases read to round 24; 42 closed earlier, by rounds 2 to 12, with the closing predicted) | F1 held |
+| 39 `tree+` | split pair (with a route cycle) | all differ, first at round 2 | F2 held |
+| 6 `grow` | split pair, no route cycle | all differ, first at round 1 | F2 and **F4 held**: the split pair, not the route cycle, is the exception |
+| 3 `tree+`, 1 `grow` | cells sharing two knots | all differ at round 1 | F3 held |
+| census entry 6408, the hand-built eight-knot start | split pair (route cycle) | differ at round 2 | F5 held (the record's misses) |
+| the advisor's eight-knot start | split pair, no route cycle | differs at round 1 | F5 held (the advisor's hand prediction); its growth stopped at the engine's guard after 8 rounds, which changes no verdict |
+
+**So the exception is the split pair, a fact read off the start without growing.** On 254 fresh start-and-law cases
+and the six replays, the graded order reads every round of every start in which no valid set has two parents that share
+no parent and no two group cells share two knots, and fails on every start with either; the failure comes at round 1
+or 2. The route-cycle flag of the quick check was a special case: it misses the six `grow` starts and the advisor's
+start.
+
+**The statement to prove (stands as frozen).** In the late-views predictor's class, a start whose graded order has no
+split pair and no two group cells sharing two knots has as its births exactly the valid sets of its graded order, each
+with the sets it covers as parents and the sets covering it, plus one per chain, as fresh distinctions, with the relay and
+closing of `late.py` and the fresh count's floor max(D, 3 − p, 1). A proof needs Lemma R (`REDUCE-BLOCKS`, proved) and one
+lemma about the order: any two parents of a valid set share a parent, and every set of births that pairwise share a
+parent and lies in no one parent's children is the parent set of exactly one valid set. On starts with a split pair the
+growth makes one birth for each such set where the reading makes one for their union; reading those as separate births
+is the next step, and it is what a proof of the general case would have to count.
+
+**Pieces with a cycle.** The reading does not extend to them as it stands: it counts valid sets of a finite tree-like
+order, and a cycle of the map unrolls (the literature's universal cover) into infinitely many sets, of which the growth
+counts the orbits (`RING-IDENT`). A split pair is the smallest place where the order stops being the map's own; pieces
+with a cycle need the transfer-matrix count of the late-views study's direction 3.
+
+**Not shown.** Starts of eight knots or more beyond the two built ones; weightings other than the two; the order lemma;
+explosive starts (none appeared: every growth here ended, stopped at the horizon or hit the guard after a difference).

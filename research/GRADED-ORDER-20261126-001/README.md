@@ -146,3 +146,44 @@ with a cycle need the transfer-matrix count of the late-views study's direction 
 
 **Not shown.** Starts of eight knots or more beyond the two built ones; weightings other than the two; the order lemma;
 explosive starts (none appeared: every growth here ended, stopped at the horizon or hit the guard after a difference).
+
+## The order lemma and a reading for the exception (after the run; the coordinator's next pick)
+
+**Reduction (proved).** By Lemma R (`REDUCE-BLOCKS-20261119-001A`, items 1 and 3), round 1's births are the round-1
+groups, and from round 1 on a round's births are, among the last round's, the maximal sets of three or more that
+pairwise share a parent and do not all share one, and the candidate pairs no such set contains (the **round rule**).
+Births along an endless chain never enter a group of the start's finite core: a chain birth has a core parent only when
+it holds one chain step, and then that parent C is its only core parent, so every core birth sharing a parent with it is
+a child of C; a group containing it would then share the parent C, which a group may not. So the core's births are
+the round rule iterated on the core alone, from the round-1 groups. The graded order is exact exactly when that
+iteration returns, at every rank, the valid sets with their covering relation: the **order lemma**.
+
+**The order lemma, checked without growing (computed).** `order.py check` applies the round rule to the valid sets of
+each rank and compares with the next rank's parent sets: it holds at every rank on all 127 fresh starts without the
+exception, on the two starts with two cells sharing two knots and no split pair from rank 1 on (their failure is at rank
+0 to 1, where the reading gives a cell no valid set), and fails on every start with a split pair, at rank 1 or 2.
+
+**A reading for the exception: the core's births as nodes (post hoc).** Build the core's births by the round rule from
+the round-1 groups, each birth a node (its points the union of its parents'), so that two births with one union are two
+births; then count chains and the relay as `late.py` does, the relay taken by the one last core birth holding the whole
+piece (`order.py core --groups`). Two choices were made after looking at these starts: the relay's birth (taking every
+whole-piece birth failed on 29 not-all-equal starts) and rank 1 from the groups rather than the valid sets (which fixed
+the four starts with two cells sharing two knots). With both, it reads every round of all 176 fresh starts under both
+laws, all 49 exception starts included, and the hand-built eight-knot start; it misses census entry 6408 at round 6
+under both laws (unexplained), and on the advisor's eight-knot start the core's round rule passes 200,000 births and is
+stopped (that start's growth stops at the engine's guard).
+
+### The held-out test of the node reading (frozen before any of these starts is grown)
+
+**Population.** New draws, seed 20261128, every start of the earlier samples excluded up to renaming: seven knots,
+`tree+` (60,000 draws, 40 a bucket; 47 starts, 7 with a split pair) and `grow` (300,000 draws, 60 a bucket; 76 starts, 4
+with a split pair, one also with cells sharing two knots) ([held_treeplus.jsonl](held_treeplus.jsonl),
+[held_grow.jsonl](held_grow.jsonl)); and one size past, eight knots, `tree+` (30,000 draws, 30 a bucket; 116 starts: 63
+with a split pair, 32 of them also with cells sharing two knots, 13 with cells sharing two knots only, 40 with neither)
+([held8_treeplus.jsonl](held8_treeplus.jsonl)). Grown to round 24 under both laws as before.
+
+| # | Prediction | Fails when |
+| --- | --- | --- |
+| H1 | The node reading agrees in every round read, both readings, both laws, on every held-out start whose core round rule finishes (70% for seven knots, 55% for eight) | any such start differs |
+| H2 | The graded order, unchanged, agrees on every held-out start with neither flag and differs on every start with one (85% seven, 75% eight) | either way |
+| H3 | Every miss of the node reading, if any, is on a start with chains, as 6408 has (60%) | a chain-free miss |

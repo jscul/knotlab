@@ -86,13 +86,13 @@ def stars_of(sizes, edges):
     return stars
 
 
-def draw(out, kind='grow', draws=DRAWS, per=PER):
+def draw(out, kind='grow', draws=DRAWS, per=PER, seed=SEED, exclude=()):
     path = ROOT + '/experiments/WEIGHTINGS-20261119-001B/WEIGHTINGS-20261119-001B-E001_weights/weightlib.py'
     spec = importlib.util.spec_from_file_location('wl', path); WL = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(WL)
-    rng = random.Random(SEED); kept = collections.defaultdict(list); seen = set(); tally = collections.Counter()
+    rng = random.Random(seed); kept = collections.defaultdict(list); seen = set(exclude); tally = collections.Counter()
     for i in range(draws):
-        sizes, edges = WL.sample(kind, 7, rng)
+        sizes, edges = WL.sample(kind, int(os.environ.get('KNOTS', '7')), rng)
         stars = stars_of(sizes, edges)
         key = canon(sizes, edges)
         M = late.Map(stars)
@@ -142,5 +142,11 @@ def score_file(law, src):
 if __name__ == '__main__':
     cmd = sys.argv[1]
     if cmd == 'draw': draw(sys.argv[2], *(sys.argv[3:4] or ['grow']), *[int(a) for a in sys.argv[4:6]])
+    elif cmd == 'heldout':                   # graded.py heldout OUT KIND DRAWS PER SEED PRIOR.jsonl...: repeats of PRIOR excluded
+        prior = set()
+        for fn in sys.argv[7:]:
+            for l in open(fn):
+                x = json.loads(l); prior.add(canon(x['sizes'], x['edges']))
+        draw(sys.argv[2], sys.argv[3], int(sys.argv[4]), int(sys.argv[5]), int(sys.argv[6]), prior)
     elif cmd == 'grow': grow(sys.argv[2], sys.argv[3], sys.argv[4])
     elif cmd == 'score': score_file(sys.argv[2], sys.argv[3])

@@ -1,0 +1,32 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "CYCLE-READ-20261127-001",
+    "TWO-EXCEPTIONS-20261127-001"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "groups": [
+      "spacing"
+    ],
+    "program": "topology",
+    "takes": [
+      "TWO-EXCEPTIONS-20261127-001#1"
+    ]
+  },
+  "id": "CAPPED-CORES-20261127-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "Under G17 with G1, after TWO-EXCEPTIONS-20261127-001 and the cycle study's referee (which found capped cores that finish and one that repeats): for the starts whose node core passed the cap under the tree+ and grow weightings, certify without growing which cores finish (completed under a larger cap, or by the subset pattern: a rank whose births all share one parent ends after 2^m - m - 1 more births), which repeat (the parent incidence of one rank isomorphic to an earlier rank's, so Lemma R's round rule repeats forever), and which remain unresolved; count each class by weighting and size, so that how often a core is unending is stated with its weighting.",
+  "ownership": {
+    "root": true,
+    "scope_id": "CAPPED-CORES-20261127-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Planned",
+  "status_class": "planned",
+  "stop_rule": "",
+  "title": "What the node cores over the cap are: finishing, repeating or growing without bound"
+}

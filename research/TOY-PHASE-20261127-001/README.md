@@ -1,5 +1,15 @@
 # Where the model's values sit: Spekkens's toy theory and the phase it lacks
 
+> **Notice, 27 November 2026: refereed (R1), confirmed with fixes, no Block** ([the report](referee-R1/report.md); the
+> narrowings in full at the top of [the decision](decision.md)). The frozen text below is unchanged. Read it with these
+> corrections: the involution argument of P2 holds only for a three-place knot (a four-place parity knot has a value
+> permutation that keeps a read and squares to an allowed change), so the order of operations is not the obstruction;
+> P3(b)'s "stabilizer state under none" is for one qubit per reader with two distinct Paulis; the reads whose product
+> squares to −1 are forced by the perfect three-reader target, not by every excess; and the prior-work line "no program
+> record compares the model with Spekkens's toy theory or the phase groups" is false: `NATIVE-PHASE-READ-20261125-001`
+> did, for one reader, and gave the four-place case. The section "Review before the freeze" misstates the 2007 rule: bare
+> counts accept all 15 pairings; with other readers' reads, including the third local question, 7 of 15.
+
 Epic `TOY-PHASE-20261127-001`, under G18 Comparing growth laws, at the owner's go-ahead ("Yes continue with 1") on
 direction 1 of the overall assessment of 27 November 2026: place the model against Spekkens's toy theory and the phase
 groups of Coecke, Edwards and Spekkens. Design, arguments and predictions frozen before the code was run, after an

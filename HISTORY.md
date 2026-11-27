@@ -3,6 +3,10 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 27 November 2026 · The toy-theory placement refereed: confirmed with fixes
+
+**Corrections from [an independent referee's report](research/TOY-PHASE-20261127-001/referee-R1/report.md), folded into [the decision](research/TOY-PHASE-20261127-001/decision.md).** The counts stand: growth's four-knot closure is a toy state of Spekkens's toy theory under all 216 reader assignments and, with one qubit per reader carrying two distinct Pauli reads, a stabilizer state under none. Withdrawn: the argument that no operation on a knot's values can square to the knot's allowed change, which holds for a three-place knot but not a four-place one; what holds a value model at the classical limit is one common weighting of its reads (Fine), not the order of its operations. Narrowed: the perfect three-reader target, not every excess, forces reads whose product squares to −1; the knot-as-toy-bit identification covers states, questions, one-read preparations and shifts. Credit: [an earlier study](research/NATIVE-PHASE-READ-20261125-001/results.md) had already read one knot as a single reader's three questions and found the four-place case.
+
 ## 27 November 2026 · What growth selects at the second layer: two referees
 
 **Corrections from the referees of [the selected knots](research/SELECTED-KNOTS-20261127-001/referee-R1/report.md) and [the pair cost](research/TREE-PROOF-20261127-001/referee-R1/report.md), folded into [lesson 12.3](INTUITIONS.md#123-whether-it-happens-again-one-pattern-up).** The cost of the least change that flips exactly two families' facts is a shortest chain of steps, each the families' distance in the start plus two plus two a round (proved and refereed). The claims that growth selects knots meeting only as a tree, and that the tree is read off distances between allowed states alone, are withdrawn: the same facts carry knots meeting in a loop, and two starts with the same allowed states give different trees.

@@ -1,22 +1,63 @@
 # Where the model's values sit: Spekkens's toy theory and the phase it lacks
 
+> **Referee report R1, 27 November 2026: confirmed with fixes, no Block** ([the report](referee-R1/report.md)). Every
+> count was rebuilt with independent code: the 216 assignments, the 216 Pauli assignments (13,824 probabilities), the
+> 1,080 pure toy states, the 15 pairings, the 32 phase choices, the three coherent constructions and the 5/8 control, the
+> 60 stabilizer states and the sibling scores, and all 115 certificates. Read this record with these narrowings
+> (logged in `docs/CORRECTIONS.md`):
+> - **The square root exists on values at four places.** "Every operation on a knot's values that keeps a read is an
+>   involution" holds only for the four states of a three-place knot. On a four-place parity knot,
+>   F(a, b, c, h) = (a, 1⊕c, b, 1⊕h) keeps a, carries the b-read to the c-read and squares to the flip of b and c. So the
+>   order of an operation is not the obstruction, and the inference "a phase of order four needs states that do not give
+>   every distinction a value" is withdrawn. What survives is the common-weighting bound: when every read is a value of one
+>   weighting used across settings, the score is at most 3/4 (Fine), whatever operations exist.
+> - **What the excess requires.** Reads whose product squares to −1 are forced by the *perfect* three-reader target with
+>   binary reads that commute across readers. An excess alone needs less: X and (X+Y)/√2 at every reader give 7/8; the
+>   sibling's second pair does not anticommute; the part-counting fixture reaches the 64 entries without operators.
+>   "Every table above the classical limit used reads whose product squares to −1" is withdrawn in that form.
+> - **"A stabilizer state under none"** holds for one qubit per reader with two distinct Pauli reads (Map R). With one
+>   qubit per distinction read by Z, a stabilizer state gives the even table.
+> - **"Exactly one toy bit"** identifies the four states, three question partitions, six one-read preparations and three
+>   shifts; measurement updates and the toy theory's other transformations need further rules. "Each distinction is the
+>   sum of the other two" holds on raw bits only for the even law (the odd law relabels one answer).
+> - **A295 and the toy theory.** A common assignment makes the four laws' total even and, with one weighting across
+>   settings, gives the 3/4 bound. It does not give the toy theory's restriction on what can be known, and the phase groups
+>   concern the literature's specified theories. The state-existence criterion of direction 1 needs commuting Hermitian
+>   Pauli checks with consistent signs.
+> - **The state phase and the certificates.** "Without a phase on the state no scored context is certain" holds for the
+>   unphased reference with the first reads fixed; the phase can be moved into the reads. The 115 certificates are signed
+>   identities on every input: they extend the parity comparison, not state uniqueness, the three-reader table or the
+>   pairing count, and their toy reading is even in every holder only with unsigned questions.
+> - **Missed prior work (not a block).** `NATIVE-PHASE-READ-20261125-001` already read one parity knot as a single reader's
+>   Z, X and Y questions (the six preparations and 30 conditional updates), bounded the calibrated quarter turn over all
+>   256 four-word maps, gave the four-place pulse and cited the phase groups; the no-whole-state referee had multiplied
+>   all 115 certificates. This study adds the systematic comparison on growth's closure (216 assignments, 15 pairings,
+>   toy and stabilizer readings) and places the birth-sign constructions in it.
+> - **Precision (not a block).** "Exact" means finite enumeration with exact counts plus numerical matrix and eigenvalue
+>   checks; the comparator kept a relative tolerance, and two negative flags in `results.json` were written as the string
+>   "False". "All seven frozen predictions held" means the archived run passes the frozen gates, which in P3 and P5 were
+>   weaker than their prose; the referee's counts verify the stronger claims. The control's 5/8 drops the sign at all
+>   three readers (at one reader it gives 3/4).
+
 Epic `TOY-PHASE-20261127-001`, at the owner's go-ahead on direction 1 of the overall assessment of 27 November 2026.
 Design, predictions, review and results: [README.md](README.md); code [toy_phase.py](toy_phase.py) and
 [stress_certificates.py](stress_certificates.py); outputs [results.json](results.json) and
-[stress_certificates.json](stress_certificates.json). Exact computation, all seven frozen predictions held; independent
-referee pending (brief in `referee-R1/`).
+[stress_certificates.json](stress_certificates.json). Finite enumeration with exact counts and numerical matrix checks;
+the frozen gates pass; refereed (R1, confirmed with fixes, no Block).
 
 | Scope | Verdict | Why |
 | --- | --- | --- |
 | This attempt — the model against Spekkens's toy theory and the phase groups | **Status:** Successful | A parity knot is a toy bit; growth's closure is a toy state under all 216 reader assignments and a stabilizer state under none |
-| Local direction — tables above the classical limit from a model whose states give every distinction a value | Retire (settled) | The odd close needs reads whose product squares to −1, which no operation on a reader's values gives |
+| Local direction — tables above the classical limit from a model whose states give every distinction a value | Retire (settled) | Values read from one common weighting score at most 3/4 (Fine), whatever operations exist (narrowed by R1) |
 | Broader exploration — quantum behaviour by a declared extension | Known alternatives | A phase of order four with a sign rule at birth; the toy side's own protocols |
 | Long-term goal — G18 Comparing growth laws | Obstruction learned | The quantum line's obstruction in its exact known form, Z2×Z2 against Z4; referee pending |
 
 The attempt answers its question on the record's own objects, and the stress test carries the closure's dichotomy to all
 115 operator certificates of the four-readings study, 79 of them on patterns growth closes. What it leaves open is not a
-search inside the model but a choice of model: a phase of order four needs states that do not give every distinction a
-value (A295), that is, a relation between two allowed states that carries a phase, the account's one missing piece.
+search inside the model but a choice of model: a table above the classical limit needs reads that are not values of one
+common weighting (A295 with one weighting across settings), that is, a relation between two allowed states that carries
+a phase, the account's one missing piece. (Narrowed by R1: the reason is the common weighting, not the order of
+operations, since a four-place parity knot has a value permutation that squares to an allowed change.)
 
 **Next step:** Full pivot — selected: #1
 
@@ -44,9 +85,11 @@ value (A295), that is, a relation between two allowed states that carries a phas
    agree, and the gap found here exists only for two-valued distinctions. Payoff 1/3 (a footnote on why two values are where the gap sits); concreteness 3/3 (known
    mathematics, a cheap exact check).
 
-**STOP** on tables above the classical limit inside a model whose states give every distinction a value. Settled: under
-A295 the model is the toy side of the phase-group dichotomy, so its closing law is even whatever the growth law, and the
-odd close needs reads whose product squares to −1. Open: a declared extension (row 1), which is the owner's choice. A
+**STOP** on tables above the classical limit inside a model whose states give every distinction a value. Settled: with a
+common assignment the four laws' total is even, and with one weighting across settings the score is at most 3/4,
+whatever the growth law; the perfect three-reader target with binary reads commuting across readers needs reads whose
+product squares to −1 (narrowed by R1 from "the odd close needs ...", and from the toy-side reading of A295, which gives
+no restriction on what can be known). Open: a declared extension (row 1), which is the owner's choice. A
 definition of state that drops A295 would reopen the line. Every computation here is exact on fixed objects; the referee
 can rerun it in seconds.
 
@@ -106,8 +149,9 @@ design by hand, read-only, before the freeze. Six changes followed, listed in th
 ## Intuitions (exact links, not evidence)
 
 - **A square root of the knot's own change.** The knot's allowed change {B, c} is the literature's Z on that knot. The
-  odd close needs its square root S. Every operation on the knot's values that keeps a read is an involution, so the
-  root does not exist among them; it exists only as a phase.
+  odd close needs its square root S. On a three-place knot every operation on the values that keeps a read is an
+  involution, so the root does not exist among them. (Narrowed by R1: a four-place parity knot has one,
+  F(a, b, c, h) = (a, 1⊕c, b, 1⊕h), and its reads still have a common assignment; the root on values changes no table.)
 - **The cost of reordering is the phase group's doubling.** The account's identity (the closing sign is the cost of
   reordering) and the doubling in the phase group (the closing phase is twice the readers' phases) are one statement: in
   Z2×Z2 every doubling is the identity, so values never pay.

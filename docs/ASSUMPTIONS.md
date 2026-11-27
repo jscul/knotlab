@@ -362,6 +362,7 @@ evidence: results and their status come from the records each entry links.
 | [A304](#a304--the-countings-tested-on-small-sampled-starts-fourteen-distinctions-two-rounds) | The countings tested on small sampled starts: fourteen distinctions, two rounds | scaffold | Assumed |
 | [A305](#a305--the-transfer-laws-tables-a-declared-start-weighting-the-coherent-version-and-rotated-reads) | The transfer law's tables: a declared start weighting, the coherent version and rotated reads | scaffold | Assumed |
 | [A306](#a306--at-most-two-holders-at-the-second-layer) | At most two holders at the second layer | scaffold | Assumed |
+| [A307](#a307--cycle-starts-two-twin-weightings-and-count-caps-to-test-the-node-reading-and-its-twin-exception) | Cycle starts, two twin weightings and count caps to test the node reading and its twin exception | scaffold | Assumed |
 
 ## Entries
 
@@ -6375,3 +6376,14 @@ evidence: results and their status come from the records each entry links.
   - 2026-11-27 · Referee R1 of `ONE-STATEMENT-20261127-001`: the cap excludes the earlier loop basis; of 11 loose sets,
     three admit four bases each, so the cap and the loose set together still do not choose one.
   - 2026-11-27 · Entered with part (b) of `ONE-STATEMENT-20261127-001`.
+
+### A307 · Cycle starts, two twin weightings and count caps to test the node reading and its twin exception
+
+**Assumed** · 2026-11-27 · scaffold
+
+- **Statement.** For one study of G17 with G1, choices made to test the node reading of a growth from its start on pieces with a cycle and to test its twin exception afresh: the earlier samples' starts with a piece with a cycle (41 six-knot uniform, 52 seven-knot `tree+`, 66 seven-knot `grow`); twin samples of the standard `tree+` weighting at nine knots (seed 20261130, 20,000 draws) and of the scaffold weighting `tree+s50` (`tree+` with one more loose distinction on each knot with chance one half) at eight knots (seed 20261131, 6,000 draws), kept by twin flag and chains up to 40 a bucket, repeats and earlier samples removed up to renaming; the core built to rank 25; a core called unending past 5,000 listed families or 250,000 parent-sharing pairs in one round (counts); growth to round 24, two minutes a start at most.
+- **Why.** Adopted by the thread on 27 November 2026 for `CYCLE-READ-20261127-001` at the coordinator's pick; chained twins are too few under the earlier weightings (none in 417 sample starts but two), and the advisor asked that no time limit decide a start.
+- **Rests on it.** The study's three parts ([the note](../research/CYCLE-READ-20261127-001/README.md)).
+- **Challenge.** Other weightings and sizes (ten knots and more); other caps, which change which starts are read, not the verdict on a start that is read; a longer growth limit for the twelve chained-twin starts not grown in two minutes. The twin exception held under both twin weightings, so it is about the reading, not the weighting; the caps were not varied. The model is not expected to keep these choices.
+- **History.**
+  - 2026-11-27 · Entered with `CYCLE-READ-20261127-001`: every read start without chained twins agrees (122 with a cycle, 263 fresh), every scored start with them differs (11 and 42), at the round equal to their least rank.

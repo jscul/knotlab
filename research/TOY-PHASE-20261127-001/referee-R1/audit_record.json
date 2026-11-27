@@ -1,0 +1,2271 @@
+{
+  "history": {
+    "freeze": "675f3dc0ae",
+    "closure": "eff6bce09b",
+    "original code unchanged": true,
+    "as-sent report appended at": "a6927906c3",
+    "frozen README unchanged as prefix": true,
+    "closed files verified": [
+      "README.md",
+      "toy_phase.py",
+      "results.json",
+      "stress_certificates.py",
+      "stress_certificates.json"
+    ],
+    "files at freeze": [
+      "research/TOY-PHASE-20261127-001/README.md",
+      "research/TOY-PHASE-20261127-001/toy_phase.py"
+    ]
+  },
+  "one round of growth": {
+    "knots": [
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        1,
+        3,
+        4
+      ],
+      [
+        0,
+        3,
+        5
+      ],
+      [
+        2,
+        4,
+        5
+      ]
+    ],
+    "unheld pairs": [
+      [
+        0,
+        4
+      ],
+      [
+        1,
+        5
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "births": 1,
+    "fresh distinctions": 0,
+    "next round": "closed",
+    "counts by four sign bits in parent order then close": {
+      "0000": 8,
+      "0001": 0,
+      "0010": 0,
+      "0011": 8,
+      "0100": 0,
+      "0101": 8,
+      "0110": 8,
+      "0111": 0,
+      "1000": 0,
+      "1001": 8,
+      "1010": 8,
+      "1011": 0,
+      "1100": 8,
+      "1101": 0,
+      "1110": 0,
+      "1111": 8
+    }
+  },
+  "canonical checks": {
+    "even": {
+      "allowed": [
+        "000",
+        "011",
+        "101",
+        "110"
+      ],
+      "binding": true,
+      "invisible_in_parts": true,
+      "coexistence": true
+    },
+    "odd": {
+      "allowed": [
+        "001",
+        "010",
+        "100",
+        "111"
+      ],
+      "binding": true,
+      "invisible_in_parts": true,
+      "coexistence": true
+    },
+    "not-all-equal": {
+      "allowed": [
+        "001",
+        "010",
+        "011",
+        "100",
+        "101",
+        "110"
+      ],
+      "binding": true,
+      "invisible_in_parts": true,
+      "coexistence": true
+    },
+    "four-place even": {
+      "allowed": [
+        "0000",
+        "0011",
+        "0101",
+        "0110",
+        "1001",
+        "1010",
+        "1100",
+        "1111"
+      ],
+      "binding": true,
+      "invisible_in_parts": true,
+      "coexistence": true
+    }
+  },
+  "scope examples": {
+    "four-place value permutation in (a,b,c,h) order": {
+      "0000": "0101",
+      "0011": "0000",
+      "0101": "0110",
+      "0110": "0011",
+      "1001": "1100",
+      "1010": "1001",
+      "1100": "1111",
+      "1111": "1010"
+    },
+    "order": 4,
+    "square flips": [
+      "b",
+      "c"
+    ],
+    "fixed read": "a",
+    "counting separately in each context, odd target entries matched": 64,
+    "six-qubit uniform pure stabilizer state": {
+      "X shifts": [
+        11,
+        22,
+        37
+      ],
+      "Z checks": [
+        7,
+        26,
+        41
+      ],
+      "even table entries matched": 64
+    }
+  },
+  "certificates": {
+    "census sha256": "fdd93f69f8553258ed87eb5fd4ef99a1408782afb6a0f75e1a8d1bd79459e207",
+    "population": 173,
+    "certificates": 115,
+    "by holder count": {
+      "4": {
+        "types": 1,
+        "reached": 1,
+        "certificates": 0,
+        "reached_certificates": 0
+      },
+      "5": {
+        "types": 3,
+        "reached": 2,
+        "certificates": 1,
+        "reached_certificates": 1
+      },
+      "6": {
+        "types": 19,
+        "reached": 10,
+        "certificates": 10,
+        "reached_certificates": 6
+      },
+      "7": {
+        "types": 150,
+        "reached": 108,
+        "certificates": 104,
+        "reached_certificates": 72
+      }
+    },
+    "total certified holders": 793,
+    "stored odd holder counts": {
+      "1": 115
+    },
+    "rows": [
+      {
+        "census index": 3,
+        "holders": 5,
+        "distinctions": 10,
+        "nontrivial bits": 6,
+        "negative holders": [
+          4
+        ],
+        "negative adjacent exchanges during cancellation": 15,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          1
+        ],
+        "possible last holders": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "census index": 5,
+        "holders": 6,
+        "distinctions": 9,
+        "nontrivial bits": 4,
+        "negative holders": [
+          5
+        ],
+        "negative adjacent exchanges during cancellation": 17,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          1
+        ],
+        "possible last holders": []
+      },
+      {
+        "census index": 8,
+        "holders": 6,
+        "distinctions": 10,
+        "nontrivial bits": 5,
+        "negative holders": [
+          5
+        ],
+        "negative adjacent exchanges during cancellation": 19,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          2
+        ],
+        "possible last holders": []
+      },
+      {
+        "census index": 12,
+        "holders": 6,
+        "distinctions": 11,
+        "nontrivial bits": 6,
+        "negative holders": [
+          5
+        ],
+        "negative adjacent exchanges during cancellation": 19,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          1
+        ],
+        "possible last holders": []
+      },
+      {
+        "census index": 14,
+        "holders": 6,
+        "distinctions": 11,
+        "nontrivial bits": 6,
+        "negative holders": [
+          5
+        ],
+        "negative adjacent exchanges during cancellation": 17,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          1
+        ],
+        "possible last holders": []
+      },
+      {
+        "census index": 15,
+        "holders": 6,
+        "distinctions": 12,
+        "nontrivial bits": 7,
+        "negative holders": [
+          5
+        ],
+        "negative adjacent exchanges during cancellation": 27,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          1
+        ],
+        "possible last holders": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "census index": 17,
+        "holders": 6,
+        "distinctions": 12,
+        "nontrivial bits": 7,
+        "negative holders": [
+          5
+        ],
+        "negative adjacent exchanges during cancellation": 15,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          1
+        ],
+        "possible last holders": [
+          2,
+          3
+        ]
+      },
+      {
+        "census index": 19,
+        "holders": 6,
+        "distinctions": 13,
+        "nontrivial bits": 8,
+        "negative holders": [
+          5
+        ],
+        "negative adjacent exchanges during cancellation": 23,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          1
+        ],
+        "possible last holders": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "census index": 20,
+        "holders": 6,
+        "distinctions": 13,
+        "nontrivial bits": 8,
+        "negative holders": [
+          5
+        ],
+        "negative adjacent exchanges during cancellation": 19,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          1
+        ],
+        "possible last holders": [
+          0,
+          3
+        ]
+      },
+      {
+        "census index": 21,
+        "holders": 6,
+        "distinctions": 14,
+        "nontrivial bits": 9,
+        "negative holders": [
+          5
+        ],
+        "negative adjacent exchanges during cancellation": 15,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          1
+        ],
+        "possible last holders": [
+          1,
+          2,
+          4,
+          5
+        ]
+      },
+      {
+        "census index": 22,
+        "holders": 6,
+        "distinctions": 15,
+        "nontrivial bits": 10,
+        "negative holders": [
+          5
+        ],
+        "negative adjacent exchanges during cancellation": 15,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          1
+        ],
+        "possible last holders": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "census index": 24,
+        "holders": 7,
+        "distinctions": 11,
+        "nontrivial bits": 5,
+        "negative holders": [
+          6
+        ],
+        "negative adjacent exchanges during cancellation": 27,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          3
+        ],
+        "possible last holders": []
+      },
+      {
+        "census index": 29,
+        "holders": 7,
+        "distinctions": 12,
+        "nontrivial bits": 6,
+        "negative holders": [
+          6
+        ],
+        "negative adjacent exchanges during cancellation": 27,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          3
+        ],
+        "possible last holders": []
+      },
+      {
+        "census index": 35,
+        "holders": 7,
+        "distinctions": 12,
+        "nontrivial bits": 6,
+        "negative holders": [
+          6
+        ],
+        "negative adjacent exchanges during cancellation": 33,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          3
+        ],
+        "possible last holders": []
+      },
+      {
+        "census index": 36,
+        "holders": 7,
+        "distinctions": 12,
+        "nontrivial bits": 6,
+        "negative holders": [
+          6
+        ],
+        "negative adjacent exchanges during cancellation": 27,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          3
+        ],
+        "possible last holders": []
+      },
+      {
+        "census index": 38,
+        "holders": 7,
+        "distinctions": 12,
+        "nontrivial bits": 6,
+        "negative holders": [
+          6
+        ],
+        "negative adjacent exchanges during cancellation": 15,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          1
+        ],
+        "possible last holders": []
+      },
+      {
+        "census index": 39,
+        "holders": 7,
+        "distinctions": 12,
+        "nontrivial bits": 6,
+        "negative holders": [
+          6
+        ],
+        "negative adjacent exchanges during cancellation": 35,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          4
+        ],
+        "possible last holders": []
+      },
+      {
+        "census index": 42,
+        "holders": 7,
+        "distinctions": 12,
+        "nontrivial bits": 6,
+        "negative holders": [
+          6
+        ],
+        "negative adjacent exchanges during cancellation": 15,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          1
+        ],
+        "possible last holders": []
+      },
+      {
+        "census index": 47,
+        "holders": 7,
+        "distinctions": 13,
+        "nontrivial bits": 7,
+        "negative holders": [
+          6
+        ],
+        "negative adjacent exchanges during cancellation": 21,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          1
+        ],
+        "possible last holders": [
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "census index": 52,
+        "holders": 7,
+        "distinctions": 13,
+        "nontrivial bits": 7,
+        "negative holders": [
+          6
+        ],
+        "negative adjacent exchanges during cancellation": 35,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          4
+        ],
+        "possible last holders": []
+      },
+      {
+        "census index": 53,
+        "holders": 7,
+        "distinctions": 13,
+        "nontrivial bits": 7,
+        "negative holders": [
+          6
+        ],
+        "negative adjacent exchanges during cancellation": 35,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          4
+        ],
+        "possible last holders": [
+          0
+        ]
+      },
+      {
+        "census index": 56,
+        "holders": 7,
+        "distinctions": 13,
+        "nontrivial bits": 7,
+        "negative holders": [
+          6
+        ],
+        "negative adjacent exchanges during cancellation": 15,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          1
+        ],
+        "possible last holders": []
+      },
+      {
+        "census index": 58,
+        "holders": 7,
+        "distinctions": 13,
+        "nontrivial bits": 7,
+        "negative holders": [
+          6
+        ],
+        "negative adjacent exchanges during cancellation": 23,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          2
+        ],
+        "possible last holders": []
+      },
+      {
+        "census index": 60,
+        "holders": 7,
+        "distinctions": 13,
+        "nontrivial bits": 7,
+        "negative holders": [
+          6
+        ],
+        "negative adjacent exchanges during cancellation": 35,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          4
+        ],
+        "possible last holders": []
+      },
+      {
+        "census index": 62,
+        "holders": 7,
+        "distinctions": 13,
+        "nontrivial bits": 7,
+        "negative holders": [
+          6
+        ],
+        "negative adjacent exchanges during cancellation": 31,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          4
+        ],
+        "possible last holders": []
+      },
+      {
+        "census index": 64,
+        "holders": 7,
+        "distinctions": 13,
+        "nontrivial bits": 7,
+        "negative holders": [
+          6
+        ],
+        "negative adjacent exchanges during cancellation": 23,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          2
+        ],
+        "possible last holders": [
+          3
+        ]
+      },
+      {
+        "census index": 66,
+        "holders": 7,
+        "distinctions": 13,
+        "nontrivial bits": 7,
+        "negative holders": [
+          6
+        ],
+        "negative adjacent exchanges during cancellation": 19,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          2
+        ],
+        "possible last holders": [
+          5
+        ]
+      },
+      {
+        "census index": 68,
+        "holders": 7,
+        "distinctions": 13,
+        "nontrivial bits": 7,
+        "negative holders": [
+          6
+        ],
+        "negative adjacent exchanges during cancellation": 23,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          2
+        ],
+        "possible last holders": []
+      },
+      {
+        "census index": 70,
+        "holders": 7,
+        "distinctions": 13,
+        "nontrivial bits": 7,
+        "negative holders": [
+          6
+        ],
+        "negative adjacent exchanges during cancellation": 35,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          4
+        ],
+        "possible last holders": []
+      },
+      {
+        "census index": 71,
+        "holders": 7,
+        "distinctions": 13,
+        "nontrivial bits": 7,
+        "negative holders": [
+          6
+        ],
+        "negative adjacent exchanges during cancellation": 15,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          1
+        ],
+        "possible last holders": [
+          2,
+          3
+        ]
+      },
+      {
+        "census index": 73,
+        "holders": 7,
+        "distinctions": 13,
+        "nontrivial bits": 7,
+        "negative holders": [
+          6
+        ],
+        "negative adjacent exchanges during cancellation": 19,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          1
+        ],
+        "possible last holders": []
+      },
+      {
+        "census index": 74,
+        "holders": 7,
+        "distinctions": 13,
+        "nontrivial bits": 7,
+        "negative holders": [
+          6
+        ],
+        "negative adjacent exchanges during cancellation": 15,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          1
+        ],
+        "possible last holders": []
+      },
+      {
+        "census index": 76,
+        "holders": 7,
+        "distinctions": 14,
+        "nontrivial bits": 8,
+        "negative holders": [
+          6
+        ],
+        "negative adjacent exchanges during cancellation": 19,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          1
+        ],
+        "possible last holders": [
+          5,
+          6
+        ]
+      },
+      {
+        "census index": 77,
+        "holders": 7,
+        "distinctions": 14,
+        "nontrivial bits": 8,
+        "negative holders": [
+          6
+        ],
+        "negative adjacent exchanges during cancellation": 15,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          1
+        ],
+        "possible last holders": []
+      },
+      {
+        "census index": 80,
+        "holders": 7,
+        "distinctions": 14,
+        "nontrivial bits": 8,
+        "negative holders": [
+          6
+        ],
+        "negative adjacent exchanges during cancellation": 31,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          3
+        ],
+        "possible last holders": [
+          0,
+          3,
+          4
+        ]
+      },
+      {
+        "census index": 84,
+        "holders": 7,
+        "distinctions": 14,
+        "nontrivial bits": 8,
+        "negative holders": [
+          6
+        ],
+        "negative adjacent exchanges during cancellation": 31,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          4
+        ],
+        "possible last holders": []
+      },
+      {
+        "census index": 85,
+        "holders": 7,
+        "distinctions": 14,
+        "nontrivial bits": 8,
+        "negative holders": [
+          6
+        ],
+        "negative adjacent exchanges during cancellation": 27,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          3
+        ],
+        "possible last holders": []
+      },
+      {
+        "census index": 86,
+        "holders": 7,
+        "distinctions": 14,
+        "nontrivial bits": 8,
+        "negative holders": [
+          6
+        ],
+        "negative adjacent exchanges during cancellation": 23,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          3
+        ],
+        "possible last holders": [
+          0,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "census index": 88,
+        "holders": 7,
+        "distinctions": 14,
+        "nontrivial bits": 8,
+        "negative holders": [
+          6
+        ],
+        "negative adjacent exchanges during cancellation": 19,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          1
+        ],
+        "possible last holders": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "census index": 89,
+        "holders": 7,
+        "distinctions": 14,
+        "nontrivial bits": 8,
+        "negative holders": [
+          6
+        ],
+        "negative adjacent exchanges during cancellation": 19,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          1
+        ],
+        "possible last holders": []
+      },
+      {
+        "census index": 90,
+        "holders": 7,
+        "distinctions": 14,
+        "nontrivial bits": 8,
+        "negative holders": [
+          6
+        ],
+        "negative adjacent exchanges during cancellation": 25,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          3
+        ],
+        "possible last holders": [
+          0
+        ]
+      },
+      {
+        "census index": 92,
+        "holders": 7,
+        "distinctions": 14,
+        "nontrivial bits": 8,
+        "negative holders": [
+          6
+        ],
+        "negative adjacent exchanges during cancellation": 33,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          4
+        ],
+        "possible last holders": []
+      },
+      {
+        "census index": 93,
+        "holders": 7,
+        "distinctions": 14,
+        "nontrivial bits": 8,
+        "negative holders": [
+          6
+        ],
+        "negative adjacent exchanges during cancellation": 25,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          3
+        ],
+        "possible last holders": [
+          2,
+          3
+        ]
+      },
+      {
+        "census index": 94,
+        "holders": 7,
+        "distinctions": 14,
+        "nontrivial bits": 8,
+        "negative holders": [
+          6
+        ],
+        "negative adjacent exchanges during cancellation": 35,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          4
+        ],
+        "possible last holders": []
+      },
+      {
+        "census index": 95,
+        "holders": 7,
+        "distinctions": 14,
+        "nontrivial bits": 8,
+        "negative holders": [
+          6
+        ],
+        "negative adjacent exchanges during cancellation": 27,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          1
+        ],
+        "possible last holders": [
+          2,
+          3,
+          5
+        ]
+      },
+      {
+        "census index": 96,
+        "holders": 7,
+        "distinctions": 14,
+        "nontrivial bits": 8,
+        "negative holders": [
+          6
+        ],
+        "negative adjacent exchanges during cancellation": 21,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          1
+        ],
+        "possible last holders": [
+          2
+        ]
+      },
+      {
+        "census index": 98,
+        "holders": 7,
+        "distinctions": 14,
+        "nontrivial bits": 8,
+        "negative holders": [
+          6
+        ],
+        "negative adjacent exchanges during cancellation": 19,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          1
+        ],
+        "possible last holders": [
+          2
+        ]
+      },
+      {
+        "census index": 99,
+        "holders": 7,
+        "distinctions": 14,
+        "nontrivial bits": 8,
+        "negative holders": [
+          6
+        ],
+        "negative adjacent exchanges during cancellation": 27,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          4
+        ],
+        "possible last holders": [
+          0,
+          5,
+          6
+        ]
+      },
+      {
+        "census index": 100,
+        "holders": 7,
+        "distinctions": 14,
+        "nontrivial bits": 8,
+        "negative holders": [
+          6
+        ],
+        "negative adjacent exchanges during cancellation": 27,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          4
+        ],
+        "possible last holders": []
+      },
+      {
+        "census index": 101,
+        "holders": 7,
+        "distinctions": 14,
+        "nontrivial bits": 8,
+        "negative holders": [
+          6
+        ],
+        "negative adjacent exchanges during cancellation": 23,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          1
+        ],
+        "possible last holders": [
+          0,
+          1,
+          6
+        ]
+      },
+      {
+        "census index": 102,
+        "holders": 7,
+        "distinctions": 14,
+        "nontrivial bits": 8,
+        "negative holders": [
+          6
+        ],
+        "negative adjacent exchanges during cancellation": 31,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          4
+        ],
+        "possible last holders": []
+      },
+      {
+        "census index": 103,
+        "holders": 7,
+        "distinctions": 14,
+        "nontrivial bits": 8,
+        "negative holders": [
+          6
+        ],
+        "negative adjacent exchanges during cancellation": 31,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          4
+        ],
+        "possible last holders": [
+          3
+        ]
+      },
+      {
+        "census index": 105,
+        "holders": 7,
+        "distinctions": 14,
+        "nontrivial bits": 8,
+        "negative holders": [
+          6
+        ],
+        "negative adjacent exchanges during cancellation": 23,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          3
+        ],
+        "possible last holders": [
+          1,
+          2,
+          5
+        ]
+      },
+      {
+        "census index": 106,
+        "holders": 7,
+        "distinctions": 14,
+        "nontrivial bits": 8,
+        "negative holders": [
+          6
+        ],
+        "negative adjacent exchanges during cancellation": 23,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          3
+        ],
+        "possible last holders": []
+      },
+      {
+        "census index": 107,
+        "holders": 7,
+        "distinctions": 14,
+        "nontrivial bits": 8,
+        "negative holders": [
+          6
+        ],
+        "negative adjacent exchanges during cancellation": 21,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          1
+        ],
+        "possible last holders": []
+      },
+      {
+        "census index": 108,
+        "holders": 7,
+        "distinctions": 14,
+        "nontrivial bits": 8,
+        "negative holders": [
+          6
+        ],
+        "negative adjacent exchanges during cancellation": 27,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          3
+        ],
+        "possible last holders": []
+      },
+      {
+        "census index": 109,
+        "holders": 7,
+        "distinctions": 15,
+        "nontrivial bits": 9,
+        "negative holders": [
+          6
+        ],
+        "negative adjacent exchanges during cancellation": 15,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          3
+        ],
+        "possible last holders": [
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "census index": 110,
+        "holders": 7,
+        "distinctions": 15,
+        "nontrivial bits": 9,
+        "negative holders": [
+          6
+        ],
+        "negative adjacent exchanges during cancellation": 27,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          3
+        ],
+        "possible last holders": [
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "census index": 113,
+        "holders": 7,
+        "distinctions": 15,
+        "nontrivial bits": 9,
+        "negative holders": [
+          6
+        ],
+        "negative adjacent exchanges during cancellation": 15,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          1
+        ],
+        "possible last holders": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "census index": 114,
+        "holders": 7,
+        "distinctions": 15,
+        "nontrivial bits": 9,
+        "negative holders": [
+          6
+        ],
+        "negative adjacent exchanges during cancellation": 17,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          1
+        ],
+        "possible last holders": [
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "census index": 116,
+        "holders": 7,
+        "distinctions": 15,
+        "nontrivial bits": 9,
+        "negative holders": [
+          6
+        ],
+        "negative adjacent exchanges during cancellation": 19,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          3
+        ],
+        "possible last holders": [
+          4,
+          5
+        ]
+      },
+      {
+        "census index": 117,
+        "holders": 7,
+        "distinctions": 15,
+        "nontrivial bits": 9,
+        "negative holders": [
+          6
+        ],
+        "negative adjacent exchanges during cancellation": 19,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          1
+        ],
+        "possible last holders": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "census index": 118,
+        "holders": 7,
+        "distinctions": 15,
+        "nontrivial bits": 9,
+        "negative holders": [
+          6
+        ],
+        "negative adjacent exchanges during cancellation": 19,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          3
+        ],
+        "possible last holders": [
+          0,
+          3
+        ]
+      },
+      {
+        "census index": 119,
+        "holders": 7,
+        "distinctions": 15,
+        "nontrivial bits": 9,
+        "negative holders": [
+          6
+        ],
+        "negative adjacent exchanges during cancellation": 35,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          4
+        ],
+        "possible last holders": [
+          4,
+          5
+        ]
+      },
+      {
+        "census index": 120,
+        "holders": 7,
+        "distinctions": 15,
+        "nontrivial bits": 9,
+        "negative holders": [
+          6
+        ],
+        "negative adjacent exchanges during cancellation": 19,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          3
+        ],
+        "possible last holders": [
+          0
+        ]
+      },
+      {
+        "census index": 121,
+        "holders": 7,
+        "distinctions": 15,
+        "nontrivial bits": 9,
+        "negative holders": [
+          6
+        ],
+        "negative adjacent exchanges during cancellation": 19,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          1
+        ],
+        "possible last holders": [
+          1
+        ]
+      },
+      {
+        "census index": 122,
+        "holders": 7,
+        "distinctions": 15,
+        "nontrivial bits": 9,
+        "negative holders": [
+          6
+        ],
+        "negative adjacent exchanges during cancellation": 19,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          1
+        ],
+        "possible last holders": [
+          4,
+          6
+        ]
+      },
+      {
+        "census index": 123,
+        "holders": 7,
+        "distinctions": 15,
+        "nontrivial bits": 9,
+        "negative holders": [
+          6
+        ],
+        "negative adjacent exchanges during cancellation": 27,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          1
+        ],
+        "possible last holders": [
+          0,
+          1,
+          2,
+          4,
+          5
+        ]
+      },
+      {
+        "census index": 124,
+        "holders": 7,
+        "distinctions": 15,
+        "nontrivial bits": 9,
+        "negative holders": [
+          6
+        ],
+        "negative adjacent exchanges during cancellation": 19,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          1
+        ],
+        "possible last holders": [
+          0,
+          1,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "census index": 125,
+        "holders": 7,
+        "distinctions": 15,
+        "nontrivial bits": 9,
+        "negative holders": [
+          6
+        ],
+        "negative adjacent exchanges during cancellation": 19,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          1
+        ],
+        "possible last holders": [
+          1,
+          3
+        ]
+      },
+      {
+        "census index": 126,
+        "holders": 7,
+        "distinctions": 15,
+        "nontrivial bits": 9,
+        "negative holders": [
+          6
+        ],
+        "negative adjacent exchanges during cancellation": 19,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          2
+        ],
+        "possible last holders": [
+          1,
+          4,
+          5
+        ]
+      },
+      {
+        "census index": 127,
+        "holders": 7,
+        "distinctions": 15,
+        "nontrivial bits": 9,
+        "negative holders": [
+          6
+        ],
+        "negative adjacent exchanges during cancellation": 31,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          4
+        ],
+        "possible last holders": []
+      },
+      {
+        "census index": 128,
+        "holders": 7,
+        "distinctions": 15,
+        "nontrivial bits": 9,
+        "negative holders": [
+          6
+        ],
+        "negative adjacent exchanges during cancellation": 19,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          3
+        ],
+        "possible last holders": []
+      },
+      {
+        "census index": 129,
+        "holders": 7,
+        "distinctions": 15,
+        "nontrivial bits": 9,
+        "negative holders": [
+          6
+        ],
+        "negative adjacent exchanges during cancellation": 27,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          1
+        ],
+        "possible last holders": [
+          0,
+          1,
+          6
+        ]
+      },
+      {
+        "census index": 131,
+        "holders": 7,
+        "distinctions": 15,
+        "nontrivial bits": 9,
+        "negative holders": [
+          6
+        ],
+        "negative adjacent exchanges during cancellation": 15,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          1
+        ],
+        "possible last holders": [
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "census index": 132,
+        "holders": 7,
+        "distinctions": 15,
+        "nontrivial bits": 9,
+        "negative holders": [
+          6
+        ],
+        "negative adjacent exchanges during cancellation": 19,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          1
+        ],
+        "possible last holders": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "census index": 133,
+        "holders": 7,
+        "distinctions": 15,
+        "nontrivial bits": 9,
+        "negative holders": [
+          6
+        ],
+        "negative adjacent exchanges during cancellation": 15,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          1
+        ],
+        "possible last holders": []
+      },
+      {
+        "census index": 134,
+        "holders": 7,
+        "distinctions": 15,
+        "nontrivial bits": 9,
+        "negative holders": [
+          6
+        ],
+        "negative adjacent exchanges during cancellation": 29,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          3
+        ],
+        "possible last holders": [
+          1,
+          2
+        ]
+      },
+      {
+        "census index": 135,
+        "holders": 7,
+        "distinctions": 15,
+        "nontrivial bits": 9,
+        "negative holders": [
+          6
+        ],
+        "negative adjacent exchanges during cancellation": 27,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          3
+        ],
+        "possible last holders": []
+      },
+      {
+        "census index": 136,
+        "holders": 7,
+        "distinctions": 15,
+        "nontrivial bits": 9,
+        "negative holders": [
+          6
+        ],
+        "negative adjacent exchanges during cancellation": 15,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          1
+        ],
+        "possible last holders": [
+          3,
+          4
+        ]
+      },
+      {
+        "census index": 138,
+        "holders": 7,
+        "distinctions": 16,
+        "nontrivial bits": 10,
+        "negative holders": [
+          6
+        ],
+        "negative adjacent exchanges during cancellation": 15,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          3
+        ],
+        "possible last holders": [
+          0,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "census index": 139,
+        "holders": 7,
+        "distinctions": 16,
+        "nontrivial bits": 10,
+        "negative holders": [
+          6
+        ],
+        "negative adjacent exchanges during cancellation": 15,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          3
+        ],
+        "possible last holders": [
+          0,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "census index": 140,
+        "holders": 7,
+        "distinctions": 16,
+        "nontrivial bits": 10,
+        "negative holders": [
+          6
+        ],
+        "negative adjacent exchanges during cancellation": 15,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          1
+        ],
+        "possible last holders": [
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "census index": 141,
+        "holders": 7,
+        "distinctions": 16,
+        "nontrivial bits": 10,
+        "negative holders": [
+          6
+        ],
+        "negative adjacent exchanges during cancellation": 19,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          3
+        ],
+        "possible last holders": [
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "census index": 142,
+        "holders": 7,
+        "distinctions": 16,
+        "nontrivial bits": 10,
+        "negative holders": [
+          6
+        ],
+        "negative adjacent exchanges during cancellation": 15,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          1
+        ],
+        "possible last holders": [
+          0,
+          1,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "census index": 143,
+        "holders": 7,
+        "distinctions": 16,
+        "nontrivial bits": 10,
+        "negative holders": [
+          6
+        ],
+        "negative adjacent exchanges during cancellation": 15,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          1
+        ],
+        "possible last holders": [
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "census index": 144,
+        "holders": 7,
+        "distinctions": 16,
+        "nontrivial bits": 10,
+        "negative holders": [
+          6
+        ],
+        "negative adjacent exchanges during cancellation": 15,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          1
+        ],
+        "possible last holders": [
+          2,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "census index": 145,
+        "holders": 7,
+        "distinctions": 16,
+        "nontrivial bits": 10,
+        "negative holders": [
+          6
+        ],
+        "negative adjacent exchanges during cancellation": 19,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          3
+        ],
+        "possible last holders": [
+          3
+        ]
+      },
+      {
+        "census index": 146,
+        "holders": 7,
+        "distinctions": 16,
+        "nontrivial bits": 10,
+        "negative holders": [
+          6
+        ],
+        "negative adjacent exchanges during cancellation": 19,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          1
+        ],
+        "possible last holders": [
+          0,
+          6
+        ]
+      },
+      {
+        "census index": 147,
+        "holders": 7,
+        "distinctions": 16,
+        "nontrivial bits": 10,
+        "negative holders": [
+          6
+        ],
+        "negative adjacent exchanges during cancellation": 19,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          1
+        ],
+        "possible last holders": [
+          0,
+          1,
+          6
+        ]
+      },
+      {
+        "census index": 148,
+        "holders": 7,
+        "distinctions": 16,
+        "nontrivial bits": 10,
+        "negative holders": [
+          6
+        ],
+        "negative adjacent exchanges during cancellation": 19,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          1
+        ],
+        "possible last holders": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "census index": 149,
+        "holders": 7,
+        "distinctions": 16,
+        "nontrivial bits": 10,
+        "negative holders": [
+          6
+        ],
+        "negative adjacent exchanges during cancellation": 19,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          1
+        ],
+        "possible last holders": [
+          1,
+          2,
+          5,
+          6
+        ]
+      },
+      {
+        "census index": 150,
+        "holders": 7,
+        "distinctions": 16,
+        "nontrivial bits": 10,
+        "negative holders": [
+          6
+        ],
+        "negative adjacent exchanges during cancellation": 19,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          1
+        ],
+        "possible last holders": [
+          5,
+          6
+        ]
+      },
+      {
+        "census index": 151,
+        "holders": 7,
+        "distinctions": 16,
+        "nontrivial bits": 10,
+        "negative holders": [
+          6
+        ],
+        "negative adjacent exchanges during cancellation": 27,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          1
+        ],
+        "possible last holders": [
+          0,
+          1,
+          2,
+          3,
+          6
+        ]
+      },
+      {
+        "census index": 152,
+        "holders": 7,
+        "distinctions": 16,
+        "nontrivial bits": 10,
+        "negative holders": [
+          6
+        ],
+        "negative adjacent exchanges during cancellation": 19,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          1
+        ],
+        "possible last holders": [
+          2,
+          5,
+          6
+        ]
+      },
+      {
+        "census index": 153,
+        "holders": 7,
+        "distinctions": 16,
+        "nontrivial bits": 10,
+        "negative holders": [
+          6
+        ],
+        "negative adjacent exchanges during cancellation": 19,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          1
+        ],
+        "possible last holders": [
+          3,
+          4
+        ]
+      },
+      {
+        "census index": 154,
+        "holders": 7,
+        "distinctions": 16,
+        "nontrivial bits": 10,
+        "negative holders": [
+          6
+        ],
+        "negative adjacent exchanges during cancellation": 27,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          3
+        ],
+        "possible last holders": []
+      },
+      {
+        "census index": 155,
+        "holders": 7,
+        "distinctions": 17,
+        "nontrivial bits": 11,
+        "negative holders": [
+          6
+        ],
+        "negative adjacent exchanges during cancellation": 15,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          1
+        ],
+        "possible last holders": [
+          0,
+          1,
+          2,
+          4
+        ]
+      },
+      {
+        "census index": 156,
+        "holders": 7,
+        "distinctions": 17,
+        "nontrivial bits": 11,
+        "negative holders": [
+          6
+        ],
+        "negative adjacent exchanges during cancellation": 15,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          1
+        ],
+        "possible last holders": [
+          0,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "census index": 157,
+        "holders": 7,
+        "distinctions": 17,
+        "nontrivial bits": 11,
+        "negative holders": [
+          6
+        ],
+        "negative adjacent exchanges during cancellation": 19,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          1
+        ],
+        "possible last holders": [
+          0,
+          1,
+          3
+        ]
+      },
+      {
+        "census index": 158,
+        "holders": 7,
+        "distinctions": 17,
+        "nontrivial bits": 11,
+        "negative holders": [
+          6
+        ],
+        "negative adjacent exchanges during cancellation": 15,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          1
+        ],
+        "possible last holders": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "census index": 159,
+        "holders": 7,
+        "distinctions": 17,
+        "nontrivial bits": 11,
+        "negative holders": [
+          6
+        ],
+        "negative adjacent exchanges during cancellation": 15,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          1
+        ],
+        "possible last holders": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "census index": 160,
+        "holders": 7,
+        "distinctions": 17,
+        "nontrivial bits": 11,
+        "negative holders": [
+          6
+        ],
+        "negative adjacent exchanges during cancellation": 19,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          3
+        ],
+        "possible last holders": [
+          5,
+          6
+        ]
+      },
+      {
+        "census index": 161,
+        "holders": 7,
+        "distinctions": 17,
+        "nontrivial bits": 11,
+        "negative holders": [
+          6
+        ],
+        "negative adjacent exchanges during cancellation": 19,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          1
+        ],
+        "possible last holders": [
+          0,
+          3,
+          6
+        ]
+      },
+      {
+        "census index": 162,
+        "holders": 7,
+        "distinctions": 17,
+        "nontrivial bits": 11,
+        "negative holders": [
+          6
+        ],
+        "negative adjacent exchanges during cancellation": 19,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          1
+        ],
+        "possible last holders": [
+          0,
+          1,
+          4,
+          5
+        ]
+      },
+      {
+        "census index": 163,
+        "holders": 7,
+        "distinctions": 17,
+        "nontrivial bits": 11,
+        "negative holders": [
+          6
+        ],
+        "negative adjacent exchanges during cancellation": 27,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          3
+        ],
+        "possible last holders": [
+          1,
+          2
+        ]
+      },
+      {
+        "census index": 164,
+        "holders": 7,
+        "distinctions": 18,
+        "nontrivial bits": 12,
+        "negative holders": [
+          6
+        ],
+        "negative adjacent exchanges during cancellation": 15,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          1
+        ],
+        "possible last holders": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "census index": 165,
+        "holders": 7,
+        "distinctions": 18,
+        "nontrivial bits": 12,
+        "negative holders": [
+          6
+        ],
+        "negative adjacent exchanges during cancellation": 27,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          1
+        ],
+        "possible last holders": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "census index": 166,
+        "holders": 7,
+        "distinctions": 18,
+        "nontrivial bits": 12,
+        "negative holders": [
+          6
+        ],
+        "negative adjacent exchanges during cancellation": 15,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          1
+        ],
+        "possible last holders": [
+          0,
+          2,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "census index": 167,
+        "holders": 7,
+        "distinctions": 18,
+        "nontrivial bits": 12,
+        "negative holders": [
+          6
+        ],
+        "negative adjacent exchanges during cancellation": 15,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          1
+        ],
+        "possible last holders": [
+          1,
+          3,
+          5,
+          6
+        ]
+      },
+      {
+        "census index": 168,
+        "holders": 7,
+        "distinctions": 18,
+        "nontrivial bits": 12,
+        "negative holders": [
+          6
+        ],
+        "negative adjacent exchanges during cancellation": 15,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          1
+        ],
+        "possible last holders": [
+          6
+        ]
+      },
+      {
+        "census index": 169,
+        "holders": 7,
+        "distinctions": 19,
+        "nontrivial bits": 13,
+        "negative holders": [
+          6
+        ],
+        "negative adjacent exchanges during cancellation": 15,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          1
+        ],
+        "possible last holders": [
+          0,
+          1,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "census index": 170,
+        "holders": 7,
+        "distinctions": 19,
+        "nontrivial bits": 13,
+        "negative holders": [
+          6
+        ],
+        "negative adjacent exchanges during cancellation": 15,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          1
+        ],
+        "possible last holders": [
+          1,
+          2,
+          6
+        ]
+      },
+      {
+        "census index": 171,
+        "holders": 7,
+        "distinctions": 20,
+        "nontrivial bits": 14,
+        "negative holders": [
+          6
+        ],
+        "negative adjacent exchanges during cancellation": 15,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          1
+        ],
+        "possible last holders": [
+          1,
+          2,
+          3,
+          5,
+          6
+        ]
+      },
+      {
+        "census index": 172,
+        "holders": 7,
+        "distinctions": 21,
+        "nontrivial bits": 15,
+        "negative holders": [
+          6
+        ],
+        "negative adjacent exchanges during cancellation": 15,
+        "odd toy holders after reversing distinction zero": [
+          0,
+          1
+        ],
+        "possible last holders": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      }
+    ]
+  }
+}

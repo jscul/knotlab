@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**408 current results** and 5 superseded ones, from 696 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**408 current results** and 5 superseded ones, from 697 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -31,7 +31,7 @@ How to read an entry:
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 26 results
 - [Notes](#notes): 6 self-contained notes
-- [Epics](#epics): all 696 epics with their closures
+- [Epics](#epics): all 697 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -2062,5 +2062,6 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-27 | The bond a grown ring makes under not-all-equal: chosen or selected, a knot, and does it iterate? (`RING-BOND-20261127-001`) | — | [folder](research/RING-BOND-20261127-001/) |
 | 2026-11-27 | Which second-layer knots does growth itself select? (`SELECTED-KNOTS-20261127-001`) | — | [folder](research/SELECTED-KNOTS-20261127-001/) |
 | 2026-11-27 | A proof of the pair cost, and with it the families' tree (`TREE-PROOF-20261127-001`) | — | [folder](research/TREE-PROOF-20261127-001/) |
+| 2026-11-27 | The node reading's two exceptions: chained twins and lifts that do not meet (`TWO-EXCEPTIONS-20261127-001`) | — | [folder](research/TWO-EXCEPTIONS-20261127-001/) |
 | 2026-11-27 | One layer up, made by growth: do grown stages hold clauses on agreements of agreements that need a birth? (`UPPER-GROWN-20261127-001`) | — | [folder](research/UPPER-GROWN-20261127-001/) |
 

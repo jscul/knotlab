@@ -1,0 +1,32 @@
+40 ('W1 tree+ nine knots', 'no twins, no chains', 'nae', 'agrees')
+40 ('W1 tree+ nine knots', 'no twins, no chains', 'parity', 'agrees')
+40 ('W1 tree+ nine knots', 'no twins, with chains', 'nae', 'agrees')
+40 ('W1 tree+ nine knots', 'no twins, with chains', 'parity', 'agrees')
+32 ('W1 tree+ nine knots', 'twins, chained', 'nae', 'differs')
+8 ('W1 tree+ nine knots', 'twins, chained', 'nae', 'growth not run')
+32 ('W1 tree+ nine knots', 'twins, chained', 'parity', 'differs')
+8 ('W1 tree+ nine knots', 'twins, chained', 'parity', 'growth not run')
+40 ('W1 tree+ nine knots', 'twins, not chained, no chains', 'nae', 'agrees')
+40 ('W1 tree+ nine knots', 'twins, not chained, no chains', 'parity', 'agrees')
+32 ('W1 tree+ nine knots', 'twins, not chained, with chains', 'nae', 'agrees')
+32 ('W1 tree+ nine knots', 'twins, not chained, with chains', 'parity', 'agrees')
+40 ('W2 tree+s50 eight knots', 'no twins, no chains', 'nae', 'agrees')
+40 ('W2 tree+s50 eight knots', 'no twins, no chains', 'parity', 'agrees')
+40 ('W2 tree+s50 eight knots', 'no twins, with chains', 'nae', 'agrees')
+40 ('W2 tree+s50 eight knots', 'no twins, with chains', 'parity', 'agrees')
+10 ('W2 tree+s50 eight knots', 'twins, chained', 'nae', 'differs')
+4 ('W2 tree+s50 eight knots', 'twins, chained', 'nae', 'growth not run')
+1 ('W2 tree+s50 eight knots', 'twins, chained', 'nae', "not predicted: RuntimeError('too many core births')")
+10 ('W2 tree+s50 eight knots', 'twins, chained', 'parity', 'differs')
+4 ('W2 tree+s50 eight knots', 'twins, chained', 'parity', 'growth not run')
+1 ('W2 tree+s50 eight knots', 'twins, chained', 'parity', "not predicted: RuntimeError('too many core births')")
+25 ('W2 tree+s50 eight knots', 'twins, not chained, no chains', 'nae', 'agrees')
+25 ('W2 tree+s50 eight knots', 'twins, not chained, no chains', 'parity', 'agrees')
+6 ('W2 tree+s50 eight knots', 'twins, not chained, with chains', 'nae', 'agrees')
+6 ('W2 tree+s50 eight knots', 'twins, not chained, with chains', 'parity', 'agrees')
+T1 (no chained twins: every start agrees under both laws):
+  W1 tree+ nine knots 152 of 152 agree under both laws; differing: []; other: 0
+  W2 tree+s50 eight knots 111 of 111 agree under both laws; differing: []; other: 0
+T2 / T3 (chained twins):
+  W1 tree+ nine knots 32 of 40 differ under at least one law; agree under both: []; T3 holds on 32 of 32
+  W2 tree+s50 eight knots 10 of 15 differ under at least one law; agree under both: []; T3 holds on 10 of 10

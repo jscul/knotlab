@@ -160,3 +160,70 @@ Nothing was changed after scoring.
 
 So on pieces with a cycle the node reading is exact wherever it reads, and its only misses are the chained twins:
 the late-views study's six-knot cycle starts it could not predict are now read, except 11 with chained twins.
+
+### Part 2: the twin exception, fresh
+
+[Scores](scores2.jsonl) ([tally2.py](tally2.py), [tally](tally2.txt)). Nothing was changed after scoring.
+
+| Weighting | Starts without chained twins | Of them with chains | Agree, both laws, every round | Starts with chained twins | Scored | Differ, both laws | First difference at the twins' least rank |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| W1, `tree+`, nine knots | 152 | 72 | **152** | 40 | 32 | **32** | **32** |
+| W2, `tree+s50`, eight knots | 111 | 46 | **111** | 15 | 10 | **10** | **10** |
+
+- **T1 holds** under both weightings: 263 of 263 starts without chained twins agree in every round read under both laws,
+  including the 118 with chains, where the chain counting (computed, not proved) is what is tested, and the 103 with
+  unchained twins.
+- **T2 holds** on every scored start: all 42 with chained twins differ, under both laws. Twelve were not scored: the
+  growths of eight W1 and four W2 chained-twin starts did not finish in two minutes (*not run*; every growth not run in
+  Part 2 is of a chained-twin start, since those carry both chains and twins and grow most), and one W2 start's core
+  passed the pairs cap at scoring (the draw ran before that cap was added; *not predicted*).
+- **T3 holds** on all 42: the first difference is at the round equal to the least rank of the start's chained twins,
+  under each law. **T4 holds**: the same under the standard weighting and the scaffold.
+
+### Part 3: how often a core is unending
+
+A core is unending here when the round rule lists more than 5,000 families (core births) before it finishes; a
+120-second backstop marks a start *not run*. Counted among accepted drawn starts whose pieces are all trees (the
+late-views class), by draw with repeats (the weighting's own count) and by distinct start ([the tallies](part3/)):
+
+| Weighting | Knots | Draws | Unending, accepted draws with repeats | Unending, distinct starts |
+| --- | ---: | ---: | --- | --- |
+| `grow` | 7 | 3,000 (seed 31) | 0 of 234 | 0 of 231 |
+| `grow` | 8 | 3,000 | 0 of 157 | 0 of 156 |
+| `grow` | 9 | 3,000 | 0 of 149 | 0 of 149 |
+| `tree+` | 7 | 3,000 | 0 of 2,278 | 0 of 144 |
+| `tree+` | 8 | 3,000 | 0 of 2,162 | 0 of 253 |
+| `tree+` | 9 | 3,000 | 9 of 2,077 (0.4%), 1 not run | 5 of 417 (1.2%), 1 not run |
+| `tree+` | 9 | 20,000 (seed 20261130, W1's draw) | 55 of 13,562 (0.4%), 1 not run | 22 of 890 new (2.5%) |
+| `tree+` | 10 | 3,000 | 35 of 1,969 (1.8%), 4 not run | 30 of 583 (5.1%), 3 not run |
+| `tree+s50` (scaffold) | 7 | 3,000 | 25 of 2,281 (1.1%), 2 not run | 24 of 1,513 (1.6%), 2 not run |
+| `tree+s50` (scaffold) | 8 | 3,000 | 74 of 2,161 (3.4%), 3 not run | 74 of 1,924 (3.8%), 3 not run |
+
+So under the program's two standard weightings an unending core does not occur up to eight knots in these draws; under
+`tree+` it is about 0.4% of accepted draws at nine knots and 1.8% at ten, and it grows with the extra loose
+distinctions of the scaffold. Among the 159 starts with a piece with a cycle (stratified samples, not a weighting's
+count), 24 have an unending core. Every unending core seen is explosive: its rounds' births multiply (9, 11, 13, 17, 22,
+38, 127, 720 on one `tree+` start), as in the explosive starts of `WALL-READ-20261119-001`.
+
+### What is proved and what is computed
+
+1. **Proved** (`GRADED-ORDER-20261126-001`, referee R2): without chained twins the core's groups are those of the core
+   alone; at the first chained twins the parent roster changes.
+2. **Computed, now on fresh frozen samples**: the node reading is exact on every read start without chained twins
+   (122 with a piece with a cycle, 263 fresh tree-piece starts of two weightings, the 415 earlier ones), chains
+   included; it differs on every scored start with chained twins (11, 42, and the four earlier), first at the twins'
+   least rank. The chain counting, and so the whole reading without chained twins, is not proved.
+3. **Not read**: chains on a core that does not finish (two starts here), unending cores, and the chained-twin starts'
+   own growth.
+
+### An intuition (a link, not evidence)
+
+Each group of three or more that the round rule makes is a family of births that pairwise share a parent and share no
+parent in common: in the literature's terms, a failure of the Helly property of the family of parent sets (a family is
+Helly when every pairwise-meeting subfamily has a common member). An unending core keeps making more such failures each
+round than it merges, which is the literature's divergence of iterated clique graphs (Neumann-Lara's octahedra, already
+linked to explosive starts by `WALL-READ-20261119-001`; Escalante's theorem that clique-Helly graphs converge is the
+matching statement on the other side). Chained twins are a Helly failure that only a chain creates: the twins and
+their parents' one-step chain births pairwise share parents and have none in common. Cheapest test: on the Part 3
+draws, whether the number of groups of three or more in the first few rounds already separates the unending cores from
+the rest.

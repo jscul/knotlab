@@ -6278,6 +6278,36 @@ is three facts, each carried on its own, whose parity the knots' laws force.
 [the built binding](research/BUILT-BINDING-20261126-001/decision.md), confirmed
 with fixes.)
 
+**Under not-all-equal (computed, refereed).** Here no law is a sum of others,
+so parity's argument is not available, and the first study predicted no second
+layer. Part of that held. Every census start has one class (any allowed state
+reaches any other by single changes), and no two distinctions are tied. A
+connected part with no ring holds exactly one relation on the distinctions held
+once: two patterns missing, implied by no proper part. Its referee found the
+rest false. The three-knot ring (0,1,3), (1,2,4), (2,0,5) grows one birth,
+(3,4,5,6), and three agreements on disjoint distinctions, [1 = 5], [2 = 3] and
+[0 = 4 = 6], then take seven of their eight triples. Every pair of them is
+free, every one of the four laws is needed, and no single knot reads any of the
+three. That is a relation which passes the knot test: one clause on three
+readings. Growth also keeps patterns missing on earlier distinctions instead of
+freeing them. One choice is ours: the fresh distinction 6 can join any one of
+the three agreements, so the same ring holds three such relations.
+([the not-all-equal layer](research/NAE-LAYER-20261127-001/decision.md),
+refuted by its referee.)
+
+**Frequencies, under a named weighting.** Weight every allowed state the same.
+On a start with no ring, the mean of the product of two distinctions' signs is
+then a product along the route between them, −1/(2^(a−1) − 1) for each knot of
+a places (exact on all 761 pairs read). Two such products are independent
+exactly when the knots they use are disjoint. And the whole can carry a
+frequency no part shows. On 14 three-place knots, two readings agree on every
+table of one, two or three distinctions, yet even parity occurs in 20,126 of
+the 38,982 states under one and in 20,190 under the other. Counting each state
+of the grown stage once and reading only the old distinctions instead, the
+growth's own factors reproduce every mean
+([the weights](research/NAE-WEIGHTS-20261127-001/decision.md), refuted in
+part by its referee).
+
 **What earlier lines found.** Lesson 4.8 binds distinctions at different
 depths of one address tree, with a bond that grows by one member per depth. A
 study of bases within bases made each distinction of an outer pattern into a
@@ -6300,6 +6330,7 @@ with nothing nested by hand.
 | A connected start keeps two or more independent such facts | computed, refereed: a nine-knot start of two joined rings gains two in one round, a sampled ten-knot start too (lesson 12.2) |
 | A tower's first step: facts held by the whole, bound by a rule that passes the knot test and that nothing outside supplies, where before the step they were not such facts | reached for facts read by no single knot on built starts, and on sampled ones when a small change is any change of at most five distinctions; for facts held by no part, on one sampled start under the shortest changes and, at a larger scale, on 8 of 12 three-ring built starts read for the families' facts and 4 of 12 for the whole rings': the rule is the start's own sum of knot laws, and growth makes the bound parities facts ([the built binding](research/BUILT-BINDING-20261126-001/decision.md), computed, refereed); under the forbidding cuts one knot's law makes the rule itself |
 | A tower: the step repeated, the bound layer keeping facts of its own | open. The families' facts obey exactly one relation, the sum of all the start's laws (proved), but sums of them can be carried on their own: on a start of three rings of four knots the three rings' facts obey one rule and the first ring's fact with its two half-ring facts another, five facts on separate carriers held by no part, so two second-layer knots share a fact; and a third-layer knot exists under a reading we choose ([the third layer](research/THIRD-LAYER-20261126-001/decision.md), refuted by its referee). What growth itself selects is only partly settled: the least change flipping exactly two families' facts costs a shortest chain of steps d + 2t + 2, d the families' distance in the start (proved, refereed), so at a fixed scale the start's distances fix which cluster facts are kept, level by level; but the same places carry knots meeting as a tree or in a loop, so growth does not fix the knots ([selected knots](research/SELECTED-KNOTS-20261127-001/decision.md), refuted by its referee), and the tree is read off distances only once the families are named ([the pair cost](research/TREE-PROOF-20261127-001/tree_proof.md), refereed) |
+| The same under not-all-equal | a fact held by the whole: a grown three-knot ring binds three agreements in one clause that needs all four laws, with no knot reading any of them; which of its three versions growth selects, and whether such relations bind again one layer up, is under study ([the not-all-equal layer](research/NAE-LAYER-20261127-001/decision.md), refuted by its referee); under the equal weighting the whole carries a frequency no table of one, two or three distinctions shows ([the weights](research/NAE-WEIGHTS-20261127-001/decision.md), refereed) |
 | A pattern that grows back into itself (recursion) | not shown: growing a start and then exchanging it gives the start back only when we pin its loose values, which ordinary growth never does, and the exchange is ours; no free return or cycle on the iterations tested ([recursion's lead](research/RECURSION-LEAD-20261126-001/decision.md), refereed); parts that copy themselves (lesson 8.7) copy under laws added by hand. Two leads, not results: a part released by ordinary growth that itself keeps releasing parts, proved under both laws, where the second level depends on which released pattern an observer's test recognizes ([generators](research/GENERATORS-20261120-001/nested.md)); and two knots sharing one distinction compose into one knot exactly when they can force it to opposite values ([composition](research/BASE-THREE-20261021-001)) |
 
 ### 12.4 Two kinds of contradiction

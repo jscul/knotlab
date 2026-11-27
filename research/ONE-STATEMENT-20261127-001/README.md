@@ -51,3 +51,18 @@ census starts: 200 of 200 under not-all-equal, 136 of 200 under parity.
 **Deviation, recorded before any not-all-equal result was read.** Timed at full size the not-all-equal run needs about
 three and a half hours (about 33 starts a minute once past the small starts), past the two-hour limit. It is cut to the
 first 2,000 census starts in the census order; the rest are not run. The parity run covers all 7,075.
+
+**What was found in (d)** ([`frozen_parity.jsonl`](frozen_parity.jsonl), [`frozen_nae.jsonl`](frozen_nae.jsonl)). The
+not-all-equal run stopped at its 90-minute limit after 1,194 of the planned 2,000 census starts (census 0 to 1,193);
+starts 1,194 to 1,999 were not run.
+- **H_d held on every start read.** Under not-all-equal the reader's pair fixes the families and the tree on all 1,194
+  starts read; under parity on all 7,075 (entailed).
+- **Under not-all-equal the pair fixes the knots themselves.** On 1,193 of the 1,194 starts read there is one
+  presentation; the exception (census 959) is the closed pattern of four three-place knots each sharing one distinction
+  with each other, which has two labellings with the same states and no loose distinction. Under parity on the same
+  1,194 starts the knots are fixed on 509, and on 1,499 of all 7,075.
+- **So, on the question of what chooses the knots:** under parity nothing in the states does (a presentation is a
+  completed system with one knot left out, and the states fix only its cycles); under not-all-equal the states with the
+  loose set marked do, on every start read but one. This is not entailed, and it agrees with the states-and-growth
+  study's finding that the not-all-equal states alone fix the presentation on 79.8% of small stages, now with the loose
+  set marked (`STATES-GROWTH-20261119-001`).

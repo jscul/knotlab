@@ -364,6 +364,7 @@ evidence: results and their status come from the records each entry links.
 | [A306](#a306--at-most-two-holders-at-the-second-layer) | At most two holders at the second layer | scaffold | Assumed |
 | [A307](#a307--cycle-starts-two-twin-weightings-and-count-caps-to-test-the-node-reading-and-its-twin-exception) | Cycle starts, two twin weightings and count caps to test the node reading and its twin exception | scaffold | Assumed |
 | [A308](#a308--agreement-readings-on-small-carriers-two-holder-notions-and-bonds-as-laws-to-test-the-grown-rings-bond) | Agreement readings on small carriers, two holder notions and bonds as laws, to test the grown ring's bond | scaffold | Assumed |
+| [A309](#a309--a-box-form-for-the-step-one-layer-up-and-closed-systems-counted-once) | A box form for the step one layer up, and closed systems counted once | scaffold | Assumed |
 
 ## Entries
 
@@ -6413,3 +6414,23 @@ evidence: results and their status come from the records each entry links.
   - 2026-11-27 · Entered with `RING-BOND-20261127-001` before its runs.
   - 2026-11-27 · Every swap run left the answers unchanged: all flip-unchanged readings and carriers up to four on the ring, every bond still missing one triple; five holders on 100 sampled starts, 6,153 bonds against 4,867, one stage of 175 gaining its first bond. Overlapping readings in the layer above were read at round 1 only. The choice of one of the ring's three equivalent bonds is the study's, not the model's.
   - 2026-11-27 · Referee R1 (refuted, one Block): the clusters of at most three bonds could not hold a bond of the layer above, which needs eight; one exists on a closed twelve-knot start and on the grown ring with overlap. Strict carrier controls leave 2 and 0 sampled bonds; disconnected holders raise the starts with a bond before growth from 408 to 606; the counts depend on these choices.
+
+### A309 · A box form for the step one layer up, and closed systems counted once
+
+**Assumed** · 2026-11-27 · scaffold
+
+- **Statement.** For one study of whether the step one layer up occurs, and whether growth makes it: the step is read as
+  a box. A box is six agreements on disjoint carriers of two or three distinctions whose eight triples are clauses
+  missing one product triple. Its three agreements of agreements then miss one word. Closed systems of three-place knots
+  that hold every distinction twice are read as connected cubic graphs, every simple one with up to twelve points once.
+  Grown stages are a held-out sample of 1,000 census starts (seed 20261128) at rounds 0 to 2, with the full search up to
+  19 distinctions and the local search (holders at most four) above.
+- **Why.** Adopted by the thread on 27 November 2026 for `UPPER-GROWN-20261127-001`. The box is the form of the referee's
+  witness in `RING-BOND-20261127-001`, and counting every closed system once needs no weighting.
+- **Rests on it.** The study's two answers ([the note](../research/UPPER-GROWN-20261127-001/README.md)).
+- **Challenge.** Other upper readings (overlapping carriers, as on the grown ring), multigraphs and knots of four places,
+  more rounds of growth, larger closed systems. None was swapped here. The model is not expected to keep the box form
+  as the only shape of the step.
+- **History.**
+  - 2026-11-27 · Entered with `UPPER-GROWN-20261127-001`: boxes on 49 of the 85 twelve-knot closed systems, none below
+    twelve, none on 2,416 grown stages read.

@@ -2,8 +2,20 @@
 
 Epic `THIRD-READER-20261126-001` (G18, at the coordinator's go-ahead after `VALUE-CHANGE-20261126-001`; register entry
 A302), closed 26 November 2026. Computed, with arguments; the advisor consulted once before the freeze (every drafted
-prediction entailed; its values frozen and all held); referee pending. [The note](README.md) ·
+prediction entailed; its values frozen and all held); refereed (R1, below). [The note](README.md) ·
 [preregistration](preregistration.md) · [advisor's question](advisor_question.md) and [answer](advisor_answer.md)
+
+> **Refereed (R1, [report](referee-R1/report.md)): confirmed with fixes, no Block.** All 51 triple counts and 256 answer
+> probabilities rebuilt; the named reads win 1 on three families and 3/4 on the loose chain. **Narrowings:** readers whom
+> no knot joins are independent given the unread values, and their value parities can still agree perfectly; sending
+> **one** ring setting to the middle already reproduces the full table (the loose chain's needs none), and uniform
+> marginals are what establish that nothing is signalled; the contact list does not settle fairness, and the earlier
+> square is fairer, since its herald can be fixed before either setting is chosen; the real-reads lemma needs equal
+> positive counting and one real read per reader (a weaker no-perfect-advantage result extends to nonnegative
+> amplitudes); every summary should name all four supplied pieces (the coherent counting state, combined questions, the
+> middle reader, the quarter-turn read), which suffice, with their minimality unproved. **Not a block:** the reader
+> regions named ('places'; the other choice keeps the triple counts and changes some pair counts); the engine sets the
+> closing flag by elimination. Logged in `docs/CORRECTIONS.md`.
 
 ## What stands
 

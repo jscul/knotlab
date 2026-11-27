@@ -5,8 +5,20 @@ square of certainty for two readers whom no knot joins needed three supplied pie
 questions (a change of one set read with a value of another), and a middle reader who reads changes and whose record's
 signs are applied to the score. Here the middle becomes a third reader with two settings, to remove the sorting. Computed,
 with arguments; the advisor consulted read-only in the repository ([question](advisor_question.md),
-[answer](advisor_answer.md)); referee pending. Every prediction frozen was entailed by the advisor's hand values, and all
+[answer](advisor_answer.md)); refereed (R1, below). Every prediction frozen was entailed by the advisor's hand values, and all
 held ([preregistration](preregistration.md)).
+
+> **Refereed (R1, [report](referee-R1/report.md)): confirmed with fixes, no Block.** All 51 triple counts and 256 answer
+> probabilities rebuilt; the named reads win 1 on three families and 3/4 on the loose chain. **Narrowings:** readers whom
+> no knot joins are independent given the unread values, and their value parities can still agree perfectly; sending
+> **one** ring setting to the middle already reproduces the full table (the loose chain's needs none), and uniform
+> marginals are what establish that nothing is signalled; the contact list does not settle fairness, and the earlier
+> square is fairer, since its herald can be fixed before either setting is chosen; the real-reads lemma needs equal
+> positive counting and one real read per reader (a weaker no-perfect-advantage result extends to nonnegative
+> amplitudes); every summary should name all four supplied pieces (the coherent counting state, combined questions, the
+> middle reader, the quarter-turn read), which suffice, with their minimality unproved. **Not a block:** the reader
+> regions named ('places'; the other choice keeps the triple counts and changes some pair counts); the engine sets the
+> closing flag by elimination. Logged in `docs/CORRECTIONS.md`.
 
 ## A. Readers whom no knot joins share nothing a list cannot give (an argument, checked)
 

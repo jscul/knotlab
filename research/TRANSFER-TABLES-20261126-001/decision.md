@@ -1,9 +1,20 @@
 # Tables under the recorded transfer law: what stands (as computed; referee pending)
 
 Epic `TRANSFER-TABLES-20261126-001` (at the coordinator's go-ahead after the factoring study's referees), closed 26
-November 2026. Computed; advisor consulted before the freeze; every frozen prediction held; referee pending.
+November 2026. Computed; advisor consulted before the freeze; every frozen prediction held; refereed (R1, below).
 [The note](README.md) · [preregistration](preregistration.md) · [advisor's question](advisor_question.md) and
 [answer](advisor_answer.md)
+
+> **Refereed (R1, [report](referee-R1/report.md)): confirmed with fixes, no Block.** Rebuilt: 13 reached states, 30
+> splits, a knot in the whole joining every split, the model's reads peaking at exactly 2 under every registered
+> counting, and 1 + √2 and ≈ 2.2159 with supplied coherence and rotated reads. **Narrowings:** "every counting" means
+> each registered counting: a supplied positive weighting on the same 13 states gives the model's reads 67/31 ≈ 2.16;
+> freely changing a read never signals, but changing the founder's preparation changes the far pair with certainty;
+> correlation alone is not contact (two fresh distinctions under the minimum lift are correlated and share no knot), so
+> the decision's intuition is too strong; "half the weight" is 1/2 under the start counting and 5/13 when every reached
+> state counts once; the failing control's nine-distinction cap applied at the finish, and no sampled start qualified.
+> **Not a block:** six splits per counting print zero for an empty value-read search; the code header's name for the
+> 13-state counting. Logged in `docs/CORRECTIONS.md`.
 
 ## What stands
 
@@ -31,8 +42,9 @@ November 2026. Computed; advisor consulted before the freeze; every frozen predi
 | 2 | The transfer law at more founders and rounds | 1/3 — more of the same kind | 3/3 | — | Proposed |
 
 **Intuition (an exact link, not evidence).** A law that reads values as it grows makes its own correlations into new
-relations among the distinctions it touched; those relations are knots in the whole, so the readers it ties are no
-longer separated. Correlation made by a law is contact.
+relations among the distinctions it touched; here those relations are knots in the whole, so the readers it ties are
+no longer separated *(R1: correlation alone is not contact; under the minimum lift two correlated fresh distinctions share
+no knot)*.
 
 **Corrections:** none in this study.
 **Goals:** checkpoint row added (G18; obstruction learned).

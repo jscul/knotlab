@@ -1,0 +1,5295 @@
+{
+ "conditional_key": [
+  "unread bits packed in listed order, first bit least significant",
+  "squared coefficient norm m",
+  "squared Schmidt product e"
+ ],
+ "exact_key": [
+  "product mass numerator p",
+  "entangled CHSH radicand r",
+  "negativity radicand e",
+  "squared normalization D"
+ ],
+ "formulas": {
+  "unrestricted_CHSH": "2*(p+sqrt(r))/D",
+  "negativity": "sqrt(e)/D"
+ },
+ "unrestricted_reads": "Hermitian involutions including constant and repeated settings",
+ "weightings": {
+  "minimum_start": {
+   "words": 13,
+   "D": 16
+  },
+  "minimum_once": {
+   "words": 13,
+   "D": 13
+  },
+  "pair_start": {
+   "words": 13,
+   "D": 16
+  },
+  "pair_once": {
+   "words": 13,
+   "D": 13
+  },
+  "pair_finish": {
+   "words": 32,
+   "D": 32
+  }
+ },
+ "summary": {
+  "minimum_start": [
+   {
+    "exact": [
+     16,
+     0,
+     0,
+     16
+    ],
+    "splits": 30
+   }
+  ],
+  "minimum_once": [
+   {
+    "exact": [
+     13,
+     0,
+     0,
+     13
+    ],
+    "splits": 30
+   }
+  ],
+  "pair_start": [
+   {
+    "exact": [
+     8,
+     128,
+     16,
+     16
+    ],
+    "splits": 3
+   },
+   {
+    "exact": [
+     10,
+     68,
+     8,
+     16
+    ],
+    "splits": 12
+   },
+   {
+    "exact": [
+     16,
+     0,
+     0,
+     16
+    ],
+    "splits": 15
+   }
+  ],
+  "pair_once": [
+   {
+    "exact": [
+     8,
+     41,
+     4,
+     13
+    ],
+    "splits": 3
+   },
+   {
+    "exact": [
+     10,
+     17,
+     2,
+     13
+    ],
+    "splits": 12
+   },
+   {
+    "exact": [
+     13,
+     0,
+     0,
+     13
+    ],
+    "splits": 15
+   }
+  ],
+  "pair_finish": [
+   {
+    "exact": [
+     32,
+     0,
+     0,
+     32
+    ],
+    "splits": 30
+   }
+  ]
+ },
+ "splits": [
+  {
+   "A": [
+    1,
+    2,
+    5,
+    6,
+    7,
+    8
+   ],
+   "B": [
+    3,
+    4
+   ],
+   "unread": [
+    0
+   ],
+   "checks": {
+    "minimum_start": {
+     "conditional": [
+      [
+       0,
+       8,
+       0
+      ],
+      [
+       1,
+       8,
+       0
+      ]
+     ],
+     "exact": [
+      16,
+      0,
+      0,
+      16
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    },
+    "minimum_once": {
+     "conditional": [
+      [
+       0,
+       5,
+       0
+      ],
+      [
+       1,
+       8,
+       0
+      ]
+     ],
+     "exact": [
+      13,
+      0,
+      0,
+      13
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    },
+    "pair_start": {
+     "conditional": [
+      [
+       0,
+       8,
+       16
+      ],
+      [
+       1,
+       8,
+       0
+      ]
+     ],
+     "exact": [
+      8,
+      128,
+      16,
+      16
+     ],
+     "witness_CHSH": 2.414213562373,
+     "partial_transpose_negativity": 0.25
+    },
+    "pair_once": {
+     "conditional": [
+      [
+       0,
+       5,
+       4
+      ],
+      [
+       1,
+       8,
+       0
+      ]
+     ],
+     "exact": [
+      8,
+      41,
+      4,
+      13
+     ],
+     "witness_CHSH": 2.215865267297,
+     "partial_transpose_negativity": 0.153846153846
+    },
+    "pair_finish": {
+     "conditional": [
+      [
+       0,
+       16,
+       0
+      ],
+      [
+       1,
+       16,
+       0
+      ]
+     ],
+     "exact": [
+      32,
+      0,
+      0,
+      32
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    }
+   }
+  },
+  {
+   "A": [
+    0,
+    2,
+    3,
+    4,
+    7,
+    8
+   ],
+   "B": [
+    5,
+    6
+   ],
+   "unread": [
+    1
+   ],
+   "checks": {
+    "minimum_start": {
+     "conditional": [
+      [
+       0,
+       8,
+       0
+      ],
+      [
+       1,
+       8,
+       0
+      ]
+     ],
+     "exact": [
+      16,
+      0,
+      0,
+      16
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    },
+    "minimum_once": {
+     "conditional": [
+      [
+       0,
+       5,
+       0
+      ],
+      [
+       1,
+       8,
+       0
+      ]
+     ],
+     "exact": [
+      13,
+      0,
+      0,
+      13
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    },
+    "pair_start": {
+     "conditional": [
+      [
+       0,
+       8,
+       16
+      ],
+      [
+       1,
+       8,
+       0
+      ]
+     ],
+     "exact": [
+      8,
+      128,
+      16,
+      16
+     ],
+     "witness_CHSH": 2.414213562373,
+     "partial_transpose_negativity": 0.25
+    },
+    "pair_once": {
+     "conditional": [
+      [
+       0,
+       5,
+       4
+      ],
+      [
+       1,
+       8,
+       0
+      ]
+     ],
+     "exact": [
+      8,
+      41,
+      4,
+      13
+     ],
+     "witness_CHSH": 2.215865267297,
+     "partial_transpose_negativity": 0.153846153846
+    },
+    "pair_finish": {
+     "conditional": [
+      [
+       0,
+       16,
+       0
+      ],
+      [
+       1,
+       16,
+       0
+      ]
+     ],
+     "exact": [
+      32,
+      0,
+      0,
+      32
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    }
+   }
+  },
+  {
+   "A": [
+    0,
+    1,
+    3,
+    4,
+    5,
+    6
+   ],
+   "B": [
+    7,
+    8
+   ],
+   "unread": [
+    2
+   ],
+   "checks": {
+    "minimum_start": {
+     "conditional": [
+      [
+       0,
+       8,
+       0
+      ],
+      [
+       1,
+       8,
+       0
+      ]
+     ],
+     "exact": [
+      16,
+      0,
+      0,
+      16
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    },
+    "minimum_once": {
+     "conditional": [
+      [
+       0,
+       5,
+       0
+      ],
+      [
+       1,
+       8,
+       0
+      ]
+     ],
+     "exact": [
+      13,
+      0,
+      0,
+      13
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    },
+    "pair_start": {
+     "conditional": [
+      [
+       0,
+       8,
+       16
+      ],
+      [
+       1,
+       8,
+       0
+      ]
+     ],
+     "exact": [
+      8,
+      128,
+      16,
+      16
+     ],
+     "witness_CHSH": 2.414213562373,
+     "partial_transpose_negativity": 0.25
+    },
+    "pair_once": {
+     "conditional": [
+      [
+       0,
+       5,
+       4
+      ],
+      [
+       1,
+       8,
+       0
+      ]
+     ],
+     "exact": [
+      8,
+      41,
+      4,
+      13
+     ],
+     "witness_CHSH": 2.215865267297,
+     "partial_transpose_negativity": 0.153846153846
+    },
+    "pair_finish": {
+     "conditional": [
+      [
+       0,
+       16,
+       0
+      ],
+      [
+       1,
+       16,
+       0
+      ]
+     ],
+     "exact": [
+      32,
+      0,
+      0,
+      32
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    }
+   }
+  },
+  {
+   "A": [
+    2,
+    3,
+    4,
+    7,
+    8
+   ],
+   "B": [
+    5,
+    6
+   ],
+   "unread": [
+    0,
+    1
+   ],
+   "checks": {
+    "minimum_start": {
+     "conditional": [
+      [
+       0,
+       4,
+       0
+      ],
+      [
+       1,
+       4,
+       0
+      ],
+      [
+       2,
+       4,
+       0
+      ],
+      [
+       3,
+       4,
+       0
+      ]
+     ],
+     "exact": [
+      16,
+      0,
+      0,
+      16
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    },
+    "minimum_once": {
+     "conditional": [
+      [
+       0,
+       1,
+       0
+      ],
+      [
+       1,
+       4,
+       0
+      ],
+      [
+       2,
+       4,
+       0
+      ],
+      [
+       3,
+       4,
+       0
+      ]
+     ],
+     "exact": [
+      13,
+      0,
+      0,
+      13
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    },
+    "pair_start": {
+     "conditional": [
+      [
+       0,
+       4,
+       0
+      ],
+      [
+       1,
+       4,
+       0
+      ],
+      [
+       2,
+       4,
+       0
+      ],
+      [
+       3,
+       4,
+       0
+      ]
+     ],
+     "exact": [
+      16,
+      0,
+      0,
+      16
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    },
+    "pair_once": {
+     "conditional": [
+      [
+       0,
+       1,
+       0
+      ],
+      [
+       1,
+       4,
+       0
+      ],
+      [
+       2,
+       4,
+       0
+      ],
+      [
+       3,
+       4,
+       0
+      ]
+     ],
+     "exact": [
+      13,
+      0,
+      0,
+      13
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    },
+    "pair_finish": {
+     "conditional": [
+      [
+       0,
+       8,
+       0
+      ],
+      [
+       1,
+       8,
+       0
+      ],
+      [
+       2,
+       8,
+       0
+      ],
+      [
+       3,
+       8,
+       0
+      ]
+     ],
+     "exact": [
+      32,
+      0,
+      0,
+      32
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    }
+   }
+  },
+  {
+   "A": [
+    2,
+    5,
+    6,
+    7,
+    8
+   ],
+   "B": [
+    3,
+    4
+   ],
+   "unread": [
+    0,
+    1
+   ],
+   "checks": {
+    "minimum_start": {
+     "conditional": [
+      [
+       0,
+       4,
+       0
+      ],
+      [
+       1,
+       4,
+       0
+      ],
+      [
+       2,
+       4,
+       0
+      ],
+      [
+       3,
+       4,
+       0
+      ]
+     ],
+     "exact": [
+      16,
+      0,
+      0,
+      16
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    },
+    "minimum_once": {
+     "conditional": [
+      [
+       0,
+       1,
+       0
+      ],
+      [
+       1,
+       4,
+       0
+      ],
+      [
+       2,
+       4,
+       0
+      ],
+      [
+       3,
+       4,
+       0
+      ]
+     ],
+     "exact": [
+      13,
+      0,
+      0,
+      13
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    },
+    "pair_start": {
+     "conditional": [
+      [
+       0,
+       4,
+       0
+      ],
+      [
+       1,
+       4,
+       0
+      ],
+      [
+       2,
+       4,
+       0
+      ],
+      [
+       3,
+       4,
+       0
+      ]
+     ],
+     "exact": [
+      16,
+      0,
+      0,
+      16
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    },
+    "pair_once": {
+     "conditional": [
+      [
+       0,
+       1,
+       0
+      ],
+      [
+       1,
+       4,
+       0
+      ],
+      [
+       2,
+       4,
+       0
+      ],
+      [
+       3,
+       4,
+       0
+      ]
+     ],
+     "exact": [
+      13,
+      0,
+      0,
+      13
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    },
+    "pair_finish": {
+     "conditional": [
+      [
+       0,
+       8,
+       0
+      ],
+      [
+       1,
+       8,
+       0
+      ],
+      [
+       2,
+       8,
+       0
+      ],
+      [
+       3,
+       8,
+       0
+      ]
+     ],
+     "exact": [
+      32,
+      0,
+      0,
+      32
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    }
+   }
+  },
+  {
+   "A": [
+    2,
+    7,
+    8
+   ],
+   "B": [
+    3,
+    4,
+    5,
+    6
+   ],
+   "unread": [
+    0,
+    1
+   ],
+   "checks": {
+    "minimum_start": {
+     "conditional": [
+      [
+       0,
+       4,
+       0
+      ],
+      [
+       1,
+       4,
+       0
+      ],
+      [
+       2,
+       4,
+       0
+      ],
+      [
+       3,
+       4,
+       0
+      ]
+     ],
+     "exact": [
+      16,
+      0,
+      0,
+      16
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    },
+    "minimum_once": {
+     "conditional": [
+      [
+       0,
+       1,
+       0
+      ],
+      [
+       1,
+       4,
+       0
+      ],
+      [
+       2,
+       4,
+       0
+      ],
+      [
+       3,
+       4,
+       0
+      ]
+     ],
+     "exact": [
+      13,
+      0,
+      0,
+      13
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    },
+    "pair_start": {
+     "conditional": [
+      [
+       0,
+       4,
+       0
+      ],
+      [
+       1,
+       4,
+       0
+      ],
+      [
+       2,
+       4,
+       0
+      ],
+      [
+       3,
+       4,
+       0
+      ]
+     ],
+     "exact": [
+      16,
+      0,
+      0,
+      16
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    },
+    "pair_once": {
+     "conditional": [
+      [
+       0,
+       1,
+       0
+      ],
+      [
+       1,
+       4,
+       0
+      ],
+      [
+       2,
+       4,
+       0
+      ],
+      [
+       3,
+       4,
+       0
+      ]
+     ],
+     "exact": [
+      13,
+      0,
+      0,
+      13
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    },
+    "pair_finish": {
+     "conditional": [
+      [
+       0,
+       8,
+       0
+      ],
+      [
+       1,
+       8,
+       0
+      ],
+      [
+       2,
+       8,
+       0
+      ],
+      [
+       3,
+       8,
+       0
+      ]
+     ],
+     "exact": [
+      32,
+      0,
+      0,
+      32
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    }
+   }
+  },
+  {
+   "A": [
+    1,
+    3,
+    4,
+    5,
+    6
+   ],
+   "B": [
+    7,
+    8
+   ],
+   "unread": [
+    0,
+    2
+   ],
+   "checks": {
+    "minimum_start": {
+     "conditional": [
+      [
+       0,
+       4,
+       0
+      ],
+      [
+       1,
+       4,
+       0
+      ],
+      [
+       2,
+       4,
+       0
+      ],
+      [
+       3,
+       4,
+       0
+      ]
+     ],
+     "exact": [
+      16,
+      0,
+      0,
+      16
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    },
+    "minimum_once": {
+     "conditional": [
+      [
+       0,
+       1,
+       0
+      ],
+      [
+       1,
+       4,
+       0
+      ],
+      [
+       2,
+       4,
+       0
+      ],
+      [
+       3,
+       4,
+       0
+      ]
+     ],
+     "exact": [
+      13,
+      0,
+      0,
+      13
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    },
+    "pair_start": {
+     "conditional": [
+      [
+       0,
+       4,
+       0
+      ],
+      [
+       1,
+       4,
+       0
+      ],
+      [
+       2,
+       4,
+       0
+      ],
+      [
+       3,
+       4,
+       0
+      ]
+     ],
+     "exact": [
+      16,
+      0,
+      0,
+      16
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    },
+    "pair_once": {
+     "conditional": [
+      [
+       0,
+       1,
+       0
+      ],
+      [
+       1,
+       4,
+       0
+      ],
+      [
+       2,
+       4,
+       0
+      ],
+      [
+       3,
+       4,
+       0
+      ]
+     ],
+     "exact": [
+      13,
+      0,
+      0,
+      13
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    },
+    "pair_finish": {
+     "conditional": [
+      [
+       0,
+       8,
+       0
+      ],
+      [
+       1,
+       8,
+       0
+      ],
+      [
+       2,
+       8,
+       0
+      ],
+      [
+       3,
+       8,
+       0
+      ]
+     ],
+     "exact": [
+      32,
+      0,
+      0,
+      32
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    }
+   }
+  },
+  {
+   "A": [
+    1,
+    5,
+    6
+   ],
+   "B": [
+    3,
+    4,
+    7,
+    8
+   ],
+   "unread": [
+    0,
+    2
+   ],
+   "checks": {
+    "minimum_start": {
+     "conditional": [
+      [
+       0,
+       4,
+       0
+      ],
+      [
+       1,
+       4,
+       0
+      ],
+      [
+       2,
+       4,
+       0
+      ],
+      [
+       3,
+       4,
+       0
+      ]
+     ],
+     "exact": [
+      16,
+      0,
+      0,
+      16
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    },
+    "minimum_once": {
+     "conditional": [
+      [
+       0,
+       1,
+       0
+      ],
+      [
+       1,
+       4,
+       0
+      ],
+      [
+       2,
+       4,
+       0
+      ],
+      [
+       3,
+       4,
+       0
+      ]
+     ],
+     "exact": [
+      13,
+      0,
+      0,
+      13
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    },
+    "pair_start": {
+     "conditional": [
+      [
+       0,
+       4,
+       0
+      ],
+      [
+       1,
+       4,
+       0
+      ],
+      [
+       2,
+       4,
+       0
+      ],
+      [
+       3,
+       4,
+       0
+      ]
+     ],
+     "exact": [
+      16,
+      0,
+      0,
+      16
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    },
+    "pair_once": {
+     "conditional": [
+      [
+       0,
+       1,
+       0
+      ],
+      [
+       1,
+       4,
+       0
+      ],
+      [
+       2,
+       4,
+       0
+      ],
+      [
+       3,
+       4,
+       0
+      ]
+     ],
+     "exact": [
+      13,
+      0,
+      0,
+      13
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    },
+    "pair_finish": {
+     "conditional": [
+      [
+       0,
+       8,
+       0
+      ],
+      [
+       1,
+       8,
+       0
+      ],
+      [
+       2,
+       8,
+       0
+      ],
+      [
+       3,
+       8,
+       0
+      ]
+     ],
+     "exact": [
+      32,
+      0,
+      0,
+      32
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    }
+   }
+  },
+  {
+   "A": [
+    1,
+    5,
+    6,
+    7,
+    8
+   ],
+   "B": [
+    3,
+    4
+   ],
+   "unread": [
+    0,
+    2
+   ],
+   "checks": {
+    "minimum_start": {
+     "conditional": [
+      [
+       0,
+       4,
+       0
+      ],
+      [
+       1,
+       4,
+       0
+      ],
+      [
+       2,
+       4,
+       0
+      ],
+      [
+       3,
+       4,
+       0
+      ]
+     ],
+     "exact": [
+      16,
+      0,
+      0,
+      16
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    },
+    "minimum_once": {
+     "conditional": [
+      [
+       0,
+       1,
+       0
+      ],
+      [
+       1,
+       4,
+       0
+      ],
+      [
+       2,
+       4,
+       0
+      ],
+      [
+       3,
+       4,
+       0
+      ]
+     ],
+     "exact": [
+      13,
+      0,
+      0,
+      13
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    },
+    "pair_start": {
+     "conditional": [
+      [
+       0,
+       4,
+       0
+      ],
+      [
+       1,
+       4,
+       0
+      ],
+      [
+       2,
+       4,
+       0
+      ],
+      [
+       3,
+       4,
+       0
+      ]
+     ],
+     "exact": [
+      16,
+      0,
+      0,
+      16
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    },
+    "pair_once": {
+     "conditional": [
+      [
+       0,
+       1,
+       0
+      ],
+      [
+       1,
+       4,
+       0
+      ],
+      [
+       2,
+       4,
+       0
+      ],
+      [
+       3,
+       4,
+       0
+      ]
+     ],
+     "exact": [
+      13,
+      0,
+      0,
+      13
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    },
+    "pair_finish": {
+     "conditional": [
+      [
+       0,
+       8,
+       0
+      ],
+      [
+       1,
+       8,
+       0
+      ],
+      [
+       2,
+       8,
+       0
+      ],
+      [
+       3,
+       8,
+       0
+      ]
+     ],
+     "exact": [
+      32,
+      0,
+      0,
+      32
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    }
+   }
+  },
+  {
+   "A": [
+    1,
+    2,
+    5,
+    6,
+    7,
+    8
+   ],
+   "B": [
+    4
+   ],
+   "unread": [
+    0,
+    3
+   ],
+   "checks": {
+    "minimum_start": {
+     "conditional": [
+      [
+       0,
+       8,
+       0
+      ],
+      [
+       1,
+       4,
+       0
+      ],
+      [
+       3,
+       4,
+       0
+      ]
+     ],
+     "exact": [
+      16,
+      0,
+      0,
+      16
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    },
+    "minimum_once": {
+     "conditional": [
+      [
+       0,
+       5,
+       0
+      ],
+      [
+       1,
+       4,
+       0
+      ],
+      [
+       3,
+       4,
+       0
+      ]
+     ],
+     "exact": [
+      13,
+      0,
+      0,
+      13
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    },
+    "pair_start": {
+     "conditional": [
+      [
+       0,
+       4,
+       0
+      ],
+      [
+       1,
+       4,
+       0
+      ],
+      [
+       2,
+       4,
+       0
+      ],
+      [
+       3,
+       4,
+       0
+      ]
+     ],
+     "exact": [
+      16,
+      0,
+      0,
+      16
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    },
+    "pair_once": {
+     "conditional": [
+      [
+       0,
+       1,
+       0
+      ],
+      [
+       1,
+       4,
+       0
+      ],
+      [
+       2,
+       4,
+       0
+      ],
+      [
+       3,
+       4,
+       0
+      ]
+     ],
+     "exact": [
+      13,
+      0,
+      0,
+      13
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    },
+    "pair_finish": {
+     "conditional": [
+      [
+       0,
+       8,
+       0
+      ],
+      [
+       1,
+       8,
+       0
+      ],
+      [
+       2,
+       8,
+       0
+      ],
+      [
+       3,
+       8,
+       0
+      ]
+     ],
+     "exact": [
+      32,
+      0,
+      0,
+      32
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    }
+   }
+  },
+  {
+   "A": [
+    1,
+    2,
+    5,
+    6,
+    7,
+    8
+   ],
+   "B": [
+    3
+   ],
+   "unread": [
+    0,
+    4
+   ],
+   "checks": {
+    "minimum_start": {
+     "conditional": [
+      [
+       0,
+       8,
+       0
+      ],
+      [
+       1,
+       4,
+       0
+      ],
+      [
+       3,
+       4,
+       0
+      ]
+     ],
+     "exact": [
+      16,
+      0,
+      0,
+      16
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    },
+    "minimum_once": {
+     "conditional": [
+      [
+       0,
+       5,
+       0
+      ],
+      [
+       1,
+       4,
+       0
+      ],
+      [
+       3,
+       4,
+       0
+      ]
+     ],
+     "exact": [
+      13,
+      0,
+      0,
+      13
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    },
+    "pair_start": {
+     "conditional": [
+      [
+       0,
+       4,
+       0
+      ],
+      [
+       1,
+       4,
+       0
+      ],
+      [
+       2,
+       4,
+       0
+      ],
+      [
+       3,
+       4,
+       0
+      ]
+     ],
+     "exact": [
+      16,
+      0,
+      0,
+      16
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    },
+    "pair_once": {
+     "conditional": [
+      [
+       0,
+       1,
+       0
+      ],
+      [
+       1,
+       4,
+       0
+      ],
+      [
+       2,
+       4,
+       0
+      ],
+      [
+       3,
+       4,
+       0
+      ]
+     ],
+     "exact": [
+      13,
+      0,
+      0,
+      13
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    },
+    "pair_finish": {
+     "conditional": [
+      [
+       0,
+       8,
+       0
+      ],
+      [
+       1,
+       8,
+       0
+      ],
+      [
+       2,
+       8,
+       0
+      ],
+      [
+       3,
+       8,
+       0
+      ]
+     ],
+     "exact": [
+      32,
+      0,
+      0,
+      32
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    }
+   }
+  },
+  {
+   "A": [
+    1,
+    2,
+    6,
+    7,
+    8
+   ],
+   "B": [
+    3,
+    4
+   ],
+   "unread": [
+    0,
+    5
+   ],
+   "checks": {
+    "minimum_start": {
+     "conditional": [
+      [
+       0,
+       6,
+       0
+      ],
+      [
+       1,
+       6,
+       0
+      ],
+      [
+       2,
+       2,
+       0
+      ],
+      [
+       3,
+       2,
+       0
+      ]
+     ],
+     "exact": [
+      16,
+      0,
+      0,
+      16
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    },
+    "minimum_once": {
+     "conditional": [
+      [
+       0,
+       3,
+       0
+      ],
+      [
+       1,
+       6,
+       0
+      ],
+      [
+       2,
+       2,
+       0
+      ],
+      [
+       3,
+       2,
+       0
+      ]
+     ],
+     "exact": [
+      13,
+      0,
+      0,
+      13
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    },
+    "pair_start": {
+     "conditional": [
+      [
+       0,
+       6,
+       8
+      ],
+      [
+       1,
+       2,
+       0
+      ],
+      [
+       2,
+       2,
+       0
+      ],
+      [
+       3,
+       6,
+       0
+      ]
+     ],
+     "exact": [
+      10,
+      68,
+      8,
+      16
+     ],
+     "witness_CHSH": 2.280776406404,
+     "partial_transpose_negativity": 0.176776695297
+    },
+    "pair_once": {
+     "conditional": [
+      [
+       0,
+       3,
+       2
+      ],
+      [
+       1,
+       2,
+       0
+      ],
+      [
+       2,
+       2,
+       0
+      ],
+      [
+       3,
+       6,
+       0
+      ]
+     ],
+     "exact": [
+      10,
+      17,
+      2,
+      13
+     ],
+     "witness_CHSH": 2.172785480864,
+     "partial_transpose_negativity": 0.108785658644
+    },
+    "pair_finish": {
+     "conditional": [
+      [
+       0,
+       8,
+       0
+      ],
+      [
+       1,
+       8,
+       0
+      ],
+      [
+       2,
+       8,
+       0
+      ],
+      [
+       3,
+       8,
+       0
+      ]
+     ],
+     "exact": [
+      32,
+      0,
+      0,
+      32
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    }
+   }
+  },
+  {
+   "A": [
+    1,
+    2,
+    5,
+    7,
+    8
+   ],
+   "B": [
+    3,
+    4
+   ],
+   "unread": [
+    0,
+    6
+   ],
+   "checks": {
+    "minimum_start": {
+     "conditional": [
+      [
+       0,
+       6,
+       0
+      ],
+      [
+       1,
+       6,
+       0
+      ],
+      [
+       2,
+       2,
+       0
+      ],
+      [
+       3,
+       2,
+       0
+      ]
+     ],
+     "exact": [
+      16,
+      0,
+      0,
+      16
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    },
+    "minimum_once": {
+     "conditional": [
+      [
+       0,
+       3,
+       0
+      ],
+      [
+       1,
+       6,
+       0
+      ],
+      [
+       2,
+       2,
+       0
+      ],
+      [
+       3,
+       2,
+       0
+      ]
+     ],
+     "exact": [
+      13,
+      0,
+      0,
+      13
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    },
+    "pair_start": {
+     "conditional": [
+      [
+       0,
+       6,
+       8
+      ],
+      [
+       1,
+       2,
+       0
+      ],
+      [
+       2,
+       2,
+       0
+      ],
+      [
+       3,
+       6,
+       0
+      ]
+     ],
+     "exact": [
+      10,
+      68,
+      8,
+      16
+     ],
+     "witness_CHSH": 2.280776406404,
+     "partial_transpose_negativity": 0.176776695297
+    },
+    "pair_once": {
+     "conditional": [
+      [
+       0,
+       3,
+       2
+      ],
+      [
+       1,
+       2,
+       0
+      ],
+      [
+       2,
+       2,
+       0
+      ],
+      [
+       3,
+       6,
+       0
+      ]
+     ],
+     "exact": [
+      10,
+      17,
+      2,
+      13
+     ],
+     "witness_CHSH": 2.172785480864,
+     "partial_transpose_negativity": 0.108785658644
+    },
+    "pair_finish": {
+     "conditional": [
+      [
+       0,
+       8,
+       0
+      ],
+      [
+       1,
+       8,
+       0
+      ],
+      [
+       2,
+       8,
+       0
+      ],
+      [
+       3,
+       8,
+       0
+      ]
+     ],
+     "exact": [
+      32,
+      0,
+      0,
+      32
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    }
+   }
+  },
+  {
+   "A": [
+    1,
+    2,
+    5,
+    6,
+    8
+   ],
+   "B": [
+    3,
+    4
+   ],
+   "unread": [
+    0,
+    7
+   ],
+   "checks": {
+    "minimum_start": {
+     "conditional": [
+      [
+       0,
+       6,
+       0
+      ],
+      [
+       1,
+       6,
+       0
+      ],
+      [
+       2,
+       2,
+       0
+      ],
+      [
+       3,
+       2,
+       0
+      ]
+     ],
+     "exact": [
+      16,
+      0,
+      0,
+      16
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    },
+    "minimum_once": {
+     "conditional": [
+      [
+       0,
+       3,
+       0
+      ],
+      [
+       1,
+       6,
+       0
+      ],
+      [
+       2,
+       2,
+       0
+      ],
+      [
+       3,
+       2,
+       0
+      ]
+     ],
+     "exact": [
+      13,
+      0,
+      0,
+      13
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    },
+    "pair_start": {
+     "conditional": [
+      [
+       0,
+       6,
+       8
+      ],
+      [
+       1,
+       2,
+       0
+      ],
+      [
+       2,
+       2,
+       0
+      ],
+      [
+       3,
+       6,
+       0
+      ]
+     ],
+     "exact": [
+      10,
+      68,
+      8,
+      16
+     ],
+     "witness_CHSH": 2.280776406404,
+     "partial_transpose_negativity": 0.176776695297
+    },
+    "pair_once": {
+     "conditional": [
+      [
+       0,
+       3,
+       2
+      ],
+      [
+       1,
+       2,
+       0
+      ],
+      [
+       2,
+       2,
+       0
+      ],
+      [
+       3,
+       6,
+       0
+      ]
+     ],
+     "exact": [
+      10,
+      17,
+      2,
+      13
+     ],
+     "witness_CHSH": 2.172785480864,
+     "partial_transpose_negativity": 0.108785658644
+    },
+    "pair_finish": {
+     "conditional": [
+      [
+       0,
+       8,
+       0
+      ],
+      [
+       1,
+       8,
+       0
+      ],
+      [
+       2,
+       8,
+       0
+      ],
+      [
+       3,
+       8,
+       0
+      ]
+     ],
+     "exact": [
+      32,
+      0,
+      0,
+      32
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    }
+   }
+  },
+  {
+   "A": [
+    1,
+    2,
+    5,
+    6,
+    7
+   ],
+   "B": [
+    3,
+    4
+   ],
+   "unread": [
+    0,
+    8
+   ],
+   "checks": {
+    "minimum_start": {
+     "conditional": [
+      [
+       0,
+       6,
+       0
+      ],
+      [
+       1,
+       6,
+       0
+      ],
+      [
+       2,
+       2,
+       0
+      ],
+      [
+       3,
+       2,
+       0
+      ]
+     ],
+     "exact": [
+      16,
+      0,
+      0,
+      16
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    },
+    "minimum_once": {
+     "conditional": [
+      [
+       0,
+       3,
+       0
+      ],
+      [
+       1,
+       6,
+       0
+      ],
+      [
+       2,
+       2,
+       0
+      ],
+      [
+       3,
+       2,
+       0
+      ]
+     ],
+     "exact": [
+      13,
+      0,
+      0,
+      13
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    },
+    "pair_start": {
+     "conditional": [
+      [
+       0,
+       6,
+       8
+      ],
+      [
+       1,
+       2,
+       0
+      ],
+      [
+       2,
+       2,
+       0
+      ],
+      [
+       3,
+       6,
+       0
+      ]
+     ],
+     "exact": [
+      10,
+      68,
+      8,
+      16
+     ],
+     "witness_CHSH": 2.280776406404,
+     "partial_transpose_negativity": 0.176776695297
+    },
+    "pair_once": {
+     "conditional": [
+      [
+       0,
+       3,
+       2
+      ],
+      [
+       1,
+       2,
+       0
+      ],
+      [
+       2,
+       2,
+       0
+      ],
+      [
+       3,
+       6,
+       0
+      ]
+     ],
+     "exact": [
+      10,
+      17,
+      2,
+      13
+     ],
+     "witness_CHSH": 2.172785480864,
+     "partial_transpose_negativity": 0.108785658644
+    },
+    "pair_finish": {
+     "conditional": [
+      [
+       0,
+       8,
+       0
+      ],
+      [
+       1,
+       8,
+       0
+      ],
+      [
+       2,
+       8,
+       0
+      ],
+      [
+       3,
+       8,
+       0
+      ]
+     ],
+     "exact": [
+      32,
+      0,
+      0,
+      32
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    }
+   }
+  },
+  {
+   "A": [
+    0,
+    3,
+    4
+   ],
+   "B": [
+    5,
+    6,
+    7,
+    8
+   ],
+   "unread": [
+    1,
+    2
+   ],
+   "checks": {
+    "minimum_start": {
+     "conditional": [
+      [
+       0,
+       4,
+       0
+      ],
+      [
+       1,
+       4,
+       0
+      ],
+      [
+       2,
+       4,
+       0
+      ],
+      [
+       3,
+       4,
+       0
+      ]
+     ],
+     "exact": [
+      16,
+      0,
+      0,
+      16
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    },
+    "minimum_once": {
+     "conditional": [
+      [
+       0,
+       1,
+       0
+      ],
+      [
+       1,
+       4,
+       0
+      ],
+      [
+       2,
+       4,
+       0
+      ],
+      [
+       3,
+       4,
+       0
+      ]
+     ],
+     "exact": [
+      13,
+      0,
+      0,
+      13
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    },
+    "pair_start": {
+     "conditional": [
+      [
+       0,
+       4,
+       0
+      ],
+      [
+       1,
+       4,
+       0
+      ],
+      [
+       2,
+       4,
+       0
+      ],
+      [
+       3,
+       4,
+       0
+      ]
+     ],
+     "exact": [
+      16,
+      0,
+      0,
+      16
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    },
+    "pair_once": {
+     "conditional": [
+      [
+       0,
+       1,
+       0
+      ],
+      [
+       1,
+       4,
+       0
+      ],
+      [
+       2,
+       4,
+       0
+      ],
+      [
+       3,
+       4,
+       0
+      ]
+     ],
+     "exact": [
+      13,
+      0,
+      0,
+      13
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    },
+    "pair_finish": {
+     "conditional": [
+      [
+       0,
+       8,
+       0
+      ],
+      [
+       1,
+       8,
+       0
+      ],
+      [
+       2,
+       8,
+       0
+      ],
+      [
+       3,
+       8,
+       0
+      ]
+     ],
+     "exact": [
+      32,
+      0,
+      0,
+      32
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    }
+   }
+  },
+  {
+   "A": [
+    0,
+    3,
+    4,
+    5,
+    6
+   ],
+   "B": [
+    7,
+    8
+   ],
+   "unread": [
+    1,
+    2
+   ],
+   "checks": {
+    "minimum_start": {
+     "conditional": [
+      [
+       0,
+       4,
+       0
+      ],
+      [
+       1,
+       4,
+       0
+      ],
+      [
+       2,
+       4,
+       0
+      ],
+      [
+       3,
+       4,
+       0
+      ]
+     ],
+     "exact": [
+      16,
+      0,
+      0,
+      16
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    },
+    "minimum_once": {
+     "conditional": [
+      [
+       0,
+       1,
+       0
+      ],
+      [
+       1,
+       4,
+       0
+      ],
+      [
+       2,
+       4,
+       0
+      ],
+      [
+       3,
+       4,
+       0
+      ]
+     ],
+     "exact": [
+      13,
+      0,
+      0,
+      13
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    },
+    "pair_start": {
+     "conditional": [
+      [
+       0,
+       4,
+       0
+      ],
+      [
+       1,
+       4,
+       0
+      ],
+      [
+       2,
+       4,
+       0
+      ],
+      [
+       3,
+       4,
+       0
+      ]
+     ],
+     "exact": [
+      16,
+      0,
+      0,
+      16
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    },
+    "pair_once": {
+     "conditional": [
+      [
+       0,
+       1,
+       0
+      ],
+      [
+       1,
+       4,
+       0
+      ],
+      [
+       2,
+       4,
+       0
+      ],
+      [
+       3,
+       4,
+       0
+      ]
+     ],
+     "exact": [
+      13,
+      0,
+      0,
+      13
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    },
+    "pair_finish": {
+     "conditional": [
+      [
+       0,
+       8,
+       0
+      ],
+      [
+       1,
+       8,
+       0
+      ],
+      [
+       2,
+       8,
+       0
+      ],
+      [
+       3,
+       8,
+       0
+      ]
+     ],
+     "exact": [
+      32,
+      0,
+      0,
+      32
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    }
+   }
+  },
+  {
+   "A": [
+    0,
+    3,
+    4,
+    7,
+    8
+   ],
+   "B": [
+    5,
+    6
+   ],
+   "unread": [
+    1,
+    2
+   ],
+   "checks": {
+    "minimum_start": {
+     "conditional": [
+      [
+       0,
+       4,
+       0
+      ],
+      [
+       1,
+       4,
+       0
+      ],
+      [
+       2,
+       4,
+       0
+      ],
+      [
+       3,
+       4,
+       0
+      ]
+     ],
+     "exact": [
+      16,
+      0,
+      0,
+      16
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    },
+    "minimum_once": {
+     "conditional": [
+      [
+       0,
+       1,
+       0
+      ],
+      [
+       1,
+       4,
+       0
+      ],
+      [
+       2,
+       4,
+       0
+      ],
+      [
+       3,
+       4,
+       0
+      ]
+     ],
+     "exact": [
+      13,
+      0,
+      0,
+      13
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    },
+    "pair_start": {
+     "conditional": [
+      [
+       0,
+       4,
+       0
+      ],
+      [
+       1,
+       4,
+       0
+      ],
+      [
+       2,
+       4,
+       0
+      ],
+      [
+       3,
+       4,
+       0
+      ]
+     ],
+     "exact": [
+      16,
+      0,
+      0,
+      16
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    },
+    "pair_once": {
+     "conditional": [
+      [
+       0,
+       1,
+       0
+      ],
+      [
+       1,
+       4,
+       0
+      ],
+      [
+       2,
+       4,
+       0
+      ],
+      [
+       3,
+       4,
+       0
+      ]
+     ],
+     "exact": [
+      13,
+      0,
+      0,
+      13
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    },
+    "pair_finish": {
+     "conditional": [
+      [
+       0,
+       8,
+       0
+      ],
+      [
+       1,
+       8,
+       0
+      ],
+      [
+       2,
+       8,
+       0
+      ],
+      [
+       3,
+       8,
+       0
+      ]
+     ],
+     "exact": [
+      32,
+      0,
+      0,
+      32
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    }
+   }
+  },
+  {
+   "A": [
+    0,
+    2,
+    4,
+    7,
+    8
+   ],
+   "B": [
+    5,
+    6
+   ],
+   "unread": [
+    1,
+    3
+   ],
+   "checks": {
+    "minimum_start": {
+     "conditional": [
+      [
+       0,
+       6,
+       0
+      ],
+      [
+       1,
+       6,
+       0
+      ],
+      [
+       2,
+       2,
+       0
+      ],
+      [
+       3,
+       2,
+       0
+      ]
+     ],
+     "exact": [
+      16,
+      0,
+      0,
+      16
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    },
+    "minimum_once": {
+     "conditional": [
+      [
+       0,
+       3,
+       0
+      ],
+      [
+       1,
+       6,
+       0
+      ],
+      [
+       2,
+       2,
+       0
+      ],
+      [
+       3,
+       2,
+       0
+      ]
+     ],
+     "exact": [
+      13,
+      0,
+      0,
+      13
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    },
+    "pair_start": {
+     "conditional": [
+      [
+       0,
+       6,
+       8
+      ],
+      [
+       1,
+       2,
+       0
+      ],
+      [
+       2,
+       2,
+       0
+      ],
+      [
+       3,
+       6,
+       0
+      ]
+     ],
+     "exact": [
+      10,
+      68,
+      8,
+      16
+     ],
+     "witness_CHSH": 2.280776406404,
+     "partial_transpose_negativity": 0.176776695297
+    },
+    "pair_once": {
+     "conditional": [
+      [
+       0,
+       3,
+       2
+      ],
+      [
+       1,
+       2,
+       0
+      ],
+      [
+       2,
+       2,
+       0
+      ],
+      [
+       3,
+       6,
+       0
+      ]
+     ],
+     "exact": [
+      10,
+      17,
+      2,
+      13
+     ],
+     "witness_CHSH": 2.172785480864,
+     "partial_transpose_negativity": 0.108785658644
+    },
+    "pair_finish": {
+     "conditional": [
+      [
+       0,
+       8,
+       0
+      ],
+      [
+       1,
+       8,
+       0
+      ],
+      [
+       2,
+       8,
+       0
+      ],
+      [
+       3,
+       8,
+       0
+      ]
+     ],
+     "exact": [
+      32,
+      0,
+      0,
+      32
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    }
+   }
+  },
+  {
+   "A": [
+    0,
+    2,
+    3,
+    7,
+    8
+   ],
+   "B": [
+    5,
+    6
+   ],
+   "unread": [
+    1,
+    4
+   ],
+   "checks": {
+    "minimum_start": {
+     "conditional": [
+      [
+       0,
+       6,
+       0
+      ],
+      [
+       1,
+       6,
+       0
+      ],
+      [
+       2,
+       2,
+       0
+      ],
+      [
+       3,
+       2,
+       0
+      ]
+     ],
+     "exact": [
+      16,
+      0,
+      0,
+      16
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    },
+    "minimum_once": {
+     "conditional": [
+      [
+       0,
+       3,
+       0
+      ],
+      [
+       1,
+       6,
+       0
+      ],
+      [
+       2,
+       2,
+       0
+      ],
+      [
+       3,
+       2,
+       0
+      ]
+     ],
+     "exact": [
+      13,
+      0,
+      0,
+      13
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    },
+    "pair_start": {
+     "conditional": [
+      [
+       0,
+       6,
+       8
+      ],
+      [
+       1,
+       2,
+       0
+      ],
+      [
+       2,
+       2,
+       0
+      ],
+      [
+       3,
+       6,
+       0
+      ]
+     ],
+     "exact": [
+      10,
+      68,
+      8,
+      16
+     ],
+     "witness_CHSH": 2.280776406404,
+     "partial_transpose_negativity": 0.176776695297
+    },
+    "pair_once": {
+     "conditional": [
+      [
+       0,
+       3,
+       2
+      ],
+      [
+       1,
+       2,
+       0
+      ],
+      [
+       2,
+       2,
+       0
+      ],
+      [
+       3,
+       6,
+       0
+      ]
+     ],
+     "exact": [
+      10,
+      17,
+      2,
+      13
+     ],
+     "witness_CHSH": 2.172785480864,
+     "partial_transpose_negativity": 0.108785658644
+    },
+    "pair_finish": {
+     "conditional": [
+      [
+       0,
+       8,
+       0
+      ],
+      [
+       1,
+       8,
+       0
+      ],
+      [
+       2,
+       8,
+       0
+      ],
+      [
+       3,
+       8,
+       0
+      ]
+     ],
+     "exact": [
+      32,
+      0,
+      0,
+      32
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    }
+   }
+  },
+  {
+   "A": [
+    0,
+    2,
+    3,
+    4,
+    7,
+    8
+   ],
+   "B": [
+    6
+   ],
+   "unread": [
+    1,
+    5
+   ],
+   "checks": {
+    "minimum_start": {
+     "conditional": [
+      [
+       0,
+       8,
+       0
+      ],
+      [
+       1,
+       4,
+       0
+      ],
+      [
+       3,
+       4,
+       0
+      ]
+     ],
+     "exact": [
+      16,
+      0,
+      0,
+      16
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    },
+    "minimum_once": {
+     "conditional": [
+      [
+       0,
+       5,
+       0
+      ],
+      [
+       1,
+       4,
+       0
+      ],
+      [
+       3,
+       4,
+       0
+      ]
+     ],
+     "exact": [
+      13,
+      0,
+      0,
+      13
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    },
+    "pair_start": {
+     "conditional": [
+      [
+       0,
+       4,
+       0
+      ],
+      [
+       1,
+       4,
+       0
+      ],
+      [
+       2,
+       4,
+       0
+      ],
+      [
+       3,
+       4,
+       0
+      ]
+     ],
+     "exact": [
+      16,
+      0,
+      0,
+      16
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    },
+    "pair_once": {
+     "conditional": [
+      [
+       0,
+       1,
+       0
+      ],
+      [
+       1,
+       4,
+       0
+      ],
+      [
+       2,
+       4,
+       0
+      ],
+      [
+       3,
+       4,
+       0
+      ]
+     ],
+     "exact": [
+      13,
+      0,
+      0,
+      13
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    },
+    "pair_finish": {
+     "conditional": [
+      [
+       0,
+       8,
+       0
+      ],
+      [
+       1,
+       8,
+       0
+      ],
+      [
+       2,
+       8,
+       0
+      ],
+      [
+       3,
+       8,
+       0
+      ]
+     ],
+     "exact": [
+      32,
+      0,
+      0,
+      32
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    }
+   }
+  },
+  {
+   "A": [
+    0,
+    2,
+    3,
+    4,
+    7,
+    8
+   ],
+   "B": [
+    5
+   ],
+   "unread": [
+    1,
+    6
+   ],
+   "checks": {
+    "minimum_start": {
+     "conditional": [
+      [
+       0,
+       8,
+       0
+      ],
+      [
+       1,
+       4,
+       0
+      ],
+      [
+       3,
+       4,
+       0
+      ]
+     ],
+     "exact": [
+      16,
+      0,
+      0,
+      16
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    },
+    "minimum_once": {
+     "conditional": [
+      [
+       0,
+       5,
+       0
+      ],
+      [
+       1,
+       4,
+       0
+      ],
+      [
+       3,
+       4,
+       0
+      ]
+     ],
+     "exact": [
+      13,
+      0,
+      0,
+      13
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    },
+    "pair_start": {
+     "conditional": [
+      [
+       0,
+       4,
+       0
+      ],
+      [
+       1,
+       4,
+       0
+      ],
+      [
+       2,
+       4,
+       0
+      ],
+      [
+       3,
+       4,
+       0
+      ]
+     ],
+     "exact": [
+      16,
+      0,
+      0,
+      16
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    },
+    "pair_once": {
+     "conditional": [
+      [
+       0,
+       1,
+       0
+      ],
+      [
+       1,
+       4,
+       0
+      ],
+      [
+       2,
+       4,
+       0
+      ],
+      [
+       3,
+       4,
+       0
+      ]
+     ],
+     "exact": [
+      13,
+      0,
+      0,
+      13
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    },
+    "pair_finish": {
+     "conditional": [
+      [
+       0,
+       8,
+       0
+      ],
+      [
+       1,
+       8,
+       0
+      ],
+      [
+       2,
+       8,
+       0
+      ],
+      [
+       3,
+       8,
+       0
+      ]
+     ],
+     "exact": [
+      32,
+      0,
+      0,
+      32
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    }
+   }
+  },
+  {
+   "A": [
+    0,
+    2,
+    3,
+    4,
+    8
+   ],
+   "B": [
+    5,
+    6
+   ],
+   "unread": [
+    1,
+    7
+   ],
+   "checks": {
+    "minimum_start": {
+     "conditional": [
+      [
+       0,
+       6,
+       0
+      ],
+      [
+       1,
+       6,
+       0
+      ],
+      [
+       2,
+       2,
+       0
+      ],
+      [
+       3,
+       2,
+       0
+      ]
+     ],
+     "exact": [
+      16,
+      0,
+      0,
+      16
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    },
+    "minimum_once": {
+     "conditional": [
+      [
+       0,
+       3,
+       0
+      ],
+      [
+       1,
+       6,
+       0
+      ],
+      [
+       2,
+       2,
+       0
+      ],
+      [
+       3,
+       2,
+       0
+      ]
+     ],
+     "exact": [
+      13,
+      0,
+      0,
+      13
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    },
+    "pair_start": {
+     "conditional": [
+      [
+       0,
+       6,
+       8
+      ],
+      [
+       1,
+       2,
+       0
+      ],
+      [
+       2,
+       2,
+       0
+      ],
+      [
+       3,
+       6,
+       0
+      ]
+     ],
+     "exact": [
+      10,
+      68,
+      8,
+      16
+     ],
+     "witness_CHSH": 2.280776406404,
+     "partial_transpose_negativity": 0.176776695297
+    },
+    "pair_once": {
+     "conditional": [
+      [
+       0,
+       3,
+       2
+      ],
+      [
+       1,
+       2,
+       0
+      ],
+      [
+       2,
+       2,
+       0
+      ],
+      [
+       3,
+       6,
+       0
+      ]
+     ],
+     "exact": [
+      10,
+      17,
+      2,
+      13
+     ],
+     "witness_CHSH": 2.172785480864,
+     "partial_transpose_negativity": 0.108785658644
+    },
+    "pair_finish": {
+     "conditional": [
+      [
+       0,
+       8,
+       0
+      ],
+      [
+       1,
+       8,
+       0
+      ],
+      [
+       2,
+       8,
+       0
+      ],
+      [
+       3,
+       8,
+       0
+      ]
+     ],
+     "exact": [
+      32,
+      0,
+      0,
+      32
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    }
+   }
+  },
+  {
+   "A": [
+    0,
+    2,
+    3,
+    4,
+    7
+   ],
+   "B": [
+    5,
+    6
+   ],
+   "unread": [
+    1,
+    8
+   ],
+   "checks": {
+    "minimum_start": {
+     "conditional": [
+      [
+       0,
+       6,
+       0
+      ],
+      [
+       1,
+       6,
+       0
+      ],
+      [
+       2,
+       2,
+       0
+      ],
+      [
+       3,
+       2,
+       0
+      ]
+     ],
+     "exact": [
+      16,
+      0,
+      0,
+      16
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    },
+    "minimum_once": {
+     "conditional": [
+      [
+       0,
+       3,
+       0
+      ],
+      [
+       1,
+       6,
+       0
+      ],
+      [
+       2,
+       2,
+       0
+      ],
+      [
+       3,
+       2,
+       0
+      ]
+     ],
+     "exact": [
+      13,
+      0,
+      0,
+      13
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    },
+    "pair_start": {
+     "conditional": [
+      [
+       0,
+       6,
+       8
+      ],
+      [
+       1,
+       2,
+       0
+      ],
+      [
+       2,
+       2,
+       0
+      ],
+      [
+       3,
+       6,
+       0
+      ]
+     ],
+     "exact": [
+      10,
+      68,
+      8,
+      16
+     ],
+     "witness_CHSH": 2.280776406404,
+     "partial_transpose_negativity": 0.176776695297
+    },
+    "pair_once": {
+     "conditional": [
+      [
+       0,
+       3,
+       2
+      ],
+      [
+       1,
+       2,
+       0
+      ],
+      [
+       2,
+       2,
+       0
+      ],
+      [
+       3,
+       6,
+       0
+      ]
+     ],
+     "exact": [
+      10,
+      17,
+      2,
+      13
+     ],
+     "witness_CHSH": 2.172785480864,
+     "partial_transpose_negativity": 0.108785658644
+    },
+    "pair_finish": {
+     "conditional": [
+      [
+       0,
+       8,
+       0
+      ],
+      [
+       1,
+       8,
+       0
+      ],
+      [
+       2,
+       8,
+       0
+      ],
+      [
+       3,
+       8,
+       0
+      ]
+     ],
+     "exact": [
+      32,
+      0,
+      0,
+      32
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    }
+   }
+  },
+  {
+   "A": [
+    0,
+    1,
+    4,
+    5,
+    6
+   ],
+   "B": [
+    7,
+    8
+   ],
+   "unread": [
+    2,
+    3
+   ],
+   "checks": {
+    "minimum_start": {
+     "conditional": [
+      [
+       0,
+       6,
+       0
+      ],
+      [
+       1,
+       6,
+       0
+      ],
+      [
+       2,
+       2,
+       0
+      ],
+      [
+       3,
+       2,
+       0
+      ]
+     ],
+     "exact": [
+      16,
+      0,
+      0,
+      16
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    },
+    "minimum_once": {
+     "conditional": [
+      [
+       0,
+       3,
+       0
+      ],
+      [
+       1,
+       6,
+       0
+      ],
+      [
+       2,
+       2,
+       0
+      ],
+      [
+       3,
+       2,
+       0
+      ]
+     ],
+     "exact": [
+      13,
+      0,
+      0,
+      13
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    },
+    "pair_start": {
+     "conditional": [
+      [
+       0,
+       6,
+       8
+      ],
+      [
+       1,
+       2,
+       0
+      ],
+      [
+       2,
+       2,
+       0
+      ],
+      [
+       3,
+       6,
+       0
+      ]
+     ],
+     "exact": [
+      10,
+      68,
+      8,
+      16
+     ],
+     "witness_CHSH": 2.280776406404,
+     "partial_transpose_negativity": 0.176776695297
+    },
+    "pair_once": {
+     "conditional": [
+      [
+       0,
+       3,
+       2
+      ],
+      [
+       1,
+       2,
+       0
+      ],
+      [
+       2,
+       2,
+       0
+      ],
+      [
+       3,
+       6,
+       0
+      ]
+     ],
+     "exact": [
+      10,
+      17,
+      2,
+      13
+     ],
+     "witness_CHSH": 2.172785480864,
+     "partial_transpose_negativity": 0.108785658644
+    },
+    "pair_finish": {
+     "conditional": [
+      [
+       0,
+       8,
+       0
+      ],
+      [
+       1,
+       8,
+       0
+      ],
+      [
+       2,
+       8,
+       0
+      ],
+      [
+       3,
+       8,
+       0
+      ]
+     ],
+     "exact": [
+      32,
+      0,
+      0,
+      32
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    }
+   }
+  },
+  {
+   "A": [
+    0,
+    1,
+    3,
+    5,
+    6
+   ],
+   "B": [
+    7,
+    8
+   ],
+   "unread": [
+    2,
+    4
+   ],
+   "checks": {
+    "minimum_start": {
+     "conditional": [
+      [
+       0,
+       6,
+       0
+      ],
+      [
+       1,
+       6,
+       0
+      ],
+      [
+       2,
+       2,
+       0
+      ],
+      [
+       3,
+       2,
+       0
+      ]
+     ],
+     "exact": [
+      16,
+      0,
+      0,
+      16
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    },
+    "minimum_once": {
+     "conditional": [
+      [
+       0,
+       3,
+       0
+      ],
+      [
+       1,
+       6,
+       0
+      ],
+      [
+       2,
+       2,
+       0
+      ],
+      [
+       3,
+       2,
+       0
+      ]
+     ],
+     "exact": [
+      13,
+      0,
+      0,
+      13
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    },
+    "pair_start": {
+     "conditional": [
+      [
+       0,
+       6,
+       8
+      ],
+      [
+       1,
+       2,
+       0
+      ],
+      [
+       2,
+       2,
+       0
+      ],
+      [
+       3,
+       6,
+       0
+      ]
+     ],
+     "exact": [
+      10,
+      68,
+      8,
+      16
+     ],
+     "witness_CHSH": 2.280776406404,
+     "partial_transpose_negativity": 0.176776695297
+    },
+    "pair_once": {
+     "conditional": [
+      [
+       0,
+       3,
+       2
+      ],
+      [
+       1,
+       2,
+       0
+      ],
+      [
+       2,
+       2,
+       0
+      ],
+      [
+       3,
+       6,
+       0
+      ]
+     ],
+     "exact": [
+      10,
+      17,
+      2,
+      13
+     ],
+     "witness_CHSH": 2.172785480864,
+     "partial_transpose_negativity": 0.108785658644
+    },
+    "pair_finish": {
+     "conditional": [
+      [
+       0,
+       8,
+       0
+      ],
+      [
+       1,
+       8,
+       0
+      ],
+      [
+       2,
+       8,
+       0
+      ],
+      [
+       3,
+       8,
+       0
+      ]
+     ],
+     "exact": [
+      32,
+      0,
+      0,
+      32
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    }
+   }
+  },
+  {
+   "A": [
+    0,
+    1,
+    3,
+    4,
+    6
+   ],
+   "B": [
+    7,
+    8
+   ],
+   "unread": [
+    2,
+    5
+   ],
+   "checks": {
+    "minimum_start": {
+     "conditional": [
+      [
+       0,
+       6,
+       0
+      ],
+      [
+       1,
+       6,
+       0
+      ],
+      [
+       2,
+       2,
+       0
+      ],
+      [
+       3,
+       2,
+       0
+      ]
+     ],
+     "exact": [
+      16,
+      0,
+      0,
+      16
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    },
+    "minimum_once": {
+     "conditional": [
+      [
+       0,
+       3,
+       0
+      ],
+      [
+       1,
+       6,
+       0
+      ],
+      [
+       2,
+       2,
+       0
+      ],
+      [
+       3,
+       2,
+       0
+      ]
+     ],
+     "exact": [
+      13,
+      0,
+      0,
+      13
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    },
+    "pair_start": {
+     "conditional": [
+      [
+       0,
+       6,
+       8
+      ],
+      [
+       1,
+       2,
+       0
+      ],
+      [
+       2,
+       2,
+       0
+      ],
+      [
+       3,
+       6,
+       0
+      ]
+     ],
+     "exact": [
+      10,
+      68,
+      8,
+      16
+     ],
+     "witness_CHSH": 2.280776406404,
+     "partial_transpose_negativity": 0.176776695297
+    },
+    "pair_once": {
+     "conditional": [
+      [
+       0,
+       3,
+       2
+      ],
+      [
+       1,
+       2,
+       0
+      ],
+      [
+       2,
+       2,
+       0
+      ],
+      [
+       3,
+       6,
+       0
+      ]
+     ],
+     "exact": [
+      10,
+      17,
+      2,
+      13
+     ],
+     "witness_CHSH": 2.172785480864,
+     "partial_transpose_negativity": 0.108785658644
+    },
+    "pair_finish": {
+     "conditional": [
+      [
+       0,
+       8,
+       0
+      ],
+      [
+       1,
+       8,
+       0
+      ],
+      [
+       2,
+       8,
+       0
+      ],
+      [
+       3,
+       8,
+       0
+      ]
+     ],
+     "exact": [
+      32,
+      0,
+      0,
+      32
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    }
+   }
+  },
+  {
+   "A": [
+    0,
+    1,
+    3,
+    4,
+    5
+   ],
+   "B": [
+    7,
+    8
+   ],
+   "unread": [
+    2,
+    6
+   ],
+   "checks": {
+    "minimum_start": {
+     "conditional": [
+      [
+       0,
+       6,
+       0
+      ],
+      [
+       1,
+       6,
+       0
+      ],
+      [
+       2,
+       2,
+       0
+      ],
+      [
+       3,
+       2,
+       0
+      ]
+     ],
+     "exact": [
+      16,
+      0,
+      0,
+      16
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    },
+    "minimum_once": {
+     "conditional": [
+      [
+       0,
+       3,
+       0
+      ],
+      [
+       1,
+       6,
+       0
+      ],
+      [
+       2,
+       2,
+       0
+      ],
+      [
+       3,
+       2,
+       0
+      ]
+     ],
+     "exact": [
+      13,
+      0,
+      0,
+      13
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    },
+    "pair_start": {
+     "conditional": [
+      [
+       0,
+       6,
+       8
+      ],
+      [
+       1,
+       2,
+       0
+      ],
+      [
+       2,
+       2,
+       0
+      ],
+      [
+       3,
+       6,
+       0
+      ]
+     ],
+     "exact": [
+      10,
+      68,
+      8,
+      16
+     ],
+     "witness_CHSH": 2.280776406404,
+     "partial_transpose_negativity": 0.176776695297
+    },
+    "pair_once": {
+     "conditional": [
+      [
+       0,
+       3,
+       2
+      ],
+      [
+       1,
+       2,
+       0
+      ],
+      [
+       2,
+       2,
+       0
+      ],
+      [
+       3,
+       6,
+       0
+      ]
+     ],
+     "exact": [
+      10,
+      17,
+      2,
+      13
+     ],
+     "witness_CHSH": 2.172785480864,
+     "partial_transpose_negativity": 0.108785658644
+    },
+    "pair_finish": {
+     "conditional": [
+      [
+       0,
+       8,
+       0
+      ],
+      [
+       1,
+       8,
+       0
+      ],
+      [
+       2,
+       8,
+       0
+      ],
+      [
+       3,
+       8,
+       0
+      ]
+     ],
+     "exact": [
+      32,
+      0,
+      0,
+      32
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    }
+   }
+  },
+  {
+   "A": [
+    0,
+    1,
+    3,
+    4,
+    5,
+    6
+   ],
+   "B": [
+    8
+   ],
+   "unread": [
+    2,
+    7
+   ],
+   "checks": {
+    "minimum_start": {
+     "conditional": [
+      [
+       0,
+       8,
+       0
+      ],
+      [
+       1,
+       4,
+       0
+      ],
+      [
+       3,
+       4,
+       0
+      ]
+     ],
+     "exact": [
+      16,
+      0,
+      0,
+      16
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    },
+    "minimum_once": {
+     "conditional": [
+      [
+       0,
+       5,
+       0
+      ],
+      [
+       1,
+       4,
+       0
+      ],
+      [
+       3,
+       4,
+       0
+      ]
+     ],
+     "exact": [
+      13,
+      0,
+      0,
+      13
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    },
+    "pair_start": {
+     "conditional": [
+      [
+       0,
+       4,
+       0
+      ],
+      [
+       1,
+       4,
+       0
+      ],
+      [
+       2,
+       4,
+       0
+      ],
+      [
+       3,
+       4,
+       0
+      ]
+     ],
+     "exact": [
+      16,
+      0,
+      0,
+      16
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    },
+    "pair_once": {
+     "conditional": [
+      [
+       0,
+       1,
+       0
+      ],
+      [
+       1,
+       4,
+       0
+      ],
+      [
+       2,
+       4,
+       0
+      ],
+      [
+       3,
+       4,
+       0
+      ]
+     ],
+     "exact": [
+      13,
+      0,
+      0,
+      13
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    },
+    "pair_finish": {
+     "conditional": [
+      [
+       0,
+       8,
+       0
+      ],
+      [
+       1,
+       8,
+       0
+      ],
+      [
+       2,
+       8,
+       0
+      ],
+      [
+       3,
+       8,
+       0
+      ]
+     ],
+     "exact": [
+      32,
+      0,
+      0,
+      32
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    }
+   }
+  },
+  {
+   "A": [
+    0,
+    1,
+    3,
+    4,
+    5,
+    6
+   ],
+   "B": [
+    7
+   ],
+   "unread": [
+    2,
+    8
+   ],
+   "checks": {
+    "minimum_start": {
+     "conditional": [
+      [
+       0,
+       8,
+       0
+      ],
+      [
+       1,
+       4,
+       0
+      ],
+      [
+       3,
+       4,
+       0
+      ]
+     ],
+     "exact": [
+      16,
+      0,
+      0,
+      16
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    },
+    "minimum_once": {
+     "conditional": [
+      [
+       0,
+       5,
+       0
+      ],
+      [
+       1,
+       4,
+       0
+      ],
+      [
+       3,
+       4,
+       0
+      ]
+     ],
+     "exact": [
+      13,
+      0,
+      0,
+      13
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    },
+    "pair_start": {
+     "conditional": [
+      [
+       0,
+       4,
+       0
+      ],
+      [
+       1,
+       4,
+       0
+      ],
+      [
+       2,
+       4,
+       0
+      ],
+      [
+       3,
+       4,
+       0
+      ]
+     ],
+     "exact": [
+      16,
+      0,
+      0,
+      16
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    },
+    "pair_once": {
+     "conditional": [
+      [
+       0,
+       1,
+       0
+      ],
+      [
+       1,
+       4,
+       0
+      ],
+      [
+       2,
+       4,
+       0
+      ],
+      [
+       3,
+       4,
+       0
+      ]
+     ],
+     "exact": [
+      13,
+      0,
+      0,
+      13
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    },
+    "pair_finish": {
+     "conditional": [
+      [
+       0,
+       8,
+       0
+      ],
+      [
+       1,
+       8,
+       0
+      ],
+      [
+       2,
+       8,
+       0
+      ],
+      [
+       3,
+       8,
+       0
+      ]
+     ],
+     "exact": [
+      32,
+      0,
+      0,
+      32
+     ],
+     "witness_CHSH": 2.0,
+     "partial_transpose_negativity": 0.0
+    }
+   }
+  }
+ ]
+}

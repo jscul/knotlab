@@ -5,8 +5,18 @@ transfer law of the ring-to-end study (`RING-TO-END-20261119-001`, a rival law t
 on an odd input takes one of its fresh pair, on an even input both if its parent holds another occupied distinction and
 none if the parent is quiet) makes a weighting that does not factor over its listed laws. The question: for freely set
 readers whom no listed law joins, does any table exceed the classical limit, and does any signal? Computed; the advisor
-consulted read-only in the repository ([question](advisor_question.md), [answer](advisor_answer.md)); **referee
-pending; the outcome is as computed until refereed.** Every frozen prediction held ([preregistration](preregistration.md)).
+consulted read-only in the repository ([question](advisor_question.md), [answer](advisor_answer.md)); **refereed (R1, below).** Every frozen prediction held ([preregistration](preregistration.md)).
+
+> **Refereed (R1, [report](referee-R1/report.md)): confirmed with fixes, no Block.** Rebuilt: 13 reached states, 30
+> splits, a knot in the whole joining every split, the model's reads peaking at exactly 2 under every registered
+> counting, and 1 + √2 and ≈ 2.2159 with supplied coherence and rotated reads. **Narrowings:** "every counting" means
+> each registered counting: a supplied positive weighting on the same 13 states gives the model's reads 67/31 ≈ 2.16;
+> freely changing a read never signals, but changing the founder's preparation changes the far pair with certainty;
+> correlation alone is not contact (two fresh distinctions under the minimum lift are correlated and share no knot), so
+> the decision's intuition is too strong; "half the weight" is 1/2 under the start counting and 5/13 when every reached
+> state counts once; the failing control's nine-distinction cap applied at the finish, and no sampled start qualified.
+> **Not a block:** six splits per counting print zero for an empty value-read search; the code header's name for the
+> 13-state counting. Logged in `docs/CORRECTIONS.md`.
 
 ## Setting ([`tables.py`](tables.py), [output](tables_out.jsonl.gz))
 

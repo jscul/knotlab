@@ -1,0 +1,4012 @@
+{
+  "scope": "The reconstructed checked chains, each on its whole stage. Knot and law indices are zero-based. Chain number is one-based.",
+  "lower_locality": "Exact variation at a fixed raw word of each source knot, using solver witnesses for feasible stage states.",
+  "upper_locality": "Six distinct functions checked against each defining triple and all other triples on the same six named readings. Arbitrary other stage bonds are outside this script.",
+  "upper_function_order": [
+    [
+      "A both",
+      "A either"
+    ],
+    [
+      "B both",
+      "B either"
+    ],
+    [
+      "C both",
+      "C either"
+    ]
+  ],
+  "upper_deletion_order": [
+    "A both",
+    "B both",
+    "C both"
+  ],
+  "controls": {
+    "bare_chain": {
+      "source_supports": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          2,
+          3,
+          4
+        ],
+        [
+          4,
+          5,
+          6
+        ],
+        [
+          6,
+          7,
+          8
+        ],
+        [
+          8,
+          9,
+          10
+        ],
+        [
+          10,
+          11,
+          12
+        ],
+        [
+          12,
+          13,
+          14
+        ],
+        [
+          14,
+          15,
+          16
+        ]
+      ],
+      "carriers": [
+        [
+          3,
+          4,
+          5
+        ],
+        [
+          11,
+          12,
+          13
+        ],
+        [
+          0,
+          1,
+          10
+        ],
+        [
+          6,
+          15,
+          16
+        ],
+        [
+          7,
+          8,
+          9
+        ],
+        [
+          2,
+          14
+        ]
+      ],
+      "allowed_source_states": 13122,
+      "lower_joint_words": [
+        "000000",
+        "000001",
+        "000010",
+        "000011",
+        "000100",
+        "000101",
+        "000110",
+        "000111",
+        "001000",
+        "001001",
+        "001010",
+        "001011",
+        "001100",
+        "001101",
+        "001111",
+        "010000",
+        "010001",
+        "010010",
+        "010011",
+        "010100",
+        "010101",
+        "011000",
+        "011010",
+        "011100",
+        "100000",
+        "100001",
+        "100010",
+        "100011",
+        "100100",
+        "100110",
+        "101000",
+        "101001",
+        "101100",
+        "110000",
+        "110001",
+        "110011",
+        "110100",
+        "111000",
+        "111100"
+      ],
+      "defining_lower_triples": [
+        {
+          "readings": [
+            "A0",
+            "B0",
+            "C0"
+          ],
+          "missing_words": [
+            "111"
+          ],
+          "pairs_free": true,
+          "is_bond": true,
+          "mixed_fixes_by_upper_pair_and_function": [
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              4
+            ]
+          ]
+        },
+        {
+          "readings": [
+            "A0",
+            "B1",
+            "C1"
+          ],
+          "missing_words": [
+            "111"
+          ],
+          "pairs_free": true,
+          "is_bond": true,
+          "mixed_fixes_by_upper_pair_and_function": [
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              4
+            ]
+          ]
+        },
+        {
+          "readings": [
+            "A1",
+            "B0",
+            "C1"
+          ],
+          "missing_words": [
+            "111"
+          ],
+          "pairs_free": true,
+          "is_bond": true,
+          "mixed_fixes_by_upper_pair_and_function": [
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              4
+            ]
+          ]
+        },
+        {
+          "readings": [
+            "A1",
+            "B1",
+            "C0"
+          ],
+          "missing_words": [
+            "111"
+          ],
+          "pairs_free": true,
+          "is_bond": true,
+          "mixed_fixes_by_upper_pair_and_function": [
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              4
+            ]
+          ]
+        }
+      ],
+      "upper_images": [
+        [
+          "000",
+          "001",
+          "010",
+          "011",
+          "100",
+          "101",
+          "110"
+        ],
+        [
+          "000",
+          "001",
+          "010",
+          "011",
+          "100",
+          "101",
+          "110"
+        ],
+        [
+          "000",
+          "001",
+          "010",
+          "011",
+          "100",
+          "101",
+          "110"
+        ]
+      ],
+      "all_eight_single_deletions_restore_all_three_upper_111": true,
+      "whole_chain_deletion_restores_all_three_upper_111": true
+    },
+    "four_defining_lower_clauses_in_isolation": {
+      "lower_joint_words": [
+        "000000",
+        "000001",
+        "000010",
+        "000011",
+        "000100",
+        "000101",
+        "000110",
+        "000111",
+        "001000",
+        "001001",
+        "001010",
+        "001011",
+        "001100",
+        "001101",
+        "001110",
+        "001111",
+        "010000",
+        "010001",
+        "010010",
+        "010011",
+        "010100",
+        "010101",
+        "011000",
+        "011010",
+        "011100",
+        "100000",
+        "100001",
+        "100010",
+        "100011",
+        "100100",
+        "100110",
+        "101000",
+        "101001",
+        "101100",
+        "110000",
+        "110001",
+        "110010",
+        "110011",
+        "110100",
+        "111000",
+        "111100"
+      ],
+      "upper_images": [
+        [
+          "000",
+          "001",
+          "010",
+          "011",
+          "100",
+          "101",
+          "110"
+        ],
+        [
+          "000",
+          "001",
+          "010",
+          "011",
+          "100",
+          "101",
+          "110"
+        ],
+        [
+          "000",
+          "001",
+          "010",
+          "011",
+          "100",
+          "101",
+          "110"
+        ]
+      ],
+      "new_lower_words_after_each_clause_deletion": [
+        [
+          "101010",
+          "101011",
+          "101110",
+          "111010"
+        ],
+        [
+          "100101",
+          "100111",
+          "101101",
+          "110101"
+        ],
+        [
+          "011001",
+          "011011",
+          "011101",
+          "111001"
+        ],
+        [
+          "010110",
+          "010111",
+          "011110",
+          "110110"
+        ]
+      ]
+    },
+    "open_lower_reading_determined_at_containing_knot": true,
+    "planted_lower_bond_determines_two_upper_functions": {
+      "readings": [
+        "A0",
+        "A1",
+        "B0"
+      ],
+      "missing_words": [
+        "111"
+      ],
+      "pairs_free": true,
+      "is_bond": true,
+      "mixed_fixes_by_upper_pair_and_function": [
+        [
+          0,
+          0
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          7,
+          7
+        ]
+      ]
+    }
+  },
+  "direct_enumeration_of_actual_stages": [
+    {
+      "start": 87,
+      "round": 2,
+      "chain_number": 2,
+      "allowed_source_states_before_any_deletion": 70038,
+      "full_six_reading_image_and_all_eight_single_deletions_match": true
+    },
+    {
+      "start": 2030,
+      "round": 3,
+      "chain_number": 1,
+      "allowed_source_states_before_any_deletion": 13110,
+      "full_six_reading_image_and_all_eight_single_deletions_match": true
+    },
+    {
+      "start": 5260,
+      "round": 2,
+      "chain_number": 1,
+      "allowed_source_states_before_any_deletion": 12912,
+      "full_six_reading_image_and_all_eight_single_deletions_match": true
+    }
+  ],
+  "counts": {
+    "all": {
+      "checked_chains": 70,
+      "archived_fields_compared": 285,
+      "archive_field_mismatches": 0,
+      "six_reading_words_equal_bare_chain": 61,
+      "six_reading_words_count_39": 61,
+      "source_six_reading_word_checks": 4480,
+      "lower_reading_vs_source_knot_comparisons": 9666,
+      "lower_reading_vs_source_knot_comparisons_needing_additional_solver_queries": 142,
+      "lower_reading_vs_source_knot_additional_solver_queries": 305,
+      "lower_reading_vs_source_knot_determinations": 0,
+      "defining_lower_triples_checked": 280,
+      "defining_lower_triples_missing_exactly_111": 275,
+      "defining_lower_triples_that_are_bonds": 275,
+      "defining_lower_triple_vs_distinct_upper_function_comparisons": 1680,
+      "defining_lower_bond_vs_distinct_upper_function_comparisons": 1650,
+      "defining_lower_triple_vs_distinct_upper_function_determinations": 0,
+      "defining_lower_triple_and_upper_function_with_some_feasible_fix_leaving_only_one_value": 1680,
+      "other_triples_of_six_named_readings_checked": 1120,
+      "other_triple_of_six_vs_distinct_upper_function_comparisons": 6720,
+      "other_bonds_on_six_named_readings": 5,
+      "other_bond_of_six_vs_distinct_upper_function_comparisons": 30,
+      "other_bond_of_six_vs_distinct_upper_function_determinations": 10,
+      "other_bonds_on_six_named_readings_determining_an_upper_function": 5,
+      "upper_relations_checked": 210,
+      "upper_relations_missing_exactly_111": 210,
+      "upper_pairs_checked": 630,
+      "upper_relations_with_all_three_pairs_free": 210,
+      "single_chain_laws_checked": 560,
+      "single_deletion_role_checks": 1680,
+      "single_deletion_role_checks_restoring_111": 1668,
+      "single_chain_law_deletions_restoring_111_for_all_three_roles": 548,
+      "whole_chain_deletion_role_checks": 210,
+      "whole_chain_deletion_role_checks_restoring_111": 210,
+      "chains_carrying_frozen_step": 65,
+      "chains_with_every_law_needed": 62,
+      "chains_passing_all_gates_with_defining_bonds": 62,
+      "chains_passing_all_gates_with_all_bonds_on_same_six": 58,
+      "six_reading_words_count_38": 4,
+      "chains_with_upper_function_determined_at_other_bond_on_same_six": 5,
+      "otherwise_strict_chains_with_upper_function_determined_at_other_bond_on_same_six": 4,
+      "six_reading_words_count_34": 4,
+      "six_reading_words_count_33": 1,
+      "checked_starts": 6,
+      "starts_with_frozen_step": 6,
+      "starts_with_all_laws_needed_for_some_checked_chain": 6,
+      "starts_with_strict_step_among_checked_chains": 6,
+      "starts_with_upper_function_determined_at_other_bond_on_same_six": 2,
+      "starts_with_otherwise_strict_chain_whose_other_bond_on_same_six_determines_an_upper_function": 2,
+      "starts_with_strict_step_all_bonds_on_same_six": 6
+    },
+    "3": {
+      "checked_chains": 15,
+      "archived_fields_compared": 60,
+      "archive_field_mismatches": 0,
+      "six_reading_words_equal_bare_chain": 11,
+      "six_reading_words_count_39": 11,
+      "source_six_reading_word_checks": 960,
+      "lower_reading_vs_source_knot_comparisons": 1368,
+      "lower_reading_vs_source_knot_comparisons_needing_additional_solver_queries": 29,
+      "lower_reading_vs_source_knot_additional_solver_queries": 69,
+      "lower_reading_vs_source_knot_determinations": 0,
+      "defining_lower_triples_checked": 60,
+      "defining_lower_triples_missing_exactly_111": 58,
+      "defining_lower_triples_that_are_bonds": 58,
+      "defining_lower_triple_vs_distinct_upper_function_comparisons": 360,
+      "defining_lower_bond_vs_distinct_upper_function_comparisons": 348,
+      "defining_lower_triple_vs_distinct_upper_function_determinations": 0,
+      "defining_lower_triple_and_upper_function_with_some_feasible_fix_leaving_only_one_value": 360,
+      "other_triples_of_six_named_readings_checked": 240,
+      "other_triple_of_six_vs_distinct_upper_function_comparisons": 1440,
+      "other_bonds_on_six_named_readings": 3,
+      "other_bond_of_six_vs_distinct_upper_function_comparisons": 18,
+      "other_bond_of_six_vs_distinct_upper_function_determinations": 6,
+      "other_bonds_on_six_named_readings_determining_an_upper_function": 3,
+      "upper_relations_checked": 45,
+      "upper_relations_missing_exactly_111": 45,
+      "upper_pairs_checked": 135,
+      "upper_relations_with_all_three_pairs_free": 45,
+      "single_chain_laws_checked": 120,
+      "single_deletion_role_checks": 360,
+      "single_deletion_role_checks_restoring_111": 357,
+      "single_chain_law_deletions_restoring_111_for_all_three_roles": 117,
+      "whole_chain_deletion_role_checks": 45,
+      "whole_chain_deletion_role_checks_restoring_111": 45,
+      "chains_carrying_frozen_step": 13,
+      "chains_with_every_law_needed": 13,
+      "chains_passing_all_gates_with_defining_bonds": 13,
+      "chains_passing_all_gates_with_all_bonds_on_same_six": 11,
+      "six_reading_words_count_38": 2,
+      "chains_with_upper_function_determined_at_other_bond_on_same_six": 3,
+      "otherwise_strict_chains_with_upper_function_determined_at_other_bond_on_same_six": 2,
+      "six_reading_words_count_33": 1,
+      "six_reading_words_count_34": 1,
+      "checked_starts": 5,
+      "starts_with_frozen_step": 5,
+      "starts_with_all_laws_needed_for_some_checked_chain": 5,
+      "starts_with_strict_step_among_checked_chains": 5,
+      "starts_with_upper_function_determined_at_other_bond_on_same_six": 2,
+      "starts_with_otherwise_strict_chain_whose_other_bond_on_same_six_determines_an_upper_function": 2,
+      "starts_with_strict_step_all_bonds_on_same_six": 4
+    },
+    "4": {
+      "checked_chains": 15,
+      "archived_fields_compared": 60,
+      "archive_field_mismatches": 0,
+      "six_reading_words_equal_bare_chain": 13,
+      "six_reading_words_count_39": 13,
+      "source_six_reading_word_checks": 960,
+      "lower_reading_vs_source_knot_comparisons": 1836,
+      "lower_reading_vs_source_knot_comparisons_needing_additional_solver_queries": 32,
+      "lower_reading_vs_source_knot_additional_solver_queries": 59,
+      "lower_reading_vs_source_knot_determinations": 0,
+      "defining_lower_triples_checked": 60,
+      "defining_lower_triples_missing_exactly_111": 58,
+      "defining_lower_triples_that_are_bonds": 58,
+      "defining_lower_triple_vs_distinct_upper_function_comparisons": 360,
+      "defining_lower_bond_vs_distinct_upper_function_comparisons": 348,
+      "defining_lower_triple_vs_distinct_upper_function_determinations": 0,
+      "defining_lower_triple_and_upper_function_with_some_feasible_fix_leaving_only_one_value": 360,
+      "other_triples_of_six_named_readings_checked": 240,
+      "other_triple_of_six_vs_distinct_upper_function_comparisons": 1440,
+      "other_bonds_on_six_named_readings": 0,
+      "other_bond_of_six_vs_distinct_upper_function_comparisons": 0,
+      "other_bond_of_six_vs_distinct_upper_function_determinations": 0,
+      "other_bonds_on_six_named_readings_determining_an_upper_function": 0,
+      "upper_relations_checked": 45,
+      "upper_relations_missing_exactly_111": 45,
+      "upper_pairs_checked": 135,
+      "upper_relations_with_all_three_pairs_free": 45,
+      "single_chain_laws_checked": 120,
+      "single_deletion_role_checks": 360,
+      "single_deletion_role_checks_restoring_111": 358,
+      "single_chain_law_deletions_restoring_111_for_all_three_roles": 118,
+      "whole_chain_deletion_role_checks": 45,
+      "whole_chain_deletion_role_checks_restoring_111": 45,
+      "chains_carrying_frozen_step": 13,
+      "chains_with_every_law_needed": 13,
+      "chains_passing_all_gates_with_defining_bonds": 13,
+      "chains_passing_all_gates_with_all_bonds_on_same_six": 13,
+      "six_reading_words_count_34": 2,
+      "checked_starts": 5,
+      "starts_with_frozen_step": 5,
+      "starts_with_all_laws_needed_for_some_checked_chain": 5,
+      "starts_with_strict_step_among_checked_chains": 5,
+      "starts_with_upper_function_determined_at_other_bond_on_same_six": 0,
+      "starts_with_otherwise_strict_chain_whose_other_bond_on_same_six_determines_an_upper_function": 0,
+      "starts_with_strict_step_all_bonds_on_same_six": 5
+    },
+    "5": {
+      "checked_chains": 18,
+      "archived_fields_compared": 75,
+      "archive_field_mismatches": 0,
+      "six_reading_words_equal_bare_chain": 17,
+      "six_reading_words_count_39": 17,
+      "source_six_reading_word_checks": 1152,
+      "lower_reading_vs_source_knot_comparisons": 2736,
+      "lower_reading_vs_source_knot_comparisons_needing_additional_solver_queries": 36,
+      "lower_reading_vs_source_knot_additional_solver_queries": 81,
+      "lower_reading_vs_source_knot_determinations": 0,
+      "defining_lower_triples_checked": 72,
+      "defining_lower_triples_missing_exactly_111": 71,
+      "defining_lower_triples_that_are_bonds": 71,
+      "defining_lower_triple_vs_distinct_upper_function_comparisons": 432,
+      "defining_lower_bond_vs_distinct_upper_function_comparisons": 426,
+      "defining_lower_triple_vs_distinct_upper_function_determinations": 0,
+      "defining_lower_triple_and_upper_function_with_some_feasible_fix_leaving_only_one_value": 432,
+      "other_triples_of_six_named_readings_checked": 288,
+      "other_triple_of_six_vs_distinct_upper_function_comparisons": 1728,
+      "other_bonds_on_six_named_readings": 0,
+      "other_bond_of_six_vs_distinct_upper_function_comparisons": 0,
+      "other_bond_of_six_vs_distinct_upper_function_determinations": 0,
+      "other_bonds_on_six_named_readings_determining_an_upper_function": 0,
+      "upper_relations_checked": 54,
+      "upper_relations_missing_exactly_111": 54,
+      "upper_pairs_checked": 162,
+      "upper_relations_with_all_three_pairs_free": 54,
+      "single_chain_laws_checked": 144,
+      "single_deletion_role_checks": 432,
+      "single_deletion_role_checks_restoring_111": 425,
+      "single_chain_law_deletions_restoring_111_for_all_three_roles": 137,
+      "whole_chain_deletion_role_checks": 54,
+      "whole_chain_deletion_role_checks_restoring_111": 54,
+      "chains_carrying_frozen_step": 17,
+      "chains_with_every_law_needed": 14,
+      "chains_passing_all_gates_with_defining_bonds": 14,
+      "chains_passing_all_gates_with_all_bonds_on_same_six": 14,
+      "six_reading_words_count_34": 1,
+      "checked_starts": 6,
+      "starts_with_frozen_step": 6,
+      "starts_with_all_laws_needed_for_some_checked_chain": 5,
+      "starts_with_strict_step_among_checked_chains": 5,
+      "starts_with_upper_function_determined_at_other_bond_on_same_six": 0,
+      "starts_with_otherwise_strict_chain_whose_other_bond_on_same_six_determines_an_upper_function": 0,
+      "starts_with_strict_step_all_bonds_on_same_six": 5
+    },
+    "6": {
+      "checked_chains": 18,
+      "archived_fields_compared": 75,
+      "archive_field_mismatches": 0,
+      "six_reading_words_equal_bare_chain": 18,
+      "six_reading_words_count_39": 18,
+      "source_six_reading_word_checks": 1152,
+      "lower_reading_vs_source_knot_comparisons": 3456,
+      "lower_reading_vs_source_knot_comparisons_needing_additional_solver_queries": 41,
+      "lower_reading_vs_source_knot_additional_solver_queries": 91,
+      "lower_reading_vs_source_knot_determinations": 0,
+      "defining_lower_triples_checked": 72,
+      "defining_lower_triples_missing_exactly_111": 72,
+      "defining_lower_triples_that_are_bonds": 72,
+      "defining_lower_triple_vs_distinct_upper_function_comparisons": 432,
+      "defining_lower_bond_vs_distinct_upper_function_comparisons": 432,
+      "defining_lower_triple_vs_distinct_upper_function_determinations": 0,
+      "defining_lower_triple_and_upper_function_with_some_feasible_fix_leaving_only_one_value": 432,
+      "other_triples_of_six_named_readings_checked": 288,
+      "other_triple_of_six_vs_distinct_upper_function_comparisons": 1728,
+      "other_bonds_on_six_named_readings": 0,
+      "other_bond_of_six_vs_distinct_upper_function_comparisons": 0,
+      "other_bond_of_six_vs_distinct_upper_function_determinations": 0,
+      "other_bonds_on_six_named_readings_determining_an_upper_function": 0,
+      "upper_relations_checked": 54,
+      "upper_relations_missing_exactly_111": 54,
+      "upper_pairs_checked": 162,
+      "upper_relations_with_all_three_pairs_free": 54,
+      "single_chain_laws_checked": 144,
+      "single_deletion_role_checks": 432,
+      "single_deletion_role_checks_restoring_111": 432,
+      "single_chain_law_deletions_restoring_111_for_all_three_roles": 144,
+      "whole_chain_deletion_role_checks": 54,
+      "whole_chain_deletion_role_checks_restoring_111": 54,
+      "chains_carrying_frozen_step": 18,
+      "chains_with_every_law_needed": 18,
+      "chains_passing_all_gates_with_defining_bonds": 18,
+      "chains_passing_all_gates_with_all_bonds_on_same_six": 18,
+      "checked_starts": 6,
+      "starts_with_frozen_step": 6,
+      "starts_with_all_laws_needed_for_some_checked_chain": 6,
+      "starts_with_strict_step_among_checked_chains": 6,
+      "starts_with_upper_function_determined_at_other_bond_on_same_six": 0,
+      "starts_with_otherwise_strict_chain_whose_other_bond_on_same_six_determines_an_upper_function": 0,
+      "starts_with_strict_step_all_bonds_on_same_six": 6
+    },
+    "2": {
+      "checked_chains": 4,
+      "archived_fields_compared": 15,
+      "archive_field_mismatches": 0,
+      "six_reading_words_equal_bare_chain": 2,
+      "six_reading_words_count_39": 2,
+      "source_six_reading_word_checks": 256,
+      "lower_reading_vs_source_knot_comparisons": 270,
+      "lower_reading_vs_source_knot_comparisons_needing_additional_solver_queries": 4,
+      "lower_reading_vs_source_knot_additional_solver_queries": 5,
+      "lower_reading_vs_source_knot_determinations": 0,
+      "defining_lower_triples_checked": 16,
+      "defining_lower_triples_missing_exactly_111": 16,
+      "defining_lower_triples_that_are_bonds": 16,
+      "defining_lower_triple_vs_distinct_upper_function_comparisons": 96,
+      "defining_lower_bond_vs_distinct_upper_function_comparisons": 96,
+      "defining_lower_triple_vs_distinct_upper_function_determinations": 0,
+      "defining_lower_triple_and_upper_function_with_some_feasible_fix_leaving_only_one_value": 96,
+      "other_triples_of_six_named_readings_checked": 64,
+      "other_triple_of_six_vs_distinct_upper_function_comparisons": 384,
+      "other_bonds_on_six_named_readings": 2,
+      "other_bond_of_six_vs_distinct_upper_function_comparisons": 12,
+      "other_bond_of_six_vs_distinct_upper_function_determinations": 4,
+      "other_bonds_on_six_named_readings_determining_an_upper_function": 2,
+      "upper_relations_checked": 12,
+      "upper_relations_missing_exactly_111": 12,
+      "upper_pairs_checked": 36,
+      "upper_relations_with_all_three_pairs_free": 12,
+      "single_chain_laws_checked": 32,
+      "single_deletion_role_checks": 96,
+      "single_deletion_role_checks_restoring_111": 96,
+      "single_chain_law_deletions_restoring_111_for_all_three_roles": 32,
+      "whole_chain_deletion_role_checks": 12,
+      "whole_chain_deletion_role_checks_restoring_111": 12,
+      "chains_carrying_frozen_step": 4,
+      "chains_with_every_law_needed": 4,
+      "chains_passing_all_gates_with_defining_bonds": 4,
+      "chains_passing_all_gates_with_all_bonds_on_same_six": 2,
+      "six_reading_words_count_38": 2,
+      "chains_with_upper_function_determined_at_other_bond_on_same_six": 2,
+      "otherwise_strict_chains_with_upper_function_determined_at_other_bond_on_same_six": 2,
+      "checked_starts": 2,
+      "starts_with_frozen_step": 2,
+      "starts_with_all_laws_needed_for_some_checked_chain": 2,
+      "starts_with_strict_step_among_checked_chains": 2,
+      "starts_with_upper_function_determined_at_other_bond_on_same_six": 1,
+      "starts_with_otherwise_strict_chain_whose_other_bond_on_same_six_determines_an_upper_function": 1,
+      "starts_with_strict_step_all_bonds_on_same_six": 2
+    }
+  },
+  "first_frozen_step_by_round_counting_starts": {
+    "3": 3,
+    "2": 2,
+    "5": 1
+  },
+  "first_strict_step_by_round_counting_starts": {
+    "3": 3,
+    "2": 2,
+    "6": 1
+  },
+  "first_strict_step_all_bonds_on_same_six_by_round_counting_starts": {
+    "3": 2,
+    "2": 2,
+    "4": 1,
+    "6": 1
+  },
+  "start_first_round_when_frozen_and_strict_differ": {
+    "3609": {
+      "frozen": 5,
+      "strict": 6
+    }
+  },
+  "anomalies": [
+    {
+      "start": 90,
+      "round": 4,
+      "chain_number": 1,
+      "chain_law_indices": [
+        3,
+        4,
+        0,
+        2,
+        5,
+        9,
+        15,
+        23
+      ],
+      "knots": 25,
+      "distinctions": 49,
+      "carriers": [
+        [
+          0,
+          4,
+          8
+        ],
+        [
+          17,
+          18,
+          29
+        ],
+        [
+          2,
+          3,
+          10
+        ],
+        [
+          1,
+          45,
+          46
+        ],
+        [
+          5,
+          6,
+          9
+        ],
+        [
+          7,
+          30
+        ]
+      ],
+      "lower_joint_words": [
+        "000000",
+        "000001",
+        "000010",
+        "000011",
+        "000100",
+        "000101",
+        "000110",
+        "000111",
+        "001000",
+        "001001",
+        "001010",
+        "001011",
+        "001100",
+        "001101",
+        "001111",
+        "010000",
+        "010001",
+        "010010",
+        "010011",
+        "010100",
+        "010101",
+        "011000",
+        "011010",
+        "011100",
+        "100000",
+        "100001",
+        "100010",
+        "100011",
+        "100100",
+        "100110",
+        "110000",
+        "110001",
+        "110011",
+        "110100"
+      ],
+      "bare_lower_joint_words_lost_on_stage": [
+        "101000",
+        "101001",
+        "101100",
+        "111000",
+        "111100"
+      ],
+      "lower_locality": {
+        "comparisons": 150,
+        "comparisons_needing_additional_solver_queries": 3,
+        "additional_solver_queries": 7,
+        "determining_knot_and_reading": []
+      },
+      "defining_lower_triples": [
+        {
+          "readings": [
+            "A0",
+            "B0",
+            "C0"
+          ],
+          "missing_words": [
+            "110",
+            "111"
+          ],
+          "pairs_free": false,
+          "is_bond": false,
+          "mixed_fixes_by_upper_pair_and_function": [
+            [
+              2,
+              4
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              3
+            ]
+          ]
+        },
+        {
+          "readings": [
+            "A0",
+            "B1",
+            "C1"
+          ],
+          "missing_words": [
+            "111"
+          ],
+          "pairs_free": true,
+          "is_bond": true,
+          "mixed_fixes_by_upper_pair_and_function": [
+            [
+              3,
+              4
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              4
+            ]
+          ]
+        },
+        {
+          "readings": [
+            "A1",
+            "B0",
+            "C1"
+          ],
+          "missing_words": [
+            "111"
+          ],
+          "pairs_free": true,
+          "is_bond": true,
+          "mixed_fixes_by_upper_pair_and_function": [
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              4
+            ]
+          ]
+        },
+        {
+          "readings": [
+            "A1",
+            "B1",
+            "C0"
+          ],
+          "missing_words": [
+            "111"
+          ],
+          "pairs_free": true,
+          "is_bond": true,
+          "mixed_fixes_by_upper_pair_and_function": [
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              4
+            ]
+          ]
+        }
+      ],
+      "other_bonds_on_the_six_named_readings": [],
+      "upper_function_determined_at_other_bond_on_the_six": false,
+      "upper_images": [
+        {
+          "words": [
+            "000",
+            "001",
+            "010",
+            "011",
+            "100",
+            "101",
+            "110"
+          ],
+          "pairs_free": true
+        },
+        {
+          "words": [
+            "000",
+            "001",
+            "010",
+            "011",
+            "100",
+            "101",
+            "110"
+          ],
+          "pairs_free": true
+        },
+        {
+          "words": [
+            "000",
+            "001",
+            "010",
+            "011",
+            "100",
+            "101",
+            "110"
+          ],
+          "pairs_free": true
+        }
+      ],
+      "all_three_expected_upper_images": true,
+      "all_upper_readings_unread_at_every_defining_lower_triple": true,
+      "by_single_chain_law_deletion_upper_111_restored": [
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          false,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "whole_chain_deletion_upper_111_restored": [
+        true,
+        true,
+        true
+      ],
+      "frozen_fields": {
+        "lower triples miss exactly their triple": false,
+        "upper": [
+          {
+            "upper words": 7,
+            "pairs free": true
+          },
+          {
+            "upper words": 7,
+            "pairs free": true
+          },
+          {
+            "upper words": 7,
+            "pairs free": true
+          }
+        ],
+        "every chain law needed": false,
+        "no lower reading read at a knot": true,
+        "a step": false
+      },
+      "strict_step_on_defining_bonds": false,
+      "strict_step_with_all_bonds_on_the_six_checked": false,
+      "counterexamples_to_frozen_form": [
+        {
+          "lower_readings": [
+            "A0",
+            "B0",
+            "C0"
+          ],
+          "extra_missing_word": "110",
+          "single_stage_law_deletions_that_restore_word": [
+            1,
+            3,
+            4
+          ],
+          "inclusion_minimal_stage_law_exclusion": [
+            1,
+            3,
+            4
+          ],
+          "individual_law_supports": {
+            "1": [
+              0,
+              2,
+              3
+            ],
+            "3": [
+              2,
+              3,
+              7
+            ],
+            "4": [
+              4,
+              7,
+              8
+            ]
+          },
+          "out_of_chain_laws_in_exclusion": [
+            1
+          ],
+          "source_law_supports_after_identifying_the_true_agreements": [
+            [
+              0,
+              2
+            ],
+            [
+              2,
+              7
+            ],
+            [
+              0,
+              7
+            ]
+          ],
+          "three_pairwise_inequalities_on_three_bits": true
+        }
+      ],
+      "failed_single_deletion_checks": [
+        {
+          "omitted_law": 0,
+          "both_pair": "B",
+          "inclusion_minimal_stage_law_exclusion": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            9,
+            15,
+            23
+          ],
+          "out_of_chain_laws_in_exclusion": [
+            1
+          ]
+        }
+      ],
+      "archived_fields_compared": 5,
+      "archive_mismatches": {}
+    },
+    {
+      "start": 90,
+      "round": 4,
+      "chain_number": 2,
+      "chain_law_indices": [
+        3,
+        4,
+        0,
+        2,
+        6,
+        10,
+        16,
+        24
+      ],
+      "knots": 25,
+      "distinctions": 49,
+      "carriers": [
+        [
+          0,
+          4,
+          8
+        ],
+        [
+          19,
+          20,
+          31
+        ],
+        [
+          2,
+          3,
+          12
+        ],
+        [
+          1,
+          47,
+          48
+        ],
+        [
+          5,
+          6,
+          11
+        ],
+        [
+          7,
+          32
+        ]
+      ],
+      "lower_joint_words": [
+        "000000",
+        "000001",
+        "000010",
+        "000011",
+        "000100",
+        "000101",
+        "000110",
+        "000111",
+        "001000",
+        "001001",
+        "001010",
+        "001011",
+        "001100",
+        "001101",
+        "001111",
+        "010000",
+        "010001",
+        "010010",
+        "010011",
+        "010100",
+        "010101",
+        "011000",
+        "011010",
+        "011100",
+        "100000",
+        "100001",
+        "100010",
+        "100011",
+        "100100",
+        "100110",
+        "110000",
+        "110001",
+        "110011",
+        "110100"
+      ],
+      "bare_lower_joint_words_lost_on_stage": [
+        "101000",
+        "101001",
+        "101100",
+        "111000",
+        "111100"
+      ],
+      "lower_locality": {
+        "comparisons": 150,
+        "comparisons_needing_additional_solver_queries": 2,
+        "additional_solver_queries": 4,
+        "determining_knot_and_reading": []
+      },
+      "defining_lower_triples": [
+        {
+          "readings": [
+            "A0",
+            "B0",
+            "C0"
+          ],
+          "missing_words": [
+            "110",
+            "111"
+          ],
+          "pairs_free": false,
+          "is_bond": false,
+          "mixed_fixes_by_upper_pair_and_function": [
+            [
+              2,
+              4
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              3
+            ]
+          ]
+        },
+        {
+          "readings": [
+            "A0",
+            "B1",
+            "C1"
+          ],
+          "missing_words": [
+            "111"
+          ],
+          "pairs_free": true,
+          "is_bond": true,
+          "mixed_fixes_by_upper_pair_and_function": [
+            [
+              3,
+              4
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              4
+            ]
+          ]
+        },
+        {
+          "readings": [
+            "A1",
+            "B0",
+            "C1"
+          ],
+          "missing_words": [
+            "111"
+          ],
+          "pairs_free": true,
+          "is_bond": true,
+          "mixed_fixes_by_upper_pair_and_function": [
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              4
+            ]
+          ]
+        },
+        {
+          "readings": [
+            "A1",
+            "B1",
+            "C0"
+          ],
+          "missing_words": [
+            "111"
+          ],
+          "pairs_free": true,
+          "is_bond": true,
+          "mixed_fixes_by_upper_pair_and_function": [
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              4
+            ]
+          ]
+        }
+      ],
+      "other_bonds_on_the_six_named_readings": [],
+      "upper_function_determined_at_other_bond_on_the_six": false,
+      "upper_images": [
+        {
+          "words": [
+            "000",
+            "001",
+            "010",
+            "011",
+            "100",
+            "101",
+            "110"
+          ],
+          "pairs_free": true
+        },
+        {
+          "words": [
+            "000",
+            "001",
+            "010",
+            "011",
+            "100",
+            "101",
+            "110"
+          ],
+          "pairs_free": true
+        },
+        {
+          "words": [
+            "000",
+            "001",
+            "010",
+            "011",
+            "100",
+            "101",
+            "110"
+          ],
+          "pairs_free": true
+        }
+      ],
+      "all_three_expected_upper_images": true,
+      "all_upper_readings_unread_at_every_defining_lower_triple": true,
+      "by_single_chain_law_deletion_upper_111_restored": [
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          false,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "whole_chain_deletion_upper_111_restored": [
+        true,
+        true,
+        true
+      ],
+      "frozen_fields": {
+        "lower triples miss exactly their triple": false,
+        "upper": [
+          {
+            "upper words": 7,
+            "pairs free": true
+          },
+          {
+            "upper words": 7,
+            "pairs free": true
+          },
+          {
+            "upper words": 7,
+            "pairs free": true
+          }
+        ],
+        "every chain law needed": false,
+        "no lower reading read at a knot": true,
+        "a step": false
+      },
+      "strict_step_on_defining_bonds": false,
+      "strict_step_with_all_bonds_on_the_six_checked": false,
+      "counterexamples_to_frozen_form": [
+        {
+          "lower_readings": [
+            "A0",
+            "B0",
+            "C0"
+          ],
+          "extra_missing_word": "110",
+          "single_stage_law_deletions_that_restore_word": [
+            1,
+            3,
+            4
+          ],
+          "inclusion_minimal_stage_law_exclusion": [
+            1,
+            3,
+            4
+          ],
+          "individual_law_supports": {
+            "1": [
+              0,
+              2,
+              3
+            ],
+            "3": [
+              2,
+              3,
+              7
+            ],
+            "4": [
+              4,
+              7,
+              8
+            ]
+          },
+          "out_of_chain_laws_in_exclusion": [
+            1
+          ],
+          "source_law_supports_after_identifying_the_true_agreements": [
+            [
+              0,
+              2
+            ],
+            [
+              2,
+              7
+            ],
+            [
+              0,
+              7
+            ]
+          ],
+          "three_pairwise_inequalities_on_three_bits": true
+        }
+      ],
+      "failed_single_deletion_checks": [
+        {
+          "omitted_law": 0,
+          "both_pair": "B",
+          "inclusion_minimal_stage_law_exclusion": [
+            1,
+            2,
+            3,
+            4,
+            6,
+            10,
+            16,
+            24
+          ],
+          "out_of_chain_laws_in_exclusion": [
+            1
+          ]
+        }
+      ],
+      "archived_fields_compared": 5,
+      "archive_mismatches": {}
+    },
+    {
+      "start": 90,
+      "round": 5,
+      "chain_number": 3,
+      "chain_law_indices": [
+        3,
+        4,
+        0,
+        2,
+        5,
+        9,
+        15,
+        23
+      ],
+      "knots": 35,
+      "distinctions": 69,
+      "carriers": [
+        [
+          0,
+          4,
+          8
+        ],
+        [
+          17,
+          18,
+          29
+        ],
+        [
+          2,
+          3,
+          10
+        ],
+        [
+          1,
+          45,
+          46
+        ],
+        [
+          5,
+          6,
+          9
+        ],
+        [
+          7,
+          30
+        ]
+      ],
+      "lower_joint_words": [
+        "000000",
+        "000001",
+        "000010",
+        "000011",
+        "000100",
+        "000101",
+        "000110",
+        "000111",
+        "001000",
+        "001001",
+        "001010",
+        "001011",
+        "001100",
+        "001101",
+        "001111",
+        "010000",
+        "010001",
+        "010010",
+        "010011",
+        "010100",
+        "010101",
+        "011000",
+        "011010",
+        "011100",
+        "100000",
+        "100001",
+        "100010",
+        "100011",
+        "100100",
+        "100110",
+        "110000",
+        "110001",
+        "110011",
+        "110100"
+      ],
+      "bare_lower_joint_words_lost_on_stage": [
+        "101000",
+        "101001",
+        "101100",
+        "111000",
+        "111100"
+      ],
+      "lower_locality": {
+        "comparisons": 210,
+        "comparisons_needing_additional_solver_queries": 3,
+        "additional_solver_queries": 7,
+        "determining_knot_and_reading": []
+      },
+      "defining_lower_triples": [
+        {
+          "readings": [
+            "A0",
+            "B0",
+            "C0"
+          ],
+          "missing_words": [
+            "110",
+            "111"
+          ],
+          "pairs_free": false,
+          "is_bond": false,
+          "mixed_fixes_by_upper_pair_and_function": [
+            [
+              2,
+              4
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              3
+            ]
+          ]
+        },
+        {
+          "readings": [
+            "A0",
+            "B1",
+            "C1"
+          ],
+          "missing_words": [
+            "111"
+          ],
+          "pairs_free": true,
+          "is_bond": true,
+          "mixed_fixes_by_upper_pair_and_function": [
+            [
+              3,
+              4
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              4
+            ]
+          ]
+        },
+        {
+          "readings": [
+            "A1",
+            "B0",
+            "C1"
+          ],
+          "missing_words": [
+            "111"
+          ],
+          "pairs_free": true,
+          "is_bond": true,
+          "mixed_fixes_by_upper_pair_and_function": [
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              4
+            ]
+          ]
+        },
+        {
+          "readings": [
+            "A1",
+            "B1",
+            "C0"
+          ],
+          "missing_words": [
+            "111"
+          ],
+          "pairs_free": true,
+          "is_bond": true,
+          "mixed_fixes_by_upper_pair_and_function": [
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              4
+            ]
+          ]
+        }
+      ],
+      "other_bonds_on_the_six_named_readings": [],
+      "upper_function_determined_at_other_bond_on_the_six": false,
+      "upper_images": [
+        {
+          "words": [
+            "000",
+            "001",
+            "010",
+            "011",
+            "100",
+            "101",
+            "110"
+          ],
+          "pairs_free": true
+        },
+        {
+          "words": [
+            "000",
+            "001",
+            "010",
+            "011",
+            "100",
+            "101",
+            "110"
+          ],
+          "pairs_free": true
+        },
+        {
+          "words": [
+            "000",
+            "001",
+            "010",
+            "011",
+            "100",
+            "101",
+            "110"
+          ],
+          "pairs_free": true
+        }
+      ],
+      "all_three_expected_upper_images": true,
+      "all_upper_readings_unread_at_every_defining_lower_triple": true,
+      "by_single_chain_law_deletion_upper_111_restored": [
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          false,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "whole_chain_deletion_upper_111_restored": [
+        true,
+        true,
+        true
+      ],
+      "frozen_fields": {
+        "lower triples miss exactly their triple": false,
+        "upper": [
+          {
+            "upper words": 7,
+            "pairs free": true
+          },
+          {
+            "upper words": 7,
+            "pairs free": true
+          },
+          {
+            "upper words": 7,
+            "pairs free": true
+          }
+        ],
+        "every chain law needed": false,
+        "no lower reading read at a knot": true,
+        "a step": false
+      },
+      "strict_step_on_defining_bonds": false,
+      "strict_step_with_all_bonds_on_the_six_checked": false,
+      "counterexamples_to_frozen_form": [
+        {
+          "lower_readings": [
+            "A0",
+            "B0",
+            "C0"
+          ],
+          "extra_missing_word": "110",
+          "single_stage_law_deletions_that_restore_word": [
+            1,
+            3,
+            4
+          ],
+          "inclusion_minimal_stage_law_exclusion": [
+            1,
+            3,
+            4
+          ],
+          "individual_law_supports": {
+            "1": [
+              0,
+              2,
+              3
+            ],
+            "3": [
+              2,
+              3,
+              7
+            ],
+            "4": [
+              4,
+              7,
+              8
+            ]
+          },
+          "out_of_chain_laws_in_exclusion": [
+            1
+          ],
+          "source_law_supports_after_identifying_the_true_agreements": [
+            [
+              0,
+              2
+            ],
+            [
+              2,
+              7
+            ],
+            [
+              0,
+              7
+            ]
+          ],
+          "three_pairwise_inequalities_on_three_bits": true
+        }
+      ],
+      "failed_single_deletion_checks": [
+        {
+          "omitted_law": 0,
+          "both_pair": "B",
+          "inclusion_minimal_stage_law_exclusion": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            9,
+            15,
+            23
+          ],
+          "out_of_chain_laws_in_exclusion": [
+            1
+          ]
+        }
+      ],
+      "archived_fields_compared": 5,
+      "archive_mismatches": {}
+    },
+    {
+      "start": 2030,
+      "round": 3,
+      "chain_number": 1,
+      "chain_law_indices": [
+        2,
+        0,
+        1,
+        5,
+        7,
+        6,
+        8,
+        10
+      ],
+      "knots": 11,
+      "distinctions": 18,
+      "carriers": [
+        [
+          0,
+          2,
+          3
+        ],
+        [
+          8,
+          11,
+          13
+        ],
+        [
+          4,
+          5,
+          10
+        ],
+        [
+          6,
+          16,
+          17
+        ],
+        [
+          7,
+          9,
+          12
+        ],
+        [
+          1,
+          14
+        ]
+      ],
+      "lower_joint_words": [
+        "000000",
+        "000001",
+        "000010",
+        "000011",
+        "000100",
+        "000101",
+        "000110",
+        "000111",
+        "001000",
+        "001001",
+        "001010",
+        "001011",
+        "001100",
+        "001101",
+        "001111",
+        "010000",
+        "010001",
+        "010010",
+        "010011",
+        "010100",
+        "010101",
+        "011000",
+        "011010",
+        "011100",
+        "100000",
+        "100001",
+        "100010",
+        "100011",
+        "100100",
+        "100110",
+        "110000",
+        "110001",
+        "110100"
+      ],
+      "bare_lower_joint_words_lost_on_stage": [
+        "101000",
+        "101001",
+        "101100",
+        "110011",
+        "111000",
+        "111100"
+      ],
+      "lower_locality": {
+        "comparisons": 66,
+        "comparisons_needing_additional_solver_queries": 2,
+        "additional_solver_queries": 6,
+        "determining_knot_and_reading": []
+      },
+      "defining_lower_triples": [
+        {
+          "readings": [
+            "A0",
+            "B0",
+            "C0"
+          ],
+          "missing_words": [
+            "110",
+            "111"
+          ],
+          "pairs_free": false,
+          "is_bond": false,
+          "mixed_fixes_by_upper_pair_and_function": [
+            [
+              1,
+              4
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              3
+            ]
+          ]
+        },
+        {
+          "readings": [
+            "A0",
+            "B1",
+            "C1"
+          ],
+          "missing_words": [
+            "111"
+          ],
+          "pairs_free": true,
+          "is_bond": true,
+          "mixed_fixes_by_upper_pair_and_function": [
+            [
+              3,
+              4
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              4
+            ]
+          ]
+        },
+        {
+          "readings": [
+            "A1",
+            "B0",
+            "C1"
+          ],
+          "missing_words": [
+            "111"
+          ],
+          "pairs_free": true,
+          "is_bond": true,
+          "mixed_fixes_by_upper_pair_and_function": [
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              4
+            ]
+          ]
+        },
+        {
+          "readings": [
+            "A1",
+            "B1",
+            "C0"
+          ],
+          "missing_words": [
+            "111"
+          ],
+          "pairs_free": true,
+          "is_bond": true,
+          "mixed_fixes_by_upper_pair_and_function": [
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              4
+            ]
+          ]
+        }
+      ],
+      "other_bonds_on_the_six_named_readings": [
+        {
+          "readings": [
+            "A0",
+            "A1",
+            "C0"
+          ],
+          "missing_words": [
+            "111"
+          ],
+          "pairs_free": true,
+          "is_bond": true,
+          "mixed_fixes_by_upper_pair_and_function": [
+            [
+              0,
+              0
+            ],
+            [
+              3,
+              7
+            ],
+            [
+              3,
+              4
+            ]
+          ],
+          "exclusions": [
+            {
+              "word": "111",
+              "inclusion_minimal_stage_law_exclusion": [
+                1,
+                3,
+                5,
+                6,
+                7
+              ],
+              "out_of_chain_laws_in_exclusion": [
+                3
+              ],
+              "single_stage_law_deletions_that_restore_word": [
+                1,
+                3,
+                5,
+                6,
+                7
+              ]
+            }
+          ]
+        }
+      ],
+      "upper_function_determined_at_other_bond_on_the_six": true,
+      "upper_images": [
+        {
+          "words": [
+            "000",
+            "001",
+            "010",
+            "011",
+            "100",
+            "101",
+            "110"
+          ],
+          "pairs_free": true
+        },
+        {
+          "words": [
+            "000",
+            "001",
+            "010",
+            "011",
+            "100",
+            "101",
+            "110"
+          ],
+          "pairs_free": true
+        },
+        {
+          "words": [
+            "000",
+            "001",
+            "010",
+            "011",
+            "100",
+            "101",
+            "110"
+          ],
+          "pairs_free": true
+        }
+      ],
+      "all_three_expected_upper_images": true,
+      "all_upper_readings_unread_at_every_defining_lower_triple": true,
+      "by_single_chain_law_deletion_upper_111_restored": [
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          false,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          false,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "whole_chain_deletion_upper_111_restored": [
+        true,
+        true,
+        true
+      ],
+      "frozen_fields": {
+        "lower triples miss exactly their triple": false,
+        "upper": [
+          {
+            "upper words": 7,
+            "pairs free": true
+          },
+          {
+            "upper words": 7,
+            "pairs free": true
+          },
+          {
+            "upper words": 7,
+            "pairs free": true
+          }
+        ],
+        "every chain law needed": false,
+        "no lower reading read at a knot": true,
+        "a step": false
+      },
+      "strict_step_on_defining_bonds": false,
+      "strict_step_with_all_bonds_on_the_six_checked": false,
+      "counterexamples_to_frozen_form": [
+        {
+          "lower_readings": [
+            "A0",
+            "B0",
+            "C0"
+          ],
+          "extra_missing_word": "110",
+          "single_stage_law_deletions_that_restore_word": [
+            0,
+            2,
+            4
+          ],
+          "inclusion_minimal_stage_law_exclusion": [
+            0,
+            2,
+            4
+          ],
+          "individual_law_supports": {
+            "0": [
+              0,
+              1,
+              2
+            ],
+            "2": [
+              1,
+              4,
+              5
+            ],
+            "4": [
+              3,
+              4,
+              5
+            ]
+          },
+          "out_of_chain_laws_in_exclusion": [
+            4
+          ],
+          "source_law_supports_after_identifying_the_true_agreements": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              0,
+              4
+            ]
+          ],
+          "three_pairwise_inequalities_on_three_bits": true
+        }
+      ],
+      "failed_single_deletion_checks": [
+        {
+          "omitted_law": 1,
+          "both_pair": "B",
+          "inclusion_minimal_stage_law_exclusion": [
+            0,
+            2,
+            4,
+            5,
+            6,
+            7,
+            8,
+            10
+          ],
+          "out_of_chain_laws_in_exclusion": [
+            4
+          ]
+        },
+        {
+          "omitted_law": 8,
+          "both_pair": "A",
+          "inclusion_minimal_stage_law_exclusion": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            10
+          ],
+          "out_of_chain_laws_in_exclusion": [
+            3,
+            4
+          ]
+        }
+      ],
+      "archived_fields_compared": 5,
+      "archive_mismatches": {}
+    },
+    {
+      "start": 2030,
+      "round": 3,
+      "chain_number": 2,
+      "chain_law_indices": [
+        2,
+        0,
+        1,
+        5,
+        7,
+        9,
+        8,
+        10
+      ],
+      "knots": 11,
+      "distinctions": 18,
+      "carriers": [
+        [
+          0,
+          2,
+          3
+        ],
+        [
+          11,
+          13,
+          15
+        ],
+        [
+          4,
+          5,
+          12
+        ],
+        [
+          6,
+          16,
+          17
+        ],
+        [
+          7,
+          9,
+          10
+        ],
+        [
+          1,
+          14
+        ]
+      ],
+      "lower_joint_words": [
+        "000000",
+        "000001",
+        "000010",
+        "000011",
+        "000100",
+        "000101",
+        "000110",
+        "000111",
+        "001000",
+        "001001",
+        "001010",
+        "001011",
+        "001100",
+        "001101",
+        "001111",
+        "010000",
+        "010001",
+        "010010",
+        "010011",
+        "010100",
+        "010101",
+        "011000",
+        "011010",
+        "011100",
+        "100000",
+        "100001",
+        "100010",
+        "100011",
+        "100100",
+        "100110",
+        "110000",
+        "110001",
+        "110011",
+        "110100"
+      ],
+      "bare_lower_joint_words_lost_on_stage": [
+        "101000",
+        "101001",
+        "101100",
+        "111000",
+        "111100"
+      ],
+      "lower_locality": {
+        "comparisons": 66,
+        "comparisons_needing_additional_solver_queries": 3,
+        "additional_solver_queries": 7,
+        "determining_knot_and_reading": []
+      },
+      "defining_lower_triples": [
+        {
+          "readings": [
+            "A0",
+            "B0",
+            "C0"
+          ],
+          "missing_words": [
+            "110",
+            "111"
+          ],
+          "pairs_free": false,
+          "is_bond": false,
+          "mixed_fixes_by_upper_pair_and_function": [
+            [
+              2,
+              4
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              3
+            ]
+          ]
+        },
+        {
+          "readings": [
+            "A0",
+            "B1",
+            "C1"
+          ],
+          "missing_words": [
+            "111"
+          ],
+          "pairs_free": true,
+          "is_bond": true,
+          "mixed_fixes_by_upper_pair_and_function": [
+            [
+              3,
+              4
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              4
+            ]
+          ]
+        },
+        {
+          "readings": [
+            "A1",
+            "B0",
+            "C1"
+          ],
+          "missing_words": [
+            "111"
+          ],
+          "pairs_free": true,
+          "is_bond": true,
+          "mixed_fixes_by_upper_pair_and_function": [
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              4
+            ]
+          ]
+        },
+        {
+          "readings": [
+            "A1",
+            "B1",
+            "C0"
+          ],
+          "missing_words": [
+            "111"
+          ],
+          "pairs_free": true,
+          "is_bond": true,
+          "mixed_fixes_by_upper_pair_and_function": [
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              4
+            ]
+          ]
+        }
+      ],
+      "other_bonds_on_the_six_named_readings": [],
+      "upper_function_determined_at_other_bond_on_the_six": false,
+      "upper_images": [
+        {
+          "words": [
+            "000",
+            "001",
+            "010",
+            "011",
+            "100",
+            "101",
+            "110"
+          ],
+          "pairs_free": true
+        },
+        {
+          "words": [
+            "000",
+            "001",
+            "010",
+            "011",
+            "100",
+            "101",
+            "110"
+          ],
+          "pairs_free": true
+        },
+        {
+          "words": [
+            "000",
+            "001",
+            "010",
+            "011",
+            "100",
+            "101",
+            "110"
+          ],
+          "pairs_free": true
+        }
+      ],
+      "all_three_expected_upper_images": true,
+      "all_upper_readings_unread_at_every_defining_lower_triple": true,
+      "by_single_chain_law_deletion_upper_111_restored": [
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          false,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "whole_chain_deletion_upper_111_restored": [
+        true,
+        true,
+        true
+      ],
+      "frozen_fields": {
+        "lower triples miss exactly their triple": false,
+        "upper": [
+          {
+            "upper words": 7,
+            "pairs free": true
+          },
+          {
+            "upper words": 7,
+            "pairs free": true
+          },
+          {
+            "upper words": 7,
+            "pairs free": true
+          }
+        ],
+        "every chain law needed": false,
+        "no lower reading read at a knot": true,
+        "a step": false
+      },
+      "strict_step_on_defining_bonds": false,
+      "strict_step_with_all_bonds_on_the_six_checked": false,
+      "counterexamples_to_frozen_form": [
+        {
+          "lower_readings": [
+            "A0",
+            "B0",
+            "C0"
+          ],
+          "extra_missing_word": "110",
+          "single_stage_law_deletions_that_restore_word": [
+            0,
+            2,
+            4
+          ],
+          "inclusion_minimal_stage_law_exclusion": [
+            0,
+            2,
+            4
+          ],
+          "individual_law_supports": {
+            "0": [
+              0,
+              1,
+              2
+            ],
+            "2": [
+              1,
+              4,
+              5
+            ],
+            "4": [
+              3,
+              4,
+              5
+            ]
+          },
+          "out_of_chain_laws_in_exclusion": [
+            4
+          ],
+          "source_law_supports_after_identifying_the_true_agreements": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              0,
+              4
+            ]
+          ],
+          "three_pairwise_inequalities_on_three_bits": true
+        }
+      ],
+      "failed_single_deletion_checks": [
+        {
+          "omitted_law": 1,
+          "both_pair": "B",
+          "inclusion_minimal_stage_law_exclusion": [
+            0,
+            2,
+            4,
+            5,
+            7,
+            8,
+            9,
+            10
+          ],
+          "out_of_chain_laws_in_exclusion": [
+            4
+          ]
+        }
+      ],
+      "archived_fields_compared": 5,
+      "archive_mismatches": {}
+    },
+    {
+      "start": 3609,
+      "round": 5,
+      "chain_number": 1,
+      "chain_law_indices": [
+        3,
+        0,
+        2,
+        5,
+        6,
+        9,
+        13,
+        18
+      ],
+      "knots": 20,
+      "distinctions": 38,
+      "carriers": [
+        [
+          0,
+          1,
+          3
+        ],
+        [
+          16,
+          17,
+          24
+        ],
+        [
+          5,
+          6,
+          11
+        ],
+        [
+          7,
+          34,
+          35
+        ],
+        [
+          8,
+          9,
+          10
+        ],
+        [
+          2,
+          25
+        ]
+      ],
+      "lower_joint_words": [
+        "000000",
+        "000001",
+        "000010",
+        "000011",
+        "000100",
+        "000101",
+        "000110",
+        "000111",
+        "001000",
+        "001001",
+        "001010",
+        "001011",
+        "001100",
+        "001101",
+        "001111",
+        "010000",
+        "010001",
+        "010010",
+        "010011",
+        "010100",
+        "010101",
+        "011000",
+        "011010",
+        "011100",
+        "100000",
+        "100001",
+        "100010",
+        "100011",
+        "100100",
+        "100110",
+        "101000",
+        "101001",
+        "101100",
+        "110000",
+        "110001",
+        "110011",
+        "110100",
+        "111000",
+        "111100"
+      ],
+      "bare_lower_joint_words_lost_on_stage": [],
+      "lower_locality": {
+        "comparisons": 120,
+        "comparisons_needing_additional_solver_queries": 0,
+        "additional_solver_queries": 0,
+        "determining_knot_and_reading": []
+      },
+      "defining_lower_triples": [
+        {
+          "readings": [
+            "A0",
+            "B0",
+            "C0"
+          ],
+          "missing_words": [
+            "111"
+          ],
+          "pairs_free": true,
+          "is_bond": true,
+          "mixed_fixes_by_upper_pair_and_function": [
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              4
+            ]
+          ]
+        },
+        {
+          "readings": [
+            "A0",
+            "B1",
+            "C1"
+          ],
+          "missing_words": [
+            "111"
+          ],
+          "pairs_free": true,
+          "is_bond": true,
+          "mixed_fixes_by_upper_pair_and_function": [
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              4
+            ]
+          ]
+        },
+        {
+          "readings": [
+            "A1",
+            "B0",
+            "C1"
+          ],
+          "missing_words": [
+            "111"
+          ],
+          "pairs_free": true,
+          "is_bond": true,
+          "mixed_fixes_by_upper_pair_and_function": [
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              4
+            ]
+          ]
+        },
+        {
+          "readings": [
+            "A1",
+            "B1",
+            "C0"
+          ],
+          "missing_words": [
+            "111"
+          ],
+          "pairs_free": true,
+          "is_bond": true,
+          "mixed_fixes_by_upper_pair_and_function": [
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              4
+            ]
+          ]
+        }
+      ],
+      "other_bonds_on_the_six_named_readings": [],
+      "upper_function_determined_at_other_bond_on_the_six": false,
+      "upper_images": [
+        {
+          "words": [
+            "000",
+            "001",
+            "010",
+            "011",
+            "100",
+            "101",
+            "110"
+          ],
+          "pairs_free": true
+        },
+        {
+          "words": [
+            "000",
+            "001",
+            "010",
+            "011",
+            "100",
+            "101",
+            "110"
+          ],
+          "pairs_free": true
+        },
+        {
+          "words": [
+            "000",
+            "001",
+            "010",
+            "011",
+            "100",
+            "101",
+            "110"
+          ],
+          "pairs_free": true
+        }
+      ],
+      "all_three_expected_upper_images": true,
+      "all_upper_readings_unread_at_every_defining_lower_triple": true,
+      "by_single_chain_law_deletion_upper_111_restored": [
+        [
+          false,
+          true,
+          true
+        ],
+        [
+          true,
+          false,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "whole_chain_deletion_upper_111_restored": [
+        true,
+        true,
+        true
+      ],
+      "frozen_fields": {
+        "lower triples miss exactly their triple": true,
+        "upper": [
+          {
+            "upper words": 7,
+            "pairs free": true
+          },
+          {
+            "upper words": 7,
+            "pairs free": true
+          },
+          {
+            "upper words": 7,
+            "pairs free": true
+          }
+        ],
+        "every chain law needed": false,
+        "no lower reading read at a knot": true,
+        "a step": true
+      },
+      "strict_step_on_defining_bonds": false,
+      "strict_step_with_all_bonds_on_the_six_checked": false,
+      "counterexamples_to_frozen_form": [],
+      "failed_single_deletion_checks": [
+        {
+          "omitted_law": 3,
+          "both_pair": "A",
+          "inclusion_minimal_stage_law_exclusion": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            6,
+            9,
+            13,
+            18
+          ],
+          "out_of_chain_laws_in_exclusion": [
+            1,
+            4
+          ]
+        },
+        {
+          "omitted_law": 0,
+          "both_pair": "B",
+          "inclusion_minimal_stage_law_exclusion": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            9,
+            13,
+            18
+          ],
+          "out_of_chain_laws_in_exclusion": [
+            1,
+            4
+          ]
+        }
+      ],
+      "archived_fields_compared": 5,
+      "archive_mismatches": {}
+    },
+    {
+      "start": 3609,
+      "round": 5,
+      "chain_number": 2,
+      "chain_law_indices": [
+        3,
+        0,
+        2,
+        5,
+        7,
+        10,
+        14,
+        19
+      ],
+      "knots": 20,
+      "distinctions": 38,
+      "carriers": [
+        [
+          0,
+          1,
+          3
+        ],
+        [
+          18,
+          19,
+          26
+        ],
+        [
+          5,
+          6,
+          13
+        ],
+        [
+          7,
+          36,
+          37
+        ],
+        [
+          8,
+          9,
+          12
+        ],
+        [
+          2,
+          27
+        ]
+      ],
+      "lower_joint_words": [
+        "000000",
+        "000001",
+        "000010",
+        "000011",
+        "000100",
+        "000101",
+        "000110",
+        "000111",
+        "001000",
+        "001001",
+        "001010",
+        "001011",
+        "001100",
+        "001101",
+        "001111",
+        "010000",
+        "010001",
+        "010010",
+        "010011",
+        "010100",
+        "010101",
+        "011000",
+        "011010",
+        "011100",
+        "100000",
+        "100001",
+        "100010",
+        "100011",
+        "100100",
+        "100110",
+        "101000",
+        "101001",
+        "101100",
+        "110000",
+        "110001",
+        "110011",
+        "110100",
+        "111000",
+        "111100"
+      ],
+      "bare_lower_joint_words_lost_on_stage": [],
+      "lower_locality": {
+        "comparisons": 120,
+        "comparisons_needing_additional_solver_queries": 4,
+        "additional_solver_queries": 10,
+        "determining_knot_and_reading": []
+      },
+      "defining_lower_triples": [
+        {
+          "readings": [
+            "A0",
+            "B0",
+            "C0"
+          ],
+          "missing_words": [
+            "111"
+          ],
+          "pairs_free": true,
+          "is_bond": true,
+          "mixed_fixes_by_upper_pair_and_function": [
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              4
+            ]
+          ]
+        },
+        {
+          "readings": [
+            "A0",
+            "B1",
+            "C1"
+          ],
+          "missing_words": [
+            "111"
+          ],
+          "pairs_free": true,
+          "is_bond": true,
+          "mixed_fixes_by_upper_pair_and_function": [
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              4
+            ]
+          ]
+        },
+        {
+          "readings": [
+            "A1",
+            "B0",
+            "C1"
+          ],
+          "missing_words": [
+            "111"
+          ],
+          "pairs_free": true,
+          "is_bond": true,
+          "mixed_fixes_by_upper_pair_and_function": [
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              4
+            ]
+          ]
+        },
+        {
+          "readings": [
+            "A1",
+            "B1",
+            "C0"
+          ],
+          "missing_words": [
+            "111"
+          ],
+          "pairs_free": true,
+          "is_bond": true,
+          "mixed_fixes_by_upper_pair_and_function": [
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              4
+            ]
+          ]
+        }
+      ],
+      "other_bonds_on_the_six_named_readings": [],
+      "upper_function_determined_at_other_bond_on_the_six": false,
+      "upper_images": [
+        {
+          "words": [
+            "000",
+            "001",
+            "010",
+            "011",
+            "100",
+            "101",
+            "110"
+          ],
+          "pairs_free": true
+        },
+        {
+          "words": [
+            "000",
+            "001",
+            "010",
+            "011",
+            "100",
+            "101",
+            "110"
+          ],
+          "pairs_free": true
+        },
+        {
+          "words": [
+            "000",
+            "001",
+            "010",
+            "011",
+            "100",
+            "101",
+            "110"
+          ],
+          "pairs_free": true
+        }
+      ],
+      "all_three_expected_upper_images": true,
+      "all_upper_readings_unread_at_every_defining_lower_triple": true,
+      "by_single_chain_law_deletion_upper_111_restored": [
+        [
+          false,
+          true,
+          true
+        ],
+        [
+          true,
+          false,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "whole_chain_deletion_upper_111_restored": [
+        true,
+        true,
+        true
+      ],
+      "frozen_fields": {
+        "lower triples miss exactly their triple": true,
+        "upper": [
+          {
+            "upper words": 7,
+            "pairs free": true
+          },
+          {
+            "upper words": 7,
+            "pairs free": true
+          },
+          {
+            "upper words": 7,
+            "pairs free": true
+          }
+        ],
+        "every chain law needed": false,
+        "no lower reading read at a knot": true,
+        "a step": true
+      },
+      "strict_step_on_defining_bonds": false,
+      "strict_step_with_all_bonds_on_the_six_checked": false,
+      "counterexamples_to_frozen_form": [],
+      "failed_single_deletion_checks": [
+        {
+          "omitted_law": 3,
+          "both_pair": "A",
+          "inclusion_minimal_stage_law_exclusion": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            7,
+            10,
+            14,
+            19
+          ],
+          "out_of_chain_laws_in_exclusion": [
+            1,
+            4
+          ]
+        },
+        {
+          "omitted_law": 0,
+          "both_pair": "B",
+          "inclusion_minimal_stage_law_exclusion": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            7,
+            10,
+            14,
+            19
+          ],
+          "out_of_chain_laws_in_exclusion": [
+            1,
+            4
+          ]
+        }
+      ],
+      "archived_fields_compared": 5,
+      "archive_mismatches": {}
+    },
+    {
+      "start": 3609,
+      "round": 5,
+      "chain_number": 3,
+      "chain_law_indices": [
+        4,
+        1,
+        2,
+        5,
+        6,
+        9,
+        13,
+        18
+      ],
+      "knots": 20,
+      "distinctions": 38,
+      "carriers": [
+        [
+          0,
+          1,
+          3
+        ],
+        [
+          16,
+          17,
+          24
+        ],
+        [
+          5,
+          6,
+          11
+        ],
+        [
+          7,
+          34,
+          35
+        ],
+        [
+          8,
+          9,
+          10
+        ],
+        [
+          4,
+          25
+        ]
+      ],
+      "lower_joint_words": [
+        "000000",
+        "000001",
+        "000010",
+        "000011",
+        "000100",
+        "000101",
+        "000110",
+        "000111",
+        "001000",
+        "001001",
+        "001010",
+        "001011",
+        "001100",
+        "001101",
+        "001111",
+        "010000",
+        "010001",
+        "010010",
+        "010011",
+        "010100",
+        "010101",
+        "011000",
+        "011010",
+        "011100",
+        "100000",
+        "100001",
+        "100010",
+        "100011",
+        "100100",
+        "100110",
+        "101000",
+        "101001",
+        "101100",
+        "110000",
+        "110001",
+        "110011",
+        "110100",
+        "111000",
+        "111100"
+      ],
+      "bare_lower_joint_words_lost_on_stage": [],
+      "lower_locality": {
+        "comparisons": 120,
+        "comparisons_needing_additional_solver_queries": 1,
+        "additional_solver_queries": 1,
+        "determining_knot_and_reading": []
+      },
+      "defining_lower_triples": [
+        {
+          "readings": [
+            "A0",
+            "B0",
+            "C0"
+          ],
+          "missing_words": [
+            "111"
+          ],
+          "pairs_free": true,
+          "is_bond": true,
+          "mixed_fixes_by_upper_pair_and_function": [
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              4
+            ]
+          ]
+        },
+        {
+          "readings": [
+            "A0",
+            "B1",
+            "C1"
+          ],
+          "missing_words": [
+            "111"
+          ],
+          "pairs_free": true,
+          "is_bond": true,
+          "mixed_fixes_by_upper_pair_and_function": [
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              4
+            ]
+          ]
+        },
+        {
+          "readings": [
+            "A1",
+            "B0",
+            "C1"
+          ],
+          "missing_words": [
+            "111"
+          ],
+          "pairs_free": true,
+          "is_bond": true,
+          "mixed_fixes_by_upper_pair_and_function": [
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              4
+            ]
+          ]
+        },
+        {
+          "readings": [
+            "A1",
+            "B1",
+            "C0"
+          ],
+          "missing_words": [
+            "111"
+          ],
+          "pairs_free": true,
+          "is_bond": true,
+          "mixed_fixes_by_upper_pair_and_function": [
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              4
+            ]
+          ]
+        }
+      ],
+      "other_bonds_on_the_six_named_readings": [],
+      "upper_function_determined_at_other_bond_on_the_six": false,
+      "upper_images": [
+        {
+          "words": [
+            "000",
+            "001",
+            "010",
+            "011",
+            "100",
+            "101",
+            "110"
+          ],
+          "pairs_free": true
+        },
+        {
+          "words": [
+            "000",
+            "001",
+            "010",
+            "011",
+            "100",
+            "101",
+            "110"
+          ],
+          "pairs_free": true
+        },
+        {
+          "words": [
+            "000",
+            "001",
+            "010",
+            "011",
+            "100",
+            "101",
+            "110"
+          ],
+          "pairs_free": true
+        }
+      ],
+      "all_three_expected_upper_images": true,
+      "all_upper_readings_unread_at_every_defining_lower_triple": true,
+      "by_single_chain_law_deletion_upper_111_restored": [
+        [
+          false,
+          true,
+          true
+        ],
+        [
+          true,
+          false,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "whole_chain_deletion_upper_111_restored": [
+        true,
+        true,
+        true
+      ],
+      "frozen_fields": {
+        "lower triples miss exactly their triple": true,
+        "upper": [
+          {
+            "upper words": 7,
+            "pairs free": true
+          },
+          {
+            "upper words": 7,
+            "pairs free": true
+          },
+          {
+            "upper words": 7,
+            "pairs free": true
+          }
+        ],
+        "every chain law needed": false,
+        "no lower reading read at a knot": true,
+        "a step": true
+      },
+      "strict_step_on_defining_bonds": false,
+      "strict_step_with_all_bonds_on_the_six_checked": false,
+      "counterexamples_to_frozen_form": [],
+      "failed_single_deletion_checks": [
+        {
+          "omitted_law": 4,
+          "both_pair": "A",
+          "inclusion_minimal_stage_law_exclusion": [
+            0,
+            1,
+            2,
+            3,
+            5,
+            6,
+            9,
+            13,
+            18
+          ],
+          "out_of_chain_laws_in_exclusion": [
+            0,
+            3
+          ]
+        },
+        {
+          "omitted_law": 1,
+          "both_pair": "B",
+          "inclusion_minimal_stage_law_exclusion": [
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            9,
+            13,
+            18
+          ],
+          "out_of_chain_laws_in_exclusion": [
+            0,
+            3
+          ]
+        }
+      ],
+      "archived_fields_compared": 5,
+      "archive_mismatches": {}
+    }
+  ],
+  "elapsed_seconds": 1.279351,
+  "controls_seconds": 0.061002,
+  "peak_resident_KiB": 41664,
+  "stages_timed": 24,
+  "stage_timings_[start,round,distinctions,chains,seconds]": [
+    [
+      0,
+      3,
+      43,
+      3,
+      0.009399
+    ],
+    [
+      0,
+      4,
+      63,
+      3,
+      0.010394
+    ],
+    [
+      0,
+      5,
+      87,
+      3,
+      0.011648
+    ],
+    [
+      0,
+      6,
+      115,
+      3,
+      0.013681
+    ],
+    [
+      87,
+      2,
+      21,
+      3,
+      0.795779
+    ],
+    [
+      87,
+      3,
+      27,
+      3,
+      0.008484
+    ],
+    [
+      87,
+      4,
+      33,
+      3,
+      0.008604
+    ],
+    [
+      87,
+      5,
+      39,
+      3,
+      0.009432
+    ],
+    [
+      87,
+      6,
+      45,
+      3,
+      0.010126
+    ],
+    [
+      90,
+      3,
+      33,
+      3,
+      0.008507
+    ],
+    [
+      90,
+      4,
+      49,
+      3,
+      0.009411
+    ],
+    [
+      90,
+      5,
+      69,
+      3,
+      0.010841
+    ],
+    [
+      90,
+      6,
+      93,
+      3,
+      0.012463
+    ],
+    [
+      2030,
+      3,
+      18,
+      3,
+      0.111224
+    ],
+    [
+      2030,
+      4,
+      21,
+      3,
+      0.007778
+    ],
+    [
+      2030,
+      5,
+      24,
+      3,
+      0.008097
+    ],
+    [
+      2030,
+      6,
+      27,
+      3,
+      0.008582
+    ],
+    [
+      3609,
+      5,
+      38,
+      3,
+      0.009201
+    ],
+    [
+      3609,
+      6,
+      50,
+      3,
+      0.010102
+    ],
+    [
+      5260,
+      2,
+      17,
+      1,
+      0.065123
+    ],
+    [
+      5260,
+      3,
+      20,
+      3,
+      0.007542
+    ],
+    [
+      5260,
+      4,
+      23,
+      3,
+      0.008123
+    ],
+    [
+      5260,
+      5,
+      26,
+      3,
+      0.007947
+    ],
+    [
+      5260,
+      6,
+      29,
+      3,
+      0.00812
+    ]
+  ]
+}

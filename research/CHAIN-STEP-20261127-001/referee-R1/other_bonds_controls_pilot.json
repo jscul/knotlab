@@ -1,0 +1,88 @@
+{
+  "scope": "Direct all-assignment, all-carrier, all-bond controls on the specified finite systems.",
+  "cases": [
+    {
+      "source_knots": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          2,
+          3,
+          4
+        ],
+        [
+          4,
+          5,
+          6
+        ]
+      ],
+      "allowed_states": 54,
+      "nonlocal_agreement_carriers": 44,
+      "disjoint_triples_of_nonlocal_carriers": 52,
+      "all_genuine_bonds": 16,
+      "direct_upper_queries_with_all_raw_distinctions_mandatory": 267,
+      "queries_determined_at_a_bond_with_three_touching_carriers": 0,
+      "comparisons": [
+        {
+          "query_kind": "no determining bond",
+          "pair": [
+            [
+              0,
+              1,
+              3
+            ],
+            [
+              2,
+              4,
+              5
+            ]
+          ],
+          "both": false,
+          "directly_checked_carriers_containing_a_mandatory_distinction": 56,
+          "direct_and_reduced_surviving_carriers": 6,
+          "directly_determining_stage_bonds": 0,
+          "direct_and_reduced_determining_bonds_with_three_touching_carriers": 0,
+          "first_determining_example": null
+        },
+        {
+          "query_kind": "two named carriers",
+          "pair": [
+            [
+              0,
+              2,
+              4
+            ],
+            [
+              1,
+              5
+            ]
+          ],
+          "both": false,
+          "directly_checked_carriers_containing_a_mandatory_distinction": 55,
+          "direct_and_reduced_surviving_carriers": 8,
+          "directly_determining_stage_bonds": 1,
+          "direct_and_reduced_determining_bonds_with_three_touching_carriers": 0,
+          "first_determining_example": [
+            [
+              0,
+              2,
+              4
+            ],
+            [
+              1,
+              5
+            ],
+            [
+              3,
+              6
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "seconds": 0.007
+}

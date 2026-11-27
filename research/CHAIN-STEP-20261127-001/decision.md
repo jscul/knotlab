@@ -1,5 +1,17 @@
 # Does growth make the step one layer up typical? What stands
 
+
+> **Referee R1: confirmed with fixes, no Block** ([report](referee-R1/report.md)). The counts reproduce, and the full
+> census settles the weighting: **4,213 of the 5,111 growing census starts (82.4%) carry the step on a chain of eight at
+> round 6** (59.5% of all 7,075 starts), each with a witness needing all eight chain laws in all three roles and at least
+> one birth's law. **Narrowings:** of the 2,808 chains checked, 2,803 pass the frozen test, 2,800 also need every chain
+> law, and 2,489 (88.6%) pass the extra test that no stage bond reads an upper reading (all 10,696 chains: 8,941, 83.6%).
+> The upper exclusion follows from the four clauses alone, so the chain's eight laws suffice; other stage laws can remove
+> a lower word (all 33 such failures: an extra law on the chain's (0, 1, 5)) or make an upper reading visible to one lower
+> bond. A larger stage can supply other readings for the same chain (35 of 36 one-distinction extensions qualify). The
+> sample includes one entry of a three-start pilot (dropping it: 603 of 731). Credit: the chain construction and the
+> eight-law explanation are the earlier referees'. A proof sketch of why eight is in [why_eight.md](why_eight.md).
+
 `CHAIN-STEP-20261127-001`. Frozen in commit 604ddb09f1. Results are in `out/`. Referee pending.
 
 **Answer: yes, under the census weighting.** Of 1,000 held-out census starts, 732 grow, and every one of them is still
@@ -23,13 +35,11 @@ growing at round 6. The share of them holding a chain of eight three-place knots
 | Starts | 6 | 21 | 54 | 263 | 260 | 128 of the growing starts (and the 268 that never grow) |
 
 **Reading.** Growth makes the step one layer up typical. Under the census weighting, ordinary growth builds a chain of
-eight three-place knots on 82.5% of growing starts by round 6. A chain of eight carries the step with every one of its
-laws needed, in 99.8% of the chains checked. The step's six agreements are fixed by the chain: the bare chain of eight
-has exactly one pattern. So within the four-clause form, the reading is not a free choice once the chain is given. The
+eight three-place knots on 82.5% of growing starts by round 6. [R1: of 2,808 checked chain occurrences, 2,803 pass the frozen test, 2,800 also need every chain law for each role, and 2,489 pass the test against every stage bond as well.] The step's six agreements are fixed by the chain: the bare chain of eight
+has exactly one pattern. [R1: the bare chain fixes one pattern on its own 17 distinctions; a larger stage can supply further readings for the same chain.] The
 remaining choices are which pair reads "both", and which chain (a stage may hold many).
 
-This is the program's first result in which a fact held by the whole at the second layer is both made by ordinary growth
-and typical under a named weighting of starts.
+[R1: ordinary growth frequently builds a sufficient eight-law chain under the stated census weighting; the seven allowed upper words have whole-stage extensions; other stage laws can remove a lower word or make an upper reading visible to a single lower bond.]
 
 ## On the owner's rungs
 

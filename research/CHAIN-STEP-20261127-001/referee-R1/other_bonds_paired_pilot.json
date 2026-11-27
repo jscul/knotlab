@@ -1,0 +1,201 @@
+{
+  "mode": "pilot",
+  "witnesses_per_stage_before_exact_completion": 2048,
+  "seed": 506177,
+  "stages": 3,
+  "chains": 9,
+  "unique_pairs_within_stages": 27,
+  "counts_by_chain_and_pair": {
+    "possible_third_carriers": 5931195,
+    "third_carriers_contained_at_a_knot": 6903,
+    "missing_in_first_witnesses_including_contained": 4050,
+    "third_word_exact_queries": 2177,
+    "proper_relations_with_a_nonfree_pair": 163,
+    "proper_pairwise_free_bonds_with_all_readings_nonlocal": 0
+  },
+  "counts_by_unique_pair_within_stage": {
+    "possible_third_carriers": 5931195,
+    "third_carriers_contained_at_a_knot": 6903,
+    "missing_in_first_witnesses_including_contained": 4050,
+    "third_word_exact_queries": 2177,
+    "proper_relations_with_a_nonfree_pair": 163,
+    "proper_pairwise_free_bonds_with_all_readings_nonlocal": 0
+  },
+  "genuine_bond_cases": [],
+  "stages_with_determining_fixed_pair": 0,
+  "starts_with_determining_fixed_pair": 0,
+  "chain_and_stage_counts": {
+    "mapped_chains": 9,
+    "chains_with_determining_fixed_pair": 0,
+    "frozen_positives_with_determining_fixed_pair": 0,
+    "frozen_positives_needing_all_laws_with_determining_fixed_pair": 0,
+    "frozen_positives_needing_all_laws_surviving_fixed_pair_test": 7,
+    "stages_with_at_least_one_surviving_checked_chain": 3
+  },
+  "chain_and_stage_counts_by_round": {
+    "3": {
+      "mapped_chains": 3,
+      "chains_with_determining_fixed_pair": 0,
+      "frozen_positives_with_determining_fixed_pair": 0,
+      "frozen_positives_needing_all_laws_with_determining_fixed_pair": 0,
+      "frozen_positives_needing_all_laws_surviving_fixed_pair_test": 3,
+      "stages_with_at_least_one_surviving_checked_chain": 1
+    },
+    "4": {
+      "mapped_chains": 3,
+      "chains_with_determining_fixed_pair": 0,
+      "frozen_positives_with_determining_fixed_pair": 0,
+      "frozen_positives_needing_all_laws_with_determining_fixed_pair": 0,
+      "frozen_positives_needing_all_laws_surviving_fixed_pair_test": 1,
+      "stages_with_at_least_one_surviving_checked_chain": 1
+    },
+    "6": {
+      "mapped_chains": 3,
+      "chains_with_determining_fixed_pair": 0,
+      "frozen_positives_with_determining_fixed_pair": 0,
+      "frozen_positives_needing_all_laws_with_determining_fixed_pair": 0,
+      "frozen_positives_needing_all_laws_surviving_fixed_pair_test": 3,
+      "stages_with_at_least_one_surviving_checked_chain": 1
+    }
+  },
+  "starts_with_any_survivor": 3,
+  "first_round_with_survivor": {
+    "3": 1,
+    "4": 1,
+    "6": 1
+  },
+  "controls": [
+    {
+      "case": "upper pair 1",
+      "pair": [
+        [
+          3,
+          4,
+          5
+        ],
+        [
+          11,
+          12,
+          13
+        ]
+      ],
+      "direct_allowed_states": 13122,
+      "agrees_with_full_truth_table": true,
+      "counts": {
+        "possible_third_carriers": 220,
+        "third_carriers_contained_at_a_knot": 16,
+        "missing_in_first_witnesses_including_contained": 28,
+        "third_word_exact_queries": 12,
+        "proper_relations_with_a_nonfree_pair": 6,
+        "proper_pairwise_free_bonds_with_all_readings_nonlocal": 0
+      },
+      "bonds": []
+    },
+    {
+      "case": "upper pair 2",
+      "pair": [
+        [
+          0,
+          1,
+          10
+        ],
+        [
+          6,
+          15,
+          16
+        ]
+      ],
+      "direct_allowed_states": 13122,
+      "agrees_with_full_truth_table": true,
+      "counts": {
+        "possible_third_carriers": 220,
+        "third_carriers_contained_at_a_knot": 12,
+        "missing_in_first_witnesses_including_contained": 8,
+        "proper_pairwise_free_bonds_with_all_readings_nonlocal": 0
+      },
+      "bonds": []
+    },
+    {
+      "case": "upper pair 3",
+      "pair": [
+        [
+          2,
+          14
+        ],
+        [
+          7,
+          8,
+          9
+        ]
+      ],
+      "direct_allowed_states": 13122,
+      "agrees_with_full_truth_table": true,
+      "counts": {
+        "possible_third_carriers": 286,
+        "third_carriers_contained_at_a_knot": 12,
+        "missing_in_first_witnesses_including_contained": 14,
+        "third_word_exact_queries": 6,
+        "proper_relations_with_a_nonfree_pair": 3,
+        "proper_pairwise_free_bonds_with_all_readings_nonlocal": 0
+      },
+      "bonds": []
+    },
+    {
+      "case": "members of one defining lower clause",
+      "pair": [
+        [
+          3,
+          4,
+          5
+        ],
+        [
+          0,
+          1,
+          10
+        ]
+      ],
+      "direct_allowed_states": 13122,
+      "agrees_with_full_truth_table": true,
+      "counts": {
+        "possible_third_carriers": 220,
+        "third_carriers_contained_at_a_knot": 14,
+        "missing_in_first_witnesses_including_contained": 18,
+        "third_word_exact_queries": 6,
+        "proper_relations_with_a_nonfree_pair": 2,
+        "proper_pairwise_free_bonds_with_all_readings_nonlocal": 1
+      },
+      "bonds": [
+        {
+          "third": [
+            7,
+            8,
+            9
+          ],
+          "missing_words": [
+            "111"
+          ]
+        }
+      ]
+    }
+  ],
+  "stage_seconds_total": 0.229,
+  "stage_seconds_max": 0.215,
+  "seconds_including_controls": 0.289,
+  "timed_stages": [
+    [
+      0,
+      3,
+      0.006
+    ],
+    [
+      90,
+      4,
+      0.008
+    ],
+    [
+      1278,
+      6,
+      0.215
+    ]
+  ]
+}

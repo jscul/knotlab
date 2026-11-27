@@ -1,14 +1,14 @@
 # Does growth make the step one layer up typical? Chains of eight knots, round by round
 
 `CHAIN-STEP-20261127-001`. Background, from `FOUR-CLAUSE-20261127-001`'s referee: the four-clause step one layer up
-appears exactly on stages that hold a chain of eight three-place knots. A chain means each knot shares exactly one
+appears exactly on stages that hold a chain of eight three-place knots [R1: in the earlier 600-start sample through round two, for the alternating form]. A chain means each knot shares exactly one
 distinction with the next, and no two non-consecutive knots share one. A bare chain of eight carries one pattern, three
 steps, with every law needed. The thread replayed this. A chain of seven carries none.
 
 ## Method
 
 `chains.py` finds chains of eight. `chain_step.py` grows 1,000 held-out census starts (seed 20261131) for six rounds.
-The sample is outside the samples of UPPER-GROWN and FOUR-CLAUSE, their pilots and start 420. At every stage it records:
+The sample is outside the samples of UPPER-GROWN and FOUR-CLAUSE, their pilots and start 420 [R1: it includes one entry of the three-start pilot]. At every stage it records:
 - the number of chains of eight, capped at 1,000;
 - for at most three chains, the bare chain's pattern carried onto the chain and checked on the whole stage by a solver;
 - on stages of rounds 1 and 2 with at most 19 distinctions, the full four-clause search (the converse test).

@@ -6331,7 +6331,17 @@ stages that hold a chain of eight three-place knots, each sharing one
 distinction with the next, and a bare chain of eight such knots carries the
 looser step by itself, with every law needed: no ring, no closure and no
 growth. A chain of seven carries none. So a chain of three knots holds
-clauses on agreements, and a chain of eight holds the step one layer up. Which of the equivalent readings growth
+clauses on agreements, and a bare chain of eight holds the step one layer up;
+a grown stage can preserve or spoil the reading carried onto its chains. And
+growth builds such chains: of the census starts that grow, 4,213 of 5,111
+hold, after six rounds of ordinary growth, a chain of eight carrying the step
+with all eight of its laws and some birth's law needed, counting each census
+start once. Why eight: read through agreements, an agreement on two places of a
+three-place knot forces the third place to the other value, so two such knots
+in a row act as an equality. The four clauses are then four contradictions
+among equalities and inequalities of four distinctions along the chain, each
+two knots apart, which is parity's language one layer up (proof sketch,
+[why eight](research/CHAIN-STEP-20261127-001/why_eight.md)). Which of the equivalent readings growth
 selects is open: the ten-knot start's own symmetries exchange its 18 steps in
 pairs. Under parity every such clause follows
 from the dependences among its distinctions' pairs, which are sums of laws

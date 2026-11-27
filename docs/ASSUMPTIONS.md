@@ -363,6 +363,7 @@ evidence: results and their status come from the records each entry links.
 | [A305](#a305--the-transfer-laws-tables-a-declared-start-weighting-the-coherent-version-and-rotated-reads) | The transfer law's tables: a declared start weighting, the coherent version and rotated reads | scaffold | Assumed |
 | [A306](#a306--at-most-two-holders-at-the-second-layer) | At most two holders at the second layer | scaffold | Assumed |
 | [A307](#a307--cycle-starts-two-twin-weightings-and-count-caps-to-test-the-node-reading-and-its-twin-exception) | Cycle starts, two twin weightings and count caps to test the node reading and its twin exception | scaffold | Assumed |
+| [A308](#a308--agreement-readings-on-small-carriers-two-holder-notions-and-bonds-as-laws-to-test-the-grown-rings-bond) | Agreement readings on small carriers, two holder notions and bonds as laws, to test the grown ring's bond | scaffold | Assumed |
 
 ## Entries
 
@@ -6387,3 +6388,27 @@ evidence: results and their status come from the records each entry links.
 - **Challenge.** Other weightings and sizes (ten knots and more); other caps, which change which starts are read, not the verdict on a start that is read; a longer growth limit for the twelve chained-twin starts not grown in two minutes. The twin exception held under both twin weightings, so it is about the reading, not the weighting; the caps were not varied. The model is not expected to keep these choices.
 - **History.**
   - 2026-11-27 · Entered with `CYCLE-READ-20261127-001`: every read start without chained twins agrees (122 with a cycle, 263 fresh), every scored start with them differs (11 and 42), at the round equal to their least rank.
+
+### A308 · Agreement readings on small carriers, two holder notions and bonds as laws, to test the grown ring's bond
+
+**Assumed** · 2026-11-27 · scaffold
+
+- **Statement.** For one study of the bond a grown ring makes under not-all-equal, these choices: readings are agreements
+  [the carrier's distinctions all equal] on carriers of two or three distinctions. A bond is three such readings on
+  disjoint carriers, none read at a single knot, every two free, a triple missing. What holds it is counted two ways:
+  laws whose removal from the whole stage lets a missing triple occur, or a connected set of at most four knots that holds
+  the relation alone, with the carriers in its distinctions. The layer above takes the bonds as laws on their readings,
+  over clusters of at most three bonds on disjoint carriers. The census is read on a seeded sample of 1,000 starts (seed
+  20261127, the 10 pilot starts excluded) at rounds 0 and 1.
+- **Why.** Adopted by the thread on 27 November 2026 for `RING-BOND-20261127-001` at the coordinator's go-ahead, after
+  the not-all-equal layer's referee found the first such bond with agreement readings. The small carriers keep the
+  search exact and fast, and the connected holders exclude readings padded with distinctions that the relation does not
+  use.
+- **Rests on it.** The study's four answers ([the note](../research/RING-BOND-20261127-001/README.md)).
+- **Challenge.** Each choice is swapped in the study: all readings unchanged by a global flip, carriers up to four, both
+  holder notions with five holders on a tenth of the sample, overlapping readings in the layer above. Larger carriers,
+  disconnected holder sets (which the advisor expects on census start 21), more rounds and other samples are not run.
+  The model is not expected to keep these choices.
+- **History.**
+  - 2026-11-27 · Entered with `RING-BOND-20261127-001` before its runs.
+  - 2026-11-27 · Every swap run left the answers unchanged: all flip-unchanged readings and carriers up to four on the ring, every bond still missing one triple; five holders on 100 sampled starts, 6,153 bonds against 4,867, one stage of 175 gaining its first bond. Overlapping readings in the layer above were read at round 1 only. The choice of one of the ring's three equivalent bonds is the study's, not the model's.

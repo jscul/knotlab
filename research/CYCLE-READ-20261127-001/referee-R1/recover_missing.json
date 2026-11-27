@@ -1,0 +1,4073 @@
+{
+  "question": "First difference through the ordinary birth round of the least chained twins",
+  "limits": {
+    "non_start_births_per_piece": 5000,
+    "last_ordinary_core_round": 25,
+    "group_work": 2000000,
+    "CPU_seconds_per_start_and_law": 10,
+    "memory_MiB": 1700,
+    "ordinary_growth_knot_bound": 30000
+  },
+  "starts": [
+    {
+      "source": "twin9_draw.jsonl",
+      "line": 88,
+      "draw": 388,
+      "weighting": "tree+",
+      "n_knots": 9,
+      "stars_sha256": "d5090d9bcfde07cd79a78250b6c4b0555231fd95c3c2fc058a79df6ed2a86c35",
+      "laws": {
+        "nae": {
+          "pieces": [
+            {
+              "stop": "finished",
+              "starts": 9,
+              "non_start_births": 127,
+              "total_nodes": 136,
+              "knots_by_round_from_zero": [
+                9,
+                15,
+                18,
+                19,
+                17,
+                13,
+                10,
+                8,
+                8,
+                6,
+                5,
+                4,
+                3,
+                1
+              ],
+              "parent_pair_incidence_by_round_from_one": [
+                41,
+                52,
+                70,
+                76,
+                61,
+                32,
+                30,
+                19,
+                11,
+                8,
+                7,
+                3,
+                0
+              ],
+              "distinct_pairs_sharing_parents_by_round_from_one": [
+                41,
+                52,
+                68,
+                66,
+                43,
+                27,
+                19,
+                17,
+                11,
+                8,
+                5,
+                3,
+                0
+              ],
+              "chain_counts": [
+                1
+              ],
+              "twin_birth_round": 7,
+              "twin_witness_start_size_one": {
+                "rank": 8,
+                "births": [
+                  102,
+                  103
+                ],
+                "parents": [
+                  93,
+                  94
+                ],
+                "grandparent": 83,
+                "chain_base": 9
+              }
+            }
+          ],
+          "twin_birth_round": 7,
+          "saved_growth_end": "not run (time limit)",
+          "saved_growth_rounds": 0,
+          "prediction_status": "predicted",
+          "observed_end": "rounds",
+          "observed_rounds": 7,
+          "grown_births": [
+            15,
+            19,
+            21,
+            22,
+            23,
+            26,
+            30
+          ],
+          "predicted_births": [
+            15,
+            19,
+            21,
+            22,
+            23,
+            26,
+            30
+          ],
+          "grown_prefix_sha256": "14605621cbe45fb4191a073f5b51aac19cfd8f236e326f0c8ae0ca8bde4c7636",
+          "predicted_prefix_sha256": "26d8a711903bc2b38837060872a63371a3ccb7f14075077417e820caefb885b6",
+          "first_difference": {
+            "n": null,
+            "sig0": 7,
+            "sig1": 7
+          },
+          "extra_grown_sig0_at_twin": [
+            [
+              [
+                "join",
+                4,
+                2,
+                6
+              ],
+              2
+            ],
+            [
+              [
+                "join",
+                5,
+                3,
+                8
+              ],
+              1
+            ]
+          ],
+          "extra_predicted_sig0_at_twin": [
+            [
+              [
+                "join",
+                4,
+                3,
+                7
+              ],
+              2
+            ],
+            [
+              [
+                "join",
+                5,
+                5,
+                10
+              ],
+              1
+            ]
+          ],
+          "saved_verdict": "growth not run",
+          "saved_least_rank": 7,
+          "cpu_seconds": 0.007
+        },
+        "parity": {
+          "pieces": [
+            {
+              "stop": "finished",
+              "starts": 9,
+              "non_start_births": 127,
+              "total_nodes": 136,
+              "knots_by_round_from_zero": [
+                9,
+                15,
+                18,
+                19,
+                17,
+                13,
+                10,
+                8,
+                8,
+                6,
+                5,
+                4,
+                3,
+                1
+              ],
+              "parent_pair_incidence_by_round_from_one": [
+                41,
+                52,
+                70,
+                76,
+                61,
+                32,
+                30,
+                19,
+                11,
+                8,
+                7,
+                3,
+                0
+              ],
+              "distinct_pairs_sharing_parents_by_round_from_one": [
+                41,
+                52,
+                68,
+                66,
+                43,
+                27,
+                19,
+                17,
+                11,
+                8,
+                5,
+                3,
+                0
+              ],
+              "chain_counts": [
+                1
+              ],
+              "twin_birth_round": 7,
+              "twin_witness_start_size_one": {
+                "rank": 8,
+                "births": [
+                  102,
+                  103
+                ],
+                "parents": [
+                  93,
+                  94
+                ],
+                "grandparent": 83,
+                "chain_base": 9
+              }
+            }
+          ],
+          "twin_birth_round": 7,
+          "saved_growth_end": "not run (time limit)",
+          "saved_growth_rounds": 0,
+          "prediction_status": "predicted",
+          "observed_end": "rounds",
+          "observed_rounds": 7,
+          "grown_births": [
+            15,
+            19,
+            21,
+            22,
+            23,
+            26,
+            30
+          ],
+          "predicted_births": [
+            15,
+            19,
+            21,
+            22,
+            23,
+            26,
+            30
+          ],
+          "grown_prefix_sha256": "14605621cbe45fb4191a073f5b51aac19cfd8f236e326f0c8ae0ca8bde4c7636",
+          "predicted_prefix_sha256": "26d8a711903bc2b38837060872a63371a3ccb7f14075077417e820caefb885b6",
+          "first_difference": {
+            "n": null,
+            "sig0": 7,
+            "sig1": 7
+          },
+          "extra_grown_sig0_at_twin": [
+            [
+              [
+                "join",
+                4,
+                2,
+                6
+              ],
+              2
+            ],
+            [
+              [
+                "join",
+                5,
+                3,
+                8
+              ],
+              1
+            ]
+          ],
+          "extra_predicted_sig0_at_twin": [
+            [
+              [
+                "join",
+                4,
+                3,
+                7
+              ],
+              2
+            ],
+            [
+              [
+                "join",
+                5,
+                5,
+                10
+              ],
+              1
+            ]
+          ],
+          "saved_verdict": "growth not run",
+          "saved_least_rank": 7,
+          "cpu_seconds": 0.006
+        }
+      }
+    },
+    {
+      "source": "twin8_draw.jsonl",
+      "line": 86,
+      "draw": 1990,
+      "weighting": "tree+s50",
+      "n_knots": 8,
+      "stars_sha256": "fa947a408d024ec00e5097c0915ab8b0c58474c6abce71bbed14d7c90e45fed0",
+      "laws": {
+        "nae": {
+          "pieces": [
+            {
+              "stop": "finished",
+              "starts": 8,
+              "non_start_births": 963,
+              "total_nodes": 971,
+              "knots_by_round_from_zero": [
+                8,
+                12,
+                17,
+                22,
+                26,
+                29,
+                70,
+                780,
+                3,
+                3,
+                1
+              ],
+              "parent_pair_incidence_by_round_from_one": [
+                32,
+                60,
+                92,
+                149,
+                331,
+                5633,
+                5728977,
+                1183,
+                3,
+                0
+              ],
+              "distinct_pairs_sharing_parents_by_round_from_one": [
+                31,
+                59,
+                90,
+                137,
+                226,
+                2080,
+                302527,
+                3,
+                3,
+                0
+              ],
+              "chain_counts": [
+                1
+              ],
+              "twin_birth_round": 5,
+              "twin_witness_start_size_one": {
+                "rank": 6,
+                "births": [
+                  88,
+                  113
+                ],
+                "parents": [
+                  60,
+                  79
+                ],
+                "grandparent": 50,
+                "chain_base": 9
+              }
+            }
+          ],
+          "twin_birth_round": 5,
+          "saved_growth_end": "guard",
+          "saved_growth_rounds": 7,
+          "prediction_status": "predicted",
+          "observed_end": "rounds",
+          "observed_rounds": 5,
+          "grown_births": [
+            12,
+            18,
+            24,
+            33,
+            46
+          ],
+          "predicted_births": [
+            12,
+            18,
+            24,
+            33,
+            46
+          ],
+          "grown_prefix_sha256": "84d7b23655eca356832dc1b5983b7f3aed7669727b667cd2d3916a01ad6cc9c2",
+          "predicted_prefix_sha256": "46997c0dd8952ef4ce4f3fc5e8eb6e71e4dbf35ed97c810b7f9a4acc976efea6",
+          "first_difference": {
+            "n": null,
+            "sig0": 5,
+            "sig1": 5
+          },
+          "extra_grown_sig0_at_twin": [
+            [
+              [
+                "join",
+                4,
+                12,
+                16
+              ],
+              2
+            ],
+            [
+              [
+                "join",
+                4,
+                16,
+                20
+              ],
+              1
+            ],
+            [
+              [
+                "join",
+                4,
+                18,
+                22
+              ],
+              2
+            ],
+            [
+              [
+                "join",
+                4,
+                33,
+                37
+              ],
+              1
+            ]
+          ],
+          "extra_predicted_sig0_at_twin": [
+            [
+              [
+                "join",
+                4,
+                11,
+                15
+              ],
+              2
+            ],
+            [
+              [
+                "join",
+                4,
+                15,
+                19
+              ],
+              1
+            ],
+            [
+              [
+                "join",
+                4,
+                17,
+                21
+              ],
+              2
+            ],
+            [
+              [
+                "join",
+                4,
+                30,
+                34
+              ],
+              1
+            ]
+          ],
+          "saved_prefix_rounds_compared": 5,
+          "agrees_with_saved_growth": true,
+          "saved_verdict": "not predicted: RuntimeError('too many core births')",
+          "saved_least_rank": null,
+          "cpu_seconds": 0.087
+        },
+        "parity": {
+          "pieces": [
+            {
+              "stop": "finished",
+              "starts": 8,
+              "non_start_births": 963,
+              "total_nodes": 971,
+              "knots_by_round_from_zero": [
+                8,
+                12,
+                17,
+                22,
+                26,
+                29,
+                70,
+                780,
+                3,
+                3,
+                1
+              ],
+              "parent_pair_incidence_by_round_from_one": [
+                32,
+                60,
+                92,
+                149,
+                331,
+                5633,
+                5728977,
+                1183,
+                3,
+                0
+              ],
+              "distinct_pairs_sharing_parents_by_round_from_one": [
+                31,
+                59,
+                90,
+                137,
+                226,
+                2080,
+                302527,
+                3,
+                3,
+                0
+              ],
+              "chain_counts": [
+                1
+              ],
+              "twin_birth_round": 5,
+              "twin_witness_start_size_one": {
+                "rank": 6,
+                "births": [
+                  88,
+                  113
+                ],
+                "parents": [
+                  60,
+                  79
+                ],
+                "grandparent": 50,
+                "chain_base": 9
+              }
+            }
+          ],
+          "twin_birth_round": 5,
+          "saved_growth_end": "guard",
+          "saved_growth_rounds": 7,
+          "prediction_status": "predicted",
+          "observed_end": "rounds",
+          "observed_rounds": 5,
+          "grown_births": [
+            12,
+            18,
+            24,
+            33,
+            46
+          ],
+          "predicted_births": [
+            12,
+            18,
+            24,
+            33,
+            46
+          ],
+          "grown_prefix_sha256": "84d7b23655eca356832dc1b5983b7f3aed7669727b667cd2d3916a01ad6cc9c2",
+          "predicted_prefix_sha256": "46997c0dd8952ef4ce4f3fc5e8eb6e71e4dbf35ed97c810b7f9a4acc976efea6",
+          "first_difference": {
+            "n": null,
+            "sig0": 5,
+            "sig1": 5
+          },
+          "extra_grown_sig0_at_twin": [
+            [
+              [
+                "join",
+                4,
+                12,
+                16
+              ],
+              2
+            ],
+            [
+              [
+                "join",
+                4,
+                16,
+                20
+              ],
+              1
+            ],
+            [
+              [
+                "join",
+                4,
+                18,
+                22
+              ],
+              2
+            ],
+            [
+              [
+                "join",
+                4,
+                33,
+                37
+              ],
+              1
+            ]
+          ],
+          "extra_predicted_sig0_at_twin": [
+            [
+              [
+                "join",
+                4,
+                11,
+                15
+              ],
+              2
+            ],
+            [
+              [
+                "join",
+                4,
+                15,
+                19
+              ],
+              1
+            ],
+            [
+              [
+                "join",
+                4,
+                17,
+                21
+              ],
+              2
+            ],
+            [
+              [
+                "join",
+                4,
+                30,
+                34
+              ],
+              1
+            ]
+          ],
+          "saved_prefix_rounds_compared": 5,
+          "agrees_with_saved_growth": true,
+          "saved_verdict": "not predicted: RuntimeError('too many core births')",
+          "saved_least_rank": null,
+          "cpu_seconds": 0.087
+        }
+      }
+    },
+    {
+      "source": "twin9_draw.jsonl",
+      "line": 97,
+      "draw": 1615,
+      "weighting": "tree+",
+      "n_knots": 9,
+      "stars_sha256": "2fc7481599173e866ccc3c9a875ad3678c5d993f16f4cf422100eff6b2594592",
+      "laws": {
+        "nae": {
+          "pieces": [
+            {
+              "stop": "finished",
+              "starts": 9,
+              "non_start_births": 135,
+              "total_nodes": 144,
+              "knots_by_round_from_zero": [
+                9,
+                15,
+                19,
+                22,
+                20,
+                14,
+                10,
+                8,
+                8,
+                6,
+                5,
+                4,
+                3,
+                1
+              ],
+              "parent_pair_incidence_by_round_from_one": [
+                42,
+                61,
+                90,
+                92,
+                65,
+                32,
+                30,
+                19,
+                11,
+                8,
+                7,
+                3,
+                0
+              ],
+              "distinct_pairs_sharing_parents_by_round_from_one": [
+                42,
+                61,
+                88,
+                82,
+                47,
+                27,
+                19,
+                17,
+                11,
+                8,
+                5,
+                3,
+                0
+              ],
+              "chain_counts": [
+                1
+              ],
+              "twin_birth_round": 7,
+              "twin_witness_start_size_one": {
+                "rank": 8,
+                "births": [
+                  110,
+                  112
+                ],
+                "parents": [
+                  102,
+                  104
+                ],
+                "grandparent": 86,
+                "chain_base": 9
+              }
+            }
+          ],
+          "twin_birth_round": 7,
+          "saved_growth_end": "not run (time limit)",
+          "saved_growth_rounds": 0,
+          "prediction_status": "predicted",
+          "observed_end": "rounds",
+          "observed_rounds": 7,
+          "grown_births": [
+            15,
+            20,
+            24,
+            26,
+            27,
+            30,
+            34
+          ],
+          "predicted_births": [
+            15,
+            20,
+            24,
+            26,
+            27,
+            30,
+            34
+          ],
+          "grown_prefix_sha256": "8ee5a6cd210268e8a9dc0108e8e769ebb2bd019be40c0707c64d58f9b57f10a6",
+          "predicted_prefix_sha256": "806b63e99e6e332612d23f03050ccaac89f05474fba0bcdeaa43ab29c87f1301",
+          "first_difference": {
+            "n": null,
+            "sig0": 7,
+            "sig1": 7
+          },
+          "extra_grown_sig0_at_twin": [
+            [
+              [
+                "join",
+                4,
+                2,
+                6
+              ],
+              2
+            ],
+            [
+              [
+                "join",
+                5,
+                3,
+                8
+              ],
+              1
+            ]
+          ],
+          "extra_predicted_sig0_at_twin": [
+            [
+              [
+                "join",
+                4,
+                3,
+                7
+              ],
+              2
+            ],
+            [
+              [
+                "join",
+                5,
+                5,
+                10
+              ],
+              1
+            ]
+          ],
+          "saved_verdict": "growth not run",
+          "saved_least_rank": 7,
+          "cpu_seconds": 0.008
+        },
+        "parity": {
+          "pieces": [
+            {
+              "stop": "finished",
+              "starts": 9,
+              "non_start_births": 135,
+              "total_nodes": 144,
+              "knots_by_round_from_zero": [
+                9,
+                15,
+                19,
+                22,
+                20,
+                14,
+                10,
+                8,
+                8,
+                6,
+                5,
+                4,
+                3,
+                1
+              ],
+              "parent_pair_incidence_by_round_from_one": [
+                42,
+                61,
+                90,
+                92,
+                65,
+                32,
+                30,
+                19,
+                11,
+                8,
+                7,
+                3,
+                0
+              ],
+              "distinct_pairs_sharing_parents_by_round_from_one": [
+                42,
+                61,
+                88,
+                82,
+                47,
+                27,
+                19,
+                17,
+                11,
+                8,
+                5,
+                3,
+                0
+              ],
+              "chain_counts": [
+                1
+              ],
+              "twin_birth_round": 7,
+              "twin_witness_start_size_one": {
+                "rank": 8,
+                "births": [
+                  110,
+                  112
+                ],
+                "parents": [
+                  102,
+                  104
+                ],
+                "grandparent": 86,
+                "chain_base": 9
+              }
+            }
+          ],
+          "twin_birth_round": 7,
+          "saved_growth_end": "not run (time limit)",
+          "saved_growth_rounds": 0,
+          "prediction_status": "predicted",
+          "observed_end": "rounds",
+          "observed_rounds": 7,
+          "grown_births": [
+            15,
+            20,
+            24,
+            26,
+            27,
+            30,
+            34
+          ],
+          "predicted_births": [
+            15,
+            20,
+            24,
+            26,
+            27,
+            30,
+            34
+          ],
+          "grown_prefix_sha256": "8ee5a6cd210268e8a9dc0108e8e769ebb2bd019be40c0707c64d58f9b57f10a6",
+          "predicted_prefix_sha256": "806b63e99e6e332612d23f03050ccaac89f05474fba0bcdeaa43ab29c87f1301",
+          "first_difference": {
+            "n": null,
+            "sig0": 7,
+            "sig1": 7
+          },
+          "extra_grown_sig0_at_twin": [
+            [
+              [
+                "join",
+                4,
+                2,
+                6
+              ],
+              2
+            ],
+            [
+              [
+                "join",
+                5,
+                3,
+                8
+              ],
+              1
+            ]
+          ],
+          "extra_predicted_sig0_at_twin": [
+            [
+              [
+                "join",
+                4,
+                3,
+                7
+              ],
+              2
+            ],
+            [
+              [
+                "join",
+                5,
+                5,
+                10
+              ],
+              1
+            ]
+          ],
+          "saved_verdict": "growth not run",
+          "saved_least_rank": 7,
+          "cpu_seconds": 0.007
+        }
+      }
+    },
+    {
+      "source": "twin9_draw.jsonl",
+      "line": 98,
+      "draw": 1975,
+      "weighting": "tree+",
+      "n_knots": 9,
+      "stars_sha256": "0d24f4697fe3e90c41ad23dc41d0c5e15f5937d9e541a1fc99cdc830154aab07",
+      "laws": {
+        "nae": {
+          "pieces": [
+            {
+              "stop": "finished",
+              "starts": 9,
+              "non_start_births": 127,
+              "total_nodes": 136,
+              "knots_by_round_from_zero": [
+                9,
+                15,
+                18,
+                19,
+                17,
+                13,
+                10,
+                8,
+                8,
+                6,
+                5,
+                4,
+                3,
+                1
+              ],
+              "parent_pair_incidence_by_round_from_one": [
+                41,
+                52,
+                70,
+                76,
+                61,
+                32,
+                30,
+                19,
+                11,
+                8,
+                7,
+                3,
+                0
+              ],
+              "distinct_pairs_sharing_parents_by_round_from_one": [
+                41,
+                52,
+                68,
+                66,
+                43,
+                27,
+                19,
+                17,
+                11,
+                8,
+                5,
+                3,
+                0
+              ],
+              "chain_counts": [
+                1
+              ],
+              "twin_birth_round": 7,
+              "twin_witness_start_size_one": {
+                "rank": 8,
+                "births": [
+                  102,
+                  103
+                ],
+                "parents": [
+                  93,
+                  94
+                ],
+                "grandparent": 83,
+                "chain_base": 9
+              }
+            }
+          ],
+          "twin_birth_round": 7,
+          "saved_growth_end": "not run (time limit)",
+          "saved_growth_rounds": 0,
+          "prediction_status": "predicted",
+          "observed_end": "rounds",
+          "observed_rounds": 7,
+          "grown_births": [
+            15,
+            19,
+            21,
+            22,
+            23,
+            26,
+            30
+          ],
+          "predicted_births": [
+            15,
+            19,
+            21,
+            22,
+            23,
+            26,
+            30
+          ],
+          "grown_prefix_sha256": "c2e194be738de560defa173d970dc60eab4a16fff9d259199b2339997e51b024",
+          "predicted_prefix_sha256": "078fcd516aab4ce94b98a53bcefdf4bb3146f9edc42d96c8a2903eb058228705",
+          "first_difference": {
+            "n": null,
+            "sig0": 7,
+            "sig1": 7
+          },
+          "extra_grown_sig0_at_twin": [
+            [
+              [
+                "join",
+                4,
+                2,
+                6
+              ],
+              2
+            ],
+            [
+              [
+                "join",
+                5,
+                3,
+                8
+              ],
+              1
+            ]
+          ],
+          "extra_predicted_sig0_at_twin": [
+            [
+              [
+                "join",
+                4,
+                3,
+                7
+              ],
+              2
+            ],
+            [
+              [
+                "join",
+                5,
+                5,
+                10
+              ],
+              1
+            ]
+          ],
+          "saved_verdict": "growth not run",
+          "saved_least_rank": 7,
+          "cpu_seconds": 0.006
+        },
+        "parity": {
+          "pieces": [
+            {
+              "stop": "finished",
+              "starts": 9,
+              "non_start_births": 127,
+              "total_nodes": 136,
+              "knots_by_round_from_zero": [
+                9,
+                15,
+                18,
+                19,
+                17,
+                13,
+                10,
+                8,
+                8,
+                6,
+                5,
+                4,
+                3,
+                1
+              ],
+              "parent_pair_incidence_by_round_from_one": [
+                41,
+                52,
+                70,
+                76,
+                61,
+                32,
+                30,
+                19,
+                11,
+                8,
+                7,
+                3,
+                0
+              ],
+              "distinct_pairs_sharing_parents_by_round_from_one": [
+                41,
+                52,
+                68,
+                66,
+                43,
+                27,
+                19,
+                17,
+                11,
+                8,
+                5,
+                3,
+                0
+              ],
+              "chain_counts": [
+                1
+              ],
+              "twin_birth_round": 7,
+              "twin_witness_start_size_one": {
+                "rank": 8,
+                "births": [
+                  102,
+                  103
+                ],
+                "parents": [
+                  93,
+                  94
+                ],
+                "grandparent": 83,
+                "chain_base": 9
+              }
+            }
+          ],
+          "twin_birth_round": 7,
+          "saved_growth_end": "not run (time limit)",
+          "saved_growth_rounds": 0,
+          "prediction_status": "predicted",
+          "observed_end": "rounds",
+          "observed_rounds": 7,
+          "grown_births": [
+            15,
+            19,
+            21,
+            22,
+            23,
+            26,
+            30
+          ],
+          "predicted_births": [
+            15,
+            19,
+            21,
+            22,
+            23,
+            26,
+            30
+          ],
+          "grown_prefix_sha256": "c2e194be738de560defa173d970dc60eab4a16fff9d259199b2339997e51b024",
+          "predicted_prefix_sha256": "078fcd516aab4ce94b98a53bcefdf4bb3146f9edc42d96c8a2903eb058228705",
+          "first_difference": {
+            "n": null,
+            "sig0": 7,
+            "sig1": 7
+          },
+          "extra_grown_sig0_at_twin": [
+            [
+              [
+                "join",
+                4,
+                2,
+                6
+              ],
+              2
+            ],
+            [
+              [
+                "join",
+                5,
+                3,
+                8
+              ],
+              1
+            ]
+          ],
+          "extra_predicted_sig0_at_twin": [
+            [
+              [
+                "join",
+                4,
+                3,
+                7
+              ],
+              2
+            ],
+            [
+              [
+                "join",
+                5,
+                5,
+                10
+              ],
+              1
+            ]
+          ],
+          "saved_verdict": "growth not run",
+          "saved_least_rank": 7,
+          "cpu_seconds": 0.00685
+        }
+      }
+    },
+    {
+      "source": "twin9_draw.jsonl",
+      "line": 99,
+      "draw": 2351,
+      "weighting": "tree+",
+      "n_knots": 9,
+      "stars_sha256": "a7c93b6f21c7921e7255cbabbace372774955e5187f2a5f78b495318341fcd2e",
+      "laws": {
+        "nae": {
+          "pieces": [
+            {
+              "stop": "finished",
+              "starts": 9,
+              "non_start_births": 127,
+              "total_nodes": 136,
+              "knots_by_round_from_zero": [
+                9,
+                13,
+                16,
+                19,
+                19,
+                15,
+                10,
+                8,
+                8,
+                6,
+                5,
+                4,
+                3,
+                1
+              ],
+              "parent_pair_incidence_by_round_from_one": [
+                31,
+                48,
+                74,
+                98,
+                91,
+                38,
+                30,
+                19,
+                11,
+                8,
+                7,
+                3,
+                0
+              ],
+              "distinct_pairs_sharing_parents_by_round_from_one": [
+                31,
+                48,
+                72,
+                84,
+                58,
+                27,
+                19,
+                17,
+                11,
+                8,
+                5,
+                3,
+                0
+              ],
+              "chain_counts": [
+                1
+              ],
+              "twin_birth_round": 7,
+              "twin_witness_start_size_one": {
+                "rank": 8,
+                "births": [
+                  102,
+                  104
+                ],
+                "parents": [
+                  94,
+                  96
+                ],
+                "grandparent": 87,
+                "chain_base": 9
+              }
+            }
+          ],
+          "twin_birth_round": 7,
+          "saved_growth_end": "not run (time limit)",
+          "saved_growth_rounds": 0,
+          "prediction_status": "predicted",
+          "observed_end": "rounds",
+          "observed_rounds": 7,
+          "grown_births": [
+            13,
+            17,
+            21,
+            23,
+            23,
+            24,
+            28
+          ],
+          "predicted_births": [
+            13,
+            17,
+            21,
+            23,
+            23,
+            24,
+            28
+          ],
+          "grown_prefix_sha256": "0856c051a755b5e259e6f5d8bd3baf216060f943f978876dcaac349a395aa108",
+          "predicted_prefix_sha256": "904beb39cd90ac7c2c5084cf6f7de0ea5c22c4133ab389bd62dcf7a396f412b2",
+          "first_difference": {
+            "n": null,
+            "sig0": 7,
+            "sig1": 7
+          },
+          "extra_grown_sig0_at_twin": [
+            [
+              [
+                "join",
+                4,
+                2,
+                6
+              ],
+              2
+            ],
+            [
+              [
+                "join",
+                5,
+                3,
+                8
+              ],
+              1
+            ]
+          ],
+          "extra_predicted_sig0_at_twin": [
+            [
+              [
+                "join",
+                4,
+                3,
+                7
+              ],
+              2
+            ],
+            [
+              [
+                "join",
+                5,
+                5,
+                10
+              ],
+              1
+            ]
+          ],
+          "saved_verdict": "growth not run",
+          "saved_least_rank": 7,
+          "cpu_seconds": 0.00597
+        },
+        "parity": {
+          "pieces": [
+            {
+              "stop": "finished",
+              "starts": 9,
+              "non_start_births": 127,
+              "total_nodes": 136,
+              "knots_by_round_from_zero": [
+                9,
+                13,
+                16,
+                19,
+                19,
+                15,
+                10,
+                8,
+                8,
+                6,
+                5,
+                4,
+                3,
+                1
+              ],
+              "parent_pair_incidence_by_round_from_one": [
+                31,
+                48,
+                74,
+                98,
+                91,
+                38,
+                30,
+                19,
+                11,
+                8,
+                7,
+                3,
+                0
+              ],
+              "distinct_pairs_sharing_parents_by_round_from_one": [
+                31,
+                48,
+                72,
+                84,
+                58,
+                27,
+                19,
+                17,
+                11,
+                8,
+                5,
+                3,
+                0
+              ],
+              "chain_counts": [
+                1
+              ],
+              "twin_birth_round": 7,
+              "twin_witness_start_size_one": {
+                "rank": 8,
+                "births": [
+                  102,
+                  104
+                ],
+                "parents": [
+                  94,
+                  96
+                ],
+                "grandparent": 87,
+                "chain_base": 9
+              }
+            }
+          ],
+          "twin_birth_round": 7,
+          "saved_growth_end": "not run (time limit)",
+          "saved_growth_rounds": 0,
+          "prediction_status": "predicted",
+          "observed_end": "rounds",
+          "observed_rounds": 7,
+          "grown_births": [
+            13,
+            17,
+            21,
+            23,
+            23,
+            24,
+            28
+          ],
+          "predicted_births": [
+            13,
+            17,
+            21,
+            23,
+            23,
+            24,
+            28
+          ],
+          "grown_prefix_sha256": "0856c051a755b5e259e6f5d8bd3baf216060f943f978876dcaac349a395aa108",
+          "predicted_prefix_sha256": "904beb39cd90ac7c2c5084cf6f7de0ea5c22c4133ab389bd62dcf7a396f412b2",
+          "first_difference": {
+            "n": null,
+            "sig0": 7,
+            "sig1": 7
+          },
+          "extra_grown_sig0_at_twin": [
+            [
+              [
+                "join",
+                4,
+                2,
+                6
+              ],
+              2
+            ],
+            [
+              [
+                "join",
+                5,
+                3,
+                8
+              ],
+              1
+            ]
+          ],
+          "extra_predicted_sig0_at_twin": [
+            [
+              [
+                "join",
+                4,
+                3,
+                7
+              ],
+              2
+            ],
+            [
+              [
+                "join",
+                5,
+                5,
+                10
+              ],
+              1
+            ]
+          ],
+          "saved_verdict": "growth not run",
+          "saved_least_rank": 7,
+          "cpu_seconds": 0.006
+        }
+      }
+    },
+    {
+      "source": "twin9_draw.jsonl",
+      "line": 102,
+      "draw": 3342,
+      "weighting": "tree+",
+      "n_knots": 9,
+      "stars_sha256": "8e3f06e9fa9078d046222a1efa96f87c1274be86fb1ddef6cb6ad87469204da6",
+      "laws": {
+        "nae": {
+          "pieces": [
+            {
+              "stop": "finished",
+              "starts": 9,
+              "non_start_births": 127,
+              "total_nodes": 136,
+              "knots_by_round_from_zero": [
+                9,
+                13,
+                16,
+                19,
+                19,
+                15,
+                10,
+                8,
+                8,
+                6,
+                5,
+                4,
+                3,
+                1
+              ],
+              "parent_pair_incidence_by_round_from_one": [
+                31,
+                48,
+                74,
+                98,
+                91,
+                38,
+                30,
+                19,
+                11,
+                8,
+                7,
+                3,
+                0
+              ],
+              "distinct_pairs_sharing_parents_by_round_from_one": [
+                31,
+                48,
+                72,
+                84,
+                58,
+                27,
+                19,
+                17,
+                11,
+                8,
+                5,
+                3,
+                0
+              ],
+              "chain_counts": [
+                1
+              ],
+              "twin_birth_round": 7,
+              "twin_witness_start_size_one": {
+                "rank": 8,
+                "births": [
+                  102,
+                  104
+                ],
+                "parents": [
+                  94,
+                  95
+                ],
+                "grandparent": 87,
+                "chain_base": 9
+              }
+            }
+          ],
+          "twin_birth_round": 7,
+          "saved_growth_end": "not run (time limit)",
+          "saved_growth_rounds": 0,
+          "prediction_status": "predicted",
+          "observed_end": "rounds",
+          "observed_rounds": 7,
+          "grown_births": [
+            13,
+            17,
+            21,
+            23,
+            23,
+            24,
+            28
+          ],
+          "predicted_births": [
+            13,
+            17,
+            21,
+            23,
+            23,
+            24,
+            28
+          ],
+          "grown_prefix_sha256": "4ae9e72ff1f65f94dfbf7f29adc9b6f721b6f4dec2c4723ca5e527ee387118a8",
+          "predicted_prefix_sha256": "e7e430db6cc2510e23ff8965bd3ca8f123e609920b3ff1a357d18914550a7c0a",
+          "first_difference": {
+            "n": null,
+            "sig0": 7,
+            "sig1": 7
+          },
+          "extra_grown_sig0_at_twin": [
+            [
+              [
+                "join",
+                4,
+                2,
+                6
+              ],
+              2
+            ],
+            [
+              [
+                "join",
+                5,
+                3,
+                8
+              ],
+              1
+            ]
+          ],
+          "extra_predicted_sig0_at_twin": [
+            [
+              [
+                "join",
+                4,
+                3,
+                7
+              ],
+              2
+            ],
+            [
+              [
+                "join",
+                5,
+                5,
+                10
+              ],
+              1
+            ]
+          ],
+          "saved_verdict": "growth not run",
+          "saved_least_rank": 7,
+          "cpu_seconds": 0.006
+        },
+        "parity": {
+          "pieces": [
+            {
+              "stop": "finished",
+              "starts": 9,
+              "non_start_births": 127,
+              "total_nodes": 136,
+              "knots_by_round_from_zero": [
+                9,
+                13,
+                16,
+                19,
+                19,
+                15,
+                10,
+                8,
+                8,
+                6,
+                5,
+                4,
+                3,
+                1
+              ],
+              "parent_pair_incidence_by_round_from_one": [
+                31,
+                48,
+                74,
+                98,
+                91,
+                38,
+                30,
+                19,
+                11,
+                8,
+                7,
+                3,
+                0
+              ],
+              "distinct_pairs_sharing_parents_by_round_from_one": [
+                31,
+                48,
+                72,
+                84,
+                58,
+                27,
+                19,
+                17,
+                11,
+                8,
+                5,
+                3,
+                0
+              ],
+              "chain_counts": [
+                1
+              ],
+              "twin_birth_round": 7,
+              "twin_witness_start_size_one": {
+                "rank": 8,
+                "births": [
+                  102,
+                  104
+                ],
+                "parents": [
+                  94,
+                  95
+                ],
+                "grandparent": 87,
+                "chain_base": 9
+              }
+            }
+          ],
+          "twin_birth_round": 7,
+          "saved_growth_end": "not run (time limit)",
+          "saved_growth_rounds": 0,
+          "prediction_status": "predicted",
+          "observed_end": "rounds",
+          "observed_rounds": 7,
+          "grown_births": [
+            13,
+            17,
+            21,
+            23,
+            23,
+            24,
+            28
+          ],
+          "predicted_births": [
+            13,
+            17,
+            21,
+            23,
+            23,
+            24,
+            28
+          ],
+          "grown_prefix_sha256": "4ae9e72ff1f65f94dfbf7f29adc9b6f721b6f4dec2c4723ca5e527ee387118a8",
+          "predicted_prefix_sha256": "e7e430db6cc2510e23ff8965bd3ca8f123e609920b3ff1a357d18914550a7c0a",
+          "first_difference": {
+            "n": null,
+            "sig0": 7,
+            "sig1": 7
+          },
+          "extra_grown_sig0_at_twin": [
+            [
+              [
+                "join",
+                4,
+                2,
+                6
+              ],
+              2
+            ],
+            [
+              [
+                "join",
+                5,
+                3,
+                8
+              ],
+              1
+            ]
+          ],
+          "extra_predicted_sig0_at_twin": [
+            [
+              [
+                "join",
+                4,
+                3,
+                7
+              ],
+              2
+            ],
+            [
+              [
+                "join",
+                5,
+                5,
+                10
+              ],
+              1
+            ]
+          ],
+          "saved_verdict": "growth not run",
+          "saved_least_rank": 7,
+          "cpu_seconds": 0.006
+        }
+      }
+    },
+    {
+      "source": "twin9_draw.jsonl",
+      "line": 106,
+      "draw": 3713,
+      "weighting": "tree+",
+      "n_knots": 9,
+      "stars_sha256": "76512aa5ce3b46d4aeaf568e151ebc189b9c327b23636fadd38d49b61bc4e9d5",
+      "laws": {
+        "nae": {
+          "pieces": [
+            {
+              "stop": "finished",
+              "starts": 9,
+              "non_start_births": 127,
+              "total_nodes": 136,
+              "knots_by_round_from_zero": [
+                9,
+                13,
+                16,
+                19,
+                19,
+                15,
+                10,
+                8,
+                8,
+                6,
+                5,
+                4,
+                3,
+                1
+              ],
+              "parent_pair_incidence_by_round_from_one": [
+                31,
+                48,
+                74,
+                98,
+                91,
+                38,
+                30,
+                19,
+                11,
+                8,
+                7,
+                3,
+                0
+              ],
+              "distinct_pairs_sharing_parents_by_round_from_one": [
+                31,
+                48,
+                72,
+                84,
+                58,
+                27,
+                19,
+                17,
+                11,
+                8,
+                5,
+                3,
+                0
+              ],
+              "chain_counts": [
+                1
+              ],
+              "twin_birth_round": 7,
+              "twin_witness_start_size_one": {
+                "rank": 8,
+                "births": [
+                  102,
+                  104
+                ],
+                "parents": [
+                  94,
+                  96
+                ],
+                "grandparent": 87,
+                "chain_base": 9
+              }
+            }
+          ],
+          "twin_birth_round": 7,
+          "saved_growth_end": "not run (time limit)",
+          "saved_growth_rounds": 0,
+          "prediction_status": "predicted",
+          "observed_end": "rounds",
+          "observed_rounds": 7,
+          "grown_births": [
+            13,
+            17,
+            21,
+            23,
+            23,
+            24,
+            28
+          ],
+          "predicted_births": [
+            13,
+            17,
+            21,
+            23,
+            23,
+            24,
+            28
+          ],
+          "grown_prefix_sha256": "ca11690fe2b73bd74964ab7f165710805d8a8bd66986f2301f52b3dca295cb21",
+          "predicted_prefix_sha256": "3a26db266c846709eac612a24e1da8503239a25ec1dba99c8239c999cbc34790",
+          "first_difference": {
+            "n": null,
+            "sig0": 7,
+            "sig1": 7
+          },
+          "extra_grown_sig0_at_twin": [
+            [
+              [
+                "join",
+                4,
+                2,
+                6
+              ],
+              2
+            ],
+            [
+              [
+                "join",
+                5,
+                3,
+                8
+              ],
+              1
+            ]
+          ],
+          "extra_predicted_sig0_at_twin": [
+            [
+              [
+                "join",
+                4,
+                3,
+                7
+              ],
+              2
+            ],
+            [
+              [
+                "join",
+                5,
+                5,
+                10
+              ],
+              1
+            ]
+          ],
+          "saved_verdict": "growth not run",
+          "saved_least_rank": 7,
+          "cpu_seconds": 0.006
+        },
+        "parity": {
+          "pieces": [
+            {
+              "stop": "finished",
+              "starts": 9,
+              "non_start_births": 127,
+              "total_nodes": 136,
+              "knots_by_round_from_zero": [
+                9,
+                13,
+                16,
+                19,
+                19,
+                15,
+                10,
+                8,
+                8,
+                6,
+                5,
+                4,
+                3,
+                1
+              ],
+              "parent_pair_incidence_by_round_from_one": [
+                31,
+                48,
+                74,
+                98,
+                91,
+                38,
+                30,
+                19,
+                11,
+                8,
+                7,
+                3,
+                0
+              ],
+              "distinct_pairs_sharing_parents_by_round_from_one": [
+                31,
+                48,
+                72,
+                84,
+                58,
+                27,
+                19,
+                17,
+                11,
+                8,
+                5,
+                3,
+                0
+              ],
+              "chain_counts": [
+                1
+              ],
+              "twin_birth_round": 7,
+              "twin_witness_start_size_one": {
+                "rank": 8,
+                "births": [
+                  102,
+                  104
+                ],
+                "parents": [
+                  94,
+                  96
+                ],
+                "grandparent": 87,
+                "chain_base": 9
+              }
+            }
+          ],
+          "twin_birth_round": 7,
+          "saved_growth_end": "not run (time limit)",
+          "saved_growth_rounds": 0,
+          "prediction_status": "predicted",
+          "observed_end": "rounds",
+          "observed_rounds": 7,
+          "grown_births": [
+            13,
+            17,
+            21,
+            23,
+            23,
+            24,
+            28
+          ],
+          "predicted_births": [
+            13,
+            17,
+            21,
+            23,
+            23,
+            24,
+            28
+          ],
+          "grown_prefix_sha256": "ca11690fe2b73bd74964ab7f165710805d8a8bd66986f2301f52b3dca295cb21",
+          "predicted_prefix_sha256": "3a26db266c846709eac612a24e1da8503239a25ec1dba99c8239c999cbc34790",
+          "first_difference": {
+            "n": null,
+            "sig0": 7,
+            "sig1": 7
+          },
+          "extra_grown_sig0_at_twin": [
+            [
+              [
+                "join",
+                4,
+                2,
+                6
+              ],
+              2
+            ],
+            [
+              [
+                "join",
+                5,
+                3,
+                8
+              ],
+              1
+            ]
+          ],
+          "extra_predicted_sig0_at_twin": [
+            [
+              [
+                "join",
+                4,
+                3,
+                7
+              ],
+              2
+            ],
+            [
+              [
+                "join",
+                5,
+                5,
+                10
+              ],
+              1
+            ]
+          ],
+          "saved_verdict": "growth not run",
+          "saved_least_rank": 7,
+          "cpu_seconds": 0.006
+        }
+      }
+    },
+    {
+      "source": "twin9_draw.jsonl",
+      "line": 112,
+      "draw": 6489,
+      "weighting": "tree+",
+      "n_knots": 9,
+      "stars_sha256": "aaf4bfb42159ac9a7d521fcd1f967dd246b9ff24a037e3c53862dddb2e3dd891",
+      "laws": {
+        "nae": {
+          "pieces": [
+            {
+              "stop": "finished",
+              "starts": 9,
+              "non_start_births": 127,
+              "total_nodes": 136,
+              "knots_by_round_from_zero": [
+                9,
+                13,
+                16,
+                19,
+                19,
+                15,
+                10,
+                8,
+                8,
+                6,
+                5,
+                4,
+                3,
+                1
+              ],
+              "parent_pair_incidence_by_round_from_one": [
+                31,
+                48,
+                74,
+                98,
+                91,
+                38,
+                30,
+                19,
+                11,
+                8,
+                7,
+                3,
+                0
+              ],
+              "distinct_pairs_sharing_parents_by_round_from_one": [
+                31,
+                48,
+                72,
+                84,
+                58,
+                27,
+                19,
+                17,
+                11,
+                8,
+                5,
+                3,
+                0
+              ],
+              "chain_counts": [
+                1
+              ],
+              "twin_birth_round": 7,
+              "twin_witness_start_size_one": {
+                "rank": 8,
+                "births": [
+                  102,
+                  104
+                ],
+                "parents": [
+                  94,
+                  96
+                ],
+                "grandparent": 87,
+                "chain_base": 9
+              }
+            }
+          ],
+          "twin_birth_round": 7,
+          "saved_growth_end": "not run (time limit)",
+          "saved_growth_rounds": 0,
+          "prediction_status": "predicted",
+          "observed_end": "rounds",
+          "observed_rounds": 7,
+          "grown_births": [
+            13,
+            17,
+            21,
+            23,
+            23,
+            24,
+            28
+          ],
+          "predicted_births": [
+            13,
+            17,
+            21,
+            23,
+            23,
+            24,
+            28
+          ],
+          "grown_prefix_sha256": "8eb6238457702e23e4eafd3a74cdcad98f69f636442d3619289e807298e9d78d",
+          "predicted_prefix_sha256": "abdc73fc63dcccc40233ee5585a2a8ce9d58974271bb256849869c3f17249583",
+          "first_difference": {
+            "n": null,
+            "sig0": 7,
+            "sig1": 7
+          },
+          "extra_grown_sig0_at_twin": [
+            [
+              [
+                "join",
+                4,
+                2,
+                6
+              ],
+              2
+            ],
+            [
+              [
+                "join",
+                5,
+                3,
+                8
+              ],
+              1
+            ]
+          ],
+          "extra_predicted_sig0_at_twin": [
+            [
+              [
+                "join",
+                4,
+                3,
+                7
+              ],
+              2
+            ],
+            [
+              [
+                "join",
+                5,
+                5,
+                10
+              ],
+              1
+            ]
+          ],
+          "saved_verdict": "growth not run",
+          "saved_least_rank": 7,
+          "cpu_seconds": 0.006
+        },
+        "parity": {
+          "pieces": [
+            {
+              "stop": "finished",
+              "starts": 9,
+              "non_start_births": 127,
+              "total_nodes": 136,
+              "knots_by_round_from_zero": [
+                9,
+                13,
+                16,
+                19,
+                19,
+                15,
+                10,
+                8,
+                8,
+                6,
+                5,
+                4,
+                3,
+                1
+              ],
+              "parent_pair_incidence_by_round_from_one": [
+                31,
+                48,
+                74,
+                98,
+                91,
+                38,
+                30,
+                19,
+                11,
+                8,
+                7,
+                3,
+                0
+              ],
+              "distinct_pairs_sharing_parents_by_round_from_one": [
+                31,
+                48,
+                72,
+                84,
+                58,
+                27,
+                19,
+                17,
+                11,
+                8,
+                5,
+                3,
+                0
+              ],
+              "chain_counts": [
+                1
+              ],
+              "twin_birth_round": 7,
+              "twin_witness_start_size_one": {
+                "rank": 8,
+                "births": [
+                  102,
+                  104
+                ],
+                "parents": [
+                  94,
+                  96
+                ],
+                "grandparent": 87,
+                "chain_base": 9
+              }
+            }
+          ],
+          "twin_birth_round": 7,
+          "saved_growth_end": "not run (time limit)",
+          "saved_growth_rounds": 0,
+          "prediction_status": "predicted",
+          "observed_end": "rounds",
+          "observed_rounds": 7,
+          "grown_births": [
+            13,
+            17,
+            21,
+            23,
+            23,
+            24,
+            28
+          ],
+          "predicted_births": [
+            13,
+            17,
+            21,
+            23,
+            23,
+            24,
+            28
+          ],
+          "grown_prefix_sha256": "8eb6238457702e23e4eafd3a74cdcad98f69f636442d3619289e807298e9d78d",
+          "predicted_prefix_sha256": "abdc73fc63dcccc40233ee5585a2a8ce9d58974271bb256849869c3f17249583",
+          "first_difference": {
+            "n": null,
+            "sig0": 7,
+            "sig1": 7
+          },
+          "extra_grown_sig0_at_twin": [
+            [
+              [
+                "join",
+                4,
+                2,
+                6
+              ],
+              2
+            ],
+            [
+              [
+                "join",
+                5,
+                3,
+                8
+              ],
+              1
+            ]
+          ],
+          "extra_predicted_sig0_at_twin": [
+            [
+              [
+                "join",
+                4,
+                3,
+                7
+              ],
+              2
+            ],
+            [
+              [
+                "join",
+                5,
+                5,
+                10
+              ],
+              1
+            ]
+          ],
+          "saved_verdict": "growth not run",
+          "saved_least_rank": 7,
+          "cpu_seconds": 0.00598
+        }
+      }
+    },
+    {
+      "source": "twin9_draw.jsonl",
+      "line": 113,
+      "draw": 6744,
+      "weighting": "tree+",
+      "n_knots": 9,
+      "stars_sha256": "61a2bb36aa3033413076cb4ee08c0edb11aa23a6285320d6772353f353cc0cf3",
+      "laws": {
+        "nae": {
+          "pieces": [
+            {
+              "stop": "finished",
+              "starts": 9,
+              "non_start_births": 127,
+              "total_nodes": 136,
+              "knots_by_round_from_zero": [
+                9,
+                15,
+                18,
+                19,
+                17,
+                13,
+                10,
+                8,
+                8,
+                6,
+                5,
+                4,
+                3,
+                1
+              ],
+              "parent_pair_incidence_by_round_from_one": [
+                41,
+                52,
+                70,
+                76,
+                61,
+                32,
+                30,
+                19,
+                11,
+                8,
+                7,
+                3,
+                0
+              ],
+              "distinct_pairs_sharing_parents_by_round_from_one": [
+                41,
+                52,
+                68,
+                66,
+                43,
+                27,
+                19,
+                17,
+                11,
+                8,
+                5,
+                3,
+                0
+              ],
+              "chain_counts": [
+                1
+              ],
+              "twin_birth_round": 7,
+              "twin_witness_start_size_one": {
+                "rank": 8,
+                "births": [
+                  102,
+                  103
+                ],
+                "parents": [
+                  93,
+                  94
+                ],
+                "grandparent": 83,
+                "chain_base": 9
+              }
+            }
+          ],
+          "twin_birth_round": 7,
+          "saved_growth_end": "not run (time limit)",
+          "saved_growth_rounds": 0,
+          "prediction_status": "predicted",
+          "observed_end": "rounds",
+          "observed_rounds": 7,
+          "grown_births": [
+            15,
+            19,
+            21,
+            22,
+            23,
+            26,
+            30
+          ],
+          "predicted_births": [
+            15,
+            19,
+            21,
+            22,
+            23,
+            26,
+            30
+          ],
+          "grown_prefix_sha256": "c26b9903cf9532009478cdacb5968d398aaa7b2bed1aa45d08e11f1ea9bbd23d",
+          "predicted_prefix_sha256": "6787c5a75ba57c63a9126393df8b5afdb9311f1bcb5b23d194d201bd9a8a7d43",
+          "first_difference": {
+            "n": null,
+            "sig0": 7,
+            "sig1": 7
+          },
+          "extra_grown_sig0_at_twin": [
+            [
+              [
+                "join",
+                4,
+                2,
+                6
+              ],
+              2
+            ],
+            [
+              [
+                "join",
+                5,
+                3,
+                8
+              ],
+              1
+            ]
+          ],
+          "extra_predicted_sig0_at_twin": [
+            [
+              [
+                "join",
+                4,
+                3,
+                7
+              ],
+              2
+            ],
+            [
+              [
+                "join",
+                5,
+                5,
+                10
+              ],
+              1
+            ]
+          ],
+          "saved_verdict": "growth not run",
+          "saved_least_rank": 7,
+          "cpu_seconds": 0.006
+        },
+        "parity": {
+          "pieces": [
+            {
+              "stop": "finished",
+              "starts": 9,
+              "non_start_births": 127,
+              "total_nodes": 136,
+              "knots_by_round_from_zero": [
+                9,
+                15,
+                18,
+                19,
+                17,
+                13,
+                10,
+                8,
+                8,
+                6,
+                5,
+                4,
+                3,
+                1
+              ],
+              "parent_pair_incidence_by_round_from_one": [
+                41,
+                52,
+                70,
+                76,
+                61,
+                32,
+                30,
+                19,
+                11,
+                8,
+                7,
+                3,
+                0
+              ],
+              "distinct_pairs_sharing_parents_by_round_from_one": [
+                41,
+                52,
+                68,
+                66,
+                43,
+                27,
+                19,
+                17,
+                11,
+                8,
+                5,
+                3,
+                0
+              ],
+              "chain_counts": [
+                1
+              ],
+              "twin_birth_round": 7,
+              "twin_witness_start_size_one": {
+                "rank": 8,
+                "births": [
+                  102,
+                  103
+                ],
+                "parents": [
+                  93,
+                  94
+                ],
+                "grandparent": 83,
+                "chain_base": 9
+              }
+            }
+          ],
+          "twin_birth_round": 7,
+          "saved_growth_end": "not run (time limit)",
+          "saved_growth_rounds": 0,
+          "prediction_status": "predicted",
+          "observed_end": "rounds",
+          "observed_rounds": 7,
+          "grown_births": [
+            15,
+            19,
+            21,
+            22,
+            23,
+            26,
+            30
+          ],
+          "predicted_births": [
+            15,
+            19,
+            21,
+            22,
+            23,
+            26,
+            30
+          ],
+          "grown_prefix_sha256": "c26b9903cf9532009478cdacb5968d398aaa7b2bed1aa45d08e11f1ea9bbd23d",
+          "predicted_prefix_sha256": "6787c5a75ba57c63a9126393df8b5afdb9311f1bcb5b23d194d201bd9a8a7d43",
+          "first_difference": {
+            "n": null,
+            "sig0": 7,
+            "sig1": 7
+          },
+          "extra_grown_sig0_at_twin": [
+            [
+              [
+                "join",
+                4,
+                2,
+                6
+              ],
+              2
+            ],
+            [
+              [
+                "join",
+                5,
+                3,
+                8
+              ],
+              1
+            ]
+          ],
+          "extra_predicted_sig0_at_twin": [
+            [
+              [
+                "join",
+                4,
+                3,
+                7
+              ],
+              2
+            ],
+            [
+              [
+                "join",
+                5,
+                5,
+                10
+              ],
+              1
+            ]
+          ],
+          "saved_verdict": "growth not run",
+          "saved_least_rank": 7,
+          "cpu_seconds": 0.006
+        }
+      }
+    },
+    {
+      "source": "twin8_draw.jsonl",
+      "line": 83,
+      "draw": 865,
+      "weighting": "tree+s50",
+      "n_knots": 8,
+      "stars_sha256": "3e340516189844deaa5a1a3f48c10b130164aeee3695889717ddef5973e36197",
+      "laws": {
+        "nae": {
+          "pieces": [
+            {
+              "stop": "finished",
+              "starts": 8,
+              "non_start_births": 195,
+              "total_nodes": 203,
+              "knots_by_round_from_zero": [
+                8,
+                15,
+                21,
+                25,
+                24,
+                25,
+                28,
+                22,
+                16,
+                8,
+                6,
+                4,
+                1
+              ],
+              "parent_pair_incidence_by_round_from_one": [
+                42,
+                68,
+                91,
+                96,
+                175,
+                430,
+                418,
+                330,
+                63,
+                12,
+                6,
+                0
+              ],
+              "distinct_pairs_sharing_parents_by_round_from_one": [
+                42,
+                68,
+                89,
+                90,
+                131,
+                208,
+                146,
+                78,
+                20,
+                12,
+                6,
+                0
+              ],
+              "chain_counts": [
+                1
+              ],
+              "twin_birth_round": 7,
+              "twin_witness_start_size_one": {
+                "rank": 8,
+                "births": [
+                  146,
+                  159
+                ],
+                "parents": [
+                  140,
+                  141
+                ],
+                "grandparent": 98,
+                "chain_base": 8
+              }
+            }
+          ],
+          "twin_birth_round": 7,
+          "saved_growth_end": "not run (time limit)",
+          "saved_growth_rounds": 0,
+          "prediction_status": "predicted",
+          "observed_end": "rounds",
+          "observed_rounds": 7,
+          "grown_births": [
+            15,
+            22,
+            27,
+            28,
+            32,
+            40,
+            41
+          ],
+          "predicted_births": [
+            15,
+            22,
+            27,
+            28,
+            32,
+            40,
+            41
+          ],
+          "grown_prefix_sha256": "3593f7070765bdad0b04d9c89f9c03b5f625c49ca19025e19ca524a39099c34c",
+          "predicted_prefix_sha256": "27d098c99486ad7aa8c09dd1704128c864d6de6320958989bc79efac735acc0a",
+          "first_difference": {
+            "n": null,
+            "sig0": 7,
+            "sig1": 7
+          },
+          "extra_grown_sig0_at_twin": [
+            [
+              [
+                "join",
+                4,
+                7,
+                11
+              ],
+              2
+            ],
+            [
+              [
+                "join",
+                4,
+                10,
+                14
+              ],
+              2
+            ]
+          ],
+          "extra_predicted_sig0_at_twin": [
+            [
+              [
+                "join",
+                4,
+                6,
+                10
+              ],
+              2
+            ],
+            [
+              [
+                "join",
+                4,
+                8,
+                12
+              ],
+              2
+            ]
+          ],
+          "saved_verdict": "growth not run",
+          "saved_least_rank": 7,
+          "cpu_seconds": 0.009
+        },
+        "parity": {
+          "pieces": [
+            {
+              "stop": "finished",
+              "starts": 8,
+              "non_start_births": 195,
+              "total_nodes": 203,
+              "knots_by_round_from_zero": [
+                8,
+                15,
+                21,
+                25,
+                24,
+                25,
+                28,
+                22,
+                16,
+                8,
+                6,
+                4,
+                1
+              ],
+              "parent_pair_incidence_by_round_from_one": [
+                42,
+                68,
+                91,
+                96,
+                175,
+                430,
+                418,
+                330,
+                63,
+                12,
+                6,
+                0
+              ],
+              "distinct_pairs_sharing_parents_by_round_from_one": [
+                42,
+                68,
+                89,
+                90,
+                131,
+                208,
+                146,
+                78,
+                20,
+                12,
+                6,
+                0
+              ],
+              "chain_counts": [
+                1
+              ],
+              "twin_birth_round": 7,
+              "twin_witness_start_size_one": {
+                "rank": 8,
+                "births": [
+                  146,
+                  159
+                ],
+                "parents": [
+                  140,
+                  141
+                ],
+                "grandparent": 98,
+                "chain_base": 8
+              }
+            }
+          ],
+          "twin_birth_round": 7,
+          "saved_growth_end": "not run (time limit)",
+          "saved_growth_rounds": 0,
+          "prediction_status": "predicted",
+          "observed_end": "rounds",
+          "observed_rounds": 7,
+          "grown_births": [
+            15,
+            22,
+            27,
+            28,
+            32,
+            40,
+            41
+          ],
+          "predicted_births": [
+            15,
+            22,
+            27,
+            28,
+            32,
+            40,
+            41
+          ],
+          "grown_prefix_sha256": "3593f7070765bdad0b04d9c89f9c03b5f625c49ca19025e19ca524a39099c34c",
+          "predicted_prefix_sha256": "27d098c99486ad7aa8c09dd1704128c864d6de6320958989bc79efac735acc0a",
+          "first_difference": {
+            "n": null,
+            "sig0": 7,
+            "sig1": 7
+          },
+          "extra_grown_sig0_at_twin": [
+            [
+              [
+                "join",
+                4,
+                7,
+                11
+              ],
+              2
+            ],
+            [
+              [
+                "join",
+                4,
+                10,
+                14
+              ],
+              2
+            ]
+          ],
+          "extra_predicted_sig0_at_twin": [
+            [
+              [
+                "join",
+                4,
+                6,
+                10
+              ],
+              2
+            ],
+            [
+              [
+                "join",
+                4,
+                8,
+                12
+              ],
+              2
+            ]
+          ],
+          "saved_verdict": "growth not run",
+          "saved_least_rank": 7,
+          "cpu_seconds": 0.009
+        }
+      }
+    },
+    {
+      "source": "twin8_draw.jsonl",
+      "line": 90,
+      "draw": 4530,
+      "weighting": "tree+s50",
+      "n_knots": 8,
+      "stars_sha256": "57a56b61eb5daff1654545d86fc618b68fe1487283979d05b9b5c1297ec924c0",
+      "laws": {
+        "nae": {
+          "pieces": [
+            {
+              "stop": "finished",
+              "starts": 8,
+              "non_start_births": 123,
+              "total_nodes": 131,
+              "knots_by_round_from_zero": [
+                8,
+                14,
+                16,
+                18,
+                17,
+                13,
+                10,
+                8,
+                8,
+                6,
+                5,
+                4,
+                3,
+                1
+              ],
+              "parent_pair_incidence_by_round_from_one": [
+                37,
+                45,
+                67,
+                76,
+                61,
+                32,
+                30,
+                19,
+                11,
+                8,
+                7,
+                3,
+                0
+              ],
+              "distinct_pairs_sharing_parents_by_round_from_one": [
+                37,
+                45,
+                65,
+                66,
+                43,
+                27,
+                19,
+                17,
+                11,
+                8,
+                5,
+                3,
+                0
+              ],
+              "chain_counts": [
+                1
+              ],
+              "twin_birth_round": 7,
+              "twin_witness_start_size_one": {
+                "rank": 8,
+                "births": [
+                  97,
+                  99
+                ],
+                "parents": [
+                  89,
+                  90
+                ],
+                "grandparent": 76,
+                "chain_base": 9
+              }
+            }
+          ],
+          "twin_birth_round": 7,
+          "saved_growth_end": "not run (time limit)",
+          "saved_growth_rounds": 0,
+          "prediction_status": "predicted",
+          "observed_end": "rounds",
+          "observed_rounds": 7,
+          "grown_births": [
+            14,
+            17,
+            20,
+            22,
+            23,
+            26,
+            30
+          ],
+          "predicted_births": [
+            14,
+            17,
+            20,
+            22,
+            23,
+            26,
+            30
+          ],
+          "grown_prefix_sha256": "e773efa586eb4cb5fd1227b00d5e30145d1fab25a2f1d17b33ec0bdb2a4190ae",
+          "predicted_prefix_sha256": "5890f027310131f6560ebe41da4218e0bfe739cd1d425a52ff5aa4fcb437b02c",
+          "first_difference": {
+            "n": null,
+            "sig0": 7,
+            "sig1": 7
+          },
+          "extra_grown_sig0_at_twin": [
+            [
+              [
+                "join",
+                4,
+                2,
+                6
+              ],
+              2
+            ],
+            [
+              [
+                "join",
+                5,
+                3,
+                8
+              ],
+              1
+            ]
+          ],
+          "extra_predicted_sig0_at_twin": [
+            [
+              [
+                "join",
+                4,
+                3,
+                7
+              ],
+              2
+            ],
+            [
+              [
+                "join",
+                5,
+                5,
+                10
+              ],
+              1
+            ]
+          ],
+          "saved_verdict": "growth not run",
+          "saved_least_rank": 7,
+          "cpu_seconds": 0.006
+        },
+        "parity": {
+          "pieces": [
+            {
+              "stop": "finished",
+              "starts": 8,
+              "non_start_births": 123,
+              "total_nodes": 131,
+              "knots_by_round_from_zero": [
+                8,
+                14,
+                16,
+                18,
+                17,
+                13,
+                10,
+                8,
+                8,
+                6,
+                5,
+                4,
+                3,
+                1
+              ],
+              "parent_pair_incidence_by_round_from_one": [
+                37,
+                45,
+                67,
+                76,
+                61,
+                32,
+                30,
+                19,
+                11,
+                8,
+                7,
+                3,
+                0
+              ],
+              "distinct_pairs_sharing_parents_by_round_from_one": [
+                37,
+                45,
+                65,
+                66,
+                43,
+                27,
+                19,
+                17,
+                11,
+                8,
+                5,
+                3,
+                0
+              ],
+              "chain_counts": [
+                1
+              ],
+              "twin_birth_round": 7,
+              "twin_witness_start_size_one": {
+                "rank": 8,
+                "births": [
+                  97,
+                  99
+                ],
+                "parents": [
+                  89,
+                  90
+                ],
+                "grandparent": 76,
+                "chain_base": 9
+              }
+            }
+          ],
+          "twin_birth_round": 7,
+          "saved_growth_end": "not run (time limit)",
+          "saved_growth_rounds": 0,
+          "prediction_status": "predicted",
+          "observed_end": "rounds",
+          "observed_rounds": 7,
+          "grown_births": [
+            14,
+            17,
+            20,
+            22,
+            23,
+            26,
+            30
+          ],
+          "predicted_births": [
+            14,
+            17,
+            20,
+            22,
+            23,
+            26,
+            30
+          ],
+          "grown_prefix_sha256": "e773efa586eb4cb5fd1227b00d5e30145d1fab25a2f1d17b33ec0bdb2a4190ae",
+          "predicted_prefix_sha256": "5890f027310131f6560ebe41da4218e0bfe739cd1d425a52ff5aa4fcb437b02c",
+          "first_difference": {
+            "n": null,
+            "sig0": 7,
+            "sig1": 7
+          },
+          "extra_grown_sig0_at_twin": [
+            [
+              [
+                "join",
+                4,
+                2,
+                6
+              ],
+              2
+            ],
+            [
+              [
+                "join",
+                5,
+                3,
+                8
+              ],
+              1
+            ]
+          ],
+          "extra_predicted_sig0_at_twin": [
+            [
+              [
+                "join",
+                4,
+                3,
+                7
+              ],
+              2
+            ],
+            [
+              [
+                "join",
+                5,
+                5,
+                10
+              ],
+              1
+            ]
+          ],
+          "saved_verdict": "growth not run",
+          "saved_least_rank": 7,
+          "cpu_seconds": 0.006
+        }
+      }
+    },
+    {
+      "source": "twin8_draw.jsonl",
+      "line": 94,
+      "draw": 5631,
+      "weighting": "tree+s50",
+      "n_knots": 8,
+      "stars_sha256": "92e5b26c00550f684bddcfa412efb4ca4d3bbd99c5716dcb4fedda1cbf6939e5",
+      "laws": {
+        "nae": {
+          "pieces": [
+            {
+              "stop": "finished",
+              "starts": 8,
+              "non_start_births": 446,
+              "total_nodes": 454,
+              "knots_by_round_from_zero": [
+                8,
+                12,
+                16,
+                18,
+                20,
+                21,
+                20,
+                19,
+                23,
+                79,
+                116,
+                79,
+                22,
+                1
+              ],
+              "parent_pair_incidence_by_round_from_one": [
+                25,
+                44,
+                53,
+                87,
+                120,
+                185,
+                252,
+                1465,
+                1020,
+                1578,
+                1020,
+                231,
+                0
+              ],
+              "distinct_pairs_sharing_parents_by_round_from_one": [
+                24,
+                43,
+                52,
+                78,
+                95,
+                103,
+                134,
+                249,
+                1020,
+                1578,
+                1020,
+                231,
+                0
+              ],
+              "chain_counts": [
+                1,
+                1
+              ],
+              "twin_birth_round": 5,
+              "twin_witness_start_size_one": {
+                "rank": 6,
+                "births": [
+                  75,
+                  84
+                ],
+                "parents": [
+                  56,
+                  59
+                ],
+                "grandparent": 45,
+                "chain_base": 9
+              }
+            }
+          ],
+          "twin_birth_round": 5,
+          "saved_growth_end": "not run (time limit)",
+          "saved_growth_rounds": 0,
+          "prediction_status": "predicted",
+          "observed_end": "rounds",
+          "observed_rounds": 5,
+          "grown_births": [
+            12,
+            18,
+            22,
+            30,
+            41
+          ],
+          "predicted_births": [
+            12,
+            18,
+            22,
+            30,
+            41
+          ],
+          "grown_prefix_sha256": "83e55a889fa6fadad759c90ad2c03216a0c7495649c81371d8b4def3d86f6eab",
+          "predicted_prefix_sha256": "c2de88f2bd8feb457f0977246610fbb5502878dd4097271b6f27732fa68fa9a7",
+          "first_difference": {
+            "n": null,
+            "sig0": 5,
+            "sig1": 5
+          },
+          "extra_grown_sig0_at_twin": [
+            [
+              [
+                "join",
+                4,
+                3,
+                7
+              ],
+              1
+            ],
+            [
+              [
+                "join",
+                4,
+                8,
+                12
+              ],
+              1
+            ]
+          ],
+          "extra_predicted_sig0_at_twin": [
+            [
+              [
+                "join",
+                4,
+                2,
+                6
+              ],
+              1
+            ],
+            [
+              [
+                "join",
+                4,
+                6,
+                10
+              ],
+              1
+            ]
+          ],
+          "saved_verdict": "growth not run",
+          "saved_least_rank": 5,
+          "cpu_seconds": 0.011
+        },
+        "parity": {
+          "pieces": [
+            {
+              "stop": "finished",
+              "starts": 8,
+              "non_start_births": 446,
+              "total_nodes": 454,
+              "knots_by_round_from_zero": [
+                8,
+                12,
+                16,
+                18,
+                20,
+                21,
+                20,
+                19,
+                23,
+                79,
+                116,
+                79,
+                22,
+                1
+              ],
+              "parent_pair_incidence_by_round_from_one": [
+                25,
+                44,
+                53,
+                87,
+                120,
+                185,
+                252,
+                1465,
+                1020,
+                1578,
+                1020,
+                231,
+                0
+              ],
+              "distinct_pairs_sharing_parents_by_round_from_one": [
+                24,
+                43,
+                52,
+                78,
+                95,
+                103,
+                134,
+                249,
+                1020,
+                1578,
+                1020,
+                231,
+                0
+              ],
+              "chain_counts": [
+                1,
+                1
+              ],
+              "twin_birth_round": 5,
+              "twin_witness_start_size_one": {
+                "rank": 6,
+                "births": [
+                  75,
+                  84
+                ],
+                "parents": [
+                  56,
+                  59
+                ],
+                "grandparent": 45,
+                "chain_base": 9
+              }
+            }
+          ],
+          "twin_birth_round": 5,
+          "saved_growth_end": "not run (time limit)",
+          "saved_growth_rounds": 0,
+          "prediction_status": "predicted",
+          "observed_end": "rounds",
+          "observed_rounds": 5,
+          "grown_births": [
+            12,
+            18,
+            22,
+            30,
+            41
+          ],
+          "predicted_births": [
+            12,
+            18,
+            22,
+            30,
+            41
+          ],
+          "grown_prefix_sha256": "83e55a889fa6fadad759c90ad2c03216a0c7495649c81371d8b4def3d86f6eab",
+          "predicted_prefix_sha256": "c2de88f2bd8feb457f0977246610fbb5502878dd4097271b6f27732fa68fa9a7",
+          "first_difference": {
+            "n": null,
+            "sig0": 5,
+            "sig1": 5
+          },
+          "extra_grown_sig0_at_twin": [
+            [
+              [
+                "join",
+                4,
+                3,
+                7
+              ],
+              1
+            ],
+            [
+              [
+                "join",
+                4,
+                8,
+                12
+              ],
+              1
+            ]
+          ],
+          "extra_predicted_sig0_at_twin": [
+            [
+              [
+                "join",
+                4,
+                2,
+                6
+              ],
+              1
+            ],
+            [
+              [
+                "join",
+                4,
+                6,
+                10
+              ],
+              1
+            ]
+          ],
+          "saved_verdict": "growth not run",
+          "saved_least_rank": 5,
+          "cpu_seconds": 0.01
+        }
+      }
+    },
+    {
+      "source": "twin8_draw.jsonl",
+      "line": 95,
+      "draw": 5895,
+      "weighting": "tree+s50",
+      "n_knots": 8,
+      "stars_sha256": "44e7a953d0296fa4408644f9913d0c46b988027960de1cca4097b9b02bdea84c",
+      "laws": {
+        "nae": {
+          "pieces": [
+            {
+              "stop": "finished",
+              "starts": 8,
+              "non_start_births": 85,
+              "total_nodes": 93,
+              "knots_by_round_from_zero": [
+                8,
+                10,
+                11,
+                13,
+                14,
+                11,
+                12,
+                7,
+                6,
+                1
+              ],
+              "parent_pair_incidence_by_round_from_one": [
+                18,
+                23,
+                36,
+                41,
+                50,
+                168,
+                32,
+                25,
+                0
+              ],
+              "distinct_pairs_sharing_parents_by_round_from_one": [
+                18,
+                23,
+                35,
+                40,
+                37,
+                62,
+                15,
+                15,
+                0
+              ],
+              "chain_counts": [
+                1,
+                1
+              ],
+              "twin_birth_round": 6,
+              "twin_witness_start_size_one": {
+                "rank": 7,
+                "births": [
+                  67,
+                  68
+                ],
+                "parents": [
+                  62,
+                  63
+                ],
+                "grandparent": 48,
+                "chain_base": 10
+              }
+            }
+          ],
+          "twin_birth_round": 6,
+          "saved_growth_end": "not run (time limit)",
+          "saved_growth_rounds": 0,
+          "prediction_status": "predicted",
+          "observed_end": "rounds",
+          "observed_rounds": 6,
+          "grown_births": [
+            10,
+            13,
+            17,
+            24,
+            32,
+            50
+          ],
+          "predicted_births": [
+            10,
+            13,
+            17,
+            24,
+            32,
+            50
+          ],
+          "grown_prefix_sha256": "332fdf85d78fe20df671bce0b5d15fd7a454e4b6f40abe251a37ddbbc9ecfb58",
+          "predicted_prefix_sha256": "77a7cb58f046b985c27ea4d8b447f2f71b27d8b5861d773262c20ad94533d403",
+          "first_difference": {
+            "n": null,
+            "sig0": 6,
+            "sig1": 6
+          },
+          "extra_grown_sig0_at_twin": [
+            [
+              [
+                "join",
+                2,
+                9,
+                11
+              ],
+              4
+            ],
+            [
+              [
+                "join",
+                3,
+                6,
+                9
+              ],
+              4
+            ],
+            [
+              [
+                "join",
+                4,
+                9,
+                13
+              ],
+              2
+            ],
+            [
+              [
+                "join",
+                5,
+                8,
+                13
+              ],
+              4
+            ],
+            [
+              [
+                "join",
+                5,
+                13,
+                18
+              ],
+              2
+            ]
+          ],
+          "extra_predicted_sig0_at_twin": [
+            [
+              [
+                "join",
+                2,
+                12,
+                14
+              ],
+              4
+            ],
+            [
+              [
+                "join",
+                3,
+                7,
+                10
+              ],
+              4
+            ],
+            [
+              [
+                "join",
+                4,
+                4,
+                8
+              ],
+              2
+            ],
+            [
+              [
+                "join",
+                5,
+                5,
+                10
+              ],
+              6
+            ]
+          ],
+          "saved_verdict": "growth not run",
+          "saved_least_rank": 6,
+          "cpu_seconds": 0.005
+        },
+        "parity": {
+          "pieces": [
+            {
+              "stop": "finished",
+              "starts": 8,
+              "non_start_births": 85,
+              "total_nodes": 93,
+              "knots_by_round_from_zero": [
+                8,
+                10,
+                11,
+                13,
+                14,
+                11,
+                12,
+                7,
+                6,
+                1
+              ],
+              "parent_pair_incidence_by_round_from_one": [
+                18,
+                23,
+                36,
+                41,
+                50,
+                168,
+                32,
+                25,
+                0
+              ],
+              "distinct_pairs_sharing_parents_by_round_from_one": [
+                18,
+                23,
+                35,
+                40,
+                37,
+                62,
+                15,
+                15,
+                0
+              ],
+              "chain_counts": [
+                1,
+                1
+              ],
+              "twin_birth_round": 6,
+              "twin_witness_start_size_one": {
+                "rank": 7,
+                "births": [
+                  67,
+                  68
+                ],
+                "parents": [
+                  62,
+                  63
+                ],
+                "grandparent": 48,
+                "chain_base": 10
+              }
+            }
+          ],
+          "twin_birth_round": 6,
+          "saved_growth_end": "not run (time limit)",
+          "saved_growth_rounds": 0,
+          "prediction_status": "predicted",
+          "observed_end": "rounds",
+          "observed_rounds": 6,
+          "grown_births": [
+            10,
+            13,
+            17,
+            24,
+            32,
+            50
+          ],
+          "predicted_births": [
+            10,
+            13,
+            17,
+            24,
+            32,
+            50
+          ],
+          "grown_prefix_sha256": "332fdf85d78fe20df671bce0b5d15fd7a454e4b6f40abe251a37ddbbc9ecfb58",
+          "predicted_prefix_sha256": "77a7cb58f046b985c27ea4d8b447f2f71b27d8b5861d773262c20ad94533d403",
+          "first_difference": {
+            "n": null,
+            "sig0": 6,
+            "sig1": 6
+          },
+          "extra_grown_sig0_at_twin": [
+            [
+              [
+                "join",
+                2,
+                9,
+                11
+              ],
+              4
+            ],
+            [
+              [
+                "join",
+                3,
+                6,
+                9
+              ],
+              4
+            ],
+            [
+              [
+                "join",
+                4,
+                9,
+                13
+              ],
+              2
+            ],
+            [
+              [
+                "join",
+                5,
+                8,
+                13
+              ],
+              4
+            ],
+            [
+              [
+                "join",
+                5,
+                13,
+                18
+              ],
+              2
+            ]
+          ],
+          "extra_predicted_sig0_at_twin": [
+            [
+              [
+                "join",
+                2,
+                12,
+                14
+              ],
+              4
+            ],
+            [
+              [
+                "join",
+                3,
+                7,
+                10
+              ],
+              4
+            ],
+            [
+              [
+                "join",
+                4,
+                4,
+                8
+              ],
+              2
+            ],
+            [
+              [
+                "join",
+                5,
+                5,
+                10
+              ],
+              6
+            ]
+          ],
+          "saved_verdict": "growth not run",
+          "saved_least_rank": 6,
+          "cpu_seconds": 0.00499
+        }
+      }
+    }
+  ],
+  "pilot_start_draws": [
+    388,
+    1990
+  ],
+  "pilot_cpu_seconds": 0.187,
+  "full_estimate_from_pilot_cpu_seconds": 1.216
+}

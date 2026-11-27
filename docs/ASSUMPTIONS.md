@@ -6387,6 +6387,7 @@ evidence: results and their status come from the records each entry links.
 - **Rests on it.** The study's three parts ([the note](../research/CYCLE-READ-20261127-001/README.md)).
 - **Challenge.** Other weightings and sizes (ten knots and more); other caps, which change which starts are read, not the verdict on a start that is read; a longer growth limit for the twelve chained-twin starts not grown in two minutes. The twin exception held under both twin weightings, so it is about the reading, not the weighting; the caps were not varied. The model is not expected to keep these choices.
 - **History.**
+  - 2026-11-27 · Refereed (`CYCLE-READ-20261127-001`, report R1): the samples, buckets and exclusions reproduced; the caps decide which starts are read and also what Part 3 counts (some capped cores finish, one repeats), and a built nine-knot start outside the samples fails without chained twins. [Referee report](../research/CYCLE-READ-20261127-001/referee-R1/report.md)
   - 2026-11-27 · Entered with `CYCLE-READ-20261127-001`: every read start without chained twins agrees (122 with a cycle, 263 fresh), every scored start with them differs (11 and 42), at the round equal to their least rank.
 
 ### A308 · Agreement readings on small carriers, two holder notions and bonds as laws, to test the grown ring's bond

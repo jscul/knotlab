@@ -1,0 +1,5 @@
+# Independent comparison before opening the study
+
+Use the look-alike growth as the comparator. Realise a connected start with at least nine knots using a spent knot for each common-neighbour block. Choose loose distinctions from the round-one demand plus zero, one or two, with weights 6, 3 and 1. The four families, in repeating order, use a cycle of pair blocks, two groups sharing two knots, overlapping blocks, and a connected randomly augmented list of pairs. Up to two leaves can attach. The seed and per-index construction are in sample.py.
+
+Compare the count and both full multisets under each law, through nine rounds with the growth bound at 480 knots. Record the first differing round by reading, the least twin rank, and every cutoff. Start with one of each family, then take a prefix of up to 400 starts under the measured cost. Compare a deliberately constructed twin witness and a related chain control if the prefix gives poor coverage. Agreement before the first twin is separately identifiable. Inspect the study after recording a verdict on these independent tests.

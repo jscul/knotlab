@@ -1,0 +1,1481 @@
+{
+  "W1_saved_tally": {
+    "accepted draws with repeats": {
+      "a piece with a cycle": 6438,
+      "no twins, no chains": 2026,
+      "no twins, with chains": 10993,
+      "not run (time limit)": 1,
+      "twins, chained": 172,
+      "twins, not chained, no chains": 264,
+      "twins, not chained, with chains": 51,
+      "unending core (over the cap of core births)": 55
+    },
+    "distinct accepted tree-piece starts drawn (new)": {
+      "no twins, no chains": 313,
+      "no twins, with chains": 330,
+      "not run (time limit)": 1,
+      "twins, chained": 49,
+      "twins, not chained, no chains": 143,
+      "twins, not chained, with chains": 32,
+      "unending core (over the cap of core births)": 22
+    },
+    "draws": 20000,
+    "kept": {
+      "no twins, no chains": 40,
+      "no twins, with chains": 40,
+      "twins, chained": 40,
+      "twins, not chained, no chains": 40,
+      "twins, not chained, with chains": 32
+    },
+    "knots": 9,
+    "seed": 20261130,
+    "weighting": "tree+"
+  },
+  "W2_cap_refinement": {
+    "cpu_seconds": 3.874,
+    "other_work_limited_draws_not_rechecked": [
+      1190,
+      1513,
+      1689,
+      1692,
+      2353,
+      2382,
+      2495,
+      3133,
+      3449,
+      3553,
+      3929,
+      4053,
+      4270,
+      4339,
+      4341,
+      4775,
+      4908,
+      5232,
+      5869
+    ],
+    "rechecked_draws": {
+      "70": "maximal families cap",
+      "141": "maximal families cap",
+      "635": "maximal families cap"
+    },
+    "work_limit": 5000000
+  },
+  "W2_draw_1990_cap_control": {
+    "draw": 1990,
+    "knots": 8,
+    "weighting": "tree+s50",
+    "with_pair_cap": "pair cap",
+    "without_pair_cap": "twins, chained"
+  },
+  "artifact_cpu_seconds": 1.991,
+  "audit_caps": {
+    "core_count": 5000,
+    "maximal_family_work_per_search": 2000000,
+    "parent_sharing_pairs": 250000
+  },
+  "earlier_rows": {
+    "GRADED-ORDER-20261126-001/fresh7_grow.jsonl": 93,
+    "GRADED-ORDER-20261126-001/fresh7_treeplus.jsonl": 83,
+    "GRADED-ORDER-20261126-001/held8_treeplus.jsonl": 116,
+    "GRADED-ORDER-20261126-001/held_grow.jsonl": 76,
+    "GRADED-ORDER-20261126-001/held_treeplus.jsonl": 47,
+    "GRADED-ORDER-20261126-001/referee-R1/challenge_anchor.jsonl": 6,
+    "GRADED-ORDER-20261126-001/referee-R1/fresh_rows.jsonl": 55,
+    "GRADED-ORDER-20261126-001/referee-R1/obstruction_nae.jsonl": 1,
+    "GRADED-ORDER-20261126-001/referee-R1/small_nae.jsonl": 1,
+    "GRADED-ORDER-20261126-001/referee-R2/draws.jsonl": 192,
+    "GRADED-ORDER-20261126-001/replays.jsonl": 3,
+    "GRADED-ORDER-20261126-001/twins7_treeplus.jsonl": 40,
+    "LATE-VIEWS-20261126-001/grown_grow7_nae.jsonl.gz": 1000,
+    "LATE-VIEWS-20261126-001/handbuilt.jsonl": 17,
+    "LATE-VIEWS-20261126-001/held_out_nae.jsonl.gz": 2000,
+    "LATE-VIEWS-20261126-001/horizon.jsonl": 100,
+    "LATE-VIEWS-20261126-001/stratified.jsonl": 199
+  },
+  "generator_replays": {
+    "cyc7_grow": {
+      "cpu_seconds": 11.813,
+      "declared_draws": 200000,
+      "draws_run": 200000,
+      "earlier_exclusions": {},
+      "exact_distinct_counts": {
+        "(1, False)": 82,
+        "(1, True)": 16
+      },
+      "exact_new_counts": {
+        "(1, False)": 82,
+        "(1, True)": 16
+      },
+      "knots": 7,
+      "matching_saved_raw_draws": 66,
+      "pair_cap": null,
+      "raw_counts": {
+        "(1, False)": 121,
+        "(1, True)": 18,
+        "rejected by map": 184846,
+        "wrong cycle eligibility": 15015
+      },
+      "retained": {
+        "(1, False)": 50,
+        "(1, True)": 16
+      },
+      "retention_differences": {
+        "replay_only": {},
+        "saved_bucket_differences": {},
+        "saved_only": [],
+        "saved_repeats": {}
+      },
+      "seed": 20261129,
+      "weighting": "grow",
+      "work_limited_first_draws": []
+    },
+    "cyc7_treeplus": {
+      "cpu_seconds": 2.331,
+      "declared_draws": 20000,
+      "draws_run": 20000,
+      "earlier_exclusions": {},
+      "exact_distinct_counts": {
+        "(1, False)": 149,
+        "(1, True)": 2
+      },
+      "exact_new_counts": {
+        "(1, False)": 149,
+        "(1, True)": 2
+      },
+      "knots": 7,
+      "matching_saved_raw_draws": 52,
+      "pair_cap": null,
+      "raw_counts": {
+        "(1, False)": 4278,
+        "(1, True)": 463,
+        "wrong cycle eligibility": 15259
+      },
+      "retained": {
+        "(1, False)": 50,
+        "(1, True)": 2
+      },
+      "retention_differences": {
+        "replay_only": {},
+        "saved_bucket_differences": {},
+        "saved_only": [],
+        "saved_repeats": {}
+      },
+      "seed": 20261129,
+      "weighting": "tree+",
+      "work_limited_first_draws": []
+    },
+    "twin8": {
+      "cpu_seconds": 91.48,
+      "declared_draws": 6000,
+      "draws_run": 6000,
+      "earlier_exclusions": {
+        "5096": [
+          "no twins, with chains",
+          {
+            "file": "GRADED-ORDER-20261126-001/held8_treeplus.jsonl",
+            "id": 31,
+            "line": 12,
+            "name": null
+          },
+          [
+            5,
+            0,
+            2,
+            7,
+            3,
+            6,
+            1,
+            4
+          ]
+        ],
+        "5368": [
+          "no twins, no chains",
+          {
+            "file": "GRADED-ORDER-20261126-001/held8_treeplus.jsonl",
+            "id": 112,
+            "line": 27,
+            "name": null
+          },
+          [
+            1,
+            4,
+            5,
+            7,
+            0,
+            6,
+            2,
+            3
+          ]
+        ],
+        "5888": [
+          "no twins, with chains",
+          {
+            "file": "GRADED-ORDER-20261126-001/held8_treeplus.jsonl",
+            "id": 7,
+            "line": 5,
+            "name": null
+          },
+          [
+            7,
+            1,
+            3,
+            2,
+            5,
+            4,
+            0,
+            6
+          ]
+        ]
+      },
+      "exact_distinct_counts": {
+        "core births cap": 6,
+        "maximal families cap": 106,
+        "no twins, no chains": 1012,
+        "no twins, with chains": 2158,
+        "twins, chained": 15,
+        "twins, not chained, no chains": 25,
+        "twins, not chained, with chains": 6,
+        "work limit": 22
+      },
+      "exact_new_counts": {
+        "core births cap": 6,
+        "maximal families cap": 106,
+        "no twins, no chains": 1011,
+        "no twins, with chains": 2156,
+        "twins, chained": 15,
+        "twins, not chained, no chains": 25,
+        "twins, not chained, with chains": 6,
+        "work limit": 22
+      },
+      "knots": 8,
+      "matching_saved_raw_draws": 126,
+      "pair_cap": null,
+      "raw_counts": {
+        "core births cap": 6,
+        "maximal families cap": 107,
+        "no twins, no chains": 1187,
+        "no twins, with chains": 2930,
+        "twins, chained": 15,
+        "twins, not chained, no chains": 25,
+        "twins, not chained, with chains": 6,
+        "work limit": 22,
+        "wrong cycle eligibility": 1702
+      },
+      "retained": {
+        "no twins, no chains": 40,
+        "no twins, with chains": 40,
+        "twins, chained": 15,
+        "twins, not chained, no chains": 25,
+        "twins, not chained, with chains": 6
+      },
+      "retention_differences": {
+        "replay_only": {},
+        "saved_bucket_differences": {},
+        "saved_only": [],
+        "saved_repeats": {}
+      },
+      "seed": 20261131,
+      "weighting": "tree+s50",
+      "work_limited_first_draws": [
+        70,
+        141,
+        635,
+        1190,
+        1513,
+        1689,
+        1692,
+        2353,
+        2382,
+        2495,
+        3133,
+        3449,
+        3553,
+        3929,
+        4053,
+        4270,
+        4339,
+        4341,
+        4775,
+        4908,
+        5232,
+        5869
+      ]
+    },
+    "twin9": {
+      "cpu_seconds": 6.221,
+      "declared_draws": 20000,
+      "draws_run": 20000,
+      "earlier_exclusions": {},
+      "exact_distinct_counts": {
+        "maximal families cap": 15,
+        "no twins, no chains": 313,
+        "no twins, with chains": 330,
+        "pair cap": 8,
+        "twins, chained": 49,
+        "twins, not chained, no chains": 143,
+        "twins, not chained, with chains": 32
+      },
+      "exact_new_counts": {
+        "maximal families cap": 15,
+        "no twins, no chains": 313,
+        "no twins, with chains": 330,
+        "pair cap": 8,
+        "twins, chained": 49,
+        "twins, not chained, no chains": 143,
+        "twins, not chained, with chains": 32
+      },
+      "knots": 9,
+      "matching_saved_raw_draws": 192,
+      "pair_cap": 250000,
+      "raw_counts": {
+        "maximal families cap": 31,
+        "no twins, no chains": 2026,
+        "no twins, with chains": 10993,
+        "pair cap": 25,
+        "twins, chained": 172,
+        "twins, not chained, no chains": 264,
+        "twins, not chained, with chains": 51,
+        "wrong cycle eligibility": 6438
+      },
+      "retained": {
+        "no twins, no chains": 40,
+        "no twins, with chains": 40,
+        "twins, chained": 40,
+        "twins, not chained, no chains": 40,
+        "twins, not chained, with chains": 32
+      },
+      "retention_differences": {
+        "replay_only": {},
+        "saved_bucket_differences": {},
+        "saved_only": [],
+        "saved_repeats": {}
+      },
+      "seed": 20261130,
+      "weighting": "tree+",
+      "work_limited_first_draws": []
+    }
+  },
+  "grow_reuse": {
+    "nae": [
+      107
+    ],
+    "parity": [
+      107
+    ]
+  },
+  "part3_saved_tallies": [
+    "W1_tree+_9_seed20261130.json",
+    "grow_7.json",
+    "grow_8.json",
+    "grow_9.json",
+    "tree+_10.json",
+    "tree+_7.json",
+    "tree+_8.json",
+    "tree+_9.json",
+    "tree+s50_7.json",
+    "tree+s50_8.json"
+  ],
+  "record_joins": {
+    "cyc6_uniform/nae": {
+      "endings": {
+        "rounds": 41
+      },
+      "growth_order_matches_saved_start_order": true,
+      "prediction_key_mismatches": [],
+      "prediction_rows_without_start_id": 41,
+      "rows": 41,
+      "time_limits": []
+    },
+    "cyc6_uniform/parity": {
+      "endings": {
+        "closes": 18,
+        "rounds": 23
+      },
+      "growth_order_matches_saved_start_order": true,
+      "prediction_key_mismatches": [],
+      "prediction_rows_without_start_id": 41,
+      "rows": 41,
+      "time_limits": []
+    },
+    "cyc7_grow/nae": {
+      "endings": {
+        "bound": 6,
+        "rounds": 60
+      },
+      "growth_order_matches_saved_start_order": true,
+      "prediction_key_mismatches": [],
+      "prediction_rows_without_start_id": 0,
+      "rows": 66,
+      "time_limits": []
+    },
+    "cyc7_grow/parity": {
+      "endings": {
+        "bound": 6,
+        "closes": 4,
+        "rounds": 56
+      },
+      "growth_order_matches_saved_start_order": true,
+      "prediction_key_mismatches": [],
+      "prediction_rows_without_start_id": 0,
+      "rows": 66,
+      "time_limits": []
+    },
+    "cyc7_treeplus/nae": {
+      "endings": {
+        "bound": 2,
+        "guard": 7,
+        "not run (time limit)": 1,
+        "rounds": 42
+      },
+      "growth_order_matches_saved_start_order": true,
+      "prediction_key_mismatches": [],
+      "prediction_rows_without_start_id": 0,
+      "rows": 52,
+      "time_limits": [
+        671
+      ]
+    },
+    "cyc7_treeplus/parity": {
+      "endings": {
+        "bound": 2,
+        "closes": 27,
+        "guard": 4,
+        "not run (time limit)": 4,
+        "rounds": 15
+      },
+      "growth_order_matches_saved_start_order": true,
+      "prediction_key_mismatches": [],
+      "prediction_rows_without_start_id": 0,
+      "rows": 52,
+      "time_limits": [
+        88,
+        178,
+        208,
+        671
+      ]
+    },
+    "twin8/nae": {
+      "endings": {
+        "guard": 2,
+        "not run (time limit)": 4,
+        "rounds": 120
+      },
+      "growth_order_matches_saved_start_order": true,
+      "prediction_key_mismatches": [],
+      "prediction_rows_without_start_id": 0,
+      "rows": 126,
+      "time_limits": [
+        865,
+        4530,
+        5631,
+        5895
+      ]
+    },
+    "twin8/parity": {
+      "endings": {
+        "closes": 48,
+        "guard": 2,
+        "not run (time limit)": 4,
+        "rounds": 72
+      },
+      "growth_order_matches_saved_start_order": true,
+      "prediction_key_mismatches": [],
+      "prediction_rows_without_start_id": 0,
+      "rows": 126,
+      "time_limits": [
+        865,
+        4530,
+        5631,
+        5895
+      ]
+    },
+    "twin9/nae": {
+      "endings": {
+        "guard": 5,
+        "not run (time limit)": 8,
+        "rounds": 179
+      },
+      "growth_order_matches_saved_start_order": true,
+      "prediction_key_mismatches": [],
+      "prediction_rows_without_start_id": 0,
+      "rows": 192,
+      "time_limits": [
+        388,
+        1615,
+        1975,
+        2351,
+        3342,
+        3713,
+        6489,
+        6744
+      ]
+    },
+    "twin9/parity": {
+      "endings": {
+        "closes": 60,
+        "guard": 5,
+        "not run (time limit)": 8,
+        "rounds": 119
+      },
+      "growth_order_matches_saved_start_order": true,
+      "prediction_key_mismatches": [],
+      "prediction_rows_without_start_id": 0,
+      "rows": 192,
+      "time_limits": [
+        388,
+        1615,
+        1975,
+        2351,
+        3342,
+        3713,
+        6489,
+        6744
+      ]
+    }
+  },
+  "retained_twin_buckets": {
+    "twin8": {
+      "no twins, no chains": 40,
+      "no twins, with chains": 40,
+      "twins, chained": 15,
+      "twins, not chained, no chains": 25,
+      "twins, not chained, with chains": 6
+    },
+    "twin9": {
+      "no twins, no chains": 40,
+      "no twins, with chains": 40,
+      "twins, chained": 40,
+      "twins, not chained, no chains": 40,
+      "twins, not chained, with chains": 32
+    }
+  },
+  "sample_comparisons": {
+    "across": [
+      [
+        [
+          "cyc7_grow",
+          28,
+          47631
+        ],
+        [
+          "cyc7_treeplus",
+          7,
+          52
+        ],
+        [
+          0,
+          1,
+          6,
+          3,
+          2,
+          5,
+          4
+        ]
+      ]
+    ],
+    "earlier": [
+      [
+        [
+          "cyc6_uniform",
+          1,
+          25844
+        ],
+        {
+          "file": "LATE-VIEWS-20261126-001/held_out_nae.jsonl.gz",
+          "id": 25844,
+          "line": 14,
+          "name": null
+        },
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      ],
+      [
+        [
+          "cyc6_uniform",
+          2,
+          42256
+        ],
+        {
+          "file": "LATE-VIEWS-20261126-001/held_out_nae.jsonl.gz",
+          "id": 42256,
+          "line": 39,
+          "name": null
+        },
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      ],
+      [
+        [
+          "cyc6_uniform",
+          3,
+          64198
+        ],
+        {
+          "file": "LATE-VIEWS-20261126-001/held_out_nae.jsonl.gz",
+          "id": 64198,
+          "line": 45,
+          "name": null
+        },
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      ],
+      [
+        [
+          "cyc6_uniform",
+          4,
+          25848
+        ],
+        {
+          "file": "LATE-VIEWS-20261126-001/held_out_nae.jsonl.gz",
+          "id": 25848,
+          "line": 49,
+          "name": null
+        },
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      ],
+      [
+        [
+          "cyc6_uniform",
+          5,
+          45477
+        ],
+        {
+          "file": "LATE-VIEWS-20261126-001/held_out_nae.jsonl.gz",
+          "id": 45477,
+          "line": 138,
+          "name": null
+        },
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      ],
+      [
+        [
+          "cyc6_uniform",
+          6,
+          27822
+        ],
+        {
+          "file": "LATE-VIEWS-20261126-001/held_out_nae.jsonl.gz",
+          "id": 27822,
+          "line": 171,
+          "name": null
+        },
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      ],
+      [
+        [
+          "cyc6_uniform",
+          7,
+          27688
+        ],
+        {
+          "file": "LATE-VIEWS-20261126-001/held_out_nae.jsonl.gz",
+          "id": 27688,
+          "line": 207,
+          "name": null
+        },
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      ],
+      [
+        [
+          "cyc6_uniform",
+          8,
+          43496
+        ],
+        {
+          "file": "LATE-VIEWS-20261126-001/held_out_nae.jsonl.gz",
+          "id": 43496,
+          "line": 220,
+          "name": null
+        },
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      ],
+      [
+        [
+          "cyc6_uniform",
+          9,
+          50380
+        ],
+        {
+          "file": "LATE-VIEWS-20261126-001/held_out_nae.jsonl.gz",
+          "id": 50380,
+          "line": 288,
+          "name": null
+        },
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      ],
+      [
+        [
+          "cyc6_uniform",
+          10,
+          64262
+        ],
+        {
+          "file": "LATE-VIEWS-20261126-001/held_out_nae.jsonl.gz",
+          "id": 64262,
+          "line": 329,
+          "name": null
+        },
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      ],
+      [
+        [
+          "cyc6_uniform",
+          11,
+          64270
+        ],
+        {
+          "file": "LATE-VIEWS-20261126-001/held_out_nae.jsonl.gz",
+          "id": 64270,
+          "line": 358,
+          "name": null
+        },
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      ],
+      [
+        [
+          "cyc6_uniform",
+          12,
+          46068
+        ],
+        {
+          "file": "LATE-VIEWS-20261126-001/held_out_nae.jsonl.gz",
+          "id": 46068,
+          "line": 386,
+          "name": null
+        },
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      ],
+      [
+        [
+          "cyc6_uniform",
+          13,
+          45433
+        ],
+        {
+          "file": "LATE-VIEWS-20261126-001/held_out_nae.jsonl.gz",
+          "id": 45433,
+          "line": 501,
+          "name": null
+        },
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      ],
+      [
+        [
+          "cyc6_uniform",
+          14,
+          48040
+        ],
+        {
+          "file": "LATE-VIEWS-20261126-001/held_out_nae.jsonl.gz",
+          "id": 48040,
+          "line": 587,
+          "name": null
+        },
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      ],
+      [
+        [
+          "cyc6_uniform",
+          15,
+          25433
+        ],
+        {
+          "file": "LATE-VIEWS-20261126-001/held_out_nae.jsonl.gz",
+          "id": 25433,
+          "line": 619,
+          "name": null
+        },
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      ],
+      [
+        [
+          "cyc6_uniform",
+          16,
+          46081
+        ],
+        {
+          "file": "LATE-VIEWS-20261126-001/held_out_nae.jsonl.gz",
+          "id": 46081,
+          "line": 710,
+          "name": null
+        },
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      ],
+      [
+        [
+          "cyc6_uniform",
+          17,
+          25643
+        ],
+        {
+          "file": "LATE-VIEWS-20261126-001/held_out_nae.jsonl.gz",
+          "id": 25643,
+          "line": 760,
+          "name": null
+        },
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      ],
+      [
+        [
+          "cyc6_uniform",
+          18,
+          25424
+        ],
+        {
+          "file": "LATE-VIEWS-20261126-001/held_out_nae.jsonl.gz",
+          "id": 25424,
+          "line": 785,
+          "name": null
+        },
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      ],
+      [
+        [
+          "cyc6_uniform",
+          19,
+          44956
+        ],
+        {
+          "file": "LATE-VIEWS-20261126-001/held_out_nae.jsonl.gz",
+          "id": 44956,
+          "line": 834,
+          "name": null
+        },
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      ],
+      [
+        [
+          "cyc6_uniform",
+          20,
+          64456
+        ],
+        {
+          "file": "LATE-VIEWS-20261126-001/held_out_nae.jsonl.gz",
+          "id": 64456,
+          "line": 888,
+          "name": null
+        },
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      ],
+      [
+        [
+          "cyc6_uniform",
+          21,
+          13560
+        ],
+        {
+          "file": "LATE-VIEWS-20261126-001/held_out_nae.jsonl.gz",
+          "id": 13560,
+          "line": 990,
+          "name": null
+        },
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      ],
+      [
+        [
+          "cyc6_uniform",
+          22,
+          25842
+        ],
+        {
+          "file": "LATE-VIEWS-20261126-001/held_out_nae.jsonl.gz",
+          "id": 25842,
+          "line": 1009,
+          "name": null
+        },
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      ],
+      [
+        [
+          "cyc6_uniform",
+          23,
+          64399
+        ],
+        {
+          "file": "LATE-VIEWS-20261126-001/held_out_nae.jsonl.gz",
+          "id": 64399,
+          "line": 1023,
+          "name": null
+        },
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      ],
+      [
+        [
+          "cyc6_uniform",
+          24,
+          64474
+        ],
+        {
+          "file": "LATE-VIEWS-20261126-001/held_out_nae.jsonl.gz",
+          "id": 64474,
+          "line": 1048,
+          "name": null
+        },
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      ],
+      [
+        [
+          "cyc6_uniform",
+          25,
+          42257
+        ],
+        {
+          "file": "LATE-VIEWS-20261126-001/held_out_nae.jsonl.gz",
+          "id": 42257,
+          "line": 1095,
+          "name": null
+        },
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      ],
+      [
+        [
+          "cyc6_uniform",
+          26,
+          47285
+        ],
+        {
+          "file": "LATE-VIEWS-20261126-001/held_out_nae.jsonl.gz",
+          "id": 47285,
+          "line": 1141,
+          "name": null
+        },
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      ],
+      [
+        [
+          "cyc6_uniform",
+          27,
+          45804
+        ],
+        {
+          "file": "LATE-VIEWS-20261126-001/held_out_nae.jsonl.gz",
+          "id": 45804,
+          "line": 1152,
+          "name": null
+        },
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      ],
+      [
+        [
+          "cyc6_uniform",
+          28,
+          27722
+        ],
+        {
+          "file": "LATE-VIEWS-20261126-001/held_out_nae.jsonl.gz",
+          "id": 27722,
+          "line": 1279,
+          "name": null
+        },
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      ],
+      [
+        [
+          "cyc6_uniform",
+          29,
+          46160
+        ],
+        {
+          "file": "LATE-VIEWS-20261126-001/held_out_nae.jsonl.gz",
+          "id": 46160,
+          "line": 1293,
+          "name": null
+        },
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      ],
+      [
+        [
+          "cyc6_uniform",
+          30,
+          65415
+        ],
+        {
+          "file": "LATE-VIEWS-20261126-001/held_out_nae.jsonl.gz",
+          "id": 65415,
+          "line": 1318,
+          "name": null
+        },
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      ],
+      [
+        [
+          "cyc6_uniform",
+          31,
+          39209
+        ],
+        {
+          "file": "LATE-VIEWS-20261126-001/held_out_nae.jsonl.gz",
+          "id": 39209,
+          "line": 1347,
+          "name": null
+        },
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      ],
+      [
+        [
+          "cyc6_uniform",
+          32,
+          47332
+        ],
+        {
+          "file": "LATE-VIEWS-20261126-001/held_out_nae.jsonl.gz",
+          "id": 47332,
+          "line": 1350,
+          "name": null
+        },
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      ],
+      [
+        [
+          "cyc6_uniform",
+          33,
+          54400
+        ],
+        {
+          "file": "LATE-VIEWS-20261126-001/held_out_nae.jsonl.gz",
+          "id": 54400,
+          "line": 1407,
+          "name": null
+        },
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      ],
+      [
+        [
+          "cyc6_uniform",
+          34,
+          27712
+        ],
+        {
+          "file": "LATE-VIEWS-20261126-001/held_out_nae.jsonl.gz",
+          "id": 27712,
+          "line": 1469,
+          "name": null
+        },
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      ],
+      [
+        [
+          "cyc6_uniform",
+          35,
+          42079
+        ],
+        {
+          "file": "LATE-VIEWS-20261126-001/held_out_nae.jsonl.gz",
+          "id": 42079,
+          "line": 1575,
+          "name": null
+        },
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      ],
+      [
+        [
+          "cyc6_uniform",
+          36,
+          46020
+        ],
+        {
+          "file": "LATE-VIEWS-20261126-001/held_out_nae.jsonl.gz",
+          "id": 46020,
+          "line": 1686,
+          "name": null
+        },
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      ],
+      [
+        [
+          "cyc6_uniform",
+          37,
+          42050
+        ],
+        {
+          "file": "LATE-VIEWS-20261126-001/held_out_nae.jsonl.gz",
+          "id": 42050,
+          "line": 1701,
+          "name": null
+        },
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      ],
+      [
+        [
+          "cyc6_uniform",
+          38,
+          25393
+        ],
+        {
+          "file": "LATE-VIEWS-20261126-001/held_out_nae.jsonl.gz",
+          "id": 25393,
+          "line": 1822,
+          "name": null
+        },
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      ],
+      [
+        [
+          "cyc6_uniform",
+          39,
+          42189
+        ],
+        {
+          "file": "LATE-VIEWS-20261126-001/held_out_nae.jsonl.gz",
+          "id": 42189,
+          "line": 1837,
+          "name": null
+        },
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      ],
+      [
+        [
+          "cyc6_uniform",
+          40,
+          51562
+        ],
+        {
+          "file": "LATE-VIEWS-20261126-001/held_out_nae.jsonl.gz",
+          "id": 51562,
+          "line": 1841,
+          "name": null
+        },
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      ],
+      [
+        [
+          "cyc6_uniform",
+          41,
+          27834
+        ],
+        {
+          "file": "LATE-VIEWS-20261126-001/held_out_nae.jsonl.gz",
+          "id": 27834,
+          "line": 1875,
+          "name": null
+        },
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      ],
+      [
+        [
+          "cyc7_grow",
+          1,
+          107
+        ],
+        {
+          "file": "LATE-VIEWS-20261126-001/grown_grow7_nae.jsonl.gz",
+          "id": 107,
+          "line": 108,
+          "name": null
+        },
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      ]
+    ],
+    "within": {}
+  },
+  "sample_rows": {
+    "cyc6_uniform": 41,
+    "cyc7_grow": 66,
+    "cyc7_treeplus": 52,
+    "twin8": 126,
+    "twin9": 192
+  },
+  "uniform_reuse": {
+    "nae": {
+      "matching_seeded_indices": 2000,
+      "matching_selected_starts_and_growth_rows": 41
+    },
+    "parity": {
+      "matching_seeded_indices": 2000,
+      "matching_selected_starts_and_growth_rows": 41
+    }
+  }
+}

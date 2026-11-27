@@ -1,5 +1,19 @@
 # Proving the chain counting on node cores
 
+> **Referee report R1, 27 November 2026: confirmed with fixes — no Block on the theorem under N1 to N3 (with a relay
+> correction); Block on dropping N2, on Lemma D as stated (it needs N2), and on Lemma C's pair clause (repaired)**
+> ([the report](referee-R1/report.md)). The referee rebuilt the node core and extended nodes independently and found all
+> 100 in-class growth comparisons of a fresh sample and all 19 on built starts agree, and all out-of-class ones differ.
+> - **N1 alone does not suffice.** A 13-knot start meets N1 and N3 but fails N2: the last core node's two parents both hold
+>   both chain bases, and their two common parents hold one base each. Growth makes two three-parent joins where the
+>   reading makes one four-parent join, and two births get three fresh distinctions where the reading gives two (round 9,
+>   both laws). The cycle study's referee found the same with a nine-knot start. So failed lifts are a second
+>   obstruction beside chained twins; whether N1 implies N3 is still open (the referee reduces N3 to a triple test).
+> - **Repairs.** Lemma C's pair clause omitted a neighbour one chain total below (repaired: every family holding the pair
+>   still has the pair's common parent); Lemma D needs N2; the class is connected, with a loose distinction, and two for
+>   parity (a lone offshoot under parity closes); a relaying terminal birth gets f + 1 = 1 fresh distinction; N2 is for
+>   distinct parents and nonempty B; 26 sample rows passed the cap, not 2. Read this record with these changes.
+
 Epic `CHAIN-COUNT-20261127-001`, under G17 with G1, the coordinator's sequenced pick after `CYCLE-READ-20261127-001`
 (that study's direction 1). Proof work; no growth was run.
 
@@ -22,7 +36,7 @@ as a cycle), so the theorem covers every one of them; the lemma fails on all 67 
 and N3 on 4. ([tree pieces](ext_samples.txt), [pieces with a cycle](ext_cycles.txt); [convex.py](convex.py) checks N2's
 single-base form.)
 
-**Open.** Whether N1 alone implies N2 and N3 (no sample start separates them); reading chained twins (the proof names the
+**Open.** ~~Whether N1 alone implies N2 and N3 (no sample start separates them);~~ *(R1: N1 does not imply N2; whether it implies N3 is open)*; reading chained twins (the proof names the
 one family that breaks the lemma there); chains on cores that never finish.
 
 Status: proved on the class N1 to N3, machine-checked; referee pending. The advisor could not be consulted (its usage limit

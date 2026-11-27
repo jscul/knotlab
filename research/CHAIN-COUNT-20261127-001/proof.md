@@ -1,7 +1,21 @@
 # The chain counting on node cores: a proof on a class read off the start
 
-Status: **Proved on a class whose conditions are read off the start** (N1 to N3 below); whether N1 alone implies N2 and N3
-is open. Referee pending. Epic `CHAIN-COUNT-20261127-001`, 27 November 2026, at the coordinator's sequenced pick after
+> **Referee report R1, 27 November 2026: confirmed with fixes — no Block on the theorem under N1 to N3 (with a relay
+> correction); Block on dropping N2, on Lemma D as stated (it needs N2), and on Lemma C's pair clause (repaired)**
+> ([the report](referee-R1/report.md)). The referee rebuilt the node core and extended nodes independently and found all
+> 100 in-class growth comparisons of a fresh sample and all 19 on built starts agree, and all out-of-class ones differ.
+> - **N1 alone does not suffice.** A 13-knot start meets N1 and N3 but fails N2: the last core node's two parents both hold
+>   both chain bases, and their two common parents hold one base each. Growth makes two three-parent joins where the
+>   reading makes one four-parent join, and two births get three fresh distinctions where the reading gives two (round 9,
+>   both laws). The cycle study's referee found the same with a nine-knot start. So failed lifts are a second
+>   obstruction beside chained twins; whether N1 implies N3 is still open (the referee reduces N3 to a triple test).
+> - **Repairs.** Lemma C's pair clause omitted a neighbour one chain total below (repaired: every family holding the pair
+>   still has the pair's common parent); Lemma D needs N2; the class is connected, with a loose distinction, and two for
+>   parity (a lone offshoot under parity closes); a relaying terminal birth gets f + 1 = 1 fresh distinction; N2 is for
+>   distinct parents and nonempty B; 26 sample rows passed the cap, not 2. Read this record with these changes.
+
+Status: **Proved on a class whose conditions are read off the start** (N1 to N3 below), refereed with fixes; N1 alone
+does not imply N2 (referee R1), and whether it implies N3 is open. Referee pending. Epic `CHAIN-COUNT-20261127-001`, 27 November 2026, at the coordinator's sequenced pick after
 `CYCLE-READ-20261127-001`. The advisor could not be consulted on the proof (its usage limit was reached); the
 independent check is the machine check below and the referee.
 
@@ -13,7 +27,8 @@ without chained twins satisfy them.
 
 ## Setting
 
-A start of the late-views class (`LATE-VIEWS-20261126-001`, `late.py`: no shortage, distinctions held at most twice),
+A connected start of the late-views class (`LATE-VIEWS-20261126-001`, `late.py`: no shortage, distinctions held at most
+twice) with at least one loose distinction, and two under parity *(added after R1)*,
 grown by ordinary growth (the look-alike study's growth; Lemma R of `REDUCE-BLOCKS-20261119-001A`). Each piece is read
 apart; pieces are those whose node core finishes.
 
@@ -37,8 +52,8 @@ apart; pieces are those whose node core finishes.
 **The conditions.**
 - **(N1) No chained twins:** no two core nodes of one rank share two parents C and D with a chain base in the points of a
   common parent of C and D.
-- **(N2) Lifts meet:** any two core parents T, T′ of one core node that both hold a set B of chain bases share a core
-  parent holding B.
+- **(N2) Lifts meet:** any two distinct core parents T, T′ of one core node that both hold a nonempty set B of chain
+  bases share a core parent holding B.
 - **(N3) Base-holding families close:** every maximal family of three or more core nodes of one rank that hold a set B of
   chain bases and pairwise share a core parent holding B has a common core parent holding B, or a common core child.
 
@@ -46,7 +61,8 @@ apart; pieces are those whose node core finishes.
 
 On a start of the class whose node core satisfies N1 to N3, for every round t ≥ 1 there is a bijection from ordinary
 growth's births of round t to the extended nodes of round t under which each birth's parents are P(x) and its fresh
-count is f(x), together with the relay births of finished pieces without chains. So `late.py`'s binomial terms on the
+count is f(x), except that a terminal birth that relays gets f(x) + 1 = 1 *(corrected after R1)*, together with the
+relay births of finished pieces without chains. So `late.py`'s binomial terms on the
 node core give every round's births by kind, both readings, both knot laws.
 
 ## Lemma A (how two extended nodes of one round share a parent)
@@ -103,9 +119,15 @@ more, is a maximal family that pairwise shares, and, when it has two members, li
    So with three members or more P(y) is maximal; with two, every family holding it has a common parent, so no group
    holds it. ∎
 
+   *[Repaired after R1.]* The case list above omits a neighbour one chain total below the shortenings, (D′, v) with D′ a
+   core child of D: it exists only when |E(b)| = 2, with v = b − δ_e − δ_h, and it has the pair's common parent (D, v).
+   With several extra members, every family holding the pair lies on one side of its unique shared parent and unique
+   proposed child (N1 excludes the one crossing), so it keeps the pair's common parent; the referee's report gives the
+   case table.
+
 ## Lemma D (every group or uncovered pair with a non-pure member is some P(y))
 
-Under N1 and N3, every group of round-t extended nodes with a non-pure member, and every uncovered pair with one, is
+Under N1 to N3 *(corrected after R1: N2 is needed, through Lemma C)*, every group of round-t extended nodes with a non-pure member, and every uncovered pair with one, is
 P(y) for exactly one y of round t + 1.
 
 *Proof.* Let Q be the family. By Lemma A its chain totals are one value k or two, k and k + 1.
@@ -196,12 +218,13 @@ graded-order and cycle studies whose cores finish ([tree pieces](ext_samples.txt
 So N2 and N3 hold on every sample start without chained twins, and the theorem covers all 793 of them; there it agrees
 with the 1,586 start-and-law growth comparisons already recorded. N2 failed only on starts with chained twins, always at
 a node of rank at least their least rank (`convex.py` checks the single-base form). Two starts' cores passed the cap and
-were not checked.
+were not checked *(26 capped rows in all across both outputs, after R1)*.
 
 ## What is open
 
-1. **Does N1 imply N2 and N3?** On every sample start it does. A proof, or a start without chained twins on which N2 or N3
-   fails, would settle whether the class is the one N1 alone defines.
+1. **Does N1 imply N2 and N3?** *(Answered for N2 after R1: no.)* A 13-knot start meets N1 and N3 and fails N2, and so
+   does the cycle study's referee's nine-knot start. Whether N1 implies N3 is open; the referee reduces N3, under N1 and
+   single-base N2, to a test on triples.
 2. **Chained twins.** Lemma D's failure is exactly the family {(T_1, a), (T_2, a), (D_1, a − δ_e), (D_2, a − δ_e)}, the
    group the graded-order study found in its two misses: reading it means adding that family to the round rule.
 3. **Cores that do not finish.** Chains there need the unrolled map's copies (`CYCLE-READ-20261127-001`).
@@ -211,4 +234,5 @@ were not checked.
 The extended nodes are `CHAIN-IDENT-20261119-001A`'s clusters of the extended map with its connected core sets replaced by
 the node core's births, and the proof follows its Lemmas 4 and 5 and its proof of Theorem 1; the pure part is referee R2's
 argument. What is new is that the counting survives group cells (sets of births that are not connected sets), on a class
-read off the start, and that the obstruction is one family.
+read off the start, and that the obstructions are two families read off the start: chained twins, and lifts that do not
+meet *(corrected after R1: "the obstruction is one family")*.

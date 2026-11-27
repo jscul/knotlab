@@ -6318,8 +6318,8 @@ frees the three. That is a relation which passes the knot test, made of
 relations which pass it. On the grown ring at round 3 there is an example of
 the same kind whose agreements overlap, and there a round-3 birth's law is
 needed. The twelve-knot start was chosen, but such systems are common: of the
-85 kinds of connected twelve-knot system with three places per knot and every
-distinction held twice, 49 carry this step, counting each kind once, and none
+85 kinds of connected twelve-knot system with three places per knot, every
+distinction held twice and no two knots sharing two, 49 carry this step, counting each kind once, and none
 of the 27 smaller kinds does. Closure is not needed, and growth can make it. A
 connected start of ten knots grows two ordinary births in one round, and the
 grown stage carries 18 such steps on disjoint triples. Every one of its twelve

@@ -1,0 +1,1719 @@
+{
+  "candidate_from": "research/UPPER-GROWN-20261127-001/referee-R1/open_witness.json",
+  "growth_rule_from": "research/NAE-LAYER-20261127-001/referee-R1/growth_rule.py",
+  "ten_start_laws_then_two_birth_laws": [
+    [
+      4,
+      5,
+      6
+    ],
+    [
+      4,
+      7,
+      8
+    ],
+    [
+      0,
+      9,
+      10
+    ],
+    [
+      9,
+      11,
+      12
+    ],
+    [
+      1,
+      5,
+      12
+    ],
+    [
+      13,
+      14,
+      15
+    ],
+    [
+      7,
+      10,
+      11
+    ],
+    [
+      3,
+      14,
+      16
+    ],
+    [
+      2,
+      13,
+      16
+    ],
+    [
+      6,
+      8,
+      15
+    ],
+    [
+      0,
+      1,
+      17
+    ],
+    [
+      2,
+      3,
+      18
+    ]
+  ],
+  "carrier_order": [
+    "A0",
+    "A1",
+    "B0",
+    "B1",
+    "C0",
+    "C1"
+  ],
+  "carriers": [
+    [
+      0,
+      9,
+      17
+    ],
+    [
+      2,
+      3,
+      16
+    ],
+    [
+      1,
+      5,
+      18
+    ],
+    [
+      7,
+      10,
+      13
+    ],
+    [
+      4,
+      6,
+      8
+    ],
+    [
+      11,
+      12,
+      14
+    ]
+  ],
+  "ordinary_growth": {
+    "start_connected": true,
+    "start_loose": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "only_eligible_parent_pairs_with_common_older_holder": [
+      [
+        2,
+        4,
+        [
+          3
+        ]
+      ],
+      [
+        7,
+        8,
+        [
+          5
+        ]
+      ]
+    ],
+    "funded_first_round": [
+      {
+        "knot": 10,
+        "parents": [
+          2,
+          4
+        ],
+        "inputs": [
+          0,
+          1
+        ],
+        "demand": 0,
+        "fresh": [
+          17
+        ]
+      },
+      {
+        "knot": 11,
+        "parents": [
+          7,
+          8
+        ],
+        "inputs": [
+          2,
+          3
+        ],
+        "demand": 0,
+        "fresh": [
+          18
+        ]
+      }
+    ],
+    "grown_connected": true,
+    "grown_loose": [
+      17,
+      18
+    ],
+    "grown_holders_per_distinction": {
+      "0": [
+        2,
+        10
+      ],
+      "1": [
+        4,
+        10
+      ],
+      "2": [
+        8,
+        11
+      ],
+      "3": [
+        7,
+        11
+      ],
+      "4": [
+        0,
+        1
+      ],
+      "5": [
+        0,
+        4
+      ],
+      "6": [
+        0,
+        9
+      ],
+      "7": [
+        1,
+        6
+      ],
+      "8": [
+        1,
+        9
+      ],
+      "9": [
+        2,
+        3
+      ],
+      "10": [
+        2,
+        6
+      ],
+      "11": [
+        3,
+        6
+      ],
+      "12": [
+        3,
+        4
+      ],
+      "13": [
+        5,
+        8
+      ],
+      "14": [
+        5,
+        7
+      ],
+      "15": [
+        5,
+        9
+      ],
+      "16": [
+        7,
+        8
+      ],
+      "17": [
+        10
+      ],
+      "18": [
+        11
+      ]
+    },
+    "following_round": {
+      "status": "funded",
+      "births": [
+        {
+          "knot": 12,
+          "parents": [
+            10
+          ],
+          "inputs": [
+            17
+          ],
+          "demand": 0,
+          "fresh": [
+            19,
+            20
+          ]
+        },
+        {
+          "knot": 13,
+          "parents": [
+            11
+          ],
+          "inputs": [
+            18
+          ],
+          "demand": 0,
+          "fresh": [
+            21,
+            22
+          ]
+        }
+      ]
+    }
+  },
+  "assignments": 524288,
+  "allowed": 14554,
+  "six_reading_state_counts": {
+    "000000": 6822,
+    "000001": 1278,
+    "000010": 570,
+    "000011": 132,
+    "000100": 1224,
+    "000101": 288,
+    "000110": 48,
+    "000111": 24,
+    "001000": 1422,
+    "001001": 306,
+    "001010": 102,
+    "001011": 48,
+    "001100": 252,
+    "001101": 72,
+    "001111": 12,
+    "010000": 336,
+    "010001": 108,
+    "010010": 36,
+    "010011": 16,
+    "010100": 90,
+    "011000": 102,
+    "011100": 12,
+    "100000": 756,
+    "100001": 108,
+    "100010": 84,
+    "100011": 24,
+    "100100": 108,
+    "101000": 108,
+    "110000": 42,
+    "110001": 6,
+    "110010": 4,
+    "110011": 2,
+    "110100": 6,
+    "111000": 6
+  },
+  "lower": [
+    {
+      "readings": [
+        "A0",
+        "B0",
+        "C0"
+      ],
+      "raw_states_by_triple": {
+        "000": 10146,
+        "001": 826,
+        "010": 2166,
+        "011": 162,
+        "100": 1026,
+        "101": 114,
+        "110": 114
+      },
+      "minimal_source_holder_sets_to_exclude_111": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          6,
+          10
+        ]
+      ],
+      "carrier_distinctions_missing_from_each_minimal_set": [
+        [
+          18
+        ]
+      ],
+      "upper_fixes_with_both_values": {
+        "source": [
+          6,
+          5,
+          6
+        ],
+        "eight_clauses": [
+          6,
+          6,
+          6
+        ]
+      },
+      "restored_six_word_on_single_abstract_law_deletion": "101010",
+      "canonical": {
+        "A0": {
+          "variables": [
+            "B0",
+            "C0",
+            "A0"
+          ],
+          "allowed": [
+            "000",
+            "001",
+            "010",
+            "011",
+            "100",
+            "101",
+            "110"
+          ],
+          "binding": true,
+          "loss_on_erasure": true,
+          "coexistence": true
+        },
+        "B0": {
+          "variables": [
+            "A0",
+            "C0",
+            "B0"
+          ],
+          "allowed": [
+            "000",
+            "001",
+            "010",
+            "011",
+            "100",
+            "101",
+            "110"
+          ],
+          "binding": true,
+          "loss_on_erasure": true,
+          "coexistence": true
+        },
+        "C0": {
+          "variables": [
+            "A0",
+            "B0",
+            "C0"
+          ],
+          "allowed": [
+            "000",
+            "001",
+            "010",
+            "011",
+            "100",
+            "101",
+            "110"
+          ],
+          "binding": true,
+          "loss_on_erasure": true,
+          "coexistence": true
+        }
+      }
+    },
+    {
+      "readings": [
+        "A0",
+        "B0",
+        "C1"
+      ],
+      "raw_states_by_triple": {
+        "000": 9126,
+        "001": 1846,
+        "010": 1890,
+        "011": 438,
+        "100": 1000,
+        "101": 140,
+        "110": 114
+      },
+      "minimal_source_holder_sets_to_exclude_111": [
+        [
+          3,
+          4,
+          10
+        ]
+      ],
+      "carrier_distinctions_missing_from_each_minimal_set": [
+        [
+          14,
+          18
+        ]
+      ],
+      "upper_fixes_with_both_values": {
+        "source": [
+          6,
+          5,
+          6
+        ],
+        "eight_clauses": [
+          6,
+          6,
+          6
+        ]
+      },
+      "restored_six_word_on_single_abstract_law_deletion": "101001",
+      "canonical": {
+        "A0": {
+          "variables": [
+            "B0",
+            "C1",
+            "A0"
+          ],
+          "allowed": [
+            "000",
+            "001",
+            "010",
+            "011",
+            "100",
+            "101",
+            "110"
+          ],
+          "binding": true,
+          "loss_on_erasure": true,
+          "coexistence": true
+        },
+        "B0": {
+          "variables": [
+            "A0",
+            "C1",
+            "B0"
+          ],
+          "allowed": [
+            "000",
+            "001",
+            "010",
+            "011",
+            "100",
+            "101",
+            "110"
+          ],
+          "binding": true,
+          "loss_on_erasure": true,
+          "coexistence": true
+        },
+        "C1": {
+          "variables": [
+            "A0",
+            "B0",
+            "C1"
+          ],
+          "allowed": [
+            "000",
+            "001",
+            "010",
+            "011",
+            "100",
+            "101",
+            "110"
+          ],
+          "binding": true,
+          "loss_on_erasure": true,
+          "coexistence": true
+        }
+      }
+    },
+    {
+      "readings": [
+        "A0",
+        "B1",
+        "C0"
+      ],
+      "raw_states_by_triple": {
+        "000": 10374,
+        "001": 904,
+        "010": 1938,
+        "011": 84,
+        "100": 1026,
+        "101": 114,
+        "110": 114
+      },
+      "minimal_source_holder_sets_to_exclude_111": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          6,
+          10
+        ]
+      ],
+      "carrier_distinctions_missing_from_each_minimal_set": [
+        [
+          13
+        ]
+      ],
+      "upper_fixes_with_both_values": {
+        "source": [
+          6,
+          5,
+          6
+        ],
+        "eight_clauses": [
+          6,
+          6,
+          6
+        ]
+      },
+      "restored_six_word_on_single_abstract_law_deletion": "100110",
+      "canonical": {
+        "A0": {
+          "variables": [
+            "B1",
+            "C0",
+            "A0"
+          ],
+          "allowed": [
+            "000",
+            "001",
+            "010",
+            "011",
+            "100",
+            "101",
+            "110"
+          ],
+          "binding": true,
+          "loss_on_erasure": true,
+          "coexistence": true
+        },
+        "B1": {
+          "variables": [
+            "A0",
+            "C0",
+            "B1"
+          ],
+          "allowed": [
+            "000",
+            "001",
+            "010",
+            "011",
+            "100",
+            "101",
+            "110"
+          ],
+          "binding": true,
+          "loss_on_erasure": true,
+          "coexistence": true
+        },
+        "C0": {
+          "variables": [
+            "A0",
+            "B1",
+            "C0"
+          ],
+          "allowed": [
+            "000",
+            "001",
+            "010",
+            "011",
+            "100",
+            "101",
+            "110"
+          ],
+          "binding": true,
+          "loss_on_erasure": true,
+          "coexistence": true
+        }
+      }
+    },
+    {
+      "readings": [
+        "A0",
+        "B1",
+        "C1"
+      ],
+      "raw_states_by_triple": {
+        "000": 9390,
+        "001": 1888,
+        "010": 1626,
+        "011": 396,
+        "100": 1000,
+        "101": 140,
+        "110": 114
+      },
+      "minimal_source_holder_sets_to_exclude_111": [
+        [
+          2,
+          3,
+          6
+        ]
+      ],
+      "carrier_distinctions_missing_from_each_minimal_set": [
+        [
+          13,
+          14,
+          17
+        ]
+      ],
+      "upper_fixes_with_both_values": {
+        "source": [
+          6,
+          5,
+          6
+        ],
+        "eight_clauses": [
+          6,
+          6,
+          6
+        ]
+      },
+      "restored_six_word_on_single_abstract_law_deletion": "100101",
+      "canonical": {
+        "A0": {
+          "variables": [
+            "B1",
+            "C1",
+            "A0"
+          ],
+          "allowed": [
+            "000",
+            "001",
+            "010",
+            "011",
+            "100",
+            "101",
+            "110"
+          ],
+          "binding": true,
+          "loss_on_erasure": true,
+          "coexistence": true
+        },
+        "B1": {
+          "variables": [
+            "A0",
+            "C1",
+            "B1"
+          ],
+          "allowed": [
+            "000",
+            "001",
+            "010",
+            "011",
+            "100",
+            "101",
+            "110"
+          ],
+          "binding": true,
+          "loss_on_erasure": true,
+          "coexistence": true
+        },
+        "C1": {
+          "variables": [
+            "A0",
+            "B1",
+            "C1"
+          ],
+          "allowed": [
+            "000",
+            "001",
+            "010",
+            "011",
+            "100",
+            "101",
+            "110"
+          ],
+          "binding": true,
+          "loss_on_erasure": true,
+          "coexistence": true
+        }
+      }
+    },
+    {
+      "readings": [
+        "A1",
+        "B0",
+        "C0"
+      ],
+      "raw_states_by_triple": {
+        "000": 10584,
+        "001": 882,
+        "010": 2160,
+        "011": 162,
+        "100": 588,
+        "101": 58,
+        "110": 120
+      },
+      "minimal_source_holder_sets_to_exclude_111": [
+        [
+          0,
+          5,
+          7,
+          8,
+          9,
+          11
+        ]
+      ],
+      "carrier_distinctions_missing_from_each_minimal_set": [
+        [
+          1
+        ]
+      ],
+      "upper_fixes_with_both_values": {
+        "source": [
+          6,
+          6,
+          6
+        ],
+        "eight_clauses": [
+          6,
+          6,
+          6
+        ]
+      },
+      "restored_six_word_on_single_abstract_law_deletion": "011010",
+      "canonical": {
+        "A1": {
+          "variables": [
+            "B0",
+            "C0",
+            "A1"
+          ],
+          "allowed": [
+            "000",
+            "001",
+            "010",
+            "011",
+            "100",
+            "101",
+            "110"
+          ],
+          "binding": true,
+          "loss_on_erasure": true,
+          "coexistence": true
+        },
+        "B0": {
+          "variables": [
+            "A1",
+            "C0",
+            "B0"
+          ],
+          "allowed": [
+            "000",
+            "001",
+            "010",
+            "011",
+            "100",
+            "101",
+            "110"
+          ],
+          "binding": true,
+          "loss_on_erasure": true,
+          "coexistence": true
+        },
+        "C0": {
+          "variables": [
+            "A1",
+            "B0",
+            "C0"
+          ],
+          "allowed": [
+            "000",
+            "001",
+            "010",
+            "011",
+            "100",
+            "101",
+            "110"
+          ],
+          "binding": true,
+          "loss_on_erasure": true,
+          "coexistence": true
+        }
+      }
+    },
+    {
+      "readings": [
+        "A1",
+        "B0",
+        "C1"
+      ],
+      "raw_states_by_triple": {
+        "000": 9612,
+        "001": 1854,
+        "010": 1884,
+        "011": 438,
+        "100": 514,
+        "101": 132,
+        "110": 120
+      },
+      "minimal_source_holder_sets_to_exclude_111": [
+        [
+          4,
+          7,
+          11
+        ]
+      ],
+      "carrier_distinctions_missing_from_each_minimal_set": [
+        [
+          11
+        ]
+      ],
+      "upper_fixes_with_both_values": {
+        "source": [
+          6,
+          6,
+          6
+        ],
+        "eight_clauses": [
+          6,
+          6,
+          6
+        ]
+      },
+      "restored_six_word_on_single_abstract_law_deletion": "011001",
+      "canonical": {
+        "A1": {
+          "variables": [
+            "B0",
+            "C1",
+            "A1"
+          ],
+          "allowed": [
+            "000",
+            "001",
+            "010",
+            "011",
+            "100",
+            "101",
+            "110"
+          ],
+          "binding": true,
+          "loss_on_erasure": true,
+          "coexistence": true
+        },
+        "B0": {
+          "variables": [
+            "A1",
+            "C1",
+            "B0"
+          ],
+          "allowed": [
+            "000",
+            "001",
+            "010",
+            "011",
+            "100",
+            "101",
+            "110"
+          ],
+          "binding": true,
+          "loss_on_erasure": true,
+          "coexistence": true
+        },
+        "C1": {
+          "variables": [
+            "A1",
+            "B0",
+            "C1"
+          ],
+          "allowed": [
+            "000",
+            "001",
+            "010",
+            "011",
+            "100",
+            "101",
+            "110"
+          ],
+          "binding": true,
+          "loss_on_erasure": true,
+          "coexistence": true
+        }
+      }
+    },
+    {
+      "readings": [
+        "A1",
+        "B1",
+        "C0"
+      ],
+      "raw_states_by_triple": {
+        "000": 10800,
+        "001": 960,
+        "010": 1944,
+        "011": 84,
+        "100": 600,
+        "101": 58,
+        "110": 108
+      },
+      "minimal_source_holder_sets_to_exclude_111": [
+        [
+          1,
+          5,
+          7,
+          8,
+          9
+        ]
+      ],
+      "carrier_distinctions_missing_from_each_minimal_set": [
+        [
+          10
+        ]
+      ],
+      "upper_fixes_with_both_values": {
+        "source": [
+          6,
+          6,
+          6
+        ],
+        "eight_clauses": [
+          6,
+          6,
+          6
+        ]
+      },
+      "restored_six_word_on_single_abstract_law_deletion": "010110",
+      "canonical": {
+        "A1": {
+          "variables": [
+            "B1",
+            "C0",
+            "A1"
+          ],
+          "allowed": [
+            "000",
+            "001",
+            "010",
+            "011",
+            "100",
+            "101",
+            "110"
+          ],
+          "binding": true,
+          "loss_on_erasure": true,
+          "coexistence": true
+        },
+        "B1": {
+          "variables": [
+            "A1",
+            "C0",
+            "B1"
+          ],
+          "allowed": [
+            "000",
+            "001",
+            "010",
+            "011",
+            "100",
+            "101",
+            "110"
+          ],
+          "binding": true,
+          "loss_on_erasure": true,
+          "coexistence": true
+        },
+        "C0": {
+          "variables": [
+            "A1",
+            "B1",
+            "C0"
+          ],
+          "allowed": [
+            "000",
+            "001",
+            "010",
+            "011",
+            "100",
+            "101",
+            "110"
+          ],
+          "binding": true,
+          "loss_on_erasure": true,
+          "coexistence": true
+        }
+      }
+    },
+    {
+      "readings": [
+        "A1",
+        "B1",
+        "C1"
+      ],
+      "raw_states_by_triple": {
+        "000": 9864,
+        "001": 1896,
+        "010": 1632,
+        "011": 396,
+        "100": 526,
+        "101": 132,
+        "110": 108
+      },
+      "minimal_source_holder_sets_to_exclude_111": [
+        [
+          6,
+          7,
+          8
+        ]
+      ],
+      "carrier_distinctions_missing_from_each_minimal_set": [
+        [
+          12
+        ]
+      ],
+      "upper_fixes_with_both_values": {
+        "source": [
+          6,
+          6,
+          6
+        ],
+        "eight_clauses": [
+          6,
+          6,
+          6
+        ]
+      },
+      "restored_six_word_on_single_abstract_law_deletion": "010101",
+      "canonical": {
+        "A1": {
+          "variables": [
+            "B1",
+            "C1",
+            "A1"
+          ],
+          "allowed": [
+            "000",
+            "001",
+            "010",
+            "011",
+            "100",
+            "101",
+            "110"
+          ],
+          "binding": true,
+          "loss_on_erasure": true,
+          "coexistence": true
+        },
+        "B1": {
+          "variables": [
+            "A1",
+            "C1",
+            "B1"
+          ],
+          "allowed": [
+            "000",
+            "001",
+            "010",
+            "011",
+            "100",
+            "101",
+            "110"
+          ],
+          "binding": true,
+          "loss_on_erasure": true,
+          "coexistence": true
+        },
+        "C1": {
+          "variables": [
+            "A1",
+            "B1",
+            "C1"
+          ],
+          "allowed": [
+            "000",
+            "001",
+            "010",
+            "011",
+            "100",
+            "101",
+            "110"
+          ],
+          "binding": true,
+          "loss_on_erasure": true,
+          "coexistence": true
+        }
+      }
+    }
+  ],
+  "source_holder_fixes_with_both_values_by_lower_reading": [
+    [
+      6,
+      6,
+      6,
+      6,
+      2,
+      6
+    ],
+    [
+      6,
+      6,
+      6,
+      6,
+      2,
+      6
+    ],
+    [
+      2,
+      6,
+      6,
+      6,
+      6,
+      6
+    ],
+    [
+      6,
+      6,
+      6,
+      6,
+      6,
+      2
+    ],
+    [
+      6,
+      6,
+      2,
+      6,
+      6,
+      6
+    ],
+    [
+      6,
+      2,
+      6,
+      6,
+      6,
+      6
+    ],
+    [
+      6,
+      6,
+      6,
+      2,
+      6,
+      6
+    ],
+    [
+      6,
+      2,
+      6,
+      6,
+      6,
+      6
+    ],
+    [
+      6,
+      2,
+      6,
+      6,
+      6,
+      6
+    ],
+    [
+      6,
+      6,
+      6,
+      6,
+      2,
+      6
+    ],
+    [
+      2,
+      6,
+      6,
+      6,
+      6,
+      6
+    ],
+    [
+      6,
+      2,
+      6,
+      6,
+      6,
+      6
+    ]
+  ],
+  "single_member_flips": [
+    [
+      1254,
+      988,
+      1254
+    ],
+    [
+      766,
+      766,
+      766
+    ],
+    [
+      1590,
+      1520,
+      1548
+    ],
+    [
+      1368,
+      1668,
+      920
+    ],
+    [
+      1102,
+      1102,
+      1102
+    ],
+    [
+      1776,
+      1496,
+      1000
+    ]
+  ],
+  "all_loose_values_fixed_then_lower_value_counts": {
+    "00": [
+      {
+        "0": 3325,
+        "1": 312
+      },
+      {
+        "0": 3447,
+        "1": 190
+      },
+      {
+        "0": 3211,
+        "1": 426
+      },
+      {
+        "0": 3097,
+        "1": 540
+      },
+      {
+        "0": 3363,
+        "1": 274
+      },
+      {
+        "0": 3033,
+        "1": 604
+      }
+    ],
+    "10": [
+      {
+        "0": 3325,
+        "1": 315
+      },
+      {
+        "0": 3447,
+        "1": 193
+      },
+      {
+        "0": 2845,
+        "1": 795
+      },
+      {
+        "0": 3112,
+        "1": 528
+      },
+      {
+        "0": 3363,
+        "1": 277
+      },
+      {
+        "0": 3032,
+        "1": 608
+      }
+    ],
+    "01": [
+      {
+        "0": 3325,
+        "1": 315
+      },
+      {
+        "0": 3447,
+        "1": 193
+      },
+      {
+        "0": 2845,
+        "1": 795
+      },
+      {
+        "0": 3112,
+        "1": 528
+      },
+      {
+        "0": 3363,
+        "1": 277
+      },
+      {
+        "0": 3032,
+        "1": 608
+      }
+    ],
+    "11": [
+      {
+        "0": 3325,
+        "1": 312
+      },
+      {
+        "0": 3447,
+        "1": 190
+      },
+      {
+        "0": 3211,
+        "1": 426
+      },
+      {
+        "0": 3097,
+        "1": 540
+      },
+      {
+        "0": 3363,
+        "1": 274
+      },
+      {
+        "0": 3033,
+        "1": 604
+      }
+    ]
+  },
+  "eight_abstract_clauses_permit_six_words": 37,
+  "upper_as_pairwise_disagreement": {
+    "raw_assignments_per_word": {
+      "000": 7262,
+      "001": 1930,
+      "010": 2730,
+      "011": 744,
+      "100": 1144,
+      "101": 336,
+      "110": 408
+    },
+    "abstract_six_words_per_word": {
+      "000": 7,
+      "001": 6,
+      "010": 6,
+      "011": 4,
+      "100": 6,
+      "101": 4,
+      "110": 4
+    },
+    "canonical_from_actual_six_image": {
+      "P": {
+        "variables": [
+          "Q",
+          "R",
+          "P"
+        ],
+        "allowed": [
+          "000",
+          "001",
+          "010",
+          "011",
+          "100",
+          "101",
+          "110"
+        ],
+        "binding": true,
+        "loss_on_erasure": true,
+        "coexistence": true
+      },
+      "Q": {
+        "variables": [
+          "P",
+          "R",
+          "Q"
+        ],
+        "allowed": [
+          "000",
+          "001",
+          "010",
+          "011",
+          "100",
+          "101",
+          "110"
+        ],
+        "binding": true,
+        "loss_on_erasure": true,
+        "coexistence": true
+      },
+      "R": {
+        "variables": [
+          "P",
+          "Q",
+          "R"
+        ],
+        "allowed": [
+          "000",
+          "001",
+          "010",
+          "011",
+          "100",
+          "101",
+          "110"
+        ],
+        "binding": true,
+        "loss_on_erasure": true,
+        "coexistence": true
+      }
+    },
+    "canonical_from_eight_lower_laws": {
+      "P": {
+        "variables": [
+          "Q",
+          "R",
+          "P"
+        ],
+        "allowed": [
+          "000",
+          "001",
+          "010",
+          "011",
+          "100",
+          "101",
+          "110"
+        ],
+        "binding": true,
+        "loss_on_erasure": true,
+        "coexistence": true
+      },
+      "Q": {
+        "variables": [
+          "P",
+          "R",
+          "Q"
+        ],
+        "allowed": [
+          "000",
+          "001",
+          "010",
+          "011",
+          "100",
+          "101",
+          "110"
+        ],
+        "binding": true,
+        "loss_on_erasure": true,
+        "coexistence": true
+      },
+      "R": {
+        "variables": [
+          "P",
+          "Q",
+          "R"
+        ],
+        "allowed": [
+          "000",
+          "001",
+          "010",
+          "011",
+          "100",
+          "101",
+          "110"
+        ],
+        "binding": true,
+        "loss_on_erasure": true,
+        "coexistence": true
+      }
+    }
+  },
+  "source_law_deletions": [
+    {
+      "source_law": 0,
+      "remaining_source_states": 20178,
+      "restored_upper_111": 50,
+      "restored_upper_111_witness_raw_LSB_first": "0101000100101101000",
+      "lower_111_counts_added_in_product_order": [
+        20,
+        0,
+        12,
+        0,
+        22,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "source_law": 1,
+      "remaining_source_states": 20178,
+      "restored_upper_111": 62,
+      "restored_upper_111_witness_raw_LSB_first": "0101101110101100000",
+      "lower_111_counts_added_in_product_order": [
+        18,
+        0,
+        26,
+        0,
+        0,
+        0,
+        22,
+        0
+      ]
+    },
+    {
+      "source_law": 2,
+      "remaining_source_states": 19950,
+      "restored_upper_111": 102,
+      "restored_upper_111_witness_raw_LSB_first": "0110101010010010000",
+      "lower_111_counts_added_in_product_order": [
+        18,
+        0,
+        24,
+        84,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "source_law": 3,
+      "remaining_source_states": 20026,
+      "restored_upper_111": 186,
+      "restored_upper_111_witness_raw_LSB_first": "0101001100100100000",
+      "lower_111_counts_added_in_product_order": [
+        18,
+        120,
+        12,
+        156,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "source_law": 4,
+      "remaining_source_states": 19266,
+      "restored_upper_111": 96,
+      "restored_upper_111_witness_raw_LSB_first": "0101010100101101000",
+      "lower_111_counts_added_in_product_order": [
+        18,
+        60,
+        12,
+        0,
+        0,
+        30,
+        0,
+        0
+      ]
+    },
+    {
+      "source_law": 5,
+      "remaining_source_states": 19916,
+      "restored_upper_111": 24,
+      "restored_upper_111_witness_raw_LSB_first": "1111101010010000100",
+      "lower_111_counts_added_in_product_order": [
+        0,
+        0,
+        0,
+        0,
+        18,
+        0,
+        14,
+        0
+      ]
+    },
+    {
+      "source_law": 6,
+      "remaining_source_states": 20254,
+      "restored_upper_111": 102,
+      "restored_upper_111_witness_raw_LSB_first": "0110001100111110000",
+      "lower_111_counts_added_in_product_order": [
+        18,
+        0,
+        12,
+        42,
+        0,
+        0,
+        0,
+        54
+      ]
+    },
+    {
+      "source_law": 7,
+      "remaining_source_states": 20682,
+      "restored_upper_111": 112,
+      "restored_upper_111_witness_raw_LSB_first": "1111101010010010100",
+      "lower_111_counts_added_in_product_order": [
+        0,
+        0,
+        0,
+        0,
+        18,
+        94,
+        14,
+        66
+      ]
+    },
+    {
+      "source_law": 8,
+      "remaining_source_states": 20682,
+      "restored_upper_111": 86,
+      "restored_upper_111_witness_raw_LSB_first": "0111001101100100100",
+      "lower_111_counts_added_in_product_order": [
+        0,
+        0,
+        0,
+        0,
+        18,
+        0,
+        14,
+        66
+      ]
+    },
+    {
+      "source_law": 9,
+      "remaining_source_states": 20140,
+      "restored_upper_111": 24,
+      "restored_upper_111_witness_raw_LSB_first": "1111101010010001100",
+      "lower_111_counts_added_in_product_order": [
+        0,
+        0,
+        0,
+        0,
+        18,
+        0,
+        14,
+        0
+      ]
+    },
+    {
+      "source_law": 10,
+      "remaining_source_states": 19228,
+      "restored_upper_111": 90,
+      "restored_upper_111_witness_raw_LSB_first": "0001101010101100000",
+      "lower_111_counts_added_in_product_order": [
+        36,
+        66,
+        12,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "source_law": 11,
+      "remaining_source_states": 19916,
+      "restored_upper_111": 50,
+      "restored_upper_111_witness_raw_LSB_first": "1000101010101110000",
+      "lower_111_counts_added_in_product_order": [
+        0,
+        0,
+        0,
+        0,
+        18,
+        52,
+        0,
+        0
+      ]
+    }
+  ],
+  "necessary_carriers_of_loose_distinctions_checked": [
+    {
+      "source_law": 10,
+      "private_distinctions": [
+        17
+      ],
+      "restored_upper_111_assignments_checked": 90
+    },
+    {
+      "source_law": 11,
+      "private_distinctions": [
+        18
+      ],
+      "restored_upper_111_assignments_checked": 50
+    }
+  ],
+  "wall_seconds": 0.831307
+}

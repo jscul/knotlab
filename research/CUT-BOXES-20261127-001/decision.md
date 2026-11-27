@@ -5,7 +5,13 @@
 > Splitting each of the 18 links of each of the 49 systems in turn, one of the 882 splits keeps the step: 18 boxes,
 > whose carriers read both loose distinctions. The 49 seeded splits all missed it. That open system is one ordinary
 > round from a ten-knot start. So the step does not need a closed system, and "apparently out of ordinary growth's
-> reach" is false. This study's own referee is still running.
+> reach" is false. **Its own referee (R1: refuted, Block; [report](referee-R1/report.md))** agrees: all 49 seeded cuts
+> reproduce with no box and 131,578 to 223,829 bonds, and one of the 882 labelled cuts (1 of 371 up to renaming) gives
+> 18 boxes, each needing all twelve laws, made by one funded ordinary round from the ten-knot start. **Narrowings:** an
+> old box dies because each unused copy of a split distinction can satisfy its holder's law, so no transported box
+> survives any single cut (28,836 choices), while new carriers can read both copies; two cuts on two sources gave none
+> (0 of 306); allowing one shared distinction within each compared pair gives an upper relation on all 49 cuts (a form
+> already known on the grown ring); the earlier zero covers 1,416 grown stages, with a holder limit on 351 searches.
 
 `CUT-BOXES-20261127-001`. Frozen in commit a14cb272a5. Results are in `out/`. Referee pending.
 
@@ -18,7 +24,7 @@ had one seeded link cut into two loose distinctions. After the cut:
 
 **What follows, and what does not.** In the closed systems every box needs all twelve knots. A knot that holds a
 distinction no other holder holds and no carrier reads can satisfy its law there, so it is never needed. Cutting a link
-gives two knots such a distinction, and at most a box that reads both loose distinctions could survive. None does, on
+gives two knots a loose distinction [R1: whose use by the carriers must be checked], and at most a box that reads both loose distinctions could survive. None does, on
 the 49 cuts read.
 
 A connected grown stage under ordinary growth always has loose distinctions, so it has no closed part: a closed part

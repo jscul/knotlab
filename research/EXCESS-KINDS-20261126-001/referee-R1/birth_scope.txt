@@ -1,0 +1,38 @@
+eleven (start) 64 old states {'x1': ['c', 'x2', 'x3'], 'y1': ['t', 'y2', 'y3']}
+('x2', 'x3') ('y2', 'y3') None outside fixed record [] finish 20/9 start 2, hidden both
+('x2', 'x3') ('y2', 't') None outside fixed record ['t'] finish 19/9 start 2, hidden both
+('x2', 'x3') ('y3', 't') None outside fixed record ['t'] finish 19/9 start 2, hidden both
+('x2', 'c') ('y2', 'y3') None outside fixed record ['c'] finish 19/9 start 2, hidden both
+('x2', 'c') ('y2', 't') None outside fixed record ['c', 't'] finish 37/18 start 2, hidden both
+('x2', 'c') ('y3', 't') None outside fixed record ['c', 't'] finish 37/18 start 2, hidden both
+('x3', 'c') ('y2', 'y3') None outside fixed record ['c'] finish 19/9 start 2, hidden both
+('x3', 'c') ('y2', 't') None outside fixed record ['c', 't'] finish 37/18 start 2, hidden both
+('x3', 'c') ('y3', 't') None outside fixed record ['c', 't'] finish 37/18 start 2, hidden both
+All distinctions held by each reader, finish change 1/3 0
+ten A: eleven less even(y2,k1,k2) (start) 128 old states {'x1': ['c', 'x2', 'x3'], 'y1': ['t', 'y3'], 'y2': ['t', 'y3']}
+('x2', 'x3') ('y3', 't') ('y2', 't') outside fixed record ['t'] finish 55/27 start 2, hidden both
+('x2', 'x3') ('y3', 't') ('y2', 'y3') outside fixed record ['t'] finish 55/27 start 2, hidden both
+('x2', 'c') ('y3', 't') ('y2', 't') outside fixed record ['c', 't'] finish 109/54 start 2, hidden both
+('x2', 'c') ('y3', 't') ('y2', 'y3') outside fixed record ['c', 't'] finish 109/54 start 2, hidden both
+('x3', 'c') ('y3', 't') ('y2', 't') outside fixed record ['c', 't'] finish 109/54 start 2, hidden both
+('x3', 'c') ('y3', 't') ('y2', 'y3') outside fixed record ['c', 't'] finish 109/54 start 2, hidden both
+ten B: eleven less odd(y3,k1,k2) (start) 128 old states {'x1': ['c', 'x2', 'x3'], 'y1': ['t', 'y2'], 'y3': ['t', 'y2']}
+('x2', 'x3') ('y2', 't') ('y3', 't') outside fixed record ['t'] finish 55/27 start 2, hidden both
+('x2', 'x3') ('y2', 't') ('y3', 'y2') outside fixed record ['t'] finish 55/27 start 2, hidden both
+('x2', 'c') ('y2', 't') ('y3', 't') outside fixed record ['c', 't'] finish 109/54 start 2, hidden both
+('x2', 'c') ('y2', 't') ('y3', 'y2') outside fixed record ['c', 't'] finish 109/54 start 2, hidden both
+('x3', 'c') ('y2', 't') ('y3', 't') outside fixed record ['c', 't'] finish 109/54 start 2, hidden both
+('x3', 'c') ('y2', 't') ('y3', 'y2') outside fixed record ['c', 't'] finish 109/54 start 2, hidden both
+E3 score 7/3 record changes 0 1/6
+E4 score 17/6 record changes 1/3 1/3
+E5 score 11/4 record changes 1/4 0
+E6 score 5/2 record changes 1/4 0
+E7 score 5/2 record changes 1/4 0
+E5 at old records 010 and 101, context 00, surviving fresh pairs [(0, 0), (1, 1)]
+Deletion archive: 66 starts, 10 scored, 57 comparisons, 12 hidden excesses and 18 exposed
+Removing ['nae(c,x2,s1)', 'even(s1,m1,m2)'] finish scores {'2059/1029': 2, '1373/686': 4, '2060/1029': 1, '687/343': 2} largest 687/343
+Removing ['even(x2,h1,h2)', 'odd(x3,h1,h2)'] finish scores {'704/345': 1, '337/165': 1, '707/345': 2, '4403/2145': 2, '527/253': 1, '199/95': 2} largest 199/95
+ordinary growth gain starts 34 gain rows by round and arm {(1, '-'): 106, (2, '-'): 64, (3, '-'): 184}
+rule R gain starts 7 gain rows by round and arm {(1, '-'): 214}
+rule Q gain starts 27 gain rows by round and arm {(1, 'mixed'): 664, (1, 'uniform'): 16, (2, 'mixed'): 1344, (2, 'uniform'): 16, (3, 'mixed'): 4324, (3, 'uniform'): 16}
+elapsed=1.02 s user=1.01 s system=0.00 s peak_rss=16544 KB

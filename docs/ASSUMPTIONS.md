@@ -6171,6 +6171,7 @@ evidence: results and their status come from the records each entry links.
 - **Rests on it.** The three kinds and Theorem K ([the note](../research/EXCESS-KINDS-20261126-001/README.md)); the whole-stage 9/4 is kind (b) only under (1): at fixed addresses it hides every record and lies outside the quantum set.
 - **Challenge.** Read the record with fixed settings only (the 9/4 tables then stand as no-signalling tables beyond quantum theory); drop (2), as the study of patterns with allowed parts and no allowed whole does. The model is not expected to keep (2) if that study succeeds.
 - **History.**
+  - 2026-11-27 · Refereed (`EXCESS-KINDS-20261126-001`, report R1, four Blocks on readings): structural choices, scalar states and adaptive signalling need separate statements; a choice from holdings alone exposes the funding 9/4, so the free sender of (1) is needed only for kind (a); (2) cannot describe the part-counting rows it excludes. [Referee report](../research/EXCESS-KINDS-20261126-001/referee-R1/report.md)
   - 2026-11-26 · Closed with `EXCESS-KINDS-20261126-001` (referee pending): the free sender is an agent outside the laws that read no values, since keying a birth to a value is what they never do; inside the model settings are fixed, and there the whole-stage 9/4 (outside the quantum set) and the four-type 20/9 hide every record. [the note](../research/EXCESS-KINDS-20261126-001/README.md)
   - 2026-11-26 · Entered with `EXCESS-KINDS-20261126-001`.
 

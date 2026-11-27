@@ -66,6 +66,17 @@ added, rows 23, 37–38, 41 and 51 refined. **fin**: counting from the finish (A
 | 63 | 14/5 | `research/NO-WHOLE-STATE-20261126-001/referee-R1/report.md:47` | c (sq) | A counting state read with values that are not products of distinctions' values (Z and X against (4Z ± 3X)/5) | — |
 | 64 | three-reader value 4 against 2 | `research/EVENTUAL-R-20261126-001/README.md:81-83` | c | The four-knot closure read with the rule R of commuting and anticommuting values (a supplied reading) | (the other thread's) |
 
+**Rows added after the referee (R1, row audit):**
+
+| # | Value | Record | Kind |
+|---|---|---|---|
+| 65 | 19/8 | `experiments/WHOLE-STAGE-SETTINGS-20261120-001C/WHOLE-STAGE-SETTINGS-20261120-001C-E001_masking/result.md` (high Bob preparation at weight 3/4) | b (Alice's full record TV 1/4) |
+| 66 | 4 | `proofs/LOCAL-EDIT-POLICIES-20261123-001A/…/proof.md` §5 (the flag from an address, two equally weighted types) | b, c (best policy TV 1/2) |
+| 67 | 682/323 | `research/THIRD-HOLDER-20261123-001B/results_draft.md` (the eighteen-knot removal control) | a·open |
+| 68 | 7/3 | `research/TWO-COUNTINGS-20261125-001/referee-R1/report.md` (both mixed stages of the 8/3 example) | a·open (record changed 1/6) |
+| 69 | 3778/1863, 3830/1863 | the retained setting-birth records after later one-parent growth (referee's row audit) | a |
+| 70 | up to 527/253; 199/95 | 18 open deletion comparisons (`research/SETTING-AS-REREAD-20261123-001A/results_draft.md`, prediction 4) | a |
+
 **Counts.** Kind (a): rows 24–39, 50, 51, and E1 of row 40 and E3 of row 41. Kind (b): rows 17–19, 42, 52, 53 and
 E4–E7 of row 41. Outside H1: rows 13, 14, 60, 61, 62. Kind (c): the rest (rows 1–12, 15, 16, 20–23, 43–46, 48, 49,
-54–59, 63, 64 and the orders of row 40). Under H1 no row fits none of the three.
+54–59, 63, 64 and the orders of row 40). Under H1 no row fits none of the three. The list is not complete (referee R1 found rows 65–70 and says the search is not a coverage certificate).

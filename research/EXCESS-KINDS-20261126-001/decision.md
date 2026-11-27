@@ -1,5 +1,37 @@
 # Three kinds: what stands
 
+> **Referee report R1, 27 November 2026: confirmed with fixes; Theorem K stands; four Blocks** ([the report](referee-R1/report.md),
+> [row audit](referee-R1/row-audit.md)). The referee rebuilt the seven-knot structure (19/9; 43 of 43 rules pass the
+> knot test in the whole), every free-sender policy, the two quantum comparisons, the proof step by step (with a second
+> normalization and the case without H5 also proved), and the random replay. No checked table needs a fourth kind. Read
+> this record with these changes.
+> - **Block: a value-reading sender is not needed for the funding signal.** In the whole-stage 9/4 the short holder has
+>   one loose distinction and the other two; a sender choosing which holder to supply from holdings alone moves the
+>   other reader's birth from 0 to 1/2. "Only an agent outside the model, keying a setting to a value, makes them
+>   signal" is withdrawn for kind (b): a choice from holdings, still supplied from outside but not reading values,
+>   exposes it. For kind (a) the free sender of Theorem K keys to values.
+> - **Block: quantum-compatible tables do not need a read of a change.** Row 20 (17/8, inside the quantum set) passes
+>   every policy its declared records allow, and row 8 gives a quantum-compatible 8/3 from a supplied five-to-one
+>   weighting. "Every recorded table … inside the quantum set … is of kind (c) with a read of a change and squared
+>   weights" is withdrawn.
+> - **Block: "no state of the whole" is not the literature's nonlocality.** The literature's criterion is the absence of
+>   a joint probability distribution, not of a jointly allowed assignment: the four-type 20/9 has every assignment
+>   supported and still has no joint distribution. H1 concerns the protocol's finished word; the README's sentence is
+>   withdrawn.
+> - **Block: the inventory is not complete.** Missed, each of an existing kind: 19/8 (the funding experiment at weight
+>   3/4, kind b), a 4 in the policy proof (kinds b and c), 682/323 (the eighteen-knot removal control, kind a with a record
+>   changed), 7/3 from the mixed stages of the 8/3 example, 3778/1863 and 3830/1863 after later one-parent growth, and
+>   18 deletion comparisons up to 527/253 and 199/95 (kind a). "Every recorded row is classed" is withdrawn; the three
+>   kinds stand.
+> - **Narrowings.** Theorem K's contrapositive guarantees *some* revealing policy, needing immunity to every policy in
+>   both directions (one direction alone is not enough: a two-bit example has 8/3 with every one-way policy silent); the
+>   seven-knot 1/9 is against the first constant policy, the largest change between two policies is 2/9; the record of
+>   the eleven-rule replay leaves the third option outside its named distinctions, recoverable from them, so the rows
+>   stay kind (a); counting from the start gives 2 on the comparisons satisfying the local-product hypotheses when
+>   maximizing over all outcome functions, and 104/45 under supplied orders; of the 1,693 random models above 2 without
+>   the filter, 249 satisfy H5; five rows (13, 14, 60, 61, 62), not six, are marked outside H1; row 54's control was not
+>   run in its source, row 1 reads values, row 59 is an excess on a different inequality.
+
 Epic `EXCESS-KINDS-20261126-001` (G18, at the coordinator's pick: the advisor's direction 3; register entry A296),
 closed 26 November 2026. An argument with a classification of the record and small computed checks; the advisor
 consulted twice (for the coordinator's choice and on the draft); referee pending.

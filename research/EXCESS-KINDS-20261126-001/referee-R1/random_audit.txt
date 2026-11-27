@@ -1,0 +1,57 @@
+Run from the repository root with one process and a 1 GiB virtual-memory limit.
+Command: ulimit -v 1048576 && /usr/bin/time -f "user_cpu=%Us system_cpu=%Ss wall=%es peak_RSS=%MkB" .venv/bin/python -B research/EXCESS-KINDS-20261126-001/referee-R1/random_audit.py --trials 20000
+Pilot at 500 draws per mode: 0.06 s user CPU, 0.00 s system CPU, 0.07 s wall, 13484 KiB peak RSS. Projected 2.4 s user CPU.
+Each finished part uses sum(mu[v,u] * t1[a,v] * t2[b,u]) over the corresponding values.
+The three-part aggregate checks positive finished weight for D, D-prime and NN-prime across settings. The four-term checks test DD-prime, DN-prime, ND-prime and NN-prime separately. The reported flag uses only old weights.
+Part order: ("DD'", "DN'", "ND'", "NN'"). Setting-pair order: ((0, 0), (0, 1), (1, 0), (1, 1)).
+Control 0 (quiet, H5, CHSH 2)
+  mu=[[1, 1], [1, 1]], t1=[[1, 1], [2, 1]], t2=[[1, 0], [2, 0]]
+  old weights=(1, 1, 1, 1), finished weights=((1, 0, 1, 0), (2, 0, 2, 0), (2, 0, 1, 0), (4, 0, 2, 0))
+Control 1 (quiet, H5, CHSH 2)
+  mu=[[1, 1], [1, 1]], t1=[[1, 1], [2, 1]], t2=[[1, 1], [2, 1]]
+  old weights=(1, 1, 1, 1), finished weights=((1, 1, 1, 1), (2, 1, 2, 1), (2, 2, 1, 1), (4, 2, 2, 1))
+
+Seed 20261126, 20000 draws, H5 imposed
+  all | passed_filter=6843, valid=6774
+    above_2=254, max_CHSH=17/6
+    quiet_above_2=0, max_CHSH=-
+    quiet=1794, max_CHSH=2
+    quiet_reported_flag=95, max_CHSH=2
+    quiet_positive_D_Dprime_NN=46, max_CHSH=9/5
+    quiet_each_part_positive_somewhere=46, max_CHSH=9/5
+    quiet_four_parts_same_pair=46, max_CHSH=9/5
+    quiet_four_parts_every_pair=46, max_CHSH=9/5
+  First flagged draw with a missing finished part: 24, H5=True, CHSH=2
+    mu=[[1, 0], [1, 1]], t1=((1, 0), (2, 0)), t2=((3, 1), (3, 3)), finished weights=((0, 3, 0, 0), (0, 3, 0, 0), (0, 6, 0, 0), (0, 6, 0, 0))
+
+Seed 20261126, 20000 draws, H5 filter disabled
+  all | passed_filter=20000, valid=18289
+    above_2=1693, max_CHSH=4
+    quiet_above_2=0, max_CHSH=-
+    quiet=3173, max_CHSH=2
+    quiet_reported_flag=177, max_CHSH=2
+    quiet_positive_D_Dprime_NN=107, max_CHSH=2
+    quiet_each_part_positive_somewhere=107, max_CHSH=2
+    quiet_four_parts_same_pair=107, max_CHSH=2
+    quiet_four_parts_every_pair=62, max_CHSH=2
+  H5 holds | passed_filter=6781, valid=6687
+    above_2=249, max_CHSH=116/35
+    quiet_above_2=0, max_CHSH=-
+    quiet=1676, max_CHSH=2
+    quiet_reported_flag=104, max_CHSH=2
+    quiet_positive_D_Dprime_NN=59, max_CHSH=2
+    quiet_each_part_positive_somewhere=59, max_CHSH=2
+    quiet_four_parts_same_pair=59, max_CHSH=2
+    quiet_four_parts_every_pair=59, max_CHSH=2
+  H5 fails | passed_filter=13219, valid=11602
+    above_2=1444, max_CHSH=4
+    quiet_above_2=0, max_CHSH=-
+    quiet=1497, max_CHSH=2
+    quiet_reported_flag=73, max_CHSH=2
+    quiet_positive_D_Dprime_NN=48, max_CHSH=2
+    quiet_each_part_positive_somewhere=48, max_CHSH=2
+    quiet_four_parts_same_pair=48, max_CHSH=2
+    quiet_four_parts_every_pair=3, max_CHSH=2
+  First flagged draw with a missing finished part: 16, H5=True, CHSH=2
+    mu=[[1, 0], [1, 1]], t1=((1, 0), (2, 0)), t2=((3, 1), (3, 3)), finished weights=((0, 3, 0, 0), (0, 3, 0, 0), (0, 6, 0, 0), (0, 6, 0, 0))
+user_cpu=1.68s system_cpu=0.00s wall=1.69s peak_RSS=13484kB

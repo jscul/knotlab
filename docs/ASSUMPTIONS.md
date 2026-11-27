@@ -368,6 +368,7 @@ evidence: results and their status come from the records each entry links.
 | [A310](#a310--sign-the-change-a-parent-leaves-invisible-by-its-loose-value) | Sign the change a parent leaves invisible by its loose value | scaffold | Assumed |
 | [A311](#a311--divide-a-current-round-among-joint-classes-of-allowed-sibling-words) | Divide a current round among joint classes of allowed sibling words | scaffold | Assumed |
 | [A312](#a312--prepare-coherent-sibling-words-and-measure-combinations-of-the-permitted-changes) | Prepare coherent sibling words and measure combinations of the permitted changes | scaffold | Assumed |
+| [A313](#a313--read-a-parity-knot-and-each-readers-pair-as-one-toy-bit-of-spekkenss-toy-theory) | Read a parity knot, and each reader's pair, as one toy bit of Spekkens's toy theory | scaffold | Assumed |
 
 ## Entries
 
@@ -6476,3 +6477,14 @@ evidence: results and their status come from the records each entry links.
 - **Challenge.** Use fully mixed named words, class dephasing, two independent preparations, the other weighting, opposite zero-mode convention, or either actual one-bit toggle. A growth-derived alternative must give a different answer record at identical ordinary word probabilities.
 - **History.**
   - 2026-11-27 · Entered with the exploratory studies and their independent controls.
+
+### A313 · Read a parity knot, and each reader's pair, as one toy bit of Spekkens's toy theory
+
+**Assumed** · 2026-11-27 · scaffold
+
+- **Statement.** For comparison with the literature, read one three-place parity knot as one toy bit of Spekkens's toy theory: its four allowed states as the toy bit's four underlying states and its three distinctions as the toy bit's three questions (Map K of the toy-phase study). On the four-knot closure, read each reader's two distinctions as two questions of one toy bit, or as two Paulis of one qubit (Map R). The toy theory's rule for which questions can be known together, and the phase groups of Coecke, Edwards and Spekkens, are then applied to the model's own objects.
+- **Why.** It places the model, and what the record supplied to reach tables above the classical limit, in a known classical theory and in its one structural difference from the stabilizer part of qubit quantum mechanics. It is a reading chosen for the comparison; nothing in the model supplies it, and the model is not expected to replace it: it is kept only while the comparison is used.
+- **Rests on it.** Every placement claim of the toy-phase study: that one parity knot is one toy bit, that the even closure is a toy state and no stabilizer state, that the record's coherent constructions supply a phase of order four (the literature's Z4). [Design](../research/TOY-PHASE-20261127-001/README.md)
+- **Challenge.** Take the other coordinate choices of Map K (six), the other assignments of Map R (216) and the other pairings of the six distinctions into readers (14); a result claimed about the model must hold under all of them. The not-all-equal knot is the control: it is no toy bit. An operation of the model that carried one read of a reader to another with a phase of order four would overturn the placement.
+- **History.**
+  - 2026-11-27 · Entered with the toy-phase study's frozen design.

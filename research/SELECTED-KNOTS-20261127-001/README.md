@@ -73,3 +73,36 @@ failure of SK4 is a third-layer candidate.
 
 **What it would not show.** Selected knots under any other choice of places (the advisor's S1 and S3), the forbidding
 cuts, rounds past 4, starts with more than six families for SK2 and SK3, and a proof of the pair cost.
+
+## What was found
+
+All frozen runs finished ([`score.py`](score.py), [`score.json`](score.json)); no deviation. 975 of the 2,333 starts have
+two or more families; 3,489 rounds were read.
+
+- **SK2, SK3 and SK4 held everywhere.** Every proper set of families' least flip equals its least crossing pair cost;
+  at both scales (eight and twelve) the family sums that no change of at most k flips form a space of dimension
+  exactly the number of clusters less one, on every row read (3,465 rows at each scale); and on every start, with the
+  tree's nodes as places, every layer-three class fact is read by a single knot of the tree (156 starts have such
+  facts; none has one held by no knot).
+- **SK1 failed on 3 starts, at round 0 only** (a held-out eight-knot start and two sampled twelve-knot starts). There
+  the cheapest change flipping two families crosses a third family through two of its loose distinctions (on the
+  held-out start: 6 distinctions where d + 2 = 8). From round 1 the third family's loose distinctions are used up, the
+  jump costs more, and the cost is d + 2 + 2t on every pair and round read. So the tree's distance is the start's own
+  distance except where a route through a third family's loose distinctions is shorter at the start.
+- **Under the other reading the tree mostly does not show.** With the shortest changes as the small changes, some
+  family sum is a class fact on 105 of 928 census rows, 245 of 1,268 held-out rows and 69 of 216 sampled rows at rounds
+  1 to 4 (on all 86 built rows). The tree is a feature of the scale reading; the pair costs it rests on are not tied
+  to a reading.
+
+**In the coordinator's parts.** (1) The referee's witness reproduces: two second-layer knots share a fact on three
+rings of four, five facts held by no part at rounds 5 and 6; the chosen-reading third layer reproduces as algebra. (2)
+The second-layer knots growth itself selects, with no carriers chosen by us: the nodes of the tree of the start's
+families joined by their distance d, each node's fact bound with its children's. The tree is fixed by the start and
+the law (by the pair costs; with the round-0 exception above); the round and the scale only choose which level is seen,
+two rounds per two distinctions. The reading is a scaffold: under the shortest changes the tree is seen on a minority
+of starts. (3) The selected knots meet as a tree, never in a loop; every fact of the layer above is read by one of
+them, so no third-layer fact held by no part arises from what growth selects. A third layer needs places chosen by us,
+as in the referee's construction.
+
+**Not run.** The pair cost's proof; other choices of places; starts with more than six families for SK2 and SK3; the
+forbidding cuts; rounds past 4.

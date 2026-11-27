@@ -356,6 +356,7 @@ evidence: results and their status come from the records each entry links.
 | [A298](#a298--built-ring-families-lineage-carriers-and-the-origin-test-to-read-a-binding-of-whole-held-facts) | Built ring families, lineage carriers and the origin test, to read a binding of whole-held facts | scaffold | Assumed |
 | [A299](#a299--families-of-live-knots-and-a-scale-of-small-change-to-read-which-facts-growth-makes-last) | Families of live knots and a scale of small change, to read which facts growth makes last | scaffold | Assumed |
 | [A300](#a300--values-and-changes-both-readable-the-coherent-counting-state-combined-questions-and-a-middle-reader-who-sorts) | Values and changes both readable: the coherent counting state, combined questions and a middle reader who sorts | scaffold | Assumed |
+| [A301](#a301--two-weightings-of-seven-knot-starts-buckets-up-to-renaming-and-a-24-round-horizon-to-test-the-graded-order-and-its-exception) | Two weightings of seven-knot starts, buckets up to renaming and a 24-round horizon, to test the graded order and its exception | scaffold | Assumed |
 
 ## Entries
 
@@ -6263,3 +6264,14 @@ evidence: results and their status come from the records each entry links.
   replaced only if the model comes to read changes itself.
 - **History.**
   - 2026-11-26 · Entered by `VALUE-CHANGE-20261126-001`.
+
+### A301 · Two weightings of seven-knot starts, buckets up to renaming and a 24-round horizon, to test the graded order and its exception
+
+**Assumed** · 2026-11-27 · scaffold
+
+- **Statement.** For one study of G17 with G1, choices made to test the graded-order reading of a growth from its start: seven-knot starts of the `tree+` weighting (seed 20261127, 40,000 draws, up to 40 a bucket) and of the `grow` weighting (seed 20261127, 200,000 draws, up to 60 a bucket) of `WEIGHTINGS-20261119-001B`, kept by stratum and route cycle with repeats removed up to renaming (a Weisfeiler–Lehman hash of the knot multigraph with places and multiplicities); grown to round 24 under each knot law with the look-alike study's growth.
+- **Why.** Adopted by the thread on 27 November 2026 for `GRADED-ORDER-20261126-001` at the coordinator's pick: the rare strata (group cells sharing a knot, a block meeting a cell) are too rare under one weighting alone, and the advisor showed the first sample repeated one start.
+- **Rests on it.** The fresh test of the graded order and its exception, the split pair ([the note](../research/GRADED-ORDER-20261126-001/README.md)).
+- **Challenge.** Other weightings, eight knots and more, a longer horizon; the hash can merge two starts only if it collides. The model is not expected to keep these choices.
+- **History.**
+  - 2026-11-27 · Entered with `GRADED-ORDER-20261126-001`: under both weightings every start without a split pair or two cells sharing two knots agrees, every start with one differs.

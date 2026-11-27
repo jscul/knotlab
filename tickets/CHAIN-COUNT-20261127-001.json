@@ -1,0 +1,33 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "CYCLE-READ-20261127-001",
+    "GRADED-ORDER-20261126-001",
+    "REDUCE-BLOCKS-20261119-001"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "groups": [
+      "spacing"
+    ],
+    "program": "topology",
+    "takes": [
+      "CYCLE-READ-20261127-001#1"
+    ]
+  },
+  "id": "CHAIN-COUNT-20261127-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "Under G17 with G1, at the coordinator's sequenced pick (#3 after CYCLE-READ-20261127-001): prove that on a start without chained twins, ordinary growth's births along endless chains and the fresh counts of births with core and chain parents are given by late.py's binomial terms on the node core (the start's core births by Lemma R's round rule), extending referee R2's induction of GRADED-ORDER-20261126-001 to chain births; or find a start without chained twins on which it fails. Proof work, with a machine check of each lemma on the record's samples.",
+  "ownership": {
+    "root": true,
+    "scope_id": "CHAIN-COUNT-20261127-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete 2026-11-27 (proved on a class read off the start, machine-checked; referee pending): on node cores with no chained twins (N1), meeting lifts (N2) and closing base-holding families (N3), ordinary growth's births are the extended nodes with their parents and fresh counts; all 793 sample starts without chained twins are in the class; open: whether N1 implies N2 and N3",
+  "status_class": "complete",
+  "stop_rule": "",
+  "title": "Proving the chain counting on node cores without chained twins"
+}

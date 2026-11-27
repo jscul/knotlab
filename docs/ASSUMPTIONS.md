@@ -6309,7 +6309,7 @@ evidence: results and their status come from the records each entry links.
   families joined by their distance d (single linkage: two clusters join at the least d between their families), each
   node's fact the sum of its families' facts, with a knot at each node with two or more children; and it reads class
   facts at a scale (any allowed change of at most k distinctions, k = 8 and 12).
-- **Why.** Given the places, the knots are the minimal relations and nothing else is chosen (the advisor); the
+- **Why.** [R1: the parent-with-children roster selects some of the minimal relations among these places; another basis gives the same states with knots meeting in a cycle.] Given the places, the knots are the minimal relations and nothing else is chosen (the advisor); the
   tree is what growth reveals at a scale, since the cost of flipping two families' facts is d + 2 + 2t.
 - **Rests on it.** The study's answer to which second-layer knots growth selects, how they meet, and the layer-three
   read.
@@ -6317,6 +6317,8 @@ evidence: results and their status come from the records each entry links.
   (which tie), least supports (which sit in the start); the shortest-change reading, under which the tree shows on a
   minority of rows. Expected to be replaced by a proof that the pair cost fixes the tree.
 - **History.**
+  - 2026-11-27 · Referee R1 of `SELECTED-KNOTS-20261127-001` (refuted): the places do not fix the knots; the tree is one
+    presentation of the cluster facts, and a basis with a cycle gives the same states.
   - 2026-11-27 · Entered at the freeze of `SELECTED-KNOTS-20261127-001`.
 
 ### A304 · The countings tested on small sampled starts: fourteen distinctions, two rounds

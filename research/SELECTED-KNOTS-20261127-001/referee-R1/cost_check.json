@@ -1,0 +1,889 @@
+{
+  "methods": {
+    "growth": "Reconstructed groups, funding, complete rounds and ancestry. No shared engine.",
+    "pair": "Route between distinct bookkeeping holders, one per family, on the independently grown stage.",
+    "set": "Merged loose distinctions into two groups, then searched between them. Compared the optimum with the actual crossing pair costs, with the direct costs, and through eight families with all even syndromes.",
+    "shortest": "For each distinction, compared all tied shortest alternate holder routes, keeping all attainable family parities.",
+    "literal": "First two stages per roster, family count and round with at most 50 distinctions and at most 14 free variables. Enumerated every state and minimized separately on each exact starting family signature.",
+    "late": "All starts with two or more families through round seven until stalled, closed or above 512 distinctions. Frozen cells have their original 300-distinction bound.",
+    "larger built": "Five and six rings of four and five knots with split attachments and double links, one start per combination.",
+    "larger sampled": "48 accepted labelled starts at each of 13, 16 and 20 knots, seeds 1601127 plus size. Each knot pair meets with chance 3/(size-1), multiplicity uniformly one or two, loose counts uniformly zero to two. Accept connected starts with at least three distinctions per knot and at most 3*size+2 distinctions. Sampling with replacement.",
+    "cut enumeration": "One representative of each complementary pair of nonconstant family sums; first family included.",
+    "checksum": "Each JSON line contains start label, round, knots, distinctions, sorted exact pair and cut optima and all family signatures flipped by shortest changes when read."
+  },
+  "pilot seconds": 0.478,
+  "pilot strata seconds": {
+    "census": 0.045,
+    "heldout": 0.038,
+    "sampled": 0.104,
+    "built": 0.047,
+    "larger sampled": 0.009,
+    "larger built": 0.229
+  },
+  "full seconds": 8.018,
+  "process address limit MiB": 2560,
+  "processes": 1,
+  "peak resident KiB": 28792,
+  "runs": {
+    "census": {
+      "counts": {
+        "starts": 1000,
+        "starts below two families": 747,
+        "starts at least two families": 253,
+        "literal state checks": 14,
+        "allowed states enumerated": 76544,
+        "literal syndromes compared": 36,
+        "literal syndromes with at least four flips": 0,
+        "archived birth logs compared": 717,
+        "archived birth entries compared": 3229,
+        "frozen stop reasons matched": 21
+      },
+      "frozen rows": {
+        "stages": 1181,
+        "max distinctions": 87,
+        "max families": 3,
+        "max knots": 43,
+        "pair comparisons": 1261,
+        "maximum exact pair cost": 14,
+        "round zero pair comparisons": 269,
+        "direct pair prediction failures": 0,
+        "chain pair prediction failures": 0,
+        "even signatures with four or more flips": 0,
+        "maximum set cost": 14,
+        "all complementary set pairs": 1261,
+        "unrestricted set vs all even signatures": 1261,
+        "set costs on announced range": 1261,
+        "rows on announced set range": 1181,
+        "earlier individual minima compared": 2402,
+        "shortest reading rows compared": 1181,
+        "shortest reading rows with kept sums": 111,
+        "integer thresholds checked": 16593,
+        "frozen scale comparisons": 2362,
+        "positive round pair comparisons": 992
+      },
+      "extra rows": {
+        "stages": 696,
+        "max distinctions": 207,
+        "max families": 3,
+        "max knots": 103,
+        "pair comparisons": 744,
+        "maximum exact pair cost": 20,
+        "positive round pair comparisons": 744,
+        "direct pair prediction failures": 0,
+        "chain pair prediction failures": 0,
+        "even signatures with four or more flips": 0,
+        "maximum set cost": 20,
+        "all complementary set pairs": 744,
+        "unrestricted set vs all even signatures": 744,
+        "integer thresholds checked": 12156
+      },
+      "stages by round": {
+        "0": 253,
+        "1": 232,
+        "2": 232,
+        "3": 232,
+        "4": 232,
+        "5": 232,
+        "6": 232,
+        "7": 232
+      },
+      "endings": {
+        "read through round 7": 232,
+        "round 1, stalled": 21
+      },
+      "literal cases by family count and round": {
+        "census: 2 families, round 0": 2,
+        "census: 2 families, round 1": 2,
+        "census: 2 families, round 2": 2,
+        "census: 2 families, round 3": 2,
+        "census: 3 families, round 0": 2,
+        "census: 3 families, round 1": 2,
+        "census: 2 families, round 4": 2
+      },
+      "pair exceptions": [],
+      "shortest vs threshold": {
+        "recorded family range": {
+          "no nonconstant sum kept": 823,
+          "every nonconstant sum kept": 101,
+          "proper nonzero space equals a level": 4
+        },
+        "extra family count on frozen stage": {}
+      },
+      "elapsed seconds": 0.427,
+      "load seconds": 0.038,
+      "row checksum": "575f498f43722224aaff185a04112a0fcfa816590070d773c6794ae121ce236a"
+    },
+    "heldout": {
+      "counts": {
+        "starts": 900,
+        "starts at least two families": 515,
+        "literal state checks": 17,
+        "allowed states enumerated": 88192,
+        "literal syndromes compared": 70,
+        "literal syndromes with at least four flips": 4,
+        "archived birth logs compared": 1149,
+        "archived birth entries compared": 5372,
+        "frozen stop reasons matched": 198,
+        "starts below two families": 385
+      },
+      "frozen rows": {
+        "stages": 1783,
+        "max distinctions": 122,
+        "max families": 4,
+        "max knots": 60,
+        "pair comparisons": 3279,
+        "maximum exact pair cost": 17,
+        "round zero pair comparisons": 859,
+        "direct pair prediction failures": 1,
+        "chain pair prediction failures": 0,
+        "even signatures with four or more flips": 100,
+        "maximum set cost": 15,
+        "all complementary set pairs": 3379,
+        "unrestricted set vs all even signatures": 3379,
+        "set costs on announced range": 3379,
+        "rows on announced set range": 1783,
+        "earlier individual minima compared": 4264,
+        "shortest reading rows compared": 1783,
+        "shortest reading rows with kept sums": 281,
+        "integer thresholds checked": 25384,
+        "frozen scale comparisons": 3566,
+        "positive round pair comparisons": 2420,
+        "stages admitting four or more flips": 100,
+        "sets also flippable by at least four families": 400,
+        "minimum margin to a four-or-more-family change": 3
+      },
+      "extra rows": {
+        "stages": 951,
+        "max distinctions": 368,
+        "max families": 4,
+        "max knots": 141,
+        "pair comparisons": 1815,
+        "maximum exact pair cost": 23,
+        "positive round pair comparisons": 1815,
+        "direct pair prediction failures": 0,
+        "chain pair prediction failures": 0,
+        "even signatures with four or more flips": 60,
+        "maximum set cost": 21,
+        "all complementary set pairs": 1875,
+        "unrestricted set vs all even signatures": 1875,
+        "integer thresholds checked": 17847,
+        "stages admitting four or more flips": 60,
+        "sets also flippable by at least four families": 240,
+        "minimum margin to a four-or-more-family change": 13
+      },
+      "stages by round": {
+        "0": 515,
+        "1": 317,
+        "2": 317,
+        "3": 317,
+        "4": 317,
+        "5": 317,
+        "6": 317,
+        "7": 317
+      },
+      "endings": {
+        "round 1, stalled": 198,
+        "read through round 7": 317
+      },
+      "literal cases by family count and round": {
+        "heldout: 2 families, round 0": 2,
+        "heldout: 2 families, round 1": 2,
+        "heldout: 2 families, round 2": 2,
+        "heldout: 4 families, round 0": 2,
+        "heldout: 4 families, round 1": 2,
+        "heldout: 2 families, round 3": 1,
+        "heldout: 3 families, round 0": 2,
+        "heldout: 3 families, round 1": 2,
+        "heldout: 3 families, round 2": 2
+      },
+      "pair exceptions": [
+        {
+          "start": "held out 8-50",
+          "knots at start": 8,
+          "round": 0,
+          "family holders": [
+            [
+              1,
+              2,
+              3
+            ],
+            [
+              4
+            ],
+            [
+              5
+            ]
+          ],
+          "rows": [
+            [
+              1,
+              2,
+              6,
+              6
+            ]
+          ]
+        }
+      ],
+      "shortest vs threshold": {
+        "recorded family range": {
+          "every nonconstant sum kept": 145,
+          "no nonconstant sum kept": 1023,
+          "proper nonzero space equals no level": 68,
+          "proper nonzero space equals a level": 32
+        },
+        "extra family count on frozen stage": {},
+        "example": {
+          "start": "held out 6-68",
+          "knots at start": 6,
+          "round": 1,
+          "starting family holders": [
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              4
+            ],
+            [
+              5
+            ]
+          ],
+          "starting holder steps": {
+            "0-1": 4,
+            "0-2": 3,
+            "0-3": 1,
+            "1-2": 1,
+            "1-3": 5,
+            "2-3": 4
+          },
+          "family signatures of shortest changes": [
+            5,
+            9
+          ],
+          "kept coefficient masks": [
+            13
+          ],
+          "masks at all threshold levels (stage scale)": {
+            "0": [
+              1,
+              3,
+              5,
+              7,
+              9,
+              11,
+              13
+            ],
+            "5": [
+              9
+            ],
+            "7": []
+          }
+        }
+      },
+      "elapsed seconds": 1.67,
+      "load seconds": 0.969,
+      "row checksum": "fccc2d50a3c1706f452d18754f80e1393a88fc344c00de62483f5be6f8608db7"
+    },
+    "sampled": {
+      "counts": {
+        "starts": 400,
+        "starts below two families": 226,
+        "starts at least two families": 174,
+        "frozen stop reasons matched": 120,
+        "literal state checks": 6,
+        "allowed states enumerated": 69632,
+        "literal syndromes compared": 16,
+        "literal syndromes with at least four flips": 0
+      },
+      "frozen rows": {
+        "stages": 390,
+        "max distinctions": 136,
+        "max families": 5,
+        "max knots": 66,
+        "pair comparisons": 808,
+        "maximum exact pair cost": 16,
+        "round zero pair comparisons": 328,
+        "direct pair prediction failures": 2,
+        "chain pair prediction failures": 0,
+        "even signatures with four or more flips": 58,
+        "maximum set cost": 14,
+        "all complementary set pairs": 866,
+        "unrestricted set vs all even signatures": 866,
+        "set costs on announced range": 866,
+        "rows on announced set range": 390,
+        "earlier individual minima compared": 965,
+        "shortest reading rows compared": 390,
+        "shortest reading rows with kept sums": 87,
+        "integer thresholds checked": 5530,
+        "frozen scale comparisons": 780,
+        "positive round pair comparisons": 480,
+        "stages admitting four or more flips": 38,
+        "sets also flippable by at least four families": 207,
+        "minimum margin to a four-or-more-family change": 3
+      },
+      "extra rows": {
+        "stages": 162,
+        "max distinctions": 322,
+        "max families": 5,
+        "max knots": 159,
+        "pair comparisons": 360,
+        "maximum exact pair cost": 22,
+        "positive round pair comparisons": 360,
+        "direct pair prediction failures": 0,
+        "chain pair prediction failures": 0,
+        "even signatures with four or more flips": 30,
+        "maximum set cost": 20,
+        "all complementary set pairs": 390,
+        "unrestricted set vs all even signatures": 390,
+        "integer thresholds checked": 3045,
+        "stages admitting four or more flips": 18,
+        "sets also flippable by at least four families": 105,
+        "minimum margin to a four-or-more-family change": 13
+      },
+      "stages by round": {
+        "0": 174,
+        "1": 54,
+        "2": 54,
+        "3": 54,
+        "4": 54,
+        "5": 54,
+        "6": 54,
+        "7": 54
+      },
+      "endings": {
+        "round 1, stalled": 120,
+        "read through round 7": 54
+      },
+      "literal cases by family count and round": {
+        "sampled: 2 families, round 0": 2,
+        "sampled: 3 families, round 0": 2,
+        "sampled: 2 families, round 1": 1,
+        "sampled: 2 families, round 2": 1
+      },
+      "pair exceptions": [
+        {
+          "start": "sampled 12-35",
+          "knots at start": 12,
+          "round": 0,
+          "family holders": [
+            [
+              1
+            ],
+            [
+              2
+            ],
+            [
+              4,
+              8,
+              9,
+              10
+            ],
+            [
+              7
+            ]
+          ],
+          "rows": [
+            [
+              0,
+              1,
+              7,
+              8
+            ]
+          ]
+        },
+        {
+          "start": "sampled 12-56",
+          "knots at start": 12,
+          "round": 0,
+          "family holders": [
+            [
+              1
+            ],
+            [
+              3,
+              5,
+              8,
+              10
+            ],
+            [
+              4,
+              7
+            ]
+          ],
+          "rows": [
+            [
+              0,
+              2,
+              6,
+              6
+            ]
+          ]
+        }
+      ],
+      "shortest vs threshold": {
+        "recorded family range": {
+          "no nonconstant sum kept": 147,
+          "every nonconstant sum kept": 41,
+          "proper nonzero space equals no level": 16,
+          "proper nonzero space equals a level": 12
+        },
+        "extra family count on frozen stage": {},
+        "example": {
+          "start": "sampled 10-86",
+          "knots at start": 10,
+          "round": 1,
+          "starting family holders": [
+            [
+              1,
+              2,
+              4
+            ],
+            [
+              6
+            ],
+            [
+              9
+            ]
+          ],
+          "starting holder steps": {
+            "0-1": 1,
+            "0-2": 1,
+            "1-2": 4
+          },
+          "family signatures of shortest changes": [
+            5
+          ],
+          "kept coefficient masks": [
+            5
+          ],
+          "masks at all threshold levels (stage scale)": {
+            "0": [
+              1,
+              3,
+              5
+            ],
+            "5": []
+          }
+        }
+      },
+      "elapsed seconds": 5.028,
+      "load seconds": 4.848,
+      "row checksum": "101a09157d2200c21f34ab7bd11affb0cbb53478eea56333f7305046233b7c1d"
+    },
+    "built": {
+      "counts": {
+        "starts": 33,
+        "starts at least two families": 33,
+        "frozen stop reasons matched": 16
+      },
+      "frozen rows": {
+        "stages": 135,
+        "max distinctions": 300,
+        "max families": 8,
+        "max knots": 135,
+        "pair comparisons": 1491,
+        "maximum exact pair cost": 15,
+        "round zero pair comparisons": 419,
+        "direct pair prediction failures": 0,
+        "chain pair prediction failures": 0,
+        "even signatures with four or more flips": 2922,
+        "stages admitting four or more flips": 90,
+        "maximum set cost": 14,
+        "all complementary set pairs": 4413,
+        "unrestricted set vs all even signatures": 4413,
+        "sets also flippable by at least four families": 4176,
+        "minimum margin to a four-or-more-family change": 3,
+        "set costs on announced range": 1365,
+        "rows on announced set range": 111,
+        "earlier individual minima compared": 655,
+        "shortest reading rows compared": 111,
+        "shortest reading rows with kept sums": 99,
+        "integer thresholds checked": 1922,
+        "frozen scale comparisons": 222,
+        "positive round pair comparisons": 1072
+      },
+      "extra rows": {
+        "stages": 79,
+        "max distinctions": 512,
+        "max families": 8,
+        "max knots": 236,
+        "pair comparisons": 765,
+        "maximum exact pair cost": 20,
+        "positive round pair comparisons": 765,
+        "direct pair prediction failures": 0,
+        "chain pair prediction failures": 0,
+        "even signatures with four or more flips": 1408,
+        "stages admitting four or more flips": 52,
+        "maximum set cost": 20,
+        "all complementary set pairs": 2173,
+        "unrestricted set vs all even signatures": 2173,
+        "sets also flippable by at least four families": 2008,
+        "minimum margin to a four-or-more-family change": 7,
+        "integer thresholds checked": 1432
+      },
+      "stages by round": {
+        "0": 33,
+        "1": 33,
+        "2": 33,
+        "3": 31,
+        "4": 25,
+        "5": 23,
+        "6": 21,
+        "7": 15
+      },
+      "endings": {
+        "round 7, over 512 distinctions": 6,
+        "read through round 7": 15,
+        "round 4, over 512 distinctions": 6,
+        "round 6, over 512 distinctions": 2,
+        "round 5, over 512 distinctions": 2,
+        "round 3, over 512 distinctions": 2
+      },
+      "literal cases by family count and round": {},
+      "pair exceptions": [],
+      "shortest vs threshold": {
+        "recorded family range": {
+          "every nonconstant sum kept": 86
+        },
+        "extra family count on frozen stage": {
+          "every nonconstant sum kept": 16
+        }
+      },
+      "elapsed seconds": 0.408,
+      "load seconds": 0.001,
+      "row checksum": "88fd6ec5e9a32a693c97d51dc690aa5e16144b5d78cf0e328f767e966e188427"
+    },
+    "larger sampled": {
+      "counts": {
+        "starts": 144,
+        "starts below two families": 86,
+        "starts at least two families": 58
+      },
+      "frozen rows": {},
+      "extra rows": {
+        "stages": 58,
+        "max distinctions": 62,
+        "max families": 4,
+        "max knots": 20,
+        "pair comparisons": 102,
+        "maximum exact pair cost": 8,
+        "round zero pair comparisons": 102,
+        "direct pair prediction failures": 3,
+        "chain pair prediction failures": 0,
+        "even signatures with four or more flips": 4,
+        "maximum set cost": 5,
+        "all complementary set pairs": 106,
+        "unrestricted set vs all even signatures": 106,
+        "integer thresholds checked": 812,
+        "stages admitting four or more flips": 4,
+        "sets also flippable by at least four families": 16,
+        "minimum margin to a four-or-more-family change": 3
+      },
+      "stages by round": {
+        "0": 58
+      },
+      "endings": {
+        "round 1, stalled": 58
+      },
+      "literal cases by family count and round": {},
+      "pair exceptions": [
+        {
+          "start": "larger sampled 13-38",
+          "knots at start": 13,
+          "round": 0,
+          "family holders": [
+            [
+              1,
+              2,
+              3,
+              6,
+              9
+            ],
+            [
+              4
+            ],
+            [
+              11
+            ]
+          ],
+          "rows": [
+            [
+              1,
+              2,
+              5,
+              6
+            ]
+          ]
+        },
+        {
+          "start": "larger sampled 20-29",
+          "knots at start": 20,
+          "round": 0,
+          "family holders": [
+            [
+              1,
+              2,
+              4,
+              8,
+              9,
+              12,
+              13,
+              14,
+              17,
+              18
+            ],
+            [
+              5
+            ],
+            [
+              15
+            ]
+          ],
+          "rows": [
+            [
+              1,
+              2,
+              5,
+              6
+            ]
+          ]
+        },
+        {
+          "start": "larger sampled 20-40",
+          "knots at start": 20,
+          "round": 0,
+          "family holders": [
+            [
+              1
+            ],
+            [
+              5,
+              6,
+              7,
+              9,
+              10,
+              12,
+              17,
+              18,
+              19
+            ],
+            [
+              14
+            ]
+          ],
+          "rows": [
+            [
+              0,
+              2,
+              6,
+              6
+            ]
+          ]
+        }
+      ],
+      "shortest vs threshold": {
+        "recorded family range": {},
+        "extra family count on frozen stage": {}
+      },
+      "elapsed seconds": 0.232,
+      "load seconds": 0.222,
+      "row checksum": "ef194fe44d37952952bbe1e40bf1a5a602425cd5282d0f738b06da92f048acf6"
+    },
+    "larger built": {
+      "counts": {
+        "starts": 4,
+        "starts at least two families": 4
+      },
+      "frozen rows": {},
+      "extra rows": {
+        "stages": 23,
+        "max distinctions": 485,
+        "max families": 12,
+        "max knots": 220,
+        "pair comparisons": 659,
+        "maximum exact pair cost": 19,
+        "round zero pair comparisons": 136,
+        "direct pair prediction failures": 0,
+        "chain pair prediction failures": 0,
+        "even signatures with four or more flips": 10390,
+        "stages admitting four or more flips": 23,
+        "maximum set cost": 19,
+        "all complementary set pairs": 11049,
+        "unrestricted set vs all even signatures": 306,
+        "integer thresholds checked": 347,
+        "positive round pair comparisons": 523,
+        "sets also flippable by at least four families": 306,
+        "minimum margin to a four-or-more-family change": 5
+      },
+      "stages by round": {
+        "0": 4,
+        "1": 4,
+        "2": 4,
+        "3": 4,
+        "4": 3,
+        "5": 2,
+        "6": 1,
+        "7": 1
+      },
+      "endings": {
+        "round 5, over 512 distinctions": 1,
+        "read through round 7": 1,
+        "round 4, over 512 distinctions": 1,
+        "round 6, over 512 distinctions": 1
+      },
+      "literal cases by family count and round": {},
+      "pair exceptions": [],
+      "shortest vs threshold": {
+        "recorded family range": {},
+        "extra family count on frozen stage": {}
+      },
+      "elapsed seconds": 0.249,
+      "load seconds": 0.0,
+      "row checksum": "67b3e9cfa369d89f9f457986b83c660a43ba13f8a797fc4d745d92736a8bd6d8"
+    },
+    "independent chain certificate replay": [
+      [
+        5,
+        0,
+        13,
+        6,
+        6
+      ],
+      [
+        9,
+        0,
+        23,
+        10,
+        6
+      ],
+      [
+        9,
+        1,
+        41,
+        12,
+        10
+      ],
+      [
+        9,
+        2,
+        65,
+        14,
+        14
+      ],
+      [
+        9,
+        3,
+        95,
+        16,
+        16
+      ],
+      [
+        9,
+        4,
+        131,
+        18,
+        18
+      ],
+      [
+        17,
+        0,
+        43,
+        18,
+        6
+      ],
+      [
+        17,
+        1,
+        69,
+        20,
+        10
+      ],
+      [
+        17,
+        2,
+        101,
+        22,
+        14
+      ],
+      [
+        17,
+        3,
+        139,
+        24,
+        18
+      ],
+      [
+        17,
+        4,
+        183,
+        26,
+        22
+      ],
+      [
+        17,
+        5,
+        233,
+        28,
+        26
+      ],
+      [
+        17,
+        6,
+        289,
+        30,
+        30
+      ],
+      [
+        25,
+        0,
+        63,
+        26,
+        6
+      ],
+      [
+        25,
+        1,
+        97,
+        28,
+        10
+      ],
+      [
+        25,
+        2,
+        137,
+        30,
+        14
+      ],
+      [
+        25,
+        3,
+        183,
+        32,
+        18
+      ],
+      [
+        25,
+        4,
+        235,
+        34,
+        22
+      ],
+      [
+        25,
+        5,
+        293,
+        36,
+        26
+      ],
+      [
+        25,
+        6,
+        357,
+        38,
+        30
+      ]
+    ]
+  }
+}

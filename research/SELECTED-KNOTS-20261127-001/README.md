@@ -3,6 +3,22 @@
 Epic `SELECTED-KNOTS-20261127-001`, at the coordinator's go-ahead after the third-layer referee. A check by the thread,
 not a registered study; computed. The sections down to "Frozen" were committed before the frozen runs.
 
+
+> **Referee R1: refuted, three Blocks** ([report](referee-R1/report.md)). **Block:** "the tree's nodes are the knots
+> growth selects, meeting only as a tree": on the three-ring start of rings of four, the same nine whole-held places
+> (six families, three rings) support eleven minimal relations, all passing K1 to K3, and two independent sets of four
+> that give the same 32 states: the tree, and a set with three four-place knots (p1, q1, R2, R3; R1, p2, q2, R3;
+> R1, R2, p3, q3) meeting pairwise in a cycle through three different ring facts; a preference for shorter equations
+> would pick the tree, if growth supplied one. **Block:** the pair cost is d + 2 + 2t only for the direct route; the exact
+> cost is the least sum of direct costs along a chain of families (a funded nine-knot start costs 10 against 12 at round
+> 1, a seventeen-knot start 26 against 28 at round 5; `TREE-PROOF-20261127-001` states the chain form). **Block:** "every
+> fact of the layer above is read by one of them": the test used the span of the knots' class facts, not one knot; on
+> six five-knot rings two of seven upper class facts need more than one tree knot, though all are sums of local facts.
+> **What holds:** the fixed-scale cluster result (all 6,871 family-sum costs and all 3,465 rows at each scale).
+> **Narrowings:** 863 of the tree's 1,187 listed equations are two-place equalities; the frozen all-round pair
+> prediction failed (positive rounds are a restriction made after); under the shortest changes 505 of 2,498 later
+> stages keep a family sum; the shift is one round per two distinctions.
+
 ## The question
 
 The third-layer referee (`THIRD-LAYER-20261126-001`, R1: refuted) showed two second-layer knots sharing a fact on three
@@ -96,10 +112,10 @@ two or more families; 3,489 rounds were read.
 
 **In the coordinator's parts.** (1) The referee's witness reproduces: two second-layer knots share a fact on three
 rings of four, five facts held by no part at rounds 5 and 6; the chosen-reading third layer reproduces as algebra. (2)
-The second-layer knots growth itself selects, with no carriers chosen by us: the nodes of the tree of the start's
+[Refuted by R1, Block: one presentation, not a selection.] The second-layer knots growth itself selects, with no carriers chosen by us: the nodes of the tree of the start's
 families joined by their distance d, each node's fact bound with its children's. The tree is fixed by the start and
 the law (by the pair costs; with the round-0 exception above); the round and the scale only choose which level is seen,
-two rounds per two distinctions. The reading is a scaffold: under the shortest changes the tree is seen on a minority
+two rounds per two distinctions [R1: one round per two distinctions]. The reading is a scaffold: under the shortest changes the tree is seen on a minority
 of starts. (3) The selected knots meet as a tree, never in a loop; every fact of the layer above is read by one of
 them, so no third-layer fact held by no part arises from what growth selects. A third layer needs places chosen by us,
 as in the referee's construction.

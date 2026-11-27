@@ -2,7 +2,9 @@
 
 Epic `SELECTED-KNOTS-20261127-001` (the coordinator's go-ahead after the third-layer referee; goals G17 with G18),
 closed 27 November 2026. A check by the thread, not registered: computed; frozen after the advisor's review in the
-repository; referee pending. [The note](README.md)
+repository. **Refereed (R1): refuted, three Blocks** ([report](referee-R1/report.md)): the same places support a
+presentation whose knots meet in a cycle, so growth's selection of knots is not shown; the exact pair cost is a chain
+of direct costs; the single-reader claim was a span. The fixed-scale cluster result stands. [The note](README.md)
 
 ## What stands, in the coordinator's parts
 
@@ -13,9 +15,11 @@ repository; referee pending. [The note](README.md)
    d the start's distance between them (exactly, from round 1, on every pair read; at round 0 three starts have a
    cheaper route through a third family's loose distinctions). So at a scale k the class facts among family sums are
    exactly the cluster facts of families joined when d + 2 + 2t ≤ k (every row read, at two scales): growth reveals,
-   level by level, the tree of the start's families by distance. Its nodes, each bound with its children, are the
+   level by level, the tree of the start's families by distance. [R1, Block: the family costs determine the
+   threshold partitions; parent-with-children equations give one presentation of their facts, and another with a
+   cycle gives the same states.] Its nodes, each bound with its children, are the
    second-layer knots growth selects; the start fixes them; the round and the scale pick the level.
-3. **How they meet: as a tree.** They share facts only parent to child, never in a loop, and every fact of the layer
+3. **[Withdrawn: Block, R1.] How they meet: as a tree.** They share facts only parent to child, never in a loop, and every fact of the layer
    above is read by one of them (all 156 starts with such facts). No third-layer fact held by no part arises from what
    growth selects; the referee's third layer needs places chosen by us.
 4. **The reading matters.** Under the shortest changes some family sum is a class fact on only 11 to 32 per cent of
@@ -41,7 +45,7 @@ forbidding cuts; rounds past 4; starts with more than six families for the clust
 
 | # | Direction | Payoff | Concreteness | First step → stop when | Status |
 | --- | --- | --- | --- | --- | --- |
-| 1 | Prove the pair cost d + 2 + 2t from round 1 (and the round-0 route through a third family), and with it the tree | 3/3 — makes the selection a theorem | 2/3 — the referee's +2 argument and the lineage lemma | Write the proof → a proof, or the start where it fails | Proposed |
+| 1 | Prove the pair cost [R1: the direct route costs d + 2 + 2t; the exact cost is the least sum of direct costs along a chain of families] (and the round-0 route through a third family), and with it the tree | 3/3 — makes the selection a theorem | 2/3 — the referee's +2 argument and the lineage lemma | Write the proof → a proof, or the start where it fails | Proposed |
 | 2 | The forbidding cuts on the tree: do they change the families' distances or add relations that put a loop in the tree? | 2/3 — the one recorded law that adds relations | 2/3 | Rerun tree.py under both cuts → a loop of second-layer knots, or none | Alternative |
 
 **Corrections:** none from this study (the third-layer referee's Blocks were logged earlier).

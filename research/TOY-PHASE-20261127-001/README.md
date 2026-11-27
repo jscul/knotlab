@@ -184,3 +184,55 @@ The reviewer also noted that the 2007 counting rule, applied only to the parts a
 failing pairings, and rejects it once other readers' reads are taken into account; the code applies the 2016 rule
 (unverified in general). It judged P1, P3's bound and probabilities, P4's toy half and P5 to follow from the definitions,
 and P3's classes and stabilizer count, P4 without the phase, the gates and the enumeration to be the parts that could fail.
+
+## Stress test one size past the closure (added 27 November, before it was run)
+
+Not a frozen prediction: the standing check that a computed claim holds one size past the cases it was computed on. The
+four-readings study (`FOUR-READINGS-20261120-001A`) stored a signed Pauli certificate for each of the 115 holder patterns
+that admit an operator reading with every holder's operators multiplying to ±1 (the literature's state-independent games,
+of which the Mermin–Peres square is one); 79 are on patterns ordinary growth closes. Expected, for every one of the 115
+(`stress_certificates.py`): the certificate's operators commute within each holder and its signs multiply to −1; read as
+toy questions (phases dropped), each holder's questions commute and sum to zero, so every toy state makes every holder's law
+even; and the certificate's −1 equals the cost of reordering its product holder by holder. That is the closure's
+dichotomy on the record's larger grown patterns: the toy reading takes only the even laws, the operators only the odd.
+Result: as expected, on all 115 (79 on patterns growth closes): every certificate's holders commute and its signs
+multiply to −1, every toy reading is even in every holder with commuting questions, and the reordering cost equals the
+charge in every case ([output](stress_certificates.json)).
+
+## Results (27 November)
+
+All seven frozen predictions hold, each part at its first test ([output](results.json); `toy_phase.py`, 4 seconds under a
+1 GiB cap). Exact unless marked.
+
+- **G.** The regrown closure is the fixture's (knots {0, 1, 2}, {1, 3, 4}, {0, 3, 5}, closing {2, 4, 5}, one birth,
+  readers (3, 2), (0, 4), (1, 5)); the toy-state test accepts the toy GHZ state and rejects knowing both questions of one
+  toy bit; the stabilizer state (|000⟩ + i|111⟩)/√2 read with X for sᵢ and Y for lᵢ matches the record's target in 64 of
+  64; the rebuilt birth-sign constructions give its scores (1 and 64, 1 and 64, 64, 3/4 and 56); the Z4 mutant flips the
+  closing phase.
+- **P1.** Under both parity laws and all six coordinate choices, a parity knot is a toy bit with every incidence kept, and
+  each distinction is the sum of the other two. The not-all-equal knot has six allowed states, one nonzero allowed change,
+  and a third distinction that is not a function of the other two.
+- **P2.** Of the 24 permutations of the even knot's allowed states, 4 keep A's value, forming Z2×Z2 with orders 1, 2, 2,
+  2: the swap inside A = 1 carries the B-read to the c-read exactly, the swap inside A = 0 up to relabelling, and the swap
+  of both is the knot's own allowed change {B, c}, carrying the B-read to its negation. S X S† = Y, S² = Z, S has order 4.
+- **P3.** (a) Under all 216 assignments the even closure is a pure toy state (8 of 64 underlying states) whose 64 reading
+  probabilities equal the toy theory's; the odd closure has no allowed state. (b) Under all 216 assignments of Paulis the
+  four knot operators commute and multiply to −1: the even closure has no qubit state and the odd closure has exactly one,
+  which scores 1 on the target with 64 of 64 entries. (c) 1,080 pure toy states of three toy bits (135 sets of known
+  questions); the best score on the target is 3/4 under every assignment, attained by the closure (56 of 64 entries).
+  (d) 7 of 15 pairings give a toy state, the record's and the six with exactly one pair no knot holds together; in each of
+  the other eight, the three knots that hold both distinctions of a reader fail to commute pairwise and the fourth
+  commutes with all; the verdict is the same under all 216 assignments.
+- **P4.** All 16 toy choices (single swaps for the three readers' phases and the state's phase): every scored context
+  certain, the close even. All 16 qubit choices (S or S³): certain, the close odd. Without the state phase no scored
+  context is certain in either theory (8 choices each). The closing phase is the identity in Z2×Z2 and Z in Z4.
+- **P5.** In all three coherent constructions the two reads assigned to each reader anticommute, their product squares to
+  −1, and the four scored context operators multiply to −1 on the whole six-bit space; the change and rephased reads
+  flip distinctions outside the reader's pair, and the confined reads take every allowed word outside the eight. The value
+  reads commute (products square to +1, context product +1, score 3/4). The control without the sign commutes and scores
+  5/8.
+- **P6.** (a) 60 two-qubit stabilizer states with signed Pauli reads: best score 2. (b) The sibling preparation is not a
+  stabilizer state; with signed Pauli reads it scores at most 2; its own reads give (2 + 12√2)/9 = 2.1078403054 and the
+  best over all two-valued reads is 2√10/3 = 2.1081851068 (floating point, 1e-12); R is not a signed Pauli. (c) The square
+  of XX + XZ + ZX − ZZ is 4 + 4 YY; its largest eigenvalue is 2√2 and its state is not a stabilizer state. (d) Making
+  either reader's reads commute gives 2.

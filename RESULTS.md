@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**408 current results** and 5 superseded ones, from 699 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**408 current results** and 5 superseded ones, from 700 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -31,7 +31,7 @@ How to read an entry:
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 26 results
 - [Notes](#notes): 6 self-contained notes
-- [Epics](#epics): all 699 epics with their closures
+- [Epics](#epics): all 700 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -2055,6 +2055,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-26 | Reading a change: is it native, and does it give separated readers a table above the classical bound? (`VALUE-CHANGE-20261126-001`) | — | [folder](research/VALUE-CHANGE-20261126-001/) |
 | 2026-11-27 | What the node cores over the cap are: finishing, repeating or growing without bound (`CAPPED-CORES-20261127-001`) | — | [folder](research/CAPPED-CORES-20261127-001/) |
 | 2026-11-27 | Proving the chain counting on node cores without chained twins (`CHAIN-COUNT-20261127-001`) | — | [folder](research/CHAIN-COUNT-20261127-001/) |
+| 2026-11-27 | Under the forbidding cuts, does growth close a stage that carries the step one layer up? (`CLOSED-BY-CUTS-20261127-001`) | — | [folder](research/CLOSED-BY-CUTS-20261127-001/) |
 | 2026-11-27 | Does the step one layer up need a closed system? Cut one link of each twelve-knot system that carries it (`CUT-BOXES-20261127-001`) | — | [folder](research/CUT-BOXES-20261127-001/) |
 | 2026-11-27 | Reading a growth from its start on pieces with a cycle, and a fresh test of the twin exception (`CYCLE-READ-20261127-001`) | — | [folder](research/CYCLE-READ-20261127-001/) |
 | 2026-11-27 | What the allowed states and the marked loose distinctions tell a reader of the families' tree (`MARKED-LOOSE-20261127-001`) | — | [folder](research/MARKED-LOOSE-20261127-001/) |

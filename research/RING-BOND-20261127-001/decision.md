@@ -1,5 +1,24 @@
 # The grown ring's bond: what stands
 
+
+> **Referee R1: refuted, one Block** ([report](referee-R1/report.md)). Every ring count, the symmetry results, the
+> knot checks, the collapse check and the census tallies reproduce. **Block:** bonds do bind again one layer up. On a
+> closed start of twelve three-place knots (every distinction held twice, no growth), six agreements on disjoint
+> carriers of three, A0, A1, B0, B1, C0 and C1, are bound by eight lower bonds: no choice of one A, one B and one C
+> agrees on all three. The three upper readings [A0 = A1], [B0 = B1] and [C0 = C1] then take seven of eight words,
+> missing "all three disagree". Every pair is free, removing any lower bond or any one of the twelve knots restores the
+> word, and no lower bond reads an upper reading. On the grown ring at round 3 an eight-bond example exists with
+> overlapping lower carriers, and removing either round-3 birth's law restores the word. At least eight lower bonds are
+> needed, so clusters of at most three could not have found one. Replayed by the thread (`post/upper_replay.py`:
+> 7,570 states, seven upper words, every source law essential). **Narrowings:** the exact joint image holds on 24 of 24
+> disjoint clusters but 0 of 70 overlapping ones. Bonds recur under the stated carrier and local-holder tests. Strict
+> controls (each carrier meeting each knot at most once, or each reading open after every single-knot fixing) leave 2
+> and 0 sampled bonds. Disconnected holders raise the starts with a bond before growth from 408 to 606. Padding:
+> 811 of 9,524 source bonds lose a place keeping an admissible bond. The four-place swap is 636 bonds, 225 with a
+> carrier of four. The parity holder check kept only the first shortest holder, giving 126 more bonds under the
+> existential definition, and 811 of 1,000 starts have a bond. Within the three-valued scheme the reference is
+> selected: one of 105 choices of reference and pairing works, and it is the stage's only loose distinction. Credit:
+> the four-law witness and its three choices are the earlier referee's.
 `RING-BOND-20261127-001`. Frozen in commit 8df7206b94. Results are in `out/`, tallied in `out/tally.json`. Post-hoc
 checks, marked as such, are in `post/`. Referee pending.
 
@@ -29,7 +48,7 @@ Read each opposite pair (1,5), (2,3), (0,4) as apart, agreeing with 6, or agreei
 
 So it passes K1 to K3 as a three-valued relation. Each of the three bonds is a two-valued reading of it, for example
 [0 = 4 = 6] is "the pair (0,4) agrees with 6". The model is expected to replace the scaffold (the choice of one bond)
-by such a relation; the reference distinction (here 6) is still a choice.
+by such a relation. The reading scheme is our choice; within it the reference is selected [R1: 1 of 105 choices of reference and pairing works, and it is the stage's only loose distinction, 6].
 
 **(2) The knot test: passed, and no reading is read at a knot.** The knot checker passes each round-1 bond's clause in
 every contact role (9 of 9, P2.1). The birth's law is essential in all nine round-1 bonds; the start alone has none
@@ -41,7 +60,7 @@ triples, ask a solver) agrees with the search on every bond checked (P2.3):
   not run.
 
 So each bond is the laws read through agreements, a case split. Readings read at a single knot are excluded by
-definition. The search would have reported any bond whose readings fail only that test, and none is counted.
+definition. [R1: the search prefilters readings read at a knot; 53 of 210 disjoint carrier triples on the round-1 ring pass the image test but fail it.]
 
 Post hoc: **bonds need no ring and no growth.** A chain of three three-place knots, (0,1,2), (2,3,4), (4,5,6), holds
 16 bonds with all three laws essential, for example [0 = 3], [1 = 5], [2 = 4 = 6] missing 001. On 40.8% of the sampled
@@ -67,7 +86,7 @@ Results against the predictions:
 - P3.3 held, and so did P3.4 (the advisor's).
 - Every bond on the ring misses exactly one triple, and so does every bond under the swaps:
   - all readings unchanged by a global flip: 9 bonds at round 1 and 5,556 at round 2;
-  - carriers up to four, round 2: 507 bonds, 96 of them with a carrier of four.
+  - carriers up to four, round 2: [R1: 636 bonds, 225 with a carrier of four, all missing one word; the archived swap read only three places of each four-place carrier.]
 
 The layer above found no bond in what it could read (P3.5, held):
 - with disjoint carriers, round 1 has no cluster, and round 2 has 24 (6 of them of three bonds), none holding a bond of
@@ -76,7 +95,7 @@ The layer above found no bond in what it could read (P3.5, held):
 
 This "none" could hardly have failed, given so few clusters. On 18 of the 24 round-2 clusters, the readings' joint image
 is smaller than their bonds allow (P3.6). Post hoc, every one of those is explained by other bonds on the same readings.
-So on every cluster read, the bonds together present the readings' joint image exactly, like the laws of a system of
+[R1: all bonds on the same readings give the exact image on 24 of 24 disjoint round-2 clusters and 0 of 70 overlapping round-1 clusters.] So on the disjoint clusters read, the bonds together present the readings' joint image exactly, like the laws of a system of
 their own, but they bind nothing further.
 
 Census, 1,000 held-out starts, not-all-equal, holders ≤ 4 (P3.7):
@@ -99,16 +118,16 @@ not run.
 - P4.4 held: the ring under parity grows one round and has no bond.
 
 Proved (`README.md`): under parity, which triples occur is fixed by the linear dependences among the carriers' pair
-sums, and those dependences are sums of the laws. Parity's bonds add nothing to the class facts' "start's sum of laws".
+sums, and those dependences are sums of the laws. [R1: the complete set of dependences among the carrier differences determines the image; a dependence using one pair from each carrier is necessary within the carrier cap, but one such sum need not determine the image, and the laws may include births.]
 Bonds are common under parity: 125 of 179 starts have one at round 0.
 
 ## On the owner's rungs
 
-- **Repetition: met, in a new form.** A relation held by the whole and by no part (every holder's law essential, no knot
+- **Repetition: met, in a new form** [R1: under the stated carrier and local-holder tests; 177 of the 9,524 sampled bonds before growth need every stage law; strict carrier controls leave 2 and 0]. A relation held by the whole and by no part (every holder's law essential, no knot
   reading any of its readings) recurs: at every round of the ring; on 40.8% of sampled starts before growth; on 59% of
   funded starts after one round, with a birth among the holders. The readings are not facts the whole keeps: a single
   change flips them (the earlier referee).
-- **The tower's next step** (bonds binding again one layer up): not shown. On every cluster read, the bonds present
+- **The tower's next step** (bonds binding again one layer up): [R1, Block: reached, on a chosen closed twelve-knot start with disjoint carriers and on the grown ring at round 3 with overlapping carriers, where a birth's law is essential; with six disjoint carriers after growth, and selection by growth, open.] ~~not shown.~~ On every cluster read, the bonds present
   their readings' joint image like laws, but no cluster holds a bond of its own. The clusters are few.
 - **Recursion:** not shown.
 
@@ -127,8 +146,8 @@ Bonds are common under parity: 125 of 179 starts have one at round 0.
 
 | Scope | Verdict | Why |
 | --- | --- | --- |
-| This attempt: the grown ring's bond | **Status:** STOP on its four questions (P1.1, P1.3, P1.4, P2.1 to P2.3, P3.1, P3.3 to P3.5, P3.7 a to c, P4.1, P4.2 and P4.4 held; P1.2's last clause, P3.2, P3.7 d and P4.3 failed) | The choice is ours, a three-valued relation needs none; bonds pass the knot test and repeat everywhere, including before growth; nothing binds one layer up on the clusters read; under parity bonds are sums of laws |
-| Local direction: a second layer of facts | Open | Under not-all-equal, bonds are a first-layer phenomenon of agreement readings; the layer above needs clusters on disjoint carriers, which the ring barely has |
+| This attempt: the grown ring's bond | **Status:** STOP on its four questions (P1.1, P1.3, P1.4, P2.1 to P2.3, P3.1, P3.3 to P3.5 [R1: P3.3 and P3.4 at the tested rounds; P3.5 only for the strict search and round-1 overlap], P3.7 a to c, P4.1, P4.2 and P4.4 held; P1.2's last clause, P3.2, P3.7 d and P4.3 failed) | The choice is ours, a three-valued relation needs none; bonds pass the knot test and repeat everywhere, including before growth; nothing binds one layer up on the clusters read; under parity bonds are sums of laws |
+| Local direction: a second layer of facts | Open | [R1, Block: eight full-stage agreement bonds bind again on a closed twelve-knot start with disjoint carriers and on the grown ring with overlap; the ring search admitted at most three lower bonds.] ~~Under not-all-equal, bonds are a first-layer phenomenon of agreement readings; the layer above needs clusters on disjoint carriers, which the ring barely has~~ |
 | Long-term goal: G17 with G18 | Narrowed | Facts held by the whole exist under both laws (sums of laws under parity, case splits under not-all-equal); a second binding is not shown under either |
 
 **Next step:** Continue with direction 1 (the coordinator's call; the law between parity and not-all-equal waits for the

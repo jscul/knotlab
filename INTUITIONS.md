@@ -6207,8 +6207,9 @@ says which it reaches:
 3. **Recursion**: a pattern that grows back into itself, or whose product is fed
    back as its own start.
 
-The first step of the second rung is reached on some starts (below); a step that
-repeats, and the third rung, are not.
+The first step of the second rung is reached on some starts (below). Under
+not-all-equal a second step exists on a chosen start; a step that repeats on
+its own under growth, and the third rung, are not shown.
 
 **The question.** If a whole-held fact is a fact of the whole that no part
 holds, it might in turn serve as a distinction: two values, open until fixed.
@@ -6295,6 +6296,33 @@ the three agreements, so the same ring holds three such relations.
 ([the not-all-equal layer](research/NAE-LAYER-20261127-001/decision.md),
 refuted by its referee.)
 
+**Clauses on agreements, and one layer up (computed, refereed).** Such
+clauses are common. A chain of three three-place knots, (0,1,2), (2,3,4) and
+(4,5,6), already holds 16 of them with no ring and no growth: for example
+[0 = 3], [1 = 5] and [2 = 4 = 6] cannot take 0, 0, 1. Of 1,000 census starts
+sampled with a stated seed, 408 hold one before growth (counting clauses held
+by at most four connected knots). On 433 of the 730 that grow, a birth is among
+the knots holding a new one. On the grown ring nothing in the growth picks one
+of the three versions: every renaming of the ring's three knots exchanges them,
+at every round. What the growth holds without a choice is a three-valued
+relation. Read each of the three pairs as apart, agreeing with 6, or agreeing
+against 6. The triples then take 16 of 27 values, every two readings take all
+nine pairs, and every law is needed. Of the 105 ways to choose a reference and
+a pairing, only this one works. And the clauses can bind again, one layer up.
+Take a start of twelve three-place knots that holds every distinction twice.
+Six agreements on disjoint triples of distinctions, A0, A1, B0, B1, C0 and C1,
+are bound by eight clauses: no one A, one B and one C can all hold. Then
+[A0 = A1], [B0 = B1] and [C0 = C1] cannot all fail, and every two of them are
+free. Removing any one of the eight clauses, or any one of the twelve knots,
+frees the three. That is a relation which passes the knot test, made of
+relations which pass it. On the grown ring at round 3 there is an example of
+the same kind whose agreements overlap, and there a round-3 birth's law is
+needed. These starts and readings were chosen; whether growth makes and
+selects such a step on its own is open. Under parity every such clause follows
+from the dependences among its distinctions' pairs, which are sums of laws
+(proved) ([the grown ring's clauses](research/RING-BOND-20261127-001/decision.md),
+refuted by its referee, who found the step one layer up).
+
 **Frequencies, under a named weighting.** Weight every allowed state the same.
 On a start with no ring, the mean of the product of two distinctions' signs is
 then a product along the route between them, −1/(2^(a−1) − 1) for each knot of
@@ -6330,7 +6358,7 @@ with nothing nested by hand.
 | A connected start keeps two or more independent such facts | computed, refereed: a nine-knot start of two joined rings gains two in one round, a sampled ten-knot start too (lesson 12.2) |
 | A tower's first step: facts held by the whole, bound by a rule that passes the knot test and that nothing outside supplies, where before the step they were not such facts | reached for facts read by no single knot on built starts, and on sampled ones when a small change is any change of at most five distinctions; for facts held by no part, on one sampled start under the shortest changes and, at a larger scale, on 8 of 12 three-ring built starts read for the families' facts and 4 of 12 for the whole rings': the rule is the start's own sum of knot laws, and growth makes the bound parities facts ([the built binding](research/BUILT-BINDING-20261126-001/decision.md), computed, refereed); under the forbidding cuts one knot's law makes the rule itself |
 | A tower: the step repeated, the bound layer keeping facts of its own | open. The families' facts obey exactly one relation, the sum of all the start's laws (proved), but sums of them can be carried on their own: on a start of three rings of four knots the three rings' facts obey one rule and the first ring's fact with its two half-ring facts another, five facts on separate carriers held by no part, so two second-layer knots share a fact; and a third-layer knot exists under a reading we choose ([the third layer](research/THIRD-LAYER-20261126-001/decision.md), refuted by its referee). What growth itself selects is only partly settled: the least change flipping exactly two families' facts costs a shortest chain of steps d + 2t + 2, d the families' distance in the start (proved, refereed), so at a fixed scale the start's distances fix which cluster facts are kept, level by level; but the same places carry knots meeting as a tree or in a loop, so growth does not fix the knots ([selected knots](research/SELECTED-KNOTS-20261127-001/decision.md), refuted by its referee), and the tree is read off distances only once the families are named ([the pair cost](research/TREE-PROOF-20261127-001/tree_proof.md), refereed) |
-| The same under not-all-equal | a fact held by the whole: a grown three-knot ring binds three agreements in one clause that needs all four laws, with no knot reading any of them; which of its three versions growth selects, and whether such relations bind again one layer up, is under study ([the not-all-equal layer](research/NAE-LAYER-20261127-001/decision.md), refuted by its referee); under the equal weighting the whole carries a frequency no table of one, two or three distinctions shows ([the weights](research/NAE-WEIGHTS-20261127-001/decision.md), refereed) |
+| The same under not-all-equal | a fact held by the whole: a grown three-knot ring binds three agreements in one clause that needs all four laws, with no knot reading any of them; growth picks none of its three versions, and a three-valued relation needs no choice; such clauses are common before growth, and on a chosen start of twelve knots eight of them bind again one layer up, while whether growth makes such a step on its own is open ([the not-all-equal layer](research/NAE-LAYER-20261127-001/decision.md) and [the grown ring's clauses](research/RING-BOND-20261127-001/decision.md), both refuted by their referees); under the equal weighting the whole carries a frequency no table of one, two or three distinctions shows ([the weights](research/NAE-WEIGHTS-20261127-001/decision.md), refereed) |
 | A pattern that grows back into itself (recursion) | not shown: growing a start and then exchanging it gives the start back only when we pin its loose values, which ordinary growth never does, and the exchange is ours; no free return or cycle on the iterations tested ([recursion's lead](research/RECURSION-LEAD-20261126-001/decision.md), refereed); parts that copy themselves (lesson 8.7) copy under laws added by hand. Two leads, not results: a part released by ordinary growth that itself keeps releasing parts, proved under both laws, where the second level depends on which released pattern an observer's test recognizes ([generators](research/GENERATORS-20261120-001/nested.md)); and two knots sharing one distinction compose into one knot exactly when they can force it to opposite values ([composition](research/BASE-THREE-20261021-001)) |
 
 ### 12.4 Two kinds of contradiction

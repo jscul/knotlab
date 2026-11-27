@@ -1,0 +1,908 @@
+{
+  "positive_controls": [
+    {
+      "signs": "111111",
+      "patterns": 1,
+      "single_deletions_destroying_pattern": 8
+    },
+    {
+      "signs": "010011",
+      "patterns": 1,
+      "single_deletions_destroying_pattern": 8
+    }
+  ],
+  "round_1_disjoint": {
+    "first_bonds": 9,
+    "stage": [
+      [
+        0,
+        1,
+        3
+      ],
+      [
+        1,
+        2,
+        4
+      ],
+      [
+        0,
+        2,
+        5
+      ],
+      [
+        3,
+        4,
+        5,
+        6
+      ]
+    ],
+    "summary": {
+      "first_pairs_examined": 0,
+      "patterns_checked_until_first_witness": 0,
+      "pairs_with_at_least_four_common_signed_pairs": 0
+    },
+    "search_stopped_at_first_witness": false,
+    "search_seconds": 5e-05,
+    "source_reconstruction_seconds": 0.00704
+  },
+  "round_1_overlap": {
+    "first_bonds": 9,
+    "stage": [
+      [
+        0,
+        1,
+        3
+      ],
+      [
+        1,
+        2,
+        4
+      ],
+      [
+        0,
+        2,
+        5
+      ],
+      [
+        3,
+        4,
+        5,
+        6
+      ]
+    ],
+    "summary": {
+      "first_pairs_examined": 0,
+      "patterns_checked_until_first_witness": 0,
+      "pairs_with_at_least_four_common_signed_pairs": 0
+    },
+    "search_stopped_at_first_witness": false,
+    "search_seconds": 3e-05,
+    "source_reconstruction_seconds": 0.00704
+  },
+  "round_2_disjoint": {
+    "first_bonds": 411,
+    "stage": [
+      [
+        0,
+        1,
+        3
+      ],
+      [
+        1,
+        2,
+        4
+      ],
+      [
+        0,
+        2,
+        5
+      ],
+      [
+        3,
+        4,
+        5,
+        6
+      ],
+      [
+        6,
+        7,
+        8
+      ]
+    ],
+    "summary": {
+      "first_pairs_examined": 0,
+      "patterns_checked_until_first_witness": 0,
+      "pairs_with_at_least_four_common_signed_pairs": 0
+    },
+    "search_stopped_at_first_witness": false,
+    "search_seconds": 0.001,
+    "source_reconstruction_seconds": 0.00927
+  },
+  "round_2_overlap": {
+    "first_bonds": 411,
+    "stage": [
+      [
+        0,
+        1,
+        3
+      ],
+      [
+        1,
+        2,
+        4
+      ],
+      [
+        0,
+        2,
+        5
+      ],
+      [
+        3,
+        4,
+        5,
+        6
+      ],
+      [
+        6,
+        7,
+        8
+      ]
+    ],
+    "summary": {
+      "first_pairs_examined": 39,
+      "patterns_checked_until_first_witness": 0,
+      "pairs_with_at_least_four_common_signed_pairs": 39
+    },
+    "search_stopped_at_first_witness": false,
+    "search_seconds": 0.00106,
+    "source_reconstruction_seconds": 0.00927
+  },
+  "round_3_disjoint": {
+    "first_bonds": 9121,
+    "stage": [
+      [
+        0,
+        1,
+        3
+      ],
+      [
+        1,
+        2,
+        4
+      ],
+      [
+        0,
+        2,
+        5
+      ],
+      [
+        3,
+        4,
+        5,
+        6
+      ],
+      [
+        6,
+        7,
+        8
+      ],
+      [
+        7,
+        9,
+        10
+      ],
+      [
+        8,
+        11,
+        12
+      ]
+    ],
+    "summary": {
+      "first_pairs_examined": 598,
+      "patterns_checked_until_first_witness": 0,
+      "pairs_with_at_least_four_common_signed_pairs": 598
+    },
+    "search_stopped_at_first_witness": false,
+    "search_seconds": 0.03322,
+    "source_reconstruction_seconds": 0.13987
+  },
+  "round_3_overlap": {
+    "first_bonds": 9121,
+    "stage": [
+      [
+        0,
+        1,
+        3
+      ],
+      [
+        1,
+        2,
+        4
+      ],
+      [
+        0,
+        2,
+        5
+      ],
+      [
+        3,
+        4,
+        5,
+        6
+      ],
+      [
+        6,
+        7,
+        8
+      ],
+      [
+        7,
+        9,
+        10
+      ],
+      [
+        8,
+        11,
+        12
+      ]
+    ],
+    "summary": {
+      "first_pairs_examined": 1,
+      "patterns_checked_until_first_witness": 1,
+      "pairs_with_at_least_four_common_signed_pairs": 7075
+    },
+    "search_stopped_at_first_witness": true,
+    "search_seconds": 0.03627,
+    "source_reconstruction_seconds": 0.13987,
+    "witness": {
+      "six_lower_carriers_grouped_into_upper_pairs": [
+        [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            1,
+            6
+          ]
+        ],
+        [
+          [
+            3,
+            9,
+            10
+          ],
+          [
+            3,
+            11,
+            12
+          ]
+        ],
+        [
+          [
+            4,
+            7,
+            8
+          ],
+          [
+            5,
+            7,
+            8
+          ]
+        ]
+      ],
+      "signed_values_in_the_eight_forbidden_words": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "lower_laws": [
+        [
+          [
+            0,
+            2,
+            4
+          ],
+          "111"
+        ],
+        [
+          [
+            0,
+            2,
+            5
+          ],
+          "111"
+        ],
+        [
+          [
+            0,
+            3,
+            4
+          ],
+          "111"
+        ],
+        [
+          [
+            0,
+            3,
+            5
+          ],
+          "111"
+        ],
+        [
+          [
+            1,
+            2,
+            4
+          ],
+          "111"
+        ],
+        [
+          [
+            1,
+            2,
+            5
+          ],
+          "111"
+        ],
+        [
+          [
+            1,
+            3,
+            4
+          ],
+          "111"
+        ],
+        [
+          [
+            1,
+            3,
+            5
+          ],
+          "111"
+        ]
+      ],
+      "lower_carriers_all_disjoint": false,
+      "three_upper_carriers_disjoint_in_raw_distinctions": true,
+      "eight_bonds_allow_lower_words": 37,
+      "actual_lower_words": [
+        "000000",
+        "000001",
+        "000010",
+        "000011",
+        "000100",
+        "000101",
+        "000110",
+        "000111",
+        "001000",
+        "001001",
+        "001010",
+        "001011",
+        "001101",
+        "001110",
+        "001111",
+        "010000",
+        "010001",
+        "010010",
+        "010011",
+        "010100",
+        "011000",
+        "110000",
+        "110011",
+        "110100",
+        "111000"
+      ],
+      "first_bonds_on_six_readings": 8,
+      "all_bonds_allow_lower_words": 37,
+      "single_upper_word_excluded_by_eight_bonds": "000",
+      "upper_image_size_after_each_lower_bond_deletion": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8
+      ],
+      "mixed_lower_bond_fixes_on_eight_law_conjunction": [
+        [
+          6,
+          6,
+          6
+        ],
+        [
+          6,
+          6,
+          6
+        ],
+        [
+          6,
+          6,
+          6
+        ],
+        [
+          6,
+          6,
+          6
+        ],
+        [
+          6,
+          6,
+          6
+        ],
+        [
+          6,
+          6,
+          6
+        ],
+        [
+          6,
+          6,
+          6
+        ],
+        [
+          6,
+          6,
+          6
+        ]
+      ],
+      "mixed_lower_bond_fixes_on_physical_stage": [
+        [
+          3,
+          5,
+          4
+        ],
+        [
+          3,
+          5,
+          4
+        ],
+        [
+          3,
+          5,
+          4
+        ],
+        [
+          3,
+          5,
+          4
+        ],
+        [
+          3,
+          5,
+          6
+        ],
+        [
+          3,
+          5,
+          6
+        ],
+        [
+          3,
+          5,
+          6
+        ],
+        [
+          3,
+          5,
+          6
+        ]
+      ],
+      "upper_source_word_counts": {
+        "000": 0,
+        "001": 48,
+        "010": 36,
+        "011": 132,
+        "100": 48,
+        "101": 240,
+        "110": 132,
+        "111": 552
+      },
+      "upper_words_on_source": [
+        "001",
+        "010",
+        "011",
+        "100",
+        "101",
+        "110",
+        "111"
+      ]
+    }
+  },
+  "round_4_disjoint": {
+    "first_bonds": 44483,
+    "stage": [
+      [
+        0,
+        1,
+        3
+      ],
+      [
+        1,
+        2,
+        4
+      ],
+      [
+        0,
+        2,
+        5
+      ],
+      [
+        3,
+        4,
+        5,
+        6
+      ],
+      [
+        6,
+        7,
+        8
+      ],
+      [
+        7,
+        9,
+        10
+      ],
+      [
+        8,
+        11,
+        12
+      ],
+      [
+        9,
+        11,
+        13,
+        14
+      ],
+      [
+        10,
+        15,
+        16
+      ],
+      [
+        12,
+        17,
+        18
+      ]
+    ],
+    "summary": {
+      "first_pairs_examined": 4370,
+      "patterns_checked_until_first_witness": 0,
+      "pairs_with_at_least_four_common_signed_pairs": 4370
+    },
+    "search_stopped_at_first_witness": false,
+    "search_seconds": 0.22877,
+    "source_reconstruction_seconds": 5.93538
+  },
+  "round_4_overlap": {
+    "first_bonds": 44483,
+    "stage": [
+      [
+        0,
+        1,
+        3
+      ],
+      [
+        1,
+        2,
+        4
+      ],
+      [
+        0,
+        2,
+        5
+      ],
+      [
+        3,
+        4,
+        5,
+        6
+      ],
+      [
+        6,
+        7,
+        8
+      ],
+      [
+        7,
+        9,
+        10
+      ],
+      [
+        8,
+        11,
+        12
+      ],
+      [
+        9,
+        11,
+        13,
+        14
+      ],
+      [
+        10,
+        15,
+        16
+      ],
+      [
+        12,
+        17,
+        18
+      ]
+    ],
+    "summary": {
+      "first_pairs_examined": 1,
+      "patterns_checked_until_first_witness": 1,
+      "pairs_with_at_least_four_common_signed_pairs": 38317
+    },
+    "search_stopped_at_first_witness": true,
+    "search_seconds": 0.24253,
+    "source_reconstruction_seconds": 5.93538,
+    "witness": {
+      "six_lower_carriers_grouped_into_upper_pairs": [
+        [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            1,
+            6
+          ]
+        ],
+        [
+          [
+            3,
+            9,
+            10
+          ],
+          [
+            3,
+            11,
+            12
+          ]
+        ],
+        [
+          [
+            4,
+            7,
+            8
+          ],
+          [
+            5,
+            7,
+            8
+          ]
+        ]
+      ],
+      "signed_values_in_the_eight_forbidden_words": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "lower_laws": [
+        [
+          [
+            0,
+            2,
+            4
+          ],
+          "111"
+        ],
+        [
+          [
+            0,
+            2,
+            5
+          ],
+          "111"
+        ],
+        [
+          [
+            0,
+            3,
+            4
+          ],
+          "111"
+        ],
+        [
+          [
+            0,
+            3,
+            5
+          ],
+          "111"
+        ],
+        [
+          [
+            1,
+            2,
+            4
+          ],
+          "111"
+        ],
+        [
+          [
+            1,
+            2,
+            5
+          ],
+          "111"
+        ],
+        [
+          [
+            1,
+            3,
+            4
+          ],
+          "111"
+        ],
+        [
+          [
+            1,
+            3,
+            5
+          ],
+          "111"
+        ]
+      ],
+      "lower_carriers_all_disjoint": false,
+      "three_upper_carriers_disjoint_in_raw_distinctions": true,
+      "eight_bonds_allow_lower_words": 37,
+      "actual_lower_words": [
+        "000000",
+        "000001",
+        "000010",
+        "000011",
+        "000100",
+        "000101",
+        "000110",
+        "000111",
+        "001000",
+        "001001",
+        "001010",
+        "001011",
+        "001101",
+        "001110",
+        "001111",
+        "010000",
+        "010001",
+        "010010",
+        "010011",
+        "010100",
+        "011000",
+        "110000",
+        "110011",
+        "110100",
+        "111000"
+      ],
+      "first_bonds_on_six_readings": 8,
+      "all_bonds_allow_lower_words": 37,
+      "single_upper_word_excluded_by_eight_bonds": "000",
+      "upper_image_size_after_each_lower_bond_deletion": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8
+      ],
+      "mixed_lower_bond_fixes_on_eight_law_conjunction": [
+        [
+          6,
+          6,
+          6
+        ],
+        [
+          6,
+          6,
+          6
+        ],
+        [
+          6,
+          6,
+          6
+        ],
+        [
+          6,
+          6,
+          6
+        ],
+        [
+          6,
+          6,
+          6
+        ],
+        [
+          6,
+          6,
+          6
+        ],
+        [
+          6,
+          6,
+          6
+        ],
+        [
+          6,
+          6,
+          6
+        ]
+      ],
+      "mixed_lower_bond_fixes_on_physical_stage": [
+        [
+          3,
+          5,
+          4
+        ],
+        [
+          3,
+          5,
+          4
+        ],
+        [
+          3,
+          5,
+          4
+        ],
+        [
+          3,
+          5,
+          4
+        ],
+        [
+          3,
+          5,
+          6
+        ],
+        [
+          3,
+          5,
+          6
+        ],
+        [
+          3,
+          5,
+          6
+        ],
+        [
+          3,
+          5,
+          6
+        ]
+      ],
+      "upper_source_word_counts": {
+        "000": 0,
+        "001": 1584,
+        "010": 1116,
+        "011": 4140,
+        "100": 1512,
+        "101": 7884,
+        "110": 4068,
+        "111": 17316
+      },
+      "upper_words_on_source": [
+        "001",
+        "010",
+        "011",
+        "100",
+        "101",
+        "110",
+        "111"
+      ]
+    }
+  }
+}

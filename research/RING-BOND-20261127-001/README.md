@@ -1,5 +1,9 @@
 # The grown ring's bond: chosen or selected, a knot, and does it iterate?
 
+
+> **Referee R1: refuted, one Block** ([report](referee-R1/report.md); notice in [decision.md](decision.md)). Bonds bind again
+> one layer up: eight lower bonds bind three upper agreements on a closed twelve-knot start, and on the grown ring with
+> overlapping carriers. The local holder check kept only the first shortest holder (a narrowing under parity).
 `RING-BOND-20261127-001`, opened on the coordinator's go-ahead after the not-all-equal layer's referee
 (`NAE-LAYER-20261127-001`, report R1) found what the study and the advisor had both predicted would not exist. The census's
 three-knot ring (0,1,3), (1,2,4), (2,0,5) grows one birth (3,4,5,6), and three agreement readings on disjoint carriers,
@@ -25,7 +29,7 @@ take all four pairs of values; the three together miss at least one of the eight
   triple occur.
 - **Local search** (`local_bonds`) uses a connected set H of at most M knots as the bond's holders, with the carriers in
   H's distinctions. On H's laws alone every law of H is essential and no reading is read at a knot of H. A solver then
-  checks the whole stage: it gives the same missing triples, every other triple occurs, and no reading is read at any
+  checks the whole stage [R1: only the first shortest holder for each carrier triple; the existential definition needs every candidate]: it gives the same missing triples, every other triple occurs, and no reading is read at any
   knot. Every full-search bond whose essential laws form a connected set of at most M knots, hold the relation alone and
   contain its carriers is found locally. That was checked on rounds 1 to 3 of the ring, and the local search found
   nothing the full search lacks.

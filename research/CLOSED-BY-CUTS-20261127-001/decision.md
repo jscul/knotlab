@@ -16,8 +16,8 @@ start (7,075) was grown for at most six rounds under each rival law.
 
 The two laws differ only in when some starts stall (rounds 1 and 3), not in which starts close.
 
-**Reading.** Boxes need a closed system of at least twelve three-place knots: none on 117 closed systems with fewer, 49
-of 85 with twelve, and none survives one cut. Ordinary growth never closes a connected stage. The cuts close only stages
+**Reading.** Boxes need a closed system of at least twelve three-place knots: none on the 27 closed three-place systems with ten or
+fewer, 49 of 85 with twelve, and none survives one cut. Ordinary growth never closes a connected stage. The cuts close only stages
 of at most nine knots within six rounds on census starts. So no growth law recorded makes the step one layer up on the
 starts read. Whether larger starts under the cuts close at twelve or more knots is not run.
 

@@ -1,5 +1,17 @@
 # Correlations between distant parts under not-all-equal: held by the whole, or read at a knot?
 
+
+> **Referee R1: refuted, Blocks on the general claims** ([report](referee-R1/report.md)). W1 holds on all 761 pairs and
+> the three ring means reproduce. **Block:** the independence read after the run is false: on a ring-free start two
+> even sign products are independent exactly when the knots they use are disjoint (six three-place knots break the
+> narrower rule: 1/729 against 1/6561). **Block:** "a distant correlation is held by the whole only in the weak sense":
+> a pair mean on a ring-free start multiplies along its route, but other readings need ring terms and four-place terms
+> of one knot; and two readings on 14 three-place knots agree on every table of one, two and three distinctions while
+> their even parity occurs in 20,126 against 20,190 of 38,982 states, so the whole can differ where every proper part
+> agrees. **Narrowings:** the frozen test (two signs per reader) and the domain; the completions weighting is "count
+> each finished state once and project", and the grown rules' factors reproduce all 7,862 of its nonzero means; the far
+> edit here differs from SIGNED-COUNT's (both give −33/95).
+
 Epic `NAE-WEIGHTS-20261127-001`, at the coordinator's pick (direction 2 of `NAE-LAYER-20261127-001`, whose referee is
 running). A check by the thread, not registered; computed. The sections down to "Frozen" were committed before the run.
 

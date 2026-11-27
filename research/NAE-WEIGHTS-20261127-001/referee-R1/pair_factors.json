@@ -1,0 +1,340 @@
+{
+  "totals": {
+    "starts": 7075,
+    "same knot pairs": 214401,
+    "no common knot pairs": 203892,
+    "same knot failures": 198463,
+    "starts with a failure": 7017,
+    "no common knot failures": 187570
+  },
+  "roster": "research/FORBID-EDITS-20261126-001/starts.json",
+  "roster_size": 7075,
+  "description": "Each knot retains the constant and every two-place sign term, before multiplying and normalizing. Exact means use the literal not-all-equal truth tables. A failure means the two means differ, with exact integer arithmetic.",
+  "strata": [
+    {
+      "independent_rings": 0,
+      "all_three_place": false,
+      "starts": 10,
+      "same knot pairs": 169,
+      "no common knot pairs": 389
+    },
+    {
+      "independent_rings": 0,
+      "all_three_place": true,
+      "starts": 5,
+      "same knot pairs": 63,
+      "no common knot pairs": 140
+    },
+    {
+      "independent_rings": 1,
+      "all_three_place": false,
+      "starts": 105,
+      "same knot pairs": 1987,
+      "no common knot pairs": 3780,
+      "same knot failures": 204,
+      "starts with a failure": 97,
+      "no common knot failures": 470
+    },
+    {
+      "independent_rings": 1,
+      "all_three_place": true,
+      "starts": 13,
+      "same knot pairs": 165,
+      "no common knot pairs": 292
+    },
+    {
+      "independent_rings": 2,
+      "all_three_place": false,
+      "starts": 485,
+      "same knot pairs": 10420,
+      "same knot failures": 4437,
+      "starts with a failure": 483,
+      "no common knot pairs": 16373,
+      "no common knot failures": 8933
+    },
+    {
+      "independent_rings": 2,
+      "all_three_place": true,
+      "starts": 14,
+      "same knot pairs": 179,
+      "no common knot pairs": 239
+    },
+    {
+      "independent_rings": 3,
+      "all_three_place": false,
+      "starts": 1214,
+      "same knot pairs": 30072,
+      "same knot failures": 24326,
+      "starts with a failure": 1214,
+      "no common knot pairs": 38600,
+      "no common knot failures": 34707
+    },
+    {
+      "independent_rings": 3,
+      "all_three_place": true,
+      "starts": 6,
+      "same knot pairs": 77,
+      "no common knot pairs": 65
+    },
+    {
+      "independent_rings": 4,
+      "all_three_place": false,
+      "starts": 1862,
+      "same knot pairs": 53105,
+      "same knot failures": 51763,
+      "starts with a failure": 1862,
+      "no common knot pairs": 55630,
+      "no common knot failures": 55198
+    },
+    {
+      "independent_rings": 5,
+      "all_three_place": false,
+      "starts": 1801,
+      "same knot pairs": 58672,
+      "same knot failures": 58304,
+      "starts with a failure": 1801,
+      "no common knot pairs": 49976,
+      "no common knot failures": 49854
+    },
+    {
+      "independent_rings": 6,
+      "all_three_place": false,
+      "starts": 1103,
+      "same knot pairs": 40509,
+      "same knot failures": 40455,
+      "starts with a failure": 1103,
+      "no common knot pairs": 28073,
+      "no common knot failures": 28073
+    },
+    {
+      "independent_rings": 7,
+      "all_three_place": false,
+      "starts": 384,
+      "same knot pairs": 15688,
+      "same knot failures": 15688,
+      "starts with a failure": 384,
+      "no common knot pairs": 8823,
+      "no common knot failures": 8823
+    },
+    {
+      "independent_rings": 8,
+      "all_three_place": false,
+      "starts": 72,
+      "same knot pairs": 3241,
+      "same knot failures": 3232,
+      "starts with a failure": 72,
+      "no common knot pairs": 1500,
+      "no common knot failures": 1500
+    },
+    {
+      "independent_rings": 9,
+      "all_three_place": false,
+      "starts": 1,
+      "same knot pairs": 54,
+      "same knot failures": 54,
+      "starts with a failure": 1,
+      "no common knot pairs": 12,
+      "no common knot failures": 12
+    }
+  ],
+  "first_distant_difference": {
+    "knots": [
+      [
+        0,
+        1,
+        2,
+        3
+      ],
+      [
+        0,
+        4,
+        5
+      ],
+      [
+        1,
+        2,
+        6
+      ]
+    ],
+    "pair": [
+      3,
+      4
+    ],
+    "roster_index": 4,
+    "states": 66,
+    "sign_sum": 2,
+    "exact": "1/33",
+    "pair_terms_only": "1/22"
+  },
+  "weighting_control": {
+    "knots": [
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        0,
+        3,
+        4
+      ],
+      [
+        1,
+        5,
+        6
+      ]
+    ],
+    "states": 54,
+    "weights": {
+      "1": 8,
+      "2": 38,
+      "3": 8
+    },
+    "construction": "Start with weight 2. Where distinctions (0,1,3,5) read (0,1,1,0), add the product of signs at (2,4,6). Give each flipped state the same weight as its partner. Leave all other weights at 2.",
+    "mass": 108,
+    "unchanged_pair_means": 21,
+    "unchanged_two_by_two_joint_means": 9,
+    "unchanged_single_knot_tables": 3,
+    "complete_joint_table_on_two_outer_knots_unchanged": true,
+    "chosen_even_support": [
+      0,
+      2,
+      4,
+      6
+    ],
+    "means_equal_then_changed": [
+      "-1/27",
+      "1/9"
+    ]
+  },
+  "separate_four_distinction_readings": {
+    "knots": [
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        3,
+        4,
+        5
+      ],
+      [
+        6,
+        7,
+        8
+      ],
+      [
+        9,
+        10,
+        11
+      ],
+      [
+        12,
+        13,
+        14
+      ],
+      [
+        15,
+        16,
+        17
+      ],
+      [
+        18,
+        19,
+        20
+      ],
+      [
+        0,
+        14,
+        19
+      ],
+      [
+        1,
+        3,
+        17
+      ],
+      [
+        4,
+        6,
+        20
+      ],
+      [
+        2,
+        7,
+        9
+      ],
+      [
+        5,
+        10,
+        12
+      ],
+      [
+        8,
+        13,
+        15
+      ],
+      [
+        11,
+        16,
+        18
+      ]
+    ],
+    "ordered_readings": [
+      [
+        0,
+        6,
+        3,
+        9
+      ],
+      [
+        0,
+        6,
+        3,
+        13
+      ]
+    ],
+    "signed_sums_indexed_by_subset": [
+      [
+        38982,
+        0,
+        0,
+        -1938,
+        0,
+        4558,
+        4558,
+        0,
+        0,
+        4558,
+        4558,
+        0,
+        -1938,
+        0,
+        0,
+        1270
+      ],
+      [
+        38982,
+        0,
+        0,
+        -1938,
+        0,
+        4558,
+        4558,
+        0,
+        0,
+        4558,
+        4558,
+        0,
+        -1938,
+        0,
+        0,
+        1398
+      ]
+    ],
+    "even_counts": [
+      20126,
+      20190
+    ]
+  }
+}

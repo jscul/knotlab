@@ -1,0 +1,795 @@
+{
+  "weighting": "Every allowed state of the given start is counted once.",
+  "candidate rule": "Two nonempty unordered sets of knots whose full sets of distinctions are disjoint. Each product uses a nonempty even set of distinctions all of whose holders belong to its own set. The same product can occur for more than one choice of knot sets.",
+  "coverage": "Every connected ring-free meeting pattern of one through seven three-place knots, at most two holders per distinction, up to relabelling. Removing an end knot from a pattern with at least two knots undoes one step of the generation. The canonical rooted encodings identify exactly the relabellings. For each candidate we compared integer sign sums from all states and the common-knot test in the argument below.",
+  "argument for all finite connected ring-free starts with one or two holders and at least three places per knot": [
+    "Choose the sign at one distinction and an allowed pattern up to simultaneous reversal at each knot. The unique routes determine one global allowed state from these choices. Every global allowed state gives one such choice. Under the equal weighting all these choices are independent and uniform.",
+    "For an even number of marked distinctions, remove each knot in turn. Select its places whose remaining components contain an odd number of marks. The local set has even size. The product of these local sign products is the marked product. A loose distinction occurs as many times modulo two as it is marked. For a shared distinction the two component counts add to the total marks plus its marked indicator, so the same holds.",
+    "A local product over a nonempty even set on a knot of a places has mean -1/D, where D = 2^(a-1) - 1. Its sum over all patterns is zero and each excluded constant pattern contributes one. The mean of the global product therefore multiplies -1/D over exactly the knots with a nonempty selected local set.",
+    "Multiplying two even sign products gives the product on the symmetric difference of their supports. At a knot used by both, the absolute ratio of the joint mean to the product of the means gains D squared when the two local sets agree and D when they differ. At every other knot the ratio gains one. Since D is at least three, the two sign products are independent exactly when their used knot sets are disjoint. For sign-valued readings equality of the joint mean and the product of means decides independence.",
+    "Every pair of functions on two sets of distinctions that are each unchanged by simultaneous reversal is independent exactly when the within-set routes between pairs of distinctions have no knot in common across the two sets. Indeed, every knot used by an even sign product lies on a route between two of its marks. Every invariant event indicator is a linear combination of even sign products. Conversely, two within-set routes with a common knot supply dependent pair products. The necessity applies to the family of all such functions. Two chosen functions can remain independent even when their families are dependent.",
+    "Conditioning on a single shared distinction that separates the readings makes the two sides independent. An invariant reading has the same distribution for either conditioning sign by simultaneous reversal. Such a reading is consequently independent of any reading wholly on the other side. More generally, arbitrary readings of local patterns up to reversal on disjoint sets of knots are independent by the first step. A product with marks on disconnected parts of a chosen set can use knots outside that set."
+  ],
+  "least number of three-place knots with a dependent eligible pair": 6,
+  "all sizes": [
+    {
+      "knots": 1,
+      "meeting patterns": 1,
+      "totals": {},
+      "patterns": [
+        {
+          "shared distinctions by their two holders": [],
+          "allowed states": 6,
+          "even sign products compared with the local factors, including the empty product": 4,
+          "counts": {}
+        }
+      ]
+    },
+    {
+      "knots": 2,
+      "meeting patterns": 1,
+      "totals": {},
+      "patterns": [
+        {
+          "shared distinctions by their two holders": [
+            [
+              0,
+              1
+            ]
+          ],
+          "allowed states": 18,
+          "even sign products compared with the local factors, including the empty product": 16,
+          "counts": {}
+        }
+      ]
+    },
+    {
+      "knots": 3,
+      "meeting patterns": 1,
+      "totals": {
+        "disjoint knot-set pairs with no shared distinction": 1,
+        "knot-set pairs admitting two nonconstant even products": 1,
+        "all nonconstant even-product pairs": 1,
+        "all dependent even-product pairs": 0,
+        "two-place product pairs": 1,
+        "dependent two-place product pairs": 0,
+        "even-product pairs on two connected knot sets": 1,
+        "knot-set pairs admitting dependent even products": 0
+      },
+      "patterns": [
+        {
+          "shared distinctions by their two holders": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ]
+          ],
+          "allowed states": 54,
+          "even sign products compared with the local factors, including the empty product": 64,
+          "counts": {
+            "disjoint knot-set pairs with no shared distinction": 1,
+            "knot-set pairs admitting two nonconstant even products": 1,
+            "all nonconstant even-product pairs": 1,
+            "all dependent even-product pairs": 0,
+            "two-place product pairs": 1,
+            "dependent two-place product pairs": 0,
+            "even-product pairs on two connected knot sets": 1,
+            "knot-set pairs admitting dependent even products": 0
+          }
+        }
+      ]
+    },
+    {
+      "knots": 4,
+      "meeting patterns": 2,
+      "totals": {
+        "disjoint knot-set pairs with no shared distinction": 11,
+        "knot-set pairs admitting two nonconstant even products": 9,
+        "all nonconstant even-product pairs": 39,
+        "all dependent even-product pairs": 0,
+        "two-place product pairs": 34,
+        "dependent two-place product pairs": 0,
+        "even-product pairs on two connected knot sets": 18,
+        "knot-set pairs admitting dependent even products": 0
+      },
+      "patterns": [
+        {
+          "shared distinctions by their two holders": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              3
+            ]
+          ],
+          "allowed states": 162,
+          "even sign products compared with the local factors, including the empty product": 256,
+          "counts": {
+            "disjoint knot-set pairs with no shared distinction": 5,
+            "knot-set pairs admitting two nonconstant even products": 3,
+            "all nonconstant even-product pairs": 15,
+            "all dependent even-product pairs": 0,
+            "two-place product pairs": 13,
+            "dependent two-place product pairs": 0,
+            "even-product pairs on two connected knot sets": 15,
+            "knot-set pairs admitting dependent even products": 0
+          }
+        },
+        {
+          "shared distinctions by their two holders": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              3
+            ]
+          ],
+          "allowed states": 162,
+          "even sign products compared with the local factors, including the empty product": 256,
+          "counts": {
+            "disjoint knot-set pairs with no shared distinction": 6,
+            "knot-set pairs admitting two nonconstant even products": 6,
+            "all nonconstant even-product pairs": 24,
+            "all dependent even-product pairs": 0,
+            "two-place product pairs": 21,
+            "dependent two-place product pairs": 0,
+            "even-product pairs on two connected knot sets": 3,
+            "knot-set pairs admitting dependent even products": 0
+          }
+        }
+      ]
+    },
+    {
+      "knots": 5,
+      "meeting patterns": 2,
+      "totals": {
+        "disjoint knot-set pairs with no shared distinction": 38,
+        "knot-set pairs admitting two nonconstant even products": 26,
+        "all nonconstant even-product pairs": 330,
+        "all dependent even-product pairs": 0,
+        "two-place product pairs": 217,
+        "dependent two-place product pairs": 0,
+        "even-product pairs on two connected knot sets": 186,
+        "knot-set pairs admitting dependent even products": 0
+      },
+      "patterns": [
+        {
+          "shared distinctions by their two holders": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              2,
+              4
+            ]
+          ],
+          "allowed states": 486,
+          "even sign products compared with the local factors, including the empty product": 1024,
+          "counts": {
+            "disjoint knot-set pairs with no shared distinction": 18,
+            "knot-set pairs admitting two nonconstant even products": 10,
+            "all nonconstant even-product pairs": 138,
+            "all dependent even-product pairs": 0,
+            "two-place product pairs": 91,
+            "dependent two-place product pairs": 0,
+            "even-product pairs on two connected knot sets": 132,
+            "knot-set pairs admitting dependent even products": 0
+          }
+        },
+        {
+          "shared distinctions by their two holders": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              1,
+              3
+            ]
+          ],
+          "allowed states": 486,
+          "even sign products compared with the local factors, including the empty product": 1024,
+          "counts": {
+            "disjoint knot-set pairs with no shared distinction": 20,
+            "knot-set pairs admitting two nonconstant even products": 16,
+            "all nonconstant even-product pairs": 192,
+            "all dependent even-product pairs": 0,
+            "two-place product pairs": 126,
+            "dependent two-place product pairs": 0,
+            "even-product pairs on two connected knot sets": 54,
+            "knot-set pairs admitting dependent even products": 0
+          }
+        }
+      ]
+    },
+    {
+      "knots": 6,
+      "meeting patterns": 4,
+      "totals": {
+        "disjoint knot-set pairs with no shared distinction": 242,
+        "knot-set pairs admitting two nonconstant even products": 179,
+        "all nonconstant even-product pairs": 5363,
+        "all dependent even-product pairs": 60,
+        "two-place product pairs": 2526,
+        "dependent two-place product pairs": 60,
+        "even-product pairs on two connected knot sets": 1993,
+        "knot-set pairs admitting dependent even products": 5
+      },
+      "patterns": [
+        {
+          "shared distinctions by their two holders": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              5
+            ]
+          ],
+          "allowed states": 1458,
+          "even sign products compared with the local factors, including the empty product": 4096,
+          "counts": {
+            "disjoint knot-set pairs with no shared distinction": 56,
+            "knot-set pairs admitting two nonconstant even products": 31,
+            "all nonconstant even-product pairs": 1035,
+            "all dependent even-product pairs": 12,
+            "two-place product pairs": 491,
+            "dependent two-place product pairs": 12,
+            "even-product pairs on two connected knot sets": 898,
+            "knot-set pairs admitting dependent even products": 1
+          }
+        },
+        {
+          "shared distinctions by their two holders": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              1,
+              5
+            ],
+            [
+              2,
+              4
+            ]
+          ],
+          "allowed states": 1458,
+          "even sign products compared with the local factors, including the empty product": 4096,
+          "counts": {
+            "disjoint knot-set pairs with no shared distinction": 61,
+            "knot-set pairs admitting two nonconstant even products": 45,
+            "all nonconstant even-product pairs": 1325,
+            "all dependent even-product pairs": 16,
+            "two-place product pairs": 623,
+            "dependent two-place product pairs": 16,
+            "even-product pairs on two connected knot sets": 539,
+            "knot-set pairs admitting dependent even products": 2
+          }
+        },
+        {
+          "shared distinctions by their two holders": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              5
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              2,
+              4
+            ]
+          ],
+          "allowed states": 1458,
+          "even sign products compared with the local factors, including the empty product": 4096,
+          "counts": {
+            "disjoint knot-set pairs with no shared distinction": 60,
+            "knot-set pairs admitting two nonconstant even products": 44,
+            "all nonconstant even-product pairs": 1344,
+            "all dependent even-product pairs": 0,
+            "two-place product pairs": 634,
+            "dependent two-place product pairs": 0,
+            "even-product pairs on two connected knot sets": 402,
+            "knot-set pairs admitting dependent even products": 0
+          }
+        },
+        {
+          "shared distinctions by their two holders": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              1,
+              5
+            ]
+          ],
+          "allowed states": 1458,
+          "even sign products compared with the local factors, including the empty product": 4096,
+          "counts": {
+            "disjoint knot-set pairs with no shared distinction": 65,
+            "knot-set pairs admitting two nonconstant even products": 59,
+            "all nonconstant even-product pairs": 1659,
+            "all dependent even-product pairs": 32,
+            "two-place product pairs": 778,
+            "dependent two-place product pairs": 32,
+            "even-product pairs on two connected knot sets": 154,
+            "knot-set pairs admitting dependent even products": 2
+          }
+        }
+      ]
+    },
+    {
+      "knots": 7,
+      "meeting patterns": 6,
+      "totals": {
+        "disjoint knot-set pairs with no shared distinction": 1041,
+        "knot-set pairs admitting two nonconstant even products": 765,
+        "all nonconstant even-product pairs": 53063,
+        "all dependent even-product pairs": 1284,
+        "two-place product pairs": 17392,
+        "dependent two-place product pairs": 860,
+        "even-product pairs on two connected knot sets": 17886,
+        "knot-set pairs admitting dependent even products": 56
+      },
+      "patterns": [
+        {
+          "shared distinctions by their two holders": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              5
+            ],
+            [
+              4,
+              6
+            ]
+          ],
+          "allowed states": 4374,
+          "even sign products compared with the local factors, including the empty product": 16384,
+          "counts": {
+            "disjoint knot-set pairs with no shared distinction": 161,
+            "knot-set pairs admitting two nonconstant even products": 92,
+            "all nonconstant even-product pairs": 6930,
+            "all dependent even-product pairs": 200,
+            "two-place product pairs": 2283,
+            "dependent two-place product pairs": 132,
+            "even-product pairs on two connected knot sets": 5268,
+            "knot-set pairs admitting dependent even products": 9
+          }
+        },
+        {
+          "shared distinctions by their two holders": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              2,
+              6
+            ],
+            [
+              3,
+              5
+            ]
+          ],
+          "allowed states": 4374,
+          "even sign products compared with the local factors, including the empty product": 16384,
+          "counts": {
+            "disjoint knot-set pairs with no shared distinction": 173,
+            "knot-set pairs admitting two nonconstant even products": 123,
+            "all nonconstant even-product pairs": 8467,
+            "all dependent even-product pairs": 288,
+            "two-place product pairs": 2779,
+            "dependent two-place product pairs": 192,
+            "even-product pairs on two connected knot sets": 3840,
+            "knot-set pairs admitting dependent even products": 13
+          }
+        },
+        {
+          "shared distinctions by their two holders": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              6
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              5
+            ]
+          ],
+          "allowed states": 4374,
+          "even sign products compared with the local factors, including the empty product": 16384,
+          "counts": {
+            "disjoint knot-set pairs with no shared distinction": 171,
+            "knot-set pairs admitting two nonconstant even products": 121,
+            "all nonconstant even-product pairs": 8559,
+            "all dependent even-product pairs": 140,
+            "two-place product pairs": 2799,
+            "dependent two-place product pairs": 88,
+            "even-product pairs on two connected knot sets": 2997,
+            "knot-set pairs admitting dependent even products": 8
+          }
+        },
+        {
+          "shared distinctions by their two holders": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              6
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              1,
+              5
+            ],
+            [
+              2,
+              4
+            ]
+          ],
+          "allowed states": 4374,
+          "even sign products compared with the local factors, including the empty product": 16384,
+          "counts": {
+            "disjoint knot-set pairs with no shared distinction": 181,
+            "knot-set pairs admitting two nonconstant even products": 151,
+            "all nonconstant even-product pairs": 10321,
+            "all dependent even-product pairs": 240,
+            "two-place product pairs": 3355,
+            "dependent two-place product pairs": 160,
+            "even-product pairs on two connected knot sets": 1406,
+            "knot-set pairs admitting dependent even products": 8
+          }
+        },
+        {
+          "shared distinctions by their two holders": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              1,
+              5
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              2,
+              6
+            ]
+          ],
+          "allowed states": 4374,
+          "even sign products compared with the local factors, including the empty product": 16384,
+          "counts": {
+            "disjoint knot-set pairs with no shared distinction": 186,
+            "knot-set pairs admitting two nonconstant even products": 158,
+            "all nonconstant even-product pairs": 10170,
+            "all dependent even-product pairs": 416,
+            "two-place product pairs": 3371,
+            "dependent two-place product pairs": 288,
+            "even-product pairs on two connected knot sets": 2155,
+            "knot-set pairs admitting dependent even products": 18
+          }
+        },
+        {
+          "shared distinctions by their two holders": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              5
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              5,
+              6
+            ]
+          ],
+          "allowed states": 4374,
+          "even sign products compared with the local factors, including the empty product": 16384,
+          "counts": {
+            "disjoint knot-set pairs with no shared distinction": 169,
+            "knot-set pairs admitting two nonconstant even products": 120,
+            "all nonconstant even-product pairs": 8616,
+            "all dependent even-product pairs": 0,
+            "two-place product pairs": 2805,
+            "dependent two-place product pairs": 0,
+            "even-product pairs on two connected knot sets": 2220,
+            "knot-set pairs admitting dependent even products": 0
+          }
+        }
+      ]
+    }
+  ],
+  "six-knot counterexample with four loose distinctions": {
+    "knots, in order from zero": [
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        2,
+        3,
+        4
+      ],
+      [
+        4,
+        5,
+        6
+      ],
+      [
+        6,
+        7,
+        8
+      ],
+      [
+        8,
+        9,
+        10
+      ],
+      [
+        10,
+        11,
+        12
+      ]
+    ],
+    "knot sets": [
+      [
+        0,
+        5
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "two loose distinctions used on each side": [
+      [
+        0,
+        12
+      ],
+      [
+        5,
+        7
+      ]
+    ],
+    "knots used by the two routes": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "allowed states counted individually": 1458,
+    "counts, rows and columns each ordered plus then minus": [
+      [
+        406,
+        324
+      ],
+      [
+        404,
+        324
+      ]
+    ],
+    "means of the two products": [
+      "1/729",
+      "1/9"
+    ],
+    "mean of their product": "1/729",
+    "product of means": "1/6561",
+    "covariance": "8/6561",
+    "table determinant": 648
+  },
+  "two connected parts sharing one distinction": [
+    {
+      "knots by number of places": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "shared distinction": 6,
+      "allowed states": 1458,
+      "allowed patterns up to reversal on each side": [
+        27,
+        27
+      ],
+      "joint patterns given either value of the shared distinction": 729,
+      "least and greatest counts per joint pattern given either value": [
+        1,
+        1
+      ]
+    },
+    {
+      "knots by number of places": [
+        3,
+        3,
+        4,
+        3,
+        3,
+        3
+      ],
+      "shared distinction": 6,
+      "allowed states": 3402,
+      "allowed patterns up to reversal on each side": [
+        63,
+        27
+      ],
+      "joint patterns given either value of the shared distinction": 1701,
+      "least and greatest counts per joint pattern given either value": [
+        1,
+        1
+      ]
+    }
+  ],
+  "not run": "Larger meeting patterns, other weightings and growth are outside this check.",
+  "pilot": {
+    "single process, address-space cap in bytes": 1500000000,
+    "largest-size chain, seconds": 0.06092,
+    "four-place separator control, seconds": 0.00496,
+    "estimated seconds for full run, twice the pilot per pattern plus controls": 2.091
+  },
+  "wall seconds including repeated pilot and all checks": 0.42621,
+  "maximum resident memory in KiB": 19196
+}

@@ -1,35 +1,66 @@
-# Cross pairs and the closing sign: the sign belongs to the cycles, and on growth's closures it is non-orientability
+# Cross pairs and the closing sign: the sign belongs to the cycles, and on the tested grown closures a minimal strict choice is odd exactly when it cannot be oriented
+
+> **Referee report R1, 27 November 2026: confirmed with fixes, no Block** ([the report](referee-R1/report.md)). The
+> order identity holds at every even coverage, and every count reproduces at its stated weights and caps. Read this
+> record with these narrowings (logged in `docs/CORRECTIONS.md`):
+> - **The converse needs both minimal and strict.** On the tested grown closures a minimal strict birth choice has odd
+>   closing sign exactly when its cycles admit no balanced orders. The 1,846 even ones are the original listings; R1's
+>   exhaustive replay of all 1,819 grown closures (four rounds, forty knots) found 6,534 minimal strict even choices,
+>   all orientable, and 4,803 minimal strict odd ones, none orientable. Dropping either condition breaks the converse:
+>   two non-minimal strict even choices at the closure grown from census start 6676 cannot be oriented (each holds two
+>   odd parts whose signs cancel), nor can a minimal twelve-pair choice that is not strict at census start 61's closure.
+> - **P1's surfaces are for choices covered twice, in the bounded listings through eight pairs.** 376 odd and 236 even
+>   grown choices are covered four times at some pair and stand outside the classification. The grown pinched choices
+>   are four at census start 6305's closure (Euler count 0 to 1); the 1,726 pinched census choices go from −1 to 0.
+> - **A forced merge (README item 4) keeps the Euler count only with distinct remaining holders.** A doubled-pair
+>   deletion keeps the sign but can change the Euler count and coverage: from 2 to 1 at a five-pair choice of census
+>   start 3997's closure.
+> - **Attachment at fourfold coverage.** The cycles determine balance on all occurrences; pairing the occurrences into
+>   a twice-covered structure is a further choice. Each of the 236 fourfold minimal even grown choices has three
+>   pairings: not orientable with count 0, orientable with 0, orientable with 2.
+> - **Weights and caps.** The 2,499,769 are list appearances, covering 2,494,179 distinct location-and-choice pairs.
+>   The census even count is 6,694 orientable of the 15,620 listed under the cap; uncapped, 15,271 of 35,300. Three
+>   listings at two types stopped at the declared cap; no solver call or orientation search was undecided.
+> - **Small codes.** The 633 twice-covered odd choices at the 175 small codes among the 446 closures without a split
+>   each separate to one component with count 1. Choices that are not strict are about half odd under one vote per
+>   labelled choice, with coverage up to twenty-two.
+> - **Size, not planarity (not a block).** Planarity alone does not distinguish the samples. In this census every
+>   non-orientable minimal even choice has seven or eight pairs, no grown minimal even choice has more than six, and at
+>   five and six pairs every minimal even choice is orientable in both. Credit: the descent step is the encoded-readers
+>   referee's, and the formula at every even coverage also follows from the literature's double count after pairing
+>   occurrences (Mohar, Simonyi and Tardos, Lemma 6.1).
 
 Epic `CELL-SIGN-20261127-001`, at the owner's go-ahead on direction 1 of the encoded-readers study. Design, frozen
 predictions, review and results: [README.md](README.md); code [cellsign.py](cellsign.py); outputs
 [summary.json](summary.json), [gates.json](gates.json), [results.jsonl](results.jsonl),
 [census_types.jsonl](census_types.jsonl), [fixtures.json](fixtures.json). A theorem by hand (item 1), checked on 2.5
-million choices; closures one vote per census start, choices one vote per choice; independent referee pending (brief in
-`referee-R1/`).
+million list appearances; closures one vote per census start, choices one vote per choice; refereed (R1, confirmed with
+fixes, no Block; [report](referee-R1/report.md)).
 
 | Scope | Verdict | Why |
 | --- | --- | --- |
-| This attempt — the closing sign as a property of the failing pairs' cycles | **Status:** Successful | The order count holds on all 2,499,769 choices; orientable and two-colourable choices close even; P1 holds; referee pending |
-| Local direction — the sign read through cross pairs | Continue | On growth's closures the converse holds for minimal strict choices (all 1,846 even ones orientable), but not on the census types (8,926 not) and not because of planarity |
-| Broader exploration — the quantum part under the declared phase | Known alternatives | The separated-reader games are the literature's odd quadrangulations: after separation, projective planes and Klein bottles |
-| Long-term goal — G18 Comparing growth laws | Capability gained | The closing sign of every commuting choice is a parity of the cycles its failing pairs make; on growth's closures a minimal strict choice is odd exactly when they cannot be oriented |
+| This attempt — the closing sign as a property of the failing pairs' cycles | **Status:** Successful | The order count holds on all 2,499,769 list appearances; orientable and two-colourable choices close even; P1 holds in the bounded listings; refereed (R1) |
+| Local direction — the sign read through cross pairs | Continue | On the tested grown closures the converse holds for minimal strict choices (1,846 listed, 6,534 in R1's replay, all orientable), but not on the census types (8,926 of the 15,620 listed not orientable); planarity alone does not separate them, and size might (R1) |
+| Broader exploration — the quantum part under the declared phase | Known alternatives | The separated-reader games are the literature's odd quadrangulations: covered twice and after separation, projective planes and Klein bottles |
+| Long-term goal — G18 Comparing growth laws | Capability gained | The closing sign of every commuting choice is a parity of the cycles its failing pairs make; on the tested grown closures a minimal strict choice is odd exactly when its cycles admit no balanced orders |
 
 Read each failing pair through its four cross pairs, the pairs of knots holding one value each. They make a cycle along
 which the two values' holders alternate. The closing sign is then the parity of how those cycles list their shared cross
 pairs, whatever orders are chosen (item 1). This is the literature's parity of odd quadrangulations, extended here to
 pairs of knots covered four or more times and to failing pairs that share values. It follows that a choice whose cycles
-can be oriented always closes even, and so does one whose cross pairs are two-colourable. The check held on every one of
-2,499,769 choices. On growth's closures the converse holds too for minimal strict choices. Every odd one is, after
-separating pinched knots, a projective plane (4,423) or a Klein bottle (4), and every even one is orientable, a sphere
-(1,504) or a torus (106). There, the readers' contradiction is exactly the impossibility of orienting the cycles. The
-census types break the converse: 8,926 of their even minimal choices are non-orientable. Planarity does not explain the
-difference.
+can be oriented always closes even, and so does one whose cross pairs are two-colourable. The check held on all
+2,499,769 list appearances. On the tested grown closures the converse holds too, for minimal strict choices: a minimal
+strict birth choice has odd closing sign exactly when its cycles admit no balanced orders. Of those covered twice, every
+odd one is, after separating pinched knots, a projective plane (4,423) or a Klein bottle (4), and every even one a
+sphere (1,504) or a torus (106). The census types break the converse: 8,926 of the 15,620 even minimal choices listed
+under the cap cannot be oriented. Planarity alone does not distinguish the two samples; in this census every
+non-orientable minimal even choice has more pairs than any grown one (R1).
 
 **Next step:** Continue — selected: #1
 
 | # | Direction | Payoff | Concreteness | First step → stop when | Status |
 | --- | --- | --- | --- | --- | --- |
-| 1 | Why growth's even choices are orientable: compare the census types' non-orientable even choices with growth's, by the knots they use, the closing birth and how their knots meet | 2/3 — Substantial | 2/3 — Testable | Tabulate those features for both populations → a property that forces orientability on growth's closures, or a grown closure where it fails (one more round, or a larger cap) | Selected · started |
+| 1 | Why growth's minimal strict even choices are orientable: compare the census types' non-orientable even choices with growth's, by the knots they use, the closing birth and how their knots meet | 2/3 — Substantial | 2/3 — Testable | Tabulate those features for both populations → a property that forces orientability on growth's closures, or a grown closure where it fails (one more round, or a larger cap) | Selected · started |
 | 2 | Space from the readers' contradiction: does growth's pattern alone, before any failing pair is declared, carry these cycles? Four mutually meeting knots carry the projective plane, for instance | 3/3 — Barrier | 1/3 — Stated | List the cycles that a closure's meetings determine without a birth choice → a native carrier of the projective plane, or none | Alternative · deferred |
 | 3 | The ten-pair census game and larger: the irreducible games at every size on the census types | 2/3 — Substantial | 2/3 — Testable | List them size by size with a conflict budget → the list, or the first size that cannot be finished | Alternative · deferred |
 | 4 | A principle drawn from growth itself for the sign | 3/3 — Barrier | 1/3 — Stated | Name one quantity → a candidate, or none | Alternative · deferred |
@@ -66,7 +97,8 @@ cross pair, and the glossary's Orientable and Euler count extended to failing pa
 
 **Scaffolds:**
 - A318's attachment of cells along cross pairs, and the separation of pinched knots, were used as stated. At pairs of
-  knots covered four times the attachment is not determined, and those choices are reported apart.
+  knots covered four times the cycles determine balance on all occurrences, and pairing the occurrences into a
+  twice-covered structure requires another choice (R1); those choices are reported apart.
 - The fixtures are the literature's examples.
 - Two census types reached the cap on even choices.
 
@@ -83,13 +115,14 @@ skill's steps alone and marked provisional. An independent reviewer checked the 
 
 ## What was found
 
-- **The order count holds everywhere checked**, on 2,499,769 choices of the populations and 80,005 of random patterns,
-  strict or not, at any coverage.
+- **The order count holds everywhere checked**, on 2,499,769 list appearances in the populations (2,494,179 distinct
+  location-and-choice pairs) and 80,005 choices of random patterns, strict or not, at any coverage.
 - **Odd choices are never orientable, never weakly even, and their cross pairs are never two-colourable** (item 2).
-- **Minimal strict odd choices, after separation**, are projective planes (4,423 at grown closures, 4,464 at census
-  types, all 1,131 at small codes) or Klein bottles (4 at grown closures, 1,726 at census types) (P1).
-- **Even minimal strict choices are orientable on growth's closures** (1,846 of 1,846), but not on the census types
-  (6,694 of 15,620).
+- **Minimal strict odd choices covered twice, after separation**, are projective planes (4,423 at grown closures, 4,464
+  at census types, all 1,131 at small codes) or Klein bottles (4 at grown closures, 1,726 at census types), in the
+  bounded listings through eight pairs (P1).
+- **Even minimal strict choices are orientable on the tested grown closures** (1,846 of 1,846 listed; 6,534 of 6,534 in
+  R1's replay), but not on the census types (6,694 of the 15,620 listed under the cap; 15,271 of 35,300 uncapped).
 - **Choices that are not strict are mostly covered many times.** 1,210,317 of the 1,216,401 even ones at the grown
   closures are orientable, and none of the odd ones.
 - **The literature's examples behave as the theorem says.** Klein grids are odd exactly when n is odd, and the
@@ -101,5 +134,7 @@ skill's steps alone and marked provisional. An independent reviewer checked the 
   cannot be oriented consistently. The three-reader game is the hemi-cube, the smallest cell structure on the
   projective plane, and the GHZ argument of the literature lives there. The ring games are larger projective planes,
   and the grown six-pair game is a Klein bottle.
-- **On growth's closures this is exact.** There, even choices can always be oriented. A cheap test of why is
-  direction 1: compare the knots and meetings that the census types' non-orientable even choices use.
+- **On the tested grown closures this is exact for minimal strict choices.** There, every minimal strict even choice
+  can be oriented; two non-minimal strict even choices at one closure cannot, each made of two odd parts whose signs
+  cancel (R1). A cheap test of why is direction 1: compare the knots and meetings that the census types'
+  non-orientable even choices use.

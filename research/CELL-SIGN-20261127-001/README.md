@@ -192,6 +192,13 @@ hand) checked the first draft, and the design changed in response:
 
 ## Results (27 November)
 
+> **Refereed (R1, confirmed with fixes, no Block; [report](referee-R1/report.md)).** Narrowings in full at the top of
+> [the decision](decision.md): the converse needs both minimal and strict; P1's surfaces are for choices covered twice,
+> in the bounded listings through eight pairs; item 4's forced merge keeps the Euler count only with distinct remaining
+> holders, since a doubled-pair deletion can change it (census start 3997's closure); at fourfold coverage the cycles
+> determine balance, and pairing the occurrences is a further choice; the counts are list appearances; in this census
+> every non-orientable minimal even choice has more pairs than any grown one.
+
 The run took 1,799 seconds under a 4 GiB cap with one thread, unit `cell-sign-run`, no cut ([summary](summary.json),
 [gates](gates.json), [rows](results.jsonl), [census types](census_types.jsonl), [fixtures](fixtures.json)). Two census
 types (171 and 172, the largest) reached the cap of 2,000 even choices at seven or eight pairs. Their even counts are
@@ -199,26 +206,30 @@ therefore incomplete; nothing else reached a cap. Closures are one vote per cens
 
 | # | Verdict | Count |
 | --- | --- | --- |
-| G | holds | The order count gives the closing sign on all 2,499,769 choices of the populations and on 80,005 choices of random patterns, and the same-order parity agrees wherever every cross pair is in two failing pairs. No orientable, weakly even or two-colourable choice closes odd. Every fixture is as items 1–3 say: the hemi-cube and the ring games of five, seven and nine are odd with Euler count 1; the cube and every torus grid are orientable and even; every Klein grid is odd exactly when n is odd; the projective grids are two-colourable and even; the subdivided cube modulo the antipodal map is odd exactly when k is odd; the six games are odd and minimal, with Euler counts 1, 1, 0, 1, −1 and −3; the fourfold witnesses are odd with a pair of knots covered four times; the seven-knot control is even and two-colourable with count 1; and the nine-knot choice is odd with 0. The referee's coverage table is reproduced exactly: 240 fewest words at 20 closures and 136 further minimal words at 13 have a pair of knots covered four times, and no census type has one through eight pairs. No search was left unsettled. |
-| P1 | holds | Every minimal strict odd choice covered twice has separated Euler count 1 or 0. At the grown closures that is 4,423 with 1 and 4 with 0 (of 4,427 covered twice among 4,803). At the census types it is 4,464 with 1 and 1,726 with 0 (all 6,190 covered twice). At the small codes all 1,131 have 1. |
+| G | holds | The order count gives the closing sign on all 2,499,769 list appearances in the populations (2,494,179 distinct location-and-choice pairs, R1) and on 80,005 choices of random patterns, and the same-order parity agrees wherever every cross pair is in two failing pairs. No orientable, weakly even or two-colourable choice closes odd. Every fixture is as items 1–3 say: the hemi-cube and the ring games of five, seven and nine are odd with Euler count 1; the cube and every torus grid are orientable and even; every Klein grid is odd exactly when n is odd; the projective grids are two-colourable and even; the subdivided cube modulo the antipodal map is odd exactly when k is odd; the six games are odd and minimal, with Euler counts 1, 1, 0, 1, −1 and −3; the fourfold witnesses are odd with a pair of knots covered four times; the seven-knot control is even and two-colourable with count 1; and the nine-knot choice is odd with 0. The referee's coverage table is reproduced exactly: 240 fewest words at 20 closures and 136 further minimal words at 13 have a pair of knots covered four times, and no census type has one through eight pairs. No solver call or orientation search was left undecided; three listings at two types stopped at the declared cap (R1). |
+| P1 | holds | Every minimal strict odd choice covered twice, in the bounded listings through eight pairs, has separated Euler count 1 or 0. At the grown closures that is 4,423 with 1 and 4 with 0 (of 4,427 covered twice among 4,803). At the census types it is 4,464 with 1 and 1,726 with 0 (all 6,190 covered twice). At the small codes all 1,131 have 1. |
 
 **P2, measured** (one vote per choice; the full tables are in the summary):
 
 - **Strict odd choices** are never orientable, as item 2(a) requires. Covered twice, they are the literature's projective
-  plane or Klein bottle after separation. Their pinched knots are at the census eight-pair game, which separates to a
-  Klein bottle.
-- **Choices that are not strict** (a value in two failing pairs) at the small codes number about 2.4 million, half odd
-  and half even. Pairs of knots covered four to eighteen times are the rule there: at the grown closures only
-  23,490 of them are covered exactly twice. 1,210,317 of the 1,216,401 even ones at the grown closures are
-  orientable, and none of the odd ones.
-- **At the 446 closures with no split**, the 633 odd choices covered twice are all projective planes after separation.
+  plane or Klein bottle after separation. Four minimal strict odd choices at the closure grown from census start 6305
+  are pinched, each going from Euler count 0 to 1; the 1,726 pinched census choices go from −1 to 0 (R1).
+- **Choices that are not strict** (a value in two failing pairs) at the small codes number about 2.4 million, about half
+  odd under one vote per labelled choice. Pairs of knots covered four to twenty-two times are the rule there: at the
+  grown closures only 23,490 of them are covered exactly twice. 1,210,317 of the 1,216,401 even ones at the grown
+  closures are orientable, and none of the odd ones.
+- **At the 175 small codes among the 446 closures with no split**, the 633 odd choices covered twice each separate to
+  one connected component with Euler count 1 (R1).
 
-**P3, measured.** At the grown closures every one of the 1,846 minimal strict even choices is orientable. After
-separation they are 1,504 with Euler count 2 (the literature's sphere) and 106 with 0 (the torus), and the rest are
-covered four times at some pair. So on growth's own closures, for minimal strict choices, **the sign is odd exactly when
-the cycles cannot be oriented.** The census types differ: 6,694 of their 15,620 minimal strict even choices are
-orientable and 8,926 are not, the latter with separated Euler counts 0 and −1.
+**P3, measured.** At the grown closures every one of the 1,846 listed minimal strict even choices is orientable (R1's
+exhaustive replay of all 1,819 grown closures: 6,534 of 6,534). After separation they are 1,504 with Euler count 2 (the
+literature's sphere) and 106 with 0 (the torus), and the rest are covered four times at some pair. So on the tested
+grown closures **a minimal strict birth choice has odd closing sign exactly when its cycles admit no balanced orders**
+(R1: both conditions are needed). The census types differ: 6,694 of the 15,620 minimal strict even choices listed
+under the cap are orientable and 8,926 are not, the latter with separated Euler counts 0 and −1 (uncapped, R1: 15,271
+of 35,300 orientable).
 
-**After the results (not frozen).** The difference is not the literature's planarity of the meeting pattern. Planar
+**After the results (not frozen).** Planarity of the meeting pattern alone does not distinguish the two samples. Planar
 census types have 21 non-orientable even choices against 30 orientable. On the grown closures both the 1,730 even
-choices on planar closures and the 116 on non-planar ones are all orientable.
+choices on planar closures and the 116 on non-planar ones are all orientable. In this census every non-orientable
+minimal even choice has more pairs (seven or eight) than any grown minimal even choice (at most six), R1 found.

@@ -1,0 +1,62 @@
+{
+  "history": {
+    "freeze": "f0f40eec1380e8e01d3873541728dc1f1ed01ab0",
+    "close": "56a802c04d675154522563f5398c925717573ba1",
+    "register_and_notebook": "e9ebfe2a60cd4074e519b4a5073a18d3c57b960e",
+    "final_report_as_sent": "1af67f0be408e1c3d7d8a3f41c6b7fb569229795",
+    "command": "git diff --unified=0 f0f40eec13 1af67f0be4 -- research/MOST-FAILING-20261127-001/README.md research/MOST-FAILING-20261127-001/most_failing.py",
+    "finding": "The closing and final README begin with the frozen 113 lines byte for byte. The solver file is byte-identical at all three commits. G and P1–P3 keep their frozen thresholds, with P3 recorded as descriptive. The changes discussed in the pre-freeze review are already present in the freeze."
+  },
+  "prior_work": {
+    "current_index_gate_command": "OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 .venv/bin/python -B scripts/track.py objects-gate research/MOST-FAILING-20261127-001/README.md",
+    "current_index_gate_result": "prior-work line: ok",
+    "index_access": "search_objects opens a read-only SQLite connection (scripts/track.py:737–745), without building the nodes cache. The database header showed rollback format. The frozen query rankings below were also reproduced against the committed pre-freeze database blob loaded into in-memory SQLite.",
+    "pre_freeze_index_top_three": {
+      "birth choices most failing pairs maximum weight sign forced": [
+        "LOCAL-COMMUTE-20261127-001/1",
+        "OVERLAP-READ-20261111-001/1",
+        "SETTING-AS-REREAD-20261123-001/1"
+      ],
+      "maximum weight codeword selection principle closing sign": [
+        "OVERLAP-READ-20261111-001/1",
+        "SIDE-SIGN-20261126-001/2",
+        "TWO-RELAY-PADDING-20261115-001/2"
+      ]
+    },
+    "independent_index_command": "OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 .venv/bin/python -B scripts/track.py objects 'nearest-codeword Hamming decoding anticommuting pairs extremal reordering parity' --until 2026-11-27 --exclude MOST-FAILING-20261127-001 --limit 8",
+    "independent_index_relevant_hits": [
+      "TOY-PHASE-20261127-001/4: operator certificates and the reordering cost, without maximizing over the birth choices.",
+      "TOY-PHASE-20261127-001/2: the known three-knot ring's closure and its three-reader realization.",
+      "NO-WHOLE-STATE-20261126-001: a related unindexed epic returned by the query, using rule R and all whole choices."
+    ],
+    "pre_freeze_full_text_commands": [
+      "git --no-pager grep --threads 1 -IliE 'most failing pairs|as many failing pairs|fewest failing pairs|maximum[ -]weight (code ?words?|birth choices)|minimum[ -]weight (nonzero )?(code ?words?|birth choices)|nearest[ -]code[ -]?word decoding|holder[ -]type (count|principle)|birth choices.{0,65}(select|forc).{0,35}sign|weight.{0,35}(anticommut|noncommut)' f0f40eec13^ -- .",
+      "git --no-pager grep --threads 1 -IniE '(round.by.round|at birth).{0,40}(maximi[sz]|most.{0,22}fail)|((closest|nearest|fewest|least).{0,40}(rule R|commutation choic)|(rule R|commutation choic).{0,45}(closest|nearest|fewest|least))|((maximum|minimum|largest|smallest|extremal).{0,70}(fail to commute|failing pair|anticommuting pair)|(fail to commute|failing pair|anticommuting pair).{0,70}(maximum|minimum|largest|smallest|extremal))|sign.{0,40}(selection|selected by).{0,60}(commut|pair)' f0f40eec13^ -- '*.md' '*.tex' '*.lean' '*.py' '*.json' '*.sql'"
+    ],
+    "pre_freeze_credit": [
+      {
+        "sources": [
+          "research/LOCAL-COMMUTE-20261127-001/decision.md:61,69,164",
+          "research/LOCAL-COMMUTE-20261127-001/README.md:159,217",
+          "research/LOCAL-COMMUTE-20261127-001/referee-R1/report.md:13–17"
+        ],
+        "finding": "The commutation-at-birth study supplied the 1,177 eligible closures, proposed the exact pair-count maximum and already gave the odd ring case. The current study adds the closure-by-closure optima and comparison scores."
+      },
+      {
+        "sources": [
+          "research/NO-WHOLE-STATE-20261126-001/README.md:125–132",
+          "research/LOCAL-COMMUTE-20261127-001/README.md:114–116",
+          "research/LOCAL-COMMUTE-20261127-001/local_commute.py:30"
+        ],
+        "finding": "Four readings supplied the 173 finished types. The no-whole-state study measured rule R on them and reported 17 viable reached types, 12 odd and 5 even. Where the all-pairs word is feasible it is the unique pair-count maximum. The commutation-at-birth study already reported that all 173 types admit an odd complete choice."
+      }
+    ],
+    "search_limit": "The other full-text hits concern unrelated uses of similar terms or duplicate the planned study in A315 and the tracking dump. The search found a prior proposal, fixture and population, and no separate archive of the full optimum verdict counts."
+  },
+  "gates_as_run": {
+    "enumeration": "The original implementation compared the global pair-count maximum and minimum weights and sign verdicts at the 386 grown closures of dimension at most 14. The comparison omits the holder-type score, the round-by-round score and sign-conditioned weights as distinct values (most_failing.py:333–337).",
+    "order": "One returned pair-count maximum per grown closure was read in complete reverse knot order (most_failing.py:284–288). Reversal preserves alternation even for a word that fails a commutation check. For two distinctions with occurrence word 0101 the reverse 1010 also alternates, while the adjacent swap to 1001 does not. The earlier adjacent-exchange argument proves full order invariance on the code (commutation-at-birth README:88–90).",
+    "settlement": "The archived gate tallies unsettled grown verdicts for the pair maximum, minimum nonzero and holder-type maximum (most_failing.py:344–345). The archived rows contain all three settled verdicts at 1,177 grown closures and 173 finished types, and no unsettled round-by-round row. One grown case and one finished type have an infeasible even nonzero minimum. These feasibility outcomes are distinct from solver timeouts.",
+    "numeric_replay": "This record check reads the archived gates and verdict fields. Independent numeric replay is reported separately."
+  }
+}

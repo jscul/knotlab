@@ -1,0 +1,7515 @@
+{
+ "starts checked": 7075,
+ "later closures by round and number of closing parents": [
+  {
+   "round": 2,
+   "parents": 2,
+   "closures": 79
+  },
+  {
+   "round": 2,
+   "parents": 3,
+   "closures": 26
+  },
+  {
+   "round": 3,
+   "parents": 2,
+   "closures": 1
+  }
+ ],
+ "closures with three parents in one block": 26,
+ "constructions checked by form": {
+  "cycle": 26,
+  "common knot": 26
+ },
+ "how to read": [
+  "The census index refers to the start whose full knot supports appear in the same entry. Knot and distinction numbers start at zero.",
+  "Cycle paths are listed opposite each parent. Common-knot paths are listed from each parent to the common knot. Each parent fails with the distinctions on the other two arms.",
+  "Only the listed distinction pairs fail. The reordering sign is computed by moving each second occurrence to its first and cancelling them.",
+  "For bits x, the supplied state has amplitude (-1)^(x0*x1 + x1*x2 + x2*x0)/sqrt(8). Closing distinction i acts by X on bit i. Every path distinction acts by Z on each bit whose closing distinction it fails with. Each distinction also carries Z on its own additional bit in state |0>.",
+  "Checks are in birth order. The final sign belongs to the closing knot. The signs for each earlier round form the corresponding initial part of the list."
+ ],
+ "closures": [
+  {
+   "census index": 61,
+   "closing round": 2,
+   "knots born in each round": [
+    [
+     [
+      0,
+      1,
+      2
+     ],
+     [
+      0,
+      3,
+      4
+     ],
+     [
+      1,
+      5,
+      6
+     ],
+     [
+      2,
+      7,
+      8
+     ]
+    ],
+    [
+     [
+      3,
+      5,
+      9
+     ],
+     [
+      4,
+      7,
+      10
+     ],
+     [
+      6,
+      8,
+      11
+     ]
+    ],
+    [
+     [
+      9,
+      10,
+      11
+     ]
+    ]
+   ],
+   "closing parents": [
+    4,
+    5,
+    6
+   ],
+   "constructions": [
+    {
+     "form": "cycle",
+     "parents in order": [
+      4,
+      5,
+      6
+     ],
+     "closing distinctions in the same order": [
+      9,
+      10,
+      11
+     ],
+     "paths of knots": [
+      [
+       5,
+       3,
+       6
+      ],
+      [
+       6,
+       2,
+       4
+      ],
+      [
+       4,
+       1,
+       5
+      ]
+     ],
+     "distinctions used on those paths": [
+      [
+       7,
+       8
+      ],
+      [
+       6,
+       5
+      ],
+      [
+       3,
+       4
+      ]
+     ],
+     "failing pairs (closing distinction first)": [
+      [
+       9,
+       7
+      ],
+      [
+       9,
+       8
+      ],
+      [
+       10,
+       5
+      ],
+      [
+       10,
+       6
+      ],
+      [
+       11,
+       3
+      ],
+      [
+       11,
+       4
+      ]
+     ],
+     "rounds of the closing and older distinctions in a failing pair": [
+      [
+       1,
+       0
+      ]
+     ],
+     "holder counts for the same ordering at decision": [
+      [
+       1,
+       2
+      ]
+     ],
+     "illegal failing pairs at decision": [],
+     "failing pairs in a single knot": [],
+     "noncommuting knot pairs": [],
+     "reordering sign": -1,
+     "successive checks on the supplied state (0 means it is not an eigenstate)": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      -1
+     ]
+    },
+    {
+     "form": "common knot",
+     "parents in order": [
+      4,
+      5,
+      6
+     ],
+     "closing distinctions in the same order": [
+      9,
+      10,
+      11
+     ],
+     "paths of knots": [
+      [
+       4,
+       1,
+       0
+      ],
+      [
+       5,
+       3,
+       0
+      ],
+      [
+       6,
+       2,
+       0
+      ]
+     ],
+     "distinctions used on those paths": [
+      [
+       3,
+       0
+      ],
+      [
+       7,
+       2
+      ],
+      [
+       6,
+       1
+      ]
+     ],
+     "failing pairs (closing distinction first)": [
+      [
+       9,
+       1
+      ],
+      [
+       9,
+       2
+      ],
+      [
+       9,
+       6
+      ],
+      [
+       9,
+       7
+      ],
+      [
+       10,
+       0
+      ],
+      [
+       10,
+       1
+      ],
+      [
+       10,
+       3
+      ],
+      [
+       10,
+       6
+      ],
+      [
+       11,
+       0
+      ],
+      [
+       11,
+       2
+      ],
+      [
+       11,
+       3
+      ],
+      [
+       11,
+       7
+      ]
+     ],
+     "rounds of the closing and older distinctions in a failing pair": [
+      [
+       1,
+       0
+      ]
+     ],
+     "holder counts for the same ordering at decision": [
+      [
+       1,
+       2
+      ]
+     ],
+     "illegal failing pairs at decision": [],
+     "failing pairs in a single knot": [],
+     "noncommuting knot pairs": [],
+     "reordering sign": -1,
+     "successive checks on the supplied state (0 means it is not an eigenstate)": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      -1
+     ]
+    }
+   ]
+  },
+  {
+   "census index": 65,
+   "closing round": 2,
+   "knots born in each round": [
+    [
+     [
+      0,
+      1,
+      2,
+      3
+     ],
+     [
+      0,
+      4,
+      5
+     ],
+     [
+      1,
+      6,
+      7
+     ],
+     [
+      2,
+      3,
+      8,
+      9
+     ]
+    ],
+    [
+     [
+      4,
+      6,
+      10
+     ],
+     [
+      5,
+      8,
+      11
+     ],
+     [
+      7,
+      9,
+      12
+     ]
+    ],
+    [
+     [
+      10,
+      11,
+      12
+     ]
+    ]
+   ],
+   "closing parents": [
+    4,
+    5,
+    6
+   ],
+   "constructions": [
+    {
+     "form": "cycle",
+     "parents in order": [
+      4,
+      5,
+      6
+     ],
+     "closing distinctions in the same order": [
+      10,
+      11,
+      12
+     ],
+     "paths of knots": [
+      [
+       5,
+       3,
+       6
+      ],
+      [
+       6,
+       2,
+       4
+      ],
+      [
+       4,
+       1,
+       5
+      ]
+     ],
+     "distinctions used on those paths": [
+      [
+       8,
+       9
+      ],
+      [
+       7,
+       6
+      ],
+      [
+       4,
+       5
+      ]
+     ],
+     "failing pairs (closing distinction first)": [
+      [
+       10,
+       8
+      ],
+      [
+       10,
+       9
+      ],
+      [
+       11,
+       6
+      ],
+      [
+       11,
+       7
+      ],
+      [
+       12,
+       4
+      ],
+      [
+       12,
+       5
+      ]
+     ],
+     "rounds of the closing and older distinctions in a failing pair": [
+      [
+       1,
+       0
+      ]
+     ],
+     "holder counts for the same ordering at decision": [
+      [
+       1,
+       2
+      ]
+     ],
+     "illegal failing pairs at decision": [],
+     "failing pairs in a single knot": [],
+     "noncommuting knot pairs": [],
+     "reordering sign": -1,
+     "successive checks on the supplied state (0 means it is not an eigenstate)": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      -1
+     ]
+    },
+    {
+     "form": "common knot",
+     "parents in order": [
+      4,
+      5,
+      6
+     ],
+     "closing distinctions in the same order": [
+      10,
+      11,
+      12
+     ],
+     "paths of knots": [
+      [
+       4,
+       1,
+       0
+      ],
+      [
+       5,
+       3,
+       0
+      ],
+      [
+       6,
+       2,
+       0
+      ]
+     ],
+     "distinctions used on those paths": [
+      [
+       4,
+       0
+      ],
+      [
+       8,
+       2
+      ],
+      [
+       7,
+       1
+      ]
+     ],
+     "failing pairs (closing distinction first)": [
+      [
+       10,
+       1
+      ],
+      [
+       10,
+       2
+      ],
+      [
+       10,
+       7
+      ],
+      [
+       10,
+       8
+      ],
+      [
+       11,
+       0
+      ],
+      [
+       11,
+       1
+      ],
+      [
+       11,
+       4
+      ],
+      [
+       11,
+       7
+      ],
+      [
+       12,
+       0
+      ],
+      [
+       12,
+       2
+      ],
+      [
+       12,
+       4
+      ],
+      [
+       12,
+       8
+      ]
+     ],
+     "rounds of the closing and older distinctions in a failing pair": [
+      [
+       1,
+       0
+      ]
+     ],
+     "holder counts for the same ordering at decision": [
+      [
+       1,
+       2
+      ]
+     ],
+     "illegal failing pairs at decision": [],
+     "failing pairs in a single knot": [],
+     "noncommuting knot pairs": [],
+     "reordering sign": -1,
+     "successive checks on the supplied state (0 means it is not an eigenstate)": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      -1
+     ]
+    }
+   ]
+  },
+  {
+   "census index": 72,
+   "closing round": 2,
+   "knots born in each round": [
+    [
+     [
+      0,
+      1,
+      2,
+      3,
+      4
+     ],
+     [
+      0,
+      5,
+      6
+     ],
+     [
+      1,
+      2,
+      7,
+      8
+     ],
+     [
+      3,
+      4,
+      9,
+      10
+     ]
+    ],
+    [
+     [
+      5,
+      7,
+      11
+     ],
+     [
+      6,
+      9,
+      12
+     ],
+     [
+      8,
+      10,
+      13
+     ]
+    ],
+    [
+     [
+      11,
+      12,
+      13
+     ]
+    ]
+   ],
+   "closing parents": [
+    4,
+    5,
+    6
+   ],
+   "constructions": [
+    {
+     "form": "cycle",
+     "parents in order": [
+      4,
+      5,
+      6
+     ],
+     "closing distinctions in the same order": [
+      11,
+      12,
+      13
+     ],
+     "paths of knots": [
+      [
+       5,
+       3,
+       6
+      ],
+      [
+       6,
+       2,
+       4
+      ],
+      [
+       4,
+       1,
+       5
+      ]
+     ],
+     "distinctions used on those paths": [
+      [
+       9,
+       10
+      ],
+      [
+       8,
+       7
+      ],
+      [
+       5,
+       6
+      ]
+     ],
+     "failing pairs (closing distinction first)": [
+      [
+       11,
+       9
+      ],
+      [
+       11,
+       10
+      ],
+      [
+       12,
+       7
+      ],
+      [
+       12,
+       8
+      ],
+      [
+       13,
+       5
+      ],
+      [
+       13,
+       6
+      ]
+     ],
+     "rounds of the closing and older distinctions in a failing pair": [
+      [
+       1,
+       0
+      ]
+     ],
+     "holder counts for the same ordering at decision": [
+      [
+       1,
+       2
+      ]
+     ],
+     "illegal failing pairs at decision": [],
+     "failing pairs in a single knot": [],
+     "noncommuting knot pairs": [],
+     "reordering sign": -1,
+     "successive checks on the supplied state (0 means it is not an eigenstate)": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      -1
+     ]
+    },
+    {
+     "form": "common knot",
+     "parents in order": [
+      4,
+      5,
+      6
+     ],
+     "closing distinctions in the same order": [
+      11,
+      12,
+      13
+     ],
+     "paths of knots": [
+      [
+       4,
+       1,
+       0
+      ],
+      [
+       5,
+       3,
+       0
+      ],
+      [
+       6,
+       2,
+       0
+      ]
+     ],
+     "distinctions used on those paths": [
+      [
+       5,
+       0
+      ],
+      [
+       9,
+       3
+      ],
+      [
+       8,
+       1
+      ]
+     ],
+     "failing pairs (closing distinction first)": [
+      [
+       11,
+       1
+      ],
+      [
+       11,
+       3
+      ],
+      [
+       11,
+       8
+      ],
+      [
+       11,
+       9
+      ],
+      [
+       12,
+       0
+      ],
+      [
+       12,
+       1
+      ],
+      [
+       12,
+       5
+      ],
+      [
+       12,
+       8
+      ],
+      [
+       13,
+       0
+      ],
+      [
+       13,
+       3
+      ],
+      [
+       13,
+       5
+      ],
+      [
+       13,
+       9
+      ]
+     ],
+     "rounds of the closing and older distinctions in a failing pair": [
+      [
+       1,
+       0
+      ]
+     ],
+     "holder counts for the same ordering at decision": [
+      [
+       1,
+       2
+      ]
+     ],
+     "illegal failing pairs at decision": [],
+     "failing pairs in a single knot": [],
+     "noncommuting knot pairs": [],
+     "reordering sign": -1,
+     "successive checks on the supplied state (0 means it is not an eigenstate)": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      -1
+     ]
+    }
+   ]
+  },
+  {
+   "census index": 81,
+   "closing round": 2,
+   "knots born in each round": [
+    [
+     [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+     ],
+     [
+      0,
+      1,
+      6,
+      7
+     ],
+     [
+      2,
+      3,
+      8,
+      9
+     ],
+     [
+      4,
+      5,
+      10,
+      11
+     ]
+    ],
+    [
+     [
+      6,
+      8,
+      12
+     ],
+     [
+      7,
+      10,
+      13
+     ],
+     [
+      9,
+      11,
+      14
+     ]
+    ],
+    [
+     [
+      12,
+      13,
+      14
+     ]
+    ]
+   ],
+   "closing parents": [
+    4,
+    5,
+    6
+   ],
+   "constructions": [
+    {
+     "form": "cycle",
+     "parents in order": [
+      4,
+      5,
+      6
+     ],
+     "closing distinctions in the same order": [
+      12,
+      13,
+      14
+     ],
+     "paths of knots": [
+      [
+       5,
+       3,
+       6
+      ],
+      [
+       6,
+       2,
+       4
+      ],
+      [
+       4,
+       1,
+       5
+      ]
+     ],
+     "distinctions used on those paths": [
+      [
+       10,
+       11
+      ],
+      [
+       9,
+       8
+      ],
+      [
+       6,
+       7
+      ]
+     ],
+     "failing pairs (closing distinction first)": [
+      [
+       12,
+       10
+      ],
+      [
+       12,
+       11
+      ],
+      [
+       13,
+       8
+      ],
+      [
+       13,
+       9
+      ],
+      [
+       14,
+       6
+      ],
+      [
+       14,
+       7
+      ]
+     ],
+     "rounds of the closing and older distinctions in a failing pair": [
+      [
+       1,
+       0
+      ]
+     ],
+     "holder counts for the same ordering at decision": [
+      [
+       1,
+       2
+      ]
+     ],
+     "illegal failing pairs at decision": [],
+     "failing pairs in a single knot": [],
+     "noncommuting knot pairs": [],
+     "reordering sign": -1,
+     "successive checks on the supplied state (0 means it is not an eigenstate)": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      -1
+     ]
+    },
+    {
+     "form": "common knot",
+     "parents in order": [
+      4,
+      5,
+      6
+     ],
+     "closing distinctions in the same order": [
+      12,
+      13,
+      14
+     ],
+     "paths of knots": [
+      [
+       4,
+       1,
+       0
+      ],
+      [
+       5,
+       3,
+       0
+      ],
+      [
+       6,
+       2,
+       0
+      ]
+     ],
+     "distinctions used on those paths": [
+      [
+       6,
+       0
+      ],
+      [
+       10,
+       4
+      ],
+      [
+       9,
+       2
+      ]
+     ],
+     "failing pairs (closing distinction first)": [
+      [
+       12,
+       2
+      ],
+      [
+       12,
+       4
+      ],
+      [
+       12,
+       9
+      ],
+      [
+       12,
+       10
+      ],
+      [
+       13,
+       0
+      ],
+      [
+       13,
+       2
+      ],
+      [
+       13,
+       6
+      ],
+      [
+       13,
+       9
+      ],
+      [
+       14,
+       0
+      ],
+      [
+       14,
+       4
+      ],
+      [
+       14,
+       6
+      ],
+      [
+       14,
+       10
+      ]
+     ],
+     "rounds of the closing and older distinctions in a failing pair": [
+      [
+       1,
+       0
+      ]
+     ],
+     "holder counts for the same ordering at decision": [
+      [
+       1,
+       2
+      ]
+     ],
+     "illegal failing pairs at decision": [],
+     "failing pairs in a single knot": [],
+     "noncommuting knot pairs": [],
+     "reordering sign": -1,
+     "successive checks on the supplied state (0 means it is not an eigenstate)": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      -1
+     ]
+    }
+   ]
+  },
+  {
+   "census index": 165,
+   "closing round": 2,
+   "knots born in each round": [
+    [
+     [
+      0,
+      1,
+      2
+     ],
+     [
+      0,
+      3,
+      4,
+      5
+     ],
+     [
+      1,
+      3,
+      6,
+      7
+     ],
+     [
+      2,
+      8,
+      9
+     ]
+    ],
+    [
+     [
+      4,
+      6,
+      10
+     ],
+     [
+      5,
+      8,
+      11
+     ],
+     [
+      7,
+      9,
+      12
+     ]
+    ],
+    [
+     [
+      10,
+      11,
+      12
+     ]
+    ]
+   ],
+   "closing parents": [
+    4,
+    5,
+    6
+   ],
+   "constructions": [
+    {
+     "form": "cycle",
+     "parents in order": [
+      4,
+      5,
+      6
+     ],
+     "closing distinctions in the same order": [
+      10,
+      11,
+      12
+     ],
+     "paths of knots": [
+      [
+       5,
+       3,
+       6
+      ],
+      [
+       6,
+       2,
+       4
+      ],
+      [
+       4,
+       1,
+       5
+      ]
+     ],
+     "distinctions used on those paths": [
+      [
+       8,
+       9
+      ],
+      [
+       7,
+       6
+      ],
+      [
+       4,
+       5
+      ]
+     ],
+     "failing pairs (closing distinction first)": [
+      [
+       10,
+       8
+      ],
+      [
+       10,
+       9
+      ],
+      [
+       11,
+       6
+      ],
+      [
+       11,
+       7
+      ],
+      [
+       12,
+       4
+      ],
+      [
+       12,
+       5
+      ]
+     ],
+     "rounds of the closing and older distinctions in a failing pair": [
+      [
+       1,
+       0
+      ]
+     ],
+     "holder counts for the same ordering at decision": [
+      [
+       1,
+       2
+      ]
+     ],
+     "illegal failing pairs at decision": [],
+     "failing pairs in a single knot": [],
+     "noncommuting knot pairs": [],
+     "reordering sign": -1,
+     "successive checks on the supplied state (0 means it is not an eigenstate)": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      -1
+     ]
+    },
+    {
+     "form": "common knot",
+     "parents in order": [
+      4,
+      5,
+      6
+     ],
+     "closing distinctions in the same order": [
+      10,
+      11,
+      12
+     ],
+     "paths of knots": [
+      [
+       4,
+       1,
+       0
+      ],
+      [
+       5,
+       3,
+       0
+      ],
+      [
+       6,
+       2,
+       0
+      ]
+     ],
+     "distinctions used on those paths": [
+      [
+       4,
+       0
+      ],
+      [
+       8,
+       2
+      ],
+      [
+       7,
+       1
+      ]
+     ],
+     "failing pairs (closing distinction first)": [
+      [
+       10,
+       1
+      ],
+      [
+       10,
+       2
+      ],
+      [
+       10,
+       7
+      ],
+      [
+       10,
+       8
+      ],
+      [
+       11,
+       0
+      ],
+      [
+       11,
+       1
+      ],
+      [
+       11,
+       4
+      ],
+      [
+       11,
+       7
+      ],
+      [
+       12,
+       0
+      ],
+      [
+       12,
+       2
+      ],
+      [
+       12,
+       4
+      ],
+      [
+       12,
+       8
+      ]
+     ],
+     "rounds of the closing and older distinctions in a failing pair": [
+      [
+       1,
+       0
+      ]
+     ],
+     "holder counts for the same ordering at decision": [
+      [
+       1,
+       2
+      ]
+     ],
+     "illegal failing pairs at decision": [],
+     "failing pairs in a single knot": [],
+     "noncommuting knot pairs": [],
+     "reordering sign": -1,
+     "successive checks on the supplied state (0 means it is not an eigenstate)": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      -1
+     ]
+    }
+   ]
+  },
+  {
+   "census index": 168,
+   "closing round": 2,
+   "knots born in each round": [
+    [
+     [
+      0,
+      1,
+      2,
+      4
+     ],
+     [
+      0,
+      3,
+      5,
+      6
+     ],
+     [
+      1,
+      3,
+      7,
+      8
+     ],
+     [
+      2,
+      9,
+      10
+     ]
+    ],
+    [
+     [
+      4,
+      5,
+      7,
+      11
+     ],
+     [
+      6,
+      9,
+      12
+     ],
+     [
+      8,
+      10,
+      13
+     ]
+    ],
+    [
+     [
+      11,
+      12,
+      13
+     ]
+    ]
+   ],
+   "closing parents": [
+    4,
+    5,
+    6
+   ],
+   "constructions": [
+    {
+     "form": "cycle",
+     "parents in order": [
+      4,
+      5,
+      6
+     ],
+     "closing distinctions in the same order": [
+      11,
+      12,
+      13
+     ],
+     "paths of knots": [
+      [
+       5,
+       3,
+       6
+      ],
+      [
+       6,
+       2,
+       4
+      ],
+      [
+       4,
+       1,
+       5
+      ]
+     ],
+     "distinctions used on those paths": [
+      [
+       9,
+       10
+      ],
+      [
+       8,
+       7
+      ],
+      [
+       5,
+       6
+      ]
+     ],
+     "failing pairs (closing distinction first)": [
+      [
+       11,
+       9
+      ],
+      [
+       11,
+       10
+      ],
+      [
+       12,
+       7
+      ],
+      [
+       12,
+       8
+      ],
+      [
+       13,
+       5
+      ],
+      [
+       13,
+       6
+      ]
+     ],
+     "rounds of the closing and older distinctions in a failing pair": [
+      [
+       1,
+       0
+      ]
+     ],
+     "holder counts for the same ordering at decision": [
+      [
+       1,
+       2
+      ]
+     ],
+     "illegal failing pairs at decision": [],
+     "failing pairs in a single knot": [],
+     "noncommuting knot pairs": [],
+     "reordering sign": -1,
+     "successive checks on the supplied state (0 means it is not an eigenstate)": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      -1
+     ]
+    },
+    {
+     "form": "common knot",
+     "parents in order": [
+      4,
+      5,
+      6
+     ],
+     "closing distinctions in the same order": [
+      11,
+      12,
+      13
+     ],
+     "paths of knots": [
+      [
+       4,
+       0
+      ],
+      [
+       5,
+       1,
+       0
+      ],
+      [
+       6,
+       2,
+       0
+      ]
+     ],
+     "distinctions used on those paths": [
+      [
+       4
+      ],
+      [
+       6,
+       0
+      ],
+      [
+       8,
+       1
+      ]
+     ],
+     "failing pairs (closing distinction first)": [
+      [
+       11,
+       0
+      ],
+      [
+       11,
+       1
+      ],
+      [
+       11,
+       6
+      ],
+      [
+       11,
+       8
+      ],
+      [
+       12,
+       1
+      ],
+      [
+       12,
+       4
+      ],
+      [
+       12,
+       8
+      ],
+      [
+       13,
+       0
+      ],
+      [
+       13,
+       4
+      ],
+      [
+       13,
+       6
+      ]
+     ],
+     "rounds of the closing and older distinctions in a failing pair": [
+      [
+       1,
+       0
+      ]
+     ],
+     "holder counts for the same ordering at decision": [
+      [
+       1,
+       2
+      ]
+     ],
+     "illegal failing pairs at decision": [],
+     "failing pairs in a single knot": [],
+     "noncommuting knot pairs": [],
+     "reordering sign": -1,
+     "successive checks on the supplied state (0 means it is not an eigenstate)": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      -1
+     ]
+    }
+   ]
+  },
+  {
+   "census index": 177,
+   "closing round": 2,
+   "knots born in each round": [
+    [
+     [
+      0,
+      1,
+      2
+     ],
+     [
+      0,
+      3,
+      4,
+      5,
+      6
+     ],
+     [
+      1,
+      3,
+      4,
+      7,
+      8
+     ],
+     [
+      2,
+      9,
+      10
+     ]
+    ],
+    [
+     [
+      5,
+      7,
+      11
+     ],
+     [
+      6,
+      9,
+      12
+     ],
+     [
+      8,
+      10,
+      13
+     ]
+    ],
+    [
+     [
+      11,
+      12,
+      13
+     ]
+    ]
+   ],
+   "closing parents": [
+    4,
+    5,
+    6
+   ],
+   "constructions": [
+    {
+     "form": "cycle",
+     "parents in order": [
+      4,
+      5,
+      6
+     ],
+     "closing distinctions in the same order": [
+      11,
+      12,
+      13
+     ],
+     "paths of knots": [
+      [
+       5,
+       3,
+       6
+      ],
+      [
+       6,
+       2,
+       4
+      ],
+      [
+       4,
+       1,
+       5
+      ]
+     ],
+     "distinctions used on those paths": [
+      [
+       9,
+       10
+      ],
+      [
+       8,
+       7
+      ],
+      [
+       5,
+       6
+      ]
+     ],
+     "failing pairs (closing distinction first)": [
+      [
+       11,
+       9
+      ],
+      [
+       11,
+       10
+      ],
+      [
+       12,
+       7
+      ],
+      [
+       12,
+       8
+      ],
+      [
+       13,
+       5
+      ],
+      [
+       13,
+       6
+      ]
+     ],
+     "rounds of the closing and older distinctions in a failing pair": [
+      [
+       1,
+       0
+      ]
+     ],
+     "holder counts for the same ordering at decision": [
+      [
+       1,
+       2
+      ]
+     ],
+     "illegal failing pairs at decision": [],
+     "failing pairs in a single knot": [],
+     "noncommuting knot pairs": [],
+     "reordering sign": -1,
+     "successive checks on the supplied state (0 means it is not an eigenstate)": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      -1
+     ]
+    },
+    {
+     "form": "common knot",
+     "parents in order": [
+      4,
+      5,
+      6
+     ],
+     "closing distinctions in the same order": [
+      11,
+      12,
+      13
+     ],
+     "paths of knots": [
+      [
+       4,
+       1,
+       0
+      ],
+      [
+       5,
+       3,
+       0
+      ],
+      [
+       6,
+       2,
+       0
+      ]
+     ],
+     "distinctions used on those paths": [
+      [
+       5,
+       0
+      ],
+      [
+       9,
+       2
+      ],
+      [
+       8,
+       1
+      ]
+     ],
+     "failing pairs (closing distinction first)": [
+      [
+       11,
+       1
+      ],
+      [
+       11,
+       2
+      ],
+      [
+       11,
+       8
+      ],
+      [
+       11,
+       9
+      ],
+      [
+       12,
+       0
+      ],
+      [
+       12,
+       1
+      ],
+      [
+       12,
+       5
+      ],
+      [
+       12,
+       8
+      ],
+      [
+       13,
+       0
+      ],
+      [
+       13,
+       2
+      ],
+      [
+       13,
+       5
+      ],
+      [
+       13,
+       9
+      ]
+     ],
+     "rounds of the closing and older distinctions in a failing pair": [
+      [
+       1,
+       0
+      ]
+     ],
+     "holder counts for the same ordering at decision": [
+      [
+       1,
+       2
+      ]
+     ],
+     "illegal failing pairs at decision": [],
+     "failing pairs in a single knot": [],
+     "noncommuting knot pairs": [],
+     "reordering sign": -1,
+     "successive checks on the supplied state (0 means it is not an eigenstate)": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      -1
+     ]
+    }
+   ]
+  },
+  {
+   "census index": 183,
+   "closing round": 2,
+   "knots born in each round": [
+    [
+     [
+      0,
+      1,
+      2,
+      5
+     ],
+     [
+      0,
+      3,
+      4,
+      6,
+      7
+     ],
+     [
+      1,
+      3,
+      4,
+      8,
+      9
+     ],
+     [
+      2,
+      10,
+      11
+     ]
+    ],
+    [
+     [
+      5,
+      6,
+      8,
+      12
+     ],
+     [
+      7,
+      10,
+      13
+     ],
+     [
+      9,
+      11,
+      14
+     ]
+    ],
+    [
+     [
+      12,
+      13,
+      14
+     ]
+    ]
+   ],
+   "closing parents": [
+    4,
+    5,
+    6
+   ],
+   "constructions": [
+    {
+     "form": "cycle",
+     "parents in order": [
+      4,
+      5,
+      6
+     ],
+     "closing distinctions in the same order": [
+      12,
+      13,
+      14
+     ],
+     "paths of knots": [
+      [
+       5,
+       3,
+       6
+      ],
+      [
+       6,
+       2,
+       4
+      ],
+      [
+       4,
+       1,
+       5
+      ]
+     ],
+     "distinctions used on those paths": [
+      [
+       10,
+       11
+      ],
+      [
+       9,
+       8
+      ],
+      [
+       6,
+       7
+      ]
+     ],
+     "failing pairs (closing distinction first)": [
+      [
+       12,
+       10
+      ],
+      [
+       12,
+       11
+      ],
+      [
+       13,
+       8
+      ],
+      [
+       13,
+       9
+      ],
+      [
+       14,
+       6
+      ],
+      [
+       14,
+       7
+      ]
+     ],
+     "rounds of the closing and older distinctions in a failing pair": [
+      [
+       1,
+       0
+      ]
+     ],
+     "holder counts for the same ordering at decision": [
+      [
+       1,
+       2
+      ]
+     ],
+     "illegal failing pairs at decision": [],
+     "failing pairs in a single knot": [],
+     "noncommuting knot pairs": [],
+     "reordering sign": -1,
+     "successive checks on the supplied state (0 means it is not an eigenstate)": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      -1
+     ]
+    },
+    {
+     "form": "common knot",
+     "parents in order": [
+      4,
+      5,
+      6
+     ],
+     "closing distinctions in the same order": [
+      12,
+      13,
+      14
+     ],
+     "paths of knots": [
+      [
+       4,
+       0
+      ],
+      [
+       5,
+       1,
+       0
+      ],
+      [
+       6,
+       2,
+       0
+      ]
+     ],
+     "distinctions used on those paths": [
+      [
+       5
+      ],
+      [
+       7,
+       0
+      ],
+      [
+       9,
+       1
+      ]
+     ],
+     "failing pairs (closing distinction first)": [
+      [
+       12,
+       0
+      ],
+      [
+       12,
+       1
+      ],
+      [
+       12,
+       7
+      ],
+      [
+       12,
+       9
+      ],
+      [
+       13,
+       1
+      ],
+      [
+       13,
+       5
+      ],
+      [
+       13,
+       9
+      ],
+      [
+       14,
+       0
+      ],
+      [
+       14,
+       5
+      ],
+      [
+       14,
+       7
+      ]
+     ],
+     "rounds of the closing and older distinctions in a failing pair": [
+      [
+       1,
+       0
+      ]
+     ],
+     "holder counts for the same ordering at decision": [
+      [
+       1,
+       2
+      ]
+     ],
+     "illegal failing pairs at decision": [],
+     "failing pairs in a single knot": [],
+     "noncommuting knot pairs": [],
+     "reordering sign": -1,
+     "successive checks on the supplied state (0 means it is not an eigenstate)": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      -1
+     ]
+    }
+   ]
+  },
+  {
+   "census index": 194,
+   "closing round": 2,
+   "knots born in each round": [
+    [
+     [
+      0,
+      1,
+      2,
+      3
+     ],
+     [
+      0,
+      4,
+      5,
+      6
+     ],
+     [
+      1,
+      4,
+      7,
+      8
+     ],
+     [
+      2,
+      3,
+      9,
+      10
+     ]
+    ],
+    [
+     [
+      5,
+      7,
+      11
+     ],
+     [
+      6,
+      9,
+      12
+     ],
+     [
+      8,
+      10,
+      13
+     ]
+    ],
+    [
+     [
+      11,
+      12,
+      13
+     ]
+    ]
+   ],
+   "closing parents": [
+    4,
+    5,
+    6
+   ],
+   "constructions": [
+    {
+     "form": "cycle",
+     "parents in order": [
+      4,
+      5,
+      6
+     ],
+     "closing distinctions in the same order": [
+      11,
+      12,
+      13
+     ],
+     "paths of knots": [
+      [
+       5,
+       3,
+       6
+      ],
+      [
+       6,
+       2,
+       4
+      ],
+      [
+       4,
+       1,
+       5
+      ]
+     ],
+     "distinctions used on those paths": [
+      [
+       9,
+       10
+      ],
+      [
+       8,
+       7
+      ],
+      [
+       5,
+       6
+      ]
+     ],
+     "failing pairs (closing distinction first)": [
+      [
+       11,
+       9
+      ],
+      [
+       11,
+       10
+      ],
+      [
+       12,
+       7
+      ],
+      [
+       12,
+       8
+      ],
+      [
+       13,
+       5
+      ],
+      [
+       13,
+       6
+      ]
+     ],
+     "rounds of the closing and older distinctions in a failing pair": [
+      [
+       1,
+       0
+      ]
+     ],
+     "holder counts for the same ordering at decision": [
+      [
+       1,
+       2
+      ]
+     ],
+     "illegal failing pairs at decision": [],
+     "failing pairs in a single knot": [],
+     "noncommuting knot pairs": [],
+     "reordering sign": -1,
+     "successive checks on the supplied state (0 means it is not an eigenstate)": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      -1
+     ]
+    },
+    {
+     "form": "common knot",
+     "parents in order": [
+      4,
+      5,
+      6
+     ],
+     "closing distinctions in the same order": [
+      11,
+      12,
+      13
+     ],
+     "paths of knots": [
+      [
+       4,
+       1,
+       0
+      ],
+      [
+       5,
+       3,
+       0
+      ],
+      [
+       6,
+       2,
+       0
+      ]
+     ],
+     "distinctions used on those paths": [
+      [
+       5,
+       0
+      ],
+      [
+       9,
+       2
+      ],
+      [
+       8,
+       1
+      ]
+     ],
+     "failing pairs (closing distinction first)": [
+      [
+       11,
+       1
+      ],
+      [
+       11,
+       2
+      ],
+      [
+       11,
+       8
+      ],
+      [
+       11,
+       9
+      ],
+      [
+       12,
+       0
+      ],
+      [
+       12,
+       1
+      ],
+      [
+       12,
+       5
+      ],
+      [
+       12,
+       8
+      ],
+      [
+       13,
+       0
+      ],
+      [
+       13,
+       2
+      ],
+      [
+       13,
+       5
+      ],
+      [
+       13,
+       9
+      ]
+     ],
+     "rounds of the closing and older distinctions in a failing pair": [
+      [
+       1,
+       0
+      ]
+     ],
+     "holder counts for the same ordering at decision": [
+      [
+       1,
+       2
+      ]
+     ],
+     "illegal failing pairs at decision": [],
+     "failing pairs in a single knot": [],
+     "noncommuting knot pairs": [],
+     "reordering sign": -1,
+     "successive checks on the supplied state (0 means it is not an eigenstate)": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      -1
+     ]
+    }
+   ]
+  },
+  {
+   "census index": 200,
+   "closing round": 2,
+   "knots born in each round": [
+    [
+     [
+      0,
+      1,
+      2,
+      3,
+      5
+     ],
+     [
+      0,
+      4,
+      6,
+      7
+     ],
+     [
+      1,
+      4,
+      8,
+      9
+     ],
+     [
+      2,
+      3,
+      10,
+      11
+     ]
+    ],
+    [
+     [
+      5,
+      6,
+      8,
+      12
+     ],
+     [
+      7,
+      10,
+      13
+     ],
+     [
+      9,
+      11,
+      14
+     ]
+    ],
+    [
+     [
+      12,
+      13,
+      14
+     ]
+    ]
+   ],
+   "closing parents": [
+    4,
+    5,
+    6
+   ],
+   "constructions": [
+    {
+     "form": "cycle",
+     "parents in order": [
+      4,
+      5,
+      6
+     ],
+     "closing distinctions in the same order": [
+      12,
+      13,
+      14
+     ],
+     "paths of knots": [
+      [
+       5,
+       3,
+       6
+      ],
+      [
+       6,
+       2,
+       4
+      ],
+      [
+       4,
+       1,
+       5
+      ]
+     ],
+     "distinctions used on those paths": [
+      [
+       10,
+       11
+      ],
+      [
+       9,
+       8
+      ],
+      [
+       6,
+       7
+      ]
+     ],
+     "failing pairs (closing distinction first)": [
+      [
+       12,
+       10
+      ],
+      [
+       12,
+       11
+      ],
+      [
+       13,
+       8
+      ],
+      [
+       13,
+       9
+      ],
+      [
+       14,
+       6
+      ],
+      [
+       14,
+       7
+      ]
+     ],
+     "rounds of the closing and older distinctions in a failing pair": [
+      [
+       1,
+       0
+      ]
+     ],
+     "holder counts for the same ordering at decision": [
+      [
+       1,
+       2
+      ]
+     ],
+     "illegal failing pairs at decision": [],
+     "failing pairs in a single knot": [],
+     "noncommuting knot pairs": [],
+     "reordering sign": -1,
+     "successive checks on the supplied state (0 means it is not an eigenstate)": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      -1
+     ]
+    },
+    {
+     "form": "common knot",
+     "parents in order": [
+      4,
+      5,
+      6
+     ],
+     "closing distinctions in the same order": [
+      12,
+      13,
+      14
+     ],
+     "paths of knots": [
+      [
+       4,
+       0
+      ],
+      [
+       5,
+       1,
+       0
+      ],
+      [
+       6,
+       2,
+       0
+      ]
+     ],
+     "distinctions used on those paths": [
+      [
+       5
+      ],
+      [
+       7,
+       0
+      ],
+      [
+       9,
+       1
+      ]
+     ],
+     "failing pairs (closing distinction first)": [
+      [
+       12,
+       0
+      ],
+      [
+       12,
+       1
+      ],
+      [
+       12,
+       7
+      ],
+      [
+       12,
+       9
+      ],
+      [
+       13,
+       1
+      ],
+      [
+       13,
+       5
+      ],
+      [
+       13,
+       9
+      ],
+      [
+       14,
+       0
+      ],
+      [
+       14,
+       5
+      ],
+      [
+       14,
+       7
+      ]
+     ],
+     "rounds of the closing and older distinctions in a failing pair": [
+      [
+       1,
+       0
+      ]
+     ],
+     "holder counts for the same ordering at decision": [
+      [
+       1,
+       2
+      ]
+     ],
+     "illegal failing pairs at decision": [],
+     "failing pairs in a single knot": [],
+     "noncommuting knot pairs": [],
+     "reordering sign": -1,
+     "successive checks on the supplied state (0 means it is not an eigenstate)": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      -1
+     ]
+    }
+   ]
+  },
+  {
+   "census index": 217,
+   "closing round": 2,
+   "knots born in each round": [
+    [
+     [
+      0,
+      1,
+      2,
+      3
+     ],
+     [
+      0,
+      4,
+      5,
+      6,
+      7
+     ],
+     [
+      1,
+      4,
+      5,
+      8,
+      9
+     ],
+     [
+      2,
+      3,
+      10,
+      11
+     ]
+    ],
+    [
+     [
+      6,
+      8,
+      12
+     ],
+     [
+      7,
+      10,
+      13
+     ],
+     [
+      9,
+      11,
+      14
+     ]
+    ],
+    [
+     [
+      12,
+      13,
+      14
+     ]
+    ]
+   ],
+   "closing parents": [
+    4,
+    5,
+    6
+   ],
+   "constructions": [
+    {
+     "form": "cycle",
+     "parents in order": [
+      4,
+      5,
+      6
+     ],
+     "closing distinctions in the same order": [
+      12,
+      13,
+      14
+     ],
+     "paths of knots": [
+      [
+       5,
+       3,
+       6
+      ],
+      [
+       6,
+       2,
+       4
+      ],
+      [
+       4,
+       1,
+       5
+      ]
+     ],
+     "distinctions used on those paths": [
+      [
+       10,
+       11
+      ],
+      [
+       9,
+       8
+      ],
+      [
+       6,
+       7
+      ]
+     ],
+     "failing pairs (closing distinction first)": [
+      [
+       12,
+       10
+      ],
+      [
+       12,
+       11
+      ],
+      [
+       13,
+       8
+      ],
+      [
+       13,
+       9
+      ],
+      [
+       14,
+       6
+      ],
+      [
+       14,
+       7
+      ]
+     ],
+     "rounds of the closing and older distinctions in a failing pair": [
+      [
+       1,
+       0
+      ]
+     ],
+     "holder counts for the same ordering at decision": [
+      [
+       1,
+       2
+      ]
+     ],
+     "illegal failing pairs at decision": [],
+     "failing pairs in a single knot": [],
+     "noncommuting knot pairs": [],
+     "reordering sign": -1,
+     "successive checks on the supplied state (0 means it is not an eigenstate)": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      -1
+     ]
+    },
+    {
+     "form": "common knot",
+     "parents in order": [
+      4,
+      5,
+      6
+     ],
+     "closing distinctions in the same order": [
+      12,
+      13,
+      14
+     ],
+     "paths of knots": [
+      [
+       4,
+       1,
+       0
+      ],
+      [
+       5,
+       3,
+       0
+      ],
+      [
+       6,
+       2,
+       0
+      ]
+     ],
+     "distinctions used on those paths": [
+      [
+       6,
+       0
+      ],
+      [
+       10,
+       2
+      ],
+      [
+       9,
+       1
+      ]
+     ],
+     "failing pairs (closing distinction first)": [
+      [
+       12,
+       1
+      ],
+      [
+       12,
+       2
+      ],
+      [
+       12,
+       9
+      ],
+      [
+       12,
+       10
+      ],
+      [
+       13,
+       0
+      ],
+      [
+       13,
+       1
+      ],
+      [
+       13,
+       6
+      ],
+      [
+       13,
+       9
+      ],
+      [
+       14,
+       0
+      ],
+      [
+       14,
+       2
+      ],
+      [
+       14,
+       6
+      ],
+      [
+       14,
+       10
+      ]
+     ],
+     "rounds of the closing and older distinctions in a failing pair": [
+      [
+       1,
+       0
+      ]
+     ],
+     "holder counts for the same ordering at decision": [
+      [
+       1,
+       2
+      ]
+     ],
+     "illegal failing pairs at decision": [],
+     "failing pairs in a single knot": [],
+     "noncommuting knot pairs": [],
+     "reordering sign": -1,
+     "successive checks on the supplied state (0 means it is not an eigenstate)": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      -1
+     ]
+    }
+   ]
+  },
+  {
+   "census index": 243,
+   "closing round": 2,
+   "knots born in each round": [
+    [
+     [
+      0,
+      1,
+      2,
+      3
+     ],
+     [
+      0,
+      4,
+      5,
+      6
+     ],
+     [
+      1,
+      7,
+      8
+     ],
+     [
+      2,
+      3,
+      4,
+      9,
+      10
+     ]
+    ],
+    [
+     [
+      5,
+      7,
+      11
+     ],
+     [
+      6,
+      9,
+      12
+     ],
+     [
+      8,
+      10,
+      13
+     ]
+    ],
+    [
+     [
+      11,
+      12,
+      13
+     ]
+    ]
+   ],
+   "closing parents": [
+    4,
+    5,
+    6
+   ],
+   "constructions": [
+    {
+     "form": "cycle",
+     "parents in order": [
+      4,
+      5,
+      6
+     ],
+     "closing distinctions in the same order": [
+      11,
+      12,
+      13
+     ],
+     "paths of knots": [
+      [
+       5,
+       3,
+       6
+      ],
+      [
+       6,
+       2,
+       4
+      ],
+      [
+       4,
+       1,
+       5
+      ]
+     ],
+     "distinctions used on those paths": [
+      [
+       9,
+       10
+      ],
+      [
+       8,
+       7
+      ],
+      [
+       5,
+       6
+      ]
+     ],
+     "failing pairs (closing distinction first)": [
+      [
+       11,
+       9
+      ],
+      [
+       11,
+       10
+      ],
+      [
+       12,
+       7
+      ],
+      [
+       12,
+       8
+      ],
+      [
+       13,
+       5
+      ],
+      [
+       13,
+       6
+      ]
+     ],
+     "rounds of the closing and older distinctions in a failing pair": [
+      [
+       1,
+       0
+      ]
+     ],
+     "holder counts for the same ordering at decision": [
+      [
+       1,
+       2
+      ]
+     ],
+     "illegal failing pairs at decision": [],
+     "failing pairs in a single knot": [],
+     "noncommuting knot pairs": [],
+     "reordering sign": -1,
+     "successive checks on the supplied state (0 means it is not an eigenstate)": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      -1
+     ]
+    },
+    {
+     "form": "common knot",
+     "parents in order": [
+      4,
+      5,
+      6
+     ],
+     "closing distinctions in the same order": [
+      11,
+      12,
+      13
+     ],
+     "paths of knots": [
+      [
+       4,
+       1,
+       0
+      ],
+      [
+       5,
+       3,
+       0
+      ],
+      [
+       6,
+       2,
+       0
+      ]
+     ],
+     "distinctions used on those paths": [
+      [
+       5,
+       0
+      ],
+      [
+       9,
+       2
+      ],
+      [
+       8,
+       1
+      ]
+     ],
+     "failing pairs (closing distinction first)": [
+      [
+       11,
+       1
+      ],
+      [
+       11,
+       2
+      ],
+      [
+       11,
+       8
+      ],
+      [
+       11,
+       9
+      ],
+      [
+       12,
+       0
+      ],
+      [
+       12,
+       1
+      ],
+      [
+       12,
+       5
+      ],
+      [
+       12,
+       8
+      ],
+      [
+       13,
+       0
+      ],
+      [
+       13,
+       2
+      ],
+      [
+       13,
+       5
+      ],
+      [
+       13,
+       9
+      ]
+     ],
+     "rounds of the closing and older distinctions in a failing pair": [
+      [
+       1,
+       0
+      ]
+     ],
+     "holder counts for the same ordering at decision": [
+      [
+       1,
+       2
+      ]
+     ],
+     "illegal failing pairs at decision": [],
+     "failing pairs in a single knot": [],
+     "noncommuting knot pairs": [],
+     "reordering sign": -1,
+     "successive checks on the supplied state (0 means it is not an eigenstate)": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      -1
+     ]
+    }
+   ]
+  },
+  {
+   "census index": 249,
+   "closing round": 2,
+   "knots born in each round": [
+    [
+     [
+      0,
+      1,
+      2,
+      3,
+      5
+     ],
+     [
+      0,
+      4,
+      6,
+      7
+     ],
+     [
+      1,
+      8,
+      9
+     ],
+     [
+      2,
+      3,
+      4,
+      10,
+      11
+     ]
+    ],
+    [
+     [
+      5,
+      6,
+      10,
+      12
+     ],
+     [
+      7,
+      8,
+      13
+     ],
+     [
+      9,
+      11,
+      14
+     ]
+    ],
+    [
+     [
+      12,
+      13,
+      14
+     ]
+    ]
+   ],
+   "closing parents": [
+    4,
+    5,
+    6
+   ],
+   "constructions": [
+    {
+     "form": "cycle",
+     "parents in order": [
+      4,
+      5,
+      6
+     ],
+     "closing distinctions in the same order": [
+      12,
+      13,
+      14
+     ],
+     "paths of knots": [
+      [
+       5,
+       2,
+       6
+      ],
+      [
+       6,
+       3,
+       4
+      ],
+      [
+       4,
+       1,
+       5
+      ]
+     ],
+     "distinctions used on those paths": [
+      [
+       8,
+       9
+      ],
+      [
+       11,
+       10
+      ],
+      [
+       6,
+       7
+      ]
+     ],
+     "failing pairs (closing distinction first)": [
+      [
+       12,
+       8
+      ],
+      [
+       12,
+       9
+      ],
+      [
+       13,
+       10
+      ],
+      [
+       13,
+       11
+      ],
+      [
+       14,
+       6
+      ],
+      [
+       14,
+       7
+      ]
+     ],
+     "rounds of the closing and older distinctions in a failing pair": [
+      [
+       1,
+       0
+      ]
+     ],
+     "holder counts for the same ordering at decision": [
+      [
+       1,
+       2
+      ]
+     ],
+     "illegal failing pairs at decision": [],
+     "failing pairs in a single knot": [],
+     "noncommuting knot pairs": [],
+     "reordering sign": -1,
+     "successive checks on the supplied state (0 means it is not an eigenstate)": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      -1
+     ]
+    },
+    {
+     "form": "common knot",
+     "parents in order": [
+      4,
+      5,
+      6
+     ],
+     "closing distinctions in the same order": [
+      12,
+      13,
+      14
+     ],
+     "paths of knots": [
+      [
+       4,
+       0
+      ],
+      [
+       5,
+       1,
+       0
+      ],
+      [
+       6,
+       2,
+       0
+      ]
+     ],
+     "distinctions used on those paths": [
+      [
+       5
+      ],
+      [
+       7,
+       0
+      ],
+      [
+       9,
+       1
+      ]
+     ],
+     "failing pairs (closing distinction first)": [
+      [
+       12,
+       0
+      ],
+      [
+       12,
+       1
+      ],
+      [
+       12,
+       7
+      ],
+      [
+       12,
+       9
+      ],
+      [
+       13,
+       1
+      ],
+      [
+       13,
+       5
+      ],
+      [
+       13,
+       9
+      ],
+      [
+       14,
+       0
+      ],
+      [
+       14,
+       5
+      ],
+      [
+       14,
+       7
+      ]
+     ],
+     "rounds of the closing and older distinctions in a failing pair": [
+      [
+       1,
+       0
+      ]
+     ],
+     "holder counts for the same ordering at decision": [
+      [
+       1,
+       2
+      ]
+     ],
+     "illegal failing pairs at decision": [],
+     "failing pairs in a single knot": [],
+     "noncommuting knot pairs": [],
+     "reordering sign": -1,
+     "successive checks on the supplied state (0 means it is not an eigenstate)": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      -1
+     ]
+    }
+   ]
+  },
+  {
+   "census index": 263,
+   "closing round": 2,
+   "knots born in each round": [
+    [
+     [
+      0,
+      1,
+      2,
+      3
+     ],
+     [
+      0,
+      4,
+      5,
+      6,
+      7
+     ],
+     [
+      1,
+      8,
+      9
+     ],
+     [
+      2,
+      3,
+      4,
+      5,
+      10,
+      11
+     ]
+    ],
+    [
+     [
+      6,
+      8,
+      12
+     ],
+     [
+      7,
+      10,
+      13
+     ],
+     [
+      9,
+      11,
+      14
+     ]
+    ],
+    [
+     [
+      12,
+      13,
+      14
+     ]
+    ]
+   ],
+   "closing parents": [
+    4,
+    5,
+    6
+   ],
+   "constructions": [
+    {
+     "form": "cycle",
+     "parents in order": [
+      4,
+      5,
+      6
+     ],
+     "closing distinctions in the same order": [
+      12,
+      13,
+      14
+     ],
+     "paths of knots": [
+      [
+       5,
+       3,
+       6
+      ],
+      [
+       6,
+       2,
+       4
+      ],
+      [
+       4,
+       1,
+       5
+      ]
+     ],
+     "distinctions used on those paths": [
+      [
+       10,
+       11
+      ],
+      [
+       9,
+       8
+      ],
+      [
+       6,
+       7
+      ]
+     ],
+     "failing pairs (closing distinction first)": [
+      [
+       12,
+       10
+      ],
+      [
+       12,
+       11
+      ],
+      [
+       13,
+       8
+      ],
+      [
+       13,
+       9
+      ],
+      [
+       14,
+       6
+      ],
+      [
+       14,
+       7
+      ]
+     ],
+     "rounds of the closing and older distinctions in a failing pair": [
+      [
+       1,
+       0
+      ]
+     ],
+     "holder counts for the same ordering at decision": [
+      [
+       1,
+       2
+      ]
+     ],
+     "illegal failing pairs at decision": [],
+     "failing pairs in a single knot": [],
+     "noncommuting knot pairs": [],
+     "reordering sign": -1,
+     "successive checks on the supplied state (0 means it is not an eigenstate)": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      -1
+     ]
+    },
+    {
+     "form": "common knot",
+     "parents in order": [
+      4,
+      5,
+      6
+     ],
+     "closing distinctions in the same order": [
+      12,
+      13,
+      14
+     ],
+     "paths of knots": [
+      [
+       4,
+       1,
+       0
+      ],
+      [
+       5,
+       3,
+       0
+      ],
+      [
+       6,
+       2,
+       0
+      ]
+     ],
+     "distinctions used on those paths": [
+      [
+       6,
+       0
+      ],
+      [
+       10,
+       2
+      ],
+      [
+       9,
+       1
+      ]
+     ],
+     "failing pairs (closing distinction first)": [
+      [
+       12,
+       1
+      ],
+      [
+       12,
+       2
+      ],
+      [
+       12,
+       9
+      ],
+      [
+       12,
+       10
+      ],
+      [
+       13,
+       0
+      ],
+      [
+       13,
+       1
+      ],
+      [
+       13,
+       6
+      ],
+      [
+       13,
+       9
+      ],
+      [
+       14,
+       0
+      ],
+      [
+       14,
+       2
+      ],
+      [
+       14,
+       6
+      ],
+      [
+       14,
+       10
+      ]
+     ],
+     "rounds of the closing and older distinctions in a failing pair": [
+      [
+       1,
+       0
+      ]
+     ],
+     "holder counts for the same ordering at decision": [
+      [
+       1,
+       2
+      ]
+     ],
+     "illegal failing pairs at decision": [],
+     "failing pairs in a single knot": [],
+     "noncommuting knot pairs": [],
+     "reordering sign": -1,
+     "successive checks on the supplied state (0 means it is not an eigenstate)": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      -1
+     ]
+    }
+   ]
+  },
+  {
+   "census index": 289,
+   "closing round": 2,
+   "knots born in each round": [
+    [
+     [
+      0,
+      1,
+      6,
+      7
+     ],
+     [
+      0,
+      2,
+      3,
+      4,
+      5
+     ],
+     [
+      1,
+      2,
+      3,
+      8,
+      9
+     ],
+     [
+      4,
+      5,
+      10,
+      11
+     ]
+    ],
+    [
+     [
+      6,
+      8,
+      12
+     ],
+     [
+      7,
+      10,
+      13
+     ],
+     [
+      9,
+      11,
+      14
+     ]
+    ],
+    [
+     [
+      12,
+      13,
+      14
+     ]
+    ]
+   ],
+   "closing parents": [
+    4,
+    5,
+    6
+   ],
+   "constructions": [
+    {
+     "form": "cycle",
+     "parents in order": [
+      4,
+      5,
+      6
+     ],
+     "closing distinctions in the same order": [
+      12,
+      13,
+      14
+     ],
+     "paths of knots": [
+      [
+       5,
+       3,
+       6
+      ],
+      [
+       6,
+       2,
+       4
+      ],
+      [
+       4,
+       0,
+       5
+      ]
+     ],
+     "distinctions used on those paths": [
+      [
+       10,
+       11
+      ],
+      [
+       9,
+       8
+      ],
+      [
+       6,
+       7
+      ]
+     ],
+     "failing pairs (closing distinction first)": [
+      [
+       12,
+       10
+      ],
+      [
+       12,
+       11
+      ],
+      [
+       13,
+       8
+      ],
+      [
+       13,
+       9
+      ],
+      [
+       14,
+       6
+      ],
+      [
+       14,
+       7
+      ]
+     ],
+     "rounds of the closing and older distinctions in a failing pair": [
+      [
+       1,
+       0
+      ]
+     ],
+     "holder counts for the same ordering at decision": [
+      [
+       1,
+       2
+      ]
+     ],
+     "illegal failing pairs at decision": [],
+     "failing pairs in a single knot": [],
+     "noncommuting knot pairs": [],
+     "reordering sign": -1,
+     "successive checks on the supplied state (0 means it is not an eigenstate)": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      -1
+     ]
+    },
+    {
+     "form": "common knot",
+     "parents in order": [
+      4,
+      5,
+      6
+     ],
+     "closing distinctions in the same order": [
+      12,
+      13,
+      14
+     ],
+     "paths of knots": [
+      [
+       4,
+       0
+      ],
+      [
+       5,
+       0
+      ],
+      [
+       6,
+       2,
+       0
+      ]
+     ],
+     "distinctions used on those paths": [
+      [
+       6
+      ],
+      [
+       7
+      ],
+      [
+       9,
+       1
+      ]
+     ],
+     "failing pairs (closing distinction first)": [
+      [
+       12,
+       1
+      ],
+      [
+       12,
+       7
+      ],
+      [
+       12,
+       9
+      ],
+      [
+       13,
+       1
+      ],
+      [
+       13,
+       6
+      ],
+      [
+       13,
+       9
+      ],
+      [
+       14,
+       6
+      ],
+      [
+       14,
+       7
+      ]
+     ],
+     "rounds of the closing and older distinctions in a failing pair": [
+      [
+       1,
+       0
+      ]
+     ],
+     "holder counts for the same ordering at decision": [
+      [
+       1,
+       2
+      ]
+     ],
+     "illegal failing pairs at decision": [],
+     "failing pairs in a single knot": [],
+     "noncommuting knot pairs": [],
+     "reordering sign": -1,
+     "successive checks on the supplied state (0 means it is not an eigenstate)": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      -1
+     ]
+    }
+   ]
+  },
+  {
+   "census index": 354,
+   "closing round": 2,
+   "knots born in each round": [
+    [
+     [
+      0,
+      1,
+      2,
+      3,
+      4
+     ],
+     [
+      0,
+      6,
+      7
+     ],
+     [
+      1,
+      2,
+      5,
+      8,
+      9
+     ],
+     [
+      3,
+      4,
+      5,
+      10,
+      11
+     ]
+    ],
+    [
+     [
+      6,
+      8,
+      12
+     ],
+     [
+      7,
+      10,
+      13
+     ],
+     [
+      9,
+      11,
+      14
+     ]
+    ],
+    [
+     [
+      12,
+      13,
+      14
+     ]
+    ]
+   ],
+   "closing parents": [
+    4,
+    5,
+    6
+   ],
+   "constructions": [
+    {
+     "form": "cycle",
+     "parents in order": [
+      4,
+      5,
+      6
+     ],
+     "closing distinctions in the same order": [
+      12,
+      13,
+      14
+     ],
+     "paths of knots": [
+      [
+       5,
+       3,
+       6
+      ],
+      [
+       6,
+       2,
+       4
+      ],
+      [
+       4,
+       1,
+       5
+      ]
+     ],
+     "distinctions used on those paths": [
+      [
+       10,
+       11
+      ],
+      [
+       9,
+       8
+      ],
+      [
+       6,
+       7
+      ]
+     ],
+     "failing pairs (closing distinction first)": [
+      [
+       12,
+       10
+      ],
+      [
+       12,
+       11
+      ],
+      [
+       13,
+       8
+      ],
+      [
+       13,
+       9
+      ],
+      [
+       14,
+       6
+      ],
+      [
+       14,
+       7
+      ]
+     ],
+     "rounds of the closing and older distinctions in a failing pair": [
+      [
+       1,
+       0
+      ]
+     ],
+     "holder counts for the same ordering at decision": [
+      [
+       1,
+       2
+      ]
+     ],
+     "illegal failing pairs at decision": [],
+     "failing pairs in a single knot": [],
+     "noncommuting knot pairs": [],
+     "reordering sign": -1,
+     "successive checks on the supplied state (0 means it is not an eigenstate)": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      -1
+     ]
+    },
+    {
+     "form": "common knot",
+     "parents in order": [
+      4,
+      5,
+      6
+     ],
+     "closing distinctions in the same order": [
+      12,
+      13,
+      14
+     ],
+     "paths of knots": [
+      [
+       4,
+       1,
+       0
+      ],
+      [
+       5,
+       3,
+       0
+      ],
+      [
+       6,
+       2,
+       0
+      ]
+     ],
+     "distinctions used on those paths": [
+      [
+       6,
+       0
+      ],
+      [
+       10,
+       3
+      ],
+      [
+       9,
+       1
+      ]
+     ],
+     "failing pairs (closing distinction first)": [
+      [
+       12,
+       1
+      ],
+      [
+       12,
+       3
+      ],
+      [
+       12,
+       9
+      ],
+      [
+       12,
+       10
+      ],
+      [
+       13,
+       0
+      ],
+      [
+       13,
+       1
+      ],
+      [
+       13,
+       6
+      ],
+      [
+       13,
+       9
+      ],
+      [
+       14,
+       0
+      ],
+      [
+       14,
+       3
+      ],
+      [
+       14,
+       6
+      ],
+      [
+       14,
+       10
+      ]
+     ],
+     "rounds of the closing and older distinctions in a failing pair": [
+      [
+       1,
+       0
+      ]
+     ],
+     "holder counts for the same ordering at decision": [
+      [
+       1,
+       2
+      ]
+     ],
+     "illegal failing pairs at decision": [],
+     "failing pairs in a single knot": [],
+     "noncommuting knot pairs": [],
+     "reordering sign": -1,
+     "successive checks on the supplied state (0 means it is not an eigenstate)": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      -1
+     ]
+    }
+   ]
+  },
+  {
+   "census index": 559,
+   "closing round": 2,
+   "knots born in each round": [
+    [
+     [
+      0,
+      1,
+      2
+     ],
+     [
+      0,
+      3,
+      4,
+      5,
+      6
+     ],
+     [
+      1,
+      3,
+      7,
+      8
+     ],
+     [
+      2,
+      4,
+      9,
+      10
+     ]
+    ],
+    [
+     [
+      5,
+      7,
+      11
+     ],
+     [
+      6,
+      9,
+      12
+     ],
+     [
+      8,
+      10,
+      13
+     ]
+    ],
+    [
+     [
+      11,
+      12,
+      13
+     ]
+    ]
+   ],
+   "closing parents": [
+    4,
+    5,
+    6
+   ],
+   "constructions": [
+    {
+     "form": "cycle",
+     "parents in order": [
+      4,
+      5,
+      6
+     ],
+     "closing distinctions in the same order": [
+      11,
+      12,
+      13
+     ],
+     "paths of knots": [
+      [
+       5,
+       3,
+       6
+      ],
+      [
+       6,
+       2,
+       4
+      ],
+      [
+       4,
+       1,
+       5
+      ]
+     ],
+     "distinctions used on those paths": [
+      [
+       9,
+       10
+      ],
+      [
+       8,
+       7
+      ],
+      [
+       5,
+       6
+      ]
+     ],
+     "failing pairs (closing distinction first)": [
+      [
+       11,
+       9
+      ],
+      [
+       11,
+       10
+      ],
+      [
+       12,
+       7
+      ],
+      [
+       12,
+       8
+      ],
+      [
+       13,
+       5
+      ],
+      [
+       13,
+       6
+      ]
+     ],
+     "rounds of the closing and older distinctions in a failing pair": [
+      [
+       1,
+       0
+      ]
+     ],
+     "holder counts for the same ordering at decision": [
+      [
+       1,
+       2
+      ]
+     ],
+     "illegal failing pairs at decision": [],
+     "failing pairs in a single knot": [],
+     "noncommuting knot pairs": [],
+     "reordering sign": -1,
+     "successive checks on the supplied state (0 means it is not an eigenstate)": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      -1
+     ]
+    },
+    {
+     "form": "common knot",
+     "parents in order": [
+      4,
+      5,
+      6
+     ],
+     "closing distinctions in the same order": [
+      11,
+      12,
+      13
+     ],
+     "paths of knots": [
+      [
+       4,
+       1,
+       0
+      ],
+      [
+       5,
+       3,
+       0
+      ],
+      [
+       6,
+       2,
+       0
+      ]
+     ],
+     "distinctions used on those paths": [
+      [
+       5,
+       0
+      ],
+      [
+       9,
+       2
+      ],
+      [
+       8,
+       1
+      ]
+     ],
+     "failing pairs (closing distinction first)": [
+      [
+       11,
+       1
+      ],
+      [
+       11,
+       2
+      ],
+      [
+       11,
+       8
+      ],
+      [
+       11,
+       9
+      ],
+      [
+       12,
+       0
+      ],
+      [
+       12,
+       1
+      ],
+      [
+       12,
+       5
+      ],
+      [
+       12,
+       8
+      ],
+      [
+       13,
+       0
+      ],
+      [
+       13,
+       2
+      ],
+      [
+       13,
+       5
+      ],
+      [
+       13,
+       9
+      ]
+     ],
+     "rounds of the closing and older distinctions in a failing pair": [
+      [
+       1,
+       0
+      ]
+     ],
+     "holder counts for the same ordering at decision": [
+      [
+       1,
+       2
+      ]
+     ],
+     "illegal failing pairs at decision": [],
+     "failing pairs in a single knot": [],
+     "noncommuting knot pairs": [],
+     "reordering sign": -1,
+     "successive checks on the supplied state (0 means it is not an eigenstate)": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      -1
+     ]
+    }
+   ]
+  },
+  {
+   "census index": 585,
+   "closing round": 2,
+   "knots born in each round": [
+    [
+     [
+      0,
+      1,
+      2
+     ],
+     [
+      0,
+      3,
+      4,
+      5,
+      6,
+      7
+     ],
+     [
+      1,
+      3,
+      8,
+      9
+     ],
+     [
+      2,
+      4,
+      5,
+      10,
+      11
+     ]
+    ],
+    [
+     [
+      6,
+      8,
+      12
+     ],
+     [
+      7,
+      10,
+      13
+     ],
+     [
+      9,
+      11,
+      14
+     ]
+    ],
+    [
+     [
+      12,
+      13,
+      14
+     ]
+    ]
+   ],
+   "closing parents": [
+    4,
+    5,
+    6
+   ],
+   "constructions": [
+    {
+     "form": "cycle",
+     "parents in order": [
+      4,
+      5,
+      6
+     ],
+     "closing distinctions in the same order": [
+      12,
+      13,
+      14
+     ],
+     "paths of knots": [
+      [
+       5,
+       3,
+       6
+      ],
+      [
+       6,
+       2,
+       4
+      ],
+      [
+       4,
+       1,
+       5
+      ]
+     ],
+     "distinctions used on those paths": [
+      [
+       10,
+       11
+      ],
+      [
+       9,
+       8
+      ],
+      [
+       6,
+       7
+      ]
+     ],
+     "failing pairs (closing distinction first)": [
+      [
+       12,
+       10
+      ],
+      [
+       12,
+       11
+      ],
+      [
+       13,
+       8
+      ],
+      [
+       13,
+       9
+      ],
+      [
+       14,
+       6
+      ],
+      [
+       14,
+       7
+      ]
+     ],
+     "rounds of the closing and older distinctions in a failing pair": [
+      [
+       1,
+       0
+      ]
+     ],
+     "holder counts for the same ordering at decision": [
+      [
+       1,
+       2
+      ]
+     ],
+     "illegal failing pairs at decision": [],
+     "failing pairs in a single knot": [],
+     "noncommuting knot pairs": [],
+     "reordering sign": -1,
+     "successive checks on the supplied state (0 means it is not an eigenstate)": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      -1
+     ]
+    },
+    {
+     "form": "common knot",
+     "parents in order": [
+      4,
+      5,
+      6
+     ],
+     "closing distinctions in the same order": [
+      12,
+      13,
+      14
+     ],
+     "paths of knots": [
+      [
+       4,
+       1,
+       0
+      ],
+      [
+       5,
+       3,
+       0
+      ],
+      [
+       6,
+       2,
+       0
+      ]
+     ],
+     "distinctions used on those paths": [
+      [
+       6,
+       0
+      ],
+      [
+       10,
+       2
+      ],
+      [
+       9,
+       1
+      ]
+     ],
+     "failing pairs (closing distinction first)": [
+      [
+       12,
+       1
+      ],
+      [
+       12,
+       2
+      ],
+      [
+       12,
+       9
+      ],
+      [
+       12,
+       10
+      ],
+      [
+       13,
+       0
+      ],
+      [
+       13,
+       1
+      ],
+      [
+       13,
+       6
+      ],
+      [
+       13,
+       9
+      ],
+      [
+       14,
+       0
+      ],
+      [
+       14,
+       2
+      ],
+      [
+       14,
+       6
+      ],
+      [
+       14,
+       10
+      ]
+     ],
+     "rounds of the closing and older distinctions in a failing pair": [
+      [
+       1,
+       0
+      ]
+     ],
+     "holder counts for the same ordering at decision": [
+      [
+       1,
+       2
+      ]
+     ],
+     "illegal failing pairs at decision": [],
+     "failing pairs in a single knot": [],
+     "noncommuting knot pairs": [],
+     "reordering sign": -1,
+     "successive checks on the supplied state (0 means it is not an eigenstate)": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      -1
+     ]
+    }
+   ]
+  },
+  {
+   "census index": 608,
+   "closing round": 2,
+   "knots born in each round": [
+    [
+     [
+      0,
+      1,
+      2,
+      6,
+      7
+     ],
+     [
+      0,
+      3,
+      4,
+      5
+     ],
+     [
+      1,
+      3,
+      8,
+      9
+     ],
+     [
+      2,
+      4,
+      5,
+      10,
+      11
+     ]
+    ],
+    [
+     [
+      6,
+      8,
+      12
+     ],
+     [
+      7,
+      10,
+      13
+     ],
+     [
+      9,
+      11,
+      14
+     ]
+    ],
+    [
+     [
+      12,
+      13,
+      14
+     ]
+    ]
+   ],
+   "closing parents": [
+    4,
+    5,
+    6
+   ],
+   "constructions": [
+    {
+     "form": "cycle",
+     "parents in order": [
+      4,
+      5,
+      6
+     ],
+     "closing distinctions in the same order": [
+      12,
+      13,
+      14
+     ],
+     "paths of knots": [
+      [
+       5,
+       3,
+       6
+      ],
+      [
+       6,
+       2,
+       4
+      ],
+      [
+       4,
+       0,
+       5
+      ]
+     ],
+     "distinctions used on those paths": [
+      [
+       10,
+       11
+      ],
+      [
+       9,
+       8
+      ],
+      [
+       6,
+       7
+      ]
+     ],
+     "failing pairs (closing distinction first)": [
+      [
+       12,
+       10
+      ],
+      [
+       12,
+       11
+      ],
+      [
+       13,
+       8
+      ],
+      [
+       13,
+       9
+      ],
+      [
+       14,
+       6
+      ],
+      [
+       14,
+       7
+      ]
+     ],
+     "rounds of the closing and older distinctions in a failing pair": [
+      [
+       1,
+       0
+      ]
+     ],
+     "holder counts for the same ordering at decision": [
+      [
+       1,
+       2
+      ]
+     ],
+     "illegal failing pairs at decision": [],
+     "failing pairs in a single knot": [],
+     "noncommuting knot pairs": [],
+     "reordering sign": -1,
+     "successive checks on the supplied state (0 means it is not an eigenstate)": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      -1
+     ]
+    },
+    {
+     "form": "common knot",
+     "parents in order": [
+      4,
+      5,
+      6
+     ],
+     "closing distinctions in the same order": [
+      12,
+      13,
+      14
+     ],
+     "paths of knots": [
+      [
+       4,
+       0
+      ],
+      [
+       5,
+       0
+      ],
+      [
+       6,
+       2,
+       0
+      ]
+     ],
+     "distinctions used on those paths": [
+      [
+       6
+      ],
+      [
+       7
+      ],
+      [
+       9,
+       1
+      ]
+     ],
+     "failing pairs (closing distinction first)": [
+      [
+       12,
+       1
+      ],
+      [
+       12,
+       7
+      ],
+      [
+       12,
+       9
+      ],
+      [
+       13,
+       1
+      ],
+      [
+       13,
+       6
+      ],
+      [
+       13,
+       9
+      ],
+      [
+       14,
+       6
+      ],
+      [
+       14,
+       7
+      ]
+     ],
+     "rounds of the closing and older distinctions in a failing pair": [
+      [
+       1,
+       0
+      ]
+     ],
+     "holder counts for the same ordering at decision": [
+      [
+       1,
+       2
+      ]
+     ],
+     "illegal failing pairs at decision": [],
+     "failing pairs in a single knot": [],
+     "noncommuting knot pairs": [],
+     "reordering sign": -1,
+     "successive checks on the supplied state (0 means it is not an eigenstate)": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      -1
+     ]
+    }
+   ]
+  },
+  {
+   "census index": 794,
+   "closing round": 2,
+   "knots born in each round": [
+    [
+     [
+      0,
+      1,
+      2,
+      3
+     ],
+     [
+      0,
+      4,
+      6,
+      7
+     ],
+     [
+      1,
+      5,
+      8,
+      9
+     ],
+     [
+      2,
+      3,
+      4,
+      5,
+      10,
+      11
+     ]
+    ],
+    [
+     [
+      6,
+      8,
+      12
+     ],
+     [
+      7,
+      10,
+      13
+     ],
+     [
+      9,
+      11,
+      14
+     ]
+    ],
+    [
+     [
+      12,
+      13,
+      14
+     ]
+    ]
+   ],
+   "closing parents": [
+    4,
+    5,
+    6
+   ],
+   "constructions": [
+    {
+     "form": "cycle",
+     "parents in order": [
+      4,
+      5,
+      6
+     ],
+     "closing distinctions in the same order": [
+      12,
+      13,
+      14
+     ],
+     "paths of knots": [
+      [
+       5,
+       3,
+       6
+      ],
+      [
+       6,
+       2,
+       4
+      ],
+      [
+       4,
+       1,
+       5
+      ]
+     ],
+     "distinctions used on those paths": [
+      [
+       10,
+       11
+      ],
+      [
+       9,
+       8
+      ],
+      [
+       6,
+       7
+      ]
+     ],
+     "failing pairs (closing distinction first)": [
+      [
+       12,
+       10
+      ],
+      [
+       12,
+       11
+      ],
+      [
+       13,
+       8
+      ],
+      [
+       13,
+       9
+      ],
+      [
+       14,
+       6
+      ],
+      [
+       14,
+       7
+      ]
+     ],
+     "rounds of the closing and older distinctions in a failing pair": [
+      [
+       1,
+       0
+      ]
+     ],
+     "holder counts for the same ordering at decision": [
+      [
+       1,
+       2
+      ]
+     ],
+     "illegal failing pairs at decision": [],
+     "failing pairs in a single knot": [],
+     "noncommuting knot pairs": [],
+     "reordering sign": -1,
+     "successive checks on the supplied state (0 means it is not an eigenstate)": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      -1
+     ]
+    },
+    {
+     "form": "common knot",
+     "parents in order": [
+      4,
+      5,
+      6
+     ],
+     "closing distinctions in the same order": [
+      12,
+      13,
+      14
+     ],
+     "paths of knots": [
+      [
+       4,
+       1,
+       0
+      ],
+      [
+       5,
+       3,
+       0
+      ],
+      [
+       6,
+       2,
+       0
+      ]
+     ],
+     "distinctions used on those paths": [
+      [
+       6,
+       0
+      ],
+      [
+       10,
+       2
+      ],
+      [
+       9,
+       1
+      ]
+     ],
+     "failing pairs (closing distinction first)": [
+      [
+       12,
+       1
+      ],
+      [
+       12,
+       2
+      ],
+      [
+       12,
+       9
+      ],
+      [
+       12,
+       10
+      ],
+      [
+       13,
+       0
+      ],
+      [
+       13,
+       1
+      ],
+      [
+       13,
+       6
+      ],
+      [
+       13,
+       9
+      ],
+      [
+       14,
+       0
+      ],
+      [
+       14,
+       2
+      ],
+      [
+       14,
+       6
+      ],
+      [
+       14,
+       10
+      ]
+     ],
+     "rounds of the closing and older distinctions in a failing pair": [
+      [
+       1,
+       0
+      ]
+     ],
+     "holder counts for the same ordering at decision": [
+      [
+       1,
+       2
+      ]
+     ],
+     "illegal failing pairs at decision": [],
+     "failing pairs in a single knot": [],
+     "noncommuting knot pairs": [],
+     "reordering sign": -1,
+     "successive checks on the supplied state (0 means it is not an eigenstate)": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      -1
+     ]
+    }
+   ]
+  },
+  {
+   "census index": 968,
+   "closing round": 2,
+   "knots born in each round": [
+    [
+     [
+      0,
+      1,
+      2
+     ],
+     [
+      0,
+      3,
+      4,
+      6,
+      7
+     ],
+     [
+      1,
+      3,
+      5,
+      8,
+      9
+     ],
+     [
+      2,
+      4,
+      5,
+      10,
+      11
+     ]
+    ],
+    [
+     [
+      6,
+      8,
+      12
+     ],
+     [
+      7,
+      10,
+      13
+     ],
+     [
+      9,
+      11,
+      14
+     ]
+    ],
+    [
+     [
+      12,
+      13,
+      14
+     ]
+    ]
+   ],
+   "closing parents": [
+    4,
+    5,
+    6
+   ],
+   "constructions": [
+    {
+     "form": "cycle",
+     "parents in order": [
+      4,
+      5,
+      6
+     ],
+     "closing distinctions in the same order": [
+      12,
+      13,
+      14
+     ],
+     "paths of knots": [
+      [
+       5,
+       3,
+       6
+      ],
+      [
+       6,
+       2,
+       4
+      ],
+      [
+       4,
+       1,
+       5
+      ]
+     ],
+     "distinctions used on those paths": [
+      [
+       10,
+       11
+      ],
+      [
+       9,
+       8
+      ],
+      [
+       6,
+       7
+      ]
+     ],
+     "failing pairs (closing distinction first)": [
+      [
+       12,
+       10
+      ],
+      [
+       12,
+       11
+      ],
+      [
+       13,
+       8
+      ],
+      [
+       13,
+       9
+      ],
+      [
+       14,
+       6
+      ],
+      [
+       14,
+       7
+      ]
+     ],
+     "rounds of the closing and older distinctions in a failing pair": [
+      [
+       1,
+       0
+      ]
+     ],
+     "holder counts for the same ordering at decision": [
+      [
+       1,
+       2
+      ]
+     ],
+     "illegal failing pairs at decision": [],
+     "failing pairs in a single knot": [],
+     "noncommuting knot pairs": [],
+     "reordering sign": -1,
+     "successive checks on the supplied state (0 means it is not an eigenstate)": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      -1
+     ]
+    },
+    {
+     "form": "common knot",
+     "parents in order": [
+      4,
+      5,
+      6
+     ],
+     "closing distinctions in the same order": [
+      12,
+      13,
+      14
+     ],
+     "paths of knots": [
+      [
+       4,
+       1,
+       0
+      ],
+      [
+       5,
+       3,
+       0
+      ],
+      [
+       6,
+       2,
+       0
+      ]
+     ],
+     "distinctions used on those paths": [
+      [
+       6,
+       0
+      ],
+      [
+       10,
+       2
+      ],
+      [
+       9,
+       1
+      ]
+     ],
+     "failing pairs (closing distinction first)": [
+      [
+       12,
+       1
+      ],
+      [
+       12,
+       2
+      ],
+      [
+       12,
+       9
+      ],
+      [
+       12,
+       10
+      ],
+      [
+       13,
+       0
+      ],
+      [
+       13,
+       1
+      ],
+      [
+       13,
+       6
+      ],
+      [
+       13,
+       9
+      ],
+      [
+       14,
+       0
+      ],
+      [
+       14,
+       2
+      ],
+      [
+       14,
+       6
+      ],
+      [
+       14,
+       10
+      ]
+     ],
+     "rounds of the closing and older distinctions in a failing pair": [
+      [
+       1,
+       0
+      ]
+     ],
+     "holder counts for the same ordering at decision": [
+      [
+       1,
+       2
+      ]
+     ],
+     "illegal failing pairs at decision": [],
+     "failing pairs in a single knot": [],
+     "noncommuting knot pairs": [],
+     "reordering sign": -1,
+     "successive checks on the supplied state (0 means it is not an eigenstate)": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      -1
+     ]
+    }
+   ]
+  },
+  {
+   "census index": 1348,
+   "closing round": 2,
+   "knots born in each round": [
+    [
+     [
+      0,
+      1,
+      2,
+      3
+     ],
+     [
+      0,
+      4,
+      5
+     ],
+     [
+      1,
+      4,
+      5,
+      6,
+      7
+     ],
+     [
+      2,
+      8,
+      9
+     ],
+     [
+      3,
+      10,
+      11
+     ]
+    ],
+    [
+     [
+      6,
+      8,
+      12
+     ],
+     [
+      7,
+      10,
+      13
+     ],
+     [
+      9,
+      11,
+      14
+     ]
+    ],
+    [
+     [
+      12,
+      13,
+      14
+     ]
+    ]
+   ],
+   "closing parents": [
+    5,
+    6,
+    7
+   ],
+   "constructions": [
+    {
+     "form": "cycle",
+     "parents in order": [
+      5,
+      6,
+      7
+     ],
+     "closing distinctions in the same order": [
+      12,
+      13,
+      14
+     ],
+     "paths of knots": [
+      [
+       6,
+       4,
+       7
+      ],
+      [
+       7,
+       3,
+       5
+      ],
+      [
+       5,
+       2,
+       6
+      ]
+     ],
+     "distinctions used on those paths": [
+      [
+       10,
+       11
+      ],
+      [
+       9,
+       8
+      ],
+      [
+       6,
+       7
+      ]
+     ],
+     "failing pairs (closing distinction first)": [
+      [
+       12,
+       10
+      ],
+      [
+       12,
+       11
+      ],
+      [
+       13,
+       8
+      ],
+      [
+       13,
+       9
+      ],
+      [
+       14,
+       6
+      ],
+      [
+       14,
+       7
+      ]
+     ],
+     "rounds of the closing and older distinctions in a failing pair": [
+      [
+       1,
+       0
+      ]
+     ],
+     "holder counts for the same ordering at decision": [
+      [
+       1,
+       2
+      ]
+     ],
+     "illegal failing pairs at decision": [],
+     "failing pairs in a single knot": [],
+     "noncommuting knot pairs": [],
+     "reordering sign": -1,
+     "successive checks on the supplied state (0 means it is not an eigenstate)": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      -1
+     ]
+    },
+    {
+     "form": "common knot",
+     "parents in order": [
+      5,
+      6,
+      7
+     ],
+     "closing distinctions in the same order": [
+      12,
+      13,
+      14
+     ],
+     "paths of knots": [
+      [
+       5,
+       2,
+       0
+      ],
+      [
+       6,
+       4,
+       0
+      ],
+      [
+       7,
+       3,
+       0
+      ]
+     ],
+     "distinctions used on those paths": [
+      [
+       6,
+       1
+      ],
+      [
+       10,
+       3
+      ],
+      [
+       9,
+       2
+      ]
+     ],
+     "failing pairs (closing distinction first)": [
+      [
+       12,
+       2
+      ],
+      [
+       12,
+       3
+      ],
+      [
+       12,
+       9
+      ],
+      [
+       12,
+       10
+      ],
+      [
+       13,
+       1
+      ],
+      [
+       13,
+       2
+      ],
+      [
+       13,
+       6
+      ],
+      [
+       13,
+       9
+      ],
+      [
+       14,
+       1
+      ],
+      [
+       14,
+       3
+      ],
+      [
+       14,
+       6
+      ],
+      [
+       14,
+       10
+      ]
+     ],
+     "rounds of the closing and older distinctions in a failing pair": [
+      [
+       1,
+       0
+      ]
+     ],
+     "holder counts for the same ordering at decision": [
+      [
+       1,
+       2
+      ]
+     ],
+     "illegal failing pairs at decision": [],
+     "failing pairs in a single knot": [],
+     "noncommuting knot pairs": [],
+     "reordering sign": -1,
+     "successive checks on the supplied state (0 means it is not an eigenstate)": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      -1
+     ]
+    }
+   ]
+  },
+  {
+   "census index": 1384,
+   "closing round": 2,
+   "knots born in each round": [
+    [
+     [
+      0,
+      1,
+      2,
+      3,
+      4
+     ],
+     [
+      0,
+      5,
+      6,
+      7
+     ],
+     [
+      1,
+      8,
+      9
+     ],
+     [
+      2,
+      10,
+      11
+     ],
+     [
+      3,
+      4,
+      5
+     ]
+    ],
+    [
+     [
+      6,
+      8,
+      12
+     ],
+     [
+      7,
+      10,
+      13
+     ],
+     [
+      9,
+      11,
+      14
+     ]
+    ],
+    [
+     [
+      12,
+      13,
+      14
+     ]
+    ]
+   ],
+   "closing parents": [
+    5,
+    6,
+    7
+   ],
+   "constructions": [
+    {
+     "form": "cycle",
+     "parents in order": [
+      5,
+      6,
+      7
+     ],
+     "closing distinctions in the same order": [
+      12,
+      13,
+      14
+     ],
+     "paths of knots": [
+      [
+       6,
+       3,
+       7
+      ],
+      [
+       7,
+       2,
+       5
+      ],
+      [
+       5,
+       1,
+       6
+      ]
+     ],
+     "distinctions used on those paths": [
+      [
+       10,
+       11
+      ],
+      [
+       9,
+       8
+      ],
+      [
+       6,
+       7
+      ]
+     ],
+     "failing pairs (closing distinction first)": [
+      [
+       12,
+       10
+      ],
+      [
+       12,
+       11
+      ],
+      [
+       13,
+       8
+      ],
+      [
+       13,
+       9
+      ],
+      [
+       14,
+       6
+      ],
+      [
+       14,
+       7
+      ]
+     ],
+     "rounds of the closing and older distinctions in a failing pair": [
+      [
+       1,
+       0
+      ]
+     ],
+     "holder counts for the same ordering at decision": [
+      [
+       1,
+       2
+      ]
+     ],
+     "illegal failing pairs at decision": [],
+     "failing pairs in a single knot": [],
+     "noncommuting knot pairs": [],
+     "reordering sign": -1,
+     "successive checks on the supplied state (0 means it is not an eigenstate)": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      -1
+     ]
+    },
+    {
+     "form": "common knot",
+     "parents in order": [
+      5,
+      6,
+      7
+     ],
+     "closing distinctions in the same order": [
+      12,
+      13,
+      14
+     ],
+     "paths of knots": [
+      [
+       5,
+       1,
+       0
+      ],
+      [
+       6,
+       3,
+       0
+      ],
+      [
+       7,
+       2,
+       0
+      ]
+     ],
+     "distinctions used on those paths": [
+      [
+       6,
+       0
+      ],
+      [
+       10,
+       2
+      ],
+      [
+       9,
+       1
+      ]
+     ],
+     "failing pairs (closing distinction first)": [
+      [
+       12,
+       1
+      ],
+      [
+       12,
+       2
+      ],
+      [
+       12,
+       9
+      ],
+      [
+       12,
+       10
+      ],
+      [
+       13,
+       0
+      ],
+      [
+       13,
+       1
+      ],
+      [
+       13,
+       6
+      ],
+      [
+       13,
+       9
+      ],
+      [
+       14,
+       0
+      ],
+      [
+       14,
+       2
+      ],
+      [
+       14,
+       6
+      ],
+      [
+       14,
+       10
+      ]
+     ],
+     "rounds of the closing and older distinctions in a failing pair": [
+      [
+       1,
+       0
+      ]
+     ],
+     "holder counts for the same ordering at decision": [
+      [
+       1,
+       2
+      ]
+     ],
+     "illegal failing pairs at decision": [],
+     "failing pairs in a single knot": [],
+     "noncommuting knot pairs": [],
+     "reordering sign": -1,
+     "successive checks on the supplied state (0 means it is not an eigenstate)": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      -1
+     ]
+    }
+   ]
+  },
+  {
+   "census index": 2043,
+   "closing round": 2,
+   "knots born in each round": [
+    [
+     [
+      0,
+      1,
+      2
+     ],
+     [
+      0,
+      3,
+      6,
+      7
+     ],
+     [
+      1,
+      4,
+      5,
+      8,
+      9
+     ],
+     [
+      2,
+      10,
+      11
+     ],
+     [
+      3,
+      4,
+      5
+     ]
+    ],
+    [
+     [
+      6,
+      8,
+      12
+     ],
+     [
+      7,
+      10,
+      13
+     ],
+     [
+      9,
+      11,
+      14
+     ]
+    ],
+    [
+     [
+      12,
+      13,
+      14
+     ]
+    ]
+   ],
+   "closing parents": [
+    5,
+    6,
+    7
+   ],
+   "constructions": [
+    {
+     "form": "cycle",
+     "parents in order": [
+      5,
+      6,
+      7
+     ],
+     "closing distinctions in the same order": [
+      12,
+      13,
+      14
+     ],
+     "paths of knots": [
+      [
+       6,
+       3,
+       7
+      ],
+      [
+       7,
+       2,
+       5
+      ],
+      [
+       5,
+       1,
+       6
+      ]
+     ],
+     "distinctions used on those paths": [
+      [
+       10,
+       11
+      ],
+      [
+       9,
+       8
+      ],
+      [
+       6,
+       7
+      ]
+     ],
+     "failing pairs (closing distinction first)": [
+      [
+       12,
+       10
+      ],
+      [
+       12,
+       11
+      ],
+      [
+       13,
+       8
+      ],
+      [
+       13,
+       9
+      ],
+      [
+       14,
+       6
+      ],
+      [
+       14,
+       7
+      ]
+     ],
+     "rounds of the closing and older distinctions in a failing pair": [
+      [
+       1,
+       0
+      ]
+     ],
+     "holder counts for the same ordering at decision": [
+      [
+       1,
+       2
+      ]
+     ],
+     "illegal failing pairs at decision": [],
+     "failing pairs in a single knot": [],
+     "noncommuting knot pairs": [],
+     "reordering sign": -1,
+     "successive checks on the supplied state (0 means it is not an eigenstate)": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      -1
+     ]
+    },
+    {
+     "form": "common knot",
+     "parents in order": [
+      5,
+      6,
+      7
+     ],
+     "closing distinctions in the same order": [
+      12,
+      13,
+      14
+     ],
+     "paths of knots": [
+      [
+       5,
+       1,
+       0
+      ],
+      [
+       6,
+       3,
+       0
+      ],
+      [
+       7,
+       2,
+       0
+      ]
+     ],
+     "distinctions used on those paths": [
+      [
+       6,
+       0
+      ],
+      [
+       10,
+       2
+      ],
+      [
+       9,
+       1
+      ]
+     ],
+     "failing pairs (closing distinction first)": [
+      [
+       12,
+       1
+      ],
+      [
+       12,
+       2
+      ],
+      [
+       12,
+       9
+      ],
+      [
+       12,
+       10
+      ],
+      [
+       13,
+       0
+      ],
+      [
+       13,
+       1
+      ],
+      [
+       13,
+       6
+      ],
+      [
+       13,
+       9
+      ],
+      [
+       14,
+       0
+      ],
+      [
+       14,
+       2
+      ],
+      [
+       14,
+       6
+      ],
+      [
+       14,
+       10
+      ]
+     ],
+     "rounds of the closing and older distinctions in a failing pair": [
+      [
+       1,
+       0
+      ]
+     ],
+     "holder counts for the same ordering at decision": [
+      [
+       1,
+       2
+      ]
+     ],
+     "illegal failing pairs at decision": [],
+     "failing pairs in a single knot": [],
+     "noncommuting knot pairs": [],
+     "reordering sign": -1,
+     "successive checks on the supplied state (0 means it is not an eigenstate)": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      -1
+     ]
+    }
+   ]
+  },
+  {
+   "census index": 2618,
+   "closing round": 2,
+   "knots born in each round": [
+    [
+     [
+      0,
+      1,
+      2,
+      3
+     ],
+     [
+      0,
+      4,
+      5
+     ],
+     [
+      1,
+      4,
+      6,
+      7
+     ],
+     [
+      2,
+      5,
+      8,
+      9
+     ],
+     [
+      3,
+      10,
+      11
+     ]
+    ],
+    [
+     [
+      6,
+      8,
+      12
+     ],
+     [
+      7,
+      10,
+      13
+     ],
+     [
+      9,
+      11,
+      14
+     ]
+    ],
+    [
+     [
+      12,
+      13,
+      14
+     ]
+    ]
+   ],
+   "closing parents": [
+    5,
+    6,
+    7
+   ],
+   "constructions": [
+    {
+     "form": "cycle",
+     "parents in order": [
+      5,
+      6,
+      7
+     ],
+     "closing distinctions in the same order": [
+      12,
+      13,
+      14
+     ],
+     "paths of knots": [
+      [
+       6,
+       4,
+       7
+      ],
+      [
+       7,
+       3,
+       5
+      ],
+      [
+       5,
+       2,
+       6
+      ]
+     ],
+     "distinctions used on those paths": [
+      [
+       10,
+       11
+      ],
+      [
+       9,
+       8
+      ],
+      [
+       6,
+       7
+      ]
+     ],
+     "failing pairs (closing distinction first)": [
+      [
+       12,
+       10
+      ],
+      [
+       12,
+       11
+      ],
+      [
+       13,
+       8
+      ],
+      [
+       13,
+       9
+      ],
+      [
+       14,
+       6
+      ],
+      [
+       14,
+       7
+      ]
+     ],
+     "rounds of the closing and older distinctions in a failing pair": [
+      [
+       1,
+       0
+      ]
+     ],
+     "holder counts for the same ordering at decision": [
+      [
+       1,
+       2
+      ]
+     ],
+     "illegal failing pairs at decision": [],
+     "failing pairs in a single knot": [],
+     "noncommuting knot pairs": [],
+     "reordering sign": -1,
+     "successive checks on the supplied state (0 means it is not an eigenstate)": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      -1
+     ]
+    },
+    {
+     "form": "common knot",
+     "parents in order": [
+      5,
+      6,
+      7
+     ],
+     "closing distinctions in the same order": [
+      12,
+      13,
+      14
+     ],
+     "paths of knots": [
+      [
+       5,
+       2,
+       0
+      ],
+      [
+       6,
+       4,
+       0
+      ],
+      [
+       7,
+       3,
+       0
+      ]
+     ],
+     "distinctions used on those paths": [
+      [
+       6,
+       1
+      ],
+      [
+       10,
+       3
+      ],
+      [
+       9,
+       2
+      ]
+     ],
+     "failing pairs (closing distinction first)": [
+      [
+       12,
+       2
+      ],
+      [
+       12,
+       3
+      ],
+      [
+       12,
+       9
+      ],
+      [
+       12,
+       10
+      ],
+      [
+       13,
+       1
+      ],
+      [
+       13,
+       2
+      ],
+      [
+       13,
+       6
+      ],
+      [
+       13,
+       9
+      ],
+      [
+       14,
+       1
+      ],
+      [
+       14,
+       3
+      ],
+      [
+       14,
+       6
+      ],
+      [
+       14,
+       10
+      ]
+     ],
+     "rounds of the closing and older distinctions in a failing pair": [
+      [
+       1,
+       0
+      ]
+     ],
+     "holder counts for the same ordering at decision": [
+      [
+       1,
+       2
+      ]
+     ],
+     "illegal failing pairs at decision": [],
+     "failing pairs in a single knot": [],
+     "noncommuting knot pairs": [],
+     "reordering sign": -1,
+     "successive checks on the supplied state (0 means it is not an eigenstate)": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      -1
+     ]
+    }
+   ]
+  },
+  {
+   "census index": 4594,
+   "closing round": 2,
+   "knots born in each round": [
+    [
+     [
+      0,
+      1,
+      2
+     ],
+     [
+      0,
+      3,
+      6,
+      7
+     ],
+     [
+      1,
+      4,
+      8,
+      9
+     ],
+     [
+      2,
+      5,
+      10,
+      11
+     ],
+     [
+      3,
+      4,
+      5
+     ]
+    ],
+    [
+     [
+      6,
+      8,
+      12
+     ],
+     [
+      7,
+      10,
+      13
+     ],
+     [
+      9,
+      11,
+      14
+     ]
+    ],
+    [
+     [
+      12,
+      13,
+      14
+     ]
+    ]
+   ],
+   "closing parents": [
+    5,
+    6,
+    7
+   ],
+   "constructions": [
+    {
+     "form": "cycle",
+     "parents in order": [
+      5,
+      6,
+      7
+     ],
+     "closing distinctions in the same order": [
+      12,
+      13,
+      14
+     ],
+     "paths of knots": [
+      [
+       6,
+       3,
+       7
+      ],
+      [
+       7,
+       2,
+       5
+      ],
+      [
+       5,
+       1,
+       6
+      ]
+     ],
+     "distinctions used on those paths": [
+      [
+       10,
+       11
+      ],
+      [
+       9,
+       8
+      ],
+      [
+       6,
+       7
+      ]
+     ],
+     "failing pairs (closing distinction first)": [
+      [
+       12,
+       10
+      ],
+      [
+       12,
+       11
+      ],
+      [
+       13,
+       8
+      ],
+      [
+       13,
+       9
+      ],
+      [
+       14,
+       6
+      ],
+      [
+       14,
+       7
+      ]
+     ],
+     "rounds of the closing and older distinctions in a failing pair": [
+      [
+       1,
+       0
+      ]
+     ],
+     "holder counts for the same ordering at decision": [
+      [
+       1,
+       2
+      ]
+     ],
+     "illegal failing pairs at decision": [],
+     "failing pairs in a single knot": [],
+     "noncommuting knot pairs": [],
+     "reordering sign": -1,
+     "successive checks on the supplied state (0 means it is not an eigenstate)": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      -1
+     ]
+    },
+    {
+     "form": "common knot",
+     "parents in order": [
+      5,
+      6,
+      7
+     ],
+     "closing distinctions in the same order": [
+      12,
+      13,
+      14
+     ],
+     "paths of knots": [
+      [
+       5,
+       1,
+       0
+      ],
+      [
+       6,
+       3,
+       0
+      ],
+      [
+       7,
+       2,
+       0
+      ]
+     ],
+     "distinctions used on those paths": [
+      [
+       6,
+       0
+      ],
+      [
+       10,
+       2
+      ],
+      [
+       9,
+       1
+      ]
+     ],
+     "failing pairs (closing distinction first)": [
+      [
+       12,
+       1
+      ],
+      [
+       12,
+       2
+      ],
+      [
+       12,
+       9
+      ],
+      [
+       12,
+       10
+      ],
+      [
+       13,
+       0
+      ],
+      [
+       13,
+       1
+      ],
+      [
+       13,
+       6
+      ],
+      [
+       13,
+       9
+      ],
+      [
+       14,
+       0
+      ],
+      [
+       14,
+       2
+      ],
+      [
+       14,
+       6
+      ],
+      [
+       14,
+       10
+      ]
+     ],
+     "rounds of the closing and older distinctions in a failing pair": [
+      [
+       1,
+       0
+      ]
+     ],
+     "holder counts for the same ordering at decision": [
+      [
+       1,
+       2
+      ]
+     ],
+     "illegal failing pairs at decision": [],
+     "failing pairs in a single knot": [],
+     "noncommuting knot pairs": [],
+     "reordering sign": -1,
+     "successive checks on the supplied state (0 means it is not an eigenstate)": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      -1
+     ]
+    }
+   ]
+  }
+ ],
+ "controls": {
+  "arms meeting before the common knot": {
+   "census index": 61,
+   "paths of knots": [
+    [
+     4,
+     1,
+     0
+    ],
+    [
+     5,
+     1,
+     0
+    ],
+    [
+     6,
+     2,
+     0
+    ]
+   ],
+   "distinctions on paths": [
+    [
+     3,
+     0
+    ],
+    [
+     4,
+     0
+    ],
+    [
+     6,
+     1
+    ]
+   ],
+   "failing pairs (closing distinction first)": [
+    [
+     9,
+     0
+    ],
+    [
+     9,
+     1
+    ],
+    [
+     9,
+     4
+    ],
+    [
+     9,
+     6
+    ],
+    [
+     10,
+     0
+    ],
+    [
+     10,
+     1
+    ],
+    [
+     10,
+     3
+    ],
+    [
+     10,
+     6
+    ],
+    [
+     11,
+     0
+    ],
+    [
+     11,
+     3
+    ],
+    [
+     11,
+     4
+    ]
+   ],
+   "rounds of the closing and older distinctions in a failing pair": [
+    [
+     1,
+     0
+    ]
+   ],
+   "holder counts for the same ordering at decision": [
+    [
+     1,
+     2
+    ]
+   ],
+   "illegal failing pairs at decision": [],
+   "failing pairs in a single knot": [],
+   "noncommuting knot pairs": [
+    [
+     0,
+     6
+    ],
+    [
+     0,
+     7
+    ],
+    [
+     1,
+     6
+    ],
+    [
+     1,
+     7
+    ]
+   ],
+   "reordering sign": -1,
+   "successive checks on the supplied state (0 means it is not an eigenstate)": [
+    0,
+    0,
+    1,
+    1,
+    1,
+    1,
+    1,
+    -1
+   ]
+  },
+  "taking every distinction shared at one path step": {
+   "census index": 65,
+   "paths of knots": [
+    [
+     4,
+     1,
+     0
+    ],
+    [
+     5,
+     3,
+     0
+    ],
+    [
+     6,
+     2,
+     0
+    ]
+   ],
+   "distinctions taken at each path": [
+    [
+     4,
+     0
+    ],
+    [
+     8,
+     2,
+     3
+    ],
+    [
+     7,
+     1
+    ]
+   ],
+   "failing pairs (closing distinction first)": [
+    [
+     10,
+     1
+    ],
+    [
+     10,
+     2
+    ],
+    [
+     10,
+     3
+    ],
+    [
+     10,
+     7
+    ],
+    [
+     10,
+     8
+    ],
+    [
+     11,
+     0
+    ],
+    [
+     11,
+     1
+    ],
+    [
+     11,
+     4
+    ],
+    [
+     11,
+     7
+    ],
+    [
+     12,
+     0
+    ],
+    [
+     12,
+     2
+    ],
+    [
+     12,
+     3
+    ],
+    [
+     12,
+     4
+    ],
+    [
+     12,
+     8
+    ]
+   ],
+   "rounds of the closing and older distinctions in a failing pair": [
+    [
+     1,
+     0
+    ]
+   ],
+   "holder counts for the same ordering at decision": [
+    [
+     1,
+     2
+    ]
+   ],
+   "illegal failing pairs at decision": [],
+   "failing pairs in a single knot": [],
+   "noncommuting knot pairs": [
+    [
+     0,
+     4
+    ],
+    [
+     0,
+     6
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     3,
+     6
+    ]
+   ],
+   "reordering sign": -1,
+   "successive checks on the supplied state (0 means it is not an eigenstate)": [
+    0,
+    1,
+    1,
+    0,
+    1,
+    1,
+    1,
+    -1
+   ]
+  }
+ }
+}

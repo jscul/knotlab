@@ -1,0 +1,2865 @@
+{
+  "inputs": [
+    "../results.jsonl (selected strict readers and no-odd-ring filter)",
+    "../../MOST-FAILING-20261127-001/referee-R1/codes.jsonl (reconstructed birth-pair lists and holdings)"
+  ],
+  "weighting of closure counts": "One vote per eligible census start, restricted to strict splits without an odd ring around a knot.",
+  "equivalence": "Retain the two holders of each distinction in a reader, and which two distinctions are that reader. Omit all other distinctions and knots they alone touch. Relabel knots, readers and the two settings within each reader.",
+  "closures": 252,
+  "selected marked shapes": 9,
+  "marked shapes over all tied minima": 9,
+  "unmarked shapes of the selected reader distinctions": 9,
+  "closures with multiple minimum strict words": 252,
+  "closures with multiple minimum marked shapes": 2,
+  "total minimum strict words (labelled distinctions)": 2102,
+  "independent ungrouped controls, census indices": [
+    786,
+    6131,
+    6181,
+    6185
+  ],
+  "number of different shapes with exactly two repetition encodings of the three-reader form": 3,
+  "selected closures with exactly two repetition encodings of the three-reader form": 33,
+  "whole versus selected one-encoding projection": {
+    "whole holdings with all knots of size at least three": 1,
+    "full sizes of its two-setting knot, count by size": {
+      "2": 25,
+      "3": 82,
+      "4": 71,
+      "5": 19,
+      "6": 1
+    },
+    "full multiplicities at the doubled meeting, count by multiplicity": {
+      "2": 198
+    },
+    "full direct meetings between the ends of the pass, count by multiplicity": {
+      "0": 198
+    },
+    "example where the two-setting knot holds further distinctions": {
+      "census start": 794,
+      "knot": 4,
+      "full size": 3,
+      "meetings directly between its two ends": 0
+    }
+  },
+  "operator certificate for the one-encoding shape": {
+    "logical checks in knot order": [
+      "ZXX",
+      "ZZZ",
+      "XXZ",
+      "XZX"
+    ],
+    "encoded checks including the added knot": [
+      "ZIXX",
+      "IZZZ",
+      "XXXZ",
+      "XXZX",
+      "ZZII"
+    ],
+    "basis convention": "Bit 0 is the first reader. The isometry duplicates this bit.",
+    "intertwining equalities on logical basis states": 40,
+    "pairwise commutation equalities on four-reader basis states": 160,
+    "whole product equals minus identity on basis states": 16,
+    "normalized logical state, with first reader printed first": "(|000> + |011> + |110> - |101>)/2",
+    "normalized encoded state": "(|0000> + |0011> + |1110> - |1101>)/2",
+    "verified signs in knot order on this encoded state": [
+      1,
+      1,
+      1,
+      -1,
+      1
+    ]
+  },
+  "shapes": [
+    {
+      "shape": 1,
+      "readers as unordered pairs of holder lists": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            3,
+            4
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            3,
+            4
+          ]
+        ],
+        [
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            4
+          ]
+        ],
+        [
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            3
+          ]
+        ]
+      ],
+      "fewest strict readers": 4,
+      "selected closures": 198,
+      "knots holding a reader setting": 5,
+      "labelled minimum strict words": 1586,
+      "closures with some minimum of this shape": 198,
+      "closures with every minimum of this shape": 198,
+      "distinct whole holdings among selected closures": 198,
+      "distinct whole holdings with selected marks": 198,
+      "outside distinction counts of selected closures": {
+        "0": 1,
+        "1": 2,
+        "2": 13,
+        "3": 50,
+        "4": 130,
+        "6": 1,
+        "7": 1
+      },
+      "counts of unasked knots of selected closures": {
+        "0": 7,
+        "1": 189,
+        "3": 2
+      },
+      "after exactly one repetition encoding of the three-reader form": true,
+      "after exactly two repetition encodings of the three-reader form": false,
+      "permitted second passes yielding this shape": [],
+      "example census start": 786,
+      "one minimum there as pairs of distinction IDs": [
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          7
+        ]
+      ]
+    },
+    {
+      "shape": 2,
+      "readers as unordered pairs of holder lists": [
+        [
+          [
+            0,
+            2
+          ],
+          [
+            3,
+            5
+          ]
+        ],
+        [
+          [
+            0,
+            4
+          ],
+          [
+            3,
+            5
+          ]
+        ],
+        [
+          [
+            1,
+            2
+          ],
+          [
+            4,
+            5
+          ]
+        ],
+        [
+          [
+            1,
+            3
+          ],
+          [
+            4,
+            5
+          ]
+        ],
+        [
+          [
+            2,
+            5
+          ],
+          [
+            3,
+            4
+          ]
+        ]
+      ],
+      "fewest strict readers": 5,
+      "selected closures": 20,
+      "knots holding a reader setting": 6,
+      "labelled minimum strict words": 176,
+      "closures with some minimum of this shape": 20,
+      "closures with every minimum of this shape": 19,
+      "distinct whole holdings among selected closures": 20,
+      "distinct whole holdings with selected marks": 20,
+      "outside distinction counts of selected closures": {
+        "1": 4,
+        "2": 14,
+        "4": 1,
+        "5": 1
+      },
+      "counts of unasked knots of selected closures": {
+        "0": 18,
+        "2": 2
+      },
+      "after exactly one repetition encoding of the three-reader form": false,
+      "after exactly two repetition encodings of the three-reader form": true,
+      "permitted second passes yielding this shape": [
+        "A setting of one of the two untouched original readers"
+      ],
+      "example census start": 354,
+      "one minimum there as pairs of distinction IDs": [
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          7
+        ],
+        [
+          2,
+          10
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          8
+        ]
+      ]
+    },
+    {
+      "shape": 3,
+      "readers as unordered pairs of holder lists": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            4
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            3,
+            4
+          ]
+        ],
+        [
+          [
+            0,
+            4
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            1,
+            2
+          ],
+          [
+            3,
+            4
+          ]
+        ],
+        [
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            4
+          ]
+        ]
+      ],
+      "fewest strict readers": 5,
+      "selected closures": 16,
+      "knots holding a reader setting": 5,
+      "labelled minimum strict words": 216,
+      "closures with some minimum of this shape": 18,
+      "closures with every minimum of this shape": 16,
+      "distinct whole holdings among selected closures": 16,
+      "distinct whole holdings with selected marks": 16,
+      "outside distinction counts of selected closures": {
+        "1": 4,
+        "2": 12
+      },
+      "counts of unasked knots of selected closures": {
+        "1": 16
+      },
+      "after exactly one repetition encoding of the three-reader form": false,
+      "after exactly two repetition encodings of the three-reader form": false,
+      "permitted second passes yielding this shape": [],
+      "example census start": 6171,
+      "one minimum there as pairs of distinction IDs": [
+        [
+          0,
+          9
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          6,
+          8
+        ]
+      ]
+    },
+    {
+      "shape": 4,
+      "readers as unordered pairs of holder lists": [
+        [
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            4
+          ]
+        ],
+        [
+          [
+            0,
+            5
+          ],
+          [
+            1,
+            4
+          ]
+        ],
+        [
+          [
+            1,
+            2
+          ],
+          [
+            3,
+            5
+          ]
+        ],
+        [
+          [
+            2,
+            3
+          ],
+          [
+            4,
+            5
+          ]
+        ],
+        [
+          [
+            2,
+            5
+          ],
+          [
+            3,
+            4
+          ]
+        ]
+      ],
+      "fewest strict readers": 5,
+      "selected closures": 13,
+      "knots holding a reader setting": 6,
+      "labelled minimum strict words": 84,
+      "closures with some minimum of this shape": 13,
+      "closures with every minimum of this shape": 12,
+      "distinct whole holdings among selected closures": 13,
+      "distinct whole holdings with selected marks": 13,
+      "outside distinction counts of selected closures": {
+        "0": 1,
+        "1": 4,
+        "2": 8
+      },
+      "counts of unasked knots of selected closures": {
+        "0": 13
+      },
+      "after exactly one repetition encoding of the three-reader form": false,
+      "after exactly two repetition encodings of the three-reader form": true,
+      "permitted second passes yielding this shape": [
+        "One of the two copies made at the first doubling"
+      ],
+      "example census start": 5889,
+      "one minimum there as pairs of distinction IDs": [
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          6,
+          8
+        ],
+        [
+          7,
+          9
+        ]
+      ]
+    },
+    {
+      "shape": 5,
+      "readers as unordered pairs of holder lists": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            5
+          ]
+        ],
+        [
+          [
+            0,
+            3
+          ],
+          [
+            2,
+            5
+          ]
+        ],
+        [
+          [
+            1,
+            4
+          ],
+          [
+            3,
+            5
+          ]
+        ],
+        [
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            4
+          ]
+        ],
+        [
+          [
+            1,
+            5
+          ],
+          [
+            3,
+            4
+          ]
+        ],
+        [
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            5
+          ]
+        ]
+      ],
+      "fewest strict readers": 6,
+      "selected closures": 1,
+      "knots holding a reader setting": 6,
+      "labelled minimum strict words": 16,
+      "closures with some minimum of this shape": 1,
+      "closures with every minimum of this shape": 1,
+      "distinct whole holdings among selected closures": 1,
+      "distinct whole holdings with selected marks": 1,
+      "outside distinction counts of selected closures": {
+        "0": 1
+      },
+      "counts of unasked knots of selected closures": {
+        "0": 1
+      },
+      "after exactly one repetition encoding of the three-reader form": false,
+      "after exactly two repetition encodings of the three-reader form": false,
+      "permitted second passes yielding this shape": [],
+      "example census start": 4786,
+      "one minimum there as pairs of distinction IDs": [
+        [
+          0,
+          6
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          8,
+          10
+        ],
+        [
+          9,
+          11
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          7
+        ]
+      ]
+    },
+    {
+      "shape": 6,
+      "readers as unordered pairs of holder lists": [
+        [
+          [
+            0,
+            2
+          ],
+          [
+            3,
+            4
+          ]
+        ],
+        [
+          [
+            0,
+            5
+          ],
+          [
+            3,
+            4
+          ]
+        ],
+        [
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            5
+          ]
+        ],
+        [
+          [
+            1,
+            3
+          ],
+          [
+            4,
+            5
+          ]
+        ],
+        [
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            4
+          ]
+        ],
+        [
+          [
+            2,
+            3
+          ],
+          [
+            4,
+            5
+          ]
+        ]
+      ],
+      "fewest strict readers": 6,
+      "selected closures": 1,
+      "knots holding a reader setting": 6,
+      "labelled minimum strict words": 8,
+      "closures with some minimum of this shape": 1,
+      "closures with every minimum of this shape": 1,
+      "distinct whole holdings among selected closures": 1,
+      "distinct whole holdings with selected marks": 1,
+      "outside distinction counts of selected closures": {
+        "0": 1
+      },
+      "counts of unasked knots of selected closures": {
+        "0": 1
+      },
+      "after exactly one repetition encoding of the three-reader form": false,
+      "after exactly two repetition encodings of the three-reader form": false,
+      "permitted second passes yielding this shape": [],
+      "example census start": 6131,
+      "one minimum there as pairs of distinction IDs": [
+        [
+          0,
+          7
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          5,
+          10
+        ],
+        [
+          6,
+          11
+        ],
+        [
+          4,
+          9
+        ]
+      ]
+    },
+    {
+      "shape": 7,
+      "readers as unordered pairs of holder lists": [
+        [
+          [
+            0,
+            2
+          ],
+          [
+            5,
+            6
+          ]
+        ],
+        [
+          [
+            0,
+            4
+          ],
+          [
+            5,
+            6
+          ]
+        ],
+        [
+          [
+            1,
+            4
+          ],
+          [
+            3,
+            5
+          ]
+        ],
+        [
+          [
+            1,
+            6
+          ],
+          [
+            3,
+            5
+          ]
+        ],
+        [
+          [
+            2,
+            3
+          ],
+          [
+            4,
+            6
+          ]
+        ],
+        [
+          [
+            2,
+            6
+          ],
+          [
+            4,
+            5
+          ]
+        ]
+      ],
+      "fewest strict readers": 6,
+      "selected closures": 1,
+      "knots holding a reader setting": 7,
+      "labelled minimum strict words": 4,
+      "closures with some minimum of this shape": 1,
+      "closures with every minimum of this shape": 1,
+      "distinct whole holdings among selected closures": 1,
+      "distinct whole holdings with selected marks": 1,
+      "outside distinction counts of selected closures": {
+        "2": 1
+      },
+      "counts of unasked knots of selected closures": {
+        "1": 1
+      },
+      "after exactly one repetition encoding of the three-reader form": false,
+      "after exactly two repetition encodings of the three-reader form": false,
+      "permitted second passes yielding this shape": [],
+      "example census start": 4334,
+      "one minimum there as pairs of distinction IDs": [
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          10
+        ],
+        [
+          3,
+          11
+        ],
+        [
+          6,
+          8
+        ],
+        [
+          7,
+          9
+        ]
+      ]
+    },
+    {
+      "shape": 8,
+      "readers as unordered pairs of holder lists": [
+        [
+          [
+            0,
+            3
+          ],
+          [
+            2,
+            4
+          ]
+        ],
+        [
+          [
+            0,
+            6
+          ],
+          [
+            2,
+            4
+          ]
+        ],
+        [
+          [
+            1,
+            3
+          ],
+          [
+            5,
+            6
+          ]
+        ],
+        [
+          [
+            1,
+            4
+          ],
+          [
+            5,
+            6
+          ]
+        ],
+        [
+          [
+            2,
+            5
+          ],
+          [
+            3,
+            6
+          ]
+        ],
+        [
+          [
+            3,
+            5
+          ],
+          [
+            4,
+            6
+          ]
+        ]
+      ],
+      "fewest strict readers": 6,
+      "selected closures": 1,
+      "knots holding a reader setting": 7,
+      "labelled minimum strict words": 4,
+      "closures with some minimum of this shape": 1,
+      "closures with every minimum of this shape": 1,
+      "distinct whole holdings among selected closures": 1,
+      "distinct whole holdings with selected marks": 1,
+      "outside distinction counts of selected closures": {
+        "2": 1
+      },
+      "counts of unasked knots of selected closures": {
+        "1": 1
+      },
+      "after exactly one repetition encoding of the three-reader form": false,
+      "after exactly two repetition encodings of the three-reader form": false,
+      "permitted second passes yielding this shape": [],
+      "example census start": 4308,
+      "one minimum there as pairs of distinction IDs": [
+        [
+          0,
+          7
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          9
+        ],
+        [
+          3,
+          11
+        ],
+        [
+          5,
+          8
+        ],
+        [
+          6,
+          10
+        ]
+      ]
+    },
+    {
+      "shape": 9,
+      "readers as unordered pairs of holder lists": [
+        [
+          [
+            0,
+            3
+          ],
+          [
+            4,
+            6
+          ]
+        ],
+        [
+          [
+            0,
+            5
+          ],
+          [
+            4,
+            6
+          ]
+        ],
+        [
+          [
+            1,
+            3
+          ],
+          [
+            5,
+            6
+          ]
+        ],
+        [
+          [
+            1,
+            4
+          ],
+          [
+            5,
+            6
+          ]
+        ],
+        [
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            6
+          ]
+        ],
+        [
+          [
+            2,
+            5
+          ],
+          [
+            3,
+            6
+          ]
+        ]
+      ],
+      "fewest strict readers": 6,
+      "selected closures": 1,
+      "knots holding a reader setting": 7,
+      "labelled minimum strict words": 8,
+      "closures with some minimum of this shape": 1,
+      "closures with every minimum of this shape": 1,
+      "distinct whole holdings among selected closures": 1,
+      "distinct whole holdings with selected marks": 1,
+      "outside distinction counts of selected closures": {
+        "3": 1
+      },
+      "counts of unasked knots of selected closures": {
+        "1": 1
+      },
+      "after exactly one repetition encoding of the three-reader form": false,
+      "after exactly two repetition encodings of the three-reader form": false,
+      "permitted second passes yielding this shape": [],
+      "example census start": 81,
+      "one minimum there as pairs of distinction IDs": [
+        [
+          0,
+          9
+        ],
+        [
+          1,
+          11
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          3,
+          10
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          8
+        ]
+      ]
+    }
+  ],
+  "by census start": [
+    {
+      "start": 81,
+      "selected shape": 9,
+      "all minimum strict words by shape": {
+        "9": 8
+      }
+    },
+    {
+      "start": 354,
+      "selected shape": 2,
+      "all minimum strict words by shape": {
+        "2": 4
+      }
+    },
+    {
+      "start": 786,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 2
+      }
+    },
+    {
+      "start": 794,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 2
+      }
+    },
+    {
+      "start": 802,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 4
+      }
+    },
+    {
+      "start": 844,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 8
+      }
+    },
+    {
+      "start": 875,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 8
+      }
+    },
+    {
+      "start": 895,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 8
+      }
+    },
+    {
+      "start": 924,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 16
+      }
+    },
+    {
+      "start": 954,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 32
+      }
+    },
+    {
+      "start": 4308,
+      "selected shape": 8,
+      "all minimum strict words by shape": {
+        "8": 4
+      }
+    },
+    {
+      "start": 4334,
+      "selected shape": 7,
+      "all minimum strict words by shape": {
+        "7": 4
+      }
+    },
+    {
+      "start": 4364,
+      "selected shape": 2,
+      "all minimum strict words by shape": {
+        "2": 4
+      }
+    },
+    {
+      "start": 4385,
+      "selected shape": 2,
+      "all minimum strict words by shape": {
+        "2": 8
+      }
+    },
+    {
+      "start": 4454,
+      "selected shape": 2,
+      "all minimum strict words by shape": {
+        "2": 16
+      }
+    },
+    {
+      "start": 4489,
+      "selected shape": 2,
+      "all minimum strict words by shape": {
+        "2": 8
+      }
+    },
+    {
+      "start": 4511,
+      "selected shape": 2,
+      "all minimum strict words by shape": {
+        "2": 16
+      }
+    },
+    {
+      "start": 4532,
+      "selected shape": 2,
+      "all minimum strict words by shape": {
+        "2": 16
+      }
+    },
+    {
+      "start": 4561,
+      "selected shape": 2,
+      "all minimum strict words by shape": {
+        "2": 16
+      }
+    },
+    {
+      "start": 4572,
+      "selected shape": 2,
+      "all minimum strict words by shape": {
+        "2": 16
+      }
+    },
+    {
+      "start": 4786,
+      "selected shape": 5,
+      "all minimum strict words by shape": {
+        "5": 16
+      }
+    },
+    {
+      "start": 4915,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 2
+      }
+    },
+    {
+      "start": 4921,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 4
+      }
+    },
+    {
+      "start": 4929,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 2
+      }
+    },
+    {
+      "start": 4931,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 4
+      }
+    },
+    {
+      "start": 5532,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 2
+      }
+    },
+    {
+      "start": 5554,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 4
+      }
+    },
+    {
+      "start": 5580,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 4
+      }
+    },
+    {
+      "start": 5589,
+      "selected shape": 2,
+      "all minimum strict words by shape": {
+        "2": 4
+      }
+    },
+    {
+      "start": 5609,
+      "selected shape": 2,
+      "all minimum strict words by shape": {
+        "2": 8
+      }
+    },
+    {
+      "start": 5618,
+      "selected shape": 2,
+      "all minimum strict words by shape": {
+        "2": 8
+      }
+    },
+    {
+      "start": 5625,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 4
+      }
+    },
+    {
+      "start": 5642,
+      "selected shape": 2,
+      "all minimum strict words by shape": {
+        "2": 8
+      }
+    },
+    {
+      "start": 5664,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 2
+      }
+    },
+    {
+      "start": 5686,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 4
+      }
+    },
+    {
+      "start": 5700,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 2
+      }
+    },
+    {
+      "start": 5712,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 4
+      }
+    },
+    {
+      "start": 5726,
+      "selected shape": 2,
+      "all minimum strict words by shape": {
+        "2": 8
+      }
+    },
+    {
+      "start": 5733,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 4
+      }
+    },
+    {
+      "start": 5771,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 4
+      }
+    },
+    {
+      "start": 5782,
+      "selected shape": 2,
+      "all minimum strict words by shape": {
+        "2": 4
+      }
+    },
+    {
+      "start": 5784,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 4
+      }
+    },
+    {
+      "start": 5889,
+      "selected shape": 4,
+      "all minimum strict words by shape": {
+        "4": 2
+      }
+    },
+    {
+      "start": 5925,
+      "selected shape": 4,
+      "all minimum strict words by shape": {
+        "4": 8
+      }
+    },
+    {
+      "start": 6016,
+      "selected shape": 4,
+      "all minimum strict words by shape": {
+        "4": 4
+      }
+    },
+    {
+      "start": 6067,
+      "selected shape": 4,
+      "all minimum strict words by shape": {
+        "4": 4
+      }
+    },
+    {
+      "start": 6096,
+      "selected shape": 4,
+      "all minimum strict words by shape": {
+        "4": 16
+      }
+    },
+    {
+      "start": 6131,
+      "selected shape": 6,
+      "all minimum strict words by shape": {
+        "6": 8
+      }
+    },
+    {
+      "start": 6132,
+      "selected shape": 4,
+      "all minimum strict words by shape": {
+        "4": 8
+      }
+    },
+    {
+      "start": 6148,
+      "selected shape": 2,
+      "all minimum strict words by shape": {
+        "2": 4
+      }
+    },
+    {
+      "start": 6165,
+      "selected shape": 2,
+      "all minimum strict words by shape": {
+        "2": 8
+      }
+    },
+    {
+      "start": 6169,
+      "selected shape": 4,
+      "all minimum strict words by shape": {
+        "4": 8
+      }
+    },
+    {
+      "start": 6171,
+      "selected shape": 3,
+      "all minimum strict words by shape": {
+        "3": 8
+      }
+    },
+    {
+      "start": 6173,
+      "selected shape": 3,
+      "all minimum strict words by shape": {
+        "3": 8
+      }
+    },
+    {
+      "start": 6176,
+      "selected shape": 3,
+      "all minimum strict words by shape": {
+        "3": 8
+      }
+    },
+    {
+      "start": 6178,
+      "selected shape": 3,
+      "all minimum strict words by shape": {
+        "3": 8
+      }
+    },
+    {
+      "start": 6180,
+      "selected shape": 3,
+      "all minimum strict words by shape": {
+        "3": 8
+      }
+    },
+    {
+      "start": 6181,
+      "selected shape": 2,
+      "all minimum strict words by shape": {
+        "2": 8,
+        "3": 8
+      },
+      "one actual word of each shape": {
+        "3": [
+          [
+            0,
+            9
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            6,
+            8
+          ]
+        ],
+        "2": [
+          [
+            0,
+            9
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            10
+          ],
+          [
+            3,
+            11
+          ],
+          [
+            6,
+            7
+          ]
+        ]
+      }
+    },
+    {
+      "start": 6182,
+      "selected shape": 3,
+      "all minimum strict words by shape": {
+        "3": 8
+      }
+    },
+    {
+      "start": 6183,
+      "selected shape": 3,
+      "all minimum strict words by shape": {
+        "3": 8
+      }
+    },
+    {
+      "start": 6185,
+      "selected shape": 4,
+      "all minimum strict words by shape": {
+        "3": 8,
+        "4": 8
+      },
+      "one actual word of each shape": {
+        "3": [
+          [
+            0,
+            9
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            6,
+            8
+          ]
+        ],
+        "4": [
+          [
+            0,
+            9
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            7,
+            10
+          ],
+          [
+            8,
+            11
+          ]
+        ]
+      }
+    },
+    {
+      "start": 6187,
+      "selected shape": 3,
+      "all minimum strict words by shape": {
+        "3": 16
+      }
+    },
+    {
+      "start": 6188,
+      "selected shape": 3,
+      "all minimum strict words by shape": {
+        "3": 16
+      }
+    },
+    {
+      "start": 6189,
+      "selected shape": 3,
+      "all minimum strict words by shape": {
+        "3": 16
+      }
+    },
+    {
+      "start": 6190,
+      "selected shape": 3,
+      "all minimum strict words by shape": {
+        "3": 16
+      }
+    },
+    {
+      "start": 6222,
+      "selected shape": 4,
+      "all minimum strict words by shape": {
+        "4": 8
+      }
+    },
+    {
+      "start": 6232,
+      "selected shape": 2,
+      "all minimum strict words by shape": {
+        "2": 4
+      }
+    },
+    {
+      "start": 6233,
+      "selected shape": 2,
+      "all minimum strict words by shape": {
+        "2": 8
+      }
+    },
+    {
+      "start": 6241,
+      "selected shape": 3,
+      "all minimum strict words by shape": {
+        "3": 16
+      }
+    },
+    {
+      "start": 6242,
+      "selected shape": 3,
+      "all minimum strict words by shape": {
+        "3": 16
+      }
+    },
+    {
+      "start": 6243,
+      "selected shape": 3,
+      "all minimum strict words by shape": {
+        "3": 16
+      }
+    },
+    {
+      "start": 6244,
+      "selected shape": 3,
+      "all minimum strict words by shape": {
+        "3": 16
+      }
+    },
+    {
+      "start": 6245,
+      "selected shape": 3,
+      "all minimum strict words by shape": {
+        "3": 16
+      }
+    },
+    {
+      "start": 6249,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 2
+      }
+    },
+    {
+      "start": 6258,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 2
+      }
+    },
+    {
+      "start": 6266,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 2
+      }
+    },
+    {
+      "start": 6272,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 4
+      }
+    },
+    {
+      "start": 6274,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 4
+      }
+    },
+    {
+      "start": 6279,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 4
+      }
+    },
+    {
+      "start": 6282,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 6
+      }
+    },
+    {
+      "start": 6288,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 4
+      }
+    },
+    {
+      "start": 6289,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 4
+      }
+    },
+    {
+      "start": 6291,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 4
+      }
+    },
+    {
+      "start": 6294,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 4
+      }
+    },
+    {
+      "start": 6302,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 4
+      }
+    },
+    {
+      "start": 6308,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 8
+      }
+    },
+    {
+      "start": 6310,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 8
+      }
+    },
+    {
+      "start": 6313,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 10
+      }
+    },
+    {
+      "start": 6314,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 8
+      }
+    },
+    {
+      "start": 6315,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 8
+      }
+    },
+    {
+      "start": 6316,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 8
+      }
+    },
+    {
+      "start": 6318,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 8
+      }
+    },
+    {
+      "start": 6319,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 4
+      }
+    },
+    {
+      "start": 6328,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 4
+      }
+    },
+    {
+      "start": 6333,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 4
+      }
+    },
+    {
+      "start": 6340,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 8
+      }
+    },
+    {
+      "start": 6342,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 8
+      }
+    },
+    {
+      "start": 6345,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 8
+      }
+    },
+    {
+      "start": 6347,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 12
+      }
+    },
+    {
+      "start": 6349,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 8
+      }
+    },
+    {
+      "start": 6350,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 8
+      }
+    },
+    {
+      "start": 6351,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 8
+      }
+    },
+    {
+      "start": 6352,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 8
+      }
+    },
+    {
+      "start": 6354,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 8
+      }
+    },
+    {
+      "start": 6355,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 8
+      }
+    },
+    {
+      "start": 6356,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 8
+      }
+    },
+    {
+      "start": 6357,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 8
+      }
+    },
+    {
+      "start": 6358,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 8
+      }
+    },
+    {
+      "start": 6361,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 8
+      }
+    },
+    {
+      "start": 6363,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 8
+      }
+    },
+    {
+      "start": 6366,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 8
+      }
+    },
+    {
+      "start": 6368,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 12
+      }
+    },
+    {
+      "start": 6370,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 8
+      }
+    },
+    {
+      "start": 6371,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 8
+      }
+    },
+    {
+      "start": 6372,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 8
+      }
+    },
+    {
+      "start": 6373,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 8
+      }
+    },
+    {
+      "start": 6375,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 8
+      }
+    },
+    {
+      "start": 6376,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 8
+      }
+    },
+    {
+      "start": 6377,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 8
+      }
+    },
+    {
+      "start": 6378,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 8
+      }
+    },
+    {
+      "start": 6379,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 8
+      }
+    },
+    {
+      "start": 6382,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 16
+      }
+    },
+    {
+      "start": 6383,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 16
+      }
+    },
+    {
+      "start": 6384,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 16
+      }
+    },
+    {
+      "start": 6385,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 16
+      }
+    },
+    {
+      "start": 6386,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 16
+      }
+    },
+    {
+      "start": 6387,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 8
+      }
+    },
+    {
+      "start": 6390,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 8
+      }
+    },
+    {
+      "start": 6391,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 8
+      }
+    },
+    {
+      "start": 6393,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 16
+      }
+    },
+    {
+      "start": 6394,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 16
+      }
+    },
+    {
+      "start": 6395,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 16
+      }
+    },
+    {
+      "start": 6396,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 16
+      }
+    },
+    {
+      "start": 6397,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 16
+      }
+    },
+    {
+      "start": 6399,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 8
+      }
+    },
+    {
+      "start": 6403,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 8
+      }
+    },
+    {
+      "start": 6405,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 16
+      }
+    },
+    {
+      "start": 6406,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 16
+      }
+    },
+    {
+      "start": 6407,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 16
+      }
+    },
+    {
+      "start": 6408,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 16
+      }
+    },
+    {
+      "start": 6410,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 16
+      }
+    },
+    {
+      "start": 6411,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 16
+      }
+    },
+    {
+      "start": 6412,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 16
+      }
+    },
+    {
+      "start": 6413,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 16
+      }
+    },
+    {
+      "start": 6415,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 8
+      }
+    },
+    {
+      "start": 6418,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 8
+      }
+    },
+    {
+      "start": 6420,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 16
+      }
+    },
+    {
+      "start": 6421,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 16
+      }
+    },
+    {
+      "start": 6422,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 16
+      }
+    },
+    {
+      "start": 6423,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 16
+      }
+    },
+    {
+      "start": 6424,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 16
+      }
+    },
+    {
+      "start": 6426,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 16
+      }
+    },
+    {
+      "start": 6783,
+      "selected shape": 4,
+      "all minimum strict words by shape": {
+        "4": 2
+      }
+    },
+    {
+      "start": 6804,
+      "selected shape": 4,
+      "all minimum strict words by shape": {
+        "4": 4
+      }
+    },
+    {
+      "start": 6805,
+      "selected shape": 4,
+      "all minimum strict words by shape": {
+        "4": 8
+      }
+    },
+    {
+      "start": 6814,
+      "selected shape": 4,
+      "all minimum strict words by shape": {
+        "4": 4
+      }
+    },
+    {
+      "start": 6822,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 2
+      }
+    },
+    {
+      "start": 6824,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 2
+      }
+    },
+    {
+      "start": 6825,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 2
+      }
+    },
+    {
+      "start": 6829,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 4
+      }
+    },
+    {
+      "start": 6832,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 2
+      }
+    },
+    {
+      "start": 6833,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 2
+      }
+    },
+    {
+      "start": 6835,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 2
+      }
+    },
+    {
+      "start": 6842,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 2
+      }
+    },
+    {
+      "start": 6843,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 2
+      }
+    },
+    {
+      "start": 6845,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 2
+      }
+    },
+    {
+      "start": 6849,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 2
+      }
+    },
+    {
+      "start": 6858,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 4
+      }
+    },
+    {
+      "start": 6860,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 4
+      }
+    },
+    {
+      "start": 6861,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 4
+      }
+    },
+    {
+      "start": 6863,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 4
+      }
+    },
+    {
+      "start": 6864,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 4
+      }
+    },
+    {
+      "start": 6865,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 8
+      }
+    },
+    {
+      "start": 6867,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 4
+      }
+    },
+    {
+      "start": 6868,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 4
+      }
+    },
+    {
+      "start": 6869,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 4
+      }
+    },
+    {
+      "start": 6870,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 4
+      }
+    },
+    {
+      "start": 6872,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 4
+      }
+    },
+    {
+      "start": 6873,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 4
+      }
+    },
+    {
+      "start": 6874,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 4
+      }
+    },
+    {
+      "start": 6875,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 4
+      }
+    },
+    {
+      "start": 6876,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 4
+      }
+    },
+    {
+      "start": 6879,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 8
+      }
+    },
+    {
+      "start": 6880,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 8
+      }
+    },
+    {
+      "start": 6881,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 8
+      }
+    },
+    {
+      "start": 6882,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 8
+      }
+    },
+    {
+      "start": 6884,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 4
+      }
+    },
+    {
+      "start": 6886,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 4
+      }
+    },
+    {
+      "start": 6887,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 4
+      }
+    },
+    {
+      "start": 6889,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 4
+      }
+    },
+    {
+      "start": 6890,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 4
+      }
+    },
+    {
+      "start": 6891,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 6
+      }
+    },
+    {
+      "start": 6893,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 4
+      }
+    },
+    {
+      "start": 6894,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 4
+      }
+    },
+    {
+      "start": 6895,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 4
+      }
+    },
+    {
+      "start": 6896,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 4
+      }
+    },
+    {
+      "start": 6898,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 4
+      }
+    },
+    {
+      "start": 6899,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 4
+      }
+    },
+    {
+      "start": 6900,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 4
+      }
+    },
+    {
+      "start": 6901,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 4
+      }
+    },
+    {
+      "start": 6902,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 4
+      }
+    },
+    {
+      "start": 6905,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 8
+      }
+    },
+    {
+      "start": 6906,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 8
+      }
+    },
+    {
+      "start": 6907,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 8
+      }
+    },
+    {
+      "start": 6908,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 8
+      }
+    },
+    {
+      "start": 6909,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 8
+      }
+    },
+    {
+      "start": 6911,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 8
+      }
+    },
+    {
+      "start": 6912,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 8
+      }
+    },
+    {
+      "start": 6913,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 8
+      }
+    },
+    {
+      "start": 6914,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 8
+      }
+    },
+    {
+      "start": 6915,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 8
+      }
+    },
+    {
+      "start": 6918,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 8
+      }
+    },
+    {
+      "start": 6919,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 8
+      }
+    },
+    {
+      "start": 6920,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 8
+      }
+    },
+    {
+      "start": 6921,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 8
+      }
+    },
+    {
+      "start": 6924,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 8
+      }
+    },
+    {
+      "start": 6926,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 8
+      }
+    },
+    {
+      "start": 6927,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 8
+      }
+    },
+    {
+      "start": 6928,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 8
+      }
+    },
+    {
+      "start": 6929,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 12
+      }
+    },
+    {
+      "start": 6931,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 8
+      }
+    },
+    {
+      "start": 6932,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 8
+      }
+    },
+    {
+      "start": 6933,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 8
+      }
+    },
+    {
+      "start": 6934,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 8
+      }
+    },
+    {
+      "start": 6937,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 16
+      }
+    },
+    {
+      "start": 6938,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 16
+      }
+    },
+    {
+      "start": 6939,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 16
+      }
+    },
+    {
+      "start": 6941,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 16
+      }
+    },
+    {
+      "start": 6942,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 16
+      }
+    },
+    {
+      "start": 6943,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 16
+      }
+    },
+    {
+      "start": 6944,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 16
+      }
+    },
+    {
+      "start": 6945,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 16
+      }
+    },
+    {
+      "start": 6949,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 16
+      }
+    },
+    {
+      "start": 6950,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 16
+      }
+    },
+    {
+      "start": 6951,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 16
+      }
+    },
+    {
+      "start": 6955,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 4
+      }
+    },
+    {
+      "start": 6957,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 4
+      }
+    },
+    {
+      "start": 6958,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 4
+      }
+    },
+    {
+      "start": 6960,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 4
+      }
+    },
+    {
+      "start": 6961,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 8
+      }
+    },
+    {
+      "start": 6962,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 4
+      }
+    },
+    {
+      "start": 6963,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 4
+      }
+    },
+    {
+      "start": 6964,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 4
+      }
+    },
+    {
+      "start": 6967,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 8
+      }
+    },
+    {
+      "start": 6968,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 8
+      }
+    },
+    {
+      "start": 6969,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 8
+      }
+    },
+    {
+      "start": 6970,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 8
+      }
+    },
+    {
+      "start": 6971,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 8
+      }
+    },
+    {
+      "start": 6976,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 16
+      }
+    },
+    {
+      "start": 6977,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 16
+      }
+    },
+    {
+      "start": 6978,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 16
+      }
+    },
+    {
+      "start": 6979,
+      "selected shape": 1,
+      "all minimum strict words by shape": {
+        "1": 16
+      }
+    }
+  ]
+}

@@ -1,0 +1,263 @@
+{
+  "input": "rebuilt_inputs.jsonl, one row per positive birth start, eligible later whole start, finished type or fixture",
+  "conventions": "key is the zero-based census start or finished type index, or the fixture description. The listed knots determine the sign order. Pairs are unordered original distinction labels. Every active distinction appears in a failing pair. A reader may combine disjoint failing groups when no knot holds two of its distinctions. The number of readers is minimized over all odd words.",
+  "search": "Branch on leaving a distinction unused or assigning its whole reader, exhaustively testing subsets of the remaining distinctions with disjoint holders. An exact binary elimination relaxation discards infeasible branches. Strict groups have size two. The upper bound is the number of distinctions divided by two and rounded down. A smaller budget is tested until infeasible. Small-code checks enumerate only combinations of permitted local failure patterns, deduplicating equal pair sets.",
+  "weighting": {
+    "birth": "one vote per census start attaining odd with birth choices",
+    "whole": "one vote per later census start attaining odd with whole choices",
+    "type": "one vote per finished census type",
+    "fixture": "one vote per hand case, with the closed and grown ring of five distinct"
+  },
+  "by_population": {
+    "birth": {
+      "rows": 1177,
+      "split": {
+        "strict": 692,
+        "neither": 446,
+        "only_general": 39
+      },
+      "strict_minima": {
+        "3": 423,
+        "6": 5,
+        "5": 66,
+        "4": 198
+      },
+      "general_minima": {
+        "3": 433,
+        "6": 5,
+        "4": 242,
+        "5": 51
+      },
+      "general_fewer_than_strict": 25,
+      "largest_structural_reader_bound": 9,
+      "records_with_split_choice_counts": 386,
+      "positive_witnesses_checked": {
+        "strict": 692,
+        "general": 731
+      }
+    },
+    "whole": {
+      "rows": 96,
+      "split": {
+        "neither": 60,
+        "strict": 17,
+        "only_general": 19
+      },
+      "strict_minima": {
+        "6": 3,
+        "3": 10,
+        "5": 2,
+        "4": 2
+      },
+      "general_minima": {
+        "6": 2,
+        "3": 10,
+        "4": 21,
+        "5": 3
+      },
+      "general_fewer_than_strict": 2,
+      "largest_structural_reader_bound": 9,
+      "records_with_split_choice_counts": 0,
+      "positive_witnesses_checked": {
+        "strict": 17,
+        "general": 36
+      }
+    },
+    "type": {
+      "rows": 173,
+      "split": {
+        "strict": 115,
+        "neither": 28,
+        "only_general": 30
+      },
+      "strict_minima": {
+        "3": 109,
+        "5": 6
+      },
+      "general_minima": {
+        "3": 135,
+        "5": 9,
+        "6": 1
+      },
+      "general_fewer_than_strict": 3,
+      "largest_structural_reader_bound": 10,
+      "records_with_split_choice_counts": 11,
+      "positive_witnesses_checked": {
+        "strict": 115,
+        "general": 145
+      }
+    },
+    "fixture": {
+      "rows": 7,
+      "split": {
+        "strict": 3,
+        "neither": 3,
+        "only_general": 1
+      },
+      "strict_minima": {
+        "3": 1,
+        "5": 2
+      },
+      "general_minima": {
+        "3": 2,
+        "5": 2
+      },
+      "general_fewer_than_strict": 0,
+      "largest_structural_reader_bound": 5,
+      "records_with_split_choice_counts": 7,
+      "positive_witnesses_checked": {
+        "strict": 3,
+        "general": 4
+      }
+    }
+  },
+  "fields_compared": {
+    "birth": {
+      "strict": 1177,
+      "fewest strict readers": 1177,
+      "general": 1177,
+      "fewest readers": 1177,
+      "closing round": 1177,
+      "knots": 1177,
+      "largest knot": 1177,
+      "strict odd choices": 386,
+      "strict sizes": 386,
+      "odd choices with a split": 386,
+      "their group sizes": 386
+    },
+    "whole": {
+      "whole: strict": 96,
+      "whole: fewest strict readers": 96,
+      "whole: general": 96,
+      "closing round": 96,
+      "knots": 96,
+      "largest knot": 86
+    },
+    "type": {
+      "strict": 173,
+      "fewest strict readers": 173,
+      "general": 173,
+      "fewest readers": 173,
+      "knots": 173,
+      "largest knot": 173,
+      "strict odd choices": 11,
+      "strict sizes": 11,
+      "odd choices with a split": 11,
+      "their group sizes": 11
+    },
+    "fixture": {
+      "strict": 7,
+      "fewest strict readers": 7,
+      "general": 7,
+      "fewest readers": 7,
+      "closing round": 3,
+      "knots": 7,
+      "largest knot": 7,
+      "strict odd choices": 7,
+      "strict sizes": 7,
+      "odd choices with a split": 7,
+      "their group sizes": 7
+    }
+  },
+  "published_field_differences": [],
+  "birth_by_round": {
+    "1": {
+      "strict": 675,
+      "neither": 396,
+      "only_general": 20
+    },
+    "2": {
+      "neither": 49,
+      "strict": 17,
+      "only_general": 19
+    },
+    "3": {
+      "neither": 1
+    }
+  },
+  "birth_by_largest_knot": {
+    "3": {
+      "strict": 1,
+      "neither": 3
+    },
+    "4": {
+      "strict": 21,
+      "neither": 58
+    },
+    "5": {
+      "strict": 254,
+      "neither": 187,
+      "only_general": 22
+    },
+    "6": {
+      "strict": 326,
+      "only_general": 17,
+      "neither": 132
+    },
+    "7": {
+      "neither": 54,
+      "strict": 85
+    },
+    "8": {
+      "neither": 11,
+      "strict": 5
+    },
+    "9": {
+      "neither": 1
+    }
+  },
+  "later_birth_and_whole": {
+    "birth_rows": 86,
+    "matching_existence": 86,
+    "strict_minimum_differences": [],
+    "general_minimum_differences": [
+      289,
+      608
+    ],
+    "whole_with_no_odd_birth_choice": {
+      "neither": 10
+    },
+    "archived_comparison": "The archive gives whole strict minima and whole general existence. The comparison of general minima is additional.",
+    "changed_minima_rechecked_by_local_failure_patterns": [
+      {
+        "key": 289,
+        "birth": {
+          "minimum_readers": 6,
+          "split_words_by_minimum_readers": {
+            "6": 4
+          }
+        },
+        "whole": {
+          "minimum_readers": 5,
+          "split_words_by_minimum_readers": {
+            "5": 4,
+            "6": 4
+          }
+        }
+      },
+      {
+        "key": 608,
+        "birth": {
+          "minimum_readers": 6,
+          "split_words_by_minimum_readers": {
+            "6": 4
+          }
+        },
+        "whole": {
+          "minimum_readers": 4,
+          "split_words_by_minimum_readers": {
+            "4": 4,
+            "5": 2,
+            "6": 4
+          }
+        }
+      }
+    ]
+  },
+  "small_codes": {
+    "published_records": 403,
+    "added_hand_case": "The three-knot start also has an explicit hand row here. The study retained it among the birth rows.",
+    "unreported_minimum_layout_ties": "One minimum partition per odd word contributing to a split is used in the auxiliary reader-size shapes. The original comparison uses all distinct sizes of the forced failing groups."
+  },
+  "forced_pair_queries_checked_on_fixtures": 194
+}

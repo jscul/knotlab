@@ -1,0 +1,4543 @@
+{
+  "sample": "Four named grown closures and three choices on two named fixtures, selected for coverage.",
+  "basis convention": "Bit i is qubit i starting with the least significant bit. Divide signed unit amplitudes by the square root of the listed squared normalization divisor. All unlisted amplitudes are zero.",
+  "classical convention": "One fixed sign per distinction with a reader. Each knot is one question.",
+  "samples": {
+    "Four knots meeting once each (census index 17)": {
+      "knots in order": [
+        [
+          0,
+          1,
+          3
+        ],
+        [
+          0,
+          2,
+          4
+        ],
+        [
+          1,
+          2,
+          5
+        ],
+        [
+          3,
+          4,
+          5
+        ]
+      ],
+      "qubits in order (the failing pairs)": [
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "readers": [
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "distinctions outside readers": [],
+      "knots asking no reader": [],
+      "orientations": [
+        {
+          "X on the lower numbered distinction of each pair": true,
+          "orders with product minus identity": 24,
+          "one state per free knot": [
+            {
+              "free knot": 0,
+              "negative outside distinctions": [],
+              "reader product signs by knot": [
+                -1,
+                1,
+                1,
+                1
+              ],
+              "positive basis amplitudes": [
+                0,
+                5,
+                6
+              ],
+              "negative basis amplitudes": [
+                3
+              ],
+              "squared normalization divisor": 4,
+              "classical lists by number of failed questions": {
+                "1": 32,
+                "3": 32
+              }
+            },
+            {
+              "free knot": 1,
+              "negative outside distinctions": [],
+              "reader product signs by knot": [
+                1,
+                -1,
+                1,
+                1
+              ],
+              "positive basis amplitudes": [
+                0,
+                3,
+                6
+              ],
+              "negative basis amplitudes": [
+                5
+              ],
+              "squared normalization divisor": 4,
+              "classical lists by number of failed questions": {
+                "1": 32,
+                "3": 32
+              }
+            },
+            {
+              "free knot": 2,
+              "negative outside distinctions": [],
+              "reader product signs by knot": [
+                1,
+                1,
+                -1,
+                1
+              ],
+              "positive basis amplitudes": [
+                0,
+                3,
+                5
+              ],
+              "negative basis amplitudes": [
+                6
+              ],
+              "squared normalization divisor": 4,
+              "classical lists by number of failed questions": {
+                "1": 32,
+                "3": 32
+              }
+            },
+            {
+              "free knot": 3,
+              "negative outside distinctions": [],
+              "reader product signs by knot": [
+                1,
+                1,
+                1,
+                -1
+              ],
+              "positive basis amplitudes": [
+                1,
+                2,
+                4
+              ],
+              "negative basis amplitudes": [
+                7
+              ],
+              "squared normalization divisor": 4,
+              "classical lists by number of failed questions": {
+                "1": 32,
+                "3": 32
+              }
+            }
+          ]
+        },
+        {
+          "X on the lower numbered distinction of each pair": false,
+          "orders with product minus identity": 24,
+          "one state per free knot": [
+            {
+              "free knot": 0,
+              "negative outside distinctions": [],
+              "reader product signs by knot": [
+                -1,
+                1,
+                1,
+                1
+              ],
+              "positive basis amplitudes": [
+                0,
+                1,
+                2,
+                5,
+                6,
+                7
+              ],
+              "negative basis amplitudes": [
+                3,
+                4
+              ],
+              "squared normalization divisor": 8,
+              "classical lists by number of failed questions": {
+                "1": 32,
+                "3": 32
+              }
+            },
+            {
+              "free knot": 1,
+              "negative outside distinctions": [],
+              "reader product signs by knot": [
+                1,
+                -1,
+                1,
+                1
+              ],
+              "positive basis amplitudes": [
+                0,
+                1,
+                3,
+                4,
+                6,
+                7
+              ],
+              "negative basis amplitudes": [
+                2,
+                5
+              ],
+              "squared normalization divisor": 8,
+              "classical lists by number of failed questions": {
+                "1": 32,
+                "3": 32
+              }
+            },
+            {
+              "free knot": 2,
+              "negative outside distinctions": [],
+              "reader product signs by knot": [
+                1,
+                1,
+                -1,
+                1
+              ],
+              "positive basis amplitudes": [
+                0,
+                2,
+                3,
+                4,
+                5,
+                7
+              ],
+              "negative basis amplitudes": [
+                1,
+                6
+              ],
+              "squared normalization divisor": 8,
+              "classical lists by number of failed questions": {
+                "1": 32,
+                "3": 32
+              }
+            },
+            {
+              "free knot": 3,
+              "negative outside distinctions": [],
+              "reader product signs by knot": [
+                1,
+                1,
+                1,
+                -1
+              ],
+              "positive basis amplitudes": [
+                0,
+                1,
+                2,
+                4
+              ],
+              "negative basis amplitudes": [
+                3,
+                5,
+                6,
+                7
+              ],
+              "squared normalization divisor": 8,
+              "classical lists by number of failed questions": {
+                "1": 32,
+                "3": 32
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "Eight knots with a strict choice on four of them (census index 168)": {
+      "knots in order": [
+        [
+          0,
+          1,
+          2,
+          4
+        ],
+        [
+          0,
+          3,
+          5,
+          6
+        ],
+        [
+          1,
+          3,
+          7,
+          8
+        ],
+        [
+          2,
+          9,
+          10
+        ],
+        [
+          4,
+          5,
+          7,
+          11
+        ],
+        [
+          6,
+          9,
+          12
+        ],
+        [
+          8,
+          10,
+          13
+        ],
+        [
+          11,
+          12,
+          13
+        ]
+      ],
+      "qubits in order (the failing pairs)": [
+        [
+          0,
+          7
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "readers": [
+        [
+          0,
+          7
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "distinctions outside readers": [
+        2,
+        6,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "knots asking no reader": [
+        3,
+        5,
+        6,
+        7
+      ],
+      "orientations": [
+        {
+          "X on the lower numbered distinction of each pair": true,
+          "orders with product minus identity": 40320,
+          "one state per free knot": [
+            {
+              "free knot": 0,
+              "negative outside distinctions": [],
+              "reader product signs by knot": [
+                -1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "positive basis amplitudes": [
+                0,
+                5,
+                6
+              ],
+              "negative basis amplitudes": [
+                3
+              ],
+              "squared normalization divisor": 4,
+              "classical lists by number of failed questions": {
+                "1": 32,
+                "3": 32
+              }
+            },
+            {
+              "free knot": 1,
+              "negative outside distinctions": [],
+              "reader product signs by knot": [
+                1,
+                -1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "positive basis amplitudes": [
+                0,
+                3,
+                6
+              ],
+              "negative basis amplitudes": [
+                5
+              ],
+              "squared normalization divisor": 4,
+              "classical lists by number of failed questions": {
+                "1": 32,
+                "3": 32
+              }
+            },
+            {
+              "free knot": 2,
+              "negative outside distinctions": [],
+              "reader product signs by knot": [
+                1,
+                1,
+                -1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "positive basis amplitudes": [
+                0,
+                3,
+                5
+              ],
+              "negative basis amplitudes": [
+                6
+              ],
+              "squared normalization divisor": 4,
+              "classical lists by number of failed questions": {
+                "1": 32,
+                "3": 32
+              }
+            },
+            {
+              "free knot": 3,
+              "negative outside distinctions": [
+                2
+              ],
+              "reader product signs by knot": [
+                -1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "positive basis amplitudes": [
+                0,
+                5,
+                6
+              ],
+              "negative basis amplitudes": [
+                3
+              ],
+              "squared normalization divisor": 4,
+              "classical lists by number of failed questions": {
+                "1": 32,
+                "3": 32
+              }
+            },
+            {
+              "free knot": 4,
+              "negative outside distinctions": [],
+              "reader product signs by knot": [
+                1,
+                1,
+                1,
+                1,
+                -1,
+                1,
+                1,
+                1
+              ],
+              "positive basis amplitudes": [
+                1,
+                2,
+                4
+              ],
+              "negative basis amplitudes": [
+                7
+              ],
+              "squared normalization divisor": 4,
+              "classical lists by number of failed questions": {
+                "1": 32,
+                "3": 32
+              }
+            },
+            {
+              "free knot": 5,
+              "negative outside distinctions": [
+                6
+              ],
+              "reader product signs by knot": [
+                1,
+                -1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "positive basis amplitudes": [
+                0,
+                3,
+                6
+              ],
+              "negative basis amplitudes": [
+                5
+              ],
+              "squared normalization divisor": 4,
+              "classical lists by number of failed questions": {
+                "1": 32,
+                "3": 32
+              }
+            },
+            {
+              "free knot": 6,
+              "negative outside distinctions": [
+                8
+              ],
+              "reader product signs by knot": [
+                1,
+                1,
+                -1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "positive basis amplitudes": [
+                0,
+                3,
+                5
+              ],
+              "negative basis amplitudes": [
+                6
+              ],
+              "squared normalization divisor": 4,
+              "classical lists by number of failed questions": {
+                "1": 32,
+                "3": 32
+              }
+            },
+            {
+              "free knot": 7,
+              "negative outside distinctions": [
+                11
+              ],
+              "reader product signs by knot": [
+                1,
+                1,
+                1,
+                1,
+                -1,
+                1,
+                1,
+                1
+              ],
+              "positive basis amplitudes": [
+                1,
+                2,
+                4
+              ],
+              "negative basis amplitudes": [
+                7
+              ],
+              "squared normalization divisor": 4,
+              "classical lists by number of failed questions": {
+                "1": 32,
+                "3": 32
+              }
+            }
+          ]
+        },
+        {
+          "X on the lower numbered distinction of each pair": false,
+          "orders with product minus identity": 40320,
+          "one state per free knot": [
+            {
+              "free knot": 0,
+              "negative outside distinctions": [],
+              "reader product signs by knot": [
+                -1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "positive basis amplitudes": [
+                0,
+                1,
+                2,
+                5,
+                6,
+                7
+              ],
+              "negative basis amplitudes": [
+                3,
+                4
+              ],
+              "squared normalization divisor": 8,
+              "classical lists by number of failed questions": {
+                "1": 32,
+                "3": 32
+              }
+            },
+            {
+              "free knot": 1,
+              "negative outside distinctions": [],
+              "reader product signs by knot": [
+                1,
+                -1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "positive basis amplitudes": [
+                0,
+                1,
+                3,
+                4,
+                6,
+                7
+              ],
+              "negative basis amplitudes": [
+                2,
+                5
+              ],
+              "squared normalization divisor": 8,
+              "classical lists by number of failed questions": {
+                "1": 32,
+                "3": 32
+              }
+            },
+            {
+              "free knot": 2,
+              "negative outside distinctions": [],
+              "reader product signs by knot": [
+                1,
+                1,
+                -1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "positive basis amplitudes": [
+                0,
+                2,
+                3,
+                4,
+                5,
+                7
+              ],
+              "negative basis amplitudes": [
+                1,
+                6
+              ],
+              "squared normalization divisor": 8,
+              "classical lists by number of failed questions": {
+                "1": 32,
+                "3": 32
+              }
+            },
+            {
+              "free knot": 3,
+              "negative outside distinctions": [
+                2
+              ],
+              "reader product signs by knot": [
+                -1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "positive basis amplitudes": [
+                0,
+                1,
+                2,
+                5,
+                6,
+                7
+              ],
+              "negative basis amplitudes": [
+                3,
+                4
+              ],
+              "squared normalization divisor": 8,
+              "classical lists by number of failed questions": {
+                "1": 32,
+                "3": 32
+              }
+            },
+            {
+              "free knot": 4,
+              "negative outside distinctions": [],
+              "reader product signs by knot": [
+                1,
+                1,
+                1,
+                1,
+                -1,
+                1,
+                1,
+                1
+              ],
+              "positive basis amplitudes": [
+                0,
+                1,
+                2,
+                4
+              ],
+              "negative basis amplitudes": [
+                3,
+                5,
+                6,
+                7
+              ],
+              "squared normalization divisor": 8,
+              "classical lists by number of failed questions": {
+                "1": 32,
+                "3": 32
+              }
+            },
+            {
+              "free knot": 5,
+              "negative outside distinctions": [
+                6
+              ],
+              "reader product signs by knot": [
+                1,
+                -1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "positive basis amplitudes": [
+                0,
+                1,
+                3,
+                4,
+                6,
+                7
+              ],
+              "negative basis amplitudes": [
+                2,
+                5
+              ],
+              "squared normalization divisor": 8,
+              "classical lists by number of failed questions": {
+                "1": 32,
+                "3": 32
+              }
+            },
+            {
+              "free knot": 6,
+              "negative outside distinctions": [
+                8
+              ],
+              "reader product signs by knot": [
+                1,
+                1,
+                -1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "positive basis amplitudes": [
+                0,
+                2,
+                3,
+                4,
+                5,
+                7
+              ],
+              "negative basis amplitudes": [
+                1,
+                6
+              ],
+              "squared normalization divisor": 8,
+              "classical lists by number of failed questions": {
+                "1": 32,
+                "3": 32
+              }
+            },
+            {
+              "free knot": 7,
+              "negative outside distinctions": [
+                11
+              ],
+              "reader product signs by knot": [
+                1,
+                1,
+                1,
+                1,
+                -1,
+                1,
+                1,
+                1
+              ],
+              "positive basis amplitudes": [
+                0,
+                1,
+                2,
+                4
+              ],
+              "negative basis amplitudes": [
+                3,
+                5,
+                6,
+                7
+              ],
+              "squared normalization divisor": 8,
+              "classical lists by number of failed questions": {
+                "1": 32,
+                "3": 32
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "Six knots with three settings at each of three readers (census index 5127)": {
+      "knots in order": [
+        [
+          0,
+          1,
+          2,
+          3,
+          8
+        ],
+        [
+          0,
+          4,
+          5
+        ],
+        [
+          1,
+          4,
+          6,
+          7
+        ],
+        [
+          2,
+          5,
+          9
+        ],
+        [
+          3,
+          6,
+          7,
+          10
+        ],
+        [
+          8,
+          9,
+          10
+        ]
+      ],
+      "qubits in order (the failing pairs)": [
+        [
+          0,
+          6
+        ],
+        [
+          0,
+          9
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          10
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          5,
+          8
+        ]
+      ],
+      "readers": [
+        [
+          0,
+          6,
+          9
+        ],
+        [
+          2,
+          4,
+          10
+        ],
+        [
+          5,
+          7,
+          8
+        ]
+      ],
+      "distinctions outside readers": [
+        1,
+        3
+      ],
+      "knots asking no reader": [],
+      "orientations": [
+        {
+          "X on the lower numbered distinction of each pair": true,
+          "orders with product minus identity": 720,
+          "one state per free knot": [
+            {
+              "free knot": 0,
+              "negative outside distinctions": [],
+              "reader product signs by knot": [
+                -1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "positive basis amplitudes": [
+                0,
+                51,
+                60
+              ],
+              "negative basis amplitudes": [
+                15
+              ],
+              "squared normalization divisor": 4,
+              "classical lists by number of failed questions": {
+                "1": 96,
+                "3": 320,
+                "5": 96
+              }
+            },
+            {
+              "free knot": 1,
+              "negative outside distinctions": [],
+              "reader product signs by knot": [
+                1,
+                -1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "positive basis amplitudes": [
+                0,
+                15,
+                60
+              ],
+              "negative basis amplitudes": [
+                51
+              ],
+              "squared normalization divisor": 4,
+              "classical lists by number of failed questions": {
+                "1": 96,
+                "3": 320,
+                "5": 96
+              }
+            },
+            {
+              "free knot": 2,
+              "negative outside distinctions": [],
+              "reader product signs by knot": [
+                1,
+                1,
+                -1,
+                1,
+                1,
+                1
+              ],
+              "positive basis amplitudes": [
+                4,
+                11,
+                56
+              ],
+              "negative basis amplitudes": [
+                55
+              ],
+              "squared normalization divisor": 4,
+              "classical lists by number of failed questions": {
+                "1": 96,
+                "3": 320,
+                "5": 96
+              }
+            },
+            {
+              "free knot": 3,
+              "negative outside distinctions": [],
+              "reader product signs by knot": [
+                1,
+                1,
+                1,
+                -1,
+                1,
+                1
+              ],
+              "positive basis amplitudes": [
+                0,
+                15,
+                51
+              ],
+              "negative basis amplitudes": [
+                60
+              ],
+              "squared normalization divisor": 4,
+              "classical lists by number of failed questions": {
+                "1": 96,
+                "3": 320,
+                "5": 96
+              }
+            },
+            {
+              "free knot": 4,
+              "negative outside distinctions": [],
+              "reader product signs by knot": [
+                1,
+                1,
+                1,
+                1,
+                -1,
+                1
+              ],
+              "positive basis amplitudes": [
+                5,
+                10,
+                57
+              ],
+              "negative basis amplitudes": [
+                54
+              ],
+              "squared normalization divisor": 4,
+              "classical lists by number of failed questions": {
+                "1": 96,
+                "3": 320,
+                "5": 96
+              }
+            },
+            {
+              "free knot": 5,
+              "negative outside distinctions": [],
+              "reader product signs by knot": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                -1
+              ],
+              "positive basis amplitudes": [
+                2,
+                13,
+                49
+              ],
+              "negative basis amplitudes": [
+                62
+              ],
+              "squared normalization divisor": 4,
+              "classical lists by number of failed questions": {
+                "1": 96,
+                "3": 320,
+                "5": 96
+              }
+            }
+          ]
+        },
+        {
+          "X on the lower numbered distinction of each pair": false,
+          "orders with product minus identity": 720,
+          "one state per free knot": [
+            {
+              "free knot": 0,
+              "negative outside distinctions": [],
+              "reader product signs by knot": [
+                -1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "positive basis amplitudes": [
+                0,
+                2,
+                4,
+                8,
+                12,
+                14,
+                17,
+                21,
+                23,
+                25,
+                27,
+                29,
+                34,
+                36,
+                38,
+                40,
+                42,
+                46,
+                49,
+                51,
+                55,
+                59,
+                61,
+                63
+              ],
+              "negative basis amplitudes": [
+                6,
+                10,
+                19,
+                31,
+                32,
+                44,
+                53,
+                57
+              ],
+              "squared normalization divisor": 32,
+              "classical lists by number of failed questions": {
+                "1": 96,
+                "3": 320,
+                "5": 96
+              }
+            },
+            {
+              "free knot": 1,
+              "negative outside distinctions": [],
+              "reader product signs by knot": [
+                1,
+                -1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "positive basis amplitudes": [
+                0,
+                2,
+                6,
+                10,
+                12,
+                14,
+                19,
+                21,
+                23,
+                25,
+                27,
+                31,
+                32,
+                36,
+                38,
+                40,
+                42,
+                44,
+                49,
+                51,
+                53,
+                57,
+                61,
+                63
+              ],
+              "negative basis amplitudes": [
+                4,
+                8,
+                17,
+                29,
+                34,
+                46,
+                55,
+                59
+              ],
+              "squared normalization divisor": 32,
+              "classical lists by number of failed questions": {
+                "1": 96,
+                "3": 320,
+                "5": 96
+              }
+            },
+            {
+              "free knot": 2,
+              "negative outside distinctions": [],
+              "reader product signs by knot": [
+                1,
+                1,
+                -1,
+                1,
+                1,
+                1
+              ],
+              "positive basis amplitudes": [
+                0,
+                2,
+                4,
+                10,
+                19,
+                25,
+                27,
+                29,
+                32,
+                40,
+                42,
+                46,
+                49,
+                51,
+                55,
+                57
+              ],
+              "negative basis amplitudes": [
+                6,
+                8,
+                12,
+                14,
+                17,
+                21,
+                23,
+                31,
+                34,
+                36,
+                38,
+                44,
+                53,
+                59,
+                61,
+                63
+              ],
+              "squared normalization divisor": 32,
+              "classical lists by number of failed questions": {
+                "1": 96,
+                "3": 320,
+                "5": 96
+              }
+            },
+            {
+              "free knot": 3,
+              "negative outside distinctions": [],
+              "reader product signs by knot": [
+                1,
+                1,
+                1,
+                -1,
+                1,
+                1
+              ],
+              "positive basis amplitudes": [
+                0,
+                4,
+                6,
+                8,
+                10,
+                12,
+                17,
+                19,
+                21,
+                25,
+                29,
+                31,
+                32,
+                34,
+                38,
+                42,
+                44,
+                46,
+                51,
+                53,
+                55,
+                57,
+                59,
+                63
+              ],
+              "negative basis amplitudes": [
+                2,
+                14,
+                23,
+                27,
+                36,
+                40,
+                49,
+                61
+              ],
+              "squared normalization divisor": 32,
+              "classical lists by number of failed questions": {
+                "1": 96,
+                "3": 320,
+                "5": 96
+              }
+            },
+            {
+              "free knot": 4,
+              "negative outside distinctions": [],
+              "reader product signs by knot": [
+                1,
+                1,
+                1,
+                1,
+                -1,
+                1
+              ],
+              "positive basis amplitudes": [
+                0,
+                2,
+                4,
+                10,
+                17,
+                21,
+                23,
+                31,
+                32,
+                40,
+                42,
+                46,
+                53,
+                59,
+                61,
+                63
+              ],
+              "negative basis amplitudes": [
+                6,
+                8,
+                12,
+                14,
+                19,
+                25,
+                27,
+                29,
+                34,
+                36,
+                38,
+                44,
+                49,
+                51,
+                55,
+                57
+              ],
+              "squared normalization divisor": 32,
+              "classical lists by number of failed questions": {
+                "1": 96,
+                "3": 320,
+                "5": 96
+              }
+            },
+            {
+              "free knot": 5,
+              "negative outside distinctions": [],
+              "reader product signs by knot": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                -1
+              ],
+              "positive basis amplitudes": [
+                0,
+                2,
+                4,
+                8,
+                12,
+                14,
+                17,
+                21,
+                23,
+                25,
+                27,
+                29,
+                32,
+                44,
+                53,
+                57
+              ],
+              "negative basis amplitudes": [
+                6,
+                10,
+                19,
+                31,
+                34,
+                36,
+                38,
+                40,
+                42,
+                46,
+                49,
+                51,
+                55,
+                59,
+                61,
+                63
+              ],
+              "squared normalization divisor": 32,
+              "classical lists by number of failed questions": {
+                "1": 96,
+                "3": 320,
+                "5": 96
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "Six knots with reader sizes two, two, three and two (census index 5484)": {
+      "knots in order": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        [
+          0,
+          5,
+          6
+        ],
+        [
+          1,
+          5,
+          8
+        ],
+        [
+          2,
+          7,
+          9
+        ],
+        [
+          3,
+          4,
+          6,
+          7
+        ],
+        [
+          8,
+          9
+        ]
+      ],
+      "qubits in order (the failing pairs)": [
+        [
+          0,
+          7
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          3,
+          9
+        ],
+        [
+          4,
+          8
+        ]
+      ],
+      "readers": [
+        [
+          0,
+          7
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          5,
+          9
+        ],
+        [
+          4,
+          8
+        ]
+      ],
+      "distinctions outside readers": [
+        1
+      ],
+      "knots asking no reader": [],
+      "orientations": [
+        {
+          "X on the lower numbered distinction of each pair": true,
+          "orders with product minus identity": 720,
+          "one state per free knot": [
+            {
+              "free knot": 0,
+              "negative outside distinctions": [],
+              "reader product signs by knot": [
+                -1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "positive basis amplitudes": [
+                0,
+                1,
+                2,
+                28
+              ],
+              "negative basis amplitudes": [
+                3,
+                29,
+                30,
+                31
+              ],
+              "squared normalization divisor": 8,
+              "classical lists by number of failed questions": {
+                "1": 96,
+                "3": 320,
+                "5": 96
+              }
+            },
+            {
+              "free knot": 1,
+              "negative outside distinctions": [],
+              "reader product signs by knot": [
+                1,
+                -1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "positive basis amplitudes": [
+                0,
+                2,
+                3,
+                28,
+                29,
+                31
+              ],
+              "negative basis amplitudes": [
+                1,
+                30
+              ],
+              "squared normalization divisor": 8,
+              "classical lists by number of failed questions": {
+                "1": 96,
+                "3": 320,
+                "5": 96
+              }
+            },
+            {
+              "free knot": 2,
+              "negative outside distinctions": [],
+              "reader product signs by knot": [
+                1,
+                1,
+                -1,
+                1,
+                1,
+                1
+              ],
+              "positive basis amplitudes": [
+                4,
+                6,
+                7,
+                24,
+                25,
+                27
+              ],
+              "negative basis amplitudes": [
+                5,
+                26
+              ],
+              "squared normalization divisor": 8,
+              "classical lists by number of failed questions": {
+                "1": 96,
+                "3": 320,
+                "5": 96
+              }
+            },
+            {
+              "free knot": 3,
+              "negative outside distinctions": [],
+              "reader product signs by knot": [
+                1,
+                1,
+                1,
+                -1,
+                1,
+                1
+              ],
+              "positive basis amplitudes": [
+                0,
+                1,
+                3,
+                28,
+                30,
+                31
+              ],
+              "negative basis amplitudes": [
+                2,
+                29
+              ],
+              "squared normalization divisor": 8,
+              "classical lists by number of failed questions": {
+                "1": 96,
+                "3": 320,
+                "5": 96
+              }
+            },
+            {
+              "free knot": 4,
+              "negative outside distinctions": [],
+              "reader product signs by knot": [
+                1,
+                1,
+                1,
+                1,
+                -1,
+                1
+              ],
+              "positive basis amplitudes": [
+                0,
+                1,
+                2,
+                29,
+                30,
+                31
+              ],
+              "negative basis amplitudes": [
+                3,
+                28
+              ],
+              "squared normalization divisor": 8,
+              "classical lists by number of failed questions": {
+                "1": 96,
+                "3": 320,
+                "5": 96
+              }
+            },
+            {
+              "free knot": 5,
+              "negative outside distinctions": [],
+              "reader product signs by knot": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                -1
+              ],
+              "positive basis amplitudes": [
+                8,
+                9,
+                11,
+                20,
+                22,
+                23
+              ],
+              "negative basis amplitudes": [
+                10,
+                21
+              ],
+              "squared normalization divisor": 8,
+              "classical lists by number of failed questions": {
+                "1": 96,
+                "3": 320,
+                "5": 96
+              }
+            }
+          ]
+        },
+        {
+          "X on the lower numbered distinction of each pair": false,
+          "orders with product minus identity": 720,
+          "one state per free knot": [
+            {
+              "free knot": 0,
+              "negative outside distinctions": [],
+              "reader product signs by knot": [
+                -1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "positive basis amplitudes": [
+                1,
+                2,
+                4,
+                8,
+                13,
+                14,
+                16,
+                21,
+                22,
+                25,
+                26,
+                28
+              ],
+              "negative basis amplitudes": [
+                7,
+                11,
+                19,
+                31
+              ],
+              "squared normalization divisor": 16,
+              "classical lists by number of failed questions": {
+                "1": 96,
+                "3": 320,
+                "5": 96
+              }
+            },
+            {
+              "free knot": 1,
+              "negative outside distinctions": [],
+              "reader product signs by knot": [
+                1,
+                -1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "positive basis amplitudes": [
+                0,
+                3,
+                5,
+                9,
+                12,
+                15,
+                17,
+                20,
+                23,
+                24,
+                27,
+                29
+              ],
+              "negative basis amplitudes": [
+                6,
+                10,
+                18,
+                30
+              ],
+              "squared normalization divisor": 16,
+              "classical lists by number of failed questions": {
+                "1": 96,
+                "3": 320,
+                "5": 96
+              }
+            },
+            {
+              "free knot": 2,
+              "negative outside distinctions": [],
+              "reader product signs by knot": [
+                1,
+                1,
+                -1,
+                1,
+                1,
+                1
+              ],
+              "positive basis amplitudes": [
+                0,
+                3,
+                6,
+                9,
+                17,
+                24,
+                27,
+                30
+              ],
+              "negative basis amplitudes": [
+                5,
+                10,
+                12,
+                15,
+                18,
+                20,
+                23,
+                29
+              ],
+              "squared normalization divisor": 16,
+              "classical lists by number of failed questions": {
+                "1": 96,
+                "3": 320,
+                "5": 96
+              }
+            },
+            {
+              "free knot": 3,
+              "negative outside distinctions": [],
+              "reader product signs by knot": [
+                1,
+                1,
+                1,
+                -1,
+                1,
+                1
+              ],
+              "positive basis amplitudes": [
+                0,
+                3,
+                6,
+                10,
+                12,
+                15,
+                18,
+                20,
+                23,
+                24,
+                27,
+                30
+              ],
+              "negative basis amplitudes": [
+                5,
+                9,
+                17,
+                29
+              ],
+              "squared normalization divisor": 16,
+              "classical lists by number of failed questions": {
+                "1": 96,
+                "3": 320,
+                "5": 96
+              }
+            },
+            {
+              "free knot": 4,
+              "negative outside distinctions": [],
+              "reader product signs by knot": [
+                1,
+                1,
+                1,
+                1,
+                -1,
+                1
+              ],
+              "positive basis amplitudes": [
+                0,
+                5,
+                6,
+                9,
+                10,
+                12,
+                17,
+                18,
+                20,
+                24,
+                29,
+                30
+              ],
+              "negative basis amplitudes": [
+                3,
+                15,
+                23,
+                27
+              ],
+              "squared normalization divisor": 16,
+              "classical lists by number of failed questions": {
+                "1": 96,
+                "3": 320,
+                "5": 96
+              }
+            },
+            {
+              "free knot": 5,
+              "negative outside distinctions": [],
+              "reader product signs by knot": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                -1
+              ],
+              "positive basis amplitudes": [
+                0,
+                3,
+                6,
+                9,
+                18,
+                20,
+                23,
+                29
+              ],
+              "negative basis amplitudes": [
+                5,
+                10,
+                12,
+                15,
+                17,
+                24,
+                27,
+                30
+              ],
+              "squared normalization divisor": 16,
+              "classical lists by number of failed questions": {
+                "1": 96,
+                "3": 320,
+                "5": 96
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "One knot meeting all five knots of a ring": {
+      "knots in order": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        [
+          0,
+          5,
+          9
+        ],
+        [
+          1,
+          5,
+          6
+        ],
+        [
+          2,
+          6,
+          7
+        ],
+        [
+          3,
+          7,
+          8
+        ],
+        [
+          4,
+          8,
+          9
+        ]
+      ],
+      "qubits in order (the failing pairs)": [
+        [
+          0,
+          7
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          2,
+          9
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          6
+        ]
+      ],
+      "readers": [
+        [
+          0,
+          7
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          2,
+          9
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          6
+        ]
+      ],
+      "distinctions outside readers": [],
+      "knots asking no reader": [],
+      "orientations": [
+        {
+          "X on the lower numbered distinction of each pair": true,
+          "orders with product minus identity": 720,
+          "one state per free knot": [
+            {
+              "free knot": 0,
+              "negative outside distinctions": [],
+              "reader product signs by knot": [
+                -1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "positive basis amplitudes": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                6,
+                8,
+                11,
+                12,
+                13,
+                16,
+                17,
+                21,
+                22,
+                24,
+                26
+              ],
+              "negative basis amplitudes": [
+                5,
+                7,
+                9,
+                10,
+                14,
+                15,
+                18,
+                19,
+                20,
+                23,
+                25,
+                27,
+                28,
+                29,
+                30,
+                31
+              ],
+              "squared normalization divisor": 32,
+              "classical lists by number of failed questions": {
+                "1": 192,
+                "3": 640,
+                "5": 192
+              }
+            },
+            {
+              "free knot": 1,
+              "negative outside distinctions": [],
+              "reader product signs by knot": [
+                1,
+                -1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "positive basis amplitudes": [
+                0,
+                2,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                12,
+                15,
+                16,
+                19,
+                22,
+                23,
+                24,
+                25,
+                26,
+                27,
+                29,
+                31
+              ],
+              "negative basis amplitudes": [
+                1,
+                3,
+                10,
+                11,
+                13,
+                14,
+                17,
+                18,
+                20,
+                21,
+                28,
+                30
+              ],
+              "squared normalization divisor": 32,
+              "classical lists by number of failed questions": {
+                "1": 192,
+                "3": 640,
+                "5": 192
+              }
+            },
+            {
+              "free knot": 2,
+              "negative outside distinctions": [],
+              "reader product signs by knot": [
+                1,
+                1,
+                -1,
+                1,
+                1,
+                1
+              ],
+              "positive basis amplitudes": [
+                0,
+                1,
+                4,
+                7,
+                8,
+                10,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                21,
+                23,
+                24,
+                27,
+                30,
+                31
+              ],
+              "negative basis amplitudes": [
+                2,
+                3,
+                5,
+                6,
+                9,
+                11,
+                20,
+                22,
+                25,
+                26,
+                28,
+                29
+              ],
+              "squared normalization divisor": 32,
+              "classical lists by number of failed questions": {
+                "1": 192,
+                "3": 640,
+                "5": 192
+              }
+            },
+            {
+              "free knot": 3,
+              "negative outside distinctions": [],
+              "reader product signs by knot": [
+                1,
+                1,
+                1,
+                -1,
+                1,
+                1
+              ],
+              "positive basis amplitudes": [
+                0,
+                1,
+                2,
+                3,
+                5,
+                7,
+                8,
+                11,
+                14,
+                15,
+                16,
+                17,
+                20,
+                23,
+                24,
+                26,
+                28,
+                29,
+                30,
+                31
+              ],
+              "negative basis amplitudes": [
+                4,
+                6,
+                9,
+                10,
+                12,
+                13,
+                18,
+                19,
+                21,
+                22,
+                25,
+                27
+              ],
+              "squared normalization divisor": 32,
+              "classical lists by number of failed questions": {
+                "1": 192,
+                "3": 640,
+                "5": 192
+              }
+            },
+            {
+              "free knot": 4,
+              "negative outside distinctions": [],
+              "reader product signs by knot": [
+                1,
+                1,
+                1,
+                1,
+                -1,
+                1
+              ],
+              "positive basis amplitudes": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                6,
+                9,
+                10,
+                14,
+                15,
+                16,
+                17,
+                21,
+                22,
+                25,
+                27,
+                28,
+                29,
+                30,
+                31
+              ],
+              "negative basis amplitudes": [
+                5,
+                7,
+                8,
+                11,
+                12,
+                13,
+                18,
+                19,
+                20,
+                23,
+                24,
+                26
+              ],
+              "squared normalization divisor": 32,
+              "classical lists by number of failed questions": {
+                "1": 192,
+                "3": 640,
+                "5": 192
+              }
+            },
+            {
+              "free knot": 5,
+              "negative outside distinctions": [],
+              "reader product signs by knot": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                -1
+              ],
+              "positive basis amplitudes": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                6,
+                8,
+                11,
+                12,
+                13,
+                18,
+                19,
+                20,
+                23,
+                25,
+                27,
+                28,
+                29,
+                30,
+                31
+              ],
+              "negative basis amplitudes": [
+                5,
+                7,
+                9,
+                10,
+                14,
+                15,
+                16,
+                17,
+                21,
+                22,
+                24,
+                26
+              ],
+              "squared normalization divisor": 32,
+              "classical lists by number of failed questions": {
+                "1": 192,
+                "3": 640,
+                "5": 192
+              }
+            }
+          ]
+        },
+        {
+          "X on the lower numbered distinction of each pair": false,
+          "orders with product minus identity": 720,
+          "one state per free knot": [
+            {
+              "free knot": 0,
+              "negative outside distinctions": [],
+              "reader product signs by knot": [
+                -1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "positive basis amplitudes": [
+                1,
+                2,
+                4,
+                7,
+                8,
+                14,
+                16,
+                19,
+                25,
+                28
+              ],
+              "negative basis amplitudes": [
+                11,
+                13,
+                21,
+                22,
+                26,
+                31
+              ],
+              "squared normalization divisor": 16,
+              "classical lists by number of failed questions": {
+                "1": 192,
+                "3": 640,
+                "5": 192
+              }
+            },
+            {
+              "free knot": 1,
+              "negative outside distinctions": [],
+              "reader product signs by knot": [
+                1,
+                -1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "positive basis amplitudes": [
+                0,
+                3,
+                5,
+                6,
+                9,
+                15,
+                17,
+                18,
+                24,
+                29
+              ],
+              "negative basis amplitudes": [
+                10,
+                12,
+                20,
+                23,
+                27,
+                30
+              ],
+              "squared normalization divisor": 16,
+              "classical lists by number of failed questions": {
+                "1": 192,
+                "3": 640,
+                "5": 192
+              }
+            },
+            {
+              "free knot": 2,
+              "negative outside distinctions": [],
+              "reader product signs by knot": [
+                1,
+                1,
+                -1,
+                1,
+                1,
+                1
+              ],
+              "positive basis amplitudes": [
+                0,
+                3,
+                5,
+                6,
+                10,
+                12,
+                17,
+                18,
+                27,
+                30
+              ],
+              "negative basis amplitudes": [
+                9,
+                15,
+                20,
+                23,
+                24,
+                29
+              ],
+              "squared normalization divisor": 16,
+              "classical lists by number of failed questions": {
+                "1": 192,
+                "3": 640,
+                "5": 192
+              }
+            },
+            {
+              "free knot": 3,
+              "negative outside distinctions": [],
+              "reader product signs by knot": [
+                1,
+                1,
+                1,
+                -1,
+                1,
+                1
+              ],
+              "positive basis amplitudes": [
+                0,
+                3,
+                5,
+                6,
+                10,
+                12,
+                20,
+                23,
+                24,
+                29
+              ],
+              "negative basis amplitudes": [
+                9,
+                15,
+                17,
+                18,
+                27,
+                30
+              ],
+              "squared normalization divisor": 16,
+              "classical lists by number of failed questions": {
+                "1": 192,
+                "3": 640,
+                "5": 192
+              }
+            },
+            {
+              "free knot": 4,
+              "negative outside distinctions": [],
+              "reader product signs by knot": [
+                1,
+                1,
+                1,
+                1,
+                -1,
+                1
+              ],
+              "positive basis amplitudes": [
+                0,
+                6,
+                9,
+                10,
+                12,
+                15,
+                17,
+                20,
+                24,
+                27
+              ],
+              "negative basis amplitudes": [
+                3,
+                5,
+                18,
+                23,
+                29,
+                30
+              ],
+              "squared normalization divisor": 16,
+              "classical lists by number of failed questions": {
+                "1": 192,
+                "3": 640,
+                "5": 192
+              }
+            },
+            {
+              "free knot": 5,
+              "negative outside distinctions": [],
+              "reader product signs by knot": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                -1
+              ],
+              "positive basis amplitudes": [
+                0,
+                3,
+                9,
+                12,
+                17,
+                18,
+                20,
+                23,
+                24,
+                30
+              ],
+              "negative basis amplitudes": [
+                5,
+                6,
+                10,
+                15,
+                27,
+                29
+              ],
+              "squared normalization divisor": 16,
+              "classical lists by number of failed questions": {
+                "1": 192,
+                "3": 640,
+                "5": 192
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "Two joined rings of three, failures centered on the first ring": {
+      "knots in order": [
+        [
+          0,
+          2,
+          6
+        ],
+        [
+          0,
+          1,
+          7
+        ],
+        [
+          1,
+          2,
+          8
+        ],
+        [
+          3,
+          5,
+          6
+        ],
+        [
+          3,
+          4,
+          7
+        ],
+        [
+          4,
+          5,
+          8
+        ]
+      ],
+      "qubits in order (the failing pairs)": [
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          7
+        ]
+      ],
+      "readers": [
+        [
+          0,
+          3,
+          8
+        ],
+        [
+          1,
+          4,
+          6
+        ],
+        [
+          2,
+          5,
+          7
+        ]
+      ],
+      "distinctions outside readers": [],
+      "knots asking no reader": [],
+      "orientations": [
+        {
+          "X on the lower numbered distinction of each pair": true,
+          "orders with product minus identity": 720,
+          "one state per free knot": [
+            {
+              "free knot": 0,
+              "negative outside distinctions": [],
+              "reader product signs by knot": [
+                -1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "positive basis amplitudes": [
+                0,
+                15,
+                60
+              ],
+              "negative basis amplitudes": [
+                51
+              ],
+              "squared normalization divisor": 4,
+              "classical lists by number of failed questions": {
+                "1": 96,
+                "3": 320,
+                "5": 96
+              }
+            },
+            {
+              "free knot": 1,
+              "negative outside distinctions": [],
+              "reader product signs by knot": [
+                1,
+                -1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "positive basis amplitudes": [
+                0,
+                51,
+                60
+              ],
+              "negative basis amplitudes": [
+                15
+              ],
+              "squared normalization divisor": 4,
+              "classical lists by number of failed questions": {
+                "1": 96,
+                "3": 320,
+                "5": 96
+              }
+            },
+            {
+              "free knot": 2,
+              "negative outside distinctions": [],
+              "reader product signs by knot": [
+                1,
+                1,
+                -1,
+                1,
+                1,
+                1
+              ],
+              "positive basis amplitudes": [
+                0,
+                15,
+                51
+              ],
+              "negative basis amplitudes": [
+                60
+              ],
+              "squared normalization divisor": 4,
+              "classical lists by number of failed questions": {
+                "1": 96,
+                "3": 320,
+                "5": 96
+              }
+            },
+            {
+              "free knot": 3,
+              "negative outside distinctions": [],
+              "reader product signs by knot": [
+                1,
+                1,
+                1,
+                -1,
+                1,
+                1
+              ],
+              "positive basis amplitudes": [
+                7,
+                8,
+                52
+              ],
+              "negative basis amplitudes": [
+                59
+              ],
+              "squared normalization divisor": 4,
+              "classical lists by number of failed questions": {
+                "1": 96,
+                "3": 320,
+                "5": 96
+              }
+            },
+            {
+              "free knot": 4,
+              "negative outside distinctions": [],
+              "reader product signs by knot": [
+                1,
+                1,
+                1,
+                1,
+                -1,
+                1
+              ],
+              "positive basis amplitudes": [
+                6,
+                9,
+                53
+              ],
+              "negative basis amplitudes": [
+                58
+              ],
+              "squared normalization divisor": 4,
+              "classical lists by number of failed questions": {
+                "1": 96,
+                "3": 320,
+                "5": 96
+              }
+            },
+            {
+              "free knot": 5,
+              "negative outside distinctions": [],
+              "reader product signs by knot": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                -1
+              ],
+              "positive basis amplitudes": [
+                2,
+                13,
+                49
+              ],
+              "negative basis amplitudes": [
+                62
+              ],
+              "squared normalization divisor": 4,
+              "classical lists by number of failed questions": {
+                "1": 96,
+                "3": 320,
+                "5": 96
+              }
+            }
+          ]
+        },
+        {
+          "X on the lower numbered distinction of each pair": false,
+          "orders with product minus identity": 720,
+          "one state per free knot": [
+            {
+              "free knot": 0,
+              "negative outside distinctions": [],
+              "reader product signs by knot": [
+                -1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "positive basis amplitudes": [
+                0,
+                2,
+                5,
+                10,
+                13,
+                15,
+                19,
+                20,
+                22,
+                25,
+                27,
+                28,
+                32,
+                37,
+                39,
+                40,
+                42,
+                47,
+                49,
+                51,
+                54,
+                57,
+                60,
+                62
+              ],
+              "negative basis amplitudes": [
+                7,
+                8,
+                17,
+                30,
+                34,
+                45,
+                52,
+                59
+              ],
+              "squared normalization divisor": 32,
+              "classical lists by number of failed questions": {
+                "1": 96,
+                "3": 320,
+                "5": 96
+              }
+            },
+            {
+              "free knot": 1,
+              "negative outside distinctions": [],
+              "reader product signs by knot": [
+                1,
+                -1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "positive basis amplitudes": [
+                0,
+                2,
+                7,
+                8,
+                13,
+                15,
+                17,
+                20,
+                22,
+                25,
+                27,
+                30,
+                34,
+                37,
+                39,
+                40,
+                42,
+                45,
+                49,
+                51,
+                52,
+                59,
+                60,
+                62
+              ],
+              "negative basis amplitudes": [
+                5,
+                10,
+                19,
+                28,
+                32,
+                47,
+                54,
+                57
+              ],
+              "squared normalization divisor": 32,
+              "classical lists by number of failed questions": {
+                "1": 96,
+                "3": 320,
+                "5": 96
+              }
+            },
+            {
+              "free knot": 2,
+              "negative outside distinctions": [],
+              "reader product signs by knot": [
+                1,
+                1,
+                -1,
+                1,
+                1,
+                1
+              ],
+              "positive basis amplitudes": [
+                0,
+                5,
+                7,
+                8,
+                10,
+                15,
+                17,
+                19,
+                22,
+                25,
+                28,
+                30,
+                32,
+                34,
+                37,
+                42,
+                45,
+                47,
+                51,
+                52,
+                54,
+                57,
+                59,
+                60
+              ],
+              "negative basis amplitudes": [
+                2,
+                13,
+                20,
+                27,
+                39,
+                40,
+                49,
+                62
+              ],
+              "squared normalization divisor": 32,
+              "classical lists by number of failed questions": {
+                "1": 96,
+                "3": 320,
+                "5": 96
+              }
+            },
+            {
+              "free knot": 3,
+              "negative outside distinctions": [],
+              "reader product signs by knot": [
+                1,
+                1,
+                1,
+                -1,
+                1,
+                1
+              ],
+              "positive basis amplitudes": [
+                0,
+                2,
+                5,
+                8,
+                19,
+                20,
+                22,
+                30,
+                32,
+                37,
+                39,
+                45,
+                49,
+                51,
+                54,
+                59
+              ],
+              "negative basis amplitudes": [
+                7,
+                10,
+                13,
+                15,
+                17,
+                25,
+                27,
+                28,
+                34,
+                40,
+                42,
+                47,
+                52,
+                57,
+                60,
+                62
+              ],
+              "squared normalization divisor": 32,
+              "classical lists by number of failed questions": {
+                "1": 96,
+                "3": 320,
+                "5": 96
+              }
+            },
+            {
+              "free knot": 4,
+              "negative outside distinctions": [],
+              "reader product signs by knot": [
+                1,
+                1,
+                1,
+                1,
+                -1,
+                1
+              ],
+              "positive basis amplitudes": [
+                0,
+                2,
+                7,
+                8,
+                13,
+                15,
+                17,
+                20,
+                22,
+                25,
+                27,
+                30,
+                32,
+                47,
+                54,
+                57
+              ],
+              "negative basis amplitudes": [
+                5,
+                10,
+                19,
+                28,
+                34,
+                37,
+                39,
+                40,
+                42,
+                45,
+                49,
+                51,
+                52,
+                59,
+                60,
+                62
+              ],
+              "squared normalization divisor": 32,
+              "classical lists by number of failed questions": {
+                "1": 96,
+                "3": 320,
+                "5": 96
+              }
+            },
+            {
+              "free knot": 5,
+              "negative outside distinctions": [],
+              "reader product signs by knot": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                -1
+              ],
+              "positive basis amplitudes": [
+                0,
+                2,
+                5,
+                8,
+                17,
+                25,
+                27,
+                28,
+                32,
+                37,
+                39,
+                45,
+                52,
+                57,
+                60,
+                62
+              ],
+              "negative basis amplitudes": [
+                7,
+                10,
+                13,
+                15,
+                19,
+                20,
+                22,
+                30,
+                34,
+                40,
+                42,
+                47,
+                49,
+                51,
+                54,
+                59
+              ],
+              "squared normalization divisor": 32,
+              "classical lists by number of failed questions": {
+                "1": 96,
+                "3": 320,
+                "5": 96
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "Two joined rings of three, failures centered on the second ring": {
+      "knots in order": [
+        [
+          0,
+          2,
+          6
+        ],
+        [
+          0,
+          1,
+          7
+        ],
+        [
+          1,
+          2,
+          8
+        ],
+        [
+          3,
+          5,
+          6
+        ],
+        [
+          3,
+          4,
+          7
+        ],
+        [
+          4,
+          5,
+          8
+        ]
+      ],
+      "qubits in order (the failing pairs)": [
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          8
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          7
+        ]
+      ],
+      "readers": [
+        [
+          0,
+          3,
+          8
+        ],
+        [
+          1,
+          4,
+          6
+        ],
+        [
+          2,
+          5,
+          7
+        ]
+      ],
+      "distinctions outside readers": [],
+      "knots asking no reader": [],
+      "orientations": [
+        {
+          "X on the lower numbered distinction of each pair": true,
+          "orders with product minus identity": 720,
+          "one state per free knot": [
+            {
+              "free knot": 0,
+              "negative outside distinctions": [],
+              "reader product signs by knot": [
+                -1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "positive basis amplitudes": [
+                8,
+                11,
+                16,
+                19,
+                21,
+                22,
+                32,
+                38,
+                59,
+                62
+              ],
+              "negative basis amplitudes": [
+                13,
+                14,
+                35,
+                37,
+                56,
+                61
+              ],
+              "squared normalization divisor": 16,
+              "classical lists by number of failed questions": {
+                "1": 96,
+                "3": 320,
+                "5": 96
+              }
+            },
+            {
+              "free knot": 1,
+              "negative outside distinctions": [],
+              "reader product signs by knot": [
+                1,
+                -1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "positive basis amplitudes": [
+                8,
+                13,
+                16,
+                22,
+                32,
+                35,
+                37,
+                38,
+                61,
+                62
+              ],
+              "negative basis amplitudes": [
+                11,
+                14,
+                19,
+                21,
+                56,
+                59
+              ],
+              "squared normalization divisor": 16,
+              "classical lists by number of failed questions": {
+                "1": 96,
+                "3": 320,
+                "5": 96
+              }
+            },
+            {
+              "free knot": 2,
+              "negative outside distinctions": [],
+              "reader product signs by knot": [
+                1,
+                1,
+                -1,
+                1,
+                1,
+                1
+              ],
+              "positive basis amplitudes": [
+                8,
+                11,
+                13,
+                14,
+                16,
+                19,
+                32,
+                37,
+                59,
+                61
+              ],
+              "negative basis amplitudes": [
+                21,
+                22,
+                35,
+                38,
+                56,
+                62
+              ],
+              "squared normalization divisor": 16,
+              "classical lists by number of failed questions": {
+                "1": 96,
+                "3": 320,
+                "5": 96
+              }
+            },
+            {
+              "free knot": 3,
+              "negative outside distinctions": [],
+              "reader product signs by knot": [
+                1,
+                1,
+                1,
+                -1,
+                1,
+                1
+              ],
+              "positive basis amplitudes": [
+                0,
+                3,
+                5,
+                6,
+                24,
+                27,
+                43,
+                46,
+                48,
+                54
+              ],
+              "negative basis amplitudes": [
+                29,
+                30,
+                40,
+                45,
+                51,
+                53
+              ],
+              "squared normalization divisor": 16,
+              "classical lists by number of failed questions": {
+                "1": 96,
+                "3": 320,
+                "5": 96
+              }
+            },
+            {
+              "free knot": 4,
+              "negative outside distinctions": [],
+              "reader product signs by knot": [
+                1,
+                1,
+                1,
+                1,
+                -1,
+                1
+              ],
+              "positive basis amplitudes": [
+                0,
+                3,
+                5,
+                6,
+                29,
+                30,
+                40,
+                45,
+                48,
+                54
+              ],
+              "negative basis amplitudes": [
+                24,
+                27,
+                43,
+                46,
+                51,
+                53
+              ],
+              "squared normalization divisor": 16,
+              "classical lists by number of failed questions": {
+                "1": 96,
+                "3": 320,
+                "5": 96
+              }
+            },
+            {
+              "free knot": 5,
+              "negative outside distinctions": [],
+              "reader product signs by knot": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                -1
+              ],
+              "positive basis amplitudes": [
+                0,
+                3,
+                5,
+                6,
+                24,
+                27,
+                40,
+                45,
+                51,
+                53
+              ],
+              "negative basis amplitudes": [
+                29,
+                30,
+                43,
+                46,
+                48,
+                54
+              ],
+              "squared normalization divisor": 16,
+              "classical lists by number of failed questions": {
+                "1": 96,
+                "3": 320,
+                "5": 96
+              }
+            }
+          ]
+        },
+        {
+          "X on the lower numbered distinction of each pair": false,
+          "orders with product minus identity": 720,
+          "one state per free knot": [
+            {
+              "free knot": 0,
+              "negative outside distinctions": [],
+              "reader product signs by knot": [
+                -1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "positive basis amplitudes": [
+                0,
+                3,
+                6,
+                8,
+                13,
+                14,
+                19,
+                21,
+                22,
+                30,
+                32,
+                35,
+                37,
+                40,
+                51,
+                61
+              ],
+              "negative basis amplitudes": [
+                5,
+                11,
+                16,
+                24,
+                27,
+                29,
+                38,
+                43,
+                45,
+                46,
+                48,
+                53,
+                54,
+                56,
+                59,
+                62
+              ],
+              "squared normalization divisor": 32,
+              "classical lists by number of failed questions": {
+                "1": 96,
+                "3": 320,
+                "5": 96
+              }
+            },
+            {
+              "free knot": 1,
+              "negative outside distinctions": [],
+              "reader product signs by knot": [
+                1,
+                -1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "positive basis amplitudes": [
+                0,
+                5,
+                6,
+                8,
+                11,
+                14,
+                16,
+                19,
+                21,
+                24,
+                35,
+                37,
+                38,
+                46,
+                53,
+                59
+              ],
+              "negative basis amplitudes": [
+                3,
+                13,
+                22,
+                27,
+                29,
+                30,
+                32,
+                40,
+                43,
+                45,
+                48,
+                51,
+                54,
+                56,
+                61,
+                62
+              ],
+              "squared normalization divisor": 32,
+              "classical lists by number of failed questions": {
+                "1": 96,
+                "3": 320,
+                "5": 96
+              }
+            },
+            {
+              "free knot": 2,
+              "negative outside distinctions": [],
+              "reader product signs by knot": [
+                1,
+                1,
+                -1,
+                1,
+                1,
+                1
+              ],
+              "positive basis amplitudes": [
+                0,
+                3,
+                5,
+                11,
+                13,
+                14,
+                16,
+                21,
+                22,
+                29,
+                32,
+                35,
+                38,
+                43,
+                48,
+                62
+              ],
+              "negative basis amplitudes": [
+                6,
+                8,
+                19,
+                24,
+                27,
+                30,
+                37,
+                40,
+                45,
+                46,
+                51,
+                53,
+                54,
+                56,
+                59,
+                61
+              ],
+              "squared normalization divisor": 32,
+              "classical lists by number of failed questions": {
+                "1": 96,
+                "3": 320,
+                "5": 96
+              }
+            },
+            {
+              "free knot": 3,
+              "negative outside distinctions": [],
+              "reader product signs by knot": [
+                1,
+                1,
+                1,
+                -1,
+                1,
+                1
+              ],
+              "positive basis amplitudes": [
+                0,
+                3,
+                6,
+                8,
+                13,
+                14,
+                16,
+                24,
+                27,
+                29,
+                32,
+                35,
+                37,
+                40,
+                48,
+                53,
+                54,
+                56,
+                59,
+                62
+              ],
+              "negative basis amplitudes": [
+                5,
+                11,
+                19,
+                21,
+                22,
+                30,
+                38,
+                43,
+                45,
+                46,
+                51,
+                61
+              ],
+              "squared normalization divisor": 32,
+              "classical lists by number of failed questions": {
+                "1": 96,
+                "3": 320,
+                "5": 96
+              }
+            },
+            {
+              "free knot": 4,
+              "negative outside distinctions": [],
+              "reader product signs by knot": [
+                1,
+                1,
+                1,
+                1,
+                -1,
+                1
+              ],
+              "positive basis amplitudes": [
+                0,
+                5,
+                6,
+                8,
+                11,
+                14,
+                16,
+                19,
+                21,
+                24,
+                32,
+                40,
+                43,
+                45,
+                48,
+                51,
+                54,
+                56,
+                61,
+                62
+              ],
+              "negative basis amplitudes": [
+                3,
+                13,
+                22,
+                27,
+                29,
+                30,
+                35,
+                37,
+                38,
+                46,
+                53,
+                59
+              ],
+              "squared normalization divisor": 32,
+              "classical lists by number of failed questions": {
+                "1": 96,
+                "3": 320,
+                "5": 96
+              }
+            },
+            {
+              "free knot": 5,
+              "negative outside distinctions": [],
+              "reader product signs by knot": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                -1
+              ],
+              "positive basis amplitudes": [
+                0,
+                3,
+                5,
+                8,
+                16,
+                21,
+                22,
+                24,
+                27,
+                30,
+                32,
+                35,
+                38,
+                40,
+                45,
+                46,
+                48,
+                56,
+                59,
+                61
+              ],
+              "negative basis amplitudes": [
+                6,
+                11,
+                13,
+                14,
+                19,
+                29,
+                37,
+                43,
+                51,
+                53,
+                54,
+                62
+              ],
+              "squared normalization divisor": 32,
+              "classical lists by number of failed questions": {
+                "1": 96,
+                "3": 320,
+                "5": 96
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "hand fixture details": {
+    "Two rings of three joined knot to knot": {
+      "knots": [
+        [
+          0,
+          2,
+          6
+        ],
+        [
+          0,
+          1,
+          7
+        ],
+        [
+          1,
+          2,
+          8
+        ],
+        [
+          3,
+          5,
+          6
+        ],
+        [
+          3,
+          4,
+          7
+        ],
+        [
+          4,
+          5,
+          8
+        ]
+      ],
+      "commuting choices by sign bit": {
+        "0": 256,
+        "1": 256
+      },
+      "choices permitting readers (includes empty choice)": [
+        {
+          "odd": false,
+          "failing pairs": [],
+          "groups": []
+        },
+        {
+          "odd": true,
+          "failing pairs": [
+            [
+              0,
+              3
+            ],
+            [
+              0,
+              8
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              1,
+              6
+            ],
+            [
+              2,
+              5
+            ],
+            [
+              2,
+              7
+            ]
+          ],
+          "groups": [
+            [
+              0,
+              3,
+              8
+            ],
+            [
+              1,
+              4,
+              6
+            ],
+            [
+              2,
+              5,
+              7
+            ]
+          ]
+        },
+        {
+          "odd": true,
+          "failing pairs": [
+            [
+              0,
+              3
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              2,
+              5
+            ],
+            [
+              3,
+              8
+            ],
+            [
+              4,
+              6
+            ],
+            [
+              5,
+              7
+            ]
+          ],
+          "groups": [
+            [
+              0,
+              3,
+              8
+            ],
+            [
+              1,
+              4,
+              6
+            ],
+            [
+              2,
+              5,
+              7
+            ]
+          ]
+        },
+        {
+          "odd": false,
+          "failing pairs": [
+            [
+              0,
+              8
+            ],
+            [
+              1,
+              6
+            ],
+            [
+              2,
+              7
+            ],
+            [
+              3,
+              8
+            ],
+            [
+              4,
+              6
+            ],
+            [
+              5,
+              7
+            ]
+          ],
+          "groups": [
+            [
+              0,
+              3,
+              8
+            ],
+            [
+              1,
+              4,
+              6
+            ],
+            [
+              2,
+              5,
+              7
+            ]
+          ]
+        }
+      ]
+    },
+    "Three knots each meeting each of three others": {
+      "knots": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          3,
+          4,
+          5
+        ],
+        [
+          6,
+          7,
+          8
+        ],
+        [
+          0,
+          3,
+          6
+        ],
+        [
+          1,
+          4,
+          7
+        ],
+        [
+          2,
+          5,
+          8
+        ]
+      ],
+      "commuting choices by sign bit": {
+        "0": 256,
+        "1": 256
+      },
+      "choices permitting readers (includes empty choice)": [
+        {
+          "odd": false,
+          "failing pairs": [],
+          "groups": []
+        },
+        {
+          "odd": false,
+          "failing pairs": [
+            [
+              0,
+              5
+            ],
+            [
+              0,
+              7
+            ],
+            [
+              1,
+              8
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              8
+            ],
+            [
+              4,
+              6
+            ]
+          ],
+          "groups": [
+            [
+              0,
+              5,
+              7
+            ],
+            [
+              1,
+              3,
+              8
+            ],
+            [
+              2,
+              4,
+              6
+            ]
+          ]
+        },
+        {
+          "odd": false,
+          "failing pairs": [
+            [
+              0,
+              8
+            ],
+            [
+              1,
+              5
+            ],
+            [
+              1,
+              6
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              3,
+              7
+            ],
+            [
+              4,
+              8
+            ]
+          ],
+          "groups": [
+            [
+              0,
+              4,
+              8
+            ],
+            [
+              1,
+              5,
+              6
+            ],
+            [
+              2,
+              3,
+              7
+            ]
+          ]
+        },
+        {
+          "odd": false,
+          "failing pairs": [
+            [
+              0,
+              4
+            ],
+            [
+              0,
+              8
+            ],
+            [
+              1,
+              5
+            ],
+            [
+              2,
+              7
+            ],
+            [
+              3,
+              7
+            ],
+            [
+              5,
+              6
+            ]
+          ],
+          "groups": [
+            [
+              0,
+              4,
+              8
+            ],
+            [
+              1,
+              5,
+              6
+            ],
+            [
+              2,
+              3,
+              7
+            ]
+          ]
+        },
+        {
+          "odd": false,
+          "failing pairs": [
+            [
+              0,
+              4
+            ],
+            [
+              1,
+              6
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              7
+            ],
+            [
+              4,
+              8
+            ],
+            [
+              5,
+              6
+            ]
+          ],
+          "groups": [
+            [
+              0,
+              4,
+              8
+            ],
+            [
+              1,
+              5,
+              6
+            ],
+            [
+              2,
+              3,
+              7
+            ]
+          ]
+        },
+        {
+          "odd": false,
+          "failing pairs": [
+            [
+              0,
+              7
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              2,
+              6
+            ],
+            [
+              3,
+              8
+            ],
+            [
+              5,
+              7
+            ]
+          ],
+          "groups": [
+            [
+              0,
+              5,
+              7
+            ],
+            [
+              1,
+              3,
+              8
+            ],
+            [
+              2,
+              4,
+              6
+            ]
+          ]
+        },
+        {
+          "odd": false,
+          "failing pairs": [
+            [
+              0,
+              5
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              1,
+              8
+            ],
+            [
+              2,
+              6
+            ],
+            [
+              4,
+              6
+            ],
+            [
+              5,
+              7
+            ]
+          ],
+          "groups": [
+            [
+              0,
+              5,
+              7
+            ],
+            [
+              1,
+              3,
+              8
+            ],
+            [
+              2,
+              4,
+              6
+            ]
+          ]
+        }
+      ]
+    },
+    "Five knots obtained by closing two loose distinctions": {
+      "knots": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          3,
+          4
+        ],
+        [
+          1,
+          3,
+          5
+        ],
+        [
+          2,
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ]
+      ],
+      "commuting choices by sign bit": {
+        "0": 4,
+        "1": 4
+      },
+      "choices permitting readers (includes empty choice)": [
+        {
+          "odd": false,
+          "failing pairs": [],
+          "groups": []
+        }
+      ],
+      "witness against a split for each odd choice": [
+        {
+          "failing pairs": [
+            [
+              0,
+              5
+            ],
+            [
+              0,
+              6
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              2,
+              3
+            ]
+          ],
+          "knot and its distinctions in one group": [
+            4,
+            [
+              5,
+              6
+            ]
+          ]
+        },
+        {
+          "failing pairs": [
+            [
+              0,
+              5
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              1,
+              6
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              3,
+              6
+            ]
+          ],
+          "knot and its distinctions in one group": [
+            0,
+            [
+              1,
+              2
+            ]
+          ]
+        },
+        {
+          "failing pairs": [
+            [
+              0,
+              6
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              5
+            ],
+            [
+              4,
+              5
+            ]
+          ],
+          "knot and its distinctions in one group": [
+            0,
+            [
+              1,
+              2
+            ]
+          ]
+        },
+        {
+          "failing pairs": [
+            [
+              1,
+              4
+            ],
+            [
+              1,
+              6
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              5
+            ],
+            [
+              3,
+              6
+            ],
+            [
+              4,
+              5
+            ]
+          ],
+          "knot and its distinctions in one group": [
+            0,
+            [
+              1,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    "A common knot and a bare ring, no other meetings": [
+      {
+        "ring knots": 3,
+        "reader assignments checked": 1,
+        "odd choices with a split": 1,
+        "strict odd choices": 1,
+        "first feasible assignment": [
+          2,
+          0,
+          1
+        ]
+      },
+      {
+        "ring knots": 4,
+        "reader assignments checked": 2,
+        "odd choices with a split": 0,
+        "strict odd choices": 0,
+        "first feasible assignment": null
+      },
+      {
+        "ring knots": 5,
+        "reader assignments checked": 68,
+        "odd choices with a split": 1,
+        "strict odd choices": 1,
+        "first feasible assignment": [
+          3,
+          4,
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "ring knots": 6,
+        "reader assignments checked": 1144,
+        "odd choices with a split": 0,
+        "strict odd choices": 0,
+        "first feasible assignment": null
+      },
+      {
+        "ring knots": 7,
+        "reader assignments checked": 22776,
+        "odd choices with a split": 1,
+        "strict odd choices": 1,
+        "first feasible assignment": [
+          4,
+          5,
+          6,
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "ring knots": 8,
+        "reader assignments checked": 504342,
+        "odd choices with a split": 0,
+        "strict odd choices": 0,
+        "first feasible assignment": null
+      }
+    ]
+  }
+}

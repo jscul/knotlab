@@ -1,0 +1,34 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "EVENTUAL-R-20261126-001",
+    "FOUR-READINGS-20261120-001",
+    "NO-WHOLE-STATE-20261126-001",
+    "TOY-PHASE-20261127-001"
+  ],
+  "dependency_text": "The whole-structure result and code (NO-WHOLE-STATE part E), rule R read off the whole (EVENTUAL-R), the census types (FOUR-READINGS), the placement and the selected direction (TOY-PHASE).",
+  "fields": {
+    "groups": [
+      "entanglement"
+    ],
+    "program": "topology",
+    "takes": [
+      "TOY-PHASE-20261127-001#1"
+    ]
+  },
+  "id": "LOCAL-COMMUTE-20261127-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "At the owner's go-ahead (\"Yes, let's continue\") on direction 1 of TOY-PHASE-20261127-001: declare, as a scaffold, which values commute, decided at the end of the round in which the later of two distinctions is born and never revised, with the sign of each implied birth forced by the cost of reordering. The local rule lets two values fail to commute only if one of them is already held twice. Prove it keeps a state at every round; then, on every census start grown up to four rounds, ask at each closure whether the local rule can make the close odd, against the whole-structure reading of NO-WHOLE-STATE (odd attainable exactly where the pattern is not outerplanar), and where the natural local rule (every locally decidable unheld pair fails to commute) loses its state. G18 Comparing growth laws. Stop when every frozen prediction is scored.",
+  "ownership": {
+    "root": true,
+    "scope_id": "LOCAL-COMMUTE-20261127-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Active 2026-11-27: design, arguments and predictions frozen after an independent review (advisor unavailable); run not yet made.",
+  "status_class": "active",
+  "stop_rule": "Stop when every frozen prediction is scored; no growth law is changed and no native source is searched for.",
+  "title": "Commutation fixed at birth: can growth's own closures still close odd?"
+}

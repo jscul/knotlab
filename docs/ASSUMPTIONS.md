@@ -6548,4 +6548,5 @@ evidence: results and their status come from the records each entry links.
 - **Rests on it.** Every count of the readers study. [Design](../research/READER-SPLIT-20261127-001/README.md)
 - **Challenge.** Three other readings are possible. A reader could read two commuting values of one knot jointly; every odd close then has a split with one reader. Readers could be places in the structure, like the third-reader study's readers whom no knot joins. Readers could be required to be fixed by growth itself, such as the pairings of four mutually meeting knots. A result about the model must say which reading it uses.
 - **History.**
+  - 2026-11-27 · Tested (exact, referee pending). Under this reading, strict splits exist at 692 of the 1,177 grown closures (one vote per census start), splits of either kind at 731, and none at 446. The strict and general forms differ at 39 closures. Its other readings (contextual readers, readers as places, readers fixed by growth) were not tested. [Readers on grown closures](../research/READER-SPLIT-20261127-001/decision.md)
   - 2026-11-27 · Entered with the readers study's frozen design.

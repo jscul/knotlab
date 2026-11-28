@@ -1,0 +1,172 @@
+{
+ "fixtures": {
+  "four mutually meeting knots": {
+   "whole set closes": true,
+   "sign": 1,
+   "cells": 3,
+   "minimal sets": 1,
+   "whole set minimal": true
+  },
+  "K_{2,3}": {
+   "whole set closes": true,
+   "sign": 1,
+   "cells": 6,
+   "minimal sets": 1,
+   "whole set minimal": true
+  },
+  "the ring of five with a knot meeting all five": {
+   "whole set closes": false,
+   "sign": null,
+   "cells": 20,
+   "minimal sets": 0,
+   "whole set minimal": false
+  },
+  "a ring of four": {
+   "whole set closes": false,
+   "sign": null,
+   "cells": 2,
+   "minimal sets": 0,
+   "whole set minimal": false
+  },
+  "a ring of three and a separate meeting": {
+   "whole set closes": true,
+   "sign": 0,
+   "cells": 3,
+   "minimal sets": 1,
+   "whole set minimal": true
+  },
+  "a doubled meeting and a separate meeting": {
+   "whole set closes": true,
+   "sign": 0,
+   "cells": 2,
+   "minimal sets": 1,
+   "whole set minimal": true
+  },
+  "the literature's Petersen graph": {
+   "whole set closes": true,
+   "sign": 1,
+   "cells": 75,
+   "minimal sets": 1,
+   "whole set minimal": true
+  },
+  "census start 17's closure": {
+   "outcome": "grown closed",
+   "knots": 4,
+   "minimal sets": 1,
+   "odd kinds": [
+    "four mutually meeting knots"
+   ]
+  },
+  "census start 5088's closure": {
+   "outcome": "grown closed",
+   "knots": 6,
+   "minimal sets": 0,
+   "odd kinds": []
+  }
+ },
+ "P1": {
+  "holds": true,
+  "minimal odd sets, atlas": {
+   "K_{2,3}": 2,
+   "four mutually meeting knots": 1
+  },
+  "minimal odd sets, with a doubled meeting": {
+   "K_{2,3}": 1
+  },
+  "minimal even sets (source, knots, cells)": {
+   "('atlas', 5, 3)": 1,
+   "('four knots, doubled', 4, 10)": 1,
+   "('four knots, doubled', 4, 12)": 1,
+   "('four knots, doubled', 4, 2)": 9,
+   "('four knots, doubled', 4, 4)": 11,
+   "('four knots, doubled', 4, 6)": 5,
+   "('four knots, doubled', 4, 8)": 4
+  }
+ },
+ "P2": {
+  "holds": true,
+  "odd minimal sets in the populations": 1028,
+  "of another kind": []
+ },
+ "P3": {
+  "census starts": {
+   "closures or types": 1819,
+   "with a minimal set": 1761,
+   "with an odd minimal set": 152,
+   "odd set kinds": {
+    "K_{2,3}": 41,
+    "four mutually meeting knots": 153
+   },
+   "even set kinds (kind, knots, cells)": {
+    "('other', 4, 10)": 2,
+    "('other', 4, 2)": 6434,
+    "('other', 4, 4)": 2101,
+    "('other', 4, 6)": 362,
+    "('other', 4, 8)": 45,
+    "('other', 5, 3)": 15
+   },
+   "whole closure a set": 145,
+   "whole closure a set, odd": 53,
+   "read with subsets of at most eight knots only": 0,
+   "attaining odd under birth choices": 1177,
+   "of those, with an odd minimal set": 152,
+   "odd minimal set but birth choices never odd (later rounds only)": 0,
+   "odd minimal set but birth choices never odd, round 1 (0 by construction)": 0
+  },
+  "census types": {
+   "closures or types": 173,
+   "with a minimal set": 151,
+   "with an odd minimal set": 149,
+   "odd set kinds": {
+    "K_{2,3}": 281,
+    "four mutually meeting knots": 489
+   },
+   "even set kinds (kind, knots, cells)": {
+    "('other', 5, 3)": 18
+   },
+   "whole closure a set": 21,
+   "whole closure a set, odd": 14,
+   "read with subsets of at most eight knots only": 0
+  },
+  "extension": {
+   "closures or types": 115,
+   "with a minimal set": 115,
+   "with an odd minimal set": 10,
+   "odd set kinds": {
+    "K_{2,3}": 11,
+    "four mutually meeting knots": 5
+   },
+   "even set kinds (kind, knots, cells)": {
+    "('other', 4, 2)": 2262,
+    "('other', 4, 4)": 573,
+    "('other', 4, 6)": 34,
+    "('other', 4, 8)": 8,
+    "('other', 5, 3)": 35
+   },
+   "whole closure a set": 0,
+   "whole closure a set, odd": 0,
+   "read with subsets of at most eight knots only": 1
+  },
+  "second sample": {
+   "closures or types": 1168,
+   "with a minimal set": 1168,
+   "with an odd minimal set": 44,
+   "odd set kinds": {
+    "K_{2,3}": 22,
+    "four mutually meeting knots": 26
+   },
+   "even set kinds (kind, knots, cells)": {
+    "('other', 4, 2)": 22448,
+    "('other', 4, 4)": 6241,
+    "('other', 4, 6)": 380,
+    "('other', 4, 8)": 56,
+    "('other', 5, 3)": 374
+   },
+   "whole closure a set": 8,
+   "whole closure a set, odd": 4,
+   "read with subsets of at most eight knots only": 23
+  }
+ },
+ "seconds": 191.1,
+ "peak MiB": 140
+}

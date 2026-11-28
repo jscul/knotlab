@@ -185,3 +185,41 @@ Its findings and what changed:
    - Its hand checks on six and seven knots (P1's rationale).
    - The points it checked and found correct: the superset skip, the canonical keys, the outerplanarity test, gate (v)
      against the records, and the formula on four doubled patterns.
+
+## Results (28 November)
+
+The run took 191 seconds under a 4 GiB cap with one thread (unit `native-carry-run`, no cut, peak 140 MiB).
+Outputs: [summary](summary.json), [gates](gates.json), [abstract sets](abstract.json), and [rows](rows.jsonl.gz) with
+every minimal set at every closure and type. Closures and types are one vote each; sets are one vote per set of knots.
+
+| # | Verdict | Count |
+| --- | --- | --- |
+| G | holds | (i) Every fixture is as item 3 says. The Petersen graph is an odd minimal set with 75 cells. Census start 17's closure has an odd set of four mutually meeting knots, and census start 5088's has no minimal set. (ii) The formula equals a direct count at every pair of every whole pattern examined. (iii) Every set's sign is the same under every neighbouring exchange and two random orders. (iv) Every minimal set on an outerplanar graph closes even. (v) At the 1,713 round-1 census closures the whole closure is a set at 145, odd at 53. |
+| P1 | holds | A has 36 minimal whole-choice sets, 4 of them odd. In the atlas: four mutually meeting knots (one class) and K_{2,3} (two classes, K_{2,3} itself and K_{2,3} with its two-knot pair meeting, which has the same cells). With a doubled meeting: one, with K_{2,3}'s cells. The 32 even ones are a ring of three with a separate meeting (the only even one in the atlas) and 31 four-knot patterns with doubled meetings. |
+| P2 | holds | All 1,028 minimal odd sets found in the four populations have the cells of four mutually meeting knots or of K_{2,3}. |
+
+**P3, measured.**
+
+| Population | Closures or types | With a minimal set | With an odd one | Odd sets: four mutually meeting knots / K_{2,3} | Whole closure a set (odd) |
+| --- | --- | --- | --- | --- | --- |
+| Census starts | 1,819 | 1,761 | 152 | 153 / 41 | 145 (53) |
+| Census types | 173 | 151 | 149 | 489 / 281 | 21 (14) |
+| Extension | 115 | 115 | 10 | 5 / 11 | 0 |
+| Second sample | 1,168 | 1,168 | 44 | 26 / 22 | 8 (4) |
+
+- **Census starts.** Birth choices attain odd at 1,177 closures, and 152 of them (13%) have an odd minimal set. Every
+  closure with one attains odd. The other 1,025 attain odd only through a selection. No closure has an odd set where
+  birth choices never close odd, at round 1 (zero by construction) or at the 106 later closures.
+- **Even sets** are four knots with doubled meetings (6,434 of them with two cells, the repeated cycle) and five-knot
+  rings of three with a separate meeting. They are everywhere: at 1,761 census closures and at every sampled closure.
+- **Not run:** subsets above eight knots at 1 extension closure and 23 second-sample closures (thirteen to seventeen
+  knots). A ten-knot set like the Petersen graph would not have been seen there.
+
+**What it says.**
+- Growth's pattern alone carries the readers' contradiction, with nothing selected beyond "unheld pairs fail", at 13% of
+  the census closures where birth choices attain odd (one vote per census start).
+- It does so only as four mutually meeting knots or K_{2,3}, the literature's two outerplanarity obstructions, here as
+  sets of knots. Through seven knots no other kind exists (P1), and in the four populations none occurs (P2).
+- At the other 87% of the odd-attaining closures the contradiction needs a selection, a birth choice that takes some
+  unheld pairs and not others; the ring games are the example.
+- The census types carry it far more often (149 of 173), as dense patterns on seven knots.

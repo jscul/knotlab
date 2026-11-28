@@ -372,6 +372,7 @@ evidence: results and their status come from the records each entry links.
 | [A314](#a314--declare-which-values-commute-decided-at-birth-and-never-revised) | Declare which values commute, decided at birth and never revised | scaffold | Assumed |
 | [A315](#a315--select-among-the-birth-choices-those-with-as-many-failing-pairs-as-a-state-allows) | Select, among the birth choices, those with as many failing pairs as a state allows | scaffold | Assumed |
 | [A316](#a316--a-reader-is-a-set-of-distinctions-whose-values-commute-with-every-other-readers-read-once-per-knot) | A reader is a set of distinctions whose values commute with every other reader's, read once per knot | scaffold | Assumed |
+| [A317](#a317--a-split-and-its-merges-count-as-the-same-game-encoded) | A split and its merges count as the same game, encoded | scaffold | Assumed |
 
 ## Entries
 
@@ -6551,3 +6552,14 @@ evidence: results and their status come from the records each entry links.
   - 2026-11-27 · Refereed (R1, confirmed with fixes, no Block): the counts stand; the game holds given the state, the signs of the values outside readers and only each reader's own setting; at most one value per question; a reader's settings may need a system of more than one qubit. [Referee report](../research/READER-SPLIT-20261127-001/referee-R1/report.md)
   - 2026-11-27 · Tested (exact, referee pending). Under this reading, strict splits exist at 692 of the 1,177 grown closures (one vote per census start), splits of either kind at 731, and none at 446. The strict and general forms differ at 39 closures. Its other readings (contextual readers, readers as places, readers fixed by growth) were not tested. [Readers on grown closures](../research/READER-SPLIT-20261127-001/decision.md)
   - 2026-11-27 · Entered with the readers study's frozen design.
+
+### A317 · A split and its merges count as the same game, encoded
+
+**Assumed** · 2026-11-27 · scaffold
+
+- **Statement.** Two failing pairs whose partners are held by the same two knots, and whose other values share a knot, may be merged into one. A strict split and the choice its merges leave count as the same game, with readers encoded.
+- **Why.** A merge keeps every two checks commuting and keeps the closing sign. A forced merge undoes the literature's two-bit repetition code on one reader, so the encoded game is the decoded game with more parties holding the same information. Nothing in the model supplies the reading.
+- **Rests on it.** The family of the encoded-readers study: which minimal strict splits are the three-reader game or a ring game, encoded. [Design](../research/ENCODED-READERS-20261127-001/README.md)
+- **Challenge.** Each encoding could instead be counted as a new game. A merge through a knot holding other values shares the code's parity check with other readers, and that could be counted as a different kind of encoding from a forced merge. A result about the family must say which merges it allows.
+- **History.**
+  - 2026-11-27 · Entered with the encoded-readers study's frozen design.

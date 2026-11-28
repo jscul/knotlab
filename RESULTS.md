@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**408 current results** and 5 superseded ones, from 708 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**408 current results** and 5 superseded ones, from 709 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -31,7 +31,7 @@ How to read an entry:
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 26 results
 - [Notes](#notes): 6 self-contained notes
-- [Epics](#epics): all 708 epics with their closures
+- [Epics](#epics): all 709 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -2061,6 +2061,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-27 | Under the forbidding cuts, does growth close a stage that carries the step one layer up? (`CLOSED-BY-CUTS-20261127-001`) | — | [folder](research/CLOSED-BY-CUTS-20261127-001/) |
 | 2026-11-27 | Does the step one layer up need a closed system? Cut one link of each twelve-knot system that carries it (`CUT-BOXES-20261127-001`) | — | [folder](research/CUT-BOXES-20261127-001/) |
 | 2026-11-27 | Reading a growth from its start on pieces with a cycle, and a fresh test of the twin exception (`CYCLE-READ-20261127-001`) | — | [folder](research/CYCLE-READ-20261127-001/) |
+| 2026-11-27 | Encoded readers: does every strict split decode to four mutually meeting knots or an odd ring around a knot? (`ENCODED-READERS-20261127-001`) | — | [folder](research/ENCODED-READERS-20261127-001/) |
 | 2026-11-27 | How often does ordinary growth make the four-clause step one layer up on sampled starts? (`FOUR-CLAUSE-20261127-001`) | — | [folder](research/FOUR-CLAUSE-20261127-001/) |
 | 2026-11-27 | Commutation fixed at birth: can growth's own closures still close odd? (`LOCAL-COMMUTE-20261127-001`) | — | [folder](research/LOCAL-COMMUTE-20261127-001/) |
 | 2026-11-27 | What the allowed states and the marked loose distinctions tell a reader of the families' tree (`MARKED-LOOSE-20261127-001`) | — | [folder](research/MARKED-LOOSE-20261127-001/) |

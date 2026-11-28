@@ -369,6 +369,7 @@ evidence: results and their status come from the records each entry links.
 | [A311](#a311--divide-a-current-round-among-joint-classes-of-allowed-sibling-words) | Divide a current round among joint classes of allowed sibling words | scaffold | Assumed |
 | [A312](#a312--prepare-coherent-sibling-words-and-measure-combinations-of-the-permitted-changes) | Prepare coherent sibling words and measure combinations of the permitted changes | scaffold | Assumed |
 | [A313](#a313--read-a-parity-knot-and-each-readers-pair-as-one-toy-bit-of-spekkenss-toy-theory) | Read a parity knot, and each reader's pair, as one toy bit of Spekkens's toy theory | scaffold | Assumed |
+| [A314](#a314--declare-which-values-commute-decided-at-birth-and-never-revised) | Declare which values commute, decided at birth and never revised | scaffold | Assumed |
 
 ## Entries
 
@@ -6173,6 +6174,10 @@ evidence: results and their status come from the records each entry links.
   even sign but are not necessary (R forces even at five reached types), and R can be evaluated stage by stage; what
   the birth rules out is a persistent R. The next test reads R off the whole fixed structure (`EVENTUAL-R-20261126-001`).
 - **History.**
+  - 2026-11-27 · Dropped by declaration in `LOCAL-COMMUTE-20261127-001` (exact counts, referee pending; the scaffold A314):
+    with which values commute decided at birth and never revised, every grown structure keeps a stabilizer state, and odd
+    closes are attainable at 1,177 of the 1,187 closures that are not outerplanar, but the sign is a free half-and-half
+    choice that growth does not select. Status unchanged. [Commutation fixed at birth](../research/LOCAL-COMMUTE-20261127-001/decision.md)
   - 2026-11-27 · Narrowed by the referee of `TOY-PHASE-20261127-001` (R1, confirmed with fixes, no Block): the line below
     overstates. A common assignment makes the four laws' total even and, with one weighting across settings, gives the 3/4
     bound (Fine), but the order of operations on values is not the obstruction: a four-place parity knot has a value
@@ -6505,3 +6510,14 @@ evidence: results and their status come from the records each entry links.
     assignments of Map R give the same verdicts; the pairing matters, the toy theory accepting 7 of the 15, among them the
     record's readers (the pairs no knot holds together). [Toy theory and phase groups](../research/TOY-PHASE-20261127-001/decision.md)
   - 2026-11-27 · Entered with the toy-phase study's frozen design.
+
+### A314 · Declare which values commute, decided at birth and never revised
+
+**Assumed** · 2026-11-27 · scaffold
+
+- **Statement.** Give each distinction a binary observable and declare which pairs fail to commute. Each pair is decided at the end of the round in which the later of its two distinctions is born, from the holding pattern then, and never revised. A pair may fail to commute only if no knot holds both and one of the two is already held twice then. A knot's check is the product of its distinctions' observables. An implied birth's sign is its classical law times the cost of reordering its relation's checks (the birth rule of the commutation-at-birth study).
+- **Why.** It is the smallest change to the law that the quantum account named for an odd closing law ("a rule for which values commute, fixed at each birth, that keeps a state on every grown structure"), with the decision made at birth rather than read off the finished structure. Nothing in the model supplies it. It drops A295 by declaration.
+- **Rests on it.** Every result of the commutation-at-birth study: a state is kept on every grown structure, odd is attainable at 1,177 of the 1,187 closures that are not outerplanar, and the sign is a free half-and-half choice. [Decision](../research/LOCAL-COMMUTE-20261127-001/decision.md)
+- **Challenge.** Compare the whole choices (read off the finished structure, A295 dropped the same way), the natural birth rule (every decidable pair fails), uniform round-by-round choices, and a birth rule that knows which live knots can be co-parents. A principle that selects among the choices, such as the most failing pairs, is a further scaffold, not this one. The model is not expected to replace this declaration: it is kept while the declared extension is studied.
+- **History.**
+  - 2026-11-27 · Entered with the commutation-at-birth study; tested against the natural birth rule, uniform round-by-round choices and the whole choices.

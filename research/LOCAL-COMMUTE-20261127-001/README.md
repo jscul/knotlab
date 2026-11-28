@@ -195,3 +195,35 @@ three hypotheses to state, and settled the three-label closure by hand. Changed 
 The reviewer's other suggestions, not adopted here: a less conservative birth rule using which live knots can be
 co-parents (the engine's candidate pairs), choices unchanged by the structure's relabellings, and a round-by-round
 comparison of the consistent choices with the final birth choices. They stay as directions.
+
+## Results (27 November)
+
+The run took 105 seconds under a 4 GiB cap with one thread ([summary](summary.json), [gates](gates.json),
+[rows](results.jsonl), [one size past](past.jsonl)). Counts are one vote per census start. 7,075 starts: 2,049 closed
+(230 of them already closed at round 0, with no closure), 1,734 stalled, 3,267 still growing after four rounds, and 25 cut
+above 40 knots (not run). That leaves 1,819 closures: 1,713 at round 1, 105 at round 2, one at round 3 and none at round 4.
+
+| # | Verdict | Count |
+| --- | --- | --- |
+| G | holds | The ring of three closes odd under birth choices, with Γ_R the readers' matching; whole choices odd on 173 of 173 census types and on none of the four outerplanar controls; the mutant in the order 0, 2, 1, 3 is odd where the true answer is even; the three-label closure closes at round 2 on 8 knots, odd under birth choices, with Γ_R losing its state at round 1; 100 of 100 random choices give one closing sign under 5 orders. |
+| P1 | holds | No knot holds a pair the birth rule may decide, on every structure; every one of the 1,819 closures is a single implied birth that closes the whole; birth and whole choices coincide at all 1,713 round-1 closures. |
+| P2 | holds | At all 1,819 closures, whole choices attain odd exactly where the pattern is not outerplanar (1,187 are not). |
+| P3 | holds | 26 of 26 later closures with three of the closing knot's parents in one block attain odd under birth choices. |
+| P3′ | **fails** | Of the 70 other later closures that are not outerplanar, birth choices attain odd at 60 and lose it at 10 (starts 222, 296, 330, 337, 390, 414, 2681, 2754, 3299, 3317). |
+| P4 | holds | Γ_R loses its state on 4,941 of the 5,086 starts with a funded round (97%). |
+| P5 | holds | 2,485 round-by-round runs on 497 sampled starts: no run reaches a round without a consistent choice. |
+
+**Where the birth rule loses the odd close (post hoc, [posthoc_losses.py](posthoc_losses.py),
+[output](posthoc_losses.json)).** All ten are closures at round 2 on a closing knot of two places, whose parents are the
+two births of round 1. At each, every odd whole choice needs a failing pair of two start distinctions that were both loose
+at the start and were taken by different births of round 1: the one kind of pair the birth rule forbids. Looking one round
+ahead would allow it. In all, birth choices attain odd at 1,177 of the 1,187 closures that are not outerplanar.
+
+**The sign is a free choice.** Under the round-by-round random birth rule (P5's runs), the close came out odd in 163 of 340
+runs at closures where birth choices attain odd, and in 0 of 225 where they do not. A linear condition that is not
+identically zero holds on exactly half of a set of linear choices, so a uniform choice is odd half the time: growth sets
+which closures *can* close odd, and the choice, not growth, decides which *do*.
+
+**One size past.** Round 5 on 200 starts still growing at round 4 made no closure; Γ_R lost its state on 178 of them, and
+A1 held throughout. Closures beyond round 2 are rare in this census (one at round 3, none at round 4), so the later-round
+counts rest on round 2.

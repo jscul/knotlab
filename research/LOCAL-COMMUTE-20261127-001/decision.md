@@ -98,3 +98,56 @@ before the freeze. It settled the three-label closure and gave the lemma A6; sev
 - **Half the choices.** A linear condition on GF(2) choices that is not identically zero holds on exactly half of them. So
   any principle that is itself a linear set of choices containing the classical one leaves the sign free. A principle that
   selects the sign must be nonlinear, like a maximum (row 1).
+
+## Final report as sent
+
+2026-11-27 16:49 PST
+
+The declared phase works on growth's own structures, but it doesn't choose its sign.
+
+I declared which values commute, with each pair decided once, when its later distinction is born, and never revised. A pair may fail to commute only if one of its two distinctions is already held twice, so no later knot can hold both. Each closure's sign is then forced by the cost of reordering. I tested this on all 7,075 census starts, grown up to four rounds.
+
+**What we found**
+- **Every grown structure keeps a quantum (stabilizer) state.** This is proved. Deciding round by round also never got stuck: no dead end in 2,485 runs.
+- **Odd closes, the three-reader-type contradiction, are possible at 1,177 of the 1,187 closures** where any choice could make them odd. The record's whole-structure criterion holds at all 1,819 closures.
+- **Fixing at birth costs 10 closures, all of one kind.** Each is a round-2 closure whose closing knot has two places. There the odd close needs a pair of start distinctions that round 1 took apart, and a rule that looks no round ahead can't decide that pair.
+- **The sign is a free bit.** Wherever an odd close is possible, exactly half the choices make it odd; a rule choosing at random closed odd in 163 of 340 runs there. Growth decides which closures *can* close odd; the declared choice decides which *do*.
+- **Rule R read at birth fails.** It loses its state on 4,941 of the 5,086 starts that grow (97%).
+- **One limit.** Inside this extension, two-reader scores stay at 2, because its states are stabilizer states. It supplies the three-reader contradiction, not a two-reader excess.
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt — commutation declared and fixed at birth on growth's closures | **Status:** Successful | A state on every grown structure; odd possible at 1,177 of 1,187 closures; referee pending |
+| Local direction — the birth rule | Retire (answered) | Its only losses are 10 closures that need a pair decided one round later |
+| Broader exploration — the quantum part under a declared phase | Known alternatives | A principle that selects the sign; readers on grown closures; a two-reader excess needs states outside this extension |
+| Long-term goal — G18 Comparing growth laws | Capability gained | One declared primitive gives growth's closures the contradiction; which closures close odd is a free choice |
+
+**Next step:** Research directions — selected: #1
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+| --- | --- | --- | --- | --- | --- |
+| 1 | A principle that selects the sign: the birth choices with the most failing pairs, as far from classical as a state allows | 3/3 — Barrier | 2/3 — Testable | Exact maximum on each of the 1,177 closures → sign forced odd, forced even, or still free | Selected · awaiting go-ahead |
+| 2 | Readers on grown closures: do the odd choices split into readers with two settings each? | 2/3 — Substantial | 2/3 — Testable | Search each closure's odd choices for a reader split → a three-reader game on growth's closures, or none | Alternative · deferred |
+| 3 | A birth rule that knows which live knots can be co-parents | 1/3 — Incremental | 3/3 — Ready | Rerun the 10 lost closures → recovered or not | Alternative · deferred |
+| 4 | Intuition link: the birth rule as a causal model, the whole choices as all-at-once ones (Wharton and Argaman) | 1/3 — Incremental | 2/3 — Testable | State the ten losses as all-at-once information → match or mismatch | Alternative · deferred |
+
+1. If a natural principle forces the odd sign, the quantum sign would follow from growth plus one declared primitive and one principle, which is the closest this line has come to a native source. If not, the sign is settled as a free bit. No principle that is itself a linear set of choices can force it, because the classical choice always belongs to one, so it has to be a maximum or something like it. On the ring, the maximum is the readers' matching, which closes odd. It adds a principle to the model, so it needs your go-ahead.
+2. This would put the contradiction into the program's reader picture on structures growth makes.
+3. A small refinement that could recover the 10 losses.
+4. The intuition link for this stop: the losses are exactly where the odd sign needs to know the next round's grouping.
+
+**STOP** on the birth rule. Settled: a state on every grown structure, and odd possible nearly everywhere the whole-structure reading allows it. The sign is not settled; it is a free choice.
+
+**Corrections:** none. One frozen prediction failed: I predicted that fixing at birth would lose no odd close, and it loses 10 of 70 in the closures the reviewer's lemma doesn't cover.
+
+**Goals:** G18 gets a "capability gained" checkpoint row. No goal changed.
+
+**Assumptions:** New scaffold A314 (which values commute, declared at birth). A295 gets a history line: this extension drops it by declaration.
+
+**Scaffolds:** I tested A314 against rule R read at birth, random round-by-round choices, and the whole-structure choices. The census starts are hand-built. The cap of four rounds and 40 knots cut 25 starts, which I didn't run. Round 5 on 200 growing starts made no closure.
+
+**Basket:** I took none of the line's top three items (the odd-rings and middle-reader directions and B239). The first belongs to the layer line, the second has been answered, and the third is an older study.
+
+The advisor was still at its usage limit, so an independent reviewer checked the design before the freeze. It caught a real overstatement in one argument and settled the three-label closure by hand, which made my first prediction nearly a tautology; I replaced it with the open test that then failed. The referee (Codex) is checking every count now, and I'll fold its report in when it lands.
+
+[Decision note](https://github.com/jscul/knotlab/blob/main/research/LOCAL-COMMUTE-20261127-001/decision.md) · [Design and results](https://github.com/jscul/knotlab/blob/main/research/LOCAL-COMMUTE-20261127-001/README.md)

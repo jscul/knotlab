@@ -6576,4 +6576,5 @@ evidence: results and their status come from the records each entry links.
 - **Rests on it.** The measurements of the cross-pair study (which structures growth's choices make). [Design](../research/CELL-SIGN-20261127-001/README.md)
 - **Challenge.** Keep only the pair of values, read as two chords, from which the closing sign is defined. Or attach the failing pairs differently at a pair of knots covered four times: which two cycles are glued together is not determined there, and pinched knots are separated by a choice of reading. A result about the structure must say which attachment it uses.
 - **History.**
+  - 2026-11-27 · Tested (theorem by hand, checked on 2,499,769 choices; referee pending): the sign is a property of the cycles; minimal strict odd choices covered twice are projective planes or Klein bottles after separation; on growth's closures every minimal strict even choice is orientable. Choices covered four times, where the attachment is not determined, were reported apart. [Cross pairs and the closing sign](../research/CELL-SIGN-20261127-001/decision.md)
   - 2026-11-27 · Entered with the cross-pair study's frozen design.

@@ -229,3 +229,49 @@ checked the first draft. Changed before the freeze in response:
    the closing laws on four mutually meeting founders; the novelty line narrowed.
 10. The reader-label search starts at one reader (so "fewer than three" is tested), and the enumeration now checks the
    fewest readers of either kind.
+
+## Results (27 November)
+
+The run took 162 seconds under a 4 GiB cap with one thread, unit `readers-split-run`, no cut ([summary](summary.json),
+[gates](gates.json), [rows](results.jsonl), [whole choices where birth choices lose the odd close](whole_only.jsonl),
+[fixtures](fixtures.json), [census types](census_types.jsonl)). Counts are one vote per census start unless marked.
+
+| # | Verdict | Count |
+| --- | --- | --- |
+| G | holds | At the ring of three's closure the only odd birth choice is the readers' matching, a strict split with three readers, and both searches find it. Every split found (at the 1,177 closures, the 173 types and the fixtures) passes its certificate. Enumeration agrees with the solvers at all 403 codes with at most 14 free choices. The integer program and the satisfiability check agree on strict existence everywhere. No search was left unsettled. |
+| H | holds | 440 closures have a knot meeting every knot of an odd ring with decidable split pairs (423 rings of three, 17 of five), and each has a strict split with that many readers. No split anywhere has fewer than three readers. Of the 4 closures whose knots hold at most three distinctions, only the four-knot one has a strict split. The fixtures are as in item 7: the ring of five's closure, closed and grown (it closes in round 1, with no four mutually meeting knots), has fewest strict readers five and the construction as its only strict odd choice; the ring of four's closure has no split; the joined rings of three have no strict split and exactly two odd splits, each of three readers holding three values; the three-by-three pattern has no split; the grown closure F has no split. |
+| P1 | fails | 252 of the 692 closures with a strict split have no odd ring around a knot: fewest strict readers 4 at 198, 5 at 49, 6 at 5. At the 440 with one, the fewest is the shortest ring's length. |
+| P2 | holds | 39 closures have a split of either kind but no strict split: fewest readers 4 at 31, 5 at 6, 6 at 2. |
+
+**P3, measured.**
+
+| Population | Strict split | Only a split of the other kind | No split |
+| --- | ---: | ---: | ---: |
+| All 1,177 grown closures | 692 | 39 | 446 |
+| — closing in round 1 (1,091) / round 2 (85) / round 3 (1) | 675 / 17 / 0 | 20 / 19 / 0 | 396 / 49 / 1 |
+| — with four mutually meeting knots (423) | 423 | 0 | 0 |
+| — with an odd ring of five around a knot and no four (17) | 17 | 0 | 0 |
+| — with no odd ring around a knot (737) | 252 | 39 | 446 |
+| One vote per finished census type (173) | 115 | 30 | 28 |
+
+- By the largest knot (3, 4, 5, 6, 7, 8, 9 distinctions): strict 1, 21, 254, 326, 85, 5, 0; other kind only 0, 0, 22, 17,
+  0, 0, 0; no split 3, 58, 187, 132, 54, 11, 1.
+- Fewest readers in a strict split: 3 at 423 closures (exactly those with four mutually meeting knots), 4 at 198, 5 at
+  66, 6 at 5. In a split of either kind: 3 at 433, 4 at 242, 5 at 51, 6 at 5; at 25 closures with a strict split, readers
+  holding more values need fewer readers.
+- Whole choices at the 86 later closures give the same splits as birth choices (strict 17, either kind 36, in both). At
+  the 10 later closures where birth choices lose the odd close, whole choices have no split of either kind.
+- Finished census types: all 173 attain odd. Strict splits at 115, all with an odd ring around a knot (109 rings of three,
+  6 of five), fewest strict readers 3 or 5; splits of the other kind only at 30; none at 28.
+
+**P4, measured.** The fewest failing pairs among odd birth choices is 3 at 423 closures, 4 at 422, 5 at 127, 6 at 157, 7
+at 9 and 8 at 39. Every odd birth choice with the fewest failing pairs is a strict split at 423 closures, exactly those
+with four mutually meeting knots; at 37 closures with a strict split, some odd choice has fewer failing pairs than any
+strict split.
+
+**After the results (not frozen): the shapes beyond odd rings.** Grouping the fewest strict split at each of the 252
+closures without an odd ring by the holders of its readers (up to relabelling) gives nine shapes. 198 have one shape:
+four knots meeting pairwise except one pair, whose connection passes through a two-place knot, with the meeting
+opposite it doubled; the two copies of that meeting fail with the two halves of the passed connection. 20 have two such
+passes, 16 and 13 have two other five-reader shapes, and 5 are single cases. In census types, whose knots all hold at
+least three distinctions, every strict split has an odd ring.

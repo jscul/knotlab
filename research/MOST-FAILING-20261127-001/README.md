@@ -111,3 +111,38 @@ read-only, reasoning by hand with no computation) checked the first draft. Chang
 5. A second weighting: the 173 census types, one vote per type.
 6. Words: "free choices" for the code's dimension; "as many failing pairs as a state allows" and "differ from rule R on
    the fewest pairs" for distance words.
+
+## Results (27 November)
+
+The run took 186 seconds under a 4 GiB cap with one thread ([summary](summary.json), [gates](gates.json),
+[rows](results.jsonl), [census types](census_types.jsonl)). Counts are one vote per census start unless marked.
+
+| # | Verdict | Count |
+| --- | --- | --- |
+| G | holds | The ring of three's maximum is the readers' matching alone, forced odd; enumeration agrees with the programs at all 386 closures with at most 14 free choices; every one of the 1,177 maxima passes its parity checks and the second-order sign check; at all 82 closures where the natural rule keeps a state, the maximum is every pair and the verdict is that rule's sign; no program was left unsettled. |
+| P1 | holds | Start 17: maximum and control both 3 failing pairs, both forced odd. Start 24: maximum 3, forced odd; control 2, forced even. Start 43: maximum forced even. Start 57: the natural rule keeps a state; maximum forced even. The wheel of four: one maximum word of 8 failing pairs, even; four control words of 3, even. The wheel of five: maximum 15 failing pairs, free (13 maximum words). All 1,135 closures whose control has 2 failing pairs have a doubled meeting, and there the control forces even. |
+| P2 | holds | The maximum forces the sign at 948 of the 1,177 closures (81%). |
+
+**P3, measured.**
+
+| Principle | Forced odd | Forced even | Free |
+| --- | ---: | ---: | ---: |
+| The maximum, all 1,177 closures | 360 | 588 | 229 |
+| — where the natural rule loses its state (1,095) | 307 | 559 | 229 |
+| — where it keeps one (82) | 53 | 29 | 0 |
+| — closing in round 1 (1,091) / round 2 (85) / round 3 (1) | 348 / 12 / 0 | 534 / 53 / 1 | 209 / 20 / 0 |
+| The control, the fewest failing pairs above none | 1 | 1,152 | 24 |
+| The maximum counted once per holder type | 619 | 241 | 317 |
+| One vote per census type (173 types): the maximum | 49 | 60 | 64 |
+| — the control | 1 | 64 | 108 |
+| — the maximum per holder type (identical: the census types have no doubled meeting) | 49 | 60 | 64 |
+
+- Where both force a sign, the control and the maximum disagree at 345 of 927 closures, and the holder-type count and the
+  maximum at 199 of 719.
+- Round by round at the 86 later closures: 19 close odd and 67 even (no dead end), agreeing with the maximum at 62 of the
+  66 where the maximum forces a sign.
+- Where enumerated, the maximum is a single word at 131 closures, two words at 74 and three or more at 181.
+
+So the maximum makes the sign mostly determined, but in both directions, and the direction depends on how the principle
+counts: by pairs it forces even more often than odd, by holder types odd more often than even, and on the census types,
+where the two counts coincide, it splits 49 odd to 60 even with 64 free. The control forces even almost everywhere.

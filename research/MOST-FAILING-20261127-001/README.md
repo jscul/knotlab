@@ -5,8 +5,10 @@
 > corrections: the 173 census types are a separate population, not a second weighting; "an affine condition can select odd
 > only by naming it" is wrong (requiring one pair to fail and another to commute can select odd); the holder-type count is a
 > different objective, not a correction for doubled meetings; the round-by-round counts are one tie-break; the G row's
-> order check covered one maximum per closure (the referee's consecutive-exchange check establishes it); and the prior-work
-> line should credit the commutation-at-birth study, which proposed the maximum.
+> order check covered one maximum per closure (the referee's consecutive-exchange check establishes it); the prior-work
+> line should credit the commutation-at-birth study, which proposed the maximum; and "at most 97 positions and 55 free
+> choices" are the grown codes' sizes (the finished census codes reach 105 and 91). The results section carries the same
+> narrowings in place, marked R1.
 
 Epic `MOST-FAILING-20261127-001`, under G18 Comparing growth laws, at the owner's go-ahead ("Yes, let's continue with 1")
 on direction 1 of the commutation-at-birth study (`LOCAL-COMMUTE-20261127-001#1`). Design and predictions frozen before
@@ -127,7 +129,7 @@ The run took 186 seconds under a 4 GiB cap with one thread ([summary](summary.js
 
 | # | Verdict | Count |
 | --- | --- | --- |
-| G | holds | The ring of three's maximum is the readers' matching alone, forced odd; enumeration agrees with the programs at all 386 closures with at most 14 free choices; every one of the 1,177 maxima passes its parity checks and the second-order sign check; at all 82 closures where the natural rule keeps a state, the maximum is every pair and the verdict is that rule's sign; no program was left unsettled. |
+| G | numerical results confirmed independently (R1); the original order check covered one pair maximum per closure, and the referee's consecutive-exchange check over 18,319 knot pairs establishes order independence for every feasible word | The ring of three's maximum is the readers' matching alone, forced odd; enumeration agrees with the programs at all 386 closures with at most 14 free choices; every one of the 1,177 maxima passes its parity checks and the second-order sign check; at all 82 closures where the natural rule keeps a state, the maximum is every pair and the verdict is that rule's sign; no program was left unsettled. |
 | P1 | holds | Start 17: maximum and control both 3 failing pairs, both forced odd. Start 24: maximum 3, forced odd; control 2, forced even. Start 43: maximum forced even. Start 57: the natural rule keeps a state; maximum forced even. The wheel of four: one maximum word of 8 failing pairs, even; four control words of 3, even. The wheel of five: maximum 15 failing pairs, free (13 maximum words). All 1,135 closures whose control has 2 failing pairs have a doubled meeting, and there the control forces even. |
 | P2 | holds | The maximum forces the sign at 948 of the 1,177 closures (81%). |
 
@@ -148,9 +150,11 @@ The run took 186 seconds under a 4 GiB cap with one thread ([summary](summary.js
 - Where both force a sign, the control and the maximum disagree at 345 of 927 closures, and the holder-type count and the
   maximum at 199 of 719.
 - Round by round at the 86 later closures: 19 close odd and 67 even (no dead end), agreeing with the maximum at 62 of the
-  66 where the maximum forces a sign.
+  66 where the maximum forces a sign. These counts follow the recorded first optimum; across all tied optimal histories,
+  14 force odd, 59 force even and 13 allow both (R1).
 - Where enumerated, the maximum is a single word at 131 closures, two words at 74 and three or more at 181.
 
-So the maximum makes the sign mostly determined, but in both directions, and the direction depends on how the principle
-counts: by pairs it forces even more often than odd, by holder types odd more often than even, and on the census types,
-where the two counts coincide, it splits 49 odd to 60 even with 64 free. The control forces even almost everywhere.
+So the maximum makes the sign mostly determined, but in both directions, and the direction depends on the score: by
+pairs it forces even more often than odd, by occupied holder types odd more often than even. On the census of finished
+types, a separate population where the two scores coincide, it splits 49 odd to 60 even with 64 free. The control gives
+1 odd, 1,152 even and 24 free (narrowed by R1).

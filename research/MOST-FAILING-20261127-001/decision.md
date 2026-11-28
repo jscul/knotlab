@@ -30,8 +30,8 @@ Epic `MOST-FAILING-20261127-001`, at the owner's go-ahead on direction 1 of the 
 frozen predictions, review and results: [README.md](README.md); code [most_failing.py](most_failing.py); outputs
 [summary.json](summary.json), [gates.json](gates.json), [results.jsonl](results.jsonl),
 [census_types.jsonl](census_types.jsonl). Exact integer programs solved to proven optimality, checked by exhaustive
-enumeration at 386 closures; one vote per census start unless marked; independent referee pending (brief in
-`referee-R1/`).
+enumeration at 386 closures; one vote per census start unless marked; refereed (R1, confirmed with fixes, no Block;
+[report](referee-R1/report.md)).
 
 | Scope | Verdict | Why |
 | --- | --- | --- |
@@ -40,13 +40,13 @@ enumeration at 386 closures; one vote per census start unless marked; independen
 | Broader exploration — the quantum part under the declared phase | Known alternatives | Readers on grown closures; a principle drawn from growth itself; or the sign kept as declared |
 | Long-term goal — G18 Comparing growth laws | Obstruction learned | With the declared phase, growth makes an odd product of commuting checks possible, and no tested score selects it everywhere |
 
-The maximum does what a principle can: at 81% of the closures every birth choice with the most failing pairs closes with
-the same sign. But the sign it forces is even more often than odd (588 against 360), and it is not a fact about the
-structure alone. Counting failing pairs once per holder type, which removes the weight of doubled meetings, reverses the
-lean (619 odd against 241 even). On the census types, where the two counts coincide, it splits (49 odd, 60 even, 64
-free). The control, the least departure from classical, forces even almost everywhere (1,152 of 1,177). So for a given
-score the holding decides the sign, but changing the score reverses it at 199 of the 719 closures where both force one
-(narrowed by R1 from "the selected sign belongs to the principle").
+The maximum does what a principle can: at 948 of the 1,177 closures (81%, one vote per census start) every birth choice
+with the most failing pairs closes with the same sign. But the sign it forces is even more often than odd (588 against
+360). Counting occupied holder types reverses the aggregate lean on these same starts (619 odd against 241 even). The
+control, the least departure from classical, gives 1 odd, 1,152 even and 24 free. For each specified score the holding
+and its decidable pairs determine the maximizing choices and so the sign; changing the score reverses it at 199 of the
+719 closures where both maxima force one (narrowed by R1 from "the selected sign belongs to the principle"). A separate
+census, one vote to each of the 173 finished types with every unheld pair decidable, splits 49 odd, 60 even, 64 free.
 
 **Next step:** Full pivot — selected: #1
 
@@ -70,20 +70,26 @@ score the holding decides the sign, but changing the score reverses it at 199 of
    all-pairs word, so the principle decodes rule R onto the code, and free verdicts are decoding ties; counting holder
    types changes the metric, and with it the decoded word and its sign. Payoff 1/3 (a restatement); concreteness 3/3.
 
-**STOP** on selecting the sign by a principle over birth choices. Settled: the maximum forces the sign at most closures,
-but in both directions, and the direction changes with how the principle counts and how closures are weighted; the
-control forces even. Open: a principle the model itself supplies (row 2). A principle that forces odd under every
-counting and weighting would reopen the line.
+**STOP** on selecting the sign by a principle over birth choices. Settled: the maximum forces the sign at 948 of 1,177
+closures (one vote per census start), but in both directions, and changing the score reverses it at 199 of the 719
+closures where both maxima force one; the control gives 1 odd, 1,152 even, 24 free. None of the tested scores forces odd
+at every closure. Open: a principle the model itself supplies (row 2). A rule derived from growth that fixes the sign on
+a specified class would reopen this question (narrowed by R1: the census tests the listed rules, not every rule growth
+could supply).
 
-**Corrections:** none.
+**Corrections:** none at closing; R1's narrowings are in the notice above and in `docs/CORRECTIONS.md`.
 
 **Goals:** checkpoint row added under G18 (obstruction learned); no goal changed.
 
-**Assumptions:** A315 (the most failing pairs) gets a history line: tested under the control, holder types, round by round
-and the per-type weighting, the forced sign changes with the principle, so the result is about the scaffold.
+**Assumptions:** A315 (the most failing pairs) gets a history line: tested against the control, the occupied-holder-type
+score and round by round on the same starts, and on the separate census of finished types, the forced sign changes with
+the score, so the result is about the scaffold.
 
-**Scaffolds:** A315 and its tie-break. The verdicts hold under none of the alternative principles: the result is a fact
-about the principles, not the model. The census starts and the four-round cap carry over from A314's study.
+**Scaffolds:** A315 and its tie-break. The pair and holder-type maxima agree at 520 and disagree at 199 of the 719
+closures where both force a sign, and the three verdicts (maximum, control, holder types) agree at 191 starts (narrowed
+by R1 from "the verdicts hold under none"): the result is about the scores, not the model. Across round-by-round ties,
+14 later closures force odd, 59 even and 13 allow both. The census starts and the four-round cap carry over from A314's
+study.
 
 **Basket:** `BOTH-LONG-20261126-001#1` (3/3, 3/3), `VALUE-CHANGE-20261126-001#1` (3/3, 3/3) and B239 (3/3, 2/3). None
 was taken: the first belongs to the layer line, the second was answered by the third-reader study, and the third is an
@@ -99,23 +105,27 @@ six changes followed, listed in the README.
   birth choice with the most failing pairs closes with the same sign; at 229 the maxima split.
 - **In both directions.** It forces even at 588 and odd at 360. Where the natural rule keeps a state (82 closures), the
   maximum is that rule's choice and its sign (53 odd, 29 even); elsewhere even leads, 559 to 307.
-- **The direction follows the counting.** Counting failing pairs once per holder type gives odd at 619, even at 241 and
-  free at 317; where both force a sign, the two counts disagree at 199 of 719 closures. One vote per census type (173
-  types, no doubled meetings) gives 49 odd, 60 even and 64 free under either count.
-- **The least departure from classical is even.** The nonzero choices with the fewest failing pairs force even at 1,152
-  closures; at all 1,135 where they have two failing pairs there is a doubled meeting, whose two pairs have identical
-  checks and cost.
-- **Round by round agrees.** At the 86 later closures, taking the most failing pairs at each round closes 19 odd and 67
-  even, agreeing with the maximum at 62 of the 66 where the maximum forces a sign.
+- **The direction follows the score.** Counting occupied holder types (a different objective: a type scores when any of
+  its pairs fails) gives odd at 619, even at 241 and free at 317 on the same starts; where both force a sign, the two
+  maxima disagree at 199 of 719 closures. A separate census, one vote to each of the 173 finished types (every unheld
+  pair decidable, no doubled meetings), gives 49 odd, 60 even and 64 free under either score. Only 9 of those types occur
+  among the 1,151 distinct grown holdings, and one vote per grown holding gives 350 odd, 578 even, 223 free (R1).
+- **The least departure from classical is even.** The nonzero choices with the fewest failing pairs give 1 odd, 1,152
+  even and 24 free; at all 1,135 where they have two failing pairs there is a doubled meeting, whose two pairs have
+  identical checks and cost.
+- **Round by round, one tie-break.** At the 86 later closures, taking the most failing pairs at each round with the
+  recorded first optimum closes 19 odd and 67 even, agreeing with the maximum at 62 of the 66 where the maximum forces a
+  sign. Across all tied optimal histories, 14 force odd, 59 force even and 13 allow both (R1).
 - **The reviewer's hand cases all hold**, including the wheel of five: 15 failing pairs at the maximum, 13 maximum words,
   both signs among them.
 
 ## Intuitions (exact links, not evidence)
 
 - **Decoding.** The birth choices with the most failing pairs are the code words nearest to rule R's all-pairs word
-  (the literature's nearest-code-word decoding). Where rule R keeps a state it decodes to itself; elsewhere the principle
-  reads the sign of the decoded word, a free verdict is a decoding tie, and a different count (holder types) is a
-  different metric with its own decoded words.
+  (the literature's nearest-code-word decoding): pair maximization minimizes the number of disagreements with that word.
+  Where rule R keeps a state it decodes to itself; elsewhere the principle reads the sign of the decoded words, and a
+  free verdict needs a tie between signs, not just several nearest words. Holder maximization counts the types holding
+  at least one failing pair, a different objective (narrowed by R1).
 
 ## Final report as sent
 

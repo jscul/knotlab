@@ -371,6 +371,7 @@ evidence: results and their status come from the records each entry links.
 | [A313](#a313--read-a-parity-knot-and-each-readers-pair-as-one-toy-bit-of-spekkenss-toy-theory) | Read a parity knot, and each reader's pair, as one toy bit of Spekkens's toy theory | scaffold | Assumed |
 | [A314](#a314--declare-which-values-commute-decided-at-birth-and-never-revised) | Declare which values commute, decided at birth and never revised | scaffold | Assumed |
 | [A315](#a315--select-among-the-birth-choices-those-with-as-many-failing-pairs-as-a-state-allows) | Select, among the birth choices, those with as many failing pairs as a state allows | scaffold | Assumed |
+| [A316](#a316--a-reader-is-a-set-of-distinctions-whose-values-commute-with-every-other-readers-read-once-per-knot) | A reader is a set of distinctions whose values commute with every other reader's, read once per knot | scaffold | Assumed |
 
 ## Entries
 
@@ -6537,3 +6538,14 @@ evidence: results and their status come from the records each entry links.
   - 2026-11-27 · Refereed (R1, confirmed with fixes, no Block): for each specified score the holding decides the sign; changing the score reverses it at 199 of 719 closures; the 173 census types are a separate population; the earlier line below's "the forced sign follows the principle, so the result is about this scaffold" is narrowed to that. [Referee report](../research/MOST-FAILING-20261127-001/referee-R1/report.md)
   - 2026-11-27 · Tested (exact, referee pending): the maximum forces the sign at 948 of 1,177 closures, even at 588 and odd at 360; counting holder types instead gives odd 619 and even 241, and the census types split 49 odd, 60 even, 64 free; the control forces even. The forced sign follows the principle, so the result is about this scaffold, not the model. [Most failing pairs](../research/MOST-FAILING-20261127-001/decision.md)
   - 2026-11-27 · Entered with the most-failing study's frozen design.
+
+### A316 · A reader is a set of distinctions whose values commute with every other reader's, read once per knot
+
+**Assumed** · 2026-11-27 · scaffold
+
+- **Statement.** A split of an odd birth choice (A314) into readers is a set of disjoint sets of distinctions with every failing pair inside one reader, so values of different readers commute, and no knot holding two distinctions of one reader, so each reader reads at most one of its values per knot. A split is strict when each reader holds exactly two values, which fail to commute.
+- **Why.** Under these conditions the odd close becomes a game of certainty between separated parties: each reads one of its own values per question, and the values outside readers are fixed. Readers are read off which values commute, not off places in the structure. Nothing in the model supplies the reading.
+- **Rests on it.** Every count of the readers study. [Design](../research/READER-SPLIT-20261127-001/README.md)
+- **Challenge.** Three other readings are possible. A reader could read two commuting values of one knot jointly; every odd close then has a split with one reader. Readers could be places in the structure, like the third-reader study's readers whom no knot joins. Readers could be required to be fixed by growth itself, such as the pairings of four mutually meeting knots. A result about the model must say which reading it uses.
+- **History.**
+  - 2026-11-27 · Entered with the readers study's frozen design.

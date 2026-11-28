@@ -1,0 +1,87 @@
+{
+  "weighting": "One vote per start reaching closure or per finished type for rows. One per actual knot subset in each row for sets.",
+  "row_checks": {
+    "census starts": {
+      "rows": 1819,
+      "subsets": 133264,
+      "integer_formula_pairs_at_full_patterns": 27761
+    },
+    "census types": {
+      "rows": 173,
+      "subsets": 20528,
+      "integer_formula_pairs_at_full_patterns": 3471
+    },
+    "extension": {
+      "rows": 115,
+      "subsets": 88448,
+      "integer_formula_pairs_at_full_patterns": 4176
+    },
+    "second sample": {
+      "rows": 1168,
+      "subsets": 1410816,
+      "integer_formula_pairs_at_full_patterns": 41995
+    }
+  },
+  "two independent census replays agree by round": {
+    "1": {
+      "closures": 1713,
+      "odd minimal whole-choice sets": 180,
+      "closures with an odd whole-choice set of any size": 179,
+      "closures with an odd minimal whole-choice set": 141,
+      "odd whole-choice sets of any size": 512,
+      "an arbitrary birth choice can close odd": 1091
+    },
+    "2": {
+      "closures": 105,
+      "odd minimal whole-choice sets": 14,
+      "closures with an odd whole-choice set of any size": 12,
+      "closures with an odd minimal whole-choice set": 11,
+      "odd whole-choice sets of any size": 65,
+      "an arbitrary birth choice can close odd": 85
+    },
+    "3": {
+      "closures": 1,
+      "odd minimal whole-choice sets": 0,
+      "closures with an odd whole-choice set of any size": 0,
+      "closures with an odd minimal whole-choice set": 0,
+      "odd whole-choice sets of any size": 0,
+      "an arbitrary birth choice can close odd": 1
+    }
+  },
+  "among 1025 birth-odd closures with no odd minimal set": {
+    "no odd whole-choice subset": 986,
+    "entire closure odd": 14,
+    "proper odd subset only": 25
+  },
+  "all subsets at the formerly cut closures": {
+    "rows": 24,
+    "subsets": 688128,
+    "subsets_above_old_cut": 260838,
+    "minimal_sets_above_old_cut": 0,
+    "even_sets_above_old_cut": 454,
+    "odd_sets_above_old_cut": 0,
+    "sizes of closures": {
+      "13": 16,
+      "16": 4,
+      "17": 2,
+      "14": 2
+    }
+  },
+  "birth eligibility on grown population rows": {
+    "census starts": {
+      "odd_minimal_sets": 194,
+      "odd_minimal_sets_eligible": 194,
+      "rows_with_any_eligible_odd_set": 191
+    },
+    "extension": {
+      "odd_minimal_sets": 16,
+      "odd_minimal_sets_eligible": 15,
+      "rows_with_any_eligible_odd_set": 10
+    },
+    "second sample": {
+      "odd_minimal_sets": 48,
+      "odd_minimal_sets_eligible": 48,
+      "rows_with_any_eligible_odd_set": 51
+    }
+  }
+}

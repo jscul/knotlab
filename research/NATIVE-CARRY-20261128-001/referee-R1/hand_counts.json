@@ -1,0 +1,417 @@
+{
+  "fixtures": {
+    "four mutually meeting knots": {
+      "cells": 3,
+      "choices": 8,
+      "orders_per_choice": 24,
+      "product_tests": 192,
+      "exchanges": 576,
+      "mismatches": 0,
+      "choices_constant_over_checked_orders": 2,
+      "whole_interleavings_first_order": 1,
+      "whole_interleavings_range_checked": [
+        1,
+        1
+      ],
+      "whole_reader_group_sizes": [
+        2,
+        2,
+        2
+      ],
+      "whole_failing_groups_meet_each_knot_at_most_once": true
+    },
+    "K_{2,3}": {
+      "cells": 6,
+      "choices": 64,
+      "orders_per_choice": 120,
+      "product_tests": 7680,
+      "exchanges": 30720,
+      "mismatches": 0,
+      "choices_constant_over_checked_orders": 2,
+      "whole_interleavings_first_order": 3,
+      "whole_interleavings_range_checked": [
+        1,
+        3
+      ],
+      "whole_reader_group_sizes": [
+        6
+      ],
+      "whole_failing_groups_meet_each_knot_at_most_once": false
+    },
+    "ring of four": {
+      "cells": 2,
+      "choices": 4,
+      "orders_per_choice": 24,
+      "product_tests": 96,
+      "exchanges": 288,
+      "mismatches": 0,
+      "choices_constant_over_checked_orders": 1,
+      "whole_interleavings_first_order": 0,
+      "whole_interleavings_range_checked": [
+        0,
+        1
+      ],
+      "whole_reader_group_sizes": [
+        2,
+        2
+      ],
+      "whole_failing_groups_meet_each_knot_at_most_once": true
+    },
+    "ring of three with a separate meeting": {
+      "cells": 3,
+      "choices": 8,
+      "orders_per_choice": 120,
+      "product_tests": 960,
+      "exchanges": 3840,
+      "mismatches": 0,
+      "choices_constant_over_checked_orders": 2,
+      "whole_interleavings_first_order": 0,
+      "whole_interleavings_range_checked": [
+        0,
+        2
+      ],
+      "whole_reader_group_sizes": [
+        4
+      ],
+      "whole_failing_groups_meet_each_knot_at_most_once": false
+    },
+    "doubled and separate": {
+      "cells": 2,
+      "choices": 4,
+      "orders_per_choice": 24,
+      "product_tests": 96,
+      "exchanges": 288,
+      "mismatches": 0,
+      "choices_constant_over_checked_orders": 2,
+      "whole_interleavings_first_order": 0,
+      "whole_interleavings_range_checked": [
+        0,
+        2
+      ],
+      "whole_reader_group_sizes": [
+        3
+      ],
+      "whole_failing_groups_meet_each_knot_at_most_once": false
+    },
+    "four mutually meeting, tripling one meeting": {
+      "cells": 5,
+      "choices": 32,
+      "orders_per_choice": 24,
+      "product_tests": 768,
+      "exchanges": 2304,
+      "mismatches": 0,
+      "choices_constant_over_checked_orders": 8,
+      "whole_interleavings_first_order": 1,
+      "whole_interleavings_range_checked": [
+        1,
+        3
+      ],
+      "whole_reader_group_sizes": [
+        2,
+        2,
+        4
+      ],
+      "whole_failing_groups_meet_each_knot_at_most_once": false
+    },
+    "Petersen": {
+      "cells": 75,
+      "choices": 1,
+      "orders_per_choice": 1,
+      "product_tests": 1,
+      "exchanges": 9,
+      "mismatches": 0,
+      "choices_constant_over_checked_orders": 1,
+      "whole_interleavings_first_order": 25,
+      "whole_interleavings_range_checked": [
+        25,
+        25
+      ],
+      "whole_reader_group_sizes": [
+        15
+      ],
+      "whole_failing_groups_meet_each_knot_at_most_once": false
+    },
+    "same multiplicities modulo two, with no cell": {
+      "cells": 0,
+      "choices": 1,
+      "orders_per_choice": 24,
+      "product_tests": 24,
+      "exchanges": 72,
+      "mismatches": 0,
+      "choices_constant_over_checked_orders": 1,
+      "whole_interleavings_first_order": 0,
+      "whole_interleavings_range_checked": [
+        0,
+        0
+      ],
+      "whole_reader_group_sizes": [],
+      "whole_failing_groups_meet_each_knot_at_most_once": true
+    }
+  },
+  "records": {
+    "census": {
+      "any_separated_reader_choice_against_reported_minimal_kinds": [
+        {
+          "odd_minimal": "K_{2,3}",
+          "some_birth_choice_splits": false,
+          "closures": 10
+        },
+        {
+          "odd_minimal": "K_{2,3}",
+          "some_birth_choice_splits": true,
+          "closures": 23
+        },
+        {
+          "odd_minimal": "K_{2,3} and four mutually meeting knots",
+          "some_birth_choice_splits": true,
+          "closures": 3
+        },
+        {
+          "odd_minimal": "four mutually meeting knots",
+          "some_birth_choice_splits": true,
+          "closures": 116
+        },
+        {
+          "odd_minimal": "none",
+          "some_birth_choice_splits": false,
+          "closures": 436
+        },
+        {
+          "odd_minimal": "none",
+          "some_birth_choice_splits": true,
+          "closures": 589
+        }
+      ]
+    },
+    "by_population": {
+      "census starts": {
+        "rows": 1819,
+        "has_even_minimal": 1717,
+        "qualifying_nonminimal_entire_row": 137,
+        "odd_minimal_kinds_per_row": {
+          "none": 1667,
+          "four mutually meeting knots": 116,
+          "K_{2,3}": 33,
+          "K_{2,3} and four mutually meeting knots": 3
+        }
+      },
+      "census types": {
+        "rows": 173,
+        "has_even_minimal": 10,
+        "qualifying_nonminimal_entire_row": 20,
+        "odd_minimal_kinds_per_row": {
+          "four mutually meeting knots": 78,
+          "none": 24,
+          "K_{2,3}": 40,
+          "K_{2,3} and four mutually meeting knots": 31
+        }
+      },
+      "extension": {
+        "rows": 115,
+        "has_even_minimal": 115,
+        "qualifying_nonminimal_entire_row": 0,
+        "odd_minimal_kinds_per_row": {
+          "none": 105,
+          "K_{2,3}": 6,
+          "four mutually meeting knots": 2,
+          "K_{2,3} and four mutually meeting knots": 2
+        }
+      },
+      "second sample": {
+        "rows": 1168,
+        "has_even_minimal": 1168,
+        "qualifying_nonminimal_entire_row": 8,
+        "odd_minimal_kinds_per_row": {
+          "none": 1124,
+          "four mutually meeting knots": 24,
+          "K_{2,3}": 20
+        }
+      }
+    },
+    "freeze": {
+      "README.md": {
+        "identical": false,
+        "frozen_bytes_are_prefix": true,
+        "appended_lines": 38,
+        "first_nonblank_appended_line": "## Results (28 November)"
+      },
+      "nativecarry.py": {
+        "identical": true,
+        "frozen_bytes_are_prefix": true,
+        "appended_lines": 0,
+        "first_nonblank_appended_line": null
+      }
+    },
+    "prior_whole_rule_type_rows_matched_by_size": {
+      "4": {
+        "types": 1,
+        "has_odd_minimal": 1
+      },
+      "5": {
+        "types": 3,
+        "has_odd_minimal": 2
+      },
+      "6": {
+        "types": 19,
+        "has_odd_minimal": 13
+      },
+      "7": {
+        "types": 150,
+        "has_odd_minimal": 133
+      }
+    }
+  },
+  "five-knot census closure, start index 643": {
+    "supports": [
+      [
+        0,
+        1,
+        2,
+        7
+      ],
+      [
+        0,
+        3,
+        4,
+        5,
+        6,
+        8
+      ],
+      [
+        1,
+        3,
+        4,
+        9
+      ],
+      [
+        2,
+        5,
+        6,
+        10
+      ],
+      [
+        7,
+        8,
+        9,
+        10
+      ]
+    ],
+    "sets_checked": {
+      "0,1,2,3": {
+        "cells": 4,
+        "choices": 1,
+        "orders_per_choice": 24,
+        "product_tests": 24,
+        "exchanges": 72,
+        "mismatches": 0,
+        "choices_constant_over_checked_orders": 1,
+        "whole_interleavings_first_order": 2,
+        "whole_interleavings_range_checked": [
+          0,
+          2
+        ],
+        "whole_reader_group_sizes": [
+          3,
+          3
+        ],
+        "whole_failing_groups_meet_each_knot_at_most_once": false
+      },
+      "0,1,2,4": {
+        "cells": 4,
+        "choices": 1,
+        "orders_per_choice": 24,
+        "product_tests": 24,
+        "exchanges": 72,
+        "mismatches": 0,
+        "choices_constant_over_checked_orders": 0,
+        "whole_interleavings_first_order": 1,
+        "whole_interleavings_range_checked": [
+          1,
+          2
+        ],
+        "whole_reader_group_sizes": [
+          2,
+          2,
+          3
+        ],
+        "whole_failing_groups_meet_each_knot_at_most_once": false
+      },
+      "0,1,3,4": {
+        "cells": 4,
+        "choices": 1,
+        "orders_per_choice": 24,
+        "product_tests": 24,
+        "exchanges": 72,
+        "mismatches": 0,
+        "choices_constant_over_checked_orders": 0,
+        "whole_interleavings_first_order": 1,
+        "whole_interleavings_range_checked": [
+          1,
+          2
+        ],
+        "whole_reader_group_sizes": [
+          2,
+          2,
+          3
+        ],
+        "whole_failing_groups_meet_each_knot_at_most_once": false
+      },
+      "0,2,3,4": {
+        "cells": 2,
+        "choices": 1,
+        "orders_per_choice": 24,
+        "product_tests": 24,
+        "exchanges": 72,
+        "mismatches": 0,
+        "choices_constant_over_checked_orders": 0,
+        "whole_interleavings_first_order": 1,
+        "whole_interleavings_range_checked": [
+          0,
+          1
+        ],
+        "whole_reader_group_sizes": [
+          2,
+          2
+        ],
+        "whole_failing_groups_meet_each_knot_at_most_once": true
+      },
+      "1,2,3,4": {
+        "cells": 4,
+        "choices": 1,
+        "orders_per_choice": 24,
+        "product_tests": 24,
+        "exchanges": 72,
+        "mismatches": 0,
+        "choices_constant_over_checked_orders": 1,
+        "whole_interleavings_first_order": 2,
+        "whole_interleavings_range_checked": [
+          0,
+          2
+        ],
+        "whole_reader_group_sizes": [
+          3,
+          3
+        ],
+        "whole_failing_groups_meet_each_knot_at_most_once": false
+      },
+      "0,1,2,3,4": {
+        "cells": 18,
+        "choices": 1,
+        "orders_per_choice": 120,
+        "product_tests": 120,
+        "exchanges": 480,
+        "mismatches": 0,
+        "choices_constant_over_checked_orders": 1,
+        "whole_interleavings_first_order": 7,
+        "whole_interleavings_range_checked": [
+          3,
+          9
+        ],
+        "whole_reader_group_sizes": [
+          11
+        ],
+        "whole_failing_groups_meet_each_knot_at_most_once": false
+      }
+    }
+  }
+}

@@ -116,6 +116,13 @@ have them.
 - `READER-SPLIT-20261127-001` — four mutually meeting knots, with any multiplicity, at 423 of its 1,177 closures; and
   the ring games, which select.
 - `MOST-FAILING-20261127-001` — a selection by a score (the most failing pairs). Here nothing is selected.
+- **Notice (28 November, referee R1).** Also related:
+  - `NO-WHOLE-STATE-20261126-001`, part E — it tested the simple criterion on all 173 census types: 21 whole patterns
+    commuting, 14 odd;
+  - `BIRTH-SIGN-WEIGHT-20261127-001` — it shares the four-knot fixture;
+  - `DROPPED-JUNCTION-20261119-001`, `FIRST-KNOT-20261118-001` and `WHAT-A-BIRTH-CARRIES-20261125-001` — they
+    concern the choice of a removed knot, a starting size and the information carried by a birth;
+  - the literature's convex parity graphs of Burger and Harborth, the same object for simple patterns.
 
 ## In standard terms
 
@@ -188,6 +195,23 @@ Its findings and what changed:
 
 ## Results (28 November)
 
+> **Refereed (R1, confirmed with fixes, one Block; [report](referee-R1/report.md)).** Corrections in full at the top of
+> [the decision](decision.md):
+> - **Block:** the 1,025 do not all need a selection. 39 have a nonminimal odd whole-choice set, so the split is
+>   152, 39 and 986.
+> - The classification covers the stated sizes, and none exists on exactly eight knots.
+> - Only four mutually meeting knots split into separated readers.
+> - Here the whole choice declares the internal pairs failing; 8 of 65 later odd sets use pairs not decidable at
+>   birth.
+> - The parity reduction needs the unreduced pattern for cell existence.
+> - Credit: Burger and Harborth's convex parity graphs, and the whole-state study's 21/14 on the census types.
+> - **Prior work, added by notice.** The whole-state study (`NO-WHOLE-STATE-20261126-001`, part E) tested the simple
+>   criterion on all 173 census types: 21 whole patterns commuting, 14 odd. The readable-sign-at-birth study
+>   (`BIRTH-SIGN-WEIGHT-20261127-001`) shares the four-knot fixture. The dropped-knot study
+>   (`DROPPED-JUNCTION-20261119-001`), the smallest-start study (`FIRST-KNOT-20261118-001`) and the
+>   birth-information study (`WHAT-A-BIRTH-CARRIES-20261125-001`) concern the choice of a removed knot, a starting size
+>   and the information carried by a birth, respectively.
+
 The run took 191 seconds under a 4 GiB cap with one thread (unit `native-carry-run`, no cut, peak 140 MiB).
 Outputs: [summary](summary.json), [gates](gates.json), [abstract sets](abstract.json), and [rows](rows.jsonl.gz) with
 every minimal set at every closure and type. Closures and types are one vote each; sets are one vote per set of knots.
@@ -200,7 +224,7 @@ every minimal set at every closure and type. Closures and types are one vote eac
 
 **P3, measured.**
 
-| Population | Closures or types | With a minimal set | With an odd one | Odd sets: four mutually meeting knots / K_{2,3} | Whole closure a set (odd) |
+| Population | Closures or types | With a minimal set | With an odd minimal set | Odd sets: four mutually meeting knots / K_{2,3} | Whole closure a set (odd) |
 | --- | --- | --- | --- | --- | --- |
 | Census starts | 1,819 | 1,761 | 152 | 153 / 41 | 145 (53) |
 | Census types | 173 | 151 | 149 | 489 / 281 | 21 (14) |
@@ -208,10 +232,12 @@ every minimal set at every closure and type. Closures and types are one vote eac
 | Second sample | 1,168 | 1,168 | 44 | 26 / 22 | 8 (4) |
 
 - **Census starts.** Birth choices attain odd at 1,177 closures, and 152 of them (13%) have an odd minimal set. Every
-  closure with one attains odd. The other 1,025 attain odd only through a selection. No closure has an odd set where
+  closure with one attains odd. Of the other 1,025, 39 have a nonminimal odd whole-choice set and 986 have none (R1). No closure has an odd set where
   birth choices never close odd, at round 1 (zero by construction) or at the 106 later closures.
-- **Even sets** are four knots with doubled meetings (6,434 of them with two cells, the repeated cycle) and five-knot
-  rings of three with a separate meeting. They are everywhere: at 1,761 census closures and at every sampled closure.
+- **Even sets** are four knots with doubled meetings (6,434 two-cell minimal subsets in the census-start population,
+  the repeated cycle) and five-knot rings of three with a separate meeting. Among the 1,819 census starts that close,
+  1,761 have a minimal set of either sign and 1,717 an even minimal set; every sampled closure has an even minimal set
+  (R1).
 - **Not run:** subsets above eight knots at 1 extension closure and 23 second-sample closures (thirteen to seventeen
   knots). A ten-knot set like the Petersen graph would not have been seen there.
 
@@ -220,6 +246,6 @@ every minimal set at every closure and type. Closures and types are one vote eac
   the census closures where birth choices attain odd (one vote per census start).
 - It does so only as four mutually meeting knots or K_{2,3}, the literature's two outerplanarity obstructions, here as
   sets of knots. Through seven knots no other kind exists (P1), and in the four populations none occurs (P2).
-- At the other 87% of the odd-attaining closures the contradiction needs a selection, a birth choice that takes some
-  unheld pairs and not others; the ring games are the example.
-- The census types carry it far more often (149 of 173), as dense patterns on seven knots.
+- At the other odd-attaining closures the contradiction needs a selection, except at 39 with a nonminimal odd
+  whole-choice set (R1): 986 of 1,177 have no odd whole-choice set, the ring games among them.
+- The census types carry it far more often (149 of 173, under one vote per finished type on four to seven knots).

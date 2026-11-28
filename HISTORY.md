@@ -3,6 +3,10 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 28 November 2026 · Whole-choice sets refereed: one Block
+
+**Corrections from [an independent referee's report](research/NATIVE-CARRY-20261128-001/referee-R1/report.md), folded into [the decision](research/NATIVE-CARRY-20261128-001/decision.md).** The 1,028 odd minimal sets in the four populations and their two kinds (four mutually meeting knots, K_{2,3}) stand. Block: the closures without an odd minimal set do not all need a selection; 39 more have an odd nonminimal whole-choice set, so of the 1,177 odd-attaining census closures 152, 39 and 986 have an odd minimal set, an odd nonminimal one, and none. Narrowed: the classification's sizes; only four mutually meeting knots split into separated readers; a few later odd sets use pairs not decidable at birth; the parity reduction needs the unreduced pattern. Credit: for simple patterns the object is the literature's convex parity graph (Burger and Harborth), and an earlier whole-state study had tested the criterion on the census types.
+
 ## 28 November 2026 · Even choices refereed: one Block on P3's scope
 
 **Corrections from [an independent referee's report](research/EVEN-ORIENT-20261127-001/referee-R1/report.md), folded into [the decision](research/EVEN-ORIENT-20261127-001/decision.md).** The six-pair minimum and the three smallest kinds of even non-orientable choice stand. Block: the prediction that the extension's sampled starts make such a choice fails in the study's own twice-covered scope (zero of 115; its one closure covers a pair four times); the second sample found two of 1,168. Narrowed: each six-pair kind needs at least thirteen start distinctions, one more than any census start, which the referee proved by hand; removing only the common-knot veto at census start 6830 lets growth make the second Klein bottle. Two counts were corrected (the family's closures split over two rounds; whole choices add two sampled closures). Credit: the six-vertex minimum and both six-vertex kinds are in the published quadrangulation catalogues.

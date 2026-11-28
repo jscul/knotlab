@@ -1,29 +1,61 @@
-# Whole-choice sets: the pattern alone carries the readers' contradiction only as K4 or K_{2,3}, at 13% of growth's odd closures
+# Whole-choice sets: two cell patterns account for all 1,028 odd minimal sets in the four populations
+
+> **Referee report R1, 28 November 2026: confirmed with fixes, one Block** ([the report](referee-R1/report.md)). The
+> 1,028 odd minimal sets and their two kinds reproduce, every subset of the 24 cut closures was read (none added), and
+> no odd minimal set exists on exactly eight knots. Read this record with these corrections (logged in
+> `docs/CORRECTIONS.md`):
+> - **Block: "the other 1,025 attain odd only through a selection" is false.** Minimality was tested against subsets of
+>   either sign, so an odd whole-choice set whose smaller sets are all even was never listed. Of the 1,177 census starts
+>   whose closures admit an odd birth choice, 152 have an odd minimal whole-choice set, 39 more have only nonminimal odd
+>   whole-choice sets, and 986 have no odd whole-choice set. Every one of the 191 positives has a birth-legal witness.
+>   If "nothing selected" requires the entire closure, the split is 53 against 1,124. Census start 643's five-knot
+>   closure, for example, has 18 cells that close odd in every order, while its only minimal sets close even.
+> - **Narrowing: the classification's scope.** The abstract enumeration covered simple patterns through seven knots and
+>   patterns with doubled meetings on four and five knots; the referee excluded odd minimal sets on exactly eight knots;
+>   the Petersen graph gives a different kind on ten.
+> - **Narrowing: readers.** A whole choice that splits into separated readers is always the three-reader game (the
+>   referee's proof). K_{2,3}'s six distinctions fall in one reader, which would have to read three of them at one knot.
+>   So where a count is meant, "the readers' contradiction" should read "an odd product of commuting checks". Of the 152
+>   closures, 119 have a splitting odd minimum and 33 have only nonsplitting ones.
+> - **Narrowing: whole choice and birth.** Here the whole choice declares all internal candidate pairs to fail; the
+>   records' earlier whole choices range over selections. At the later closures 8 of 65 odd sets use pairs not decidable
+>   at birth; 257 of the 258 odd minima in the grown populations are birth choices.
+> - **Narrowing: parity.** Coverage parities and the sign depend only on multiplicities mod 2, but cell existence, cell
+>   counts and minimality need the unreduced pattern; the definition needs at least one candidate cell.
+> - **Not a block.** Counts and weightings were stated more exactly (1,761 census closures have a minimal set of either
+>   sign, 1,717 an even minimal one), and the gates were narrower than worded (205 atlas patterns with an isolated knot
+>   were skipped in the formula check; nonminimal subsets were not order-checked). Credit: for simple patterns a
+>   whole-choice set is the literature's convex parity graph (Burger and Harborth), and the program's whole-state study
+>   already tested the simple criterion on the census types (21 whole patterns commuting, 14 odd). Conway–Gordon counts
+>   pairs with odd linking number.
+
 
 Epic `NATIVE-CARRY-20261128-001`, direction 1 of the even-orientation study (the cross-pair study's direction 2,
 sharpened), taken at a STOP under the owner's standing rule. Design, frozen predictions, review and results:
 [README.md](README.md); code [nativecarry.py](nativecarry.py); outputs [summary.json](summary.json),
 [gates.json](gates.json), [abstract.json](abstract.json) and [rows.jsonl.gz](rows.jsonl.gz). Exhaustive over every subset
 of knots at closures of at most twelve knots, and over subsets of at most eight at the 24 larger ones. Closures and types
-are one vote each; sets are one vote per set of knots. Independent referee pending (brief in `referee-R1/`).
+are one vote each; sets are one vote per set of knots. Refereed (R1, confirmed with fixes, one Block; [report](referee-R1/report.md)).
 
 | Scope | Verdict | Why |
 | --- | --- | --- |
-| This attempt — which sets of knots commute with nothing selected, and where growth's closures have them | **Status:** Successful | All gates hold; P1 and P2 hold; referee pending |
-| Local direction — whether growth's pattern alone carries the readers' contradiction | Retire | Answered: at 152 of the 1,177 census closures where birth choices attain odd, only as four mutually meeting knots or K_{2,3}; elsewhere a selection is needed |
+| This attempt — which sets of knots commute with nothing selected, and where growth's closures have them | **Status:** Successful | The parity conclusions hold (gates narrower than worded, R1); P1 and P2 hold; refereed, one Block on the reading of the remaining closures |
+| Local direction — whether growth's pattern alone carries an odd product of commuting checks | Retire | Answered: of the 1,177 census closures where birth choices attain odd, 152 have an odd minimal set (always four mutually meeting knots or K_{2,3}), 39 more an odd nonminimal one, and 986 none (R1) |
 | Broader exploration — the readers' games on growth's closures | Continue | Where the pattern does not carry the sign, what in growth could select it is the open question this line keeps returning to |
-| Long-term goal — G18 Comparing growth laws | Capability gained | Growth's odd closures split into those whose pattern carries the contradiction with nothing selected and those that need a selection, with the two carrying kinds named |
+| Long-term goal — G18 Comparing growth laws | Capability gained | Growth's odd closures split into those with an odd whole-choice set (191) and those that need a selection of pairs (986), with the two minimal kinds named; only four mutually meeting knots split into separated readers (R1) |
 
 Place the knots on a circle and draw each distinction as a chord between its holders. The closing sign of any choice is
 then the parity of crossing chords among its failing pairs, and commutation is exactly what keeps that parity the same
 in every order (the literature's parity-invariance argument). A **whole-choice set** (provisional word) is a set of
-knots whose whole choice commutes with nothing selected: every unheld pair held within it fails. Through seven knots,
-the only odd minimal ones are four mutually meeting knots and K_{2,3}, two knots meeting the same three others. These
+knots with at least one candidate cell whose whole choice commutes with nothing selected: every unheld pair held within
+it fails. Through seven knots (simple patterns, and four or five knots with doubled meetings), the only odd minimal ones
+are four mutually meeting knots and K_{2,3}, two knots meeting the same three others. These
 are the literature's two obstructions to outerplanarity, here as sets of knots (P1). The literature's Petersen graph,
 on ten knots, shows larger ones exist; none occurs in the populations (P2).
 
-Growth's census closures carry the contradiction this way at 152 of the 1,177 where birth choices attain odd (13%, one
-vote per census start). The other 1,025, the ring games among them, attain odd only through a selection. The census
+Of the 1,177 census starts whose closures admit an odd birth choice (one vote per start), 152 have an odd minimal
+whole-choice set, 39 more have only nonminimal odd whole-choice sets, and 986 have no odd whole-choice set (R1). At the
+986, the ring games among them, an odd product of commuting checks needs a selection of pairs. The census
 types carry it at 149 of 173. Sampled larger starts carry it at 10 of 115 and 44 of 1,168 closures under the extension's
 weighting.
 
@@ -31,7 +63,7 @@ weighting.
 
 | # | Direction | Payoff | Concreteness | First step → stop when | Status |
 | --- | --- | --- | --- | --- | --- |
-| 1 | A selection drawn from growth itself: at the 1,025 odd closures the pattern does not carry, does anything growth records (its births, their parents, the round a pair is decided) single out the failing pairs, and with which sign? | 3/3 — Barrier | 2/3 — Testable | List each such closure's odd choices against one growth-recorded selection (each birth's parents and newborn, read as a set) → a recorded selection that commutes and closes odd at some closure, or none | Selected · next |
+| 1 | A selection drawn from growth itself: at the 986 odd-attaining census closures with no odd whole-choice set (R1), does anything growth records (its births, their parents, the round a pair is decided) single out the failing pairs, and with which sign? | 3/3 — Barrier | 2/3 — Testable | List each such closure's odd choices against one growth-recorded selection (each birth's parents and newborn, read as a set) → a recorded selection that commutes and closes odd at some closure, or none | Selected · next |
 | 2 | Petersen-like sets in growth: read the 24 closures above twelve knots with every subset, and grow starts large enough to hold ten knots of three distinctions each | 1/3 — Incremental | 2/3 — Testable | Read the 24 closures fully → a larger odd set, or none at that size | Alternative · deferred |
 | 3 | Back to a native line: G1 Space from a law, idle since 21 November | 3/3 — Barrier | 1/3 — Stated | Reread G1's open question → a bounded test | Alternative · deferred |
 | 4 | Credit: check the crossing-parity and outerplanarity credits (Kleitman; Conway–Gordon and Sachs; Chartrand–Harary) and whether whole-choice sets have a literature name | 1/3 — Incremental | 3/3 — Ready | Read the cited works → credit, or a note | Alternative · deferred |
@@ -97,22 +129,23 @@ It also found the Petersen graph, the minor and credit corrections, weaker gates
   | Extension closures | 10 | 115 |
   | Second-sample closures | 44 | 1,168 |
 
-  - Every census closure with an odd set attains odd under birth choices. 1,025 attain odd only through a selection.
+  - Every census closure with an odd set attains odd under birth choices. Of the others, 39 have a nonminimal odd
+    whole-choice set and 986 have none (R1).
   - Even sets are everywhere: four knots with doubled meetings, and rings of three with a separate meeting.
 
 ## Intuitions (exact links, not evidence)
 
 - **The contradiction carried with nothing selected is an unavoidable crossing.**
-  - A set of knots carries the readers' contradiction exactly when its meeting pattern, drawn with the knots on a
+  - A set of knots carries an odd product of commuting checks exactly when its meeting pattern, drawn with the knots on a
     circle, has an odd number of crossing chord pairs in every order.
   - The literature's Conway–Gordon theorem has the same shape: K6 placed in space always has an odd number of linked
-    pairs of disjoint triangles (the literature's words), and the count is free of the placement for the same parity
-    reason.
+    pairs of disjoint triangles with odd linking number (the literature's words), and the count is free of the placement
+    for the same parity reason.
   - Here the unavoidable crossing is the outerplanarity obstruction, as K4 or K_{2,3}.
   - The cheapest test is to compute, on the 1,028 odd sets, the crossing count of the natural circular order of their
     meeting patterns.
 - **A selection is what an ordinary drawing would need: a choice of which chords to draw.**
-  - At the 1,025 closures the pattern does not carry, the odd sign appears only for chosen subsets of the chords. The
+  - At the 986 closures with no odd whole-choice set, the odd sign appears only for chosen pairs of distinctions. The
     ring game selects n of the closure's candidate cells, each pairing a meeting of the hub with the ring meeting
     opposite it.
   - Whether growth records such a choice is direction 1.

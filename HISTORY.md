@@ -3,6 +3,10 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 27 November 2026 · Commutation fixed at birth refereed: confirmed with fixes
+
+**Corrections from [an independent referee's report](research/LOCAL-COMMUTE-20261127-001/referee-R1/report.md), folded into [the decision](research/LOCAL-COMMUTE-20261127-001/decision.md).** The counts stand: odd closes are attainable under birth choices at 1,177 of the 1,187 closures that are not outerplanar. Narrowed: every structure admits a state under the all-commuting choice, and from an open start every birth choice admits the signs; each of the ten losses needs two forbidden pairs; half the complete choices close odd under uniform weighting, the sign being fixed by the earlier rounds; an affine condition, not only a nonlinear principle, can select the odd sign. Credit: [an earlier referee](research/BUILT-BINDING-20261126-001/referee-R1/report.md) had the same closures.
+
 ## 27 November 2026 · The toy-theory placement refereed: confirmed with fixes
 
 **Corrections from [an independent referee's report](research/TOY-PHASE-20261127-001/referee-R1/report.md), folded into [the decision](research/TOY-PHASE-20261127-001/decision.md).** The counts stand: growth's four-knot closure is a toy state of Spekkens's toy theory under all 216 reader assignments and, with one qubit per reader carrying two distinct Pauli reads, a stabilizer state under none. Withdrawn: the argument that no operation on a knot's values can square to the knot's allowed change, which holds for a three-place knot but not a four-place one; what holds a value model at the classical limit is one common weighting of its reads (Fine), not the order of its operations. Narrowed: the perfect three-reader target, not every excess, forces reads whose product squares to −1; the knot-as-toy-bit identification covers states, questions, one-read preparations and shifts. Credit: [an earlier study](research/NATIVE-PHASE-READ-20261125-001/results.md) had already read one knot as a single reader's three questions and found the four-place case.

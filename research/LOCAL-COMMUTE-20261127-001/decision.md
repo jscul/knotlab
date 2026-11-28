@@ -1,5 +1,38 @@
 # Commutation fixed at birth: can growth's own closures still close odd?
 
+> **Referee report R1, 27 November 2026: confirmed with fixes, no Block** ([the report](referee-R1/report.md)). Every
+> archived row was regenerated; every closure verdict, the 1,177 and the ten losses reproduce, and all 52 witnesses of the
+> lemma A6 were constructed and checked. Read this record with these narrowings (logged in `docs/CORRECTIONS.md`):
+> - **A state, and its signs.** Every structure admits a state under the all-commuting choice. From an open start, every
+>   complete birth choice also admits the prescribed signs through the closure (each implied birth's sign forced). On a
+>   start already closed at round 0, prescribed signs must multiply to the reordering sign: 149 of the 230 such starts
+>   allow a commuting choice whose product is −1, so all-even signs fail there.
+> - **What the ten losses need.** Each has three forbidden pairs, and every odd whole choice uses one particular pair and
+>   exactly one of the other two. On each, the present holders already certify that one of the needed pairs can never be
+>   held together (its knots share no neighbour), but allowing that pair alone restores no odd close. So "a rule that looks
+>   no round ahead cannot decide that pair" becomes "the held-twice test excludes both pairs an odd witness needs".
+> - **What fixes the sign.** Half the complete birth choices close odd at each closure where odd is attainable, under
+>   uniform weighting of those choices, and the round-by-round random rule samples that weighting. There is no fresh
+>   decision at the close: at 59 of the 85 round-2 closures where odd is attainable the sign is already fixed by the round-0
+>   choices, at the other 26 by round 1. And "any principle that is itself a linear set of choices containing the
+>   classical one leaves the sign free" is wrong as stated: a homogeneous restriction can force even (for example, the
+>   choices on which the cost vanishes) but never odd, and an affine condition can select odd; no need for a nonlinear
+>   principle follows.
+> - **Denominators.** The natural birth rule loses its state on 4,941 of the 5,086 funded starts within the cap, and on
+>   4,966 of all 5,111 funded starts counting the 25 cut ones (all of which had already failed). Of the 200 starts sampled
+>   for round 5, 178 completed it and all kept growing (no closure), 22 crossed the cap, and all 200 had already lost the
+>   natural state by round 2. The random test selected 500 starts, 497 eligible, five runs each.
+> - **The two-reader sentence.** The bound of 2 holds for the specified stabilizer preparation with product questions
+>   that commute across readers; a common eigenstate of the knot checks alone need not be that preparation, and no reader
+>   scores were measured here.
+> - **The lemma and a control (not a block).** In A6 the common knot is a fourth knot whose three paths meet only there,
+>   and at a repeated meeting one shared distinction is chosen for the step. The archived A1 check took pairs already
+>   filtered against the final holders, so it could not fail; the referee rebuilt the pairs at decision time (zero
+>   violations on 22,044 stages).
+> - **Credit (not a block).** The closure bookkeeping is not new: the built-binding study's referee had the identical 1,819
+>   start indices and closing rounds, and the erasure-and-closing-signs study's closing law gives A3. The restricted-choice
+>   loss census is new.
+
 Epic `LOCAL-COMMUTE-20261127-001`, at the owner's go-ahead on direction 1 of the toy-theory placement. Design, arguments,
 frozen predictions, review and results: [README.md](README.md); code [local_commute.py](local_commute.py) and the post hoc
 [posthoc_losses.py](posthoc_losses.py); outputs [summary.json](summary.json), [gates.json](gates.json),
@@ -9,7 +42,7 @@ and exact GF(2) counts over the census of 7,075 starts, one vote per start; inde
 
 | Scope | Verdict | Why |
 | --- | --- | --- |
-| This attempt — commutation declared and fixed at birth on growth's closures | **Status:** Successful | Birth rules keep a state on every grown structure; odd attainable at 1,177 of the 1,187 closures that are not outerplanar |
+| This attempt — commutation declared and fixed at birth on growth's closures | **Status:** Successful | Every structure admits a state; from an open start every birth choice admits the signs; odd attainable at 1,177 of the 1,187 closures that are not outerplanar (narrowed by R1) |
 | Local direction — the birth rule | Retire (answered) | It loses the odd close only at 10 round-2 closures whose odd needs a pair taken apart one round later |
 | Broader exploration — the quantum part under a declared phase | Known alternatives | A principle that selects the sign; readers on grown closures; two-reader excess needs states outside this extension |
 | Long-term goal — G18 Comparing growth laws | Capability gained | One declared primitive gives growth's closures the three-reader-type contradiction, but which closures close odd is a free choice |
@@ -17,8 +50,9 @@ and exact GF(2) counts over the census of 7,075 starts, one vote per start; inde
 The extension works as a representation: with commutation declared once at birth, and the closing sign forced by the cost
 of reordering, every structure growth makes keeps a stabilizer state, and nearly every closure that can close odd under
 any choice can close odd under a choice made at birth. What it does not do is select the sign. At every closure where odd
-is attainable, the choices that close odd are exactly half, and the round-by-round random rule closed odd in 163 of 340
-runs there. Growth fixes which closures can close odd. A choice the model does not make fixes which do.
+is attainable, the choices that close odd are exactly half under uniform weighting of the complete choices, and the
+round-by-round random rule, which samples that weighting, closed odd in 163 of 340 runs there. Growth fixes which closures
+can close odd; a choice the model does not make, made in the earlier rounds, fixes which do (narrowed by R1).
 
 **Next step:** Research directions — selected: #1
 
@@ -95,9 +129,10 @@ before the freeze. It settled the three-label closure and gave the lemma A6; sev
   close needs the finished structure only where a pair's fate is decided by the next round's grouping. This is the
   literature's contrast between causal hidden-variable accounts and all-at-once ones (Wharton and Argaman, Rev. Mod. Phys.
   92, 021002, 2020), which the record has cited before for weighting a whole history.
-- **Half the choices.** A linear condition on GF(2) choices that is not identically zero holds on exactly half of them. So
-  any principle that is itself a linear set of choices containing the classical one leaves the sign free. A principle that
-  selects the sign must be nonlinear, like a maximum (row 1).
+- **Half the choices.** A linear condition on GF(2) choices that is not identically zero holds on exactly half of them. A
+  homogeneous restriction (a linear set containing the classical choice) can force even but never odd; an affine
+  condition can select odd, but only by naming it. A maximum is one principle that excludes the classical choice without
+  naming the sign (row 1). (Corrected by R1 from "leaves the sign free" and "must be nonlinear".)
 
 ## Final report as sent
 

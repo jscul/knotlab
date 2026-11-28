@@ -1,5 +1,14 @@
 # Commutation fixed at birth: can growth's own closures still close odd?
 
+> **Notice, 27 November 2026: refereed (R1), confirmed with fixes, no Block** ([the report](referee-R1/report.md); the
+> narrowings in full at the top of [the decision](decision.md)). The frozen text below is unchanged. Read it with these
+> corrections: A2's "every birth choice keeps a state at every round" holds with signs prescribed from an open start, and
+> on starts already closed at round 0 only when the signs multiply to the reordering sign; the ten losses each need two
+> forbidden pairs, one of which present information can certify; the sign is fixed by the earlier rounds' choices, half
+> and half under uniform weighting of complete choices; the denominators are 4,941 of 5,086 within the cap and 4,966 of
+> 5,111 in all; A6's common knot is a fourth knot; the archived A1 check could not fail (rebuilt by the referee, zero
+> violations); and the prior-work line calling the built-binding study unrelated is wrong (same closure bookkeeping).
+
 Epic `LOCAL-COMMUTE-20261127-001`, under G18 Comparing growth laws, at the owner's go-ahead ("Yes, let's continue") on
 direction 1 of the toy-theory placement (`TOY-PHASE-20261127-001#1`): add a phase to the model, with a rule that places
 signs at birth, and test which grown structures keep a state. Design, arguments and predictions frozen before the code

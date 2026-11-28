@@ -261,3 +261,58 @@ knots or fewer only, and it ran no predicted case. Its findings and what changed
    - The literature was named with confidence for the three works cited above; K_{2,2,2} on the Klein bottle could not
      be cited.
    - The Klein-bottle case split in item 1 was added at the reviewer's suggestion.
+
+## Results (28 November)
+
+The run took 351 seconds under a 4 GiB cap with one thread, unit `even-orient-run`, with no cut and peak memory of 181
+MiB. The outputs are:
+- [summary](summary.json) and [gates](gates.json);
+- [abstract choices](abstract.json) and [built starts](built.json);
+- rows for [the extension](extension.jsonl), [the second sample](second_sample.jsonl) and [the census starts](census_starts.jsonl);
+- each population's non-orientable even choices: [extension](extension_nonorientable_even.json), [second sample](second_sample_nonorientable_even.json), [census starts](census_starts_nonorientable_even.json).
+
+Closures are one vote per draw or census start, choices one vote per labelled choice.
+
+| # | Verdict | Count |
+| --- | --- | --- |
+| G | holds | (i) No non-orientable even choice has five pairs or fewer. Kinds (a), (b) and (c) are found. Euler count 0 on five knots occurs (the literature's torus) and is always orientable. The sign equals the same-order parity on all 622,841 structures. The general machinery and the brute-force orientation test agree on all 23 classes. (ii) Every doubled meeting at every closure examined joins two start knots. (iii) The census-start closures reproduce the referee's replay: 1,819 closures; 6,534 minimal strict even birth choices, all orientable; 4,803 odd, none orientable. (iv) No listing reached its cap, and every orientation was decided. |
+| P1 | holds | The five classes in scope all put two values on one pair of knots. On six knots: (b) (60 labelled), (c) (360), a pinched seven-pair one with separated Euler count 0 (720) and a seven-pair one of Euler count −1 (180, the literature's non-orientable surface of Euler characteristic −1). On seven knots through six pairs: (a) (210). So with at most one value on each pair of knots, the fewest is seven pairs. At seven pairs on seven knots there are 18 classes, three of them with no doubled pair (all Euler count 0, 2,520 labelled each). |
+| P2 | holds | B1 closes in round 1 by one birth from knots 0, 1 and 2, and holds (b). B2 closes in round 1 by one birth from the ring 3, 4, 5, and holds (a), using the newborn's three distinctions. B3 (census start 6830) stalls before any birth, so it has no birth from 0, 1 and 3. |
+| P3 | holds | One of the extension's 115 closures (draw 3: six start knots, one round, seven knots, 18 distinctions) has 32 minimal strict even birth choices that cannot be oriented. All have eight pairs, use the newborn's values and cover some pair of knots four times. |
+
+**P4, measured.**
+- **B4**, one distinction past the census's bounds, closes in round 1. Its one birth comes from four parents (0, 1, 3 and 4) and holds (c) with the newborn's values.
+- **Why B3 stalls** (read from the engine after the run). Knot 4 meets all three live knots, so the join rule does not
+  make them one group. The engine forms three groups, the pairs of 0, 1 and 3, and each knot would need a distinction
+  for each of its two groups. With one loose distinction each, all three are short by one. In B4, knot 4 is itself live
+  and the four knots form one group that no other knot meets entirely.
+- **The B1 family.** Of 728 placements of loose distinctions, 44 close (all in one round), 113 keep growing and 571
+  stall. All 44 closures hold (b), as they must.
+- **The second sample**, 30,000 draws under the extension's weighting, closes 1,168 times. Two closures have
+  non-orientable even birth choices, both covered twice:
+  - draw 5660 (six start knots, one round, seven knots): 32 seven-pair Klein bottles using the newborn's values, with
+    two doubled pairs;
+  - draw 24844 (eight start knots, one round, nine knots): 64 eight-pair projective planes on start knots alone, each
+    with one pinched knot and four doubled pairs.
+- **Whole choices.** At the extension's draw 203 (six start knots, two rounds, nine knots), whole choices add four
+  eight-pair Klein bottles that birth choices do not have. At the census-start closures, whole choices add four odd
+  choices and no non-orientable even one.
+- **Weighting.** Under the extension's weighting, 3 of the 1,283 sampled closures (0.23%) have a non-orientable even
+  minimal strict birth choice. Of their 41,808 even choices, 128 (0.31%) cannot be oriented. No sampled closure holds
+  (a), (b) or (c) themselves; those found have seven or eight pairs.
+- **E.** Labelled structures by knots: 1, 61, 8,547 and 614,232 (seven knots through seven pairs). Non-orientable even
+  classes: none on four or five knots, 4 on six, 19 on seven.
+
+**What it says.**
+- Growth's census closures can be oriented because of the census starts' bounds, not because of a property of growth.
+- Each six-pair kind is out of reach from a start of at most five knots and twelve distinctions, by the birth rule and
+  the join rule:
+  - (b) needs six start knots;
+  - (c)'s missing birth is barred at census start 6830 (B3 stalls);
+  - (a) needs newborns that meet.
+- **What could not be ruled out by hand.** Two things stand only on the referee's replay:
+  - the seven- and eight-pair kinds stay out of the census closures;
+  - (a) stays out at second-round closures.
+- With one more distinction (B4) or one more start knot (B1, B2, the sampled starts of six to eight knots), growth makes
+  these choices. In B2 and B4 the newborn's own distinctions are among their values. Under the extension's weighting,
+  this is rare.

@@ -1,0 +1,2838 @@
+{
+  "word_source": "choices.jsonl.gz; one vote per labelled word unless noted",
+  "merge_rows_schema": {
+    "states": "list indexed from zero; each entry [holder terms, base kind or null, legal steps]",
+    "step": "[knot, forced, doubled, following state index]",
+    "words": "[selected candidate-pair indices, initial state index]",
+    "fewest_routes": "one entry per occurring size, move count or base kind across every fewest word"
+  },
+  "rosters_compared": {
+    "closure": 1177,
+    "type": 173
+  },
+  "archive_field_differences": [],
+  "fewest_no_odd_ring": {
+    "rosters": 252,
+    "words": 2102,
+    "every_roster_matches_earlier_referee": true
+  },
+  "by_size": {
+    "closure 3 pairs": {
+      "choices": 1551,
+      "minimal": 1551,
+      "decode": 1551,
+      "three-reader game": 1551
+    },
+    "closure 4 pairs": {
+      "choices": 2298,
+      "minimal": 2298,
+      "decode": 2298,
+      "three-reader game": 2298
+    },
+    "closure 5 pairs": {
+      "choices": 926,
+      "minimal": 904,
+      "decode": 904,
+      "three-reader game": 816,
+      "ring game of 5": 88
+    },
+    "closure 6 pairs": {
+      "choices": 50,
+      "minimal": 50,
+      "decode": 46,
+      "three-reader game": 44,
+      "ring game of 5": 2
+    },
+    "closure 7 pairs": {
+      "choices": 0,
+      "minimal": 0,
+      "decode": 0
+    },
+    "closure 8 pairs": {
+      "choices": 0,
+      "minimal": 0,
+      "decode": 0
+    },
+    "type 3 pairs": {
+      "choices": 489,
+      "minimal": 489,
+      "decode": 489,
+      "three-reader game": 489
+    },
+    "type 4 pairs": {
+      "choices": 0,
+      "minimal": 0,
+      "decode": 0
+    },
+    "type 5 pairs": {
+      "choices": 1975,
+      "minimal": 1975,
+      "decode": 1975,
+      "ring game of 5": 1975
+    },
+    "type 6 pairs": {
+      "choices": 2000,
+      "minimal": 2000,
+      "decode": 0
+    },
+    "type 7 pairs": {
+      "choices": 0,
+      "minimal": 0,
+      "decode": 0
+    },
+    "type 8 pairs": {
+      "choices": 1726,
+      "minimal": 1726,
+      "decode": 0
+    }
+  },
+  "path_measures_fields": [
+    "pairs",
+    "base or other ending",
+    "c",
+    "forced ordinary merges",
+    "other ordinary merges",
+    "doubled removals",
+    "full sizes at all knots merged through, repeated per step"
+  ],
+  "path_measures_weighting": "One vote per word admitting the given profile. A word can have multiple profiles in the all-orders table. The first table selects by original knot and setting labels.",
+  "path_measurements": {
+    "closure: dimension through fourteen, all": [
+      [
+        [
+          3,
+          "three-reader game",
+          1,
+          0,
+          0,
+          0,
+          []
+        ],
+        695
+      ],
+      [
+        [
+          4,
+          "three-reader game",
+          1,
+          1,
+          0,
+          0,
+          [
+            2
+          ]
+        ],
+        128
+      ],
+      [
+        [
+          4,
+          "three-reader game",
+          1,
+          1,
+          0,
+          0,
+          [
+            3
+          ]
+        ],
+        188
+      ],
+      [
+        [
+          4,
+          "three-reader game",
+          1,
+          1,
+          0,
+          0,
+          [
+            4
+          ]
+        ],
+        82
+      ],
+      [
+        [
+          4,
+          "three-reader game",
+          1,
+          1,
+          0,
+          0,
+          [
+            5
+          ]
+        ],
+        14
+      ],
+      [
+        [
+          4,
+          "three-reader game",
+          1,
+          1,
+          0,
+          0,
+          [
+            6
+          ]
+        ],
+        2
+      ],
+      [
+        [
+          5,
+          "ring game of 5",
+          1,
+          0,
+          0,
+          0,
+          []
+        ],
+        5
+      ],
+      [
+        [
+          5,
+          "three-reader game",
+          0,
+          1,
+          1,
+          0,
+          [
+            3,
+            6
+          ]
+        ],
+        8
+      ],
+      [
+        [
+          5,
+          "three-reader game",
+          0,
+          1,
+          1,
+          0,
+          [
+            4,
+            4
+          ]
+        ],
+        8
+      ],
+      [
+        [
+          5,
+          "three-reader game",
+          1,
+          2,
+          0,
+          0,
+          [
+            2,
+            3
+          ]
+        ],
+        6
+      ]
+    ],
+    "closure: dimension through fourteen, first": [
+      [
+        [
+          3,
+          "three-reader game",
+          1,
+          0,
+          0,
+          0,
+          []
+        ],
+        695
+      ],
+      [
+        [
+          4,
+          "three-reader game",
+          1,
+          1,
+          0,
+          0,
+          [
+            2
+          ]
+        ],
+        128
+      ],
+      [
+        [
+          4,
+          "three-reader game",
+          1,
+          1,
+          0,
+          0,
+          [
+            3
+          ]
+        ],
+        188
+      ],
+      [
+        [
+          4,
+          "three-reader game",
+          1,
+          1,
+          0,
+          0,
+          [
+            4
+          ]
+        ],
+        82
+      ],
+      [
+        [
+          4,
+          "three-reader game",
+          1,
+          1,
+          0,
+          0,
+          [
+            5
+          ]
+        ],
+        14
+      ],
+      [
+        [
+          4,
+          "three-reader game",
+          1,
+          1,
+          0,
+          0,
+          [
+            6
+          ]
+        ],
+        2
+      ],
+      [
+        [
+          5,
+          "ring game of 5",
+          1,
+          0,
+          0,
+          0,
+          []
+        ],
+        5
+      ],
+      [
+        [
+          5,
+          "three-reader game",
+          0,
+          1,
+          1,
+          0,
+          [
+            4,
+            4
+          ]
+        ],
+        8
+      ],
+      [
+        [
+          5,
+          "three-reader game",
+          1,
+          2,
+          0,
+          0,
+          [
+            2,
+            3
+          ]
+        ],
+        6
+      ]
+    ],
+    "closure: fewest, all": [
+      [
+        [
+          3,
+          "three-reader game",
+          1,
+          0,
+          0,
+          0,
+          []
+        ],
+        1551
+      ],
+      [
+        [
+          4,
+          "three-reader game",
+          1,
+          1,
+          0,
+          0,
+          [
+            2
+          ]
+        ],
+        156
+      ],
+      [
+        [
+          4,
+          "three-reader game",
+          1,
+          1,
+          0,
+          0,
+          [
+            3
+          ]
+        ],
+        726
+      ],
+      [
+        [
+          4,
+          "three-reader game",
+          1,
+          1,
+          0,
+          0,
+          [
+            4
+          ]
+        ],
+        550
+      ],
+      [
+        [
+          4,
+          "three-reader game",
+          1,
+          1,
+          0,
+          0,
+          [
+            5
+          ]
+        ],
+        142
+      ],
+      [
+        [
+          4,
+          "three-reader game",
+          1,
+          1,
+          0,
+          0,
+          [
+            6
+          ]
+        ],
+        12
+      ],
+      [
+        [
+          5,
+          "ring game of 5",
+          1,
+          0,
+          0,
+          0,
+          []
+        ],
+        57
+      ],
+      [
+        [
+          5,
+          "three-reader game",
+          0,
+          1,
+          1,
+          0,
+          [
+            3,
+            5
+          ]
+        ],
+        80
+      ],
+      [
+        [
+          5,
+          "three-reader game",
+          0,
+          1,
+          1,
+          0,
+          [
+            3,
+            6
+          ]
+        ],
+        40
+      ],
+      [
+        [
+          5,
+          "three-reader game",
+          0,
+          1,
+          1,
+          0,
+          [
+            4,
+            4
+          ]
+        ],
+        96
+      ],
+      [
+        [
+          5,
+          "three-reader game",
+          0,
+          1,
+          1,
+          0,
+          [
+            4,
+            5
+          ]
+        ],
+        32
+      ],
+      [
+        [
+          5,
+          "three-reader game",
+          0,
+          1,
+          1,
+          0,
+          [
+            4,
+            6
+          ]
+        ],
+        32
+      ],
+      [
+        [
+          5,
+          "three-reader game",
+          0,
+          1,
+          1,
+          0,
+          [
+            4,
+            7
+          ]
+        ],
+        16
+      ],
+      [
+        [
+          5,
+          "three-reader game",
+          0,
+          1,
+          1,
+          0,
+          [
+            5,
+            5
+          ]
+        ],
+        104
+      ],
+      [
+        [
+          5,
+          "three-reader game",
+          0,
+          1,
+          1,
+          0,
+          [
+            5,
+            6
+          ]
+        ],
+        16
+      ],
+      [
+        [
+          5,
+          "three-reader game",
+          0,
+          1,
+          1,
+          0,
+          [
+            6,
+            6
+          ]
+        ],
+        16
+      ],
+      [
+        [
+          5,
+          "three-reader game",
+          1,
+          2,
+          0,
+          0,
+          [
+            2,
+            3
+          ]
+        ],
+        154
+      ],
+      [
+        [
+          5,
+          "three-reader game",
+          1,
+          2,
+          0,
+          0,
+          [
+            2,
+            4
+          ]
+        ],
+        90
+      ],
+      [
+        [
+          5,
+          "three-reader game",
+          1,
+          2,
+          0,
+          0,
+          [
+            2,
+            5
+          ]
+        ],
+        8
+      ],
+      [
+        [
+          5,
+          "three-reader game",
+          1,
+          2,
+          0,
+          0,
+          [
+            3,
+            3
+          ]
+        ],
+        16
+      ],
+      [
+        [
+          6,
+          "three-reader game",
+          0,
+          2,
+          1,
+          0,
+          [
+            2,
+            3,
+            5
+          ]
+        ],
+        8
+      ],
+      [
+        [
+          6,
+          "three-reader game",
+          0,
+          2,
+          1,
+          0,
+          [
+            2,
+            4,
+            4
+          ]
+        ],
+        16
+      ],
+      [
+        [
+          6,
+          "three-reader game",
+          0,
+          2,
+          1,
+          0,
+          [
+            2,
+            4,
+            6
+          ]
+        ],
+        16
+      ],
+      [
+        [
+          6,
+          "three-reader game",
+          0,
+          2,
+          1,
+          0,
+          [
+            2,
+            5,
+            5
+          ]
+        ],
+        8
+      ],
+      [
+        [
+          6,
+          "three-reader game",
+          1,
+          3,
+          0,
+          0,
+          [
+            3,
+            3,
+            3
+          ]
+        ],
+        16
+      ]
+    ],
+    "closure: fewest, first": [
+      [
+        [
+          3,
+          "three-reader game",
+          1,
+          0,
+          0,
+          0,
+          []
+        ],
+        1551
+      ],
+      [
+        [
+          4,
+          "three-reader game",
+          1,
+          1,
+          0,
+          0,
+          [
+            2
+          ]
+        ],
+        156
+      ],
+      [
+        [
+          4,
+          "three-reader game",
+          1,
+          1,
+          0,
+          0,
+          [
+            3
+          ]
+        ],
+        726
+      ],
+      [
+        [
+          4,
+          "three-reader game",
+          1,
+          1,
+          0,
+          0,
+          [
+            4
+          ]
+        ],
+        550
+      ],
+      [
+        [
+          4,
+          "three-reader game",
+          1,
+          1,
+          0,
+          0,
+          [
+            5
+          ]
+        ],
+        142
+      ],
+      [
+        [
+          4,
+          "three-reader game",
+          1,
+          1,
+          0,
+          0,
+          [
+            6
+          ]
+        ],
+        12
+      ],
+      [
+        [
+          5,
+          "ring game of 5",
+          1,
+          0,
+          0,
+          0,
+          []
+        ],
+        57
+      ],
+      [
+        [
+          5,
+          "three-reader game",
+          0,
+          1,
+          1,
+          0,
+          [
+            4,
+            4
+          ]
+        ],
+        96
+      ],
+      [
+        [
+          5,
+          "three-reader game",
+          0,
+          1,
+          1,
+          0,
+          [
+            5,
+            5
+          ]
+        ],
+        104
+      ],
+      [
+        [
+          5,
+          "three-reader game",
+          0,
+          1,
+          1,
+          0,
+          [
+            6,
+            6
+          ]
+        ],
+        16
+      ],
+      [
+        [
+          5,
+          "three-reader game",
+          1,
+          2,
+          0,
+          0,
+          [
+            2,
+            3
+          ]
+        ],
+        154
+      ],
+      [
+        [
+          5,
+          "three-reader game",
+          1,
+          2,
+          0,
+          0,
+          [
+            2,
+            4
+          ]
+        ],
+        90
+      ],
+      [
+        [
+          5,
+          "three-reader game",
+          1,
+          2,
+          0,
+          0,
+          [
+            2,
+            5
+          ]
+        ],
+        8
+      ],
+      [
+        [
+          5,
+          "three-reader game",
+          1,
+          2,
+          0,
+          0,
+          [
+            3,
+            3
+          ]
+        ],
+        16
+      ],
+      [
+        [
+          6,
+          "three-reader game",
+          0,
+          2,
+          1,
+          0,
+          [
+            2,
+            3,
+            5
+          ]
+        ],
+        8
+      ],
+      [
+        [
+          6,
+          "three-reader game",
+          0,
+          2,
+          1,
+          0,
+          [
+            2,
+            4,
+            4
+          ]
+        ],
+        16
+      ],
+      [
+        [
+          6,
+          "three-reader game",
+          1,
+          3,
+          0,
+          0,
+          [
+            3,
+            3,
+            3
+          ]
+        ],
+        16
+      ]
+    ],
+    "closure: minimal through eight, all": [
+      [
+        [
+          3,
+          "three-reader game",
+          1,
+          0,
+          0,
+          0,
+          []
+        ],
+        1551
+      ],
+      [
+        [
+          4,
+          "three-reader game",
+          1,
+          1,
+          0,
+          0,
+          [
+            2
+          ]
+        ],
+        260
+      ],
+      [
+        [
+          4,
+          "three-reader game",
+          1,
+          1,
+          0,
+          0,
+          [
+            3
+          ]
+        ],
+        1004
+      ],
+      [
+        [
+          4,
+          "three-reader game",
+          1,
+          1,
+          0,
+          0,
+          [
+            4
+          ]
+        ],
+        802
+      ],
+      [
+        [
+          4,
+          "three-reader game",
+          1,
+          1,
+          0,
+          0,
+          [
+            5
+          ]
+        ],
+        214
+      ],
+      [
+        [
+          4,
+          "three-reader game",
+          1,
+          1,
+          0,
+          0,
+          [
+            6
+          ]
+        ],
+        18
+      ],
+      [
+        [
+          5,
+          "ring game of 5",
+          1,
+          0,
+          0,
+          0,
+          []
+        ],
+        88
+      ],
+      [
+        [
+          5,
+          "three-reader game",
+          0,
+          1,
+          1,
+          0,
+          [
+            3,
+            5
+          ]
+        ],
+        112
+      ],
+      [
+        [
+          5,
+          "three-reader game",
+          0,
+          1,
+          1,
+          0,
+          [
+            3,
+            6
+          ]
+        ],
+        72
+      ],
+      [
+        [
+          5,
+          "three-reader game",
+          0,
+          1,
+          1,
+          0,
+          [
+            3,
+            7
+          ]
+        ],
+        8
+      ],
+      [
+        [
+          5,
+          "three-reader game",
+          0,
+          1,
+          1,
+          0,
+          [
+            4,
+            4
+          ]
+        ],
+        176
+      ],
+      [
+        [
+          5,
+          "three-reader game",
+          0,
+          1,
+          1,
+          0,
+          [
+            4,
+            5
+          ]
+        ],
+        72
+      ],
+      [
+        [
+          5,
+          "three-reader game",
+          0,
+          1,
+          1,
+          0,
+          [
+            4,
+            6
+          ]
+        ],
+        48
+      ],
+      [
+        [
+          5,
+          "three-reader game",
+          0,
+          1,
+          1,
+          0,
+          [
+            4,
+            7
+          ]
+        ],
+        16
+      ],
+      [
+        [
+          5,
+          "three-reader game",
+          0,
+          1,
+          1,
+          0,
+          [
+            5,
+            5
+          ]
+        ],
+        160
+      ],
+      [
+        [
+          5,
+          "three-reader game",
+          0,
+          1,
+          1,
+          0,
+          [
+            5,
+            6
+          ]
+        ],
+        16
+      ],
+      [
+        [
+          5,
+          "three-reader game",
+          0,
+          1,
+          1,
+          0,
+          [
+            6,
+            6
+          ]
+        ],
+        24
+      ],
+      [
+        [
+          5,
+          "three-reader game",
+          1,
+          2,
+          0,
+          0,
+          [
+            2,
+            3
+          ]
+        ],
+        246
+      ],
+      [
+        [
+          5,
+          "three-reader game",
+          1,
+          2,
+          0,
+          0,
+          [
+            2,
+            4
+          ]
+        ],
+        132
+      ],
+      [
+        [
+          5,
+          "three-reader game",
+          1,
+          2,
+          0,
+          0,
+          [
+            2,
+            5
+          ]
+        ],
+        12
+      ],
+      [
+        [
+          5,
+          "three-reader game",
+          1,
+          2,
+          0,
+          0,
+          [
+            3,
+            3
+          ]
+        ],
+        48
+      ],
+      [
+        [
+          5,
+          "three-reader game",
+          1,
+          2,
+          0,
+          0,
+          [
+            3,
+            4
+          ]
+        ],
+        26
+      ],
+      [
+        [
+          6,
+          "irreducible outside the two base games",
+          0,
+          0,
+          0,
+          0,
+          []
+        ],
+        4
+      ],
+      [
+        [
+          6,
+          "ring game of 5",
+          1,
+          1,
+          0,
+          0,
+          [
+            3
+          ]
+        ],
+        2
+      ],
+      [
+        [
+          6,
+          "three-reader game",
+          0,
+          2,
+          1,
+          0,
+          [
+            2,
+            3,
+            5
+          ]
+        ],
+        8
+      ],
+      [
+        [
+          6,
+          "three-reader game",
+          0,
+          2,
+          1,
+          0,
+          [
+            2,
+            4,
+            4
+          ]
+        ],
+        16
+      ],
+      [
+        [
+          6,
+          "three-reader game",
+          0,
+          2,
+          1,
+          0,
+          [
+            2,
+            4,
+            6
+          ]
+        ],
+        16
+      ],
+      [
+        [
+          6,
+          "three-reader game",
+          0,
+          2,
+          1,
+          0,
+          [
+            2,
+            5,
+            5
+          ]
+        ],
+        8
+      ],
+      [
+        [
+          6,
+          "three-reader game",
+          0,
+          2,
+          1,
+          0,
+          [
+            3,
+            4,
+            4
+          ]
+        ],
+        4
+      ],
+      [
+        [
+          6,
+          "three-reader game",
+          1,
+          3,
+          0,
+          0,
+          [
+            3,
+            3,
+            3
+          ]
+        ],
+        16
+      ]
+    ],
+    "closure: minimal through eight, first": [
+      [
+        [
+          3,
+          "three-reader game",
+          1,
+          0,
+          0,
+          0,
+          []
+        ],
+        1551
+      ],
+      [
+        [
+          4,
+          "three-reader game",
+          1,
+          1,
+          0,
+          0,
+          [
+            2
+          ]
+        ],
+        260
+      ],
+      [
+        [
+          4,
+          "three-reader game",
+          1,
+          1,
+          0,
+          0,
+          [
+            3
+          ]
+        ],
+        1004
+      ],
+      [
+        [
+          4,
+          "three-reader game",
+          1,
+          1,
+          0,
+          0,
+          [
+            4
+          ]
+        ],
+        802
+      ],
+      [
+        [
+          4,
+          "three-reader game",
+          1,
+          1,
+          0,
+          0,
+          [
+            5
+          ]
+        ],
+        214
+      ],
+      [
+        [
+          4,
+          "three-reader game",
+          1,
+          1,
+          0,
+          0,
+          [
+            6
+          ]
+        ],
+        18
+      ],
+      [
+        [
+          5,
+          "ring game of 5",
+          1,
+          0,
+          0,
+          0,
+          []
+        ],
+        88
+      ],
+      [
+        [
+          5,
+          "three-reader game",
+          0,
+          1,
+          1,
+          0,
+          [
+            4,
+            4
+          ]
+        ],
+        176
+      ],
+      [
+        [
+          5,
+          "three-reader game",
+          0,
+          1,
+          1,
+          0,
+          [
+            5,
+            5
+          ]
+        ],
+        152
+      ],
+      [
+        [
+          5,
+          "three-reader game",
+          0,
+          1,
+          1,
+          0,
+          [
+            6,
+            6
+          ]
+        ],
+        24
+      ],
+      [
+        [
+          5,
+          "three-reader game",
+          1,
+          2,
+          0,
+          0,
+          [
+            2,
+            3
+          ]
+        ],
+        246
+      ],
+      [
+        [
+          5,
+          "three-reader game",
+          1,
+          2,
+          0,
+          0,
+          [
+            2,
+            4
+          ]
+        ],
+        132
+      ],
+      [
+        [
+          5,
+          "three-reader game",
+          1,
+          2,
+          0,
+          0,
+          [
+            2,
+            5
+          ]
+        ],
+        12
+      ],
+      [
+        [
+          5,
+          "three-reader game",
+          1,
+          2,
+          0,
+          0,
+          [
+            3,
+            3
+          ]
+        ],
+        48
+      ],
+      [
+        [
+          5,
+          "three-reader game",
+          1,
+          2,
+          0,
+          0,
+          [
+            3,
+            4
+          ]
+        ],
+        26
+      ],
+      [
+        [
+          6,
+          "irreducible outside the two base games",
+          0,
+          0,
+          0,
+          0,
+          []
+        ],
+        4
+      ],
+      [
+        [
+          6,
+          "ring game of 5",
+          1,
+          1,
+          0,
+          0,
+          [
+            3
+          ]
+        ],
+        2
+      ],
+      [
+        [
+          6,
+          "three-reader game",
+          0,
+          2,
+          1,
+          0,
+          [
+            2,
+            3,
+            5
+          ]
+        ],
+        8
+      ],
+      [
+        [
+          6,
+          "three-reader game",
+          0,
+          2,
+          1,
+          0,
+          [
+            2,
+            4,
+            4
+          ]
+        ],
+        16
+      ],
+      [
+        [
+          6,
+          "three-reader game",
+          0,
+          2,
+          1,
+          0,
+          [
+            3,
+            4,
+            4
+          ]
+        ],
+        4
+      ],
+      [
+        [
+          6,
+          "three-reader game",
+          1,
+          3,
+          0,
+          0,
+          [
+            3,
+            3,
+            3
+          ]
+        ],
+        16
+      ]
+    ],
+    "closure: nonminimal through eight, all": [
+      [
+        [
+          5,
+          "three-reader game",
+          1,
+          0,
+          0,
+          1,
+          [
+            3
+          ]
+        ],
+        20
+      ],
+      [
+        [
+          5,
+          "three-reader game",
+          1,
+          0,
+          0,
+          1,
+          [
+            4
+          ]
+        ],
+        6
+      ],
+      [
+        [
+          5,
+          "three-reader game",
+          1,
+          0,
+          0,
+          1,
+          [
+            5
+          ]
+        ],
+        16
+      ],
+      [
+        [
+          5,
+          "three-reader game",
+          1,
+          0,
+          0,
+          1,
+          [
+            6
+          ]
+        ],
+        14
+      ]
+    ],
+    "closure: nonminimal through eight, first": [
+      [
+        [
+          5,
+          "three-reader game",
+          1,
+          0,
+          0,
+          1,
+          [
+            5
+          ]
+        ],
+        12
+      ],
+      [
+        [
+          5,
+          "three-reader game",
+          1,
+          0,
+          0,
+          1,
+          [
+            6
+          ]
+        ],
+        10
+      ]
+    ],
+    "type: dimension through fourteen, all": [
+      [
+        [
+          3,
+          "three-reader game",
+          1,
+          0,
+          0,
+          0,
+          []
+        ],
+        10
+      ],
+      [
+        [
+          5,
+          "ring game of 5",
+          1,
+          0,
+          0,
+          0,
+          []
+        ],
+        1
+      ]
+    ],
+    "type: dimension through fourteen, first": [
+      [
+        [
+          3,
+          "three-reader game",
+          1,
+          0,
+          0,
+          0,
+          []
+        ],
+        10
+      ],
+      [
+        [
+          5,
+          "ring game of 5",
+          1,
+          0,
+          0,
+          0,
+          []
+        ],
+        1
+      ]
+    ],
+    "type: fewest, all": [
+      [
+        [
+          3,
+          "three-reader game",
+          1,
+          0,
+          0,
+          0,
+          []
+        ],
+        489
+      ],
+      [
+        [
+          5,
+          "ring game of 5",
+          1,
+          0,
+          0,
+          0,
+          []
+        ],
+        8
+      ]
+    ],
+    "type: fewest, first": [
+      [
+        [
+          3,
+          "three-reader game",
+          1,
+          0,
+          0,
+          0,
+          []
+        ],
+        489
+      ],
+      [
+        [
+          5,
+          "ring game of 5",
+          1,
+          0,
+          0,
+          0,
+          []
+        ],
+        8
+      ]
+    ],
+    "type: minimal through eight, all": [
+      [
+        [
+          3,
+          "three-reader game",
+          1,
+          0,
+          0,
+          0,
+          []
+        ],
+        489
+      ],
+      [
+        [
+          5,
+          "ring game of 5",
+          1,
+          0,
+          0,
+          0,
+          []
+        ],
+        1975
+      ],
+      [
+        [
+          6,
+          "irreducible outside the two base games",
+          1,
+          0,
+          0,
+          0,
+          []
+        ],
+        2000
+      ],
+      [
+        [
+          8,
+          "irreducible outside the two base games",
+          -1,
+          0,
+          0,
+          0,
+          []
+        ],
+        1726
+      ]
+    ],
+    "type: minimal through eight, first": [
+      [
+        [
+          3,
+          "three-reader game",
+          1,
+          0,
+          0,
+          0,
+          []
+        ],
+        489
+      ],
+      [
+        [
+          5,
+          "ring game of 5",
+          1,
+          0,
+          0,
+          0,
+          []
+        ],
+        1975
+      ],
+      [
+        [
+          6,
+          "irreducible outside the two base games",
+          1,
+          0,
+          0,
+          0,
+          []
+        ],
+        2000
+      ],
+      [
+        [
+          8,
+          "irreducible outside the two base games",
+          -1,
+          0,
+          0,
+          0,
+          []
+        ],
+        1726
+      ]
+    ]
+  },
+  "fewest_sizes_one_vote_per_roster_per_value": {
+    "closure, all": [
+      [
+        2,
+        64
+      ],
+      [
+        3,
+        130
+      ],
+      [
+        4,
+        100
+      ],
+      [
+        5,
+        40
+      ],
+      [
+        6,
+        11
+      ],
+      [
+        7,
+        1
+      ]
+    ],
+    "closure, first": [
+      [
+        2,
+        64
+      ],
+      [
+        3,
+        120
+      ],
+      [
+        4,
+        98
+      ],
+      [
+        5,
+        34
+      ],
+      [
+        6,
+        3
+      ]
+    ],
+    "type, all": [],
+    "type, first": []
+  },
+  "fewest_move_counts_one_vote_per_roster_per_value": {
+    "closure, all": [
+      [
+        [
+          0,
+          0
+        ],
+        440
+      ],
+      [
+        [
+          1,
+          0
+        ],
+        198
+      ],
+      [
+        [
+          1,
+          1
+        ],
+        18
+      ],
+      [
+        [
+          2,
+          0
+        ],
+        35
+      ],
+      [
+        [
+          2,
+          1
+        ],
+        2
+      ],
+      [
+        [
+          3,
+          0
+        ],
+        3
+      ]
+    ],
+    "closure, first": [
+      [
+        [
+          0,
+          0
+        ],
+        440
+      ],
+      [
+        [
+          1,
+          0
+        ],
+        198
+      ],
+      [
+        [
+          1,
+          1
+        ],
+        18
+      ],
+      [
+        [
+          2,
+          0
+        ],
+        35
+      ],
+      [
+        [
+          2,
+          1
+        ],
+        2
+      ],
+      [
+        [
+          3,
+          0
+        ],
+        3
+      ]
+    ],
+    "type, all": [
+      [
+        [
+          0,
+          0
+        ],
+        115
+      ]
+    ],
+    "type, first": [
+      [
+        [
+          0,
+          0
+        ],
+        115
+      ]
+    ]
+  },
+  "fewest_base_kinds_one_vote_per_roster": {
+    "closure": [
+      [
+        [
+          "ring game of 5"
+        ],
+        15
+      ],
+      [
+        [
+          "ring game of 5",
+          "three-reader game"
+        ],
+        2
+      ],
+      [
+        [
+          "three-reader game"
+        ],
+        675
+      ]
+    ],
+    "type": [
+      [
+        [
+          "ring game of 5"
+        ],
+        6
+      ],
+      [
+        [
+          "three-reader game"
+        ],
+        109
+      ]
+    ]
+  },
+  "nonminimal_forced_remainders_population_initial_pairs_terminal_pairs_kind": [
+    [
+      [
+        "closure",
+        5,
+        3,
+        "three-reader game"
+      ],
+      22
+    ]
+  ],
+  "search": {
+    "closure: fewest": {
+      "words": 3718,
+      "reachable_base": 3718,
+      "all_routes_one_base_kind": 3718,
+      "already_base": 1608,
+      "no_initial_merge": 1608,
+      "several_routes": 440,
+      "several_labelled_endings": 240,
+      "any_doubled": 0,
+      "greatest_state_count": 11,
+      "greatest_route_count": 8,
+      "greatest_bound_on_original_search_calls": 17
+    },
+    "closure: minimal through eight": {
+      "words": 4803,
+      "reachable_base": 4799,
+      "all_routes_one_base_kind": 4799,
+      "already_base": 1639,
+      "no_initial_merge": 1643,
+      "several_routes": 640,
+      "several_labelled_endings": 376,
+      "any_doubled": 0,
+      "greatest_state_count": 11,
+      "greatest_route_count": 8,
+      "greatest_bound_on_original_search_calls": 17
+    },
+    "closure: dimension through fourteen": {
+      "words": 1128,
+      "reachable_base": 1128,
+      "all_routes_one_base_kind": 1128,
+      "already_base": 700,
+      "no_initial_merge": 700,
+      "several_routes": 12,
+      "several_labelled_endings": 8,
+      "any_doubled": 0,
+      "greatest_state_count": 6,
+      "greatest_route_count": 3,
+      "greatest_bound_on_original_search_calls": 7
+    },
+    "closure: nonminimal through eight": {
+      "words": 22,
+      "reachable_base": 22,
+      "all_routes_one_base_kind": 22,
+      "already_base": 0,
+      "no_initial_merge": 0,
+      "several_routes": 22,
+      "several_labelled_endings": 0,
+      "any_doubled": 22,
+      "greatest_state_count": 2,
+      "greatest_route_count": 4,
+      "greatest_bound_on_original_search_calls": 5
+    },
+    "type: fewest": {
+      "words": 497,
+      "reachable_base": 497,
+      "all_routes_one_base_kind": 497,
+      "already_base": 497,
+      "no_initial_merge": 497,
+      "several_routes": 0,
+      "several_labelled_endings": 0,
+      "any_doubled": 0,
+      "greatest_state_count": 1,
+      "greatest_route_count": 1,
+      "greatest_bound_on_original_search_calls": 1
+    },
+    "type: minimal through eight": {
+      "words": 6190,
+      "reachable_base": 2464,
+      "all_routes_one_base_kind": 2464,
+      "already_base": 2464,
+      "no_initial_merge": 6190,
+      "several_routes": 0,
+      "several_labelled_endings": 0,
+      "any_doubled": 0,
+      "greatest_state_count": 1,
+      "greatest_route_count": 1,
+      "greatest_bound_on_original_search_calls": 1
+    },
+    "type: dimension through fourteen": {
+      "words": 11,
+      "reachable_base": 11,
+      "all_routes_one_base_kind": 11,
+      "already_base": 11,
+      "no_initial_merge": 11,
+      "several_routes": 0,
+      "several_labelled_endings": 0,
+      "any_doubled": 0,
+      "greatest_state_count": 1,
+      "greatest_route_count": 1,
+      "greatest_bound_on_original_search_calls": 1
+    }
+  },
+  "fewest_multiple_rosters": {
+    "closure: several_routes": 44,
+    "closure: several_labelled_endings": 20
+  },
+  "closure_size_differences": [
+    [
+      4786,
+      [
+        2,
+        4
+      ],
+      [
+        2,
+        4,
+        6
+      ]
+    ],
+    [
+      6171,
+      [
+        4
+      ],
+      [
+        4,
+        5
+      ]
+    ],
+    [
+      6173,
+      [
+        4
+      ],
+      [
+        3,
+        4,
+        6
+      ]
+    ],
+    [
+      6176,
+      [
+        5
+      ],
+      [
+        3,
+        5
+      ]
+    ],
+    [
+      6178,
+      [
+        5
+      ],
+      [
+        3,
+        5,
+        6
+      ]
+    ],
+    [
+      6180,
+      [
+        4
+      ],
+      [
+        3,
+        4,
+        5
+      ]
+    ],
+    [
+      6181,
+      [
+        2,
+        4
+      ],
+      [
+        2,
+        4,
+        5
+      ]
+    ],
+    [
+      6182,
+      [
+        4
+      ],
+      [
+        3,
+        4,
+        6
+      ]
+    ],
+    [
+      6183,
+      [
+        5
+      ],
+      [
+        3,
+        5
+      ]
+    ],
+    [
+      6185,
+      [
+        2,
+        3,
+        4
+      ],
+      [
+        2,
+        3,
+        4,
+        5
+      ]
+    ],
+    [
+      6187,
+      [
+        4
+      ],
+      [
+        4,
+        5,
+        6
+      ]
+    ],
+    [
+      6188,
+      [
+        4
+      ],
+      [
+        4,
+        7
+      ]
+    ],
+    [
+      6189,
+      [
+        5
+      ],
+      [
+        4,
+        5,
+        6
+      ]
+    ],
+    [
+      6190,
+      [
+        4
+      ],
+      [
+        4,
+        6
+      ]
+    ],
+    [
+      6241,
+      [
+        5
+      ],
+      [
+        4,
+        5
+      ]
+    ],
+    [
+      6242,
+      [
+        5
+      ],
+      [
+        3,
+        5,
+        6
+      ]
+    ],
+    [
+      6243,
+      [
+        6
+      ],
+      [
+        3,
+        5,
+        6
+      ]
+    ],
+    [
+      6244,
+      [
+        5
+      ],
+      [
+        3,
+        5
+      ]
+    ],
+    [
+      6245,
+      [
+        5
+      ],
+      [
+        3,
+        5
+      ]
+    ]
+  ],
+  "closure_move_differences": [],
+  "fixture_786": {
+    "word_count": 2,
+    "routes": {
+      "full_sizes_frozen_order": [
+        2
+      ],
+      "full_sizes_all_orders": [
+        2
+      ],
+      "move_counts_frozen_order": [
+        [
+          1,
+          0
+        ]
+      ],
+      "move_counts_all_orders": [
+        [
+          1,
+          0
+        ]
+      ],
+      "base_kinds": [
+        "three-reader game"
+      ],
+      "c": [
+        1
+      ]
+    },
+    "words": [
+      [
+        [
+          0,
+          2,
+          4,
+          7
+        ],
+        [
+          [
+            [
+              [
+                [
+                  0,
+                  1
+                ],
+                [
+                  2,
+                  3
+                ]
+              ],
+              [
+                [
+                  0,
+                  2
+                ],
+                [
+                  1,
+                  3
+                ]
+              ],
+              [
+                [
+                  0,
+                  3
+                ],
+                [
+                  1,
+                  2
+                ]
+              ]
+            ],
+            [
+              [
+                4,
+                true,
+                false
+              ]
+            ]
+          ]
+        ]
+      ],
+      [
+        [
+          0,
+          2,
+          5,
+          6
+        ],
+        [
+          [
+            [
+              [
+                [
+                  0,
+                  1
+                ],
+                [
+                  2,
+                  3
+                ]
+              ],
+              [
+                [
+                  0,
+                  2
+                ],
+                [
+                  1,
+                  3
+                ]
+              ],
+              [
+                [
+                  0,
+                  3
+                ],
+                [
+                  1,
+                  2
+                ]
+              ]
+            ],
+            [
+              [
+                4,
+                true,
+                false
+              ]
+            ]
+          ]
+        ]
+      ]
+    ]
+  },
+  "size_seven_example": {
+    "census_start_id": 6188,
+    "word": [
+      2,
+      5,
+      10,
+      14,
+      22
+    ],
+    "holders": [
+      [
+        [
+          0,
+          1
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      [
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      [
+        [
+          0,
+          3
+        ],
+        [
+          2,
+          4
+        ]
+      ],
+      [
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          4
+        ]
+      ]
+    ],
+    "sizes": [
+      4,
+      4,
+      4,
+      7,
+      4,
+      1
+    ],
+    "first": [
+      [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            3,
+            4
+          ]
+        ],
+        [
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            4
+          ]
+        ],
+        [
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            3
+          ]
+        ]
+      ],
+      [
+        [
+          2,
+          false,
+          false
+        ],
+        [
+          2,
+          true,
+          false
+        ]
+      ]
+    ],
+    "alternative": [
+      [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            2
+          ]
+        ]
+      ],
+      [
+        [
+          3,
+          false,
+          false
+        ],
+        [
+          4,
+          true,
+          false
+        ]
+      ]
+    ]
+  }
+}

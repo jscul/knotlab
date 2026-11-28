@@ -1,0 +1,161 @@
+{
+  "history": {
+    "assumption_entered": "49e8693a33836283cfa291725bd70b6fd0731f62",
+    "freeze": "ac89a0643d489ddece13e5c69c3ece9d30513579",
+    "closed": "3a27c8b9500db928b8134061d689c58ce265b7bd",
+    "notebook_goal_assumption_update": "de4f01ada363966a5d1de3a0dfb922b5f97dfce9",
+    "final_report_archived": "b110bf67b7e26d9edae426677cc874428dcc2427",
+    "frozen_readme_lines": 185,
+    "readme_lines_appended_at_close": 53,
+    "frozen_code_changed_at_close": false,
+    "local_times": {
+      "freeze": "2026-11-27T20:22:39-08:00",
+      "run_started": "2026-11-27T20:24:59-08:00",
+      "run_finished": "2026-11-27T20:27:08-08:00",
+      "closed": "2026-11-27T20:35:06-08:00",
+      "final_report_archive_commit": "2026-11-27T20:36:24-08:00",
+      "send_time_written_in_archive": "2026-11-27T20:40:00-08:00"
+    },
+    "run_journal_command": "journalctl --user -u encoded-readers-run.service --no-pager --since '2026-11-27 20:20:00' --until '2026-11-27 20:40:00' -o short-iso",
+    "observation": "The full run started after the freeze and before closure. The historical journal has the complete result and no timer traceback. The design, prediction table and run code were unchanged at closure. The complex reading first appears in the appended results and is marked as after the results."
+  },
+  "archived_counts": {
+    "grown": {
+      "closures_with_an_odd_birth_choice": 1177,
+      "closures_with_a_strict_split": 692,
+      "minimum_words": 3718,
+      "maximum_minimum_words_in_one_closure": 32,
+      "maximum_words_in_one_size_at_one_closure": 32,
+      "all_minimum_listings_marked_complete": true,
+      "size_listings_marked_capped": 0,
+      "unsettled_rows_at_either_level": 0,
+      "codes_with_at_most_14_free_choices": 386,
+      "such_codes_with_a_strict_odd_word": 208,
+      "strict_odd_words_at_such_codes": 1128,
+      "five_pair_nonminimal_words": 22,
+      "closures_with_such_nonminimal_words": 9,
+      "c_of_minimum_word": {"0": 240, "1": 3478},
+      "closures_by_set_of_minimum_word_c_values": {"0 only": 18, "0 and 1": 2, "1 only": 672},
+      "closure_memberships_by_merge_profile": 696,
+      "closure_memberships_by_original_size_of_a_knot_merged_through": 319,
+      "strict_closures_where_a_wider_split_needs_fewer_readers": 25,
+      "closures_with_only_wider_splits": 39
+    },
+    "finished_types": {
+      "types": 173,
+      "types_with_a_strict_split": 115,
+      "minimum_words": 497,
+      "maximum_minimum_words_in_one_type": 35,
+      "maximum_words_in_one_size_at_one_type": 1260,
+      "all_minimum_listings_marked_complete": true,
+      "size_listings_marked_capped": 0,
+      "unsettled_rows_at_either_level": 0,
+      "codes_with_at_most_14_free_choices": 11,
+      "such_codes_with_a_strict_odd_word": 5,
+      "strict_odd_words_at_such_codes": 11,
+      "strict_odd_words_with_eight_pairs": 1726,
+      "types_with_a_minimal_word_that_does_not_decode": 46,
+      "such_types_with_seven_knots": 46,
+      "seven_knot_types_with_a_strict_split": 101,
+      "nondecoding_words_total": 3726,
+      "nondecoding_words_retained_with_holders": 178,
+      "retained_nondecoding_words_by_pair_count": {"6": 177, "8": 1}
+    },
+    "sources": [
+      "results.jsonl and census_types.jsonl in the closed record",
+      "results.jsonl and census_types.jsonl in the earlier readers study",
+      "The earlier readers referee's shapes.json distinguishes eight minimum words of each c at each of the two mixed closures grown from census starts 6181 and 6185. The mixed base-game closures are different, grown from census starts 5603 and 5767.",
+      "The signed-rules census supplies the knot counts of the finished types."
+    ]
+  },
+  "findings": [
+    {
+      "verdict": "Narrowing",
+      "source": "README.md:142 and decision.md:67",
+      "quoted_claims": ["each call with a time limit", "Each cap was reported and none was reached."],
+      "evidence": "The frozen listing schedules the configured satisfiability solver's interrupt method, which raises NotImplementedError when called. Even an interruptible backend would receive a fresh one-second timer for every solve after the intended deadline. The journal has no timer traceback. Both populations' archived listings finished below the count caps, and neither unsettled flag appears. The archive has no per-listing wall times or maximum search-state count.",
+      "change": "Report the completed listings and the failed timeout implementation separately. Use an enforced deadline before relying on a time limit in another run. State eight pairs as P1's planned size boundary."
+    },
+    {
+      "verdict": "Narrowing",
+      "source": "README.md:195 and decision.md:6",
+      "quoted_claims": ["the same as the readers study at every closure", "Every merge passes its fresh check", "No search was left unsettled.", "exact merge searches with a fresh check at every step"],
+      "evidence": "decode.py:541–563 solves newly for the earlier strict positives. The other 485 grown cases and 58 finished types carry over their strict verdict from the earlier study. decode.py:577–606 aggregates fresh-check results only for minimum words, counts only the outer unsettled flag and omits the per-size cap from G. The separate small-code flag is absent in the raw records. Candidate transitions inside the decoder are checked before descent. The two manually applied transitions in each branch of the item 3 fixture are tested by partition outcomes there, without the same explicit fresh per-step check.",
+      "change": "Name the carried-over labels and the checks actually tallied by G. Cite the archived rows for the absence of either unsettled flag and of per-size caps."
+    },
+    {
+      "verdict": "Narrowing",
+      "source": "README.md:126, 199–215 and summary.json:198",
+      "quoted_claims": ["for the minimal choices of P1 and P2, the same by number of pairs", "for strict odd choices that are not minimal, what remains after merging", "P3, measured."],
+      "evidence": "The fewest-word records combine each closure's observed base kinds, merge profiles, c values and knot sizes into separate sets. P1 retains counts and endpoint kinds by pair count, with no merge, c or knot-size summaries. P2 retains totals and a forced-only remainder summary for its nonminimal small-code words, of which there were none. P1 skips the 22 nonminimal grown words before merging them. Every one of those five-pair words has a proper commuting subset of size two or three, so one subset has size two. Its two equal commutation contributions identify the same holder pairing and have even sign. Deleting that doubled pair leaves an odd commuting triple and therefore the three-reader game. This shows a reduction exists and does not enumerate all terminal remainders.",
+      "change": "Describe P3 as partially archived. Name its missing per-word data and distinguish the empty small-code forced-remainder field from the untreated P1 remainders. State whether a future remainder count uses a chosen path or every terminal result."
+    },
+    {
+      "verdict": "Narrowing",
+      "source": "README.md:197 and decision.md:11, 95",
+      "quoted_claims": ["All 1,139 minimal strict odd choices at the 213 small codes decode to exactly one base game.", "P2 holds at all 1,139 of the small codes"],
+      "evidence": "There are 397 codes at or below the threshold in the two populations, including 184 with no strict odd word. The 213 codes containing a strict odd word are 208 grown closures with 1,128 words and five census types with 11. P2 made a claim about words.",
+      "change": "Say 1,139 words over 213 codes containing at least one such word, out of 397 codes with at most 14 free choices."
+    },
+    {
+      "verdict": "Narrowing",
+      "source": "decision.md:14, 16–23, 48–50, 124; docs/KNOT_INTUITION.md:2356; docs/RESEARCH_GOALS.md:1857, 6162; docs/ASSUMPTIONS.md:6565",
+      "quoted_claims": ["Every fewest separated-reader game on growth's closures is the three-reader or the ring-of-five game with readers encoded", "The fewest splits are now explained.", "Mostly yes, with three exceptions so far"],
+      "evidence": "The affirmed minimum is over strict odd birth choices in the declared census run. The earlier readers rows have 25 strict-positive closures with a smaller wider-reader minimum, including the eight-knot second-round closure from census start 4308, where the minima are six and five. Another 39 closures have only wider splits. The recorded search returns a first successful A317 sequence. The four counterexamples among minimal grown choices and the two finished-type patterns are outside the minimum result.",
+      "change": "Name the strict odd birth-choice scope and declared merges in standalone claims. Separate the complete minimum result from the failed bounded prediction about minimal choices. Keep the original sent text verbatim and attach the clarification alongside it."
+    },
+    {
+      "verdict": "Narrowing",
+      "source": "README.md:201–217, 226–232; decision.md:12–13, 20–23, 128; docs/RESEARCH_GOALS.md:1857",
+      "quoted_claims": ["No strict odd choice has seven or eight pairs.", "The 3,726 that do not are at 46 of the 115 types, mostly the largest ones.", "Five irreducible games so far"],
+      "evidence": "The no-seven-or-eight result is for the grown strict choices in P1. The finished-type listings include 1,726 eight-pair words. The five patterns are from the declared listed populations. The separately included nine-knot fixture is another known irreducible pattern. The 3,726 failures give 3,726 of 6,190 under one vote per choice and occur in 46 of 115 under one vote per type. All 46 have seven knots. The 675, 15 and 2 are mutually exclusive closure groups. Merge profile tallies give one vote per closure per profile. Original knot sizes give one vote per closure per size.",
+      "change": "State these populations and weightings beside the claims. Identify the five patterns by their listed populations, and keep the nine-knot fixture outside that tally."
+    },
+    {
+      "verdict": "Narrowing",
+      "source": "README.md:157–158; decision.md:64–69; docs/ASSUMPTIONS.md:6560–6565",
+      "quoted_claims": ["A317 was tested by reporting the merges themselves (P3).", "Two failing pairs whose partners are held by the same two knots, and whose other values share a knot, may be merged into one.", "more parties holding the same information", "merges through knots holding other values were needed at 20 closures"],
+      "evidence": "Reporting observed merges does not exercise the count-each-encoding alternative. A doubled pair removes both pairs. In the forced repetition encoding, each copy can supply the logical Z setting, and the two X settings supply logical X jointly. The encoded plus and minus states have equal individual reduced states. At 18 closures every minimum word has c=0 and needs a merge through a knot holding other values. At two more, the tied minimum words split between c=0 and c=1. In total 240 of 3,718 labelled grown minimum words have c=0.",
+      "change": "Name the doubled-pair exception and specify which settings the two readers hold. Record the result as conditional on A317, with the count-each-encoding alternative untested, and qualify the 20 by at least one minimum word."
+    },
+    {
+      "verdict": "Not a block",
+      "source": "README.md:91–94, 123 and decode.py:472–510",
+      "quoted_claims": ["the other leaves six pairs that no merge or partition decodes", "decodes in one order of choices at w but not the other"],
+      "evidence": "The fixture starts with eleven pairs and each listed pairing performs two single merges. The nine-pair remainder on the bad branch contains the unchanged third game and six unresolved pairs. Both branches test partition into three games, whereas the minimum decoder searches for a single base game.",
+      "change": "Say that one pairing restores a partition into three games. The other leaves nine pairs, including the unchanged third game, with no merge or partition into three games."
+    },
+    {
+      "verdict": "Not a block",
+      "source": "README.md:226–234 and decode.py:378–395",
+      "quoted_claims": ["the failures have only three shapes (grouped by a relabelling-invariant hash)"],
+      "evidence": "The closed rows retain all four grown nondecoding holder patterns but only 178 of the 3,726 nondecoding census words, with at most five examples per type. The frozen code and closing artifacts contain no replay of the post-run relabelling or orientation audit. A relabelling-invariant hash alone need not distinguish different patterns.",
+      "change": "Link the independent exact relabelling check for the all-word claim and describe the original analysis as post-run."
+    }
+  ],
+  "timeout_reproduction": [
+    "OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 .venv/bin/python -B - <<'PY'",
+    "import ast",
+    "from pathlib import Path",
+    "from pysat.solvers import Solver",
+    "",
+    "source = Path('research/ENCODED-READERS-20261127-001/decode.py')",
+    "listing = next(node for node in ast.parse(source.read_text()).body if isinstance(node, ast.FunctionDef) and node.name == 'listing')",
+    "constructor = next(node for node in ast.walk(listing) if isinstance(node, ast.Call) and isinstance(node.func, ast.Name) and node.func.id == 'Solver')",
+    "backend = next(ast.literal_eval(keyword.value) for keyword in constructor.keywords if keyword.arg == 'name')",
+    "with Solver(name=backend, bootstrap_with=[[1]]) as solver:",
+    "    assert solver.solve_limited(expect_interrupt=True) is True",
+    "    try:",
+    "        solver.interrupt()",
+    "    except NotImplementedError:",
+    "        print('The configured satisfiability interrupt is unsupported.')",
+    "    else:",
+    "        raise AssertionError('The configured interrupt returned without an error.')",
+    "PY"
+  ],
+  "not_run": [
+    "Author computation was not rerun for this record audit.",
+    "No live over-deadline solve was attempted. The direct check exercises the interrupt method called by the frozen timer.",
+    "All merge-path remainders, choices beyond the listed pair sizes outside the small-code enumeration, and the count-each-encoding reading were not examined in this audit."
+  ]
+}

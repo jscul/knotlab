@@ -1,0 +1,22 @@
+{
+  "objects_gate": {
+    "command": ".venv/bin/python -B scripts/track.py objects-gate research/ENCODED-READERS-20261127-001/README.md",
+    "result": "prior-work line: ok"
+  },
+  "additional_objects_query": {
+    "command": ".venv/bin/python -B scripts/track.py objects 'reader settings repetition encoding odd ring graph states parity arrangements closed square cells orientation' --until 2026-11-27 --exclude ENCODED-READERS-20261127-001 --limit 8",
+    "returned_index_entries_in_rank_order": ["READER-SPLIT-20261127-001/1", "ERASURE-AND-CLOSING-SIGNS-20261121-001/5", "SIDE-SIGN-20261126-001/1", "TWO-KNOTS-ONE-DECISION-20261121-001/4", "READER-SPLIT-20261127-001/2", "TOY-PHASE-20261127-001/2", "GROW-FACE-20261110-001/2", "SIBLING-CHANGE-ANNOUNCEMENTS-20261121-001/5"]
+  },
+  "full_text_search": {
+    "command": "git grep -i -l -E 'quadrangulat|square complex|hemi.?cube|two-bit repetition code|Anshu and Mhalla|Arkhipov' 'ac89a0643d^' -- 'research/*/decision.md' 'research/*/referee-*/report.md' 'research/*/referee-*/shapes.md'",
+    "matching_records": ["research/ERASURE-AND-CLOSING-SIGNS-20261121-001/decision.md", "research/ERASURE-AND-CLOSING-SIGNS-20261121-001B/referee-R1/report.md", "research/FOUR-READINGS-20261120-001/decision.md", "research/FOUR-READINGS-20261120-001A/referee-R1/report.md", "research/NO-WHOLE-STATE-20261126-001/decision.md", "research/NO-WHOLE-STATE-20261126-001/referee-R1/report.md", "research/READER-SPLIT-20261127-001/decision.md", "research/READER-SPLIT-20261127-001/referee-R1/report.md", "research/REVIEW-LEADS-20261123-001A/referee-R1/report.md", "research/TWO-KNOTS-ONE-DECISION-20261121-001/decision.md"]
+  },
+  "literature": [
+    {"subject":"The literature's repetition encoding, logical basis and parity check", "source":"https://opencourse.inf.ed.ac.uk/sites/default/files/https/opencourse.inf.ed.ac.uk/iqc/2024/iqclecture25.pdf"},
+    {"subject":"Odd-ring reader stabilizers as a subset of the questions of a graph-state game", "source":"https://arxiv.org/abs/1207.2276"},
+    {"subject":"Five-reader parity construction", "source":"https://arxiv.org/abs/quant-ph/9611011"},
+    {"subject":"Connected odd graph-incidence games and planarity, Theorem 21", "source":"https://arxiv.org/abs/1209.3819"},
+    {"subject":"Orientations, double coverage, and the parity of an embedded quadrangulation, section 1 and Lemma 6.1", "source":"https://real.mtak.hu/9875/1/mst2012.pdf"},
+    {"subject":"A related reduction to odd wheels using different operations", "source":"https://arxiv.org/abs/1606.07662"}
+  ]
+}

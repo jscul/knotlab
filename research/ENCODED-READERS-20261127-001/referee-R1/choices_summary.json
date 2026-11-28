@@ -1,0 +1,115 @@
+{
+  "method": "Reconstruct every parity column and the sign from holders, then enumerate the affine space through dimension 14 and exact projected bounded solutions elsewhere.",
+  "inputs": [
+    "../../READER-SPLIT-20261127-001/referee-R1/rebuilt_inputs.jsonl",
+    "../results.jsonl",
+    "../census_types.jsonl",
+    "../../READER-SPLIT-20261127-001/results.jsonl",
+    "../../READER-SPLIT-20261127-001/census_types.jsonl",
+    "../../READER-SPLIT-20261127-001/referee-R1/shapes.json"
+  ],
+  "weighting": "One vote per census start, census type, or labelled choice as named.",
+  "closure and census comparisons disagreeing": [],
+  "earlier referee's closure comparisons": 252,
+  "earlier referee's fewest choices": 2102,
+  "independent brute force controls": [
+    [
+      "closure",
+      17
+    ],
+    [
+      "closure",
+      24
+    ],
+    [
+      "type",
+      0
+    ],
+    [
+      "type",
+      9
+    ]
+  ],
+  "populations": {
+    "closure": {
+      "codes": 1177,
+      "strict codes": 692,
+      "fewest choices": 3718,
+      "archived strict witness comparisons": 692,
+      "small codes": 386,
+      "small codes with strict odd choices": 208,
+      "small strict odd choices": 1128,
+      "small minimal choices": 1128
+    },
+    "type": {
+      "codes": 173,
+      "strict codes": 115,
+      "fewest choices": 497,
+      "archived strict witness comparisons": 115,
+      "small codes": 11,
+      "small codes with strict odd choices": 5,
+      "small strict odd choices": 11,
+      "small minimal choices": 11
+    }
+  },
+  "fewest sizes by code": {
+    "closure": {
+      "3": 423,
+      "6": 5,
+      "5": 66,
+      "4": 198
+    },
+    "type": {
+      "3": 109,
+      "5": 6
+    }
+  },
+  "listed choices by size": {
+    "closure": {
+      "3": 1551,
+      "4": 2298,
+      "5": 926,
+      "6": 50,
+      "7": 0,
+      "8": 0
+    },
+    "type": {
+      "3": 489,
+      "4": 0,
+      "5": 1975,
+      "6": 2000,
+      "7": 0,
+      "8": 1726
+    }
+  },
+  "minimal choices by size": {
+    "closure": {
+      "3": 1551,
+      "4": 2298,
+      "5": 904,
+      "6": 50,
+      "7": 0,
+      "8": 0
+    },
+    "type": {
+      "3": 489,
+      "4": 0,
+      "5": 1975,
+      "6": 2000,
+      "7": 0,
+      "8": 1726
+    }
+  },
+  "listing maxima": {
+    "closure": {
+      "largest fewest listing": 32,
+      "largest listing through eight": 32
+    },
+    "type": {
+      "largest fewest listing": 35,
+      "largest listing through eight": 1260
+    }
+  },
+  "seconds": 27.86,
+  "peak KiB": 45256
+}

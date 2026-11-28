@@ -1,5 +1,31 @@
 # A principle for the free sign: do the birth choices with the most failing pairs force it?
 
+> **Referee report R1, 27 November 2026: confirmed with fixes, no Block** ([the report](referee-R1/report.md)). Every pair
+> maximum, nonzero minimum and holder-type verdict reproduced by an exact search of the referee's own, on the 1,177 grown
+> closures and the 173 finished census types. Read this record with these narrowings (logged in `docs/CORRECTIONS.md`):
+> - **The sign is a function of holding and score.** For each specified score, the holding and its decidable pairs
+>   determine the maximizing choices and so the sign. What changes it is the score: where both maxima force a sign (719
+>   closures) they force opposite signs at 199 and the same at 520. "The sign belongs to the principle, not to the
+>   structure" and "its verdicts survive none of them" are replaced by these counts; the three verdicts (maximum, control,
+>   holder types) agree at 191 starts. None of the tested scores forces odd at every closure.
+> - **Population, not weighting.** The 173 census types are a separate population (finished types, every unheld pair
+>   decidable), not a second weighting of the same closures: only 9 of them occur among the 1,151 distinct finished
+>   holdings of the 1,177 grown closures. One vote per distinct grown holding gives 350 odd, 578 even, 223 free, close to
+>   one vote per start. "The weighting matters too" is withdrawn.
+> - **What the holder-type count is.** It counts occupied holder types, a different objective, not a correction for doubled
+>   meetings, and not a metric to rule R's word: a repeated type earns its point with one or two of its pairs, of either
+>   parity. A free verdict needs a tie between signs, not just several nearest words.
+> - **The round-by-round counts are one tie-break.** With the recorded first optimum, 19 of the 86 later closures close odd
+>   and 67 even; across all tied optimal histories, 14 force odd, 59 force even and 13 allow both.
+> - **The order gate was weaker than its wording.** The archived check reversed the knot list on one maximum per closure;
+>   the referee's check, exchanging consecutive knots for 18,319 knot pairs, establishes the order independence.
+> - **Two logical claims.** An affine restriction can select odd without naming the sign (at census start 24, requiring
+>   one pair to fail and another to commute selects an odd word). And the 1,177 odd closes are odd products of commuting
+>   checks (state-dependent parity contradictions); a realization by separated readers, the three-reader form, is shown
+>   only at the ring of three's closure.
+> - **Credit and sizes (not a block).** The commutation-at-birth study already proposed the maximum and gave its odd
+>   matching on the ring; the finished census codes reach 105 positions and dimension 91.
+
 Epic `MOST-FAILING-20261127-001`, at the owner's go-ahead on direction 1 of the commutation-at-birth study. Design,
 frozen predictions, review and results: [README.md](README.md); code [most_failing.py](most_failing.py); outputs
 [summary.json](summary.json), [gates.json](gates.json), [results.jsonl](results.jsonl),
@@ -10,16 +36,17 @@ enumeration at 386 closures; one vote per census start unless marked; independen
 | Scope | Verdict | Why |
 | --- | --- | --- |
 | This attempt — the most failing pairs as a principle for the free sign | **Status:** Successful | It forces the sign at 948 of 1,177 closures, even at 588 and odd at 360 |
-| Local direction — selecting the sign by a principle over birth choices | Retire | The forced sign follows the principle's counting and the weighting; no tested principle selects odd |
+| Local direction — selecting the sign by a principle over birth choices | Retire | The forced sign follows the score; none of the tested scores forces odd at every closure (narrowed by R1) |
 | Broader exploration — the quantum part under the declared phase | Known alternatives | Readers on grown closures; a principle drawn from growth itself; or the sign kept as declared |
-| Long-term goal — G18 Comparing growth laws | Obstruction learned | With the declared phase, growth makes the quantum close possible, and no tested principle makes it the selected one |
+| Long-term goal — G18 Comparing growth laws | Obstruction learned | With the declared phase, growth makes an odd product of commuting checks possible, and no tested score selects it everywhere |
 
 The maximum does what a principle can: at 81% of the closures every birth choice with the most failing pairs closes with
 the same sign. But the sign it forces is even more often than odd (588 against 360), and it is not a fact about the
 structure alone. Counting failing pairs once per holder type, which removes the weight of doubled meetings, reverses the
 lean (619 odd against 241 even). On the census types, where the two counts coincide, it splits (49 odd, 60 even, 64
-free). The control, the least departure from classical, forces even almost everywhere (1,152 of 1,177). So the selected
-sign belongs to the principle: which principle, and how it counts, decides it.
+free). The control, the least departure from classical, forces even almost everywhere (1,152 of 1,177). So for a given
+score the holding decides the sign, but changing the score reverses it at 199 of the 719 closures where both force one
+(narrowed by R1 from "the selected sign belongs to the principle").
 
 **Next step:** Full pivot — selected: #1
 

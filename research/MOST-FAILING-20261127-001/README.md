@@ -1,5 +1,13 @@
 # A principle for the free sign: do the birth choices with the most failing pairs force it?
 
+> **Notice, 27 November 2026: refereed (R1), confirmed with fixes, no Block** ([the report](referee-R1/report.md); the
+> narrowings in full at the top of [the decision](decision.md)). The frozen text below is unchanged. Read it with these
+> corrections: the 173 census types are a separate population, not a second weighting; "an affine condition can select odd
+> only by naming it" is wrong (requiring one pair to fail and another to commute can select odd); the holder-type count is a
+> different objective, not a correction for doubled meetings; the round-by-round counts are one tie-break; the G row's
+> order check covered one maximum per closure (the referee's consecutive-exchange check establishes it); and the prior-work
+> line should credit the commutation-at-birth study, which proposed the maximum.
+
 Epic `MOST-FAILING-20261127-001`, under G18 Comparing growth laws, at the owner's go-ahead ("Yes, let's continue with 1")
 on direction 1 of the commutation-at-birth study (`LOCAL-COMMUTE-20261127-001#1`). Design and predictions frozen before
 the code was run, after a review (section "Review before the freeze"; the advisor was unavailable). Results follow in

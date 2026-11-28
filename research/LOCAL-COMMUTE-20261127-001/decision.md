@@ -45,7 +45,7 @@ and exact GF(2) counts over the census of 7,075 starts, one vote per start; inde
 | This attempt — commutation declared and fixed at birth on growth's closures | **Status:** Successful | Every structure admits a state; from an open start every birth choice admits the signs; odd attainable at 1,177 of the 1,187 closures that are not outerplanar (narrowed by R1) |
 | Local direction — the birth rule | Retire (answered) | It loses the odd close only at 10 round-2 closures whose odd needs a pair taken apart one round later |
 | Broader exploration — the quantum part under a declared phase | Known alternatives | A principle that selects the sign; readers on grown closures; two-reader excess needs states outside this extension |
-| Long-term goal — G18 Comparing growth laws | Capability gained | One declared primitive gives growth's closures the three-reader-type contradiction, but which closures close odd is a free choice |
+| Long-term goal — G18 Comparing growth laws | Capability gained | One declared primitive gives growth's closures an odd product of commuting checks (the three-reader form shown only at the ring's closure; narrowed by the next study's R1), but which closures close odd is a free choice |
 
 The extension works as a representation: with commutation declared once at birth, and the closing sign forced by the cost
 of reordering, every structure growth makes keeps a stabilizer state, and nearly every closure that can close odd under

@@ -3,6 +3,10 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 27 November 2026 · The most-failing principle refereed: confirmed with fixes
+
+**Corrections from [an independent referee's report](research/MOST-FAILING-20261127-001/referee-R1/report.md), folded into [the decision](research/MOST-FAILING-20261127-001/decision.md).** The counts stand: the birth choices with the most failing pairs force the closing sign at 948 of 1,177 grown closures, even more often than odd. Narrowed: for each score the holding decides the sign, and changing the score reverses it at 199 of 719 closures; the 173 census types are a separate population, not a second weighting; the round-by-round counts are one tie-break; a few required pairs can select odd without naming the sign; and the odd closes are odd products of commuting checks, whose separated three-reader form is shown only at the ring's closure.
+
 ## 27 November 2026 · Commutation fixed at birth refereed: confirmed with fixes
 
 **Corrections from [an independent referee's report](research/LOCAL-COMMUTE-20261127-001/referee-R1/report.md), folded into [the decision](research/LOCAL-COMMUTE-20261127-001/decision.md).** The counts stand: odd closes are attainable under birth choices at 1,177 of the 1,187 closures that are not outerplanar. Narrowed: every structure admits a state under the all-commuting choice, and from an open start every birth choice admits the signs; each of the ten losses needs two forbidden pairs; half the complete choices close odd under uniform weighting, the sign being fixed by the earlier rounds; an affine condition, not only a nonlinear principle, can select the odd sign. Credit: [an earlier referee](research/BUILT-BINDING-20261126-001/referee-R1/report.md) had the same closures.

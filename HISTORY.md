@@ -3,6 +3,10 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 27 November 2026 · The readers study refereed: confirmed with fixes
+
+**Corrections from [an independent referee's report](research/READER-SPLIT-20261127-001/referee-R1/report.md), folded into [the decision](research/READER-SPLIT-20261127-001/decision.md).** The census stands. Some odd birth choice splits into separated readers at 731 of the 1,177 closures where birth choices attain odd, strictly at 692, and none at 446. Narrowed: whole choices add splitting choices at 12 later closures, rather than giving the same splits. The game of certainty holds given the supplied state, the signs of the values outside readers and only each reader's own setting, with each knot asking each reader at most one value. The 198-closure shape is a pattern of the readers' values, whose passing knot holds exactly two distinctions at only 25. The ring of five's count concerns the shortest odd ring. Credit: the ring split is the literature's contradiction for graph states of odd rings.
+
 ## 27 November 2026 · The most-failing principle refereed: confirmed with fixes
 
 **Corrections from [an independent referee's report](research/MOST-FAILING-20261127-001/referee-R1/report.md), folded into [the decision](research/MOST-FAILING-20261127-001/decision.md).** The counts stand: the birth choices with the most failing pairs force the closing sign at 948 of 1,177 grown closures, even more often than odd. Narrowed: for each score the holding decides the sign, and changing the score reverses it at 199 of 719 closures; the 173 census types are a separate population, not a second weighting; the round-by-round counts are one tie-break; a few required pairs can select odd without naming the sign; and the odd closes are odd products of commuting checks, whose separated three-reader form is shown only at the ring's closure.

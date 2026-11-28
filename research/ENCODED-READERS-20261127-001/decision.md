@@ -116,3 +116,16 @@ became the general merge, with minimal choices tested.
 - **Planarity.** By Arkhipov's theorem the 20 non-planar grown closures also carry the literature's state-independent
   game (two players receiving whole knots), and the 1,157 planar ones do not. The readers' games here are
   state-dependent, so the two lines cross rather than coincide.
+
+## Final report as sent
+
+2026-11-27 20:40 PST
+
+Mostly yes, with three exceptions so far: every fewest separated-reader game on growth's closures is the three-reader game or the ring game of five, with readers encoded. The extra readers come from a step that merges two failing pairs: their partners are the same meeting held twice, and their other values share a knot. Undoing it (the literature's two-bit repetition code) takes every fewest split at the 692 closures down to the three-reader game (675 closures) or the ring game of five (15; both kinds at 2). At 20 closures the merge passes through a knot that also holds other readers' values.
+
+**What we found**
+- **My frozen prediction failed, narrowly.** Of the 4,803 minimal strict choices with up to eight failing pairs, 4,799 decode. The other 4, at two closures, admit no merge and are neither game: a third kind of game, six pairs on six knots.
+- **The census types hold two more** such games (six pairs on seven knots, eight pairs on seven knots), and there they're common: 3,726 of 6,190 minimal choices.
+- **The small codes all decode**, 1,139 of 1,139.
+- **A pattern I noticed after the results:** read each failing pair as a cell with four corners, the reader's two values as its diagonals. All five irreducible games then close up into complexes that can't be oriented; the three-reader game is the literature's projective plane, and the new grown game is a Klein bottle. It isn't orientability alone, since an even example is also a projective plane. But no orientable example has closed odd so far.
+- **Planarity** (the literature's): 1,157 of the 1,177 grown closures are planar, so the literature's state-independent two-player game exists at only 20. 444 of the 446 no-split closures are planar.

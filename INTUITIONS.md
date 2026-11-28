@@ -7256,6 +7256,12 @@ that earlier records used in two senses.
   literature's name: the sides of a four-sided cell, with the two values as its diagonals. Earlier records called
   them holder pairs (the readers study), met pairs (the encoded-readers study) and covered pairs (its referee).
   Chosen without the advisor, which was unavailable.
+- **Whole-choice set** (provisional). A set of knots whose whole choice commutes: every unheld pair of distinctions held
+  by four distinct knots of the set fails, nothing is selected, and every pair of knots is a cross pair of an even number of
+  those failing pairs. Four mutually meeting knots are one, closing odd (the three-reader game). The intuition: a part of
+  the pattern that holds a closed choice by itself (`NATIVE-CARRY-20261128-001`). The literature's words do not name it;
+  its sign is the parity of crossing chords with the knots on a circle. Chosen without the advisor, which was unavailable;
+  "carrier" and "native" were set aside because the foundation already uses them.
 - **Binding pattern.** The owner's word, not yet defined: in his words, "This
   is what we're trying to discover" (lesson 7.3). He offers two pictures,
   logic carried in each knot that binds whole knot patterns together, and

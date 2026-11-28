@@ -373,6 +373,7 @@ evidence: results and their status come from the records each entry links.
 | [A315](#a315--select-among-the-birth-choices-those-with-as-many-failing-pairs-as-a-state-allows) | Select, among the birth choices, those with as many failing pairs as a state allows | scaffold | Assumed |
 | [A316](#a316--a-reader-is-a-set-of-distinctions-whose-values-commute-with-every-other-readers-read-once-per-knot) | A reader is a set of distinctions whose values commute with every other reader's, read once per knot | scaffold | Assumed |
 | [A317](#a317--a-split-and-its-merges-count-as-the-same-game-encoded) | A split and its merges count as the same game, encoded | scaffold | Assumed |
+| [A318](#a318--a-failing-pair-read-as-a-cell-on-its-four-cross-pairs) | A failing pair read as a cell on its four cross pairs | scaffold | Assumed |
 
 ## Entries
 
@@ -6565,3 +6566,14 @@ evidence: results and their status come from the records each entry links.
   - 2026-11-27 · Refereed (R1, confirmed with fixes, no Block): the reduction holds on every maximal route; the identification of a split with its reduction is a convention, since a merge can change a list's best score (4/5 against 3/4 at census start 786's word); at 18 closures every fewest word needs a merge through a knot holding other values, at 2 more some tied words do. [Referee report](../research/ENCODED-READERS-20261127-001/referee-R1/report.md)
   - 2026-11-27 · Tested (exact, referee pending): every fewest strict split at the 692 grown closures decodes to the three-reader game or the ring game of five; merges through knots holding other values were needed at 20 closures; 4 of 4,803 minimal choices with at most eight pairs admit no merge. Counting each encoding as a new game was not tested. [Encoded readers](../research/ENCODED-READERS-20261127-001/decision.md)
   - 2026-11-27 · Entered with the encoded-readers study's frozen design.
+
+### A318 · A failing pair read as a cell on its four cross pairs
+
+**Assumed** · 2026-11-27 · scaffold
+
+- **Statement.** Each failing pair of a commuting choice is read as the cycle of its four cross pairs (pairs of knots, one holding each of its two values), and the failing pairs are attached along shared cross pairs. Orientability, the Euler count and two-colourability are read off this structure.
+- **Why.** The closing sign is a property of the cycles: with any cyclic and reference orders, it is the parity of the cycles' listings in the reference orders (the cross-pair study's item 1, the literature's parity of quadrangulations extended to any even coverage). So the structure that carries the sign is the cycles, not the values alone.
+- **Rests on it.** The measurements of the cross-pair study (which structures growth's choices make). [Design](../research/CELL-SIGN-20261127-001/README.md)
+- **Challenge.** Keep only the pair of values, read as two chords, from which the closing sign is defined. Or attach the failing pairs differently at a pair of knots covered four times: which two cycles are glued together is not determined there, and pinched knots are separated by a choice of reading. A result about the structure must say which attachment it uses.
+- **History.**
+  - 2026-11-27 · Entered with the cross-pair study's frozen design.

@@ -6616,10 +6616,15 @@ that earlier records used in two senses.
   off.
 - **Euler count.** Distinctions minus co-knotted pairs plus knots, for a
   pattern of three-place knots: the literature's Euler characteristic.
+  For a commuting choice of failing pairs: the knots on its cycles minus its cross pairs plus its failing pairs
+  (`CELL-SIGN-20261127-001`).
 - **Orientable.** A two-fold weave is orientable when each knot can be given
   a cyclic order of its three distinctions so that, at every co-knotted pair,
   the two knots that contain it put its two distinctions in opposite orders:
   the literature's orientable surface, drawn as two-sided.
+  A commuting choice of failing pairs is orientable when its failing pairs' cycles of cross pairs can be given
+  cyclic orders that list every pair of knots equally often each way; an orientable choice closes even
+  (`CELL-SIGN-20261127-001`).
 - **Cycle pairs.** In a connected orientable two-fold weave, (2 − Euler
   count) / 2: the number of pairs of independent unfilled cycles, the
   literature's genus, or number of handles. A **zero-pair weave** has Euler
@@ -7243,6 +7248,14 @@ that earlier records used in two senses.
 - **Odd set.** While no new distinction has added a state, each new distinction of a line takes, in every allowed state, the
   parity of an odd set of the line's distinctions: its odd set. The fill of three distinctions a < c < b is their parity (the
   advisor's parity form; `MEET-ORDERS-20261118-001`).
+- **Cross pair** (provisional). A pair of knots, one holding each of the two values of a failing pair of a
+  commuting choice (A314). Each failing pair has four: with x held by a and b and y by c and d, they are {a, c},
+  {c, b}, {b, d} and {d, a}. They make the failing pair's cycle a, c, b, d, along which the holders of the two values
+  alternate. Commutation says every pair of knots is a cross pair of an even number of failing pairs. The intuition:
+  the closing sign is a parity of how the cycles list the cross pairs they share (`CELL-SIGN-20261127-001`). The
+  literature's name: the sides of a four-sided cell, with the two values as its diagonals. Earlier records called
+  them holder pairs (the readers study), met pairs (the encoded-readers study) and covered pairs (its referee).
+  Chosen without the advisor, which was unavailable.
 - **Binding pattern.** The owner's word, not yet defined: in his words, "This
   is what we're trying to discover" (lesson 7.3). He offers two pictures,
   logic carried in each knot that binds whole knot patterns together, and
@@ -7259,6 +7272,7 @@ that earlier records used in two senses.
   with its native definition (lesson 1.1). The table gives each of the guide's
   words with the name the literature uses, so that results can be found
   there.
+  | cross pair | a pair of knots holding one value each of a failing pair | side of a four-sided cell whose diagonals are the two values |
 
   | The guide's word | What it is, by counts alone | The literature's spatial name |
   | --- | --- | --- |

@@ -6562,4 +6562,5 @@ evidence: results and their status come from the records each entry links.
 - **Rests on it.** The family of the encoded-readers study: which minimal strict splits are the three-reader game or a ring game, encoded. [Design](../research/ENCODED-READERS-20261127-001/README.md)
 - **Challenge.** Each encoding could instead be counted as a new game. A merge through a knot holding other values shares the code's parity check with other readers, and that could be counted as a different kind of encoding from a forced merge. A result about the family must say which merges it allows.
 - **History.**
+  - 2026-11-27 · Tested (exact, referee pending): every fewest strict split at the 692 grown closures decodes to the three-reader game or the ring game of five; merges through knots holding other values were needed at 20 closures; 4 of 4,803 minimal choices with at most eight pairs admit no merge. Counting each encoding as a new game was not tested. [Encoded readers](../research/ENCODED-READERS-20261127-001/decision.md)
   - 2026-11-27 · Entered with the encoded-readers study's frozen design.

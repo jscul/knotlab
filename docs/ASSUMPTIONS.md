@@ -370,6 +370,7 @@ evidence: results and their status come from the records each entry links.
 | [A312](#a312--prepare-coherent-sibling-words-and-measure-combinations-of-the-permitted-changes) | Prepare coherent sibling words and measure combinations of the permitted changes | scaffold | Assumed |
 | [A313](#a313--read-a-parity-knot-and-each-readers-pair-as-one-toy-bit-of-spekkenss-toy-theory) | Read a parity knot, and each reader's pair, as one toy bit of Spekkens's toy theory | scaffold | Assumed |
 | [A314](#a314--declare-which-values-commute-decided-at-birth-and-never-revised) | Declare which values commute, decided at birth and never revised | scaffold | Assumed |
+| [A315](#a315--select-among-the-birth-choices-those-with-as-many-failing-pairs-as-a-state-allows) | Select, among the birth choices, those with as many failing pairs as a state allows | scaffold | Assumed |
 
 ## Entries
 
@@ -6523,3 +6524,14 @@ evidence: results and their status come from the records each entry links.
 - **History.**
   - 2026-11-27 · Refereed (R1, confirmed with fixes, no Block): on a start already closed at round 0, prescribed signs must multiply to the reordering sign (149 of 230 such starts allow a commuting choice with product −1); the ten losses each need two forbidden pairs; the sign is fixed by earlier rounds, not at the close. [Referee report](../research/LOCAL-COMMUTE-20261127-001/referee-R1/report.md)
   - 2026-11-27 · Entered with the commutation-at-birth study; tested against the natural birth rule, uniform round-by-round choices and the whole choices.
+
+### A315 · Select, among the birth choices, those with as many failing pairs as a state allows
+
+**Assumed** · 2026-11-27 · scaffold
+
+- **Statement.** At a closure, among the birth choices of A314 take those with the most failing pairs (equivalently, those that differ from rule R on the fewest pairs). The closing sign is selected when it is the same on every such choice (forced odd or forced even); otherwise it stays free.
+- **Why.** A homogeneous restriction can force even but never odd, and an affine condition selects odd only by naming it. A maximum is a principle that excludes the classical choice without naming the sign. Nothing in the model supplies it.
+- **Rests on it.** Every verdict of the most-failing study. [Design](../research/MOST-FAILING-20261127-001/README.md)
+- **Challenge.** The control (the fewest failing pairs above none), the maximum counted once per holder type, and the maximum taken round by round at later closures; also maximal by inclusion, and a symmetric choice. A result about the model must survive a change of principle. The model is not expected to replace this principle: it is kept while the declared extension is studied.
+- **History.**
+  - 2026-11-27 · Entered with the most-failing study's frozen design.

@@ -6534,4 +6534,5 @@ evidence: results and their status come from the records each entry links.
 - **Rests on it.** Every verdict of the most-failing study. [Design](../research/MOST-FAILING-20261127-001/README.md)
 - **Challenge.** The control (the fewest failing pairs above none), the maximum counted once per holder type, and the maximum taken round by round at later closures; also maximal by inclusion, and a symmetric choice. A result about the model must survive a change of principle. The model is not expected to replace this principle: it is kept while the declared extension is studied.
 - **History.**
+  - 2026-11-27 · Tested (exact, referee pending): the maximum forces the sign at 948 of 1,177 closures, even at 588 and odd at 360; counting holder types instead gives odd 619 and even 241, and the census types split 49 odd, 60 even, 64 free; the control forces even. The forced sign follows the principle, so the result is about this scaffold, not the model. [Most failing pairs](../research/MOST-FAILING-20261127-001/decision.md)
   - 2026-11-27 · Entered with the most-failing study's frozen design.

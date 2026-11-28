@@ -183,3 +183,56 @@ changed in response:
    time limits, and the cap case is handled.
 6. **Words.** "Planar" is the literature's, defined once by minors. The record's "doubled sides" became doubled meetings.
    The 198-closure pattern is that of the readers' values, as its referee qualified.
+
+## Results (27 November)
+
+The run took 129 seconds under a 4 GiB cap with one thread, unit `encoded-readers-run`, no cut ([summary](summary.json),
+[gates](gates.json), [rows](results.jsonl), [census types](census_types.jsonl), [fixtures](fixtures.json)). Counts of
+closures are one vote per census start; counts of choices are one vote per choice.
+
+| # | Verdict | Count |
+| --- | --- | --- |
+| G | holds | Fewest strict readers 3 at 423 closures, 4 at 198, 5 at 66, 6 at 5, the same as the readers study at every closure. The listing reproduces the referee's fewest words at each of the 252 closures without an odd ring (2,102 in all) and reaches its end everywhere, with the integer program's split among the listed. Every fewest split at the 692 closures decodes to exactly one base game, meets no doubled pair, and takes 1 − c merges through knots holding other values. Every merge passes its fresh check, forced merges give the same remainder under three orders, and census start 786's fewest splits decode by one forced merge. The two ring closures are base games with no merge. The reviewer's nine-knot choice is strict, commuting, odd and minimal and does not decode. In the item 3 example, one choice of pairs at w restores three three-reader games and the other leaves no merge and no three games. No search was left unsettled. |
+| P1 | fails | 4,803 minimal strict odd choices with at most eight pairs at the 692 closures; 4,799 decode and 4 do not, at two closures (grown from census starts 5136 and 6787). |
+| P2 | holds | All 1,139 minimal strict odd choices at the 213 small codes decode to exactly one base game. |
+
+**P3, measured.**
+
+- **Fewest splits.** The fewest splits reach the three-reader game at 675 closures, a ring game of five at 15, and each
+  kind (different fewest splits) at 2. The merges are none at 440 closures, one forced at 198, two forced at 35, three
+  forced at 3, one forced and one through a knot holding other values at 18, and two forced and one at 2. Knots merged
+  through hold, in the closure, two distinctions at 64 closures, three at 120, four at 98, five at 34 and six at 3.
+- **Minimal choices of P1, by number of pairs:**
+
+  | Pairs | Minimal | Decode | Base game reached |
+  | ---: | ---: | ---: | --- |
+  | 3 | 1,551 | 1,551 | all the three-reader game |
+  | 4 | 2,298 | 2,298 | all the three-reader game |
+  | 5 | 904 of 926 | 904 | 816 three-reader, 88 ring of five |
+  | 6 | 50 | 46 | 44 three-reader, 2 ring of five |
+
+  No strict odd choice has seven or eight pairs.
+- **Small codes.** Every strict odd choice is minimal.
+- **Census types** (measured with the same code; one vote per choice): 6,190 minimal choices with at most eight pairs,
+  of which 2,464 decode. The 3,726 that do not are at 46 of the 115 types, mostly the largest ones.
+
+**P4, measured** (the literature's planarity of the pattern of meetings):
+
+| Population | Planar: strict | Planar: other only | Planar: none | Not planar: strict | Not planar: other only | Not planar: none |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| Grown closures | 674 | 39 | 444 | 18 | 0 | 2 |
+| Census types | 32 | 12 | 14 | 83 | 18 | 14 |
+
+**After the results (not frozen): what does not decode.** Every minimal choice that fails to decode admits no merge at
+all, and the failures have only three shapes (grouped by a relabelling-invariant hash):
+- On the grown closures, all four have one shape: six pairs on six knots, holding 3, 4, 4, 4, 4 and 5 values, with one
+  doubled meeting whose partners share no knot.
+- On the census types there are two: six pairs on seven knots (no doubled meeting), and eight pairs on seven knots.
+
+So every minimal strict odd choice found reduces by merges to one of five irreducible games: the two base games and
+these three. Reading each failing pair as a square cell on its four met pairs of knots, with the reader's two values as
+its diagonals, every one of the five meets each covered pair of knots in exactly two cells, and none is orientable. In
+the literature's terms they are cellulations of the projective plane (the three-reader game, the ring game and the
+census six-pair game, each with knots minus pairs 1) and of the Klein bottle (the grown six-pair game, 0). The census
+eight-pair game is a pinched complex with −1. The reviewer's even seven-knot unit is also a projective plane, so the sign
+is not orientability alone.

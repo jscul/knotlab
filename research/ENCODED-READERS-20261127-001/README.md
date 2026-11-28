@@ -186,6 +186,11 @@ changed in response:
 
 ## Results (27 November)
 
+> **Refereed (R1, confirmed with fixes, no Block; [report](referee-R1/report.md)).** Narrowings in full at the top of
+> [the decision](decision.md): the headline holds under A317 on marked values; P3 was only partly reported; the census
+> games are counted through eight pairs, with a sixth kind at ten; the time limit was not enforced; the count is the
+> Euler characteristic only where every covered pair occurs twice; the item 3 fixture is a partition, not one base game.
+
 The run took 129 seconds under a 4 GiB cap with one thread, unit `encoded-readers-run`, no cut ([summary](summary.json),
 [gates](gates.json), [rows](results.jsonl), [census types](census_types.jsonl), [fixtures](fixtures.json)). Counts of
 closures are one vote per census start; counts of choices are one vote per choice.

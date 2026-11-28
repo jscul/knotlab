@@ -3,6 +3,10 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 27 November 2026 · Encoded readers refereed: confirmed with fixes
+
+**Corrections from [an independent referee's report](research/ENCODED-READERS-20261127-001/referee-R1/report.md), folded into [the decision](research/ENCODED-READERS-20261127-001/decision.md).** Every fewest strict odd choice at the 692 grown closures reduces, on its marked reader values, to the three-reader game or the ring game of five. Narrowed: counting the encoded choice and its base as one game is a convention (A317), because a merge can change a list's best score. The census games were counted through eight pairs, and a sixth irreducible kind appears at ten pairs. The count of knots minus pairs is the Euler characteristic only where every covered pair occurs twice. The listing's time limit was not enforced, though no row was affected. Credit: the sign's link to orientation is the literature's parity of quadrangulations.
+
 ## 27 November 2026 · The readers study refereed: confirmed with fixes
 
 **Corrections from [an independent referee's report](research/READER-SPLIT-20261127-001/referee-R1/report.md), folded into [the decision](research/READER-SPLIT-20261127-001/decision.md).** The census stands. Some odd birth choice splits into separated readers at 731 of the 1,177 closures where birth choices attain odd, strictly at 692, and none at 446. Narrowed: whole choices add splitting choices at 12 later closures, rather than giving the same splits. The game of certainty holds given the supplied state, the signs of the values outside readers and only each reader's own setting, with each knot asking each reader at most one value. The 198-closure shape is a pattern of the readers' values, whose passing knot holds exactly two distinctions at only 25. The ring of five's count concerns the shortest odd ring. Credit: the ring split is the literature's contradiction for graph states of odd rings.

@@ -1,5 +1,30 @@
 # Encoded readers: the fewest splits decode, and three more games appear
 
+> **Referee report R1, 27 November 2026: confirmed with fixes, no Block** ([the report](referee-R1/report.md)). All 3,718
+> fewest strict odd choices at the 692 closures reduce to exactly one base kind on every maximal route of merges, with
+> the counting identity and no doubled pair. Read this record with these narrowings (logged in `docs/CORRECTIONS.md`):
+> - **The headline is a convention (A317).** Under A317, every fewest strict odd birth choice at these 692 closures
+>   reduces, on its marked reader values, to one of the two base kinds. A merge can change a list's best score: with
+>   equal weight per knot, 4/5 at census start 786's four-reader word against 3/4 at its three-reader base. The readers
+>   study's referee also found 39 closures with only wider splits.
+> - **Paths and weighting.** The selected first paths merge through knots of two to six distinctions; across all paths
+>   two to seven. At 18 closures every fewest word needs a merge through a knot holding other values; at 2 more (census
+>   starts 6181 and 6185) some tied words do (240 of 3,718 words). The small codes are 213 of 397 with a strict word.
+> - **P3 was only partly reported.** The 22 non-minimal five-pair words at 9 closures were not described; all reach the
+>   three-reader game by deleting a doubled pair.
+> - **The census games are counted through eight pairs** (one vote per labelled choice). At ten pairs the two largest
+>   types (171 and 172) admit a minimal odd game on seven knots with no merge, a sixth kind, with count −3.
+> - **The time limit was not enforced** (the solver's interrupt raised an exception); no listing reached a cap, and no
+>   row was affected.
+> - **The count is the Euler characteristic only when each covered pair of knots occurs twice.** At 240 fewest words a
+>   pair of knots is covered four times; at census start 4786's six-reader word the count is 0 and the Euler
+>   characteristic 1.
+> - **The order fixture**: one pairing gives a partition into three base games and the other does not (zero routes
+>   reach one base game).
+> - **Credit (not a block).** The sign's link to orientation is the literature's parity of quadrangulations (Mohar,
+>   Simonyi and Tardos, Lemma 6.1): for a holding covered twice, the sign is the number of covered pairs traversed twice
+>   the same way, so a consistent orientation forces even.
+
 Epic `ENCODED-READERS-20261127-001`, at the owner's go-ahead on direction 1 of the readers study. Design, frozen
 predictions, review and results: [README.md](README.md); code [decode.py](decode.py); outputs [summary.json](summary.json),
 [gates.json](gates.json), [results.jsonl](results.jsonl), [census_types.jsonl](census_types.jsonl),
@@ -11,14 +36,15 @@ closures one vote per census start, choices one vote per choice; independent ref
 | This attempt — decoding strict splits to the two known games | **Status:** Partially successful | Every fewest split at the 692 closures decodes (the referee's 2,102 words reproduced); P1 fails at 4 of 4,803 minimal choices, at two closures; P2 holds at all 1,139 of the small codes; referee pending |
 | Local direction — the three-reader and ring games as the whole family | Retire | Three more irreducible games: one on grown closures, two on census types (at 46 of the 115 types) |
 | Broader exploration — the readers' games on growth's closures | Known alternatives | Five irreducible games so far; read as cells, all five are closed and none is orientable, but the sign is not orientability alone |
-| Long-term goal — G18 Comparing growth laws | Capability gained | Every fewest separated-reader game on growth's closures is the three-reader or the ring-of-five game with readers encoded |
+| Long-term goal — G18 Comparing growth laws | Capability gained | Under A317, every fewest strict odd birth choice at the 692 closures reduces, on its marked values, to the three-reader or the ring-of-five kind (narrowed by R1) |
 
 The fewest splits are now explained. Every fewest strict split at the 692 grown closures decodes by merges to the
 three-reader game on four mutually meeting knots (675 closures) or the ring game of five (15; both kinds at 2). The
 merges undo readers encoded through knots. Forced merges, through knots holding no other values, undo the literature's
 two-bit repetition code; at 20 closures a merge passes through a knot that also holds other readers' values. The
 prediction that every minimal split decodes failed. Four minimal choices of six pairs, at two closures, admit no merge
-and are neither game. The census types hold two more such games, common there (3,726 of their 6,190 minimal choices).
+and are neither game. The census types hold two more such games through eight pairs, common there (3,726 of their 6,190 minimal choices,
+one vote per labelled choice), and a sixth kind at ten pairs (R1).
 So growth's closures carry separated-reader games of at least three irreducible kinds: the two known ones, and a
 six-pair game on six knots.
 
@@ -88,14 +114,15 @@ became the general merge, with minimal choices tested.
   pairs.
 - **The merges.** None at 440 closures (base games already), forced merges only at 236, and one merge through a knot
   holding other values at 20. A closure counts once for each pattern its fewest splits take. Knots merged through
-  hold, in the closure, from two to six distinctions.
+  hold, in the closure, from two to six distinctions on the selected first paths, and two to seven across all paths
+  (R1).
 - **Minimal choices beyond the fewest (P1).** Of the 4,803 minimal strict odd choices with at most eight pairs, 4,799
   decode: all those of three and four pairs (to the three-reader game), those of five (816 to it, 88 to the ring game),
   and 46 of the 50 of six. The other 4 admit no merge.
 - **Small codes (P2).** All 1,139 strict odd choices at the 213 small codes are minimal, and all decode.
 - **Three more irreducible games.** All the failures admit no merge. On the grown closures they have one shape: six
-  pairs on six knots. On the census types there are two: six pairs on seven knots, and eight pairs on seven knots, at
-  46 of the 115 types.
+  pairs on six knots. On the census types there are two through eight pairs: six pairs on seven knots, and eight
+  pairs on seven knots, at 46 of the 115 types. R1 found a sixth at ten pairs (types 171 and 172, count −3).
 - **The literature's planarity.** 1,157 of the 1,177 grown closures are planar, and so are 444 of the 446 with no split.
   The census types are mostly not planar (115 of 173).
 
@@ -103,14 +130,16 @@ became the general merge, with minimal choices tested.
 
 - **Cells.** A failing pair meets four pairs of knots, so it can be read as a cell with four corners, the reader's two
   values as its diagonals. In every one of the five irreducible games, each covered pair of knots is met by exactly two
-  cells, and the knots holding values minus the pairs is the literature's Euler characteristic of the complex:
+  cells, and the knots holding values minus the pairs is the literature's Euler characteristic of the complex (only
+  where every covered pair occurs twice, R1):
   - the three-reader game is the literature's hemi-cube, a projective plane, with 1;
   - the ring games are projective planes too;
   - the census six-pair game is a projective plane, and the grown six-pair game a Klein bottle, with 0;
   - the census eight-pair game is a pinched complex with −1.
 
   None can be oriented. A forced merge removes a knot in two cells, keeping the Euler characteristic, and the counting
-  identity is that bookkeeping. The cheapest test of a sign rule is direction 1.
+  identity is that bookkeeping. The sign's link to orientation is the literature's parity of quadrangulations
+  (Mohar, Simonyi and Tardos, Lemma 6.1; credited by R1): a consistent orientation forces even.
 - **Repetition codes.** A forced merge undoes one reader in the literature's two-bit repetition code. A merge through a
   knot holding other values undoes a code whose parity check is shared with other readers.
 - **Planarity.** By Arkhipov's theorem the 20 non-planar grown closures also carry the literature's state-independent
